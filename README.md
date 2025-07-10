@@ -1,5 +1,9 @@
 # What's this?
+Turns out github is probably an easier place to modify files and send updates to a friend
+This is a part of a private and really broken (glitchy af) modpack
+High chance stuff added to this will not work unless u have exact mods that have been also modified with garbage code
 
+FanScot Notes:
 This is a couple of edits to Restoration Mod fitted for my liking.
 These range from minor weapon tweaks to new features such as mutators.
 
