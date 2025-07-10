@@ -12,6 +12,8 @@ These range from minor weapon tweaks to new features such as mutators.
 Femboi Changes:
 
 Hardcore Stuff
+-Cableties are now only avaliable in a skill (3 norm and 100 aced)
+-First Aid Kits now heal 300 health however are temp health (LFD2 ahh Painkillers)
 - plan - add rpg, medicdozer, restore verison of minidozer to death wish
 - plan - add vanilla minidozer, warthog, to death sentence
 
