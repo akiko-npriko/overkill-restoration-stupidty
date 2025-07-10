@@ -12,16 +12,18 @@ These range from minor weapon tweaks to new features such as mutators.
 Femboi Changes:
 
 Hardcore Stuff
-plan - add rpg, medicdozer, restore verison of minidozer to death wish
-plan - add vanilla minidozer, warthog, to death sentence
+- plan - add rpg, medicdozer, restore verison of minidozer to death wish
+- plan - add vanilla minidozer, warthog, to death sentence
 
 Stuff that is broken without mod:
-plan - overkill ahh weapons (super overpowered weapon that are an equipment that disable ammobag use and uh is overpowered)
+- plan - overkill ahh weapons (super overpowered weapon that are an equipment that disable ammobag use and uh is overpowered)
 
 Some Normalish Stuff:
-Fixed A24 Max Ammo being 48 (this makes it stronger than like any other grenade launcher) - main it a lot before noticing intended max ammo
-Fixed in my opinion broken: two perk decks being cheaper than main perk decks
+- Fixed A24 Max Ammo being 48 (this makes it stronger than like any other grenade launcher) - main it a lot before noticing intended max ammo
 
+- Fixed in my opinion broken: two perk decks being cheaper than main perk decks
+
+________________________________________________________________________________________________
 
 Vanilla units spawn across most factions. Don't like the look of them? Use a mod!
 
