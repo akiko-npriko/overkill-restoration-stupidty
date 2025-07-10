@@ -34978,6 +34978,7 @@ function WeaponTweakData:calculate_ammo_pickup(weapon, id)
 	local exclude_ammo = {
 		"m134",
 		"shuno",
+		"as24"
 	}
 	if id and weapon.AMMO_MAX and weapon.CLIP_AMMO_MAX and
 	not table.contains(exclude_ammo, id) and not table.contains(weapon.categories, "minigun") and not table.contains(weapon.categories, "saw") then
