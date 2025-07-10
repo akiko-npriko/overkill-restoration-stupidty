@@ -33862,7 +33862,7 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 			self.x_pm9.use_data.selection_index = 5
 
 	-- [[Akiko Edits]]
-	if otwd_flare_gun then
+	if self.otwd_flare_gun then
 		self.otwd_flare_gun.recategorize = { "heavy_pis", "handcannon" }
 		self.otwd_flare_gun.damage_type = "handcannon"
 		self.otwd_flare_gun.fire_mode_data.fire_rate = 0.15
