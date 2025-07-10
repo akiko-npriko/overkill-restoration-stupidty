@@ -1454,7 +1454,7 @@ if BeardLib then
 			{
 				name_id = "menu_deck_kmerc_1",
 				desc_id = "menu_deck_kmerc_1_desc_sc",
-				cost = 0,
+				cost = 200,
 				upgrades = {
 					"player_kmerc_reactive_absorption",
 					"player_kmerc_passive_health_multiplier_1"
@@ -1469,7 +1469,7 @@ if BeardLib then
 			{
 				name_id = "menu_deck_kmerc_3",
 				desc_id = "menu_deck_kmerc_3_desc_sc",
-				cost = 0,
+				cost = 400,
 				upgrades = {
 					"player_kmerc_reload_speed_bonus_per_max_armor",
 					"player_kmerc_swap_speed_bonus_per_max_armor",
@@ -1482,7 +1482,7 @@ if BeardLib then
 			{
 				name_id = "menu_deck_kmerc_5",
 				desc_id = "menu_deck_kmerc_5_desc_sc",
-				cost = 0,
+				cost = 1000,
 				upgrades = {
 					"player_kmerc_fatal_triggers_invuln",
 					"player_kmerc_passive_health_multiplier_2"
@@ -1497,7 +1497,7 @@ if BeardLib then
 			{
 				name_id = "menu_deck_kmerc_7",
 				desc_id = "menu_deck_kmerc_7_desc_sc",
-				cost = 0,
+				cost = 2400,
 				upgrades = {
 					"player_kmerc_armored_hot"
 				},
@@ -1511,7 +1511,7 @@ if BeardLib then
 			{
 				name_id = "menu_deck_kmerc_9",
 				desc_id = "menu_deck_kmerc_9_desc_sc",
-				cost = 0,
+				cost = 4000,
 				upgrades = {
 					"player_kmerc_bloody_armor"
 				},
@@ -1547,7 +1547,7 @@ if BeardLib then
 					"player_tachi_hot_amount_1",
 					"player_tachi_hot_duration_1"
 				},
-				cost = 0,
+				cost = 200,
 				icon_xy = {0, 0},
 				texture_bundle_folder = "liberator",
 				name_id = "menu_deck_liberator_1",
@@ -1559,7 +1559,7 @@ if BeardLib then
 					"player_tachi_hot_duration_2",
 					"player_tachi_hot_cancelled_damage_resistance_consolation"
 				},
-				cost = 0,
+				cost = 400,
 				icon_xy = {1,0},
 				texture_bundle_folder = "liberator",
 				name_id = "menu_deck_liberator_3",
@@ -1572,7 +1572,7 @@ if BeardLib then
 					"player_tachi_restore_stamina_2",
 					"player_passive_dodge_chance_1"
 				},
-				cost = 0,
+				cost = 1000,
 				icon_xy = {2, 0},
 				texture_bundle_folder = "liberator",
 				name_id = "menu_deck_liberator_5",
@@ -1585,7 +1585,7 @@ if BeardLib then
 					"player_passive_health_multiplier_2",
 					"player_tachi_hot_duration_3"
 				},
-				cost = 0,
+				cost = 2400,
 				icon_xy = {3, 0},
 				texture_bundle_folder = "liberator",
 				name_id = "menu_deck_liberator_7",
@@ -1596,7 +1596,7 @@ if BeardLib then
 				upgrades = {
 					"player_tachi_hot_amount_3"
 				},
-				cost = 0,
+				cost = 4000,
 				icon_xy = {0,1},
 				texture_bundle_folder = "liberator",
 				name_id = "menu_deck_liberator_9",
