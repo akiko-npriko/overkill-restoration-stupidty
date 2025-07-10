@@ -592,7 +592,8 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 	
 	--Equipment--
 	--FAKS: Intended to offer on-demand burst healing that can save people from going down.
-	self.values.first_aid_kit.heal_amount = 15 --Heals 150 health on use.
+	self.values.first_aid_kit.heal_amount = 30 --Heals 300 health on use. --temp health go brrrr
+	--self.values.first_aid_kit.heal_amount = 15 --Heals 150 health on use.
 
 	--Doctor Bags: Intended to offer consistent sustain over a long period of time.
 	self.doctor_bag_base = 2 --Starting Number
@@ -750,9 +751,11 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 			--Cable Guy
 				--Basic
 					self.values.cable_tie.quantity_1 = {3}
-				--Ace
-					self.values.cable_tie.quantity_2 = {3}
 					self.values.cable_tie.pickup_chance = {true}
+				--Ace
+					self.values.cable_tie.quantity_2 = {97}
+					self.values.cable_tie.pickup_chance = {false}
+					--self.values.cable_tie.pickup_chance = {true}
 					
 					self.skill_descs.triathlete = {
 						skill_value_b1 = tostring(self.values.cable_tie.quantity_1[1]), -- Additional cable ties on start
