@@ -194,7 +194,8 @@ function MutatorEnemyReplacer:setup()
 	self:modify_unit_categories(tweak_data.group_ai, difficulty_index)
 	
 	if not PackageManager:loaded("packages/miscassetsmutators") then
-		PackageManager:load("packages/miscassetsmutators")
+		--PackageManager:load("packages/miscassetsmutators")
+		--DISABLED FOR NOW AS GAME CRASHES FOR SOME REASONNNNN!!! HIGH CHANCE IT STILL CRASHES ANYWAYS!!!!
 	end
 	
 	--Make Snipers be able to use SOs with SWAT access

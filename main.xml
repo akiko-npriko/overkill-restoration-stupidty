@@ -734,6 +734,11 @@
 	<Package id="packages/gensecmisc" file="packages/america_diff/gensec_misc.xml" use_clbk="self:DebugLoadAssets"/>
 	<Package id="packages/americamisc" file="packages/america_diff/america_misc.xml" use_clbk="self:DebugLoadAssets"/>
 	<Package id="packages/miscassetsmutators" file="addMISCMutators.xml" use_clbk="self:DebugLoadAssets"/>
+	
+	<!--debug -->
+	<Package id="packages/miscassetsmutatorsrpgman" file="addMISCMutatorsrpgman.xml" use_clbk="self:DebugLoadAssets"/>
+	
+	
 	<Package id="packages/outfitassets" file="addoutfit.xml" use_clbk="self:DebugLoadAssets"/>
 	<Package id="packages/addbdu" file="addbdu.xml" use_clbk="self:DebugLoadAssets"/>
 	<Package id="packages/addscrubs" file="addscrubs.xml" use_clbk="self:DebugLoadAssets"/>
