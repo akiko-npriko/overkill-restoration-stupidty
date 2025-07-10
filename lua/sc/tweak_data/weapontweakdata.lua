@@ -33861,6 +33861,51 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 		--DISABLED - ALREADY A PRIMARY
 			self.x_pm9.use_data.selection_index = 5
 
+	-- [[Akiko Edits]]
+	if otwd_flare_gun then
+		self.otwd_flare_gun.recategorize = { "heavy_pis", "handcannon" }
+		self.otwd_flare_gun.damage_type = "handcannon"
+		self.otwd_flare_gun.fire_mode_data.fire_rate = 0.15
+		--self.otwd_flare_gun.muzzleflash = "effects/payday2/particles/weapons/big_51b_auto_fps"
+		--self.otwd_flare_gun.desc_id = "bm_ap_weapon_sc_desc"
+		self.otwd_flare_gun.AMMO_MAX = 10
+		self.otwd_flare_gun.CLIP_AMMO_MAX = 1
+		self.otwd_flare_gun.kick = self.stat_info.kick_tables.vertical_kick
+		self.otwd_flare_gun.kick_pattern = {
+			{0, self.stat_info.kick_tables.vertical_kick},
+			{2, self.stat_info.kick_tables.left_kick},
+			{4, self.stat_info.kick_tables.moderate_right_kick}
+		}
+		self.otwd_flare_gun.supported = true
+		self.otwd_flare_gun.ads_speed = 0.200
+		self.otwd_flare_gun.damage_falloff = {
+			start_dist = 3100,
+			end_dist = 5800,
+			min_mult = 0.166666667
+		}
+		self.otwd_flare_gun.stats = {
+			damage = 90,
+			spread = 50,
+			recoil = 45,
+			spread_moving = 9,
+			zoom = 1,
+			concealment = 28,
+			suppression = 7,
+			alert_size = 2,
+			extra_ammo = 101,
+			total_ammo_mod = 400,
+			value = 1,
+			reload = 20
+		}
+		self.otwd_flare_gun.stats_modifiers = nil
+		self.otwd_flare_gun.panic_suppression_chance = 0.05
+		self.otwd_flare_gun.dot_data_name = "ammo_flare_gun"
+		self.otwd_flare_gun.bullet_class = "FlameBulletBase"
+		self.otwd_flare_gun.damage_type_single_ray = "sniper"
+		self.otwd_flare_gun.rays = 1
+		--self.otwd_flare_gun.use_data.selection_index = 3
+	end
+	
 	-- [[ FaN's Addons ]]
 	-- doing this because i fucking hate manually doing all the edits
 		if self.cagnali then	--Crime Boss Scudomnion
