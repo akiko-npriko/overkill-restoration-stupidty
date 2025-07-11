@@ -2,6 +2,7 @@
 Turns out github is probably an easier place to modify files and send updates to a friend
 This is a part of a private and really broken (glitchy af) modpack
 High chance stuff added to this will not work unless u have exact mods that have been also modified with garbage code
+Side note: Reverted to a gold verison of FanScot due to being too unstable
 
 FanScot Notes:
 This is a couple of edits to Restoration Mod fitted for my liking.
@@ -15,6 +16,7 @@ Hardcore Stuff
     - Use this ig: https://modworkshop.net/mod/31730
 - plan - add rpg, medicdozer, restore verison of minidozer to death wish
 - plan - add vanilla minidozer, warthog, to death sentence
+- to do - readd hostages affecting timer
 
 Stuff that is broken without mod:
 - plan - overkill ahh weapons (super overpowered weapon that are an equipment that disable ammobag use and uh is overpowered)
