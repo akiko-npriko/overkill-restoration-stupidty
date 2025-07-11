@@ -33971,6 +33971,95 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 		self.temple.timers.reload_exit_empty = 0
 	end
 	
+	-- OVERKILL WEAPOONS
+	
+	if self.roach then
+		self.roach.external_support = true
+		self.roach.categories = {
+			"snp",
+			"semi_snp",
+			"battery"
+		}
+		self.roach.recategorize = { "heavy_snp" }
+		self.roach.damage_type = "sniper"
+		self.roach.has_description = true
+		self.roach.desc_id = "bm_roach_sc_desc"
+		self.roach.FIRE_MODE = "auto"
+		self.roach.charge_data = {
+			max_t = 1.25,
+			cooldown_t = 5
+		}
+		self.roach.fire_mode_data.volley = {}
+		self.roach.fire_mode_data.volley.spread_mul = 0.00000000000001
+		self.roach.fire_mode_data.volley.damage_mul = 1
+		self.roach.fire_mode_data.volley.damage_mul_step = true
+		self.roach.fire_mode_data.volley.ammo_usage = 10
+		self.roach.fire_mode_data.volley.rays = 10
+		self.roach.fire_mode_data.volley.can_shoot_through_wall = true
+		self.roach.fire_mode_data.volley.can_shoot_through_shield = true
+		self.roach.fire_mode_data.volley.can_shoot_through_enemy = true
+		self.roach.fire_mode_data.volley.can_shoot_through_enemy_unlim = true
+		self.roach.fire_mode_data.volley.can_shoot_through_titan_shield = true
+		self.roach.fire_mode_data.volley.rebecca = {1250}
+		self.roach.fire_mode_data.volley.armor_piercing_chance = 1
+		--self.roach.fire_mode_data.volley.spin_up_t = 1.25
+		--self.roach.fire_mode_data.volley.spin_down_t = 0.0001
+		--self.roach.fire_mode_data.volley.muzzleflash = "effects/payday2/particles/weapons/50cal_auto_fps"
+		self.roach.fire_mode_data.volley.trail_effect = "effects/particles/weapons/sniper_trail_sc"
+		self.roach.fire_mode_data.toggable = {
+			"volley",
+			"auto"
+		}
+		self.roach.no_charge_anims = true
+		self.roach.trail_effect = "effects/particles/weapons/titan_trail_sc"
+		--self.roach.muzzleflash = "effects/payday2/particles/weapons/big_51b_auto_fps"
+		self.roach.kick = self.stat_info.kick_tables.vertical_kick
+		self.roach.kick_pattern = {
+			{0, self.stat_info.kick_tables.vertical_kick},
+			{3, self.stat_info.kick_tables.right_kick},
+			{6, self.stat_info.kick_tables.even_recoil}
+		}
+		self.roach.CLIP_AMMO_MAX = 10
+		self.roach.AMMO_MAX = self.roach.CLIP_AMMO_MAX
+		self.roach.no_auto_anims = true
+		self.roach.no_reload_anims = true
+		self.roach.fire_mode_data.fire_rate = 0.6
+		self.roach.can_shoot_through_enemy = true
+		self.roach.can_shoot_through_shield = true
+		self.roach.can_shoot_through_wall = true
+		self.roach.supported = true
+		self.roach.ads_speed = 0.500
+		self.roach.damage_falloff = {
+			start_dist = 99999,
+			end_dist = 999999,
+			min_mult = 1
+		}
+		self.roach.stats = {
+			damage = 300,
+			spread = 100,
+			recoil = 25,
+			spread_moving = 6,
+			zoom = 1,
+			concealment = 20,
+			suppression = 6,
+			alert_size = 2,
+			extra_ammo = 101,
+			total_ammo_mod = 400,
+			value = 9,
+			reload = 20
+		}
+		self.roach.stats_modifiers = nil
+		self.roach.reload_speed_multiplier = 9999999
+		--self.roach.tsnipar = true
+		self.roach.use_sniper_trail = true
+		self.roach.spin_up_t = 0.5
+		self.roach.spin_down_t = 0.0001
+		self.roach.sounds.magazine_empty = "wp_sentrygun_swap_ammo"
+		self.roach.sounds.spin_start = "hailstorm_shotgun_fire_charge"
+		self.roach.sounds.spin_end = "swatturret_spin_stop"
+	end
+
+	
 	-- [[ FaN's Addons ]]
 	-- doing this because i fucking hate manually doing all the edits
 		if self.cagnali then	--Crime Boss Scudomnion
