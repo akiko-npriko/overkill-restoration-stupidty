@@ -33906,6 +33906,71 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 		--self.otwd_flare_gun.use_data.selection_index = 3
 	end
 	
+	if self.temple then
+		self.temple.categories = {
+			"assault_rifle",
+					"dmr_l"
+		}
+		self.temple.recategorize = {"dmr_ar"}
+		self.temple.damage_type = "assault_rifle"
+		--self.temple.desc_id = "bm_temple_sc_desc"
+		--self.temple.has_description = true
+		self.temple.CLIP_AMMO_MAX = 30
+		self.temple.AMMO_MAX = 60
+		self.temple.fire_mode_data.fire_rate = 0.133333333
+		self.temple.BURST_FIRE = {
+			count = 3,
+			delay = 0.18,
+			burst_default = true,
+			rof_mult = 5.5,
+			range_mult = 2,
+			recoil_mult = 0.3,
+			last_recoil_mult = 3.5
+		}
+		self.temple.ADAPTIVE_BURST_SIZE = false
+		self.temple.CAN_TOGGLE_FIREMODE = false
+		self.temple.FIRE_MODE = "auto"
+		self.temple.kick = self.stat_info.kick_tables.moderate_kick
+		self.temple.kick_pattern = {
+			{0, self.stat_info.kick_tables.vertical_kick},
+			{5, self.stat_info.kick_tables.moderate_kick},
+			{8, self.stat_info.kick_tables.left_recoil},
+			{12, self.stat_info.kick_tables.moderate_left_kick},
+			{14, self.stat_info.kick_tables.moderate_kick},
+			{22, self.stat_info.kick_tables.right_recoil},
+			{25, self.stat_info.kick_tables.moderate_right_kick},
+			{28, self.stat_info.kick_tables.moderate_kick}
+		}
+		self.temple.reload_speed_multiplier = 99999999999999
+		self.temple.supported = true
+		self.temple.ads_speed = 0.250
+		self.temple.damage_falloff = {
+			start_dist = 1600,
+			end_dist = 5100,
+			min_mult = 0.53333
+		}
+		self.temple.stats = {
+			damage = 45,
+			spread = 90,
+			recoil = 85,
+			spread_moving = 5,
+			zoom = 1,
+			concealment = 23,
+			suppression = 7,
+			alert_size = 2,
+			extra_ammo = 101,
+			total_ammo_mod = 400,
+			value = 1,
+			reload = 20
+		}
+		self.temple.stats_modifiers = nil
+		--self.temple.armor_piercing_chance = 0.25
+		--self.temple.can_shoot_through_enemy = false
+		self.temple.panic_suppression_chance = 0.05
+		self.temple.timers.reload_exit_not_empty = 0
+		self.temple.timers.reload_exit_empty = 0
+	end
+	
 	-- [[ FaN's Addons ]]
 	-- doing this because i fucking hate manually doing all the edits
 		if self.cagnali then	--Crime Boss Scudomnion
