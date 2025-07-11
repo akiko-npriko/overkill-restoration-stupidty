@@ -33,6 +33,9 @@ Some Normalish Stuff:
 
 - Support for VxWolf's HK G11, Railgun (Roach), and OTWD Flaregun
 
+  Credits rqq:
+  - Dr Newbie stuff
+
 # Changes:
 
 Vanilla units spawn across most factions. Don't like the look of them? Use a mod!
