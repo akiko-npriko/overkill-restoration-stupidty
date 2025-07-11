@@ -5395,6 +5395,10 @@ Hooks:Add("LocalizationManagerPostInit", "SC_Localization_Skills_Eng", function(
 		["mutator_goldfarbdozers"] = "Double Trouble",
 		["mutator_goldfarbdozers_desc"] = "All Bulldozers that spawn will always deploy in pairs.",
 		["mutator_goldfarbdozers_longdesc"] = "All Bulldozers that spawn will always deploy in pairs.",
+		
+		["mutator_rocketgunts"] = "RPG Grunts",
+		["mutator_rocketgunts_desc"] = "RPG Grunts from Meltdown. Suffer",
+		["mutator_rocketgunts_longdesc"] = "RPG Grunts from the Meltdown heist have a chance to spawn. They have a chance to replace a Titan Sniper.\n\nNote: This mutator does nothing if Titan Snipers can not spawn.",
 
 		["mutator_spoocsquad"] = "Sneaky Squad",
 		["mutator_spoocsquad_desc"] = "Cloakers tend to spawn in groups.",

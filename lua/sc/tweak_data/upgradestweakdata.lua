@@ -609,7 +609,7 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 	self.sentry_gun_base_ammo = 140
 
 	--"Baked In" upgrades
-	self.values.cable_tie.interact_speed_multiplier = {0.25}
+	self.values.cable_tie.interact_speed_multiplier = {0.2}
 	self.values.player.stamina_multiplier = {2}
 	self.values.team.stamina.multiplier = {1.5}
 	self.values.player.civ_calming_alerts = {true}
@@ -745,9 +745,11 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 			--Cable Guy
 				--Basic
 					self.values.cable_tie.quantity_1 = {3}
-				--Ace
-					self.values.cable_tie.quantity_2 = {3}
 					self.values.cable_tie.pickup_chance = {true}
+				--Ace
+					self.values.cable_tie.quantity_2 = {97}
+					self.values.cable_tie.pickup_chance = {false}
+					--self.values.cable_tie.pickup_chance = {true}
 					
 					self.skill_descs.triathlete = {
 						skill_value_b1 = tostring(self.values.cable_tie.quantity_1[1]), -- Additional cable ties on start

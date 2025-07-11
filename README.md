@@ -1,7 +1,31 @@
 # What's this?
+Turns out github is probably an easier place to modify files and send updates to a friend
+This is a part of a private and really broken (glitchy af) modpack
+High chance stuff added to this will not work unless u have exact mods that have been also modified with garbage code
 
+FanScot Notes:
 This is a couple of edits to Restoration Mod fitted for my liking.
 These range from minor weapon tweaks to new features such as mutators.
+
+# Femboi Changes:
+
+Hardcore Stuff
+- Cableties are now only avaliable in a skill (3 norm and 100 aced)
+- First Aid Kits now heal 300 health however are temp health (LFD2 ahh Painkillers) -nvm it not 300 it back to 150 with medkit being nerfed back to gold
+    - Use this ig: https://modworkshop.net/mod/31730
+- plan - add rpg, medicdozer, restore verison of minidozer to death wish
+- plan - add vanilla minidozer, warthog, to death sentence
+
+Stuff that is broken without mod:
+- plan - overkill ahh weapons (super overpowered weapon that are an equipment that disable ammobag use and uh is overpowered)
+
+Some Normalish Stuff:
+- Fixed A24 Max Ammo being 48 (this makes it stronger than like any other grenade launcher) - main it a lot before noticing intended max ammo
+
+- Fixed in my opinion broken: two perk decks being cheaper than main perk decks
+
+- Brought back rpg grunt mutator
+
 
 # Changes:
 
