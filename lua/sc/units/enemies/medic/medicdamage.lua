@@ -104,8 +104,10 @@ function MedicDamage:verify_heal_requesting_unit(requesting_unit, ...)
 	return not World:raycast("ray", unit_pos, medic_pos, "slot_mask", managers.slot:get_mask("AI_visibility"), "report")
 end
 
+Hooks:PostHook(MedicDamage, "init", "MedicDropFAK_MedicDamage_init", function(self, ...)
 	if math.random(1, 10) >= 6 then
 		self:set_pickup(nil)
 	else
 		self:set_pickup("medic_fak")
 	end
+end )
