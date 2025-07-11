@@ -33906,13 +33906,57 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 		--self.otwd_flare_gun.use_data.selection_index = 3
 	end
 	
+	--[[
+	if self.temple then	--VxWolf HK G11 //this is gonna be fucking janky as all hell lmao
+			self.temple.recategorize = { "light_ar" }
+			self.temple.categories = { "assault_rifle" }
+			self.temple.has_description = false
+			self.temple.BURST_FIRE = 3
+			self.temple.BURST_DELAY = 0.18
+			self.temple.BURST_FIRE_RATE_MULTIPLIER = 4.565217391304348
+			self.temple.BURST_FIRE_RECOIL_MULTIPLIER = 0.7
+			self.temple.BURST_FIRE_LAST_RECOIL_MULTIPLIER = 1.02
+			self.temple.CAN_TOGGLE_FIREMODE = false
+			self.temple.fire_mode_data.fire_rate = 0.1304347826086957
+		--	self.temple.shell_ejection = "effects/payday2/particles/weapons/shells/shell_empty" --caseless ammo you dirt bag
+			self.temple.stats = {
+				damage = 44,
+				spread = 46,
+				recoil = 60,
+				spread_moving = 5,
+				zoom = 1,
+				concealment = 20,
+				suppression = 10,
+				alert_size = 2,
+				extra_ammo = 101,
+				total_ammo_mod = 400,
+				value = 1,
+				reload = 20
+			}
+			self.temple.kick = self.stat_info.kick_tables.right_recoil	
+			self.temple.supported = true
+			self.temple.ads_speed = 0.3
+			self.temple.damage_falloff = {
+				start_dist = 2500,
+				end_dist = 4000,
+				min_mult = 0.5
+			}
+			self.temple.CLIP_AMMO_MAX = 30
+			self.temple.AMMO_MAX = 60
+			self.temple.stats_modifiers = nil
+			self.temple.panic_suppression_chance = 0.05
+			self.temple.timers.reload_empty = 6.5
+			self.temple.timers.reload_exit_empty = 0.65
+			self.temple.timers.reload_not_empty = 4
+			self.temple.timers.reload_exit_not_empty = 0.45
+		end
+		]]
+	
 	if self.temple then
-		self.temple.categories = {
-			"assault_rifle",
-					"dmr_l"
-		}
-		self.temple.recategorize = {"dmr_ar"}
+		self.temple.recategorize = { "light_ar" }
+		self.temple.categories = { "assault_rifle" }
 		self.temple.damage_type = "assault_rifle"
+		self.temple.shell_ejection = "effects/payday2/particles/weapons/shells/shell_empty" --caseless ammo you dirt bag
 		--self.temple.desc_id = "bm_temple_sc_desc"
 		--self.temple.has_description = true
 		self.temple.CLIP_AMMO_MAX = 30
@@ -33932,7 +33976,7 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 		self.temple.FIRE_MODE = "auto"
 		self.temple.kick = self.stat_info.kick_tables.moderate_kick
 		self.temple.kick_pattern = {
-			{0, self.stat_info.kick_tables.vertical_kick},
+			{0, self.stat_info.kick_tables.horizontal_recoil},
 			{5, self.stat_info.kick_tables.moderate_kick},
 			{8, self.stat_info.kick_tables.left_recoil},
 			{12, self.stat_info.kick_tables.moderate_left_kick},
@@ -34381,50 +34425,6 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 			self.sideload.reload_speed_multiplier = 0.9
 			self.sideload.tactical_reload = 1
 			self.sideload.timers = deep_clone(self.ksg.timers)
-		end
-
-		if self.temple then	--VxWolf HK G11 //this is gonna be fucking janky as all hell lmao
-			self.temple.recategorize = { "light_ar" }
-			self.temple.categories = { "assault_rifle" }
-			self.temple.has_description = false
-			self.temple.BURST_FIRE = 3
-			self.temple.BURST_DELAY = 0.18
-			self.temple.BURST_FIRE_RATE_MULTIPLIER = 4.565217391304348
-			self.temple.BURST_FIRE_RECOIL_MULTIPLIER = 0.7
-			self.temple.BURST_FIRE_LAST_RECOIL_MULTIPLIER = 1.02
-			self.temple.CAN_TOGGLE_FIREMODE = false
-			self.temple.fire_mode_data.fire_rate = 0.1304347826086957
-		--	self.temple.shell_ejection = "effects/payday2/particles/weapons/shells/shell_empty" --caseless ammo you dirt bag
-			self.temple.stats = {
-				damage = 44,
-				spread = 46,
-				recoil = 60,
-				spread_moving = 5,
-				zoom = 1,
-				concealment = 20,
-				suppression = 10,
-				alert_size = 2,
-				extra_ammo = 101,
-				total_ammo_mod = 400,
-				value = 1,
-				reload = 20
-			}
-			self.temple.kick = self.stat_info.kick_tables.right_recoil	
-			self.temple.supported = true
-			self.temple.ads_speed = 0.3
-			self.temple.damage_falloff = {
-				start_dist = 2500,
-				end_dist = 4000,
-				min_mult = 0.5
-			}
-			self.temple.CLIP_AMMO_MAX = 50
-			self.temple.AMMO_MAX = 200
-			self.temple.stats_modifiers = nil
-			self.temple.panic_suppression_chance = 0.05
-			self.temple.timers.reload_empty = 6.5
-			self.temple.timers.reload_exit_empty = 0.65
-			self.temple.timers.reload_not_empty = 4
-			self.temple.timers.reload_exit_not_empty = 0.45
 		end
 
 		if self.tar21 then
