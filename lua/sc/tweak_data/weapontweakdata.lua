@@ -34102,6 +34102,9 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 		self.roach.sounds.spin_start = "hailstorm_shotgun_fire_charge"
 		self.roach.sounds.spin_end = "swatturret_spin_stop"
 	end
+	
+	--Temp Bandaid cause of menu issue
+	self.x_shepheard.use_data.selection_index = 5
 
 	
 	-- [[ FaN's Addons ]]
