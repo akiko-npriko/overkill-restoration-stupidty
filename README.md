@@ -7,6 +7,7 @@ Side note: Reverted to a gold verison of FanScot due to being too unstable
 FanScot Notes:
 This is a couple of edits to Restoration Mod fitted for my liking.
 These range from minor weapon tweaks to new features such as mutators.
+Note: this is an older verison (gold edition kinda) of FanScot stuff
 
 # Femboi Changes:
 
@@ -14,6 +15,8 @@ Hardcore Stuff
 - Cableties are now only avaliable in a skill (3 norm and 100 aced)
 - First Aid Kits now heal 300 health however are temp health (LFD2 ahh Painkillers) -nvm it not 300 it back to 150 with medkit being nerfed back to gold
     - Use this ig: https://modworkshop.net/mod/31730
+- Medics drop first aid kits
+- Armor influences ammo pickup (stuff from dev)
 - plan - add rpg, medicdozer, restore verison of minidozer to death wish
 - plan - add vanilla minidozer, warthog, to death sentence
 - to do - readd hostages affecting timer
@@ -28,6 +31,7 @@ Some Normalish Stuff:
 
 - Brought back rpg grunt mutator
 
+- Support for VxWolf's HK G11, Railgun (Roach), and OTWD Flaregun
 
 # Changes:
 
@@ -43,7 +47,7 @@ Big Dave has random weapons.
 
 Added descriptions for various weapons.
 
-Half assed custom weapon support for Third Eye Railgun, UTS-15, VxWolf's HK G11, Crime Boss: Rockay City Scudomnion, PD:TH AMCAR-4, IWI TAR-21, Travis Baker's Repeater, Hawk Type 97, K3 Light Machine Gun, Owen SMG, .300 Knockout, PP-91 KEDR, AF2011, Crime Boss Handcannon, M3 Grease Gun, and Beretta Model 38A.
+Half assed custom weapon support for Third Eye Railgun, UTS-15, Crime Boss: Rockay City Scudomnion, PD:TH AMCAR-4, IWI TAR-21, Travis Baker's Repeater, Hawk Type 97, K3 Light Machine Gun, Owen SMG, .300 Knockout, PP-91 KEDR, AF2011, Crime Boss Handcannon, M3 Grease Gun, and Beretta Model 38A.
 
 Package data for Russia and Murkywater properlly load.
 
