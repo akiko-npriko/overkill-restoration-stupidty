@@ -28,16 +28,6 @@ function WeaponAmmo:replenish()
 			pickup_multiplier = pickup_multiplier * ( ((managers.player:upgrade_value("player", "passive_pick_up_multiplier", 1) - 1) * is_solo) + 1 )
 		end
 
-		for _, category in ipairs(self:weapon_tweak_data().categories) do
-			pickup_multiplier = pickup_multiplier + managers.player:upgrade_value(category, "pick_up_multiplier", 1) - 1
-		end
-
-		if managers.player:has_category_upgrade("player", "armor_pickup_mul") then
-			pickup_multiplier = pickup_multiplier * managers.player:body_armor_value("skill_ammo_mul", nil, 1)
-		end
-
-		pickup_multiplier = pickup_multiplier * ((self._is_controller and 1.15) or 1)
-		
 		--Apply multiplier from skills and ammo.
 		self._ammo_pickup[1] = self._ammo_pickup[1] * pickup_multiplier
 		self._ammo_pickup[2] = self._ammo_pickup[2] * pickup_multiplier
@@ -47,14 +37,12 @@ end
 --Ensures that OICW magazine size increases don't result in broken decimal values.
 function WeaponAmmo:calculate_ammo_max_per_clip()
 	local ammo = tweak_data.weapon[self._name_id].CLIP_AMMO_MAX + (self._extra_ammo or 0)
-	if not self._starwars then
-		ammo = ammo * managers.player:upgrade_value(self._name_id, "clip_ammo_increase", 1)
-		if not self:upgrade_blocked("weapon", "clip_ammo_increase") then
-			ammo = ammo * managers.player:upgrade_value("weapon", "clip_ammo_increase", 1)
-		end
-		if not self:upgrade_blocked(tweak_data.weapon[self._name_id].category, "clip_ammo_increase") then
-			ammo = ammo * managers.player:upgrade_value(tweak_data.weapon[self._name_id].category, "clip_ammo_increase", 1)
-		end
+	ammo = ammo * managers.player:upgrade_value(self._name_id, "clip_ammo_increase", 1)
+	if not self:upgrade_blocked("weapon", "clip_ammo_increase") then
+		ammo = ammo * managers.player:upgrade_value("weapon", "clip_ammo_increase", 1)
+	end
+	if not self:upgrade_blocked(tweak_data.weapon[self._name_id].category, "clip_ammo_increase") then
+		ammo = ammo * managers.player:upgrade_value(tweak_data.weapon[self._name_id].category, "clip_ammo_increase", 1)
 	end
 	ammo = math.round(ammo)
 	return ammo

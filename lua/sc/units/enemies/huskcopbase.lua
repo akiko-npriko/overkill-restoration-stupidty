@@ -1,10 +1,3 @@
-HuskCopBase._run_unit_sequences = CopBase._run_unit_sequences
-
---thanks eclipse gem mod by the way and shotout to the epic developer budies who help resmod!
-Hooks:PreHook(HuskCopBase, "post_init", "run_fucking_heads_post_init", function(self)
-	self:_run_unit_sequences()
-end)
-
 Hooks:PostHook(HuskCopBase, "post_init", "postinithuskbase", function(self)
 	if self._unit:base()._tweak_table == "summers" then
 		managers.groupai:state():_reset_summers_dr()

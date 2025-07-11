@@ -18,33 +18,27 @@ local gensec_dozer = (difficulty >= 6 and "units/payday2/characters/ene_bulldoze
 local fbi_agents = (difficulty >= 7 and fbi_ready_team)
 local ponr_value = (difficulty <= 5 and 300 or (difficulty == 6 or difficulty == 7) and 420) or 540
 	
---[[
 local gensec = {
 	values = {
         enemy = gensec_guards
 	}
 }
---]]
 local gensec_tank = {
 	values = {
         enemy = gensec_dozer
 	}
 }
-	--[[remake this stupid shit
 local fbi = {
 	values = {
         enemy = fbi_agents
 	}
 }
-	--]]
-
 return {
 	--Pro Job PONR+Hunt (Endless assault), triggers when van arrives cause that's better
 	[100329] = {
 		ponr = ponr_value,
 		hunt = hunt_projob
 	},
-	--[[remake this stupid shit
 	--FBI Agents, replace them with Ready Teams on DW+
 	[100514] = fbi,
 	[100515] = fbi,
@@ -104,7 +98,6 @@ return {
 	[100544] = gensec,
 	[100524] = gensec,
 	[100525] = gensec,
-	--]]
 	--Van Bulldozers
 	[103750] = gensec_tank,
 	[103751] = gensec_tank,

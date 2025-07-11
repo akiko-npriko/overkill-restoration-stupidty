@@ -29,10 +29,6 @@ function PlayerDamage:init(unit)
 	self._focus_delay_mul = 1
 	self._dmg_interval = tweak_data.player.damage.MIN_DAMAGE_INTERVAL
 	
-	if player_manager:has_category_upgrade("player", "damage_grace_mult") then
-		self._dmg_interval = self._dmg_interval * managers.player:upgrade_value("player", "damage_grace_mult", 1)
-	end
-
 	if managers.menu:get_controller():get_default_controller_id() ~= "keyboard" and not _G.IS_VR then
 		self._dmg_interval = self._dmg_interval * tweak_data.player.controller_damage_grace_multiplier or 2
 	end
@@ -111,7 +107,6 @@ function PlayerDamage:init(unit)
 	self._unpierceable = player_manager:has_category_upgrade("player", "unpierceable_armor")
 	managers.player:set_damage_absorption("absorption_addend", managers.player:upgrade_value("player", "damage_absorption_addend", 0))
 	managers.player:set_damage_absorption("full_armor_absorption", managers.player:upgrade_value("player", "armor_full_damage_absorb", 0) * self:_max_armor())
-	self._buildup_meter_hurt_t = 0
 
 	--The rest of this is unchanged vanilla code.
 	local function revive_player()
@@ -612,7 +607,6 @@ function PlayerDamage:damage_bullet(attack_data)
 		end
 
 		local knockback_resistance = pm:upgrade_value("player", "knockback_resistance", 1) or 1
-		knockback_resistance = knockback_resistance * (1 - math.min(math.max(pm:upgrade_value("player", "resist_knockback_push", 0.0) * self:_max_armor(), 0.0), 0.95))
 		--Pain and suffering
 		if distance then
 			local effect_alpha = (restoration.Options:GetValue("HUD/Extra/ScreenEffectAlpha") or 1)
@@ -1319,25 +1313,6 @@ function PlayerDamage:_calc_health_damage_no_deflection(attack_data)
 		self._damage_to_hot_stack = {}
 	end
 
-	if attack_data.damage > 0 then
-		local t = Application:time()
-		local pm = managers.player
-		local socio_hurt_t = pm:has_category_upgrade("player", "buildup_meter") and not pm:has_category_upgrade("player", "buildup_meter_earl")
-		if not self._ally_attack and socio_hurt_t and t > (self._buildup_meter_hurt_t or 0) and pm._buildup_meter then
-			local hurt_decay_mod = (pm:has_category_upgrade("player", "buildup_meter_hurt_decay_mod") and pm:upgrade_value("player", "buildup_meter_hurt_decay_mod", 0)) or 0
-			local hurt_decay = pm:upgrade_value("player", "buildup_meter", 0).hurt_decay + hurt_decay_mod
-			local hurt_t_mod = (pm:has_category_upgrade("player", "buildup_meter_quickening") and (math.floor(self:_raw_max_armor()/pm:upgrade_value("player", "buildup_meter_quickening",0).armor_steps) * pm:upgrade_value("player", "buildup_meter_quickening", 0).hurt_t_mod)) or 0
-			local hurt_t = pm:upgrade_value("player", "buildup_meter", 0).hurt_t
-			local combo_t_mod = (pm:has_category_upgrade("player", "buildup_meter_zack") and pm:upgrade_value("player", "buildup_meter_zack", 0).combo_t_mod) or 0
-			local combo_t = pm:upgrade_value("player", "buildup_meter", 0).combo_t + combo_t_mod
-			pm._buildup_meter = math.max( 0, managers.player._buildup_meter - hurt_decay )
-			pm._buildup_meter_t = combo_t
-			managers.hud:start_buff("sociopath", pm._buildup_meter_t)
-			managers.hud:set_stacks("sociopath", pm._buildup_meter)
-			self._buildup_meter_hurt_t = t + hurt_t
-		end
-	end
-	
 	attack_data.damage = attack_data.damage * managers.player:upgrade_value("player", "real_health_damage_reduction", 1)
 
 	--OFFYERROCKER'S MERC PERK DECK
@@ -1404,9 +1379,7 @@ function PlayerDamage:_calc_health_damage_no_deflection(attack_data)
 		self:_chk_cheat_death(ignore_reduce_revive)
 	end
 	
-	if attack_data.variant ~= "delayed_tick" then
-		self:_damage_screen()
-	end
+	self:_damage_screen()
 	self:_check_bleed_out(trigger_skills, nil, ignore_reduce_revive)
 	managers.hud:set_player_health({
 		current = self:get_real_health(),
@@ -1476,7 +1449,7 @@ function PlayerDamage:_calc_health_damage(attack_data)
 		end
 		attack_data.damage = managers.player:modify_value("damage_taken", attack_data.damage, attack_data) --Stoic damage delay. Done here so it applies to all health damage taken.
 	end
-	
+
 	return self:_calc_health_damage_no_deflection(attack_data)
 end
 
@@ -1775,23 +1748,6 @@ Hooks:PreHook(PlayerDamage, "_check_bleed_out", "ResYakuzaCaptstoneCheck", funct
 			managers.hud:remove_skill("survive_one_hit")
 		else
 			--self._can_survive_one_hit = managers.player:has_category_upgrade("player", "survive_one_hit")
-		end
-		if managers.player:has_category_upgrade("player", "buildup_meter") and managers.player._buildup_meter then
-			local pm = managers.player
-			local combo_t_mod = (pm:has_category_upgrade("player", "buildup_meter_zack") and pm:upgrade_value("player", "buildup_meter_zack", 0).combo_t_mod) or 0
-			local combo_t = pm:upgrade_value("player", "buildup_meter", 0).combo_t + combo_t_mod
-			if managers.player:has_category_upgrade("player", "buildup_meter_earl") then
-				pm._buildup_meter_t = 0
-				pm._buildup_meter = 0
-				managers.hud:start_buff("sociopath", managers.player._buildup_meter_t)
-				managers.hud:set_stacks("sociopath", managers.player._buildup_meter)
-			else
-				local incap_decay = managers.player:upgrade_value("player", "buildup_meter", 0).incap_decay
-				pm._buildup_meter_t = combo_t
-				pm._buildup_meter = math.max(0, managers.player._buildup_meter - incap_decay)
-				managers.hud:start_buff("sociopath", managers.player._buildup_meter_t)
-				managers.hud:set_stacks("sociopath", managers.player._buildup_meter)
-			end
 		end
 	end
 end)

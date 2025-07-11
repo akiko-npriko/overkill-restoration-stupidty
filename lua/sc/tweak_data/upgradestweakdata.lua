@@ -158,7 +158,6 @@ Hooks:PostHook(UpgradesTweakData, "init", "ResLevelTableInit", function(self, tw
 					"agave",
 					"happy",
 					"shepheard",
-					"x_shepheard",
 					"slap"
 				}
 			},
@@ -514,17 +513,14 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 		0.7,
 		0.6
 	}
-	self.values.player.body_armor.skill_ammo_mul = { --repurposed to pick up mult
-		0.85,
-		0.925,
-		1.00,
-		1.05,
-		1.075,
-		1.125,
-		1.15
-	}
-	self.values.player.armor_pickup_mul = {
-		true
+	self.values.player.body_armor.skill_ammo_mul = { --UNUSED, increments of 0.02
+		1,
+		1.02,
+		1.04,
+		1.06,
+		1.1,
+		1.12,
+		1.16
 	}
 	self.max_deflection = 0.60
 	self.values.player.body_armor.deflection = { --*increments of 0.05
@@ -532,9 +528,9 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 		0.05,
 		0.10,
 		0.15,
-		0.20,
-		0.175,
-		0.125
+		0.20, --1 increment instead of 2
+		0.15, --subtract 1 increment instead of adding 1
+		0.10 --subtract 1 increment instead of adding 2
 	}
 	self.values.player.body_armor.regen_delay = { --increments of 0.25
 		2.25,
@@ -592,15 +588,13 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 	
 	--Equipment--
 	--FAKS: Intended to offer on-demand burst healing that can save people from going down.
-	self.values.first_aid_kit.heal_amount = 30 --Heals 300 health on use. --temp health go brrrr
-	--self.values.first_aid_kit.heal_amount = 15 --Heals 150 health on use.
+	self.values.first_aid_kit.heal_amount = 15 --Heals 150 health on use.
 
 	--Doctor Bags: Intended to offer consistent sustain over a long period of time.
 	self.doctor_bag_base = 2 --Starting Number
 	self.values.doctor_bag.heal_amount = 0.2 --Heals 20% of max health on use.
 	self.values.temporary.doctor_bag_health_regen = {{0.04, 180.1}} --Heals 4% of max health every 4 seconds for the next 3 minutes.
-	self.values.temporary.doctor_bag_health_regen_deflection_addend = 0.1
-
+	
 	--ECMs: They're ECMs
 	self.ecm_jammer_base_battery_life = 10
 	self.ecm_jammer_base_low_battery_life = 4
@@ -696,7 +690,7 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 				self.skill_descs.fast_learner = {
 					skill_value_b1 = tostring((1-self.first_aid_kit.revived_damage_reduction[1][1]) * 100).."%", -- DR for revived player
 					skill_value_b2 = tostring(self.first_aid_kit.revived_damage_reduction[1][2]), -- Duration of DR effect
-					skill_value_p1 = tostring((self.first_aid_kit.revived_damage_reduction[1][1] - self.first_aid_kit.revived_damage_reduction[2][1]) * 100).."%", -- Additional DR for revived player
+					skill_value_p1 = tostring((1-(self.first_aid_kit.revived_damage_reduction[1][1] - self.first_aid_kit.revived_damage_reduction[2][1])) * 100).."%", -- Aced DR for revived player
 				}
 
 			--Uppers
@@ -751,11 +745,9 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 			--Cable Guy
 				--Basic
 					self.values.cable_tie.quantity_1 = {3}
-					self.values.cable_tie.pickup_chance = {true}
 				--Ace
-					self.values.cable_tie.quantity_2 = {97}
-					self.values.cable_tie.pickup_chance = {false}
-					--self.values.cable_tie.pickup_chance = {true}
+					self.values.cable_tie.quantity_2 = {3}
+					self.values.cable_tie.pickup_chance = {true}
 					
 					self.skill_descs.triathlete = {
 						skill_value_b1 = tostring(self.values.cable_tie.quantity_1[1]), -- Additional cable ties on start
@@ -798,8 +790,8 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 				--Stockholm Syndrome
 					--Basic
 						self.values.player.civilian_reviver = {true}
-						self.values.player.civilian_gives_ammo = {true}
-					--Ace
+						self.values.player.civilian_gives_ammo = {true}						
+					--Ace						
 						self.values.team.damage = {
 							hostage_absorption = {0.1},
 							hostage_absorption_limit = 4
@@ -825,20 +817,20 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 						self.values.player.hostage_health_regen_addend = {
 							0.1, --Basic
 							0.2 --Unused
-						}
+						}		
 
 					--Ace
 						self.values.player.civilians_dont_flee = {true}
 						self.values.player.super_syndrome = {
 							1
-						}
+						}						
 						self.values.player.hostage_health_regen_max_mult = { 1.5 }
 						
 						self.skill_descs.black_marketeer = {
 							skill_value_b1 = tostring(self.values.player.hostage_health_regen_addend[1]*10), -- HP regen
 							skill_value_p1 = tostring(self.values.player.hostage_health_regen_max_mult[1] % 1 * 100).."%" -- HP regen increase when 4+ hostages
 						}
-
+			
 		--Assault--
 			--Leadership--
 				--Basic
@@ -855,7 +847,7 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 				--Basic
 					self.values.smg.hip_fire_spread_multiplier = {0.8, 0.5}
 				--Ace
-					self.values.smg.reload_speed_multiplier = {1.15}
+					self.values.smg.reload_speed_multiplier = {1.25}
 					
 					self.skill_descs.rifleman = {
 						skill_value_b1 = tostring((1 - self.values.smg.hip_fire_spread_multiplier[1]) % 1 * 100).."%", -- Hipfire +accuracy
@@ -873,10 +865,12 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 					skill_value_b1 = tostring(self.values.weapon.clip_ammo_increase[1] % 1 * 100).."%", -- Mag size increase
 					skill_value_p1 = tostring((self.values.weapon.clip_ammo_increase[2] - self.values.weapon.clip_ammo_increase[1]) % 1 * 100).."%" -- Additional mag size increase
 				}
+				
+				
 
 			--MG Specialist
 				--Basic
-					self.values.smg.move_spread_multiplier = {0.6}
+					self.values.smg.move_spread_multiplier = {0.4}
 				--Ace
 					self.values.smg.fire_rate_multiplier = {1.15, 1.15}
 					self.values.smg.full_auto_free_ammo = {4}
@@ -886,7 +880,7 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 						skill_value_p1 = tostring(self.values.smg.fire_rate_multiplier[1] % 1 * 100).."%", -- RoF increase
 						skill_value_p2 = tostring(self.values.smg.full_auto_free_ammo[1]) -- Every X bullet fired without releasing the trigger consumes no ammo					
 					}
-
+				
 			--Heavy Impact
 				--Basic
 					self.values.weapon.knock_down = {
@@ -904,18 +898,17 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 						skill_value_p2 = tostring((1 - self.values.player.bipod_damage_reduction[1]) % 1 * 100).."%" -- DR when MG is mounted
 					}
 	
-			--Body Expertise a.k.a. Spray N' Pray
+			--Body Expertise aka Spray N' Pray
 				self.values.player.ap_bullets = {0.5}
 				self.values.smg.ap_bullets = {1.0}
+				self.automatic_kills_to_damage_reset_t = 1.2 --delay to reset time (seconds)
 				self.values.smg.automatic_kills_to_damage = {
 					{
-						10, --stack limit
-						0.05, --dmg mult add
-						4 --time
+						4, --stack limit
+						0.125 --dmg mult add
 					}
 				}
 				--Unused
-					self.automatic_kills_to_damage_reset_t = 1.2 --delay to reset time (seconds)
 					self.values.weapon.automatic_head_shot_add = {0.03, 0.06}
 					self.values.player.universal_body_expertise = {false}
 					self.values.smg.automatic_can_shoot_through_enemy = {
@@ -924,15 +917,15 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 							1.1 --dmg mult
 						}
 					}
-
+					
 				self.skill_descs.single_shot_ammo_return = {
 					skill_value_b1 = tostring(self.values.player.ap_bullets[1] * 100).."%", -- AP for non-MG
 					skill_value_b2 = tostring(self.values.smg.ap_bullets[1] * 100).."%", -- AP for MG
-					skill_value_p1 = tostring(self.values.smg.automatic_kills_to_damage[1][3]), -- delay to reset time for keeping buff active
+					skill_value_p1 = tostring(self.automatic_kills_to_damage_reset_t), -- delay to reset time for keeping buff active
 					skill_value_p2 = tostring(self.values.smg.automatic_kills_to_damage[1][2] * 100).."%", -- Damage increase per stack
 					skill_value_p3 = tostring(self.values.smg.automatic_kills_to_damage[1][1]) -- Amount of stacks
 				}
-
+						
 	--ENFORCER--
 		--Shotgunner--
 			--Shotgun Impact
@@ -1016,82 +1009,80 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 					self.values.player.resist_melee_push = {0.025}
 				--Ace
 					self.values.player.flashbang_multiplier = {1, 0.5}
-					self.values.player.resist_knockback_push = {0.025}
 					
 					self.skill_descs.oppressor = {
-						skill_value_b1 = tostring(self.values.player.resist_melee_push[1] * 10).."%", -- Melee push resistance (depends of armor)
-						skill_value_p1 = tostring(self.values.player.flashbang_multiplier[2] * 100).."%", -- Reduce duration of flashbang effect
-						skill_value_p2 = tostring(self.values.player.resist_knockback_push[1] * 10).."%", -- Knockback resistance (depends of armor)
+						skill_value_b1 = tostring(self.values.player.resist_melee_push[1] * 100).."%", -- Melee push resistance (depends of armor)
+						skill_value_p1 = tostring(self.values.player.flashbang_multiplier[2] * 100).."%" -- Reduce duration of flashbang effect
 					}
 				
-			--Die Hard
-				self.values.player.deflection_addend = {
-					0.05, --Basic
-					0.10 --Ace
-				}
-				
-				self.skill_descs.show_of_force = {
-					skill_value_b1 = tostring(self.values.player.deflection_addend[1] * 100).."%", -- Additional deflection
-					skill_value_p1 = tostring((self.values.player.deflection_addend[2] - self.values.player.deflection_addend[1]) * 100).."%"
-				}
-
-			--Transporter
-				--Basic
-					self.values.player.armor_carry_bonus = {1.005}
-				--Ace
-					self.values.carry.movement_penalty_nullifier = {true}
+				--Die Hard
+					self.values.player.deflection_addend = {
+						0.05, --Basic
+						0.10 --Ace
+					}
 					
-					self.skill_descs.pack_mule = {
-						skill_value_b1 = tostring(math.ceil(self.values.player.armor_carry_bonus[1] % 1)/2).."%" -- Reducing movement penalty
+					self.skill_descs.show_of_force = {
+						skill_value_b1 = tostring(self.values.player.deflection_addend[1] * 100).."%", -- Additional deflection
+						skill_value_p1 = tostring((self.values.player.deflection_addend[2] - self.values.player.deflection_addend[1]) * 100).."%"
 					}
 
-			--More Blood To Bleed
-				--HARDCODED COCKSUCKING BULLSHIT
-				--Go to tweakdata.lua
-				self.values.player.health_multiplier = {
-					1.1, --Basic
-					1.25 --Ace
-				}
-				
-				self.skill_descs.iron_man = {
-					skill_value_b1 = tostring(self.values.player.health_multiplier[1] % 1 * 100).."%", -- Additional max HP
-					skill_value_p1 = tostring((self.values.player.health_multiplier[2] - self.values.player.health_multiplier[1]) * 100).."%"
-				}
+				--Transporter
+					--Basic
+						self.values.player.armor_carry_bonus = {1.005}
+					--Ace
+						self.values.carry.movement_penalty_nullifier = {true}
+						
+						self.skill_descs.pack_mule = {
+							skill_value_b1 = tostring(math.ceil(self.values.player.armor_carry_bonus[1] % 1)/2).."%" -- Reducing movement penalty
+						}
 
-			--Bullseye
-				self.values.player.headshot_regen_armor_bonus = {
-					0.5, --Basic
-					3.5 --Ace
-				}
-				self.values.player.headshot_regen_armor_bonus_cd_reduction = {
-					0.5, --Basic
-					1 --Ace
-				}
-				self.on_headshot_dealt_cooldown = 5
-				
-				self.skill_descs.prison_wife = {
-					skill_value_b1 = tostring(self.values.player.headshot_regen_armor_bonus[1] * 10), -- Armor regen on headshot
-					skill_value_b2 = tostring(self.on_headshot_dealt_cooldown), -- Bullseye's CD
-					skill_value_b3 = tostring(self.values.player.headshot_regen_armor_bonus_cd_reduction[1]), -- Bullseye CD reduction
-					skill_value_p1 = tostring((self.values.player.headshot_regen_armor_bonus[2] - self.values.player.headshot_regen_armor_bonus[1]) * 10),
-					skill_value_p2 = tostring(self.values.player.headshot_regen_armor_bonus_cd_reduction[2] - self.values.player.headshot_regen_armor_bonus_cd_reduction[1])
-				}
-
-			--Iron Man
-				--Basic
-					--Unlock ICTV
-					self.values.player.shield_knock = {true}
-				--Ace						
-					self.values.player.bullet_shield_knock = {true}
-					self.values.player.shield_knock_bullet = {
-						max_damage = 200,
-						chance = 0.8
-					}						
-					self.values.player.armor_regen_timer_multiplier = {0.9}
+				--More Blood To Bleed
+					--HARDCODED COCKSUCKING BULLSHIT
+					--Go to tweakdata.lua
+					self.values.player.health_multiplier = {
+						1.1, --Basic
+						1.25 --Ace
+					}
 					
-					self.skill_descs.juggernaut = {
-						skill_value_p1 = tostring((1 - self.values.player.armor_regen_timer_multiplier[1]) * 100).."%" -- Faster armor recovery
+					self.skill_descs.iron_man = {
+						skill_value_b1 = tostring(self.values.player.health_multiplier[1] % 1 * 100).."%", -- Additional max HP
+						skill_value_p1 = tostring((self.values.player.health_multiplier[2] - self.values.player.health_multiplier[1]) * 100).."%"
 					}
+
+				--Bullseye
+					self.values.player.headshot_regen_armor_bonus = {
+						0.5, --Basic
+						3.5 --Ace
+					}
+					self.values.player.headshot_regen_armor_bonus_cd_reduction = {
+						0.5, --Basic
+						1 --Ace
+					}
+					self.on_headshot_dealt_cooldown = 5
+					
+					self.skill_descs.prison_wife = {
+						skill_value_b1 = tostring(self.values.player.headshot_regen_armor_bonus[1] * 10), -- Armor regen on headshot
+						skill_value_b2 = tostring(self.on_headshot_dealt_cooldown), -- Bullseye's CD
+						skill_value_b3 = tostring(self.values.player.headshot_regen_armor_bonus_cd_reduction[1]), -- Bullseye CD reduction
+						skill_value_p1 = tostring((self.values.player.headshot_regen_armor_bonus[2] - self.values.player.headshot_regen_armor_bonus[1]) * 10),
+						skill_value_p2 = tostring(self.values.player.headshot_regen_armor_bonus_cd_reduction[2] - self.values.player.headshot_regen_armor_bonus_cd_reduction[1])
+					}
+
+				--Iron Man
+					--Basic
+						--Unlock ICTV
+						self.values.player.shield_knock = {true}
+					--Ace						
+						self.values.player.bullet_shield_knock = {true}
+						self.values.player.shield_knock_bullet = {
+							max_damage = 200,
+							chance = 0.8
+						}						
+						self.values.player.armor_regen_timer_multiplier = {0.9}
+						
+						self.skill_descs.juggernaut = {
+							skill_value_p1 = tostring((1 - self.values.player.armor_regen_timer_multiplier[1]) * 100).."%" -- Faster armor recovery
+						}
 			
 		--Support--
 			--Scavenger
@@ -1308,8 +1299,8 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 		--Combat Engineer--
 			--Sharpshooter
 				--Basic
-					self.values.snp.recoil_index_addend = {2, 4} --2nd tier is in Rifleman Basic; you can't get Rifleman before this skill, so it's alright
-					self.values.assault_rifle.recoil_index_addend = {2, 4} --I'm reminded of Miku saying "I got that green onion for 90 yen, so it's alright" when I read that
+					self.values.snp.recoil_index_addend = {2}
+					self.values.assault_rifle.recoil_index_addend = {2}
 				--Ace
 					self.values.temporary.headshot_fire_rate_mult = {{1.2, 10}}
 					
@@ -1318,51 +1309,46 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 						skill_value_p1 = tostring(self.values.temporary.headshot_fire_rate_mult[1][1] % 1 * 100).."%", -- RoF buff
 						skill_value_p2 = tostring(self.values.temporary.headshot_fire_rate_mult [1][2]) -- Duration of buff
 					}
-
+				
 			--Kilmer
 				--Basic
 					self.values.snp.move_spread_multiplier = {0.4}
 					self.values.assault_rifle.move_spread_multiplier = {0.4}
 				--Ace
-					self.values.snp.reload_speed_multiplier = {1.05, 1.15}
-					self.values.assault_rifle.reload_speed_multiplier = {1.05, 1.15}
-					self.values.snp.ap_bullets_min = {0.25}
-					self.values.assault_rifle.ap_bullets_min = {0.25}
-
+					self.values.snp.reload_speed_multiplier = {1.25}					
+					self.values.assault_rifle.reload_speed_multiplier = {1.25}		
+					
 					self.skill_descs.heavy_impact = {
 						skill_value_b1 = tostring((1 - self.values.snp.move_spread_multiplier[1]) * 100).."%", -- Movespeed during ADS
-						skill_value_b2 = tostring(self.values.assault_rifle.reload_speed_multiplier[1] % 1 * 100).."%", -- Reload speed
-						skill_value_p1 = tostring((self.values.assault_rifle.reload_speed_multiplier[2] - self.values.assault_rifle.reload_speed_multiplier[1]) % 1 * 100).."%", -- Reload speed
-						skill_value_p2 = tostring(self.values.assault_rifle.ap_bullets_min[1] % 1 * 100).."%" -- AP
+						skill_value_p1 = tostring(self.values.assault_rifle.reload_speed_multiplier[1] % 1 * 100).."%" -- Reload speed
 					}
 
 			--Rifleman
 				--Basic/Aced
-					self.values.assault_rifle.steelsight_accuracy_inc = {0.90, 0.75}
-					self.values.snp.steelsight_accuracy_inc = {0.90, 0.75}
-					self.values.assault_rifle.steelsight_range_inc = {1.10, 1.25}
-					self.values.snp.steelsight_range_inc = {1.10, 1.25}
+					self.values.assault_rifle.steelsight_accuracy_inc = {0.875, 0.75}
+					self.values.snp.steelsight_accuracy_inc = {0.875, 0.75}
+					self.values.assault_rifle.steelsight_range_inc = {1.125, 1.25}
+					self.values.snp.steelsight_range_inc = {1.125, 1.25}
 
-					self.values.assault_rifle.enter_steelsight_speed_multiplier = {1.1}
-					self.values.snp.enter_steelsight_speed_multiplier = {1.1}
-
+					self.values.assault_rifle.enter_steelsight_speed_multiplier = {1.075}
+					self.values.snp.enter_steelsight_speed_multiplier = {1.075}
+					
 					self.skill_descs.fire_control = {
 						skill_value_b1 = tostring(self.values.snp.steelsight_range_inc[1] % 1 * 100).."%", -- Accuracy and range buff
-						skill_value_b2 = tostring(self.values.snp.recoil_index_addend[1]), --++Stabilty
 						skill_value_p1 = tostring((self.values.snp.steelsight_range_inc[2] - self.values.snp.steelsight_range_inc[1]) * 100).."%",
 						skill_value_p2 = tostring(self.values.snp.enter_steelsight_speed_multiplier[1] % 1 * 100).."%" --ADS speed buff
 					}
-
+					
 			--Aggressive Reload
 				self.values.temporary.single_shot_fast_reload = {
 					{ --Basic
-						1.15,
-						4,
+						1.25,
+						10,
 						false --Whether or not to allow full-auto
 					},
 					{ --Ace
-						1.3,
-						4,
+						1.5,
+						10,
 						true
 					},
 				}
@@ -1404,7 +1390,7 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 						range_increment = 800
 					}
 				}
-				self.headshot_graze_proc_cd = 0.4
+				self.headshot_graze_proc_cd = 0.5
 				self.values.player.headshot_no_falloff = {true}
 				self.headshot_no_falloff_cd = 0.0
 				
@@ -1574,8 +1560,8 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 			--Shockproof
 				--Basic
 					self.values.player.taser_malfunction = {{
-							interval = 0.5,
-							chance_to_trigger = 0.3
+							interval = 1,
+							chance_to_trigger = 0.15
 					}}
 					self.values.player.knockback_resistance = {0.7}
 				--Ace
@@ -1618,8 +1604,6 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 				}
 				--Ace
 					self.values.player.dodge_heal_no_armor = {0.02}
-					self.dodge_heal_no_armor_cooldown = 15
-					self.dodge_heal_no_armor_cooldown_rd = 3
 					
 					self.skill_descs.jail_diet = {
 						skill_value_b1 = tostring(self.values.player.detection_risk_add_dodge_chance[1][1] * 100), --Dodge increase per concealment check
@@ -1627,9 +1611,7 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 						skill_value_b3 = tostring(self.values.player.detection_risk_add_dodge_chance[1][4]), --Concealment threshold
 						skill_value_b4 = tostring(self.values.player.detection_risk_add_dodge_chance[1][5] * 100), --Max dodge points
 						skill_value_p1 = tostring(self.values.player.detection_risk_add_dodge_chance[2][2]), -- Dodge for X concealment ACE
-						skill_value_p2 = tostring(self.values.player.dodge_heal_no_armor[1] * 100).."%", -- HP regen on dodge
-						skill_value_p3 = tostring(self.dodge_heal_no_armor_cooldown), -- regen cooldown
-						skill_value_p4 = tostring(self.dodge_heal_no_armor_cooldown_rd), -- cooldown reduction
+						skill_value_p2 = tostring(self.values.player.dodge_heal_no_armor[1] * 100).."%" -- HP regen on dodge
 					}
 			
 		--Silent Killer--
@@ -1767,7 +1749,7 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 					self.values.team.pistol.suppression_recoil_index_addend = self.values.team.pistol.recoil_index_addend
 				--Ace
 					self.values.pistol.swap_speed_multiplier = {2}
-					self.values.akimbo.swap_speed_multiplier = {1.25}
+					self.values.akimbo.swap_speed_multiplier = {1.5}
 					
 					self.skill_descs.equilibrium = {
 					skill_value_b1 = tostring(self.values.team.pistol.recoil_index_addend[1]), -- +Stability
@@ -1782,7 +1764,7 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 				--Ace
 					self.values.pistol.fire_rate_multiplier = {1.15}
 					self.values.pistol.ap_bullets = {1.0}
-					self.values.akimbo.ap_bullets = {0.25}
+					self.values.akimbo.ap_bullets = {0.5}
 					
 					self.skill_descs.dance_instructor = {
 						skill_value_b1 = tostring((1 - self.values.pistol.hip_fire_spread_multiplier[1]) * 100).."%", -- Reduce hipfire spread
@@ -2117,19 +2099,19 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 	}
 
 	self.values.player.level_2_armor_multiplier = {
-		1.10,
-		1.20,
-		1.05
+		1.15,
+		1.3,
+		1.5
 	}
 	self.values.player.level_3_armor_multiplier = {
-		1.10,
-		1.20,
-		1.05
+		1.15,
+		1.3,
+		1.5
 	}
 	self.values.player.level_4_armor_multiplier = {
-		1.10,
-		1.20,
-		1.05
+		1.15,
+		1.3,
+		1.5
 	}
 
 	self.values.player.tier_armor_multiplier = {
@@ -2328,7 +2310,7 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 	}}
 	self.loose_ammo_give_team_ratio = 0.15 --% of ammo given to team.
 
-	--Sociopath more like SocioBAD (Crook)
+	--Sociopath more like SocioBAD
 	self.values.player.killshot_regen_armor_bonus = {2}
 	self.values.player.killshot_close_regen_armor_bonus = { 
 		{
@@ -2336,229 +2318,18 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 			2 --melee kill mult
 		}
 	}
-	self.values.player.killshot_close_panic_chance = {0.20}
+	self.values.player.killshot_close_panic_chance = {0.25}
 	self.values.player.melee_kill_life_leech = {
 		0.02,
 		0.01 --Copycat, unused
 	}
 	self.values.player.melee_kill_stamina = {
-		0.1,
 		0.2
 	}
 	self.killshot_close_panic_range = 1200
 	self.on_killshot_cooldown = 5
 	self.on_killshot_cooldown_reduction = 0.5
 	self.on_killshot_cooldown_reduction_melee = 1.5
-
-	--New Sociopath
-	self.values.player.buildup_meter = {
-		{
-			combo_max = 100, --Max combo
-			combo_add = 3, --points per kill
-			combo_ene_mult = { --Point multiplier based on enemy killed; top-down priority
-				{captain = 10},
-				{tank = 5},
-				{spooc_titan = 3},
-				{spooc = 2.75},
-				{vet = 2.75},
-				{taser_titan = 2.25},
-				{taser = 2.75},
-				{medic = 2.25},
-				{shield_titan = 2.25},
-				{sniper_titan = 2},
-				{sniper = 1.75},
-				{shield = 1.75},
-				{special = 1.75},
-			},
-			combo_t = 5, --Combo decay timer
-			combo_decay = 10, --Points lost when combo decay timer expires
-			hurt_decay = 5, --Points lost when health is lost
-			hurt_t = 1, --Hurt decay cooldown
-			incap_decay = 40 --Points lost when entering bleedout (heath is 0)
-		},
-		{
-			combo_max = 100,
-			combo_add = 3,
-			combo_ene_mult = {
-				{captain = 10},
-				{tank = 5},
-				{spooc_titan = 3},
-				{spooc = 2.75},
-				{vet = 2.75},
-				{taser_titan = 2.25},
-				{taser = 2.75},
-				{medic = 2.25},
-				{shield_titan = 2.25},
-				{sniper_titan = 2},
-				{sniper = 1.75},
-				{shield = 1.75},
-				{special = 1.75},
-			},
-			combo_t = 5,
-			combo_decay = 5,
-			hurt_decay = 5,
-			hurt_t = 1,
-			incap_decay = 40
-		},
-		{ --Copycat
-			combo_max = 50, --Max combo
-			combo_add = 2, --points per kill
-			combo_ene_mult = { --Point multiplier based on enemy killed
-				{captain = 10},
-				{tank = 5},
-				{spooc_titan = 3},
-				{spooc = 2.75},
-				{vet = 2.75},
-				{taser_titan = 2.25},
-				{taser = 2.75},
-				{medic = 2.25},
-				{shield_titan = 2.25},
-				{sniper_titan = 2},
-				{sniper = 1.75},
-				{shield = 1.75},
-				{special = 1.75},
-			},
-			combo_t = 5, --Combo decay timer
-			combo_decay = 10, --Points lost when combo decay timer expires
-			hurt_decay = 5, --Points lost when health is lost
-			hurt_t = 1, --Hurt decay cooldown
-			incap_decay = 40 --Points lost when entering bleedout (heath is 0)
-		},
-	}
-	self.values.player.buildup_meter_pacify = { --damage resistance
-		{
-			combo_steps = 2,
-			effect = 0.015,
-			effect_max = 0.15,
-		},
-		{	--Rufus
-			combo_steps = 5,
-			effect = 0.025,
-			effect_max = 0.25,
-		}
-	}
-	self.values.player.buildup_meter_refresh = { true }
-	self.values.player.buildup_meter_redline = { --speed
-		{
-			combo_steps = 2,
-			effect = 0.01,
-			effect_max = 0.1,
-		},
-		{	--Brandon
-			combo_steps = 5,
-			effect = 0.02,
-			effect_max = 0.2,
-		}
-	}
-	self.values.player.buildup_meter_hysteria = { --healing
-		{
-			combo_steps = 5,
-			effect = 0.03,
-			effect_max = 0.3,
-		},
-		{
-			combo_steps = 5,
-			effect = 0.015,
-			effect_max = 0.15,
-		}
-	}
-	self.values.player.buildup_meter_elude = { --dodge on kill
-		{
-			combo_steps = 2,
-			effect = 0.03,
-			effect_max = 0.3,
-			melee_mult = 2,
-		},
-		{	--Corey
-			combo_steps = 5,
-			effect = 0.06,
-			effect_max = 0.6,
-			melee_mult = 1.25,
-		},
-		{	--Tony
-			combo_steps = 5,
-			effect = 0.02,
-			effect_max = 0.2,
-			melee_mult = 1.66667,
-		},
-		{	--Tony R
-			combo_steps = 5,
-			effect = 0.01,
-			effect_max = 0.1,
-			melee_mult = 1.33334,
-		},
-	}
-	self.values.player.buildup_meter_quickening = { --armor to base combo
-		{
-			combo_add_mod = 1, --base combo added per step
-			hurt_t_mod = 0.5, --hurt decay cooldown added per step
-			armor_steps = 10 --armor steps
-		}
-	}
-	self.values.player.buildup_meter_terrify = { --panic
-		{
-			combo_steps = 5,
-			effect = 0.01,
-			effect_max = 0.1,
-			melee_mult = 3
-		},
-		{	--Tony
-			combo_steps = 5,
-			effect = 0.006,
-			effect_max = 0.06,
-			melee_mult = 2.33334
-		},
-		{	--Tony R
-			combo_steps = 5,
-			effect = 0.003,
-			effect_max = 0.03,
-			melee_mult = 1.66667
-		},
-	}
-	--Additonal mask effects
-		self.values.player.buildup_meter_hurt_decay_mod = {
-			5,
-			10,
-			15,
-			20,
-		}
-		self.values.player.buildup_meter_aubrey = {{
-			combo_add = 1,
-			combo_t_add = 2 --time added to active combo
-		}}
-		self.values.player.buildup_meter_zack = {
-			{ combo_t_mod = 3, combo_decay_mod = 5 },
-			{ combo_t_mod = -1, combo_decay_mod = 0 }, --Brandon
-			{ combo_t_mod = -2, combo_decay_mod = 0 }, --Tony
-			{ combo_t_mod = -2, combo_decay_mod = 5 }, --Tony R
-		}
-		self.values.player.buildup_meter_earl = { true } --boolean check for no combo loss when taking HP damage + full combo loss on bleedout
-		self.values.player.melee_fists_damage_multiplier = {10}
-		self.values.player.melee_brass_damage_multiplier = {10}
-		self.values.tony = {
-			extra_ammo_multiplier = {
-				0.5,
-				0.2
-			},
-			pick_up_multiplier = {
-				0.2,
-				0.05
-			}
-		}
-		self.values.player.buildup_meter_rick = {
-			{ combo_add_mod = 2, combo_max_mod = -50 },
-			{ combo_add_mod = 0, combo_max_mod = -20 }, --Tony
-			{ combo_add_mod = 0, combo_max_mod = -40 } --Tony R
-		}
-		self.values.player.buildup_meter_swan = {{
-			combo_add = 2
-		}}
-		self.values.player.buildup_meter_mark = {{ --armor regen speed
-			combo_steps = 5,
-			effect = 0.04,
-			effect_max = 0.2,
-		}}
-
 
 	--Anarchist stuff--
 	self.values.player.armor_grinding = { --increments of 0.25
@@ -2672,22 +2443,17 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 	
 	--alcoholism is no joke
 	--stoic
-	self.values.player.damage_grace_mult = {0.5}
 	self.values.player.armor_to_health_conversion = {
 		50
 	}
-	local damage_control_passive_ticks = { 
-		8, --Max duration of DoT; damage per tick scales with duration and is calculated as "100/Duration"
-		5 --Copycat
-	}
 	self.values.player.damage_control_passive = {
 		{
-			40, --% of damage converted into DoT 
-			100 / damage_control_passive_ticks[1]
+			30, --% of damage converted into DoT 
+			12.5 --% of converted DoT damage applied per second
 		},
 		{--Copycat
 			20,
-			100 / damage_control_passive_ticks[2]
+			20
 		}
 	}
 	self.values.player.damage_control_auto_shrug = {
@@ -2698,8 +2464,8 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 	}
 
 	self.values.player.damage_control_cooldown_drain = {
-		{ 0, 5},
-		{50, 7.5}
+		{ 0, 4},
+		{50, 6}
 	}
 	
 	--Yakuza--
@@ -2933,7 +2699,7 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 		1.2,
 		1.3
 	}
-
+	
 	-- Perk Deck loc macros. They located here to make sure that all vanilla values for perks are overwritten by ResMod
 	
 	--Crew Chief
@@ -2983,25 +2749,20 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 	
 	--Armorer
 	self.specialization_descs[3][1] = {
-		perk_value_1 = tostring(self.values.player.tier_armor_multiplier[2] % 1 * 100).."%", -- Armor increase
-		perk_value_2 = tostring(self.values.player.level_2_armor_multiplier[1] % 1 * 100).."%" -- Armor bonus for vests
+		perk_value_1 = tostring(self.values.player.tier_armor_multiplier[2] % 1 * 100).."%" -- Armor increase
 	}
 	self.specialization_descs[3][3] = {
-		perk_value_1 = tostring((self.values.player.tier_armor_multiplier[4] - self.values.player.tier_armor_multiplier[2]) * 100).."%", -- Additional armor increase
-		perk_value_2 = tostring(self.values.player.passive_dodge_chance[1] * 100) -- Passive dodge increase
+		perk_value_1 = tostring((self.values.player.tier_armor_multiplier[4] - self.values.player.tier_armor_multiplier[2]) * 100).."%" -- Additional armor increase
 	}
 	self.specialization_descs[3][5] = {
 		perk_value_1 = tostring((self.values.player.tier_armor_multiplier[5] - self.values.player.tier_armor_multiplier[4]) * 100).."%", -- Another additional armor increase
-		perk_value_2 = "2", -- Body bag cases quantity. Not defined here so beware
-		perk_value_3 = tostring(self.values.player.level_2_dodge_addend[1] * 100) -- Dodge increase for vests
+		perk_value_2 = "2" -- Body bag cases quantity. Not defined here so beware
 	}
 	self.specialization_descs[3][7] = {
-		perk_value_1 = tostring((1 - self.values.player.perk_armor_regen_timer_multiplier[1]) * 100).."%", -- Armor regen buff
-		perk_value_2 = tostring((self.values.player.level_2_dodge_addend[2] - self.values.player.level_2_dodge_addend[1]) * 100) -- Additional dodge increase for vests
+		perk_value_1 = tostring((1 - self.values.player.perk_armor_regen_timer_multiplier[1]) * 100).."%" -- Armor regen buff
 	}
 	self.specialization_descs[3][9] = {
 		perk_value_1 = tostring((self.values.player.perk_armor_regen_timer_multiplier[1] - self.values.player.perk_armor_regen_timer_multiplier[2]) * 100).."%", -- Additional armor regen
-		perk_value_2 = tostring((self.values.player.level_2_armor_multiplier[2] - self.values.player.level_2_armor_multiplier[1]) * 100).."%", -- Additional armor increase for vests
 	}
 	
 	--Rogue
@@ -3051,37 +2812,21 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 	
 	--Crook
 	self.specialization_descs[6][1] = {
-		perk_value_1 = tostring(self.infiltrator_dr_range / 100), -- Required range to activate DR
-		perk_value_2 = tostring((1 - self.values.temporary.dmg_dampener_close_contact[2][1]) * 100).."%", -- DR when enemy is close
-		perk_value_3 = tostring(self.values.player.passive_dodge_chance[1] * 100) -- Passive dodge increase
-		--perk_value_1 = tostring(self.values.player.passive_dodge_chance[1] * 100), -- Passive dodge increase
-		--perk_value_2 = tostring(self.values.player.level_2_armor_multiplier[1] % 1 * 100).."%" -- Armor bonus for vests
+		perk_value_1 = tostring(self.values.player.passive_dodge_chance[1] * 100), -- Passive dodge increase
+		perk_value_2 = tostring(self.values.player.level_2_armor_multiplier[1] % 1 * 100).."%" -- Armor bonus for vests
 	}
 	self.specialization_descs[6][3] = {
-		perk_value_1 = tostring(self.values.player.killshot_regen_armor_bonus[1] * 10), -- Armor regen on kill
-		perk_value_2 = tostring(self.on_killshot_cooldown), -- Cooldown for socio armor/HP regen abilities
-		perk_value_3 = tostring(self.on_killshot_cooldown_reduction), -- CD reduction on kill
-		perk_value_4 = tostring(self.on_killshot_cooldown_reduction_melee), -- CD reduction on melee kill
-		--perk_value_1 = tostring(self.values.player.level_2_dodge_addend[1] * 100) -- Dodge increase for vests
+		perk_value_1 = tostring(self.values.player.level_2_dodge_addend[1] * 100) -- Dodge increase for vests
 	}
 	self.specialization_descs[6][5] = {
-		perk_value_1 = tostring(self.values.player.melee_kill_life_leech[1] * 100).."%", -- HP regen on melee kill
-		perk_value_2 = tostring(self.values.player.melee_kill_stamina[2] * 100).."%", -- stamina regen %
-		perk_value_3 = tostring((1 - self.values.player.pick_lock_speed_multiplier[1]) * 100).."%" -- Lockpicking speed bonus
-		--perk_value_1 = tostring((self.values.player.level_2_armor_multiplier[2] - self.values.player.level_2_armor_multiplier[1]) * 100).."%", -- Additional armor increase for vests
-		--perk_value_2 = tostring((1 - self.values.player.pick_lock_speed_multiplier[1]) * 100).."%" -- Lockpicking speed bonus
+		perk_value_1 = tostring((self.values.player.level_2_armor_multiplier[2] - self.values.player.level_2_armor_multiplier[1]) * 100).."%", -- Additional armor increase for vests
+		perk_value_2 = tostring((1 - self.values.player.pick_lock_speed_multiplier[1]) * 100).."%" -- Lockpicking speed bonus
 	}
 	self.specialization_descs[6][7] = {
-		perk_value_1 = "18", -- Required range to activate additional armor regen on kill (Same range as "Underdog" skill)
-		perk_value_2 = tostring(self.values.player.killshot_close_regen_armor_bonus[1][1] * 10), -- Additional armor regen when player killed enemy in specified range
-		perk_value_3 = tostring((self.values.player.passive_dodge_chance[2] - self.values.player.passive_dodge_chance[1]) * 100) -- Passive dodge increase
-		--perk_value_1 = tostring((self.values.player.level_2_dodge_addend[2] - self.values.player.level_2_dodge_addend[1]) * 100) -- Additional dodge increase for vests
+		perk_value_1 = tostring((self.values.player.level_2_dodge_addend[2] - self.values.player.level_2_dodge_addend[1]) * 100) -- Additional dodge increase for vests
 	}
 	self.specialization_descs[6][9] = {
-		perk_value_1 = "18", -- Required range to activate panic (Same range as "Underdog" skill)
-		perk_value_2 = tostring(self.values.player.killshot_close_panic_chance[1] * 100).."%", -- Panic chance
-		perk_value_3 = tostring(self.killshot_close_panic_range / 100) -- Panic spread range
-		--perk_value_1 = tostring((self.values.player.level_2_armor_multiplier[3] - self.values.player.level_2_armor_multiplier[2]) * 100).."%" -- Even more armor increase for vests
+		perk_value_1 = tostring((self.values.player.level_2_armor_multiplier[3] - self.values.player.level_2_armor_multiplier[2]) * 100).."%" -- Even more armor increase for vests
 	}
 	
 	--Burglar
@@ -3135,128 +2880,32 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 	
 	--Sociopath
 	self.specialization_descs[9][1] = {
-		--perk_value_1 = "18", -- Required range to activate DR (Same range as "Underdog" skill)
-		--perk_value_2 = tostring((1 - self.values.dmg_dampener_outnumbered_strong[1][1]) * 100).."%" -- DR when enemy is close
-		perk_value_1 = tostring(self.values.player.buildup_meter[1].combo_add),
-		perk_value_2 = tostring(self.values.player.buildup_meter[1].combo_max),
-		perk_value_3 = tostring(self.values.player.buildup_meter[1].combo_decay),
-		perk_value_4 = tostring(self.values.player.buildup_meter[1].combo_t),
-		perk_value_5 = tostring(self.values.player.buildup_meter[1].hurt_decay),
-		perk_value_6 = tostring(self.values.player.buildup_meter[1].hurt_t),
-		perk_value_7 = tostring(self.values.player.buildup_meter[1].incap_decay),
-		perk_value_8 = tostring(self.values.player.buildup_meter_pacify[1].combo_steps),
-		perk_value_9 = tostring(self.values.player.buildup_meter_pacify[1].effect * 100) .. "%",
-		perk_value_10 = tostring(self.values.player.buildup_meter_pacify[1].effect_max * 100) .. "%",
+		perk_value_1 = "18", -- Required range to activate DR (Same range as "Underdog" skill)
+		perk_value_2 = tostring((1 - self.values.dmg_dampener_outnumbered_strong[1][1]) * 100).."%" -- DR when enemy is close
 	}
 	self.specialization_descs[9][3] = {
-		--perk_value_1 = tostring(self.values.player.killshot_regen_armor_bonus[1] * 10), -- Armor regen on kill
-		--perk_value_2 = tostring(self.on_killshot_cooldown), -- Cooldown for socio armor/HP regen abilities
-		--perk_value_3 = tostring(self.on_killshot_cooldown_reduction), -- CD reduction on kill
-		--perk_value_4 = tostring(self.on_killshot_cooldown_reduction_melee), -- CD reduction on melee kill
-		--perk_value_5 = tostring(self.values.player.passive_dodge_chance[1] * 100) -- Passive dodge increase
-		perk_value_1 = tostring(self.values.player.buildup_meter_redline[1].combo_steps),
-		perk_value_2 = tostring(self.values.player.buildup_meter_redline[1].effect * 100) .. "%",
-		perk_value_3 = tostring(self.values.player.buildup_meter_redline[1].effect_max * 100) .. "%",
-		perk_value_4 = tostring(self.values.player.passive_dodge_chance[1] * 100) -- Passive dodge increase
+		perk_value_1 = tostring(self.values.player.killshot_regen_armor_bonus[1] * 10), -- Armor regen on kill
+		perk_value_2 = tostring(self.on_killshot_cooldown), -- Cooldown for socio armor/HP regen abilities
+		perk_value_3 = tostring(self.on_killshot_cooldown_reduction), -- CD reduction on kill
+		perk_value_4 = tostring(self.on_killshot_cooldown_reduction_melee), -- CD reduction on melee kill
+		perk_value_5 = tostring(self.values.player.passive_dodge_chance[1] * 100) -- Passive dodge increase
 	}
 	self.specialization_descs[9][5] = {
-		--perk_value_1 = tostring(self.values.player.melee_kill_life_leech[1] * 100).."%", -- HP regen on melee kill
-		--perk_value_3 = tostring(self.values.player.melee_kill_stamina[1] * 100).."%", -- stamina regen %; added under "perk_value_3" to avoid loc mistmatching
-		--perk_value_2 = tostring(self.values.player.corpse_dispose_amount[2] - self.values.player.corpse_dispose_amount[1]) -- Additional body bag
-		perk_value_1 = tostring(self.values.player.melee_kill_stamina[1] * 100).."%", -- stamina regen %; added under "perk_value_3" to avoid loc mistmatching
-		perk_value_2 = tostring(self.values.player.buildup_meter_hysteria[1].combo_steps),
-		perk_value_3 = tostring(self.values.player.buildup_meter_hysteria[1].effect * 10),
-		perk_value_4 = tostring(self.values.player.buildup_meter_hysteria[1].effect_max * 10),
-		perk_value_5 = tostring(self.values.player.corpse_dispose_amount[2] - self.values.player.corpse_dispose_amount[1]) -- Additional body bag
+		perk_value_1 = tostring(self.values.player.melee_kill_life_leech[1] * 100).."%", -- HP regen on melee kill
+		perk_value_3 = tostring(self.values.player.melee_kill_stamina[1] * 100).."%", -- stamina regen %; added under "perk_value_3" to avoid loc mistmatching
+		perk_value_2 = tostring(self.values.player.corpse_dispose_amount[2] - self.values.player.corpse_dispose_amount[1]) -- Additional body bag
 	}
 	self.specialization_descs[9][7] = {
-		--perk_value_1 = "18", -- Required range to activate additional armor regen on kill (Same range as "Underdog" skill)
-		--perk_value_2 = tostring(self.values.player.killshot_close_regen_armor_bonus[1][1] * 10), -- Additional armor regen when player killed enemy in specified range
-		--perk_value_3 = tostring((self.values.player.passive_dodge_chance[2] - self.values.player.passive_dodge_chance[1]) * 100) -- Additional dodge
-		perk_value_1 = tostring(self.values.player.buildup_meter_quickening[1].combo_add_mod),
-		perk_value_2 = tostring(self.values.player.buildup_meter_quickening[1].armor_steps * 10),
-		perk_value_3 = tostring(self.values.player.buildup_meter_elude[1].combo_steps),
-		perk_value_4 = tostring(self.values.player.buildup_meter_elude[1].effect * 100) .. "%",
-		perk_value_5 = tostring(self.values.player.buildup_meter_elude[1].effect_max * 100) .. "%",
-		perk_value_6 = tostring((self.values.player.passive_dodge_chance[2] - self.values.player.passive_dodge_chance[1]) * 100), -- Passive dodge increase
-		perk_value_7 = tostring((self.values.player.buildup_meter_elude[1].melee_mult - 1) * 100) .. "%", -- Melee mult
-		perk_value_8 = tostring(self.values.player.buildup_meter_quickening[1].hurt_t_mod), -- Armor to hurst decay mod
+		perk_value_1 = "18", -- Required range to activate additional armor regen on kill (Same range as "Underdog" skill)
+		perk_value_2 = tostring(self.values.player.killshot_close_regen_armor_bonus[1][1] * 10), -- Additional armor regen when player killed enemy in specified range
+		perk_value_3 = tostring((self.values.player.passive_dodge_chance[2] - self.values.player.passive_dodge_chance[1]) * 100) -- Additional dodge
 	}
 	self.specialization_descs[9][9] = {
-		--perk_value_1 = "18", -- Required range to activate panic (Same range as "Underdog" skill)
-		--perk_value_2 = tostring(self.values.player.killshot_close_panic_chance[1] * 100).."%", -- Panic chance
-		--perk_value_3 = tostring(self.killshot_close_panic_range / 100) -- Panic spread range
-		perk_value_1 = tostring(self.values.player.buildup_meter[2].combo_decay),
-		perk_value_2 = tostring(self.values.player.buildup_meter_terrify[1].combo_steps),
-		perk_value_3 = tostring(self.values.player.buildup_meter_terrify[1].effect * 100) .. "%",
-		perk_value_4 = tostring(self.killshot_close_panic_range / 100), -- Panic spread range
-		perk_value_5 = tostring(self.values.player.buildup_meter_terrify[1].effect_max * 100) .. "%",
-		perk_value_6 = tostring((self.values.player.buildup_meter_terrify[1].melee_mult - 1) * 100) .. "%", -- Melee mult
+		perk_value_1 = "18", -- Required range to activate panic (Same range as "Underdog" skill)
+		perk_value_2 = tostring(self.values.player.killshot_close_panic_chance[1] * 100).."%", -- Panic chance
+		perk_value_3 = tostring(self.killshot_close_panic_range / 100) -- Panic spread range
 	}
-
-	self.multi_choice_specialization_descs[9] = { [9] = {} } --table setup for last card multichoice
-	self.multi_choice_specialization_descs[9][9][2] = { --Tony
-		perk_value_1 = tostring(self.values.player.melee_fists_damage_multiplier[1] * 100) .. "%",
-		perk_value_2 = tostring((1 - self.values.tony.extra_ammo_multiplier[1]) * 100) .. "%",
-		perk_value_3 = tostring((1 - self.values.tony.pick_up_multiplier[1]) * 100) .. "%",
-		perk_value_4 = tostring(self.values.player.buildup_meter[1].combo_add + self.values.player.buildup_meter_rick[2].combo_add_mod),
-		perk_value_5 = tostring(self.values.player.buildup_meter_hurt_decay_mod[2]),
-		perk_value_6 = tostring(math.abs(self.values.player.buildup_meter_rick[2].combo_max_mod)),
-		perk_value_7 = tostring(math.abs(self.values.player.buildup_meter_zack[3].combo_t_mod)),
-	}
-	self.multi_choice_specialization_descs[9][9][3] = { --Aubrey
-		perk_value_1 = tostring(self.values.player.buildup_meter_aubrey[1].combo_add),
-		perk_value_2 = tostring(self.values.player.buildup_meter_aubrey[1].combo_t_add),
-	}
-	self.multi_choice_specialization_descs[9][9][4] = { --Rufus
-		perk_value_1 = tostring(self.values.player.buildup_meter_pacify[2].effect * 100) .. "%",
-		perk_value_2 = tostring(self.values.player.buildup_meter_pacify[2].combo_steps),
-		perk_value_3 = tostring(self.values.player.buildup_meter_pacify[2].effect_max * 100) .. "%",
-		perk_value_4 = tostring(self.values.player.buildup_meter_hurt_decay_mod[2]),
-	}
-	self.multi_choice_specialization_descs[9][9][5] = { --Zack
-		perk_value_1 = tostring(self.values.player.buildup_meter_zack[1].combo_t_mod),
-		perk_value_2 = tostring(self.values.player.buildup_meter_zack[1].combo_decay_mod),
-	}
-	self.multi_choice_specialization_descs[9][9][6] = { --Rick
-		perk_value_1 = tostring(self.values.player.buildup_meter[1].combo_add + self.values.player.buildup_meter_rick[1].combo_add_mod),
-		perk_value_2 = tostring(math.abs(self.values.player.buildup_meter_rick[1].combo_max_mod)),
-	}
-	self.multi_choice_specialization_descs[9][9][7] = { --Brandon
-		perk_value_1 = tostring(self.values.player.buildup_meter_redline[2].effect * 100) .. "%",
-		perk_value_2 = tostring(self.values.player.buildup_meter_redline[2].combo_steps),
-		perk_value_3 = tostring(self.values.player.buildup_meter_redline[2].effect_max * 100) .. "%",
-		perk_value_4 = tostring(math.abs(self.values.player.buildup_meter_zack[2].combo_t_mod))
-	}
-	self.multi_choice_specialization_descs[9][9][8] = { --Earl
-		--Nothing, it's a boolean change
-	}
-	self.multi_choice_specialization_descs[9][9][9] = { --Tony's Revenge
-		perk_value_1 = tostring(self.values.player.melee_fists_damage_multiplier[1] * 100) .. "%",
-		perk_value_2 = tostring((1 - self.values.tony.extra_ammo_multiplier[2]) * 100) .. "%",
-		perk_value_3 = tostring((1 - self.values.tony.pick_up_multiplier[2]) * 100) .. "%",
-		perk_value_4 = tostring(self.values.player.buildup_meter[1].combo_add + self.values.player.buildup_meter_rick[3].combo_add_mod),
-		perk_value_5 = tostring(self.values.player.buildup_meter_hurt_decay_mod[4]),
-		perk_value_6 = tostring(math.abs(self.values.player.buildup_meter_rick[3].combo_max_mod)),
-		perk_value_7 = tostring(math.abs(self.values.player.buildup_meter_zack[4].combo_t_mod)),
-		perk_value_8 = tostring(math.abs(self.values.player.buildup_meter_zack[4].combo_decay_mod)),
-	}
-	self.multi_choice_specialization_descs[9][9][10] = { --Mark
-		perk_value_1 = tostring(self.values.player.buildup_meter_mark[1].combo_steps),
-		perk_value_2 = tostring(self.values.player.buildup_meter_mark[1].effect * 100) .. "%",
-		perk_value_3 = tostring(self.values.player.buildup_meter_mark[1].effect_max * 100) .. "%",
-	}
-	self.multi_choice_specialization_descs[9][9][11] = { --Alex & Ash
-		perk_value_1 = tostring(self.values.player.buildup_meter_swan[1].combo_add)
-	}
-	self.multi_choice_specialization_descs[9][9][12] = { --Corey
-		perk_value_1 = tostring(self.values.player.buildup_meter_elude[2].effect * 100) .. "%",
-		perk_value_2 = tostring(self.values.player.buildup_meter_elude[2].combo_steps),
-		perk_value_3 = tostring(self.values.player.buildup_meter_elude[2].effect_max * 100) .. "%",
-		perk_value_4 = tostring(self.values.player.buildup_meter_hurt_decay_mod[1]),
-		perk_value_5 = tostring((self.values.player.buildup_meter_elude[2].melee_mult - 1) * 100) .. "%", -- Melee mult
-	}
-
+	
 	--Gambler
 	self.specialization_descs[10][1] = {
 		perk_value_1 = tostring(self.loose_ammo_restore_health_values[1][1]), -- Min HP regen on ammo pickup
@@ -3466,10 +3115,9 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 		perk_value_1 = tostring(self.values.player.damage_control_passive[1][1]).."%", -- % of damage converted into DoT 
 		perk_value_2 = tostring(100 / self.values.player.damage_control_passive[1][2]), -- Standard DoT duration
 		perk_value_3 = tostring(self.values.player.damage_control_healing[1]).."%", -- HP regen defined by remaining DoT damage
-		perk_value_4 = tostring(restoration.damage_control_cd), -- CD of alchohol flask. Defined in Core.lua (found in root)
+		perk_value_4 = "30", -- CD of alchohol flask. Not defined here
 		perk_value_5 = tostring(self.values.player.armor_to_health_conversion[1]).."%", -- Armor convert rate
-		perk_value_6 = tostring(100 - self.values.player.armor_to_health_conversion[1]).."%", -- HP convert rate
-		perk_value_7 = tostring((1 - self.values.player.damage_grace_mult[1]) * 100).."%" -- grace period multiplier
+		perk_value_6 = tostring(100 - self.values.player.armor_to_health_conversion[1]).."%" -- HP convert rate
 	}
 	self.specialization_descs[19][3] = {
 		perk_value_1 = tostring(self.values.player.damage_control_cooldown_drain[1][2]) -- CD reduction on kill
@@ -3608,8 +3256,7 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 	}
 	self.multi_choice_specialization_descs[23][9][3] = { --Armorer
 		perk_value_1 = tostring((1 - self.values.player.perk_armor_regen_timer_multiplier[3]) * 100).."%", -- Armor regen buff
-		perk_value_2 = "2", -- Body bag cases quantity. Not defined here so beware
-		perk_value_3 = tostring(self.values.player.level_2_armor_multiplier[3] % 1 * 100).."%" -- Armor bonus for vests
+		perk_value_2 = "2" -- Body bag cases quantity. Not defined here so beware
 	}
 	self.multi_choice_specialization_descs[23][9][4] = { --Rogue
 		perk_value_1 = tostring(self.values.player.passive_dodge_chance[1] * 100), -- Passive dodge increase
@@ -3624,14 +3271,9 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 		perk_value_5 = tostring(self.values.player.corpse_dispose_amount[2] - self.values.player.corpse_dispose_amount[1]) -- Additional body bag
 	}
 	self.multi_choice_specialization_descs[23][9][6] = { --Crook
-		perk_value_1 = tostring(self.values.player.killshot_regen_armor_bonus[1] * 10), -- Armor regen on kill
-		perk_value_2 = tostring(self.on_killshot_cooldown), -- Cooldown for socio armor/HP regen abilities
-		perk_value_3 = tostring(self.on_killshot_cooldown_reduction), -- CD reduction on kill
-		perk_value_4 = tostring(self.on_killshot_cooldown_reduction_melee), -- CD reduction on melee kill
-		perk_value_5 = tostring((1 - self.values.player.pick_lock_speed_multiplier[1]) * 100).."%" -- Lockpicking speed bonus
-		--perk_value_1 = tostring(self.values.player.level_2_dodge_addend[1] * 100), -- Dodge increase for vests
-		--perk_value_2 = tostring(self.values.player.level_2_armor_multiplier[1] % 1 * 100).."%", -- Armor bonus for vests
-		--perk_value_3 = tostring((1 - self.values.player.pick_lock_speed_multiplier[1]) * 100).."%" -- Lockpicking speed bonus
+		perk_value_1 = tostring(self.values.player.level_2_dodge_addend[1] * 100), -- Dodge increase for vests
+		perk_value_2 = tostring(self.values.player.level_2_armor_multiplier[1] % 1 * 100).."%", -- Armor bonus for vests
+		perk_value_3 = tostring((1 - self.values.player.pick_lock_speed_multiplier[1]) * 100).."%" -- Lockpicking speed bonus
 	}
 	self.multi_choice_specialization_descs[23][9][7] = { --Burglar
 		perk_value_1 = tostring(self.values.player.passive_dodge_chance[1] * 100), -- Passive dodge increase
@@ -3647,28 +3289,13 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 		perk_value_6 = tostring(self.values.player.tape_loop_duration[2] - self.values.player.tape_loop_duration[1]) -- Camera loop bonus
 	}
 	self.multi_choice_specialization_descs[23][9][9] = {--Sociopath
-		perk_value_1 = tostring(self.values.player.buildup_meter[3].combo_add),
-		perk_value_2 = tostring(self.values.player.buildup_meter[3].combo_max),
-		perk_value_3 = tostring(self.values.player.buildup_meter[3].combo_decay),
-		perk_value_4 = tostring(self.values.player.buildup_meter[3].combo_t),
-		perk_value_5 = tostring(self.values.player.buildup_meter[3].hurt_decay),
-		perk_value_6 = tostring(self.values.player.buildup_meter[3].hurt_t),
-		perk_value_7 = tostring(self.values.player.buildup_meter[3].incap_decay),
-		perk_value_8 = tostring(self.values.player.buildup_meter_pacify[1].combo_steps),
-		perk_value_9 = tostring(self.values.player.buildup_meter_pacify[1].effect * 100) .. "%",
-		perk_value_10 = tostring(self.values.player.buildup_meter_pacify[1].effect_max * 100) .. "%",
-		perk_value_11 = tostring(self.values.player.melee_kill_stamina[1] * 100).."%",
-		perk_value_12 = tostring(self.values.player.corpse_dispose_amount[2] - self.values.player.corpse_dispose_amount[1]), -- Additional body bag
-		perk_value_13 = tostring(self.values.player.buildup_meter_redline[1].combo_steps),
-		perk_value_14 = tostring(self.values.player.buildup_meter_redline[1].effect * 100) .. "%",
-		perk_value_15 = tostring(self.values.player.buildup_meter_redline[1].effect_max * 100) .. "%",
-		--perk_value_1 = tostring(self.values.player.killshot_regen_armor_bonus[1] * 10), -- Armor regen on kill
-		--perk_value_2 = "18", -- Required range to activate additional armor regen on kill (Same range as "Underdog" skill)
-		--perk_value_3 = tostring(self.values.player.killshot_close_regen_armor_bonus[1][1] * 10), -- Additional armor regen when player killed enemy in specified range
-		--perk_value_4 = tostring(self.on_killshot_cooldown), -- Cooldown for socio armor regen ability
-		--perk_value_5 = tostring(self.on_killshot_cooldown_reduction), -- CD reduction on kill
-		--perk_value_6 = tostring(self.on_killshot_cooldown_reduction_melee), -- CD reduction on melee kill
-		--perk_value_7 = tostring(self.values.player.corpse_dispose_amount[2] - self.values.player.corpse_dispose_amount[1]) -- Additional body bag
+		perk_value_1 = tostring(self.values.player.killshot_regen_armor_bonus[1] * 10), -- Armor regen on kill
+		perk_value_2 = "18", -- Required range to activate additional armor regen on kill (Same range as "Underdog" skill)
+		perk_value_3 = tostring(self.values.player.killshot_close_regen_armor_bonus[1][1] * 10), -- Additional armor regen when player killed enemy in specified range
+		perk_value_4 = tostring(self.on_killshot_cooldown), -- Cooldown for socio armor regen ability
+		perk_value_5 = tostring(self.on_killshot_cooldown_reduction), -- CD reduction on kill
+		perk_value_6 = tostring(self.on_killshot_cooldown_reduction_melee), -- CD reduction on melee kill
+		perk_value_7 = tostring(self.values.player.corpse_dispose_amount[2] - self.values.player.corpse_dispose_amount[1]) -- Additional body bag
 	}
 	self.multi_choice_specialization_descs[23][9][10] = {--Gambler
 		perk_value_1 = tostring(self.loose_ammo_restore_health_values[4][1]), -- Min HP regen on ammo pickup
@@ -3735,8 +3362,7 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 		perk_value_4 = "30", -- CD of alchohol flask. Not defined here
 		perk_value_5 = tostring(self.values.player.armor_to_health_conversion[1]).."%", -- Armor convert rate
 		perk_value_6 = tostring(100 - self.values.player.armor_to_health_conversion[1]).."%", -- HP convert rate
-		perk_value_7 = tostring((1 - self.values.player.alarm_pager_speed_multiplier[1]) * 100).."%", -- Faster pager interaction
-		perk_value_8 = tostring((1 - self.values.player.damage_grace_mult[1]) * 100).."%" -- grace period multiplier
+		perk_value_7 = tostring((1 - self.values.player.alarm_pager_speed_multiplier[1]) * 100).."%" -- Faster pager interaction
 	}
 	self.multi_choice_specialization_descs[23][9][20] = { --Tag Team
 		perk_value_1 = tostring(self.values.player.tag_team_base[1].distance), -- Distance required to activate vape
@@ -3791,8 +3417,7 @@ end)
 function UpgradesTweakData.mrwi_deck9_options()
 	local deck9_options = {
 		{ --Crew Chief
-			icon_xy = {0, 1},
-			--icon_xy = {2, 0},
+			icon_xy = {2, 0},
 			name_id = "menu_st_spec_1",
 			desc_id = "menu_deck1_mrwi_desc",
 			upgrades = {
@@ -3803,8 +3428,7 @@ function UpgradesTweakData.mrwi_deck9_options()
 			}
 		},
 		{ --Muscle
-			icon_xy = {4, 1},
-			--icon_xy = {3, 1},
+			icon_xy = {3, 1},
 			name_id = "menu_st_spec_2",
 			desc_id = "menu_deck2_mrwi_desc",
 			upgrades = {
@@ -3817,8 +3441,7 @@ function UpgradesTweakData.mrwi_deck9_options()
 			}
 		},
 		{ --Armorer
-			icon_xy = {0, 2},
-			--icon_xy = {6, 1},
+			icon_xy = {6, 1},
 			name_id = "menu_st_spec_3",
 			desc_id = "menu_deck3_mrwi_desc",
 			upgrades = {
@@ -3826,22 +3449,11 @@ function UpgradesTweakData.mrwi_deck9_options()
 				"player_perk_armor_regen_timer_multiplier_2",
 				"player_perk_armor_regen_timer_multiplier_3",
 				"bodybags_bag_quantity",
-				"player_passive_loot_drop_multiplier_1"	,
-				"player_level_2_armor_multiplier_1",
-				"player_level_3_armor_multiplier_1",
-				"player_level_4_armor_multiplier_1",
-				"player_level_2_armor_multiplier_2",
-				"player_level_3_armor_multiplier_2",
-				"player_level_4_armor_multiplier_2",
-				"player_level_2_armor_multiplier_3",
-				"player_level_3_armor_multiplier_3",
-				"player_level_4_armor_multiplier_3",
+				"player_passive_loot_drop_multiplier_1"	
 			}
 		},
 		{ --Rogue
-			icon_xy = {1, 0},
-			texture_bundle_folder = "max",
-			--icon_xy = {4, 2},
+			icon_xy = {4, 2},
 			name_id = "menu_st_spec_4",
 			desc_id = "menu_deck4_mrwi_desc",
 			upgrades = {
@@ -3852,8 +3464,7 @@ function UpgradesTweakData.mrwi_deck9_options()
 			}
 		},
 		{ --Hitman
-			icon_xy = {3, 3},
-			--icon_xy = {6, 2},
+			icon_xy = {6, 2},
 			name_id = "menu_st_spec_5",
 			desc_id = "menu_deck5_mrwi_desc",
 			upgrades = {
@@ -3863,30 +3474,22 @@ function UpgradesTweakData.mrwi_deck9_options()
 			}
 		},
 		{ --Crook
-			icon_xy = {6, 3},
-			--icon_xy = {5, 3},
+			icon_xy = {5, 3},
 			name_id = "menu_st_spec_6",
 			desc_id = "menu_deck6_mrwi_desc",
 			upgrades = {
-				--"player_level_2_dodge_addend_1",
-				--"player_level_3_dodge_addend_1",
-				--"player_level_4_dodge_addend_1",
-				--"player_level_2_armor_multiplier_2",
-				--"player_level_3_armor_multiplier_2",
-				--"player_level_4_armor_multiplier_2",
-				"player_killshot_regen_armor_bonus",
-				"player_killshot_close_regen_armor_bonus",
 				"player_level_2_dodge_addend_1",
 				"player_level_3_dodge_addend_1",
 				"player_level_4_dodge_addend_1",
+				"player_level_2_armor_multiplier_2",
+				"player_level_3_armor_multiplier_2",
+				"player_level_4_armor_multiplier_2",
 				"player_pick_lock_speed_multiplier"	,
 				"player_passive_loot_drop_multiplier_1"	
 			}
 		},
 		{ --Burglar
-			texture_bundle_folder = "mrwi",
-			icon_xy = {1, 1},
-			--icon_xy = {1, 2},
+			icon_xy = {1, 2},
 			name_id = "menu_st_spec_7",
 			desc_id = "menu_deck7_mrwi_desc",
 			upgrades = {
@@ -3897,8 +3500,7 @@ function UpgradesTweakData.mrwi_deck9_options()
 			}
 		},
 		{ --Infiltrator
-			icon_xy = {7, 4},
-			--icon_xy = {3, 4},
+			icon_xy = {3, 4},
 			name_id = "menu_st_spec_8",
 			desc_id = "menu_deck8_mrwi_desc",
 			upgrades = {
@@ -3912,28 +3514,18 @@ function UpgradesTweakData.mrwi_deck9_options()
 			}
 		},
 		{ --Sociopath
-			icon_xy = {3, 5},
-			--icon_xy = {0, 5},
+			icon_xy = {0, 5},
 			name_id = "menu_st_spec_9",
 			desc_id = "menu_deck9_mrwi_desc",
 			upgrades = {
-				"player_buildup_meter_1",
-				"player_buildup_meter_2",
-				"player_buildup_meter_3",
-				"buildup_meter_pacify_1",
-				"buildup_meter_redline_1",
-				"player_melee_kill_stamina_1",
+				"player_killshot_regen_armor_bonus",
+				"player_killshot_close_regen_armor_bonus",
 				"player_corpse_dispose_amount_2",
 				"player_passive_loot_drop_multiplier_1"	
-				--"player_killshot_regen_armor_bonus",
-				--"player_killshot_close_regen_armor_bonus",
-				--"player_corpse_dispose_amount_2",
-				--"player_passive_loot_drop_multiplier_1"	
 			}
 		},
 		{ --Gambler
-			icon_xy = {0, 6},
-			--icon_xy = {5, 5},
+			icon_xy = {5, 5},
 			name_id = "menu_st_spec_10",
 			desc_id = "menu_deck10_mrwi_desc",
 			upgrades = {
@@ -3947,8 +3539,7 @@ function UpgradesTweakData.mrwi_deck9_options()
 			}
 		},
 		{ --Grinder
-			icon_xy = {5, 6},
-			--icon_xy = {1, 6},
+			icon_xy = {1, 6},
 			name_id = "menu_st_spec_11",
 			desc_id = "menu_deck11_mrwi_desc",
 			upgrades = {
@@ -3961,8 +3552,7 @@ function UpgradesTweakData.mrwi_deck9_options()
 			}
 		},
 		{ --Yakuza
-			icon_xy = {2, 7},
-			--icon_xy = {0, 7},
+			icon_xy = {0, 7},
 			name_id = "menu_st_spec_12",
 			desc_id = "menu_deck12_mrwi_desc",
 			upgrades = {
@@ -3973,8 +3563,7 @@ function UpgradesTweakData.mrwi_deck9_options()
 			}
 		},
 		{ --Ex-Pres
-			icon_xy = {7, 7},
-			--icon_xy = {3, 7},
+			icon_xy = {3, 7},
 			name_id = "menu_st_spec_13",
 			desc_id = "menu_deck13_mrwi_desc",
 			upgrades = {
@@ -3984,8 +3573,7 @@ function UpgradesTweakData.mrwi_deck9_options()
 			}
 		},
 		{ --Maniac
-			icon_xy = {0, 1},
-			--icon_xy = {0, 0},
+			icon_xy = {0, 0},
 			texture_bundle_folder = "coco",
 			name_id = "menu_st_spec_14",
 			desc_id = "menu_deck14_mrwi_desc",
@@ -3996,8 +3584,7 @@ function UpgradesTweakData.mrwi_deck9_options()
 			}
 		},
 		{ --Anarchist
-			icon_xy = {0, 1},
-			--icon_xy = {0, 0},
+			icon_xy = {0, 0},
 			texture_bundle_folder = "opera",
 			name_id = "menu_st_spec_15",
 			desc_id = "menu_deck15_mrwi_desc",
@@ -4051,7 +3638,6 @@ function UpgradesTweakData.mrwi_deck9_options()
 			name_id = "menu_st_spec_19",
 			desc_id = "menu_deck19_mrwi_desc",
 			upgrades = {
-				"damage_grace_mult",
 				"damage_control",
 				"player_damage_control_passive_1",
 				"player_damage_control_passive_2",
@@ -4114,51 +3700,6 @@ function UpgradesTweakData:_player_definitions()
 	sc_definitions (self, tweak_data)
 
 	--New Definitions, calling em here to play it safe--
-	self.definitions.assault_rifle_recoil_index_addend_2 = {
-		name_id = "menu_assault_rifle_recoil_index_addend",
-		category = "feature",
-		upgrade = {
-			category = "assault_rifle",
-			upgrade = "recoil_index_addend",
-			value = 2
-		}
-	}
-	self.definitions.snp_recoil_index_addend_2 = {
-		name_id = "menu_snp_recoil_index_addend",
-		category = "feature",
-		upgrade = {
-			category = "snp",
-			upgrade = "recoil_index_addend",
-			value = 2
-		}
-	}
-	self.definitions.assault_rifle_reload_speed_multiplier_2 = {
-		name_id = "menu_assault_rifle_reload_speed_multiplier",
-		category = "feature",
-		upgrade = {
-			category = "assault_rifle",
-			upgrade = "reload_speed_multiplier",
-			value = 2
-		}
-	}
-	self.definitions.snp_reload_speed_multiplier_2 = {
-		name_id = "menu_snp_reload_speed_multiplier",
-		category = "feature",
-		upgrade = {
-			category = "snp",
-			upgrade = "reload_speed_multiplier",
-			value = 2
-		}
-	}
-	self.definitions.player_armor_pickup_mul = {
-		name_id = "menu_player_armor_pickup_mul",
-		category = "feature",
-		upgrade = {
-			value = 1,
-			upgrade = "armor_pickup_mul",
-			category = "player"
-		}
-	}
 	self.definitions.player_detection_risk_stamina_regen = {
 		name_id = "menu_player_detection_risk_stamina_regen",
 		category = "feature",
@@ -5169,14 +4710,6 @@ function UpgradesTweakData:_player_definitions()
 			category = "player"
 		}
 	}
-	self.definitions.player_damage_grace_mult = { --Copycat
-		category = "feature",
-		upgrade = {
-			value = 1,
-			upgrade = "damage_grace_mult",
-			category = "player"
-		}
-	}
 	self.definitions.player_copr_activate_bonus_health_ratio_2 = { --Copycat Stoic
 		name_id = "menu_player_copr_activate_bonus_health_ratio_1",
 		category = "feature",
@@ -5204,20 +4737,11 @@ function UpgradesTweakData:_player_definitions()
 			category = "player"
 		}
 	}
-	self.definitions.player_melee_kill_stamina_1 = { 
+	self.definitions.player_melee_kill_stamina = { 
 		name_id = "menu_player_melee_kill_stamina",
 		category = "feature",
 		upgrade = {
 			value = 1,
-			upgrade = "melee_kill_stamina",
-			category = "player"
-		}
-	}
-	self.definitions.player_melee_kill_stamina_2 = { 
-		name_id = "menu_player_melee_kill_stamina",
-		category = "feature",
-		upgrade = {
-			value = 2,
 			upgrade = "melee_kill_stamina",
 			category = "player"
 		}
@@ -5473,360 +4997,6 @@ function UpgradesTweakData:_player_definitions()
 			category = "player"
 		}
 	}
-
-	
-	self.definitions.player_buildup_meter_1 = {
-		name_id = "menu_player_buildup_meter_1",
-		category = "feature",
-		upgrade = {
-			value = 1,
-			upgrade = "buildup_meter",
-			category = "player"
-		}
-	}
-	self.definitions.player_buildup_meter_2 = {
-		name_id = "menu_player_buildup_meter_2",
-		category = "feature",
-		upgrade = {
-			value = 2,
-			upgrade = "buildup_meter",
-			category = "player"
-		}
-	}
-	self.definitions.player_buildup_meter_3 = {
-		name_id = "menu_player_buildup_meter_3",
-		category = "feature",
-		upgrade = {
-			value = 3,
-			upgrade = "buildup_meter",
-			category = "player"
-		}
-	}
-	self.definitions.buildup_meter_pacify_1 = {
-		name_id = "menu_player_buildup_unairu",
-		category = "feature",
-		upgrade = {
-			value = 1,
-			upgrade = "buildup_meter_pacify",
-			category = "player"
-		}
-	}
-	self.definitions.buildup_meter_pacify_2 = {
-		name_id = "menu_player_buildup_unairu",
-		category = "feature",
-		upgrade = {
-			value = 2,
-			upgrade = "buildup_meter_pacify",
-			category = "player"
-		}
-	}
-	self.definitions.buildup_meter_refresh_1 = {
-		name_id = "menu_player_buildup_refresh",
-		category = "feature",
-		upgrade = {
-			value = 1,
-			upgrade = "buildup_meter_refresh",
-			category = "player"
-		}
-	}
-	self.definitions.buildup_meter_redline_1 = {
-		name_id = "menu_player_buildup_naramon",
-		category = "feature",
-		upgrade = {
-			value = 1,
-			upgrade = "buildup_meter_redline",
-			category = "player"
-		}
-	}
-	self.definitions.buildup_meter_redline_2 = {
-		name_id = "menu_player_buildup_naramon",
-		category = "feature",
-		upgrade = {
-			value = 2,
-			upgrade = "buildup_meter_redline",
-			category = "player"
-		}
-	}
-	self.definitions.buildup_meter_hysteria_1 = {
-		name_id = "menu_player_buildup_vazarin",
-		category = "feature",
-		upgrade = {
-			value = 1,
-			upgrade = "buildup_meter_hysteria",
-			category = "player"
-		}
-	}
-	self.definitions.buildup_meter_hysteria_2 = {
-		name_id = "menu_player_buildup_vazarin",
-		category = "feature",
-		upgrade = {
-			value = 2,
-			upgrade = "buildup_meter_hysteria",
-			category = "player"
-		}
-	}
-	self.definitions.buildup_meter_elude_1 = {
-		name_id = "menu_player_buildup_zenurik",
-		category = "feature",
-		upgrade = {
-			value = 1,
-			upgrade = "buildup_meter_elude",
-			category = "player"
-		}
-	}
-	self.definitions.buildup_meter_elude_2 = {
-		name_id = "menu_player_buildup_zenurik",
-		category = "feature",
-		upgrade = {
-			value = 2,
-			upgrade = "buildup_meter_elude",
-			category = "player"
-		}
-	}
-	self.definitions.buildup_meter_elude_3 = {
-		name_id = "menu_player_buildup_zenurik",
-		category = "feature",
-		upgrade = {
-			value = 3,
-			upgrade = "buildup_meter_elude",
-			category = "player"
-		}
-	}
-	self.definitions.buildup_meter_elude_4 = {
-		name_id = "menu_player_buildup_zenurik",
-		category = "feature",
-		upgrade = {
-			value = 4,
-			upgrade = "buildup_meter_elude",
-			category = "player"
-		}
-	}
-	self.definitions.player_buildup_meter_quickening = {
-		name_id = "menu_player_buildup_quickening",
-		category = "feature",
-		upgrade = {
-			value = 1,
-			upgrade = "buildup_meter_quickening",
-			category = "player"
-		}
-	}
-	self.definitions.buildup_meter_terrify_1 = {
-		name_id = "menu_player_buildup_madurai",
-		category = "feature",
-		upgrade = {
-			value = 1,
-			upgrade = "buildup_meter_terrify",
-			category = "player"
-		}
-	}
-	self.definitions.buildup_meter_terrify_2 = {
-		name_id = "menu_player_buildup_madurai",
-		category = "feature",
-		upgrade = {
-			value = 2,
-			upgrade = "buildup_meter_terrify",
-			category = "player"
-		}
-	}
-	self.definitions.buildup_meter_terrify_3 = {
-		name_id = "menu_player_buildup_madurai",
-		category = "feature",
-		upgrade = {
-			value = 3,
-			upgrade = "buildup_meter_terrify",
-			category = "player"
-		}
-	}
-	self.definitions.buildup_meter_hurt_decay_mod_1 = {
-		name_id = "menu_player_buildup_madurai",
-		category = "feature",
-		upgrade = {
-			value = 1,
-			upgrade = "buildup_meter_hurt_decay_mod",
-			category = "player"
-		}
-	}
-	self.definitions.buildup_meter_hurt_decay_mod_2 = {
-		name_id = "menu_player_buildup_madurai",
-		category = "feature",
-		upgrade = {
-			value = 2,
-			upgrade = "buildup_meter_hurt_decay_mod",
-			category = "player"
-		}
-	}
-	self.definitions.buildup_meter_hurt_decay_mod_3 = {
-		name_id = "menu_player_buildup_madurai",
-		category = "feature",
-		upgrade = {
-			value = 3,
-			upgrade = "buildup_meter_hurt_decay_mod",
-			category = "player"
-		}
-	}
-	self.definitions.buildup_meter_hurt_decay_mod_4 = {
-		name_id = "menu_player_buildup_madurai",
-		category = "feature",
-		upgrade = {
-			value = 4,
-			upgrade = "buildup_meter_hurt_decay_mod",
-			category = "player"
-		}
-	}
-	self.definitions.buildup_meter_tony_extra_ammo_multiplier_1 = {
-		name_id = "menu_player_buildup_tony",
-		category = "feature",
-		upgrade = {
-			value = 1,
-			upgrade = "extra_ammo_multiplier",
-			category = "tony"
-		}
-	}
-	self.definitions.buildup_meter_tony_extra_ammo_multiplier_2 = {
-		name_id = "menu_player_buildup_tony",
-		category = "feature",
-		upgrade = {
-			value = 2,
-			upgrade = "extra_ammo_multiplier",
-			category = "tony"
-		}
-	}
-	self.definitions.buildup_meter_tony_pick_up_multiplier_1 = {
-		name_id = "menu_player_buildup_tony",
-		category = "feature",
-		upgrade = {
-			value = 1,
-			upgrade = "pick_up_multiplier",
-			category = "tony"
-		}
-	}
-	self.definitions.buildup_meter_tony_pick_up_multiplier_2 = {
-		name_id = "menu_player_buildup_tony",
-		category = "feature",
-		upgrade = {
-			value = 2,
-			upgrade = "pick_up_multiplier",
-			category = "tony"
-		}
-	}
-	self.definitions.player_melee_fists_damage_multiplier = {
-		name_id = "menu_player_buildup_tony",
-		category = "feature",
-		upgrade = {
-			value = 1,
-			upgrade = "melee_fists_damage_multiplier",
-			category = "player"
-		}
-	}
-	self.definitions.player_melee_brass_damage_multiplier = {
-		name_id = "menu_player_buildup_tony",
-		category = "feature",
-		upgrade = {
-			value = 1,
-			upgrade = "melee_brass_damage_multiplier",
-			category = "player"
-		}
-	}
-	self.definitions.player_buildup_meter_aubrey = {
-		name_id = "menu_player_buildup_aubrey",
-		category = "feature",
-		upgrade = {
-			value = 1,
-			upgrade = "buildup_meter_aubrey",
-			category = "player"
-		}
-	}
-	self.definitions.player_buildup_meter_zack_1 = {
-		name_id = "menu_player_buildup_zack",
-		category = "feature",
-		upgrade = {
-			value = 1,
-			upgrade = "buildup_meter_zack",
-			category = "player"
-		}
-	}
-	self.definitions.player_buildup_meter_zack_2 = {
-		name_id = "menu_player_buildup_zack",
-		category = "feature",
-		upgrade = {
-			value = 2,
-			upgrade = "buildup_meter_zack",
-			category = "player"
-		}
-	}
-	self.definitions.player_buildup_meter_zack_3 = {
-		name_id = "menu_player_buildup_zack",
-		category = "feature",
-		upgrade = {
-			value = 3,
-			upgrade = "buildup_meter_zack",
-			category = "player"
-		}
-	}
-	self.definitions.player_buildup_meter_zack_4 = {
-		name_id = "menu_player_buildup_zack",
-		category = "feature",
-		upgrade = {
-			value = 4,
-			upgrade = "buildup_meter_zack",
-			category = "player"
-		}
-	}
-	self.definitions.player_buildup_meter_earl = {
-		name_id = "menu_player_buildup_earl",
-		category = "feature",
-		upgrade = {
-			value = 1,
-			upgrade = "buildup_meter_earl",
-			category = "player"
-		}
-	}
-	self.definitions.player_buildup_meter_rick = {
-		name_id = "menu_player_buildup_rick",
-		category = "feature",
-		upgrade = {
-			value = 1,
-			upgrade = "buildup_meter_rick",
-			category = "player"
-		}
-	}
-	self.definitions.player_buildup_meter_rick_2 = {
-		name_id = "menu_player_buildup_rick",
-		category = "feature",
-		upgrade = {
-			value = 2,
-			upgrade = "buildup_meter_rick",
-			category = "player"
-		}
-	}
-	self.definitions.player_buildup_meter_rick_3 = {
-		name_id = "menu_player_buildup_rick",
-		category = "feature",
-		upgrade = {
-			value = 3,
-			upgrade = "buildup_meter_rick",
-			category = "player"
-		}
-	}
-	self.definitions.player_buildup_meter_swan = {
-		name_id = "menu_player_buildup_swan",
-		category = "feature",
-		upgrade = {
-			value = 1,
-			upgrade = "buildup_meter_swan",
-			category = "player"
-		}
-	}
-	self.definitions.player_buildup_meter_mark = {
-		name_id = "menu_player_buildup_mark",
-		category = "feature",
-		upgrade = {
-			value = 1,
-			upgrade = "buildup_meter_mark",
-			category = "player"
-		}
-	}
-
 end
 
 function UpgradesTweakData:_smg_definitions()
@@ -6284,15 +5454,6 @@ function UpgradesTweakData:_saw_definitions()
 			category = "player"
 		}
 	}
-	self.definitions.player_resist_knockback_push = {
-		name_id = "menu_player_resist_knockback_push",
-		category = "feature",
-		upgrade = {
-			value = 1,
-			upgrade = "resist_knockback_push",
-			category = "player"
-		}
-	}
 	self.definitions.player_damage_absorption_addend = {
 		name_id = "menu_player_damage_absorption_addend",
 		category = "feature",
@@ -6609,24 +5770,6 @@ Hooks:PostHook(UpgradesTweakData, "_weapon_definitions", "ResWeaponSkills", func
 			value = 2,
 			upgrade = "steelsight_range_inc",
 			category = "assault_rifle"
-		}
-	}
-	self.definitions.assault_rifle_ap_bullets_min_1 = {
-		name_id = "menu_pistol_ap_bullets_1",
-		category = "feature",
-		upgrade = {
-			value = 1,
-			upgrade = "ap_bullets_min",
-			category = "assault_rifle"
-		}
-	}
-	self.definitions.snp_ap_bullets_min_1 = {
-		name_id = "menu_pistol_ap_bullets_1",
-		category = "feature",
-		upgrade = {
-			value = 1,
-			upgrade = "ap_bullets_min",
-			category = "snp"
 		}
 	}
 	self.definitions.shotgun_ap_bullets_1 = {

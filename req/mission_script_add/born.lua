@@ -12,6 +12,12 @@ local optsBulldozerBiker = {
 return {
     elements = {
         -- Bikerdozer in the bunker
-        restoration:gen_dummy(400001, "biker_dozer", Vector3(-763.778, 1828.911, -400), Rotation(0, 0, -0), optsBulldozerBiker)
+        restoration:gen_dummy(
+            400001,
+            "biker_dozer",
+            Vector3(-763.778, 1828.911, -400),
+            Rotation(0, 0, -0),
+            optsBulldozerBiker
+        )
     }
 }

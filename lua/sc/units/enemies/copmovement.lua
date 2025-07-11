@@ -77,7 +77,6 @@ action_variants.autumn = security_variant
 action_variants.taser_titan = clone(security_variant)
 action_variants.taser_titan_reaper = clone(security_variant)
 action_variants.boom_titan = clone(security_variant)
-action_variants.city_swat_rpg = security_variant
 
 function CopMovement:post_init()
 	local unit = self._unit
@@ -675,8 +674,8 @@ function CopMovement:anim_clbk_police_called(unit)
 			--self._unit:unit_data().has_alarm_pager = false
 			--self._unit:unit_data().has_called_police = true
 
-			--Instant failure on the relevant tutorial heists/No Mercy
-			if job == "short1_stage1" or job == "short1_stage2" or job == "nmh" or job == "nmh_res" then 
+			--Instant failure on the relevant tutorial heists
+			if job == "short1_stage1" or job == "short1_stage2" then 
 				group_state:on_police_called(self:coolness_giveaway())
 			else
 				--If it's actually in stealth, have it make people uber suspicious! 

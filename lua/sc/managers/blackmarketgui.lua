@@ -1925,10 +1925,10 @@ function BlackMarketGui:_setup(is_start_page, component_data)
 				callback = callback(self, self, "open_reticle_switch_menu")
 			},
 			wm_buy_mod = {
-				btn = "BTN_START",
+				btn = "BTN_BACK",
 				name = "bm_menu_btn_buy_mod",
 				prio = 4,
-				pc_btn = "menu_respec_tree_all",
+				pc_btn = "toggle_chat",
 				callback = callback(self, self, "purchase_weapon_mod_callback")
 			},
 			wm_clear_mod_preview = {
@@ -2823,7 +2823,7 @@ function BlackMarketGui:_setup(is_start_page, component_data)
 				{
 					inverted = true,
 					name = "reload",
-					append = managers.localization:text("menu_seconds_suffix_short")
+					append = "s"
 				},
 				{
 					round_value = true,
@@ -2842,7 +2842,7 @@ function BlackMarketGui:_setup(is_start_page, component_data)
 				},
 				{
 					round = true,
-					append = managers.localization:text("menu_meters_suffix_short"),
+					append = "m",
 					name = "standing_range" --falloff start
 				},
 				{
@@ -2850,7 +2850,7 @@ function BlackMarketGui:_setup(is_start_page, component_data)
 				},
 				{
 					round = true,
-					append = managers.localization:text("menu_meters_suffix_short"),
+					append = "m",
 					name = "moving_range" --falloff end
 				},
 				{
@@ -2872,13 +2872,13 @@ function BlackMarketGui:_setup(is_start_page, component_data)
 				{
 					inverted = true,
 					name = "swap_speed",
-					append = managers.localization:text("menu_seconds_suffix_short")
+					append = "s"
 				},
 				{
 					round_value = true,
 					inverted = true,
 					name = "ads_speed",
-					append = managers.localization:text("menu_milliseconds_suffix_short")
+					append = "ms"
 				}
 			}
 
@@ -3198,7 +3198,7 @@ function BlackMarketGui:_setup(is_start_page, component_data)
 				{
 					name = "range",
 					num_decimals = 2,
-					suffix = managers.localization:text("menu_meters_suffix_short")
+					suffix = "m"
 				},
 				{
 					index = true,
@@ -4665,13 +4665,7 @@ function BlackMarketGui:update_info_text()
 
 			local crafted = managers.blackmarket:get_crafted_category_slot(slot_data.category, slot_data.slot)
 			local custom_stats = crafted and managers.weapon_factory:get_custom_stats_from_weapon(crafted.factory_id, crafted.blueprint)
-			local maralohk = nil
 			if custom_stats then --GROSS and UGLY garbage
-				for part_id, stats in pairs(custom_stats) do
-					if stats.hey_kiddo then
-						maralohk = true
-					end
-				end
 				for part_id, stats in pairs(custom_stats) do
 					if stats.info_lock_burst then
 						lock_burst = true
@@ -4878,8 +4872,6 @@ function BlackMarketGui:update_info_text()
 
 			local selection_index = tweak_data:get_raw_value("weapon", self._slot_data.name, "use_data", "selection_index") or 1
 			local category = (selection_index == 1 and "secondaries") or (selection_index == 2 and "primaries") or "disabled"
-			local roll_desc = nil
-
 			if category == slot_data.category then
 
 				-- Ugly as fuck but this is the only way I can think of to fix the movement penalty text being excluded from description scaling is to just make it a part of descriptions and making a giant fuck off 'resource_color' table
@@ -4896,7 +4888,6 @@ function BlackMarketGui:update_info_text()
 				local stat_sms = nil
 				local stat_move = nil
 				local stat_attachment_desc = nil
-				local stat_attachment_desc_2 = nil
 				local rays = (weapon_tweak and weapon_tweak.rays) or 1
 				local starwars = nil
 				local martyr = weapon_tweak and weapon_tweak.dispose_mag_desc
@@ -4914,9 +4905,6 @@ function BlackMarketGui:update_info_text()
 						end
 						if stats.alt_desc then
 							stat_attachment_desc = stats.alt_desc
-						end
-						if stats.alt_desc_2 then
-							stat_attachment_desc_2 = stats.alt_desc_2
 						end
 						if stats.ene_hs_mult_add then
 							ene_hs_mult = ene_hs_mult + stats.ene_hs_mult_add
@@ -4945,154 +4933,152 @@ function BlackMarketGui:update_info_text()
 					end
 				end
 
-				if weapon_tweak then
-
-					if weapon_tweak.has_description then
-						local has_pc_desc = managers.menu:is_pc_controller() and managers.localization:exists(tweak_data.weapon[slot_data.name].desc_id .. "_pc")
-						roll_desc = (stat_attachment_desc_2 and math.rand(1) <= stat_attachment_desc_2[2] and stat_attachment_desc_2[1]) or nil
-						local desc_id = roll_desc or stat_attachment_desc or tweak_data.weapon[slot_data.name].desc_id
-						description = has_pc_desc and managers.localization:text(desc_id .. "_pc", desc_macros) or managers.localization:text(desc_id, desc_macros)
-						for color_id in string.gmatch(description, "#%{(.-)%}#") do
-							table.insert(updated_texts[4].resource_color, tweak_data.screen_colors[color_id])
-						end
-						description = description:gsub("#%{(.-)%}#", "##")
-
-						if slot_data.global_value and slot_data.global_value ~= "normal" and updated_texts[4].text ~= "" then
-							if managers.menu:is_pc_controller() and managers.localization:exists(tweak_data.weapon[slot_data.name].desc_id .. "_pc") then
-								updated_texts[4].text = updated_texts[4].text .. "\n" .. description
-							else
-								updated_texts[4].text = updated_texts[4].text .. "\n" .. description
-							end
-						else
-							if managers.menu:is_pc_controller() and managers.localization:exists(tweak_data.weapon[slot_data.name].desc_id .. "_pc") then
-								updated_texts[4].text = updated_texts[4].text .. description
-							else
-								updated_texts[4].text = updated_texts[4].text .. description
-							end
-						end
-						updated_texts[4].below_stats = true
+				if weapon_tweak and weapon_tweak.has_description then
+					local has_pc_desc = managers.menu:is_pc_controller() and managers.localization:exists(tweak_data.weapon[slot_data.name].desc_id .. "_pc")
+					local desc_id = stat_attachment_desc or tweak_data.weapon[slot_data.name].desc_id
+					description = has_pc_desc and managers.localization:text(desc_id .. "_pc", desc_macros) or managers.localization:text(desc_id, desc_macros)
+					for color_id in string.gmatch(description, "#%{(.-)%}#") do
+						table.insert(updated_texts[4].resource_color, tweak_data.screen_colors[color_id])
 					end
+					description = description:gsub("#%{(.-)%}#", "##")
 
-					if weapon_tweak.alt_shotgunraycast and rays > 1 then
-						local base_stats, mods_stats, skill_stats = WeaponDescription._get_stats(slot_data.name, slot_data.category, slot_data.slot, slot_data.default_blueprint)
-						local base_damage = base_stats and base_stats.damage and base_stats.damage.value
-						local mod_damage = (mods_stats and mods_stats.damage and mods_stats.damage.value) or 0
-						local skill_damage = (skill_stats and skill_stats.damage and skill_stats.damage.value) or 0
-						description = "#{risk}#" .. managers.localization:text("bm_menu_weapon_multishot_1") .. "## #{skirmish_color}#" .. tostring(rays) .. "## #{risk}#" .. managers.localization:text("bm_menu_weapon_multishot_2") .. "## #{skirmish_color}#" .. tostring( format_round_3((base_damage + mod_damage + skill_damage) / rays) ) .. "## #{risk}#" .. managers.localization:text("bm_menu_weapon_multishot_3") .. "##"
-						for color_id in string.gmatch(description, "#%{(.-)%}#") do
-							table.insert(updated_texts[4].resource_color, tweak_data.screen_colors[color_id])
+					if slot_data.global_value and slot_data.global_value ~= "normal" and updated_texts[4].text ~= "" then
+						if managers.menu:is_pc_controller() and managers.localization:exists(tweak_data.weapon[slot_data.name].desc_id .. "_pc") then
+							updated_texts[4].text = updated_texts[4].text .. "\n" .. description
+						else
+							updated_texts[4].text = updated_texts[4].text .. "\n" .. description
 						end
-						description = description:gsub("#%{(.-)%}#", "##")
-						if slot_data.global_value and slot_data.global_value ~= "normal" and updated_texts[4].text ~= "" or weapon_tweak.has_description then
-							description = "\n" .. description
-						end
-						updated_texts[4].text = updated_texts[4].text .. description
 					else
-						rays = nil
-					end
-
-					if ap_desc then
-						description = managers.localization:text( ap_desc )
-						for color_id in string.gmatch(description, "#%{(.-)%}#") do
-							table.insert(updated_texts[4].resource_color, tweak_data.screen_colors[color_id])
-						end
-						description = description:gsub("#%{(.-)%}#", "##")
-						if slot_data.global_value and slot_data.global_value ~= "normal" and updated_texts[4].text ~= "" or weapon_tweak.has_description or rays then
-							updated_texts[4].text = updated_texts[4].text .. "\n" .. description
+						if managers.menu:is_pc_controller() and managers.localization:exists(tweak_data.weapon[slot_data.name].desc_id .. "_pc") then
+							updated_texts[4].text = updated_texts[4].text .. description
 						else
 							updated_texts[4].text = updated_texts[4].text .. description
 						end
 					end
-
-					if hs_mult_desc and hs_mult ~= 1 then
-						local penalty_as_string = string.format("%d%%", math.round((hs_mult - 1) * 100))
-						if slot_data.global_value and slot_data.global_value ~= "normal" and updated_texts[4].text ~= "" or weapon_tweak.has_description or ap_desc or rays then
-							updated_texts[4].text = updated_texts[4].text .. "\n##" .. managers.localization:text("bm_menu_weapon_hs_mult_1") .. penalty_as_string .. managers.localization:text("bm_menu_weapon_hs_mult_2") .. "##"
-						else
-							updated_texts[4].text = updated_texts[4].text .. "##" ..  managers.localization:text("bm_menu_weapon_hs_mult_1") .. penalty_as_string .. managers.localization:text("bm_menu_weapon_hs_mult_2") .. "##"
-						end
-						table.insert(updated_texts[4].resource_color, (hs_mult < 1 and tweak_data.screen_colors.important_1 or tweak_data.screen_colors.skill_color) )
-					end
-
-					if ene_hs_mult ~= 1 then
-						local penalty_as_string = string.format("%d%%", math.round((ene_hs_mult) * 100))
-						if slot_data.global_value and slot_data.global_value ~= "normal" and updated_texts[4].text ~= "" or weapon_tweak.has_description or ap_desc or hs_mult_desc or rays then
-							updated_texts[4].text = updated_texts[4].text .. "\n##" .. (ene_hs_mult < 1 and managers.localization:text("bm_menu_weapon_ene_hs_mult_sub") or managers.localization:text("	bm_menu_weapon_ene_hs_mult_add")) .. penalty_as_string .. managers.localization:text("bm_menu_weapon_ene_hs_mult_end") .. "##"
-						else
-							updated_texts[4].text = updated_texts[4].text .. "##" .. (ene_hs_mult < 1 and managers.localization:text("bm_menu_weapon_ene_hs_mult_sub") or managers.localization:text("	bm_menu_weapon_ene_hs_mult_add")) .. penalty_as_string .. managers.localization:text("bm_menu_weapon_ene_hs_mult_end") .. "##"
-						end
-						table.insert(updated_texts[4].resource_color, (ene_hs_mult < 1 and tweak_data.screen_colors.important_1 or tweak_data.screen_colors.skill_color) )
-					end
-
-					if exp_ammo then
-						description = managers.localization:text("bm_menu_weapon_exp_no_hs_info")
-						for color_id in string.gmatch(description, "#%{(.-)%}#") do
-							table.insert(updated_texts[4].resource_color, tweak_data.screen_colors[color_id])
-						end
-						description = description:gsub("#%{(.-)%}#", "##")
-						if slot_data.global_value and slot_data.global_value ~= "normal" and updated_texts[4].text ~= "" or weapon_tweak.has_description or rays or ap_desc or (hs_mult_desc and hs_mult ~= 1) or ene_hs_mult ~= 1 then
-							updated_texts[4].text = updated_texts[4].text .. "\n" .. description
-						else
-							updated_texts[4].text = updated_texts[4].text .. description
-						end
-					end
-
-					if movement_penalty < 1 then
-						local penalty_as_string = string.format("%d%%", math.round((1 - movement_penalty) * 100))
-						if slot_data.global_value and slot_data.global_value ~= "normal" and updated_texts[4].text ~= "" or weapon_tweak.has_description then
-							updated_texts[4].text = updated_texts[4].text .. "\n##" .. managers.localization:text("bm_menu_weapon_movement_penalty_info") .. penalty_as_string .. managers.localization:text("bm_menu_weapon_movement_penalty_info_2") .. (sms < 1 and ";" or ".")  .. "##"
-						else
-							updated_texts[4].text = updated_texts[4].text .. "##" ..managers.localization:text("bm_menu_weapon_movement_penalty_info") .. penalty_as_string .. managers.localization:text("bm_menu_weapon_movement_penalty_info_2") .. (sms < 1 and ";" or ".") .. "##"
-						end
-						table.insert(updated_texts[4].resource_color, tweak_data.screen_colors.important_1)
-					elseif movement_penalty > 1 then
-						local penalty_as_string = string.format("%g%%", (movement_penalty - 1) * 100)
-						if slot_data.global_value and slot_data.global_value ~= "normal" and updated_texts[4].text ~= "" or weapon_tweak.has_description then
-							updated_texts[4].text = updated_texts[4].text .. "\n##" .. managers.localization:text("bm_menu_weapon_movement_bonus_info") .. penalty_as_string .. managers.localization:text("bm_menu_weapon_movement_penalty_info_2") .. "##"
-						else
-							updated_texts[4].text = updated_texts[4].text .. "##" ..managers.localization:text("bm_menu_weapon_movement_bonus_info") .. penalty_as_string .. managers.localization:text("bm_menu_weapon_movement_penalty_info_2") .. "##"
-						end
-						table.insert(updated_texts[4].resource_color, tweak_data.screen_colors.skill_color)
-					end
-
-					if sms < 1 then
-						local penalty_as_string = string.format("%d%%", math.round((1 - sms) * 100))
-						if slot_data.global_value and slot_data.global_value ~= "normal" or weapon_tweak.has_description then
-							if movement_penalty < 1 then
-								updated_texts[4].text = updated_texts[4].text .. " ##" .. managers.localization:text(stat_sms and "bm_menu_sms_info_cont_2" or "bm_menu_sms_info_cont") .. "##"
-							else
-								updated_texts[4].text = updated_texts[4].text .. "\n##" .. managers.localization:text("bm_menu_weapon_movement_penalty_info") .. penalty_as_string .. managers.localization:text(stat_sms and "bm_menu_stat_sms_info_2" or "bm_menu_sms_info_2") .. "##"
-							end
-						else
-							if movement_penalty < 1 then
-								updated_texts[4].text = updated_texts[4].text .. " ##" .. managers.localization:text(stat_sms and "bm_menu_sms_info_cont_2" or "bm_menu_sms_info_cont") .. "##"
-							else
-								updated_texts[4].text = updated_texts[4].text .. "##" .. managers.localization:text("bm_menu_weapon_movement_penalty_info") .. penalty_as_string .. managers.localization:text(stat_sms and "bm_menu_stat_sms_info_2" or "bm_menu_sms_info_2") .. "##"
-							end
-						end
-						table.insert(updated_texts[4].resource_color, tweak_data.screen_colors.important_1)
-					end
-
-					if martyr then
-						if slot_data.global_value and slot_data.global_value ~= "normal" or weapon_tweak.has_description then
-							updated_texts[4].text = updated_texts[4].text .. "\n##" .. managers.localization:text("mutator_letthesleepinggoddie_desc") .. "##"
-						else
-							updated_texts[4].text = updated_texts[4].text .. " ##" .. managers.localization:text("mutator_letthesleepinggoddie_desc") .. "##"
-						end
-						table.insert(updated_texts[4].resource_color, tweak_data.screen_colors.important_1)
-					end
-
-					local magazine_envy = Global.mutators.mutator_values.MutatorMagazineMartyr and Global.mutators.mutator_values.MutatorMagazineMartyr.enabled
-					if magazine_envy and (starwars or keep_ammo == 1 or weapon_tweak.timers.shotgun_reload or weapon_tweak.timers.shotgun_reload_exit_empty) then
-						if slot_data.global_value and slot_data.global_value ~= "normal" or weapon_tweak.has_description then
-							updated_texts[4].text = updated_texts[4].text .. "\n##" .. managers.localization:text("mutator_letthesleepinggoddie_no_effect") .. "##"
-						else
-							updated_texts[4].text = updated_texts[4].text .. " ##" .. managers.localization:text("mutator_letthesleepinggoddie_no_effect") .. "##"
-						end
-						table.insert(updated_texts[4].resource_color, tweak_data.screen_colors.mutators_color)
-					end
-
+					updated_texts[4].below_stats = true
 				end
+
+				if weapon_tweak and weapon_tweak.alt_shotgunraycast and rays > 1 then
+					local base_stats, mods_stats, skill_stats = WeaponDescription._get_stats(slot_data.name, slot_data.category, slot_data.slot, slot_data.default_blueprint)
+					local base_damage = base_stats and base_stats.damage and base_stats.damage.value
+					local mod_damage = (mods_stats and mods_stats.damage and mods_stats.damage.value) or 0
+					local skill_damage = (skill_stats and skill_stats.damage and skill_stats.damage.value) or 0
+					description = "#{risk}#" .. managers.localization:text("bm_menu_weapon_multishot_1") .. "## #{skirmish_color}#" .. tostring(rays) .. "## #{risk}#" .. managers.localization:text("bm_menu_weapon_multishot_2") .. "## #{skirmish_color}#" .. tostring( format_round_3((base_damage + mod_damage + skill_damage) / rays) ) .. "## #{risk}#" .. managers.localization:text("bm_menu_weapon_multishot_3") .. "##"
+					for color_id in string.gmatch(description, "#%{(.-)%}#") do
+						table.insert(updated_texts[4].resource_color, tweak_data.screen_colors[color_id])
+					end
+					description = description:gsub("#%{(.-)%}#", "##")
+					if slot_data.global_value and slot_data.global_value ~= "normal" and updated_texts[4].text ~= "" or weapon_tweak.has_description then
+						description = "\n" .. description
+					end
+					updated_texts[4].text = updated_texts[4].text .. description
+				else
+					rays = nil
+				end
+
+				if ap_desc then
+					description = managers.localization:text( ap_desc )
+					for color_id in string.gmatch(description, "#%{(.-)%}#") do
+						table.insert(updated_texts[4].resource_color, tweak_data.screen_colors[color_id])
+					end
+					description = description:gsub("#%{(.-)%}#", "##")
+					if slot_data.global_value and slot_data.global_value ~= "normal" and updated_texts[4].text ~= "" or weapon_tweak.has_description or rays then
+						updated_texts[4].text = updated_texts[4].text .. "\n" .. description
+					else
+						updated_texts[4].text = updated_texts[4].text .. description
+					end
+				end
+
+				if hs_mult_desc and hs_mult ~= 1 then
+					local penalty_as_string = string.format("%d%%", math.round((hs_mult - 1) * 100))
+					if slot_data.global_value and slot_data.global_value ~= "normal" and updated_texts[4].text ~= "" or weapon_tweak.has_description or ap_desc or rays then
+						updated_texts[4].text = updated_texts[4].text .. "\n##" .. managers.localization:text("bm_menu_weapon_hs_mult_1") .. penalty_as_string .. managers.localization:text("bm_menu_weapon_hs_mult_2") .. "##"
+					else
+						updated_texts[4].text = updated_texts[4].text .. "##" ..  managers.localization:text("bm_menu_weapon_hs_mult_1") .. penalty_as_string .. managers.localization:text("bm_menu_weapon_hs_mult_2") .. "##"
+					end
+					table.insert(updated_texts[4].resource_color, (hs_mult < 1 and tweak_data.screen_colors.important_1 or tweak_data.screen_colors.skill_color) )
+				end
+
+				if ene_hs_mult ~= 1 then
+					local penalty_as_string = string.format("%d%%", math.round((ene_hs_mult) * 100))
+					if slot_data.global_value and slot_data.global_value ~= "normal" and updated_texts[4].text ~= "" or weapon_tweak.has_description or ap_desc or hs_mult_desc or rays then
+						updated_texts[4].text = updated_texts[4].text .. "\n##" .. (ene_hs_mult < 1 and managers.localization:text("bm_menu_weapon_ene_hs_mult_sub") or managers.localization:text("	bm_menu_weapon_ene_hs_mult_add")) .. penalty_as_string .. managers.localization:text("bm_menu_weapon_ene_hs_mult_end") .. "##"
+					else
+						updated_texts[4].text = updated_texts[4].text .. "##" .. (ene_hs_mult < 1 and managers.localization:text("bm_menu_weapon_ene_hs_mult_sub") or managers.localization:text("	bm_menu_weapon_ene_hs_mult_add")) .. penalty_as_string .. managers.localization:text("bm_menu_weapon_ene_hs_mult_end") .. "##"
+					end
+					table.insert(updated_texts[4].resource_color, (ene_hs_mult < 1 and tweak_data.screen_colors.important_1 or tweak_data.screen_colors.skill_color) )
+				end
+
+				if exp_ammo then
+					description = managers.localization:text("bm_menu_weapon_exp_no_hs_info")
+					for color_id in string.gmatch(description, "#%{(.-)%}#") do
+						table.insert(updated_texts[4].resource_color, tweak_data.screen_colors[color_id])
+					end
+					description = description:gsub("#%{(.-)%}#", "##")
+					if slot_data.global_value and slot_data.global_value ~= "normal" and updated_texts[4].text ~= "" or weapon_tweak.has_description or rays or ap_desc or (hs_mult_desc and hs_mult ~= 1) or ene_hs_mult ~= 1 then
+						updated_texts[4].text = updated_texts[4].text .. "\n" .. description
+					else
+						updated_texts[4].text = updated_texts[4].text .. description
+					end
+				end
+
+				if movement_penalty < 1 then
+					local penalty_as_string = string.format("%d%%", math.round((1 - movement_penalty) * 100))
+					if slot_data.global_value and slot_data.global_value ~= "normal" and updated_texts[4].text ~= "" or weapon_tweak.has_description then
+						updated_texts[4].text = updated_texts[4].text .. "\n##" .. managers.localization:text("bm_menu_weapon_movement_penalty_info") .. penalty_as_string .. managers.localization:text("bm_menu_weapon_movement_penalty_info_2") .. (sms < 1 and ";" or ".")  .. "##"
+					else
+						updated_texts[4].text = updated_texts[4].text .. "##" ..managers.localization:text("bm_menu_weapon_movement_penalty_info") .. penalty_as_string .. managers.localization:text("bm_menu_weapon_movement_penalty_info_2") .. (sms < 1 and ";" or ".") .. "##"
+					end
+					table.insert(updated_texts[4].resource_color, tweak_data.screen_colors.important_1)
+				elseif movement_penalty > 1 then
+					local penalty_as_string = string.format("%g%%", (movement_penalty - 1) * 100)
+					if slot_data.global_value and slot_data.global_value ~= "normal" and updated_texts[4].text ~= "" or weapon_tweak.has_description then
+						updated_texts[4].text = updated_texts[4].text .. "\n##" .. managers.localization:text("bm_menu_weapon_movement_bonus_info") .. penalty_as_string .. managers.localization:text("bm_menu_weapon_movement_penalty_info_2") .. "##"
+					else
+						updated_texts[4].text = updated_texts[4].text .. "##" ..managers.localization:text("bm_menu_weapon_movement_bonus_info") .. penalty_as_string .. managers.localization:text("bm_menu_weapon_movement_penalty_info_2") .. "##"
+					end
+					table.insert(updated_texts[4].resource_color, tweak_data.screen_colors.skill_color)
+				end
+
+
+				if sms < 1 then
+					local penalty_as_string = string.format("%d%%", math.round((1 - sms) * 100))
+					if slot_data.global_value and slot_data.global_value ~= "normal" or weapon_tweak.has_description then
+						if movement_penalty < 1 then
+							updated_texts[4].text = updated_texts[4].text .. " ##" .. managers.localization:text(stat_sms and "bm_menu_sms_info_cont_2" or "bm_menu_sms_info_cont") .. "##"
+						else
+							updated_texts[4].text = updated_texts[4].text .. "\n##" .. managers.localization:text("bm_menu_weapon_movement_penalty_info") .. penalty_as_string .. managers.localization:text(stat_sms and "bm_menu_stat_sms_info_2" or "bm_menu_sms_info_2") .. "##"
+						end
+					else
+						if movement_penalty < 1 then
+							updated_texts[4].text = updated_texts[4].text .. " ##" .. managers.localization:text(stat_sms and "bm_menu_sms_info_cont_2" or "bm_menu_sms_info_cont") .. "##"
+						else
+							updated_texts[4].text = updated_texts[4].text .. "##" .. managers.localization:text("bm_menu_weapon_movement_penalty_info") .. penalty_as_string .. managers.localization:text(stat_sms and "bm_menu_stat_sms_info_2" or "bm_menu_sms_info_2") .. "##"
+						end
+					end
+					table.insert(updated_texts[4].resource_color, tweak_data.screen_colors.important_1)
+				end
+
+				if martyr then
+					if slot_data.global_value and slot_data.global_value ~= "normal" or weapon_tweak.has_description then
+						updated_texts[4].text = updated_texts[4].text .. "\n##" .. managers.localization:text("mutator_letthesleepinggoddie_desc") .. "##"
+					else
+						updated_texts[4].text = updated_texts[4].text .. " ##" .. managers.localization:text("mutator_letthesleepinggoddie_desc") .. "##"
+					end
+					table.insert(updated_texts[4].resource_color, tweak_data.screen_colors.important_1)
+				end
+
+				local magazine_envy = Global.mutators.mutator_values.MutatorMagazineMartyr and Global.mutators.mutator_values.MutatorMagazineMartyr.enabled
+				if magazine_envy and (starwars or keep_ammo == 1 or weapon_tweak.timers.shotgun_reload or weapon_tweak.timers.shotgun_reload_exit_empty) then
+					if slot_data.global_value and slot_data.global_value ~= "normal" or weapon_tweak.has_description then
+						updated_texts[4].text = updated_texts[4].text .. "\n##" .. managers.localization:text("mutator_letthesleepinggoddie_no_effect") .. "##"
+					else
+						updated_texts[4].text = updated_texts[4].text .. " ##" .. managers.localization:text("mutator_letthesleepinggoddie_no_effect") .. "##"
+					end
+					table.insert(updated_texts[4].resource_color, tweak_data.screen_colors.mutators_color)
+				end
+
+
 
 				if slot_data.last_weapon then
 					updated_texts[4].text = updated_texts[4].text .. "\n##" .. managers.localization:to_upper_text("bm_menu_last_weapon_warning") .. "##"
@@ -5109,23 +5095,6 @@ function BlackMarketGui:update_info_text()
 				})
 				table.insert(updated_texts[4].resource_color, tweak_data.screen_colors.important_1)
 				table.insert(updated_texts[4].resource_color, tweak_data.screen_colors.risk)
-			end
-
-			if maralohk and (roll_desc or (math.rand(1) <= 0.05)) then 
-				local rand = (roll_desc and 10) or math.random(1, 8)
-				if roll_desc then
-					updated_texts[1].text = "##" .. updated_texts[1].text:gsub("##", "") .. "##"
-					updated_texts[2].text = "##" .. updated_texts[2].text:gsub("##", "") .. "##"
-					updated_texts[3].text = "##" .. updated_texts[3].text:gsub("##", "") .. "##"
-					updated_texts[4].text = "##" .. updated_texts[4].text:gsub("##", "") .. "##"
-					updated_texts[1].resource_color = tweak_data.screen_colors.important_1
-					updated_texts[2].resource_color = updated_texts[1].resource_color
-					updated_texts[3].resource_color = updated_texts[1].resource_color
-					updated_texts[4].resource_color = updated_texts[1].resource_color
-					updated_texts[5].resource_color = updated_texts[1].resource_color
-				end
-				local sound_buffer = XAudio and blt.xaudio.setup() and XAudio.Buffer:new( BeardLib.Utils:FindMod("RestorationMod").ModPath .. "assets/oggs/voiceover/mitw/" .. tostring(rand) .. ".ogg")
-				XAudio.Source:new(sound_buffer)
 			end
 
 			updated_texts[4].below_stats = true
@@ -5334,8 +5303,6 @@ function BlackMarketGui:update_info_text()
 		local armor_name_text = self._armor_info_panel:child("armor_name_text")
 		local armor_image = self._armor_info_panel:child("armor_image")
 		local armor_equipped = self._armor_info_panel:child("armor_equipped")
-		local bm_armor_tweak = tweak_data.blackmarket.armors[slot_data.name]
-		local upgrade_level = bm_armor_tweak.upgrade_level
 
 		armor_name_text:set_text(self._slot_data.name_localized)
 		armor_name_text:set_w(self._armor_info_panel:w() - armor_image:right() - 20)
@@ -5356,19 +5323,9 @@ function BlackMarketGui:update_info_text()
 		elseif managers.player:has_category_upgrade("player", "damage_to_hot") and not table.contains(tweak_data:get_raw_value("upgrades", "damage_to_hot_data", "armors_allowed") or {}, self._slot_data.name) then
 			updated_texts[3].text = managers.localization:to_upper_text("bm_menu_disables_damage_to_hot")
 			updated_texts[3].below_stats = true
-		end
-
-		if managers.player:has_category_upgrade("player", "armor_pickup_mul") then
-			local armor_pickup = managers.player:body_armor_value("skill_ammo_mul", upgrade_level, 1)
-			local description = managers.localization:text("bm_menu_armor_pickup_1", { armor_pickup = (armor_pickup * 100) .. "%" } )
-			for color_id in string.gmatch(description, "#%{(.-)%}#") do
-				table.insert(updated_texts[4].resource_color,  tweak_data.screen_colors[(armor_pickup < 1 and "stats_negative") or (armor_pickup > 1 and "stats_positive") or color_id])
-			end
-			description = description:gsub("#%{(.-)%}#", "##")
-			updated_texts[4].text = description .. "\n" .. updated_texts[4].text
-		end
-
-		if managers.player:has_category_upgrade("player", "armor_health_store_amount") then --Add Ex-Pres per-kill armor regen bonus.
+		elseif managers.player:has_category_upgrade("player", "armor_health_store_amount") then --Add Ex-Pres per-kill armor regen bonus.
+			local bm_armor_tweak = tweak_data.blackmarket.armors[slot_data.name]
+			local upgrade_level = bm_armor_tweak.upgrade_level
 			local amount = managers.player:body_armor_value("skill_max_health_store", upgrade_level, 1)
 			local multiplier = managers.player:upgrade_value("player", "armor_max_health_store_multiplier", 1)
 			local regen_speed = format_round((managers.player:body_armor_value("skill_kill_change_regenerate_speed", upgrade_level, 1) - 1) * 100)
@@ -5378,10 +5335,10 @@ function BlackMarketGui:update_info_text()
 								managers.localization:to_upper_text("bm_menu_armor_max_health_store_1", {health_stored = format_round(amount * multiplier * tweak_data.gui.stats_present_multiplier)}))
 
 			for color_id in string.gmatch(description, "#%{(.-)%}#") do
-				table.insert(updated_texts[4].resource_color, tweak_data.screen_colors["skill_color"]) --dunno why this breaks when the difficuly cap is in play but doing this is fine
+				table.insert(updated_texts[4].resource_color, tweak_data.screen_colors[color_id])
 			end
 			description = description:gsub("#%{(.-)%}#", "##")
-			updated_texts[4].text = updated_texts[4].text .. description .. "\n\n"
+			updated_texts[4].text = description .. "\n\n"
 			updated_texts[4].below_stats = true
 		elseif managers.player:has_category_upgrade("player", "armor_grinding") then --Add Anarchist per-armor skill information.
 			local bm_armor_tweak = tweak_data.blackmarket.armors[slot_data.name]
@@ -5395,7 +5352,7 @@ function BlackMarketGui:update_info_text()
 				table.insert(updated_texts[4].resource_color, tweak_data.screen_colors[color_id])
 			end
 			description = description:gsub("#%{(.-)%}#", "##")
-			updated_texts[4].text = updated_texts[4].text .. description .. "\n\n"
+			updated_texts[4].text = description .. "\n\n"
 			updated_texts[4].below_stats = true
 		end
 		local bm_armor_tweak = tweak_data.blackmarket.armors[slot_data.name]
@@ -5409,7 +5366,7 @@ function BlackMarketGui:update_info_text()
 		local is_pro = Global.game_settings and Global.game_settings.one_down
 		local difficulty_id = math.max(0, (tweak_data:difficulty_to_index(current_diff) or 0) - 2)
 		local grace_cap = nil
-		dodge_rating = math.round(math.clamp((dodge_rating + mod_dodge + skill_dodge) * 1000, 0, 450))
+		dodge_rating = math.clamp((dodge_rating + mod_dodge + skill_dodge) * 1000, 0, 450)
 		if dodge_rating and dodge_rating > 0 then
 			local description = managers.localization:text("bm_menu_dodge_grace", { grace_bonus = dodge_rating .. managers.localization:text("bm_menu_append_milliseconds") } )
 			local diff_desc = ""
@@ -5448,7 +5405,7 @@ function BlackMarketGui:update_info_text()
 					table.insert(updated_texts[4].resource_color,  tweak_data.screen_colors[dash_grace_dodge_t == dash_stats.grace_cap_dodge * 1000 and "stat_maxed" or color_id])
 				end
 			end
-			description = description:gsub("#%{(.-)%}#", "##")
+			description = description:gsub("#%{(.-)%}#", "##") 
 			updated_texts[4].text = updated_texts[4].text .. ((dodge_rating > 0 and "\n") or "") .. description
 		end
 		updated_texts[4].below_stats = true

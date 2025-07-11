@@ -7,6 +7,7 @@ local difficulty = tweak_data:difficulty_to_index(Global.game_settings and Globa
 local pro_job = Global.game_settings and Global.game_settings.one_down
 local timelock_normal = (difficulty >= 6 and 240) or 180
 local timelock_fast = (difficulty >= 6 and 210) or 150
+local titan_sniper_c4 = ((pro_job and difficulty == 8) and "units/pd2_mod_bravo/characters/ene_bravo_dmr_scripted/ene_bravo_dmr_scripted")
 local swat_normal = (pro_job and "units/payday2/characters/ene_swat_heavy_1_sc/ene_swat_heavy_1_sc")
 local swat_hard = (pro_job and "units/payday2/characters/ene_fbi_heavy_1_sc/ene_fbi_heavy_1_sc")
 local swat_overkill = (pro_job and swat_overkill_table_pj)
@@ -33,6 +34,11 @@ local swat_h = {
 local swat_ovk = {
 	values = {
         enemy = swat_overkill
+	}
+}
+local titan_sniper = {
+	values = {
+        enemy = titan_sniper_c4
 	}
 }
 
@@ -135,7 +141,7 @@ return {
 			{ id = 400002, delay = 20 },
 			{ id = 400046, delay = 200 },
 			{ id = 400047, delay = 200 },
-			{ id = 400066, delay = 5 },
+			{ id = 400049, delay = 5 },
 			{ id = 100129, delay = 20 },
 			{ id = 100115, delay = 18 }
 		}
@@ -184,6 +190,11 @@ return {
 			{ id = 400019, delay = 0 }
 		}
 	},
+	--Titan Snipers replace C4 route snipers on DSPJ
+	[102883] = titan_sniper,
+	[102893] = titan_sniper,
+	[102898] = titan_sniper,
+	[102901] = titan_sniper,
 	--More timelock timer on higher diifs and Pro Jobs
 	[103137] = {
 		values = {

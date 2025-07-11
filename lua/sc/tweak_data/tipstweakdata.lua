@@ -170,12 +170,6 @@ function TipsTweakData:init()
 			category = "gameplay_res"
 		},
 		{
-			cat_index = 29,
-			image = "enemy_tazer",
-			consoles = true,
-			category = "gameplay_res"
-		},
-		{
 			cat_index = 1,
 			image = "enemy_thrt",
 			consoles = true,
@@ -750,13 +744,7 @@ function TipsTweakData:init()
 			image = "generic_tip",
 			consoles = true,
 			category = "misc_res"
-		},
-		{
-			cat_index = 4,
-			image = "generic_tip",
-			consoles = true,
-			category = "misc_res"
-		},
+		},	
 		{
 			cat_index = 1,
 			image = "loading_omnia",
@@ -921,12 +909,6 @@ function TipsTweakData:init()
 		},	
 		{
 			cat_index = 28,
-			image = "generic_tip",
-			consoles = true,
-			category = "fluff_res"
-		},
-		{
-			cat_index = 29,
 			image = "generic_tip",
 			consoles = true,
 			category = "fluff_res"

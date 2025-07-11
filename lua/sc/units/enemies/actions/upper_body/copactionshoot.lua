@@ -577,10 +577,12 @@ function CopActionShoot:set_sniper_focus_sound(sound_progress)
 		local total_progression = p_dmg_ext._downed_progression or 0
 
 		if sound_progress >= total_progression then
-			local set_sound = math_min(100, sound_progress)
-			managers.music:set_volume_multiplier("downed", 1 - (set_sound / 100), 0)
 			if p_dmg_ext._tinnitus_data == nil or sound_progress >= p_dmg_ext._tinnitus_data.intensity then
+				local set_sound = math_min(100, sound_progress)
+
 				SoundDevice:set_rtpc("downed_state_progression", set_sound)
+				
+				managers.music:set_volume_multiplier("downed", 1 - (set_sound / 100), 0)
 			end
 		end
 	end
@@ -1572,11 +1574,6 @@ function CopActionShoot:anim_clbk_melee_strike()
 					local t = Application:time()
 
 					dmg_multiplier = dmg_multiplier * managers.player:upgrade_value("player", "melee_damage_multiplier", 1)
-
-					if managers.player:has_category_upgrade("player", "melee_" .. tostring(melee_tweak.stats.weapon_type) .. "_damage_multiplier") then
-						local type_multiplier = managers.player:upgrade_value("player", "melee_" .. tostring(melee_tweak.stats.weapon_type) .. "_damage_multiplier", 1)
-						dmg_multiplier = dmg_multiplier * type_multiplier
-					end
 
 					if managers.player:has_category_upgrade("melee", "stacking_hit_damage_multiplier") then
 						player_state._state_data.stacking_dmg_mul = player_state._state_data.stacking_dmg_mul or {}

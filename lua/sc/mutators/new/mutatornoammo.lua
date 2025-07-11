@@ -15,7 +15,7 @@ MutatorNoAmmoPickups.icon_coords = {
 	5
 }
 function MutatorNoAmmoPickups:setup(data)
-	-- thanks Miss Miki
+	-- thanks erushinj
 	local forbidden_names = table.list_to_set({})
 	local char_tweak = tweak_data.character
 	local enemy

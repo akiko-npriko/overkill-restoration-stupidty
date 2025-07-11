@@ -6,9 +6,7 @@ MutatorJungleInferno.reductions = {
 	money = 0,
 	exp = 0
 }
-MutatorJungleInferno.incompatibility_tags = {
-	"replaces_weapons"
-}		
+MutatorJungleInferno.incompatibility_tags = {}		
 MutatorJungleInferno.disables_achievements = true
 MutatorJungleInferno.categories = {"enemies"}
 MutatorJungleInferno.icon_coords = {

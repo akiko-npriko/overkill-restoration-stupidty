@@ -57,16 +57,16 @@ tweak_data.pistol = {
 	swap_bonus = 3.2,
 	ads_move_speed_mult = 0.8,
 	moving_spread_mult = 0.5,
-	hipfire_spread_mult = 0.6
+	hipfire_spread_mult = 0.75
 }
 	tweak_data.pistol_pdw = {
 		ads_move_speed_mult = 0.7 / tweak_data.pistol.ads_move_speed_mult
 	}
 	tweak_data.handcannon = {
 		swap_bonus = 2.7 / tweak_data.pistol.swap_bonus,
-		ads_move_speed_mult = 0.6 / tweak_data.pistol.ads_move_speed_mult,
+		ads_move_speed_mult = 0.7 / tweak_data.pistol.ads_move_speed_mult,
 		moving_spread_mult = 1 / tweak_data.pistol.moving_spread_mult,
-		hipfire_spread_mult = 1.1 / tweak_data.pistol.hipfire_spread_mult
+		hipfire_spread_mult = 1 / tweak_data.pistol.hipfire_spread_mult
 	}
 
 tweak_data.bow = {
@@ -80,7 +80,7 @@ tweak_data.crossbow = {
 	shake_mul = 0
 }
 	tweak_data.crossbow_pistol = {
-		ads_move_speed_mult = 0.8 / tweak_data.crossbow.ads_move_speed_mult,
+		ads_move_speed_mult = 1.6,
 		swap_bonus = 3.2
 	}
 
@@ -88,57 +88,60 @@ tweak_data.grenade_launcher = {
 	ads_move_speed_mult = 0.5,
 }
 	tweak_data.gl_pistol = {
-		ads_move_speed_mult = 0.8 / tweak_data.grenade_launcher.ads_move_speed_mult,
+		ads_move_speed_mult = 1.6,
 		swap_bonus = 3.2
 	}
 	tweak_data.rocket_launcher = {
-		ads_move_speed_mult = 0.25 / tweak_data.grenade_launcher.ads_move_speed_mult,
+		ads_move_speed_mult = 0.4, --lowered to 0.2
 		shake_mul = 0
 	}
 
 tweak_data.shotgun = {
 	ads_move_speed_mult = 0.5,
-	ads_moving_spread_mult = 1.1,
+	ads_moving_spread_mult = 1.15,
 	shake_mul = 2
 }
 	tweak_data.shotgun_auto = {
 		hipfire_spread_mult = 0.25,
 	}
 	tweak_data.shotgun_light = {
-		hipfire_spread_mult = 1.25,
-		hipfire_moving_spread_mult = 1.5
+		hipfire_spread_mult = 1.3,
+		--ads_multishot_spread_mult = 4,
+		moving_spread_mult = 1.5
 	}
 		tweak_data.shotgun_light_semi = {
-			hipfire_spread_mult = 0.8 / tweak_data.shotgun_light.hipfire_spread_mult,
-			hipfire_moving_spread_mult = 1 / tweak_data.shotgun_light.hipfire_moving_spread_mult
+			hipfire_spread_mult = 0.61538,
+			moving_spread_mult = 0.66667
 		}
 	tweak_data.shotgun_heavy = {
-		hipfire_spread_mult = 0.65,
+		hipfire_spread_mult = 0.55,
+		--ads_multishot_spread_mult = 0.9
 	}
 	tweak_data.shotgun_break = {
-		hipfire_spread_mult = 1.25,
+		hipfire_spread_mult = 1.15,
+		--ads_multishot_spread_mult = 1
 	}
 		tweak_data.shotgun_smasher = {
 			shake_mul = 3
 		}
 	tweak_data.shotgun_pistol = {
-		ads_move_speed_mult = 0.8 / tweak_data.shotgun.ads_move_speed_mult,
+		ads_move_speed_mult = 1.6,
 		swap_bonus = 3.2
 	}
 	tweak_data.flamethrower = {
-		ads_move_speed_mult = 0.5 / tweak_data.shotgun.ads_move_speed_mult,
+		ads_move_speed_mult = 1,
 		shake_mul = 0
 	}
 		tweak_data.flamethrower_lmg = {
-			ads_move_speed_mult = 0.35 / (tweak_data.shotgun.ads_move_speed_mult * tweak_data.flamethrower.ads_move_speed_mult),
+			ads_move_speed_mult = 0.7,
 			shake_mul = 0
 		}
 
 tweak_data.smg = {
-	swap_bonus = 1.65,
+	swap_bonus = 1.6,
 	ads_move_speed_mult = 0.7,
-	moving_spread_mult = 0.7,
-	hipfire_spread_mult = 0.7
+	moving_spread_mult = 0.6,
+	hipfire_spread_mult = 0.9
 }
 	tweak_data.pdw = {
 		ads_move_speed_mult = 0.5 / tweak_data.smg.ads_move_speed_mult
@@ -147,50 +150,44 @@ tweak_data.smg = {
 		ads_moving_recoil = 1.15,
 		swap_bonus = 1 / tweak_data.smg.swap_bonus,
 		ads_move_speed_mult = 0.35 / tweak_data.smg.ads_move_speed_mult,
-		moving_spread_mult = 4.5 / tweak_data.smg.moving_spread_mult,
-		ads_moving_spread_mult = 1.75,
-		hipfire_spread_mult = 4 / tweak_data.smg.hipfire_spread_mult,
+		moving_spread_mult = 5 / tweak_data.smg.moving_spread_mult,
+		ads_moving_spread_mult = 2,
+		hipfire_spread_mult = 3 / tweak_data.smg.hipfire_spread_mult,
 		shake_mul = 1.4
 	}
 		tweak_data.lmg_moving = {
 			ads_moving_recoil = 1 / tweak_data.lmg.ads_moving_recoil,
 			shake_mul = 1 / tweak_data.lmg.shake_mul,
-			hipfire_spread_mult = 2.5 / (tweak_data.smg.hipfire_spread_mult * tweak_data.lmg.hipfire_spread_mult)
+			hipfire_spread_mult = 2 / (tweak_data.smg.hipfire_spread_mult * tweak_data.lmg.hipfire_spread_mult)
 		}
 		tweak_data.finn_the_lmg = {
 			ads_moving_recoil = 1 / tweak_data.lmg.ads_moving_recoil,
 			moving_spread_mult = 1 / (tweak_data.smg.moving_spread_mult * tweak_data.lmg.moving_spread_mult),
-			ads_moving_spread_mult = 1.35 / tweak_data.lmg.moving_spread_mult,
-			hipfire_spread_mult = 1.25 / (tweak_data.smg.hipfire_spread_mult * tweak_data.lmg.hipfire_spread_mult),
+			hipfire_spread_mult = 1.5 / (tweak_data.smg.hipfire_spread_mult * tweak_data.lmg.hipfire_spread_mult),
 			shake_mul = 1 / tweak_data.lmg.shake_mul
 		}
 		tweak_data.mmg = {
-			moving_spread_mult = 5.2 / (tweak_data.smg.moving_spread_mult * tweak_data.lmg.moving_spread_mult),
-			ads_moving_spread_mult = 2.2 / tweak_data.lmg.ads_moving_spread_mult,
-			hipfire_spread_mult = 4.5 / (tweak_data.smg.hipfire_spread_mult * tweak_data.lmg.hipfire_spread_mult)
+			moving_spread_mult = 6 / (tweak_data.smg.moving_spread_mult * tweak_data.lmg.moving_spread_mult),
+			ads_moving_spread_mult = 3 / tweak_data.lmg.ads_moving_spread_mult,
+			hipfire_spread_mult = 5 / (tweak_data.smg.hipfire_spread_mult * tweak_data.lmg.hipfire_spread_mult)
 		}
-			tweak_data.mmg_moving = {
-				ads_moving_recoil = 1 / tweak_data.lmg.ads_moving_recoil,
-				shake_mul = 1 / tweak_data.lmg.shake_mul,
-				hipfire_spread_mult = 2 / (tweak_data.smg.hipfire_spread_mult * tweak_data.lmg.hipfire_spread_mult * tweak_data.mmg.hipfire_spread_mult)
-			}
 			tweak_data.rambo = {
-				hipfire_spread_mult = 1.5 / (tweak_data.smg.hipfire_spread_mult * tweak_data.lmg.hipfire_spread_mult * tweak_data.mmg.hipfire_spread_mult)
+				hipfire_spread_mult = 1.75 / (tweak_data.smg.hipfire_spread_mult * tweak_data.lmg.hipfire_spread_mult * tweak_data.mmg.hipfire_spread_mult)
 			}
 			tweak_data.wolf_brigade = {
 				ads_moving_recoil = 1 / tweak_data.lmg.ads_moving_recoil,
 				moving_spread_mult = 1.2 / (tweak_data.smg.moving_spread_mult * tweak_data.lmg.moving_spread_mult * tweak_data.mmg.moving_spread_mult),
-				hipfire_spread_mult = 1.25 / (tweak_data.smg.hipfire_spread_mult * tweak_data.lmg.hipfire_spread_mult * tweak_data.mmg.hipfire_spread_mult),
+				hipfire_spread_mult = 1.5 / (tweak_data.smg.hipfire_spread_mult * tweak_data.lmg.hipfire_spread_mult * tweak_data.mmg.hipfire_spread_mult),
 				shake_mul = 1 / tweak_data.lmg.shake_mul,
 			}
 	tweak_data.minigun = {
 		swap_bonus = 0.83334,
 		ads_move_speed_mult = 0.5, --lowered to 0.35
 		moving_spread_mult = 8.3333,
-		hipfire_spread_mult = 2.25 / tweak_data.smg.hipfire_spread_mult,
+		hipfire_spread_mult = 3 / tweak_data.smg.hipfire_spread_mult,
 	}
 		tweak_data.sasha = {
-			hipfire_spread_mult = 1.5 / (tweak_data.smg.hipfire_spread_mult * tweak_data.minigun.hipfire_spread_mult),
+			hipfire_spread_mult = 1.75 / (tweak_data.smg.hipfire_spread_mult * tweak_data.minigun.hipfire_spread_mult),
 		}
 	tweak_data.bige = {
 		swap_bonus = 1 / tweak_data.smg.swap_bonus,
@@ -200,103 +197,66 @@ tweak_data.smg = {
 	}
 
 tweak_data.snp = {
-	swap_bonus = 0.95,
-	hipfire_spread_mult = 3,
-	hipfire_moving_spread_mult = 1.5,
-	ads_move_speed_mult = 0.4,
+	swap_bonus = 1,
+	ads_move_speed_mult = 0.45,
 	ads_stationary_spread_mult = 0.1,
-	shake_mul = 1.1,
-	min_spread_mult = 2
+	hipfire_spread_mult = 2.5,
+	hipfire_moving_spread_mult = 1.5,
+	shake_mul = 1.1
 }
-	tweak_data.snp_hip = {
-		min_spread_mult = 1 / tweak_data.snp.min_spread_mult,
-		hipfire_spread_mult = 2 / tweak_data.snp.hipfire_spread_mult,
-		hipfire_moving_spread_mult = 1.25 / tweak_data.snp.hipfire_moving_spread_mult
-	}
 	tweak_data.semi_snp = {
-		min_spread_mult = 5 / tweak_data.snp.min_spread_mult,
-		hipfire_spread_mult = 5 / tweak_data.snp.hipfire_spread_mult,
-		hipfire_moving_spread_mult = 2.5 / tweak_data.snp.hipfire_moving_spread_mult,
+		hipfire_spread_mult = 3.5,
 		ads_moving_recoil = 1.1,
-		ads_moving_spread_mult = 1.35,
+		hipfire_moving_spread_mult = 1.5,
+		ads_moving_spread_mult = 1.05,
 		ads_move_speed_mult = 0.3 / tweak_data.snp.ads_move_speed_mult,
 		shake_mul = 1.1
 	}
 		tweak_data.s7 = {
-			min_spread_mult = 0.025 / (tweak_data.semi_snp.min_spread_mult * tweak_data.snp.min_spread_mult),
-			hipfire_spread_mult = 0.025 / (tweak_data.semi_snp.hipfire_spread_mult * tweak_data.snp.hipfire_spread_mult),
-			hipfire_moving_spread_mult = 0.025 / (tweak_data.semi_snp.hipfire_moving_spread_mult * tweak_data.snp.hipfire_moving_spread_mult),
-			ads_moving_spread_mult = 0.025 / tweak_data.semi_snp.ads_moving_spread_mult
+			hipfire_spread_mult = 0.05,
+			hipfire_moving_spread_mult = 0.05,
+			ads_moving_spread_mult = 0.05
 		}
 	tweak_data.amr = {
 		hipfire_spread_mult = 2,
+		ads_move_speed_mult = 0.5,
 		shake_mul = 1.1
 	}
 
 tweak_data.assault_rifle = {
-	swap_bonus = 0.95,
-	ads_moving_recoil = 1.1,
-	ads_stationary_spread_mult = 0.75,
-	ads_moving_spread_mult = 1.22,
-	ads_move_speed_mult = 0.4,
-	hipfire_spread_mult = 1.5,
-	hipfire_moving_spread_mult = 1.5,
-	shake_mul = 1.1,
-	min_spread_mult = 4
+	swap_bonus = 1,
+	ads_moving_recoil = 1.05,
+	ads_stationary_spread_mult = 0.9,
+	ads_move_speed_mult = 0.45,
+	hipfire_spread_mult = 1.15,
+	shake_mul = 1.05
 }
 	tweak_data.crb = {
-		swap_bonus = 1.05 / tweak_data.assault_rifle.swap_bonus,
-		hipfire_spread_mult = 1.2 / tweak_data.assault_rifle.hipfire_spread_mult,
-		hipfire_moving_spread_mult = 1.2 / tweak_data.assault_rifle.hipfire_moving_spread_mult,
-		ads_moving_recoil = 1.05 / tweak_data.assault_rifle.ads_moving_recoil,
-		ads_moving_spread_mult = 1.11 / tweak_data.assault_rifle.ads_moving_spread_mult,
-		ads_move_speed_mult = 0.45 / tweak_data.assault_rifle.ads_move_speed_mult,
+		ads_moving_recoil = 1 / tweak_data.assault_rifle.ads_moving_recoil,
+		hipfire_spread_mult = 1 / tweak_data.assault_rifle.hipfire_spread_mult,
+		swap_bonus = 1.1 / tweak_data.assault_rifle.swap_bonus,
+		ads_move_speed_mult = 0.5 / tweak_data.assault_rifle.ads_move_speed_mult,
 	}
 	tweak_data.dmr_l = {
-		min_spread_mult = 5 / tweak_data.assault_rifle.min_spread_mult,
-		hipfire_spread_mult = 1.8 / tweak_data.assault_rifle.hipfire_spread_mult,
-		hipfire_moving_spread_mult = 1.8 / tweak_data.assault_rifle.hipfire_moving_spread_mult,
+		hipfire_spread_mult = 2 / tweak_data.assault_rifle.hipfire_spread_mult,
 		ads_stationary_spread_mult = 0.5,
-		ads_moving_spread_mult = 1.33 / tweak_data.assault_rifle.ads_moving_spread_mult,
-		shake_mul = 1.1
+		moving_spread_mult = 1.2,
+		shake_mul = 1.05
 	}
 	tweak_data.dmr_h = {
-		min_spread_mult = 6 / tweak_data.assault_rifle.min_spread_mult,
-		hipfire_spread_mult = 2 / tweak_data.assault_rifle.hipfire_spread_mult,
-		hipfire_moving_spread_mult = 2 / tweak_data.assault_rifle.hipfire_moving_spread_mult,
+		hipfire_spread_mult = 2.5 / tweak_data.assault_rifle.hipfire_spread_mult,
+		moving_spread_mult = 1.5,
 		ads_stationary_spread_mult = 0.25,
-		ads_moving_spread_mult = 1.33 / tweak_data.assault_rifle.ads_moving_spread_mult,
 		shake_mul = 1.1
 	}
 
 tweak_data.akimbo = {
 	swap_bonus = 1,
-	ads_move_speed_mult = 0.9,
-	ads_moving_spread_mult = 2.5,
-	hipfire_spread_mult = 2.5,
-	moving_spread_mult = 2.5
+	ads_move_speed_mult = 0.75,
+	ads_moving_spread_mult = 2,
+	hipfire_spread_mult = 2,
+	moving_spread_mult = 2
 }
-	tweak_data.akb_smg = {
-		swap_bonus = 0.9,
-		ads_move_speed_mult = 0.75 / tweak_data.akimbo.ads_move_speed_mult,
-		ads_moving_spread_mult = 4 / tweak_data.akimbo.ads_moving_spread_mult,
-		hipfire_spread_mult = 4 / tweak_data.akimbo.hipfire_spread_mult,
-		moving_spread_mult = 4 / tweak_data.akimbo.moving_spread_mult
-	}
-	tweak_data.akb_shot = {
-		swap_bonus = 0.9,
-		ads_move_speed_mult = 0.75 / tweak_data.akimbo.ads_move_speed_mult,
-		ads_moving_spread_mult = 3 / tweak_data.akimbo.ads_moving_spread_mult,
-		hipfire_spread_mult = 3 / tweak_data.akimbo.hipfire_spread_mult,
-		moving_spread_mult = 3 / tweak_data.akimbo.moving_spread_mult
-	}
-	tweak_data.akb_rifle = {
-		swap_bonus = 0.9,
-		ads_move_speed_mult = 0.75 / tweak_data.akimbo.ads_move_speed_mult,
-		ads_moving_spread_mult = 3.5 / tweak_data.akimbo.ads_moving_spread_mult,
-		hipfire_spread_mult = 3.5 / tweak_data.akimbo.hipfire_spread_mult,
-		moving_spread_mult = 3.5 / tweak_data.akimbo.moving_spread_mult
-	}
 
 tweak_data.cs_spread = {
 	hipfire_spread_mult = 0.1,
@@ -629,12 +589,9 @@ if tweak_data.projectiles.xmas_snowball then
 	tweak_data.projectiles.xmas_snowball.player_dmg_mul = 0
 	tweak_data.projectiles.xmas_snowball.camera_shake_max_mul = 0
 	tweak_data.projectiles.xmas_snowball.feedback_range = -100
-	tweak_data.projectiles.xmas_snowball.curve_pow = 0.5
+	tweak_data.projectiles.xmas_snowball.curve_pow = 0.05
 	tweak_data.projectiles.xmas_snowball.range = 100
 	tweak_data.projectiles.xmas_snowball.adjust_z = 0
-	tweak_data.projectiles.xmas_snowball.direct_damage_percent = 0
-	tweak_data.projectiles.xmas_snowball.object_damage_mult = 2
-	tweak_data.projectiles.xmas_snowball.explosion_object_damage_mult = 3
 end
 
 --ZAPper grenade
@@ -1397,7 +1354,7 @@ if BeardLib then
 				"player_non_special_melee_multiplier_1", --This bonus doesn't actually do anything, but it is what's displayed in menus.
 				"player_melee_damage_multiplier_1"
 			},
-			cost = 300,
+			cost = 0,
 			icon_xy = {1, 0},
 			name_id = "menu_deckall_2",
 			desc_id = "menu_deckall_2_desc_sc"
@@ -1407,12 +1364,11 @@ if BeardLib then
 				"passive_player_xp_multiplier_1",
 				"player_passive_suspicion_bonus",
 				"player_passive_armor_movement_penalty_multiplier",
-				"weapon_passive_reload_speed_multiplier",
 				"weapon_passive_damage_multiplier_2",
 				"player_non_special_melee_multiplier_2",
 				"player_melee_damage_multiplier_2"			
 			},
-			cost = 600,
+			cost = 0,
 			icon_xy = {3, 0},
 			name_id = "menu_deckall_4",
 			desc_id = "menu_deckall_4_desc_sc"
@@ -1420,12 +1376,11 @@ if BeardLib then
 		local deck6 = {
 			upgrades = {
 				"armor_kit",
-				"weapon_passive_pick_up_multiplier",
 				"weapon_passive_damage_multiplier_3",
 				"player_non_special_melee_multiplier_3",
 				"player_melee_damage_multiplier_3"			
 			},
-			cost = 1600,
+			cost = 0,
 			icon_xy = {5, 0},
 			name_id = "menu_deckall_6",
 			desc_id = "menu_deckall_6_desc_sc"
@@ -1437,7 +1392,7 @@ if BeardLib then
 				"player_non_special_melee_multiplier_4",
 				"player_melee_damage_multiplier_4"
 			},
-			cost = 3200,
+			cost = 0,
 			icon_xy = {7, 0},
 			name_id = "menu_deckall_8",
 			desc_id = "menu_deckall_8_desc_sc"
@@ -1454,7 +1409,7 @@ if BeardLib then
 			{
 				name_id = "menu_deck_kmerc_1",
 				desc_id = "menu_deck_kmerc_1_desc_sc",
-				cost = 200,
+				cost = 0,
 				upgrades = {
 					"player_kmerc_reactive_absorption",
 					"player_kmerc_passive_health_multiplier_1"
@@ -1469,7 +1424,7 @@ if BeardLib then
 			{
 				name_id = "menu_deck_kmerc_3",
 				desc_id = "menu_deck_kmerc_3_desc_sc",
-				cost = 400,
+				cost = 0,
 				upgrades = {
 					"player_kmerc_reload_speed_bonus_per_max_armor",
 					"player_kmerc_swap_speed_bonus_per_max_armor",
@@ -1482,7 +1437,7 @@ if BeardLib then
 			{
 				name_id = "menu_deck_kmerc_5",
 				desc_id = "menu_deck_kmerc_5_desc_sc",
-				cost = 1000,
+				cost = 0,
 				upgrades = {
 					"player_kmerc_fatal_triggers_invuln",
 					"player_kmerc_passive_health_multiplier_2"
@@ -1497,7 +1452,7 @@ if BeardLib then
 			{
 				name_id = "menu_deck_kmerc_7",
 				desc_id = "menu_deck_kmerc_7_desc_sc",
-				cost = 2400,
+				cost = 0,
 				upgrades = {
 					"player_kmerc_armored_hot"
 				},
@@ -1511,7 +1466,7 @@ if BeardLib then
 			{
 				name_id = "menu_deck_kmerc_9",
 				desc_id = "menu_deck_kmerc_9_desc_sc",
-				cost = 4000,
+				cost = 0,
 				upgrades = {
 					"player_kmerc_bloody_armor"
 				},
@@ -1547,7 +1502,7 @@ if BeardLib then
 					"player_tachi_hot_amount_1",
 					"player_tachi_hot_duration_1"
 				},
-				cost = 200,
+				cost = 0,
 				icon_xy = {0, 0},
 				texture_bundle_folder = "liberator",
 				name_id = "menu_deck_liberator_1",
@@ -1559,7 +1514,7 @@ if BeardLib then
 					"player_tachi_hot_duration_2",
 					"player_tachi_hot_cancelled_damage_resistance_consolation"
 				},
-				cost = 400,
+				cost = 0,
 				icon_xy = {1,0},
 				texture_bundle_folder = "liberator",
 				name_id = "menu_deck_liberator_3",
@@ -1572,7 +1527,7 @@ if BeardLib then
 					"player_tachi_restore_stamina_2",
 					"player_passive_dodge_chance_1"
 				},
-				cost = 1000,
+				cost = 0,
 				icon_xy = {2, 0},
 				texture_bundle_folder = "liberator",
 				name_id = "menu_deck_liberator_5",
@@ -1585,7 +1540,7 @@ if BeardLib then
 					"player_passive_health_multiplier_2",
 					"player_tachi_hot_duration_3"
 				},
-				cost = 2400,
+				cost = 0,
 				icon_xy = {3, 0},
 				texture_bundle_folder = "liberator",
 				name_id = "menu_deck_liberator_7",
@@ -1596,7 +1551,7 @@ if BeardLib then
 				upgrades = {
 					"player_tachi_hot_amount_3"
 				},
-				cost = 4000,
+				cost = 0,
 				icon_xy = {0,1},
 				texture_bundle_folder = "liberator",
 				name_id = "menu_deck_liberator_9",
@@ -1767,48 +1722,6 @@ if twb.weapon_skins.mg42_cnuy_hina then --Version 0.5.0
 			end
 		end
 	end
-
-	twb.weapon_skins.shepheard_cnuy_yuuka.default_blueprint = {
-		"wpn_fps_smg_shepheard_b_standard",
-		"wpn_fps_smg_shepheard_bolt_standard",
-		"wpn_fps_smg_shepheard_s_standard",
-		"wpn_fps_smg_shepheard_dh_standard",
-		"wpn_fps_smg_shepheard_mag_standard",
-		"wpn_fps_smg_shepheard_g_standard",
-		"wpn_fps_smg_shepheard_o_standard",
-		"wpn_fps_smg_shepheard_body",
-		"wpn_fps_smg_shepheard_ns_standard",
-		"wpn_fps_smg_shepheard_cnuy_yuuka"
-	}
-	twb.weapon_skins.shepheard_cnuy_yuuka.parts["wpn_fps_smg_shepheard_body_long"] = deep_clone(twb.weapon_skins.shepheard_cnuy_yuuka.parts.wpn_fps_smg_shepheard_body_100kg)
-	for k, used_part_id in ipairs(twf.wpn_fps_ass_m4.uses_parts) do
-		if twf.parts[used_part_id] and twf.parts[used_part_id].type then
-			if twf.parts[used_part_id].type == "foregrip" then
-				twb.weapon_skins.shepheard_cnuy_yuuka.parts[used_part_id] = deep_clone(twb.weapon_skins.shepheard_cnuy_yuuka.parts.wpn_fps_smg_shepheard_body_100kg)
-			end
-		end
-	end
-	twb.weapon_skins.x_shepheard_cnuy_yuuka.default_blueprint = {
-		"wpn_fps_smg_shepheard_b_standard",
-		"wpn_fps_smg_shepheard_bolt_standard",
-		"wpn_fps_smg_shepheard_s_no_vanilla",
-		"wpn_fps_smg_shepheard_dh_standard",
-		"wpn_fps_smg_shepheard_mag_standard",
-		"wpn_fps_smg_shepheard_g_standard",
-		"wpn_fps_smg_shepheard_o_standard",
-		"wpn_fps_smg_shepheard_body",
-		"wpn_fps_smg_shepheard_ns_standard",
-		"wpn_fps_smg_shepheard_cnuy_yuuka"
-	}
-	twb.weapon_skins.x_shepheard_cnuy_yuuka.parts["wpn_fps_smg_shepheard_body_long"] = deep_clone(twb.weapon_skins.shepheard_cnuy_yuuka.parts.wpn_fps_smg_shepheard_body_100kg)
-	for k, used_part_id in ipairs(twf.wpn_fps_ass_m4.uses_parts) do
-		if twf.parts[used_part_id] and twf.parts[used_part_id].type then
-			if twf.parts[used_part_id].type == "foregrip" then
-				twb.weapon_skins.x_shepheard_cnuy_yuuka.parts[used_part_id] = deep_clone(twb.weapon_skins.x_shepheard_cnuy_yuuka.parts.wpn_fps_smg_shepheard_body_100kg)
-			end
-		end
-	end
-
 end
 
 if twb.weapon_skins.benelli_cnuy_hoshino then --Version 0.6.0

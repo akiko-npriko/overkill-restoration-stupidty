@@ -14,16 +14,6 @@ function FireTweakData:_init_dot_entries_fire(entries)
 		dot_tick_period = 0.5
 	}
 
-	--flaregunnnn akkio edit
-	fire_entries.ammo_flare_gun = {
-		dot_trigger_chance = 1.0,
-		dot_damage = 3,
-		dot_length = 4.2,
-		dot_trigger_max_distance = false,
-		dot_stun_max_distance = false,
-		use_weapon_damage_falloff_chance = false
-	}
-	
 	--Underbarrel KAC ChainsSAW Flamethrower
 	fire_entries.weapon_kacchainsaw_flamethrower = {
 		dot_trigger_chance = 0.5,

@@ -465,7 +465,7 @@ function CharacterTweakData:_init_fbi(presets)
 	
 	--Veteran Cop
 	self.fbi_vet = deep_clone(self.fbi)
-	self.fbi_vet.tags = {"law", "custom", "special", "vet"}
+	self.fbi_vet.tags = {"law", "custom", "special"}
 	self.fbi_vet.priority_shout = "g29"
 	self.fbi_vet.bot_priority_shout = "g29"
 	self.fbi_vet.priority_shout_max_dis = 3000
@@ -545,7 +545,6 @@ function CharacterTweakData:_init_fbi(presets)
 	self.meme_man.use_animation_on_fire_damage = false
 	self.meme_man.move_speed = presets.move_speed.lightning
 	self.meme_man.surrender = nil
-	self.meme_man.custom_voicework = "meme_man"
 	self.meme_man.is_special = true
 	self.meme_man.no_asu = true
 	self.meme_man.heal_cooldown = 22.5
@@ -940,7 +939,7 @@ function CharacterTweakData:_init_heavy_swat(presets)
 
 	--Titan Sniper
 	self.heavy_swat_sniper = deep_clone(self.heavy_swat)
-	self.heavy_swat_sniper.tags = {"law", "sniper", "special", "customvo", "sniper_titan"}
+	self.heavy_swat_sniper.tags = {"law", "sniper", "special", "customvo"}
 	self.heavy_swat_sniper.priority_shout = "f34"
 	self.heavy_swat_sniper.bot_priority_shout = "f34x_any"
 	self.heavy_swat_sniper.priority_shout_max_dis = 3000
@@ -1276,12 +1275,10 @@ function CharacterTweakData:_init_city_swat(presets)
 		self.city_swat_titan.custom_voicework = "tswat_ru"
 	elseif self:get_ai_group_type() == "zombie" then
 		self.city_swat_titan.custom_voicework = "skeleton"
-	elseif self:get_ai_group_type() == "murkywater" then
-		self.city_swat_titan.custom_voicework = "murky_tswat"
 	else
 		self.city_swat_titan.custom_voicework = "pdth"
 	end
-	if self:get_ai_group_type() == "murkywater" or self:get_ai_group_type() == "russia" or self:get_ai_group_type() == "federales" or self:get_ai_group_type() == "fbi" then
+	if self:get_ai_group_type() == "murkywater" or self:get_ai_group_type() == "russia" or self:get_ai_group_type() == "federales" then
 		self.city_swat_titan.yellow_blood = false
 	else
 		self.city_swat_titan.yellow_blood = true
@@ -2892,7 +2889,7 @@ function CharacterTweakData:_init_spooc(presets)
 	self.spooc_titan.ecm_hurts = {
 		ears = 1
 	}
-	self.spooc_titan.tags = {"law", "custom", "special", "spooc", "spooc_titan"}
+	self.spooc_titan.tags = {"law", "custom", "special", "spooc"}
 	self.spooc_titan.special_deaths = nil
 	self.spooc_titan.HEALTH_INIT = 90
 	self.spooc_titan.headshot_dmg_mul = 5.85	
@@ -3013,8 +3010,7 @@ function CharacterTweakData:_init_spooc(presets)
 
 			return false, t + delay_till_next_use
 		end
-	}
-	self.spooc_gangster.custom_voicework = nil
+	}	
 	table.insert(self._enemy_list, "spooc_gangster")
 end
 
@@ -3908,7 +3904,13 @@ function CharacterTweakData:_init_boom(presets)
 	self.boom.priority_shout_max_dis = 3000
 	self.boom.custom_shout = true
 	self.boom.deathguard = true
-	self.boom.chatter = presets.enemy_chatter.swat
+	self.boom.chatter = {
+		aggressive = true,
+		retreat = true,
+		go_go = true,
+		contact = true,
+		entrance = true
+	}
 	self.boom.announce_incomming = "incomming_gren"
 	self.boom.steal_loot = nil
 	if self:get_ai_group_type() == "federales" then
@@ -3923,8 +3925,8 @@ function CharacterTweakData:_init_boom(presets)
 	else
 		self.boom.custom_voicework = "grenadier"
 	end
-	self.boom.is_special = true
-	self.boom.no_asu = true
+	self.boom.is_special = true	
+	self.boom.no_asu = true	
 	self.boom.marshal_logic = true
 	self.boom.heal_cooldown = 7.5
 	table.insert(self._enemy_list, "boom")
@@ -3966,7 +3968,7 @@ function CharacterTweakData:_init_boom(presets)
 	self.boom_summers.custom_shout = false
 	self.boom_summers.follower = true
 	self.boom_summers.ecm_vulnerability = 0
-	self.boom_summers.ecm_hurts = {}
+	self.boom_summers.ecm_hurts = {}		
 	self.boom_summers.no_omnia_heal = true
 	self.boom_summers.can_be_healed = false
 	self.boom_summers.marshal_logic = nil
@@ -4267,22 +4269,6 @@ function CharacterTweakData:_init_zombie(presets)
 	self.zombie_light = deep_clone(self.swat)
 	table.insert(self._enemy_list, "zombie_light")	
 
-end
-
---RPG Grunts, Less HP, Less HS Multi, moves slower
---suffer
-function CharacterTweakData:_init_city_swat_rpg(presets)
-	self.city_swat_rpg = deep_clone(self.city_swat_titan)
-	self.city_swat_rpg.dodge = presets.dodge.poor
-	self.city_swat_rpg.move_speed = presets.move_speed.slow_plus
-	self.city_swat_rpg.yellow_blood = false
-	self.city_swat_rpg.HEALTH_INIT = 20
-	self.city_swat_rpg.headshot_dmg_mul = 1.9
-	self.city_swat_rpg.damage.bullet_damage_mul = 1
-	self.city_swat_rpg.damage.explosion_damage_mul = 1
-	self.city_swat_rpg.damage.tase_damage_mul = 1
-	self.city_swat_rpg.custom_voicework = "rpg_grunt"
-	table.insert(self._enemy_list, "city_swat_rpg")
 end
 
 function CharacterTweakData:_presets(tweak_data)

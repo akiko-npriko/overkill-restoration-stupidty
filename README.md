@@ -1,32 +1,9 @@
 # What's this?
-Turns out github is probably an easier place to modify files and send updates to a friend
-This is a part of a private and really broken (glitchy af) modpack
-High chance stuff added to this will not work unless u have exact mods that have been also modified with garbage code
 
-FanScot Notes:
 This is a couple of edits to Restoration Mod fitted for my liking.
 These range from minor weapon tweaks to new features such as mutators.
 
 # Changes:
-
-Femboi Changes:
-
-Hardcore Stuff
-- Cableties are now only avaliable in a skill (3 norm and 100 aced)
-- First Aid Kits now heal 300 health however are temp health (LFD2 ahh Painkillers)
-    - Use this ig: https://modworkshop.net/mod/31730
-- plan - add rpg, medicdozer, restore verison of minidozer to death wish
-- plan - add vanilla minidozer, warthog, to death sentence
-
-Stuff that is broken without mod:
-- plan - overkill ahh weapons (super overpowered weapon that are an equipment that disable ammobag use and uh is overpowered)
-
-Some Normalish Stuff:
-- Fixed A24 Max Ammo being 48 (this makes it stronger than like any other grenade launcher) - main it a lot before noticing intended max ammo
-
-- Fixed in my opinion broken: two perk decks being cheaper than main perk decks
-
-________________________________________________________________________________________________
 
 Vanilla units spawn across most factions. Don't like the look of them? Use a mod!
 
@@ -40,7 +17,7 @@ Big Dave has random weapons.
 
 Added descriptions for various weapons.
 
-Half assed custom weapon support for Third Eye Railgun, UTS-15, VxWolf's HK G11, Crime Boss: Rockay City Scudomnion, PD:TH AMCAR-4, IWI TAR-21, Travis Baker's Repeater, Hawk Type 97, K3 Light Machine Gun, Owen SMG, .300 Knockout, Crime Boss Handcannon, M3 Grease Gun, and Beretta Model 38A.
+Half assed custom weapon support for Third Eye Railgun, UTS-15, VxWolf's HK G11, Crime Boss: Rockay City Scudomnion, PD:TH AMCAR-4, IWI TAR-21, Travis Baker's Repeater, Hawk Type 97, K3 Light Machine Gun, Owen SMG, .300 Knockout, PP-91 KEDR, AF2011, Crime Boss Handcannon, M3 Grease Gun, and Beretta Model 38A.
 
 Package data for Russia and Murkywater properlly load.
 
@@ -49,6 +26,8 @@ Titan Cloakers spawn on mayhem and above.
 Zip .22 has a 1% chance to fail
 
 4 new mutators
+
+Widomaker TX is a primary and deals more headshot damage, but has less body shot damage and fires slower.
 
 Akan LPFs and Enforcers spawn on mexico heists
 
@@ -120,8 +99,6 @@ Heavy SWAT: Alliance (Unit: Classified)
 
 Heavy SWAT Murky: SAS (Counter Strike)
 
-Titan SWAT: Zulu Squad (Spec Ops: The Line)
-
 Spring: Robot Heavy (Team Fortress 2)
 
 Biker Bulldozer: Brute (Typical Colors 2)
@@ -153,10 +130,6 @@ Summers: Bill (Left 4 Dead Russian Dub)
 Sergeant Doc: Nick (Left 4 Dead 2 Russian Dub)
 
 Major Molly: Rochelle (Left 4 Dead 2 Russian Dub)
-
-RPG Grunt: Soldier (Team Fortess 2)
-
-Mememen: Vinesauce Joel (https://gamebanana.com/sounds/46534)
 
 # Credits
 

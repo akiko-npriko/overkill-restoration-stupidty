@@ -1,4 +1,3 @@
--- TODO: add toggles for Snipers instead of relying on unlimited trigger times, can get multiple stacked in one spot currently
 local bravo_guard_table = {
 	"units/pd2_mod_bravo/characters/ene_bravo_guard_1/ene_bravo_guard_1",
 	"units/pd2_mod_bravo/characters/ene_bravo_guard_2/ene_bravo_guard_2",
@@ -6,74 +5,74 @@ local bravo_guard_table = {
 	"units/pd2_mod_bravo/characters/ene_bravo_guard_2/ene_bravo_guard_2",
 	"units/pd2_mod_bravo/characters/ene_bravo_guard_1/ene_bravo_guard_1",
 	"units/pd2_mod_bravo/characters/ene_bravo_guard_2/ene_bravo_guard_2",
-	"units/pd2_mod_bravo/characters/ene_bravo_guard_3/ene_bravo_guard_3",
+	"units/pd2_mod_bravo/characters/ene_bravo_guard_3/ene_bravo_guard_3"
 }
+local bravo_sniper = "units/pd2_mod_bravo/characters/ene_bravo_dmr_scripted/ene_bravo_dmr_scripted"
+local swat_sniper = "units/pd2_mod_nypd/characters/ene_sniper_1/ene_sniper_1"
+local fbi_sniper = "units/payday2/characters/ene_sniper_2_sc/ene_sniper_2_sc"
+local gensec_sniper = "units/pd2_mod_nypd/characters/ene_sniper_3/ene_sniper_3"
+local zeal_sniper = "units/pd2_dlc_gitgud/characters/ene_zeal_sniper/ene_zeal_sniper"
+local bravo_snipers_swat = {swat_sniper, swat_sniper, swat_sniper, swat_sniper, bravo_sniper}
+local bravo_snipers_swat_and_fbi = {swat_sniper, fbi_sniper, swat_sniper, fbi_sniper, bravo_sniper}
+local bravo_snipers_fbi_and_gensec = {fbi_sniper, gensec_sniper, fbi_sniper, gensec_sniper, bravo_sniper}
+local bravo_snipers_gensec = {gensec_sniper, gensec_sniper, gensec_sniper, gensec_sniper, bravo_sniper}
+local bravo_snipers_zeal = {zeal_sniper, zeal_sniper, zeal_sniper, zeal_sniper, bravo_sniper}
+local difficulty = tweak_data:difficulty_to_index(Global.game_settings and Global.game_settings.difficulty or "normal")
+local sniper = (difficulty == 8 and bravo_snipers_zeal or difficulty == 7 and bravo_snipers_gensec or difficulty == 6 and bravo_snipers_fbi_and_gensec or difficulty == 5 and bravo_snipers_swat_and_fbi or difficulty == 4 and bravo_snipers_swat) 
 local sniper_trigger_times = {
 	values = {
-		trigger_times = 0,
-	},
+			enemy = sniper,
+            trigger_times = 0
+		}
 }
 local bravo_guards = {
 	values = {
-		enemy = bravo_guard_table,
-	},
-}
-local disable = {
-	values = {
-		enabled = false,
-	},
+         enemy = bravo_guard_table
+	}
 }
 return {
-	-- Call Bravos on startup
+	--Call Bravos on startup
 	[100017] = {
-		spawn_bravos = true,
+		spawn_bravos = true
 	},
-	-- "Destroy pipeline" PONR doesn't trigger difficulty spike or PONR music
-	-- Spawn Bravos patch above still triggers Bravo spawns
-	[103051] = {
-		values = {
-			bravos_forbidden = true,
-		},
+	--Trigger Hunt (Endless Assault)
+	[103743] = {
+		hunt = true
 	},
-	-- Trigger endless assault once "move locomotive" PONR starts
-	[103055] = {
-		hunt = true,
-		values = {
-			elements = { 100245, 100246, 100247, },
-		},
-	},
-	-- Disable vanilla's lousy workaround for PONR running out after entering the escape zone
-	-- Proper PONR anti-grief from PDTH is in Res
-	[103056] = disable,
-	-- Reinforce points
+	--Reinforce Spots
 	[102477] = {
 		reinforce = {
 			{
 				name = "traincar1",
 				force = 3,
-				position = Vector3(-6220, 5800, 450),
+				position = Vector3(-6220, 5800, 450)
 			},
 			{
 				name = "traincar2",
 				force = 3,
-				position = Vector3(-3220, 4790, 450),
+				position = Vector3(-3220, 4790, 450)
 			},
 			{
 				name = "traincar3",
 				force = 3,
-				position = Vector3(2090, 5770, 450),
-			},
-		},
+				position = Vector3(2090, 5770, 450)
+			}
+		}
 	},
-	-- Fixed Snipers being able to spawn only once
+	--Fixed snipers being able to spawn only once
+	--also adds bravo snipers replacing regulars on ovk+
 	[100368] = sniper_trigger_times,
 	[100369] = sniper_trigger_times,
 	[100370] = sniper_trigger_times,
 	[100371] = sniper_trigger_times,
 	[100372] = sniper_trigger_times,
-	-- Don't disable office doors if alarm is triggered
-	[104178] = disable,
-	-- Bravo guards
+	--Don't disable office doors if alarm is triggered
+	[104178] = {
+		values = {
+            enabled = false
+		}
+	},
+	--Bravo Guards
 	[100676] = bravo_guards,
 	[100678] = bravo_guards,
 	[100679] = bravo_guards,
@@ -159,5 +158,5 @@ return {
 	[103311] = bravo_guards,
 	[103317] = bravo_guards,
 	[103321] = bravo_guards,
-	[103327] = bravo_guards,
+	[103327] = bravo_guards
 }

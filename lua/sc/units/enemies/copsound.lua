@@ -3,6 +3,10 @@ function CopSound:init(unit)
 	local ids_func = Idstring
 	local american_cop_filtered_list = {
 		--US Blue SWATs
+		ids_func("units/payday2/characters/ene_swat_1_sc/ene_swat_1_sc"),
+		ids_func("units/payday2/characters/ene_swat_1_sc/ene_swat_1_sc_husk"),
+		ids_func("units/payday2/characters/ene_swat_2_sc/ene_swat_2_sc"),
+		ids_func("units/payday2/characters/ene_swat_2_sc/ene_swat_2_sc_husk"),
 		ids_func("units/payday2/characters/ene_swat_heavy_1_sc/ene_swat_heavy_1_sc"),
 		ids_func("units/payday2/characters/ene_swat_heavy_1_sc/ene_swat_heavy_1_sc_husk"),
 		ids_func("units/payday2/characters/ene_swat_heavy_r870_sc/ene_swat_heavy_r870_sc"),
@@ -10,6 +14,12 @@ function CopSound:init(unit)
 		ids_func("units/payday2/characters/ene_shield_2_sc/ene_shield_2_sc"),
 		ids_func("units/payday2/characters/ene_shield_2_sc/ene_shield_2_sc_husk"),
 		--US FBI SWAT
+		ids_func("units/payday2/characters/ene_fbi_swat_1_sc/ene_fbi_swat_1_sc"),
+		ids_func("units/payday2/characters/ene_fbi_swat_1_sc/ene_fbi_swat_1_sc_husk"),
+		ids_func("units/payday2/characters/ene_fbi_swat_2_sc/ene_fbi_swat_2_sc"),
+		ids_func("units/payday2/characters/ene_fbi_swat_2_sc/ene_fbi_swat_2_sc_husk"),
+		ids_func("units/payday2/characters/ene_fbi_swat_3/ene_fbi_swat_3"),
+		ids_func("units/payday2/characters/ene_fbi_swat_3/ene_fbi_swat_3_husk"),
 		ids_func("units/payday2/characters/ene_fbi_heavy_1_sc/ene_fbi_heavy_1_sc"),
 		ids_func("units/payday2/characters/ene_fbi_heavy_1_sc/ene_fbi_heavy_1_sc_husk"),	
 		ids_func("units/payday2/characters/ene_fbi_heavy_r870_sc/ene_fbi_heavy_r870_sc"),
@@ -18,9 +28,9 @@ function CopSound:init(unit)
 		ids_func("units/payday2/characters/ene_shield_1_sc/ene_shield_1_sc_husk"),	
 		--US GenSec
 		ids_func("units/payday2/characters/ene_city_swat_1_sc/ene_city_swat_1_sc"),
-		ids_func("units/payday2/characters/ene_city_swat_1_sc/ene_city_swat_1_sc_husk"),
+		ids_func("units/payday2/characters/ene_city_swat_1_sc/ene_city_swat_1_sc_husk"),	
 		ids_func("units/payday2/characters/ene_city_swat_2_sc/ene_city_swat_2_sc"),
-		ids_func("units/payday2/characters/ene_city_swat_2_sc/ene_city_swat_2_sc_husk"),
+		ids_func("units/payday2/characters/ene_city_swat_2_sc/ene_city_swat_2_sc_husk"),		
 		ids_func("units/payday2/characters/ene_city_swat_3_sc/ene_city_swat_3_sc"),
 		ids_func("units/payday2/characters/ene_city_swat_3_sc/ene_city_swat_3_sc_husk"),
 		ids_func("units/payday2/characters/ene_city_heavy_g36_sc/ene_city_heavy_g36_sc"),
@@ -29,18 +39,11 @@ function CopSound:init(unit)
 		ids_func("units/payday2/characters/ene_city_heavy_r870_sc/ene_city_heavy_r870_sc_husk"),	
 		ids_func("units/payday2/characters/ene_shield_gensec/ene_shield_gensec"),
 		ids_func("units/payday2/characters/ene_shield_gensec/ene_shield_gensec_husk"),
-		--LAPD FBI Elites
-		ids_func("units/pd2_mod_lapd/characters/ene_city_heavy_g36/ene_city_heavy_g36"),
-		ids_func("units/pd2_mod_lapd/characters/ene_city_heavy_g36/ene_city_heavy_g36_husk"),	
-		ids_func("units/pd2_mod_lapd/characters/ene_city_heavy_r870_sc/ene_city_heavy_r870_sc"),
-		ids_func("units/pd2_mod_lapd/characters/ene_city_heavy_r870_sc/ene_city_heavy_r870_sc_husk"),	
-		ids_func("units/pd2_mod_lapd/characters/ene_city_shield/ene_city_shield"),
-		ids_func("units/pd2_mod_lapd/characters/ene_city_shield/ene_city_shield_husk"),
 		--US Zeals
 		ids_func("units/pd2_dlc_gitgud/characters/ene_zeal_city_1/ene_zeal_city_1"),
-		ids_func("units/pd2_dlc_gitgud/characters/ene_zeal_city_1/ene_zeal_city_1_husk"),		
+		ids_func("units/pd2_dlc_gitgud/characters/ene_zeal_city_1/ene_zeal_city_1_husk"),
 		ids_func("units/pd2_dlc_gitgud/characters/ene_zeal_city_2/ene_zeal_city_2"),
-		ids_func("units/pd2_dlc_gitgud/characters/ene_zeal_city_2/ene_zeal_city_2_husk"),		
+		ids_func("units/pd2_dlc_gitgud/characters/ene_zeal_city_2/ene_zeal_city_2_husk"),	
 		ids_func("units/pd2_dlc_gitgud/characters/ene_zeal_city_3/ene_zeal_city_3"),
 		ids_func("units/pd2_dlc_gitgud/characters/ene_zeal_city_3/ene_zeal_city_3_husk"),	
 		ids_func("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_sc/ene_zeal_swat_heavy_sc"),
@@ -50,46 +53,15 @@ function CopSound:init(unit)
 		ids_func("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
 		ids_func("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc_husk"),		
 		--NYPD Blue SWATs
-		ids_func("units/pd2_mod_nypd/characters/ene_nypd_heavy_m4/ene_nypd_heavy_m4"),
-		ids_func("units/pd2_mod_nypd/characters/ene_nypd_heavy_m4/ene_nypd_heavy_m4_husk"),		
-		ids_func("units/pd2_mod_nypd/characters/ene_nypd_heavy_r870/ene_nypd_heavy_r870"),
-		ids_func("units/pd2_mod_nypd/characters/ene_nypd_heavy_r870/ene_nypd_heavy_r870_husk"),
-		ids_func("units/pd2_mod_nypd/characters/ene_nypd_shield/ene_nypd_shield"),
-		ids_func("units/pd2_mod_nypd/characters/ene_nypd_shield/ene_nypd_shield_husk"),
-		--NYPD FBI SWATs		
-		ids_func("units/pd2_mod_nypd/characters/ene_fbi_heavy_1/ene_fbi_heavy_1"),
-		ids_func("units/pd2_mod_nypd/characters/ene_fbi_heavy_1/ene_fbi_heavy_1_husk"),
-		ids_func("units/pd2_mod_nypd/characters/ene_fbi_heavy_r870_sc/ene_fbi_heavy_r870_sc"),
-		ids_func("units/pd2_mod_nypd/characters/ene_fbi_heavy_r870_sc/ene_fbi_heavy_r870_sc_husk"),	
-		ids_func("units/pd2_mod_nypd/characters/ene_shield_1/ene_shield_1"),
-		ids_func("units/pd2_mod_nypd/characters/ene_shield_1/ene_shield_1_husk"),	
-		--NYPD GenSec SWATs		
-		ids_func("units/pd2_mod_nypd/characters/ene_city_swat_1/ene_city_swat_1"),
-		ids_func("units/pd2_mod_nypd/characters/ene_city_swat_1/ene_city_swat_1_husk"),
-		ids_func("units/pd2_mod_nypd/characters/ene_city_swat_2/ene_city_swat_2"),
-		ids_func("units/pd2_mod_nypd/characters/ene_city_swat_2/ene_city_swat_2_husk"),
-		ids_func("units/pd2_mod_nypd/characters/ene_city_swat_3/ene_city_swat_3"),
-		ids_func("units/pd2_mod_nypd/characters/ene_city_swat_3/ene_city_swat_3_husk"),
-		ids_func("units/pd2_mod_nypd/characters/ene_city_heavy_g36/ene_city_heavy_g36"),
-		ids_func("units/pd2_mod_nypd/characters/ene_city_heavy_g36/ene_city_heavy_g36_husk"),
-		ids_func("units/pd2_mod_nypd/characters/ene_city_heavy_r870/ene_city_heavy_r870"),
-		ids_func("units/pd2_mod_nypd/characters/ene_city_heavy_r870/ene_city_heavy_r870_husk"),	
-		ids_func("units/pd2_mod_nypd/characters/ene_shield_gensec/ene_shield_gensec"),
-		ids_func("units/pd2_mod_nypd/characters/ene_shield_gensec/ene_shield_gensec_husk"),		
+		ids_func("units/pd2_mod_nypd/characters/ene_nypd_swat_1/ene_nypd_swat_1"),
+		ids_func("units/pd2_mod_nypd/characters/ene_nypd_swat_1/ene_nypd_swat_1_husk"),		
+		ids_func("units/pd2_mod_nypd/characters/ene_nypd_swat_2/ene_nypd_swat_2"),
+		ids_func("units/pd2_mod_nypd/characters/ene_nypd_swat_2/ene_nypd_swat_2_husk"),				
 		--LAPD Blue SWATs
-		ids_func("units/pd2_mod_lapd/characters/ene_swat_heavy_1/ene_swat_heavy_1"),
-		ids_func("units/pd2_mod_lapd/characters/ene_swat_heavy_1/ene_swat_heavy_1_husk"),		
-		ids_func("units/pd2_mod_lapd/characters/ene_swat_heavy_r870/ene_swat_heavy_r870"),
-		ids_func("units/pd2_mod_lapd/characters/ene_swat_heavy_r870/ene_swat_heavy_r870_husk"),
-		ids_func("units/pd2_mod_lapd/characters/ene_shield_2/ene_shield_2"),
-		ids_func("units/pd2_mod_lapd/characters/ene_shield_2/ene_shield_2_husk"),
-		--LAPD FBI SWATs		
-		ids_func("units/pd2_mod_lapd/characters/ene_fbi_heavy_1/ene_fbi_heavy_1"),
-		ids_func("units/pd2_mod_lapd/characters/ene_fbi_heavy_1/ene_fbi_heavy_1_husk"),
-		ids_func("units/pd2_mod_lapd/characters/ene_fbi_heavy_r870_sc/ene_fbi_heavy_r870_sc"),
-		ids_func("units/pd2_mod_lapd/characters/ene_fbi_heavy_r870_sc/ene_fbi_heavy_r870_sc_husk"),	
-		ids_func("units/pd2_mod_lapd/characters/ene_shield_1/ene_shield_1"),
-		ids_func("units/pd2_mod_lapd/characters/ene_shield_1/ene_shield_1_husk"),			
+		ids_func("units/pd2_mod_lapd/characters/ene_swat_1/ene_swat_1"),
+		ids_func("units/pd2_mod_lapd/characters/ene_swat_1/ene_swat_1_husk"),		
+		ids_func("units/pd2_mod_lapd/characters/ene_swat_2/ene_swat_2"),
+		ids_func("units/pd2_mod_lapd/characters/ene_swat_2/ene_swat_2_husk"),			
 		--Constantine GenSec SWATs
 		ids_func("units/pd2_mod_ttr/characters/ene_fbi_gensec_1/ene_fbi_gensec_1"),
 		ids_func("units/pd2_mod_ttr/characters/ene_fbi_gensec_1/ene_fbi_gensec_1_husk"),
@@ -107,6 +79,13 @@ function CopSound:init(unit)
 		ids_func("units/pd2_mod_ttr/characters/ene_marshal_gensec/ene_marshal_gensec_husk")			
 	}
 	local american_cop_list = {
+		--City Guards
+		ids_func("units/payday2/characters/ene_city_guard_1/ene_city_guard_1"),
+		ids_func("units/payday2/characters/ene_city_guard_1/ene_city_guard_1_husk"),
+		ids_func("units/payday2/characters/ene_city_guard_2/ene_city_guard_2"),
+		ids_func("units/payday2/characters/ene_city_guard_2/ene_city_guard_2_husk"),
+		ids_func("units/payday2/characters/ene_city_guard_3/ene_city_guard_3"),
+		ids_func("units/payday2/characters/ene_city_guard_3/ene_city_guard_3_husk"),
 		--Murky SWAT
 		ids_func("units/pd2_mod_sharks/characters/ene_swat_1/ene_swat_1"),
 		ids_func("units/pd2_mod_sharks/characters/ene_swat_1/ene_swat_1_husk"),		
@@ -128,11 +107,28 @@ function CopSound:init(unit)
 		ids_func("units/pd2_mod_sharks/characters/ene_zeal_city_3/ene_zeal_city_3_husk"),
 		ids_func("units/pd2_mod_sharks/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
 		ids_func("units/pd2_mod_sharks/characters/ene_zeal_swat_shield/ene_zeal_swat_shield_husk"),
+		--Murky NYPD Guards
+		ids_func("units/pd2_mod_nypd/characters/ene_nypd_murky_1/ene_nypd_murky_1"),
+		ids_func("units/pd2_mod_nypd/characters/ene_nypd_murky_1/ene_nypd_murky_1_husk"),
 		--OMNIA Crewmen
 		ids_func("units/pd2_mod_omnia/characters/ene_omnia_crewman/ene_omnia_crewman"),
 		ids_func("units/pd2_mod_omnia/characters/ene_omnia_crewman/ene_omnia_crewman_husk"),	
 		ids_func("units/pd2_mod_omnia/characters/ene_omnia_crewman_2/ene_omnia_crewman_2"),
-		ids_func("units/pd2_mod_omnia/characters/ene_omnia_crewman_2/ene_omnia_crewman_2_husk")	
+		ids_func("units/pd2_mod_omnia/characters/ene_omnia_crewman_2/ene_omnia_crewman_2_husk"),
+		--Chads have no voice filters
+		ids_func("units/payday2/characters/ene_swat_3/ene_swat_3"),
+		ids_func("units/payday2/characters/ene_swat_3/ene_swat_3_husk"),	
+		ids_func("units/pd2_mod_lapd/characters/ene_swat_3/ene_swat_3"),
+		ids_func("units/pd2_mod_lapd/characters/ene_swat_3/ene_swat_3_husk"),
+		--LAPD FBI SWAT, no voice filter
+		ids_func("units/pd2_mod_lapd/characters/ene_fbi_swat_1/ene_fbi_swat_1"),
+		ids_func("units/pd2_mod_lapd/characters/ene_fbi_swat_1/ene_fbi_swat_1_husk"),	
+		ids_func("units/pd2_mod_lapd/characters/ene_fbi_swat_2/ene_fbi_swat_2"),
+		ids_func("units/pd2_mod_lapd/characters/ene_fbi_swat_2/ene_fbi_swat_2_husk"),	
+		ids_func("units/pd2_mod_lapd/characters/ene_city_swat_1/ene_city_swat_1"),
+		ids_func("units/pd2_mod_lapd/characters/ene_city_swat_1/ene_city_swat_1_husk"),		
+		ids_func("units/pd2_mod_lapd/characters/ene_city_swat_2/ene_city_swat_2"),
+		ids_func("units/pd2_mod_lapd/characters/ene_city_swat_2/ene_city_swat_2_husk")		
 	}
 	local american_taser_list = {
 		ids_func("units/payday2/characters/ene_tazer_1_sc/ene_tazer_1_sc"),
@@ -509,23 +505,20 @@ function CopSound:init(unit)
 	else
 		self._prefix = (char_tweak.speech_prefix_p1 or "") .. (nr_variations and tostring(math.random(nr_variations)) or "") .. (char_tweak.speech_prefix_p2 or "") .. "_"
 	end
-	
-	local spawn_sounds = restoration.Options:GetValue("OTHER/EnemySpawnSounds")			
-	if spawn_sounds then
-		if not restoration.Voicelines:say(self._unit, "spawn") then
-			self._unit:sound():play(self._unit:base():char_tweak().spawn_sound_event, nil, nil)
-		end
-		
-		--Mostly just here in the event we have a unit to have both an 'entrance' line *and* a global spawn in noise
-		if self._unit:base():char_tweak().spawn_sound_event_2 then
-			self._unit:sound():play(self._unit:base():char_tweak().spawn_sound_event_2, nil, nil)
-		end	
-
-		--Use this only if an enemy has custom voice and is already using 2nd spawn sound
-		if self._unit:base():char_tweak().spawn_sound_event_3 then
-			self._unit:sound():play(self._unit:base():char_tweak().spawn_sound_event_3, nil, nil)
-		end	
+					
+ 	if not restoration.Voicelines:say(self._unit, "spawn") then
+		self._unit:sound():play(self._unit:base():char_tweak().spawn_sound_event, nil, nil)
 	end
+	
+	--Mostly just here in the event we have a unit to have both an 'entrance' line *and* a global spawn in noise
+	if self._unit:base():char_tweak().spawn_sound_event_2 then
+		self._unit:sound():play(self._unit:base():char_tweak().spawn_sound_event_2, nil, nil)
+	end	
+
+	--Use this only if an enemy has custom voice and is already using 2nd spawn sound
+	if self._unit:base():char_tweak().spawn_sound_event_3 then
+		self._unit:sound():play(self._unit:base():char_tweak().spawn_sound_event_3, nil, nil)
+	end	
 
 	unit:base():post_init()
 end

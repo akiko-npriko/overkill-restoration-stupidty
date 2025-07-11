@@ -1904,7 +1904,7 @@ function BlackMarketTweakData:_init_projectiles(tweak_data)
 	self.projectiles.wpn_prj_jav.max_amount = 6
 	self.projectiles.fir_com.max_amount = 3
 	self.projectiles.smoke_screen_grenade.base_cooldown = 35
-	self.projectiles.damage_control.base_cooldown = restoration.damage_control_cd
+	self.projectiles.damage_control.base_cooldown = 30
 	self.projectiles.tag_team.base_cooldown = 80
 	self.projectiles.concussion.max_amount = 3
 	self.projectiles.wpn_gre_electric.max_amount = 3
@@ -1913,7 +1913,6 @@ function BlackMarketTweakData:_init_projectiles(tweak_data)
 	self.projectiles.sticky_grenade.throw_shout = nil
 
 	if self.projectiles.xmas_snowball then
-		self.projectiles.xmas_snowball.expire_t = 0.9
 		self.projectiles.xmas_snowball.max_amount = 3
 		self.projectiles.xmas_snowball.base_cooldown_no_perk = true --flag to allow JOAT calcs
 		self.projectiles.xmas_snowball.base_cooldown = 25
@@ -4693,7 +4692,6 @@ function BlackMarketTweakData:_init_melee_weapons(tweak_data)
 	self.melee_weapons.weapon.stats.concealment = 30
 	--Remember the basics of CQC Snake--
 	self.melee_weapons.fists.info_id = "bm_melee_fists_info"
-	self.melee_weapons.fists.stats.weapon_type = "fists"
 	self.melee_weapons.fists.stats.cleave = 1
 	self.melee_weapons.fists.stats.raycasts = 8
 	self.melee_weapons.fists.stats.raycasts_charge = 20
@@ -4709,7 +4707,6 @@ function BlackMarketTweakData:_init_melee_weapons(tweak_data)
 	--[[     BLUNT     ]]
 		--Tough love, tooth shot--
 		self.melee_weapons.brass_knuckles.info_id = "bm_melee_brass_knuckles_info"
-		self.melee_weapons.brass_knuckles.stats.weapon_type = "brass"
 		self.melee_weapons.brass_knuckles.stats.cleave = 1
 		self.melee_weapons.brass_knuckles.stats.raycasts = 8
 		self.melee_weapons.brass_knuckles.stats.raycasts_charge = 20
@@ -4723,7 +4720,6 @@ function BlackMarketTweakData:_init_melee_weapons(tweak_data)
 		self.melee_weapons.brass_knuckles.stats.speed_mult = 0.98
 		--Thanks Boss--	
 		self.melee_weapons.fight.info_id = "bm_melee_fight_info"
-		self.melee_weapons.fight.stats.weapon_type = "fists"
 		self.melee_weapons.fight.stats.cleave = 2
 		self.melee_weapons.fight.stats.raycasts = 8
 		self.melee_weapons.fight.stats.raycasts_charge = 20
@@ -5933,10 +5929,10 @@ function BlackMarketTweakData:_init_melee_weapons(tweak_data)
 		self.melee_weapons.mining_pick.stats.cleave = 2
 		self.melee_weapons.mining_pick.stats.raycasts = 10
 		self.melee_weapons.mining_pick.stats.min_damage = 6
-		self.melee_weapons.mining_pick.stats.max_damage = 18.001
+		self.melee_weapons.mining_pick.stats.max_damage = 12.001
 		self.melee_weapons.mining_pick.stats.min_damage_effect = 3.0
 		self.melee_weapons.mining_pick.stats.max_damage_effect = 6.0
-		self.melee_weapons.mining_pick.stats.charge_time = 2
+		self.melee_weapons.mining_pick.stats.charge_time = 1.8
 		self.melee_weapons.mining_pick.stats.range = 200
 		self.melee_weapons.mining_pick.stats.concealment = 26
 		self.melee_weapons.mining_pick.headshot_damage_multiplier = 1.5
@@ -5946,7 +5942,7 @@ function BlackMarketTweakData:_init_melee_weapons(tweak_data)
 		self.melee_weapons.sandsteel.stats.cleave = 3
 		self.melee_weapons.sandsteel.stats.raycasts = 20
 		self.melee_weapons.sandsteel.stats.raycasts_h = 25
-		self.melee_weapons.sandsteel.stats.min_damage = 9
+		self.melee_weapons.sandsteel.stats.min_damage = 6
 		self.melee_weapons.sandsteel.stats.max_damage = 12.001
 		self.melee_weapons.sandsteel.stats.min_damage_effect = 1.5
 		self.melee_weapons.sandsteel.stats.max_damage_effect = 4.5

@@ -30,7 +30,7 @@ return {
 		ponr = ponr_value,
 		hunt = hunt_projob
 	},
-	--[[GenSec Scripted Spawns
+	--GenSec Scripted Spawns
 	--Drivers
 	[100279] = gensec,
 	[100281] = gensec,
@@ -74,7 +74,7 @@ return {
 	[100543] = gensec,
 	[100544] = gensec,
 	[100524] = gensec,
-	[100525] = gensec,--]]
+	[100525] = gensec,
 	--Van Bulldozers
 	[101747] = gensec_tank,
 	[101748] = gensec_tank,

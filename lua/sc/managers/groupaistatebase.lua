@@ -72,7 +72,6 @@ local sc_group_misc_data = GroupAIStateBase._init_misc_data
 function GroupAIStateBase:_init_misc_data()
 	sc_group_misc_data(self)
 	self._ponr_is_on = nil
-	self._alternate_ponr_behavior = table.contains(restoration.alternate_ponr_behavior, job)
 	self._decay_target = 1
 	self._min_detection_threshold = 1
 	self._old_guard_detection_mul = 1
@@ -109,7 +108,8 @@ function GroupAIStateBase:_init_misc_data()
 		spring = true,
 		headless_hatman = true,
 		summers = true,
-		autumn = true
+		autumn = true,
+		heavygunner = true
 	}
 	
 	local diff_index = tweak_data:difficulty_to_index(Global.game_settings.difficulty)
@@ -146,7 +146,6 @@ function GroupAIStateBase:on_simulation_started()
 	sc_group_base(self)
 	self._loud_diff_set = false --i really just dont want to take any chances
 	self._ponr_is_on = nil
-	self._alternate_ponr_behavior = table.contains(restoration.alternate_ponr_behavior, job)
 	self._min_detection_threshold = 1
 	self._old_guard_detection_mul = 1
 	self._guard_detection_mul = 1
@@ -182,7 +181,8 @@ function GroupAIStateBase:on_simulation_started()
 		spring = true,
 		headless_hatman = true,
 		summers = true,
-		autumn = true
+		autumn = true,
+		heavygunner = true
 	}
 	
 	local diff_index = tweak_data:difficulty_to_index(Global.game_settings.difficulty)
@@ -240,107 +240,13 @@ function GroupAIStateBase:chk_guard_delay_deduction()
 	else
 		return self._guard_delay_deduction * 1
 	end
-end
-
-local function get_mission_script_element(id)
-	for name, script in pairs_g(managers.mission:scripts()) do
-		if script:element(id) then
-			return script:element(id)
-		end
-	end
-end
-
-function GroupAIStateBase:get_active_ponr_element()
-	local id = self._point_of_no_return_id
-	return id and id ~= 0 and get_mission_script_element(id)
-end
-
-function GroupAIStateBase:should_spawn_bravos()
-	-- Ignore all other checks if mutators or mission scripting say Bravos should spawn
-	if restoration.always_bravos then
-		return true
-	end
-
-	-- Not if Bravos are forbidden
-	if self._bravos_forbidden then
-		return
-	end
-
-	-- Not outside of standard PONRs
-	if self._alternate_ponr_behavior or not self._ponr_is_on then
-		return
-	end
-
-	-- Not outside of Pro Jobs
-	if not Global.game_settings or not Global.game_settings.one_down then
-		return
-	end
-
-	-- Not if the difficulty threshold hasn't been reached yet
-	if self._bravos_difficulty_threshold and self._bravos_difficulty_threshold > self._difficulty_value then
-		return
-	end
-
-	-- Not if the timer hasn't expired and been cleared
-	if self._bravos_timer then
-		return
-	end
-
-	return true
-end
-
-function GroupAIStateBase:use_ponr_music()
-	-- Not during stealth
-	if self:whisper_mode() then
-		return
-	end
-
-	-- Not if Bravos are forbidden
-	if self._bravos_forbidden then
-		return
-	end
-
-	-- Not outside of standard PONRs
-	if self._alternate_ponr_behavior or not self._ponr_is_on then
-		return
-	end
-
-	-- Not outside of Pro Jobs
-	if not Global.game_settings or not Global.game_settings.one_down then
-		return
-	end
-
-	-- Not if PONR music is disabled
-	if not restoration.Options:GetValue("OTHER/PONRTrack") then
-		return
-	end
-
-	-- Not if music shuffle is enabled
-	if restoration.Options:GetValue("OTHER/MusicShuffle") then
-		return
-	end
-
-	return true
-end
-
-Hooks:PreHook(GroupAIStateBase, "remove_point_of_no_return_timer", "res_remove_point_of_no_return_timer", function(self, point_of_no_return_id)
-	if setup:has_queued_exec() or self._point_of_no_return_id ~= point_of_no_return_id then
-		return
-	end
-
-	local element = self:get_active_ponr_element()
-	if element and element:value("stop_bravos_on_end") then
-		self._bravos_forbidden = true
-		self._bravos_difficulty_threshold = nil
-		self._bravos_timer = nil
-	end
-end)
+end	
 
 function GroupAIStateBase:set_point_of_no_return_timer(time, point_of_no_return_id, point_of_no_return_tweak_id)
 	if time == nil or setup:has_queued_exec() then
 		return
 	end
-
+	
 	--No PONRs during stealth, unless the map really needs it
 	--[[
 	if not table.contains(restoration.stealth_ponr_behavior, job) then
@@ -352,7 +258,7 @@ function GroupAIStateBase:set_point_of_no_return_timer(time, point_of_no_return_
 
 	self._forbid_drop_in = true
 	self._ponr_is_on = true
-
+	
 	managers.network.matchmake:set_server_joinable(false)
 
 	if not self._peers_inside_point_of_no_return then
@@ -366,40 +272,10 @@ function GroupAIStateBase:set_point_of_no_return_timer(time, point_of_no_return_
 
 	managers.hud:show_point_of_no_return_timer(self._point_of_no_return_tweak_id)
 	managers.hud:add_updator("point_of_no_return", callback(self, self, "_update_point_of_no_return"))
-	if not self._alternate_ponr_behavior then
-		local element = self:get_active_ponr_element()
-		self._bravos_forbidden = element and element:value("bravos_forbidden") or nil
-		self._bravos_difficulty_threshold = element and element:value("bravos_difficulty_threshold") or nil
-		self._bravos_timer = element and element:value("bravos_timer") or nil
-
-		-- Difficulty to add to the current diff value
-		local difficulty_add = element and element:value("difficulty_add") or 0
-		difficulty_add = self:_mutate_diff_value(difficulty_add)
-		if difficulty_add > 0 then
-			self._loud_diff_set = true
-			self:set_difficulty(nil, difficulty_add)
-			restoration:log("PONR triggered difficulty increase of %s to %s", tostring(difficulty_add), tostring(self._difficulty_value))
-		end
-
-		-- Minimum difficulty value, must be processed after difficulty add
-		-- Both exist so loud-from-start and hybrid stealth players can have
-		-- Differing but appropriate immediate difficulty spikes
-		local min_difficulty = element and element:value("min_difficulty") or self._bravos_forbidden and 0 or 1
-		min_difficulty = self:_mutate_diff_value(min_difficulty)
-		local min_difficulty_add = min_difficulty - self._difficulty_value
-		if min_difficulty_add > 0 then
-			self._loud_diff_set = true
-			self:set_difficulty(nil, min_difficulty_add)
-			restoration:log("PONR triggered minimum difficulty increase to %s", tostring(self._difficulty_value))
-		end
+	--log("setting diff to 1!!")
+	if not table.contains(restoration.alternate_ponr_behavior, job) then 
+		self:set_difficulty(nil, 1)
 	end
-end
-
-function GroupAIStateBase:_mutate_diff_value(value)
-	value = value or self._difficulty_value
-	value = managers.mutators:modify_value("GroupAIStateBase:CheckingDiff", value)
-	value = managers.modifiers:modify_value("GroupAIStateBase:CheckingDiff", value)
-	return value
 end
 
 function GroupAIStateBase:_update_point_of_no_return(t, dt)
@@ -410,35 +286,36 @@ function GroupAIStateBase:_update_point_of_no_return(t, dt)
 		return
 	end
 
-	local function get_element_in_instance(instance_name, id)
-		restoration:log("Attempt to get element %u in instance %s", id, instance_name)
+	local function get_mission_script_element(id)
+		for name, script in pairs_g(managers.mission:scripts()) do
+			if script:element(id) then
+				return script:element(id)
+			end
+		end
+	end
 
+	local function get_element_in_instance(instance_name, id)
 		local instance_mgr = managers.world_instance
 		local instance_data = instance_mgr:get_instance_data_by_name(instance_name)
+
 		if not instance_data or not instance_data.start_index then
-			restoration:warn("Missing instance data for instance %s", instance_name)
 			return
 		end
 
 		local continent_data = managers.worlddefinition._continents[instance_data.continent]
 		if not continent_data or not continent_data.base_id then
-			restoration:warn("Missing continent data for instance %s", instance_name)
 			return
 		end
 
 		local new_id = continent_data.base_id + instance_mgr:_get_mod_id(id) + instance_mgr:start_offset_index() + instance_data.start_index
 		local area = get_mission_script_element(new_id)
-		if not area then
-			restoration:warn("Could not find PONR anti-grief area %u in instance %s", id, instance_name)
-			return
+		if area then
+			-- log("found area in instance", area:id(), instance_name)
+			if getmetatable(area) == ElementAreaTrigger then
+				-- log("found area is an area trigger")
+				return area
+			end
 		end
-
-		if getmetatable(area) ~= ElementAreaTrigger then
-			restoration:warn("PONR anti-grief area %u in instance %s is not an area trigger", id, instance_name)
-			return
-		end
-
-		return area
 	end
 
 	local prev_time = self._point_of_no_return_timer
@@ -452,24 +329,27 @@ function GroupAIStateBase:_update_point_of_no_return(t, dt)
 	if not self._point_of_no_return_areas then
 		self._point_of_no_return_areas = {}
 
-		local element = self:get_active_ponr_element()
-		if element then
-			local element_elements = element:value("elements")
-			if element_elements then
-				for i = 1, #element_elements do
-					local id = element_elements[i]
-					local area = id and get_mission_script_element(id)
-					if area then
-						self._point_of_no_return_areas[#self._point_of_no_return_areas + 1] = area
-					end
+		if not self._point_of_no_return_id or not get_mission_script_element(self._point_of_no_return_id) then
+			--Nothing
+		else
+			local element = get_mission_script_element(self._point_of_no_return_id)
+			local element_elements = element._values.elements
+
+			for i = 1, #element_elements do
+				local id = element_elements[i]
+				local area = id and get_mission_script_element(id)
+
+				if area then
+					self._point_of_no_return_areas[#self._point_of_no_return_areas + 1] = area
 				end
 			end
 
-			local element_elements_in_instances = element:value("elements_in_instances")
+			local element_elements_in_instances = element._values.elements_in_instances
 			if element_elements_in_instances then
 				for instance_name, data in pairs_g(element_elements_in_instances) do
-					for _, id in pairs_g(data) do
+					for _, id in pairs(data) do
 						local area_in_instance = get_element_in_instance(instance_name, id)
+
 						if area_in_instance then
 							self._point_of_no_return_areas[#self._point_of_no_return_areas + 1] = area_in_instance
 						end
@@ -483,19 +363,23 @@ function GroupAIStateBase:_update_point_of_no_return(t, dt)
 		end
 	end
 
-	local ponr_areas = self._point_of_no_return_areas
 	local is_inside = false
 	local plr_unit = managers.player:player_unit()
 
 	if plr_unit then
+		local ponr_areas = self._point_of_no_return_areas
+
 		for i = 1, #ponr_areas do
 			local area = ponr_areas[i]
+
 			if area:enabled() or area:value("was_enabled") then
 				-- _is_inside also checks shape elements tied to the area trigger if not inside the area trigger
 				-- Fall back on is_inside if the element doesn't have _is_inside for whatever reason
 				local is_inside_func = area._is_inside or area.is_inside
+
 				if is_inside_func and is_inside_func(area, plr_unit:movement():m_pos()) then
 					is_inside = true
+
 					break
 				end
 			end
@@ -543,10 +427,19 @@ function GroupAIStateBase:_update_point_of_no_return(t, dt)
 				end
 			end
 
-			for i = 1, #ponr_areas do
-				local area = ponr_areas[i]
-				if area then
-					area:execute_on_executed({})
+			if not self._point_of_no_return_id or not get_mission_script_element(self._point_of_no_return_id) then
+				--Nothing
+			else
+				local element = get_mission_script_element(self._point_of_no_return_id)
+				local element_elements = element._values.elements
+
+				for i = 1, #element_elements do
+					local id = element_elements[i]
+					local area = id and get_mission_script_element(id)
+
+					if area then
+						area:execute_on_executed(nil)
+					end
 				end
 			end
 		end
@@ -629,40 +522,37 @@ function GroupAIStateBase:_radio_chatter_clbk()
 	self._radio_clbk = callback(self, self, "_radio_chatter_clbk")
 
 	managers.enemy:add_delayed_clbk("_radio_chatter_clbk", self._radio_clbk, Application:time() + 30 + math.random(0, 20))
-end
+end	
 
--- If stealth - count all players not in custody
--- If loud - count all players without a status (tased, downed, etc)
--- Unless otherwise specified, team AI only count in loud
-function GroupAIStateBase:_get_balancing_multiplier(balance_multipliers, include_team_ai)
-	local whisper_mode = self:whisper_mode()
-	if include_team_ai == nil then
-		include_team_ai = not whisper_mode
-	end
-
+function GroupAIStateBase:_get_balancing_multiplier(balance_multipliers)
 	local nr_players = 0
-	local criminals = include_team_ai and self:all_criminals() or self:all_player_criminals()
-	for _, u_data in pairs(criminals) do
-		if whisper_mode or not u_data.status then
+	--If stealth - count only amount of players
+	if self:whisper_mode() then
+		nr_players = managers.network:session():amount_of_alive_players() 
+	else
+	--If loud - count players + bots
+	for u_key, u_data in pairs(self:all_criminals()) do
+		if not u_data.status then
 			nr_players = nr_players + 1
 		end
 	end
-
-	nr_players = math.clamp(nr_players, 1, 22)
-	-- log("SC: Balance set for player count of = " .. tostring(nr_players))
+		nr_players = math.clamp(nr_players, 1, 22)	
+	end
+	--log("SC: Balance set for player count of = " .. tostring(nr_players))
 	return balance_multipliers[nr_players]
 end
 
 function GroupAIStateBase:detonate_world_smoke_grenade(id, sync)
-	if restoration.no_smokes_or_flashes[job] then
-		self._smoke_grenades = nil
-		return
-	end
-
 	self._smoke_grenades = self._smoke_grenades or {}
 
 	if not self._smoke_grenades[id] then
-		restoration:warn("Could not detonate smoke/flash grenade %s as it was not queued!", tostring(id))
+		--Application:error("Could not detonate smoke grenade as it was not queued!", id)
+		return
+	end
+
+	if job == "haunted" then
+		self._smoke_grenades = nil --delete queue
+
 		return
 	end
 
@@ -761,10 +651,6 @@ function GroupAIStateBase:has_room_for_police_hostage()
 	return nr_hostages_allowed > self._police_hostage_headcount
 end
 
-function GroupAIStateBase:num_converted_police()
-	return self._converted_police and table.size(self._converted_police) or 0
-end
-
 function GroupAIStateBase:sync_hostage_headcount(nr_hostages)
 	if nr_hostages and self._hostage_headcount < nr_hostages then
 		managers.player:captured_hostage()
@@ -777,7 +663,7 @@ function GroupAIStateBase:sync_hostage_headcount(nr_hostages)
 	end
 
 	if managers.player:has_team_category_upgrade("damage", "hostage_absorption") then
-		local hostage_count = math.min(self._hostage_headcount + (self:num_converted_police() or managers.player:num_local_minions() or 0), tweak_data.upgrades.values.team.damage.hostage_absorption_limit)
+		local hostage_count = math.min(self._hostage_headcount + (self._num_converted_police or managers.player:num_local_minions() or 0), tweak_data.upgrades.values.team.damage.hostage_absorption_limit)
 		local absorption = managers.player:team_upgrade_value("damage", "hostage_absorption", 0) * hostage_count
 
 		managers.player:set_damage_absorption("hostage_absorption", absorption)
@@ -967,12 +853,6 @@ function GroupAIStateBase:update(t, dt)
 	self:_upd_criminal_suspicion_progress()
 	
 	local is_whisper_mode = managers.groupai:state():whisper_mode()
-	if not is_whisper_mode and self._bravos_timer then
-		self._bravos_timer = self._bravos_timer - dt
-		if self._bravos_timer <= 0 then
-			self._bravos_timer = nil
-		end
-	end
 	
 	local level_suspicion,alarm_threshold
 	if Network:is_server() then 
@@ -1728,54 +1608,55 @@ if Network:is_server() then
 end
 
 --this function has been repurposed. instead of overriding any previous value, this ADDS diff
---this is set to 0.1 on loud, while other events increase it
---+0.1 on civilian kill (watch your fire!), +0.3 on assault end
+--this is set to 0.5 on loud, while other events increase it
+--+0.05 on civilian kill (watch your fire!), +0.3 on assault end
 --script value is used by the base game, we usually ignore it after the beginning of a level
 --thanks (again) to hoxi for helping out with this
 --perhaps modify these values at one point in crime spree? who knows
-local set_difficulty_original = GroupAIStateBase.set_difficulty
 function GroupAIStateBase:set_difficulty(script_value, manual_value)
 	if managers.skirmish:is_skirmish() then
 		self:set_skirmish_difficulty()
 		return
 	end
 
-	--if diff is set to 0 in the middle of a mission, heists cannot start assaults. this ensures that we can set diff to default 0.1 again if a script sets it to 0
-	--i dont think any heists do this but there's no harm in having this check here
-	if script_value == 0 then
-		self._difficulty_value = 0
-		self._loud_diff_set = false
-		self:_calculate_difficulty_ratio()
-
-		return
-	end
-
-	if self._difficulty_value == 1 then
-		return
-	end
+    if self._difficulty_value == 1 then
+        return
+    end
 
 	if script_value then
-		if not self._loud_diff_set and script_value > 0 then
+		if script_value == 0 then
+			self._difficulty_value = 0
+			--if diff is set to 0 in the middle of a mission, heists cannot start assaults. this ensures that we can set diff to default 0.5 again if a script sets it to 0
+			--i dont think any heists do this but there's no harm in having this check here
+			self._loud_diff_set = false 
+            self:_calculate_difficulty_ratio()
+
+			return
+		elseif not self._loud_diff_set and script_value > 0  then
+			local starting_diff = 0.1
+			starting_diff = managers.modifiers:modify_value("GroupAIStateBase:CheckingDiff", starting_diff)
+			starting_diff = managers.mutators:modify_value("GroupAIStateBase:CheckingDiff", starting_diff)
 			--hopefully better way to do it. when game tries to set diff to anything that isnt 0, we add 0.1
 			--only do this once (or when value is set to false as said below). otherwise we'll set diff to 1 super fast and that's mean
-			--should fix armored transport and its jank mission scripts (ovk why)
+			--should fix armored transport and its jank mission scripts	(ovk why)
 			--also, add 0.1 here instead of setting so you cant bypass civ penalty on some heists
-			self._difficulty_value = self._difficulty_value + self:_mutate_diff_value(0.1)
+			self._difficulty_value = self._difficulty_value + starting_diff
 			self:_calculate_difficulty_ratio()
 			--please kill me
 			self._loud_diff_set = true
 
 			return
-		end
-	end
+        end
+    end
 
-	if not manual_value then
-		return
-	end
+    if not manual_value then
+        return
+    end
 
 	--note that this ADDS, not replaces. only way to replace is with a script_value of 0
-	self._difficulty_value = math.min(self._difficulty_value + manual_value, 1)
-	self:_calculate_difficulty_ratio()
+    self._difficulty_value = math.min(self._difficulty_value + manual_value, 1)
+
+    self:_calculate_difficulty_ratio()
 end
 
 --Skirmish's custom diff scaling.

@@ -35,54 +35,6 @@ Hooks:PostHook(PlayerManager, "init", "ResInit", function(self)
 		power = 0, --% slow when first started.
 		start_time = 0 --Time when slow was started.
 	}
-
-	if self:has_category_upgrade("player", "buildup_meter") then
-		local buildup_max_mod = (self:has_category_upgrade("player", "buildup_meter_rick") and self:upgrade_value("player", "buildup_meter_rick", 0).combo_max_mod) or 0
-		local buildup_max = self:upgrade_value("player", "buildup_meter", 0).combo_max + buildup_max_mod
-		self._buildup_meter_max = buildup_max
-		self._buildup_meter = 0
-		self._buildup_meter_t = 0
-	end
-	
-	if self:has_category_upgrade("smg", "automatic_kills_to_damage") then
-		self._merciless_t = 0
-		self._merciless_stacks = 0
-	end
-end)
-
-Hooks:PostHook(PlayerManager, "update", "ResPlayerManagerUpdate", function(self, t, dt)
-	if self:has_category_upgrade("player", "buildup_meter") and self._buildup_meter_t then
-		if self._buildup_meter_t > 0 then
-			self._buildup_meter_t = math.max(0, self._buildup_meter_t - dt)
-		else
-			local combo_t_mod = (self:has_category_upgrade("player", "buildup_meter_zack") and self:upgrade_value("player", "buildup_meter_zack", 0).combo_t_mod) or 0
-			local combo_t = self:upgrade_value("player", "buildup_meter", 0).combo_t + combo_t_mod
-			local combo_decay_mod = (self:has_category_upgrade("player", "buildup_meter_zack") and self:upgrade_value("player", "buildup_meter_zack", 0).combo_decay_mod) or 0
-			local combo_decay = self:upgrade_value("player", "buildup_meter", 0).combo_decay + combo_decay_mod
-			self._buildup_meter_t = combo_t
-			self._buildup_meter = math.max(0, (self._buildup_meter or 0) - combo_decay)
-			if managers.hud then
-				managers.hud:start_buff("sociopath", self._buildup_meter_t)
-				managers.hud:set_stacks("sociopath", self._buildup_meter)
-			end
-		end
-	end
-
-	if self:has_category_upgrade("smg", "automatic_kills_to_damage") and self._merciless_t then
-		if self._merciless_t > 0 then
-			self._merciless_t = math.max(0, self._merciless_t - dt)
-		else
-			local max = self:upgrade_value("smg", "automatic_kills_to_damage")[1]
-			local time = self:upgrade_value("smg", "automatic_kills_to_damage")[3]
-			self._merciless_t = time
-			self._merciless_stacks = math.max(0, (self._merciless_stacks or 0) - 1)
-			if managers.hud then
-				managers.hud:start_buff("body_expertise", self._merciless_t)
-				managers.hud:set_stacks("body_expertise", self._merciless_stacks)
-			end
-		end
-	end
-
 end)
 
 --Had to do this cause Bodybag base was being a bastard
@@ -128,43 +80,6 @@ function PlayerManager:body_armor_skill_addend(override_armor)
 	return addend
 end
 
-function PlayerManager:body_armor_regen_multiplier(moving, health_ratio)
-	local multiplier = 1
-	multiplier = multiplier * self:upgrade_value("player", "armor_regen_timer_multiplier_tier", 1)
-	multiplier = multiplier * self:upgrade_value("player", "armor_regen_timer_multiplier", 1)
-	multiplier = multiplier * self:upgrade_value("player", "armor_regen_timer_multiplier_passive", 1)
-	multiplier = multiplier * self:team_upgrade_value("armor", "regen_time_multiplier", 1)
-	multiplier = multiplier * self:team_upgrade_value("armor", "passive_regen_time_multiplier", 1)
-	multiplier = multiplier * self:upgrade_value("player", "perk_armor_regen_timer_multiplier", 1)
-
-	if not moving then
-		multiplier = multiplier * managers.player:upgrade_value("player", "armor_regen_timer_stand_still_multiplier", 1)
-	end
-
-	--New Socio armor regen bonus
-	if self._buildup_meter and self:has_category_upgrade("player", "buildup_meter_mark") then
-		local regen_stats = self:upgrade_value("player", "buildup_meter_mark", 0)
-		multiplier = multiplier * (1 - math.min(regen_stats.effect_max, math.floor(self._buildup_meter / regen_stats.combo_steps) * regen_stats.effect))
-	end
-
-	if health_ratio then
-		local damage_health_ratio = self:get_damage_health_ratio(health_ratio, "armor_regen")
-		multiplier = multiplier * (1 - managers.player:upgrade_value("player", "armor_regen_damage_health_ratio_multiplier", 0) * damage_health_ratio)
-	end
-
-	local mutator = nil
-
-	if managers.mutators:is_mutator_active(MutatorPiggyRevenge) then
-		mutator = managers.mutators:get_mutator(MutatorPiggyRevenge)
-	end
-
-	if mutator and mutator.armor_regen_timer_multiplier then
-		multiplier = multiplier * mutator:armor_regen_timer_multiplier()
-	end
-
-	return multiplier
-end
-
 function PlayerManager:movement_speed_multiplier(speed_state, bonus_multiplier, upgrade_level, health_ratio)
 	local multiplier = 1
 	local armor_penalty = self:mod_movement_penalty(self:body_armor_value("movement", upgrade_level, 1))
@@ -188,12 +103,6 @@ function PlayerManager:movement_speed_multiplier(speed_state, bonus_multiplier, 
 	--Kingpin movespeed bonus.
 	if self:has_activate_temporary_upgrade("temporary", "chico_injector") then
 		multiplier = multiplier + self:upgrade_value("player", "chico_injector_speed", 1) - 1
-	end
-
-	--New Socio movement speed bonus
-	if self._buildup_meter and self:has_category_upgrade("player", "buildup_meter_redline") then
-		local speed_stats = self:upgrade_value("player", "buildup_meter_redline", 0)
-		multiplier = multiplier * (1 + math.min(speed_stats.effect_max, math.floor(self._buildup_meter / speed_stats.combo_steps) * speed_stats.effect))
 	end
 
 	--Moving Target movespeed bonus
@@ -229,124 +138,6 @@ function PlayerManager:movement_speed_multiplier(speed_state, bonus_multiplier, 
 	multiplier = multiplier * self:_slow_debuff_mult()
 	
 	return multiplier
-end
-
-
-function PlayerManager:_check_resmod_sociopath(player_unit, killed_unit, variant, headshot, weapon_id)
-	if not player_unit then
-		return 0
-	end
-	local damage_ext = player_unit:character_damage()
-	local new_socio_panic = 0
-	local buildup_stats = self:upgrade_value("player", "buildup_meter", 0)
-	local buildup_meter_variant = (variant == "melee" and "melee") or ((variant == "bullet" or variant == "fire_bullet") and "bullet") or nil
-	local direct_variant = variant == "bullet" or variant == "fire_bullet"
-
-	local combo_t_mod = (self:has_category_upgrade("player", "buildup_meter_zack") and self:upgrade_value("player", "buildup_meter_zack", 0).combo_t_mod) or 0
-	local combo_t = self:upgrade_value("player", "buildup_meter", 0).combo_t + combo_t_mod
-
-	local has_swan = self:has_category_upgrade("player", "buildup_meter_swan") 
-
-	local has_aubrey = self:has_category_upgrade("player", "buildup_meter_aubrey")
-	--local aubrey_refresh = has_aubrey and (self._buildup_meter_aubrey_kills and self._buildup_meter_aubrey_kills >= self:upgrade_value("player", "buildup_meter_aubrey", 0).non_melee_kills - 1)
-	local can_refresh = self:has_category_upgrade("player", "buildup_meter_refresh")
-
-	local function enemy_unit_mult()
-		local ene_mult = nil
-		if killed_unit.base and killed_unit:base() and killed_unit:base().has_tag then
-			local check_order = deep_clone(self:upgrade_value("player", "buildup_meter", 0).combo_ene_mult)
-			for i, priority in pairs(check_order) do
-				for tag, v in pairs(priority) do
-					if killed_unit:base():has_tag(tag) then
-						ene_mult = self:upgrade_value("player", "buildup_meter", 0).combo_ene_mult[i][tag]
-						break
-					end
-				end
-				if ene_mult then
-					break
-				end
-			end
-			return ene_mult or 1
-		end
-		return 1
-	end
-
-	local buildup_add_mod = (self:has_category_upgrade("player", "buildup_meter_rick") and self:upgrade_value("player", "buildup_meter_rick", 0).combo_add_mod) or 0
-	if self:has_category_upgrade("player", "buildup_meter_quickening") then
-		local armor = tweak_data.player.damage.ARMOR_INIT + managers.player:body_armor_value("armor")
-		buildup_add_mod = buildup_add_mod + ( math.floor( armor / self:upgrade_value("player", "buildup_meter_quickening", 0).armor_steps ) * self:upgrade_value("player", "buildup_meter_quickening", 0).combo_add_mod )
-	end
-	local buildup_add = math.floor((self:upgrade_value("player", "buildup_meter", 0).combo_add + buildup_add_mod) * enemy_unit_mult())
-
-	local function check_refresh(refresh, aubrey, time)
-		if refresh then
-			if aubrey then
-				if self._buildup_meter == 0 then
-					self._buildup_meter_t = (self._buildup_meter > 0 and time) or self._buildup_meter_t
-					managers.hud:start_buff("sociopath", self._buildup_meter_t)
-				else
-					local combo_t_add = self:upgrade_value("player", "buildup_meter_aubrey", 0).combo_t_add
-					local add_t = math.min(combo_t - self._buildup_meter_t, combo_t_add)
-					self._buildup_meter_t = self._buildup_meter_t + add_t
-					managers.hud:change_cooldown("sociopath", add_t)
-				end
-				buildup_add = math.floor((self:upgrade_value("player", "buildup_meter_aubrey", 0).combo_add + buildup_add_mod) * enemy_unit_mult())
-				self._buildup_meter = math.clamp((self._buildup_meter or 0) + buildup_add, 0, self._buildup_meter_max)
-				managers.hud:set_stacks("sociopath", self._buildup_meter)
-			else	
-				if self._buildup_meter > 0 then
-					self._buildup_meter_t = time
-					managers.hud:start_buff("sociopath", self._buildup_meter_t)
-				end
-			end
-		end
-	end
-
-	if has_swan then
-		if buildup_meter_variant == "melee" or buildup_meter_variant == "bullet" then
-			if not self._buildup_meter_last_kill or self._buildup_meter_last_kill ~= buildup_meter_variant then
-				buildup_add = math.floor((self:upgrade_value("player", "buildup_meter_swan", 0).combo_add + buildup_add_mod) * enemy_unit_mult())
-				log(tostring( buildup_add ))
-				self._buildup_meter = math.clamp((self._buildup_meter or 0) + buildup_add, 0, self._buildup_meter_max)
-				self._buildup_meter_t = combo_t
-				managers.hud:start_buff("sociopath", self._buildup_meter_t)
-				managers.hud:set_stacks("sociopath", self._buildup_meter)
-			end
-			check_refresh(can_refresh, nil, combo_t)
-			self._buildup_meter_last_kill = buildup_meter_variant
-		end
-	else
-		if variant == "melee" then
-			self._buildup_meter = math.clamp((self._buildup_meter or 0) + buildup_add, 0, self._buildup_meter_max)
-			self._buildup_meter_t = (self._buildup_meter > 0 and combo_t) or 0
-			managers.hud:start_buff("sociopath", self._buildup_meter_t)
-			managers.hud:set_stacks("sociopath", self._buildup_meter)
-		else
-			if has_aubrey and not direct_variant then
-				can_refresh = nil
-			end
-			check_refresh(can_refresh, has_aubrey, combo_t)
-		end
-	end
-	if direct_variant or variant == "melee" then
-		if variant == "melee" then
-			player_unit:movement():add_stamina(player_unit:movement():_max_stamina() * self:upgrade_value("player", "melee_kill_stamina", 0))
-			if self:has_category_upgrade("player", "buildup_meter_hysteria") then
-				local healing_stats = self:upgrade_value("player", "buildup_meter_hysteria", 0)
-				damage_ext:restore_health(math.min(healing_stats.effect_max, math.floor(self._buildup_meter / healing_stats.combo_steps) * healing_stats.effect), true)
-			end
-		end
-		if self:has_category_upgrade("player", "buildup_meter_terrify") then
-			local panic_stats = self:upgrade_value("player", "buildup_meter_terrify", 0)
-			new_socio_panic = (math.min(panic_stats.effect_max, math.floor(self._buildup_meter / panic_stats.combo_steps) * panic_stats.effect )) * ((variant == "melee" and panic_stats.melee_mult) or 1)
-		end
-		if self:has_category_upgrade("player", "buildup_meter_elude") and not self:has_category_upgrade("player", "buildup_meter_mark") then
-			local dodge_stats = self:upgrade_value("player", "buildup_meter_elude", 0)
-			local dodge_on_kill = (damage_ext:get_dodge_points() * math.min(dodge_stats.effect_max, math.floor(self._buildup_meter / dodge_stats.combo_steps) * dodge_stats.effect)) * ((variant == "melee" and dodge_stats.melee_mult) or 1)
-			damage_ext:fill_dodge_meter(dodge_on_kill)
-		end
-	end
-	return new_socio_panic
 end
 
 function PlayerManager:on_killshot(killed_unit, variant, headshot, weapon_id)
@@ -514,27 +305,6 @@ function PlayerManager:on_killshot(killed_unit, variant, headshot, weapon_id)
 		end
 	end
 
-	local equipped_unit = self:get_current_state()._equipped_unit
-	local weap_base = alive(equipped_unit) and equipped_unit.base and equipped_unit:base()
-	if weap_base and variant == "bullet" then
-		--for _, category in ipairs(weap_base:categories()) do
-			if self:has_category_upgrade("smg", "automatic_kills_to_damage") and weap_base:fire_mode() == "auto" then
-				local max = self:upgrade_value("smg", "automatic_kills_to_damage")[1]
-				local time = self:upgrade_value("smg", "automatic_kills_to_damage")[3]
-				self._merciless_t = time
-				self._merciless_stacks = math.clamp((self._merciless_stacks or 0) + 1, 0, max)
-				managers.hud:start_buff("body_expertise", self._merciless_t)
-				managers.hud:set_stacks("body_expertise", self._merciless_stacks)
-			end
-		--end
-	end
-
-	--New Socio
-	local new_socio_panic = 0
-	if self:has_category_upgrade("player", "buildup_meter") and variant then
-		new_socio_panic = self:_check_resmod_sociopath(player_unit, killed_unit, variant, headshot, weapon_id) or 0
-	end
-
 	local killshot_cooldown_reduction = (variant and variant == "melee" and tweak_data.upgrades.on_killshot_cooldown_reduction_melee) or tweak_data.upgrades.on_killshot_cooldown_reduction or 0
 
 	local regen_armor_bonus = self:upgrade_value("player", "killshot_regen_armor_bonus", 0)
@@ -547,8 +317,7 @@ function PlayerManager:on_killshot(killed_unit, variant, headshot, weapon_id)
 			regen_armor_bonus = regen_armor_bonus + killshot_close_regen_armor_bonus
 		end
 		local socio_panic_available = self._on_killshot_t and t > (self._on_killshot_t - killshot_cooldown_reduction) and self:has_category_upgrade("player", "killshot_close_panic_chance")
-		local panic_chance = new_socio_panic
-			+ (socio_panic_available and (self:upgrade_value("player", "killshot_close_panic_chance", 0) * ((variant and variant == "melee" and 2) or 1)) or 0)
+		local panic_chance = (socio_panic_available and (self:upgrade_value("player", "killshot_close_panic_chance", 0) * ((variant and variant == "melee" and 2) or 1)) or 0)
 			+ self:upgrade_value("player", "killshot_extra_spooky_panic_chance", 0) --Add Haunt skill to panic chance.
 			+ self:upgrade_value("player", "killshot_spooky_panic_chance", 0) * self:player_unit():character_damage():get_missing_revives()
 		panic_chance = managers.modifiers:modify_value("PlayerManager:GetKillshotPanicChance", panic_chance)
@@ -565,11 +334,11 @@ function PlayerManager:on_killshot(killed_unit, variant, headshot, weapon_id)
 		end
 	end
 
-	--Crook (Formerly Sociopath) killshot cooldown and effects (THINGS NOT EXCLUSIVELY RELATED TO CROOK'S COOLDOWNS SHOULD NOT BE BELOW THIS)
+	--Sociopath killshot cooldown and effects (THINGS NOT EXCLUSIVELY RELATED TO SOCIOPATH'S COOLDOWNS SHOULD NOT BE BELOW THIS)
 	if self._on_killshot_t and t < self._on_killshot_t then
 		if self:has_category_upgrade("player", "killshot_regen_armor_bonus") then
 			self._on_killshot_t = self._on_killshot_t - killshot_cooldown_reduction
-			managers.hud:change_cooldown("crook", -killshot_cooldown_reduction)
+			managers.hud:change_cooldown("sociopath", -killshot_cooldown_reduction)
 		end
 		if self._on_killshot_t > t then
 			return
@@ -594,7 +363,7 @@ function PlayerManager:on_killshot(killed_unit, variant, headshot, weapon_id)
 	self._on_killshot_t = t + (tweak_data.upgrades.on_killshot_cooldown or 0)
 
 	if self:has_category_upgrade("player", "killshot_regen_armor_bonus") then
-		managers.hud:start_buff("crook", (tweak_data.upgrades.on_killshot_cooldown or 0))
+		managers.hud:start_buff("sociopath", (tweak_data.upgrades.on_killshot_cooldown or 0))
 	end
 
 	if _G.IS_VR then
@@ -604,7 +373,7 @@ function PlayerManager:on_killshot(killed_unit, variant, headshot, weapon_id)
 
 		player_unit:movement():add_stamina(stamina_regen)
 	end
-end
+end	
 
 function PlayerManager:_check_damage_to_hot(t, unit, damage_info)
 	local player_unit = self:player_unit()
@@ -779,13 +548,8 @@ function PlayerManager:damage_reduction_skill_multiplier(damage_type)
 	multiplier = multiplier * self:get_hostage_bonus_multiplier("damage_dampener") --Might be unused.
 	multiplier = multiplier * self._properties:get_property("revive_damage_reduction", 1)
 	multiplier = multiplier * self._temporary_properties:get_property("revived_damage_reduction", 1)
-	local driving = self:current_state() == "driving"
-	multiplier = multiplier * ((driving and 0.5) or 1) --less ouchies when in a vehicle
 	--Removed vanilla crew chief team DR.
-	if self._buildup_meter and self:has_category_upgrade("player", "buildup_meter_pacify") then
-		local dr_stats = self:upgrade_value("player", "buildup_meter_pacify", 0)
-		multiplier = multiplier * (1 - math.min(dr_stats.effect_max, math.floor(self._buildup_meter / dr_stats.combo_steps) * dr_stats.effect))
-	end
+
 	--OFFYERROCKER'S LIB PERK DECK
 	--[ [
 		if self:has_category_upgrade("player","tachi_hot_cancelled_damage_resistance_consolation") then 
@@ -934,9 +698,9 @@ function PlayerManager:check_skills()
 	end
 
 	if self:has_category_upgrade("temporary", "single_shot_fast_reload") then
-		self._message_system:register(Message.OnEnemyKilled, "activate_aggressive_reload", callback(self, self, "_on_activate_aggressive_reload_event"))
+		self._message_system:register(Message.OnLethalHeadShot, "activate_aggressive_reload", callback(self, self, "_on_activate_aggressive_reload_event"))
 	else
-		self._message_system:unregister(Message.OnEnemyKilled, "activate_aggressive_reload")
+		self._message_system:unregister(Message.OnLethalHeadShot, "activate_aggressive_reload")
 	end
 
 	if self:has_category_upgrade("player", "head_shot_ammo_return") then
@@ -1129,15 +893,7 @@ end
 --Get health damage reduction gained via skills.
 --Crashes mentioning this function mean that there is a syntax error in the file.
 function PlayerManager:get_deflection_from_skills()
-	local addend = 0
-
-	addend = addend + self:upgrade_value("player", "deflection_addend", 0)
-
-	if self:has_activate_temporary_upgrade("temporary", "doctor_bag_health_regen") then	
-		addend = addend + tweak_data.upgrade.values.temporary.doctor_bag_health_regen_deflection_addend
-	end
-
-	return addend
+	return self:upgrade_value("player", "deflection_addend", 0)
 end
 
 function PlayerManager:get_max_grenades(grenade_id)
@@ -1328,22 +1084,9 @@ end
 
 --Sneaky Bastard Aced healing stuff.
 function PlayerManager:_dodge_healing_no_armor()
-	local t = Application:time()
 	local damage_ext = self:player_unit():character_damage()
-
-	if self._dodge_heal_no_armor_t and self._dodge_heal_no_armor_t > t then
-		if not (damage_ext:get_real_armor() > 0) then
-			managers.hud:change_cooldown("sneaky_bastard", -tweak_data.upgrades.dodge_heal_no_armor_cooldown_rd)
-			self._dodge_heal_no_armor_t = self._dodge_heal_no_armor_t - tweak_data.upgrades.dodge_heal_no_armor_cooldown_rd
-		end
-		return
-	end
-
-	if not (damage_ext:get_real_armor() > 0) --[[and damage_ext:can_dodge_heal()]] then
-		damage_ext:restore_armor(damage_ext:get_dodge_points() * 10)
+	if not (damage_ext:get_real_armor() > 0) and damage_ext:can_dodge_heal() then
 		damage_ext:restore_health(self:upgrade_value("player", "dodge_heal_no_armor"), false)
-		self._dodge_heal_no_armor_t = t + (tweak_data.upgrades.dodge_heal_no_armor_cooldown or 0)
-		managers.hud:start_buff("sneaky_bastard", (tweak_data.upgrades.dodge_heal_no_armor_cooldown or 0))
 	end
 end
 
@@ -1358,20 +1101,6 @@ function PlayerManager:_trigger_sharpshooter(unit, attack_data)
 	end
 end
 
-function PlayerManager:_on_activate_aggressive_reload_event(equipped_unit, variant, killed_unit)
-	if CopDamage.is_civilian(killed_unit:base()._tweak_table) or variant ~= "bullet" then
-		return
-	end
-	if equipped_unit then
-		local weapon = equipped_unit:base()
-
-		if weapon and (weapon:fire_mode() == "single" or self:upgrade_value("temporary", "single_shot_fast_reload")[3] == true) and weapon:is_category("assault_rifle", "snp") then
-			self:activate_temporary_upgrade("temporary", "single_shot_fast_reload")
-		end
-	end
-end
-
---[[
 function PlayerManager:_on_activate_aggressive_reload_event(attack_data)
 	if attack_data and attack_data.variant ~= "projectile" then
 		local weapon_unit = self:equipped_weapon_unit()
@@ -1385,7 +1114,6 @@ function PlayerManager:_on_activate_aggressive_reload_event(attack_data)
 		end
 	end
 end
---]]
 
 --Adds doctor bag health regen.
 function PlayerManager:health_regen()
@@ -1402,7 +1130,7 @@ function PlayerManager:fixed_health_regen()
 	local health_regen = 0
 	health_regen = health_regen + self:get_hostage_bonus_addend("health_regen")
 	local groupai = managers.groupai and managers.groupai:state()
-	if self:has_category_upgrade("player", "hostage_health_regen_max_mult") and ((groupai and groupai:hostage_count() + (groupai:num_converted_police() or self:num_local_minions()) or self:num_local_minions() or 0) >= tweak_data:get_raw_value("upgrades", "hostage_max_num", "health_regen")) then
+	if self:has_category_upgrade("player", "hostage_health_regen_max_mult") and ((groupai and groupai:hostage_count() + (groupai._num_converted_police or self:num_local_minions()) or self:num_local_minions() or 0) >= tweak_data:get_raw_value("upgrades", "hostage_max_num", "health_regen")) then
 		health_regen = health_regen * self:upgrade_value("player", "hostage_health_regen_max_mult", 0)
 	end
 	health_regen = health_regen + self:upgrade_value("team", "crew_health_regen", 0)
@@ -1413,9 +1141,6 @@ end
 --Slows the player by a % that decays linearly over a duration, along with a visual.
 --Power should be between 1 and 0. Corresponds to % speed is slowed on start.
 function PlayerManager:apply_slow_debuff(duration, power, was_from_enemy, ignore_hud)
-	if power then
-		power = math.clamp(power, 0, 1)
-	end
 	if was_from_enemy and self:has_category_upgrade("player", "slowing_bullet_resistance") then
 		duration = duration * (self:upgrade_value("player", "slowing_bullet_resistance", 0).duration)
 		power = (1 + power) * (self:upgrade_value("player", "slowing_bullet_resistance", 0).power)
@@ -1586,7 +1311,7 @@ end
 function PlayerManager:get_hostage_bonus_multiplier(category)
 	local groupai = managers.groupai and managers.groupai:state()
 	local hostages = groupai and groupai:hostage_count() or 0
-	hostages = hostages + (groupai and groupai:num_converted_police() or self:num_local_minions() or 0)
+	hostages = hostages + (groupai and groupai._num_converted_police or self:num_local_minions() or 0)
 	local multiplier = 0
 	local hostage_max_num = tweak_data:get_raw_value("upgrades", "hostage_max_num", category)
 
@@ -1609,7 +1334,7 @@ end
 function PlayerManager:get_hostage_bonus_addend(category)
 	local groupai = managers.groupai and managers.groupai:state()
 	local hostages = groupai and groupai:hostage_count() or 0
-	hostages = hostages + (groupai and groupai:num_converted_police() or self:num_local_minions() or 0)
+	hostages = hostages + (groupai and groupai._num_converted_police or self:num_local_minions() or 0)
 	local addend = 0
 	local hostage_max_num = tweak_data:get_raw_value("upgrades", "hostage_max_num", category)
 
