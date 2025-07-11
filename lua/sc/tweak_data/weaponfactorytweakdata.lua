@@ -54342,4 +54342,28 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "resmod_npc_weaps", function(self
 	self.wpn_fps_ass_tecci_long_npc = deep_clone(self.wpn_fps_ass_tecci_long)
 	self.wpn_fps_ass_tecci_long_npc.unit = "units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci/wpn_fps_ass_tecci_npc"
 end)
+-- [[Akiko Edits]]
+Hooks:PostHook(WeaponFactoryTweakData, "init", "owoaikkioedits", function(self)
+	if self.wpn_fps_ass_temple_o_dummy then
+		self.parts.wpn_fps_ass_temple_o_dummy.supported = true
+		self.parts.wpn_fps_ass_temple_o_dummy.has_description = true
+		self.parts.wpn_fps_ass_temple_o_dummy.desc_id = "bm_wp_upg_o_4"
+		self.parts.wpn_fps_ass_temple_o_dummy.stats = { value = 0, zoom = 30 }
+		self.parts.wpn_fps_ass_temple_o_dummy.custom_stats = nil
+	end
+	if self.wpn_fps_upg_o_iuhPistolSniperScope then
+		self.parts.wpn_fps_upg_o_iuhPistolSniperScope.supported = true
+		self.parts.wpn_fps_upg_o_iuhPistolSniperScope.has_description = true
+		self.parts.wpn_fps_upg_o_iuhPistolSniperScope.desc_id = "bm_wp_upg_o_6"
+		self.parts.wpn_fps_upg_o_iuhPistolSniperScope.stats = { value = 0, zoom = 50 }
+		self.parts.wpn_fps_upg_o_iuhPistolSniperScope.custom_stats = nil
+	end
+	if self.wpn_fps_upg_o_iuhPSO1Scope then
+		self.parts.wpn_fps_upg_o_iuhPSO1Scope.supported = true
+		self.parts.wpn_fps_upg_o_iuhPSO1Scope.has_description = true
+		self.parts.wpn_fps_upg_o_iuhPSO1Scope.desc_id = "bm_wp_upg_o_6"
+		self.parts.wpn_fps_upg_o_iuhPSO1Scope.stats = { value = 0, zoom = 50 }
+		self.parts.wpn_fps_upg_o_iuhPSO1Scope.custom_stats = nil
+	end
+end)
 --]]
