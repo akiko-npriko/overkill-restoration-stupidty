@@ -548,6 +548,10 @@ function PlayerManager:damage_reduction_skill_multiplier(damage_type)
 	multiplier = multiplier * self:get_hostage_bonus_multiplier("damage_dampener") --Might be unused.
 	multiplier = multiplier * self._properties:get_property("revive_damage_reduction", 1)
 	multiplier = multiplier * self._temporary_properties:get_property("revived_damage_reduction", 1)
+	
+	local driving = self:current_state() == "driving"
+	multiplier = multiplier * ((driving and 0.5) or 1) --less ouchies when in a vehicle
+	
 	--Removed vanilla crew chief team DR.
 
 	--OFFYERROCKER'S LIB PERK DECK

@@ -2,6 +2,10 @@ if not tweak_data then
 	return 
 end
 
+tweak_data.pickups.medic_fak = {
+		unit = Idstring("units/pd2_dlc_old_hoxton/equipment/gen_equipment_first_aid_kit/gen_equipment_first_aid_kit")
+}
+
 tweak_data.accessibility_colors.screenflash.hit_flash.default = Color(255, 255, 250, 180) / 255
 tweak_data.hud.revive_colors_resmod = {
 	restoration.Options:GetValue("HUD/Colors/DownsZero"),

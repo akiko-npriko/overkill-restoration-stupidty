@@ -513,14 +513,17 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 		0.7,
 		0.6
 	}
-	self.values.player.body_armor.skill_ammo_mul = { --UNUSED, increments of 0.02
-		1,
-		1.02,
-		1.04,
-		1.06,
-		1.1,
-		1.12,
-		1.16
+	self.values.player.body_armor.skill_ammo_mul = { --repurposed to pick up mult
+		0.85,
+		0.925,
+		1.00,
+		1.05,
+		1.075,
+		1.125,
+		1.15
+	}
+	self.values.player.armor_pickup_mul = {
+		true
 	}
 	self.max_deflection = 0.60
 	self.values.player.body_armor.deflection = { --*increments of 0.05
@@ -528,9 +531,9 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 		0.05,
 		0.10,
 		0.15,
-		0.20, --1 increment instead of 2
-		0.15, --subtract 1 increment instead of adding 1
-		0.10 --subtract 1 increment instead of adding 2
+		0.20,
+		0.175,
+		0.125
 	}
 	self.values.player.body_armor.regen_delay = { --increments of 0.25
 		2.25,
@@ -3702,6 +3705,15 @@ function UpgradesTweakData:_player_definitions()
 	sc_definitions (self, tweak_data)
 
 	--New Definitions, calling em here to play it safe--
+	self.definitions.player_armor_pickup_mul = {
+		name_id = "menu_player_armor_pickup_mul",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "armor_pickup_mul",
+			category = "player"
+		}
+	}
 	self.definitions.player_detection_risk_stamina_regen = {
 		name_id = "menu_player_detection_risk_stamina_regen",
 		category = "feature",
