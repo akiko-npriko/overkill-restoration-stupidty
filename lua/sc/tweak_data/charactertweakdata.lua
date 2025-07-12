@@ -1355,6 +1355,8 @@ function CharacterTweakData:_init_city_swat(presets)
 	end
 	table.insert(self._enemy_list, "weekend_elite_guard")
 	
+	self:_init_city_swat_rpg(presets)
+	
 end
 
 function CharacterTweakData:_init_sniper(presets)	
@@ -2786,6 +2788,8 @@ function CharacterTweakData:_init_tank(presets)
 	self.tank_mini.grenade_toss_chance = 0.4
 	self.tank_mini.spawn_sound_event = self._prefix_data_p1.bulldozer() .. "_entrance_elite"
 	table.insert(self._enemy_list, "tank_mini")	
+	
+	self:_init_us_warthog(presets)
 end
 
 function CharacterTweakData:_init_tank_biker(presets)
@@ -4287,7 +4291,8 @@ function CharacterTweakData:_init_city_swat_rpg(presets)
 	table.insert(self._enemy_list, "city_swat_rpg")
 end
 
---suffer
+-- US Warthog, les health, higher damage multi, faster
+--suffer in hell
 function CharacterTweakData:_init_us_warthog(presets)
 	self.us_warthog = deep_clone(self.tank_black)
 	self.us_warthog.dodge = presets.dodge.poor

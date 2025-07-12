@@ -79,6 +79,7 @@ action_variants.taser_titan_reaper = clone(security_variant)
 action_variants.boom_titan = clone(security_variant)
 action_variants.city_swat_rpg = clone(security_variant)
 action_variants.us_warthog = clone(security_variant)
+action_variants.us_warthog.walk = TankCopActionWalk
 
 function CopMovement:post_init()
 	local unit = self._unit
