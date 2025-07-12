@@ -544,7 +544,8 @@ function MutatorEnemyReplacer:_get_unit_group_tank(difficulty_index)
 						Idstring("units/pd2_dlc_drm/characters/ene_bulldozer_minigun/ene_bulldozer_minigun"),
 						Idstring("units/pd2_dlc_vip/characters/ene_vip_2_assault/ene_vip_2_assault"),
 						Idstring("units/pd2_dlc_pda10/characters/ene_dozer_piggy/ene_dozer_piggy"),
-						Idstring("units/pd2_dlc_cg22/characters/ene_bulldozer_snowman/ene_bulldozer_snowman")
+						Idstring("units/pd2_dlc_cg22/characters/ene_bulldozer_snowman/ene_bulldozer_snowman"),
+						Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_warthog/ene_zeal_warthog")
 					},
 					russia = {
 						Idstring("units/pd2_dlc_mad/characters/ene_akan_fbi_tank_r870/ene_akan_fbi_tank_r870"),
@@ -615,7 +616,8 @@ function MutatorEnemyReplacer:_get_unit_group_tank(difficulty_index)
 						Idstring("units/pd2_dlc_drm/characters/ene_bulldozer_minigun/ene_bulldozer_minigun"),
 						Idstring("units/pd2_dlc_vip/characters/ene_vip_2_assault/ene_vip_2_assault"),
 						Idstring("units/pd2_dlc_pda10/characters/ene_dozer_piggy/ene_dozer_piggy"),
-						Idstring("units/pd2_dlc_cg22/characters/ene_bulldozer_snowman/ene_bulldozer_snowman")
+						Idstring("units/pd2_dlc_cg22/characters/ene_bulldozer_snowman/ene_bulldozer_snowman"),
+						Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_warthog/ene_zeal_warthog")
 					},
 					lapd = {
 						Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer/ene_zeal_bulldozer"),
@@ -631,7 +633,8 @@ function MutatorEnemyReplacer:_get_unit_group_tank(difficulty_index)
 						Idstring("units/pd2_dlc_drm/characters/ene_bulldozer_minigun/ene_bulldozer_minigun"),
 						Idstring("units/pd2_dlc_vip/characters/ene_vip_2_assault/ene_vip_2_assault"),
 						Idstring("units/pd2_dlc_pda10/characters/ene_dozer_piggy/ene_dozer_piggy"),
-						Idstring("units/pd2_dlc_cg22/characters/ene_bulldozer_snowman/ene_bulldozer_snowman")
+						Idstring("units/pd2_dlc_cg22/characters/ene_bulldozer_snowman/ene_bulldozer_snowman"),
+						Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_warthog/ene_zeal_warthog")
 					},
 					fbi = {
 						Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer/ene_zeal_bulldozer"),
@@ -647,7 +650,8 @@ function MutatorEnemyReplacer:_get_unit_group_tank(difficulty_index)
 						Idstring("units/pd2_dlc_drm/characters/ene_bulldozer_minigun/ene_bulldozer_minigun"),
 						Idstring("units/pd2_dlc_vip/characters/ene_vip_2_assault/ene_vip_2_assault"),
 						Idstring("units/pd2_dlc_pda10/characters/ene_dozer_piggy/ene_dozer_piggy"),
-						Idstring("units/pd2_dlc_cg22/characters/ene_bulldozer_snowman/ene_bulldozer_snowman")
+						Idstring("units/pd2_dlc_cg22/characters/ene_bulldozer_snowman/ene_bulldozer_snowman"),
+						Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_warthog/ene_zeal_warthog")
 					}
 				},
 				access = access_type_all

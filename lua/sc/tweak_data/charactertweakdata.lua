@@ -19425,7 +19425,8 @@ function CharacterTweakData:character_map()
 				"ene_zeal_fbi_mp5",
 				"ene_zeal_swat_heavy_sc",
 				"ene_zeal_swat_heavy_r870_sc",
-				"ene_zeal_swat_heavy_benelli"
+				"ene_zeal_swat_heavy_benelli",
+				"ene_zeal_warthog"
 			}
 		}
 	--drm

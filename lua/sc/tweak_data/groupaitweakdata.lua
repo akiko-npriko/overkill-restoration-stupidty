@@ -6986,8 +6986,9 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		self.unit_categories.BLACK_tank = {
 			unit_types = {
 				america = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3/ene_zeal_bulldozer_3"),
+					--Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3/ene_zeal_bulldozer_3"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3_sc/ene_zeal_bulldozer_3_sc")
+					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_warthog/ene_zeal_warthog")
 				},
 				russia = {
 					Idstring("units/pd2_dlc_mad/characters/ene_akan_fbi_tank_saiga/ene_akan_fbi_tank_saiga"),
@@ -7006,16 +7007,19 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 					Idstring("units/pd2_dlc_bex/characters/ene_bulldozer_2/ene_bulldozer_2")
 				},
 				nypd = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3/ene_zeal_bulldozer_3"),
+					--Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3/ene_zeal_bulldozer_3"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3_sc/ene_zeal_bulldozer_3_sc")
+					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_warthog/ene_zeal_warthog")
 				},
 				lapd = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3/ene_zeal_bulldozer_3"),
+					--Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3/ene_zeal_bulldozer_3"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3_sc/ene_zeal_bulldozer_3_sc")
+					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_warthog/ene_zeal_warthog")
 				},
 				fbi = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3/ene_zeal_bulldozer_3"),
+					--Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3/ene_zeal_bulldozer_3"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3_sc/ene_zeal_bulldozer_3_sc")
+					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_warthog/ene_zeal_warthog")
 				}			
 			},
 			access = access_type_all,
