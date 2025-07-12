@@ -531,6 +531,7 @@ function MutatorEnemyReplacer:_get_unit_group_tank(difficulty_index)
 				special_type = "tank",
 				unit_types = {
 					america = {
+						--[[]]
 						Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer/ene_zeal_bulldozer"),
 						Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_2/ene_zeal_bulldozer_2"),
 						Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3/ene_zeal_bulldozer_3"),

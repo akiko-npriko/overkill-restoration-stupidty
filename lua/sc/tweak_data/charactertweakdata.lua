@@ -4291,19 +4291,20 @@ function CharacterTweakData:_init_city_swat_rpg(presets)
 	table.insert(self._enemy_list, "city_swat_rpg")
 end
 
--- US Warthog, les health, higher damage multi, faster
+-- US Warthog, similar stats to Skull Dozer
 --suffer in hell
 function CharacterTweakData:_init_us_warthog(presets)
-	self.us_warthog = deep_clone(self.tank_black)
-	self.us_warthog.dodge = presets.dodge.poor
+	self.us_warthog = deep_clone(self.tank_skull)
+	--self.us_warthog.dodge = presets.dodge.poor
 	
-	self.us_warthog.damage.explosion_damage_mul = 4
-	self.us_warthog.damage.rocket_damage_mul = 5
-	self.us_warthog.detection = presets.detection.normal
-	self.us_warthog.HEALTH_INIT = 300
-	self.us_warthog.headshot_dmg_mul = 15
+	--self.us_warthog.damage.explosion_damage_mul = 4
+	--self.us_warthog.damage.rocket_damage_mul = 5
+	--self.us_warthog.detection = presets.detection.normal
+	self.us_warthog.HEALTH_INIT = 500
+	--self.us_warthog.headshot_dmg_mul = 15
 	
-	self.us_warthog.move_speed = presets.move_speed.normal
+	--self.us_warthog.move_speed = presets.move_speed.slow_plus
+	self.us_warthog.damage.hurt_severity = presets.hurt_severities.only_explosion_hurts_tankblack
 	self.us_warthog.aoe_damage_data = {
 		verification_delay = 0.3,
 		activation_range = 300,
