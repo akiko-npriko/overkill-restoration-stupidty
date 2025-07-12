@@ -33960,13 +33960,13 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 		--self.temple.desc_id = "bm_temple_sc_desc"
 		--self.temple.has_description = true
 		self.temple.CLIP_AMMO_MAX = 30
-		self.temple.AMMO_MAX = 60
+		self.temple.AMMO_MAX = 90
 		self.temple.fire_mode_data.fire_rate = 0.133333333
 		self.temple.BURST_FIRE = {
 			count = 3,
-			delay = 0.18,
+			delay = 0.3,
 			burst_default = true,
-			rof_mult = 5.5,
+			rof_mult = 4,
 			range_mult = 2,
 			recoil_mult = 0.3,
 			last_recoil_mult = 3.5
