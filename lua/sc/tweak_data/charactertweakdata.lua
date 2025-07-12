@@ -4287,6 +4287,35 @@ function CharacterTweakData:_init_city_swat_rpg(presets)
 	table.insert(self._enemy_list, "city_swat_rpg")
 end
 
+--suffer
+function CharacterTweakData:_init_us_warthog(presets)
+	self.us_warthog = deep_clone(self.tank_black)
+	self.us_warthog.dodge = presets.dodge.poor
+	
+	self.us_warthog.damage.explosion_damage_mul = 4
+	self.us_warthog.damage.rocket_damage_mul = 5
+	self.us_warthog.detection = presets.detection.normal
+	self.us_warthog.HEALTH_INIT = 300
+	self.us_warthog.headshot_dmg_mul = 15
+	
+	self.us_warthog.move_speed = presets.move_speed.normal
+	self.us_warthog.aoe_damage_data = {
+		verification_delay = 0.3,
+		activation_range = 300,
+		activation_delay = 1,
+		env_tweak_name = "triad_boss_aoe_fire",
+		play_voiceline = true,
+		check_player = true,
+		check_npc_slotmask = {
+			"criminals",
+			-2,
+			-3
+		}
+	}
+	
+	table.insert(self._enemy_list, "us_warthog")
+end
+
 function CharacterTweakData:_presets(tweak_data)
 	local presets = {}
 	presets.enemy_chatter = {
