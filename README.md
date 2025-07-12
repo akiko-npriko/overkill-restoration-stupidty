@@ -33,6 +33,12 @@ Some Normalish Stuff:
 
 - Support for VxWolf's HK G11, Railgun (Roach), and OTWD Flaregun
 
+- Zulu Squad voicelines replace ResMod OMNIA voicelines
+	- https://modworkshop.net/mod/49627
+
+- 33rd Infantry voicelines replace ResMod US National Guard voicelines
+	- https://modworkshop.net/mod/49440
+
   Credits rqq:
   - Dr Newbie stuff
 
