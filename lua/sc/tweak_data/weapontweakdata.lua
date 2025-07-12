@@ -33985,7 +33985,8 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 			{25, self.stat_info.kick_tables.moderate_right_kick},
 			{28, self.stat_info.kick_tables.moderate_kick}
 		}
-		self.temple.reload_speed_multiplier = 99999999999999
+		--self.temple.reload_speed_multiplier = 99999999999999
+		self.temple.timers = deep_clone(self.x_mac10.timers)
 		self.temple.supported = true
 		self.temple.ads_speed = 0.250
 		self.temple.damage_falloff = {
