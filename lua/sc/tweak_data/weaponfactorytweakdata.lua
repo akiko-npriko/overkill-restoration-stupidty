@@ -25534,6 +25534,29 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 			end
 
 		--WEAPONS
+		
+	-- [[Akiko Edits]]
+	if self.parts.wpn_fps_ass_temple_o_dummy then
+		self.parts.wpn_fps_ass_temple_o_dummy.supported = true
+		self.parts.wpn_fps_ass_temple_o_dummy.has_description = true
+		self.parts.wpn_fps_ass_temple_o_dummy.desc_id = "bm_wp_upg_o_4"
+		self.parts.wpn_fps_ass_temple_o_dummy.stats = { value = 0, zoom = 30 }
+		self.parts.wpn_fps_ass_temple_o_dummy.custom_stats = nil
+	end
+	if self.parts.wpn_fps_upg_o_iuhPistolSniperScope then
+		self.parts.wpn_fps_upg_o_iuhPistolSniperScope.supported = true
+		self.parts.wpn_fps_upg_o_iuhPistolSniperScope.has_description = true
+		self.parts.wpn_fps_upg_o_iuhPistolSniperScope.desc_id = "bm_wp_upg_o_6"
+		self.parts.wpn_fps_upg_o_iuhPistolSniperScope.stats = { value = 0, zoom = 50 }
+		self.parts.wpn_fps_upg_o_iuhPistolSniperScope.custom_stats = nil
+	end
+	if self.parts.wpn_fps_upg_o_iuhPSO1Scope then
+		self.parts.wpn_fps_upg_o_iuhPSO1Scope.supported = true
+		self.parts.wpn_fps_upg_o_iuhPSO1Scope.has_description = true
+		self.parts.wpn_fps_upg_o_iuhPSO1Scope.desc_id = "bm_wp_upg_o_6"
+		self.parts.wpn_fps_upg_o_iuhPSO1Scope.stats = { value = 0, zoom = 50 }
+		self.parts.wpn_fps_upg_o_iuhPSO1Scope.custom_stats = nil
+	end
 
 			if self.parts.wpn_fps_upg_px4_grip_backstrap_rubber then --Px4 Storm
 				self.parts.wpn_fps_upg_px4_barrel_sd.supported = true
