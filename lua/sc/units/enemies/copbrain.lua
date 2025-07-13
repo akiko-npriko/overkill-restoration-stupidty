@@ -254,6 +254,7 @@ logic_variants.taser_titan = clone(security_variant)
 logic_variants.autumn = clone(security_variant)	
 logic_variants.boom_titan = clone(security_variant)
 logic_variants.city_swat_rpg = clone(security_variant)
+logic_variants.xof_rpg = clone(security_variant)
 logic_variants.us_warthog = clone(security_variant)
 logic_variants.us_warthog.attack = TankCopLogicAttack
 

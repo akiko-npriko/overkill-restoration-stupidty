@@ -4289,6 +4289,18 @@ function CharacterTweakData:_init_city_swat_rpg(presets)
 	self.city_swat_rpg.damage.tase_damage_mul = 1
 	self.city_swat_rpg.custom_voicework = "rpg_grunt"
 	table.insert(self._enemy_list, "city_swat_rpg")
+	
+	self.xof_rpg = deep_clone(self.city_swat_titan)
+	self.xof_rpg.dodge = presets.dodge.athletic
+	self.xof_rpg.move_speed = presets.move_speed.normal
+	self.xof_rpg.yellow_blood = false
+	self.xof_rpg.HEALTH_INIT = 25
+	self.xof_rpg.headshot_dmg_mul = 1.9
+	self.xof_rpg.damage.bullet_damage_mul = 1
+	self.xof_rpg.damage.explosion_damage_mul = 1
+	self.xof_rpg.damage.tase_damage_mul = 1
+	--self.xof_rpg.custom_voicework = "rpg_grunt"
+	table.insert(self._enemy_list, "xof_rpg")
 end
 
 -- US Warthog, similar stats to Skull Dozer
@@ -19466,7 +19478,8 @@ function CharacterTweakData:character_map()
 				"ene_zeal_swat_heavy_sc",
 				"ene_zeal_swat_heavy_r870_sc",
 				"ene_zeal_swat_heavy_benelli",
-				"ene_zeal_warthog"
+				"ene_zeal_warthog",
+				'ene_xof_rpg'
 			}
 		}
 	--drm
