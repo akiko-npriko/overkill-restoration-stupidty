@@ -11,6 +11,14 @@ Note: this is an older verison (gold edition kinda) of FanScot stuff
 
 # Femboi Changes:
 
+UPDATE 1??
+- La BullDozer Bussy
+	- Minigun Dozer, Warthog Dozers, Elite Dozers, and Medic Dozers can now spawn
+		- Marshal Varients for each at Death Sentence
+		- Minigun Dozers appear at Death Wish and above
+		- Elite Dozers and Warthog appear at Mayhem and above
+		- Medic Dozers appear at Overkill and above
+
 Hardcore Stuff
 - Cableties are now only avaliable in a skill (3 norm and 100 aced)
 - First Aid Kits now heal 300 health however are temp health (LFD2 ahh Painkillers) -nvm it not 300 it back to 150 with medkit being nerfed back to gold

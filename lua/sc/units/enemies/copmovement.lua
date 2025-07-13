@@ -81,6 +81,9 @@ action_variants.city_swat_rpg = clone(security_variant)
 action_variants.us_warthog = clone(security_variant)
 action_variants.us_warthog.walk = TankCopActionWalk
 
+action_variants.norm_warthog = clone(security_variant)
+action_variants.norm_warthog.walk = TankCopActionWalk
+
 function CopMovement:post_init()
 	local unit = self._unit
 	self._ext_brain = unit:brain()

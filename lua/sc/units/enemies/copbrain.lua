@@ -257,6 +257,9 @@ logic_variants.city_swat_rpg = clone(security_variant)
 logic_variants.us_warthog = clone(security_variant)
 logic_variants.us_warthog.attack = TankCopLogicAttack
 
+logic_variants.norm_warthog = clone(security_variant)
+logic_variants.norm_warthog.attack = TankCopLogicAttack
+
 logic_variants.heavy_swat_sniper = clone(security_variant)
 logic_variants.heavy_swat_sniper.attack = MarshalLogicAttack
 logic_variants.heavy_swat_sniper_scripted = clone(security_variant)

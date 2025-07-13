@@ -6986,9 +6986,8 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		self.unit_categories.BLACK_tank = {
 			unit_types = {
 				america = {
-					--Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3/ene_zeal_bulldozer_3"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3_sc/ene_zeal_bulldozer_3_sc"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_warthog/ene_zeal_warthog")
+					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3/ene_zeal_bulldozer_3"),
+					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3_sc/ene_zeal_bulldozer_3_sc")
 				},
 				russia = {
 					Idstring("units/pd2_dlc_mad/characters/ene_akan_fbi_tank_saiga/ene_akan_fbi_tank_saiga"),
@@ -7007,19 +7006,16 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 					Idstring("units/pd2_dlc_bex/characters/ene_bulldozer_2/ene_bulldozer_2")
 				},
 				nypd = {
-					--Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3/ene_zeal_bulldozer_3"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3_sc/ene_zeal_bulldozer_3_sc"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_warthog/ene_zeal_warthog")
+					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3/ene_zeal_bulldozer_3"),
+					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3_sc/ene_zeal_bulldozer_3_sc")
 				},
 				lapd = {
-					--Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3/ene_zeal_bulldozer_3"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3_sc/ene_zeal_bulldozer_3_sc"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_warthog/ene_zeal_warthog")
+					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3/ene_zeal_bulldozer_3"),
+					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3_sc/ene_zeal_bulldozer_3_sc")
 				},
 				fbi = {
-					--Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3/ene_zeal_bulldozer_3"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3_sc/ene_zeal_bulldozer_3_sc"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_warthog/ene_zeal_warthog")
+					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3/ene_zeal_bulldozer_3"),
+					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3_sc/ene_zeal_bulldozer_3_sc")
 				}			
 			},
 			access = access_type_all,
@@ -15355,6 +15351,103 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		access = access_type_all,
 		ignore_spawn_cap = true
 	}
+	
+--AKIKKO EDITS (ADDON LMAOO)
+	
+	--BullDozer Addition
+	
+	local unit_types_green_dozer = self.unit_categories.FBI_tank.unit_types
+	local unit_types_black_dozer = self.unit_categories.BLACK_tank.unit_types
+	local unit_types_skull_dozer = self.unit_categories.SKULL_tank.unit_types
+	
+	local marshal_warthogg = Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_warthog/ene_zeal_warthog")
+	local warthogg = Idstring("units/pd2_dlc_pda10/characters/ene_norm_warthog/ene_norm_warthog")
+	
+	local marshall_medicdozer = Idstring("units/pd2_dlc_drm/characters/ene_bulldozer_medic_sc/ene_bulldozer_medic_sc")
+	local medicdozer = Idstring("units/pd2_dlc_drm/characters/ene_bulldozer_medic_classic/ene_bulldozer_medic_classic")
+	
+	local marshall_minigundozer = Idstring("units/pd2_dlc_drm/characters/ene_bulldozer_minigun/ene_bulldozer_minigun")
+	local minigun_dozer = Idstring("units/pd2_dlc_drm/characters/ene_bulldozer_minigun_classic/ene_bulldozer_minigun_classic")
+	
+	local bravo_elite_dozer = Idstring("units/pd2_dlc_gitgud/characters/ene_bulldozer_minigun/ene_bulldozer_minigun")
+	local ellite_dozer = Idstring("units/pd2_mod_bravo/characters/ene_bravo_bulldozer/ene_bravo_bulldozer")
+	
+	if difficulty_index == 5 then
+		--Medicbulldozer (Addon Green Dozer) Overkill (America, Nypd, Lapd, Fbi)
+		table.insert(unit_types_green_dozer.america, medicdozer)
+		table.insert(unit_types_green_dozer.nypd, medicdozer)
+		table.insert(unit_types_green_dozer.lapd, medicdozer)
+		table.insert(unit_types_green_dozer.fbi, medicdozer)
+		
+	elseif difficulty_index == 6 then
+		--Medicbulldozer (Addon Green Dozer) Mayhem (America, Nypd, Lapd, Fbi)
+		table.insert(unit_types_green_dozer.america, medicdozer)
+		table.insert(unit_types_green_dozer.nypd, medicdozer)
+		table.insert(unit_types_green_dozer.lapd, medicdozer)
+		table.insert(unit_types_green_dozer.fbi, medicdozer)
+		
+		--Warthog (Addon Black Dozer) Mayhem (America, Nypd, Lapd, Fbi)
+		table.insert(unit_types_black_dozer.america, warthogg)
+		table.insert(unit_types_black_dozer.nypd, warthogg)
+		table.insert(unit_types_black_dozer.lapd, warthogg)
+		table.insert(unit_types_black_dozer.fbi, warthogg)
+		
+		--Elite Bulldozers (Addon Skull Dozer) Mayhem (America, Nypd, Lapd, Fbi)
+		table.insert(unit_types_skull_dozer.america, ellite_dozer)
+		table.insert(unit_types_skull_dozer.nypd, ellite_dozer)
+		table.insert(unit_types_skull_dozer.lapd, ellite_dozer)
+		table.insert(unit_types_skull_dozer.fbi, ellite_dozer)
+		
+	elseif difficulty_index == 7 then
+		--Medicbulldozer (Addon Green Dozer) Death Wish (America, Nypd, Lapd, Fbi)
+		table.insert(unit_types_green_dozer.america, medicdozer)
+		table.insert(unit_types_green_dozer.nypd, medicdozer)
+		table.insert(unit_types_green_dozer.lapd, medicdozer)
+		table.insert(unit_types_green_dozer.fbi, medicdozer)
+		
+		--Warthog (Addon Black Dozer) Death Wish (America, Nypd, Lapd, Fbi)
+		table.insert(unit_types_black_dozer.america, warthogg)
+		table.insert(unit_types_black_dozer.nypd, warthogg)
+		table.insert(unit_types_black_dozer.lapd, warthogg)
+		table.insert(unit_types_black_dozer.fbi, warthogg)
+		
+		--Minigogdozer (Addon Skull Dozer) Death Wish (America, Nypd, Lapd, Fbi)
+		table.insert(unit_types_skull_dozer.america, minigun_dozer)
+		table.insert(unit_types_skull_dozer.nypd, minigun_dozer)
+		table.insert(unit_types_skull_dozer.lapd, minigun_dozer)
+		table.insert(unit_types_skull_dozer.fbi, minigun_dozer)
+		
+		--Elite Bulldozers (Addon Skull Dozer) Death Wish (America, Nypd, Lapd, Fbi)
+		table.insert(unit_types_skull_dozer.america, ellite_dozer)
+		table.insert(unit_types_skull_dozer.nypd, ellite_dozer)
+		table.insert(unit_types_skull_dozer.lapd, ellite_dozer)
+		table.insert(unit_types_skull_dozer.fbi, ellite_dozer)
+		
+	else
+		--Marshall Medicbulldozer (Addon Green Dozer) Death Sentence (America, Nypd, Lapd, Fbi)
+		table.insert(unit_types_green_dozer.america, marshall_medicdozer)
+		table.insert(unit_types_green_dozer.nypd, marshall_medicdozer)
+		table.insert(unit_types_green_dozer.lapd, marshall_medicdozer)
+		table.insert(unit_types_green_dozer.fbi, marshall_medicdozer)
+		
+		--Marshall Warthog (Addon Black Dozer) Death Sentence (America, Nypd, Lapd, Fbi)
+		table.insert(unit_types_black_dozer.america, marshal_warthogg)
+		table.insert(unit_types_black_dozer.nypd, marshal_warthogg)
+		table.insert(unit_types_black_dozer.lapd, marshal_warthogg)
+		table.insert(unit_types_black_dozer.fbi, marshal_warthogg)
+		
+		--Marshall Minigogdozer (Addon Skull Dozer) Death Sentence (America, Nypd, Lapd, Fbi)
+		table.insert(unit_types_skull_dozer.america, marshall_minigundozer)
+		table.insert(unit_types_skull_dozer.nypd, marshall_minigundozer)
+		table.insert(unit_types_skull_dozer.lapd, marshall_minigundozer)
+		table.insert(unit_types_skull_dozer.fbi, marshall_minigundozer)
+		
+		--Bravo Bulldozers (Addon Skull Dozer) Death Sentence (America, Nypd, Lapd, Fbi)
+		table.insert(unit_types_skull_dozer.america, bravo_elite_dozer)
+		table.insert(unit_types_skull_dozer.nypd, bravo_elite_dozer)
+		table.insert(unit_types_skull_dozer.lapd, bravo_elite_dozer)
+		table.insert(unit_types_skull_dozer.fbi, bravo_elite_dozer)
+	end
 	
 end
 	
