@@ -15361,7 +15361,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	local unit_types_skull_dozer = self.unit_categories.SKULL_tank.unit_types
 	
 	local marshal_warthogg = Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_warthog/ene_zeal_warthog")
-	local warthogg = Idstring("units/pd2_dlc_pda10/characters/ene_norm_warthog/ene_norm_warthog")
+	local warthogg = Idstring("units/pd2_mod_omnia/characters/ene_norm_warthog/ene_norm_warthog")
 	
 	local marshall_medicdozer = Idstring("units/pd2_dlc_drm/characters/ene_bulldozer_medic_sc/ene_bulldozer_medic_sc")
 	local medicdozer = Idstring("units/pd2_dlc_drm/characters/ene_bulldozer_medic_classic/ene_bulldozer_medic_classic")
