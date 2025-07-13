@@ -33,16 +33,12 @@ function MutatorDEBUGGGGGTANK:modify_unit_categories(group_ai_tweak, difficulty_
 	medic = 0
 }
 for group, units_data in pairs(group_ai_tweak.unit_categories) do
-	if group == "Phalanx_minion" or group == "Phalanx_vip" or group == "Cap_Summers" or group == "Cap_Autumn" or group == "HVH_Boss" or units_data.ignore_spawn_cap then
-	
+	--if group == "Phalanx_minion" or group == "Phalanx_vip" or group == "Cap_Summers" or group == "Cap_Autumn" or group == "HVH_Boss" or units_data.ignore_spawn_cap then
+	if group == "Phalanx_minion" or group == "Phalanx_vip" or group == "Cap_Summers" or group == "Cap_Autumn" or group == "HVH_Boss" or group == "FBI_tank" or group == "BLACK_tank" or group == "SKULL_tank" then
 	else
 		for group_sub, units_data_sub in pairs(group_ai_tweak.unit_categories[group].unit_types) do
 			group_ai_tweak.unit_categories[group].unit_types[group_sub] = {
-				Idstring("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"),
-				Idstring("units/payday2/characters/ene_mememan_1/ene_mememan_1"),
-				Idstring("units/payday2/characters/ene_mememan_2/ene_mememan_2"),
-				Idstring("units/payday2/characters/ene_veteran_lod_1/ene_veteran_lod_1"),
-				Idstring("units/payday2/characters/ene_veteran_lod_2/ene_veteran_lod_2")					
+				Idstring("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave")				
 			}		
 			end		
 		end
