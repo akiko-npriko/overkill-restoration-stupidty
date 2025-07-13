@@ -19641,7 +19641,8 @@ function CharacterTweakData:character_map()
 				"ene_omnia_taser",
 				"ene_omnia_sniper",
 				"ene_omnia_sniper_2",
-				"ene_omnia_shield"					
+				"ene_omnia_shield",
+				"ene_norm_warthog"
 			}
 		}
 
