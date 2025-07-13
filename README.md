@@ -14,7 +14,7 @@ Note: this is an older verison (gold edition kinda) of FanScot stuff
 UPDATE 1??
 - La BullDozer Bussy
 	- Minigun Dozer, Warthog Dozers, Elite Dozers, and Medic Dozers can now spawn
-		- Marshal Varients for each at Death Sentence
+		- National Guard Varients for each at Death Sentence
 		- Minigun Dozers appear at Death Wish and above
 		- Elite Dozers and Warthog appear at Mayhem and above
 		- Medic Dozers appear at Overkill and above
