@@ -32,6 +32,7 @@ function MutatorDEBUGGGGGTANK:modify_unit_categories(group_ai_tweak, difficulty_
 	shield = 0,
 	medic = 0
 }
+--[[
 for group, units_data in pairs(group_ai_tweak.unit_categories) do
 	--if group == "Phalanx_minion" or group == "Phalanx_vip" or group == "Cap_Summers" or group == "Cap_Autumn" or group == "HVH_Boss" or units_data.ignore_spawn_cap then
 	if group == "Phalanx_minion" or group == "Phalanx_vip" or group == "Cap_Summers" or group == "Cap_Autumn" or group == "HVH_Boss" or group == "FBI_tank" or group == "BLACK_tank" or group == "SKULL_tank" then
@@ -44,3 +45,4 @@ for group, units_data in pairs(group_ai_tweak.unit_categories) do
 		end
 	end
 end	
+]]
