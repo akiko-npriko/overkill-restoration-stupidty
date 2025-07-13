@@ -15424,19 +15424,19 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		table.insert(unit_types_skull_dozer.fbi, ellite_dozer)
 		
 	else
-		--Marshall Medicbulldozer (Addon Green Dozer) Death Sentence (America, Nypd, Lapd, Fbi)
+		--National Guard Medicbulldozer (Addon Green Dozer) Death Sentence (America, Nypd, Lapd, Fbi)
 		table.insert(unit_types_green_dozer.america, marshall_medicdozer)
 		table.insert(unit_types_green_dozer.nypd, marshall_medicdozer)
 		table.insert(unit_types_green_dozer.lapd, marshall_medicdozer)
 		table.insert(unit_types_green_dozer.fbi, marshall_medicdozer)
 		
-		--Marshall Warthog (Addon Black Dozer) Death Sentence (America, Nypd, Lapd, Fbi)
+		--National Guard Warthog (Addon Black Dozer) Death Sentence (America, Nypd, Lapd, Fbi)
 		table.insert(unit_types_black_dozer.america, marshal_warthogg)
 		table.insert(unit_types_black_dozer.nypd, marshal_warthogg)
 		table.insert(unit_types_black_dozer.lapd, marshal_warthogg)
 		table.insert(unit_types_black_dozer.fbi, marshal_warthogg)
 		
-		--Marshall Minigogdozer (Addon Skull Dozer) Death Sentence (America, Nypd, Lapd, Fbi)
+		--National Guard Minigogdozer (Addon Skull Dozer) Death Sentence (America, Nypd, Lapd, Fbi)
 		table.insert(unit_types_skull_dozer.america, marshall_minigundozer)
 		table.insert(unit_types_skull_dozer.nypd, marshall_minigundozer)
 		table.insert(unit_types_skull_dozer.lapd, marshall_minigundozer)
