@@ -4297,13 +4297,16 @@ end
 function CharacterTweakData:_init_us_warthog(presets)
 	self.us_warthog = deep_clone(self.tank_skull)
 	self.us_warthog.experience = {}
-	self.us_warthog.HEALTH_INIT = 500
+	self.us_warthog.HEALTH_INIT = 525
 	self.us_warthog.move_speed = presets.move_speed.very_slow
 	self.us_warthog.damage.hurt_severity = presets.hurt_severities.only_explosion_hurts_tankblack
 	self.us_warthog.speech_prefix_p1 = "fuckingpig"
 	self.us_warthog.speech_prefix_p2 = nil
 	self.us_warthog.speech_prefix_count = nil
 	self.us_warthog.custom_voicework = "piggy_dozer"
+	self.us_warthog.can_throw_molotov = true
+	self.us_warthog.grenade_toss_chance = 1
+	self.us_warthog.grenade_cooldown = 20
 	
 	table.insert(self._enemy_list, "us_warthog")
 	
@@ -4317,6 +4320,9 @@ function CharacterTweakData:_init_us_warthog(presets)
 	self.norm_warthog.custom_voicework = "piggy_dozer"
 	self.norm_warthog.move_speed = presets.move_speed.very_slow
 	self.norm_warthog.damage.hurt_severity = presets.hurt_severities.only_explosion_hurts_tankblack
+	self.norm_warthog.can_throw_molotov = true
+	self.norm_warthog.grenade_toss_chance = 1
+	self.norm_warthog.grenade_cooldown = 30
 
 	table.insert(self._enemy_list, "norm_warthog")
 end
