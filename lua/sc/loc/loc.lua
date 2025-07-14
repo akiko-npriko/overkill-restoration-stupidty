@@ -6450,7 +6450,7 @@ Hooks:Add("LocalizationManagerPostInit", "SC_Localization_Perk_Decks_Eng", funct
 	ene_zeal_bulldozer_halloween = "Headless ZEAL Bulldozer",
 	ene_zeal_bulldozer = "National Guard Skulldozer",
 	ene_zeal_cloaker = "XOF Specialist",
-	ene_zeal_swat_heavy_sniper = "Heavy Sniper",
+	ene_zeal_swat_heavy_sniper = "XOF Marksman",
 	ene_zeal_swat_heavy = "XOF Heavy Unit",
 	ene_zeal_swat_shield = "XOF Shield",
 	ene_zeal_swat = "XOF Light Unit",
