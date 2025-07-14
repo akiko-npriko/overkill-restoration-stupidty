@@ -33868,7 +33868,7 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 		self.otwd_flare_gun.fire_mode_data.fire_rate = 0.15
 		--self.otwd_flare_gun.muzzleflash = "effects/payday2/particles/weapons/big_51b_auto_fps"
 		--self.otwd_flare_gun.desc_id = "bm_ap_weapon_sc_desc"
-		self.otwd_flare_gun.AMMO_MAX = 10
+		self.otwd_flare_gun.AMMO_MAX = 15
 		self.otwd_flare_gun.CLIP_AMMO_MAX = 1
 		self.otwd_flare_gun.kick = self.stat_info.kick_tables.vertical_kick
 		self.otwd_flare_gun.kick_pattern = {
@@ -34014,6 +34014,49 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 		self.temple.panic_suppression_chance = 0.05
 		self.temple.timers.reload_exit_not_empty = 0
 		self.temple.timers.reload_exit_empty = 0
+	end
+	
+	if self.terminator then
+		self.terminator.recategorize = { "break_shot" }
+		self.terminator.categories = { "shotgun" }
+		self.terminator.damage_type = "shotgun_heavy"
+		self.terminator.damage_type_single_ray = "anti_materiel"
+		self.terminator.rays = 8
+		--self.terminator.muzzleflash = "effects/payday2/particles/weapons/big_51b_auto_fps" --"effects/particles/shotgun/shotgun_gen"
+		self.terminator.CLIP_AMMO_MAX = 1
+		self.terminator.AMMO_MAX = 15
+		self.terminator.fire_mode_data.fire_rate = 1
+		self.terminator.kick = self.stat_info.kick_tables.vertical_kick
+		self.terminator.kick_pattern = {
+			{0, self.stat_info.kick_tables.vertical_kick},
+			{2, self.stat_info.kick_tables.pattern_r4},
+			{3, self.stat_info.kick_tables.pattern_v4},
+		}
+		self.terminator.supported = true
+		self.terminator.ads_speed = 0.500
+		self.terminator.damage_falloff = {
+			start_dist = 500,
+			end_dist = 2200,
+			min_mult = 0.15
+		}
+		self.terminator.stats = {
+			damage = 240,
+			spread = 20,
+			recoil = 25,
+			spread_moving = 6,
+			zoom = 1,
+			concealment = 23,
+			suppression = 6,
+			alert_size = 2,
+			extra_ammo = 101,
+			total_ammo_mod = 400,
+			value = 1,
+			reload = 20
+		}
+		self.terminator.stats_modifiers = nil
+		--self.terminator.reload_speed_multiplier = 1.1
+		self.terminator.panic_suppression_chance = 0.05
+		self.terminator.use_data.selection_index = 1	
 	end
 	
 	-- OVERKILL WEAPOONS

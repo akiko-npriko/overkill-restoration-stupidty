@@ -11,6 +11,12 @@ Note: this is an older verison (gold edition kinda) of FanScot stuff
 
 # Femboi Changes:
 
+Update 1.1???
+- Side Units bleh
+	- XOF Units from Metal Gear
+		- XOF Piglet Units "Boom Boom"
+		- normal units too
+
 UPDATE 1??
 - La BullDozer Bussy
 	- Minigun Dozer, Warthog Dozers, Elite Dozers, and Medic Dozers can now spawn
@@ -39,7 +45,8 @@ Some Normalish Stuff:
 
 - Brought back rpg grunt mutator
 
-- Support for VxWolf's HK G11, Railgun (Roach), and OTWD Flaregun
+- Support for VxWolf's HK G11, Railgun (Roach), OTWD Flaregun, and Cobray Terminator
+ - Cobray Terminator can jam
 
 - Zulu Squad voicelines replace ResMod OMNIA voicelines
 	- https://modworkshop.net/mod/49627
