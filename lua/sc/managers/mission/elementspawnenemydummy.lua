@@ -2538,6 +2538,22 @@ ElementSpawnEnemyDummy.faction_mapping = {
 	}
 }
 
+--Additions 2 Proving Grounds
+if level_id == "modders_devmap" then
+	ElementSpawnEnemyDummy.faction_mapping.america.sm_wish.dozer = {
+		"units/pd2_dlc_gitgud/characters/ene_bulldozer_minigun/ene_bulldozer_minigun",
+		"units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3_sc/ene_zeal_bulldozer_3_sc",
+		"units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_sc/ene_zeal_bulldozer_sc",
+		"units/pd2_dlc_gitgud/characters/ene_bulldozer_minigun/ene_bulldozer_minigun",
+		"units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3_sc/ene_zeal_bulldozer_3_sc",
+		"units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_sc/ene_zeal_bulldozer_sc",
+		"units/pd2_dlc_vip/characters/ene_vip_2_assault/ene_vip_2_assault",
+		"units/pd2_dlc_gitgud/characters/ene_zeal_warthog/ene_zeal_warthog",
+		"units/pd2_dlc_drm/characters/ene_bulldozer_medic_sc/ene_bulldozer_medic_sc",
+		"units/pd2_dlc_drm/characters/ene_bulldozer_minigun/ene_bulldozer_minigun"
+	}
+end
+
 --Temp fix for now, Stealing Xmas doesn't have security 2 loaded and I didn't want to load every generic guard (yet)
 if level_id == "moon" then
 	ElementSpawnEnemyDummy.faction_mapping.america.overkill.security_1 = {

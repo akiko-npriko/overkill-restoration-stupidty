@@ -15353,6 +15353,8 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	}
 	
 --AKIKKO EDITS (ADDON LMAOO)
+
+	--ATF Field Agent
 	
 	--BullDozer Addition
 	
@@ -15448,6 +15450,17 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		table.insert(unit_types_skull_dozer.lapd, bravo_elite_dozer)
 		table.insert(unit_types_skull_dozer.fbi, bravo_elite_dozer)
 	end
+	
+	--XOF Piglet Unit
+	--DEBUG FOR NOW MAKE SERIOUS LATERRRR
+	--RN APPLIES TO ALL DIFFICULTIES
+	local unit_types_titan_sniper = self.unit_categories.titan_swat.unit_types
+	local xof_pigglet = Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
+	
+	table.insert(unit_types_titan_sniper.america, xof_pigglet)
+	table.insert(unit_types_titan_sniper.nypd, xof_pigglet)
+	table.insert(unit_types_titan_sniper.lapd, xof_pigglet)
+	table.insert(unit_types_titan_sniper.fbi, xof_pigglet)
 	
 end
 	

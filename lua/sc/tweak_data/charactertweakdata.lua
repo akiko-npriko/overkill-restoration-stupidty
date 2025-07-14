@@ -4300,6 +4300,8 @@ function CharacterTweakData:_init_city_swat_rpg(presets)
 	self.xof_rpg.damage.explosion_damage_mul = 1
 	self.xof_rpg.damage.tase_damage_mul = 1
 	--self.xof_rpg.custom_voicework = "rpg_grunt"
+	self.xof_rpg.can_throw_frag = true
+	self.xof_rpg.grenade_toss_chance = 0.35
 	table.insert(self._enemy_list, "xof_rpg")
 end
 
@@ -4309,7 +4311,7 @@ end
 function CharacterTweakData:_init_us_warthog(presets)
 	self.us_warthog = deep_clone(self.tank_skull)
 	self.us_warthog.experience = {}
-	self.us_warthog.HEALTH_INIT = 525
+	self.us_warthog.HEALTH_INIT = 475
 	self.us_warthog.move_speed = presets.move_speed.very_slow
 	self.us_warthog.damage.hurt_severity = presets.hurt_severities.only_explosion_hurts_tankblack
 	self.us_warthog.speech_prefix_p1 = "fuckingpig"
@@ -4317,15 +4319,15 @@ function CharacterTweakData:_init_us_warthog(presets)
 	self.us_warthog.speech_prefix_count = nil
 	self.us_warthog.custom_voicework = "piggy_dozer"
 	self.us_warthog.can_throw_molotov = true
-	self.us_warthog.grenade_toss_chance = 1
-	self.us_warthog.grenade_cooldown = 20
+	self.us_warthog.grenade_toss_chance = 0.45
+	--self.us_warthog.grenade_cooldown = 20
 	
 	table.insert(self._enemy_list, "us_warthog")
 	
 	self.norm_warthog = deep_clone(self.tank)
 	self.norm_warthog.experience = {}
 	self.norm_warthog.headshot_dmg_mul = 18.75
-	self.norm_warthog.HEALTH_INIT = 400
+	self.norm_warthog.HEALTH_INIT = 350
 	self.norm_warthog.speech_prefix_p1 = "fuckingpig"
 	self.norm_warthog.speech_prefix_p2 = nil
 	self.norm_warthog.speech_prefix_count = nil
@@ -4333,8 +4335,8 @@ function CharacterTweakData:_init_us_warthog(presets)
 	self.norm_warthog.move_speed = presets.move_speed.very_slow
 	self.norm_warthog.damage.hurt_severity = presets.hurt_severities.only_explosion_hurts_tankblack
 	self.norm_warthog.can_throw_molotov = true
-	self.norm_warthog.grenade_toss_chance = 1
-	self.norm_warthog.grenade_cooldown = 30
+	self.norm_warthog.grenade_toss_chance = 0.3
+	--self.norm_warthog.grenade_cooldown = 30
 
 	table.insert(self._enemy_list, "norm_warthog")
 end
