@@ -407,6 +407,40 @@ function PlayerDamage:_apply_damage(attack_data, damage_info, variant, t)
 	return true
 end
 
+function PlayerDamage:l4d2_pain_reliever_delay_damage(damage, stop_hp)
+	local damage_chunk = {
+		tick = damage,
+		stop_hp = stop_hp or 0.05
+	}
+	self["l4d2_mod_firstaid3"] = self["l4d2_mod_firstaid3"] or {}
+	self["l4d2_mod_firstaid5"] = TimerManager:game():time() + 8
+	table.insert(self["l4d2_mod_firstaid3"], damage_chunk)
+end
+
+Hooks:PreHook(PlayerDamage, '_update_delayed_damage', "l4d2_mod_firstaid2", function(self, t, dt)
+	if type(self["l4d2_mod_firstaid3"]) == "table" and type(self["l4d2_mod_firstaid5"]) == "number" then
+		local no_chunks = #self["l4d2_mod_firstaid3"] == 0
+		local time_for_tick = t < self["l4d2_mod_firstaid5"]
+		if no_chunks or time_for_tick then
+		
+		else
+			self["l4d2_mod_firstaid5"] = t + 0.5
+			for ii, damage_chunk in pairs(self["l4d2_mod_firstaid3"]) do
+				if type(damage_chunk) == "table" and type(damage_chunk.stop_hp) == "number" and type(damage_chunk.tick) == "number" then
+					if damage_chunk.stop_hp >= self:health_ratio() then
+						self["l4d2_mod_firstaid3"][ii] = nil
+					else
+						self:_calc_health_damage({
+							damage = damage_chunk.tick,
+							variant = "delayed_tick"
+						})
+						break
+					end
+				end
+			end
+		end
+	end
+end)
 
 function PlayerDamage:_mrwick_ricochet_bullets(attack_data, armor_break)
 	local pm = managers.player
@@ -1157,6 +1191,19 @@ Hooks:PostHook(PlayerDamage, "_regenerated" , "ResRegenerated" , function(self, 
 		"down_absorption",
 		0
 	)
+end)
+
+Hooks:PreHook(PlayerDamage, 'recover_health', "l4d2_mod_firstaid4", function(self)
+	if type(self["l4d2_mod_firstaid3"]) == "table" and type(self["l4d2_mod_firstaid5"]) == "number" then
+		for ii, damage_chunk in pairs(self["l4d2_mod_firstaid3"]) do
+			if type(damage_chunk) == "table" and type(damage_chunk.stop_hp) == "number" and type(damage_chunk.tick) == "number" then
+				self["l4d2_mod_firstaid3"][ii] = {
+					tick = 0,
+					stop_hp = 999
+				}
+			end
+		end
+	end
 end)
 
 --Include deflection in calcs. Doesn't work in cases where armor is pierced, but I can't be assed to fix it.
