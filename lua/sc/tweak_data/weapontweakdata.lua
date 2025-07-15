@@ -33864,6 +33864,7 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 	-- [[Akiko Edits]]
 	if self.otwd_flare_gun then
 		self.otwd_flare_gun.recategorize = { "heavy_pis", "handcannon" }
+		self.otwd_flare_gun.categories = { "pistol", "handcannon" }
 		self.otwd_flare_gun.damage_type = "handcannon"
 		self.otwd_flare_gun.fire_mode_data.fire_rate = 0.15
 		--self.otwd_flare_gun.muzzleflash = "effects/payday2/particles/weapons/big_51b_auto_fps"
@@ -33903,6 +33904,10 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 		self.otwd_flare_gun.bullet_class = "FlameBulletBase"
 		self.otwd_flare_gun.damage_type_single_ray = "sniper"
 		self.otwd_flare_gun.rays = 1
+		self.otwd_flare_gun.timers.reload_empty = 1.72
+		self.otwd_flare_gun.timers.reload_not_empty = 1.72
+		self.otwd_flare_gun.timers.reload_exit_empty = 0.75
+		self.otwd_flare_gun.timers.reload_exit_not_empty = 0.75
 		--self.otwd_flare_gun.use_data.selection_index = 3
 	end
 	
@@ -34012,11 +34017,12 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 		--self.temple.armor_piercing_chance = 0.25
 		--self.temple.can_shoot_through_enemy = false
 		self.temple.panic_suppression_chance = 0.05
-		self.temple.timers.reload_exit_not_empty = 0
-		self.temple.timers.reload_exit_empty = 0
+		--self.temple.timers.reload_exit_not_empty = 0
+		--self.temple.timers.reload_exit_empty = 0
 	end
 	
 	if self.terminator then
+		self.terminator.termina = true
 		self.terminator.recategorize = { "break_shot" }
 		self.terminator.categories = { "shotgun" }
 		self.terminator.damage_type = "shotgun_heavy"

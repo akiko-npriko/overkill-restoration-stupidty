@@ -667,7 +667,22 @@ function RaycastWeaponBase:fire(from_pos, direction, dmg_mul, shoot_player, spre
 			end
 		end
 	end
-
+	local jam = math.rand(1)
+	if is_player and self:weapon_tweak_data().termina then
+		if jam < 0.51 then
+			dmg_mul = 0.0
+			consume_ammo = false
+		elseif jam > 0.99 then
+			dmg_mul = 0.25
+		end
+	end
+	local universaljamchance = 0.051
+	if is_player and not (self:weapon_tweak_data().termina or self:weapon_tweak_data().zippy) then
+		if jam < universaljamchance then
+			dmg_mul = 0.0
+			consume_ammo = false
+		end
+	end
 	if consume_ammo and (is_player or Network:is_server()) then
 		local base = self:ammo_base()
 
@@ -734,9 +749,8 @@ function RaycastWeaponBase:fire(from_pos, direction, dmg_mul, shoot_player, spre
 	local user_unit = self._setup.user_unit
 
 	self:_check_ammo_total(user_unit)
-
+	
 	if is_player and self:weapon_tweak_data().zippy then
-		local jam = math.rand(1)
 		if jam < 0.33 and self:ammo_base():get_ammo_remaining_in_clip() > 0 then
 			--dmg_mul = 0
 			--self:dryfire()
@@ -765,8 +779,8 @@ function RaycastWeaponBase:fire(from_pos, direction, dmg_mul, shoot_player, spre
 	end
 
 	local ray_res = self:_fire_raycast(user_unit, from_pos, direction, dmg_mul, shoot_player, spread_mul, autohit_mul, suppr_mul, target_unit, ammo_usage)
-
-	if self:weapon_tweak_data().zippy and dmg_mul == 0 and not self._jammed then
+	
+	if (self:weapon_tweak_data().zippy) and dmg_mul == 0 and not self._jammed then
 		local player_unit = managers.player:player_unit()
 		if player_unit.character_damage and player_unit:character_damage() then
 			if not player_unit:character_damage():is_downed() then
@@ -785,6 +799,42 @@ function RaycastWeaponBase:fire(from_pos, direction, dmg_mul, shoot_player, spre
 					variant = "explosion"
 				})
 			end
+		end
+	elseif (self:weapon_tweak_data().termina) and dmg_mul == 0 then
+		local player_unit = managers.player:player_unit()
+		if player_unit.character_damage and player_unit:character_damage() then
+			player_unit:character_damage()._unit:sound():play("player_hit_permadamage")
+			local base = self:ammo_base()
+			local ammo_in_clip = base:get_ammo_remaining_in_clip()
+			base:set_ammo_remaining_in_clip(ammo_in_clip - ammo_usage)
+		end
+	elseif (self:weapon_tweak_data().termina) and dmg_mul == 0.25 then
+		local player_unit = managers.player:player_unit()
+		if player_unit.character_damage and player_unit:character_damage() then
+			if not player_unit:character_damage():is_downed() then
+				player_unit:character_damage()._unit:sound():play("player_hit_permadamage")
+				player_unit:character_damage():_calc_health_damage_no_deflection({
+					col_ray = ray_res,
+					attacker_unit = player_unit,
+					damage = 25,
+					variant = "explosion"
+				})
+			else
+				player_unit:character_damage():_bleed_out_damage({
+					col_ray = ray_res,
+					attacker_unit = player_unit,
+					damage = 25,
+					variant = "explosion"
+				})
+			end
+		end
+	elseif (jam < universaljamchance) and dmg_mul == 0 then
+		local player_unit = managers.player:player_unit()
+		if player_unit.character_damage and player_unit:character_damage() then
+			player_unit:character_damage()._unit:sound():play("player_hit_permadamage")
+			--local base = self:ammo_base()
+			--local ammo_in_clip = base:get_ammo_remaining_in_clip()
+			--base:set_ammo_remaining_in_clip(ammo_in_clip - ammo_usage)
 		end
 	end
 
