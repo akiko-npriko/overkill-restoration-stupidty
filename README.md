@@ -27,7 +27,7 @@ UPDATE 1??
 
 Hardcore Stuff
 - Cableties are now only avaliable in a skill (3 norm and 100 aced)
-- First Aid Kits now heal all health however half of all health degrades (LFD2 ahh Painkillers)
+- First Aid Kits now heal all health however 75% of all health regained degrades (LFD2 ahh Painkillers)
 - Medics drop first aid kits
 - Armor influences ammo pickup (stuff from dev)
 - plan - add rpg, medicdozer, restore verison of minidozer to death wish
