@@ -290,3 +290,24 @@ Bobctopus: Spanish localisation
 Additional Testers: Derma, ShortonComedyGamer, K4_Kydure, Finale
 
 AND YOU, for downloading this I guess.
+
+# Akiko's Credits:
+Yanked coding from... (intergrated into mod)
+ - Medic Drop FAKs
+ 	 - https://modworkshop.net/mod/19691
+ - Pain Reliever Function ( First Aid Kit )
+	 - https://modworkshop.net/mod/31730
+ - Think Faster
+	 - https://modworkshop.net/mod/29403
+ - Replace Zeal Units with XOF Units (now with special units)
+	 - https://modworkshop.net/mod/38745
+ - MGSV Diamond Dogs Enemies
+	 - https://modworkshop.net/mod/43239?tab=description
+ - National Guard ZEAL Units - Restoration Mod Port
+	 - https://modworkshop.net/mod/38272
+ - National Guard ZEAL Units
+	 - https://modworkshop.net/mod/37321
+ - Zulu Squad voicelines replace ResMod OMNIA voicelines
+	 - https://modworkshop.net/mod/49627
+ - 33rd Infantry voicelines replace ResMod US National Guard voicelines
+	 - https://modworkshop.net/mod/49440
