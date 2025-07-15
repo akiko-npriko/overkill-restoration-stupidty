@@ -810,55 +810,90 @@
 	<unit				path="units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg_husk"  load="true"/>
 	
 	<!--TEXTURE FIXESSSS-->
+	
+	<object path="units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy" force="true"/>
+	<material_config path="units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy" force="true"/>
+	<material_config path="units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy_contour" force="true"/>
+	<model path="units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy" force="true"/>
+	<df_nm path="units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/body"/>
+	<df_nm path="units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/extra"/>
+	<df_nm path="units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/helmet"/>
+	<df_nm path="units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/tank"/>
+	<df_nm path="units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/glass"/>
+	<texture path="units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/glass_op"/>
+	
+	<object path="units/pd2_dlc_gitgud/characters/ene_acc_shield_new_swat/ene_acc_shield_new_swat" force="true"/>
+	<model path="units/pd2_dlc_gitgud/characters/ene_acc_shield_new_swat/ene_acc_shield_new_swat" force="true"/>
+	<material_config path="units/pd2_dlc_gitgud/characters/ene_acc_shield_new_swat/ene_acc_shield_new_swat" force="true"/>
+	<df_nm path="units/pd2_dlc_gitgud/characters/ene_acc_shield_new_swat/a_shield"/>
+	
+	<object path="units/pd2_dlc_gitgud/characters/ene_zeal_cloaker/ene_zeal_cloaker" force="true"/>
+	<model path="units/pd2_dlc_gitgud/characters/ene_zeal_cloaker/ene_zeal_cloaker" force="true"/>
+	<cooked_physics path="units/pd2_dlc_gitgud/characters/ene_zeal_cloaker/ene_zeal_cloaker" force="true"/>
+	<material_config path="units/pd2_dlc_gitgud/characters/ene_zeal_cloaker/ene_zeal_cloaker" force="true"/>
+	<material_config path="units/pd2_dlc_gitgud/characters/ene_zeal_cloaker/ene_zeal_cloaker_contour" force="true"/>
+	<unit path="units/pd2_dlc_gitgud/characters/ene_zeal_cloaker/ene_zeal_cloaker" force="true"/>
+	<unit path="units/pd2_dlc_gitgud/characters/ene_zeal_cloaker/ene_zeal_cloaker_husk" force="true"/>
+	<sequence_manager path="units/pd2_dlc_gitgud/characters/ene_zeal_cloaker/ene_zeal_cloaker" force="true"/>
+	<df_nm path="units/pd2_dlc_gitgud/characters/ene_zeal_cloaker/dumb_donnie"/>
+	<texture path="units/pd2_dlc_gitgud/characters/ene_zeal_cloaker/dumb_donnie_il"/>
+	<texture path="units/pd2_dlc_gitgud/characters/ene_zeal_cloaker/zeal_cloaker_body_gsma"/>
+	<texture path="units/pd2_dlc_gitgud/characters/ene_zeal_cloaker/yeah_im_a_loser_df"/>
+	<texture path="units/pd2_dlc_gitgud/characters/ene_zeal_cloaker/yeah_im_a_loser_il"/>
+	<df_nm_gsma path="units/pd2_dlc_gitgud/characters/ene_zeal_cloaker/a_zeal_cloaker_body"/>
+	<df_nm path="units/pd2_dlc_gitgud/characters/ene_zeal_cloaker/a_zeal_cloaker_head"/>
+	
 	<texture path="units/pd2_dlc_gitgud/characters/shared_textures/blehets_shotgun_df" force="true"/>
 	<object path="units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy" force="true"/>
-<object path="units/pd2_dlc_gitgud/characters/ene_acc_zeal_swat_heavy_helmet/ene_acc_zeal_swat_heavy_helmet" force="true"/>
-<object path="units/pd2_dlc_gitgud/characters/ene_acc_shield_new_swat/ene_acc_shield_new_swat" force="true"/>
-<object path="units/pd2_dlc_gitgud/characters/ene_zeal_cloaker/ene_zeal_cloaker" force="true"/>
-<unit path="units/pd2_dlc_gitgud/characters/ene_zeal_cloaker/ene_zeal_cloaker" force="true"/>
-<unit path="units/pd2_dlc_gitgud/characters/ene_zeal_cloaker/ene_zeal_cloaker_husk" force="true"/>
-<sequence_manager path="units/pd2_dlc_gitgud/characters/ene_zeal_cloaker/ene_zeal_cloaker" force="true"/>
-<sequence_manager path="units/payday2/characters/ragdoll" force="true"/>
-<sequence_manager path="Hooks/kevlar_helmet" force="true"/>
-<effect path="effects/payday2/particles/explosions/fire" load="true"/>
-<effect path="effects/payday2/particles/explosions/fire_green" load="true"/>
-<effect path="effects/payday2/particles/explosions/fire_black" load="true"/>
-<effect path="effects/payday2/particles/explosions/fire_white" load="true"/>
-<effect path="effects/payday2/particles/explosions/fire_gold" load="true"/>
-<df_nm path="units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/body"/>
-<df_nm path="units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/extra"/>
-<df_nm path="units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/helmet"/>
-<df_nm path="units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/tank"/>
-<df_nm path="units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/glass"/>
-<texture path="units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/glass_op"/>
-<df_nm path="units/pd2_dlc_gitgud/characters/ene_zeal_cloaker/dumb_donnie"/>
-<texture path="units/pd2_dlc_gitgud/characters/ene_zeal_cloaker/dumb_donnie_il"/>
-<texture path="units/pd2_dlc_gitgud/characters/ene_zeal_cloaker/zeal_cloaker_body_gsma"/>
-<texture path="units/pd2_dlc_gitgud/characters/ene_zeal_cloaker/yeah_im_a_loser_df"/>
-<texture path="units/pd2_dlc_gitgud/characters/ene_zeal_cloaker/yeah_im_a_loser_il"/>
-<df_nm_gsma path="units/pd2_dlc_gitgud/characters/ene_zeal_cloaker/a_zeal_cloaker_body"/>
-<df_nm path="units/pd2_dlc_gitgud/characters/ene_zeal_cloaker/a_zeal_cloaker_head"/>
-<df_nm path="units/pd2_dlc_gitgud/characters/ene_zeal_swat/yeehaw"/>
-<df_nm path="units/pd2_dlc_gitgud/characters/ene_zeal_swat/a_ene_zeal_swat"/>
-<df_nm path="units/pd2_dlc_gitgud/characters/ene_acc_shield_new_swat/a_shield"/>
-<texture path="effects/textures/fire/e_fire_dynamic_01_8x4_seq_loop_green"/>
-<texture path="effects/textures/fire/e_fire_dynamic_01_8x4_seq_loop_black"/>
-<texture path="effects/textures/fire/e_fire_dynamic_01_8x4_seq_loop_white"/>
-<texture path="effects/textures/fire/e_fire_dynamic_01_8x4_seq_loop_gold"/>
-<df_nm_gsma path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/arm"/>
-<df_nm_gsma path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/body"/>
-<df_nm_gsma path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/eyepatch"/>
-<df_nm_gsma path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/gasmask"/>
-<df_nm_gsma path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/horn"/>
-<df_nm_gsma path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/knife"/>
-<texture path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/logo_df"/>
-<texture path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/logo_op"/>
-<df_nm_gsma path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/recorder"/>
-<df_nm_gsma path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/robot"/>
-<object path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/ene_zeal_tazer" force="true"/>
-<object path="units/pd2_dlc_gitgud/characters/ene_acc_zeal_tazer_helmet/ene_acc_zeal_tazer_helmet" force="true"/>
-<texture path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/logo_df"/>
-<texture path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/logo_op"/>
+	<object path="units/pd2_dlc_gitgud/characters/ene_acc_zeal_swat_heavy_helmet/ene_acc_zeal_swat_heavy_helmet" force="true"/>
+	
+	
+	<sequence_manager path="units/payday2/characters/ragdoll" force="true"/>
+	<!--sequence_manager path="Hooks/kevlar_helmet" force="true"/-->
+	<effect path="effects/payday2/particles/explosions/fire" load="true"/>
+	<effect path="effects/payday2/particles/explosions/fire_green" load="true"/>
+	<effect path="effects/payday2/particles/explosions/fire_black" load="true"/>
+	<effect path="effects/payday2/particles/explosions/fire_white" load="true"/>
+	<effect path="effects/payday2/particles/explosions/fire_gold" load="true"/>
+	
+	
+	<df_nm path="units/pd2_dlc_gitgud/characters/ene_zeal_swat/yeehaw"/>
+	<df_nm path="units/pd2_dlc_gitgud/characters/ene_zeal_swat/a_ene_zeal_swat"/>
+	
+	<model path="units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat"/>
+	<material_config path="units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat"/>
+	<material_config path="units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat_contour"/>
+	
+	<texture path="effects/textures/fire/e_fire_dynamic_01_8x4_seq_loop_green"/>
+	<texture path="effects/textures/fire/e_fire_dynamic_01_8x4_seq_loop_black"/>
+	<texture path="effects/textures/fire/e_fire_dynamic_01_8x4_seq_loop_white"/>
+	<texture path="effects/textures/fire/e_fire_dynamic_01_8x4_seq_loop_gold"/>
+	
+	<model path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/ene_zeal_tazer" force="true"/>
+	<material_config path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/ene_zeal_tazer" force="true"/>
+	<material_config path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/ene_zeal_tazer_contour" force="true"/>
+	<df_nm_gsma path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/arm"/>
+	<df_nm_gsma path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/body"/>
+	<df_nm_gsma path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/eyepatch"/>
+	<df_nm_gsma path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/gasmask"/>
+	<df_nm_gsma path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/horn"/>
+	<df_nm_gsma path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/knife"/>
+	<texture path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/logo_df"/>
+	<texture path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/logo_op"/>
+	<df_nm_gsma path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/recorder"/>
+	<df_nm_gsma path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/robot"/>
+	<object path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/ene_zeal_tazer" force="true"/>
+	<texture path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/logo_df"/>
+	<texture path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/logo_op"/>
+	
+	<material_config path="units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield" force="true"/>
+	<material_config path="units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield_contour" force="true"/>
+	<model path="units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield" force="true"/>
+	
+	<object path="units/pd2_dlc_gitgud/characters/ene_acc_zeal_swat_heavy_helmet/ene_acc_zeal_swat_heavy_helmet" force="true"/>
+	<object path="units/pd2_dlc_gitgud/characters/ene_acc_zeal_tazer_helmet/ene_acc_zeal_tazer_helmet" force="true"/>
+	<material_config path="units/pd2_dlc_gitgud/characters/ene_acc_zeal_swat_helmet/ene_acc_zeal_swat_helmet" force="true"/>
+	<model path="units/pd2_dlc_gitgud/characters/ene_acc_zeal_swat_helmet/ene_acc_zeal_swat_helmet" force="true"/>
 	
 	<add from_db="true" path="effects/payday2/particles/explosions/molotov_grenade_pent_boss" type="effect">
 		<effect load="true" path="effects/payday2/particles/explosions/molotov_grenade_pent_boss"/>
