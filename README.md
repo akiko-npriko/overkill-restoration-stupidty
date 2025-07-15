@@ -27,8 +27,7 @@ UPDATE 1??
 
 Hardcore Stuff
 - Cableties are now only avaliable in a skill (3 norm and 100 aced)
-- First Aid Kits now heal 300 health however are temp health (LFD2 ahh Painkillers) -nvm it not 300 it back to 150 with medkit being nerfed back to gold
-    - Use this ig: https://modworkshop.net/mod/31730
+- First Aid Kits now heal all health however half of all health degrades (LFD2 ahh Painkillers)
 - Medics drop first aid kits
 - Armor influences ammo pickup (stuff from dev)
 - plan - add rpg, medicdozer, restore verison of minidozer to death wish
