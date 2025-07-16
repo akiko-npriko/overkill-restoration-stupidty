@@ -1,0 +1,32 @@
+<table name="predator_taser">
+    <Localization directory="Localization" default="english.txt"></Localization>
+    <AssetUpdates id="20029" name="asset_updates" folder_name="predator_taser_reborn" provider="modworkshop" version="3" />
+    <GlobalValue id="predator_taser" color="Color(0, 1, 0)" />
+    
+    <!--Tazergun -->
+    <Melee id="tazergun" based_on="nin" unit="units/mods/weapons/tazergun/tazergun" third_unit="units/mods/weapons/tazergun/third_tazergun" texture_bundle_folder="mods" global_value="tazergun">
+        <stats min_damage="1" max_damage="1" charge_time="5" range="1000" concealment="28" repeat_expire_t="1.2" expire_t="1.2"/>
+        <tase_data> 
+            <tase_strength value="light"/>
+        </tase_data>
+    </Melee>
+        
+    <AddFiles directory="assets">
+        <cooked_physics path="units/mods/weapons/tazergun/tazergun" />
+        <model path="units/mods/weapons/tazergun/tazergun" />
+        <object path="units/mods/weapons/tazergun/tazergun" />
+        <unit path="units/mods/weapons/tazergun/tazergun" />
+        <material_config path="units/mods/weapons/tazergun/tazergun" />
+        <cooked_physics path="units/mods/weapons/tazergun/third_tazergun" />
+        <model path="units/mods/weapons/tazergun/third_tazergun" />
+        <object path="units/mods/weapons/tazergun/third_tazergun" />
+        <unit path="units/mods/weapons/tazergun/third_tazergun" />
+        <material_config path="units/mods/weapons/tazergun/third_tazergun" />
+        <texture path="units/mods/weapons/tazergun/tazergun_df" />
+        <texture path="units/mods/weapons/tazergun/tazergun_nm" />
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/melee_weapons/tazergun" />
+    </AddFiles>
+    <Hooks directory="Hooks">
+        <hook file="blackmarkettweakdata.lua" source_file="lib/tweak_data/blackmarket/meleeweaponstweakdata"/>
+    </Hooks>
+</table>
