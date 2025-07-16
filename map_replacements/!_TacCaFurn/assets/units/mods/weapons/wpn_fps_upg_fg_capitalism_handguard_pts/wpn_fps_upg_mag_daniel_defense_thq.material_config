@@ -1,0 +1,12 @@
+<materials version="3" group="weapon_group">
+	<material name="mtr_dd_magazine" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_upg_fg_capitalism_handguard_pts/textures/magazine_dd_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_upg_fg_capitalism_handguard_pts/textures/magazine_dd_nm"/>
+        <material_texture	 file="units/mods/weapons/wpn_fps_upg_fg_capitalism_handguard_pts/textures/magazine_dd_gsma"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_upg_fg_capitalism_handguard_pts/textures/weapon_metal_cubemap"/>
+    </material>		
+	<material name="mtr_m855a1" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_upg_fg_capitalism_handguard_pts/textures/m855a1_df" mip="1" />
+	<bump_normal_texture file="units/mods/weapons/wpn_fps_upg_fg_capitalism_handguard_pts/textures/m855a1_nm" mip="1" />
+	</material>
+</materials>
