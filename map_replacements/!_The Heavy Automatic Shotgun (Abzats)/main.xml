@@ -1,0 +1,169 @@
+<table name="Heavy Automatic Shotgun (Abzats)" image="guis/cover" color="Color(186, 0, 0)">
+	<Localization directory="Loc" default="english.txt"/>
+	
+	<AssetUpdates id="24528" version="3.0" provider="modworkshop"/>
+	
+	<GlobalValue id="abzats" color="Color(186, 0, 0)"/>
+	
+	<WeaponMod id="wpn_fps_sho_abzats_body_standard" based_on="wpn_fps_lmg_m249_body_standard" type="body" unit="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_body_standard" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_sho_abzats_m_standard" based_on="wpn_fps_lmg_m249_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_m_standard" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_sho_abzats_upper_reciever" based_on="wpn_fps_lmg_m249_upper_reciever" type="upper_reciever" unit="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_upper_reciever" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_sho_abzats_b_short" based_on="wpn_fps_lmg_m249_b_short" type="barrel" unit="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_b_short" drop="false" is_a_unlockable="false"/>
+	
+	<WeaponMod id="wpn_fps_sho_abzats_muzzle_break" based_on="wpn_fps_ass_corgi_ns_standard" type="barrel_ext" unit="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_muzzle_break" desc_id="bm_wp_wpn_fps_sho_abzats_muzzle_break_desc" has_description="true" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats recoil="2" spread="1" damage="1"/>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_sho_abzats_m_big" based_on="wpn_fps_lmg_m249_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_m_big" desc_id="bm_wp_wpn_fps_sho_abzats_m_big_desc" has_description="true" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats extra_ammo="10" reload="-2" total_ammo_mod="7" concealment="-5"/>
+		<pcs/>
+		<override>
+		<wpn_fps_sho_abzats_m_standard unit="units/mods/weapons/wpn_fps_sho_abzats/wpn_fps_sho_abzats_m_standard"/>
+		</override>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_sho_abzats_body_upgrade" based_on="wpn_fps_lmg_m249_body_standard" type="extra" unit="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_body_upgrade" desc_id="bm_wp_wpn_fps_sho_abzats_body_upgrade_desc" has_description="true" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+        <stats spread="-1" damage="1"/>
+        <custom_stats rof_mult="2"/>
+	    <forbids>
+	    <wpn_fps_sho_abzats_body_standard a_obj="a_body"/>
+	    </forbids>
+		<pcs/>
+	</WeaponMod>
+	
+	<Weapon unlock_level="65">
+		<weapon id="abzats" based_on="m249" weapon_hold="hk21" damage_near="1000" damage_far="2000" rays="12" has_magazine="true" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="3" ammo_pickup="3" muzzleflash="effects/payday2/particles/weapons/shotgun/sho_muzzleflash" muzzleflash_silenced="effects/payday2/particles/weapons/shotgun/sho_muzzleflash" shell_ejection="effects/payday2/particles/weapons/shells/shell_slug" texture_bundle_folder="mods" global_value="abzats">
+			<categories>
+				<value_node value="shotgun"/>
+			</categories>
+			<stats damage="85" spread="10" spread_moving="10" recoil="6" concealment="5"/>
+			<AMMO_PICKUP>
+				<value_node value="0.8"/>
+				<value_node value="1.2"/>
+			</AMMO_PICKUP>
+			<use_data selection_index="2" align_place="right_hand"/>
+			<fire_mode_data fire_rate="0.4"/>
+			<stats_modifiers damage="1"/>
+			<sounds fire="abzats_regular" fire_single="abzats_regular" use_fix="true"/>
+			<animations reload_name_id="m249"/>
+		</weapon>
+		<factory id="wpn_fps_sho_abzats" unit="units/mods/weapons/wpn_fps_sho_abzats/wpn_fps_sho_abzats">
+			<animations reload="reload" fire="recoil" fire_steelsight="recoil" reload_not_empty="reload_not_empty" magazine_empty="last_recoil"/>
+			<optional_types>
+				<value_node value="ammo"/>
+				<value_node value="barrel_ext"/>
+				<value_node value="magazine"/>
+				<value_node value="extra"/>
+			</optional_types>
+			<default_blueprint>
+				<value_node value="wpn_fps_sho_abzats_body_standard"/>
+				<value_node value="wpn_fps_sho_abzats_upper_reciever"/>
+				<value_node value="wpn_fps_sho_abzats_m_standard"/>
+				<value_node value="wpn_fps_sho_abzats_b_short"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_sho_abzats_body_standard"/>
+				<value_node value="wpn_fps_sho_abzats_upper_reciever"/>
+				<value_node value="wpn_fps_sho_abzats_m_standard"/>
+				<value_node value="wpn_fps_sho_abzats_b_short"/>
+				<value_node value="wpn_fps_sho_abzats_muzzle_break"/>
+				<value_node value="wpn_fps_sho_abzats_body_upgrade"/>
+				<value_node value="wpn_fps_sho_abzats_m_big"/>
+				<value_node value="wpn_fps_upg_a_custom"/>
+				<value_node value="wpn_fps_upg_a_custom_free"/>
+				<value_node value="wpn_fps_upg_a_dragons_breath"/>
+			</uses_parts>
+		</factory>
+		<stance>
+		<standard>
+			<shoulders rotation="-0.000745315 0.00548101 0.00093835 -0.999984" translation="4.279 4.631 -4.877"/>
+		</standard>
+		<steelsight>
+			<shoulders rotation="-0.000790478 0.0490946 0.000900212 -0.998793" translation="-4.279 4.631 -4.877"/>
+		</steelsight>
+		<crouched>
+			<shoulders rotation="-0.000745315 0.00548101 0.00093835 -0.999984" translation="4.279 4.631 -8.877"/>
+		</crouched>
+		</stance>
+	</Weapon>
+		<Sounds directory="Assets\sounds">
+		<sound id="abzats_regular" path="abzatsfire.ogg" prefix="regular"/>
+	</Sounds>
+	<AddFiles directory="Assets">
+		<texture path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_dshk_df"/>
+		<texture path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_dshk_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_dshk_r_df"/>
+		<texture path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_dshk_r_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_dshk_m_df"/>
+		<texture path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_dshk_m_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_sho_abzats_pts/nothing_df"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_sho_abzats/wpn_fps_sho_abzats"/>
+		<model path="units/mods/weapons/wpn_fps_sho_abzats/wpn_fps_sho_abzats"/>
+		<object path="units/mods/weapons/wpn_fps_sho_abzats/wpn_fps_sho_abzats"/>
+		<unit path="units/mods/weapons/wpn_fps_sho_abzats/wpn_fps_sho_abzats"/>
+		<unit path="units/mods/weapons/wpn_fps_sho_abzats/wpn_fps_sho_abzats_npc"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_body_standard"/>
+		<model path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_body_standard"/>
+		<object path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_body_standard"/>
+		<unit path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_body_standard"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_body_standard"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_body_standard_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_m_standard"/>
+		<model path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_m_standard"/>
+		<object path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_m_standard"/>
+		<unit path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_m_standard"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_m_standard"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_m_standard_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_upper_reciever"/>
+		<model path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_upper_reciever"/>
+		<object path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_upper_reciever"/>
+		<unit path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_upper_reciever"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_upper_reciever"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_upper_reciever_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_b_short"/>
+		<model path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_b_short"/>
+		<object path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_b_short"/>
+		<unit path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_b_short"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_b_short"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_b_short_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_muzzle_break"/>
+		<model path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_muzzle_break"/>
+		<object path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_muzzle_break"/>
+		<unit path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_muzzle_break"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_muzzle_break"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_muzzle_break_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_m_big"/>
+		<model path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_m_big"/>
+		<object path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_m_big"/>
+		<unit path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_m_big"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_m_big"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_m_big_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_body_upgrade"/>
+		<model path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_body_upgrade"/>
+		<object path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_body_upgrade"/>
+		<unit path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_body_upgrade"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_body_upgrade"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_body_upgrade_thq"/>
+		
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/abzats"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_sho_abzats_muzzle_break"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_sho_abzats_m_big"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_sho_abzats_body_upgrade"/>
+		<texture path="guis/cover"/>
+	</AddFiles>
+	<Hooks directory="Hooks">
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
+	</Hooks>
+</table>

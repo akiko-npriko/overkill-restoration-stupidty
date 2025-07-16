@@ -1,0 +1,14 @@
+<mod name="Vietnam Hat Mask" author="iuhggiuhhgbnr" min_lib_ver="3.38">
+    <GlobalValue id="iuhVietnamHatMask" color="Color(255, 215, 0)"/>
+	<Localization directory="loc" default="english.txt">
+        <loc file="english.txt" language="english"/>
+    </Localization>
+
+    <Mask id="iuhVietnamHatMask" type="helmet" global_value = "iuhVietnamHatMask"/>
+
+    <AddFiles directory="assets">    
+        <unit_tex   path="units/mods/masks/msk_iuhVietnamHatMask/msk_iuhVietnamHatMask"/>
+        <texture    path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/iuhVietnamHatMask"/>
+    </AddFiles>
+
+</mod>

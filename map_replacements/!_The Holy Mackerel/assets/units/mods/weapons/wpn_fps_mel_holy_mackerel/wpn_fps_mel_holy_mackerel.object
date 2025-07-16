@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<dynamic_object>
+    <diesel orientation_object="rp_wpn_fps_mel_holy_mackerel" materials="units/mods/weapons/wpn_fps_mel_holy_mackerel/wpn_fps_mel_holy_mackerel" />
+
+
+    <bodies>
+        <body  name="cloth_Main_Root" enabled="true" template="static" collision_class="hair" collision_group="2" collides_with="3" collides_with_mover="false" pushed_by_mover="false" friction="0.01"  keyframed="true" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="0" ang_damping="1" restitution="0">
+            <object name="Root" />
+            <object name="Root_Collision" collision_type="capsule" mass="1" padding="-4"/>
+        </body>
+
+        <body  name="cloth_Fish1" enabled="true" template="small_prop" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" pushed_by_mover="false"  friction="0.01"  keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="0.1" ang_damping="0.7" restitution="0">
+            <object name="Fish1" />
+            <object name="Fish1_Collision" collision_type="capsule" mass="1" padding="-4"/>
+        </body>
+        <body  name="cloth_Fish2" enabled="true" template="small_prop" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" pushed_by_mover="false"  friction="0.01"  keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="0.1" ang_damping="0.7" restitution="0">
+            <object name="Fish2" />
+            <object name="Fish2_Collision" collision_type="capsule" mass="1" padding="-4"/>
+        </body>
+        <body  name="cloth_Fish3" enabled="true" template="small_prop" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" pushed_by_mover="false"  friction="0.01"  keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="0.1" ang_damping="0.7" restitution="0">
+            <object name="Fish3" />
+            <object name="Fish3_Collision" collision_type="capsule" mass="1" padding="-4"/>
+        </body>
+        <body  name="cloth_Fish4" enabled="true" template="small_prop" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" pushed_by_mover="false"  friction="0.01"  keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="0.1" ang_damping="0.7" restitution="0">
+            <object name="Fish4" />
+            <object name="Fish4_Collision" collision_type="capsule" mass="1" padding="-4"/>
+        </body>        
+    </bodies>
+
+
+    <constraints>
+        <constraint type="ragdoll" name="matthelzor_constraint_1" enabled="true">
+            <param body_a="cloth_Main_Root" body_b="cloth_Fish1"/>
+            <param pivot="position:Fish1"/>
+            <param twist_axis="xaxis:Fish1" twist_min="-3" twist_max="3" twist_freedom="3"/>
+            <param cone_y="5" cone_z="15" cone_freedom="15"/>
+            <param damping="5" spring_constant="5" min_restitution="0.2" max_restitution="0.2"/>
+        </constraint>
+        <constraint type="ragdoll" name="matthelzor_constraint_2" enabled="true">
+            <param body_a="cloth_Fish1" body_b="cloth_Fish2"/>
+            <param pivot="position:Fish2"/>
+            <param twist_axis="xaxis:Fish2" twist_min="-3" twist_max="3" twist_freedom="3"/>
+            <param cone_y="5" cone_z="15" cone_freedom="15"/>
+            <param damping="5" spring_constant="5" min_restitution="0.2" max_restitution="0.2"/>
+        </constraint>
+        <constraint type="ragdoll" name="matthelzor_constraint_3" enabled="true">
+            <param body_a="cloth_Fish2" body_b="cloth_Fish3"/>
+            <param pivot="position:Fish3"/>
+            <param twist_axis="xaxis:Fish3" twist_min="-3" twist_max="3" twist_freedom="3"/>
+            <param cone_y="5" cone_z="15" cone_freedom="15"/>
+            <param damping="5" spring_constant="5" min_restitution="0.2" max_restitution="0.2"/>
+        </constraint>
+        <constraint type="ragdoll" name="matthelzor_constraint_4" enabled="true">
+            <param body_a="cloth_Fish3" body_b="cloth_Fish4"/>
+            <param pivot="position:Fish4"/>
+            <param twist_axis="xaxis:Fish4" twist_min="-3" twist_max="3" twist_freedom="3"/>
+            <param cone_y="5" cone_z="15" cone_freedom="15"/>
+            <param damping="5" spring_constant="5" min_restitution="0.2" max_restitution="0.2"/>
+        </constraint>
+    </constraints>
+
+
+    <graphics>
+        <object enabled="true" name="g_holy_mackerel" />
+    </graphics>
+    
+</dynamic_object>

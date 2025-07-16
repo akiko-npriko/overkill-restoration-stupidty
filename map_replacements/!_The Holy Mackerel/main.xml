@@ -1,0 +1,38 @@
+<table name="The Holy Mackerel" author="Matthelzor">
+
+	<AssetUpdates id="45559" version="1.0" provider="modworkshop"/>
+	
+	<Localization directory="localization" default="english.json"/>
+
+    <GlobalValue id="tf2_mackerel" color="Color(1.5, 2.0, 0.1)"/>
+
+	<Melee id="holy_mackerel" info_id="bm_melee_holy_mackerel_info" based_on="baton" unit="units/mods/weapons/wpn_fps_mel_holy_mackerel/wpn_fps_mel_holy_mackerel" texture_bundle_folder="mods" dlc="tf2_mackerel" global_value="tf2_mackerel" expire_t="0.61" repeat_expire_t="0.61"> 
+		<sounds equip="baton_equip" hit_air="holy_mackerel_hit_air" hit_gen="holy_mackerel_hit_gen" hit_body="holy_mackerel_hit_body" charge="baton_charge"/>		
+		<stats min_damage="3" max_damage="7" charge_time="3" range="220" concealment="31" expire_t="0.61" repeat_expire_t="0.61"/> 
+		<dot_data type="poison">
+			<custom_data dot_length="1" hurt_animation_chance="0.7"></custom_data>
+		</dot_data>		       
+	</melee>
+	<Sounds directory="assets\sounds">
+		<sound id="holy_mackerel_equip"     path="none.ogg"  prefix="first"/>
+		<sound id="holy_mackerel_hit_air"   path="holy_mackerel_hit_air.ogg"  prefix="first"/>
+		<sound id="holy_mackerel_hit_gen"   path="holy_mackerel_hit_body.ogg"  prefix="first"/>
+		<sound id="holy_mackerel_hit_body"  path="holy_mackerel_hit_body.ogg" prefix="first"/>
+	</Sounds>
+
+    <AddFiles directory="assets">				
+
+       			 <cooked_physics path="units/mods/weapons/wpn_fps_mel_holy_mackerel/wpn_fps_mel_holy_mackerel"/>
+        		 <model path="units/mods/weapons/wpn_fps_mel_holy_mackerel/wpn_fps_mel_holy_mackerel"/>
+       			 <object path="units/mods/weapons/wpn_fps_mel_holy_mackerel/wpn_fps_mel_holy_mackerel"/>
+       			 <unit path="units/mods/weapons/wpn_fps_mel_holy_mackerel/wpn_fps_mel_holy_mackerel"/>
+       			 <material_config path="units/mods/weapons/wpn_fps_mel_holy_mackerel/wpn_fps_mel_holy_mackerel"/>
+			     <material_config path="units/mods/weapons/wpn_fps_mel_holy_mackerel/wpn_fps_mel_holy_mackerel_thq"/>
+
+      		 	 <texture path="units/mods/weapons/wpn_fps_mel_holy_mackerel/holy_mackerel_df"/>
+        		 <texture path="units/mods/weapons/wpn_fps_mel_holy_mackerel/holy_mackerel_nm"/>
+       			 <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/melee_weapons/holy_mackerel"/>
+
+
+	</AddFiles>
+</table>

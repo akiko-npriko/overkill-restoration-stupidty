@@ -1,0 +1,14 @@
+<materials version="3" group="weapon_group">
+    <material name="mtr_bullet" render_template="decal" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_sho_abzats_pts/nothing_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_sho_abzats_pts/nothing_df"/>
+    </material>
+    <material name="mtr_lid" render_template="decal" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_sho_abzats_pts/nothing_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_sho_abzats_pts/nothing_df"/>
+    </material>
+    <material name="mtr_mag" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_dshk_m_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_dshk_m_nm"/>
+    </material>
+</materials>

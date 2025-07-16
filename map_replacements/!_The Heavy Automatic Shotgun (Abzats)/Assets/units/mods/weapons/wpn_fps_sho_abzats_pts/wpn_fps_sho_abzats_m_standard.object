@@ -1,0 +1,37 @@
+<dynamic_object>
+    <diesel orientation_object="rp_wpn_fps_lmg_m249_m_standard" materials="units/mods/weapons/wpn_fps_sho_abzats_pts/wpn_fps_sho_abzats_m_standard"/>
+       
+   <animations>
+		<animation_group name="reload">
+		  <object name="a_reload" enabled="true"/>
+		</animation_group>
+		
+		<animation_group name="reload_not_empty">
+		  <object name="a_reload_not_empty" enabled="true"/>
+		</animation_group>
+	</animations>
+	
+	<graphics>
+        <object enabled="false" name="g_band_1_lod0"/>
+        <object enabled="false" name="g_band_2_lod0"/>
+        <object enabled="false" name="g_band_3_lod0"/>
+        <object enabled="false" name="g_band_4_lod0"/>
+        <object enabled="false" name="g_bullet_1"/>
+        <object enabled="false" name="g_bullet_2"/>
+        <object enabled="false" name="g_bullet_3"/>
+        <object enabled="false" name="g_bullet_4"/>
+        <object enabled="false" name="g_bullet_5"/>
+        <object enabled="false" name="g_bullet_6"/>
+        <object enabled="false" name="g_bullet_7"/>
+        <object enabled="false" name="g_bullet_8"/>
+        <object enabled="false" name="g_bullet_9"/>
+        <object enabled="false" name="g_bullet_10"/>
+        <object enabled="false" name="g_bullet_11"/>
+        <object enabled="false" name="g_bullet_12"/>
+        <object enabled="false" name="g_bullet_13"/>
+        <object enabled="false" name="g_bullet_14"/>
+        <object enabled="false" name="g_bullet_15"/>
+        <object enabled="false" name="g_lid_lod0"/>
+        <object enabled="true" name="g_mag_lod0"/>
+    </graphics>
+</dynamic_object>
