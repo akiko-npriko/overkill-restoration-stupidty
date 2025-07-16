@@ -1,0 +1,12 @@
+<unit type="wpn" slot="1" >
+	<object file="units/mods/weapons/wpn_fps_lmg_xm214a/wpn_fps_lmg_xm214a"/>
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_minigun"/>
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData"/>
+		<extension name="base" class="NewNPCRaycastWeaponBase">
+			<var name="name_id" value="xm214a_crew"/>
+		</extension>
+	</extensions>
+</unit>

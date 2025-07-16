@@ -1,0 +1,19 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_pis_mars_pts/wpn_fps_pis_mars_bolt" orientation_object="rp_mars" />
+	<animations>
+		<animation_group name="recoil">
+			<object name="anim_bolt_lock_recoil" enabled="true" />
+			<object name="anim_elevator_recoil" enabled="true" />
+		</animation_group>
+		<animation_group name="reload">
+			<object name="anim_bolt_lock_reload" enabled="true" />
+			<object name="anim_elevator_reload" enabled="true" />
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_bolt" enabled="true"/>
+		<object name="g_boltlock" enabled="true"/>
+		<object name="g_elevator" enabled="true"/>
+		<object name="g_receiver" enabled="true"/>
+	</graphics>
+</dynamic_object>

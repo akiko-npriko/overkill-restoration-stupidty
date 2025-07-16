@@ -1,0 +1,32 @@
+<table name="Thai Sword">
+
+    <Localization directory="loc" default="english.txt">
+	<loc file="english.txt" language="english"/>
+	</Localization>   
+    <GlobalValue id="iuhThaiSword" color="Color(255, 215, 0)"/>
+      
+    <Melee id="iuhThaiSwordMelee" based_on="agave" info_id="bm_melee_iuhThaiSwordMelee_info" anim_global_param="melee_axe" expire_t = "1" repeat_expire_t = "0.35" melee_charge_shaker="player_melee_charge_wing" unit="units/mods/weapons/iuhThaiSwordMelee/iuhThaiSwordMelee" third_unit="units/mods/weapons/iuhThaiSwordMelee/iuhThaiSwordMelee_third" dlc="iuhThaiSword" global_value="iuhThaiSword">
+        <stats min_damage="7" max_damage="30" charge_time="1" min_damage_effect="1" max_damage_effect="1" range="230" concealment="30" remove_weapon_movement_penalty="true"/>
+        <sounds equip="suitcase_great" hit_air = "iuhThaiSwordMelee_hit" hit_gen = "iuhThaiSwordMelee_hit_object" hit_body = "iuhThaiSwordMelee_hit_flesh" charge="false"/>
+    </Melee>
+
+   
+    <AddFiles directory="assets">
+        <unit_mat path="units/mods/weapons/iuhThaiSwordMelee/iuhThaiSwordMelee"/>
+        <unit_mat path="units/mods/weapons/iuhThaiSwordMelee/iuhThaiSwordMelee_third"/>
+
+		<texture path="units/mods/weapons/iuhThaiSwordMelee/blade_df"/>
+		<texture path="units/mods/weapons/iuhThaiSwordMelee/blade_nm"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/melee_weapons/iuhThaiSwordMelee"/>
+    </AddFiles>
+
+    <Sounds directory="assets\sounds">
+		<sound id="iuhThaiSwordMelee_hit"           path="iuhThaiSwordMelee_hit.ogg" prefix="first"/>
+        <sound id="iuhThaiSwordMelee_hit_flesh"     path="iuhThaiSwordMelee_hit_flesh.ogg" prefix="first"/>
+        <sound id="iuhThaiSwordMelee_hit_object"    path="iuhThaiSwordMelee_hit_object.ogg" prefix="first"/>
+	</Sounds>
+
+</table>
+
+<!--melee_agave-->
+<!--melee_machete-->

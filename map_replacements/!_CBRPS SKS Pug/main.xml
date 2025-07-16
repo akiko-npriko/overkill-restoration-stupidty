@@ -1,0 +1,210 @@
+<mod name="CBRPS SKS Pug" color="Color(0.01,0.62,0.98)">
+	<Localization directory="loc" default="english.txt"/>
+	<AssetUpdates id="24090" version="1.12" provider="modworkshop"/>
+	<GlobalValue id="skspugmod" color="Color(0.7, 0.2, 0.1)"/>
+	<WeaponMod id="wpn_fps_ass_skspug_barrel" based_on="wpn_fps_sho_basset_b_standard" wpn_pts="wpn_fps_ass_skspug" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_ass_skspug_body" based_on="wpn_fps_sho_basset_body_standard" wpn_pts="wpn_fps_ass_skspug" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_ass_skspug_bolt" based_on="wpn_fps_sho_basset_bolt" wpn_pts="wpn_fps_ass_skspug" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_ass_skspug_grip" based_on="wpn_fps_sho_basset_body_standard" type="grip" wpn_pts="wpn_fps_ass_skspug" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_ass_skspug_handguard" based_on="wpn_fps_sho_basset_body_standard" type="foregrip" wpn_pts="wpn_fps_ass_skspug" hidden="true" ver="2">
+		<forbids>
+			<value_node value="wpn_fps_upg_skspug_barrel_short"/>
+		</forbids>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_skspug_irons_front" based_on="wpn_fps_upg_o_dd_front" type="front_sight" a_obj="a_of" parent="foregrip" wpn_pts="wpn_fps_ass_skspug" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_ass_skspug_irons_rear" based_on="wpn_fps_m4_uupg_o_flipup" a_obj="a_or" wpn_pts="wpn_fps_ass_skspug" hidden="true" ver="2">
+		<adds>
+			<value_node value="wpn_fps_ass_skspug_irons_front"/>
+		</adds>
+		<stance_mod>
+			<wpn_fps_ass_skspug translation="-0.015 -8 -0.29"/>
+		</stance_mod>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_skspug_mag" based_on="wpn_fps_smg_cobray_m_standard" wpn_pts="wpn_fps_ass_skspug" hidden="true" ver="2">
+		<stats reload="1"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_skspug_rec" based_on="wpn_fps_sho_basset_body_standard" type="upper_reciever" wpn_pts="wpn_fps_ass_skspug" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_ass_skspug_stock" based_on="wpn_fps_sho_basset_body_standard" type="stock" wpn_pts="wpn_fps_ass_skspug" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_upg_skspug_barrel_long" based_on="wpn_fps_sho_basset_b_standard" wpn_pts="wpn_fps_ass_skspug" ver="2">
+		<stats spread="2" concealment="-2"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_skspug_barrel_short" based_on="wpn_fps_sho_basset_b_standard" wpn_pts="wpn_fps_ass_skspug" ver="2">
+		<stats spread="-2" concealment="2"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_skspug_handguard_railcover" based_on="wpn_fps_sho_basset_body_standard" type="extra" wpn_pts="wpn_fps_ass_skspug" ver="2"/>
+
+	<WeaponMod id="wpn_fps_upg_skspug_handguard_short" based_on="wpn_fps_sho_basset_body_standard" type="foregrip" wpn_pts="wpn_fps_ass_skspug" ver="2">
+		<stats recoil="-2" concealment="2"/>
+		<override>
+			<wpn_fps_upg_skspug_handguard_railcover unit="units/mods/weapons/wpn_fps_ass_skspug_pts/wpn_fps_upg_skspug_handguard_railcover_short"/>
+		</override>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_skspug_mag_30" based_on="wpn_fps_smg_cobray_m_standard" has_description="true" wpn_pts="wpn_fps_ass_skspug" ver="2">
+		<stats recoil="1" concealment="-1" extra_ammo="5" reload="-1"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_skspug_stock_ext" based_on="wpn_fps_sho_basset_body_standard" type="stock" wpn_pts="wpn_fps_ass_skspug" ver="2">
+		<stats recoil="1" concealment="-1"/>
+	</WeaponMod>
+	<Weapon unlock_level="38">
+		<weapon id="skspug" based_on="basset" FIRE_MODE="single" CAN_TOGGLE_FIREMODE="false" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="4" muzzleflash="effects/payday2/particles/weapons/big_762_auto_fps" shell_ejection="effects/payday2/particles/weapons/shells/shell_556" ammo_pickup="8" global_value="skspugmod">
+			<categories>
+				<value_node value="wpn_special"/>
+				<value_node value="assault_rifle"/>
+			</categories>
+			<stats damage="122" spread="17" spread_moving="17" recoil="13" concealment="20"/>
+			<fire_mode_data fire_rate="0.1333333333333333"/>
+			<kick>
+				<standing>
+					<value_node value="1.6"/>
+					<value_node value="1.4"/>
+					<value_node value="-0.8"/>
+					<value_node value="0.8"/>
+				</standing>
+				<crouching>
+					<value_node value="1.5"/>
+					<value_node value="1.3"/>
+					<value_node value="-0.6"/>
+					<value_node value="0.6"/>
+				</crouching>
+				<steelsight>
+					<value_node value="1.5"/>
+					<value_node value="1.3"/>
+					<value_node value="-0.6"/>
+					<value_node value="0.6"/>
+				</steelsight>
+			</kick>
+			<crosshair>
+				<standing offset="1.14" moving_offset="1.8" kick_offset="1.6"/>
+				<crouching offset="1.1" moving_offset="1.6" kick_offset="1.4"/>
+				<steelsight hidden="true" offset="1" moving_offset="1" kick_offset="1.14"/>
+			</crosshair>
+			<spread standing="3" crouching="1.2" steelsight="1.2" moving_standing="3" moving_crouching="3"/>
+			<sounds fire="skspug_fire" fire_single="skspug_fire">
+				<reload wp_foley_generic_lever_release="skspug_bolt_close"/>
+			</sounds>
+			<shake fire_multiplier="1" fire_steelsight_multiplier="0.8"/>
+			<animations reload_name_id="basset"/>
+		</weapon>
+		<factory id="wpn_fps_ass_skspug" unit="units/mods/weapons/wpn_fps_ass_skspug/wpn_fps_ass_skspug">
+			<animations reload="reload" fire="recoil" fire_steelsight="recoil" reload_not_empty="reload_not_empty"/>
+			<adds/>
+			<override/>
+			<default_blueprint>
+				<value_node value="wpn_fps_ass_skspug_barrel"/>
+				<value_node value="wpn_fps_ass_skspug_body"/>
+				<value_node value="wpn_fps_ass_skspug_bolt"/>
+				<value_node value="wpn_fps_ass_skspug_grip"/>
+				<value_node value="wpn_fps_ass_skspug_handguard"/>
+				<value_node value="wpn_fps_ass_skspug_irons_rear"/>
+				<value_node value="wpn_fps_ass_skspug_mag"/>
+				<value_node value="wpn_fps_ass_skspug_rec"/>
+				<value_node value="wpn_fps_ass_skspug_stock"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_ass_skspug_barrel"/>
+				<value_node value="wpn_fps_ass_skspug_body"/>
+				<value_node value="wpn_fps_ass_skspug_bolt"/>
+				<value_node value="wpn_fps_ass_skspug_grip"/>
+				<value_node value="wpn_fps_ass_skspug_handguard"/>
+				<value_node value="wpn_fps_ass_skspug_irons_rear"/>
+				<value_node value="wpn_fps_ass_skspug_mag"/>
+				<value_node value="wpn_fps_ass_skspug_rec"/>
+				<value_node value="wpn_fps_ass_skspug_stock"/>
+
+				<value_node value="wpn_fps_upg_skspug_barrel_long"/>
+				<value_node value="wpn_fps_upg_skspug_barrel_short"/>
+				<value_node value="wpn_fps_upg_skspug_handguard_railcover"/>
+				<value_node value="wpn_fps_upg_skspug_handguard_short"/>
+				<value_node value="wpn_fps_upg_skspug_mag_30"/>
+				<value_node value="wpn_fps_upg_skspug_stock_ext"/>
+
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_v6"/>
+				<value_node value="wpn_fps_ass_shak12_ns_muzzle"/>
+				<value_node value="wpn_fps_lmg_hk51b_ns_jcomp"/>
+				<value_node value="wpn_fps_lmg_kacchainsaw_ns_muzzle"/>
+				<value_node value="wpn_fps_lmg_kacchainsaw_ns_suppressor"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/>
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_specter_piggyback"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_cs_piggyback"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+				<value_node value="wpn_fps_upg_o_bmg"/>
+				<value_node value="wpn_fps_upg_o_uh"/>
+				<value_node value="wpn_fps_upg_o_fc1"/>
+				<value_node value="wpn_fps_upg_o_sig"/>
+				<value_node value="wpn_fps_upg_o_tf90"/>
+				<value_node value="wpn_fps_upg_o_poe"/>
+				<value_node value="wpn_fps_upg_o_hamr"/>
+				<value_node value="wpn_fps_upg_o_hamr_reddot"/>
+				<value_node value="wpn_fps_upg_o_atibal"/>
+				<value_node value="wpn_fps_upg_o_atibal_reddot"/>
+				<value_node value="wpn_fps_upg_o_health"/>
+			</uses_parts>
+		</factory>
+		<stance>
+			<standard>
+				<shoulders rotation="-0 -0.00872654 0 -0.999962" translation="-2.801 -2.028 0.375"/>
+			</standard>
+			<crouched>
+				<shoulders rotation="-0 0.0871558 -0 -0.996195" translation="-3.841 -1.028 -3.831"/>
+			</crouched>
+			<steelsight>
+				<shoulders rotation="-0 -0 0 -1" translation="-11.841 0.972 2.169"/>
+			</steelsight>
+		</stance>
+	</Weapon>
+	<Sounds directory="assets\sounds">
+		<sound id="skspug_fire" path="skspug_regular.ogg" prefix="regular"/>
+		<sound id="skspug_fire" path="skspug_suppressed.ogg" prefix="suppressed_a"/>
+		<sound id="skspug_fire" path="skspug_suppressed.ogg" prefix="suppressed_b"/>
+		<sound id="skspug_fire" path="skspug_suppressed.ogg" prefix="suppressed_c"/>
+		<sound id="skspug_bolt_close" path="skspug_bolt_close.ogg" prefix="first"/>
+		<sound id="skspug_bolt_close" path="skspug_bolt_close.ogg" prefix="third"/>
+	</Sounds>
+	<AddFiles directory="assets" auto_generate="true"/>
+	<Hooks directory="hooks">
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
+	</Hooks>
+</mod>

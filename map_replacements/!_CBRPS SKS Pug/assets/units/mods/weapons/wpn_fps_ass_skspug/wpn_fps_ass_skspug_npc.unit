@@ -1,0 +1,12 @@
+<unit type="wpn" slot="1" >
+	<object file="units/mods/weapons/wpn_fps_ass_skspug/wpn_fps_ass_skspug" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_basset"/>
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="base" class="NewNPCRaycastWeaponBase" >
+			<var name="name_id" value="skspug_crew" />
+		</extension>
+	</extensions>
+</unit>
