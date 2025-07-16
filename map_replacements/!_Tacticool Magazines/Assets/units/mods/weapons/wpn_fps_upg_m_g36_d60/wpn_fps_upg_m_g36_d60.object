@@ -1,0 +1,17 @@
+<dynamic_object>
+    <diesel orientation_object="rp_mag" materials="units/mods/weapons/wpn_fps_upg_m_g36_d60/wpn_fps_upg_m_g36_d60" />
+   <animations>
+    <animation_group name="reload">
+      <object name="mag_align" enabled="true" />
+    </animation_group>    
+	<animation_group name="reload_not_empty">
+      <object name="mag_align_2" enabled="true" />
+    </animation_group>
+  </animations>
+   <graphics>
+        <object enabled="true" name="g_mag" />
+        <object enabled="true" name="g_bullet_1" />
+        <object enabled="true" name="g_bullet_2" />
+        <object enabled="true" name="g_bullet_3" />
+    </graphics>
+</dynamic_object>

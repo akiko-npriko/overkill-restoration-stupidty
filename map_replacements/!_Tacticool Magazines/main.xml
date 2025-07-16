@@ -1,0 +1,869 @@
+<mod name="Tacticool Magazines" min_lib_ver="3.38">
+	<Localization directory="loc" default="english.txt"/>
+	<GlobalValue id="frenchy" color="Color(0.71, 0.19, 0.42)"/>
+	
+	<WeaponMod id="wpn_fps_upg_m_dura" based_on="wpn_fps_m4_uupg_m_std" type="magazine" inherit_weapons="true" inherit_adds="true" inherit_override="true" unit="units/mods/weapons/wpn_fps_upg_m_dura/wpn_fps_upg_m_dura" global_value="frenchy" >
+		<stats extra_ammo="0" concealment="1" />
+		<override_weapon CLIP_AMMO_MAX="30"/>
+		<bullet_objects prefix = "g_bullet_" amount="2"/>
+		<texture_variants>	
+			<grey name_id="bm_paint_dura_grey" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_dura/colors/wpn_fps_upg_m_dura_grey"/>
+			<pink name_id="bm_paint_dura_pink" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_dura/colors/wpn_fps_upg_m_dura_pink"/>
+			<red name_id="bm_paint_dura_red" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_dura/colors/wpn_fps_upg_m_dura_red"/>
+			<blue name_id="bm_paint_dura_blue" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_dura/colors/wpn_fps_upg_m_dura_blue"/>
+			<bronze name_id="bm_paint_dura_bronze" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_dura/colors/wpn_fps_upg_m_dura_bronze"/>
+			<od name_id="bm_paint_dura_od" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_dura/colors/wpn_fps_upg_m_dura_od"/>
+			<gold name_id="bm_paint_dura_gold" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_dura/colors/wpn_fps_upg_m_dura_gold"/>
+		</texture_variants>
+		<weapons>
+			<value_node value="wpn_fps_ass_ak5"/>
+			<value_node value="wpn_fps_ass_amcar"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_hajk"/>
+	        <value_node value="wpn_fps_ass_komodo"/>
+		    <value_node value="wpn_fps_ass_l85a2"/>
+		    <value_node value="wpn_fps_ass_m16"/>			
+		    <value_node value="wpn_fps_ass_m4"/>
+			<value_node value="wpn_fps_ass_aug"/>
+		</weapons>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_d60" based_on="wpn_fps_m4_uupg_m_std" type="magazine" inherit="true" unit="units/mods/weapons/wpn_fps_upg_m_d60/wpn_fps_upg_m_d60" global_value="frenchy"  >
+		<stats extra_ammo="0" concealment="-4" />
+		<override_weapon CLIP_AMMO_MAX="60"/>
+		<bullet_objects prefix = "g_bullet_" amount="3"/>
+		<texture_variants>	
+			<fde name_id="bm_paint_d60_fde" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_d60/colors/wpn_fps_upg_m_d60_fde"/>
+		</texture_variants>
+		<weapons>
+			<value_node value="wpn_fps_ass_ak5"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_hajk"/>
+	        <value_node value="wpn_fps_ass_komodo"/>
+		    <value_node value="wpn_fps_ass_l85a2"/>
+		    <value_node value="wpn_fps_ass_m16"/>			
+		    <value_node value="wpn_fps_ass_m4"/>	
+			<value_node value="wpn_fps_ass_aug"/>
+		</weapons>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_p10" based_on="wpn_fps_m4_uupg_m_std" type="magazine" inherit="true" unit="units/mods/weapons/wpn_fps_upg_m_p10/wpn_fps_upg_m_p10" is_a_unlockable="true" global_value="frenchy" >
+		<stats extra_ammo="0" concealment="3" />
+		<override_weapon CLIP_AMMO_MAX="10"/>
+		<bullet_objects prefix = "g_bullet_" amount="2"/>
+		<texture_variants>	
+			<fde name_id="bm_paint_p10_fde" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_p10/colors/wpn_fps_upg_m_p10_fde"/>
+		</texture_variants>
+		<weapons>
+			<value_node value="wpn_fps_ass_ak5"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_hajk"/>
+	          <value_node value="wpn_fps_ass_komodo"/>
+		     <value_node value="wpn_fps_ass_l85a2"/>
+		     <value_node value="wpn_fps_ass_m16"/>			
+		     <value_node value="wpn_fps_ass_m4"/>
+			<value_node value="wpn_fps_ass_aug"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_p20" based_on="wpn_fps_m4_uupg_m_std" type="magazine" inherit="true" unit="units/mods/weapons/wpn_fps_upg_m_p20/wpn_fps_upg_m_p20" is_a_unlockable="true" global_value="frenchy" >
+		<stats extra_ammo="0" concealment="1" />
+		<override_weapon CLIP_AMMO_MAX="20"/>
+		<bullet_objects prefix = "g_bullet_" amount="2"/>
+		<texture_variants>	
+			<fde name_id="bm_paint_p20_fde" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_p20/colors/wpn_fps_upg_m_p20_fde"/>
+		</texture_variants>
+		<weapons>
+			<value_node value="wpn_fps_ass_ak5"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_hajk"/>
+	          <value_node value="wpn_fps_ass_komodo"/>
+		     <value_node value="wpn_fps_ass_l85a2"/>
+		     <value_node value="wpn_fps_ass_m16"/>			
+		     <value_node value="wpn_fps_ass_m4"/>
+			<value_node value="wpn_fps_ass_aug"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_p30" based_on="wpn_fps_m4_uupg_m_std" type="magazine" inherit="true" unit="units/mods/weapons/wpn_fps_upg_m_p30/wpn_fps_upg_m_p30" global_value="frenchy" >
+		<stats extra_ammo="0" recoil="1" concealment="0" />
+		<override_weapon CLIP_AMMO_MAX="30"/>
+		<bullet_objects prefix = "g_bullet_" amount="2"/>
+		<texture_variants>	
+			<fde name_id="bm_paint_p30_fde" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_p30/colors/wpn_fps_upg_m_p30_fde"/>
+			<tofu name_id="bm_paint_p30_tofu" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_p30/colors/wpn_fps_upg_m_p30_tofu"/>
+		</texture_variants>
+		<weapons>
+			<value_node value="wpn_fps_ass_ak5"/>
+			<value_node value="wpn_fps_ass_amcar"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_hajk"/>
+	          <value_node value="wpn_fps_ass_komodo"/>
+		     <value_node value="wpn_fps_ass_l85a2"/>
+		     <value_node value="wpn_fps_ass_m16"/>			
+		     <value_node value="wpn_fps_ass_m4"/>	
+			<value_node value="wpn_fps_ass_aug"/>
+		</weapons>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_p30w" based_on="wpn_fps_m4_uupg_m_std" type="magazine" inherit="true" unit="units/mods/weapons/wpn_fps_upg_m_p30w/wpn_fps_upg_m_p30w" global_value="frenchy" >
+		<stats extra_ammo="0" recoil="1" concealment="0"/>
+		<override_weapon CLIP_AMMO_MAX="30"/>
+		<bullet_objects prefix = "g_bullet_" amount="11"/>
+		<texture_variants>	
+			<fde name_id="bm_paint_p30w_fde" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_p30w/colors/wpn_fps_upg_m_p30w_fde"/>
+		</texture_variants>
+		<weapons>
+			<value_node value="wpn_fps_ass_ak5"/>
+			<value_node value="wpn_fps_ass_amcar"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_hajk"/>
+	          <value_node value="wpn_fps_ass_komodo"/>
+		     <value_node value="wpn_fps_ass_l85a2"/>
+		     <value_node value="wpn_fps_ass_m16"/>			
+		     <value_node value="wpn_fps_ass_m4"/>	
+			 <value_node value="wpn_fps_ass_aug"/>
+		</weapons>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_p40" based_on="wpn_fps_m4_uupg_m_std" type="magazine" inherit="true" unit="units/mods/weapons/wpn_fps_upg_m_p40/wpn_fps_upg_m_p40" global_value="frenchy" >
+		<stats extra_ammo="0" concealment="-1" />
+		<override_weapon CLIP_AMMO_MAX="40"/>
+		<bullet_objects prefix = "g_bullet_" amount="2"/>
+		<texture_variants>	
+			<fde name_id="bm_paint_p40_fde" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_p40/colors/wpn_fps_upg_m_p40_fde"/>
+		</texture_variants>
+			<pcs/>
+		<weapons>
+			<value_node value="wpn_fps_ass_ak5"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_hajk"/>
+	        <value_node value="wpn_fps_ass_komodo"/>
+		    <value_node value="wpn_fps_ass_l85a2"/>
+			<value_node value="wpn_fps_ass_m16"/>			
+		    <value_node value="wpn_fps_ass_m4"/>
+			<value_node value="wpn_fps_ass_aug"/>
+		</weapons>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_battle" based_on="wpn_fps_m4_uupg_m_std" type="magazine" inherit="true" unit="units/mods/weapons/wpn_fps_upg_m_battle/wpn_fps_upg_m_battle" global_value="frenchy" >
+		<stats extra_ammo="0" recoil="1" concealment="0" />
+		<override_weapon CLIP_AMMO_MAX="30"/>
+		<bullet_objects prefix = "g_bullet_" amount="2"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_ak5"/>
+			<value_node value="wpn_fps_ass_amcar"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_hajk"/>
+	        <value_node value="wpn_fps_ass_komodo"/>
+		    <value_node value="wpn_fps_ass_l85a2"/>
+		    <value_node value="wpn_fps_ass_m16"/>			
+		    <value_node value="wpn_fps_ass_m4"/>
+			<value_node value="wpn_fps_ass_aug"/>
+		</weapons>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_poly" based_on="wpn_fps_m4_uupg_m_std" type="magazine" inherit="true" unit="units/mods/weapons/wpn_fps_upg_m_poly/wpn_fps_upg_m_poly" global_value="frenchy" >
+		<stats extra_ammo="0" recoil="1" concealment="0" />
+		<override_weapon CLIP_AMMO_MAX="30"/>
+		<bullet_objects prefix = "g_bullet_" amount="2"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_ak5"/>
+			<value_node value="wpn_fps_ass_amcar"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_hajk"/>
+	          <value_node value="wpn_fps_ass_komodo"/>
+		     <value_node value="wpn_fps_ass_l85a2"/>
+		     <value_node value="wpn_fps_ass_m16"/>			
+		     <value_node value="wpn_fps_ass_m4"/>
+			<value_node value="wpn_fps_ass_aug"/>
+		</weapons>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_hksteel" based_on="wpn_fps_m4_uupg_m_std" type="magazine" inherit="true" unit="units/mods/weapons/wpn_fps_upg_m_hksteel/wpn_fps_upg_m_hksteel" global_value="frenchy" >
+		<stats recoil="1" extra_ammo="0" concealment="0" />
+		<bullet_objects prefix = "g_bullet_" amount="2"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_ak5"/>
+			<value_node value="wpn_fps_ass_amcar"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_hajk"/>
+	        <value_node value="wpn_fps_ass_komodo"/>
+		    <value_node value="wpn_fps_ass_l85a2"/>
+		    <value_node value="wpn_fps_ass_m16"/>			
+		    <value_node value="wpn_fps_ass_m4"/>
+		</weapons>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_gen2" based_on="wpn_fps_m4_uupg_m_std" type="magazine" inherit="true" unit="units/mods/weapons/wpn_fps_upg_m_gen2/wpn_fps_upg_m_gen2" global_value="frenchy" >
+		<stats extra_ammo="0" recoil="1" concealment="0" />
+		<override_weapon CLIP_AMMO_MAX="30"/>
+		<bullet_objects prefix = "g_bullet_" amount="2"/>
+		<texture_variants>	
+			<fde name_id="bm_paint_gen2_fde" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_gen2/colors/wpn_fps_upg_m_gen2_fde"/>
+		</texture_variants>
+		<weapons>
+			<value_node value="wpn_fps_ass_ak5"/>
+			<value_node value="wpn_fps_ass_amcar"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_hajk"/>
+	          <value_node value="wpn_fps_ass_komodo"/>
+		     <value_node value="wpn_fps_ass_l85a2"/>
+		     <value_node value="wpn_fps_ass_m16"/>			
+		     <value_node value="wpn_fps_ass_m4"/>
+			<value_node value="wpn_fps_ass_aug"/>
+		</weapons>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_plum" based_on="wpn_fps_ass_74_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_upg_m_plum/wpn_fps_upg_m_plum" global_value="frenchy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" >
+		<stats extra_ammo="0" recoil="1" concealment="0" />
+		<override_weapon CLIP_AMMO_MAX="30"/>
+		<bullet_objects prefix = "g_bullet_" amount="1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_74"/>
+			<value_node value="wpn_fps_ass_flint"/>
+			<value_node value="wpn_fps_ass_groza"/>
+			<value_node value="wpn_fps_smg_akmsu"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_10rs" based_on="wpn_fps_ass_74_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_upg_m_10rs/wpn_fps_upg_m_10rs" global_value="frenchy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" >
+		<stats extra_ammo="0" recoil="0" concealment="3" />
+		<override_weapon CLIP_AMMO_MAX="10"/>
+		<bullet_objects prefix = "g_bullet_" amount="1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_74"/>
+			<value_node value="wpn_fps_ass_flint"/>
+			<value_node value="wpn_fps_smg_akmsu"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_45r" based_on="wpn_fps_ass_74_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_upg_m_45r/wpn_fps_upg_m_45r" global_value="frenchy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" >
+		<stats extra_ammo="0" recoil="1" concealment="-2" />
+		<override_weapon CLIP_AMMO_MAX="45"/>
+		<bullet_objects prefix = "g_bullet_" amount="1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_74"/>
+			<value_node value="wpn_fps_ass_flint"/>
+			<value_node value="wpn_fps_ass_groza"/>
+			<value_node value="wpn_fps_smg_akmsu"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_rpk45" based_on="wpn_fps_ass_74_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_upg_m_rpk45/wpn_fps_upg_m_rpk45" global_value="frenchy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" >
+		<stats extra_ammo="0" recoil="1" concealment="-2" />
+		<override_weapon CLIP_AMMO_MAX="45"/>
+		<bullet_objects prefix = "g_bullet_" amount="1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_74"/>
+			<value_node value="wpn_fps_ass_flint"/>
+			<value_node value="wpn_fps_ass_groza"/>
+			<value_node value="wpn_fps_smg_akmsu"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_545pmag" based_on="wpn_fps_ass_74_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_upg_m_545pmag/wpn_fps_upg_m_545pmag" global_value="frenchy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" >
+		<stats extra_ammo="0" recoil="1" concealment="1" />
+		<override_weapon CLIP_AMMO_MAX="30"/>
+		<bullet_objects prefix = "g_bullet_" amount="1"/>
+		<texture_variants>	
+			<fde name_id="bm_paint_545pmag_fde" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_545pmag/colors/wpn_fps_upg_m_545pmag_fde"/>
+		</texture_variants>
+		<weapons>
+			<value_node value="wpn_fps_ass_74"/>
+			<value_node value="wpn_fps_ass_flint"/>
+			<value_node value="wpn_fps_ass_groza"/>
+			<value_node value="wpn_fps_smg_akmsu"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_rpkd" based_on="wpn_fps_ass_74_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_upg_m_rpkd/wpn_fps_upg_m_rpkd" global_value="frenchy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" >
+		<stats extra_ammo="0" recoil="3" concealment="-7" />
+		<override_weapon CLIP_AMMO_MAX="95"/>
+		<bullet_objects prefix = "g_bullet_" amount="1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_74"/>
+			<value_node value="wpn_fps_ass_flint"/>
+			<value_node value="wpn_fps_ass_groza"/>
+			<value_node value="wpn_fps_smg_akmsu"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_6l10" based_on="wpn_upg_ak_m_akm" type="magazine" unit="units/mods/weapons/wpn_fps_upg_m_6l10/wpn_fps_upg_m_6l10" global_value="frenchy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" >
+		<stats extra_ammo="0" recoil="0" concealment="0" />
+		<override_weapon CLIP_AMMO_MAX="30"/>
+		<bullet_objects prefix = "g_bullet_" amount="1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_akm"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_103" based_on="wpn_upg_ak_m_akm" type="magazine" unit="units/mods/weapons/wpn_fps_upg_m_103/wpn_fps_upg_m_103" global_value="frenchy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" >
+		<stats extra_ammo="0" recoil="0" concealment="0" />
+		<override_weapon CLIP_AMMO_MAX="30"/>
+		<bullet_objects prefix = "g_bullet_" amount="1"/>
+		<texture_variants>	
+			<banana name_id="bm_paint_103_banana" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_103/colors/wpn_fps_upg_m_103_banana"/>
+			<tofu name_id="bm_paint_103_tofu" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_103/colors/wpn_fps_upg_m_103_tofu"/>
+		</texture_variants>
+		<weapons>
+			<value_node value="wpn_fps_ass_akm"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_762pmag" based_on="wpn_upg_ak_m_akm" type="magazine" unit="units/mods/weapons/wpn_fps_upg_m_762pmag/wpn_fps_upg_m_762pmag" global_value="frenchy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" >
+		<stats extra_ammo="0" recoil="1" concealment="1" />
+		<override_weapon CLIP_AMMO_MAX="30"/>
+		<bullet_objects prefix = "g_bullet_" amount="1"/>
+		<texture_variants>	
+			<fde name_id="bm_paint_762pmag_fde" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_762pmag/colors/wpn_fps_upg_m_762pmag_fde"/>
+			<banana name_id="bm_paint_762pmag_banana" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_762pmag/colors/wpn_fps_upg_m_762pmag_banana"/>
+		</texture_variants>
+		<weapons>
+			<value_node value="wpn_fps_ass_akm"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_762rpk75" based_on="wpn_upg_ak_m_akm" type="magazine" unit="units/mods/weapons/wpn_fps_upg_m_762rpk75/wpn_fps_upg_m_762rpk75" global_value="frenchy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" >
+		<stats extra_ammo="0" recoil="2" concealment="-3" />
+		<override_weapon CLIP_AMMO_MAX="75"/>
+		<bullet_objects prefix = "g_bullet_" amount="1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_akm"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_palm" based_on="wpn_upg_ak_m_akm" type="magazine" unit="units/mods/weapons/wpn_fps_upg_m_palm/wpn_fps_upg_m_palm" global_value="frenchy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" >
+		<stats extra_ammo="0" recoil="1" concealment="1" />
+		<override_weapon CLIP_AMMO_MAX="30"/>
+		<bullet_objects prefix = "g_bullet_" amount="1"/>
+		<texture_variants>	
+			<fde name_id="bm_paint_palm_fde" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_palm/colors/wpn_fps_upg_m_palm_fde"/>
+		</texture_variants>
+		<weapons>
+			<value_node value="wpn_fps_ass_akm"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_promagd" based_on="wpn_upg_ak_m_akm" type="magazine" unit="units/mods/weapons/wpn_fps_upg_m_promagd/wpn_fps_upg_m_promagd" global_value="frenchy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" >
+		<stats extra_ammo="0" recoil="2" concealment="-3" />
+		<override_weapon CLIP_AMMO_MAX="73"/>
+		<bullet_objects prefix = "g_bullet_" amount="1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_akm"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_rpk40" based_on="wpn_upg_ak_m_akm" type="magazine" unit="units/mods/weapons/wpn_fps_upg_m_rpk40/wpn_fps_upg_m_rpk40" global_value="frenchy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" >
+		<stats extra_ammo="0" recoil="0" concealment="-1" />
+		<override_weapon CLIP_AMMO_MAX="40"/>
+		<bullet_objects prefix = "g_bullet_" amount="1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_akm"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_rpkbake" based_on="wpn_upg_ak_m_akm" type="magazine" unit="units/mods/weapons/wpn_fps_upg_m_rpkbake/wpn_fps_upg_m_rpkbake" global_value="frenchy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" >
+		<stats extra_ammo="0" recoil="0" concealment="-1" />
+		<override_weapon CLIP_AMMO_MAX="40"/>
+		<bullet_objects prefix = "g_bullet_" amount="1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_akm"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_x47" based_on="wpn_upg_ak_m_akm" type="magazine" unit="units/mods/weapons/wpn_fps_upg_m_x47/wpn_fps_upg_m_x47" global_value="frenchy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" >
+		<stats extra_ammo="0" recoil="1" concealment="-2" />
+		<override_weapon CLIP_AMMO_MAX="50"/>
+		<bullet_objects prefix = "g_bullet_" amount="1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_akm"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_308pmag" based_on="wpn_fps_snp_tti_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_upg_m_308pmag/wpn_fps_upg_m_308pmag" global_value="frenchy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" >
+		<stats extra_ammo="0" recoil="0" concealment="1" />
+		<override_weapon CLIP_AMMO_MAX="20" />
+		<bullet_objects prefix = "g_bullet_" amount="2"/>
+		<weapons>
+			<value_node value="wpn_fps_snp_tti"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_kac10" based_on="wpn_fps_snp_tti_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_upg_m_kac10/wpn_fps_upg_m_kac10" global_value="frenchy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" >
+		<stats extra_ammo="0" recoil="0" concealment="2" />
+		<override_weapon CLIP_AMMO_MAX="10"/>
+		<bullet_objects prefix = "g_bullet_" amount="1"/>
+		<weapons>
+			<value_node value="wpn_fps_snp_tti"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_308dmmag" based_on="wpn_fps_snp_tti_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_upg_m_308dmmag/wpn_fps_upg_m_308dmmag" global_value="frenchy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" >
+		<stats damage="-40" extra_ammo="0" recoil="4" concealment="4" />
+		<override_weapon CLIP_AMMO_MAX="30" AMMO_MAX = "90" />
+		<override_weapon_add fire_rate = "600" />
+		<bullet_objects prefix = "g_bullet_" amount="1"/>
+		<weapons>
+			<value_node value="wpn_fps_snp_tti"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_kac20" based_on="wpn_fps_snp_tti_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_upg_m_kac20/wpn_fps_upg_m_kac20" global_value="frenchy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" >
+		<stats extra_ammo="0" recoil="1" concealment="-1" />
+		<override_weapon CLIP_AMMO_MAX="20"/>
+		<bullet_objects prefix = "g_bullet_" amount="1"/>
+		<weapons>
+			<value_node value="wpn_fps_snp_tti"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_sgmt" based_on="wpn_fps_pis_g18c_m_mag_33rnd" type="magazine" unit="units/mods/weapons/wpn_fps_upg_m_sgmt/wpn_fps_upg_m_sgmt" global_value="frenchy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" >
+		<stats extra_ammo="0" recoil="1" concealment="-3" />
+		<override_weapon CLIP_AMMO_MAX="50"/>
+		<bullet_objects prefix = "g_bullet_" amount="1"/>
+		<weapons>
+			<value_node value="wpn_fps_pis_g17"/>
+			<value_node value="wpn_fps_pis_g26"/>
+			<value_node value="wpn_fps_pis_g22c"/>
+			<value_node value="wpn_fps_pis_g18c"/>
+			<value_node value="wpn_fps_pis_x_g17"/>
+			<value_node value="wpn_fps_pis_x_g26"/>
+			<value_node value="wpn_fps_pis_x_g18c"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_celerity" based_on="wpn_fps_pis_g18c_m_mag_33rnd" type="magazine" unit="units/mods/weapons/wpn_fps_upg_m_celerity/wpn_fps_upg_m_celerity" global_value="frenchy" drop="false" texture_bundle_folder="mods" inherit_weapons="true" inherit_adds="true" inherit_override="true" is_a_unlockable="true" >
+		<stats extra_ammo="0" recoil="1" concealment="-1" />
+		<override_weapon CLIP_AMMO_MAX="30"/>
+		<weapons>
+			<value_node value="wpn_fps_pis_g17"/>
+			<value_node value="wpn_fps_pis_g26"/>
+			<value_node value="wpn_fps_pis_g22c"/>
+			<value_node value="wpn_fps_pis_g18c"/>
+			<value_node value="wpn_fps_pis_x_g17"/>
+			<value_node value="wpn_fps_pis_x_g26"/>
+			<value_node value="wpn_fps_pis_x_g18c"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_vecsgmt" based_on="wpn_fps_smg_polymer_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_upg_m_vecsgmt/wpn_fps_upg_m_vecsgmt" global_value="frenchy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" >
+		<stats extra_ammo="0" recoil="1" concealment="-3" />
+		<override_weapon CLIP_AMMO_MAX="50"/>
+		<bullet_objects prefix = "g_bullet_" amount="1"/>
+		<weapons>
+			<value_node value="wpn_fps_smg_polymer"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_d60boot" based_on="wpn_fps_ass_tecci_m_drum" type="magazine" ver="2">
+		<stats extra_ammo="0" concealment="2" />
+		<override_weapon CLIP_AMMO_MAX="60"/>
+		<bullet_objects prefix = "g_bullet_" amount="3"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_tecci"/>
+		</weapons>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_mpx20" based_on="wpn_fps_smg_shepheard_mag_standard" type="magazine" ver="2">
+		<stats extra_ammo="0" concealment="1" />
+		<override_weapon CLIP_AMMO_MAX="20"/>
+		<weapons>
+			<value_node value="wpn_fps_smg_shepheard"/>
+		</weapons>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_mpx30" based_on="wpn_fps_smg_shepheard_mag_standard" type="magazine" ver="2">
+		<stats extra_ammo="0" concealment="-1" />
+		<override_weapon CLIP_AMMO_MAX="30"/>
+		<weapons>
+			<value_node value="wpn_fps_smg_shepheard"/>
+		</weapons>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_mpxdrum" based_on="wpn_fps_smg_shepheard_mag_standard" type="magazine" ver="2">
+		<stats extra_ammo="0" concealment="-2" />
+		<override_weapon CLIP_AMMO_MAX="50"/>
+		<weapons>
+			<value_node value="wpn_fps_smg_shepheard"/>
+		</weapons>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_mpxtti" based_on="wpn_fps_smg_shepheard_mag_standard" type="magazine" ver="2">
+		<stats extra_ammo="0" concealment="-1" />
+		<override_weapon CLIP_AMMO_MAX="41"/>
+		<weapons>
+			<value_node value="wpn_fps_smg_shepheard"/>
+		</weapons>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_cap10" based_on="wpn_fps_smg_vityaz_m_standard" type="magazine" inherit_weapons="true" inherit_adds="true" inherit_override="true" ver="2">
+		<stats  extra_ammo="0" />
+		<override_weapon CLIP_AMMO_MAX="10"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_puf20" based_on="wpn_fps_smg_vityaz_m_standard" type="magazine" inherit_weapons="true" inherit_adds="true" inherit_override="true" ver="2">
+		<stats extra_ammo="0" concealment="2" />
+		<override_weapon CLIP_AMMO_MAX="20"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_puf30" based_on="wpn_fps_smg_vityaz_m_standard" type="magazine" inherit_weapons="true" inherit_adds="true" inherit_override="true" ver="2">
+		<stats extra_ammo="0" concealment="1" />
+		<override_weapon CLIP_AMMO_MAX="30"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_vityazpmag" based_on="wpn_fps_smg_vityaz_m_standard" type="magazine" inherit_weapons="true" inherit_adds="true" inherit_override="true" ver="2">
+		<stats extra_ammo="0" concealment="1" />
+		<override_weapon CLIP_AMMO_MAX="33"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_7drum" based_on="wpn_fps_smg_mp7_m_extended" type="magazine" inherit_weapons="true" inherit_adds="true" inherit_override="true" ver="2">
+		<stats extra_ammo="0" concealment="-2" />
+		<override_weapon CLIP_AMMO_MAX="60"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_max" based_on="wpn_fps_sho_basset_m_extended" type="magazine" inherit_weapons="true" inherit_adds="true" inherit_override="true" ver="2">
+		<stats extra_ammo="0" concealment="-5" />
+		<texture_variants>	
+			<taiko name_id="bm_paint_max_taiko" desc_id="bm_paint_max_taiko_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_max/colors/wpn_fps_upg_m_max_taiko"/>
+		</texture_variants>
+		<override_weapon CLIP_AMMO_MAX="20"/>
+		<bullet_objects prefix = "g_bullet_" amount="19"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_pro" based_on="wpn_fps_sho_basset_m_extended" type="magazine" inherit_weapons="true" inherit_adds="true" inherit_override="true" ver="2">
+		<stats extra_ammo="0" concealment="-1" />
+		<override_weapon CLIP_AMMO_MAX="13"/>
+		<bullet_objects prefix = "g_bullet_" amount="1"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_mk17" based_on="wpn_fps_ass_scar_m_standard" type="magazine" inherit_weapons="true" inherit_adds="true" inherit_override="true" ver="2">
+		<stats extra_ammo="0" concealment="1" />
+		<override_weapon CLIP_AMMO_MAX="20"/>
+		<texture_variants>	
+			<fde name_id="bm_paint_mk17_fde" desc_id="bm_paint_mk17_fde_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_mk17/colors/wpn_fps_upg_m_mk17_fde"/>
+		</texture_variants>
+		<bullet_objects prefix = "g_bullet_" amount="1"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_lanc" based_on="wpn_fps_m4_uupg_m_std" type="magazine" inherit="true" unit="units/mods/weapons/wpn_fps_upg_m_lanc/wpn_fps_upg_m_lanc" inherit_weapons="true" inherit_adds="true" inherit_override="true" global_value="frenchy" >
+		<stats extra_ammo="0" recoil="1" concealment="0" />
+		<override_weapon CLIP_AMMO_MAX="30"/>
+		<bullet_objects prefix = "g_bullet_" amount="2"/>
+		<texture_variants>	
+			<fde name_id="bm_paint_lanc_fde" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_lanc/colors/wpn_fps_upg_m_lanc_fde"/>
+			<purp name_id="bm_paint_lanc_purp" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_lanc/colors/wpn_fps_upg_m_lanc_purp"/>
+			<red name_id="bm_paint_lanc_red" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_lanc/colors/wpn_fps_upg_m_lanc_red"/>
+			<train name_id="bm_paint_lanc_train" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_lanc/colors/wpn_fps_upg_m_lanc_train"/>
+		</texture_variants>
+		<weapons>
+			<value_node value="wpn_fps_ass_ak5"/>
+			<value_node value="wpn_fps_ass_amcar"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_hajk"/>
+	          <value_node value="wpn_fps_ass_komodo"/>
+		     <value_node value="wpn_fps_ass_l85a2"/>
+		     <value_node value="wpn_fps_ass_m16"/>			
+		     <value_node value="wpn_fps_ass_m4"/>
+			 <value_node value="wpn_fps_ass_aug"/>			 
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_dmmag" based_on="wpn_fps_m4_uupg_m_std" type="magazine" inherit="true" unit="units/mods/weapons/wpn_fps_upg_m_dmmag/wpn_fps_upg_m_dmmag" inherit_weapons="true" inherit_adds="true" inherit_override="true" global_value="frenchy" >
+		<stats extra_ammo="0" recoil="1" concealment="0" />
+		<override_weapon CLIP_AMMO_MAX="32"/>
+		<bullet_objects prefix = "g_bullet_" amount="2"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_ak5"/>
+			<value_node value="wpn_fps_ass_amcar"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_hajk"/>
+	        <value_node value="wpn_fps_ass_komodo"/>
+		    <value_node value="wpn_fps_ass_l85a2"/>
+		    <value_node value="wpn_fps_ass_m16"/>			
+		    <value_node value="wpn_fps_ass_m4"/>
+			<value_node value="wpn_fps_ass_aug"/>			
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<!--<WeaponMod id="wpn_fps_upg_m_lanct" based_on="wpn_fps_m4_uupg_m_std" type="magazine" inherit="true" unit="units/mods/weapons/wpn_fps_upg_m_lanct/wpn_fps_upg_m_lanct" inherit_weapons="true" inherit_adds="true" inherit_override="true" global_value="frenchy" >
+		<stats extra_ammo="0" recoil="1" concealment="0" />
+		<override_weapon CLIP_AMMO_MAX="30"/>
+		<bullet_objects prefix = "g_bullet_" amount="28"/>
+		<texture_variants>	
+			<fde name_id="bm_paint_lanct_fde" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_lanct/colors/wpn_fps_upg_m_lanct_fde"/>
+			<purp name_id="bm_paint_lanct_purp" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_lanct/colors/wpn_fps_upg_m_lanct_purp"/>
+		</texture_variants>
+		<weapons>
+			<value_node value="wpn_fps_ass_ak5"/>
+			<value_node value="wpn_fps_ass_amcar"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_hajk"/>
+	          <value_node value="wpn_fps_ass_komodo"/>
+		     <value_node value="wpn_fps_ass_l85a2"/>
+		     <value_node value="wpn_fps_ass_m16"/>			
+		     <value_node value="wpn_fps_ass_m4"/>
+			 <value_node value="wpn_fps_ass_aug"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>-->
+	
+	<WeaponMod id="wpn_fps_upg_m_54510s" based_on="wpn_fps_ass_74_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_upg_m_54510s/wpn_fps_upg_m_54510s" global_value="frenchy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" >
+		<stats extra_ammo="0" recoil="0" concealment="3" reload="6" />
+		<override_weapon CLIP_AMMO_MAX="10"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_74"/>
+			<value_node value="wpn_fps_ass_flint"/>
+			<value_node value="wpn_fps_ass_groza"/>
+			<value_node value="wpn_fps_smg_akmsu"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_54520" based_on="wpn_fps_ass_74_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_upg_m_54520/wpn_fps_upg_m_54520" global_value="frenchy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" >
+		<stats extra_ammo="0" recoil="0" concealment="2" />
+		<override_weapon CLIP_AMMO_MAX="20"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_74"/>
+			<value_node value="wpn_fps_ass_flint"/>
+			<value_node value="wpn_fps_ass_groza"/>
+			<value_node value="wpn_fps_smg_akmsu"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_54520d" based_on="wpn_fps_ass_74_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_upg_m_54520d/wpn_fps_upg_m_54520d" global_value="frenchy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" >
+		<stats extra_ammo="0" recoil="0" concealment="1" reload="2" />
+		<override_weapon CLIP_AMMO_MAX="20"/>
+		<override_weapon_add AMMO_MAX="20"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_74"/>
+			<value_node value="wpn_fps_ass_flint"/>
+			<value_node value="wpn_fps_ass_groza"/>
+			<value_node value="wpn_fps_smg_akmsu"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_54520s" based_on="wpn_fps_ass_74_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_upg_m_54520s/wpn_fps_upg_m_54520s" global_value="frenchy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" >
+		<stats extra_ammo="0" recoil="0" concealment="2" reload="4" />
+		<override_weapon CLIP_AMMO_MAX="20"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_74"/>
+			<value_node value="wpn_fps_ass_flint"/>
+			<value_node value="wpn_fps_ass_groza"/>
+			<value_node value="wpn_fps_smg_akmsu"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_54530d" based_on="wpn_fps_ass_74_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_upg_m_54530d/wpn_fps_upg_m_54530d" global_value="frenchy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" >
+		<stats extra_ammo="0" recoil="0" concealment="-2" reload="2" />
+		<override_weapon CLIP_AMMO_MAX="30"/>
+		<override_weapon_add AMMO_MAX="30"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_74"/>
+			<value_node value="wpn_fps_ass_flint"/>
+			<value_node value="wpn_fps_ass_groza"/>
+			<value_node value="wpn_fps_smg_akmsu"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_54530s" based_on="wpn_fps_ass_74_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_upg_m_54530s/wpn_fps_upg_m_54530s" global_value="frenchy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" >
+		<stats extra_ammo="0" recoil="0" concealment="-1" reload="4"/>
+		<override_weapon CLIP_AMMO_MAX="30"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_74"/>
+			<value_node value="wpn_fps_ass_flint"/>
+			<value_node value="wpn_fps_ass_groza"/>
+			<value_node value="wpn_fps_smg_akmsu"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_fmgdrum" based_on="wpn_fps_smg_fmg9_m_speed" type="magazine" unit="units/mods/weapons/wpn_fps_upg_m_fmgdrum/wpn_fps_upg_m_fmgdrum" global_value="frenchy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" inherit_weapons="true" inherit_adds="true" inherit_override="true" >
+		<stats extra_ammo="0" recoil="2" concealment="-2" reload="-1"/>
+		<override_weapon CLIP_AMMO_MAX="50"/>
+		<pcs/>
+	</WeaponMod>
+	
+<!-- G36 Magazines -->
+	<WeaponMod id="wpn_fps_upg_m_g36_dura" based_on="wpn_fps_ass_g36_m_standard" type="magazine" inherit_weapons="true" inherit_adds="true" inherit_override="true" unit="units/mods/weapons/wpn_fps_upg_m_g36_dura/wpn_fps_upg_m_g36_dura" global_value="frenchy" >
+		<stats extra_ammo="0" concealment="1" />
+		<override_weapon CLIP_AMMO_MAX="30"/>
+		<bullet_objects prefix = "g_bullet_" amount="2"/>
+		<texture_variants>	
+			<grey name_id="bm_paint_dura_grey" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_g36_dura/colors/wpn_fps_upg_m_g36_dura_grey"/>
+			<pink name_id="bm_paint_dura_pink" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_g36_dura/colors/wpn_fps_upg_m_g36_dura_pink"/>
+			<red name_id="bm_paint_dura_red" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_g36_dura/colors/wpn_fps_upg_m_g36_dura_red"/>
+			<blue name_id="bm_paint_dura_blue" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_g36_dura/colors/wpn_fps_upg_m_g36_dura_blue"/>
+			<bronze name_id="bm_paint_dura_bronze" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_g36_dura/colors/wpn_fps_upg_m_g36_dura_bronze"/>
+			<od name_id="bm_paint_dura_od" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_g36_dura/colors/wpn_fps_upg_m_g36_dura_od"/>
+			<gold name_id="bm_paint_dura_gold" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_g36_dura/colors/wpn_fps_upg_m_g36_dura_gold"/>
+		</texture_variants>
+		<weapons>
+			<value_node value="wpn_fps_ass_g36"/>
+		</weapons>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_g36_d60" based_on="wpn_fps_ass_g36_m_standard" type="magazine" inherit="true" unit="units/mods/weapons/wpn_fps_upg_m_g36_d60/wpn_fps_upg_m_g36_d60" global_value="frenchy"  >
+		<stats extra_ammo="0" concealment="-4" />
+		<override_weapon CLIP_AMMO_MAX="60"/>
+		<bullet_objects prefix = "g_bullet_" amount="3"/>
+		<texture_variants>	
+			<fde name_id="bm_paint_d60_fde" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_g36_d60/colors/wpn_fps_upg_m_g36_d60_fde"/>
+		</texture_variants>
+		<weapons>
+			<value_node value="wpn_fps_ass_g36"/>
+		</weapons>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_g36_p30" based_on="wpn_fps_ass_g36_m_standard" type="magazine" inherit="true" unit="units/mods/weapons/wpn_fps_upg_m_g36_p30/wpn_fps_upg_m_g36_p30" global_value="frenchy" >
+		<stats extra_ammo="0" recoil="1" concealment="0" />
+		<override_weapon CLIP_AMMO_MAX="30"/>
+		<bullet_objects prefix = "g_bullet_" amount="2"/>
+		<texture_variants>	
+			<fde name_id="bm_paint_p30_fde" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_g36_p30/colors/wpn_fps_upg_m_g36_p30_fde"/>
+			<tofu name_id="bm_paint_p30_tofu" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_g36_p30/colors/wpn_fps_upg_m_g36_p30_tofu"/>
+		</texture_variants>
+		<weapons>
+			<value_node value="wpn_fps_ass_g36"/>
+		</weapons>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_g36_p30w" based_on="wpn_fps_ass_g36_m_standard" type="magazine" inherit="true" unit="units/mods/weapons/wpn_fps_upg_m_g36_p30w/wpn_fps_upg_m_g36_p30w" global_value="frenchy" >
+		<stats extra_ammo="0" recoil="1" concealment="0"/>
+		<override_weapon CLIP_AMMO_MAX="30"/>
+		<bullet_objects prefix = "g_bullet_" amount="11"/>
+		<texture_variants>	
+			<fde name_id="bm_paint_p30w_fde" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_g36_p30w/colors/wpn_fps_upg_m_g36_p30w_fde"/>
+		</texture_variants>
+		<weapons>
+			<value_node value="wpn_fps_ass_g36"/>
+		</weapons>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_g36_p40" based_on="wpn_fps_ass_g36_m_standard" type="magazine" inherit="true" unit="units/mods/weapons/wpn_fps_upg_m_g36_p40/wpn_fps_upg_m_g36_p40" global_value="frenchy" >
+		<stats extra_ammo="0" concealment="-1" />
+		<override_weapon CLIP_AMMO_MAX="40"/>
+		<bullet_objects prefix = "g_bullet_" amount="2"/>
+		<texture_variants>	
+			<fde name_id="bm_paint_p40_fde" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_g36_p40/colors/wpn_fps_upg_m_g36_p40_fde"/>
+		</texture_variants>
+			<pcs/>
+		<weapons>
+			<value_node value="wpn_fps_ass_g36"/>
+		</weapons>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_g36_battle" based_on="wpn_fps_ass_g36_m_standard" type="magazine" inherit="true" unit="units/mods/weapons/wpn_fps_upg_m_g36_battle/wpn_fps_upg_m_g36_battle" global_value="frenchy" >
+		<stats extra_ammo="0" recoil="1" concealment="0" />
+		<override_weapon CLIP_AMMO_MAX="30"/>
+		<bullet_objects prefix = "g_bullet_" amount="2"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_g36"/>
+		</weapons>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_g36_poly" based_on="wpn_fps_ass_g36_m_standard" type="magazine" inherit="true" unit="units/mods/weapons/wpn_fps_upg_m_g36_poly/wpn_fps_upg_m_g36_poly" global_value="frenchy" >
+		<stats extra_ammo="0" recoil="1" concealment="0" />
+		<override_weapon CLIP_AMMO_MAX="30"/>
+		<bullet_objects prefix = "g_bullet_" amount="2"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_g36"/>
+		</weapons>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_g36_hksteel" based_on="wpn_fps_ass_g36_m_standard" type="magazine" inherit="true" unit="units/mods/weapons/wpn_fps_upg_m_g36_hksteel/wpn_fps_upg_m_g36_hksteel" global_value="frenchy" >
+		<stats recoil="1" extra_ammo="0" concealment="0" />
+		<bullet_objects prefix = "g_bullet_" amount="2"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_g36"/>
+		</weapons>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_g36_gen2" based_on="wpn_fps_ass_g36_m_standard" type="magazine" inherit="true" unit="units/mods/weapons/wpn_fps_upg_m_g36_gen2/wpn_fps_upg_m_g36_gen2" global_value="frenchy" >
+		<stats extra_ammo="0" recoil="1" concealment="0" />
+		<override_weapon CLIP_AMMO_MAX="30"/>
+		<bullet_objects prefix = "g_bullet_" amount="2"/>
+		<texture_variants>	
+			<fde name_id="bm_paint_gen2_fde" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_g36_gen2/colors/wpn_fps_upg_m_g36_gen2_fde"/>
+		</texture_variants>
+		<weapons>
+			<value_node value="wpn_fps_ass_g36"/>
+		</weapons>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_g36_lanc" based_on="wpn_fps_ass_g36_m_standard" type="magazine" inherit="true" unit="units/mods/weapons/wpn_fps_upg_m_g36_lanc/wpn_fps_upg_m_g36_lanc" inherit_weapons="true" inherit_adds="true" inherit_override="true" global_value="frenchy" >
+		<stats extra_ammo="0" recoil="1" concealment="0" />
+		<override_weapon CLIP_AMMO_MAX="30"/>
+		<bullet_objects prefix = "g_bullet_" amount="2"/>
+		<texture_variants>	
+			<fde name_id="bm_paint_lanc_fde" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_g36_lanc/colors/wpn_fps_upg_m_g36_lanc_fde"/>
+			<purp name_id="bm_paint_lanc_purp" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_g36_lanc/colors/wpn_fps_upg_m_g36_lanc_purp"/>
+			<red name_id="bm_paint_lanc_red" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_g36_lanc/colors/wpn_fps_upg_m_g36_lanc_red"/>
+			<train name_id="bm_paint_lanc_train" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_g36_lanc/colors/wpn_fps_upg_m_g36_lanc_train"/>
+		</texture_variants>
+		<weapons>
+			<value_node value="wpn_fps_ass_g36"/>			 
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_m_g36_dmmag" based_on="wpn_fps_ass_g36_m_standard" type="magazine" inherit="true" unit="units/mods/weapons/wpn_fps_upg_m_g36_dmmag/wpn_fps_upg_m_g36_dmmag" inherit_weapons="true" inherit_adds="true" inherit_override="true" global_value="frenchy" >
+		<stats extra_ammo="0" recoil="1" concealment="0" />
+		<override_weapon CLIP_AMMO_MAX="32"/>
+		<bullet_objects prefix = "g_bullet_" amount="2"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_g36"/>			
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<!--<WeaponMod id="wpn_fps_upg_m_g36_lanct" based_on="wpn_fps_ass_g36_m_standard" type="magazine" inherit="true" unit="units/mods/weapons/wpn_fps_upg_m_g36_lanct/wpn_fps_upg_m_g36_lanct" inherit_weapons="true" inherit_adds="true" inherit_override="true" global_value="frenchy" >
+		<stats extra_ammo="0" recoil="1" concealment="0" />
+		<override_weapon CLIP_AMMO_MAX="30"/>
+		<bullet_objects prefix = "g_bullet_" amount="28"/>
+		<texture_variants>	
+			<fde name_id="bm_paint_lanct_fde" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_g36_lanct/colors/wpn_fps_upg_m_g36_lanct_fde"/>
+			<purp name_id="bm_paint_lanct_purp" desc_id="bm_paint_blankdesc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_m_g36_lanct/colors/wpn_fps_upg_m_g36_lanct_purp"/>
+		</texture_variants>
+		<weapons>
+			<value_node value="wpn_fps_ass_g36"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>-->
+	
+	<AddFiles directory="assets" auto_generate="true"/>
+</mod>
+
+
+	
+	

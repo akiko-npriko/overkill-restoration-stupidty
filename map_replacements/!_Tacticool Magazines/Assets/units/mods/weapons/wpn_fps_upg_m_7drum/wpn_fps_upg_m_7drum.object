@@ -1,0 +1,15 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_upg_m_7drum/wpn_fps_upg_m_7drum" orientation_object="rp_mag" />
+	 <animations>
+		<animation_group name="reload">
+			<object name="mag_align_reload" enabled="true" />
+		</animation_group>
+		<animation_group name="reload_not_empty">
+			<object name="mag_align_tactical" enabled="true" />
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_mag" enabled="true" />
+		<object name="g_bullet" enabled="true" />
+	</graphics>
+</dynamic_object>

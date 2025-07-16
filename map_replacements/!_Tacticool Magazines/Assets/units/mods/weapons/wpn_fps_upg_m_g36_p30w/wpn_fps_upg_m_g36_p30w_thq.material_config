@@ -1,0 +1,10 @@
+<materials version="3" group="weapon_group">
+    <material name="mtr_p30w" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_upg_m_g36_p30w/p30w_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_upg_m_g36_p30w/p30w_nm"/>
+    </material>
+	<material name="mtr_bullet" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_upg_m_g36_p30w/nato556_df" />
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_upg_m_g36_p30w/nato556_nm" />
+	</material>
+</materials>

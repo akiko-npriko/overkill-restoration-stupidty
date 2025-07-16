@@ -1,0 +1,12 @@
+<materials version="3" group="weapon_fmg9">
+    <material render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" name="mat_speedmag" version="2">
+        <diffuse_texture file="units/pd2_dlc_lawp/weapons/wpn_fps_smg_fmg9_pts/speedmag_df"/>
+        <bump_normal_texture file="units/pd2_dlc_lawp/weapons/wpn_fps_smg_fmg9_pts/speedmag_nm"/>
+        <material_texture file="units/pd2_dlc_lawp/weapons/wpn_fps_smg_fmg9_pts/speedmag_gsma"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" name="mat_bullet" version="2">
+        <diffuse_texture file="units/pd2_dlc_lawp/weapons/wpn_fps_smg_fmg9_pts/bullet_df"/>
+        <bump_normal_texture file="units/pd2_dlc_lawp/weapons/wpn_fps_smg_fmg9_pts/bullet_nm"/>
+        <reflection_texture file="units/payday2/cubemaps/cubemap_gold_strong_df" type="cubemap"/>
+    </material>
+</materials>
