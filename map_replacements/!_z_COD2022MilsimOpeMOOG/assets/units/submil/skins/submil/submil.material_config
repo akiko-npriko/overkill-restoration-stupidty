@@ -1,0 +1,401 @@
+<?xml version="1.0"?>
+<materials version="3" group="help">
+	<material name="mtr_antenna" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/antenna_df"/>
+		<material_texture file="units/submil/skins/textures/antenna_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/antenna_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_ar_mag" render_template="generic:CONTOUR:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/ar_mag_df"/>
+		<material_texture file="units/submil/skins/textures/ar_mag_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/ar_mag_nm"/>
+		<reflection_texture type="cubemap" file="environments/cubemaps/cubemap_steel"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_arms" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/arms_df"/>
+		<material_texture file="units/submil/skins/textures/arms_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/arms_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_assault_mag" render_template="generic:CONTOUR:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/assault_mag_df"/>
+		<material_texture file="units/submil/skins/textures/assault_mag_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/assault_mag_nm"/>
+		<reflection_texture type="cubemap" file="environments/cubemaps/cubemap_steel"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_attachments" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/attachments_df"/>
+		<material_texture file="units/submil/skins/textures/attachments_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/attachments_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_battery" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/battery_df"/>
+		<material_texture file="units/submil/skins/textures/battery_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/battery_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_belt" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/belt_df"/>
+		<material_texture file="units/submil/skins/textures/belt_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/belt_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_boots" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/boots_df"/>
+		<material_texture file="units/submil/skins/textures/boots_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/boots_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_buckle" render_template="generic:CONTOUR:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/buckle_df"/>
+		<material_texture file="units/submil/skins/textures/buckle_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/buckle_nm"/>
+		<reflection_texture type="cubemap" file="environments/cubemaps/cubemap_steel"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_carabiner" render_template="generic:CONTOUR:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/carabiner_df"/>
+		<material_texture file="units/submil/skins/textures/carabiner_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/carabiner_nm"/>
+		<reflection_texture type="cubemap" file="environments/cubemaps/cubemap_steel"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_carrier" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/carrier_df"/>
+		<material_texture file="units/submil/skins/textures/carrier_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/carrier_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_chemlight" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/chemlight_df"/>
+		<material_texture file="units/submil/skins/textures/chemlight_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/chemlight_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_chemlight_red" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/chemlight_red_df"/>
+		<material_texture file="units/submil/skins/textures/chemlight_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/chemlight_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_chemlight_strap" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/chemlight_strap_df"/>
+		<material_texture file="units/submil/skins/textures/chemlight_strap_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/chemlight_strap_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_chemlight_yellow" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/chemlight_yellow_df"/>
+		<material_texture file="units/submil/skins/textures/chemlight_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/chemlight_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_cuffs" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/cuffs_df"/>
+		<material_texture file="units/submil/skins/textures/cuffs_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/cuffs_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_dump_pouch" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/dump_pouch_df"/>
+		<material_texture file="units/submil/skins/textures/dump_pouch_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/dump_pouch_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_eyes" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/eyes_df"/>
+		<material_texture file="units/submil/skins/textures/eyes_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/eyes_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_flag" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/flag_df"/>
+		<material_texture file="units/submil/skins/textures/flag_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/flag_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_front_pouch" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/front_pouch_df"/>
+		<material_texture file="units/submil/skins/textures/front_pouch_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/front_pouch_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_glass" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:NORMALMAP:OPACITY_FADE:SKINNED_3WEIGHTS" unique="true" version="2"> 
+		<diffuse_texture file="units/submil/skins/textures/glass_df"/>
+		<bump_normal_texture file="units/submil/skins/textures/glass_nm"/>
+		<opacity_texture file="units/submil/skins/textures/glass_op"/>
+		<variable type="scalar" name="alpha_ref" value="0.162100000574719"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+       <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <variable value="0 1 0.5" type="vector3" name="fresnel_settings"/>
+        <variable value="999 999 999" type="vector3" name="opacity_fade"/>
+	</material>
+	<material name="mtr_glasses" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:NORMALMAP:OPACITY_FADE:SKINNED_3WEIGHTS" unique="true" version="2"> 
+		<diffuse_texture file="units/submil/skins/textures/glasses_df"/>
+		<bump_normal_texture file="units/submil/skins/textures/glasses_nm"/>
+		<opacity_texture file="units/submil/skins/textures/glasses_op"/>
+		<variable type="scalar" name="alpha_ref" value="0.162100000574719"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+       <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <variable value="0 1 0.5" type="vector3" name="fresnel_settings"/>
+        <variable value="999 999 999" type="vector3" name="opacity_fade"/>
+	</material>
+	<material name="mtr_eyelashes" render_template="generic:ALPHA_MASKED:CONTOUR:DIFFUSE_TEXTURE:DOUBLE_SIDED:EXTERNAL_ALPHA_REF:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:OPACITY_TEXTURE:RL_CIVILIANS:SKINNED_3WEIGHTS" unique="true" version="2"> 
+		<diffuse_texture file="units/submil/skins/textures/eyelashes_df"/>
+		<opacity_texture file="units/submil/skins/textures/eyelashes_op"/>
+		<variable type="scalar" name="alpha_ref" value="0.12"/>
+        <variable type="vector3" name="contour_color" value="1 1 1"/>
+        <variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_glasses_frame" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/glasses_frame_df"/>
+		<material_texture file="units/submil/skins/textures/glasses_frame_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/glasses_frame_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_gloves" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/gloves_df"/>
+		<material_texture file="units/submil/skins/textures/gloves_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/gloves_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_grenade_pouch" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/grenade_pouch_df"/>
+		<material_texture file="units/submil/skins/textures/grenade_pouch_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/grenade_pouch_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_grenade_top" render_template="generic:CONTOUR:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/grenade_top_df"/>
+		<material_texture file="units/submil/skins/textures/grenade_top_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/grenade_top_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<reflection_texture type="cubemap" file="environments/cubemaps/cubemap_steel"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_hair" render_template="decal" unique="true" version="2"> <!-- this looks like ass in diesel tbh -->
+		<diffuse_texture file="units/submil/skins/textures/hair_df"/>
+		<bump_normal_texture file="units/submil/skins/textures/hair_nm"/>
+		<opacity_texture file="units/submil/skins/textures/hair_op"/>
+		<variable type="scalar" name="alpha_ref" value="0.162100000574719"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+        <reflection_texture file="environments/cubemaps/cubemap_hair_3" type="cubemap"/>
+        <variable value="0 1 0.5" type="vector3" name="fresnel_settings"/>
+        <variable value="999 999 999" type="vector3" name="opacity_fade"/>
+	</material>
+	<material name="mtr_hardware" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/hardware_df"/>
+		<material_texture file="units/submil/skins/textures/hardware_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/hardware_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_head" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/head_df"/>
+		<material_texture file="units/submil/skins/textures/head_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/head_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_headset" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/headset_df"/>
+		<material_texture file="units/submil/skins/textures/headset_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/headset_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_helmet" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/helmet_df"/>
+		<material_texture file="units/submil/skins/textures/helmet_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/helmet_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_lanyard" render_template="generic:CONTOUR:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/lanyard_df"/>
+		<material_texture file="units/submil/skins/textures/lanyard_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/lanyard_nm"/>
+		<reflection_texture type="cubemap" file="environments/cubemaps/cubemap_steel"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_mag_pouch" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/mag_pouch_df"/>
+		<material_texture file="units/submil/skins/textures/mag_pouch_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/mag_pouch_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_pants" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/pants_df"/>
+		<material_texture file="units/submil/skins/textures/pants_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/pants_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_pistol_mag" render_template="generic:CONTOUR:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/pistol_mag_df"/>
+		<material_texture file="units/submil/skins/textures/pistol_mag_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/pistol_mag_nm"/>
+		<reflection_texture type="cubemap" file="environments/cubemaps/cubemap_steel"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_pistol_pouch" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/pistol_pouch_df"/>
+		<material_texture file="units/submil/skins/textures/pistol_pouch_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/pistol_pouch_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_pistol_pouch_alt" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/pistol_pouch_alt_df"/>
+		<material_texture file="units/submil/skins/textures/pistol_pouch_body_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/pistol_pouch_body_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_pistol_pouch_body" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/pistol_pouch_body_df"/>
+		<material_texture file="units/submil/skins/textures/pistol_pouch_body_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/pistol_pouch_body_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_pouch_rolled" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/pouch_rolled_df"/>
+		<material_texture file="units/submil/skins/textures/pouch_rolled_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/pouch_rolled_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_pouch_tapered" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/pouch_tapered_df"/>
+		<material_texture file="units/submil/skins/textures/pouch_tapered_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/pouch_tapered_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_ptt" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/ptt_df"/>
+		<material_texture file="units/submil/skins/textures/ptt_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/ptt_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_radio" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/radio_df"/>
+		<material_texture file="units/submil/skins/textures/radio_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/radio_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_radio_pouch" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/radio_pouch_df"/>
+		<material_texture file="units/submil/skins/textures/radio_pouch_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/radio_pouch_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_right_pouch" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/right_pouch_df"/>
+		<material_texture file="units/submil/skins/textures/right_pouch_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/right_pouch_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_ronin" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/ronin_df"/>
+		<material_texture file="units/submil/skins/textures/ronin_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/ronin_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_sheers" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/sheers_df"/>
+		<material_texture file="units/submil/skins/textures/sheers_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/sheers_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_shirt" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/shirt_df"/>
+		<material_texture file="units/submil/skins/textures/shirt_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/shirt_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_side_pouch" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/side_pouch_df"/>
+		<material_texture file="units/submil/skins/textures/side_pouch_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/side_pouch_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_strobe" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/strobe_df"/>
+		<material_texture file="units/submil/skins/textures/strobe_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/strobe_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_tarkov" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/tarkov_df"/>
+		<material_texture file="units/submil/skins/textures/tarkov_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/tarkov_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_velcro" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/velcro_df"/>
+		<material_texture file="units/submil/skins/textures/velcro_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/velcro_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_watch" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/watch_df"/>
+		<material_texture file="units/submil/skins/textures/watch_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/watch_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="mtr_watch_strap" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/watch_strap_df"/>
+		<material_texture file="units/submil/skins/textures/watch_strap_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/watch_strap_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+	</material>
+	<material name="shadow_caster" render_template="shadow_caster_only:SKINNED_1WEIGHT"/>
+</materials>    

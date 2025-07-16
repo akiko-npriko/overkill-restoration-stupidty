@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<materials version="3" group="helpme">
+	<material name="mtr_arms" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/fps_arms_df"/>
+		<material_texture file="units/submil/skins/textures/fps_arms_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/fps_arms_nm"/>
+	</material>
+	<material name="mtr_cuff" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/cuff_df"/>
+		<material_texture file="units/submil/skins/textures/cuff_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/cuff_nm"/>
+	</material>
+	<material name="mtr_gloves" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/gloves_df"/>
+		<material_texture file="units/submil/skins/textures/gloves_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/gloves_nm"/>
+	</material>
+	<material name="mtr_skin" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/skin_df"/>
+		<material_texture file="units/submil/skins/textures/skin_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/skin_nm"/>
+	</material>
+	<material name="mtr_watch" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/watch_fps_df"/>
+		<material_texture file="units/submil/skins/textures/watch_fps_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/watch_fps_nm"/>
+	</material>
+	<material name="mtr_watch_part" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/watch_part_df"/>
+		<self_illumination_texture file="units/submil/skins/textures/watch_part_df"/>
+        <variable type="scalar" name="il_bloom" value="20"/>
+        <variable type="scalar" name="il_multiplier" value="megatron"/>
+		<bump_normal_texture file="units/world/props/street/blank_nm"/>
+	</material>
+	<material name="mtr_watch_strap" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/watch_strap_fps_df"/>
+		<material_texture file="units/submil/skins/textures/watch_strap_fps_gsma"/>
+		<bump_normal_texture file="units/submil/skins/textures/watch_strap_fps_nm"/>
+	</material>
+	<material name="mtr_glass" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:FPS:NORMALMAP" unique="true" version="2">
+		<diffuse_texture file="units/submil/skins/textures/glass_df"/>
+		<reflection_texture type="cubemap" global_texture="current_global_texture"/>
+		<bump_normal_texture file="units/submil/skins/textures/glass_nm"/>
+		<variable value="1.8700000047684 1 0.97999995946884" type="vector3" name="fresnel_settings"/>
+		<opacity_texture file="units/submil/skins/textures/glass_op"/>
+	</material>
+</materials>    

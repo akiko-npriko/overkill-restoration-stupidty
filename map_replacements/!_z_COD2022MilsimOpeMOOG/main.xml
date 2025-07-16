@@ -1,0 +1,115 @@
+<table name="COD MW2022 Milsim Operator MOOG" image="guis/dlcs/submil/textures/pd2/blackmarket/icons/player_styles/submil">
+	<Localization directory="localization" default="english.json"/>
+	
+	<GlobalValue id="submil_mod" color="Color(1.0, 0.22, 0.16)"/>
+	
+	<PlayerStyle id="submil" unit="units/submil/skins/fps_submil/fps_submil" third_unit="units/submil/skins/submil/submil" exclude_glove_adapter="true" default_gloves="false" texture_bundle_folder="submil" global_value="submil_mod">
+		<third_body_replacement mask="true"	head="true" armor="true" body="true" hands="true" arms="true" vest="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" arms="true" vest="true" glove_adapter="false"/>
+
+		<characters>
+			<dallas		third_unit="units/submil/skins/submil/submil"/>
+			<dragon		third_unit="units/submil/skins/submil/submil"/>
+			<dragan		third_unit="units/submil/skins/submil/submil"/>
+			<old_hoxton	third_unit="units/submil/skins/submil/submil"/>			
+			<hoxton		third_unit="units/submil/skins/submil/submil"/>			
+			<wolf		third_unit="units/submil/skins/submil/submil"/>			
+			<max		third_unit="units/submil/skins/submil/submil"/>
+			<wild		third_unit="units/submil/skins/submil/submil"/>
+			<jacket		third_unit="units/submil/skins/submil/submil"/>
+			<jowi		third_unit="units/submil/skins/submil/submil"/>
+			<chico		third_unit="units/submil/skins/submil/submil"/>
+			<jimmy		third_unit="units/submil/skins/submil/submil"/>
+			<sokol		third_unit="units/submil/skins/submil/submil"/>
+			<bodhi		third_unit="units/submil/skins/submil/submil"/>
+			<chains		third_unit="units/submil/skins/submil/submil"/>
+			<myh		third_unit="units/submil/skins/submil/submil"/>
+			<ecp_male	third_unit="units/submil/skins/submil/submil"/>	
+			<female_1	third_unit="units/submil/skins/submil/submil"/>
+			<sydney		third_unit="units/submil/skins/submil/submil"/>
+			<ecp_female	third_unit="units/submil/skins/submil/submil"/>
+			<joy		third_unit="units/submil/skins/submil/submil"/>	
+			<bonnie		third_unit="units/submil/skins/submil/submil"/>				
+		</characters>
+	</PlayerStyle>
+	
+	
+	
+    <AddFiles directory="assets">
+    <texture path="guis/dlcs/submil/textures/pd2/blackmarket/icons/player_styles/submil"/>
+	
+		<!--Textures-->
+	
+		<df_nm_gsma path="units/submil/skins/textures/antenna"/>
+		<df_nm_gsma path="units/submil/skins/textures/ar_mag"/>
+		<df_nm_gsma path="units/submil/skins/textures/arms"/>
+		<df_nm_gsma path="units/submil/skins/textures/assault_mag"/>
+		<df_nm_gsma path="units/submil/skins/textures/attachments"/>
+		<df_nm_gsma path="units/submil/skins/textures/battery"/>
+		<df_nm_gsma path="units/submil/skins/textures/belt"/>
+		<df_nm_gsma path="units/submil/skins/textures/boots"/>
+		<df_nm_gsma path="units/submil/skins/textures/buckle"/>
+		<df_nm_gsma path="units/submil/skins/textures/carabiner"/>
+		<df_nm_gsma path="units/submil/skins/textures/carrier"/>
+		<df_nm_gsma path="units/submil/skins/textures/chemlight"/>
+		<df_nm_gsma path="units/submil/skins/textures/chemlight_strap"/>
+		<texture path="units/submil/skins/textures/chemlight_red_df"/>
+		<texture path="units/submil/skins/textures/chemlight_yellow_df"/>
+		<df_nm_gsma path="units/submil/skins/textures/cuffs"/>
+		<df_nm_gsma path="units/submil/skins/textures/dump_pouch"/>
+		<df_op path="units/submil/skins/textures/eyelashes"/>
+		<df_nm_gsma path="units/submil/skins/textures/eyes"/>
+		<df_nm_gsma path="units/submil/skins/textures/flag"/>
+		<df_nm_gsma path="units/submil/skins/textures/front_pouch"/>
+		<df_nm_op path="units/submil/skins/textures/glass"/>
+		<df_nm_op path="units/submil/skins/textures/glasses"/>
+		<df_nm_gsma path="units/submil/skins/textures/glasses_frame"/>
+		<df_nm_gsma path="units/submil/skins/textures/gloves"/>
+		<df_nm_gsma path="units/submil/skins/textures/grenade_pouch"/>
+		<df_nm_gsma path="units/submil/skins/textures/grenade_top"/>
+		<df_nm_gsma_op path="units/submil/skins/textures/hair"/>
+		<df_nm_gsma path="units/submil/skins/textures/hardware"/>
+		<df_nm_gsma path="units/submil/skins/textures/head"/>
+		<df_nm_gsma path="units/submil/skins/textures/headset"/>
+		<df_nm_gsma path="units/submil/skins/textures/helmet"/>
+		<df_nm_gsma path="units/submil/skins/textures/lanyard"/>
+		<df_nm_gsma path="units/submil/skins/textures/mag_pouch"/>
+		<df_nm_gsma path="units/submil/skins/textures/pants"/>
+		<df_nm_gsma path="units/submil/skins/textures/pistol_mag"/>
+		<texture path="units/submil/skins/textures/pistol_pouch_alt_df"/>
+		<df_nm_gsma path="units/submil/skins/textures/pistol_pouch_body"/>
+		<df_nm_gsma path="units/submil/skins/textures/pistol_pouch"/>
+		<df_nm_gsma path="units/submil/skins/textures/pouch_rolled"/>
+		<df_nm_gsma path="units/submil/skins/textures/pouch_tapered"/>
+		<df_nm_gsma path="units/submil/skins/textures/ptt"/>
+		<df_nm_gsma path="units/submil/skins/textures/radio"/>
+		<df_nm_gsma path="units/submil/skins/textures/radio_pouch"/>
+		<df_nm_gsma path="units/submil/skins/textures/right_pouch"/>
+		<df_nm_gsma path="units/submil/skins/textures/ronin"/>
+		<df_nm_gsma path="units/submil/skins/textures/sheers"/>
+		<df_nm_gsma path="units/submil/skins/textures/shirt"/>
+		<df_nm_gsma path="units/submil/skins/textures/side_pouch"/>
+		<df_nm_gsma path="units/submil/skins/textures/strobe"/>
+		<df_nm_gsma path="units/submil/skins/textures/tarkov"/>
+		<df_nm_gsma path="units/submil/skins/textures/velcro"/>
+		<df_nm_gsma path="units/submil/skins/textures/watch"/>
+		<df_nm_gsma path="units/submil/skins/textures/watch_strap"/>
+		
+		<!--Textures-->
+		
+		
+		<!-- FPS Textures -->
+		
+		<df_nm_gsma path="units/submil/skins/textures/cuff"/>
+		<df_nm_gsma path="units/submil/skins/textures/watch_fps"/>
+		<df_nm_gsma path="units/submil/skins/textures/watch_strap_fps"/>
+		<df_nm_gsma path="units/submil/skins/textures/skin"/>
+		<df_nm_gsma path="units/submil/skins/textures/fps_arms"/>
+		<texture path="units/submil/skins/textures/watch_part_df"/>
+		
+		<!-- FPS Textures -->
+		
+		<unit_mat path="units/submil/skins/submil/submil"/>
+		<unit_mat path="units/submil/skins/fps_submil/fps_submil"/>
+</AddFiles>
+</table>
