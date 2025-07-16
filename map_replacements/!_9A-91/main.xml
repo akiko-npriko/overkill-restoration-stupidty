@@ -1,0 +1,272 @@
+<table name="9A-91" image="guis/vsk94" color="Color(0, 0.1, 0.5)">
+	<Localization directory="Localization" default="english.txt"/>
+	<AssetUpdates id="23638" version="2.0.1" provider="modworkshop"/>
+	<GlobalValue id="vsk94" color="Color(1, 0.5, 0)"/>
+	
+	<WeaponMod id="wpn_fps_ass_vsk94_barrel" based_on="wpn_fps_ass_ak5_b_std" type="barrel" unit="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_barrel" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_ass_vsk94_mag" based_on="wpn_fps_m4_uupg_m_std_vanilla" type="magazine" unit="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_mag" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod based_on="wpn_fps_m4_uupg_m_std_vanilla" id="wpn_fps_ass_vsk94_mag_ext" unit="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_mag_ext"  texture_bundle_folder="mods" type="magazine" drop="false" is_a_unlockable="true">
+    		<stats extra_ammo="5" concealment="-1"/>
+    	<pcs/>
+    	</WeaponMod>  
+
+	<WeaponMod id="wpn_fps_ass_vsk94_body" based_on="wpn_fps_ass_ak5_body_ak5" type="lower_reciever" unit="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_body" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod based_on="wpn_fps_ass_ak5_body_ak5" id="wpn_fps_ass_vsk94_mount" unit="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_mount" texture_bundle_folder="mods" type="mount" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod based_on="wpn_fps_ass_ak5_body_ak5" id="wpn_fps_ass_vsk94_body_camo" unit="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_body_camo" texture_bundle_folder="mods" type="lower_reciever" drop="false" is_a_unlockable="true">
+    	<pcs/>
+    	</WeaponMod>  
+
+	<WeaponMod id="wpn_fps_ass_vsk94_stock" based_on="wpn_fps_ass_ak5_body_ak5" type="stock" unit="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_stock" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod based_on="wpn_fps_ass_ak5_body_ak5" id="wpn_fps_ass_vsk94_stock_none" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" texture_bundle_folder="mods" type="stock" drop="false" is_a_unlockable="true">
+    		<stats recoil="-3" concealment="3"/>
+    	<pcs/>
+    	</WeaponMod>  
+
+	<WeaponMod id="wpn_fps_ass_vsk94_grip" based_on="wpn_fps_ass_ak5_body_ak5" type="grip" unit="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_grip" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_ass_vsk94_fg" based_on="wpn_fps_ass_ak5_body_ak5" type="foregrip" unit="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_fg" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod based_on="wpn_fps_ass_ak5_body_ak5" id="wpn_fps_ass_vsk94_fg_sniper" unit="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_fg_sniper" texture_bundle_folder="mods" type="foregrip" drop="false" is_a_unlockable="true">
+    		<stats recoil="1"/>
+    	<pcs/>
+    	</WeaponMod>  
+
+	<WeaponMod based_on="wpn_fps_ass_ak5_body_ak5" id="wpn_fps_ass_vsk94_grip_sniper" unit="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_grip_sniper" texture_bundle_folder="mods" type="stock" drop="false" is_a_unlockable="true">
+    		<stats recoil="1" spread="1" concealment="-2"/>
+    	<pcs/>
+    	</WeaponMod>  
+
+    	<WeaponMod id="wpn_fps_ass_vsk94_sil" based_on="wpn_fps_upg_ns_ass_smg_large" type="barrel_ext" unit="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_sil" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+                   <stats concealment="-2"  spread="4" recoil="-2"/>
+    	 <pcs/>
+    	 </WeaponMod>
+	
+	<Weapon unlock_level="30">
+		<weapon id="vsk94" based_on="ak5" weapon_hold="m4" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="4.5" texture_bundle_folder="mods" global_value="vsk94">
+			<stats damage="100" spread="17"recoil="17" concealment="19"/>
+			<fire_mode_data fire_rate="0.085"/>
+			<AMMO_PICKUP>
+				<value_node value="1"/>
+				<value_node value="3.2"/>
+			</AMMO_PICKUP>
+			<animations reload_name_id="ak5" equip_id="equip_m4" recoil_steelsight="true"/>
+			<sounds fire="vsk94_fire_single" fire_single="vsk94_fire_single" use_fix="true"/>
+		</weapon>
+        <factory id="wpn_fps_ass_vsk94" unit="units/mods/weapons/wpn_fps_ass_vsk94/wpn_fps_ass_vsk94">
+			<optional_types>
+				<value_node value="barrel_ext"/>
+				<value_node value="gadget"/>
+				<value_node value="sight"/>
+			</optional_types>
+			<default_blueprint>
+				<value_node value="wpn_fps_ass_vsk94_body"/>
+				<value_node value="wpn_fps_ass_vsk94_barrel"/>
+				<value_node value="wpn_fps_ass_vsk94_fg"/>
+				<value_node value="wpn_fps_ass_vsk94_mag"/>
+				<value_node value="wpn_fps_ass_vsk94_grip"/>	
+				<value_node value="wpn_fps_ass_vsk94_stock"/>
+
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_ass_vsk94_sil"/>
+				<value_node value="wpn_fps_ass_vsk94_body"/>
+				<value_node value="wpn_fps_ass_vsk94_body_camo"/>
+				<value_node value="wpn_fps_ass_vsk94_barrel"/>
+				<value_node value="wpn_fps_ass_vsk94_mag"/>
+				<value_node value="wpn_fps_ass_vsk94_mag_ext"/>
+				<value_node value="wpn_fps_ass_vsk94_grip"/>	
+				<value_node value="wpn_fps_ass_vsk94_grip_sniper"/>
+				<value_node value="wpn_fps_ass_vsk94_stock"/>	
+				<value_node value="wpn_fps_ass_vsk94_fg"/>
+				<value_node value="wpn_fps_ass_vsk94_fg_sniper"/>
+				<value_node value="wpn_fps_ass_vsk94_stock_none"/>
+
+
+	
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_i_singlefire"/>
+				<value_node value="wpn_fps_upg_i_autofire"/>
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+			</uses_parts>
+		</factory>
+
+     		<stance>
+			<standard>
+				<shoulders translation="1 -3 -2" rotation="0 -0 0 -1"/>
+			</standard>
+			<crouched>
+				<shoulders translation="0.9 -4 -3.5" rotation="0 -0 0 -1"/>
+			</crouched>
+		</stance>
+	</Weapon>
+	<Sounds directory="Assets\sounds">
+		<sound id="vsk94_fire_single" path="vsk94_regular.ogg" prefix="regular"/>
+		<redirect id="vsk94_fire_single" to="akm_fire_single" prefix="suppressed_a"/>
+		<redirect id="vsk94_fire_single" to="akm_fire_single" prefix="suppressed_b"/>
+		<redirect id="vsk94_fire_single" to="akm_fire_single" prefix="suppressed_c"/>
+	</Sounds>
+	<AddFiles directory="assets">
+		<texture path="units/mods/weapons/wpn_fps_ass_vsk94_pts/vsk94_body_df"/>
+		<texture path="units/mods/weapons/wpn_fps_ass_vsk94_pts/vsk94_body_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_ass_vsk94_pts/scopemount_df"/>
+		<texture path="units/mods/weapons/wpn_fps_ass_vsk94_pts/scopemount_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_ass_vsk94_pts/mag_df"/>
+		<texture path="units/mods/weapons/wpn_fps_ass_vsk94_pts/mag_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_ass_vsk94_pts/camo_df"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_ass_vsk94/wpn_fps_ass_vsk94"/>
+		<model path="units/mods/weapons/wpn_fps_ass_vsk94/wpn_fps_ass_vsk94"/>
+		<object path="units/mods/weapons/wpn_fps_ass_vsk94/wpn_fps_ass_vsk94"/>
+		<unit path="units/mods/weapons/wpn_fps_ass_vsk94/wpn_fps_ass_vsk94"/>
+		<unit path="units/mods/weapons/wpn_fps_ass_vsk94/wpn_fps_ass_vsk94_npc"/>
+		
+		<!--Base Gun Asset-->
+		<cooked_physics path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_barrel"/>
+		<model path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_barrel"/>
+		<object path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_barrel"/>
+		<unit path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_barrel_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_body"/>
+		<model path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_body"/>
+		<object path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_body"/>
+		<unit path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_body_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_body_camo"/>
+		<model path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_body_camo"/>
+		<object path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_body_camo"/>
+		<unit path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_body_camo"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_body_camo"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_body_camo_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_mag"/>
+		<model path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_mag"/>
+		<object path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_mag"/>
+		<unit path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_mag"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_mag"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_mag_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_mag_ext"/>
+		<model path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_mag_ext"/>
+		<object path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_mag_ext"/>
+		<unit path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_mag_ext"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_mag_ext"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_mag_ext_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_stock"/>
+		<model path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_stock"/>
+		<object path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_stock"/>
+		<unit path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_stock"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_stock"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_stock_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_fg"/>
+		<model path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_fg"/>
+		<object path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_fg"/>
+		<unit path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_fg"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_fg"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_fg_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_fg_sniper"/>
+		<model path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_fg_sniper"/>
+		<object path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_fg_sniper"/>
+		<unit path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_fg_sniper"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_fg_sniper"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_fg_sniper_thq"/>
+
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_mount"/>
+		<model path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_mount"/>
+		<object path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_mount"/>
+		<unit path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_mount"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_mount"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_mount_thq"/>
+
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_grip"/>
+		<model path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_grip"/>
+		<object path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_grip"/>
+		<unit path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_grip"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_grip"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_grip_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_grip_sniper"/>
+		<model path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_grip_sniper"/>
+		<object path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_grip_sniper"/>
+		<unit path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_grip_sniper"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_grip_sniper"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_grip_sniper_thq"/>
+		
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_mag"/>
+		<model path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_mag"/>
+		<object path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_mag"/>
+		<unit path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_mag"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_mag"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_mag_thq"/>
+
+		<!-- body -->
+        		<texture path="units/mods/weapons/wpn_fps_ass_vsk94_pts/sil_df"/>
+        		<texture path="units/mods/weapons/wpn_fps_ass_vsk94_pts/sil_nm"/>
+        		<cooked_physics path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_sil"/>
+        		<material_config path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_sil"/>
+        		<material_config path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_sil_thq"/>
+        		<model path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_sil"/>
+        		<object path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_sil"/>
+        		<unit path="units/mods/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_sil"/>
+
+		
+		
+		
+
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_vsk94_grip_sniper"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_vsk94_fg_sniper"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_vsk94_body_camo"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_vsk94_sil"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_vsk94_mag_ext"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_vsk94_stock_none"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/vsk94"/>
+		<texture path="guis/vsk94"/>
+	</AddFiles>
+	
+	<Hooks directory="Hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="attachmentpoints.lua" source_file="lib/tweak_data/weapontweakdata"/>
+	</Hooks>
+</table>

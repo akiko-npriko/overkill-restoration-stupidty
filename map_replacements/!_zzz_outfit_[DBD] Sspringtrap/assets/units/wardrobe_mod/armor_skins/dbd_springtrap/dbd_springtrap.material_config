@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<materials group="clown" version="3">
+    <material name="MI_K40Arms01" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:RL_PLAYERS:SKINNED_3WEIGHTS" unique="true" version="2">
+        <diffuse_texture file="units/wardrobe_mod/armor_skins/dbd_springtrap/MI_K40Arms01_df"/>
+        <bump_normal_texture file="units/dev_tools/tangent_test/blank_nm"/>
+        <variable type="vector3" name="contour_color" value="1 1 1"/>
+        <variable type="scalar" name="contour_opacity" value="0"/>
+            
+        </material>
+    <material name="MI_K40ArmsAcc01" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:RL_PLAYERS:SKINNED_3WEIGHTS" unique="true" version="2">
+        <diffuse_texture file="units/wardrobe_mod/armor_skins/dbd_springtrap/MI_K40ArmsAcc01_df"/>
+        <bump_normal_texture file="units/dev_tools/tangent_test/blank_nm"/>
+        <variable type="vector3" name="contour_color" value="1 1 1"/>
+        <variable type="scalar" name="contour_opacity" value="0"/>
+            
+        </material>
+    <material name="MI_K40Torso01" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:RL_PLAYERS:SKINNED_3WEIGHTS" unique="true" version="2">
+        <diffuse_texture file="units/wardrobe_mod/armor_skins/dbd_springtrap/MI_K40Torso01_df"/>
+        <bump_normal_texture file="units/dev_tools/tangent_test/blank_nm"/>
+        <variable type="vector3" name="contour_color" value="1 1 1"/>
+        <variable type="scalar" name="contour_opacity" value="0"/>
+            
+        </material>
+    <material name="MI_K40Corpse01" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:RL_PLAYERS:SKINNED_3WEIGHTS" unique="true" version="2">
+        <diffuse_texture file="units/wardrobe_mod/armor_skins/dbd_springtrap/MI_K40Corpse01_df"/>
+        <bump_normal_texture file="units/dev_tools/tangent_test/blank_nm"/>
+        <variable type="vector3" name="contour_color" value="1 1 1"/>
+        <variable type="scalar" name="contour_opacity" value="0"/>
+            
+        </material>
+    <material name="MI_K40Head01" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:RL_PLAYERS:SKINNED_3WEIGHTS" unique="true" version="2">
+        <diffuse_texture file="units/wardrobe_mod/armor_skins/dbd_springtrap/MI_K40Head01_df"/>
+        <bump_normal_texture file="units/dev_tools/tangent_test/blank_nm"/>
+        <variable type="vector3" name="contour_color" value="1 1 1"/>
+        <variable type="scalar" name="contour_opacity" value="0"/>
+            
+        </material>
+    <material name="MI_K40HeadAcc01" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:RL_PLAYERS:SKINNED_3WEIGHTS" unique="true" version="2">
+        <diffuse_texture file="units/wardrobe_mod/armor_skins/dbd_springtrap/MI_K40HeadAcc01_df"/>
+        <bump_normal_texture file="units/dev_tools/tangent_test/blank_nm"/>
+        <variable type="vector3" name="contour_color" value="1 1 1"/>
+        <variable type="scalar" name="contour_opacity" value="0"/>
+            
+        </material>
+    <material name="MI_K40Legs01" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:RL_PLAYERS:SKINNED_3WEIGHTS" unique="true" version="2">
+        <diffuse_texture file="units/wardrobe_mod/armor_skins/dbd_springtrap/MI_K40Legs01_df"/>
+        <bump_normal_texture file="units/dev_tools/tangent_test/blank_nm"/>
+        <variable type="vector3" name="contour_color" value="1 1 1"/>
+        <variable type="scalar" name="contour_opacity" value="0"/>
+            
+        </material>
+
+</material>

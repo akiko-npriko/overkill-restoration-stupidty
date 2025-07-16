@@ -1,0 +1,82 @@
+<table name="mw_alqatala_juggernaut" image="guis/dlcs/wardrobe_mod/textures/pd2/blackmarket/icons/player_styles/mw_alqatala_juggernaut">
+	<Localization directory="localization" default="english.txt"/>
+	<GlobalValue id="mw_alqatala_juggernaut_g" color="Color(10, 114, 177)"/>
+	<PlayerStyle id="mw_alqatala_juggernaut" unit="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut_fps/mw_alqatala_juggernaut_fps" third_unit="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/mw_alqatala_juggernaut" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="wardrobe_mod" global_value="mw_alqatala_juggernaut_g">
+		<third_body_replacement	mask="false" head="false" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="false" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<characters>
+			<bodhi		third_unit="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/mw_alqatala_juggernaut"/>
+			<chains		third_unit="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/mw_alqatala_juggernaut"/>
+			<dragon		third_unit="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/mw_alqatala_juggernaut"/>
+			<joy		third_unit="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/mw_alqatala_juggernaut"/>
+			<ecp_male	third_unit="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/mw_alqatala_juggernaut"/>
+			<max		third_unit="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/mw_alqatala_juggernaut"/>
+			<wild		third_unit="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/mw_alqatala_juggernaut"/>
+			<jacket		third_unit="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/mw_alqatala_juggernaut"/>
+			<jowi		third_unit="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/mw_alqatala_juggernaut"/>
+			<chico		third_unit="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/mw_alqatala_juggernaut"/>
+			<jimmy		third_unit="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/mw_alqatala_juggernaut"/>
+			<sokol		third_unit="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/mw_alqatala_juggernaut"/>
+			<myh		third_unit="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/mw_alqatala_juggernaut"/>
+			<sydney		third_unit="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/mw_alqatala_juggernaut"/>
+			<ecp_female	third_unit="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/mw_alqatala_juggernaut"/>
+			<female_1	third_unit="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/mw_alqatala_juggernaut"/>
+			<bonnie		third_unit="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/mw_alqatala_juggernaut"/>
+		</characters>
+	</PlayerStyle>
+
+    <AddFiles directory="assets">	
+	<texture path="guis/dlcs/wardrobe_mod/textures/pd2/blackmarket/icons/player_styles/mw_alqatala_juggernaut"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Buckle_master_urban_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Boots_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Kneepads_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Arms_Folded_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Gloves_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Jacket_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Gorka_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Pant_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Vest_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Patch_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Qamis_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Pouches_Cloth_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Magazine_Pouches_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Magazines_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Svd_Pouches_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Utility_Pouch_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Utiility_Pouch2_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Radio_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Radio_Straps_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Radio_2_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Radio_Antenna_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Radio_Chip_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Radio_Cloth_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Carabiner_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Straps_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Belt_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Belt_2_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Protectors_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/NeckGuard_Straps_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/NeckGuard_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Shoulder_Pads_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Shoulder_Pads_Straps_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/ThighPads_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Smoke_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Grenade_zip_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Holster_Pouches_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Grenade_Pouches_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Grenades_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Tourniquet_2_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Tourniquet_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Holster_PistolPouches_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Pistol_Mags_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Holster_PistolPouches2_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Holsters_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Buckles_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Backpack_Straps2_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Backpack_Straps_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Backpack_Holder_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/Backpack_df"/>
+	<unit_mat path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut/mw_alqatala_juggernaut"/>
+	<unit_mat path="units/wardrobe_mod/armor_skins/mw_alqatala_juggernaut_fps/mw_alqatala_juggernaut_fps"/>
+</AddFiles>
+</table>

@@ -1,0 +1,12 @@
+<materials version="3" group="weapon_51b">
+    <material render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" name="mat_stock" version="2">
+        <bump_normal_texture file="units/pd2_dlc_pxp1/weapons/wpn_fps_lmg_hk51b_pts/51b_stock_nm"/>
+        <diffuse_texture file="units/mods/weapons/wpn_fps_ass_g3_pts/stock_df"/>
+        <material_texture file="units/pd2_dlc_pxp1/weapons/wpn_fps_lmg_hk51b_pts/51b_stock_gsma"/>
+    </material>
+    <material render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" name="mat_hk_mp5_sef_Lower" version="2">
+        <bump_normal_texture file="units/pd2_dlc_pxp1/weapons/wpn_fps_lmg_hk51b_pts/51b_lower_nm"/>
+        <diffuse_texture file="units/mods/weapons/wpn_fps_ass_g3_pts/stock_base_df"/>
+        <material_texture file="units/pd2_dlc_pxp1/weapons/wpn_fps_lmg_hk51b_pts/51b_lower_gsma"/>
+    </material>
+</materials>

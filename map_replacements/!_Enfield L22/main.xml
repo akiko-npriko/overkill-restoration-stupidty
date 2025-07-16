@@ -1,0 +1,326 @@
+<mod name="Enfield L22" color="Color(0.3, 0, 0.6)" min_lib_ver="3.38">
+    <AssetUpdates id="29377" version="1.1" provider="modworkshop"/>
+    <Localization directory="loc" default="english.txt">
+		<loc file="english.txt" language="english"/>
+		<loc file="russian.txt" language="russian"/>
+    </Localization>
+	<GlobalValue id="fckmyfingersmod" color="Color(0.3, 0, 0.6)"/>
+	<WeaponMod id="wpn_fps_pdw_fckmyfingers_b_short" based_on="wpn_fps_m4_uupg_b_medium_vanilla" type="barrel" a_obj="a_body" wpn_pts="wpn_fps_pdw_fckmyfingers" hidden="true" ver="2"/>
+	<WeaponMod id="wpn_fps_pdw_fckmyfingers_body" based_on="wpn_fps_m4_lower_reciever" type="lower_reciever" wpn_pts="wpn_fps_pdw_fckmyfingers" hidden="true" ver="2"/>
+	<WeaponMod id="wpn_fps_pdw_fckmyfingers_bolt" based_on="wpn_fps_ass_l85a2_body_standard" type="bolt" wpn_pts="wpn_fps_pdw_fckmyfingers" hidden="true" ver="2"/>
+	<WeaponMod id="wpn_fps_pdw_fckmyfingers_fh_std" based_on="wpn_fps_ass_contraband_ns_standard" type="barrel_ext" wpn_pts="wpn_fps_pdw_fckmyfingers" hidden="true" ver="2"/>
+	<WeaponMod id="wpn_fps_pdw_fckmyfingers_g_std" based_on="wpn_fps_m4_lower_reciever" type="grip" wpn_pts="wpn_fps_pdw_fckmyfingers" hidden="true" ver="2"/>
+	<WeaponMod id="wpn_fps_pdw_fckmyfingers_hg_std" based_on="wpn_fps_m4_lower_reciever" type="foregrip" wpn_pts="wpn_fps_pdw_fckmyfingers" hidden="true" ver="2"/>
+	<WeaponMod id="wpn_fps_pdw_fckmyfingers_o_std" based_on="wpn_fps_m4_lower_reciever" type="sight" wpn_pts="wpn_fps_pdw_fckmyfingers" hidden="true" ver="2">
+		<adds>
+			<value_node value="wpn_fps_pdw_fckmyfingers_o_rail_prop"/>
+		</adds>
+		<stance_mod>
+			<wpn_fps_pdw_fckmyfingers translation="0 0 0.35"/>
+			<wpn_fps_crb_enfieldl22 translation="0 0 0.35"/>
+		</stance_mod>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_pdw_fckmyfingers_m_std" based_on="wpn_fps_m4_uupg_m_std_vanilla" type="magazine" wpn_pts="wpn_fps_pdw_fckmyfingers" hidden="true" ver="2">
+		<stats reload="1"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_pdw_fckmyfingers_vg_std" based_on="wpn_fps_m4_lower_reciever" type="vertical_grip" wpn_pts="wpn_fps_pdw_fckmyfingers" hidden="true" ver="2"/>
+	<WeaponMod id="wpn_fps_pdw_fckmyfingers_o_rail_prop" based_on="wpn_fps_m4_lower_reciever" type="sight_rail" wpn_pts="wpn_fps_pdw_fckmyfingers" hidden="true" ver="2"/>
+	<WeaponMod id="wpn_fps_pdw_fckmyfingers_o_rail_pic" based_on="wpn_fps_m4_lower_reciever" type="sight_rail" wpn_pts="wpn_fps_pdw_fckmyfingers" hidden="true" ver="2"/>
+	<!-- Attachments-->
+	<WeaponMod id="wpn_fps_pdw_fckmyfingers_b_medium" based_on="wpn_fps_m4_uupg_b_medium_vanilla"  global_value="fckmyfingersmod" type="barrel" a_obj="a_body" wpn_pts="wpn_fps_pdw_fckmyfingers" ver="2">
+		<stats damage="-1" concealment="-2" recoil="1" spread="2"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_pdw_fckmyfingers_o_susat" based_on="wpn_fps_upg_o_aimpoint"  global_value="fckmyfingersmod" texture_switch="false" a_obj="a_body" type="sight" wpn_pts="wpn_fps_pdw_fckmyfingers" ver="2">
+		<stats concealment="-1" spread="1" recoil="0" zoom="4"/>
+		<adds>
+			<value_node value="wpn_fps_pdw_fckmyfingers_o_rail_prop"/>
+		</adds>
+		<stance_mod>
+			<wpn_fps_pdw_fckmyfingers translation="0 5 0.4"/>
+			<wpn_fps_crb_enfieldl22 translation="0 5 0.4"/>
+		</stance_mod>
+		<ads_objects>
+			<value_node value="g_lens_ads"/>
+			<value_node value="g_susat_ads"/>
+		</ads_objects>
+		<ads_objects_hide>
+			<value_node value="g_susat"/>
+			<value_node value="g_lens"/>
+		</ads_objects_hide>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_pdw_fckmyfingers_m_short" based_on="wpn_fps_m4_uupg_m_std_vanilla"  global_value="fckmyfingersmod" type="magazine" wpn_pts="wpn_fps_pdw_fckmyfingers" ver="2">
+		<stats extra_ammo="-5" reload="3" concealment="1"/>
+	</WeaponMod>
+	
+	<Weapon unlock_level="22">
+		<weapon id="fckmyfingers" tactical_reload="1" based_on="l85a2" NR_CLIPS_MAX="6" ammo_pickup="3" global_value="fckmyfingersmod">
+			<stats damage="64" spread="13" spread_moving="13" recoil="9" concealment="26"/>
+			<fire_mode_data fire_rate="0.08"/>
+			<kick>
+				<standing>
+					<value_node value="2.3"/>
+					<value_node value="1.8"/>
+					<value_node value="-1.5"/>
+					<value_node value="0.9"/>
+				</standing>
+				<crouching>
+					<value_node value="2.0"/>
+					<value_node value="1.5"/>
+					<value_node value="-1.3"/>
+					<value_node value="0.8"/>
+				</crouching>
+				<steelsight>
+					<value_node value="1.8"/>
+					<value_node value="1.4"/>
+					<value_node value="-1.3"/>
+					<value_node value="0.8"/>
+				</steelsight>
+			</kick>
+			<animations reload_name_id="l85a2"/>
+		</weapon>
+		<factory id="wpn_fps_pdw_fckmyfingers" unit="units/mods/weapons/wpn_fps_pdw_fckmyfingers/wpn_fps_pdw_fckmyfingers">
+			<animations reload="reload" fire="recoil" fire_steelsight="recoil" reload_not_empty="reload_not_empty" magazine_empty="last_recoil"/>
+			<optional_types>
+				<value_node value="barrel_ext"/>
+				<value_node value="gadget"/>
+				<value_node value="sight"/>
+			</optional_types>
+			<adds/>
+			<override>
+				<wpn_fps_addon_ris unit = "units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+			</override>
+			<default_blueprint>
+				<value_node value="wpn_fps_pdw_fckmyfingers_b_short"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_body"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_bolt"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_fh_std"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_g_std"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_hg_std"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_m_std"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_o_std"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_vg_std"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_pdw_fckmyfingers_b_short"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_body"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_bolt"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_fh_std"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_g_std"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_hg_std"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_o_std"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_m_std"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_vg_std"/>
+
+				<value_node value="wpn_fps_pdw_fckmyfingers_b_medium"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_o_susat"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_m_short"/>
+
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				
+				<value_node value="wpn_fps_upg_i_singlefire"/>
+				<value_node value="wpn_fps_upg_i_autofire"/>
+				
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_45rds"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+				<value_node value="wpn_fps_upg_o_45rds_v2"/>
+
+				<value_node value="wpn_fps_upg_m4_m_pmag"/>
+				<value_node value="wpn_fps_upg_m4_m_l5"/>
+				<value_node value="wpn_fps_ass_l85a2_m_emag"/>
+				<value_node value="wpn_fps_upg_m4_m_quad"/>
+				<value_node value="wpn_fps_m4_upg_m_quick"/>
+			</uses_parts>
+		</factory>
+		<stance/>
+	</Weapon>
+	<Weapon unlock_level="22">
+		<weapon id="enfieldl22" tactical_reload="1" CLIP_AMMO_MAX="30" based_on="olympic" weapon_hold="l85a2" NR_CLIPS_MAX="6" ammo_pickup="3" global_value="fckmyfingersmod">
+			<stats damage="64" spread="13" spread_moving="13" recoil="9" concealment="26"/>
+			<fire_mode_data fire_rate="0.08"/>
+			<kick>
+				<standing>
+					<value_node value="2.3"/>
+					<value_node value="1.8"/>
+					<value_node value="-1.5"/>
+					<value_node value="0.9"/>
+				</standing>
+				<crouching>
+					<value_node value="2.0"/>
+					<value_node value="1.5"/>
+					<value_node value="-1.3"/>
+					<value_node value="0.8"/>
+				</crouching>
+				<steelsight>
+					<value_node value="1.8"/>
+					<value_node value="1.4"/>
+					<value_node value="-1.3"/>
+					<value_node value="0.8"/>
+				</steelsight>
+			</kick>
+			<animations reload_name_id="l85a2"/>
+		</weapon>
+		<factory id="wpn_fps_crb_enfieldl22" unit="units/mods/weapons/wpn_fps_crb_enfieldl22/wpn_fps_crb_enfieldl22">
+			<animations reload="reload" fire="recoil" fire_steelsight="recoil" reload_not_empty="reload_not_empty" magazine_empty="last_recoil"/>
+			<optional_types>
+				<value_node value="barrel_ext"/>
+				<value_node value="gadget"/>
+				<value_node value="sight"/>
+			</optional_types>
+			<adds/>
+			<override>
+				<wpn_fps_addon_ris unit = "units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+			</override>
+			<default_blueprint>
+				<value_node value="wpn_fps_pdw_fckmyfingers_b_short"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_body"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_bolt"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_fh_std"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_g_std"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_hg_std"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_m_std"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_o_std"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_vg_std"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_pdw_fckmyfingers_b_short"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_body"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_bolt"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_fh_std"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_g_std"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_hg_std"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_o_std"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_m_std"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_vg_std"/>
+
+				<value_node value="wpn_fps_pdw_fckmyfingers_b_medium"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_o_susat"/>
+				<value_node value="wpn_fps_pdw_fckmyfingers_m_short"/>
+
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				
+				<value_node value="wpn_fps_upg_i_singlefire"/>
+				<value_node value="wpn_fps_upg_i_autofire"/>
+				
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_45rds"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+				<value_node value="wpn_fps_upg_o_45rds_v2"/>
+
+				<value_node value="wpn_fps_upg_m4_m_pmag"/>
+				<value_node value="wpn_fps_upg_m4_m_l5"/>
+				<value_node value="wpn_fps_ass_l85a2_m_emag"/>
+				<value_node value="wpn_fps_upg_m4_m_quad"/>
+				<value_node value="wpn_fps_m4_upg_m_quick"/>
+			</uses_parts>
+		</factory>
+		<stance>
+			<standard>
+				<shoulders rotation="0 -0 0 -1" translation="-0.577 -2.058 -0.559"/>
+			</standard>
+			<steelsight>
+				<shoulders rotation="0 -0 0 -1" translation="-9.423 -7.558 1.059"/>
+			</steelsight>
+			<crouched>
+				<shoulders rotation="-0 -0 0 -1" translation="-0.423 -3.058 -0.441"/>
+			</crouched>
+		</stance>
+	</Weapon>
+	<AddFiles directory="assets">
+		<df_nm_cc path="units/mods/weapons/wpn_fps_pdw_fckmyfingers_pts/l85"/>
+		<df_nm_cc path="units/mods/weapons/wpn_fps_pdw_fckmyfingers_pts/l85_stock"/>
+		<df_nm_cc path="units/mods/weapons/wpn_fps_pdw_fckmyfingers_pts/l85_barrel"/>
+		<df_nm_cc path="units/mods/weapons/wpn_fps_pdw_fckmyfingers_pts/l85_grip"/>
+		<df_nm_cc path="units/mods/weapons/wpn_fps_pdw_fckmyfingers_pts/l85_rail"/>
+		<df_nm_cc path="units/mods/weapons/wpn_fps_pdw_fckmyfingers_pts/l85_is"/>
+		<df_nm_cc path="units/mods/weapons/wpn_fps_pdw_fckmyfingers_pts/l85_fh"/>
+		<df_nm_cc path="units/mods/weapons/wpn_fps_pdw_fckmyfingers_pts/l85_hg"/>
+		<df_nm_cc path="units/mods/weapons/wpn_fps_pdw_fckmyfingers_pts/stanag30"/>
+		<df_nm_cc path="units/mods/weapons/wpn_fps_pdw_fckmyfingers_pts/susat"/>
+		<df_nm_cc path="units/mods/weapons/wpn_fps_pdw_fckmyfingers_pts/vg"/>
+
+		<unit_npc path="units/mods/weapons/wpn_fps_pdw_fckmyfingers/wpn_fps_pdw_fckmyfingers"/>
+		<unit_npc path="units/mods/weapons/wpn_fps_crb_enfieldl22/wpn_fps_crb_enfieldl22"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_pdw_fckmyfingers_pts/wpn_fps_pdw_fckmyfingers_b_short"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_pdw_fckmyfingers_pts/wpn_fps_pdw_fckmyfingers_body"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_pdw_fckmyfingers_pts/wpn_fps_pdw_fckmyfingers_bolt"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_pdw_fckmyfingers_pts/wpn_fps_pdw_fckmyfingers_fh_std"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_pdw_fckmyfingers_pts/wpn_fps_pdw_fckmyfingers_g_std"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_pdw_fckmyfingers_pts/wpn_fps_pdw_fckmyfingers_hg_std"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_pdw_fckmyfingers_pts/wpn_fps_pdw_fckmyfingers_o_std"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_pdw_fckmyfingers_pts/wpn_fps_pdw_fckmyfingers_m_std"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_pdw_fckmyfingers_pts/wpn_fps_pdw_fckmyfingers_vg_std"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_pdw_fckmyfingers_pts/wpn_fps_pdw_fckmyfingers_o_rail_prop"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_pdw_fckmyfingers_pts/wpn_fps_pdw_fckmyfingers_o_rail_pic"/>
+		
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_pdw_fckmyfingers_pts/wpn_fps_pdw_fckmyfingers_b_medium"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_pdw_fckmyfingers_pts/wpn_fps_pdw_fckmyfingers_o_susat"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_pdw_fckmyfingers_pts/wpn_fps_pdw_fckmyfingers_m_short"/>
+
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pdw_fckmyfingers_b_medium"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pdw_fckmyfingers_o_susat"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pdw_fckmyfingers_m_short"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/fckmyfingers"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/enfieldl22"/>
+	</AddFiles>
+	<Hooks directory="hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
+	</Hooks>
+</mod>

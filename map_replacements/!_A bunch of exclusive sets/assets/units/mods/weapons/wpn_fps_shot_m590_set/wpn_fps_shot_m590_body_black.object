@@ -1,0 +1,14 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_shot_m590_set/wpn_fps_shot_m590_body_black" orientation_object="rp_wpn_fps_sho_m590_body_standard" />
+	  <animations>
+    <animation_group name="reload" enabled="false" >
+		<object name="anim_slug_reload" enabled="true" />
+    </animation_group>
+  </animations>
+	<graphics>
+		<object name="g_slug" enabled="false"/>
+		<object name="g_body" enabled="true"/>
+		<object name="g_bolt" enabled="true"/>
+		<object name="g_hatch" enabled="true"/>
+	</graphics>
+</dynamic_object>

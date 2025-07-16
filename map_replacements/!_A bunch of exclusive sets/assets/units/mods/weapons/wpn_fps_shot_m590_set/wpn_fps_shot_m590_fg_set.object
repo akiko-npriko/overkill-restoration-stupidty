@@ -1,0 +1,19 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_shot_m590_set/wpn_fps_shot_m590_fg_set" orientation_object="rp_wpn_fps_sho_m590_fg_standard" />
+	  <animations>	
+		<animation_group name="recoil">
+			<object name="anim_bolt_recoil" enabled="true" />
+    	</animation_group>
+
+    	<animation_group name="recoil_zoom">
+			<object name="anim_bolt_recoil_zoom" enabled="true" />
+    	</animation_group>
+
+    	<animation_group name="reload_exit">
+    		<object name="anim_bolt_reload_exit" enabled="true" />
+    	</animation_group>
+</animations>
+	<graphics>
+		<object name="g_pump" enabled="true"/>
+	</graphics>
+</dynamic_object>

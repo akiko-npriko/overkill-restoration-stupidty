@@ -1,0 +1,16 @@
+<dynamic_object>
+	<diesel materials="units/otwd_flare_gun/otwd_flare_gun_brass/otwd_flare_gun_brass" orientation_object="rp_body" />
+  	<animations>
+	    <animation_group name="reload">
+			<object name="a_reload"	enabled="true" />
+	    </animation_group>
+	    <animation_group name="recoil">
+			<object name="a_cock"	enabled="true" />
+	    </animation_group>
+	</animations>
+	<graphics>
+		<object name="g_cylinder"	enabled="true" />
+		<object name="g_body"		enabled="true" />
+		<object name="g_short"		enabled="true" />
+	</graphics>
+</dynamic_object>

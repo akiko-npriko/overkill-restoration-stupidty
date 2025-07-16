@@ -1,0 +1,40 @@
+<table name="dbd_springtrap" image="guis/dlcs/wardrobe_mod/textures/pd2/blackmarket/icons/player_styles/dbd_springtrap">
+	<Localization directory="localization" default="english.txt"/>
+	<GlobalValue id="dbd_springtrap_g" color="Color(10, 114, 177)"/>
+	<PlayerStyle id="dbd_springtrap" unit="units/wardrobe_mod/armor_skins/dbd_springtrap_fps/dbd_springtrap_fps" third_unit="units/wardrobe_mod/armor_skins/dbd_springtrap/dbd_springtrap" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="wardrobe_mod" global_value="dbd_springtrap_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<characters>
+			<bodhi		third_unit="units/wardrobe_mod/armor_skins/dbd_springtrap/dbd_springtrap"/>
+			<chains		third_unit="units/wardrobe_mod/armor_skins/dbd_springtrap/dbd_springtrap"/>
+			<dragon		third_unit="units/wardrobe_mod/armor_skins/dbd_springtrap/dbd_springtrap"/>
+			<joy		third_unit="units/wardrobe_mod/armor_skins/dbd_springtrap/dbd_springtrap"/>
+			<ecp_male	third_unit="units/wardrobe_mod/armor_skins/dbd_springtrap/dbd_springtrap"/>
+			<max		third_unit="units/wardrobe_mod/armor_skins/dbd_springtrap/dbd_springtrap"/>
+			<wild		third_unit="units/wardrobe_mod/armor_skins/dbd_springtrap/dbd_springtrap"/>
+			<jacket		third_unit="units/wardrobe_mod/armor_skins/dbd_springtrap/dbd_springtrap"/>
+			<jowi		third_unit="units/wardrobe_mod/armor_skins/dbd_springtrap/dbd_springtrap"/>
+			<chico		third_unit="units/wardrobe_mod/armor_skins/dbd_springtrap/dbd_springtrap"/>
+			<jimmy		third_unit="units/wardrobe_mod/armor_skins/dbd_springtrap/dbd_springtrap"/>
+			<sokol		third_unit="units/wardrobe_mod/armor_skins/dbd_springtrap/dbd_springtrap"/>
+			<myh		third_unit="units/wardrobe_mod/armor_skins/dbd_springtrap/dbd_springtrap"/>
+			<sydney		third_unit="units/wardrobe_mod/armor_skins/dbd_springtrap/dbd_springtrap"/>
+			<ecp_female	third_unit="units/wardrobe_mod/armor_skins/dbd_springtrap/dbd_springtrap"/>
+			<female_1	third_unit="units/wardrobe_mod/armor_skins/dbd_springtrap/dbd_springtrap"/>
+			<bonnie		third_unit="units/wardrobe_mod/armor_skins/dbd_springtrap/dbd_springtrap"/>
+		</characters>
+	</PlayerStyle>
+
+    <AddFiles directory="assets">	
+	<texture path="guis/dlcs/wardrobe_mod/textures/pd2/blackmarket/icons/player_styles/dbd_springtrap"/>
+	<texture path="units/wardrobe_mod/armor_skins/dbd_springtrap/MI_K40Arms01_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/dbd_springtrap/MI_K40ArmsAcc01_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/dbd_springtrap/MI_K40Torso01_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/dbd_springtrap/MI_K40Corpse01_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/dbd_springtrap/MI_K40Head01_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/dbd_springtrap/MI_K40HeadAcc01_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/dbd_springtrap/MI_K40Legs01_df"/>
+	<unit_mat path="units/wardrobe_mod/armor_skins/dbd_springtrap/dbd_springtrap"/>
+	<unit_mat path="units/wardrobe_mod/armor_skins/dbd_springtrap_fps/dbd_springtrap_fps"/>
+</AddFiles>
+</table>

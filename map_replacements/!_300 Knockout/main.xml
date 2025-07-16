@@ -1,0 +1,183 @@
+<table name="knockout">
+<!-- Table name = id for the pack -->
+
+    <AssetUpdates id="20211" name="asset_updates" folder_name="300 Knockout" provider="lastbullet"/>
+    <!---->
+    
+    <Localization directory="Localization" default="english.txt">
+    </Localization>
+
+    <GlobalValue id="knockout" color="Color(0.54, 0.16, 0.88)"/>
+
+    <WeaponMod based_on="wpn_fps_snp_msr_body_msr" id="wpn_fps_snp_knockout_body_standard" unit="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_body_standard" type="stock" drop="false" texture_bundle_folder="mods" is_a_unlockable="false">
+        <stats concealment="0" damage="0" recoil="0" spread="0" suppression="0"/>
+    </WeaponMod>
+
+    <WeaponMod based_on="wpn_fps_snp_msr_body_msr" id="wpn_fps_snp_knockout_body_desert" unit="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_body_desert" type="stock" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+        <stats concealment="0" damage="0" recoil="0" spread="0" suppression="0"/>
+    </WeaponMod>
+
+    <WeaponMod based_on="wpn_fps_snp_msr_body_msr" id="wpn_fps_snp_knockout_body_nep" unit="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_body_nep" type="stock" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+        <stats concealment="0" damage="0" recoil="0" spread="0" suppression="0"/>
+    </WeaponMod>
+
+    <WeaponMod based_on="wpn_fps_snp_msr_m_standard" id="wpn_fps_snp_knockout_mag_standard" unit="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_mag_standard" type="magazine" drop="false" texture_bundle_folder="mods" is_a_unlockable="false"/>
+
+    <WeaponMod based_on="wpn_fps_m4_uupg_o_flipup" id="wpn_fps_snp_knockout_o_standard" unit="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_o_standard" type="sight" drop="false" texture_bundle_folder="mods" is_a_unlockable="false">
+        <stats concealment="0" damage="0" recoil="0" spread="0" suppression="0"/>
+    </WeaponMod>
+
+    <WeaponMod based_on="wpn_fps_snp_m95_barrel_suppressed" id="wpn_fps_snp_knockout_b_fake" unit="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_b_fake" type="barrel" drop="false" texture_bundle_folder="mods" is_a_unlockable="false">
+        <stats concealment="0" damage="0" recoil="0" spread="0" suppression="0"/>
+    </WeaponMod>
+
+    <WeaponNew unlock_level="67">
+        <weapon id="knockout" based_on="msr" CLIP_AMMO_MAX="5" NR_CLIPS_MAX="4" texture_bundle_folder="mods" global_value="knockout">
+
+            <stats spread="21" spread_moving="18" recoil="5" concealment="16"/>
+
+            <animations reload_name_id="msr" equip_id="equip_msr" recoil_steelsight="true">
+            </animations>
+            
+        </weapon>
+        <factory id="wpn_fps_snp_knockout" unit="units/mods/weapons/wpn_fps_snp_knockout/wpn_fps_snp_knockout">     
+        
+            <optional_types>
+                <value_node value="barrel_ext"/>
+                <value_node value="gadget"/>
+            </optional_types>
+
+            <default_blueprint>
+                <value_node value="wpn_fps_snp_knockout_body_standard"/> <!-- body -->
+                <value_node value="wpn_fps_snp_knockout_mag_standard"/>
+                <value_node value="wpn_fps_snp_knockout_o_standard"/>
+                <value_node value="wpn_fps_snp_knockout_b_fake"/>
+            </default_blueprint>
+
+            <uses_parts>
+                <value_node value="wpn_fps_snp_knockout_body_standard"/> <!-- body -->
+                <value_node value="wpn_fps_snp_knockout_body_desert"/> <!-- body -->
+                <value_node value="wpn_fps_snp_knockout_body_nep"/> <!-- body -->
+                <value_node value="wpn_fps_snp_knockout_mag_standard"/>
+                <value_node value="wpn_fps_snp_knockout_o_standard"/>
+                <value_node value="wpn_fps_snp_knockout_b_fake"/>
+                <value_node value="wpn_fps_upg_o_specter"/>
+                <value_node value="wpn_fps_upg_o_aimpoint"/>
+                <value_node value="wpn_fps_upg_o_docter"/>
+                <value_node value="wpn_fps_upg_o_eotech"/>
+                <value_node value="wpn_fps_upg_o_t1micro"/>
+                <value_node value="wpn_fps_upg_o_acog"/>
+                <value_node value="wpn_fps_upg_o_cmore"/>
+                <value_node value="wpn_fps_upg_o_aimpoint_2"/>
+                <value_node value="wpn_fps_upg_o_eotech_xps"/>
+                <value_node value="wpn_fps_upg_o_reflex"/>
+                <value_node value="wpn_fps_upg_o_rx01"/>
+                <value_node value="wpn_fps_upg_o_rx30"/>
+                <value_node value="wpn_fps_upg_o_cs"/>
+                <value_node value="wpn_fps_upg_o_45iron"/>
+                <value_node value="wpn_fps_upg_o_45rds"/>
+                <value_node value="wpn_fps_upg_o_leupold"/>
+                <value_node value="wpn_fps_upg_o_spot"/>
+                <value_node value="wpn_fps_upg_o_box"/>
+                <value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+                <value_node value="wpn_fps_upg_fl_ass_peq15"/>
+                <value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+                <value_node value="wpn_fps_upg_fl_ass_laser"/>
+                <value_node value="wpn_fps_upg_fl_ass_utg"/>
+            </uses_parts>
+
+            <adds>
+            </adds>
+            
+        </factory>
+
+
+        <stance/>
+
+    </Weapon>
+
+    <AddFiles directory="assets">
+    <!-- This section adds specific files to the game -->
+
+    <!-- main section -->
+        <cooked_physics path="units/mods/weapons/wpn_fps_snp_knockout/wpn_fps_snp_knockout"/>
+        <model path="units/mods/weapons/wpn_fps_snp_knockout/wpn_fps_snp_knockout"/>
+        <object path="units/mods/weapons/wpn_fps_snp_knockout/wpn_fps_snp_knockout"/>
+        <unit path="units/mods/weapons/wpn_fps_snp_knockout/wpn_fps_snp_knockout"/>
+        <unit path="units/mods/weapons/wpn_fps_snp_knockout/wpn_fps_snp_knockout_npc"/>
+        
+    <!-- Textures -->
+        <texture path="units/mods/weapons/wpn_fps_snp_knockout_pts/knockout_df"/>
+        <texture path="units/mods/weapons/wpn_fps_snp_knockout_pts/knockout_desert_df"/>
+        <texture path="units/mods/weapons/wpn_fps_snp_knockout_pts/knockout_nep_df"/>
+        <texture path="units/mods/weapons/wpn_fps_snp_knockout_pts/knockout_nm"/>
+        <texture path="units/mods/weapons/wpn_fps_snp_knockout_pts/knockout_sight_df"/>
+        <texture path="units/mods/weapons/wpn_fps_snp_knockout_pts/knockout_sight_nm"/>
+        
+    <!-- body -->
+        <cooked_physics path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_body_standard"/>
+        <material_config path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_body_standard"/>
+        <model path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_body_standard"/>
+        <object path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_body_standard"/>
+        <unit path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_body_standard"/>
+        
+        <material_config path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_body_standard_thq"/>
+
+    <!-- body -->
+        <cooked_physics path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_body_desert"/>
+        <material_config path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_body_desert"/>
+        <model path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_body_desert"/>
+        <object path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_body_desert"/>
+        <unit path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_body_desert"/>
+        
+        <material_config path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_body_desert_thq"/>
+    
+    <!-- body -->
+        <cooked_physics path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_body_nep"/>
+        <material_config path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_body_nep"/>
+        <model path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_body_nep"/>
+        <object path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_body_nep"/>
+        <unit path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_body_nep"/>
+        
+        <material_config path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_body_nep_thq"/>
+
+    <!-- mag -->
+        <cooked_physics path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_mag_standard"/>
+        <material_config path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_mag_standard"/>
+        <model path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_mag_standard"/>
+        <object path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_mag_standard"/>
+        <unit path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_mag_standard"/>
+        
+        <material_config path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_mag_standard_thq"/>
+
+    <!-- o -->
+        <cooked_physics path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_o_standard"/>
+        <material_config path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_o_standard"/>
+        <model path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_o_standard"/>
+        <object path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_o_standard"/>
+        <unit path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_o_standard"/>
+        
+        <material_config path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_o_standard_thq"/>
+
+    <!-- fake b -->
+        <cooked_physics path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_b_fake"/>
+        <material_config path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_b_fake"/>
+        <model path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_b_fake"/>
+        <object path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_b_fake"/>
+        <unit path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_b_fake"/>
+        
+        <material_config path="units/mods/weapons/wpn_fps_snp_knockout_pts/wpn_fps_snp_knockout_b_fake_thq"/>
+                
+     <!-- icons -->
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/knockout"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_snp_knockout_body_nep"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_snp_knockout_body_desert"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_snp_knockout_body_standard"/>
+
+    </AddFiles>
+
+    <Hooks directory="Hooks">
+        <hook file="wpftweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+        <hook file="wftweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
+    </Hooks>
+</table>

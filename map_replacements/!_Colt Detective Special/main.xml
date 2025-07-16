@@ -1,0 +1,118 @@
+<mod name="Colt Detective Special" min_lib_ver="3.38" color="Color(0.96, 0.7, 0.9)">
+    <AssetUpdates id="37727" version="1.0" provider="modworkshop"/>
+	<GlobalValue id="coltdsmod" color="Color(0.96, 0.7, 0.9)"/>
+    <Localization directory="loc" default="english.txt">
+		<loc file="english.txt" language="english"/>
+		<loc file="russian.txt" language="russian"/>
+    </Localization>
+	
+	<WeaponMod id="wpn_fps_pis_coltds_b_std" based_on="wpn_fps_pis_chinchilla_b_standard" wpn_pts="wpn_fps_pis_coltds" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_pis_coltds_body_std" based_on="wpn_fps_pis_chinchilla_body" wpn_pts="wpn_fps_pis_coltds" hidden="true" ver="2"/>
+	
+	<WeaponMod id="wpn_fps_pis_coltds_cylinder" based_on="wpn_fps_pis_chinchilla_cylinder" wpn_pts="wpn_fps_pis_coltds" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_pis_coltds_dh_std" based_on="wpn_fps_pis_chinchilla_dh_hammer" wpn_pts="wpn_fps_pis_coltds" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_pis_coltds_ejector" based_on="wpn_fps_pis_chinchilla_ejectorpin" wpn_pts="wpn_fps_pis_coltds" hidden="true" ver="2"/>
+	
+	<WeaponMod id="wpn_fps_pis_coltds_g_std" based_on="wpn_fps_pis_chinchilla_g_standard" wpn_pts="wpn_fps_pis_coltds" hidden="true" ver="2"/>
+	
+	<WeaponMod id="wpn_fps_pis_coltds_hinge" based_on="wpn_fps_pis_chinchilla_lock_arm" wpn_pts="wpn_fps_pis_coltds" hidden="true" ver="2"/>
+	
+	<WeaponMod id="wpn_fps_pis_coltds_m_bullets" based_on="wpn_fps_pis_chinchilla_m_bullets" wpn_pts="wpn_fps_pis_coltds" hidden="true" ver="2"/>
+
+	
+	<WeaponMod id="wpn_fps_pis_coltds_o_iron" based_on="wpn_fps_ass_vhs_o_standard" hidden="true" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" ver="2">
+		<stance_mod>
+			<wpn_fps_pis_coltds translation="-0.1 0 0.1"/>
+		</stance_mod>
+	</WeaponMod>
+	
+<!--extra-->
+	<WeaponMod id="wpn_fps_pis_coltds_fl_rail" based_on="wpn_fps_shot_r870_gadget_rail" wpn_pts="wpn_fps_pis_coltds" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_pis_coltds_o_rail" based_on="wpn_fps_shot_r870_ris_special" a_obj="a_o" wpn_pts="wpn_fps_pis_coltds" hidden="true" ver="2"/>
+
+<!--attachments-->
+	<WeaponMod id="wpn_fps_pis_coltds_b_ext" based_on="wpn_fps_pis_chinchilla_b_standard" global_value="coltdsmod" wpn_pts="wpn_fps_pis_coltds" ver="2">
+		<stats spread="1" concealment="-1"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_pis_coltds_b_modern" based_on="wpn_fps_pis_chinchilla_b_standard" global_value="coltdsmod" wpn_pts="wpn_fps_pis_coltds" ver="2">
+		<stats recoil="1" concealment="-1"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_pis_coltds_b_police" based_on="wpn_fps_pis_chinchilla_b_standard" global_value="coltdsmod" wpn_pts="wpn_fps_pis_coltds" ver="2">
+		<stats spread="1" recoil="1" concealment="-2"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_coltds_o_marksman" based_on="wpn_fps_ass_vhs_o_standard" a_obj="a_o" global_value="coltdsmod"  wpn_pts="wpn_fps_pis_coltds" ver="2">
+		<stats spread="1" concealment="-1"/>
+		<stance_mod>
+			<wpn_fps_pis_coltds translation="-0.1 0 -0.6"/>
+		</stance_mod>
+	</WeaponMod>
+
+	<Weapon unlock_level="0">
+		<weapon id="coltds" based_on="chinchilla" CLIP_AMMO_MAX="6" NR_CLIPS_MAX="12" global_value="coltdsmod">
+			<stats damage="120" spread="14" spread_moving="14" recoil="9" concealment="30"/>
+			<fire_mode_data fire_rate="0.15"/>
+			<animations reload_name_id="chinchilla"/>
+		</weapon>
+        <factory id="wpn_fps_pis_coltds" unit="units/mods/weapons/wpn_fps_pis_coltds/wpn_fps_pis_coltds">
+			<animations fire="recoil" reload="reload" reload_not_empty="reload" fire_steelsight="recoil"/>
+			<adds/>
+			<override/>
+			<default_blueprint>
+				<value_node value="wpn_fps_pis_coltds_b_std"/>
+				<value_node value="wpn_fps_pis_coltds_body_std"/>
+				<value_node value="wpn_fps_pis_coltds_cylinder"/>
+				<value_node value="wpn_fps_pis_coltds_dh_std"/>
+				<value_node value="wpn_fps_pis_coltds_ejector"/>
+				<value_node value="wpn_fps_pis_coltds_g_std"/>
+				<value_node value="wpn_fps_pis_coltds_hinge"/>
+				<value_node value="wpn_fps_pis_coltds_m_bullets"/>
+				<value_node value="wpn_fps_pis_coltds_o_iron"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_pis_coltds_b_std"/>
+				<value_node value="wpn_fps_pis_coltds_body_std"/>
+				<value_node value="wpn_fps_pis_coltds_cylinder"/>
+				<value_node value="wpn_fps_pis_coltds_dh_std"/>
+				<value_node value="wpn_fps_pis_coltds_ejector"/>
+				<value_node value="wpn_fps_pis_coltds_g_std"/>
+				<value_node value="wpn_fps_pis_coltds_hinge"/>
+				<value_node value="wpn_fps_pis_coltds_m_bullets"/>
+				<value_node value="wpn_fps_pis_coltds_o_iron"/>
+
+				<value_node value="wpn_fps_pis_coltds_o_marksman"/>
+				<value_node value="wpn_fps_pis_coltds_b_ext"/>
+				<value_node value="wpn_fps_pis_coltds_b_modern"/>
+				<value_node value="wpn_fps_pis_coltds_b_police"/>
+
+				<value_node value="wpn_fps_upg_fl_pis_laser"/>
+				<value_node value="wpn_fps_upg_fl_pis_tlr1"/>
+				<value_node value="wpn_fps_upg_fl_pis_perst"/>
+				<value_node value="wpn_fps_upg_fl_pis_crimson"/>
+				<value_node value="wpn_fps_upg_fl_pis_x400v"/>
+				<value_node value="wpn_fps_upg_fl_pis_m3x"/>
+				
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_fc1"/>
+			</uses_parts>
+		</factory>
+		<stance>
+			<steelsight>
+				<shoulders rotation="-0.00600759 0.00530257 0.000901872 -0.999968" translation="-8.54 -12.696 3.79"/>
+			</steelsight>
+		</stance>
+	</Weapon>
+	<AddFiles directory="assets" auto_generate="true"/>
+	<Hooks directory="hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+	</Hooks>
+</mod>

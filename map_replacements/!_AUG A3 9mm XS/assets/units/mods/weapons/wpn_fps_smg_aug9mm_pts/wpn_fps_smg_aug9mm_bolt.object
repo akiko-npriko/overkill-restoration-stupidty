@@ -1,0 +1,18 @@
+<dynamic_object>
+	<diesel orientation_object="rp_wpn_fps_ass_fal_body_standard" materials="units/mods/weapons/wpn_fps_smg_aug9mm_pts/wpn_fps_smg_aug9mm_bolt"/>
+	<animations>
+		<animation_group name="reload" enabled="false">
+			<object name="anim_reload"/>
+		</animation_group>
+		<animation_group name="recoil" enabled="false">
+			<object name="anim_recoil"/>
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_bolt" enabled="true"/>
+
+		<object enabled="false" name="g_body_lod0"/>
+		<object enabled="false" name="g_bolt_lod0"/>
+		<object enabled="false" name="g_dh_lod0"/>
+	</graphics>
+</dynamic_object>

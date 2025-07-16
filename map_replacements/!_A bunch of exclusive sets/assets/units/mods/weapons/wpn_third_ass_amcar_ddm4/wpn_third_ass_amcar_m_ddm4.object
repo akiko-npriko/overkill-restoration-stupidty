@@ -1,0 +1,18 @@
+<dynamic_object>
+    <diesel orientation_object="rp_wpn_fps_m4_uupg_m_std" materials="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_m_ddm4" />
+   <animations>
+    <animation_group name="reload">
+      <object name="mag_align" enabled="true" />
+    </animation_group>    
+	<animation_group name="reload_not_empty">
+      <object name="mag_align_2" enabled="true" />
+    </animation_group>
+  </animations>
+  <graphics>
+        <object  name="g_mag" enabled="true" />
+        <object  name="g_plastic" enabled="true" />
+        <object  name="g_bullet_1" enabled="true" />
+        <object  name="g_bullet_2" enabled="true" />
+        <object  name="g_bullet_3" enabled="true" />
+  </graphics>
+</dynamic_object>

@@ -1,0 +1,9 @@
+<unit type="wpn" slot="1" >
+    <object file="units/mods/weapons/wpn_third_ass_galil_intermediate/wpn_third_ass_galil_body_magwell" />
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+    </extensions>
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_l85a2"/>
+	</dependencies>
+</unit>

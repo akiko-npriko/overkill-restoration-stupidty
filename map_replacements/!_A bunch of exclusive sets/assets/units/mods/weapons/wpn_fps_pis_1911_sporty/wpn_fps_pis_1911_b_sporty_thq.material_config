@@ -1,0 +1,11 @@
+<materials version="3" group="weapon_p1911">
+	<material name="barrel_vented" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_pis_1911_sporty/barrel_sport_df" mip="1"/>
+        <bump_normal_texture file="units/payday2/weapons/wpn_fps_pis_1911_pts/barrel_vented_nm" mip="1"/>
+		<reflection_texture type="cubemap" global_texture="current_global_texture"/>
+    </material>
+	<material name="slide_vented" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_pis_1911_sporty/slide_sport_df" mip="1"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_pis_1911_sporty/slide_sport_nm" mip="1"/>
+    </material>	
+</materials>

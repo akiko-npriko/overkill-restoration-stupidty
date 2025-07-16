@@ -1,0 +1,15 @@
+<dynamic_object>
+    <diesel materials="units/mods/weapons/wpn_fps_ass_s556_pts/wpn_fps_ass_s556_body_standard_twotone" orientation_object="rp_wpn_fps_ass_s552_body_standard" />
+	<animations>
+		<animation_group name="reload">
+			<object name="anim_reload" enabled="true" />
+		</animation_group>
+		<animation_group name="recoil">
+			<object name="anim_recoil" enabled="true" />
+		</animation_group>
+	</animations>
+    <graphics>
+        <object name="g_body" enabled="true" />
+        <object name="g_bolt" enabled="true" />
+    </graphics>
+</dynamic_object>

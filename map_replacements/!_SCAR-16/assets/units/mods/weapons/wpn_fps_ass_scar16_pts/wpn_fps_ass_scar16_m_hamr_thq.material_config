@@ -1,0 +1,17 @@
+<materials version="3" group="weapon_group">
+
+	<material name="m4_mag_std" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_ass_scar16_pts/drum_base_df" />
+		<material_texture file="units/pd2_dlc_savi/weapons/wpn_fps_snp_victor_pts/victor_magazine_gsma"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_ass_scar16_pts/drum_base_nm" />
+    </material>
+    <material name="hcar_m_drum" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/pd2_dlc_pxp3/weapons/wpn_fps_lmg_hcar_pts/hcar_mag_drum_df" />
+        <bump_normal_texture file="units/pd2_dlc_pxp3/weapons/wpn_fps_lmg_hcar_pts/hcar_mag_drum_nm" />
+        <material_texture file="units/pd2_dlc_pxp3/weapons/wpn_fps_lmg_hcar_pts/hcar_mag_drum_gsma"/>
+    </material>
+	<material name="mtr_bullet" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/pd2_dlc_gage_assault/weapons/wpn_fps_bullet/wpn_fps_bullet_556_df" />
+		<bump_normal_texture file="units/pd2_dlc_gage_assault/weapons/wpn_fps_bullet/wpn_fps_bullet_556_nm" />
+	</material>
+</materials>

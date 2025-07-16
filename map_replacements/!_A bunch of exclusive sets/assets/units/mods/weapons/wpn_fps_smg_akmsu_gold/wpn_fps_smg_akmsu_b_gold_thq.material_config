@@ -1,0 +1,13 @@
+<materials version="3" group="weapon_akmsu">
+    <material name="akmsu_barrel" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_smg_akmsu_gold/barrel_gold_df" mip="1"/>
+        <bump_normal_texture file="units/payday2/weapons/wpn_fps_smg_akmsu_pts/wpn_fps_smg_akmsu_b_standard_nm" mip="1"/>
+        <reflection_texture type="cubemap" file="environments/cubemaps/cubemap_gold"/>
+        <variable value="0.75000005960464 0 13.699999809265" type="vector3" name="environment_settings"/>
+    </material>
+	<material name="no_blurr" version="2" render_template="effect:DOF_CUTTER">
+        <variable value="10" type="scalar" name="fadeout_distance"/>
+        <diffuse_texture file="units/payday2/weapons/wpn_effects_textures/wpn_effect_no_blurr_df" mip="1"/>
+        <variable value="182.69010925293" type="scalar" name="falloff_exp"/>
+    </material>
+</materials>

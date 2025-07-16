@@ -1,0 +1,130 @@
+<mod name="Doomstick" color="Color(0.01,0.62,0.98)">
+	<Localization directory="loc" default="english.txt"/>
+	<AssetUpdates id="24665" version="1.11" provider="modworkshop"/>
+	<GlobalValue id="doomstickmod" color="Color(0.7, 0.2, 0.1)"/>
+	<WeaponMod id="wpn_fps_shot_quadbarrel_barrel" based_on="wpn_fps_ass_akm_b_standard" wpn_pts="wpn_fps_shot_quadbarrel" hidden="true" ver="2">
+		<stats reload="-1"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_shot_quadbarrel_irons" based_on="wpn_fps_m4_uupg_o_flipup" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" hidden="true" ver="2">
+		<stance_mod>
+			<wpn_fps_shot_quadbarrel rotation="0.00567229 -0 -0 -0.999984" translation="0 0 1.9"/>
+		</stance_mod>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_shot_quadbarrel_rec" based_on="wpn_fps_gre_m79_stock" type="lower_reciever" wpn_pts="wpn_fps_shot_quadbarrel" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_shot_quadbarrel_release_catch" based_on="wpn_fps_gre_m79_barrelcatch" wpn_pts="wpn_fps_shot_quadbarrel" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_shot_quadbarrel_shells" based_on="wpn_fps_gre_m79_grenade" wpn_pts="wpn_fps_shot_quadbarrel" hidden="true" ver="2">
+		<stats reload="-1"/>
+		<bullet_objects prefix="g_slug_" amount="4"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_shot_quadbarrel_stock" based_on="wpn_fps_gre_m79_stock" wpn_pts="wpn_fps_shot_quadbarrel" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_upg_quadbarrel_ammo_buckshot_close" based_on="wpn_fps_upg_a_custom" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" ver="2">
+		<stats damage="-10" spread="-5">
+			<spread_multi>
+				<value_node value="2.0"/>
+				<value_node value="2.0"/>
+			</spread_multi>
+		</stats>
+		<custom_stats damage_near_mul="0.5" damage_far_mul="0.666666666666667" rays="10"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_quadbarrel_ammo_buckshot_med" based_on="wpn_fps_upg_a_custom" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" ver="2">
+		<stats damage="0" spread="3"/>
+		<custom_stats damage_near_mul="1.5" rays="6"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_quadbarrel_ammo_slug" based_on="wpn_fps_upg_a_custom" sub_type="ammo_slug" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" ver="2">
+		<stats damage="25" spread="7" total_ammo_mod="-2"/>
+		<custom_stats damage_near_mul="2.5" rays="1" armor_piercing_add="1" can_shoot_through_enemy="true" can_shoot_through_shield="true" can_shoot_through_wall="true"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_quadbarrel_barrel_short" based_on="wpn_fps_ass_akm_b_standard" wpn_pts="wpn_fps_shot_quadbarrel" ver="2">
+		<stats spread="-5" recoil="-2" concealment="5"/>
+		<override>
+			<wpn_fps_shot_quadbarrel_irons>
+				<stance_mod>
+					<wpn_fps_shot_quadbarrel rotation="0.0050178 0 0 -0.999987" translation="0 0 1.9"/>
+				</stance_mod>
+			</wpn_fps_shot_quadbarrel_irons>
+		</override>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_quadbarrel_stock_collapsed" based_on="wpn_fps_gre_m79_stock" wpn_pts="wpn_fps_shot_quadbarrel" ver="2">
+		<stats recoil="-2" concealment="3"/>
+	</WeaponMod>
+	<Weapon unlock_level="60">
+		<weapon id="quadbarrel" based_on="huntsman" weapon_hold="gre_m79" rays="8" CLIP_AMMO_MAX="4" NR_CLIPS_MAX="8" ammo_pickup="1" global_value="doomstickmod">
+			<stats damage="155" spread="18" spread_moving="18" recoil="11" concealment="5"/>
+			<fire_mode_data fire_rate="0.2"/>
+			<kick>
+				<standing>
+					<value_node value="3.8"/>
+					<value_node value="3.3"/>
+					<value_node value="-1.5"/>
+					<value_node value="1.5"/>
+				</standing>
+				<crouching>
+					<value_node value="3.8"/>
+					<value_node value="3.3"/>
+					<value_node value="-1.5"/>
+					<value_node value="1.5"/>
+				</crouching>
+				<steelsight>
+					<value_node value="3.5"/>
+					<value_node value="3.0"/>
+					<value_node value="-1.2"/>
+					<value_node value="1.2"/>
+				</steelsight>
+			</kick>
+			<timers reload_not_empty="3.1" reload_empty="3.1" unequip="0.6" equip="0.6"/>
+			<use_data align_place="right_hand"/>
+			<sounds fire="quadbarrel_fire">
+				<reload wp_gl40_barrel_open="quadbarrel_action_open" wp_gl40_shell_in="quadbarrel_shells_in" wp_gl40_barrel_close="quadbarrel_action_close"/>
+			</sounds>
+			<animations reload_name_id="gre_m79" ignore_nonemptyreload="true"/>
+		</weapon>
+		<factory id="wpn_fps_shot_quadbarrel" unit="units/mods/weapons/wpn_fps_shot_quadbarrel/wpn_fps_shot_quadbarrel">
+			<animations reload="reload"/>
+			<adds/>
+			<override/>
+			<default_blueprint>
+				<value_node value="wpn_fps_shot_quadbarrel_barrel"/>
+				<value_node value="wpn_fps_shot_quadbarrel_irons"/>
+				<value_node value="wpn_fps_shot_quadbarrel_rec"/>
+				<value_node value="wpn_fps_shot_quadbarrel_release_catch"/>
+				<value_node value="wpn_fps_shot_quadbarrel_shells"/>
+				<value_node value="wpn_fps_shot_quadbarrel_stock"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_shot_quadbarrel_barrel"/>
+				<value_node value="wpn_fps_shot_quadbarrel_irons"/>
+				<value_node value="wpn_fps_shot_quadbarrel_rec"/>
+				<value_node value="wpn_fps_shot_quadbarrel_release_catch"/>
+				<value_node value="wpn_fps_shot_quadbarrel_shells"/>
+				<value_node value="wpn_fps_shot_quadbarrel_stock"/>
+
+				<value_node value="wpn_fps_upg_quadbarrel_ammo_buckshot_close"/>
+				<value_node value="wpn_fps_upg_quadbarrel_ammo_buckshot_med"/>
+				<value_node value="wpn_fps_upg_quadbarrel_ammo_slug"/>
+				<value_node value="wpn_fps_upg_quadbarrel_barrel_short"/>
+				<value_node value="wpn_fps_upg_quadbarrel_stock_collapsed"/>
+			</uses_parts>
+		</factory>
+		<stance/>
+	</Weapon>
+	<Sounds directory="assets\sounds">
+		<sound id="quadbarrel_fire" path="quadbarrel_regular.ogg" prefix="regular"/>
+		<sound id="quadbarrel_action_close" path="quadbarrel_action_close.ogg" prefix="first"/>
+		<sound id="quadbarrel_action_close" path="quadbarrel_action_close.ogg" prefix="third"/>
+		<sound id="quadbarrel_action_open" path="quadbarrel_action_open.ogg" prefix="first"/>
+		<sound id="quadbarrel_action_open" path="quadbarrel_action_open.ogg" prefix="third"/>
+		<sound id="quadbarrel_shells_in" path="quadbarrel_shells_in.ogg" prefix="first"/>
+		<sound id="quadbarrel_shells_in" path="quadbarrel_shells_in.ogg" prefix="third"/>
+	</Sounds>
+	<AddFiles directory="assets" auto_generate="true"/>
+</table>

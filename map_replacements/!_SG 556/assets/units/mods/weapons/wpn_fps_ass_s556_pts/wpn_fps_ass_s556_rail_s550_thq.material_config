@@ -1,0 +1,10 @@
+<materials version="3" group="weapon_schakal">
+	<material name="mtr_casing_exhaust" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/pd2_dlc_pim/weapons/wpn_fps_smg_schakal_pts/wpn_fps_smg_ump45_casing_exhaust_df" />
+		<bump_normal_texture file="units/pd2_dlc_pim/weapons/wpn_fps_smg_schakal_pts/wpn_fps_smg_ump45_casing_exhaust_nm" />
+	</material>
+	<material name="mtr_upper_reciever" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/pd2_dlc_pim/weapons/wpn_fps_smg_schakal_pts/wpn_fps_smg_ump45_upper_reciever_df" />
+		<bump_normal_texture file="units/pd2_dlc_pim/weapons/wpn_fps_smg_schakal_pts/wpn_fps_smg_ump45_upper_reciever_nm" />
+	</material>
+</materials>

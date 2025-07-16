@@ -1,0 +1,16 @@
+<dynamic_object>
+    <diesel orientation_object="rp_wpn_fps_ass_scar_body_standard" materials="units/mods/weapons/wpn_fps_ass_scar16_pts/wpn_fps_ass_scar16_body_standard" />
+    <animations>
+		<animation_group name="reload">
+			<object name="a_reload" enabled="true" />
+		</animation_group>
+		<animation_group name="recoil">
+			<object name="a_recoil" enabled="true" />
+		</animation_group>
+	</animations>
+    <graphics>
+        <object enabled="true" name="g_bolt" />
+        <object enabled="true" name="g_body" />
+        <object enabled="true" name="g_cover" />
+    </graphics>
+</dynamic_object>

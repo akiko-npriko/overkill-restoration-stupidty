@@ -1,0 +1,14 @@
+<unit type="wpn" slot="1" >
+	<object file="units/mods/weapons/wpn_fps_pis_af2011/wpn_fps_pis_af2011" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_beretta"/>
+		<depends_on bnk="soundbanks/weapon_deagle"/>
+		<depends_on bnk="soundbanks/weapon_c45"/>
+			</dependencies>
+    <extensions>
+        <extension name="unit_data" class="ScriptUnitData" />
+        <extension name="base" class="NewNPCRaycastWeaponBase" >
+			<var name="name_id" value="af2011_crew" />
+		</extension>
+    </extensions>
+</unit>

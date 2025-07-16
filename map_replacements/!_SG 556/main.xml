@@ -1,0 +1,457 @@
+<mod name="SIG 556 SWAT" author="Tangerine Paint" min_lib_ver="3.38">
+	<AssetUpdates id="52430" version="3.2" provider="modworkshop"/>
+	<Localization directory="loc" default="english.json"/>
+	<GlobalValue id="sg556_paint" color="Color(0.6, 0.7, 0.4)"/>
+
+	<WeaponMod id="wpn_fps_ass_s556_fg_standard" based_on="wpn_fps_ass_s552_fg_standard" global_value="sg556_paint" type="foregrip" unit="units/mods/weapons/wpn_fps_ass_s556_pts/wpn_fps_ass_s556_fg_standard" third_unit="units/mods/weapons/wpn_third_ass_s556_pts/wpn_third_ass_s556_fg_standard" drop="false" texture_bundle_folder="mods" is_a_unlockable="false">
+		<override>
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_ass_smg_sho_surefire a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_ass_peq15 a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_ass_laser a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_dbal_laser a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_ass_utg a_obj="a_fl_2"/>
+			<wpn_fps_addon_ris a_obj="a_fl_2"/>
+		</override>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_s556_body_standard" based_on="wpn_fps_ass_ak5_body_ak5" global_value="sg556_paint" type="upper_reciever" unit="units/mods/weapons/wpn_fps_ass_s556_pts/wpn_fps_ass_s556_body_standard" third_unit="units/mods/weapons/wpn_third_ass_s556_pts/wpn_third_ass_s556_body_standard" drop="false" texture_bundle_folder="mods" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_ass_s556_b_standard" based_on="wpn_fps_ass_s552_b_standard" global_value="sg556_paint" type="barrel" unit="units/mods/weapons/wpn_fps_ass_s556_pts/wpn_fps_ass_s556_b_standard" third_unit="units/mods/weapons/wpn_third_ass_s556_pts/wpn_third_ass_s556_b_standard" drop="false" texture_bundle_folder="mods" is_a_unlockable="true"/>
+
+<!-- Mods -->
+
+	<WeaponMod id="wpn_fps_ass_s556_fg_railed" based_on="wpn_fps_ass_s552_fg_railed" global_value="sg556_paint" type="foregrip" unit="units/mods/weapons/wpn_fps_ass_s556_pts/wpn_fps_ass_s556_fg_railed" third_unit="units/mods/weapons/wpn_third_ass_s556_pts/wpn_third_ass_s556_fg_railed" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" inherit_weapons="false">
+		<pcs/>
+		<forbids>
+			<value_node value="wpn_fps_addon_ris"/>				
+		</forbids>
+		<override>
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_ass_smg_sho_surefire a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_ass_peq15 a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_ass_laser a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_dbal_laser a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_ass_utg a_obj="a_fl_2"/>
+			<wpn_fps_addon_ris a_obj="a_fl_2"/>
+		</override>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_s556_b_short" based_on="wpn_fps_smg_hajk_b_medium" unit="units/pd2_dlc1/weapons/wpn_fps_ass_s552_pts/wpn_fps_ass_s552_b_standard" third_unit="units/pd2_dlc1/weapons/wpn_third_ass_s552_pts/wpn_third_ass_s552_b_standard" global_value="sg556_paint" type="barrel" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" inherit_weapons="false">
+		<override>
+			<wpn_fps_ass_s556_fg_standard unit="units/pd2_dlc1/weapons/wpn_fps_ass_s552_pts/wpn_fps_ass_s552_fg_standard_green" third_unit="units/pd2_dlc1/weapons/wpn_third_ass_s552_pts/wpn_third_ass_s552_fg_standard_green">
+				<override/>
+			</wpn_fps_ass_s556_fg_standard>			
+			<wpn_fps_ass_s556_fg_railed unit="units/pd2_dlc1/weapons/wpn_fps_ass_s552_pts/wpn_fps_ass_s552_fg_railed" third_unit="units/pd2_dlc1/weapons/wpn_third_ass_s552_pts/wpn_third_ass_s552_fg_railed">
+				<override/>
+			</wpn_fps_ass_s556_fg_railed>
+			<wpn_fps_ass_s556_fg_standard_green unit="units/pd2_dlc1/weapons/wpn_fps_ass_s552_pts/wpn_fps_ass_s552_fg_standard" third_unit="units/pd2_dlc1/weapons/wpn_third_ass_s552_pts/wpn_third_ass_s552_fg_standard">
+				<override/>
+				<adds/>
+			</wpn_fps_ass_s556_fg_standard_green>		
+			<wpn_fps_ass_s556_fg_railed_grey unit="units/pd2_dlc1/weapons/wpn_fps_ass_s552_pts/wpn_fps_ass_s552_fg_railed" third_unit="units/pd2_dlc1/weapons/wpn_third_ass_s552_pts/wpn_third_ass_s552_fg_railed">
+				<override/>
+			</wpn_fps_ass_s556_fg_railed_grey>
+		</override>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_s556_s_solid" based_on="wpn_fps_ass_s552_s_standard" unit="units/mods/weapons/wpn_fps_ass_s556_pts/wpn_fps_ass_s556_s_solid" third_unit="units/mods/weapons/wpn_third_ass_s556_pts/wpn_third_ass_s556_s_solid" global_value="sg556_paint" type="stock" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" inherit_weapons="true">
+		<stats concealment="-3" recoil="1" spread="2"/>
+		<pcs/>
+		<weapons>
+			<value_node value="wpn_fps_ass_s552"/>
+			<value_node value="wpn_fps_ass_s556"/>				
+		</weapons>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_s556_s_folded" based_on="wpn_fps_ass_s552_s_standard" unit="units/mods/weapons/wpn_fps_ass_s556_pts/wpn_fps_ass_s556_s_folded" third_unit="units/mods/weapons/wpn_third_ass_s556_pts/wpn_third_ass_s556_s_folded" global_value="sg556_paint" type="stock" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" inherit_weapons="true">
+		<stats concealment="5" recoil="-2" spread="-3"/>
+		<pcs/>
+		<weapons>
+			<value_node value="wpn_fps_ass_s552"/>
+			<value_node value="wpn_fps_ass_s556"/>				
+		</weapons>
+		<forbids>
+			<value_node value="wpn_fps_upg_m4_m_drum"/>			
+		</forbids>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_s556_s_folded_green" based_on="wpn_fps_ass_s552_s_standard_green" unit="units/mods/weapons/wpn_fps_ass_s556_pts/wpn_fps_ass_s556_s_folded_green" third_unit="units/mods/weapons/wpn_third_ass_s556_pts/wpn_third_ass_s556_s_folded_green" global_value="sg556_paint" type="stock" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" inherit_weapons="true">
+		<stats concealment="3" recoil="0" spread="-3"/>
+		<pcs/>
+		<weapons>
+			<value_node value="wpn_fps_ass_s552"/>
+			<value_node value="wpn_fps_ass_s556"/>				
+		</weapons>
+		<forbids>
+			<value_node value="wpn_fps_upg_m4_m_drum"/>			
+		</forbids>
+	</WeaponMod>
+
+<!-- V2 Mods -->
+
+	<WeaponMod id="wpn_fps_ass_s556_body_standard_white" based_on="wpn_fps_ass_ak5_body_ak5" global_value="sg556_paint" type="upper_reciever" unit="units/mods/weapons/wpn_fps_ass_s556_pts/wpn_fps_ass_s556_body_standard_white" third_unit="units/mods/weapons/wpn_third_ass_s556_pts/wpn_third_ass_s556_body_standard_white" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats concealment="-4" recoil="1" spread="2"/>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_s556_g_ergo" based_on="wpn_fps_ass_s552_g_standard" global_value="sg556_paint" type="grip" unit="units/mods/weapons/wpn_fps_ass_s556_pts/wpn_fps_ass_s556_g_ergo" third_unit="units/mods/weapons/wpn_third_ass_s556_pts/wpn_third_ass_s556_g_ergo" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats concealment="-1" recoil="0" spread="1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_s552"/>
+			<value_node value="wpn_fps_ass_s556"/>				
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_s556_s_ctr" based_on="wpn_fps_upg_m4_s_pts" global_value="sg556_paint" type="stock" unit="units/mods/weapons/wpn_fps_ass_s556_pts/wpn_fps_ass_s556_s_ctr" third_unit="units/mods/weapons/wpn_third_ass_s556_pts/wpn_third_ass_s556_s_ctr" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats concealment="1" recoil="-2" spread="1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_s552"/>
+			<value_node value="wpn_fps_ass_s556"/>				
+		</weapons>
+		<override>
+			<wpn_fps_ass_s552_s_m4 unit="units/mods/weapons/wpn_fps_ass_s556_pts/wpn_fps_ass_s556_s_m4"/>
+		</override>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_s556_fg_standard_green" based_on="wpn_fps_ass_s552_fg_standard_green" global_value="sg556_paint" type="foregrip" unit="units/mods/weapons/wpn_fps_ass_s556_pts/wpn_fps_ass_s556_fg_standard_green" third_unit="units/mods/weapons/wpn_third_ass_s556_pts/wpn_third_ass_s556_fg_standard_green" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats spread="0" recoil="2" concealment="-1"/>
+		<override>
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_ass_smg_sho_surefire a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_ass_peq15 a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_ass_laser a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_dbal_laser a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_ass_utg a_obj="a_fl_2"/>
+			<wpn_fps_addon_ris a_obj="a_fl_2"/>
+		</override>
+		<adds>
+			<value_node value="wpn_fps_ass_s556_rail"/>			
+		</adds>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_s556_fg_railed_grey" based_on="wpn_fps_ass_s552_fg_railed" global_value="sg556_paint" type="foregrip" unit="units/mods/weapons/wpn_fps_ass_s556_pts/wpn_fps_ass_s556_fg_railed_grey" third_unit="units/mods/weapons/wpn_third_ass_s556_pts/wpn_third_ass_s556_fg_railed_grey" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats spread="3" recoil="-1" concealment="-2"/>
+		<override>
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_ass_smg_sho_surefire a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_ass_peq15 a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_ass_laser a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_dbal_laser a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_ass_utg a_obj="a_fl_2"/>
+			<wpn_fps_addon_ris a_obj="a_fl_2"/>
+		</override>
+		<forbids>
+			<value_node value="wpn_fps_addon_ris"/>			
+		</forbids>
+		<adds>
+			<value_node value="wpn_fps_upg_vg_ass_smg_afg_s556"/>			
+		</adds>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_s556_rail" based_on="wpn_fps_ass_s552_fg_standard" global_value="sg556_paint" type="extra" a_obj="a_fg" unit="units/mods/weapons/wpn_fps_ass_s556_pts/wpn_fps_ass_s556_rail" third_unit="units/mods/weapons/wpn_third_ass_s556_pts/wpn_third_ass_s556_rail" drop="false" texture_bundle_folder="mods" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_upg_vg_ass_smg_afg_s556" based_on="wpn_fps_upg_vg_ass_smg_afg" global_value="sg556_paint" drop="false" texture_bundle_folder="mods" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_ass_s556_s_mk20" based_on="wpn_fps_ass_s552_s_standard" unit="units/mods/weapons/wpn_fps_ass_s556_pts/wpn_fps_ass_s556_s_mk20" third_unit="units/mods/weapons/wpn_third_ass_s556_pts/wpn_third_ass_s556_s_mk20" global_value="sg556_paint" type="stock" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" inherit_weapons="true">
+		<stats concealment="-4" recoil="1" spread="3"/>
+		<pcs/>
+		<weapons>
+			<value_node value="wpn_fps_ass_s552"/>
+			<value_node value="wpn_fps_ass_s556"/>				
+		</weapons>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_s556_body_standard_twotone" based_on="wpn_fps_ass_ak5_body_ak5" global_value="sg556_paint" type="upper_reciever" unit="units/mods/weapons/wpn_fps_ass_s556_pts/wpn_fps_ass_s556_body_standard_twotone" third_unit="units/mods/weapons/wpn_third_ass_s556_pts/wpn_third_ass_s556_body_standard_twotone" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats concealment="-2" recoil="0" spread="1"/>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_s556_b_long" based_on="wpn_fps_hailstorm_b_extended" unit="units/mods/weapons/wpn_fps_ass_s556_pts/wpn_fps_ass_s556_b_long" third_unit="units/mods/weapons/wpn_third_ass_s556_pts/wpn_third_ass_s556_b_long" global_value="sg556_paint" type="barrel" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" inherit_weapons="false"/>
+
+<!-- V3 Mods -->
+
+	<WeaponMod id="wpn_fps_upg_i_siege" based_on="wpn_fps_ass_s552_b_standard" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" global_value="sg556_paint" type="custom" sub_type="autofire" internal_part="true" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" inherit_weapons="false">
+		<stats spread="2" recoil="2"/>
+		<custom_stats fire_rate_multiplier="0.9306666666667"/>
+		<adds>
+			<value_node value="wpn_fps_ass_s556_sound_switch"/>			
+		</adds>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_s556_sound_switch" based_on="wpn_fps_lmg_hcar_ck_switch" global_value="sg556_paint" type="ammo" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" texture_bundle_folder="mods" is_a_unlockable="false">
+		<custom_stats>
+			<sounds fire="groza_fire_single" fire_single="groza_fire_single" fire_auto="groza_fire" stop_fire="groza_stop" use_fix="false"/>
+		</custom_stats>
+	</WeapondMod>
+
+	<WeaponMod id="wpn_fps_ass_s556_g_xi" based_on="wpn_fps_ass_s552_g_standard" global_value="sg556_paint" type="grip" unit="units/mods/weapons/wpn_fps_ass_s556_pts/wpn_fps_ass_s556_g_xi" third_unit="units/mods/weapons/wpn_third_ass_s556_pts/wpn_third_ass_s556_g_xi" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats concealment="0" recoil="-2" spread="2"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_s552"/>
+			<value_node value="wpn_fps_ass_s556"/>				
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_s556_fg_bipod" based_on="wpn_fps_ass_s552_fg_standard" global_value="sg556_paint" type="foregrip" unit="units/mods/weapons/wpn_fps_ass_s556_pts/wpn_fps_ass_s556_fg_bipod" third_unit="units/mods/weapons/wpn_third_ass_s556_pts/wpn_third_ass_s556_fg_bipod" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats damage="30" spread="-5" recoil="-4" concealment="-5" total_ammo_mod="10"/>
+		<custom_stats ammo_pickup_max_mul="1.27272727273" ammo_pickup_min_mul="1.66666666667"/>
+		<override>
+			<wpn_fps_ass_s556_b_standard a_obj="a_b_2"/>
+			<wpn_fps_ass_s556_b_long a_obj="a_b_2"/>
+			<wpn_fps_ass_s556_rail unit="units/mods/weapons/wpn_fps_ass_s556_pts/wpn_fps_ass_s556_rail_s550" third_unit="units/mods/weapons/wpn_third_ass_s556_pts/wpn_third_ass_s556_rail_s550"/>
+
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_ass_smg_sho_surefire a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_ass_peq15 a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_ass_laser a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_dbal_laser a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_ass_utg a_obj="a_fl_2"/>
+			<wpn_fps_addon_ris a_obj="a_fl_2"/>			
+		</override>
+		<forbids>
+			<value_node value="wpn_fps_ass_s556_b_short"/>	
+			<value_node value="wpn_fps_upg_i_singlefire"/>	
+			<value_node value="wpn_fps_upg_i_autofire"/>				
+		</forbids>
+		<perks>
+			<value_node value="fire_mode_single"/>				
+		</perks>
+		<adds>
+			<value_node value="wpn_fps_ass_s556_rail"/>			
+		</adds>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_s556_fg_bipod_green" based_on="wpn_fps_ass_s552_fg_standard" global_value="sg556_paint" type="foregrip" unit="units/mods/weapons/wpn_fps_ass_s556_pts/wpn_fps_ass_s556_fg_bipod_green" third_unit="units/mods/weapons/wpn_third_ass_s556_pts/wpn_third_ass_s556_fg_bipod_green" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats damage="70" spread="5" recoil="-4" concealment="-6" total_ammo_mod="-7"/>
+		<custom_stats ammo_pickup_max_mul="0.6" ammo_pickup_min_mul="0.4"/>
+		<override>
+			<wpn_fps_ass_s556_b_standard a_obj="a_b_2"/>
+			<wpn_fps_ass_s556_b_long a_obj="a_b_2"/>
+			
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_ass_smg_sho_surefire a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_ass_peq15 a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_ass_laser a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_dbal_laser a_obj="a_fl_2"/>
+			<wpn_fps_upg_fl_ass_utg a_obj="a_fl_2"/>
+			<wpn_fps_addon_ris a_obj="a_fl_2"/>			
+		</override>
+		<forbids>
+			<value_node value="wpn_fps_ass_s556_b_short"/>			
+		</forbids>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_s556_g_sniper" based_on="wpn_fps_ass_s552_g_standard" global_value="sg556_paint" type="grip" unit="units/mods/weapons/wpn_fps_ass_s556_pts/wpn_fps_ass_s556_g_xi" third_unit="units/mods/weapons/wpn_third_ass_s556_pts/wpn_third_ass_s556_g_xi" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats concealment="-3" recoil="-1" spread="3"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_s552"/>
+			<value_node value="wpn_fps_ass_s556"/>				
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_s556_s_mag" based_on="wpn_fps_ass_s552_s_standard" type="stock" unit="units/mods/weapons/wpn_fps_ass_s556_pts/wpn_fps_ass_s556_s_mag" third_unit="units/mods/weapons/wpn_third_ass_s556_pts/wpn_third_ass_s556_s_mag" drop="false" inherit_adds="true" is_a_unlockable="true" inherit_weapons="true" inherit_parts_override="true" inherit_parts_forbids="true" global_value="sg556_paint" texture_bundle_folder="mods">
+		<stats total_ammo_mod="5" reload="2" concealment="-2" recoil="-1" accuracy="1"/>
+		<adds>
+			<value_node value="wpn_fps_ass_s552_s_standard"/>			
+		</adds>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_s556_m_victor" based_on="wpn_fps_upg_m4_m_l5" global_value="sg556_paint" type="magazine" unit="units/mods/weapons/wpn_fps_ass_s556_pts/wpn_fps_ass_s556_m_victor" third_unit="units/mods/weapons/wpn_third_ass_s556_pts/wpn_third_ass_s556_m_victor" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" inherit_weapons="true">
+		<stats concealment="1" extra_ammo="0" reload="1" recoil="-1" spread="-1"/>
+		<pcs/>
+	</WeaponMod>
+
+<!-- The Weapon itself -->	
+
+	<Weapon unlock_level="56">
+		<weapon id="s556" based_on="s552" weapon_hold="s556" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="4" muzzleflash="effects/payday2/particles/weapons/556_auto_fps" shell_ejection="effects/payday2/particles/weapons/shells/shell_556" texture_bundle_folder="mods" tactical_reload="1" has_description="true" desc_id="bm_s556_desc" global_value="sg556_paint">
+			<stats damage="85" spread="14" spread_moving="13" recoil="10" concealment="15"/>
+			<AMMO_PICKUP>
+				<value_node value="2.7"/>
+				<value_node value="4.95"/>
+			</AMMO_PICKUP>
+			<fire_mode_data fire_rate="0.08"/>
+			<timers reload_not_empty="2.05" reload_empty="3.08"/>
+			<animations reload_name_id="s556"/>
+			<sounds fire="aug_fire_single" fire_single="aug_fire_single" fire_auto="aug_fire" stop_fire="aug_stop" use_fix="false"/>
+		</weapon>
+		<factory id="wpn_fps_ass_s556" unit="units/mods/weapons/wpn_fps_ass_s556/wpn_fps_ass_s556" stock_adapter="wpn_fps_ass_s552_s_m4">
+			<animations reload="reload" fire="recoil" fire_steelsight="recoil" reload_not_empty="reload_not_empty" magazine_empty="last_recoil" />
+			<adds/>
+			<override>
+				<wpn_fps_ass_s552_s_m4 unit="units/mods/weapons/wpn_fps_ass_s556_pts/wpn_fps_ass_s556_s_m4"/>
+				
+				<wpn_fps_upg_o_dd_rear a_obj="a_of"/>
+				<wpn_fps_upg_o_mbus_rear a_obj="a_of"/>
+				<wpn_fps_upg_o_dd_front a_obj="a_o"/>
+				<wpn_fps_upg_o_mbus_front a_obj="a_o"/>				
+			
+			</override>
+			<default_blueprint>
+				<value_node value="wpn_fps_ass_s556_body_standard"/>
+				<value_node value="wpn_fps_ass_s552_g_standard"/>
+				<value_node value="wpn_fps_ass_s556_fg_standard"/>
+				<value_node value="wpn_fps_ass_s552_s_standard"/>
+				<value_node value="wpn_fps_m4_uupg_m_std_vanilla"/>
+				<value_node value="wpn_fps_ass_s556_b_standard"/>
+				<value_node value="wpn_fps_ass_l85a2_ns_standard"/>
+				<value_node value="wpn_fps_ass_s552_o_flipup"/>
+			
+			</default_blueprint>
+			<uses_parts>
+
+				<value_node value="wpn_fps_ass_s556_body_standard"/>
+				<value_node value="wpn_fps_ass_s552_g_standard"/>
+				<value_node value="wpn_fps_ass_s556_fg_standard"/>
+				<value_node value="wpn_fps_ass_s552_s_standard"/>
+				<value_node value="wpn_fps_m4_uupg_m_std_vanilla"/>
+				<value_node value="wpn_fps_ass_s556_b_standard"/>
+				<value_node value="wpn_fps_ass_l85a2_ns_standard"/>
+				<value_node value="wpn_fps_ass_s552_o_flipup"/>
+
+				<value_node value="wpn_fps_ass_s552_g_standard_green"/>
+				<value_node value="wpn_fps_ass_s556_g_ergo"/>
+				<value_node value="wpn_fps_ass_s556_g_xi"/>
+				<value_node value="wpn_fps_ass_s556_g_sniper"/>				
+
+				<value_node value="wpn_fps_ass_s556_fg_railed"/>
+				<value_node value="wpn_fps_ass_s556_fg_standard_green"/>
+				<value_node value="wpn_fps_ass_s556_fg_railed_grey"/>
+				<value_node value="wpn_fps_ass_s556_fg_bipod"/>
+				<value_node value="wpn_fps_ass_s556_fg_bipod_green"/>
+
+				<value_node value="wpn_fps_ass_s556_b_short"/>
+				<value_node value="wpn_fps_ass_s556_b_long"/>
+
+				<value_node value="wpn_fps_ass_s556_body_standard_white"/>
+				<value_node value="wpn_fps_ass_s556_body_standard_twotone"/>
+
+				<value_node value="wpn_fps_upg_m4_s_standard"/>
+				<value_node value="wpn_fps_upg_m4_s_pts"/>
+				<value_node value="wpn_fps_upg_m4_s_crane"/>
+				<value_node value="wpn_fps_upg_m4_s_mk46"/>
+				<value_node value="wpn_fps_upg_m4_s_ubr"/>
+				<value_node value="wpn_fps_snp_tti_s_vltor"/>
+				<value_node value="wpn_fps_sho_sko12_stock"/>
+				
+				<value_node value="wpn_fps_ass_s552_s_standard_green"/>		
+				<value_node value="wpn_fps_ass_s556_s_solid"/>		
+				<value_node value="wpn_fps_ass_s556_s_folded_green"/>		
+				<value_node value="wpn_fps_ass_s556_s_folded"/>	
+				<value_node value="wpn_fps_ass_s556_s_ctr"/>	
+				<value_node value="wpn_fps_ass_s556_s_mk20"/>	
+				<value_node value="wpn_fps_ass_s556_s_mag"/>	
+
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_ass_shak12_ns_muzzle"/>
+				<value_node value="wpn_fps_ass_shak12_ns_suppressor"/>
+				<value_node value="wpn_fps_lmg_hk51b_ns_jcomp"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_v6"/>
+				<value_node value="wpn_fps_snp_victor_ns_omega"/>
+				<value_node value="wpn_fps_lmg_kacchainsaw_ns_muzzle"/>
+				<value_node value="wpn_fps_lmg_kacchainsaw_ns_suppressor"/>
+
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/>
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+				<value_node value="wpn_fps_upg_o_sig"/>
+				<value_node value="wpn_fps_upg_o_45rds"/>
+				<value_node value="wpn_fps_upg_o_45rds_v2"/>
+				<value_node value="wpn_fps_upg_o_45steel"/>
+
+				<value_node value="wpn_fps_upg_i_singlefire"/>
+				<value_node value="wpn_fps_upg_i_autofire"/>
+				<value_node value="wpn_fps_upg_i_siege"/>
+			
+				<value_node value="wpn_fps_upg_m4_m_pmag"/>
+				<value_node value="wpn_fps_upg_m4_m_straight"/>
+				<value_node value="wpn_fps_upg_m4_m_drum"/>
+				<value_node value="wpn_fps_upg_m4_m_quad"/>
+				<value_node value="wpn_fps_ass_l85a2_m_emag"/>
+				<value_node value="wpn_fps_upg_m4_m_l5"/>
+				<value_node value="wpn_fps_m4_upg_m_quick"/>
+				<value_node value="wpn_fps_m4_uupg_m_strike"/>
+				<value_node value="wpn_fps_ass_s556_m_victor"/>
+
+				<value_node value="wpn_fps_upg_o_mbus_rear"/>
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_tf90"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_poe"/>		
+				<value_node value="wpn_fps_upg_o_fc1"/>
+				<value_node value="wpn_fps_upg_o_uh"/>
+				<value_node value="wpn_fps_upg_o_bmg"/>
+				<value_node value="wpn_fps_upg_o_hamr"/>
+				<value_node value="wpn_fps_upg_o_atibal"/>
+				<value_node value="wpn_fps_upg_o_health"/>
+		
+
+			</uses_parts>
+		</factory>
+		<stance>
+			<standard>
+				<shoulders rotation="-0.000745363 0.005481 0.000929624 -0.999984" translation="1.77 -6.601 0.538"/>
+			</standard>
+			<crouched>
+				<shoulders rotation="-0.000745363 0.005481 0.000929624 -0.999984" translation="1.747 -9.601 -2.338"/>
+			</crouched>
+			<steelsight>
+				<shoulders rotation="-0.000872665 0 -0 -1" translation="-8.35 -8.399 3.15"/>
+			</steelsight>			
+		</stance>
+
+		<!--<standard>
+				<shoulders rotation="-0.000745363 0.005481 0.000929624 -0.999984" translation="-2.747 -4.601 -0.338"/>
+			</standard>
+			<crouched>
+				<shoulders rotation="-0.000745363 0.005481 0.000929624 -0.999984" translation="-3.747 -5.601 -1.338"/>
+			</crouched>
+			<steelsight>
+				<shoulders rotation="-0.00108723 0.00548102 0.00064851 -0.999984" translation="-10.764 2.399 2.862"/>
+			</steelsight>-->		
+	</Weapon>
+	
+	<AddFiles directory="assets" auto_generate="true"/>
+	
+	<Hooks directory="hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="weaponfactorytweakdata_s556_sc.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/> 
+	</Hooks>
+
+</table>	

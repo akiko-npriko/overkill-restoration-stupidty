@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+			
+		<target mode="attach">
+			<anim name="s556_reload" 								file="anims/fps/s556/s556_reload" blend_set="all"/>
+			<anim name="s556_reload_not_empty" 						file="anims/fps/s556/s556_reload_not_empty" blend_set="all"/>
+			<anim name="s556_idle" 									file="anims/fps/s556/s556_idle" blend_set="all"/>
+			<anim name="s556_recoil" 								file="anims/fps/s556/s556_recoil" blend_set="all"/>
+			<anim name="s556_recoil_enter" 							file="anims/fps/s556/s556_recoil_enter" blend_set="all"/>
+			<anim name="s556_recoil_loop" 							file="anims/fps/s556/s556_recoil_loop" blend_set="all"/>
+			<anim name="s556_recoil_exit" 							file="anims/fps/s556/s556_recoil_exit" blend_set="all"/>
+			<anim name="s556_recoil_steelsight" 					file="anims/fps/s556/s556_recoil" blend_set="all"/>
+			<anim name="s556_equip" 								file="anims/fps/s556/s556_equip" blend_set="all"/>
+			<anim name="s556_unequip" 								file="anims/fps/s556/s556_unequip" blend_set="all"/>
+			<anim name="s556_melee" 								file="anims/fps/s556/s556_melee" blend_set="all"/>
+			<anim name="s556_melee_miss" 							file="anims/fps/s556/s556_melee_miss" blend_set="all"/>
+			<anim name="s556_use" 									file="anims/fps/s556/s556_use" blend_set="all"/>
+			<anim name="s556_sprint_enter" 							file="anims/fps/s556/s556_sprint_enter" blend_set="all"/>
+			<anim name="s556_sprint" 								file="anims/fps/s556/s556_sprint" blend_set="all"/>
+			<anim name="s556_sprint_exit" 							file="anims/fps/s556/s556_sprint_exit" blend_set="all"/>
+			<anim name="s556_com_down_var1" 						file="anims/fps/s556/s556_com_var1" blend_set="all"/>
+			<anim name="s556_com_stop" 								file="anims/fps/s556/s556_com_var5" blend_set="all"/>
+			<anim name="s556_com_come" 								file="anims/fps/s556/s556_com_var6" blend_set="all"/>
+			<anim name="s556_com_point" 							file="anims/fps/s556/s556_com_var7" blend_set="all"/>
+			<anim name="s556_get_up" 								file="anims/fps/s556/s556_get_up" blend_set="all"/>
+			<anim name="s556_gogo" 									file="anims/fps/s556/s556_gogo" blend_set="all"/>
+			<anim name="s556_tased" 								file="anims/fps/s556/s556_tased" blend_set="all"/>
+			<anim name="s556_tased_boost" 							file="anims/fps/s556/s556_tased_boost" blend_set="all"/>
+			<anim name="s556_tased_exit" 							file="anims/fps/s556/s556_tased_exit" blend_set="all"/>
+			<anim name="s556_inspect" 								file="anims/fps/s556/s556_inspect" blend_set="all"/> 
+		</target>
+	</tweak>
+</tweaks>

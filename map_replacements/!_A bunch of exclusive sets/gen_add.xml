@@ -1,0 +1,517 @@
+<table directory="assets">
+
+<!-- AMCAR DDM4 Set -->
+
+		<texture							path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/ddm4_barrel_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_b_ddm4"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_o_ddm4"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_bolt_ddm4"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_g_ddm4"/>		
+		<unit_obj							path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_fg_ddm4_vg_dummy"/>
+
+		<texture							path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/ddm4_mag_df"/>		
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_m_ddm4"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_m_ddm4_ext"/>	
+
+		<texture 							path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/ddm4_fg_msecho_df" />
+		<texture 							path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/ddm4_fg_msecho_df_cc" />
+		<texture							path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/ddm4_fg_msecho_nm" />	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_fg_ddm4"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_ns_ddm4"/>
+
+		<texture							path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/ddm4_fg_railed_df"/>				
+		<texture							path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/ddm4_fg_railed_gsma"/>		
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_fg_railed_ddm4"/>
+		
+		<texture							path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/ddm4_lower_df"/>		
+		<texture							path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/ddm4_lower_df_cc"/>
+	    <texture							path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/ddm4_lower_gsma"/>
+	    <texture							path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/ddm4_lower_nm"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_ddm4_lower"/>		
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_s_adapter_ddm4"/>	
+		
+		<texture							path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/ddm4_upper_df"/>		
+	    <texture							path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/ddm4_upper_gsma"/>
+	    <texture							path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/ddm4_upper_nm"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_ddm4_upper"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_draghandle_ddm4"/>	
+
+		<texture							path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/ddm4_stock_df"/>		
+		<texture							path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/ddm4_stock_df_cc"/>		
+		<texture							path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/ddm4_stock_gsma"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_s_ddm4"/>	
+
+<!-- Third person -->
+
+	    <texture							path="units/mods/weapons/wpn_third_ass_amcar_ddm4/ddm4_third_lower_df"/>
+	    <texture							path="units/mods/weapons/wpn_third_ass_amcar_ddm4/ddm4_third_upper_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_ddm4_lower"/>		
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_ddm4_upper"/>	
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_b_ddm4"/>	
+	    <texture							path="units/mods/weapons/wpn_third_ass_amcar_ddm4/ddm4_third_stock_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_s_ddm4"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_s_adapter_ddm4"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_o_ddm4"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_bolt_ddm4"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_m_ddm4"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_m_ddm4_ext"/>
+		<unit_obj							path="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_fg_ddm4"/>
+
+<!-- Gecko 5.45 Set -->
+
+		<texture							path="units/mods/weapons/wpn_fps_ass_galil_intermediate/base_df"/>		
+		<texture							path="units/mods/weapons/wpn_fps_ass_galil_intermediate/base_df_cc"/>		
+		<texture							path="units/mods/weapons/wpn_fps_ass_galil_intermediate/base_nm"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_galil_intermediate/wpn_fps_ass_galil_body_intermediate"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_galil_intermediate/wpn_fps_ass_galil_body_intermediate_new"/>	
+		<texture							path="units/mods/weapons/wpn_fps_ass_galil_intermediate/magwell_tan_df"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_galil_intermediate/wpn_fps_ass_galil_body_magwell"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_galil_intermediate/wpn_fps_ass_galil_m_74"/>			
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_galil_intermediate/wpn_fps_ass_galil_m_intermediate_new"/>		
+		<texture							path="units/mods/weapons/wpn_fps_ass_galil_intermediate/fg_2_df"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_galil_intermediate/wpn_fps_ass_galil_fg_intermediate"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_upg_galil_s_adapter/wpn_fps_upg_galil_s_adapter"/>	
+
+<!-- Third person -->
+
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_galil_intermediate/wpn_third_ass_galil_body_magwell"/>	
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_galil_intermediate/wpn_third_ass_galil_fg_intermediate"/>	
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_galil_intermediate/wpn_third_ass_galil_m_intermediate_new"/>	
+		<unit_mat							path="units/mods/weapons/wpn_fps_upg_galil_s_adapter/wpn_third_upg_galil_s_adapter"/>	
+
+<!-- Two-tone CAR-4 set -->
+	
+	    <texture							path="units/mods/weapons/wpn_fps_ass_m4_tantone/m4_upper_reciever_edge_tan_df"/>
+	    <texture							path="units/mods/weapons/wpn_fps_ass_m4_tantone/m4_upper_reciever_edge_tan_gsma"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_m4_tantone/wpn_fps_ass_m4_tantone_upper"/>	
+	    <texture							path="units/mods/weapons/wpn_fps_ass_m4_tantone/tantone_handguard_df"/>
+	    <texture							path="units/mods/weapons/wpn_fps_ass_m4_tantone/tantone_handguard_df_cc"/>
+	    <texture							path="units/mods/weapons/wpn_fps_ass_m4_tantone/tantone_handguard_nm"/>
+	    <texture							path="units/mods/weapons/wpn_fps_ass_m4_tantone/tantone_handguard_no_gsma_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_m4_tantone/wpn_fps_ass_m4_fg_tantone"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_m4_tantone/wpn_fps_ass_m4_fg_tantone_mlok"/>
+
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_m4_tantone/wpn_fps_ass_m4_g_tantone"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_m4_tantone/wpn_fps_ass_m4_ns_tantone"/>	
+		
+	    <texture							path="units/mods/weapons/wpn_fps_ass_m4_tantone/c7_lower_df"/>
+	    <texture							path="units/mods/weapons/wpn_fps_ass_m4_tantone/c7_lower_df_cc"/>
+	    <texture							path="units/mods/weapons/wpn_fps_ass_m4_tantone/c7_lower_nm"/>
+	    <texture							path="units/mods/weapons/wpn_fps_ass_m4_tantone/c7_lower_gsma"/>		
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_m4_tantone/wpn_fps_ass_m4_tantone_lower"/>
+	    <texture							path="units/mods/weapons/wpn_fps_ass_m4_tantone/gasblock_df"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_m4_tantone/wpn_fps_upg_m4_b_piston"/>	
+
+	    <texture							path="units/mods/weapons/wpn_fps_ass_m4_tantone/tantone_bullet_df"/>
+	    <texture							path="units/mods/weapons/wpn_fps_ass_m4_tantone/tantone_pmag_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_m4_tantone/wpn_fps_ass_m4_m_tantone_pmag"/>	
+
+	    <texture							path="units/mods/weapons/wpn_fps_ass_m4_tantone/tantone_vltor_stock_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_m4_tantone/wpn_fps_ass_m4_s_tantone"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_m4_tantone/wpn_fps_upg_o_mbus"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_m4_tantone/wpn_fps_upg_o_mbus_down"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_m4_tantone/wpn_fps_upg_vg_ass_smg_adapter"/>
+
+<!-- Third person -->
+
+	    <texture							path="units/mods/weapons/wpn_third_ass_m4_tantone/wpn_third_m4_upper_reciever_edge_tan_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_m4_tantone/wpn_third_ass_m4_tantone_upper"/>	
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_m4_tantone/wpn_third_ass_m4_fg_tantone"/>	
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_m4_tantone/wpn_third_upg_m4_b_piston"/>	
+
+<!-- SG-33 Set -->
+	
+		<texture							path="units/mods/weapons/wpn_fps_ass_g3_hk33/hk33_mag_df"/>	
+		<texture							path="units/mods/weapons/wpn_fps_ass_g3_hk33/stock_df"/>	
+		<texture							path="units/mods/weapons/wpn_fps_ass_g3_hk33/stock_base_df"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_g3_hk33/wpn_fps_ass_g3_body_lower_hk33"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_g3_hk33/wpn_fps_ass_g3_body_upper_hk33"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_g3_hk33/wpn_fps_ass_g3_body_dummy_hk33"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_g3_hk33/wpn_fps_ass_g3_m_hk33"/>			
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_g3_hk33/wpn_fps_ass_g3_fg_hk33"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_g3_hk33/wpn_fps_ass_g3_s_hk33"/>	
+
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_g3_hk33/wpn_fps_ass_g3_m_hk33_old"/>			
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_g3_hk33/wpn_fps_ass_g3_fg_hk33_old"/>
+
+<!-- Third person -->
+
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_g3_hk33/wpn_third_ass_g3_body_lower_hk33"/>	
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_g3_hk33/wpn_third_ass_g3_body_upper_hk33"/>	
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_g3_hk33/wpn_third_ass_g3_m_hk33"/>			
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_g3_hk33/wpn_third_ass_g3_fg_hk33"/>	
+
+<!-- AR-45 Set -->
+	
+		<texture							path="units/mods/weapons/wpn_fps_smg_shepheard_ar45/ar45_lower_df"/>	
+		<texture							path="units/mods/weapons/wpn_fps_smg_shepheard_ar45/ar45_lower_df_cc"/>	
+		<texture							path="units/mods/weapons/wpn_fps_smg_shepheard_ar45/ar45_lower_core_df"/>	
+		<texture							path="units/mods/weapons/wpn_fps_smg_shepheard_ar45/ar45_lower_nm"/>	
+		<texture							path="units/mods/weapons/wpn_fps_smg_shepheard_ar45/ar45_lower_gsma"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_ar45_lower"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_shepheard_ar45/ar45_upper_df"/>			
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_ar45_upper"/>		
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_bolt_ar45"/>		
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_draghandle_ar45"/>		
+		<texture							path="units/mods/weapons/wpn_fps_smg_shepheard_ar45/ar45_handguard_df"/>	
+		<texture							path="units/mods/weapons/wpn_fps_smg_shepheard_ar45/ar45_handguard_df_cc"/>	
+		<texture							path="units/mods/weapons/wpn_fps_smg_shepheard_ar45/ar45_handguard_nm"/>			
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_fg_ar45"/>		
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_m_ar45"/>			
+		<unit_obj							path="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_body_ar45_dummy"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_s_adapter_ar45"/>			
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_o_ar45"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_s_tecci"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_b_ar45"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_g_ar45"/>	
+
+<!-- Third person -->
+
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_shepheard_ar45/wpn_third_smg_shepheard_body_ar45_dummy"/>	
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_shepheard_ar45/wpn_third_smg_shepheard_m_ar45"/>		
+		<texture							path="units/mods/weapons/wpn_third_smg_shepheard_ar45/ar45_third_lower_df"/>			
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_shepheard_ar45/wpn_third_smg_shepheard_ar45_lower"/>
+		<texture							path="units/mods/weapons/wpn_third_smg_shepheard_ar45/ar45_third_upper_df"/>			
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_shepheard_ar45/wpn_third_smg_shepheard_ar45_upper"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_shepheard_ar45/wpn_third_smg_shepheard_s_tecci"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_shepheard_ar45/wpn_third_smg_shepheard_fg_ar45"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_shepheard_ar45/wpn_third_smg_shepheard_draghandle_ar45"/>
+		<unit_obj							path="units/mods/weapons/wpn_third_smg_shepheard_ar45/wpn_third_smg_shepheard_g_ar45"/>
+
+<!-- AK 6.5 Set -->
+
+		<texture							path="units/mods/weapons/wpn_fps_ass_ak_creedmoor/barrel_2_df"/>	
+		<texture							path="units/mods/weapons/wpn_fps_ass_ak_creedmoor/barrel_df"/>	
+		<texture							path="units/mods/weapons/wpn_fps_ass_ak_creedmoor/barrel_gsma"/>	
+		<texture							path="units/mods/weapons/wpn_fps_ass_ak_creedmoor/foregrip_df"/>	
+		<texture							path="units/mods/weapons/wpn_fps_ass_ak_creedmoor/foregrip_gsma"/>	
+		<texture							path="units/mods/weapons/wpn_fps_ass_ak_creedmoor/upper_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_ass_ak_creedmoor/upper_gsma"/>			
+		<texture							path="units/mods/weapons/wpn_fps_ass_ak_creedmoor/lower_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_ass_ak_creedmoor/lower_gsma"/>	
+		<texture							path="units/mods/weapons/wpn_fps_ass_ak_creedmoor/wpn_fps_ass_74_body_upperreceiver_gsma"/>	
+		<texture							path="units/mods/weapons/wpn_fps_ass_ak_creedmoor/wpn_fps_ass_74_body_upperreceiver_df"/>	
+		<texture							path="units/mods/weapons/wpn_fps_ass_ak_creedmoor/wpn_fps_ass_ak_body_lowerreceiver_gsma"/>	
+		<texture							path="units/mods/weapons/wpn_fps_ass_ak_creedmoor/wpn_fps_ass_ak_body_lowerreceiver_df"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_ak_creedmoor/wpn_fps_ass_ak_b_creedmoor"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_ak_creedmoor/wpn_fps_ass_ak_b_creedmoor_2"/>			
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_ak_creedmoor/wpn_fps_ass_ak_fg_creedmoor"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_ak_creedmoor/wpn_fps_ass_ak_upper_creedmoor"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_ak_creedmoor/wpn_fps_ass_ak_lower_creedmoor"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_ak_creedmoor/wpn_fps_ass_ak_m_creedmoor"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_ak_creedmoor/wpn_fps_ass_ak_g_creedmoor"/>	
+
+<!-- Third person -->
+
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_ak_creedmoor/wpn_third_ass_ak_b_creedmoor_2"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_ak_creedmoor/wpn_third_ass_ak_m_creedmoor"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_ak_creedmoor/wpn_third_ass_ak_b_creedmoor"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_ak_creedmoor/wpn_third_ass_ak_fg_creedmoor"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_ak_creedmoor/wpn_third_ass_ak_upper_creedmoor"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_ak_creedmoor/wpn_third_ass_ak_g_creedmoor"/>	
+
+<!-- MW22 Chimera Set -->
+
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_m16_mcbravo/wpn_fps_ass_m16_fg_mcbravo_victor"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_m16_mcbravo/wpn_fps_ass_m16_fg_mcbravo_dummy"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_m16_mcbravo/wpn_fps_ass_m16_fg_mcbravo"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_m16_mcbravo/wpn_fps_ass_m16_s_mcbravo"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_m16_mcbravo/wpn_fps_ass_m16_b_mcbravo"/>	
+		<texture							path="units/mods/weapons/wpn_fps_ass_m16_mcbravo/mcbravo_lower_df"/>	
+		<texture							path="units/mods/weapons/wpn_fps_ass_m16_mcbravo/mcbravo_lower_nm"/>	
+		<texture							path="units/mods/weapons/wpn_fps_ass_m16_mcbravo/mcbravo_lower_gsma"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_m16_mcbravo/wpn_fps_ass_m16_lower_mcbravo"/>	
+		<texture							path="units/mods/weapons/wpn_fps_ass_m16_mcbravo/mcbravo_upper_df"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_m16_mcbravo/wpn_fps_ass_m16_upper_mcbravo"/>	
+		<texture							path="units/mods/weapons/wpn_fps_ass_m16_mcbravo/mcbravo_mag_df"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_m16_mcbravo/wpn_fps_ass_m16_m_mcbravo"/>	
+
+<!-- Third person -->
+
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_m16_mcbravo/wpn_third_ass_m16_fg_mcbravo"/>	
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_m16_mcbravo/wpn_third_ass_m16_b_mcbravo"/>	
+
+<!-- Black M590 Set -->
+
+		<texture							path="units/mods/weapons/wpn_fps_shot_m590_set/m590_body_black_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_shot_m590_set/wpn_fps_shot_m590_body_black"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_shot_m590_set/wpn_fps_shot_m590_fg_set"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_shot_m590_set/wpn_fps_shot_m590_s_adapter_set"/>
+		<unit_obj							path="units/mods/weapons/wpn_fps_shot_m590_set/wpn_fps_shot_m590_body_set_dummy"/>
+
+<!-- Third person -->
+
+		<unit_mat							path="units/mods/weapons/wpn_third_shot_m590_set/wpn_third_shot_m590_s_adapter_set"/>
+
+<!-- Mac-10 Carbine, again -->
+
+		<unit_obj							path="units/mods/weapons/wpn_fps_smg_mac10_m4_v2/wpn_fps_smg_mac10_body_dummy"/>
+
+<!-- Gold Krinkov Set -->
+
+		<texture							path="units/mods/weapons/wpn_fps_smg_akmsu_gold/light_wood_stock_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_akmsu_gold/wpn_fps_smg_akmsu_s_gold"/>
+		<unit_mat_thq						path="units/mods/weapons/wpn_fps_smg_akmsu_gold/wpn_fps_smg_akmsu_body_lowerreceiver_gold"/>
+		<unit_mat_thq						path="units/mods/weapons/wpn_fps_smg_akmsu_gold/wpn_fps_ak_bolt_gold"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_akmsu_gold/handguard_birch_df"/>
+		<unit_mat_thq						path="units/mods/weapons/wpn_fps_smg_akmsu_gold/wpn_fps_smg_akmsu_fg_birch"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_akmsu_gold/barrel_gold_df"/>
+		<unit_mat_thq						path="units/mods/weapons/wpn_fps_smg_akmsu_gold/wpn_fps_smg_akmsu_b_gold"/>
+
+<!-- Third person -->
+
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_akmsu_gold/wpn_third_smg_akmsu_s_gold"/>
+		<unit_obj							path="units/mods/weapons/wpn_third_smg_akmsu_gold/wpn_third_smg_akmsu_body_lowerreceiver_gold"/>
+
+<!-- SCAR HAMR Set -->
+
+		<texture							path="units/mods/weapons/wpn_fps_ass_scar_hamr/hamr_lower_df"/>		
+		<texture							path="units/mods/weapons/wpn_fps_ass_scar_hamr/hamr_upper_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_ass_scar_hamr/hamr_upper_df_cc"/>
+		<texture							path="units/mods/weapons/wpn_fps_ass_scar_hamr/hamr_upper_nm"/>
+		<texture							path="units/mods/weapons/wpn_fps_ass_scar_hamr/hamr_drum_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_scar_hamr/wpn_fps_ass_scar_body_hamr"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_scar_hamr/wpn_fps_ass_scar_m_hamr"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_scar_hamr/wpn_fps_ass_scar_b_hamr"/>
+
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_scar_hamr_pb/wpn_fps_ass_scar_body_hamr_pb"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_scar_hamr_pb/wpn_fps_ass_scar_m_hamr_pb"/>
+
+<!-- Third person -->
+
+		<texture							path="units/mods/weapons/wpn_third_ass_scar_hamr/third_hamr_lower_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_scar_hamr/wpn_third_ass_scar_body_hamr"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_scar_hamr/wpn_third_ass_scar_m_hamr"/>
+
+<!-- Victor Set -->
+
+		<unit_obj							path="units/mods/weapons/wpn_fps_snp_victor_ar15/wpn_fps_snp_victor_body_dummy"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_snp_victor_ar15/wpn_fps_snp_victor_fg_msr"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_snp_victor_ar15/wpn_fps_snp_victor_m_ar15"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_snp_victor_ar15/wpn_fps_snp_victor_bolt_ar15"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_snp_victor_ar15/wpn_fps_snp_victor_m_ar15_1"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_snp_victor_ar15/wpn_fps_snp_victor_m_ar15_2"/>
+		<texture							path="units/mods/weapons/wpn_fps_snp_victor_ar15/magpul_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_snp_victor_ar15/wpn_fps_snp_victor_vg_ar15"/>
+		<texture							path="units/mods/weapons/wpn_fps_snp_victor_ar15/cheems_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_snp_victor_ar15/wpn_fps_snp_victor_ns_medium"/>
+
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_snp_victor_ar15_swapped/wpn_fps_snp_victor_bolt_ar15_swapped"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_snp_victor_ar15_swapped/wpn_fps_snp_victor_m_ar15_1_swapped"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_snp_victor_ar15_swapped/wpn_fps_snp_victor_m_ar15_2_swapped"/>
+
+<!-- Third person -->
+
+		<unit_mat							path="units/mods/weapons/wpn_third_snp_victor_ar15/wpn_third_snp_victor_fg_msr"/> 
+		<unit_mat							path="units/mods/weapons/wpn_third_snp_victor_ar15/wpn_third_snp_victor_m_ar15"/> 
+
+<!-- G36 STANAG Magwell + cut rail Set -->
+
+	    <texture							path="units/mods/weapons/wpn_fps_ass_m4_tantone/tantone_lancer_df"/>
+	    <texture							path="units/mods/weapons/wpn_fps_ass_m4_tantone/tantone_lancer_df_cc"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_g36_stanag/wpn_fps_ass_g36_m_stanag"/>	
+
+	    <texture							path="units/mods/weapons/wpn_fps_ass_g36_stanag/body_stanag_df"/>
+	    <texture							path="units/mods/weapons/wpn_fps_ass_g36_stanag/body_stanag_df_cc"/>
+	    <texture							path="units/mods/weapons/wpn_fps_ass_g36_stanag/body_stanag_gsma"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_g36_stanag/wpn_fps_ass_g36_body_stanag"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_g36_stanag/wpn_fps_ass_g36_body_stanag_sl8"/>	
+
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_g36_stanag/wpn_fps_ass_g36_o_ncstar_micro"/>
+		<texture							path="units/mods/weapons/wpn_fps_ass_g36_stanag/wpn_fps_upg_vg_ass_smg_afg_df"/>			
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_g36_stanag/wpn_fps_ass_g36_vg_afg_cut"/>	
+
+		<unit_obj							path="units/mods/weapons/wpn_fps_ass_g36_stanag/wpn_fps_ass_g36_body_dummy"/>	
+		<unit_obj							path="units/mods/weapons/wpn_fps_ass_g36_stanag/wpn_fps_ass_g36_m_dummy"/>	
+
+<!-- Third person -->	
+
+<!-- Sport 1911 Set -->
+
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_1911_sporty/wpn_fps_pis_1911_magwell"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_1911_sporty/wpn_fps_pis_1911_scopemount_sporty"/>	
+		<texture							path="units/mods/weapons/wpn_fps_pis_1911_sporty/body_sport_df"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_1911_sporty/wpn_fps_pis_1911_body_sporty"/>	
+		<texture							path="units/mods/weapons/wpn_fps_pis_1911_sporty/barrel_sport_df"/>	
+	    <texture							path="units/mods/weapons/wpn_fps_pis_1911_sporty/slide_sport_df"/>
+	    <texture							path="units/mods/weapons/wpn_fps_pis_1911_sporty/slide_sport_df_cc"/>
+	    <texture							path="units/mods/weapons/wpn_fps_pis_1911_sporty/slide_sport_nm"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_1911_sporty/wpn_fps_pis_1911_b_sporty"/>	
+	    <texture							path="units/mods/weapons/wpn_fps_pis_1911_sporty/grip_sport_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_pis_1911_sporty/grip_sport_nm"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_1911_sporty/wpn_fps_pis_1911_g_sporty"/>	
+
+<!-- Third person -->	
+
+		<unit_mat							path="units/mods/weapons/wpn_third_pis_1911_sporty/wpn_third_pis_1911_scopemount_sporty"/>
+
+<!-- HK416 Para Set -->
+
+		<texture							path="units/mods/weapons/wpn_fps_smg_olympic_hk416/tan_lower_df"/>	
+	    <texture							path="units/mods/weapons/wpn_fps_smg_olympic_hk416/tan_upper_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_olympic_hk416/wpn_fps_smg_olympic_bolt_hk416"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_olympic_hk416/wpn_fps_smg_olympic_upper_hk416"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_olympic_hk416/wpn_fps_smg_olympic_lower_hk416"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_olympic_hk416/tan_fg_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_olympic_hk416/wpn_fps_smg_olympic_fg_hk416"/>
+		
+<!-- 5.7mm Sterling Set -->
+
+	    <texture							path="units/mods/weapons/wpn_fps_smg_sterling_pdw/p90_mag_df"/>
+	    <texture							path="units/mods/weapons/wpn_fps_smg_sterling_pdw/pdw_barrel_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_sterling_pdw/wpn_fps_smg_sterling_m_pdw"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_sterling_pdw/wpn_fps_smg_sterling_ns_pdw_supp"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_sterling_pdw/wpn_fps_smg_sterling_b_pdw"/>	
+		<unit_obj							path="units/mods/weapons/wpn_fps_smg_sterling_pdw/wpn_fps_smg_sterling_base_pdw"/>		
+
+<!-- Tacticool AKM Set -->
+
+	    <texture							path="units/mods/weapons/wpn_fps_ass_akm_tacticool/barrel_df"/>
+	    <texture							path="units/mods/weapons/wpn_fps_ass_akm_tacticool/barrel_gsma"/>
+	    <texture							path="units/mods/weapons/wpn_fps_ass_akm_tacticool/black_midwest_df"/>
+	    <texture							path="units/mods/weapons/wpn_fps_ass_akm_tacticool/rail_cover_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_akm_tacticool/wpn_fps_ass_akm_b_tacticool"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_akm_tacticool/wpn_fps_ass_akm_fg_tacticool"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_akm_tacticool/wpn_fps_ass_akm_fg_railcover"/>	
+		<unit_obj							path="units/mods/weapons/wpn_fps_ass_akm_tacticool/wpn_fps_ass_akm_b_tacticool_dummy"/>			
+
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_akm_tacticool/wpn_fps_ass_akm_upper_tacticool"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_akm_tacticool/wpn_fps_ass_akm_upper_tacticool_gsma"/>	
+
+<!-- Commando 550-1 Set -->
+
+	    <texture							path="units/mods/weapons/wpn_fps_ass_s552_s550/handguard_df"/>
+	    <texture							path="units/mods/weapons/wpn_fps_ass_s552_s550/handguard_df_cc"/>
+	    <texture							path="units/mods/weapons/wpn_fps_ass_s552_s550/handguard_nm"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_s552_s550/wpn_fps_ass_s552_b_s550"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_s552_s550/wpn_fps_ass_s552_fg_s550"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_s552_s550/wpn_fps_ass_s552_ns_s550"/>	
+	    <texture							path="units/mods/weapons/wpn_fps_ass_s552_s550/s550_mag_df"/>
+	    <texture							path="units/mods/weapons/wpn_fps_ass_s552_s550/s550_mag_df_cc"/>
+	    <texture							path="units/mods/weapons/wpn_fps_ass_s552_s550/s550_mag_nm"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_s552_s550/wpn_fps_ass_s552_m_s550"/>
+
+<!-- Third person -->	
+
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_s552_s550/wpn_third_ass_s552_b_s550"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_s552_s550/wpn_third_ass_s552_fg_s550"/>
+
+<!-- AC556 Set -->
+
+	    <texture							path="units/mods/weapons/wpn_fps_ass_m14_ac556/ac556_mag_df"/>
+	    <texture							path="units/mods/weapons/wpn_fps_ass_m14_ac556/wpn_fps_ass_m14_b_ac556_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_m14_ac556/wpn_fps_ass_m14_b_ac556"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_m14_ac556/wpn_fps_ass_m14_m_ac556"/>
+	    <texture							path="units/mods/weapons/wpn_fps_ass_m14_ac556/wpn_fps_ass_m14_body_ac556_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_m14_ac556/wpn_fps_ass_m14_body_ac556"/>	
+	    <texture							path="units/mods/weapons/wpn_fps_ass_m14_ac556/wpn_fps_ass_m14_base_ac556_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_m14_ac556/wpn_fps_ass_m14_base_ac556"/>	
+
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_m14_ac556_g7/wpn_fps_ass_m14_m_ac556_g7"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_m14_ac556_g7/wpn_fps_ass_m14_base_ac556_g7"/>	
+
+<!-- Third person -->	
+
+		<unit_obj							path="units/mods/weapons/wpn_third_ass_m14_ac556/wpn_third_ass_m14_b_ac556"/>
+		<unit_obj							path="units/mods/weapons/wpn_third_ass_m14_ac556/wpn_third_ass_m14_body_ac556"/>
+		<unit_obj							path="units/mods/weapons/wpn_third_ass_m14_ac556/wpn_third_ass_m14_base_ac556"/>
+		<unit_obj							path="units/mods/weapons/wpn_third_ass_m14_ac556/wpn_third_ass_m14_m_ac556"/>
+
+<!-- Centimeter Set -->
+	
+		<texture							path="units/mods/weapons/wpn_fps_smg_shepheard_centi/centi_lower_df"/>	
+		<texture							path="units/mods/weapons/wpn_fps_smg_shepheard_centi/centi_lower_df_cc"/>	
+		<texture							path="units/mods/weapons/wpn_fps_smg_shepheard_centi/centi_lower_nm"/>	
+		<texture							path="units/mods/weapons/wpn_fps_smg_shepheard_centi/centi_lower_gsma"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_shepheard_centi/wpn_fps_smg_shepheard_centi_lower"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_shepheard_centi/centi_upper_df"/>			
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_shepheard_centi/wpn_fps_smg_shepheard_centi_upper"/>		
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_shepheard_centi/wpn_fps_smg_shepheard_bolt_centi"/>		
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_shepheard_centi/wpn_fps_smg_shepheard_draghandle_centi"/>		
+		<texture							path="units/mods/weapons/wpn_fps_smg_shepheard_centi/centi_handguard_df"/>			
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_shepheard_centi/wpn_fps_smg_shepheard_fg_centi"/>		
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_shepheard_centi/wpn_fps_smg_shepheard_m_centi"/>				
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_shepheard_centi/wpn_fps_smg_shepheard_o_centi"/>		
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_shepheard_centi/wpn_fps_smg_shepheard_o_centi_short"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_shepheard_centi/wpn_fps_smg_shepheard_b_centi"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_shepheard_centi/wpn_fps_smg_shepheard_b_centi_short"/>	
+		<texture							path="units/mods/weapons/wpn_fps_smg_shepheard_centi/centi_handguard_short_df"/>			
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_shepheard_centi/wpn_fps_smg_shepheard_fg_centi_short"/>	
+
+<!-- Third person -->	
+
+		<unit_obj							path="units/mods/weapons/wpn_third_smg_shepheard_centi/wpn_third_smg_shepheard_fg_centi"/>
+		<unit_obj							path="units/mods/weapons/wpn_third_smg_shepheard_centi/wpn_third_smg_shepheard_fg_centi_short"/>	
+
+<!-- Littler Friend Set -->
+
+		<unit_obj							path="units/mods/weapons/wpn_fps_ass_contraband_little/wpn_fps_ass_contraband_little_dummy"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_contraband_little/wpn_fps_ass_contraband_bolt_little"/>	
+		<texture							path="units/mods/weapons/wpn_fps_ass_contraband_little/little_mag_df"/>		
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_contraband_little/wpn_fps_ass_contraband_m_little"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_contraband_little/wpn_fps_ass_contraband_upper_little"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_contraband_little/wpn_fps_ass_contraband_lower_little"/>			
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_contraband_little/wpn_fps_ass_contraband_o_little"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_contraband_little/wpn_fps_ass_contraband_frontsight"/>	
+
+<!-- Third person -->	
+
+		<unit_obj							path="units/mods/weapons/wpn_third_ass_contraband_little/wpn_third_ass_contraband_m_little"/>
+		<unit_obj							path="units/mods/weapons/wpn_third_ass_contraband_little/wpn_third_ass_contraband_bolt_little"/>	
+
+<!-- Super Nine Set -->
+
+	    <texture							path="units/mods/weapons/wpn_fps_smg_polymer_nine/vector_nine_df"/>
+	    <texture							path="units/mods/weapons/wpn_fps_smg_polymer_nine/vector_nine_df_cc"/>
+	    <texture							path="units/mods/weapons/wpn_fps_smg_polymer_nine/vector_nine_nm"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_polymer_nine/wpn_fps_smg_polymer_body_nine"/>
+	    <texture							path="units/mods/weapons/wpn_fps_smg_polymer_nine/ninemag_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_polymer_nine/wpn_fps_smg_polymer_m_nine"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_polymer_nine/wpn_fps_smg_polymer_fg_nine"/>
+
+<!-- Third person -->	
+
+		<texture							path="units/mods/weapons/wpn_third_smg_polymer_nine/ninemag_third_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_polymer_nine/wpn_third_smg_polymer_m_nine"/>	
+	
+<!-- Icons -->
+
+		<texture							path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_amcar_body_ddm4"/>
+		<texture							path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_galil_body_intermediate"/>
+		<texture							path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m4_body_tantone"/>
+		<texture							path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_g3_body_hk33"/>
+		<texture							path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_shepheard_body_ar45"/>
+		<texture							path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_x_shepheard_body_ar45"/>
+		<texture							path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_ak_body_creedmoor"/>
+		<texture							path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_galil_body_intermediate_accurate"/>
+
+<!-- V2 Icons -->
+
+		<texture							path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_olympic_body_hk416c"/>
+		<texture							path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m16_body_mcbravo"/>
+		<texture							path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_shot_m590_set"/>
+		<texture							path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_mac10_body_m4_v2"/>
+		<texture							path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_scar_body_hamr"/>
+		<texture							path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_g36_body_stanag"/>
+		<texture							path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_1911_body_sporty"/>
+		<texture							path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_x_1911_body_sporty"/>
+		<texture							path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_snp_victor_body_ar15"/>
+		<texture							path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_akmsu_body_gold"/>
+		
+<!-- V3 Icons -->
+		
+		<texture							path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_sterling_body_pdw"/>
+		<texture							path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_akm_body_tacticool"/>
+		<texture							path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_s552_body_s550"/>
+		<texture							path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_s552_m_s550"/>
+		<texture							path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m14_body_ac556"/>
+		<texture							path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_shepheard_body_centi"/>
+		<texture							path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_contraband_body_little"/>
+
+		<texture							path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m14_ac556_mount_blocker"/>
+
+<!-- V4 Icons -->
+
+		<texture							path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_polymer_body_nine"/>
+
+</table>

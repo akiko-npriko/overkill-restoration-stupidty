@@ -8,6 +8,23 @@
 	<tweak definition="fps_animation_subset.xml" />
 	<tweak definition="std.animation_states"/>
 	<tweak definition="std.animation_subset"/>
+	
+<!-- AKKIKO ADDITIONS (put content of supermod.xml here and remove supermod.xml from mod folder) 			map_replacements/REPLAAACEME/			-->
+	<!-- Anim Redirects -->
+	<!-- Cobray Terminator -->
+	<tweak definition="map_replacements/!_Cobray Terminator/animation_state_machine.xml" />
+	<tweak definition="map_replacements/!_Cobray Terminator/animation_states.xml" />
+	<tweak definition="map_replacements/!_Cobray Terminator/animation_subset.xml" />
+	
+	<!-- SCAR 16 -->
+	<tweak definition="map_replacements/!_SCAR-16/animation_state_machine.xml" />
+	<tweak definition="map_replacements/!_SCAR-16/animation_states.xml" />
+	<tweak definition="map_replacements/!_SCAR-16/animation_subset.xml" />
+	
+	<!-- SG 556 -->
+	<tweak definition="map_replacements/!_SG 556/animation_state_machine.xml" />
+	<tweak definition="map_replacements/!_SG 556/animation_states.xml" />
+	<tweak definition="map_replacements/!_SG 556/animation_subset.xml" />
 
 	<!-- Troublesome NPC assets go here! -->
 	<assets base_path="assets/">

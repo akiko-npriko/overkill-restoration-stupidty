@@ -1,0 +1,122 @@
+<mod name="Halo M6D 'Personal Defense' Weapon System" author="RJC9000" min_lib_ver="3.38">
+	<Localization directory="loc" default="english.txt">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	<AssetUpdates id="39498" version="1.01" provider="modworkshop"/>
+	<GlobalValue id="m6dmod" color="Color(0.9, 0.2, 0.2)"/>
+	
+	<WeaponMod id="wpn_fps_pis_m6d_barrel" based_on="wpn_fps_pis_deagle_b_standard" type="barrel" unit="units/mods/weapons/wpn_fps_pis_m6d_pts/wpn_fps_pis_m6d_barrel" hidden="true" ver="2"/>
+	<WeaponMod id="wpn_fps_pis_m6d_body" based_on="wpn_fps_pis_deagle_body_standard" type="lower_reciever" unit="units/mods/weapons/wpn_fps_pis_m6d_pts/wpn_fps_pis_m6d_body" hidden="true" ver="2"/>
+	<WeaponMod id="wpn_fps_pis_m6d_magazine" based_on="wpn_fps_pis_deagle_m_standard" type="magazine"  unit="units/mods/weapons/wpn_fps_pis_m6d_pts/wpn_fps_pis_m6d_magazine" hidden="true" ver="2"/>
+	<WeaponMod id="wpn_fps_pis_m6d_scope" based_on="wpn_fps_pis_deagle_o_standard_rear" type="sight" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" hidden="true" ver="2">
+		<stats zoom="8"/>
+	</WeaponMod>	
+
+<!--	<WeaponMod id="wpn_fps_pis_m6d_am_ap" based_on="wpn_fps_upg_a_custom_free" type="ammo" sub_type="ammo_slug" has_description="true" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" texture_bundle_folder="mods" global_value="mcx_gen1_mod" is_a_unlockable="true" ver="2">
+		<stats damage="20" spread="-3" recoil="-3" concealment="0" total_ammo_mod="-5"/>
+		<custom_stats ammo_pickup_min_mul="1.02" ammo_pickup_max_mul="0.5"  armor_piercing_add="1" can_shoot_through_enemy="false" can_shoot_through_shield="false" can_shoot_through_wall="false" />
+		<spread_multi>
+			<value_node value="1.25"/>
+			<value_node value="1.25"/>
+		</spread_multi>
+	</WeaponMod> -->
+
+	<!--Weapon -->
+		<Weapon unlock_level="100">
+		<weapon id="m6d" based_on="deagle" weapon_hold="deagle" CLIP_AMMO_MAX="12" NR_CLIPS_MAX="6" armor_piercing_add="1" lock_slide="true" global_value="m6dmod">
+			<stats damage="265" spread="25" spread_moving="18" recoil="0" concealment="17"/>
+			<fire_mode_data fire_rate="0.25"/>
+			<AMMO_PICKUP>
+				<value_node value="1.0"/>
+				<value_node value="1.5"/>
+			</AMMO_PICKUP>
+			<sounds fire="m6d_fire">
+				<reload wp_deagle_lever_pull="m6d_lever" wp_g17_clip_slide_out="m6d_magout" wp_foley_generic_clip_in_connect="m6d_magin" />
+		   </sounds>
+			<kick>
+				<standing>
+					<value_node value="2.0"/>
+					<value_node value="2.3"/>
+					<value_node value="-0.5"/>
+					<value_node value="0.5"/>
+				</standing>
+				<crouching>
+					<value_node value="1.7"/>
+					<value_node value="2.0"/>
+					<value_node value="-0.3"/>
+					<value_node value="0.3"/>
+				</crouching>
+				<steelsight>
+					<value_node value="1.2"/>
+					<value_node value="1.8"/>
+					<value_node value="-0.05"/>
+					<value_node value="0.05"/>
+				</steelsight>
+			</kick>
+			<animations reload_name_id="deagle"/>
+		</weapon>
+		<factory id="wpn_fps_pis_m6d" unit="units/mods/weapons/wpn_fps_pis_m6d/wpn_fps_pis_m6d">
+		<animations reload="reload" fire="recoil" fire_steelsight="recoil" reload_not_empty="reload_not_empty" magazine_empty="last_recoil"/>
+		<adds/>
+		<override/>
+			<default_blueprint>
+				<value_node value="wpn_fps_pis_m6d_barrel"/>
+				<value_node value="wpn_fps_pis_m6d_body"/>
+				<value_node value="wpn_fps_pis_m6d_magazine"/>
+				<value_node value="wpn_fps_pis_m6d_scope"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_pis_m6d_barrel"/>
+				<value_node value="wpn_fps_pis_m6d_body"/>
+				<value_node value="wpn_fps_pis_m6d_magazine"/>
+				<value_node value="wpn_fps_pis_m6d_scope"/>
+			</uses_parts>
+		</factory>
+		<stance>
+		<standard>
+				<shoulders rotation="-0.00600737 0.00548587 0.000909496 -0.999967" translation="-1.322 -10.65 -0.101"/>
+		</standard>
+		<crouched>
+				<shoulders rotation="-0.00600737 0.00548587 0.000909496 -0.999967" translation="-3.072 -12.65 -0.601"/>
+			</crouched>
+			<steelsight> 
+				<shoulders rotation="-0.0103702 0.00548151 0.000929271 -0.999931" translation="-8.592 -5.667 2.044"/>
+			</steelsight> 
+		</stance>
+		</weapon>
+
+	
+	<Sounds directory="assets\sounds">
+	
+		<sound id="m6d_fire" path="m6d_fire.ogg" prefix="regular"/>
+		<sound id="m6d_fire" path="m6d_fire.ogg" prefix="suppressed_a"/>
+		<sound id="m6d_fire" path="m6d_fire.ogg" prefix="suppressed_b"/>
+		<sound id="m6d_fire" path="m6d_fire.ogg" prefix="suppressed_c"/>	
+		<sound id="m6d_magout" path="m6d_magout.ogg" prefix="first"/>
+		<sound id="m6d_magout" path="m6d_magout.ogg" prefix="third"/>
+		<sound id="m6d_magin" path="m6d_magin.ogg" prefix="first"/>
+		<sound id="m6d_magin" path="m6d_magin.ogg" prefix="third"/>
+		<sound id="m6d_lever" path="m6d_handle.ogg" prefix="first"/>		
+		<sound id="m6d_lever" path="m6d_handle.ogg" prefix="third"/>		
+	</Sounds>
+		
+	<AddFiles directory="assets">
+	<!--Unit Base, Scope Overlay, and GUI Stuff-->
+		<unit_npc path="units/mods/weapons/wpn_fps_pis_m6d/wpn_fps_pis_m6d"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/m6d"/>	
+		<texture path="scope_overlay/m6d_scope_overlay"/>
+	<!--Unit Paths/etc-->				
+	<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_m6d_pts/wpn_fps_pis_m6d_barrel"/>
+	<unit_mat_cc path="units/mods/weapons/wpn_fps_pis_m6d_pts/wpn_fps_pis_m6d_body"/>
+	<unit_mat_cc path="units/mods/weapons/wpn_fps_pis_m6d_pts/wpn_fps_pis_m6d_magazine"/>
+	
+	<!--Textures-->		
+		   <texture path="units/mods/weapons/wpn_fps_pis_m6d_pts/textures/weapon_metal_cubemap"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_m6d_pts/textures/jesus_pistol"/>
+		   <texture path="units/mods/weapons/wpn_fps_pis_m6d_pts/textures/jesus_pistol_df_cc"/>
+	</AddFiles>
+	
+	<Hooks directory="hooks">
+	</Hooks>
+	
+</mod>

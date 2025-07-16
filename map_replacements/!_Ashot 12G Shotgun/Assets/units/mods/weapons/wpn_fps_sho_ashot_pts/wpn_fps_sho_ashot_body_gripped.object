@@ -1,0 +1,32 @@
+<dynamic_object>
+    <diesel materials="units/mods/weapons/wpn_fps_sho_ashot_pts/wpn_fps_sho_ashot_body_gripped" orientation_object="rp_wpn_fps_pis_rage_body_standard"/>
+	<animations>
+    <animation_group name="reload">
+		<object name="clip_ejection_reload" enabled="true" />
+		<object name="align_house_reload" enabled="true" />
+		<object name="anim_cocking_lever_non" enabled="true" />
+		<object name="anim_bullets_reload" enabled="true" />
+    </animation_group>
+	
+    <animation_group name="reload_not_empty">
+		<object name="clip_ejection_reload_not_empty" enabled="true" />		
+		<object name="align_house_reload_not_empty" enabled="true" />
+		<object name="anim_bullets_reload_not_empty" enabled="true" />
+    </animation_group>
+
+    <animation_group name="recoil">
+		<object name="anim_cocking_lever_recoil" enabled="false" />
+		<object name="align_house_recoil" enabled="false" />
+		<object name="anim_cocking_lever_recoil" enabled="false" />
+    </animation_group>
+  </animations>
+    <graphics>
+        <object enabled="false" name="g_hammer" />
+        <object enabled="true" name="g_lock" />
+        <object enabled="true" name="g_bullets" />
+        <object enabled="false" name="g_cylinder" />
+        <object enabled="false" name="g_cylinder_smooth" />
+        <object enabled="true" name="g_body" />
+        <object enabled="false" name="g_sight" />
+    </graphics>
+</dynamic_object>

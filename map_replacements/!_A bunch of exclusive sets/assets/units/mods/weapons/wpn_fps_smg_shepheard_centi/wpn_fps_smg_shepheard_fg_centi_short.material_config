@@ -1,0 +1,12 @@
+<materials version="3" group="weapon_victor">
+    <material render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_hera_handguard" unique="true" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_smg_shepheard_centi/centi_handguard_short_df"/>
+        <material_texture file="units/pd2_dlc_savi/weapons/wpn_fps_snp_victor_pts/hera_handguard_gsma"/>
+        <bump_normal_texture file="units/pd2_dlc_savi/weapons/wpn_fps_snp_victor_pts/hera_handguard_nm"/>
+    </material>
+    <material render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_railcover" unique="true" version="2">
+        <diffuse_texture file="units/pd2_dlc_savi/weapons/wpn_fps_snp_victor_pts/hera_railcover_df"/>
+        <material_texture file="units/pd2_dlc_savi/weapons/wpn_fps_snp_victor_pts/hera_railcover_gsma"/>
+        <bump_normal_texture file="units/pd2_dlc_savi/weapons/wpn_fps_snp_victor_pts/hera_railcover_nm"/>
+    </material>
+</materials>

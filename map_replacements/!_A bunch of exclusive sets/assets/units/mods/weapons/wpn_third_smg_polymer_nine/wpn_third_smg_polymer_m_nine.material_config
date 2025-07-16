@@ -1,0 +1,7 @@
+<materials version="3">
+	<material name="mat_speedmag" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_third_smg_polymer_nine/ninemag_third_df" />
+		<bump_normal_texture file="units/pd2_dlc_lawp/weapons/wpn_fps_smg_fmg9_pts/speedmag_third_nm" />
+		<reflection_texture file="environments/cubemaps/weapon_cube" type="cubemap"/>
+	</material>
+</materials>

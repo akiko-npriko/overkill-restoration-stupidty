@@ -1,0 +1,12 @@
+<unit type="wpn" slot="1" >
+	<object file="units/mods/weapons/wpn_fps_pis_m6d/wpn_fps_pis_m6d" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_deagle"/>
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="base" class="NewRaycastWeaponBase" >
+			<var name="name_id" value="m6d" />
+		</extension>
+	</extensions>
+</unit>

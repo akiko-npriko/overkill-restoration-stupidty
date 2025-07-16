@@ -1,0 +1,26 @@
+<table name="Altyn Helmet" min_lib_ver="3.38" color="Color(0.96, 0.7, 0.9)">
+    <Localization directory="loc" default="english.txt">
+		<loc file="english.txt" language="english"/>
+		<loc file="russian.txt" language="russian"/>
+    </Localization>
+	<AssetUpdates id="38640" version="1.0" provider="modworkshop"/>
+	<GlobalValue id="altynmod" color="Color(0.96, 0.7, 0.9)"/>
+	
+	<Mask id="altyn_novisor" unit="units/mods/masks/msk_altyn/msk_altyn_novisor" type="helmet" global_value="altynmod"/>
+	<Mask id="altyn_visor_up" unit="units/mods/masks/msk_altyn/msk_altyn_visor_up" type="helmet" global_value="altynmod"/>
+	<Mask id="altyn_visor_dn" unit="units/mods/masks/msk_altyn/msk_altyn_visor_dn" type="helmet" global_value="altynmod"/>
+	
+    <AddFiles directory="assets">		
+		<unit_mat path="units/mods/masks/msk_altyn/msk_altyn_novisor"/>
+		<unit_mat path="units/mods/masks/msk_altyn/msk_altyn_visor_up"/>
+		<unit_mat path="units/mods/masks/msk_altyn/msk_altyn_visor_dn"/>
+        <df_nm path="units/mods/masks/msk_altyn/altyn"/>
+        <df_nm path="units/mods/masks/msk_altyn/momex"/>
+		<texture path="units/mods/masks/msk_altyn/altyn_glass_df"/>
+		<texture path="units/mods/masks/msk_altyn/altyn_glass_op"/>
+
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/altyn_novisor"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/altyn_visor_up"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/altyn_visor_dn"/>
+	</AddFiles>
+</table>

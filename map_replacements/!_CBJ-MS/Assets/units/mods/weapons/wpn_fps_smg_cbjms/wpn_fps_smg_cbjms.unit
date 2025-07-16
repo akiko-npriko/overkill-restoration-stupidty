@@ -1,0 +1,12 @@
+<unit type="wpn" slot="1" >
+	<object file="units/mods/weapons/wpn_fps_smg_cbjms/wpn_fps_smg_cbjms" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_mp9"/>
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="base" class="NewRaycastWeaponBase" >
+			<var name="name_id" value="cbjms" />
+		</extension>
+	</extensions>
+</unit>

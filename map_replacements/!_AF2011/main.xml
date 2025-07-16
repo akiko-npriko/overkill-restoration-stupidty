@@ -1,0 +1,432 @@
+<table name="af2011">
+<!-- Table name = id for the pack -->
+
+
+    <Localization directory="Localization" default="english.txt">
+    </Localization>
+    <AssetUpdates id="22866" name="asset_updates" folder_name="AF2011" provider="lastbullet"/>
+    <!-- No need to change localization stuff, unless you wish to add other languages -->
+    
+    
+    <GlobalValue id="af2011" color="Color(1, 0.5, 0)"/>
+    <!--
+    globalvalue id = id for the entire pack
+    color = The color of the "This is an X item!" text
+    -->
+    <WeaponMod based_on="wpn_fps_pis_beretta_body_beretta" id="wpn_fps_pis_af2011_g_standard" unit="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_g_standard" type="grip" drop="false" is_a_unlockable="false"/>
+    <WeaponMod based_on="wpn_fps_pis_beretta_body_beretta" id="wpn_fps_pis_af2011_parts" unit="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_parts" type="other" drop="false" is_a_unlockable="false"/>
+	<WeaponMod id="wpn_fps_pis_af2011_g_bling" based_on="wpn_fps_pis_beretta_body_beretta" type="grip" unit="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_g_bling" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats recoil="1" concealment="-1"/>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_af2011_g_wood" based_on="wpn_fps_pis_beretta_body_beretta" type="grip" unit="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_g_wood" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats spread="1" concealment="-1"/>
+		<pcs/>
+	</WeaponMod>
+    <WeaponMod based_on="wpn_fps_pis_beretta_body_beretta" id="wpn_fps_pis_af2011_body_standard" unit="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_body_standard" type="lower_reciever" drop="false" is_a_unlockable="false"/>
+    <WeaponMod based_on="wpn_fps_pis_beretta_body_beretta" id="wpn_fps_pis_af2011_rail" unit="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_rail" type="rail" drop="false" is_a_unlockable="false"/>
+    <WeaponMod based_on="wpn_fps_pis_beretta_sl_std" id="wpn_fps_pis_af2011_b_standard" unit="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_standard" type="upper_reciever" drop="false" is_a_unlockable="false"/>
+	<WeaponMod id="wpn_fps_pis_af2011_b_silver" based_on="wpn_fps_pis_beretta_sl_std" type="upper_reciever" unit="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_silver" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats recoil="1" concealment="-1"/>
+		<pcs/>
+	</WeaponMod>
+    <WeaponMod based_on="wpn_fps_pis_beretta_sl_std" id="wpn_fps_pis_af2011_b_il" unit="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il_white" type="extra" drop="false" is_a_unlockable="false"/>
+	<WeaponMod id="wpn_fps_pis_af2011_b_il_blu" based_on="wpn_fps_pis_beretta_sl_std" type="extra" unit="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il_blu" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+
+		<pcs/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_pis_af2011_b_il_grn" based_on="wpn_fps_pis_beretta_sl_std" type="extra" unit="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il_grn" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+
+		<pcs/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_pis_af2011_b_il_white" based_on="wpn_fps_pis_beretta_sl_std" type="extra" unit="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+
+		<pcs/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_pis_af2011_b_il_purple" based_on="wpn_fps_pis_beretta_sl_std" type="extra" unit="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il_purple" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+
+		<pcs/>
+	</WeaponMod>
+    <WeaponMod based_on="wpn_fps_upg_ns_pis_jungle" id="wpn_fps_pis_af2011_parts" texture_bundle_folder="mods" unit="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_parts" type="barrel_ext" drop="true" is_a_unlockable="true"/>
+    <WeaponMod based_on="wpn_fps_pis_beretta_m_std" id="wpn_fps_pis_af2011_m_standard" unit="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_m_standard" type="magazine" drop="false" is_a_unlockable="false"/>
+    <WeaponMod based_on="wpn_fps_pis_beretta_m_std" texture_bundle_folder="mods" id="wpn_fps_pis_af2011_m_ext" unit="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_m_ext" type="magazine" drop="true" is_a_unlockable="true">
+		<stats extra_ammo="5" concealment="-1"/>
+		<pcs/>
+	</WeaponMod>
+    <WeaponMod based_on="wpn_fps_upg_ns_pis_ipsccomp" id="wpn_fps_pis_af2011_comp" texture_bundle_folder="mods" unit="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_comp" type="barrel_ext" drop="true" is_a_unlockable="true"/>
+    <WeaponMod based_on="wpn_fps_upg_ns_pis_small" id="wpn_fps_pis_af2011_rail" texture_bundle_folder="mods" unit="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_rail" type="barrel_ext" drop="true" is_a_unlockable="true"/>
+	<WeaponMod id="wpn_fps_pis_af2011_a_uno" based_on="wpn_fps_upg_a_custom" has_description="true" type="ammo" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats damage="-25" spread="5" total_ammo_mod="7"/>
+		<custom_stats rays="1"  armor_piercing_add="0" can_shoot_through_enemy="false" ammo_pickup_min_mul = "1" ammo_pickup_max_mul = "1.9" can_shoot_through_shield="false" can_shoot_through_wall="false"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_pis_af2011_a_shield" based_on="wpn_fps_upg_a_custom"has_description="true" type="ammo" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats damage="25" spread="2" total_ammo_mod="-3" recoil="-12"/>
+		<custom_stats rays="2" armor_piercing_add="1" ammo_pickup_min_mul = "0.5" ammo_pickup_max_mul = "0.3" can_shoot_through_enemy="true" can_shoot_through_shield="true" can_shoot_through_wall="true"/>
+	</WeaponMod>
+
+
+
+    
+    <Weapon id="af2011" fac_id="wpn_fps_pis_af2011" based_on="b92fs" unlock_level="50" CLIP_AMMO_MAX="10"damage_near="90000" damage_far="900000"rays="2"  NR_CLIPS_MAX="7"  weapon_hold ="glock" lock_slide="true" unit="units/mods/weapons/wpn_fps_pis_af2011/wpn_fps_pis_af2011" texture_bundle_folder="mods" global_value="af2011" >
+    <fire_mode_data fire_rate="0.166"/>
+    <sounds fire="c45_fire"/>
+  <use_data align_place="right_hand"/>
+    <stats damage="90" spread="16" recoil="16"concealment="28"/>
+
+
+
+
+        
+    
+        <optional_types>
+            <value_node value="barrel_ext"/>
+            <value_node value="gadget"/>
+        </optional_types>
+        
+        <default_blueprint>
+
+     <value_node value="wpn_fps_pis_af2011_body_standard"/> <!-- body -->
+            <value_node value="wpn_fps_pis_af2011_b_il"/> <!-- barrel -->
+            <value_node value="wpn_fps_pis_af2011_parts"/> <!-- body -->
+            <value_node value="wpn_fps_pis_af2011_b_standard"/> <!-- barrel -->
+            <value_node value="wpn_fps_pis_af2011_g_standard"/> <!-- barrel -->
+            <value_node value="wpn_fps_pis_af2011_m_standard"/> <!-- magazine -->
+            <value_node value="wpn_fps_pis_beretta_b_std"/> <!-- barrel -->
+
+        </default_blueprint>
+        
+        
+        <uses_parts>
+            <value_node value="wpn_fps_pis_af2011_body_standard"/> <!-- body -->
+            <value_node value="wpn_fps_pis_af2011_parts"/> <!-- body -->
+            <value_node value="wpn_fps_pis_af2011_b_il"/> <!-- barrel -->
+            <value_node value="wpn_fps_pis_af2011_rail"/> <!-- body -->
+            <value_node value="wpn_fps_pis_af2011_g_standard"/> <!-- barrel -->
+            <value_node value="wpn_fps_pis_af2011_g_wood"/> <!-- barrel -->
+            <value_node value="wpn_fps_pis_af2011_g_bling"/> <!-- barrel -->
+            <value_node value="wpn_fps_pis_af2011_b_standard"/> <!-- barrel -->
+            <value_node value="wpn_fps_pis_af2011_b_silver"/> <!-- barrel -->
+            <value_node value="wpn_fps_pis_af2011_a_uno"/> <!-- barrel -->
+            <value_node value="wpn_fps_pis_af2011_a_shield"/> <!-- barrel -->
+            <value_node value="wpn_fps_pis_af2011_m_standard"/> <!-- magazine -->
+            <value_node value="wpn_fps_pis_af2011_m_ext"/> <!-- magazine -->
+            <value_node value="wpn_fps_pis_beretta_b_std"/> <!-- magazine -->
+            <value_node value="wpn_fps_pis_af2011_parts"/> <!-- barrel_ext -->
+            <value_node value="wpn_fps_pis_af2011_rail"/> <!-- barrel_ext -->
+            <value_node value="wpn_fps_pis_af2011_b_il_white"/> <!-- barrel -->
+            <value_node value="wpn_fps_pis_af2011_b_il_purple"/> <!-- barrel -->
+            <value_node value="wpn_fps_pis_af2011_b_il_blu"/> <!-- barrel -->
+            <value_node value="wpn_fps_pis_af2011_b_il_grn"/> <!-- barrel -->
+            <value_node value="wpn_fps_upg_o_rmr"/> <!-- gadget -->
+
+      
+
+            <value_node value="wpn_fps_upg_fl_pis_laser"/> <!-- gadget -->
+            <value_node value="wpn_fps_upg_fl_pis_tlr1"/> <!-- gadget -->
+            <value_node value="wpn_fps_upg_fl_pis_crimson"/> <!-- gadget -->
+            <value_node value="wpn_fps_upg_fl_pis_x400v"/> <!-- gadget -->
+            <value_node value="wpn_fps_upg_fl_pis_m3x"/> <!-- gadget -->
+
+ 
+
+
+
+        </uses_parts>
+        <!-- This section is every possible item that can be attached to your gun, including the items from the section above -->
+        <!-- Get a list of attachments here: http://wiki.lastbullet.net/Payday_2/Weapon_Mods -->
+  
+        <animations reload_name_id="glock" equip_id="equip_glock" weapon_hold ="deagle" recoil_steelsight="true" lock_slide="true">
+        </animations>
+
+        
+    </Weapon>
+
+
+
+
+
+<WeaponNew unlock_level="32">
+		<weapon id="x_af2011" based_on="x_b92fs"  has_magazine="true" use_shotgun_reload="false"   damage_near="90000" damage_far="900000" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="4" rays="2" weapon_hold ="x_deagle" lock_slide="true" texture_bundle_folder="mods" global_value="af2011">
+    <stats damage="90" spread="16" recoil="17"concealment="26"/>
+			<fire_mode_data fire_rate="0.166"/>
+    <sounds fire="c45_fire"/>
+			<animations reload_name_id="x_deagle" recoil_steelsight="true" weapon_hold ="x_deagle" has_steelsight_stance="true" lock_slide="true" />
+		</weapon>
+        <factory id="wpn_fps_pis_x_af2011" unit="units/mods/weapons/wpn_fps_pis_x_af2011/wpn_fps_pis_x_af2011">
+			<optional_types>
+				<value_node value="barrel_ext"/>
+				<value_node value="gadget"/>
+			</optional_types>
+			<default_blueprint>
+            <value_node value="wpn_fps_pis_af2011_body_standard"/> <!-- body -->
+            <value_node value="wpn_fps_pis_af2011_b_il"/> <!-- barrel -->
+            <value_node value="wpn_fps_pis_af2011_parts"/> <!-- body -->
+            <value_node value="wpn_fps_pis_af2011_b_standard"/> <!-- barrel -->
+            <value_node value="wpn_fps_pis_af2011_g_standard"/> <!-- barrel -->
+            <value_node value="wpn_fps_pis_af2011_m_standard"/> <!-- magazine -->
+            <value_node value="wpn_fps_pis_beretta_b_std"/> <!-- barrel -->
+			</default_blueprint>
+			<uses_parts>
+            <value_node value="wpn_fps_pis_af2011_body_standard"/> <!-- body -->
+            <value_node value="wpn_fps_pis_af2011_rail"/> <!-- body -->
+            <value_node value="wpn_fps_pis_af2011_a_uno"/> <!-- barrel -->
+            <value_node value="wpn_fps_pis_af2011_parts"/> <!-- body -->
+            <value_node value="wpn_fps_pis_af2011_g_wood"/> <!-- barrel -->
+            <value_node value="wpn_fps_pis_af2011_b_il_white"/> <!-- barrel -->
+            <value_node value="wpn_fps_pis_af2011_b_il_purple"/> <!-- barrel -->
+            <value_node value="wpn_fps_pis_af2011_b_il_grn"/> <!-- barrel -->
+            <value_node value="wpn_fps_pis_af2011_b_silver"/> <!-- body -->
+           <value_node value="wpn_fps_pis_af2011_g_bling"/> <!-- barrel -->
+            <value_node value="wpn_fps_pis_af2011_g_standard"/> <!-- barrel -->
+            <value_node value="wpn_fps_pis_af2011_b_il"/> <!-- barrel -->
+            <value_node value="wpn_fps_pis_af2011_b_standard"/> <!-- barrel -->
+            <value_node value="wpn_fps_pis_af2011_m_standard"/> <!-- magazine -->
+            <value_node value="wpn_fps_pis_af2011_m_ext"/> <!-- magazine -->
+            <value_node value="wpn_fps_pis_beretta_b_std"/> <!-- magazine -->
+            <value_node value="wpn_fps_pis_af2011_parts"/> <!-- barrel_ext -->
+            <value_node value="wpn_fps_pis_af2011_rail"/> <!-- barrel_ext -->
+            <value_node value="wpn_fps_pis_af2011_b_il_blu"/> <!-- barrel -->
+      
+
+            <value_node value="wpn_fps_upg_fl_pis_laser"/> <!-- gadget -->
+            <value_node value="wpn_fps_upg_fl_pis_tlr1"/> <!-- gadget -->
+            <value_node value="wpn_fps_upg_fl_pis_crimson"/> <!-- gadget -->
+            <value_node value="wpn_fps_upg_fl_pis_x400v"/> <!-- gadget -->
+            <value_node value="wpn_fps_upg_fl_pis_m3x"/> <!-- gadget -->
+
+   
+
+			</uses_parts>
+		</factory>
+		<stance/>
+	</WeaponNew>
+
+    <AddFiles directory="assets">
+    <!-- This section adds specific files to the game -->
+    
+    <!-- main section -->
+        <cooked_physics path="units/mods/weapons/wpn_fps_pis_af2011/wpn_fps_pis_af2011"/>
+        <model path="units/mods/weapons/wpn_fps_pis_af2011/wpn_fps_pis_af2011"/>
+        <object path="units/mods/weapons/wpn_fps_pis_af2011/wpn_fps_pis_af2011"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_af2011/wpn_fps_pis_af2011"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_af2011/wpn_fps_pis_af2011_npc"/>
+
+        <cooked_physics path="units/mods/weapons/wpn_fps_pis_x_af2011/wpn_fps_pis_x_af2011"/>
+        <model path="units/mods/weapons/wpn_fps_pis_x_af2011/wpn_fps_pis_x_af2011"/>
+        <object path="units/mods/weapons/wpn_fps_pis_x_af2011/wpn_fps_pis_x_af2011"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_x_af2011/wpn_fps_pis_x_af2011"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_x_af2011/wpn_fps_pis_x_af2011_npc"/>
+        
+    <!-- body -->
+        <texture path="units/mods/weapons/wpn_fps_pis_af2011_pts/body_df"/>
+
+        <texture path="units/mods/weapons/wpn_fps_pis_af2011_pts/silver_df"/>
+
+        <texture path="units/mods/weapons/wpn_fps_pis_af2011_pts/bling_df"/>
+
+        <texture path="units/mods/weapons/wpn_fps_pis_af2011_pts/parts_df"/>
+
+        <texture path="units/mods/weapons/wpn_fps_pis_af2011_pts/grip_df"/>
+
+        <texture path="units/mods/weapons/wpn_fps_pis_af2011_pts/grip_nm"/>
+
+        <texture path="units/mods/weapons/wpn_fps_pis_af2011_pts/red"/>
+
+        <texture path="units/mods/weapons/wpn_fps_pis_af2011_pts/blu"/>
+
+        <texture path="units/mods/weapons/wpn_fps_pis_af2011_pts/grn"/>
+
+        <texture path="units/mods/weapons/wpn_fps_pis_af2011_pts/purple"/>
+
+        <texture path="units/mods/weapons/wpn_fps_pis_af2011_pts/white"/>
+
+        <texture path="units/mods/weapons/wpn_fps_pis_af2011_pts/rail_df"/>
+        <texture path="units/mods/weapons/wpn_fps_pis_af2011_pts/rail_nm"/>
+
+        <texture path="units/mods/weapons/wpn_fps_pis_af2011_pts/wood_df"/>
+        <texture path="units/mods/weapons/wpn_fps_pis_af2011_pts/wood_nm"/>
+
+        <texture path="units/mods/weapons/wpn_fps_pis_af2011_pts/body_nm"/>
+        <texture path="units/mods/weapons/wpn_fps_pis_af2011_pts/bling_nm"/>
+        
+        <cooked_physics path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_body_standard"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_body_standard"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_body_standard_thq"/>
+        <model path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_body_standard"/>
+        <object path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_body_standard"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_body_standard"/>
+
+        <cooked_physics path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_g_standard"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_g_standard"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_g_standard_thq"/>
+        <model path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_g_standard"/>
+        <object path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_g_standard"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_g_standard"/>
+
+        <cooked_physics path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_g_wood"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_g_wood"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_g_wood_thq"/>
+        <model path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_g_wood"/>
+        <object path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_g_wood"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_g_wood"/>
+
+        <cooked_physics path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_g_bling"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_g_bling"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_g_bling_thq"/>
+        <model path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_g_bling"/>
+        <object path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_g_bling"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_g_bling"/>
+
+<!-- tiny silencer -->
+        <texture path="units/mods/weapons/wpn_fps_pis_af2011_pts/smallsil_df"/>
+        <texture path="units/mods/weapons/wpn_fps_pis_af2011_pts/smallsil_nm"/>
+        
+        <cooked_physics path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_rail"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_rail"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_rail_thq"/>
+        <model path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_rail"/>
+        <object path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_rail"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_rail"/>
+ 
+  
+ <!-- why cant i hold all these bullets -->
+        <texture path="units/mods/weapons/wpn_fps_pis_af2011_pts/extmag_df"/>
+        <texture path="units/mods/weapons/wpn_fps_pis_af2011_pts/extmag_nm"/>
+        
+        <cooked_physics path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_m_ext"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_m_ext"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_m_ext_thq"/>
+        <model path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_m_ext"/>
+        <object path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_m_ext"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_m_ext"/>
+
+ <!-- sil -->
+        <texture path="units/mods/weapons/wpn_fps_pis_af2011_pts/sup_df"/>
+        <texture path="units/mods/weapons/wpn_fps_pis_af2011_pts/sup_nm"/>
+        
+        <cooked_physics path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_parts"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_parts"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_parts_thq"/>
+        <model path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_parts"/>
+        <object path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_parts"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_parts"/>
+
+ <!-- why is it still called snowflake compensator it's not even called blizzard anymore -->
+        <texture path="units/mods/weapons/wpn_fps_pis_af2011_pts/comp_df"/>
+        <texture path="units/mods/weapons/wpn_fps_pis_af2011_pts/comp_nm"/>
+        
+        <cooked_physics path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_comp"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_comp"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_comp_thq"/>
+        <model path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_comp"/>
+        <object path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_comp"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_comp"/>
+
+        
+   <!-- magazine -->
+        <texture path="units/mods/weapons/wpn_fps_pis_af2011_pts/mag_df"/>
+        <texture path="units/mods/weapons/wpn_fps_pis_af2011_pts/mag_nm"/>
+        
+        <cooked_physics path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_m_standard"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_m_standard"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_m_standard_thq"/>
+        <model path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_m_standard"/>
+        <object path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_m_standard"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_m_standard"/>
+
+        <cooked_physics path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_o_standard"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_o_standard"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_o_standard_thq"/>
+        <model path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_o_standard"/>
+        <object path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_o_standard"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_o_standard"/>
+        
+    <!-- barrel -->
+        <texture path="units/mods/weapons/wpn_fps_pis_af2011_pts/slide_df"/>
+        <texture path="units/mods/weapons/wpn_fps_pis_af2011_pts/slide_nm"/>
+        
+        <cooked_physics path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_standard"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_standard"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_standard_thq"/>
+        <model path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_standard"/>
+        <object path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_standard"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_standard"/>
+
+        <cooked_physics path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_silver"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_silver"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_silver_thq"/>
+        <model path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_silver"/>
+        <object path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_silver"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_silver"/>
+
+        <cooked_physics path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il_thq"/>
+        <model path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il"/>
+        <object path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il"/>
+
+        <cooked_physics path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il_blu"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il_blu"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il_blu_thq"/>
+        <model path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il_blu"/>
+        <object path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il_blu"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il_blu"/>
+
+        <cooked_physics path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il_grn"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il_grn"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il_grn_thq"/>
+        <model path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il_grn"/>
+        <object path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il_grn"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il_grn"/>
+
+        <cooked_physics path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il_purple"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il_purple"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il_purple_thq"/>
+        <model path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il_purple"/>
+        <object path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il_purple"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il_purple"/>
+
+
+     <cooked_physics path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il_white"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il_white"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il_white_thq"/>
+        <model path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il_white"/>
+        <object path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il_white"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_af2011_pts/wpn_fps_pis_af2011_b_il_white"/>
+
+
+    <!-- icon -->
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/af2011"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/x_af2011"/>
+    <!-- icon -->
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_af2011_comp"/>
+    <!-- icon -->
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_af2011_a_uno"/>
+    <!-- icon -->
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_af2011_a_shield"/>
+    <!-- icon -->
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_af2011_g_bling"/>
+    <!-- icon -->
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_af2011_g_wood"/>
+    <!-- icon -->
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_af2011_m_ext"/>
+    <!-- icon -->
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_af2011_b_silver"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_af2011_b_il_blu"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_af2011_b_il_grn"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_af2011_b_il_white"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_af2011_b_il_purple"/>
+    <!-- icon -->
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_af2011_parts"/>
+    <!-- icon -->
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_af2011_rail"/>
+        
+    </AddFiles>
+	<Hooks directory="hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
+		<hook file="attachmentpoints.lua" source_file="lib/tweak_data/weapontweakdata"/>
+	</Hooks>
+</table>

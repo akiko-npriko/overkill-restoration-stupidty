@@ -1,0 +1,2672 @@
+<mod name="A bunch of exclusive sets" author="Tangerine Paint" min_lib_ver="3.38">
+    <AssetUpdates id="46251" version="4.2" provider="modworkshop"/>
+	<Localization directory="loc" default="english.json"/>
+	<GlobalValue id="paint_sets" color="Color(0.6, 0.7, 0.4)"/>
+	
+<!-- DDM4 AMCAR -->
+
+	<WeaponMod id="wpn_fps_ass_amcar_body_ddm4" based_on="wpn_fps_m4_lower_reciever" unit="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_fg_ddm4" third_unit="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_fg_ddm4" a_obj="a_fg" type="exclusive_set" drop="false" is_a_unlockable="true" inherit_weapons="false" inherit_override="false" inherit_parts_forbids="false" inherit_parts_override="false" global_value="paint_sets" has_description="true" desc_id="bm_wp_wpn_fps_ass_amcar_body_ddm4_desc">
+		<stats damage="68" total_ammo_mod="-11" spread="10" reload="-3" recoil="-15" concealment="-1" extra_ammo="1"/>
+		<custom_stats ammo_pickup_max_mul = "0.23" ammo_pickup_min_mul="0.32" fire_rate_multiplier="1.195652173915"/>	<!-- fire_rate_multiplier="1.57142857143" ammo_pickup_max_mul = "0.68181818181" -->
+		<override>
+			<wpn_fps_upg_m4_s_standard_vanilla unit="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_s_ddm4" third_unit="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_s_ddm4"/>
+			<wpn_fps_upg_m4_s_adapter unit="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_s_adapter_ddm4" third_unit="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_s_adapter_ddm4"/>
+			<wpn_fps_upg_m4_g_standard_vanilla unit="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_g_ddm4" third_unit="units/pd2_dlc_joy/weapons/wpn_fps_smg_shepheard_pts/wpn_third_smg_shepheard_g_standard"/>
+
+			<wpn_fps_ass_m16_os_frontsight unit="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_o_ddm4" third_unit="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_o_ddm4" a_obj="a_o"/>		
+			<wpn_fps_amcar_bolt_standard unit="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_bolt_ddm4" third_unit="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_bolt_ddm4"/>
+			<wpn_fps_m4_uupg_draghandle unit="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_draghandle_ddm4"/>
+			<wpn_fps_m4_uupg_draghandle_vanilla unit="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_draghandle_ddm4"/>
+			<wpn_fps_m4_lower_reciever unit="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_ddm4_lower" third_unit="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_ddm4_lower"/>
+			<wpn_fps_amcar_uupg_body_upperreciever unit="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_ddm4_upper" third_unit="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_ddm4_upper" a_obj="a_body">
+				<adds>
+					<value_node value="wpn_fps_m4_uupg_draghandle"/>
+					<value_node value="wpn_fps_ass_m16_os_frontsight"/>
+				</adds>
+			</wpn_fps_amcar_uupg_body_upperreciever>
+			<wpn_fps_m4_upper_reciever_round_vanilla unit="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_ddm4_upper" third_unit="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_ddm4_upper" a_obj="a_body"/>
+			<wpn_fps_m4_upper_reciever_round unit="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_ddm4_upper" third_unit="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_ddm4_upper" a_obj="a_body"/>
+			<wpn_fps_amcar_uupg_fg_amcar unit="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_fg_ddm4_vg_dummy" third_unit="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_fg_ddm4_vg_dummy"/>
+
+			<wpn_fps_upg_m4_m_straight_vanilla unit="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_m_ddm4" third_unit="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_m_ddm4"/>
+			<wpn_fps_m4_uupg_m_std unit="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_m_ddm4_ext" third_unit="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_m_ddm4_ext"/>
+			<wpn_fps_m4_uupg_b_medium_vanilla unit="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_b_ddm4" third_unit="units/pd2_dlc_savi/weapons/wpn_third_snp_victor_pts/wpn_third_snp_victor_b_standard" a_obj="a_fg"/>
+			<wpn_fps_addon_ris unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+			<wpn_fps_m4_uupg_fg_rail_ext unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+			<wpn_fps_smg_shepheard_ns_standard unit="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_ns_ddm4" parent="barrel" a_obj="a_ns"/>
+			
+			<wpn_fps_snp_tti_vg_standard parent="exclusive_set" a_obj="a_vg_tti"/>			
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="exclusive_set" a_obj="a_fl_shepheard"/>
+        	<wpn_fps_upg_fl_ass_smg_sho_surefire parent="exclusive_set" a_obj="a_fl_shepheard"/>
+        	<wpn_fps_upg_fl_ass_peq15 parent="exclusive_set" a_obj="a_fl_shepheard"/>
+        	<wpn_fps_upg_fl_ass_laser parent="exclusive_set" a_obj="a_fl_shepheard"/>
+        	<wpn_fps_upg_fl_ass_utg parent="exclusive_set" a_obj="a_fl_shepheard"/>
+        	<wpn_fps_upg_fl_dbal_laser parent="exclusive_set" a_obj="a_fl_shepheard"/>
+		</override>
+		<adds>			
+			<value_node value="wpn_fps_smg_shepheard_ns_standard"/>	
+			<value_node value="wpn_fps_ass_amcar_ddm4_sound"/>
+			<value_node value="wpn_fps_snp_tti_vg_standard"/>				
+		</adds>
+		<forbids>
+			<value_node value="wpn_fps_upg_ass_m4_b_beowulf"/>	
+			<value_node value="wpn_fps_m4_uupg_b_medium"/>	
+			<value_node value="wpn_fps_m4_uupg_b_long"/>	
+			<value_node value="wpn_fps_m4_uupg_b_short"/>	
+			<value_node value="wpn_fps_m4_uupg_b_sd"/>
+
+			<value_node value="wpn_fps_uupg_fg_radian"/>	
+			<value_node value="wpn_fps_m4_uupg_fg_lr300"/>	
+			<value_node value="wpn_fps_upg_fg_jp"/>	
+			<value_node value="wpn_fps_upg_fg_smr"/>	
+			<value_node value="wpn_fps_upg_ass_m4_fg_moe"/>	
+			<value_node value="wpn_fps_upg_ass_m4_fg_lvoa"/>	
+			
+            <value_node value="wpn_fps_upg_m4_g_hgrip"/>
+            <value_node value="wpn_fps_upg_m4_g_mgrip"/>
+			<value_node value="wpn_fps_upg_m4_g_ergo"/>
+			<value_node value="wpn_fps_upg_m4_g_sniper"/>
+			<value_node value="wpn_fps_snp_tti_g_grippy"/>
+			<value_node value="wpn_fps_sho_sko12_body_grip"/>
+			<value_node value="wpn_fps_upg_g_m4_surgeon"/>
+			<value_node value="wpn_fps_snp_victor_g_mod3"/>
+			<value_node value="wpn_fps_m4_uupg_g_billet"/>		
+			
+			<value_node value="wpn_fps_m4_uupg_upper_radian"/>	
+			<value_node value="wpn_fps_m4_uupg_lower_radian"/>	
+			<value_node value="wpn_fps_upg_ass_m4_upper_reciever_ballos"/>	
+			<value_node value="wpn_fps_upg_ass_m4_upper_reciever_core"/>	
+			<value_node value="wpn_fps_upg_ass_m4_lower_reciever_core"/>	
+			<value_node value="wpn_fps_m4_upper_reciever_edge"/>						
+		</forbids>
+		<pcs/>
+		<weapons>
+			<value_node value="wpn_fps_ass_amcar"/>
+		</weapons>
+	</WeaponMod>	
+
+	<WeaponMod id="wpn_fps_ass_amcar_ddm4_sound" based_on="wpn_fps_lmg_hcar_ck_switch" inherit_adds="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" global_value="paint_sets" type="ammo" unit="units/pd2_dlc_grv/weapons/wpn_fps_ass_flint/wpn_fps_ass_flint" third_unit="units/pd2_dlc_grv/weapons/wpn_fps_ass_flint/wpn_fps_ass_flint" internal_part="true" drop="false" texture_bundle_folder="mods" is_a_unlockable="false">
+	<custom_stats>
+		<sounds fire="flint_fire_single" fire_single="flint_fire_single" stop_fire="flint_stop" fire_auto="flint_fire"/>
+	</custom_stats>
+		<weapons>
+			<value_node value="wpn_fps_ass_amcar"/>
+		</weapons>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_amcar_fg_ddm4" based_on="wpn_fps_m4_uupg_fg_rail" type="foregrip_ext" unit="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_fg_ddm4" third_unit="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_fg_ddm4" drop="false" texture_bundle_folder="mods" is_a_unlockable="false" global_value="paint_sets">
+		<forbids>
+			<value_node value="wpn_fps_m4_uupg_fg_rail_ext"/>			
+		</forbids>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_amcar_fg_railed_ddm4" based_on="wpn_fps_m16_fg_railed" unit="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_fg_railed_ddm4" type="foregrip_ext" a_obj="a_fg" drop="false" texture_bundle_folder="mods" is_a_unlockable="false" global_value="paint_sets">
+		<stats/>
+	</WeaponMod>
+
+<!-- 5.56x45mm Gecko -->
+
+	<WeaponMod id="wpn_fps_ass_galil_body_intermediate" based_on="wpn_fps_ass_galil_body_standard" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" type="exclusive_set" drop="false" is_a_unlockable="true" inherit_weapons="false" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" global_value="paint_sets" has_description="true" desc_id="bm_wp_wpn_fps_ass_galil_body_intermediate_desc">
+		<stats damage="42" total_ammo_mod="-11" spread="1" reload="0" recoil="-10" concealment="-2" extra_ammo="0"/>
+		<custom_stats ammo_offset="-10" ammo_pickup_max_mul = "0.4909090909" ammo_pickup_min_mul="0.6" fire_rate_multiplier="0.66390532544"/>	<!-- fire_rate_multiplier="0.66390532544" fire_rate_multiplier="1.57142857143" ammo_pickup_max_mul = "0.68181818181" -->
+		<adds>
+		<!--<value_node value="wpn_fps_ass_galil_body_magwell"/>-->
+			<value_node value="wpn_fps_upg_galil_s_adapter"/>
+			<value_node value="wpn_fps_ass_galil_body_intermediate_sound"/>
+		</adds>
+		<override>
+			<wpn_fps_shot_r870_ris_special unit="units/pd2_dlc_grv/weapons/wpn_fps_snp_siltstone_pts/wpn_fps_snp_siltstone_o_scopemount" third_unit="units/pd2_dlc_grv/weapons/wpn_fps_snp_siltstone_pts/wpn_third_snp_siltstone_o_scopemount"/>
+			<wpn_fps_ass_galil_body_standard unit="units/mods/weapons/wpn_fps_ass_galil_intermediate/wpn_fps_ass_galil_body_intermediate_new"/>
+			<wpn_fps_ass_galil_m_standard unit="units/mods/weapons/wpn_fps_ass_galil_intermediate/wpn_fps_ass_galil_m_intermediate_new" third_unit="units/mods/weapons/wpn_third_ass_galil_intermediate/wpn_third_ass_galil_m_intermediate_new"/>
+			<wpn_fps_ass_flint_body_upperreceiver unit="units/mods/weapons/wpn_fps_ass_galil_intermediate/wpn_fps_ass_galil_body_magwell" third_unit="units/mods/weapons/wpn_third_ass_galil_intermediate/wpn_third_ass_galil_body_magwell"/>
+			<wpn_fps_snp_victor_s_adapter unit="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_s_adapter_ddm4" third_unit="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_s_adapter_ddm4"/>
+			<wpn_fps_ass_galil_s_standard unit="units/pd2_dlc_gage_jobs/weapons/wpn_fps_upg_m4_s_mk46/wpn_fps_upg_m4_s_mk46" third_unit="units/pd2_dlc_gage_jobs/weapons/wpn_fps_upg_m4_s_mk46/wpn_third_upg_m4_s_mk46"/>
+		<!--<wpn_fps_ass_galil_s_standard unit="units/pd2_dlc_spa/weapons/wpn_fps_snp_tti_pts/wpn_fps_snp_tti_s_vltor" third_unit="units/pd2_dlc_spa/weapons/wpn_third_snp_tti_pts/wpn_third_snp_tti_s_vltor"/>-->
+			<wpn_fps_ass_galil_fg_standard unit="units/mods/weapons/wpn_fps_ass_galil_intermediate/wpn_fps_ass_galil_fg_intermediate" third_unit="units/mods/weapons/wpn_third_ass_galil_intermediate/wpn_third_ass_galil_fg_intermediate"/>
+		</override>
+		<forbids>
+			<value_node value="wpn_fps_ass_galil_s_fab"/>		
+			<value_node value="wpn_fps_ass_galil_s_light"/>		
+			<value_node value="wpn_fps_ass_galil_s_plastic"/>		
+			<value_node value="wpn_fps_ass_galil_s_skeletal"/>		
+			<value_node value="wpn_fps_ass_galil_s_sniper"/>		
+			<value_node value="wpn_fps_ass_galil_s_wood"/>			
+
+			<value_node value="wpn_fps_ass_galil_fg_fab"/>		
+			<value_node value="wpn_fps_ass_galil_fg_mar"/>		
+			<value_node value="wpn_fps_ass_galil_fg_sar"/>			
+			<value_node value="wpn_fps_ass_galil_fg_sniper"/>			
+		</forbids>
+		<pcs/>
+		<weapons>
+			<value_node value="wpn_fps_ass_galil"/>
+		</weapons>
+	</WeaponMod>	
+
+	<WeaponMod id="wpn_fps_upg_galil_s_adapter" based_on="wpn_fps_upg_m4_s_adapter" type="extra_stock" a_obj="a_s" unit="units/mods/weapons/wpn_fps_upg_galil_s_adapter/wpn_fps_upg_galil_s_adapter" third_unit="units/mods/weapons/wpn_fps_upg_galil_s_adapter/wpn_third_upg_galil_s_adapter" drop="false" is_a_unlockable="false" hidden="true" inherit_weapons="false" inherit_adds="false" inherit_parts_override="false" inherit_parts_forbids="false" texture_bundle_folder="mods">
+		<adds/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_galil_body_magwell" based_on="wpn_fps_m4_lower_reciever" type="lower_reciever" a_obj="a_body" unit="units/mods/weapons/wpn_fps_ass_galil_intermediate/wpn_fps_ass_galil_body_magwell" third_unit="units/mods/weapons/wpn_third_ass_galil_intermediate/wpn_third_ass_galil_body_magwell" drop="false" texture_bundle_folder="mods" is_a_unlockable="false" global_value="paint_sets">
+		<weapons>
+			<value_node value="wpn_fps_ass_galil"/>
+		</weapons>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_galil_body_intermediate_sound" based_on="wpn_fps_ass_galil_body_standard" inherit_adds="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" type="ammo" unit="units/payday2/weapons/wpn_fps_ass_akm/wpn_fps_ass_akm" third_unit="units/payday2/weapons/wpn_fps_ass_akm/wpn_fps_ass_akm" drop="false" texture_bundle_folder="mods" is_a_unlockable="false">
+	<custom_stats>
+		<sounds fire_single="akm_fire_single" stop_fire="akm_stop" fire_auto="akm_fire"/>
+	</custom_stats>
+		<weapons>
+			<value_node value="wpn_fps_ass_galil"/>
+		</weapons>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_galil_body_intermediate_accurate" based_on="wpn_fps_ass_galil_body_standard" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" type="exclusive_set" drop="false" is_a_unlockable="true" inherit_weapons="false" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" global_value="paint_sets" has_description="true" desc_id="bm_wp_wpn_fps_ass_galil_body_intermediate_desc" hidden="true">
+		<stats damage="-2" total_ammo_mod="-0" spread="-1" reload="1" recoil="1" concealment="1" extra_ammo="0"/>
+		<override>
+			<wpn_fps_shot_r870_ris_special unit="units/pd2_dlc_grv/weapons/wpn_fps_snp_siltstone_pts/wpn_fps_snp_siltstone_o_scopemount" third_unit="units/pd2_dlc_grv/weapons/wpn_fps_snp_siltstone_pts/wpn_third_snp_siltstone_o_scopemount"/>
+			<wpn_fps_ass_galil_body_standard unit="units/mods/weapons/wpn_fps_ass_galil_intermediate/wpn_fps_ass_galil_body_intermediate_new"/>
+			<wpn_fps_ass_galil_m_standard unit="units/mods/weapons/wpn_fps_ass_galil_intermediate/wpn_fps_ass_galil_m_intermediate_new" third_unit="units/mods/weapons/wpn_third_ass_galil_intermediate/wpn_third_ass_galil_m_intermediate_new"/>
+		<!--<wpn_fps_ass_galil_s_standard unit="units/pd2_dlc_spa/weapons/wpn_fps_snp_tti_pts/wpn_fps_snp_tti_s_vltor" third_unit="units/pd2_dlc_spa/weapons/wpn_third_snp_tti_pts/wpn_third_snp_tti_s_vltor"/>-->
+		</override>
+		<pcs/>
+		<weapons>
+			<value_node value="wpn_fps_ass_galil"/>
+		</weapons>
+	</WeaponMod>	
+
+<!-- Two-tone CAR-4 -->
+
+	<WeaponMod id="wpn_fps_ass_m4_body_tantone" based_on="wpn_fps_m4_lower_reciever" unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_body_ar45_dummy" third_unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_body_ar45_dummy" type="exclusive_set" drop="false" is_a_unlockable="true" inherit_weapons="false" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" global_value="paint_sets" has_description="true" desc_id="bm_wp_wpn_fps_ass_m4_body_tantone_desc">
+		<stats damage="5" total_ammo_mod="0" spread="-2" reload="-1" recoil="4" concealment="-5" extra_ammo="0"/>
+		<custom_stats ammo_pickup_max_mul = "1" ammo_pickup_min_mul="1" fire_rate_multiplier="1.3333333333333"/>	<!-- fire_rate_multiplier="1.11166667" ammo_pickup_max_mul = "0.68181818181" -->
+		<override>
+			<wpn_fps_upg_m4_s_standard_vanilla unit="units/mods/weapons/wpn_fps_ass_m4_tantone/wpn_fps_ass_m4_s_tantone" third_unit="units/pd2_dlc_spa/weapons/wpn_third_snp_tti_pts/wpn_third_snp_tti_s_vltor"/>
+			<wpn_fps_upg_m4_s_adapter unit="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_s_adapter_ddm4" third_unit="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_s_adapter_ddm4"/>
+			<wpn_fps_upg_m4_g_standard_vanilla unit="units/mods/weapons/wpn_fps_ass_m4_tantone/wpn_fps_ass_m4_g_tantone" />
+
+			<wpn_fps_m4_uupg_o_flipup unit="units/mods/weapons/wpn_fps_ass_m4_tantone/wpn_fps_upg_o_mbus">		
+				<stance_mod>
+					<wpn_fps_ass_m4 translation="0 0 -0.45"  rotation="0 -0 -0 1"/>
+				</stance_mod>
+				<override>
+					<wpn_fps_upg_o_mbus_down unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+				</override>
+			</wpn_fps_m4_uupg_o_flipup>
+			<wpn_fps_upg_o_xpsg33_magnifier>
+				<forbids>
+					<value_node value="wpn_fps_upg_o_mbus_down"/>
+				</forbids>
+			</wpn_fps_upg_o_xpsg33_magnifier>
+			<wpn_fps_upg_o_sig>
+				<forbids>
+					<value_node value="wpn_fps_upg_o_mbus_down"/>
+				</forbids>
+			</wpn_fps_upg_o_sig>
+
+			<wpn_fps_amcar_bolt_standard unit="units/payday2/weapons/wpn_fps_ass_m4_pts/wpn_fps_m4_bolt_edge"/>
+			<wpn_fps_m4_uupg_draghandle unit="units/pd2_dlc_akm4_modpack/weapons/wpn_fps_m4_uupg_draghandle_core/wpn_fps_m4_uupg_draghandle_core" third_unit="units/pd2_dlc_akm4_modpack/weapons/wpn_third_m4_uupg_draghandle_core/wpn_third_m4_uupg_draghandle_core"/>
+			<wpn_fps_m4_lower_reciever unit="units/mods/weapons/wpn_fps_ass_m4_tantone/wpn_fps_ass_m4_tantone_lower"/>
+			<wpn_fps_m4_upper_reciever_round unit="units/mods/weapons/wpn_fps_ass_m4_tantone/wpn_fps_ass_m4_tantone_upper" third_unit="units/mods/weapons/wpn_third_ass_m4_tantone/wpn_third_ass_m4_tantone_upper">
+				<override>
+					<wpn_fps_amcar_bolt_standard unit="units/payday2/weapons/wpn_fps_ass_m4_pts/wpn_fps_m4_bolt_edge"/>
+				</override>
+			</wpn_fps_m4_upper_reciever_round>
+			<wpn_fps_m4_uupg_fg_rail unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+
+			<wpn_fps_m4_uupg_m_std_vanilla unit="units/mods/weapons/wpn_fps_ass_m4_tantone/wpn_fps_ass_m4_m_tantone_pmag" third_unit="units/payday2/weapons/wpn_third_upg_m4_reusable/wpn_third_upg_m4_m_pmag"/>
+			<wpn_fps_m4_uupg_b_medium_vanilla unit="units/mods/weapons/wpn_fps_ass_m4_tantone/wpn_fps_upg_m4_b_piston" third_unit="units/mods/weapons/wpn_third_ass_m4_tantone/wpn_third_upg_m4_b_piston"/>
+			<wpn_fps_m4_uupg_fg_rail_ext unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+
+			<wpn_fps_m4_uupg_b_sd unit="units/mods/weapons/wpn_fps_ass_m16_mcbravo/wpn_fps_ass_m16_b_mcbravo" third_unit="units/mods/weapons/wpn_third_ass_m16_mcbravo/wpn_third_ass_m16_b_mcbravo" a_obj="a_fg">
+				<adds>
+					<value_node value="wpn_fps_m4_upg_ns_mk12"/>				
+				</adds>
+				<override>
+					<wpn_fps_m4_upg_ns_mk12 unit="units/pd2_dlc_savi/weapons/wpn_fps_snp_victor_pts/wpn_fps_snp_victor_ns_hera_supp" third_unit="units/pd2_dlc_savi/weapons/wpn_third_snp_victor_pts/wpn_third_snp_victor_ns_hera_supp"/>
+				</override>
+			</wpn_fps_m4_uupg_b_sd>
+		</override>
+		<adds>		
+			<value_node value="wpn_fps_ass_m4_ns_tantone"/>
+			<value_node value="wpn_fps_ass_m4_tantone_sound"/>
+			<value_node value="wpn_fps_ass_m4_fg_tantone"/>
+			<value_node value="wpn_fps_upg_o_mbus_down"/>			
+		</adds>
+		<forbids>
+			<value_node value="wpn_fps_upg_ass_m4_b_beowulf"/>	
+			<value_node value="wpn_fps_m4_uupg_b_medium"/>	
+			<value_node value="wpn_fps_m4_uupg_b_long"/>	
+			<value_node value="wpn_fps_m4_uupg_b_short"/>	
+
+			<value_node value="wpn_fps_uupg_fg_radian"/>	
+			<value_node value="wpn_fps_m4_uupg_fg_lr300"/>	
+			<value_node value="wpn_fps_upg_fg_jp"/>	
+			<value_node value="wpn_fps_upg_fg_smr"/>	
+			<value_node value="wpn_fps_upg_ass_m4_fg_moe"/>	
+			<value_node value="wpn_fps_upg_ass_m4_fg_lvoa"/>	
+			
+            <value_node value="wpn_fps_upg_m4_g_hgrip"/>
+            <value_node value="wpn_fps_upg_m4_g_mgrip"/>
+			<value_node value="wpn_fps_upg_m4_g_ergo"/>
+			<value_node value="wpn_fps_upg_m4_g_sniper"/>
+			<value_node value="wpn_fps_snp_tti_g_grippy"/>
+			<value_node value="wpn_fps_sho_sko12_body_grip"/>
+			<value_node value="wpn_fps_upg_g_m4_surgeon"/>
+			<value_node value="wpn_fps_snp_victor_g_mod3"/>
+			<value_node value="wpn_fps_m4_uupg_g_billet"/>		
+			
+			<value_node value="wpn_fps_m4_uupg_upper_radian"/>	
+			<value_node value="wpn_fps_m4_uupg_lower_radian"/>	
+			<value_node value="wpn_fps_upg_ass_m4_upper_reciever_ballos"/>	
+			<value_node value="wpn_fps_upg_ass_m4_upper_reciever_core"/>	
+			<value_node value="wpn_fps_upg_ass_m4_lower_reciever_core"/>	
+			<value_node value="wpn_fps_m4_upper_reciever_edge"/>		
+
+		<!--<value_node value="wpn_fps_upg_m4_m_straight"/>			
+			<value_node value="wpn_fps_upg_m4_m_l5"/>	
+			<value_node value="wpn_fps_upg_m4_m_pmag"/>	
+			<value_node value="wpn_fps_upg_m4_m_straight"/>	
+			<value_node value="wpn_fps_upg_m4_m_quad"/>	
+			<value_node value="wpn_fps_ass_l85a2_m_emag"/>	
+			<value_node value="wpn_fps_m4_upg_m_quick"/>	
+			<value_node value="wpn_fps_m4_uupg_m_strike"/>-->
+		</forbids>
+		<pcs/>
+		<weapons>
+			<value_node value="wpn_fps_ass_m4"/>
+		</weapons>
+	</WeaponMod>	
+
+	<WeaponMod id="wpn_fps_tantone_b_sd" based_on="wpn_fps_m4_upg_ns_mk12" unit="units/pd2_crimefest_2014/oct22/weapons/wpn_fps_upg_ns_pis_large_kac/wpn_fps_upg_ns_pis_large_kac" third_unit="units/pd2_crimefest_2014/oct22/weapons/wpn_fps_upg_ns_pis_large_kac/wpn_third_upg_ns_pis_large_kac" inherit_adds="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" global_value="paint_sets" type="barrel_ext" a_obj="a_ns" drop="false" texture_bundle_folder="mods" is_a_unlockable="false">
+		<weapons>
+			<value_node value="wpn_fps_ass_m4"/>
+		</weapons>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_m4_tantone_sound" based_on="wpn_fps_lmg_hcar_ck_switch" inherit_adds="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" global_value="paint_sets" type="ammo" unit="units/pd2_dlc_tar/weapons/wpn_fps_ass_komodo/wpn_fps_ass_komodo" third_unit="units/pd2_dlc_tar/weapons/wpn_fps_ass_komodo/wpn_fps_ass_komodo" internal_part="true" drop="false" texture_bundle_folder="mods" is_a_unlockable="false">
+		<custom_stats>
+			<sounds fire="komodo_fire_fire_single" fire_single="komodo_fire_fire_single" stop_fire="komodo_stop" fire_auto="komodo_fire"/>
+		</custom_stats>
+		<weapons>
+			<value_node value="wpn_fps_ass_m4"/>
+		</weapons>
+	</WeaponMod>	
+
+	<WeaponMod id="wpn_fps_ass_m4_fg_tantone" based_on="wpn_fps_m4_uupg_fg_rail" type="foregrip_ext" a_obj="a_fg" unit="units/mods/weapons/wpn_fps_ass_m4_tantone/wpn_fps_ass_m4_fg_tantone" third_unit="units/mods/weapons/wpn_third_ass_m4_tantone/wpn_third_ass_m4_fg_tantone" drop="false" texture_bundle_folder="mods" is_a_unlockable="false" global_value="paint_sets"/>
+
+<!--<WeaponMod id="wpn_fps_ass_m4_fg_tantone_mlok" based_on="wpn_fps_m4_uupg_fg_rail_ext" type="foregrip_ext2" a_obj="a_fg" unit="units/mods/weapons/wpn_fps_ass_m4_tantone/wpn_fps_ass_m4_fg_tantone_mlok" third_unit="units/mods/weapons/wpn_third_ass_m4_tantone/wpn_third_ass_m4_fg_tantone_mlok" drop="false" texture_bundle_folder="mods" is_a_unlockable="false" global_value="paint_sets"/>-->
+
+	<WeaponMod id="wpn_fps_ass_m4_ns_tantone" based_on="wpn_fps_ass_komodo_ns" type="barrel_ext" a_obj="a_ns" parent="barrel" unit="units/mods/weapons/wpn_fps_ass_m4_tantone/wpn_fps_ass_m4_ns_tantone" drop="false" texture_bundle_folder="mods" is_a_unlockable="false" global_value="paint_sets"/>
+
+	<WeaponMod id="wpn_fps_upg_o_mbus_down" based_on="wpn_fps_snp_victor_o_down" unit="units/mods/weapons/wpn_fps_ass_m4_tantone/wpn_fps_upg_o_mbus_down" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" type="extra" drop="false" is_a_unlockable="false" inherit_override="true" a_obj="a_o" hidden="true" global_value="paint_sets">
+		<stats damage="0" concealment="0" recoil="0" spread="0"/>
+	</WeaponMod>
+
+<!-- HK33 -->
+
+	<WeaponMod id="wpn_fps_ass_g3_body_hk33" based_on="wpn_fps_smg_mp5_fg_mp5a4" unit="units/mods/weapons/wpn_fps_ass_g3_hk33/wpn_fps_ass_g3_body_dummy_hk33" third_unit="units/mods/weapons/wpn_fps_ass_g3_hk33/wpn_fps_ass_g3_body_dummy_hk33" type="exclusive_set" drop="false" is_a_unlockable="true" inherit_weapons="false" inherit_override="false" inherit_parts_forbids="false" inherit_parts_override="false" global_value="paint_sets" has_description="true" desc_id="bm_wp_wpn_fps_ass_g3_body_hk33_desc">
+		<stats damage="-32" total_ammo_mod="10" spread="0" reload="-3" recoil="4" concealment="2" extra_ammo="0"/>
+		<custom_stats ammo_offset="10" ammo_pickup_max_mul = "1.83537264" ammo_pickup_min_mul="1.5" fire_rate_multiplier="1.09523809524"/>
+		<adds>
+			<value_node value="wpn_fps_ass_g3_hk33_sound"/>		
+		</adds>
+		<override>
+			<wpn_fps_ass_g3_body_upper unit="units/mods/weapons/wpn_fps_ass_g3_hk33/wpn_fps_ass_g3_body_upper_hk33" third_unit="units/mods/weapons/wpn_third_ass_g3_hk33/wpn_third_ass_g3_body_upper_hk33"/>
+			<wpn_fps_ass_g3_body_lower unit="units/mods/weapons/wpn_fps_ass_g3_hk33/wpn_fps_ass_g3_body_lower_hk33" third_unit="units/mods/weapons/wpn_third_ass_g3_hk33/wpn_third_ass_g3_body_lower_hk33"/>
+			<wpn_fps_ass_g3_m_mag unit="units/mods/weapons/wpn_fps_ass_g3_hk33/wpn_fps_ass_g3_m_hk33" third_unit="units/mods/weapons/wpn_third_ass_g3_hk33/wpn_third_ass_g3_m_hk33"/>
+			<wpn_fps_ass_g3_fg_bipod unit="units/mods/weapons/wpn_fps_ass_g3_hk33/wpn_fps_ass_g3_fg_hk33" third_unit="units/mods/weapons/wpn_third_ass_g3_hk33/wpn_third_ass_g3_fg_hk33" parent="exclusive_set" a_obj="a_fg_hk33"/>
+			<wpn_fps_ass_g3_fg_psg parent="exclusive_set" a_obj="a_fg_hk33"/>
+			<wpn_fps_ass_g3_fg_railed parent="exclusive_set" a_obj="a_fg_hk33"/>
+			<wpn_fps_ass_g3_fg_retro parent="exclusive_set" a_obj="a_fg_hk33"/>
+			<wpn_fps_ass_g3_fg_retro_plastic parent="exclusive_set" a_obj="a_fg_hk33"/>	
+		</override>
+		<forbids>
+			<value_node value="wpn_fps_ass_g3_b_sniper"/>		
+			<value_node value="wpn_fps_ass_g3_b_short"/>			
+		</forbids>
+		<pcs/>
+		<weapons>
+			<value_node value="wpn_fps_ass_g3"/>
+		</weapons>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_g3_hk33_sound" based_on="wpn_fps_lmg_hcar_ck_switch" inherit_adds="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" global_value="paint_sets" type="ammo" unit="units/pd2_dlc1/weapons/wpn_fps_ass_s552/wpn_fps_ass_s552" third_unit="units/pd2_dlc1/weapons/wpn_fps_ass_s552/wpn_fps_ass_s552" internal_part="true" drop="false" texture_bundle_folder="mods" is_a_unlockable="false">
+		<custom_stats>
+			<sounds fire="sig552_fire_single" fire_single="sig552_fire_single" stop_fire="sig552_stop" fire_auto="sig552_fire"/>
+		</custom_stats>
+		<weapons>
+			<value_node value="wpn_fps_ass_g3"/>
+		</weapons>
+	</WeaponMod>
+
+<!-- AR-45 -->
+
+	<WeaponMod id="wpn_fps_smg_shepheard_body_ar45" based_on="wpn_fps_m4_lower_reciever" unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_body_ar45_dummy" third_unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_body_ar45_dummy" type="exclusive_set" drop="false" is_a_unlockable="true" inherit_weapons="false" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" global_value="paint_sets" has_description="true" desc_id="bm_wp_wpn_fps_smg_shepheard_body_ar45_desc">
+		<stats damage="41" total_ammo_mod="-11" spread="2" reload="0" recoil="-4" concealment="-4"/>
+		<custom_stats ammo_offset="10" ammo_pickup_max_mul = "0.333636363636" ammo_pickup_min_mul="0.175" fire_rate_multiplier="0.964"/>	<!-- fire_rate_multiplier="0.85058823529" ammo_pickup_max_mul = "0.68181818181" -->
+		<stance_mod>
+		<!--<wpn_fps_smg_shepheard rotation="-0.000872664 -5.71158e-007 -0.000654498 -0.999999" translation="0 -15 0.3"/>-->
+			<wpn_fps_smg_shepheard rotation="0 0 0 1" translation="-0.005 -7.8 0.285"/>
+		</stance_mod>
+		<adds>
+			<value_node value="wpn_fps_snp_victor_body_receiver_upper"/>
+			<value_node value="wpn_fps_snp_victor_body_receiver_lower"/>
+			<value_node value="wpn_fps_smg_shepheard_fg_ar45"/>
+			<value_node value="wpn_fps_smg_shepheard_ar45_sound"/>
+		</adds>
+		<override>
+			<wpn_fps_upg_m4_g_standard_vanilla unit="units/mods/weapons/wpn_fps_ass_m4_tantone/wpn_fps_ass_m4_g_tantone" />
+			<wpn_fps_smg_shepheard_g_standard unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_g_ar45" third_unit="units/mods/weapons/wpn_third_smg_shepheard_ar45/wpn_third_smg_shepheard_g_ar45" />
+			<wpn_fps_smg_shepheard_body unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+			<wpn_fps_smg_shepheard_fg_ar45 parent="exclusive_set" obj="a_b"/>
+			<wpn_fps_smg_shepheard_bolt_standard unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_bolt_ar45" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+			<wpn_fps_smg_shepheard_dh_standard unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_draghandle_ar45" third_unit="units/mods/weapons/wpn_third_smg_shepheard_ar45/wpn_third_smg_shepheard_draghandle_ar45" />
+			<wpn_fps_smg_shepheard_b_standard unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_b_ar45" third_unit="units/pd2_dlc_savi/weapons/wpn_third_snp_victor_pts/wpn_third_snp_victor_b_sbr" parent="exclusive_set" obj="a_b"/>
+			<wpn_fps_smg_shepheard_s_adapter unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_s_adapter_ar45" third_unit="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_s_adapter_ddm4" parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_smg_shepheard_s_standard unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_s_tecci" third_unit="units/mods/weapons/wpn_third_smg_shepheard_ar45/wpn_third_smg_shepheard_s_tecci" parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_smg_shepheard_s_no unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_fps_ass_tecci_s_standard" third_unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_third_ass_tecci_s_standard" parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_smg_shepheard_s_no_vanilla unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_fps_ass_tecci_s_standard" third_unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_third_ass_tecci_s_standard" parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_smg_shepheard_o_standard unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_o_ar45" parent="exclusive_set" a_obj="a_o">
+				<stance_mod>
+					<wpn_fps_smg_shepheard rotation="0 0 0 1" translation="0 -7 -0.28"/>
+				<!--<wpn_fps_smg_shepheard rotation="0.000872664 5.71158e-007 0.000654498 1" translation="0 15 -0.3"/> 0, -13, -0.28-->
+				</stance_mod>	
+			</wpn_fps_smg_shepheard_o_standard>
+			<wpn_fps_smg_shepheard_mag_standard unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_m_ar45" third_unit="units/mods/weapons/wpn_third_smg_shepheard_ar45/wpn_third_smg_shepheard_m_ar45" />
+			<wpn_fps_smg_shepheard_ns_standard unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+
+			<wpn_fps_snp_victor_body_receiver_upper unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_ar45_upper" third_unit="units/mods/weapons/wpn_third_smg_shepheard_ar45/wpn_third_smg_shepheard_ar45_upper" />
+			<wpn_fps_snp_victor_body_receiver_lower unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_ar45_lower" third_unit="units/mods/weapons/wpn_third_smg_shepheard_ar45/wpn_third_smg_shepheard_ar45_lower" />
+
+			<wpn_fps_upg_m4_s_pts parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_upg_m4_s_crane parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_upg_m4_s_mk46 parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_upg_m4_s_ubr parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_snp_tti_s_vltor parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_sho_sko12_stock parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_snp_victor_s_mod0 parent="exclusive_set" a_obj="a_s" />			
+			<wpn_fps_upg_m4_s_standard parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_upg_m4_s_standard_vanilla parent="exclusive_set" a_obj="a_s" />
+			
+            <wpn_fps_upg_charm_bag parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_dallas parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_grenade parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_piggy parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_cloaker parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_skulldozer parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_pyramid parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_toast parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_diamond parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_musket parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_pumpkin parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_skullz parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_choco parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_flake parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_igloo parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_snow parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_ball parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_lusse parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_tiger parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_cactus parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_cowboy_hat parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_horseshoe parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_nascar parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_pokerchip parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_rangerbadge parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_beer parent="exclusive_set" a_obj="a_charm"/>
+	        <wpn_fps_upg_charm_foam parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_teddymoo parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_piggy_gold parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_rooster parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_skull parent="exclusive_set" a_obj="a_charm"/>
+
+			<wpn_fps_addon_ris	parent="exclusive_set" a_obj="a_fl" />		
+			<wpn_fps_snp_tti_vg_standard parent="exclusive_set" a_obj="a_vg"/>	
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="exclusive_set" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_ass_smg_sho_surefire parent="exclusive_set" a_obj="a_fl" />	
+        	<wpn_fps_upg_fl_ass_peq15 parent="exclusive_set" a_obj="a_fl" />	
+        	<wpn_fps_upg_fl_ass_laser parent="exclusive_set" a_obj="a_fl" />	
+        	<wpn_fps_upg_fl_ass_utg parent="exclusive_set" a_obj="a_fl" />	
+        	<wpn_fps_upg_fl_dbal_laser parent="exclusive_set" a_obj="a_fl" />	
+
+			<wpn_fps_upg_o_45rds_v2 parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_45rds parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_45steel parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_45iron parent="exclusive_set" a_obj="a_o"/>			
+			<wpn_fps_upg_o_sig parent="sight" />		
+			<wpn_fps_upg_o_xpsg33_magnifier parent="sight" />	
+
+		<!-- Pain -->
+			
+			<wpn_fps_upg_o_specter parent="exclusive_set" a_obj="a_o"/>			
+			<wpn_fps_upg_o_docter parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_eotech parent="exclusive_set" a_obj="a_o"/>		
+			<wpn_fps_upg_o_t1micro parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_cmore parent="exclusive_set" a_obj="a_o"/>						
+			<wpn_fps_upg_o_tf90 parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_aimpoint parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_aimpoint_2 parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_acog parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_eotech_xps parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_reflex parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_rx01 parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_rx30 parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_cs parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_spot parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_poe parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_bmg parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_uh parent="exclusive_set" a_obj="a_o"/>		
+			<wpn_fps_upg_o_fc1 parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_health parent= "exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_atibal parent= "exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_hamr parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_shortdot parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_northtac parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_box parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_leupold parent="exclusive_set" a_obj="a_o"/>			
+
+			<wpn_fps_upg_o_hamr_reddot parent="exclusive_set" a_obj="a_o"/>					
+			<wpn_fps_upg_o_atibal_reddot parent="exclusive_set" a_obj="a_o"/>				
+		</override>
+		
+		<forbids>
+			<value_node value="wpn_fps_smg_shepheard_body_short"/>
+			<value_node value="wpn_fps_smg_shepheard_mag_extended"/>
+		</forbids>		
+		<weapons>
+			<value_node value="wpn_fps_smg_shepheard"/>		
+		</weapons>
+		<pcs/>
+	</WeaponMod>	
+
+	<WeaponMod id="wpn_fps_smg_x_shepheard_body_ar45" based_on="wpn_fps_m4_lower_reciever" unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_body_ar45_dummy" third_unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_body_ar45_dummy" type="exclusive_set" drop="false" is_a_unlockable="true" inherit_weapons="false" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" global_value="paint_sets" has_description="true" desc_id="bm_wp_wpn_fps_smg_x_shepheard_body_ar45_desc">
+		<stats damage="35" total_ammo_mod="-11" spread="2" reload="-5" recoil="-6" concealment="-4"/>
+		<custom_stats ammo_offset="20" ammo_pickup_max_mul = "0.35" ammo_pickup_min_mul="0.2" fire_rate_multiplier="0.964"/>	<!--  fire_rate_multiplier="0.964" fire_rate_multiplier="0.76705882352" ammo_pickup_max_mul = "0.68181818181" -->
+		<adds>
+			<value_node value="wpn_fps_smg_shepheard_ar45_upper"/>
+			<value_node value="wpn_fps_smg_shepheard_ar45_lower"/>
+			<value_node value="wpn_fps_smg_shepheard_fg_ar45"/>
+			<value_node value="wpn_fps_smg_x_shepheard_ar45_sound"/>
+		</adds>
+		<override>
+			<wpn_fps_upg_m4_g_standard_vanilla unit="units/mods/weapons/wpn_fps_ass_m4_tantone/wpn_fps_ass_m4_g_tantone" />
+			<wpn_fps_smg_shepheard_g_standard unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_g_ar45" third_unit="units/mods/weapons/wpn_third_smg_shepheard_ar45/wpn_third_smg_shepheard_g_ar45" />
+			<wpn_fps_smg_shepheard_body unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+			<wpn_fps_smg_shepheard_fg_ar45 parent="exclusive_set" obj="a_b"/>
+			<wpn_fps_smg_shepheard_bolt_standard unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_bolt_ar45" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+			<wpn_fps_smg_shepheard_dh_standard unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_draghandle_ar45" third_unit="units/mods/weapons/wpn_third_smg_shepheard_ar45/wpn_third_smg_shepheard_draghandle_ar45" />
+			<wpn_fps_smg_shepheard_b_standard unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_b_ar45" third_unit="units/pd2_dlc_savi/weapons/wpn_third_snp_victor_pts/wpn_third_snp_victor_b_sbr" parent="exclusive_set" obj="a_b"/>
+			<wpn_fps_smg_shepheard_s_adapter unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_s_adapter_ar45" third_unit="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_s_adapter_ddm4" parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_smg_shepheard_s_standard unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_s_tecci" third_unit="units/mods/weapons/wpn_third_smg_shepheard_ar45/wpn_third_smg_shepheard_s_tecci" parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_smg_shepheard_s_no unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_fps_ass_tecci_s_standard" third_unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_third_ass_tecci_s_standard" parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_smg_shepheard_s_no_vanilla unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_fps_ass_tecci_s_standard" third_unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_third_ass_tecci_s_standard" parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_smg_shepheard_o_standard unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_o_ar45" parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_smg_shepheard_mag_standard unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_m_ar45" third_unit="units/mods/weapons/wpn_third_smg_shepheard_ar45/wpn_third_smg_shepheard_m_ar45" />
+			<wpn_fps_smg_shepheard_ns_standard unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+	
+            <wpn_fps_upg_charm_bag parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_dallas parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_grenade parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_piggy parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_cloaker parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_skulldozer parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_pyramid parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_toast parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_diamond parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_musket parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_pumpkin parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_skullz parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_choco parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_flake parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_igloo parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_snow parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_ball parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_lusse parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_tiger parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_cactus parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_cowboy_hat parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_horseshoe parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_nascar parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_pokerchip parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_rangerbadge parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_beer parent="exclusive_set" a_obj="a_charm"/>
+	        <wpn_fps_upg_charm_foam parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_teddymoo parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_piggy_gold parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_rooster parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_skull parent="exclusive_set" a_obj="a_charm"/>
+
+			<wpn_fps_addon_ris	parent="exclusive_set" a_obj="a_fl" />		
+			<wpn_fps_snp_tti_vg_standard parent="exclusive_set" a_obj="a_vg"/>	
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="exclusive_set" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_ass_smg_sho_surefire parent="exclusive_set" a_obj="a_fl" />	
+        	<wpn_fps_upg_fl_ass_peq15 parent="exclusive_set" a_obj="a_fl" />	
+        	<wpn_fps_upg_fl_ass_laser parent="exclusive_set" a_obj="a_fl" />	
+        	<wpn_fps_upg_fl_ass_utg parent="exclusive_set" a_obj="a_fl" />	
+        	<wpn_fps_upg_fl_dbal_laser parent="exclusive_set" a_obj="a_fl" />		
+			
+<!-- Pain -->
+
+			<wpn_fps_upg_o_specter parent="exclusive_set" a_obj="a_o"/>			
+			<wpn_fps_upg_o_docter parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_eotech parent="exclusive_set" a_obj="a_o"/>		
+			<wpn_fps_upg_o_t1micro parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_cmore parent="exclusive_set" a_obj="a_o"/>						
+			<wpn_fps_upg_o_tf90 parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_aimpoint parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_aimpoint_2 parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_acog parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_eotech_xps parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_reflex parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_rx01 parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_rx30 parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_cs parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_spot parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_poe parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_bmg parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_uh parent="exclusive_set" a_obj="a_o"/>		
+			<wpn_fps_upg_o_fc1 parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_health parent= "exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_atibal parent= "exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_hamr parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_shortdot parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_northtac parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_box parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_leupold parent="exclusive_set" a_obj="a_o"/>			
+		</override>
+		
+		<forbids>
+			<value_node value="wpn_fps_smg_shepheard_body_short"/>
+			<value_node value="wpn_fps_smg_shepheard_mag_extended"/>
+		</forbids>		
+		<weapons>
+			<value_node value="wpn_fps_smg_x_shepheard"/>			
+		</weapons>
+		<pcs/>
+	</WeaponMod>	
+
+	<WeaponMod id="wpn_fps_smg_shepheard_ar45_upper" based_on="wpn_fps_snp_victor_body_receiver_upper" type="upper_reciever" unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_ar45_upper" third_unit="units/mods/weapons/wpn_third_smg_shepheard_ar45/wpn_third_smg_shepheard_ar45_upper" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_smg_shepheard_ar45_lower" based_on="wpn_fps_snp_victor_body_receiver_lower" type="lower_reciever" unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_ar45_lower" third_unit="units/mods/weapons/wpn_third_smg_shepheard_ar45/wpn_third_smg_shepheard_ar45_lower" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_smg_shepheard_fg_ar45" based_on="wpn_fps_m4_uupg_fg_rail_ext" type="foregrip_ext" unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_fg_ar45" third_unit="units/mods/weapons/wpn_third_smg_shepheard_ar45/wpn_third_smg_shepheard_fg_ar45" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_smg_shepheard_ar45_sound" based_on="wpn_fps_smg_shepheard_body" inherit_adds="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" type="ammo" unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_body_ar45_dummy" third_unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_body_ar45_dummy" drop="false" texture_bundle_folder="mods" is_a_unlockable="false">
+		<custom_stats>
+			<sounds fire_single="m1928_fire_single" stop_fire="m1928_stop" fire_auto="m1928_fire"/>
+		</custom_stats>
+		<weapons>
+			<value_node value="wpn_fps_smg_shepheard"/>
+		</weapons>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_shepheard_m_ar45" based_on="wpn_fps_smg_shepheard_mag_standard" type="magazine" unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_m_ar45" third_unit="units/mods/weapons/wpn_third_smg_shepheard_ar45/wpn_third_smg_shepheard_m_ar45" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_smg_x_shepheard_ar45_sound" based_on="wpn_fps_smg_shepheard_body" inherit_adds="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" type="ammo" unit="units/pd2_dlc_osa/weapons/wpn_fps_smg_x_m1928/wpn_fps_smg_x_m1928" third_unit="units/pd2_dlc_osa/weapons/wpn_fps_smg_x_m1928/wpn_fps_smg_x_m1928" drop="false" texture_bundle_folder="mods" is_a_unlockable="false">
+		<custom_stats>
+			<sounds fire_single="m1928_x_fire_single" fire="m1928_x_fire_single" stop_fire="m1928_x_stop" fire_auto="m1928_x_fire"/>
+		</custom_stats>
+		<weapons>
+			<value_node value="wpn_fps_smg_x_shepheard"/>
+		</weapons>
+	</WeaponMod>
+
+<!-- 6.5 Creedmoor AK-->
+
+	<WeaponMod id="wpn_fps_ass_ak_body_creedmoor" based_on="wpn_fps_ass_74_body_upperreceiver" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" inherit_adds="false" inherit_parts_override="false" inherit_forbids="false" inherit_override="false" inherit_parts_forbids="false" global_value="paint_sets" type="exclusive_set" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" has_description="true" desc_id="bm_wp_wpn_fps_ass_ak_body_creedmoor_desc">
+		<stats damage="102" total_ammo_mod="-12" spread="3" recoil="-10" reload="-2" concealment="0"/>	<!--total_ammo_mod="-14" spread="7" recoil="-20" concealment="-5"-->
+		<custom_stats ammo_offset="-10" ammo_pickup_max_mul = "0.33939393939" ammo_pickup_min_mul="0.28888888888" fire_rate_multiplier="0.76687116564"/>	<!-- ammo_pickup_max_mul = "0.44444444444" ammo_pickup_min_mul="0.36363636363" fire_rate_multiplier="0.46012269938"  -->
+		<stance_mod>
+			<wpn_fps_ass_74 rotation="0 0 0 1" translation="0 20 0.1183"/>
+		</stance_mod>
+		<override>
+			<wpn_fps_ass_74_body_upperreceiver unit="units/mods/weapons/wpn_fps_ass_ak_creedmoor/wpn_fps_ass_ak_upper_creedmoor" third_unit="units/mods/weapons/wpn_third_ass_ak_creedmoor/wpn_third_ass_ak_upper_creedmoor"/>	
+			<wpn_fps_ass_ak_body_lowerreceiver unit="units/mods/weapons/wpn_fps_ass_ak_creedmoor/wpn_fps_ass_ak_lower_creedmoor"/>
+        	<wpn_fps_ass_74_m_standard unit="units/mods/weapons/wpn_fps_ass_ak_creedmoor/wpn_fps_ass_ak_m_creedmoor" third_unit="units/mods/weapons/wpn_third_ass_ak_creedmoor/wpn_third_ass_ak_m_creedmoor"/>
+			<wpn_upg_ak_g_standard unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy">
+				<adds>
+					<value_node value="wpn_fps_ass_ak_g_creedmoor"/>
+				</adds>			
+			</wpn_upg_ak_g_standard>
+        	<wpn_fps_ass_74_b_standard unit="units/mods/weapons/wpn_fps_ass_ak_creedmoor/wpn_fps_ass_ak_b_creedmoor_2" third_unit="units/mods/weapons/wpn_third_ass_ak_creedmoor/wpn_third_ass_ak_b_creedmoor_2"/>
+            <wpn_upg_ak_s_skfoldable_vanilla  unit="units/pd2_dlc_gage_assault/weapons/wpn_fps_ass_galil_pts/wpn_fps_ass_galil_s_standard" third_unit="units/pd2_dlc_gage_assault/weapons/wpn_third_ass_galil_pts/wpn_third_ass_galil_s_standard"/>
+            <wpn_upg_ak_fg_standard unit="units/mods/weapons/wpn_fps_ass_ak_creedmoor/wpn_fps_ass_ak_fg_creedmoor" third_unit="units/mods/weapons/wpn_third_ass_ak_creedmoor/wpn_third_ass_ak_fg_creedmoor">
+				<override/>
+			</wpn_upg_ak_fg_standard>
+			<wpn_fps_ass_ak_b_creedmoor a_obj="a_b"/>		
+			<wpn_fps_ass_ak_fg_creedmoor a_obj="a_fg"/>	
+        	<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="foregrip" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_ass_smg_sho_surefire parent="foregrip" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_ass_peq15 parent="foregrip" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_ass_laser parent="foregrip" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_ass_utg parent="foregrip" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_dbal_laser parent="foregrip" a_obj="a_fl"/>
+			<wpn_fps_addon_ris unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>	
+
+			<!-- if bread in french is "pain" then Je possède une putain de boulangerie -->
+			
+			<wpn_fps_upg_o_specter parent="upper_reciever" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_specter>		
+			
+			<wpn_fps_upg_o_aimpoint parent="upper_reciever" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_aimpoint>			
+			
+			<wpn_fps_upg_o_docter parent="upper_reciever" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_docter>			
+			
+			<wpn_fps_upg_o_eotech parent="upper_reciever" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_eotech>			
+			
+			<wpn_fps_upg_o_t1micro parent="upper_reciever" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_t1micro>			
+			
+			<wpn_fps_upg_o_cmore parent="upper_reciever" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_cmore>					
+			
+			<wpn_fps_upg_o_tf90 parent="upper_reciever" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_tf90>			
+			
+			<wpn_fps_upg_o_aimpoint parent="upper_reciever" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_aimpoint>
+			
+			<wpn_fps_upg_o_aimpoint_2 parent="upper_reciever" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_aimpoint_2>	
+			
+			<wpn_fps_upg_o_acog parent="upper_reciever" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_acog>		
+			
+			<wpn_fps_upg_o_eotech_xps parent="upper_reciever" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_eotech_xps>		
+			
+			<wpn_fps_upg_o_reflex parent="upper_reciever" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_reflex>			
+			
+			<wpn_fps_upg_o_rx01 parent="upper_reciever" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_rx01>	
+			
+			<wpn_fps_upg_o_rx30 parent="upper_reciever" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_rx30>			
+			
+			<wpn_fps_upg_o_cs parent="upper_reciever" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_cs>		
+			
+			<wpn_fps_upg_o_spot parent="upper_reciever" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_spot>		
+			
+			<wpn_fps_upg_o_poe parent="upper_reciever" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_poe>	
+			
+			<wpn_fps_upg_o_bmg parent="upper_reciever" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_bmg>
+			
+			<wpn_fps_upg_o_fc1 parent="upper_reciever" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_fc1>	
+			
+			<wpn_fps_upg_o_health parent="upper_reciever" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_health>		
+			
+			<wpn_fps_upg_o_atibal parent="upper_reciever" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_atibal>			
+			
+			<wpn_fps_upg_o_hamr parent="upper_reciever" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_hamr>	
+			
+			<wpn_fps_upg_o_hamr_reddot parent="upper_reciever" a_obj="a_o">
+				<stance_mod>
+					<wpn_fps_ass_74 rotation="0 0 0 1" translation="0 -10 0"/>
+				</stance_mod>
+			</wpn_fps_upg_o_hamr_reddot>
+			
+			<wpn_fps_upg_o_atibal_reddot parent="upper_reciever" a_obj="a_o">	
+				<stance_mod>
+					<wpn_fps_ass_74 rotation="0 0 0 1" translation="0 -10 0"/>
+				</stance_mod>
+			</wpn_fps_upg_o_atibal_reddot>	
+			
+			<wpn_fps_upg_o_uh parent="upper_reciever" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_uh>
+
+			<wpn_fps_upg_o_hamr_reddot parent="upper_reciever" a_obj="a_o"/>					
+			<wpn_fps_upg_o_atibal_reddot parent="upper_reciever" a_obj="a_o"/>	
+
+		<!--<wpn_fps_upg_o_shortdot parent="upper_reciever" a_obj="a_o"/>	
+			<wpn_fps_upg_o_northtac parent="upper_reciever" a_obj="a_o"/>
+			<wpn_fps_upg_o_box parent="upper_reciever" a_obj="a_o"/>		
+			<wpn_fps_upg_o_leupold parent="upper_reciever" a_obj="a_o"/>-->
+
+			<wpn_fps_upg_o_45rds_v2 parent="upper_reciever" a_obj="a_o"/>
+			<wpn_fps_upg_o_45rds parent="upper_reciever" a_obj="a_o"/>
+			<wpn_fps_upg_o_45steel parent="upper_reciever" a_obj="a_o"/>	
+			<wpn_fps_upg_o_45iron parent="upper_reciever" a_obj="a_o"/>			
+			<wpn_fps_upg_o_sig parent="sight" />		
+			<wpn_fps_upg_o_xpsg33_magnifier parent="sight" />
+		</override>
+		<adds>
+			<value_node value="wpn_fps_ass_ak_fg_creedmoor"/>		
+			<value_node value="wpn_fps_ass_ak_b_creedmoor"/>		
+			<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+			<value_node value="wpn_fps_ass_ak_creedmoor_sound"/>	
+			<value_node value="wpn_fps_ass_ak_g_creedmoor"/>			
+		</adds>
+		<forbids>	
+			<value_node value="wpn_upg_ak_fg_combo1"/>		
+			<value_node value="wpn_upg_ak_fg_combo2"/>		
+			<value_node value="wpn_upg_ak_fg_combo3"/>		
+			<value_node value="wpn_fps_upg_m4_s_standard"/>		
+			<value_node value="wpn_fps_upg_m4_s_pts"/>		
+			<value_node value="wpn_upg_ak_s_psl"/>		
+			<value_node value="wpn_upg_ak_s_folding"/>
+			<value_node value="wpn_fps_upg_ak_g_hgrip"/>		
+			<value_node value="wpn_fps_upg_ak_g_pgrip"/>		
+			<value_node value="wpn_fps_upg_ak_g_wgrip"/>		
+			<value_node value="wpn_fps_upg_m4_s_crane"/>		
+			<value_node value="wpn_fps_upg_m4_s_mk46"/>		
+			<value_node value="wpn_fps_upg_ak_fg_tapco"/>	
+			<value_node value="wpn_fps_upg_fg_midwest"/>	
+			<value_node value="wpn_fps_upg_ak_b_draco"/>	
+			<value_node value="wpn_fps_upg_ak_m_quad"/>	
+			<value_node value="wpn_fps_upg_m4_s_ubr"/>	
+			<value_node value="wpn_fps_upg_ak_g_rk3"/>	
+			<value_node value="wpn_fps_upg_ak_s_solidstock"/>	
+			<value_node value="wpn_fps_upg_ak_m_uspalm"/>	
+			<value_node value="wpn_fps_upg_ak_fg_krebs"/>	
+			<value_node value="wpn_fps_upg_ak_fg_trax"/>
+			<value_node value="wpn_fps_upg_ak_b_ak105"/>	
+			<value_node value="wpn_fps_upg_ass_ak_b_zastava"/>	
+			<value_node value="wpn_fps_upg_ak_g_edg"/>	
+			<value_node value="wpn_fps_upg_ak_g_gradus"/>	
+			<value_node value="wpn_fps_upg_ak_g_rk9"/>	
+			<value_node value="wpn_fps_upg_ak_m_quick"/>	
+			<value_node value="wpn_fps_snp_tti_s_vltor"/>	
+			<value_node value="wpn_fps_sho_sko12_stock"/>	
+			<value_node value="wpn_fps_upg_ak_fg_zenitco"/>	
+			<value_node value="wpn_fps_upg_ak_s_zenitco"/>	
+			<value_node value="wpn_fps_upg_ak_body_upperreceiver_zenitco"/>	
+			<value_node value="wpn_fps_upg_o_ak_scopemount"/>	
+			<!--cursed and won't work right-->	<!-- I get what gambyt means now -->
+		</forbids>
+		<weapons>
+			<value_node value="wpn_fps_ass_74"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_ak_g_creedmoor" based_on="wpn_upg_ak_g_standard" type="grip" unit="units/mods/weapons/wpn_fps_ass_ak_creedmoor/wpn_fps_ass_ak_g_creedmoor" third_unit="units/mods/weapons/wpn_third_ass_ak_creedmoor/wpn_third_ass_ak_g_creedmoor" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_ass_ak_b_creedmoor" based_on="wpn_fps_ass_akm_b_standard" type="barrel2" unit="units/mods/weapons/wpn_fps_ass_ak_creedmoor/wpn_fps_ass_ak_b_creedmoor" third_unit="units/mods/weapons/wpn_third_ass_ak_creedmoor/wpn_third_ass_ak_b_creedmoor" a_obj="a_b" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_ass_ak_o_creedmoor_dummy" based_on="wpn_fps_m4_lower_reciever" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" type="sight" a_obj="a_o_krebs" drop="false" inherit_parts_forbids="false" is_a_unlockable="false">
+		<stance_mod>
+			<wpn_fps_ass_74 rotation="0 0 0 1" translation="0 -20 -0.1183"/>
+			<wpn_fps_ass_akm rotation="0 0 0 1" translation="0 -20 -0.1183"/>
+		</stance_mod>		
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_ak_fg_creedmoor" based_on="wpn_fps_upg_ak_fg_combo1" type="foregrip_ext" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" a_obj="a_fg" drop="false" inherit_override="true" inherit_parts_forbids="false" is_a_unlockable="false">
+		<stats/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_ak_creedmoor_sound" based_on="wpn_fps_ass_akm_b_standard" inherit_adds="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" type="ammo" sub_type="ammo_slug" unit="units/pd2_dlc_tawp/weapons/wpn_fps_ass_shak12/wpn_fps_ass_shak12" third_unit="units/pd2_dlc_tawp/weapons/wpn_fps_ass_shak12/wpn_fps_ass_shak12" drop="false" texture_bundle_folder="mods" is_a_unlockable="false">
+	<custom_stats armor_piercing_add="1" can_shoot_through_enemy="true" can_shoot_through_shield="false" can_shoot_through_wall="true">
+		<sounds fire_single="shak12_fire_single" stop_fire="shak12_stop" fire_auto="shak12_fire"/>
+	</custom_stats>
+		<weapons>
+			<value_node value="wpn_fps_ass_74"/>
+		</weapons>
+	</WeaponMod>
+
+<!-- v2 starts here -->
+<!-- MW22 Chimera Set -->
+
+	<WeaponMod id="wpn_fps_ass_m16_body_mcbravo" based_on="wpn_fps_m4_lower_reciever" unit="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_fg_ddm4_vg_dummy" third_unit="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_fg_ddm4_vg_dummy" a_obj="a_b" type="exclusive_set" drop="false" is_a_unlockable="true" inherit_weapons="false" inherit_override="false" inherit_parts_forbids="false" inherit_parts_override="false" inherit_forbids="true" global_value="paint_sets" has_description="true" desc_id="bm_wp_wpn_fps_ass_m16_body_mcbravo_desc">
+		<stats damage="-3" spread="-4" reload="0" recoil="-4" concealment="2" extra_ammo="0" suppression="12" alert_size="12"/>
+	<!--<custom_stats fire_rate_multiplier="1.06067677946"/>	 ammo_pickup_max_mul = "1.2" ammo_pickup_min_mul="1.15" -->
+		<adds>
+			<value_node value="wpn_fps_ass_m16_mcbravo_sound"/>		
+			<value_node value="wpn_fps_upg_ns_pis_medium_gem_bravo"/>		
+			<value_node value="wpn_fps_ass_m16_fg_mcbravo_victor"/>
+			<value_node value="wpn_fps_snp_tti_dhs_switch"/>
+		</adds>
+		<sound_switch suppressed="suppressed_c"/>
+		<perks>
+			<value_node value="silencer"/>		
+		</perks>
+		<override>
+			<wpn_fps_m16_s_solid_vanilla unit="units/mods/weapons/wpn_fps_ass_m16_mcbravo/wpn_fps_ass_m16_s_mcbravo" >
+				<adds>
+					<value_node value="wpn_fps_upg_m4_s_adapter"/>
+				</adds>
+			</wpn_fps_m16_s_solid_vanilla>			
+			<wpn_fps_upg_m4_g_standard_vanilla unit="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_g_ddm4" third_unit="units/pd2_dlc_joy/weapons/wpn_fps_smg_shepheard_pts/wpn_third_smg_shepheard_g_standard"/>
+			<wpn_fps_m4_upper_reciever_round unit="units/mods/weapons/wpn_fps_ass_m16_mcbravo/wpn_fps_ass_m16_upper_mcbravo" third_unit="units/mods/weapons/wpn_third_ass_m4_tantone/wpn_third_ass_m4_tantone_upper"/>
+			<wpn_fps_m4_lower_reciever unit="units/mods/weapons/wpn_fps_ass_m16_mcbravo/wpn_fps_ass_m16_lower_mcbravo" />
+			<wpn_fps_m4_uupg_b_medium_vanilla unit="units/mods/weapons/wpn_fps_ass_m16_mcbravo/wpn_fps_ass_m16_b_mcbravo" third_unit="units/mods/weapons/wpn_third_ass_m16_mcbravo/wpn_third_ass_m16_b_mcbravo" a_obj="a_fg"/>
+			<wpn_fps_m16_fg_standard  unit="units/mods/weapons/wpn_fps_ass_m16_mcbravo/wpn_fps_ass_m16_fg_mcbravo" third_unit="units/mods/weapons/wpn_third_ass_m16_mcbravo/wpn_third_ass_m16_fg_mcbravo"/>
+			<wpn_fps_ass_m16_o_handle_sight  unit="units/pd2_dlc_joy/weapons/wpn_fps_smg_shepheard_pts/wpn_fps_smg_shepheard_o_standard" third_unit="units/pd2_dlc_joy/weapons/wpn_fps_smg_shepheard_pts/wpn_third_smg_shepheard_o_standtard">
+				<stance_mod>
+					<wpn_fps_ass_m16 rotation="0 0 0 1" translation="0 -1 0.47"/>
+				</stance_mod>			
+			</wpn_fps_ass_m16_o_handle_sight>
+			<wpn_fps_ass_m16_fg_mcbravo a_obj="a_fg"/>
+			<wpn_fps_amcar_bolt_standard unit="units/payday2/weapons/wpn_fps_ass_m4_pts/wpn_fps_m4_bolt_edge"/>
+			<wpn_fps_m4_uupg_draghandle unit="units/pd2_dlc_spa/weapons/wpn_fps_snp_tti_pts/wpn_fps_snp_tti_dh_standard" third_unit="units/pd2_dlc_spa/weapons/wpn_third_snp_tti_pts/wpn_third_snp_tti_dh_standard"/>	
+			<wpn_fps_snp_tti_dhs_switch a_obj="a_dh"/>				
+			<wpn_fps_upg_m4_m_straight_vanilla unit="units/mods/weapons/wpn_fps_ass_m16_mcbravo/wpn_fps_ass_m16_m_mcbravo" third_unit="units/payday2/weapons/wpn_third_ass_m4_pts/wpn_third_m4_uupg_m_std"/>	
+			<wpn_fps_ass_m16_os_frontsight unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>	
+			<wpn_fps_upg_ns_pis_medium_gem_bravo parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_ass_m16_fl_mcbravo parent="exclusive_set" a_obj="a_fl_shepheard"/>
+			
+			<wpn_fps_addon_ris unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" parent="exclusive_set" a_obj="a_fl_shepheard" />	
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="exclusive_set" a_obj="a_fl_shepheard"/>
+        	<wpn_fps_upg_fl_ass_smg_sho_surefire parent="exclusive_set" a_obj="a_fl_shepheard" />	
+        	<wpn_fps_upg_fl_ass_peq15 parent="exclusive_set" a_obj="a_fl_shepheard" />	
+        	<wpn_fps_upg_fl_ass_laser parent="exclusive_set" a_obj="a_fl_shepheard" />	
+        	<wpn_fps_upg_fl_ass_utg parent="exclusive_set" a_obj="a_fl_shepheard" />	
+        	<wpn_fps_upg_fl_dbal_laser parent="exclusive_set" a_obj="a_fl_shepheard" />				
+		</override>
+		<forbids>		
+			<value_node value="wpn_fps_upg_ass_m4_b_beowulf"/>	
+			<value_node value="wpn_fps_m4_uupg_b_medium"/>	
+			<value_node value="wpn_fps_m4_uupg_b_long"/>	
+			<value_node value="wpn_fps_m4_uupg_b_short"/>	
+			<value_node value="wpn_fps_m4_uupg_b_sd"/>
+
+			<value_node value="wpn_fps_uupg_fg_radian"/>	
+			<value_node value="wpn_fps_m4_uupg_fg_lr300"/>	
+			<value_node value="wpn_fps_upg_fg_jp"/>	
+			<value_node value="wpn_fps_upg_fg_smr"/>	
+			<value_node value="wpn_fps_upg_ass_m4_fg_moe"/>	
+			<value_node value="wpn_fps_upg_ass_m4_fg_lvoa"/>	
+			<value_node value="wpn_fps_m16_fg_railed"/>	
+			<value_node value="wpn_fps_m16_fg_vietnam"/>	
+			<value_node value="wpn_fps_upg_ass_m16_fg_stag"/>
+			<value_node value="wpn_fps_smg_olympic_fg_railed"/>	
+			<value_node value="wpn_fps_upg_smg_olympic_fg_lr300"/>
+			
+			<value_node value="wpn_fps_upg_m4_g_hgrip"/>
+            <value_node value="wpn_fps_upg_m4_g_mgrip"/>
+			<value_node value="wpn_fps_upg_m4_g_ergo"/>
+			<value_node value="wpn_fps_upg_m4_g_sniper"/>
+			<value_node value="wpn_fps_snp_tti_g_grippy"/>
+			<value_node value="wpn_fps_sho_sko12_body_grip"/>
+			<value_node value="wpn_fps_upg_g_m4_surgeon"/>
+			<value_node value="wpn_fps_snp_victor_g_mod3"/>
+			<value_node value="wpn_fps_m4_uupg_g_billet"/>
+
+			<value_node value="wpn_fps_upg_m4_s_pts"/>
+            <value_node value="wpn_fps_m4_uupg_s_fold"/>
+			<value_node value="wpn_fps_upg_m4_s_crane"/>
+			<value_node value="wpn_fps_upg_m4_s_mk46"/>
+			<value_node value="wpn_fps_upg_m4_s_ubr"/>
+			<value_node value="wpn_fps_snp_tti_s_vltor"/>
+			<value_node value="wpn_fps_sho_sko12_stock"/>
+			<value_node value="wpn_fps_snp_victor_s_mod0"/>
+			<value_node value="wpn_fps_m4_uupg_s_zulu"/>
+			<value_node value="wpn_fps_smg_olympic_s_short"/>
+			<value_node value="wpn_fps_upg_m4_s_standard"/>
+			
+			<value_node value="wpn_fps_m4_uupg_upper_radian"/>	
+			<value_node value="wpn_fps_m4_uupg_lower_radian"/>	
+			<value_node value="wpn_fps_upg_ass_m4_upper_reciever_ballos"/>	
+			<value_node value="wpn_fps_upg_ass_m4_upper_reciever_core"/>	
+			<value_node value="wpn_fps_upg_ass_m4_lower_reciever_core"/>	
+			<value_node value="wpn_fps_m4_upper_reciever_edge"/>			
+
+			<value_node value="wpn_fps_m4_uupg_fg_rail_ext"/>	
+			<value_node value="wpn_fps_upg_ns_ass_smg_large"/>	
+			<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>	
+			<value_node value="wpn_fps_upg_ns_ass_smg_small"/>	
+			<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>	
+			<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>	
+			<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>	
+			<value_node value="wpn_fps_lmg_kacchainsaw_ns_muzzle"/>	
+			<value_node value="wpn_fps_lmg_kacchainsaw_ns_suppressor"/>	
+			<value_node value="wpn_fps_upg_ass_ns_jprifles"/>	
+			<value_node value="wpn_fps_upg_ass_ns_linear"/>	
+			<value_node value="wpn_fps_upg_ass_ns_surefire"/>	
+			<value_node value="wpn_fps_upg_ass_ns_battle"/>	
+			<value_node value="wpn_fps_upg_ns_ass_smg_v6"/>	
+			<value_node value="wpn_fps_ass_shak12_ns_suppressor"/>	
+			<value_node value="wpn_fps_ass_shak12_ns_muzzle"/>	
+			<value_node value="wpn_fps_lmg_hk51b_ns_jcomp"/>	
+
+<!-- Muzzle devices added to the M16's attachment pool by Restoration Mod to make DMC's life easier -->
+			
+			<value_node value="wpn_fps_snp_victor_ns_omega"/>	
+			<value_node value="wpn_fps_snp_msr_ns_suppressor"/>				
+			<value_node value="wpn_fps_smg_cobray_ns_silencer"/>	
+			<value_node value="wpn_fps_smg_polymer_ns_silencer"/>	
+			<value_node value="wpn_fps_smg_schakal_ns_silencer"/>	
+			<value_node value="wpn_fps_smg_mp7_b_suppressed"/>	
+			<value_node value="wpn_fps_upg_ns_ass_filter"/>	
+			<value_node value="wpn_fps_upg_ak_ns_tgp"/>	
+			<value_node value="wpn_fps_snp_awp_ns_muzzle"/>	
+
+			<value_node value="wpn_fps_m4_uupg_m_std"/>					
+			<value_node value="wpn_fps_upg_m4_m_l5"/>	
+			<value_node value="wpn_fps_upg_m4_m_pmag"/>	
+			<value_node value="wpn_fps_m4_uupg_m_std"/>	
+			<value_node value="wpn_fps_m4_uupg_m_std_vanilla"/>	
+			<value_node value="wpn_fps_upg_m4_m_quad"/>	
+			<value_node value="wpn_fps_ass_l85a2_m_emag"/>	
+			<value_node value="wpn_fps_m4_upg_m_quick"/>	
+			<value_node value="wpn_fps_m4_uupg_m_strike"/>
+		</forbids>
+		<pcs/>
+		<weapons>
+			<value_node value="wpn_fps_ass_m16"/>
+		</weapons>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_m16_mcbravo_sound" based_on="wpn_fps_lmg_hcar_ck_switch" inherit_adds="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" global_value="paint_sets" type="ammo" unit="units/pd2_dlc_rvd/weapons/wpn_fps_ass_corgi/wpn_fps_ass_corgi" third_unit="units/pd2_dlc_rvd/weapons/wpn_fps_ass_corgi/wpn_fps_ass_corgi" internal_part="true" drop="false" texture_bundle_folder="mods" is_a_unlockable="false">
+		<custom_stats>
+			<sounds fire="corgi_fire_single" fire_single="corgi_fire_single" stop_fire="corgi_stop" fire_auto="corgi_fire"/>
+		</custom_stats>
+		<weapons>
+			<value_node value="wpn_fps_ass_m16"/>
+		</weapons>
+	</WeaponMod>
+
+
+	<WeaponMod id="wpn_fps_upg_ns_pis_medium_gem_bravo" based_on="wpn_fps_m4_upg_ns_mk12" unit="units/pd2_crimefest_2014/oct22/weapons/wpn_fps_upg_ns_pis_medium_gem/wpn_fps_upg_ns_pis_medium_gem" third_unit="units/pd2_crimefest_2014/oct22/weapons/wpn_fps_upg_ns_pis_medium_gem/wpn_third_upg_ns_pis_medium_gem" a_obj="a_ns" inherit_adds="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" global_value="paint_sets" drop="false" texture_bundle_folder="mods" is_a_unlockable="false" hidden="true">
+		<stats/>
+		<custom_stats/>
+		<weapons>
+			<value_node value="wpn_fps_ass_m16"/>
+		</weapons>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_m16_fg_mcbravo" based_on="wpn_fps_m4_uupg_fg_rail_ext" type="foregrip_ext" unit="units/mods/weapons/wpn_fps_ass_m16_mcbravo/wpn_fps_ass_m16_fg_mcbravo" third_unit="units/mods/weapons/wpn_third_ass_m16_mcbravo/wpn_third_ass_m16_fg_mcbravo" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_ass_m16_fg_mcbravo_victor" based_on="wpn_fps_m4_lower_reciever" a_obj="a_fg" type="foregrip_ext" unit="units/mods/weapons/wpn_fps_ass_m16_mcbravo/wpn_fps_ass_m16_fg_mcbravo_victor" third_unit="units/mods/weapons/wpn_fps_ass_m16_mcbravo/wpn_fps_ass_m16_fg_mcbravo_dummy" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_ass_m16_lower_mcbravo" based_on="wpn_fps_m4_uupg_fg_rail_ext" a_obj="a_body" type="foregrip_ext" unit="units/mods/weapons/wpn_fps_ass_m16_mcbravo/wpn_fps_ass_m16_lower_mcbravo" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_ass_m16_upper_mcbravo" based_on="wpn_fps_m4_uupg_fg_rail_ext" a_obj="a_body" type="foregrip_ext" unit="units/mods/weapons/wpn_fps_ass_m16_mcbravo/wpn_fps_ass_m16_upper_mcbravo" third_unit="units/mods/weapons/wpn_third_ass_m4_tantone/wpn_third_ass_m4_tantone_upper" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_smg_olympic_body_hk416c" based_on="wpn_fps_m4_lower_reciever" unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci/wpn_fps_ass_tecci" third_unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci/wpn_fps_ass_tecci" type="exclusive_set" drop="false" is_a_unlockable="true" inherit_weapons="false" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="false" global_value="paint_sets" has_description="true" desc_id="bm_wp_wpn_fps_smg_olympic_body_hk416c_desc">
+		<stats damage="25" total_ammo_mod="-3" spread="-3" reload="0" recoil="-5" concealment="1" extra_ammo="0"/>
+		<custom_stats ammo_pickup_max_mul="0.6" ammo_pickup_min_mul="0.6" />		<!-- fire_rate_multiplier="1.11166667" ammo_pickup_max_mul = "0.68181818181" fire_rate_multiplier="1.11166666667"-->
+		<stance_mod>
+			<wpn_fps_smg_olympic translation="0 0 -0.6997"/>
+		</stance_mod>
+		<override>
+			<wpn_fps_upg_m4_s_adapter unit="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_s_adapter_ddm4" third_unit="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_s_adapter_ddm4"/>
+
+			<wpn_fps_ass_m16_o_handle_sight unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_fps_ass_tecci_o_standard" third_unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_third_ass_tecci_o_standard" parent="exclusive_set">
+				<stance_mod>
+					<wpn_fps_smg_olympic translation="0 -3 1.55"/>
+				</stance_mod>
+			</wpn_fps_ass_m16_o_handle_sight>		
+
+			<wpn_fps_smg_olympic_s_short_vanilla unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_fps_ass_tecci_s_standard" third_unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_third_ass_tecci_s_standard" parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_smg_olympic_s_short unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_fps_ass_tecci_s_standard" third_unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_third_ass_tecci_s_standard" parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_smg_olympic_s_adjust unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_s_tecci" third_unit="units/mods/weapons/wpn_third_smg_shepheard_ar45/wpn_third_smg_shepheard_s_tecci" parent="exclusive_set" a_obj="a_s"/>
+			<wpn_fps_amcar_bolt_standard unit="units/mods/weapons/wpn_fps_smg_olympic_hk416/wpn_fps_smg_olympic_bolt_hk416"/>
+			<wpn_fps_m4_uupg_draghandle unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_fps_ass_tecci_dh_standard" third_unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_third_ass_tecci_dh_standard"/>
+			<wpn_fps_m4_lower_reciever unit="units/mods/weapons/wpn_fps_smg_olympic_hk416/wpn_fps_smg_olympic_lower_hk416" third_unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_third_ass_tecci_lower_reciever"/>
+			<wpn_fps_m4_upper_reciever_round unit="units/mods/weapons/wpn_fps_smg_olympic_hk416/wpn_fps_smg_olympic_upper_hk416" third_unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_third_ass_tecci_upper_reciever">
+				<override>
+					<wpn_fps_amcar_bolt_standard unit="units/mods/weapons/wpn_fps_smg_olympic_hk416/wpn_fps_smg_olympic_bolt_hk416"/>
+				</override>
+				<adds/>
+			</wpn_fps_m4_upper_reciever_round>
+			<wpn_fps_smg_olympic_fg_olympic unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+			<wpn_fps_ass_m16_os_frontsight unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+			<wpn_fps_ass_tecci_fg_standard unit="units/mods/weapons/wpn_fps_smg_olympic_hk416/wpn_fps_smg_olympic_fg_hk416"/>
+	
+			<wpn_fps_m4_uupg_b_medium unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_fps_ass_tecci_b_long" third_unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_third_ass_tecci_b_long" a_obj="a_fg">
+				<override/>
+			</wpn_fps_m4_uupg_b_medium>
+			<wpn_fps_m4_uupg_b_short_vanilla unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_fps_ass_tecci_b_standard" third_unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_third_ass_tecci_b_standard" a_obj="a_fg"/>
+
+			<wpn_fps_upg_o_45rds_v2 parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_45rds parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_45steel parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_45iron parent="exclusive_set" a_obj="a_o"/>			
+
+			<wpn_fps_addon_ris	parent="exclusive_set" a_obj="a_fl" />		
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="exclusive_set" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_ass_smg_sho_surefire parent="exclusive_set" a_obj="a_fl" />	
+        	<wpn_fps_upg_fl_ass_peq15 parent="exclusive_set" a_obj="a_fl" />	
+        	<wpn_fps_upg_fl_ass_laser parent="exclusive_set" a_obj="a_fl" />	
+        	<wpn_fps_upg_fl_ass_utg parent="exclusive_set" a_obj="a_fl" />	
+        	<wpn_fps_upg_fl_dbal_laser parent="exclusive_set" a_obj="a_fl" />	
+
+		<!-- Pain -->
+			
+			<wpn_fps_upg_o_specter parent="exclusive_set" a_obj="a_o"/>			
+			<wpn_fps_upg_o_docter parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_eotech parent="exclusive_set" a_obj="a_o"/>		
+			<wpn_fps_upg_o_t1micro parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_cmore parent="exclusive_set" a_obj="a_o"/>						
+			<wpn_fps_upg_o_tf90 parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_aimpoint parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_aimpoint_2 parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_acog parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_eotech_xps parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_reflex parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_rx01 parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_rx30 parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_cs parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_spot parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_poe parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_bmg parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_uh parent="exclusive_set" a_obj="a_o"/>		
+			<wpn_fps_upg_o_fc1 parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_health parent= "exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_atibal parent= "exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_hamr parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_shortdot parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_northtac parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_box parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_leupold parent="exclusive_set" a_obj="a_o"/>		
+			
+			<wpn_fps_upg_o_hamr_reddot parent="exclusive_set" a_obj="a_o">
+				<stance_mod>
+					<wpn_fps_smg_olympic rotation="0 0 0 1" translation="0 0 -3.6" />
+				</stance_mod>
+			</wpn_fps_upg_o_hamr_reddot>	
+			
+			<wpn_fps_upg_o_atibal_reddot parent="exclusive_set" a_obj="a_o">
+				<stance_mod>
+					<wpn_fps_smg_olympic rotation="0 0 0 1" translation="-0.125 0 -6.15" />
+				</stance_mod>
+			</wpn_fps_upg_o_atibal_reddot>				
+
+		</override>
+		<adds>		
+			<value_node value="wpn_fps_ass_tecci_fg_standard"/>	
+			<value_node value="wpn_fps_ass_tecci_ns_standard"/>				
+		</adds>
+		<forbids>
+			<value_node value="wpn_fps_upg_ass_m4_b_beowulf"/>
+			<value_node value="wpn_fps_m4_uupg_b_sd"/>
+			<value_node value="wpn_fps_ass_m16_os_frontsight"/>			
+			<value_node value="wpn_fps_ass_m4_os_frontsight"/>	
+			<value_node value="wpn_fps_addon_ris"/>	
+
+			<value_node value="wpn_fps_uupg_fg_radian"/>	
+			<value_node value="wpn_fps_m4_uupg_fg_lr300"/>
+			<value_node value="wpn_fps_upg_fg_jp"/>	
+			<value_node value="wpn_fps_upg_ass_m4_fg_moe"/>	
+			<value_node value="wpn_fps_upg_ass_m4_fg_lvoa"/>	
+			
+			<value_node value="wpn_fps_smg_olympic_fg_railed"/>	
+			<value_node value="wpn_fps_upg_smg_olympic_fg_lr300"/>	
+			
+			<value_node value="wpn_fps_m4_uupg_upper_radian"/>	
+			<value_node value="wpn_fps_m4_uupg_lower_radian"/>	
+			<value_node value="wpn_fps_upg_ass_m4_upper_reciever_ballos"/>	
+			<value_node value="wpn_fps_upg_ass_m4_upper_reciever_core"/>	
+			<value_node value="wpn_fps_upg_ass_m4_lower_reciever_core"/>	
+			<value_node value="wpn_fps_m4_upper_reciever_edge"/>		
+
+		</forbids>
+		<pcs/>
+		<weapons>
+			<value_node value="wpn_fps_smg_olympic"/>
+			<value_node value="wpn_fps_smg_x_olympic"/>
+		</weapons>
+	</WeaponMod>	
+
+	<WeaponMod id="wpn_fps_ass_tecci_o_olympic" based_on="wpn_fps_ass_tecci_o_standard" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" type="sight" drop="false" is_a_unlockable="false">
+		<stance_mod>
+			<wpn_fps_smg_olympic translation="0 -3 1.55"/>
+		</stance_mod>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_tecci_gasblock" based_on="wpn_fps_m4_uupg_fg_rail_ext" a_obj="a_fg" type="foregrip_ext" unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_fps_ass_tecci_b_standard" third_unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_third_ass_tecci_b_standard" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_ass_m4_hk416_sound" based_on="wpn_fps_lmg_hcar_ck_switch" inherit_adds="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" global_value="paint_sets" type="ammo" unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci/wpn_fps_ass_tecci" third_unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci/wpn_fps_ass_tecci" internal_part="true" drop="false" texture_bundle_folder="mods" is_a_unlockable="false">
+		<custom_stats>
+			<sounds fire="tecci_fire_single" fire_single="tecci_fire_single" stop_fire="tecci_stop" fire_auto="tecci_fire"/>
+		</custom_stats>
+		<weapons>
+			<value_node value="wpn_fps_ass_m4"/>
+		</weapons>
+	</WeaponMod>
+
+<!-- Straightened Mosconi Tactical Set -->
+
+	<WeaponMod id="wpn_fps_shot_m590_set" based_on="wpn_fps_shot_r870_body_standard" a_obj="a_body" unit="units/mods/weapons/wpn_fps_shot_m590_set/wpn_fps_shot_m590_body_set_dummy" third_unit="units/mods/weapons/wpn_fps_shot_m590_set/wpn_fps_shot_m590_body_set_dummy" type="exclusive_set" drop="false" is_a_unlockable="true" inherit_weapons="false" inherit_override="false" inherit_parts_forbids="false" inherit_parts_override="false" global_value="paint_sets" has_description="true" desc_id="bm_wp_wpn_fps_shot_m590_set_desc">	
+		<stats damage="45" recoil="-7" reload="-3" total_ammo_mod="0" concealment="-3"/>
+		<stats_modifiers damage="2"/>
+		<custom_stats fire_rate_multiplier="0.7" ammo_pickup_min_mul="0.49122807017" ammo_pickup_max_mul="0.49494949494"/>		
+		<override>
+			<wpn_fps_shot_r870_body_rack parent="exclusive_set" a_obj="a_body_rack"/>
+			<wpn_fps_sho_m590_s_standard unit="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_s_ddm4" third_unit="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_s_ddm4" parent="exclusive_set" a_obj="a_s"/>
+			<wpn_fps_sho_m590_fg_standard unit="units/mods/weapons/wpn_fps_shot_m590_set/wpn_fps_shot_m590_fg_set"/>
+			<wpn_fps_sho_m590_body_standard unit="units/mods/weapons/wpn_fps_shot_m590_set/wpn_fps_shot_m590_body_black"/>		
+			
+			<wpn_fps_upg_m4_s_pts parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_upg_m4_s_crane parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_upg_m4_s_mk46 parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_upg_m4_s_ubr parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_snp_tti_s_vltor parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_sho_sko12_stock parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_snp_victor_s_mod0 parent="exclusive_set" a_obj="a_s" />			
+			<wpn_fps_upg_m4_s_standard parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_upg_m4_s_standard_vanilla parent="exclusive_set" a_obj="a_s" />	
+	
+            <wpn_fps_upg_m4_g_hgrip parent="exclusive_set" a_obj="a_g" />
+            <wpn_fps_upg_m4_g_mgrip parent="exclusive_set" a_obj="a_g" />
+			<wpn_fps_upg_m4_g_ergo parent="exclusive_set" a_obj="a_g" />
+			<wpn_fps_upg_m4_g_sniper parent="exclusive_set" a_obj="a_g" />
+			<wpn_fps_snp_tti_g_grippy parent="exclusive_set" a_obj="a_g" />
+			<wpn_fps_sho_sko12_body_grip parent="exclusive_set" a_obj="a_g" />
+			<wpn_fps_upg_g_m4_surgeon parent="exclusive_set" a_obj="a_g" />
+			<wpn_fps_snp_victor_g_mod3 parent="exclusive_set" a_obj="a_g" />
+			<wpn_fps_m4_uupg_g_billet parent="exclusive_set" a_obj="a_g" />		
+			<wpn_fps_sho_m590_g_standard parent="exclusive_set" a_obj="a_g" />
+		</override>
+		<adds>
+			<value_node value="wpn_fps_shot_r870_body_rack"/>
+			<value_node value="wpn_fps_shot_m590_s_adapter_set"/>
+		</adds>
+		<forbids>
+			<value_node value="wpn_fps_sho_m590_body_rail"/>		
+			
+		<!--<value_node value="wpn_fps_upg_a_custom_free"/>					
+			<value_node value="wpn_fps_upg_a_custom"/>	
+			<value_node value="wpn_fps_upg_a_rip"/>					
+			<value_node value="wpn_fps_upg_a_explosive"/>	
+			<value_node value="wpn_fps_upg_a_piercing"/>				
+			<value_node value="wpn_fps_upg_a_slug"/>	
+			<value_node value="wpn_fps_upg_a_dragons_breath"/>	-->
+		</forbids>
+		<pcs/>
+		<weapons>
+			<value_node value="wpn_fps_sho_m590"/>
+		</weapons>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_shot_m590_s_adapter_set" based_on="wpn_fps_sho_m590_s_standard" a_obj="a_s" type="shitass2" unit="units/mods/weapons/wpn_fps_shot_m590_set/wpn_fps_shot_m590_s_adapter_set" third_unit="units/mods/weapons/wpn_third_shot_m590_set/wpn_third_shot_m590_s_adapter_set" drop="false" is_a_unlockable="false" inherit_parts_forbids="false" inherit_override="false"/>
+
+	<WeaponMod id="wpn_fps_shot_m590_set_sound" based_on="wpn_fps_lmg_hcar_ck_switch" inherit_adds="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" global_value="paint_sets" type="ammo" unit="units/pd2_dlc_peta/weapons/wpn_fps_shot_m37/wpn_fps_shot_m37" third_unit="units/pd2_dlc_peta/weapons/wpn_fps_shot_m37/wpn_fps_shot_m37" internal_part="true" drop="false" texture_bundle_folder="mods" is_a_unlockable="false"> 
+		<custom_stats>
+			<sounds fire="m37_fire" fire_single="m37_fire" fire_auto="m37_fire"/>
+		</custom_stats>
+		<weapons>
+			<value_node value="wpn_fps_sho_m590"/>
+		</weapons>
+	</WeaponMod>
+
+<!-- SCAR HAMR set -->
+
+	<WeaponMod id="wpn_fps_ass_scar_body_hamr" based_on="wpn_fps_ass_scar_body_standard" inherit_adds="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" global_value="paint_sets" type="exclusive_set" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" has_description="true" desc_id="bm_wp_wpn_fps_ass_scar_body_hamr_desc">
+	<!--<stats recoil="3" spread="3" damage="30" concealment="-1" total_ammo_mod="20"/>	
+		<custom_stats ammo_offset="20" ammo_pickup_min_mul = "2" ammo_pickup_max_mul="1"/>-->
+		<stats recoil="1" spread="-6" damage="-16" concealment="-1" total_ammo_mod="20"/>	
+		<custom_stats ammo_offset="20" ammo_pickup_min_mul = "7.5" ammo_pickup_max_mul="3"/>
+	<override>
+        	<wpn_fps_ass_scar_body_standard unit="units/mods/weapons/wpn_fps_ass_scar_hamr/wpn_fps_ass_scar_body_hamr" third_unit="units/mods/weapons/wpn_third_ass_scar_hamr/wpn_third_ass_scar_body_hamr"/>
+        	<wpn_fps_ass_scar_m_standard unit="units/mods/weapons/wpn_fps_ass_scar_hamr/wpn_fps_ass_scar_m_hamr" third_unit="units/mods/weapons/wpn_third_ass_scar_hamr/wpn_third_ass_scar_m_hamr"/>
+			<wpn_fps_upg_vg_ass_smg_afg unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+			<wpn_fps_ass_scar_ns_standard unit="units/mods/weapons/wpn_fps_ass_m4_tantone/wpn_fps_ass_m4_ns_tantone"/>
+			<wpn_fps_ass_scar_b_medium unit="units/mods/weapons/wpn_fps_ass_scar_hamr/wpn_fps_ass_scar_b_hamr"/>
+			<wpn_fps_upg_m4_g_hgrip_vanilla unit="units/mods/weapons/wpn_fps_ass_m4_tantone/wpn_fps_ass_m4_g_tantone" third_unit="units/payday2/weapons/wpn_third_upg_m4_reusable/wpn_third_upg_m4_g_standard"/>
+		</override>
+		<adds>
+			<value_node value="wpn_fps_ass_scar_body_hamr_o_lmg"/>		
+		</adds>
+		<forbids>
+			<value_node value="wpn_fps_ass_scar_b_short"/>
+			<value_node value="wpn_fps_ass_scar_b_long"/>
+
+            <value_node value="wpn_fps_upg_m4_g_hgrip"/>
+            <value_node value="wpn_fps_upg_m4_g_mgrip"/>
+			<value_node value="wpn_fps_upg_m4_g_ergo"/>
+			<value_node value="wpn_fps_upg_m4_g_sniper"/>
+			<value_node value="wpn_fps_snp_tti_g_grippy"/>
+			<value_node value="wpn_fps_sho_sko12_body_grip"/>
+			<value_node value="wpn_fps_upg_g_m4_surgeon"/>
+			<value_node value="wpn_fps_snp_victor_g_mod3"/>
+			<value_node value="wpn_fps_m4_uupg_g_billet"/>			
+
+			<value_node value="wpn_fps_upg_i_singlefire"/>
+			<value_node value="wpn_fps_upg_i_autofire"/>					
+		</forbids>
+		<weapons>
+			<value_node value="wpn_fps_ass_scar"/>
+		</weapons>
+		<perks>
+			<value_node value="fire_mode_auto"/>
+		</perks>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_scar_body_hamr_o_lmg" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" a_obj="a_body" depends_on="false" inherit_adds="false" inherit_forbids="false"  inherit_override="false" inherit_parts_forbids="false" inherit_parts_override="false" based_on="wpn_fps_upg_o_45iron" global_value="paint_sets" type="second_sight" drop="false" texture_bundle_folder="mods" is_a_unlockable="false" hidden="true">
+		<stance_mod>
+			<wpn_fps_ass_scar rotation="-0.00377312 0.0665015 -0.00458581 -0.997769" translation="8.098 -1.295 -1.863"/>
+		</stance_mod>
+		<stats recoil="0" concealment="0" gadget_zoom="1"/>
+	</WeaponMod>
+
+<!-- Mac-10 carbine set -->
+	
+	<WeaponMod id="wpn_fps_smg_mac10_body_m4_v2" based_on="wpn_fps_ass_scar_body_standard" inherit_adds="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" global_value="paint_sets" type="exclusive_set" unit="units/mods/weapons/wpn_fps_smg_mac10_m4_v2/wpn_fps_smg_mac10_body_dummy" third_unit="units/mods/weapons/wpn_fps_smg_mac10_m4_v2/wpn_fps_smg_mac10_body_dummy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" has_description="true" desc_id="bm_wp_wpn_fps_smg_mac10_body_m4_v2_desc">
+		<stats recoil="-4" spread="0" damage="41" concealment="-3" total_ammo_mod="-5"/>	
+		<custom_stats ammo_offset="0" ammo_pickup_min_mul = "0.1875" ammo_pickup_max_mul="0.35795454545"/>
+		<override>
+        	<wpn_fps_m4_uupg_fg_rail parent="exclusive_set">
+				<forbids/>
+        	</wpn_fps_m4_uupg_fg_rail>		
+        	<wpn_fps_upg_ass_m4_fg_moe parent="exclusive_set">
+				<forbids/>
+        	</wpn_fps_upg_ass_m4_fg_moe>		
+        	<wpn_fps_smg_mac10_b_dummy unit="units/pd2_dlc_savi/weapons/wpn_fps_snp_victor_pts/wpn_fps_snp_victor_b_sbr" third_unit="units/pd2_dlc_savi/weapons/wpn_third_snp_victor_pts/wpn_third_snp_victor_b_sbr" parent="exclusive_set"/>
+        	<wpn_fps_smg_mac10_s_fold unit="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_s_ddm4" third_unit="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_s_ddm4" parent="exclusive_set"/>
+        	<wpn_fps_m4_uupg_fg_rail_ext parent="exclusive_set">
+				<forbids/>
+        	</wpn_fps_m4_uupg_fg_rail_ext>			
+        	<wpn_fps_upg_m4_s_adapter parent="exclusive_set"/>		
+        	<wpn_fps_smg_cobray_s_m4adapter parent="exclusive_set"/>	
+        	<wpn_fps_gre_arbiter_o_standard>	
+				<stance_mod>
+					<wpn_fps_smg_mac10 rotation="0 0 0 1" translation="0 0 2"/>
+				</stance_mod>
+        	</wpn_fps_gre_arbiter_o_standard>				
+        	<wpn_fps_smg_mac10_body_ris_special>
+				<forbids>
+					<value_node value="wpn_fps_gre_arbiter_o_standard"/>		
+					<value_node value="wpn_fps_smg_mac10_body_ris_special_set"/>					
+				</forbids>
+        	</wpn_fps_smg_mac10_body_ris_special>	
+
+			<wpn_fps_addon_ris	unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="exclusive_set" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_ass_smg_sho_surefire parent="exclusive_set" a_obj="a_fl" />	
+        	<wpn_fps_upg_fl_ass_peq15 parent="exclusive_set" a_obj="a_fl" />	
+        	<wpn_fps_upg_fl_ass_laser parent="exclusive_set" a_obj="a_fl" />	
+        	<wpn_fps_upg_fl_ass_utg parent="exclusive_set" a_obj="a_fl" />	
+        	<wpn_fps_upg_fl_dbal_laser parent="exclusive_set" a_obj="a_fl" />	
+        	<wpn_fps_smg_schakal_vg_surefire_flashlight parent="exclusive_set" a_obj="a_fl" />		
+			
+		</override>
+		<adds>
+			<value_node value="wpn_fps_upg_ass_m4_fg_moe"/>		
+			<value_node value="wpn_fps_smg_cobray_s_m4adapter"/>		
+		</adds>
+		<forbids>
+			<value_node value="wpn_fps_smg_mac10_s_skel"/>	
+		</forbids>
+		<weapons>
+			<value_node value="wpn_fps_smg_mac10"/>
+			<value_node value="wpn_fps_smg_x_mac10"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_mac10_body_ris_special_set" a_obj="a_o" depends_on="false" inherit_adds="false" inherit_forbids="false"  inherit_override="false" inherit_parts_forbids="false" inherit_parts_override="false" based_on="wpn_fps_smg_mac10_body_ris_special" global_value="paint_sets" type="extra_2" drop="false" texture_bundle_folder="mods" is_a_unlockable="false" hidden="true"/>
+
+<!-- STANAG G36 set -->
+
+	<WeaponMod id="wpn_fps_ass_g36_body_stanag" based_on="wpn_fps_ass_scar_body_standard" inherit_adds="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" global_value="paint_sets" type="exclusive_set" unit="units/mods/weapons/wpn_fps_ass_g36_stanag/wpn_fps_ass_g36_body_dummy" third_unit="units/mods/weapons/wpn_fps_ass_g36_stanag/wpn_fps_ass_g36_body_dummy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" has_description="true" desc_id="bm_wp_wpn_fps_ass_g36_body_stanag_desc">
+		<stats recoil="-2" spread="3" damage="30" concealment="-2" total_ammo_mod="-10"/>	
+		<custom_stats ammo_offset="0" ammo_pickup_min_mul = "0.375" ammo_pickup_max_mul="0.375"/>
+		<override>
+        	<wpn_fps_ass_g36_body_standard unit="units/mods/weapons/wpn_fps_ass_g36_stanag/wpn_fps_ass_g36_body_stanag"/>
+			<wpn_fps_ass_g36_body_sl8 unit="units/mods/weapons/wpn_fps_ass_g36_stanag/wpn_fps_ass_g36_body_stanag_sl8"/>
+			<wpn_fps_ass_g36_m_standard unit="units/mods/weapons/wpn_fps_ass_g36_stanag/wpn_fps_ass_g36_m_stanag" third_unit="units/pd2_dlc_akm4_modpack/weapons/wpn_third_upg_m4_m_l5/wpn_third_upg_m4_m_l5"/>
+		<!--<wpn_fps_ass_g36_m_standard unit="units/mods/weapons/wpn_fps_ass_g36_stanag/wpn_fps_ass_g36_m_dummy" third_unit="units/mods/weapons/wpn_fps_ass_g36_stanag/wpn_fps_ass_g36_m_dummy"/>
+			<wpn_fps_ass_g36_m_dummy parent="magazine" a_obj="a_m"/>-->
+        	<wpn_fps_ass_g36_m_quick unit="units/mods/weapons/wpn_fps_ass_g36_stanag/wpn_fps_ass_g36_m_stanag" third_unit="units/pd2_dlc_akm4_modpack/weapons/wpn_third_upg_m4_m_l5/wpn_third_upg_m4_m_l5"/>
+			<wpn_fps_ass_g36_o_ncstar_micro parent="exclusive_set" a_obj="a_o_stanag"/>
+			<wpn_fps_upg_g36_fg_long>
+				<adds>
+					<value_node value="wpn_fps_upg_g36_b_ultra"/>
+					<value_node value="wpn_fps_upg_vg_ass_smg_adapter"/>				
+				</adds>
+			</wpn_fps_upg_g36_fg_long>	
+			<wpn_fps_ass_g36_fg_ksk>
+				<forbids>
+					<value_node value="wpn_fps_ass_g36_vg_afg_cut"/>
+				</forbids>
+			</wpn_fps_ass_g36_fg_ksk>	
+			<wpn_fps_pis_usp_fl_adapter a_obj="a_vg"/>
+		</override>
+		<adds>	
+			<value_node value="wpn_fps_ass_g36_vg_afg_cut"/>		
+		</adds>
+		<forbids>
+			<value_node value="wpn_fps_ass_g36_o_vintage"/>
+			<value_node value="wpn_fps_upg_a_underbarrel_hornet"/>	
+			<value_node value="wpn_fps_m4_uupg_o_flipup"/>			
+		</forbids>
+		<weapons>
+			<value_node value="wpn_fps_ass_g36"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_g36_vg_afg_cut" based_on="wpn_fps_smg_hajk_vg_moe" unit="units/mods/weapons/wpn_fps_ass_g36_stanag/wpn_fps_ass_g36_vg_afg_cut" third_unit="units/payday2/weapons/wpn_third_upg_vg_ass_smg_afg/wpn_third_upg_vg_ass_smg_afg" inherit_adds="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" global_value="paint_sets" type="vertical_grip" drop="false" texture_bundle_folder="mods" is_a_unlockable="false" a_obj="a_vg">
+		<weapons>
+			<value_node value="wpn_fps_ass_g36"/>
+		</weapons>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_vg_ass_smg_adapter" based_on="wpn_fps_ass_scar_body_standard" unit="units/mods/weapons/wpn_fps_ass_m4_tantone/wpn_fps_upg_vg_ass_smg_adapter" third_unit="units/mods/weapons/wpn_third_ass_m4_tantone/wpn_third_upg_vg_ass_smg_adapter" a_obj="a_vg" inherit_weapons="false" inherit_adds="true" inherit_override="true" inherit_forbids="true" type="sight" texture_bundle_folder="mods" drop="false" is_a_unlockable="false" hidden="true"/>
+
+<!-- North Star set -->
+
+	<WeaponMod id="wpn_fps_snp_victor_body_ar15" based_on="wpn_fps_ass_scar_body_standard" inherit_adds="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" global_value="paint_sets" type="exclusive_set" unit="units/mods/weapons/wpn_fps_snp_victor_ar15/wpn_fps_snp_victor_body_dummy" third_unit="units/mods/weapons/wpn_fps_snp_victor_ar15/wpn_fps_snp_victor_body_dummy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" has_description="true" desc_id="bm_wp_wpn_fps_snp_victor_body_ar15_desc">
+		<stats recoil="-5" spread="3" damage="0" concealment="-5" total_ammo_mod="0"/>	
+		<custom_stats ammo_offset="0" fire_rate_multiplier="2" />
+		<override>
+			<wpn_fps_snp_victor_body_receiver_upper unit="units/payday2/weapons/wpn_fps_ass_m4_pts/wpn_fps_m4_upper_reciever_round" third_unit="units/payday2/weapons/wpn_third_ass_m4_pts/wpn_third_m4_upper_reciever_round" parent="exclusive_set" a_obj="a_body"/>
+			<wpn_fps_snp_victor_body_receiver_lower unit="units/payday2/weapons/wpn_fps_ass_m4_pts/wpn_fps_m4_lower_reciever" third_unit="units/payday2/weapons/wpn_third_ass_m4_pts/wpn_third_m4_lower_reciever" parent="exclusive_set" a_obj="a_body"/>
+			<wpn_fps_snp_victor_bolt_standard unit="units/mods/weapons/wpn_fps_snp_victor_ar15/wpn_fps_snp_victor_bolt_ar15" />
+			<wpn_fps_snp_victor_dh_standard unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_fps_ass_tecci_dh_standard" third_unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_third_ass_tecci_dh_standard" parent="exclusive_set"/>
+			<wpn_fps_snp_victor_dhs_switch unit="units/mods/weapons/wpn_fps_snp_victor_ar15/wpn_fps_snp_victor_body_dummy" third_unit="units/mods/weapons/wpn_fps_snp_victor_ar15/wpn_fps_snp_victor_body_dummy" parent="exclusive_set" a_obj="a_dh"/>
+			<wpn_fps_snp_victor_s_adapter unit="units/payday2/weapons/wpn_fps_upg_m4_reusable/wpn_fps_upg_m4_s_adapter" third_unit="units/payday2/weapons/wpn_third_upg_m4_reusable/wpn_third_upg_m4_s_adapter" parent="exclusive_set"/>
+			<wpn_fps_snp_victor_fg_standard unit="units/mods/weapons/wpn_fps_snp_victor_ar15/wpn_fps_snp_victor_fg_msr" third_unit="units/mods/weapons/wpn_third_snp_victor_ar15/wpn_third_snp_victor_fg_msr" parent="exclusive_set" a_obj="a_fg"/>
+
+			<wpn_fps_snp_victor_m_1 unit="units/mods/weapons/wpn_fps_snp_victor_ar15/wpn_fps_snp_victor_m_ar15_1" third_unit="units/mods/weapons/wpn_third_snp_victor_ar15/wpn_third_snp_victor_m_ar15"/>
+			<wpn_fps_snp_victor_m_2 unit="units/mods/weapons/wpn_fps_snp_victor_ar15/wpn_fps_snp_victor_m_ar15_2" third_unit="units/mods/weapons/wpn_third_snp_victor_ar15/wpn_third_snp_victor_m_ar15"/>
+
+			<wpn_fps_snp_victor_vg_hera unit="units/mods/weapons/wpn_fps_snp_victor_ar15/wpn_fps_snp_victor_vg_ar15" third_unit="units/payday2/weapons/wpn_third_upg_vg_ass_smg_afg/wpn_third_upg_vg_ass_smg_afg" parent="exclusive_set" a_obj="a_vg"/>
+			<wpn_fps_upg_vg_ass_smg_stubby parent="exclusive_set" a_obj="a_vg"/>
+			<wpn_fps_upg_vg_ass_smg_verticalgrip parent="exclusive_set" a_obj="a_vg"/>
+			<wpn_fps_upg_vg_ass_smg_afg parent="exclusive_set" a_obj="a_vg"/>
+			<wpn_fps_smg_schakal_vg_surefire parent="exclusive_set" a_obj="a_vg"/>
+
+			<wpn_fps_snp_victor_ns_omega unit="units/mods/weapons/wpn_fps_snp_victor_ar15/wpn_fps_snp_victor_ns_medium" third_unit="units/payday2/weapons/wpn_third_upg_ns_ass_smg_medium/wpn_third_upg_ns_ass_smg_medium"/>
+
+			<wpn_fps_upg_m4_s_pts parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_upg_m4_s_crane parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_upg_m4_s_mk46 parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_upg_m4_s_ubr parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_snp_tti_s_vltor parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_sho_sko12_stock parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_snp_victor_s_mod0 parent="exclusive_set" a_obj="a_s" />			
+			<wpn_fps_upg_m4_s_standard parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_upg_m4_s_standard_vanilla parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_m4_uupg_s_fold parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_m4_uupg_s_zulu parent="exclusive_set" a_obj="a_s" />
+
+            <wpn_fps_upg_m4_g_hgrip parent="exclusive_set" a_obj="a_g" />
+            <wpn_fps_upg_m4_g_mgrip parent="exclusive_set" a_obj="a_g" />
+			<wpn_fps_upg_m4_g_ergo parent="exclusive_set" a_obj="a_g" />
+			<wpn_fps_upg_m4_g_sniper parent="exclusive_set" a_obj="a_g" />
+			<wpn_fps_snp_tti_g_grippy parent="exclusive_set" a_obj="a_g" />
+			<wpn_fps_sho_sko12_body_grip parent="exclusive_set" a_obj="a_g" />
+			<wpn_fps_upg_g_m4_surgeon parent="exclusive_set" a_obj="a_g" />
+			<wpn_fps_snp_victor_g_mod3 parent="exclusive_set" a_obj="a_g" />
+			<wpn_fps_m4_uupg_g_billet parent="exclusive_set" a_obj="a_g" />		
+			<wpn_fps_sho_m590_g_standard parent="exclusive_set" a_obj="a_g" />
+			<wpn_fps_upg_m4_g_standard parent="exclusive_set" a_obj="a_g" /> 		
+			<wpn_fps_upg_m4_g_standard_vanilla parent="exclusive_set" a_obj="a_g" /> 	
+			
+            <wpn_fps_upg_charm_bag parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_dallas parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_grenade parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_piggy parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_cloaker parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_skulldozer parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_pyramid parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_toast parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_diamond parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_musket parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_pumpkin parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_skullz parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_choco parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_flake parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_igloo parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_snow parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_ball parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_lusse parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_tiger parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_cactus parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_cowboy_hat parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_horseshoe parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_nascar parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_pokerchip parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_rangerbadge parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_beer parent="exclusive_set" a_obj="a_charm"/>
+	        <wpn_fps_upg_charm_foam parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_teddymoo parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_piggy_gold parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_rooster parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_skull parent="exclusive_set" a_obj="a_charm"/>
+
+			<wpn_fps_addon_ris	unit="units/mods/weapons/wpn_fps_snp_victor_ar15/wpn_fps_snp_victor_body_dummy" third_unit="units/mods/weapons/wpn_fps_snp_victor_ar15/wpn_fps_snp_victor_body_dummy"/>
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="exclusive_set" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_ass_smg_sho_surefire parent="exclusive_set" a_obj="a_fl" />	
+        	<wpn_fps_upg_fl_ass_peq15 parent="exclusive_set" a_obj="a_fl" />	
+        	<wpn_fps_upg_fl_ass_laser parent="exclusive_set" a_obj="a_fl" />	
+        	<wpn_fps_upg_fl_ass_utg parent="exclusive_set" a_obj="a_fl" />	
+        	<wpn_fps_upg_fl_dbal_laser parent="exclusive_set" a_obj="a_fl" />	
+        	<wpn_fps_smg_schakal_vg_surefire_flashlight parent="exclusive_set" a_obj="a_fl" />				
+	
+		<!--<wpn_fps_upg_o_sig parent="sight" />		
+			<wpn_fps_upg_o_xpsg33_magnifier parent="sight" />	
+			
+			<wpn_fps_upg_o_specter parent="exclusive_set" a_obj="a_o"/>			
+			<wpn_fps_upg_o_docter parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_eotech parent="exclusive_set" a_obj="a_o"/>		
+			<wpn_fps_upg_o_t1micro parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_cmore parent="exclusive_set" a_obj="a_o"/>						
+			<wpn_fps_upg_o_tf90 parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_aimpoint parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_aimpoint_2 parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_acog parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_eotech_xps parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_reflex parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_rx01 parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_rx30 parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_cs parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_spot parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_poe parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_bmg parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_uh parent="exclusive_set" a_obj="a_o"/>		
+			<wpn_fps_upg_o_fc1 parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_sig parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_health parent= "exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_atibal parent= "exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_hamr parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_shortdot parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_northtac parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_box parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_leupold parent="exclusive_set" a_obj="a_o"/>		
+			
+			<wpn_fps_upg_o_hamr_reddot parent="exclusive_set" a_obj="a_o"/>					
+			<wpn_fps_upg_o_atibal_reddot parent="exclusive_set" a_obj="a_o">
+				<stance_mod>
+					<wpn_fps_snp_victor rotation="0 0 0 1" translation="-0.1 0 -6.2" />
+				</stance_mod>
+			</wpn_fps_upg_o_atibal_reddot>
+
+			<wpn_fps_upg_o_shortdot parent="exclusive_set" a_obj="a_o"/>			
+			<wpn_fps_upg_o_leupold parent="exclusive_set" a_obj="a_o"/>		
+			<wpn_fps_upg_o_box parent="exclusive_set" a_obj="a_o"/>			
+			<wpn_fps_upg_o_northtac parent="exclusive_set" a_obj="a_o"/>		
+			<wpn_fps_upg_o_northtac_reddot parent="exclusive_set" a_obj="a_o">
+				<stance_mod>
+					<wpn_fps_snp_victor rotation="0 0 0 1" translation="0 0 -5.4" />
+				</stance_mod>
+			</wpn_fps_upg_o_northtac_reddot>			
+			<wpn_fps_upg_o_schmidt parent="exclusive_set" a_obj="a_o"/>		
+
+			<wpn_fps_upg_o_specter_piggyback parent="exclusive_set" a_obj="a_o">
+				<stance_mod>
+					<wpn_fps_snp_victor rotation="0 0 0 1" translation="0 0 -3.3" />
+				</stance_mod>
+			</wpn_fps_upg_o_specter_piggyback>		
+			
+			<wpn_fps_upg_o_cs_piggyback parent="exclusive_set" a_obj="a_o">
+				<stance_mod>
+					<wpn_fps_snp_victor rotation="0 0 0 1" translation="0 0 -3.5" />
+				</stance_mod>
+			</wpn_fps_upg_o_cs_piggyback>	
+			
+			<wpn_fps_snp_victor_o_standard parent="exclusive_set" a_obj="a_o" third_unit="units/payday2/weapons/wpn_third_ass_m4_pts/wpn_third_m4_uupg_o_flipup_emo">
+			
+			</wpn_fps_snp_victor_o_standard>
+			<wpn_fps_snp_victor_o_down parent="exclusive_set" a_obj="a_o" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>	-->
+
+			<wpn_fps_snp_victor_o_standard parent="exclusive_set" a_obj="a_o" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy">
+				<adds>
+					<value_node value="wpn_fps_upg_o_mbus_rear"/>
+					<value_node value="wpn_fps_upg_o_mbus_front"/>
+				</adds>
+			</wpn_fps_snp_victor_o_standard>
+			<wpn_fps_snp_victor_o_down parent="exclusive_set" a_obj="a_o" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>	
+
+			<wpn_fps_upg_o_mbus_rear parent="exclusive_set" a_obj="a_o_iron_1" >	
+				<stance_mod>
+					<wpn_fps_snp_victor rotation="0 0 0 1" translation="0 0 -0.2" />
+				</stance_mod>
+			</wpn_fps_upg_o_mbus_rear>				
+			<wpn_fps_upg_o_mbus_front parent="exclusive_set" a_obj="a_o_iron_2" />	
+
+			<wpn_fps_snp_victor_ns_standard unit="units/pd2_dlc_savi/weapons/wpn_fps_snp_victor_pts/wpn_fps_snp_victor_ns_hera_muzzle" third_unit="units/pd2_dlc_savi/weapons/wpn_third_snp_victor_pts/wpn_third_snp_victor_ns_hera_muzzle" />						
+			<wpn_fps_snp_victor_b_standard parent="exclusive_set" a_obj="a_b"/>				
+			<wpn_fps_m4_uupg_b_long parent="exclusive_set" a_obj="a_b"/>			
+		</override>
+	<!--<forbids>		
+			<value_node value="wpn_fps_upg_o_45rds_v2"/>
+			<value_node value="wpn_fps_upg_o_45rds"/>
+			<value_node value="wpn_fps_upg_o_45steel"/>	
+			<value_node value="wpn_fps_upg_o_45iron"/>		
+		</forbids>-->
+		<weapons>
+			<value_node value="wpn_fps_snp_victor"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+
+<!-- Sporty 1911 set -->
+
+	<WeaponMod id="wpn_fps_pis_1911_body_sporty" based_on="wpn_fps_upg_o_cmore" unit="units/mods/weapons/wpn_fps_pis_1911_sporty/wpn_fps_pis_1911_scopemount_sporty" third_unit="units/mods/weapons/wpn_third_pis_1911_sporty/wpn_third_pis_1911_scopemount_sporty" a_obj="a_body" type="exclusive_set" drop="false" is_a_unlockable="true" global_value="paint_sets" has_description="true" desc_id="bm_wp_wpn_fps_pis_1911_body_sporty_desc">
+		<stats damage="0" spread="3" reload="2" recoil="-5" concealment="-2" />
+		<custom_stats ammo_offset="0" fire_rate_multiplier="1.5" />
+		<stance_mod>
+			<wpn_fps_pis_1911 translation="0 -25 -4.2"/>
+		</stance_mod>
+		<adds>
+			<value_node value="wpn_fps_upg_o_cmore"/>
+			<value_node value="wpn_fps_pis_1911_magwell"/>				
+		</adds>
+		<override>
+			<wpn_fps_upg_o_cmore parent="exclusive_set" a_obj="a_scope"/>
+			<wpn_fps_pis_1911_body_standard unit="units/mods/weapons/wpn_fps_pis_1911_sporty/wpn_fps_pis_1911_body_sporty"/>
+			<wpn_fps_pis_1911_g_standard unit="units/mods/weapons/wpn_fps_pis_1911_sporty/wpn_fps_pis_1911_g_sporty"/>
+            <wpn_fps_pis_1911_b_standard unit="units/mods/weapons/wpn_fps_pis_1911_sporty/wpn_fps_pis_1911_b_sporty"/>
+		</override>
+		<pcs/>
+		<weapons>
+			<value_node value="wpn_fps_pis_1911"/>
+		</weapons>
+		<forbids>	
+			<value_node value="wpn_upg_o_marksmansight_rear"/>	
+			<value_node value="wpn_fps_upg_o_rmr"/>		
+			<value_node value="wpn_fps_upg_o_rms"/>			
+			<value_node value="wpn_fps_upg_o_rikt"/>
+
+			<value_node value="wpn_fps_pis_1911_g_bling"/>				
+			<value_node value="wpn_fps_pis_1911_g_ergo"/>	
+			<value_node value="wpn_upg_o_marksmansight_rear"/>	
+			<value_node value="wpn_fps_pis_1911_b_long"/>	
+			<value_node value="wpn_fps_pis_1911_b_vented"/>	
+			<value_node value="wpn_fps_pis_1911_g_engraved"/>	
+			
+			<value_node value="wpn_fps_pis_1911_m_big"/>				
+		</forbids>	
+	</WeaponMod>	
+
+	<WeaponMod id="wpn_fps_pis_1911_magwell" based_on="wpn_fps_ass_scar_body_standard" unit="units/mods/weapons/wpn_fps_pis_1911_sporty/wpn_fps_pis_1911_magwell" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" inherit_weapons="false" inherit_adds="true" inherit_override="true" inherit_forbids="true" type="sight" texture_bundle_folder="mods" drop="false" is_a_unlockable="true" hidden="true"/>
+
+	<WeaponMod id="wpn_fps_pis_1911_scopemount_sporty" based_on="wpn_fps_ass_scar_body_standard" unit="units/mods/weapons/wpn_fps_pis_1911_sporty/wpn_fps_pis_1911_scopemount_sporty" third_unit="units/mods/weapons/wpn_third_pis_1911_sporty/wpn_third_pis_1911_scopemount_sporty" a_obj="a_body" inherit_weapons="false" inherit_adds="true" inherit_override="true" inherit_forbids="true" type="sight" texture_bundle_folder="mods" drop="false" is_a_unlockable="true" hidden="true"/>
+
+	<WeaponMod id="wpn_fps_pis_x_1911_body_sporty" based_on="wpn_fps_pis_1911_g_standard" unit="units/mods/weapons/wpn_fps_pis_1911_sporty/wpn_fps_pis_1911_scopemount_sporty" third_unit="units/mods/weapons/wpn_third_pis_1911_sporty/wpn_third_pis_1911_scopemount_sporty" a_obj="a_body" type="exclusive_set" drop="false" is_a_unlockable="true" global_value="paint_sets" has_description="true" desc_id="bm_wp_wpn_fps_pis_1911_body_sporty_desc">
+		<stats damage="0" spread="3" reload="2" recoil="-5" concealment="-2" />
+		<custom_stats ammo_offset="0" fire_rate_multiplier="1.5" />
+		<adds>
+			<value_node value="wpn_fps_pis_1911_magwell"/>		
+			<value_node value="wpn_fps_upg_fl_ass_laser"/>					
+		</adds>
+		<override>
+			<wpn_fps_pis_1911_body_standard unit="units/mods/weapons/wpn_fps_pis_1911_sporty/wpn_fps_pis_1911_body_sporty"/>
+			<wpn_fps_pis_1911_g_standard unit="units/mods/weapons/wpn_fps_pis_1911_sporty/wpn_fps_pis_1911_g_sporty"/>
+            <wpn_fps_pis_1911_b_standard unit="units/mods/weapons/wpn_fps_pis_1911_sporty/wpn_fps_pis_1911_b_sporty"/>
+            <wpn_fps_upg_fl_ass_smg_sho_surefire parent="exclusive_set" a_obj="a_fl"/>
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="exclusive_set" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_ass_peq15 parent="exclusive_set" a_obj="a_fl" />	
+        	<wpn_fps_upg_fl_ass_laser parent="exclusive_set" a_obj="a_fl" />	
+        	<wpn_fps_upg_fl_ass_utg parent="exclusive_set" a_obj="a_fl" />	
+        	<wpn_fps_upg_fl_dbal_laser parent="exclusive_set" a_obj="a_fl" />	
+		</override>
+		<pcs/>
+		<weapons>
+			<value_node value="wpn_fps_x_1911"/>
+		</weapons>
+		<forbids>	
+			<value_node value="wpn_upg_o_marksmansight_rear"/>	
+			<value_node value="wpn_fps_upg_o_rmr"/>		
+			<value_node value="wpn_fps_upg_o_rms"/>			
+			<value_node value="wpn_fps_upg_o_rikt"/>
+
+			<value_node value="wpn_fps_pis_1911_g_bling"/>				
+			<value_node value="wpn_fps_pis_1911_g_ergo"/>	
+			<value_node value="wpn_upg_o_marksmansight_rear"/>	
+			<value_node value="wpn_fps_pis_1911_b_long"/>	
+			<value_node value="wpn_fps_pis_1911_b_vented"/>	
+			<value_node value="wpn_fps_pis_1911_g_engraved"/>	
+			
+			<value_node value="wpn_fps_pis_1911_m_big"/>				
+		</forbids>	
+	</WeaponMod>	
+
+<!-- Golden Krinkov set -->
+
+	<WeaponMod id="wpn_fps_smg_akmsu_body_gold" based_on="wpn_fps_smg_akmsu_body_lowerreceiver" unit="units/payday2/weapons/wpn_fps_ass_akm/wpn_fps_ass_akm" third_unit="units/payday2/weapons/wpn_fps_ass_akm/wpn_fps_ass_akm" type="exclusive_set" drop="false" is_a_unlockable="true" inherit_weapons="false" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="false" global_value="paint_sets" has_description="true" desc_id="bm_wp_wpn_fps_smg_akmsu_body_gold_desc" hidden="false">
+		<stats spread="2" concealment="-2"/>
+		<override>
+			<wpn_fps_smg_akmsu_body_lowerreceiver unit="units/mods/weapons/wpn_fps_smg_akmsu_gold/wpn_fps_smg_akmsu_body_lowerreceiver_gold" third_unit="units/mods/weapons/wpn_third_smg_akmsu_gold/wpn_third_smg_akmsu_body_lowerreceiver_gold"/>
+			<wpn_fps_ass_akm_body_upperreceiver unit="units/payday2/weapons/wpn_fps_ass_akm_gold_pts/wpn_fps_ass_akm_body_upperreceiver_gold" third_unit="units/payday2/weapons/wpn_third_ass_akm_pts/wpn_third_ass_akm_body_upperreceiver_gold"/>
+			<wpn_fps_ass_akm_body_upperreceiver_vanilla unit="units/payday2/weapons/wpn_fps_ass_akm_gold_pts/wpn_fps_ass_akm_body_upperreceiver_gold" third_unit="units/payday2/weapons/wpn_third_ass_akm_pts/wpn_third_ass_akm_body_upperreceiver_gold"/>
+			<wpn_fps_ak_bolt unit="units/mods/weapons/wpn_fps_smg_akmsu_gold/wpn_fps_ak_bolt_gold"/>
+			<wpn_upg_ak_s_folding_vanilla unit="units/payday2/weapons/wpn_fps_upg_ak_reusable/wpn_upg_ak_s_folding_gold" third_unit="units/payday2/weapons/wpn_third_upg_ak_reusable/wpn_third_upg_ak_s_folding_gold"/>
+			<wpn_fps_smg_akmsu_fg_standard unit="units/mods/weapons/wpn_fps_smg_akmsu_gold/wpn_fps_smg_akmsu_fg_birch"/>
+			<wpn_fps_smg_akmsu_b_standard unit="units/mods/weapons/wpn_fps_smg_akmsu_gold/wpn_fps_smg_akmsu_b_gold"/>
+			<wpn_fps_lmg_rpk_s_wood unit="units/mods/weapons/wpn_fps_smg_akmsu_gold/wpn_fps_smg_akmsu_s_gold" third_unit="units/mods/weapons/wpn_third_smg_akmsu_gold/wpn_third_smg_akmsu_s_gold"/>		
+			<wpn_upg_ak_m_akm unit="units/payday2/weapons/wpn_fps_upg_ak_reusable/wpn_upg_ak_m_akm_gold" third_unit="units/payday2/weapons/wpn_third_upg_ak_reusable/wpn_third_upg_ak_m_akm_gold"/>	
+		</override>
+		<pcs/>
+		<weapons>
+			<value_node value="wpn_fps_smg_akmsu"/>
+			<value_node value="wpn_fps_smg_x_akmsu"/>
+		</weapons>
+	</WeaponMod>
+
+<!-- v3 starts here -->
+<!-- Sterling 5.7mm set -->
+
+	<WeaponMod id="wpn_fps_smg_sterling_body_pdw" based_on="wpn_fps_smg_sterling_body_standard" inherit_adds="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" global_value="paint_sets" type="exclusive_set" unit="units/mods/weapons/wpn_fps_smg_sterling_pdw/wpn_fps_smg_sterling_base_pdw" third_unit="units/mods/weapons/wpn_fps_smg_sterling_pdw/wpn_fps_smg_sterling_base_pdw" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" has_description="true" desc_id="bm_wp_wpn_fps_smg_sterling_body_pdw_desc">
+		<stats recoil="-3" spread="2" damage="-30" concealment="-2" total_ammo_mod="5" alert_size="12" suppression="12"/>	
+		<custom_stats ammo_offset="14" ammo_pickup_min_mul = "1.60142348754" ammo_pickup_max_mul="1.5625" fire_rate_multiplier="1.19565217391"/>
+		<perks>
+			<value_node value="silencer"/>			
+		</perks>
+		<sound_switch suppressed="suppressed_c"/>
+		<override>
+        	<wpn_fps_smg_sterling_b_standard unit="units/mods/weapons/wpn_fps_smg_sterling_pdw/wpn_fps_smg_sterling_b_pdw"/>
+			<wpn_fps_m4_upg_ns_mk12 unit="units/mods/weapons/wpn_fps_smg_sterling_pdw/wpn_fps_smg_sterling_ns_pdw_supp" parent="exclusive_set" a_obj="a_fg"/>
+        	<wpn_fps_smg_sterling_m_medium unit="units/mods/weapons/wpn_fps_smg_sterling_pdw/wpn_fps_smg_sterling_m_pdw"/>
+		</override>
+		<forbids>
+			<value_node value="wpn_fps_smg_sterling_b_long"/>
+			<value_node value="wpn_fps_smg_sterling_b_short"/>	
+			<value_node value="wpn_fps_smg_sterling_b_e11"/>		
+			<value_node value="wpn_fps_smg_sterling_b_suppressed"/>			
+
+			<value_node value="wpn_fps_smg_sterling_m_long"/>		
+			<value_node value="wpn_fps_smg_sterling_m_short"/>	
+
+			<value_node value="wpn_fps_ass_g36_b_short"/>	
+			<value_node value="wpn_fps_ass_g36_b_ultra"/>	
+
+			<value_node value="wpn_fps_upg_ns_ass_smg_large"/>	
+			<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>	
+			<value_node value="wpn_fps_upg_ns_ass_smg_small"/>	
+			<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>	
+			<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>	
+			<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>	
+			<value_node value="wpn_fps_lmg_kacchainsaw_ns_muzzle"/>	
+			<value_node value="wpn_fps_lmg_kacchainsaw_ns_suppressor"/>	
+			<value_node value="wpn_fps_upg_ass_ns_jprifles"/>	
+			<value_node value="wpn_fps_upg_ass_ns_linear"/>	
+			<value_node value="wpn_fps_upg_ass_ns_surefire"/>	
+			<value_node value="wpn_fps_upg_ass_ns_battle"/>	
+			<value_node value="wpn_fps_upg_ns_ass_smg_v6"/>	
+			<value_node value="wpn_fps_ass_shak12_ns_suppressor"/>	
+			<value_node value="wpn_fps_ass_shak12_ns_muzzle"/>	
+			<value_node value="wpn_fps_lmg_hk51b_ns_jcomp"/>	
+
+<!-- Muzzle devices added to the G36's attachment pool by Restoration Mod -->
+	
+			<value_node value="wpn_fps_snp_victor_ns_omega"/>	
+			<value_node value="wpn_fps_snp_msr_ns_suppressor"/>				
+			<value_node value="wpn_fps_smg_cobray_ns_silencer"/>	
+			<value_node value="wpn_fps_smg_polymer_ns_silencer"/>	
+			<value_node value="wpn_fps_smg_schakal_ns_silencer"/>	
+			<value_node value="wpn_fps_smg_mp7_b_suppressed"/>	
+			<value_node value="wpn_fps_upg_ns_ass_filter"/>	
+			<value_node value="wpn_fps_upg_ak_ns_tgp"/>	
+			<value_node value="wpn_fps_snp_awp_ns_muzzle"/>				
+		</forbids>
+		<adds>
+			<value_node value="wpn_fps_m4_upg_ns_mk12"/>
+			<value_node value="wpn_fps_smg_sterling_pdw_sound"/>
+		</adds>
+		<weapons>
+			<value_node value="wpn_fps_smg_sterling"/>
+			<value_node value="wpn_fps_smg_x_sterling"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_sterling_pdw_sound" based_on="wpn_fps_lmg_hcar_ck_switch" inherit_adds="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" global_value="paint_sets" type="ammo" unit="units/pd2_dlc_grv/weapons/wpn_fps_smg_coal/wpn_fps_smg_coal" third_unit="units/pd2_dlc_grv/weapons/wpn_fps_smg_coal/wpn_fps_smg_coal" internal_part="true" drop="false" texture_bundle_folder="mods" is_a_unlockable="false">
+		<custom_stats>
+			<sounds fire="coal_fire_single" fire_single="coal_fire_single" stop_fire="coal_stop" fire_auto="coal_fire"/>
+		</custom_stats>
+		<weapons>
+			<value_node value="wpn_fps_smg_sterling"/>
+		</weapons>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_x_sterling_pdw_sound" based_on="wpn_fps_lmg_hcar_ck_switch" inherit_adds="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" global_value="paint_sets" type="ammo" unit="units/pd2_dlc_osa/weapons/wpn_fps_smg_x_coal/wpn_fps_smg_x_coal" third_unit="units/pd2_dlc_osa/weapons/wpn_fps_smg_x_coal/wpn_fps_smg_x_coal" internal_part="true" drop="false" texture_bundle_folder="mods" is_a_unlockable="false">
+		<custom_stats>
+			<sounds fire="coal_x_fire_single" fire_single="coal_x_fire_single" stop_fire="coal_x_stop" fire_auto="coal_x_fire"/>
+		</custom_stats>
+		<weapons>
+			<value_node value="wpn_fps_smg_x_sterling"/>
+		</weapons>
+	</WeaponMod>
+
+<!-- Modernshit AKM -->
+
+	<WeaponMod id="wpn_fps_ass_akm_body_tacticool" based_on="wpn_fps_ass_akm_body_upperreceiver" unit="units/mods/weapons/wpn_fps_ass_ak_creedmoor/wpn_fps_ass_ak_upper_creedmoor" third_unit="units/mods/weapons/wpn_third_ass_ak_creedmoor/wpn_third_ass_ak_upper_creedmoor" inherit_adds="false" inherit_parts_override="false" inherit_forbids="false" inherit_override="false" inherit_parts_forbids="false" global_value="paint_sets" type="exclusive_set" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" has_description="true" desc_id="bm_wp_wpn_fps_ass_akm_body_tacticool_desc">
+		<stats damage="2" spread="0" recoil="4" concealment="-2"/>	<!--This is equivalent to having the Lightweight Rail and Takita Railed Cover equipped -->
+		<stance_mod>
+			<wpn_fps_ass_akm rotation="0 0 0 1" translation="0 20 -0.01183"/>
+			<wpn_fps_ass_74 rotation="0 0 0 1" translation="0 20 -0.01183"/>
+		</stance_mod>
+		<sound_switch suppressed="regular_b"/>
+		<override>
+			<wpn_fps_ass_akm_body_upperreceiver_vanilla unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>	
+			<wpn_fps_ass_74_body_upperreceiver unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>	
+			<wpn_upg_ak_g_standard unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy">
+				<adds>
+					<value_node value="wpn_fps_ass_ak_g_creedmoor"/>
+				</adds>			
+			</wpn_upg_ak_g_standard>
+			<wpn_upg_ak_s_psl>
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_g_creedmoor"/>
+				</forbids>			
+			</wpn_upg_ak_s_psl>
+        	<wpn_fps_ass_akm_b_standard unit="units/mods/weapons/wpn_fps_ass_akm_tacticool/wpn_fps_ass_akm_b_tacticool_dummy" third_unit="units/payday2/weapons/wpn_third_ass_74_pts/wpn_third_ass_74_b_standard"/>
+        	<wpn_fps_ass_74_b_standard unit="units/mods/weapons/wpn_fps_ass_akm_tacticool/wpn_fps_ass_akm_b_tacticool_dummy" third_unit="units/payday2/weapons/wpn_third_ass_74_pts/wpn_third_ass_74_b_standard"/>
+            <wpn_upg_ak_fg_standard unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy">
+				<override/>
+			</wpn_upg_ak_fg_standard>
+
+			<wpn_fps_addon_ris unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>	
+
+        	<wpn_fps_upg_fl_ass_smg_sho_peqbox>
+				<forbids>
+					<value_node value="wpn_fps_ass_akm_fg_railcover_gadget"/>
+				</forbids>					
+			</wpn_fps_upg_fl_ass_smg_sho_peqbox>
+        	<wpn_fps_upg_fl_ass_smg_sho_surefire>
+				<forbids>
+					<value_node value="wpn_fps_ass_akm_fg_railcover_gadget"/>
+				</forbids>					
+			</wpn_fps_upg_fl_ass_smg_sho_surefire>
+        	<wpn_fps_upg_fl_ass_peq15>
+				<forbids>
+					<value_node value="wpn_fps_ass_akm_fg_railcover_gadget"/>
+				</forbids>					
+			</wpn_fps_upg_fl_ass_peq15>
+        	<wpn_fps_upg_fl_ass_laser>
+				<forbids>
+					<value_node value="wpn_fps_ass_akm_fg_railcover_gadget"/>
+				</forbids>					
+			</wpn_fps_upg_fl_ass_laser>
+        	<wpn_fps_upg_fl_ass_utg>
+				<forbids>
+					<value_node value="wpn_fps_ass_akm_fg_railcover_gadget"/>
+				</forbids>					
+			</wpn_fps_upg_fl_ass_utg>
+        	<wpn_fps_upg_fl_dbal_laser>
+				<forbids>
+					<value_node value="wpn_fps_ass_akm_fg_railcover_gadget"/>
+				</forbids>					
+			</wpn_fps_upg_fl_dbal_laser>
+
+			<!-- if bread in french is "pain" then Je possède une putain de boulangerie -->
+			
+			<wpn_fps_upg_o_specter parent="exclusive_set" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_specter>		
+			
+			<wpn_fps_upg_o_aimpoint parent="exclusive_set" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_aimpoint>			
+			
+			<wpn_fps_upg_o_docter parent="exclusive_set" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_docter>			
+			
+			<wpn_fps_upg_o_eotech parent="exclusive_set" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_eotech>			
+			
+			<wpn_fps_upg_o_t1micro parent="exclusive_set" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_t1micro>			
+			
+			<wpn_fps_upg_o_cmore parent="exclusive_set" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_cmore>					
+			
+			<wpn_fps_upg_o_tf90 parent="exclusive_set" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_tf90>			
+			
+			<wpn_fps_upg_o_aimpoint parent="exclusive_set" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_aimpoint>
+			
+			<wpn_fps_upg_o_aimpoint_2 parent="exclusive_set" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_aimpoint_2>	
+			
+			<wpn_fps_upg_o_acog parent="exclusive_set" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_acog>		
+			
+			<wpn_fps_upg_o_eotech_xps parent="exclusive_set" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_eotech_xps>		
+			
+			<wpn_fps_upg_o_reflex parent="exclusive_set" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_reflex>			
+			
+			<wpn_fps_upg_o_rx01 parent="exclusive_set" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_rx01>	
+			
+			<wpn_fps_upg_o_rx30 parent="exclusive_set" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_rx30>			
+			
+			<wpn_fps_upg_o_cs parent="exclusive_set" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_cs>		
+			
+			<wpn_fps_upg_o_spot parent="exclusive_set" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_spot>		
+			
+			<wpn_fps_upg_o_poe parent="exclusive_set" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_poe>	
+			
+			<wpn_fps_upg_o_bmg parent="exclusive_set" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_bmg>
+			
+			<wpn_fps_upg_o_fc1 parent="exclusive_set" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_fc1>	
+			
+			<wpn_fps_upg_o_health parent="exclusive_set" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_health>		
+			
+			<wpn_fps_upg_o_atibal parent="exclusive_set" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_atibal>			
+			
+			<wpn_fps_upg_o_hamr parent="exclusive_set" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_hamr>	
+			
+			<wpn_fps_upg_o_hamr_reddot parent="exclusive_set" a_obj="a_o">
+				<stance_mod>
+					<wpn_fps_ass_akm rotation="0 0 0 1" translation="0 -10 0"/>
+					<wpn_fps_ass_74 rotation="0 0 0 1" translation="0 -10 0"/>
+				</stance_mod>
+			</wpn_fps_upg_o_hamr_reddot>
+			
+			<wpn_fps_upg_o_atibal_reddot parent="exclusive_set" a_obj="a_o">	
+				<stance_mod>
+					<wpn_fps_ass_akm rotation="0 0 0 1" translation="0 -10 0"/>
+					<wpn_fps_ass_74 rotation="0 0 0 1" translation="0 -10 0"/>
+				</stance_mod>
+			</wpn_fps_upg_o_atibal_reddot>	
+			
+			<wpn_fps_upg_o_uh parent="exclusive_set" a_obj="a_o">
+				<forbids>
+					<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>	
+				</forbids>
+			</wpn_fps_upg_o_uh>
+
+			<wpn_fps_upg_o_hamr_reddot parent="exclusive_set" a_obj="a_o"/>					
+			<wpn_fps_upg_o_atibal_reddot parent="exclusive_set" a_obj="a_o"/>	
+
+			<wpn_fps_upg_o_shortdot parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_northtac parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_northtac_reddot parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_box parent="exclusive_set" a_obj="a_o"/>		
+			<wpn_fps_upg_o_leupold parent="exclusive_set" a_obj="a_o"/>
+
+			<wpn_fps_upg_o_45rds_v2 parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_45rds parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_45steel parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_45iron parent="exclusive_set" a_obj="a_o"/>			
+		</override>
+		<adds>
+			<value_node value="wpn_fps_ass_akm_fg_tacticool"/>		
+			<value_node value="wpn_fps_ass_akm_fg_railcover"/>	
+			<value_node value="wpn_fps_ass_akm_fg_railcover_gadget"/>	
+			<value_node value="wpn_fps_ass_ak_o_creedmoor_dummy"/>		
+			<value_node value="wpn_fps_ass_akm_b_tacticool"/>	
+			<value_node value="wpn_fps_ass_akm_tacticool_upper"/>				
+		</adds>
+		<forbids>		
+			<value_node value="wpn_upg_ak_fg_combo1"/>		
+			<value_node value="wpn_upg_ak_fg_combo2"/>		
+			<value_node value="wpn_upg_ak_fg_combo3"/>		
+			
+			<value_node value="wpn_fps_upg_ak_g_hgrip"/>		
+			<value_node value="wpn_fps_upg_ak_g_pgrip"/>		
+			<value_node value="wpn_fps_upg_ak_g_wgrip"/>		
+			<value_node value="wpn_fps_upg_ak_fg_tapco"/>	
+			<value_node value="wpn_fps_upg_fg_midwest"/>	
+			<value_node value="wpn_fps_upg_ak_b_draco"/>	
+
+			<value_node value="wpn_fps_upg_ak_g_rk3"/>	
+
+			<value_node value="wpn_fps_upg_ak_fg_krebs"/>	
+			<value_node value="wpn_fps_upg_ak_fg_trax"/>
+			<value_node value="wpn_fps_upg_ak_b_ak105"/>	
+			<value_node value="wpn_fps_upg_ass_ak_b_zastava"/>	
+			<value_node value="wpn_fps_upg_ak_g_edg"/>	
+			<value_node value="wpn_fps_upg_ak_g_gradus"/>	
+			<value_node value="wpn_fps_upg_ak_g_rk9"/>	
+
+			<value_node value="wpn_fps_upg_ak_fg_zenitco"/>	
+			<value_node value="wpn_fps_upg_ak_body_upperreceiver_zenitco"/>	
+			<value_node value="wpn_fps_upg_o_ak_scopemount"/>	
+			<value_node value="wpn_fps_ak_extra_ris"/>	
+			<!--cursed and won't work right-->	<!-- I get what gambyt means now -->
+		</forbids>
+		<weapons>
+			<value_node value="wpn_fps_ass_akm"/>
+			<value_node value="wpn_fps_ass_74"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+
+    <!--<object enabled="true" name="g_upperreceiver" />
+        <object enabled="true" name="g_upper_rail" />-->
+
+	<WeaponMod id="wpn_fps_ass_akm_tacticool_upper" based_on="wpn_fps_ass_74_body_upperreceiver" type="foregrip_ext" a_obj="a_body" drop="false" inherit_override="true" inherit_parts_forbids="false" inherit_parts_override="false" is_a_unlockable="false">
+		<stats/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_akm_fg_railcover" based_on="wpn_fps_upg_ak_fg_combo1" type="foregrip_ext" unit="units/mods/weapons/wpn_fps_ass_akm_tacticool/wpn_fps_ass_akm_fg_railcover" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" a_obj="a_fg" drop="false" inherit_override="true" inherit_parts_forbids="false" is_a_unlockable="false">
+		<stats/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_akm_fg_railcover_gadget" based_on="wpn_fps_upg_ak_fg_combo1" type="foregrip_ext" unit="units/mods/weapons/wpn_fps_ass_akm_tacticool/wpn_fps_ass_akm_fg_railcover" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" a_obj="a_fg" drop="false" inherit_override="true" inherit_parts_forbids="false" is_a_unlockable="false">
+		<stats/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_akm_fg_tacticool" based_on="wpn_fps_upg_fg_midwest" type="foregrip_ext2" unit="units/mods/weapons/wpn_fps_ass_akm_tacticool/wpn_fps_ass_akm_fg_tacticool" third_unit="units/pd2_dlc_gage_jobs/weapons/wpn_third_upg_fg_midwest/wpn_third_upg_fg_midwest" a_obj="a_fg" drop="false" inherit_override="true" inherit_parts_forbids="false" is_a_unlockable="false">
+		<stats/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_akm_b_tacticool" based_on="wpn_fps_ass_74_b_standard" type="barrel_shitass" unit="units/mods/weapons/wpn_fps_ass_akm_tacticool/wpn_fps_ass_akm_b_tacticool" a_obj="a_b" drop="false" inherit_override="true" inherit_parts_forbids="false" is_a_unlockable="false">
+		<stats/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_s552_body_s550" based_on="wpn_fps_ass_s552_fg_standard" inherit_adds="false" a_obj="a_fg" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" global_value="paint_sets" type="exclusive_set" unit="units/mods/weapons/wpn_fps_ass_s552_s550/wpn_fps_ass_s552_fg_s550" third_unit="units/mods/weapons/wpn_third_ass_s552_s550/wpn_third_ass_s552_fg_s550" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" has_description="true" desc_id="bm_wp_wpn_fps_ass_s552_body_s550_desc">
+		<stats recoil="-4" spread="7" damage="108" concealment="-5" total_ammo_mod="-15"/>	
+		<custom_stats ammo_pickup_min_mul = "0.125" ammo_pickup_max_mul="0.09393939393" fire_rate_multiplier="0.97759103641"/> 
+		<override>
+        	<wpn_fps_ass_s552_fg_standard unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+			<wpn_fps_ass_s552_b_standard unit="units/mods/weapons/wpn_fps_ass_s552_s550/wpn_fps_ass_s552_b_s550" third_unit="units/mods/weapons/wpn_third_ass_s552_s550/wpn_third_ass_s552_b_s550"/>
+		</override>
+		<adds>	
+			<value_node value="wpn_fps_ass_s552_ns_s550"/>	
+			<value_node value="wpn_fps_ass_s552_s550_sound"/>				
+		</adds>
+		<forbids>
+			<value_node value="wpn_fps_ass_s552_b_long"/>
+			<value_node value="wpn_fps_ass_s552_fg_standard_green"/>	
+			<value_node value="wpn_fps_ass_s552_fg_railed"/>			
+		</forbids>
+		<weapons>
+			<value_node value="wpn_fps_ass_s552"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_s552_ns_s550" based_on="wpn_fps_ass_komodo_ns" type="barrel_ext" a_obj="a_ns" parent="barrel" unit="units/mods/weapons/wpn_fps_ass_s552_s550/wpn_fps_ass_s552_ns_s550" drop="false" texture_bundle_folder="mods" is_a_unlockable="false" global_value="paint_sets"/>
+
+	<WeaponMod id="wpn_fps_ass_s552_s550_sound" based_on="wpn_fps_lmg_hcar_ck_switch" inherit_adds="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" global_value="paint_sets" type="ammo" unit="units/pd2_dlc_big/weapons/wpn_fps_ass_fal/wpn_fps_ass_fal" third_unit="units/pd2_dlc_big/weapons/wpn_fps_ass_fal/wpn_fps_ass_fal" internal_part="true" drop="false" texture_bundle_folder="mods" is_a_unlockable="false">
+		<custom_stats>
+			<sounds fire="fn_fal_fire_1p_single" fire_single="fn_fal_fire_1p_single" stop_fire="fn_fal_stop" fire_auto="fn_fal_fire_1p"/>
+		</custom_stats>
+		<weapons>
+			<value_node value="wpn_fps_ass_s552"/>
+		</weapons>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_s552_m_s550" based_on="wpn_fps_ass_s552_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_ass_s552_s550/wpn_fps_ass_s552_m_s550" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" global_value="paint_sets">
+		<stats concealment="3" reload="5"/>
+		<custom_stats ammo_offset="-10"/>
+		<pcs/>
+		<bullet_objects prefix="g_bullet_" amount="20"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_s552"/>
+		</weapons>		
+	</WeaponMod>
+
+<!-- AC556 Set -->
+
+	<WeaponMod id="wpn_fps_ass_m14_body_ac556" based_on="wpn_fps_ass_m14_body_lower" inherit_adds="false" a_obj="a_body" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" global_value="paint_sets" type="exclusive_set" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" has_description="true" desc_id="bm_wp_wpn_fps_ass_m14_body_ac556_desc">
+		<stats recoil="4" spread="-5" damage="-75" concealment="19" total_ammo_mod="15"/>	
+		<custom_stats ammo_offset="20" ammo_pickup_min_mul = "2.16666666667" ammo_pickup_max_mul="1.76785714286" fire_rate_multiplier="1.06232294618"/>
+		<override>
+			<wpn_fps_ass_m14_body_dmr unit="units/mods/weapons/wpn_fps_ass_m14_ac556/wpn_fps_ass_m14_body_ac556" third_unit="units/mods/weapons/wpn_third_ass_m14_ac556/wpn_third_ass_m14_body_ac556"/>
+        	<wpn_fps_ass_m14_body_upper unit="units/mods/weapons/wpn_fps_ass_m14_ac556/wpn_fps_ass_m14_base_ac556" third_unit="units/mods/weapons/wpn_third_ass_m14_ac556/wpn_third_ass_m14_base_ac556"/>
+        	<wpn_fps_ass_m14_body_lower unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+			<wpn_fps_ass_m14_b_standard unit="units/mods/weapons/wpn_fps_ass_m14_ac556/wpn_fps_ass_m14_b_ac556" third_unit="units/mods/weapons/wpn_third_ass_m14_ac556/wpn_third_ass_m14_b_ac556"/>
+			<wpn_fps_ass_m14_m_standard unit="units/mods/weapons/wpn_fps_ass_m14_ac556/wpn_fps_ass_m14_m_ac556" third_unit="units/mods/weapons/wpn_third_ass_m14_ac556/wpn_third_ass_m14_m_ac556"/>
+			<wpn_fps_upg_o_m14_scopemount>
+				<forbids>
+					<value_node value="wpn_fps_ass_m14_ac556_mount"/>
+				</forbids>
+			</wpn_fps_upg_o_m14_scopemount>
+			<wpn_fps_pis_usp_fl_adapter a_obj="a_vg"/>
+			<wpn_fps_upg_vg_ass_smg_afg>
+				<adds>
+					<value_node value="wpn_fps_pis_usp_fl_adapter"/>	
+				</adds>
+			</wpn_fps_upg_vg_ass_smg_afg>
+			<wpn_fps_upg_vg_ass_smg_verticalgrip>
+				<adds>
+					<value_node value="wpn_fps_pis_usp_fl_adapter"/>	
+				</adds>
+			</wpn_fps_upg_vg_ass_smg_verticalgrip>
+			<wpn_fps_upg_vg_ass_smg_stubby>
+				<adds>
+					<value_node value="wpn_fps_pis_usp_fl_adapter"/>	
+				</adds>
+			</wpn_fps_upg_vg_ass_smg_stubby>
+			<wpn_fps_smg_schakal_vg_surefire>
+				<adds>
+					<value_node value="wpn_fps_pis_usp_fl_adapter"/>
+					<value_node value="wpn_fps_smg_schakal_vg_surefire_flashlight"/>
+				</adds>
+			</wpn_fps_smg_schakal_vg_surefire>
+			
+			<wpn_fps_upg_o_45rds_v2>
+				<adds>
+					<value_node value="wpn_fps_ass_m14_ac556_mount_secondsight"/>
+				</adds>
+			</wpn_fps_upg_o_45rds_v2>			
+			
+			<wpn_fps_upg_o_45rds>
+				<adds>
+					<value_node value="wpn_fps_ass_m14_ac556_mount_secondsight"/>
+				</adds>
+			</wpn_fps_upg_o_45rds>		
+
+			<wpn_fps_upg_o_45steel>
+				<adds>
+					<value_node value="wpn_fps_ass_m14_ac556_mount_secondsight"/>
+				</adds>
+			</wpn_fps_upg_o_45steel>	
+		</override>
+		<adds>	
+			<value_node value="wpn_fps_ass_m14_ac556_sound"/>	
+			<value_node value="wpn_fps_ass_m14_ac556_mount"/>		
+		</adds>
+		<forbids>
+			<value_node value="wpn_fps_ass_m14_body_ebr"/>
+			<value_node value="wpn_fps_ass_m14_body_jae"/>	
+			<value_node value="wpn_fps_ass_m14_body_ruger"/>			
+			<value_node value="wpn_fps_addon_ris"/>	
+		</forbids>
+		<weapons>
+			<value_node value="wpn_fps_ass_m14"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_m14_ac556_sound" based_on="wpn_fps_lmg_hcar_ck_switch" inherit_adds="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" global_value="paint_sets" type="ammo" unit="units/payday2/weapons/wpn_fps_ass_aug/wpn_fps_ass_aug" third_unit="units/payday2/weapons/wpn_fps_ass_aug/wpn_fps_ass_aug" internal_part="true" drop="false" texture_bundle_folder="mods" is_a_unlockable="false">
+		<custom_stats>
+			<sounds fire="aug_fire_single" fire_single="aug_fire_single" stop_fire="aug_stop" fire_auto="aug_fire"/>
+		</custom_stats>
+		<weapons>
+			<value_node value="wpn_fps_ass_m14"/>
+		</weapons>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_m14_ac556_mount" based_on="wpn_fps_m4_lower_reciever" a_obj="a_body" inherit_adds="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" global_value="paint_sets" type="shitass" unit="units/mods/weapons/wpn_fps_ass_m14_ac556/wpn_fps_ass_m14_body_ac556" third_unit="units/mods/weapons/wpn_third_ass_m14_ac556/wpn_third_ass_m14_body_ac556" drop="false" texture_bundle_folder="mods" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_ass_m14_ac556_mount_secondsight" based_on="wpn_fps_m4_lower_reciever" a_obj="a_body" inherit_adds="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" global_value="paint_sets" type="shitass" unit="units/mods/weapons/wpn_fps_ass_m14_ac556/wpn_fps_ass_m14_body_ac556" third_unit="units/mods/weapons/wpn_third_ass_m14_ac556/wpn_third_ass_m14_body_ac556" drop="false" texture_bundle_folder="mods" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_ass_m14_ac556_mount_blocker" based_on="wpn_fps_m4_lower_reciever" inherit_adds="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" global_value="paint_sets" type="sight" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" depends_on="exclusive_set" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<weapons>
+			<value_node value="wpn_fps_ass_m14"/>
+		</weapons>
+		<forbids>
+			<value_node value="wpn_fps_upg_o_m14_scopemount"/>		
+			<value_node value="wpn_fps_ass_m14_ac556_mount"/>
+			<value_node value="wpn_fps_upg_o_45rds"/>
+			<value_node value="wpn_fps_upg_o_45rds_v2"/>
+			<value_node value="wpn_fps_upg_o_45steel"/>
+			<value_node value="wpn_fps_upg_o_sig"/>
+			<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+		</forbids>
+		<pcs/>
+	</WeaponMod>
+
+<!-- 10mm PCC -->
+
+	<WeaponMod id="wpn_fps_smg_shepheard_body_centi" based_on="wpn_fps_m4_lower_reciever" unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_body_ar45_dummy" third_unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_body_ar45_dummy" type="exclusive_set" drop="false" is_a_unlockable="true" inherit_weapons="false" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" global_value="paint_sets" has_description="true" desc_id="bm_wp_wpn_fps_smg_shepheard_body_centi_desc">
+		<stats damage="5" spread="4" reload="0" recoil="-5" concealment="-3" extra_ammo="5"/><!-- fire_rate_multiplier="0.85058823529" ammo_pickup_max_mul = "0.68181818181" -->
+		<stance_mod>
+			<wpn_fps_smg_shepheard rotation="0 0 0 1" translation="-0.005 -7.8 0.285"/>
+		<!--<wpn_fps_smg_shepheard rotation="-0.000872664 -5.71158e-007 -0.000654498 -0.999999" translation="-0.005 -1.8 0.285"/>-->
+		</stance_mod>
+		<adds>
+			<value_node value="wpn_fps_snp_victor_body_receiver_upper"/>
+			<value_node value="wpn_fps_snp_victor_fg_standard"/>
+			<value_node value="wpn_fps_snp_victor_body_receiver_lower"/>
+		</adds>
+		<override>
+			<wpn_fps_smg_shepheard_g_standard unit="units/payday2/weapons/wpn_fps_upg_m4_reusable/wpn_fps_upg_m4_g_standard" third_unit="units/payday2/weapons/wpn_third_upg_m4_reusable/wpn_third_upg_m4_g_standard" />
+			<wpn_fps_smg_shepheard_body unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" parent="exclusive_set" obj="a_b">
+				<override>
+					<wpn_fps_smg_shepheard_o_standard unit="units/mods/weapons/wpn_fps_smg_shepheard_centi/wpn_fps_smg_shepheard_o_centi" parent="exclusive_set" a_obj="a_o">
+						<stance_mod>
+							<wpn_fps_smg_shepheard rotation="0 0 0 1" translation="-0.01 -1 1.28"/>
+						<!--<wpn_fps_smg_shepheard rotation="0.000872664 5.71158e-007 0.000654498 1" translation="0.01 -6 1.28"/>-->
+						</stance_mod>	
+					</wpn_fps_smg_shepheard_o_standard>		
+					<wpn_fps_snp_victor_fg_standard unit="units/mods/weapons/wpn_fps_smg_shepheard_centi/wpn_fps_smg_shepheard_fg_centi" third_unit="units/mods/weapons/wpn_third_smg_shepheard_centi/wpn_third_smg_shepheard_fg_centi" parent="exclusive_set" obj="a_b"/>	
+					<wpn_fps_smg_shepheard_b_standard unit="units/mods/weapons/wpn_fps_smg_shepheard_centi/wpn_fps_smg_shepheard_b_centi" third_unit="units/pd2_dlc_savi/weapons/wpn_third_snp_victor_pts/wpn_third_snp_victor_b_standard" parent="exclusive_set" obj="a_b"/>	
+					
+					<wpn_fps_addon_ris	parent="exclusive_set" a_obj="a_fl" />		
+					<wpn_fps_snp_tti_vg_standard parent="exclusive_set" a_obj="a_vg"/>	
+					<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="exclusive_set" a_obj="a_fl"/>
+					<wpn_fps_upg_fl_ass_smg_sho_surefire parent="exclusive_set" a_obj="a_fl" />	
+					<wpn_fps_upg_fl_ass_peq15 parent="exclusive_set" a_obj="a_fl" />	
+					<wpn_fps_upg_fl_ass_laser parent="exclusive_set" a_obj="a_fl" />	
+					<wpn_fps_upg_fl_ass_utg parent="exclusive_set" a_obj="a_fl" />	
+					<wpn_fps_upg_fl_dbal_laser parent="exclusive_set" a_obj="a_fl" />						
+				</override>
+				<adds>
+					<value_node value="wpn_fps_snp_tti_vg_standard"/>					
+				</adds>
+			</wpn_fps_smg_shepheard_body>
+			
+			<wpn_fps_smg_shepheard_body_short unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" parent="exclusive_set" obj="a_b">
+				<override>
+					<wpn_fps_smg_shepheard_o_standard unit="units/mods/weapons/wpn_fps_smg_shepheard_centi/wpn_fps_smg_shepheard_o_centi_short" parent="exclusive_set" a_obj="a_o">
+						<stance_mod>
+							<wpn_fps_smg_shepheard rotation="0 0 0 1" translation="-0.01 -1 1.28"/>
+						</stance_mod>	
+					</wpn_fps_smg_shepheard_o_standard>		
+					<wpn_fps_snp_victor_fg_standard unit="units/mods/weapons/wpn_fps_smg_shepheard_centi/wpn_fps_smg_shepheard_fg_centi_short" third_unit="units/mods/weapons/wpn_third_smg_shepheard_centi/wpn_third_smg_shepheard_fg_centi_short" parent="exclusive_set" obj="a_b"/>
+					<wpn_fps_smg_shepheard_b_standard unit="units/mods/weapons/wpn_fps_smg_shepheard_centi/wpn_fps_smg_shepheard_b_centi_short" third_unit="units/pd2_dlc_savi/weapons/wpn_third_snp_victor_pts/wpn_third_snp_victor_b_sbr" parent="exclusive_set" obj="a_b"/>	
+					
+					<wpn_fps_addon_ris	unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>		
+					<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="exclusive_set" a_obj="a_fl_hera"/>
+					<wpn_fps_upg_fl_ass_smg_sho_surefire parent="exclusive_set" a_obj="a_fl_hera" />	
+					<wpn_fps_upg_fl_ass_peq15 parent="exclusive_set" a_obj="a_fl_hera" />	
+					<wpn_fps_upg_fl_ass_laser parent="exclusive_set" a_obj="a_fl_hera" />	
+					<wpn_fps_upg_fl_ass_utg parent="exclusive_set" a_obj="a_fl_hera" />	
+					<wpn_fps_upg_fl_dbal_laser parent="exclusive_set" a_obj="a_fl_hera" />	
+					<wpn_fps_ass_g36_vg_afg_cut	parent="exclusive_set" a_obj="a_vg2" />
+				</override>
+				<adds>		
+					<value_node value="wpn_fps_ass_g36_vg_afg_cut"/>
+				</adds>
+			</wpn_fps_smg_shepheard_body_short>
+			
+			<wpn_fps_smg_shepheard_bolt_standard unit="units/mods/weapons/wpn_fps_smg_shepheard_centi/wpn_fps_smg_shepheard_bolt_centi" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+			<wpn_fps_smg_shepheard_dh_standard unit="units/mods/weapons/wpn_fps_smg_shepheard_centi/wpn_fps_smg_shepheard_draghandle_centi" third_unit="units/mods/weapons/wpn_third_smg_shepheard_ar45/wpn_third_smg_shepheard_draghandle_ar45" />
+			<wpn_fps_smg_shepheard_s_adapter unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_s_adapter_ar45" third_unit="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_s_adapter_ddm4" parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_smg_shepheard_s_standard unit="units/mods/weapons/wpn_fps_smg_shepheard_ar45/wpn_fps_smg_shepheard_s_tecci" third_unit="units/mods/weapons/wpn_third_smg_shepheard_ar45/wpn_third_smg_shepheard_s_tecci" parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_smg_shepheard_s_no unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_fps_ass_tecci_s_standard" third_unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_third_ass_tecci_s_standard" parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_smg_shepheard_s_no_vanilla unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_fps_ass_tecci_s_standard" third_unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_third_ass_tecci_s_standard" parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_smg_shepheard_mag_standard unit="units/mods/weapons/wpn_fps_smg_shepheard_centi/wpn_fps_smg_shepheard_m_centi" third_unit="units/mods/weapons/wpn_third_smg_shepheard_ar45/wpn_third_smg_shepheard_m_ar45" />
+			<wpn_fps_smg_shepheard_ns_standard unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+
+			<wpn_fps_snp_victor_body_receiver_upper unit="units/mods/weapons/wpn_fps_smg_shepheard_centi/wpn_fps_smg_shepheard_centi_upper" third_unit="units/mods/weapons/wpn_third_smg_shepheard_ar45/wpn_third_smg_shepheard_ar45_upper" />
+			<wpn_fps_snp_victor_body_receiver_lower unit="units/mods/weapons/wpn_fps_smg_shepheard_centi/wpn_fps_smg_shepheard_centi_lower" third_unit="units/mods/weapons/wpn_third_smg_shepheard_ar45/wpn_third_smg_shepheard_ar45_lower" />
+
+			<wpn_fps_upg_m4_s_pts parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_upg_m4_s_crane parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_upg_m4_s_mk46 parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_upg_m4_s_ubr parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_snp_tti_s_vltor parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_sho_sko12_stock parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_snp_victor_s_mod0 parent="exclusive_set" a_obj="a_s" />			
+			<wpn_fps_upg_m4_s_standard parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_upg_m4_s_standard_vanilla parent="exclusive_set" a_obj="a_s" />
+			
+            <wpn_fps_upg_charm_bag parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_dallas parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_grenade parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_piggy parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_cloaker parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_skulldozer parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_pyramid parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_toast parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_diamond parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_musket parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_pumpkin parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_skullz parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_choco parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_flake parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_igloo parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_snow parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_ball parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_lusse parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_tiger parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_cactus parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_cowboy_hat parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_horseshoe parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_nascar parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_pokerchip parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_rangerbadge parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_beer parent="exclusive_set" a_obj="a_charm"/>
+	        <wpn_fps_upg_charm_foam parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_teddymoo parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_piggy_gold parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_rooster parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_skull parent="exclusive_set" a_obj="a_charm"/>
+
+			<wpn_fps_upg_o_45rds_v2 parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_45rds parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_45steel parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_45iron parent="exclusive_set" a_obj="a_o"/>			
+			<wpn_fps_upg_o_sig parent="sight" />		
+			<wpn_fps_upg_o_xpsg33_magnifier parent="sight" />	
+
+		<!-- Pain -->
+			
+			<wpn_fps_upg_o_specter parent="exclusive_set" a_obj="a_o"/>			
+			<wpn_fps_upg_o_docter parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_eotech parent="exclusive_set" a_obj="a_o"/>		
+			<wpn_fps_upg_o_t1micro parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_cmore parent="exclusive_set" a_obj="a_o"/>						
+			<wpn_fps_upg_o_tf90 parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_aimpoint parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_aimpoint_2 parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_acog parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_eotech_xps parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_reflex parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_rx01 parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_rx30 parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_cs parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_spot parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_poe parent="exclusive_set" a_obj="a_o"/>
+			<wpn_fps_upg_o_bmg parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_uh parent="exclusive_set" a_obj="a_o"/>		
+			<wpn_fps_upg_o_fc1 parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_health parent= "exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_atibal parent= "exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_hamr parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_shortdot parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_northtac parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_box parent="exclusive_set" a_obj="a_o"/>	
+			<wpn_fps_upg_o_leupold parent="exclusive_set" a_obj="a_o"/>			
+
+			<wpn_fps_upg_o_hamr_reddot parent="exclusive_set" a_obj="a_o"/>					
+			<wpn_fps_upg_o_atibal_reddot parent="exclusive_set" a_obj="a_o"/>				
+		</override>
+		
+		<forbids>
+			<value_node value="wpn_fps_smg_shepheard_mag_extended"/>
+		</forbids>		
+		<weapons>
+			<value_node value="wpn_fps_smg_shepheard"/>			
+			<value_node value="wpn_fps_smg_x_shepheard"/>		
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+
+<!-- HK416 + M203 -->
+
+	<WeaponMod id="wpn_fps_ass_contraband_body_little" based_on="wpn_fps_ass_contraband_body_standard" inherit_adds="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" global_value="paint_sets" type="exclusive_set" unit="units/mods/weapons/wpn_fps_ass_contraband_little/wpn_fps_ass_contraband_little_dummy" third_unit="units/mods/weapons/wpn_fps_ass_contraband_little/wpn_fps_ass_contraband_little_dummy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" has_description="true" desc_id="bm_wp_wpn_fps_ass_contraband_body_little_desc">
+		<stats spread="2" damage="-61" recoil="4" total_ammo_mod="10" concealment="2" extra_ammo="5" reload="3"/>
+		<custom_stats ammo_pickup_max_mul = "2.0625" ammo_pickup_min_mul="2.5" fire_rate_multiplier = "1.08986928105"/>	
+
+		<override>
+            <wpn_fps_ass_contraband_body_standard unit="units/mods/weapons/wpn_fps_ass_contraband_little/wpn_fps_ass_contraband_lower_little" third_unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_third_ass_tecci_lower_reciever" parent="exclusive_set" a_obj="a_upper"/>
+            <wpn_fps_ass_contraband_fg_standard parent="exclusive_set" a_obj="a_fg"/>
+            <wpn_fps_ass_contraband_b_standard parent="exclusive_set" a_obj="a_fg"/>
+            <wpn_fps_upg_fg_smr parent="exclusive_set" a_obj="a_fg"/>
+
+            <wpn_fps_ass_sg416_fg_hera parent="exclusive_set" a_obj="a_fg"/> <!-- From A Pile of AK/CAR Mods -->
+            <wpn_fps_ass_contraband_b_short parent="exclusive_set" a_obj="a_fg"/>
+			<wpn_fps_ass_contraband_b_long parent="exclusive_set" a_obj="a_fg"/> <!-- Both barrels from Vanilla Mod Pack -->
+			
+			<wpn_fps_ass_contraband_o_standard unit="units/mods/weapons/wpn_fps_ass_contraband_little/wpn_fps_ass_contraband_o_little">
+				<adds>
+					<value_node value="wpn_fps_ass_contraband_frontsight"/>
+				</adds>
+				<override>
+					<wpn_fps_ass_contraband_frontsight_down unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" parent="exclusive_set" a_obj="a_fg"/>
+				</override>
+			</wpn_fps_ass_contraband_o_standard>
+            <wpn_fps_ass_contraband_dh_standard unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_fps_ass_tecci_dh_standard" third_unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_third_ass_tecci_dh_standard" parent="exclusive_set" a_obj="a_dh"/>
+            <wpn_fps_ass_contraband_bolt_standard unit="units/mods/weapons/wpn_fps_ass_contraband_little/wpn_fps_ass_contraband_bolt_little" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+            <wpn_fps_ass_contraband_m_standard unit="units/mods/weapons/wpn_fps_ass_contraband_little/wpn_fps_ass_contraband_m_little" third_unit="units/mods/weapons/wpn_third_ass_contraband_little/wpn_third_ass_contraband_m_little"/>
+			
+            <wpn_fps_ass_contraband_g_standard parent="exclusive_set" a_obj="a_upper"/>
+			
+            <wpn_fps_ass_tecci_upper_reciever parent="exclusive_set" a_obj="a_upper" unit="units/mods/weapons/wpn_fps_ass_contraband_little/wpn_fps_ass_contraband_upper_little"/>
+            <wpn_fps_ass_contraband_s_standard unit="units/payday2/weapons/wpn_fps_upg_m4_reusable/wpn_fps_upg_m4_s_standard" third_unit="units/payday2/weapons/wpn_third_upg_m4_reusable/wpn_third_upg_m4_s_standard" parent="exclusive_set" a_obj="a_s">
+				<adds>
+					<value_node value="wpn_fps_upg_m4_s_adapter"/>					
+				</adds>
+			</wpn_fps_ass_contraband_s_standard>
+			
+			<wpn_fps_upg_m4_s_adapter unit="units/mods/weapons/wpn_fps_ass_amcar_ddm4/wpn_fps_ass_amcar_s_adapter_ddm4" third_unit="units/mods/weapons/wpn_third_ass_amcar_ddm4/wpn_third_ass_amcar_s_adapter_ddm4" parent="exclusive_set" a_obj="a_s"/>
+			
+			<wpn_fps_ass_contraband_s_tecci parent="exclusive_set" a_obj="a_s"/>
+			<wpn_fps_upg_m4_s_retroslider parent="exclusive_set" a_obj="a_s"/>
+		<!--<wpn_fps_ass_contraband_gl_m203 parent="exclusive_set" a_obj="a_gl"/>-->
+            <wpn_fps_ass_contraband_frontsight parent="exclusive_set" a_obj="a_fg"/>		
+			
+            <wpn_fps_upg_charm_bag parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_dallas parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_grenade parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_piggy parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_cloaker parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_skulldozer parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_pyramid parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_toast parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_diamond parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_musket parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_pumpkin parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_skullz parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_choco parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_flake parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_igloo parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_snow parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_ball parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_lusse parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_tiger parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_cactus parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_cowboy_hat parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_horseshoe parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_nascar parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_pokerchip parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_rangerbadge parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_beer parent="exclusive_set" a_obj="a_charm"/>
+	        <wpn_fps_upg_charm_foam parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_teddymoo parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_piggy_gold parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_rooster parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_upg_charm_skull parent="exclusive_set" a_obj="a_charm"/>
+            <wpn_fps_addon_ris unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+			
+			<wpn_fps_upg_m4_s_pts parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_upg_m4_s_crane parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_upg_m4_s_mk46 parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_upg_m4_s_ubr parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_snp_tti_s_vltor parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_sho_sko12_stock parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_snp_victor_s_mod0 parent="exclusive_set" a_obj="a_s" />			
+			<wpn_fps_upg_m4_s_standard parent="exclusive_set" a_obj="a_s" />
+			<wpn_fps_upg_m4_s_standard_vanilla parent="exclusive_set" a_obj="a_s" />	
+	
+            <wpn_fps_upg_m4_g_hgrip parent="exclusive_set" a_obj="a_g" />
+            <wpn_fps_upg_m4_g_mgrip parent="exclusive_set" a_obj="a_g" />
+			<wpn_fps_upg_m4_g_ergo parent="exclusive_set" a_obj="a_g" />
+			<wpn_fps_upg_m4_g_sniper parent="exclusive_set" a_obj="a_g" />
+			<wpn_fps_snp_tti_g_grippy parent="exclusive_set" a_obj="a_g" />
+			<wpn_fps_sho_sko12_body_grip parent="exclusive_set" a_obj="a_g" />
+			<wpn_fps_upg_g_m4_surgeon parent="exclusive_set" a_obj="a_g" />
+			<wpn_fps_snp_victor_g_mod3 parent="exclusive_set" a_obj="a_g" />
+			<wpn_fps_m4_uupg_g_billet parent="exclusive_set" a_obj="a_g" />		
+			<wpn_fps_sho_m590_g_standard parent="exclusive_set" a_obj="a_g" />
+		</override>
+		<adds>
+			<value_node value="wpn_fps_ass_tecci_upper_reciever"/>
+			<value_node value="wpn_fps_ass_contraband_little_sound"/>
+			<value_node value="wpn_fps_ass_contraband_frontsight_down"/>
+		</adds>
+		<forbids>
+		<!--<value_node value="wpn_fps_upg_o_specter"/>
+			<value_node value="wpn_fps_upg_o_aimpoint"/>
+			<value_node value="wpn_fps_upg_o_docter"/>
+			<value_node value="wpn_fps_upg_o_eotech"/>
+			<value_node value="wpn_fps_upg_o_t1micro"/>
+			<value_node value="wpn_fps_upg_o_cmore"/>
+			<value_node value="wpn_fps_upg_o_tf90"/>
+			<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+			<value_node value="wpn_fps_upg_o_acog"/>
+			<value_node value="wpn_fps_upg_o_eotech_xps"/>
+			<value_node value="wpn_fps_upg_o_reflex"/>
+			<value_node value="wpn_fps_upg_o_rx01"/>
+			<value_node value="wpn_fps_upg_o_rx30"/>
+			<value_node value="wpn_fps_upg_o_cs"/>
+			<value_node value="wpn_fps_upg_o_spot"/>
+			<value_node value="wpn_fps_upg_o_cqb"/>
+			<value_node value="wpn_fps_upg_o_poe"/>
+			<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+			<value_node value="wpn_fps_upg_o_bmg"/>
+			<value_node value="wpn_fps_upg_o_uh"/>
+			<value_node value="wpn_fps_upg_o_fc1"/>
+			<value_node value="wpn_fps_upg_o_sig"/>
+			<value_node value="wpn_fps_upg_o_health"/>
+			<value_node value="wpn_fps_upg_o_atibal"/>
+			<value_node value="wpn_fps_upg_o_hamr"/>
+			<value_node value="wpn_fps_upg_o_shortdot"/>
+			<value_node value="wpn_fps_upg_o_northtac"/>
+			<value_node value="wpn_fps_upg_o_box"/>
+			<value_node value="wpn_fps_upg_o_leupold"/>
+			<value_node value="wpn_fps_upg_contender_o_ironsight"/>
+			<value_node value="wpn_fps_snp_contender_barrel_short"/>
+			<value_node value="wpn_fps_snp_contender_barrel_long"/>
+			<value_node value="wpn_fps_snp_contender_frontgrip_long"/>
+			<value_node value="wpn_fps_upg_m4_g_contender"/>
+			<value_node value="wpn_fps_upg_m4_s_contender"/>
+			<value_node value="wpn_fps_ass_contraband_b_long"/>
+			<value_node value="wpn_fps_ass_contraband_b_short"/>-->
+		</forbids>
+		<weapons>
+			<value_node value="wpn_fps_ass_contraband"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_contraband_frontsight" based_on="wpn_fps_ass_contraband_fg_standard" type="foregrip" unit="units/mods/weapons/wpn_fps_ass_contraband_little/wpn_fps_ass_contraband_frontsight" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_ass_contraband_frontsight_down" based_on="wpn_fps_ass_contraband_fg_standard" type="foregrip" parent="exclusive_set" a_obj="a_fg" unit="units/mods/weapons/wpn_fps_ass_contraband_little/wpn_fps_ass_contraband_frontsight" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" is_a_unlockable="false"/>	
+
+	<WeaponMod id="wpn_fps_ass_contraband_little_sound" based_on="wpn_fps_lmg_hcar_ck_switch" inherit_adds="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" global_value="paint_sets" type="ammo" unit="units/mods/weapons/wpn_fps_ass_contraband_little/wpn_fps_ass_contraband_little_dummy" third_unit="units/mods/weapons/wpn_fps_ass_contraband_little/wpn_fps_ass_contraband_little_dummy" internal_part="true" drop="false" texture_bundle_folder="mods" is_a_unlockable="false">
+		<custom_stats>
+			<sounds fire="tecci_fire_single" fire_single="tecci_fire_single" stop_fire="tecci_stop" fire_auto="tecci_fire"/>
+		</custom_stats>
+		<weapons>
+			<value_node value="wpn_fps_ass_contraband"/>
+		</weapons>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_polymer_body_nine" based_on="wpn_fps_smg_polymer_m_standard" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" a_obj="a_m" type="exclusive_set" drop="false" is_a_unlockable="true" inherit_weapons="false" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="false" global_value="paint_sets" has_description="true" desc_id="bm_wp_wpn_fps_smg_polymer_body_nine_desc" >	
+		<stats recoil="4" spread="-3" damage="-5" concealment="2"/>
+		<override>		
+			<wpn_fps_smg_polymer_body_standard unit="units/mods/weapons/wpn_fps_smg_polymer_nine/wpn_fps_smg_polymer_body_nine"/>
+			<wpn_fps_smg_polymer_fg_standard unit="units/mods/weapons/wpn_fps_smg_polymer_nine/wpn_fps_smg_polymer_fg_nine"/>
+			<wpn_fps_smg_polymer_m_standard unit="units/mods/weapons/wpn_fps_smg_polymer_nine/wpn_fps_smg_polymer_m_nine" third_unit="units/mods/weapons/wpn_third_smg_polymer_nine/wpn_third_smg_polymer_m_nine"/>
+			<wpn_fps_smg_polymer_ns_silencer unit="units/payday2/weapons/wpn_fps_upg_ns_pis_large/wpn_fps_upg_ns_pis_large" third_unit="units/payday2/weapons/wpn_third_upg_ns_pis_large/wpn_third_upg_ns_pis_large"/>
+		</override>
+		<bullet_objects prefix="g_bullet_" amount="3"/>
+		<pcs/>
+		<forbids>
+			<value_node value="wpn_fps_lmg_hcar_ck_switch"/>	<!-- To ensure it doesn't crash people -->
+		</forbids>
+		<weapons>
+			<value_node value="wpn_fps_smg_polymer"/>
+			<value_node value="wpn_fps_smg_x_polymer"/>
+		</weapons>
+	</WeaponMod>
+
+	<AddFiles directory="assets" auto_generate="true"/>
+
+	<Hooks directory="hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="weaponfactorytweakdata_set_sc.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+	</Hooks>
+
+</mod>
+
+<!-- Exclusive Set templates for later updates
+
+	<WeaponMod id="wpn_fps_lmg_rpk_body_stg" based_on="wpn_fps_ass_ak_body_lowerreceiver_gold" unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci/wpn_fps_ass_tecci" third_unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci/wpn_fps_ass_tecci" type="exclusive_set" drop="false" is_a_unlockable="true" inherit_weapons="false" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="false" global_value="paint_sets" has_description="true" desc_id="bm_wp_wpn_fps_ass_m4_body_hk416_desc">	
+		<override>
+		</override>
+			<pcs/>
+		<weapons>
+			<value_node value="wpn_fps_lmg_rpk"/>
+		</weapons>
+	</WaponMod>
+
+	<WeaponMod id="wpn_fps_lmg_rpk_body_gold" based_on="wpn_fps_m4_uupg_fg_rail_ext" a_obj="a_g" unit="units/payday2/weapons/wpn_fps_ass_akm/wpn_fps_ass_akm" third_unit="units/payday2/weapons/wpn_fps_ass_akm/wpn_fps_ass_akm" type="exclusive_set" drop="false" is_a_unlockable="true" inherit_weapons="false" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="false" global_value="paint_sets" has_description="true" desc_id="bm_wp_wpn_fps_lmg_rpk_body_gold_desc" hidden="true">	
+		<override>
+			<wpn_fps_lmg_rpk_body_lowerreceiver unit="units/payday2/weapons/wpn_fps_ass_akm_gold_pts/wpn_fps_ass_ak_body_lowerreceiver_gold" third_unit="units/payday2/weapons/wpn_third_upg_ak_reusable/wpn_third_ass_ak_body_lowerreceiver_gold"/>
+			<wpn_fps_ass_74_body_upperreceiver unit="units/payday2/weapons/wpn_fps_ass_akm_gold_pts/wpn_fps_ass_akm_body_upperreceiver_gold" third_unit="units/payday2/weapons/wpn_third_ass_akm_pts/wpn_third_ass_akm_body_upperreceiver_gold"/>
+			<wpn_fps_lmg_rpk_b_standard unit="units/pd2_dlc_akm4_modpack/weapons/wpn_fps_upg_ass_ak_b_zastava/wpn_fps_upg_ass_ak_b_zastava" third_unit="units/pd2_dlc_akm4_modpack/weapons/wpn_third_upg_ass_ak_b_zastava/wpn_third_upg_ass_ak_b_zastava"/>
+			<wpn_upg_ak_s_folding unit="units/payday2/weapons/wpn_fps_upg_ak_reusable/wpn_upg_ak_s_folding_gold" third_unit="units/payday2/weapons/wpn_third_upg_ak_reusable/wpn_third_upg_ak_s_folding_gold"/>
+
+			<wpn_fps_lmg_rpk_s_wood unit="units/mods/weapons/wpn_fps_lmg_rpk_gold/wpn_fps_lmg_rpk_s_gold" third_unit="units/mods/weapons/wpn_third_lmg_rpk_gold/wpn_third_lmg_rpk_s_gold"/>
+		
+			<wpn_fps_upg_o_specter parent="exclusive_set" a_obj="a_o_sm">
+				<stance_mod>
+					<wpn_fps_lmg_rpk translation="0 5 -4.6"/>		
+				</stance_mod>
+			</wpn_fps_upg_o_specter>	
+		
+			<wpn_fps_addon_ris	parent="exclusive_set" a_obj="a_fl" />		
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="exclusive_set" a_obj="a_fl"/>
+				<wpn_fps_upg_fl_ass_smg_sho_surefire parent="exclusive_set" a_obj="a_fl" />	
+        	<wpn_fps_upg_fl_ass_peq15 parent="exclusive_set" a_obj="a_fl" />	
+        	<wpn_fps_upg_fl_ass_laser parent="exclusive_set" a_obj="a_fl" />	
+        	<wpn_fps_upg_fl_ass_utg parent="exclusive_set" a_obj="a_fl" />	
+        	<wpn_fps_upg_fl_dbal_laser parent="exclusive_set" a_obj="a_fl" />			
+		</override>
+		<pcs/>
+		<adds>
+			<value_node value="wpn_fps_upg_o_specter"/>		
+			<value_node value="wpn_fps_upg_o_ak_scopemount"/>		
+		</adds>
+		<forbids>
+			<value_node value="wpn_fps_upg_bp_lmg_lionbipod"/>
+
+			<value_node value="wpn_upg_ak_fg_combo1"/>		
+			<value_node value="wpn_upg_ak_fg_combo2"/>		
+			<value_node value="wpn_upg_ak_fg_combo3"/>		
+			<value_node value="wpn_fps_upg_m4_s_standard"/>		
+			<value_node value="wpn_fps_upg_m4_s_pts"/>		
+			<value_node value="wpn_upg_ak_s_psl"/>		
+			<value_node value="wpn_upg_ak_s_folding"/>	
+			<value_node value="wpn_fps_upg_m4_s_crane"/>		
+			<value_node value="wpn_fps_upg_m4_s_mk46"/>		
+			<value_node value="wpn_fps_upg_ak_fg_tapco"/>	
+			<value_node value="wpn_fps_upg_fg_midwest"/>	
+			<value_node value="wpn_fps_upg_ak_b_draco"/>	
+			<value_node value="wpn_fps_upg_ak_m_quad"/>	
+			<value_node value="wpn_fps_upg_m4_s_ubr"/>	
+			<value_node value="wpn_fps_upg_ak_s_solidstock"/>	
+			<value_node value="wpn_fps_upg_ak_m_uspalm"/>	
+			<value_node value="wpn_fps_upg_ak_fg_krebs"/>	
+			<value_node value="wpn_fps_upg_ak_fg_trax"/>
+			<value_node value="wpn_fps_upg_ak_b_ak105"/>	
+			<value_node value="wpn_fps_upg_ass_ak_b_zastava"/>	
+			<value_node value="wpn_fps_upg_ak_m_quick"/>	
+			<value_node value="wpn_fps_snp_tti_s_vltor"/>	
+			<value_node value="wpn_fps_sho_sko12_stock"/>	
+			<value_node value="wpn_fps_upg_ak_fg_zenitco"/>	
+			<value_node value="wpn_fps_upg_ak_s_zenitco"/>	
+			<value_node value="wpn_fps_upg_ak_body_upperreceiver_zenitco"/>	
+			<value_node value="wpn_fps_upg_o_ak_scopemount"/>			
+			<value_node value="wpn_fps_lmg_rpk_s_standard"/>
+		</forbids>
+		<weapons>
+			<value_node value="wpn_fps_lmg_rpk"/>
+		</weapons>
+	</WeaponMod>
+	
+-->

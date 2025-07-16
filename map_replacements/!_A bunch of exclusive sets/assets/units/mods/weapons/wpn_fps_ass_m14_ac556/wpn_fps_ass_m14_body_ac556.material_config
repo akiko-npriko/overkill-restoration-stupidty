@@ -1,0 +1,14 @@
+<materials group="weapon_m13" version="3">
+	<material name="mtr_ruger" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_ass_m14_ac556/wpn_fps_ass_m14_body_ac556_df" />
+		<bump_normal_texture file="units/pd2_dlc_atw/weapons/wpn_fps_ass_m14_body_ruger/wpn_fps_ass_m14_body_ruger_nm" />
+	</material>
+	<material name="mtr_ruger_rail" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/pd2_dlc_atw/weapons/wpn_fps_ass_m14_body_ruger/wpn_fps_ass_m14_o_ruger_rail_df" />
+		<bump_normal_texture file="units/pd2_dlc_atw/weapons/wpn_fps_ass_m14_body_ruger/wpn_fps_ass_m14_o_ruger_rail_nm" />
+	</material>
+	<material name="mtr_ruger_side_rail" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/pd2_dlc_atw/weapons/wpn_fps_ass_m14_body_ruger/wpn_fps_ass_m14_body_ruger_side_rail_df" />
+		<bump_normal_texture file="units/pd2_dlc_atw/weapons/wpn_fps_ass_m14_body_ruger/wpn_fps_ass_m14_body_ruger_side_rail_nm" />
+	</material>
+</materials>
