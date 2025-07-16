@@ -1,0 +1,15 @@
+<table name="NepTenn Eclipse">
+    <Localization directory="loc" default="en.txt"/>
+    <HeistMusic id="nt_eclipse" directory="sounds">
+        <event name="setup" start_source="setup_start.ogg" source="setup.ogg"/>
+        <event name="anticipation" start_source="anticipation_start.ogg" source="anticipation.ogg"/>
+        <event name="assault">
+			<track start_source="transition.ogg" source="assault.ogg" weight="9"/>		
+			<track start_source="transition.ogg" source="assault_alt.ogg" weight="10"/>
+		</event>
+		<event name="control">
+			<track start_source="control_start.ogg" source="control.ogg" weight="10"/>		
+			<track start_source="control_start.ogg" source="control_alt.ogg" weight="5"/>
+		</event>
+    </HeistMusic>
+</table>

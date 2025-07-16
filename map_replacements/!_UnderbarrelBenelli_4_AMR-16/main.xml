@@ -1,0 +1,29 @@
+<table name="Underbarrel Benelli Shotgun">
+
+<!-- The Set -->
+
+	<WeaponMod id="wpn_fps_upg_m16_benelli_ub" a_obj="a_fg" sub_type="ammo_custom" type="underbarrel" based_on="wpn_fps_ass_contraband_gl_m203" unit="units/mods/weapons/wpn_fps_upg_m16/wpn_fps_upg_m16_benelli_ub" has_description="true" desc_id="bm_wp_wpn_fps_upg_m16_benelli_ub_desc" drop="false" is_a_unlockable="true" global_value="m16_benelli_ub">
+		<stats concealment="-4" spread="-1" recoil="2"/>
+		<animations bipod_reload="reload_ul"/>
+		<perks>
+			<value_node value="underbarrel"/>
+		</perks>
+		<stance_mod>
+			<wpn_fps_ass_m16 rotation="-0.0130894 0.00548856 -7.18492e-005 -0.999899" translation="-8.515 -9.005 4.5"/>
+		</stance_mod>
+		<weapons>
+			<value_node value="wpn_fps_ass_m16"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+	<AddFiles directory="assets" auto_generate="true"/>
+	<GlobalValue id="m16_benelli_ub" color="Color(0.53, 0.66, 0.42)"/>
+    <AssetUpdates id="48210" provider="modworkshop" use_local_dir="true" version="1"/>
+	<Localization default="english.txt" directory="loc"/>
+	<Hooks directory="hooks">
+		<hook file="newraycastweaponbase.lua" source_file="lib/units/weapons/newraycastweaponbase"/>
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+	</Hooks>
+</table>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/nypd/armor_skins/nypd_fbi_shield/nypd_fbi_shield_fps" orientation_object="root_point" />
+	
+
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="co_culling">
+			<object name="g_body_shield" enabled="true"/>
+			
+		</graphic_group>
+	</graphics>
+</dynamic_object>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/nypd/armor_skins/nypd_dozer_saiga/nypd_dozer_saiga_fps" orientation_object="root_point" />
+
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="bounding_box_char">
+			<object name="g_body_black" enabled="true"/>
+		</graphic_group>
+	</graphics>
+</dynamic_object>

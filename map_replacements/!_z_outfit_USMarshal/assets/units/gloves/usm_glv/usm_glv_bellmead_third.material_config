@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<materials version="3" group="usm_acc">
+	<material name="mtr_gloves" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/pd2_dlc_usm1/characters/shared_textures/ene_marshal_equipment_merc_df"/>
+		<bump_normal_texture file="units/pd2_dlc_usm1/characters/shared_textures/ene_marshal_equipment_nm"/>
+		<variable type="vector3" name="contour_color" value="1 1 1"/>
+		<variable type="scalar" name="contour_opacity" value="0"/>
+		<variable name="contour_distance" value="10000" type="scalar"/>
+	</material>
+</materials>    

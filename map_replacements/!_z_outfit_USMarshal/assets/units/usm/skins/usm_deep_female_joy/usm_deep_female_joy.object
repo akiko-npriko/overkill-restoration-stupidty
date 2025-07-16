@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<dynamic_object>
+	<diesel materials="units/usm/skins/usm_deep_female_joy/usm_deep_female_joy" orientation_object="root_point"/>
+	
+	<effects>
+		<effect_spawner name="light1" enabled="true" object="Flashlight" effect="effects/particles/weapons/flashlight/fp_flashlight_multicolor" />
+	</effects>
+	
+	<graphics>
+		<graphic_group culling_object="co_box" enabled="true" name="suit">
+<object enabled="true" name="g_base" shadow_caster="true"/>
+		<!--	<object enabled="true" name="s_body" shadow_caster="true"/> --> <!--USELESS!!!!!!-->
+		</graphic_group>
+	</graphics>
+</dynamic_object>

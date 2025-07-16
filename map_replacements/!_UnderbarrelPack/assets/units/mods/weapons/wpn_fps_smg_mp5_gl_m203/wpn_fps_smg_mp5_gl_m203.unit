@@ -1,0 +1,11 @@
+<unit type="wpn" slot="1">
+	<object file="units/mods/weapons/wpn_fps_smg_mp5_gl_m203/wpn_fps_smg_mp5_gl_m203" />
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+        <extension name="base" class="WeaponUnderbarrelLauncher">
+			<var name="name_id" value="contraband_m203" />
+			<var name="anim" value="flip_up" />
+			<var name="launcher_projectile" value="launcher_m203" />
+		</extension>
+	</extensions>
+</unit>

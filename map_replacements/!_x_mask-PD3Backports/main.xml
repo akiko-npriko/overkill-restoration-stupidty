@@ -1,0 +1,163 @@
+<mod name="Payday 3 Mask Pack" author="Hedy">
+
+    <AssetUpdates id="47941" version="1.2" provider="modworkshop"/>
+	
+	<GlobalValue id="pd3info" is_category="true" color="Color(0.27, 0.4, 0.24)"/>
+	
+    <Localization directory="loc" default="english.txt">
+        <loc file="english.txt" language="english"/>
+    </Localization>
+
+    <Mask global_value="pd3info" id="pd3_artdec" unit="units/mods/masks/pd3maskpack/artdec/artdec"	/>
+    <Mask global_value="pd3info" id="pd3_hoco" unit="units/mods/masks/pd3maskpack/hoco/hoco"  		/>
+    <Mask global_value="pd3info" id="pd3_hoco2" unit="units/mods/masks/pd3maskpack/hoco2/hoco2"  	/>
+    <Mask global_value="pd3info" id="pd3_mtmale" unit="units/mods/masks/pd3maskpack/mtmale/mtmale" 	/>
+    <Mask global_value="pd3info" id="pd3_mtfem" unit="units/mods/masks/pd3maskpack/mtfem/mtfem" 	/>
+    <Mask global_value="pd3info" id="pd3_scam" unit="units/mods/masks/pd3maskpack/scam/scam"  		/>
+    <Mask global_value="pd3info" id="pd3_scam3" unit="units/mods/masks/pd3maskpack/scam3/scam3"  	/>
+    <Mask global_value="pd3info" id="pd3_fant" unit="units/mods/masks/pd3maskpack/fant/fant"  		/>
+    <Mask global_value="pd3info" id="pd3_gage" unit="units/mods/masks/pd3maskpack/gage/gage"  		/>
+    <Mask global_value="pd3info" id="pd3_ping" unit="units/mods/masks/pd3maskpack/ping/ping"  		/>
+    <Mask global_value="pd3info" id="pd3_fer" unit="units/mods/masks/pd3maskpack/fer/fer"  			/>
+    <Mask global_value="pd3info" id="pd3_imember" unit="units/mods/masks/pd3maskpack/imember/imember"  />
+    <Mask global_value="pd3info" id="pd3_baller" unit="units/mods/masks/pd3maskpack/baller/baller"  />
+    <Mask global_value="pd3info" id="pd3_nebu" unit="units/mods/masks/pd3maskpack/nebu/nebu"  />
+    <Mask global_value="pd3info" id="pd3_red" unit="units/mods/masks/pd3maskpack/red/red"  />
+    <Mask global_value="pd3info" id="pd3_smoke" unit="units/mods/masks/pd3maskpack/smoke/smoke"  />
+    <Mask global_value="pd3info" id="pd3_shroud" unit="units/mods/masks/pd3maskpack/shroud/shroud"  />
+	<Mask global_value="pd3info" id="pd3_just" unit="units/mods/masks/pd3maskpack/just/just"  />
+	
+	<!--Unfinished Masks-->
+	<!--   
+	<Mask global_value="pd3info" id="pd3_scam2" unit="units/mods/masks/pd3maskpack/scam2/scam2"  />
+
+	<Mask global_value="pd3info" id="pd3_birb" unit="units/mods/masks/pd3maskpack/birb/birb"  />	
+	<Mask global_value="pd3info" id="pd3_comm" unit="units/mods/masks/pd3maskpack/comm/comm"  />
+	<Mask global_value="pd3info" id="pd3_abe" unit="units/mods/masks/pd3maskpack/smoke/smoke"  />
+    <Mask global_value="pd3info" id="pd3_sam" unit="units/mods/masks/pd3maskpack/smoke/smoke"  />
+    <Mask global_value="pd3info" id="pd3_capo" unit="units/mods/masks/pd3maskpack/capo/capo"  />
+	<Mask global_value="pd3info" id="pd3_raid" unit="units/mods/masks/pd3maskpack/raid/raid"  />
+	
+	-->
+	<!--Masks with Physics and/or particle effects on them-->
+	<Mask global_value="pd3info" id="pd3_pharoah" unit="units/mods/masks/pd3maskpack/pharoah/pharoah"  />
+	<Mask global_value="pd3info" id="pd3_annie" unit="units/mods/masks/pd3maskpack/annie/annie"  />
+	<Mask global_value="pd3info" id="pd3_monki" unit="units/mods/masks/pd3maskpack/monki/monki"  />
+	<Mask global_value="pd3info" id="pd3_pipe" unit="units/mods/masks/pd3maskpack/pipe/pipe"  />
+	<Mask global_value="pd3info" id="pd3_ratto" unit="units/mods/masks/pd3maskpack/ratto/ratto"  />
+    <AddFiles directory="assets">
+		<!--GUI Icons-->
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_artdec"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_hoco"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_hoco2"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_gage"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_imember"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_mtmale"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_mtfem"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_scam"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_scam2"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_scam3"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_smoke"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_ping"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_fer"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_fant"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_shag"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_nebu"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_comm"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_baller"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_red"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_capo"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_birb"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_pharoah"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_annie"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_dev"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_just"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_monki"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_shroud"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_pipe"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_ratto"/>
+		<!--Mask Frame texture.-->
+		<texture path="units/mods/masks/pd3maskpack/msk_shared/frame_df"/>
+		<!--ArtDeco-->
+		<df_nm	  path="units/mods/masks/pd3maskpack/artdec/artdec"/>
+        <unit_mat path="units/mods/masks/pd3maskpack/artdec/artdec"/>
+		<!--Nebu-->
+		<df_nm	  path="units/mods/masks/pd3maskpack/nebu/nebu"/>
+        <unit_mat path="units/mods/masks/pd3maskpack/nebu/nebu"/>
+		<!--Mummy-->
+		<df_nm	  path="units/mods/masks/pd3maskpack/mummy/mummy"/>
+        <unit_mat path="units/mods/masks/pd3maskpack/mummy/mummy"/>
+		<!--Annie-->
+		<df_nm	  path="units/mods/masks/pd3maskpack/annie/annie"/>
+        <unit_mat path="units/mods/masks/pd3maskpack/annie/annie"/>
+        <!--Hockey-->
+		<df_nm	  path="units/mods/masks/pd3maskpack/hoco/hoco"/>
+        <unit_mat path="units/mods/masks/pd3maskpack/hoco/hoco"/>
+		<df_nm	  path="units/mods/masks/pd3maskpack/hoco2/hoco2"/>
+        <unit_mat path="units/mods/masks/pd3maskpack/hoco2/hoco2"/>
+        <!--Empty Folk-->
+		<df_nm	  path="units/mods/masks/pd3maskpack/mtmale/mtmale"/>
+        <unit_mat path="units/mods/masks/pd3maskpack/mtmale/mtmale"/>
+		<df_nm	  path="units/mods/masks/pd3maskpack/mtfem/mtfem"/>
+        <unit_mat path="units/mods/masks/pd3maskpack/mtfem/mtfem"/>
+        <!--Geisha-->
+		<df_nm	  path="units/mods/masks/pd3maskpack/ping/ping"/>
+        <unit_mat path="units/mods/masks/pd3maskpack/ping/ping"/>
+        <!--Ballistic-->
+		<df_nm	  path="units/mods/masks/pd3maskpack/gage/gage"/>
+        <unit_mat path="units/mods/masks/pd3maskpack/gage/gage"/>
+        <!--Unwitnessed-->
+		<df_nm	  path="units/mods/masks/pd3maskpack/just/just"/>
+        <unit_mat path="units/mods/masks/pd3maskpack/just/just"/>
+        <!--Ballistic-->
+		<df_nm	  path="units/mods/masks/pd3maskpack/red/red"/>
+        <unit_mat path="units/mods/masks/pd3maskpack/red/red"/>
+        <!--Ironman-->
+		<df_nm	  path="units/mods/masks/pd3maskpack/fer/fer"/>
+        <unit_mat path="units/mods/masks/pd3maskpack/fer/fer"/>
+        <!--Preorder-->
+		<df_nm	  path="units/mods/masks/pd3maskpack/scam/scam"/>
+        <unit_mat path="units/mods/masks/pd3maskpack/scam/scam"/>
+		<df_nm	  path="units/mods/masks/pd3maskpack/scam2/scam2"/>
+        <unit_mat path="units/mods/masks/pd3maskpack/scam2/scam2"/>
+		<df_nm	  path="units/mods/masks/pd3maskpack/scam3/scam3"/>
+        <unit_mat path="units/mods/masks/pd3maskpack/scam3/scam3"/>
+		<!--Ballsy-->
+		<df_nm	  path="units/mods/masks/pd3maskpack/baller/baller"/>
+        <unit_mat path="units/mods/masks/pd3maskpack/baller/baller"/>
+		<!--Commander 53-->
+		<df_nm	  path="units/mods/masks/pd3maskpack/comm/comm"/>
+        <unit_mat path="units/mods/masks/pd3maskpack/comm/comm"/>
+		<!--Under Wraps-->
+		<df_nm	  path="units/mods/masks/pd3maskpack/mummy/mummy"/>
+        <unit_mat path="units/mods/masks/pd3maskpack/mummy/mummy"/>
+		<!--Le Fantome-->
+		<df_nm	  path="units/mods/masks/pd3maskpack/fant/fant"/>
+        <unit_mat path="units/mods/masks/pd3maskpack/fant/fant"/>
+		<!--Smokey-->
+		<df_nm	  path="units/mods/masks/pd3maskpack/smoke/smoke"/>
+        <unit_mat path="units/mods/masks/pd3maskpack/smoke/smoke"/>
+		<!--Shaggoth-->
+		<df_nm	  path="units/mods/masks/pd3maskpack/smoke/shagg"/>
+        <unit_mat path="units/mods/masks/pd3maskpack/smoke/shagg"/>
+        <!--Vintage Dallas-->
+		<df_nm	  path="units/mods/masks/pd3maskpack/imember/imember"/>
+        <unit_mat path="units/mods/masks/pd3maskpack/imember/imember"/>
+        <!--shroud-->
+		<df_nm	  path="units/mods/masks/pd3maskpack/shroud/shroud"/>
+        <unit_mat path="units/mods/masks/pd3maskpack/shroud/shroud"/>
+        <!--Pharoah's Curse-->
+		<df_nm	  path="units/mods/masks/pd3maskpack/pharoah/pharoah"/>
+        <unit_mat path="units/mods/masks/pd3maskpack/pharoah/pharoah"/>
+        <!--Monkey Business-->
+		<df_nm	  path="units/mods/masks/pd3maskpack/monki/monki"/>
+        <unit_mat path="units/mods/masks/pd3maskpack/monki/monki"/>
+        <!--Old Salt-->
+		<df_nm	  path="units/mods/masks/pd3maskpack/pipe/pipe"/>
+        <unit_mat path="units/mods/masks/pd3maskpack/pipe/pipe"/>
+        <!--Rat Fu-->
+		<df_nm	  path="units/mods/masks/pd3maskpack/ratto/ratto"/>
+        <unit_mat path="units/mods/masks/pd3maskpack/ratto/ratto"/>
+    </AddFiles>
+
+</mod>

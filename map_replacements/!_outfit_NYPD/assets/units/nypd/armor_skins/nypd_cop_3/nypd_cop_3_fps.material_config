@@ -1,0 +1,10 @@
+<materials version="3" group="ene_cop_3">
+    <material render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2" name="mtr_body">
+        <bump_normal_texture 	file="units/nypd/armor_skins/shared_textures/police_nm"/>
+        <diffuse_texture 	file="units/nypd/armor_skins/shared_textures/police_df"/>
+    </material>
+    <material render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2" name="mtr_head">
+        <bump_normal_texture 	file="units/payday2/characters/shared_textures/head_01_nm"/>
+        <diffuse_texture 	file="units/nypd/armor_skins/shared_textures/head_01_df"/>
+    </material>
+</materials>

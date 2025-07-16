@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/nypd/armor_skins/nypd_gensec_light_smg_classic/nypd_gensec_light_smg_classic" orientation_object="root_point" />
+
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="g_body">
+			<object name="g_body" enabled="true"/>
+			<object name="g_head" enabled="true"/>
+			<object name="g_glass" enabled="true"/>
+		</graphic_group>
+	</graphics>
+</dynamic_object>

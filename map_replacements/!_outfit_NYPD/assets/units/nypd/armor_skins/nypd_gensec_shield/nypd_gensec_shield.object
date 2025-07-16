@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/nypd/armor_skins/nypd_gensec_shield/nypd_gensec_shield" orientation_object="root_point" />
+
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="bounding_box_char">
+			<object name="g_body" enabled="true"/>
+			<object name="g_swat_shield" enabled="true"/>
+			<object name="g_helmet_lod1" enabled="true"/>
+			<object name="g_helmet_lod10" enabled="true"/>
+			<object name="g_helmet_lod11" enabled="true"/>
+
+		<!--Balaclavas; Only one should be used at a time-->
+			<object name="g_balaclava_a" enabled="false"/> <!--Covered nose-->
+			<object name="g_balaclava_b" enabled="false"/> <!--Exposed nose-->
+
+		<!--Heads; Only one should be used at a time and they should not be used alongside a balaclava-->
+			<object name="g_head_black_c_var1" enabled="false"/>
+			<object name="g_head_black_c_var2" enabled="false"/>
+			<object name="g_head_black_c_var3" enabled="false"/>
+			<object name="g_head_black_c_var4" enabled="false"/>
+			<object name="g_head_black_c_var5" enabled="false"/>
+			<object name="g_head_black_c_var6" enabled="false"/>
+			<object name="g_head_black_c_var7" enabled="false"/>
+			<object name="g_head_white_c_var1" enabled="false"/>
+			<object name="g_head_white_c_var2" enabled="false"/>
+			<object name="g_head_white_c_var3" enabled="false"/>
+			<object name="g_head_white_c_var4" enabled="false"/>
+			<object name="g_head_white_c_var5" enabled="true"/>
+			<object name="g_head_white_c_var6" enabled="false"/>
+			<object name="g_head_white_c_var7" enabled="false"/>
+
+		<!--Faces; Only one should be used at a time and they should only be used alongside a balaclava-->
+			<object name="g_face_a" enabled="false"/>
+			<object name="g_face_b" enabled="false"/>
+			<object name="g_face_c" enabled="false"/>
+			<object name="g_face_d" enabled="false"/>
+			<object name="g_face_e" enabled="false"/>
+
+		<!--Helmet Flashlight-->
+			<object name="g_helmet_lod3" enabled="false"/>
+
+		<!--Chops and Headset; Only one should be used at a time-->
+			<object name="g_helmet_lod7" enabled="false"/> <!--Chops (mouth guards)-->
+			<object name="g_helmet_lod9" enabled="true"/> <!--Headset-->
+
+		<!--Gun Holsters-->
+			<object name="g_holster_l" enabled="false"/> <!--Left thigh-->
+			<object name="g_holster_r" enabled="false"/> <!--Right thigh-->
+		</graphic_group>
+	</graphics>
+</dynamic_object>

@@ -1,0 +1,11 @@
+<dynamic_object>
+    <diesel materials="units/mods/masks/pd3maskpack/comm/comm" orientation_object="rp_pd3"/>
+	<sequence_manager file="units/pd2_dlc_joy/masks/msk_joy" />
+    <graphics>
+        <object enabled="true" name="g_comm" />
+        <object enabled="true" name="g_frame" />
+		
+        <object enabled="true" name="g_comm_screen" />
+		<object enabled="false" name="g_comm_screen_01" />
+    </graphics>
+</dynamic_object>

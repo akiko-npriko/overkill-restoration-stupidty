@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/nypd/armor_skins/nypd_gensec_sniper/nypd_gensec_sniper" orientation_object="root_point" />
+
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="bounding_box_char">
+			<object name="g_body_sniper" enabled="true"/>
+
+		<!--Balaclavas; Only one should be used at a time-->
+			<object name="g_balaclava_a" enabled="false"/> <!--Covered nose-->
+			<object name="g_balaclava_b" enabled="false"/> <!--Exposed nose-->
+
+		<!--Heads; Only one should be used at a time and they should not be used alongside a balaclava-->
+			<object name="g_head_black_c_var1" enabled="false"/>
+			<object name="g_head_black_c_var2" enabled="true"/>
+			<object name="g_head_black_c_var3" enabled="false"/>
+			<object name="g_head_black_c_var4" enabled="false"/>
+			<object name="g_head_black_c_var5" enabled="false"/>
+			<object name="g_head_black_c_var6" enabled="false"/>
+			<object name="g_head_black_c_var7" enabled="false"/>
+			<object name="g_head_white_c_var1" enabled="false"/>
+			<object name="g_head_white_c_var2" enabled="false"/>
+			<object name="g_head_white_c_var3" enabled="false"/>
+			<object name="g_head_white_c_var4" enabled="false"/>
+			<object name="g_head_white_c_var5" enabled="false"/>
+			<object name="g_head_white_c_var6" enabled="false"/>
+			<object name="g_head_white_c_var7" enabled="false"/>
+
+		<!--Faces; Only one should be used at a time and they should only be used alongside a balaclava-->
+			<object name="g_face_a" enabled="false"/>
+			<object name="g_face_b" enabled="false"/>
+			<object name="g_face_c" enabled="false"/>
+			<object name="g_face_d" enabled="false"/>
+			<object name="g_face_e" enabled="false"/>
+
+		<!--Hats; Only one should be used at a time-->
+			<object name="g_hat_lod1" enabled="true"/> <!--Backward-facing hat-->
+			<object name="g_hat_lod3" enabled="false"/> <!--Forward-facing hat-->
+
+		<!--Goggles; Only one should be used at a time and they should each be used with their corresponding glass-->
+			<object name="g_goggles_a" enabled="false"/> <!--Use alongside g_glass-->
+			<object name="g_glass" enabled="false"/>
+
+			<object name="g_goggles_c" enabled="false"/> <!--Use alongside g_glass_c-->
+			<object name="g_glass_c" enabled="false"/>
+
+			<object name="g_glasses" enabled="true"/> <!--Use alongside g_glasses_glass-->
+			<object name="g_glasses_glass" enabled="true"/>
+
+		<!--Headset-->
+			<object name="g_headset" enabled="false"/>
+		</graphic_group>
+	</graphics>
+</dynamic_object>

@@ -1,0 +1,16 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_ass_m4_flamethrower_jakpurifier/wpn_fps_ass_m4_flamethrower_jakpurifier" orientation_object="rp_wpn_fps_ass_m4_flamethrower_jakpurifier" />
+	<graphics>
+		<object name="g_flame_mag_loader" enabled="true" />
+		<object name="g_flame_mag_a" enabled="true" />
+		<object name="g_flamethrower" enabled="true" />
+		<object name="g_cap" enabled="true" />
+	</graphics>
+   <animations>
+		<animation_group name="reload_ul">
+		  <object name="anim_flame_reload" enabled="false"/>
+		  <object name="anim_flame_mag_reload" enabled="false"/>
+		</animation_group>
+	</animations>	
+	<lights />
+</dynamic_object>

@@ -1,0 +1,20 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_body" orientation_object="rp_wpn_fps_pis_peacemaker_body_standard" />
+	<animations>
+		<animation_group name="reload_enter">
+			<object name="a_reload_lid_enter" enabled="true" />
+		</animation_group>
+		<animation_group name="reload_exit">
+			<object name="a_reload_lid_exit" enabled="true" />
+		</animation_group>
+		<animation_group name="recoil">
+			<object name="a_recoil_hammer" enabled="true" />
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_body_lod0" enabled="true" />
+		<object name="g_lid_lod0" enabled="true" />
+		<object name="g_hammer_lod0" enabled="true" />
+		<object name="g_ejector_lod0" enabled="true" />
+	</graphics>
+</dynamic_object>

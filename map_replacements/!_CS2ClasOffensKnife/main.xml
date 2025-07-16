@@ -1,0 +1,62 @@
+<table name="CSSknife">
+<!-- Table name = id for the pack -->
+
+    <!--<AssetUpdates id="18543" name="asset_updates" folder_name="bayonet" provider="lastbullet"/>
+    
+    Adds auto update to your mod
+    id = the last bullet mod ID, example below:
+         = id 16956
+    name = asset_updates (do not change this)
+    folder_name = the name of your mod folder, try to keep it simple, lower case, no spaces / special characters
+    provider = where the update comes from, no need to change
+    -->
+
+
+    <Localization directory="Localization" default="english.txt">
+    </Localization>
+    <!-- No need to change localization stuff, unless you wish to add other languages -->
+    
+    
+	<GlobalValue id="snyak2" color="Color(245, 0, 135)"/>
+    <!--
+    globalvalue id = id for the entire pack
+    color = The color of the "This is an X item!" text
+    -->
+    
+      
+    <Melee id="CSSknife" based_on="shawn" unit="units/mods/weapons/wpn_fps_mel_cssknife/wpn_fps_mel_cssknife" third_unit="units/mods/weapons/wpn_fps_mel_cssknife/wpn_third_mel_cssknife" texture_bundle_folder="snyak" dlc="snyak2" global_value="snyak2">
+    <stats min_damage="3" max_damage="6" charge_time="0.4" min_damage_effect="20" max_damage_effect="40" range="150" concealment="30"/>
+    </melee>
+    <!--
+    Melee id = the ID of the melee weapons
+    based on = the original weapon that your new one borrows it's animations from
+    unit = directory of your new weapon's .unit filename
+    third_unit = directory of your new weapon's .unit filename
+    texture_bundle_folder = directory path for the icons
+    global_value = for packs of mods, a global id assigned to all
+    -->    
+    
+    
+    <AddFiles directory="assets">
+        <cooked_physics path="units/mods/weapons/wpn_fps_mel_cssknife/wpn_fps_mel_cssknife"/>
+        <model path="units/mods/weapons/wpn_fps_mel_cssknife/wpn_fps_mel_cssknife"/>
+        <object path="units/mods/weapons/wpn_fps_mel_cssknife/wpn_fps_mel_cssknife"/>
+        <unit path="units/mods/weapons/wpn_fps_mel_cssknife/wpn_fps_mel_cssknife"/>
+        <material_config path="units/mods/weapons/wpn_fps_mel_cssknife/wpn_fps_mel_cssknife"/>
+        <material_config path="units/mods/weapons/wpn_fps_mel_cssknife/wpn_third_mel_cssknife"/>
+
+        <cooked_physics path="units/mods/weapons/wpn_fps_mel_cssknife/wpn_third_mel_cssknife"/>
+        <model path="units/mods/weapons/wpn_fps_mel_cssknife/wpn_third_mel_cssknife"/>
+        <object path="units/mods/weapons/wpn_fps_mel_cssknife/wpn_third_mel_cssknife"/>
+        <unit path="units/mods/weapons/wpn_fps_mel_cssknife/wpn_third_mel_cssknife"/>
+
+        <texture path="units/mods/weapons/wpn_fps_mel_cssknife/wpn_fps_mel_cssknife_df"/>
+        <texture path="units/mods/weapons/wpn_fps_mel_cssknife/wpn_fps_mel_cssknife_nm"/>
+        <texture path="guis/dlcs/snyak/textures/pd2/blackmarket/icons/melee_weapons/CSSknife"/>
+     <!--
+     This is a list of the files that will get added to the game, in this case. 5 first person files, 5 third person files, and 3 texture files
+     -->
+        
+        
+    </AddFiles>
+</table>

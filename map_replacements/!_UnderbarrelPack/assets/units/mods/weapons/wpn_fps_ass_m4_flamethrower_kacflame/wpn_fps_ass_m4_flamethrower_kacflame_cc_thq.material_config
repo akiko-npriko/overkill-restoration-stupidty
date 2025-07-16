@@ -1,0 +1,66 @@
+<materials version="3" group="weapon_kacchainsaw">
+    <material render_template="generic_customizable:CUBE_ENVIRONMENT_MAPPING:DECAL_STICKER_UV2:DIFFUSE_TEXTURE:GRADIENTMAP:NORMALMAP:PATTERN_GRADIENTMAP:PATTERN_GRADIENTMAP_ANGLE_OFFSET:PATTERN_UV2:WEAR_TEAR_MASKING" name="mat_kcs_flamebody_a" unique="true" version="2">
+        <diffuse_texture     file="units/pd2_dlc_pxp4/weapons/wpn_fps_lmg_kacchainsaw_pts/kcs_fl_body_a_df_cc" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_pxp4/weapons/wpn_fps_lmg_kacchainsaw_pts/kcs_fl_body_a_nm"  mip="1"/>
+		<diffuse_layer1_texture file="units/payday2_cash/safes/default/base_gradient/base_default_df"/>
+		<diffuse_layer2_texture file="units/payday2_cash/safes/default/pattern_gradient/gradient_default_df"/>
+		<diffuse_layer0_texture file="units/payday2_cash/safes/default/pattern/pattern_default_df"/>
+		<reflection_texture type="cube" global_texture="current_global_texture"/>
+		<variable value="1 0 1" type="vector3" name="pattern_tweak"/>
+		<variable value="0 0 0" type="vector3" name="pattern_pos"/>
+		<variable value="0" type="scalar" name="wear_tear_value"/>
+		<diffuse_layer3_texture file="units/payday2_cash/safes/default/sticker/sticker_default_df"/>
+		<variable value="1 1 1" type="vector3" name="uv_scale"/>
+		<variable value="0 0 0" type="vector3" name="uv_offset_rot"/>
+		<variable value="0 0 0" type="vector3" name="cubemap_pattern_control"/>
+        <material_texture    file="units/pd2_dlc_pxp4/weapons/wpn_fps_lmg_kacchainsaw_pts/kcs_fl_body_a_gsma"/>
+    </material>
+    <material render_template="generic_customizable:CUBE_ENVIRONMENT_MAPPING:DECAL_STICKER_UV2:DIFFUSE_TEXTURE:GRADIENTMAP:NORMALMAP:PATTERN_GRADIENTMAP:PATTERN_GRADIENTMAP_ANGLE_OFFSET:PATTERN_UV2:WEAR_TEAR_MASKING" name="mat_kcs_flamebody_b" unique="true" version="2">
+        <diffuse_texture     file="units/pd2_dlc_pxp4/weapons/wpn_fps_lmg_kacchainsaw_pts/kcs_fl_body_b_df_cc" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_pxp4/weapons/wpn_fps_lmg_kacchainsaw_pts/kcs_fl_body_b_nm"  mip="1"/>
+		<diffuse_layer1_texture file="units/payday2_cash/safes/default/base_gradient/base_default_df"/>
+		<diffuse_layer2_texture file="units/payday2_cash/safes/default/pattern_gradient/gradient_default_df"/>
+		<diffuse_layer0_texture file="units/payday2_cash/safes/default/pattern/pattern_default_df"/>
+		<reflection_texture type="cube" global_texture="current_global_texture"/>
+		<variable value="1 0 1" type="vector3" name="pattern_tweak"/>
+		<variable value="0 0 0" type="vector3" name="pattern_pos"/>
+		<variable value="0" type="scalar" name="wear_tear_value"/>
+		<diffuse_layer3_texture file="units/payday2_cash/safes/default/sticker/sticker_default_df"/>
+		<variable value="1 1 1" type="vector3" name="uv_scale"/>
+		<variable value="0 0 0" type="vector3" name="uv_offset_rot"/>
+		<variable value="0 0 0" type="vector3" name="cubemap_pattern_control"/>
+        <material_texture    file="units/pd2_dlc_pxp4/weapons/wpn_fps_lmg_kacchainsaw_pts/kcs_fl_body_b_gsma"/>
+    </material>
+    <material render_template="generic_customizable:CUBE_ENVIRONMENT_MAPPING:DECAL_STICKER_UV2:DIFFUSE_TEXTURE:GRADIENTMAP:NORMALMAP:PATTERN_GRADIENTMAP:PATTERN_GRADIENTMAP_ANGLE_OFFSET:PATTERN_UV2:WEAR_TEAR_MASKING" name="mat_kcs_fl_mag" unique="true" version="2">
+        <diffuse_texture     file="units/pd2_dlc_pxp4/weapons/wpn_fps_lmg_kacchainsaw_pts/kcs_fl_mag_df_cc" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_pxp4/weapons/wpn_fps_lmg_kacchainsaw_pts/kcs_fl_mag_nm"  mip="1"/>
+		<diffuse_layer1_texture file="units/payday2_cash/safes/default/base_gradient/base_default_df"/>
+		<diffuse_layer2_texture file="units/payday2_cash/safes/default/pattern_gradient/gradient_default_df"/>
+		<diffuse_layer0_texture file="units/payday2_cash/safes/default/pattern/pattern_default_df"/>
+		<reflection_texture type="cube" global_texture="current_global_texture"/>
+		<variable value="1 0 1" type="vector3" name="pattern_tweak"/>
+		<variable value="0 0 0" type="vector3" name="pattern_pos"/>
+		<variable value="0" type="scalar" name="wear_tear_value"/>
+		<diffuse_layer3_texture file="units/payday2_cash/safes/default/sticker/sticker_default_df"/>
+		<variable value="1 1 1" type="vector3" name="uv_scale"/>
+		<variable value="0 0 0" type="vector3" name="uv_offset_rot"/>
+		<variable value="0 0 0" type="vector3" name="cubemap_pattern_control"/>
+        <material_texture    file="units/pd2_dlc_pxp4/weapons/wpn_fps_lmg_kacchainsaw_pts/kcs_fl_mag_gsma"/>
+    </material>
+    <material render_template="generic_customizable:CUBE_ENVIRONMENT_MAPPING:DECAL_STICKER_UV2:DIFFUSE_TEXTURE:GRADIENTMAP:NORMALMAP:PATTERN_GRADIENTMAP:PATTERN_GRADIENTMAP_ANGLE_OFFSET:PATTERN_UV2:WEAR_TEAR_MASKING" name="mat_kcs_flamebody_chamber" unique="true" version="2">
+        <diffuse_texture     file="units/pd2_dlc_pxp4/weapons/wpn_fps_lmg_kacchainsaw_pts/kcs_fl_receiver_df_cc" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_pxp4/weapons/wpn_fps_lmg_kacchainsaw_pts/kcs_fl_receiver_nm"  mip="1"/>
+		<diffuse_layer1_texture file="units/payday2_cash/safes/default/base_gradient/base_default_df"/>
+		<diffuse_layer2_texture file="units/payday2_cash/safes/default/pattern_gradient/gradient_default_df"/>
+		<diffuse_layer0_texture file="units/payday2_cash/safes/default/pattern/pattern_default_df"/>
+		<reflection_texture type="cube" global_texture="current_global_texture"/>
+		<variable value="1 0 1" type="vector3" name="pattern_tweak"/>
+		<variable value="0 0 0" type="vector3" name="pattern_pos"/>
+		<variable value="0" type="scalar" name="wear_tear_value"/>
+		<diffuse_layer3_texture file="units/payday2_cash/safes/default/sticker/sticker_default_df"/>
+		<variable value="1 1 1" type="vector3" name="uv_scale"/>
+		<variable value="0 0 0" type="vector3" name="uv_offset_rot"/>
+		<variable value="0 0 0" type="vector3" name="cubemap_pattern_control"/>
+        <material_texture    file="units/pd2_dlc_pxp4/weapons/wpn_fps_lmg_kacchainsaw_pts/kcs_fl_receiver_gsma"/>
+    </material>
+</materials>

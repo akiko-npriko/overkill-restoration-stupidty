@@ -1,0 +1,31 @@
+<table name="Stone Axe">
+
+    <Localization directory="loc" default="english.txt">
+	<loc file="english.txt" language="english"/>
+	</Localization>   
+    <GlobalValue id="iuhStoneAxe" color="Color(255, 215, 0)"/>
+      
+    <Melee id="iuhStoneAxeMelee" based_on="fireaxe" info_id="bm_melee_iuhStoneAxeMelee_info" anim_global_param="melee_fireaxe" melee_charge_shaker="player_melee_charge_wing" unit="units/mods/weapons/iuhStoneAxeMelee/iuhStoneAxeMelee" third_unit="units/mods/weapons/iuhStoneAxeMelee/iuhStoneAxeMelee_third" dlc="iuhStoneAxe" global_value="iuhStoneAxe">
+        <sounds hit_air = "iuhStoneAxeMelee_hit" hit_gen = "iuhStoneAxeMelee_hit_object" hit_body = "iuhStoneAxeMelee_hit_flesh"/>
+    </Melee>
+
+   
+    <AddFiles directory="assets">
+        <unit_mat path="units/mods/weapons/iuhStoneAxeMelee/iuhStoneAxeMelee"/>
+        <unit_mat path="units/mods/weapons/iuhStoneAxeMelee/iuhStoneAxeMelee_third"/>
+
+		<texture path="units/mods/weapons/iuhStoneAxeMelee/blade_df"/>
+		<texture path="units/mods/weapons/iuhStoneAxeMelee/blade_nm"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/melee_weapons/iuhStoneAxeMelee"/>
+    </AddFiles>
+
+    <Sounds directory="assets\sounds">
+		<sound id="iuhStoneAxeMelee_hit"           path="iuhStoneAxeMelee_hit.ogg" prefix="first"/>
+        <sound id="iuhStoneAxeMelee_hit_flesh"     path="iuhStoneAxeMelee_hit_flesh.ogg" prefix="first"/>
+        <sound id="iuhStoneAxeMelee_hit_object"    path="iuhStoneAxeMelee_hit_object.ogg" prefix="first"/>
+	</Sounds>
+
+</table>
+
+<!--melee_agave-->
+<!--melee_machete-->

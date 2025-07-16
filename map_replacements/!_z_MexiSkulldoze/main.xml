@@ -1,0 +1,22 @@
+<table name="mexskulldoz1">
+
+    <Localization directory="Localization" default="english.txt">
+    </Localization>
+     
+    <GlobalValue id="mexskulldoz1" color="Color(1, 0.5, 0)"/>
+     
+    <Mask id="mexskulldoz1" unit="units/mods/masks/msk_mexskulldoz1/msk_mexskulldoz1" texture_bundle_folder="mods" global_value="mexskulldoz1" type="helmet" />
+    
+    <AddFiles directory="assets">    
+	<cooked_physics path="units/mods/masks/msk_mexskulldoz1/msk_mexskulldoz1"/>
+        <model path="units/mods/masks/msk_mexskulldoz1/msk_mexskulldoz1"/>
+	<object path="units/mods/masks/msk_mexskulldoz1/msk_mexskulldoz1"/>
+        <unit path="units/mods/masks/msk_mexskulldoz1/msk_mexskulldoz1"/>
+	<material_config path="units/mods/masks/msk_mexskulldoz1/msk_mexskulldoz1"/>
+        
+        <texture path="units/mods/masks/msk_mexskulldoz1/msk_mexskulldoz1_df"/>
+        <texture path="units/mods/masks/msk_mexskulldoz1/msk_mexskulldoz1_nm"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/mexskulldoz1"/>
+        
+    </AddFiles>
+</table>

@@ -1,0 +1,108 @@
+<mod name="Vortex Eleanor Standalone" author="rjc9000" min_lib_ver="3.38">
+	<AssetUpdates id="48584" version="1.00" provider="modworkshop"/>
+	<Localization directory="loc" default="english.txt">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	<GlobalValue id="vortex_eleanor_mod" color="Color(0.8, 0.1, 0.2)"/>	
+
+	
+<!--AIWS Configuration-->	
+	<WeaponMod id="wpn_fps_upg_o_vortex_eleanor" based_on="wpn_fps_upg_o_acog" unit="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/wpn_fps_upg_o_vortex_eleanor" steelsight_visible="false" camera="false" visibility="false" has_description="true" inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2">
+	<stats spread="0" recoil="1" concealment="-1" zoom="5"/>
+		<adds>
+			<value_node value="wpn_fps_upg_o_vortex_eleanor_steelsight"/>
+			<value_node value="wpn_fps_upg_o_vortex_eleanor_switch"/>
+		</adds>
+		<texture_variants>
+			<vortex_eleanor_black name_id="bm_w_paint_vortex_eleanor_black" desc_id="bm_w_paint_vortex_eleanor_black_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/wpn_fps_upg_o_vortex_eleanor_black"/>
+		</texture_variants>	
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_o_vortex_eleanor_steelsight" based_on="wpn_fps_upg_o_acog_steelsight" unit="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/wpn_fps_upg_o_vortex_eleanor_steelsight" hidden="true" ver="2">
+    	<texture_variants>
+			<vortex_eleanor_black name_id="bm_w_paint_vortex_eleanor_black" desc_id="bm_w_paint_vortex_eleanor_black_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/wpn_fps_upg_o_vortex_eleanor_steelsight_black"/>
+		</texture_variants>	
+	</WeaponMod> 
+	
+	<WeaponMod id="wpn_fps_upg_o_vortex_eleanor_switch"  based_on="wpn_fps_m4_uupg_o_flipup" type="extra" sub_type="second_sight" a_obj="a_body" name_id="wpn_fps_upg_o_vortex_eleanor" unit="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor_switch/wpn_fps_upg_o_vortex_eleanor_switch" hidden="true" ver="2">
+		<stats gadget_zoom="1"/>
+		<perks>
+			<value_node value="second_sight"/>
+		</perks>
+		<stance_mod/>
+	</WeaponMod> 
+
+<!--Painday 3 Configuration-->		
+	<WeaponMod id="wpn_fps_upg_o_vortex_eleanor_pd3" based_on="wpn_fps_upg_o_aimpoint" unit="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/wpn_fps_upg_o_vortex_eleanor_pd3" steelsight_visible="false" inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_override="true" inherit_parts_forbids="true" ver="2">
+	<stats spread="0" recoil="1" concealment="-1" zoom="5"/>
+		<adds>
+			<value_node value="wpn_fps_upg_o_vortex_eleanor_pd3_steelsight"/>
+		</adds>
+		<texture_variants>
+			<vortex_eleanor_black name_id="bm_w_paint_vortex_eleanor_black" desc_id="bm_w_paint_vortex_eleanor_black_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/wpn_fps_upg_o_vortex_eleanor_pd3_black"/>
+		</texture_variants>	
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_upg_o_vortex_eleanor_pd3_steelsight" based_on="wpn_fps_upg_o_specter_steelsight" unit="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/wpn_fps_upg_o_vortex_eleanor_pd3_steelsight"  hidden="true" ver="2">
+		<texture_variants>
+			<vortex_eleanor_black name_id="bm_w_paint_vortex_eleanor_black" desc_id="bm_w_paint_vortex_eleanor_black_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/wpn_fps_upg_o_vortex_eleanor_pd3_steelsight_black"/>
+		</texture_variants>	
+	</WeaponMod>
+
+
+
+	<AddFiles directory="assets">
+	<!--GUI-->
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_o_vortex_eleanor"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_o_vortex_eleanor_pd3"/>
+		
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_upg_o_vortex_eleanor/vortex_eleanor_black"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_upg_o_vortex_eleanor_steelsight/vortex_eleanor_black"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_upg_o_vortex_eleanor_pd3/vortex_eleanor_black"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_upg_o_vortex_eleanor_pd3_steelsight/vortex_eleanor_black"/>
+		
+	<!--Textures-->
+		<texture  path="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/textures/weapon_metal_cubemap"/>
+
+	  <df_nm_cc_gsma path="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/textures/vortex_eleanor"/>
+	  <texture 	  path="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/textures/vortex_eleanor_black_df"/>
+	  <df_nm_cc_gsma path="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/textures/reptilia_mount_arco"/>
+	  <texture	  path="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/textures/reptilia_mount_arco_black_df"/>
+	  <df_nm_cc_gsma path="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/textures/acro_p2"/>
+	  <texture 	  path="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/textures/acro_p2_black_df"/>
+	  	  
+		<texture  path="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/textures/eleanor_glass_df"/>
+		<texture  path="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/textures/eleanor_glass_op"/>
+		<texture  path="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/textures/ebr9_reticle"/>
+		<texture  path="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/textures/ebr9_reticle_green"/>
+	
+	<!--Eleanor Path-->	
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/wpn_fps_upg_o_vortex_eleanor"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/wpn_fps_upg_o_vortex_eleanor_steelsight"/> 
+	
+		<material_config path="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/wpn_fps_upg_o_vortex_eleanor_black"/>
+		<material_config path="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/wpn_fps_upg_o_vortex_eleanor_black_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/wpn_fps_upg_o_vortex_eleanor_steelsight_black"/> 
+		<material_config path="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/wpn_fps_upg_o_vortex_eleanor_steelsight_black_thq"/> 
+	
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/wpn_fps_upg_o_vortex_eleanor_pd3"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/wpn_fps_upg_o_vortex_eleanor_pd3_steelsight"/>
+	
+		<material_config path="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/wpn_fps_upg_o_vortex_eleanor_pd3_black"/>
+		<material_config path="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/wpn_fps_upg_o_vortex_eleanor_pd3_black_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/wpn_fps_upg_o_vortex_eleanor_pd3_steelsight_black"/>
+		<material_config path="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor/wpn_fps_upg_o_vortex_eleanor_pd3_steelsight_black_thq"/>
+		
+	<!--Second Sight Paths-->
+		<cooked_physics	 path="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor_switch/wpn_fps_upg_o_vortex_eleanor_switch"/>
+		<unit 			 path="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor_switch/wpn_fps_upg_o_vortex_eleanor_switch"/>
+		<object 		 path="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor_switch/wpn_fps_upg_o_vortex_eleanor_switch"/>
+		<model 			 path="units/mods/weapons/wpn_fps_upg_o_vortex_eleanor_switch/wpn_fps_upg_o_vortex_eleanor_switch"/>
+		
+	</AddFiles>
+	
+	<Hooks directory="hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/> 
+	</Hooks>
+</mod>
+
+		

@@ -1,0 +1,717 @@
+<table name="NYPD Outfit Pack" image="">
+	<Localization directory="localization" default="english.txt"/>
+	<GlobalValue id="nypd_g" color="Color(0, 0, 0.5)"/>
+
+	<!--SWAT Light Rifleman-->
+	<PlayerStyle id="nypd_swat_light_rifle" unit="units/nypd/armor_skins/nypd_swat_light_rifle/nypd_swat_light_rifle_fps" third_unit="units/nypd/armor_skins/nypd_swat_light_rifle/nypd_swat_light_rifle" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic SWAT Light Rifleman-->
+	<PlayerStyle id="nypd_swat_light_rifle_classic" unit="units/nypd/armor_skins/nypd_swat_light_rifle_classic/nypd_swat_light_rifle_classic_fps" third_unit="units/nypd/armor_skins/nypd_swat_light_rifle_classic/nypd_swat_light_rifle_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--SWAT Light Shotgunner-->
+	<PlayerStyle id="nypd_swat_light_shotgun" unit="units/nypd/armor_skins/nypd_swat_light_rifle/nypd_swat_light_rifle_fps" third_unit="units/nypd/armor_skins/nypd_swat_light_shotgun/nypd_swat_light_shotgun" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic SWAT Light Shotgunner-->
+	<PlayerStyle id="nypd_swat_light_shotgun_classic" unit="units/nypd/armor_skins/nypd_swat_light_rifle_classic/nypd_swat_light_rifle_classic_fps" third_unit="units/nypd/armor_skins/nypd_swat_light_shotgun_classic/nypd_swat_light_shotgun_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--SWAT Light Submachinegunner-->
+	<PlayerStyle id="nypd_swat_light_smg" unit="units/nypd/armor_skins/nypd_swat_light_rifle/nypd_swat_light_rifle_fps" third_unit="units/nypd/armor_skins/nypd_swat_light_smg/nypd_swat_light_smg" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic SWAT Light Submachinegunner-->
+	<PlayerStyle id="nypd_swat_light_smg_classic" unit="units/nypd/armor_skins/nypd_swat_light_rifle_classic/nypd_swat_light_rifle_classic_fps" third_unit="units/nypd/armor_skins/nypd_swat_light_smg_classic/nypd_swat_light_smg_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--SWAT Heavy Rifleman-->
+	<PlayerStyle id="nypd_swat_heavy_rifle" unit="units/nypd/armor_skins/nypd_swat_heavy_rifle/nypd_swat_heavy_rifle_fps" third_unit="units/nypd/armor_skins/nypd_swat_heavy_rifle/nypd_swat_heavy_rifle" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic SWAT Heavy Rifleman-->
+	<PlayerStyle id="nypd_swat_heavy_rifle_classic" unit="units/nypd/armor_skins/nypd_swat_heavy_rifle_classic/nypd_swat_heavy_rifle_classic_fps" third_unit="units/nypd/armor_skins/nypd_swat_heavy_rifle_classic/nypd_swat_heavy_rifle_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--SWAT Heavy Shotgunner-->
+	<PlayerStyle id="nypd_swat_heavy_shotgun" unit="units/nypd/armor_skins/nypd_swat_heavy_rifle/nypd_swat_heavy_rifle_fps" third_unit="units/nypd/armor_skins/nypd_swat_heavy_shotgun/nypd_swat_heavy_shotgun" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic SWAT Heavy Shotgunner-->
+	<PlayerStyle id="nypd_swat_heavy_shotgun_classic" unit="units/nypd/armor_skins/nypd_swat_heavy_rifle_classic/nypd_swat_heavy_rifle_classic_fps" third_unit="units/nypd/armor_skins/nypd_swat_heavy_shotgun_classic/nypd_swat_heavy_shotgun_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--SWAT Shield-->
+	<PlayerStyle id="nypd_swat_shield" unit="units/nypd/armor_skins/nypd_swat_heavy_rifle/nypd_swat_heavy_rifle_fps" third_unit="units/nypd/armor_skins/nypd_swat_shield/nypd_swat_shield" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic SWAT Shield-->
+	<PlayerStyle id="nypd_swat_shield_classic" unit="units/nypd/armor_skins/nypd_swat_heavy_rifle_classic/nypd_swat_heavy_rifle_classic_fps" third_unit="units/nypd/armor_skins/nypd_swat_shield_classic/nypd_swat_shield_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--SWAT Sniper-->
+	<PlayerStyle id="nypd_swat_sniper" unit="units/nypd/armor_skins/nypd_swat_sniper/nypd_swat_sniper_fps" third_unit="units/nypd/armor_skins/nypd_swat_sniper/nypd_swat_sniper" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--FBI Light Rifleman-->
+	<PlayerStyle id="nypd_fbi_light_rifle" unit="units/nypd/armor_skins/nypd_fbi_light_rifle/nypd_fbi_light_rifle_fps" third_unit="units/nypd/armor_skins/nypd_fbi_light_rifle/nypd_fbi_light_rifle" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic FBI Light Rifleman-->
+	<PlayerStyle id="nypd_fbi_light_rifle_classic" unit="units/nypd/armor_skins/nypd_fbi_light_rifle_classic/nypd_fbi_light_rifle_classic_fps" third_unit="units/nypd/armor_skins/nypd_fbi_light_rifle_classic/nypd_fbi_light_rifle_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--FBI Light Shotgunner-->
+	<PlayerStyle id="nypd_fbi_light_shotgun" unit="units/nypd/armor_skins/nypd_fbi_light_rifle/nypd_fbi_light_rifle_fps" third_unit="units/nypd/armor_skins/nypd_fbi_light_shotgun/nypd_fbi_light_shotgun" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic FBI Light Shotgunner-->
+	<PlayerStyle id="nypd_fbi_light_shotgun_classic" unit="units/nypd/armor_skins/nypd_fbi_light_shotgun_classic/nypd_fbi_light_shotgun_classic_fps" third_unit="units/nypd/armor_skins/nypd_fbi_light_shotgun_classic/nypd_fbi_light_shotgun_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--FBI Light Submachinegunner-->
+	<PlayerStyle id="nypd_fbi_light_smg" unit="units/nypd/armor_skins/nypd_fbi_light_rifle/nypd_fbi_light_rifle_fps" third_unit="units/nypd/armor_skins/nypd_fbi_light_smg/nypd_fbi_light_smg" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic FBI Light Submachinegunner-->
+	<PlayerStyle id="nypd_fbi_light_smg_classic" unit="units/nypd/armor_skins/nypd_fbi_light_smg_classic/nypd_fbi_light_smg_classic_fps" third_unit="units/nypd/armor_skins/nypd_fbi_light_smg_classic/nypd_fbi_light_smg_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--FBI Heavy Rifleman-->
+	<PlayerStyle id="nypd_fbi_heavy_rifle" unit="units/nypd/armor_skins/nypd_fbi_heavy_rifle/nypd_fbi_heavy_rifle_fps" third_unit="units/nypd/armor_skins/nypd_fbi_heavy_rifle/nypd_fbi_heavy_rifle" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic FBI Heavy Rifleman-->
+	<PlayerStyle id="nypd_fbi_heavy_rifle_classic" unit="units/nypd/armor_skins/nypd_fbi_heavy_rifle_classic/nypd_fbi_heavy_rifle_classic_fps" third_unit="units/nypd/armor_skins/nypd_fbi_heavy_rifle_classic/nypd_fbi_heavy_rifle_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--FBI Heavy Shotgunner-->
+	<PlayerStyle id="nypd_fbi_heavy_shotgun" unit="units/nypd/armor_skins/nypd_fbi_heavy_rifle/nypd_fbi_heavy_rifle_fps" third_unit="units/nypd/armor_skins/nypd_fbi_heavy_shotgun/nypd_fbi_heavy_shotgun" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic FBI Heavy Shotgunner-->
+	<PlayerStyle id="nypd_fbi_heavy_shotgun_classic" unit="units/nypd/armor_skins/nypd_fbi_heavy_shotgun_classic/nypd_fbi_heavy_shotgun_classic_fps" third_unit="units/nypd/armor_skins/nypd_fbi_heavy_shotgun_classic/nypd_fbi_heavy_shotgun_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--FBI Shield-->
+	<PlayerStyle id="nypd_fbi_shield" unit="units/nypd/armor_skins/nypd_fbi_shield/nypd_fbi_shield_fps" third_unit="units/nypd/armor_skins/nypd_fbi_shield/nypd_fbi_shield" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic FBI Shield-->
+	<PlayerStyle id="nypd_fbi_shield_classic" unit="units/nypd/armor_skins/nypd_fbi_shield_classic/nypd_fbi_shield_classic_fps" third_unit="units/nypd/armor_skins/nypd_fbi_shield_classic/nypd_fbi_shield_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--FBI Sniper-->
+	<PlayerStyle id="nypd_fbi_sniper" unit="units/nypd/armor_skins/nypd_fbi_sniper/nypd_fbi_sniper_fps" third_unit="units/nypd/armor_skins/nypd_fbi_sniper/nypd_fbi_sniper" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic FBI Sniper-->
+	<PlayerStyle id="nypd_fbi_sniper_classic" unit="units/nypd/armor_skins/nypd_fbi_sniper_classic/nypd_fbi_sniper_classic_fps" third_unit="units/nypd/armor_skins/nypd_fbi_sniper_classic/nypd_fbi_sniper_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--GenSec Light Rifleman-->
+	<PlayerStyle id="nypd_gensec_light_rifle" unit="units/nypd/armor_skins/nypd_gensec_light_rifle/nypd_gensec_light_rifle_fps" third_unit="units/nypd/armor_skins/nypd_gensec_light_rifle/nypd_gensec_light_rifle" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic GenSec Light Rifleman-->
+	<PlayerStyle id="nypd_gensec_light_rifle_classic" unit="units/nypd/armor_skins/nypd_gensec_light_rifle_classic/nypd_gensec_light_rifle_classic_fps" third_unit="units/nypd/armor_skins/nypd_gensec_light_rifle_classic/nypd_gensec_light_rifle_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--GenSec Light Shotgunner-->
+	<PlayerStyle id="nypd_gensec_light_shotgun" unit="units/nypd/armor_skins/nypd_gensec_light_rifle/nypd_gensec_light_rifle_fps" third_unit="units/nypd/armor_skins/nypd_gensec_light_shotgun/nypd_gensec_light_shotgun" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic GenSec Light Shotgunner-->
+	<PlayerStyle id="nypd_gensec_light_shotgun_classic" unit="units/nypd/armor_skins/nypd_gensec_light_rifle_classic/nypd_gensec_light_rifle_classic_fps" third_unit="units/nypd/armor_skins/nypd_gensec_light_shotgun_classic/nypd_gensec_light_shotgun_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--GenSec Light Submachinegunner-->
+	<PlayerStyle id="nypd_gensec_light_smg" unit="units/nypd/armor_skins/nypd_gensec_light_rifle/nypd_gensec_light_rifle_fps" third_unit="units/nypd/armor_skins/nypd_gensec_light_smg/nypd_gensec_light_smg" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic GenSec Light Submachinegunner-->
+	<PlayerStyle id="nypd_gensec_light_smg_classic" unit="units/nypd/armor_skins/nypd_gensec_light_rifle_classic/nypd_gensec_light_rifle_classic_fps" third_unit="units/nypd/armor_skins/nypd_gensec_light_smg_classic/nypd_gensec_light_smg_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--GenSec Heavy Rifleman-->
+	<PlayerStyle id="nypd_gensec_heavy_rifle" unit="units/nypd/armor_skins/nypd_gensec_heavy_rifle/nypd_gensec_heavy_rifle_fps" third_unit="units/nypd/armor_skins/nypd_gensec_heavy_rifle/nypd_gensec_heavy_rifle" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic GenSec Heavy Rifleman-->
+	<PlayerStyle id="nypd_gensec_heavy_rifle_classic" unit="units/nypd/armor_skins/nypd_gensec_heavy_rifle_classic/nypd_gensec_heavy_rifle_classic_fps" third_unit="units/nypd/armor_skins/nypd_gensec_heavy_rifle_classic/nypd_gensec_heavy_rifle_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--GenSec Heavy Shotgunner-->
+	<PlayerStyle id="nypd_gensec_heavy_shotgun" unit="units/nypd/armor_skins/nypd_gensec_heavy_rifle/nypd_gensec_heavy_rifle_fps" third_unit="units/nypd/armor_skins/nypd_gensec_heavy_shotgun/nypd_gensec_heavy_shotgun" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic GenSec Heavy Shotgunner-->
+	<PlayerStyle id="nypd_gensec_heavy_shotgun_classic" unit="units/nypd/armor_skins/nypd_gensec_heavy_rifle_classic/nypd_gensec_heavy_rifle_classic_fps" third_unit="units/nypd/armor_skins/nypd_gensec_heavy_shotgun_classic/nypd_gensec_heavy_shotgun_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--GenSec Shield-->
+	<PlayerStyle id="nypd_gensec_shield" unit="units/nypd/armor_skins/nypd_gensec_shield/nypd_gensec_shield_fps" third_unit="units/nypd/armor_skins/nypd_gensec_shield/nypd_gensec_shield" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic GenSec Shield-->
+	<PlayerStyle id="nypd_gensec_shield_classic" unit="units/nypd/armor_skins/nypd_gensec_light_rifle_classic/nypd_gensec_light_rifle_classic_fps" third_unit="units/nypd/armor_skins/nypd_gensec_shield_classic/nypd_gensec_shield_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--GenSec Sniper-->
+	<PlayerStyle id="nypd_gensec_sniper" unit="units/nypd/armor_skins/nypd_gensec_sniper/nypd_gensec_sniper_fps" third_unit="units/nypd/armor_skins/nypd_gensec_sniper/nypd_gensec_sniper" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Cop 1-->
+	<PlayerStyle id="nypd_cop_1" unit="units/nypd/armor_skins/nypd_cop_1/nypd_cop_1_fps" third_unit="units/nypd/armor_skins/nypd_cop_1/nypd_cop_1" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Cop 2-->
+	<PlayerStyle id="nypd_cop_2" unit="units/nypd/armor_skins/nypd_cop_2/nypd_cop_2_fps" third_unit="units/nypd/armor_skins/nypd_cop_2/nypd_cop_2" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Cop 3-->
+	<PlayerStyle id="nypd_cop_3" unit="units/nypd/armor_skins/nypd_cop_3/nypd_cop_3_fps" third_unit="units/nypd/armor_skins/nypd_cop_3/nypd_cop_3" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Cop 4-->
+	<PlayerStyle id="nypd_cop_4" unit="units/nypd/armor_skins/nypd_cop_4/nypd_cop_4_fps" third_unit="units/nypd/armor_skins/nypd_cop_4/nypd_cop_4" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Veteran Agent-->
+	<PlayerStyle id="nypd_fbi_agent_1" unit="units/nypd/armor_skins/nypd_fbi_agent_1/nypd_fbi_agent_1_fps" third_unit="units/nypd/armor_skins/nypd_fbi_agent_1/nypd_fbi_agent_1" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--HRT-->
+	<PlayerStyle id="nypd_fbi_agent_2" unit="units/nypd/armor_skins/nypd_fbi_agent_2/nypd_fbi_agent_2_fps" third_unit="units/nypd/armor_skins/nypd_fbi_agent_2/nypd_fbi_agent_2" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Taser-->
+	<PlayerStyle id="nypd_taser" unit="units/nypd/armor_skins/nypd_taser/nypd_taser_fps" third_unit="units/nypd/armor_skins/nypd_taser/nypd_taser" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic Taser-->
+	<PlayerStyle id="nypd_taser_classic" unit="units/nypd/armor_skins/nypd_taser_classic/nypd_taser_classic_fps" third_unit="units/nypd/armor_skins/nypd_taser_classic/nypd_taser_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Cloaker-->
+	<PlayerStyle id="nypd_spook" unit="units/nypd/armor_skins/nypd_spook/nypd_spook_fps" third_unit="units/nypd/armor_skins/nypd_spook/nypd_spook" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic Cloaker-->
+	<PlayerStyle id="nypd_spook_classic" unit="units/nypd/armor_skins/nypd_spook_classic/nypd_spook_classic_fps" third_unit="units/nypd/armor_skins/nypd_spook_classic/nypd_spook_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Medic-->
+	<PlayerStyle id="nypd_medic" unit="units/nypd/armor_skins/nypd_medic/nypd_medic_fps" third_unit="units/nypd/armor_skins/nypd_medic/nypd_medic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic Medic-->
+	<PlayerStyle id="nypd_medic_classic" unit="units/nypd/armor_skins/nypd_medic_classic/nypd_medic_classic_fps" third_unit="units/nypd/armor_skins/nypd_medic_classic/nypd_medic_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Grenadier-->
+	<PlayerStyle id="nypd_grenadier" unit="units/nypd/armor_skins/nypd_grenadier/nypd_grenadier_fps" third_unit="units/nypd/armor_skins/nypd_grenadier/nypd_grenadier" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic Grenadier-->
+	<PlayerStyle id="nypd_grenadier_classic" unit="units/nypd/armor_skins/nypd_grenadier_classic/nypd_grenadier_classic_fps" third_unit="units/nypd/armor_skins/nypd_grenadier_classic/nypd_grenadier_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--R870 Dozer-->
+	<PlayerStyle id="nypd_dozer_r870" unit="units/nypd/armor_skins/nypd_dozer_r870/nypd_dozer_r870_fps" third_unit="units/nypd/armor_skins/nypd_dozer_r870/nypd_dozer_r870" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic R870 Dozer-->
+	<PlayerStyle id="nypd_dozer_r870_classic" unit="units/nypd/armor_skins/nypd_dozer_r870_classic/nypd_dozer_r870_classic_fps" third_unit="units/nypd/armor_skins/nypd_dozer_r870_classic/nypd_dozer_r870_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Saiga Dozer-->
+	<PlayerStyle id="nypd_dozer_saiga" unit="units/nypd/armor_skins/nypd_dozer_saiga/nypd_dozer_saiga_fps" third_unit="units/nypd/armor_skins/nypd_dozer_saiga/nypd_dozer_saiga" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic Saiga Dozer-->
+	<PlayerStyle id="nypd_dozer_saiga_classic" unit="units/nypd/armor_skins/nypd_dozer_saiga_classic/nypd_dozer_saiga_classic_fps" third_unit="units/nypd/armor_skins/nypd_dozer_saiga_classic/nypd_dozer_saiga_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--M249 Dozer-->
+	<PlayerStyle id="nypd_dozer_m249" unit="units/nypd/armor_skins/nypd_dozer_m249/nypd_dozer_m249_fps" third_unit="units/nypd/armor_skins/nypd_dozer_m249/nypd_dozer_m249" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Maxim-->
+	<PlayerStyle id="nypd_veteran_1" unit="units/nypd/armor_skins/nypd_veteran_1/nypd_veteran_1_fps" third_unit="units/nypd/armor_skins/nypd_veteran_1/nypd_veteran_1" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Clean Maxim-->
+	<PlayerStyle id="nypd_veteran_2" unit="units/nypd/armor_skins/nypd_veteran_2/nypd_veteran_2_fps" third_unit="units/nypd/armor_skins/nypd_veteran_2/nypd_veteran_2" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="nypd" global_value="nypd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<AddFiles directory="assets">
+	<!--SWAT Light Rifleman-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_swat_light_rifle"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_swat_light_rifle/nypd_swat_light_rifle"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_swat_light_rifle/nypd_swat_light_rifle_fps"/>
+
+	<!--Classic SWAT Light Rifleman-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_swat_light_rifle_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_swat_light_rifle_classic/nypd_swat_light_rifle_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_swat_light_rifle_classic/nypd_swat_light_rifle_classic_fps"/>
+
+	<!--SWAT Light Shotgunner-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_swat_light_shotgun"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_swat_light_shotgun/nypd_swat_light_shotgun"/>
+
+	<!--Classic SWAT Light Shotgunner-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_swat_light_shotgun_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_swat_light_shotgun_classic/nypd_swat_light_shotgun_classic"/>
+
+	<!--SWAT Light Submachinegunner-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_swat_light_smg"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_swat_light_smg/nypd_swat_light_smg"/>
+
+	<!--Classic SWAT Light Submachinegunner-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_swat_light_smg_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_swat_light_smg_classic/nypd_swat_light_smg_classic"/>
+
+	<!--SWAT Heavy Rifleman-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_swat_heavy_rifle"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_swat_heavy_rifle/nypd_swat_heavy_rifle"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_swat_heavy_rifle/nypd_swat_heavy_rifle_fps"/>
+
+	<!--Classic SWAT Heavy Rifleman-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_swat_heavy_rifle_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_swat_heavy_rifle_classic/nypd_swat_heavy_rifle_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_swat_heavy_rifle_classic/nypd_swat_heavy_rifle_classic_fps"/>
+
+	<!--SWAT Heavy Shotgunner-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_swat_heavy_shotgun"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_swat_heavy_shotgun/nypd_swat_heavy_shotgun"/>
+
+	<!--Classic SWAT Heavy Shotgunner-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_swat_heavy_shotgun_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_swat_heavy_shotgun_classic/nypd_swat_heavy_shotgun_classic"/>
+
+	<!--SWAT Shield-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_swat_shield"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_swat_shield/nypd_swat_shield"/>
+
+	<!--Classic SWAT Shield-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_swat_shield_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_swat_shield_classic/nypd_swat_shield_classic"/>
+
+	<!--SWAT Sniper-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_swat_sniper"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_swat_sniper/nypd_swat_sniper"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_swat_sniper/nypd_swat_sniper_fps"/>
+
+	<!--FBI Light Rifleman-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_fbi_light_rifle"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_fbi_light_rifle/nypd_fbi_light_rifle"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_fbi_light_rifle/nypd_fbi_light_rifle_fps"/>
+
+	<!--Classic FBI Light Rifleman-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_fbi_light_rifle_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_fbi_light_rifle_classic/nypd_fbi_light_rifle_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_fbi_light_rifle_classic/nypd_fbi_light_rifle_classic_fps"/>
+
+	<!--FBI Light Shotgunner-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_fbi_light_shotgun"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_fbi_light_shotgun/nypd_fbi_light_shotgun"/>
+
+	<!--Classic FBI Light Shotgunner-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_fbi_light_shotgun_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_fbi_light_shotgun_classic/nypd_fbi_light_shotgun_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_fbi_light_shotgun_classic/nypd_fbi_light_shotgun_classic_fps"/>
+
+	<!--FBI Light Submachinegunner-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_fbi_light_smg"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_fbi_light_smg/nypd_fbi_light_smg"/>
+
+	<!--Classic FBI Light Submachinegunner-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_fbi_light_smg_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_fbi_light_smg_classic/nypd_fbi_light_smg_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_fbi_light_smg_classic/nypd_fbi_light_smg_classic_fps"/>
+
+	<!--FBI Heavy Rifleman-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_fbi_heavy_rifle"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_fbi_heavy_rifle/nypd_fbi_heavy_rifle"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_fbi_heavy_rifle/nypd_fbi_heavy_rifle_fps"/>
+
+	<!--Classic FBI Heavy Rifleman-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_fbi_heavy_rifle_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_fbi_heavy_rifle_classic/nypd_fbi_heavy_rifle_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_fbi_heavy_rifle_classic/nypd_fbi_heavy_rifle_classic_fps"/>
+
+	<!--FBI Heavy Shotgunner-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_fbi_heavy_shotgun"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_fbi_heavy_shotgun/nypd_fbi_heavy_shotgun"/>
+
+	<!--Classic FBI Heavy Shotgunner-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_fbi_heavy_shotgun_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_fbi_heavy_shotgun_classic/nypd_fbi_heavy_shotgun_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_fbi_heavy_shotgun_classic/nypd_fbi_heavy_shotgun_classic_fps"/>
+
+	<!--FBI Shield-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_fbi_shield"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_fbi_shield/nypd_fbi_shield"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_fbi_shield/nypd_fbi_shield_fps"/>
+
+	<!--Classic FBI Shield-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_fbi_shield_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_fbi_shield_classic/nypd_fbi_shield_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_fbi_shield_classic/nypd_fbi_shield_classic_fps"/>
+
+	<!--FBI Sniper-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_fbi_sniper"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_fbi_sniper/nypd_fbi_sniper"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_fbi_sniper/nypd_fbi_sniper_fps"/>
+
+	<!--Classic FBI Sniper-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_fbi_sniper_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_fbi_sniper_classic/nypd_fbi_sniper_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_fbi_sniper_classic/nypd_fbi_sniper_classic_fps"/>
+
+	<!--GenSec Light Rifleman-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_gensec_light_rifle"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_gensec_light_rifle/nypd_gensec_light_rifle"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_gensec_light_rifle/nypd_gensec_light_rifle_fps"/>
+
+	<!--Classic GenSec Light Rifleman-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_gensec_light_rifle_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_gensec_light_rifle_classic/nypd_gensec_light_rifle_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_gensec_light_rifle_classic/nypd_gensec_light_rifle_classic_fps"/>
+
+	<!--GenSec Light Shotgunner-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_gensec_light_shotgun"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_gensec_light_shotgun/nypd_gensec_light_shotgun"/>
+
+	<!--Classic GenSec Light Shotgunner-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_gensec_light_shotgun_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_gensec_light_shotgun_classic/nypd_gensec_light_shotgun_classic"/>
+
+	<!--GenSec Light Submachinegunner-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_gensec_light_smg"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_gensec_light_smg/nypd_gensec_light_smg"/>
+
+	<!--Classic GenSec Light Submachinegunner-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_gensec_light_smg_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_gensec_light_smg_classic/nypd_gensec_light_smg_classic"/>
+
+	<!--GenSec Heavy Rifleman-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_gensec_heavy_rifle"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_gensec_heavy_rifle/nypd_gensec_heavy_rifle"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_gensec_heavy_rifle/nypd_gensec_heavy_rifle_fps"/>
+
+	<!--Classic GenSec Heavy Rifleman-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_gensec_heavy_rifle_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_gensec_heavy_rifle_classic/nypd_gensec_heavy_rifle_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_gensec_heavy_rifle_classic/nypd_gensec_heavy_rifle_classic_fps"/>
+
+	<!--GenSec Heavy Shotgunner-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_gensec_heavy_shotgun"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_gensec_heavy_shotgun/nypd_gensec_heavy_shotgun"/>
+
+	<!--Classic GenSec Heavy Shotgunner-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_gensec_heavy_shotgun_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_gensec_heavy_shotgun_classic/nypd_gensec_heavy_shotgun_classic"/>
+
+	<!--GenSec Shield-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_gensec_shield"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_gensec_shield/nypd_gensec_shield"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_gensec_shield/nypd_gensec_shield_fps"/>
+
+	<!--Classic GenSec Shield-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_gensec_shield_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_gensec_shield_classic/nypd_gensec_shield_classic"/>
+
+	<!--GenSec Sniper-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_gensec_sniper"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_gensec_sniper/nypd_gensec_sniper"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_gensec_sniper/nypd_gensec_sniper_fps"/>
+
+	<!--Cop 1-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_cop_1"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_cop_1/nypd_cop_1"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_cop_1/nypd_cop_1_fps"/>
+
+	<!--Cop 2-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_cop_2"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_cop_2/nypd_cop_2"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_cop_2/nypd_cop_2_fps"/>
+
+	<!--Cop 3-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_cop_3"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_cop_3/nypd_cop_3"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_cop_3/nypd_cop_3_fps"/>
+
+	<!--Cop 4-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_cop_4"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_cop_4/nypd_cop_4"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_cop_4/nypd_cop_4_fps"/>
+
+	<!--FBI Agent 1-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_fbi_agent_1"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_fbi_agent_1/nypd_fbi_agent_1"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_fbi_agent_1/nypd_fbi_agent_1_fps"/>
+
+	<!--FBI Agent 2-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_fbi_agent_2"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_fbi_agent_2/nypd_fbi_agent_2"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_fbi_agent_2/nypd_fbi_agent_2_fps"/>
+
+	<!--Taser-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_taser"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_taser/nypd_taser"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_taser/nypd_taser_fps"/>
+
+	<!--Classic Taser-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_taser_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_taser_classic/nypd_taser_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_taser_classic/nypd_taser_classic_fps"/>
+
+	<!--Cloaker-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_spook"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_spook/nypd_spook"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_spook/nypd_spook_fps"/>
+
+	<!--Classic Cloaker-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_spook_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_spook_classic/nypd_spook_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_spook_classic/nypd_spook_classic_fps"/>
+		<texture path="units/nypd/armor_skins/nypd_spook_classic/ene_spook_classic_body_nm"/>
+		<texture path="units/nypd/armor_skins/nypd_spook_classic/ene_spook_classic_body_df"/>
+		<texture path="units/nypd/armor_skins/nypd_spook_classic/ene_spook_classic_nvg_nm"/>
+		<texture path="units/nypd/armor_skins/nypd_spook_classic/ene_spook_classic_nvg_df"/>
+
+	<!--Medic-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_medic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_medic/nypd_medic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_medic/nypd_medic_fps"/>
+
+	<!--Classic Medic-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_medic_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_medic_classic/nypd_medic_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_medic_classic/nypd_medic_classic_fps"/>
+
+	<!--Grenadier-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_grenadier"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_grenadier/nypd_grenadier"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_grenadier/nypd_grenadier_fps"/>
+
+	<!--Classic Grenadier-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_grenadier_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_grenadier_classic/nypd_grenadier_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_grenadier_classic/nypd_grenadier_classic_fps"/>
+
+	<!--R870 Dozer-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_dozer_r870"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_dozer_r870/nypd_dozer_r870"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_dozer_r870/nypd_dozer_r870_fps"/>
+
+	<!--Classic R870 Dozer-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_dozer_r870_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_dozer_r870_classic/nypd_dozer_r870_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_dozer_r870_classic/nypd_dozer_r870_classic_fps"/>
+
+	<!--Saiga Dozer-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_dozer_saiga"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_dozer_saiga/nypd_dozer_saiga"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_dozer_saiga/nypd_dozer_saiga_fps"/>
+
+	<!--Classic Saiga Dozer-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_dozer_saiga_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_dozer_saiga_classic/nypd_dozer_saiga_classic"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_dozer_saiga_classic/nypd_dozer_saiga_classic_fps"/>
+
+	<!--M249 Dozer-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_dozer_m249"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_dozer_m249/nypd_dozer_m249"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_dozer_m249/nypd_dozer_m249_fps"/>
+
+	<!--Maxim-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_veteran_1"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_veteran_1/nypd_veteran_1"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_veteran_1/nypd_veteran_1_fps"/>
+
+	<!--Clean Maxim-->
+		<texture path="guis/dlcs/nypd/textures/pd2/blackmarket/icons/player_styles/nypd_veteran_2"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_veteran_2/nypd_veteran_2"/>
+		<unit_mat path="units/nypd/armor_skins/nypd_veteran_2/nypd_veteran_2_fps"/>
+
+	<!--Shared Textures-->
+		<texture path="units/nypd/armor_skins/shared_textures/bulldozer_atlas_nm"/>
+		<texture path="units/nypd/armor_skins/shared_textures/bulldozer_atlas_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/bulldozer_city_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/bulldozer_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/bulldozer_saiga_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/ene_nypd_medic_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/ene_nypd_medic_head_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/fbi_cap_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/genshill_helm_nm"/>
+		<texture path="units/nypd/armor_skins/shared_textures/genshill_helm_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/head_01_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/head_new_nm"/>
+		<texture path="units/nypd/armor_skins/shared_textures/head_new_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/heads_atlas_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/heads_atlas_city_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/heads_cop_nm"/>
+		<texture path="units/nypd/armor_skins/shared_textures/heads_cop_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/heads_cop3_nm"/>
+		<texture path="units/nypd/armor_skins/shared_textures/heads_cop3_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/heads_cop_la_nm"/>
+		<texture path="units/nypd/armor_skins/shared_textures/heads_cop_la_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/heads_fbi_nm"/>
+		<texture path="units/nypd/armor_skins/shared_textures/heads_fbi_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/heads_nypd_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/heads_sec_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/mask_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/mat_mull_small_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/nypd_vetcop_body_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/nypd_vetcop_body_2_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/nypd_vetcop_head_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/phalanx_medic_head_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/police_nm"/>
+		<texture path="units/nypd/armor_skins/shared_textures/police_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/red_glass_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/spook_il"/>
+		<texture path="units/nypd/armor_skins/shared_textures/spook_atlas_nm"/>
+		<texture path="units/nypd/armor_skins/shared_textures/spook_atlas_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/spook_heavy_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/swat_body_nm"/>
+		<texture path="units/nypd/armor_skins/shared_textures/swat_body_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/swat_city_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/swat_city_body_nm"/>
+		<texture path="units/nypd/armor_skins/shared_textures/swat_city_body_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/swat_fbi_body_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/swat_gear_body_nm"/>
+		<texture path="units/nypd/armor_skins/shared_textures/swat_gear_body_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/swat_new_nm"/>
+		<texture path="units/nypd/armor_skins/shared_textures/swat_new_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/tank_glass_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/tank_glass_op"/>
+		<texture path="units/nypd/armor_skins/shared_textures/titan_glass_df"/>
+		<texture path="units/nypd/armor_skins/shared_textures/titan_glass_op"/>
+	</AddFiles>
+</table>

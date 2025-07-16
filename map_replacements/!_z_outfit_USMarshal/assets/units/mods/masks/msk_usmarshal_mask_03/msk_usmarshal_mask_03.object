@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/mods/masks/msk_usmarshal_mask_03/msk_usmarshal_mask_03" orientation_object="rp_ramranch_mask" />
+	<bodies>
+		<body name="body_static" enabled="true" template="editor">
+			<object name="rp_ramranch_mask" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<graphics>
+		<object name="g_helmet" enabled="true" />
+		<object name="g_laser" enabled="true" />
+	</graphics>
+</dynamic_object>

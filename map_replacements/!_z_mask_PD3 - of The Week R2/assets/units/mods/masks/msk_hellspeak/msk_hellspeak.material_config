@@ -1,0 +1,18 @@
+<materials version="3" group="pd3_mask_port">
+	
+    <material unique="true" render_template="solid_mask" name="MI_Mask_Hellspeak" version="2">
+        <diffuse_texture file="units/mods/masks/msk_hellspeak/hellspeak_df"/>
+        <bump_normal_texture file="units/mods/masks/msk_hellspeak/hellspeak_nm"/>
+        <reflection_texture file="units/payday2/matcaps/matcap_plastic_df"/>
+        <material_texture file="units/payday2/masks/shared_textures/patterns/pattern_no_color_no_material_df"/>
+        <variable type="vector3" name="tint_color_a" value="0 0 0"/>
+        <variable type="vector3" name="tint_color_b" value="0 0 0"/>
+        <variable type="scalar" name="material_amount" value="1"/>
+    </material>
+
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" name="MI_MaskInsert" version="2">
+	<diffuse_texture file="units/mods/masks/msk_strap_textures/msk_strap_df" />
+	<bump_normal_texture file="units/mods/masks/msk_strap_textures/msk_strap_nm" />
+    </material>
+	
+</materials>

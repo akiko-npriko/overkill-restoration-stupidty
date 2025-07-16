@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/nypd/armor_skins/nypd_fbi_heavy_rifle/nypd_fbi_heavy_rifle" orientation_object="root_point" />
+
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="co_culling">
+			<object name="g_body_heavy" enabled="true"/>
+			<object name="g_swat_heavy_ar" enabled="true"/>
+			<object name="g_helmet_lod1" enabled="true"/>
+			<object name="g_helmet_lod4" enabled="true"/>
+			<object name="g_helmet_lod6" enabled="true"/>
+
+		<!--Balaclava-->
+			<object name="g_balaclava_d" enabled="true"/>
+
+		<!--Heads; Only one should be used at a time and they should not be used alongside balaclava-->
+			<object name="g_head_black_a_var1" enabled="false"/>
+			<object name="g_head_black_a_var2" enabled="false"/>
+			<object name="g_head_black_a_var3" enabled="false"/>
+			<object name="g_head_black_a_var4" enabled="false"/>
+			<object name="g_head_black_a_var5" enabled="false"/>
+			<object name="g_head_black_a_var6" enabled="false"/>
+			<object name="g_head_black_a_var7" enabled="false"/>
+			<object name="g_head_white_b_var1" enabled="false"/>
+			<object name="g_head_white_b_var2" enabled="false"/>
+			<object name="g_head_white_b_var3" enabled="false"/>
+			<object name="g_head_white_b_var4" enabled="false"/>
+			<object name="g_head_white_b_var5" enabled="false"/>
+			<object name="g_head_white_b_var6" enabled="false"/>
+			<object name="g_head_white_b_var7" enabled="false"/>
+
+		<!--Faces; Only one should be used at a time and they should only be used alongside balaclava-->
+			<object name="g_face_heavy_a" enabled="false"/>
+			<object name="g_face_heavy_b" enabled="false"/>
+			<object name="g_face_heavy_c" enabled="true"/>
+			<object name="g_face_heavy_d" enabled="false"/>
+			<object name="g_face_heavy_e" enabled="false"/>
+
+		<!--Headset-->
+			<object name="g_headset" enabled="true"/>
+
+		<!--Helmet Flashlight-->
+			<object name="g_helmet_lod9" enabled="true"/>
+
+		<!--Gun Holsters-->
+			<object name="g_holster_l" enabled="false"/> <!--Left thigh-->
+			<object name="g_holster_r" enabled="true"/> <!--Right thigh-->
+		</graphic_group>
+	</graphics>
+</dynamic_object>

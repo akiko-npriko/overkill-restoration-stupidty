@@ -1,0 +1,405 @@
+<table name="TF2 Minigun Pack" image="guis/sasha" color="Color(0.4, 0.5, 1)">
+	<Localization directory="Loc" default="english.txt">
+		<loc file="english.txt" language="english"/>
+		<loc file="russian.txt" language="russian"/>
+	</Localization>
+	
+	<AssetUpdates id="24675" name="asset_updates" version="1.1" provider="lastbullet"/>
+	
+	<GlobalValue id="sasha" color="Color(0.4, 0.5, 1)"/>
+
+    <WeaponMod id="wpn_fps_lmg_sasha_red" based_on="wpn_fps_lmg_m134_body_upper" type="team" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+    <pcs/>
+	</WeaponMod>	
+
+    <WeaponMod id="wpn_fps_lmg_sasha_blue" based_on="wpn_fps_lmg_m134_body_upper" type="team" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+	<override>
+		<wpn_fps_lmg_canton_body unit="units/mods/weapons/wpn_fps_lmg_canton_pts/wpn_fps_lmg_canton_blue_body"/>
+	    <wpn_fps_lmg_festivizer_body unit="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_blue_body"/>
+	    <wpn_fps_lmg_festivizer_lights unit="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_blue_lights"/>
+	    <wpn_fps_lmg_festivizer_barrel unit="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_blue_barrel"/>
+	    <wpn_fps_lmg_festivizer_lights_b unit="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_blue_lights_b"/>	
+	</override>
+    <pcs/>
+	</WeaponMod>
+	
+<!--Material-->
+    <WeaponMod id="wpn_fps_lmg_sasha_australium" based_on="wpn_fps_lmg_m134_body_upper" type="material" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+	<override>
+		<wpn_fps_lmg_sasha_body unit="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_gold_body"/>
+		<wpn_fps_lmg_sasha_barrel unit="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_gold_barrel"/>
+		<wpn_fps_lmg_tomislav_body unit="units/mods/weapons/wpn_fps_lmg_tomislav_pts/wpn_fps_lmg_tomislav_gold_body"/>
+	</override>
+    <pcs/>
+	</WeaponMod>
+
+<!--Festivizer-->
+	<WeaponMod id="wpn_fps_lmg_festivizer_body" based_on="wpn_fps_lmg_m134_body_upper" type="extra" unit="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_body"texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+	<adds>
+		<value_node value="wpn_fps_lmg_festivizer_barrel"/>
+	    <value_node value="wpn_fps_lmg_festivizer_lights"/>
+	    <value_node value="wpn_fps_lmg_festivizer_lights_b"/>
+	</adds>
+	<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_lmg_festivizer_barrel" based_on="wpn_fps_lmg_m134_barrel" a_obj="a_b_tf2" type="extra" unit="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_barrel" drop="false" is_a_unlockable="false"/>
+	
+	<WeaponMod id="wpn_fps_lmg_festivizer_lights" based_on="wpn_fps_lmg_m134_body_upper" type="extra" unit="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_lights" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_lmg_festivizer_lights_b" based_on="wpn_fps_lmg_m134_barrel" a_obj="a_b_tf2" type="extra" unit="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_lights_b" drop="false" is_a_unlockable="false"/>
+
+<!--Sasha-->
+	<WeaponMod id="wpn_fps_lmg_sasha_b_dummy" based_on="wpn_fps_lmg_m134_barrel" a_obj="a_b_tf2" type="barrel"  unit="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_b_dummy" drop="false" is_a_unlockable="false"/>
+	
+	<WeaponMod id="wpn_fps_lmg_sasha_body" based_on="wpn_fps_lmg_m134_body_upper" type="upper_reciever" has_description="true" unit="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_body" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+	<adds>
+		<value_node value="wpn_fps_lmg_sasha_barrel"/>
+	</adds>
+	<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_lmg_sasha_barrel" based_on="wpn_fps_lmg_m134_barrel" a_obj="a_b_tf2" type="barrel"  unit="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_barrel" drop="false" is_a_unlockable="false"/>
+	
+<!--Natascha-->
+	<WeaponMod id="wpn_fps_lmg_natascha_body" based_on="wpn_fps_lmg_m134_body_upper" type="upper_reciever" has_description="true" unit="units/mods/weapons/wpn_fps_lmg_natascha_pts/wpn_fps_lmg_natascha_body" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+	<sound_switch suppressed="natascha"/>
+	<adds>
+		<value_node value="wpn_fps_lmg_natascha_barrel"/>
+		<value_node value="wpn_fps_lmg_natascha_belt"/>
+	</adds>
+    <forbids>
+		<value_node value="wpn_fps_lmg_sasha_australium"/>
+	</forbids>
+	<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_lmg_natascha_barrel" based_on="wpn_fps_lmg_m134_barrel" a_obj="a_b_tf2" type="barrel" unit="units/mods/weapons/wpn_fps_lmg_natascha_pts/wpn_fps_lmg_natascha_barrel" drop="false" is_a_unlockable="false"/>
+	
+	<WeaponMod id="wpn_fps_lmg_natascha_belt" based_on="wpn_fps_lmg_m134_body_upper" type="upper_reciever" unit="units/mods/weapons/wpn_fps_lmg_natascha_pts/wpn_fps_lmg_natascha_belt" drop="false" is_a_unlockable="false"/>
+	
+<!--Brass Beast-->
+	<WeaponMod id="wpn_fps_lmg_gatling_gun_body" based_on="wpn_fps_lmg_m134_body_upper" type="upper_reciever" has_description="true" unit="units/mods/weapons/wpn_fps_lmg_gatling_gun_pts/wpn_fps_lmg_gatling_gun_body" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+	<stats damage="40"/>
+	<custom_stats movement_speed="0.9"/>
+	<sound_switch suppressed="gatling_gun"/>
+	<adds>
+		<value_node value="wpn_fps_lmg_gatling_gun_barrel"/>
+	</adds>
+	<forbids>
+		<value_node value="wpn_fps_lmg_festivizer_body"/>
+		<value_node value="wpn_fps_lmg_sasha_australium"/>        
+	</forbids>
+    <pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_lmg_gatling_gun_barrel" based_on="wpn_fps_lmg_m134_barrel" a_obj="a_b_tf2" type="barrel" unit="units/mods/weapons/wpn_fps_lmg_gatling_gun_pts/wpn_fps_lmg_gatling_gun_barrel" drop="false" is_a_unlockable="false"/>
+
+<!--Tomislav-->
+	<WeaponMod id="wpn_fps_lmg_tomislav_body" based_on="wpn_fps_lmg_m134_body_upper" type="upper_reciever" has_description="true" unit="units/mods/weapons/wpn_fps_lmg_tomislav_pts/wpn_fps_lmg_tomislav_body" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+	<stats spread="3"/>
+	<custom_stats rof_mult="0.8"/>
+	<sound_switch suppressed="tomislav"/>
+	<adds>
+		<value_node value="wpn_fps_lmg_sasha_b_dummy"/>
+	</adds>
+	<forbids>
+		<value_node value="wpn_fps_lmg_festivizer_body"/>
+	</forbids>
+    <pcs/>
+	</WeaponMod>
+
+<!--Huo-Long Heater-->
+	<WeaponMod id="wpn_fps_lmg_canton_body" based_on="wpn_fps_lmg_m134_body_upper" type="upper_reciever" has_description="true" sub_type="ammo_dragons_breath" unit="units/mods/weapons/wpn_fps_lmg_canton_pts/wpn_fps_lmg_canton_body" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+	<stats damage="-10" total_ammo_mod="-2"/>
+	<sound_switch suppressed="canton"/>	
+	<adds>
+		<value_node value="wpn_fps_lmg_sasha_b_dummy"/>
+	    <value_node value="wpn_fps_lmg_canton_ammo"/>
+	</adds>
+    <forbids>
+        <value_node value="wpn_fps_lmg_festivizer_body"/>
+		<value_node value="wpn_fps_lmg_sasha_australium"/>
+	</forbids>
+	<pcs/>
+	</WeaponMod>
+
+    <WeaponMod id="wpn_fps_lmg_canton_ammo" based_on="wpn_fps_ammo_type" type="ammo" has_description="true" sub_type="ammo_dragons_breath" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" hit_effect="dragonsbreath" muzzleflash="effects/payday2/particles/weapons/shotgun/sho_muzzleflash_dragons_breath" drop="false" is_a_unlockable="false">
+		<custom_stats ammo_pickup_min_mul="0.9" ammo_pickup_max_mul="0.9" armor_piercing_add="0.5" can_shoot_through_enemy="false" can_shoot_through_shield="false" can_shoot_through_wall="false" bullet_class="FlameBulletBase" muzzleflash="effects/payday2/particles/weapons/shotgun/sho_muzzleflash_dragons_breath" >
+			<fire_dot_data rays="4" dot_trigger_chance="80" dot_damage="50" dot_length="3" dot_trigger_max_distance="5000" dot_tick_period="0.5"/>
+		</custom_stats>
+	</WeaponMod>
+	
+	<!--Iron Curtain-->
+	<WeaponMod id="wpn_fps_lmg_iron_curtain_body" based_on="wpn_fps_lmg_m134_body_upper" type="upper_reciever" has_description="true" unit="units/mods/weapons/wpn_fps_lmg_iron_curtain_pts/wpn_fps_lmg_iron_curtain_body" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+	<adds>
+		<value_node value="wpn_fps_lmg_iron_curtain_barrel"/>
+	</adds>
+	<forbids>
+		<value_node value="wpn_fps_lmg_festivizer_body"/>
+		<value_node value="wpn_fps_lmg_sasha_australium"/>       
+	</forbids>
+    <pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_lmg_iron_curtain_barrel" based_on="wpn_fps_lmg_m134_barrel" a_obj="a_b_tf2" type="barrel" unit="units/mods/weapons/wpn_fps_lmg_iron_curtain_pts/wpn_fps_lmg_iron_curtain_barrel" drop="false" is_a_unlockable="false"/>
+
+	
+	<Weapon unlock_level="80">
+		<weapon id="sasha" based_on="m134" texture_bundle_folder="mods" CLIP_AMMO_MAX="200" NR_CLIPS_MAX="1" rays="4" damage_near="2000" damage_far="5000" ammo_pickup="3" global_value="sasha">
+			<stats damage="80" spread="4" concealment="1" recoil="6"/>
+			<fire_mode_data fire_rate="0.1"/>
+			<sounds fire="sasha_fire" fire_single="sasha_fire" stop_fire="svinet_stop" use_fix="true"/>
+		    <timers reload_not_empty="0" reload_empty="0"/>
+		</weapon>
+		<factory id="wpn_fps_lmg_sasha" unit="units/mods/weapons/wpn_fps_lmg_sasha/wpn_fps_lmg_sasha">
+			<optional_types>
+				<value_node value="barrel_ext"/>
+				<value_node value="gadget"/>
+			</optional_types>
+			<default_blueprint>
+				 <value_node value="wpn_fps_lmg_sasha_body"/>
+			     <value_node value="wpn_fps_lmg_sasha_red"/>
+			</default_blueprint>
+			<uses_parts>
+				 <value_node value="wpn_fps_lmg_sasha_body"/>
+                 <value_node value="wpn_fps_lmg_sasha_red"/>
+				 <value_node value="wpn_fps_lmg_sasha_blue"/>
+
+				 <value_node value="wpn_fps_lmg_iron_curtain_body"/>
+				 <value_node value="wpn_fps_lmg_gatling_gun_body"/>
+				 <value_node value="wpn_fps_lmg_natascha_body"/>
+				 <value_node value="wpn_fps_lmg_tomislav_body"/>
+				 <value_node value="wpn_fps_lmg_canton_body"/>
+				 <value_node value="wpn_fps_lmg_sasha_australium"/>				 
+				 <value_node value="wpn_fps_lmg_festivizer_body"/>
+			</uses_parts>
+		</factory>
+		<stance/>
+	</Weapon>
+	<Sounds directory="Assets\sounds">
+		<sound id="sasha_fire" path="sasha.ogg" prefix="regular"/>
+		<sound id="sasha_fire" path="gatling_gun.ogg" prefix="gatling_gun"/>
+		<sound id="sasha_fire" path="tomislav.ogg" prefix="tomislav"/>
+		<sound id="sasha_fire" path="canton.ogg" prefix="canton"/>
+	    <sound id="sasha_fire" path="natascha.ogg" prefix="natascha"/>
+	</Sounds>
+	<AddFiles directory="Assets">
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_sasha/wpn_fps_lmg_sasha"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_sasha/wpn_fps_lmg_sasha"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_sasha/wpn_fps_lmg_sasha"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_sasha/wpn_fps_lmg_sasha"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_sasha/wpn_fps_lmg_sasha_npc"/>
+
+<!--Festivizer-->
+		<texture path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/festivizer_df"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/lights_df"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/festivizer_blue_df"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/lights_blue_df"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_festivizer_body"/>
+
+        <cooked_physics path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_barrel"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_barrel"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_barrel"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_barrel_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_body"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_body"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_body"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_body_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_lights"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_lights"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_lights"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_lights"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_lights"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_lights_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_lights_b"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_lights_b"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_lights_b"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_lights_b"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_lights_b"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_lights_b_thq"/>
+		
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_blue_barrel"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_blue_barrel"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_blue_barrel"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_blue_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_blue_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_blue_barrel_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_blue_body"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_blue_body"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_blue_body"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_blue_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_blue_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_blue_body_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_blue_lights"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_blue_lights"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_blue_lights"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_blue_lights"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_blue_lights"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_blue_lights_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_blue_lights_b"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_blue_lights_b"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_blue_lights_b"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_blue_lights_b"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_blue_lights_b"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_festivizer_pts/wpn_fps_lmg_festivizer_blue_lights_b_thq"/>
+		
+<!--Sasha-->
+		<texture path="units/mods/weapons/wpn_fps_lmg_sasha_pts/sasha_df"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_sasha_pts/sasha_gold_df"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/sasha"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_sasha_body"/> 	   
+
+	    <cooked_physics path="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_barrel"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_barrel"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_barrel"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_barrel_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_body"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_body"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_body"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_body_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_gold_barrel"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_gold_barrel"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_gold_barrel"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_gold_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_gold_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_gold_barrel_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_gold_body"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_gold_body"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_gold_body"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_gold_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_gold_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_gold_body_thq"/>
+		
+	    <cooked_physics path="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_b_dummy"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_b_dummy"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_b_dummy"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_sasha_pts/wpn_fps_lmg_sasha_b_dummy"/>
+		
+<!--Natascha-->
+		<texture path="units/mods/weapons/wpn_fps_lmg_natascha_pts/natascha_df"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_natascha_pts/belt_df"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_natascha_body"/> 
+
+        <cooked_physics path="units/mods/weapons/wpn_fps_lmg_natascha_pts/wpn_fps_lmg_natascha_belt"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_natascha_pts/wpn_fps_lmg_natascha_belt"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_natascha_pts/wpn_fps_lmg_natascha_belt"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_natascha_pts/wpn_fps_lmg_natascha_belt"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_natascha_pts/wpn_fps_lmg_natascha_belt"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_natascha_pts/wpn_fps_lmg_natascha_belt_thq"/>
+
+	    <cooked_physics path="units/mods/weapons/wpn_fps_lmg_natascha_pts/wpn_fps_lmg_natascha_barrel"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_natascha_pts/wpn_fps_lmg_natascha_barrel"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_natascha_pts/wpn_fps_lmg_natascha_barrel"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_natascha_pts/wpn_fps_lmg_natascha_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_natascha_pts/wpn_fps_lmg_natascha_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_natascha_pts/wpn_fps_lmg_natascha_barrel_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_natascha_pts/wpn_fps_lmg_natascha_body"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_natascha_pts/wpn_fps_lmg_natascha_body"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_natascha_pts/wpn_fps_lmg_natascha_body"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_natascha_pts/wpn_fps_lmg_natascha_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_natascha_pts/wpn_fps_lmg_natascha_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_natascha_pts/wpn_fps_lmg_natascha_body_thq"/>
+
+<!--Brass Beast-->
+		<texture path="units/mods/weapons/wpn_fps_lmg_gatling_gun_pts/gatling_gun_df"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_gatling_gun_body"/> 
+
+        <cooked_physics path="units/mods/weapons/wpn_fps_lmg_gatling_gun_pts/wpn_fps_lmg_gatling_gun_barrel"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_gatling_gun_pts/wpn_fps_lmg_gatling_gun_barrel"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_gatling_gun_pts/wpn_fps_lmg_gatling_gun_barrel"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_gatling_gun_pts/wpn_fps_lmg_gatling_gun_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_gatling_gun_pts/wpn_fps_lmg_gatling_gun_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_gatling_gun_pts/wpn_fps_lmg_gatling_gun_barrel_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_gatling_gun_pts/wpn_fps_lmg_gatling_gun_body"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_gatling_gun_pts/wpn_fps_lmg_gatling_gun_body"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_gatling_gun_pts/wpn_fps_lmg_gatling_gun_body"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_gatling_gun_pts/wpn_fps_lmg_gatling_gun_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_gatling_gun_pts/wpn_fps_lmg_gatling_gun_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_gatling_gun_pts/wpn_fps_lmg_gatling_gun_body_thq"/>
+
+<!--Tomislav-->
+		<texture path="units/mods/weapons/wpn_fps_lmg_tomislav_pts/tomislav_df"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_tomislav_pts/tomislav_gold_df"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_tomislav_body"/> 
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_tomislav_pts/wpn_fps_lmg_tomislav_body"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_tomislav_pts/wpn_fps_lmg_tomislav_body"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_tomislav_pts/wpn_fps_lmg_tomislav_body"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_tomislav_pts/wpn_fps_lmg_tomislav_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_tomislav_pts/wpn_fps_lmg_tomislav_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_tomislav_pts/wpn_fps_lmg_tomislav_body_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_tomislav_pts/wpn_fps_lmg_tomislav_gold_body"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_tomislav_pts/wpn_fps_lmg_tomislav_gold_body"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_tomislav_pts/wpn_fps_lmg_tomislav_gold_body"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_tomislav_pts/wpn_fps_lmg_tomislav_gold_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_tomislav_pts/wpn_fps_lmg_tomislav_gold_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_tomislav_pts/wpn_fps_lmg_tomislav_gold_body_thq"/>
+
+<!--Huo-Long Heater-->
+		<texture path="units/mods/weapons/wpn_fps_lmg_canton_pts/canton_df"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_canton_pts/canton_blue_df"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_canton_body"/> 
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_canton_pts/wpn_fps_lmg_canton_body"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_canton_pts/wpn_fps_lmg_canton_body"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_canton_pts/wpn_fps_lmg_canton_body"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_canton_pts/wpn_fps_lmg_canton_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_canton_pts/wpn_fps_lmg_canton_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_canton_pts/wpn_fps_lmg_canton_body_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_canton_pts/wpn_fps_lmg_canton_blue_body"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_canton_pts/wpn_fps_lmg_canton_blue_body"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_canton_pts/wpn_fps_lmg_canton_blue_body"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_canton_pts/wpn_fps_lmg_canton_blue_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_canton_pts/wpn_fps_lmg_canton_blue_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_canton_pts/wpn_fps_lmg_canton_blue_body_thq"/>
+
+<!--Iron Curtain-->
+		<texture path="units/mods/weapons/wpn_fps_lmg_iron_curtain_pts/iron_curtain_df"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_iron_curtain_body"/> 
+
+        <cooked_physics path="units/mods/weapons/wpn_fps_lmg_iron_curtain_pts/wpn_fps_lmg_iron_curtain_barrel"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_iron_curtain_pts/wpn_fps_lmg_iron_curtain_barrel"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_iron_curtain_pts/wpn_fps_lmg_iron_curtain_barrel"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_iron_curtain_pts/wpn_fps_lmg_iron_curtain_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_iron_curtain_pts/wpn_fps_lmg_iron_curtain_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_iron_curtain_pts/wpn_fps_lmg_iron_curtain_barrel_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_iron_curtain_pts/wpn_fps_lmg_iron_curtain_body"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_iron_curtain_pts/wpn_fps_lmg_iron_curtain_body"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_iron_curtain_pts/wpn_fps_lmg_iron_curtain_body"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_iron_curtain_pts/wpn_fps_lmg_iron_curtain_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_iron_curtain_pts/wpn_fps_lmg_iron_curtain_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_iron_curtain_pts/wpn_fps_lmg_iron_curtain_body_thq"/>
+
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_sasha_red"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_sasha_blue"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_sasha_australium"/>
+		<texture path="guis/sasha"/>
+	</AddFiles>
+	<Hooks directory="Hooks">
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
+	</Hooks>
+</table>

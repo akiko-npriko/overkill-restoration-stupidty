@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<unit slot="1" type="inf3">
+	<object file="units/usm/skins/usm_deep_male_chains/usm_deep_male_chains"/>
+	
+	
+	<dependencies>
+		<depends_on effect="effects/payday2/particles/character/marshal_bright_light"/>
+	</dependencies>
+	
+	
+	<extensions>
+		<extension class="ScriptUnitData" name="unit_data"/>
+		<extension class="ContourExt" name="contour"/>
+	</extensions>
+</unit>

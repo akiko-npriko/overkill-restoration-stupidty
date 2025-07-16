@@ -1,0 +1,21 @@
+<unit type="wpn" slot="1">
+	<object file="units/mods/weapons/wpn_fps_ass_m4_flamethrower_jakpurifier/wpn_fps_ass_m4_flamethrower_jakpurifier" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_flamethrower"/>
+		<depends_on effect="effects/payday2/particles/explosions/flamethrower" />
+		<depends_on effect="effects/payday2/particles/explosions/flamethrower_pilot" />
+		<depends_on effect="effects/payday2/particles/explosions/flamethrower_nosel" />
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="base" class="WeaponUnderbarrelFlamethrower">
+			<var name="name_id" value="kacchainsaw_flamethrower" />
+			<!-- <var name="anim" value="flip_up" /> -->
+		</extension>
+		<!--
+		<extension name="flamethrower_effect_extension" class="FlamethrowerEffectExtension" >
+			<var name="name_id" value="kacchainsaw_flamethrower" />
+		</extension>
+		-->
+	</extensions>
+</unit>

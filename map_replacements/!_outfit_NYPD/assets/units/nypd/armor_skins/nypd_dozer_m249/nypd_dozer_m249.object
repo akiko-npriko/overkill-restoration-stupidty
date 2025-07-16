@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/nypd/armor_skins/nypd_dozer_m249/nypd_dozer_m249" orientation_object="root_point" />
+
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="bounding_box_char">
+			<object name="g_body_skull" enabled="true"/>
+			<object name="g_balaclava_c" enabled="true"/>
+			<object name="g_helmet" enabled="true"/>
+			<object name="g_helmet_glass_red" enabled="true"/>
+			<object name="g_armor_back_skull" enabled="true"/>
+			<object name="g_armor_chest_skull" enabled="true"/>
+			<object name="g_armor_stomache_skull" enabled="true"/>
+			<object name="g_neck" enabled="true"/>
+			<object name="g_throat" enabled="true"/>
+			<object name="g_shoulderpad_l_skull" enabled="true"/>
+			<object name="g_shoulderpad_r_skull" enabled="true"/>
+
+		<!--Faces; Only one should be used at a time-->
+			<object name="g_face_a" enabled="false"/>
+			<object name="g_face_b" enabled="false"/>
+			<object name="g_face_c" enabled="true"/>
+			<object name="g_face_d" enabled="false"/>
+			<object name="g_face_e" enabled="false"/>
+			<object name="g_face_f" enabled="false"/>
+			<object name="g_face_g" enabled="false"/>
+			<object name="g_face_h" enabled="false"/>
+
+		<!--Faceplate-->
+			<object name="g_helmet_plate" enabled="true"/>
+		</graphic_group>
+	</graphics>
+</dynamic_object>

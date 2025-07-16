@@ -1,0 +1,241 @@
+<table name="Underbarrel Mod Pack" Color="Color(0.5, 0, 0.7)">
+	<AssetUpdates id="51882" version="1.1" provider="modworkshop"/>
+	<Localization directory="loc" default="english.txt"/>
+	<GlobalValue id="crisdev" color="Color(0.5, 0, 0.7)"/>
+	<GlobalValue id="h4rt" color="Color(0.96, 0.7, 0.9)"/>
+	<GlobalValue id="snyak" color="Color(0.96, 0, 0.53)"/>
+
+		<!--Underbarrel Mod Pack-->
+
+		<!-- M203 Underbarrel -->
+		
+	<WeaponMod id="wpn_fps_ass_m4_gl_m203" based_on="wpn_fps_ass_contraband_gl_m203" type="underbarrel" sub_type="ammo_explosive" has_description="true" a_obj="a_m203" unit="units/pd2_dlc_chico/weapons/wpn_fps_ass_contraband_pts/wpn_fps_ass_contraband_gl_m203" third_unit="units/pd2_dlc_chico/weapons/wpn_third_ass_contraband_pts/wpn_third_ass_contraband_gl_m203" global_value="crisdev" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats damage="0" concealment="-6" suppression="-30" spread="-1" recoil="-2"/>
+		<perks value="underbarrel"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_m4"/>
+			<value_node value="wpn_fps_ass_m16"/>
+			<value_node value="wpn_fps_ass_fal"/>
+			<value_node value="wpn_fps_ass_galil"/>
+			<value_node value="wpn_fps_ass_g36"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+
+		<!-- GP-25 Underbarrel -->
+
+	<WeaponMod id="wpn_fps_ass_74_gl_gp25" based_on="wpn_fps_ass_groza_gl_gp25" type="underbarrel" sub_type="ammo_explosive" has_description="true" a_obj="a_gp25" unit="units/mods/weapons/wpn_fps_ass_74_gl_gp25/wpn_fps_ass_74_gl_gp25" global_value="h4rt" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats damage="0" concealment="-6" suppression="-30" spread="-1" recoil="-2"/>
+		<perks value="underbarrel"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_74"/>
+			<value_node value="wpn_fps_ass_akm"/>
+			<value_node value="wpn_fps_ass_galil"/>
+			<value_node value="wpn_fps_ass_fal"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+
+		<!-- KAC Flamethrower Underbarrel -->
+
+	<WeaponMod id="wpn_fps_ass_m4_flamethrower_kacflame" based_on="wpn_fps_lmg_kacchainsaw_flamethrower" type="underbarrel" has_description="true" a_obj="a_kacm4" unit="units/mods/weapons/wpn_fps_ass_m4_flamethrower_kacflame/wpn_fps_ass_m4_flamethrower_kacflame" global_value="h4rt" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats damage="0" concealment="-5" suppression="-30" spread="-2" recoil="0"/>
+		<perks value="underbarrel"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_m4"/>
+			<value_node value="wpn_fps_ass_m16"/>
+			<value_node value="wpn_fps_ass_galil"/>
+			<value_node value="wpn_fps_ass_g36"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+
+		<!-- JAK Purifier Underbarrel -->
+
+	<WeaponMod id="wpn_fps_ass_m4_flamethrower_jakpurifier" based_on="wpn_fps_lmg_kacchainsaw_flamethrower" type="underbarrel" has_description="true" a_obj="a_jak" unit="units/mods/weapons/wpn_fps_ass_m4_flamethrower_jakpurifier/wpn_fps_ass_m4_flamethrower_jakpurifier" global_value="crisdev" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats damage="0" concealment="-5" suppression="-30" spread="-2" recoil="0"/>
+		<perks value="underbarrel"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_m4"/>
+			<value_node value="wpn_fps_ass_m16"/>
+			<value_node value="wpn_fps_ass_g36"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+
+		<!-- M203 Short Underbarrel -->
+		
+	<WeaponMod id="wpn_fps_smg_mp5_gl_m203" based_on="wpn_fps_ass_contraband_gl_m203" type="underbarrel" sub_type="ammo_explosive" has_description="true" a_obj="a_m203s" unit="units/mods/weapons/wpn_fps_smg_mp5_gl_m203/wpn_fps_smg_mp5_gl_m203" third_unit="units/pd2_dlc_chico/weapons/wpn_third_ass_contraband_pts/wpn_third_ass_contraband_gl_m203" global_value="crisdev" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats damage="0" concealment="-6" suppression="-30" spread="-1" recoil="-2"/>
+		<perks value="underbarrel"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_amcar"/>
+			<value_node value="wpn_fps_smg_mp5"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+	
+		<!-- M320 Underbarrel -->
+		
+	<WeaponMod id="wpn_fps_ass_m4_gl_m320" based_on="wpn_fps_ass_contraband_gl_m203" type="underbarrel" sub_type="ammo_explosive" has_description="true" a_obj="a_m320" unit="units/mods/weapons/wpn_fps_ass_m4_gl_m320/wpn_fps_ass_m4_gl_m320" global_value="crisdev" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats damage="0" concealment="-6" suppression="-30" spread="-2" recoil="-1"/>
+		<perks value="underbarrel"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_m4"/>
+			<value_node value="wpn_fps_ass_m16"/>
+			<value_node value="wpn_fps_ass_g36"/>
+		</weapons>
+		<pcs/>
+	</WeaponMod>
+
+
+	<!-- Grenade Ammo Types -->
+
+		<!-- 40mm Zap Ammo -->
+
+	<WeaponMod id="wpn_fps_upg_a_m203_electric" based_on="wpn_fps_upg_a_underbarrel_electric" sub_type="ammo_electric" global_value="sawp" has_description="true" ver="2">
+			<stats damage="0"/>
+			<custom_stats launcher_grenade="launcher_electric"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_m16"/>
+			<value_node value="wpn_fps_ass_m4"/>
+			<value_node value="wpn_fps_ass_74"/>
+			<value_node value="wpn_fps_ass_akm"/>
+			<value_node value="wpn_fps_smg_mp5"/>
+			<value_node value="wpn_fps_ass_amcar"/>
+			<value_node value="wpn_fps_ass_fal"/>
+			<value_node value="wpn_fps_ass_g36"/>
+			<value_node value="wpn_fps_ass_galil"/>
+	 	</weapons>
+		<pcs/>
+	</WeaponMod>
+
+	<!-- 40mm Poi Ammo -->
+
+	<WeaponMod id="wpn_fps_upg_a_m203_poison" based_on="wpn_fps_upg_a_underbarrel_poison" sub_type="ammo_poison" global_value="pxp1" has_description="true" ver="2">
+			<stats damage="0"/>
+			<custom_stats launcher_grenade="launcher_poison"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_m16"/>
+			<value_node value="wpn_fps_ass_m4"/>
+			<value_node value="wpn_fps_ass_74"/>
+			<value_node value="wpn_fps_ass_akm"/>
+			<value_node value="wpn_fps_smg_mp5"/>
+			<value_node value="wpn_fps_ass_amcar"/>
+			<value_node value="wpn_fps_ass_fal"/>
+			<value_node value="wpn_fps_ass_g36"/>
+			<value_node value="wpn_fps_ass_galil"/>
+	 	</weapons>
+		<pcs/>
+	</WeaponMod>
+
+	<!-- 40mm Incen Ammo -->
+
+	<WeaponMod id="wpn_fps_upg_a_m203_incendiary" based_on="wpn_fps_upg_a_grenade_launcher_incendiary" type="underbarrel_ammo" sub_type="ammo_dragons_breath" global_value="bbq" has_description="true" ver="2">
+			<stats damage="0"/>
+			<custom_stats launcher_grenade="launcher_incendiary"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_m16"/>
+			<value_node value="wpn_fps_ass_m4"/>
+			<value_node value="wpn_fps_ass_74"/>
+			<value_node value="wpn_fps_ass_akm"/>
+			<value_node value="wpn_fps_smg_mp5"/>
+			<value_node value="wpn_fps_ass_amcar"/>
+			<value_node value="wpn_fps_ass_fal"/>
+			<value_node value="wpn_fps_ass_g36"/>
+			<value_node value="wpn_fps_ass_galil"/>
+	 	</weapons>
+		<pcs/>
+	</WeaponMod>
+
+
+	<AddFiles directory="assets">
+		<texture 			path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m4_gl_m203"/>
+		
+		<texture 			path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_74_gl_gp25"/>
+		<cooked_physics 	path="units/mods/weapons/wpn_fps_ass_74_gl_gp25/wpn_fps_ass_74_gl_gp25"/>
+		<model 				path="units/mods/weapons/wpn_fps_ass_74_gl_gp25/wpn_fps_ass_74_gl_gp25"/>
+		<object 			path="units/mods/weapons/wpn_fps_ass_74_gl_gp25/wpn_fps_ass_74_gl_gp25"/>
+		<unit 				path="units/mods/weapons/wpn_fps_ass_74_gl_gp25/wpn_fps_ass_74_gl_gp25"/>
+		<material_config 	path="units/mods/weapons/wpn_fps_ass_74_gl_gp25/wpn_fps_ass_74_gl_gp25"/>
+		<material_config 	path="units/mods/weapons/wpn_fps_ass_74_gl_gp25/wpn_fps_ass_74_gl_gp25_thq"/>
+		<material_config 	path="units/mods/weapons/wpn_fps_ass_74_gl_gp25/wpn_fps_ass_74_gl_gp25_cc"/>
+		<material_config 	path="units/mods/weapons/wpn_fps_ass_74_gl_gp25/wpn_fps_ass_74_gl_gp25_cc_thq"/>
+		<texture 			path="units/mods/weapons/wpn_fps_ass_74_gl_gp25/gp25_gsma"/>
+		<texture 			path="units/mods/weapons/wpn_fps_ass_74_gl_gp25/gp25_df"/>
+		<texture 			path="units/mods/weapons/wpn_fps_ass_74_gl_gp25/gl25_body_nm"/>
+		<texture 			path="units/mods/weapons/wpn_fps_ass_74_gl_gp25/gl25_body_df"/>
+		
+		<texture 			path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m4_flamethrower_kacflame"/>
+		<cooked_physics 	path="units/mods/weapons/wpn_fps_ass_m4_flamethrower_kacflame/wpn_fps_ass_m4_flamethrower_kacflame"/>
+		<model 				path="units/mods/weapons/wpn_fps_ass_m4_flamethrower_kacflame/wpn_fps_ass_m4_flamethrower_kacflame"/>
+		<object 			path="units/mods/weapons/wpn_fps_ass_m4_flamethrower_kacflame/wpn_fps_ass_m4_flamethrower_kacflame"/>
+		<unit 				path="units/mods/weapons/wpn_fps_ass_m4_flamethrower_kacflame/wpn_fps_ass_m4_flamethrower_kacflame"/>
+		<material_config 	path="units/mods/weapons/wpn_fps_ass_m4_flamethrower_kacflame/wpn_fps_ass_m4_flamethrower_kacflame"/>
+		<material_config 	path="units/mods/weapons/wpn_fps_ass_m4_flamethrower_kacflame/wpn_fps_ass_m4_flamethrower_kacflame_thq"/>
+		<material_config 	path="units/mods/weapons/wpn_fps_ass_m4_flamethrower_kacflame/wpn_fps_ass_m4_flamethrower_kacflame_cc"/>
+		<material_config 	path="units/mods/weapons/wpn_fps_ass_m4_flamethrower_kacflame/wpn_fps_ass_m4_flamethrower_kacflame_cc_thq"/>
+		
+		<texture 			path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m4_flamethrower_jakpurifier"/>
+		<cooked_physics 	path="units/mods/weapons/wpn_fps_ass_m4_flamethrower_jakpurifier/wpn_fps_ass_m4_flamethrower_jakpurifier"/>
+		<model 				path="units/mods/weapons/wpn_fps_ass_m4_flamethrower_jakpurifier/wpn_fps_ass_m4_flamethrower_jakpurifier"/>
+		<object 			path="units/mods/weapons/wpn_fps_ass_m4_flamethrower_jakpurifier/wpn_fps_ass_m4_flamethrower_jakpurifier"/>
+		<unit 				path="units/mods/weapons/wpn_fps_ass_m4_flamethrower_jakpurifier/wpn_fps_ass_m4_flamethrower_jakpurifier"/>
+		<material_config 	path="units/mods/weapons/wpn_fps_ass_m4_flamethrower_jakpurifier/wpn_fps_ass_m4_flamethrower_jakpurifier"/>
+		<material_config 	path="units/mods/weapons/wpn_fps_ass_m4_flamethrower_jakpurifier/wpn_fps_ass_m4_flamethrower_jakpurifier_thq"/>
+		<material_config 	path="units/mods/weapons/wpn_fps_ass_m4_flamethrower_jakpurifier/wpn_fps_ass_m4_flamethrower_jakpurifier_cc"/>
+		<material_config 	path="units/mods/weapons/wpn_fps_ass_m4_flamethrower_jakpurifier/wpn_fps_ass_m4_flamethrower_jakpurifier_cc_thq"/>
+		<texture 			path="units/mods/weapons/wpn_fps_ass_m4_flamethrower_jakpurifier/jakpurifier_df"/>
+		<texture 			path="units/mods/weapons/wpn_fps_ass_m4_flamethrower_jakpurifier/jakpurifier_gsma"/>
+		<texture 			path="units/mods/weapons/wpn_fps_ass_m4_flamethrower_jakpurifier/jakpurifier_nm"/>
+		<texture 			path="units/mods/weapons/wpn_fps_ass_m4_flamethrower_jakpurifier/jakpurifier_df_cc"/>
+
+		<texture 			path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_mp5_gl_m203"/>
+		<cooked_physics 	path="units/mods/weapons/wpn_fps_smg_mp5_gl_m203/wpn_fps_smg_mp5_gl_m203"/>
+		<model 				path="units/mods/weapons/wpn_fps_smg_mp5_gl_m203/wpn_fps_smg_mp5_gl_m203"/>
+		<object 			path="units/mods/weapons/wpn_fps_smg_mp5_gl_m203/wpn_fps_smg_mp5_gl_m203"/>
+		<unit 				path="units/mods/weapons/wpn_fps_smg_mp5_gl_m203/wpn_fps_smg_mp5_gl_m203"/>
+		<material_config 	path="units/mods/weapons/wpn_fps_smg_mp5_gl_m203/wpn_fps_smg_mp5_gl_m203"/>
+		<material_config 	path="units/mods/weapons/wpn_fps_smg_mp5_gl_m203/wpn_fps_smg_mp5_gl_m203_thq"/>
+		<material_config 	path="units/mods/weapons/wpn_fps_smg_mp5_gl_m203/wpn_fps_smg_mp5_gl_m203_cc"/>
+		<material_config 	path="units/mods/weapons/wpn_fps_smg_mp5_gl_m203/wpn_fps_smg_mp5_gl_m203_cc_thq"/>
+		<texture 			path="units/mods/weapons/wpn_fps_smg_mp5_gl_m203/m203_df"/>
+		<texture 			path="units/mods/weapons/wpn_fps_smg_mp5_gl_m203/m203_df_cc"/>
+		<texture 			path="units/mods/weapons/wpn_fps_smg_mp5_gl_m203/m203_nm"/>
+
+		<texture 			path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m4_gl_m320"/>
+		<cooked_physics 	path="units/mods/weapons/wpn_fps_ass_m4_gl_m320/wpn_fps_ass_m4_gl_m320"/>
+		<model 				path="units/mods/weapons/wpn_fps_ass_m4_gl_m320/wpn_fps_ass_m4_gl_m320"/>
+		<object 			path="units/mods/weapons/wpn_fps_ass_m4_gl_m320/wpn_fps_ass_m4_gl_m320"/>
+		<unit 				path="units/mods/weapons/wpn_fps_ass_m4_gl_m320/wpn_fps_ass_m4_gl_m320"/>
+		<material_config 	path="units/mods/weapons/wpn_fps_ass_m4_gl_m320/wpn_fps_ass_m4_gl_m320"/>
+		<material_config 	path="units/mods/weapons/wpn_fps_ass_m4_gl_m320/wpn_fps_ass_m4_gl_m320_thq"/>
+		<material_config 	path="units/mods/weapons/wpn_fps_ass_m4_gl_m320/wpn_fps_ass_m4_gl_m320_cc"/>
+		<material_config 	path="units/mods/weapons/wpn_fps_ass_m4_gl_m320/wpn_fps_ass_m4_gl_m320_cc_thq"/>
+
+		<texture 			path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_mp7_gl_gp25"/>
+		<cooked_physics 	path="units/mods/weapons/wpn_fps_smg_mp7_gl_gp25/wpn_fps_smg_mp7_gl_gp25"/>
+		<model 				path="units/mods/weapons/wpn_fps_smg_mp7_gl_gp25/wpn_fps_smg_mp7_gl_gp25"/>
+		<object 			path="units/mods/weapons/wpn_fps_smg_mp7_gl_gp25/wpn_fps_smg_mp7_gl_gp25"/>
+		<unit 				path="units/mods/weapons/wpn_fps_smg_mp7_gl_gp25/wpn_fps_smg_mp7_gl_gp25"/>
+		<material_config 	path="units/mods/weapons/wpn_fps_smg_mp7_gl_gp25/wpn_fps_smg_mp7_gl_gp25"/>
+		<material_config 	path="units/mods/weapons/wpn_fps_smg_mp7_gl_gp25/wpn_fps_smg_mp7_gl_gp25_thq"/>
+		<material_config 	path="units/mods/weapons/wpn_fps_smg_mp7_gl_gp25/wpn_fps_smg_mp7_gl_gp25_cc"/>
+		<material_config 	path="units/mods/weapons/wpn_fps_smg_mp7_gl_gp25/wpn_fps_smg_mp7_gl_gp25_cc_thq"/>
+		<texture 			path="units/mods/weapons/wpn_fps_smg_mp7_gl_gp25/gp25_gsma"/>
+		<texture 			path="units/mods/weapons/wpn_fps_smg_mp7_gl_gp25/gp25_df"/>
+
+		<texture 			path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_a_gp25_frag"/>
+		<texture 			path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_a_m203_poison"/>
+		<texture 			path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_a_m203_incendiary"/>
+		<texture 			path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_a_m203_electric"/>
+	</AddFiles>
+
+	<Hooks directory="Hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
+		<hook file="playertweakdata.lua" source_file="lib/tweak_data/playertweakdata"/>
+		<hook file="weaponfactorytweakdata_sc.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+	</Hooks>
+
+</table>

@@ -1,0 +1,140 @@
+<mod name="PAYDAY 3 - Boys In Blue Mask Pack" author="Hylie" min_lib_ver="3.38">
+    <AssetUpdates id="50253" version="1" provider="modworkshop"/>
+    <GlobalValue id="hylie_pd3_mod" color="Color(0.53, 0.66, 0.42)"/>
+    <Localization directory="loc" default="english.txt">
+        <loc file="english.txt" language="english"/>
+    </Localization>
+
+    <Mask id="pd3_alienware" global_value="hylie_pd3_mod"/>
+    <Mask id="anguish" global_value="hylie_pd3_mod" type="helmet"/>
+    <Mask id="clowninator" global_value="hylie_pd3_mod" type="helmet"/>
+    <Mask id="clownpunk" global_value="hylie_pd3_mod" type="helmet"/>
+    <Mask id="fleischer" global_value="hylie_pd3_mod" type="helmet"/>
+    <Mask id="killerk9" global_value="hylie_pd3_mod" type="helmet"/>
+    <Mask id="madmaskraider" global_value="hylie_pd3_mod" type="helmet"/>
+    <Mask id="orkish" global_value="hylie_pd3_mod" type="helmet"/>
+    <Mask id="pigmask" global_value="hylie_pd3_mod" type="helmet"/>
+
+
+    <AddFiles directory="assets">
+
+<!-- UI Icons -->
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_alienware"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/anguish"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/clowninator"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/clownpunk"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/fleischer"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/killerk9"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/madmaskraider"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/orkish"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pigmask"/>
+
+<!-- Mask Strap -->
+
+        <texture path="units/mods/masks/msk_strap_textures/msk_strap_df"/>
+        <texture path="units/mods/masks/msk_strap_textures/msk_strap_nm"/>
+
+<!-- Alienware -->
+
+        <model path="units/mods/masks/msk_pd3_alienware/msk_pd3_alienware"/>
+	    <object path="units/mods/masks/msk_pd3_alienware/msk_pd3_alienware"/>
+        <unit path="units/mods/masks/msk_pd3_alienware/msk_pd3_alienware"/>
+	    <material_config path="units/mods/masks/msk_pd3_alienware/msk_pd3_alienware"/>
+        <cooked_physics path="units/mods/masks/msk_pd3_alienware/msk_pd3_alienware"/>
+
+        <texture path="units/mods/masks/msk_pd3_alienware/alienware_df"/>
+        <texture path="units/mods/masks/msk_pd3_alienware/alienware_nm"/>
+        <texture path="units/mods/masks/msk_pd3_alienware/alienware_il"/>
+
+<!-- Clownpunk -->
+
+        <model path="units/mods/masks/msk_clownpunk/msk_clownpunk"/>
+	    <object path="units/mods/masks/msk_clownpunk/msk_clownpunk"/>
+        <unit path="units/mods/masks/msk_clownpunk/msk_clownpunk"/>
+	    <material_config path="units/mods/masks/msk_clownpunk/msk_clownpunk"/>
+        <cooked_physics path="units/mods/masks/msk_clownpunk/msk_clownpunk"/>
+
+        <texture path="units/mods/masks/msk_clownpunk/clownpunk_df"/>
+        <texture path="units/mods/masks/msk_clownpunk/clownpunk_nm"/>
+        <texture path="units/mods/masks/msk_clownpunk/clownpunk_il"/>
+
+<!-- Killer K9 -->
+
+        <model path="units/mods/masks/msk_killerk9/msk_killerk9"/>
+	    <object path="units/mods/masks/msk_killerk9/msk_killerk9"/>
+        <unit path="units/mods/masks/msk_killerk9/msk_killerk9"/>
+	    <material_config path="units/mods/masks/msk_killerk9/msk_killerk9"/>
+        <cooked_physics path="units/mods/masks/msk_killerk9/msk_killerk9"/>
+
+        <texture path="units/mods/masks/msk_killerk9/killerk9_df"/>
+        <texture path="units/mods/masks/msk_killerk9/killerk9_nm"/>
+
+<!-- Mad Mask Raider -->
+
+        <model path="units/mods/masks/msk_madmaskraider/msk_madmaskraider"/>
+	    <object path="units/mods/masks/msk_madmaskraider/msk_madmaskraider"/>
+        <unit path="units/mods/masks/msk_madmaskraider/msk_madmaskraider"/>
+	    <material_config path="units/mods/masks/msk_madmaskraider/msk_madmaskraider"/>
+        <cooked_physics path="units/mods/masks/msk_madmaskraider/msk_madmaskraider"/>
+
+        <texture path="units/mods/masks/msk_madmaskraider/madmaskraider_df"/>
+        <texture path="units/mods/masks/msk_madmaskraider/madmaskraider_nm"/>
+
+<!-- Vicious Warrior -->
+
+        <model path="units/mods/masks/msk_orkish/msk_orkish"/>
+	    <object path="units/mods/masks/msk_orkish/msk_orkish"/>
+        <unit path="units/mods/masks/msk_orkish/msk_orkish"/>
+	    <material_config path="units/mods/masks/msk_orkish/msk_orkish"/>
+        <cooked_physics path="units/mods/masks/msk_orkish/msk_orkish"/>
+
+        <texture path="units/mods/masks/msk_orkish/orkish_df"/>
+        <texture path="units/mods/masks/msk_orkish/orkish_nm"/>
+
+<!-- Scarred Pig -->
+
+        <model path="units/mods/masks/msk_pigmask/msk_pigmask"/>
+	    <object path="units/mods/masks/msk_pigmask/msk_pigmask"/>
+        <unit path="units/mods/masks/msk_pigmask/msk_pigmask"/>
+	    <material_config path="units/mods/masks/msk_pigmask/msk_pigmask"/>
+        <cooked_physics path="units/mods/masks/msk_pigmask/msk_pigmask"/>
+
+        <texture path="units/mods/masks/msk_pigmask/pigmask_df"/>
+        <texture path="units/mods/masks/msk_pigmask/pigmask_nm"/>
+
+<!-- Hooded Haunt -->
+
+        <model path="units/mods/masks/msk_anguish/msk_anguish"/>
+	    <object path="units/mods/masks/msk_anguish/msk_anguish"/>
+        <unit path="units/mods/masks/msk_anguish/msk_anguish"/>
+	    <material_config path="units/mods/masks/msk_anguish/msk_anguish"/>
+        <cooked_physics path="units/mods/masks/msk_anguish/msk_anguish"/>
+
+        <texture path="units/mods/masks/msk_anguish/anguish_df"/>
+        <texture path="units/mods/masks/msk_anguish/anguish_nm"/>
+
+<!-- Clowninator -->
+
+        <model path="units/mods/masks/msk_clowninator/msk_clowninator"/>
+	    <object path="units/mods/masks/msk_clowninator/msk_clowninator"/>
+        <unit path="units/mods/masks/msk_clowninator/msk_clowninator"/>
+	    <material_config path="units/mods/masks/msk_clowninator/msk_clowninator"/>
+        <cooked_physics path="units/mods/masks/msk_clowninator/msk_clowninator"/>
+
+        <texture path="units/mods/masks/msk_clowninator/clowninator_df"/>
+        <texture path="units/mods/masks/msk_clowninator/clowninator_il"/>
+        <texture path="units/mods/masks/msk_clowninator/clowninator_nm"/>
+
+<!-- Old Bob -->
+
+        <model path="units/mods/masks/msk_fleischer/msk_fleischer"/>
+	    <object path="units/mods/masks/msk_fleischer/msk_fleischer"/>
+        <unit path="units/mods/masks/msk_fleischer/msk_fleischer"/>
+	    <material_config path="units/mods/masks/msk_fleischer/msk_fleischer"/>
+        <cooked_physics path="units/mods/masks/msk_fleischer/msk_fleischer"/>
+
+        <texture path="units/mods/masks/msk_fleischer/fleischer_df"/>
+        <texture path="units/mods/masks/msk_fleischer/fleischer_nm"/>
+    </AddFiles>
+
+</mod>

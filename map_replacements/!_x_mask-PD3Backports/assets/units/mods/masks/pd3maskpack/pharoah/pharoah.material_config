@@ -1,0 +1,26 @@
+<materials version="3">
+    <material name="mtr_pharoah" unique="true" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" version="2">
+        <diffuse_texture 	 file="units/mods/masks/pd3maskpack/pharoah/pharoah_df"/>
+        <bump_normal_texture file="units/mods/masks/pd3maskpack/pharoah/pharoah_nm"/>
+        <reflection_texture file="units/payday2/matcaps/matcap_plastic_df"/>
+        <material_texture file="units/payday2/masks/shared_textures/patterns/pattern_no_color_no_material_df"/>
+        <variable value="1" type="scalar" name="material_amount"/>
+    </material>
+    <material name="mtr_pharoah_empty" unique="true" render_template="solid_mask" version="2">
+        <diffuse_texture 	 file="units/mods/masks/pd3maskpack/pharoah/pharoah_df"/>
+        <bump_normal_texture file="units/mods/masks/pd3maskpack/pharoah/pharoah_nm"/>
+        <reflection_texture file="units/payday2/matcaps/matcap_plastic_df"/>
+        <material_texture file="units/payday2/masks/shared_textures/patterns/pattern_no_color_no_material_df"/>
+        <variable value="0 0 0" type="vector3" name="tint_color_a"/>
+        <variable value="0 0 0" type="vector3" name="tint_color_b"/>
+        <variable value="1" type="scalar" name="material_amount"/>
+    </material>
+    <material unique="true" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:NORMALMAP" name="mtr_mask" version="2">
+        <diffuse_texture 	 file="units/mods/masks/pd3maskpack/msk_shared/frame_df"/>
+		<reflection_texture file="units/payday2/matcaps/matcap_plastic_df" />
+		<material_texture file="units/payday2/masks/shared_textures/patterns/pattern_no_color_no_material_df" />
+		<variable value="0 0 0" type="vector3" name="tint_color_a" />
+		<variable value="0 0 0" type="vector3" name="tint_color_b" />
+		<variable value="1" type="scalar" name="material_amount" />
+    </material>
+</materials>

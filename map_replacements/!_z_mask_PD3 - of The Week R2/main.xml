@@ -1,0 +1,101 @@
+<mod name="PAYDAY 3 - Masks of The Week - Round 2 Pack" author="Hylie" min_lib_ver="3.38">
+    <AssetUpdates id="50272" version="1" provider="modworkshop"/>
+    <GlobalValue id="hylie_pd3_mod" color="Color(0.53, 0.66, 0.42)"/>
+    <Localization directory="loc" default="english.txt">
+        <loc file="english.txt" language="english"/>
+    </Localization>
+
+    <Mask id="hardtime" global_value="hylie_pd3_mod"/>
+    <Mask id="hellspeak" global_value="hylie_pd3_mod" type="helmet"/>
+    <Mask id="longface" global_value="hylie_pd3_mod" type="helmet"/>
+    <Mask id="masterplan" global_value="hylie_pd3_mod" type="helmet"/>
+    <Mask id="metamorphosis" global_value="hylie_pd3_mod" type="helmet"/>
+    <Mask id="mommydearest" global_value="hylie_pd3_mod" type="helmet"/>
+
+
+    <AddFiles directory="assets">
+
+<!-- UI Icons -->
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/hardtime"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/hellspeak"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/longface"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/masterplan"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/metamorphosis"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/mommydearest"/>
+
+<!-- Mask Strap -->
+
+        <texture path="units/mods/masks/msk_strap_textures/msk_strap_df"/>
+        <texture path="units/mods/masks/msk_strap_textures/msk_strap_nm"/>
+
+<!-- Hard Time -->
+
+        <model path="units/mods/masks/msk_hardtime/msk_hardtime"/>
+	<object path="units/mods/masks/msk_hardtime/msk_hardtime"/>
+        <unit path="units/mods/masks/msk_hardtime/msk_hardtime"/>
+	<material_config path="units/mods/masks/msk_hardtime/msk_hardtime"/>
+        <cooked_physics path="units/mods/masks/msk_hardtime/msk_hardtime"/>
+
+        <texture path="units/mods/masks/msk_hardtime/hardtime_df"/>
+        <texture path="units/mods/masks/msk_hardtime/hardtime_nm"/>
+        <texture path="units/mods/masks/msk_hardtime/hardtime_il"/>
+
+<!-- Hellspeak -->
+
+        <model path="units/mods/masks/msk_hellspeak/msk_hellspeak"/>
+	<object path="units/mods/masks/msk_hellspeak/msk_hellspeak"/>
+        <unit path="units/mods/masks/msk_hellspeak/msk_hellspeak"/>
+	<material_config path="units/mods/masks/msk_hellspeak/msk_hellspeak"/>
+        <cooked_physics path="units/mods/masks/msk_hellspeak/msk_hellspeak"/>
+
+        <texture path="units/mods/masks/msk_hellspeak/hellspeak_df"/>
+        <texture path="units/mods/masks/msk_hellspeak/hellspeak_nm"/>
+        <texture path="units/mods/masks/msk_hellspeak/hellspeak_il"/>
+
+<!-- Long Face -->
+
+        <model path="units/mods/masks/msk_longface/msk_longface"/>
+	<object path="units/mods/masks/msk_longface/msk_longface"/>
+        <unit path="units/mods/masks/msk_longface/msk_longface"/>
+	<material_config path="units/mods/masks/msk_longface/msk_longface"/>
+        <cooked_physics path="units/mods/masks/msk_longface/msk_longface"/>
+
+        <texture path="units/mods/masks/msk_longface/longface_df"/>
+        <texture path="units/mods/masks/msk_longface/longface_nm"/>
+
+<!-- Master Plan -->
+
+        <model path="units/mods/masks/msk_masterplan/msk_masterplan"/>
+	<object path="units/mods/masks/msk_masterplan/msk_masterplan"/>
+        <unit path="units/mods/masks/msk_masterplan/msk_masterplan"/>
+	<material_config path="units/mods/masks/msk_masterplan/msk_masterplan"/>
+        <cooked_physics path="units/mods/masks/msk_masterplan/msk_masterplan"/>
+
+        <texture path="units/mods/masks/msk_masterplan/masterplan_df"/>
+        <texture path="units/mods/masks/msk_masterplan/masterplan_nm"/>
+
+<!-- Metamorphosis -->
+
+        <model path="units/mods/masks/msk_metamorphosis/msk_metamorphosis"/>
+	<object path="units/mods/masks/msk_metamorphosis/msk_metamorphosis"/>
+        <unit path="units/mods/masks/msk_metamorphosis/msk_metamorphosis"/>
+	<material_config path="units/mods/masks/msk_metamorphosis/msk_metamorphosis"/>
+        <cooked_physics path="units/mods/masks/msk_metamorphosis/msk_metamorphosis"/>
+
+        <texture path="units/mods/masks/msk_metamorphosis/metamorphosis_df"/>
+        <texture path="units/mods/masks/msk_metamorphosis/metamorphosis_nm"/>
+
+<!-- Mommy Dearest -->
+
+        <model path="units/mods/masks/msk_mommydearest/msk_mommydearest"/>
+	<object path="units/mods/masks/msk_mommydearest/msk_mommydearest"/>
+        <unit path="units/mods/masks/msk_mommydearest/msk_mommydearest"/>
+	<material_config path="units/mods/masks/msk_mommydearest/msk_mommydearest"/>
+        <cooked_physics path="units/mods/masks/msk_mommydearest/msk_mommydearest"/>
+
+        <texture path="units/mods/masks/msk_mommydearest/mommydearest_df"/>
+        <texture path="units/mods/masks/msk_mommydearest/mommydearest_nm"/>
+
+    </AddFiles>
+
+</mod>

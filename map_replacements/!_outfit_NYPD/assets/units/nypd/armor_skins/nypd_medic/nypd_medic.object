@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/nypd/armor_skins/nypd_medic/nypd_medic" orientation_object="root_point" />
+
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="bounding_box_char">
+			<object name="g_body_medic" enabled="true"/>
+			<object name="g_helmet_medic_lod1" enabled="true"/>
+
+		<!--Balaclavas; Only one should be used at a time-->
+			<object name="g_balaclava_a" enabled="false"/> <!--Covered nose-->
+			<object name="g_balaclava_b" enabled="false"/> <!--Exposed nose-->
+
+		<!--Heads; Only one should be used at a time and they should not be used alongside a balaclava-->
+			<object name="g_head_black_d_var1" enabled="false"/>
+			<object name="g_head_black_d_var2" enabled="false"/>
+			<object name="g_head_black_d_var3" enabled="false"/>
+			<object name="g_head_black_d_var4" enabled="true"/>
+			<object name="g_head_black_d_var5" enabled="false"/>
+			<object name="g_head_black_d_var6" enabled="false"/>
+			<object name="g_head_black_d_var7" enabled="false"/>
+			<object name="g_head_white_d_var1" enabled="false"/>
+			<object name="g_head_white_d_var2" enabled="false"/>
+			<object name="g_head_white_d_var3" enabled="false"/>
+			<object name="g_head_white_d_var4" enabled="false"/>
+			<object name="g_head_white_d_var5" enabled="false"/>
+			<object name="g_head_white_d_var6" enabled="false"/>
+			<object name="g_head_white_d_var7" enabled="false"/>
+
+		<!--Faces; Only one should be used at a time and they should only be used alongside a balaclava-->
+			<object name="g_face_a" enabled="false"/>
+			<object name="g_face_b" enabled="false"/>
+			<object name="g_face_c" enabled="false"/>
+			<object name="g_face_d" enabled="false"/>
+			<object name="g_face_e" enabled="false"/>
+
+		<!--Goggles; Only one should be used at a time-->
+			<object name="g_goggles_a" enabled="true"/> <!--Strap goes inside helmet-->
+			<object name="g_helmet_lod3" enabled="false"/> <!--Strap goes around helmet-->
+
+		<!--Goggles Glass; Should be removed if the goggles are removed-->
+			<object name="g_glass" enabled="true"/>
+
+		<!--Gun Holster-->
+			<object name="g_holster_l" enabled="false"/>
+		</graphic_group>
+	</graphics>
+</dynamic_object>

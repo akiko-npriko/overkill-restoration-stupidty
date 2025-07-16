@@ -1,0 +1,202 @@
+<table name="PAYDAY 2 US Marshal Outfit" image="guis/dlcs/usm/textures/pd2/blackmarket/icons/player_styles/usm">
+
+	<AssetUpdates id="38157" version="7.0" provider="modworkshop"/>
+	
+	<Localization directory="localization" default="english.json"/>
+	
+	<GlobalValue id="usm_mod" color="Color(0.0, 1.0, 0.05)"/>
+	
+	<Mask id="usmarshal_mask_04" unit="units/mods/masks/msk_usmarshal_mask_04/msk_usmarshal_mask_04" type="hat" global_value="usm_mod" skip_mask_on_sequence="false">
+	<!--	<night_vision effect="color_night_vision_blue" light="1"/> -->
+	</Mask>
+	
+	<Mask id="usmarshal_mask_03" unit="units/mods/masks/msk_usmarshal_mask_03/msk_usmarshal_mask_03" type="hat" global_value="usm_mod" skip_mask_on_sequence="false">
+	<!-- 	<night_vision effect="color_night_vision_blue" light="1"/> -->
+	</Mask>
+	
+	<Mask id="usmarshal_mask_02" unit="units/mods/masks/msk_usmarshal_mask_02/msk_usmarshal_mask_02" type="hat" global_value="usm_mod" skip_mask_on_sequence="false"/>
+	
+	<Mask id="usmarshal_mask" unit="units/mods/masks/msk_usmarshal_mask/msk_usmarshal_mask" type="hat" global_value="usm_mod" skip_mask_on_sequence="false"/>
+	
+	<Mask id="giddyup_01" unit="units/mods/masks/msk_giddyup_01/msk_giddyup_01" type="hat" global_value="usm_mod" skip_mask_on_sequence="false"/>
+	
+	<Mask id="giddyup_02" unit="units/mods/masks/msk_giddyup_02/msk_giddyup_02" type="hat" global_value="usm_mod" skip_mask_on_sequence="false"/>
+	
+	<PlayerStyle id="usm" unit="units/usm/skins/fps_usm/fps_usm_male" third_unit="units/usm/skins/usm_male_average/usm_male_average" exclude_glove_adapter="true" default_gloves="usm_glv" texture_bundle_folder="usm" global_value="usm_mod">
+		<third_body_replacement head="false" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="true"/>
+		<body_replacement head="false" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="true"/>
+		<characters>
+			<myh unit="units/usm/skins/fps_usm/fps_usm_male" third_unit="units/usm/skins/usm_male_average/usm_male_average"/>
+			<dallas unit="units/usm/skins/fps_usm/fps_usm_male" third_unit="units/usm/skins/usm_male_average/usm_male_average"/>
+			<dragon unit="units/usm/skins/fps_usm/fps_usm_male_02" third_unit="units/usm/skins/usm_male_average_02/usm_male_average_02"/>
+			<dragan unit="units/usm/skins/fps_usm/fps_usm_male" third_unit="units/usm/skins/usm_male_average/usm_male_average"/>
+			<old_hoxton unit="units/usm/skins/fps_usm/fps_usm_male" third_unit="units/usm/skins/usm_male_average/usm_male_average"/>
+			<hoxton unit="units/usm/skins/fps_usm/fps_usm_male" third_unit="units/usm/skins/usm_male_average/usm_male_average"/>
+			<wolf unit="units/usm/skins/fps_usm/fps_usm_male" third_unit="units/usm/skins/usm_male_average/usm_male_average"/>
+			<jacket unit="units/usm/skins/fps_usm/fps_usm_male" third_unit="units/usm/skins/usm_male_average/usm_male_average"/>
+			<jowi unit="units/usm/skins/fps_usm/fps_usm_male" third_unit="units/usm/skins/usm_male_average/usm_male_average"/>
+			<chico unit="units/usm/skins/fps_usm/fps_usm_male_02" third_unit="units/usm/skins/usm_male_average_02/usm_male_average_02"/>
+			<jimmy unit="units/usm/skins/fps_usm/fps_usm_male" third_unit="units/usm/skins/usm_male_average/usm_male_average"/>
+			<sokol unit="units/usm/skins/fps_usm/fps_usm_male" third_unit="units/usm/skins/usm_male_average/usm_male_average"/>
+			<wild unit="units/usm/skins/fps_usm/fps_usm_male" third_unit="units/usm/skins/usm_male_average/usm_male_average"/>
+			<bodhi unit="units/usm/skins/fps_usm/fps_usm_bodhi" third_unit="units/usm/skins/usm_male_bodhi/usm_male_bodhi"/>
+			<chains unit="units/usm/skins/fps_usm/fps_usm_chains" third_unit="units/usm/skins/usm_male_chains/usm_male_chains"/>
+			<ecp_male unit="units/usm/skins/fps_usm/fps_usm_male" third_unit="units/usm/skins/usm_male_ethan/usm_male_ethan"/>
+			<female_1 unit="units/usm/skins/fps_usm/fps_usm_female" third_unit="units/usm/skins/usm_female_average/usm_female_average"/>
+			<ecp_female unit="units/usm/skins/fps_usm/fps_usm_female" third_unit="units/usm/skins/usm_female_average/usm_female_average"/>
+			<joy unit="units/usm/skins/fps_usm/fps_usm_joy" third_unit="units/usm/skins/usm_female_joy/usm_female_joy"/>
+			<bonnie unit="units/usm/skins/fps_usm/fps_usm_female" third_unit="units/usm/skins/usm_female_bonnie/usm_female_bonnie"/>
+			<max unit="units/usm/skins/fps_usm/fps_usm_sangres" third_unit="units/usm/skins/usm_male_sangres/usm_male_sangres"/>
+			<sydney unit="units/usm/skins/fps_usm/fps_usm_sydney" third_unit="units/usm/skins/usm_female_sydney/usm_female_sydney"/>
+		</characters>
+	</PlayerStyle>
+	
+	<PlayerStyleVariant id="bitchless" player_style_id="usm" texture_bundle_folder="mods" global_value="usm_mod" material="units/usm/skins/shared_materials/usm_fps_bellmead" third_material="units/usm/skins/shared_materials/usm_bitchless" desc_id="bm_suit_var_bitchless_desc">
+		</PlayerStyleVariant>
+		
+	<PlayerStyleVariant id="bitchful" player_style_id="usm" texture_bundle_folder="mods" global_value="usm_mod" material="units/usm/skins/shared_materials/usm_fps_american" third_material="units/usm/skins/shared_materials/usm_bitchful" desc_id="bm_suit_var_bitchful_desc">
+		</PlayerStyleVariant>
+		
+	<PlayerStyleVariant id="sandwich" player_style_id="usm" texture_bundle_folder="mods" global_value="usm_mod" material="units/usm/skins/shared_materials/usm_fps_bellmead" third_material="units/usm/skins/shared_materials/usm_sandwich" desc_id="bm_suit_var_bitchful_desc">
+		</PlayerStyleVariant>
+		
+	<PlayerStyle id="deep_bellmead" player_style_id="usm" texture_bundle_folder="usm" global_value="usm_mod" material="units/usm/skins/shared_materials/usm_fps_bellmead" third_unit="units/usm/skins/usm_deep_male_average/usm_deep_male_average" default_gloves="usm_glv" exclude_glove_adapter="true">
+		<third_body_replacement head="false" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="true"/>
+		<body_replacement head="false" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="true"/>
+		<characters>
+			<myh unit="units/usm/skins/fps_usm/fps_usm_male" third_unit="units/usm/skins/usm_deep_male_average/usm_deep_male_average"/>
+			<dallas unit="units/usm/skins/fps_usm/fps_usm_male" third_unit="units/usm/skins/usm_deep_male_average/usm_deep_male_average"/>
+			<dragon unit="units/usm/skins/fps_usm/fps_usm_male_02" third_unit="units/usm/skins/usm_deep_male_average_02/usm_deep_male_average_02"/>
+			<dragan unit="units/usm/skins/fps_usm/fps_usm_male" third_unit="units/usm/skins/usm_deep_male_average/usm_deep_male_average"/>
+			<old_hoxton unit="units/usm/skins/fps_usm/fps_usm_male" third_unit="units/usm/skins/usm_deep_male_average/usm_deep_male_average"/>
+			<hoxton unit="units/usm/skins/fps_usm/fps_usm_male" third_unit="units/usm/skins/usm_deep_male_average/usm_deep_male_average"/>
+			<wolf unit="units/usm/skins/fps_usm/fps_usm_male" third_unit="units/usm/skins/usm_deep_male_average/usm_deep_male_average"/>
+			<jacket unit="units/usm/skins/fps_usm/fps_usm_male" third_unit="units/usm/skins/usm_deep_male_average/usm_deep_male_average"/>
+			<jowi unit="units/usm/skins/fps_usm/fps_usm_male" third_unit="units/usm/skins/usm_deep_male_average/usm_deep_male_average"/>
+			<chico unit="units/usm/skins/fps_usm/fps_usm_male_02" third_unit="units/usm/skins/usm_deep_male_average_02/usm_deep_male_average_02"/>
+			<jimmy unit="units/usm/skins/fps_usm/fps_usm_male" third_unit="units/usm/skins/usm_deep_male_average/usm_deep_male_average"/>
+			<sokol unit="units/usm/skins/fps_usm/fps_usm_male" third_unit="units/usm/skins/usm_deep_male_average/usm_deep_male_average"/>
+			<wild unit="units/usm/skins/fps_usm/fps_usm_male" third_unit="units/usm/skins/usm_deep_male_average/usm_deep_male_average"/>
+			<bodhi unit="units/usm/skins/fps_usm/fps_usm_bodhi" third_unit="units/usm/skins/usm_deep_male_bodhi/usm_deep_male_bodhi"/>
+			<chains unit="units/usm/skins/fps_usm/fps_usm_chains" third_unit="units/usm/skins/usm_deep_male_chains/usm_deep_male_chains"/>
+			<ecp_male unit="units/usm/skins/fps_usm/fps_usm_male" third_unit="units/usm/skins/usm_deep_male_ethan/usm_deep_male_ethan"/>
+			<female_1 unit="units/usm/skins/fps_usm/fps_usm_female" third_unit="units/usm/skins/usm_deep_female_average/usm_deep_female_average"/>
+			<ecp_female unit="units/usm/skins/fps_usm/fps_usm_female" third_unit="units/usm/skins/usm_deep_female_average/usm_deep_female_average"/>
+			<joy unit="units/usm/skins/fps_usm/fps_usm_joy" third_unit="units/usm/skins/usm_deep_female_joy/usm_deep_female_joy"/>
+			<bonnie unit="units/usm/skins/fps_usm/fps_usm_female" third_unit="units/usm/skins/usm_deep_female_bonnie/usm_deep_female_bonnie"/>
+			<max unit="units/usm/skins/fps_usm/fps_usm_sangres" third_unit="units/usm/skins/usm_deep_male_sangres/usm_deep_male_sangres"/>
+			<sydney unit="units/usm/skins/fps_usm/fps_usm_sydney" third_unit="units/usm/skins/usm_deep_female_sydney/usm_deep_female_sydney"/>
+		</characters>
+	</PlayerStyle>
+	
+	<PlayerStyleVariant id="deep_bellmead_american" player_style_id="deep_bellmead" texture_bundle_folder="mods" global_value="usm_mod" material="units/usm/skins/shared_materials/usm_fps_american" third_material="units/usm/skins/shared_materials/deep_bellmead_american" desc_id="bm_suit_var_deep_bellmead_american_desc">
+		</PlayerStyleVariant>
+		
+	<Gloves id="usm_glv" unit="units/gloves/usm_glv/usm_glv" third_material="units/gloves/usm_glv/usm_glv_thr" global_value="usm_mod">
+		<variations>
+			<default name_id="bm_gloves_usm_glv" desc_id="bm_gloves_usm_glv_desc" material="units/gloves/usm_glv/usm_glv" third_material="units/gloves/usm_glv/usm_glv_thr" global_value="usm_mod" unlocked="true" force_icon="guis/dlcs/mods/textures/pd2/blackmarket/icons/gloves/usm_glv"/>
+			<bellmead name_id="bm_gloves_usm_glv_bellmead" desc_id="bm_gloves_usm_glv_bellmead_desc" material="units/gloves/usm_glv/usm_glv_bellmead" third_material="units/gloves/usm_glv/usm_glv_bellmead_third" global_value="usm_mod" unlocked="true" force_icon="guis/dlcs/mods/textures/pd2/blackmarket/icons/gloves/usm_glv_bellmead"/>
+		</variations>
+		
+	</Gloves>
+	
+	<AddFiles directory="assets">
+		<!--Gloves-->
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/gloves/usm_glv"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/gloves/usm_glv_bellmead"/>
+		<unit_mat path="units/gloves/usm_glv/usm_glv"/>
+		<material_config path="units/gloves/usm_glv/usm_glv_thr"/>
+		<unit_mat path="units/gloves/usm_glv/usm_glv_bellmead"/>
+		<material_config path="units/gloves/usm_glv/usm_glv_bellmead_third"/>
+		
+		<!--Third Person Models-->
+		
+		<texture path="guis/dlcs/usm/textures/pd2/blackmarket/icons/player_styles/usm"/>
+		<texture path="guis/dlcs/usm/textures/pd2/blackmarket/icons/player_styles/usm_default"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/player_styles/usm_bitchless"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/player_styles/usm_bitchful"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/player_styles/usm_sandwich"/>
+		<unit_mat path="units/usm/skins/usm_male_bodhi/usm_male_bodhi"/>
+		<unit_mat path="units/usm/skins/usm_male_sangres/usm_male_sangres"/>
+		<unit_mat path="units/usm/skins/usm_male_chains/usm_male_chains"/>
+		<unit_mat path="units/usm/skins/usm_male_ethan/usm_male_ethan"/>
+		<unit_mat path="units/usm/skins/usm_male_ethan/usm_male_ethan"/>
+		<unit_mat path="units/usm/skins/usm_male_average/usm_male_average"/>
+		<unit_mat path="units/usm/skins/usm_female_sydney/usm_female_sydney"/>
+		<unit_mat path="units/usm/skins/usm_female_bonnie/usm_female_bonnie"/>
+		<unit_mat path="units/usm/skins/usm_male_average_02/usm_male_average_02"/>
+		<unit_mat path="units/usm/skins/usm_female_average/usm_female_average"/>
+		<unit_mat path="units/usm/skins/usm_female_joy/usm_female_joy"/>
+		
+		<!-- Drown in the deep, or rise from it...-->
+		
+		<texture path="guis/dlcs/usm/textures/pd2/blackmarket/icons/player_styles/deep_bellmead"/>
+		<texture path="guis/dlcs/usm/textures/pd2/blackmarket/icons/player_styles/deep_bellmead_default"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/player_styles/deep_bellmead_deep_bellmead_american"/>
+		<unit_mat path="units/usm/skins/usm_deep_male_average/usm_deep_male_average"/>
+		<unit_mat path="units/usm/skins/usm_deep_male_average_02/usm_deep_male_average_02"/>
+		<unit_mat path="units/usm/skins/usm_deep_male_bodhi/usm_deep_male_bodhi"/>
+		<unit_mat path="units/usm/skins/usm_deep_male_chains/usm_deep_male_chains"/>
+		<unit_mat path="units/usm/skins/usm_deep_male_ethan/usm_deep_male_ethan"/>
+		<unit_mat path="units/usm/skins/usm_deep_female_average/usm_deep_female_average"/>
+		<unit_mat path="units/usm/skins/usm_deep_female_joy/usm_deep_female_joy"/>
+		<unit_mat path="units/usm/skins/usm_deep_female_bonnie/usm_deep_female_bonnie"/>
+		<unit_mat path="units/usm/skins/usm_deep_male_sangres/usm_deep_male_sangres"/>
+		<unit_mat path="units/usm/skins/usm_deep_female_sydney/usm_deep_female_sydney"/>
+		
+		<!-- Variant(s) -->
+		
+		<material_config path="units/usm/skins/shared_materials/usm_bitchful"/>
+		<material_config path="units/usm/skins/shared_materials/usm_sandwich"/>
+		<material_config path="units/usm/skins/shared_materials/usm_bitchless"/>
+		<material_config path="units/usm/skins/shared_materials/deep_bellmead_american"/>
+		<material_config path="units/usm/skins/shared_materials/usm_fps_bellmead"/>
+		<material_config path="units/usm/skins/shared_materials/usm_fps_american"/>
+		
+		<!--FPS Models-->
+		
+		<unit_mat path="units/usm/skins/fps_usm/fps_usm_male"/>
+		<unit_mat path="units/usm/skins/fps_usm/fps_usm_chains"/>
+		<unit_mat path="units/usm/skins/fps_usm/fps_usm_bodhi"/>
+		<unit_mat path="units/usm/skins/fps_usm/fps_usm_male_02"/>
+		<unit_mat path="units/usm/skins/fps_usm/fps_usm_sangres"/>
+		<unit_mat path="units/usm/skins/fps_usm/fps_usm_female"/>
+		<unit_mat path="units/usm/skins/fps_usm/fps_usm_sydney"/>
+		<unit_mat path="units/usm/skins/fps_usm/fps_usm_joy"/>
+		
+		<!--Mask1-->
+		
+		<unit_mat path="units/mods/masks/msk_usmarshal_mask/msk_usmarshal_mask"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/usmarshal_mask"/>
+		<texture path="units/mods/masks/msk_usmarshal_mask/dark_glass_02_op"/>
+		
+		<!--Mask2-->
+		
+		<unit_mat path="units/mods/masks/msk_usmarshal_mask_02/msk_usmarshal_mask_02"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/usmarshal_mask_02"/>
+	
+		<!--Mask3-->
+		
+		<unit_mat path="units/mods/masks/msk_usmarshal_mask_03/msk_usmarshal_mask_03"/>
+		<texture path="units/mods/masks/msk_usmarshal_mask_03/helmet_op"/>
+		<texture path="units/mods/masks/msk_usmarshal_mask_03/dark_glass_op"/>
+		<texture path="units/mods/masks/msk_usmarshal_mask_03/laser_base_df"/>
+		<texture path="units/mods/masks/msk_usmarshal_mask_03/laser_df"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/usmarshal_mask_03"/>
+		
+		<!--Mask 4-->
+		
+		<unit_mat path="units/mods/masks/msk_usmarshal_mask_04/msk_usmarshal_mask_04"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/usmarshal_mask_04"/>
+		
+		<!--Mask 5-->
+		
+		<unit_mat path="units/mods/masks/msk_giddyup_01/msk_giddyup_01"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/giddyup_01"/>
+		
+		<!--Mask 6-->
+		
+		<unit_mat path="units/mods/masks/msk_giddyup_02/msk_giddyup_02"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/giddyup_02"/>
+	</AddFiles>
+</table>

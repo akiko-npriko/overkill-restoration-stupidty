@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<dynamic_object>
+	<diesel materials="units/usm/skins/usm_male_chains/usm_male_chains" orientation_object="root_point"/>
+	<graphics>
+		<graphic_group culling_object="co_box" enabled="true" name="suit">
+			<object enabled="true" name="g_body"/>
+			<object enabled="true" name="s_body" shadow_caster="true"/>
+		</graphic_group>
+	</graphics>
+</dynamic_object>

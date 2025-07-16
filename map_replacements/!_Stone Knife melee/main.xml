@@ -1,0 +1,34 @@
+<table name="Stone Knife">
+
+    <Localization directory="loc" default="english.txt">
+	<loc file="english.txt" language="english"/>
+	</Localization>   
+    <GlobalValue id="iuhStoneKnife" color="Color(255, 215, 0)"/>
+      
+    <Melee id="iuhStoneKnifeMelee" based_on="chef" info_id="bm_melee_iuhStoneKnifeMelee_info" anim_global_param="melee_knife" melee_charge_shaker="player_melee_charge_wing" unit="units/mods/weapons/iuhStoneKnifeMelee/iuhStoneKnifeMelee" third_unit="units/mods/weapons/iuhStoneKnifeMelee/iuhStoneKnifeMelee_third" dlc="iuhStoneKnife" global_value="iuhStoneKnife">
+        <sounds hit_air = "iuhStoneKnifeMelee_hit" hit_gen = "iuhStoneKnifeMelee_hit_object" hit_body = "iuhStoneKnifeMelee_hit_flesh"/>
+        <align_objects>
+            <value_node value="a_weapon_left"/>
+         </align_objects>
+    </Melee>
+
+   
+    <AddFiles directory="assets">
+        <unit_mat path="units/mods/weapons/iuhStoneKnifeMelee/iuhStoneKnifeMelee"/>
+        <unit_mat path="units/mods/weapons/iuhStoneKnifeMelee/iuhStoneKnifeMelee_third"/>
+
+		<texture path="units/mods/weapons/iuhStoneKnifeMelee/blade_df"/>
+		<texture path="units/mods/weapons/iuhStoneKnifeMelee/blade_nm"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/melee_weapons/iuhStoneKnifeMelee"/>
+    </AddFiles>
+
+    <Sounds directory="assets\sounds">
+		<sound id="iuhStoneKnifeMelee_hit"           path="iuhStoneKnifeMelee_hit.ogg" prefix="first"/>
+        <sound id="iuhStoneKnifeMelee_hit_flesh"     path="iuhStoneKnifeMelee_hit_flesh.ogg" prefix="first"/>
+        <sound id="iuhStoneKnifeMelee_hit_object"    path="iuhStoneKnifeMelee_hit_object.ogg" prefix="first"/>
+	</Sounds>
+
+</table>
+
+<!--melee_agave-->
+<!--melee_machete-->

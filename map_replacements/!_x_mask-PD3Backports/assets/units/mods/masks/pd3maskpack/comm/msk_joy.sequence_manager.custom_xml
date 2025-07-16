@@ -1,0 +1,303 @@
+<table>
+	<unit>
+		<sequence editable_state="true" name="'stop'" triggable="true">
+			<material name="'mtr_comm_screen'" state="'pause'"/>
+			<material name="'mat_screen02'" state="'pause'"/>
+			<material name="'mat_screen03'" state="'pause'"/>
+			<material name="'mat_screen04'" state="'pause'"/>
+		</sequence>
+		<sequence editable_state="true" name="'play'" startup="true" triggable="true">
+			<material name="'mtr_comm_screen'" state="'play'"/>
+			<material name="'mat_screen02'" state="'play'"/>
+			<material name="'mat_screen03'" state="'play'"/>
+			<material name="'mat_screen04'" state="'play'"/>
+			<run_sequence name="'start_uv_anim_'..pick('sheet_1','sheet_2','sheet_3','sheet_4','sheet_5','sheet_6','sheet_7','sheet_8','sheet_9','sheet_10','sheet_11')" start_time="1/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'start_uv_anim_sheet_1'" triggable="true">
+			<object enabled="true" name="'g_comm_screen'"/>
+			<object enabled="false" name="'g_comm_screen_01'"/>
+			<object enabled="false" name="'g_screen03'"/>
+			<object enabled="false" name="'g_screen04'"/>
+			<material name="'mtr_comm_screen'" state="'pause'"/>
+			<run_sequence name="'sheet1_time_0'"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet1_time_0'" triggable="true">
+			<material name="'mtr_comm_screen'" time="0"/>
+			<run_sequence name="'sheet1_time_1'" start_time="2/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet1_time_1'" triggable="true">
+			<material name="'mtr_comm_screen'" time="0.125"/>
+			<run_sequence name="'sheet1_time_2'" start_time="2/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet1_time_2'" triggable="true">
+			<material name="'mtr_comm_screen'" time="0.25"/>
+			<run_sequence name="'sheet1_time_3'" start_time="90/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet1_time_3'" triggable="true">
+			<material name="'mtr_comm_screen'" time="0"/>
+			<run_sequence name="'sheet1_time_4'" start_time="2/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet1_time_4'" triggable="true">
+			<material name="'mtr_comm_screen'" time="0"/>
+			<run_sequence name="'sheet1_time_5'" start_time="1/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet1_time_5'" triggable="true">
+			<material name="'mtr_comm_screen'" time="0.625"/>
+			<run_sequence name="'sheet1_time_6'" start_time="30/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet1_time_6'" triggable="true">
+			<material name="'mtr_comm_screen'" time="0.25"/>
+			<run_sequence name="'sheet1_time_7'" start_time="1/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet1_time_7'" triggable="true">
+			<material name="'mtr_comm_screen'" time="0.75"/>
+			<run_sequence name="'sheet1_time_8'" start_time="60/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet1_time_8'" triggable="true">
+			<material name="'mtr_comm_screen'" time="0"/>
+			<run_sequence name="'sheet1_time_9'" start_time="1/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet1_time_9'" triggable="true">
+			<material name="'mtr_comm_screen'" time="0.625"/>
+			<run_sequence name="'sheet1_time_10'" start_time="30/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet1_time_10'" triggable="true">
+			<material name="'mtr_comm_screen'" time="0.25"/>
+			<run_sequence name="'sheet1_time_11'" start_time="1/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet1_time_11'" triggable="true">
+			<material name="'mtr_comm_screen'" time="0.875"/>
+			<run_sequence name="'sheet1_time_12'" start_time="60/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet1_time_12'" triggable="true">
+			<material name="'mtr_comm_screen'" time="0.875"/>
+			<run_sequence name="'start_uv_anim_'..pick('sheet_1','sheet_2','sheet_3','sheet_4','sheet_5','sheet_6','sheet_7','sheet_8','sheet_9','sheet_10','sheet_11')" start_time="1/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'start_uv_anim_sheet_2'" triggable="true">
+			<object enabled="false" name="'g_comm_screen'"/>
+			<object enabled="true" name="'g_comm_screen_01'"/>
+			<object enabled="false" name="'g_screen03'"/>
+			<object enabled="false" name="'g_screen04'"/>
+			<material name="'mat_screen02'" state="'pause'"/>
+			<run_sequence name="'sheet2_time_0'"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet2_time_0'" triggable="true">
+			<material name="'mat_screen02'" time="0.75"/>
+			<run_sequence name="'sheet2_time_1'" start_time="2/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet2_time_1'" triggable="true">
+			<material name="'mat_screen02'" time="0.125"/>
+			<run_sequence name="'sheet2_time_2'" start_time="60/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet2_time_2'" triggable="true">
+			<material name="'mat_screen02'" time="0.25"/>
+			<run_sequence name="'sheet2_time_3'" start_time="60/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet2_time_3'" triggable="true">
+			<material name="'mat_screen02'" time="0.375"/>
+			<run_sequence name="'sheet2_time_4'" start_time="60/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet2_time_4'" triggable="true">
+			<material name="'mat_screen02'" time="0.5"/>
+			<run_sequence name="'sheet2_time_5'" start_time="60/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet2_time_5'" triggable="true">
+			<material name="'mat_screen02'" time="0.625"/>
+			<run_sequence name="'sheet2_time_6'" start_time="60/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet2_time_6'" triggable="true">
+			<material name="'mat_screen02'" time="0"/>
+			<run_sequence name="'sheet2_time_7'" start_time="60/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet2_time_7'" triggable="true">
+			<material name="'mat_screen02'" time="0.875"/>
+			<run_sequence name="'start_uv_anim_'..pick('sheet_1','sheet_2','sheet_3','sheet_4','sheet_5','sheet_6','sheet_7','sheet_8','sheet_9','sheet_10','sheet_11')" start_time="2/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'start_uv_anim_sheet_3'" triggable="true">
+			<object enabled="false" name="'g_comm_screen'"/>
+			<object enabled="true" name="'g_comm_screen_01'"/>
+			<material name="'mat_screen03'" state="'pause'"/>
+			<run_sequence name="'sheet3_time_0'"/>
+		</sequence>
+		<sequence editable_state="true" name="'start_uv_anim_sheet_4'" triggable="true">
+			<object enabled="false" name="'g_comm_screen'"/>
+			<object enabled="true" name="'g_comm_screen_01'"/>
+			<run_sequence name="'sheet4_time_0'"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet4_time_0'" triggable="true">
+			<material name="'mat_screen04'" time="0"/>
+			<run_sequence name="'sheet4_time_1'" start_time="2/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet4_time_1'" triggable="true">
+			<material name="'mat_screen04'" time="0.125"/>
+			<run_sequence name="'sheet4_time_2'" start_time="2/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet4_time_2'" triggable="true">
+			<material name="'mat_screen04'" time="0.25"/>
+			<run_sequence name="'sheet4_time_3'" start_time="2/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet4_time_3'" triggable="true">
+			<material name="'mat_screen04'" time="0.375"/>
+			<run_sequence name="'sheet4_time_4'" start_time="2/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet4_time_4'" triggable="true">
+			<material name="'mat_screen04'" time="0.5"/>
+			<run_sequence name="'sheet4_time_5'" start_time="2/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet4_time_5'" triggable="true">
+			<material name="'mat_screen04'" time="0.625"/>
+			<run_sequence name="'sheet4_time_6'" start_time="2/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet4_time_6'" triggable="true">
+			<material name="'mat_screen04'" time="0.75"/>
+			<run_sequence name="'sheet4_time_7'" start_time="2/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet4_time_7'" triggable="true">
+			<material name="'mat_screen04'" time="0.875"/>
+			<run_sequence name="'sheet4_time_8'" start_time="2/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet4_time_14'" triggable="true">
+			<material name="'mat_screen04'" time="0.75"/>
+			<run_sequence name="'sheet4_time_15'" start_time="2/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet4_time_15'" triggable="true">
+			<material name="'mat_screen04'" time="0.875"/>
+			<run_sequence name="'start_uv_anim_'..pick('sheet_1','sheet_2','sheet_3','sheet_4','sheet_5','sheet_6','sheet_7','sheet_8','sheet_9','sheet_10','sheet_11')" start_time="2/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'start_uv_anim_sheet_5'" triggable="true">
+			<object enabled="true" name="'g_comm_screen'"/>
+			<object enabled="false" name="'g_comm_screen_01'"/>
+			<run_sequence name="'sheet5_time_0'"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet5_time_0'" triggable="true">
+			<material name="'mtr_comm_screen'" time="0.5"/>
+			<run_sequence name="'sheet5_time_1'" start_time="15/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet5_time_1'" triggable="true">
+			<material name="'mtr_comm_screen'" time="0.375"/>
+			<run_sequence name="'sheet5_time_2'" start_time="15/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet5_time_2'" triggable="true">
+			<material name="'mtr_comm_screen'" time="0.5"/>
+			<run_sequence name="'sheet5_time_3'" start_time="15/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet5_time_3'" triggable="true">
+			<material name="'mtr_comm_screen'" time="0.375"/>
+			<run_sequence name="'sheet5_time_4'" start_time="15/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet5_time_4'" triggable="true">
+			<material name="'mtr_comm_screen'" time="0.5"/>
+			<run_sequence name="'sheet5_time_5'" start_time="15/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet5_time_5'" triggable="true">
+			<material name="'mtr_comm_screen'" time="0.375"/>
+			<run_sequence name="'sheet5_time_6'" start_time="15/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet5_time_6'" triggable="true">
+			<material name="'mtr_comm_screen'" time="0.5"/>
+			<run_sequence name="'sheet5_time_7'" start_time="15/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet5_time_7'" triggable="true">
+			<material name="'mtr_comm_screen'" time="0.375"/>
+			<run_sequence name="'sheet5_time_8'" start_time="15/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet5_time_8'" triggable="true">
+			<material name="'mtr_comm_screen'" time="0.5"/>
+			<run_sequence name="'start_uv_anim_'..pick('sheet_1','sheet_2','sheet_3','sheet_4','sheet_5','sheet_6','sheet_7','sheet_8','sheet_9','sheet_10','sheet_11')" start_time="2/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'start_uv_anim_sheet_6'" triggable="true">
+			<object enabled="false" name="'g_screen_off'"/>
+			<object enabled="false" name="'g_comm_screen'"/>
+			<object enabled="true" name="'g_comm_screen_01'"/>
+			<object enabled="false" name="'g_screen03'"/>
+			<object enabled="false" name="'g_screen04'"/>
+			<material name="'mat_screen02'" state="'pause'"/>
+			<run_sequence name="'sheet6_time_0'"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet6_time_0'" triggable="true">
+			<material name="'mat_screen02'" time="0.75"/>
+			<run_sequence name="'sheet6_time_1'" start_time="2/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet6_time_1'" triggable="true">
+			<material name="'mat_screen02'" time="0"/>
+			<run_sequence name="'start_uv_anim_'..pick('sheet_1','sheet_2','sheet_3','sheet_4','sheet_5','sheet_6','sheet_7','sheet_8','sheet_9','sheet_10','sheet_11')" start_time="60/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'start_uv_anim_sheet_7'" triggable="true">
+			<object enabled="false" name="'g_comm_screen'"/>
+			<object enabled="true" name="'g_comm_screen_01'"/>
+			<run_sequence name="'sheet7_time_0'"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet7_time_0'" triggable="true">
+			<material name="'mat_screen02'" time="0.75"/>
+			<run_sequence name="'sheet7_time_1'" start_time="2/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet7_time_1'" triggable="true">
+			<material name="'mat_screen02'" time="0.125"/>
+			<run_sequence name="'start_uv_anim_'..pick('sheet_1','sheet_2','sheet_3','sheet_4','sheet_5','sheet_6','sheet_7','sheet_8','sheet_9','sheet_10','sheet_11')" start_time="60/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'start_uv_anim_sheet_8'" triggable="true">
+			<object enabled="false" name="'g_screen_off'"/>
+			<object enabled="false" name="'g_comm_screen'"/>
+			<object enabled="true" name="'g_comm_screen_01'"/>
+			<object enabled="false" name="'g_screen03'"/>
+			<object enabled="false" name="'g_screen04'"/>
+			<material name="'mat_screen02'" state="'pause'"/>
+			<run_sequence name="'sheet8_time_0'"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet8_time_0'" triggable="true">
+			<material name="'mat_screen02'" time="0.75"/>
+			<run_sequence name="'sheet8_time_1'" start_time="2/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet8_time_1'" triggable="true">
+			<material name="'mat_screen02'" time="0.25"/>
+			<run_sequence name="'start_uv_anim_'..pick('sheet_1','sheet_2','sheet_3','sheet_4','sheet_5','sheet_6','sheet_7','sheet_8','sheet_9','sheet_10','sheet_11')" start_time="60/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'start_uv_anim_sheet_9'" triggable="true">
+			<object enabled="false" name="'g_screen_off'"/>
+			<object enabled="false" name="'g_comm_screen'"/>
+			<object enabled="true" name="'g_comm_screen_01'"/>
+			<object enabled="false" name="'g_screen03'"/>
+			<object enabled="false" name="'g_screen04'"/>
+			<material name="'mat_screen02'" state="'pause'"/>
+			<run_sequence name="'sheet9_time_0'"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet9_time_0'" triggable="true">
+			<material name="'mat_screen02'" time="0.75"/>
+			<run_sequence name="'sheet9_time_1'" start_time="2/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet9_time_1'" triggable="true">
+			<material name="'mat_screen02'" time="0.375"/>
+			<run_sequence name="'start_uv_anim_'..pick('sheet_1','sheet_2','sheet_3','sheet_4','sheet_5','sheet_6','sheet_7','sheet_8','sheet_9','sheet_10','sheet_11')" start_time="60/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'start_uv_anim_sheet_10'" triggable="true">
+			<object enabled="false" name="'g_screen_off'"/>
+			<object enabled="false" name="'g_comm_screen'"/>
+			<object enabled="true" name="'g_comm_screen_01'"/>
+			<object enabled="false" name="'g_screen03'"/>
+			<object enabled="false" name="'g_screen04'"/>
+			<material name="'mat_screen02'" state="'pause'"/>
+			<run_sequence name="'sheet10_time_0'"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet10_time_0'" triggable="true">
+			<material name="'mat_screen02'" time="0.75"/>
+			<run_sequence name="'sheet10_time_1'" start_time="2/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet10_time_1'" triggable="true">
+			<material name="'mat_screen02'" time="0.5"/>
+			<run_sequence name="'start_uv_anim_'..pick('sheet_1','sheet_2','sheet_3','sheet_4','sheet_5','sheet_6','sheet_7','sheet_8','sheet_9','sheet_10','sheet_11')" start_time="60/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'start_uv_anim_sheet_11'" triggable="true">
+			<object enabled="false" name="'g_comm_screen'"/>
+			<object enabled="true" name="'g_comm_screen_01'"/>
+			<run_sequence name="'sheet11_time_0'"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet11_time_0'" triggable="true">
+			<material name="'mat_screen02'" time="0.75"/>
+			<run_sequence name="'sheet11_time_1'" start_time="2/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'sheet11_time_1'" triggable="true">
+			<material name="'mat_screen02'" time="0.625"/>
+			<run_sequence name="'start_uv_anim_'..pick('sheet_1','sheet_2','sheet_3','sheet_4','sheet_5','sheet_6','sheet_7','sheet_8','sheet_9','sheet_10','sheet_11')" start_time="60/30"/>
+		</sequence>
+	</unit>
+</table>

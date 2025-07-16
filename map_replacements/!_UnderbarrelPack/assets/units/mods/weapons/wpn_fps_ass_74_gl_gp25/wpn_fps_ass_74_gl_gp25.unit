@@ -1,0 +1,11 @@
+<unit type="wpn" slot="1">
+	<object file="units/mods/weapons/wpn_fps_ass_74_gl_gp25/wpn_fps_ass_74_gl_gp25" />
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+        <extension name="base" class="WeaponUnderbarrelLauncher">
+			<var name="name_id" value="groza_underbarrel" />
+			<var name="anim" value="flip_up" />
+			<var name="launcher_projectile" value="underbarrel_m203_groza" />
+		</extension>
+	</extensions>
+</unit>

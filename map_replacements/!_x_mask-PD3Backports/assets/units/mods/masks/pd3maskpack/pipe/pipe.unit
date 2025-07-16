@@ -1,0 +1,10 @@
+<unit type="msk" slot="1" >
+    <object file="units/mods/masks/pd3maskpack/pipe/pipe" />
+	<dependencies>
+		<depends_on effect="effects/payday2/particles/character/smoking_head" />
+	</dependencies>
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+        <extension class="MaskExt" name="base" />
+    </extensions>
+</unit>

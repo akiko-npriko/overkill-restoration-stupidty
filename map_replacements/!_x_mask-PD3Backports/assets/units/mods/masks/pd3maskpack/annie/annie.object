@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/mods/masks/pd3maskpack/annie/annie" orientation_object="rp_pd3_annie" />
+	<bodies>
+		<body name="body_root" enabled="true" template="no_collision_no_ray" friction="1" keyframed="true" collision_script_quiet_time="0.1" collision_script_tag="small" lin_damping="10" ang_damping="20" restitution="0" >
+			<object name="a_root" />
+			<object name="c_cube_0" collision_type="capsule"  mass="0.01" />
+		</body>
+		
+		<body name="body_01" enabled="true" template="no_collision_no_ray" friction="1" keyframed="false" collision_script_quiet_time="0.1" collision_script_tag="small" lin_damping="10" ang_damping="15" restitution="0" collision_class="ragdoll">
+			<object name="RigidBody_Chain_01_01" />
+			<object name="c_cube_1" collision_type="capsule"  mass="0.01" />
+		</body>
+		<body name="body_02" enabled="true" template="no_collision_no_ray" friction="1" keyframed="false" collision_script_quiet_time="0.1" collision_script_tag="small" lin_damping="10" ang_damping="15" restitution="0" collision_class="ragdoll">
+			<object name="RigidBody_Chain_01_02" />
+			<object name="c_cube_2" collision_type="capsule"  mass="0.01" />
+		</body>
+
+		<body name="body_03" enabled="true" template="no_collision_no_ray" friction="1" keyframed="false" collision_script_quiet_time="0.1" collision_script_tag="small" lin_damping="10" ang_damping="15" restitution="0" collision_class="ragdoll">
+			<object name="RigidBody_Chain_02_01" />
+			<object name="c_cube_3" collision_type="capsule"  mass="0.01" />
+		</body>
+		<body name="body_04" enabled="true" template="no_collision_no_ray" friction="1" keyframed="false" collision_script_quiet_time="0.1" collision_script_tag="small" lin_damping="10" ang_damping="15" restitution="0" collision_class="ragdoll">
+			<object name="RigidBody_Chain_02_02" />
+			<object name="c_cube_4" collision_type="capsule"  mass="0.01" />
+		</body>
+
+
+		<body name="body_05" enabled="true" template="no_collision_no_ray" friction="1" keyframed="false" collision_script_quiet_time="0.1" collision_script_tag="small" lin_damping="5" ang_damping="5" restitution="0" collision_class="ragdoll">
+			<object name="RigidBody_Chain_03_01" />
+			<object name="c_cube_5" collision_type="capsule"  mass="0.01" />
+		</body>
+		<body name="body_06" enabled="true" template="no_collision_no_ray" friction="1" keyframed="false" collision_script_quiet_time="0.1" collision_script_tag="small" lin_damping="5" ang_damping="5" restitution="0" collision_class="ragdoll">
+			<object name="RigidBody_Chain_04_01" />
+			<object name="c_cube_6" collision_type="capsule"  mass="0.01" />
+		</body>
+		
+		
+
+
+	</bodies>
+
+	<constraints>
+		<!--Frill Right-->
+		<constraint type="ragdoll" name="chain1" enabled="true">
+			<param body_a="body_root" body_b="body_01"/>
+			<param pivot="position:RigidBody_Chain_01_01"/>
+			<param twist_axis="xaxis:RigidBody_Chain_01_01" twist_min="-5" twist_max="5" twist_freedom="1"/>
+			<param plane_axis="xaxis:RigidBody_Chain_01_01"/>
+			<param cone_y="10" cone_z="10" cone_freedom="10"/>
+			<param damping="200" spring_constant="25000" min_restitution="1"/>
+		</constraint>
+		<constraint type="ragdoll" name="chain2" enabled="true">
+			<param body_a="body_01" body_b="body_02"/>
+			<param pivot="position:RigidBody_Chain_01_02"/>
+			<param twist_axis="xaxis:RigidBody_Chain_01_02" twist_min="-5" twist_max="5" twist_freedom="1"/>
+			<param plane_axis="xaxis:RigidBody_Chain_01_02"/>
+			<param cone_y="10" cone_z="10" cone_freedom="10"/>
+			<param damping="200" spring_constant="25000" min_restitution="1"/>
+		</constraint>
+
+		<!--Frill Left-->
+		<constraint type="ragdoll" name="chain3" enabled="true">
+			<param body_a="body_root" body_b="body_03"/>
+			<param pivot="position:RigidBody_Chain_02_01"/>
+			<param twist_axis="xaxis:RigidBody_Chain_02_01" twist_min="-5" twist_max="5" twist_freedom="1"/>
+			<param plane_axis="xaxis:RigidBody_Chain_02_01"/>
+			<param cone_y="10" cone_z="10" cone_freedom="10"/>
+			<param damping="200" spring_constant="25000" min_restitution="1"/>
+		</constraint>
+		<constraint type="ragdoll" name="chain4" enabled="true">
+			<param body_a="body_01" body_b="body_03"/>
+			<param pivot="position:RigidBody_Chain_02_02"/>
+			<param twist_axis="xaxis:RigidBody_Chain_02_02" twist_min="-5" twist_max="5" twist_freedom="1"/>
+			<param plane_axis="xaxis:RigidBody_Chain_02_02"/>
+			<param cone_y="10" cone_z="10" cone_freedom="10"/>
+			<param damping="200" spring_constant="25000" min_restitution="1"/>
+		</constraint>
+		<!--Bells-->
+		<constraint type="ragdoll" name="chain6" enabled="true">
+			<param body_a="body_root" body_b="body_05"/>
+			<param pivot="position:RigidBody_Chain_03_01"/>
+			<param twist_axis="xaxis:RigidBody_Chain_03_01" twist_min="-5" twist_max="5" twist_freedom="1"/>
+			<param plane_axis="xaxis:RigidBody_Chain_03_01"/>
+			<param cone_y="10" cone_z="10" cone_freedom="10"/>
+			<param damping="200" spring_constant="25000" min_restitution="1"/>
+		</constraint>	
+		<constraint type="ragdoll" name="chain7" enabled="true">
+			<param body_a="body_root" body_b="body_05"/>
+			<param pivot="position:RigidBody_Chain_03_01"/>
+			<param twist_axis="xaxis:RigidBody_Chain_03_01" twist_min="-15" twist_max="15" twist_freedom="5"/>
+			<param plane_axis="xaxis:RigidBody_Chain_03_01"/>
+			<param cone_y="10" cone_z="10" cone_freedom="10"/>
+			<param damping="200" spring_constant="25000" min_restitution="1"/>
+		</constraint>
+		
+		<constraint type="ragdoll" name="chain8" enabled="true">
+			<param body_a="body_root" body_b="body_06"/>
+			<param pivot="position:RigidBody_Chain_04_01"/>
+			<param twist_axis="xaxis:RigidBody_Chain_04_01" twist_min="-15" twist_max="15" twist_freedom="1"/>
+			<param plane_axis="xaxis:RigidBody_Chain_04_01"/>
+			<param cone_y="10" cone_z="10" cone_freedom="10"/>
+			<param damping="200" spring_constant="25000" min_restitution="1"/>
+		</constraint>
+
+		
+
+
+	</constraints>
+
+	<graphics>
+		<object name="g_annie" enabled="true"  />
+		<object name="g_chain" enabled="true"  />
+	</graphics>
+</dynamic_object>

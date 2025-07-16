@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/nypd/armor_skins/nypd_swat_heavy_shotgun/nypd_swat_heavy_shotgun" orientation_object="root_point" />
+
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="bounding_box_char">
+			<object name="g_body" enabled="true"/>
+			<object name="g_swat_sg" enabled="true"/>
+			<object name="g_balaclava_d" enabled="true"/>
+			<object name="g_helmet_lod1" enabled="true"/>
+			<object name="g_helmet_lod3" enabled="true"/>
+			<object name="g_helmet_lod5" enabled="true"/>
+
+		<!--Faces; Only one should be used at a time-->
+			<object name="g_face_heavy_a" enabled="false"/>
+			<object name="g_face_heavy_b" enabled="true"/>
+			<object name="g_face_heavy_c" enabled="false"/>
+			<object name="g_face_heavy_d" enabled="false"/>
+			<object name="g_face_heavy_e" enabled="false"/>
+
+		<!--Gun Holster-->
+			<object name="g_holster_l" enabled="false"/>
+		</graphic_group>
+	</graphics>
+</dynamic_object>

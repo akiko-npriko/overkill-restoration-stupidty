@@ -1,0 +1,77 @@
+<table directory="assets">
+
+<!-- SG45 Parts -->
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_sg45/wpn_fps_pis_sg45"/>
+		<model path="units/mods/weapons/wpn_fps_pis_sg45/wpn_fps_pis_sg45"/>
+		<object path="units/mods/weapons/wpn_fps_pis_sg45/wpn_fps_pis_sg45"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_sg45/wpn_fps_pis_sg45"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_sg45/wpn_fps_pis_sg45_npc"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/sg45"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_x_sg45/wpn_fps_pis_x_sg45" />
+		<model path="units/mods/weapons/wpn_fps_pis_x_sg45/wpn_fps_pis_x_sg45" />
+		<object path="units/mods/weapons/wpn_fps_pis_x_sg45/wpn_fps_pis_x_sg45" />
+		<unit path="units/mods/weapons/wpn_fps_pis_x_sg45/wpn_fps_pis_x_sg45" />
+		<unit path="units/mods/weapons/wpn_fps_pis_x_sg45/wpn_fps_pis_x_sg45_npc" />
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/x_sg45" />
+
+		<texture							path="units/mods/weapons/wpn_fps_pis_sg45_pts/slide_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_pis_sg45_pts/slide_df_cc"/>
+		<texture							path="units/mods/weapons/wpn_fps_pis_sg45_pts/slide_nm"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_sg45_pts/wpn_fps_pis_sg45_sl_standard"/>
+		<texture							path="units/mods/weapons/wpn_fps_pis_sg45_pts/barrel_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_pis_sg45_pts/barrel_df_cc"/>
+		<texture							path="units/mods/weapons/wpn_fps_pis_sg45_pts/barrel_nm"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_sg45_pts/wpn_fps_pis_sg45_b_standard"/>		
+		<texture							path="units/mods/weapons/wpn_fps_pis_sg45_pts/body_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_sg45_pts/wpn_fps_pis_sg45_body_standard"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_sg45_pts/wpn_fps_pis_sg45_bolt_standard"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_sg45_pts/wpn_fps_pis_sg45_m_standard"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_sg45_pts/wpn_fps_pis_sg45_o_standard"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_sg45_pts/wpn_fps_pis_sg45_ns_standard"/>	
+		
+		<texture							path="units/mods/weapons/wpn_fps_pis_sg45_pts/slide_chrome_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_sg45_pts/wpn_fps_pis_sg45_sl_chrome"/>
+		<texture							path="units/mods/weapons/wpn_fps_pis_sg45_pts/sights_expert_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_sg45_pts/wpn_fps_pis_sg45_o_expert"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_sg45_pts/wpn_fps_pis_sg45_m_extended"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_sg45_pts/wpn_fps_pis_sg45_g_ergo"/>			
+		<texture							path="units/mods/weapons/wpn_fps_pis_sg45_pts/body_fde_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_sg45_pts/wpn_fps_pis_sg45_body_fde"/>	
+		
+<!-- Third -->
+
+		<texture							path="units/mods/weapons/wpn_third_pis_sg45_pts/third_body_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_pis_sg45_pts/wpn_third_pis_sg45_body_standard"/>		
+		<unit_obj							path="units/mods/weapons/wpn_third_pis_sg45_pts/wpn_third_pis_sg45_b_standard"/>	
+		<unit_mat							path="units/mods/weapons/wpn_third_pis_sg45_pts/wpn_third_pis_sg45_m_standard"/>	
+		<unit_obj							path="units/mods/weapons/wpn_third_pis_sg45_pts/wpn_third_pis_sg45_ns_standard"/>	
+		<unit_obj							path="units/mods/weapons/wpn_third_pis_sg45_pts/wpn_third_pis_sg45_o_standard"/>	
+		<texture							path="units/mods/weapons/wpn_third_pis_sg45_pts/third_slide_df"/>
+		<texture							path="units/mods/weapons/wpn_third_pis_sg45_pts/third_slide_nm"/>		
+		<unit_mat							path="units/mods/weapons/wpn_third_pis_sg45_pts/wpn_third_pis_sg45_sl_standard"/>	
+		
+		<texture							path="units/mods/weapons/wpn_third_pis_sg45_pts/third_sights_expert_df"/>		
+		<unit_mat							path="units/mods/weapons/wpn_third_pis_sg45_pts/wpn_third_pis_sg45_o_expert"/>	
+		<texture							path="units/mods/weapons/wpn_third_pis_sg45_pts/third_slide_chrome_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_pis_sg45_pts/wpn_third_pis_sg45_sl_chrome"/>	
+		<unit_obj							path="units/mods/weapons/wpn_third_pis_sg45_pts/wpn_third_pis_sg45_m_extended"/>
+		<unit_obj							path="units/mods/weapons/wpn_third_pis_sg45_pts/wpn_third_pis_sg45_g_ergo"/>
+		<texture							path="units/mods/weapons/wpn_third_pis_sg45_pts/third_body_fde_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_pis_sg45_pts/wpn_third_pis_sg45_body_fde"/>		
+		
+<!-- Blackmarket Icons -->
+
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_sg45_sl_chrome"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_sg45_o_expert"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_sg45_m_extended"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_sg45_g_ergo"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_sg45_body_fde"/>
+
+<!-- Animations -->
+		
+	<!--<animation path="anims/fps/sg45/sg45_reload"/>
+		<animation path="anims/fps/sg45/sg45_reload_not_empty"/>-->
+		
+</table>

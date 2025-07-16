@@ -1,0 +1,102 @@
+<table name="mx_smaw">
+
+    <Localization directory="Localization" default="english.txt">
+    </Localization>
+    <AssetUpdates id="20043" version="2" name="asset_updates" folder_name="mx_smaw_reborn" provider="lastbullet"/>
+    <GlobalValue id="mx_smaw" color="Color(0, 1, 0)"/>
+
+    <!-- SMAW  -->
+    <WeaponMod based_on="wpn_fps_rpg7_body" id="wpn_fps_smaw_body" unit="units/mods/weapons/wpn_fps_smaw_pts/wpn_fps_smaw_body" type="lower_reciever" drop="false" is_a_unlockable="false"/>
+
+    <WeaponNew unlock_level="25">
+        <weapon id="smaw" based_on="rpg7" texture_bundle_folder="mods" weapon_hold="rpg7" global_value="mx_smaw">    
+            <use_data selection_index="2"/>   <!--1 secondary 2 primary -->
+            <animations reload_name_id="rpg7" recoil_steelsight="true" goldeneye_reload="true"></animations>  	 
+        </weapon>
+        <factory id="wpn_fps_smaw" unit="units/mods/weapons/wpn_fps_smaw/wpn_fps_smaw">        
+            <optional_types>
+            </optional_types>
+
+            <default_blueprint>
+                <value_node value="wpn_fps_smaw_body"/>            
+            </default_blueprint>
+
+            <uses_parts>
+                <value_node value="wpn_fps_smaw_body"/> 
+
+                <value_node value="wpn_fps_upg_bonus_total_ammo_p3"/>
+                <value_node value="wpn_fps_rpg7_sight"/>
+                <value_node value="wpn_fps_upg_bonus_concealment_p2"/>
+                <value_node value="wpn_fps_upg_bonus_concealment_p3"/>
+            </uses_parts>                  
+            
+        </factory>
+        <stance>
+            <steelsight>
+                <shoulders rotation="-0.00872654 -0 0 -0.999962" translation="-8.055 -2.101 -3.84"/>
+            </steelsight>
+        </stance>        
+    </WeaponNew>
+
+    <WeaponNew unlock_level="25">
+        <weapon id="smaw_sec" based_on="rpg7" texture_bundle_folder="mods" weapon_hold="rpg7" global_value="mx_smaw">    
+            <use_data selection_index="1"/>   <!--1 secondary 2 primary -->
+            <animations reload_name_id="rpg7" recoil_steelsight="true" goldeneye_reload="true"></animations>  	 
+        </weapon>
+        <factory id="wpn_fps_smaw_sec" unit="units/mods/weapons/wpn_fps_smaw_sec/wpn_fps_smaw_sec">        
+            <optional_types>
+            </optional_types>
+
+            <default_blueprint>
+                <value_node value="wpn_fps_smaw_body"/>            
+            </default_blueprint>
+
+            <uses_parts>
+                <value_node value="wpn_fps_smaw_body"/> 
+
+                <value_node value="wpn_fps_upg_bonus_total_ammo_p3"/>
+                <value_node value="wpn_fps_rpg7_sight"/>
+                <value_node value="wpn_fps_upg_bonus_concealment_p2"/>
+                <value_node value="wpn_fps_upg_bonus_concealment_p3"/>
+            </uses_parts>                  
+            
+        </factory>
+        <stance>
+            <steelsight>
+                <shoulders rotation="-0.00872654 -0 0 -0.999962" translation="-8.055 -2.101 -3.84"/>
+            </steelsight>
+        </stance>        
+    </WeaponNew>
+
+    <AddFiles directory="assets">
+    	<cooked_physics     path="units/mods/weapons/wpn_fps_smaw/wpn_fps_smaw"/>
+        <model              path="units/mods/weapons/wpn_fps_smaw/wpn_fps_smaw"/>
+        <object             path="units/mods/weapons/wpn_fps_smaw/wpn_fps_smaw"/>
+        <unit               path="units/mods/weapons/wpn_fps_smaw/wpn_fps_smaw"/>
+    	<material_config    path="units/mods/weapons/wpn_fps_smaw/wpn_fps_smaw"/>
+
+        <unit               path="units/mods/weapons/wpn_fps_smaw_sec/wpn_fps_smaw_sec"/>
+
+    	<material_config    path="units/mods/weapons/wpn_fps_smaw_pts/wpn_fps_smaw_body"/>
+    	<material_config    path="units/mods/weapons/wpn_fps_smaw_pts/wpn_fps_smaw_body_cc_thq"/>
+    	<material_config    path="units/mods/weapons/wpn_fps_smaw_pts/wpn_fps_smaw_body_cc"/>
+    	<material_config    path="units/mods/weapons/wpn_fps_smaw_pts/wpn_fps_smaw_body_thq"/>
+    	<cooked_physics     path="units/mods/weapons/wpn_fps_smaw_pts/wpn_fps_smaw_body"/>
+    	<model 			    path="units/mods/weapons/wpn_fps_smaw_pts/wpn_fps_smaw_body"/>
+        <object 		    path="units/mods/weapons/wpn_fps_smaw_pts/wpn_fps_smaw_body"/>
+        <unit 			    path="units/mods/weapons/wpn_fps_smaw_pts/wpn_fps_smaw_body"/>
+        <texture 		    path="units/mods/weapons/wpn_fps_smaw_pts/wpn_fps_smaw_body_cc_df"/>
+        <texture 		    path="units/mods/weapons/wpn_fps_smaw_pts/wpn_fps_smaw_body_df"/>
+        <texture 		    path="units/mods/weapons/wpn_fps_smaw_pts/wpn_fps_smaw_body_nm"/>
+        <texture            path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/smaw"/>
+        <texture            path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/smaw_sec"/>
+    </AddFiles>
+    <Hooks directory="Hooks">
+
+        <hook file="goldeneye_reload/playerstandard.lua"            source_file="lib/units/beings/player/states/playerstandard"/>
+        <hook file="goldeneye_reload/fpcameraplayerbase.lua"        source_file="lib/units/cameras/fpcameraplayerbase"/>
+        <hook file="weapontweakdata.lua"        source_file="lib/tweak_data/weapontweakdata"/>
+        <hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+        <hook file="playertweakdata.lua"        source_file="lib/tweak_data/playertweakdata"/>
+    </Hooks>
+</table>

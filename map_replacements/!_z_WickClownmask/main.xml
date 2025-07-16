@@ -1,0 +1,32 @@
+<table>
+    <Localization directory="Localization" default="english.txt">
+    </Localization>
+    <GlobalValue id="white" color="Color(1, 0.8, 0.4)"/>
+    
+    <Mask id="wick" unit="units/mods/masks/msk_wick/msk_wick" texture_bundle_folder="mods" global_value="white"/>
+	<Mask id="wick_clean" unit="units/mods/masks/msk_wick_clean/msk_wick_clean" texture_bundle_folder="mods" global_value="white"/>
+      
+    <AddFiles directory="assets">    
+	
+        <cooked_physics path="units/mods/masks/msk_wick/msk_wick"/>
+		<material_config path="units/mods/masks/msk_wick/msk_wick"/>
+		<model path="units/mods/masks/msk_wick/msk_wick"/>
+		<object path="units/mods/masks/msk_wick/msk_wick"/>
+		<unit path="units/mods/masks/msk_wick/msk_wick"/>
+		<texture path="units/mods/masks/msk_wick/wick_df"/>
+		<texture path="units/mods/masks/msk_wick/wick_nm"/>
+		
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/wick"/>   
+		
+		<cooked_physics path="units/mods/masks/msk_wick_clean/msk_wick_clean"/>
+		<material_config path="units/mods/masks/msk_wick_clean/msk_wick_clean"/>
+		<model path="units/mods/masks/msk_wick_clean/msk_wick_clean"/>
+		<object path="units/mods/masks/msk_wick_clean/msk_wick_clean"/>
+		<unit path="units/mods/masks/msk_wick_clean/msk_wick_clean"/>
+		<texture path="units/mods/masks/msk_wick_clean/wick_clean_df"/>
+		<texture path="units/mods/masks/msk_wick_clean/wick_clean_nm"/>
+		
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/wick_clean"/>   
+		
+    </AddFiles>
+</table>

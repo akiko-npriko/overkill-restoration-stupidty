@@ -1,0 +1,9 @@
+<table name="Neppu Tennouboshi Specter">
+    <Localization directory="loc" default="en.txt"/>
+<HeistMusic id="nt_specter" directory="music/nt_specter"> 
+    <event name="setup" start_source="stealth_intro.ogg" source="stealth.ogg"/>
+    <event name="anticipation" start_source="anticipation_intro.ogg" source="anticipation.ogg"/>
+    <event name="assault" start_source="transition.ogg" source="assault.ogg"/>
+	<event name="control" source="control.ogg"/>
+</HeistMusic>
+</table>

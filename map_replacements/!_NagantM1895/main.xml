@@ -1,0 +1,353 @@
+<table name="Nagant M1895" image="guis/m1895" color="Color(0.01,0.62,0.98)">
+	<Localization directory="Loc" default="english.txt"/>
+	<AssetUpdates id="19115" name="asset_updates" folder_name="Nagant M1895" version="1.15" provider="modworkshop"/>
+	<GlobalValue id="nagantm1895mod" color="Color(0.7, 0.2, 0.1)"/>
+	<WeaponMod id="wpn_fps_pis_m1895_barrel" based_on="wpn_fps_pis_peacemaker_b_standard" type="barrel" unit="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_pis_m1895_body" based_on="wpn_fps_pis_peacemaker_body_standard" type="lower_reciever" unit="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_body" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_pis_m1895_cylinder" based_on="wpn_fps_pis_peacemaker_m_standard" type="upper_reciever" unit="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder" drop="false" is_a_unlockable="false">
+		<stats reload="7"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_m1895_barrel_long" based_on="wpn_fps_pis_peacemaker_b_standard" type="barrel" unit="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats spread="2" recoil="1" concealment="-2"/>
+		<override/>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_m1895_body_blued" based_on="wpn_fps_pis_peacemaker_body_standard" type="lower_reciever" unit="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_body_blued" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats recoil="2"/>
+		<override>
+			<wpn_fps_pis_m1895_barrel unit="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel_blued"/>
+			<wpn_fps_upg_m1895_barrel_long unit="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long_blued"/>
+			<wpn_fps_pis_m1895_cylinder unit="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder_blued"/>
+		</override>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_m1895_body_gold" based_on="wpn_fps_pis_peacemaker_body_standard" type="lower_reciever" unit="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_body_gold" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats spread="1" recoil="1" concealment="-2"/>
+		<override>
+			<wpn_fps_pis_m1895_barrel unit="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel_gold"/>
+			<wpn_fps_upg_m1895_barrel_long unit="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long_gold"/>
+			<wpn_fps_pis_m1895_cylinder unit="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder_gold"/>
+		</override>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_m1895_body_polished" based_on="wpn_fps_pis_peacemaker_body_standard" type="lower_reciever" unit="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_body_polished" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats spread="1" concealment="-1"/>
+		<override>
+			<wpn_fps_pis_m1895_barrel unit="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel_polished"/>
+			<wpn_fps_upg_m1895_barrel_long unit="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long_polished"/>
+			<wpn_fps_pis_m1895_cylinder unit="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder_polished"/>
+		</override>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_m1895_body_worn" based_on="wpn_fps_pis_peacemaker_body_standard" type="lower_reciever" unit="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_body_worn" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats spread="-1" reload="1"/>
+		<override>
+			<wpn_fps_pis_m1895_barrel unit="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel_worn"/>
+			<wpn_fps_upg_m1895_barrel_long unit="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long_worn"/>
+			<wpn_fps_pis_m1895_cylinder unit="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder_worn"/>
+		</override>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_m1895_irons_radium" based_on="wpn_fps_smg_polymer_o_iron" type="sight" a_obj="a_b" unit="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_irons_radium" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats recoil="1" concealment="-1"/>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_m1895_supp_gemtech_gm9" based_on="wpn_fps_upg_ns_pis_medium" type="barrel_ext" parent="barrel" unit="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_supp_gemtech_gm9" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats damage="-2"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_m1895_supp_osprey" based_on="wpn_fps_upg_ns_pis_jungle" type="barrel_ext" parent="barrel" unit="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_supp_osprey" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats damage="-1" concealment="-4"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_m1895_supp_ro2" based_on="wpn_fps_upg_ns_pis_small" type="barrel_ext" parent="barrel" unit="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_supp_ro2" drop="false" texture_bundle_folder="mods" is_a_unlockable="true"/>
+	<Weapon unlock_level="35">
+		<weapon id="m1895" based_on="peacemaker" CLIP_AMMO_MAX="7" NR_CLIPS_MAX="10" weapon_hold="peacemaker" ammo_pickup="1" texture_bundle_folder="mods" global_value="nagantm1895mod">
+			<stats damage="120" spread="19" spread_moving="19" recoil="6" concealment="27" zoom="3"/>
+			<fire_mode_data fire_rate="0.1411764705882353"/>
+			<kick>
+				<standing>
+					<value_node value="2.4"/>
+					<value_node value="2.0"/>
+					<value_node value="-0.5"/>
+					<value_node value="0.5"/>
+				</standing>
+				<crouching>
+					<value_node value="2.4"/>
+					<value_node value="2.0"/>
+					<value_node value="-0.5"/>
+					<value_node value="0.5"/>
+				</crouching>
+				<steelsight>
+					<value_node value="2.2"/>
+					<value_node value="1.8"/>
+					<value_node value="-0.5"/>
+					<value_node value="0.5"/>
+				</steelsight>
+			</kick>
+			<sounds fire="m1895_fire"/>
+			<animations reload_name_id="peacemaker" reload_shell_by_shell="true"/>
+		</weapon>
+		<factory id="wpn_fps_pis_m1895" unit="units/mods/weapons/wpn_fps_pis_m1895/wpn_fps_pis_m1895">
+			<optional_types>
+				<value_node value="barrel_ext"/>
+				<value_node value="gadget"/>
+			</optional_types>
+			<default_blueprint>
+				<value_node value="wpn_fps_pis_m1895_barrel"/>
+				<value_node value="wpn_fps_pis_m1895_body"/>
+				<value_node value="wpn_fps_pis_m1895_cylinder"/>
+			</default_blueprint>
+			<adds/>
+			<override/>
+			<uses_parts>
+				<value_node value="wpn_fps_pis_m1895_barrel"/>
+				<value_node value="wpn_fps_pis_m1895_body"/>
+				<value_node value="wpn_fps_pis_m1895_cylinder"/>
+
+				<value_node value="wpn_fps_upg_m1895_barrel_long"/>
+				<value_node value="wpn_fps_upg_m1895_body_blued"/>
+				<value_node value="wpn_fps_upg_m1895_body_gold"/>
+				<value_node value="wpn_fps_upg_m1895_body_polished"/>
+				<value_node value="wpn_fps_upg_m1895_body_worn"/>
+				<value_node value="wpn_fps_upg_m1895_irons_radium"/>
+				<value_node value="wpn_fps_upg_m1895_supp_gemtech_gm9"/>
+				<value_node value="wpn_fps_upg_m1895_supp_osprey"/>
+				<value_node value="wpn_fps_upg_m1895_supp_ro2"/>
+			</uses_parts>
+		</factory>
+		<stance/>
+	</Weapon>
+	<Sounds directory="Assets\sounds">
+		<sound id="m1895_fire" path="m1895_regular.ogg" prefix="regular"/>
+		<sound id="m1895_fire" path="m1895_suppressed.ogg" prefix="suppressed_a"/>
+		<sound id="m1895_fire" path="m1895_suppressed.ogg" prefix="suppressed_b"/>
+		<sound id="m1895_fire" path="m1895_suppressed.ogg" prefix="suppressed_c"/>
+	</Sounds>
+	<AddFiles directory="Assets">
+		<texture path="units/mods/weapons/wpn_fps_pis_m1895_pts/bullet_df"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_m1895_pts/bullet_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_m1895_pts/gm9_df"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_m1895_pts/gm9_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_m1895_pts/green_il"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_m1895_pts/m1895_blued_df"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_m1895_pts/m1895_df"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_m1895_pts/m1895_gold_df"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_m1895_pts/m1895_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_m1895_pts/m1895_polished_df"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_m1895_pts/m1895_polished_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_m1895_pts/m1895_worn_df"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_m1895_pts/m1895_worn_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_m1895_pts/osprey_df"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_m1895_pts/osprey_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_m1895_pts/radium_sights_df"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_m1895_pts/radium_sights_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_m1895_pts/ro2_supp_df"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_m1895_pts/ro2_supp_nm"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_m1895/wpn_fps_pis_m1895"/>
+		<model path="units/mods/weapons/wpn_fps_pis_m1895/wpn_fps_pis_m1895"/>
+		<object path="units/mods/weapons/wpn_fps_pis_m1895/wpn_fps_pis_m1895"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_m1895/wpn_fps_pis_m1895"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_m1895/wpn_fps_pis_m1895_npc"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel"/>
+		<model path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel"/>
+		<object path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel_blued"/>
+		<model path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel_blued"/>
+		<object path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel_blued"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel_blued"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel_blued"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel_blued_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel_gold"/>
+		<model path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel_gold"/>
+		<object path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel_gold"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel_gold"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel_gold"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel_gold_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel_polished"/>
+		<model path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel_polished"/>
+		<object path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel_polished"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel_polished"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel_polished"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel_polished_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel_worn"/>
+		<model path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel_worn"/>
+		<object path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel_worn"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel_worn"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel_worn"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_barrel_worn_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_body"/>
+		<model path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_body"/>
+		<object path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_body"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_body_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder"/>
+		<model path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder"/>
+		<object path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder_blued"/>
+		<model path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder_blued"/>
+		<object path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder_blued"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder_blued"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder_blued"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder_blued_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder_gold"/>
+		<model path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder_gold"/>
+		<object path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder_gold"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder_gold"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder_gold"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder_gold_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder_polished"/>
+		<model path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder_polished"/>
+		<object path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder_polished"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder_polished"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder_polished"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder_polished_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder_worn"/>
+		<model path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder_worn"/>
+		<object path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder_worn"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder_worn"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder_worn"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_pis_m1895_cylinder_worn_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long"/>
+		<model path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long"/>
+		<object path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long_blued"/>
+		<model path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long_blued"/>
+		<object path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long_blued"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long_blued"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long_blued"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long_blued_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long_gold"/>
+		<model path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long_gold"/>
+		<object path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long_gold"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long_gold"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long_gold"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long_gold_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long_polished"/>
+		<model path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long_polished"/>
+		<object path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long_polished"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long_polished"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long_polished"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long_polished_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long_worn"/>
+		<model path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long_worn"/>
+		<object path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long_worn"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long_worn"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long_worn"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_barrel_long_worn_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_body_blued"/>
+		<model path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_body_blued"/>
+		<object path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_body_blued"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_body_blued"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_body_blued"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_body_blued_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_body_gold"/>
+		<model path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_body_gold"/>
+		<object path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_body_gold"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_body_gold"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_body_gold"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_body_gold_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_body_polished"/>
+		<model path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_body_polished"/>
+		<object path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_body_polished"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_body_polished"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_body_polished"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_body_polished_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_body_worn"/>
+		<model path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_body_worn"/>
+		<object path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_body_worn"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_body_worn"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_body_worn"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_body_worn_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_irons_radium"/>
+		<model path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_irons_radium"/>
+		<object path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_irons_radium"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_irons_radium"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_irons_radium"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_irons_radium_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_irons_radium_long"/>
+		<model path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_irons_radium_long"/>
+		<object path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_irons_radium_long"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_irons_radium_long"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_irons_radium_long"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_irons_radium_long_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_supp_gemtech_gm9"/>
+		<model path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_supp_gemtech_gm9"/>
+		<object path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_supp_gemtech_gm9"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_supp_gemtech_gm9"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_supp_gemtech_gm9"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_supp_gemtech_gm9_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_supp_osprey"/>
+		<model path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_supp_osprey"/>
+		<object path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_supp_osprey"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_supp_osprey"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_supp_osprey"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_supp_osprey_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_supp_ro2"/>
+		<model path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_supp_ro2"/>
+		<object path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_supp_ro2"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_supp_ro2"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_supp_ro2"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_m1895_pts/wpn_fps_upg_m1895_supp_ro2_thq"/>
+
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_m1895_barrel_long"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_m1895_body_blued"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_m1895_body_gold"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_m1895_body_polished"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_m1895_body_worn"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_m1895_irons_radium"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_m1895_supp_gemtech_gm9"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_m1895_supp_osprey"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_m1895_supp_ro2"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/m1895"/>
+		<texture path="guis/m1895"/>
+	</AddFiles>
+	<Hooks directory="Hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+	</Hooks>
+</table>

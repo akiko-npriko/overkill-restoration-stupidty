@@ -1,0 +1,21 @@
+<materials version="3" group="weapon_group">
+	<material name="mtr_gp25" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_ass_74_gl_gp25/gp25_df"/>
+		<bump_normal_texture file="units/pd2_dlc_sawp/weapons/wpn_fps_ass_groza_pts/gp25_nm"/>
+		<material_texture file="units/mods/weapons/wpn_fps_ass_74_gl_gp25/gp25_gsma"/>
+		<reflection_texture type="cube" global_texture="current_global_texture"/>
+	</material>
+    <material name="mtr_grenade" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/pd2_dlc_sawp/weapons/wpn_fps_ass_groza_pts/grenade_df"/>
+        <bump_normal_texture file="units/pd2_dlc_sawp/weapons/wpn_fps_ass_groza_pts/grenade_nm"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+    </material>
+		<material name="mtr_extra" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_ass_74_gl_gp25/gl25_body_df" mip="1" />
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_ass_74_gl_gp25/gl25_body_nm" mip="1" />
+	</material>
+		<material name="mtr_grip" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_ass_74_gl_gp25/gl25_body_df" mip="1" />
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_ass_74_gl_gp25/gl25_body_nm" mip="1" />
+	</material>
+</materials>

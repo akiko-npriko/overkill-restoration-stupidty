@@ -1,0 +1,22 @@
+<table name="zdoz1">
+
+    <Localization directory="Localization" default="english.txt">
+    </Localization>
+     
+    <GlobalValue id="zdoz1" color="Color(1, 0.5, 0)"/>
+     
+    <Mask id="zdoz1" unit="units/mods/masks/msk_zdoz1/msk_zdoz1" texture_bundle_folder="mods" global_value="zdoz1" type="helmet" />
+    
+    <AddFiles directory="assets">    
+        <cooked_physics path="units/mods/masks/msk_zdoz1/msk_zdoz1"/>
+        <model path="units/mods/masks/msk_zdoz1/msk_zdoz1"/>
+        <object path="units/mods/masks/msk_zdoz1/msk_zdoz1"/>
+        <unit path="units/mods/masks/msk_zdoz1/msk_zdoz1"/>
+        <material_config path="units/mods/masks/msk_zdoz1/msk_zdoz1"/>
+        
+        <texture path="units/mods/masks/msk_zdoz1/msk_zdoz1_df"/>
+        <texture path="units/mods/masks/msk_zdoz1/msk_zdoz1_nm"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/zdoz1"/>
+        
+    </AddFiles>
+</table>

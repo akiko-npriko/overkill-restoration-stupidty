@@ -1,0 +1,26 @@
+<materials version="3" group="pd3_mask_port">
+	
+    <material unique="true" render_template="solid_mask" name="MI_Clowninator_Mask" version="2">
+        <diffuse_texture file="units/mods/masks/msk_clowninator/clowninator_df"/>
+        <bump_normal_texture file="units/mods/masks/msk_clowninator/clowninator_nm"/>
+        <reflection_texture file="units/payday2/matcaps/matcap_plastic_df"/>
+        <material_texture file="units/payday2/masks/shared_textures/patterns/pattern_no_color_no_material_df"/>
+        <variable type="vector3" name="tint_color_a" value="0 0 0"/>
+        <variable type="vector3" name="tint_color_b" value="0 0 0"/>
+        <variable type="scalar" name="material_amount" value="1"/>
+    </material>
+
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" name="MI_Clownpunk_Eye" version="2">
+	<diffuse_texture file="units/mods/masks/msk_clowninator/clowninator_df" />
+	<bump_normal_texture file="units/mods/masks/msk_clowninator/clowninator_nm" />
+	<self_illumination_texture file="units/mods/masks/msk_clowninator/clowninator_il"/>
+	<variable type="scalar" name="il_bloom" value="1.4160003047436"/>
+	<variable type="scalar" name="il_multiplier" value="reddot"/>
+    </material>
+
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" name="MI_MaskInsert" version="2">
+	<diffuse_texture file="units/mods/masks/msk_strap_textures/msk_strap_df" />
+	<bump_normal_texture file="units/mods/masks/msk_strap_textures/msk_strap_nm" />
+    </material>
+	
+</materials>

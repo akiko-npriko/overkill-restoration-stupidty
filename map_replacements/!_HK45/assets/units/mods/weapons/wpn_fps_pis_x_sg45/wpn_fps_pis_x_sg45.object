@@ -1,0 +1,40 @@
+<dynamic_object>
+	<diesel orientation_object="rp_wpn_fps_pis_packrat" />	
+	<animations>
+		<animation_group name="reload">
+		  <object name="a_slide_reload" enabled="true" />
+		  <object name="a_mag_reload" enabled="true" />
+		  <object name="a_b_reload" enabled="true" />
+		</animation_group>		
+		<animation_group name="reload_not_empty">
+		  <object name="a_mag_reload_not_empty" enabled="true" />
+		</animation_group>			
+		<animation_group name="recoil">
+		  <object name="a_recoil" enabled="true" />
+		  <object name="a_b_recoil" enabled="true" />
+		  <object name="anim_bolt_recoil" enabled="true" />
+		</animation_group>
+		<animation_group name="last_recoil">
+		  <object name="a_last_recoil" enabled="true" />
+		  <object name="a_b_last_recoil" enabled="true" />
+		  <object name="anim_bolt_last_recoil" enabled="true" />
+		</animation_group>		
+		
+		
+		<!-- AKIMBO -->
+		<animation_group name="reload_right">
+			<object name="anim_bolt_reload_right" enabled="true" />
+			<object name="anim_m_reload" enabled="true" />
+		</animation_group>
+		<animation_group name="reload_left">
+			<object name="anim_bolt_reload_left" enabled="true" />
+			<object name="anim_m_reload_left" enabled="true" />
+		</animation_group>
+		<animation_group name="reload_not_empty_right">
+			<object name="anim_m_reload_not_empty" enabled="true" />
+        </animation_group>
+		<animation_group name="reload_not_empty_left">
+			<object name="anim_m_reload_not_empty_left" enabled="true" />
+        </animation_group>
+	</animations>
+</dynamic_object>

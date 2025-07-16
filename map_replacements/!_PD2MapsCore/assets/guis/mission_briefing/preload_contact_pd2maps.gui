@@ -1,0 +1,71 @@
+<gui>
+	<preload texture="guis/textures/pd2/mission_briefing/bain/bd_pattern"/>
+	<preload movie="movies/pd2m_briefing1"/>
+	<preload movie="movies/pd2m_briefing1_loop"/>
+	<preload movie="movies/pd2m_briefing2"/>
+	<panel name_s="panel"/>
+	
+	<script><![CDATA[
+        pattern = "guis/textures/pd2/mission_briefing/bain/bd_pattern"
+        function configure(t)
+            if( not t.empty ) then
+				local variable = math.random(2)
+                local function monitor_video_progress(o,done_cb)
+                    while alive(o) and o:loop_count() ~= 1 do
+                        local dt = coroutine.yield()
+                    end
+                    done_cb(o,o:parent())
+                end
+                
+                local function done_callback(o,parent)
+                    if variable == 2 then return end
+					panel:child("contact_image"):set_video("movies/pd2m_briefing"..tostring(variable).."_loop")
+                end
+                
+                
+                local wait_and_spawn_video = function(panel,checker_func)
+                    local seconds = 1
+                    local t = 0
+                    while t < seconds do
+                        local dt = coroutine.yield()
+                          if dt == 0 then
+                              dt = TimerManager:main():delta_time()
+                          end
+                      t = t + dt
+                    end
+                        --wait(1)
+                    local contact_image = panel:video( {
+                        name="contact_image",
+                        video = "movies/pd2m_briefing" .. tostring(variable),
+                        width = gui_width,
+                        height = gui_height,
+                        blend_mode="add",
+                        loop= variable and variable == 1 or true, alpha=0
+                    } )
+                    
+                    if checker_func then 
+                        contact_image:animate(checker_func,done_callback)
+                    end
+                    
+                    local f = function(p)
+                        contact_image:set_alpha(p)
+                    end
+                    
+                    seconds = 0.5
+                    t = 0
+                    while true do
+                        local dt = coroutine.yield()
+                        if dt == 0 then
+                            dt = TimerManager:main():delta_time()
+                        end
+                        t = t + dt
+                        if t >= seconds then break end
+                            f(t/seconds, t)
+                        end
+                    --over(0.5, function(p) contact_image:set_alpha(p) end )
+                    end
+                    panel:animate( wait_and_spawn_video, monitor_video_progress )
+            end
+        end
+	]]></script>
+</gui>

@@ -1,0 +1,32 @@
+<table name="Spiked Baseball Bat">
+
+    <Localization directory="loc" default="english.txt">
+	<loc file="english.txt" language="english"/>
+	</Localization>   
+    <GlobalValue id="iuhSpikeBaseballBat" color="Color(255, 215, 0)"/>
+      
+    <Melee id="iuhSpikeBaseballBatMelee" based_on="barbedwire" info_id="bm_melee_iuhSpikeBaseballBatMelee_info" expire_t = "1" repeat_expire_t = "0.5" melee_damage_delay = "0.1" anim_global_param="melee_sandsteel" melee_charge_shaker="player_melee_charge_wing" unit="units/mods/weapons/iuhSpikeBaseballBatMelee/iuhSpikeBaseballBatMelee" third_unit="units/mods/weapons/iuhSpikeBaseballBatMelee/iuhSpikeBaseballBatMelee_third" dlc="iuhSpikeBaseballBat" global_value="iuhSpikeBaseballBat">
+        <stats min_damage="7" max_damage="40" charge_time="3" min_damage_effect="1" max_damage_effect="1" range="280" remove_weapon_movement_penalty="true"/>
+        <sounds hit_air = "iuhSpikeBaseballBatMelee_hit" hit_gen = "iuhSpikeBaseballBatMelee_hit_object" hit_body = "iuhSpikeBaseballBatMelee_hit_flesh" charge="false"/>
+    </Melee>
+
+   
+    <AddFiles directory="assets">
+        <unit_mat path="units/mods/weapons/iuhSpikeBaseballBatMelee/iuhSpikeBaseballBatMelee"/>
+        <unit_mat path="units/mods/weapons/iuhSpikeBaseballBatMelee/iuhSpikeBaseballBatMelee_third"/>
+
+		<texture path="units/mods/weapons/iuhSpikeBaseballBatMelee/blade_df"/>
+		<texture path="units/mods/weapons/iuhSpikeBaseballBatMelee/blade_nm"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/melee_weapons/iuhSpikeBaseballBatMelee"/>
+    </AddFiles>
+
+    <Sounds directory="assets\sounds">
+		<sound id="iuhSpikeBaseballBatMelee_hit"           path="iuhSpikeBaseballBatMelee_hit.ogg" prefix="first"/>
+        <sound id="iuhSpikeBaseballBatMelee_hit_flesh"     path="iuhSpikeBaseballBatMelee_hit_flesh.ogg" prefix="first"/>
+        <sound id="iuhSpikeBaseballBatMelee_hit_object"    path="iuhSpikeBaseballBatMelee_hit_object.ogg" prefix="first"/>
+	</Sounds>
+
+</table>
+
+<!--melee_agave-->
+<!--melee_machete-->
