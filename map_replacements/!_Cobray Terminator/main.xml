@@ -1,0 +1,131 @@
+<table name="Cobray Terminator" color="Color(0.8, 0.2, 0.8)">
+
+	<Localization directory="locals" default="english.txt"/>
+	
+	<AssetUpdates id="36834" version="1.0" provider="modworkshop"/>
+	
+	<GlobalValue id="terminator_global" color="Color(0.5, 0, 0)"/>
+
+	<WeaponMod id="wpn_fps_sho_terminator_frame_std" based_on="wpn_fps_shot_huntsman_body_standard" type="lower_reciever" weapon_rename_overwrite="bm_w_terminator" unit="units/mods/weapons/wpn_fps_sho_terminator_pts/wpn_fps_sho_terminator_frame_std" texture_bundle_folder="mods" drop="false" is_a_unlockable="false">
+		<animations magazine_empty="recoil" fire="recoil" fire_steelsight="recoil" reload="reload"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_sho_terminator_stock_std" based_on="wpn_fps_shot_huntsman_body_standard" type="stock" unit="units/mods/weapons/wpn_fps_sho_terminator_pts/wpn_fps_sho_terminator_stock_std" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
+	
+	<WeaponMod id="wpn_fps_sho_terminator_barrel_std" based_on="wpn_fps_shot_huntsman_body_standard" type="barrel" unit="units/mods/weapons/wpn_fps_sho_terminator_pts/wpn_fps_sho_terminator_barrel_std" texture_bundle_folder="mods" drop="false" is_a_unlockable="false">
+			<animations magazine_empty="recoil" fire="recoil" fire_steelsight="recoil" reload="reload"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_sho_terminator_grip_std" based_on="wpn_fps_shot_huntsman_body_standard" type="grip" unit="units/mods/weapons/wpn_fps_sho_terminator_pts/wpn_fps_sho_terminator_grip_std" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
+		
+	<WeaponMod id="wpn_fps_sho_terminator_trigger_std" based_on="wpn_fps_shot_huntsman_body_standard" type="trigger" unit="units/mods/weapons/wpn_fps_sho_terminator_pts/wpn_fps_sho_terminator_trigger_std" texture_bundle_folder="mods" drop="false" is_a_unlockable="false">
+			<animations magazine_empty="recoil" fire="recoil" fire_steelsight="recoil" reload="reload"/>
+	</WeaponMod>
+	
+	<Weapon unlock_level="1">
+		<weapon id="terminator" based_on="coach" weapon_hold="terminator" CLIP_AMMO_MAX="1" NR_CLIPS_MAX="20" CAN_TOGGLE_FIREMODE="false" texture_bundle_folder="mods" shell_ejection="effects/payday2/particles/weapons/shells/shell_empty" muzzleflash="effects/payday2/particles/weapons/shells/shell_empty" rays="0" global_value="terminator_global">
+			<stats damage="160" recoil="25" concealment="15"/>
+			<timers reload_not_empty="3" reload_empty="3" unequip="0.85" equip="0.70"/>
+			<fire_mode_data fire_rate="1"/>
+			<use_data selection_index="2"/>
+			<use_data align_place="right_hand"/>
+			<sounds fire="terminator_fire" fire_single="terminator_fire" use_fix="true">
+				<reload wp_scorpion_clip_slide_out="wp_terminator_shell_out" wp_scorpion_clip_slide_in="wp_terminator_shell_insert" wp_scorpion_clip_in_contact="wp_terminator_shell_locked" wp_scorpion_lever_pull="wp_terminator_barrel_push"/>
+			</sounds>
+			<animations reload_name_id="terminator" recoil_steelsight="true">
+			</animations>
+		</weapon>
+
+		<factory id="wpn_fps_sho_terminator" unit="units/mods/weapons/wpn_fps_sho_terminator/wpn_fps_sho_terminator">
+			
+			<animations magazine_empty="recoil" fire="recoil" fire_steelsight="recoil" reload="reload" reload_not_empty="reload_not_empty"/>
+			
+			<adds/>
+			
+			<override/>
+			
+			<default_blueprint>
+			
+				<value_node value="wpn_fps_sho_terminator_frame_std"/>
+				<value_node value="wpn_fps_sho_terminator_stock_std"/>
+				<value_node value="wpn_fps_sho_terminator_barrel_std"/>
+				<value_node value="wpn_fps_sho_terminator_grip_std"/>
+				<value_node value="wpn_fps_sho_terminator_trigger_std"/>
+				
+			</default_blueprint>
+
+			<uses_parts>
+			
+				<value_node value="wpn_fps_sho_terminator_frame_std"/>
+				<value_node value="wpn_fps_sho_terminator_stock_std"/>
+				<value_node value="wpn_fps_sho_terminator_barrel_std"/>
+				<value_node value="wpn_fps_sho_terminator_grip_std"/>
+				<value_node value="wpn_fps_sho_terminator_trigger_std"/>
+				
+			</uses_parts>
+		</factory>
+		<stance>
+			<steelsight>
+				<shoulders rotation="-0.00261799 -9.13851e-007 -0.000349065 -0.999996" translation="-10.52 -2 6.8"/>
+			</steelsight>
+			<standard>
+				<shoulders rotation="0 -0 0 -1" translation="-0.43 2.784 -0.21"/>
+			</standard>
+			<crouched>
+				<shoulders rotation="0 -0 0 -1" translation="-1.43 -0.216 -0.21"/>
+			</crouched>
+		</stance>
+
+	</Weapon>
+	
+	<Sounds directory="assets\sounds">
+		<sound id="terminator_fire_1" path="terminator_fire_1.ogg" />
+		<sound id="terminator_fire_2" path="terminator_fire_2.ogg" />
+		<sound id="wp_terminator_barrel_push" path="wp_terminator_barrel_push.ogg" prefix="first"/>
+		<sound id="wp_terminator_shell_insert" path="wp_terminator_shell_insert.ogg" prefix="first"/>
+		<sound id="wp_terminator_shell_locked" path="wp_terminator_shell_locked.ogg" prefix="first"/>
+		<sound id="wp_terminator_shell_out" path="wp_terminator_shell_out.ogg" prefix="first"/>
+		
+		<random id="terminator_fire">
+			<sound id="terminator_fire_1" prefix="first"/>
+			<sound id="terminator_fire_2" prefix="first"/>
+		</random>
+	</Sounds>
+		
+	<AddFiles directory="assets">
+	
+		<animation path="anims/fps/terminator/terminator_reload" load="true"/>
+		<animation path="anims/fps/terminator/terminator_reload_not_empty" load="true"/>
+		<animation path="anims/fps/terminator/terminator_recoil" load="true"/>
+	
+		<cooked_physics  path="units/mods/weapons/wpn_fps_sho_terminator/wpn_fps_sho_terminator"/>
+		<model           path="units/mods/weapons/wpn_fps_sho_terminator/wpn_fps_sho_terminator"/>
+		<object          path="units/mods/weapons/wpn_fps_sho_terminator/wpn_fps_sho_terminator"/>
+		<unit            path="units/mods/weapons/wpn_fps_sho_terminator/wpn_fps_sho_terminator"/>
+		<unit            path="units/mods/weapons/wpn_fps_sho_terminator/wpn_fps_sho_terminator_npc"/>
+		
+		<df_nm         path="units/mods/weapons/wpn_fps_sho_terminator_pts/terminator_std"/>
+		<texture 	   path="units/mods/weapons/wpn_fps_sho_terminator_pts/slug_dent_df"/>
+		
+		<material_config path="units/mods/weapons/wpn_fps_sho_terminator_pts/terminator_std"/>
+		
+		<unit_obj path="units/mods/weapons/wpn_fps_sho_terminator_pts/wpn_fps_sho_terminator_frame_std"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_sho_terminator_pts/wpn_fps_sho_terminator_stock_std"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_sho_terminator_pts/wpn_fps_sho_terminator_barrel_std"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_sho_terminator_pts/wpn_fps_sho_terminator_grip_std"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_sho_terminator_pts/wpn_fps_sho_terminator_trigger_std"/>
+		
+		<material_config path="units/mods/weapons/wpn_fps_sho_terminator_pts/wpn_fps_sho_terminator_frame_std_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_terminator_pts/wpn_fps_sho_terminator_stock_std_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_terminator_pts/wpn_fps_sho_terminator_barrel_std_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_terminator_pts/wpn_fps_sho_terminator_grip_std_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_terminator_pts/wpn_fps_sho_terminator_trigger_std_thq"/>
+		
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/terminator"/>
+	</AddFiles>
+	
+	<Hooks directory="hooks">
+			<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/> 
+	</Hooks>
+	
+</table>

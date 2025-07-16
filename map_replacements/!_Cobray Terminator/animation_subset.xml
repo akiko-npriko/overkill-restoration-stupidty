@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+		
+		<target mode="attach">
+			<anim name="terminator_reload" 								file="anims/fps/terminator/terminator_reload" blend_set="all"/>
+			<anim name="terminator_reload_not_empty" 					file="anims/fps/terminator/terminator_reload_not_empty" blend_set="all"/>
+			<anim name="terminator_recoil" 								file="anims/fps/terminator/terminator_recoil" blend_set="all"/>
+			<anim name="terminator_recoil_steelsight" 					file="anims/fps/terminator/terminator_recoil" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

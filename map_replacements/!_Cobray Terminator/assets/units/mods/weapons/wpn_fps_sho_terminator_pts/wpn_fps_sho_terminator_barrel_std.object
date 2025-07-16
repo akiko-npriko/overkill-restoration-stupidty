@@ -1,0 +1,20 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_sho_terminator_pts/terminator_std" orientation_object="rp_wpn_fps_sho_terminator" />
+    <animations>
+		<animation_group name="recoil" >
+			<object name="anim_barrel_recoil" enabled="true" />
+			<object name="anim_barrellock_recoil" enabled="true" />
+		</animation_group>
+		<animation_group name="reload" >
+			<object name="anim_barrel_reload" enabled="true" />
+			<object name="anim_barrellock_reload" enabled="true" />
+			<object name="anim_shell_reload" enabled="true" />
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_barrel" enabled="true" />
+		<object name="g_barrellock" enabled="true" />
+		<object name="g_shell" enabled="true" />
+		<object name="g_shell_fired" enabled="false" />
+	</graphics>
+</dynamic_object>
