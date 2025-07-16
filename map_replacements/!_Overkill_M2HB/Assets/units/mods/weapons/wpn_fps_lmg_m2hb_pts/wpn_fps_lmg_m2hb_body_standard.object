@@ -1,0 +1,19 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_lmg_m2hb_pts/wpn_fps_lmg_m2hb_body_standard" orientation_object="rp_wpn_fps_lmg_svinet_body_standard" />
+	
+	<animations>
+		<animation_group name="reload">
+		  <object name="a_reload" enabled="true" />
+		</animation_group>
+		
+		<animation_group name="reload_not_empty">
+		  <object name="a_reload_not_empty" enabled="true" />
+		</animation_group>		
+	</animations>
+	
+	<graphics>
+		<object name="g_body" enabled="false" />
+		<object name="g_bolt" enabled="true" />
+	</graphics>
+	
+</dynamic_object>
