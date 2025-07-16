@@ -1,0 +1,58 @@
+<table name="PD3 Hox Outfit" image="guis/dlcs/pdhox/textures/pd2/blackmarket/icons/player_styles/pdhox">
+	<Localization directory="localization" default="english.json"/>
+
+	<GlobalValue id="pdhox_mod" color="Color(0.27, 0.4, 0.24)"/>
+	
+	
+	
+	<PlayerStyle id="pdhox" unit="units/pdhox/skins/fps_pdhox/fps_pdhox" third_unit="units/pdhox/skins/pdhox_male_average/pdhox_male_average" exclude_glove_adapter="false" default_gloves="heist_default" texture_bundle_folder="pdhox" global_value="pdhox_mod">
+		<third_body_replacement	head="false" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="true"/>
+		<body_replacement		head="false" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="true"/>
+
+		<characters>
+			<dallas		third_unit="units/pdhox/skins/pdhox_male_average/pdhox_male_average"/>
+			<dragon		third_unit="units/pdhox/skins/pdhox_male_average/pdhox_male_average"/>
+			<dragan		third_unit="units/pdhox/skins/pdhox_male_average/pdhox_male_average"/>
+			<old_hoxton	third_unit="units/pdhox/skins/pdhox_male_average/pdhox_male_average"/>			
+			<hoxton		third_unit="units/pdhox/skins/pdhox_male_average/pdhox_male_average"/>			
+			<wolf		third_unit="units/pdhox/skins/pdhox_male_average/pdhox_male_average"/>			
+			<max		third_unit="units/pdhox/skins/pdhox_male_average/pdhox_male_average"/>
+			<wild		third_unit="units/pdhox/skins/pdhox_male_average/pdhox_male_average"/>
+			<jacket		third_unit="units/pdhox/skins/pdhox_male_average/pdhox_male_average"/>
+			<jowi		third_unit="units/pdhox/skins/pdhox_male_average/pdhox_male_average"/>
+			<chico		third_unit="units/pdhox/skins/pdhox_male_average/pdhox_male_average"/>
+			<jimmy		third_unit="units/pdhox/skins/pdhox_male_average/pdhox_male_average"/>
+			<sokol		third_unit="units/pdhox/skins/pdhox_male_average/pdhox_male_average"/>
+			<bodhi		third_unit="units/pdhox/skins/pdhox_male_average/pdhox_male_average"/>
+			<chains		third_unit="units/pdhox/skins/pdhox_male_average/pdhox_male_average"/>
+			<myh		third_unit="units/pdhox/skins/pdhox_male_average/pdhox_male_average"/>
+			<ecp_male	third_unit="units/pdhox/skins/pdhox_male_fat/pdhox_male_fat"/>	
+			
+			<female_1	third_unit="units/pdhox/skins/pdhox_female_average/pdhox_female_average" />
+			<sydney		third_unit="units/pdhox/skins/pdhox_female_average/pdhox_female_average"/>
+			<ecp_female	third_unit="units/pdhox/skins/pdhox_female_average/pdhox_female_average"/>
+			<joy		third_unit="units/pdhox/skins/pdhox_female_average/pdhox_female_average"/>	
+			<bonnie		third_unit="units/pdhox/skins/pdhox_female_fat/pdhox_female_fat"/>				
+		</characters>
+	</PlayerStyle>
+
+    <AddFiles directory="assets">
+		<!--GUI-->
+    	<texture path="guis/dlcs/pdhox/textures/pd2/blackmarket/icons/player_styles/pdhox"/>	
+		<texture path="guis/dlcs/pdhox/textures/pd2/blackmarket/icons/player_styles/pdhox_default"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/player_styles/pdhox_lmg"/>
+		
+		<!--TEXTURES-->
+		<df_nm_gsma path="units/pdhox/skins/textures/acc"/>
+		<df_nm_gsma path="units/pdhox/skins/textures/lower"/>
+		<df_nm_gsma path="units/pdhox/skins/textures/top"/>
+
+		<!--BODY SHAPES-->
+		<unit_mat path="units/pdhox/skins/pdhox_male_average/pdhox_male_average"/>
+		<unit_mat path="units/pdhox/skins/pdhox_male_fat/pdhox_male_fat"/>
+		<unit_mat path="units/pdhox/skins/pdhox_female_fat/pdhox_female_fat"/>
+		<unit_mat path="units/pdhox/skins/pdhox_female_average/pdhox_female_average"/>
+		<!--FPS-->
+		<unit_mat path="units/pdhox/skins/fps_pdhox/fps_pdhox"/> 
+	</AddFiles>
+</table>

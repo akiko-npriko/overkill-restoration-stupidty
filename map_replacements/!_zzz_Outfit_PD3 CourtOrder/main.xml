@@ -1,0 +1,53 @@
+<table name="PAYDAY 3 The Striker Outfit" image="guis/dlcs/pd3court/textures/pd2/blackmarket/icons/player_styles/pd3court">
+	<Localization directory="localization" default="english.json"/>
+
+	<GlobalValue id="pd3drip" color="Color(0.27, 0.4, 0.24)"/>
+	
+	<PlayerStyle id="pd3court" unit="units/pd3court/skins/fps_pd3court/fps_pd3court" third_unit="units/pd3court/skins/pd3court_male_average/pd3court_male_average" exclude_glove_adapter="false" default_gloves="heist_default" texture_bundle_folder="pd3court" global_value="pd3drip">
+		<third_body_replacement	head="false" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="true"/>
+		<body_replacement		head="false" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="true"/>
+
+		<characters>
+			<dallas		third_unit="units/pd3court/skins/pd3court_male_average/pd3court_male_average"/>
+			<dragon		third_unit="units/pd3court/skins/pd3court_male_average/pd3court_male_average"/>
+			<dragan		third_unit="units/pd3court/skins/pd3court_male_average/pd3court_male_average"/>
+			<old_hoxton	third_unit="units/pd3court/skins/pd3court_male_average/pd3court_male_average"/>			
+			<hoxton		third_unit="units/pd3court/skins/pd3court_male_average/pd3court_male_average"/>			
+			<wolf		third_unit="units/pd3court/skins/pd3court_male_average/pd3court_male_average"/>			
+			<max		third_unit="units/pd3court/skins/pd3court_male_average/pd3court_male_average"/>
+			<wild		third_unit="units/pd3court/skins/pd3court_male_average/pd3court_male_average"/>
+			<jacket		third_unit="units/pd3court/skins/pd3court_male_average/pd3court_male_average"/>
+			<jowi		third_unit="units/pd3court/skins/pd3court_male_average/pd3court_male_average"/>
+			<chico		third_unit="units/pd3court/skins/pd3court_male_average/pd3court_male_average"/>
+			<jimmy		third_unit="units/pd3court/skins/pd3court_male_average/pd3court_male_average"/>
+			<sokol		third_unit="units/pd3court/skins/pd3court_male_average/pd3court_male_average"/>
+			<bodhi		third_unit="units/pd3court/skins/pd3court_male_average/pd3court_male_average"/>
+			<chains		third_unit="units/pd3court/skins/pd3court_male_average/pd3court_male_average"/>
+			<myh		third_unit="units/pd3court/skins/pd3court_male_average/pd3court_male_average"/>
+			<ecp_male	third_unit="units/pd3court/skins/pd3court_male_fat/pd3court_male_fat"/>	
+			
+			<female_1	third_unit="units/pd3court/skins/pd3court_female_average/pd3court_female_average" />
+			<sydney		third_unit="units/pd3court/skins/pd3court_female_average/pd3court_female_average"/>
+			<ecp_female	third_unit="units/pd3court/skins/pd3court_female_average/pd3court_female_average"/>
+			<joy		third_unit="units/pd3court/skins/pd3court_female_average/pd3court_female_average"/>	
+			<bonnie		third_unit="units/pd3court/skins/pd3court_female_fat/pd3court_female_fat"/>				
+		</characters>
+	</PlayerStyle>
+
+    <AddFiles directory="assets">
+		<!--GUI-->
+    	<texture path="guis/dlcs/pd3court/textures/pd2/blackmarket/icons/player_styles/pd3court"/>	
+		
+		<!--TEXTURES-->
+		<df_nm_gsma path="units/pd3court/skins/textures/acc"/>
+		<df_nm_gsma path="units/pd3court/skins/textures/upper"/>
+		<df_nm_gsma path="units/pd3court/skins/textures/lower"/>
+		<!--BODY SHAPES-->
+		<unit_mat path="units/pd3court/skins/pd3court_male_average/pd3court_male_average"/>
+		<unit_mat path="units/pd3court/skins/pd3court_male_fat/pd3court_male_fat"/>
+		<unit_mat path="units/pd3court/skins/pd3court_female_fat/pd3court_female_fat"/>
+		<unit_mat path="units/pd3court/skins/pd3court_female_average/pd3court_female_average"/>
+		<!--FPS-->
+		<unit_mat path="units/pd3court/skins/fps_pd3court/fps_pd3court"/> 
+	</AddFiles>
+</table>

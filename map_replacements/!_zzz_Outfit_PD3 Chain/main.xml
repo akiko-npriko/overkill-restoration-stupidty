@@ -1,0 +1,68 @@
+<table name="PD3 Chains Outfit" image="guis/dlcs/pdcha/textures/pd2/blackmarket/icons/player_styles/pdcha">
+	<Localization directory="localization" default="english.json"/>
+<!--Made by Hedy and Dorpunka-->
+	<GlobalValue id="pdcha_mod" color="Color(0.27, 0.4, 0.24)"/>
+	
+	
+	
+	<PlayerStyle id="pdcha" unit="units/pdcha/skins/fps_pdcha/fps_maleavg" third_unit="units/pdcha/skins/pdcha_male_average/pdcha_male_average" exclude_glove_adapter="true" default_gloves="heist_default" texture_bundle_folder="pdcha" global_value="pdcha_mod">
+		<third_body_replacement	head="false" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="true"/>
+		<body_replacement		head="false" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="true"/>
+
+		<characters>
+			<!--AVERAGE BOIS-->
+			<dragan		unit="units/pdcha/skins/fps_pdcha/fps_maleavg" third_unit="units/pdcha/skins/pdcha_male_average/pdcha_male_average"/>
+			<old_hoxton	unit="units/pdcha/skins/fps_pdcha/fps_maleavg" third_unit="units/pdcha/skins/pdcha_male_average/pdcha_male_average"/>			
+			<jacket		unit="units/pdcha/skins/fps_pdcha/fps_maleavg" third_unit="units/pdcha/skins/pdcha_male_average/pdcha_male_average"/>
+			<jowi		unit="units/pdcha/skins/fps_pdcha/fps_maleavg" third_unit="units/pdcha/skins/pdcha_male_average/pdcha_male_average"/>
+			<wild		unit="units/pdcha/skins/fps_pdcha/fps_maleavg" third_unit="units/pdcha/skins/pdcha_male_average/pdcha_male_average"/>
+			<jimmy		unit="units/pdcha/skins/fps_pdcha/fps_maleavg" third_unit="units/pdcha/skins/pdcha_male_average/pdcha_male_average"/>
+			<sokol		unit="units/pdcha/skins/fps_pdcha/fps_maleavg" third_unit="units/pdcha/skins/pdcha_male_average/pdcha_male_average"/>
+			<myh		unit="units/pdcha/skins/fps_pdcha/fps_maleavg" third_unit="units/pdcha/skins/pdcha_male_average/pdcha_male_average"/>
+			<bodhi		unit="units/pdcha/skins/fps_pdcha/fps_maleavg_bodhi" third_unit="units/pdcha/skins/pdcha_male_bodhi/pdcha_male_bodhi"/>
+			<!--BIG BOIS-->
+			<max		unit="units/pdcha/skins/fps_pdcha/fps_maleavg_sangres" third_unit="units/pdcha/skins/pdcha_male_sangres/pdcha_male_sangres"/>
+			<chains		unit="units/pdcha/skins/fps_pdcha/fps_maleavg_chains" third_unit="units/pdcha/skins/pdcha_male_chains/pdcha_male_chains"/>
+			<!--YELLOW BOIS-->
+			<chico		unit="units/pdcha/skins/fps_pdcha/fps_maleavg02" third_unit="units/pdcha/skins/pdcha_male_average02/pdcha_male_average02"/>
+			<dragon		unit="units/pdcha/skins/fps_pdcha/fps_maleavg02" third_unit="units/pdcha/skins/pdcha_male_average02/pdcha_male_average02"/>
+			<!--FAT BOIS-->
+			<bonnie		unit="units/pdcha/skins/fps_pdcha/fps_female" third_unit="units/pdcha/skins/pdcha_female_fat/pdcha_female_fat"/>
+			<ecp_male	unit="units/pdcha/skins/fps_pdcha/fps_maleavg" third_unit="units/pdcha/skins/pdcha_male_fat/pdcha_male_fat"/>		
+			<!--FEMALE BOIS-->
+			<female_1	unit="units/pdcha/skins/fps_pdcha/fps_female" third_unit="units/pdcha/skins/pdcha_female_average/pdcha_female_average" />
+			<ecp_female	unit="units/pdcha/skins/fps_pdcha/fps_female" third_unit="units/pdcha/skins/pdcha_female_average/pdcha_female_average"/>
+			<sydney		unit="units/pdcha/skins/fps_pdcha/fps_female_sydney" third_unit="units/pdcha/skins/pdcha_female_sydney/pdcha_female_sydney"/>
+			<joy		unit="units/pdcha/skins/fps_pdcha/fps_female_joy" third_unit="units/pdcha/skins/pdcha_female_joy/pdcha_female_joy"/>	
+		</characters>
+	</PlayerStyle>
+
+    <AddFiles directory="assets">
+		<!--GUI-->
+    	<texture path="guis/dlcs/pdcha/textures/pd2/blackmarket/icons/player_styles/pdcha"/>
+		<!--TEXTURES-->
+		<df_nm_gsma path="units/pdcha/skins/textures/acc"/>
+		<df_nm_gsma path="units/pdcha/skins/textures/lower"/>
+		<df_nm_gsma path="units/pdcha/skins/textures/top"/>
+		<!--BODY SHAPES-->
+		<unit_mat path="units/pdcha/skins/pdcha_male_average/pdcha_male_average"/>
+		<unit_mat path="units/pdcha/skins/pdcha_male_average02/pdcha_male_average02"/>
+		<unit_mat path="units/pdcha/skins/pdcha_male_sangres/pdcha_male_sangres"/>
+		<unit_mat path="units/pdcha/skins/pdcha_male_chains/pdcha_male_chains"/>
+		<unit_mat path="units/pdcha/skins/pdcha_male_bodhi/pdcha_male_bodhi"/>
+		<unit_mat path="units/pdcha/skins/pdcha_male_fat/pdcha_male_fat"/>
+		<unit_mat path="units/pdcha/skins/pdcha_female_fat/pdcha_female_fat"/>
+		<unit_mat path="units/pdcha/skins/pdcha_female_average/pdcha_female_average"/>
+		<unit_mat path="units/pdcha/skins/pdcha_female_sydney/pdcha_female_sydney"/>
+		<unit_mat path="units/pdcha/skins/pdcha_female_joy/pdcha_female_joy"/>
+		<!--FPS-->
+		<unit_mat path="units/pdcha/skins/fps_pdcha/fps_maleavg"/> 
+		<unit_mat path="units/pdcha/skins/fps_pdcha/fps_maleavg02"/> 
+		<unit_mat path="units/pdcha/skins/fps_pdcha/fps_maleavg_bodhi"/> 
+		<unit_mat path="units/pdcha/skins/fps_pdcha/fps_maleavg_chains"/> 
+		<unit_mat path="units/pdcha/skins/fps_pdcha/fps_maleavg_sangres"/> 
+		<unit_mat path="units/pdcha/skins/fps_pdcha/fps_female"/> 
+		<unit_mat path="units/pdcha/skins/fps_pdcha/fps_female_joy"/> 
+		<unit_mat path="units/pdcha/skins/fps_pdcha/fps_female_sydney"/> 
+	</AddFiles>
+</table>

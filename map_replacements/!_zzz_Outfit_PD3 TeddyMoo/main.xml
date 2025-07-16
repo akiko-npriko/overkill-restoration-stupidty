@@ -1,0 +1,64 @@
+<table name="PAYDAY 3 Teddymoo Outfit and Mask Bundle" image="guis/dlcs/pd3teddy/textures/pd2/blackmarket/icons/player_styles/pd3teddy">
+	<Localization directory="localization" default="english.json"/>
+
+	<GlobalValue id="pd3drip" color="Color(0.27, 0.4, 0.24)"/>
+	
+	<Mask id="pd3_teddymoo" unit="units/mods/masks/msk_teddymoo/msk_teddymoo" global_value="pd3drip" skip_mask_on_sequence="false"/>
+	
+	<PlayerStyle id="pd3teddy" unit="units/pd3teddy/skins/fps_pd3teddy/fps_pd3teddy" third_unit="units/pd3teddy/skins/pd3teddy_male_average/pd3teddy_male_average" exclude_glove_adapter="false" default_gloves="heist_default" texture_bundle_folder="pd3teddy" global_value="pd3drip">
+		<third_body_replacement	head="false" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="true"/>
+		<body_replacement		head="false" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="true"/>
+
+		<characters>
+			<dallas		third_unit="units/pd3teddy/skins/pd3teddy_male_average/pd3teddy_male_average"/>
+			<dragon		third_unit="units/pd3teddy/skins/pd3teddy_male_average/pd3teddy_male_average"/>
+			<dragan		third_unit="units/pd3teddy/skins/pd3teddy_male_average/pd3teddy_male_average"/>
+			<old_hoxton	third_unit="units/pd3teddy/skins/pd3teddy_male_average/pd3teddy_male_average"/>			
+			<hoxton		third_unit="units/pd3teddy/skins/pd3teddy_male_average/pd3teddy_male_average"/>			
+			<wolf		third_unit="units/pd3teddy/skins/pd3teddy_male_average/pd3teddy_male_average"/>			
+			<max		third_unit="units/pd3teddy/skins/pd3teddy_male_average/pd3teddy_male_average"/>
+			<wild		third_unit="units/pd3teddy/skins/pd3teddy_male_average/pd3teddy_male_average"/>
+			<jacket		third_unit="units/pd3teddy/skins/pd3teddy_male_average/pd3teddy_male_average"/>
+			<jowi		third_unit="units/pd3teddy/skins/pd3teddy_male_average/pd3teddy_male_average"/>
+			<chico		third_unit="units/pd3teddy/skins/pd3teddy_male_average/pd3teddy_male_average"/>
+			<jimmy		third_unit="units/pd3teddy/skins/pd3teddy_male_average/pd3teddy_male_average"/>
+			<sokol		third_unit="units/pd3teddy/skins/pd3teddy_male_average/pd3teddy_male_average"/>
+			<bodhi		third_unit="units/pd3teddy/skins/pd3teddy_male_average/pd3teddy_male_average"/>
+			<chains		third_unit="units/pd3teddy/skins/pd3teddy_male_average/pd3teddy_male_average"/>
+			<myh		third_unit="units/pd3teddy/skins/pd3teddy_male_average/pd3teddy_male_average"/>
+			<ecp_male	third_unit="units/pd3teddy/skins/pd3teddy_male_fat/pd3teddy_male_fat"/>	
+			
+			<female_1	third_unit="units/pd3teddy/skins/pd3teddy_female_average/pd3teddy_female_average" />
+			<sydney		third_unit="units/pd3teddy/skins/pd3teddy_female_average/pd3teddy_female_average"/>
+			<ecp_female	third_unit="units/pd3teddy/skins/pd3teddy_female_average/pd3teddy_female_average"/>
+			<joy		third_unit="units/pd3teddy/skins/pd3teddy_female_average/pd3teddy_female_average"/>	
+			<bonnie		third_unit="units/pd3teddy/skins/pd3teddy_female_fat/pd3teddy_female_fat"/>				
+		</characters>
+	</PlayerStyle>
+
+    <AddFiles directory="assets">
+		<!--GUI-->
+    	<texture path="guis/dlcs/pd3teddy/textures/pd2/blackmarket/icons/player_styles/pd3teddy"/>	
+		
+		<!--TEXTURES-->
+		<df_nm_gsma path="units/pd3teddy/skins/textures/acc"/>
+		<df_nm_gsma path="units/pd3teddy/skins/textures/upper"/>
+		<df_nm_gsma path="units/pd3teddy/skins/textures/lower"/>
+
+		<!--BODY SHAPES-->
+		<unit_mat path="units/pd3teddy/skins/pd3teddy_male_average/pd3teddy_male_average"/>
+		<unit_mat path="units/pd3teddy/skins/pd3teddy_male_fat/pd3teddy_male_fat"/>
+		<unit_mat path="units/pd3teddy/skins/pd3teddy_female_fat/pd3teddy_female_fat"/>
+		<unit_mat path="units/pd3teddy/skins/pd3teddy_female_average/pd3teddy_female_average"/>
+		<!--FPS-->
+		<unit_mat path="units/pd3teddy/skins/fps_pd3teddy/fps_pd3teddy"/> 
+		
+		<!--MASK-->
+		
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/pd3_teddymoo"/>
+		
+		<df_nm path="units/mods/masks/msk_teddymoo/mask"/>
+        <unit_mat path="units/mods/masks/msk_teddymoo/msk_teddymoo"/>
+		
+	</AddFiles>
+</table>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<materials version="3" group="AAHHHHHHHHHHHHHHHH">
+	<material name="mtr_suit_lower" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/pdcha/skins/textures/lower_df"/>
+		<material_texture file="units/pdcha/skins/textures/lower_gsma"/>
+		<bump_normal_texture file="units/pdcha/skins/textures/lower_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_suit_top" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/pdcha/skins/textures/top_df"/>
+		<material_texture file="units/pdcha/skins/textures/top_gsma"/>
+		<bump_normal_texture file="units/pdcha/skins/textures/top_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_acc" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/pdcha/skins/textures/acc_df"/>
+		<material_texture file="units/pdcha/skins/textures/acc_gsma"/>
+		<bump_normal_texture file="units/pdcha/skins/textures/acc_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_arms" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<bump_normal_texture file="units/pd2_dlc_sus/characters/sus_npc_male_arms/npc_male_criminals_arms_caucasian_nm"/>
+		<diffuse_texture file="units/pd2_dlc_sus/characters/sus_npc_male_arms/npc_male_criminals_arms_caucasian_df"/>
+		<material_texture file="units/pd2_dlc_sus/characters/sus_npc_male_arms/npc_male_criminals_arms_caucasian_gsma"/>
+		<variable name="contour_color" type="vector3" value="1 1 1"/>
+		<variable name="contour_opacity" type="scalar" value="0"/>
+	</material>
+</materials>    
