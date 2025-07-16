@@ -1,0 +1,17 @@
+<materials version="3" group="weapon_74">
+    <material name="ak74_barrel" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_upg_ak_reusable/bars_barrel_df" mip="1"/>
+        <bump_normal_texture file="units/payday2/weapons/wpn_fps_ass_74_pts/wpn_fps_ass_74_b_standard_nm" mip="1"/>
+        <material_texture file="units/mods/weapons/wpn_fps_upg_ak_reusable/bars_barrel_gsma" mip="1"/>
+    </material>
+	<material name="no_blurr" version="2" render_template="effect:DOF_CUTTER">
+        <variable value="10" type="scalar" name="fadeout_distance"/>
+        <diffuse_texture file="units/payday2/weapons/wpn_effects_textures/wpn_effect_no_blurr_df" mip="1"/>
+        <variable value="182.69010925293" type="scalar" name="falloff_exp"/>
+    </material>
+	<material name="mtr_barrel" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_upg_ak_reusable/stg_barrel_df" />
+		<bump_normal_texture file="units/pd2_dlc_fawp/weapons/wpn_fps_smg_vityaz_pts/barrel_nm" />
+		<material_texture file="units/mods/weapons/wpn_fps_upg_ak_reusable/stg_barrel_gsma" />
+	</material>
+</materials>

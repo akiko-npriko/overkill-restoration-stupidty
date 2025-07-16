@@ -1,0 +1,10 @@
+<materials version="3" group="weapon_victor">
+	<material name="mat_th_handguard" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_savi/weapons/wpn_third_snp_victor_pts/victor_third_handguard_df" />
+		<bump_normal_texture file="units/pd2_dlc_savi/weapons/wpn_third_snp_victor_pts/victor_third_handguard_nm" />
+	</material>
+	<material name="mat_th_upper" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_savi/weapons/wpn_third_snp_victor_pts/victor_third_upper_df" />
+		<bump_normal_texture file="units/pd2_dlc_savi/weapons/wpn_third_snp_victor_pts/victor_third_upper_nm" />
+	</material>
+</materials>

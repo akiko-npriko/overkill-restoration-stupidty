@@ -1,0 +1,10 @@
+<materials version="3" group="weapon_ak12">
+	<material name="mat_stock" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_ass_m4_pts/wpn_fps_ass_hera_s_russian_df" mip="1"/>
+		<bump_normal_texture file="units/pd2_dlc_grv/weapons/wpn_fps_ass_flint_pts/wpn_fps_ass_ak12_stock_nm" mip="1"/>
+	</material>
+	<material name="mtr_crane_mk46" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/pd2_dlc_gage_jobs/weapons/wpn_fps_upg_m4_s_mk46/lmt_mk46_df" mip="1"/>
+		<bump_normal_texture file="units/pd2_dlc_gage_jobs/weapons/wpn_fps_upg_m4_s_mk46/lmt_mk46_nm" mip="1"/>
+	</material>
+</materials>

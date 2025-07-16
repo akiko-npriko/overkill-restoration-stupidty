@@ -1,0 +1,12 @@
+<materials version="3" group="weapon_vityaz">
+	<material name="mtr_barrel" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_upg_ak_reusable/stg_barrel_df" />
+		<bump_normal_texture file="units/pd2_dlc_fawp/weapons/wpn_fps_smg_vityaz_pts/barrel_nm" />
+		<material_texture file="units/mods/weapons/wpn_fps_upg_ak_reusable/stg_barrel_gsma" />
+	</material>
+	<material name="mtr_lower" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_upg_ak_reusable/stg_lower_df" />
+		<bump_normal_texture file="units/pd2_dlc_fawp/weapons/wpn_fps_smg_vityaz_pts/lower_nm" />
+		<material_texture file="units/mods/weapons/wpn_fps_upg_ak_reusable/stg_lower_gsma" />
+	</material>
+</materials>

@@ -1,0 +1,12 @@
+<materials version="3" group="weapon_m16">
+    <material name="railed" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_ass_m16_pts/a4_fg_railed_df"/>
+        <bump_normal_texture file="units/payday2/weapons/wpn_fps_ass_m16_pts/wpn_fps_ass_m16_fg_railed_nm"/>
+        <material_texture file="units/mods/weapons/wpn_fps_ass_m16_pts/a4_fg_railed_gsma"/>
+    </material>
+    <material name="m4_fg_rail" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_ass_m16_pts/a4_fg_ring_df"/>
+        <bump_normal_texture file="units/payday2/weapons/wpn_fps_ass_m4_pts/m4_frontgrip_ris_medium_nm"/>
+        <material_texture file="units/mods/weapons/wpn_fps_ass_m16_pts/a4_fg_ring_gsma"/>
+    </material>
+</materials>

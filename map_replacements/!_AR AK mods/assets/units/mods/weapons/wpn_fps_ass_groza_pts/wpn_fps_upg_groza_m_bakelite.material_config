@@ -1,0 +1,11 @@
+<materials version="3" group="weapon_74">
+    <material name="ak74_mag" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_ass_groza_pts/groza_bakelite_df"/>
+        <bump_normal_texture file="units/payday2/weapons/wpn_fps_ass_74_pts/wpn_74_mag_nm"/>
+        <material_texture file="units/mods/weapons/wpn_fps_ass_74_pts/wpn_101_mag_gsma"/>
+    </material>
+    <material name="mtr_bullet" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/pd2_dlc_gage_assault/weapons/wpn_fps_bullet/wpn_fps_bullet_556_df"/>
+        <bump_normal_texture file="units/pd2_dlc_gage_assault/weapons/wpn_fps_bullet/wpn_fps_bullet_556_nm"/>
+    </material>
+</materials>

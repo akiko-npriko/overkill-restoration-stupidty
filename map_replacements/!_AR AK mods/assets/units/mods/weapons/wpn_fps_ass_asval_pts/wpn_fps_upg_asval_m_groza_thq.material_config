@@ -1,0 +1,10 @@
+<materials version="3" group="weapon_groza">
+	<material name="mtr_mag" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/pd2_dlc_sawp/weapons/wpn_fps_ass_groza_pts/mag_df" mip="1" />
+		<bump_normal_texture file="units/pd2_dlc_sawp/weapons/wpn_fps_ass_groza_pts/mag_nm" mip="1" />
+	</material>
+    <material name="mtr_bullet" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/pd2_dlc_sawp/weapons/wpn_fps_ass_groza_pts/bullet_df"/>
+        <bump_normal_texture file="units/pd2_dlc_sawp/weapons/wpn_fps_ass_groza_pts/bullet_nm"/>
+    </material>
+</materials>

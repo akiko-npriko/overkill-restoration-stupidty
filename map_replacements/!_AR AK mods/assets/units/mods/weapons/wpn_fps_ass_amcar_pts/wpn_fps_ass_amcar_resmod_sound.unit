@@ -1,0 +1,9 @@
+<unit type="static" slot="1" >
+    <object file="units/mods/weapons/wpn_fps_ass_amcar_pts/wpn_fps_ass_amcar_resmod_sound" />
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+    </extensions>
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_m16"/>
+	</dependencies>
+</unit>
