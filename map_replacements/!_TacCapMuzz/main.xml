@@ -1,0 +1,249 @@
+	<mod name="Tactical Capitalism Muzzles" author="RJC9000" min_lib_ver="3.38">
+	<AssetUpdates id="47061" version="1.01" provider="modworkshop"/>
+	<Localization directory="loc" default="english.txt">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	<GlobalValue id="tac_capitalism_suppressor_mod" color="Color(0.16, 0.90, 0.55)"/>
+
+<!--AAC-->
+	<WeaponMod id="wpn_fps_upg_ns_aac_m4_2000" based_on="wpn_fps_upg_ns_ass_smg_medium" type="barrel_ext"  unit="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_aac_m4_2000" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" inherit_weapons="true" global_value="tac_capitalism_suppressor_mod"  ver="2">
+		<texture_variants>
+			<capitalism_black name_id="bm_w_paint_capitalism_supp_black" desc_id="bm_w_paint_capitalism_supp_black_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_aac_m4_2000_black"/> 
+		</texture_variants> 
+	</WeaponMod> 
+	<WeaponMod id="wpn_fps_upg_ns_aac_51t" based_on="wpn_fps_upg_ns_ass_smg_stubby"  type="barrel_ext"  unit="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_aac_51t" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" inherit_weapons="true" global_value="tac_capitalism_suppressor_mod"  ver="2">
+	</WeaponMod>
+	
+<!--Daniel Defense-->
+	<WeaponMod id="wpn_fps_upg_ns_dd_soundguard30" based_on="wpn_fps_upg_ns_ass_smg_medium" type="barrel_ext"  unit="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_dd_soundguard30" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" inherit_weapons="true" global_value="tac_capitalism_suppressor_mod"  ver="2">
+	</WeaponMod> 
+	<WeaponMod id="wpn_fps_upg_ns_dd_soundguard556" based_on="wpn_fps_upg_ns_ass_smg_medium" type="barrel_ext"  unit="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_dd_soundguard556" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" inherit_weapons="true" global_value="tac_capitalism_suppressor_mod"  ver="2">
+	</WeaponMod> 
+
+
+<!--HUXWRX-->
+	<WeaponMod id="wpn_fps_upg_ns_huxwrx_flow556k" based_on="wpn_fps_upg_ns_ass_smg_medium"  type="barrel_ext"  unit="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_huxwrx_flow556k" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" inherit_weapons="true" global_value="tac_capitalism_suppressor_mod"  ver="2">
+			<stats damage="0" spread="0" recoil="0" concealment="0"/>
+		<weapons>
+			
+	<!--	<value_node value="wpn_fps_ass_m4"/>-->
+	<!--	<value_node value="wpn_fps_ass_m16"/>-->
+		</weapons>
+		<texture_variants>
+			<capitalism_black name_id="bm_w_paint_capitalism_supp_black" desc_id="bm_w_paint_capitalism_supp_black_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_huxwrx_flow556k_black"/> 
+<!--		<capitalism_fde   name_id="bm_w_paint_capitalism_supp_fde" desc_id="bm_w_paint_capitalism_supp_fde_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_huxwrx_flow556k_fde"/> -->
+		</texture_variants> 
+	</WeaponMod>
+	
+<!--KAC-->
+	<WeaponMod id="wpn_fps_upg_ns_kac_qdc_mcq_prt" based_on="wpn_fps_upg_ns_ass_smg_small"  type="barrel_ext"  unit="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_kac_qdc_mcq_prt" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" inherit_weapons="true" global_value="tac_capitalism_suppressor_mod"  ver="2">
+		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+		<weapons>
+	<!--	<value_node value="wpn_fps_ass_m4"/>-->
+	<!--	<value_node value="wpn_fps_ass_m16"/>-->
+		</weapons>
+		<texture_variants>
+			<capitalism_black name_id="bm_w_paint_capitalism_supp_black" desc_id="bm_w_paint_capitalism_supp_black_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_kac_qdc_mcq_prt_cover_black"/> 
+		</texture_variants> 
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_upg_ns_kac_qdc_mcq_prt_cover" based_on="wpn_fps_upg_ns_ass_smg_small"  type="barrel_ext"  unit="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_kac_qdc_mcq_prt_cover" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" inherit_weapons="true" global_value="tac_capitalism_suppressor_mod"  ver="2">
+		<stats damage="-1" spread="2" recoil="0" concealment="-1"/>
+		<weapons>
+	<!--	<value_node value="wpn_fps_ass_m4"/>-->
+	<!--	<value_node value="wpn_fps_ass_m16"/>-->
+		</weapons>
+		<texture_variants>
+			<capitalism_black name_id="bm_w_paint_capitalism_supp_black" desc_id="bm_w_paint_capitalism_supp_black_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_kac_qdc_mcq_prt_cover_black"/> 
+		</texture_variants> 
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_upg_ns_kac_3prong_flash" based_on="wpn_fps_upg_ns_ass_smg_stubby"  type="barrel_ext"  unit="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_kac_3prong_flash" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" inherit_weapons="true" global_value="tac_capitalism_suppressor_mod"  ver="2">
+		<weapons>
+	<!--	<value_node value="wpn_fps_ass_m4"/>-->
+	<!--	<value_node value="wpn_fps_ass_m16"/>-->
+		</weapons>
+		<texture_variants>
+			<capitalism_black name_id="bm_w_paint_capitalism_supp_black" desc_id="bm_w_paint_capitalism_supp_black_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_kac_3prong_flash_black"/> 
+		</texture_variants> 
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_upg_ns_kac_usp45t" based_on="wpn_fps_upg_ns_pis_large_kac" type="barrel_ext" unit="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_kac_usp45t" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" inherit_weapons="true" global_value="tac_capitalism_suppressor_mod" ver="2">
+	</WeaponMod> 
+
+<!--SIG Sauer-->
+	<WeaponMod id="wpn_fps_upg_ns_sig_slh762_qd" based_on="wpn_fps_upg_ns_ass_smg_medium" type="barrel_ext"  unit="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_sig_slh762_qd" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" inherit_weapons="true" global_value="tac_capitalism_suppressor_mod"  ver="2">
+		<stats damage="0" spread="0" recoil="2" concealment="-1"/>
+	</WeaponMod> 
+	<WeaponMod id="wpn_fps_upg_ns_sig_slh300" based_on="wpn_fps_upg_ns_ass_smg_medium" type="barrel_ext"  unit="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_sig_slh300" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" inherit_weapons="true" global_value="tac_capitalism_suppressor_mod"  ver="2">
+		<stats damage="0" spread="2" recoil="0" concealment="-1"/>
+	</WeaponMod> 
+	<WeaponMod id="wpn_fps_upg_ns_sig_slx556" based_on="wpn_fps_upg_ns_ass_smg_medium" type="barrel_ext"  unit="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_sig_slx556" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" inherit_weapons="true" global_value="tac_capitalism_suppressor_mod"  ver="2">
+		<stats damage="0" spread="2" recoil="0" concealment="-1"/>
+	</WeaponMod> 
+	<WeaponMod id="wpn_fps_upg_ns_sig_slx556c" based_on="wpn_fps_upg_ns_ass_smg_medium" type="barrel_ext"  unit="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_sig_slx556c" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" inherit_weapons="true" global_value="tac_capitalism_suppressor_mod"  ver="2">
+		<stats damage="0" spread="1" recoil="0" concealment="0"/>
+	</WeaponMod> 
+
+	<WeaponMod id="wpn_fps_upg_ns_sig_modx" based_on="wpn_fps_upg_ns_pis_medium" type="barrel_ext"  unit="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_sig_modx" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" inherit_weapons="true" global_value="tac_capitalism_suppressor_mod" ver="2">
+	</WeaponMod> 
+	<WeaponMod id="wpn_fps_upg_ns_sig_modx_short" based_on="wpn_fps_upg_ns_pis_small" type="barrel_ext"  unit="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_sig_modx_short" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" inherit_weapons="true" global_value="tac_capitalism_suppressor_mod" ver="2">
+	</WeaponMod> 
+	<WeaponMod id="wpn_fps_upg_ns_sig_modx_meme" based_on="wpn_fps_upg_ns_pis_medium" type="barrel_ext"  unit="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_sig_modx_meme" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" inherit_weapons="true" global_value="tac_capitalism_suppressor_mod"  ver="2">
+		<stats damage="-34" spread="-1" recoil="5" concealment="-30"/>
+	</WeaponMod> 
+
+<!--Surefire-->	
+	<WeaponMod id="wpn_fps_upg_ns_surefire_socom556_rc" based_on="wpn_fps_upg_ns_ass_smg_medium"  type="barrel_ext"  unit="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_surefire_socom556_rc" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" inherit_weapons="true" global_value="tac_capitalism_suppressor_mod"  ver="2">
+			<stats damage="0" spread="1" recoil="1" concealment="-1"/>
+		<weapons>
+	<!--	<value_node value="wpn_fps_ass_m4"/>-->
+	<!--	<value_node value="wpn_fps_ass_m16"/>-->
+		</weapons>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_upg_ns_surefire_socom_4prong" based_on="wpn_fps_upg_ns_ass_smg_stubby"  type="barrel_ext"  unit="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_surefire_socom_4prong" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" inherit_weapons="true" global_value="tac_capitalism_suppressor_mod"  ver="2">
+		<weapons>
+	<!--	<value_node value="wpn_fps_ass_m4"/>-->
+	<!--	<value_node value="wpn_fps_ass_m16"/>-->
+		</weapons>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_upg_ns_surefire_fh556" based_on="wpn_fps_upg_ns_ass_smg_stubby"  type="barrel_ext"  unit="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_surefire_fh556" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" inherit_weapons="true" global_value="tac_capitalism_suppressor_mod"  ver="2">
+		<weapons>
+	<!--	<value_node value="wpn_fps_ass_m4"/>-->
+	<!--	<value_node value="wpn_fps_ass_m16"/>-->
+		</weapons>
+	</WeaponMod>
+
+	
+	
+	
+	
+	
+	<AddFiles directory="assets">
+
+<!--AAC-->
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ns_aac_m4_2000"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ns_aac_51t"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_upg_ns_aac_m4_2000/capitalism_black"/>
+<!--<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_upg_ns_aac_51t/capitalism_black"/> -->
+		
+	<df_nm_gsma path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/aac_m4_2000"/>
+	<texture 	path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/aac_m4_2000_black_df"/>
+
+	<unit_mat_thq path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_aac_m4_2000"/>
+	<unit_mat_thq path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_aac_51t"/>
+	 <material_config path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_aac_m4_2000_black"/>
+	 <material_config path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_aac_m4_2000_black_thq"/>
+
+<!--Daniel Defense-->
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ns_dd_soundguard30"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ns_dd_soundguard556"/>
+	<df_nm_gsma path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/suppressor_soundguard_sg30"/>
+	<df_nm_gsma path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/suppressor_soundguard_sg556"/>
+	
+	<unit_mat_thq path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_dd_soundguard30"/>
+	<unit_mat_thq path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_dd_soundguard556"/>
+	
+<!--HUXWRX-->
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ns_huxwrx_flow556k"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_upg_ns_huxwrx_flow556k/capitalism_black"/>
+
+	<df_nm_gsma path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/huxwrx_556k"/>
+	<texture	path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/huxwrx_556k_black_df"/>
+	<df_nm_gsma path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/hx556qd"/>
+	  <texture path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/weapon_metal_cubemap_black"/>
+				
+				
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_huxwrx_flow556k"/>
+	 <material_config path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_huxwrx_flow556k_black"/>
+	 <material_config path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_huxwrx_flow556k_black_thq"/>
+
+<!--Knight's Armament-->
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ns_kac_qdc_prt"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ns_kac_qdc_akinaro_prt"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ns_kac_qdc_mcq_prt"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ns_kac_qdc_mcq_prt_cover"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ns_kac_uspt45_suppressor"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ns_kac_3prong_flash"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ns_kac_usp45t"/>
+<!--<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_upg_ns_kac_qdc_akinaro_prt/capitalism_black"/> -->
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_upg_ns_huxwrx_flow556k/capitalism_black"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_upg_ns_kac_3prong_flash/capitalism_black"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_upg_ns_kac_qdc_mcq_prt/capitalism_black"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_upg_ns_kac_qdc_mcq_prt_cover/capitalism_black"/>
+		
+
+	<df_nm_gsma path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/kac_flash_eliminator"/>
+	<df_nm_gsma path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/kac_qdc_cqb"/>
+	<texture	path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/kac_flash_eliminator_black_df"/>
+	<texture	path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/kac_qdc_cqb_black_df"/>
+	<df_nm_gsma path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/kac_uspt_suppressor"/>
+	<df_nm_gsma path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/suppressor_kac_qdc"/>
+	<df_nm_gsma path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/suppressor_kac_qdc_mcq_prt"/>
+	<df_nm_gsma path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/suppressor_kac_qdc_mcq_prt_thermal_cover"/>
+	<texture 	path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/suppressor_kac_qdc_mcq_prt_black_df"/>
+	<texture 	path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/suppressor_kac_qdc_mcq_prt_thermal_cover_black_df"/>
+	<df_nm_gsma path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/kac_uspt_suppressor"/>
+	
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_kac_3prong_flash"/>
+	 <material_config path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_kac_3prong_flash_black"/>
+	 <material_config path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_kac_3prong_flash_black_thq"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_kac_qdc_prt"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_kac_qdc_mcq_prt"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_kac_qdc_mcq_prt_cover"/>
+	 <material_config path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_kac_qdc_mcq_prt_cover_black"/>
+	 <material_config path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_kac_qdc_mcq_prt_cover_black_thq"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_kac_qdc_akinaro_prt"/>
+	 <material_config path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_kac_qdc_akinaro_prt_black"/>
+	 <material_config path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_kac_qdc_akinaro_prt_black_thq"/>
+	 <unit_mat_thq path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_kac_usp45t"/>
+
+<!--SIG Sauer-->
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ns_sig_slh762_qd"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ns_sig_slh300"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ns_sig_slx556"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ns_sig_slx556c"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ns_sig_modx"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ns_sig_modx_meme"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ns_sig_modx_short"/>
+
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/spear_lt_muzzle"/>	
+		<texture	path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/spear_lt_muzzle_12_nm"/>	
+		<texture	path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/sig_modx9_numbers_df"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/sig_modx9"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/slh300"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/slh762qd"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/slx556"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/slx556c"/>	
+
+	  <unit_mat_thq path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_sig_modx"/>	
+	  <unit_mat_thq path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_sig_modx_meme"/>	
+	  <unit_mat_thq path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_sig_modx_short"/>	
+	  
+	  <unit_mat_thq path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_sig_slh762_qd"/>	
+	  <unit_mat_thq path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_sig_slh300"/>	
+	  <unit_mat_thq path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_sig_slx556"/>	
+	  <unit_mat_thq path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_sig_slx556c"/>	
+
+<!--Surefire-->
+
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ns_surefire_socom_4prong"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ns_surefire_socom556_rc"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ns_surefire_fh556"/>
+
+	<df_nm_gsma path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/muzzle_surefire_sf4p"/>
+	<df_nm_gsma path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/muzzle_socom556_rc"/>
+	<df_nm_gsma path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/muzzle_surefire_fh556"/>
+				
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_surefire_socom_4prong"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_surefire_socom556_rc"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/wpn_fps_upg_ns_surefire_fh556"/>
+
+
+	</AddFiles>
+		
+	<Hooks directory="hooks">
+<!--	<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/> -->
+
+	</Hooks>
+
+	
+</mod>
+

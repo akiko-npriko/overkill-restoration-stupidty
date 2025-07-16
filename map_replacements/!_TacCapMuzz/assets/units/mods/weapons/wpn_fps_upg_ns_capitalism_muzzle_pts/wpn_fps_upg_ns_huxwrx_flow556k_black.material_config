@@ -1,0 +1,17 @@
+<materials version="3" group="weapon_group">
+
+	<material name="mtr_flow556k"  render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/huxwrx_556k_black_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/huxwrx_556k_nm"/>
+		<material_texture	 file="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/huxwrx_556k_gsma"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/weapon_metal_cubemap_black"/>
+    </material>	
+	<material name="mtr_flash_hx556"  render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/hx556qd_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/hx556qd_nm"/>
+		<material_texture	 file="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/hx556qd_gsma"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_upg_ns_capitalism_muzzle_pts/textures/weapon_metal_cubemap_black"/>
+    </material>	
+
+
+</materials>
