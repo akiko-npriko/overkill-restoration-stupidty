@@ -1,0 +1,54 @@
+<mod name="SIG Sauer ROMEO4T" author="RJC9000" min_lib_ver="3.38">
+	<AssetUpdates id="47014" version="1.00" provider="modworkshop"/>
+	<Localization directory="loc" default="english.txt">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	
+	<WeaponMod id="wpn_fps_upg_o_sig_sauer_romeo4t" based_on="wpn_fps_upg_o_aimpoint" type="sight" steelsight_visible="false" inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_override="true" inherit_parts_forbids="true" ver="2">
+		<stats concealment="-1" recoil="1" spread="0" zoom="2"/>
+		<adds>
+			<value_node value="wpn_fps_upg_o_sig_sauer_romeo4t_steelsight"/>
+		</adds>
+		<texture_variants>
+			<romeo4t_black name_id="bm_w_paint_romeo4t_black" desc_id="bm_w_paint_romeo4t_black_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_o_sig_sauer_romeo4t/wpn_fps_upg_o_sig_sauer_romeo4t_black"/>
+		</texture_variants>	
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_o_sig_sauer_romeo4t_steelsight" based_on="wpn_fps_upg_o_specter_steelsight" unit="units/mods/weapons/wpn_fps_upg_o_sig_sauer_romeo4t/wpn_fps_upg_o_sig_sauer_romeo4t_steelsight" hidden="true" ver="2">
+			<texture_variants>
+			<romeo4t_black name_id="bm_w_paint_romeo4t_black" desc_id="bm_w_paint_romeo4t_black_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_o_sig_sauer_romeo4t/wpn_fps_upg_o_sig_sauer_romeo4t_black"/>
+		</texture_variants>	
+	</WeaponMod>
+	
+	<AddFiles directory="assets">
+	<!--GUIs-->
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_o_sig_sauer_romeo4t"/>
+		
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_upg_o_sig_sauer_romeo4t/romeo4t_black"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_upg_o_sig_sauer_romeo4t_steelsight/romeo4t_black"/>
+		
+	<!--Textures-->	
+		<texture 	path="units/mods/weapons/wpn_fps_upg_o_sig_sauer_romeo4t/textures/weapon_metal_cubemap"/>
+		<df_nm_gsma	path="units/mods/weapons/wpn_fps_upg_o_sig_sauer_romeo4t/textures/romeo4t"/>
+		<df_nm_gsma	path="units/mods/weapons/wpn_fps_upg_o_sig_sauer_romeo4t/textures/romeo4t_mount"/>
+		<texture	path="units/mods/weapons/wpn_fps_upg_o_sig_sauer_romeo4t/textures/romeo4t_black_df"/>
+		<texture	path="units/mods/weapons/wpn_fps_upg_o_sig_sauer_romeo4t/textures/romeo4t_mount_black_df"/>
+		
+		<texture 	path="units/mods/weapons/wpn_fps_upg_o_sig_sauer_romeo4t/textures/romeo4t_glass_df"/>
+		<texture 	path="units/mods/weapons/wpn_fps_upg_o_sig_sauer_romeo4t/textures/romeo4t_glass_op"/>
+		
+	<!--Unit Base-->	
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_upg_o_sig_sauer_romeo4t/wpn_fps_upg_o_sig_sauer_romeo4t"/>
+		<material_config path="units/mods/weapons/wpn_fps_upg_o_sig_sauer_romeo4t/wpn_fps_upg_o_sig_sauer_romeo4t_black"/>
+		<material_config path="units/mods/weapons/wpn_fps_upg_o_sig_sauer_romeo4t/wpn_fps_upg_o_sig_sauer_romeo4t_black_thq"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_upg_o_sig_sauer_romeo4t/wpn_fps_upg_o_sig_sauer_romeo4t_steelsight"/>
+
+		
+	</AddFiles>
+	
+	<Hooks directory="hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+
+	</Hooks>
+
+</mod>
