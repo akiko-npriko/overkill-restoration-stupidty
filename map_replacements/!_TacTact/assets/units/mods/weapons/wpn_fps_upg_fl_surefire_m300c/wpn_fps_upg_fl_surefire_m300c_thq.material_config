@@ -1,0 +1,12 @@
+<materials version="3" group="weapon_group">
+	<material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" name="m300c" version="2">
+        <diffuse_texture	 file="units/mods/weapons/wpn_fps_upg_fl_surefire_m300c/surefire_m300c_df" mip="1"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_upg_fl_surefire_m300c/surefire_m300c_nm" mip="1"/>
+        <material_texture 	 file="units/mods/weapons/wpn_fps_upg_fl_surefire_m300c/surefire_m300c_gsma" mip="1"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+    </material>
+	<material name="mtr_light" render_template="generic:DEPTH_SCALING:SELF_ILLUMINATION" version="2">
+		<variable value="streetlight" type="scalar" name="il_multiplier"/>
+		<self_illumination_texture file="units/payday2/weapons/wpn_effects_textures/wpn_effect_flashlight_il"/>
+	</material>
+</materials>

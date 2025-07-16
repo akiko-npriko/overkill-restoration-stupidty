@@ -1,0 +1,133 @@
+<mod name="Tacticool Tacticals" color="Color(0.01,0.62,0.98)">
+	<Localization directory="loc" default="english.txt"/>
+	<GlobalValue id="frenchy" color="Color(0.71, 0.19, 0.42)"/>
+	<GlobalValue id="tacky_tacticool_gadgets" color="Color(0.16, 0.90, 0.55)"/>
+	<AssetUpdates id="36416" version="1.13" provider="modworkshop"/>
+	
+	
+<!-- Gadgets -->	
+	<WeaponMod id="wpn_fps_upg_fl_peq2" based_on="wpn_fps_upg_fl_ass_smg_sho_peqbox" desc_id="bm_wp_upg_fl_ass_smg_sho_peqbox_desc" inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2" global_value="frenchy" >
+		<stats concealment="-1" recoil="1"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_fl_dbal" based_on="wpn_fps_upg_fl_ass_smg_sho_peqbox" desc_id="bm_wp_upg_fl_ass_smg_sho_peqbox_desc" inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2" global_value="frenchy" >
+		<stats recoil="1"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_fl_holo" based_on="wpn_fps_upg_fl_ass_smg_sho_peqbox" desc_id="bm_wp_upg_fl_ass_smg_sho_peqbox_desc" inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2" global_value="frenchy" >
+		<stats concealment="-1" spread="1"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_fl_ncs" based_on="wpn_fps_upg_fl_ass_smg_sho_peqbox" desc_id="bm_wp_upg_fl_ass_smg_sho_peqbox_desc" inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2" global_value="frenchy" >
+		<stats concealment="1" spread="1"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_fl_peq15" based_on="wpn_fps_upg_fl_ass_utg" desc_id="bm_wp_upg_fl_ass_peq15_desc" inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2" global_value="frenchy" >
+		<stats concealment="-2" spread="2" recoil="1" />
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_fl_2irs" based_on="wpn_fps_upg_fl_ass_utg" desc_id="bm_wp_upg_fl_ass_peq15_desc" inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2" global_value="frenchy" >
+	 <stats concealment="-1" spread="1" />
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_fl_mawl" based_on="wpn_fps_upg_fl_ass_utg" desc_id="bm_wp_upg_fl_ass_peq15_desc" ver="2" global_value="frenchy" >
+		<stats concealment="-1" recoil="1" spread="2" />
+		<weapons>
+			<value_node value="wpn_fps_snp_tti"/>
+			<value_node value="wpn_fps_ass_m4"/>
+			<value_node value="wpn_fps_ass_m16"/>
+			<value_node value="wpn_fps_ass_amcar"/>
+		</weapons>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_fl_pers" based_on="wpn_fps_upg_fl_ass_utg" desc_id="bm_wp_upg_fl_ass_peq15_desc" inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2" global_value="frenchy" >
+		<stats concealment="-3" spread="3" recoil="2" />
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_fl_x400" based_on="wpn_fps_upg_fl_ass_utg" desc_id="bm_wp_upg_fl_ass_peq15_desc" inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2" global_value="frenchy" >
+		<stats concealment="-1" spread="2" />
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_fl_la5" based_on="wpn_fps_upg_fl_ass_utg" desc_id="bm_wp_upg_fl_ass_peq15_desc" inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2" global_value="frenchy" >
+		<stats concealment="-2" spread="1" recoil="2" />
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_fl_kleh" based_on="wpn_fps_upg_fl_ass_smg_sho_surefire" desc_id="bm_wp_upg_fl_ass_smg_sho_surefire_desc" inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2" global_value="frenchy" >
+		<stats concealment="-2" spread="2" recoil="-1"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_fl_las" based_on="wpn_fps_upg_fl_ass_smg_sho_surefire" desc_id="bm_wp_upg_fl_ass_smg_sho_surefire_desc" inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2" global_value="frenchy" >
+		<stats recoil="1" />
+	</WeaponMod>
+
+<!-- RJC Addon Lasers -->
+	<WeaponMod id="wpn_fps_upg_fl_eotech_ngal" based_on="wpn_fps_upg_fl_ass_smg_sho_peqbox" desc_id="bm_wp_upg_fl_ass_smg_sho_peqbox_desc" inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2" global_value="tacky_tacticool_gadgets" >
+		<stats concealment="0" spread="1" recoil="-1" />
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_upg_fl_eotech_ogl" based_on="wpn_fps_upg_fl_ass_smg_sho_peqbox" desc_id="bm_wp_upg_fl_ass_smg_sho_peqbox_desc" inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2" global_value="tacky_tacticool_gadgets" >
+		<stats concealment="0" spread="1" recoil="-1" />
+	</WeaponMod>	
+	<WeaponMod id="wpn_fps_upg_fl_dbal_a2" based_on="wpn_fps_upg_fl_ass_smg_sho_peqbox" desc_id="bm_wp_upg_fl_ass_smg_sho_peqbox_desc" inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2" global_value="tacky_tacticool_gadgets" >
+		<stats concealment="0" spread="1" recoil="-1" />
+	</WeaponMod>	
+	<WeaponMod id="wpn_fps_upg_fl_wilcox_raid_x" based_on="wpn_fps_upg_fl_ass_smg_sho_peqbox" desc_id="bm_wp_upg_fl_ass_smg_sho_peqbox_desc" inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2" global_value="tacky_tacticool_gadgets" >
+		<stats concealment="0" spread="1" recoil="-1" />
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_upg_fl_wilcox_raid_xe" based_on="wpn_fps_upg_fl_ass_smg_sho_peqbox" desc_id="bm_wp_upg_fl_ass_smg_sho_peqbox_desc" inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2" global_value="tacky_tacticool_gadgets" >
+		<stats concealment="0" spread="1" recoil="-1" />
+	</WeaponMod>
+	
+	<!-- RJC Addon Flashlights -->
+	<WeaponMod id="wpn_fps_upg_fl_inforce_wmlx" based_on="wpn_fps_upg_fl_ass_smg_sho_surefire" unit="units/mods/weapons/wpn_fps_upg_fl_inforce_wmlx/wpn_fps_upg_fl_inforce_wmlx"  desc_id="bm_wp_upg_fl_ass_smg_sho_surefire_desc"  inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" hidden="false" global_value="tacky_tacticool_gadgets" ver="2">
+		<stats concealment="0" recoil="0" spread="0"/>
+	</WeaponMod>	
+	<WeaponMod id="wpn_fps_upg_fl_insight_wmx200" based_on="wpn_fps_upg_fl_ass_smg_sho_surefire" unit="units/mods/weapons/wpn_fps_upg_fl_insight_wmx200/wpn_fps_upg_fl_insight_wmx200" desc_id="bm_wp_upg_fl_ass_smg_sho_surefire_desc"   inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" hidden="false" global_value="tacky_tacticool_gadgets" ver="2">
+		<stats concealment="0" recoil="0" spread="0"/>
+		<texture_variants>
+			<tacticool_tacticals_fde name_id="bm_w_paint_tacticool_tacticals_fde" desc_id="bm_w_paint_tacticool_tacticals_fde_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_fl_insight_wmx200/wpn_fps_upg_fl_insight_wmx200_fde"/>
+		</texture_variants>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_upg_fl_surefire_m300c" based_on="wpn_fps_upg_fl_ass_smg_sho_surefire" unit="units/mods/weapons/wpn_fps_upg_fl_surefire_m300c/wpn_fps_upg_fl_surefire_m300c" desc_id="bm_wp_upg_fl_ass_smg_sho_surefire_desc"   inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" hidden="false" global_value="tacky_tacticool_gadgets" ver="2">
+		<stats concealment="0" recoil="0" spread="0"/>
+		<texture_variants>
+			<tacticool_tacticals_fde name_id="bm_w_paint_tacticool_tacticals_fde" desc_id="bm_w_paint_tacticool_tacticals_fde_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_fl_surefire_m300c/wpn_fps_upg_fl_surefire_m300c_fde"/>
+		</texture_variants>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_upg_fl_surefire_m600v" based_on="wpn_fps_upg_fl_ass_smg_sho_surefire" unit="units/mods/weapons/wpn_fps_upg_fl_surefire_m600v/wpn_fps_upg_fl_surefire_m600v" desc_id="bm_wp_upg_fl_ass_smg_sho_surefire_desc"  inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" hidden="false" global_value="tacky_tacticool_gadgets" ver="2">
+		<stats concealment="0" recoil="0" spread="0"/>
+		<texture_variants>
+			<tacticool_tacticals_fde name_id="bm_w_paint_tacticool_tacticals_fde" desc_id="bm_w_paint_tacticool_tacticals_fde_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_upg_fl_surefire_m600v/wpn_fps_upg_fl_surefire_m600v_fde"/>
+		</texture_variants>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_upg_fl_surefire_m720v" based_on="wpn_fps_upg_fl_ass_smg_sho_surefire" unit="units/mods/weapons/wpn_fps_upg_fl_surefire_m720v/wpn_fps_upg_fl_surefire_m720v"  desc_id="bm_wp_upg_fl_ass_smg_sho_surefire_desc"  inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" hidden="false" global_value="tacky_tacticool_gadgets" ver="2">
+		<stats concealment="0" recoil="0" spread="0"/>
+	</WeaponMod>
+	
+<!-- Pistol Gadgets -->
+
+	<WeaponMod id="wpn_fps_upg_fl_pis_ncs" based_on="wpn_fps_upg_fl_pis_crimson" desc_id="bm_wp_upg_fl_crimson_desc" inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2" global_value="frenchy" >
+		<stats spread="1" />
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_fl_pis_dbal" based_on="wpn_fps_upg_fl_pis_x400v" desc_id="bm_wp_upg_fl_x400v_desc" inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2" global_value="frenchy" >
+		<stats recoil="1" concealment="-1"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_fl_pis_gl21" based_on="wpn_fps_upg_fl_pis_x400v" desc_id="bm_wp_upg_fl_x400v_desc" inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2" global_value="frenchy" >
+		<stats spread="1" concealment="-1"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_fl_pis_xc1" based_on="wpn_fps_upg_fl_pis_x400v" desc_id="bm_wp_upg_fl_x400v_desc" inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2" global_value="frenchy" >
+		<stats concealment="1"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_fl_pis_2irs" based_on="wpn_fps_upg_fl_pis_x400v" desc_id="bm_wp_upg_fl_x400v_desc" inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2" global_value="frenchy" >
+		<stats recoil="1" concealment="-1"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_upg_fl_pis_las" based_on="wpn_fps_upg_fl_pis_tlr1" inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2" global_value="frenchy" >
+		<stats concealment="1"/>
+	</WeaponMod>
+
+	<AddFiles directory="assets" auto_generate="true"/>
+</mod>

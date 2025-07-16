@@ -1,0 +1,18 @@
+<materials version="3" group="weapon_group">
+	<material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" name="mtr_ngal" version="2">
+        <diffuse_texture	 file="units/mods/weapons/wpn_fps_upg_fl_eotech_ngal/gadget_ngal_df" mip="1"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_upg_fl_eotech_ngal/gadget_ngal_nm" mip="1"/>
+        <material_texture 	 file="units/mods/weapons/wpn_fps_upg_fl_eotech_ngal/gadget_ngal_gsma" mip="1"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+    </material>
+	<material name="mtr_indicator" version="2" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:FPS:VIEW_ANGLE_FALLOFF_OP">
+		<variable value="reddot" type="scalar" name="intensity"/>
+		<diffuse_texture file="units/payday2/weapons/wpn_effects_textures/wpn_effect_reddot_df"/>
+		<variable value="1" type="scalar" name="falloff_exp"/>
+	</material>
+	<material name="mtr_laser" version="2" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:FPS:VIEW_ANGLE_FALLOFF_OP">
+		<variable value="reddot" type="scalar" name="intensity"/>
+		<diffuse_texture file="units/payday2/weapons/wpn_effects_textures/wpn_effect_green_il"/>
+		<variable value="1" type="scalar" name="falloff_exp"/>
+	</material>
+</materials>
