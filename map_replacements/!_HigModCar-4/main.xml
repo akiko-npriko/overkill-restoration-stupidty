@@ -1,0 +1,137 @@
+<table name="hmcar">
+<!-- Table name = id for the pack -->
+
+
+    <Localization directory="Localization" default="english.txt">
+    </Localization>
+    <!-- No need to change localization stuff, unless you wish to add other languages -->
+
+
+    <GlobalValue id="hmcar" color="Color(1, 0.5, 0)"/>
+
+    <WeaponMod based_on="wpn_fps_m4_lower_reciever" id="wpn_fps_hmcar_lower_receiver" unit="units/mods/weapons/wpn_fps_ass_hmcar_pts/wpn_fps_hmcar_lower_receiver" type="body" drop="false" is_a_unlockable="false"/>
+    
+    <WeaponMod based_on="wpn_fps_m4_uupg_b_medium_vanilla" id="wpn_fps_hmcar_uupg_b_dummy" unit="units/mods/weapons/wpn_fps_ass_hmcar_pts/wpn_fps_hmcar_uupg_b_dummy" type="barrel" drop="false" is_a_unlockable="false"/>
+    
+    <WeaponMod based_on="wpn_fps_m4_uupg_m_std_vanilla" id="wpn_fps_hmcar_uupg_m_std" unit="units/mods/weapons/wpn_fps_ass_hmcar_pts/wpn_fps_hmcar_uupg_m_std" type="magazine" drop="false" is_a_unlockable="false"/>
+    
+    <WeaponMod based_on="wpn_fps_upg_fl_ass_smg_sho_peqbox" id="wpn_fps_upg_goodlaser" unit="units/mods/weapons/wpn_fps_ass_hmcar_uupg/wpn_fps_upg_goodlaser" type="gadget" drop="false" texture_bundle_folder="mods" is_a_unlockable="true"/>
+    
+    <WeaponMod based_on="wpn_fps_upg_o_eotech" id="wpn_fps_upg_o_hmscope" unit="units/mods/weapons/wpn_fps_ass_hmcar_uupg/wpn_fps_upg_o_hmscope" type="sight" drop="false" texture_bundle_folder="mods" is_a_unlockable="true"/>
+
+    <WeaponNew>
+        <weapon id="hmcar" based_on="m95" weapon_hold="m4" use_stance="new_m4" NR_CLIPS_MAX="3" CLIP_AMMO_MAX="5" unlock_level="65" texture_bundle_folder="mods" global_value="hmcar">
+		<stats reload="7"/>
+		<fire_mode_data fire_rate="1.5"/>
+		<timers reload_not_empty="2.665" reload_empty="3.43"/>
+        <sounds fire="sniper_npc1c_1shot" fire_single="sniper_npc1c_1shot" fire_auto="sniper_npc1c_1shot"/>
+
+            
+            
+            <animations reload_name_id="m4" equip_id="m4" recoil_steelsight="true">
+            </animations>
+            
+            
+        </weapon>
+        <factory id="wpn_fps_ass_hmcar" unit="units/mods/weapons/wpn_fps_ass_hmcar/wpn_fps_ass_hmcar">
+        <!--
+        id = the ID of your new weapon's main unit
+        unit= your main unit directory
+        -->
+        
+        
+            <optional_types>
+                <value_node value="sight"/>
+                <value_node value="gadget"/>
+            </optional_types>
+
+            <default_blueprint>
+            <value_node value="wpn_fps_hmcar_lower_receiver"/>
+            <value_node value="wpn_fps_hmcar_uupg_b_dummy"/> 
+            <value_node value="wpn_fps_hmcar_uupg_m_std"/> 
+            </default_blueprint>
+            <!--
+            This section is every item that will be on your gun by default
+            Sights do not need to be done, since they are defined by the barrel
+            <value_node value="item ID here"/>
+            -->
+
+
+            <uses_parts>
+            <value_node value="wpn_fps_hmcar_lower_receiver"/>
+            <value_node value="wpn_fps_hmcar_uupg_b_dummy"/> 
+            <value_node value="wpn_fps_hmcar_uupg_m_std"/>
+            <value_node value="wpn_fps_upg_goodlaser"/>
+            <value_node value="wpn_fps_upg_o_hmscope"/> 
+            </uses_parts>
+        
+        </factory>
+
+
+        <stance/>
+
+    </Weapon>
+
+    <AddFiles directory="assets">
+    <!-- This section adds specific files to the game -->
+
+    <!-- main section -->
+        <cooked_physics path="units/mods/weapons/wpn_fps_ass_hmcar/wpn_fps_ass_hmcar"/>
+        <model path="units/mods/weapons/wpn_fps_ass_hmcar/wpn_fps_ass_hmcar"/>
+        <object path="units/mods/weapons/wpn_fps_ass_hmcar/wpn_fps_ass_hmcar"/>
+        <unit path="units/mods/weapons/wpn_fps_ass_hmcar/wpn_fps_ass_hmcar"/>
+		<unit path="units/mods/weapons/wpn_fps_ass_hmcar/wpn_fps_ass_hmcar_npc"/>
+        
+    <!-- Textures -->
+        <texture path="units/mods/weapons/wpn_fps_ass_hmcar_pts/m4_df"/>
+        <texture path="units/mods/weapons/wpn_fps_ass_hmcar_pts/m4_nm"/>
+		
+    <!-- body -->
+        <cooked_physics path="units/mods/weapons/wpn_fps_ass_hmcar_pts/wpn_fps_hmcar_lower_receiver"/>
+        <material_config path="units/mods/weapons/wpn_fps_ass_hmcar_pts/wpn_fps_hmcar_lower_receiver"/>
+        <model path="units/mods/weapons/wpn_fps_ass_hmcar_pts/wpn_fps_hmcar_lower_receiver"/>
+        <object path="units/mods/weapons/wpn_fps_ass_hmcar_pts/wpn_fps_hmcar_lower_receiver"/>
+        <unit path="units/mods/weapons/wpn_fps_ass_hmcar_pts/wpn_fps_hmcar_lower_receiver"/>
+        
+        <material_config path="units/mods/weapons/wpn_fps_ass_hmcar_pts/wpn_fps_hmcar_lower_receiver_thq"/>
+                
+    <!-- dummy barrel -->
+        <cooked_physics path="units/mods/weapons/wpn_fps_ass_hmcar_pts/wpn_fps_hmcar_uupg_b_dummy"/>
+        <model path="units/mods/weapons/wpn_fps_ass_hmcar_pts/wpn_fps_hmcar_uupg_b_dummy"/>
+        <object path="units/mods/weapons/wpn_fps_ass_hmcar_pts/wpn_fps_hmcar_uupg_b_dummy"/>
+        <unit path="units/mods/weapons/wpn_fps_ass_hmcar_pts/wpn_fps_hmcar_uupg_b_dummy"/>
+        
+    <!-- mag -->        
+        <cooked_physics path="units/mods/weapons/wpn_fps_ass_hmcar_pts/wpn_fps_hmcar_uupg_m_std"/>
+        <material_config path="units/mods/weapons/wpn_fps_ass_hmcar_pts/wpn_fps_hmcar_uupg_m_std"/>
+        <model path="units/mods/weapons/wpn_fps_ass_hmcar_pts/wpn_fps_hmcar_uupg_m_std"/>
+        <object path="units/mods/weapons/wpn_fps_ass_hmcar_pts/wpn_fps_hmcar_uupg_m_std"/>
+        <unit path="units/mods/weapons/wpn_fps_ass_hmcar_pts/wpn_fps_hmcar_uupg_m_std"/>
+        
+        <material_config path="units/mods/weapons/wpn_fps_ass_hmcar_pts/wpn_fps_hmcar_uupg_m_std_thq"/>
+                
+    <!-- laser -->        
+        <cooked_physics path="units/mods/weapons/wpn_fps_ass_hmcar_uupg/wpn_fps_upg_goodlaser"/>
+        <material_config path="units/mods/weapons/wpn_fps_ass_hmcar_uupg/wpn_fps_upg_goodlaser"/>
+        <model path="units/mods/weapons/wpn_fps_ass_hmcar_uupg/wpn_fps_upg_goodlaser"/>
+        <object path="units/mods/weapons/wpn_fps_ass_hmcar_uupg/wpn_fps_upg_goodlaser"/>
+        <unit path="units/mods/weapons/wpn_fps_ass_hmcar_uupg/wpn_fps_upg_goodlaser"/>
+        
+        <material_config path="units/mods/weapons/wpn_fps_ass_hmcar_uupg/wpn_fps_upg_goodlaser_thq"/>
+                        
+    <!-- sight -->        
+        <cooked_physics path="units/mods/weapons/wpn_fps_ass_hmcar_uupg/wpn_fps_upg_o_hmscope"/>
+        <material_config path="units/mods/weapons/wpn_fps_ass_hmcar_uupg/wpn_fps_upg_o_hmscope"/>
+        <model path="units/mods/weapons/wpn_fps_ass_hmcar_uupg/wpn_fps_upg_o_hmscope"/>
+        <object path="units/mods/weapons/wpn_fps_ass_hmcar_uupg/wpn_fps_upg_o_hmscope"/>
+        <unit path="units/mods/weapons/wpn_fps_ass_hmcar_uupg/wpn_fps_upg_o_hmscope"/>
+        
+        <material_config path="units/mods/weapons/wpn_fps_ass_hmcar_uupg/wpn_fps_upg_o_hmscope_thq"/>
+ 
+        
+    <!-- icons -->
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/hmcar"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_o_hmscope"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_goodlaser"/>
+    </AddFiles>
+</table>

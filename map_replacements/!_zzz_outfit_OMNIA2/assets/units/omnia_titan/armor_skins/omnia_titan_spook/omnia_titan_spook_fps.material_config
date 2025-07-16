@@ -1,0 +1,10 @@
+<materials version="3" group="ene_akan_fbi_spooc_asval_smg">
+	<material name="mtr_body" version="2" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<bump_normal_texture 	file="units/omnia_titan/armor_skins/shared_textures/spook_cloak_nm"/>
+		<diffuse_texture 	file="units/omnia_titan/armor_skins/shared_textures/spook_cloak_dead_df"/>
+	</material>
+    <material name="shadow_caster" render_template="shadow_caster_only:SKINNED_1WEIGHT" version="2"/>
+</materials>
+
+ 
+ 

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/omnia_titan/armor_skins/omnia_titan_spook/omnia_titan_spook_fps" orientation_object="root_point" />
+	
+
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="co_culling">
+			<object name="g_body" enabled="true"/>
+			
+		</graphic_group>
+	</graphics>
+
+	<lights>
+		<light name="point_light" enabled="false" multiplier="reddot" far_range="25" near_range="1" falloff="4.0" type="omni|specular" />
+	</lights>
+
+</dynamic_object>

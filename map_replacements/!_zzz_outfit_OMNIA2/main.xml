@@ -1,0 +1,337 @@
+<table name="OMNIA Titans and Captains Outfit Pack" image="">
+	<Localization directory="localization" default="english.txt"/>
+	<GlobalValue id="omnia_titan_g" color="Color(1, 0.3, 0)"/>
+
+	<!--SWAT Rifleman-->
+	<PlayerStyle id="omnia_titan_swat_rifle" unit="units/omnia_titan/armor_skins/omnia_titan_swat_rifle/omnia_titan_swat_rifle_fps" third_unit="units/omnia_titan/armor_skins/omnia_titan_swat_rifle/omnia_titan_swat_rifle" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic SWAT Rifleman-->
+	<PlayerStyle id="omnia_titan_swat_rifle_classic" unit="units/omnia_titan/armor_skins/omnia_titan_swat_rifle_classic/omnia_titan_swat_rifle_classic_fps" third_unit="units/omnia_titan/armor_skins/omnia_titan_swat_rifle_classic/omnia_titan_swat_rifle_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--SWAT Shotgunner-->
+	<PlayerStyle id="omnia_titan_swat_shotgun" unit="units/omnia_titan/armor_skins/omnia_titan_swat_shotgun/omnia_titan_swat_shotgun_fps" third_unit="units/omnia_titan/armor_skins/omnia_titan_swat_shotgun/omnia_titan_swat_shotgun" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic SWAT Shotgunner-->
+	<PlayerStyle id="omnia_titan_swat_shotgun_classic" unit="units/omnia_titan/armor_skins/omnia_titan_swat_shotgun_classic/omnia_titan_swat_shotgun_classic_fps" third_unit="units/omnia_titan/armor_skins/omnia_titan_swat_shotgun_classic/omnia_titan_swat_shotgun_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Shield-->
+	<PlayerStyle id="omnia_titan_shield" unit="units/omnia_titan/armor_skins/omnia_titan_shield/omnia_titan_shield_fps" third_unit="units/omnia_titan/armor_skins/omnia_titan_shield/omnia_titan_shield" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic Shield-->
+	<PlayerStyle id="omnia_titan_shield_classic" unit="units/omnia_titan/armor_skins/omnia_titan_shield_classic/omnia_titan_shield_classic_fps" third_unit="units/omnia_titan/armor_skins/omnia_titan_shield_classic/omnia_titan_shield_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Sniper-->
+	<PlayerStyle id="omnia_titan_sniper" unit="units/omnia_titan/armor_skins/omnia_titan_sniper/omnia_titan_sniper_fps" third_unit="units/omnia_titan/armor_skins/omnia_titan_sniper/omnia_titan_sniper" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--ASU-->
+	<PlayerStyle id="omnia_titan_fbi" unit="units/omnia_titan/armor_skins/omnia_titan_fbi/omnia_titan_fbi_fps" third_unit="units/omnia_titan/armor_skins/omnia_titan_fbi/omnia_titan_fbi" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic ASU-->
+	<PlayerStyle id="omnia_titan_fbi_classic" unit="units/omnia_titan/armor_skins/omnia_titan_fbi_classic/omnia_titan_fbi_classic_fps" third_unit="units/omnia_titan/armor_skins/omnia_titan_fbi_classic/omnia_titan_fbi_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Taser-->
+	<PlayerStyle id="omnia_titan_taser" unit="units/omnia_titan/armor_skins/omnia_titan_taser/omnia_titan_taser_fps" third_unit="units/omnia_titan/armor_skins/omnia_titan_taser/omnia_titan_taser" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic Taser-->
+	<PlayerStyle id="omnia_titan_taser_classic" unit="units/omnia_titan/armor_skins/omnia_titan_taser_classic/omnia_titan_taser_classic_fps" third_unit="units/omnia_titan/armor_skins/omnia_titan_taser_classic/omnia_titan_taser_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Cloaker-->
+	<PlayerStyle id="omnia_titan_spook" unit="units/omnia_titan/armor_skins/omnia_titan_spook/omnia_titan_spook_fps" third_unit="units/omnia_titan/armor_skins/omnia_titan_spook/omnia_titan_spook" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Bulldozer-->
+	<PlayerStyle id="omnia_titan_dozer" unit="units/omnia_titan/armor_skins/omnia_titan_dozer/omnia_titan_dozer_fps" third_unit="units/omnia_titan/armor_skins/omnia_titan_dozer/omnia_titan_dozer" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--LPF-->
+	<PlayerStyle id="omnia_titan_lpf" unit="units/omnia_titan/armor_skins/omnia_titan_lpf/omnia_titan_lpf_fps" third_unit="units/omnia_titan/armor_skins/omnia_titan_lpf/omnia_titan_lpf" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic LPF-->
+	<PlayerStyle id="omnia_titan_lpf_classic" unit="units/omnia_titan/armor_skins/omnia_titan_lpf_classic/omnia_titan_lpf_classic_fps" third_unit="units/omnia_titan/armor_skins/omnia_titan_lpf_classic/omnia_titan_lpf_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Elektra-->
+	<PlayerStyle id="omnia_phalanx_elektra" unit="units/omnia_titan/armor_skins/omnia_phalanx_elektra/omnia_phalanx_elektra_fps" third_unit="units/omnia_titan/armor_skins/omnia_phalanx_elektra/omnia_phalanx_elektra" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Molly-->
+	<PlayerStyle id="omnia_phalanx_molly" unit="units/omnia_titan/armor_skins/omnia_phalanx_molly/omnia_phalanx_molly_fps" third_unit="units/omnia_titan/armor_skins/omnia_phalanx_molly/omnia_phalanx_molly" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Doc-->
+	<PlayerStyle id="omnia_phalanx_doc" unit="units/omnia_titan/armor_skins/omnia_phalanx_doc/omnia_phalanx_doc_fps" third_unit="units/omnia_titan/armor_skins/omnia_phalanx_doc/omnia_phalanx_doc" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Phalanx Shield-->
+	<PlayerStyle id="omnia_phalanx_shield" unit="units/omnia_titan/armor_skins/omnia_phalanx_shield/omnia_phalanx_shield_fps" third_unit="units/omnia_titan/armor_skins/omnia_phalanx_shield/omnia_phalanx_shield" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Captain Summers-->
+	<PlayerStyle id="omnia_captain_summers" unit="units/omnia_titan/armor_skins/omnia_captain_summers/omnia_captain_summers_fps" third_unit="units/omnia_titan/armor_skins/omnia_captain_summers/omnia_captain_summers" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Captain Winters-->
+	<PlayerStyle id="omnia_captain_winters" unit="units/omnia_titan/armor_skins/omnia_captain_winters/omnia_captain_winters_fps" third_unit="units/omnia_titan/armor_skins/omnia_captain_winters/omnia_captain_winters" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Captain Spring-->
+	<PlayerStyle id="omnia_captain_spring" unit="units/omnia_titan/armor_skins/omnia_captain_spring/omnia_captain_spring_fps" third_unit="units/omnia_titan/armor_skins/omnia_captain_spring/omnia_captain_spring" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Captain Autumn-->
+	<PlayerStyle id="omnia_captain_autumn" unit="units/omnia_titan/armor_skins/omnia_captain_autumn/omnia_captain_autumn_fps" third_unit="units/omnia_titan/armor_skins/omnia_captain_autumn/omnia_captain_autumn" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<AddFiles directory="assets">
+	<!--SWAT Rifleman-->
+		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_titan_swat_rifle"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_swat_rifle/omnia_titan_swat_rifle"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_swat_rifle/omnia_titan_swat_rifle_fps"/>
+
+	<!--Classic SWAT Rifleman-->
+		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_titan_swat_rifle_classic"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_swat_rifle_classic/omnia_titan_swat_rifle_classic"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_swat_rifle_classic/omnia_titan_swat_rifle_classic_fps"/>
+
+	<!--SWAT Shotgunner-->
+		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_titan_swat_shotgun"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_swat_shotgun/omnia_titan_swat_shotgun"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_swat_shotgun/omnia_titan_swat_shotgun_fps"/>
+
+	<!--Classic SWAT Shotgunner-->
+		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_titan_swat_shotgun_classic"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_swat_shotgun_classic/omnia_titan_swat_shotgun_classic"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_swat_shotgun_classic/omnia_titan_swat_shotgun_classic_fps"/>
+
+	<!--Shield-->
+		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_titan_shield"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_shield/omnia_titan_shield"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_shield/omnia_titan_shield_fps"/>
+
+	<!--Classic Shield-->
+		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_titan_shield_classic"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_shield_classic/omnia_titan_shield_classic"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_shield_classic/omnia_titan_shield_classic_fps"/>
+
+	<!--Sniper-->
+		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_titan_sniper"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_sniper/omnia_titan_sniper"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_sniper/omnia_titan_sniper_fps"/>
+
+	<!--ASU-->
+		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_titan_fbi"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_fbi/omnia_titan_fbi"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_fbi/omnia_titan_fbi_fps"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_titan_fbi/asu_nm"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_titan_fbi/asu_df"/>
+
+	<!--Classic ASU-->
+		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_titan_fbi_classic"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_fbi_classic/omnia_titan_fbi_classic"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_fbi_classic/omnia_titan_fbi_classic_fps"/>
+
+	<!--Taser-->
+		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_titan_taser"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_taser/omnia_titan_taser"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_taser/omnia_titan_taser_fps"/>
+
+	<!--Classic Taser-->
+		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_titan_taser_classic"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_taser_classic/omnia_titan_taser_classic"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_taser_classic/omnia_titan_taser_classic_fps"/>
+
+	<!--Cloaker-->
+		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_titan_spook"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_spook/omnia_titan_spook"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_spook/omnia_titan_spook_fps"/>
+
+	<!--Bulldozer-->
+		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_titan_dozer"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_dozer/omnia_titan_dozer"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_dozer/omnia_titan_dozer_fps"/>
+
+	<!--LPF-->
+		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_titan_lpf"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_lpf/omnia_titan_lpf"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_lpf/omnia_titan_lpf_fps"/>
+
+	<!--Classic LPF-->
+		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_titan_lpf_classic"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_lpf_classic/omnia_titan_lpf_classic"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_lpf_classic/omnia_titan_lpf_classic_fps"/>
+
+	<!--Elektra-->
+		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_phalanx_elektra"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_phalanx_elektra/omnia_phalanx_elektra"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_phalanx_elektra/omnia_phalanx_elektra_fps"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_phalanx_elektra/bulldozer_df"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_phalanx_elektra/phalanx_taser_df"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_phalanx_elektra/phalanx_taser_face_df"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_phalanx_elektra/phalanx_taser_head_df"/>
+
+	<!--Molly-->
+		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_phalanx_molly"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_phalanx_molly/omnia_phalanx_molly"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_phalanx_molly/omnia_phalanx_molly_fps"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_phalanx_molly/gangmember_3_df"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_phalanx_molly/glass_op"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_phalanx_molly/phalanx_grenadier_df"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_phalanx_molly/phalanx_grenadier_face_nm"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_phalanx_molly/phalanx_grenadier_face_df"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_phalanx_molly/phalanx_grenadier_head_nm"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_phalanx_molly/phalanx_grenadier_head_df"/>
+
+	<!--Doc-->
+		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_phalanx_doc"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_phalanx_doc/omnia_phalanx_doc"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_phalanx_doc/omnia_phalanx_doc_fps"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_phalanx_doc/doctor_mask_df"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_phalanx_doc/phalanx_medic_df"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_phalanx_doc/phalanx_medic_face_df"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_phalanx_doc/security_df"/>
+
+	<!--Phalanx Shield-->
+		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_phalanx_shield"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_phalanx_shield/omnia_phalanx_shield"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_phalanx_shield/omnia_phalanx_shield_fps"/>
+
+	<!--Captain Summers-->
+		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_captain_summers"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_captain_summers/omnia_captain_summers"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_captain_summers/omnia_captain_summers_fps"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_captain_summers/summers_body_df"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_captain_summers/summers_face_nm"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_captain_summers/summers_face_df"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_captain_summers/summers_mask_nm"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_captain_summers/summers_mask_df"/>
+
+	<!--Captain Winters-->
+		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_captain_winters"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_captain_winters/omnia_captain_winters"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_captain_winters/omnia_captain_winters_fps"/>
+
+	<!--Captain Spring-->
+		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_captain_spring"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_captain_spring/omnia_captain_spring"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_captain_spring/omnia_captain_spring_fps"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_captain_spring/spring_nm"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_captain_spring/spring_df"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_captain_spring/heads_spring_nm"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_captain_spring/heads_spring_df"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_captain_spring/heads_spring_il"/>
+
+	<!--Captain Autumn-->
+		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_captain_autumn"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_captain_autumn/omnia_captain_autumn"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_captain_autumn/omnia_captain_autumn_fps"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_captain_autumn/autumn_nm"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_captain_autumn/autumn_df"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_captain_autumn/autumn_head_nm"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_captain_autumn/autumn_head_df"/>
+
+	<!--Shared Textures-->
+		<texture path="units/omnia_titan/armor_skins/shared_textures/ene_acc_phalanx_helmet_df"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/ene_mask_lpf_nm"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/ene_mask_lpf_df"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/ene_mask_lpf_il"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/ene_omnia_lpf_nm"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/ene_omnia_lpf_df"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/ene_phalanx_snp_df"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/ene_soldier_akan_1_nm"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/ene_soldier_akan_head_2_nm"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/ene_titan_fbi_df"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/ene_titan_fbi_head_df"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/ene_titan_rifle_df"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/ene_titan_shotgun_df"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/ene_titan_taser_df"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/glass_df"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/head_01_df"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/heads_atlas_df"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/heads_dozer_df"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/heads_dozer_il"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/helmets_atlas_df"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/helmets_omnia_atlas_nm"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/helmets_omnia_atlas_df"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/mask_df"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/mask_shield_df"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/mcm_hector_helmet_df"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/nvg_nm"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/nvg_df"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/phalanx_medic_head_df"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/spook_cloak_nm"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/spook_cloak_dead_df"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/spring_glass_op"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/titan_il"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/titan_glass_df"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/titan_glass_op"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/titan_swat_glass_blue_df"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/titan_swat_glass_red_df"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/vip_2_body_nm"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/vip_2_body_df"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/vip_body_nm"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/vip_body_df"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/vip_gear_nm"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/vip_gear_df"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/vip_gear_il"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/vip_head_nm"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/vip_head_df"/>
+	</AddFiles>
+</table>
