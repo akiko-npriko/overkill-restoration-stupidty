@@ -1,0 +1,409 @@
+<table name="Owen Gun" image="guis/owen" color="Color(0.4, 0.5, 1)">
+	<Localization directory="Loc" default="english.txt">
+		<loc file="english.txt" language="english"/>
+		<loc file="russian.txt" language="russian"/>
+	</Localization>
+	<AssetUpdates id="24014" version="1.12" provider="modworkshop"/>
+	<GlobalValue id="owen" color="Color(0.4, 0.5, 1)"/>
+	<WeaponMod id="wpn_fps_smg_owen_barrel" based_on="wpn_fps_ass_74_b_standard" type="barrel" unit="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_barrel" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_smg_owen_bolt" based_on="wpn_fps_smg_mac10_body_mac10" type="drag_handle" unit="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_bolt" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_smg_owen_mag" based_on="wpn_fps_bow_ecp_m_casing" type="magazine" unit="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_mag" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_smg_owen_up_rec" based_on="wpn_fps_bow_ecp_body_lower" type="upper_reciever" unit="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_up_rec" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_smg_owen_low_rec" based_on="wpn_fps_bow_ecp_body_lower" type="lower_reciever" unit="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_low_rec" drop="false" is_a_unlockable="false"/>
+	
+	<WeaponMod id="wpn_fps_smg_owen_stock" based_on="wpn_fps_bow_ecp_body_lower" type="stock" unit="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_stock" drop="false" is_a_unlockable="false"/>
+	
+	<WeaponMod id="wpn_fps_smg_owen_irons" based_on="wpn_fps_m4_uupg_o_flipup" type="sight" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" is_a_unlockable="false"/>
+	
+	<WeaponMod id="wpn_fps_smg_owen_rail" based_on="wpn_fps_shot_r870_ris_special" type="extra" unit="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_rail" drop="false" is_a_unlockable="false"/>
+	
+	<WeaponMod id="wpn_fps_smg_owen_b_43" based_on="wpn_fps_ass_74_b_standard" type="barrel" a_obj="a_b_43" unit="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_b_43" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+	<stats damage="1" recoil="-1" spread="1" concealment="-1"/>
+	<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_smg_owen_s_wood" based_on="wpn_fps_bow_ecp_body_lower" type="stock" unit="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_s_wood" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+	<stats recoil="2" concealment="-2"/>
+	<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_smg_owen_s_no" based_on="wpn_fps_bow_ecp_body_lower" type="stock" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+	<stats recoil="-2" spread="-2" concealment="3"/>
+	<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_smg_owen_low_window" based_on="wpn_fps_bow_ecp_body_lower" type="lower_reciever" unit="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_low_window" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+	<stats recoil="-1" spread="1" concealment="1"/>
+	<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_smg_owen_sling" based_on="wpn_fps_bow_ecp_body_lower" type="extra" unit="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_sling" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+	<adds>
+		<value_node value="wpn_fps_smg_owen_sling_parts"/>
+	</adds>
+	<stats  spread="1" concealment="-1"/>
+	<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_smg_owen_sling_parts" based_on="wpn_fps_bow_ecp_body_lower" type="extra" unit="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_sling_parts" drop="false" is_a_unlockable="false"/>
+	
+	<WeaponMod id="wpn_fps_smg_owen_m_double" based_on="wpn_fps_bow_ecp_m_casing" texture_bundle_folder="mods" type="magazine" unit="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_m_double" drop="false" is_a_unlockable="true">
+	<adds>
+		<value_node value="wpn_fps_smg_owen_strap"/>
+	</adds>
+	<stats  reload="3" concealment="-3"/>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_smg_owen_strap" based_on="wpn_fps_bow_ecp_m_casing" type="magazine" unit="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_strap" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_smg_owen_camo" based_on="wpn_fps_bow_ecp_body_lower" type="upper_reciever" unit="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_camo" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+    <override>
+		<wpn_fps_smg_owen_barrel unit="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_barrel"/>
+		<wpn_fps_smg_owen_bolt unit="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_bolt"/>
+		<wpn_fps_smg_owen_mag unit="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_mag"/>
+		<wpn_fps_smg_owen_low_rec unit="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_low_rec"/>
+		<wpn_fps_smg_owen_stock unit="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_stock"/>
+		<wpn_fps_smg_owen_b_43 unit="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_b_43"/>
+		<wpn_fps_smg_owen_s_wood unit="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_s_wood"/>
+		<wpn_fps_smg_owen_low_window unit="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_low_window"/>
+		<wpn_fps_smg_owen_m_double unit="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_m_double"/>
+	</override>    
+ 	<pcs/>
+	</WeaponMod>
+	
+	<Weapon unlock_level="50">
+		<weapon id="owen" based_on="schakal" CLIP_AMMO_MAX="33" NR_CLIPS_MAX="6" ammo_pickup="2" weapon_hold="schakal" lock_slide="true" texture_bundle_folder="mods" global_value="owen">
+			<stats damage="44" spread="15" spread_moving="8" recoil="16" concealment="22"/>
+			<fire_mode_data fire_rate="0.0857"/>
+		    <kick>
+				<standing>
+					<value_node value="0.3"/>
+					<value_node value="1.5"/>
+					<value_node value="-1.2"/>
+					<value_node value="1.2"/>
+				</standing>
+				<crouching>
+					<value_node value="0.3"/>
+					<value_node value="1.5"/>
+					<value_node value="-1.2"/>
+					<value_node value="1.2"/>
+				</crouching>
+				<steelsight>
+					<value_node value="0.3"/>
+					<value_node value="1.5"/>
+					<value_node value="-1.2"/>
+					<value_node value="1.2 "/>
+				</steelsight>
+			</kick> 
+			<timers reload_not_empty="3.35" reload_empty="4.5"/>
+            <sounds fire="owen_fire_single" fire_single="owen_fire_single" use_fix="true">
+				<reload wp_ecp_grab_lever="owen_fireselect" wp_ecp_pull_lever="owen_boltback" wp_ecp_grab_clip="owen_fetchmag" wp_ecp_remove_clip="owen_magremove" wp_ecp_take_new_clip="owen_rattle" wp_ecp_attach_clip="owen_magin" wp_ecp_hit_clip="owen_maghit"/>
+			</sounds>
+			<animations reload_name_id="ecp"/>
+		</weapon>
+		<factory id="wpn_fps_smg_owen" unit="units/mods/weapons/wpn_fps_smg_owen/wpn_fps_smg_owen">
+			<optional_types>
+				<value_node value="barrel_ext"/>
+				<value_node value="gadget"/>
+			</optional_types>
+			<adds/>
+			<override/>
+			<default_blueprint>
+				<value_node value="wpn_fps_smg_owen_barrel"/>
+				<value_node value="wpn_fps_smg_owen_bolt"/>
+				<value_node value="wpn_fps_smg_owen_mag"/>
+				<value_node value="wpn_fps_smg_owen_up_rec"/>
+				<value_node value="wpn_fps_smg_owen_low_rec"/>
+                <value_node value="wpn_fps_smg_owen_stock"/> 
+				<value_node value="wpn_fps_smg_owen_irons"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_smg_owen_barrel"/>
+				<value_node value="wpn_fps_smg_owen_bolt"/>
+				<value_node value="wpn_fps_smg_owen_mag"/>
+				<value_node value="wpn_fps_smg_owen_up_rec"/>
+				<value_node value="wpn_fps_smg_owen_low_rec"/>
+                <value_node value="wpn_fps_smg_owen_stock"/> 
+				<value_node value="wpn_fps_smg_owen_irons"/>
+				
+				<value_node value="wpn_fps_smg_owen_b_43"/>
+				<value_node value="wpn_fps_smg_owen_s_wood"/>
+				<value_node value="wpn_fps_smg_owen_s_no"/>
+				<value_node value="wpn_fps_smg_owen_low_window"/>
+				<value_node value="wpn_fps_smg_owen_sling"/>
+			    <value_node value="wpn_fps_smg_owen_m_double"/>
+			    <value_node value="wpn_fps_smg_owen_camo"/> 
+				
+            	<value_node value="wpn_fps_upg_i_singlefire"/>
+				<value_node value="wpn_fps_upg_i_autofire"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+			    <value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+			</uses_parts>
+		</factory>
+	</Weapon>
+	
+	<Sounds directory="Assets\sounds">
+		<sound id="owen_fire_single" path="owen_regular.ogg" prefix="regular"/>
+		<redirect id="owen_fire_single" to="sterling_fire_single" prefix="suppressed_a"/>
+		<redirect id="owen_fire_single" to="sterling_fire_single" prefix="suppressed_b"/>
+		<redirect id="owen_fire_single" to="sterling_fire_single" prefix="suppressed_c"/>
+		<sound id="owen_boltback" path="owen_boltback.ogg" prefix="first"/>
+		<sound id="owen_boltback" path="owen_boltback.ogg" prefix="third"/>
+		<sound id="owen_fetchmag" path="owen_fetchmag.ogg" prefix="first"/>
+		<sound id="owen_fetchmag" path="owen_fetchmag.ogg" prefix="third"/>
+		<sound id="owen_magfiddle" path="owen_magfiddle.ogg" prefix="first"/>
+		<sound id="owen_magfiddle" path="owen_magfiddle.ogg" prefix="third"/>
+		<sound id="owen_maghit" path="owen_maghit.ogg" prefix="first"/>
+		<sound id="owen_maghit" path="owen_maghit.ogg" prefix="third"/>
+		<sound id="owen_magin" path="owen_magin.ogg" prefix="first"/>
+		<sound id="owen_magin" path="owen_magin.ogg" prefix="third"/>
+		<sound id="owen_magremove" path="owen_magremove.ogg" prefix="first"/>
+		<sound id="owen_magremove" path="owen_magremove.ogg" prefix="third"/>
+		<sound id="owen_rattle" path="owen_rattle.ogg" prefix="first"/>
+		<sound id="owen_rattle" path="owen_rattle.ogg" prefix="third"/>
+		<sound id="owen_fireselect" path="owen_fireselect.ogg" prefix="first"/>
+		<sound id="owen_fireselect" path="owen_fireselect.ogg" prefix="third"/>
+		</Sounds>
+	<AddFiles directory="Assets">
+		<texture path="units/mods/weapons/wpn_fps_smg_owen_pts/owen_df"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_owen_pts/owen_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_owen_pts/sling_df"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_owen_pts/sling_nm"/>			
+		<texture path="units/mods/weapons/wpn_fps_smg_owen_pts/sling_parts_df"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_owen_pts/sling_parts_nm"/>	
+        <texture path="units/mods/weapons/wpn_fps_smg_owen_pts/strap_df"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_owen_pts/strap_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/camo_df"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/camo_nm"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_owen/wpn_fps_smg_owen"/>
+		<model path="units/mods/weapons/wpn_fps_smg_owen/wpn_fps_smg_owen"/>
+		<object path="units/mods/weapons/wpn_fps_smg_owen/wpn_fps_smg_owen"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_owen/wpn_fps_smg_owen"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_owen/wpn_fps_smg_owen_npc"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_rail"/>
+		<model path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_rail"/>
+		<object path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_rail"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_rail"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_rail"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_rail_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_barrel"/>
+		<model path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_barrel"/>
+		<object path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_barrel"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_barrel_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_bolt"/>
+		<model path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_bolt"/>
+		<object path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_bolt"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_bolt"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_bolt"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_bolt_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_low_rec"/>
+		<model path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_low_rec"/>
+		<object path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_low_rec"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_low_rec"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_low_rec"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_low_rec_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_mag"/>
+		<model path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_mag"/>
+		<object path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_mag"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_mag"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_mag"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_mag_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_s_wood"/>
+		<model path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_s_wood"/>
+		<object path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_s_wood"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_s_wood"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_s_wood"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_s_wood_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_low_window"/>
+		<model path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_low_window"/>
+		<object path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_low_window"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_low_window"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_low_window"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_low_window_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_up_rec"/>
+		<model path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_up_rec"/>
+		<object path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_up_rec"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_up_rec"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_up_rec"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_up_rec_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_stock"/>
+		<model path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_stock"/>
+		<object path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_stock"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_stock"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_stock"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_stock_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_sling"/>
+		<model path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_sling"/>
+		<object path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_sling"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_sling"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_sling"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_sling_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_sling_parts"/>
+		<model path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_sling_parts"/>
+		<object path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_sling_parts"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_sling_parts"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_sling_parts"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_sling_parts_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_b_43"/>
+		<model path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_b_43"/>
+		<object path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_b_43"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_b_43"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_b_43"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_b_43_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_m_double"/>
+		<model path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_m_double"/>
+		<object path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_m_double"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_m_double"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_m_double"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_m_double_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_strap"/>
+		<model path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_strap"/>
+		<object path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_strap"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_strap"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_strap"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/wpn_fps_smg_owen_strap_thq"/>
+
+		<!--CAMO-->
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_camo"/>
+		<model path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_camo"/>
+		<object path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_camo"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_camo"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_camo"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_camo_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_barrel"/>
+		<model path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_barrel"/>
+		<object path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_barrel"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_barrel_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_bolt"/>
+		<model path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_bolt"/>
+		<object path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_bolt"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_bolt"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_bolt"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_bolt_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_low_rec"/>
+		<model path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_low_rec"/>
+		<object path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_low_rec"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_low_rec"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_low_rec"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_low_rec_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_mag"/>
+		<model path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_mag"/>
+		<object path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_mag"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_mag"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_mag"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_mag_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_s_wood"/>
+		<model path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_s_wood"/>
+		<object path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_s_wood"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_s_wood"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_s_wood"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_s_wood_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_low_window"/>
+		<model path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_low_window"/>
+		<object path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_low_window"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_low_window"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_low_window"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_low_window_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_up_rec"/>
+		<model path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_up_rec"/>
+		<object path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_up_rec"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_up_rec"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_up_rec"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_up_rec_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_stock"/>
+		<model path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_stock"/>
+		<object path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_stock"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_stock"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_stock"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_stock_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_b_43"/>
+		<model path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_b_43"/>
+		<object path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_b_43"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_b_43"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_b_43"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_b_43_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_m_double"/>
+		<model path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_m_double"/>
+		<object path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_m_double"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_m_double"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_m_double"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_owen_pts/camo/wpn_fps_smg_owen_m_double_thq"/>
+		
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_owen_m_double"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_owen_b_43"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_owen_low_window"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_owen_sling"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_owen_s_wood"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_owen_camo"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_owen_s_no"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/owen"/>
+		<texture path="guis/owen"/>
+	</AddFiles>
+	<Hooks directory="Hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
+	</Hooks>
+</table>

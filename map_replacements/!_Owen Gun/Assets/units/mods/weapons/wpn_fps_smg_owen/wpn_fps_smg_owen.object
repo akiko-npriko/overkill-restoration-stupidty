@@ -1,0 +1,25 @@
+<dynamic_object>
+	<diesel orientation_object="rp_wpn_fps_bow_ecp" />
+	<animations>
+		<animation_group name="reload">
+			<object name="anim_reload_m" enabled="true" />
+			<object name="anim_reload_dh" enabled="true" />
+			<object name="anim_reload_meter_l" enabled="true" />
+			<object name="anim_reload_meter_r" enabled="true" />
+		</animation_group>
+		<animation_group name="reload_not_empty">
+			<object name="anim_reload_not_empty_m" enabled="true" />
+			<object name="anim_reload_not_empty_dh" enabled="true" />
+			<object name="anim_reload_not_empty_meter_l" enabled="true" />
+			<object name="anim_reload_not_empty_meter_r" enabled="true" />
+		</animation_group>
+		<animation_group name="recoil">
+			<object name="anim_recoil_m" enabled="true" />
+			<object name="anim_recoil_meter_r" enabled="true" />
+			<object name="anim_recoil_meter_l" enabled="true" />
+			<object name="anim_recoil_ejector_left" enabled="true" />
+			<object name="anim_recoil_ejector_right" enabled="true" />
+			<object name="anim_recoil_dh" enabled="true" />
+		</animation_group>
+	</animations>
+</dynamic_object>
