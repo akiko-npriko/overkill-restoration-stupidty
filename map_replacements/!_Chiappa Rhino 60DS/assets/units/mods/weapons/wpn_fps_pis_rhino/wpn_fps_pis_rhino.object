@@ -1,0 +1,15 @@
+<dynamic_object>
+	<diesel orientation_object="rp_wpn_fps_pis_chinchilla" />
+	<animations>  
+		<animation_group name="reload" enabled="false" >
+			<object name="clip_ejection_reload" enabled="true" />
+			<object name="anim_ejectorpin_reload" enabled="true" />
+			<object name="anim_speedloader_reload" enabled="true" />
+			<object name="anim_house_reload" enabled="true" />
+		</animation_group>
+		<animation_group name="recoil" enabled="false" >
+			<object name="anim_house_recoil" enabled="true" />
+			<object name="anim_cocking_lever_recoil" enabled="true" />
+		</animation_group>
+    </animations>
+</dynamic_object>

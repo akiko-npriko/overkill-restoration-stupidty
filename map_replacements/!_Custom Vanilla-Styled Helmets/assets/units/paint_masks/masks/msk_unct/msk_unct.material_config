@@ -1,0 +1,41 @@
+<materials version="3">
+	<material name="mtr_helmet" render_template="solid_mask" unique="true" version="2">
+		<diffuse_texture file="units/paint_masks/masks/msk_unct/unct_df" />
+		<bump_normal_texture file="units/paint_masks/masks/msk_mask_helmet/ene_mask_helm_nm" />
+		<reflection_texture file="units/payday2/matcaps/matcap_carbon_df" />
+		<material_texture file="units/payday2/masks/shared_textures/patterns/pattern_no_color_no_material_df" />
+        <variable type="vector3" name="tint_color_a" value="0 0 0"/>
+        <variable type="vector3" name="tint_color_b" value="0 0 0"/>
+		<variable value="1" type="scalar" name="material_amount" />
+	</material>
+	
+    <material unique="true" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE" version="2" name="mtr_glass_2">
+        <variable type="vector3" name="fresnel_settings" value="0 1 0.66999995708466"/>
+        <opacity_texture file="units/pd2_dlc_infamy/masks/msk_aviator/msk_aviator_glass_op"/>
+        <diffuse_texture file="units/paint_masks/masks/msk_unct/unct_df"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+    </material>
+	
+	<material name="mtr_head" render_template="solid_mask" unique="true" version="2">
+        <bump_normal_texture file="units/paint_masks/masks/shared_textures/heads_atlas_nm"/>
+        <diffuse_texture file="units/paint_masks/masks/shared_textures/heads_atlas_df"/>
+		<reflection_texture file="units/payday2/matcaps/matcap_matteblack_df" />
+	</material>	
+
+	<material name="mtr_helmet_accessories" render_template="solid_mask" unique="true" version="2">
+		<diffuse_texture file="units/paint_masks/masks/msk_unct/unct_df"/>
+		<bump_normal_texture file="units/paint_masks/masks/msk_usm2_helmet_tac/usm2_helmet_nm"/>
+		<reflection_texture file="units/payday2/matcaps/matcap_carbon_df" />
+	</material>	
+
+	<material name="mtr_straps" render_template="solid_mask" unique="true" version="2">
+		<diffuse_texture file="units/paint_masks/masks/msk_ct_jerome/ene_zeal_jerome_helmet_df" />
+		<bump_normal_texture file="units/paint_masks/masks/msk_ct_jerome/ene_zeal_jerome_helmet_nm" />
+		<reflection_texture file="units/payday2/matcaps/matcap_carbon_df" />
+		<material_texture file="units/payday2/masks/shared_textures/patterns/pattern_no_color_no_material_df" />
+		<variable value="0 1 0" type="vector3" name="tint_color_a" />
+		<variable value="1 0 1" type="vector3" name="tint_color_b" />
+		<variable value="1" type="scalar" name="material_amount" />
+	</material>
+	
+</materials>

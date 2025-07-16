@@ -1,0 +1,27 @@
+<materials version="3">
+	<material name="mtr_straps" render_template="solid_mask" unique="true" version="2">
+		<diffuse_texture file="units/paint_masks/masks/msk_blue_swat/helmet_straps_df" />
+		<bump_normal_texture file="units/pd2_crimefest_2016/nyck/masks/nyck_ace_mask/material_nyck_ace_nm" />
+		<reflection_texture file="units/payday2/matcaps/matcap_plastic_df" />
+		<material_texture file="units/payday2/masks/shared_textures/patterns/pattern_no_color_no_material_df" />
+		<variable value="0 0 0" type="vector3" name="tint_color_a" />
+		<variable value="0 0 0" type="vector3" name="tint_color_b" />
+		<variable value="1" type="scalar" name="material_amount" />
+	</material>
+	
+	<material name="mtr_helmet_accessories" render_template="solid_mask" unique="true" version="2">
+		<diffuse_texture file="units/paint_masks/masks/shared_textures/helmets_atlas_df"/>
+		<bump_normal_texture file="units/paint_masks/masks/shared_textures/helmets_atlas_nm"/>
+        <reflection_texture file="units/payday2/matcaps/matcap_plastic_df"/>
+	</material>
+	
+	<material name="mtr_helmet" render_template="solid_mask" unique="true" version="2">
+		<bump_normal_texture 	file="units/paint_masks/masks/shared_textures/helmets_atlas_nm" />
+		<diffuse_texture 		file="units/paint_masks/masks/shared_textures/helmets_atlas_df" />
+		<reflection_texture file="units/payday2/matcaps/matcap_carbon_df" />
+		<material_texture file="units/payday2/masks/shared_textures/patterns/pattern_no_color_no_material_df" />
+		<variable value="0 1 0" type="vector3" name="tint_color_a" />
+		<variable value="1 0 1" type="vector3" name="tint_color_b" />
+		<variable value="1" type="scalar" name="material_amount" />
+	</material>
+</materials>

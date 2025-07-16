@@ -1,0 +1,300 @@
+<table name="Merkel Drilling 961LS" image="guis/mod_icons/merkel" color="Color(0.01,0.62,0.98)">
+	<Localization directory="Loc" default="english.txt"/>
+	<AssetUpdates id="21682" version="1.05" provider="modworkshop"/>
+	<GlobalValue id="merkelmod" color="Color(0.7, 0.2, 0.1)"/>
+	<WeaponMod id="wpn_fps_snp_merkel_barrel" based_on="wpn_fps_shot_b682_b_long" type="barrel" unit="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_barrel" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_snp_merkel_body" based_on="wpn_fps_shot_b682_body_standard" type="lower_reciever" unit="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_body" drop="false" is_a_unlockable="false">
+		<adds>
+			<value_node value="wpn_fps_snp_merkel_body_hinge"/>
+		</adds>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_merkel_body_hinge" based_on="wpn_fps_shot_b682_b_long" type="hinge" unit="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_body_hinge" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_snp_merkel_body_hinge_silver" based_on="wpn_fps_shot_b682_b_long" type="hinge" unit="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_body_hinge_silver" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_snp_merkel_forend" based_on="wpn_fps_shot_b682_b_long" type="foregrip" unit="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_forend" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_snp_merkel_forend_light" based_on="wpn_fps_shot_b682_b_long" type="foregrip" unit="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_forend_light" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_snp_merkel_irons" based_on="wpn_fps_shot_b682_b_long" type="sight" unit="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_irons" drop="false" is_a_unlockable="false">
+		<stance_mod>
+			<wpn_fps_snp_merkel translation="0.05 3.5 4.034"/>
+		</stance_mod>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_merkel_sight_rail" based_on="wpn_fps_shot_b682_b_long" type="sight_rail" unit="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_sight_rail" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_snp_merkel_stock" based_on="wpn_fps_gre_m32_lower_reciever" type="stock" unit="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_stock" drop="false" is_a_unlockable="false">
+		<adds>
+			<value_node value="wpn_fps_snp_merkel_forend"/>
+		</adds>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_merkel_barrel_silver" based_on="wpn_fps_shot_b682_b_long" type="barrel" unit="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_upg_merkel_barrel_silver" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_merkel_body_silver" based_on="wpn_fps_shot_b682_body_standard" type="lower_reciever" unit="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_upg_merkel_body_silver" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<adds>
+			<value_node value="wpn_fps_snp_merkel_body_hinge_silver"/>
+		</adds>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_merkel_usoptics_sn3_moa" based_on="wpn_fps_upg_o_specter" type="sight" a_obj="a_o_sn3" texture_switch="false" unit="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_upg_merkel_usoptics_sn3_moa" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats zoom="8"/>
+		<ads_objects>
+			<value_node value="g_mount_ads"/>
+			<value_node value="g_sn3_ads"/>
+		</ads_objects>
+		<ads_objects_hide>
+			<value_node value="g_details"/>
+			<value_node value="g_sn3"/>
+			<value_node value="g_mount"/>
+		</ads_objects_hide>
+		<adds>
+			<value_node value="wpn_fps_snp_merkel_sight_rail"/>
+		</adds>
+		<stance_mod>
+			<wpn_fps_snp_merkel translation="0 -1 0.393"/>
+		</stance_mod>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_merkel_stock_light" based_on="wpn_fps_gre_m32_lower_reciever" type="stock" unit="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_upg_merkel_stock_light" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<adds>
+			<value_node value="wpn_fps_snp_merkel_forend_light"/>
+		</adds>
+		<pcs/>
+	</WeaponMod>
+<!-- temp - removed parts -->
+	<WeaponMod id="wpn_fps_upg_merkel_usoptics_sn3_mildot" based_on="wpn_fps_upg_o_specter" type="sight" drop="false" is_a_unlockable="false"/>
+<!-- -->
+	<Weapon unlock_level="85">
+		<weapon id="merkel" based_on="b682" DAMAGE="1" damage_near="nil" damage_far="nil" rays="nil" can_shoot_through_enemy="true" can_shoot_through_shield="true" can_shoot_through_wall="true" armor_piercing_chance="1" CLIP_AMMO_MAX="3" NR_CLIPS_MAX="6" weapon_hold="b682" texture_bundle_folder="mods" global_value="merkelmod">
+			<categories>
+				<value_node value="snp"/>
+			</categories>
+			<stats damage="105" spread="25" spread_moving="25" recoil="2" concealment="4" suppression="3"/>
+			<AMMO_PICKUP>
+				<value_node value="0.3"/>
+				<value_node value="0.7"/>
+			</AMMO_PICKUP>
+			<fire_mode_data fire_rate="0.8571428571428571"/>
+			<stats_modifiers damage="7"/>
+			<kick>
+				<standing>
+					<value_node value="5"/>
+					<value_node value="4.5"/>
+					<value_node value="-2.2"/>
+					<value_node value="2.2"/>
+				</standing>
+				<crouching>
+					<value_node value="5"/>
+					<value_node value="4.5"/>
+					<value_node value="-2.2"/>
+					<value_node value="2.2"/>
+				</crouching>
+				<steelsight>
+					<value_node value="5"/>
+					<value_node value="4.5"/>
+					<value_node value="-2.0"/>
+					<value_node value="2.0"/>
+				</steelsight>
+			</kick>
+			<sounds fire="merkel_fire"/>
+			<animations reload_name_id="b682"/>
+		</weapon>
+		<factory id="wpn_fps_snp_merkel" unit="units/mods/weapons/wpn_fps_snp_merkel/wpn_fps_snp_merkel">
+			<adds/>
+			<override>
+				<wpn_fps_addon_ris unit="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_gadget_rail" a_obj="a_b">
+					<animations reload_not_empty="reload" reload="reload"/>
+				</wpn_fps_addon_ris>
+			</override>
+			<default_blueprint>
+				<value_node value="wpn_fps_snp_merkel_barrel"/>
+				<value_node value="wpn_fps_snp_merkel_body"/>
+				<value_node value="wpn_fps_snp_merkel_stock"/>
+				<value_node value="wpn_fps_snp_merkel_irons"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_snp_merkel_barrel"/>
+				<value_node value="wpn_fps_snp_merkel_body"/>
+				<value_node value="wpn_fps_snp_merkel_stock"/>
+				<value_node value="wpn_fps_snp_merkel_irons"/>
+
+				<value_node value="wpn_fps_upg_merkel_barrel_silver"/>
+				<value_node value="wpn_fps_upg_merkel_body_silver"/>
+				<value_node value="wpn_fps_upg_merkel_usoptics_sn3_moa"/>
+				<value_node value="wpn_fps_upg_merkel_stock_light"/>
+
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+			</uses_parts>
+		</factory>
+		<stance>
+			<steelsight>
+				<shoulders rotation="-0 0 -0 -1" translation="-8.473 -5.624 1.477"/>
+			</steelsight>
+		</stance>
+	</Weapon>
+	<Sounds directory="Assets\sounds">
+		<sound id="merkel_fire" path="merkel_regular.ogg" prefix="regular"/>
+	</Sounds>
+	<AddFiles directory="Assets">
+		<texture path="units/mods/weapons/wpn_fps_snp_merkel_pts/textures/ammo_df"/>
+		<texture path="units/mods/weapons/wpn_fps_snp_merkel_pts/textures/ammo_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_snp_merkel_pts/textures/gadget_rail_df"/>
+		<texture path="units/mods/weapons/wpn_fps_snp_merkel_pts/textures/gadget_rail_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_snp_merkel_pts/textures/larue_mount_df"/>
+		<texture path="units/mods/weapons/wpn_fps_snp_merkel_pts/textures/larue_mount_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_snp_merkel_pts/textures/lens_df"/>
+		<texture path="units/mods/weapons/wpn_fps_snp_merkel_pts/textures/lens_op"/>
+		<texture path="units/mods/weapons/wpn_fps_snp_merkel_pts/textures/merkel_df"/>
+		<texture path="units/mods/weapons/wpn_fps_snp_merkel_pts/textures/merkel_mods_df"/>
+		<texture path="units/mods/weapons/wpn_fps_snp_merkel_pts/textures/merkel_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_snp_merkel_pts/textures/reticle_mao_df"/>
+		<texture path="units/mods/weapons/wpn_fps_snp_merkel_pts/textures/sightrail_df"/>
+		<texture path="units/mods/weapons/wpn_fps_snp_merkel_pts/textures/sightrail_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_snp_merkel_pts/textures/sn3_details_df"/>
+		<texture path="units/mods/weapons/wpn_fps_snp_merkel_pts/textures/sn3_df"/>
+		<texture path="units/mods/weapons/wpn_fps_snp_merkel_pts/textures/sn3_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_snp_merkel_pts/textures/winch1894_df"/>
+		<texture path="units/mods/weapons/wpn_fps_snp_merkel_pts/textures/winch1894_il"/>
+		<texture path="units/mods/weapons/wpn_fps_snp_merkel_pts/textures/winch1894_nm"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_snp_merkel/wpn_fps_snp_merkel"/>
+		<model path="units/mods/weapons/wpn_fps_snp_merkel/wpn_fps_snp_merkel"/>
+		<object path="units/mods/weapons/wpn_fps_snp_merkel/wpn_fps_snp_merkel"/>
+		<unit path="units/mods/weapons/wpn_fps_snp_merkel/wpn_fps_snp_merkel"/>
+		<unit path="units/mods/weapons/wpn_fps_snp_merkel/wpn_fps_snp_merkel_npc"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_barrel"/>
+		<model path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_barrel"/>
+		<object path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_barrel"/>
+		<unit path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_barrel_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_body"/>
+		<model path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_body"/>
+		<object path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_body"/>
+		<unit path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_body_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_body_hinge"/>
+		<model path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_body_hinge"/>
+		<object path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_body_hinge"/>
+		<unit path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_body_hinge"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_body_hinge"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_body_hinge_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_body_hinge_silver"/>
+		<model path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_body_hinge_silver"/>
+		<object path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_body_hinge_silver"/>
+		<unit path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_body_hinge_silver"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_body_hinge_silver"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_body_hinge_silver_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_forend"/>
+		<model path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_forend"/>
+		<object path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_forend"/>
+		<unit path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_forend"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_forend"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_forend_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_forend_light"/>
+		<model path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_forend_light"/>
+		<object path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_forend_light"/>
+		<unit path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_forend_light"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_forend_light"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_forend_light_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_gadget_rail"/>
+		<model path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_gadget_rail"/>
+		<object path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_gadget_rail"/>
+		<unit path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_gadget_rail"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_gadget_rail"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_gadget_rail_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_irons"/>
+		<model path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_irons"/>
+		<object path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_irons"/>
+		<unit path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_irons"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_irons"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_irons_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_sight_rail"/>
+		<model path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_sight_rail"/>
+		<object path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_sight_rail"/>
+		<unit path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_sight_rail"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_sight_rail"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_sight_rail_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_stock"/>
+		<model path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_stock"/>
+		<object path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_stock"/>
+		<unit path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_stock"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_stock"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_snp_merkel_stock_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_upg_merkel_barrel_silver"/>
+		<model path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_upg_merkel_barrel_silver"/>
+		<object path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_upg_merkel_barrel_silver"/>
+		<unit path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_upg_merkel_barrel_silver"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_upg_merkel_barrel_silver"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_upg_merkel_barrel_silver_thq"/>
+	
+		<cooked_physics path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_upg_merkel_body_silver"/>
+		<model path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_upg_merkel_body_silver"/>
+		<object path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_upg_merkel_body_silver"/>
+		<unit path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_upg_merkel_body_silver"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_upg_merkel_body_silver"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_upg_merkel_body_silver_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_upg_merkel_usoptics_sn3_moa"/>
+		<model path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_upg_merkel_usoptics_sn3_moa"/>
+		<object path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_upg_merkel_usoptics_sn3_moa"/>
+		<unit path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_upg_merkel_usoptics_sn3_moa"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_upg_merkel_usoptics_sn3_moa"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_upg_merkel_usoptics_sn3_moa_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_upg_merkel_stock_light"/>
+		<model path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_upg_merkel_stock_light"/>
+		<object path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_upg_merkel_stock_light"/>
+		<unit path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_upg_merkel_stock_light"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_upg_merkel_stock_light"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_upg_merkel_stock_light_thq"/>
+
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_merkel_body_silver"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_merkel_barrel_silver"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_merkel_usoptics_sn3_moa"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_merkel_stock_light"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/merkel"/>
+		<texture path="guis/mod_icons/merkel"/>
+	</AddFiles>
+	<Hooks directory="Hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
+	</Hooks>
+</table>

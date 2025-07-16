@@ -1,0 +1,185 @@
+<table name="Hecate AMP" image="guis/hecate" color="Color(0, 0.1, 0.5)">
+
+    <Localization directory="Localization" default="english.txt"/>
+	
+    <AssetUpdates id="19658" name="asset_updates" folder_name="Hecate AMP" provider="lastbullet"/>
+	
+    <GlobalValue id="hecatemod" color="Color(0, 0.1, 0.5)"/>
+	
+    <WeaponMod id="wpn_fps_snp_hecate_barrel" based_on="wpn_fps_snp_msr_b_standard" type="barrel" unit="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_barrel" drop="false" is_a_unlockable="false"/>
+
+    <WeaponMod id="wpn_fps_snp_hecate_body" based_on="wpn_fps_snp_msr_body_wood" type="stock" unit="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_body" drop="false" is_a_unlockable="false"/>
+
+    <WeaponMod id="wpn_fps_snp_hecate_mag" based_on="wpn_fps_snp_msr_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_mag" drop="false" is_a_unlockable="false">
+		<stats reload="-6"/>
+	</WeaponMod>
+
+    <WeaponMod id="wpn_fps_snp_hecate_bipod" based_on="wpn_fps_addon_ris" type="extra" unit="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_bipodopen" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats recoil="3"/>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_snp_hecate_a_HE" based_on="wpn_fps_ammo_type" type="ammo" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats damage="17"/>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_hecate_b_short" based_on="wpn_fps_snp_msr_b_standard" type="barrel" unit="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_b_short" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats damage="-20" recoil="4" concealment="5"/>
+		<pcs/>
+	</WeaponMod>
+	
+	<!--WeaponMod id="wpn_fps_upg_hecate_supp" based_on="wpn_fps_snp_model70_ns_suppressor" type="barrel_ext" unit="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_upg_hecate_supp" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats damage="-4" recoil="1"/>
+	</WeaponMod-->
+
+	<WeaponNew unlock_level="90">
+		<weapon id="hecate" based_on="msr" CLIP_AMMO_MAX="7" NR_CLIPS_MAX="2" texture_bundle_folder="mods" global_value="hecatemod" muzzleflash="effects/payday2/particles/weapons/50cal_auto_fps" shell_ejection="effects/payday2/particles/weapons/shells/shell_sniper_m95">
+			<stats damage="150" spread="25" spread_moving="21" recoil="5" concealment="0" suppression="2" alert_size="9"/>
+			<fire_mode_data fire_rate="1.333"/>
+			<stats_modifiers damage="20"/>
+			<AMMO_PICKUP>
+				<value_node value="0.05"/>
+				<value_node value="0.65"/>
+			</AMMO_PICKUP>
+			<kick>
+				<standing>
+					<value_node value="4.5"/>
+					<value_node value="2.5"/>
+					<value_node value="-1.0"/>
+					<value_node value="1.0"/>
+				</standing>
+				<crouching>
+					<value_node value="4.5"/>
+					<value_node value="2.5"/>
+					<value_node value="-1.0"/>
+					<value_node value="1.0"/>
+				</crouching>
+				<steelsight>
+					<value_node value="4.0"/>
+					<value_node value="2.8"/>
+					<value_node value="-1.0"/>
+					<value_node value="1.0"/>
+				</steelsight>
+			</kick>
+			<sounds fire="hecate_fire" use_fix="true"/>
+			<animations reload_name_id="msr" equip_id="equip_msr" recoil_steelsight="true"/>
+		</weapon>
+        <factory id="wpn_fps_snp_hecate" unit="units/mods/weapons/wpn_fps_snp_hecate/wpn_fps_snp_hecate">
+			<optional_types>
+				<value_node value="gadget"/>
+				<value_node value="sight"/>
+			</optional_types>
+			<default_blueprint>
+				<value_node value="wpn_fps_snp_hecate_barrel"/>
+				<value_node value="wpn_fps_snp_hecate_body"/>
+				<value_node value="wpn_fps_snp_hecate_mag"/>
+				<value_node value="wpn_fps_upg_o_shortdot"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_snp_hecate_barrel"/>
+				<value_node value="wpn_fps_snp_hecate_body"/>
+				<value_node value="wpn_fps_snp_hecate_mag"/>
+				<value_node value="wpn_fps_upg_o_shortdot"/>
+
+				<value_node value="wpn_fps_snp_hecate_bipod"/>
+				<value_node value="wpn_fps_snp_hecate_a_HE"/>
+				<value_node value="wpn_fps_snp_hecate_b_short"/>
+
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_leupold"/>
+				<value_node value="wpn_fps_upg_o_45iron"/>
+				<value_node value="wpn_fps_upg_o_45rds"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_box"/>
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+				<value_node value="wpn_fps_upg_o_45rds_v2"/>
+			</uses_parts>
+		</factory>
+		<stance/>
+	</WeaponNew>
+	<AddFiles directory="assets">
+		<texture path="units/mods/weapons/wpn_fps_snp_hecate_pts/hecate_df"/>
+		<texture path="units/mods/weapons/wpn_fps_snp_hecate_pts/hecate_nm"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_snp_hecate/wpn_fps_snp_hecate"/>
+		<model path="units/mods/weapons/wpn_fps_snp_hecate/wpn_fps_snp_hecate"/>
+		<object path="units/mods/weapons/wpn_fps_snp_hecate/wpn_fps_snp_hecate"/>
+		<unit path="units/mods/weapons/wpn_fps_snp_hecate/wpn_fps_snp_hecate"/>
+		<unit path="units/mods/weapons/wpn_fps_snp_hecate/wpn_fps_snp_hecate_npc"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_barrel"/>
+		<model path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_barrel"/>
+		<object path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_barrel"/>
+		<unit path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_barrel_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_body"/>
+		<model path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_body"/>
+		<object path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_body"/>
+		<unit path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_body_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_mag"/>
+		<model path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_mag"/>
+		<object path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_mag"/>
+		<unit path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_mag"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_mag"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_mag_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_bipodfolded"/>
+		<model path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_bipodfolded"/>
+		<object path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_bipodfolded"/>
+		<unit path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_bipodfolded"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_bipodfolded"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_bipodfolded_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_bipodopen"/>
+		<model path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_bipodopen"/>
+		<object path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_bipodopen"/>
+		<unit path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_bipodopen"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_bipodopen"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_bipodopen_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_b_short"/>
+		<model path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_b_short"/>
+		<object path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_b_short"/>
+		<unit path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_b_short"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_b_short"/>
+		<material_config path="units/mods/weapons/wpn_fps_snp_hecate_pts/wpn_fps_snp_hecate_b_short_thq"/>
+
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_snp_hecate_bipod"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_snp_hecate_a_HE"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_snp_hecate_b_short"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/hecate"/>
+		<texture path="guis/hecate"/>
+	</AddFiles>
+	
+	<Sounds directory="assets\soundbank">
+		<sound id="hecate_fire" path="fc4_as50.ogg" prefix="regular"/>
+	</Sounds>
+	
+	<Hooks directory="Hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+	</Hooks>
+	
+</table>

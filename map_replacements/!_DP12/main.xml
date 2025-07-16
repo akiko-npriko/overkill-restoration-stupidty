@@ -1,0 +1,419 @@
+<table name="DP12 Shotgun" image="guis/dp12" color="Color(0, 0.1, 0.5)">
+
+	<Localization directory="Localization" default="english.txt"/>
+	
+	<AssetUpdates id="23918" version="1.2" name="asset_updates" folder_name="DP12" provider="modworkshop"/>
+	
+ 
+	<GlobalValue id="dp12mod" color="Color(0.5, 0, 0)"/>
+	
+	<WeaponMod id="wpn_fps_sho_dp12_b_standard" based_on="wpn_fps_sho_ksg_body_standard" type="barrel" unit="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_b_standard" drop="false" is_a_unlockable="false" texture_bundle_folder="mods">
+		<adds/> 
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_sho_dp12_receiver" based_on="wpn_fps_sho_ksg_body_standard" type="lower_body" unit="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_receiver" drop="false" is_a_unlockable="false" texture_bundle_folder="mods">
+		<override/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_sho_dp12_toprail" based_on="wpn_fps_sho_ksg_body_standard" type="top_rail" unit="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_toprail" drop="false" is_a_unlockable="false" texture_bundle_folder="mods">
+		<override/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_sho_dp12_fg_standard" based_on="wpn_fps_sho_ksg_fg_standard" type="foregrip" unit="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_standard" drop="false" is_a_unlockable="false" texture_bundle_folder="mods">
+		<forbids>
+			<value_node value="wpn_fps_sho_ksg_fg_standard"/>
+		</forbids>
+		<adds>
+			<value_node value="wpn_fps_sho_dp12_vg_standard"/>
+		</adds>
+	</WeaponMod>
+		
+	<WeaponMod id="wpn_fps_sho_dp12_vg_standard" based_on="wpn_fps_sho_ksg_fg_standard" type="vertical_grip" unit="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_vg_standard" drop="false" is_a_unlockable="false" texture_bundle_folder="mods"/>
+		
+	<WeaponMod id="wpn_fps_sho_dp12_o_standard" based_on="wpn_fps_upg_o_dd_rear" type="sight" unit="units/pd2_dlc_gage_shot/weapons/wpn_fps_upg_o_dd/wpn_fps_upg_o_dd_rear" drop="false" is_a_unlockable="false" texture_bundle_folder="mods">
+		<forbids/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_sho_dp12_o_non" based_on="wpn_fps_upg_o_dd_rear" type="sight" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" is_a_unlockable="true" texture_bundle_folder="mods">
+		<stats concealment="1" recoil="0" />
+		<forbids>
+			<value_node value="wpn_fps_upg_o_dd_front"/>
+		</forbids>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_sho_dp12_m_standard" based_on="wpn_fps_sho_ksg_body_standard" type="magazine" unit="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_m_standard" drop="false" is_a_unlockable="false" texture_bundle_folder="mods">
+		<override/>
+	</WeaponMod>
+	<!-- I wish this would work
+	<WeaponMod id="wpn_fps_sho_dp12_m_standard" based_on="wpn_fps_shot_m37_m_standard" type="magazine2" unit="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_m_standard" drop="false" is_a_unlockable="false">
+		<animations reload="reload"/>
+		<override/>
+	</WeaponMod>
+	-->
+	
+	
+	
+	<WeaponMod id="wpn_fps_sho_dp12_ns_breacher" based_on="wpn_fps_sho_ksg_body_standard" type="barrel_ext" unit="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_ns_breacher" drop="false" is_a_unlockable="true" texture_bundle_folder="mods">
+		<stats concealment="-1" recoil="1" />
+		<override/>
+		<pcs/>
+	</WeaponMod>
+		
+	<WeaponMod id="wpn_fps_sho_dp12_fg_novg" based_on="wpn_fps_sho_ksg_fg_standard" type="foregrip" unit="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_novg" drop="false" is_a_unlockable="true" texture_bundle_folder="mods">
+		<stats concealment="2" recoil="-1" />
+		<forbids>
+			<value_node value="wpn_fps_sho_ksg_fg_standard"/>
+		</forbids>
+		<pcs/>
+	</WeaponMod>
+		
+	<WeaponMod id="wpn_fps_sho_dp12_fg_novg_rail" based_on="wpn_fps_sho_ksg_fg_standard" type="foregrip" unit="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_standard" drop="false" is_a_unlockable="true" texture_bundle_folder="mods">
+		<stats concealment="1" recoil="-1" />
+		<forbids>
+			<value_node value="wpn_fps_sho_ksg_fg_standard"/>
+		</forbids>
+		<override/>
+		<pcs/>
+	</WeaponMod>
+		
+	<WeaponMod id="wpn_fps_shot_dp12_norail" based_on="wpn_fps_sho_ksg_body_standard" type="top_rail" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" is_a_unlockable="true" texture_bundle_folder="mods">
+		<stats concealment="2" recoil="-1" />
+		<override>
+			<wpn_fps_sho_dp12_o_standard unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+		</override>
+		<forbids>
+			<value_node value="wpn_fps_sho_ksg_fg_standard"/>
+			<value_node value="wpn_fps_upg_o_specter"/>
+			<value_node value="wpn_fps_upg_o_aimpoint"/>
+			<value_node value="wpn_fps_upg_o_docter"/>
+			<value_node value="wpn_fps_upg_o_eotech"/>
+			<value_node value="wpn_fps_upg_o_t1micro"/>
+			<value_node value="wpn_fps_upg_o_cmore"/>
+			<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+			<value_node value="wpn_fps_upg_o_acog"/>
+			<value_node value="wpn_fps_upg_o_eotech_xps"/>
+			<value_node value="wpn_fps_upg_o_reflex"/>
+			<value_node value="wpn_fps_upg_o_rx01"/>
+			<value_node value="wpn_fps_upg_o_rx30"/>
+			<value_node value="wpn_fps_upg_o_cs"/>
+			<value_node value="wpn_fps_upg_o_spot"/>
+			<value_node value="wpn_fps_sho_dp12_o_non"/>
+			<value_node value="wpn_fps_upg_o_dd_front"/>
+			<value_node value="wpn_fps_upg_o_45rds"/>
+			<value_node value="wpn_fps_upg_o_45rds_v2"/>
+		</forbids>
+		<pcs/>
+	</WeaponMod>
+		
+	<WeaponMod id="wpn_fps_sho_dp12_m_ext" based_on="wpn_fps_sho_ksg_body_standard" type="magazine" unit="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_m_ext" drop="false" is_a_unlockable="true" texture_bundle_folder="mods">
+		<stats concealment="-1" extra_ammo="1" />
+		<override/>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_sho_dp12_b_ext" based_on="wpn_fps_sho_ksg_body_standard" type="barrel" unit="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_b_ext" drop="false" is_a_unlockable="true" texture_bundle_folder="mods">
+		<stats concealment="-1" spread="1" />
+		<override>
+			<wpn_fps_sho_dp12_ns_breacher a_obj="a_bxt_long"/>
+		</override>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_sho_dp12_receiver_od" based_on="wpn_fps_sho_ksg_body_standard" type="lower_body" unit="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_receiver_od" drop="false" is_a_unlockable="true" texture_bundle_folder="mods">
+		<override>
+			<wpn_fps_sho_dp12_fg_novg unit="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_novg_od"/>
+			<wpn_fps_sho_dp12_fg_standard unit="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_od"/>
+			<wpn_fps_sho_dp12_fg_novg_rail unit="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_od"/>
+		</override>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_sho_dp12_receiver_fde" based_on="wpn_fps_sho_ksg_body_standard" type="lower_body" unit="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_receiver_fde" drop="false" is_a_unlockable="true" texture_bundle_folder="mods">
+		<override>
+			<wpn_fps_sho_dp12_fg_novg unit="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_novg_fde"/>
+			<wpn_fps_sho_dp12_fg_standard unit="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_fde"/>
+			<wpn_fps_sho_dp12_fg_novg_rail unit="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_fde"/>
+		</override>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_sho_dp12_so_quiet" based_on="wpn_fps_upg_a_custom_free" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" type="sound" has_description="true" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+	<sound_switch suppressed="regular_a"/>
+	   <stats damage="0"/>
+	   <pcs/>
+    </WeaponMod>
+	
+	<Weapon unlock_level="70">
+		<weapon id="dp12" based_on="ksg" weapon_hold="ksg" CLIP_AMMO_MAX="7" NR_CLIPS_MAX="4" ammo_pickup="1" tactical_reload="1" DAMAGE="6" damage_near="2500" damage_far="3500" rays="24" texture_bundle_folder="mods" global_value="dp12mod">
+			<stats damage="200" spread="15" spread_moving="15" recoil="7" concealment="15" suppression="2" alert_size="7"/>
+			<fire_mode_data fire_rate="0.5454545454545455"/>
+			<AMMO_PICKUP>
+					<value_node value="0.3"/>
+					<value_node value="1"/>
+			</AMMO_PICKUP>
+			<kick>
+				<standing>
+					<value_node value="3.9"/>
+					<value_node value="4"/>
+					<value_node value="-0.4"/>
+					<value_node value="0.4"/>
+				</standing>
+				<crouching>
+					<value_node value="3.9"/>
+					<value_node value="4"/>
+					<value_node value="-0.4"/>
+					<value_node value="0.4"/>
+				</crouching>
+				<steelsight>
+					<value_node value="3"/>
+					<value_node value="3.5"/>
+					<value_node value="-0.2"/>
+					<value_node value="0.2"/>
+				</steelsight>
+			</kick>
+			<shake fire_multiplier="3" fire_steelsight_multiplier="3"/>
+			<timers unequip="0.5" equip="0.7"/>
+			<sounds fire="dp12_fire" dryfire="shotgun_dryfire" use_fix="true"> 
+				<reload wp_reinbeck_reload_cock="dp12_reload_cock_louder" wp_reinbeck_shell_insert="dp12_shell_insert"/>
+			</sounds>
+			<animations reload_name_id="ksg" reload_shell_by_shell="true"/>
+		</weapon>
+        <factory id="wpn_fps_sho_dp12" unit="units/mods/weapons/wpn_fps_sho_dp12/wpn_fps_sho_dp12">
+			<animations reload_exit="reload_exit" fire="recoil" fire_steelsight="recoil"/>
+			<optional_types>
+				<value_node value="barrel_ext"/>
+				<value_node value="gadget"/>
+				<value_node value="vertical_grip"/>
+			</optional_types>
+			<override>
+				<wpn_fps_addon_ris unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+				<wpn_fps_ak_extra_ris unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+				<wpn_fps_upg_a_slug>
+					<custom_stats/>
+				</wpn_fps_upg_a_slug>
+				<wpn_fps_upg_a_explosive>
+					<custom_stats/>
+				</wpn_fps_upg_a_explosive>
+				<wpn_fps_upg_a_dragons_breath>
+					<custom_stats/>
+				</wpn_fps_upg_a_dragons_breath>
+			</override>
+			<default_blueprint>
+				<value_node value="wpn_fps_sho_dp12_b_standard"/>
+				<value_node value="wpn_fps_sho_dp12_receiver"/>
+				<value_node value="wpn_fps_sho_dp12_fg_standard"/>
+				<value_node value="wpn_fps_sho_dp12_toprail"/>
+				<value_node value="wpn_fps_sho_dp12_m_standard"/>
+				<value_node value="wpn_fps_sho_dp12_o_standard"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_sho_dp12_b_standard"/>
+				<value_node value="wpn_fps_sho_dp12_receiver"/>
+				<value_node value="wpn_fps_sho_dp12_fg_standard"/>
+				<value_node value="wpn_fps_sho_dp12_vg_standard"/>
+				<value_node value="wpn_fps_sho_dp12_toprail"/>
+				<value_node value="wpn_fps_sho_dp12_m_standard"/>
+				<value_node value="wpn_fps_sho_dp12_o_standard"/>
+				
+				<value_node value="wpn_fps_sho_dp12_receiver_fde"/>
+				<value_node value="wpn_fps_sho_dp12_receiver_od"/>
+				
+				<value_node value="wpn_fps_shot_dp12_norail"/>
+				<value_node value="wpn_fps_sho_dp12_m_ext"/>
+				<value_node value="wpn_fps_sho_dp12_b_ext"/>
+				<value_node value="wpn_fps_sho_dp12_ns_breacher"/>
+				
+				<value_node value="wpn_fps_sho_dp12_fg_novg"/>
+				<value_node value="wpn_fps_sho_dp12_fg_novg_rail"/>
+				<value_node value="wpn_fps_sho_dp12_o_non"/>
+				
+				<value_node value="wpn_fps_sho_dp12_so_quiet"/>
+				
+				<value_node value="wpn_fps_upg_a_slug"/>
+				<value_node value="wpn_fps_upg_a_custom"/>
+				<value_node value="wpn_fps_upg_a_custom_free"/> 
+				<value_node value="wpn_fps_upg_a_explosive"/>
+				<value_node value="wpn_fps_upg_a_piercing"/>
+				<value_node value="wpn_fps_upg_a_dragons_breath"/>
+				<!--
+				<value_node value="wpn_fps_upg_ns_shot_thick"/>
+				<value_node value="wpn_fps_upg_ns_shot_shark"/>
+				<value_node value="wpn_fps_upg_shot_ns_king"/>
+				<value_node value="wpn_fps_upg_ns_sho_salvo_large"/>
+				<value_node value="wpn_fps_upg_ns_duck"/>
+				 -->
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_45rds"/>
+				<value_node value="wpn_fps_upg_o_45rds_v2"/>
+			</uses_parts>
+		</factory>
+		<stance>		
+			<steelsight>
+				<shoulders translation="-7.346 -15.469 0.689"/>
+			</steelsight>
+		</stance>
+	</Weapon>
+	
+	<Sounds directory="assets\sounds">
+		<sound id="dp12_fire" path="dp12_fire.ogg"   		prefix="regular"/>
+		<sound id="dp12_fire" path="dp12_fire_quiet.ogg"   	prefix="regular_a"/>
+		<sound id="dp12_fire" path="dp12_fire_s.ogg" prefix="suppressed_a"/>
+		<sound id="dp12_fire" path="dp12_fire_s.ogg" prefix="suppressed_b"/>
+		<sound id="dp12_fire" path="dp12_fire_s.ogg" prefix="suppressed_c"/>
+		<sound id="dp12_reload_cock_louder" path="dp12_reload_cock_metal.ogg" prefix="first"/> <!-- Thanks for the pump sounds @AF Definta! -->
+		<sound id="dp12_reload_cock_louder" path="dp12_reload_cock_metal.ogg" prefix="third"/>
+		<sound id="dp12_shell_insert" 		path="dp12_shell_insert.ogg" prefix="first"/>
+		<sound id="dp12_shell_insert" 		path="dp12_shell_insert.ogg" prefix="third"/>
+	</Sounds>
+	
+	
+	<AddFiles directory="assets">
+		<cooked_physics path="units/mods/weapons/wpn_fps_sho_dp12/wpn_fps_sho_dp12"/>
+		<model path="units/mods/weapons/wpn_fps_sho_dp12/wpn_fps_sho_dp12"/>
+		<object path="units/mods/weapons/wpn_fps_sho_dp12/wpn_fps_sho_dp12"/>
+		<unit path="units/mods/weapons/wpn_fps_sho_dp12/wpn_fps_sho_dp12"/>
+		<unit path="units/mods/weapons/wpn_fps_sho_dp12/wpn_fps_sho_dp12_npc"/>
+		
+		<texture path="units/mods/weapons/wpn_fps_sho_dp12_pts/dp12_standard_df"/>
+		<texture path="units/mods/weapons/wpn_fps_sho_dp12_pts/dp12_od_df"/>
+		<texture path="units/mods/weapons/wpn_fps_sho_dp12_pts/dp12_fde_df"/>
+		<texture path="units/mods/weapons/wpn_fps_sho_dp12_pts/dp12_standard_nm"/>
+
+		<material_config path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_mat_standard"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_mat_standard_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_mat_standard_cc"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_mat_standard_cc_thq"/>
+		
+		<material_config path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_mat_od"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_mat_od_thq"/>
+		
+		<material_config path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_mat_fde"/>
+		<material_config path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_mat_fde_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_receiver"/>
+		<model path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_receiver"/>
+		<object path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_receiver"/>
+		<unit path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_receiver"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_receiver_od"/>
+		<model path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_receiver_od"/>
+		<object path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_receiver_od"/>
+		<unit path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_receiver_od"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_receiver_fde"/>
+		<model path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_receiver_fde"/>
+		<object path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_receiver_fde"/>
+		<unit path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_receiver_fde"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_standard"/>
+		<model path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_standard"/>
+		<object path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_standard"/>
+		<unit path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_standard"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_od"/>
+		<model path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_od"/>
+		<object path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_od"/>
+		<unit path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_od"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_fde"/>
+		<model path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_fde"/>
+		<object path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_fde"/>
+		<unit path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_fde"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_vg_standard"/>
+		<model path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_vg_standard"/>
+		<object path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_vg_standard"/>
+		<unit path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_vg_standard"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_b_standard"/>
+		<model path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_b_standard"/>
+		<object path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_b_standard"/>
+		<unit path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_b_standard"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_b_ext"/>
+		<model path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_b_ext"/>
+		<object path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_b_ext"/>
+		<unit path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_b_ext"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_toprail"/>
+		<model path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_toprail"/>
+		<object path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_toprail"/>
+		<unit path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_toprail"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_m_standard"/>
+		<model path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_m_standard"/>
+		<object path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_m_standard"/>
+		<unit path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_m_standard"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_m_ext"/>
+		<model path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_m_ext"/>
+		<object path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_m_ext"/>
+		<unit path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_m_ext"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_ns_breacher"/>
+		<model path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_ns_breacher"/>
+		<object path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_ns_breacher"/>
+		<unit path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_ns_breacher"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_novg"/>
+		<model path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_novg"/>
+		<object path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_novg"/>
+		<unit path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_novg"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_novg_fde"/>
+		<model path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_novg_fde"/>
+		<object path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_novg_fde"/>
+		<unit path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_novg_fde"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_novg_od"/>
+		<model path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_novg_od"/>
+		<object path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_novg_od"/>
+		<unit path="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_fg_novg_od"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_shell/wpn_fps_shell_dp12"/>
+		<model path="units/mods/weapons/wpn_fps_shell/wpn_fps_shell_dp12"/>
+		<object path="units/mods/weapons/wpn_fps_shell/wpn_fps_shell_dp12"/>
+		<unit path="units/mods/weapons/wpn_fps_shell/wpn_fps_shell_dp12"/>
+		
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_sho_dp12_b_ext"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_sho_dp12_fg_novg"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_sho_dp12_fg_novg_rail"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_sho_dp12_m_ext"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_sho_dp12_ns_breacher"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_sho_dp12_o_non"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_sho_dp12_receiver_fde"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_sho_dp12_receiver_od"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_shot_dp12_norail"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_sho_dp12_so_quiet"/>
+		
+		<texture path="guis/textures/pd2/blackmarket/icons/weapons/outline/dp12"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/dp12"/>
+		
+	</AddFiles>
+	
+	<Hooks directory="Hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
+		<hook file="playertweakdata.lua"        source_file="lib/tweak_data/playertweakdata"/>
+	</Hooks>
+</table>

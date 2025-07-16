@@ -1,0 +1,105 @@
+<table name="toy1911" image="guis/toy1911" color="Color(0.01,0.62,0.98)">
+	<Localization directory="Loc" default="english.txt"/>
+	<GlobalValue id="toy1911" color="Color(1, 0.5, 0)"/>
+
+	<WeaponMod id="wpn_fps_pis_toy1911_frame" based_on="wpn_fps_pis_packrat_body_standard" type="lower_reciever" unit="units/mods/weapons/wpn_fps_pis_toy1911_pts/wpn_fps_pis_toy1911_frame" drop="false" is_a_unlockable="false"/>
+
+    	 <WeaponMod based_on="wpn_fps_pis_packrat_body_standard" id="wpn_fps_pis_toy1911_frame_green" unit="units/mods/weapons/wpn_fps_pis_toy1911_pts/wpn_fps_pis_toy1911_frame_green" texture_bundle_folder="mods" type="comp" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_pis_toy1911_mag" based_on="wpn_fps_pis_packrat_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_pis_toy1911_pts/wpn_fps_pis_toy1911_mag" drop="false" is_a_unlockable="false">
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_toy1911_slide" based_on="wpn_fps_pis_packrat_sl_standard" type="slide" unit="units/mods/weapons/wpn_fps_pis_toy1911_pts/wpn_fps_pis_toy1911_slide" drop="false" is_a_unlockable="false"/>
+
+	<Weapon unlock_level="43">
+		<weapon id="toy1911" based_on="packrat" CLIP_AMMO_MAX="70" NR_CLIPS_MAX="10" muzzleflash="effects/payday2/particles/weapons/shells/shell_empty" 	shell_ejection="effects/payday2/particles/weapons/shells/shell_empty" lock_slide="true" texture_bundle_folder="mods" global_value="toy1911">
+			<stats damage="3" spread="16" recoil="99" concealment="29" suppression="1"/>
+    			<fire_mode_data fire_rate="0.09"/>
+			<sounds fire="toy1911_fire"/>
+			<animations reload_name_id="packrat"/>
+		</weapon>
+		<factory id="wpn_fps_pis_toy1911" unit="units/mods/weapons/wpn_fps_pis_toy1911/wpn_fps_pis_toy1911">
+			<animations reload="reload" reload_not_empty="reload_not_empty" fire="recoil" fire_steelsight="recoil" magazine_empty="last_recoil"/>
+			<optional_types>
+				<value_node value="barrel_ext"/>
+				<value_node value="gadget"/>
+			</optional_types>
+			<default_blueprint>
+				<value_node value="wpn_fps_pis_toy1911_frame"/>
+				<value_node value="wpn_fps_pis_toy1911_frame_green"/>
+				<value_node value="wpn_fps_pis_toy1911_mag"/>
+				<value_node value="wpn_fps_pis_toy1911_slide"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_pis_toy1911_frame"/>
+				<value_node value="wpn_fps_pis_toy1911_frame_green"/>
+				<value_node value="wpn_fps_pis_toy1911_mag"/>
+				<value_node value="wpn_fps_pis_toy1911_slide"/>
+			</uses_parts>
+		</factory>
+		<stance/>
+	</Weapon>
+
+	<Sounds directory="assets\sounds">
+    	<sound id="toy1911_fire" path="toy1911_fire.ogg" prefix="regular"/>
+	</Sounds>
+
+	<AddFiles directory="Assets">
+		<texture path="units/mods/weapons/wpn_fps_pis_toy1911_pts/green_df"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_toy1911_pts/green_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_toy1911_pts/slide_df"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_toy1911_pts/slide_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_toy1911_pts/toy1911_df"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_toy1911_pts/toy1911_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_toy1911_pts/battery_df"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_toy1911_pts/battery_nm"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_toy1911/wpn_fps_pis_toy1911"/>
+		<model path="units/mods/weapons/wpn_fps_pis_toy1911/wpn_fps_pis_toy1911"/>
+		<object path="units/mods/weapons/wpn_fps_pis_toy1911/wpn_fps_pis_toy1911"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_toy1911/wpn_fps_pis_toy1911"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_toy1911/wpn_fps_pis_toy1911_npc"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_x_toy1911/wpn_fps_pis_x_toy1911"/>
+		<model path="units/mods/weapons/wpn_fps_pis_x_toy1911/wpn_fps_pis_x_toy1911"/>
+		<object path="units/mods/weapons/wpn_fps_pis_x_toy1911/wpn_fps_pis_x_toy1911"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_x_toy1911/wpn_fps_pis_x_toy1911"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_x_toy1911/wpn_fps_pis_x_toy1911_npc"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_toy1911_pts/wpn_fps_pis_toy1911_frame"/>
+		<model path="units/mods/weapons/wpn_fps_pis_toy1911_pts/wpn_fps_pis_toy1911_frame"/>
+		<object path="units/mods/weapons/wpn_fps_pis_toy1911_pts/wpn_fps_pis_toy1911_frame"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_toy1911_pts/wpn_fps_pis_toy1911_frame"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_toy1911_pts/wpn_fps_pis_toy1911_frame"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_toy1911_pts/wpn_fps_pis_toy1911_frame_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_toy1911_pts/wpn_fps_pis_toy1911_frame_green"/>
+		<model path="units/mods/weapons/wpn_fps_pis_toy1911_pts/wpn_fps_pis_toy1911_frame_green"/>
+		<object path="units/mods/weapons/wpn_fps_pis_toy1911_pts/wpn_fps_pis_toy1911_frame_green"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_toy1911_pts/wpn_fps_pis_toy1911_frame_green"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_toy1911_pts/wpn_fps_pis_toy1911_frame_green"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_toy1911_pts/wpn_fps_pis_toy1911_frame_green_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_toy1911_pts/wpn_fps_pis_toy1911_mag"/>
+		<model path="units/mods/weapons/wpn_fps_pis_toy1911_pts/wpn_fps_pis_toy1911_mag"/>
+		<object path="units/mods/weapons/wpn_fps_pis_toy1911_pts/wpn_fps_pis_toy1911_mag"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_toy1911_pts/wpn_fps_pis_toy1911_mag"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_toy1911_pts/wpn_fps_pis_toy1911_mag"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_toy1911_pts/wpn_fps_pis_toy1911_mag_thq"/>
+
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_toy1911_pts/wpn_fps_pis_toy1911_slide"/>
+		<model path="units/mods/weapons/wpn_fps_pis_toy1911_pts/wpn_fps_pis_toy1911_slide"/>
+		<object path="units/mods/weapons/wpn_fps_pis_toy1911_pts/wpn_fps_pis_toy1911_slide"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_toy1911_pts/wpn_fps_pis_toy1911_slide"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_toy1911_pts/wpn_fps_pis_toy1911_slide"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_toy1911_pts/wpn_fps_pis_toy1911_slide_thq"/>
+
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/toy1911"/>
+		<texture path="guis/toy1911"/>
+	</AddFiles>
+	<Hooks directory="Hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+                                    <hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
+	</Hooks>
+</table>

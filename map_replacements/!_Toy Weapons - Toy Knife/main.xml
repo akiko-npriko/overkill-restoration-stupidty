@@ -1,0 +1,24 @@
+<table name="toyknife">
+	<Localization directory="Localization" default="english.txt">	
+	</Localization>
+	<Melee id="toyknife" based_on="kabar" unit="units/mods/weapons/wpn_mel_toyknife/wpn_mel_toyknife" third_unit="units/mods/weapons/wpn_mel_toyknife/wpn_mel_toyknife"texture_bundle_folder="mods">
+	<stats min_damage="1" weapon_type="sharp" max_damage="1" charge_time="1" min_damage_effect="0.1" max_damage_effect="0.1" range="150" concealment="30"/>
+	</Melee>	
+	<AddFiles directory="assets">
+        <cooked_physics path="units/mods/weapons/wpn_mel_toyknife/wpn_mel_toyknife"/>
+        <model path="units/mods/weapons/wpn_mel_toyknife/wpn_mel_toyknife"/>
+        <object path="units/mods/weapons/wpn_mel_toyknife/wpn_mel_toyknife"/>
+        <unit path="units/mods/weapons/wpn_mel_toyknife/wpn_mel_toyknife"/>
+        <material_config path="units/mods/weapons/wpn_mel_toyknife/wpn_mel_toyknife"/>
+
+        <cooked_physics path="units/mods/weapons/wpn_mel_toyknife/wpn_third_mel_toyknife"/>
+        <model path="units/mods/weapons/wpn_mel_toyknife/wpn_third_mel_toyknife"/>
+        <object path="units/mods/weapons/wpn_mel_toyknife/wpn_third_mel_toyknife"/>
+        <unit path="units/mods/weapons/wpn_mel_toyknife/wpn_third_mel_toyknife"/>
+        <material_config path="units/mods/weapons/wpn_mel_toyknife/wpn_third_mel_toyknife"/>
+
+        <texture path="units/mods/weapons/wpn_mel_toyknife/wpn_mel_toyknife_df"/>
+        <texture path="units/mods/weapons/wpn_mel_toyknife/wpn_mel_toyknife_nm"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/melee_weapons/toyknife"/>
+	</AddFiles>
+</table>

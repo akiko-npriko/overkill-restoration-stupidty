@@ -1,0 +1,370 @@
+<mod name="AMT Automag .44" author="Matthelzor" color="Color(1, 0.5, 0)">
+
+    <AssetUpdates id="21366" version="3.1" provider="modworkshop"/>
+    <Localization directory="Localization" default="english.txt">
+    </Localization>
+    
+    <GlobalValue id="amt" color="Color(1, 0.5, 0)"/>	
+	<!-- standard/main parts -->
+	
+	<WeaponMod id="wpn_fps_pis_amt_body_standard" based_on="wpn_fps_pis_deagle_body_standard" type="lower_reciever" unit="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_body_standard" wpn_pts="wpn_fps_pis_amt" hidden="true" ver="2">
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_amt_m_standard" based_on="wpn_fps_pis_deagle_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_m_standard" wpn_pts="wpn_fps_pis_amt" hidden="true" ver="2"/>	
+	
+	<WeaponMod id="wpn_fps_pis_amt_b_standard" based_on="wpn_fps_pis_deagle_b_standard" type="slide" unit="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_b_standard" wpn_pts="wpn_fps_pis_amt" hidden="true" ver="2"/>
+	
+	<WeaponMod id="wpn_fps_pis_amt_g_standard" based_on="wpn_fps_pis_deagle_g_standard" type="grip" unit="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_standard" wpn_pts="wpn_fps_pis_amt" hidden="true" ver="2"/>
+	
+	<WeaponMod id="wpn_fps_pis_amt_irons" based_on="wpn_fps_smg_polymer_o_iron" type="sight" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" wpn_pts="wpn_fps_pis_amt"  hidden="true" ver="2"/>
+		
+	<!-- attachments -->
+	
+	<WeaponMod based_on="wpn_fps_upg_ns_pis_ipsccomp" id="wpn_fps_pis_amt_comp" texture_bundle_folder="mods" unit="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_comp" type="barrel_ext" drop="true" is_a_unlockable="true"/>
+
+    <WeaponMod id="wpn_fps_pis_amt_body_standard_gold" based_on="wpn_fps_pis_deagle_body_standard" unit="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_body_standard_gold" type="lower_reciever" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" ver="2">
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_pis_amt_a_357" based_on="wpn_fps_ammo_type" type="ammo" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" 	texture_bundle_folder="mods" is_a_unlockable="true" ver="2">
+		<stats damage="50" recoil="-2"/>
+		<custom_stats ammo_pickup_min_mul = "0.8"  ammo_pickup_max_mul = "0.8" />
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_pis_amt_a_44" based_on="wpn_fps_ammo_type" type="ammo" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" 	texture_bundle_folder="mods" is_a_unlockable="true" ver="2">
+		<stats total_ammo_mod="-4"/>
+		<custom_stats armor_piercing_add="1" can_shoot_through_enemy="true" can_shoot_through_shield="true" can_shoot_through_wall="true" ammo_pickup_min_mul = "0.5"  ammo_pickup_max_mul = "0.5"/>
+	</WeaponMod>
+		
+	<WeaponMod id="wpn_fps_pis_amt_extra" based_on="wpn_fps_pis_deagle_extra" type="extra" unit="units/pd2_dlc_gage_jobs/weapons/wpn_fps_pis_deagle_extra/wpn_fps_pis_deagle_extra" drop="false"  texture_bundle_folder="mods" is_a_unlockable="true" a_obj="a_quite" ver="2">
+			<override>
+			  <wpn_fps_pis_amt_body_standard>
+				<adds/>
+			  </wpn_fps_pis_amt_body_standard>
+			  <!-- <wpn_fps_pis_amt_body_standard_gold> -->
+				<!-- <adds/> -->
+			  <!-- </wpn_fps_pis_amt_body_standard_gold> -->
+			  <wpn_fps_pis_rage_o_adapter a_obj="a_quite"/>
+			</override>
+		<stats value="2"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_pis_amt_m_extended" based_on="wpn_fps_pis_deagle_m_extended" type="magazine" unit="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_m_extended" drop="false" 	texture_bundle_folder="mods" is_a_unlockable="true" ver="2">
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_pis_amt_g_smooth" based_on="wpn_fps_pis_deagle_g_ergo" type="grip" unit="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_smooth" drop="false" 	texture_bundle_folder="mods" is_a_unlockable="true" ver="2">
+		<stats recoil="1" spread="0"/>
+	</WeaponMod>
+
+     <WeaponMod id="wpn_fps_pis_amt_g_rosewood" based_on="wpn_fps_pis_deagle_g_ergo" type="grip" unit="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_rosewood" drop="false" 	texture_bundle_folder="mods" is_a_unlockable="true" ver="2">
+		<stats spread="1" recoil="0"/>
+	</WeaponMod>
+
+     <WeaponMod id="wpn_fps_pis_amt_b_long" based_on="wpn_fps_pis_deagle_b_long" type="slide" unit="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_b_long" drop="false" 	texture_bundle_folder="mods" is_a_unlockable="true" ver="2">
+		<stats spread="2" recoil="-2" concealment="-3"/>
+		<override>
+			  <wpn_fps_pis_amt_b_long>
+				<forbids/>
+			  </wpn_fps_pis_amt_b_long>
+		</override>
+	</WeaponMod>
+	
+	<Weapon unlock_level="65">
+		<weapon id="amt" based_on="deagle" weapon_hold="deagle" CLIP_AMMO_MAX="7" NR_CLIPS_MAX="8" global_value="amt">
+			<stats damage="180" spread="20" recoil="8" concealment="27"/>
+			<fire_mode_data fire_rate="0.25"/>
+			<animations reload_name_id="deagle"/>
+		</weapon>
+        <factory id="wpn_fps_pis_amt" unit="units/mods/weapons/wpn_fps_pis_amt/wpn_fps_pis_amt">
+			<animations reload="reload" fire="recoil" fire_steelsight="recoil" reload_not_empty="reload_not_empty" magazine_empty="last_recoil"/>
+			<override/>
+			<default_blueprint>
+				<value_node value="wpn_fps_pis_amt_body_standard"/> <!-- body -->
+				<value_node value="wpn_fps_pis_amt_m_standard"/> <!-- body -->
+				<value_node value="wpn_fps_pis_amt_b_standard"/> <!-- body -->
+				<value_node value="wpn_fps_pis_amt_g_standard"/> <!-- body -->
+				<value_node value="wpn_fps_pis_amt_irons"/> <!-- sight -->
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_pis_amt_a_357"/>
+				<value_node value="wpn_fps_pis_amt_a_44"/>
+				<value_node value="wpn_fps_pis_amt_body_standard"/> <!-- body -->
+				<value_node value="wpn_fps_pis_amt_m_standard"/> <!-- body -->
+				<value_node value="wpn_fps_pis_amt_b_standard"/> <!-- body -->
+				<value_node value="wpn_fps_pis_amt_g_rosewood"/> <!-- rosewood grip -->			
+				<value_node value="wpn_fps_pis_amt_g_smooth"/> <!-- checkered grip -->	
+				<value_node value="wpn_fps_pis_amt_g_standard"/> <!-- body -->
+				<value_node value="wpn_fps_pis_amt_b_long"/> <!-- barrel long -->
+				<value_node value="wpn_fps_pis_amt_comp"/> 
+				<!-- <value_node value="wpn_fps_pis_amt_body_standard_gold"/> -->
+				<value_node value="wpn_fps_pis_amt_m_extended"/>
+				<value_node value="wpn_fps_pis_amt_irons"/>		
+				<value_node value="wpn_fps_upg_ns_pis_medium_slim"/> <!-- extension -->
+				<value_node value="wpn_fps_upg_ns_pis_small"/> <!-- extension -->
+				<value_node value="wpn_fps_upg_ns_pis_medium"/> <!-- extension -->
+				<value_node value="wpn_fps_upg_ns_pis_large"/> <!-- extension -->
+				<value_node value="wpn_fps_upg_ns_pis_medium_gem"/> <!-- extension -->
+				<value_node value="wpn_fps_upg_ns_pis_large_kac"/> <!-- extension -->
+				<value_node value="wpn_fps_upg_ns_ass_filter"/> <!-- extension -->
+				<value_node value="wpn_fps_upg_ns_pis_jungle"/> <!-- extension -->
+				<value_node value="wpn_fps_upg_ns_pis_meatgrinder"/> <!-- extension -->
+				<value_node value="wpn_fps_upg_pis_ns_flash"/> <!-- extension -->
+				<value_node value="wpn_fps_upg_ns_pis_ipsccomp"/> <!-- extension -->
+				
+				<value_node value="wpn_fps_upg_fl_pis_x400v"/> <!-- gadgets -->
+				<value_node value="wpn_fps_upg_fl_pis_laser"/> <!-- gadgets -->
+				<value_node value="wpn_fps_upg_fl_pis_tlr1"/> <!-- gadgets -->
+				<value_node value="wpn_fps_upg_fl_pis_crimson"/> <!-- gadgets -->
+				<value_node value="wpn_fps_upg_fl_pis_m3x"/> <!-- gadgets -->
+				
+				<value_node value="wpn_fps_pis_deagle_lock"/> <!--sight mount -->
+				<value_node value="wpn_fps_pis_amt_extra"/> <!--sight mount -->
+				<value_node value="wpn_fps_pis_rage_o_adapter"/> <!-- sight mount -->
+				
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/> <!-- optic gadget -->
+				<value_node value="wpn_fps_upg_o_sig"/> <!-- optic gadget -->
+				
+				<value_node value="wpn_fps_upg_o_specter"/> <!-- optic -->
+				<value_node value="wpn_fps_upg_o_aimpoint"/> <!-- optic -->
+				<value_node value="wpn_fps_upg_o_docter"/> <!-- optic -->
+				<value_node value="wpn_fps_upg_o_eotech"/> <!-- optic -->
+				<value_node value="wpn_fps_upg_o_t1micro"/> <!-- optic -->
+				<value_node value="wpn_fps_upg_o_cmore"/> <!-- optic -->
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/> <!-- optic -->
+				<value_node value="wpn_fps_upg_o_acog"/> <!-- optic -->
+				<value_node value="wpn_fps_upg_o_eotech_xps"/> <!-- optic -->
+				<value_node value="wpn_fps_upg_o_reflex"/> <!-- optic -->
+				<value_node value="wpn_fps_upg_o_rx01"/> <!-- optic -->
+				<value_node value="wpn_fps_upg_o_rx30"/> <!-- optic -->
+				<value_node value="wpn_fps_upg_o_cs"/> <!-- optic -->
+				<!-- <value_node value="wpn_fps_upg_o_rmr"/> <!-- optic -->
+				<value_node value="wpn_fps_upg_o_spot"/> <!-- optic -->
+				<value_node value="wpn_fps_upg_o_bmg"/> <!-- optic -->
+				<value_node value="wpn_fps_upg_o_uh"/> <!-- optic -->
+				<value_node value="wpn_fps_upg_o_fc1"/> <!-- optic -->
+				<!-- <value_node value="wpn_fps_upg_o_rms"/> <!-- optic -->
+				<!-- <value_node value="wpn_fps_upg_o_rikt"/> <!-- optic -->
+				<value_node value="wpn_fps_upg_o_tf90"/> <!-- optic -->
+				<value_node value="wpn_fps_upg_o_poe"/> <!-- optic -->
+			</uses_parts>
+		</factory>
+		<stance>
+			<standard>
+				<shoulders rotation="-0.00600737 0.00548587 0.000909496 -0.999967" translation="-1.322 -10.65 -0.501" />
+			</standard>
+			<crouched>
+				<shoulders rotation="-0.00600737 0.00548587 0.000909496 -0.999967" translation="-3.072 -12.65 -1.001"/>
+			</crouched>
+			<steelsight>
+				<shoulders rotation="-0.0103702 0.00548151 0.000929271 -0.999931" translation="-8.592 -5.667 1.644"/>
+			</steelsight> 
+		</stance>	
+	</Weapon>
+
+	
+	<Sounds directory="assets\sounds">
+		<sound id="amt_fire" path="amt_fire.ogg" prefix="regular"/>
+		<redirect id="amt_fire" to="deagle_fire" prefix="suppressed_a"/>
+		<redirect id="amt_fire" to="deagle_fire" prefix="suppressed_b"/>
+		<redirect id="amt_fire" to="deagle_fire" prefix="suppressed_c"/>
+	</Sounds>
+	
+    <AddFiles directory="assets">
+
+
+     <!-- main section -->
+        <cooked_physics path="units/mods/weapons/wpn_fps_pis_amt/wpn_fps_pis_amt"/>
+        <model path="units/mods/weapons/wpn_fps_pis_amt/wpn_fps_pis_amt"/>
+        <object path="units/mods/weapons/wpn_fps_pis_amt/wpn_fps_pis_amt"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_amt/wpn_fps_pis_amt"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_amt/wpn_fps_pis_amt_npc"/>
+     
+	 <!-- body -->
+	 
+        <cooked_physics path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_body_standard"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_body_standard"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_body_standard_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_body_standard_cc"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_body_standard_cc_thq"/>
+        <model path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_body_standard"/>
+        <object path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_body_standard"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_body_standard"/>
+
+    <!-- body -->
+        
+        <cooked_physics path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_standard"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_standard"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_standard_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_standard_cc"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_standard_cc_thq"/>
+        <model path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_standard"/>
+        <object path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_standard"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_standard"/>
+
+    <!-- body -->
+        <cooked_physics path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_m_standard"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_m_standard"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_m_standard_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_m_standard_cc"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_m_standard_cc_thq"/>
+        <model path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_m_standard"/>
+        <object path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_m_standard"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_m_standard"/>
+
+
+    <!-- body -->
+        <cooked_physics path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_b_standard"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_b_standard"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_b_standard_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_b_standard_cc"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_b_standard_cc_thq"/>
+        <model path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_b_standard"/>
+        <object path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_b_standard"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_b_standard"/>
+
+    <!-- body -->
+        <cooked_physics path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_standard"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_standard"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_standard_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_standard_cc"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_standard_cc_thq"/>
+        <model path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_standard"/>
+        <object path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_standard"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_standard"/>
+
+    <!-- long barrel -->
+        <cooked_physics path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_b_long"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_b_long"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_b_long_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_b_long_cc"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_b_long_cc_thq"/>
+        <model path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_b_long"/>
+        <object path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_b_long"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_b_long"/>
+			
+	<!-- rosewood grip -->
+	
+        <cooked_physics path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_rosewood"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_rosewood"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_rosewood_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_rosewood_cc"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_rosewood_cc_thq"/>
+        <model path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_rosewood"/>
+        <object path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_rosewood"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_rosewood"/>
+		
+	<!-- smooth grip -->
+	
+        <cooked_physics path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_smooth"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_smooth"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_smooth_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_smooth_cc"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_smooth_cc_thq"/>
+        <model path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_smooth"/>
+        <object path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_smooth"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_g_smooth"/>
+		
+	<!-- extended mag -->
+        <cooked_physics path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_m_extended"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_m_extended"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_m_extended_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_m_extended_cc"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_m_extended_cc_thq"/>
+        <model path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_m_extended"/>
+        <object path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_m_extended"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_m_extended"/>
+	
+	<!-- compensator -->
+	    <cooked_physics path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_comp"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_comp"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_comp_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_comp_cc"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_comp_cc_thq"/>
+        <model path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_comp"/>
+        <object path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_comp"/>
+        <unit path="units/mods/weapons/wpn_fps_pis_amt_pts/wpn_fps_pis_amt_comp"/>
+		
+	<!-- golden texture swap, seriously what the fuck was i thinking while making this, goddamn capitalists. -->
+	
+        <!-- <cooked_physics path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_b_standard_gold"/> -->
+        <!-- <material_config path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_b_standard_gold"/> -->
+        <!-- <material_config path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_b_standard_gold_thq"/> -->
+        <!-- <model path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_b_standard_gold"/> -->
+        <!-- <object path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_b_standard_gold"/> -->
+        <!-- <unit path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_b_standard_gold"/> -->
+		
+        <!-- <cooked_physics path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_b_long_gold"/> -->
+        <!-- <material_config path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_b_long_gold"/> -->
+        <!-- <material_config path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_b_long_gold_thq"/> -->
+        <!-- <model path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_b_long_gold"/> -->
+        <!-- <object path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_b_long_gold"/> -->
+        <!-- <unit path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_b_long_gold"/> -->
+		
+        <!-- <cooked_physics path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_g_smooth_gold"/> -->
+        <!-- <material_config path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_g_smooth_gold"/> -->
+        <!-- <material_config path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_g_smooth_gold_thq"/> -->
+        <!-- <model path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_g_smooth_gold"/> -->
+        <!-- <object path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_g_smooth_gold"/> -->
+        <!-- <unit path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_g_smooth_gold"/> -->
+		
+        <!-- <cooked_physics path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_m_standard_gold"/> -->
+        <!-- <material_config path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_m_standard_gold"/> -->
+        <!-- <material_config path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_m_standard_gold_thq"/> -->
+        <!-- <model path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_m_standard_gold"/> -->
+        <!-- <object path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_m_standard_gold"/> -->
+        <!-- <unit path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_m_standard_gold"/>	 -->
+		
+        <!-- <cooked_physics path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_m_extended_gold"/> -->
+        <!-- <material_config path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_m_extended_gold"/> -->
+        <!-- <material_config path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_m_extended_gold_thq"/> -->
+        <!-- <model path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_m_extended_gold"/> -->
+        <!-- <object path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_m_extended_gold"/> -->
+        <!-- <unit path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_m_extended_gold"/> -->
+		
+        <!-- <cooked_physics path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_body_standard_gold"/> -->
+        <!-- <material_config path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_body_standard_gold"/> -->
+        <!-- <material_config path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_body_standard_gold_thq"/> -->
+        <!-- <model path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_body_standard_gold"/> -->
+        <!-- <object path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_body_standard_gold"/> -->
+        <!-- <unit path="units/mods/weapons/wpn_fps_pis_amt_gold/wpn_fps_pis_amt_body_standard_gold"/> -->
+		
+	<!-- textures -->
+        <texture path="units/mods/weapons/wpn_fps_pis_amt_pts/body_df"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_amt_pts/body_df_cc"/>
+        <texture path="units/mods/weapons/wpn_fps_pis_amt_pts/body_nm"/>
+        <texture path="units/mods/weapons/wpn_fps_pis_amt_pts/grip_df"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_amt_pts/grip_df_cc"/>
+        <texture path="units/mods/weapons/wpn_fps_pis_amt_pts/grip_nm"/>
+	    <texture path="units/mods/weapons/wpn_fps_pis_amt_pts/rosewoodgrip_df"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_amt_pts/rosewoodgrip_df_cc"/>
+        <texture path="units/mods/weapons/wpn_fps_pis_amt_pts/rosewoodgrip_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_amt_pts/smooth_df"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_amt_pts/smooth_df_cc"/>
+        <texture path="units/mods/weapons/wpn_fps_pis_amt_pts/smooth_nm"/>
+	    <texture path="units/mods/weapons/wpn_fps_pis_amt_gold/smoothgold_df"/>
+        <texture path="units/mods/weapons/wpn_fps_pis_amt_gold/smoothgold_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_amt_gold/goldenautomag_df"/>
+        <texture path="units/mods/weapons/wpn_fps_pis_amt_gold/goldenautomag_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_amt_pts/comp_df"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_amt_pts/comp_df_cc"/>
+        <texture path="units/mods/weapons/wpn_fps_pis_amt_pts/comp_nm"/>
+		
+    <!-- base weapon icon -->
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/amt"/>
+    <!-- modification icons -->
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_amt_b_long"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_amt_g_rosewood"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_amt_g_smooth"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_amt_b_long"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_amt_comp"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_amt_m_extended"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_amt_a_44"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_amt_a_357"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_amt_extra"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_amt_body_standard_gold"/>
+    </AddFiles>
+	<Hooks directory="hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
+	</Hooks>
+	
+</mod>

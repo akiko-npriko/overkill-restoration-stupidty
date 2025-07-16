@@ -1,0 +1,94 @@
+    <table name="toym16">
+    <Localization directory="Localization" default="english.txt">
+    </Localization>
+    <GlobalValue id="toym16" color="Color(1, 0.5, 0)"/>
+
+   	 <WeaponMod based_on="wpn_fps_m4_lower_reciever" id="wpn_fps_ass_toym16_body_standard" unit="units/mods/weapons/wpn_fps_ass_toym16_pts/wpn_fps_ass_toym16_body_standard" type="stock" drop="false" is_a_unlockable="false"/>
+    	 <WeaponMod based_on="wpn_fps_m4_lower_reciever" id="wpn_fps_ass_toym16_body_tan" unit="units/mods/weapons/wpn_fps_ass_toym16_pts/wpn_fps_ass_toym16_body_tan" texture_bundle_folder="mods" type="lower_reciever" drop="true" is_a_unlockable="false"/>
+  	 <WeaponMod based_on="wpn_fps_m4_uupg_m_std_vanilla" id="wpn_fps_ass_toym16_m_standard" unit="units/mods/weapons/wpn_fps_ass_toym16_pts/wpn_fps_ass_toym16_m_standard" type="magazine" drop="false" is_a_unlockable="false"/>
+  	 <WeaponMod based_on="wpn_fps_ass_asval_b_standard" id="wpn_fps_ass_toym16_b_standard" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" texture_bundle_folder="mods"  type="barrel" drop="false" is_a_unlockable="true">
+		<pcs/>
+	</WeaponMod>
+
+	<Weapon id="toym16" fac_id="wpn_fps_ass_toym16" based_on="amcar" unlock_level="5" CLIP_AMMO_MAX="120" NR_CLIPS_MAX="50" muzzleflash="effects/payday2/particles/weapons/shells/shell_empty" 	shell_ejection="effects/payday2/particles/weapons/shells/shell_empty"unit="units/mods/weapons/wpn_fps_ass_toym16/wpn_fps_ass_toym16" texture_bundle_folder="mods" global_value="toym16" >
+	<fire_mode_data fire_rate="0.12"/>
+	<sounds fire="toym16_fire_single" fire_single="toym16_fire_single" use_fix="true"/>
+	<stats damage="6" spread="18" recoil="99" concealment="20" suppression="1"/>
+        	<optional_types>
+            		<value_node value="barrel_ext"/>
+            		<value_node value="gadget"/>
+       	 </optional_types>
+	<default_blueprint>
+		<value_node value="wpn_fps_ass_toym16_body_standard"/> <!-- body -->
+		<value_node value="wpn_fps_ass_toym16_body_tan"/> <!-- body -->
+		<value_node value="wpn_fps_ass_toym16_m_standard"/> <!-- mag -->
+	</default_blueprint>
+	<uses_parts>
+		<value_node value="wpn_fps_ass_toym16_b_standard"/> <!-- body -->
+		<value_node value="wpn_fps_ass_toym16_body_standard"/> <!-- body -->
+		<value_node value="wpn_fps_ass_toym16_body_tan"/> <!-- body -->
+		<value_node value="wpn_fps_ass_toym16_m_standard"/> <!-- mag -->
+		<value_node value="wpn_fps_upg_i_singlefire"/>
+		<value_node value="wpn_fps_upg_i_autofire"/>
+	</uses_parts>
+
+  
+        <animations reload_name_id="amcar" equip_id="equip_amcar" recoil_steelsight="true">
+        </animations>
+ </Weapon>
+
+	<Sounds directory="assets\sounds">
+		<sound id="toym16_fire_single" path="toym16_fire_loud.ogg" prefix="regular"/>
+		<sound id="toym16_fire_single" path="toym16_fire.ogg" prefix="suppressed_a"/>
+		<sound id="toym16_fire_single" path="toym16_fire.ogg" prefix="suppressed_b"/>
+		<sound id="toym16_fire_single" path="toym16_fire.ogg" prefix="suppressed_c"/>
+	</Sounds>
+
+    <AddFiles directory="assets">
+    
+        <cooked_physics path="units/mods/weapons/wpn_fps_ass_toym16/wpn_fps_ass_toym16"/>
+        <model path="units/mods/weapons/wpn_fps_ass_toym16/wpn_fps_ass_toym16"/>
+        <object path="units/mods/weapons/wpn_fps_ass_toym16/wpn_fps_ass_toym16"/>
+        <unit path="units/mods/weapons/wpn_fps_ass_toym16/wpn_fps_ass_toym16"/>
+        <unit path="units/mods/weapons/wpn_fps_ass_toym16/wpn_fps_ass_toym16_npc"/>
+
+        <texture path="units/mods/weapons/wpn_fps_ass_toym16_pts/body_df"/>
+        <texture path="units/mods/weapons/wpn_fps_ass_toym16_pts/orange_df"/>
+        <texture path="units/mods/weapons/wpn_fps_ass_toym16_pts/body_nm"/>
+        <texture path="units/mods/weapons/wpn_fps_ass_toym16_pts/mag_df"/>
+        <texture path="units/mods/weapons/wpn_fps_ass_toym16_pts/mag_nm"/>
+        <texture path="units/mods/weapons/wpn_fps_ass_toym16_pts/battery_df"/>
+        <texture path="units/mods/weapons/wpn_fps_ass_toym16_pts/battery_nm"/>
+
+        <cooked_physics path="units/mods/weapons/wpn_fps_ass_toym16_pts/wpn_fps_ass_toym16_body_standard"/>
+        <material_config path="units/mods/weapons/wpn_fps_ass_toym16_pts/wpn_fps_ass_toym16_body_standard"/>
+        <material_config path="units/mods/weapons/wpn_fps_ass_toym16_pts/wpn_fps_ass_toym16_body_standard_thq"/>
+        <model path="units/mods/weapons/wpn_fps_ass_toym16_pts/wpn_fps_ass_toym16_body_standard"/>
+        <object path="units/mods/weapons/wpn_fps_ass_toym16_pts/wpn_fps_ass_toym16_body_standard"/>
+        <unit path="units/mods/weapons/wpn_fps_ass_toym16_pts/wpn_fps_ass_toym16_body_standard"/>
+
+        <cooked_physics path="units/mods/weapons/wpn_fps_ass_toym16_pts/wpn_fps_ass_toym16_body_tan"/>
+        <material_config path="units/mods/weapons/wpn_fps_ass_toym16_pts/wpn_fps_ass_toym16_body_tan"/>
+        <material_config path="units/mods/weapons/wpn_fps_ass_toym16_pts/wpn_fps_ass_toym16_body_tan_thq"/>
+        <model path="units/mods/weapons/wpn_fps_ass_toym16_pts/wpn_fps_ass_toym16_body_tan"/>
+        <object path="units/mods/weapons/wpn_fps_ass_toym16_pts/wpn_fps_ass_toym16_body_tan"/>
+        <unit path="units/mods/weapons/wpn_fps_ass_toym16_pts/wpn_fps_ass_toym16_body_tan"/>
+
+        <cooked_physics path="units/mods/weapons/wpn_fps_ass_toym16_pts/wpn_fps_ass_toym16_m_standard"/>
+        <material_config path="units/mods/weapons/wpn_fps_ass_toym16_pts/wpn_fps_ass_toym16_m_standard"/>
+        <material_config path="units/mods/weapons/wpn_fps_ass_toym16_pts/wpn_fps_ass_toym16_m_standard_thq"/>
+        <model path="units/mods/weapons/wpn_fps_ass_toym16_pts/wpn_fps_ass_toym16_m_standard"/>
+        <object path="units/mods/weapons/wpn_fps_ass_toym16_pts/wpn_fps_ass_toym16_m_standard"/>
+        <unit path="units/mods/weapons/wpn_fps_ass_toym16_pts/wpn_fps_ass_toym16_m_standard"/>
+
+        
+    <!-- icons -->
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/toym16"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_toym16_b_standard"/>
+        
+    </AddFiles>
+	<Hooks directory="hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+                                    <hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
+	</Hooks>
+</table>

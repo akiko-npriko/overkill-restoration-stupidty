@@ -1,0 +1,22 @@
+<table name="doz1">
+
+    <Localization directory="Localization" default="english.txt">
+    </Localization>
+     
+    <GlobalValue id="doz1" color="Color(1, 0.5, 0)"/>
+     
+    <Mask id="doz1" unit="units/mods/masks/msk_doz1/msk_doz1" texture_bundle_folder="mods" global_value="doz1" type="helmet" />
+    
+    <AddFiles directory="assets">    
+	<cooked_physics path="units/mods/masks/msk_doz1/msk_doz1"/>
+        <model path="units/mods/masks/msk_doz1/msk_doz1"/>
+	<object path="units/mods/masks/msk_doz1/msk_doz1"/>
+        <unit path="units/mods/masks/msk_doz1/msk_doz1"/>
+	<material_config path="units/mods/masks/msk_doz1/msk_doz1"/>
+        
+        <texture path="units/mods/masks/msk_doz1/msk_doz1_df"/>
+        <texture path="units/mods/masks/msk_doz1/msk_doz1_nm"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/doz1"/>
+        
+    </AddFiles>
+</table>

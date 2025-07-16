@@ -1,0 +1,26 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_sight_rail" orientation_object="rp_wpn_fps_shot_b682_b_long"/>
+	<animations>
+	    <animation_group name="reload" enabled="false">
+		    <object name="anim_barrel_reload" enabled="true"/>
+		    <object name="anim_slug_lower_reload" enabled="false"/>
+		    <object name="anim_slug_upper_reload" enabled="false"/>
+		    <object name="anim_ejector_reload" enabled="false"/>
+	    </animation_group>
+	    <animation_group name="reload_not_empty" enabled="false">
+		    <object name="anim_barrel_reload_not_empty" enabled="true"/>
+		    <object name="anim_slug_lower_reload_not_empty" enabled="false"/>
+		    <object name="anim_slug_upper_reload_not_empty" enabled="false"/>
+		    <object name="anim_ejector_reload_not_empty" enabled="false"/>
+	    </animation_group>
+	</animations>
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="g_barrel_lod0">
+			<object enabled="true" inherit_bounding_volume="co_culling" name="g_barrel_lod0" />
+		</graphic_group>
+			<object enabled="false" name="g_slug_lower_lod0" />
+			<object enabled="false" name="g_slug_upper_lod0" />
+			<object enabled="false" name="g_fg_lod0" />
+			<object enabled="false" name="g_ejector_lod0" />
+	</graphics>
+</dynamic_object>

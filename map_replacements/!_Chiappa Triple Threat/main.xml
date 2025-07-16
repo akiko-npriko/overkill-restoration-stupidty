@@ -1,0 +1,86 @@
+<table name="Chiappa Triple Threat" image="guis/triple" color="Color(0.01,0.62,0.98)">
+	<Localization directory="Loc" default="english.txt"/>
+	<AssetUpdates id="24541" name="asset_updates" folder_name="Chiappa Triple Threat" version="1.03" provider="modworkshop"/>
+	<GlobalValue id="triplemod" color="Color(1, 0.5, 0)"/>
+	<WeaponMod id="wpn_fps_shot_triple_barrel" based_on="wpn_fps_shot_huntsman_b_long" type="barrel" unit="units/mods/weapons/wpn_fps_shot_triple_pts/wpn_fps_shot_triple_barrel" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_shot_triple_body" based_on="wpn_fps_shot_huntsman_s_long" type="lower_reciever" unit="units/mods/weapons/wpn_fps_shot_triple_pts/wpn_fps_shot_triple_body" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_shot_triple_barrel_short" based_on="wpn_fps_shot_huntsman_b_long" type="barrel" unit="units/mods/weapons/wpn_fps_shot_triple_pts/wpn_fps_shot_triple_barrel_short" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats concealment="4" spread="-3" recoil="-3" />
+		<pcs/>
+	</WeaponMod>
+
+	<Weapon unlock_level="70">
+		<weapon id="triple" based_on="huntsman" CLIP_AMMO_MAX="3" NR_CLIPS_MAX="12" weapon_hold="huntsman" texture_bundle_folder="mods" global_value="triplemod">
+			<stats damage="140" spread="14" spread_moving="14" recoil="8" concealment="6"/>
+			<fire_mode_data fire_rate="0.17142857142"/>
+			<animations reload_name_id="huntsman"/>
+			<sounds fire_single="triple_fire"/>
+		</weapon>
+        <factory id="wpn_fps_shot_triple" unit="units/mods/weapons/wpn_fps_shot_triple/wpn_fps_shot_triple">
+			<optional_types>
+				<value_node value="barrel_ext"/>
+				<value_node value="gadget"/>
+			</optional_types>
+			<default_blueprint>
+				<value_node value="wpn_fps_shot_triple_barrel"/>
+				<value_node value="wpn_fps_shot_triple_body"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_shot_triple_barrel"/>
+				<value_node value="wpn_fps_shot_triple_body"/>
+				<value_node value="wpn_fps_shot_triple_barrel_short"/>
+				<value_node value="wpn_fps_upg_a_slug"/>
+			    	<value_node value="wpn_fps_upg_a_custom"/>
+		    		<value_node value="wpn_fps_upg_a_custom_free"/>
+		    		<value_node value="wpn_fps_upg_a_explosive"/>
+		     		<value_node value="wpn_fps_upg_a_piercing"/>
+		     		<value_node value="wpn_fps_upg_a_dragons_breath"/>
+			</uses_parts>
+		</factory>
+		<stance>
+			<steelsight>
+				<shoulders translation="-10.5 -8.5 4.8" rotation="0 0 0 -1"/>
+			</steelsight>
+		</stance>
+	</Weapon>
+	<Sounds directory="Assets\sounds">
+		<sound id="triple_fire" path="triple_regular.ogg" prefix="regular"/>
+	</Sounds>
+	<AddFiles directory="Assets">
+		<texture path="units/mods/weapons/wpn_fps_shot_triple_pts/triple_df"/>
+		<texture path="units/mods/weapons/wpn_fps_shot_triple_pts/triple_nm"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_shot_triple/wpn_fps_shot_triple"/>
+		<model path="units/mods/weapons/wpn_fps_shot_triple/wpn_fps_shot_triple"/>
+		<object path="units/mods/weapons/wpn_fps_shot_triple/wpn_fps_shot_triple"/>
+		<unit path="units/mods/weapons/wpn_fps_shot_triple/wpn_fps_shot_triple"/>
+		<unit path="units/mods/weapons/wpn_fps_shot_triple/wpn_fps_shot_triple_npc"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_shot_triple_pts/wpn_fps_shot_triple_barrel"/>
+		<model path="units/mods/weapons/wpn_fps_shot_triple_pts/wpn_fps_shot_triple_barrel"/>
+		<object path="units/mods/weapons/wpn_fps_shot_triple_pts/wpn_fps_shot_triple_barrel"/>
+		<unit path="units/mods/weapons/wpn_fps_shot_triple_pts/wpn_fps_shot_triple_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_shot_triple_pts/wpn_fps_shot_triple_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_shot_triple_pts/wpn_fps_shot_triple_barrel_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_shot_triple_pts/wpn_fps_shot_triple_barrel_short"/>
+		<model path="units/mods/weapons/wpn_fps_shot_triple_pts/wpn_fps_shot_triple_barrel_short"/>
+		<object path="units/mods/weapons/wpn_fps_shot_triple_pts/wpn_fps_shot_triple_barrel_short"/>
+		<unit path="units/mods/weapons/wpn_fps_shot_triple_pts/wpn_fps_shot_triple_barrel_short"/>
+		<material_config path="units/mods/weapons/wpn_fps_shot_triple_pts/wpn_fps_shot_triple_barrel_short"/>
+		<material_config path="units/mods/weapons/wpn_fps_shot_triple_pts/wpn_fps_shot_triple_barrel_short_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_shot_triple_pts/wpn_fps_shot_triple_body"/>
+		<model path="units/mods/weapons/wpn_fps_shot_triple_pts/wpn_fps_shot_triple_body"/>
+		<object path="units/mods/weapons/wpn_fps_shot_triple_pts/wpn_fps_shot_triple_body"/>
+		<unit path="units/mods/weapons/wpn_fps_shot_triple_pts/wpn_fps_shot_triple_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_shot_triple_pts/wpn_fps_shot_triple_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_shot_triple_pts/wpn_fps_shot_triple_body_thq"/>
+
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_shot_triple_barrel_short"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/triple"/>
+		<texture path="guis/triple"/>
+	</AddFiles>
+</table>

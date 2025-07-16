@@ -1,0 +1,11 @@
+<mod name="Keycard Melee Weapon" author="Insomnia" color="Color(0.3, 0, 0.6)" min_lib_ver="3.38">
+	<Localization directory="loc" default="english.txt">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+
+    <Melee id="bank_manager_key" info_id="bank_manager_key_info" based_on="switchblade" unit="units/mods/weapons/wpn_fps_mel_keycard/wpn_fps_mel_keycard" third_unit="units/mods/weapons/wpn_third_mel_keycard/wpn_third_mel_keycard" texture_bundle_folder="mods" dlc="armored_transport">
+	<stats min_damage="1" max_damage="4" charge_time="2" min_damage_effect="0" max_damage_effect="0" range="100" concealment="30"/>
+    </Melee>
+
+	<AddFiles directory="assets" auto_generate="true"/>
+</mod>

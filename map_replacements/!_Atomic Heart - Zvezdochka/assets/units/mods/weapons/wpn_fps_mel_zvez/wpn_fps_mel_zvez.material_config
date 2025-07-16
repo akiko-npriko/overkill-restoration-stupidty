@@ -1,0 +1,7 @@
+<materials version="3" group="melee_group">
+	<material name="zvez" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_mel_zvez/wpn_fps_mel_zvez_df" />
+                <material_texture file="units/mods/weapons/wpn_fps_mel_zvez/wpn_fps_mel_zvez_gsma"/>
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_mel_zvez/wpn_fps_mel_zvez_nm" />
+	</material>
+</materials>

@@ -1,0 +1,14 @@
+<dynamic_object>
+    <diesel orientation_object="rp_wpn_fps_sho_ksg_fg_standard" materials="units/mods/weapons/wpn_fps_sho_dp12_pts/wpn_fps_sho_dp12_mat_fde" />
+   <animations>
+		<animation_group name="reload_exit">
+		  <object name="anim_reload_exit" enabled="true" />
+		</animation_group>
+		<animation_group name="recoil">
+		  <object name="anim_recoil" enabled="true" />
+		</animation_group>
+	</animations>
+    <graphics>
+        <object enabled="true" name="g_pump" />
+    </graphics>
+</dynamic_object>

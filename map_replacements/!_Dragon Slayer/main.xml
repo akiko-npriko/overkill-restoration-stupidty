@@ -1,0 +1,34 @@
+<table name="Dragon Slayer" image="guis/dragon_slayer" color="Color(0, 0, 0)">
+    <Localization directory="Localization" default="english.txt">
+    </Localization>
+	<AssetUpdates id="24203" version="1.21" provider="modworkshop"/>	
+	<GlobalValue id="dragon_slayer" color="Color(0.6, 0, 0.1)"/>
+    <Melee id="dragon_slayer" info_id="bm_dragon_slayer_info" based_on="great" unit="units/mods/weapons/wpn_mel_dragon_slayer/wpn_fps_mel_dragon_slayer" third_unit="units/mods/weapons/wpn_mel_dragon_slayer/wpn_third_mel_dragon_slayer" dlc="dragon_slayer" texture_bundle_folder="mods">
+	 <sounds hit_gen="clang" hit_body="clang"/>
+	 <stats min_damage="20" max_damage="99.9" range="320" concealment="20"/>
+	</Melee>    
+    <Sounds directory="assets\sounds">
+		<sound id="clang" path="clang.ogg" prefix="first"/>
+	    <sound id="clang" path="clang.ogg" prefix="third"/>
+	</Sounds>
+    <AddFiles directory="assets">
+        <cooked_physics path="units/mods/weapons/wpn_mel_dragon_slayer/wpn_fps_mel_dragon_slayer"/>
+        <model path="units/mods/weapons/wpn_mel_dragon_slayer/wpn_fps_mel_dragon_slayer"/>
+        <object path="units/mods/weapons/wpn_mel_dragon_slayer/wpn_fps_mel_dragon_slayer"/>
+        <unit path="units/mods/weapons/wpn_mel_dragon_slayer/wpn_fps_mel_dragon_slayer"/>
+        <material_config path="units/mods/weapons/wpn_mel_dragon_slayer/wpn_fps_mel_dragon_slayer"/>
+        <material_config path="units/mods/weapons/wpn_mel_dragon_slayer/wpn_fps_mel_dragon_slayer_thq"/>
+
+        <cooked_physics path="units/mods/weapons/wpn_mel_dragon_slayer/wpn_third_mel_dragon_slayer"/>
+        <model path="units/mods/weapons/wpn_mel_dragon_slayer/wpn_third_mel_dragon_slayer"/>
+        <object path="units/mods/weapons/wpn_mel_dragon_slayer/wpn_third_mel_dragon_slayer"/>
+        <unit path="units/mods/weapons/wpn_mel_dragon_slayer/wpn_third_mel_dragon_slayer"/>
+        <material_config path="units/mods/weapons/wpn_mel_dragon_slayer/wpn_third_mel_dragon_slayer"/>
+
+        <texture path="units/mods/weapons/wpn_mel_dragon_slayer/wpn_mel_dragon_slayer_df"/>
+        <texture path="units/mods/weapons/wpn_mel_dragon_slayer/wpn_mel_dragon_slayer_gsm"/>
+        <texture path="units/mods/weapons/wpn_mel_dragon_slayer/wpn_mel_dragon_slayer_nm"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/melee_weapons/dragon_slayer"/>
+        <texture path="guis/dragon_slayer"/>       
+    </AddFiles>
+</table>

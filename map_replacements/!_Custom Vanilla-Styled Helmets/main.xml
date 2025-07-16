@@ -1,0 +1,244 @@
+<table name="Vanilla-Styled Tactical Helmets" color="Color(0.9, 0.2, 0.08)">
+	<AssetUpdates id="41912" version="2.0" provider="modworkshop"/>
+	<Localization directory="localization" default="english.txt"/>
+	<GlobalValue id="paint_masks" color="Color(0.9, 0.2, 0.09)" is_category="false"/>
+
+	<Mask id="cw_swat_001_custom_nvg" unit="units/paint_masks/masks/msk_cw_swat_001/msk_cw_swat_001_custom_nvg" 				texture_bundle_folder="paint_masks" global_value="paint_masks" type="helmet"/>
+	<Mask id="cw_swat_001_flashlight" unit="units/paint_masks/masks/msk_cw_swat_001/msk_cw_swat_001_flashlight" 				texture_bundle_folder="paint_masks" global_value="paint_masks" type="helmet"/>
+	<Mask id="murky_hecu_mask" unit="units/paint_masks/masks/msk_murky_hecu_mask/msk_murky_hecu_mask"							texture_bundle_folder="paint_masks" global_value="paint_masks" type="helmet"/>
+	<Mask id="murky_zeal_1" unit="units/paint_masks/masks/msk_murky_zeal/msk_murky_zeal_1"										texture_bundle_folder="paint_masks"	global_value="paint_masks" type="helmet"/>
+	<Mask id="generic_enforcer_helmet" unit="units/paint_masks/masks/msk_generic_enforcer_helmet/msk_generic_enforcer_helmet"	texture_bundle_folder="paint_masks" global_value="paint_masks" type="helmet"/>
+	<Mask id="shotgun_enforcer_helmet" unit="units/paint_masks/masks/msk_generic_enforcer_helmet/msk_shotgun_enforcer_helmet"	texture_bundle_folder="paint_masks" global_value="paint_masks" type="helmet"/>
+	<Mask id="blue_swat" unit="units/paint_masks/masks/msk_blue_swat/msk_blue_swat"												texture_bundle_folder="paint_masks"	global_value="paint_masks" type="helmet"/>
+	<Mask id="airframe" unit="units/paint_masks/masks/msk_airframe/msk_airframe"												texture_bundle_folder="paint_masks"	global_value="paint_masks" type="helmet"/>
+	<Mask id="usm2_helmet_tac" unit="units/paint_masks/masks/msk_usm2_helmet_tac/msk_usm2_helmet_tac"							texture_bundle_folder="paint_masks"	global_value="paint_masks" type="helmet"/>
+	<Mask id="usm2_helmet_tac_black" unit="units/paint_masks/masks/msk_usm2_helmet_tac/msk_usm2_helmet_tac_black"				texture_bundle_folder="paint_masks"	global_value="paint_masks" type="helmet"/>
+
+	<Mask id="mich_2000" unit="units/paint_masks/masks/msk_mich_2000/msk_mich_2000"												texture_bundle_folder="paint_masks"	global_value="paint_masks" type="helmet"/>
+	<Mask id="airframe_2" unit="units/paint_masks/masks/msk_airframe/msk_airframe_2"											texture_bundle_folder="paint_masks"	global_value="paint_masks" type="helmet"/>
+	<Mask id="mask_helmet" unit="units/paint_masks/masks/msk_mask_helmet/msk_mask_helmet"										texture_bundle_folder="paint_masks"	global_value="paint_masks" type="helmet"/>
+	<Mask id="ibh" unit="units/paint_masks/masks/msk_ibh/msk_ibh"																texture_bundle_folder="paint_masks"	global_value="paint_masks" type="helmet"/>
+	<Mask id="ct_jerome" unit="units/paint_masks/masks/msk_ct_jerome/msk_ct_jerome"												texture_bundle_folder="paint_masks"	global_value="paint_masks" type="helmet"/>
+	<Mask id="unct" unit="units/paint_masks/masks/msk_unct/msk_unct"															texture_bundle_folder="paint_masks"	global_value="paint_masks" type="helmet"/>
+
+	<Mask id="usm2_helmet_tac_down" unit="units/paint_masks/masks/msk_usm2_helmet_tac/msk_usm2_helmet_tac_down"					texture_bundle_folder="paint_masks"	global_value="paint_masks" type="helmet">
+	    <night_vision effect = "color_night_vision_blue" light="0.3" />
+	</Mask>
+	<Mask id="cw_swat_001_custom_nvg_down" unit="units/paint_masks/masks/msk_cw_swat_001/msk_cw_swat_001_custom_nvg_down"		texture_bundle_folder="paint_masks"	global_value="paint_masks" type="helmet">
+	    <night_vision effect = "color_night_vision_blue" light="0.3" />
+	</Mask>
+	
+	<AddFiles directory="assets">
+
+			<!-- Swat Custom -->
+			<texture path="guis/dlcs/paint_masks/textures/pd2/blackmarket/icons/masks/cw_swat_001_custom_nvg"/>
+
+			<cooked_physics path="units/paint_masks/masks/msk_cw_swat_001/msk_cw_swat_001_custom_nvg"/>
+			<model path="units/paint_masks/masks/msk_cw_swat_001/msk_cw_swat_001_custom_nvg"/>
+			<object path="units/paint_masks/masks/msk_cw_swat_001/msk_cw_swat_001_custom_nvg"/>
+			<unit path="units/paint_masks/masks/msk_cw_swat_001/msk_cw_swat_001_custom_nvg"/>
+			<material_config path="units/paint_masks/masks/msk_cw_swat_001/msk_cw_swat_001_custom_nvg"/>
+
+			<texture path="units/paint_masks/masks/msk_cw_swat_001/msk_cw_swat_001_interior_df"/>
+			<texture path="units/paint_masks/masks/msk_cw_swat_001/msk_cw_swat_001_interior_nm"/>
+			<texture path="units/paint_masks/masks/msk_cw_swat_001/msk_cw_swat_001_custom_df"/>
+			<texture path="units/paint_masks/masks/msk_cw_swat_001/msk_cw_swat_001_nm"/>
+			<texture path="units/paint_masks/masks/msk_cw_swat_001/pack_df"/>
+			<texture path="units/paint_masks/masks/msk_cw_swat_001/pack_nm"/>
+			<texture path="units/paint_masks/masks/msk_cw_swat_001/nvgs_df"/>
+			<texture path="units/paint_masks/masks/msk_cw_swat_001/nvgs_nm"/>			
+
+			<texture path="guis/dlcs/paint_masks/textures/pd2/blackmarket/icons/masks/cw_swat_001_custom_nvg_down"/>
+
+			<cooked_physics path="units/paint_masks/masks/msk_cw_swat_001/msk_cw_swat_001_custom_nvg_down"/>
+			<model path="units/paint_masks/masks/msk_cw_swat_001/msk_cw_swat_001_custom_nvg_down"/>
+			<object path="units/paint_masks/masks/msk_cw_swat_001/msk_cw_swat_001_custom_nvg_down"/>
+			<unit path="units/paint_masks/masks/msk_cw_swat_001/msk_cw_swat_001_custom_nvg_down"/>
+
+			<!-- Swat Custom 2 -->
+			<texture path="guis/dlcs/paint_masks/textures/pd2/blackmarket/icons/masks/cw_swat_001_flashlight"/>
+
+			<cooked_physics path="units/paint_masks/masks/msk_cw_swat_001/msk_cw_swat_001_flashlight"/>
+			<model path="units/paint_masks/masks/msk_cw_swat_001/msk_cw_swat_001_flashlight"/>
+			<object path="units/paint_masks/masks/msk_cw_swat_001/msk_cw_swat_001_flashlight"/>
+			<unit path="units/paint_masks/masks/msk_cw_swat_001/msk_cw_swat_001_flashlight"/>
+			<material_config path="units/paint_masks/masks/msk_cw_swat_001/msk_cw_swat_001_flashlight"/>
+
+			<texture path="units/paint_masks/masks/msk_cw_swat_001/msk_cw_swat_001_flashlight_df"/>
+
+			<!-- Murky Heavy Gunner -->
+			<texture path="guis/dlcs/paint_masks/textures/pd2/blackmarket/icons/masks/murky_hecu_mask"/>
+
+			<cooked_physics path="units/paint_masks/masks/msk_murky_hecu_mask/msk_murky_hecu_mask"/>
+			<model path="units/paint_masks/masks/msk_murky_hecu_mask/msk_murky_hecu_mask"/>
+			<object path="units/paint_masks/masks/msk_murky_hecu_mask/msk_murky_hecu_mask"/>
+			<unit path="units/paint_masks/masks/msk_murky_hecu_mask/msk_murky_hecu_mask"/>
+			<material_config path="units/paint_masks/masks/msk_murky_hecu_mask/msk_murky_hecu_mask"/>
+
+			<texture path="units/pd2_mod_sharks/characters/shared_textures/bulldozer_glass_op"/>
+			<texture path="units/pd2_mod_sharks/characters/shared_textures/gren_glass_df"/>
+
+			<!-- Murky Spec Ops Light Rifleman -->
+			<texture path="guis/dlcs/paint_masks/textures/pd2/blackmarket/icons/masks/murky_zeal_1"/>
+
+			<cooked_physics path="units/paint_masks/masks/msk_murky_zeal/msk_murky_zeal_1"/>
+			<model path="units/paint_masks/masks/msk_murky_zeal/msk_murky_zeal_1"/>
+			<object path="units/paint_masks/masks/msk_murky_zeal/msk_murky_zeal_1"/>
+			<unit path="units/paint_masks/masks/msk_murky_zeal/msk_murky_zeal_1"/>
+			<material_config path="units/paint_masks/masks/msk_murky_zeal/msk_murky_zeal_1"/>
+
+			<!-- Generic Enforcer -->
+			<texture path="guis/dlcs/paint_masks/textures/pd2/blackmarket/icons/masks/generic_enforcer_helmet"/>
+
+			<cooked_physics path="units/paint_masks/masks/msk_generic_enforcer_helmet/msk_generic_enforcer_helmet"/>
+			<model path="units/paint_masks/masks/msk_generic_enforcer_helmet/msk_generic_enforcer_helmet"/>
+			<object path="units/paint_masks/masks/msk_generic_enforcer_helmet/msk_generic_enforcer_helmet"/>
+			<unit path="units/paint_masks/masks/msk_generic_enforcer_helmet/msk_generic_enforcer_helmet"/>
+			<material_config path="units/paint_masks/masks/msk_generic_enforcer_helmet/msk_generic_enforcer_helmet"/>
+
+			<texture path="units/paint_masks/masks/msk_generic_enforcer_helmet/enforcer_helmet_df"/>
+			<texture path="units/paint_masks/masks/msk_generic_enforcer_helmet/enforcer_helmet_nm"/>
+
+			<!-- Shotgun Enforcer -->
+			<texture path="guis/dlcs/paint_masks/textures/pd2/blackmarket/icons/masks/shotgun_enforcer_helmet"/>
+
+			<cooked_physics path="units/paint_masks/masks/msk_generic_enforcer_helmet/msk_shotgun_enforcer_helmet"/>
+			<model path="units/paint_masks/masks/msk_generic_enforcer_helmet/msk_shotgun_enforcer_helmet"/>
+			<object path="units/paint_masks/masks/msk_generic_enforcer_helmet/msk_shotgun_enforcer_helmet"/>
+			<unit path="units/paint_masks/masks/msk_generic_enforcer_helmet/msk_shotgun_enforcer_helmet"/>
+			<material_config path="units/paint_masks/masks/msk_generic_enforcer_helmet/msk_shotgun_enforcer_helmet"/>
+
+			<texture path="units/paint_masks/masks/msk_generic_enforcer_helmet/enforcer_helmet_2_df"/>
+
+			<!-- Blue Bucket -->
+			<texture path="guis/dlcs/paint_masks/textures/pd2/blackmarket/icons/masks/blue_swat"/>
+
+			<cooked_physics path="units/paint_masks/masks/msk_blue_swat/msk_blue_swat"/>
+			<model path="units/paint_masks/masks/msk_blue_swat/msk_blue_swat"/>
+			<object path="units/paint_masks/masks/msk_blue_swat/msk_blue_swat"/>
+			<unit path="units/paint_masks/masks/msk_blue_swat/msk_blue_swat"/>
+			<material_config path="units/paint_masks/masks/msk_blue_swat/msk_blue_swat"/>
+
+			<texture path="units/paint_masks/masks/msk_blue_swat/helmet_straps_df"/>
+			
+			<!-- Airhead -->
+			<texture path="guis/dlcs/paint_masks/textures/pd2/blackmarket/icons/masks/airframe"/>
+
+			<cooked_physics path="units/paint_masks/masks/msk_airframe/msk_airframe"/>
+			<model path="units/paint_masks/masks/msk_airframe/msk_airframe"/>
+			<object path="units/paint_masks/masks/msk_airframe/msk_airframe"/>
+			<unit path="units/paint_masks/masks/msk_airframe/msk_airframe"/>
+			<material_config path="units/paint_masks/masks/msk_airframe/msk_airframe"/>			
+
+			<texture path="guis/dlcs/paint_masks/textures/pd2/blackmarket/icons/masks/airframe_2"/>
+
+			<cooked_physics path="units/paint_masks/masks/msk_airframe/msk_airframe_2"/>
+			<model path="units/paint_masks/masks/msk_airframe/msk_airframe_2"/>
+			<object path="units/paint_masks/masks/msk_airframe/msk_airframe_2"/>
+			<unit path="units/paint_masks/masks/msk_airframe/msk_airframe_2"/>
+			<material_config path="units/paint_masks/masks/msk_airframe/msk_airframe_2"/>		
+
+			<!-- Marshal Helmets -->
+			<texture path="guis/dlcs/paint_masks/textures/pd2/blackmarket/icons/masks/usm2_helmet_tac"/>
+
+			<cooked_physics path="units/paint_masks/masks/msk_usm2_helmet_tac/msk_usm2_helmet_tac"/>
+			<model path="units/paint_masks/masks/msk_usm2_helmet_tac/msk_usm2_helmet_tac"/>
+			<object path="units/paint_masks/masks/msk_usm2_helmet_tac/msk_usm2_helmet_tac"/>
+			<unit path="units/paint_masks/masks/msk_usm2_helmet_tac/msk_usm2_helmet_tac"/>
+			<material_config path="units/paint_masks/masks/msk_usm2_helmet_tac/msk_usm2_helmet_tac"/>			
+
+			<texture path="units/paint_masks/masks/msk_usm2_helmet_tac/dark_glass_op"/>
+			<texture path="units/paint_masks/masks/msk_usm2_helmet_tac/usm2_helmet_df"/>			
+			<texture path="units/paint_masks/masks/msk_usm2_helmet_tac/tan_pack_df"/>	
+			<texture path="units/paint_masks/masks/msk_usm2_helmet_tac/usm2_helmet_nm"/>	
+
+			<texture path="guis/dlcs/paint_masks/textures/pd2/blackmarket/icons/masks/usm2_helmet_tac_black"/>
+
+			<cooked_physics path="units/paint_masks/masks/msk_usm2_helmet_tac/msk_usm2_helmet_tac_black"/>
+			<model path="units/paint_masks/masks/msk_usm2_helmet_tac/msk_usm2_helmet_tac_black"/>
+			<object path="units/paint_masks/masks/msk_usm2_helmet_tac/msk_usm2_helmet_tac_black"/>
+			<unit path="units/paint_masks/masks/msk_usm2_helmet_tac/msk_usm2_helmet_tac_black"/>
+			<material_config path="units/paint_masks/masks/msk_usm2_helmet_tac/msk_usm2_helmet_tac_black"/>			
+
+			<texture path="units/paint_masks/masks/msk_usm2_helmet_tac/usm2_helmet_2_df"/>				
+
+			<texture path="guis/dlcs/paint_masks/textures/pd2/blackmarket/icons/masks/usm2_helmet_tac_down"/>
+
+			<cooked_physics path="units/paint_masks/masks/msk_usm2_helmet_tac/msk_usm2_helmet_tac_down"/>
+			<model path="units/paint_masks/masks/msk_usm2_helmet_tac/msk_usm2_helmet_tac_down"/>
+			<object path="units/paint_masks/masks/msk_usm2_helmet_tac/msk_usm2_helmet_tac_down"/>
+			<unit path="units/paint_masks/masks/msk_usm2_helmet_tac/msk_usm2_helmet_tac_down"/>
+			<material_config path="units/paint_masks/masks/msk_usm2_helmet_tac/msk_usm2_helmet_tac_down"/>	
+
+			<!-- Sandstorm Stroll --> <!-- (This references the name of a floor from a game from my childhood, if you can guess what it is, I will give you my Mars Ultor) -->
+			<texture path="guis/dlcs/paint_masks/textures/pd2/blackmarket/icons/masks/mich_2000"/>
+
+			<cooked_physics path="units/paint_masks/masks/msk_mich_2000/msk_mich_2000"/>
+			<model path="units/paint_masks/masks/msk_mich_2000/msk_mich_2000"/>
+			<object path="units/paint_masks/masks/msk_mich_2000/msk_mich_2000"/>
+			<unit path="units/paint_masks/masks/msk_mich_2000/msk_mich_2000"/>
+			<material_config path="units/paint_masks/masks/msk_mich_2000/msk_mich_2000"/>		
+
+			<texture path="units/paint_masks/masks/msk_mich_2000/mich_2000_atlas_df"/>	
+
+			<!-- Dusk Patrol -->
+			<texture path="guis/dlcs/paint_masks/textures/pd2/blackmarket/icons/masks/mask_helmet"/>
+
+			<cooked_physics path="units/paint_masks/masks/msk_mask_helmet/msk_mask_helmet"/>
+			<model path="units/paint_masks/masks/msk_mask_helmet/msk_mask_helmet"/>
+			<object path="units/paint_masks/masks/msk_mask_helmet/msk_mask_helmet"/>
+			<unit path="units/paint_masks/masks/msk_mask_helmet/msk_mask_helmet"/>
+			<material_config path="units/paint_masks/masks/msk_mask_helmet/msk_mask_helmet"/>		
+
+			<texture path="units/paint_masks/masks/msk_mask_helmet/ene_mask_helm_df"/>	
+			<texture path="units/paint_masks/masks/msk_mask_helmet/ene_mask_helm_nm"/>	
+
+			<!-- Atlas to ensure enemy retexture mods don't conflict -->
+			<texture path="units/paint_masks/masks/shared_textures/heads_atlas_df"/>
+			<texture path="units/paint_masks/masks/shared_textures/heads_atlas_nm"/>
+			<texture path="units/paint_masks/masks/shared_textures/helmets_atlas_df"/>
+			<texture path="units/paint_masks/masks/shared_textures/helmets_atlas_old_df"/>
+			<texture path="units/paint_masks/masks/shared_textures/helmets_atlas_nm"/>
+			<texture path="units/paint_masks/masks/shared_textures/helmets_atlas_old_nm"/>
+
+			<!-- OMNIA Helmet Stuff -->
+			<texture path="units/paint_masks/masks/shared_textures/helmets_omnia_atlas_df"/>
+			<texture path="units/paint_masks/masks/shared_textures/helmets_omnia_atlas_nm"/>
+
+			<!-- IBH -->
+			<texture path="guis/dlcs/paint_masks/textures/pd2/blackmarket/icons/masks/ibh"/>
+
+			<cooked_physics path="units/paint_masks/masks/msk_ibh/msk_ibh"/>
+			<model path="units/paint_masks/masks/msk_ibh/msk_ibh"/>
+			<object path="units/paint_masks/masks/msk_ibh/msk_ibh"/>
+			<unit path="units/paint_masks/masks/msk_ibh/msk_ibh"/>
+			<material_config path="units/paint_masks/masks/msk_ibh/msk_ibh"/>		
+
+			<texture path="units/paint_masks/masks/msk_ibh/ibh_helmet_df"/>	
+			<texture path="units/paint_masks/masks/msk_ibh/ibh_helmet_nm"/>	
+
+			<!-- Cruel Trance Jerome Helmet -->
+			<texture path="guis/dlcs/paint_masks/textures/pd2/blackmarket/icons/masks/ct_jerome"/>
+
+			<cooked_physics path="units/paint_masks/masks/msk_ct_jerome/msk_ct_jerome"/>
+			<model path="units/paint_masks/masks/msk_ct_jerome/msk_ct_jerome"/>
+			<object path="units/paint_masks/masks/msk_ct_jerome/msk_ct_jerome"/>
+			<unit path="units/paint_masks/masks/msk_ct_jerome/msk_ct_jerome"/>
+			<material_config path="units/paint_masks/masks/msk_ct_jerome/msk_ct_jerome"/>		
+
+			<texture path="units/paint_masks/masks/msk_ct_jerome/ene_zeal_jerome_helmet_df"/>	
+			<texture path="units/paint_masks/masks/msk_ct_jerome/ene_zeal_jerome_helmet_nm"/>	
+
+			<!-- UN Peacekeeper Helmet -->
+			<texture path="guis/dlcs/paint_masks/textures/pd2/blackmarket/icons/masks/unct"/>
+
+			<cooked_physics path="units/paint_masks/masks/msk_unct/msk_unct"/>
+			<model path="units/paint_masks/masks/msk_unct/msk_unct"/>
+			<object path="units/paint_masks/masks/msk_unct/msk_unct"/>
+			<unit path="units/paint_masks/masks/msk_unct/msk_unct"/>
+			<material_config path="units/paint_masks/masks/msk_unct/msk_unct"/>		
+
+			<texture path="units/paint_masks/masks/msk_unct/unct_df"/>	
+
+	</AddFiles>
+</table>

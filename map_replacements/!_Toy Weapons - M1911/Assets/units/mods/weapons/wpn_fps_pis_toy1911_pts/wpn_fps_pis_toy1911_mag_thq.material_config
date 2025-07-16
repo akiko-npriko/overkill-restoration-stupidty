@@ -1,0 +1,10 @@
+<materials version="3" group="weapon_group">
+	<material name="mtr_m_standard" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_pis_toy1911_pts/toy1911_df" />
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_pis_toy1911_pts/toy1911_nm" />
+	</material>
+    <material name="mtr_bullet" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_pis_toy1911_pts/battery_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_pis_toy1911_pts/battery_nm"/>
+    </material>
+</materials>

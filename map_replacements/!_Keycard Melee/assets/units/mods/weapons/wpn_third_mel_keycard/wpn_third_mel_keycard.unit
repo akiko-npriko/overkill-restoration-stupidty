@@ -1,0 +1,9 @@
+<unit type="wpn" slot="1">
+	<object file="units/mods/weapons/wpn_fps_mel_keycard/wpn_fps_mel_keycard" />
+	<dependencies>
+		<depends_on bnk="soundbanks/melee_toothbrush"/>
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+	</extensions>
+</unit>

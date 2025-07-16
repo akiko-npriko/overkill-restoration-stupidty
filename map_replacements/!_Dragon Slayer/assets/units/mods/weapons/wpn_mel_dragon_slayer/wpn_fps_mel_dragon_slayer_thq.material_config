@@ -1,0 +1,7 @@
+<materials version="3" group="melee_group">
+	<material name="mtr_great" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP"  version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_mel_dragon_slayer/wpn_mel_dragon_slayer_df" />
+		<material_texture file="units/mods/weapons/wpn_mel_dragon_slayer/wpn_mel_dragon_slayer_gsm" />
+		<bump_normal_texture file="units/mods/weapons/wpn_mel_dragon_slayer/wpn_mel_dragon_slayer_nm" />
+	</material>
+</materials>

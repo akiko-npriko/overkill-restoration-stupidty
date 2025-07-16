@@ -1,0 +1,228 @@
+<table name="TOZ-34" image="guis/mod_icons/toz34" color="Color(0.01,0.62,0.98)">
+	<Localization directory="Loc" default="english.txt"/>
+	<AssetUpdates id="17297" version="1.39" provider="modworkshop"/>
+	<GlobalValue id="toz34mod" color="Color(0.7, 0.2, 0.1)"/>
+	<WeaponMod id="wpn_fps_shot_toz34_barrel" based_on="wpn_fps_shot_b682_b_long" type="barrel" unit="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_barrel" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_shot_toz34_body" based_on="wpn_fps_shot_b682_body_standard" type="lower_reciever" unit="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_body" drop="false" is_a_unlockable="false">
+		<stats reload="2"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_shot_toz34_irons" based_on="wpn_fps_shot_b682_b_long" type="sight" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" is_a_unlockable="false">
+		<stance_mod>
+			<wpn_fps_shot_toz34 translation="0 -1 3.8"/>
+		</stance_mod>
+		<override_weapon>
+			<animations reload_name_id="b682" recoil_steelsight="false"/>
+		</override_weapon>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_shot_toz34_sight_rail" based_on="wpn_fps_shot_b682_b_long" type="sight_rail" unit="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_sight_rail" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_shot_toz34_stock" based_on="wpn_fps_shot_b682_s_long" type="stock" unit="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_stock" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_upg_toz34_ammo_000_magnum" based_on="wpn_fps_upg_a_custom" type="ammo" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats damage="15" spread="2" recoil="-1"/>
+		<custom_stats damage_near_mul="1.5" damage_far_mul="1" rays="8"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_toz34_barrel_short" based_on="wpn_fps_shot_b682_b_long" type="barrel" unit="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_barrel_short" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats spread="-5" recoil="-1" concealment="7"/>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_toz34_choke" based_on="wpn_fps_ass_contraband_ns_standard" type="barrel_ext" unit="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_choke" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats damage="2" spread="-2" recoil="2" concealment="-1"/>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_toz34_choke_modified" based_on="wpn_fps_ass_contraband_ns_standard" type="barrel_ext" unit="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_choke_modified" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats spread="2" concealment="-1"/>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_toz34_duckbill" based_on="wpn_fps_ass_contraband_ns_standard" type="barrel_ext" has_description="true" unit="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_duckbill" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats damage="1" recoil="1" concealment="-1">
+			<spread_multi>
+				<value_node value="2.5"/>
+				<value_node value="0.5"/>
+			</spread_multi>
+		</stats>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_toz34_stock_short" based_on="wpn_fps_shot_b682_s_long" type="stock" unit="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_stock_short" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats recoil="-4" concealment="8"/>
+		<pcs/>
+	</WeaponMod>
+	<Weapon unlock_level="43">
+		<weapon id="toz34" based_on="b682" NR_CLIPS_MAX="17" weapon_hold="b682" ammo_pickup="1" texture_bundle_folder="mods" global_value="toz34mod">
+			<stats spread="14" spread_moving="14" recoil="6"/>
+			<sounds fire="toz34_fire"/>
+			<animations reload_name_id="b682"/>
+		</weapon>
+		<factory id="wpn_fps_shot_toz34" unit="units/mods/weapons/wpn_fps_shot_toz34/wpn_fps_shot_toz34">
+			<adds/>
+			<override>
+				<wpn_fps_addon_ris unit="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_gadget_rail" a_obj="a_b">
+					<animations reload_not_empty="reload" reload="reload"/>
+				</wpn_fps_addon_ris>
+			</override>
+			<default_blueprint>
+				<value_node value="wpn_fps_shot_toz34_barrel"/>
+				<value_node value="wpn_fps_shot_toz34_body"/>
+				<value_node value="wpn_fps_shot_toz34_irons"/>
+				<value_node value="wpn_fps_shot_toz34_stock"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_shot_toz34_barrel"/>
+				<value_node value="wpn_fps_shot_toz34_body"/>
+				<value_node value="wpn_fps_shot_toz34_irons"/>
+				<value_node value="wpn_fps_shot_toz34_stock"/>
+
+				<value_node value="wpn_fps_upg_toz34_ammo_000_magnum"/>
+				<value_node value="wpn_fps_upg_toz34_barrel_short"/>
+				<value_node value="wpn_fps_upg_toz34_choke"/>
+				<value_node value="wpn_fps_upg_toz34_choke_modified"/>
+				<value_node value="wpn_fps_upg_toz34_duckbill"/>
+				<value_node value="wpn_fps_upg_toz34_stock_short"/>
+
+				<value_node value="wpn_fps_upg_a_slug"/>
+				<value_node value="wpn_fps_upg_a_custom"/>
+				<value_node value="wpn_fps_upg_a_custom_free"/>
+				<value_node value="wpn_fps_upg_a_explosive"/>
+				<value_node value="wpn_fps_upg_a_piercing"/>
+				<value_node value="wpn_fps_upg_a_dragons_breath"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+			</uses_parts>
+		</factory>
+		<stance>
+			<steelsight>
+				<shoulders rotation="0 -0 0 -1" translation="-8.473 -6.376 2.481"/>
+			</steelsight>
+		</stance>
+	</Weapon>
+	<Sounds directory="Assets\sounds">
+		<sound id="toz34_fire" path="toz34_regular.ogg" prefix="regular"/>
+	</Sounds>
+	<AddFiles directory="Assets">
+		<texture path="units/mods/weapons/wpn_fps_shot_toz34_pts/textures/choke_df"/>
+		<texture path="units/mods/weapons/wpn_fps_shot_toz34_pts/textures/choke_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_shot_toz34_pts/textures/choke_modified_df"/>
+		<texture path="units/mods/weapons/wpn_fps_shot_toz34_pts/textures/choke_modified_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_shot_toz34_pts/textures/duckbill_df"/>
+		<texture path="units/mods/weapons/wpn_fps_shot_toz34_pts/textures/duckbill_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_shot_toz34_pts/textures/rail_df"/>
+		<texture path="units/mods/weapons/wpn_fps_shot_toz34_pts/textures/rail_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_shot_toz34_pts/textures/toz34_df"/>
+		<texture path="units/mods/weapons/wpn_fps_shot_toz34_pts/textures/toz34_nm"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_shot_toz34/wpn_fps_shot_toz34"/>
+		<model path="units/mods/weapons/wpn_fps_shot_toz34/wpn_fps_shot_toz34"/>
+		<object path="units/mods/weapons/wpn_fps_shot_toz34/wpn_fps_shot_toz34"/>
+		<unit path="units/mods/weapons/wpn_fps_shot_toz34/wpn_fps_shot_toz34"/>
+		<unit path="units/mods/weapons/wpn_fps_shot_toz34/wpn_fps_shot_toz34_npc"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_barrel"/>
+		<model path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_barrel"/>
+		<object path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_barrel"/>
+		<unit path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_barrel_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_body"/>
+		<model path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_body"/>
+		<object path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_body"/>
+		<unit path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_body_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_gadget_rail"/>
+		<model path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_gadget_rail"/>
+		<object path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_gadget_rail"/>
+		<unit path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_gadget_rail"/>
+		<material_config path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_gadget_rail"/>
+		<material_config path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_gadget_rail_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_sight_rail"/>
+		<model path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_sight_rail"/>
+		<object path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_sight_rail"/>
+		<unit path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_sight_rail"/>
+		<material_config path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_sight_rail"/>
+		<material_config path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_sight_rail_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_stock"/>
+		<model path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_stock"/>
+		<object path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_stock"/>
+		<unit path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_stock"/>
+		<material_config path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_stock"/>
+		<material_config path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_shot_toz34_stock_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_barrel_short"/>
+		<model path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_barrel_short"/>
+		<object path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_barrel_short"/>
+		<unit path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_barrel_short"/>
+		<material_config path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_barrel_short"/>
+		<material_config path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_barrel_short_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_choke"/>
+		<model path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_choke"/>
+		<object path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_choke"/>
+		<unit path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_choke"/>
+		<material_config path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_choke"/>
+		<material_config path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_choke_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_choke_modified"/>
+		<model path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_choke_modified"/>
+		<object path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_choke_modified"/>
+		<unit path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_choke_modified"/>
+		<material_config path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_choke_modified"/>
+		<material_config path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_choke_modified_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_duckbill"/>
+		<model path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_duckbill"/>
+		<object path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_duckbill"/>
+		<unit path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_duckbill"/>
+		<material_config path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_duckbill"/>
+		<material_config path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_duckbill_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_stock_short"/>
+		<model path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_stock_short"/>
+		<object path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_stock_short"/>
+		<unit path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_stock_short"/>
+		<material_config path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_stock_short"/>
+		<material_config path="units/mods/weapons/wpn_fps_shot_toz34_pts/wpn_fps_upg_toz34_stock_short_thq"/>
+
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_toz34_ammo_000_magnum"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_toz34_barrel_short"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_toz34_choke"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_toz34_choke_modified"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_toz34_duckbill"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_toz34_stock_short"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/toz34"/>
+		<texture path="guis/mod_icons/toz34"/>
+	</AddFiles>
+	<Hooks directory="Hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
+	</Hooks>
+</table>

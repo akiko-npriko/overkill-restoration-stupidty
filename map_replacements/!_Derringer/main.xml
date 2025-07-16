@@ -1,0 +1,69 @@
+<table name="Derringer" color="Color(0.01,0.62,0.98)">
+	<Localization directory="Loc" default="english.txt"/>
+	<GlobalValue id="derringermod" color="Color(1, 0.5, 0)"/>
+	<AssetUpdates id="25341 version="1" provider="modworkshop"/>
+	
+
+	<WeaponMod id="wpn_fps_pis_derringer_frame" based_on="wpn_fps_pis_rage_body_standard" type="frame" unit="units/mods/weapons/wpn_fps_pis_derringer_pts/wpn_fps_pis_derringer_frame" drop="false" is_a_unlockable="false"/>
+
+	<Weapon unlock_level="20">
+		<weapon id="derringer" shell_ejection="effects/payday2/particles/weapons/shells/shell_empty" weapon_hold="peacemaker" based_on="new_raging_bull" NR_CLIPS_MAX="40" CLIP_AMMO_MAX="2" lock_slide="false" texture_bundle_folder="mods" global_value="derringermod">
+			<stats damage="100" spread="10" spread_moving="10" recoil="99" concealment="30" suppression="12"/>
+			<fire_mode_data fire_rate="0.15"/>
+			<AMMO_PICKUP>
+				<value_node value="1"/>
+				<value_node value="2"/>
+			</AMMO_PICKUP>
+			<timers reload_empty="3" reload="3/>
+			<animations reload_name_id="nil"/>
+			<sounds fire="rbull_fire">
+			</sounds>
+		</weapon>
+		<factory id="wpn_fps_pis_derringer" unit="units/mods/weapons/wpn_fps_pis_derringer/wpn_fps_pis_derringer">
+			<animations reload_not_empty="reload_not_empty" fire="recoil" fire_steelsight="recoil" reload="reload" magazine_empty="nil"/>
+			<optional_types>
+				<value_node value="barrel_ext"/>
+				<value_node value="gadget"/>
+			</optional_types>
+			<adds/>
+			<default_blueprint>
+				<value_node value="wpn_fps_pis_derringer_frame"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_pis_derringer_frame"/>
+			</uses_parts>
+		</factory>
+			<stance>
+			<steelsight>
+				<shoulders translation="-8.545 -6 3.3" rotation="-0.02 0 0.001 -1"/>
+			</steelsight>
+		</stance>
+	</Weapon>
+	<Sounds directory="Assets\Sounds">
+	    <sound id="derringer_reload" path="derringer_reload.ogg" prefix="first"/>
+	</Sounds>	
+	<AddFiles directory="Assets">
+		<texture path="units/mods/weapons/wpn_fps_pis_derringer_pts/derringer_df"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_derringer_pts/derringer_nm"/>
+	
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_derringer/wpn_fps_pis_derringer"/>
+		<model path="units/mods/weapons/wpn_fps_pis_derringer/wpn_fps_pis_derringer"/>
+		<object path="units/mods/weapons/wpn_fps_pis_derringer/wpn_fps_pis_derringer"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_derringer/wpn_fps_pis_derringer"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_derringer/wpn_fps_pis_derringer_npc"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_derringer_pts/wpn_fps_pis_derringer_frame"/>
+		<model path="units/mods/weapons/wpn_fps_pis_derringer_pts/wpn_fps_pis_derringer_frame"/>
+		<object path="units/mods/weapons/wpn_fps_pis_derringer_pts/wpn_fps_pis_derringer_frame"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_derringer_pts/wpn_fps_pis_derringer_frame"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_derringer_pts/wpn_fps_pis_derringer_frame"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_derringer_pts/wpn_fps_pis_derringer_frame_thq"/>
+
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/derringer"/>
+		<texture path="guis/derringer"/>
+		
+	</AddFiles>
+	<Hooks directory="Hooks">
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
+	</Hooks>
+</table>

@@ -1,0 +1,12 @@
+<materials version="3">
+    <material name="5218547794402818764" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" version="2">
+                <diffuse_texture	file="units/mods/weapons/wpn_fps_mel_therkatana/katana_df"/>
+                <bump_normal_texture	file="units/mods/weapons/wpn_fps_mel_therkatana/katana_nm"/>
+		<self_illumination_texture file="units/mods/weapons/wpn_fps_mel_therkatana/katana_il"/>
+		<variable name="contour_color" type="vector3" value="1 1 1"/>
+		<variable name="contour_opacity" type="scalar" value="0"/>
+		<variable type="scalar" name="il_bloom" value="9.999000474927"/>
+		<variable type="scalar" name="il_multiplier" value="reddot"/>
+    </material>
+	<material name="shadow_caster" render_template="shadow_caster_only:SKINNED_1WEIGHT"/>
+</materials>

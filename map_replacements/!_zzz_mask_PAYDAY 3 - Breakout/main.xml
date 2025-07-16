@@ -1,0 +1,25 @@
+<mod name="PAYDAY 3 - Breakout" author="Hylie" min_lib_ver="3.38">
+    <AssetUpdates id="50057" version="1.1" provider="modworkshop"/>
+    <GlobalValue id="hylie_pd3_mod" color="Color(0.53, 0.66, 0.42)"/>
+    <Localization directory="loc" default="english.txt">
+        <loc file="english.txt" language="english"/>
+    </Localization>
+
+    <Mask id="breakout" global_value="hylie_pd3_mod" />
+
+
+    <AddFiles directory="assets">    
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/breakout"/>
+
+        <model path="units/mods/masks/msk_breakout/msk_breakout"/>
+	    <object path="units/mods/masks/msk_breakout/msk_breakout"/>
+        <unit path="units/mods/masks/msk_breakout/msk_breakout"/>
+	    <material_config path="units/mods/masks/msk_breakout/msk_breakout"/>
+        <cooked_physics path="units/mods/masks/msk_breakout/msk_breakout"/>
+        
+        <texture path="units/mods/masks/msk_breakout/frame_df"/>
+        <texture path="units/mods/masks/msk_breakout/breakout_df"/>
+        <texture path="units/mods/masks/msk_breakout/breakout_nm"/>
+    </AddFiles>
+
+</mod>

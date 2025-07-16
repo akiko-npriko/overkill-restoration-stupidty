@@ -1,0 +1,23 @@
+<dynamic_object>
+	<diesel orientation_object="rp_specter" materials="units/mods/weapons/wpn_fps_snp_merkel_pts/wpn_fps_upg_merkel_usoptics_sn3_moa" />
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="g_specter">
+			<object enabled="true" name="g_details" inherit_bounding_volume="co_culling"/>
+			<object enabled="true" name="g_lens" inherit_bounding_volume="co_culling"/>
+			<object enabled="true" name="g_mount" inherit_bounding_volume="co_culling"/>
+			<object enabled="false" name="g_mount_ads" inherit_bounding_volume="co_culling"/>
+			<object enabled="false" name="g_reticle_mildot" inherit_bounding_volume="co_culling"/>
+			<object enabled="true" name="g_reticle_moa" inherit_bounding_volume="co_culling"/>
+			<object enabled="true" name="g_reticle_moa_mesh" inherit_bounding_volume="co_culling"/>
+			<object enabled="true" name="g_sn3" inherit_bounding_volume="co_culling"/>
+			<object enabled="false" name="g_sn3_ads" inherit_bounding_volume="co_culling"/>
+		</graphic_group>
+		<object enabled="false" name="g_specter" />
+		<object enabled="false" name="g_glass" />
+		<object enabled="false" name="g_gfx" />
+		<object enabled="false" name="g_gfx_specter" />
+		<object enabled="false" name="g_screen" />
+		<object enabled="false" name="g_vr_phong" />
+		<object enabled="false" name="g_vr_lens" />
+	</graphics>
+</dynamic_object>

@@ -1,0 +1,9 @@
+<materials version="3" group="weapon_group">
+	<material name="mat_il" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_pis_zenith_pts/textures/pistol_composite_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_pis_zenith_pts/textures/pistol_composite_nm"/>
+        <self_illumination_texture file="units/mods/weapons/wpn_fps_pis_zenith_pts/textures/pistol_composite_il"/>
+        <variable type="scalar" name="il_bloom" value="3"/>
+        <variable type="scalar" name="il_multiplier" value="reddot"/>
+	</material>
+</materials>
