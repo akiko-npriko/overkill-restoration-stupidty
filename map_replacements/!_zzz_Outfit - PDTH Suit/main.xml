@@ -1,0 +1,89 @@
+<table name="PAYDAY: The Heist Suit">
+<!--Made by Hedy-->
+	<Localization directory="localization" default="english.json"/>
+	
+	<GlobalValue id="pdthdrip" color="Color(0.788, 0, 0)"/>
+	
+	
+	<Gloves id="pdthglv" unit="units/pdthcriminals/gloves/pdthglv" third_material="units/pdthcriminals/gloves/pdthglv_tps" texture_bundle_folder="pdthcriminals" global_value="pdthdrip"/>
+	
+
+	<PlayerStyle id="pdthsuit" unit="units/pdthcriminals/pdth_male_fps/pdth_male_fps" third_unit="units/pdthcriminals/pdth_male_average/pdth_male_average" exclude_glove_adapter="false" default_gloves="pdthglv" texture_bundle_folder="pdthcriminals" global_value="pdthdrip">
+		<third_body_replacement	head="false" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="true"/>
+		<body_replacement		head="false" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="true"/>
+
+		<characters>
+			<dallas		third_unit="units/pdthcriminals/pdth_male_average/pdth_male_average"/>
+			<dragon		third_unit="units/pdthcriminals/pdth_male_average/pdth_male_average"/>
+			<dragan		third_unit="units/pdthcriminals/pdth_male_average/pdth_male_average"/>
+			<old_hoxton	third_unit="units/pdthcriminals/pdth_male_average/pdth_male_average"/>			
+			<hoxton		third_unit="units/pdthcriminals/pdth_male_average/pdth_male_average"/>			
+			<wolf		third_unit="units/pdthcriminals/pdth_male_average/pdth_male_average"/>			
+			<max		third_unit="units/pdthcriminals/pdth_male_average/pdth_male_average"/>
+			<wild		third_unit="units/pdthcriminals/pdth_male_average/pdth_male_average"/>
+			<jacket		third_unit="units/pdthcriminals/pdth_male_average/pdth_male_average"/>
+			<jowi		third_unit="units/pdthcriminals/pdth_male_average/pdth_male_average"/>
+			<chico		third_unit="units/pdthcriminals/pdth_male_average/pdth_male_average"/>
+			<jimmy		third_unit="units/pdthcriminals/pdth_male_average/pdth_male_average"/>
+			<sokol		third_unit="units/pdthcriminals/pdth_male_average/pdth_male_average"/>
+			<bodhi		third_unit="units/pdthcriminals/pdth_male_average/pdth_male_average"/>
+			<chains		third_unit="units/pdthcriminals/pdth_male_average/pdth_male_average"/>
+			<myh		third_unit="units/pdthcriminals/pdth_male_average/pdth_male_average"/>
+			<ecp_male	third_unit="units/pdthcriminals/pdth_male_fat/pdth_male_fat"/>	
+			
+			<female_1	third_unit="units/pdthcriminals/pdth_female_average/pdth_female_average" />
+			<sydney		third_unit="units/pdthcriminals/pdth_female_average/pdth_female_average"/>
+			<ecp_female	third_unit="units/pdthcriminals/pdth_female_average/pdth_female_average"/>
+			<joy		third_unit="units/pdthcriminals/pdth_female_average/pdth_female_average"/>	
+			<bonnie		third_unit="units/pdthcriminals/pdth_female_fat/pdth_female_fat"/>				
+		</characters>
+	</PlayerStyle>
+
+	<PlayerStyleVariant id="wolf"	player_style_id="pdthsuit" global_value="pdthdrip" material="units/pdthcriminals/shared_textures/pdth_wolf_fps"		third_material="units/pdthcriminals/shared_textures/pdth_wolf"		desc_id="bm_suit_var_pdthsuit_wolf_desc"></PlayerStyleVariant>
+	<PlayerStyleVariant id="chains"	player_style_id="pdthsuit" global_value="pdthdrip" material="units/pdthcriminals/shared_textures/pdth_chains_fps"	third_material="units/pdthcriminals/shared_textures/pdth_chains"	desc_id="bm_suit_var_pdthsuit_chains_desc"></PlayerStyleVariant>
+	<PlayerStyleVariant id="hoxton"	player_style_id="pdthsuit" global_value="pdthdrip" material="units/pdthcriminals/shared_textures/pdth_hoxton_fps"	third_material="units/pdthcriminals/shared_textures/pdth_hoxton"	desc_id="bm_suit_var_pdthsuit_hoxton_desc"></PlayerStyleVariant>
+
+    <AddFiles directory="assets" auto_generate="false">
+		<!--GUI-->
+    	<texture path="guis/dlcs/pdthcriminals/textures/pd2/blackmarket/icons/player_styles/pdthsuit"/>	
+		<texture path="guis/dlcs/pdthcriminals/textures/pd2/blackmarket/icons/player_styles/pdthsuit_default"/>	
+		<texture path="guis/dlcs/pdthcriminals/textures/pd2/blackmarket/icons/player_styles/pdthsuit_wolf"/>
+		<texture path="guis/dlcs/pdthcriminals/textures/pd2/blackmarket/icons/player_styles/pdthsuit_chains"/>
+		<texture path="guis/dlcs/pdthcriminals/textures/pd2/blackmarket/icons/player_styles/pdthsuit_hoxton"/>		
+		<texture path="guis/dlcs/pdthcriminals/textures/pd2/blackmarket/icons/gloves/pdthglv"/>	
+		
+		<!--TEXTURES-->
+		<texture path="units/pdthcriminals/shared_textures/suit_dallas_df"/>
+		<texture path="units/pdthcriminals/shared_textures/suit_wolf_df"/>
+		<texture path="units/pdthcriminals/shared_textures/suit_chains_df"/>
+		<texture path="units/pdthcriminals/shared_textures/suit_hoxton_df"/>
+		<texture path="units/pdthcriminals/shared_textures/player_suit_nm"/>
+		<texture path="units/pdthcriminals/shared_textures/player_suit_gsma"/>
+		<texture path="units/pdthcriminals/shared_textures/player_suit_pin_gsma"/>
+
+		<texture path="units/pdthcriminals/shared_textures/fps/criminal_fps_dallas_df"/>
+		<texture path="units/pdthcriminals/shared_textures/fps/criminal_fps_wolf_df"/>
+		<texture path="units/pdthcriminals/shared_textures/fps/criminal_fps_chains_df"/>
+		<texture path="units/pdthcriminals/shared_textures/fps/criminal_fps_hoxton_df"/>
+		<df_nm_gsma path="units/pdthcriminals/shared_textures/fps/fps_hand"/>
+
+		<!--BODY SHAPES-->
+		<unit_mat path="units/pdthcriminals/gloves/pdthglv"/>
+		<material_config path="units/pdthcriminals/gloves/pdthglv_tps"/>
+		<unit_mat path="units/pdthcriminals/pdth_male_average/pdth_male_average"/>
+		<unit_mat path="units/pdthcriminals/pdth_female_average/pdth_female_average"/>
+		<unit_mat path="units/pdthcriminals/pdth_female_fat/pdth_female_fat"/>
+		<unit_mat path="units/pdthcriminals/pdth_male_fat/pdth_male_fat"/>
+		
+		<!--Variations-->
+		<material_config path="units/pdthcriminals/shared_textures/pdth_wolf"/>
+		<material_config path="units/pdthcriminals/shared_textures/pdth_wolf_fps"/>
+		<material_config path="units/pdthcriminals/shared_textures/pdth_chains"/>
+		<material_config path="units/pdthcriminals/shared_textures/pdth_chains_fps"/>
+		<material_config path="units/pdthcriminals/shared_textures/pdth_hoxton"/>
+		<material_config path="units/pdthcriminals/shared_textures/pdth_hoxton_fps"/>
+		<!--FPS-->
+		<unit_mat path="units/pdthcriminals/pdth_male_fps/pdth_male_fps"/> 
+
+	</AddFiles>
+</table>

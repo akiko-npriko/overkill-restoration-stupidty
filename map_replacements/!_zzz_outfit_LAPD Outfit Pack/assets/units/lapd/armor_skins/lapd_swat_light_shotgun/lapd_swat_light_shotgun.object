@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/lapd/armor_skins/lapd_swat_light_shotgun/lapd_swat_light_shotgun" orientation_object="root_point" />
+
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="bounding_box_char">
+			<object name="g_body_shitbag" enabled="true"/>
+			<object name="g_swat_sg" enabled="true"/>
+			<object name="g_helmet_lod1" enabled="true"/>
+
+		<!--Balaclavas; Only one should be used at a time-->
+			<object name="g_balaclava_a" enabled="false"/> <!--Covered nose-->
+			<object name="g_balaclava_b" enabled="false"/> <!--Exposed nose-->
+
+		<!--Heads; Only one should be used at a time and they should not be used alongside a balaclava-->
+			<object name="g_head_black_a_var1" enabled="false"/>
+			<object name="g_head_black_a_var2" enabled="false"/>
+			<object name="g_head_black_a_var3" enabled="false"/>
+			<object name="g_head_black_a_var4" enabled="false"/>
+			<object name="g_head_black_a_var5" enabled="false"/>
+			<object name="g_head_black_a_var6" enabled="false"/>
+			<object name="g_head_black_a_var7" enabled="false"/>
+			<object name="g_head_white_a_var1" enabled="true"/>
+			<object name="g_head_white_a_var2" enabled="false"/>
+			<object name="g_head_white_a_var3" enabled="false"/>
+			<object name="g_head_white_a_var4" enabled="false"/>
+			<object name="g_head_white_a_var5" enabled="false"/>
+			<object name="g_head_white_a_var6" enabled="false"/>
+			<object name="g_head_white_a_var7" enabled="false"/>
+
+		<!--Faces; Only one should be used at a time and they should only be used alongside a balaclava-->
+			<object name="g_face_a" enabled="false"/>
+			<object name="g_face_b" enabled="false"/>
+			<object name="g_face_c" enabled="false"/>
+			<object name="g_face_d" enabled="false"/>
+			<object name="g_face_e" enabled="false"/>
+			<object name="g_face_f" enabled="false"/>
+			<object name="g_face_g" enabled="false"/>
+			<object name="g_face_h" enabled="false"/>
+
+		<!--Arms; Only one should be used at a time and they should only be used alongside the corresponding head or face-->
+		<!--If changed, the first-person model should also be changed-->
+			<object name="g_arms_black_a" enabled="false"/> <!--Use alongside g_head_black_a_var1, g_head_black_a_var5, or g_face_h-->
+			<object name="g_arms_black_b" enabled="false"/> <!--Use alongside g_head_black_a_var2-->
+			<object name="g_arms_black_c" enabled="false"/> <!--Use alongside g_head_black_a_var4, g_head_black_a_var6, or g_face_e-->
+			<object name="g_arms_black_d" enabled="false"/> <!--Use alongside g_head_black_a_var3-->
+			<object name="g_arms_black_e" enabled="false"/> <!--Use alongside g_head_black_a_var7-->
+			<object name="g_arms_white_a" enabled="true"/> <!--Use alongside g_head_white_a_var1, g_head_white_a_var6, g_head_white_a_var7, g_face_a, or g_face_d-->
+			<object name="g_arms_white_b" enabled="false"/> <!--Use alongside g_head_white_a_var2, g_face_c, or g_face_g-->
+			<object name="g_arms_white_c" enabled="false"/> <!--Use alongside g_head_white_a_var3, g_head_white_a_var5, g_face_b, or g_face_f-->
+			<object name="g_arms_white_d" enabled="false"/> <!--Use alongside g_head_white_a_var4-->
+
+		<!--Sleeves-->
+		<!--If changed, the first-person model should also be changed-->
+			<object name="g_longsleeve" enabled="false"/>
+
+		<!--Goggles; Frame and glass should be used together-->
+			<object name="g_goggles_a" enabled="true"/> <!--Frame-->
+			<object name="g_glass" enabled="true"/> <!--Glass-->
+
+		<!--Headset-->
+			<object name="g_helmet_lod3" enabled="true"/>
+
+		<!--Helmet Pillow-->
+			<object name="g_helmet_lod10" enabled="true"/>
+
+		<!--Gun Holster-->
+			<object name="g_holster_l" enabled="true"/>
+		</graphic_group>
+	</graphics>
+</dynamic_object>

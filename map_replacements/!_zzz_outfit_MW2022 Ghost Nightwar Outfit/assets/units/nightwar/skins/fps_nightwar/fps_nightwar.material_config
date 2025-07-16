@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<materials version="3">
+	<material name="mtr_watch_fps" unique="true" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/watch_df"/>
+		<material_texture file="units/nightwar/skins/textures/watch_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/watch_nm"/>
+	</material>
+	<material name="mtr_gauge_fps" unique="true" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/gauge_fps_df"/>
+		<material_texture file="units/nightwar/skins/textures/gauge_fps_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/gauge_fps_nm"/>
+	</material>
+	<material name="mtr_strap_fps" unique="true" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/strap_fps_df"/>
+		<material_texture file="units/nightwar/skins/textures/strap_fps_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/strap_fps_nm"/>
+	</material>
+	<material name="mtr_sleeves_fps" unique="true" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/sleeves_fps_df"/>
+		<material_texture file="units/nightwar/skins/textures/sleeves_fps_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/sleeves_fps_nm"/>
+	</material>
+	<material name="mtr_gloves_fps" unique="true" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/gloves_fps_df"/>
+		<material_texture file="units/nightwar/skins/textures/gloves_fps_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/gloves_fps_nm"/>
+	</material>
+	<material name="mtr_arms_fps" unique="true" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/arm_left_df"/>
+		<material_texture file="units/nightwar/skins/textures/arm_right_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/arm_right_nm"/>
+	</material>
+	<material name="mtr_glass" unique="true" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:FPS:NORMALMAP">
+		<diffuse_texture file="units/nightwar/skins/textures/glass_df"/>
+		<opacity_texture file="units/nightwar/skins/textures/glass_op"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/glass_nm"/>
+		<reflection_texture type="cubemap" global_texture="current_global_texture"/>
+		<variable value="1 1 1" type="vector3" name="fresnel_settings"/>
+	</material>
+</materials>

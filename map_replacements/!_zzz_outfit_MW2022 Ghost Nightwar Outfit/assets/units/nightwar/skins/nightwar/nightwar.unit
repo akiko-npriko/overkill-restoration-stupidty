@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<unit slot="1" type="inf3">
+	<object file="units/nightwar/skins/nightwar/nightwar"/>
+	<dependencies/>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+        <extension name="contour" class="ContourExt"/>
+        <extension name="damage" class="UnitDamage" />
+	</extensions>
+</unit>

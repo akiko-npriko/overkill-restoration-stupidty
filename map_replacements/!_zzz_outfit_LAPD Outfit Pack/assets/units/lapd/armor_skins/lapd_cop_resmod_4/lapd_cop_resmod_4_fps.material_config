@@ -1,0 +1,11 @@
+<materials version="3" group="ene_la_cop_2">
+	<material name="mtr_police_body" version="2" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<bump_normal_texture file="units/pd2_dlc_rvd/characters/ene_la_cop_texture/ene_la_cop_nm"/>
+		<diffuse_texture file="units/lapd/armor_skins/shared_textures/ene_la_cop_df"/>
+        	<material_texture file="units/pd2_dlc_rvd/characters/ene_la_cop_texture/ene_la_cop_gsma"/>
+	</material>
+    <material name="shadow_caster" render_template="shadow_caster_only:SKINNED_1WEIGHT" version="2"/>
+</materials>
+
+ 
+ 

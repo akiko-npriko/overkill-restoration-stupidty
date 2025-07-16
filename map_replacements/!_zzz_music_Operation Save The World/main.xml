@@ -1,0 +1,9 @@
+<table name="Neppu Tennouboshi Operation Save The World">
+    <Localization directory="loc" default="en.txt"/>
+<HeistMusic id="nt_ostw" directory="music/nt_ostw"> 
+    <event name="setup" source="stealth.ogg"/>
+    <event name="anticipation" start_source="anticipation_intro.ogg" source="anticipation.ogg"/>
+    <event name="assault" start_source="transition.ogg" source="assault.ogg"/>
+	<event name="control" source="control.ogg"/>
+</HeistMusic>
+</table>

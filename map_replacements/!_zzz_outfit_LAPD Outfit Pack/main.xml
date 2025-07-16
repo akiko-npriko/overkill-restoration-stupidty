@@ -1,0 +1,617 @@
+<table name="LAPD Outfit Pack" image="">
+	<Localization directory="localization" default="english.txt"/>
+	<GlobalValue id="lapd_g" color="Color(0, 0.3, 0)"/>
+
+	<!--SWAT Light Rifleman-->
+	<PlayerStyle id="lapd_swat_light_rifle" unit="units/lapd/armor_skins/lapd_swat_light_rifle/lapd_swat_light_rifle_fps" third_unit="units/lapd/armor_skins/lapd_swat_light_rifle/lapd_swat_light_rifle" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic SWAT Light Rifleman-->
+	<PlayerStyle id="lapd_swat_light_rifle_classic" unit="units/lapd/armor_skins/lapd_swat_light_rifle_classic/lapd_swat_light_rifle_classic_fps" third_unit="units/lapd/armor_skins/lapd_swat_light_rifle_classic/lapd_swat_light_rifle_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--SWAT Light Shotgunner-->
+	<PlayerStyle id="lapd_swat_light_shotgun" unit="units/lapd/armor_skins/lapd_swat_light_shotgun/lapd_swat_light_shotgun_fps" third_unit="units/lapd/armor_skins/lapd_swat_light_shotgun/lapd_swat_light_shotgun" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic SWAT Light Shotgunner-->
+	<PlayerStyle id="lapd_swat_light_shotgun_classic" unit="units/lapd/armor_skins/lapd_swat_light_shotgun_classic/lapd_swat_light_shotgun_classic_fps" third_unit="units/lapd/armor_skins/lapd_swat_light_shotgun_classic/lapd_swat_light_shotgun_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--SWAT Light Submachinegunner-->
+	<PlayerStyle id="lapd_swat_light_smg" unit="units/lapd/armor_skins/lapd_swat_light_smg/lapd_swat_light_smg_fps" third_unit="units/lapd/armor_skins/lapd_swat_light_smg/lapd_swat_light_smg" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--SWAT Heavy Rifleman-->
+	<PlayerStyle id="lapd_swat_heavy_rifle" unit="units/lapd/armor_skins/lapd_swat_heavy_rifle/lapd_swat_heavy_rifle_fps" third_unit="units/lapd/armor_skins/lapd_swat_heavy_rifle/lapd_swat_heavy_rifle" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic SWAT Heavy Rifleman-->
+	<PlayerStyle id="lapd_swat_heavy_rifle_classic" unit="units/lapd/armor_skins/lapd_swat_heavy_rifle_classic/lapd_swat_heavy_rifle_classic_fps" third_unit="units/lapd/armor_skins/lapd_swat_heavy_rifle_classic/lapd_swat_heavy_rifle_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--SWAT Heavy Shotgunner-->
+	<PlayerStyle id="lapd_swat_heavy_shotgun" unit="units/lapd/armor_skins/lapd_swat_heavy_shotgun/lapd_swat_heavy_shotgun_fps" third_unit="units/lapd/armor_skins/lapd_swat_heavy_shotgun/lapd_swat_heavy_shotgun" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic SWAT Heavy Shotgunner-->
+	<PlayerStyle id="lapd_swat_heavy_shotgun_classic" unit="units/lapd/armor_skins/lapd_swat_heavy_shotgun_classic/lapd_swat_heavy_shotgun_classic_fps" third_unit="units/lapd/armor_skins/lapd_swat_heavy_shotgun_classic/lapd_swat_heavy_shotgun_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--SWAT Shield-->
+	<PlayerStyle id="lapd_swat_shield" unit="units/lapd/armor_skins/lapd_swat_shield/lapd_swat_shield_fps" third_unit="units/lapd/armor_skins/lapd_swat_shield/lapd_swat_shield" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--SWAT Sniper-->
+	<PlayerStyle id="lapd_swat_sniper" unit="units/lapd/armor_skins/lapd_swat_sniper/lapd_swat_sniper_fps" third_unit="units/lapd/armor_skins/lapd_swat_sniper/lapd_swat_sniper" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic SWAT Sniper-->
+	<PlayerStyle id="lapd_swat_sniper_classic" unit="units/lapd/armor_skins/lapd_swat_sniper_classic/lapd_swat_sniper_classic_fps" third_unit="units/lapd/armor_skins/lapd_swat_sniper_classic/lapd_swat_sniper_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--FBI Light Rifleman-->
+	<PlayerStyle id="lapd_fbi_light_rifle" unit="units/lapd/armor_skins/lapd_fbi_light_rifle/lapd_fbi_light_rifle_fps" third_unit="units/lapd/armor_skins/lapd_fbi_light_rifle/lapd_fbi_light_rifle" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic FBI Light Rifleman-->
+	<PlayerStyle id="lapd_fbi_light_rifle_classic" unit="units/lapd/armor_skins/lapd_fbi_light_rifle_classic/lapd_fbi_light_rifle_classic_fps" third_unit="units/lapd/armor_skins/lapd_fbi_light_rifle_classic/lapd_fbi_light_rifle_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--FBI Light Shotgunner-->
+	<PlayerStyle id="lapd_fbi_light_shotgun" unit="units/lapd/armor_skins/lapd_fbi_light_shotgun/lapd_fbi_light_shotgun_fps" third_unit="units/lapd/armor_skins/lapd_fbi_light_shotgun/lapd_fbi_light_shotgun" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic FBI Light Shotgunner-->
+	<PlayerStyle id="lapd_fbi_light_shotgun_classic" unit="units/lapd/armor_skins/lapd_fbi_light_shotgun_classic/lapd_fbi_light_shotgun_classic_fps" third_unit="units/lapd/armor_skins/lapd_fbi_light_shotgun_classic/lapd_fbi_light_shotgun_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--FBI Light Submachinegunner-->
+	<PlayerStyle id="lapd_fbi_light_smg" unit="units/lapd/armor_skins/lapd_fbi_light_rifle/lapd_fbi_light_rifle_fps" third_unit="units/lapd/armor_skins/lapd_fbi_light_smg/lapd_fbi_light_smg" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic FBI Light Submachinegunner-->
+	<PlayerStyle id="lapd_fbi_light_smg_classic" unit="units/lapd/armor_skins/lapd_fbi_light_smg_classic/lapd_fbi_light_smg_classic_fps" third_unit="units/lapd/armor_skins/lapd_fbi_light_smg_classic/lapd_fbi_light_smg_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--FBI Heavy Rifleman-->
+	<PlayerStyle id="lapd_fbi_heavy_rifle" unit="units/lapd/armor_skins/lapd_fbi_heavy_rifle/lapd_fbi_heavy_rifle_fps" third_unit="units/lapd/armor_skins/lapd_fbi_heavy_rifle/lapd_fbi_heavy_rifle" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic FBI Heavy Rifleman-->
+	<PlayerStyle id="lapd_fbi_heavy_rifle_classic" unit="units/lapd/armor_skins/lapd_fbi_heavy_rifle_classic/lapd_fbi_heavy_rifle_classic_fps" third_unit="units/lapd/armor_skins/lapd_fbi_heavy_rifle_classic/lapd_fbi_heavy_rifle_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--FBI Heavy Shotgunner-->
+	<PlayerStyle id="lapd_fbi_heavy_shotgun" unit="units/lapd/armor_skins/lapd_fbi_heavy_rifle/lapd_fbi_heavy_rifle_fps" third_unit="units/lapd/armor_skins/lapd_fbi_heavy_shotgun/lapd_fbi_heavy_shotgun" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic FBI Heavy Shotgunner-->
+	<PlayerStyle id="lapd_fbi_heavy_shotgun_classic" unit="units/lapd/armor_skins/lapd_fbi_heavy_shotgun_classic/lapd_fbi_heavy_shotgun_classic_fps" third_unit="units/lapd/armor_skins/lapd_fbi_heavy_shotgun_classic/lapd_fbi_heavy_shotgun_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--FBI Shield-->
+	<PlayerStyle id="lapd_fbi_shield" unit="units/lapd/armor_skins/lapd_fbi_shield/lapd_fbi_shield_fps" third_unit="units/lapd/armor_skins/lapd_fbi_shield/lapd_fbi_shield" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic FBI Shield-->
+	<PlayerStyle id="lapd_fbi_shield_classic" unit="units/lapd/armor_skins/lapd_fbi_shield_classic/lapd_fbi_shield_classic_fps" third_unit="units/lapd/armor_skins/lapd_fbi_shield_classic/lapd_fbi_shield_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--FBI Sniper-->
+	<PlayerStyle id="lapd_fbi_sniper" unit="units/lapd/armor_skins/lapd_fbi_sniper/lapd_fbi_sniper_fps" third_unit="units/lapd/armor_skins/lapd_fbi_sniper/lapd_fbi_sniper" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic FBI Sniper-->
+	<PlayerStyle id="lapd_fbi_sniper_classic" unit="units/lapd/armor_skins/lapd_fbi_sniper_classic/lapd_fbi_sniper_classic_fps" third_unit="units/lapd/armor_skins/lapd_fbi_sniper_classic/lapd_fbi_sniper_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--GenSec Light Rifleman-->
+	<PlayerStyle id="lapd_gensec_light_rifle" unit="units/lapd/armor_skins/lapd_gensec_light_rifle/lapd_gensec_light_rifle_fps" third_unit="units/lapd/armor_skins/lapd_gensec_light_rifle/lapd_gensec_light_rifle" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic GenSec Light Rifleman-->
+	<PlayerStyle id="lapd_gensec_light_rifle_classic" unit="units/lapd/armor_skins/lapd_gensec_light_rifle_classic/lapd_gensec_light_rifle_classic_fps" third_unit="units/lapd/armor_skins/lapd_gensec_light_rifle_classic/lapd_gensec_light_rifle_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--GenSec Light Shotgunner-->
+	<PlayerStyle id="lapd_gensec_light_shotgun" unit="units/lapd/armor_skins/lapd_gensec_light_shotgun/lapd_gensec_light_shotgun_fps" third_unit="units/lapd/armor_skins/lapd_gensec_light_shotgun/lapd_gensec_light_shotgun" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic GenSec Light Shotgunner-->
+	<PlayerStyle id="lapd_gensec_light_shotgun_classic" unit="units/lapd/armor_skins/lapd_gensec_light_shotgun_classic/lapd_gensec_light_shotgun_classic_fps" third_unit="units/lapd/armor_skins/lapd_gensec_light_shotgun_classic/lapd_gensec_light_shotgun_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--GenSec Light Submachinegunner-->
+	<PlayerStyle id="lapd_gensec_light_smg" unit="units/lapd/armor_skins/lapd_gensec_light_smg/lapd_gensec_light_smg_fps" third_unit="units/lapd/armor_skins/lapd_gensec_light_smg/lapd_gensec_light_smg" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic GenSec Light Submachinegunner-->
+	<PlayerStyle id="lapd_gensec_light_smg_classic" unit="units/lapd/armor_skins/lapd_gensec_light_smg_classic/lapd_gensec_light_smg_classic_fps" third_unit="units/lapd/armor_skins/lapd_gensec_light_smg_classic/lapd_gensec_light_smg_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--GenSec Heavy Rifleman-->
+	<PlayerStyle id="lapd_gensec_heavy_rifle" unit="units/lapd/armor_skins/lapd_gensec_heavy_rifle/lapd_gensec_heavy_rifle_fps" third_unit="units/lapd/armor_skins/lapd_gensec_heavy_rifle/lapd_gensec_heavy_rifle" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic GenSec Heavy Rifleman-->
+	<PlayerStyle id="lapd_gensec_heavy_rifle_classic" unit="units/lapd/armor_skins/lapd_gensec_heavy_rifle_classic/lapd_gensec_heavy_rifle_classic_fps" third_unit="units/lapd/armor_skins/lapd_gensec_heavy_rifle_classic/lapd_gensec_heavy_rifle_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--GenSec Heavy Shotgunner-->
+	<PlayerStyle id="lapd_gensec_heavy_shotgun" unit="units/lapd/armor_skins/lapd_gensec_heavy_shotgun/lapd_gensec_heavy_shotgun_fps" third_unit="units/lapd/armor_skins/lapd_gensec_heavy_shotgun/lapd_gensec_heavy_shotgun" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic GenSec Heavy Shotgunner-->
+	<PlayerStyle id="lapd_gensec_heavy_shotgun_classic" unit="units/lapd/armor_skins/lapd_gensec_heavy_shotgun_classic/lapd_gensec_heavy_shotgun_classic_fps" third_unit="units/lapd/armor_skins/lapd_gensec_heavy_shotgun_classic/lapd_gensec_heavy_shotgun_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--GenSec Shield-->
+	<PlayerStyle id="lapd_gensec_shield" unit="units/lapd/armor_skins/lapd_gensec_shield/lapd_gensec_shield_fps" third_unit="units/lapd/armor_skins/lapd_gensec_shield/lapd_gensec_shield" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--GenSec Sniper-->
+	<PlayerStyle id="lapd_gensec_sniper" unit="units/lapd/armor_skins/lapd_gensec_sniper/lapd_gensec_sniper_fps" third_unit="units/lapd/armor_skins/lapd_gensec_sniper/lapd_gensec_sniper" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic GenSec Sniper-->
+	<PlayerStyle id="lapd_gensec_sniper_classic" unit="units/lapd/armor_skins/lapd_gensec_sniper_classic/lapd_gensec_sniper_classic_fps" third_unit="units/lapd/armor_skins/lapd_gensec_sniper_classic/lapd_gensec_sniper_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Cop 1-->
+	<PlayerStyle id="lapd_cop_resmod_1" unit="units/lapd/armor_skins/lapd_cop_resmod_1/lapd_cop_resmod_1_fps" third_unit="units/lapd/armor_skins/lapd_cop_resmod_1/lapd_cop_resmod_1" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Cop 2-->
+	<PlayerStyle id="lapd_cop_resmod_2" unit="units/lapd/armor_skins/lapd_cop_resmod_2/lapd_cop_resmod_2_fps" third_unit="units/lapd/armor_skins/lapd_cop_resmod_2/lapd_cop_resmod_2" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Cop 3-->
+	<PlayerStyle id="lapd_cop_resmod_3" unit="units/lapd/armor_skins/lapd_cop_resmod_3/lapd_cop_resmod_3_fps" third_unit="units/lapd/armor_skins/lapd_cop_resmod_3/lapd_cop_resmod_3" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Cop 4-->
+	<PlayerStyle id="lapd_cop_resmod_4" unit="units/lapd/armor_skins/lapd_cop_resmod_4/lapd_cop_resmod_4_fps" third_unit="units/lapd/armor_skins/lapd_cop_resmod_4/lapd_cop_resmod_4" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Veteran Agent-->
+	<PlayerStyle id="lapd_fbi_agent_1" unit="units/lapd/armor_skins/lapd_fbi_agent_1/lapd_fbi_agent_1_fps" third_unit="units/lapd/armor_skins/lapd_fbi_agent_1/lapd_fbi_agent_1" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--HRT-->
+	<PlayerStyle id="lapd_fbi_agent_2" unit="units/lapd/armor_skins/lapd_fbi_agent_2/lapd_fbi_agent_2_fps" third_unit="units/lapd/armor_skins/lapd_fbi_agent_2/lapd_fbi_agent_2" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Taser-->
+	<PlayerStyle id="lapd_taser" unit="units/lapd/armor_skins/lapd_taser/lapd_taser_fps" third_unit="units/lapd/armor_skins/lapd_taser/lapd_taser" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic Taser-->
+	<PlayerStyle id="lapd_taser_classic" unit="units/lapd/armor_skins/lapd_taser_classic/lapd_taser_classic_fps" third_unit="units/lapd/armor_skins/lapd_taser_classic/lapd_taser_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Grenadier-->
+	<PlayerStyle id="lapd_grenadier" unit="units/lapd/armor_skins/lapd_grenadier/lapd_grenadier_fps" third_unit="units/lapd/armor_skins/lapd_grenadier/lapd_grenadier" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--M249 Dozer-->
+	<PlayerStyle id="lapd_dozer_m249" unit="units/lapd/armor_skins/lapd_dozer_m249/lapd_dozer_m249_fps" third_unit="units/lapd/armor_skins/lapd_dozer_m249/lapd_dozer_m249" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Mardo-->
+	<PlayerStyle id="lapd_veteran_1" unit="units/lapd/armor_skins/lapd_veteran_1/lapd_veteran_1_fps" third_unit="units/lapd/armor_skins/lapd_veteran_1/lapd_veteran_1" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Clean Mardo-->
+	<PlayerStyle id="lapd_veteran_2" unit="units/lapd/armor_skins/lapd_veteran_2/lapd_veteran_2_fps" third_unit="units/lapd/armor_skins/lapd_veteran_2/lapd_veteran_2" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="lapd" global_value="lapd_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<AddFiles directory="assets">
+	<!--SWAT Light Rifleman-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_swat_light_rifle"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_swat_light_rifle/lapd_swat_light_rifle"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_swat_light_rifle/lapd_swat_light_rifle_fps"/>
+
+	<!--Classic SWAT Light Rifleman-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_swat_light_rifle_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_swat_light_rifle_classic/lapd_swat_light_rifle_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_swat_light_rifle_classic/lapd_swat_light_rifle_classic_fps"/>
+
+	<!--SWAT Light Shotgunner-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_swat_light_shotgun"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_swat_light_shotgun/lapd_swat_light_shotgun"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_swat_light_shotgun/lapd_swat_light_shotgun_fps"/>
+
+	<!--Classic SWAT Light Shotgunner-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_swat_light_shotgun_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_swat_light_shotgun_classic/lapd_swat_light_shotgun_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_swat_light_shotgun_classic/lapd_swat_light_shotgun_classic_fps"/>
+
+	<!--SWAT Light Submachinegunner-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_swat_light_smg"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_swat_light_smg/lapd_swat_light_smg"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_swat_light_smg/lapd_swat_light_smg_fps"/>
+
+	<!--SWAT Heavy Rifleman-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_swat_heavy_rifle"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_swat_heavy_rifle/lapd_swat_heavy_rifle"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_swat_heavy_rifle/lapd_swat_heavy_rifle_fps"/>
+
+	<!--Classic SWAT Heavy Rifleman-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_swat_heavy_rifle_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_swat_heavy_rifle_classic/lapd_swat_heavy_rifle_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_swat_heavy_rifle_classic/lapd_swat_heavy_rifle_classic_fps"/>
+
+	<!--SWAT Heavy Shotgunner-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_swat_heavy_shotgun"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_swat_heavy_shotgun/lapd_swat_heavy_shotgun"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_swat_heavy_shotgun/lapd_swat_heavy_shotgun_fps"/>
+
+	<!--Classic SWAT Heavy Shotgunner-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_swat_heavy_shotgun_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_swat_heavy_shotgun_classic/lapd_swat_heavy_shotgun_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_swat_heavy_shotgun_classic/lapd_swat_heavy_shotgun_classic_fps"/>
+
+	<!--SWAT Shield-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_swat_shield"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_swat_shield/lapd_swat_shield"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_swat_shield/lapd_swat_shield_fps"/>
+
+	<!--SWAT Sniper-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_swat_sniper"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_swat_sniper/lapd_swat_sniper"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_swat_sniper/lapd_swat_sniper_fps"/>
+
+	<!--Classic SWAT Sniper-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_swat_sniper_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_swat_sniper_classic/lapd_swat_sniper_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_swat_sniper_classic/lapd_swat_sniper_classic_fps"/>
+
+	<!--FBI Light Rifleman-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_fbi_light_rifle"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_light_rifle/lapd_fbi_light_rifle"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_light_rifle/lapd_fbi_light_rifle_fps"/>
+
+	<!--Classic FBI Light Rifleman-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_fbi_light_rifle_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_light_rifle_classic/lapd_fbi_light_rifle_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_light_rifle_classic/lapd_fbi_light_rifle_classic_fps"/>
+
+	<!--FBI Light Shotgunner-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_fbi_light_shotgun"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_light_shotgun/lapd_fbi_light_shotgun"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_light_shotgun/lapd_fbi_light_shotgun_fps"/>
+
+	<!--Classic FBI Light Shotgunner-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_fbi_light_shotgun_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_light_shotgun_classic/lapd_fbi_light_shotgun_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_light_shotgun_classic/lapd_fbi_light_shotgun_classic_fps"/>
+
+	<!--FBI Light Submachinegunner-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_fbi_light_smg"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_light_smg/lapd_fbi_light_smg"/>
+
+	<!--Classic FBI Light Submachinegunner-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_fbi_light_smg_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_light_smg_classic/lapd_fbi_light_smg_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_light_smg_classic/lapd_fbi_light_smg_classic_fps"/>
+
+	<!--FBI Heavy Rifleman-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_fbi_heavy_rifle"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_heavy_rifle/lapd_fbi_heavy_rifle"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_heavy_rifle/lapd_fbi_heavy_rifle_fps"/>
+
+	<!--Classic FBI Heavy Rifleman-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_fbi_heavy_rifle_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_heavy_rifle_classic/lapd_fbi_heavy_rifle_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_heavy_rifle_classic/lapd_fbi_heavy_rifle_classic_fps"/>
+
+	<!--FBI Heavy Shotgunner-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_fbi_heavy_shotgun"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_heavy_shotgun/lapd_fbi_heavy_shotgun"/>
+
+	<!--Classic FBI Heavy Shotgunner-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_fbi_heavy_shotgun_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_heavy_shotgun_classic/lapd_fbi_heavy_shotgun_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_heavy_shotgun_classic/lapd_fbi_heavy_shotgun_classic_fps"/>
+
+	<!--FBI Shield-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_fbi_shield"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_shield/lapd_fbi_shield"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_shield/lapd_fbi_shield_fps"/>
+
+	<!--Classic FBI Shield-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_fbi_shield_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_shield_classic/lapd_fbi_shield_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_shield_classic/lapd_fbi_shield_classic_fps"/>
+
+	<!--FBI Sniper-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_fbi_sniper"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_sniper/lapd_fbi_sniper"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_sniper/lapd_fbi_sniper_fps"/>
+
+	<!--Classic FBI Sniper-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_fbi_sniper_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_sniper_classic/lapd_fbi_sniper_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_sniper_classic/lapd_fbi_sniper_classic_fps"/>
+
+	<!--GenSec Light Rifleman-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_gensec_light_rifle"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_gensec_light_rifle/lapd_gensec_light_rifle"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_gensec_light_rifle/lapd_gensec_light_rifle_fps"/>
+
+	<!--Classic GenSec Light Rifleman-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_gensec_light_rifle_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_gensec_light_rifle_classic/lapd_gensec_light_rifle_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_gensec_light_rifle_classic/lapd_gensec_light_rifle_classic_fps"/>
+
+	<!--GenSec Light Shotgunner-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_gensec_light_shotgun"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_gensec_light_shotgun/lapd_gensec_light_shotgun"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_gensec_light_shotgun/lapd_gensec_light_shotgun_fps"/>
+
+	<!--Classic GenSec Light Shotgunner-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_gensec_light_shotgun_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_gensec_light_shotgun_classic/lapd_gensec_light_shotgun_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_gensec_light_shotgun_classic/lapd_gensec_light_shotgun_classic_fps"/>
+
+	<!--GenSec Light Submachinegunner-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_gensec_light_smg"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_gensec_light_smg/lapd_gensec_light_smg"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_gensec_light_smg/lapd_gensec_light_smg_fps"/>
+
+	<!--Classic GenSec Light Submachinegunner-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_gensec_light_smg_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_gensec_light_smg_classic/lapd_gensec_light_smg_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_gensec_light_smg_classic/lapd_gensec_light_smg_classic_fps"/>
+
+	<!--GenSec Heavy Rifleman-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_gensec_heavy_rifle"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_gensec_heavy_rifle/lapd_gensec_heavy_rifle"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_gensec_heavy_rifle/lapd_gensec_heavy_rifle_fps"/>
+
+	<!--Classic GenSec Heavy Rifleman-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_gensec_heavy_rifle_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_gensec_heavy_rifle_classic/lapd_gensec_heavy_rifle_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_gensec_heavy_rifle_classic/lapd_gensec_heavy_rifle_classic_fps"/>
+
+	<!--GenSec Heavy Shotgunner-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_gensec_heavy_shotgun"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_gensec_heavy_shotgun/lapd_gensec_heavy_shotgun"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_gensec_heavy_shotgun/lapd_gensec_heavy_shotgun_fps"/>
+
+	<!--Classic GenSec Heavy Shotgunner-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_gensec_heavy_shotgun_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_gensec_heavy_shotgun_classic/lapd_gensec_heavy_shotgun_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_gensec_heavy_shotgun_classic/lapd_gensec_heavy_shotgun_classic_fps"/>
+
+	<!--GenSec Shield-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_gensec_shield"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_gensec_shield/lapd_gensec_shield"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_gensec_shield/lapd_gensec_shield_fps"/>
+
+	<!--GenSec Sniper-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_gensec_sniper"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_gensec_sniper/lapd_gensec_sniper"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_gensec_sniper/lapd_gensec_sniper_fps"/>
+
+	<!--Classic GenSec Sniper-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_gensec_sniper_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_gensec_sniper_classic/lapd_gensec_sniper_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_gensec_sniper_classic/lapd_gensec_sniper_classic_fps"/>
+
+	<!--Cop 1-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_cop_resmod_1"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_cop_resmod_1/lapd_cop_resmod_1"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_cop_resmod_1/lapd_cop_resmod_1_fps"/>
+
+	<!--Cop 2-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_cop_resmod_2"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_cop_resmod_2/lapd_cop_resmod_2"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_cop_resmod_2/lapd_cop_resmod_2_fps"/>
+
+	<!--Cop 3-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_cop_resmod_3"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_cop_resmod_3/lapd_cop_resmod_3"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_cop_resmod_3/lapd_cop_resmod_3_fps"/>
+
+	<!--Cop 4-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_cop_resmod_4"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_cop_resmod_4/lapd_cop_resmod_4"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_cop_resmod_4/lapd_cop_resmod_4_fps"/>
+
+	<!--Veteran Agent-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_fbi_agent_1"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_agent_1/lapd_fbi_agent_1"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_agent_1/lapd_fbi_agent_1_fps"/>
+
+	<!--HRT-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_fbi_agent_2"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_agent_2/lapd_fbi_agent_2"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_fbi_agent_2/lapd_fbi_agent_2_fps"/>
+
+	<!--Taser-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_taser"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_taser/lapd_taser"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_taser/lapd_taser_fps"/>
+
+	<!--Classic Taser-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_taser_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_taser_classic/lapd_taser_classic"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_taser_classic/lapd_taser_classic_fps"/>
+
+	<!--Grenadier-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_grenadier"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_grenadier/lapd_grenadier"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_grenadier/lapd_grenadier_fps"/>
+
+	<!--M249 Dozer-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_dozer_m249"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_dozer_m249/lapd_dozer_m249"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_dozer_m249/lapd_dozer_m249_fps"/>
+		<texture path="units/lapd/armor_skins/lapd_dozer_m249/ene_bulldozer_3_df"/>
+
+	<!--Mardo-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_veteran_1"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_veteran_1/lapd_veteran_1"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_veteran_1/lapd_veteran_1_fps"/>
+
+	<!--Clean Mardo-->
+		<texture path="guis/dlcs/lapd/textures/pd2/blackmarket/icons/player_styles/lapd_veteran_2"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_veteran_2/lapd_veteran_2"/>
+		<unit_mat path="units/lapd/armor_skins/lapd_veteran_2/lapd_veteran_2_fps"/>
+
+	<!--Shared Textures-->
+		<texture path="units/lapd/armor_skins/shared_textures/bulldozer_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/ene_city_heavy_nm"/>
+		<texture path="units/lapd/armor_skins/shared_textures/ene_city_heavy_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/ene_la_cop_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/fbi_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/fbi_cap_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/head_new_nm"/>
+		<texture path="units/lapd/armor_skins/shared_textures/head_new_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/heads_cop_nm"/>
+		<texture path="units/lapd/armor_skins/shared_textures/heads_cop_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/heads_cop_la_nm"/>
+		<texture path="units/lapd/armor_skins/shared_textures/heads_cop_la_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/heads_fbi_nm"/>
+		<texture path="units/lapd/armor_skins/shared_textures/heads_fbi_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/heads_sec_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/helmets_atlas_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/lapd_dw_heads_nm"/>
+		<texture path="units/lapd/armor_skins/shared_textures/lapd_dw_heads_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/lapd_heads_nm"/>
+		<texture path="units/lapd/armor_skins/shared_textures/lapd_heads_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/lapd_helms_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/lapd_vet_body_nm"/>
+		<texture path="units/lapd/armor_skins/shared_textures/lapd_vet_body_1_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/lapd_vet_body_2_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/lapd_vet_head_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/mask_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/opscore_nm"/>
+		<texture path="units/lapd/armor_skins/shared_textures/opscore_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/special_body_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/spook_atlas_nm"/>
+		<texture path="units/lapd/armor_skins/shared_textures/spook_atlas_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/spook_heavy_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/shirt_vest_nm"/>
+		<texture path="units/lapd/armor_skins/shared_textures/shirt_vest_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/swat_atlas_nm"/>
+		<texture path="units/lapd/armor_skins/shared_textures/swat_atlas_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/swat_body_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/swat_city_nm"/>
+		<texture path="units/lapd/armor_skins/shared_textures/swat_city_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/swat_city_classic_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/swat_fbi_body_nm"/>
+		<texture path="units/lapd/armor_skins/shared_textures/swat_fbi_body_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/swat_new_nm"/>
+		<texture path="units/lapd/armor_skins/shared_textures/swat_new_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/tank_glass_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/tank_glass_op"/>
+		<texture path="units/lapd/armor_skins/shared_textures/taser_body_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/titan_glass_df"/>
+		<texture path="units/lapd/armor_skins/shared_textures/titan_glass_op"/>
+	</AddFiles>
+</table>

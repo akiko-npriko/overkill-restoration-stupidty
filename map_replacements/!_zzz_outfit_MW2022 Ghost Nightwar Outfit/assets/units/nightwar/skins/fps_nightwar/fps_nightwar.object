@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<dynamic_object>
+	<diesel materials="units/nightwar/skins/fps_nightwar/fps_nightwar" orientation_object="root_point"/>
+	<graphics>
+		<graphic_group culling_object="co_box" enabled="true" name="suit">
+		<object enabled="true" shadow_caster="false" name="g_glass_hand"/>
+		<object enabled="true" shadow_caster="false" name="g_glass_forearmroll"/>
+		<object enabled="true" shadow_caster="false" name="g_fps"/>
+		</graphic_group>
+	</graphics>
+</dynamic_object>

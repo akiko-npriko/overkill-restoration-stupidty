@@ -1,0 +1,46 @@
+<table name="Felix Argyle Outfit" image="guis/dlcs/wardrobe_mod/textures/pd2/blackmarket/icons/player_styles/Felix Argyle Outfit">
+	<Localization directory="localization" default="english.txt"/>
+	<GlobalValue id="felix_g" color="Color(10, 114, 177)"/>
+	<PlayerStyle id="felix" unit="units/wardrobe_mod/armor_skins/felix_fps/felix_fps" third_unit="units/wardrobe_mod/armor_skins/felix/felix" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="wardrobe_mod" global_value="felix_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<characters>
+			<bodhi		third_unit="units/wardrobe_mod/armor_skins/felix/felix"/>
+			<chains		third_unit="units/wardrobe_mod/armor_skins/felix/felix"/>
+			<dragon		third_unit="units/wardrobe_mod/armor_skins/felix/felix"/>
+			<joy		third_unit="units/wardrobe_mod/armor_skins/felix/felix"/>
+			<ecp_male	third_unit="units/wardrobe_mod/armor_skins/felix/felix"/>
+			<max		third_unit="units/wardrobe_mod/armor_skins/felix/felix"/>
+			<wild		third_unit="units/wardrobe_mod/armor_skins/felix/felix"/>
+			<jacket		third_unit="units/wardrobe_mod/armor_skins/felix/felix"/>
+			<jowi		third_unit="units/wardrobe_mod/armor_skins/felix/felix"/>
+			<chico		third_unit="units/wardrobe_mod/armor_skins/felix/felix"/>
+			<jimmy		third_unit="units/wardrobe_mod/armor_skins/felix/felix"/>
+			<sokol		third_unit="units/wardrobe_mod/armor_skins/felix/felix"/>
+			<myh		third_unit="units/wardrobe_mod/armor_skins/felix/felix"/>
+			<sydney		third_unit="units/wardrobe_mod/armor_skins/felix/felix"/>
+			<ecp_female	third_unit="units/wardrobe_mod/armor_skins/felix/felix"/>
+			<female_1	third_unit="units/wardrobe_mod/armor_skins/felix/felix"/>
+			<bonnie		third_unit="units/wardrobe_mod/armor_skins/felix/felix"/>
+		</characters>
+	</PlayerStyle>
+
+    <AddFiles directory="assets">	
+	<texture path="guis/dlcs/wardrobe_mod/textures/pd2/blackmarket/icons/player_styles/felix"/>
+	<texture path="units/wardrobe_mod/armor_skins/felix/body_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/felix/coverhair_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/felix/dress_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/felix/dress_op"/>
+	<texture path="units/wardrobe_mod/armor_skins/felix/eyes_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/felix/eyestock_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/felix/face_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/felix/hair_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/felix/hair_op"/>
+	<texture path="units/wardrobe_mod/armor_skins/felix/sock_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/felix/stockings_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/felix/tail_df"/>
+	<texture path="units/wardrobe_mod/armor_skins/felix/underpants_df"/>
+	<unit_mat path="units/wardrobe_mod/armor_skins/felix/felix"/>
+	<unit_mat path="units/wardrobe_mod/armor_skins/felix_fps/felix_fps"/>
+</AddFiles>
+</table>

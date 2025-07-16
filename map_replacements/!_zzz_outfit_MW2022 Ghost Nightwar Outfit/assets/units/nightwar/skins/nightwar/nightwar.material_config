@@ -1,0 +1,570 @@
+<?xml version="1.0"?>
+<materials version="3">
+	<material name="mtr_arm_left" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/arm_left_df"/>
+		<material_texture file="units/nightwar/skins/textures/arm_right_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/arm_right_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_arm_right" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/arm_right_df"/>
+		<material_texture file="units/nightwar/skins/textures/arm_right_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/arm_right_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_armor" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/armor_df"/>
+		<material_texture file="units/nightwar/skins/textures/armor_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/armor_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_back_pouch" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/back_pouch_df"/>
+		<material_texture file="units/nightwar/skins/textures/back_pouch_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/back_pouch_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_backpack" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/backpack_df"/>
+		<material_texture file="units/nightwar/skins/textures/backpack_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/backpack_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_carabiner" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/carabiner_df"/>
+		<material_texture file="units/nightwar/skins/textures/carabiner_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/carabiner_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_carabiner2" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/carabiner2_df"/>
+		<material_texture file="units/nightwar/skins/textures/carabiner2_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/carabiner2_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_flag" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/flag_df"/>
+		<material_texture file="units/nightwar/skins/textures/flag_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/flag_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_gauge" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/gauge_df"/>
+		<material_texture file="units/nightwar/skins/textures/gauge_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/gauge_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_gauge_strap" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/gauge_strap_df"/>
+		<material_texture file="units/nightwar/skins/textures/gauge_strap_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/gauge_strap_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_glass" unique="true" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/glass_df"/>
+		<opacity_texture file="units/nightwar/skins/textures/glass_op"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/glass_nm"/>
+		<reflection_texture type="cubemap" global_texture="current_global_texture"/>
+	</material>
+	<material name="mtr_gloves_hip" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/glove_hips_df"/>
+		<material_texture file="units/nightwar/skins/textures/glove_hips_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/glove_hips_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_gloves" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/gloves_df"/>
+		<material_texture file="units/nightwar/skins/textures/gloves_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/gloves_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_glowstick" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/glowstick_df"/>
+		<material_texture file="units/nightwar/skins/textures/glowstick_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/glowstick_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_grenade" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/grenade_df"/>
+		<material_texture file="units/nightwar/skins/textures/grenade_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/grenade_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_hip_holster" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/hip_holster_df"/>
+		<material_texture file="units/nightwar/skins/textures/hip_holster_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/hip_holster_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_hip_pouch" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/hip_pouch_df"/>
+		<material_texture file="units/nightwar/skins/textures/hip_pouch_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/hip_pouch_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_hip_pouch2" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/hip_pouch2_df"/>
+		<material_texture file="units/nightwar/skins/textures/hip_pouch2_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/hip_pouch2_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_hip_pouch3" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/hip_pouch3_df"/>
+		<material_texture file="units/nightwar/skins/textures/hip_pouch3_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/hip_pouch3_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_incen" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/incen_df"/>
+		<material_texture file="units/nightwar/skins/textures/incen_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/incen_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_kneepad" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/kneepad_df"/>
+		<material_texture file="units/nightwar/skins/textures/kneepad_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/kneepad_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_mag" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/mag_df"/>
+		<material_texture file="units/nightwar/skins/textures/mag_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/mag_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_mag1" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/mag1_df"/>
+		<material_texture file="units/nightwar/skins/textures/mag1_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/mag1_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_mag_pouch" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/mag_pouch_df"/>
+		<material_texture file="units/nightwar/skins/textures/mag_pouch_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/mag_pouch_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_mag_tape" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/mag_tape_df"/>
+		<material_texture file="units/nightwar/skins/textures/mag_tape_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/mag_tape_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_mag_top" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/mag_top_df"/>
+		<material_texture file="units/nightwar/skins/textures/mag_top_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/mag_top_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_pack_back" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/pack_back_df"/>
+		<material_texture file="units/nightwar/skins/textures/pack_back_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/pack_back_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_pants" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/pants_df"/>
+		<material_texture file="units/nightwar/skins/textures/pants_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/pants_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_pin" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/pin_df"/>
+		<material_texture file="units/nightwar/skins/textures/pin_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/pin_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_pistol_holster" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/pistol_holster_df"/>
+		<material_texture file="units/nightwar/skins/textures/pistol_holster_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/pistol_holster_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_pistol_mag" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/pistol_mag_df"/>
+		<material_texture file="units/nightwar/skins/textures/pistol_mag_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/pistol_mag_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_pistol_pouch" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/pistol_pouch_df"/>
+		<material_texture file="units/nightwar/skins/textures/pistol_pouch_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/pistol_pouch_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_plastic" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/plastic_df"/>
+		<material_texture file="units/nightwar/skins/textures/plastic_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/plastic_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_pouch_front" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/pouch_front_df"/>
+		<material_texture file="units/nightwar/skins/textures/pouch_front_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/pouch_front_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_ptt" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/ptt_df"/>
+		<material_texture file="units/nightwar/skins/textures/ptt_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/ptt_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_radio_pouch" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/radio_pouch_df"/>
+		<material_texture file="units/nightwar/skins/textures/radio_pouch_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/radio_pouch_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_reflector" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/reflector_df"/>
+		<material_texture file="units/nightwar/skins/textures/reflector_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/reflector_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_rope" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/rope_df"/>
+		<material_texture file="units/nightwar/skins/textures/rope_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/rope_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_sas" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/sas_df"/>
+		<material_texture file="units/nightwar/skins/textures/sas_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/sas_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_sharpie" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/sharpie_df"/>
+		<material_texture file="units/nightwar/skins/textures/sharpie_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/sharpie_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_shoes" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/shoes_df"/>
+		<material_texture file="units/nightwar/skins/textures/shoes_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/shoes_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_sleeves" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/sleeves_df"/>
+		<material_texture file="units/nightwar/skins/textures/sleeves_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/sleeves_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_something" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/something_df"/>
+		<material_texture file="units/nightwar/skins/textures/something_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/something_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_strap" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/strap_df"/>
+		<material_texture file="units/nightwar/skins/textures/strap_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/strap_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_straps" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/straps_df"/>
+		<material_texture file="units/nightwar/skins/textures/straps_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/straps_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_tape" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/tape_df"/>
+		<material_texture file="units/nightwar/skins/textures/tape_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/tape_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_tourniquet" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/tourniquet_df"/>
+		<material_texture file="units/nightwar/skins/textures/tourniquet_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/tourniquet_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_tourniquet_strap" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/tourniquet_strap_df"/>
+		<material_texture file="units/nightwar/skins/textures/tourniquet_strap_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/tourniquet_strap_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_upper" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/upper_df"/>
+		<material_texture file="units/nightwar/skins/textures/upper_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/upper_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_walkie" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/walkie_df"/>
+		<material_texture file="units/nightwar/skins/textures/walkie_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/walkie_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_watch" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/watch_df"/>
+		<material_texture file="units/nightwar/skins/textures/watch_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/watch_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_wire" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/wire_df"/>
+		<material_texture file="units/nightwar/skins/textures/wire_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/wire_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_zipper" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/zipper_df"/>
+		<material_texture file="units/nightwar/skins/textures/zipper_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/zipper_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_ziptie" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/ziptie_df"/>
+		<material_texture file="units/nightwar/skins/textures/ziptie_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/ziptie_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	<material name="mtr_zipties" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/zipties_df"/>
+		<material_texture file="units/nightwar/skins/textures/zipties_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/zipties_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+	
+	
+	
+	
+	
+	
+	<material name="mtr_nvg" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/nvg_df"/>
+		<self_illumination_texture file="units/nightwar/skins/textures/nvg_il"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/nvg_nm"/>
+		<variable type="scalar" name="il_multiplier" value="sun"/>
+        <variable type="scalar" name="il_bloom" value="8.9460004249122"/>
+        <variable name="contour_color" value="0 0 0" type="vector3"/>
+        <variable name="contour_opacity" value="1" type="scalar"/>
+	</material>
+	<material name="mtr_nvg2" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/nvg2_df"/>
+		<material_texture file="units/nightwar/skins/textures/nvg2_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/nvg2_nm"/>
+        <variable name="contour_color" value="0 0 0" type="vector3"/>
+        <variable name="contour_opacity" value="1" type="scalar"/>
+	</material>
+	<material name="mtr_battery" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/battery_df"/>
+		<material_texture file="units/nightwar/skins/textures/battery_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/battery_nm"/>
+        <variable name="contour_color" value="0 0 0" type="vector3"/>
+        <variable name="contour_opacity" value="1" type="scalar"/>
+	</material>
+	<material name="mtr_earphones" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/earphones_df"/>
+		<material_texture file="units/nightwar/skins/textures/earphones_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/earphones_nm"/>
+        <variable name="contour_color" value="0 0 0" type="vector3"/>
+        <variable name="contour_opacity" value="1" type="scalar"/>
+	</material>
+	
+	
+	
+	<material name="mtr_eyelashes" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/earphones_df"/>
+		<material_texture file="units/nightwar/skins/textures/earphones_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/earphones_nm"/>
+        <variable name="contour_color" value="0 0 0" type="vector3"/>
+        <variable name="contour_opacity" value="1" type="scalar"/>
+	</material>
+	<material name="mtr_earphones" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/earphones_df"/>
+		<material_texture file="units/nightwar/skins/textures/earphones_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/earphones_nm"/>
+        <variable name="contour_color" value="0 0 0" type="vector3"/>
+        <variable name="contour_opacity" value="1" type="scalar"/>
+	</material>
+	<material name="mtr_eyelashes" unique="true" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/eyelashes_df"/>
+		<opacity_texture file="units/nightwar/skins/textures/eyelashes_op"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/eyelashes_nm"/>
+		<reflection_texture type="cubemap" global_texture="current_global_texture"/>
+	</material>
+	<material name="mtr_eyes" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/eyes_df"/>
+		<material_texture file="units/nightwar/skins/textures/eyes_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/eyes_nm"/>
+        <variable name="contour_color" value="0 0 0" type="vector3"/>
+        <variable name="contour_opacity" value="1" type="scalar"/>
+	</material>
+	<material name="mtr_eyeshadow" unique="true" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/eyeshadow_df"/>
+		<opacity_texture file="units/nightwar/skins/textures/eyeshadow_op"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/eyeshadow_nm"/>
+		<reflection_texture type="cubemap" global_texture="current_global_texture"/>
+	</material>
+	<material name="mtr_earphones" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/earphones_df"/>
+		<material_texture file="units/nightwar/skins/textures/earphones_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/earphones_nm"/>
+        <variable name="contour_color" value="0 0 0" type="vector3"/>
+        <variable name="contour_opacity" value="1" type="scalar"/>
+	</material>
+	
+	
+	
+	<material name="mtr_flashlight" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/flashlight_df"/>
+		<material_texture file="units/nightwar/skins/textures/flashlight_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/flashlight_nm"/>
+        <variable name="contour_color" value="0 0 0" type="vector3"/>
+        <variable name="contour_opacity" value="1" type="scalar"/>
+	</material>
+	<material name="mtr_head" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/head_df"/>
+		<material_texture file="units/nightwar/skins/textures/head_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/head_nm"/>
+        <variable name="contour_color" value="0 0 0" type="vector3"/>
+        <variable name="contour_opacity" value="1" type="scalar"/>
+	</material>
+	<material name="mtr_head_flag" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/head_flag_df"/>
+		<material_texture file="units/nightwar/skins/textures/head_flag_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/head_flag_nm"/>
+        <variable name="contour_color" value="0 0 0" type="vector3"/>
+        <variable name="contour_opacity" value="1" type="scalar"/>
+	</material>
+	<material name="mtr_helmet_strap" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/helmet_strap_df"/>
+		<material_texture file="units/nightwar/skins/textures/helmet_strap_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/helmet_strap_nm"/>
+        <variable name="contour_color" value="0 0 0" type="vector3"/>
+        <variable name="contour_opacity" value="1" type="scalar"/>
+	</material>
+	<material name="mtr_mask" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/mask_df"/>
+		<material_texture file="units/nightwar/skins/textures/mask_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/mask_nm"/>
+        <variable name="contour_color" value="0 0 0" type="vector3"/>
+        <variable name="contour_opacity" value="1" type="scalar"/>
+	</material>
+	
+	
+	<material name="mtr_helmet" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/helmet_df"/>
+		<material_texture file="units/nightwar/skins/textures/helmet_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/helmet_nm"/>
+        <variable name="contour_color" value="0 0 0" type="vector3"/>
+        <variable name="contour_opacity" value="1" type="scalar"/>
+	</material>
+	
+	
+	
+	<material name="mtr_microphone" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/microphone_df"/>
+		<material_texture file="units/nightwar/skins/textures/microphone_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/microphone_nm"/>
+        <variable name="contour_color" value="0 0 0" type="vector3"/>
+        <variable name="contour_opacity" value="1" type="scalar"/>
+	</material>
+	<material name="mtr_nvg_glass" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/nvg_glass_df"/>
+		<self_illumination_texture file="units/nightwar/skins/textures/nvg_glass_il"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/nvg_glass_nm"/>
+		<variable type="scalar" name="il_multiplier" value="sun"/>
+        <variable type="scalar" name="il_bloom" value="2.9460004249122"/>
+        <variable name="contour_color" value="0 0 0" type="vector3"/>
+        <variable name="contour_opacity" value="1" type="scalar"/>
+	</material>
+	<material name="mtr_nvg_mount" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/nvg_mount_df"/>
+		<material_texture file="units/nightwar/skins/textures/nvg_mount_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/nvg_mount_nm"/>
+        <variable name="contour_color" value="0 0 0" type="vector3"/>
+        <variable name="contour_opacity" value="1" type="scalar"/>
+	</material>
+	<material name="mtr_rail" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/rail_df"/>
+		<material_texture file="units/nightwar/skins/textures/rail_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/rail_nm"/>
+        <variable name="contour_color" value="0 0 0" type="vector3"/>
+        <variable name="contour_opacity" value="1" type="scalar"/>
+	</material>
+	<material name="mtr_strobe" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/strobe_df"/>
+		<material_texture file="units/nightwar/skins/textures/strobe_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/strobe_nm"/>
+        <variable name="contour_color" value="0 0 0" type="vector3"/>
+        <variable name="contour_opacity" value="1" type="scalar"/>
+	</material>
+	
+	<material name="mtr_velcro" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/velcro_df"/>
+		<material_texture file="units/nightwar/skins/textures/velcro_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/velcro_nm"/>
+        <variable name="contour_color" value="0 0 0" type="vector3"/>
+        <variable name="contour_opacity" value="1" type="scalar"/>
+	</material>
+	<material name="mtr_wire_hs" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<diffuse_texture file="units/nightwar/skins/textures/wire_hs_df"/>
+		<material_texture file="units/nightwar/skins/textures/wire_hs_gsma"/>
+		<bump_normal_texture file="units/nightwar/skins/textures/wire_hs_nm"/>
+        <variable name="contour_color" value="0 0 0" type="vector3"/>
+        <variable name="contour_opacity" value="1" type="scalar"/>
+	</material>
+	
+
+</materials>

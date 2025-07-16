@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/wardrobe_mod/armor_skins/felix/felix" orientation_object="root_point" />
+
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="co_box">
+    			<object name="body" enabled="true"/>
+    			<object name="coverhair" enabled="true"/>
+    			<object name="dress" enabled="true"/>
+    			<object name="eyes" enabled="true"/>
+    			<object name="eyestock" enabled="true"/>
+    			<object name="face" enabled="true"/>
+    			<object name="hair" enabled="true"/>
+    			<object name="sock" enabled="true"/>
+    			<object name="stockings" enabled="true"/>
+    			<object name="tail" enabled="true"/>
+    			<object name="underpants" enabled="true"/>
+
+		</graphic_group>
+	</graphics>
+
+</dynamic_object>

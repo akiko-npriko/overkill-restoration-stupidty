@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<materials version="3" group="AAHHHHHHHHHHHHHHHH">
+	<material name="criminals" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/pdthcriminals/shared_textures/suit_chains_df"/>
+		<material_texture file="core/textures/blank_texture_gsma"/>
+		<bump_normal_texture file="units/pdthcriminals/shared_textures/player_suit_nm"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" type="scalar" name="contour_opacity"/>
+	</material>
+</materials>    

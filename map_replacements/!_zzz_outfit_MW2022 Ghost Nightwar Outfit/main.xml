@@ -1,0 +1,141 @@
+<table name="COD Nightwar Ghost - MOOG" image="guis/dlcs/nightwar/textures/pd2/blackmarket/icons/player_styles/nightwar">
+	<Localization directory="localization" default="english.json"/>
+	
+	<GlobalValue id="nightwar_mod" color="Color(1, 0.898039, 0.337254)"/>
+	
+	<PlayerStyle id="nightwar" unit="units/nightwar/skins/fps_nightwar/fps_nightwar" third_unit="units/nightwar/skins/nightwar/nightwar" exclude_glove_adapter="true" default_gloves="false" texture_bundle_folder="nightwar" global_value="nightwar_mod">
+		<third_body_replacement mask="true"	head="true" armor="true" body="true" hands="true" arms="true" vest="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" arms="true" vest="true" glove_adapter="false"/>
+
+		<characters>
+			<dallas		third_unit="units/nightwar/skins/nightwar/nightwar"/>
+			<dragon		third_unit="units/nightwar/skins/nightwar/nightwar"/>
+			<dragan		third_unit="units/nightwar/skins/nightwar/nightwar"/>
+			<old_hoxton	third_unit="units/nightwar/skins/nightwar/nightwar"/>			
+			<hoxton		third_unit="units/nightwar/skins/nightwar/nightwar"/>			
+			<wolf		third_unit="units/nightwar/skins/nightwar/nightwar"/>			
+			<max		third_unit="units/nightwar/skins/nightwar/nightwar"/>
+			<wild		third_unit="units/nightwar/skins/nightwar/nightwar"/>
+			<jacket		third_unit="units/nightwar/skins/nightwar/nightwar"/>
+			<jowi		third_unit="units/nightwar/skins/nightwar/nightwar"/>
+			<chico		third_unit="units/nightwar/skins/nightwar/nightwar"/>
+			<jimmy		third_unit="units/nightwar/skins/nightwar/nightwar"/>
+			<sokol		third_unit="units/nightwar/skins/nightwar/nightwar"/>
+			<bodhi		third_unit="units/nightwar/skins/nightwar/nightwar"/>
+			<chains		third_unit="units/nightwar/skins/nightwar/nightwar"/>
+			<myh		third_unit="units/nightwar/skins/nightwar/nightwar"/>
+			<ecp_male	third_unit="units/nightwar/skins/nightwar/nightwar"/>	
+			<female_1	third_unit="units/nightwar/skins/nightwar/nightwar"/>
+			<sydney		third_unit="units/nightwar/skins/nightwar/nightwar"/>
+			<ecp_female	third_unit="units/nightwar/skins/nightwar/nightwar"/>
+			<joy		third_unit="units/nightwar/skins/nightwar/nightwar"/>	
+			<bonnie		third_unit="units/nightwar/skins/nightwar/nightwar"/>				
+		</characters>
+	</PlayerStyle>
+	
+	
+	
+	
+
+		<AddFiles directory="assets">
+		
+		
+		<texture path="guis/dlcs/nightwar/textures/pd2/blackmarket/icons/player_styles/nightwar"/>
+		
+		
+		<!-- Body Textures -->
+		<texture path="units/nightwar/skins/textures/arm_left_df"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/arm_right"/>
+		
+		<df_nm_gsma path="units/nightwar/skins/textures/armor"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/back_pouch"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/backpack"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/carabiner"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/carabiner2"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/flag"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/gauge"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/gauge_strap"/>
+		<df_nm_op path="units/nightwar/skins/textures/glass"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/glove_hips"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/gloves"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/glowstick"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/grenade"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/hip_holster"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/hip_pouch"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/hip_pouch2"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/hip_pouch3"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/incen"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/kneepad"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/mag"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/mag_pouch"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/mag_tape"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/mag_top"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/mag1"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/pack_back"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/pants"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/pin"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/pistol_holster"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/pistol_mag"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/pistol_pouch"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/plastic"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/pouch_front"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/ptt"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/reflector"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/radio_pouch"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/rope"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/sas"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/sharpie"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/shoes"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/sleeves"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/something"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/strap"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/straps"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/tape"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/tourniquet"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/tourniquet_strap"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/upper"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/walkie"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/watch"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/wire"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/zipper"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/ziptie"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/zipties"/>
+		<!-- Body Textures -->
+		
+		
+		<!-- Head Textures -->
+		<df_nm_gsma path="units/nightwar/skins/textures/battery"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/earphones"/>
+		<df_nm_op path="units/nightwar/skins/textures/eyelashes"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/eyes"/>
+		<df_nm_op path="units/nightwar/skins/textures/eyeshadow"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/flashlight"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/head"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/head_flag"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/helmet"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/helmet_strap"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/mask"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/microphone"/>
+		<df_nm_il path="units/nightwar/skins/textures/nvg"/>
+		<df_nm_il path="units/nightwar/skins/textures/nvg_glass"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/nvg_mount"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/nvg2"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/rail"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/strobe"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/velcro"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/wire_hs"/>
+		<!-- Head Textures -->
+		
+		
+		<!-- FPS Textures -->
+		<df_nm_gsma path="units/nightwar/skins/textures/gauge_fps"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/gloves_fps"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/sleeves_fps"/>
+		<df_nm_gsma path="units/nightwar/skins/textures/strap_fps"/>
+		<!-- FPS Textures -->
+		
+
+		<unit_mat path="units/nightwar/skins/nightwar/nightwar"/>
+		<unit_mat path="units/nightwar/skins/fps_nightwar/fps_nightwar"/>
+</AddFiles>
+</table>
