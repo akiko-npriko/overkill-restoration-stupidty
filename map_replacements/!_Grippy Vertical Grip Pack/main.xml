@@ -1,0 +1,456 @@
+	<mod name="Grippy Vertical Grip Pack" author="GermanTacos, Killerwolf, & rjc" min_lib_ver="3.38">
+	<AssetUpdates id="25603" version="1.02" provider="modworkshop" provider="modworkshop"/>
+	<Localization directory="locals" default="english.txt">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+
+	<WeaponMod id="wpn_fps_upg_vg_ash12" based_on="wpn_fps_upg_vg_ass_smg_verticalgrip"  type="vertical_grip" unit="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_ash12" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2">
+		<stats recoil="1" concealment="-1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_aug"/>
+			<value_node value="wpn_fps_smg_polymer"/>
+	<!--<value_node value="wpn_fps_ass_tecci"/>-->
+			<value_node value="wpn_fps_smg_hajk"/>
+			<value_node value="wpn_fps_smg_schakal"/>
+			<value_node value="wpn_fps_sho_rota"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_x_hajk"/>
+			<value_node value="wpn_fps_smg_x_polymer"/>
+			<value_node value="wpn_fps_smg_x_schakal"/>
+			<value_node value="wpn_fps_sho_x_rota"/>
+			<value_node value="wpn_fps_snp_victor"/>
+			
+	<!--	<value_node value="wpn_fps_ass_m4"/>-->
+	<!--	<value_node value="wpn_fps_ass_m16"/>-->
+		</weapons>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_upg_vg_bcm" based_on="wpn_fps_upg_vg_ass_smg_verticalgrip"  type="vertical_grip" unit="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_bcm" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2">
+		<stats recoil="1" concealment="-1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_aug"/>
+			<value_node value="wpn_fps_smg_polymer"/>
+	<!--<value_node value="wpn_fps_ass_tecci"/>-->
+			<value_node value="wpn_fps_smg_hajk"/>
+			<value_node value="wpn_fps_smg_schakal"/>
+			<value_node value="wpn_fps_sho_rota"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_x_hajk"/>
+			<value_node value="wpn_fps_smg_x_polymer"/>
+			<value_node value="wpn_fps_smg_x_schakal"/>
+			<value_node value="wpn_fps_sho_x_rota"/>
+			<value_node value="wpn_fps_snp_victor"/>
+			
+	<!--	<value_node value="wpn_fps_ass_m4"/>-->
+	<!--	<value_node value="wpn_fps_ass_m16"/>-->
+		</weapons>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_upg_vg_hk_sturm" based_on="wpn_fps_upg_vg_ass_smg_verticalgrip"  type="vertical_grip" unit="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_hk_sturm" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2">
+		<stats recoil="1" concealment="-1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_aug"/>
+			<value_node value="wpn_fps_smg_polymer"/>
+<!--<value_node value="wpn_fps_ass_tecci"/>-->
+			<value_node value="wpn_fps_smg_hajk"/>
+			<value_node value="wpn_fps_smg_schakal"/>
+			<value_node value="wpn_fps_sho_rota"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_x_hajk"/>
+			<value_node value="wpn_fps_smg_x_polymer"/>
+			<value_node value="wpn_fps_smg_x_schakal"/>
+			<value_node value="wpn_fps_sho_x_rota"/>
+			<value_node value="wpn_fps_snp_victor"/>
+			
+	<!--	<value_node value="wpn_fps_ass_m4"/>-->
+	<!--	<value_node value="wpn_fps_ass_m16"/>-->
+		</weapons>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_upg_vg_kac" based_on="wpn_fps_upg_vg_ass_smg_verticalgrip"  type="vertical_grip" unit="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_kac" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2">
+		<stats recoil="1" concealment="-1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_aug"/>
+			<value_node value="wpn_fps_smg_polymer"/>
+<!--<value_node value="wpn_fps_ass_tecci"/>-->
+			<value_node value="wpn_fps_smg_hajk"/>
+			<value_node value="wpn_fps_smg_schakal"/>
+			<value_node value="wpn_fps_sho_rota"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_x_hajk"/>
+			<value_node value="wpn_fps_smg_x_polymer"/>
+			<value_node value="wpn_fps_smg_x_schakal"/>
+			<value_node value="wpn_fps_sho_x_rota"/>
+			<value_node value="wpn_fps_snp_victor"/>
+			
+	<!--	<value_node value="wpn_fps_ass_m4"/>-->
+	<!--	<value_node value="wpn_fps_ass_m16"/>-->
+		</weapons>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_upg_vg_railscales_ldag" based_on="wpn_fps_upg_vg_ass_smg_verticalgrip"  type="vertical_grip" unit="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_railscales_ldag" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2">
+		<stats recoil="1" concealment="-1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_aug"/>
+			<value_node value="wpn_fps_smg_polymer"/>
+<!--<value_node value="wpn_fps_ass_tecci"/>-->
+			<value_node value="wpn_fps_smg_hajk"/>
+			<value_node value="wpn_fps_smg_schakal"/>
+			<value_node value="wpn_fps_sho_rota"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_x_hajk"/>
+			<value_node value="wpn_fps_smg_x_polymer"/>
+			<value_node value="wpn_fps_smg_x_schakal"/>
+			<value_node value="wpn_fps_sho_x_rota"/>
+			<value_node value="wpn_fps_snp_victor"/>
+			
+	<!--	<value_node value="wpn_fps_ass_m4"/>-->
+	<!--	<value_node value="wpn_fps_ass_m16"/>-->
+		</weapons>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_upg_vg_rk0" based_on="wpn_fps_upg_vg_ass_smg_verticalgrip"  type="vertical_grip" unit="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_rk0" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2">
+		<stats recoil="1" concealment="-1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_aug"/>
+			<value_node value="wpn_fps_smg_polymer"/>
+<!--<value_node value="wpn_fps_ass_tecci"/>-->
+			<value_node value="wpn_fps_smg_hajk"/>
+			<value_node value="wpn_fps_smg_schakal"/>
+			<value_node value="wpn_fps_sho_rota"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_x_hajk"/>
+			<value_node value="wpn_fps_smg_x_polymer"/>
+			<value_node value="wpn_fps_smg_x_schakal"/>
+			<value_node value="wpn_fps_sho_x_rota"/>
+			<value_node value="wpn_fps_snp_victor"/>
+			
+	<!--	<value_node value="wpn_fps_ass_m4"/>-->
+	<!--	<value_node value="wpn_fps_ass_m16"/>-->
+		</weapons>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_upg_vg_rk1" based_on="wpn_fps_upg_vg_ass_smg_verticalgrip"  type="vertical_grip" unit="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_rk1" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2">
+		<stats recoil="1" concealment="-1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_aug"/>
+			<value_node value="wpn_fps_smg_polymer"/>
+<!--<value_node value="wpn_fps_ass_tecci"/>-->
+			<value_node value="wpn_fps_smg_hajk"/>
+			<value_node value="wpn_fps_smg_schakal"/>
+			<value_node value="wpn_fps_sho_rota"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_x_hajk"/>
+			<value_node value="wpn_fps_smg_x_polymer"/>
+			<value_node value="wpn_fps_smg_x_schakal"/>
+			<value_node value="wpn_fps_sho_x_rota"/>
+			<value_node value="wpn_fps_snp_victor"/>
+			
+	<!--	<value_node value="wpn_fps_ass_m4"/>-->
+	<!--	<value_node value="wpn_fps_ass_m16"/>-->
+		</weapons>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_upg_vg_rk2" based_on="wpn_fps_upg_vg_ass_smg_verticalgrip"  type="vertical_grip" unit="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_rk2" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2">
+		<stats recoil="1" concealment="-1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_aug"/>
+			<value_node value="wpn_fps_smg_polymer"/>
+<!--<value_node value="wpn_fps_ass_tecci"/>-->
+			<value_node value="wpn_fps_smg_hajk"/>
+			<value_node value="wpn_fps_smg_schakal"/>
+			<value_node value="wpn_fps_sho_rota"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_x_hajk"/>
+			<value_node value="wpn_fps_smg_x_polymer"/>
+			<value_node value="wpn_fps_smg_x_schakal"/>
+			<value_node value="wpn_fps_sho_x_rota"/>
+			<value_node value="wpn_fps_snp_victor"/>
+			
+	<!--	<value_node value="wpn_fps_ass_m4"/>-->
+	<!--	<value_node value="wpn_fps_ass_m16"/>-->
+		</weapons>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_upg_vg_rk4" based_on="wpn_fps_upg_vg_ass_smg_verticalgrip"  type="vertical_grip" unit="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_rk4" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2">
+		<stats recoil="1" concealment="-1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_aug"/>
+			<value_node value="wpn_fps_smg_polymer"/>
+<!--<value_node value="wpn_fps_ass_tecci"/>-->
+			<value_node value="wpn_fps_smg_hajk"/>
+			<value_node value="wpn_fps_smg_schakal"/>
+			<value_node value="wpn_fps_sho_rota"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_x_hajk"/>
+			<value_node value="wpn_fps_smg_x_polymer"/>
+			<value_node value="wpn_fps_smg_x_schakal"/>
+			<value_node value="wpn_fps_sho_x_rota"/>
+			<value_node value="wpn_fps_snp_victor"/>
+			
+	<!--	<value_node value="wpn_fps_ass_m4"/>-->
+	<!--	<value_node value="wpn_fps_ass_m16"/>-->
+		</weapons>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_upg_vg_rk5" based_on="wpn_fps_upg_vg_ass_smg_verticalgrip"  type="vertical_grip" unit="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_rk5" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2">
+		<stats recoil="1" concealment="-1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_aug"/>
+			<value_node value="wpn_fps_smg_polymer"/>
+<!--<value_node value="wpn_fps_ass_tecci"/>-->
+			<value_node value="wpn_fps_smg_hajk"/>
+			<value_node value="wpn_fps_smg_schakal"/>
+			<value_node value="wpn_fps_sho_rota"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_x_hajk"/>
+			<value_node value="wpn_fps_smg_x_polymer"/>
+			<value_node value="wpn_fps_smg_x_schakal"/>
+			<value_node value="wpn_fps_sho_x_rota"/>
+			<value_node value="wpn_fps_snp_victor"/>
+			
+	<!--	<value_node value="wpn_fps_ass_m4"/>-->
+	<!--	<value_node value="wpn_fps_ass_m16"/>-->
+		</weapons>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_upg_vg_rk6" based_on="wpn_fps_upg_vg_ass_smg_verticalgrip"  type="vertical_grip" unit="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_rk6" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2">
+		<stats recoil="1" concealment="-1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_aug"/>
+			<value_node value="wpn_fps_smg_polymer"/>
+<!--<value_node value="wpn_fps_ass_tecci"/>-->
+			<value_node value="wpn_fps_smg_hajk"/>
+			<value_node value="wpn_fps_smg_schakal"/>
+			<value_node value="wpn_fps_sho_rota"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_x_hajk"/>
+			<value_node value="wpn_fps_smg_x_polymer"/>
+			<value_node value="wpn_fps_smg_x_schakal"/>
+			<value_node value="wpn_fps_sho_x_rota"/>
+			<value_node value="wpn_fps_snp_victor"/>
+			
+	<!--	<value_node value="wpn_fps_ass_m4"/>-->
+	<!--	<value_node value="wpn_fps_ass_m16"/>-->
+		</weapons>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_upg_vg_rtm_pillau" based_on="wpn_fps_upg_vg_ass_smg_verticalgrip"  type="vertical_grip" unit="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_rtm_pillau" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2">
+		<stats recoil="1" concealment="-1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_aug"/>
+			<value_node value="wpn_fps_smg_polymer"/>
+<!--<value_node value="wpn_fps_ass_tecci"/>-->
+			<value_node value="wpn_fps_smg_hajk"/>
+			<value_node value="wpn_fps_smg_schakal"/>
+			<value_node value="wpn_fps_sho_rota"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_x_hajk"/>
+			<value_node value="wpn_fps_smg_x_polymer"/>
+			<value_node value="wpn_fps_smg_x_schakal"/>
+			<value_node value="wpn_fps_sho_x_rota"/>
+			<value_node value="wpn_fps_snp_victor"/>
+			
+	<!--	<value_node value="wpn_fps_ass_m4"/>-->
+	<!--	<value_node value="wpn_fps_ass_m16"/>-->
+		</weapons>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_upg_vg_shift" based_on="wpn_fps_upg_vg_ass_smg_verticalgrip"  type="vertical_grip" unit="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_shift" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2">
+		<stats recoil="1" concealment="-1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_aug"/>
+			<value_node value="wpn_fps_smg_polymer"/>
+<!--<value_node value="wpn_fps_ass_tecci"/>-->
+			<value_node value="wpn_fps_smg_hajk"/>
+			<value_node value="wpn_fps_smg_schakal"/>
+			<value_node value="wpn_fps_sho_rota"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_x_hajk"/>
+			<value_node value="wpn_fps_smg_x_polymer"/>
+			<value_node value="wpn_fps_smg_x_schakal"/>
+			<value_node value="wpn_fps_sho_x_rota"/>
+			<value_node value="wpn_fps_snp_victor"/>
+			
+	<!--	<value_node value="wpn_fps_ass_m4"/>-->
+	<!--	<value_node value="wpn_fps_ass_m16"/>-->
+		</weapons>
+	</WeaponMod>	
+	<WeaponMod id="wpn_fps_upg_vg_stark" based_on="wpn_fps_upg_vg_ass_smg_verticalgrip"  type="vertical_grip" unit="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_stark" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2">
+		<stats recoil="1" concealment="-1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_aug"/>
+			<value_node value="wpn_fps_smg_polymer"/>
+<!--<value_node value="wpn_fps_ass_tecci"/>-->
+			<value_node value="wpn_fps_smg_hajk"/>
+			<value_node value="wpn_fps_smg_schakal"/>
+			<value_node value="wpn_fps_sho_rota"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_x_hajk"/>
+			<value_node value="wpn_fps_smg_x_polymer"/>
+			<value_node value="wpn_fps_smg_x_schakal"/>
+			<value_node value="wpn_fps_sho_x_rota"/>
+			<value_node value="wpn_fps_snp_victor"/>
+			
+	<!--	<value_node value="wpn_fps_ass_m4"/>-->
+	<!--	<value_node value="wpn_fps_ass_m16"/>-->
+		</weapons>
+	</WeaponMod>		
+	<WeaponMod id="wpn_fps_upg_vg_stub" based_on="wpn_fps_upg_vg_ass_smg_verticalgrip"  type="vertical_grip" unit="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_stub" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2">
+		<stats recoil="1" concealment="-1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_aug"/>
+			<value_node value="wpn_fps_smg_polymer"/>
+<!--<value_node value="wpn_fps_ass_tecci"/>-->
+			<value_node value="wpn_fps_smg_hajk"/>
+			<value_node value="wpn_fps_smg_schakal"/>
+			<value_node value="wpn_fps_sho_rota"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_x_hajk"/>
+			<value_node value="wpn_fps_smg_x_polymer"/>
+			<value_node value="wpn_fps_smg_x_schakal"/>
+			<value_node value="wpn_fps_sho_x_rota"/>
+			<value_node value="wpn_fps_snp_victor"/>
+			
+	<!--	<value_node value="wpn_fps_ass_m4"/>-->
+	<!--	<value_node value="wpn_fps_ass_m16"/>-->
+		</weapons>
+	</WeaponMod>	
+	<WeaponMod id="wpn_fps_upg_vg_td_alum" based_on="wpn_fps_upg_vg_ass_smg_verticalgrip"  type="vertical_grip" unit="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_td_alum" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2">
+		<stats recoil="1" concealment="-1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_aug"/>
+			<value_node value="wpn_fps_smg_polymer"/>
+<!--<value_node value="wpn_fps_ass_tecci"/>-->
+			<value_node value="wpn_fps_smg_hajk"/>
+			<value_node value="wpn_fps_smg_schakal"/>
+			<value_node value="wpn_fps_sho_rota"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_x_hajk"/>
+			<value_node value="wpn_fps_smg_x_polymer"/>
+			<value_node value="wpn_fps_smg_x_schakal"/>
+			<value_node value="wpn_fps_sho_x_rota"/>
+			<value_node value="wpn_fps_snp_victor"/>
+			
+	<!--	<value_node value="wpn_fps_ass_m4"/>-->
+	<!--	<value_node value="wpn_fps_ass_m16"/>-->
+		</weapons>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_upg_vg_uvg" based_on="wpn_fps_upg_vg_ass_smg_verticalgrip"  type="vertical_grip" unit="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_uvg" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2">
+		<stats recoil="1" concealment="-1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_aug"/>
+			<value_node value="wpn_fps_smg_polymer"/>
+<!--<value_node value="wpn_fps_ass_tecci"/>-->
+			<value_node value="wpn_fps_smg_hajk"/>
+			<value_node value="wpn_fps_smg_schakal"/>
+			<value_node value="wpn_fps_sho_rota"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_x_hajk"/>
+			<value_node value="wpn_fps_smg_x_polymer"/>
+			<value_node value="wpn_fps_smg_x_schakal"/>
+			<value_node value="wpn_fps_sho_x_rota"/>
+			<value_node value="wpn_fps_snp_victor"/>
+			
+	<!--	<value_node value="wpn_fps_ass_m4"/>-->
+	<!--	<value_node value="wpn_fps_ass_m16"/>-->
+		</weapons>
+	</WeaponMod>
+	
+	<!--Angled-->
+		<WeaponMod id="wpn_fps_upg_afg_bcm_kag" based_on="wpn_fps_upg_vg_ass_smg_afg"  type="vertical_grip"  unit="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_afg_bcm_kag" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2">
+			<stats spread="0" recoil="1" concealment="-1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_scar"/>	
+			<value_node value="wpn_fps_snp_tti"/>	
+		</weapons>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_upg_afg_larue_handstop" based_on="wpn_fps_upg_vg_ass_smg_afg"  type="vertical_grip"  unit="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_afg_larue_handstop" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2">
+			<stats spread="0" recoil="1" concealment="-1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_scar"/>	
+			<value_node value="wpn_fps_snp_tti"/>	
+		</weapons>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_upg_afg_magpul_afg" based_on="wpn_fps_upg_vg_ass_smg_afg"  type="vertical_grip"  unit="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_afg_magpul_afg" drop="false" hidden="false"   has_description="true"   inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" inherit_parts_override="true" ver="2">
+			<stats spread="0" recoil="1" concealment="-1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_scar"/>	
+			<value_node value="wpn_fps_snp_tti"/>	
+		</weapons>
+	</WeaponMod>
+	
+	<AddFiles directory="assets">
+<!--GUIs-->
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_afg_bcm_kag"/>  
+    <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_afg_larue_handstop"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_afg_magpul_afg"/>
+
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_vg_ash12"/>  
+    <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_vg_bcm"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_vg_hk_sturm"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_vg_kac"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_vg_railscales_ldag"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_vg_rk0"/>    
+    <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_vg_rk1"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_vg_rk2"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_vg_rk4"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_vg_rk5"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_vg_rk6"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_vg_rtm_pillau"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_vg_rvg"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_vg_shift"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_vg_stark"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_vg_stub"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_vg_td_alum"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_vg_uvg"/>
+	
+<!--Textures-->	
+				
+		<df_nm      	 path="units/mods/weapons/wpn_fps_upg_vg_pts/vg_ash12"/>
+		<df_nm_cc        path="units/mods/weapons/wpn_fps_upg_vg_pts/bcm"/>
+		<df_nm_gsma    	 path="units/mods/weapons/wpn_fps_upg_vg_pts/bcm_kag"/>
+		<df_nm           path="units/mods/weapons/wpn_fps_upg_vg_pts/vg_hk_strumgriff"/>
+		<df_nm_cc        path="units/mods/weapons/wpn_fps_upg_vg_pts/kac"/>
+		<df_nm	    	 path="units/mods/weapons/wpn_fps_upg_vg_pts/larue_handstop"/>
+		<df_nm	    	 path="units/mods/weapons/wpn_fps_upg_vg_pts/magpul_afg"/>
+		<df_nm_gsma    	 path="units/mods/weapons/wpn_fps_upg_vg_pts/ldag"/>
+		<df_nm_cc        path="units/mods/weapons/wpn_fps_upg_vg_pts/rk0"/>
+		<df_nm_cc        path="units/mods/weapons/wpn_fps_upg_vg_pts/rk1"/>
+		<df_nm_cc        path="units/mods/weapons/wpn_fps_upg_vg_pts/rk2"/>
+		<df_nm_cc        path="units/mods/weapons/wpn_fps_upg_vg_pts/rk4"/>
+		<df_nm_cc        path="units/mods/weapons/wpn_fps_upg_vg_pts/rk5"/>	
+		<df_nm_cc        path="units/mods/weapons/wpn_fps_upg_vg_pts/rk6"/>
+		<df_nm       	 path="units/mods/weapons/wpn_fps_upg_vg_pts/vg_rtm_pillau"/>
+		<df_nm_cc        path="units/mods/weapons/wpn_fps_upg_vg_pts/rvg"/>
+		<df_nm_cc	     path="units/mods/weapons/wpn_fps_upg_vg_pts/shift"/>
+		<df_nm_cc        path="units/mods/weapons/wpn_fps_upg_vg_pts/stark"/>
+		<df_nm_cc        path="units/mods/weapons/wpn_fps_upg_vg_pts/stub"/>
+		<df_nm       	 path="units/mods/weapons/wpn_fps_upg_vg_pts/vg_td_alum"/>
+		<df_nm_cc   	 path="units/mods/weapons/wpn_fps_upg_vg_pts/uvg"/>
+		
+<!--Unit Paths-->
+	<unit_mat_thq    path="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_afg_bcm_kag"/>
+	<unit_mat_thq    path="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_afg_larue_handstop"/>
+	<unit_mat_thq    path="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_afg_magpul_afg"/>
+	
+	<unit_mat_thq    path="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_ash12"/>
+	<unit_mat_cc     path="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_bcm"/>
+	<unit_mat_thq    path="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_hk_sturm"/>
+	<unit_mat_cc     path="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_kac"/>
+	<unit_mat_cc     path="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_rk0"/>
+	<unit_mat_cc     path="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_rk1"/>
+	<unit_mat_thq    path="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_rk2"/>
+	<unit_mat_cc 	 path="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_rk4"/>
+	<unit_mat_cc     path="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_rk5"/>
+	<unit_mat_cc 	 path="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_rk6"/>
+	<unit_mat_thq    path="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_railscales_ldag"/>
+	<unit_mat_thq    path="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_rtm_pillau"/>
+	<unit_mat_cc     path="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_rvg"/>
+	<unit_mat_cc     path="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_shift"/>
+	<unit_mat_cc	 path="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_stark"/>
+	<unit_mat_cc 	 path="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_stub"/>
+	<unit_mat_thq    path="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_td_alum"/>
+	<unit_mat_cc 	 path="units/mods/weapons/wpn_fps_upg_vg_pts/wpn_fps_upg_vg_uvg"/>
+
+
+	
+
+	</AddFiles>
+		
+	<Hooks directory="hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/> 
+
+	</Hooks>
+
+	
+</mod>
+
