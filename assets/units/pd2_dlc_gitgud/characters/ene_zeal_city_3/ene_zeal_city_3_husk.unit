@@ -6,14 +6,14 @@
 	<dependencies>
 		
 		<depends_on unit="units/pd2_dlc_gitgud/characters/ene_acc_zeal_city_3_hat_sc/ene_acc_zeal_city_3_hat_sc" />
-		<depends_on unit="units/payday2/weapons/wpn_npc_ump/wpn_npc_ump" />
+		<depends_on unit="units/payday2/weapons/wpn_npc_lmg_m249/wpn_npc_lmg_m249" />
 	</dependencies>
 
 	<extensions>
 		<extension name="unit_data" class="ScriptUnitData" />
 		<extension name="base" class="HuskCopBase" >
 			<var name="_tweak_table" value="city_swat" />
-			<var name="_default_weapon_id" value="ump" />
+			<var name="_default_weapon_id" value="m249" />
 		</extension>
 		<extension name="inventory" class="HuskCopInventory" />
 		<extension name="brain" class="HuskCopBrain" />
