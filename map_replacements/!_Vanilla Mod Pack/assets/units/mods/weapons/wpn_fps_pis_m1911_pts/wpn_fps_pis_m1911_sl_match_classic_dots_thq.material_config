@@ -1,0 +1,8 @@
+<materials version="3" group="weapon_m1911">
+	<material name="mtr_match" render_template="generic:DIFFUSE_TEXTURE:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" version="2">
+			<diffuse_texture file="units/mods/weapons/wpn_fps_shot_minibeck_pts/green"/>
+			<self_illumination_texture file="units/mods/weapons/wpn_fps_shot_minibeck_pts/green"/>
+			<variable type="scalar" name="il_bloom" value="6.0070002853172"/>
+        <variable type="scalar" name="il_multiplier" value="reddot"/>
+	</material>
+</materials>

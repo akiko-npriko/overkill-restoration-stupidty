@@ -1,0 +1,13 @@
+<unit type="wpn" slot="1" >
+	<object file="units/mods/weapons/wpn_fps_pis_x_smolak/wpn_fps_pis_x_smolak" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_akmsu_x"/>
+		<depends_on bnk="soundbanks/weapon_akm"/>
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="base" class="AkimboWeaponBase" >
+			<var name="name_id" value="x_smolak" />
+		</extension>
+	</extensions>
+</unit>

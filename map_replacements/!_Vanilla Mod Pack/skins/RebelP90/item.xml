@@ -1,0 +1,23 @@
+<ugcitem>
+	<param key="screenshot" value="screenshot1.png"/>
+	<param key="name" value="Battery"/>
+	<param key="type" value="weapon_skin"/>
+	<node name="data">
+		<node name="parts">
+			<node name="wpn_fps_gre_slap_b_standard">
+				<node name="4af0a3051d728553">
+					<param key="sticker_name" value="BatterySticker1.tga"/>
+					<param key="base_gradient_name" value="BatteryGrad1.tga"/>
+					<param key="uv_scale" value="Vector3(1.29722, 1.29722, 1)"/>
+					<param key="uv_offset_rot" value="Vector3(-0.413546, 1.23682, 1.57791)"/>
+				</node>
+			</node>
+		</node>
+		<param key="name_id" value="bm_wskn_slap_battery"/>
+		<param key="base_gradient_name" value="BatteryGrad1.tga"/>
+		<param key="id" value="kn_slap_battery"/>
+		<param key="reserve_quality" value="true"/>
+		<param key="weapon_id" value="slap"/>
+	</node>
+	<param key="timestamp" value="2018031100253"/>
+</ugcitem>

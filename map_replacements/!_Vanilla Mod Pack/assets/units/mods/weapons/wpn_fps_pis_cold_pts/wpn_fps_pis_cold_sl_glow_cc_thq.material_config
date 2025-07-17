@@ -1,0 +1,8 @@
+<materials version="3" group="weapon_lemming">
+	<material name="mtr_slider" render_template="generic:DIFFUSE_TEXTURE:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" version="2">
+<diffuse_texture file="units/mods/weapons/wpn_fps_pis_cold_pts/light"/>
+			<self_illumination_texture file="units/mods/weapons/wpn_fps_pis_cold_pts/light"/>
+			<variable type="scalar" name="il_bloom" value="6.0070002853172"/>
+        <variable type="scalar" name="il_multiplier" value="reddot"/>
+	</material>
+</materials>

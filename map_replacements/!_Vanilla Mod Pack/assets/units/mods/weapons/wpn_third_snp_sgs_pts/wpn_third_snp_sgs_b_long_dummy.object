@@ -1,0 +1,12 @@
+<dynamic_object>
+    <diesel materials="units/mods/weapons/wpn_third_snp_sgs_pts/wpn_third_snp_sgs_b_long_dummy" orientation_object="rp_wpn_fps_ass_s552_b_standard" />
+    <graphics>
+		<graphic_group name="character" enabled="true" culling_object="g_barrel">
+        <object enabled="true" inherit_bounding_volume="co_culling" name="g_barrel" />
+	</graphic_group>
+		<graphic_group name="character" enabled="true" culling_object="g_flashhider">
+        <object enabled="false" inherit_bounding_volume="co_culling" name="g_flashhider" />
+	</graphic_group>
+        <object enabled="true" name="g_no_blurr" />
+    </graphics>
+</dynamic_object>

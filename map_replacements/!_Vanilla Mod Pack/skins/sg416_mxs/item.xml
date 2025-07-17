@@ -1,0 +1,54 @@
+<ugcitem>
+	<param key="type" value="weapon_skin"/>
+	<param key="name" value="anothernamegoeshere"/>
+	<node name="data">
+		<param key="id" value="n_sg416_anothernamegoeshere"/>
+		<param key="weapon_id" value="sg416"/>
+		<node name="types">
+			<node name="barrel2">
+			</node>
+			<node name="stock">
+				<param key="base_gradient_name" value="sangres bgrad 2.tga"/>
+			</node>
+			<node name="grip">
+				<param key="base_gradient_name" value="sangres bgrad 2.tga"/>
+			</node>
+			<node name="magwell">
+				<param key="base_gradient_name" value="sangres bgrad 2.tga"/>
+			</node>
+			<node name="magazine">
+				<param key="base_gradient_name" value="sangres bgrad 2.tga"/>
+			</node>
+			<node name="barrel">
+			</node>
+			<node name="stock_adapter">
+				<param key="base_gradient_name" value="sangres bgrad 2.tga"/>
+			</node>
+		</node>
+		<param key="base_gradient_name" value="sangres bgrad 1.tga"/>
+		<param key="name_id" value="bm_wskn_sg416_anothernamegoeshere"/>
+		<param key="reserve_quality" value="true"/>
+		<node name="parts">
+			<node name="wpn_fps_ass_sg416_fg_standard">
+				<node name="964161b4eb4b81d3">
+					<param key="pattern_gradient_name" value="gradient_cop_smoker.tga"/>
+					<param key="base_gradient_name" value="sangres bgrad 3.tga"/>
+					<param key="pattern_name" value="sangressnakeskin.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_ass_sg416_upper_reciever">
+				<node name="ce53cb869d779872">
+					<param key="base_gradient_name" value="sangres bgrad 3.tga"/>
+					<param key="pattern_name" value="sangressnakeskin.tga"/>
+					<param key="pattern_gradient_name" value="gradient_cop_smoker.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_ass_sg416_fg_custom">
+				<node name="964161b4eb4b81d3">
+					<param key="base_gradient_name" value="sangres bgrad 3.tga"/>
+				</node>
+			</node>
+		</node>
+	</node>
+	<param key="timestamp" value="2019314175711"/>
+</ugcitem>

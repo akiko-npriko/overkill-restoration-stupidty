@@ -1,0 +1,12 @@
+<unit type="wpn" slot="1" >
+	<object file="units/mods/weapons/wpn_fps_shot_minibeck/wpn_fps_shot_minibeck" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_reinbeck880"/>
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="base" class="NewNPCRaycastWeaponBase" >
+			<var name="name_id" value="minibeck_crew" />
+		</extension>
+	</extensions>
+</unit>

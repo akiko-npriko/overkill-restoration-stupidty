@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+		<target mode="attach">
+			<anim name="melee_bidetpetition_start" file="anims/fps/melee/bidetpetition/melee_start" blend_set="all"/>
+			<anim name="melee_bidetpetition_charge" file="anims/fps/melee/bidetpetition/melee_charge" blend_set="all"/>
+			<anim name="melee_bidetpetition_charge_var2" file="anims/fps/melee/bidetpetition/melee_charge" blend_set="all"/>
+			<anim name="melee_bidetpetition_attack_var1" file="anims/fps/melee/bidetpetition/melee_attack_var1" blend_set="all"/>
+			<anim name="melee_bidetpetition_attack_var2" file="anims/fps/melee/bidetpetition/melee_attack_var2" blend_set="all"/>
+			<anim name="melee_bidetpetition_attack_var3" file="anims/fps/melee/bidetpetition/melee_attack_var3" blend_set="all"/>
+			<anim name="melee_bidetpetition_attack_var4" file="anims/fps/melee/bidetpetition/melee_attack_var4" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

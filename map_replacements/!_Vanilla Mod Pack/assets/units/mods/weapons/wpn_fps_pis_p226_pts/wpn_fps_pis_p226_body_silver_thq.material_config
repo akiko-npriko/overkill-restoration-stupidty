@@ -1,0 +1,7 @@
+<materials version="3" group="weapon_p226">
+    <material name="mtr_frame" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_pis_p226_pts/silver_df"/>
+        <bump_normal_texture file="units/pd2_dlc_dec5/weapons/wpn_fps_pis_p226_pts/wpn_fps_pis_p226_body_standard_nm"/>
+		<reflection_texture type="cubemap" global_texture="current_global_texture"/>
+    </material>	
+</materials>

@@ -1,0 +1,16 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_shot_m37_pts/wpn_fps_shot_m37_fg_long_extra" orientation_object="rp_wpn_fps_shot_m37_fg_standard" />
+	<animations>
+		<animation_group name="recoil">
+			<object name="a_recoil" 	enabled="true" />
+		</animation_group>
+		<animation_group name="reload_exit">
+			<object name="a_reload_exit" 	enabled="true" />
+		</animation_group>
+	</animations>	
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="g_pump">
+        <object enabled="true" inherit_bounding_volume="co_culling" name="g_pump" />
+	</graphic_group>
+ 	</graphics>
+</dynamic_object>

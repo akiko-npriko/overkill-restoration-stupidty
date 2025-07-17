@@ -1,0 +1,54 @@
+<ugcitem>
+	<param key="type" value="weapon_skin"/>
+	<param key="name" value="Vengeance"/>
+	<node name="data">
+		<param key="id" value="kn_bs23_bull"/>
+		<param key="weapon_id" value="bs23"/>
+		<node name="types">
+			<node name="upper_reciever">
+			</node>
+			<node name="sight">
+			</node>
+			<node name="stock">
+				<param key="base_gradient_name" value="BS23Grad3.tga"/>
+			</node>
+			<node name="magazine">
+			</node>
+			<node name="barrel">
+				<param key="base_gradient_name" value="BS23Grad3.tga"/>
+			</node>
+			<node name="foregrip">
+			</node>
+		</node>
+		<param key="base_gradient_name" value="BS23Grad1.tga"/>
+		<param key="name_id" value="bm_wskn_bs23_bull"/>
+		<param key="reserve_quality" value="true"/>
+		<node name="parts">
+			<node name="wpn_fps_upg_bs23_stock_pistolgrip">
+				<node name="6634a1df79ecc239">
+				</node>
+			</node>
+			<node name="wpn_fps_shot_bs23_rec">
+				<node name="9d0bfbb45b79f0b3">
+					<param key="uv_scale" value="Vector3(6.58911, 6.58911, 0)"/>
+					<param key="sticker_name" value="BS23Sticker2.tga"/>
+					<param key="uv_offset_rot" value="Vector3(-0.0510371, 0.883854, 4.00548)"/>
+				</node>
+			</node>
+			<node name="wpn_fps_shot_bs23_stock">
+				<node name="d628c793b707a628">
+				</node>
+			</node>
+			<node name="wpn_fps_shot_bs23_bolt">
+				<node name="9d0bfbb45b79f0b3">
+					<param key="base_gradient_name" value="BS23Grad2.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_shot_bs23_forend">
+				<node name="ebc64d3bdc4d35b6">
+				</node>
+			</node>
+		</node>
+	</node>
+	<param key="timestamp" value="2020332154548"/>
+</ugcitem>

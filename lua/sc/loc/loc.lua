@@ -6291,6 +6291,10 @@ Hooks:Add("LocalizationManagerPostInit", "SC_Localization_Perk_Decks_Eng", funct
 
 	})
 	loc:add_localized_strings({
+	
+	["menu_es_coins_progress"] = "Continental Coins",
+	["menu_cs_coins"] = "Continental Coins",
+	["bm_menu_btn_buy_mod"] = "Purchase with Continental Coins",
 
 --AkimboPistols
 bm_w_x_b92fs         =       "Akimbo Beretta M92FS",
@@ -6521,7 +6525,26 @@ bm_w_ray		 	 =       "M202 FLASH",
 bm_w_slap		 	 =       "HK M320",
 bm_w_rpg7		 	 =       "RPG-7",
 bm_w_system	 		 =       "The Boring Company Not a Flamethrower",
-bm_w_ms3gl	 		 =       "Metal Storm 3GL"
+bm_w_ms3gl	 		 =       "Metal Storm 3GL",
+
+--Difficult Local Stuff
+menu_difficulty_normal = "Very Easy",
+menu_difficulty_hard = "Easy",
+menu_difficulty_very_hard = "Normal",
+menu_difficulty_overkill = "Medium",
+menu_difficulty_easy_wish = "Hard",
+menu_difficulty_apocalypse = "Very Hard",
+menu_difficulty_sm_wish = "OVERKILL",
+menu_toggle_one_down = "One Down",
+menu_one_down = "One Down",
+
+menu_risk_pd = "For players who are just learning FPS Games.",
+menu_risk_swat = "For players new to PAYDAY.",
+menu_risk_fbi = "For players who have some experience with PAYDAY.",
+menu_risk_special = "For players who have learned many mechanics of PAYDAY.",
+menu_risk_easy_wish = "For players who want a new challenge.",
+menu_risk_elite = "For players who want a crushing experience.",
+menu_risk_sm_wish = "For the masters of PAYDAY, the weak will be destroyed."
 
 	})
 	LocalizationManager:add_localized_strings({

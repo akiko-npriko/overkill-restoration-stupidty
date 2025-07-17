@@ -1,0 +1,14 @@
+<unit type="wpn" slot="1" >
+	<object file="units/mods/weapons/wpn_fps_shot_beck/wpn_fps_shot_beck" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_reinbeck880"/>
+		<depends_on bnk="soundbanks/weapon_m37"/>
+		<depends_on unit="units/payday2/weapons/wpn_fps_shell/wpn_fps_shell"/>
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="base" class="ShotgunBase" >
+			<var name="name_id" value="beck" />
+		</extension>
+	</extensions>
+</unit>

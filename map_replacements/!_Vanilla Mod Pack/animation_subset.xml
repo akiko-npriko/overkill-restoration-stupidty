@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+
+		
+		<target mode="attach">
+			<anim name="bdgr_reload" 								file="anims/fps/bdgr/bdgr_reload" blend_set="all"/>
+			<anim name="bdgr_reload_not_empty" 						file="anims/fps/bdgr/bdgr_reload_not_empty" blend_set="all"/>
+			<anim name="bdgr_idle" 									file="anims/fps/bdgr/bdgr_idle" blend_set="all"/>
+			<anim name="bdgr_recoil" 								file="anims/fps/bdgr/bdgr_recoil" blend_set="all"/>
+			<anim name="bdgr_recoil_enter" 							file="anims/fps/bdgr/bdgr_recoil_enter" blend_set="all"/>
+			<anim name="bdgr_recoil_loop" 							file="anims/fps/bdgr/bdgr_recoil_loop" blend_set="all"/>
+			<anim name="bdgr_recoil_exit" 							file="anims/fps/bdgr/bdgr_recoil_exit" blend_set="all"/>
+			<anim name="bdgr_recoil_steelsight" 						file="anims/fps/bdgr/bdgr_recoil" blend_set="all"/>
+			<anim name="bdgr_equip" 									file="anims/fps/bdgr/bdgr_equip" blend_set="all"/>
+			<anim name="bdgr_unequip" 								file="anims/fps/bdgr/bdgr_unequip" blend_set="all"/>
+			<anim name="bdgr_melee" 									file="anims/fps/bdgr/bdgr_melee" blend_set="all"/>
+			<anim name="bdgr_melee_miss" 							file="anims/fps/bdgr/bdgr_melee_miss" blend_set="all"/>
+			<anim name="bdgr_use" 									file="anims/fps/bdgr/bdgr_use" blend_set="all"/>
+			<anim name="bdgr_sprint_enter" 							file="anims/fps/bdgr/bdgr_sprint_enter" blend_set="all"/>
+			<anim name="bdgr_sprint" 								file="anims/fps/bdgr/bdgr_sprint" blend_set="all"/>
+			<anim name="bdgr_sprint_exit" 							file="anims/fps/bdgr/bdgr_sprint_exit" blend_set="all"/>
+			<anim name="bdgr_com_down_var1" 							file="anims/fps/bdgr/bdgr_com_var1" blend_set="all"/>
+			<anim name="bdgr_com_stop" 								file="anims/fps/bdgr/bdgr_com_var5" blend_set="all"/>
+			<anim name="bdgr_com_come" 								file="anims/fps/bdgr/bdgr_com_var6" blend_set="all"/>
+			<anim name="bdgr_com_point" 								file="anims/fps/bdgr/bdgr_com_var7" blend_set="all"/>
+			<anim name="bdgr_get_up" 								file="anims/fps/bdgr/bdgr_get_up" blend_set="all"/>
+			<anim name="bdgr_gogo" 									file="anims/fps/bdgr/bdgr_gogo" blend_set="all"/>
+			<anim name="bdgr_tased" 									file="anims/fps/bdgr/bdgr_tased" blend_set="all"/>
+			<anim name="bdgr_tased_boost" 							file="anims/fps/bdgr/bdgr_tased_boost" blend_set="all"/>
+			<anim name="bdgr_tased_exit" 							file="anims/fps/bdgr/bdgr_tased_exit" blend_set="all"/>
+			<anim name="bdgr_inspect" 								file="anims/fps/bdgr/bdgr_inspect" blend_set="all"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+		<target mode="attach">
+			<anim name="bs23_idle" 							file="anims/fps/bs23/bs23_idle" blend_set="all"/>
+			<anim name="bs23_reload" 						file="anims/fps/bs23/bs23_reload_enter" blend_set="all"/>
+			<anim name="bs23_reload_not_empty" 			file="anims/fps/bs23/bs23_reload_enter" blend_set="all"/>
+			<anim name="bs23_reload_enter" 					file="anims/fps/bs23/bs23_reload_enter" blend_set="all"/>
+			<anim name="bs23_reload_loop" 						file="anims/fps/bs23/bs23_reload_loop" blend_set="all"/>
+			<anim name="bs23_reload_exit" 						file="anims/fps/bs23/bs23_reload_exit" blend_set="all"/>
+			<anim name="bs23_reload_not_empty_exit" 			file="anims/fps/bs23/bs23_reload_exit_not_empty" blend_set="all"/>
+			<anim name="bs23_equip" 							file="anims/fps/bs23/bs23_equip" blend_set="all"/>
+			<anim name="bs23_unequip" 							file="anims/fps/bs23/bs23_unequip" blend_set="all"/>
+			<anim name="bs23_recoil" 							file="anims/fps/bs23/bs23_recoil" blend_set="all"/>
+			<anim name="bs23_recoil_steelsight" 							file="anims/fps/bs23/bs23_recoil_steelsight" blend_set="all"/>
+			<anim name="bs23_melee" 							file="anims/fps/bs23/bs23_melee" blend_set="all"/>
+			<anim name="bs23_melee_miss" 						file="anims/fps/bs23/bs23_melee_miss" blend_set="all"/>
+			<anim name="bs23_use" 								file="anims/fps/bs23/bs23_use" blend_set="all"/>
+			<anim name="bs23_sprint" 							file="anims/fps/bs23/bs23_sprint" blend_set="all"/>
+			<anim name="bs23_sprint_exit" 						file="anims/fps/bs23/bs23_sprint_exit" blend_set="all"/>
+			<anim name="bs23_sprint_enter" 					file="anims/fps/bs23/bs23_sprint_enter" blend_set="all"/>
+			<anim name="bs23_com_down_var1" 					file="anims/fps/bs23/bs23_com_var1" blend_set="all"/>
+			<anim name="bs23_com_stop" 						file="anims/fps/bs23/bs23_com_var5" blend_set="all"/>
+			<anim name="bs23_com_come" 						file="anims/fps/bs23/bs23_com_var6" blend_set="all"/>
+			<anim name="bs23_com_point" 						file="anims/fps/bs23/bs23_com_var7" blend_set="all"/>
+			<anim name="bs23_get_up" 							file="anims/fps/bs23/bs23_get_up" blend_set="all"/>
+			<anim name="bs23_gogo" 							file="anims/fps/bs23/bs23_gogo" blend_set="all"/>
+			<anim name="bs23_tased" 							file="anims/fps/bs23/bs23_tased" blend_set="all"/>
+			<anim name="bs23_tased_boost" 						file="anims/fps/bs23/bs23_tased_boost" blend_set="all"/>
+			<anim name="bs23_tased_exit" 						file="anims/fps/bs23/bs23_tased_exit" blend_set="all"/>
+			<anim name="bs23_inspect" file="anims/fps/bs23/bs23_inspect" blend_set="all"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+
+		
+		<target mode="attach">
+			<anim name="sg416_reload" 								file="anims/fps/sg416/sg416_reload" blend_set="all"/>
+			<anim name="sg416_reload_not_empty" 						file="anims/fps/sg416/sg416_reload_not_empty" blend_set="all"/>
+			<anim name="sg416_idle" 									file="anims/fps/sg416/sg416_idle" blend_set="all"/>
+			<anim name="sg416_recoil" 								file="anims/fps/sg416/sg416_recoil" blend_set="all"/>
+			<anim name="sg416_recoil_enter" 							file="anims/fps/sg416/sg416_recoil_enter" blend_set="all"/>
+			<anim name="sg416_recoil_loop" 							file="anims/fps/sg416/sg416_recoil_loop" blend_set="all"/>
+			<anim name="sg416_recoil_exit" 							file="anims/fps/sg416/sg416_recoil_exit" blend_set="all"/>
+			<anim name="sg416_recoil_steelsight" 						file="anims/fps/sg416/sg416_recoil" blend_set="all"/>
+			<anim name="sg416_equip" 									file="anims/fps/sg416/sg416_equip" blend_set="all"/>
+			<anim name="sg416_unequip" 								file="anims/fps/sg416/sg416_unequip" blend_set="all"/>
+			<anim name="sg416_melee" 									file="anims/fps/sg416/sg416_melee" blend_set="all"/>
+			<anim name="sg416_melee_miss" 							file="anims/fps/sg416/sg416_melee_miss" blend_set="all"/>
+			<anim name="sg416_use" 									file="anims/fps/sg416/sg416_use" blend_set="all"/>
+			<anim name="sg416_sprint_enter" 							file="anims/fps/sg416/sg416_sprint_enter" blend_set="all"/>
+			<anim name="sg416_sprint" 								file="anims/fps/sg416/sg416_sprint" blend_set="all"/>
+			<anim name="sg416_sprint_exit" 							file="anims/fps/sg416/sg416_sprint_exit" blend_set="all"/>
+			<anim name="sg416_com_down_var1" 							file="anims/fps/sg416/sg416_com_var1" blend_set="all"/>
+			<anim name="sg416_com_stop" 								file="anims/fps/sg416/sg416_com_var5" blend_set="all"/>
+			<anim name="sg416_com_come" 								file="anims/fps/sg416/sg416_com_var6" blend_set="all"/>
+			<anim name="sg416_com_point" 								file="anims/fps/sg416/sg416_com_var7" blend_set="all"/>
+			<anim name="sg416_get_up" 								file="anims/fps/sg416/sg416_get_up" blend_set="all"/>
+			<anim name="sg416_gogo" 									file="anims/fps/sg416/sg416_gogo" blend_set="all"/>
+			<anim name="sg416_tased" 									file="anims/fps/sg416/sg416_tased" blend_set="all"/>
+			<anim name="sg416_tased_boost" 							file="anims/fps/sg416/sg416_tased_boost" blend_set="all"/>
+			<anim name="sg416_tased_exit" 							file="anims/fps/sg416/sg416_tased_exit" blend_set="all"/>
+			<anim name="sg416_inspect" 								file="anims/fps/sg416/sg416_inspect" blend_set="all"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+
+		
+		<target mode="attach">
+			<anim name="ak5s_reload" 								file="anims/fps/ak5s/ak5s_reload" blend_set="all"/>
+			<anim name="ak5s_reload_not_empty" 						file="anims/fps/ak5s/ak5s_reload_not_empty" blend_set="all"/>
+			<anim name="ak5s_idle" 									file="anims/fps/ak5s/ak5s_idle" blend_set="all"/>
+			<anim name="ak5s_recoil" 								file="anims/fps/ak5s/ak5s_recoil" blend_set="all"/>
+			<anim name="ak5s_recoil_enter" 							file="anims/fps/ak5s/ak5s_recoil_enter" blend_set="all"/>
+			<anim name="ak5s_recoil_loop" 							file="anims/fps/ak5s/ak5s_recoil_loop" blend_set="all"/>
+			<anim name="ak5s_recoil_exit" 							file="anims/fps/ak5s/ak5s_recoil_exit" blend_set="all"/>
+			<anim name="ak5s_recoil_steelsight" 						file="anims/fps/ak5s/ak5s_recoil" blend_set="all"/>
+			<anim name="ak5s_equip" 									file="anims/fps/ak5s/ak5s_equip" blend_set="all"/>
+			<anim name="ak5s_unequip" 								file="anims/fps/ak5s/ak5s_unequip" blend_set="all"/>
+			<anim name="ak5s_melee" 									file="anims/fps/ak5s/ak5s_melee" blend_set="all"/>
+			<anim name="ak5s_melee_miss" 							file="anims/fps/ak5s/ak5s_melee_miss" blend_set="all"/>
+			<anim name="ak5s_use" 									file="anims/fps/ak5s/ak5s_use" blend_set="all"/>
+			<anim name="ak5s_sprint_enter" 							file="anims/fps/ak5s/ak5s_sprint_enter" blend_set="all"/>
+			<anim name="ak5s_sprint" 								file="anims/fps/ak5s/ak5s_sprint" blend_set="all"/>
+			<anim name="ak5s_sprint_exit" 							file="anims/fps/ak5s/ak5s_sprint_exit" blend_set="all"/>
+			<anim name="ak5s_com_down_var1" 							file="anims/fps/ak5s/ak5s_com_var1" blend_set="all"/>
+			<anim name="ak5s_com_stop" 								file="anims/fps/ak5s/ak5s_com_var5" blend_set="all"/>
+			<anim name="ak5s_com_come" 								file="anims/fps/ak5s/ak5s_com_var6" blend_set="all"/>
+			<anim name="ak5s_com_point" 								file="anims/fps/ak5s/ak5s_com_var7" blend_set="all"/>
+			<anim name="ak5s_get_up" 								file="anims/fps/ak5s/ak5s_get_up" blend_set="all"/>
+			<anim name="ak5s_gogo" 									file="anims/fps/ak5s/ak5s_gogo" blend_set="all"/>
+			<anim name="ak5s_tased" 									file="anims/fps/ak5s/ak5s_tased" blend_set="all"/>
+			<anim name="ak5s_tased_boost" 							file="anims/fps/ak5s/ak5s_tased_boost" blend_set="all"/>
+			<anim name="ak5s_tased_exit" 							file="anims/fps/ak5s/ak5s_tased_exit" blend_set="all"/>
+			<anim name="ak5s_inspect" 								file="anims/fps/ak5s/ak5s_inspect" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

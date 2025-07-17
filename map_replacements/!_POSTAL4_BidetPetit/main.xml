@@ -1,0 +1,10 @@
+<mod name="POSTAL 4 - Bidet Petition">
+	<Localization directory="Localization" default="english.txt">
+	</Localization>
+	<GlobalValue id="bidetpetition" color="Color(1, 0, 0)"/>
+	<Melee id="bidetpetition" info_id="bm_melee_bidetpetition_info" based_on="agave" anim_global_param="melee_bidetpetition" melee_charge_shaker="player_melee_charge_wing" unit="units/mods/weapons/wpn_mel_petition/wpn_melee_bidetpetition" third_unit="units/mods/weapons/wpn_mel_petition/wpn_tps_melee_bidetpetition" texture_bundle_folder="mods" dlc="bidetpetition" global_value="bidetpetition">
+	<stats min_damage="10" max_damage="40" charge_time="4" min_damage_effect="1" max_damage_effect="1" range="270" remove_weapon_movement_penalty="true"/>
+		<sounds equip="suitcase_equip" hit_air="suitcase_hit_air" hit_gen="suitcase_hit_gen" hit_body="suitcase_hit_body" charge="false"/>
+	</Melee>
+	<AddFiles directory="assets" auto_generate="true"/>
+</mod>

@@ -1,0 +1,129 @@
+<ugcitem>
+	<param key="type" value="weapon_skin"/>
+	<param key="name" value="overname"/>
+	<node name="data">
+		<param key="id" value="n_amr12_overname"/>
+		<param key="weapon_id" value="amr12"/>
+		<node name="types">
+			<node name="drag_handle">
+				<param key="base_gradient_name" value="just black.tga"/>
+			</node>
+			<node name="iron_rear">
+				<param key="base_gradient_name" value="base_cop_008_df.tga"/>
+			</node>
+			<node name="barrel">
+				<param key="base_gradient_name" value="base_cop_006_df.tga"/>
+			</node>
+			<node name="iron_front">
+				<param key="base_gradient_name" value="base_cop_008_df.tga"/>
+			</node>
+			<node name="sight_front">
+				<param key="base_gradient_name" value="base_cop_006_df.tga"/>
+			</node>
+			<node name="grip">
+				<param key="pattern_gradient_name" value="gradient_cop_blurred.tga"/>
+				<param key="base_gradient_name" value="base_cop_002_df.tga"/>
+				<param key="pattern_name" value="pattern_blurred.tga"/>
+				<param key="pattern_tweak" value="Vector3(4.59337, 0, 1)"/>
+			</node>
+			<node name="stock">
+				<param key="pattern_tweak" value="Vector3(1, 0.37912, 1)"/>
+				<param key="pattern_name" value="pattern_blurred.tga"/>
+				<param key="pattern_gradient_name" value="gradient_cop_blurred.tga"/>
+			</node>
+			<node name="sight">
+				<param key="base_gradient_name" value="base_cop_009_df.tga"/>
+			</node>
+			<node name="sight_rear">
+				<param key="base_gradient_name" value="base_cop_006_df.tga"/>
+			</node>
+		</node>
+		<param key="base_gradient_name" value="base_cop_002_df.tga"/>
+		<param key="name_id" value="bm_wskn_amr12_overname"/>
+		<param key="reserve_quality" value="true"/>
+		<node name="parts">
+			<node name="wpn_fps_amcar_bolt_standard">
+				<node name="23d7ffd2ce6e41be">
+					<param key="pattern_gradient_name" value="pgrad_mdr_01.tga"/>
+					<param key="base_gradient_name" value="base_cop_006_df.tga"/>
+					<param key="pattern_name" value="pat_smoke.tga"/>
+					<param key="pattern_tweak" value="Vector3(1, 0, 0)"/>
+				</node>
+			</node>
+			<node name="wpn_fps_ass_m4_s_russian">
+				<node name="aa37db05b26431de">
+					<param key="base_gradient_name" value="base_cop_006_df.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_shot_amr12_rail">
+				<node name="8678e6a8764b13ac">
+					<param key="pattern_name" value="pattern_wornlines.tga"/>
+					<param key="pattern_gradient_name" value="pgrad_star_light.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_shot_amr12_m_extended">
+				<node name="e07bef375f9743f3">
+					<param key="pattern_gradient_name" value="gradient_cop_blurred.tga"/>
+					<param key="pattern_pos" value="Vector3(0, 0.37825, 0)"/>
+					<param key="base_gradient_name" value="base_cop_009_df.tga"/>
+					<param key="pattern_name" value="pattern_blurred.tga"/>
+					<param key="pattern_tweak" value="Vector3(4.30718, 0, 1)"/>
+				</node>
+			</node>
+			<node name="wpn_fps_shot_amr12_fg_short">
+				<node name="a02c273761ede0c0">
+					<param key="pattern_tweak" value="Vector3(1, 1.08341, 1)"/>
+					<param key="pattern_name" value="pat_smoke.tga"/>
+					<param key="pattern_gradient_name" value="pgrad_mdr_01.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_upg_ass_m4_lower_reciever_core">
+				<node name="11f00d59e01de219">
+					<param key="pattern_name" value="pattern_blurred.tga"/>
+					<param key="pattern_gradient_name" value="pgrad_star_light.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_upg_ass_m4_upper_reciever_core">
+				<node name="ce53cb869d779872">
+					<param key="pattern_name" value="pattern_blurred.tga"/>
+					<param key="pattern_gradient_name" value="pgrad_star_light.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_m16_fg_standard">
+				<node name="d0461e2784fa1a17">
+					<param key="pattern_tweak" value="Vector3(1, 0.768728, 1)"/>
+					<param key="pattern_name" value="pattern_blurred.tga"/>
+					<param key="pattern_gradient_name" value="gradient_cop_blurred.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_upg_ass_m4_upper_reciever_ballos">
+				<node name="284352a3af612202">
+					<param key="pattern_name" value="pat_smoke.tga"/>
+					<param key="pattern_gradient_name" value="pgrad_mdr_01.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_shot_amr12_fg_railed">
+				<node name="8678e6a8764b13ac">
+					<param key="base_gradient_name" value="base_cop_006_df.tga"/>
+					<param key="pattern_name" value="pattern_blurred.tga"/>
+					<param key="pattern_gradient_name" value="pgrad_star_light.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_m4_upper_reciever_edge">
+				<node name="8000e7e01721a301">
+					<param key="pattern_gradient_name" value="pgrad_mdr_01.tga"/>
+					<param key="base_gradient_name" value="base_cop_009_df.tga"/>
+					<param key="pattern_name" value="pattern_blurred.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_shot_amr12_m_standard">
+				<node name="e07bef375f9743f3">
+					<param key="pattern_tweak" value="Vector3(1, 0.633864, 1)"/>
+					<param key="pattern_name" value="pattern_blurred.tga"/>
+					<param key="pattern_gradient_name" value="pgrad_star_light.tga"/>
+				</node>
+			</node>
+		</node>
+	</node>
+	<param key="timestamp" value="2019314182538"/>
+</ugcitem>

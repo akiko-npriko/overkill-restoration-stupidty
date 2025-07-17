@@ -1,0 +1,10 @@
+<dynamic_object>
+    <diesel materials="units/mods/weapons/wpn_fps_smg_scorpion_pts/wpn_fps_smg_scorpion_s_wood" orientation_object="rp_wpn_fps_smg_scorpion_g_standard"/>
+    <graphics>
+        <object enabled="true" name="g_grip_lod0"/>
+		<graphic_group name="character" enabled="true" culling_object="g_g">
+        <object enabled="true" inherit_bounding_volume="co_culling" name="g_g" />
+	</graphic_group>
+    </graphics>
+	
+</dynamic_object>

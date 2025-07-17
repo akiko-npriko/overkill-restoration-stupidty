@@ -1,0 +1,19 @@
+<materials version="3" group="weapon_legacy">
+	<material name="mat_slide_s" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_pis_legacy_pts/chrome_df" />
+		<bump_normal_texture file="units/pd2_dlc_khp/weapons/wpn_fps_pis_legacy_pts/wpn_fps_pis_legacy_sl_standard_nm" /><reflection_texture type="cubemap" global_texture="current_global_texture"/>
+   
+	</material>
+    <material render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:FPS:VIEW_ANGLE_FALLOFF_OP" name="mat_aim_glow" version="2">
+        <diffuse_texture file="units/pd2_dlc_khp/weapons/wpn_fps_pis_legacy_pts/wpn_fps_pis_legacy_sl_standard_df"/>
+        <variable type="scalar" name="intensity" value="reddot"/>
+        <variable type="scalar" name="falloff_exp" value="15.210099660027"/>
+    </material>
+    <material render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" name="mat_legacy_glow" version="2">
+        <diffuse_texture file="units/pd2_dlc_khp/weapons/wpn_fps_pis_legacy_pts/wpn_fps_pis_legacy_sl_standard_df"/>
+        <bump_normal_texture file="units/pd2_dlc_khp/weapons/wpn_fps_pis_legacy_pts/wpn_fps_pis_legacy_sl_standard_nm"/>
+        <self_illumination_texture file="units/pd2_dlc_khp/weapons/wpn_fps_pis_legacy_pts/wpn_fps_pis_legacy_sl_standard_df"/>
+        <variable type="scalar" name="il_bloom" value="6.0070002853172"/>
+        <variable type="scalar" name="il_multiplier" value="reddot"/>
+    </material>
+</materials>

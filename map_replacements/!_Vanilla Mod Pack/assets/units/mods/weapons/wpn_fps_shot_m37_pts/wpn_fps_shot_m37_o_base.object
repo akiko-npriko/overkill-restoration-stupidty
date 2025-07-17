@@ -1,0 +1,9 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_shot_m37_pts/wpn_fps_shot_m37_o_base" orientation_object="rp_wpn_fps_shot_m37_body_standard" />
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="g_body">
+        <object enabled="true" inherit_bounding_volume="co_culling" name="g_body" />
+	</graphic_group>
+		<object name="g_internals" enabled="true" />
+	</graphics>
+</dynamic_object>

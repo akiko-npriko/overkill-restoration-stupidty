@@ -1,0 +1,13 @@
+<unit type="wpn" slot="1" >
+	<object file="units/mods/weapons/wpn_fps_ass_spike/wpn_fps_ass_spike" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_basset"/>
+		<depends_on bnk="soundbanks/weapon_akm"/>
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="base" class="NewNPCRaycastWeaponBase" >
+			<var name="name_id" value="spike_crew" />
+		</extension>
+	</extensions>
+</unit>

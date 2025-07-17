@@ -1,0 +1,9 @@
+<unit type="wpn" slot="1">
+	<object file="units/mods/weapons/wpn_fps_lmg_hcar_pts/wpn_fps_lmg_hcar_sound_ww2" />
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+	</extensions>
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_shak12"/>
+	</dependencies>
+</unit>

@@ -1,0 +1,245 @@
+<table name="Railgun Rorsch Mk-1" image="guis/roach" color="Color(0, 0.1, 0.5)">
+
+	<Localization directory="Localization" default="english.txt"/>
+	
+	<AssetUpdates id="22281" name="asset_updates" provider="modworkshop"/>
+	
+	<GlobalValue id="roachmod" color="Color(0, 0.1, 0.5)"/>
+	
+	<WeaponMod id="wpn_fps_special_roach_barrel" based_on="wpn_fps_shot_b682_b_long" type="barrel" unit="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_barrel" drop="false" is_a_unlockable="false">
+		<stats reload="-3"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_special_roach_frame" based_on="wpn_fps_shot_b682_s_long" type="stock" unit="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_frame" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_special_roach_discharge" based_on="wpn_fps_shot_b682_s_long" type="stock" unit="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_discharge" drop="false" is_a_unlockable="false"/>
+	
+	<WeaponMod id="wpn_fps_special_roach_irons" based_on="wpn_fps_smg_polymer_o_iron" type="sight" scope_effect="color_heat" scope_overlay="scope_overlay/rorsch_scopeoverlay" scope_overlay_hide_weapon="true" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" is_a_unlockable="false">
+		<stats zoom="10"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_special_roach_a_sabot" based_on="wpn_fps_ammo_type" type="ammo" has_description="true" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" texture_bundle_folder = "mods" is_a_unlockable="true">
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_special_roach_a_tungsten" based_on="wpn_fps_ammo_type" type="ammo" has_description="true" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" texture_bundle_folder = "mods" is_a_unlockable="true">
+		<stats damage="-50" total_ammo_mod="6" recoil="3"/>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_special_roach_a_thermal" based_on="wpn_fps_ammo_type" type="ammo" has_description="true" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" texture_bundle_folder = "mods" is_a_unlockable="true">
+		<stats damage="-85" extra_ammo="2" total_ammo_mod="12" recoil="5"/>
+		<pcs/>
+	</WeaponMod>	
+	
+	<WeaponMod id="wpn_fps_special_roach_fl_built" based_on="wpn_fps_upg_fl_ass_peq15" type="gadget" a_obj="a_body" unit="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_fl_built" drop="false" texture_bundle_folder = "mods" is_a_unlockable="false"/>
+
+	
+	<WeaponMod id="wpn_fps_special_roach_o_inside" based_on="wpn_fps_shot_b682_b_long" type="scope_inside" unit="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_o_inside" drop="false" is_a_unlockable="false"/>
+	<WeaponMod id="wpn_fps_special_roach_o_lens" based_on="wpn_fps_shot_b682_b_long" type="scope_lens" unit="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_o_lens" drop="false" is_a_unlockable="false"/>
+	<WeaponMod id="wpn_fps_special_roach_o_reticle" based_on="wpn_fps_shot_b682_b_long" type="scope_reticle" unit="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_o_reticle" drop="false" is_a_unlockable="false"/>
+	<WeaponMod id="wpn_fps_special_roach_o_display" based_on="wpn_fps_upg_o_spot" type="scope_display" a_obj="a_b" reticle_obj="nil" unit="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_o_display" drop="false" is_a_unlockable="false"/>
+
+	
+	
+	<Weapon unlock_level="99">
+		<weapon id="roach" has_description = "true" based_on="b682" weapon_hold="siltstone" use_stance="siltstone" rays="1" CLIP_AMMO_MAX="1" NR_CLIPS_MAX="12" damage_near = "99998" damage_far = "99999" ignore_damage_upgrades = "true" FIRE_MODE = "single" CAN_TOGGLE_FIREMODE = "false" ignore_damage_upgrades="true" armor_piercing_chance="1" can_shoot_through_enemy="true" can_shoot_through_shield="true" can_shoot_through_wall="true" muzzleflash = "effects/payday2/particles/weapons/50cal_auto_fps" texture_bundle_folder="mods" global_value="roachmod">
+			<categories>
+				<value_node value="grenade_launcher"/>
+				<value_node value="snp"/>
+			</categories>
+			<use_data selection_index="2" align_place = "right_hand"/>
+			
+			<stats damage="120" spread="26" spread_moving="25" recoil="5" alert_size="1" suppression="10" concealment="1" />
+			<stats_modifiers damage = "100"/>
+			<fire_mode_data fire_rate="1"/>
+			<AMMO_PICKUP>
+				<value_node value="0.05"/>
+				<value_node value="0.37"/>
+			</AMMO_PICKUP>
+			
+			<kick>
+				<standing>
+					<value_node value="6.0"/>
+					<value_node value="4.0"/>
+					<value_node value="4.0"/>
+					<value_node value="-4.0"/>
+				</standing>
+				<crouching>
+					<value_node value="6.0"/>
+					<value_node value="4.0"/>
+					<value_node value="4.0"/>
+					<value_node value="-4.0"/>
+				</crouching>
+				<steelsight>
+					<value_node value="6.0"/>
+					<value_node value="4.0"/>
+					<value_node value="4.0"/>
+					<value_node value="-4.0"/>
+				</steelsight>
+			</kick>
+			
+			<animations reload_name_id="b682" equip_id="equip_b682" recoil_steelsight="true"/>
+			<sounds fire="roach_fire" use_fix="true"/>
+		</weapon>
+        <factory id="wpn_fps_special_roach" unit="units/mods/weapons/wpn_fps_special_roach/wpn_fps_special_roach">
+			<optional_types>
+				<value_node value="gadget"/>
+			</optional_types>
+			<override>
+				<wpn_fps_special_roach_fl_built a_obj="a_body"/>
+			</override>
+			<default_blueprint>
+				<value_node value="wpn_fps_special_roach_barrel"/>
+				<value_node value="wpn_fps_special_roach_frame"/>
+				<value_node value="wpn_fps_special_roach_irons"/>
+				<value_node value="wpn_fps_special_roach_a_sabot"/>
+				<value_node value="wpn_fps_special_roach_fl_built"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_special_roach_barrel"/>
+				<value_node value="wpn_fps_special_roach_frame"/>
+				<value_node value="wpn_fps_special_roach_irons"/>
+				<value_node value="wpn_fps_special_roach_a_sabot"/>				
+				<value_node value="wpn_fps_special_roach_fl_built"/>
+				<value_node value="wpn_fps_special_roach_a_tungsten"/>
+				<value_node value="wpn_fps_special_roach_a_thermal"/>
+			</uses_parts>
+		</factory>
+		<stance/>
+	</Weapon>
+
+	
+	
+	<AddFiles directory="assets">
+		<texture path="units/mods/weapons/wpn_fps_special_roach_pts/bf4_railgun_df"/>
+		<texture path="units/mods/weapons/wpn_fps_special_roach_pts/bf4_railgun_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_special_roach_pts/bf4_lens_df"/>
+		<texture path="units/mods/weapons/wpn_fps_special_roach_pts/bf4_lens_op"/>
+		<texture path="units/mods/weapons/wpn_fps_special_roach_pts/discharge_il"/>
+		<texture path="units/mods/weapons/wpn_fps_special_roach_pts/reticle_color"/>
+		<texture path="units/mods/weapons/wpn_fps_special_roach_pts/fc4_tungsten_df"/>
+		<texture path="units/mods/weapons/wpn_fps_special_roach_pts/fc4_tungsten_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_special_roach_pts/me3_thermalclip_df"/>
+		<texture path="units/mods/weapons/wpn_fps_special_roach_pts/me3_thermalclip_nm"/>
+		
+		<effect path="effects/particles/weapons/railgun_barrel" load="true"/>
+		
+		
+		<!--Base Unit-->
+		<cooked_physics path="units/mods/weapons/wpn_fps_special_roach/wpn_fps_special_roach"/>
+		<model path="units/mods/weapons/wpn_fps_special_roach/wpn_fps_special_roach"/>
+		<object path="units/mods/weapons/wpn_fps_special_roach/wpn_fps_special_roach"/>
+		<unit path="units/mods/weapons/wpn_fps_special_roach/wpn_fps_special_roach"/>	
+		<unit path="units/mods/weapons/wpn_fps_special_roach/wpn_fps_special_roach_npc"/>
+
+
+		<!--Base Gun parts-->		
+		<cooked_physics path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_barrel"/>
+		<model path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_barrel"/>
+		<object path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_barrel"/>
+		<unit path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_barrel_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_frame"/>
+		<model path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_frame"/>
+		<object path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_frame"/>
+		<unit path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_frame"/>
+		<material_config path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_frame"/>
+		<material_config path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_frame_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_fl_built"/>
+		<model path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_fl_built"/>
+		<object path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_fl_built"/>
+		<unit path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_fl_built"/>
+		<material_config path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_fl_built"/>
+		<material_config path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_fl_built_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_discharge"/>
+		<model path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_discharge"/>
+		<object path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_discharge"/>
+		<unit path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_discharge"/>
+		<material_config path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_discharge"/>
+		<material_config path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_discharge_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_barrel-50cal"/>
+		<model path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_barrel-50cal"/>
+		<object path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_barrel-50cal"/>
+		<unit path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_barrel-50cal"/>
+		<material_config path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_barrel-50cal"/>
+		<material_config path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_barrel-50cal_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_discharge-small"/>
+		<model path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_discharge-small"/>
+		<object path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_discharge-small"/>
+		<unit path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_discharge-small"/>
+		<material_config path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_discharge-small"/>
+		<material_config path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_discharge-small_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_barrel-thermal"/>
+		<model path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_barrel-thermal"/>
+		<object path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_barrel-thermal"/>
+		<unit path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_barrel-thermal"/>
+		<material_config path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_barrel-thermal"/>
+		<material_config path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_barrel-thermal_thq"/>
+		 
+		 
+		<!--Scope Part-->
+		<texture path="scope_overlay/rorsch_scopeoverlay"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_o_inside"/>
+		<model path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_o_inside"/>
+		<object path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_o_inside"/>
+		<unit path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_o_inside"/>
+		<material_config path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_o_inside"/>
+		<material_config path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_o_inside_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_o_lens"/>
+		<model path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_o_lens"/>
+		<object path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_o_lens"/>
+		<unit path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_o_lens"/>
+		<material_config path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_o_lens"/>
+		<material_config path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_o_lens_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_o_reticle"/>
+		<model path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_o_reticle"/>
+		<object path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_o_reticle"/>
+		<unit path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_o_reticle"/>
+		<material_config path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_o_reticle"/>
+		<material_config path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_o_reticle_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_o_display"/>
+		<model path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_o_display"/>
+		<object path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_o_display"/>
+		<unit path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_o_display"/>
+		<material_config path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_o_display"/>
+		<material_config path="units/mods/weapons/wpn_fps_special_roach_pts/wpn_fps_special_roach_o_display_thq"/>
+		 
+		 
+		 
+		 <!--Icon-->
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_special_roach_fl_built"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_special_roach_a_sabot"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_special_roach_a_tungsten"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_special_roach_a_thermal"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/roach"/>
+		<texture path="guis/roach"/>
+	</AddFiles>
+	
+	<Sounds directory="assets\soundbank">
+		<sound id="roach_fire" path="railgun_boom.ogg" prefix="regular"/>
+	</Sounds>
+	
+	<Hooks directory="Hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
+		<hook file="newraycastweaponbase_traileffect.lua" source_file="lib/units/weapons/newraycastweaponbase"/>
+		<!-- <hook file="playermanager_explosionaoe.lua" source_file="lib/manager/playermanager"/> doesnt seem to work on changing the explosive AoE-->
+		<!-- <hook file="newraycastweaponbase_display.lua" source_file="lib/units/weapons/newraycastweaponbase"/> cant calculate range finder, for some unknown reason-->
+		<!-- <hook file="weapon_alignment.lua" source_file="lib/tweak_data/playertweakdata"/> alignment used without used_stance=svd -->
+		<hook file="playerstandard.lua" source_file="lib/units/beings/player/states/playerstandard"/> 
+		<hook file="newraycastweaponbase.lua" source_file="lib/units/weapons/newraycastweaponbase"/>
+	</Hooks>
+	
+</table>

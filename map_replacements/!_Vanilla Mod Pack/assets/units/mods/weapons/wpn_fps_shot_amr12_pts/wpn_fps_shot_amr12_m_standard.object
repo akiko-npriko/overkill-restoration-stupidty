@@ -1,0 +1,18 @@
+<dynamic_object>
+    <diesel orientation_object="rp_wpn_fps_m4_uupg_m_std" materials="units/mods/weapons/wpn_fps_shot_amr12_pts/wpn_fps_shot_amr12_m_standard" />
+   <animations>
+    <animation_group name="reload">
+      <object name="mag_align" enabled="true" />
+    </animation_group>    
+	<animation_group name="reload_not_empty">
+      <object name="mag_align_2" enabled="true" />
+    </animation_group>
+  </animations>
+  <graphics>
+		<graphic_group name="character" enabled="true" culling_object="g_standard_mag">
+        <object enabled="true" inherit_bounding_volume="co_culling" name="g_standard_mag" />
+	</graphic_group>
+        <object  name="g_bullet_1" enabled="true" />
+        <object  name="g_bullet_2" enabled="true" />
+  </graphics>
+</dynamic_object>

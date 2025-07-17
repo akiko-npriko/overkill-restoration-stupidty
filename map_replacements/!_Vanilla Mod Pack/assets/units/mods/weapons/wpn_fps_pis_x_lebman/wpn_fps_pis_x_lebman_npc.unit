@@ -1,0 +1,14 @@
+<unit type="wpn" slot="1" >
+	<object file="units/mods/weapons/wpn_fps_pis_x_lebman/wpn_fps_pis_x_lebman" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_beer_x"/>
+		<depends_on bnk="soundbanks/weapon_m45_x"/>
+		<depends_on bnk="soundbanks/weapon_m45"/>
+	</dependencies>
+    <extensions>
+		<extension class="ScriptUnitData" name="unit_data" />
+        <extension name="base" class="NPCAkimboWeaponBase" >
+			<var name="name_id" value="x_lebman_crew" />
+		</extension>
+    </extensions>
+</unit>

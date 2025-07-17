@@ -1,0 +1,55 @@
+<table>
+
+    <AssetUpdates id="16927" name="asset_updates" folder_name="pdth_secret" provider="lastbullet"/>
+    
+    <Localization directory="Localization" default="english.txt">
+    </Localization>
+    <GlobalValue id="secret" color="Color(1, 0.5, 0)"/>
+
+    <Mask id="secret_wolf" unit="units/mods/masks/msk_secret_wolf/msk_secret_wolf" texture_bundle_folder="mods" global_value="secret"/>
+    <Mask id="secret_hoxton" unit="units/mods/masks/msk_secret_hoxton/msk_secret_hoxton" texture_bundle_folder="mods" global_value="secret"/>
+    <Mask id="secret_dallas" unit="units/mods/masks/msk_secret_dallas/msk_secret_dallas" texture_bundle_folder="mods" global_value="secret"/>
+    <Mask id="secret_chains" unit="units/mods/masks/msk_secret_chains/msk_secret_chains" texture_bundle_folder="mods" global_value="secret"/>
+    <AddFiles directory="assets">
+    
+        <!-- Secret Wolf -->
+        <cooked_physics path="units/mods/masks/msk_secret_wolf/msk_secret_wolf"/>
+        <model path="units/mods/masks/msk_secret_wolf/msk_secret_wolf"/>
+        <object path="units/mods/masks/msk_secret_wolf/msk_secret_wolf"/>
+        <unit path="units/mods/masks/msk_secret_wolf/msk_secret_wolf"/>
+        <material_config path="units/mods/masks/msk_secret_wolf/msk_secret_wolf"/>
+        <texture path="units/mods/masks/msk_secret_wolf/msk_secret_wolf_df"/>
+        <texture path="units/mods/masks/msk_secret_wolf/msk_secret_wolf_nm"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/secret_wolf"/>
+
+        <!-- Secret Hoxton -->
+        <cooked_physics path="units/mods/masks/msk_secret_hoxton/msk_secret_hoxton"/>
+        <model path="units/mods/masks/msk_secret_hoxton/msk_secret_hoxton"/>
+        <object path="units/mods/masks/msk_secret_hoxton/msk_secret_hoxton"/>
+        <unit path="units/mods/masks/msk_secret_hoxton/msk_secret_hoxton"/>
+        <material_config path="units/mods/masks/msk_secret_hoxton/msk_secret_hoxton"/>
+        <texture path="units/mods/masks/msk_secret_hoxton/msk_secret_hoxton_df"/>
+        <texture path="units/mods/masks/msk_secret_hoxton/msk_secret_hoxton_nm"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/secret_hoxton"/>
+
+        <!-- Secret Dallas -->
+        <cooked_physics path="units/mods/masks/msk_secret_dallas/msk_secret_dallas"/>
+        <model path="units/mods/masks/msk_secret_dallas/msk_secret_dallas"/>
+        <object path="units/mods/masks/msk_secret_dallas/msk_secret_dallas"/>
+        <unit path="units/mods/masks/msk_secret_dallas/msk_secret_dallas"/>
+        <material_config path="units/mods/masks/msk_secret_dallas/msk_secret_dallas"/>
+        <texture path="units/mods/masks/msk_secret_dallas/msk_secret_dallas_df"/>
+        <texture path="units/mods/masks/msk_secret_dallas/msk_secret_dallas_nm"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/secret_dallas"/>
+
+        <!-- Secret Chains -->
+        <cooked_physics path="units/mods/masks/msk_secret_chains/msk_secret_chains"/>
+        <model path="units/mods/masks/msk_secret_chains/msk_secret_chains"/>
+        <object path="units/mods/masks/msk_secret_chains/msk_secret_chains"/>
+        <unit path="units/mods/masks/msk_secret_chains/msk_secret_chains"/>
+        <material_config path="units/mods/masks/msk_secret_chains/msk_secret_chains"/>
+        <texture path="units/mods/masks/msk_secret_chains/msk_secret_chains_df"/>
+        <texture path="units/mods/masks/msk_secret_chains/msk_secret_chains_nm"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/secret_chains"/>
+    </AddFiles>
+</table>

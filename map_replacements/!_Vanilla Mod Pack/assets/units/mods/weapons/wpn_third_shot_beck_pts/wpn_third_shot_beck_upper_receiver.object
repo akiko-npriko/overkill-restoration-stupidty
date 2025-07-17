@@ -1,0 +1,23 @@
+<dynamic_object>
+    <diesel materials="units/mods/weapons/wpn_third_shot_beck_pts/wpn_third_shot_beck_upper_receiver" orientation_object="reinbeck"/>
+  <animations>
+    <animation_group name="reload" enabled="false" >
+		<object name="anim_slug_reload" enabled="true" />
+    </animation_group>
+  </animations>
+    <graphics>
+		<graphic_group name="character" enabled="true" culling_object="g_receiver">
+        <object enabled="true" inherit_bounding_volume="co_culling" name="g_receiver" />
+	</graphic_group>
+        <object enabled="false" name="g_slug" />
+        <object enabled="true" name="g_barrel" />
+        <object enabled="true" name="g_dots" />
+        <object enabled="true" name="g_fin" />
+        <object enabled="true" name="g_rail" />
+        <object enabled="true" name="g_screws" />
+        <object enabled="true" name="g_sight" />
+        <object enabled="true" name="g_extra" />
+        <object enabled="true" name="g_hole" />
+        <object enabled="true" name="g_bolt_lod0" />
+    </graphics>
+</dynamic_object>

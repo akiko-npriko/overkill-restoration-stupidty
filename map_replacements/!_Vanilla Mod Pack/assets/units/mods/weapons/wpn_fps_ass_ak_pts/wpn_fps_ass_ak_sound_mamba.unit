@@ -1,0 +1,9 @@
+<unit type="wpn" slot="1" >
+    <object file="units/mods/weapons/wpn_fps_ass_ak_pts/wpn_fps_ass_ak_sound_mamba" />
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+    </extensions>
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_akmsu"/>
+	</dependencies>
+</unit>

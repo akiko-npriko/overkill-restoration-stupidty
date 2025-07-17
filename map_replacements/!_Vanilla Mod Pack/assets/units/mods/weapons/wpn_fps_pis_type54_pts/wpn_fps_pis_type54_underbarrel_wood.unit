@@ -1,0 +1,10 @@
+<unit type="wpn" slot="1">
+	<object file="units/mods/weapons/wpn_fps_pis_type54_pts/wpn_fps_pis_type54_underbarrel_wood" />
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="base" class="WeaponUnderbarrelShotgunRaycast">
+			<var name="name_id" value="type54_underbarrel" />
+			<var name="anim" value="flip_up" />
+		</extension>
+	</extensions>
+</unit>

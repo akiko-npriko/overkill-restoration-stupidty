@@ -1,0 +1,29 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_pis_korth_pts/wpn_fps_pis_korth_m_heat" orientation_object="rp_wpn_fps_pis_korth_m_6" />
+	<graphics>
+		<object name="g_rod" enabled="true" />
+		<object name="g_bullets_1" enabled="true" />
+		<object name="g_cylinder" enabled="true" />
+		<object name="g_lock" enabled="true" />
+		<object name="g_speedloader" enabled="false" />
+	</graphics>
+		<animations>
+		<animation_group name="reload" >
+			<object name="anim_clip_ejection_reload" enabled="true" />
+			<object name="anim_pushrod_reload" enabled="true" />
+			<object name="anim_house_reload" enabled="true" />
+			<object name="anim_bullets_reload" enabled="true" />
+			<object name="anim_speed_reloader" enabled="true" />
+		</animation_group>
+		<animation_group name="reload_not_empty" >
+			<object name="anim_clip_ejection_reload" enabled="true" />
+			<object name="anim_pushrod_reload" enabled="true" />
+			<object name="anim_house_reload" enabled="true" />
+			<object name="anim_bullets_reload" enabled="true" />
+			<object name="anim_speed_reloader" enabled="true" />
+		</animation_group>
+		<animation_group name="recoil" >
+			<object name="anim_house_recoil" enabled="true" />
+		</animation_group>
+	</animations>
+</dynamic_object>

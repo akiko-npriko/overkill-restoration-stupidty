@@ -1,0 +1,7 @@
+<materials version="3" group="type54">
+	<material name="mtr_rail" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_pis_type54_pts/woodrail_df"/>
+        <bump_normal_texture file="units/pd2_dlc_tawp/weapons/wpn_fps_pis_type54_pts/rail_nm"/>
+		<reflection_texture type="cubemap" global_texture="current_global_texture"/>
+    </material> 
+</materials>

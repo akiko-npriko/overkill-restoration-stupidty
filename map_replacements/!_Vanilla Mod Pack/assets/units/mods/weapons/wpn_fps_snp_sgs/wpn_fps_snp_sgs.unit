@@ -1,0 +1,13 @@
+<unit type="wpn" slot="1">
+	<object file="units/mods/weapons/wpn_fps_snp_sgs/wpn_fps_snp_sgs" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_shepheard"/>
+		<depends_on bnk="soundbanks/weapon_model70"/>
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="base" class="NewRaycastWeaponBase" >
+			<var name="name_id" value="sgs" />
+		</extension>
+	</extensions>
+</unit>

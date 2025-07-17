@@ -1,0 +1,43 @@
+<dynamic_object>
+    <diesel materials="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_mag" orientation_object="rp_wpn_fps_ass_g36_m_standard"/>
+   <animations>
+    <animation_group name="reload">
+      <object name="mag_align" enabled="true" />
+    </animation_group>    
+	<animation_group name="reload_not_empty">
+      <object name="mag_align_2" enabled="true" />
+    </animation_group>
+  </animations>
+    <graphics>
+        <object enabled="false" name="g_mag" />
+        <object enabled="true" name="g_plastic1" />
+        <object enabled="false" name="g_plastic2" />
+        <object enabled="true" name="g_bullet_1" />
+        <object enabled="false" name="g_bullet_2" />
+        <object enabled="false" name="g_bullet_3" />
+        <object enabled="false" name="g_bullet_4" />
+        <object enabled="false" name="g_bullet_5" />
+        <object enabled="false" name="g_bullet_6" />
+        <object enabled="false" name="g_bullet_7" />
+        <object enabled="false" name="g_bullet_8" />
+        <object enabled="false" name="g_bullet_9" />
+        <object enabled="false" name="g_bullet_10" />
+        <object enabled="false" name="g_bullet_11" />
+        <object enabled="false" name="g_bullet_12" />
+        <object enabled="false" name="g_bullet_13" />
+        <object enabled="false" name="g_bullet_14" />
+        <object enabled="false" name="g_bullet_15" />
+        <object enabled="false" name="g_bullet_16" />
+        <object enabled="false" name="g_bullet_17" />
+        <object enabled="false" name="g_bullet_18" />
+        <object enabled="false" name="g_bullet_19" />
+        <object enabled="false" name="g_bullet_20" />
+        <object enabled="false" name="g_bullet_21" />
+        <object enabled="false" name="g_bullet_22" />
+        <object enabled="false" name="g_bullet_23" />
+        <object enabled="false" name="g_bullet_24" />
+        <object enabled="false" name="g_bullet_25" />
+        <object enabled="false" name="g_bullet_26" />
+        <object enabled="false" name="g_bullet_27" />
+    </graphics>
+</dynamic_object>

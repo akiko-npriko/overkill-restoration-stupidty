@@ -1,0 +1,10 @@
+<materials version="3" group="weapon_p1911">
+	 <material name="grip" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/payday2/weapons/wpn_fps_pis_1911_pts/grip_df"/>
+        <bump_normal_texture file="units/payday2/weapons/wpn_fps_pis_1911_pts/grip_nm"/>
+    </material>	 
+	<material name="bling" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_pis_1911_pts/sidewindergrip_df"/>
+        <bump_normal_texture file="units/payday2/weapons/wpn_fps_pis_1911_pts/bling_nm"/>
+    </material>	
+</materials>

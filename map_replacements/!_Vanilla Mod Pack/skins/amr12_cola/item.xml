@@ -1,0 +1,102 @@
+<ugcitem>
+	<param key="type" value="weapon_skin"/>
+	<param key="name" value="name mcnameface"/>
+	<node name="data">
+		<param key="id" value="n_amr12_name_mcnameface"/>
+		<param key="weapon_id" value="amr12"/>
+		<node name="types">
+			<node name="upper_reciever">
+				<param key="pattern_gradient_name" value="gse_pgrad.tga"/>
+				<param key="base_gradient_name" value="literally just black.tga"/>
+				<param key="pattern_name" value="jimbo lines or boards or smth alter.tga"/>
+			</node>
+			<node name="lower_receiver">
+			</node>
+			<node name="lower_reciever">
+				<param key="pattern_gradient_name" value="gse_pgrad.tga"/>
+				<param key="base_gradient_name" value="literally just black.tga"/>
+				<param key="pattern_name" value="jimbo lines or boards or smth alter.tga"/>
+			</node>
+		</node>
+		<param key="base_gradient_name" value="just black.tga"/>
+		<param key="name_id" value="bm_wskn_amr12_name_mcnameface"/>
+		<param key="reserve_quality" value="true"/>
+		<node name="parts">
+			<node name="wpn_fps_upg_ass_m4_lower_reciever_core">
+				<node name="11f00d59e01de219">
+					<param key="pattern_name" value="jimbo pattern 2.tga"/>
+					<param key="pattern_tweak" value="Vector3(2.11305, 0, 1)"/>
+				</node>
+			</node>
+			<node name="wpn_fps_ass_m16_s_op">
+				<node name="11ba7b438c8adf8b">
+					<param key="pattern_name" value="jimbo lines or boards or smth alter.tga"/>
+					<param key="pattern_gradient_name" value="gse_pgrad.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_shot_amr12_rail">
+				<node name="8678e6a8764b13ac">
+				</node>
+			</node>
+			<node name="wpn_fps_ass_m16_s_op_riser">
+				<node name="11ba7b438c8adf8b">
+					<param key="pattern_pos" value="Vector3(0, 0.263773, 0)"/>
+					<param key="pattern_name" value="jimbo lines or boards or smth alter.tga"/>
+					<param key="pattern_gradient_name" value="gse_pgrad.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_shot_amr12_fg_short">
+				<node name="a02c273761ede0c0">
+					<param key="pattern_tweak" value="Vector3(2.54233, 0, 0)"/>
+					<param key="pattern_name" value="jimbo pattern 1.tga"/>
+					<param key="pattern_gradient_name" value="gse_pgrad.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_ass_m16_s_op_rest">
+				<node name="11ba7b438c8adf8b">
+					<param key="pattern_name" value="jimbo lines or boards or smth alter.tga"/>
+					<param key="pattern_gradient_name" value="gse_pgrad.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_upg_ass_m4_upper_reciever_core">
+				<node name="ce53cb869d779872">
+					<param key="pattern_tweak" value="Vector3(2.54233, 0, 1)"/>
+					<param key="base_gradient_name" value="just black.tga"/>
+					<param key="pattern_name" value="jimbo pattern 2.tga"/>
+					<param key="pattern_gradient_name" value="gse_pgrad.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_m16_fg_standard">
+				<node name="d0461e2784fa1a17">
+					<param key="pattern_tweak" value="Vector3(2.06535, 0, 1)"/>
+					<param key="base_gradient_name" value="just black.tga"/>
+					<param key="pattern_name" value="jimbo pattern 2.tga"/>
+					<param key="pattern_gradient_name" value="gse_pgrad.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_upg_ass_m4_upper_reciever_ballos">
+				<node name="284352a3af612202">
+					<param key="base_gradient_name" value="literally just black.tga"/>
+					<param key="pattern_name" value="jimbo pattern 3.tga"/>
+					<param key="pattern_tweak" value="Vector3(2.78083, 0.933562, 1)"/>
+				</node>
+			</node>
+			<node name="wpn_fps_shot_amr12_fg_railed">
+				<node name="8678e6a8764b13ac">
+					<param key="pattern_tweak" value="Vector3(1.20678, 0, 1)"/>
+					<param key="pattern_name" value="jimbo lines or boards or smth alter.tga"/>
+					<param key="pattern_gradient_name" value="gse_pgrad.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_shot_amr12_s_standard">
+				<node name="6f38fa894899fda9">
+					<param key="pattern_gradient_name" value="gse_pgrad.tga"/>
+					<param key="base_gradient_name" value="just black.tga"/>
+					<param key="pattern_name" value="jimbo pattern 3.tga"/>
+					<param key="pattern_tweak" value="Vector3(2.30384, 0, 1)"/>
+				</node>
+			</node>
+		</node>
+	</node>
+	<param key="timestamp" value="2019314181132"/>
+</ugcitem>

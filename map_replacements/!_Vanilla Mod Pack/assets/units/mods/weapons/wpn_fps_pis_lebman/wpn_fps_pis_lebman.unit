@@ -1,0 +1,13 @@
+<unit type="static" slot="1" >
+    <object file="units/mods/weapons/wpn_fps_pis_lebman/wpn_fps_pis_lebman" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_beer"/>
+		<depends_on bnk="soundbanks/weapon_m45"/>
+	</dependencies>
+    <extensions>
+        <extension name="unit_data" class="ScriptUnitData" />
+        <extension name="base" class="NewRaycastWeaponBase" >
+			<var name="name_id" value="lebman" />
+		</extension>
+    </extensions>
+</unit>

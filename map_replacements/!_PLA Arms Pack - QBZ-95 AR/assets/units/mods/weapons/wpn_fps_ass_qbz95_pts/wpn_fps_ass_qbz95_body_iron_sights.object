@@ -1,0 +1,19 @@
+<dynamic_object>
+    <diesel orientation_object="rp_wpn_fps_ass_famas_body_standard" materials="units/mods/weapons/wpn_fps_ass_qbz95_pts/wpn_fps_ass_qbz95_body_iron_sights" />
+       
+	<animations>
+		<animation_group name="reload">
+		  <object name="a_reload" enabled="true" />
+		</animation_group>
+		
+		<animation_group name="recoil">
+		  <object name="a_recoil" enabled="true" />
+		</animation_group>		
+	</animations>
+	
+    <graphics>
+        <object enabled="true" name="g_upper" />
+        <object enabled="false" name="g_lower" />
+        <object enabled="false" name="g_bolt" />
+    </graphics>
+</dynamic_object>

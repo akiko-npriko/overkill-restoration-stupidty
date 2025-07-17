@@ -1,0 +1,67 @@
+<table>
+
+    <AssetUpdates id="16933" name="asset_updates" folder_name="pdth_gold" provider="lastbullet"/>
+    
+    <Localization directory="Localization" default="english.txt">
+    </Localization>
+    <GlobalValue id="gold" color="Color(1, 0.5, 0)"/>
+
+    <Mask id="gold_wolf" unit="units/mods/masks/msk_gold_wolf/msk_gold_wolf" texture_bundle_folder="mods" global_value="gold">
+            <default_blueprint textures="no_color_full_material" materials="gold_clean"/>
+    </mask>
+    <Mask id="gold_hoxton" unit="units/mods/masks/msk_gold_hoxton/msk_gold_hoxton" texture_bundle_folder="mods" global_value="gold">
+            <default_blueprint textures="no_color_full_material" materials="gold_clean"/>
+    </mask>
+    <Mask id="gold_dallas" unit="units/mods/masks/msk_gold_dallas/msk_gold_dallas" texture_bundle_folder="mods" global_value="gold">
+            <default_blueprint textures="no_color_full_material" materials="gold_clean"/>
+    </mask>
+    <Mask id="gold_chains" unit="units/mods/masks/msk_gold_chains/msk_gold_chains" texture_bundle_folder="mods" global_value="gold">
+            <default_blueprint textures="no_color_full_material" materials="gold_clean"/>
+    </mask>
+    <AddFiles directory="assets">
+    
+        <!-- Gold Wolf -->
+        <cooked_physics path="units/mods/masks/msk_gold_wolf/msk_gold_wolf"/>
+        <model path="units/mods/masks/msk_gold_wolf/msk_gold_wolf"/>
+        <object path="units/mods/masks/msk_gold_wolf/msk_gold_wolf"/>
+        <unit path="units/mods/masks/msk_gold_wolf/msk_gold_wolf"/>
+        <material_config path="units/mods/masks/msk_gold_wolf/msk_gold_wolf"/>
+        
+        <texture path="units/mods/masks/msk_gold_wolf/msk_gold_wolf_df"/>
+        <texture path="units/mods/masks/msk_gold_wolf/msk_gold_wolf_nm"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/gold_wolf"/>
+
+        <!-- Gold Hoxton -->
+        <cooked_physics path="units/mods/masks/msk_gold_hoxton/msk_gold_hoxton"/>
+        <model path="units/mods/masks/msk_gold_hoxton/msk_gold_hoxton"/>
+        <object path="units/mods/masks/msk_gold_hoxton/msk_gold_hoxton"/>
+        <unit path="units/mods/masks/msk_gold_hoxton/msk_gold_hoxton"/>
+        <material_config path="units/mods/masks/msk_gold_hoxton/msk_gold_hoxton"/>
+        
+        <texture path="units/mods/masks/msk_gold_hoxton/msk_gold_hoxton_df"/>
+        <texture path="units/mods/masks/msk_gold_hoxton/msk_gold_hoxton_nm"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/gold_hoxton"/>
+
+        <!-- Gold Dallas -->
+        <cooked_physics path="units/mods/masks/msk_gold_dallas/msk_gold_dallas"/>
+        <model path="units/mods/masks/msk_gold_dallas/msk_gold_dallas"/>
+        <object path="units/mods/masks/msk_gold_dallas/msk_gold_dallas"/>
+        <unit path="units/mods/masks/msk_gold_dallas/msk_gold_dallas"/>
+        <material_config path="units/mods/masks/msk_gold_dallas/msk_gold_dallas"/>
+        
+        <texture path="units/mods/masks/msk_gold_dallas/msk_gold_dallas_df"/>
+        <texture path="units/mods/masks/msk_gold_dallas/msk_gold_dallas_nm"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/gold_dallas"/>
+
+        <!-- Gold Chains -->
+        <cooked_physics path="units/mods/masks/msk_gold_chains/msk_gold_chains"/>
+        <model path="units/mods/masks/msk_gold_chains/msk_gold_chains"/>
+        <object path="units/mods/masks/msk_gold_chains/msk_gold_chains"/>
+        <unit path="units/mods/masks/msk_gold_chains/msk_gold_chains"/>
+        <material_config path="units/mods/masks/msk_gold_chains/msk_gold_chains"/>
+        
+        <texture path="units/mods/masks/msk_gold_chains/msk_gold_chains_df"/>
+        <texture path="units/mods/masks/msk_gold_chains/msk_gold_chains_nm"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/gold_chains"/>
+    </AddFiles>
+</table>

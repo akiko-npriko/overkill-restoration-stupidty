@@ -1,0 +1,312 @@
+<table name="SPAS-15" image="guis/spas15" color="Color(0, 0.1, 0.5)">
+
+	<Localization directory="Localization" default="english.txt"/>
+
+    <AssetUpdates id="21305" name="asset_updates" provider="modworkshop"/>
+
+    <GlobalValue id="spas15mod" color="Color(0, 0.1, 0.5)"/>
+	
+	
+	<WeaponMod id="wpn_fps_shot_spas15_barrel" based_on="wpn_fps_ass_g36_b_long" type="barrel" unit="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_barrel" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_shot_spas15_body" based_on="wpn_fps_ass_g36_body_standard" type="lower_reciever" unit="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_body" drop="false" is_a_unlockable="false"/>
+
+<!--<WeaponMod id="wpn_fps_shot_spas15_pump" based_on="wpn_fps_shot_m37_fg_standard" type="foregrip" unit="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_pump" drop="false" is_a_unlockable="false"/>-->
+
+	<WeaponMod id="wpn_fps_shot_spas15_stock" based_on="wpn_fps_ass_ak5_s_ak5a" type="stock" unit="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_stock" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_shot_spas15_mag" based_on="wpn_fps_smg_mp9_m_short" type="magazine" unit="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_mag" drop="false" is_a_unlockable="false">
+		<stats reload="2"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_shot_spas15_ironsight" based_on="wpn_fps_m4_uupg_o_flipup" type="sight" unit="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_ironsight" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_shot_spas15_body_rail" based_on="wpn_fps_shot_r870_ris_special" type="extra" unit="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_body_rail" drop="false" is_a_unlockable="false"/>
+	
+	<!--Stock Adapater-->
+	<WeaponMod id="wpn_fps_shot_spas15_stock_adapter" based_on="wpn_fps_ass_ak5_s_ak5a" type="stock_adapt" unit="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_stock_adapter" drop="false" is_a_unlockable="false"/>
+
+	<!--Attachment-->
+	<WeaponMod id="wpn_fps_shot_spas15_mag_drum" based_on="wpn_fps_smg_mp9_m_short" type="magazine" unit="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_mag_drum" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+		<stats extra_ammo="1" reload="1" concealment="-2"/>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_shot_spas15_b_short" based_on="wpn_fps_ass_g36_b_long" type="barrel" unit="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_b_short" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+		<stats spread="-1" concealment="1"/>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_shot_spas15_s_solid" based_on="wpn_fps_ass_ak5_s_ak5a" type="stock" unit="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_s_solid" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+		<stats recoil="1" concealment="-1"/>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_shot_spas15_s_flip" based_on="wpn_fps_ass_ak5_s_ak5a" type="stock" unit="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_s_flip" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+		<stats recoil="-2" concealment="2"/>
+		<pcs/>
+	</WeaponMod>
+	
+	
+    <Weapon unlock_level="55">
+        <weapon id="spas15" based_on="g36" weapon_hold="g36" rays="12" CLIP_AMMO_MAX="6" NR_CLIPS_MAX="14" has_magazine="true" damage_near="2000" damage_far="3000" shell_ejection="effects/payday2/particles/weapons/shells/shell_slug" muzzleflash = "effects/payday2/particles/weapons/762_auto_fps" texture_bundle_folder="mods" global_value="spas15mod">
+			<categories>
+				<value_node value="shotgun"/>
+			</categories>
+			<stats damage="48" recoil="12" spread="10" suppression="5" concealment="8"/>
+			<AMMO_PICKUP>
+				<value_node value="3.4"/>
+				<value_node value="5.0"/>
+			</AMMO_PICKUP>
+			<fire_mode_data fire_rate="0.1714"/>
+			<use_data align_place="right_hand"/>
+			<kick>
+				<standing>
+					<value_node value="2.0"/>
+					<value_node value="0.8"/>
+					<value_node value="-0.8"/>
+					<value_node value="0.6"/>
+				</standing>
+				<crouching>
+					<value_node value="2.0"/>
+					<value_node value="1.0"/>
+					<value_node value="-0.7"/>
+					<value_node value="0.6"/>
+				</crouching>
+				<steelsight>
+					<value_node value="1.8"/>
+					<value_node value="1.0"/>
+					<value_node value="-0.5"/>
+					<value_node value="0.5"/>
+				</steelsight>
+			</kick>
+			<sounds fire="spas15_fire" fire_single="spas15_fire" fire_auto="spas15_fire" stop_fire="shotgun_dryfire" use_fix="true"/>
+			<animations reload_name_id="g36" equip_id="equip_m4" recoil_steelsight="true"/>
+        </weapon>
+        <factory id="wpn_fps_shot_spas15" unit="units/mods/weapons/wpn_fps_shot_spas15/wpn_fps_shot_spas15">
+			<animations fire="recoil" reload="reload" reload_not_empty="reload_not_empty" fire_steelsight="recoil"/>
+            <optional_types>
+                <value_node value="barrel_ext"/>
+				<value_node value="gadget"/>
+				<value_node value="sight"/>
+            </optional_types>
+            <default_blueprint>
+				<value_node value="wpn_fps_shot_spas15_mag"/>
+				<value_node value="wpn_fps_shot_spas15_body"/>
+				<value_node value="wpn_fps_shot_spas15_barrel"/>
+				<value_node value="wpn_fps_shot_spas15_ironsight"/>
+				<value_node value="wpn_fps_shot_spas15_stock"/>
+				<value_node value="wpn_fps_shot_spas15_stock_adapter"/>
+            </default_blueprint>
+            <uses_parts>
+				<!-- default -->
+				<value_node value="wpn_fps_shot_spas15_mag"/>
+				<value_node value="wpn_fps_shot_spas15_body"/>
+				<value_node value="wpn_fps_shot_spas15_barrel"/>
+				<value_node value="wpn_fps_shot_spas15_ironsight"/>
+				<value_node value="wpn_fps_shot_spas15_stock"/>
+				<value_node value="wpn_fps_shot_spas15_stock_adapter"/>
+				
+				<value_node value="wpn_fps_shot_spas15_body_rail"/>
+				<!--stock-->
+				<value_node value="wpn_fps_shot_spas15_s_solid"/>
+				<value_node value="wpn_fps_shot_spas15_s_flip"/>				
+				<!-- b -->
+				<value_node value="wpn_fps_shot_spas15_b_short"/>	
+				<!-- mags -->
+				<value_node value="wpn_fps_shot_spas15_mag_drum"/>
+				<!-- gadgets -->
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<!-- ammo -->
+				<value_node value="wpn_fps_upg_a_slug"/>
+				<value_node value="wpn_fps_upg_a_custom"/>
+				<value_node value="wpn_fps_upg_a_custom_free"/>
+				<value_node value="wpn_fps_upg_a_explosive"/>
+				<value_node value="wpn_fps_upg_a_piercing"/>
+				<value_node value="wpn_fps_upg_a_dragons_breath"/>
+				<!-- breaks -->
+				<value_node value="wpn_fps_upg_ns_shot_thick"/>
+				<value_node value="wpn_fps_upg_ns_shot_shark"/>
+				<value_node value="wpn_fps_upg_shot_ns_king"/>
+				<value_node value="wpn_fps_upg_ns_sho_salvo_large"/>
+				<value_node value="wpn_fps_upg_ns_duck"/>
+				<!-- sights -->
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_45rds"/>
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+				<value_node value="wpn_fps_upg_o_45rds_v2"/>
+				<!-- firemod -->
+				<value_node value="wpn_fps_upg_i_singlefire"/>
+				<value_node value="wpn_fps_upg_i_autofire"/>
+			</uses_parts>
+        </factory>
+        <stance/>
+    </Weapon>
+
+    <AddFiles directory="assets">
+    <!-- main section -->
+        <cooked_physics path="units/mods/weapons/wpn_fps_shot_spas15/wpn_fps_shot_spas15"/>
+        <model path="units/mods/weapons/wpn_fps_shot_spas15/wpn_fps_shot_spas15"/>
+        <object path="units/mods/weapons/wpn_fps_shot_spas15/wpn_fps_shot_spas15"/>
+        <unit path="units/mods/weapons/wpn_fps_shot_spas15/wpn_fps_shot_spas15"/>
+		<unit path="units/mods/weapons/wpn_fps_shot_spas15/wpn_fps_shot_spas15_npc"/>
+
+    <!-- Textures -->
+        <texture path="units/mods/weapons/wpn_fps_shot_spas15_pts/spas15_main_df"/>
+        <texture path="units/mods/weapons/wpn_fps_shot_spas15_pts/spas15_main_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_shot_spas15_pts/magazine_df"/>
+		<texture path="units/mods/weapons/wpn_fps_shot_spas15_pts/magazine8_df"/>
+        <texture path="units/mods/weapons/wpn_fps_shot_spas15_pts/magazine_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_shot_spas15_pts/stock_df"/>
+        <texture path="units/mods/weapons/wpn_fps_shot_spas15_pts/stock_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_shot_spas15_pts/m870_shell_df"/>
+        <texture path="units/mods/weapons/wpn_fps_shot_spas15_pts/m870_shell_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_shot_spas15_pts/sight_illum_df"/>
+
+
+    <!-- b -->
+        <cooked_physics path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_barrel"/>
+        <material_config path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_barrel"/>
+        <model path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_barrel"/>
+        <object path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_barrel"/>
+        <unit path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_barrel"/>
+
+        <material_config path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_barrel_thq"/>
+	 <!-- b_short-->
+        <cooked_physics path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_b_short"/>
+        <material_config path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_b_short"/>
+        <model path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_b_short"/>
+        <object path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_b_short"/>
+        <unit path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_b_short"/>
+
+        <material_config path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_b_short_thq"/>
+
+    <!-- body -->
+        <cooked_physics path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_body"/>
+        <material_config path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_body"/>
+        <model path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_body"/>
+        <object path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_body"/>
+        <unit path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_body"/>
+
+        <material_config path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_body_thq"/>
+
+    <!-- body_rail -->
+        <cooked_physics path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_body_rail"/>
+        <material_config path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_body_rail"/>
+        <model path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_body_rail"/>
+        <object path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_body_rail"/>
+        <unit path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_body_rail"/>
+
+        <material_config path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_body_rail_thq"/>
+
+    <!-- ironsight -->
+        <cooked_physics path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_ironsight"/>
+        <material_config path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_ironsight"/>
+        <model path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_ironsight"/>
+        <object path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_ironsight"/>
+        <unit path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_ironsight"/>
+
+        <material_config path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_ironsight_thq"/>
+		
+		<!-- stock -->
+        <cooked_physics path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_stock"/>
+        <material_config path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_stock"/>
+        <model path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_stock"/>
+        <object path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_stock"/>
+        <unit path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_stock"/>
+
+        <material_config path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_stock_thq"/>
+		
+		<!-- stock -->
+        <cooked_physics path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_s_solid"/>
+        <material_config path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_s_solid"/>
+        <model path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_s_solid"/>
+        <object path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_s_solid"/>
+        <unit path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_s_solid"/>
+
+        <material_config path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_s_solid_thq"/>
+		
+		<!-- stock -->
+        <cooked_physics path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_s_flip"/>
+        <material_config path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_s_flip"/>
+        <model path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_s_flip"/>
+        <object path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_s_flip"/>
+        <unit path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_s_flip"/>
+
+        <material_config path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_s_flip_thq"/>
+		
+		<!-- adapter -->
+        <cooked_physics path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_stock_adapter"/>
+        <material_config path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_stock_adapter"/>
+        <model path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_stock_adapter"/>
+        <object path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_stock_adapter"/>
+        <unit path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_stock_adapter"/>
+
+        <material_config path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_stock_adapter_thq"/>
+		
+		<!-- adapter -->
+        <cooked_physics path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_stock_adapter_flip"/>
+        <material_config path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_stock_adapter_flip"/>
+        <model path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_stock_adapter_flip"/>
+        <object path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_stock_adapter_flip"/>
+        <unit path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_stock_adapter_flip"/>
+
+        <material_config path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_stock_adapter_flip_thq"/>
+
+    <!-- mag_drum -->
+        <cooked_physics path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_mag_drum"/>
+        <material_config path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_mag_drum"/>
+        <model path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_mag_drum"/>
+        <object path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_mag_drum"/>
+        <unit path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_mag_drum"/>
+
+        <material_config path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_mag_drum_thq"/>
+
+    <!-- mag_straight -->
+        <cooked_physics path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_mag"/>
+        <material_config path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_mag"/>
+        <model path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_mag"/>
+        <object path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_mag"/>
+        <unit path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_mag"/>
+
+        <material_config path="units/mods/weapons/wpn_fps_shot_spas15_pts/wpn_fps_shot_spas15_mag_thq"/>
+
+    <!-- icons -->
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/spas15"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_shot_spas15_s_solid"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_shot_spas15_s_flip"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_shot_spas15_mag_drum"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_shot_spas15_b_short"/>
+		<texture path="guis/spas15"/>
+	</AddFiles>
+	
+	<Sounds directory="assets\soundbank">
+		<sound id="spas15_fire" path="siege_spas15_loud.ogg" prefix="regular"/>
+		<sound id="spas15_fire" path="siege_spas15_supp.ogg" prefix="suppressed_a"/>
+		<sound id="spas15_fire" path="siege_spas15_supp.ogg" prefix="suppressed_b"/>
+		<sound id="spas15_fire" path="siege_spas15_supp.ogg" prefix="suppressed_c"/>
+	</Sounds>
+	
+	<Hooks directory="Hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
+	</Hooks>
+	
+</table>

@@ -1,0 +1,49 @@
+<materials version="3" group="weapon_group">
+    <material name="mtr_receiver" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_third_shot_beck_pts/body_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_third_shot_beck_pts/body_nm"/>
+    </material> 
+	<material name="slug" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/payday2/weapons/wpn_fps_shot_r870_pts/slug_df"/>
+        <bump_normal_texture file="units/payday2/weapons/wpn_fps_shot_r870_pts/slug_nm"/>
+    </material>
+    <material name="mtr_screws" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_third_shot_beck_pts/screws_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_third_shot_beck_pts/screws_nm"/>
+    </material> 
+    <material name="mtr_barrel" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_third_shot_beck_pts/barrel_df"/>
+        <bump_normal_texture file="units/pd2_dlc_wild/weapons/wpn_fps_sho_boot_pts/barrel_nm"/>
+    </material> 
+    <material name="mtr_dots" render_template="generic:DIFFUSE_TEXTURE:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" version="2">
+			<diffuse_texture file="units/mods/weapons/wpn_third_shot_beck_pts/green"/>
+			<self_illumination_texture file="units/mods/weapons/wpn_third_shot_beck_pts/green"/>
+			<variable type="scalar" name="il_bloom" value="6.0070002853172"/>
+        <variable type="scalar" name="il_multiplier" value="reddot"/>
+    </material> 
+    <material name="mtr_fin" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_third_shot_beck_pts/fin_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_third_shot_beck_pts/fin_nm"/>
+    </material> 
+    <material name="mtr_rail" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_third_shot_beck_pts/rail_df"/>
+        <bump_normal_texture file="units/pd2_dlc_dsg/weapons/wpn_fps_sho_basset_pts/wpn_fps_sho_basset_case_standard_nm"/>
+    </material> 
+    <material name="mtr_sight" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_third_shot_beck_pts/sight_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_third_shot_beck_pts/sight_nm"/>
+    </material> 
+    <material name="mtr_extra" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_third_shot_beck_pts/extra_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_third_shot_beck_pts/extra_nm"/>
+    </material> 
+    <material name="mtr_hole" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_third_shot_beck_pts/black_df"/>
+        <bump_normal_texture file="units/pd2_dlc_wild/weapons/wpn_fps_sho_boot_pts/barrel_nm"/>
+    </material> 
+    <material name="mtr_bolt" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_third_shot_beck_pts/body_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_third_shot_beck_pts/body_nm"/>
+    </material> 
+
+</materials>

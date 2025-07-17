@@ -1,0 +1,27 @@
+<dynamic_object>
+    <diesel materials="units/mods/weapons/wpn_fps_pis_g22c_pts/wpn_fps_pis_g22c_m_wick" orientation_object="rp_wpn_fps_pis_g18c_m_17rnd"/>
+    <animations>
+		<animation_group name="reload">
+			<object name="mag_align" enabled="true"/>
+		</animation_group>		
+		<animation_group name="reload_right">
+			<object name="anim_m_reload" enabled="true"/>
+		</animation_group>
+		<animation_group name="reload_left">
+			<object name="anim_m_reload_left" enabled="true"/>
+		</animation_group>
+		<animation_group name="reload_not_empty">
+			<object name="mag_align_2" enabled="true"/>
+        </animation_group>		
+		<animation_group name="reload_not_empty_right">
+			<object name="anim_m_reload_not_empty" enabled="true"/>
+        </animation_group>
+		<animation_group name="reload_not_empty_left">
+			<object name="anim_m_reload_not_empty_left" enabled="true"/>
+        </animation_group>
+    </animations>
+    <graphics>
+        <object enabled="true" name="g_mag_lod0"/>
+        <object enabled="true" name="g_bullet_1" />
+    </graphics>
+</dynamic_object>

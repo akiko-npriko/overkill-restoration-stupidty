@@ -1,0 +1,40 @@
+<ugcitem>
+	<param key="rarity" value="workshop_rare"/>
+	<param key="name" value="Wildfire"/>
+	<param key="screenshot" value="screenshot2.png"/>
+	<param key="type" value="weapon_skin"/>
+	<node name="data">
+		<param key="name_id" value="bm_wskn_rota_wildfire"/>
+		<param key="weapon_id" value="rota"/>
+		<param key="base_gradient_name" value="WarfareGrad3.tga"/>
+		<param key="id" value="kn_rota_wildfire"/>
+		<param key="reserve_quality" value="true"/>
+		<node name="parts">
+			<node name="wpn_fps_sho_rota_body_upper">
+				<node name="68a4ecccb2b975d5">
+					<param key="pattern_name" value="WeirdCamo2.tga"/>
+					<param key="pattern_gradient_name" value="WarfarePatGrad1.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_sho_rota_g_standard">
+				<node name="80c2465ebca1dc89">
+					<param key="pattern_name" value="WeirdCamo2.tga"/>
+					<param key="pattern_gradient_name" value="WarfarePatGrad1.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_sho_rota_fg_standard">
+				<node name="6d2a718408593378">
+					<param key="pattern_name" value="WeirdCamo2.tga"/>
+					<param key="pattern_gradient_name" value="WarfarePatGrad1.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_smg_hajk_vg_moe">
+				<node name="4aef0654d3cffde6">
+					<param key="pattern_name" value="WeirdCamo2.tga"/>
+					<param key="pattern_gradient_name" value="WarfarePatGrad1.tga"/>
+				</node>
+			</node>
+		</node>
+	</node>
+	<param key="timestamp" value="2018116184020"/>
+</ugcitem>

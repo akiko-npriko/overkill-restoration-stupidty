@@ -1,0 +1,10 @@
+<materials version="3" group="weapon_g17">
+	 <material name="frame" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_pis_g17_pts/body_sport_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_pis_g22c_pts/wickframe_nm"/>
+    </material>
+	 <material name="barrel" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/payday2/weapons/wpn_fps_pis_g17_pts/barrel_df"/>
+        <bump_normal_texture file="units/payday2/weapons/wpn_fps_pis_g17_pts/barrel_nm"/>
+    </material>
+</materials>

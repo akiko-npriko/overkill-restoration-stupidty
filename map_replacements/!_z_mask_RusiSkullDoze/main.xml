@@ -1,0 +1,22 @@
+<table name="russkulldoz1">
+
+    <Localization directory="Localization" default="english.txt">
+    </Localization>
+     
+    <GlobalValue id="russkulldoz1" color="Color(1, 0.5, 0)"/>
+     
+    <Mask id="russkulldoz1" unit="units/mods/masks/msk_russkulldoz1/msk_russkulldoz1" texture_bundle_folder="mods" global_value="russkulldoz1" type="helmet" />
+    
+    <AddFiles directory="assets">    
+	<cooked_physics path="units/mods/masks/msk_russkulldoz1/msk_russkulldoz1"/>
+        <model path="units/mods/masks/msk_russkulldoz1/msk_russkulldoz1"/>
+	<object path="units/mods/masks/msk_russkulldoz1/msk_russkulldoz1"/>
+        <unit path="units/mods/masks/msk_russkulldoz1/msk_russkulldoz1"/>
+	<material_config path="units/mods/masks/msk_russkulldoz1/msk_russkulldoz1"/>
+        
+        <texture path="units/mods/masks/msk_russkulldoz1/msk_russkulldoz1_df"/>
+        <texture path="units/mods/masks/msk_russkulldoz1/msk_russkulldoz1_nm"/>
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/masks/russkulldoz1"/>
+        
+    </AddFiles>
+</table>

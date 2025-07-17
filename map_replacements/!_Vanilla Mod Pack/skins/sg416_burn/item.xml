@@ -1,0 +1,56 @@
+<ugcitem>
+	<param key="type" value="weapon_skin"/>
+	<param key="name" value="namegoeshere"/>
+	<node name="data">
+		<param key="id" value="n_sg416_namegoeshere"/>
+		<param key="weapon_id" value="sg416"/>
+		<node name="types">
+			<node name="barrel_ext">
+				<param key="pattern_gradient_name" value="sydney pgrad rip 1.tga"/>
+				<param key="base_gradient_name" value="syd bgrad 4.tga"/>
+				<param key="pattern_name" value="sydney plaid rip alt.tga"/>
+				<param key="pattern_tweak" value="Vector3(1.82686, 0, 1)"/>
+			</node>
+			<node name="foregrip">
+				<param key="pattern_gradient_name" value="sydney pgrad rip 1.tga"/>
+				<param key="base_gradient_name" value="syd bgrad 4.tga"/>
+				<param key="pattern_pos" value="Vector3(-0.0605768, 0, 0)"/>
+				<param key="pattern_name" value="sydney plaid rip alt.tga"/>
+				<param key="pattern_tweak" value="Vector3(2.35154, 0, 1)"/>
+			</node>
+			<node name="stock">
+				<param key="pattern_gradient_name" value="sydney pgrad rip 1.tga"/>
+				<param key="base_gradient_name" value="syd bgrad 4.tga"/>
+				<param key="pattern_name" value="sydney plaid rip alt.tga"/>
+			</node>
+		</node>
+		<param key="base_gradient_name" value="syd bgrad 1.tga"/>
+		<param key="name_id" value="bm_wskn_sg416_namegoeshere"/>
+		<param key="reserve_quality" value="true"/>
+		<node name="parts">
+			<node name="wpn_fps_ass_sg416_fg_rails">
+				<node name="964161b4eb4b81d3">
+					<param key="base_gradient_name" value="syd bgrad 3.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_ass_sg416_lower_reciever">
+				<node name="11f00d59e01de219">
+					<param key="pattern_tweak" value="Vector3(2.49464, 0, 1)"/>
+					<param key="base_gradient_name" value="syd bgrad 4.tga"/>
+					<param key="pattern_name" value="sydney plaid rip alt.tga"/>
+					<param key="pattern_gradient_name" value="sydney pgrad rip 1.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_ass_sg416_fg_custom">
+				<node name="964161b4eb4b81d3">
+					<param key="base_gradient_name" value="syd bgrad 4.tga"/>
+					<param key="pattern_pos" value="Vector3(0, 0.177916, 0)"/>
+					<param key="pattern_gradient_name" value="sydney pgrad rip 1.tga"/>
+					<param key="pattern_name" value="sydney plaid rip alt.tga"/>
+					<param key="pattern_tweak" value="Vector3(10.6034, 0, 1)"/>
+				</node>
+			</node>
+		</node>
+	</node>
+	<param key="timestamp" value="2019314174716"/>
+</ugcitem>

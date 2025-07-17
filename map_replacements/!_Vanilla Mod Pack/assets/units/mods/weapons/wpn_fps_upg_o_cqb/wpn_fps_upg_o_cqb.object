@@ -1,0 +1,16 @@
+<dynamic_object>
+    <diesel materials="units/mods/weapons/wpn_fps_upg_o_cqb/wpn_fps_upg_o_cqb" orientation_object="rp_wpn_fps_upg_o_t1micro" />
+    <graphics>
+	<graphic_group name="character" enabled="true" culling_object="g_rds">
+        <object enabled="true" inherit_bounding_volume="co_culling" name="g_rds" />
+		<object enabled="true" inherit_bounding_volume="co_culling" name="g_riser" />
+		<object enabled="true" inherit_bounding_volume="co_culling" name="g_t1micro" />
+	</graphic_group>
+        <object name="g_reddot" enabled="true" />
+        <object name="g_glass" enabled="true" />
+        <object name="g_t1micro" enabled="true" />
+		<object name="g_rds" enabled="true" />
+		<object name="g_riser" enabled="true" />
+        <object name="g_mullplan" enabled="true" />
+    </graphics>
+</dynamic_object>

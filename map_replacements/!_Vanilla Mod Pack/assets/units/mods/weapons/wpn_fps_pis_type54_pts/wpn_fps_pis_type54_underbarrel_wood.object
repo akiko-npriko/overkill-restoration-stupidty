@@ -1,0 +1,21 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_pis_type54_pts/wpn_fps_pis_type54_underbarrel_wood" orientation_object="rp_wpn_fps_pis_type54_underbarrel" />
+	
+<animations>	
+	<animation_group name="reload_ul">
+		  <object name="anim_tube_reload" enabled="true" />
+		  <object name="anim_shell_reload" enabled="true" />
+	</animation_group>
+
+	<animation_group name="reload_not_empty">
+		  <object name="anim_tube_reload_not_empty" enabled="true" />
+		  <object name="anim_shell_reload_not_empty" enabled="true" />
+	</animation_group>
+</animations>
+
+	<graphics>
+		<object name="g_shotty" enabled="true" />
+		<object name="g_tube" enabled="true" />
+		<object name="g_shell" enabled="true" />
+	</graphics>
+</dynamic_object>

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee_start"/>
+			<anim name="melee_start" weight="melee_knife"/>
+		</search>
+		<target mode="append">
+			<anim name="melee_bidetpetition_start" weight="melee_bidetpetition"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee_charge"/>
+			<anim name="melee_charge" weight="melee_knife * (1-charge_lerp)"/>
+		</search>
+		<target mode="append">
+			<anim name="melee_bidetpetition_charge" weight="melee_bidetpetition * (1-charge_lerp)"/>
+			<anim name="melee_bidetpetition_charge_var2" weight="melee_bidetpetition * charge_lerp"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee_charge"/>
+			<keys/>
+			<key at="enter" callback="play_melee_sound" class_name="base" param1="charge"/>
+		</search>
+		<target mode="append">
+			<key at="trigger" trigger="wp_bidetpetition_signthispetition" callback="play_sound" class_name="base" param1="bidetpetition_signthispetition"/>
+			<key at="trigger" trigger="wp_bidetpetition_signthisdamnpetition" callback="play_sound" class_name="base" param1="bidetpetition_signthisdamnpetition"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee_attack"/>
+			<param name="hit" value="0"/>
+		</search>
+		<target mode="append">
+			<anim name="melee_bidetpetition_attack_var1" weight="melee_bidetpetition * var1"/>
+			<anim name="melee_bidetpetition_attack_var2" weight="melee_bidetpetition * var2"/>
+			<anim name="melee_bidetpetition_attack_var3" weight="melee_bidetpetition * var3"/>
+			<anim name="melee_bidetpetition_attack_var4" weight="melee_bidetpetition * var4"/>
+		</target>
+	</tweak>
+</tweaks>

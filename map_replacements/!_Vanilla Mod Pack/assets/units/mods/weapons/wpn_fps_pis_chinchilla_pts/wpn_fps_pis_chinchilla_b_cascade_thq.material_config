@@ -1,0 +1,16 @@
+<materials version="3" group="weapon_chinchilla">
+	<material name="barrel" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_pis_chinchilla_pts/cascade_barrel_df" />
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_pis_chinchilla_pts/cascade_barrel_nm" />
+		<reflection_texture type="cubemap" global_texture="current_global_texture"/>
+	</material>
+	<material name="sight" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_pis_chinchilla_pts/cascade_backsight_df" />
+		<bump_normal_texture file="units/pd2_dlc_max/weapons/wpn_fps_pis_chinchilla_pts/chinchilla_backsight_nm" />
+	</material>
+	<material name="post" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_pis_chinchilla_pts/post_df" />
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_pis_chinchilla_pts/post_nm" />
+		<reflection_texture type="cubemap" global_texture="current_global_texture"/>
+	</material>
+</materials>
