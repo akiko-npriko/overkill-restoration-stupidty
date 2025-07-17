@@ -1018,6 +1018,54 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "scar16paintf_sc", function(self)
 			}
 		}
 
+		--Stocks
+		self.wpn_fps_ass_scar16.override.wpn_fps_ass_scar_s_sniper = {
+			stats = deep_clone(stocks.fixed_acc_stats),
+			custom_stats = {}
+		}
+		self.wpn_fps_ass_scar16.override.wpn_fps_upg_m4_s_standard = {
+			stats = deep_clone(stocks.fixed_to_adj_dual_stats),
+			custom_stats = deep_clone(stocks.fixed_to_adj_dual_stats)
+		}
+		self.wpn_fps_ass_scar16.override.wpn_fps_upg_m4_s_pts = {
+			stats = deep_clone(stocks.fixed_to_adj_acc_stats),
+			custom_stats = deep_clone(stocks.fixed_to_adj_acc_stats)
+		}
+		self.wpn_fps_ass_scar16.override.wpn_fps_sho_sko12_stock = {
+			stats = deep_clone(stocks.fixed_to_adj_acc_stats),
+			custom_stats = deep_clone(stocks.fixed_to_adj_acc_stats)
+		}
+		self.wpn_fps_ass_scar16.override.wpn_fps_upg_m4_s_crane = {
+			stats = deep_clone(stocks.fixed_to_adj_rec_stats),
+			custom_stats = deep_clone(stocks.fixed_to_adj_rec_stats)
+		}
+		self.wpn_fps_ass_scar16.override.wpn_fps_upg_m4_s_mk46 = {
+			stats = deep_clone(stocks.fixed_to_adj_rec_stats),
+			custom_stats = deep_clone(stocks.fixed_to_adj_rec_stats)
+		}
+		self.wpn_fps_ass_scar16.override.wpn_fps_upg_m4_s_ubr = {
+			stats = deep_clone(stocks.fixed_to_hvy_acc_stats),
+			custom_stats = deep_clone(stocks.fixed_to_hvy_acc_stats)
+		}
+		self.wpn_fps_ass_scar16.override.wpn_fps_snp_tti_s_vltor = {
+			stats = deep_clone(stocks.fixed_to_hvy_rec_stats),
+			custom_stats = deep_clone(stocks.fixed_to_hvy_rec_stats)
+		}
+		self.wpn_fps_ass_scar16.override.wpn_fps_upg_m4_s_mag = {
+			stats = {
+				value = 0,
+				reload = 3,
+				spread = -2,
+				recoil = -2,
+				concealment = 1
+			},
+			custom_stats = deep_clone(stocks.fixed_to_adj_dual_stats)
+		}
+		self.wpn_fps_ass_scar16.override.wpn_fps_upg_m4_s_magless = {
+			stats = deep_clone(stocks.fixed_to_adj_dual_stats),
+			custom_stats = deep_clone(stocks.fixed_to_adj_dual_stats)
+		}
+
 		self.wpn_fps_ass_scar16_npc.uses_parts = deep_clone(self.wpn_fps_ass_scar16.uses_parts)
 		
 	end

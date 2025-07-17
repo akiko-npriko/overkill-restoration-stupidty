@@ -1,11 +1,11 @@
 <mod name="SCAR-16" author="Tangerine Paint" min_lib_ver="3.38">
-	<AssetUpdates id="52744" version="1" provider="modworkshop"/>
+	<AssetUpdates id="52744" version="1.1" provider="modworkshop"/>
 	<Localization directory="loc" default="english.json"/>
 	<GlobalValue id="scar16_paint" color="Color(0.6, 0.7, 0.4)"/>
 
 	
 	<WeaponMod id="wpn_fps_ass_scar16_body_standard" based_on="wpn_fps_ass_scar_body_standard" global_value="scar16_paint" type="upper_reciever" unit="units/mods/weapons/wpn_fps_ass_scar16_pts/wpn_fps_ass_scar16_body_standard" third_unit="units/mods/weapons/wpn_third_ass_scar16_pts/wpn_third_ass_scar16_body_standard" drop="false" texture_bundle_folder="mods" is_a_unlockable="false">
-		<animations fire="" fire_steelsight="" reload=""/>
+		<animations reload=""/>
 		<forbids>
 			<value_node value="wpn_fps_addon_ris"/>			
 		</forbids>
@@ -77,7 +77,7 @@
 	</WeaponMod>
 
 	<WeaponMod id="wpn_fps_ass_scar16_body_tan" based_on="wpn_fps_ass_scar_body_standard" global_value="scar16_paint" type="upper_reciever" unit="units/mods/weapons/wpn_fps_ass_scar16_pts/wpn_fps_ass_scar16_body_tan" third_unit="units/mods/weapons/wpn_third_ass_scar16_pts/wpn_third_ass_scar16_body_tan" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
-		<animations fire="" fire_steelsight="" reload=""/>
+		<animations reload=""/>
 		<stats concealment="-1" spread="1"/>
 		<adds>
 			<value_node value="wpn_fps_upg_vg_ass_smg_afg"/>			
@@ -99,7 +99,7 @@
 <!-- The Weapon itself -->	
 
 	<Weapon unlock_level="16">
-		<weapon id="scar16" based_on="scar" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="4" muzzleflash="effects/payday2/particles/weapons/762_auto_fps" muzzleflash_silenced="effects/payday2/particles/weapons/9mm_auto_silence_fps" shell_ejection="effects/payday2/particles/weapons/shells/shell_556" texture_bundle_folder="mods" tactical_reload="1" has_description="true" desc_id="bm_scar16_desc" global_value="scar16_paint">
+		<weapon id="scar16" based_on="scar" weapon_hold="scar16" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="4" muzzleflash="effects/payday2/particles/weapons/762_auto_fps" muzzleflash_silenced="effects/payday2/particles/weapons/9mm_auto_silence_fps" shell_ejection="effects/payday2/particles/weapons/shells/shell_556" texture_bundle_folder="mods" tactical_reload="1" has_description="true" desc_id="bm_scar16_desc" global_value="scar16_paint">
 			<stats damage="85" spread="15" spread_moving="14" recoil="14" concealment="16"/>
 			<AMMO_PICKUP>
 				<value_node value="2.7"/>
@@ -147,6 +147,7 @@
 				<value_node value="wpn_fps_snp_victor_g_mod3"/>
 				<value_node value="wpn_fps_m4_uupg_g_billet"/>
 
+				<value_node value="wpn_fps_upg_m4_s_standard"/>
 				<value_node value="wpn_fps_upg_m4_s_pts"/>
 				<value_node value="wpn_fps_upg_m4_s_crane"/>
 				<value_node value="wpn_fps_upg_m4_s_mk46"/>
