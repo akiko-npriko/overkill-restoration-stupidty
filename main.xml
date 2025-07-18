@@ -719,6 +719,9 @@
 	<Package id="packages/custom_fonts" file="fonts.xml" use_clbk="self:LoadFonts"/>
 	<Package id="packages/addhudmisc" file="addhudmisc.xml"/>
 	<Package id="packages/envcore" file="environments.xml"/>
+	
+	<!--///AKIKO PACKAGE\\\-->
+	<Package id="packages/akiko_misc" file="packages/akiko_package/addmisc.xml" use_clbk="self:DebugLoadAssets"/>
 
     <!-- ///DIFF PACKAGES AMERICA\\\ -->
     <Package id="packages/normal_sc_america" file="packages/america_diff/normal_sc_america.xml"/>
