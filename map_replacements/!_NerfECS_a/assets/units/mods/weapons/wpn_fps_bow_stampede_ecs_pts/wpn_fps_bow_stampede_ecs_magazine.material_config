@@ -1,0 +1,16 @@
+<materials version="3" group="weapon_group">
+	<material name="mtr_nerf_regulator" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_bow_stampede_ecs_pts/textures/nerf_regulator_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_bow_stampede_ecs_pts/textures/nerf_regulator_nm"/>
+        <material_texture	 file="units/mods/weapons/wpn_fps_bow_stampede_ecs_pts/textures/nerf_regulator_gsma"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_bow_stampede_ecs_pts/textures/weapon_metal_cubemap"/>
+    </material>	
+
+	<material name="mtr_nerf_jolt" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_bow_stampede_ecs_pts/textures/nerf_jolt_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_bow_stampede_ecs_pts/textures/nerf_jolt_nm"/>
+        <material_texture	 file="units/mods/weapons/wpn_fps_bow_stampede_ecs_pts/textures/nerf_jolt_gsma"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_bow_stampede_ecs_pts/textures/weapon_metal_cubemap"/>
+    </material>			
+
+</materials>

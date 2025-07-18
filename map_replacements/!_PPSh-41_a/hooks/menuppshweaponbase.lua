@@ -1,0 +1,1 @@
+PPShWeaponBase = PPShWeaponBase or class(NewRaycastWeaponBase)

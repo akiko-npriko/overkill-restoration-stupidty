@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+		<target mode="attach">
+			<anim name="k50m_reload" 			file="anims/fps/k50m/k50m_reload" blend_set="all"/>
+			<anim name="k50m_reload_not_empty"	file="anims/fps/k50m/k50m_reload_not_empty" blend_set="all"/>
+			<anim name="k50m_idle" 				file="anims/fps/k50m/k50m_idle" blend_set="all"/>
+			<anim name="k50m_recoil"			file="anims/fps/k50m/k50m_recoil" blend_set="all"/>
+			<anim name="k50m_recoil_enter"		file="anims/fps/k50m/k50m_recoil_enter" blend_set="all"/>
+			<anim name="k50m_recoil_loop"		file="anims/fps/k50m/k50m_recoil_loop" blend_set="all"/>
+			<anim name="k50m_recoil_exit"		file="anims/fps/k50m/k50m_recoil_exit" blend_set="all"/>
+			<anim name="k50m_recoil_steelsight"	file="anims/fps/k50m/k50m_recoil_exit" blend_set="all"/>
+			<anim name="k50m_equip"				file="anims/fps/k50m/k50m_equip" blend_set="all"/>
+			<anim name="k50m_unequip"			file="anims/fps/k50m/k50m_unequip" blend_set="all"/>
+			<anim name="k50m_melee"				file="anims/fps/k50m/k50m_melee" blend_set="all"/>
+			<anim name="k50m_melee_miss"		file="anims/fps/k50m/k50m_melee" blend_set="all"/>
+			<anim name="k50m_use"				file="anims/fps/k50m/k50m_use" blend_set="all"/>
+			<anim name="k50m_sprint_enter"		file="anims/fps/k50m/k50m_sprint_enter" blend_set="all"/>
+			<anim name="k50m_sprint"			file="anims/fps/k50m/k50m_sprint" blend_set="all"/>
+			<anim name="k50m_sprint_exit"		file="anims/fps/k50m/k50m_sprint_exit" blend_set="all"/>
+			<anim name="k50m_com_down_var1"		file="anims/fps/k50m/k50m_com_down_var1" blend_set="all"/>
+			<anim name="k50m_com_stop"			file="anims/fps/k50m/k50m_com_stop" blend_set="all"/>
+			<anim name="k50m_com_come"			file="anims/fps/k50m/k50m_com_come" blend_set="all"/>
+			<anim name="k50m_com_point"			file="anims/fps/k50m/k50m_com_point" blend_set="all"/>
+			<anim name="k50m_get_up"			file="anims/fps/k50m/k50m_get_up" blend_set="all"/>
+			<anim name="k50m_gogo"				file="anims/fps/k50m/k50m_gogo" blend_set="all"/>
+			<anim name="k50m_tased"				file="anims/fps/k50m/k50m_tased" blend_set="all"/>
+			<anim name="k50m_tased_boost"		file="anims/fps/k50m/k50m_tased_boost" blend_set="all"/>
+			<anim name="k50m_tased_exit"		file="anims/fps/k50m/k50m_tased_exit" blend_set="all"/>
+			<anim name="k50m_inspect"			file="anims/fps/k50m/k50m_inspect" blend_set="all"/>
+			<anim name="ppsh_reload"			file="anims/fps/ppsh/ppsh_reload" blend_set="all"/>
+			<anim name="ppsh_reload_not_empty"	file="anims/fps/ppsh/ppsh_reload_not_empty" blend_set="all"/>
+			<anim name="ppsh_idle"				file="anims/fps/ppsh/ppsh_idle" blend_set="all"/>
+			<anim name="ppsh_recoil"			file="anims/fps/ppsh/ppsh_recoil" blend_set="all"/>
+			<anim name="ppsh_recoil_enter"		file="anims/fps/ppsh/ppsh_recoil_enter" blend_set="all"/>
+			<anim name="ppsh_recoil_loop"		file="anims/fps/ppsh/ppsh_recoil_loop" blend_set="all"/>
+			<anim name="ppsh_recoil_exit"		file="anims/fps/ppsh/ppsh_recoil_exit" blend_set="all"/>
+			<anim name="ppsh_recoil_steelsight"	file="anims/fps/ppsh/ppsh_recoil_exit" blend_set="all"/>
+			<anim name="ppsh_equip"				file="anims/fps/ppsh/ppsh_equip" blend_set="all"/>
+			<anim name="ppsh_unequip"			file="anims/fps/ppsh/ppsh_unequip" blend_set="all"/>
+			<anim name="ppsh_melee"				file="anims/fps/ppsh/ppsh_melee" blend_set="all"/>
+			<anim name="ppsh_melee_miss"		file="anims/fps/ppsh/ppsh_melee" blend_set="all"/>
+			<anim name="ppsh_use"				file="anims/fps/ppsh/ppsh_use" blend_set="all"/>
+			<anim name="ppsh_sprint_enter"		file="anims/fps/ppsh/ppsh_sprint_enter" blend_set="all"/>
+			<anim name="ppsh_sprint"			file="anims/fps/ppsh/ppsh_sprint" blend_set="all"/>
+			<anim name="ppsh_sprint_exit"		file="anims/fps/ppsh/ppsh_sprint_exit" blend_set="all"/>
+			<anim name="ppsh_com_down_var1"		file="anims/fps/ppsh/ppsh_com_down_var1" blend_set="all"/>
+			<anim name="ppsh_com_stop"			file="anims/fps/ppsh/ppsh_com_stop" blend_set="all"/>
+			<anim name="ppsh_com_come"			file="anims/fps/ppsh/ppsh_com_come" blend_set="all"/>
+			<anim name="ppsh_com_point"			file="anims/fps/ppsh/ppsh_com_point" blend_set="all"/>
+			<anim name="ppsh_get_up"			file="anims/fps/ppsh/ppsh_get_up" blend_set="all"/>
+			<anim name="ppsh_gogo"				file="anims/fps/ppsh/ppsh_gogo" blend_set="all"/>
+			<anim name="ppsh_tased"				file="anims/fps/ppsh/ppsh_tased" blend_set="all"/>
+			<anim name="ppsh_tased_boost"		file="anims/fps/ppsh/ppsh_tased_boost" blend_set="all"/>
+			<anim name="ppsh_tased_exit"		file="anims/fps/ppsh/ppsh_tased_exit" blend_set="all"/>
+			<anim name="ppsh_inspect"			file="anims/fps/ppsh/ppsh_inspect" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

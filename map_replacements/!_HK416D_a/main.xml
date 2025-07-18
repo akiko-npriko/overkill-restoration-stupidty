@@ -1,0 +1,1069 @@
+	<mod name="HK416D" author="RJC9000 and Masavik" min_lib_ver="3.38">
+	<AssetUpdates id="42046" version="0.99" provider="modworkshop"/>
+	<Localization directory="loc" default="english.txt">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	<GlobalValue id="m416d_mod" color="Color(0.16, 0.90, 0.55)"/>
+	<GlobalValue id="m416d_gfl_mod" color="Color(0.9, 0.09, 0.08)"/>
+	<GlobalValue id="m416d_delta_farce_mod" color="Color(0.16, 0.90, 0.55)"/>
+
+
+<!--Universal Parts -->
+	<WeaponMod id="wpn_fps_ass_m416d_bolt" based_on="wpn_fps_amcar_bolt_standard" type="bolt"  unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_bolt" hidden="true" global_value="m416d_mod" ver="2">
+	</WeaponMod> 
+	<WeaponMod id="wpn_fps_ass_m416d_stock_adapter" based_on="wpn_fps_upg_m4_s_adapter"  type="stock_adapter" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_stock_adapter" hidden="true" global_value="m416d_mod"  ver="2">
+		<texture_variants>
+		   <m416d_fde name_id="bm_w_paint_m416d_fde" desc_id="bm_w_paint_m416d_fde_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_stock_adapter_fde"/>
+		</texture_variants>
+	</WeaponMod>
+	
+<!--Barrel -->
+	<WeaponMod id="wpn_fps_ass_m416d_barrel_9" based_on="wpn_fps_m4_uupg_b_short" type="barrel" unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_fps_ass_tecci_b_standard" hidden="false" has_description="true" global_value="m416d_mod" ver="2">
+		<forbids>
+			<value_node value="wpn_fps_ass_m416d_handguard_geissele_14"/>
+			<value_node value="wpn_fps_ass_m416d_handguard_iar"/>
+		</forbids>
+		<override>
+			<wpn_fps_ass_m416d_handguard	unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_fps_ass_tecci_fg_standard"  />
+		</override> 
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_m416d_barrel_10" based_on="wpn_fps_m4_uupg_b_short" type="barrel" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_barrel_10" hidden="true" has_description="true" global_value="m416d_mod" ver="2">
+		<forbids>
+			<value_node value="wpn_fps_ass_m416d_handguard_geissele_14"/>
+			<value_node value="wpn_fps_ass_m416d_handguard_iar"/>
+		</forbids>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_m416d_barrel_14" based_on="wpn_fps_m4_uupg_b_medium_vanilla" type="barrel" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_barrel_14" hidden="false" has_description="true" global_value="m416d_mod" ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_m416d_barrel_16" based_on="wpn_fps_m4_uupg_b_long" type="barrel" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_barrel_16" hidden="false" has_description="true" global_value="m416d_mod" ver="2">
+	</WeaponMod>
+
+<!--Charging Handle -->
+	<WeaponMod id="wpn_fps_ass_m416d_charging_handle" based_on="wpn_fps_m4_uupg_draghandle" type="drag_handle"  unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_charging_handle" hidden="true" global_value="m416d_mod" ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_m416d_charging_handle_ach" based_on="wpn_fps_m4_uupg_draghandle" type="drag_handle"  unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_charging_handle_ach" hidden="false" global_value="m416d_mod" ver="2">
+	</WeaponMod>
+
+<!--Gadgets -->
+	<WeaponMod id="wpn_fps_ass_m416d_gadget_mod0" based_on="wpn_fps_upg_fl_ass_utg" type="gadget" parent="foregrip"  a_obj="a_fl" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_gadget_mod0" drop="false" inherit_adds="true" inherit_overrides="true" is_a_unlockable="true" global_value="m416d_gfl_mod" ver="2">
+			<stats spread="1" recoil="-1" concealment="0"/>
+		<forbids>
+			<value_node value="wpn_fps_ass_m416d_gadget_leftrail"/>
+			<value_node value="wpn_fps_ass_m416d_gadget_toprail"/>
+			<value_node value="wpn_fps_ass_m416d_rail_cover_ladder_left"/>
+			<value_node value="wpn_fps_smg_schakal_vg_surefire"/>
+		</forbids>
+	</WeaponMod>	
+	<WeaponMod id="wpn_fps_ass_m416d_gadget_mod3" based_on="wpn_fps_upg_fl_ass_utg" type="gadget" parent="foregrip"  a_obj="a_fl_mod3" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_gadget_mod3" drop="false" inherit_adds="true" inherit_overrides="true" is_a_unlockable="true" global_value="m416d_gfl_mod" ver="2">
+			<stats spread="1" recoil="-1" concealment="0"/>
+		<adds>
+			<value_node value="wpn_fps_ass_m416d_mlok_mod3_geissele"/>
+		</adds>
+		<forbids>
+			<value_node value="wpn_fps_upg_gadget_heartsensor"/>
+			<value_node value="wpn_fps_ass_m416d_gadget_leftrail"/>
+			<value_node value="wpn_fps_ass_m416d_gadget_toprail"/>
+			<value_node value="wpn_fps_ass_m416d_rail_cover_ladder_left"/>
+			<value_node value="wpn_fps_smg_schakal_vg_surefire"/>
+		</forbids>
+		<override>
+			<wpn_fps_ass_m416d_mlok_geissele Parent="foregrip" a_obj="a_fl_mod3"/>
+		</override>
+	</WeaponMod>	
+	<WeaponMod id="wpn_fps_ass_m416d_sling_mount_magpul" based_on="wpn_fps_addon_ris" type="sling_mount" a_obj="a_body" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_sling_mount_magpul" hidden="false" has_description="true" global_value="m416d_gfl_mod" ver="2">	
+		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+
+<!--Gadget Placement -->
+	<WeaponMod id="wpn_fps_ass_m416d_gadget_leftrail" based_on="wpn_fps_shot_r870_ris_special" type="gadget_placement" depends_on="gadget" has_description="true" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" ver="2">
+		<override>
+			<wpn_fps_addon_ris unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="foregrip" a_obj="a_fl_left"/>
+			<wpn_fps_upg_fl_ass_smg_sho_surefire parent="foregrip" a_obj="a_fl_left"/>
+			<wpn_fps_upg_fl_ass_peq15 parent="foregrip" a_obj="a_fl_left"/>
+			<wpn_fps_upg_fl_ass_laser parent="foregrip" a_obj="a_fl_left"/>
+			<wpn_fps_upg_fl_ass_utg parent="foregrip" a_obj="a_fl_left"/>
+			<wpn_fps_upg_fl_dbal_laser parent="foregrip" a_obj="a_fl_left"/>
+			<wpn_fps_ass_m416d_mlok_geissele parent="foregrip" a_obj="a_fl_left"/>
+		</override>
+		<forbids>
+			<value_node value="wpn_fps_upg_gadget_heartsensor"/>
+		</forbids>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_m416d_gadget_toprail" based_on="wpn_fps_shot_r870_ris_special" type="gadget_placement" depends_on="gadget" has_description="true" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" ver="2">
+		<override>
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="foregrip" a_obj="a_fl_top"/>
+			<wpn_fps_upg_fl_ass_smg_sho_surefire  parent="foregrip" a_obj="a_fl_top"/>
+			<wpn_fps_upg_fl_ass_peq15 parent="foregrip" a_obj="a_fl_top"/>
+			<wpn_fps_upg_fl_ass_laser parent="foregrip" a_obj="a_fl_top"/>
+			<wpn_fps_upg_fl_ass_utg parent="foregrip" a_obj="a_fl_top"/>
+			<wpn_fps_upg_fl_dbal_laser parent="foregrip" a_obj="a_fl_top"/>
+			<wpn_fps_addon_ris unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+			<wpn_fps_ass_m416d_mlok_geissele unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+		</override>
+		<forbids>
+			<value_node value="wpn_fps_upg_gadget_heartsensor"/>
+		</forbids>
+	</WeaponMod>
+
+<!--Handguard "MLOK" Panels-->
+	<WeaponMod id="wpn_fps_ass_m416d_mlok_geissele" based_on="wpn_fps_addon_ris" type="mlok" parent="foregrip" a_obj="a_fl" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_mlok_geissele" hidden="true" inherit_overrides="false" global_value="m416d_mod" ver="2">
+		<texture_variants>
+		   <m416d_black name_id="bm_w_paint_m416d_black" desc_id="bm_w_paint_m416d_black_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_mlok_geissele_black"/>
+		</texture_variants>	
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_m416d_mlok_mod3_geissele" based_on="wpn_fps_addon_ris" type="mlok" parent="foregrip" a_obj="a_fl_left_mod3" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_mlok_geissele" hidden="true" inherit_overrides="false" global_value="m416d_mod" ver="2">
+		<texture_variants>
+		   <m416d_black name_id="bm_w_paint_m416d_black" desc_id="bm_w_paint_m416d_black_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_mlok_geissele_black"/>
+		</texture_variants>	
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_m416d_mlok_vg_geissele" based_on="wpn_fps_addon_ris" type="mlok_vg" parent="foregrip" a_obj="a_mlok_bottom" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_mlok_vg_geissele" hidden="true" inherit_overrides="false" global_value="m416d_mod" ver="2">
+		<texture_variants>
+		   <m416d_black name_id="bm_w_paint_m416d_black" desc_id="bm_w_paint_m416d_black_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_mlok_geissele_black"/>
+		</texture_variants>	
+	</WeaponMod>
+
+<!--Handguard -->
+	<WeaponMod id="wpn_fps_ass_m416d_handguard" based_on="wpn_fps_m16_fg_railed" type="foregrip" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_handguard" hidden="false" has_description="true" global_value="m416d_mod" ver="2">	
+		<stats damage="0" spread="1" recoil="0" concealment="-1"/>
+		<forbids>
+				<value_node value="wpn_fps_ass_m416d_gadget_mod3"/>
+		</forbids>
+		<override>
+			<wpn_fps_addon_ris 			    	  unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+			<wpn_fps_ass_m416d_mlok_geissele   	  unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+			<wpn_fps_ass_m416d_mlok_vg_geissele   unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+		</override> 
+		<texture_variants>
+		   <m416d_fde name_id="bm_w_paint_m416d_fde" desc_id="bm_w_paint_m416d_fde_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_handguard_fde"/>
+		</texture_variants>		
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_m416d_handguard_iar" based_on="wpn_fps_m16_fg_railed" type="foregrip" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_handguard_iar" hidden="false" has_description="true" global_value="m416d_mod" ver="2">	
+		<stats damage="0" spread="2" recoil="1" concealment="-4"/>
+		<forbids>
+				<value_node value="wpn_fps_ass_m416d_gadget_mod3"/>
+		</forbids>
+		<override>
+			<wpn_fps_addon_ris 			    	  unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+			<wpn_fps_ass_m416d_barrel_10   		  unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_barrel_14" />
+			<wpn_fps_ass_m416d_barrel_16   		  unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_barrel_16_iar" />
+			<wpn_fps_ass_m416d_mlok_geissele   	  unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+			<wpn_fps_ass_m416d_mlok_vg_geissele   unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+		</override> 
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_m416d_handguard_geissele_10" based_on="wpn_fps_upg_fg_jp" type="foregrip" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_handguard_geissele_10" hidden="true" has_description="true" global_value="m416d_mod" ver="2">	
+		<stats damage="0" spread="0" recoil="-1" concealment="1"/>
+		<forbids>
+			<value_node value="wpn_fps_ass_m416d_rail_cover_ladder_left"/>
+			<value_node value="wpn_fps_ass_m416d_rail_cover_ladder_right"/>
+			<value_node value="wpn_fps_ass_m416d_gadget_mod0"/>
+		</forbids>
+		<override>
+			<wpn_fps_m4_uupg_fg_rail_ext 	unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+			<wpn_fps_addon_ris 			    unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+		</override> 
+		<texture_variants>
+		   <m416d_black name_id="bm_w_paint_m416d_black" desc_id="bm_w_paint_m416d_black_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_handguard_geissele_10_black"/>
+		</texture_variants>	
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_m416d_handguard_geissele_14" based_on="wpn_fps_upg_fg_jp" type="foregrip" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_handguard_geissele_14" hidden="false" has_description="true" global_value="m416d_mod" ver="2">	
+		<stats damage="0" spread="1" recoil="2" concealment="-4"/>
+		<forbids>
+			<value_node value="wpn_fps_ass_m416d_gadget_mod0"/>
+			<value_node value="wpn_fps_ass_m416d_gadget_mod3"/>
+			<value_node value="wpn_fps_ass_m416d_rail_cover_ladder_left"/>
+			<value_node value="wpn_fps_ass_m416d_rail_cover_ladder_right"/>
+		</forbids>
+		<override>
+			<wpn_fps_m4_uupg_fg_rail_ext 	unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+			<wpn_fps_addon_ris 			    unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+			<wpn_fps_ass_m416d_mlok_mod3_geissele 	parent="foregrip"	    a_obj="a_fl_left" />
+			<wpn_fps_ass_m416d_gadget_mod3 			parent="foregrip"	    a_obj="a_fl" />
+		</override> 
+		<texture_variants>
+		   <m416d_black name_id="bm_w_paint_m416d_black" desc_id="bm_w_paint_m416d_black_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_handguard_geissele_14_black"/>
+		</texture_variants>	
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_m416d_handguard_mrs" based_on="wpn_fps_m16_fg_railed" type="foregrip" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_handguard_mrs" hidden="false" has_description="true" global_value="m416d_mod" ver="2">	
+		<stats damage="0" spread="1" recoil="2" concealment="-4"/>
+		<forbids>
+			<value_node value="wpn_fps_ass_m416d_rail_cover_ladder_left"/>
+			<value_node value="wpn_fps_ass_m416d_gadget_mod0"/>
+			<value_node value="wpn_fps_ass_m416d_gadget_mod3"/>		
+			<value_node value="wpn_fps_ass_m416d_rail_cover_ladder_right"/>
+		</forbids>
+		<override>
+			<wpn_fps_m4_uupg_fg_rail_ext 	unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+			<wpn_fps_addon_ris 			    unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+		</override> 
+	</WeaponMod>	
+	<WeaponMod id="wpn_fps_ass_m416d_handguard_g95k" based_on="wpn_fps_m16_fg_railed" type="foregrip" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_handguard_g95k" hidden="false" has_description="true" global_value="m416d_delta_farce_mod" ver="2">	
+		<stats damage="0" spread="0" recoil="-1" concealment="1"/>
+		<forbids>
+			<value_node value="wpn_fps_ass_m416d_rail_cover_ladder_left"/>
+			<value_node value="wpn_fps_ass_m416d_rail_cover_ladder_right"/>
+			<value_node value="wpn_fps_ass_m416d_gadget_toprail"/>
+			<value_node value="wpn_fps_ass_m416d_gadget_leftrail"/>
+			<value_node value="wpn_fps_ass_m416d_gadget_mod0"/>
+			<value_node value="wpn_fps_ass_m416d_gadget_mod3"/>
+		</forbids>
+		<override>
+			<wpn_fps_addon_ris 			    	  unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+			<wpn_fps_ass_m416d_mlok_geissele   	  unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+			<wpn_fps_ass_m416d_mlok_vg_geissele   unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+		</override> 
+	</WeaponMod>
+	
+<!--Iron Sights -->	
+	<WeaponMod id="wpn_fps_ass_m416d_irons_front" based_on="wpn_fps_m4_uupg_o_flipup" type="front_post" parent="foregrip" a_obj="a_of"  unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_irons_front" hidden="true" global_value="m416d_mod" ver="2">
+	</WeaponMod> 
+	<WeaponMod id="wpn_fps_ass_m416d_irons_rear" based_on="wpn_fps_m4_uupg_o_flipup"  type="sight" a_obj="a_or" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_irons_rear" hidden="true" global_value="m416d_mod" ver="2">
+		<stance_mod>
+				<wpn_fps_ass_m416d translation="0 -2 -0.1" /> 
+		</stance_mod>
+		<adds>
+		     <value_node value="wpn_fps_ass_m416d_irons_front"/>
+		</adds> 
+		<forbids>
+			<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+			<value_node value="wpn_fps_upg_o_sig"/>
+			<value_node value="wpn_fps_ass_m416d_irons_rear_folded"/>
+			<value_node value="wpn_fps_ass_m416d_irons_rear_siege_folded"/>
+			<value_node value="wpn_fps_ass_m416d_gadget_mod3"/>
+		</forbids>
+	</WeaponMod> 
+	<WeaponMod id="wpn_fps_ass_m416d_irons_front_folded" based_on="wpn_fps_m4_uupg_o_flipup" type="front_post" parent="foregrip" a_obj="a_of" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_irons_front_folded" hidden="true" global_value="m416d_mod" ver="2">
+	</WeaponMod> 
+	<WeaponMod id="wpn_fps_ass_m416d_irons_rear_folded" based_on="wpn_fps_m4_uupg_o_flipup" type="folded_irons" a_obj="a_or" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_irons_rear_folded" hidden="false" global_value="m416d_mod" ver="2">
+		<adds>
+		     <value_node value="wpn_fps_ass_m416d_irons_front_folded"/>
+		</adds> 
+		<forbids>
+			<value_node value="wpn_fps_ass_m416d_gadget_mod3"/>
+			<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+			<value_node value="wpn_fps_upg_o_sig"/>
+		</forbids>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_m416d_irons_front_siege" based_on="wpn_fps_m4_uupg_o_flipup" type="front_post" parent="foregrip" a_obj="a_of"  unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_irons_front_siege" hidden="true" global_value="m416d_mod" ver="2">
+	</WeaponMod> 
+	<WeaponMod id="wpn_fps_ass_m416d_irons_rear_siege" based_on="wpn_fps_m4_uupg_o_flipup"  type="sight" a_obj="a_or" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_irons_rear_siege" hidden="false" global_value="m416d_mod" ver="2">
+		<stance_mod>
+				<wpn_fps_ass_m416d rotation="-0.000872665 0 -0 -1" translation="0 -3 0.3" /> 
+		</stance_mod>
+		<adds>
+		     <value_node value="wpn_fps_ass_m416d_irons_front_siege"/>
+		</adds> 
+		<forbids>
+			<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+			<value_node value="wpn_fps_upg_o_sig"/>
+			<value_node value="wpn_fps_ass_m416d_gadget_mod3"/>
+		</forbids>
+	</WeaponMod> 
+	<WeaponMod id="wpn_fps_ass_m416d_irons_rear_siege_folded" based_on="wpn_fps_m4_uupg_o_flipup" type="folded_irons" a_obj="a_or" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_irons_rear_siege" hidden="false" global_value="m416d_mod" ver="2">
+		<adds>
+		     <value_node value="wpn_fps_ass_m416d_irons_front_siege"/>
+		</adds> 
+		<forbids>
+			<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+			<value_node value="wpn_fps_upg_o_sig"/>
+			<value_node value="wpn_fps_ass_m416d_gadget_mod3"/>
+		</forbids>
+	</WeaponMod>
+
+
+<!--Magazine -->
+	<WeaponMod id="wpn_fps_ass_m416d_magazine" based_on="wpn_fps_m4_uupg_m_std_vanilla" type="magazine" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_magazine" hidden="true" has_description="true" global_value="m416d_mod" ver="2">
+			<stats spread="0" recoil="0" concealment="0" reload="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_m416d_magazine_pmag" based_on="wpn_fps_m4_uupg_m_std_vanilla" type="magazine" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_magazine_pmag" hidden="false" has_description="true" global_value="m416d_mod" ver="2">
+			<stats spread="0" recoil="0" concealment="0" reload="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_m416d_magazine_usgi" based_on="wpn_fps_m4_uupg_m_std_vanilla" type="magazine" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_magazine_usgi" hidden="false" has_description="true" global_value="m416d_mod" ver="2">
+			<stats spread="0" recoil="0" concealment="0" reload="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_m416d_magazine_mod3" based_on="wpn_fps_m4_upg_m_quick" type="magazine" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_magazine_mod3" hidden="false" has_description="true" global_value="m416d_gfl_mod" ver="2">
+			<stats spread="0" recoil="-1" concealment="-3" reload="4"/>
+	</WeaponMod>
+
+<!--Muzzle Devices -->	
+	<WeaponMod id="wpn_fps_ass_m416d_flash_hider" based_on="wpn_fps_upg_ns_ass_smg_stubby" type="barrel_ext"  unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_flash_hider" hidden="true" global_value="m416d_mod" ver="2">
+	</WeaponMod> 
+	
+<!--Grip -->
+	<WeaponMod id="wpn_fps_ass_m416d_grip" 		   based_on="wpn_fps_snp_victor_g_mod3" type="grip" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_grip" hidden="true" global_value="m416d_mod" ver="2">
+		<texture_variants>
+		   <m416d_black name_id="bm_w_paint_m416d_black" desc_id="bm_w_paint_m416d_black_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_grip_black"/>
+		</texture_variants>	
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_m416d_grip_tangodown" 		   based_on="wpn_fps_snp_victor_g_mod3" type="grip" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_grip_tangodown" hidden="false" global_value="m416d_mod" ver="2">
+	</WeaponMod>
+
+<!-- Optics -->
+
+	<WeaponMod id="wpn_fps_ass_m416d_optic_eotech_gfl" based_on="wpn_fps_upg_o_eotech" a_obj="a_o_weeb" type="sight" unit="units/payday2/weapons/wpn_fps_upg_o_eotech/wpn_fps_upg_o_eotech" has_description="true" inherit_weapons="false" hidden="false" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" global_value="m416d_gfl_mod"  ver="2">
+		<stats concealment="0" recoil="0" spread="-2" zoom="2"/>
+		<forbids>
+			<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+			<value_node value="wpn_fps_upg_o_sig"/> 
+			<value_node value="wpn_fps_ass_m416d_irons_rear_folded"/> 
+		</forbids>
+		<stance_mod>
+	<!--		<wpn_fps_ass_m416d   translation="0 -1 -2" /> -->
+		</stance_mod>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_m416d_optic_eotech_exps3" based_on="wpn_fps_upg_o_eotech_xps" type="sight" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_optic_eotech_exps3" has_description="true" inherit_weapons="false" hidden="false" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" global_value="m416d_mod"  ver="2">
+		<stats concealment="-1" recoil="1" spread="0" zoom="2"/>
+		<forbids>
+			<value_node value="wpn_fps_ass_m416d_magnifier_g33"/> 
+			<value_node value="wpn_fps_upg_o_eotech_g33_ftc"/> 
+			<value_node value="wpn_fps_upg_o_aimpoint_mag1_ftc"/> 			
+		</forbids>
+		<stance_mod>
+				<wpn_fps_ass_m416d  		    translation="0 -1 -1.1" /> 
+		</stance_mod>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_ass_m416d_optic_romeo4t_wilcox" based_on="wpn_fps_upg_o_eotech_xps" type="sight" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_optic_romeo4t_wilcox" has_description="true" inherit_weapons="false" hidden="false" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" global_value="m416d_mod"  ver="2">
+		<stats concealment="-1" recoil="1" spread="0" zoom="2"/>
+		<forbids>
+	<!--	<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+			<value_node value="wpn_fps_upg_o_sig"/> -->
+		</forbids>
+		<stance_mod>
+				<wpn_fps_ass_m416d   translation="0 -1 -1.55" /> 
+				<wpn_fps_ass_mcx_spear_lt   translation="0 0 -1.05" /> 
+				<wpn_fps_ass_mcx_spear_lt_sec   translation="0 0 -1.05" /> 
+		</stance_mod>		
+		<override>
+			<wpn_fps_ass_m416d_irons_rear_folded 		unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+			<wpn_fps_ass_m416d_irons_rear_siege_folded 	unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+			<wpn_fps_ass_mcx_spear_lt_irons_rear_folded 		unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+			
+			<wpn_fps_ass_m416d_magnifier_g33 unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_magnifier_g33_short">
+				<stance_mod>
+					<wpn_fps_ass_m416d   translation="0 0 -1.55" /> 
+					<wpn_fps_ass_mcx_spear_lt   translation="0 0 -1.05" /> 
+					<wpn_fps_ass_mcx_spear_lt_sec   translation="0 0 -1.05" /> 
+				</stance_mod>
+            </wpn_fps_ass_m416d_magnifier_g33>  
+		</override> 
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_m416d_optic_eotech_wilcox" based_on="wpn_fps_upg_o_eotech_xps" type="sight" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_optic_eotech_wilcox" has_description="true" inherit_weapons="false" hidden="false" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true" global_value="m416d_mod"  ver="2">
+		<stats concealment="-1" recoil="1" spread="0" zoom="2"/>
+		<forbids>
+	<!--	<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+			<value_node value="wpn_fps_upg_o_sig"/> -->
+
+		</forbids>
+		<override>
+			<wpn_fps_ass_mcx_spear_lt_irons_rear_folded 		unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+			<wpn_fps_ass_m416d_irons_rear_folded 		unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+			<wpn_fps_ass_m416d_irons_rear_siege_folded 	unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+		</override> 
+		<stance_mod>
+				<wpn_fps_ass_m416d  		    translation="0 -1 -2" /> 
+				<wpn_fps_ass_mcx_spear_lt   	translation="0 -1 -1.6" /> 
+				<wpn_fps_ass_mcx_spear_lt_sec   translation="0 -1 -1.6" /> 
+		</stance_mod>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_m416d_magnifier_g33" based_on="wpn_fps_upg_o_sig"  unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_magnifier_g33" has_description="true"  hidden="false" has_description="true" inherit_weapons="false" inherit_adds="true" inherit_override="true" inherit_parts_forbids="true"  ver="2">
+			<stance_mod>
+				<wpn_fps_ass_m416d   translation="0 0 -2" /> 
+				<wpn_fps_ass_mcx_spear_lt   	translation="0 -1 -1.6" /> 
+				<wpn_fps_ass_mcx_spear_lt_sec   translation="0 -1 -1.6" /> 
+		</stance_mod>
+	</WeaponMod>
+
+
+<!--Rail Covers-->
+	<WeaponMod id="wpn_fps_ass_m416d_rail_cover_ladder_left" based_on="wpn_fps_addon_ris" type="left_rail_cover" parent="foregrip" a_obj="a_rail_cover_left" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_rail_cover_ladder" hidden="false"  global_value="m416d_mod" ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_m416d_rail_cover_ladder_right" based_on="wpn_fps_addon_ris" type="right_rail_cover" parent="foregrip" a_obj="a_rail_cover_right" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_rail_cover_ladder" hidden="false"  global_value="m416d_mod" ver="2">
+	</WeaponMod>
+	
+<!--Stock -->
+	<WeaponMod id="wpn_fps_ass_m416d_stock" based_on="wpn_fps_upg_m4_s_crane"  type="stock" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_stock" hidden="true" global_value="m416d_mod"  ver="2">
+		<texture_variants>
+		   <m416d_black name_id="bm_w_paint_m416d_black" desc_id="bm_w_paint_m416d_black_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_stock_black"/>
+		</texture_variants>	
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_m416d_stock_ctr" based_on="wpn_fps_upg_m4_s_crane"  type="stock" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_stock_ctr" hidden="false" global_value="m416d_mod"  ver="2">
+		<texture_variants>
+<!--	   <m416d_black name_id="bm_w_paint_m416d_black" desc_id="bm_w_paint_m416d_black_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_stock_black"/> -->
+		</texture_variants>	
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_m416d_stock_e1" based_on="wpn_fps_upg_m4_s_crane"  type="stock" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_stock_e1" hidden="false" global_value="m416d_mod"  ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_m416d_stock_m4" based_on="wpn_fps_upg_m4_s_crane"  type="stock" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_stock_m4" hidden="false" global_value="m416d_mod"  ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_m416d_stock_slimline" based_on="wpn_fps_upg_m4_s_crane"  type="stock" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_stock_slimline" hidden="false" global_value="m416d_mod"  ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_m416d_stock_compact" based_on="wpn_fps_m4_uupg_s_zulu"  type="stock" unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_fps_ass_tecci_s_standard"  hidden="false" global_value="m416d_mod"  ver="2">
+		<override>
+			<wpn_fps_ass_m416d_stock_adapter	unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"  />
+		</override> 
+	</WeaponMod>
+
+<!--Lower -->
+	<WeaponMod id="wpn_fps_ass_m416d_bad_lever" based_on="wpn_fps_m4_lower_reciever" type="bad_lever" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_bad_lever" hidden="false" global_value="m416d_mod" ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_m416d_receiver_lower" based_on="wpn_fps_m4_lower_reciever" type="lower_reciever" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_lower" hidden="true" global_value="m416d_mod" ver="2">
+		<texture_variants>
+		   <m416d_iar name_id="bm_w_paint_m416d_iar" desc_id="bm_w_paint_m416d_iar_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_lower_iar"/>
+		   <m416d_fde name_id="bm_w_paint_m416d_fde" desc_id="bm_w_paint_m416d_fde_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_lower_fde"/>
+		   <m416d_tanodized name_id="bm_w_paint_m416d_tanodized" desc_id="bm_w_paint_m416d_tanodized_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_lower_tanodized"/>
+		   <m416d_ca415 name_id="bm_w_paint_m416d_ca415" desc_id="bm_w_paint_m416d_ca415_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_lower_ca415"/>
+		</texture_variants>		
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_m416d_receiver_lower_a5" based_on="wpn_fps_m4_lower_reciever" type="lower_reciever" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_lower_a5" hidden="false" global_value="m416d_mod" ver="2">
+		<forbids>
+			<value_node value="wpn_fps_ass_m416d_bad_lever"/>
+		</forbids>
+<!--	<texture_variants>
+		   <m416d_hk337 name_id="bm_w_paint_m416d_hk337" desc_id="bm_w_paint_m416d_hk337_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_lower_a5_hk337"/>
+		</texture_variants>		 -->
+		
+	</WeaponMod>
+
+<!--Upper -->
+	<WeaponMod id="wpn_fps_ass_m416d_receiver_upper" based_on="wpn_fps_m4_upper_reciever_round" type="upper_reciever" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_upper" hidden="true" has_description="true" global_value="m416d_mod" ver="2">
+		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+		<texture_variants>
+		   <m416d_fde name_id="bm_w_paint_m416d_fde" desc_id="bm_w_paint_m416d_fde_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_upper_fde"/>
+		   <m416d_tanodized name_id="bm_w_paint_m416d_tanodized" desc_id="bm_w_paint_m416d_tanodized_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_upper_tanodized"/>
+		</texture_variants>		
+	</WeaponMod>	
+	<WeaponMod id="wpn_fps_ass_m416d_receiver_upper_a5" based_on="wpn_fps_m4_upper_reciever_round" type="upper_reciever" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_upper_a5" hidden="false" has_description="true" global_value="m416d_mod" ver="2">
+		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+		<override>
+			<wpn_fps_ass_m416d_barrel_10   unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_barrel_11" />
+			<wpn_fps_ass_m416d_handguard   unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_handguard_a5" />
+		</override> 
+	</WeaponMod>	
+<!--<WeaponMod id="wpn_fps_ass_m416d_receiver_upper_a5_vectorau" based_on="wpn_fps_m4_upper_reciever_round" type="upper_reciever" unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_upper_a5_vectorau" hidden="false" has_description="true" global_value="m416d_mod" ver="2">
+		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+		<override>
+			<wpn_fps_ass_m416d_barrel_10   unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_barrel_11" />
+			<wpn_fps_ass_m416d_handguard   unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_handguard_a5" />
+		</override> 		
+	</WeaponMod>	-->
+	
+<!--Vertical Grip -->
+	<WeaponMod id="wpn_fps_ass_m416d_vg_no" based_on="wpn_fps_upg_vg_ass_smg_verticalgrip"  type="vertical_grip" inherit_adds="true" inherit_parts_override="true"	unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" hidden="false" has_description="true" global_value="m416d_mod" ver="2">
+			<stats concealment="0" spread="0" recoil="0"/>
+		<override>
+			<wpn_fps_ass_m416d_mlok_vg_geissele   unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+		</override> 
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_m416d_vg_rvg" based_on="wpn_fps_upg_vg_ass_smg_verticalgrip"  type="vertical_grip" inherit_adds="true" inherit_parts_override="true"	unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_vg_rvg" hidden="false" has_description="true" global_value="m416d_mod" ver="2">
+			<stats concealment="-1" spread="0" recoil="1"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_m416d_vg_stubby" based_on="wpn_fps_upg_vg_ass_smg_verticalgrip"  type="vertical_grip" inherit_adds="true" inherit_parts_override="true"	unit="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_vg_stubby" hidden="false" has_description="true" global_value="m416d_mod" ver="2">
+			<stats concealment="-1" spread="0" recoil="1"/>
+	</WeaponMod>
+
+
+<!--	Weapon  -->
+
+	<Weapon unlock_level="4">
+		<weapon id="m416d" based_on="new_m4" weapon_hold="m416d_vg"  NR_CLIPS_MAX="5" CLIP_AMMO_MAX="30" chamber_size="1" global_value="m416d_mod" >
+			<stats damage="63" spread="15" spread_moving="15" recoil="9" concealment="19"/>
+			<timers reload_not_empty="1.6" reload_empty="2.4" unequip="0.6" equip="0.6" />
+				<fire_mode_data fire_rate="0.075"/>
+				<sounds fire="m416d_fire" fire_single="m416d_fire" fire_auto="m416d_fire" stop_fire="m16_stop" use_fix="true">
+				</sounds>							
+				<AMMO_PICKUP>
+					<value_node value="3.00"/>
+					<value_node value="8.00"/>
+				</AMMO_PICKUP>
+				<kick>
+				<standing>
+					<value_node value="1.0"/>
+					<value_node value="1.4"/>
+					<value_node value="-0.7"/>
+					<value_node value="0.7"/>
+				</standing>
+				<crouching>
+					<value_node value="0.9"/>
+					<value_node value="1.2"/>
+					<value_node value="-0.65"/>
+					<value_node value="0.65"/>
+				</crouching>
+				<steelsight>
+					<value_node value="0.65"/>
+					<value_node value="0.85"/>
+					<value_node value="-0.6"/>
+					<value_node value="0.6"/>
+				</steelsight>
+				</kick>
+			<animations reload_name_id="m416d_vg"/>
+		</weapon>
+		<factory id="wpn_fps_ass_m416d" unit="units/mods/weapons/wpn_fps_ass_m416d/wpn_fps_ass_m416d" stock_adapter="wpn_fps_ass_m416d_stock_adapter">
+			<animations reload="reload" fire="recoil" fire_steelsight="recoil" reload_not_empty="reload_not_empty" magazine_empty="last_recoil"/>
+		<adds>
+			<wpn_fps_upg_fl_ass_smg_sho_surefire>
+                    <value_node value="wpn_fps_ass_m416d_mlok_geissele" />
+                </wpn_fps_upg_fl_ass_smg_sho_surefire> 
+				<wpn_fps_upg_fl_ass_smg_sho_peqbox>
+                    <value_node value="wpn_fps_ass_m416d_mlok_geissele"/>
+                </wpn_fps_upg_fl_ass_smg_sho_peqbox> 
+				<wpn_fps_upg_fl_ass_peq15>
+                    <value_node value="wpn_fps_ass_m416d_mlok_geissele"/>
+                </wpn_fps_upg_fl_ass_peq15> 
+				<wpn_fps_upg_fl_ass_laser>
+                    <value_node value="wpn_fps_ass_m416d_mlok_geissele"/>
+                </wpn_fps_upg_fl_ass_laser> 
+				<wpn_fps_upg_fl_ass_utg>
+                    <value_node value="wpn_fps_ass_m416d_mlok_geissele"/>
+                </wpn_fps_upg_fl_ass_utg> 
+				<wpn_fps_upg_fl_dbal_laser>
+                    <value_node value="wpn_fps_ass_m416d_mlok_geissele"/>
+                </wpn_fps_upg_fl_dbal_laser> 
+				<wpn_fps_upg_vg_ass_smg_verticalgrip>
+                    <value_node value="wpn_fps_ass_m416d_mlok_vg_geissele"/>
+                </wpn_fps_upg_vg_ass_smg_verticalgrip> 
+				<wpn_fps_upg_vg_ass_smg_afg>
+                    <value_node value="wpn_fps_ass_m416d_mlok_vg_geissele" />
+                </wpn_fps_upg_vg_ass_smg_afg>  
+				<wpn_fps_smg_schakal_vg_surefire>
+                    <value_node value="wpn_fps_ass_m416d_mlok_vg_geissele" />
+                </wpn_fps_smg_schakal_vg_surefire>  
+			</adds>
+			<override>
+				<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="foregrip"/>
+				<wpn_fps_upg_fl_ass_smg_sho_surefire parent="foregrip"/>
+				<wpn_fps_upg_fl_ass_peq15 parent="foregrip"/>
+				<wpn_fps_upg_fl_ass_laser parent="foregrip"/>
+				<wpn_fps_upg_fl_ass_utg parent="foregrip"/>
+				<wpn_fps_upg_fl_dbal_laser parent="foregrip"/>
+				<wpn_fps_upg_vg_ass_smg_verticalgrip parent="foregrip"/>
+				<wpn_fps_upg_vg_ass_smg_afg parent="foregrip"/>
+				<wpn_fps_ass_l119a2_stock_riser a_obj="a_s_collapsed"/>
+				
+				<wpn_fps_m4_uupg_m_std>
+					<stats spread="0" recoil="0" concealment="0" reload="0" extra_ammo="0" />
+				</wpn_fps_m4_uupg_m_std>		
+				<wpn_fps_ass_l85a2_m_emag>
+					<stats spread="0" recoil="0" concealment="0" reload="0" extra_ammo="0" />
+				</wpn_fps_ass_l85a2_m_emag>		
+				<wpn_fps_upg_m4_m_l5>
+					<stats spread="0" recoil="0" concealment="0" reload="0" extra_ammo="0" />
+				</wpn_fps_upg_m4_m_l5>						
+				
+			</override>
+			<default_blueprint>
+			
+				<value_node value="wpn_fps_ass_m416d_barrel_10"/>
+				<value_node value="wpn_fps_ass_m416d_bolt"/>
+				<value_node value="wpn_fps_ass_m416d_charging_handle"/>
+				<value_node value="wpn_fps_ass_m416d_flash_hider"/>
+				<value_node value="wpn_fps_ass_m416d_handguard_geissele_10"/>
+				<value_node value="wpn_fps_ass_m416d_irons_rear"/>
+				<value_node value="wpn_fps_ass_m416d_grip"/>
+				<value_node value="wpn_fps_ass_m416d_magazine"/>
+				<value_node value="wpn_fps_ass_m416d_receiver_lower"/>
+				<value_node value="wpn_fps_ass_m416d_receiver_upper"/>
+				<value_node value="wpn_fps_ass_m416d_stock"/>
+				<value_node value="wpn_fps_ass_m416d_vg_no"/>
+				
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_ass_m416d_bolt"/>
+				<value_node value="wpn_fps_ass_m416d_flash_hider"/>
+				<value_node value="wpn_fps_ass_m416d_receiver_lower"/>
+				
+	<!--		<value_node value="wpn_fps_ass_m416d_barrel_9"/> -->
+				<value_node value="wpn_fps_ass_m416d_barrel_10"/>
+				<value_node value="wpn_fps_ass_m416d_barrel_14"/>
+				<value_node value="wpn_fps_ass_m416d_barrel_16"/>
+				<value_node value="wpn_fps_ass_m416d_bad_lever"/>
+				<value_node value="wpn_fps_ass_m416d_charging_handle"/>
+				<value_node value="wpn_fps_ass_m416d_charging_handle_ach"/>
+				<value_node value="wpn_fps_ass_m416d_grip"/>
+				<value_node value="wpn_fps_ass_m416d_grip_tangodown"/>
+				<value_node value="wpn_fps_ass_m416d_handguard"/>
+				<value_node value="wpn_fps_ass_m416d_handguard_geissele_10"/>
+				<value_node value="wpn_fps_ass_m416d_handguard_geissele_14"/>
+				<value_node value="wpn_fps_ass_m416d_handguard_iar"/>
+				<value_node value="wpn_fps_ass_m416d_handguard_mrs"/>
+				<value_node value="wpn_fps_ass_m416d_handguard_g95k"/>
+				<value_node value="wpn_fps_ass_m416d_irons_rear"/>
+				<value_node value="wpn_fps_ass_m416d_irons_rear_folded"/>
+				<value_node value="wpn_fps_ass_m416d_irons_rear_siege"/>
+				<value_node value="wpn_fps_ass_m416d_irons_rear_siege_folded"/>
+				<value_node value="wpn_fps_ass_m416d_magazine"/>
+				<value_node value="wpn_fps_ass_m416d_magazine_mod3"/>
+				<value_node value="wpn_fps_ass_m416d_magazine_pmag"/>
+				<value_node value="wpn_fps_ass_m416d_magazine_usgi"/>
+				<value_node value="wpn_fps_ass_m416d_magnifier_g33"/>
+	<!--		<value_node value="wpn_fps_ass_m416d_optic_eotech_exps3"/> -->
+				<value_node value="wpn_fps_ass_m416d_optic_eotech_gfl"/>
+				<value_node value="wpn_fps_ass_m416d_optic_eotech_wilcox"/>
+				<value_node value="wpn_fps_ass_m416d_rail_cover_ladder_left"/>
+				<value_node value="wpn_fps_ass_m416d_rail_cover_ladder_right"/>
+				<value_node value="wpn_fps_ass_m416d_receiver_lower_a5"/>
+				<value_node value="wpn_fps_ass_m416d_receiver_upper"/>
+				<value_node value="wpn_fps_ass_m416d_receiver_upper_a5"/>
+	<!--		<value_node value="wpn_fps_ass_m416d_receiver_upper_a5_vectorau"/> -->
+				<value_node value="wpn_fps_ass_m416d_stock"/>
+				<value_node value="wpn_fps_ass_m416d_stock_ctr"/>
+				<value_node value="wpn_fps_ass_m416d_stock_e1"/>
+				<value_node value="wpn_fps_ass_m416d_stock_m4"/>
+				<value_node value="wpn_fps_ass_m416d_stock_slimline"/>
+				<value_node value="wpn_fps_ass_m416d_stock_compact"/>
+				<value_node value="wpn_fps_ass_m416d_vg_no"/>
+				<value_node value="wpn_fps_ass_m416d_vg_rvg"/>
+				<value_node value="wpn_fps_ass_m416d_vg_stubby"/>
+
+				<value_node value="wpn_fps_ass_m416d_gadget_mod0"/>
+				<value_node value="wpn_fps_ass_m416d_gadget_mod3"/>
+				<value_node value="wpn_fps_ass_m416d_sling_mount_magpul"/>
+				<value_node value="wpn_fps_ass_m416d_gadget_leftrail"/>
+				<value_node value="wpn_fps_ass_m416d_gadget_toprail"/>
+				
+				<value_node value="wpn_fps_m4_uupg_m_std"/>
+				<value_node value="wpn_fps_upg_m4_m_pmag"/>
+				<value_node value="wpn_fps_upg_m4_m_straight"/>
+				<value_node value="wpn_fps_upg_m4_m_quad"/>
+				<value_node value="wpn_fps_ass_l85a2_m_emag"/>
+				<value_node value="wpn_fps_upg_m4_m_l5"/>
+				<value_node value="wpn_fps_m4_uupg_m_strike"/>
+	<!--		<value_node value="wpn_fps_m4_upg_m_quick"/> -->
+			
+				<value_node value="wpn_fps_upg_m4_g_ergo"/>
+				<value_node value="wpn_fps_upg_m4_g_sniper"/>
+				<value_node value="wpn_fps_upg_m4_g_hgrip"/>
+				<value_node value="wpn_fps_upg_g_m4_surgeon"/>
+				<value_node value="wpn_fps_m4_uupg_m_strike"/>
+				<value_node value="wpn_fps_snp_tti_g_grippy"/>
+				<value_node value="wpn_fps_sho_sko12_body_grip"/>
+				<value_node value="wpn_fps_snp_victor_g_mod3"/>
+				<value_node value="wpn_fps_m4_uupg_g_billet"/>
+			
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_ass_tecci_ns_special"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_v6"/>
+				<value_node value="wpn_fps_lmg_hk51b_ns_jcomp"/>
+				<value_node value="wpn_fps_ass_shak12_ns_muzzle"/>
+				<value_node value="wpn_fps_ass_shak12_ns_suppressor"/>
+				<value_node value="wpn_fps_lmg_kacchainsaw_ns_suppressor"/>
+				<value_node value="wpn_fps_lmg_kacchainsaw_ns_muzzle"/>
+				
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/>
+				
+				<value_node value="wpn_fps_upg_m4_s_standard"/>
+				<value_node value="wpn_fps_upg_m4_s_pts"/>
+				<value_node value="wpn_fps_upg_m4_s_crane"/>
+				<value_node value="wpn_fps_upg_m4_s_mk46"/>
+				<value_node value="wpn_fps_upg_m4_s_ubr"/>		
+				<value_node value="wpn_fps_snp_tti_s_vltor"/>
+				<value_node value="wpn_fps_sho_sko12_stock"/>
+				<value_node value="wpn_fps_snp_victor_s_mod0"/>
+				<value_node value="wpn_fps_m4_uupg_s_zulu"/>
+				
+				<value_node value="wpn_fps_upg_i_singlefire"/>
+				<value_node value="wpn_fps_upg_i_autofire"/>
+				
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_bmg"/>
+				<value_node value="wpn_fps_upg_o_uh"/>
+				<value_node value="wpn_fps_upg_o_fc1"/>
+				<value_node value="wpn_fps_upg_o_tf90"/>
+				<value_node value="wpn_fps_upg_o_poe"/>
+				<value_node value="wpn_fps_upg_o_hamr"/>
+				<value_node value="wpn_fps_upg_o_atibal"/>
+				<value_node value="wpn_fps_upg_o_health"/>
+				
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+				<value_node value="wpn_fps_upg_o_sig"/>
+	<!--		<value_node value="wpn_fps_upg_o_45rds"/>
+				<value_node value="wpn_fps_upg_o_45rds_v2"/>
+				<value_node value="wpn_fps_upg_o_45steel"/> -->
+								
+				<value_node value="wpn_fps_upg_vg_ass_smg_verticalgrip"/>
+				<value_node value="wpn_fps_smg_schakal_vg_surefire"/>
+				
+				
+			</uses_parts>
+		</factory>	
+	<stance>
+			<standard>
+				<shoulders rotation="-0.000728673 0.022941 0.000925013 -0.999736" translation="-2.045 -4.005 0.132"/>
+			</standard>
+			<crouched>
+				<shoulders rotation="-0.000642279 0.109986 0.000854216 -0.993933" translation="-1.545 -6.505 -2.768"/>
+			</crouched>
+			<steelsight>
+				<shoulders rotation="-0.000488302 0.00548907 6.71297e-005 -0.999985" translation="-8.45 -3.005 1.26"/>
+			</steelsight>  
+		</stance>	
+	</Weapon>
+
+
+
+	<Sounds directory="assets\sounds">
+		<sound id="m416d_fire" path="m416d_fire.ogg" prefix="regular"/>
+		<sound id="m416d_fire" path="m416d_supp.ogg"  prefix="suppressed_a"/>
+		<sound id="m416d_fire" path="m416d_supp.ogg"  prefix="suppressed_b"/>
+		<sound id="m416d_fire" path="m416d_supp.ogg"  prefix="suppressed_c"/>
+		
+		<sound id="m416d_back_in_hand"	 path="m416d_back_in_hand.ogg" prefix="first"/>
+		<sound id="m416d_back_in_hand"	 path="m416d_back_in_hand.ogg" prefix="third"/>
+		<sound id="m416d_bolt_release"		 path="m416d_bolt_release.ogg" prefix="first"/>
+		<sound id="m416d_bolt_release" 		 path="m416d_bolt_release.ogg" prefix="third"/>
+		<sound id="m416d_generic_ass_center" path="m416d_generic_ass_center.ogg" prefix="first"/>
+		<sound id="m416d_generic_ass_center" path="m416d_generic_ass_center.ogg" prefix="third"/>
+		<sound id="m416d_generic_lever_grab" path="m416d_generic_lever_grab.ogg" prefix="first"/>
+		<sound id="m416d_generic_lever_grab" path="m416d_generic_lever_grab.ogg" prefix="third"/>
+		<sound id="m416d_mag_contact"	 path="m416d_mag_contact.ogg" prefix="first"/>
+		<sound id="m416d_mag_contact" 	 path="m416d_mag_contact.ogg" prefix="third"/>
+		<sound id="m416d_mag_impact_ground"		 path="m416d_mag_impact_ground.ogg" prefix="first"/>
+		<sound id="m416d_mag_impact_ground" 	 path="m416d_mag_impact_ground.ogg" prefix="third"/>
+		<sound id="m416d_mag_in"		 path="m416d_mag_in.ogg" prefix="first"/>
+		<sound id="m416d_mag_in" 		 path="m416d_mag_in.ogg" prefix="third"/>
+		<sound id="m416d_mag_in_contact"		 path="m416d_mag_in_contact.ogg" prefix="first"/>
+		<sound id="m416d_mag_in_contact" 		 path="m416d_mag_in_contact.ogg" prefix="third"/>
+		<sound id="m416d_mag_out"		 path="m416d_mag_out.ogg" prefix="first"/>
+		<sound id="m416d_mag_out" 		 path="m416d_mag_out.ogg" prefix="third"/>
+		<sound id="m416d_mag_out_empty"			 path="m416d_mag_out_empty.ogg" prefix="first"/>
+		<sound id="m416d_mag_out_empty" 		 path="m416d_mag_out_empty.ogg" prefix="third"/>
+		<sound id="m416d_mag_out_grab"	 path="m416d_mag_out_grab.ogg" prefix="first"/>
+		<sound id="m416d_mag_out_grab" 	 path="m416d_mag_out_grab.ogg" prefix="third"/>	
+		<sound id="m416d_mag_take_new"		 path="m416d_mag_take_new.ogg" prefix="first"/>
+		<sound id="m416d_mag_take_new" 	 path="m416d_mag_take_new.ogg" prefix="third"/>
+		<sound id="m416d_tilt"		 		 path="m416d_tilt.ogg" prefix="first"/>
+		<sound id="m416d_tilt" 			   	 path="m416d_tilt.ogg" prefix="third"/>
+		<sound id="m416d_tilt_back"			 path="m416d_tilt_back.ogg" prefix="first"/>
+		<sound id="m416d_tilt_back" 	 	 path="m416d_tilt_back.ogg" prefix="third"/>
+
+	</Sounds>
+
+	<AddFiles directory="assets">
+<!--Unit Path and Icon-->
+		<unit_npc path="units/mods/weapons/wpn_fps_ass_m416d/wpn_fps_ass_m416d"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/m416d"/>
+
+<!-- Animations -->
+		<animation path="anims/fps/m416d/m416d_reload_not_empty" load="true"/>
+		<animation path="anims/fps/m416d/m416d_reload" load="true"/>
+		<animation path="anims/fps/m416d/m416d_idle" load="true"/>
+		<animation path="anims/fps/m416d/m416d_recoil" load="true"/>
+		<animation path="anims/fps/m416d/m416d_recoil_enter" load="true"/>
+		<animation path="anims/fps/m416d/m416d_recoil_loop" load="true"/>
+		<animation path="anims/fps/m416d/m416d_recoil_exit" load="true"/>
+		<animation path="anims/fps/m416d/m416d_equip" load="true"/>
+		<animation path="anims/fps/m416d/m416d_unequip" load="true"/>
+		<animation path="anims/fps/m416d/m416d_melee" load="true"/>
+		<animation path="anims/fps/m416d/m416d_melee_miss" load="true"/>
+		<animation path="anims/fps/m416d/m416d_use" load="true"/>
+		<animation path="anims/fps/m416d/m416d_sprint_enter" load="true"/>
+		<animation path="anims/fps/m416d/m416d_sprint" load="true"/>
+		<animation path="anims/fps/m416d/m416d_sprint_exit" load="true"/>
+		<animation path="anims/fps/m416d/m416d_com_var1" load="true"/>
+		<animation path="anims/fps/m416d/m416d_com_var5" load="true"/>
+		<animation path="anims/fps/m416d/m416d_com_var6" load="true"/>
+		<animation path="anims/fps/m416d/m416d_com_var7" load="true"/>
+		<animation path="anims/fps/m416d/m416d_get_up" load="true"/>
+		<animation path="anims/fps/m416d/m416d_gogo" load="true"/>
+		<animation path="anims/fps/m416d/m416d_tased" load="true"/>
+		<animation path="anims/fps/m416d/m416d_tased_boost" load="true"/>
+		<animation path="anims/fps/m416d/m416d_tased_exit" load="true"/>
+		<animation path="anims/fps/m416d/m416d_inspect" load="true"/> 
+
+		<animation path="anims/fps/m416d_vg/m416d_vg_reload_not_empty" load="true"/>
+		<animation path="anims/fps/m416d_vg/m416d_vg_reload" load="true"/>
+		<animation path="anims/fps/m416d_vg/m416d_vg_idle" load="true"/>
+		<animation path="anims/fps/m416d_vg/m416d_vg_recoil" load="true"/>
+		<animation path="anims/fps/m416d_vg/m416d_vg_recoil_enter" load="true"/>
+		<animation path="anims/fps/m416d_vg/m416d_vg_recoil_loop" load="true"/>
+		<animation path="anims/fps/m416d_vg/m416d_vg_recoil_exit" load="true"/>
+		<animation path="anims/fps/m416d_vg/m416d_vg_equip" load="true"/>
+		<animation path="anims/fps/m416d_vg/m416d_vg_unequip" load="true"/>
+		<animation path="anims/fps/m416d_vg/m416d_vg_melee" load="true"/>
+		<animation path="anims/fps/m416d_vg/m416d_vg_melee_miss" load="true"/>
+		<animation path="anims/fps/m416d_vg/m416d_vg_use" load="true"/>
+		<animation path="anims/fps/m416d_vg/m416d_vg_sprint_enter" load="true"/>
+		<animation path="anims/fps/m416d_vg/m416d_vg_sprint" load="true"/>
+		<animation path="anims/fps/m416d_vg/m416d_vg_sprint_exit" load="true"/>
+		<animation path="anims/fps/m416d_vg/m416d_vg_com_var1" load="true"/>
+		<animation path="anims/fps/m416d_vg/m416d_vg_com_var5" load="true"/>
+		<animation path="anims/fps/m416d_vg/m416d_vg_com_var6" load="true"/>
+		<animation path="anims/fps/m416d_vg/m416d_vg_com_var7" load="true"/>
+		<animation path="anims/fps/m416d_vg/m416d_vg_get_up" load="true"/>
+		<animation path="anims/fps/m416d_vg/m416d_vg_gogo" load="true"/>
+		<animation path="anims/fps/m416d_vg/m416d_vg_tased" load="true"/>
+		<animation path="anims/fps/m416d_vg/m416d_vg_tased_boost" load="true"/>
+		<animation path="anims/fps/m416d_vg/m416d_vg_tased_exit" load="true"/>
+		<animation path="anims/fps/m416d_vg/m416d_vg_inspect" load="true"/> 
+<!--GUI-->		
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_bad_lever"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_barrel_9"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_barrel_14"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_barrel_16"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_charging_handle_ach"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_gadget_leftrail"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_gadget_toprail"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_gadget_mod0"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_gadget_mod3"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_grip_tangodown"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_handguard"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_handguard_geissele_14"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_handguard_iar"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_handguard_mrs"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_handguard_g95k"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_irons_rear_folded"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_irons_rear_siege"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_irons_rear_siege_folded"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_magnifier_g33"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_magazine_mod3"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_magazine_pmag"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_magazine_usgi"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_optic_eotech_exps3"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_optic_eotech_gfl"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_optic_eotech_wilcox"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_optic_romeo4t_wilcox"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_rail_cover_ladder_left"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_rail_cover_ladder_right"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_receiver_lower_a5"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_receiver_upper_a5"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_receiver_upper_a5_vectorau"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_sling_mount_magpul"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_stock_ctr"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_stock_compact"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_stock_e1"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_stock_m4"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_stock_slimline"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_vg_no"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_vg_rvg"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_m416d_vg_stubby"/>
+
+<!--Core Textures-->	
+		<texture path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/weapon_metal_cubemap"/>
+		
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/barrel_416d_10"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/barrel_416d_14"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/charging_handle_hk416"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/bad_lever_magpul"/>	
+<!--	<texture	path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/charging_handle_hk416_fde_df"/>	-->
+		<texture	path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/eotech_glass_df"/>	
+		<texture	path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/eotech_glass_op"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/gas_block_416d"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/gfl_accessories_004"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/grip_hk"/>	
+		<texture	path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/grip_hk_fde_df"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/grip_tangodown"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/handguard_hk_smr"/>	
+		<texture 	path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/handguard_hk_smr_black_df"/>	
+		<texture 	path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/handguard_hk_smr_black_gsma"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/handguard_hk416_quadrail"/>	
+		<texture 	path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/handguard_hk416_quadrail_fde_df"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/irons_kac_front"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/irons_kac_rear"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/magnifier_g33"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/muzzle_surefire_fh556"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/noveske_accessories"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/optic_exps3"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/rail_cover_ladder"/>	
+		<texture	path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/rail_cover_ladder_black_df"/>	
+		<texture	path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/rail_cover_ladder_fde_df"/>	
+		<texture	path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/receiver_lower_ca415_df"/>	
+		<texture	path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/receiver_lower_ca415_gsma"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/receiver_lower_hk416d"/>	
+		<texture	path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/receiver_lower_hk416d_fde_df"/>	
+		<texture	path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/receiver_lower_hk416d_tanodized_df"/>	
+		<texture	path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/receiver_lower_hk416d_tanodized_gsma"/>	
+		<texture	path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/receiver_lower_hk416d_iar_df"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/receiver_upper_hk416d"/>	
+		<texture	path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/receiver_upper_hk416d_fde_df"/>	
+		<texture	path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/receiver_upper_hk416d_tanodized_df"/>	
+		<texture	path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/receiver_upper_hk416d_tanodized_gsma"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/riser_wilcox_410"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/riser_wilcox_mount"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/stock_adapter_hk_buffer"/>	
+		<texture	path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/stock_adapter_hk_buffer_fde_df"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/stock_ctr"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/stock_m4ss_high_standard"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/stock_m4_sopmod"/>	
+		<texture	path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/stock_m4_sopmod_fde_df"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/surefire_m300c"/>
+		<texture	path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/surefire_m300c_fde_df"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/type20_attachment2"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/vg_rvg"/>			
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/vg_tangodown_stubby"/>
+		
+<!--	<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/receiver_416a5_vectorau"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_upper_a5_vectorau"/> -->
+				
+<!--Extra Part Textures-->	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/barrel_hk_279"/>		
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/car4_magpul"/>		
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/gas_block_hk416a5"/>		
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/handguard_416_quad_rail"/>		
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/handguard_geissele_smr_14"/>
+		<texture	path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/handguard_geissele_smr_14_black_df"/>	
+		<texture	path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/handguard_geissele_smr_14_black_gsma"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/handguard_smr_rail"/>	
+		<texture	path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/handguard_smr_rail_black_df"/>	
+		<texture	path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/handguard_smr_rail_black_gsma"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/handguard_mrs_keymod_14"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/m27_iar"/>		
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/m855a1"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/irons_siege"/>				
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/magazine_hk_steel_maritime"/>		
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/magazine_stanag_magpul_pmag_gen3_windowed"/>		
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/magazine_usgi_stanag"/>		
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/receiver_hk416a5"/>		
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/stock_hk_e1"/>		
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/stock_hk_slimline"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/weapon_hk416a5"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/vltor_keymod_casv_6"/>		
+		
+		<texture path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/handguard_a8_df"/>		
+		<texture path="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/handguard_a8_gsma"/>				
+
+<!--Base Unit Path-->	
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_barrel_10"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_barrel_11"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_barrel_14"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_barrel_16"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_barrel_16_iar"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_bad_lever"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_bolt"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_charging_handle"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_charging_handle_ach"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_flash_hider"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_gadget_mod0"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_gadget_mod3"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_grip"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_grip_tangodown"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_handguard"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_handguard_a5"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_handguard_geissele_10"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_handguard_geissele_14"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_handguard_iar"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_handguard_mrs"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_handguard_g95k"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_irons_front"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_irons_front_folded"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_irons_rear"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_irons_rear_folded"/> 
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_irons_front_siege"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_irons_rear_siege"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_magazine"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_magazine_mod3"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_magazine_pmag"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_magazine_usgi"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_mlok_geissele"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_mlok_vg_geissele"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_magnifier_g33"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_magnifier_g33_short"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_optic_eotech_exps3"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_optic_eotech_wilcox"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_optic_romeo4t_wilcox"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_rail_cover_ladder"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_lower"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_lower_a5"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_upper"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_upper_a5"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_sling_mount_magpul"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_stock"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_stock_ctr"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_stock_e1"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_stock_slimline"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_stock_m4"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_stock_adapter"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_vg_rvg"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_vg_stubby"/>
+
+
+<!--Weapon Painter Textures-->	
+
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_ass_m416d_handguard/m416d_fde"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_ass_m416d_handguard_geissele_10/m416d_black"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_ass_m416d_handguard_geissele_14/m416d_black"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_ass_m416d_mlok_geissele/m416d_black"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_ass_m416d_mlok_vg_geissele/m416d_black"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_ass_m416d_receiver_lower/m416d_ca415"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_ass_m416d_receiver_lower/m416d_iar"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_ass_m416d_receiver_lower/m416d_fde"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_ass_m416d_receiver_lower/m416d_tanodized"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_ass_m416d_receiver_upper/m416d_fde"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_ass_m416d_receiver_upper/m416d_tanodized"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_ass_m416d_grip/m416d_black"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_ass_m416d_stock/m416d_black"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_ass_m416d_stock_adapter/m416d_fde"/>
+		
+
+<!--	<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_charging_handle_fde"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_charging_handle_fde_thq"/> -->
+		<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_handguard_fde"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_handguard_fde_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_handguard_geissele_10_black"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_handguard_geissele_10_black_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_handguard_geissele_14_black"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_handguard_geissele_14_black_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_mlok_geissele_black"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_mlok_geissele_black_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_lower_ca415"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_lower_ca415_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_lower_iar"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_lower_iar_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_lower_fde"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_lower_fde_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_lower_tanodized"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_lower_tanodized_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_upper_fde"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_upper_fde_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_upper_tanodized"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_upper_tanodized_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_grip_black"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_grip_black_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_stock_black"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_stock_black_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_stock_adapter_fde"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_stock_adapter_fde_thq"/>
+<!--	<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_vg_stubby_fde"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_vg_stubby_fde_thq"/> -->
+		
+	</AddFiles>
+		
+	<Hooks directory="hooks">
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>	
+		<hook file="newraycastweaponbase.lua"  source_file="lib/units/weapons/newraycastweaponbase"/> 
+	</Hooks>
+	
+</mod>
+
+
+
+

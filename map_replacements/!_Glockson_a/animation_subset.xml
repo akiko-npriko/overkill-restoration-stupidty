@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+		
+		<!--
+			Replace all instances of 'glockson' below with the ID of your animation.
+			Note that recoil_steelsight does not have a unique animation in this glockson; you can edit the filepath in the 'file' section with one if you wish.
+			If your gun cannot be fired in full auto, you can delete the recoil_enter, recoil_loop, and recoil_exit lines.
+		-->
+		
+		<target mode="attach">
+			<anim name="glockson_reload" 								file="anims/fps/glockson/glockson_reload" blend_set="all"/>
+			<anim name="glockson_reload_not_empty" 						file="anims/fps/glockson/glockson_reload_not_empty" blend_set="all"/>
+			<anim name="glockson_cmag_reload" 							file="anims/fps/glockson/glockson_cmag_reload" blend_set="all"/>
+			<anim name="glockson_cmag_reload_not_empty" 				file="anims/fps/glockson/glockson_cmag_reload_not_empty" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

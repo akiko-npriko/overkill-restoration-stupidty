@@ -1,0 +1,11 @@
+<materials version="3" group="weapon_group">
+
+    <material name="mtr_reciever_hk416a5" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/receiver_hk416a5_df" mip="1"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/receiver_hk416a5_nm" mip="1"/>
+    </material>
+  <material name="mtr_weapon_hk416a5" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/weapon_hk416a5_df" mip="1"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/weapon_hk416a5_nm" mip="1"/>
+    </material>
+</materials>

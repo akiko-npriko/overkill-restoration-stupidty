@@ -1,0 +1,16 @@
+<materials version="3" group="weapon_m13">
+
+
+	<material name="mtr_ebr_magazine" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture	 file="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/textures/m1a_magazine_20_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/textures/m1a_magazine_20_nm"/>
+        <material_texture	 file="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/textures/m1a_magazine_20_gsma"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/textures/weapon_metal_cubemap"/>
+    </material>	
+	<material name="mtr_762n" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture	 file="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/textures/mw2022_762_nato_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/textures/mw2022_762_nato_nm"/>
+        <material_texture	 file="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/textures/mw2022_762_nato_gsma"/>
+	<reflection_texture   file="environments/cubemaps/cubemap_gold_strong_df" type="cubemap" />	
+    </material>	
+</materials>

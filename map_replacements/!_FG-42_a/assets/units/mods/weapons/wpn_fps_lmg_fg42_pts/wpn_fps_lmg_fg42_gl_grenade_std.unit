@@ -1,0 +1,11 @@
+<unit type="wpn" slot="1">
+	<object file="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_gl_grenade_std" />
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="base" class="WeaponRifleGrenade">
+			<var name="name_id" value="fg42rg" />
+			<var name="anim" value="flip_up" />
+			<var name="launcher_projectile" value="launcher_m203" />
+		</extension>
+	</extensions>
+</unit>

@@ -1,0 +1,893 @@
+<?xml version="1.0"?>
+
+
+
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+		<target mode="attach">
+			<to name="reload_l403a1" 						redirect="fps/reload/l403a1"/>
+			<to name="reload_not_empty_l403a1" 			redirect="fps/reload_not_empty/l403a1"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+		<target mode="append">
+			<state name="fps/reload/l403a1" type="once" segment="base" speed="1.0">
+				<anim name="l403a1_reload"/>
+				<keys>
+					<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>		
+					
+			<key at="trigger" trigger="wp_m16_lever_release" callback="play_sound" class_name="base" param1="l403a1_chamber"/>
+			<key at="trigger" trigger="wp_m16_clip_slide_in" callback="play_sound" class_name="base" param1="l403a1_mag_in"/>
+			<key at="trigger" trigger="wp_m16_clip_in_contact" callback="play_sound" class_name="base" param1="l403a1_mag_in_contact"/>
+			<key at="trigger" trigger="wp_m16_clip_grab_throw" callback="play_sound" class_name="base" param1="l403a1_mag_out"/>
+			<key at="trigger" trigger="wp_m16_clip_take_new" callback="play_sound" class_name="base" param1="l403a1_mag_take_new"/>
+			<key at="trigger" trigger="wp_m16_clip_grab" callback="play_sound" class_name="base" param1="l403a1_grab_mag"/>
+			<key at="trigger" trigger="wp_m16_clip_grab_out" callback="play_sound" class_name="base" param1="l403a1_mag_grab_out"/>
+			<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="l403a1_prep_smack"/>
+			<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="l403a1_back_in_hand"/>
+			<key at="trigger" trigger="wp_ak47_tilt" callback="play_sound" class_name="base" param1="l403a1_tilt"/>
+			<key at="trigger" trigger="wp_ak47_tilt_back" callback="play_sound" class_name="base" param1="l403a1_tilt_back"/>
+			<key at="trigger" trigger="wp_clip_generic_ass_center" callback="play_sound" class_name="base" param1="l403a1_generic_center"/>	
+			
+					<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+					
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+			
+			
+			<state name="fps/reload_not_empty/l403a1" type="once" segment="base" speed="1.0">
+				<anim name="l403a1_reload_not_empty"/>
+				<keys>
+					<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>			
+					
+			<key at="trigger" trigger="wp_m16_clip_slide_in" callback="play_sound" class_name="base" param1="l403a1_mag_in_tactical"/>
+			<key at="trigger" trigger="wp_m16_clip_in_contact" callback="play_sound" class_name="base" param1="l403a1_mag_in_contact"/>
+			<key at="trigger" trigger="wp_m16_clip_take_new" callback="play_sound" class_name="base" param1="l403a1_mag_take_new"/>
+			<key at="trigger" trigger="wp_m16_clip_grab" callback="play_sound" class_name="base" param1="l403a1_grab_mag"/>
+			<key at="trigger" trigger="wp_m16_clip_grab_out" callback="play_sound" class_name="base" param1="l403a1_mag_out_tactical"/>
+			<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="l403a1_mag_in_contact"/>
+			<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="l403a1_back_in_hand"/>
+			<key at="trigger" trigger="wp_clip_generic_ass_center" callback="play_sound" class_name="base" param1="l403a1_generic_center"/>
+			<key at="trigger" trigger="wp_ak47_tilt" callback="play_sound" class_name="base" param1="l403a1_tilt"/>
+
+			
+					<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+		</target>
+	</tweak>
+	
+	<!--
+	-->
+
+
+
+<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil"/>
+			<anim name="m4_recoil" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_recoil" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil_steelsight"/>
+			<anim name="m4_recoil" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_recoil_steelsight" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil_enter"/>
+			<anim name="m4_recoil_enter" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_recoil_enter" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil_loop"/>
+			<anim name="m4_recoil_loop" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_recoil_loop" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil_exit"/>
+			<anim name="m4_recoil_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_recoil_exit" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/idle"/>
+			<anim name="m4_idle" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_idle" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/equip"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_equip" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/unequip"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_unequip" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/start_running"/>
+			<anim name="m4_sprint_enter" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_sprint_enter" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/running"/>
+			<anim name="m4_sprint" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_sprint" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/stop_running"/>
+			<anim name="m4_sprint_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_sprint_exit" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_unequip" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee_exit"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_equip" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee"/>
+			<anim name="m4_melee" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_melee" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee_miss"/>
+			<anim name="m4_melee_miss" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_melee_miss" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/use"/>
+			<anim name="m4_use" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_use" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/down"/>
+			<anim name="m4_com_down_var1" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_com_down_var1" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/stop"/>
+			<anim name="m4_com_stop" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_com_stop" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/come"/>
+			<anim name="m4_com_come" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_com_come" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/point"/>
+			<anim name="m4_com_point" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_com_point" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/get_up"/>
+			<anim name="m4_get_up" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_get_up" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/gogo"/>
+			<anim name="m4_gogo" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_gogo" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_projectile_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_unequip" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_projectile_exit"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_equip" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_grenade_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_unequip" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_molotov_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_unequip" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_concussion_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_unequip" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_dada_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_unequip" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_grenade_exit"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_equip" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/tased"/>
+			<anim name="m4_tased" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_tased" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/tased_boost"/>
+			<anim name="m4_tased_boost" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_tased_boost" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/tased_exit"/>
+			<anim name="m4_tased_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_tased_exit" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/enter_tazer_counter"/>
+			<anim name="m4_tased_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_tased_exit" weight="l403a1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/cash_inspect"/>
+			<anim name="glock_inspect" weight="glock"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_inspect" weight="l403a1"/>
+		</target>
+	</tweak> 
+	
+	
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+		<target mode="attach">
+			<to name="reload_l403a1_vg" 						redirect="fps/reload/l403a1_vg"/>
+			<to name="reload_not_empty_l403a1_vg" 			redirect="fps/reload_not_empty/l403a1_vg"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+		<target mode="append">
+			<state name="fps/reload/l403a1_vg" type="once" segment="base" speed="1.0">
+				<anim name="l403a1_vg_reload"/>
+				<keys>
+					<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>		
+					
+			<key at="trigger" trigger="wp_m16_lever_release" callback="play_sound" class_name="base" param1="l403a1_chamber"/>
+			<key at="trigger" trigger="wp_m16_clip_slide_in" callback="play_sound" class_name="base" param1="l403a1_mag_in"/>
+			<key at="trigger" trigger="wp_m16_clip_in_contact" callback="play_sound" class_name="base" param1="l403a1_mag_in_contact"/>
+			<key at="trigger" trigger="wp_m16_clip_grab_throw" callback="play_sound" class_name="base" param1="l403a1_mag_out"/>
+			<key at="trigger" trigger="wp_m16_clip_take_new" callback="play_sound" class_name="base" param1="l403a1_mag_take_new"/>
+			<key at="trigger" trigger="wp_m16_clip_grab" callback="play_sound" class_name="base" param1="l403a1_grab_mag"/>
+			<key at="trigger" trigger="wp_m16_clip_grab_out" callback="play_sound" class_name="base" param1="l403a1_mag_grab_out"/>
+			<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="l403a1_prep_smack"/>
+			<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="l403a1_back_in_hand"/>
+			<key at="trigger" trigger="wp_ak47_tilt" callback="play_sound" class_name="base" param1="l403a1_tilt"/>
+			<key at="trigger" trigger="wp_ak47_tilt_back" callback="play_sound" class_name="base" param1="l403a1_tilt_back"/>
+			<key at="trigger" trigger="wp_clip_generic_ass_center" callback="play_sound" class_name="base" param1="l403a1_generic_center"/>	
+			
+					<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+					
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+			
+			
+			<state name="fps/reload_not_empty/l403a1_vg" type="once" segment="base" speed="1.0">
+				<anim name="l403a1_vg_reload_not_empty"/>
+				<keys>
+					<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>			
+					
+			<key at="trigger" trigger="wp_m16_clip_slide_in" callback="play_sound" class_name="base" param1="l403a1_mag_in_tactical"/>
+			<key at="trigger" trigger="wp_m16_clip_in_contact" callback="play_sound" class_name="base" param1="l403a1_mag_in_contact"/>
+			<key at="trigger" trigger="wp_m16_clip_take_new" callback="play_sound" class_name="base" param1="l403a1_mag_take_new"/>
+			<key at="trigger" trigger="wp_m16_clip_grab" callback="play_sound" class_name="base" param1="l403a1_grab_mag"/>
+			<key at="trigger" trigger="wp_m16_clip_grab_out" callback="play_sound" class_name="base" param1="l403a1_mag_out_tactical"/>
+			<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="l403a1_mag_in_contact"/>
+			<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="l403a1_back_in_hand"/>
+			<key at="trigger" trigger="wp_clip_generic_ass_center" callback="play_sound" class_name="base" param1="l403a1_generic_center"/>
+			<key at="trigger" trigger="wp_ak47_tilt" callback="play_sound" class_name="base" param1="l403a1_tilt"/>
+			
+					<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+		</target>
+	</tweak>
+	
+	<!--	Broomhandle	-->
+
+
+<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil"/>
+			<anim name="m4_recoil" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_recoil" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil_steelsight"/>
+			<anim name="m4_recoil" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_recoil_steelsight" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil_enter"/>
+			<anim name="m4_recoil_enter" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_recoil_enter" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil_loop"/>
+			<anim name="m4_recoil_loop" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_recoil_loop" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil_exit"/>
+			<anim name="m4_recoil_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_recoil_exit" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/idle"/>
+			<anim name="m4_idle" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_idle" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/equip"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_equip" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/unequip"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_unequip" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/start_running"/>
+			<anim name="m4_sprint_enter" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_sprint_enter" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/running"/>
+			<anim name="m4_sprint" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_sprint" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/stop_running"/>
+			<anim name="m4_sprint_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_sprint_exit" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_unequip" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee_exit"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_equip" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee"/>
+			<anim name="m4_melee" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_melee" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee_miss"/>
+			<anim name="m4_melee_miss" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_melee_miss" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/use"/>
+			<anim name="m4_use" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_use" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/down"/>
+			<anim name="m4_com_down_var1" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_com_down_var1" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/stop"/>
+			<anim name="m4_com_stop" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_com_stop" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/come"/>
+			<anim name="m4_com_come" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_com_come" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/point"/>
+			<anim name="m4_com_point" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_com_point" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/get_up"/>
+			<anim name="m4_get_up" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_get_up" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/gogo"/>
+			<anim name="m4_gogo" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_gogo" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_projectile_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_unequip" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_projectile_exit"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_equip" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_grenade_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_unequip" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_molotov_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_unequip" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_concussion_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_unequip" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_dada_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_unequip" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_grenade_exit"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_equip" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/tased"/>
+			<anim name="m4_tased" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_tased" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/tased_boost"/>
+			<anim name="m4_tased_boost" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_tased_boost" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/tased_exit"/>
+			<anim name="m4_tased_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_tased_exit" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/enter_tazer_counter"/>
+			<anim name="m4_tased_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_tased_exit" weight="l403a1_vg"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/cash_inspect"/>
+			<anim name="glock_inspect" weight="glock"/>
+		</search>
+		<target mode="append">
+			<anim name="l403a1_vg_inspect" weight="l403a1_vg"/>
+		</target>
+	</tweak> 	
+
+</tweaks>

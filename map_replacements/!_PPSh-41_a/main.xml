@@ -1,0 +1,162 @@
+<mod name="PPSh-41" color="Color(0.01,0.62,0.98)">
+	<Localization directory="loc" default="english.txt"/>
+	<AssetUpdates id="17438" version="1.41" provider="modworkshop"/>
+	<GlobalValue id="ppshmod" color="Color(0.7, 0.2, 0.1)"/>
+	<WeaponMod id="wpn_fps_smg_ppsh_barrel" based_on="wpn_fps_ass_vhs_b_silenced" perks="false" sound_switch="false" wpn_pts="wpn_fps_smg_ppsh" hidden="true" ver="2">
+		<stats damage="0" spread="0" recoil="0" concealment="0" alert_size="0" suppression="0"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_ppsh_bolt" based_on="wpn_fps_amcar_bolt_standard" wpn_pts="wpn_fps_smg_ppsh" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_smg_ppsh_irons" based_on="wpn_fps_ass_s552_o_flipup" parent="barrel" wpn_pts="wpn_fps_smg_ppsh" hidden="true" ver="2">
+		<stance_mod>
+			<wpn_fps_smg_ppsh translation="-0.015 -25 -0.95"/>
+		</stance_mod>
+		<override>
+			<wpn_fps_smg_ppsh_sight_rail unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+		</override>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_ppsh_mag" based_on="wpn_upg_ak_m_akm" wpn_pts="wpn_fps_smg_ppsh" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_smg_ppsh_magrelease" based_on="wpn_fps_ass_flint_m_release_standard" wpn_pts="wpn_fps_smg_ppsh" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_smg_ppsh_sight_rail" based_on="wpn_fps_shot_r870_ris_special" wpn_pts="wpn_fps_smg_ppsh" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_smg_ppsh_stock" based_on="wpn_fps_smg_polymer_s_standard" wpn_pts="wpn_fps_smg_ppsh" hidden="true" ver="2">
+		<adds>
+			<value_node value="wpn_fps_smg_ppsh_sight_rail"/>
+		</adds>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_ppsh_barrel_k50m" based_on="wpn_fps_smg_m45_b_standard" wpn_pts="wpn_fps_smg_ppsh" ver="2">
+		<stats damage="1" spread="-1" recoil="-2" concealment="4"/>
+		<animations fire="recoil" fire_steelsight="recoil"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_ppsh_barrel_sawnoffcomp" based_on="wpn_fps_smg_m45_b_standard" wpn_pts="wpn_fps_smg_ppsh" ver="2">
+		<stats recoil="-2" concealment="1"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_ppsh_stock_k50m" based_on="wpn_fps_smg_polymer_s_standard" wpn_pts="wpn_fps_smg_ppsh" ver="2">
+		<stats recoil="-3" concealment="4"/>
+		<adds>
+			<value_node value="wpn_fps_smg_ppsh_sight_rail"/>
+		</adds>
+	</WeaponMod>
+	<Weapon unlock_level="33">
+		<weapon id="ppsh" based_on="m1928" weapon_hold="ppsh" CLIP_AMMO_MAX="71" NR_CLIPS_MAX="3" ammo_pickup="2" global_value="ppshmod">
+			<stats damage="44" spread="12" spread_moving="12" recoil="19" concealment="16"/>
+			<fire_mode_data fire_rate="0.0666666666666667"/>
+			<kick>
+				<standing>
+					<value_node value="0.5"/>
+					<value_node value="0.4"/>
+					<value_node value="-0.8"/>
+					<value_node value="1.2"/>
+				</standing>
+				<crouching>
+					<value_node value="0.5"/>
+					<value_node value="0.4"/>
+					<value_node value="-0.8"/>
+					<value_node value="1.2"/>
+				</crouching>
+				<steelsight>
+					<value_node value="0.5"/>
+					<value_node value="0.4"/>
+					<value_node value="-0.9"/>
+					<value_node value="1.1"/>
+				</steelsight>
+			</kick>
+			<timers reload_empty="4.2" reload_not_empty="3.3" equip="0.6" unequip="0.5"/>
+			<sounds fire="ppsh41_fire" fire_single="ppsh41_fire" use_fix="true"/>
+		</weapon>
+		<factory id="wpn_fps_smg_ppsh" unit="units/mods/weapons/wpn_fps_smg_ppsh/wpn_fps_smg_ppsh">
+			<animations fire="recoil" fire_steelsight="recoil" reload="reload" reload_not_empty="reload_not_empty"/>
+			<adds/>
+			<override>
+				<wpn_fps_addon_ris unit="units/mods/weapons/wpn_fps_smg_ppsh_pts/wpn_fps_smg_ppsh_gadget_rail"/>
+			</override>
+			<default_blueprint>
+				<value_node value="wpn_fps_smg_ppsh_barrel"/>
+				<value_node value="wpn_fps_smg_ppsh_bolt"/>
+				<value_node value="wpn_fps_smg_ppsh_irons"/>
+				<value_node value="wpn_fps_smg_ppsh_mag"/>
+				<value_node value="wpn_fps_smg_ppsh_magrelease"/>
+				<value_node value="wpn_fps_smg_ppsh_stock"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_smg_ppsh_barrel"/>
+				<value_node value="wpn_fps_smg_ppsh_bolt"/>
+				<value_node value="wpn_fps_smg_ppsh_irons"/>
+				<value_node value="wpn_fps_smg_ppsh_mag"/>
+				<value_node value="wpn_fps_smg_ppsh_magrelease"/>
+				<value_node value="wpn_fps_smg_ppsh_stock"/>
+
+				<value_node value="wpn_fps_upg_ppsh_barrel_k50m"/>
+				<value_node value="wpn_fps_upg_ppsh_barrel_sawnoffcomp"/>
+				<value_node value="wpn_fps_upg_ppsh_stock_k50m"/>
+
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_v6"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+				<value_node value="wpn_fps_upg_o_bmg"/>
+				<value_node value="wpn_fps_upg_o_uh"/>
+				<value_node value="wpn_fps_upg_o_fc1"/>
+				<value_node value="wpn_fps_upg_o_sig"/>
+				<value_node value="wpn_fps_upg_o_tf90"/>
+				<value_node value="wpn_fps_upg_o_poe"/>
+			</uses_parts>
+		</factory>
+		<stance>
+			<standard>
+				<shoulders rotation="-0.000745315 0.00548101 0.00093835 -0.999984" translation="-1.737 -5.5 2.387"/>
+			</standard>
+			<crouched>
+				<shoulders rotation="-0.000793833 -0.0468616 0.000976612 -0.998901" translation="-3.737 -8.25 1.387"/>
+			</crouched>
+			<steelsight>
+				<shoulders rotation="-0.000745315 0.00548101 0.00093835 -0.999984" translation="-10.737 16.25 6.187"/>
+			</steelsight>
+		</stance>
+	</Weapon>
+	<Sounds directory="assets\sounds">
+		<sound id="ppsh41_fire" path="ppsh41_regular.ogg" prefix="regular"/>
+		<redirect id="ppsh41_fire" to="m1928_fire_single" prefix="suppressed_a"/>
+		<redirect id="ppsh41_fire" to="m1928_fire_single" prefix="suppressed_b"/>
+		<redirect id="ppsh41_fire" to="m1928_fire_single" prefix="suppressed_c"/>
+	</Sounds>
+	<AddFiles directory="assets" auto_generate="true"/>
+	<Hooks directory="hooks">
+		<hook file="menuppshweaponbase.lua" source_file="lib/units/weapons/menuraycastweaponbase"/>
+		<hook file="ppshweaponbase.lua" source_file="lib/units/weapons/newraycastweaponbase"/>
+	</Hooks>
+</mod>

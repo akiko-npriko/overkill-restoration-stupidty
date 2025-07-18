@@ -1,0 +1,470 @@
+<table name="FG-42" image="guis/fg42" color="Color(0.8, 0.2, 0.8)">
+
+	<Localization directory="locals" default="english.txt"/>
+	
+	<AssetUpdates id="32676" version="1.0" provider="modworkshop"/>
+	
+	<GlobalValue id="fg42g" color="Color(0.5, 0, 0)"/>
+
+	<WeaponMod id="wpn_fps_lmg_fg42_frame_std" based_on="wpn_fps_ass_flint_body_upperreceiver" type="lower_reciever" weapon_rename_overwrite="bm_w_fg42" unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_frame_std" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
+	
+	<WeaponMod id="wpn_fps_lmg_fg42_stock_std" based_on="wpn_fps_ass_flint_body_upperreceiver" type="stock" unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_stock_std" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
+	
+	<WeaponMod id="wpn_fps_lmg_fg42_barrel_std" based_on="wpn_fps_ass_vhs_b_standard" a_obj="a_body" type="barrel" unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_barrel_std" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
+	
+	<WeaponMod id="wpn_fps_lmg_fg42_md_std" based_on="wpn_fps_ass_flint_body_upperreceiver" type="barrel_ext" unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_md_std" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
+		
+	<WeaponMod id="wpn_fps_lmg_fg42_bayonet_std" based_on="wpn_fps_ass_flint_body_upperreceiver" type="bayonet2" unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_bayonet_std" texture_bundle_folder="mods" drop="false" is_a_unlockable="false">
+		<animations fire="recoil" fire_steelsight="recoil"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_lmg_fg42_bp_std" based_on="wpn_fps_upg_bp_lmg_lionbipod" a_obj="a_body" unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_bp_std" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_lmg_fg42_grip_std" based_on="wpn_fps_ass_flint_body_upperreceiver" type="grip" unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_grip_std" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
+		
+	<WeaponMod id="wpn_fps_lmg_fg42_hg_std" based_on="wpn_fps_ass_flint_body_upperreceiver" type="handguard" unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_hg_std" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
+		
+	<WeaponMod id="wpn_fps_lmg_fg42_magcover_std" based_on="wpn_fps_ass_flint_body_upperreceiver" type="dust_cover" unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_magcover_std" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
+		
+	<WeaponMod id="wpn_fps_lmg_fg42_fo_std" based_on="wpn_fps_ass_flint_body_upperreceiver" type="front_sight" unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_fo_std" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
+		
+	<WeaponMod id="wpn_fps_lmg_fg42_ro_std" based_on="wpn_fps_ass_flint_body_upperreceiver" type="rear_sight" unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_ro_std" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
+		
+	<WeaponMod id="wpn_fps_lmg_fg42_fsl_std" based_on="wpn_fps_ass_flint_body_upperreceiver" type="fire_selector" unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_fsl_std" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
+		
+	<WeaponMod id="wpn_fps_lmg_fg42_mag_std" based_on="wpn_fps_ass_flint_body_upperreceiver" type="magazine" unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_mag_std" texture_bundle_folder="mods" drop="false" is_a_unlockable="false">
+		<animations reload_not_empty="reload" fire="recoil" fire_steelsight="recoil" reload="reload"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_lmg_fg42_bolt_std" based_on="wpn_fps_ass_flint_body_upperreceiver" type="bolt2" unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_bolt_std" texture_bundle_folder="mods" drop="false" is_a_unlockable="false">
+		<animations fire="recoil" fire_steelsight="recoil" reload="reload"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_lmg_fg42_trigger_std" based_on="wpn_fps_ass_flint_body_upperreceiver" type="trigger" unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_trigger_std" texture_bundle_folder="mods" drop="false" is_a_unlockable="false">
+		<!--<animations fire="recoil" fire_steelsight="recoil"/>-->
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_lmg_fg42_bayonet_equip" based_on="wpn_fps_ass_flint_body_upperreceiver" type="bayonet2" unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_bayonet_equip" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats recoil="-1" concealment="-2" range="150" min_damage="40" max_damage="40" min_damage_effect="0" max_damage_effect="0"/>
+		<perks>
+			<value_node value="bayonet"/>
+		</perks>
+	   <pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_lmg_fg42_mag_short" based_on="wpn_fps_ass_flint_body_upperreceiver" type="magazine" has_description="true" unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_mag_short" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<animations reload_not_empty="reload" fire="recoil" fire_steelsight="recoil" reload="reload"/>
+		<stats concealment="3" reload="2"/>
+		<override_weapon_add CLIP_AMMO_MAX="-10"/>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_lmg_fg42_frame_early" based_on="wpn_fps_ass_flint_body_upperreceiver" type="lower_reciever" weapon_rename_overwrite="bm_w_fg42early" unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_frame_early" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats concealment="1" spread="-2" recoil="-2"/>
+		<override_weapon>
+			<fire_mode_data fire_rate="0.0666666666666667"/>
+		</override_weapon>
+		<override>
+			<wpn_fps_lmg_fg42_grip_std unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_grip_early"/>
+			<wpn_fps_lmg_fg42_md_std unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_md_early"/>
+			<wpn_fps_lmg_fg42_hg_std unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_hg_early"/>
+			<wpn_fps_lmg_fg42_trigger_std unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_trigger_early"/>
+			<wpn_fps_lmg_fg42_fsl_std unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_fsl_early"/>
+			<wpn_fps_lmg_fg42_fo_std unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_fo_early"/>
+			<wpn_fps_lmg_fg42_ro_std unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_ro_early"/>
+			<wpn_fps_lmg_fg42_stock_std unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_stock_early"/>
+			<wpn_fps_lmg_fg42_bolt_std unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_bolt_early"/>
+			<wpn_fps_lmg_fg42_mag_std unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_mag_early"/>
+			<wpn_fps_lmg_fg42_mag_short unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_mag_short_early"/>
+			<wpn_fps_lmg_fg42_barrel_std unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_barrel_early"/>
+			<wpn_fps_lmg_fg42_bp_std unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_bp_early"/>
+			<wpn_fps_lmg_fg42_bayonet_std unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_bayonet_early"/>
+			<wpn_fps_lmg_fg42_bayonet_equip unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_bayonet_equip_early"/>
+			<wpn_fps_lmg_fg42_magcover_std unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+			<wpn_fps_lmg_fg42_o_dummy>
+				<stance_mod>
+					<wpn_fps_lmg_fg42 rotation="-0.0078539 -0 0 -0.999969" translation="0.01 0 -2.75"/>
+				</stance_mod>
+			</wpn_fps_lmg_fg42_o_dummy>
+		</override>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_lmg_fg42_bp_non" based_on="wpn_fps_ass_flint_body_upperreceiver" type="bipod" unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_bp_non" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats concealment="1" recoil="-1"/>
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_lmg_fg42_o_dummy" based_on="wpn_fps_ass_flint_body_upperreceiver" type="sight" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" texture_bundle_folder="mods" drop="false" is_a_unlockable="false">
+		<stance_mod>
+			<wpn_fps_lmg_fg42 translation="0 0 -2.29"/>
+		</stance_mod>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_lmg_fg42_o_zf4" based_on="wpn_fps_ass_flint_body_upperreceiver" type="sight" unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_o_zf4" texture_bundle_folder="mods" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats concealment="-2" zoom="4"/>
+		<stance_mod>
+			<wpn_fps_lmg_fg42 rotation="0 -0 0 -1" translation="0.093 -5 -1.997"/>
+		</stance_mod>
+		<ads_objects>          
+			<value_node value="g_o_zfg42_ads"/>
+		</ads_objects>
+		<ads_objects_hide>
+			<value_node value="g_o_zfg42"/>
+		</ads_objects_hide>
+		<requires>
+			<value_node value="wpn_fps_lmg_fg42_frame_std"/>
+		</requires>
+		<override>
+			<wpn_fps_lmg_fg42_ro_std unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_ro_fold"/>
+			<wpn_fps_lmg_fg42_fo_std unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_fo_fold"/>
+		</override>
+		<perks>
+			<value_node value="scope"/>
+		</perks>
+	   <pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_lmg_fg42_o_zfg42" based_on="wpn_fps_ass_flint_body_upperreceiver" type="sight" unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_o_zfg42" texture_bundle_folder="mods" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats concealment="-2" zoom="4"/>
+		<requires>
+			<value_node value="wpn_fps_lmg_fg42_frame_early"/>
+		</requires>
+		<stance_mod>
+			<wpn_fps_lmg_fg42 rotation="0 -0 0 -1" translation="0.044 -5 -2.517"/>
+		</stance_mod>
+		<ads_objects>          
+			<value_node value="g_o_zfg42_ads"/>
+			<value_node value="g_o_zfg42_crosshair"/>
+			<value_node value="g_o_zfg42_lense_rt"/>
+		</ads_objects>
+		<ads_objects_hide>
+			<value_node value="g_o_zfg42"/>
+			<value_node value="g_o_zfg42_lense"/>
+		</ads_objects_hide>
+		<override>
+			<wpn_fps_lmg_fg42_ro_std unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_ro_early_fold"/>
+			<wpn_fps_lmg_fg42_fo_std unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_fo_early_fold"/>
+		</override>
+		<perks>
+			<value_node value="scope"/>
+		</perks>
+	   <pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_lmg_fg42_so_custom" based_on="wpn_fps_upg_a_custom_free" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" type="sound" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats damage="0"/>
+		<override_weapon>
+			<sounds fire="fg42_fire" fire_single="fg42_fire" fire_auto="fg42_fire" use_fix="true">
+				<reload wp_vhs_mag_slide_out="wp_fg42_mag_out" wp_vhs_mag_slide_in="wp_fg42_mag_in" wp_vhs_lever_pull="wp_fg42_bolt_back" wp_vhs_mag_in_hit="wp_fg42_mag_in_hit" wp_foley_generic_clip_in_connect="wp_fg42_mag_in_hit"/>
+			</sounds>
+		</override_weapon>
+		<pcs/>
+    </WeaponMod>
+	
+	<WeaponMod id="wpn_fps_lmg_fg42_so_waw" based_on="wpn_fps_upg_a_custom_free" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" type="sound" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats damage="0"/>
+		<override_weapon>
+			<sounds fire="fg42_fire_waw" fire_single="fg42_fire_waw" fire_auto="fg42_fire_waw" use_fix="true">
+				<reload wp_vhs_mag_slide_out="wp_fg42_mag_out_waw" wp_vhs_mag_slide_in="wp_fg42_mag_in_waw" wp_vhs_lever_pull="wp_fg42_bolt_back_waw" wp_vhs_lever_release="wp_fg42_bolt_release_waw" wp_vhs_mag_in_hit="wp_fg42_mag_in_hit_waw" wp_foley_generic_clip_in_connect="wp_fg42_mag_in_hit_waw"/>
+			</sounds>
+		</override_weapon>
+		<pcs/>
+    </WeaponMod>
+	<!--
+	<WeaponMod id="wpn_fps_lmg_fg42_gl_grenade_std" based_on="wpn_fps_ass_contraband_gl_m203" type="underbarrel" unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_gl_grenade_std" a_obj="a_b" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats concealment="-5" recoil="3" total_ammo_mod="-10" />
+		<animations bipod_reload="reload" />
+		<bullet_objects amount="0" prefix="g_bullet_" />
+		<pcs/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_lmg_fg42_gl_launcher" based_on="wpn_fps_ass_flint_body_upperreceiver" type="underbarrel_addon" unit="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_gl_launcher" texture_bundle_folder="mods" drop="false" is_a_unlockable="false"/>
+		
+	<Weapon>
+		<weapon id="fg42rg" based_on="contraband_m203" use_stance="fg42rg" riflegrenade="true" CLIP_AMMO_MAX="1" NR_CLIPS_MAX="5" rays="1" DAMAGE="6" panic_suppression_chance="0.3">
+			<stats damage="2000" spread="9" recoil="1"/>
+			<timers reload_not_empty="3" reload_empty="3" unequip="0.6" unequip="0.6" equip="0.6" equip_underbarrel="0.4" unequip_underbarrel="0.4" unequip_underbarrel_alt="6"/>
+			<animations/>
+		</weapon>
+		<factory id="wpn_fps_rg_fg42_geraet" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy">
+			<default_blueprint>
+			</default_blueprint>
+			<uses_parts>
+			</uses_parts>
+		</factory>
+		<stance/>
+	</Weapon>
+	-->
+	<Weapon unlock_level="42">
+		<weapon id="fg42" based_on="rpk" weapon_hold="vhs" CLIP_AMMO_MAX="20" can_shoot_through_enemy="true" can_shoot_through_wall="true" NR_CLIPS_MAX="8" CAN_TOGGLE_FIREMODE="true" texture_bundle_folder="mods" global_value="fg42g">
+			<stats damage="155" spread="19" spread_moving="19" recoil="17" concealment="5"/>
+			<timers reload_not_empty="3" reload_empty="4" unequip="0.85" equip="0.70"/>
+			<fire_mode_data fire_rate="0.08"/> <!--0.0923076923076923 -->
+			<categories>
+				<value_node value="lmg"/>
+			</categories>
+			<AMMO_PICKUP>
+				<value_node value="2"/>
+				<value_node value="7"/>
+			</AMMO_PICKUP>
+			<use_data align_place="right_hand"/>
+			<sounds fire = "g3_fire_single" fire_single = "g3_fire_single" fire_auto = "g3_fire" stop_fire = "g3_stop"/>
+			<animations reload_name_id="fg42" recoil_steelsight="true">
+			</animations>
+		</weapon>
+
+		<factory id="wpn_fps_lmg_fg42" unit="units/mods/weapons/wpn_fps_lmg_fg42/wpn_fps_lmg_fg42">
+			
+			<animations fire="recoil" fire_steelsight="recoil" reload="reload" reload_not_empty="reload_not_empty"/>
+			
+			<adds/>
+			
+			<override/>
+			
+			<default_blueprint>
+			
+				<value_node value="wpn_fps_lmg_fg42_frame_std"/>
+				<value_node value="wpn_fps_lmg_fg42_stock_std"/>
+				<value_node value="wpn_fps_lmg_fg42_md_std"/>
+				<value_node value="wpn_fps_lmg_fg42_barrel_std"/>
+				<value_node value="wpn_fps_lmg_fg42_bayonet_std"/>
+				<value_node value="wpn_fps_lmg_fg42_grip_std"/>
+				<value_node value="wpn_fps_lmg_fg42_fo_std"/>
+				<value_node value="wpn_fps_lmg_fg42_fsl_std"/>
+				<value_node value="wpn_fps_lmg_fg42_magcover_std"/>
+				<value_node value="wpn_fps_lmg_fg42_hg_std"/>
+				<value_node value="wpn_fps_lmg_fg42_bp_std"/>
+				<value_node value="wpn_fps_lmg_fg42_mag_std"/>
+				<value_node value="wpn_fps_lmg_fg42_trigger_std"/>
+				<value_node value="wpn_fps_lmg_fg42_bolt_std"/>
+				<value_node value="wpn_fps_lmg_fg42_ro_std"/>
+				<value_node value="wpn_fps_lmg_fg42_o_dummy"/>
+				
+			</default_blueprint>
+
+			<uses_parts>
+			
+				<value_node value="wpn_fps_lmg_fg42_frame_std"/>
+				<value_node value="wpn_fps_lmg_fg42_stock_std"/>
+				<value_node value="wpn_fps_lmg_fg42_md_std"/>
+				<value_node value="wpn_fps_lmg_fg42_barrel_std"/>
+				<value_node value="wpn_fps_lmg_fg42_bayonet_std"/>
+				<value_node value="wpn_fps_lmg_fg42_grip_std"/>
+				<value_node value="wpn_fps_lmg_fg42_fo_std"/>
+				<value_node value="wpn_fps_lmg_fg42_fsl_std"/>
+				<value_node value="wpn_fps_lmg_fg42_magcover_std"/>
+				<value_node value="wpn_fps_lmg_fg42_hg_std"/>
+				<value_node value="wpn_fps_lmg_fg42_bp_std"/>
+				<value_node value="wpn_fps_lmg_fg42_mag_std"/>
+				<value_node value="wpn_fps_lmg_fg42_trigger_std"/>
+				<value_node value="wpn_fps_lmg_fg42_bolt_std"/>
+				<value_node value="wpn_fps_lmg_fg42_ro_std"/>
+				<value_node value="wpn_fps_lmg_fg42_o_dummy"/>
+				
+				<value_node value="wpn_fps_lmg_fg42_bayonet_equip"/>
+				<value_node value="wpn_fps_lmg_fg42_mag_short"/>
+				<value_node value="wpn_fps_lmg_fg42_so_custom"/>
+				<value_node value="wpn_fps_lmg_fg42_so_waw"/>
+				<value_node value="wpn_fps_lmg_fg42_bp_non"/>
+				<value_node value="wpn_fps_lmg_fg42_o_zf4"/>
+				<value_node value="wpn_fps_lmg_fg42_o_zfg42"/>
+				<value_node value="wpn_fps_lmg_fg42_frame_early"/>
+				<!--<value_node value="wpn_fps_lmg_fg42_gl_grenade_std"/>-->
+				
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				
+			</uses_parts>
+		</factory>
+		<stance>
+			<steelsight>
+				<shoulders rotation="-0.000785398 -2.74156e-007 -0.000349066 -1" translation="-9.45 -6 4.65"/>
+			</steelsight>
+			<standard>
+				<shoulders rotation="0 -0 0 -1" translation="-0.43 2.784 -0.21"/>
+			</standard>
+			<crouched>
+				<shoulders rotation="0 -0 0 -1" translation="-1.43 -0.216 -0.21"/>
+			</crouched>
+			<bipod>
+				<shoulders rotation="-0.000736636 0.005481 0.000929672 -0.999984" translation="3.281 -5.705 -6.185"/>
+			</bipod>
+		</stance>
+
+	</Weapon>
+	
+	<Sounds directory="assets\sounds">
+		<sound id="fg42_fire" path="fg42_fire.ogg" 	prefix="regular"/>
+		<sound id="fg42_fire" path="fg42_sup.ogg" 	prefix="suppressed_a"/>
+		<sound id="fg42_fire" path="fg42_sup.ogg" 	prefix="suppressed_b"/>
+		<sound id="fg42_fire" path="fg42_sup.ogg" 	prefix="suppressed_c"/>
+		<sound id="wp_fg42_mag_out"  	path="wp_fg42_mag_out.ogg" prefix="first"/>
+		<sound id="wp_fg42_mag_out"  	path="wp_fg42_mag_out.ogg" prefix="third"/>
+		<sound id="wp_fg42_mag_in"  	path="wp_fg42_mag_in.ogg" prefix="first"/>
+		<sound id="wp_fg42_mag_in"  	path="wp_fg42_mag_in.ogg" prefix="third"/>
+		<sound id="wp_fg42_bolt_back"  	path="wp_fg42_bolt_back.ogg" prefix="first"/>
+		<sound id="wp_fg42_bolt_back"  	path="wp_fg42_bolt_back.ogg" prefix="third"/>
+		<sound id="wp_fg42_mag_in_hit"  	path="wp_fg42_mag_in_hit.ogg" prefix="first"/>
+		<sound id="wp_fg42_mag_in_hit"  	path="wp_fg42_mag_in_hit.ogg" prefix="third"/>
+		
+		<sound id="fg42_fire_waw" path="fg42_fire_waw.ogg" 	prefix="regular"/>
+		<sound id="fg42_fire_waw" path="fg42_sup.ogg" 	prefix="suppressed_a"/>
+		<sound id="fg42_fire_waw" path="fg42_sup.ogg" 	prefix="suppressed_b"/>
+		<sound id="fg42_fire_waw" path="fg42_sup.ogg" 	prefix="suppressed_c"/>
+		<sound id="wp_fg42_mag_out_waw"  	path="wp_fg42_mag_out_waw.ogg" prefix="first"/>
+		<sound id="wp_fg42_mag_out_waw"  	path="wp_fg42_mag_out_waw.ogg" prefix="third"/>
+		<sound id="wp_fg42_mag_in_waw"  	path="wp_fg42_mag_in_waw.ogg" prefix="first"/>
+		<sound id="wp_fg42_mag_in_waw"  	path="wp_fg42_mag_in_waw.ogg" prefix="third"/>
+		<sound id="wp_fg42_bolt_back_waw"  	path="wp_fg42_bolt_back_waw.ogg" prefix="first"/>
+		<sound id="wp_fg42_bolt_back_waw"  	path="wp_fg42_bolt_back_waw.ogg" prefix="third"/>
+		<sound id="wp_fg42_bolt_release_waw"  	path="wp_fg42_bolt_release_waw.ogg" prefix="first"/>
+		<sound id="wp_fg42_bolt_release_waw"  	path="wp_fg42_bolt_release_waw.ogg" prefix="third"/>
+		<sound id="wp_fg42_mag_in_hit_waw"  	path="wp_fg42_mag_in_hit_waw.ogg" prefix="first"/>
+		<sound id="wp_fg42_mag_in_hit_waw"  	path="wp_fg42_mag_in_hit_waw.ogg" prefix="third"/>
+	</Sounds>
+	
+	<AddFiles directory="assets">
+	
+		<animation path="anims/fps/fg42/fg42_reload" load="true"/>
+		<animation path="anims/fps/fg42/fg42_reload_not_empty" load="true"/>
+	
+		<cooked_physics  path="units/mods/weapons/wpn_fps_lmg_fg42/wpn_fps_lmg_fg42"/>
+		<model           path="units/mods/weapons/wpn_fps_lmg_fg42/wpn_fps_lmg_fg42"/>
+		<object          path="units/mods/weapons/wpn_fps_lmg_fg42/wpn_fps_lmg_fg42"/>
+		<unit            path="units/mods/weapons/wpn_fps_lmg_fg42/wpn_fps_lmg_fg42"/>
+		<unit            path="units/mods/weapons/wpn_fps_lmg_fg42/wpn_fps_lmg_fg42_npc"/>
+		
+		<df_nm         path="units/mods/weapons/wpn_fps_lmg_fg42_pts/fg42_std"/>
+		<df_nm         path="units/mods/weapons/wpn_fps_lmg_fg42_pts/fg42_early"/>
+		<df_nm         path="units/mods/weapons/wpn_fps_lmg_fg42_pts/bullet_std"/>
+		<df_nm         path="units/mods/weapons/wpn_fps_lmg_fg42_pts/fg42_glass"/>
+		<df_nm         path="units/mods/weapons/wpn_fps_lmg_fg42_pts/fg42_zf4"/>
+		<df_nm         path="units/mods/weapons/wpn_fps_lmg_fg42_pts/fg42_zfg42"/>
+		
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/fg42_std"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/fg42_early"/>
+		
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_frame_std"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_stock_std"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_md_std"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_barrel_std"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_bayonet_std"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_grip_std"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_fo_std"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_fsl_std"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_magcover_std"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_hg_std"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_bp_std"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_trigger_std"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_mag_std"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_bolt_std"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_ro_std"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_bayonet_equip"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_mag_short"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_bp_non"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_o_zf4"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_o_zfg42"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_ro_fold"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_fo_fold"/>
+		
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_frame_early"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_stock_early"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_md_early"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_grip_early"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_fo_early"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_fsl_early"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_hg_early"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_trigger_early"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_ro_early"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_bolt_early"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_mag_early"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_barrel_early"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_bp_early"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_fo_early_fold"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_ro_early_fold"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_mag_short_early"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_bayonet_early"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_bayonet_equip_early"/>
+		
+	<!--	<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_barrel_early"/>
+	<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_bp_early"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_bolt_early"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_gl_grenade_std"/>
+		<unit_obj path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_gl_launcher"/>-->
+				
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_frame_std_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_stock_std_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_md_std_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_barrel_std_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_bayonet_std_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_grip_std_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_hg_std_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_magcover_std_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_fo_std_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_fsl_std_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_bp_std_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_mag_std_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_trigger_std_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_bolt_std_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_ro_std_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_bayonet_equip_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_mag_short_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_bp_non_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_o_zf4_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_o_zfg42_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_ro_fold_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_fo_fold_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_gl_grenade_std_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_gl_launcher_thq"/>
+				
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_frame_early_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_stock_early_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_md_early_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_grip_early_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_fo_early_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_fsl_early_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_hg_early_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_trigger_early_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_ro_early_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_bolt_early_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_mag_early_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_barrel_early_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_bp_early_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_fo_early_fold_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_ro_early_fold_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_mag_short_early_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_bayonet_early_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_fg42_pts/wpn_fps_lmg_fg42_bayonet_equip_early_thq"/>
+		
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/fg42"/>
+		
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_fg42_bayonet_equip"/> 
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_fg42_mag_short"/> 
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_fg42_so_custom"/> 
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_fg42_so_waw"/> 
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_fg42_bp_non"/> 
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_fg42_o_zf4"/> 
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_fg42_o_zfg42"/> 
+        <texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_fg42_frame_early"/> 
+	</AddFiles>
+	
+	<Hooks directory="hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="weapontweakdata.lua"        source_file="lib/tweak_data/weapontweakdata"/>
+	</Hooks>
+	
+</table>

@@ -1,0 +1,7 @@
+<materials version="3" group="weapon">
+	<material name="mat_k50m" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_smg_ppsh_pts/textures/k50m_df"/>
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_smg_ppsh_pts/textures/k50m_nm"/>
+		<material_texture file="units/mods/weapons/wpn_fps_smg_ppsh_pts/textures/k50m_gsma"/>
+	</material>
+</materials>

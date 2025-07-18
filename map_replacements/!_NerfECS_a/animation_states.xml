@@ -1,0 +1,491 @@
+<?xml version="1.0"?>
+<tweaks>
+	<!--
+		I've put this tweak first because it is the most important.
+		This section defines what should happen when particular animation triggers are reached in your reload animations. Generally, this is used for sounds.
+		Unlike the other files, simply replacing 'example' with your animation ID will likely not work for you, since different animations use different triggers.
+	-->
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+		
+		<!--
+			Put your tweaks within the <target> section below.
+			If you're using an existing animation as a basis for your custom one, you can copy the appropriate reload states from 'anims/fps/fps_spawn.animation_states'.
+			Just make sure to edit the 'anim_name' to match yours.
+		
+			Otherwise, you can manually edit the trigger names and sounds using the code below as reference.
+			'trigger' is for the name of the trigger in your animation, 'param1' corresponds to the sound ID. You can safely ignore the other parameters.
+			Make sure you keep the 'anim_clbk_stop_weapon_magazine_empty' and 'bullet_show' triggers intact.
+		-->
+		
+		<target mode="append">
+			<state name="fps/reload/stampede_ecs" type="once" segment="base" speed="1.0">
+				<anim name="stampede_ecs_reload"/>
+				<keys>
+					<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>	
+					
+			<key at="trigger" trigger="wp_stampede_ecs_start_foley" callback="play_sound" class_name="base" param1="stampede_ecs_start_foley"/>
+			<key at="trigger" trigger="wp_stampede_ecs_tilt" callback="play_sound" class_name="base" param1="stampede_ecs_tilt"/>
+			<key at="trigger" trigger="wp_stampede_ecs_mag_out" callback="play_sound" class_name="base" param1="stampede_ecs_magout"/>
+			<key at="trigger" trigger="wp_stampede_ecs_tilt_back" callback="play_sound" class_name="base" param1="stampede_ecs_tilt_back"/>
+			<key at="trigger" trigger="wp_stampede_ecs_take_new" callback="play_sound" class_name="base" param1="stampede_ecs_mag_take_new"/>
+			<key at="trigger" trigger="wp_stampede_ecs_mag_contact" callback="play_sound" class_name="base" param1="stampede_ecs_mag_contact"/>
+			<key at="trigger" trigger="wp_stampede_ecs_mag_slide_in" callback="play_sound" class_name="base" param1="stampede_ecs_magin"/>
+			<key at="trigger" trigger="wp_stampede_ecs_bolt_release" callback="play_sound" class_name="base" param1="stampede_ecs_bolt_catch_smack"/>	
+			<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="stampede_ecs_back_in_hand"/>
+			<key at="trigger" trigger="wp_stampede_ecs_end_foley" callback="play_sound" class_name="base" param1="stampede_ecs_end_foley"/>
+					
+					<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+
+			<state name="fps/reload_not_empty/stampede_ecs" type="once" segment="base" speed="1.0">
+				<anim name="stampede_ecs_reload_not_empty"/>
+				<keys>
+					<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>	
+					
+			<key at="trigger" trigger="wp_stampede_ecs_tilt" callback="play_sound" class_name="base" param1="stampede_ecs_tilt"/>
+			<key at="trigger" trigger="wp_stampede_ecs_mag_out" callback="play_sound" class_name="base" param1="stampede_ecs_mag_out_tactical"/>
+			<key at="trigger" trigger="wp_stampede_ecs_tilt_back" callback="play_sound" class_name="base" param1="stampede_ecs_tilt_back"/>
+			<key at="trigger" trigger="wp_stampede_ecs_take_new" callback="play_sound" class_name="base" param1="stampede_ecs_mag_take_new"/>
+			<key at="trigger" trigger="wp_stampede_ecs_mag_contact" callback="play_sound" class_name="base" param1="stampede_ecs_mag_contact"/>
+			<key at="trigger" trigger="wp_stampede_ecs_mag_slide_in" callback="play_sound" class_name="base" param1="stampede_ecs_magin"/>
+			<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="stampede_ecs_back_in_hand"/>
+			<key at="trigger" trigger="wp_stampede_ecs_end_foley" callback="play_sound" class_name="base" param1="stampede_ecs_end_foley"/>
+					
+					<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+		</target>
+		
+	</tweak>
+	
+	<!--
+		From this point on, you can replace every instance of 'stampede_ecs' below with the ID of your animation.
+		I recommend just using the Replace All window (CTRL + H in most editors) to avoid having to manually edit them.
+		Feel free to read each section if you want to make additional edits though.
+	-->
+	
+	<!--Redirects these two names to the appropriate reload states.-->
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+		<target mode="attach">
+			<to name="reload_stampede_ecs" 						redirect="fps/reload/stampede_ecs"/>
+			<to name="reload_not_empty_stampede_ecs" 			redirect="fps/reload_not_empty/stampede_ecs"/>
+		</target>
+	</tweak>
+	
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil"/>
+			<anim name="m4_recoil" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_recoil" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil_steelsight"/>
+			<anim name="m4_recoil" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_recoil_steelsight" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil_enter"/>
+			<anim name="m4_recoil_enter" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_recoil_enter" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil_loop"/>
+			<anim name="m4_recoil_loop" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_recoil_loop" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil_exit"/>
+			<anim name="m4_recoil_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_recoil_exit" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+	
+
+ <!-- draw edit starts here -->
+ 
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/equip"/>
+			<anim name="sub2000_equip" weight="sub2000"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_equip" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/equip"/>
+			<keys/>
+       		<key at="trigger" trigger="peacemaker_equip" callback="play_sound" class_name="base" param1="pmkr45_equip"/>
+		</search>
+		<target mode="append">
+			<key at="trigger" trigger="wp_stampede_ecs_bolt_back" callback="play_sound" class_name="base" param1="stampede_ecs_bolt_back"/>
+			<key at="trigger" trigger="wp_stampede_ecs_bolt_release" callback="play_sound" class_name="base" param1="stampede_ecs_bolt_release"/>
+			<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="stampede_ecs_back_in_hand"/>
+			<key at="trigger" trigger="wp_stampede_ecs_end_foley" callback="play_sound" class_name="base" param1="stampede_ecs_end_foley"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+		<target mode="attach">
+			<to name="reload_stampede_ecs"				redirect="fps/reload/stampede_ecs"/>
+			<to name="reload_not_empty_stampede_ecs"	redirect="fps/reload_not_empty/stampede_ecs"/>
+			<to name="equip_stampede_ecs"				redirect="fps/equip/stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/idle"/>
+			<anim name="m4_idle" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_idle" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/unequip"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_unequip" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/start_running"/>
+			<anim name="m4_sprint_enter" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_sprint_enter" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/running"/>
+			<anim name="m4_sprint" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_sprint" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/stop_running"/>
+			<anim name="m4_sprint_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_sprint_exit" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_unequip" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee_exit"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_equip" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee"/>
+			<anim name="m4_melee" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_melee" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee_miss"/>
+			<anim name="m4_melee_miss" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_melee_miss" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/use"/>
+			<anim name="m4_use" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_use" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/down"/>
+			<anim name="m4_com_down_var1" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_com_down_var1" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/stop"/>
+			<anim name="m4_com_stop" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_com_stop" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/come"/>
+			<anim name="m4_com_come" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_com_come" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/point"/>
+			<anim name="m4_com_point" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_com_point" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/get_up"/>
+			<anim name="m4_get_up" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_get_up" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/gogo"/>
+			<anim name="m4_gogo" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_gogo" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_projectile_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_unequip" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_projectile_exit"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_equip" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_grenade_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_unequip" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_molotov_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_unequip" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_concussion_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_unequip" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_dada_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_unequip" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_grenade_exit"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_equip" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/tased"/>
+			<anim name="m4_tased" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_tased" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/tased_boost"/>
+			<anim name="m4_tased_boost" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_tased_boost" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/tased_exit"/>
+			<anim name="m4_tased_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_tased_exit" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/enter_tazer_counter"/>
+			<anim name="m4_tased_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_tased_exit" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/cash_inspect"/>
+			<anim name="glock_inspect" weight="glock"/>
+		</search>
+		<target mode="append">
+			<anim name="stampede_ecs_inspect" weight="stampede_ecs"/>
+		</target>
+	</tweak>
+</tweaks>

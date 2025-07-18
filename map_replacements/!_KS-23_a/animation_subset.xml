@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+		<target mode="attach">
+			<anim name="ks23_idle"					file="anims/fps/ks23/ks23_idle" blend_set="all"/>
+			<anim name="ks23_reload"				file="anims/fps/ks23/ks23_reload_enter" blend_set="all"/>
+			<anim name="ks23_reload_not_empty" 		file="anims/fps/ks23/ks23_reload_enter" blend_set="all"/>
+			<anim name="ks23_reload_enter" 			file="anims/fps/ks23/ks23_reload_enter" blend_set="all"/>
+			<anim name="ks23_reload_loop" 			file="anims/fps/ks23/ks23_reload_loop" blend_set="all"/>
+			<anim name="ks23_reload_exit" 			file="anims/fps/ks23/ks23_reload_exit" blend_set="all"/>
+			<anim name="ks23_reload_not_empty_exit" file="anims/fps/ks23/ks23_reload_exit_not_empty" blend_set="all"/>
+			<anim name="ks23_equip" 				file="anims/fps/ks23/ks23_equip" blend_set="all"/>
+			<anim name="ks23_unequip" 				file="anims/fps/ks23/ks23_unequip" blend_set="all"/>
+			<anim name="ks23_recoil" 				file="anims/fps/ks23/ks23_recoil" blend_set="all"/>
+			<anim name="ks23_recoil_steelsight" 	file="anims/fps/ks23/ks23_recoil_steelsight" blend_set="all"/>
+			<anim name="ks23_melee" 				file="anims/fps/ks23/ks23_melee" blend_set="all"/>
+			<anim name="ks23_melee_miss" 			file="anims/fps/ks23/ks23_melee_miss" blend_set="all"/>
+			<anim name="ks23_use" 					file="anims/fps/ks23/ks23_use" blend_set="all"/>
+			<anim name="ks23_sprint" 				file="anims/fps/ks23/ks23_sprint" blend_set="all"/>
+			<anim name="ks23_sprint_exit" 			file="anims/fps/ks23/ks23_sprint_exit" blend_set="all"/>
+			<anim name="ks23_sprint_enter" 			file="anims/fps/ks23/ks23_sprint_enter" blend_set="all"/>
+			<anim name="ks23_com_down_var1" 		file="anims/fps/ks23/ks23_com_var1" blend_set="all"/>
+			<anim name="ks23_com_stop" 				file="anims/fps/ks23/ks23_com_var5" blend_set="all"/>
+			<anim name="ks23_com_come" 				file="anims/fps/ks23/ks23_com_var6" blend_set="all"/>
+			<anim name="ks23_com_point" 			file="anims/fps/ks23/ks23_com_var7" blend_set="all"/>
+			<anim name="ks23_get_up" 				file="anims/fps/ks23/ks23_get_up" blend_set="all"/>
+			<anim name="ks23_gogo" 					file="anims/fps/ks23/ks23_gogo" blend_set="all"/>
+			<anim name="ks23_tased" 				file="anims/fps/ks23/ks23_tased" blend_set="all"/>
+			<anim name="ks23_tased_boost" 			file="anims/fps/ks23/ks23_tased_boost" blend_set="all"/>
+			<anim name="ks23_tased_exit" 			file="anims/fps/ks23/ks23_tased_exit" blend_set="all"/>
+			<anim name="ks23_inspect"				file="anims/fps/ks23/ks23_inspect" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

@@ -1,0 +1,32 @@
+<materials version="3" group="weapon_group">
+    <material name="mtr_mawl" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/mawl_df" mip="1"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/mawl_nm" mip="1"/>
+    </material>
+    <material name="mtr_light" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/mawl_light_df" mip="1"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/mawl_light_nm" mip="1"/>
+    </material>
+    <material name="mtr_mawlwindow" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:FPS" decal_material="glass_breakable" version="2">
+        <diffuse_texture file="units/payday2/weapons/wpn_effects_textures/green_glass_df" mip="1"/>
+        <opacity_texture file="units/pd2_dlc_bbq/weapons/molotov_cocktail/textures/wpn_fps_molotov_glass_op"/>
+        <reflection_texture type="cubemap" global_texture="current_global_texture"/>
+        <variable type="vector3" name="fresnel_settings" value="0.9 0 1"/>
+    </material>
+
+    <material name="laser" version="2" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:FPS:VIEW_ANGLE_FALLOFF_OP">
+        <variable value="match" type="scalar" name="intensity"/>
+        <diffuse_texture file="units/payday2/weapons/wpn_effects_textures/wpn_effect_green_il"/>
+        <variable value="1" type="scalar" name="falloff_exp"/>
+    </material>
+    <material name="indicator" version="2" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:FPS:VIEW_ANGLE_FALLOFF_OP">
+        <variable value="match" type="scalar" name="intensity"/>
+        <diffuse_texture file="units/payday2/weapons/wpn_effects_textures/wpn_effect_green_il"/>
+        <variable value="1" type="scalar" name="falloff_exp"/>
+    </material>
+    <material name="light" render_template="generic:SELF_ILLUMINATION" version="2">
+        <variable value="streetlight" type="scalar" name="il_multiplier"/>
+        <self_illumination_texture file="units/payday2/weapons/wpn_effects_textures/wpn_effect_flashlight_il"/>
+    </material>
+
+</materials>

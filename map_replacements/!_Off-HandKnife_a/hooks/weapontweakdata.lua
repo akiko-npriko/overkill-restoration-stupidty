@@ -1,0 +1,16 @@
+Hooks:PostHook(WeaponTweakData, "init", "KnifekModInit", function(self)
+	self.usp.animations.knife_anim = "pistolknife"
+	self.colt_1911.animations.knife_anim = "pistolknife"
+	self.p226.animations.knife_anim = "pistolknife"
+	self.hs2000.animations.knife_anim = "pistolknife"
+	self.deagle.animations.knife_anim = "pistolknifedeagle"
+	self.glock_17.animations.knife_anim = "pistolknifeglock"
+	self.glock_18c.animations.knife_anim = "pistolknifeglock"
+	self.g22c.animations.knife_anim = "pistolknifeglock"
+	self.g26.animations.knife_anim = "pistolknifeglock"
+	self.b92fs.animations.knife_anim = "pistolknifeglock"
+	self.shrew.animations.knife_anim = "pistolknifeglock"
+	self.pl14.animations.knife_anim = "pistolknifesparrow"
+	self.m1911.animations.knife_anim = "pistolknifesparrow"
+	self.sparrow.animations.knife_anim = "pistolknifesparrow"
+end)

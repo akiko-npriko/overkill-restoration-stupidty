@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+		<target mode="attach">
+			<anim name="hx25_idle"				file="anims/fps/hx25/hx25_idle" blend_set="all"/>
+			<anim name="hx25_recoil"			file="anims/fps/hx25/hx25_recoil" blend_set="all"/>
+			<anim name="hx25_recoil_steelsight"	file="anims/fps/hx25/hx25_recoil" blend_set="all"/>
+			<anim name="hx25_equip"				file="anims/fps/hx25/hx25_equip" blend_set="all"/>
+			<anim name="hx25_unequip"			file="anims/fps/glock/glock_unequip" blend_set="all"/>
+			<anim name="hx25_reload"			file="anims/fps/hx25/hx25_reload" blend_set="all"/>
+			<anim name="hx25_reload_not_empty"	file="anims/fps/hx25/hx25_reload" blend_set="all"/>
+			<anim name="hx25_melee"				file="anims/fps/glock/glock_melee" blend_set="all"/>
+			<anim name="hx25_melee_miss"		file="anims/fps/glock/glock_melee_miss" blend_set="all"/>
+			<anim name="hx25_use"				file="anims/fps/glock/glock_use" blend_set="all"/>
+			<anim name="hx25_sprint_enter"		file="anims/fps/deagle/deagle_sprint_enter" blend_set="all"/>
+			<anim name="hx25_sprint"			file="anims/fps/deagle/deagle_sprint" blend_set="all"/>
+			<anim name="hx25_sprint_exit"		file="anims/fps/deagle/deagle_sprint_exit" blend_set="all"/>
+			<anim name="hx25_com_down_var1"		file="anims/fps/glock/glock_com_var1" blend_set="all"/>
+			<anim name="hx25_com_stop"			file="anims/fps/glock/glock_com_var5" blend_set="all"/>
+			<anim name="hx25_com_come"			file="anims/fps/glock/glock_com_var6" blend_set="all"/>
+			<anim name="hx25_com_point"			file="anims/fps/glock/glock_com_var7" blend_set="all"/>
+			<anim name="hx25_get_up"			file="anims/fps/glock/glock_get_up" blend_set="all"/>
+			<anim name="hx25_gogo"				file="anims/fps/glock/glock_gogo" blend_set="all"/>
+			<anim name="hx25_tased"				file="anims/fps/glock/glock_tased" blend_set="all"/>
+			<anim name="hx25_tased_boost"		file="anims/fps/glock/glock_tased_boost" blend_set="all"/>
+			<anim name="hx25_tased_exit"		file="anims/fps/glock/glock_tased_exit" blend_set="all"/>
+			<anim name="hx25_inspect"			file="anims/fps/glock/glock_inspect" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

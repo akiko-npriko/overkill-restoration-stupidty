@@ -1,0 +1,1 @@
+LewisGunWeaponBase = LewisGunWeaponBase or class(NewRaycastWeaponBase)

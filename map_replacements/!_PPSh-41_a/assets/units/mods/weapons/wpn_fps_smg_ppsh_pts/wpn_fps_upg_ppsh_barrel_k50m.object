@@ -1,0 +1,12 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_smg_ppsh_pts/wpn_fps_upg_ppsh_barrel_k50m" orientation_object="rp_ppsh"/>
+	<animations>
+		<animation_group name="recoil">
+			<object name="anim_sling_recoil" enabled="true"/>
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_barrel_k50m" enabled="true"/>
+		<object name="g_barrel_k50m_sling" enabled="true"/>
+	</graphics>
+</dynamic_object>

@@ -1,0 +1,7 @@
+<materials version="3" group="weapon_group">
+	<material name="mat_magazine_01" render_template="generic:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_lmg_lewis_pts/textures/magazine_01_df" mip="1"/>
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_lmg_lewis_pts/textures/magazine_01_nm" mip="1"/>
+		<material_texture file="units/mods/weapons/wpn_fps_lmg_lewis_pts/textures/magazine_01_gsma" mip="1"/>
+	</material>
+</materials>

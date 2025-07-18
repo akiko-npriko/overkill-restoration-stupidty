@@ -1,0 +1,17 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_lmg_lewis_pts/wpn_fps_upg_lewis_bipod" orientation_object="rp_lewis"/>
+	<animations>
+		<animation_group name="deploy">
+			<object name="anim_legleft_deploy" enabled="true"/>
+			<object name="anim_legright_deploy" enabled="true"/>
+		</animation_group>
+		<animation_group name="undeploy">
+			<object name="anim_legleft_undeploy" enabled="true"/>
+			<object name="anim_legright_undeploy" enabled="true"/>
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_bipod_legleft" enabled="true"/>
+		<object name="g_bipod_legright" enabled="true"/>
+	</graphics>
+</dynamic_object>

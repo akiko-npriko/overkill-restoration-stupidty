@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<dynamic_object>
+  <diesel materials="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_receiver_lower" orientation_object="rp_receiver_lower" />
+     <animations>
+
+    <animation_group name="reload">
+      <object name="anim_reload_mag_release" enabled="true" />
+      <object name="anim_reload_empty_bolt_catch" enabled="true" />
+
+    </animation_group>    
+	<animation_group name="reload_not_empty">
+      <object name="anim_reload_not_empty_mag_release" enabled="true" />
+    </animation_group>
+  </animations>
+  <graphics>
+
+		<object  name="g_bolt_catch" enabled="true" />
+		<object  name="g_magazine_release" enabled="true" />
+		<object  name="g_lower" enabled="true" />
+		<object  name="g_selector" enabled="true" />
+		<object  name="g_trigger" enabled="true" />
+
+
+  </graphics>
+</dynamic_object>

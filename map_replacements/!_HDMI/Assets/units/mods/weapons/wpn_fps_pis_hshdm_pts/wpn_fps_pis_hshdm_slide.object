@@ -1,0 +1,26 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_pis_hshdm_pts/hshdm_slide" orientation_object="rp_wpn_fps_pis_breech_dh" />
+	<animations>
+		<animation_group name="reload">
+			<object name="anim_a1_reload" enabled="true" />
+			<object name="anim_a2_reload" enabled="true" />
+			<object name="anim_a3_reload" enabled="true" />
+		</animation_group>
+		<animation_group name="recoil">
+			<object name="anim_a1_recoil" enabled="true" />
+			<object name="anim_a2_recoil" enabled="true" />
+			<object name="anim_a3_recoil" enabled="true" />
+		</animation_group>
+		<animation_group name="last_recoil">
+			<object name="anim_a1_last_recoil" enabled="true" />
+			<object name="anim_a2_last_recoil" enabled="true" />
+			<object name="anim_a3_last_recoil" enabled="true" />
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_bolt" enabled="true" />
+		<object name="g_hinge" enabled="false" />
+		<object name="g_sight" enabled="false" />
+		<object name="g_barrel_base" enabled="false" />
+	</graphics>
+</dynamic_object>

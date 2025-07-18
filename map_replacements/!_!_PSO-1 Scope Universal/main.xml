@@ -1,0 +1,19 @@
+<mod name="PSO-1 Scope Universal" color="Color(248,0,0)">
+	<Localization directory="loc" default="english.txt"/>
+	<GlobalValue id="iuhPSO1Scope" color="Color(255, 215, 0)"/>
+    <AddFiles directory="assets" auto_generate="true"/>
+
+	<!--Scope-->	
+	<WeaponMod id="wpn_fps_upg_o_iuhPSO1Scope" based_on="wpn_fps_upg_o_aimpoint" steelsight_visible="false" reticle_obj = "false" inherit_weapons="true" inherit_adds="true" inherit_override="true" inherit_parts_override="true" inherit_parts_forbids="true" has_description = "true" global_value = "iuhPSO1Scope" ver="2">
+		<animations fire_steelsight = "recoil"/>		
+	</WeaponMod>
+
+	<Hooks directory="hooks">
+
+		<hook source_file="lib/units/beings/player/states/playerstandard" 			file="AllTheTweak.lua"/>
+		<hook source_file="lib/units/beings/player/playerdamage" 					file="AllTheTweak.lua"/>
+		<hook source_file="core/lib/managers/coreenvironmentcontrollermanager" 		file="AllTheTweak.lua"/>
+		<hook source_file="lib/managers/hudmanager" 								file="AllTheTweak.lua"/>
+		
+	</Hooks>
+</mod>

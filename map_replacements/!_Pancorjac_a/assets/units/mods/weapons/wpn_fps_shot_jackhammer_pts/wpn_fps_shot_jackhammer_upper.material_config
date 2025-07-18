@@ -1,0 +1,18 @@
+<materials version="3" group="weapon_group">
+	<material name="mat_barrel" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_shot_jackhammer_pts/textures/jackhammer_barrel_df"/>
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_shot_jackhammer_pts/textures/metal_surface_nm"/>
+	</material>
+	<material name="mat_frame" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_shot_jackhammer_pts/textures/jackhammer_frame_df"/>
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_shot_jackhammer_pts/textures/metal_surface_nm"/>
+	</material>
+	<material name="mat_mag" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_shot_jackhammer_pts/textures/jackhammer_mag_df"/>
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_shot_jackhammer_pts/textures/metal_surface_nm"/>
+	</material>
+	<material name="mat_stock" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_shot_jackhammer_pts/textures/jackhammer_mag_df"/>
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_shot_jackhammer_pts/textures/plastic_surface_nm"/>
+	</material>
+</materials>

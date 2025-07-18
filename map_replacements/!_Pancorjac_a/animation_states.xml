@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+		<target mode="append">
+			<state name="fps/reload/jackhammer" type="once" segment="base" speed="1.0">
+				<anim name="jackhammer_reload"/>
+				<keys>
+					<key at="trigger" trigger="wp_china_pull_handle" callback="play_sound" class_name="base" param1="wp_china_pull_handle"/>
+					<key at="trigger" trigger="wp_china_push_handle" callback="play_sound" class_name="base" param1="wp_china_push_handle"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_throw"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+					<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
+					<key at="trigger" trigger="wp_foley_generic_tilt_back" callback="play_sound" class_name="base" param1="wp_ak47_tilt_back"/>
+					<key at="trigger" trigger="wp_foley_generic_tilt" callback="play_sound" class_name="base" param1="wp_ak47_tilt"/>
+					<key at="trigger" trigger="wp_rota_grab_lift" callback="play_sound" class_name="base" param1="wp_rota_grab_lift"/>
+					<key at="trigger" trigger="wp_rota_rotate_mag" callback="play_sound" class_name="base" param1="wp_rota_rotate_mag"/>
+					<key at="trigger" trigger="wp_rota_slide_slide_in" callback="play_sound" class_name="base" param1="wp_rota_slide_slide_in"/>
+					<key at="trigger" trigger="wp_rota_slide_out" callback="play_sound" class_name="base" param1="wp_rota_slide_out"/>
+					<key at="trigger" trigger="wp_rota_mag_hit" callback="play_sound" class_name="base" param1="wp_rota_mag_hit"/>	
+					<key at="trigger" trigger="wp_rota_grab_end" callback="play_sound" class_name="base" param1="wp_rota_grab_end"/>
+					<key at="trigger" trigger="wp_rota_mag_drop" callback="play_sound" class_name="base" param1="wp_rota_mag_drop"/>			
+					<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+		<target mode="attach">
+			<to name="reload_jackhammer" 					redirect="fps/reload/jackhammer"/>
+			<to name="reload_not_empty_jackhammer" 			redirect="fps/reload/jackhammer"/>
+		</target>
+	</tweak>
+</tweaks>

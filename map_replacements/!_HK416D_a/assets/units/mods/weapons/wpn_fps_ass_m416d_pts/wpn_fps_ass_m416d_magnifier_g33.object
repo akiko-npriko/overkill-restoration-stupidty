@@ -1,0 +1,29 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_ass_m416d_pts/wpn_fps_ass_m416d_magnifier_g33" orientation_object="rp_magnifier" />
+	<animations>
+		<animation_group name="flip_up">
+		  <object name="anim_up" enabled="true" />
+		  <object name="anim_snap" enabled="false" />
+		</animation_group>		
+		<animation_group name="flip_down">
+		  <object name="anim_down" enabled="true" />
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_wilcox_mount_topbase" enabled="true" />
+		<object name="g_wilcox_mount_top" enabled="true" />
+		<object name="g_eotech_g33" enabled="true" />
+		<object name="g_g33_lens_front" enabled="true" />
+		<object name="g_g33_lens_rear" enabled="true" />
+		<object name="g_wilcox_mount_base" enabled="true" />
+		
+		<object name="g_snap" enabled="false" />
+		
+		
+		<object name="g_screen" enabled="false" />
+		<object name="g_vr_phong" enabled="false" />
+		<object name="g_vr_lens" enabled="false" />
+		<object name="g_vr_sig" enabled="false" />
+		<object name="g_glass" enabled="true" />
+	</graphics>
+</dynamic_object>

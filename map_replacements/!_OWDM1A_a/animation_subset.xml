@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+			
+		<target mode="attach">
+			<anim name="owdm1a_reload_not_empty" 				file="anims/fps/owdm1a/owdm1a_reload_not_empty" blend_set="all"/>
+			<anim name="owdm1a_reload" 							file="anims/fps/owdm1a/owdm1a_reload" blend_set="all"/>
+			
+		
+		</target>
+	</tweak>
+</tweaks>

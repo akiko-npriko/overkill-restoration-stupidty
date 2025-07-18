@@ -1,0 +1,42 @@
+<unit type="wpn" slot="1">
+	<object file="units/mods/weapons/wpn_fps_ass_ma40_pts/wpn_fps_ass_ma40_shroud" />
+    <extensions>
+        <extension name="unit_data" class="ScriptUnitData" />
+        <extension name="base" class="WeaponLaser" />
+		<extension name="misriah_ammo_counter" class="MisriahAmmoGui" >
+			<var name="_gui_object" 			value="a_counter" />
+			<var name="font_name" 				value="fonts/font_eurostile" />
+			<var name="font_size" 				value="44" />
+			<var name="font_color"				value="ffffff" type="string"/>
+			<var name="font_offset_x"			value="6" />
+			<var name="font_offset_y"			value="-30" />
+			<var name="font_blend_mode"			value="add" />
+			<var name="font_monospace"			value="true" type="boolean"/>
+			<var name="font_kern"				value="-12" />
+			<var name="halign"					value="center" />
+			<var name="valign"					value="bottom" />
+			<var name="num_characters"			value="2" />
+			<var name="local_offset_position_x"	value="0" />
+			<var name="local_offset_position_y"	value="1.88" />
+			<var name="local_offset_position_z"	value="5.5" />
+			<var name="offset_position_x"		value="0" />
+			<var name="offset_position_y"		value="-1.25" />
+			<var name="offset_position_z"		value="-0.7" />
+			<var name="offset_rotation_yaw"		value="0" />
+			<var name="offset_rotation_pitch"	value="64" />
+			<var name="offset_rotation_roll"	value="0" />
+			<var name="PANEL_WIDTH"				value="100" />
+			<var name="PANEL_HEIGHT"			value="200" />
+			<var name="WORLD_WIDTH"				value="2" />
+			<var name="WORLD_HEIGHT"			value="4" />
+			<var name="ext_update_enabled"		value="true" type="boolean"/>
+			<var name="compass_center_x"		value="50"/>
+			<var name="compass_center_y"		value="60"/>
+			<var name="compass_w"				value="21"/>
+			<var name="compass_h"				value="26"/>
+			<var name="compass_enabled"			value="true" type="boolean"/>
+			<var name="compass_bitmap"			value="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_compass"/>
+			<var name="compass_color"			value="42b2bb" type="string"/>
+		</extension>
+    </extensions>
+</unit>

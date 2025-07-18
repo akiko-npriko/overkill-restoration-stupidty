@@ -1,0 +1,26 @@
+<materials version="3" group="weapon_lemming">
+
+	<material name="mtr_ma40_magazine" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+  		<diffuse_texture 		file="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_magazine_df" />
+		<bump_normal_texture 	file="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_magazine_nm" />
+        <material_texture	 	file="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_magazine_gsma"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/weapon_metal_cubemap"/>
+    </material>	
+	<material name="mtr_ammo_762n" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+  		<diffuse_texture 		file="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/mw2022_762_nato_df" />
+		<bump_normal_texture 	file="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/mw2022_762_nato_nm" />
+        <material_texture	 	file="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/mw2022_762_nato_gsma"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/weapon_metal_cubemap"/>
+    </material>	
+
+	<material name="mtr_ma40_decals_001" render_template="decal:DIFFUSE_TEXTURE:RL_FPS_WEAPON" version="2">
+        <diffuse_texture 		file="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_decals_001_df"/>
+    </material>	
+	<material name="mtr_ma40_decals_002" render_template="decal:DIFFUSE_TEXTURE:RL_FPS_WEAPON" version="2">
+        <diffuse_texture 		file="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_decals_002_df"/>
+    </material>	
+	<material name="mtr_ma40_decals_003" render_template="decal:DIFFUSE_TEXTURE:RL_FPS_WEAPON" version="2">
+        <diffuse_texture 		file="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_decals_003_df"/>
+    </material>	
+
+</materials>

@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+			
+		<target mode="attach">
+			<anim name="l403a1_reload" 								file="anims/fps/l403a1/l403a1_reload" blend_set="all"/>
+			<anim name="l403a1_reload_not_empty" 						file="anims/fps/l403a1/l403a1_reload_not_empty" blend_set="all"/>
+			<anim name="l403a1_idle" 									file="anims/fps/l403a1/l403a1_idle" blend_set="all"/>
+			<anim name="l403a1_recoil" 								file="anims/fps/l403a1/l403a1_recoil" blend_set="all"/>
+			<anim name="l403a1_recoil_enter" 							file="anims/fps/l403a1/l403a1_recoil_enter" blend_set="all"/>
+			<anim name="l403a1_recoil_loop" 							file="anims/fps/l403a1/l403a1_recoil_loop" blend_set="all"/>
+			<anim name="l403a1_recoil_exit" 							file="anims/fps/l403a1/l403a1_recoil_exit" blend_set="all"/>
+			<anim name="l403a1_recoil_steelsight" 					file="anims/fps/l403a1/l403a1_recoil" blend_set="all"/>
+			<anim name="l403a1_equip" 								file="anims/fps/l403a1/l403a1_equip" blend_set="all"/>
+			<anim name="l403a1_unequip" 								file="anims/fps/l403a1/l403a1_unequip" blend_set="all"/>
+			<anim name="l403a1_melee" 								file="anims/fps/l403a1/l403a1_melee" blend_set="all"/>
+			<anim name="l403a1_melee_miss" 							file="anims/fps/l403a1/l403a1_melee_miss" blend_set="all"/>
+			<anim name="l403a1_use" 									file="anims/fps/l403a1/l403a1_use" blend_set="all"/>
+			<anim name="l403a1_sprint_enter" 							file="anims/fps/l403a1/l403a1_sprint_enter" blend_set="all"/>
+			<anim name="l403a1_sprint" 								file="anims/fps/l403a1/l403a1_sprint" blend_set="all"/>
+			<anim name="l403a1_sprint_exit" 							file="anims/fps/l403a1/l403a1_sprint_exit" blend_set="all"/>
+			<anim name="l403a1_com_down_var1" 						file="anims/fps/l403a1/l403a1_com_var1" blend_set="all"/>
+			<anim name="l403a1_com_stop" 								file="anims/fps/l403a1/l403a1_com_var5" blend_set="all"/>
+			<anim name="l403a1_com_come" 								file="anims/fps/l403a1/l403a1_com_var6" blend_set="all"/>
+			<anim name="l403a1_com_point" 							file="anims/fps/l403a1/l403a1_com_var7" blend_set="all"/>
+			<anim name="l403a1_get_up" 								file="anims/fps/l403a1/l403a1_get_up" blend_set="all"/>
+			<anim name="l403a1_gogo" 									file="anims/fps/l403a1/l403a1_gogo" blend_set="all"/>
+			<anim name="l403a1_tased" 								file="anims/fps/l403a1/l403a1_tased" blend_set="all"/>
+			<anim name="l403a1_tased_boost" 							file="anims/fps/l403a1/l403a1_tased_boost" blend_set="all"/>
+			<anim name="l403a1_tased_exit" 							file="anims/fps/l403a1/l403a1_tased_exit" blend_set="all"/>
+			<anim name="l403a1_inspect" 								file="anims/fps/l403a1/l403a1_inspect" blend_set="all"/> 
+			
+			<anim name="l403a1_vg_reload" 							file="anims/fps/l403a1_vg/l403a1_vg_reload" blend_set="all"/>
+			<anim name="l403a1_vg_reload_not_empty" 					file="anims/fps/l403a1_vg/l403a1_vg_reload_not_empty" blend_set="all"/>
+			<anim name="l403a1_vg_idle" 								file="anims/fps/l403a1_vg/l403a1_vg_idle" blend_set="all"/>
+			<anim name="l403a1_vg_recoil" 							file="anims/fps/l403a1_vg/l403a1_vg_recoil" blend_set="all"/>
+			<anim name="l403a1_vg_recoil_enter" 						file="anims/fps/l403a1_vg/l403a1_vg_recoil_enter" blend_set="all"/>
+			<anim name="l403a1_vg_recoil_loop" 						file="anims/fps/l403a1_vg/l403a1_vg_recoil_loop" blend_set="all"/>
+			<anim name="l403a1_vg_recoil_exit" 						file="anims/fps/l403a1_vg/l403a1_vg_recoil_exit" blend_set="all"/>
+			<anim name="l403a1_vg_recoil_steelsight" 				file="anims/fps/l403a1_vg/l403a1_vg_recoil" blend_set="all"/>
+			<anim name="l403a1_vg_equip" 							file="anims/fps/l403a1_vg/l403a1_vg_equip" blend_set="all"/>
+			<anim name="l403a1_vg_unequip" 							file="anims/fps/l403a1_vg/l403a1_vg_unequip" blend_set="all"/>
+			<anim name="l403a1_vg_melee" 							file="anims/fps/l403a1_vg/l403a1_vg_melee" blend_set="all"/>
+			<anim name="l403a1_vg_melee_miss" 						file="anims/fps/l403a1_vg/l403a1_vg_melee_miss" blend_set="all"/>
+			<anim name="l403a1_vg_use" 								file="anims/fps/l403a1_vg/l403a1_vg_use" blend_set="all"/>
+			<anim name="l403a1_vg_sprint_enter" 						file="anims/fps/l403a1_vg/l403a1_vg_sprint_enter" blend_set="all"/>
+			<anim name="l403a1_vg_sprint" 							file="anims/fps/l403a1_vg/l403a1_vg_sprint" blend_set="all"/>
+			<anim name="l403a1_vg_sprint_exit" 						file="anims/fps/l403a1_vg/l403a1_vg_sprint_exit" blend_set="all"/>
+			<anim name="l403a1_vg_com_down_var1" 					file="anims/fps/l403a1_vg/l403a1_vg_com_var1" blend_set="all"/>
+			<anim name="l403a1_vg_com_stop" 							file="anims/fps/l403a1_vg/l403a1_vg_com_var5" blend_set="all"/>
+			<anim name="l403a1_vg_com_come" 							file="anims/fps/l403a1_vg/l403a1_vg_com_var6" blend_set="all"/>
+			<anim name="l403a1_vg_com_point" 						file="anims/fps/l403a1_vg/l403a1_vg_com_var7" blend_set="all"/>
+			<anim name="l403a1_vg_get_up" 							file="anims/fps/l403a1_vg/l403a1_vg_get_up" blend_set="all"/>
+			<anim name="l403a1_vg_gogo" 								file="anims/fps/l403a1_vg/l403a1_vg_gogo" blend_set="all"/>
+			<anim name="l403a1_vg_tased" 							file="anims/fps/l403a1_vg/l403a1_vg_tased" blend_set="all"/>
+			<anim name="l403a1_vg_tased_boost" 						file="anims/fps/l403a1_vg/l403a1_vg_tased_boost" blend_set="all"/>
+			<anim name="l403a1_vg_tased_exit" 						file="anims/fps/l403a1_vg/l403a1_vg_tased_exit" blend_set="all"/>
+			<anim name="l403a1_vg_inspect" 							file="anims/fps/l403a1_vg/l403a1_vg_inspect" blend_set="all"/> 	
+		</target>
+	</tweak>
+</tweaks>

@@ -1,0 +1,266 @@
+<mod name="Halo Infinite MA40 Assault Rifle" author="RJC9000, Masavik, and Offyerrocker" min_lib_ver="3.38">
+	<Localization directory="loc" default="english.txt">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	<AssetUpdates id="31760" version="1.04" provider="modworkshop"/>
+	<GlobalValue id="ma40mod" color="Color(0.1, 0.1, 0.7)"/>
+
+<!--Default Mods-->
+	<WeaponMod id="wpn_fps_ass_ma40_barrel" 			based_on="wpn_fps_ass_contraband_b_standard" type="barrel" 	unit="units/mods/weapons/wpn_fps_ass_ma40_pts/wpn_fps_ass_ma40_barrel" hidden="true" ver="2"/>
+	<WeaponMod id="wpn_fps_ass_ma40_charging_handle" 	based_on="wpn_fps_ass_contraband_bolt_standard" type="bolt" 	unit="units/mods/weapons/wpn_fps_ass_ma40_pts/wpn_fps_ass_ma40_charging_handle" hidden="true" ver="2"/>	
+	<WeaponMod id="wpn_fps_ass_ma40_flash_hider" 		based_on="wpn_fps_upg_ass_ns_surefire" type="barrel_ext" 	unit="units/mods/weapons/wpn_fps_ass_ma40_pts/wpn_fps_ass_ma40_flash_hider" hidden="true" ver="2">	
+	</WeaponMod>	
+	<WeaponMod id="wpn_fps_ass_ma40_handguard"	 		based_on="wpn_fps_ass_contraband_fg_standard" type="foregrip" 	unit="units/mods/weapons/wpn_fps_ass_ma40_pts/wpn_fps_ass_ma40_handguard" hidden="true" inherit_adds="true" inherit_overrides="true" ver="2">	
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_ma40_magazine"			based_on="wpn_fps_ass_contraband_m_standard" type="magazine" 			unit="units/mods/weapons/wpn_fps_ass_ma40_pts/wpn_fps_ass_ma40_magazine" hidden="true" ver="2">	
+			<stats reload="1"/>
+	</WeaponMod>	
+	<WeaponMod id="wpn_fps_ass_ma40_receiver" 				based_on="wpn_fps_ass_contraband_body_standard" type="lower_reciever" 	unit="units/mods/weapons/wpn_fps_ass_ma40_pts/wpn_fps_ass_ma40_receiver" hidden="true" ver="2"/>
+	<WeaponMod id="wpn_fps_ass_ma40_shroud" 				based_on="wpn_fps_ass_contraband_fg_standard" a_obj="a_fl_top" type="shroud" 	unit="units/mods/weapons/wpn_fps_ass_ma40_pts/wpn_fps_ass_ma40_shroud" hidden="true" ver="2">
+	<stats damage="0"/>	
+		<perks>
+			<value_node value="gadget"/>
+		</perks>	
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_ma40_stock"			based_on="wpn_fps_ass_contraband_s_standard" type="stock" 		unit="units/mods/weapons/wpn_fps_ass_ma40_pts/wpn_fps_ass_ma40_stock" hidden="true" ver="2"/>
+	
+	<WeaponMod id="wpn_fps_ass_ma40_scope"				based_on="wpn_fps_ass_contraband_o_standard" type="sight" 		unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" scope_overlay="scope_overlay/ma40_scope_overlay" scope_overlay_border_color="Color(0,0,0,0)" steelsight_weapon_visible="true" has_description="true" hidden="true" global_value="ma40mod"  ver="2">
+		<stats zoom="3"/>
+	</WeaponMod>	
+	
+	<WeaponMod id="wpn_fps_ass_ma40_scope_ach"				based_on="wpn_fps_ass_contraband_o_standard" type="sight" 		unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" scope_overlay="scope_overlay/ma40_scope_overlay_ach" scope_overlay_border_color="Color(0,0,0,0)" steelsight_weapon_visible="true" has_description="true" drop="false" is_a_unlockable="true" global_value="ma40mod"  ver="2">
+		<stats zoom="3"/>
+	</WeaponMod>	
+
+	<WeaponMod id="wpn_fps_ass_ma40_flashlight" based_on="wpn_fps_upg_fl_ass_peq15_flashlight" type="gadget" subtype="flashlight" a_obj="a_fl" parent="foregrip" unit="units/pd2_dlc_gage_jobs/weapons/wpn_fps_upg_fl_ass_peq15/wpn_fps_upg_fl_ass_peq15_flashlight" has_description="true" hidden="false" ver="2">
+				<stats spread="1" recoil="-1" concealment="0"/>
+		<perks>
+			<value_node value="gadget"/>
+		</perks>	
+	</WeaponMod>
+	
+	
+<!--Weapon-->
+
+	<Weapon 	unlock_level="0">
+		<weapon id="ma40" based_on="corgi" weapon_hold="contraband" CLIP_AMMO_MAX="36" NR_CLIPS_MAX="5" armor_piercing_chance="1" global_value="ma40mod">
+			<stats damage="59" spread="12" spread_moving="15" recoil="18" concealment="17"/>
+			<fire_mode_data fire_rate="0.08"/>
+				<AMMO_PICKUP>
+				<value_node value="5.00"/>
+				<value_node value="6.50"/>
+			</AMMO_PICKUP>
+			<sounds fire="ma40_fire" fire_single="ma40_fire" fire_auto="ma40_fire" stop_fire="m16_stop" use_fix="true">
+			</sounds>
+			<kick>
+				<standing>
+					<value_node value="0.9"/>
+					<value_node value="1.0"/>
+					<value_node value="-0.10"/>
+					<value_node value="0.10"/>
+				</standing>
+				<crouching>
+					<value_node value="0.8"/>
+					<value_node value="0.9"/>
+					<value_node value="-0.05"/>
+					<value_node value="0.05"/>
+				</crouching>
+				<steelsight>
+					<value_node value="0.65"/>
+					<value_node value="0.70"/>
+					<value_node value="-0.05"/>
+					<value_node value="0.05"/>
+				</steelsight>
+			</kick>
+			<timers reload_not_empty="2.5" reload_empty="2.8" unequip="0.6" equip="0.6" />
+			<animations reload_name_id="ma40"/>
+		</weapon>
+		<factory id="wpn_fps_ass_ma40" unit="units/mods/weapons/wpn_fps_ass_ma40/wpn_fps_ass_ma40">
+			<animations reload="reload" fire="recoil" fire_steelsight="recoil" reload_not_empty="reload_not_empty" magazine_empty="last_recoil"/>
+				<adds/>
+			<override>	
+
+			</override>
+			<default_blueprint>
+				<value_node value="wpn_fps_ass_ma40_barrel"/>
+				<value_node value="wpn_fps_ass_ma40_charging_handle"/>
+				<value_node value="wpn_fps_ass_ma40_flash_hider"/>
+				<value_node value="wpn_fps_ass_ma40_flashlight"/>
+				<value_node value="wpn_fps_ass_ma40_handguard"/>
+				<value_node value="wpn_fps_ass_ma40_magazine"/>
+				<value_node value="wpn_fps_ass_ma40_receiver"/>
+				<value_node value="wpn_fps_ass_ma40_shroud"/>
+				<value_node value="wpn_fps_ass_ma40_stock"/>
+				<value_node value="wpn_fps_ass_ma40_scope"/>
+			
+				<value_node value="wpn_fps_upg_i_autofire"/>
+				
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_ass_ma40_barrel"/>
+				<value_node value="wpn_fps_ass_ma40_charging_handle"/>
+				<value_node value="wpn_fps_ass_ma40_flash_hider"/>
+				<value_node value="wpn_fps_ass_ma40_flashlight"/>
+				<value_node value="wpn_fps_ass_ma40_handguard"/>
+				<value_node value="wpn_fps_ass_ma40_magazine"/>
+				<value_node value="wpn_fps_ass_ma40_receiver"/>
+				<value_node value="wpn_fps_ass_ma40_shroud"/>
+				<value_node value="wpn_fps_ass_ma40_stock"/>
+				<value_node value="wpn_fps_ass_ma40_scope"/>
+				<value_node value="wpn_fps_ass_ma40_scope_ach"/>
+							
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_v6"/>
+				<value_node value="wpn_fps_ass_shak12_ns_muzzle"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/>
+				
+				<value_node value="wpn_fps_upg_i_autofire"/>
+				
+			</uses_parts>
+		</factory>
+	<stance>
+	<standard>
+			<shoulders rotation="-9.1081e-006 0.00437204 -8.73038e-005 -0.99999" translation="-1.766 -5.769 -1.838"/>
+		</standard>
+		<crouched>
+			<shoulders rotation="-8.72631e-006 0.00873526 -7.62296e-008 -0.999962" translation="-2.841 -10.769 -1.232"/>
+		</crouched>
+		<steelsight>
+			<shoulders rotation="-0 0 -0 -1" translation="-2.03 -13.784 -3.59"/>
+		</steelsight>
+	</stance>
+	</Weapon>
+
+
+
+	<Sounds directory="assets\sounds">	
+		<sound id="ma40_fire" path="ma40_fire.ogg" prefix="regular"/>
+		<sound id="ma40_fire" path="ma5d_supp.ogg" prefix="suppressed_a"/>
+		<sound id="ma40_fire" path="ma5d_supp.ogg" prefix="suppressed_b"/>
+		<sound id="ma40_fire" path="ma5d_supp.ogg" prefix="suppressed_c"/> 
+		
+		<sound id="ma40_back_in_hand" path="ma40_back_in_hand.ogg" prefix="first"/>
+		<sound id="ma40_back_in_hand" path="ma40_back_in_hand.ogg" prefix="third"/>
+		<sound id="ma40_charging_handle_grab" path="ma40_charging_handle_grab.ogg" prefix="first"/>
+		<sound id="ma40_charging_handle_grab" path="ma40_charging_handle_grab.ogg" prefix="third"/>
+		<sound id="ma40_charging_handle_pull" path="ma40_charging_handle_pull.ogg" prefix="first"/>
+		<sound id="ma40_charging_handle_pull" path="ma40_charging_handle_pull.ogg" prefix="third"/>
+		<sound id="ma40_charging_handle_release" path="ma40_charging_handle_release.ogg" prefix="first"/>		
+		<sound id="ma40_charging_handle_release" path="ma40_charging_handle_release.ogg" prefix="third"/>	
+		<sound id="ma40_mag_contact" path="ma40_mag_contact.ogg" prefix="first"/>		
+		<sound id="ma40_mag_contact" path="ma40_mag_contact.ogg" prefix="third"/>	
+		<sound id="ma40_mag_grab" path="ma40_mag_grab.ogg" prefix="first"/>		
+		<sound id="ma40_mag_grab" path="ma40_mag_grab.ogg" prefix="third"/>	
+		<sound id="ma40_mag_in" path="ma40_mag_in.ogg" prefix="first"/>		
+		<sound id="ma40_mag_in" path="ma40_mag_in.ogg" prefix="third"/>	
+		<sound id="ma40_mag_in_tactical" path="ma40_mag_in_tactical.ogg" prefix="first"/>		
+		<sound id="ma40_mag_in_tactical" path="ma40_mag_in_tactical.ogg" prefix="third"/>	
+		<sound id="ma40_mag_out" path="ma40_mag_out.ogg" prefix="first"/>		
+		<sound id="ma40_mag_out" path="ma40_mag_out.ogg" prefix="third"/>	
+		<sound id="ma40_mag_out_tactical" path="ma40_mag_out_tactical.ogg" prefix="first"/>		
+		<sound id="ma40_mag_out_tactical" path="ma40_mag_out_tactical.ogg" prefix="third"/>	
+		<sound id="ma40_mag_smack" path="ma40_mag_smack.ogg" prefix="first"/>		
+		<sound id="ma40_mag_smack" path="ma40_mag_smack.ogg" prefix="third"/>	
+		<sound id="ma40_mag_take_new" path="ma40_mag_take_new.ogg" prefix="first"/>		
+		<sound id="ma40_mag_take_new" path="ma40_mag_take_new.ogg" prefix="third"/>	
+		<sound id="ma40_tilt" path="ma40_tilt.ogg" prefix="first"/>		
+		<sound id="ma40_tilt" path="ma40_tilt.ogg" prefix="third"/>	
+		<sound id="ma40_tilt_back" path="ma40_tilt_back.ogg" prefix="first"/>		
+		<sound id="ma40_tilt_back" path="ma40_tilt_back.ogg" prefix="third"/>	
+	
+		
+		<sound id="blank" path="blank.ogg" prefix="first"/>		
+		<sound id="blank" path="blank.ogg" prefix="third"/>	
+		
+
+		
+
+		
+		<table>
+
+</table>
+
+	
+	</Sounds>
+	
+	<AddFiles directory="assets">
+	<!--Unit Base-->	
+		<unit_npc path="units/mods/weapons/wpn_fps_ass_ma40/wpn_fps_ass_ma40"/>
+	
+	<!--GUI/Scope Overlay-->	
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/ma40"/>	
+		
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_ma40_flashlight"/>	
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_ma40_scope_ach"/>	
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_ma40_shroud"/>	
+
+		
+		<texture path="scope_overlay/ma40_scope_overlay"/>
+		<texture path="scope_overlay/ma40_scope_overlay_ach"/>
+	<!--Textures-->
+		<texture 	path="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/weapon_metal_cubemap"/>	
+		<df_nm_gsma	path="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_barrel"/>
+		<df_nm_gsma	path="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_comb"/>
+		<df_nm_gsma	path="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_display_base"/>
+		<df_nm_gsma	path="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_display_mount"/>
+		<df_nm_gsma	path="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_flashlight"/>
+		<df_nm_gsma	path="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_handguard"/>
+		<df_nm_gsma	path="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_laser"/>
+		<df_nm_gsma	path="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_magazine"/>
+		<df_nm_gsma	path="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_rear"/>
+		<df_nm_gsma	path="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_shroud"/>
+		<df_nm_gsma	path="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_stock"/>
+		<df_nm_gsma	path="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_upper"/>
+		<texture 	path="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_screen_display_df"/>
+		<texture 	path="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_decals_001_df"/>
+		<texture 	path="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_decals_002_df"/>
+		<texture 	path="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_decals_003_df"/>
+		<df_nm_gsma	path="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/mw2022_762_nato"/>
+	
+	<!--Unit Path Stuff-->
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_ma40_pts/wpn_fps_ass_ma40_barrel"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_ma40_pts/wpn_fps_ass_ma40_charging_handle"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_ma40_pts/wpn_fps_ass_ma40_flash_hider"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_ma40_pts/wpn_fps_ass_ma40_handguard"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_ma40_pts/wpn_fps_ass_ma40_magazine"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_ma40_pts/wpn_fps_ass_ma40_receiver"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_ma40_pts/wpn_fps_ass_ma40_shroud"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_ma40_pts/wpn_fps_ass_ma40_stock"/>
+	
+	
+	<!-- Digital compass needle texture -->	
+		<texture 	path="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_compass"/>
+	<!-- Fonts for the ammo counter -->	
+		<texture path="fonts/font_eurostile"/>
+		<font path="fonts/font_eurostile" load="true" unload="false"/>
+	<!--Animations -->
+		<animation path="anims/fps/ma40/ma40_reload"/>
+		<animation path="anims/fps/ma40/ma40_reload_not_empty"/>		
+		
+	</AddFiles>
+	
+	<Hooks directory="hooks">
+	<hook file="MisriahAmmoGui.lua" source_file="lib/managers/menumanager"/>
+<!--		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/> -->
+		<hook file="newraycastweaponbase.lua" source_file="lib/units/weapons/newraycastweaponbase"/>
+		<hook file="newraycastweaponbase.lua" source_file="lib/units/weapons/menuraycastweaponbase"/>
+		<hook file="hudmanagerpd2.lua" source_file="lib/managers/hudmanagerpd2"/>
+		<hook file="playerstandard.lua" source_file="lib/units/beings/player/states/playerstandard"/>
+	</Hooks> 
+	</Hooks> 
+</mod>

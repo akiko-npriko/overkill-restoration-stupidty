@@ -1,0 +1,13 @@
+<unit type="wpn" slot="1">
+	<object file="units/mods/weapons/wpn_fps_gre_hx25/wpn_fps_gre_hx25"/>
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_gl40"/>
+		<depends_on bnk="soundbanks/weapon_pmkr45"/>
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData"/>
+		<extension name="base" class="SaigaShotgun">
+			<var name="name_id" value="hx25"/>
+		</extension>
+	</extensions>
+</unit>

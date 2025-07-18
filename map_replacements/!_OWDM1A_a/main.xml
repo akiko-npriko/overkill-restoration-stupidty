@@ -1,0 +1,382 @@
+	<mod name="Overkill's The Walking Dead M1A" author="Asian Rifleman Nya, PlayBONK, RJC9000" min_lib_ver="3.38">
+	<AssetUpdates id="46458" version="0.85" provider="modworkshop"/>
+	<GlobalValue id="owd_m1amod" color="Color(0.7, 0.9, 0.3)"/>
+	<GlobalValue id="owd_m1a_pdthmod" color="Color(0.9, 0.1, 0.1)"/>
+	<Localization directory="loc" default="english.txt">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	
+<!--Universal Parts-->
+		<WeaponMod id="wpn_fps_ass_owd_m1a_bolt" based_on="wpn_fps_ass_ching_bolt_standard" type="bolt"  unit="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_bolt" hidden="true" ver="2">
+			<stats spread="0" recoil="0" damage="0" concealment="0" reload="0"/>
+		</WeaponMod>		
+		<WeaponMod id="wpn_fps_ass_owd_m1a_charging_handle" based_on="wpn_fps_ass_ching_dh_standard" type="drag_handle"   unit="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_charging_handle" hidden="true" ver="2">
+			<stats spread="0" recoil="0" damage="0" concealment="0" reload="0"/>
+		</WeaponMod>	
+		<WeaponMod id="wpn_fps_ass_owd_m1a_flash_hider" based_on="wpn_fps_upg_ns_ass_smg_stubby" type="barrel_ext" unit="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_flash_hider" hidden="true" ver="2">
+		</WeaponMod>
+		<WeaponMod id="wpn_fps_ass_owd_m1a_irons" based_on="wpn_fps_ass_ching_body_standard" type="sight"    unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" hidden="true" ver="2">
+		<stats spread="0" recoil="0" damage="0" concealment="0" reload="0"/>
+		<forbids>
+			<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+			<value_node value="wpn_fps_upg_o_sig"/>
+		</forbids>
+		<stance_mod>
+			<wpn_fps_ass_owd_m1a	  rotation="0.00261799 0 0 -0.999997" translation="0 0 1.1"/>
+		</stance_mod>
+		<override>
+			<wpn_fps_ass_owd_m1a_scope_mount 	unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+		</override>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_owd_m1a_receiver" based_on="wpn_fps_ass_ching_body_standard" type="upper_receiver"   unit="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_receiver" hidden="true" ver="2">
+		<stats spread="0" recoil="0" damage="0" concealment="0" reload="0"/>
+	</WeaponMod>	
+	<WeaponMod id="wpn_fps_ass_owd_m1a_scope_mount" based_on="wpn_fps_ass_ching_body_standard" type="extra" a_obj="a_body"  unit="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_scope_mount" hidden="true" ver="2">
+		<stats spread="0" recoil="0" damage="0" concealment="0" reload="0"/>
+	</WeaponMod>		
+
+<!--Ammunition-->
+	<WeaponMod id="wpn_fps_ass_owd_m1a_am_piercing" based_on="wpn_fps_upg_a_custom_free" type="ammo" sub_type="ammo_slug" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" has_description="true"  global_value="owd_m1amod" ver="2">
+		<stats damage="5" spread="2" recoil="1" concealment="0" total_ammo_mod="-6" ammo_pickup_min_mul="0.85" ammo_pickup_max_mul="0.85" />
+		<custom_stats armor_piercing_add="1" can_shoot_through_enemy="true" can_shoot_through_shield="true" can_shoot_through_wall="true"> 	
+		</custom_stats>		
+		<override>		
+			<wpn_fps_ass_owd_m1a_magazine 	 unit="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_magazine_cm" /> 
+			<wpn_fps_ass_owd_m1a_magazine_20 unit="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_magazine_20_cm" /> 
+		</override>
+	</WeaponMod> 
+
+
+<!--Barrels-->
+	<WeaponMod id="wpn_fps_ass_owd_m1a_barrel" based_on="wpn_fps_ass_ching_b_standard" type="barrel" unit="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_barrel" hidden="true" ver="2">
+		<stats spread="0" recoil="0" damage="0" concealment="0" />
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_owd_m1a_barrel_long" based_on="wpn_fps_ass_ching_b_standard" type="barrel" unit="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_barrel_long" hidden="false" global_value="owd_m1amod" ver="2">
+		<stats spread="2" recoil="1" damage="1" concealment="-3" />
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_owd_m1a_barrel_short" based_on="wpn_fps_ass_ching_b_standard" type="barrel" unit="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_barrel_short" hidden="false" global_value="owd_m1amod" ver="2">
+		<stats spread="-1" recoil="-1" damage="0" concealment="2" />
+	</WeaponMod>
+
+<!--Gadget Positions-->
+	<WeaponMod id="wpn_fps_ass_owd_m1a_fl_left" based_on="wpn_fps_shot_r870_ris_special" type="gadget_placement" depends_on="gadget" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" global_value="owd_m1amod" ver="2">
+		<forbids>
+			<value_node value="wpn_fps_upg_gadget_heartsensor"/>
+		</forbids>
+		<override>		
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox 		a_obj="a_fl_left"/>
+			<wpn_fps_upg_fl_ass_smg_sho_surefire 	a_obj="a_fl_left"/>
+			<wpn_fps_upg_fl_ass_peq15 				a_obj="a_fl_left"/>
+			<wpn_fps_upg_fl_ass_laser 				a_obj="a_fl_left"/>
+			<wpn_fps_upg_fl_ass_utg 				a_obj="a_fl_left"/>
+			<wpn_fps_upg_fl_ass_dbal 				a_obj="a_fl_left"/>
+		</override>
+	</WeaponMod>
+
+
+<!--Magazines-->
+	<WeaponMod id="wpn_fps_ass_owd_m1a_magazine" based_on="wpn_fps_ass_m14_m_standard" type="magazine"  unit="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_magazine" hidden="true" ver="2">
+		<stats concealment="0" reload="0"/>
+		<bullet_objects prefix = "g_bullet_" amount="4"/>
+	</WeaponMod>	
+<!--
+	<WeaponMod id="wpn_fps_ass_owd_m1a_magazine_fast" based_on="wpn_fps_ass_m14_m_standard" type="magazine"  unit="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_magazine_fast" hidden="false" ver="2">
+		<stats concealment="-1" reload="4" extra_ammo="-4"/>
+		<bullet_objects prefix = "g_bullet_" amount="4"/>
+	</WeaponMod>		
+	-->
+	<WeaponMod id="wpn_fps_ass_owd_m1a_magazine_20" based_on="wpn_fps_ass_m14_m_standard" type="magazine"  unit="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_magazine_20" hidden="false"  global_value="owd_m1amod" ver="2">
+		<stats concealment="-2" reload="0" extra_ammo="5"/>
+		<bullet_objects prefix = "g_bullet_" amount="4"/>
+		<texture_variants>
+				<owd_m1a_gb name_id="bm_w_paint_owd_m1a_gb" desc_id="bm_w_paint_owd_m1a_gb_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_magazine_20_gb"/>
+		</texture_variants>
+	</WeaponMod>		
+
+<!--Stocks-->
+	<WeaponMod id="wpn_fps_ass_owd_m1a_stock" based_on="wpn_fps_ass_ching_s_standard" type="stock"  unit="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_stock" hidden="true" ver="2">
+		<stats spread="0" recoil="0" damage="0" concealment="0" />
+		<texture_variants>
+				<owd_m1a_gray name_id="bm_w_paint_owd_m1a_gray" desc_id="bm_w_paint_owd_m1a_gray_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_stock_gray"/>
+		</texture_variants>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_owd_m1a_stock_cheekrest" based_on="wpn_fps_ass_ching_s_standard" type="stock"  unit="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_stock_cheekrest" hidden="false"  global_value="owd_m1amod" ver="2">
+		<stats spread="0" recoil="0" damage="0" concealment="0" />
+		<texture_variants>
+				<owd_m1a_gray name_id="bm_w_paint_owd_m1a_gray" desc_id="bm_w_paint_owd_m1a_gray_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_stock_gray"/>
+		</texture_variants>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_owd_m1a_stock_light" based_on="wpn_fps_ass_ching_s_standard" type="stock"  unit="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_stock_light" hidden="false" global_value="owd_m1amod" ver="2">
+		<stats spread="0" recoil="0" damage="0" concealment="0" />
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_owd_m1a_stock_throwback" based_on="wpn_fps_ass_ching_s_standard" type="stock"  unit="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_stock_throwback" hidden="false" has_description="true" global_value="owd_m1a_pdthmod" ver="2">
+		<stats spread="0" recoil="0" damage="0" concealment="0" />
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_owd_m1a_stock_wood" based_on="wpn_fps_ass_ching_s_standard" type="stock"  unit="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_stock_wood" hidden="false" global_value="owd_m1amod" ver="2">
+		<stats spread="0" recoil="0" damage="0" concealment="0" />
+	</WeaponMod>
+
+
+
+<!--Weapon-->
+	<Weapon unlock_level="26">
+		<weapon id="owd_m1a" based_on="new_m14" weapon_hold="ching" CLIP_AMMO_MAX="10" NR_CLIPS_MAX="7" FIRE_MODE="single" CAN_TOGGLE_FIREMODE="false" armor_piercing_chance="0" can_shoot_through_enemy="false" can_shoot_through_wall="false" can_shoot_through_shield="false" global_value="owd_m1amod" >
+			<stats damage="160" spread="22" spread_moving="19" recoil="7" concealment="13"/>
+			<timers reload_not_empty="2.4" reload_empty="3.1"/>
+			<fire_mode_data fire_rate="0.12"/>
+			 <sounds fire="owd_m1a_fire" fire_single="owd_m1a_fire" fire_auto="owd_m1a_fire" use_fix="true">
+            </sounds>
+			<AMMO_PICKUP>
+                <value_node value="1.45"/>
+                <value_node value="3.00"/>
+            </AMMO_PICKUP>
+			<kick> 
+				<standing> 
+					<value_node value="1.8"/>  
+					<value_node value="2.0"/>  
+					<value_node value="-1.0"/>  
+					<value_node value="1.0"/> 
+				</standing>
+				<crouching>
+					<value_node value="1.6"/>  
+					<value_node value="1.7"/>  
+					<value_node value="-0.7"/> 
+					<value_node value="0.7"/>  
+				</crouching>
+				<steelsight>
+					<value_node value="1.1"/> 		 
+					<value_node value="1.2"/>  
+					<value_node value="-0.6"/>  
+					<value_node value="0.6"/>  
+				</steelsight>
+			</kick>
+			<animations reload_name_id="owdm1a"/>
+		</weapon>
+		<factory id="wpn_fps_ass_owd_m1a" unit="units/mods/weapons/wpn_fps_ass_owd_m1a/wpn_fps_ass_owd_m1a" >
+			<animations reload="reload" fire="recoil" fire_steelsight="recoil" reload_not_empty="reload_not_empty"/>
+            <adds>
+             <!--  <wpn_fps_upg_gadget_heartsensor>
+                    <value_node value="wpn_fps_ass_owd_m1a_mlok_rail_left"/>
+                </wpn_fps_upg_gadget_heartsensor> -->
+            </adds>
+			<override>
+				<wpn_fps_addon_ris unit="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_gadget_mount" a_obj="a_body"/> 
+			</override>
+			<default_blueprint>
+					<value_node value="wpn_fps_ass_owd_m1a_barrel"/>
+					<value_node value="wpn_fps_ass_owd_m1a_bolt"/>
+					<value_node value="wpn_fps_ass_owd_m1a_charging_handle"/>
+					<value_node value="wpn_fps_ass_owd_m1a_flash_hider"/>
+					<value_node value="wpn_fps_ass_owd_m1a_irons"/> 
+					<value_node value="wpn_fps_ass_owd_m1a_magazine"/>
+					<value_node value="wpn_fps_ass_owd_m1a_receiver"/> 
+					<value_node value="wpn_fps_ass_owd_m1a_scope_mount"/>
+					<value_node value="wpn_fps_ass_owd_m1a_stock"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_ass_owd_m1a_barrel"/>
+				<value_node value="wpn_fps_ass_owd_m1a_bolt"/>
+				<value_node value="wpn_fps_ass_owd_m1a_charging_handle"/>
+				<value_node value="wpn_fps_ass_owd_m1a_flash_hider"/>
+				<value_node value="wpn_fps_ass_owd_m1a_irons"/> 
+				<value_node value="wpn_fps_ass_owd_m1a_magazine"/>
+				<value_node value="wpn_fps_ass_owd_m1a_receiver"/> 
+				<value_node value="wpn_fps_ass_owd_m1a_scope_mount"/>
+				<value_node value="wpn_fps_ass_owd_m1a_stock"/>
+				
+				<value_node value="wpn_fps_ass_owd_m1a_am_piercing"/>
+				<value_node value="wpn_fps_ass_owd_m1a_barrel_long"/>				
+				<value_node value="wpn_fps_ass_owd_m1a_barrel_short"/>				
+				<value_node value="wpn_fps_ass_owd_m1a_fl_left"/>
+				<value_node value="wpn_fps_ass_owd_m1a_magazine_20"/>
+				<value_node value="wpn_fps_ass_owd_m1a_magazine_20_gb"/>
+				<value_node value="wpn_fps_ass_owd_m1a_stock_cheekrest"/>
+				<value_node value="wpn_fps_ass_owd_m1a_stock_light"/>
+				<value_node value="wpn_fps_ass_owd_m1a_stock_throwback"/>
+				<value_node value="wpn_fps_ass_owd_m1a_stock_wood"/>
+				
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_v6"/>
+				<value_node value="wpn_fps_lmg_hk51b_ns_jcomp"/>
+				<value_node value="wpn_fps_lmg_kacchainsaw_ns_muzzle"/>
+				<value_node value="wpn_fps_lmg_kacchainsaw_ns_suppressor"/>
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_bmg"/>
+				<value_node value="wpn_fps_upg_o_uh"/>
+				<value_node value="wpn_fps_upg_o_fc1"/>
+				<value_node value="wpn_fps_upg_o_tf90"/>
+				<value_node value="wpn_fps_upg_o_poe"/>
+				<value_node value="wpn_fps_upg_o_hamr"/>
+				<value_node value="wpn_fps_upg_o_atibal"/>
+				<value_node value="wpn_fps_upg_o_health"/>
+				
+		<!--	<value_node value="wpn_fps_upg_o_box"/>
+				<value_node value="wpn_fps_upg_o_leupold"/>
+				<value_node value="wpn_fps_upg_o_northtac"/>
+				<value_node value="wpn_fps_upg_o_schmidt"/> -->
+				
+				
+				
+			</uses_parts>
+		</factory>
+			<stance>
+				<standard>
+					<shoulders rotation="8.72665e-006 -0 0 -1" translation="0.032 2.999 -0.434"/>
+				</standard> 
+				<crouched>
+					<shoulders rotation="8.72665e-006 -0 0 -1" translation="0.032 0.999 -2.434"/>	
+				</crouched> 
+				<steelsight> 
+					<shoulders rotation="8.72664e-006 -0.000872665 -7.61544e-009 -1" translation="-10.87 1.00 3.18"/>
+				</steelsight> 
+			</stance>
+	</Weapon>
+
+
+
+
+
+
+<!--Sounds-->	
+		<Sounds directory="assets\sounds">
+		<sound id="owd_m1a_fire" path="owd_m1a_fire.ogg" prefix="regular"/>
+		<sound id="owd_m1a_fire" path="owd_m1a_supp.ogg" prefix="suppressed_a"/>
+		<sound id="owd_m1a_fire" path="owd_m1a_supp.ogg" prefix="suppressed_b"/>
+		<sound id="owd_m1a_fire" path="owd_m1a_supp.ogg" prefix="suppressed_c"/>
+
+		<sound id="owd_m1a_charging_handle_contact" path="owd_m1a_charging_handle_contact.ogg" prefix="first"/>
+		<sound id="owd_m1a_charging_handle_contact" path="owd_m1a_charging_handle_contact.ogg" prefix="third"/>
+		<sound id="owd_m1a_charging_handle_back"	path="owd_m1a_charging_handle_back.ogg" prefix="first"/>
+		<sound id="owd_m1a_charging_handle_back" 	path="owd_m1a_charging_handle_back.ogg" prefix="third"/>
+		<sound id="owd_m1a_charging_handle_forward" path="owd_m1a_charging_handle_forward.ogg" prefix="first"/>
+		<sound id="owd_m1a_charging_handle_forward" path="owd_m1a_charging_handle_forward.ogg" prefix="third"/>
+		<sound id="owd_m1a_end_foley" 			path="owd_m1a_end_foley.ogg" prefix="first"/>
+		<sound id="owd_m1a_end_foley" 			path="owd_m1a_end_foley.ogg" prefix="third"/>
+		<sound id="owd_m1a_end_foley" 			path="owd_m1a_end_foley.ogg" prefix="first"/>
+		<sound id="owd_m1a_end_foley" 			path="owd_m1a_end_foley.ogg" prefix="third"/>
+		<sound id="owd_m1a_mag_contact"		 	 path="owd_m1a_mag_contact.ogg" prefix="first"/>
+		<sound id="owd_m1a_mag_contact" 		 path="owd_m1a_mag_contact.ogg" prefix="third"/>
+		<sound id="owd_m1a_generic_back_in_hand_soft"	 path="owd_m1a_generic_back_in_hand_soft.ogg" prefix="first"/>
+		<sound id="owd_m1a_generic_back_in_hand_soft" 	 path="owd_m1a_generic_back_in_hand_soft.ogg" prefix="third"/>
+		<sound id="owd_m1a_generic_lever_grab"	 path="owd_m1a_generic_lever_grab.ogg" prefix="first"/>
+		<sound id="owd_m1a_generic_lever_grab" 	 path="owd_m1a_generic_lever_grab.ogg" prefix="third"/>
+		<sound id="owd_m1a_slide_hand"		 	 path="owd_m1a_slide_hand.ogg" prefix="first"/>
+		<sound id="owd_m1a_slide_hand" 		 	 path="owd_m1a_slide_hand.ogg" prefix="third"/>
+		<sound id="owd_m1a_mag_out"	 			 path="owd_m1a_mag_out.ogg" prefix="first"/>
+		<sound id="owd_m1a_mag_out" 			 path="owd_m1a_mag_out.ogg" prefix="third"/>
+		<sound id="owd_m1a_mag_drop_ground"		 path="owd_m1a_mag_drop_ground.ogg" prefix="first"/>
+		<sound id="owd_m1a_mag_drop_ground" 	 path="owd_m1a_mag_drop_ground.ogg" prefix="third"/>
+		<sound id="owd_m1a_mag_grab"			 path="owd_m1a_mag_grab.ogg" prefix="first"/>
+		<sound id="owd_m1a_mag_grab" 			 path="owd_m1a_mag_grab.ogg" prefix="third"/>
+		<sound id="owd_m1a_mag_in"	 			 path="owd_m1a_mag_in.ogg" prefix="first"/>
+		<sound id="owd_m1a_mag_in" 				 path="owd_m1a_mag_in.ogg" prefix="third"/>
+		
+		
+
+	</Sounds>
+<!--Add Files-->	
+	<AddFiles directory="assets">	
+<!-- Animations -->
+		<animation path="anims/fps/owdm1a/owdm1a_reload" load="true"/>
+		<animation path="anims/fps/owdm1a/owdm1a_reload_not_empty" load="true"/>
+<!--Unit Path -->
+		<unit_npc path="units/mods/weapons/wpn_fps_ass_owd_m1a/wpn_fps_ass_owd_m1a"/>
+<!--GUI -->
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/owd_m1a"/>	
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_owd_m1a_am_piercing"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_owd_m1a_barrel_long"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_owd_m1a_barrel_short"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_owd_m1a_fl_left"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_owd_m1a_magazine_20"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_owd_m1a_magazine_20_gb"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_owd_m1a_stock_cheekrest"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_owd_m1a_stock_light"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_owd_m1a_stock_throwback"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_owd_m1a_stock_wood"/>
+		
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_ass_owd_m1a_magazine_20/owd_m1a_gb"/>		
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_ass_owd_m1a_stock/owd_m1a_gray"/>		
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_ass_owd_m1a_stock_cheekrest/owd_m1a_gray"/>		
+
+<!--Textures -->
+			<texture path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/textures/weapon_metal_cubemap"/>
+			<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/textures/mw2022_762_nato"/>
+			<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/textures/mw2022_65_cm"/>
+			<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/textures/m1a_barrel"/>
+			<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/textures/m1a_chinrest"/>
+			<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/textures/m1a_front_sight"/>
+			<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/textures/m1a_gadget_mount"/>
+			<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/textures/m1a_magazine"/>
+			<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/textures/m1a_magazine_20"/>
+			<texture	path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/textures/m1a_magazine_20_gb_df"/>
+			<texture	path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/textures/m1a_magazine_20_gb_gsma"/>
+			<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/textures/m1a_muzzle"/>
+			<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/textures/m1a_rear_sight"/>
+			<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/textures/m1a_receiver"/>
+			<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/textures/m1a_scope_mount"/>
+			<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/textures/m1a_stock"/>
+			<texture	path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/textures/m1a_stock_gray_df"/>
+			<texture	path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/textures/m1a_stock_green_df"/>
+			<texture	path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/textures/m1a_stock_throwback_df"/>
+			<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/textures/m1a_stock_light"/>
+			<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/textures/m1a_stock_wood"/>			
+
+<!--Part Files -->
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_barrel"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_barrel_long"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_barrel_short"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_bolt"/>		
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_charging_handle"/>		
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_flash_hider"/>		
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_gadget_mount"/>		
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_magazine"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_magazine_20"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_magazine_cm"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_magazine_20_cm"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_receiver"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_scope_mount"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_stock"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_stock_cheekrest"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_stock_light"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_stock_throwback"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_stock_wood"/>
+		
+		<material_config path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_magazine_20_gb"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_magazine_20_gb_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_stock_gray"/>
+		<material_config path="units/mods/weapons/wpn_fps_ass_owd_m1a_pts/wpn_fps_ass_owd_m1a_stock_gray_thq"/>
+
+	</AddFiles>
+	<Hooks directory="hooks">
+<!--	<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/> -->
+<!--	<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/> -->
+	</Hooks> 
+</mod>

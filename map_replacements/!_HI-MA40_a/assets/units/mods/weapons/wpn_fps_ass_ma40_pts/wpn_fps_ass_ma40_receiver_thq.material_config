@@ -1,0 +1,25 @@
+<materials version="3" group="weapon_lemming">
+	<material name="mtr_ma40_comb" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+  		<diffuse_texture 		file="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_comb_df" mip="1" />
+		<bump_normal_texture 	file="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_comb_nm" mip="1"/>
+    </material>	
+	<material name="mtr_ma40_rear" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+  		<diffuse_texture 		file="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_rear_df" mip="1"/>
+		<bump_normal_texture 	file="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_rear_nm" mip="1"/>
+    </material>	
+	<material name="mtr_ma40_upper" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+  		<diffuse_texture 		file="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_upper_df" mip="1"/>
+		<bump_normal_texture 	file="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_upper_nm" mip="1"/>
+    </material>	
+	<material name="mtr_ma40_decals_001" render_template="decal:DIFFUSE_TEXTURE:RL_FPS_WEAPON" version="2">
+        <diffuse_texture 		file="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_decals_001_df"/>
+    </material>	
+	<material name="mtr_ma40_decals_002" render_template="decal:DIFFUSE_TEXTURE:RL_FPS_WEAPON" version="2">
+        <diffuse_texture 		file="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_decals_002_df"/>
+    </material>	
+	<material name="mtr_ma40_decals_003" render_template="decal:DIFFUSE_TEXTURE:RL_FPS_WEAPON" version="2">
+        <diffuse_texture 		file="units/mods/weapons/wpn_fps_ass_ma40_pts/textures/ma40_decals_003_df"/>
+    </material>	
+	
+	
+</materials>

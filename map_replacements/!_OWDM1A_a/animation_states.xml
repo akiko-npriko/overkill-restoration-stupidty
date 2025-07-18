@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<tweaks>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+		
+	
+		<target mode="append">
+			<state name="fps/reload/owdm1a" type="once" segment="base" speed="1.0">
+				<anim name="owdm1a_reload"/>
+					<keys>
+						<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>				
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+						
+						<key at="trigger" trigger="wp_foley_generic_clip_throw" 		callback="play_sound" class_name="base" param1="wp_foley_generic_clip_throw"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_take_new" 		callback="play_sound" class_name="base" param1="owd_m1a_mag_contact"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_in_connect" 	callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" 		callback="play_sound" class_name="base" param1="owd_m1a_generic_lever_grab"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_pull" 		callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand" 		callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt_back" 			callback="play_sound" class_name="base" param1="wp_ak47_tilt_back"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt" 				callback="play_sound" class_name="base" param1="wp_ak47_tilt"/>
+						<key at="trigger" trigger="wp_ching_grab_mag" 					callback="play_sound" class_name="base" param1="wp_ching_grab_mag"/>
+						<key at="trigger" trigger="contraband_lift_up" 					callback="play_sound" class_name="base" param1="contraband_lift_up"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_release" 		callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+						<key at="trigger" trigger="ching_clip_out" 						callback="play_sound" class_name="base" param1="owd_m1a_mag_out"/>
+						<key at="trigger" trigger="ching_bolt_back" 					callback="play_sound" class_name="base" param1="owd_m1a_charging_handle_back"/>
+						<key at="trigger" trigger="ching_bolt_contact" 					callback="play_sound" class_name="base" param1="owd_m1a_charging_handle_contact"/>
+						<key at="trigger" trigger="contraband_back_in_hand" 			callback="play_sound" class_name="base" param1="contraband_back_in_hand"/>
+						<key at="trigger" trigger="ching_bolt_forward" 					callback="play_sound" class_name="base" param1="owd_m1a_charging_handle_forward"/>	
+						<key at="trigger" trigger="wp_clip_generic_ass_center" 			callback="play_sound" class_name="base" param1="wp_clip_generic_ass_center"/>
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand_soft" 	callback="play_sound" class_name="base" param1="owd_m1a_generic_back_in_hand_soft"/>
+						<key at="trigger" trigger="ching_clip_contact" 					callback="play_sound" class_name="base" param1="owd_m1a_mag_contact"/>
+						<key at="trigger" trigger="ching_slide_hand" 					callback="play_sound" class_name="base" param1="owd_m1a_slide_hand"/>			
+						<key at="trigger" trigger="ching_clip_in" 						callback="play_sound" class_name="base" param1="owd_m1a_mag_in"/>			
+						<key at="trigger" trigger="ching_end_foley" 					callback="play_sound" class_name="base" param1="owd_m1a_end_foley"/>
+						<key at="trigger" trigger="ching_clip_drop" 					callback="play_sound" class_name="base" param1="owd_m1a_mag_drop_ground"/>	
+						<key at="trigger" trigger="ching_grab" 							callback="play_sound" class_name="base" param1="owd_m1a_mag_grab"/>
+						<key at="trigger" trigger="ching_clip_drop_dly"					callback="play_sound" class_name="base" param1="ching_clip_drop_dly"/>
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+
+			<state name="fps/reload_not_empty/owdm1a" type="once" segment="base" speed="1.0">
+				<anim name="owdm1a_reload_not_empty"/>
+					<keys>			
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+
+						<key at="trigger" trigger="wp_foley_generic_clip_throw" 		callback="play_sound" class_name="base" param1="wp_foley_generic_clip_throw"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_take_new" 		callback="play_sound" class_name="base" param1="owd_m1a_mag_contact"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_in_connect" 	callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" 		callback="play_sound" class_name="base" param1="owd_m1a_generic_lever_grab"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_pull" 		callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand" 		callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt_back" 			callback="play_sound" class_name="base" param1="wp_ak47_tilt_back"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt" 				callback="play_sound" class_name="base" param1="wp_ak47_tilt"/>
+						<key at="trigger" trigger="wp_ching_grab_mag" 					callback="play_sound" class_name="base" param1="wp_ching_grab_mag"/>
+						<key at="trigger" trigger="contraband_lift_up" 					callback="play_sound" class_name="base" param1="contraband_lift_up"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_release" 		callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+						<key at="trigger" trigger="ching_clip_out" 						callback="play_sound" class_name="base" param1="owd_m1a_mag_out"/>
+						<key at="trigger" trigger="ching_bolt_back" 					callback="play_sound" class_name="base" param1="owd_m1a_charging_handle_back"/>
+						<key at="trigger" trigger="ching_bolt_contact" 					callback="play_sound" class_name="base" param1="owd_m1a_charging_handle_contact"/>
+						<key at="trigger" trigger="contraband_back_in_hand" 			callback="play_sound" class_name="base" param1="contraband_back_in_hand"/>
+						<key at="trigger" trigger="ching_bolt_forward" 					callback="play_sound" class_name="base" param1="owd_m1a_charging_handle_forward"/>	
+						<key at="trigger" trigger="wp_clip_generic_ass_center" 			callback="play_sound" class_name="base" param1="wp_clip_generic_ass_center"/>
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand_soft" 	callback="play_sound" class_name="base" param1="owd_m1a_generic_back_in_hand_soft"/>
+						<key at="trigger" trigger="ching_clip_contact" 					callback="play_sound" class_name="base" param1="owd_m1a_mag_contact"/>
+						<key at="trigger" trigger="ching_slide_hand" 					callback="play_sound" class_name="base" param1="owd_m1a_slide_hand"/>			
+						<key at="trigger" trigger="ching_clip_in" 						callback="play_sound" class_name="base" param1="owd_m1a_mag_in"/>			
+						<key at="trigger" trigger="ching_end_foley" 					callback="play_sound" class_name="base" param1="owd_m1a_end_foley"/>
+						<key at="trigger" trigger="ching_clip_drop" 					callback="play_sound" class_name="base" param1="owd_m1a_mag_drop_ground"/>	
+						<key at="trigger" trigger="ching_grab" 							callback="play_sound" class_name="base" param1="owd_m1a_mag_grab"/>
+						<key at="trigger" trigger="ching_clip_drop_dly"					callback="play_sound" class_name="base" param1="ching_clip_drop_dly"/>
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+		</target>
+		
+		
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+		<target mode="attach">
+			
+			<to name="reload_owdm1a" 					redirect="fps/reload/owdm1a"/>
+			<to name="reload_not_empty_owdm1a" 			redirect="fps/reload_not_empty/owdm1a"/>
+			
+		</target>
+	</tweak>
+</tweaks>

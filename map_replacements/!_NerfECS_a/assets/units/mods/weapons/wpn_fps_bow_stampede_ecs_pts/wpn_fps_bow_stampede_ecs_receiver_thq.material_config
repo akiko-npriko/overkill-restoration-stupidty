@@ -1,0 +1,18 @@
+<materials version="3" group="weapon_group">
+
+	<material name="mtr_nerf_stampede" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_bow_stampede_ecs_pts/textures/stampede_ecs_main_df" mip="1"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_bow_stampede_ecs_pts/textures/stampede_ecs_main_nm" mip="1"/>
+        <material_texture	 file="units/mods/weapons/wpn_fps_bow_stampede_ecs_pts/textures/stampede_ecs_main_gsma" mip="1"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_bow_stampede_ecs_pts/textures/weapon_metal_cubemap"/>
+    </material>			
+    <material name="mtr_nerf_glass" version="2" unique="true" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:FPS:NORMALMAP">
+        <variable value="0 0 0.21999999880791" type="vector3" name="fresnel_settings"/>
+        <opacity_texture file="units/pd2_dlc_bbq/weapons/molotov_cocktail/textures/wpn_fps_molotov_glass_op"/>
+		<diffuse_texture 	 file="units/mods/weapons/wpn_fps_bow_stampede_ecs_pts/textures/eotech_glass_df"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_bow_stampede_ecs_pts/textures/nerf_drum_nm"/>
+    </material>	
+
+
+</materials>

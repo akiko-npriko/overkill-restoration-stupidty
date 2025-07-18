@@ -1,0 +1,13 @@
+<materials version="3" group="weapon">
+	<material name="mat_ppsh" render_template="generic:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_smg_ppsh_pts/textures/ppsh_df" mip="1"/>
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_smg_ppsh_pts/textures/ppsh_nm" mip="1"/>
+		<material_texture file="units/mods/weapons/wpn_fps_smg_ppsh_pts/textures/ppsh_gsma" mip="1"/>
+	</material>
+	<material name="mat_bullet" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_smg_ppsh_pts/textures/ppsh_df" mip="1"/>
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_smg_ppsh_pts/textures/ppsh_nm" mip="1"/>
+		<material_texture file="units/mods/weapons/wpn_fps_smg_ppsh_pts/textures/ppsh_gsma" mip="1"/>
+        <reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap"/>
+	</material>
+</materials>

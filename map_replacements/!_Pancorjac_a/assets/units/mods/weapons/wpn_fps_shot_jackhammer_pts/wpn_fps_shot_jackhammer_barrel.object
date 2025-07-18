@@ -1,0 +1,15 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_shot_jackhammer_pts/wpn_fps_shot_jackhammer_barrel" orientation_object="rp_jackhammer"/>
+	<animations>
+		<animation_group name="recoil">
+			<object name="anim_barrel_recoil" enabled="true"/>
+		</animation_group>
+		<animation_group name="reload">
+			<object name="anim_barrel_reload" enabled="true"/>
+		</animation_group>
+	</animations>
+	<graphics>
+		<object enabled="true" name="g_barrel"/>
+		<object enabled="true" name="g_muzzle_brake"/>
+	</graphics>
+</dynamic_object>

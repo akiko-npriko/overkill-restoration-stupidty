@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+			
+		<target mode="attach">
+			<anim name="stampede_ecs_reload" 					file="anims/fps/stampede_ecs/stampede_ecs_reload" blend_set="all"/>
+			<anim name="stampede_ecs_reload_not_empty" 			file="anims/fps/stampede_ecs/stampede_ecs_reload_not_empty" blend_set="all"/>
+			
+			
+			<anim name="stampede_ecs_equip" 					file="anims/fps/stampede_ecs/stampede_ecs_equip" blend_set="all"/>
+			
+			<anim name="stampede_ecs_idle" 						file="anims/fps/tecci/tecci_idle" blend_set="all"/>
+			<anim name="stampede_ecs_recoil" 					file="anims/fps/tecci/tecci_recoil" blend_set="all"/>
+			<anim name="stampede_ecs_recoil_loop" 				file="anims/fps/tecci/tecci_recoil_loop" blend_set="all"/>
+			<anim name="stampede_ecs_recoil_enter" 				file="anims/fps/tecci/tecci_recoil_enter" blend_set="all"/>
+			<anim name="stampede_ecs_recoil_exit" 				file="anims/fps/tecci/tecci_recoil_exit" blend_set="all"/>
+			<anim name="stampede_ecs_recoil_steelsight"	 		file="anims/fps/tecci/tecci_recoil" blend_set="all"/>
+			
+			<anim name="stampede_ecs_unequip" 					file="anims/fps/tecci/tecci_unequip" blend_set="all"/>
+			
+			<anim name="stampede_ecs_melee" 					file="anims/fps/tecci/tecci_melee" blend_set="all"/>
+			<anim name="stampede_ecs_melee_miss" 				file="anims/fps/tecci/tecci_melee_miss" blend_set="all"/>
+			<anim name="stampede_ecs_use" 						file="anims/fps/tecci/tecci_use" blend_set="all"/>
+			<anim name="stampede_ecs_sprint_enter" 				file="anims/fps/tecci/tecci_sprint_enter" blend_set="all"/>
+			<anim name="stampede_ecs_sprint" 					file="anims/fps/tecci/tecci_sprint" blend_set="all"/>
+			<anim name="stampede_ecs_sprint_exit" 				file="anims/fps/tecci/tecci_sprint_exit" blend_set="all"/>
+			
+			<anim name="stampede_ecs_com_down_var1" 			file="anims/fps/tecci/tecci_com_var1" blend_set="all"/>
+			<anim name="stampede_ecs_com_stop" 					file="anims/fps/tecci/tecci_com_var5" blend_set="all"/>
+			<anim name="stampede_ecs_com_come" 					file="anims/fps/tecci/tecci_com_var6" blend_set="all"/>
+			<anim name="stampede_ecs_com_point" 				file="anims/fps/tecci/tecci_com_var7" blend_set="all"/>
+			<anim name="stampede_ecs_get_up" 					file="anims/fps/tecci/tecci_get_up" blend_set="all"/>
+			<anim name="stampede_ecs_gogo" 						file="anims/fps/tecci/tecci_gogo" blend_set="all"/>
+			<anim name="stampede_ecs_tased" 					file="anims/fps/tecci/tecci_tased" blend_set="all"/>
+			<anim name="stampede_ecs_tased_boost" 				file="anims/fps/tecci/tecci_tased_boost" blend_set="all"/>
+			<anim name="stampede_ecs_tased_exit" 				file="anims/fps/tecci/tecci_tased_exit" blend_set="all"/>
+			
+			<anim name="stampede_ecs_inspect" 					file="anims/fps/tecci/tecci_inspect" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

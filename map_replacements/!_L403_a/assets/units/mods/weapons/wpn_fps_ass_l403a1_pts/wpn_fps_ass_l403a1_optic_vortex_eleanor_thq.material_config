@@ -1,0 +1,45 @@
+	<materials version="3" group="weapon_group">
+	<material name="mtr_vortex_eleanor" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture	 file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/vortex_eleanor_df" mip="1"/>
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/vortex_eleanor_nm" mip="1"/>
+        <material_texture	 file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/vortex_eleanor_gsma" mip="1"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/weapon_metal_cubemap"/>
+    </material>	
+	<material name="mtr_mount_arco" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture	 file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/reptilia_mount_arco_df" mip="1"/>
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/reptilia_mount_arco_nm" mip="1"/>
+        <material_texture	 file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/reptilia_mount_arco_gsma" mip="1"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/weapon_metal_cubemap"/>
+    </material>	
+	<material name="mtr_arco" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture	 file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/acro_p2_df" mip="1"/>
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/acro_p2_nm" mip="1"/>
+        <material_texture	 file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/acro_p2_gsma" mip="1"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/weapon_metal_cubemap"/>
+    </material>	
+	<material name="mtr_lens" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture	  file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/vortex_eleanor_df" mip="1"/>
+        <bump_normal_texture  file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/vortex_eleanor_nm" mip="1"/>
+	</material>
+	<material name="mtr_lens_arco" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:FPS" decal_material="glass_breakable" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/eleanor_glass_df"/>
+        <opacity_texture file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/eleanor_glass_op"/>
+		<reflection_texture type="cubemap" global_texture="current_global_texture"/>
+		<variable type="vector3" name="fresnel_settings" value="0.9 0 1"/>
+	</material>	
+	
+	<material name="mtr_reticle" render_template="effect:DIFFUSE0_TEXTURE:FPS" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/ebr9_reticle"/>
+		<variable type="scalar" name="intensity" value="reddot"/>
+	</material>
+	
+	
+	<material unique="true" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:FPS:HOLO:VIEW_ANGLE_FALLOFF_OP" name="sight" version="2">
+		<variable type="scalar" name="intensity" value="reddot"/>
+		<diffuse_texture file="units/pd2_dlc1/weapons/wpn_effects_textures/wpn_sight_reticle_1_il"/>
+		<variable type="scalar" name="falloff_exp" value="1000"/>
+		<variable type="vector3" name="holo_target_offset" value="0 10000 0"/>
+		<variable type="vector3" name="holo_reticle_scale" value="0.2 1.5 40"/>
+	</material>
+	
+</materials>

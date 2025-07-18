@@ -1,0 +1,16 @@
+<dynamic_object>
+	<diesel orientation_object="rp_wpn_fps_pis_fp45"/>
+	<animations>
+		<animation_group name="recoil">
+			<object name="anim_slide_recoil" enabled="true"/>
+		</animation_group>
+		<animation_group name="reload">
+			<object name="anim_boolet_reload" enabled="true"/>
+			<object name="anim_case_reload" enabled="true"/>
+			<object name="anim_gripcap_reload" enabled="true"/>
+			<object name="anim_plunger_reload" enabled="true"/>
+			<object name="anim_rearsight_reload" enabled="true"/>
+			<object name="anim_slide_reload" enabled="true"/>
+		</animation_group>
+	</animations>
+</dynamic_object>

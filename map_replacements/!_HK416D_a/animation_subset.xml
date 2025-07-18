@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+			
+		<target mode="attach">
+			<anim name="m416d_reload" 								file="anims/fps/m416d/m416d_reload" blend_set="all"/>
+			<anim name="m416d_reload_not_empty" 					file="anims/fps/m416d/m416d_reload_not_empty" blend_set="all"/>
+			<anim name="m416d_idle" 								file="anims/fps/m416d/m416d_idle" blend_set="all"/>
+			<anim name="m416d_recoil" 								file="anims/fps/m416d/m416d_recoil" blend_set="all"/>
+			<anim name="m416d_recoil_enter" 						file="anims/fps/m416d/m416d_recoil_enter" blend_set="all"/>
+			<anim name="m416d_recoil_loop" 							file="anims/fps/m416d/m416d_recoil_loop" blend_set="all"/>
+			<anim name="m416d_recoil_exit" 							file="anims/fps/m416d/m416d_recoil_exit" blend_set="all"/>
+			<anim name="m416d_recoil_steelsight" 					file="anims/fps/m416d/m416d_recoil" blend_set="all"/>
+			<anim name="m416d_equip" 								file="anims/fps/m416d/m416d_equip" blend_set="all"/>
+			<anim name="m416d_unequip" 								file="anims/fps/m416d/m416d_unequip" blend_set="all"/>
+			<anim name="m416d_melee" 								file="anims/fps/m416d/m416d_melee" blend_set="all"/>
+			<anim name="m416d_melee_miss" 							file="anims/fps/m416d/m416d_melee_miss" blend_set="all"/>
+			<anim name="m416d_use" 									file="anims/fps/m416d/m416d_use" blend_set="all"/>
+			<anim name="m416d_sprint_enter" 						file="anims/fps/m416d/m416d_sprint_enter" blend_set="all"/>
+			<anim name="m416d_sprint" 								file="anims/fps/m416d/m416d_sprint" blend_set="all"/>
+			<anim name="m416d_sprint_exit" 							file="anims/fps/m416d/m416d_sprint_exit" blend_set="all"/>
+			<anim name="m416d_com_down_var1" 						file="anims/fps/m416d/m416d_com_var1" blend_set="all"/>
+			<anim name="m416d_com_stop" 							file="anims/fps/m416d/m416d_com_var5" blend_set="all"/>
+			<anim name="m416d_com_come" 							file="anims/fps/m416d/m416d_com_var6" blend_set="all"/>
+			<anim name="m416d_com_point" 							file="anims/fps/m416d/m416d_com_var7" blend_set="all"/>
+			<anim name="m416d_get_up" 								file="anims/fps/m416d/m416d_get_up" blend_set="all"/>
+			<anim name="m416d_gogo" 								file="anims/fps/m416d/m416d_gogo" blend_set="all"/>
+			<anim name="m416d_tased" 								file="anims/fps/m416d/m416d_tased" blend_set="all"/>
+			<anim name="m416d_tased_boost" 							file="anims/fps/m416d/m416d_tased_boost" blend_set="all"/>
+			<anim name="m416d_tased_exit" 							file="anims/fps/m416d/m416d_tased_exit" blend_set="all"/>
+			<anim name="m416d_inspect" 								file="anims/fps/m416d/m416d_inspect" blend_set="all"/> 
+			
+			<anim name="m416d_vg_reload" 							file="anims/fps/m416d_vg/m416d_vg_reload" blend_set="all"/>
+			<anim name="m416d_vg_reload_not_empty" 					file="anims/fps/m416d_vg/m416d_vg_reload_not_empty" blend_set="all"/>
+			<anim name="m416d_vg_idle" 								file="anims/fps/m416d_vg/m416d_vg_idle" blend_set="all"/>
+			<anim name="m416d_vg_recoil" 							file="anims/fps/m416d_vg/m416d_vg_recoil" blend_set="all"/>
+			<anim name="m416d_vg_recoil_enter" 						file="anims/fps/m416d_vg/m416d_vg_recoil_enter" blend_set="all"/>
+			<anim name="m416d_vg_recoil_loop" 						file="anims/fps/m416d_vg/m416d_vg_recoil_loop" blend_set="all"/>
+			<anim name="m416d_vg_recoil_exit" 						file="anims/fps/m416d_vg/m416d_vg_recoil_exit" blend_set="all"/>
+			<anim name="m416d_vg_recoil_steelsight" 				file="anims/fps/m416d_vg/m416d_vg_recoil" blend_set="all"/>
+			<anim name="m416d_vg_equip" 							file="anims/fps/m416d_vg/m416d_vg_equip" blend_set="all"/>
+			<anim name="m416d_vg_unequip" 							file="anims/fps/m416d_vg/m416d_vg_unequip" blend_set="all"/>
+			<anim name="m416d_vg_melee" 							file="anims/fps/m416d_vg/m416d_vg_melee" blend_set="all"/>
+			<anim name="m416d_vg_melee_miss" 						file="anims/fps/m416d_vg/m416d_vg_melee_miss" blend_set="all"/>
+			<anim name="m416d_vg_use" 								file="anims/fps/m416d_vg/m416d_vg_use" blend_set="all"/>
+			<anim name="m416d_vg_sprint_enter" 						file="anims/fps/m416d_vg/m416d_vg_sprint_enter" blend_set="all"/>
+			<anim name="m416d_vg_sprint" 							file="anims/fps/m416d_vg/m416d_vg_sprint" blend_set="all"/>
+			<anim name="m416d_vg_sprint_exit" 						file="anims/fps/m416d_vg/m416d_vg_sprint_exit" blend_set="all"/>
+			<anim name="m416d_vg_com_down_var1" 					file="anims/fps/m416d_vg/m416d_vg_com_var1" blend_set="all"/>
+			<anim name="m416d_vg_com_stop" 							file="anims/fps/m416d_vg/m416d_vg_com_var5" blend_set="all"/>
+			<anim name="m416d_vg_com_come" 							file="anims/fps/m416d_vg/m416d_vg_com_var6" blend_set="all"/>
+			<anim name="m416d_vg_com_point" 						file="anims/fps/m416d_vg/m416d_vg_com_var7" blend_set="all"/>
+			<anim name="m416d_vg_get_up" 							file="anims/fps/m416d_vg/m416d_vg_get_up" blend_set="all"/>
+			<anim name="m416d_vg_gogo" 								file="anims/fps/m416d_vg/m416d_vg_gogo" blend_set="all"/>
+			<anim name="m416d_vg_tased" 							file="anims/fps/m416d_vg/m416d_vg_tased" blend_set="all"/>
+			<anim name="m416d_vg_tased_boost" 						file="anims/fps/m416d_vg/m416d_vg_tased_boost" blend_set="all"/>
+			<anim name="m416d_vg_tased_exit" 						file="anims/fps/m416d_vg/m416d_vg_tased_exit" blend_set="all"/>
+			<anim name="m416d_vg_inspect" 							file="anims/fps/m416d_vg/m416d_vg_inspect" blend_set="all"/> 	
+		</target>
+	</tweak>
+</tweaks>

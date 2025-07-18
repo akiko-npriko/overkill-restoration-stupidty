@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<unit type="gen" slot="13" >
+    <object file="units/mods/weapons/wpn_fps_bow_stampede_ecs_pts/wpn_fps_bow_stampede_ecs_ammo" />
+	<network sync="none"/>
+	<dependencies>
+		<depends_on bnk="soundbanks/regular_weapon_sfx" />
+	</dependencies>
+    <extensions>
+		<extension name="base" class="NerfDartBase" >
+			<var name="_tweak_projectile_entry" value="nerf_dart_standard" />
+			<var name="_orient_to_vel" value="true" />
+		</extension>
+        <extension name="unit_data" class="ScriptUnitData"/>
+		<extension name="damage" class="UnitDamage" >
+			<var name="_skip_give_body_collision_damage" value="true" />
+		</extension>
+		<extension name="pickup" class="AmmoClip" >
+			<var name="_weapon_category" value="crossbow" />
+			<var name="_ammo_count" value="1" />
+			<var name="_pickup_event" value="wp_hunterarrow_pick_up" />
+		</extension>
+		<extension name="contour" class="ContourExt" />
+    </extensions>
+	<sounds>
+		<default_soundsource source="rp_ammo" />
+		<soundsource name="snd" source="rp_ammo" />
+	</sounds>
+</unit>

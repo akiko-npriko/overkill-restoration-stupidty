@@ -1,0 +1,13 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_lmg_lewis_pts/wpn_fps_lmg_lewis_barrel" orientation_object="rp_lewis"/>
+	<animations>
+		<animation_group name="recoil">
+			<object name="anim_sling_recoil" enabled="true"/>
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_barrel1" enabled="true"/>
+		<object name="g_barrel1_sling" enabled="true"/>
+		<object name="g_bipod1" enabled="true"/>
+	</graphics>
+</dynamic_object>

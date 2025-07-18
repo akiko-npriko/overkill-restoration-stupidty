@@ -300,7 +300,7 @@ Yanked coding from... (intergrated into mod)
  - Replace Zeal Units with XOF Units (now with special units)
 	 - https://modworkshop.net/mod/38745
  - MGSV Diamond Dogs Enemies
-	 - https://modworkshop.net/mod/43239?tab=description
+	 - https://modworkshop.net/mod/43239
  - National Guard ZEAL Units - Restoration Mod Port
 	 - https://modworkshop.net/mod/38272
  - National Guard ZEAL Units
@@ -311,3 +311,18 @@ Yanked coding from... (intergrated into mod)
 	 - https://modworkshop.net/mod/49440
  - New Marshal Shield (Transparent Visor Addition)
 	 - https://modworkshop.net/mod/41470
+ - Metal Gear Solid Alert Sound - Replace Detection Sound
+	 - https://modworkshop.net/mod/14660
+ - PDTH Contours SuperBLT Edition V1.3
+	 - https://modworkshop.net/mod/26564
+ - Alternative Flashbang Effect
+	 - https://modworkshop.net/mod/51013
+ - HD NPC Weapon Model Replacement
+	- https://modworkshop.net/mod/34740
+ - HD NPC Marshal Weapons
+	- https://modworkshop.net/mod/51971
+	 
+# Gunsss
+ - Do later there are too many i hate myself...
+ 
+ - Silent Killer - High Standard HDM (https://modworkshop.net/mod/25186)

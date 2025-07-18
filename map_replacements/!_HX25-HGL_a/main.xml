@@ -1,0 +1,122 @@
+<mod name="HX25 Handheld Grenade Launcher" color="Color(0.01,0.62,0.98)">
+	<Localization directory="loc" default="english.txt"/>
+	<AssetUpdates id="21556" version="1.31" provider="modworkshop"/>
+	<GlobalValue id="hx25mod" color="Color(0.7, 0.2, 0.1)"/>
+	<WeaponMod id="wpn_fps_gre_hx25_barrel" based_on="wpn_fps_ass_akm_b_standard" wpn_pts="wpn_fps_gre_hx25" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_gre_hx25_body" based_on="wpn_fps_pis_usp_body_standard" wpn_pts="wpn_fps_gre_hx25" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_gre_hx25_explosive_ammo" based_on="wpn_fps_bow_hunter_m_standard" wpn_pts="wpn_fps_gre_hx25" hidden="true" ver="2">
+		<custom_stats damage_far_mul="1" damage_near_mul="1" bullet_class="InstantExplosiveBulletBase" ignore_statistic="true"/>
+		<bullet_objects prefix="g_shell_" amount="1"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_gre_hx25_rear_sight" based_on="wpn_fps_ass_vhs_o_standard" wpn_pts="wpn_fps_gre_hx25" hidden="true" ver="2">
+		<stance_mod>
+			<wpn_fps_gre_hx25 translation="0 4 -0.05"/>
+		</stance_mod>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_hx25_buckshot_ammo" based_on="wpn_fps_bow_hunter_m_standard" sub_type="ammo_custom" wpn_pts="wpn_fps_gre_hx25" ver="2">
+		<stats damage="-20" total_ammo_mod="7"/>
+		<custom_stats damage_near_mul="3" damage_far_mul="3" rays="12"/>
+		<bullet_objects prefix="g_shell_" amount="1"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_hx25_sight_iron_il_front" based_on="wpn_fps_ass_m16_os_frontsight" a_obj="a_b" hidden="true" wpn_pts="wpn_fps_gre_hx25" ver="2"/>
+
+	<WeaponMod id="wpn_fps_upg_hx25_sight_iron_il" based_on="wpn_fps_ass_vhs_o_standard" wpn_pts="wpn_fps_gre_hx25" ver="2">
+		<adds>
+			<value_node value="wpn_fps_upg_hx25_sight_iron_il_front"/>
+		</adds>
+		<stance_mod>
+			<wpn_fps_gre_hx25 translation="0 4 -0.05"/>
+		</stance_mod>
+	</WeaponMod>
+	<Weapon unlock_level="33">
+		<weapon id="hx25" based_on="judge" weapon_hold="hx25" ignore_damage_upgrades="true" damage_near="1500" damage_far="1000" rays="5" CLIP_AMMO_MAX="1" NR_CLIPS_MAX="16" muzzleflash="effects/payday2/particles/weapons/shotgun/sho_muzzleflash_dragons_breath" global_value="hx25mod">
+			<AMMO_PICKUP>
+				<value_node value="0.1"/>
+				<value_node value="0.65"/>
+			</AMMO_PICKUP>
+			<categories>
+				<value_node value="grenade_launcher"/>
+			</categories>
+			<stats damage="140" spread="4" spread_moving="4" recoil="8" concealment="24"/>
+			<fire_mode_data fire_rate="1.5"/>
+			<stats_modifiers damage="2"/>
+			<kick>
+				<standing>
+					<value_node value="3.8"/>
+					<value_node value="3.3"/>
+					<value_node value="-1.0"/>
+					<value_node value="1.0"/>
+				</standing>
+				<crouching>
+					<value_node value="3.8"/>
+					<value_node value="3.3"/>
+					<value_node value="-1.0"/>
+					<value_node value="1.0"/>
+				</crouching>
+				<steelsight>
+					<value_node value="3.5"/>
+					<value_node value="3.0"/>
+					<value_node value="-1.0"/>
+					<value_node value="1.0"/>
+				</steelsight>
+			</kick>
+			<sounds fire="hx25_fire"/>
+		</weapon>
+		<factory id="wpn_fps_gre_hx25" unit="units/mods/weapons/wpn_fps_gre_hx25/wpn_fps_gre_hx25">
+			<animations reload="reload" reload_not_empty="reload"/>
+			<adds/>
+			<override>
+				<wpn_fps_upg_o_rmr parent="false"/>
+				<wpn_fps_upg_o_rms parent="false"/>
+				<wpn_fps_upg_o_rikt parent="false"/>
+			</override>
+			<default_blueprint>
+				<value_node value="wpn_fps_gre_hx25_barrel"/>
+				<value_node value="wpn_fps_gre_hx25_body"/>
+				<value_node value="wpn_fps_gre_hx25_explosive_ammo"/>
+				<value_node value="wpn_fps_gre_hx25_rear_sight"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_gre_hx25_barrel"/>
+				<value_node value="wpn_fps_gre_hx25_body"/>
+				<value_node value="wpn_fps_gre_hx25_explosive_ammo"/>
+				<value_node value="wpn_fps_gre_hx25_rear_sight"/>
+
+				<value_node value="wpn_fps_upg_hx25_buckshot_ammo"/>
+				<value_node value="wpn_fps_upg_hx25_sight_iron_il"/>
+
+				<value_node value="wpn_fps_upg_fl_pis_laser"/>
+				<value_node value="wpn_fps_upg_fl_pis_tlr1"/>
+				<value_node value="wpn_fps_upg_fl_pis_crimson"/>
+				<value_node value="wpn_fps_upg_fl_pis_x400v"/>
+				<value_node value="wpn_fps_upg_fl_pis_m3x"/>
+				<value_node value="wpn_fps_upg_o_rmr"/>
+				<value_node value="wpn_fps_upg_o_rms"/>
+				<value_node value="wpn_fps_upg_o_rikt"/>
+			</uses_parts>
+		</factory>
+		<stance>
+			<standard>
+				<shoulders rotation="-0.00600737 0.00548587 0.000909496 -0.999967" translation="-1.322 -10.65 -0.101"/>
+			</standard>
+			<crouched>
+				<shoulders rotation="-0.00600737 0.00548587 0.000909496 -0.999967" translation="-3.072 -12.65 -0.601"/>
+			</crouched>
+			<steelsight>
+				<shoulders rotation="-0.0103702 0.00548151 0.000929271 -0.999931" translation="-8.592 -25.667 1.044"/>
+			</steelsight>
+		</stance>
+	</Weapon>
+	<Sounds directory="assets\sounds">
+		<sound id="hx25_fire" path="hx25_regular.ogg" prefix="regular"/>
+	</Sounds>
+	<AddFiles directory="assets" auto_generate="true"/>
+	<Hooks directory="hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+	</Hooks>
+</mod>

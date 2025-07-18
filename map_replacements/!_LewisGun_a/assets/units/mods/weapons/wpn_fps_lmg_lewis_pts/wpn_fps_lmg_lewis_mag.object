@@ -1,0 +1,34 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_lmg_lewis_pts/wpn_fps_lmg_lewis_mag" orientation_object="rp_lewis"/>
+	<animations>
+		<animation_group name="recoil">
+			<object name="anim_mag_ring_recoil" enabled="true"/>
+		</animation_group>
+		<animation_group name="reload">
+			<object name="anim_mag_ring_reload" enabled="true"/>
+		</animation_group>
+		<animation_group name="reload_not_empty">
+			<object name="anim_mag_ring_tact_reload" enabled="true"/>
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_bullet_1" enabled="true"/>
+		<object name="g_bullet_2" enabled="true"/>
+		<object name="g_bullet_3" enabled="true"/>
+		<object name="g_bullet_4" enabled="true"/>
+		<object name="g_bullet_5" enabled="true"/>
+		<object name="g_bullet_6" enabled="true"/>
+		<object name="g_bullet_7" enabled="true"/>
+		<object name="g_bullet_8" enabled="true"/>
+		<object name="g_bullet_9" enabled="true"/>
+		<object name="g_bullet_10" enabled="true"/>
+		<object name="g_bullet_11" enabled="true"/>
+		<object name="g_bullet_12" enabled="true"/>
+		<object name="g_bullet_13" enabled="true"/>
+		<object name="g_bullet_14" enabled="true"/>
+		<object name="g_bullet_15" enabled="true"/>
+		<object name="g_mag1" enabled="true"/>
+		<object name="g_mag1_extra" enabled="true"/>
+		<object name="g_mag1_plate" enabled="true"/>
+	</graphics>
+</dynamic_object>

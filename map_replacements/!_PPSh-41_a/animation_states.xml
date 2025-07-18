@@ -1,0 +1,549 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+		<target mode="append">
+			<state name="fps/reload_not_empty/ppsh" type="once" segment="base" speed="1.0">
+				<anim name="ppsh_reload_not_empty"/>
+				<keys>
+					<key at="trigger" trigger="wp_g17_clip_grab" callback="play_sound" class_name="base" param1="wp_g17_clip_grab"/>
+					<key at="trigger" trigger="wp_g17_clip_grab"  callback="anim_clbk_check_bullet_object" class_name="base" />
+					<key at="trigger" trigger="wp_g17_clip_in_contact" callback="play_sound" class_name="base" param1="wp_g17_clip_in_contact"/>
+					<key at="trigger" trigger="wp_g17_clip_slide_in" callback="play_sound" class_name="base" param1="wp_g17_clip_slide_in"/>
+					<key at="trigger" trigger="wp_g17_clip_slide_out" callback="play_sound" class_name="base" param1="wp_g17_clip_slide_out"/>
+					<key at="trigger" trigger="wp_g17_lever_release" callback="play_sound" class_name="base" param1="wp_g17_lever_release"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_throw"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="anim_clbk_check_bullet_object" class_name="base" />
+					<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
+					<key at="trigger" trigger="wp_clip_generic_pist_right" callback="play_sound" class_name="base" param1="wp_clip_generic_pist_right"/>
+					<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base"/>
+					<key at="trigger" trigger="wp_sterling_lever_pull" callback="play_sound" class_name="base" param1="wp_sterling_lever_pull"/>
+					<key at="trigger" trigger="wp_sterling_clip_remove" callback="play_sound" class_name="base" param1="wp_sterling_clip_remove"/>
+					<key at="trigger" trigger="wp_sterling_tilt_back" callback="play_sound" class_name="base" param1="wp_sterling_tilt_back"/>
+					<key at="trigger" trigger="wp_sterling_contact" callback="play_sound" class_name="base" param1="wp_sterling_contact"/>
+					<key at="trigger" trigger="wp_sterling_clip_insert" callback="play_sound" class_name="base" param1="wp_sterling_clip_insert"/>
+					<key at="trigger" trigger="wp_sterling_clip_grab" callback="play_sound" class_name="base" param1="wp_sterling_clip_grab"/>
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+
+			<state name="fps/reload/ppsh" type="once" segment="base" speed="1.0">
+				<anim name="ppsh_reload"/>
+				<keys>
+					<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>	
+
+					<key at="trigger" trigger="wp_g17_clip_grab" callback="play_sound" class_name="base" param1="wp_g17_clip_grab"/>
+					<key at="trigger" trigger="wp_g17_clip_grab"  callback="anim_clbk_check_bullet_object" class_name="base" />
+					<key at="trigger" trigger="wp_g17_clip_in_contact" callback="play_sound" class_name="base" param1="wp_g17_clip_in_contact"/>
+					<key at="trigger" trigger="wp_g17_clip_slide_in" callback="play_sound" class_name="base" param1="wp_g17_clip_slide_in"/>
+					<key at="trigger" trigger="wp_g17_clip_slide_out" callback="play_sound" class_name="base" param1="wp_g17_clip_slide_out"/>
+					<key at="trigger" trigger="wp_g17_lever_release" callback="play_sound" class_name="base" param1="wp_g17_lever_release"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_throw"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
+					<key at="trigger" trigger="wp_clip_generic_pist_right" callback="play_sound" class_name="base" param1="wp_clip_generic_pist_right"/>
+					<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+					<key at="trigger" trigger="wp_sterling_lever_pull" callback="play_sound" class_name="base" param1="wp_sterling_lever_pull"/>
+					<key at="trigger" trigger="wp_sterling_clip_remove" callback="play_sound" class_name="base" param1="wp_sterling_clip_remove"/>
+					<key at="trigger" trigger="wp_sterling_tilt_back" callback="play_sound" class_name="base" param1="wp_sterling_tilt_back"/>
+					<key at="trigger" trigger="wp_sterling_contact" callback="play_sound" class_name="base" param1="wp_sterling_contact"/>
+					<key at="trigger" trigger="wp_sterling_clip_insert" callback="play_sound" class_name="base" param1="wp_sterling_clip_insert"/>
+					<key at="trigger" trigger="wp_sterling_clip_grab" callback="play_sound" class_name="base" param1="wp_sterling_clip_grab"/>
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+
+			<state name="fps/reload_not_empty/k50m" type="once" segment="base" speed="1.0">
+				<anim name="k50m_reload_not_empty"/>
+				<keys>
+					<key at="trigger" trigger="wp_g17_clip_grab" callback="play_sound" class_name="base" param1="wp_g17_clip_grab"/>
+					<key at="trigger" trigger="wp_g17_clip_grab"  callback="anim_clbk_check_bullet_object" class_name="base" />
+					<key at="trigger" trigger="wp_g17_clip_in_contact" callback="play_sound" class_name="base" param1="wp_g17_clip_in_contact"/>
+					<key at="trigger" trigger="wp_g17_clip_slide_in" callback="play_sound" class_name="base" param1="wp_g17_clip_slide_in"/>
+					<key at="trigger" trigger="wp_g17_clip_slide_out" callback="play_sound" class_name="base" param1="wp_g17_clip_slide_out"/>
+					<key at="trigger" trigger="wp_g17_lever_release" callback="play_sound" class_name="base" param1="wp_g17_lever_release"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_throw"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="anim_clbk_check_bullet_object" class_name="base" />
+					<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
+					<key at="trigger" trigger="wp_clip_generic_pist_right" callback="play_sound" class_name="base" param1="wp_clip_generic_pist_right"/>
+					<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base"/>
+					<key at="trigger" trigger="wp_sterling_lever_pull" callback="play_sound" class_name="base" param1="wp_sterling_lever_pull"/>
+					<key at="trigger" trigger="wp_sterling_clip_remove" callback="play_sound" class_name="base" param1="wp_sterling_clip_remove"/>
+					<key at="trigger" trigger="wp_sterling_tilt_back" callback="play_sound" class_name="base" param1="wp_sterling_tilt_back"/>
+					<key at="trigger" trigger="wp_sterling_contact" callback="play_sound" class_name="base" param1="wp_sterling_contact"/>
+					<key at="trigger" trigger="wp_sterling_clip_insert" callback="play_sound" class_name="base" param1="wp_sterling_clip_insert"/>
+					<key at="trigger" trigger="wp_sterling_clip_grab" callback="play_sound" class_name="base" param1="wp_sterling_clip_grab"/>
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+
+			<state name="fps/reload/k50m" type="once" segment="base" speed="1.0">
+				<anim name="k50m_reload"/>
+				<keys>
+					<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>	
+
+					<key at="trigger" trigger="wp_g17_clip_grab" callback="play_sound" class_name="base" param1="wp_g17_clip_grab"/>
+					<key at="trigger" trigger="wp_g17_clip_grab"  callback="anim_clbk_check_bullet_object" class_name="base" />
+					<key at="trigger" trigger="wp_g17_clip_in_contact" callback="play_sound" class_name="base" param1="wp_g17_clip_in_contact"/>
+					<key at="trigger" trigger="wp_g17_clip_slide_in" callback="play_sound" class_name="base" param1="wp_g17_clip_slide_in"/>
+					<key at="trigger" trigger="wp_g17_clip_slide_out" callback="play_sound" class_name="base" param1="wp_g17_clip_slide_out"/>
+					<key at="trigger" trigger="wp_g17_lever_release" callback="play_sound" class_name="base" param1="wp_g17_lever_release"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_throw"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
+					<key at="trigger" trigger="wp_clip_generic_pist_right" callback="play_sound" class_name="base" param1="wp_clip_generic_pist_right"/>
+					<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+					<key at="trigger" trigger="wp_sterling_lever_pull" callback="play_sound" class_name="base" param1="wp_sterling_lever_pull"/>
+					<key at="trigger" trigger="wp_sterling_clip_remove" callback="play_sound" class_name="base" param1="wp_sterling_clip_remove"/>
+					<key at="trigger" trigger="wp_sterling_tilt_back" callback="play_sound" class_name="base" param1="wp_sterling_tilt_back"/>
+					<key at="trigger" trigger="wp_sterling_contact" callback="play_sound" class_name="base" param1="wp_sterling_contact"/>
+					<key at="trigger" trigger="wp_sterling_clip_insert" callback="play_sound" class_name="base" param1="wp_sterling_clip_insert"/>
+					<key at="trigger" trigger="wp_sterling_clip_grab" callback="play_sound" class_name="base" param1="wp_sterling_clip_grab"/>
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil"/>
+			<anim name="m4_recoil" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_recoil" weight="ppsh"/>
+			<anim name="k50m_recoil" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil_steelsight"/>
+			<anim name="m4_recoil" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_recoil_steelsight" weight="ppsh"/>
+			<anim name="k50m_recoil_steelsight" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil_enter"/>
+			<anim name="m4_recoil_enter" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_recoil_enter" weight="ppsh"/>
+			<anim name="k50m_recoil_enter" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil_loop"/>
+			<anim name="m4_recoil_loop" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_recoil_loop" weight="ppsh"/>
+			<anim name="k50m_recoil_loop" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil_exit"/>
+			<anim name="m4_recoil_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_recoil_exit" weight="ppsh"/>
+			<anim name="k50m_recoil_exit" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+		<target mode="attach">
+			<to name="reload_ppsh" 						redirect="fps/reload/ppsh"/>
+			<to name="reload_not_empty_ppsh" 			redirect="fps/reload_not_empty/ppsh"/>
+			<to name="reload_k50m" 						redirect="fps/reload/k50m"/>
+			<to name="reload_not_empty_k50m" 			redirect="fps/reload_not_empty/k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/idle"/>
+			<anim name="m4_idle" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_idle" weight="ppsh"/>
+			<anim name="k50m_idle" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/equip"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_equip" weight="ppsh"/>
+			<anim name="k50m_equip" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/unequip"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_unequip" weight="ppsh"/>
+			<anim name="k50m_unequip" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/start_running"/>
+			<anim name="m4_sprint_enter" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_sprint_enter" weight="ppsh"/>
+			<anim name="k50m_sprint_enter" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/running"/>
+			<anim name="m4_sprint" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_sprint" weight="ppsh"/>
+			<anim name="k50m_sprint" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/stop_running"/>
+			<anim name="m4_sprint_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_sprint_exit" weight="ppsh"/>
+			<anim name="k50m_sprint_exit" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_unequip" weight="ppsh"/>
+			<anim name="k50m_unequip" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee_exit"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_equip" weight="ppsh"/>
+			<anim name="k50m_equip" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee"/>
+			<anim name="m4_melee" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_melee" weight="ppsh"/>
+			<anim name="k50m_melee" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee_miss"/>
+			<anim name="m4_melee_miss" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_melee_miss" weight="ppsh"/>
+			<anim name="k50m_melee_miss" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/use"/>
+			<anim name="m4_use" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_use" weight="ppsh"/>
+			<anim name="k50m_use" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/down"/>
+			<anim name="m4_com_down_var1" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_com_down_var1" weight="ppsh"/>
+			<anim name="k50m_com_down_var1" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/stop"/>
+			<anim name="m4_com_stop" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_com_stop" weight="ppsh"/>
+			<anim name="k50m_com_stop" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/come"/>
+			<anim name="m4_com_come" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_com_come" weight="ppsh"/>
+			<anim name="k50m_com_come" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/point"/>
+			<anim name="m4_com_point" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_com_point" weight="ppsh"/>
+			<anim name="k50m_com_point" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/get_up"/>
+			<anim name="m4_get_up" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_get_up" weight="ppsh"/>
+			<anim name="k50m_get_up" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/gogo"/>
+			<anim name="m4_gogo" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_gogo" weight="ppsh"/>
+			<anim name="k50m_gogo" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_projectile_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_unequip" weight="ppsh"/>
+			<anim name="k50m_unequip" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_projectile_exit"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_equip" weight="ppsh"/>
+			<anim name="k50m_equip" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_grenade_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_unequip" weight="ppsh"/>
+			<anim name="k50m_unequip" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_molotov_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_unequip" weight="ppsh"/>
+			<anim name="k50m_unequip" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_concussion_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_unequip" weight="ppsh"/>
+			<anim name="k50m_unequip" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_dada_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_unequip" weight="ppsh"/>
+			<anim name="k50m_unequip" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_grenade_exit"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_equip" weight="ppsh"/>
+			<anim name="k50m_equip" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/tased"/>
+			<anim name="m4_tased" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_tased" weight="ppsh"/>
+			<anim name="k50m_tased" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/tased_boost"/>
+			<anim name="m4_tased_boost" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_tased_boost" weight="ppsh"/>
+			<anim name="k50m_tased_boost" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/tased_exit"/>
+			<anim name="m4_tased_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_tased_exit" weight="ppsh"/>
+			<anim name="k50m_tased_exit" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/enter_tazer_counter"/>
+			<anim name="m4_tased_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_tased_exit" weight="ppsh"/>
+			<anim name="k50m_tased_exit" weight="k50m"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/cash_inspect"/>
+			<anim name="glock_inspect" weight="glock"/>
+		</search>
+		<target mode="append">
+			<anim name="ppsh_inspect" weight="ppsh"/>
+			<anim name="k50m_inspect" weight="k50m"/>
+		</target>
+	</tweak>
+</tweaks>

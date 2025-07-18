@@ -1,0 +1,17 @@
+<materials version="3" group="weapon_group">
+	<material name="mtr_stanag_magpul_pmag_gen_m3_windowed" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture 	 file="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/magazine_stanag_magpul_pmag_gen3_windowed_df" mip="1"/>
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/magazine_stanag_magpul_pmag_gen3_windowed_nm" mip="1"/>
+	</material>
+	<material name="mtr_stanag_magpul_glass" version="2" unique="true" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:FPS:NORMALMAP" version="2">
+        <diffuse_texture file="units/payday2/weapons/wpn_effects_textures/green_glass_df" mip="1"/>
+        <bump_normal_texture  file="core/textures/blank_texture_nm" />
+        <opacity_texture file="units/pd2_dlc_bbq/weapons/molotov_cocktail/textures/wpn_fps_molotov_glass_op" mip="1"/>
+		<reflection_texture global_texture="current_global_texture" type="cubemap"/>
+        <variable value="1.6999999284744 1 1" type="vector3" name="fresnel_settings"/>
+	</material>
+	<material name="mtr_m855a1" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/m855a1_df" mip="1" />
+	<bump_normal_texture file="units/mods/weapons/wpn_fps_ass_m416d_pts/textures/m855a1_nm" mip="1" />
+	</material>
+</materials>

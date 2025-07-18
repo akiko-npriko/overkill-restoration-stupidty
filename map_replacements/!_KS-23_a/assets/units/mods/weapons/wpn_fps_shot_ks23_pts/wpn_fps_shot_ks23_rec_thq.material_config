@@ -1,0 +1,10 @@
+<materials version="3" group="weapon_basset">
+	<material name="mat_ks23" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_shot_ks23_pts/textures/ks23_df"/>
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_shot_ks23_pts/textures/ks23_nm"/>
+	</material>
+	<material name="mat_23mm_shell" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_shot_ks23_pts/textures/shell_df"/>
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_shot_ks23_pts/textures/shell_nm"/>
+	</material>
+</materials>

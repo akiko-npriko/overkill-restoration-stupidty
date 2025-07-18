@@ -1,0 +1,21 @@
+<materials version="3" group="weapon_group">
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" name="mtr_m855" version="2">
+        <diffuse_texture	 file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/m855_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/m855_nm"/>
+       <material_texture	 file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/m855_gsma" />
+        <reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap"/>
+    </material>    
+	<material name="mtr_car4_mag_empress" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/magazine_empress_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/magazine_empress_nm"/>
+        <material_texture	 file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/magazine_empress_gsma"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/weapon_metal_cubemap"/>
+    </material>	
+	<material name="mtr_car4_mag_speedpull" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/car4_magpul_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/car4_magpul_nm"/>
+        <material_texture	 file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/car4_magpul_gsma"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/weapon_metal_cubemap"/>
+    </material>	
+	
+</materials>

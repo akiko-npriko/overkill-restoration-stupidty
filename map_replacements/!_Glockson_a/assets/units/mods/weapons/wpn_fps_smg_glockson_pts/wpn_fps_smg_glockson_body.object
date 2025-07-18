@@ -1,0 +1,21 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_smg_glockson_pts/wpn_fps_smg_glockson_body" orientation_object="rp_wpn_fps_smg_glockpson_body" />
+	 <animations>		
+		<animation_group name="reload" enabled="false" >
+			<object name="anim_bolt_reload" />
+			<object name="anim_releaser_reload" />
+		</animation_group>
+		<animation_group name="reload_not_empty" enabled="false" >
+			<object name="anim_bolt_reload_not_empty" />
+			<object name="anim_releaser_reload_not_empty" />
+		</animation_group>
+		<animation_group name="recoil" enabled="false" >
+			<object name="anim_bolt_recoil" />
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_glockson_slide" enabled="true" />
+		<object name="g_glockson_body" enabled="true" />
+		<object name="g_glockson_trigger" enabled="true" />
+	</graphics>
+</dynamic_object>

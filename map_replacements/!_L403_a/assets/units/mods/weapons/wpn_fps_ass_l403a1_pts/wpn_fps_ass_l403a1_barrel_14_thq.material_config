@@ -1,0 +1,21 @@
+<materials version="3" group="weapon_group">
+	<material name="mtr_barrel" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/ks1_barrel_df" mip="1"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/ks1_barrel_nm" mip="1"/>
+        <material_texture	 file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/ks1_barrel_gsma" mip="1"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/weapon_metal_cubemap"/>
+    </material>	
+	<material name="mtr_gas" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/ks1_gas_block_df" mip="1"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/ks1_gas_block_nm" mip="1"/>
+        <material_texture	 file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/ks1_gas_block_gsma" mip="1"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/weapon_metal_cubemap"/>
+    </material>	
+	<material name="mtr_ks3" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/urg_ks3_df" mip="1"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/urg_ks3_nm" mip="1"/>
+        <material_texture	 file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/urg_ks3_gsma" mip="1"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_ass_l403a1_pts/textures/weapon_metal_cubemap"/>
+    </material>	
+	
+</materials>
