@@ -73,7 +73,11 @@ function GameSetup:load_packages()
 	local difficulty_index = tweak_data:difficulty_to_index(difficulty)
 	
 	--Akiko Edits
-	load_difficulty_package("packages/akiko_package/addmisc")
+	--Note to self:
+		--<Package id="packages/akiko_misc" file="packages/akiko_package/addmisc.xml"/>
+		--USE PACKAGE ID AND NOT FILE LOCATION OR ASSETS ARE NEVER LOADED!!!
+	
+	load_difficulty_package("packages/akiko_misc")
 	
 	--[[
 	if difficulty_index == 4 then
