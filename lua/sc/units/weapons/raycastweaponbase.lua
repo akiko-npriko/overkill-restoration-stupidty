@@ -782,7 +782,7 @@ function RaycastWeaponBase:fire(from_pos, direction, dmg_mul, shoot_player, spre
 	
 	if (self:weapon_tweak_data().zippy) and dmg_mul == 0 and not self._jammed then
 		local player_unit = managers.player:player_unit()
-		if player_unit.character_damage and player_unit:character_damage() then
+		if player_unit and player_unit.character_damage and player_unit:character_damage() then
 			if not player_unit:character_damage():is_downed() then
 				player_unit:character_damage()._unit:sound():play("player_hit_permadamage")
 				player_unit:character_damage():_calc_health_damage_no_deflection({
@@ -802,7 +802,7 @@ function RaycastWeaponBase:fire(from_pos, direction, dmg_mul, shoot_player, spre
 		end
 	elseif (self:weapon_tweak_data().termina) and dmg_mul == 0 then
 		local player_unit = managers.player:player_unit()
-		if player_unit.character_damage and player_unit:character_damage() then
+		if player_unit and player_unit.character_damage and player_unit:character_damage() then
 			player_unit:character_damage()._unit:sound():play("player_hit_permadamage")
 			local base = self:ammo_base()
 			local ammo_in_clip = base:get_ammo_remaining_in_clip()
@@ -810,7 +810,7 @@ function RaycastWeaponBase:fire(from_pos, direction, dmg_mul, shoot_player, spre
 		end
 	elseif (self:weapon_tweak_data().termina) and dmg_mul == 0.25 then
 		local player_unit = managers.player:player_unit()
-		if player_unit.character_damage and player_unit:character_damage() then
+		if player_unit and player_unit.character_damage and player_unit:character_damage() then
 			if not player_unit:character_damage():is_downed() then
 				player_unit:character_damage()._unit:sound():play("player_hit_permadamage")
 				player_unit:character_damage():_calc_health_damage_no_deflection({
@@ -828,16 +828,14 @@ function RaycastWeaponBase:fire(from_pos, direction, dmg_mul, shoot_player, spre
 				})
 			end
 		end
-		--[[
 	elseif (jam < universaljamchance) and dmg_mul == 0 then
 		local player_unit = managers.player:player_unit()
-		if player_unit.character_damage and player_unit:character_damage() then
+		if player_unit and player_unit.character_damage and player_unit:character_damage() then
 			player_unit:character_damage()._unit:sound():play("player_hit_permadamage")
 			--local base = self:ammo_base()
 			--local ammo_in_clip = base:get_ammo_remaining_in_clip()
 			--base:set_ammo_remaining_in_clip(ammo_in_clip - ammo_usage)
 		end
-		]]
 	end
 
 	if self._alert_events and ray_res.rays then
