@@ -15430,7 +15430,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		table.insert(unit_types_skull_dozer.lapd, ellite_dozer)
 		table.insert(unit_types_skull_dozer.fbi, ellite_dozer)
 		
-	else
+	elseif difficulty_index == 8 then
 		--National Guard Medicbulldozer (Addon Green Dozer) Death Sentence (America, Nypd, Lapd, Fbi)
 		table.insert(unit_types_green_dozer.america, marshall_medicdozer)
 		table.insert(unit_types_green_dozer.nypd, marshall_medicdozer)
