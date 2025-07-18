@@ -828,6 +828,7 @@ function RaycastWeaponBase:fire(from_pos, direction, dmg_mul, shoot_player, spre
 				})
 			end
 		end
+		--[[
 	elseif (jam < universaljamchance) and dmg_mul == 0 then
 		local player_unit = managers.player:player_unit()
 		if player_unit.character_damage and player_unit:character_damage() then
@@ -836,6 +837,7 @@ function RaycastWeaponBase:fire(from_pos, direction, dmg_mul, shoot_player, spre
 			--local ammo_in_clip = base:get_ammo_remaining_in_clip()
 			--base:set_ammo_remaining_in_clip(ammo_in_clip - ammo_usage)
 		end
+		]]
 	end
 
 	if self._alert_events and ray_res.rays then

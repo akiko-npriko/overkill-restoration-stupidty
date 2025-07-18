@@ -33945,11 +33945,11 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 		}
 		self.m2hb.stats = {
 			damage = 180,
-			spread = 80,
-			recoil = 20,
+			spread = 75,
+			recoil = 45,
 			spread_moving = 5,
 			zoom = 1,
-			concealment = 13,
+			concealment = 18,
 			suppression = 6,
 			alert_size = 2,
 			extra_ammo = 101,
