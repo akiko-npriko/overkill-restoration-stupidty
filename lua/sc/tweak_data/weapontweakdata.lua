@@ -33911,6 +33911,65 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 		--self.otwd_flare_gun.use_data.selection_index = 3
 	end
 	
+	if self.m2hb then
+		self.m2hb.recategorize = { "heavy_mg" }
+		self.m2hb.categories = {
+			"lmg",
+			"smg",
+			"mmg"
+		}
+		self.m2hb.damage_type = "machine_gun"
+		self.m2hb.CLIP_AMMO_MAX = 100
+		self.m2hb.BURST_FIRE = false
+		self.m2hb.CAN_TOGGLE_FIREMODE = true
+		self.m2hb.fake_semi_anims = true
+		self.m2hb.fire_mode_data.fire_rate = 0.1333
+		self.m2hb.AMMO_MAX = 100
+		--self.m2hb.kick = self.stat_info.kick_tables.vertical_kick
+		--self.m2hb.kick_pattern = {
+			--{0, self.stat_info.kick_tables.random_recoil},
+			--{6, self.stat_info.kick_tables.left_recoil},
+			--{12, self.stat_info.kick_tables.right_recoil},
+			--{16, self.stat_info.kick_tables.vertical_kick}
+		--}
+		self.m2hb.always_use_standing = true
+		self.m2hb.muzzleflash = "_dmc/effects/heavy_muzzle"
+		self.m2hb.muzzleflash_silenced = "_dmc/effects/heavy_suppressed"
+		--self.m2hb.shell_ejection = "effects/payday2/particles/weapons/shells/shell_762_lmg"
+		self.m2hb.supported = true
+		self.m2hb.ads_speed = 0.700
+		self.m2hb.damage_falloff = {
+			start_dist = 3000,
+			end_dist = 10000,
+			min_mult = 0.5
+		}
+		self.m2hb.stats = {
+			damage = 180,
+			spread = 80,
+			recoil = 20,
+			spread_moving = 5,
+			zoom = 1,
+			concealment = 13,
+			suppression = 6,
+			alert_size = 2,
+			extra_ammo = 101,
+			total_ammo_mod = 400,
+			value = 9,
+			reload = 20
+		}
+		self.m2hb.stats_modifiers = nil
+		self.m2hb.panic_suppression_chance = 0.05
+		self.m2hb.weapon_movement_penalty = 0.5
+		self.m2hb.sms = sms_preset.lmg_90
+		self.m2hb.sounds.spin_start = "wp_mg42_lever_release"
+		self.m2hb.spin_up_shoot = true
+		self.m2hb.spin_up_t = 0.07
+		self.m2hb.spin_down_t = 0.00000001
+		--self.m2hb.reload_speed_multiplier = 1
+		--self.m2hb.timers.reload_exit_empty = 1.65
+		--self.m2hb.timers.reload_exit_not_empty = 1.65
+	end
+	
 	--[[
 	if self.temple then	--VxWolf HK G11 //this is gonna be fucking janky as all hell lmao
 			self.temple.recategorize = { "light_ar" }
