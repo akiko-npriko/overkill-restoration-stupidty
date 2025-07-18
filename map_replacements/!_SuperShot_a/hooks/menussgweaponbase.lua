@@ -1,0 +1,1 @@
+SSGWeaponBase = SSGWeaponBase or class(NewRaycastWeaponBase)

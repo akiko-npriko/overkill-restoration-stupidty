@@ -1,0 +1,1 @@
+SKSWeaponBase = SKSWeaponBase or class(NewRaycastWeaponBase)

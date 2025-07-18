@@ -1,0 +1,28 @@
+<dynamic_object>
+    <diesel orientation_object="rp_curve" />
+	<animations>
+		<animation_group name="menu" enabled="false">
+		  <object name="anim_firepin_menu" enabled="true" />
+		  <object name="anim_safety_menu" enabled="true" />
+		</animation_group>
+		<animation_group name="reload" enabled="false">
+		  <object name="anim_sl_reload" enabled="true" />
+		  <object name="anim_firepin_reload" enabled="true" />
+		  <object name="anim_safety_reload" enabled="true" />
+		  <object name="anim_m_reload" enabled="true" />
+		</animation_group>
+		<animation_group name="reload_not_empty" enabled="false">
+		  <object name="anim_m_reload_not_empty" enabled="true" />
+		  <object name="anim_firepin_reload_not_empty" enabled="true" />
+		  <object name="anim_safety_reload_not_empty" enabled="true" />
+		</animation_group>
+		<animation_group name="recoil" enabled="false">
+		  <object name="anim_sl_recoil" enabled="true" />
+		  <object name="anim_firepin_recoil" enabled="true" />
+		</animation_group>
+		<animation_group name="last_recoil" enabled="false">
+		  <object name="anim_sl_last_recoil" enabled="true" />
+		  <object name="anim_firepin_last_recoil" enabled="true" />
+		</animation_group>
+	</animations>
+</dynamic_object>

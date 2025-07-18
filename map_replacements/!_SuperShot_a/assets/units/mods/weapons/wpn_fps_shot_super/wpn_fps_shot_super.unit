@@ -1,0 +1,13 @@
+<unit type="wpn" slot="1">
+	<object file="units/mods/weapons/wpn_fps_shot_super/wpn_fps_shot_super"/>
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_huntsman"/>
+		<depends_on effect="effects/mods/weapons/ssg/muzzle"/>
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData"/>
+		<extension name="base" class="SSGWeaponBase">
+			<var name="name_id" value="super"/>
+		</extension>
+	</extensions>
+</unit>

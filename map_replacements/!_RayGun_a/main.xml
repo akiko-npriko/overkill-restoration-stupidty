@@ -1,0 +1,119 @@
+<table name="Raygun" color="Color(0.8, 0.2, 0.8)">
+	<Localization directory="loc" default="english.txt"/>
+	<AssetUpdates id="36808" version="1.2" provider="modworkshop"/>
+	<GlobalValue id="raygun" color="Color(0.8, 0.2, 0.8)"/>
+	
+	<WeaponMod id="wpn_fps_spe_raygun_body" based_on="wpn_fps_pis_breech_body" type="body" unit="units/mods/weapons/wpn_fps_spe_raygun_pts/wpn_fps_spe_raygun_body" drop="false" is_a_unlockable="false">
+		<animations reload="reload" reload_not_empty="reload" fire_steelsight="recoil" fire="recoil"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_spe_raygun_b_dummy" based_on="wpn_fps_pis_breech_b_standard" type="barrel" a_obj="a_body" unit="units/mods/weapons/wpn_fps_spe_raygun_pts/wpn_fps_spe_raygun_b_dummy" drop="false" is_a_unlockable="false"/>
+	<Weapon unlock_level="45">
+		<weapon id="raygun" based_on="breech" weapon_hold="breech" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="2" texture_bundle_folder="mods" global_value="raygun" ignore_damage_upgrades="true" has_description="false" shell_ejection="effects/payday2/particles/weapons/shells/shell_empty" muzzleflash="effects/raygun_fire">
+			<categories>
+				<value_node value="grenade_launcher"/>
+			</categories>
+			<upgrade_blocks>
+				<weapon>
+					<value_node value="clip_ammo_increase"/>
+				</weapon>
+			</upgrade_blocks>
+			<stats damage="55" spread="22" spread_moving="22" concealment="15"/>
+			<stats_modifiers damage="10"/>
+			<AMMO_PICKUP>
+				<value_node value="0.05"/>
+				<value_node value="0.60"/>
+			</AMMO_PICKUP>
+			<fire_mode_data fire_rate="0.2"/>
+			<sounds fire="raygun_fire" fire_single="raygun_fire" fire_auto="raygun_fire" magazine_empty="" use_fix="true"/>
+			<animations reload_name_id="raygun"/>
+			<timers reload_not_empty="2.57" reload_empty="2.57"/>
+		</weapon>
+		<factory id="wpn_fps_spe_raygun" unit="units/mods/weapons/wpn_fps_spe_raygun/wpn_fps_spe_raygun">
+			<animations/>
+			<adds/>
+			<override/>
+			<default_blueprint>
+				<value_node value="wpn_fps_spe_raygun_body"/>
+				<value_node value="wpn_fps_spe_raygun_b_dummy"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_spe_raygun_body"/>
+				<value_node value="wpn_fps_spe_raygun_b_dummy"/>
+			</uses_parts>
+		</factory>
+		<stance>
+			<standard>
+				<shoulders translation="1.784 -0.432 -4.207"/>
+			</standard>
+			<steelsight>
+				<shoulders rotation="-0.018108 -0.000864689 0.00141215 -0.999835" translation="-8.255 0.668 -4.3"/>
+			</steelsight>
+			<crouched>
+				<shoulders translation="0.783923 -1.43154 -5.207"/>
+			</crouched>
+		</stance>
+	</Weapon>
+	
+	<Sounds directory="assets\sounds">
+		<sound id="raygun_fire" path="raygun_fire.ogg" prefix="regular"/>
+		<sound id="wpn_ray_reload_battery" path="wpn_ray_reload_battery.ogg" prefix="first"/>
+		<sound id="wpn_ray_reload_battery_out" path="wpn_ray_reload_battery_out.ogg" prefix="first"/>
+		<sound id="wpn_ray_reload_close" path="wpn_ray_reload_close.ogg" prefix="first"/>
+		<sound id="wpn_ray_reload_open" path="wpn_ray_reload_open.ogg" prefix="first"/>
+	</Sounds>
+	<AddFiles directory="assets">
+		<animation path="anims/fps/raygun/raygun_reload" load="true"/>
+	
+		<cooked_physics path="units/mods/weapons/wpn_fps_spe_raygun/wpn_fps_spe_raygun"/>
+		<model path="units/mods/weapons/wpn_fps_spe_raygun/wpn_fps_spe_raygun"/>
+		<object path="units/mods/weapons/wpn_fps_spe_raygun/wpn_fps_spe_raygun"/>
+		<unit path="units/mods/weapons/wpn_fps_spe_raygun/wpn_fps_spe_raygun"/>
+		<unit path="units/mods/weapons/wpn_fps_spe_raygun/wpn_fps_spe_raygun_npc"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_spe_raygun_pts/wpn_fps_spe_raygun_body"/>
+		<model path="units/mods/weapons/wpn_fps_spe_raygun_pts/wpn_fps_spe_raygun_body"/>
+		<object path="units/mods/weapons/wpn_fps_spe_raygun_pts/wpn_fps_spe_raygun_body"/>
+		<unit path="units/mods/weapons/wpn_fps_spe_raygun_pts/wpn_fps_spe_raygun_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_spe_raygun_pts/wpn_fps_spe_raygun_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_spe_raygun_pts/wpn_fps_spe_raygun_body_cc"/>
+		<material_config path="units/mods/weapons/wpn_fps_spe_raygun_pts/wpn_fps_spe_raygun_body_cc_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_spe_raygun_pts/wpn_fps_spe_raygun_body_thq"/>
+		
+		<cooked_physics path="units/mods/weapons/wpn_fps_spe_raygun_pts/wpn_fps_spe_raygun_b_dummy"/>
+		<model path="units/mods/weapons/wpn_fps_spe_raygun_pts/wpn_fps_spe_raygun_b_dummy"/>
+		<object path="units/mods/weapons/wpn_fps_spe_raygun_pts/wpn_fps_spe_raygun_b_dummy"/>
+		<unit path="units/mods/weapons/wpn_fps_spe_raygun_pts/wpn_fps_spe_raygun_b_dummy"/>
+		
+		<texture path="units/mods/weapons/wpn_fps_spe_raygun_pts/textures/plastic_df"/>
+		<texture path="units/mods/weapons/wpn_fps_spe_raygun_pts/textures/plastic_gsma"/>
+		<texture path="units/mods/weapons/wpn_fps_spe_raygun_pts/textures/plastic_df_cc"/>
+		<texture path="units/mods/weapons/wpn_fps_spe_raygun_pts/textures/meter_df"/>
+		<texture path="units/mods/weapons/wpn_fps_spe_raygun_pts/textures/plastic_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_spe_raygun_pts/textures/metal_df"/>
+		<texture path="units/mods/weapons/wpn_fps_spe_raygun_pts/textures/metal_gsma"/>
+		<texture path="units/mods/weapons/wpn_fps_spe_raygun_pts/textures/metal_df_cc"/>
+		<texture path="units/mods/weapons/wpn_fps_spe_raygun_pts/textures/metal_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_spe_raygun_pts/textures/power_df"/>
+		<texture path="units/mods/weapons/wpn_fps_spe_raygun_pts/textures/power_il"/>
+		<texture path="units/mods/weapons/wpn_fps_spe_raygun_pts/textures/reticle_df"/>
+		<texture path="units/mods/weapons/wpn_fps_spe_raygun_pts/textures/ammo_df"/>
+		<texture path="units/mods/weapons/wpn_fps_spe_raygun_pts/textures/ammo_nm"/>
+
+		<effect path="effects/raygun_trail" load="true"/>
+		<effect path="effects/raygun_glow" load="true"/>
+		<effect path="effects/raygun_fire" load="true"/>
+		<texture path="effects/textures/raygun_trail_df"/>
+		<texture path="effects/textures/raygun_circle_df"/>
+		<unit_obj path="units/mods/weapons/wpn_prj_raygun_exp/wpn_prj_raygun_exp"/>
+
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/raygun"/>
+		<texture path="guis/textures/pd2/blackmarket/icons/weapons/outline/raygun"/>
+	</AddFiles>
+	<Hooks directory="hooks">
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
+		<hook file="RaygunWeaponBase.lua" source_file="lib/units/weapons/projectileweaponbase"/>
+		<hook file="RaygunGrenade.lua" source_file="lib/units/weapons/projectiles/projectilebase"/>
+		<hook file="MenuRaygunWeaponBase.lua" source_file="lib/units/weapons/menushotgunbase"/>
+	</Hooks>
+</table>

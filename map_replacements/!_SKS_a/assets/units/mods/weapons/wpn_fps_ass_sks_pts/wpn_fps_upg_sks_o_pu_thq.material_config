@@ -1,0 +1,20 @@
+<materials version="3" group="weapon_group">
+	<material name="mat_pu" render_template="generic:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_ass_sks_pts/textures/pu_df" mip="1"/>
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_ass_sks_pts/textures/pu_nm" mip="1"/>
+		<material_texture file="units/mods/weapons/wpn_fps_ass_sks_pts/textures/pu_gsma" mip="1"/>
+	</material>
+	<material name="mat_lens" decal_material="glass_breakable" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:FPS" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_ass_sks_pts/textures/lens_glass_df"/>
+		<opacity_texture file="units/payday2/weapons/wpn_fps_upg_o_specter/wpn_specter_glass_op"/>
+		<reflection_texture global_texture="current_global_texture" type="cubemap"/>
+		<variable value="0.9 0 1" type="vector3" name="fresnel_settings"/>
+	</material>
+	<material name="mat_lens_solid" decal_material="glass_breakable" render_template="generic:DIFFUSE_TEXTURE" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_ass_sks_pts/textures/lens_glass_df" mip="1"/>
+	</material>
+	<material name="mat_reticle" render_template="effect:DIFFUSE0_TEXTURE" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_ass_sks_pts/textures/pu_reticle_df" mip="1"/>
+        <variable type="scalar" name="intensity" value="reddot"/>
+	</material>
+</materials>

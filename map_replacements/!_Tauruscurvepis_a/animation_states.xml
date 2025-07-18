@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+		<target mode="attach">
+			<to name="reload_curve" 						redirect="fps/reload/curve"/>
+			<to name="reload_not_empty_curve" 			redirect="fps/reload_not_empty/curve"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+		<target mode="append">
+			<state name="fps/reload/curve" type="once" segment="base" speed="1.0">
+				<anim name="curve_reload"/>
+					<keys>
+						
+						<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>	
+							
+						<key at="trigger" trigger="wp_foley_generic_lever_release" 				callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_grab" 					callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_throw" 				callback="play_sound" class_name="base" param1="wp_foley_generic_clip_throw"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_take_new" 				callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_in_connect" 			callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" 				callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_pull" 				callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand" 				callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt_back" 					callback="play_sound" class_name="base" param1="wp_ak47_tilt_back"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt" 						callback="play_sound" class_name="base" param1="wp_ak47_tilt"/>
+						<key at="trigger" trigger="wp_packrat_slide_release" 					callback="play_sound" class_name="base" param1="wp_curve_slide_release"/>
+						<key at="trigger" trigger="wp_packrat_slide_back" 						callback="play_sound" class_name="base" param1="wp_legacy_slide_back"/>
+						<key at="trigger" trigger="wp_packrat_mag_in" 							callback="play_sound" class_name="base" param1="wp_curve_magin"/>
+						<key at="trigger" trigger="wp_packrat_grab_slide" 						callback="play_sound" class_name="base" param1="wp_curve_lever_grab"/>
+						<key at="trigger" trigger="wp_packrat_mag_contact" 						callback="play_sound" class_name="base" param1="wp_curve_mag_contact"/>	
+						<key at="trigger" trigger="wp_packrat_mag_throw" 						callback="play_sound" class_name="base" param1="wp_curve_magout"/>
+						<key at="trigger" trigger="wp_packrat_button_press" 					callback="play_sound" class_name="base" param1="wp_legacy_button_press"/>		
+						<key at="trigger" trigger="wp_clip_generic_pist_right" 					callback="play_sound" class_name="base" param1="wp_curve_pistol_right"/>					
+						<key at="trigger" trigger="bullet_show" 								callback="anim_clbk_check_bullet_object" class_name="base" />
+					</keys>
+					<exit name="fps/idle"/>
+				</state>
+			
+			
+			<state name="fps/reload_not_empty/curve" type="once" segment="base" speed="1.0">
+				<anim name="curve_reload_not_empty"/>
+				<keys>		
+					<key at="trigger" trigger="wp_foley_generic_lever_release"	 	callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_grab" 			callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_throw"			callback="play_sound" class_name="base" param1="wp_foley_generic_clip_throw"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_take_new" 		callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_in_connect" 	callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_grab" 		callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_pull" 		callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+					<key at="trigger" trigger="wp_foley_generic_back_in_hand" 		callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
+					<key at="trigger" trigger="wp_foley_generic_tilt_back" 			callback="play_sound" class_name="base" param1="wp_ak47_tilt_back"/>
+					<key at="trigger" trigger="wp_foley_generic_tilt" 				callback="play_sound" class_name="base" param1="wp_ak47_tilt"/>
+					<key at="trigger" trigger="wp_packrat_slide_release" 			callback="play_sound" class_name="base" param1="wp_curve_slide_release"/>
+					<key at="trigger" trigger="wp_packrat_slide_back" 				callback="play_sound" class_name="base" param1="wp_legacy_slide_back"/>
+					<key at="trigger" trigger="wp_packrat_mag_in" 					callback="play_sound" class_name="base" param1="wp_curve_magin"/>
+					<key at="trigger" trigger="wp_packrat_grab_slide" 				callback="play_sound" class_name="base" param1="wp_curve_lever_grab"/>
+					<key at="trigger" trigger="wp_packrat_mag_contact" 				callback="play_sound" class_name="base" param1="wp_curve_mag_contact"/>	
+					<key at="trigger" trigger="wp_packrat_mag_throw" 				callback="play_sound" class_name="base" param1="wp_curve_magout"/>
+					<key at="trigger" trigger="wp_packrat_button_press" 			callback="play_sound" class_name="base" param1="wp_legacy_button_press"/>
+					<key at="trigger" trigger="wp_clip_generic_pist_right" 			callback="play_sound" class_name="base" param1="wp_curve_pistol_right"/>			
+					<key at="trigger" trigger="bullet_show" 						callback="anim_clbk_check_bullet_object" class_name="base" />
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+		</target>
+	</tweak>
+</tweaks>

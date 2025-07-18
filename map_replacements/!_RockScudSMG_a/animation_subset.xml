@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+			
+		<target mode="attach">
+			<anim name="cagnali_reload" 								file="anims/fps/cagnali/cagnali_reload" blend_set="all"/>
+			<anim name="cagnali_reload_not_empty" 						file="anims/fps/cagnali/cagnali_reload_not_empty" blend_set="all"/>
+			<anim name="cagnali_idle" 									file="anims/fps/cagnali/cagnali_idle" blend_set="all"/>
+			<anim name="cagnali_recoil" 								file="anims/fps/cagnali/cagnali_recoil" blend_set="all"/>
+			<anim name="cagnali_recoil_enter" 							file="anims/fps/cagnali/cagnali_recoil_enter" blend_set="all"/>
+			<anim name="cagnali_recoil_loop" 							file="anims/fps/cagnali/cagnali_recoil_loop" blend_set="all"/>
+			<anim name="cagnali_recoil_exit" 							file="anims/fps/cagnali/cagnali_recoil_exit" blend_set="all"/>
+			<anim name="cagnali_recoil_steelsight" 						file="anims/fps/cagnali/cagnali_recoil" blend_set="all"/>
+			<anim name="cagnali_equip" 									file="anims/fps/cagnali/cagnali_equip" blend_set="all"/>
+			<anim name="cagnali_unequip" 								file="anims/fps/cagnali/cagnali_unequip" blend_set="all"/>
+			<anim name="cagnali_melee" 									file="anims/fps/cagnali/cagnali_melee" blend_set="all"/>
+			<anim name="cagnali_melee_miss" 							file="anims/fps/cagnali/cagnali_melee_miss" blend_set="all"/>
+			<anim name="cagnali_use" 									file="anims/fps/cagnali/cagnali_use" blend_set="all"/>
+			<anim name="cagnali_sprint_enter" 							file="anims/fps/cagnali/cagnali_sprint_enter" blend_set="all"/>
+			<anim name="cagnali_sprint" 								file="anims/fps/cagnali/cagnali_sprint" blend_set="all"/>
+			<anim name="cagnali_sprint_exit" 							file="anims/fps/cagnali/cagnali_sprint_exit" blend_set="all"/>
+			<anim name="cagnali_com_down_var1" 							file="anims/fps/cagnali/cagnali_com_var1" blend_set="all"/>
+			<anim name="cagnali_com_stop" 								file="anims/fps/cagnali/cagnali_com_var5" blend_set="all"/>
+			<anim name="cagnali_com_come" 								file="anims/fps/cagnali/cagnali_com_var6" blend_set="all"/>
+			<anim name="cagnali_com_point" 								file="anims/fps/cagnali/cagnali_com_var7" blend_set="all"/>
+			<anim name="cagnali_get_up" 								file="anims/fps/cagnali/cagnali_get_up" blend_set="all"/>
+			<anim name="cagnali_gogo" 									file="anims/fps/cagnali/cagnali_gogo" blend_set="all"/>
+			<anim name="cagnali_tased" 									file="anims/fps/cagnali/cagnali_tased" blend_set="all"/>
+			<anim name="cagnali_tased_boost" 							file="anims/fps/cagnali/cagnali_tased_boost" blend_set="all"/>
+			<anim name="cagnali_tased_exit" 							file="anims/fps/cagnali/cagnali_tased_exit" blend_set="all"/>
+			<anim name="cagnali_inspect" 								file="anims/fps/cagnali/cagnali_inspect" blend_set="all"/>
+		</target>
+	</tweak>
+	</tweak>
+</tweaks>

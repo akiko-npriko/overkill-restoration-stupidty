@@ -1,0 +1,15 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_shot_super_pts/wpn_fps_upg_super_barrel_classic" orientation_object="rp_ssg"/>
+	<animations>
+		<animation_group name="reload">
+			<object name="anim_barrel_reload" enabled="true"/>
+			<object name="anim_shell_left_reload" enabled="true"/>
+			<object name="anim_shell_right_reload" enabled="true"/>
+		</animation_group>
+	</animations>
+	<graphics>
+		<object enabled="true" name="g_barrel"/>
+		<object enabled="true" name="g_shell_left"/>
+		<object enabled="true" name="g_shell_right"/>
+	</graphics>
+</dynamic_object>

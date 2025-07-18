@@ -1,0 +1,12 @@
+<unit type="wpn" slot="1" >
+	<object file="units/mods/weapons/wpn_fps_pis_rc_auto9/wpn_fps_pis_rc_auto9" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_breech"/>
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="base" class="OCPWeaponBase" >
+			<var name="name_id" value="rc_auto9" />
+		</extension>
+	</extensions>
+</unit>

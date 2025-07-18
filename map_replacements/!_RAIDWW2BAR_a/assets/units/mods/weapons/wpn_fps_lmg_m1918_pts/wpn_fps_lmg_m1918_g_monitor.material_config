@@ -1,0 +1,8 @@
+<materials version="3">
+    <material name="wpn_fps_lmg_m1918_g_monitor" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_lmg_m1918_pts/textures/wpn_fps_lmg_m1918_g_monitor_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_lmg_m1918_pts/textures/wpn_fps_lmg_m1918_g_monitor_nm"/>
+        <material_texture file="units/mods/weapons/wpn_fps_lmg_m1918_pts/textures/wpn_fps_lmg_m1918_g_monitor_gsm"/>
+    <reflection_texture type="cube" global_texture="current_global_texture"/>
+    </material>
+</materials>

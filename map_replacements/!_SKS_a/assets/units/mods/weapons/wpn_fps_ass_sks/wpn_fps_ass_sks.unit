@@ -1,0 +1,12 @@
+<unit type="wpn" slot="1">
+	<object file="units/mods/weapons/wpn_fps_ass_sks/wpn_fps_ass_sks"/>
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_siltstone"/>
+	</dependencies>
+	<extensions>
+		<extension class="ScriptUnitData" name="unit_data"/>
+		<extension name="base" class="SKSWeaponBase">
+			<var name="name_id" value="sks"/>
+		</extension>
+	</extensions>
+</unit>

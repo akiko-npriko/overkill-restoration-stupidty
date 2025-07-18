@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+			
+		<target mode="attach">
+			<anim name="sako_85_reload" 							file="anims/fps/sako_85/sako_85_reload" blend_set="all"/>
+			<anim name="sako_85_reload_not_empty" 					file="anims/fps/sako_85/sako_85_reload_not_empty" blend_set="all"/>
+			
+			<anim name="sako_85_idle" 								file="anims/fps/sako_85/sako_85_idle" blend_set="all"/>
+			<anim name="sako_85_recoil" 							file="anims/fps/sako_85/sako_85_recoil" blend_set="all"/>
+			<anim name="sako_85_recoil_enter" 						file="anims/fps/sako_85/sako_85_recoil" blend_set="all"/>
+			<anim name="sako_85_recoil_loop" 						file="anims/fps/sako_85/sako_85_recoil" blend_set="all"/>
+			<anim name="sako_85_recoil_exit" 						file="anims/fps/sako_85/sako_85_recoil" blend_set="all"/>
+			<anim name="sako_85_recoil_steelsight" 					file="anims/fps/sako_85/sako_85_recoil_zoom" blend_set="all"/>
+			<anim name="sako_85_equip" 								file="anims/fps/sako_85/sako_85_equip" blend_set="all"/>
+			<anim name="sako_85_unequip" 							file="anims/fps/sako_85/sako_85_unequip" blend_set="all"/>
+			<anim name="sako_85_melee" 								file="anims/fps/sako_85/sako_85_melee" blend_set="all"/>
+			<anim name="sako_85_melee_miss" 						file="anims/fps/sako_85/sako_85_melee_miss" blend_set="all"/>
+			<anim name="sako_85_use" 								file="anims/fps/sako_85/sako_85_use" blend_set="all"/>
+			<anim name="sako_85_sprint_enter" 						file="anims/fps/sako_85/sako_85_sprint_enter" blend_set="all"/>
+			<anim name="sako_85_sprint" 							file="anims/fps/sako_85/sako_85_sprint" blend_set="all"/>
+			<anim name="sako_85_sprint_exit" 						file="anims/fps/sako_85/sako_85_sprint_exit" blend_set="all"/>
+			<anim name="sako_85_com_down_var1" 						file="anims/fps/sako_85/sako_85_com_var1" blend_set="all"/>
+			<anim name="sako_85_com_stop" 							file="anims/fps/sako_85/sako_85_com_var5" blend_set="all"/>
+			<anim name="sako_85_com_come" 							file="anims/fps/sako_85/sako_85_com_var6" blend_set="all"/>
+			<anim name="sako_85_com_point" 							file="anims/fps/sako_85/sako_85_com_var7" blend_set="all"/>
+			<anim name="sako_85_get_up" 							file="anims/fps/sako_85/sako_85_get_up" blend_set="all"/>
+			<anim name="sako_85_gogo" 								file="anims/fps/sako_85/sako_85_gogo" blend_set="all"/>
+			<anim name="sako_85_tased" 								file="anims/fps/sako_85/sako_85_tased" blend_set="all"/>
+			<anim name="sako_85_tased_boost" 						file="anims/fps/sako_85/sako_85_tased_boost" blend_set="all"/>
+			<anim name="sako_85_tased_exit" 						file="anims/fps/sako_85/sako_85_tased_exit" blend_set="all"/>
+			<anim name="sako_85_inspect" 							file="anims/fps/sako_85/sako_85_inspect" blend_set="all"/>  
+		</target>
+	</tweak>
+</tweaks>

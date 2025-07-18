@@ -1,0 +1,20 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_snp_sako_85_pts/wpn_fps_snp_sako_85_bolt" orientation_object="rp_bolt" />
+	<animations>
+		<animation_group name="reload">
+			<object name="anim_reload_bolt" enabled="true" />
+			<object name="anim_reload_bolt_handle" enabled="true" />
+		</animation_group>
+		<animation_group name="recoil">
+			<object name="anim_recoil_bolt" enabled="true" />
+			<object name="anim_recoil_bolt_handle" enabled="true" />
+			<object name="anim_recoil_firingpin" enabled="true" />
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_hunter85_bolt_handle" enabled="true" />
+		<object name="g_hunter85_safety" enabled="true" />
+
+	</graphics>
+	
+</dynamic_object>

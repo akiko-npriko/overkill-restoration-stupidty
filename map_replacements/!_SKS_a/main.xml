@@ -1,0 +1,275 @@
+<mod name="SKS" color="Color(0.01,0.62,0.98)">
+	<Localization directory="loc" default="english.txt"/>
+	<AssetUpdates id="17243" version="3.13" provider="modworkshop"/>
+	<GlobalValue id="sksmod" color="Color(0.7, 0.2, 0.1)"/>
+	<WeaponMod id="wpn_fps_ass_sks_barrel" based_on="wpn_fps_ass_l85a2_b_medium" wpn_pts="wpn_fps_ass_sks" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_ass_sks_bolt" based_on="wpn_fps_amcar_bolt_standard" wpn_pts="wpn_fps_ass_sks" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_ass_sks_mag" based_on="wpn_fps_ass_m14_m_standard" wpn_pts="wpn_fps_ass_sks" hidden="true" ver="2">
+		<bullet_objects prefix="g_bullet_" amount="10"/>
+		<reload_objects reload_not_empty="g_chamber_bullet"/>
+		<forbids>
+			<value_node value="wpn_fps_upg_sks_sightrail_long"/>
+		</forbids>
+		<override>
+			<wpn_fps_ass_sks_bolt a_obj="a_bolt_clip"/>
+		</override>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_sks_rearsight" based_on="wpn_fps_ass_vhs_o_standard" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" hidden="true" ver="2">
+		<stance_mod>
+			<wpn_fps_ass_sks translation="0 -20 0.85"/>
+		</stance_mod>
+		<override>
+			<wpn_fps_ass_sks_sightrail unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+		</override>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_sks_rec" based_on="wpn_fps_m4_lower_reciever" wpn_pts="wpn_fps_ass_sks" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_ass_sks_sightrail" based_on="wpn_fps_ass_vhs_o_standard" type="upper_reciever" wpn_pts="wpn_fps_ass_sks" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_ass_sks_stock" based_on="wpn_fps_m16_s_solid" wpn_pts="wpn_fps_ass_sks" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_upg_sks_barrel_med" based_on="wpn_fps_ass_l85a2_b_medium" wpn_pts="wpn_fps_ass_sks" ver="2">
+		<stats spread="-1" concealment="2"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_sks_barrel_short" based_on="wpn_fps_ass_l85a2_b_medium" wpn_pts="wpn_fps_ass_sks" ver="2">
+		<stats spread="-3" recoil="-1" concealment="6"/>
+		<forbids>
+			<value_node value="wpn_fps_upg_sks_bayonet"/>
+		</forbids>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_sks_bayonet" based_on="wpn_fps_snp_mosin_ns_bayonet" wpn_pts="wpn_fps_ass_sks" ver="2">
+		<stats min_damage="7" max_damage="7"/>
+		<forbids>
+			<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+			<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+			<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+			<value_node value="wpn_fps_upg_ns_ass_pbs1"/>
+			<value_node value="wpn_fps_upg_ak_ns_jmac"/>
+			<value_node value="wpn_fps_upg_ak_ns_tgp"/>
+			<value_node value="wpn_fps_lmg_kacchainsaw_ns_suppressor"/>
+		</forbids>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_sks_mag_detach10" based_on="wpn_fps_ass_m14_m_standard" has_description="true" wpn_pts="wpn_fps_ass_sks" ver="2">
+		<stats concealment="-1" total_ammo_mod="-3"/>
+		<reload_objects reload="g_mag10_2"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_sks_mag_detach20" based_on="wpn_fps_ass_m14_m_standard" has_description="true" wpn_pts="wpn_fps_ass_sks" ver="2">
+		<stats concealment="-2" extra_ammo="5" total_ammo_mod="-3" reload="-3"/>
+		<reload_objects reload="g_mag20_2"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_sks_o_pu" based_on="wpn_fps_ass_vhs_o_standard" steelsight_visible="false" wpn_pts="wpn_fps_ass_sks" ver="2">
+		<stats recoil="1" concealment="-2" zoom="6"/>
+		<stance_mod>
+			<wpn_fps_ass_sks translation="-0.005 -15 -0.94"/>
+		</stance_mod>
+		<adds>
+			<value_node value="wpn_fps_upg_sks_o_pu_ads"/>
+		</adds>
+		<override>
+			<wpn_fps_ass_sks_sightrail unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+		</override>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_sks_o_pu_ads" based_on="wpn_fps_upg_o_acog_steelsight" wpn_pts="wpn_fps_ass_sks" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_upg_sks_sightrail_long" based_on="wpn_fps_ass_akm_body_upperreceiver" has_description="true" wpn_pts="wpn_fps_ass_sks" ver="2">
+		<stats recoil="1" concealment="-1"/>
+		<stance_mod>
+			<wpn_fps_ass_sks translation="0 6.2048 -0.6973"/>
+		</stance_mod>
+		<override>
+			<wpn_fps_ass_sks_rearsight unit="units/mods/weapons/wpn_fps_ass_sks_pts/wpn_fps_ass_sks_mbus_pro">
+				<stance_mod>
+					<wpn_fps_ass_sks translation="-0.01 -27 -2.6527"/>
+				</stance_mod>
+			</wpn_fps_ass_sks_rearsight>
+		</override>
+	</WeaponMod>
+<!-- temp - removed parts -->
+	<WeaponMod id="wpn_fps_ass_sks_magrelease" based_on="wpn_fps_m4_lower_reciever" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" hidden="true" ver="2"/>
+	<WeaponMod id="wpn_fps_upg_sks_mag_fixed10" based_on="wpn_fps_m4_lower_reciever" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" hidden="true" ver="2"/>
+<!-- -->
+	<Weapon unlock_level="37">
+		<weapon id="sks" based_on="ching" effects="false" unlock_func="false" CLIP_AMMO_MAX="10" NR_CLIPS_MAX="8" ammo_pickup="8" global_value="sksmod">
+			<stats damage="160" spread="21" spread_moving="21" recoil="15" concealment="15"/>
+			<fire_mode_data fire_rate="0.12"/>
+			<kick>
+				<standing>
+					<value_node value="1.6"/>
+					<value_node value="1.4"/>
+					<value_node value="-1.0"/>
+					<value_node value="1.0"/>
+				</standing>
+				<crouching>
+					<value_node value="1.5"/>
+					<value_node value="1.3"/>
+					<value_node value="-0.8"/>
+					<value_node value="0.8"/>
+				</crouching>
+				<steelsight>
+					<value_node value="1.5"/>
+					<value_node value="1.3"/>
+					<value_node value="-0.8"/>
+					<value_node value="0.8"/>
+				</steelsight>
+			</kick>
+			<sounds fire="sks_fire" fire_single="sks_fire"/>
+			<timers reload_empty="2.8" reload_not_empty="4.5"/>
+			<animations magazine_empty="false"/>
+		</weapon>
+		<factory id="wpn_fps_ass_sks" unit="units/mods/weapons/wpn_fps_ass_sks/wpn_fps_ass_sks">
+			<animations magazine_empty="false" fire="recoil" fire_steelsight="recoil" reload="reload" reload_not_empty="reload_not_empty"/>
+			<adds/>
+			<override>
+				<wpn_fps_upg_o_45rds parent="upper_reciever"/>
+				<wpn_fps_upg_o_45rds_v2 parent="upper_reciever"/>
+				<wpn_fps_upg_o_45steel parent="upper_reciever"/>
+				<wpn_fps_upg_o_specter parent="upper_reciever"/>
+				<wpn_fps_upg_o_aimpoint parent="upper_reciever"/>
+				<wpn_fps_upg_o_docter parent="upper_reciever"/>
+				<wpn_fps_upg_o_eotech parent="upper_reciever"/>
+				<wpn_fps_upg_o_t1micro parent="upper_reciever"/>
+				<wpn_fps_upg_o_acog parent="upper_reciever"/>
+				<wpn_fps_upg_o_cmore parent="upper_reciever"/>
+				<wpn_fps_upg_o_aimpoint_2 parent="upper_reciever"/>
+				<wpn_fps_upg_o_eotech_xps parent="upper_reciever"/>
+				<wpn_fps_upg_o_reflex parent="upper_reciever"/>
+				<wpn_fps_upg_o_rx01 parent="upper_reciever"/>
+				<wpn_fps_upg_o_rx30 parent="upper_reciever"/>
+				<wpn_fps_upg_o_cs parent="upper_reciever"/>
+				<wpn_fps_upg_o_spot parent="upper_reciever"/>
+				<wpn_fps_upg_o_bmg parent="upper_reciever"/>
+				<wpn_fps_upg_o_uh parent="upper_reciever"/>
+				<wpn_fps_upg_o_fc1 parent="upper_reciever"/>
+				<wpn_fps_upg_o_tf90 parent="upper_reciever"/>
+				<wpn_fps_upg_o_poe parent="upper_reciever"/>
+				<wpn_fps_upg_o_hamr parent="upper_reciever"/>
+				<wpn_fps_upg_o_hamr_reddot parent="upper_reciever"/>
+				<wpn_fps_upg_o_atibal parent="upper_reciever"/>
+				<wpn_fps_upg_o_atibal_reddot parent="upper_reciever"/>
+				<wpn_fps_upg_o_health parent="upper_reciever"/>
+			</override>
+			<default_blueprint>
+				<value_node value="wpn_fps_ass_sks_barrel"/>
+				<value_node value="wpn_fps_ass_sks_bolt"/>
+				<value_node value="wpn_fps_ass_sks_mag"/>
+				<value_node value="wpn_fps_ass_sks_rearsight"/>
+				<value_node value="wpn_fps_ass_sks_rec"/>
+				<value_node value="wpn_fps_ass_sks_sightrail"/>
+				<value_node value="wpn_fps_ass_sks_stock"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_ass_sks_barrel"/>
+				<value_node value="wpn_fps_ass_sks_bolt"/>
+				<value_node value="wpn_fps_ass_sks_mag"/>
+				<value_node value="wpn_fps_ass_sks_rearsight"/>
+				<value_node value="wpn_fps_ass_sks_rec"/>
+				<value_node value="wpn_fps_ass_sks_sightrail"/>
+				<value_node value="wpn_fps_ass_sks_stock"/>
+
+				<value_node value="wpn_fps_upg_sks_barrel_med"/>
+				<value_node value="wpn_fps_upg_sks_barrel_short"/>
+				<value_node value="wpn_fps_upg_sks_bayonet"/>
+				<value_node value="wpn_fps_upg_sks_mag_detach10"/>
+				<value_node value="wpn_fps_upg_sks_mag_detach20"/>
+				<value_node value="wpn_fps_upg_sks_o_pu"/>
+				<value_node value="wpn_fps_upg_sks_sightrail_long"/>
+
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_upg_ns_ass_pbs1"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_v6"/>
+				<value_node value="wpn_fps_ass_shak12_ns_muzzle"/>
+				<value_node value="wpn_fps_lmg_hk51b_ns_jcomp"/>
+				<value_node value="wpn_fps_lmg_kacchainsaw_ns_muzzle"/>
+				<value_node value="wpn_fps_upg_ak_ns_jmac"/>
+				<value_node value="wpn_fps_upg_ak_ns_tgp"/>
+				<value_node value="wpn_fps_lmg_kacchainsaw_ns_suppressor"/>
+				<value_node value="wpn_fps_upg_ak_ns_zenitco"/>
+				<value_node value="wpn_fps_upg_o_45rds"/>
+				<value_node value="wpn_fps_upg_o_45rds_v2"/>
+				<value_node value="wpn_fps_upg_o_45steel"/>
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_specter_piggyback"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_cs_piggyback"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+				<value_node value="wpn_fps_upg_o_bmg"/>
+				<value_node value="wpn_fps_upg_o_uh"/>
+				<value_node value="wpn_fps_upg_o_fc1"/>
+				<value_node value="wpn_fps_upg_o_sig"/>
+				<value_node value="wpn_fps_upg_o_tf90"/>
+				<value_node value="wpn_fps_upg_o_poe"/>
+				<value_node value="wpn_fps_upg_o_hamr"/>
+				<value_node value="wpn_fps_upg_o_hamr_reddot"/>
+				<value_node value="wpn_fps_upg_o_atibal"/>
+				<value_node value="wpn_fps_upg_o_atibal_reddot"/>
+				<value_node value="wpn_fps_upg_o_health"/>
+			</uses_parts>
+		</factory>
+		<stance>
+			<standard>
+				<shoulders rotation="0 -0 0 -1" translation="-0.895 1.742 -2.824"/>
+			</standard>
+			<crouched>
+				<shoulders rotation="0 -0.0348995 0 -0.999391" translation="0.105 0.258 -5.824"/>
+			</crouched>
+			<steelsight>
+				<shoulders rotation="0 -0 0 -1" translation="-10.91 17.742 2.331"/>
+			</steelsight>
+		</stance>
+	</Weapon>
+	<Sounds directory="assets\sounds">
+		<sound id="sks_fire" path="sks_regular.ogg" prefix="regular"/>
+		<sound id="sks_fire" path="sks_suppressed.ogg" prefix="suppressed_a"/>
+		<sound id="sks_fire" path="sks_suppressed.ogg" prefix="suppressed_b"/>
+		<sound id="sks_fire" path="sks_suppressed.ogg" prefix="suppressed_c"/>
+
+		<sound id="sks_clip_in" path="sks_clipin.ogg" prefix="first"/>
+		<sound id="sks_bullet_in" path="sks_insert1.ogg" prefix="first"/>
+		<sound id="sks_bullet_in_alt" path="sks_insert2.ogg" prefix="first"/>
+		<sound id="sks_bullet_in_last" path="sks_insertlast.ogg" prefix="first"/>
+		<sound id="sks_clip_out" path="sks_removeclip.ogg" prefix="first"/>
+	</Sounds>
+	<AddFiles directory="assets" auto_generate="true"/>
+	<Hooks directory="hooks">
+		<hook file="menusksweaponbase.lua" source_file="lib/units/weapons/menuraycastweaponbase"/>
+		<hook file="sksweaponbase.lua" source_file="lib/units/weapons/newraycastweaponbase"/>
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+	</Hooks>
+</mod>

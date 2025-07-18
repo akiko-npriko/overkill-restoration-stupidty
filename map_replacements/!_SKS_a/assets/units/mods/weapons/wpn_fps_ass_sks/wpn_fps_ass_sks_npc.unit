@@ -1,0 +1,12 @@
+<unit type="wpn" slot="1">
+	<object file="units/mods/weapons/wpn_fps_ass_sks/wpn_fps_ass_sks"/>
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_siltstone"/>
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData"/>
+		<extension name="base" class="NewNPCRaycastWeaponBase">
+			<var name="name_id" value="sks_crew"/>
+		</extension>
+	</extensions>
+</unit>

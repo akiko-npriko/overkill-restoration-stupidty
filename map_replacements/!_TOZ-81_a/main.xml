@@ -1,0 +1,423 @@
+<mod name="TOZ-81 MARS Revolver" author="Hylie" min_lib_ver="3.38">
+
+	<Localization directory="loc" default="english.txt"/>
+
+	<AssetUpdates id="50307" version="4.01" provider="modworkshop"/>
+
+	<GlobalValue id="fiery_hylie_mod" color="Color(0.8, 0.7, 0.2)"/>
+
+	<AddFiles directory="assets" auto_generate="true"/>
+
+	<Sounds directory="assets/sounds">
+		<sound id="toz81_fire" path="toz81_fire_reg.ogg" prefix="regular"/>
+		<sound id="toz81_fire" path="toz81_fire_sil.ogg" prefix="suppressed_a"/>
+		<sound id="toz81_fire" path="toz81_fire_sil.ogg" prefix="suppressed_b"/>
+		<sound id="toz81_fire" path="toz81_fire_sil.ogg" prefix="suppressed_c"/>
+	</Sounds>
+
+	<!--<Hooks directory="hooks">		
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+	</Hooks>-->
+
+<!-- TOZ-81 MARS - Default Parts -->	
+
+	<WeaponMod id="wpn_fps_pis_toz81_b_std" type="barrel" based_on="wpn_fps_pis_chinchilla_b_standard" a_obj="a_b" unit="units/mods/weapons/wpn_fps_pis_toz81_pts/wpn_fps_pis_toz81_b_std" hidden="true" ver="2">
+	    <animations reload="reload_not_empty" reload_not_empty="reload_not_empty"/>
+   		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+   	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_toz81_bayonet" type="bayonet" based_on="wpn_fps_pis_chinchilla_b_standard" unit="units/mods/weapons/wpn_fps_pis_toz81_pts/wpn_fps_pis_toz81_bayonet" hidden="true" ver="2">
+   		<stats damage="0" spread="0" recoil="0" concealment="0" ignore_stats="1" max_damage="4.5" min_damage="4.5" max_damage_effect="1" min_damage_effect="1" bluntsound="true"/>
+		<forbids>
+			<value_node value="wpn_fps_upg_o_specter"/>
+			<value_node value="wpn_fps_upg_o_aimpoint"/>
+			<value_node value="wpn_fps_upg_o_docter"/>
+			<value_node value="wpn_fps_upg_o_eotech"/>
+			<value_node value="wpn_fps_upg_o_t1micro"/>
+			<value_node value="wpn_fps_upg_o_acog"/>
+			<value_node value="wpn_fps_upg_o_cmore"/>
+			<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+			<value_node value="wpn_fps_upg_o_eotech_xps"/>
+			<value_node value="wpn_fps_upg_o_reflex"/>
+			<value_node value="wpn_fps_upg_o_rx01"/>
+			<value_node value="wpn_fps_upg_o_rx30"/>
+			<value_node value="wpn_fps_upg_o_cs"/>
+			<value_node value="wpn_fps_upg_o_spot"/>
+			<value_node value="wpn_fps_upg_o_bmg"/>
+			<value_node value="wpn_fps_upg_o_uh"/>
+			<value_node value="wpn_fps_upg_o_fc1"/>
+			<value_node value="wpn_fps_upg_o_tf90"/>
+			<value_node value="wpn_fps_upg_o_poe"/>
+			<value_node value="wpn_fps_upg_o_hamr"/>
+			<value_node value="wpn_fps_upg_o_atibal"/>
+			<value_node value="wpn_fps_upg_o_health"/>
+			<value_node value="wpn_fps_pis_rage_o_adapter"/>
+		</forbids>
+   	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_toz81_cylinder" type="cylinder" based_on="wpn_fps_pis_chinchilla_cylinder" a_obj="a_cylinder" unit="units/mods/weapons/wpn_fps_pis_toz81_pts/wpn_fps_pis_toz81_cylinder" hidden="true" ver="2">
+	    <animations reload="reload_not_empty" reload_not_empty="reload_not_empty"/>
+   		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+   	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_toz81_ejector" type="ejectorpin" based_on="wpn_fps_pis_chinchilla_ejectorpin" a_obj="a_ejector" unit="units/mods/weapons/wpn_fps_pis_toz81_pts/wpn_fps_pis_toz81_ejector" hidden="true" ver="2">
+	    <animations reload="reload_not_empty" reload_not_empty="reload_not_empty"/>
+   		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+   	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_toz81_frame" type="lower_reciever" based_on="wpn_fps_pis_chinchilla_body" a_obj="a_body" unit="units/mods/weapons/wpn_fps_pis_toz81_pts/wpn_fps_pis_toz81_frame" hidden="true" ver="2">
+   		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+   	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_toz81_m_shells" type="ammo" based_on="wpn_fps_pis_chinchilla_m_bullets" a_obj="a_m" unit="units/mods/weapons/wpn_fps_pis_toz81_pts/wpn_fps_pis_toz81_m_shells" hidden="true" ver="2">
+	    <animations reload="reload_not_empty" reload_not_empty="reload_not_empty"/>
+   		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+		<bullet_objects prefix="g_slug_" amount="5"/>
+   	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_toz81_o_dummy" type="sight" based_on="wpn_fps_ass_flint_o_standard" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" hidden="true" ver="2">
+   		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+		<stance_mod>
+			<wpn_fps_pis_toz81 translation="0 0 -0.4"/>
+		</stance_mod>
+   	</WeaponMod>
+
+<!-- TOZ-81 MARS - Weapon Mods -->
+
+	<WeaponMod id="wpn_fps_pis_toz81_bayonet_unfolded" type="bayonet" based_on="wpn_fps_pis_chinchilla_b_standard" has_description="true" desc_id="bm_toz81_bayonet_desc" unit="units/mods/weapons/wpn_fps_pis_toz81_pts/wpn_fps_pis_toz81_bayonet_unfolded" hidden="false" global_value="fiery_hylie_mod" ver="2">
+       <stats max_damage="10" min_damage="10" min_damage_effect="0" max_damage_effect="0" range="120"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_toz81_m_bullets" type="ammo" based_on="wpn_fps_pis_chinchilla_m_bullets" a_obj="a_m" has_description="true" desc_id="bm_toz81_bullets_desc" unit="units/mods/weapons/wpn_fps_pis_toz81_pts/wpn_fps_pis_toz81_m_bullets" global_value="fiery_hylie_mod" hidden="false" ver="2">
+	    <animations reload="reload_not_empty" reload_not_empty="reload_not_empty"/>
+   		<stats total_ammo_mod="12" damage="20" spread="5" recoil="-6"/>
+		<custom_stats do_shotgun_push="false" damage_far_mul="2" damage_near_mul="10" rays="1"/>
+		<bullet_objects prefix="g_bullet_" amount="5"/>
+   	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_toz81_stock" type="stock" based_on="wpn_fps_upg_m4_s_contender" a_obj="a_body" has_description="true" desc_id="bm_toz81_stock_desc" unit="units/mods/weapons/wpn_fps_pis_toz81_pts/wpn_fps_pis_toz81_stock" global_value="fiery_hylie_mod" hidden="false" ver="2"/>
+
+<!-- TOZ-81 MARS - Weapon Data -->
+
+		<Weapon unlock_level="35">
+
+		<weapon id="toz81" based_on="judge" weapon_hold="breech" FIRE_MODE="single" has_description="true" desc_id="bm_w_toz81_desc" do_shotgun_push="true" damage_near="2000" damage_far="3000" rays="10" CLIP_AMMO_MAX="5" NR_CLIPS_MAX="5" global_value="fiery_hylie_mod">
+
+			<stats damage="155" spread="14" spread_moving="14" recoil="8" concealment="26"/>
+
+			<fire_mode_data fire_rate="0.21"/>
+
+			<sounds fire="toz81_fire" fire_single="toz81_fire" fire_auto="toz81_fire" use_fix="true"/>
+
+			<timers reload_empty="2.7" reload_not_empty="2.7"/>
+
+			<animations reload_name_id="toz81"/>
+
+		</weapon>
+
+		<factory id="wpn_fps_pis_toz81" unit="units/mods/weapons/wpn_fps_pis_toz81/wpn_fps_pis_toz81">
+
+		    <optional_types>
+			    <value_node value="gadget"/>
+				<value_node value="sight"/>
+				<value_node value="bayonet"/>
+		    </optional_types>
+
+			<animations fire="recoil" fire_steelsight="recoil" reload="reload_not_empty" reload_not_empty="reload_not_empty"/>
+
+			<adds>
+				<wpn_fps_upg_o_specter>
+						<value_node value="wpn_fps_pis_rage_o_adapter"/>
+				</wpn_fps_upg_o_specter>	
+
+				<wpn_fps_upg_o_aimpoint>
+						<value_node value="wpn_fps_pis_rage_o_adapter"/>
+				</wpn_fps_upg_o_aimpoint>
+
+				<wpn_fps_upg_o_docter>
+						<value_node value="wpn_fps_pis_rage_o_adapter"/>
+				</wpn_fps_upg_o_docter>	
+
+				<wpn_fps_upg_o_eotech>
+						<value_node value="wpn_fps_pis_rage_o_adapter"/>
+				</wpn_fps_upg_o_eotech>	
+
+				<wpn_fps_upg_o_t1micro>
+						<value_node value="wpn_fps_pis_rage_o_adapter"/>
+				</wpn_fps_upg_o_t1micro>
+
+				<wpn_fps_upg_o_acog>
+						<value_node value="wpn_fps_pis_rage_o_adapter"/>
+				</wpn_fps_upg_o_acog>
+
+				<wpn_fps_upg_o_cmore>
+						<value_node value="wpn_fps_pis_rage_o_adapter"/>
+				</wpn_fps_upg_o_cmore>	
+
+				<wpn_fps_upg_o_aimpoint_2>
+						<value_node value="wpn_fps_pis_rage_o_adapter"/>
+				</wpn_fps_upg_o_aimpoint_2>
+
+				<wpn_fps_upg_o_eotech_xps>
+						<value_node value="wpn_fps_pis_rage_o_adapter"/>
+				</wpn_fps_upg_o_eotech_xps>	
+
+				<wpn_fps_upg_o_reflex>
+						<value_node value="wpn_fps_pis_rage_o_adapter"/>
+				</wpn_fps_upg_o_reflex>	
+
+				<wpn_fps_upg_o_rx01>
+						<value_node value="wpn_fps_pis_rage_o_adapter"/>
+				</wpn_fps_upg_o_rx01>
+
+				<wpn_fps_upg_o_rx30>
+						<value_node value="wpn_fps_pis_rage_o_adapter"/>
+				</wpn_fps_upg_o_rx30>
+
+				<wpn_fps_upg_o_cs>
+						<value_node value="wpn_fps_pis_rage_o_adapter"/>
+				</wpn_fps_upg_o_cs>	
+
+				<wpn_fps_upg_o_fc1>
+						<value_node value="wpn_fps_pis_rage_o_adapter"/>
+				</wpn_fps_upg_o_fc1>
+
+				<wpn_fps_upg_o_bmg>
+						<value_node value="wpn_fps_pis_rage_o_adapter"/>
+				</wpn_fps_upg_o_bmg>	
+
+				<wpn_fps_upg_o_uh>
+						<value_node value="wpn_fps_pis_rage_o_adapter"/>
+				</wpn_fps_upg_o_uh>	
+
+				<wpn_fps_upg_o_poe>
+						<value_node value="wpn_fps_pis_rage_o_adapter"/>
+				</wpn_fps_upg_o_poe>
+
+				<wpn_fps_upg_o_tf90>
+						<value_node value="wpn_fps_pis_rage_o_adapter"/>
+				</wpn_fps_upg_o_tf90>
+
+				<wpn_fps_upg_o_hamr>
+						<value_node value="wpn_fps_pis_rage_o_adapter"/>
+				</wpn_fps_upg_o_hamr>	
+
+				<wpn_fps_upg_o_atibal>
+						<value_node value="wpn_fps_pis_rage_o_adapter"/>
+				</wpn_fps_upg_o_atibal>	
+
+				<wpn_fps_upg_o_health>				
+						<value_node value="wpn_fps_pis_rage_o_adapter"/>						
+				</wpn_fps_upg_o_health>
+
+				<wpn_fps_upg_a_dragons_breath>
+						<value_node value="wpn_fps_pis_toz81_m_shells"/>
+				</wpn_fps_upg_a_dragons_breath>	
+
+				<wpn_fps_upg_a_rip>
+						<value_node value="wpn_fps_pis_toz81_m_shells"/>
+				</wpn_fps_upg_a_rip>
+
+				<wpn_fps_upg_a_explosive>
+						<value_node value="wpn_fps_pis_toz81_m_shells"/>
+				</wpn_fps_upg_a_explosive>
+
+				<wpn_fps_upg_a_piercing>
+						<value_node value="wpn_fps_pis_toz81_m_shells"/>
+				</wpn_fps_upg_a_piercing>	
+
+				<wpn_fps_upg_a_custom_free>
+						<value_node value="wpn_fps_pis_toz81_m_shells"/>
+				</wpn_fps_upg_a_custom_free>	
+
+				<wpn_fps_upg_a_custom>				
+						<value_node value="wpn_fps_pis_toz81_m_shells"/>						
+				</wpn_fps_upg_a_custom>
+			</adds>
+
+			<override>
+			    <wpn_fps_pis_rage_o_adapter parent="barrel" a_obj="a_o"/>
+				<wpn_fps_pis_toz81_bayonet parent="barrel" a_obj="a_bayonet"/>
+				<wpn_fps_pis_toz81_bayonet_unfolded parent="barrel" a_obj="a_bayonet_unfolded"/>
+				<wpn_fps_upg_o_specter parent="barrel" a_obj="a_o"/>
+				<wpn_fps_upg_o_aimpoint parent="barrel" a_obj="a_o"/>
+				<wpn_fps_upg_o_docter parent="barrel" a_obj="a_o"/>
+				<wpn_fps_upg_o_eotech parent="barrel" a_obj="a_o"/>
+				<wpn_fps_upg_o_t1micro parent="barrel" a_obj="a_o"/>
+				<wpn_fps_upg_o_acog parent="barrel" a_obj="a_o"/>
+				<wpn_fps_upg_o_cmore parent="barrel" a_obj="a_o"/>
+				<wpn_fps_upg_o_aimpoint_2 parent="barrel" a_obj="a_o"/>
+				<wpn_fps_upg_o_eotech_xps parent="barrel" a_obj="a_o"/>
+				<wpn_fps_upg_o_reflex parent="barrel" a_obj="a_o"/>
+				<wpn_fps_upg_o_rx01 parent="barrel" a_obj="a_o"/>
+				<wpn_fps_upg_o_rx30 parent="barrel" a_obj="a_o"/>
+				<wpn_fps_upg_o_cs parent="barrel" a_obj="a_o"/>
+				<wpn_fps_upg_o_spot parent="barrel" a_obj="a_o"/>
+				<wpn_fps_upg_o_bmg parent="barrel" a_obj="a_o"/>
+				<wpn_fps_upg_o_uh parent="barrel" a_obj="a_o"/>
+				<wpn_fps_upg_o_fc1 parent="barrel" a_obj="a_o"/>
+				<wpn_fps_upg_o_tf90 parent="barrel" a_obj="a_o"/>
+				<wpn_fps_upg_o_poe parent="barrel" a_obj="a_o"/>
+				<wpn_fps_upg_o_hamr parent="barrel" a_obj="a_o"/>
+				<wpn_fps_upg_o_atibal parent="barrel" a_obj="a_o"/>
+				<wpn_fps_upg_o_health parent="barrel" a_obj="a_o"/>
+			</override>
+
+			<default_blueprint>
+				<value_node value="wpn_fps_pis_toz81_b_std"/> 
+				<value_node value="wpn_fps_pis_toz81_bayonet"/> 
+				<value_node value="wpn_fps_pis_toz81_cylinder"/>
+				<value_node value="wpn_fps_pis_toz81_ejector"/> 
+				<value_node value="wpn_fps_pis_toz81_frame"/> 
+				<value_node value="wpn_fps_pis_toz81_m_shells"/>
+				<value_node value="wpn_fps_pis_toz81_o_dummy"/> 
+			</default_blueprint>
+
+			<uses_parts>
+				<value_node value="wpn_fps_pis_toz81_b_std"/> 
+				<value_node value="wpn_fps_pis_toz81_bayonet"/> 
+				<value_node value="wpn_fps_pis_toz81_cylinder"/>
+				<value_node value="wpn_fps_pis_toz81_ejector"/> 
+				<value_node value="wpn_fps_pis_toz81_frame"/> 
+				<value_node value="wpn_fps_pis_toz81_m_shells"/>
+				<value_node value="wpn_fps_pis_toz81_o_dummy"/> 
+
+				<value_node value="wpn_fps_pis_toz81_bayonet_unfolded"/>
+				<value_node value="wpn_fps_pis_toz81_m_bullets"/>
+				<value_node value="wpn_fps_pis_toz81_stock"/> 
+
+				<value_node value="wpn_fps_upg_a_dragons_breath"/>
+				<value_node value="wpn_fps_upg_a_rip"/>
+				<value_node value="wpn_fps_upg_a_explosive"/>
+				<value_node value="wpn_fps_upg_a_piercing"/>
+				<value_node value="wpn_fps_upg_a_custom_free"/>
+				<value_node value="wpn_fps_upg_a_custom"/>
+
+			    <value_node value="wpn_fps_upg_ns_shot_thick"/>
+			    <value_node value="wpn_fps_upg_ns_shot_shark"/>
+			    <value_node value="wpn_fps_upg_shot_ns_king"/>
+			    <value_node value="wpn_fps_upg_ns_sho_salvo_large"/>
+			    <value_node value="wpn_fps_upg_ns_duck"/>
+
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_bmg"/>
+				<value_node value="wpn_fps_upg_o_uh"/>
+				<value_node value="wpn_fps_upg_o_fc1"/>
+				<value_node value="wpn_fps_upg_o_tf90"/>
+				<value_node value="wpn_fps_upg_o_poe"/>
+				<value_node value="wpn_fps_upg_o_hamr"/>
+				<value_node value="wpn_fps_upg_o_atibal"/>
+				<value_node value="wpn_fps_upg_o_health"/>
+			</uses_parts>
+
+		</factory>
+
+		<stance>
+			<standard>
+				<shoulders rotation="-0.00596613 0.0577167 0.000584169 -0.998315" translation="-0.614 1.886 -5.172"/>
+			</standard>
+			<crouched>
+				<shoulders rotation="-0.00593058 0.0838297 0.000424973 -0.996462" translation="-0.614 0.886 -8.172"/>
+			</crouched>
+	        <steelsight>
+		        <shoulders rotation="-0.000872664 7.61544e-007 0.000872664 -0.999999" translation="-8.194 -1.886 1.528"/>
+	        </steelsight>
+		</stance>
+
+	</Weapon>
+
+<!-- Akimbo TOZ-81 MARS Shotguns - Weapon Data -->
+
+		<Weapon unlock_level="70">
+
+		<weapon id="x_toz81" based_on="x_judge" weapon_hold="x_judge" FIRE_MODE="single" do_shotgun_push="true" damage_near="2000" damage_far="3000" rays="10" CLIP_AMMO_MAX="10" NR_CLIPS_MAX="10" global_value="fiery_hylie_mod">
+
+			<stats damage="155" spread="14" spread_moving="14" recoil="8" concealment="26"/>
+
+			<fire_mode_data fire_rate="0.21"/>
+
+			<sounds fire="toz81_fire" fire_single="toz81_fire" fire_auto="toz81_fire" use_fix="true"/>
+
+			<timers reload_empty="3.5" reload_not_empty="3" equip="0.5" unequip="0.5"/>
+
+			<animations reload_name_id="x_judge" has_steelsight_stance="true" recoil_steelsight="true"/>
+
+		</weapon>
+
+		<factory id="wpn_fps_pis_x_toz81" unit="units/mods/weapons/wpn_fps_pis_x_toz81/wpn_fps_pis_x_toz81">
+
+			<animations fire="recoil" fire_steelsight="recoil" reload="reload_not_empty" reload_not_empty="reload_not_empty"/>
+
+			<adds/>
+
+			<override>
+				<wpn_fps_pis_toz81_bayonet parent="barrel" a_obj="a_bayonet"/>
+			</override>
+
+			<default_blueprint>
+				<value_node value="wpn_fps_pis_toz81_b_std"/> 
+				<value_node value="wpn_fps_pis_toz81_bayonet"/> 
+				<value_node value="wpn_fps_pis_toz81_cylinder"/>
+				<value_node value="wpn_fps_pis_toz81_ejector"/> 
+				<value_node value="wpn_fps_pis_toz81_frame"/> 
+				<value_node value="wpn_fps_pis_toz81_m_shells"/>
+			</default_blueprint>
+
+			<uses_parts>
+				<value_node value="wpn_fps_pis_toz81_b_std"/> 
+				<value_node value="wpn_fps_pis_toz81_bayonet"/> 
+				<value_node value="wpn_fps_pis_toz81_cylinder"/>
+				<value_node value="wpn_fps_pis_toz81_ejector"/> 
+				<value_node value="wpn_fps_pis_toz81_frame"/> 
+				<value_node value="wpn_fps_pis_toz81_m_shells"/> 
+
+				<value_node value="wpn_fps_pis_toz81_m_bullets"/>
+
+				<value_node value="wpn_fps_upg_a_dragons_breath"/>
+				<value_node value="wpn_fps_upg_a_rip"/>
+				<value_node value="wpn_fps_upg_a_explosive"/>
+				<value_node value="wpn_fps_upg_a_piercing"/>
+				<value_node value="wpn_fps_upg_a_custom_free"/>
+				<value_node value="wpn_fps_upg_a_custom"/>
+
+			    <value_node value="wpn_fps_upg_ns_shot_thick"/>
+			    <value_node value="wpn_fps_upg_ns_shot_shark"/>
+			    <value_node value="wpn_fps_upg_shot_ns_king"/>
+			    <value_node value="wpn_fps_upg_ns_sho_salvo_large"/>
+			    <value_node value="wpn_fps_upg_ns_duck"/>
+			</uses_parts>
+
+		</factory>
+
+		<!--<stance>
+			<standard>
+				<shoulders rotation="-0.00602496 0.00538985 0.000901253 -0.999967" translation="-0.614 8.886 0.172"/>
+			</standard>
+			<crouched>
+				<shoulders rotation="-0.00576565 0.17895 -0.000160408 -0.983841" translation="-3.614 -3.886 -8.172"/>
+			</crouched>
+	        <steelsight>
+		        <shoulders rotation="-0.00261798 -6.85388e-006 -0.00261798 -0.999993" translation="-12.014 5.886 6.328"/>
+	        </steelsight>
+		</stance>-->
+
+	</Weapon>
+	
+	<Hooks directory="hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>	
+	</Hooks>
+</mod> 
+

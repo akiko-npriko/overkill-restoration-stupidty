@@ -1,0 +1,23 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_spe_raygun_pts/wpn_fps_spe_raygun_body" orientation_object="rp_wpn_fps_spe_raygun_body" />
+	<animations>
+		<animation_group name="reload" enabled="false">
+			<object name="a_arrow_reload" enabled="true" />
+			<object name="a_align_battery1" enabled="true" />
+			<object name="a_battery1_reload" enabled="true" />
+			<object name="a_align_battery2" enabled="true" />
+			<object name="a_battery2_reload" enabled="true" />
+			<object name="a_hinge_reload" enabled="true" />
+		</animation_group>
+		<animation_group name="recoil" enabled="false">
+			<object name="a_arrow_fire" enabled="true" />
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_raygun" enabled="true" />
+		<object name="g_raygun_front" enabled="true" />
+		<object name="g_raygun_arrow" enabled="true" />
+		<object name="g_battery_1" enabled="true" />
+		<object name="g_battery_2" enabled="true" />
+	</graphics>
+</dynamic_object>

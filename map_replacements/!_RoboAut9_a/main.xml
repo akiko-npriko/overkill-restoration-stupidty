@@ -1,0 +1,215 @@
+<mod name="Robocop's Auto-9"  author="PlayBONK and RJC9000" min_lib_ver="3.38" global_key="OCPOverlayCore">
+	<AssetUpdates id="46213" version="0.88" provider="modworkshop"/>
+	<GlobalValue id="rc_auto9mod" color="Color(0.9, 0.0, 0.0)"/>
+	<GlobalValue id="rc_auto9_mememod" color="Color(0.9, 0.0, 0.0)"/>
+	<GlobalValue id="auto9_mememod" color="Color(0.9, 0.0, 0.0)"/>
+	<Localization directory="loc" default="english.txt"/>
+	
+<!--Parts-->			
+	<WeaponMod id="wpn_fps_pis_rc_auto9_barrel" based_on="wpn_fps_pis_beretta_b_std" type="barrel"  unit="units/mods/weapons/wpn_fps_pis_rc_auto9_pts/wpn_fps_pis_rc_auto9_barrel" hidden="true"  global_value="rc_auto9mod" ver="2">
+			<stats spread="0" recoil="0" damage="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_pis_rc_auto9_receiver" based_on="wpn_fps_pis_beretta_body_beretta" type="frame"  unit="units/mods/weapons/wpn_fps_pis_rc_auto9_pts/wpn_fps_pis_rc_auto9_receiver" hidden="true"  global_value="rc_auto9mod" ver="2">
+			<stats spread="0" recoil="0" damage="0"/>
+		<perks>
+			<value_node value="fire_mode_burst"/>
+		</perks>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_pis_rc_auto9_irons" based_on="wpn_fps_pis_beretta_o_std" type="sight" a_obj="a_body" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" hidden="true" global_value="rc_auto9mod" ver="2">
+		<stats spread="0" recoil="0" damage="0"/>
+		<stance_mod>
+			<wpn_fps_pis_rc_auto9 translation="0 0 0" />
+		</stance_mod>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_pis_rc_auto9_slide"  based_on="wpn_fps_pis_beretta_sl_std" type="slide" unit="units/mods/weapons/wpn_fps_pis_rc_auto9_pts/wpn_fps_pis_rc_auto9_slide" hidden="true"  global_value="rc_auto9mod" ver="2">
+			<stats spread="0" recoil="0" damage="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_pis_rc_auto9_magazine" based_on="wpn_fps_pis_beretta_m_std" type="magazine" unit="units/mods/weapons/wpn_fps_pis_rc_auto9_pts/wpn_fps_pis_rc_auto9_magazine" hidden="true" global_value="rc_auto9mod" ver="2">
+			<stats reload="0"/>
+<!--		<reload_objects reload="g_follower" reload_not_empty="g_follower_empty"/> -->
+			<bullet_objects prefix = "g_bullet_" amount="2"/>
+	</WeaponMod>
+
+
+<!--Weapon -->		
+	<Weapon unlock_level="30">
+		<weapon id="rc_auto9" based_on="beer" weapon_hold="rc_auto9" CLIP_AMMO_MAX="50" NR_CLIPS_MAX="2" chamber_size="1" lock_slide="true" texture_bundle_folder="mods" global_value="rc_auto9_mememod" has_ocp_overlay="true">
+			<stats damage="80" spread="19" spread_moving="16" recoil="16" concealment="22"/>
+			<timers unequip="1" />
+			<fire_mode_data fire_rate="0.075"/>
+			<kick>
+				<standing>
+					<value_node value="1.0"/>
+					<value_node value="1.1"/>
+					<value_node value="-0.6"/>
+					<value_node value="0.6"/>
+				</standing>
+				<crouching>
+					<value_node value="0.9"/>
+					<value_node value="0.95"/>
+					<value_node value="-0.4"/>
+					<value_node value="0.4"/>
+				</crouching>
+				<steelsight>
+					<value_node value="0.65"/>
+					<value_node value="0.7"/>
+					<value_node value="-0.15"/>
+					<value_node value="0.15"/>
+				</steelsight>
+			</kick>
+			<AMMO_PICKUP>
+				<value_node value="1.50"/>
+				<value_node value="4.50"/>
+			</AMMO_PICKUP>
+			<sounds fire="rc_auto9_fire" fire_auto="rc_auto9_fire" fire_single="rc_auto9_fire">
+			</sounds> 
+			<animations reload_name_id="rc_auto9"/>
+		</weapon>
+	<factory id="wpn_fps_pis_rc_auto9" unit="units/mods/weapons/wpn_fps_pis_rc_auto9/wpn_fps_pis_rc_auto9">		
+			<animations reload="reload" reload_not_empty="reload_not_empty" fire="recoil" fire_steelsight="recoil" magazine_empty="last_recoil"/>
+			<optional_types>
+				<value_node value="barrel_ext"/>
+				<value_node value="gadget"/> 
+			</optional_types>
+			<adds/>
+			<override>
+				<wpn_fps_upg_ns_pis_large parent="barrel"/>
+				<wpn_fps_upg_ns_pis_medium parent="barrel"/>
+				<wpn_fps_upg_ns_pis_small parent="barrel"/>
+				<wpn_fps_upg_ns_pis_large_kac parent="barrel"/>
+				<wpn_fps_upg_ns_pis_medium_gem parent="barrel"/>
+				<wpn_fps_upg_ns_pis_medium_slim parent="barrel"/>
+				<wpn_fps_upg_ns_pis_jungle parent="barrel"/>
+				<wpn_fps_upg_ns_pis_meatgrinder parent="barrel"/>
+				<wpn_fps_upg_ns_pis_ipsccomp parent="barrel"/>
+				<wpn_fps_upg_pis_ns_flash parent="barrel"/>
+				
+			</override>
+			<default_blueprint>	
+				<value_node value="wpn_fps_pis_rc_auto9_barrel"/>		
+				<value_node value="wpn_fps_pis_rc_auto9_receiver"/>		
+				<value_node value="wpn_fps_pis_rc_auto9_irons"/>		
+				<value_node value="wpn_fps_pis_rc_auto9_magazine"/>		
+				<value_node value="wpn_fps_pis_rc_auto9_slide"/>		
+			
+			</default_blueprint>
+			<uses_parts>	
+				<value_node value="wpn_fps_pis_rc_auto9_barrel"/>		
+				<value_node value="wpn_fps_pis_rc_auto9_receiver"/>		
+				<value_node value="wpn_fps_pis_rc_auto9_irons"/>		
+				<value_node value="wpn_fps_pis_rc_auto9_magazine"/>		
+				<value_node value="wpn_fps_pis_rc_auto9_slide"/>		
+				
+			
+			</uses_parts>	
+		</factory>
+	<stance>			
+		<standard>
+				<shoulders rotation="8.72665e-006 0 0 -1" translation="-1.667 -1.188 -0.131"/>
+			</standard>
+			<crouched> 
+				<shoulders rotation="8.72665e-006 0 0 -1" translation="-2.667 -2.188 -1.131"/>
+			</crouched> 
+			<steelsight>
+				<shoulders rotation="8.72665e-006 0 0 -1" translation="-8.167 0.812 2.369"/>
+			</steelsight> 
+		</stance> 
+	</Weapon>
+
+
+
+
+
+
+	<Sounds directory="assets\sounds">
+		<sound id="rc_auto9_fire" 		path="auto9_fire.ogg" prefix="regular"/>
+		<sound id="rc_auto9_fire" 		path="auto9_fire.ogg" prefix="suppressed_a"/>
+		<sound id="rc_auto9_fire" 		path="auto9_fire.ogg" prefix="suppressed_b"/>
+		<sound id="rc_auto9_fire" 		path="auto9_fire.ogg" prefix="suppressed_c"/>
+		
+		<sound id="rc_auto9_spin_1" 	path="auto9_spin1.ogg" 	prefix="first"/>
+		<sound id="rc_auto9_spin_2" 	path="auto9_spin2.ogg" 	prefix="first"/>
+		<sound id="rc_auto9_spin_1" 	path="auto9_spin1.ogg" 	prefix="third"/>
+		<sound id="rc_auto9_spin_2" 	path="auto9_spin2.ogg" 	prefix="third"/>
+		
+		<sound id="rc_auto9_blank" 	path="auto9_blank.ogg" 	prefix="first"/>
+		<sound id="rc_auto9_blank" 	path="auto9_blank.ogg" 	prefix="third"/>
+		<sound id="rc_auto9_mag_contact" 	path="auto9_mag_contact.ogg" 	prefix="first"/>
+		<sound id="rc_auto9_mag_contact" 	path="auto9_mag_contact.ogg" 	prefix="third"/>
+		<sound id="rc_auto9_mag_grab" 	path="auto9_mag_grab.ogg" 	prefix="first"/>
+		<sound id="rc_auto9_mag_grab" 	path="auto9_mag_grab.ogg" 	prefix="third"/>
+		<sound id="rc_auto9_magin" 	path="auto9_magin.ogg" 	prefix="first"/>
+		<sound id="rc_auto9_magin" 	path="auto9_magin.ogg" 	prefix="third"/>
+		<sound id="rc_auto9_magout" 	path="auto9_magout.ogg" 	prefix="first"/>
+		<sound id="rc_auto9_magout" 	path="auto9_magout.ogg" 	prefix="third"/>
+		<sound id="rc_auto9_mag_take_new" 	path="auto9_mag_take_new.ogg" 	prefix="first"/>
+		<sound id="rc_auto9_mag_take_new" 	path="auto9_mag_take_new.ogg" 	prefix="third"/>
+		<sound id="rc_auto9_slide_release" 	path="auto9_slide_release.ogg" 	prefix="first"/>
+		<sound id="rc_auto9_slide_release" 	path="auto9_slide_release.ogg" 	prefix="third"/>
+		
+	</Sounds>
+
+				
+	<AddFiles directory="assets">
+	<!-- Animations -->
+		<animation path="anims/fps/rc_auto9/rc_auto9_reload" load="true"/>
+		<animation path="anims/fps/rc_auto9/rc_auto9_reload_not_empty" load="true"/>
+		<animation path="anims/fps/rc_auto9/rc_auto9_idle" load="true"/>
+		<animation path="anims/fps/rc_auto9/rc_auto9_recoil" load="true"/>
+		<animation path="anims/fps/rc_auto9/rc_auto9_recoil_steelsight" load="true"/>
+		<animation path="anims/fps/rc_auto9/rc_auto9_equip" load="true"/>
+		<animation path="anims/fps/rc_auto9/rc_auto9_unequip" load="true"/>
+		<animation path="anims/fps/rc_auto9/rc_auto9_melee" load="true"/>
+		<animation path="anims/fps/rc_auto9/rc_auto9_melee_miss" load="true"/>
+		<animation path="anims/fps/rc_auto9/rc_auto9_use" load="true"/>
+		<animation path="anims/fps/rc_auto9/rc_auto9_sprint_enter" load="true"/>
+		<animation path="anims/fps/rc_auto9/rc_auto9_sprint" load="true"/>
+		<animation path="anims/fps/rc_auto9/rc_auto9_sprint_exit" load="true"/>
+		<animation path="anims/fps/rc_auto9/rc_auto9_com_var1" load="true"/>
+		<animation path="anims/fps/rc_auto9/rc_auto9_com_var5" load="true"/>
+		<animation path="anims/fps/rc_auto9/rc_auto9_com_var6" load="true"/>
+		<animation path="anims/fps/rc_auto9/rc_auto9_com_var7" load="true"/>
+		<animation path="anims/fps/rc_auto9/rc_auto9_get_up" load="true"/>
+		<animation path="anims/fps/rc_auto9/rc_auto9_gogo" load="true"/>
+		<animation path="anims/fps/rc_auto9/rc_auto9_tased" load="true"/>
+		<animation path="anims/fps/rc_auto9/rc_auto9_tased_boost" load="true"/>
+		<animation path="anims/fps/rc_auto9/rc_auto9_tased_exit" load="true"/>
+		<animation path="anims/fps/rc_auto9/rc_auto9_inspect" load="true"/>
+
+	<!--GUI-->
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/rc_auto9"/>
+
+	<!--Fonts-->				
+	   <texture path="fonts/vipnagorgialla"/>
+	   <font path="fonts/vipnagorgialla" force="true" load="true" unload="false" />
+	   
+	<!--Textures-->	
+			<texture path="units/mods/weapons/wpn_fps_pis_rc_auto9_pts/textures/weapon_metal_cubemap"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_rc_auto9_pts/textures/auto9"/>
+		
+
+
+	<!--Unit Base-->
+		<unit_npc path="units/mods/weapons/wpn_fps_pis_rc_auto9/wpn_fps_pis_rc_auto9"/>
+	<!--Unit Paths-->
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_rc_auto9_pts/wpn_fps_pis_rc_auto9_barrel"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_rc_auto9_pts/wpn_fps_pis_rc_auto9_magazine"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_rc_auto9_pts/wpn_fps_pis_rc_auto9_receiver"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_rc_auto9_pts/wpn_fps_pis_rc_auto9_slide"/>
+
+				
+	</AddFiles>
+	
+
+	<Hooks directory="Hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>		
+		<hook file="playerstandard.lua" source_file="lib/units/beings/player/states/playerstandard"/>
+		<hook file="contourext.lua" source_file="lib/units/contourext"/>
+		<hook file="ocpweaponbase.lua" source_file="lib/units/weapons/menuraycastweaponbase"/>
+		<hook file="ocpweaponbase.lua" source_file="lib/units/weapons/newraycastweaponbase"/>
+		<hook file="copdamage.lua" source_file="lib/units/enemies/cop/copdamage"/>
+		<hook file="copdamage.lua" source_file="lib/units/enemies/cop/huskcopdamage"/>
+	</Hooks>
+	
+
+</mod>

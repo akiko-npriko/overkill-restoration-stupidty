@@ -1,0 +1,54 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_ass_sks_pts/wpn_fps_ass_sks_mag" orientation_object="rp_sks"/>
+	<animations>
+		<animation_group name="reload">
+			<object name="anim_bullet1_reload" enabled="true"/>
+			<object name="anim_bullet2_reload" enabled="true"/>
+			<object name="anim_bullet3_reload" enabled="true"/>
+			<object name="anim_bullet4_reload" enabled="true"/>
+			<object name="anim_bullet5_reload" enabled="true"/>
+			<object name="anim_bullet6_reload" enabled="true"/>
+			<object name="anim_bullet7_reload" enabled="true"/>
+			<object name="anim_bullet8_reload" enabled="true"/>
+			<object name="anim_bullet9_reload" enabled="true"/>
+			<object name="anim_bullet10_reload" enabled="true"/>
+			<object name="anim_bullets_reload" enabled="true"/>
+			<object name="anim_clip_reload" enabled="true"/>
+		</animation_group>
+		<animation_group name="reload_not_empty">
+			<object name="anim_bullet1_tact_reload" enabled="true"/>
+			<object name="anim_bullet2_tact_reload" enabled="true"/>
+			<object name="anim_bullet3_tact_reload" enabled="true"/>
+			<object name="anim_bullet4_tact_reload" enabled="true"/>
+			<object name="anim_bullet5_tact_reload" enabled="true"/>
+			<object name="anim_bullet6_tact_reload" enabled="true"/>
+			<object name="anim_bullet7_tact_reload" enabled="true"/>
+			<object name="anim_bullet8_tact_reload" enabled="true"/>
+			<object name="anim_bullet9_tact_reload" enabled="true"/>
+			<object name="anim_bullet10_tact_reload" enabled="true"/>
+			<object name="anim_bullets_tact_reload" enabled="true"/>
+			<object name="anim_chamber_bullet_tact_reload" enabled="true"/>
+			<object name="anim_clip_tact_reload" enabled="true"/>
+			<object name="anim_mag_cover_tact_reload" enabled="true"/>
+			<object name="anim_mag_spring_tact_reload" enabled="true"/>
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_bullet_1" enabled="true"/>
+		<object name="g_bullet_2" enabled="true"/>
+		<object name="g_bullet_3" enabled="true"/>
+		<object name="g_bullet_4" enabled="true"/>
+		<object name="g_bullet_5" enabled="true"/>
+		<object name="g_bullet_6" enabled="true"/>
+		<object name="g_bullet_7" enabled="true"/>
+		<object name="g_bullet_8" enabled="true"/>
+		<object name="g_bullet_9" enabled="true"/>
+		<object name="g_bullet_10" enabled="true"/>
+		<object name="g_chamber_bullet" enabled="false"/>
+		<object name="g_clip" enabled="true"/>
+		<object name="g_mag" enabled="true"/>
+		<object name="g_mag_cover" enabled="true"/>
+		<object name="g_mag_spring" enabled="true"/>
+		<object name="g_magrelease" enabled="true"/>
+	</graphics>
+</dynamic_object>

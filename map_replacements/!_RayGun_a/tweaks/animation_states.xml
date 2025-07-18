@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+		
+		<target mode="append">
+			<state name="fps/reload/raygun" type="once" segment="base" speed="1.0">
+				<anim name="raygun_reload"/>
+				<keys>
+					<key at="trigger" trigger="wpn_ray_reload_open" callback="play_sound" class_name="base" param1="wpn_ray_reload_open"/>
+					<key at="trigger" trigger="wpn_ray_reload_battery_out" callback="play_sound" class_name="base" param1="wpn_ray_reload_battery_out"/>
+					<key at="trigger" trigger="wpn_ray_reload_battery" callback="play_sound" class_name="base" param1="wpn_ray_reload_battery"/>
+					<key at="trigger" trigger="wpn_ray_reload_close" callback="play_sound" class_name="base" param1="wpn_ray_reload_close"/>
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+		<target mode="attach">
+			<to name="reload_raygun" 						redirect="fps/reload/raygun"/>
+			<to name="reload_not_empty_raygun" 				redirect="fps/reload/raygun"/>
+		</target>
+	</tweak>
+</tweaks>

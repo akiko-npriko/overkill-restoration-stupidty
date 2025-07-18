@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+
+
+		<target mode="attach">
+			<anim name="tti_dracarys_reload" 								file="anims/fps/tti_dracarys/tti_dracarys_reload" blend_set="all"/>
+			<anim name="tti_dracarys_reload_not_empty" 					file="anims/fps/tti_dracarys/tti_dracarys_reload_not_empty" blend_set="all"/>
+			
+			<anim name="tti_dracarys_idle" 								file="anims/fps/tti_dracarys/tti_dracarys_idle" blend_set="all"/>
+			<anim name="tti_dracarys_recoil" 								file="anims/fps/tti_dracarys/tti_dracarys_recoil" blend_set="all"/>
+			<anim name="tti_dracarys_recoil_enter" 						file="anims/fps/tti_dracarys/tti_dracarys_recoil_enter" blend_set="all"/>
+			<anim name="tti_dracarys_recoil_loop" 						file="anims/fps/tti_dracarys/tti_dracarys_recoil_loop" blend_set="all"/>
+			<anim name="tti_dracarys_recoil_exit" 						file="anims/fps/tti_dracarys/tti_dracarys_recoil_exit" blend_set="all"/>
+			<anim name="tti_dracarys_recoil_steelsight" 					file="anims/fps/tti_dracarys/tti_dracarys_recoil" blend_set="all"/>
+			<anim name="tti_dracarys_equip" 								file="anims/fps/tti_dracarys/tti_dracarys_equip" blend_set="all"/>
+			<anim name="tti_dracarys_unequip" 							file="anims/fps/tti_dracarys/tti_dracarys_unequip" blend_set="all"/>
+			<anim name="tti_dracarys_melee" 								file="anims/fps/tti_dracarys/tti_dracarys_melee" blend_set="all"/>
+			<anim name="tti_dracarys_melee_miss" 							file="anims/fps/tti_dracarys/tti_dracarys_melee_miss" blend_set="all"/>
+			<anim name="tti_dracarys_use" 								file="anims/fps/tti_dracarys/tti_dracarys_use" blend_set="all"/>
+			<anim name="tti_dracarys_sprint_enter" 						file="anims/fps/tti_dracarys/tti_dracarys_sprint_enter" blend_set="all"/>
+			<anim name="tti_dracarys_sprint" 								file="anims/fps/tti_dracarys/tti_dracarys_sprint" blend_set="all"/>
+			<anim name="tti_dracarys_sprint_exit" 						file="anims/fps/tti_dracarys/tti_dracarys_sprint_exit" blend_set="all"/>
+			<anim name="tti_dracarys_com_down_var1" 						file="anims/fps/tti_dracarys/tti_dracarys_com_var1" blend_set="all"/>
+			<anim name="tti_dracarys_com_stop" 							file="anims/fps/tti_dracarys/tti_dracarys_com_var5" blend_set="all"/>
+			<anim name="tti_dracarys_com_come" 							file="anims/fps/tti_dracarys/tti_dracarys_com_var6" blend_set="all"/>
+			<anim name="tti_dracarys_com_point" 							file="anims/fps/tti_dracarys/tti_dracarys_com_var7" blend_set="all"/>
+			<anim name="tti_dracarys_get_up" 								file="anims/fps/tti_dracarys/tti_dracarys_get_up" blend_set="all"/>
+			<anim name="tti_dracarys_gogo" 								file="anims/fps/tti_dracarys/tti_dracarys_gogo" blend_set="all"/>
+			<anim name="tti_dracarys_tased" 								file="anims/fps/tti_dracarys/tti_dracarys_tased" blend_set="all"/>
+			<anim name="tti_dracarys_tased_boost" 						file="anims/fps/tti_dracarys/tti_dracarys_tased_boost" blend_set="all"/>
+			<anim name="tti_dracarys_tased_exit" 							file="anims/fps/tti_dracarys/tti_dracarys_tased_exit" blend_set="all"/>
+			<anim name="tti_dracarys_inspect" 							file="anims/fps/tti_dracarys/tti_dracarys_inspect" blend_set="all"/> 
+			
+			
+			
+		</target>
+	</tweak>
+</tweaks>

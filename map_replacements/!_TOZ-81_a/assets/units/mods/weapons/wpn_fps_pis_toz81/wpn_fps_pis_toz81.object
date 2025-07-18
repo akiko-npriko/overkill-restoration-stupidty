@@ -1,0 +1,17 @@
+<dynamic_object>
+	<diesel orientation_object="rp_toz81" />
+	<animations>  
+		<animation_group name="reload" enabled="false" >
+			<object name="a_reload_barrel" enabled="true" />
+			<object name="a_reload_mag" enabled="true" />
+			<object name="a_reload_cylinder" enabled="true" />
+			<object name="a_reload_ejector" enabled="true" />
+		</animation_group>  
+		<animation_group name="reload_not_empty" enabled="false" >
+			<object name="a_reload_barrel" enabled="true" />
+			<object name="a_reload_mag" enabled="true" />
+			<object name="a_reload_cylinder" enabled="true" />
+			<object name="a_reload_ejector" enabled="true" />
+		</animation_group>
+    </animations>
+</dynamic_object>

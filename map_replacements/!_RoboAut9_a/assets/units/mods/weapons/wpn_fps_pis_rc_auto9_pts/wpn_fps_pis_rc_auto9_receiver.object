@@ -1,0 +1,15 @@
+<dynamic_object>
+    <diesel materials="units/mods/weapons/wpn_fps_pis_rc_auto9_pts/wpn_fps_pis_rc_auto9_receiver" orientation_object="rp_receiver"/>
+    <animations>
+		<animation_group name="reload">
+			<object name="anim_cocking_lever_reload" enabled="true" />	
+		</animation_group>
+		<animation_group name="recoil">
+			<object name="anim_cocking_lever_shoot" enabled="true" />	
+		</animation_group>
+	</animations>
+    <graphics>
+        <object name="g_auto9_frame" enabled="true" />
+        <object name="g_auto9_hammer" enabled="true" />
+    </graphics>
+</dynamic_object>

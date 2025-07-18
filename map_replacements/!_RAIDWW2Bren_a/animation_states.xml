@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<tweaks>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+		
+	
+		<target mode="append">
+			<state name="fps/reload/raid_ww2_bren" type="once" segment="base" speed="1.0">
+				<anim name="raid_ww2_bren_reload"/>
+					<keys>			
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+
+						<key at="trigger" trigger="bren_tilt_enter" callback="play_sound" class_name="base" 				param1="bren_tilt_enter"/>
+						<key at="trigger" trigger="bren_mag_grab" callback="play_sound" class_name="base" 					param1="bren_mag_grab"/>
+						<key at="trigger" trigger="bren_magout" callback="play_sound" class_name="base" 					param1="bren_magout"/>
+						<key at="trigger" trigger="bren_tilt_mid" callback="play_sound" class_name="base" 					param1="bren_tilt_mid"/>
+						<key at="trigger" trigger="bren_mag_contact" callback="play_sound" class_name="base" 				param1="bren_mag_contact"/>
+						<key at="trigger" trigger="bren_magin" callback="play_sound" class_name="base" 						param1="bren_magin"/>
+						<key at="trigger" trigger="bren_tilt_exit" callback="play_sound" class_name="base" 					param1="bren_tilt_exit"/>
+						<key at="trigger" trigger="bren_shoulder_bump" callback="play_sound" class_name="base" 				param1="bren_shoulder_bump"/>
+						
+						<key at="trigger" trigger="bren_bolt_forward" callback="play_sound" class_name="base" 	param1="bren_bolt_forward"/>
+						<key at="trigger" trigger="bren_bolt_back" callback="play_sound" class_name="base" 			param1="bren_bolt_back"/>
+
+						<key at="trigger" trigger="wp_clip_generic_ass_center" callback="play_sound" class_name="base" 		param1="bren_generic_center"/>
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+
+			<state name="fps/reload_not_empty/raid_ww2_bren" type="once" segment="base" speed="1.0">
+				<anim name="raid_ww2_bren_reload_not_empty"/>
+					<keys>			
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+						
+						<key at="trigger" trigger="bren_tilt_enter" callback="play_sound" class_name="base" 		param1="bren_tilt_enter"/>
+						<key at="trigger" trigger="bren_mag_grab" callback="play_sound" class_name="base" 			param1="bren_mag_grab"/>
+						<key at="trigger" trigger="bren_magout" callback="play_sound" class_name="base" 			param1="bren_magout"/>
+						<key at="trigger" trigger="bren_tilt_mid" callback="play_sound" class_name="base" 			param1="bren_tilt_mid"/>
+						<key at="trigger" trigger="bren_mag_contact" callback="play_sound" class_name="base" 		param1="bren_mag_contact"/>
+						<key at="trigger" trigger="bren_magin" callback="play_sound" class_name="base" 				param1="bren_magin"/>
+						<key at="trigger" trigger="bren_tilt_exit" callback="play_sound" class_name="base" 			param1="bren_tilt_exit"/>
+						<key at="trigger" trigger="bren_shoulder_bump" callback="play_sound" class_name="base" 		param1="bren_shoulder_bump"/>
+						
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+		</target>
+		
+		
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+		<target mode="attach">
+			
+			<to name="reload_raid_ww2_bren" 						redirect="fps/reload/raid_ww2_bren"/>
+			<to name="reload_not_empty_raid_ww2_bren" 				redirect="fps/reload_not_empty/raid_ww2_bren"/>
+			
+		</target>
+	</tweak>
+</tweaks>

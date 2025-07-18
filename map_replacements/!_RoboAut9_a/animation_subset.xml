@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+
+		<!--
+			Replace all instances of 'rc_auto9' below with the ID of your animation.
+			Note that recoil_steelsight does not have a unique animation in this rc_auto9; you can edit the filepath in the 'file' section with one if you wish.
+			If your gun cannot be fired in full auto, you can delete the recoil_enter, recoil_loop, and recoil_exit lines.
+		-->
+
+		<target mode="attach">
+			<anim name="rc_auto9_reload" 				file="anims/fps/rc_auto9/rc_auto9_reload" blend_set="all"/>
+			<anim name="rc_auto9_reload_not_empty" 		file="anims/fps/rc_auto9/rc_auto9_reload_not_empty" blend_set="all"/>
+			<anim name="rc_auto9_idle" 					file="anims/fps/rc_auto9/rc_auto9_idle" blend_set="all"/>
+			<anim name="rc_auto9_recoil" 				file="anims/fps/rc_auto9/rc_auto9_recoil" blend_set="all"/>
+			<anim name="rc_auto9_recoil_loop" 			file="anims/fps/rc_auto9/rc_auto9_recoil" blend_set="all"/>
+			<anim name="rc_auto9_recoil_enter" 			file="anims/fps/rc_auto9/rc_auto9_recoil" blend_set="all"/>
+			<anim name="rc_auto9_recoil_exit" 			file="anims/fps/rc_auto9/rc_auto9_recoil" blend_set="all"/>
+			<anim name="rc_auto9_recoil_steelsight"	 	file="anims/fps/rc_auto9/rc_auto9_recoil_steelsight" blend_set="all"/>
+			<anim name="rc_auto9_equip" 				file="anims/fps/rc_auto9/rc_auto9_equip" blend_set="all"/>
+			<anim name="rc_auto9_unequip" 				file="anims/fps/rc_auto9/rc_auto9_unequip" blend_set="all"/>
+			<anim name="rc_auto9_melee" 				file="anims/fps/rc_auto9/rc_auto9_melee" blend_set="all"/>
+			<anim name="rc_auto9_melee_miss" 			file="anims/fps/rc_auto9/rc_auto9_melee_miss" blend_set="all"/>
+			<anim name="rc_auto9_use" 					file="anims/fps/rc_auto9/rc_auto9_use" blend_set="all"/>
+			<anim name="rc_auto9_sprint_enter" 			file="anims/fps/rc_auto9/rc_auto9_sprint_enter" blend_set="all"/>
+			<anim name="rc_auto9_sprint" 				file="anims/fps/rc_auto9/rc_auto9_sprint" blend_set="all"/>
+			<anim name="rc_auto9_sprint_exit" 			file="anims/fps/rc_auto9/rc_auto9_sprint_exit" blend_set="all"/>
+			<anim name="rc_auto9_com_down_var1" 		file="anims/fps/rc_auto9/rc_auto9_com_var1" blend_set="all"/>
+			<anim name="rc_auto9_com_stop" 				file="anims/fps/rc_auto9/rc_auto9_com_var5" blend_set="all"/>
+			<anim name="rc_auto9_com_come" 				file="anims/fps/rc_auto9/rc_auto9_com_var6" blend_set="all"/>
+			<anim name="rc_auto9_com_point" 			file="anims/fps/rc_auto9/rc_auto9_com_var7" blend_set="all"/>
+			<anim name="rc_auto9_get_up" 				file="anims/fps/rc_auto9/rc_auto9_get_up" blend_set="all"/>
+			<anim name="rc_auto9_gogo" 					file="anims/fps/rc_auto9/rc_auto9_gogo" blend_set="all"/>
+			<anim name="rc_auto9_tased" 				file="anims/fps/rc_auto9/rc_auto9_tased" blend_set="all"/>
+			<anim name="rc_auto9_tased_boost" 			file="anims/fps/rc_auto9/rc_auto9_tased_boost" blend_set="all"/>
+			<anim name="rc_auto9_tased_exit" 			file="anims/fps/rc_auto9/rc_auto9_tased_exit" blend_set="all"/>
+			<anim name="rc_auto9_inspect" 				file="anims/fps/rc_auto9/rc_auto9_inspect" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

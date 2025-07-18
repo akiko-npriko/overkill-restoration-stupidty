@@ -1,0 +1,13 @@
+<materials version="3" group="weapon_schakal">
+	<material name="body" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_smg_cagnali_pts/textures/cagnali_main_df" />
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_smg_cagnali_pts/textures/cagnali_main_nm" />
+                <material_texture file="units/mods/weapons/wpn_fps_smg_cagnali_pts/textures/cagnali_main_gsma" />
+	</material>
+    <material render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" name="sideglow" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_smg_cagnali_pts/textures/cagnali_sideglow_il"/>
+        <self_illumination_texture file="units/mods/weapons/wpn_fps_smg_cagnali_pts/textures/cagnali_sideglow_il"/>
+        <variable type="scalar" name="il_bloom" value="6.4160003047436"/>
+        <variable type="scalar" name="il_multiplier" value="reddot"/>
+    </material>
+</materials>

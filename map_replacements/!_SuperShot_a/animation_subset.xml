@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+		<target mode="attach">
+			<anim name="super_idle"						file="anims/fps/super/super_idle" blend_set="all"/>
+			<anim name="super_reload"					file="anims/fps/super/super_reload" blend_set="all"/>
+			<anim name="super_doom4_reload"				file="anims/fps/super/super_reload_doom4" blend_set="all"/>
+			<anim name="super_recoil"					file="anims/fps/super/super_recoil" blend_set="all"/>
+			<anim name="super_recoil_enter"				file="anims/fps/super/super_recoil" blend_set="all"/>
+			<anim name="super_recoil_loop"				file="anims/fps/super/super_recoil" blend_set="all"/>
+			<anim name="super_recoil_exit"				file="anims/fps/super/super_recoil" blend_set="all"/>
+			<anim name="super_recoil_steelsight"		file="anims/fps/super/super_recoil_steelsight" blend_set="all"/>	
+			<anim name="super_melee_bayonet" 			file="anims/fps/super/super_melee_bayonet" blend_set="all"/>
+			<anim name="super_melee_miss_bayonet"		file="anims/fps/super/super_melee_miss_bayonet" blend_set="all"/>	
+			<anim name="super_equip" 					file="anims/fps/coal/coal_equip" blend_set="all"/>
+			<anim name="super_unequip" 					file="anims/fps/coal/coal_unequip" blend_set="all"/>
+			<anim name="super_melee" 					file="anims/fps/coal/coal_melee" blend_set="all"/>
+			<anim name="super_melee_miss" 				file="anims/fps/coal/coal_melee" blend_set="all"/>
+			<anim name="super_use" 						file="anims/fps/coal/coal_use" blend_set="all"/>
+			<anim name="super_sprint_enter" 			file="anims/fps/coal/coal_sprint_enter" blend_set="all"/>
+			<anim name="super_sprint" 					file="anims/fps/coal/coal_sprint" blend_set="all"/>
+			<anim name="super_sprint_exit" 				file="anims/fps/coal/coal_sprint_exit" blend_set="all"/>
+			<anim name="super_com_down_var1" 			file="anims/fps/coal/coal_com_var1" blend_set="all"/>
+			<anim name="super_com_stop" 				file="anims/fps/coal/coal_com_var5" blend_set="all"/>
+			<anim name="super_com_come" 				file="anims/fps/coal/coal_com_var6" blend_set="all"/>
+			<anim name="super_com_point" 				file="anims/fps/coal/coal_com_var7" blend_set="all"/>
+			<anim name="super_get_up" 					file="anims/fps/coal/coal_get_up" blend_set="all"/>
+			<anim name="super_gogo" 					file="anims/fps/coal/coal_gogo" blend_set="all"/>
+			<anim name="super_tased" 					file="anims/fps/coal/coal_tased" blend_set="all"/>
+			<anim name="super_tased_boost" 				file="anims/fps/coal/coal_tased_boost" blend_set="all"/>
+			<anim name="super_tased_exit" 				file="anims/fps/coal/coal_tased_exit" blend_set="all"/>
+			<anim name="super_inspect"					file="anims/fps/coal/coal_inspect" blend_set="all"/>
+
+			<anim name="superclassic_idle"						file="anims/fps/superclassic/superclassic_idle" blend_set="all"/>
+			<anim name="superclassic_reload"					file="anims/fps/superclassic/superclassic_reload" blend_set="all"/>
+			<anim name="superclassic_recoil"					file="anims/fps/superclassic/superclassic_idle" blend_set="all"/>
+			<anim name="superclassic_recoil_enter"				file="anims/fps/superclassic/superclassic_idle" blend_set="all"/>
+			<anim name="superclassic_recoil_loop"				file="anims/fps/superclassic/superclassic_idle" blend_set="all"/>
+			<anim name="superclassic_recoil_exit"				file="anims/fps/superclassic/superclassic_idle" blend_set="all"/>
+			<anim name="superclassic_recoil_steelsight"			file="anims/fps/superclassic/superclassic_idle" blend_set="all"/>	
+			<anim name="superclassic_melee_bayonet" 			file="anims/fps/superclassic/superclassic_melee_bayonet" blend_set="all"/>
+			<anim name="superclassic_melee_miss_bayonet"		file="anims/fps/superclassic/superclassic_melee_miss_bayonet" blend_set="all"/>	
+			<anim name="superclassic_equip" 					file="anims/fps/superclassic/superclassic_equip" blend_set="all"/>
+			<anim name="superclassic_unequip" 					file="anims/fps/superclassic/superclassic_unequip" blend_set="all"/>
+			<anim name="superclassic_melee" 					file="anims/fps/superclassic/superclassic_melee" blend_set="all"/>
+			<anim name="superclassic_melee_miss" 				file="anims/fps/superclassic/superclassic_melee" blend_set="all"/>
+			<anim name="superclassic_use" 						file="anims/fps/superclassic/superclassic_use" blend_set="all"/>
+			<anim name="superclassic_sprint_enter" 				file="anims/fps/superclassic/superclassic_idle" blend_set="all"/>
+			<anim name="superclassic_sprint" 					file="anims/fps/superclassic/superclassic_idle" blend_set="all"/>
+			<anim name="superclassic_sprint_exit" 				file="anims/fps/superclassic/superclassic_idle" blend_set="all"/>
+			<anim name="superclassic_com_down_var1" 			file="anims/fps/superclassic/superclassic_com_var1" blend_set="all"/>
+			<anim name="superclassic_com_stop" 					file="anims/fps/superclassic/superclassic_com_var5" blend_set="all"/>
+			<anim name="superclassic_com_come" 					file="anims/fps/superclassic/superclassic_com_var6" blend_set="all"/>
+			<anim name="superclassic_com_point" 				file="anims/fps/superclassic/superclassic_com_var7" blend_set="all"/>
+			<anim name="superclassic_get_up" 					file="anims/fps/superclassic/superclassic_get_up" blend_set="all"/>
+			<anim name="superclassic_gogo" 						file="anims/fps/superclassic/superclassic_gogo" blend_set="all"/>
+			<anim name="superclassic_tased" 					file="anims/fps/superclassic/superclassic_tased" blend_set="all"/>
+			<anim name="superclassic_tased_boost" 				file="anims/fps/superclassic/superclassic_tased" blend_set="all"/>
+			<anim name="superclassic_tased_exit" 				file="anims/fps/superclassic/superclassic_tased_exit" blend_set="all"/>
+			<anim name="superclassic_inspect"					file="anims/fps/superclassic/superclassic_inspect" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

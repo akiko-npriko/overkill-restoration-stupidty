@@ -1,0 +1,24 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_snp_sako_85_pts/wpn_fps_snp_sako_85_magazine" orientation_object="rp_magazine" />
+	<animations>
+		<animation_group name="reload">
+			<object name="anim_reload_mag" enabled="true" />
+			<object name="anim_reload_bullet" enabled="true" />
+		</animation_group>
+		<animation_group name="reload_not_empty">
+			<object name="anim_reload_not_empty_mag" enabled="true" />
+			<object name="anim_reload_not_empty_bullet" enabled="true" />
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_hunter85_magazine" enabled="true" />
+		
+		<object name="g_bullet" enabled="true" />
+		<object name="g_bullet_1" enabled="true" />
+		<object name="g_bullet_2" enabled="true" />
+		<object name="g_bullet_3" enabled="true" />
+		<object name="g_bullet_4" enabled="true" />
+		<object name="g_bullet_5" enabled="true" />
+	</graphics>
+	
+</dynamic_object>

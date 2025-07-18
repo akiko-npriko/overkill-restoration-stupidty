@@ -1,0 +1,12 @@
+<unit type="wpn" slot="1">
+    <object file="units/mods/weapons/wpn_fps_lmg_m1918/wpn_fps_lmg_m1918" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_hcar"/>
+	</dependencies>
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+        <extension name="base" class="NewNPCRaycastWeaponBase" >
+		<var name="name_id" value="m1918_crew" />
+	</extension>        
+    </extensions>
+</unit>

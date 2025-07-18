@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<dynamic_object>
+  <diesel materials="units/mods/weapons/wpn_fps_shot_tti_dracarys_pts/wpn_fps_shot_tti_dracarys_receiver_lower" orientation_object="rp_receiver_lower" />
+ 
+        <animations>
+   <animation_group name="last_recoil">
+			<object name="anim_recoil_last_bolt_catch" enabled="true" />
+	</animation_group>
+    <animation_group name="reload">
+      <object name="anim_reload_mag_catch" enabled="true" />
+      <object name="anim_reload_bolt_catch" enabled="true" />
+    </animation_group>    
+	<animation_group name="reload_not_empty">
+      <object name="anim_reload_not_empty_mag_catch" enabled="true" />
+    </animation_group>
+  </animations>
+  
+  <graphics>
+		<object  name="g_receiver_lower" enabled="true" />
+		<object  name="g_selector" enabled="true" />
+		<object  name="g_trigger" enabled="true" />
+		<object  name="g_tti_magwell" enabled="true" />
+		<object  name="g_bolt_catch" enabled="true" />
+		<object  name="g_mag_release" enabled="true" />
+		
+  </graphics>
+</dynamic_object>

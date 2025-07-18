@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+			
+		<target mode="attach">
+			<anim name="m1918_reload_not_empty" 					file="anims/fps/m1918/m1918_reload_not_empty" blend_set="all"/>
+			<anim name="m1918_reload" 								file="anims/fps/m1918/m1918_reload" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

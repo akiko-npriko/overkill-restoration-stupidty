@@ -1,0 +1,509 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+		<target mode="append">
+			<state name="fps/reload/super" type="once" segment="base" speed="1.0">
+				<anim name="super_reload"/>
+				<keys>
+					<key at="trigger" trigger="wp_huntsman_barrel_close" callback="play_sound" class_name="base" param1="wp_huntsman_barrel_close"/>
+					<key at="trigger" trigger="wp_huntsman_barrel_open" callback="play_sound" class_name="base" param1="wp_huntsman_barrel_open"/>
+					<key at="trigger" trigger="wp_huntsman_lock_click" callback="play_sound" class_name="base" param1="wp_huntsman_lock_click"/>
+					<key at="trigger" trigger="wp_huntsman_shell_ground" callback="play_sound" class_name="base" param1="wp_huntsman_shell_ground"/>
+					<key at="trigger" trigger="wp_huntsman_shell_insert" callback="play_sound" class_name="base" param1="wp_huntsman_shell_insert"/>
+					<key at="trigger" trigger="wp_huntsman_shell_out" callback="play_sound" class_name="base" param1="wp_huntsman_shell_out"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_throw"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+					<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+			
+			<state name="fps/reload/super_doom4" type="once" segment="base" speed="1.0">
+				<anim name="super_doom4_reload"/>
+				<keys>
+					<key at="trigger" trigger="wp_huntsman_barrel_close" callback="play_sound" class_name="base" param1="wp_huntsman_barrel_close"/>
+					<key at="trigger" trigger="wp_huntsman_barrel_open" callback="play_sound" class_name="base" param1="wp_huntsman_barrel_open"/>
+					<key at="trigger" trigger="wp_huntsman_lock_click" callback="play_sound" class_name="base" param1="wp_huntsman_lock_click"/>
+					<key at="trigger" trigger="wp_huntsman_shell_ground" callback="play_sound" class_name="base" param1="wp_huntsman_shell_ground"/>
+					<key at="trigger" trigger="wp_huntsman_shell_insert" callback="play_sound" class_name="base" param1="wp_huntsman_shell_insert"/>
+					<key at="trigger" trigger="wp_huntsman_shell_out" callback="play_sound" class_name="base" param1="wp_huntsman_shell_out"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_throw"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+					<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+			
+			<state name="fps/reload/superclassic" type="once" segment="base" speed="1.0">
+				<anim name="superclassic_reload"/>
+				<keys>
+					<key at="trigger" trigger="wp_dsdbcls" callback="play_sound" class_name="base" param1="dsdbcls"/>
+					<key at="trigger" trigger="wp_dsdbload" callback="play_sound" class_name="base" param1="dsdbload"/>
+					<key at="trigger" trigger="wp_dsdbopn" callback="play_sound" class_name="base" param1="dsdbopn"/>
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil"/>
+			<anim name="m4_recoil" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_recoil" weight="super"/>
+			<anim name="superclassic_recoil" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil_steelsight"/>
+			<anim name="m4_recoil" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_recoil_steelsight" weight="super"/>
+			<anim name="superclassic_recoil_steelsight" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil_enter"/>
+			<anim name="m4_recoil_enter" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_recoil_enter" weight="super"/>
+			<anim name="superclassic_recoil_enter" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil_loop"/>
+			<anim name="m4_recoil_loop" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_recoil_loop" weight="super"/>
+			<anim name="superclassic_recoil_loop" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil_exit"/>
+			<anim name="m4_recoil_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_recoil_exit" weight="super"/>
+			<anim name="superclassic_recoil_exit" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+		<target mode="attach">
+			<to name="reload_super" 					redirect="fps/reload/super"/>
+			<to name="reload_not_empty_super" 			redirect="fps/reload/super"/>
+			<to name="reload_super_doom4" 				redirect="fps/reload/super_doom4"/>
+			<to name="reload_not_empty_super_doom4" 	redirect="fps/reload/super_doom4"/>
+			<to name="reload_superclassic" 				redirect="fps/reload/superclassic"/>
+			<to name="reload_not_empty_superclassic" 	redirect="fps/reload/superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/idle"/>
+			<anim name="m4_idle" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_idle" weight="super"/>
+			<anim name="superclassic_idle" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/equip"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_equip" weight="super"/>
+			<anim name="superclassic_equip" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/unequip"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_unequip" weight="super"/>
+			<anim name="superclassic_unequip" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/start_running"/>
+			<anim name="m4_sprint_enter" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_sprint_enter" weight="super"/>
+			<anim name="superclassic_sprint_enter" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/running"/>
+			<anim name="m4_sprint" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_sprint" weight="super"/>
+			<anim name="superclassic_sprint" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/stop_running"/>
+			<anim name="m4_sprint_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_sprint_exit" weight="super"/>
+			<anim name="superclassic_sprint_exit" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_unequip" weight="super"/>
+			<anim name="superclassic_unequip" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee_exit"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_equip" weight="super"/>
+			<anim name="superclassic_equip" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee"/>
+			<anim name="m4_melee" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_melee" weight="super"/>
+			<anim name="superclassic_melee" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee_miss"/>
+			<anim name="m4_melee_miss" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_melee_miss" weight="super"/>
+			<anim name="superclassic_melee_miss" weight="superclassic"/>
+		</target>
+	</tweak>
+
+    <tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+        <search>
+            <xml/>
+            <state name="fps/melee_bayonet"/>
+            <anim name="mosin_melee_bayonet" weight="mosin"/>
+        </search>
+        <target mode="append">
+            <anim name="super_melee_bayonet" weight="super"/>
+            <anim name="superclassic_melee_bayonet" weight="superclassic"/>
+        </target>
+    </tweak>
+
+    <tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+        <search>
+            <xml/>
+            <state name="fps/melee_miss_bayonet"/>
+            <anim name="mosin_melee_miss_bayonet" weight="mosin"/>
+        </search>
+        <target mode="append">
+            <anim name="super_melee_miss_bayonet" weight="super"/>
+            <anim name="superclassic_melee_miss_bayonet" weight="superclassic"/>
+        </target>
+    </tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/use"/>
+			<anim name="m4_use" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_use" weight="super"/>
+			<anim name="superclassic_use" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/down"/>
+			<anim name="m4_com_down_var1" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_com_down_var1" weight="super"/>
+			<anim name="superclassic_com_down_var1" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/stop"/>
+			<anim name="m4_com_stop" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_com_stop" weight="super"/>
+			<anim name="superclassic_com_stop" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/come"/>
+			<anim name="m4_com_come" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_com_come" weight="super"/>
+			<anim name="superclassic_com_come" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/point"/>
+			<anim name="m4_com_point" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_com_point" weight="super"/>
+			<anim name="superclassic_com_point" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/get_up"/>
+			<anim name="m4_get_up" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_get_up" weight="super"/>
+			<anim name="superclassic_get_up" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/gogo"/>
+			<anim name="m4_gogo" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_gogo" weight="super"/>
+			<anim name="superclassic_gogo" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_projectile_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_unequip" weight="super"/>
+			<anim name="superclassic_unequip" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_projectile_exit"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_equip" weight="super"/>
+			<anim name="superclassic_equip" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_grenade_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_unequip" weight="super"/>
+			<anim name="superclassic_unequip" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_molotov_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_unequip" weight="super"/>
+			<anim name="superclassic_unequip" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_concussion_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_unequip" weight="super"/>
+			<anim name="superclassic_unequip" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_dada_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_unequip" weight="super"/>
+			<anim name="superclassic_unequip" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_grenade_exit"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_equip" weight="super"/>
+			<anim name="superclassic_equip" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/tased"/>
+			<anim name="m4_tased" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_tased" weight="super"/>
+			<anim name="superclassic_tased" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/tased_boost"/>
+			<anim name="m4_tased_boost" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_tased_boost" weight="super"/>
+			<anim name="superclassic_tased_boost" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/tased_exit"/>
+			<anim name="m4_tased_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_tased_exit" weight="super"/>
+			<anim name="superclassic_tased_exit" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/enter_tazer_counter"/>
+			<anim name="m4_tased_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="super_tased_exit" weight="super"/>
+			<anim name="superclassic_tased_exit" weight="superclassic"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/cash_inspect"/>
+			<anim name="glock_inspect" weight="glock"/>
+		</search>
+		<target mode="append">
+			<anim name="super_inspect" weight="super"/>
+			<anim name="superclassic_inspect" weight="superclassic"/>
+		</target>
+	</tweak>
+</tweaks>

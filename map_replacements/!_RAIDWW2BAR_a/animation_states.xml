@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<tweaks>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+		
+	
+		<target mode="append">
+			<state name="fps/reload/m1918" type="once" segment="base" speed="1.0">
+				<anim name="m1918_reload"/>
+					<keys>			
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+
+						<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" 				param1="wp_foley_generic_lever_release"/>
+						<key at="trigger" trigger="wp_hcar_reload_empty_mag_tilt" callback="play_sound" class_name="base" 				param1="m1918_tilt_enter"/>
+						<key at="trigger" trigger="wp_hcar_reload_empty_mag_swing" callback="play_sound" class_name="base" 				param1="m1918_tilt_mid"/>
+						<key at="trigger" trigger="wp_hcar_reload_empty_mag_out" callback="play_sound" class_name="base" 				param1="m1918_magout"/>
+						<key at="trigger" trigger="wp_m249_clip_hit_ground" callback="play_sound" class_name="base" 				    param1="m1918_generic_center"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" 				param1="wp_foley_generic_clip_take_new"/>
+						<key at="trigger" trigger="wp_hcar_reload_empty_mag_contact" callback="play_sound" class_name="base" 			param1="m1918_mag_contact"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" 				    param1="m1918_mag_grab"/>
+						<key at="trigger" trigger="wp_hcar_reload_empty_mag_in" callback="play_sound" class_name="base" 				param1="m1918_magin"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" 				param1="wp_foley_generic_lever_pull"/>
+						<key at="trigger" trigger="wp_hcar_reload_empty_bolt_pull" callback="play_sound" class_name="base" 				param1="m1918_bolt_back"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" 				param1="wp_foley_generic_lever_release"/>
+						<key at="trigger" trigger="wp_hcar_reload_empty_bolt_release" callback="play_sound" class_name="base" 			param1="m1918_bolt_forward"/>
+						<key at="trigger" trigger="wp_hcar_reload_empty_handguard_grab" callback="play_sound" class_name="base" 		param1="wp_hcar_reload_empty_handguard_grab"/>
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+
+			<state name="fps/reload_not_empty/m1918" type="once" segment="base" speed="1.0">
+				<anim name="m1918_reload_not_empty"/>
+					<keys>			
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+						
+						<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" 				param1="wp_foley_generic_lever_pull"/>
+						<key at="trigger" trigger="wp_hcar_reload_mag_out" callback="play_sound" class_name="base" 				        param1="m1918_magout"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" 				param1="wp_foley_generic_lever_release"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" 				param1="wp_foley_generic_clip_take_new"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" 			param1="wp_foley_generic_clip_in_connect"/>
+						<key at="trigger" trigger="wp_hcar_reload_mag_contact" callback="play_sound" class_name="base" 			        param1="m1918_mag_contact"/>
+						<key at="trigger" trigger="wp_hcar_reload_mag_fiddle" callback="play_sound" class_name="base" 			        param1="wp_hcar_reload_mag_fiddle"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" 				    param1="m1918_mag_grab"/>
+						<key at="trigger" trigger="wp_hcar_reload_mag_in" callback="play_sound" class_name="base" 				        param1="m1918_magin"/>
+						<key at="trigger" trigger="wp_hcar_reload_empty_handguard_grab" callback="play_sound" class_name="base" 		param1="wp_hcar_reload_empty_handguard_grab"/>
+						
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+		</target>
+		
+		
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+		<target mode="attach">
+			
+			<to name="reload_m1918" 						redirect="fps/reload/m1918"/>
+			<to name="reload_not_empty_m1918" 				redirect="fps/reload_not_empty/m1918"/>
+			
+		</target>
+	</tweak>
+</tweaks>

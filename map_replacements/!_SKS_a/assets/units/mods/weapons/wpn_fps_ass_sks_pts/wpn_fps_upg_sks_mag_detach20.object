@@ -1,0 +1,22 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_ass_sks_pts/wpn_fps_upg_sks_mag_detach20" orientation_object="rp_sks"/>
+	<animations>
+		<animation_group name="reload">
+			<object name="anim_mag_reload" enabled="true"/>
+			<object name="anim_mag2_reload" enabled="true"/>
+			<object name="anim_mag_release_reload" enabled="true"/>
+		</animation_group>
+		<animation_group name="reload_not_empty">
+			<object name="anim_mag_tact_reload" enabled="true"/>
+			<object name="anim_mag_release_tact_reload" enabled="true"/>
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_bullet_1" enabled="true"/>
+		<object name="g_bullet_2" enabled="true"/>
+		<object name="g_bullet_3" enabled="true"/>
+		<object name="g_mag20" enabled="true"/>
+		<object name="g_mag20_2" enabled="false"/>
+		<object name="g_magrelease_paddle" enabled="true"/>
+	</graphics>
+</dynamic_object>
