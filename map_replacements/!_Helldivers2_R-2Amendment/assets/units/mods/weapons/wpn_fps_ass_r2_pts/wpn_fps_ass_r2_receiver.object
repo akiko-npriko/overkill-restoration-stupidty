@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_ass_r2_pts/wpn_fps_ass_r2_receiver" orientation_object="rp_receiver" />
+		<animations>
+		<animation_group name="reload">
+			<object name="a_reload_handle" enabled="true"/>
+			<object name="a_reload_m_release" enabled="true"/>
+		</animation_group>
+		<animation_group name="reload_not_empty">
+			<object name="a_reload_ne_m_release" enabled="true"/>
+		</animation_group>
+		<animation_group name="recoil">
+			<object name="a_recoil_handle" enabled="true"/>
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_bolt" enabled="true" />
+		<object name="g_m_release" enabled="true" />
+		<object name="g_rail" enabled="true" />
+		<object name="g_receiver" enabled="true" />
+	</graphics>
+</dynamic_object>

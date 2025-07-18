@@ -1,0 +1,13 @@
+<dynamic_object>
+    <diesel materials="units/mods/weapons/wpn_fps_ass_ar23_ck_penetrator/wpn_fps_ass_ar23_body_penetrator" orientation_object="rp_body"  />
+    <graphics>
+        <object enabled="true" name="g_set_body_1" />
+        <object enabled="true" name="g_set_body_2" />
+        <object enabled="true" name="g_set_hinge" />
+    </graphics>
+	<animations>
+		<animation_group name="recoil">
+			<object name="anim_hinge_recoil" enabled="true" />
+		</animation_group>
+	</animations>
+</dynamic_object>

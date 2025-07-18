@@ -1,0 +1,12 @@
+<materials version="3" group="weapon_group">
+    <material name="set_2_main_body_1" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_ass_ar23_ck_concussive/textures/ar23_main_body_1_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_ass_ar23_pts/textures/ar23_main_body_nm"/>
+        <material_texture file="units/mods/weapons/wpn_fps_ass_ar23_pts/textures/ar23_main_body_gsma"/>
+    </material>
+    <material name="set_2_main_body_2" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_ass_ar23_ck_concussive/textures/ar23_main_body_2_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_ass_ar23_ck_concussive/textures/ar23_main_body_2_nm"/>
+        <material_texture file="units/mods/weapons/wpn_fps_ass_ar23_ck_concussive/textures/ar23_main_body_2_gsma"/>
+    </material>
+</materials>

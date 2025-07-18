@@ -1,0 +1,23 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_snp_r6_pts/wpn_fps_snp_r6_body_std" orientation_object="rp_receiver" />
+		<animations>
+		<animation_group name="reload_exit">
+			<object name="a_reload_hammer_exit" enabled="true"/>
+			<object name="a_reload_bolt_exit" enabled="true"/>
+			<object name="a_reload_lever_exit" enabled="true"/>
+		</animation_group>
+		<animation_group name="recoil">
+			<object name="a_recoil_hammer" enabled="true"/>
+			<object name="a_recoil_bolt" enabled="true"/>
+			<object name="a_recoil_lever" enabled="true"/>
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_receiver" enabled="true" />
+		<object name="g_rack" enabled="true" />
+		<object name="g_rail" enabled="true" />
+		<object name="g_hammer" enabled="true" />
+		<object name="g_bolt" enabled="true" />
+		<object name="g_lever" enabled="true" />
+	</graphics>
+</dynamic_object>

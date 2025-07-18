@@ -1,0 +1,21 @@
+<dynamic_object>
+    <diesel materials="units/mods/weapons/wpn_fps_ass_ar23_pts/wpn_fps_ass_ar23_mag" orientation_object="rp_mag" />
+	<animations>
+		<animation_group name="reload">
+			<object name="reload" enabled="true" />
+			<object name="reload_spare" enabled="true" />
+		</animation_group>
+		<animation_group name="reload_not_empty">
+			<object name="reload_not_empty" enabled="true" />
+			<object name="reload_not_empty_spare" enabled="true" />
+		</animation_group>
+	</animations>
+    <graphics>
+ 		<object name="g_bullet_1" enabled="true" />
+		<object name="g_bullet_2" enabled="true" />
+		<object name="g_bullet_3" enabled="true" />
+		<object name="g_mag" enabled="true" />
+
+		<object name="g_mag_spare" enabled="true" />
+    </graphics>
+</dynamic_object>

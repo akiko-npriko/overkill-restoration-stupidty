@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+			
+		<target mode="attach">
+			<anim name="sickle_reload" 								file="anims/fps/sickle/sickle_reload" blend_set="all"/>
+			<anim name="sickle_reload_not_empty" 					file="anims/fps/sickle/sickle_reload_not_empty" blend_set="all"/>
+			<anim name="sickle_recoil" 								file="anims/fps/sickle/sickle_recoil" blend_set="all"/>
+						
+			<anim name="sickle_idle" 								file="anims/fps/sickle/sickle_idle" blend_set="all"/>
+			<anim name="sickle_recoil_enter" 						file="anims/fps/sickle/sickle_recoil_enter" blend_set="all"/>
+			<anim name="sickle_recoil_loop" 						file="anims/fps/sickle/sickle_recoil_loop" blend_set="all"/>
+			<anim name="sickle_recoil_exit" 						file="anims/fps/sickle/sickle_recoil_exit" blend_set="all"/>
+			<anim name="sickle_recoil_steelsight" 					file="anims/fps/sickle/sickle_recoil" blend_set="all"/>
+			<anim name="sickle_equip" 								file="anims/fps/sickle/sickle_equip" blend_set="all"/>
+			<anim name="sickle_unequip" 							file="anims/fps/sickle/sickle_unequip" blend_set="all"/>
+			<anim name="sickle_melee" 								file="anims/fps/sickle/sickle_melee" blend_set="all"/>
+			<anim name="sickle_melee_miss" 							file="anims/fps/sickle/sickle_melee_miss" blend_set="all"/>
+			<anim name="sickle_use" 								file="anims/fps/sickle/sickle_use" blend_set="all"/>
+			<anim name="sickle_sprint_enter" 						file="anims/fps/sickle/sickle_sprint_enter" blend_set="all"/>
+			<anim name="sickle_sprint" 								file="anims/fps/sickle/sickle_sprint" blend_set="all"/>
+			<anim name="sickle_sprint_exit" 						file="anims/fps/sickle/sickle_sprint_exit" blend_set="all"/>
+			<anim name="sickle_com_down_var1" 						file="anims/fps/sickle/sickle_com_var1" blend_set="all"/>
+			<anim name="sickle_com_stop" 							file="anims/fps/sickle/sickle_com_var5" blend_set="all"/>
+			<anim name="sickle_com_come" 							file="anims/fps/sickle/sickle_com_var6" blend_set="all"/>
+			<anim name="sickle_com_point" 							file="anims/fps/sickle/sickle_com_var7" blend_set="all"/>
+			<anim name="sickle_get_up" 								file="anims/fps/sickle/sickle_get_up" blend_set="all"/>
+			<anim name="sickle_gogo" 								file="anims/fps/sickle/sickle_gogo" blend_set="all"/>
+			<anim name="sickle_tased" 								file="anims/fps/sickle/sickle_tased" blend_set="all"/>
+			<anim name="sickle_tased_boost" 						file="anims/fps/sickle/sickle_tased_boost" blend_set="all"/>
+			<anim name="sickle_tased_exit" 							file="anims/fps/sickle/sickle_tased_exit" blend_set="all"/>
+			<anim name="sickle_inspect" 							file="anims/fps/sickle/sickle_inspect" blend_set="all"/> 
+		</target>
+	</tweak>
+</tweaks>

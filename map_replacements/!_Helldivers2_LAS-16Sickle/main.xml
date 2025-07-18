@@ -1,0 +1,118 @@
+<mod name="Helldivers 2 - LAS-16 Sickle">
+
+	<Localization directory="loc" default="english.txt"/>
+
+	<AssetUpdates id="50720" version="1" provider="modworkshop"/>
+
+	<GlobalValue id="fiery_hylie_mod" color="Color(0.8, 0.7, 0.2)"/>
+
+	<AddFiles directory="assets" auto_generate="true"/>
+
+	<Hooks directory="Hooks">
+        <hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/> 
+		<hook file="playerstandard.lua" source_file="lib/units/beings/player/states/playerstandard"/> 
+		<hook file="newraycastweaponbase.lua" source_file="lib/units/weapons/newraycastweaponbase"/> 
+	</Hooks>
+
+	<Sounds directory="assets\sounds">
+		<sound id="sickle_fire" path="sickle_fire.ogg" prefix="regular"/>
+
+		<sound id="sickle_battery_out" path="sickle_battery_out.ogg" prefix="first"/>
+		<sound id="sickle_battery_out" path="sickle_battery_out.ogg" prefix="third"/>
+
+		<sound id="sickle_battery_in" path="sickle_battery_in.ogg" prefix="first"/>
+		<sound id="sickle_battery_in" path="sickle_battery_in.ogg" prefix="third"/>
+
+		<sound id="sickle_mag_comp_open" path="sickle_mag_comp_open.ogg" prefix="first"/>
+		<sound id="sickle_mag_comp_open" path="sickle_mag_comp_open.ogg" prefix="third"/>
+
+		<sound id="sickle_mag_comp_close" path="sickle_mag_comp_close.ogg" prefix="first"/>
+		<sound id="sickle_mag_comp_close" path="sickle_mag_comp_close.ogg" prefix="third"/>
+	</Sounds>
+
+	<!-- LAS-16 Sickle - Default Parts -->
+
+	<WeaponMod id="wpn_fps_sickle_barrel" type="barrel" based_on="wpn_fps_ass_ching_b_standard" unit="units/mods/weapons/wpn_fps_sickle_pts/wpn_fps_sickle_b_dummy" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_sickle_receiver" type="lower_reciever" based_on="wpn_fps_ass_ching_body_standard" unit="units/mods/weapons/wpn_fps_sickle_pts/wpn_fps_sickle_receiver" hidden="true" ver="2">
+			<animations reload="reload_not_empty" reload_not_empty="reload_not_empty"/>
+    </WeaponMod>
+
+	<WeaponMod id="wpn_fps_sickle_m_battery" type="magazine" based_on="wpn_fps_ass_ching_m_standard" unit="units/mods/weapons/wpn_fps_sickle_pts/wpn_fps_sickle_m_battery" hidden="true" ver="2"/>
+
+	<!-- LAS-16 Sickle - Re-used Parts -->
+
+	<WeaponMod id="wpn_fps_sickle_optic" based_on="wpn_fps_upg_o_aimpoint" type="sight" a_obj="a_o" steelsight_visible="false" unit="units/mods/weapons/wpn_upg_hd2_reusable/wpn_fps_ass_ar23_optic_2" hidden="true" ver="2">
+		<stats damage="0" spread="0"  recoil="0" concealment="0"/>
+		<adds>
+			<value_node value="wpn_fps_sickle_optic_steelsight"/>
+		</adds>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_sickle_optic_steelsight" based_on="wpn_fps_upg_o_specter_steelsight" unit="units/mods/weapons/wpn_upg_hd2_reusable/wpn_fps_ass_ar23_optic_2_steelsight" hidden="true" ver="2"/>
+
+	<!-- LAS-16 Sickle - Factory -->
+
+	<Weapon unlock_level="25">
+
+		<weapon id="sickle" based_on="m16" weapon_hold="sickle" FIRE_MODE="auto" CAN_TOGGLE_FIREMODE="false" CLIP_AMMO_MAX="100" NR_CLIPS_MAX="3" has_description="true" desc_id="bm_w_sickle_desc" shell_ejection="effects/payday2/particles/weapons/shells/shell_empty" muzzleflash="effects/payday2/particles/weapons/hailstorm_effect" texture_bundle_folder="mods" global_value="fiery_hylie_mod">
+
+			<categories>
+				<value_node value="grenade_launcher"/>
+			</categories>
+
+			<stats damage="55" spread="19" spread_moving="18" recoil="20" concealment="8"/>
+
+			<fire_mode_data fire_rate="0.08"/>
+		
+			<sounds fire="sickle_fire" fire_auto="sickle_fire" fire_single="sickle_fire" use_fix="true"/>
+
+			<timers reload_empty="1.52" reload_not_empty="1.52"/>
+
+			<animations reload="reload" reload_not_empty="reload_not_empty" reload_name_id="sickle"/>
+
+		</weapon>
+
+		<factory id="wpn_fps_sickle" unit="units/mods/weapons/wpn_fps_sickle/wpn_fps_sickle">
+
+			<animations fire="recoil" fire_steelsight="recoil" magazine_empty="last_recoil" reload="reload_not_empty" reload_not_empty="reload_not_empty"/>
+
+			<animation_effects>
+			    <recoil>
+				   <value_node value="effects/payday2/particles/weapons/heat/hailstorm_heat" parent="a_efx_heat_l"/>
+				   <value_node value="effects/payday2/particles/weapons/heat/hailstorm_heat" parent="a_efx_heat_r"/>
+			    </recoil>
+			</animation_effects>
+
+			<default_blueprint>
+				<value_node value="wpn_fps_sickle_barrel"/>
+				<value_node value="wpn_fps_sickle_receiver"/>
+				<value_node value="wpn_fps_sickle_m_battery"/>
+
+				<value_node value="wpn_fps_sickle_optic"/>
+			</default_blueprint>
+
+			<uses_parts>
+				<value_node value="wpn_fps_sickle_barrel"/>
+				<value_node value="wpn_fps_sickle_receiver"/>
+				<value_node value="wpn_fps_sickle_m_battery"/>
+
+				<value_node value="wpn_fps_sickle_optic"/>
+			</uses_parts>
+
+		</factory>
+
+	    <stance>			
+			<standard>
+				<shoulders rotation="-0.000745307 0.00548974 0.000938344 -0.999984" translation="-3.245 10.005 -6.332"/>
+			</standard>
+			<crouched> 
+				<shoulders rotation="-0.000642279 0.109986 0.000854216 -0.993933" translation="-2.245 5.505 -6.668"/>
+			</crouched>
+			<steelsight>
+				<shoulders rotation="-0.000745307 0.00548974 0.000938344 -0.999984" translation="-10.945 25.005 -2.232"/>
+			</steelsight>
+		</stance>
+
+	</Weapon>
+</mod>

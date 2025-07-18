@@ -1,0 +1,30 @@
+<materials version="3" group="weapon_group">
+    <material name="optic" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_upg_hd2_reusable/textures/ar23_optic_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_upg_hd2_reusable/textures/ar23_optic_nm"/>
+        <material_texture file="units/mods/weapons/wpn_fps_upg_hd2_reusable/textures/ar23_optic_gsma"/>
+    </material>
+	<material unique="true" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:FPS:HOLO:VIEW_ANGLE_FALLOFF_OP" name="gfx" version="2">
+		<variable type="scalar" name="intensity" value="reddot"/>
+		<diffuse_texture file="units/pd2_dlc1/weapons/wpn_effects_textures/wpn_sight_reticle_1_il"/>
+		<variable type="scalar" name="falloff_exp" value="1000"/>
+		<variable type="vector3" name="holo_target_offset" value="0 10000 0"/>
+		<variable type="vector3" name="holo_reticle_scale" value="0.5 1 20"/>
+	</material>
+    <material name="gfx_hd2" version="2" render_template="effect:DIFFUSE0_TEXTURE:VIEW_ANGLE_FALLOFF_OP">
+        <variable value="reddot" type="scalar" name="intensity"/>
+        <diffuse_texture file="units/mods/weapons/wpn_fps_upg_hd2_reusable/textures/ar23_reticle_penetrator_df"/>
+        <variable value="500" type="scalar" name="falloff_exp"/>
+    </material>
+    <material name="lens" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:FPS" version="2">
+        <diffuse_texture file="units/payday2/weapons/wpn_effects_textures/green_glass_df"/>
+        <opacity_texture file="units/payday2/weapons/wpn_fps_upg_o_eotech/wpn_eotech_glass_op"/>
+        <reflection_texture global_texture="current_global_texture" type="cubemap"/>
+        <variable value="0.91999995708466 0 1" type="vector3" name="fresnel_settings"/>
+    </material>
+	<material name="no_blur" version="2" render_template="effect:DOF_CUTTER">
+        <variable value="10" type="scalar" name="fadeout_distance"/>
+        <diffuse_texture file="units/payday2/weapons/wpn_effects_textures/wpn_effect_no_blurr_df"/>
+        <variable value="182.69010925293" type="scalar" name="falloff_exp"/>
+    </material>
+</materials>

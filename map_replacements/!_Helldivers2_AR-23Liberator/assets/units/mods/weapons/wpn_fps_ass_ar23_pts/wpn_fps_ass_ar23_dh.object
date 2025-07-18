@@ -1,0 +1,15 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_ass_ar23_pts/wpn_fps_ass_ar23_dh" orientation_object="rp_dh" />
+	<graphics>
+		<object name="g_dh" enabled="false" />
+		<object name="g_dh_left" enabled="true" />
+	</graphics>
+	<animations>
+		<animation_group name="recoil">
+			<object name="recoil_dh" enabled="true" />
+		</animation_group>
+		<animation_group name="reload">
+			<object name="reload_dh" enabled="true" />
+		</animation_group>
+	</animations>
+</dynamic_object>

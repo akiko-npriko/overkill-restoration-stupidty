@@ -1,0 +1,13 @@
+<dynamic_object>
+    <diesel materials="units/mods/weapons/wpn_fps_ass_ar23_pts/wpn_fps_ass_ar23_body" orientation_object="rp_body"  />
+    <graphics>
+        <object enabled="true" name="g_body" />
+        <object enabled="true" name="g_hinge" />
+        <object enabled="true" name="g_stock" />
+    </graphics>
+	<animations>
+		<animation_group name="recoil">
+			<object name="anim_hinge_recoil" enabled="true" />
+		</animation_group>
+	</animations>
+</dynamic_object>

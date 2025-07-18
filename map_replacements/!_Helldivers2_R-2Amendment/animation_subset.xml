@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+			
+		<target mode="attach">
+			<anim name="r2_com_down_var1" 				file="anims/fps/r2/r2_com_var1" blend_set="all"/>
+			<anim name="r2_com_stop" 					file="anims/fps/r2/r2_com_var5" blend_set="all"/>
+			<anim name="r2_com_come" 					file="anims/fps/r2/r2_com_var6" blend_set="all"/>
+			<anim name="r2_com_point" 					file="anims/fps/r2/r2_com_var7" blend_set="all"/>
+
+			<anim name="r2_equip" 					    file="anims/fps/r2/r2_equip" blend_set="all"/>
+			<anim name="r2_unequip" 					file="anims/fps/r2/r2_unequip" blend_set="all"/>
+
+			<anim name="r2_get_up" 					    file="anims/fps/r2/r2_get_up" blend_set="all"/>
+
+			<anim name="r2_gogo" 					    file="anims/fps/r2/r2_gogo" blend_set="all"/>
+
+			<anim name="r2_idle" 					    file="anims/fps/r2/r2_idle" blend_set="all"/>
+
+			<anim name="r2_inspect" 					file="anims/fps/r2/r2_inspect" blend_set="all"/>
+
+			<anim name="r2_melee" 					    file="anims/fps/r2/r2_melee" blend_set="all"/>
+			<anim name="r2_melee_bayo" 					file="anims/fps/r2/r2_melee_bayo" blend_set="all"/>
+			<anim name="r2_melee_bayo_miss" 		    file="anims/fps/r2/r2_melee_bayo_miss" blend_set="all"/>
+			<anim name="r2_melee_miss" 					file="anims/fps/r2/r2_melee_miss" blend_set="all"/>
+
+			<anim name="r2_recoil" 					    file="anims/fps/r2/r2_recoil" blend_set="all"/>
+			<anim name="r2_recoil_steelsight" 			file="anims/fps/r2/r2_recoil_steelsight" blend_set="all"/>
+
+			<anim name="r2_reload" 					    file="anims/fps/r2/r2_reload" blend_set="all"/>
+			<anim name="r2_reload_not_empty" 		    file="anims/fps/r2/r2_reload_not_empty" blend_set="all"/>
+
+			<anim name="r2_sprint" 					    file="anims/fps/r2/r2_sprint" blend_set="all"/>
+			<anim name="r2_sprint_enter" 			    file="anims/fps/r2/r2_sprint_enter" blend_set="all"/>
+			<anim name="r2_sprint_exit" 			    file="anims/fps/r2/r2_sprint_exit" blend_set="all"/>
+
+			<anim name="r2_tased" 					    file="anims/fps/r2/r2_tased" blend_set="all"/>
+			<anim name="r2_tased_boost" 			    file="anims/fps/r2/r2_tased_boost" blend_set="all"/>
+			<anim name="r2_tased_exit" 					file="anims/fps/r2/r2_tased_exit" blend_set="all"/>
+
+			<anim name="r2_use" 					    file="anims/fps/r2/r2_use" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

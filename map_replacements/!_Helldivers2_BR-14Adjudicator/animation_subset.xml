@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+
+		<!--
+			Replace all instances of 'reprimand' below with the ID of your animation.
+			Note that recoil_steelsight does not have a unique animation in this reprimand; you can edit the filepath in the 'file' section with one if you wish.
+			If your gun cannot be fired in full auto, you can delete the recoil_enter, recoil_loop, and recoil_exit lines.
+		-->
+
+		<target mode="attach">
+			<anim name="br14_reload" 				file="anims/fps/br14/br14_reload" blend_set="all"/>
+			<anim name="br14_reload_not_empty" 		file="anims/fps/br14/br14_reload_not_empty" blend_set="all"/>
+
+			<anim name="br14_recoil" 							file="anims/fps/br14/br14_recoil" blend_set="all"/>
+			<anim name="br14_idle" 								file="anims/fps/br14/br14_idle" blend_set="all"/>
+			<anim name="br14_recoil_enter" 						file="anims/fps/br14/br14_recoil_enter" blend_set="all"/>
+			<anim name="br14_recoil_loop" 						file="anims/fps/br14/br14_recoil_loop" blend_set="all"/>
+			<anim name="br14_recoil_exit" 						file="anims/fps/br14/br14_recoil_exit" blend_set="all"/>
+			<anim name="br14_recoil_steelsight" 				file="anims/fps/br14/br14_recoil" blend_set="all"/>
+			<anim name="br14_equip" 							file="anims/fps/br14/br14_equip" blend_set="all"/>
+			<anim name="br14_unequip" 							file="anims/fps/br14/br14_unequip" blend_set="all"/>
+			<anim name="br14_melee" 							file="anims/fps/br14/br14_melee" blend_set="all"/>
+			<anim name="br14_melee_miss" 						file="anims/fps/br14/br14_melee_miss" blend_set="all"/>
+			<anim name="br14_use" 								file="anims/fps/br14/br14_use" blend_set="all"/>
+			<anim name="br14_sprint_enter" 						file="anims/fps/br14/br14_sprint_enter" blend_set="all"/>
+			<anim name="br14_sprint" 							file="anims/fps/br14/br14_sprint" blend_set="all"/>
+			<anim name="br14_sprint_exit" 						file="anims/fps/br14/br14_sprint_exit" blend_set="all"/>
+			<anim name="br14_com_down_var1" 					file="anims/fps/br14/br14_com_var1" blend_set="all"/>
+			<anim name="br14_com_stop" 							file="anims/fps/br14/br14_com_var5" blend_set="all"/>
+			<anim name="br14_com_come" 							file="anims/fps/br14/br14_com_var6" blend_set="all"/>
+			<anim name="br14_com_point" 						file="anims/fps/br14/br14_com_var7" blend_set="all"/>
+			<anim name="br14_get_up" 							file="anims/fps/br14/br14_get_up" blend_set="all"/>
+			<anim name="br14_gogo" 								file="anims/fps/br14/br14_gogo" blend_set="all"/>
+			<anim name="br14_tased" 							file="anims/fps/br14/br14_tased" blend_set="all"/>
+			<anim name="br14_tased_boost" 						file="anims/fps/br14/br14_tased_boost" blend_set="all"/>
+			<anim name="br14_tased_exit" 						file="anims/fps/br14/br14_tased_exit" blend_set="all"/>
+			<anim name="br14_inspect" 							file="anims/fps/br14/br14_inspect" blend_set="all"/> 
+		</target>
+	</tweak>
+</tweaks>

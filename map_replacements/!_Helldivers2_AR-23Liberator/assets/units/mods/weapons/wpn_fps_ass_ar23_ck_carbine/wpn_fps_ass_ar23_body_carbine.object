@@ -1,0 +1,18 @@
+<dynamic_object>
+    <diesel materials="units/mods/weapons/wpn_fps_ass_ar23_ck_carbine/wpn_fps_ass_ar23_body_carbine" orientation_object="rp_body"  />
+    <graphics>
+        <object enabled="true" name="g_bolt" />
+        <object enabled="true" name="g_cover" />
+
+        <object enabled="true" name="g_body" />
+        <object enabled="true" name="g_rails" />
+        <object enabled="true" name="g_pad" />
+        <object enabled="true" name="g_pouch" />
+        <object enabled="true" name="g_stock" />
+    </graphics>
+	<animations>
+		<animation_group name="recoil">
+			<object name="anim_bolt_recoil" enabled="true" />
+		</animation_group>
+	</animations>
+</dynamic_object>

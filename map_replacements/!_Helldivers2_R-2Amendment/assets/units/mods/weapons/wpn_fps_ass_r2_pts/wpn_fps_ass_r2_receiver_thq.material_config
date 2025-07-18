@@ -1,0 +1,10 @@
+<materials version="3" group="weapon_tti">
+	<material name="HD2_R2Amendment_MAIN" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_ass_r2_pts/textures/r2_body_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_ass_r2_pts/textures/r2_body_nm"/>
+	</material>
+	<material name="HD2_R2Amendment_RAIL" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_ass_r2_pts/textures/r2_rail_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_ass_r2_pts/textures/r2_rail_nm"/>
+	</material>
+</materials>

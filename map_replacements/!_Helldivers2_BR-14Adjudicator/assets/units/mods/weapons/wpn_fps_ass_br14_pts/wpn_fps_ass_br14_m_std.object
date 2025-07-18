@@ -1,0 +1,19 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_ass_br14_pts/wpn_fps_ass_br14_m_std" orientation_object="rp_br14_mag" />
+	<animations>
+		<animation_group name="reload">
+			<object name="anim_reload" enabled="true" />
+		</animation_group>
+		<animation_group name="reload_not_empty">
+			<object name="anim_reload_tactical" enabled="true" />
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_mag" enabled="true" />
+
+		<object name="g_bullet_1" enabled="true" />
+		<object name="g_bullet_2" enabled="true" />
+		<object name="g_bullet_3" enabled="true" />
+		<object name="g_bullet_4" enabled="true" />
+	</graphics>
+</dynamic_object>

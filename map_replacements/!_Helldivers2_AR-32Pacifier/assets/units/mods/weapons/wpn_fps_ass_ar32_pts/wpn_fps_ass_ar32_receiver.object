@@ -1,0 +1,16 @@
+<dynamic_object>
+    <diesel materials="units/mods/weapons/wpn_fps_ass_ar32_pts/wpn_fps_ass_ar32_receiver" orientation_object="rp_receiver"  />
+    <graphics>
+        <object enabled="true" name="g_receiver" />
+        <object enabled="true" name="g_rails" />
+        <object enabled="true" name="g_dh" />
+    </graphics>
+	<animations>
+		<animation_group name="recoil">
+			<object name="anim_recoil" enabled="true" />
+		</animation_group>
+		<animation_group name="reload">
+			<object name="anim_reload" enabled="true" />
+		</animation_group>
+	</animations>
+</dynamic_object>

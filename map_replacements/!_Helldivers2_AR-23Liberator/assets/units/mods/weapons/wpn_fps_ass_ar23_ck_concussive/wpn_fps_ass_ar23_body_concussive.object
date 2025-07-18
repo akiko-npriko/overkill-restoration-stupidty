@@ -1,0 +1,13 @@
+<dynamic_object>
+    <diesel materials="units/mods/weapons/wpn_fps_ass_ar23_ck_concussive/wpn_fps_ass_ar23_body_concussive" orientation_object="rp_body"  />
+    <graphics>
+        <object enabled="true" name="g_body_1_set" />
+        <object enabled="true" name="g_body_2_set" />
+        <object enabled="true" name="g_hinge_set" />
+    </graphics>
+	<animations>
+		<animation_group name="recoil">
+			<object name="anim_hinge_recoil" enabled="true" />
+		</animation_group>
+	</animations>
+</dynamic_object>

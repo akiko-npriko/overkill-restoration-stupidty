@@ -1,0 +1,15 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_snp_r6_pts/wpn_fps_snp_r6_m_std" orientation_object="rp_magazine" />
+	<animations>
+		<animation_group name="reload">
+			<object name="a_reload_bullet" enabled="true"/>
+			<object name="a_reload_shute" enabled="true"/>
+		</animation_group>
+	</animations>
+
+	<graphics>
+		<object name="g_chute" enabled="true"/>
+		<object name="g_bullet_1" enabled="true"/>
+		<object name="g_bullet" enabled="true"/>
+	</graphics>
+</dynamic_object>

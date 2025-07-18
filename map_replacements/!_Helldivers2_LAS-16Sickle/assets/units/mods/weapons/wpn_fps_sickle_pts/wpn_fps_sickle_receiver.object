@@ -1,0 +1,16 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_sickle_pts/wpn_fps_sickle_receiver" orientation_object="rp_receiver" />
+	<animations>
+		<animation_group name="reload">
+			<object name="anim_mag_compartment_reload" enabled="true" />
+		</animation_group>
+
+		<animation_group name="reload_not_empty">
+			<object name="anim_mag_compartment_reload" enabled="true" />
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_receiver" enabled="true" />
+		<object name="g_mag_compartment" enabled="true" />
+	</graphics>
+</dynamic_object>

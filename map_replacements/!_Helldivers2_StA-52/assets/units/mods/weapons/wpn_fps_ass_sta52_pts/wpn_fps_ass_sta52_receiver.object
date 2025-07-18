@@ -1,0 +1,15 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_ass_sta52_pts/wpn_fps_ass_sta52_receiver" orientation_object="rp_receiver" />
+	<animations>
+		<animation_group name="reload">
+			<object name="a_tray_reload" enabled="true" />
+		</animation_group>
+		<animation_group name="reload_not_empty">
+			<object name="a_tray_reload_not_empty" enabled="true" />
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_receiver" enabled="true" />
+		<object name="g_feed_tray" enabled="true" />
+	</graphics>
+</dynamic_object>

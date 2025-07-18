@@ -1,0 +1,19 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_ass_br14_pts/wpn_fps_ass_br14_body_std" orientation_object="rp_br14_body" />
+	<animations>
+		<animation_group name="reload">
+			<object name="anim_reload_dh" enabled="true" />
+		</animation_group>
+		<animation_group name="recoil">
+			<object name="anim_recoil" enabled="true" />
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_dh" enabled="true" />
+
+		<object name="g_main" enabled="true" />
+		<object name="g_mr" enabled="true" />
+		<object name="g_rail_bottom" enabled="true" />
+		<object name="g_rail_up" enabled="true" />
+	</graphics>
+</dynamic_object>
