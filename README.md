@@ -53,8 +53,7 @@ Some Normalish Stuff:
 - 33rd Infantry voicelines replace ResMod US National Guard voicelines
 	- https://modworkshop.net/mod/49440
 
-  Credits rqq:
-  - Dr Newbie stuff
+- Changed Marshall Shield Asset
 
 # Changes:
 
@@ -310,3 +309,5 @@ Yanked coding from... (intergrated into mod)
 	 - https://modworkshop.net/mod/49627
  - 33rd Infantry voicelines replace ResMod US National Guard voicelines
 	 - https://modworkshop.net/mod/49440
+ - New Marshal Shield (Transparent Visor Addition)
+	 - https://modworkshop.net/mod/41470
