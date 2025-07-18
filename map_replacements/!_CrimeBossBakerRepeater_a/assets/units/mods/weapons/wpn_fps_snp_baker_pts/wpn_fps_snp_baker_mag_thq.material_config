@@ -1,0 +1,10 @@
+<materials version="3" group="wellnewadventuresawaitbuddy">
+	<material name="main" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_snp_baker_pts/textures/main_df" mip="1" />
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_snp_baker_pts/textures/main_nm" mip="1" />
+	</material>
+	<material name="boolet" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_snp_baker_pts/textures/boolet_df" mip="1" />
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_snp_baker_pts/textures/boolet_nm" mip="1" />
+	</material>
+</materials>

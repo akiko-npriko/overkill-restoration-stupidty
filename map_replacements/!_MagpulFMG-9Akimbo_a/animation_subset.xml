@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+		<target mode="attach">
+			<anim name="x_fmgnine_aim" 								file="anims/fps/x_sr2/x_sr2_aim" blend_set="all"/>
+			<anim name="x_fmgnine_idle" 							file="anims/fps/x_sr2/x_sr2_idle" blend_set="all"/>
+			<anim name="x_fmgnine_aim_recoil_exit" 					file="anims/fps/x_sr2/x_sr2_aim_recoil_exit" blend_set="all"/>
+			<anim name="x_fmgnine_aim_recoil_loop" 					file="anims/fps/x_sr2/x_sr2_aim_recoil_loop" blend_set="all"/>
+			<anim name="x_fmgnine_aim_recoil_enter" 				file="anims/fps/x_sr2/x_sr2_aim_recoil_enter" blend_set="all"/>
+			<anim name="x_fmgnine_aim_recoil" 						file="anims/fps/x_sr2/x_sr2_aim_recoil" blend_set="all"/>
+			<anim name="x_fmgnine_recoil_exit" 						file="anims/fps/x_sr2/x_sr2_recoil_exit" blend_set="all"/>
+			<anim name="x_fmgnine_recoil_loop" 						file="anims/fps/x_sr2/x_sr2_recoil_loop" blend_set="all"/>
+			<anim name="x_fmgnine_recoil_enter" 					file="anims/fps/x_sr2/x_sr2_recoil_enter" blend_set="all"/>
+			<anim name="x_fmgnine_recoil" 							file="anims/fps/x_sr2/x_sr2_recoil" blend_set="all"/>
+			<anim name="x_fmgnine_equip" 							file="anims/fps/x_fmgnine/x_fmgnine_equip" blend_set="all"/>
+			<anim name="x_fmgnine_equip_quick" 						file="anims/fps/x_sr2/x_sr2_equip" blend_set="all"/>
+			<anim name="x_fmgnine_aim_equip" 						file="anims/fps/x_sr2/x_sr2_aim_equip" blend_set="all"/>
+			<anim name="x_fmgnine_unequip" 							file="anims/fps/x_sr2/x_sr2_unequip" blend_set="all"/>
+			<anim name="x_fmgnine_aim_unequip" 						file="anims/fps/x_sr2/x_sr2_aim_unequip" blend_set="all"/>
+			<anim name="x_fmgnine_reload" 							file="anims/fps/x_fmgnine/x_fmgnine_reload" blend_set="all"/>
+			<anim name="x_fmgnine_reload_not_empty" 				file="anims/fps/x_fmgnine/x_fmgnine_reload_not_empty" blend_set="all"/>
+			<anim name="x_fmgnine_sprint_enter" 					file="anims/fps/x_sr2/x_sr2_sprint_enter" blend_set="all"/>
+			<anim name="x_fmgnine_aim_sprint_enter" 				file="anims/fps/x_sr2/x_sr2_aim_sprint_enter" blend_set="all"/>
+			<anim name="x_fmgnine_sprint" 							file="anims/fps/x_sr2/x_sr2_sprint" blend_set="all"/>
+			<anim name="x_fmgnine_sprint_exit" 						file="anims/fps/x_sr2/x_sr2_sprint_exit" blend_set="all"/>
+			<anim name="x_fmgnine_aim_sprint_exit" 					file="anims/fps/x_sr2/x_sr2_aim_sprint_exit" blend_set="all"/>
+			<anim name="x_fmgnine_use" 								file="anims/fps/x_sr2/x_sr2_use" blend_set="all"/>
+			<anim name="x_fmgnine_com_down_var1" 					file="anims/fps/x_sr2/x_sr2_com_var1" blend_set="all"/>
+			<anim name="x_fmgnine_com_stop" 						file="anims/fps/x_sr2/x_sr2_com_var5" blend_set="all"/>
+			<anim name="x_fmgnine_com_come" 						file="anims/fps/x_sr2/x_sr2_com_var6" blend_set="all"/>
+			<anim name="x_fmgnine_com_point" 						file="anims/fps/x_sr2/x_sr2_com_var7" blend_set="all"/>
+			<anim name="x_fmgnine_get_up" 							file="anims/fps/x_sr2/x_sr2_get_up" blend_set="all"/>
+			<anim name="x_fmgnine_gogo" 							file="anims/fps/x_sr2/x_sr2_gogo" blend_set="all"/>
+			<anim name="x_fmgnine_tased" 							file="anims/fps/x_sr2/x_sr2_tased" blend_set="all"/>
+			<anim name="x_fmgnine_tased_boost" 						file="anims/fps/x_sr2/x_sr2_tased_boost" blend_set="all"/>
+			<anim name="x_fmgnine_tased_exit" 						file="anims/fps/x_sr2/x_sr2_tased_exit" blend_set="all"/>
+			<anim name="x_fmgnine_melee" 							file="anims/fps/x_sr2/x_sr2_melee" blend_set="all"/>
+			<anim name="x_fmgnine_aim_melee" 						file="anims/fps/x_sr2/x_sr2_aim_melee" blend_set="all"/>
+			<anim name="x_fmgnine_melee_miss" 						file="anims/fps/x_sr2/x_sr2_melee_miss" blend_set="all"/>
+			<anim name="x_fmgnine_aim_melee_miss" 					file="anims/fps/x_sr2/x_sr2_aim_melee_miss" blend_set="all"/>
+			<anim name="x_fmgnine_inspect"							file="anims/fps/x_sr2/x_sr2_inspect" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

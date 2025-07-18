@@ -1,0 +1,32 @@
+<materials version="3" group="weapon_r870">
+	<material name="mtr_guts_green" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 		file="units/mods/weapons/wpn_fps_shot_cp2077_guts_pts/textures/guts_green_df"/>
+        <bump_normal_texture 	file="units/mods/weapons/wpn_fps_shot_cp2077_guts_pts/textures/guts_green_nm"/>
+        <material_texture		file="units/mods/weapons/wpn_fps_shot_cp2077_guts_pts/textures/guts_green_gsma"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_shot_cp2077_guts_pts/textures/weapon_metal_cubemap"/>
+    </material>	
+	<material name="mtr_metal_generic" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 		file="units/mods/weapons/wpn_fps_shot_cp2077_guts_pts/textures/guts_metal_generic_df"/>
+        <bump_normal_texture 	file="units/mods/weapons/wpn_fps_shot_cp2077_guts_pts/textures/guts_metal_generic_nm"/>
+        <material_texture		file="units/mods/weapons/wpn_fps_shot_cp2077_guts_pts/textures/guts_metal_generic_gsma"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_shot_cp2077_guts_pts/textures/weapon_metal_cubemap"/>
+    </material>	
+	<material name="mtr_guts_metal" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 		file="units/mods/weapons/wpn_fps_shot_cp2077_guts_pts/textures/guts_metal_df"/>
+        <bump_normal_texture 	file="units/mods/weapons/wpn_fps_shot_cp2077_guts_pts/textures/guts_metal_nm"/>
+        <material_texture		file="units/mods/weapons/wpn_fps_shot_cp2077_guts_pts/textures/guts_metal_gsma"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_shot_cp2077_guts_pts/textures/weapon_metal_cubemap"/>
+    </material>	
+	<material name="mtr_guts_gray" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 		file="units/mods/weapons/wpn_fps_shot_cp2077_guts_pts/textures/guts_grey_df"/>
+        <bump_normal_texture 	file="units/mods/weapons/wpn_fps_shot_cp2077_guts_pts/textures/guts_grey_nm"/>
+        <material_texture		file="units/mods/weapons/wpn_fps_shot_cp2077_guts_pts/textures/guts_grey_gsma"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_shot_cp2077_guts_pts/textures/weapon_metal_cubemap"/>
+    </material>	
+	
+	
+	<material name="mtr_slug" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/payday2/weapons/wpn_fps_shot_r870_pts/slug_df"/>
+        <bump_normal_texture file="units/payday2/weapons/wpn_fps_shot_r870_pts/slug_nm"/>
+    </material>
+</materials>

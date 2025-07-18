@@ -1,0 +1,36 @@
+<dynamic_object>
+    <diesel materials="units/mods/weapons/wpn_fps_smg_crysis3_typhoon_pts/wpn_fps_smg_crysis3_typhoon_body" orientation_object="rp_wpn_fps_smg_typhoon_body" />
+	<animations>
+		<animation_group name="reload" >
+			<object name="anim_back_reload" enabled="true" />
+			<object name="anim_backtop_reload" enabled="true" />
+			<object name="anim_frontbottom_reload" enabled="true" />
+			<object name="anim_handle_reload" enabled="true" />
+			<object name="anim_mag_reload" enabled="true" />
+			<object name="anim_maglift_reload" enabled="true" />
+			<object name="anim_maglockleft_reload" enabled="true" />
+			<object name="anim_maglockright_reload" enabled="true" />
+			<object name="anim_slider_reload" enabled="true" />
+			<object name="anim_slider1_reload" enabled="true" />
+			<object name="anim_slider2_reload" enabled="true" />
+			<object name="anim_toplockleft_reload" enabled="true" />
+			<object name="anim_toplockright_reload" enabled="true" />
+			<object name="anim_upper_reload" enabled="true" />
+		</animation_group>
+	</animations>
+    <graphics>
+			<object name="g_back_lock" enabled="true" />
+			<object name="g_back_top_lock" enabled="true" />
+			<object name="g_body" enabled="true" />
+			<object name="g_front_bottom_lock" enabled="true" />
+			<object name="g_handle" enabled="true" />
+			<object name="g_magazine_lift" enabled="true" />
+			<object name="g_magazine_lock_left" enabled="true" />
+			<object name="g_magazine_lock_right" enabled="true" />
+			<object name="g_slider_part1" enabled="true" />
+			<object name="g_slider_part2" enabled="true" />
+			<object name="g_top_lock_left" enabled="true" />
+			<object name="g_top_lock_right" enabled="true" />
+			<object name="g_upper_lock" enabled="true" />
+    </graphics>
+</dynamic_object>

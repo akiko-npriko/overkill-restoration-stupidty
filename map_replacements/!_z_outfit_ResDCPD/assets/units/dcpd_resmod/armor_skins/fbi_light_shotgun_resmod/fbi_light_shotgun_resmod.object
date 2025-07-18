@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/dcpd_resmod/armor_skins/fbi_light_shotgun_resmod/fbi_light_shotgun_resmod" orientation_object="root_point" />
+
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="co_culling">
+			<object name="g_body_shitbag" enabled="true"/>
+			<object name="g_swat_sg" enabled="true"/>
+			<object name="g_helmet_lod1" enabled="true"/>
+
+		<!--Balaclava-->
+			<object name="g_balaclava" enabled="true"/>
+
+		<!--Heads; Only one should be used at a time and they should not be used alongside balaclava-->
+			<object name="g_head_a" enabled="false"/>
+			<object name="g_head_b" enabled="false"/>
+			<object name="g_head_c" enabled="false"/>
+
+		<!--Faces; Only one should be used at a time and they should only be used alongside balaclava-->
+			<object name="g_face_a" enabled="false"/>
+			<object name="g_face_b" enabled="true"/>
+			<object name="g_face_c" enabled="false"/>
+			<object name="g_face_d" enabled="false"/>
+			<object name="g_face_e" enabled="false"/>
+
+		<!--Goggles; Frame and glass should be used together-->
+			<object name="g_goggles_a" enabled="true"/> <!--Frame-->
+			<object name="g_glass" enabled="true"/> <!--Glass-->
+
+		<!--Helmet Flashlight-->
+			<object name="g_helmet_lod7" enabled="false"/>
+
+		<!--Night-Vision Goggles; Only one should be used at a time-->
+			<object name="g_helmet_lod9" enabled="true"/> <!--NVG lifted up-->
+			<object name="g_helmet_lod15" enabled="false"/> <!--NVG put down-->
+
+		<!--Gun Holsters-->
+			<object name="g_holster_l" enabled="false"/> <!--Left thigh-->
+			<object name="g_holster_r" enabled="true"/> <!--Right thigh-->
+		</graphic_group>
+	</graphics>
+
+	<effects>
+		<effect_spawner name="es_flashlight" enabled="false" object="a_night_helmetlight" effect="effects/particles/weapons/flashlight/flashlight" />
+	</effects>
+
+</dynamic_object>

@@ -1,0 +1,23 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_smg_x_fmgnine_pts/wpn_fps_smg_fmgnine_mag_akimbo" orientation_object="rp_fmg9"/>
+	<animations>
+		<animation_group name="reload_left">
+			<object name="anim_mag_reload_left" enabled="true"/>
+		</animation_group>
+		<animation_group name="reload_right">
+			<object name="anim_mag_reload_right" enabled="true"/>
+		</animation_group>
+		<animation_group name="reload_not_empty_left">
+			<object name="anim_mag_tact_reload_left" enabled="true"/>
+		</animation_group>
+		<animation_group name="reload_not_empty_right">
+			<object name="anim_mag_tact_reload_right" enabled="true"/>
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_bullet_1" enabled="true"/>
+		<object name="g_bullet_2" enabled="true"/>
+		<object name="g_bullet_3" enabled="true"/>
+		<object name="g_mag" enabled="true"/>
+	</graphics>
+</dynamic_object>

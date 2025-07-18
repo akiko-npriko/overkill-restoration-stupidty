@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/dcpd_resmod/armor_skins/fbi_light_smg_resmod_classic/fbi_light_smg_resmod_classic" orientation_object="root_point" />
+
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="g_body">
+			<object name="g_body" enabled="true"/>
+			<object name="g_head" enabled="true"/>
+			<object name="g_glass" enabled="true"/>
+
+		</graphic_group>
+	</graphics>
+</dynamic_object>

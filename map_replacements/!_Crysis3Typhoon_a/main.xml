@@ -1,0 +1,243 @@
+<mod name="Crysis 3 Typhoon" author="Krayola, Splish, & rjc9000" min_lib_ver="3.38">
+	<AssetUpdates id="36055" version="1.21" provider="modworkshop"/>
+	<Localization directory="loc" default="english.txt">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	<GlobalValue id="crysis3_typhoonmod" color="Color(0.9, 0.09, 0.08)"/>
+	
+<!--Default Parts-->	
+	<WeaponMod id="wpn_fps_smg_crysis3_typhoon_body" based_on="wpn_fps_smg_p90_body_p90" type="lower_reciever" a_obj="a_body" wpn_pts="wpn_fps_smg_crysis3_typhoon" hidden="true" global_value="crysis3_typhoonmod" ver="2">
+		<stats damage="0" spread="0" spread_moving="0" recoil="0" concealment="0"/>
+		<animations reload="reload" reload_not_empty="reload" />
+	</WeaponMod> 
+	<WeaponMod id="wpn_fps_smg_crysis3_typhoon_mag" based_on="wpn_fps_smg_p90_m_std" type="magazine" a_obj="a_m" wpn_pts="wpn_fps_smg_crysis3_typhoon" hidden="true" global_value="crysis3_typhoonmod" ver="2">
+		<stats damage="0" spread="0" spread_moving="0" recoil="0" concealment="0"/>
+	</WeaponMod> 
+<!--Iron Sights-->		
+	<WeaponMod id="wpn_fps_smg_crysis3_typhoon_frontsight" based_on="wpn_fps_m4_uupg_o_flipup" type="sight" a_obj="a_of" wpn_pts="wpn_fps_smg_crysis3_typhoon" hidden="true"  global_value="crysis3_typhoonmod" ver="2">
+			<stats damage="0" spread="0" spread_moving="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_smg_crysis3_typhoon_rearsight" based_on="wpn_fps_m4_uupg_o_flipup" type="sight"  a_obj="a_or" wpn_pts="wpn_fps_smg_crysis3_typhoon" hidden="true" global_value="crysis3_typhoonmod" ver="2">
+		<adds>
+			<value_node value="wpn_fps_smg_crysis3_typhoon_frontsight"/>
+		</adds>
+		<stance_mod>
+			<wpn_fps_smg_crysis3_typhoon translation="0 0 0"/>
+		</stance_mod>
+	</WeaponMod> 
+<!-- 	<WeaponMod id="wpn_fps_smg_crysis3_typhoon_body_custom" based_on="wpn_fps_smg_p90_body_p90" type="lower_reciever" wpn_pts="wpn_fps_smg_crysis3_typhoon" hidden="false" has_description="true" global_value="crysis3_typhoonmod" ver="2">
+		<stats damage="0" spread="0" spread_moving="0" recoil="0" concealment="0"/>
+	</WeaponMod>  -->
+
+<!--- Weapon -->
+
+	<Weapon unlock_level="0">
+		<weapon id="crysis3_typhoon" based_on="p90" weapon_hold="typhoon" CLIP_AMMO_MAX="700" NR_CLIPS_MAX="2" rays="10" damage_near="2000" damage_far="3000" shell_ejection="effects/payday2/particles/weapons/shells/shell_empty" tactical_reload="0" global_value="crysis3_typhoonmod">
+			<stats damage="45" spread="10" spread_moving="11" recoil="20" concealment="24"/>
+			<timers reload_not_empty="6.9" reload_empty="6.9"/>
+			<fire_mode_data fire_rate="0.02"/>
+				<AMMO_PICKUP>
+					<value_node value="9.00"/>
+					<value_node value="22.00"/>
+			</AMMO_PICKUP>
+			<kick>
+				<standing>
+					<value_node value="0.25"/>
+					<value_node value="0.2"/>
+					<value_node value="0.15"/>
+					<value_node value="0.1"/>
+				</standing>
+				<crouching>
+					<value_node value="0.2"/>
+					<value_node value="0.15"/>
+					<value_node value="0.15"/>
+					<value_node value="0.1"/>
+				</crouching>
+				<steelsight>
+					<value_node value="0.2"/>
+					<value_node value="0.15"/>
+					<value_node value="0.15"/>
+					<value_node value="0.1"/>
+				</steelsight>
+			</kick>		
+			<shake fire_multiplier="0.2" fire_steelsight_multiplier="0.2"/>
+			<use_data align_place="right_hand"/>
+			<animations reload_name_id="typhoon"/>
+		</weapon>
+		<factory id="wpn_fps_smg_crysis3_typhoon" unit="units/mods/weapons/wpn_fps_smg_crysis3_typhoon/wpn_fps_smg_crysis3_typhoon" >
+			<animations reload="reload" fire="recoil" fire_steelsight="recoil" reload_not_empty="reload" magazine_empty="last_recoil"/>
+			<adds/>
+			<override/>
+			<default_blueprint>
+				<value_node value="wpn_fps_smg_crysis3_typhoon_body"/>
+				<value_node value="wpn_fps_smg_crysis3_typhoon_mag"/>
+				<value_node value="wpn_fps_smg_crysis3_typhoon_rearsight"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_smg_crysis3_typhoon_body"/>
+				<value_node value="wpn_fps_smg_crysis3_typhoon_mag"/>
+				<value_node value="wpn_fps_smg_crysis3_typhoon_frontsight"/>
+				<value_node value="wpn_fps_smg_crysis3_typhoon_rearsight"/>
+<!-- 				<value_node value="wpn_fps_smg_crysis3_typhoon_body_custom"/> -->
+				
+				<value_node value="wpn_fps_upg_o_var_cheap_rear"/>
+				<value_node value="wpn_fps_upg_o_var_dd_a1_rear"/>
+				<value_node value="wpn_fps_upg_o_var_kac_rear"/>
+				<value_node value="wpn_fps_upg_o_var_dh_iss_rear"/>
+				<value_node value="wpn_fps_upg_o_var_m4flipup_rear"/>
+				<value_node value="wpn_fps_upg_o_var_mbus_rear" />
+				<value_node value="wpn_fps_upg_o_var_mbuspro_rear"/>
+				<value_node value="wpn_fps_upg_o_var_scalarworks_peak_rear"/>
+				<value_node value="wpn_fps_upg_o_var_scorpionevo_rear"/>
+				<value_node value="wpn_fps_upg_o_var_troy_rear"/>
+				<value_node value="wpn_fps_upg_o_var_troym4_rear"/>
+				
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_i_singlefire"/>
+				<value_node value="wpn_fps_upg_i_autofire"/>
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+				<value_node value="wpn_fps_upg_o_45rds_v2"/>
+				<value_node value="wpn_fps_upg_o_tf90"/>
+				<value_node value="wpn_fps_upg_o_bmg"/>
+				<value_node value="wpn_fps_upg_o_uh"/>
+				<value_node value="wpn_fps_upg_o_poe"/>
+				<value_node value="wpn_fps_upg_o_fc1"/>
+				
+			    <value_node value="wpn_fps_upg_a_custom"/>
+		    	<value_node value="wpn_fps_upg_a_custom_free"/>
+		     	<value_node value="wpn_fps_upg_a_piercing"/>
+		     	<value_node value="wpn_fps_upg_a_dragons_breath"/>
+				
+			</uses_parts>
+		</factory>
+		<stance>
+	<standard>
+		<shoulders rotation="-0 0 -0 -1" translation="0 0 0"/>
+	</standard>
+	<crouched>
+		<shoulders rotation="-0 0 -0 -1" translation="-2 -3.281 -2.848"/>
+	</crouched>
+	<steelsight>
+		<shoulders rotation="-0 0 -0 -1" translation="-12.1 -4.281 0.75"/>
+	</steelsight>
+		</stance>
+	</Weapon>
+	
+	<Sounds directory="assets\sounds">
+		<sound id="typhoon_fire"					path="typhoon_fire_loop.ogg" prefix="regular" loop="true"/>
+		<sound id="typhoon_fire_single"				path="typhoon_fire.ogg" prefix="regular"/>
+		<sound id="typhoon_wind_up"					path="typhoon_wind_up.ogg" prefix="regular"/>
+		<sound id="typhoon_wind_down"				path="typhoon_wind_down.ogg" prefix="regular"/>
+		<sound id="typhoon_foley_1"					path="typhoon_foley_1.ogg" prefix="first"/>
+		<sound id="typhoon_foley_2"					path="typhoon_foley_2.ogg" prefix="first"/>
+		<sound id="typhoon_foley_3"					path="typhoon_foley_3.ogg" prefix="first"/>
+		<sound id="typhoon_foley_4"					path="typhoon_foley_4.ogg" prefix="first"/>
+		<sound id="typhoon_foley_5"					path="typhoon_foley_5.ogg" prefix="first"/>
+		<sound id="typhoon_foley_6"					path="typhoon_foley_6.ogg" prefix="first"/>
+		<sound id="typhoon_foley_7"					path="typhoon_foley_7.ogg" prefix="first"/>
+		<sound id="typhoon_handle_hit_1"			path="typhoon_handle_hit_1.ogg" prefix="first"/>
+		<sound id="typhoon_handle_hit_2"			path="typhoon_handle_hit_2.ogg" prefix="first"/>
+		<sound id="typhoon_latch_release"			path="typhoon_latch_release.ogg" prefix="first"/>
+		<sound id="typhoon_lift_close"				path="typhoon_lift_close.ogg" prefix="first"/>
+		<sound id="typhoon_lift_close_foley"		path="typhoon_lift_close_foley.ogg" prefix="first"/>
+		<sound id="typhoon_lift_open"				path="typhoon_lift_open.ogg" prefix="first"/>
+		<sound id="typhoon_mag_contact"				path="typhoon_mag_contact.ogg" prefix="first"/>
+		<sound id="typhoon_mag_contact_2"			path="typhoon_mag_contact_2.ogg" prefix="first"/>
+		<sound id="typhoon_mag_grab_1"				path="typhoon_mag_grab_1.ogg" prefix="first"/>
+		<sound id="typhoon_mag_grab_2"				path="typhoon_mag_grab_2.ogg" prefix="first"/>
+		<sound id="typhoon_mag_in"					path="typhoon_mag_in.ogg" prefix="first"/>
+		<sound id="typhoon_mag_in_2"				path="typhoon_mag_in_2.ogg" prefix="first"/>
+		<sound id="typhoon_mag_lock_engage"			path="typhoon_mag_lock_engage.ogg" prefix="first"/>
+		<sound id="typhoon_mag_lock_release"		path="typhoon_mag_lock_release.ogg" prefix="first"/>
+		<sound id="typhoon_mag_slide_out_1"			path="typhoon_mag_slide_out_1.ogg" prefix="first"/>
+		<sound id="typhoon_mag_slide_out_2"			path="typhoon_mag_slide_out_2.ogg" prefix="first"/>
+		<sound id="typhoon_mag_slide_out_3"			path="typhoon_mag_slide_out_3.ogg" prefix="first"/>
+		<sound id="typhoon_reload_finish"			path="typhoon_reload_finish.ogg" prefix="first"/>
+		<sound id="typhoon_reload_start"			path="typhoon_reload_start.ogg" prefix="first"/>
+		<sound id="typhoon_signal_lift_down"		path="typhoon_signal_lift_down.ogg" prefix="first"/>
+		<sound id="typhoon_signal_lift_up"			path="typhoon_signal_lift_up.ogg" prefix="first"/>
+		<sound id="typhoon_slider_pull"				path="typhoon_slider_pull.ogg" prefix="first"/>
+		<sound id="typhoon_slider_release"			path="typhoon_slider_release.ogg" prefix="first"/>
+		<sound id="typhoon_top_close"				path="typhoon_top_close.ogg" prefix="first"/>
+	</Sounds>
+		
+	<AddFiles directory="assets">
+<!--Unit Path -->
+		<unit_npc path="units/mods/weapons/wpn_fps_smg_crysis3_typhoon/wpn_fps_smg_crysis3_typhoon"/>
+<!--GUI -->
+		<texture		path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/crysis3_typhoon"/>	
+<!--     	<texture 		path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_crysis3_typhoon_body_custom"/>  -->
+<!--Textures -->
+		<texture 		path="units/mods/weapons/wpn_fps_smg_crysis3_typhoon_pts/textures/typhoon_decals_df"/>
+		<df_nm_cc 		path="units/mods/weapons/wpn_fps_smg_crysis3_typhoon_pts/textures/typhoon_magazine"/>
+		<texture 		path="units/mods/weapons/wpn_fps_smg_crysis3_typhoon_pts/textures/typhoon_magazine_il"/>
+		<df_nm_cc 		path="units/mods/weapons/wpn_fps_smg_crysis3_typhoon_pts/textures/typhoon_material_1"/>
+<!-- 		<texture 		path="units/mods/weapons/wpn_fps_smg_crysis3_typhoon_pts/textures/typhoon_material_1_custom_df"/>
+		<texture		path="units/mods/weapons/wpn_fps_smg_crysis3_typhoon_pts/textures/typhoon_material_1_custom_df_cc"/> -->
+		<texture 		path="units/mods/weapons/wpn_fps_smg_crysis3_typhoon_pts/textures/typhoon_material_1_il"/>
+		<df_nm_cc 		path="units/mods/weapons/wpn_fps_smg_crysis3_typhoon_pts/textures/typhoon_material_2"/>
+<!-- 		<texture 		path="units/mods/weapons/wpn_fps_smg_crysis3_typhoon_pts/textures/typhoon_material_2_custom_df"/>
+		<texture 		path="units/mods/weapons/wpn_fps_smg_crysis3_typhoon_pts/textures/typhoon_material_2_custom_df_cc"/> -->
+		<df_nm_cc		path="units/mods/weapons/wpn_fps_smg_crysis3_typhoon_pts/textures/typhoon_material_3"/>
+<!-- 		<texture		path="units/mods/weapons/wpn_fps_smg_crysis3_typhoon_pts/textures/typhoon_material_3_custom_df"/>
+		<texture		path="units/mods/weapons/wpn_fps_smg_crysis3_typhoon_pts/textures/typhoon_material_3_custom_df_cc"/> -->
+		
+		<texture		path="units/mods/weapons/wpn_fps_smg_crysis3_typhoon_pts/textures/typhoon_material_1_gsm"/>
+		<texture		path="units/mods/weapons/wpn_fps_smg_crysis3_typhoon_pts/textures/typhoon_material_2_gsm"/>
+		<texture		path="units/mods/weapons/wpn_fps_smg_crysis3_typhoon_pts/textures/typhoon_material_3_gsm"/>
+		<texture		path="units/mods/weapons/wpn_fps_smg_crysis3_typhoon_pts/textures/typhoon_magazine_gsm"/>
+
+<!--Part Files -->
+		<unit_mat_cc 	path="units/mods/weapons/wpn_fps_smg_crysis3_typhoon_pts/wpn_fps_smg_crysis3_typhoon_body"/>
+		<unit_mat_cc 	path="units/mods/weapons/wpn_fps_smg_crysis3_typhoon_pts/wpn_fps_smg_crysis3_typhoon_mag"/>
+		<unit_mat_cc 	path="units/mods/weapons/wpn_fps_smg_crysis3_typhoon_pts/wpn_fps_smg_crysis3_typhoon_frontsight"/>
+		<unit_mat_cc 	path="units/mods/weapons/wpn_fps_smg_crysis3_typhoon_pts/wpn_fps_smg_crysis3_typhoon_rearsight"/>
+<!-- 		<unit_mat_cc 	path="units/mods/weapons/wpn_fps_smg_crysis3_typhoon_pts/wpn_fps_smg_crysis3_typhoon_body_custom"/> -->
+		
+<!-- Animations -->
+		
+		<animation path="anims/fps/typhoon/typhoon_reload" load="true"/>
+		<animation path="anims/fps/typhoon/typhoon_idle" load="true"/>
+		<animation path="anims/fps/typhoon/typhoon_recoil" load="true"/>
+		<animation path="anims/fps/typhoon/typhoon_recoil_enter" load="true"/>
+		<animation path="anims/fps/typhoon/typhoon_recoil_loop" load="true"/>
+		<animation path="anims/fps/typhoon/typhoon_recoil_exit" load="true"/>
+		<animation path="anims/fps/typhoon/typhoon_equip" load="true"/>
+		<animation path="anims/fps/typhoon/typhoon_unequip" load="true"/>
+		<animation path="anims/fps/typhoon/typhoon_melee" load="true"/>
+		<animation path="anims/fps/typhoon/typhoon_use" load="true"/>
+		<animation path="anims/fps/typhoon/typhoon_sprint_enter" load="true"/>
+		<animation path="anims/fps/typhoon/typhoon_sprint" load="true"/>
+		<animation path="anims/fps/typhoon/typhoon_sprint_exit" load="true"/>
+		<animation path="anims/fps/typhoon/typhoon_com_var1" load="true"/>
+		<animation path="anims/fps/typhoon/typhoon_com_var5" load="true"/>
+		<animation path="anims/fps/typhoon/typhoon_com_var6" load="true"/>
+		<animation path="anims/fps/typhoon/typhoon_com_var7" load="true"/>
+		<animation path="anims/fps/typhoon/typhoon_get_up" load="true"/>
+		<animation path="anims/fps/typhoon/typhoon_gogo" load="true"/>
+		<animation path="anims/fps/typhoon/typhoon_inspect" load="true"/>
+		
+	</AddFiles>
+	<Hooks directory="hooks">
+	<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+<!--	<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/> -->
+	</Hooks> 
+</mod>

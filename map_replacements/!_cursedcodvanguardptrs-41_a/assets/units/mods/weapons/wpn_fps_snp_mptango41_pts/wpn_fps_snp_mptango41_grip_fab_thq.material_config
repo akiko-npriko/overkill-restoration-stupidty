@@ -1,0 +1,16 @@
+<materials version="3" group="weapon_group">
+
+	<material name="mtr_mptango41_grip" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 		file="units/mods/weapons/wpn_fps_snp_mptango41_pts/textures/mptango41_grip_df" mip="1"/>
+        <bump_normal_texture	file="units/mods/weapons/wpn_fps_snp_mptango41_pts/textures/mptango41_grip_nm"  mip="1"/>
+        <material_texture       file="units/mods/weapons/wpn_fps_snp_mptango41_pts/textures/mptango41_grip_gsma" mip="1"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_snp_mptango41_pts/textures/weapon_metal_cubemap"/>
+    </material>	
+	<material name="mtr_grip_tape" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture 		file="units/mods/weapons/wpn_fps_snp_mptango41_pts/textures/grip_fabric_df" mip="1"/>
+        <bump_normal_texture 	file="units/mods/weapons/wpn_fps_snp_mptango41_pts/textures/grip_fabric_nm" mip="1"/>
+	</material>
+
+	
+	
+</materials>

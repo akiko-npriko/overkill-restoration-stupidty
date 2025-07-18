@@ -1,0 +1,12 @@
+<unit type="wpn" slot="1" >
+    <object file="units/mods/weapons/wpn_fps_pis_perun/wpn_fps_pis_perun" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_rbull"/>
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="base" class="NewRaycastWeaponBase" >
+			<var name="name_id" value="perun" />
+		</extension>
+	</extensions>
+</unit>

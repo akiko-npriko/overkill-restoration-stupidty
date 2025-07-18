@@ -1,0 +1,14 @@
+<materials version="3" group="ene_fbi_3">
+	<material name="mtr_police_body" version="2" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<bump_normal_texture file="units/payday2/characters/shared_textures/police_nm"/>
+		<diffuse_texture file="units/dcpd_resmod/armor_skins/shared_textures/fbi_df"/>
+	</material>
+	<material name="mtr_police_head" version="2" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<bump_normal_texture file="units/dcpd_resmod/armor_skins/shared_textures/heads_cop3_nm"/>
+		<diffuse_texture file="units/dcpd_resmod/armor_skins/shared_textures/heads_cop3_df"/>
+	</material>
+    <material name="shadow_caster" render_template="shadow_caster_only:SKINNED_1WEIGHT" version="2"/>
+</materials>
+
+ 
+ 

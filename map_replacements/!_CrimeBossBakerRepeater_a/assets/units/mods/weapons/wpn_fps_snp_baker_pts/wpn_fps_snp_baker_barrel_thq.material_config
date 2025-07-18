@@ -1,0 +1,10 @@
+<materials version="3" group="wellnewadventuresawaitbuddy">
+	<material name="main" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_snp_baker_pts/textures/main_df" mip="1" />
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_snp_baker_pts/textures/main_nm" mip="1" />
+	</material>
+	<material name="emission" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE" version="2">
+        <variable value="reddot" type="scalar" name="intensity"/>
+		<diffuse_texture file="units/mods/weapons/wpn_fps_snp_baker_pts/textures/wpn_effect_orange_il"/>
+	</material>
+</materials>

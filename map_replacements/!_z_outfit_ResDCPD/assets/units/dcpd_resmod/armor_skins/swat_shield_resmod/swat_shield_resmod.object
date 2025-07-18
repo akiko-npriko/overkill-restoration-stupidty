@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/dcpd_resmod/armor_skins/swat_shield_resmod/swat_shield_resmod" orientation_object="root_point" />
+
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="co_culling">
+			<object name="g_body" enabled="true"/>
+			<object name="g_shield" enabled="true"/>
+			<object name="g_balaclava" enabled="true"/>
+
+		<!--Faces; Only one should be used at a time-->
+			<object name="g_face_a" enabled="false"/>
+			<object name="g_face_b" enabled="false"/>
+			<object name="g_face_c" enabled="true"/>
+			<object name="g_face_d" enabled="false"/>
+			<object name="g_face_e" enabled="false"/>
+
+		<!--Helmets; Only one should be used at a time and they should each be used with their corresponding visor-->
+			<object name="g_helmet_lod1" enabled="true"/> <!--Use alongside g_helmet_lod1-->
+			<object name="g_helmet_lod3" enabled="true"/>
+
+			<object name="g_helmet_lod5" enabled="false"/> <!--Use alongside g_helmet_lod7-->
+			<object name="g_helmet_lod7" enabled="false"/>
+
+		<!--Crotchpads; Only one should be used at a time-->
+			<object name="g_crotchpad" enabled="false"/> <!--Without pouch-->
+			<object name="g_crotchpad_sg" enabled="true"/> <!--With pouch-->
+
+		<!--Gun Holsters-->
+			<object name="g_holster_l" enabled="false"/> <!--Left thigh-->
+			<object name="g_holster_r" enabled="true"/> <!--Right thigh-->
+		</graphic_group>
+	</graphics>
+</dynamic_object>

@@ -1,0 +1,7 @@
+<materials version="3" group="wellnewadventuresawaitbuddy">
+	<material name="main" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_snp_baker_pts/textures/main_df" />
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_snp_baker_pts/textures/main_nm" />
+                <material_texture file="units/mods/weapons/wpn_fps_snp_baker_pts/textures/main_gsma" />
+	</material>
+</materials>

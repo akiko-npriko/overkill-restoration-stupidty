@@ -1,0 +1,17 @@
+<materials version="3" group="weapon_group">
+
+	<material name="mtr_mptango41_mag_f" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 		file="units/mods/weapons/wpn_fps_snp_mptango41_pts/textures/mptango41_magazine_fast_df" mip="1" />
+        <bump_normal_texture 	file="units/mods/weapons/wpn_fps_snp_mptango41_pts/textures/mptango41_magazine_fast_nm" mip="1"/>
+        <material_texture       file="units/mods/weapons/wpn_fps_snp_mptango41_pts/textures/mptango41_magazine_fast_gsma" mip="1"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_snp_mptango41_pts/textures/weapon_metal_cubemap"/>
+    </material>	
+	<material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" name="mtr_mptango41_bullet" version="2">
+        <diffuse_texture 		file="units/mods/weapons/wpn_fps_snp_mptango41_pts/textures/mptango41_bullet_df" mip="1" />
+        <bump_normal_texture 	file="units/mods/weapons/wpn_fps_snp_mptango41_pts/textures/mptango41_bullet_nm" mip="1" />
+        <material_texture       file="units/mods/weapons/wpn_fps_snp_mptango41_pts/textures/mptango41_bullet_gsma" mip="1"/>
+        <reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap"/>
+    </material>    
+	
+	
+</materials>

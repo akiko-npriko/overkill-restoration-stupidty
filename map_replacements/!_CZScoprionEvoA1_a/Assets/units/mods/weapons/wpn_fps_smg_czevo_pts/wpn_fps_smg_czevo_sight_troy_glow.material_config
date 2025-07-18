@@ -1,0 +1,8 @@
+<materials version="3" group="weapon_shepheard">
+	<material name="mat_grip_s" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_smg_czevo_pts/white" /> <self_illumination_texture file="units/mods/weapons/wpn_fps_smg_czevo_pts/white"/>
+      <variable type="scalar" name="il_bloom" value="6.0070002853172"/>
+        <variable type="scalar" name="il_multiplier" value="reddot"/>
+   	
+	</material>
+</materials>

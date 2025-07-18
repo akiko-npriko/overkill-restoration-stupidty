@@ -1,0 +1,7 @@
+<materials version="3" group="weapon_group">
+	<material name="mat_fisher_suppressor" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_snp_m200_pts/textures/riflesuppressor_df"/>
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_snp_m200_pts/textures/riflesuppressor_nm"/>
+		<material_texture file="units/mods/weapons/wpn_fps_snp_m200_pts/textures/riflesuppressor_gsma"/>
+	</material>
+</materials>

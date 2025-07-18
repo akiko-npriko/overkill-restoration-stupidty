@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/dcpd_resmod/armor_skins/fbi_heavy_rifle_resmod/fbi_heavy_rifle_resmod_fps" orientation_object="root_point" />
+	
+
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="co_culling">
+			<object name="g_body" enabled="true"/>
+			
+		</graphic_group>
+	</graphics>
+
+	<effects>
+		<effect_spawner name="es_flashlight" enabled="false" object="a_night_helmetlight" effect="effects/particles/weapons/flashlight/flashlight" />
+	</effects>
+
+</dynamic_object>

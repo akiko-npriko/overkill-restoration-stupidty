@@ -1,0 +1,14 @@
+<unit type="wpn" slot="1">
+	<object file="units/mods/weapons/wpn_fps_smg_czevo/wpn_fps_smg_czevo" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_shepheard"/>
+		<depends_on bnk="soundbanks/weapon_mp7"/>
+		<depends_on bnk="soundbanks/weapon_com5"/>
+</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="base" class="NewRaycastWeaponBase" >
+			<var name="name_id" value="czevo" />
+		</extension>
+	</extensions>
+</unit>

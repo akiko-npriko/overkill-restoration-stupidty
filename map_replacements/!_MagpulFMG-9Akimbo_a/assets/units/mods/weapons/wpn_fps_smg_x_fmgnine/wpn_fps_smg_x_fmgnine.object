@@ -1,0 +1,21 @@
+<dynamic_object>
+	<diesel orientation_object="rp_wpn_fps_smg_x_fmg9"/>
+	<animations>
+		<animation_group name="equip">
+			<object name="anim_hinge_equip" enabled="true"/>
+			<object name="anim_mag_equip" enabled="true"/>
+			<object name="anim_s_cheek_equip" enabled="true"/>
+			<object name="anim_stock_equip" enabled="true"/>
+			<object name="anim_vertgrip_equip" enabled="true"/>
+		</animation_group>
+		<animation_group name="recoil">
+			<object name="anim_bolt_recoil" enabled="true"/>
+		</animation_group>
+		<animation_group name="reload_left">
+			<object name="anim_bolt_reload_left" enabled="true"/>
+		</animation_group>
+		<animation_group name="reload_right">
+			<object name="anim_bolt_reload_right" enabled="true"/>
+		</animation_group>
+	</animations>
+</dynamic_object>

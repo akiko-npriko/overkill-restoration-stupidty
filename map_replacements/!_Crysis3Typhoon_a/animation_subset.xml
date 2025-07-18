@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+		<target mode="attach">
+			<anim name="typhoon_reload" 								file="anims/fps/typhoon/typhoon_reload" blend_set="all"/>
+			<anim name="typhoon_reload_not_empty" 						file="anims/fps/typhoon/typhoon_reload" blend_set="all"/>
+			<anim name="typhoon_idle" 									file="anims/fps/typhoon/typhoon_idle" blend_set="all"/>
+			<anim name="typhoon_recoil" 								file="anims/fps/typhoon/typhoon_recoil" blend_set="all"/>
+			<anim name="typhoon_recoil_enter" 							file="anims/fps/typhoon/typhoon_recoil_enter" blend_set="all"/>
+			<anim name="typhoon_recoil_loop" 							file="anims/fps/typhoon/typhoon_recoil_loop" blend_set="all"/>
+			<anim name="typhoon_recoil_exit" 							file="anims/fps/typhoon/typhoon_recoil" blend_set="all"/>
+			<anim name="typhoon_recoil_steelsight" 						file="anims/fps/typhoon/typhoon_recoil" blend_set="all"/>
+			<anim name="typhoon_equip" 									file="anims/fps/typhoon/typhoon_equip" blend_set="all"/>
+			<anim name="typhoon_unequip" 								file="anims/fps/typhoon/typhoon_unequip" blend_set="all"/>
+			<anim name="typhoon_melee" 									file="anims/fps/typhoon/typhoon_melee" blend_set="all"/>
+			<anim name="typhoon_melee_miss" 							file="anims/fps/typhoon/typhoon_melee" blend_set="all"/>
+			<anim name="typhoon_use" 									file="anims/fps/typhoon/typhoon_use" blend_set="all"/>
+			<anim name="typhoon_sprint_enter" 							file="anims/fps/typhoon/typhoon_sprint_enter" blend_set="all"/>
+			<anim name="typhoon_sprint" 								file="anims/fps/typhoon/typhoon_sprint" blend_set="all"/>
+			<anim name="typhoon_sprint_exit" 							file="anims/fps/typhoon/typhoon_sprint_exit" blend_set="all"/>
+			<anim name="typhoon_com_down_var1" 							file="anims/fps/typhoon/typhoon_com_var1" blend_set="all"/>
+			<anim name="typhoon_com_stop" 								file="anims/fps/typhoon/typhoon_com_var5" blend_set="all"/>
+			<anim name="typhoon_com_come" 								file="anims/fps/typhoon/typhoon_com_var6" blend_set="all"/>
+			<anim name="typhoon_com_point" 								file="anims/fps/typhoon/typhoon_com_var7" blend_set="all"/>
+			<anim name="typhoon_get_up" 								file="anims/fps/typhoon/typhoon_get_up" blend_set="all"/>
+			<anim name="typhoon_gogo" 									file="anims/fps/typhoon/typhoon_gogo" blend_set="all"/>
+			<anim name="typhoon_tased" 									file="anims/fps/p90/p90_tased" blend_set="all"/>
+			<anim name="typhoon_tased_boost" 							file="anims/fps/p90/p90_tased_boost" blend_set="all"/>
+			<anim name="typhoon_tased_exit" 							file="anims/fps/p90/p90_tased_exit" blend_set="all"/>
+			<anim name="typhoon_inspect" 								file="anims/fps/typhoon/typhoon_inspect" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

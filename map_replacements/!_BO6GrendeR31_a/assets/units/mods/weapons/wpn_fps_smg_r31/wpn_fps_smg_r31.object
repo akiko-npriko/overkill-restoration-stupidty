@@ -1,0 +1,22 @@
+<dynamic_object>
+	<diesel orientation_object="rp_r31" />
+
+		<animations>
+		
+		<animation_group name="reload">
+			<object name="a_reload" enabled="true" />
+			<object name="a_reload_ext01" enabled="true" />
+			<object name="a_reload_ext02" enabled="true" />
+			<object name="a_reload_fast02" enabled="true" />
+		</animation_group>
+		
+		<animation_group name="reload_not_empty">
+			<object name="a_reload_not_empty" enabled="true" />
+			<object name="a_reload_not_empty_ext01" enabled="true" />
+			<object name="a_reload_not_empty_ext02" enabled="true" />
+			<object name="a_reload_not_empty_fast02" enabled="true" />
+		</animation_group>
+		
+	</animations>
+
+</dynamic_object>

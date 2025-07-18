@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/dcpd_resmod/armor_skins/gensec_heavy_shotgun_resmod/gensec_heavy_shotgun_resmod" orientation_object="root_point" />
+
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="co_culling">
+			<object name="g_body" enabled="true"/>
+			<object name="g_swat_sg" enabled="true"/>
+			<object name="g_helmet_lod1" enabled="true"/>
+			<object name="g_helmet_lod7" enabled="true"/>
+			<object name="g_helmet_lod9" enabled="true"/>
+
+		<!--Balaclavas; Only one should be used at a time-->
+			<object name="g_balaclava_a" enabled="false"/> <!--Covered nose-->
+			<object name="g_balaclava_b" enabled="true"/> <!--Exposed nose-->
+
+		<!--Faces; Only one should be used at a time-->
+			<object name="g_face_a" enabled="false"/>
+			<object name="g_face_b" enabled="false"/>
+			<object name="g_face_c" enabled="true"/>
+			<object name="g_face_d" enabled="false"/>
+			<object name="g_face_e" enabled="false"/>
+
+		<!--Helmet Flashlight-->
+			<object name="g_helmet_lod15" enabled="false"/>
+
+		<!--Night-Vision Goggles; Only one should be used at a time-->
+			<object name="g_helmet_lod11" enabled="true"/> <!--NVG lifted up-->
+			<object name="g_helmet_lod13" enabled="false"/> <!--NVG put down-->
+
+		<!--Gun Holsters-->
+			<object name="g_holster_l" enabled="true"/> <!--Left thigh-->
+			<object name="g_holster_r" enabled="false"/> <!--Right thigh-->
+		</graphic_group>
+	</graphics>
+
+	<effects>
+		<effect_spawner name="es_flashlight" enabled="false" object="a_night_helmetlight" effect="effects/particles/weapons/flashlight/flashlight" />
+	</effects>
+
+</dynamic_object>

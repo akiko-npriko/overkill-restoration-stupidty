@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+			
+		<target mode="attach">
+			<anim name="cp2077guts_idle" 						file="anims/fps/r870/r870_idle" blend_set="all"/>
+			
+			<anim name="cp2077guts_reload" 						file="anims/fps/cp2077guts/cp2077guts_reload_enter" blend_set="all"/>
+			<anim name="cp2077guts_reload_not_empty" 			file="anims/fps/cp2077guts/cp2077guts_reload_enter" blend_set="all"/>
+			<anim name="cp2077guts_reload_enter" 				file="anims/fps/cp2077guts/cp2077guts_reload_enter" blend_set="all"/>
+			<anim name="cp2077guts_reload_loop" 				file="anims/fps/cp2077guts/cp2077guts_reload" blend_set="all"/>
+			<anim name="cp2077guts_reload_exit" 				file="anims/fps/cp2077guts/cp2077guts_reload_exit" blend_set="all"/>
+			<anim name="cp2077guts_reload_not_empty_exit"		file="anims/fps/cp2077guts/cp2077guts_reload_not_empty_exit" blend_set="all"/>
+			
+			<anim name="cp2077guts_recoil" 						file="anims/fps/cp2077guts/cp2077guts_recoil" blend_set="all"/>
+			<anim name="cp2077guts_recoil_steelsight" 			file="anims/fps/cp2077guts/cp2077guts_recoil_steelsight" blend_set="all"/>
+			
+			<anim name="cp2077guts_equip" 						file="anims/fps/r870/r870_equip" blend_set="all"/>
+			<anim name="cp2077guts_unequip" 					file="anims/fps/r870/r870_unequip" blend_set="all"/>
+			<anim name="cp2077guts_melee" 						file="anims/fps/r870/r870_melee" blend_set="all"/>
+			<anim name="cp2077guts_melee_miss" 					file="anims/fps/r870/r870_melee_miss" blend_set="all"/>
+			<anim name="cp2077guts_use" 						file="anims/fps/r870/r870_use" blend_set="all"/>
+			<anim name="cp2077guts_sprint" 						file="anims/fps/r870/r870_sprint" blend_set="all"/>
+			<anim name="cp2077guts_sprint_exit" 				file="anims/fps/r870/r870_sprint_exit" blend_set="all"/>
+			<anim name="cp2077guts_sprint_enter" 				file="anims/fps/r870/r870_sprint_enter" blend_set="all"/>
+			<anim name="cp2077guts_com_down_var1" 				file="anims/fps/r870/r870_com_var1" blend_set="all"/>
+			<anim name="cp2077guts_com_stop" 					file="anims/fps/r870/r870_com_var5" blend_set="all"/>
+			<anim name="cp2077guts_com_come" 					file="anims/fps/r870/r870_com_var6" blend_set="all"/>
+			<anim name="cp2077guts_com_point" 					file="anims/fps/r870/r870_com_var7" blend_set="all"/>
+			<anim name="cp2077guts_get_up" 						file="anims/fps/r870/r870_get_up" blend_set="all"/>
+			<anim name="cp2077guts_gogo" 						file="anims/fps/r870/r870_gogo" blend_set="all"/>
+			<anim name="cp2077guts_tased" 						file="anims/fps/r870/r870_tased" blend_set="all"/>
+			<anim name="cp2077guts_tased_boost" 				file="anims/fps/r870/r870_tased_boost" blend_set="all"/>
+			<anim name="cp2077guts_tased_exit" 					file="anims/fps/r870/r870_tased_exit" blend_set="all"/>
+			<anim name="cp2077guts_inspect"						file="anims/fps/r870/r870_inspect" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

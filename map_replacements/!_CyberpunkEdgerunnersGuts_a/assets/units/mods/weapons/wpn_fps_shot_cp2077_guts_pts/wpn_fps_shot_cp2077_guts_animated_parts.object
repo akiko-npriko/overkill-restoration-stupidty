@@ -1,0 +1,17 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_shot_cp2077_guts_pts/wpn_fps_shot_cp2077_guts_animated_parts" orientation_object="rp_receiver"/>
+		<animations>
+			<animation_group name="recoil">
+				<object name="anim_slug_recoil" enabled="true" />
+			</animation_group>
+			<animation_group name="reload" enabled="false" >
+				<object name="anim_slug_reload" enabled="true"/>
+				<object name="anim_shell_latch" enabled="true"/>
+			</animation_group>
+		</animations>
+		<graphics>
+			<object name="g_shell_latch" enabled="true"  />
+			<object name="g_slug" enabled="true" />
+			<object name="g_bullet_1" enabled="true" />
+		</graphics>
+</dynamic_object>

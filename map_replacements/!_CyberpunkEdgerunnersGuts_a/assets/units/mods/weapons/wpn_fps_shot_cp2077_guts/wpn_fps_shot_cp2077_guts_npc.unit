@@ -1,0 +1,12 @@
+<unit type="wpn" slot="1" >
+	<object file="units/mods/weapons/wpn_fps_shot_cp2077_guts/wpn_fps_shot_cp2077_guts" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_m590"/>
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="base" class="NewNPCRaycastWeaponBase" >
+			<var name="name_id" value="cp2077_guts_crew" />
+		</extension>
+	</extensions>
+</unit>

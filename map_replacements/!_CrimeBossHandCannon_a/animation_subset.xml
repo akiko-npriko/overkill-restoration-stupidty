@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+		
+		<!--
+			Replace all instances of 'perun' below with the ID of your animation.
+			Note that recoil_steelsight does not have a unique animation in this perun; you can edit the filepath in the 'file' section with one if you wish.
+			If your gun cannot be fired in full auto, you can delete the recoil_enter, recoil_loop, and recoil_exit lines.
+		-->
+		
+		<target mode="attach">
+			<anim name="perun_reload" 						file="anims/fps/perun/perun_reload" blend_set="all"/>
+			<anim name="perun_reload_not_empty" 			file="anims/fps/perun/perun_reload_not_empty" blend_set="all"/>
+			<anim name="perun_idle" 						file="anims/fps/raging_bull/raging_bull_idle" blend_set="all"/>
+			<anim name="perun_equip" 						file="anims/fps/perun/perun_equip" blend_set="all"/>
+			<anim name="perun_unequip" 						file="anims/fps/raging_bull/raging_bull_unequip" blend_set="all"/>
+			<anim name="perun_melee" 						file="anims/fps/raging_bull/raging_bull_melee" blend_set="all"/>
+			<anim name="perun_melee_miss" 					file="anims/fps/raging_bull/raging_bull_melee_miss" blend_set="all"/>
+			<anim name="perun_use" 							file="anims/fps/raging_bull/raging_bull_use" blend_set="all"/>
+			<anim name="perun_sprint_enter" 				file="anims/fps/raging_bull/raging_bull_sprint_enter" blend_set="all"/>
+			<anim name="perun_sprint" 						file="anims/fps/raging_bull/raging_bull_sprint" blend_set="all"/>
+			<anim name="perun_sprint_exit" 					file="anims/fps/raging_bull/raging_bull_sprint_exit" blend_set="all"/>
+			<anim name="perun_com_down_var1" 				file="anims/fps/raging_bull/raging_bull_com_var1" blend_set="all"/>
+			<anim name="perun_com_stop" 					file="anims/fps/raging_bull/raging_bull_com_var5" blend_set="all"/>
+			<anim name="perun_com_come" 					file="anims/fps/raging_bull/raging_bull_com_var6" blend_set="all"/>
+			<anim name="perun_com_point" 					file="anims/fps/raging_bull/raging_bull_com_var7" blend_set="all"/>
+			<anim name="perun_get_up" 						file="anims/fps/raging_bull/raging_bull_get_up" blend_set="all"/>
+			<anim name="perun_gogo" 						file="anims/fps/raging_bull/raging_bull_gogo" blend_set="all"/>
+			<anim name="perun_tased" 						file="anims/fps/raging_bull/raging_bull_tased" blend_set="all"/>
+			<anim name="perun_tased_boost" 					file="anims/fps/raging_bull/raging_bull_tased_boost" blend_set="all"/>
+			<anim name="perun_tased_exit" 					file="anims/fps/raging_bull/raging_bull_tased_exit" blend_set="all"/>
+			<anim name="perun_inspect" 						file="anims/fps/raging_bull/raging_bull_inspect" blend_set="all"/>
+			<anim name="perun_recoil" 				file="anims/fps/raging_bull/raging_bull_recoil" blend_set="all"/>
+			<anim name="perun_recoil_steelsight" file="anims/fps/raging_bull/raging_bull_recoil" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

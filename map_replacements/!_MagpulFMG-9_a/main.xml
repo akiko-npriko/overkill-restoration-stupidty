@@ -1,0 +1,161 @@
+<mod name="Magpul FMG-9" color="Color(0.01,0.62,0.98)">
+	<Localization directory="Loc" default="english.txt"/>
+	<AssetUpdates id="17369" version="1.27" provider="modworkshop"/>
+	<GlobalValue id="fmgninemod" color="Color(0.7, 0.2, 0.1)"/>
+	<WeaponMod id="wpn_fps_smg_fmgnine_barrel" based_on="wpn_fps_smg_sr2_b_standard" wpn_pts="wpn_fps_smg_fmgnine" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_smg_fmgnine_body" based_on="wpn_fps_m4_lower_reciever" wpn_pts="wpn_fps_smg_fmgnine" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_smg_fmgnine_bolt" based_on="wpn_fps_amcar_bolt_standard" wpn_pts="wpn_fps_smg_fmgnine" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_smg_fmgnine_carry_handle" based_on="wpn_fps_ass_vhs_o_standard" wpn_pts="wpn_fps_smg_fmgnine" hidden="true" ver="2">
+		<stance_mod>
+			<wpn_fps_smg_fmgnine translation="-0.022 -5 -4.2"/>
+		</stance_mod>
+		<override>
+			<wpn_fps_upg_fmgnine_m3x a_obj="a_fl_m3x" adds="false"/>
+		</override>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_fmgnine_handle" based_on="wpn_fps_sho_aa12_dh" wpn_pts="wpn_fps_smg_fmgnine" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_smg_fmgnine_mag" based_on="wpn_fps_smg_sr2_m_mag" wpn_pts="wpn_fps_smg_fmgnine" hidden="true" ver="2">
+		<stats reload="1"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_fmgnine_stock" based_on="wpn_fps_smg_sr2_s_folded" wpn_pts="wpn_fps_smg_fmgnine" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_smg_fmgnine_stockcheek" based_on="wpn_fps_pis_chinchilla_g_standard" wpn_pts="wpn_fps_smg_fmgnine" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_smg_fmgnine_stockhinge" based_on="wpn_fps_ass_ching_extra1_swiwel" wpn_pts="wpn_fps_smg_fmgnine" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_smg_fmgnine_triggergroup" based_on="wpn_fps_shot_m37_m_standard" type="lower_body" wpn_pts="wpn_fps_smg_fmgnine" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_smg_fmgnine_vertgrip" based_on="wpn_fps_smg_sr2_vg_standard" wpn_pts="wpn_fps_smg_fmgnine" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_upg_fmgnine_m3x" based_on="wpn_fps_upg_fl_ass_smg_sho_surefire" desc_id="bm_wp_upg_fl_pis_m3x_desc" wpn_pts="wpn_fps_smg_fmgnine" ver="2">
+		<stats recoil="1" concealment="0"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_fmgnine_supp_osprey" based_on="wpn_fps_upg_ns_ass_smg_large" wpn_pts="wpn_fps_smg_fmgnine" ver="2"/>
+	<Weapon unlock_level="33">
+		<weapon id="fmgnine" based_on="sr2" ammo_pickup="3" global_value="fmgninemod">
+			<stats damage="58" spread="10" spread_moving="10" recoil="15" concealment="29"/>
+			<fire_mode_data fire_rate="0.06663"/>
+			<kick>
+				<standing>
+					<value_node value="0.6"/>
+					<value_node value="0.2"/>
+					<value_node value="-0.8"/>
+					<value_node value="0.8"/>
+				</standing>
+				<crouching>
+					<value_node value="0.6"/>
+					<value_node value="0.2"/>
+					<value_node value="-0.6"/>
+					<value_node value="0.6"/>
+				</crouching>
+				<steelsight>
+					<value_node value="0.5"/>
+					<value_node value="0.2"/>
+					<value_node value="-0.6"/>
+					<value_node value="0.6"/>
+				</steelsight>
+			</kick>
+			<timers reload_not_empty="2.07" reload_empty="3.7" equip="0.9" unequip="0.55"/>
+			<sounds fire="fmgnine_fire" fire_single="fmgnine_fire" use_fix="true"/>
+		</weapon>
+		<factory id="wpn_fps_smg_fmgnine" unit="units/mods/weapons/wpn_fps_smg_fmgnine/wpn_fps_smg_fmgnine">
+			<animations reload="reload" fire="recoil" fire_steelsight="recoil" equip="equip"/>
+			<adds/>
+			<override/>
+			<default_blueprint>
+				<value_node value="wpn_fps_smg_fmgnine_barrel"/>
+				<value_node value="wpn_fps_smg_fmgnine_body"/>
+				<value_node value="wpn_fps_smg_fmgnine_bolt"/>
+				<value_node value="wpn_fps_smg_fmgnine_carry_handle"/>
+				<value_node value="wpn_fps_smg_fmgnine_handle"/>
+				<value_node value="wpn_fps_smg_fmgnine_mag"/>
+				<value_node value="wpn_fps_smg_fmgnine_stock"/>
+				<value_node value="wpn_fps_smg_fmgnine_stockcheek"/>
+				<value_node value="wpn_fps_smg_fmgnine_stockhinge"/>
+				<value_node value="wpn_fps_smg_fmgnine_triggergroup"/>
+				<value_node value="wpn_fps_smg_fmgnine_vertgrip"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_smg_fmgnine_barrel"/>
+				<value_node value="wpn_fps_smg_fmgnine_body"/>
+				<value_node value="wpn_fps_smg_fmgnine_bolt"/>
+				<value_node value="wpn_fps_smg_fmgnine_carry_handle"/>
+				<value_node value="wpn_fps_smg_fmgnine_handle"/>
+				<value_node value="wpn_fps_smg_fmgnine_mag"/>
+				<value_node value="wpn_fps_smg_fmgnine_stock"/>
+				<value_node value="wpn_fps_smg_fmgnine_stockcheek"/>
+				<value_node value="wpn_fps_smg_fmgnine_stockhinge"/>
+				<value_node value="wpn_fps_smg_fmgnine_triggergroup"/>
+				<value_node value="wpn_fps_smg_fmgnine_vertgrip"/>
+
+				<value_node value="wpn_fps_upg_fmgnine_m3x"/>
+				<value_node value="wpn_fps_upg_fmgnine_supp_osprey"/>
+
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_v6"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_i_singlefire"/>
+				<value_node value="wpn_fps_upg_i_autofire"/>
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+				<value_node value="wpn_fps_upg_o_bmg"/>
+				<value_node value="wpn_fps_upg_o_uh"/>
+				<value_node value="wpn_fps_upg_o_fc1"/>
+				<value_node value="wpn_fps_upg_o_sig"/>
+				<value_node value="wpn_fps_upg_o_tf90"/>
+				<value_node value="wpn_fps_upg_o_poe"/>
+			</uses_parts>
+		</factory>
+		<stance>
+			<standard>
+				<shoulders rotation="0 -0 0 -1" translation="-1.461 5.464 0.831"/>
+			</standard>
+			<crouched>
+				<shoulders rotation="0 -0 0 -1" translation="-2.461 2.464 -0.169"/>
+			</crouched>
+			<steelsight>
+				<shoulders rotation="0 -0 0 -1" translation="-9.461 -3.464 6.781"/>
+			</steelsight>
+		</stance>
+	</Weapon>
+	<Sounds directory="assets\sounds">
+		<sound id="fmgnine_fire" path="fmg9_regular.ogg" prefix="regular"/>
+		<sound id="fmgnine_fire" path="fmg9_suppressed.ogg" prefix="suppressed_a"/>
+		<sound id="fmgnine_fire" path="fmg9_suppressed.ogg" prefix="suppressed_b"/>
+		<sound id="fmgnine_fire" path="fmg9_suppressed.ogg" prefix="suppressed_c"/>
+	</Sounds>
+	<AddFiles directory="assets" auto_generate="true"/>
+</mod>

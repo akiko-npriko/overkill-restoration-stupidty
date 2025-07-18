@@ -1,0 +1,492 @@
+<table name="Resmod DCPD Outfit Pack" image="">
+	<Localization directory="localization" default="english.txt"/>
+	<GlobalValue id="dcpd_resmod_g" color="Color(0, 0, 0.7)"/>
+
+	<!--SWAT Light Rifleman-->
+	<PlayerStyle id="swat_light_rifle_resmod" unit="units/dcpd_resmod/armor_skins/swat_light_rifle_resmod/swat_light_rifle_resmod_fps" third_unit="units/dcpd_resmod/armor_skins/swat_light_rifle_resmod/swat_light_rifle_resmod" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--SWAT Light Shotgunner-->
+	<PlayerStyle id="swat_light_shotgun_resmod" unit="units/dcpd_resmod/armor_skins/swat_light_rifle_resmod/swat_light_rifle_resmod_fps" third_unit="units/dcpd_resmod/armor_skins/swat_light_shotgun_resmod/swat_light_shotgun_resmod" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--SWAT Light Submachinegunner-->
+	<PlayerStyle id="swat_light_smg_resmod" unit="units/dcpd_resmod/armor_skins/swat_light_rifle_resmod/swat_light_rifle_resmod_fps" third_unit="units/dcpd_resmod/armor_skins/swat_light_smg_resmod/swat_light_smg_resmod" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--SWAT Heavy Rifleman-->
+	<PlayerStyle id="swat_heavy_rifle_resmod" unit="units/dcpd_resmod/armor_skins/swat_heavy_rifle_resmod/swat_heavy_rifle_resmod_fps" third_unit="units/dcpd_resmod/armor_skins/swat_heavy_rifle_resmod/swat_heavy_rifle_resmod" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--SWAT Heavy Shotgunner-->
+	<PlayerStyle id="swat_heavy_shotgun_resmod" unit="units/dcpd_resmod/armor_skins/swat_heavy_rifle_resmod/swat_heavy_rifle_resmod_fps" third_unit="units/dcpd_resmod/armor_skins/swat_heavy_shotgun_resmod/swat_heavy_shotgun_resmod" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic SWAT Heavy Shotgunner-->
+	<PlayerStyle id="swat_heavy_shotgun_resmod_classic" unit="units/dcpd_resmod/armor_skins/swat_heavy_shotgun_resmod_classic/swat_heavy_shotgun_resmod_classic_fps" third_unit="units/dcpd_resmod/armor_skins/swat_heavy_shotgun_resmod_classic/swat_heavy_shotgun_resmod_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--SWAT Shield-->
+	<PlayerStyle id="swat_shield_resmod" unit="units/dcpd_resmod/armor_skins/swat_heavy_rifle_resmod/swat_heavy_rifle_resmod_fps" third_unit="units/dcpd_resmod/armor_skins/swat_shield_resmod/swat_shield_resmod" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--SWAT Sniper-->
+	<PlayerStyle id="swat_sniper_resmod" unit="units/dcpd_resmod/armor_skins/swat_light_rifle_resmod/swat_light_rifle_resmod_fps" third_unit="units/dcpd_resmod/armor_skins/swat_sniper_resmod/swat_sniper_resmod" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic SWAT Sniper-->
+	<PlayerStyle id="swat_sniper_resmod_classic" unit="units/dcpd_resmod/armor_skins/swat_sniper_resmod_classic/swat_sniper_resmod_classic_fps" third_unit="units/dcpd_resmod/armor_skins/swat_sniper_resmod_classic/swat_sniper_resmod_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--FBI Light Rifleman-->
+	<PlayerStyle id="fbi_light_rifle_resmod" unit="units/dcpd_resmod/armor_skins/fbi_light_rifle_resmod/fbi_light_rifle_resmod_fps" third_unit="units/dcpd_resmod/armor_skins/fbi_light_rifle_resmod/fbi_light_rifle_resmod" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--FBI Light Shotgunner-->
+	<PlayerStyle id="fbi_light_shotgun_resmod" unit="units/dcpd_resmod/armor_skins/fbi_light_shotgun_resmod/fbi_light_shotgun_resmod_fps" third_unit="units/dcpd_resmod/armor_skins/fbi_light_shotgun_resmod/fbi_light_shotgun_resmod" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--FBI Light Submachinegunner-->
+	<PlayerStyle id="fbi_light_smg_resmod" unit="units/dcpd_resmod/armor_skins/fbi_light_rifle_resmod/fbi_light_rifle_resmod_fps" third_unit="units/dcpd_resmod/armor_skins/fbi_light_smg_resmod/fbi_light_smg_resmod" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic FBI Light Submachinegunner-->
+	<PlayerStyle id="fbi_light_smg_resmod_classic" unit="units/dcpd_resmod/armor_skins/fbi_light_smg_resmod_classic/fbi_light_smg_resmod_classic_fps" third_unit="units/dcpd_resmod/armor_skins/fbi_light_smg_resmod_classic/fbi_light_smg_resmod_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--FBI Heavy Rifleman-->
+	<PlayerStyle id="fbi_heavy_rifle_resmod" unit="units/dcpd_resmod/armor_skins/fbi_heavy_rifle_resmod/fbi_heavy_rifle_resmod_fps" third_unit="units/dcpd_resmod/armor_skins/fbi_heavy_rifle_resmod/fbi_heavy_rifle_resmod" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--FBI Heavy Shotgunner-->
+	<PlayerStyle id="fbi_heavy_shotgun_resmod" unit="units/dcpd_resmod/armor_skins/fbi_heavy_rifle_resmod/fbi_heavy_rifle_resmod_fps" third_unit="units/dcpd_resmod/armor_skins/fbi_heavy_shotgun_resmod/fbi_heavy_shotgun_resmod" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--FBI Shield-->
+	<PlayerStyle id="fbi_shield_resmod" unit="units/dcpd_resmod/armor_skins/fbi_light_rifle_resmod/fbi_light_rifle_resmod_fps" third_unit="units/dcpd_resmod/armor_skins/fbi_shield_resmod/fbi_shield_resmod" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--FBI Sniper-->
+	<PlayerStyle id="fbi_sniper_resmod" unit="units/dcpd_resmod/armor_skins/fbi_sniper_resmod/fbi_sniper_resmod_fps" third_unit="units/dcpd_resmod/armor_skins/fbi_sniper_resmod/fbi_sniper_resmod" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--GenSec Light Rifleman-->
+	<PlayerStyle id="gensec_light_rifle_resmod" unit="units/dcpd_resmod/armor_skins/gensec_light_rifle_resmod/gensec_light_rifle_resmod_fps" third_unit="units/dcpd_resmod/armor_skins/gensec_light_rifle_resmod/gensec_light_rifle_resmod" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--GenSec Light Shotgunner-->
+	<PlayerStyle id="gensec_light_shotgun_resmod" unit="units/dcpd_resmod/armor_skins/gensec_light_shotgun_resmod/gensec_light_shotgun_resmod_fps" third_unit="units/dcpd_resmod/armor_skins/gensec_light_shotgun_resmod/gensec_light_shotgun_resmod" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--GenSec Light Submachinegunner-->
+	<PlayerStyle id="gensec_light_smg_resmod" unit="units/dcpd_resmod/armor_skins/gensec_light_rifle_resmod/gensec_light_rifle_resmod_fps" third_unit="units/dcpd_resmod/armor_skins/gensec_light_smg_resmod/gensec_light_smg_resmod" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--GenSec Heavy Rifleman-->
+	<PlayerStyle id="gensec_heavy_rifle_resmod" unit="units/dcpd_resmod/armor_skins/gensec_heavy_rifle_resmod/gensec_heavy_rifle_resmod_fps" third_unit="units/dcpd_resmod/armor_skins/gensec_heavy_rifle_resmod/gensec_heavy_rifle_resmod" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--GenSec Heavy Shotgunner-->
+	<PlayerStyle id="gensec_heavy_shotgun_resmod" unit="units/dcpd_resmod/armor_skins/gensec_heavy_rifle_resmod/gensec_heavy_rifle_resmod_fps" third_unit="units/dcpd_resmod/armor_skins/gensec_heavy_shotgun_resmod/gensec_heavy_shotgun_resmod" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic GenSec Heavy Shotgunner-->
+	<PlayerStyle id="gensec_heavy_shotgun_resmod_classic" unit="units/dcpd_resmod/armor_skins/gensec_heavy_shotgun_resmod_classic/gensec_heavy_shotgun_resmod_classic_fps" third_unit="units/dcpd_resmod/armor_skins/gensec_heavy_shotgun_resmod_classic/gensec_heavy_shotgun_resmod_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--GenSec Shield-->
+	<PlayerStyle id="gensec_shield_resmod" unit="units/dcpd_resmod/armor_skins/gensec_light_rifle_resmod/gensec_light_rifle_resmod_fps" third_unit="units/dcpd_resmod/armor_skins/gensec_shield_resmod/gensec_shield_resmod" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--GenSec Sniper-->
+	<PlayerStyle id="gensec_sniper_resmod" unit="units/dcpd_resmod/armor_skins/gensec_sniper_resmod/gensec_sniper_resmod_fps" third_unit="units/dcpd_resmod/armor_skins/gensec_sniper_resmod/gensec_sniper_resmod" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Cop 1-->
+	<PlayerStyle id="dcpd_cop_resmod_1" unit="units/dcpd_resmod/armor_skins/dcpd_cop_resmod_1/dcpd_cop_resmod_1_fps" third_unit="units/dcpd_resmod/armor_skins/dcpd_cop_resmod_1/dcpd_cop_resmod_1" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Cop 2-->
+	<PlayerStyle id="dcpd_cop_resmod_2" unit="units/dcpd_resmod/armor_skins/dcpd_cop_resmod_2/dcpd_cop_resmod_2_fps" third_unit="units/dcpd_resmod/armor_skins/dcpd_cop_resmod_2/dcpd_cop_resmod_2" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Cop 3-->
+	<PlayerStyle id="dcpd_cop_resmod_3" unit="units/dcpd_resmod/armor_skins/dcpd_cop_resmod_3/dcpd_cop_resmod_3_fps" third_unit="units/dcpd_resmod/armor_skins/dcpd_cop_resmod_3/dcpd_cop_resmod_3" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Cop 4-->
+	<PlayerStyle id="dcpd_cop_resmod_4" unit="units/dcpd_resmod/armor_skins/dcpd_cop_resmod_4/dcpd_cop_resmod_4_fps" third_unit="units/dcpd_resmod/armor_skins/dcpd_cop_resmod_4/dcpd_cop_resmod_4" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Field Agent-->
+	<PlayerStyle id="fbi_agent_resmod_1" unit="units/dcpd_resmod/armor_skins/fbi_agent_resmod_1/fbi_agent_resmod_1_fps" third_unit="units/dcpd_resmod/armor_skins/fbi_agent_resmod_1/fbi_agent_resmod_1" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Veteran Agent-->
+	<PlayerStyle id="fbi_agent_resmod_2" unit="units/dcpd_resmod/armor_skins/fbi_agent_resmod_2/fbi_agent_resmod_2_fps" third_unit="units/dcpd_resmod/armor_skins/fbi_agent_resmod_2/fbi_agent_resmod_2" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--HRT-->
+	<PlayerStyle id="fbi_agent_resmod_3" unit="units/dcpd_resmod/armor_skins/fbi_agent_resmod_3/fbi_agent_resmod_3_fps" third_unit="units/dcpd_resmod/armor_skins/fbi_agent_resmod_3/fbi_agent_resmod_3" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Taser-->
+	<PlayerStyle id="dcpd_taser_resmod" unit="units/dcpd_resmod/armor_skins/dcpd_taser_resmod/dcpd_taser_resmod_fps" third_unit="units/dcpd_resmod/armor_skins/dcpd_taser_resmod/dcpd_taser_resmod" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Cloaker-->
+	<PlayerStyle id="dcpd_spook_resmod" unit="units/dcpd_resmod/armor_skins/dcpd_spook_resmod/dcpd_spook_resmod_fps" third_unit="units/dcpd_resmod/armor_skins/dcpd_spook_resmod/dcpd_spook_resmod" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Medic-->
+	<PlayerStyle id="dcpd_medic_resmod" unit="units/dcpd_resmod/armor_skins/dcpd_medic_resmod/dcpd_medic_resmod_fps" third_unit="units/dcpd_resmod/armor_skins/dcpd_medic_resmod/dcpd_medic_resmod" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Grenadier-->
+	<PlayerStyle id="dcpd_grenadier" unit="units/dcpd_resmod/armor_skins/dcpd_grenadier/dcpd_grenadier_fps" third_unit="units/dcpd_resmod/armor_skins/dcpd_grenadier/dcpd_grenadier" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--R870 Dozer-->
+	<PlayerStyle id="dcpd_dozer_r870_resmod" unit="units/dcpd_resmod/armor_skins/dcpd_dozer_r870_resmod/dcpd_dozer_r870_resmod_fps" third_unit="units/dcpd_resmod/armor_skins/dcpd_dozer_r870_resmod/dcpd_dozer_r870_resmod" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Saiga Dozer-->
+	<PlayerStyle id="dcpd_dozer_saiga_resmod" unit="units/dcpd_resmod/armor_skins/dcpd_dozer_saiga_resmod/dcpd_dozer_saiga_resmod_fps" third_unit="units/dcpd_resmod/armor_skins/dcpd_dozer_saiga_resmod/dcpd_dozer_saiga_resmod" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--M249 Dozer-->
+	<PlayerStyle id="dcpd_dozer_m249_resmod" unit="units/dcpd_resmod/armor_skins/dcpd_dozer_m249_resmod/dcpd_dozer_m249_resmod_fps" third_unit="units/dcpd_resmod/armor_skins/dcpd_dozer_m249_resmod/dcpd_dozer_m249_resmod" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Jonathan-->
+	<PlayerStyle id="dcpd_veteran_1" unit="units/dcpd_resmod/armor_skins/dcpd_veteran_1/dcpd_veteran_1_fps" third_unit="units/dcpd_resmod/armor_skins/dcpd_veteran_1/dcpd_veteran_1" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Clean Jonathan-->
+	<PlayerStyle id="dcpd_veteran_2" unit="units/dcpd_resmod/armor_skins/dcpd_veteran_2/dcpd_veteran_2_fps" third_unit="units/dcpd_resmod/armor_skins/dcpd_veteran_2/dcpd_veteran_2" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="dcpd_resmod" global_value="dcpd_resmod_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<AddFiles directory="assets">
+	<!--SWAT Light Rifleman-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/swat_light_rifle_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/swat_light_rifle_resmod/swat_light_rifle_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/swat_light_rifle_resmod/swat_light_rifle_resmod_fps"/>
+
+	<!--SWAT Light Shotgunner-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/swat_light_shotgun_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/swat_light_shotgun_resmod/swat_light_shotgun_resmod"/>
+
+	<!--SWAT Light Submachinegunner-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/swat_light_smg_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/swat_light_smg_resmod/swat_light_smg_resmod"/>
+
+	<!--SWAT Heavy Rifleman-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/swat_heavy_rifle_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/swat_heavy_rifle_resmod/swat_heavy_rifle_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/swat_heavy_rifle_resmod/swat_heavy_rifle_resmod_fps"/>
+
+	<!--SWAT Heavy Shotgunner-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/swat_heavy_shotgun_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/swat_heavy_shotgun_resmod/swat_heavy_shotgun_resmod"/>
+
+	<!--Classic SWAT Heavy Shotgunner-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/swat_heavy_shotgun_resmod_classic"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/swat_heavy_shotgun_resmod_classic/swat_heavy_shotgun_resmod_classic"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/swat_heavy_shotgun_resmod_classic/swat_heavy_shotgun_resmod_classic_fps"/>
+
+	<!--SWAT Shield-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/swat_shield_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/swat_shield_resmod/swat_shield_resmod"/>
+
+	<!--SWAT Sniper-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/swat_sniper_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/swat_sniper_resmod/swat_sniper_resmod"/>
+
+	<!--Classic SWAT Sniper-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/swat_sniper_resmod_classic"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/swat_sniper_resmod_classic/swat_sniper_resmod_classic"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/swat_sniper_resmod_classic/swat_sniper_resmod_classic_fps"/>
+
+	<!--FBI Light Rifleman-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/fbi_light_rifle_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/fbi_light_rifle_resmod/fbi_light_rifle_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/fbi_light_rifle_resmod/fbi_light_rifle_resmod_fps"/>
+
+	<!--FBI Light Shotgunner-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/fbi_light_shotgun_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/fbi_light_shotgun_resmod/fbi_light_shotgun_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/fbi_light_shotgun_resmod/fbi_light_shotgun_resmod_fps"/>
+
+	<!--FBI Light Submachinegunner-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/fbi_light_smg_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/fbi_light_smg_resmod/fbi_light_smg_resmod"/>
+
+	<!--Classic FBI Light Submachinegunner-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/fbi_light_smg_resmod_classic"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/fbi_light_smg_resmod_classic/fbi_light_smg_resmod_classic"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/fbi_light_smg_resmod_classic/fbi_light_smg_resmod_classic_fps"/>
+
+	<!--FBI Heavy Rifleman-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/fbi_heavy_rifle_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/fbi_heavy_rifle_resmod/fbi_heavy_rifle_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/fbi_heavy_rifle_resmod/fbi_heavy_rifle_resmod_fps"/>
+
+	<!--FBI Heavy Shotgunner-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/fbi_heavy_shotgun_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/fbi_heavy_shotgun_resmod/fbi_heavy_shotgun_resmod"/>
+
+	<!--FBI Shield-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/fbi_shield_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/fbi_shield_resmod/fbi_shield_resmod"/>
+
+	<!--FBI Sniper-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/fbi_sniper_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/fbi_sniper_resmod/fbi_sniper_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/fbi_sniper_resmod/fbi_sniper_resmod_fps"/>
+
+	<!--GenSec Light Rifleman-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/gensec_light_rifle_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/gensec_light_rifle_resmod/gensec_light_rifle_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/gensec_light_rifle_resmod/gensec_light_rifle_resmod_fps"/>
+
+	<!--GenSec Light Shotgunner-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/gensec_light_shotgun_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/gensec_light_shotgun_resmod/gensec_light_shotgun_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/gensec_light_shotgun_resmod/gensec_light_shotgun_resmod_fps"/>
+
+	<!--GenSec Light Submachinegunner-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/gensec_light_smg_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/gensec_light_smg_resmod/gensec_light_smg_resmod"/>
+
+	<!--GenSec Heavy Rifleman-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/gensec_heavy_rifle_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/gensec_heavy_rifle_resmod/gensec_heavy_rifle_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/gensec_heavy_rifle_resmod/gensec_heavy_rifle_resmod_fps"/>
+
+	<!--GenSec Heavy Shotgunner-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/gensec_heavy_shotgun_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/gensec_heavy_shotgun_resmod/gensec_heavy_shotgun_resmod"/>
+
+	<!--Classic GenSec Heavy Shotgunner-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/gensec_heavy_shotgun_resmod_classic"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/gensec_heavy_shotgun_resmod_classic/gensec_heavy_shotgun_resmod_classic"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/gensec_heavy_shotgun_resmod_classic/gensec_heavy_shotgun_resmod_classic_fps"/>
+
+	<!--GenSec Shield-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/gensec_shield_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/gensec_shield_resmod/gensec_shield_resmod"/>
+
+	<!--GenSec Sniper-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/gensec_sniper_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/gensec_sniper_resmod/gensec_sniper_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/gensec_sniper_resmod/gensec_sniper_resmod_fps"/>
+
+	<!--Cop 1-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/dcpd_cop_resmod_1"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/dcpd_cop_resmod_1/dcpd_cop_resmod_1"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/dcpd_cop_resmod_1/dcpd_cop_resmod_1_fps"/>
+
+	<!--Cop 2-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/dcpd_cop_resmod_2"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/dcpd_cop_resmod_2/dcpd_cop_resmod_2"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/dcpd_cop_resmod_2/dcpd_cop_resmod_2_fps"/>
+
+	<!--Cop 3-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/dcpd_cop_resmod_3"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/dcpd_cop_resmod_3/dcpd_cop_resmod_3"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/dcpd_cop_resmod_3/dcpd_cop_resmod_3_fps"/>
+
+	<!--Cop 4-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/dcpd_cop_resmod_4"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/dcpd_cop_resmod_4/dcpd_cop_resmod_4"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/dcpd_cop_resmod_4/dcpd_cop_resmod_4_fps"/>
+
+	<!--Field Agent-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/fbi_agent_resmod_1"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/fbi_agent_resmod_1/fbi_agent_resmod_1"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/fbi_agent_resmod_1/fbi_agent_resmod_1_fps"/>
+
+	<!--Veteran Agent-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/fbi_agent_resmod_2"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/fbi_agent_resmod_2/fbi_agent_resmod_2"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/fbi_agent_resmod_2/fbi_agent_resmod_2_fps"/>
+
+	<!--HRT-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/fbi_agent_resmod_3"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/fbi_agent_resmod_3/fbi_agent_resmod_3"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/fbi_agent_resmod_3/fbi_agent_resmod_3_fps"/>
+
+	<!--Taser-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/dcpd_taser_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/dcpd_taser_resmod/dcpd_taser_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/dcpd_taser_resmod/dcpd_taser_resmod_fps"/>
+
+	<!--Cloaker-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/dcpd_spook_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/dcpd_spook_resmod/dcpd_spook_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/dcpd_spook_resmod/dcpd_spook_resmod_fps"/>
+
+	<!--Medic-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/dcpd_medic_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/dcpd_medic_resmod/dcpd_medic_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/dcpd_medic_resmod/dcpd_medic_resmod_fps"/>
+
+	<!--Grenadier-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/dcpd_grenadier"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/dcpd_grenadier/dcpd_grenadier"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/dcpd_grenadier/dcpd_grenadier_fps"/>
+
+	<!--R870 Dozer-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/dcpd_dozer_r870_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/dcpd_dozer_r870_resmod/dcpd_dozer_r870_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/dcpd_dozer_r870_resmod/dcpd_dozer_r870_resmod_fps"/>
+
+	<!--Saiga Dozer-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/dcpd_dozer_saiga_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/dcpd_dozer_saiga_resmod/dcpd_dozer_saiga_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/dcpd_dozer_saiga_resmod/dcpd_dozer_saiga_resmod_fps"/>
+
+	<!--M249 Dozer-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/dcpd_dozer_m249_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/dcpd_dozer_m249_resmod/dcpd_dozer_m249_resmod"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/dcpd_dozer_m249_resmod/dcpd_dozer_m249_resmod_fps"/>
+
+	<!--Jonathan-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/dcpd_veteran_1"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/dcpd_veteran_1/dcpd_veteran_1"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/dcpd_veteran_1/dcpd_veteran_1_fps"/>
+
+	<!--Clean Jonathan-->
+		<texture path="guis/dlcs/dcpd_resmod/textures/pd2/blackmarket/icons/player_styles/dcpd_veteran_2"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/dcpd_veteran_2/dcpd_veteran_2"/>
+		<unit_mat path="units/dcpd_resmod/armor_skins/dcpd_veteran_2/dcpd_veteran_2_fps"/>
+
+	<!--Shared Textures-->
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/bulldozer_df"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/bulldozer_city_df"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/bulldozer_saiga_df"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/ene_city_heavy_nm"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/ene_city_heavy_df"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/ene_medic_df"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/ene_medic_head_df"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/fbi_df"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/fbi_heads_atlas_df"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/genshill_helm_nm"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/genshill_helm_df"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/head_new_nm"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/head_new_df"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/heads_atlas_df"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/heads_atlas_city_df"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/heads_cop_nm"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/heads_cop_df"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/heads_cop2_df"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/heads_cop3_nm"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/heads_cop3_df"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/heads_fbi_nm"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/heads_fbi_df"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/helmet_shotgun_nm"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/helmet_shotgun_df"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/helmets_atlas_df"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/police_df"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/red_glass_df"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/spook_il"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/spook_heavy_nm"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/spook_heavy_df"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/swat_body_nm"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/swat_body_df"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/swat_body_classic_df"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/swat_city_df"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/swat_fbi_body_nm"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/swat_fbi_body_df"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/tank_glass_df"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/tank_glass_op"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/titan_glass_df"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/titan_glass_op"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/veteran_cop_nm"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/veteran_cop_df"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/veteran_cop_2_nm"/>
+		<texture path="units/dcpd_resmod/armor_skins/shared_textures/veteran_cop_2_df"/>
+	</AddFiles>
+</table>

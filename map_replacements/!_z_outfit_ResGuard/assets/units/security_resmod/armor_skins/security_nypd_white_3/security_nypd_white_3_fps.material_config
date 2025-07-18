@@ -1,0 +1,14 @@
+<materials version="3" group="ene_security_1">
+	<material name="mtr_body" version="2" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<bump_normal_texture 	file="units/security_resmod/armor_skins/shared_textures/nypd_nm"/>
+		<diffuse_texture 	file="units/security_resmod/armor_skins/shared_textures/nypd_df"/>
+	</material>
+	<material name="mtr_head" version="2" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<bump_normal_texture 	file="units/security_resmod/armor_skins/shared_textures/heads_cop_la_nm"/>
+		<diffuse_texture 	file="units/security_resmod/armor_skins/shared_textures/heads_cop_la_df"/>
+	</material>
+    <material name="shadow_caster" render_template="shadow_caster_only:SKINNED_1WEIGHT" version="2"/>
+</materials>
+
+ 
+ 

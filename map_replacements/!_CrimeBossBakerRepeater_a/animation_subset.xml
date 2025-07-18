@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+			
+		<target mode="attach">
+			<anim name="baker_idle" 					file="anims/fps/winchester1874/winchester1874_idle" blend_set="all"/>
+			
+			<anim name="baker_reload" 					file="anims/fps/baker/baker_reload_enter" blend_set="all"/>
+			<anim name="baker_reload_enter" 			file="anims/fps/baker/baker_reload_enter" blend_set="all"/>
+			<anim name="baker_reload_loop" 				file="anims/fps/baker/baker_reload" blend_set="all"/>
+			<anim name="baker_reload_exit" 				file="anims/fps/baker/baker_reload_exit" blend_set="all"/>
+			<anim name="baker_reload_not_empty_exit"	file="anims/fps/baker/baker_reload_not_empty_exit" blend_set="all"/>
+			
+			<anim name="baker_recoil" 					file="anims/fps/baker/baker_recoil" blend_set="all"/>
+			<anim name="baker_recoil_steelsight" 		file="anims/fps/winchester1874/winchester1874_recoil_zoom" blend_set="all"/>
+			
+			<anim name="baker_equip" 					file="anims/fps/winchester1874/winchester1874_equip" blend_set="all"/>
+			<anim name="baker_unequip" 					file="anims/fps/winchester1874/winchester1874_unequip" blend_set="all"/>
+			<anim name="baker_melee" 					file="anims/fps/winchester1874/winchester1874_melee" blend_set="all"/>
+			<anim name="baker_melee_miss" 				file="anims/fps/winchester1874/winchester1874_melee_miss" blend_set="all"/>
+			<anim name="baker_use" 						file="anims/fps/winchester1874/winchester1874_use" blend_set="all"/>
+			<anim name="baker_sprint" 					file="anims/fps/winchester1874/winchester1874_sprint" blend_set="all"/>
+			<anim name="baker_sprint_exit" 				file="anims/fps/winchester1874/winchester1874_sprint_exit" blend_set="all"/>
+			<anim name="baker_sprint_enter" 			file="anims/fps/winchester1874/winchester1874_sprint_enter" blend_set="all"/>
+			<anim name="baker_com_down_var1" 			file="anims/fps/winchester1874/winchester1874_com_var1" blend_set="all"/>
+			<anim name="baker_com_stop" 				file="anims/fps/winchester1874/winchester1874_com_var5" blend_set="all"/>
+			<anim name="baker_com_come" 				file="anims/fps/winchester1874/winchester1874_com_var6" blend_set="all"/>
+			<anim name="baker_com_point" 				file="anims/fps/winchester1874/winchester1874_com_var7" blend_set="all"/>
+			<anim name="baker_get_up" 					file="anims/fps/winchester1874/winchester1874_get_up" blend_set="all"/>
+			<anim name="baker_gogo" 					file="anims/fps/winchester1874/winchester1874_gogo" blend_set="all"/>
+			<anim name="baker_tased" 					file="anims/fps/winchester1874/winchester1874_tased" blend_set="all"/>
+			<anim name="baker_tased_boost" 				file="anims/fps/winchester1874/winchester1874_tased_boost" blend_set="all"/>
+			<anim name="baker_tased_exit" 				file="anims/fps/winchester1874/winchester1874_tased_exit" blend_set="all"/>
+			<anim name="baker_inspect"					file="anims/fps/winchester1874/winchester1874_inspect" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

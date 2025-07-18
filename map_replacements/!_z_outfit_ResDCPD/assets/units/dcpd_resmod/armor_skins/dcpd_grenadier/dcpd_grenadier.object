@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/dcpd_resmod/armor_skins/dcpd_grenadier/dcpd_grenadier" orientation_object="root_point" />
+
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="co_culling">
+			<object name="g_body" enabled="true"/>
+			<object name="g_taser" enabled="true"/>
+			<object name="g_glass" enabled="true"/>
+
+		<!--Balaclava-->
+			<object name="g_balaclava" enabled="false"/>
+
+		<!--Heads; Only one should be used at a time and they should not be used alongside balaclava-->
+			<object name="g_head_a" enabled="true"/>
+			<object name="g_head_b" enabled="false"/>
+			<object name="g_head_c" enabled="false"/>
+			<object name="g_head_d" enabled="false"/>
+			<object name="g_head_e" enabled="false"/>
+			<object name="g_head_f" enabled="false"/>
+			<object name="g_head_g" enabled="false"/>
+			<object name="g_head_h" enabled="false"/>
+			<object name="g_head_i" enabled="false"/>
+			<object name="g_head_j" enabled="false"/>
+			<object name="g_head_k" enabled="false"/>
+			<object name="g_head_l" enabled="false"/>
+			<object name="g_head_m" enabled="false"/>
+
+		<!--Faces; Only one should be used at a time and they should only be used alongside balaclava-->
+			<object name="g_face_a" enabled="false"/>
+			<object name="g_face_b" enabled="false"/>
+			<object name="g_face_c" enabled="false"/>
+			<object name="g_face_d" enabled="false"/>
+			<object name="g_face_e" enabled="false"/>
+
+		<!--Explosive Bag-->
+			<object name="g_explosivebag" enabled="true"/>
+		</graphic_group>
+	</graphics>
+</dynamic_object>

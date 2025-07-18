@@ -1,0 +1,710 @@
+<mod name="BO6 Grendel R31">
+
+	<Localization directory="loc" default="english.txt"/>
+
+	<AssetUpdates id="51700" version="1" provider="modworkshop"/>
+
+	<GlobalValue id="fiery_hylie_mod" color="Color(0.8, 0.7, 0.2)"/>
+
+	<AddFiles directory="assets" auto_generate="true"/>
+
+	<Sounds directory="assets/sounds">
+
+		<sound id="r31_fire" path="r31_fire_reg.ogg" prefix="regular"/>
+		<sound id="r31_fire" path="r31_fire_reg.ogg" prefix="third"/>
+		<sound id="r31_fire" path="r31_fire_reg.ogg" prefix="regular_b"/>
+		<sound id="r31_fire" path="r31_fire_reg.ogg" prefix="regular_c"/>
+
+		<sound id="r31_fire" path="r31_fire_supp.ogg" prefix="suppressed_a"/>
+		<sound id="r31_fire" path="r31_fire_supp.ogg" prefix="third"/>
+		<sound id="r31_fire" path="r31_fire_supp.ogg" prefix="suppressed_b"/>
+		<sound id="r31_fire" path="r31_fire_supp.ogg" prefix="suppressed_c"/>
+
+	<!-- Empty Reload - Extended Magazine I -->
+
+		<sound id="r31_grab_new_mag_empty_ext01" path="reload_empty_ext01/r31_grab_new_mag_empty_ext01.ogg" prefix="first"/>
+		<sound id="r31_grab_new_mag_empty_ext01" path="reload_empty_ext01/r31_grab_new_mag_empty_ext01.ogg" prefix="third"/>
+		<sound id="r31_lever_pull_ext01" path="reload_empty_ext01/r31_lever_pull_ext01.ogg" prefix="first"/>
+		<sound id="r31_lever_pull_ext01" path="reload_empty_ext01/r31_lever_pull_ext01.ogg" prefix="third"/>
+		<sound id="r31_mag_contact_empty_ext01" path="reload_empty_ext01/r31_mag_contact_empty_ext01.ogg" prefix="first"/>
+		<sound id="r31_mag_contact_empty_ext01" path="reload_empty_ext01/r31_mag_contact_empty_ext01.ogg" prefix="third"/>
+		<sound id="r31_mag_grab_empty_ext01" path="reload_empty_ext01/r31_mag_grab_empty_ext01.ogg" prefix="first"/>
+		<sound id="r31_mag_grab_empty_ext01" path="reload_empty_ext01/r31_mag_grab_empty_ext01.ogg" prefix="third"/>
+		<sound id="r31_mag_in_empty_ext01" path="reload_empty_ext01/r31_mag_in_empty_ext01.ogg" prefix="first"/>
+		<sound id="r31_mag_in_empty_ext01" path="reload_empty_ext01/r31_mag_in_empty_ext01.ogg" prefix="third"/>
+		<sound id="r31_mag_out_empty_ext01" path="reload_empty_ext01/r31_mag_out_empty_ext01.ogg" prefix="first"/>
+		<sound id="r31_mag_out_empty_ext01" path="reload_empty_ext01/r31_mag_out_empty_ext01.ogg" prefix="third"/>
+		<sound id="r31_reload_end_empty_ext01" path="reload_empty_ext01/r31_reload_end_empty_ext01.ogg" prefix="first"/>
+		<sound id="r31_reload_end_empty_ext01" path="reload_empty_ext01/r31_reload_end_empty_ext01.ogg" prefix="third"/>
+
+	<!-- Empty Reload - Extended Magazine II -->
+
+		<sound id="r31_grab_new_mag_empty_ext02" path="reload_empty_ext02/r31_grab_new_mag_empty_ext02.ogg" prefix="first"/>
+		<sound id="r31_grab_new_mag_empty_ext02" path="reload_empty_ext02/r31_grab_new_mag_empty_ext02.ogg" prefix="third"/>
+		<sound id="r31_lever_pull_ext02" path="reload_empty_ext02/r31_lever_pull_ext02.ogg" prefix="first"/>
+		<sound id="r31_lever_pull_ext02" path="reload_empty_ext02/r31_lever_pull_ext02.ogg" prefix="third"/>
+		<sound id="r31_mag_contact_empty_ext02" path="reload_empty_ext02/r31_mag_contact_empty_ext02.ogg" prefix="first"/>
+		<sound id="r31_mag_contact_empty_ext02" path="reload_empty_ext02/r31_mag_contact_empty_ext02.ogg" prefix="third"/>
+		<sound id="r31_mag_grab_empty_ext02" path="reload_empty_ext02/r31_mag_grab_empty_ext02.ogg" prefix="first"/>
+		<sound id="r31_mag_grab_empty_ext02" path="reload_empty_ext02/r31_mag_grab_empty_ext02.ogg" prefix="third"/>
+		<sound id="r31_mag_in_empty_ext02" path="reload_empty_ext02/r31_mag_in_empty_ext02.ogg" prefix="first"/>
+		<sound id="r31_mag_in_empty_ext02" path="reload_empty_ext02/r31_mag_in_empty_ext02.ogg" prefix="third"/>
+		<sound id="r31_mag_out_empty_ext02" path="reload_empty_ext02/r31_mag_out_empty_ext02.ogg" prefix="first"/>
+		<sound id="r31_mag_out_empty_ext02" path="reload_empty_ext02/r31_mag_out_empty_ext02.ogg" prefix="third"/>
+		<sound id="r31_reload_end_empty_ext02" path="reload_empty_ext02/r31_reload_end_empty_ext02.ogg" prefix="first"/>
+		<sound id="r31_reload_end_empty_ext02" path="reload_empty_ext02/r31_reload_end_empty_ext02.ogg" prefix="third"/>
+
+	<!-- Empty Reload - Fast Magazine I & II -->
+
+		<sound id="r31_grab_new_mag_empty_fast02" path="reload_empty_fast02/r31_grab_new_mag_empty_fast02.ogg" prefix="first"/>
+		<sound id="r31_grab_new_mag_empty_fast02" path="reload_empty_fast02/r31_grab_new_mag_empty_fast02.ogg" prefix="third"/>
+		<sound id="r31_lever_pull_fast02" path="reload_empty_fast02/r31_lever_pull_fast02.ogg" prefix="first"/>
+		<sound id="r31_lever_pull_fast02" path="reload_empty_fast02/r31_lever_pull_fast02.ogg" prefix="third"/>
+		<sound id="r31_mag_contact_empty_fast02" path="reload_empty_fast02/r31_mag_contact_empty_fast02.ogg" prefix="first"/>
+		<sound id="r31_mag_contact_empty_fast02" path="reload_empty_fast02/r31_mag_contact_empty_fast02.ogg" prefix="third"/>
+		<sound id="r31_mag_grab_empty_fast02" path="reload_empty_fast02/r31_mag_grab_empty_fast02.ogg" prefix="first"/>
+		<sound id="r31_mag_grab_empty_fast02" path="reload_empty_fast02/r31_mag_grab_empty_fast02.ogg" prefix="third"/>
+		<sound id="r31_mag_in_empty_fast02" path="reload_empty_fast02/r31_mag_in_empty_fast02.ogg" prefix="first"/>
+		<sound id="r31_mag_in_empty_fast02" path="reload_empty_fast02/r31_mag_in_empty_fast02.ogg" prefix="third"/>
+		<sound id="r31_mag_out_empty_fast02" path="reload_empty_fast02/r31_mag_out_empty_fast02.ogg" prefix="first"/>
+		<sound id="r31_mag_out_empty_fast02" path="reload_empty_fast02/r31_mag_out_empty_fast02.ogg" prefix="third"/>
+		<sound id="r31_reload_end_empty_fast02" path="reload_empty_fast02/r31_reload_end_empty_fast02.ogg" prefix="first"/>
+		<sound id="r31_reload_end_empty_fast02" path="reload_empty_fast02/r31_reload_end_empty_fast02.ogg" prefix="third"/>
+
+	<!-- Empty Reload - Standard Magazine -->
+
+		<sound id="r31_grab_new_mag_empty_std" path="reload_empty_std/r31_grab_new_mag_empty_std.ogg" prefix="first"/>
+		<sound id="r31_grab_new_mag_empty_std" path="reload_empty_std/r31_grab_new_mag_empty_std.ogg" prefix="third"/>
+		<sound id="r31_lever_pull_std" path="reload_empty_std/r31_lever_pull_std.ogg" prefix="first"/>
+		<sound id="r31_lever_pull_std" path="reload_empty_std/r31_lever_pull_std.ogg" prefix="third"/>
+		<sound id="r31_mag_contact_empty_std" path="reload_empty_std/r31_mag_contact_empty_std.ogg" prefix="first"/>
+		<sound id="r31_mag_contact_empty_std" path="reload_empty_std/r31_mag_contact_empty_std.ogg" prefix="third"/>
+		<sound id="r31_mag_grab_empty_std" path="reload_empty_std/r31_mag_grab_empty_std.ogg" prefix="first"/>
+		<sound id="r31_mag_grab_empty_std" path="reload_empty_std/r31_mag_grab_empty_std.ogg" prefix="third"/>
+		<sound id="r31_mag_in_empty_std" path="reload_empty_std/r31_mag_in_empty_std.ogg" prefix="first"/>
+		<sound id="r31_mag_in_empty_std" path="reload_empty_std/r31_mag_in_empty_std.ogg" prefix="third"/>
+		<sound id="r31_mag_out_empty_std" path="reload_empty_std/r31_mag_out_empty_std.ogg" prefix="first"/>
+		<sound id="r31_mag_out_empty_std" path="reload_empty_std/r31_mag_out_empty_std.ogg" prefix="third"/>
+		<sound id="r31_reload_end_empty_std" path="reload_empty_std/r31_reload_end_empty_std.ogg" prefix="first"/>
+		<sound id="r31_reload_end_empty_std" path="reload_empty_std/r31_reload_end_empty_std.ogg" prefix="third"/>
+
+	<!-- Non-Empty Reload - Extended Magazine I -->
+
+		<sound id="r31_grab_new_mag_ext01" path="reload_not_empty_ext01/r31_grab_new_mag_ext01.ogg" prefix="first"/>
+		<sound id="r31_grab_new_mag_ext01" path="reload_not_empty_ext01/r31_grab_new_mag_ext01.ogg" prefix="third"/>
+		<sound id="r31_mag_contact_ext01" path="reload_not_empty_ext01/r31_mag_contact_ext01.ogg" prefix="first"/>
+		<sound id="r31_mag_contact_ext01" path="reload_not_empty_ext01/r31_mag_contact_ext01.ogg" prefix="third"/>
+		<sound id="r31_mag_grab_ext01" path="reload_not_empty_ext01/r31_mag_grab_ext01.ogg" prefix="first"/>
+		<sound id="r31_mag_grab_ext01" path="reload_not_empty_ext01/r31_mag_grab_ext01.ogg" prefix="third"/>
+		<sound id="r31_mag_in_ext01" path="reload_not_empty_ext01/r31_mag_in_ext01.ogg" prefix="first"/>
+		<sound id="r31_mag_in_ext01" path="reload_not_empty_ext01/r31_mag_in_ext01.ogg" prefix="third"/>
+		<sound id="r31_mag_out_ext01" path="reload_not_empty_ext01/r31_mag_out_ext01.ogg" prefix="first"/>
+		<sound id="r31_mag_out_ext01" path="reload_not_empty_ext01/r31_mag_out_ext01.ogg" prefix="third"/>
+		<sound id="r31_reload_end_ext01" path="reload_not_empty_ext01/r31_reload_end_ext01.ogg" prefix="first"/>
+		<sound id="r31_reload_end_ext01" path="reload_not_empty_ext01/r31_reload_end_ext01.ogg" prefix="third"/>
+
+	<!-- Non-Empty Reload - Extended Magazine II -->
+
+		<sound id="r31_grab_new_mag_ext02" path="reload_not_empty_ext02/r31_grab_new_mag_ext02.ogg" prefix="first"/>
+		<sound id="r31_grab_new_mag_ext02" path="reload_not_empty_ext02/r31_grab_new_mag_ext02.ogg" prefix="third"/>
+		<sound id="r31_mag_contact_ext02" path="reload_not_empty_ext02/r31_mag_contact_ext02.ogg" prefix="first"/>
+		<sound id="r31_mag_contact_ext02" path="reload_not_empty_ext02/r31_mag_contact_ext02.ogg" prefix="third"/>
+		<sound id="r31_mag_grab_ext02" path="reload_not_empty_ext02/r31_mag_grab_ext02.ogg" prefix="first"/>
+		<sound id="r31_mag_grab_ext02" path="reload_not_empty_ext02/r31_mag_grab_ext02.ogg" prefix="third"/>
+		<sound id="r31_mag_in_ext02" path="reload_not_empty_ext02/r31_mag_in_ext02.ogg" prefix="first"/>
+		<sound id="r31_mag_in_ext02" path="reload_not_empty_ext02/r31_mag_in_ext02.ogg" prefix="third"/>
+		<sound id="r31_mag_out_ext02" path="reload_not_empty_ext02/r31_mag_out_ext02.ogg" prefix="first"/>
+		<sound id="r31_mag_out_ext02" path="reload_not_empty_ext02/r31_mag_out_ext02.ogg" prefix="third"/>
+		<sound id="r31_reload_end_ext02" path="reload_not_empty_ext02/r31_reload_end_ext02.ogg" prefix="first"/>
+		<sound id="r31_reload_end_ext02" path="reload_not_empty_ext02/r31_reload_end_ext02.ogg" prefix="third"/>
+
+	<!-- Non-Empty Reload - Fast Magazine I & II -->
+
+		<sound id="r31_grab_new_mag_fast02" path="reload_not_empty_fast02/r31_grab_new_mag_fast02.ogg" prefix="first"/>
+		<sound id="r31_grab_new_mag_fast02" path="reload_not_empty_fast02/r31_grab_new_mag_fast02.ogg" prefix="third"/>
+		<sound id="r31_mag_contact_fast02" path="reload_not_empty_fast02/r31_mag_contact_fast02.ogg" prefix="first"/>
+		<sound id="r31_mag_contact_fast02" path="reload_not_empty_fast02/r31_mag_contact_fast02.ogg" prefix="third"/>
+		<sound id="r31_mag_grab_fast02" path="reload_not_empty_fast02/r31_mag_grab_fast02.ogg" prefix="first"/>
+		<sound id="r31_mag_grab_fast02" path="reload_not_empty_fast02/r31_mag_grab_fast02.ogg" prefix="third"/>
+		<sound id="r31_mag_in_fast02" path="reload_not_empty_fast02/r31_mag_in_fast02.ogg" prefix="first"/>
+		<sound id="r31_mag_in_fast02" path="reload_not_empty_fast02/r31_mag_in_fast02.ogg" prefix="third"/>
+		<sound id="r31_mag_out_fast02" path="reload_not_empty_fast02/r31_mag_out_fast02.ogg" prefix="first"/>
+		<sound id="r31_mag_out_fast02" path="reload_not_empty_fast02/r31_mag_out_fast02.ogg" prefix="third"/>
+		<sound id="r31_reload_end_fast02" path="reload_not_empty_fast02/r31_reload_end_fast02.ogg" prefix="first"/>
+		<sound id="r31_reload_end_fast02" path="reload_not_empty_fast02/r31_reload_end_fast02.ogg" prefix="third"/>
+
+	<!-- Non-Empty Reload - Standard Magazine -->
+
+		<sound id="r31_grab_new_mag_std" path="reload_not_empty_std/r31_grab_new_mag_std.ogg" prefix="first"/>
+		<sound id="r31_grab_new_mag_std" path="reload_not_empty_std/r31_grab_new_mag_std.ogg" prefix="third"/>
+		<sound id="r31_mag_contact_std" path="reload_not_empty_std/r31_mag_contact_std.ogg" prefix="first"/>
+		<sound id="r31_mag_contact_std" path="reload_not_empty_std/r31_mag_contact_std.ogg" prefix="third"/>
+		<sound id="r31_mag_grab_std" path="reload_not_empty_std/r31_mag_grab_std.ogg" prefix="first"/>
+		<sound id="r31_mag_grab_std" path="reload_not_empty_std/r31_mag_grab_std.ogg" prefix="third"/>
+		<sound id="r31_mag_in_std" path="reload_not_empty_std/r31_mag_in_std.ogg" prefix="first"/>
+		<sound id="r31_mag_in_std" path="reload_not_empty_std/r31_mag_in_std.ogg" prefix="third"/>
+		<sound id="r31_mag_out_std" path="reload_not_empty_std/r31_mag_out_std.ogg" prefix="first"/>
+		<sound id="r31_mag_out_std" path="reload_not_empty_std/r31_mag_out_std.ogg" prefix="third"/>
+		<sound id="r31_reload_end_std" path="reload_not_empty_std/r31_reload_end_std.ogg" prefix="first"/>
+		<sound id="r31_reload_end_std" path="reload_not_empty_std/r31_reload_end_std.ogg" prefix="third"/>
+
+	</Sounds>
+
+<!-- Default Parts -->
+
+	<WeaponMod id="wpn_fps_smg_r31_b_std" type="barrel" based_on="wpn_fps_smg_sr2_b_standard" unit="units/mods/weapons/wpn_fps_smg_r31_pts/wpn_fps_smg_r31_b_std" hidden="true" ver="2">
+		<forbids>
+            <value_node value="wpn_fps_addon_ris"/>
+        </forbids>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_r31_fl_adapter_side" type="extra" based_on="wpn_fps_addon_ris" unit="units/mods/weapons/wpn_fps_smg_r31_pts/wpn_fps_smg_r31_fl_adapter_side" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_smg_r31_fl_adapter_bottom" type="extra" based_on="wpn_fps_addon_ris" unit="units/mods/weapons/wpn_fps_smg_r31_pts/wpn_fps_smg_r31_fl_adapter_bottom" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_smg_r31_g_std" type="grip" based_on="wpn_fps_smg_sr2_fg_standard" unit="units/mods/weapons/wpn_fps_smg_r31_pts/wpn_fps_smg_r31_g_std" hidden="true" ver="2"/>
+
+    <WeaponMod id="wpn_fps_smg_r31_m_std" type="magazine" based_on="wpn_fps_smg_sr2_m_mag" unit="units/mods/weapons/wpn_fps_smg_r31_pts/wpn_fps_smg_r31_m_std" hidden="true" ver="2"/>
+
+    <WeaponMod id="wpn_fps_smg_r31_ns_std" type="barrel_ext" based_on="wpn_fps_ass_flint_ns_standard" unit="units/mods/weapons/wpn_fps_smg_r31_pts/wpn_fps_smg_r31_ns_std" hidden="true" ver="2"/>
+
+    <WeaponMod id="wpn_fps_smg_r31_o_mount" type="extra" based_on="wpn_fps_smg_sr2_o_rail" unit="units/mods/weapons/wpn_fps_smg_r31_pts/wpn_fps_smg_r31_o_mount" hidden="true" ver="2"/>
+
+    <WeaponMod id="wpn_fps_smg_r31_o_std_rear" type="sight" based_on="wpn_fps_ass_flint_o_standard" unit="units/mods/weapons/wpn_fps_smg_r31_pts/wpn_fps_smg_r31_o_std_rear" hidden="true" ver="2">
+		<stance_mod>
+			<wpn_fps_smg_r31 translation="0.12 0 -0.900"/>
+		</stance_mod>
+	</WeaponMod>
+
+    <WeaponMod id="wpn_fps_smg_r31_receiver_main" type="lower_reciever" based_on="wpn_fps_smg_sr2_body_lower" unit="units/mods/weapons/wpn_fps_smg_r31_pts/wpn_fps_smg_r31_receiver_main" hidden="true" ver="2"/>
+
+    <WeaponMod id="wpn_fps_smg_r31_s_std" type="stock" based_on="wpn_fps_smg_sr2_s_folded" unit="units/mods/weapons/wpn_fps_smg_r31_pts/wpn_fps_smg_r31_s_std" hidden="true" ver="2"/>
+
+<!-- Barrels -->
+
+	<WeaponMod id="wpn_fps_smg_r31_b_highcal" type="barrel" based_on="wpn_fps_smg_sr2_b_standard" unit="units/mods/weapons/wpn_fps_smg_r31_b_upgs/wpn_fps_smg_r31_b_highcal" hidden="false" global_value="fiery_hylie_mod" ver="2">
+        <stats damage="5" spread="1" recoil="-2" concealment="-1"/>
+		<forbids>
+            <value_node value="wpn_fps_addon_ris"/>
+        </forbids>
+		<override>
+			<wpn_fps_smg_r31_fl_adapter_side parent="barrel" a_obj="a_rail"/>
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="barrel" a_obj="a_fl"/>
+			<wpn_fps_upg_fl_ass_smg_sho_surefire parent="barrel" a_obj="a_fl"/>
+			<wpn_fps_upg_fl_ass_peq15 parent="barrel" a_obj="a_fl"/>
+			<wpn_fps_upg_fl_ass_laser parent="barrel" a_obj="a_fl"/>
+			<wpn_fps_upg_fl_ass_utg parent="barrel" a_obj="a_fl"/>
+			<wpn_fps_upg_fl_dbal_laser parent="barrel" a_obj="a_fl"/>
+
+			<wpn_fps_smg_r31_ns_std parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_large parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_medium parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_small parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_firepig parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_stubby parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_tank parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ass_ns_jprifles parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ass_ns_linear parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ass_ns_surefire parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ass_ns_battle parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_v6 parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_lmg_hk51b_ns_jcomp parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_lmg_kacchainsaw_ns_muzzle parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_lmg_kacchainsaw_ns_suppressor parent="barrel" a_obj="a_ns"/>
+		</override>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_r31_b_highcal2" type="barrel" based_on="wpn_fps_smg_sr2_b_standard" unit="units/mods/weapons/wpn_fps_smg_r31_b_upgs/wpn_fps_smg_r31_b_highcal2" hidden="false" global_value="fiery_hylie_mod" ver="2">
+        <stats damage="12" spread="3" recoil="-2" concealment="-2"/>
+		<forbids>
+            <value_node value="wpn_fps_addon_ris"/>
+        </forbids>
+		<override>
+			<wpn_fps_smg_r31_fl_adapter_side parent="barrel" a_obj="a_rail"/>
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="barrel" a_obj="a_fl"/>
+			<wpn_fps_upg_fl_ass_smg_sho_surefire parent="barrel" a_obj="a_fl"/>
+			<wpn_fps_upg_fl_ass_peq15 parent="barrel" a_obj="a_fl"/>
+			<wpn_fps_upg_fl_ass_laser parent="barrel" a_obj="a_fl"/>
+			<wpn_fps_upg_fl_ass_utg parent="barrel" a_obj="a_fl"/>
+			<wpn_fps_upg_fl_dbal_laser parent="barrel" a_obj="a_fl"/>
+
+			<wpn_fps_smg_r31_ns_std parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_large parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_medium parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_small parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_firepig parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_stubby parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_tank parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ass_ns_jprifles parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ass_ns_linear parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ass_ns_surefire parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ass_ns_battle parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_v6 parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_lmg_hk51b_ns_jcomp parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_lmg_kacchainsaw_ns_muzzle parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_lmg_kacchainsaw_ns_suppressor parent="barrel" a_obj="a_ns"/>
+		</override>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_r31_b_int" type="barrel" based_on="wpn_fps_smg_sr2_b_standard" unit="units/mods/weapons/wpn_fps_smg_r31_b_upgs/wpn_fps_smg_r31_b_int" hidden="false" global_value="fiery_hylie_mod" ver="2">
+        <stats spread="1" recoil="-2" concealment="2"/>
+		<forbids>
+            <value_node value="wpn_fps_addon_ris"/>
+
+			<value_node value="wpn_fps_smg_r31_g_mix"/>
+			<value_node value="wpn_fps_smg_r31_g_quickdraw"/>
+			<value_node value="wpn_fps_smg_r31_g_sprintout"/>
+			<value_node value="wpn_fps_smg_r31_g_sprintout2"/>
+        </forbids>
+		<override>
+			<wpn_fps_smg_r31_fl_adapter_side parent="barrel" a_obj="a_rail"/>
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="barrel" a_obj="a_fl"/>
+			<wpn_fps_upg_fl_ass_smg_sho_surefire parent="barrel" a_obj="a_fl"/>
+			<wpn_fps_upg_fl_ass_peq15 parent="barrel" a_obj="a_fl"/>
+			<wpn_fps_upg_fl_ass_laser parent="barrel" a_obj="a_fl"/>
+			<wpn_fps_upg_fl_ass_utg parent="barrel" a_obj="a_fl"/>
+			<wpn_fps_upg_fl_dbal_laser parent="barrel" a_obj="a_fl"/>
+
+			<wpn_fps_smg_r31_ns_std parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_large parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_medium parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_small parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_firepig parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_stubby parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_tank parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ass_ns_jprifles parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ass_ns_linear parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ass_ns_surefire parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ass_ns_battle parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_v6 parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_lmg_hk51b_ns_jcomp parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_lmg_kacchainsaw_ns_muzzle parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_lmg_kacchainsaw_ns_suppressor parent="barrel" a_obj="a_ns"/>
+
+			<wpn_fps_smg_r31_g_std unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+		</override>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_r31_b_mix" type="barrel" based_on="wpn_fps_smg_sr2_b_standard" unit="units/mods/weapons/wpn_fps_smg_r31_b_upgs/wpn_fps_smg_r31_b_mix" hidden="false" global_value="fiery_hylie_mod" ver="2">
+        <stats damage="3" spread="1" recoil="1" concealment="-1"/>
+		<forbids>
+            <value_node value="wpn_fps_addon_ris"/>
+        </forbids>
+		<override>
+			<wpn_fps_smg_r31_ns_std parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_large parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_medium parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_small parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_firepig parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_stubby parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_tank parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ass_ns_jprifles parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ass_ns_linear parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ass_ns_surefire parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ass_ns_battle parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_v6 parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_lmg_hk51b_ns_jcomp parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_lmg_kacchainsaw_ns_muzzle parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_lmg_kacchainsaw_ns_suppressor parent="barrel" a_obj="a_ns"/>
+		</override>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_r31_b_range" type="barrel" based_on="wpn_fps_smg_sr2_b_standard" unit="units/mods/weapons/wpn_fps_smg_r31_b_upgs/wpn_fps_smg_r31_b_range" hidden="false" global_value="fiery_hylie_mod" ver="2">
+        <stats damage="22" spread="2" recoil="2" concealment="-3"/>
+		<forbids>
+            <value_node value="wpn_fps_addon_ris"/>
+        </forbids>
+		<override>
+			<wpn_fps_smg_r31_ns_std parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_large parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_medium parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_small parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_firepig parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_stubby parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_tank parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ass_ns_jprifles parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ass_ns_linear parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ass_ns_surefire parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ass_ns_battle parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_v6 parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_lmg_hk51b_ns_jcomp parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_lmg_kacchainsaw_ns_muzzle parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_lmg_kacchainsaw_ns_suppressor parent="barrel" a_obj="a_ns"/>
+		</override>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_r31_b_velocity" type="barrel" based_on="wpn_fps_smg_sr2_b_standard" unit="units/mods/weapons/wpn_fps_smg_r31_b_upgs/wpn_fps_smg_r31_b_velocity" hidden="false" global_value="fiery_hylie_mod" ver="2">
+        <stats spread="2" recoil="2" concealment="-1"/>
+		<forbids>
+            <value_node value="wpn_fps_addon_ris"/>
+        </forbids>
+		<override>
+			<wpn_fps_smg_r31_ns_std parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_large parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_medium parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_small parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_firepig parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_stubby parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_tank parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ass_ns_jprifles parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ass_ns_linear parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ass_ns_surefire parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ass_ns_battle parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_upg_ns_ass_smg_v6 parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_lmg_hk51b_ns_jcomp parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_lmg_kacchainsaw_ns_muzzle parent="barrel" a_obj="a_ns"/>
+			<wpn_fps_lmg_kacchainsaw_ns_suppressor parent="barrel" a_obj="a_ns"/>
+		</override>
+	</WeaponMod>
+
+<!-- Magazines -->
+
+    <WeaponMod id="wpn_fps_smg_r31_m_extclip" type="magazine" a_obj="a_m_ext01" based_on="wpn_fps_smg_sr2_m_mag" unit="units/mods/weapons/wpn_fps_smg_r31_m_upgs/wpn_fps_smg_r31_m_extclip" hidden="false" global_value="fiery_hylie_mod" ver="2">
+            <stats reload="-3" extra_ammo="5" recoil="1" concealment="-1"/>
+    </WeaponMod>
+
+    <WeaponMod id="wpn_fps_smg_r31_m_extclip2" type="magazine" a_obj="a_m_ext02" based_on="wpn_fps_smg_sr2_m_mag" unit="units/mods/weapons/wpn_fps_smg_r31_m_upgs/wpn_fps_smg_r31_m_extclip2" hidden="false" global_value="fiery_hylie_mod" ver="2">
+            <stats reload="-6" extra_ammo="10" recoil="2" concealment="-3"/>
+    </WeaponMod>
+
+    <WeaponMod id="wpn_fps_smg_r31_m_fastreload" type="magazine" a_obj="a_m_ext01" based_on="wpn_fps_smg_sr2_m_mag" unit="units/mods/weapons/wpn_fps_smg_r31_m_upgs/wpn_fps_smg_r31_m_fastreload" hidden="false" global_value="fiery_hylie_mod" ver="2">
+            <stats reload="3" concealment="-1"/>
+    </WeaponMod>
+
+    <WeaponMod id="wpn_fps_smg_r31_m_fastreload2" type="magazine" a_obj="a_m_fast02" based_on="wpn_fps_smg_sr2_m_mag" unit="units/mods/weapons/wpn_fps_smg_r31_m_upgs/wpn_fps_smg_r31_m_fastreload2" hidden="false" global_value="fiery_hylie_mod" ver="2">
+            <stats reload="6" extra_ammo="-2" concealment="1"/>
+    </WeaponMod>
+
+<!-- Stocks -->
+
+    <WeaponMod id="wpn_fps_smg_r31_s_adsmove" type="stock" based_on="wpn_fps_smg_sr2_s_folded" unit="units/mods/weapons/wpn_fps_smg_r31_s_upgs/wpn_fps_smg_r31_s_adsmove" hidden="false" global_value="fiery_hylie_mod" ver="2">
+            <stats spread="1" recoil="-1"/>
+    </WeaponMod>
+
+    <WeaponMod id="wpn_fps_smg_r31_s_flinch" type="stock" based_on="wpn_fps_smg_sr2_s_folded" unit="units/mods/weapons/wpn_fps_smg_r31_s_upgs/wpn_fps_smg_r31_s_flinch" hidden="false" global_value="fiery_hylie_mod" ver="2">
+            <stats recoil="2" concealment="-1"/>
+    </WeaponMod>
+
+    <WeaponMod id="wpn_fps_smg_r31_s_hipfiremove" type="stock" based_on="wpn_fps_smg_sr2_s_folded" unit="units/mods/weapons/wpn_fps_smg_r31_s_upgs/wpn_fps_smg_r31_s_hipfiremove" hidden="false" global_value="fiery_hylie_mod" ver="2">
+            <stats recoil="-2" concealment="2"/>
+    </WeaponMod>
+
+    <WeaponMod id="wpn_fps_smg_r31_s_mix" type="stock" based_on="wpn_fps_smg_sr2_s_folded" unit="units/mods/weapons/wpn_fps_smg_r31_s_upgs/wpn_fps_smg_r31_s_mix" hidden="false" global_value="fiery_hylie_mod" ver="2">
+            <stats spread="2" recoil="2" concealment="-2"/>
+    </WeaponMod>
+
+    <WeaponMod id="wpn_fps_smg_r31_s_mix2" type="stock" based_on="wpn_fps_smg_sr2_s_folded" unit="units/mods/weapons/wpn_fps_smg_r31_s_upgs/wpn_fps_smg_r31_s_mix2" hidden="false" global_value="fiery_hylie_mod" ver="2">
+            <stats spread="1" recoil="1" concealment="-1"/>
+    </WeaponMod>
+
+<!-- Grips -->
+
+    <WeaponMod id="wpn_fps_smg_r31_g_mix" type="grip" based_on="wpn_fps_smg_sr2_fg_standard" unit="units/mods/weapons/wpn_fps_smg_r31_g_upgs/wpn_fps_smg_r31_g_mix" hidden="false" global_value="fiery_hylie_mod" ver="2">
+            <stats spread="1" recoil="1" concealment="-1"/>
+    </WeaponMod>
+
+    <WeaponMod id="wpn_fps_smg_r31_g_quickdraw" type="grip" based_on="wpn_fps_smg_sr2_fg_standard" unit="units/mods/weapons/wpn_fps_smg_r31_g_upgs/wpn_fps_smg_r31_g_quickdraw" hidden="false" global_value="fiery_hylie_mod" ver="2">
+            <stats recoil="1"/>
+    </WeaponMod>
+
+    <WeaponMod id="wpn_fps_smg_r31_g_quickdraw2" type="grip" based_on="wpn_fps_smg_sr2_fg_standard" unit="units/mods/weapons/wpn_fps_smg_r31_g_upgs/wpn_fps_smg_r31_g_quickdraw2" hidden="false" global_value="fiery_hylie_mod" ver="2">
+            <stats recoil="1"/>
+    </WeaponMod>
+
+    <WeaponMod id="wpn_fps_smg_r31_g_sprintout" type="grip" based_on="wpn_fps_smg_sr2_fg_standard" unit="units/mods/weapons/wpn_fps_smg_r31_g_upgs/wpn_fps_smg_r31_g_sprintout" hidden="false" global_value="fiery_hylie_mod" ver="2">
+            <stats spread="1"/>
+    </WeaponMod>
+
+    <WeaponMod id="wpn_fps_smg_r31_g_sprintout2" type="grip" based_on="wpn_fps_smg_sr2_fg_standard" unit="units/mods/weapons/wpn_fps_smg_r31_g_upgs/wpn_fps_smg_r31_g_sprintout2" hidden="false" global_value="fiery_hylie_mod" ver="2">
+            <stats spread="-1" recoil="1" concealment="2"/>
+    </WeaponMod>
+
+<!-- Weapon Data -->
+
+    <Weapon unlock_level="25">
+
+		<weapon id="r31" based_on="sr2" weapon_hold="grendel" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="4" has_description="true" desc_id="bm_w_r31_desc" texture_bundle_folder="mods" muzzleflash="effects/payday2/particles/weapons/556_auto_fps" muzzleflash_silenced="effects/payday2/particles/weapons/556_auto_silence_fps" shell_ejection="effects/payday2/particles/weapons/shells/shell_9mm" global_value="fiery_hylie_mod">
+
+            <stats damage="38" spread="16" spread_moving="15" recoil="18" concealment="25"/>
+
+            <sounds fire="r31_fire" fire_auto="r31_fire" fire_single="r31_fire" use_fix="true"/>
+
+			<AMMO_PICKUP>
+                <value_node value="2.45"/>
+                <value_node value="4.00"/>
+            </AMMO_PICKUP>
+
+            <kick>
+                <standing>
+                    <value_node value="0.6"/>
+                    <value_node value="0.8"/>
+                    <value_node value="-1.0"/>
+                    <value_node value="1.0"/>
+                </standing>
+                <crouching>
+                    <value_node value="0.6"/>
+                    <value_node value="0.8"/>
+                    <value_node value="-1.0"/>
+                    <value_node value="1.0"/>
+                </crouching>
+                <steelsight>
+                    <value_node value="0.6"/>
+                    <value_node value="0.8"/>
+                    <value_node value="-1.0"/>
+                    <value_node value="1.0"/>
+                </steelsight>
+            </kick>
+
+            <fire_mode_data fire_rate="0.1360544217687075"/>
+
+            <timers reload_empty="2.6" reload_not_empty="1.8"/>
+
+            <animations reload_name_id="grendel"/>
+
+	    </weapon>
+
+		<factory id="wpn_fps_smg_r31" unit="units/mods/weapons/wpn_fps_smg_r31/wpn_fps_smg_r31">
+
+			<animations fire="recoil" fire_steelsight="recoil" reload="reload" reload_not_empty="reload_not_empty"/>
+
+			<adds>
+				<wpn_fps_upg_o_specter>
+						<value_node value="wpn_fps_smg_r31_o_mount"/>
+				</wpn_fps_upg_o_specter>	
+
+				<wpn_fps_upg_o_aimpoint>
+						<value_node value="wpn_fps_smg_r31_o_mount"/>
+				</wpn_fps_upg_o_aimpoint>
+
+				<wpn_fps_upg_o_docter>
+						<value_node value="wpn_fps_smg_r31_o_mount"/>
+				</wpn_fps_upg_o_docter>	
+
+				<wpn_fps_upg_o_eotech>
+						<value_node value="wpn_fps_smg_r31_o_mount"/>
+				</wpn_fps_upg_o_eotech>	
+
+				<wpn_fps_upg_o_t1micro>
+						<value_node value="wpn_fps_smg_r31_o_mount"/>
+				</wpn_fps_upg_o_t1micro>
+
+				<wpn_fps_upg_o_acog>
+						<value_node value="wpn_fps_smg_r31_o_mount"/>
+				</wpn_fps_upg_o_acog>
+
+				<wpn_fps_upg_o_cmore>
+						<value_node value="wpn_fps_smg_r31_o_mount"/>
+				</wpn_fps_upg_o_cmore>	
+
+				<wpn_fps_upg_o_aimpoint_2>
+						<value_node value="wpn_fps_smg_r31_o_mount"/>
+				</wpn_fps_upg_o_aimpoint_2>
+
+				<wpn_fps_upg_o_eotech_xps>
+						<value_node value="wpn_fps_smg_r31_o_mount"/>
+				</wpn_fps_upg_o_eotech_xps>	
+
+				<wpn_fps_upg_o_reflex>
+						<value_node value="wpn_fps_smg_r31_o_mount"/>
+				</wpn_fps_upg_o_reflex>	
+
+				<wpn_fps_upg_o_rx01>
+						<value_node value="wpn_fps_smg_r31_o_mount"/>
+				</wpn_fps_upg_o_rx01>
+
+				<wpn_fps_upg_o_rx30>
+						<value_node value="wpn_fps_smg_r31_o_mount"/>
+				</wpn_fps_upg_o_rx30>
+
+				<wpn_fps_upg_o_cs>
+						<value_node value="wpn_fps_smg_r31_o_mount"/>
+				</wpn_fps_upg_o_cs>	
+
+				<wpn_fps_upg_o_fc1>
+						<value_node value="wpn_fps_smg_r31_o_mount"/>
+				</wpn_fps_upg_o_fc1>
+
+				<wpn_fps_upg_o_bmg>
+						<value_node value="wpn_fps_smg_r31_o_mount"/>
+				</wpn_fps_upg_o_bmg>
+
+				<wpn_fps_upg_o_spot>
+						<value_node value="wpn_fps_smg_r31_o_mount"/>
+				</wpn_fps_upg_o_spot>	
+
+				<wpn_fps_upg_o_uh>
+						<value_node value="wpn_fps_smg_r31_o_mount"/>
+				</wpn_fps_upg_o_uh>	
+
+				<wpn_fps_upg_o_poe>
+						<value_node value="wpn_fps_smg_r31_o_mount"/>
+				</wpn_fps_upg_o_poe>
+
+				<wpn_fps_upg_o_tf90>
+						<value_node value="wpn_fps_smg_r31_o_mount"/>
+				</wpn_fps_upg_o_tf90>
+
+				<wpn_fps_upg_o_hamr>
+						<value_node value="wpn_fps_smg_r31_o_mount"/>
+				</wpn_fps_upg_o_hamr>	
+
+				<wpn_fps_upg_o_atibal>
+						<value_node value="wpn_fps_smg_r31_o_mount"/>
+				</wpn_fps_upg_o_atibal>	
+
+				<wpn_fps_upg_o_health>				
+						<value_node value="wpn_fps_smg_r31_o_mount"/>						
+				</wpn_fps_upg_o_health>
+
+				<wpn_fps_upg_fl_ass_laser>
+						<value_node value="wpn_fps_smg_r31_fl_adapter_side"/>
+				</wpn_fps_upg_fl_ass_laser>	
+
+				<wpn_fps_upg_fl_ass_peq15>
+						<value_node value="wpn_fps_smg_r31_fl_adapter_side"/>
+				</wpn_fps_upg_fl_ass_peq15>
+
+				<wpn_fps_upg_fl_ass_smg_sho_peqbox>
+						<value_node value="wpn_fps_smg_r31_fl_adapter_side"/>
+				</wpn_fps_upg_fl_ass_smg_sho_peqbox>
+
+				<wpn_fps_upg_fl_ass_smg_sho_surefire>
+						<value_node value="wpn_fps_smg_r31_fl_adapter_side"/>
+				</wpn_fps_upg_fl_ass_smg_sho_surefire>	
+
+				<wpn_fps_upg_fl_ass_utg>
+						<value_node value="wpn_fps_smg_r31_fl_adapter_side"/>
+				</wpn_fps_upg_fl_ass_utg>	
+
+				<wpn_fps_upg_fl_dbal_laser>				
+						<value_node value="wpn_fps_smg_r31_fl_adapter_side"/>						
+				</wpn_fps_upg_fl_dbal_laser>
+			</adds>
+
+            <override>
+				<wpn_fps_smg_r31_o_mount a_obj="a_o_mount"/>
+				<wpn_fps_smg_r31_fl_adapter_bottom a_obj="a_b"/>
+				<wpn_fps_smg_r31_fl_adapter_side a_obj="a_b"/>
+            </override>
+
+			<default_blueprint>
+				<value_node value="wpn_fps_smg_r31_b_std"/>
+				<value_node value="wpn_fps_smg_r31_g_std"/>
+				<value_node value="wpn_fps_smg_r31_m_std"/>
+				<value_node value="wpn_fps_smg_r31_ns_std"/>
+				<value_node value="wpn_fps_smg_r31_o_std_rear"/>
+				<value_node value="wpn_fps_smg_r31_receiver_main"/>
+				<value_node value="wpn_fps_smg_r31_s_std"/>
+			</default_blueprint>
+
+			<uses_parts>
+				<value_node value="wpn_fps_smg_r31_b_std"/>
+				<value_node value="wpn_fps_smg_r31_g_std"/>
+				<value_node value="wpn_fps_smg_r31_m_std"/>
+				<value_node value="wpn_fps_smg_r31_ns_std"/>
+				<value_node value="wpn_fps_smg_r31_o_std_rear"/>
+				<value_node value="wpn_fps_smg_r31_receiver_main"/>
+				<value_node value="wpn_fps_smg_r31_s_std"/>
+
+				<value_node value="wpn_fps_smg_r31_b_highcal"/>
+				<value_node value="wpn_fps_smg_r31_b_highcal2"/>
+				<value_node value="wpn_fps_smg_r31_b_int"/>
+				<value_node value="wpn_fps_smg_r31_b_mix"/>
+				<value_node value="wpn_fps_smg_r31_b_range"/>
+				<value_node value="wpn_fps_smg_r31_b_velocity"/>
+
+				<value_node value="wpn_fps_smg_r31_g_mix"/>
+				<value_node value="wpn_fps_smg_r31_g_quickdraw"/>
+				<value_node value="wpn_fps_smg_r31_g_quickdraw"/>
+				<value_node value="wpn_fps_smg_r31_g_sprintout"/>
+				<value_node value="wpn_fps_smg_r31_g_sprintout2"/>
+
+				<value_node value="wpn_fps_smg_r31_m_extclip"/>
+				<value_node value="wpn_fps_smg_r31_m_extclip2"/>
+				<value_node value="wpn_fps_smg_r31_m_fastreload"/>
+				<value_node value="wpn_fps_smg_r31_m_fastreload2"/>
+
+				<value_node value="wpn_fps_smg_r31_s_adsmove"/>
+				<value_node value="wpn_fps_smg_r31_s_flinch"/>
+				<value_node value="wpn_fps_smg_r31_s_hipfiremove"/>
+				<value_node value="wpn_fps_smg_r31_s_mix"/>
+				<value_node value="wpn_fps_smg_r31_s_mix2"/>
+
+				<value_node value="wpn_fps_upg_i_autofire"/>
+				<value_node value="wpn_fps_upg_i_singlefire"/>
+
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_v6"/>
+				<value_node value="wpn_fps_lmg_hk51b_ns_jcomp"/>
+				<value_node value="wpn_fps_lmg_kacchainsaw_ns_muzzle"/>
+				<value_node value="wpn_fps_lmg_kacchainsaw_ns_suppressor"/>
+
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/>
+
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_bmg"/>
+				<value_node value="wpn_fps_upg_o_uh"/>
+				<value_node value="wpn_fps_upg_o_fc1"/>
+				<value_node value="wpn_fps_upg_o_tf90"/>
+				<value_node value="wpn_fps_upg_o_poe"/>
+				<value_node value="wpn_fps_upg_o_hamr"/>
+				<value_node value="wpn_fps_upg_o_atibal"/>
+				<value_node value="wpn_fps_upg_o_health"/>
+
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+				<value_node value="wpn_fps_upg_o_sig"/>
+			</uses_parts>
+
+		</factory>
+
+		<stance>
+
+			<standard>
+				<shoulders rotation="8.72532e-006 -0.0174524 -1.52301e-007 -0.999848" translation="-7.161 -0.464 1.831"/>
+			</standard>
+
+			<crouched>
+				<shoulders rotation="8.72532e-006 -0.0174524 -1.52301e-007 -0.999848" translation="-7.461 -1.464 0.831"/>
+			</crouched>
+
+			<steelsight>
+				<shoulders rotation="8.72664e-006 7.61544e-009 -0.000872665 -1" translation="-11.811 -4.064 6.531"/>
+			</steelsight>
+
+		</stance>
+
+	</Weapon>
+	
+	<Hooks directory="hooks">
+		<hook file="newraycastweaponbase.lua" source_file="lib/units/weapons/newraycastweaponbase"/>
+		
+	</Hooks>
+
+</mod>

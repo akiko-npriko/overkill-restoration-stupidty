@@ -1,0 +1,10 @@
+<materials version="3" group="weapon_typhoon">
+	<material name="mat_1" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture 	 	file="units/mods/weapons/wpn_fps_smg_crysis3_typhoon_pts/textures/typhoon_material_1_df" />
+        <bump_normal_texture 	file="units/mods/weapons/wpn_fps_smg_crysis3_typhoon_pts/textures/typhoon_material_1_nm" />
+        <material_texture		file="units/mods/weapons/wpn_fps_smg_crysis3_typhoon_pts/textures/typhoon_material_1_gsm"/>
+    </material>	
+	<material name="decals" render_template="decal:DIFFUSE_TEXTURE:RL_FPS_WEAPON" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_smg_crysis3_typhoon_pts/textures/typhoon_decals_df"/>
+    </material>	
+</materials>

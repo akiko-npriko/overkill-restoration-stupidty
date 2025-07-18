@@ -1,0 +1,29 @@
+<dynamic_object>
+    <diesel materials="units/mods/weapons/wpn_fps_pis_perun_pts/wpn_fps_pis_perun_body" orientation_object="rp_wpn_fps_pis_perun_body"/>
+    <animations>
+		<animation_group name="reload">
+		  <object name="anim_mag_reload" enabled="true" />
+		</animation_group>		
+		<animation_group name="reload_not_empty">
+		  <object name="anim_mag_reload_not_empty" enabled="true" />
+		</animation_group>
+		<animation_group name="recoil">
+		  <object name="anim_hammer_recoil" enabled="true" />
+		  <object name="anim_cylinder_recoil" enabled="true" />
+		</animation_group>
+		<animation_group name="equip">
+			<object name="anim_hinge_equip" enabled="false" />
+		</animation_group>
+	</animations>
+	<graphics>
+        <object enabled="true" name="g_perun_body" />
+		<object enabled="true" name="g_perun_hammer" />
+		<object enabled="true" name="g_perun_cylinder" />
+		<object enabled="true" name="g_bullet" />
+		<object enabled="true" name="g_perun_mag" />
+		<object enabled="true" name="g_perun_barrel" />
+		<object enabled="true" name="g_perun_grip" />
+        <object enabled="true" name="g_sightsil" />
+        <object enabled="true" name="g_sw_magnum" />
+    </graphics>
+</dynamic_object>

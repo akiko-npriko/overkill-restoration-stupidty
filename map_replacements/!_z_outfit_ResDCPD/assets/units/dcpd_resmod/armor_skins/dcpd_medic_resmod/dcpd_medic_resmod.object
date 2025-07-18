@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/dcpd_resmod/armor_skins/dcpd_medic_resmod/dcpd_medic_resmod" orientation_object="root_point" />
+
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="co_culling">
+			<object name="g_body" enabled="true"/>
+			<object name="g_helmet_lod1" enabled="true"/>
+
+		<!--Balaclavas; Only one should be used at a time-->
+			<object name="g_balaclava_a" enabled="true"/> <!--Covered nose-->
+			<object name="g_balaclava_b" enabled="false"/> <!--Exposed nose-->
+
+		<!--Heads; Only one should be used at a time and they should not be used alongside a balaclava-->
+			<object name="g_head_a" enabled="false"/>
+			<object name="g_head_b" enabled="false"/>
+			<object name="g_head_c" enabled="false"/>
+			<object name="g_head_d" enabled="false"/>
+			<object name="g_head_e" enabled="false"/>
+			<object name="g_head_f" enabled="false"/>
+			<object name="g_head_g" enabled="false"/>
+
+		<!--Faces; Only one should be used at a time and they should only be used alongside a balaclava-->
+			<object name="g_face_a" enabled="true"/>
+			<object name="g_face_b" enabled="false"/>
+			<object name="g_face_c" enabled="false"/>
+			<object name="g_face_d" enabled="false"/>
+			<object name="g_face_e" enabled="false"/>
+
+		<!--Goggles; Only one should be used at a time and they should each be used with their corresponding glass-->
+			<object name="g_goggles_a" enabled="false"/> <!--Strap goes inside helmet; Use alongside g_glass-->
+			<object name="g_helmet_lod3" enabled="false"/> <!--Strap goes around helmet; Use alongside g_glass-->
+			<object name="g_glass" enabled="false"/>
+
+			<object name="g_goggles_c" enabled="true"/> <!--SWAT goggles; Use alongside g_glass_c-->
+			<object name="g_glass_c" enabled="true"/>
+
+			<object name="g_glasses" enabled="false"/> <!--Glasses; Use alongside g_glasses_glass-->
+			<object name="g_glasses_glass" enabled="false"/>
+
+		<!--Helmet Flashlight-->
+			<object name="g_helmet_lod5" enabled="true"/>
+
+		<!--Headset-->
+			<object name="g_headset" enabled="false"/>
+
+		<!--Gun Holsters-->
+			<object name="g_holster_l" enabled="false"/> <!--Left thigh-->
+			<object name="g_holster_r" enabled="true"/> <!--Right thigh-->
+		</graphic_group>
+	</graphics>
+
+	<effects>
+		<effect_spawner name="es_flashlight" enabled="false" object="a_night_helmetlight" effect="effects/particles/weapons/flashlight/flashlight" />
+	</effects>
+
+</dynamic_object>

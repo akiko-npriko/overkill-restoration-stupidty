@@ -1,0 +1,101 @@
+<mod name="Baker's Repeater">
+	<Localization directory="loc" default="english.txt"/>
+	<AssetUpdates id="48128" version="1.1" provider="modworkshop"/>
+	<GlobalValue id="fiery_hylie_mod" color="Color(0.8, 0.7, 0.2)"/>
+	<AddFiles directory="assets" auto_generate="true"/>
+	<Hooks directory="hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>	
+	</Hooks>
+	<Sounds directory="assets/sounds">
+		<sound id="baker_fire" path="baker_fire.ogg" prefix="regular"/>
+		
+		<sound id="wp_baker_bullet_in" path="wp_baker_bullet_in.ogg" prefix="first"/>
+		<sound id="wp_baker_bullet_in" path="wp_baker_bullet_in.ogg" prefix="third"/>
+		<sound id="wp_baker_bullet_take_new" path="wp_baker_bullet_take_new.ogg" prefix="first"/>
+		<sound id="wp_baker_bullet_take_new" path="wp_baker_bullet_take_new.ogg" prefix="third"/>
+		<sound id="wp_baker_casing_land" path="wp_baker_casing_land.ogg" prefix="first"/>
+		<sound id="wp_baker_casing_land" path="wp_baker_casing_land.ogg" prefix="third"/>
+		<sound id="wp_baker_lever_pull" path="wp_baker_lever_pull.ogg" prefix="first"/>
+		<sound id="wp_baker_lever_pull" path="wp_baker_lever_pull.ogg" prefix="third"/>
+		<sound id="wp_baker_lever_push" path="wp_baker_lever_push.ogg" prefix="first"/>
+		<sound id="wp_baker_lever_push" path="wp_baker_lever_push.ogg" prefix="third"/>
+	</Sounds>
+
+	<!-- Baker's Repeater - Parts -->
+
+	<WeaponMod id="wpn_fps_snp_baker_barrel" type="barrel" based_on="wpn_fps_snp_winchester_b_standard" unit="units/mods/weapons/wpn_fps_snp_baker_pts/wpn_fps_snp_baker_barrel" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_snp_baker_body" type="lower_reciever" based_on="wpn_fps_snp_winchester_body_standard" unit="units/mods/weapons/wpn_fps_snp_baker_pts/wpn_fps_snp_baker_body" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_snp_baker_mag" type="magazine" based_on="wpn_fps_snp_winchester_m_standard" unit="units/mods/weapons/wpn_fps_snp_baker_pts/wpn_fps_snp_baker_mag" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_snp_baker_stock" type="stock" based_on="wpn_fps_snp_winchester_s_standard" unit="units/mods/weapons/wpn_fps_snp_baker_pts/wpn_fps_snp_baker_stock" hidden="true" ver="2"/>
+
+	<!-- Baker's Repeater - Factory -->
+
+	<Weapon unlock_level="12">
+		<weapon id="baker" based_on="winchester1874" weapon_hold="baker" armor_piercing_chance="1" texture_bundle_folder="mods" NR_CLIPS_MAX="7" CLIP_AMMO_MAX="6" global_value="fiery_hylie_mod" shell_ejection="effects/payday2/particles/weapons/shells/shell_sniper_9mm" muzzleflash="effects/payday2/particles/weapons/big_762_auto_fps">
+
+			<stats damage="122" spread="24" spread_moving="20" recoil="6" concealment="12"/>
+
+			<stats_modifiers damage="2"/>
+
+			<fire_mode_data fire_rate="0.7"/>
+
+				<AMMO_PICKUP>
+					<value_node value="1.00"/>
+					<value_node value="2.30"/>
+				</AMMO_PICKUP>
+
+			<kick>
+				<standing>
+					<value_node value="3.5"/>
+					<value_node value="4.0"/>
+					<value_node value="-0.8"/>
+					<value_node value="0.8"/>
+				</standing>
+				<crouching>
+					<value_node value="3.0"/>
+					<value_node value="3.5"/>
+					<value_node value="-0.6"/>
+					<value_node value="0.6"/>
+				</crouching>
+				<steelsight>
+					<value_node value="2.5"/>
+					<value_node value="3.0"/>
+					<value_node value="-0.6"/>
+					<value_node value="0.6"/>
+				</steelsight>
+			</kick>
+
+			<sounds fire="baker_fire" fire_single="baker_fire" stop_fire="m1873_stop" use_fix="true">
+			  <reload wp_m1873_lever_pull="baker_lever_pull"
+		    wp_m1873_lever_push="baker_lever_push"
+			wp_m1873_bullet_in="baker_bullet_in"
+			wp_m1873_casing_land="baker_casing_land"/>	
+			</sounds>
+
+			<timers unequip="0.9" equip="0.9"/>
+
+			<animations reload_name_id="baker"/>
+
+		</weapon>
+		<factory id="wpn_fps_snp_baker" unit="units/mods/weapons/wpn_fps_snp_baker/wpn_fps_snp_baker">
+			<animations fire="recoil" fire_steelsight="recoil" reload="reload" reload_enter="reload_enter" reload_exit="reload_exit" />
+			<adds/>
+		    <override/>
+			<default_blueprint>
+				<value_node value="wpn_fps_snp_baker_barrel"/>
+				<value_node value="wpn_fps_snp_baker_body"/>
+				<value_node value="wpn_fps_snp_baker_mag"/>
+				<value_node value="wpn_fps_snp_baker_stock"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_snp_baker_barrel"/>
+				<value_node value="wpn_fps_snp_baker_body"/>
+				<value_node value="wpn_fps_snp_baker_mag"/>
+				<value_node value="wpn_fps_snp_baker_stock"/>
+			</uses_parts>
+		</factory>
+	</Weapon>
+</mod>

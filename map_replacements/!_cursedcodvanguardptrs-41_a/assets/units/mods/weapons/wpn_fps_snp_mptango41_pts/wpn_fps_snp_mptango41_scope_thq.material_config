@@ -1,0 +1,27 @@
+<materials version="3" group="weapon_group">
+	<material unique="true" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:FPS:HOLO:VIEW_ANGLE_FALLOFF_OP" name="sight" version="2">
+		<variable type="scalar" name="intensity" value="reddot"/>
+		<diffuse_texture file="units/pd2_dlc1/weapons/wpn_effects_textures/wpn_sight_reticle_1_il"/>
+		<variable type="scalar" name="falloff_exp" value="1000"/>
+		<variable type="vector3" name="holo_target_offset" value="0 10000 0"/>
+		<variable type="vector3" name="holo_reticle_scale" value="0.5 1 20"/>
+	</material>
+	<material name="mtr_lens_objective" decal_material="glass_breakable" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/payday2/weapons/wpn_effects_textures/green_glass_df"/>
+        <bump_normal_texture  file="core/textures/blank_texture_nm" />
+		<reflection_texture type="matcap" file="units/pd2_dlc_lupus/materials/matcap_redwhite_df"/>
+	</material>
+	<material name="mtr_lens_hip" decal_material="glass_breakable" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/payday2/weapons/wpn_effects_textures/green_glass_df"/>
+        <bump_normal_texture  file="core/textures/blank_texture_nm" />
+		<reflection_texture type="matcap" file="units/pd2_dlc_lupus/materials/matcap_redwhite_df"/>
+	</material>
+	<material name="mtr_mptango41_scope_zs" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_snp_mptango41_pts/textures/mptango41_scope_zs_df" mip="1"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_snp_mptango41_pts/textures/mptango41_scope_zs_nm" mip="1"/>
+    </material>	
+	<material name="mtr_moscar32_cord_scope_zs" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_snp_mptango41_pts/textures/moscar32_cord_df" mip="1"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_snp_mptango41_pts/textures/moscar32_cord_nm" mip="1"/>
+    </material>	
+</materials>

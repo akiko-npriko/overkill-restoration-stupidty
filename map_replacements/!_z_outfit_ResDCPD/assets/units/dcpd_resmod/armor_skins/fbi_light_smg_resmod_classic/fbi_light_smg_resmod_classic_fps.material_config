@@ -1,0 +1,10 @@
+<materials version="3" group="ene_fbi_swat_1">
+	<material name="mtr_swat" version="2" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<bump_normal_texture 	file="units/dcpd_resmod/armor_skins/shared_textures/swat_fbi_body_nm"/>
+		<diffuse_texture 	file="units/dcpd_resmod/armor_skins/shared_textures/swat_fbi_body_df"/>
+	</material>
+    <material name="shadow_caster" render_template="shadow_caster_only:SKINNED_1WEIGHT" version="2"/>
+</materials>
+
+ 
+ 

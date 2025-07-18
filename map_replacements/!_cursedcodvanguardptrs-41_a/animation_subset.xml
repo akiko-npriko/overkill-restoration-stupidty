@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+		
+		<!--
+			Replace all instances of 'mptango41' below with the ID of your animation.
+			Note that recoil_steelsight does not have a unique animation in this mptango41; you can edit the filepath in the 'file' section with one if you wish.
+			If your gun cannot be fired in full auto, you can delete the recoil_enter, recoil_loop, and recoil_exit lines.
+		-->
+		
+		<target mode="attach">
+			<anim name="mptango41_reload" 								file="anims/fps/mptango41/mptango41_reload" blend_set="all"/>
+			<anim name="mptango41_reload_not_empty" 						file="anims/fps/mptango41/mptango41_reload_not_empty" blend_set="all"/>
+			<anim name="mptango41_extended_large_mag_reload" 				file="anims/fps/mptango41/mptango41_extended_large_mag_reload" blend_set="all"/>
+			<anim name="mptango41_extended_large_mag_reload_not_empty" 		file="anims/fps/mptango41/mptango41_extended_large_mag_reload_not_empty" blend_set="all"/>
+			<anim name="mptango41_extended_mag_reload" 						file="anims/fps/mptango41/mptango41_extended_mag_reload" blend_set="all"/>
+			<anim name="mptango41_extended_mag_reload_not_empty" 			file="anims/fps/mptango41/mptango41_extended_mag_reload_not_empty" blend_set="all"/>
+			<anim name="mptango41_fast_mag_reload" 								file="anims/fps/mptango41/mptango41_fast_mag_reload" blend_set="all"/>
+			<anim name="mptango41_fast_mag_reload_not_empty" 					file="anims/fps/mptango41/mptango41_fast_mag_reload_not_empty" blend_set="all"/>
+			<anim name="mptango41_idle" 									file="anims/fps/mptango41/mptango41_idle" blend_set="all"/>
+			<anim name="mptango41_recoil" 								file="anims/fps/mptango41/mptango41_recoil" blend_set="all"/>
+			<anim name="mptango41_recoil_steelsight" 						file="anims/fps/mptango41/mptango41_recoil_steelsight" blend_set="all"/>
+			<anim name="mptango41_equip" 									file="anims/fps/mptango41/mptango41_equip" blend_set="all"/>
+			<anim name="mptango41_unequip" 								file="anims/fps/mptango41/mptango41_unequip" blend_set="all"/>
+			<anim name="mptango41_melee" 									file="anims/fps/mptango41/mptango41_melee" blend_set="all"/>
+			<anim name="mptango41_melee_miss" 							file="anims/fps/mptango41/mptango41_melee_miss" blend_set="all"/>
+			<anim name="mptango41_use" 									file="anims/fps/mptango41/mptango41_use" blend_set="all"/>
+			<anim name="mptango41_sprint_enter" 							file="anims/fps/mptango41/mptango41_sprint_enter" blend_set="all"/>
+			<anim name="mptango41_sprint" 								file="anims/fps/mptango41/mptango41_sprint" blend_set="all"/>
+			<anim name="mptango41_sprint_exit" 							file="anims/fps/mptango41/mptango41_sprint_exit" blend_set="all"/>
+			<anim name="mptango41_com_down_var1" 							file="anims/fps/mptango41/mptango41_com_var1" blend_set="all"/>
+			<anim name="mptango41_com_stop" 								file="anims/fps/mptango41/mptango41_com_var5" blend_set="all"/>
+			<anim name="mptango41_com_come" 								file="anims/fps/mptango41/mptango41_com_var6" blend_set="all"/>
+			<anim name="mptango41_com_point" 								file="anims/fps/mptango41/mptango41_com_var7" blend_set="all"/>
+			<anim name="mptango41_get_up" 								file="anims/fps/mptango41/mptango41_get_up" blend_set="all"/>
+			<anim name="mptango41_gogo" 									file="anims/fps/mptango41/mptango41_gogo" blend_set="all"/>
+			<anim name="mptango41_tased" 									file="anims/fps/mptango41/mptango41_tased" blend_set="all"/>
+			<anim name="mptango41_tased_boost" 							file="anims/fps/mptango41/mptango41_tased_boost" blend_set="all"/>
+			<anim name="mptango41_tased_exit" 							file="anims/fps/mptango41/mptango41_tased_exit" blend_set="all"/>
+			<anim name="mptango41_inspect" 								file="anims/fps/mptango41/mptango41_inspect" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

@@ -1,0 +1,677 @@
+<table name="CZ Scorpion Evo" image="guis/mod_icons/czevo" color="Color(0.01,0.62,0.98)">
+	<Localization directory="Loc" default="english.txt"/>
+	<AssetUpdates id="24363" version="6" provider="modworkshop"/>
+	<GlobalValue id="czevomod" color="Color(1, 0.5, 0)"/>
+
+	<WeaponMod id="wpn_fps_smg_czevo_body" based_on="wpn_fps_smg_shepheard_g_standard" type="upper_reciever" unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_smg_czevo_body_2" based_on="wpn_fps_smg_shepheard_g_standard" type="upper_reciever" unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_2" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+	<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_czevo_body_3" based_on="wpn_fps_smg_shepheard_g_standard" type="upper_reciever" unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_3" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+	<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_czevo_body_4" based_on="wpn_fps_smg_shepheard_g_standard" type="upper_reciever" unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_4" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+	<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_czevo_body_5" based_on="wpn_fps_smg_shepheard_g_standard" type="upper_reciever" unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_5" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+	<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_czevo_body_6" based_on="wpn_fps_smg_shepheard_g_standard" type="upper_reciever" unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_6" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+	<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_czevo_body_7" based_on="wpn_fps_smg_shepheard_g_standard" type="upper_reciever" unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_7" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+	<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_czevo_body_8" based_on="wpn_fps_smg_shepheard_g_standard" type="upper_reciever" unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_8" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+	<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_czevo_body_9" based_on="wpn_fps_smg_shepheard_g_standard" type="upper_reciever" unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_9" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+	<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_czevo_vg_angled" based_on="wpn_fps_smg_shepheard_g_standard" type="vertical_grip" unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_angled" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+		<stats spread="1" concealment="-2" />
+	<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_czevo_vg_handstop" based_on="wpn_fps_smg_shepheard_g_standard" type="vertical_grip" unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_handstop" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats recoil="1" concealment="-1"/>
+	<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_czevo_vg_cover" based_on="wpn_fps_smg_shepheard_g_standard" type="vertical_grip" unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_cover" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+		<stats recoil="1"/>
+	<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_czevo_vg_tti" based_on="wpn_fps_smg_shepheard_g_standard" type="vertical_grip" unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_tti" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+		<stats recoil="2" concealment="-2" />
+	<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_czevo_vg_ptk" based_on="wpn_fps_smg_shepheard_g_standard" type="vertical_grip" unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_ptk" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+		<stats spread="2" recoil="-1" concealment="-2" />
+	<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_czevo_sight" based_on="wpn_fps_smg_shepheard_g_standard" type="sight" unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_sight" drop="false" is_a_unlockable="false">
+		<adds>
+			<value_node value="wpn_fps_smg_czevo_sight_glow"/>
+		</adds>
+		<forbids>
+			<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+		</forbids>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_czevo_sight_glow" based_on="wpn_fps_smg_shepheard_g_standard" type="sight_glow_default" unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_sight_glow" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_smg_czevo_sight_troy" based_on="wpn_fps_smg_shepheard_g_standard" type="sight" unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_sight_troy" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+	<stats recoil="1"/>
+		<forbids>
+			<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+		</forbids>
+		<adds>
+			<value_node value="wpn_fps_smg_czevo_sight_troy_glow"/>
+		</adds>
+	<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_czevo_sight_troy_glow" based_on="wpn_fps_smg_shepheard_g_standard" type="sight_glow_troy" unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_sight_troy_glow" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_smg_czevo_barrel" based_on="wpn_fps_smg_shepheard_b_standard" type="barrel" unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_barrel" drop="false" is_a_unlockable="false">
+		<adds>
+			<value_node value="wpn_fps_smg_czevo_ns"/>
+		</adds>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_czevo_barrel_long" based_on="wpn_fps_smg_shepheard_b_standard" type="barrel" unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_barrel" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+		<stats spread="1" concealment="-2" />
+		<adds>
+			<value_node value="wpn_fps_smg_czevo_ns"/>
+		</adds>
+	<override>
+			<wpn_fps_smg_czevo_barrel_long a_obj="a_b_long"/>
+	</override>
+	<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_czevo_barrel_silenced" based_on="wpn_fps_m4_uupg_b_sd" type="barrel" unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_barrel_silenced" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+		<stats spread="3" recoil="-1" damage="-1" concealment="0"/>
+		<forbids>
+			<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+			<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+			<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+			<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+			<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+			<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+			<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+			<value_node value="wpn_fps_upg_ass_ns_linear"/>
+			<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+			<value_node value="wpn_fps_upg_ass_ns_battle"/>
+			<value_node value="wpn_fps_smg_czevo_ns"/>
+		</forbids>
+	<pcs/>
+	</WeaponMod>
+
+    	<WeaponMod id="wpn_fps_smg_czevo_a_strong" based_on="wpn_fps_ammo_type" type="ammo" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+                  <stats total_ammo_mod="-8" damage="40"/>
+	<custom_stats ammo_pickup_min_mul=".25" ammo_pickup_max_mul=".50"/>
+    	<pcs/>
+   	</WeaponMod>
+
+    	<WeaponMod id="wpn_fps_smg_czevo_a_classic" based_on="wpn_fps_ammo_type" type="ammo" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+                  <stats total_ammo_mod="-4" damage="20"/>
+	<custom_stats ammo_pickup_min_mul=".50" ammo_pickup_max_mul=".85"/>
+    	<pcs/>
+   	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_czevo_bolt" based_on="wpn_fps_smg_shepheard_bolt_standard" type="bolt" unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_bolt" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_smg_czevo_ns" based_on="wpn_fps_smg_shepheard_ns_standard" type="barrel_ext" unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_ns" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_smg_czevo_covers" based_on="wpn_fps_smg_shepheard_g_standard" type="covers" unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_covers" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_smg_czevo_mag" based_on="wpn_fps_smg_shepheard_mag_standard" type="magazine" unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_mag" drop="false" is_a_unlockable="false">
+		<bullet_objects prefix="g_boolet_" amount="30"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_czevo_mag_speed" based_on="wpn_fps_smg_shepheard_mag_standard" type="magazine" unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_mag" texture_bundle_folder="mods" drop="false" is_a_unlockable="true">
+		<bullet_objects prefix="g_boolet_" amount="30"/>
+		<stats reload="3" concealment="-1" extra_ammo="0" />
+		<adds>
+			<value_node value="wpn_fps_smg_czevo_mag_speed_pull"/>
+		</adds>
+	<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_smg_czevo_mag_speed_pull" based_on="wpn_fps_smg_shepheard_mag_standard" type="czspeedpull" unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_mag_speed" drop="false" is_a_unlockable="false">
+		<stats extra_ammo="0" />
+	</WeaponMod>
+
+	<Weapon unlock_level="35">
+		<weapon id="czevo" based_on="shepheard" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="5" BURST_FIRE="3" ADAPTIVE_BURST_SIZE="false" ammo_pickup="2" texture_bundle_folder="mods" global_value="czevomod">
+			<stats damage="59" spread="15" spread_moving="15" recoil="16" concealment="22"/>
+    			<fire_mode_data fire_rate="0.05217391304"/>
+			<kick>
+				<standing>
+					<value_node value="0.7"/>
+					<value_node value="0.5"/>
+					<value_node value="-1.0"/>
+					<value_node value="1.0"/>
+				</standing>
+				<crouching>
+					<value_node value="0.7"/>
+					<value_node value="0.5"/>
+					<value_node value="-0.9"/>
+					<value_node value="0.9"/>
+				</crouching>
+				<steelsight>
+					<value_node value="0.4"/>
+					<value_node value="0.3"/>
+					<value_node value="-0.7"/>
+					<value_node value="0.7"/>
+				</steelsight>
+			</kick>
+    			<sounds fire="mp7_fire" fire_single="mp7_fire_single" fire_auto="mp7_fire" stop_fire="mp7_stop"/>
+			<animations reload_name_id="czevo"/>
+		</weapon>
+
+        <factory id="wpn_fps_smg_czevo" unit="units/mods/weapons/wpn_fps_smg_czevo/wpn_fps_smg_czevo">
+			<optional_types>
+				<value_node value="barrel_ext"/>
+				<value_node value="gadget"/>
+			</optional_types>
+    			<override>
+
+                       		<wpn_fps_addon_ris unit="units/payday2/weapons/wpn_fps_smg_mp9_pts/wpn_fps_smg_mp9_b_dummy"/>
+
+                			<wpn_fps_upg_fl_ass_smg_sho_peqbox>
+                    			<override>
+                       			 	<wpn_fps_smg_czevo_covers unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_covers_half"/>
+                   			</override>
+                			</wpn_fps_upg_fl_ass_smg_sho_peqbox>
+                			<wpn_fps_upg_fl_ass_peq15>
+                    			<override>
+                       			 	<wpn_fps_smg_czevo_covers unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_covers_half"/>
+                   			</override>
+                			</wpn_fps_upg_fl_ass_peq15>
+                			<wpn_fps_upg_fl_ass_laser>
+                    			<override>
+                       			 	<wpn_fps_smg_czevo_covers unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_covers_half"/>
+                   			</override>
+                			</wpn_fps_upg_fl_ass_laser>
+                			<wpn_fps_upg_fl_ass_utg>
+                    			<override>
+                       			 	<wpn_fps_smg_czevo_covers unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_covers_half"/>
+                   			</override>
+                			</wpn_fps_upg_fl_ass_utg>
+                			<wpn_fps_upg_fl_ass_smg_sho_surefire>
+                    			<override>
+                       			 	<wpn_fps_smg_czevo_covers unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_covers_half"/>
+                   			</override>
+                			</wpn_fps_upg_fl_ass_smg_sho_surefire>
+            			</override>
+			<adds/>
+			<default_blueprint>
+				<value_node value="wpn_fps_smg_czevo_body"/>
+				<value_node value="wpn_fps_smg_czevo_sight"/>
+				<value_node value="wpn_fps_smg_czevo_barrel"/>
+				<value_node value="wpn_fps_smg_czevo_bolt"/>
+				<value_node value="wpn_fps_smg_czevo_covers"/>
+				<value_node value="wpn_fps_smg_czevo_mag"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_smg_czevo_barrel"/>
+				<value_node value="wpn_fps_smg_czevo_barrel_long"/>
+				<value_node value="wpn_fps_smg_czevo_barrel_silenced"/>
+				<value_node value="wpn_fps_smg_czevo_ns"/>
+				<value_node value="wpn_fps_smg_czevo_body"/>
+				<value_node value="wpn_fps_smg_czevo_covers"/>
+				<value_node value="wpn_fps_smg_czevo_mag"/>
+				<value_node value="wpn_fps_smg_czevo_mag_speed"/>
+				<value_node value="wpn_fps_smg_czevo_bolt"/>
+				<value_node value="wpn_fps_smg_czevo_sight"/>
+				<value_node value="wpn_fps_smg_czevo_sight_glow"/>
+				<value_node value="wpn_fps_smg_czevo_sight_troy"/>
+				<value_node value="wpn_fps_smg_czevo_sight_troy_glow"/>
+				<value_node value="wpn_fps_smg_czevo_vg_angled"/>
+				<value_node value="wpn_fps_smg_czevo_vg_handstop"/>
+				<value_node value="wpn_fps_smg_czevo_vg_cover"/>
+				<value_node value="wpn_fps_smg_czevo_vg_tti"/>
+				<value_node value="wpn_fps_smg_czevo_vg_ptk"/>
+				<value_node value="wpn_fps_smg_czevo_body_2"/>
+				<value_node value="wpn_fps_smg_czevo_body_3"/>
+				<value_node value="wpn_fps_smg_czevo_body_4"/>
+				<value_node value="wpn_fps_smg_czevo_body_5"/>
+				<value_node value="wpn_fps_smg_czevo_body_6"/>
+				<value_node value="wpn_fps_smg_czevo_body_7"/>
+				<value_node value="wpn_fps_smg_czevo_body_8"/>
+				<value_node value="wpn_fps_smg_czevo_body_9"/>
+				<value_node value="wpn_fps_smg_czevo_a_strong"/>
+				<value_node value="wpn_fps_smg_czevo_a_classic"/>
+
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+			</uses_parts>
+		</factory>
+
+     		<stance>
+			<standard>
+				<shoulders translation="-1.8 -2.5 -0.2" rotation="0 -0 0 -1"/>
+			</standard>
+			<crouched>
+				<shoulders translation="-2.5 -2.5 -1" rotation="0 -0 0 -1"/>
+			</crouched>
+		</stance>
+	</Weapon>
+
+	<Weapon unlock_level="35">
+		<weapon id="x_czevo" based_on="x_shepheard" CLIP_AMMO_MAX="60" NR_CLIPS_MAX="3.5" ammo_pickup="1" texture_bundle_folder="mods" global_value="czevomod">
+			<stats damage="57" spread="13" spread_moving="13" recoil="18" concealment="22"/>
+    			<fire_mode_data fire_rate="0.05217391304"/>
+			<kick>
+				<standing>
+					<value_node value="0.7"/>
+					<value_node value="0.5"/>
+					<value_node value="-1.0"/>
+					<value_node value="1.0"/>
+				</standing>
+				<crouching>
+					<value_node value="0.7"/>
+					<value_node value="0.5"/>
+					<value_node value="-0.9"/>
+					<value_node value="0.9"/>
+				</crouching>
+				<steelsight>
+					<value_node value="0.4"/>
+					<value_node value="0.3"/>
+					<value_node value="-0.7"/>
+					<value_node value="0.7"/>
+				</steelsight>
+			</kick>
+    			<sounds fire="mp7_x_fire" fire_single="mp7_x_fire_single" fire_auto="mp7_x_fire" stop_fire="mp7_x_stop"/>
+			<animations reload_name_id="x_mp5"/>
+		</weapon>
+
+        <factory id="wpn_fps_smg_x_czevo" unit="units/mods/weapons/wpn_fps_smg_x_czevo/wpn_fps_smg_x_czevo">
+			<optional_types>
+				<value_node value="barrel_ext"/>
+				<value_node value="gadget"/>
+			</optional_types>
+    			<override>
+
+                       		<wpn_fps_addon_ris unit="units/payday2/weapons/wpn_fps_smg_mp9_pts/wpn_fps_smg_mp9_b_dummy"/>
+
+                			<wpn_fps_upg_fl_ass_smg_sho_peqbox>
+                    			<override>
+                       			 	<wpn_fps_smg_czevo_covers unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_covers_half"/>
+                   			</override>
+                			</wpn_fps_upg_fl_ass_smg_sho_peqbox>
+                			<wpn_fps_upg_fl_ass_peq15>
+                    			<override>
+                       			 	<wpn_fps_smg_czevo_covers unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_covers_half"/>
+                   			</override>
+                			</wpn_fps_upg_fl_ass_peq15>
+                			<wpn_fps_upg_fl_ass_laser>
+                    			<override>
+                       			 	<wpn_fps_smg_czevo_covers unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_covers_half"/>
+                   			</override>
+                			</wpn_fps_upg_fl_ass_laser>
+                			<wpn_fps_upg_fl_ass_utg>
+                    			<override>
+                       			 	<wpn_fps_smg_czevo_covers unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_covers_half"/>
+                   			</override>
+                			</wpn_fps_upg_fl_ass_utg>
+                			<wpn_fps_upg_fl_ass_smg_sho_surefire>
+                    			<override>
+                       			 	<wpn_fps_smg_czevo_covers unit="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_covers_half"/>
+                   			</override>
+                			</wpn_fps_upg_fl_ass_smg_sho_surefire>
+            			</override>
+			<adds/>
+			<default_blueprint>
+				<value_node value="wpn_fps_smg_czevo_body"/>
+				<value_node value="wpn_fps_smg_czevo_sight"/>
+				<value_node value="wpn_fps_smg_czevo_ns"/>
+				<value_node value="wpn_fps_smg_czevo_barrel"/>
+				<value_node value="wpn_fps_smg_czevo_bolt"/>
+				<value_node value="wpn_fps_smg_czevo_covers"/>
+				<value_node value="wpn_fps_smg_czevo_mag"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_smg_czevo_barrel"/>
+				<value_node value="wpn_fps_smg_czevo_barrel_long"/>
+				<value_node value="wpn_fps_smg_czevo_barrel_silenced"/>
+				<value_node value="wpn_fps_smg_czevo_ns"/>
+				<value_node value="wpn_fps_smg_czevo_body"/>
+				<value_node value="wpn_fps_smg_czevo_covers"/>
+				<value_node value="wpn_fps_smg_czevo_mag"/>
+				<value_node value="wpn_fps_smg_czevo_mag_speed"/>
+				<value_node value="wpn_fps_smg_czevo_bolt"/>
+				<value_node value="wpn_fps_smg_czevo_sight"/>
+				<value_node value="wpn_fps_smg_czevo_sight_glow"/>
+				<value_node value="wpn_fps_smg_czevo_body_2"/>
+				<value_node value="wpn_fps_smg_czevo_body_3"/>
+				<value_node value="wpn_fps_smg_czevo_body_4"/>
+				<value_node value="wpn_fps_smg_czevo_body_5"/>
+				<value_node value="wpn_fps_smg_czevo_body_6"/>
+				<value_node value="wpn_fps_smg_czevo_body_7"/>
+				<value_node value="wpn_fps_smg_czevo_body_8"/>
+				<value_node value="wpn_fps_smg_czevo_body_9"/>
+				<value_node value="wpn_fps_smg_czevo_a_strong"/>
+				<value_node value="wpn_fps_smg_czevo_a_classic"/>
+
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+
+
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+
+			</uses_parts>
+		</factory>
+	</Weapon>
+
+	<AddFiles directory="Assets">
+	
+		<animation path="anims/fps/czevo/czevo_reload" load="true"/>
+		<animation path="anims/fps/czevo/czevo_reload_not_empty" load="true"/>
+	
+		<texture path="units/mods/weapons/wpn_fps_smg_czevo_pts/barrel_df"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_czevo_pts/body_df"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_czevo_pts/body_2_df"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_czevo_pts/body_3_df"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_czevo_pts/body_4_df"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_czevo_pts/body_5_df"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_czevo_pts/body_6_df"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_czevo_pts/body_7_df"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_czevo_pts/body_8_df"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_czevo_pts/body_9_df"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_czevo_pts/body_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_czevo_pts/silenced_df"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_czevo_pts/silenced_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_czevo_pts/covers_df"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_czevo_pts/covers_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_czevo_pts/troy_df"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_czevo_pts/troy_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_czevo_pts/mag_df"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_czevo_pts/ptk_df"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_czevo_pts/ptk_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_czevo_pts/white"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_czevo_pts/angled_df"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_czevo_pts/angled_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_czevo_pts/handstop_df"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_czevo_pts/tti_df"/>
+		<texture path="units/mods/weapons/wpn_fps_smg_czevo_pts/handstop_nm"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_czevo/wpn_fps_smg_czevo"/>
+		<model path="units/mods/weapons/wpn_fps_smg_czevo/wpn_fps_smg_czevo"/>
+		<object path="units/mods/weapons/wpn_fps_smg_czevo/wpn_fps_smg_czevo"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_czevo/wpn_fps_smg_czevo"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_czevo/wpn_fps_smg_czevo_npc"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_x_czevo/wpn_fps_smg_x_czevo"/>
+		<model path="units/mods/weapons/wpn_fps_smg_x_czevo/wpn_fps_smg_x_czevo"/>
+		<object path="units/mods/weapons/wpn_fps_smg_x_czevo/wpn_fps_smg_x_czevo"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_x_czevo/wpn_fps_smg_x_czevo"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_x_czevo/wpn_fps_smg_x_czevo_npc"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body"/>
+		<model path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body"/>
+		<object path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_2"/>
+		<model path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_2"/>
+		<object path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_2"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_2"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_2"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_2_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_3"/>
+		<model path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_3"/>
+		<object path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_3"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_3"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_3"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_3_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_4"/>
+		<model path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_4"/>
+		<object path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_4"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_4"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_4"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_4_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_5"/>
+		<model path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_5"/>
+		<object path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_5"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_5"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_5"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_5_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_6"/>
+		<model path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_6"/>
+		<object path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_6"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_6"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_6"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_6_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_7"/>
+		<model path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_7"/>
+		<object path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_7"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_7"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_7"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_7_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_8"/>
+		<model path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_8"/>
+		<object path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_8"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_8"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_8"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_8_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_9"/>
+		<model path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_9"/>
+		<object path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_9"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_9"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_9"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_body_9_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_barrel"/>
+		<model path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_barrel"/>
+		<object path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_barrel"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_barrel_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_barrel_silenced"/>
+		<model path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_barrel_silenced"/>
+		<object path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_barrel_silenced"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_barrel_silenced"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_barrel_silenced"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_barrel_silenced_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_mag"/>
+		<model path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_mag"/>
+		<object path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_mag"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_mag"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_mag"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_mag_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_mag_speed"/>
+		<model path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_mag_speed"/>
+		<object path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_mag_speed"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_mag_speed"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_mag_speed"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_mag_speed_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_sight"/>
+		<model path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_sight"/>
+		<object path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_sight"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_sight"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_sight"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_sight_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_sight_glow"/>
+		<model path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_sight_glow"/>
+		<object path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_sight_glow"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_sight_glow"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_sight_glow"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_sight_glow_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_sight_troy"/>
+		<model path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_sight_troy"/>
+		<object path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_sight_troy"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_sight_troy"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_sight_troy"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_sight_troy_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_sight_troy_glow"/>
+		<model path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_sight_troy_glow"/>
+		<object path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_sight_troy_glow"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_sight_troy_glow"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_sight_troy_glow"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_sight_troy_glow_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_ns"/>
+		<model path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_ns"/>
+		<object path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_ns"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_ns"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_ns"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_ns_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_bolt"/>
+		<model path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_bolt"/>
+		<object path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_bolt"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_bolt"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_bolt"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_bolt_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_covers"/>
+		<model path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_covers"/>
+		<object path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_covers"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_covers"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_covers"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_covers_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_covers_half"/>
+		<model path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_covers_half"/>
+		<object path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_covers_half"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_covers_half"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_covers_half"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_covers_half_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_angled"/>
+		<model path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_angled"/>
+		<object path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_angled"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_angled"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_angled"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_angled_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_ptk"/>
+		<model path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_ptk"/>
+		<object path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_ptk"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_ptk"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_ptk"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_ptk_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_handstop"/>
+		<model path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_handstop"/>
+		<object path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_handstop"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_handstop"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_handstop"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_handstop_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_cover"/>
+		<model path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_cover"/>
+		<object path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_cover"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_cover"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_cover"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_cover_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_tti"/>
+		<model path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_tti"/>
+		<object path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_tti"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_tti"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_tti"/>
+		<material_config path="units/mods/weapons/wpn_fps_smg_czevo_pts/wpn_fps_smg_czevo_vg_tti_thq"/>
+
+
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_czevo_vg_handstop"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_czevo_vg_tti"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_czevo_vg_cover"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_czevo_vg_ptk"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_czevo_vg_angled"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_czevo_barrel_long"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_czevo_sight_troy"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_czevo_barrel_silenced"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_czevo_mag_speed"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_czevo_body_2"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_czevo_body_3"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_czevo_body_4"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_czevo_body_5"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_czevo_body_6"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_czevo_body_7"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_czevo_body_8"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_czevo_body_9"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_czevo_a_strong"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_czevo_a_classic"/>
+
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/czevo"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/x_czevo"/>
+		<texture path="guis/mod_icons/czevo"/>
+	</AddFiles>
+	<Hooks directory="Hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
+	</Hooks>
+</table>

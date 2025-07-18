@@ -1,0 +1,22 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_smg_r31_pts/wpn_fps_smg_r31_receiver_main" orientation_object="rp_receiver_main" />
+		<animations>
+		
+		<animation_group name="reload">
+			<object name="a_reload" enabled="true" />
+		</animation_group>
+		
+		<animation_group name="recoil">
+			<object name="a_recoil" enabled="true" />
+		</animation_group>
+		
+	</animations>
+	<graphics>
+		<object name="g_drag_handle" enabled="true" />
+		<object name="g_extras" enabled="true" />
+		<object name="g_mag_release" enabled="true" />
+		<object name="g_receiver" enabled="true" />
+		<object name="g_recoil_spring" enabled="true" />
+		<object name="g_trigger_selector" enabled="true" />
+	</graphics>
+</dynamic_object>

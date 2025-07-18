@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+			
+		<target mode="attach">
+			<anim name="grendel_reload" 						file="anims/fps/grendel/grendel_reload" blend_set="all"/>
+			<anim name="grendel_reload_not_empty" 				file="anims/fps/grendel/grendel_reload_not_empty" blend_set="all"/>
+			<anim name="grendel_ext01_reload" 					file="anims/fps/grendel/grendel_ext01_reload" blend_set="all"/>
+			<anim name="grendel_ext01_reload_not_empty" 		file="anims/fps/grendel/grendel_ext01_reload_not_empty" blend_set="all"/>
+			<anim name="grendel_ext02_reload" 					file="anims/fps/grendel/grendel_ext02_reload" blend_set="all"/>
+			<anim name="grendel_ext02_reload_not_empty" 		file="anims/fps/grendel/grendel_ext02_reload_not_empty" blend_set="all"/>
+			<anim name="grendel_fast02_reload" 					file="anims/fps/grendel/grendel_fast02_reload" blend_set="all"/>
+			<anim name="grendel_fast02_reload_not_empty" 		file="anims/fps/grendel/grendel_fast02_reload_not_empty" blend_set="all"/>
+			<anim name="grendel_idle" 							file="anims/fps/grendel/grendel_idle" blend_set="all"/>
+			<anim name="grendel_recoil" 						file="anims/fps/grendel/grendel_recoil" blend_set="all"/>
+			<anim name="grendel_recoil_steelsight" 				file="anims/fps/grendel/grendel_recoil" blend_set="all"/>
+			<anim name="grendel_recoil_loop" 					file="anims/fps/grendel/grendel_recoil_loop" blend_set="all"/>
+			<anim name="grendel_recoil_enter" 					file="anims/fps/grendel/grendel_recoil_enter" blend_set="all"/>
+			<anim name="grendel_recoil_exit" 					file="anims/fps/grendel/grendel_recoil_exit" blend_set="all"/>
+			<anim name="grendel_equip" 							file="anims/fps/grendel/grendel_equip" blend_set="all"/>
+			<anim name="grendel_unequip" 						file="anims/fps/grendel/grendel_unequip" blend_set="all"/>
+			<anim name="grendel_melee" 							file="anims/fps/grendel/grendel_melee" blend_set="all"/>
+			<anim name="grendel_melee_miss" 					file="anims/fps/grendel/grendel_melee_miss" blend_set="all"/>
+			<anim name="grendel_use" 							file="anims/fps/grendel/grendel_use" blend_set="all"/>
+			<anim name="grendel_sprint_enter" 					file="anims/fps/grendel/grendel_sprint_enter" blend_set="all"/>
+			<anim name="grendel_sprint" 						file="anims/fps/grendel/grendel_sprint" blend_set="all"/>
+			<anim name="grendel_sprint_exit" 					file="anims/fps/grendel/grendel_sprint_exit" blend_set="all"/>
+			<anim name="grendel_com_down_var1" 					file="anims/fps/grendel/grendel_com_var1" blend_set="all"/>
+			<anim name="grendel_com_stop" 						file="anims/fps/grendel/grendel_com_var5" blend_set="all"/>
+			<anim name="grendel_com_come" 						file="anims/fps/grendel/grendel_com_var6" blend_set="all"/>
+			<anim name="grendel_com_point" 						file="anims/fps/grendel/grendel_com_var7" blend_set="all"/>
+			<anim name="grendel_get_up" 						file="anims/fps/grendel/grendel_get_up" blend_set="all"/>
+			<anim name="grendel_gogo" 							file="anims/fps/grendel/grendel_gogo" blend_set="all"/>
+			<anim name="grendel_tased" 							file="anims/fps/grendel/grendel_tased" blend_set="all"/>
+			<anim name="grendel_tased_boost" 					file="anims/fps/grendel/grendel_tased_boost" blend_set="all"/>
+			<anim name="grendel_tased_exit" 					file="anims/fps/grendel/grendel_tased_exit" blend_set="all"/>
+			<anim name="grendel_inspect" 						file="anims/fps/grendel/grendel_inspect" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>
