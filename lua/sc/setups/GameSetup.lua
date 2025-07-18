@@ -71,6 +71,25 @@ function GameSetup:load_packages()
 
 	local difficulty = Global.game_settings and Global.game_settings.difficulty or "normal"
 	local difficulty_index = tweak_data:difficulty_to_index(difficulty)
+	
+	--Akiko Edits
+	load_difficulty_package("packages/akiko_package/addmisc")
+	
+	--[[
+	if difficulty_index == 4 then
+		load_difficulty_package("packages/akiko_package/REPLACEME")
+	elseif difficulty_index == 5 then
+		load_difficulty_package("packages/akiko_package/REPLACEME")
+	elseif difficulty_index == 6 then
+		load_difficulty_package("packages/akiko_package/REPLACEME")
+	elseif difficulty_index == 7 then
+		load_difficulty_package("packages/akiko_package/REPLACEME")
+	elseif difficulty_index == 8 then
+		load_difficulty_package("packages/akiko_package/REPLACEME")
+	end
+	]]
+	
+	--End of Akiko Edits
     
 	if job_tweak_package_data and job_tweak_package_data.load_all_difficulty_packages and not managers.skirmish:is_skirmish() then
 		for i, difficulty in ipairs(tweak_data.difficulties) do

@@ -15354,11 +15354,6 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	
 --AKIKKO EDITS (ADDON LMAOO)
 	
-	--Loads assets maybe
-	if not PackageManager:loaded("packages/akiko_misc") then
-		PackageManager:load("packages/akiko_misc")
-	end
-	
 	--ATF Field Agent
 	
 	--BullDozer Addition
