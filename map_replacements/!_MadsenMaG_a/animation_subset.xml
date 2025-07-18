@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+			
+		<target mode="attach">
+			<anim name="madsen_mg_reload_not_empty" 					file="anims/fps/madsen_mg/madsen_mg_reload_not_empty" blend_set="all"/>
+			<anim name="madsen_mg_reload" 								file="anims/fps/madsen_mg/madsen_mg_reload" blend_set="all"/>
+			
+			<anim name="madsen_mg_recoil" 						file="anims/fps/madsen_mg/madsen_mg_recoil" blend_set="all"/>
+			<anim name="madsen_mg_recoil_loop" 					file="anims/fps/madsen_mg/madsen_mg_recoil_loop" blend_set="all"/>
+			<anim name="madsen_mg_recoil_enter" 				file="anims/fps/madsen_mg/madsen_mg_recoil_enter" blend_set="all"/>
+			<anim name="madsen_mg_recoil_exit" 					file="anims/fps/madsen_mg/madsen_mg_recoil_exit" blend_set="all"/>
+			<anim name="madsen_mg_recoil_steelsight"	 		file="anims/fps/madsen_mg/madsen_mg_recoil" blend_set="all"/>
+			
+			<anim name="madsen_mg_inspect" 						file="anims/fps/madsen_mg/madsen_mg_inspect" blend_set="all"/>
+			<anim name="madsen_mg_equip" 						file="anims/fps/madsen_mg/madsen_mg_equip" blend_set="all"/>
+			
+			<anim name="madsen_mg_idle" 					file="anims/fps/boot/boot_idle" blend_set="all"/>
+			<anim name="madsen_mg_unequip" 					file="anims/fps/boot/boot_unequip" blend_set="all"/>
+			<anim name="madsen_mg_melee" 					file="anims/fps/boot/boot_melee" blend_set="all"/>
+			<anim name="madsen_mg_melee_miss" 				file="anims/fps/boot/boot_melee_miss" blend_set="all"/>
+			<anim name="madsen_mg_use" 						file="anims/fps/boot/boot_use" blend_set="all"/>
+			<anim name="madsen_mg_sprint_enter" 			file="anims/fps/boot/boot_sprint_enter" blend_set="all"/>
+			<anim name="madsen_mg_sprint" 					file="anims/fps/boot/boot_sprint" blend_set="all"/>
+			<anim name="madsen_mg_sprint_exit" 				file="anims/fps/boot/boot_sprint_exit" blend_set="all"/>
+			<anim name="madsen_mg_com_down_var1" 			file="anims/fps/boot/boot_com_var1" blend_set="all"/>
+			<anim name="madsen_mg_com_stop" 				file="anims/fps/boot/boot_com_var5" blend_set="all"/>
+			<anim name="madsen_mg_com_come" 				file="anims/fps/boot/boot_com_var6" blend_set="all"/>
+			<anim name="madsen_mg_com_point" 				file="anims/fps/boot/boot_com_var7" blend_set="all"/>
+			<anim name="madsen_mg_get_up" 					file="anims/fps/boot/boot_get_up" blend_set="all"/>
+			<anim name="madsen_mg_gogo" 					file="anims/fps/boot/boot_gogo" blend_set="all"/>
+			<anim name="madsen_mg_tased" 					file="anims/fps/boot/boot_tased" blend_set="all"/>
+			<anim name="madsen_mg_tased_boost" 				file="anims/fps/boot/boot_tased_boost" blend_set="all"/>
+			<anim name="madsen_mg_tased_exit" 				file="anims/fps/boot/boot_tased_exit" blend_set="all"/>
+			
+		</target>
+	</tweak>
+</tweaks>

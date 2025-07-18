@@ -1,0 +1,122 @@
+<mod name="Mosin Nagant Obrez Pistol" color="Color(0.01,0.62,0.98)">
+	<Localization directory="loc" default="english.txt"/>
+	<AssetUpdates id="47316" version="1.03" provider="modworkshop"/>
+	<GlobalValue id="obrezpistolmod" color="Color(0.7, 0.2, 0.1)"/>
+	<WeaponMod id="wpn_fps_snp_obrez_barrel" based_on="wpn_fps_pis_sparrow_b_rpl" wpn_pts="wpn_fps_snp_obrez" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_snp_obrez_bolt" based_on="wpn_fps_amcar_bolt_standard" wpn_pts="wpn_fps_snp_obrez" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_snp_obrez_bullet" based_on="wpn_fps_sho_boot_em_extra" wpn_pts="wpn_fps_snp_obrez" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_snp_obrez_case" based_on="wpn_fps_ass_ak5_fg_ak5a" wpn_pts="wpn_fps_snp_obrez" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_snp_obrez_connector" based_on="wpn_fps_pis_chinchilla_dh_hammer" wpn_pts="wpn_fps_snp_obrez" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_snp_obrez_firingpin" based_on="wpn_fps_pis_legacy_firepin_standard" wpn_pts="wpn_fps_snp_obrez" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_snp_obrez_grip" based_on="wpn_fps_upg_m4_g_standard" wpn_pts="wpn_fps_snp_obrez" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_snp_obrez_irons" based_on="wpn_fps_ass_vhs_o_standard" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" hidden="true" ver="2">
+		<stance_mod>
+			<wpn_fps_snp_obrez translation="-0.022 10 0.7"/>
+		</stance_mod>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_obrez_mag" based_on="wpn_fps_pis_p226_m_standard" wpn_pts="wpn_fps_snp_obrez" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_snp_obrez_rec" based_on="wpn_fps_ass_g3_body_lower" wpn_pts="wpn_fps_snp_obrez" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_upg_obrez_barrel" based_on="wpn_fps_pis_sparrow_b_rpl" wpn_pts="wpn_fps_snp_obrez" ver="2">
+		<stats spread="3" recoil="2" concealment="-6"/>
+	</WeaponMod>
+	<Weapon unlock_level="33">
+		<weapon id="obrez" based_on="lemming" weapon_hold="obrez" CLIP_AMMO_MAX="5" NR_CLIPS_MAX="2" desc_id="bm_w_winchester1874_desc" use_shotgun_reload="true" muzzleflash="effects/mods/weapons/obrez/muzzle" shell_ejection="effects/payday2/particles/weapons/shells/shell_empty" global_value="obrezpistolmod">
+			<AMMO_PICKUP>
+				<value_node value="0.7"/>
+				<value_node value="1"/>
+			</AMMO_PICKUP>
+			<categories>
+				<value_node value="snp"/>
+			</categories>
+			<stats damage="120" spread="17" spread_moving="17" recoil="2" concealment="25" suppression="7"/>
+			<fire_mode_data fire_rate="1.714285714285714"/>
+			<damage_falloff optimal_distance="500" optimal_range="1500" near_falloff="0" far_falloff="1000" near_multiplier="1" far_multiplier="1.8"/>
+			<stats_modifiers damage="4"/>
+			<sounds fire="nagant_fire" magazine_empty="false"/>
+			<timers equip="0.35" unequip="0.5" shotgun_reload_enter="1" shotgun_reload_exit_empty="0.664" shotgun_reload_exit_not_empty="0.664" shotgun_reload_shell="0.664" shotgun_reload_first_shell_offset="0" reload_not_empty="false" reload_empty="false"/>
+			<animations magazine_empty="false"/>
+		</weapon>
+		<factory id="wpn_fps_snp_obrez" unit="units/mods/weapons/wpn_fps_snp_obrez/wpn_fps_snp_obrez">
+			<animations fire="recoil" fire_steelsight="recoil" reload_enter="reload_enter" reload_exit="reload_exit" reload_not_empty_exit="reload_exit"/>
+			<adds>
+				<wpn_fps_upg_fl_pis_laser>
+					<value_node value="wpn_fps_pis_ppk_fl_mount"/>
+				</wpn_fps_upg_fl_pis_laser>
+				<wpn_fps_upg_fl_pis_tlr1>
+					<value_node value="wpn_fps_pis_ppk_fl_mount"/>
+				</wpn_fps_upg_fl_pis_tlr1>
+				<wpn_fps_upg_fl_pis_crimson>
+					<value_node value="wpn_fps_pis_ppk_fl_mount"/>
+				</wpn_fps_upg_fl_pis_crimson>
+				<wpn_fps_upg_fl_pis_x400v>
+					<value_node value="wpn_fps_pis_ppk_fl_mount"/>
+				</wpn_fps_upg_fl_pis_x400v>
+				<wpn_fps_upg_fl_pis_m3x>
+					<value_node value="wpn_fps_pis_ppk_fl_mount"/>
+				</wpn_fps_upg_fl_pis_m3x>
+			</adds>
+			<override>
+				<wpn_fps_upg_o_rmr parent="false"/>
+				<wpn_fps_upg_o_rms parent="false"/>
+				<wpn_fps_upg_o_rikt parent="false"/>
+			</override>
+			<default_blueprint>
+				<value_node value="wpn_fps_snp_obrez_barrel"/>
+				<value_node value="wpn_fps_snp_obrez_bolt"/>
+				<value_node value="wpn_fps_snp_obrez_bullet"/>
+				<value_node value="wpn_fps_snp_obrez_case"/>
+				<value_node value="wpn_fps_snp_obrez_connector"/>
+				<value_node value="wpn_fps_snp_obrez_firingpin"/>
+				<value_node value="wpn_fps_snp_obrez_grip"/>
+				<value_node value="wpn_fps_snp_obrez_irons"/>
+				<value_node value="wpn_fps_snp_obrez_mag"/>
+				<value_node value="wpn_fps_snp_obrez_rec"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_snp_obrez_barrel"/>
+				<value_node value="wpn_fps_snp_obrez_bolt"/>
+				<value_node value="wpn_fps_snp_obrez_bullet"/>
+				<value_node value="wpn_fps_snp_obrez_case"/>
+				<value_node value="wpn_fps_snp_obrez_connector"/>
+				<value_node value="wpn_fps_snp_obrez_firingpin"/>
+				<value_node value="wpn_fps_snp_obrez_grip"/>
+				<value_node value="wpn_fps_snp_obrez_irons"/>
+				<value_node value="wpn_fps_snp_obrez_mag"/>
+				<value_node value="wpn_fps_snp_obrez_rec"/>
+
+				<value_node value="wpn_fps_upg_obrez_barrel"/>
+
+				<value_node value="wpn_fps_upg_o_rmr"/>
+				<value_node value="wpn_fps_upg_o_rms"/>
+				<value_node value="wpn_fps_upg_o_rikt"/>
+				<value_node value="wpn_fps_upg_fl_pis_laser"/>
+				<value_node value="wpn_fps_upg_fl_pis_tlr1"/>
+				<value_node value="wpn_fps_upg_fl_pis_crimson"/>
+				<value_node value="wpn_fps_upg_fl_pis_x400v"/>
+				<value_node value="wpn_fps_upg_fl_pis_m3x"/>
+			</uses_parts>
+		</factory>
+		<stance>
+			<standard>
+				<shoulders rotation="-0.00065574 -0.000889203 0.00139684 -0.999998" translation="1.784 -0.432 -1.207"/>
+			</standard>
+			<crouched>
+				<shoulders rotation="-0.00065574 -0.000889203 0.00139684 -0.999998" translation="0.784 -1.432 -2.207"/>
+			</crouched>
+			<steelsight>
+				<shoulders rotation="-0.00065574 -0.000889203 0.00139684 -0.999998" translation="-8.216 -20.432 0.763"/>
+			</steelsight>
+		</stance>
+	</Weapon>
+	<AddFiles directory="assets" auto_generate="true"/>
+</mod>

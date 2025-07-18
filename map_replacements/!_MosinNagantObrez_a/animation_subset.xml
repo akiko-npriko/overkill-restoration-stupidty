@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+		<target mode="attach">
+			<anim name="obrez_reload_enter" 			file="anims/fps/obrez/obrez_reload_enter" blend_set="all"/>
+			<anim name="obrez_reload_loop" 				file="anims/fps/obrez/obrez_reload_loop" blend_set="all"/>
+			<anim name="obrez_reload_exit" 				file="anims/fps/obrez/obrez_reload_exit" blend_set="all"/>
+			<anim name="obrez_reload_not_empty_exit" 	file="anims/fps/obrez/obrez_reload_exit" blend_set="all"/>
+			<anim name="obrez_idle" 					file="anims/fps/breech/breech_idle" blend_set="all"/>
+			<anim name="obrez_recoil" 					file="anims/fps/obrez/obrez_recoil" blend_set="all"/>
+			<anim name="obrez_recoil_enter" 			file="anims/fps/obrez/obrez_recoil" blend_set="all"/>
+			<anim name="obrez_recoil_loop" 				file="anims/fps/obrez/obrez_recoil" blend_set="all"/>
+			<anim name="obrez_recoil_exit" 				file="anims/fps/obrez/obrez_recoil" blend_set="all"/>
+			<anim name="obrez_recoil_steelsight" 		file="anims/fps/obrez/obrez_recoil_steelsight" blend_set="all"/>
+			<anim name="obrez_equip" 					file="anims/fps/breech/breech_equip" blend_set="all"/>
+			<anim name="obrez_unequip" 					file="anims/fps/breech/breech_unequip" blend_set="all"/>
+			<anim name="obrez_melee" 					file="anims/fps/breech/breech_melee" blend_set="all"/>
+			<anim name="obrez_melee_miss" 				file="anims/fps/breech/breech_melee_miss" blend_set="all"/>
+			<anim name="obrez_use" 						file="anims/fps/breech/breech_use" blend_set="all"/>
+			<anim name="obrez_sprint_enter" 			file="anims/fps/breech/breech_sprint_enter" blend_set="all"/>
+			<anim name="obrez_sprint" 					file="anims/fps/breech/breech_sprint" blend_set="all"/>
+			<anim name="obrez_sprint_exit" 				file="anims/fps/breech/breech_sprint_exit" blend_set="all"/>
+			<anim name="obrez_com_down_var1" 			file="anims/fps/breech/breech_com_var1" blend_set="all"/>
+			<anim name="obrez_com_stop" 				file="anims/fps/breech/breech_com_var5" blend_set="all"/>
+			<anim name="obrez_com_come" 				file="anims/fps/breech/breech_com_var6" blend_set="all"/>
+			<anim name="obrez_com_point" 				file="anims/fps/breech/breech_com_var7" blend_set="all"/>
+			<anim name="obrez_get_up" 					file="anims/fps/breech/breech_get_up" blend_set="all"/>
+			<anim name="obrez_gogo" 					file="anims/fps/breech/breech_gogo" blend_set="all"/>
+			<anim name="obrez_tased" 					file="anims/fps/breech/breech_tased" blend_set="all"/>
+			<anim name="obrez_tased_boost" 				file="anims/fps/breech/breech_tased_boost" blend_set="all"/>
+			<anim name="obrez_tased_exit" 				file="anims/fps/breech/breech_tased_exit" blend_set="all"/>
+			<anim name="obrez_inspect"					file="anims/fps/obrez/obrez_inspect" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

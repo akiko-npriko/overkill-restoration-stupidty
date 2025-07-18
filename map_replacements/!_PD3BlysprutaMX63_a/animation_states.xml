@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<tweaks>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+		<target mode="append">
+			<state name="fps/reload/mx63" type="once" segment="base" speed="1.0">
+				<anim name="mx63_reload"/>
+				<keys>
+					<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>
+					<key at="trigger" trigger="wp_m249_box_in" callback="play_sound" class_name="base" param1="wp_m249_box_in"/>
+					<key at="trigger" trigger="wp_m249_box_take_new" callback="play_sound" class_name="base" param1="wp_m249_box_take_new"/>
+					<key at="trigger" trigger="wp_m249_box_out" callback="play_sound" class_name="base" param1="wp_m249_box_out"/>
+					<key at="trigger" trigger="wp_m249_tilt" callback="play_sound" class_name="base" param1="wp_m249_tilt"/>
+					<key at="trigger" trigger="wp_m249_lever_release" callback="play_sound" class_name="base" param1="wp_m249_lever_release"/>
+					<key at="trigger" trigger="wp_m249_clip_hit_ground" callback="play_sound" class_name="base" param1="wp_m249_clip_hit_ground"/>
+					<key at="trigger" trigger="wp_m249_box_in_contact" callback="play_sound" class_name="base" param1="wp_m249_box_in_contact"/>
+					<key at="trigger" trigger="wp_m249_cover_down" callback="play_sound" class_name="base" param1="wp_m249_cover_down"/>
+					<key at="trigger" trigger="wp_m249_belt_to_feeder" callback="play_sound" class_name="base" param1="wp_m249_belt_to_feeder"/>
+					<key at="trigger" trigger="wp_m249_cover_up" callback="play_sound" class_name="base" param1="wp_m249_cover_up"/>
+					<key at="trigger" trigger="wp_m249_lever_pull" callback="play_sound" class_name="base" param1="wp_m249_lever_pull"/>
+					<key at="trigger" trigger="wp_m249_tilt_back" callback="play_sound" class_name="base" param1="wp_m249_tilt_back"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_throw"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+					<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
+					<key at="trigger" trigger="wp_clip_generic_ass_center" callback="play_sound" class_name="base" param1="wp_clip_generic_ass_center"/>
+					<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+				<exit name="fps/idle"/>
+			</keys>
+			</state>
+
+			<state name="fps/reload_not_empty/mx63" type="once" segment="base" speed="1.0">
+				<anim name="mx63_reload_not_empty"/>
+				<keys>
+					<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>
+					<key at="trigger" trigger="wp_m249_box_in" callback="play_sound" class_name="base" param1="wp_m249_box_in"/>
+					<key at="trigger" trigger="wp_m249_box_take_new" callback="play_sound" class_name="base" param1="wp_m249_box_take_new"/>
+					<key at="trigger" trigger="wp_m249_box_out" callback="play_sound" class_name="base" param1="wp_m249_box_out"/>
+					<key at="trigger" trigger="wp_m249_tilt" callback="play_sound" class_name="base" param1="wp_m249_tilt"/>
+					<key at="trigger" trigger="wp_m249_lever_release" callback="play_sound" class_name="base" param1="wp_m249_lever_release"/>
+					<key at="trigger" trigger="wp_m249_clip_hit_ground" callback="play_sound" class_name="base" param1="wp_m249_clip_hit_ground"/>
+					<key at="trigger" trigger="wp_m249_box_in_contact" callback="play_sound" class_name="base" param1="wp_m249_box_in_contact"/>
+					<key at="trigger" trigger="wp_m249_cover_down" callback="play_sound" class_name="base" param1="wp_m249_cover_down"/>
+					<key at="trigger" trigger="wp_m249_belt_to_feeder" callback="play_sound" class_name="base" param1="wp_m249_belt_to_feeder"/>
+					<key at="trigger" trigger="wp_m249_cover_up" callback="play_sound" class_name="base" param1="wp_m249_cover_up"/>
+					<key at="trigger" trigger="wp_m249_lever_pull" callback="play_sound" class_name="base" param1="wp_m249_lever_pull"/>
+					<key at="trigger" trigger="wp_m249_tilt_back" callback="play_sound" class_name="base" param1="wp_m249_tilt_back"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_throw"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+					<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
+					<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+				</keys>
+				<exit name="fps/idle"/>
+			</state>			
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+		<target mode="attach">
+			<to name="reload_mx63" 						redirect="fps/reload/mx63"/>
+			<to name="reload_not_empty_mx63" 			redirect="fps/reload_not_empty/mx63"/>
+		</target>
+	</tweak>
+</tweaks>

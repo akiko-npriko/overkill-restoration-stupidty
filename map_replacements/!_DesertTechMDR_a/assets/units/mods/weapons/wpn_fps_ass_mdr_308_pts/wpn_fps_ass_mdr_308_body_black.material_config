@@ -1,0 +1,27 @@
+<materials version="3" group="weapon_komodo">
+	<material name="mtr_mdr_handguard" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture 	 file="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_handguard_black_df" />
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_handguard_nm" />
+        <material_texture	 file="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_handguard_black_gsma"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/weapon_metal_cubemap_black"/>
+	</material>
+	<material name="mtr_mdr_receiver_lower" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture 	 file="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_receiver_lower_black_df" />
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_receiver_lower_nm" />
+        <material_texture 	 file="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_receiver_lower_black_gsma"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/weapon_metal_cubemap_black"/>		
+	</material>
+	<material name="mtr_mdr_receiver_upper" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture 	 file="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_receiver_upper_black_df" />
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_receiver_upper_nm" />
+        <material_texture	 file="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_receiver_upper_black_gsma"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/weapon_metal_cubemap_black"/>
+	</material>
+		<material name="mtr_mdr_pistolgrip" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture 	 file="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_grip_black_df" />
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_grip_nm" />
+        <material_texture	 file="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_grip_black_gsma"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/weapon_metal_cubemap_black"/>
+	</material>
+
+</materials>

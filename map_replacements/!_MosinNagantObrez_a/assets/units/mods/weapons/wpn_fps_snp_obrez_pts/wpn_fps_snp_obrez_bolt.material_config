@@ -1,0 +1,12 @@
+<materials version="3" group="weapon">
+	<material name="mat_obrez" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_snp_obrez_pts/textures/obrez_df"/>
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_snp_obrez_pts/textures/obrez_nm"/>
+		<material_texture file="units/mods/weapons/wpn_fps_snp_obrez_pts/textures/obrez_gsma"/>
+	</material>
+	<material name="mat_obrezwood" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_snp_obrez_pts/textures/obrez_df"/>
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_snp_obrez_pts/textures/obrez_nm"/>
+		<material_texture file="units/mods/weapons/wpn_fps_snp_obrez_pts/textures/obrez_gsma"/>
+	</material>
+</materials>

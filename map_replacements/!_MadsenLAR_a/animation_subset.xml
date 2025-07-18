@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+
+
+		<target mode="attach">
+			<anim name="madsen_lar_reload" 					file="anims/fps/madsen_lar/madsen_lar_reload" blend_set="all"/>
+			<anim name="madsen_lar_reload_not_empty" 		file="anims/fps/madsen_lar/madsen_lar_reload_not_empty" blend_set="all"/>
+			
+			<anim name="madsen_lar_recoil_enter" 					file="anims/fps/madsen_lar/madsen_lar_recoil_enter" blend_set="all"/>
+			<anim name="madsen_lar_recoil_loop" 					file="anims/fps/madsen_lar/madsen_lar_recoil_loop" blend_set="all"/>
+			<anim name="madsen_lar_recoil_exit" 					file="anims/fps/madsen_lar/madsen_lar_recoil_exit" blend_set="all"/>	
+			<anim name="madsen_lar_recoil_steelsight" 				file="anims/fps/madsen_lar/madsen_lar_recoil_steelsight" blend_set="all"/>
+			<anim name="madsen_lar_recoil" 							file="anims/fps/madsen_lar/madsen_lar_recoil" blend_set="all"/>			
+			<anim name="madsen_lar_inspect"                      	file="anims/fps/madsen_lar/madsen_lar_inspect" blend_set="all"/>
+			
+			
+			<anim name="madsen_lar_idle" 							file="anims/fps/wa2000/wa2000_idle" blend_set="all"/>
+			<anim name="madsen_lar_equip" 							file="anims/fps/wa2000/wa2000_equip" blend_set="all"/>
+			<anim name="madsen_lar_unequip" 						file="anims/fps/wa2000/wa2000_unequip" blend_set="all"/>
+			<anim name="madsen_lar_melee" 							file="anims/fps/wa2000/wa2000_melee" blend_set="all"/>
+			<anim name="madsen_lar_melee_miss" 						file="anims/fps/wa2000/wa2000_melee_miss" blend_set="all"/>
+			<anim name="madsen_lar_use" 							file="anims/fps/wa2000/wa2000_use" blend_set="all"/>
+			<anim name="madsen_lar_sprint" 							file="anims/fps/wa2000/wa2000_sprint" blend_set="all"/>
+			<anim name="madsen_lar_sprint_exit"						file="anims/fps/wa2000/wa2000_sprint_exit" blend_set="all"/>
+			<anim name="madsen_lar_sprint_enter" 					file="anims/fps/wa2000/wa2000_sprint_enter" blend_set="all"/>
+			<anim name="madsen_lar_com_down_var1"		 			file="anims/fps/wa2000/wa2000_com_var1" blend_set="all"/>
+			<anim name="madsen_lar_com_stop" 						file="anims/fps/wa2000/wa2000_com_var5" blend_set="all"/>
+			<anim name="madsen_lar_com_come" 						file="anims/fps/wa2000/wa2000_com_var6" blend_set="all"/>
+			<anim name="madsen_lar_com_point" 						file="anims/fps/wa2000/wa2000_com_var7" blend_set="all"/>
+			<anim name="madsen_lar_get_up" 							file="anims/fps/wa2000/wa2000_get_up" blend_set="all"/>
+			<anim name="madsen_lar_gogo" 							file="anims/fps/wa2000/wa2000_gogo" blend_set="all"/>
+			<anim name="madsen_lar_tased" 							file="anims/fps/wa2000/wa2000_tased" blend_set="all"/>
+			<anim name="madsen_lar_tased_boost" 					file="anims/fps/wa2000/wa2000_tased_boost" blend_set="all"/>
+			<anim name="madsen_lar_tased_exit" 						file="anims/fps/wa2000/wa2000_tased_exit" blend_set="all"/>
+			
+			
+			
+		</target>
+	</tweak>
+</tweaks>

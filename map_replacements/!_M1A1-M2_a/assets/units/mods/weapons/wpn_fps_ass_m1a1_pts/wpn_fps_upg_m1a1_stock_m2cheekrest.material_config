@@ -1,0 +1,12 @@
+<materials version="3" group="weapon">
+	<material name="mat_stock_01" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_ass_m1a1_pts/textures/stock_01_df"/>
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_ass_m1a1_pts/textures/stock_01_nm"/>
+		<material_texture file="units/mods/weapons/wpn_fps_ass_m1a1_pts/textures/stock_01_gsma"/>
+	</material>
+	<material name="mat_cheekpad_03" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_ass_m1a1_pts/textures/cheekpad_03_df"/>
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_ass_m1a1_pts/textures/cheekpad_03_nm"/>
+		<material_texture file="units/mods/weapons/wpn_fps_ass_m1a1_pts/textures/cheekpad_03_gsma"/>
+	</material>
+</materials>

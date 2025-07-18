@@ -1,0 +1,12 @@
+<materials version="3" group="weapon_rage">
+	<material name="bullet" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_pis_bk500_pts/textures/bullet500_df" mip="1"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_pis_bk500_pts/textures/bullet500_nm" mip="1"/>
+		<reflection_texture type="cubemap" global_texture="current_global_texture"/>
+    </material>
+	<material name="speedloader" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_pis_bk500_pts/textures/speedloader_df" mip="1"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_pis_bk500_pts/textures/speedloader_nm" mip="1"/>
+		<reflection_texture type="cubemap" global_texture="current_global_texture"/>
+    </material>
+</materials>

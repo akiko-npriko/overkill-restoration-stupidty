@@ -1,0 +1,16 @@
+<materials version="3" group="weapon_tti">
+	
+	<material name="mtr_sbeta_barrel" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_snp_sbeta_pts/textures/sbeta_barrel_df" mip="1"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_snp_sbeta_pts/textures/sbeta_barrel_nm" mip="1"/>
+    </material>	
+	<material name="mtr_sbeta_mag" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_snp_sbeta_pts/textures/sbeta_magazine_df" mip="1"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_snp_sbeta_pts/textures/sbeta_magazine_nm" mip="1"/>
+    </material>	
+	<material name="mtr_sbeta_sights" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_snp_sbeta_pts/textures/sbeta_sights_df" mip="1"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_snp_sbeta_pts/textures/sbeta_sights_nm" mip="1"/>
+    </material>	
+	
+</materials>

@@ -1,0 +1,31 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_ass_mdr_308_pts/wpn_fps_ass_mdr_308_body_black" orientation_object="rp_wpn_fps_ass_mdr308_body" />
+	<animations>
+		<animation_group name="reload" >
+		  <object name="anim_reload_bolt" enabled="true" />
+		</animation_group>	
+		<animation_group name="reload_not_empty" >
+		  <object name="anim_reload_not_empty_mag" enabled="true" />
+		  <object name="anim_reload_not_empty_magpaddle" enabled="true" />
+		  <object name="anim_reload_not_empty_magreleasefront" enabled="true" />
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_mdr_charging_handle_left" enabled="true" />
+		<object name="g_mdr_charging_handle_bolt_left" enabled="true" />
+		<object name="g_mdr_charging_handle_right" enabled="true" />
+		<object name="g_mdr_charging_handle_bolt_right" enabled="true" />
+		<object name="g_mdr_bolt" enabled="true" />
+		<object name="g_mdr_charging_handle" enabled="true" />
+		<object name="g_mdr_bolt_release" enabled="true" />
+		<object name="g_mdr_mag_release_paddle" enabled="true" />
+		<object name="g_mdr_bolt_release_front" enabled="true" />
+		<object name="g_mdr_selector" enabled="true" />
+		<object name="g_mdr_trigger" enabled="true" />
+		<object name="g_mdr_handguard" enabled="true" />
+		<object name="g_mdr_mag_release_rear" enabled="true" />
+		<object name="g_mdr_pistolgrip" enabled="true" />
+		<object name="g_mdr_receiver_lower" enabled="true" />
+		<object name="g_mdr_receiver_upper" enabled="true" />
+	</graphics>
+</dynamic_object>

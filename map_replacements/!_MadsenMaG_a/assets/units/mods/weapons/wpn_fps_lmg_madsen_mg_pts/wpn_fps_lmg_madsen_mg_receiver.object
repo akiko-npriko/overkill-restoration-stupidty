@@ -1,0 +1,32 @@
+<dynamic_object>
+    <diesel orientation_object="rp_receiver" materials="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/wpn_fps_lmg_madsen_mg_receiver" />
+	
+	<animations>
+		<animation_group name="recoil">
+			<object name="anim_recoil_cartridge_distributor" enabled="true" />
+			<object name="anim_recoil_charging_handle" enabled="true" />
+		</animation_group>
+		<animation_group name="reload">
+			<object name="anim_reload_charging_handle" enabled="true" />
+			<object name="anim_reload_mag_release" enabled="true" />
+
+		</animation_group>
+		<animation_group name="reload_not_empty">
+			<object name="anim_reload_not_empty_mag_release" enabled="true" />
+
+		</animation_group>
+    </animations>
+	
+    <graphics>
+		<object name="g_charging_handle" enabled="true" />
+		<object name="g_disasembly_lever" enabled="true" />
+		<object name="g_ejection_port_cover" enabled="true" />
+		<object name="g_madsen_receiver" enabled="true" />
+		<object name="g_mag_release" enabled="true" />
+		<object name="g_cartridge_distributor" enabled="true" />
+		<object name="g_shroud" enabled="true" />
+		<object name="g_sling_mount" enabled="true" />
+		<object name="g_sling_mount2" enabled="true" />
+		<object name="g_trigger" enabled="true" />
+    </graphics>
+</dynamic_object>

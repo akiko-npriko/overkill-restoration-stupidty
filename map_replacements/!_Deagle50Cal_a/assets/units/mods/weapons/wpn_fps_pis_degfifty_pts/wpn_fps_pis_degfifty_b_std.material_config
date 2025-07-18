@@ -1,0 +1,7 @@
+<materials version="3" group="weapon_deagle">
+	<material name="barrel" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/payday2/weapons/wpn_fps_pis_deagle_pts/barrel_df"/>
+        <bump_normal_texture file="units/payday2/weapons/wpn_fps_pis_deagle_pts/barrel_nm"/>
+		<reflection_texture type="cubemap" global_texture="current_global_texture"/>
+    </material>
+</materials>

@@ -1,0 +1,416 @@
+<mod name="MW2023 Beretta ARX 200" author="Hylie and God Emperor">
+
+	<Localization directory="loc" default="english.txt"/>
+
+	<AssetUpdates id="51659" version="2" provider="modworkshop"/>
+
+	<GlobalValue id="commissioned_mod" color="Color(0.9, 0.17, 0.31)"/>
+
+	<AddFiles directory="assets" auto_generate="true"/>
+
+	<Hooks directory="hooks">
+		<hook file="newraycastweaponbase.lua" source_file="lib/units/weapons/newraycastweaponbase"/>
+	</Hooks>
+
+	<Sounds directory="assets\sounds">
+		<sound id="soa_fire" path="soa_fire_reg.ogg" prefix="regular"/>
+
+		<sound id="soa_fire" path="soa_fire_sil.ogg" prefix="suppressed_a"/>
+		<sound id="soa_fire" path="soa_fire_sil.ogg" prefix="suppressed_b"/>
+		<sound id="soa_fire" path="soa_fire_sil.ogg" prefix="suppressed_c"/>
+
+		<sound id="soa_back_in_hand"		 	path="soa_back_in_hand.ogg" prefix="first"/>
+		<sound id="soa_back_in_hand" 			path="soa_back_in_hand.ogg" prefix="third"/>
+		<sound id="soa_generic_center"		 	path="soa_generic_center.ogg" prefix="first"/>
+		<sound id="soa_generic_center" 			path="soa_generic_center.ogg" prefix="third"/>
+		<sound id="soa_tilt"		 	path="soa_tilt.ogg" prefix="first"/>
+		<sound id="soa_tilt" 			path="soa_tilt.ogg" prefix="third"/>
+		<sound id="soa_tilt_back"		 	path="soa_tilt_back.ogg" prefix="first"/>
+		<sound id="soa_tilt_back" 			path="soa_tilt_back.ogg" prefix="third"/>
+
+		<sound id="soa_charging_handle_pull_empty"		 	path="soa_charging_handle_pull_empty.ogg" prefix="first"/>
+		<sound id="soa_charging_handle_pull_empty" 			path="soa_charging_handle_pull_empty.ogg" prefix="third"/>
+		<sound id="soa_drum_contact_empty"		 	path="soa_drum_contact_empty.ogg" prefix="first"/>
+		<sound id="soa_drum_contact_empty" 			path="soa_drum_contact_empty.ogg" prefix="third"/>
+		<sound id="soa_drum_in_empty"		 	path="soa_drum_in_empty.ogg" prefix="first"/>
+		<sound id="soa_drum_in_empty" 			path="soa_drum_in_empty.ogg" prefix="third"/>
+		<sound id="soa_drum_out_empty"		 	path="soa_drum_out_empty.ogg" prefix="first"/>
+		<sound id="soa_drum_out_empty" 			path="soa_drum_out_empty.ogg" prefix="third"/>
+		<sound id="soa_drum_release_press_empty"		 	path="soa_drum_release_press_empty.ogg" prefix="first"/>
+		<sound id="soa_drum_release_press_empty" 			path="soa_drum_release_press_empty.ogg" prefix="third"/>
+
+		<sound id="soa_mag_contact_empty"		 	path="soa_mag_contact_empty.ogg" prefix="first"/>
+		<sound id="soa_mag_contact_empty" 			path="soa_mag_contact_empty.ogg" prefix="third"/>
+		<sound id="soa_mag_in_empty"		 	path="soa_mag_in_empty.ogg" prefix="first"/>
+		<sound id="soa_mag_in_empty" 			path="soa_mag_in_empty.ogg" prefix="third"/>
+		<sound id="soa_mag_out_empty"		 	path="soa_mag_out_empty.ogg" prefix="first"/>
+		<sound id="soa_mag_out_empty" 			path="soa_mag_out_empty.ogg" prefix="third"/>
+		<sound id="soa_mag_release_press_empty"		 	path="soa_mag_release_press_empty.ogg" prefix="first"/>
+		<sound id="soa_mag_release_press_empty" 			path="soa_mag_release_press_empty.ogg" prefix="third"/>
+
+		<sound id="soa_drum_contact"		 	path="soa_drum_contact.ogg" prefix="first"/>
+		<sound id="soa_drum_contact" 			path="soa_drum_contact.ogg" prefix="third"/>
+		<sound id="soa_drum_in"		 	path="soa_drum_in.ogg" prefix="first"/>
+		<sound id="soa_drum_in" 			path="soa_drum_in.ogg" prefix="third"/>
+		<sound id="soa_drum_out"		 	path="soa_drum_out.ogg" prefix="first"/>
+		<sound id="soa_drum_out" 			path="soa_drum_out.ogg" prefix="third"/>
+		<sound id="soa_drum_release_press"		 	path="soa_drum_release_press.ogg" prefix="first"/>
+		<sound id="soa_drum_release_press" 			path="soa_drum_release_press.ogg" prefix="third"/>
+
+		<sound id="soa_mag_contact"		 	path="soa_mag_contact.ogg" prefix="first"/>
+		<sound id="soa_mag_contact" 			path="soa_mag_contact.ogg" prefix="third"/>
+		<sound id="soa_mag_in"		 	path="soa_mag_in.ogg" prefix="first"/>
+		<sound id="soa_mag_in" 			path="soa_mag_in.ogg" prefix="third"/>
+		<sound id="soa_mag_out"		 	path="soa_mag_out.ogg" prefix="first"/>
+		<sound id="soa_mag_out" 			path="soa_mag_out.ogg" prefix="third"/>
+		<sound id="soa_mag_release_press"		 	path="soa_mag_release_press.ogg" prefix="first"/>
+		<sound id="soa_mag_release_press" 			path="soa_mag_release_press.ogg" prefix="third"/>
+	</Sounds>
+
+	<!-- MW2023 Beretta ARX 200 - Default Parts -->
+
+    <WeaponMod id="wpn_fps_ass_soa_ns_std" type="barrel_ext" based_on="wpn_fps_ass_flint_ns_standard" unit="units/mods/weapons/wpn_fps_ass_soa_pts/wpn_fps_ass_soa_ns_std" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_ass_soa_b_1" type="barrel" based_on="wpn_fps_ass_flint_b_standard" unit="units/mods/weapons/wpn_fps_ass_soa_pts/wpn_fps_ass_soa_b_1" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_ass_soa_b_2" type="barrel" based_on="wpn_fps_ass_flint_b_standard" unit="units/mods/weapons/wpn_fps_ass_soa_pts/wpn_fps_ass_soa_b_2" hidden="false" global_value="commissioned_mod" ver="2">
+	    <stats spread="2" recoil="2" concealment="-3"/>
+	    <override>
+		    <wpn_fps_ass_soa_ns_std parent="barrel" a_obj="a_ns_2"/>
+			<wpn_fps_upg_ns_ass_smg_large parent="barrel" a_obj="a_ns_2"/>
+			<wpn_fps_upg_ns_ass_smg_medium parent="barrel" a_obj="a_ns_2"/>
+			<wpn_fps_upg_ns_ass_smg_small parent="barrel" a_obj="a_ns_2"/>
+			<wpn_fps_upg_ns_ass_smg_firepig parent="barrel" a_obj="a_ns_2"/>
+			<wpn_fps_upg_ns_ass_smg_stubby parent="barrel" a_obj="a_ns_2"/>
+			<wpn_fps_upg_ns_ass_smg_tank parent="barrel" a_obj="a_ns_2"/>
+			<wpn_fps_upg_ass_ns_jprifles parent="barrel" a_obj="a_ns_2"/>
+			<wpn_fps_upg_ass_ns_linear parent="barrel" a_obj="a_ns_2"/>
+			<wpn_fps_upg_ass_ns_surefire parent="barrel" a_obj="a_ns_2"/>
+			<wpn_fps_upg_ass_ns_battle parent="barrel" a_obj="a_ns_2"/>
+			<wpn_fps_upg_ns_ass_smg_v6 parent="barrel" a_obj="a_ns_2"/>
+			<wpn_fps_lmg_hk51b_ns_jcomp parent="barrel" a_obj="a_ns_2"/>
+			<wpn_fps_lmg_kacchainsaw_ns_muzzle parent="barrel" a_obj="a_ns_2"/>
+			<wpn_fps_lmg_kacchainsaw_ns_suppressor parent="barrel" a_obj="a_ns_2"/>
+	    </override>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_soa_b_3" type="barrel" based_on="wpn_fps_ass_flint_b_standard" unit="units/mods/weapons/wpn_fps_ass_soa_pts/wpn_fps_ass_soa_b_3" hidden="false" global_value="commissioned_mod" ver="2">
+	    <stats spread="-1" recoil="1" concealment="2"/>
+	    <override>
+		    <wpn_fps_ass_soa_ns_std parent="barrel" a_obj="a_ns_3"/>
+			<wpn_fps_upg_ns_ass_smg_large parent="barrel" a_obj="a_ns_3"/>
+			<wpn_fps_upg_ns_ass_smg_medium parent="barrel" a_obj="a_ns_3"/>
+			<wpn_fps_upg_ns_ass_smg_small parent="barrel" a_obj="a_ns_3"/>
+			<wpn_fps_upg_ns_ass_smg_firepig parent="barrel" a_obj="a_ns_3"/>
+			<wpn_fps_upg_ns_ass_smg_stubby parent="barrel" a_obj="a_ns_3"/>
+			<wpn_fps_upg_ns_ass_smg_tank parent="barrel" a_obj="a_ns_3"/>
+			<wpn_fps_upg_ass_ns_jprifles parent="barrel" a_obj="a_ns_3"/>
+			<wpn_fps_upg_ass_ns_linear parent="barrel" a_obj="a_ns_3"/>
+			<wpn_fps_upg_ass_ns_surefire parent="barrel" a_obj="a_ns_3"/>
+			<wpn_fps_upg_ass_ns_battle parent="barrel" a_obj="a_ns_3"/>
+			<wpn_fps_upg_ns_ass_smg_v6 parent="barrel" a_obj="a_ns_3"/>
+			<wpn_fps_lmg_hk51b_ns_jcomp parent="barrel" a_obj="a_ns_3"/>
+			<wpn_fps_lmg_kacchainsaw_ns_muzzle parent="barrel" a_obj="a_ns_3"/>
+			<wpn_fps_lmg_kacchainsaw_ns_suppressor parent="barrel" a_obj="a_ns_3"/>
+	    </override>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_soa_m_1" type="magazine" based_on="wpn_fps_ass_flint_m_standard" unit="units/mods/weapons/wpn_fps_ass_soa_pts/wpn_fps_ass_soa_m_1" hidden="true" ver="2">
+	        <bullet_objects prefix="g_bullet_" amount="1"/>
+			<animations reload="reload" reload_not_empty="reload_not_empty"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_soa_m_2" type="magazine" based_on="wpn_fps_ass_flint_m_standard" unit="units/mods/weapons/wpn_fps_ass_soa_pts/wpn_fps_ass_soa_m_2" hidden="false" global_value="commissioned_mod" ver="2">
+	        <stats extra_ammo="5" recoil="1" concealment="-1"/>
+	        <bullet_objects prefix="g_bullet_" amount="1"/>
+			<animations reload="reload" reload_not_empty="reload_not_empty"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_soa_m_3" type="magazine" based_on="wpn_fps_upg_m4_m_quad" unit="units/mods/weapons/wpn_fps_ass_soa_pts/wpn_fps_ass_soa_m_3" hidden="false" global_value="commissioned_mod" ver="2">
+	        <stats extra_ammo="15" spread="-1" recoil="1" concealment="-3"/>
+	        <bullet_objects prefix="g_bullet_" amount="1"/>
+			<animations reload="reload" reload_not_empty="reload_not_empty"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_soa_body_std" type="lower_reciever" based_on="wpn_fps_ass_flint_body_upperreceiver" unit="units/mods/weapons/wpn_fps_ass_soa_pts/wpn_fps_ass_soa_body_std" hidden="true" ver="2">
+	    <animations fire="recoil" fire_steelsight="recoil" reload="reload"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_soa_o_std" type="sight" based_on="wpn_fps_ass_flint_o_standard" unit="units/mods/weapons/wpn_fps_ass_soa_pts/wpn_fps_ass_soa_o_std" hidden="true" ver="2">
+		<stance_mod>
+			<wpn_fps_ass_soa translation="0 0 0.8"/>
+		</stance_mod>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_soa_o_std_down" type="extra" a_obj="a_body" based_on="wpn_fps_ass_flint_o_standard" unit="units/mods/weapons/wpn_fps_ass_soa_pts/wpn_fps_ass_soa_o_std_down" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_ass_soa_s_1" type="stock" based_on="wpn_fps_ass_flint_s_standard" unit="units/mods/weapons/wpn_fps_ass_soa_pts/wpn_fps_ass_soa_s_1" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_ass_soa_s_2" type="stock" based_on="wpn_fps_ass_flint_s_standard" unit="units/mods/weapons/wpn_fps_ass_soa_pts/wpn_fps_ass_soa_s_2" hidden="false" global_value="commissioned_mod" ver="2">
+	    <stats recoil="2" concealment="-1"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_soa_s_3" type="stock" based_on="wpn_fps_ass_flint_s_standard" unit="units/mods/weapons/wpn_fps_ass_soa_pts/wpn_fps_ass_soa_s_3" hidden="false" global_value="commissioned_mod" ver="2">
+	    <stats spread="1" recoil="1" concealment="-2"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_soa_s_4" type="stock" based_on="wpn_fps_ass_flint_s_standard" unit="units/mods/weapons/wpn_fps_ass_soa_pts/wpn_fps_ass_soa_s_4" hidden="false" global_value="commissioned_mod" ver="2">
+	    <stats spread="2" recoil="2" concealment="-3"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_soa_s_5" type="stock" based_on="wpn_fps_ass_flint_s_standard" unit="units/mods/weapons/wpn_fps_ass_soa_pts/wpn_fps_ass_soa_s_5" hidden="false" global_value="commissioned_mod" ver="2">
+	    <stats spread="1" recoil="-1"/>
+	</WeaponMod>
+
+	<!-- MW2023 Beretta ARX 200 - Factory -->
+
+	<Weapon unlock_level="18">
+
+		<weapon id="soa" based_on="scar" weapon_hold="soa" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="5" has_description="true" desc_id="bm_w_soa_desc" texture_bundle_folder="mods" global_value="commissioned_mod">
+
+			<stats damage="98" spread="17" spread_moving="18" recoil="20" concealment="9"/>
+
+			<fire_mode_data fire_rate="0.08"/>
+
+			<AMMO_PICKUP>
+				<value_node value="4.00"/>
+				<value_node value="8.00"/>
+			</AMMO_PICKUP>
+
+			<kick>
+			<standing>
+				<value_node value="0.8"/>
+				<value_node value="1.0"/>
+				<value_node value="-0.70"/>
+				<value_node value="0.70"/>
+			</standing>
+			<crouching>
+				<value_node value="0.7"/>
+				<value_node value="0.9"/>
+				<value_node value="-0.65"/>
+				<value_node value="0.65"/>
+			</crouching>
+			<steelsight>
+				<value_node value="0.6"/>
+				<value_node value="0.8"/>
+				<value_node value="-0.6"/>
+				<value_node value="0.6"/>
+			</steelsight>
+			</kick>
+		
+			<sounds fire="soa_fire" fire_auto="soa_fire" fire_single="soa_fire" use_fix="true"/>
+
+			<timers reload_empty="3.08" reload_not_empty="2.05"/>
+
+			<animations reload="reload" reload_not_empty="reload_not_empty" reload_name_id="soa"/>
+
+		</weapon>
+
+		<factory id="wpn_fps_ass_soa" unit="units/mods/weapons/wpn_fps_ass_soa/wpn_fps_ass_soa">
+
+			<animations fire="recoil" fire_steelsight="recoil" magazine_empty="last_recoil" reload="reload" reload_not_empty="reload_not_empty"/>
+
+			<override>
+				<wpn_fps_upg_ns_ass_smg_large parent="barrel" a_obj="a_ns"/>
+				<wpn_fps_upg_ns_ass_smg_medium parent="barrel" a_obj="a_ns"/>
+				<wpn_fps_upg_ns_ass_smg_small parent="barrel" a_obj="a_ns"/>
+				<wpn_fps_upg_ns_ass_smg_firepig parent="barrel" a_obj="a_ns"/>
+				<wpn_fps_upg_ns_ass_smg_stubby parent="barrel" a_obj="a_ns"/>
+				<wpn_fps_upg_ns_ass_smg_tank parent="barrel" a_obj="a_ns"/>
+				<wpn_fps_upg_ass_ns_jprifles parent="barrel" a_obj="a_ns"/>
+				<wpn_fps_upg_ass_ns_linear parent="barrel" a_obj="a_ns"/>
+				<wpn_fps_upg_ass_ns_surefire parent="barrel" a_obj="a_ns"/>
+				<wpn_fps_upg_ass_ns_battle parent="barrel" a_obj="a_ns"/>
+				<wpn_fps_upg_ns_ass_smg_v6 parent="barrel" a_obj="a_ns"/>
+				<wpn_fps_lmg_hk51b_ns_jcomp parent="barrel" a_obj="a_ns"/>
+				<wpn_fps_lmg_kacchainsaw_ns_muzzle parent="barrel" a_obj="a_ns"/>
+				<wpn_fps_lmg_kacchainsaw_ns_suppressor parent="barrel" a_obj="a_ns"/>
+				<wpn_fps_addon_ris unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+			</override>
+
+			<adds>
+			    <wpn_fps_upg_o_specter>
+			            <value_node value="wpn_fps_ass_soa_o_std_down"/>
+			    </wpn_fps_upg_o_specter>
+
+				<wpn_fps_upg_o_aimpoint>
+						<value_node value="wpn_fps_ass_soa_o_std_down"/>
+				</wpn_fps_upg_o_aimpoint>
+
+				<wpn_fps_upg_o_docter>
+						<value_node value="wpn_fps_ass_soa_o_std_down"/>
+				</wpn_fps_upg_o_docter>	
+
+				<wpn_fps_upg_o_eotech>
+						<value_node value="wpn_fps_ass_soa_o_std_down"/>
+				</wpn_fps_upg_o_eotech>	
+
+				<wpn_fps_upg_o_t1micro>
+						<value_node value="wpn_fps_ass_soa_o_std_down"/>
+				</wpn_fps_upg_o_t1micro>
+
+				<wpn_fps_upg_o_acog>
+						<value_node value="wpn_fps_ass_soa_o_std_down"/>
+				</wpn_fps_upg_o_acog>
+
+				<wpn_fps_upg_o_cmore>
+						<value_node value="wpn_fps_ass_soa_o_std_down"/>
+				</wpn_fps_upg_o_cmore>	
+
+				<wpn_fps_upg_o_aimpoint_2>
+						<value_node value="wpn_fps_ass_soa_o_std_down"/>
+				</wpn_fps_upg_o_aimpoint_2>
+
+				<wpn_fps_upg_o_eotech_xps>
+						<value_node value="wpn_fps_ass_soa_o_std_down"/>
+				</wpn_fps_upg_o_eotech_xps>	
+
+				<wpn_fps_upg_o_reflex>
+						<value_node value="wpn_fps_ass_soa_o_std_down"/>
+				</wpn_fps_upg_o_reflex>	
+
+				<wpn_fps_upg_o_rx01>
+						<value_node value="wpn_fps_ass_soa_o_std_down"/>
+				</wpn_fps_upg_o_rx01>
+
+				<wpn_fps_upg_o_rx30>
+						<value_node value="wpn_fps_ass_soa_o_std_down"/>
+				</wpn_fps_upg_o_rx30>
+
+				<wpn_fps_upg_o_cs>
+						<value_node value="wpn_fps_ass_soa_o_std_down"/>
+				</wpn_fps_upg_o_cs>	
+
+				<wpn_fps_upg_o_fc1>
+						<value_node value="wpn_fps_ass_soa_o_std_down"/>
+				</wpn_fps_upg_o_fc1>
+
+				<wpn_fps_upg_o_bmg>
+						<value_node value="wpn_fps_ass_soa_o_std_down"/>
+				</wpn_fps_upg_o_bmg>	
+
+				<wpn_fps_upg_o_uh>
+						<value_node value="wpn_fps_ass_soa_o_std_down"/>
+				</wpn_fps_upg_o_uh>	
+
+				<wpn_fps_upg_o_poe>
+						<value_node value="wpn_fps_ass_soa_o_std_down"/>
+				</wpn_fps_upg_o_poe>
+
+				<wpn_fps_upg_o_tf90>
+						<value_node value="wpn_fps_ass_soa_o_std_down"/>
+				</wpn_fps_upg_o_tf90>
+
+				<wpn_fps_upg_o_hamr>
+						<value_node value="wpn_fps_ass_soa_o_std_down"/>
+				</wpn_fps_upg_o_hamr>	
+
+				<wpn_fps_upg_o_atibal>
+						<value_node value="wpn_fps_ass_soa_o_std_down"/>
+				</wpn_fps_upg_o_atibal>	
+
+				<wpn_fps_upg_o_health>				
+						<value_node value="wpn_fps_ass_soa_o_std_down"/>						
+				</wpn_fps_upg_o_health>
+			</adds>
+
+			<default_blueprint>
+				<value_node value="wpn_fps_ass_soa_b_1"/>
+				<value_node value="wpn_fps_ass_soa_body_std"/>
+				<value_node value="wpn_fps_ass_soa_m_1"/>
+				<value_node value="wpn_fps_ass_soa_ns_std"/>
+				<value_node value="wpn_fps_ass_soa_o_std"/>
+				<value_node value="wpn_fps_ass_soa_s_1"/>
+			</default_blueprint>
+
+			<uses_parts>
+				<value_node value="wpn_fps_ass_soa_b_1"/>
+				<value_node value="wpn_fps_ass_soa_body_std"/>
+				<value_node value="wpn_fps_ass_soa_m_1"/>
+				<value_node value="wpn_fps_ass_soa_ns_std"/>
+				<value_node value="wpn_fps_ass_soa_o_std"/>
+				<value_node value="wpn_fps_ass_soa_s_1"/>
+
+				<value_node value="wpn_fps_ass_soa_b_2"/>
+				<value_node value="wpn_fps_ass_soa_b_3"/>
+
+				<value_node value="wpn_fps_ass_soa_m_2"/>
+				<value_node value="wpn_fps_ass_soa_m_3"/>
+
+				<value_node value="wpn_fps_ass_soa_s_1"/>
+				<value_node value="wpn_fps_ass_soa_s_2"/>
+				<value_node value="wpn_fps_ass_soa_s_3"/>
+				<value_node value="wpn_fps_ass_soa_s_4"/>
+				<value_node value="wpn_fps_ass_soa_s_5"/>
+
+				<value_node value="wpn_fps_upg_i_autofire"/>
+				<value_node value="wpn_fps_upg_i_singlefire"/>
+
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_v6"/>
+				<value_node value="wpn_fps_lmg_hk51b_ns_jcomp"/>
+				<value_node value="wpn_fps_lmg_kacchainsaw_ns_muzzle"/>
+				<value_node value="wpn_fps_lmg_kacchainsaw_ns_suppressor"/>
+
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_specter_steelsight"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_bmg"/>
+				<value_node value="wpn_fps_upg_o_uh"/>
+				<value_node value="wpn_fps_upg_o_fc1"/>
+				<value_node value="wpn_fps_upg_o_tf90"/>
+				<value_node value="wpn_fps_upg_o_poe"/>
+				<value_node value="wpn_fps_upg_o_hamr"/>
+				<value_node value="wpn_fps_upg_o_hamr_steelsight"/>
+				<value_node value="wpn_fps_upg_o_atibal"/>
+				<value_node value="wpn_fps_upg_o_atibal_steelsight"/>
+				<value_node value="wpn_fps_upg_o_health"/>
+
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+				<value_node value="wpn_fps_upg_o_sig"/>
+
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/>
+			</uses_parts>
+
+		</factory>
+
+	    <stance>			
+			<standard>
+				<shoulders rotation="-0.000745315 0.00548101 0.00093835 -0.999984" translation="-1.247 -4.472 -1.374"/>
+			</standard>
+			<crouched> 
+				<shoulders rotation="-0.000745315 0.00548101 0.00093835 -0.999984" translation="-2.247 -5.472 -2.374"/>
+			</crouched>
+			<steelsight>
+				<shoulders rotation="-0.000750098 0.00548036 6.56992e-005 -0.999985" translation="-8.327 -7.472 0.024"/>
+			</steelsight>
+		</stance>
+
+	</Weapon>
+</mod>

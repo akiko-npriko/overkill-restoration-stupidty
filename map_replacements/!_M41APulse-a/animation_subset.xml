@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+		<target mode="attach">
+			<anim name="xeno_inspect"						file="anims/fps/xeno/xeno_inspect" blend_set="all"/>
+
+			<anim name="xeno_underbarrel_enter" 			file="anims/fps/xeno/xeno_underbarrel_enter" blend_set="all"/>
+			<anim name="xeno_underbarrel_exit" 				file="anims/fps/xeno/xeno_underbarrel_exit" blend_set="all"/>
+			<anim name="xeno_underbarrel_idle"   			file="anims/fps/xeno/xeno_idle" blend_set="all"/>
+			<anim name="xeno_underbarrel_recoil" 			file="anims/fps/xeno/xeno_underbarrel_recoil" blend_set="all"/>
+			<anim name="xeno_underbarrel_equip" 			file="anims/fps/xeno/xeno_equip" blend_set="all"/>
+			<anim name="xeno_underbarrel_unequip" 			file="anims/fps/xeno/xeno_unequip" blend_set="all"/>
+			<anim name="xeno_underbarrel_reload" 			file="anims/fps/xeno/xeno_underbarrel_reload" blend_set="all"/>
+			<anim name="xeno_underbarrel_reload_not_empty"	file="anims/fps/xeno/xeno_underbarrel_reload" blend_set="all"/>
+			<anim name="xeno_underbarrel_melee" 			file="anims/fps/xeno/xeno_melee" blend_set="all"/>
+			<anim name="xeno_underbarrel_melee_miss" 		file="anims/fps/xeno/xeno_melee_miss" blend_set="all"/>
+			<anim name="xeno_underbarrel_use" 				file="anims/fps/xeno/xeno_use" blend_set="all"/>
+			<anim name="xeno_underbarrel_sprint_enter" 		file="anims/fps/xeno/xeno_sprint_enter" blend_set="all"/>
+			<anim name="xeno_underbarrel_sprint" 			file="anims/fps/xeno/xeno_sprint" blend_set="all"/>
+			<anim name="xeno_underbarrel_sprint_exit" 		file="anims/fps/xeno/xeno_sprint_exit" blend_set="all"/>
+			<anim name="xeno_underbarrel_com_down_var1"		file="anims/fps/xeno/xeno_com_var1" blend_set="all"/>
+			<anim name="xeno_underbarrel_com_stop"			file="anims/fps/xeno/xeno_com_var5" blend_set="all"/>
+			<anim name="xeno_underbarrel_com_come"			file="anims/fps/xeno/xeno_com_var6" blend_set="all"/>
+			<anim name="xeno_underbarrel_com_point"			file="anims/fps/xeno/xeno_com_var7" blend_set="all"/>
+			<anim name="xeno_underbarrel_get_up" 			file="anims/fps/xeno/xeno_get_up" blend_set="all"/>
+			<anim name="xeno_underbarrel_gogo" 				file="anims/fps/xeno/xeno_gogo" blend_set="all"/>
+			<anim name="xeno_underbarrel_tased" 			file="anims/fps/xeno/xeno_tased" blend_set="all"/>
+			<anim name="xeno_underbarrel_tased_boost" 		file="anims/fps/xeno/xeno_tased_boost" blend_set="all"/>
+			<anim name="xeno_underbarrel_tased_exit" 		file="anims/fps/xeno/xeno_tased_exit" blend_set="all"/>
+			<anim name="xeno_underbarrel_recoil_enter" 		file="anims/fps/xeno/xeno_recoil_enter" blend_set="all"/>
+			<anim name="xeno_underbarrel_recoil_loop" 		file="anims/fps/xeno/xeno_recoil_loop" blend_set="all"/>
+			<anim name="xeno_underbarrel_recoil_exit" 		file="anims/fps/xeno/xeno_recoil_exit" blend_set="all"/>
+			<anim name="xeno_underbarrel_inspect"			file="anims/fps/xeno/xeno_inspect" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

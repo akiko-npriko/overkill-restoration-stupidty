@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+		<target mode="attach">
+			<anim name="m1a1_reload" 			file="anims/fps/m1a1/m1_carbine_reload" blend_set="all"/>
+			<anim name="m1a1_reload_not_empty"	file="anims/fps/m1a1/m1_carbine_reload_not_empty" blend_set="all"/>
+			<anim name="m1a1_idle" 				file="anims/fps/m1a1/m1_carbine_idle" blend_set="all"/>
+			<anim name="m1a1_recoil"			file="anims/fps/m1a1/m1_carbine_recoil" blend_set="all"/>
+			<anim name="m1a1_recoil_enter"		file="anims/fps/m1a1/m1_carbine_recoil_enter" blend_set="all"/>
+			<anim name="m1a1_recoil_loop"		file="anims/fps/m1a1/m1_carbine_recoil_loop" blend_set="all"/>
+			<anim name="m1a1_recoil_exit"		file="anims/fps/m1a1/m1_carbine_recoil_exit" blend_set="all"/>
+			<anim name="m1a1_recoil_steelsight"	file="anims/fps/m1a1/m1_carbine_recoil_iron" blend_set="all"/>
+			<anim name="m1a1_equip"				file="anims/fps/m1a1/m1_carbine_equip" blend_set="all"/>
+			<anim name="m1a1_unequip"			file="anims/fps/m1a1/m1_carbine_unequip" blend_set="all"/>
+			<anim name="m1a1_melee"				file="anims/fps/m1a1/m1_carbine_melee" blend_set="all"/>
+			<anim name="m1a1_melee_miss"		file="anims/fps/m1a1/m1_carbine_melee_miss" blend_set="all"/>
+			<anim name="m1a1_use"				file="anims/fps/m1a1/m1_carbine_use" blend_set="all"/>
+			<anim name="m1a1_sprint_enter"		file="anims/fps/m1a1/m1_carbine_sprint_enter" blend_set="all"/>
+			<anim name="m1a1_sprint"			file="anims/fps/m1a1/m1_carbine_sprint" blend_set="all"/>
+			<anim name="m1a1_sprint_exit"		file="anims/fps/m1a1/m1_carbine_sprint_exit" blend_set="all"/>
+			<anim name="m1a1_com_down_var1"		file="anims/fps/m1a1/m1_carbine_com_down_var1" blend_set="all"/>
+			<anim name="m1a1_com_stop"			file="anims/fps/m1a1/m1_carbine_com_stop" blend_set="all"/>
+			<anim name="m1a1_com_come"			file="anims/fps/m1a1/m1_carbine_follow" blend_set="all"/>
+			<anim name="m1a1_com_point"			file="anims/fps/m1a1/m1_carbine_point" blend_set="all"/>
+			<anim name="m1a1_get_up"			file="anims/fps/m1a1/m1_carbine_get_up" blend_set="all"/>
+			<anim name="m1a1_gogo"				file="anims/fps/m1a1/m1_carbine_follow" blend_set="all"/>
+			<anim name="m1a1_tased"				file="anims/fps/m1a1/m1_carbine_tased" blend_set="all"/>
+			<anim name="m1a1_tased_boost"		file="anims/fps/m1a1/m1_carbine_tased_boost" blend_set="all"/>
+			<anim name="m1a1_tased_exit"		file="anims/fps/m1a1/m1_carbine_tased_exit" blend_set="all"/>
+			<anim name="m1a1_inspect"			file="anims/fps/m1a1/m1_carbine_inspect" blend_set="all"/>
+
+			<anim name="m2_reload"				file="anims/fps/m2/m1_carbine_t2_recoil_reload" blend_set="all"/>
+			<anim name="m2_reload_not_empty"	file="anims/fps/m2/m1_carbine_t2_recoil_reload_not_empty" blend_set="all"/>
+			<anim name="m2_idle"				file="anims/fps/m2/m1_carbine_t2_recoil_idle" blend_set="all"/>
+			<anim name="m2_recoil"				file="anims/fps/m2/m1_carbine_t2_recoil_recoil" blend_set="all"/>
+			<anim name="m2_recoil_enter"		file="anims/fps/m2/m1_carbine_t2_recoil_recoil_enter" blend_set="all"/>
+			<anim name="m2_recoil_loop"			file="anims/fps/m2/m1_carbine_t2_recoil_recoil_loop" blend_set="all"/>
+			<anim name="m2_recoil_exit"			file="anims/fps/m2/m1_carbine_t2_recoil_recoil_exit" blend_set="all"/>
+			<anim name="m2_recoil_steelsight"	file="anims/fps/m2/m1_carbine_t2_recoil_recoil_iron" blend_set="all"/>
+			<anim name="m2_equip"				file="anims/fps/m2/m1_carbine_t2_recoil_equip" blend_set="all"/>
+			<anim name="m2_unequip"				file="anims/fps/m2/m1_carbine_t2_recoil_unequip" blend_set="all"/>
+			<anim name="m2_melee"				file="anims/fps/m2/m1_carbine_t2_recoil_melee" blend_set="all"/>
+			<anim name="m2_melee_miss"			file="anims/fps/m2/m1_carbine_t2_recoil_melee_miss" blend_set="all"/>
+			<anim name="m2_use"					file="anims/fps/m2/m1_carbine_t2_recoil_use" blend_set="all"/>
+			<anim name="m2_sprint_enter"		file="anims/fps/m2/m1_carbine_t2_recoil_sprint_enter" blend_set="all"/>
+			<anim name="m2_sprint"				file="anims/fps/m2/m1_carbine_t2_recoil_sprint" blend_set="all"/>
+			<anim name="m2_sprint_exit"			file="anims/fps/m2/m1_carbine_t2_recoil_sprint_exit" blend_set="all"/>
+			<anim name="m2_com_down_var1"		file="anims/fps/m2/m2_carbine_com_down_var1" blend_set="all"/>
+			<anim name="m2_com_stop"			file="anims/fps/m2/m2_carbine_com_stop" blend_set="all"/>
+			<anim name="m2_com_come"			file="anims/fps/m2/m1_carbine_t2_recoil_follow" blend_set="all"/>
+			<anim name="m2_com_point"			file="anims/fps/m2/m1_carbine_t2_recoil_point" blend_set="all"/>
+			<anim name="m2_get_up"				file="anims/fps/m2/m2_carbine_get_up" blend_set="all"/>
+			<anim name="m2_gogo"				file="anims/fps/m2/m1_carbine_t2_recoil_follow" blend_set="all"/>
+			<anim name="m2_tased"				file="anims/fps/m2/m2_carbine_tased" blend_set="all"/>
+			<anim name="m2_tased_boost"			file="anims/fps/m2/m2_carbine_tased_boost" blend_set="all"/>
+			<anim name="m2_tased_exit"			file="anims/fps/m2/m2_carbine_tased_exit" blend_set="all"/>
+			<anim name="m2_inspect"				file="anims/fps/m2/m2_carbine_inspect" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

@@ -1,0 +1,16 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_snp_martinihenry_pts/wpn_fps_snp_martinihenry_barrel" orientation_object="rp_martinihenry"/>
+	<animations>
+		<animation_group name="recoil">
+			<object name="anim_slingfront_recoil" enabled="true"/>
+		</animation_group>
+		<animation_group name="reload">
+			<object name="anim_slingfront_reload" enabled="true"/>
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_barrel" enabled="true"/>
+		<object name="g_handguard" enabled="true"/>
+		<object name="g_sling_front" enabled="true"/>
+	</graphics>
+</dynamic_object>

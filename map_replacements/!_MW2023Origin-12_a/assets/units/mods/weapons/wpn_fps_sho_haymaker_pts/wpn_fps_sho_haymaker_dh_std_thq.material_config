@@ -1,0 +1,11 @@
+<materials version="3" group="weapon_group">
+
+	<material name="xmaterial_f7c7fa0c903c6e0" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_sho_haymaker_pts/textures/receiver_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_sho_haymaker_pts/textures/receiver_nm"/>
+    </material>	
+	<material name="xmaterial_9f33df1f28177b4" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_sho_haymaker_pts/textures/handguard_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_sho_haymaker_pts/textures/handguard_nm"/>
+    </material>	
+</materials>

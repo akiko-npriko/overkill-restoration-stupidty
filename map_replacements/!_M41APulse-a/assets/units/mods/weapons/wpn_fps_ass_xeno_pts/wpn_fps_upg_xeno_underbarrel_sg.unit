@@ -1,0 +1,12 @@
+<unit type="wpn" slot="1" >
+	<object file="units/mods/weapons/wpn_fps_ass_xeno_pts/wpn_fps_upg_xeno_underbarrel_sg"/>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData"/>
+		<extension name="base" class="WeaponUnderbarrelShotgunRaycast">
+			<var name="name_id" value="contraband_m203"/>
+			<var name="anim" value="safety_toggle"/>
+			<var name="_skip_reload_shotgun_shell" value="true"/>
+			<var name="use_get_name_id" value="true"/>
+		</extension>
+	</extensions>
+</unit>

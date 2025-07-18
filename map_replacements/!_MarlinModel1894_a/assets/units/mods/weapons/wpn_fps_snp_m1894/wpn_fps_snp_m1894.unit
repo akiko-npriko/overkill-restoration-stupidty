@@ -1,0 +1,12 @@
+<unit type="wpn" slot="1">
+	<object file="units/mods/weapons/wpn_fps_snp_m1894/wpn_fps_snp_m1894"/>
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_m1873"/>
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData"/>
+		<extension name="base" class="NewRaycastWeaponBase">
+			<var name="name_id" value="m1894"/>
+		</extension>
+	</extensions>
+</unit>

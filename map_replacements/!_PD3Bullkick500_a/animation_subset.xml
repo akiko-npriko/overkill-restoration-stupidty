@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+			
+		<target mode="attach">
+			<anim name="bk500_spin1_reload" 			file="anims/fps/bk500/bk500_reload_spin_1" blend_set="all"/>
+			<anim name="bk500_spin2_reload"				file="anims/fps/bk500/bk500_reload_spin_2" blend_set="all"/>
+			<anim name="bk500_spin3_reload"				file="anims/fps/bk500/bk500_reload_spin_3" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

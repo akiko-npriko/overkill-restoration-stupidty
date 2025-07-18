@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+		
+		<!--
+			Replace all instances of 'mdr_308' below with the ID of your animation.
+			Note that recoil_steelsight does not have a unique animation in this mdr_308; you can edit the filepath in the 'file' section with one if you wish.
+			If your gun cannot be fired in full auto, you can delete the recoil_enter, recoil_loop, and recoil_exit lines.
+		-->
+		
+		<target mode="attach">
+			<anim name="mdr_308_reload" 								file="anims/fps/mdr_308/mdr_308_reload" blend_set="all"/>
+			<anim name="mdr_308_reload_not_empty" 						file="anims/fps/mdr_308/mdr_308_reload_not_empty" blend_set="all"/>
+			<anim name="mdr_308_idle" 									file="anims/fps/mdr_308/mdr_308_idle" blend_set="all"/>
+			<anim name="mdr_308_recoil" 								file="anims/fps/mdr_308/mdr_308_recoil" blend_set="all"/>
+			<anim name="mdr_308_recoil_enter" 							file="anims/fps/mdr_308/mdr_308_recoil_enter" blend_set="all"/>
+			<anim name="mdr_308_recoil_loop" 							file="anims/fps/mdr_308/mdr_308_recoil_loop" blend_set="all"/>
+			<anim name="mdr_308_recoil_exit" 							file="anims/fps/mdr_308/mdr_308_recoil_exit" blend_set="all"/>
+			<anim name="mdr_308_recoil_steelsight" 						file="anims/fps/mdr_308/mdr_308_recoil" blend_set="all"/>
+			<anim name="mdr_308_equip" 									file="anims/fps/mdr_308/mdr_308_equip" blend_set="all"/>
+			<anim name="mdr_308_unequip" 								file="anims/fps/mdr_308/mdr_308_unequip" blend_set="all"/>
+			<anim name="mdr_308_melee" 									file="anims/fps/mdr_308/mdr_308_melee" blend_set="all"/>
+			<anim name="mdr_308_melee_miss" 							file="anims/fps/mdr_308/mdr_308_melee_miss" blend_set="all"/>
+			<anim name="mdr_308_use" 									file="anims/fps/mdr_308/mdr_308_use" blend_set="all"/>
+			<anim name="mdr_308_sprint_enter" 							file="anims/fps/mdr_308/mdr_308_sprint_enter" blend_set="all"/>
+			<anim name="mdr_308_sprint" 								file="anims/fps/mdr_308/mdr_308_sprint" blend_set="all"/>
+			<anim name="mdr_308_sprint_exit" 							file="anims/fps/mdr_308/mdr_308_sprint_exit" blend_set="all"/>
+			<anim name="mdr_308_com_down_var1" 							file="anims/fps/mdr_308/mdr_308_com_var1" blend_set="all"/>
+			<anim name="mdr_308_com_stop" 								file="anims/fps/mdr_308/mdr_308_com_var5" blend_set="all"/>
+			<anim name="mdr_308_com_come" 								file="anims/fps/mdr_308/mdr_308_com_var6" blend_set="all"/>
+			<anim name="mdr_308_com_point" 								file="anims/fps/mdr_308/mdr_308_com_var7" blend_set="all"/>
+			<anim name="mdr_308_get_up" 								file="anims/fps/mdr_308/mdr_308_get_up" blend_set="all"/>
+			<anim name="mdr_308_gogo" 									file="anims/fps/mdr_308/mdr_308_gogo" blend_set="all"/>
+			<anim name="mdr_308_tased" 									file="anims/fps/m4/m4_tased" blend_set="all"/>
+			<anim name="mdr_308_tased_boost" 							file="anims/fps/m4/m4_tased_boost" blend_set="all"/>
+			<anim name="mdr_308_tased_exit" 							file="anims/fps/m4/m4_tased_exit" blend_set="all"/>
+			<anim name="mdr_308_inspect" 								file="anims/fps/mdr_308/mdr_308_inspect" blend_set="all"/>
+			
+			<anim name="mdr_308_underbarrel_reload" 					file="anims/fps/mdr_308/mdr_308_underbarrel_reload" blend_set="all"/>
+			<anim name="mdr_308_underbarrel_idle" 						file="anims/fps/mdr_308/mdr_308_underbarrel_idle" blend_set="all"/>
+			<anim name="mdr_308_underbarrel_recoil" 					file="anims/fps/mdr_308/mdr_308_underbarrel_recoil" blend_set="all"/>
+			<anim name="mdr_308_underbarrel_enter" 						file="anims/fps/mdr_308/mdr_308_underbarrel_enter" blend_set="all"/>
+			<anim name="mdr_308_underbarrel_exit" 						file="anims/fps/mdr_308/mdr_308_underbarrel_exit" blend_set="all"/>
+			<anim name="mdr_308_underbarrel_recoil_steelsight" 			file="anims/fps/mdr_308/mdr_308_underbarrel_recoil" blend_set="all"/>
+			<anim name="mdr_308_underbarrel_equip" 						file="anims/fps/mdr_308/mdr_308_underbarrel_equip" blend_set="all"/>
+			<anim name="mdr_308_underbarrel_unequip" 					file="anims/fps/mdr_308/mdr_308_underbarrel_unequip" blend_set="all"/>
+			<anim name="mdr_308_underbarrel_melee" 						file="anims/fps/mdr_308/mdr_308_underbarrel_melee" blend_set="all"/>
+			<anim name="mdr_308_underbarrel_melee_miss" 				file="anims/fps/mdr_308/mdr_308_underbarrel_melee_miss" blend_set="all"/>
+			<anim name="mdr_308_underbarrel_use" 						file="anims/fps/mdr_308/mdr_308_underbarrel_use" blend_set="all"/>
+			<anim name="mdr_308_underbarrel_sprint_enter" 				file="anims/fps/mdr_308/mdr_308_underbarrel_sprint_enter" blend_set="all"/>
+			<anim name="mdr_308_underbarrel_sprint" 					file="anims/fps/mdr_308/mdr_308_underbarrel_sprint" blend_set="all"/>
+			<anim name="mdr_308_underbarrel_sprint_exit" 				file="anims/fps/mdr_308/mdr_308_underbarrel_sprint_exit" blend_set="all"/>
+			<anim name="mdr_308_underbarrel_com_down_var1" 				file="anims/fps/mdr_308/mdr_308_underbarrel_com_var1" blend_set="all"/>
+			<anim name="mdr_308_underbarrel_com_stop" 					file="anims/fps/mdr_308/mdr_308_underbarrel_com_var5" blend_set="all"/>
+			<anim name="mdr_308_underbarrel_com_come" 					file="anims/fps/mdr_308/mdr_308_underbarrel_com_var6" blend_set="all"/>
+			<anim name="mdr_308_underbarrel_com_point" 					file="anims/fps/mdr_308/mdr_308_underbarrel_com_var7" blend_set="all"/>
+			<anim name="mdr_308_underbarrel_get_up" 					file="anims/fps/mdr_308/mdr_308_underbarrel_get_up" blend_set="all"/>
+			<anim name="mdr_308_underbarrel_gogo" 						file="anims/fps/mdr_308/mdr_308_underbarrel_gogo" blend_set="all"/>
+			<anim name="mdr_308_underbarrel_tased" 						file="anims/fps/m4/m4_tased" blend_set="all"/>
+			<anim name="mdr_308_underbarrel_tased_boost" 				file="anims/fps/m4/m4_tased_boost" blend_set="all"/>
+			<anim name="mdr_308_underbarrel_tased_exit" 				file="anims/fps/m4/m4_tased_exit" blend_set="all"/>
+			<anim name="mdr_308_underbarrel_inspect" 					file="anims/fps/mdr_308/mdr_308_underbarrel_inspect" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

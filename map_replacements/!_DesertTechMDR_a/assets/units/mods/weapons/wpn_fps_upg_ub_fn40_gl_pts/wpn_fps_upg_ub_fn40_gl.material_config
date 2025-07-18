@@ -1,0 +1,27 @@
+<materials version="3" group="weapon_contraband">
+	
+	<material name="mtr_eglm_body" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture 	 file="units/mods/weapons/wpn_fps_upg_ub_fn40_gl_pts/textures/eglm_body_df" />
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_upg_ub_fn40_gl_pts/textures/eglm_body_nm" />
+        <material_texture	 file="units/mods/weapons/wpn_fps_upg_ub_fn40_gl_pts/textures/eglm_body_gsma"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/weapon_metal_cubemap"/>
+	</material>
+	<material name="mtr_eglm_trigger" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture 	 file="units/mods/weapons/wpn_fps_upg_ub_fn40_gl_pts/textures/eglm_trigger_df" />
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_upg_ub_fn40_gl_pts/textures/eglm_trigger_nm" />
+        <material_texture	 file="units/mods/weapons/wpn_fps_upg_ub_fn40_gl_pts/textures/eglm_trigger_gsma"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/weapon_metal_cubemap"/>
+	</material>
+	<material name="mtr_mlok_ris" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture 	 file="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/magpul_mlok_rail_df" />
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/magpul_mlok_rail_nm" />
+        <material_texture	 file="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/magpul_mlok_rail_gsma"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/weapon_metal_cubemap"/>
+	</material>
+	
+	<material name="mtr_40mm_grenade" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture	 file="units/mods/weapons/wpn_fps_upg_ub_fn40_gl_pts/textures/40mm_grenade_df" />
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_upg_ub_fn40_gl_pts/textures/40mm_grenade_nm" />
+	</material>
+	
+</materials>

@@ -1,0 +1,9 @@
+<materials version="3" group="weapon_group">
+
+	<material name="xmaterial_47fe59abded3d43" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_sho_haymaker_pts/textures/sights_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_sho_haymaker_pts/textures/sights_nm"/>
+        <material_texture	 file="units/mods/weapons/wpn_fps_sho_haymaker_pts/textures/sights_gsma"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_sho_haymaker_pts/textures/weapon_metal_cubemap"/>
+    </material>
+</materials>

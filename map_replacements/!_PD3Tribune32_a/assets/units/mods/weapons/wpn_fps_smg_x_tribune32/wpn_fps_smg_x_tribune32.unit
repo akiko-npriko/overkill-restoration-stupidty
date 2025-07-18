@@ -1,0 +1,12 @@
+<unit type="wpn" slot="1" >
+	<object file="units/mods/weapons/wpn_fps_smg_x_tribune32/wpn_fps_smg_x_tribune32" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_mac10_x"/>
+	</dependencies>
+	<extensions>
+		<extension class="ScriptUnitData" name="unit_data" />
+		<extension name="base" class="AkimboWeaponBase" >
+			<var name="name_id" value="x_tribune32" />
+		</extension>
+	</extensions>
+</unit>

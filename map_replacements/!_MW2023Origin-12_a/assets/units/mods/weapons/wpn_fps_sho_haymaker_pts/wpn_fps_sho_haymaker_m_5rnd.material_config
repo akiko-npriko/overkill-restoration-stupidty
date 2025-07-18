@@ -1,0 +1,18 @@
+<materials version="3" group="weapon_group">
+
+	<material name="xmaterial_930fc24f30ae6da" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_sho_haymaker_pts/textures/magazine_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_sho_haymaker_pts/textures/magazine_nm"/>
+        <material_texture	 file="units/mods/weapons/wpn_fps_sho_haymaker_pts/textures/magazine_gsma"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_sho_haymaker_pts/textures/weapon_metal_cubemap"/>
+    </material>
+	<material name="mtr_shell" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/pd2_dlc_pxp2/weapons/wpn_fps_sho_sko12_pts/g2rip_df" />
+		<bump_normal_texture file="units/pd2_dlc_pxp2/weapons/wpn_fps_sho_sko12_pts/g2rip_nm" />
+	</material>
+	<material name="mtr_shell_brass" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_pxp2/weapons/wpn_fps_sho_sko12_pts/g2rip_df" />
+		<bump_normal_texture file="units/pd2_dlc_pxp2/weapons/wpn_fps_sho_sko12_pts/g2rip_nm" />
+        <reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap"/>
+	</material>
+</materials>

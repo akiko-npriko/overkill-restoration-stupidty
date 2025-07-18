@@ -1,0 +1,94 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_lmg_pkilo_pts/wpn_fps_lmg_pkilo_xmag" orientation_object="rp_magazine" />
+
+	<animations>
+		<animation_group name="reload">
+			<object name="a_reload" 			enabled="true" />
+			<object name="a_mag_cover_reload" 			enabled="true" />
+			<object name="a_mag_lock_reload" 			enabled="true" />
+			<object name="a_bullet8_reload" 		enabled="true" />
+			<object name="a_bullet7_reload" 		enabled="true" />
+			<object name="a_bullet6_reload" 		enabled="true" />
+			<object name="a_bullet5_reload" 		enabled="true" />
+			<object name="a_bullet4_reload" 		enabled="true" />
+			<object name="a_bullet3_reload" 		enabled="true" />
+			<object name="a_bullet2_reload" 		enabled="true" />
+			<object name="a_bullet1_reload" 		enabled="true" />
+			<object name="a_belt8_reload" 		enabled="true" />
+			<object name="a_belt7_reload" 		enabled="true" />
+			<object name="a_belt6_reload" 		enabled="true" />
+			<object name="a_belt5_reload" 		enabled="true" />
+			<object name="a_belt4_reload" 		enabled="true" />
+			<object name="a_belt3_reload" 		enabled="true" />
+			<object name="a_belt2_reload" 		enabled="true" />
+			<object name="a_belt1_reload" 		enabled="true" />
+		</animation_group>
+		<animation_group name="recoil">
+			<object name="a_mag_cover_recoil" 			enabled="true" />
+			<object name="a_bullet8_recoil" 		enabled="true" />
+			<object name="a_bullet7_recoil" 		enabled="true" />
+			<object name="a_bullet6_recoil" 		enabled="true" />
+			<object name="a_bullet5_recoil" 		enabled="true" />
+			<object name="a_bullet4_recoil" 		enabled="true" />
+			<object name="a_bullet3_recoil" 		enabled="true" />
+			<object name="a_bullet2_recoil" 		enabled="true" />
+			<object name="a_bullet1_recoil" 		enabled="true" />
+			<object name="a_belt8_recoil" 		enabled="true" />
+			<object name="a_belt7_recoil" 		enabled="true" />
+			<object name="a_belt6_recoil" 		enabled="true" />
+			<object name="a_belt5_recoil" 		enabled="true" />
+			<object name="a_belt4_recoil" 		enabled="true" />
+			<object name="a_belt3_recoil" 		enabled="true" />
+			<object name="a_belt2_recoil" 		enabled="true" />
+			<object name="a_belt1_recoil" 		enabled="true" />
+		</animation_group>
+		<animation_group name="reload_not_empty">
+			<object name="a_reload_not_empty" 			enabled="true" />
+			<object name="a_mag_cover_reload_not_empty" 			enabled="true" />
+			<object name="a_mag_lock_reload_not_empty" 			enabled="true" />
+			<object name="a_bullet8_reload_not_empty" 		enabled="true" />
+			<object name="a_bullet7_reload_not_empty" 		enabled="true" />
+			<object name="a_bullet6_reload_not_empty" 		enabled="true" />
+			<object name="a_bullet5_reload_not_empty" 		enabled="true" />
+			<object name="a_bullet4_reload_not_empty" 		enabled="true" />
+			<object name="a_bullet3_reload_not_empty" 		enabled="true" />
+			<object name="a_bullet2_reload_not_empty" 		enabled="true" />
+			<object name="a_bullet1_reload_not_empty" 		enabled="true" />
+			<object name="a_belt8_reload_not_empty" 		enabled="true" />
+			<object name="a_belt7_reload_not_empty" 		enabled="true" />
+			<object name="a_belt6_reload_not_empty" 		enabled="true" />
+			<object name="a_belt5_reload_not_empty" 		enabled="true" />
+			<object name="a_belt4_reload_not_empty" 		enabled="true" />
+			<object name="a_belt3_reload_not_empty" 		enabled="true" />
+			<object name="a_belt2_reload_not_empty" 		enabled="true" />
+			<object name="a_belt1_reload_not_empty" 		enabled="true" />
+		</animation_group>
+	</animations>
+
+	<graphics>
+
+		<object name="g_bullet_1" enabled="true" />
+		<object name="g_bullet_2" enabled="true" />
+		<object name="g_bullet_3" enabled="true" />
+		<object name="g_bullet_4" enabled="true" />
+		<object name="g_bullet_5" enabled="true" />
+		<object name="g_bullet_6" enabled="true" />
+		<object name="g_bullet_7" enabled="true" />
+		<object name="g_bullet_8" enabled="true" />
+		<object name="g_belt_1" enabled="true" />
+		<object name="g_belt_2" enabled="true" />
+		<object name="g_belt_3" enabled="true" />
+		<object name="g_belt_4" enabled="true" />
+		<object name="g_belt_5" enabled="true" />
+		<object name="g_belt_6" enabled="true" />
+		<object name="g_belt_7" enabled="true" />
+		<object name="g_belt_8" enabled="true" />
+
+		
+		<object name="g_pkilo_xmag_large_cover" enabled="true" />
+		<object name="g_pkilo_xmag_large_lever" enabled="true" />
+		<object name="g_pkilo_xmag_large" enabled="true" />
+
+		
+	</graphics>
+</dynamic_object>

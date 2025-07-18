@@ -1,0 +1,20 @@
+<materials version="3" group="weapon_group">
+	<material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" name="mtr_madsen_barrel" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/madsen_barrel_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/madsen_barrel_nm"/>
+        <material_texture 	 file="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/madsen_barrel_gsma"/>
+        <reflection_texture type="cube" file="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/weapon_metal_cubemap"/>
+    </material>
+	<material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" name="mtr_madsen_receiver" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/madsen_receiver_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/madsen_receiver_nm"/>
+        <material_texture 	 file="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/madsen_receiver_gsma"/>
+        <reflection_texture type="cube" file="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/weapon_metal_cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" name="mtr_madsen_stock" version="2">
+        <diffuse_texture		 file="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/madsen_stock_df"/>
+        <bump_normal_texture 	 file="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/madsen_stock_nm"/>
+        <material_texture 		 file="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/madsen_stock_gsma"/>
+        <reflection_texture type="cubemap" global_texture="current_global_texture"/>
+    </material>
+</materials>

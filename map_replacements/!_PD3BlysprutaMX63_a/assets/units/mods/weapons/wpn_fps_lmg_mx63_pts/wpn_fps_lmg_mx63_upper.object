@@ -1,0 +1,18 @@
+<dynamic_object>
+    <diesel orientation_object="rp_upper" materials="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_upper" />
+   
+   <animations>
+    <animation_group name="reload">
+      <object name="anim_reload" enabled="true" />
+    </animation_group>    
+	
+	<animation_group name="reload_not_empty">
+      <object name="anim_reload_not_empty" enabled="true" />
+    </animation_group>
+  </animations>
+
+  <graphics>
+        <object enabled="true" name="g_hinge" />
+        <object enabled="true" name="g_upper" />
+    </graphics>
+</dynamic_object>

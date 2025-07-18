@@ -1,0 +1,17 @@
+<materials version="3" group="weapon">
+	<material name="mat_stock_02" render_template="generic:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_ass_m1a1_pts/textures/stock_02_df" mip="1"/>
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_ass_m1a1_pts/textures/stock_02_nm" mip="1"/>
+		<material_texture file="units/mods/weapons/wpn_fps_ass_m1a1_pts/textures/stock_02_gsma" mip="1"/>
+	</material>
+	<material name="mat_ammopouches" render_template="generic:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_ass_m1a1_pts/textures/ammopouches_df" mip="1"/>
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_ass_m1a1_pts/textures/ammopouches_nm" mip="1"/>
+		<material_texture file="units/mods/weapons/wpn_fps_ass_m1a1_pts/textures/ammopouches_gsma" mip="1"/>
+	</material>
+	<material name="mat_magazine_01" render_template="generic:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_ass_m1a1_pts/textures/magazine_01_df" mip="1"/>
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_ass_m1a1_pts/textures/magazine_01_nm" mip="1"/>
+		<material_texture file="units/mods/weapons/wpn_fps_ass_m1a1_pts/textures/magazine_01_gsma" mip="1"/>
+	</material>
+</materials>

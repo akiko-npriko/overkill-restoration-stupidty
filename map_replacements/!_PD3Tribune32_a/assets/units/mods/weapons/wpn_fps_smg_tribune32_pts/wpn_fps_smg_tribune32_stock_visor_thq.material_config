@@ -1,0 +1,16 @@
+<materials version="3" group="weapon_group">
+
+	<material name="mtr_stock_mount_rail" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_smg_tribune32_pts/textures/stock_mount_rail_df" mip="1"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_smg_tribune32_pts/textures/stock_mount_rail_nm" mip="1"/>
+        <material_texture	 file="units/mods/weapons/wpn_fps_smg_tribune32_pts/textures/stock_mount_rail_gsma" mip="1"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_smg_tribune32_pts/textures/weapon_metal_cubemap"/>
+    </material>	
+	
+	<material name="mtr_stock_visor" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_smg_tribune32_pts/textures/stock_visor_df" mip="1"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_smg_tribune32_pts/textures/stock_visor_nm" mip="1"/>
+        <material_texture	 file="units/mods/weapons/wpn_fps_smg_tribune32_pts/textures/stock_visor_gsma" mip="1"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_smg_tribune32_pts/textures/weapon_metal_cubemap"/>
+    </material>	
+</materials>

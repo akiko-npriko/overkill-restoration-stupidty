@@ -1,0 +1,19 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_snp_sbeta_pts/wpn_fps_snp_sbeta_lever" orientation_object="rp_receiver" />
+		<animations>
+		<animation_group name="reload_exit">
+			<object name="a_reload_hammer_exit" />
+			<object name="a_reload_bolt_exit" />
+			<object name="a_reload_lever_exit" />
+		</animation_group>
+		<animation_group name="recoil">
+			<object name="a_recoil_hammer" />
+			<object name="a_recoil_bolt" />
+			<object name="a_recoil_lever" />
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_sbeta_lever" enabled="true" />
+
+	</graphics>
+</dynamic_object>

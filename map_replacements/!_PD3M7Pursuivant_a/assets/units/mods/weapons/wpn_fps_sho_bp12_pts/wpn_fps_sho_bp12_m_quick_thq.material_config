@@ -1,0 +1,14 @@
+<materials version="3" group="weapon_basset">
+	<material name="MI_Shotgun_M7P_SpeedPull" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_sho_bp12_pts/textures/magpul_df" />
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_sho_bp12_pts/textures/magpul_nm" />
+	</material>
+	<material name="MI_Shotgun_M7P_Magazine_Deafult" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_sho_bp12_pts/textures/std_mag_df" />
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_sho_bp12_pts/textures/std_mag_nm" />
+	</material>
+	<material name="slug" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/payday2/weapons/wpn_fps_shot_r870_pts/slug_df" />
+		<bump_normal_texture file="units/payday2/weapons/wpn_fps_shot_r870_pts/slug_nm" />
+	</material>
+</materials>

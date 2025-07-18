@@ -1,0 +1,29 @@
+<unit type="wpn" slot="1" >
+	<object file="units/mods/weapons/wpn_fps_ass_xeno_pts/wpn_fps_ass_xeno_rec"/>
+	<dependencies>
+		<depends_on font="fonts/font_digital"/>
+	</dependencies>
+	<extensions>
+		<extension class="ScriptUnitData" name="unit_data"/>
+		<extension class="DigitalGui" name="XenoDisplayAmmoCount">
+			<var name="TYPE" value="number"/>
+			<var name="NUMBER_DIGITS" value="2"/>
+			<var name="COLOR_TYPE" value="red"/>
+			<var name="FONT" value="fonts/font_digital"/>
+			<var name="FONT_SIZE" value="220"/>
+			<var name="WIDTH" value="400"/>
+			<var name="_gui_object" value="g_display1"/>
+			<var name="_number" value="40"/>
+		</extension>
+		<extension class="DigitalGui" name="XenoDisplayAmmoCount2">
+			<var name="TYPE" value="number"/>
+			<var name="NUMBER_DIGITS" value="2"/>
+			<var name="COLOR_TYPE" value="red"/>
+			<var name="FONT" value="fonts/font_digital"/>
+			<var name="FONT_SIZE" value="220"/>
+			<var name="WIDTH" value="400"/>
+			<var name="_gui_object" value="g_display2"/>
+			<var name="_number" value="40"/>
+		</extension>
+	</extensions>
+</unit>

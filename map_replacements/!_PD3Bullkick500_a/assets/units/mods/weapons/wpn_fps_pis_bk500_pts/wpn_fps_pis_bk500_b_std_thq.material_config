@@ -1,0 +1,12 @@
+<materials version="3" group="weapon_rage">
+	<material name="barrel" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_pis_bk500_pts/textures/barrel_std_df" mip="1"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_pis_bk500_pts/textures/barrel_std_nm" mip="1"/>
+		<reflection_texture type="cubemap" global_texture="current_global_texture"/>
+    </material>
+	<material name="sight" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_pis_bk500_pts/textures/iron_sights_df" mip="1"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_pis_bk500_pts/textures/iron_sights_nm" mip="1"/>
+		<reflection_texture type="cubemap" global_texture="current_global_texture"/>
+    </material>
+</materials>

@@ -1,0 +1,34 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_lmg_pkilo_pts/wpn_fps_lmg_pkilo_receiver" orientation_object="rp_receiver" />
+	<animations>
+		<animation_group name="reload">
+			<object name="anim_ejection_port_reload" 			enabled="true" />
+			<object name="anim_left_port_cover_reload" 		enabled="true" />
+			<object name="anim_right_port_cover_reload" 		enabled="true" />
+		</animation_group>
+		<animation_group name="recoil">
+			<object name="align_ejection_port_recoil" 			enabled="true" />
+			<object name="anim_left_port_cover_recoil" 		enabled="true" />
+			<object name="anim_right_port_cover_recoil" 		enabled="true" />
+		</animation_group>
+		<animation_group name="reload_not_empty">
+			<object name="anim_ejection_port_reload_not_empty" 			enabled="true" />
+			<object name="anim_left_port_cover_reload_not_empty" 		enabled="true" />
+			<object name="anim_right_port_cover_reload_not_empty" 		enabled="true" />
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_ejection_port_cover" enabled="true" />
+		<object name="g_left_port_cover" enabled="true" />
+		<object name="g_right_port_cover" enabled="true" />
+		<object name="g_receiver" enabled="true" />
+		
+		<object name="g_carry_handle" enabled="true" />
+		<object name="g_gas_tube" enabled="true" />
+		<object name="g_main_spring" enabled="true" />
+		<object name="g_tray" enabled="true" />
+		<object name="g_trigger" enabled="true" />
+				
+	</graphics>
+	
+</dynamic_object>

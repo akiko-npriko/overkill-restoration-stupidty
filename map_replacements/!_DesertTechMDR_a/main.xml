@@ -1,0 +1,515 @@
+<mod name="Desert Tech MDR 7.62x51mm" author="Hyxth, Krayola, & Co." min_lib_ver="3.38">
+	<AssetUpdates id="35608" version="1.00" provider="modworkshop"/>
+	<GlobalValue id="mdr_308mod" color="Color(0.7, 0.9, 0.3)"/>
+	<Localization directory="loc" default="english.txt">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+<!--Default Parts-->
+	<WeaponMod id="wpn_fps_ass_mdr_308_barrel" based_on="wpn_fps_ass_komodo_b_standard" type="barrel" wpn_pts="wpn_fps_ass_mdr_308" hidden="true" ver="2">
+		<stats spread="0" recoil="0" damage="0" concealment="0" reload="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_mdr_308_body" based_on="wpn_fps_ass_komodo_body" type="lower_reciever" wpn_pts="wpn_fps_ass_mdr_308" hidden="true" ver="2">
+		<animations reload="reload" reload_not_empty="reload_not_empty"/>
+		<stats spread="0" recoil="0" damage="0" concealment="0" reload="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_mdr_308_kac_front_up" based_on="wpn_fps_m4_uupg_o_flipup" type="front_post" a_obj="a_of"   wpn_pts="wpn_fps_ass_mdr_308" has_description="true" hidden="true" ver="2">
+		<stats spread="0" recoil="0" damage="0" concealment="0" reload="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_mdr_308_kac_rear_up" based_on="wpn_fps_m4_uupg_o_flipup" type="sight"  a_obj="a_or"   wpn_pts="wpn_fps_ass_mdr_308" hidden="true" ver="2">
+		<stats spread="0" recoil="0" damage="0" concealment="0" reload="0"/>
+		<forbids>
+			<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+			<value_node value="wpn_fps_upg_o_sig"/>
+		</forbids>
+		<adds>
+			<value_node value="wpn_fps_ass_mdr_308_kac_front_up"/>
+		</adds>
+		<stance_mod>
+			<wpn_fps_ass_mdr_308 translation="0 -3.0 0.4"/> <!-- -->
+		</stance_mod>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_mdr_308_mlok_rail" based_on="wpn_fps_addon_ris" type="mlok_ris"  unit="units/mods/weapons/wpn_fps_ass_mdr_308_pts/wpn_fps_ass_mdr_308_mlok_rail" hidden="true" ver="2">
+		<stats spread="0" recoil="0" damage="0" concealment="0" reload="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_mdr_308_pmag_sr" based_on="wpn_fps_m4_uupg_m_std_vanilla" type="magazine" wpn_pts="wpn_fps_ass_mdr_308" hidden="true" ver="2">
+		<stats spread="0" recoil="0" damage="0" concealment="0" reload="0"/>
+		<bullet_objects prefix = "g_bullet_" amount="3"/>
+	</WeaponMod>			
+	
+	<WeaponMod id="wpn_fps_ass_fn40_gl" based_on="wpn_fps_ass_contraband_gl_m203" type="underbarrel" sub_type="grenade_launcher" unit="units/mods/weapons/wpn_fps_upg_ub_fn40_gl_pts/wpn_fps_upg_ub_fn40_gl" drop="false" hidden="true" is_a_unlockable="false">
+		<stats concealment="0" recoil="0"/>
+		<bullet_objects amount="1" prefix="g_grenade_"/>
+		<animations bipod_reload="reload_ul" />
+		<pcs/>
+	</WeaponMod>
+		
+<!--Extra Attachments-->
+	<WeaponMod id="wpn_fps_ass_mdr_308_body_black" based_on="wpn_fps_ass_komodo_body" type="lower_reciever" unit="units/mods/weapons/wpn_fps_ass_mdr_308_pts/wpn_fps_ass_mdr_308_body_black" hidden="false" global_value="mdr_308mod" ver="2">
+		<animations reload="reload" reload_not_empty="reload_not_empty"/>
+		<stats spread="0" recoil="0" damage="0" concealment="0" reload="0"/>
+	</WeaponMod>
+<!--<WeaponMod id="wpn_fps_ass_fn40_gl_black" based_on="wpn_fps_ass_contraband_gl_m203" type="underbarrel" sub_type="grenade_launcher" unit="units/mods/weapons/wpn_fps_upg_ub_fn40_gl_pts/wpn_fps_upg_ub_fn40_gl_black" drop="false" hidden="true" is_a_unlockable="false">
+		<stats concealment="0" recoil="0"/>
+		<bullet_objects amount="1" prefix="g_grenade_"/>
+		<animations bipod_reload="reload_ul" />
+		<pcs/>
+		</WeaponMod> -->
+
+	<WeaponMod id="wpn_fps_ass_mdr_308_snp_am" based_on="wpn_fps_upg_a_custom_free" type="ammo" sub_type="ammo_slug" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" has_description="true" global_value="mdr_308mod" ver="2">
+		<stats spread="0" recoil="-3" damage="80" concealment="0" reload="0"/>
+		<override_weapon>
+			<categories>
+				<value_node value="snp"/>
+			</categories> 
+		</override_weapon>
+		<requires>
+			<value_node value="wpn_fps_ass_mdr_308_barrel_sniper"/>
+		</requires>  
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_mdr_308_barrel_sniper" based_on="wpn_fps_ass_komodo_b_standard" type="barrel" wpn_pts="wpn_fps_ass_mdr_308" has_description="true" hidden="false" is_a_unlockable="true" global_value="mdr_308mod" ver="2">
+		<stats spread="3" recoil="-3" damage="5" concealment="-3" reload="0"/>		
+		<perks>
+				<value_node value="fire_mode_single"/>
+			</perks> 
+		<forbids>
+			<value_node value="wpn_fps_upg_i_autofire"/>
+			<value_node value="wpn_fps_upg_i_singlefire"/>
+		</forbids>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_mdr_308_fl_left" based_on="wpn_fps_shot_r870_ris_special" type="gadget_placement" depends_on="gadget" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" global_value="mdr_308mod" ver="2">
+		<forbids>
+			<value_node value="wpn_fps_upg_gadget_heartsensor"/>
+		</forbids>
+		<override>
+			<wpn_fps_addon_ris 	unit="units/mods/weapons/wpn_fps_ass_mdr_308_pts/wpn_fps_ass_mdr_308_mlok_rail" a_obj="a_left_rail" />
+			
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox 		a_obj="a_left_rail"/>
+			<wpn_fps_upg_fl_ass_smg_sho_surefire 	a_obj="a_left_rail"/>
+			<wpn_fps_upg_fl_ass_peq15 				a_obj="a_left_rail"/>
+			<wpn_fps_upg_fl_ass_laser 				a_obj="a_left_rail"/>
+			<wpn_fps_upg_fl_ass_utg 				a_obj="a_left_rail"/>
+		</override>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_mdr_308_fl_top" based_on="wpn_fps_shot_r870_ris_special" type="gadget_placement" depends_on="gadget" has_description="true" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" global_value="mdr_308mod" ver="2">
+		<override>
+			<wpn_fps_addon_ris 	unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"  />
+			
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox a_obj="a_top_rail"/>
+			<wpn_fps_upg_fl_ass_smg_sho_surefire a_obj="a_top_rail"/>
+			<wpn_fps_upg_fl_ass_peq15 a_obj="a_top_rail"/>
+			<wpn_fps_upg_fl_ass_laser a_obj="a_top_rail"/>
+			<wpn_fps_upg_fl_ass_utg a_obj="a_top_rail"/>
+		</override>
+		<forbids>
+				<value_node value="wpn_fps_upg_o_var_cheap_rear"/>
+				<value_node value="wpn_fps_upg_o_var_dd_a1_rear"/>
+				<value_node value="wpn_fps_upg_o_var_kac_rear"/>
+				<value_node value="wpn_fps_upg_o_var_dh_iss_rear"/>
+				<value_node value="wpn_fps_upg_o_var_m4flipup_rear"/>
+				<value_node value="wpn_fps_upg_o_var_mbus_rear" />
+				<value_node value="wpn_fps_upg_o_var_mbuspro_rear"/>
+				<value_node value="wpn_fps_upg_o_var_scalarworks_peak_rear"/>
+				<value_node value="wpn_fps_upg_o_var_scorpionevo_rear"/>
+				<value_node value="wpn_fps_upg_o_var_troy_rear"/>
+				<value_node value="wpn_fps_upg_o_var_troym4_rear"/>
+				
+			<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+			<value_node value="wpn_fps_upg_o_sig"/>
+			<value_node value="wpn_fps_upg_gadget_heartsensor"/>
+		</forbids>
+	</WeaponMod> 
+
+<!--Weapon-->
+	<Weapon unlock_level="0">
+		<weapon id="mdr_308" based_on="komodo" weapon_hold="mdr_308" FIRE_MODE="single" CAN_TOGGLE_FIREMODE="true" armor_piercing_chance="1" can_shoot_through_enemy="true" can_shoot_through_wall="true" can_shoot_through_shield="false"  shell_ejection="effects/shell_mdr" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="4" chamber_size="1" rays="1" damage_near="2000" damage_far="3000" global_value="mdr_308mod" >
+			<stats damage="160" spread="20" spread_moving="19" recoil="8" concealment="20"/>
+			<fire_mode_data fire_rate="0.10"/>
+				<sounds fire="mdr_308_fire" fire_single="mdr_308_fire" fire_auto="mdr_308_fire" use_fix="true">
+					<reload wp_komodo_mag_out="mdr_308_mag_out" wp_komodo_take_new_mag="mdr_308_take_new_mag" wp_komodo_mag_contact="mdr_308_mag_contact"  wp_komodo_mag_in="mdr_308_mag_in" wp_komodo_pull_lever="mdr_308_pull_lever" wp_komodo_release_lever="mdr_308_release_lever"/>
+			</sounds>
+			<AMMO_PICKUP>
+                <value_node value="2.50"/> <!--The Walk in Closet perkdeck passive will multiply these values by 1.35x.-->
+                <value_node value="3.00"/>
+            </AMMO_PICKUP>
+			<kick>  <!-- Each table of the kick values determines the severity/magnitude of the recoil in each of the stances (aiming down sights overrides crouched/standing).-->
+				<standing> <!-- Positive values go up/right, negative down/left.-->
+					<value_node value="0.6"/>  <!-- Minimum Vetical Kick.-->
+					<value_node value="0.8"/>  <!-- Maximum Vetical Kick.-->
+					<value_node value="-1.0"/>  <!-- Minimum Horizontal Kick.-->
+					<value_node value="1.0"/>  <!-- Minimum Horizontal Kick.-->
+				</standing>
+				<crouching>
+					<value_node value="0.6"/>  <!-- Minimum Vetical Kick.-->
+					<value_node value="0.8"/>  <!-- Maximum Vetical Kick.-->
+					<value_node value="-1.0"/>  <!-- Minimum Horizontal Kick.-->
+					<value_node value="1.0"/>  <!-- Minimum Horizontal Kick.-->
+				</crouching>
+				<steelsight>
+					<value_node value="0.6"/>  <!-- Minimum Vetical Kick.-->
+					<value_node value="0.8"/>  <!-- Maximum Vetical Kick.-->
+					<value_node value="-1.0"/>  <!-- Minimum Horizontal Kick.-->
+					<value_node value="1.0"/>  <!-- Minimum Horizontal Kick.-->
+				</steelsight>
+			</kick>
+			<use_data align_place="right_hand"/>
+			<animations reload_name_id="mdr_308"/>
+		</weapon>
+		<factory id="wpn_fps_ass_mdr_308" unit="units/mods/weapons/wpn_fps_ass_mdr_308/wpn_fps_ass_mdr_308">
+			<animations reload="reload" fire="recoil" fire_steelsight="recoil" reload_not_empty="reload_not_empty" magazine_empty="last_recoil"/>
+			<adds>
+           <!--    <wpn_fps_upg_gadget_heartsensor>
+                    <value_node value="wpn_fps_ass_mdr_308_mlok_rail_left"/>
+                </wpn_fps_upg_gadget_heartsensor> -->
+	            </adds>
+			<override>
+				<wpn_fps_addon_ris unit="units/mods/weapons/wpn_fps_ass_mdr_308_pts/wpn_fps_ass_mdr_308_mlok_rail" /> 
+			</override>
+			<default_blueprint>
+				<value_node value="wpn_fps_ass_mdr_308_barrel"/>
+				<value_node value="wpn_fps_ass_mdr_308_body"/>
+				<value_node value="wpn_fps_ass_mdr_308_kac_rear_up"/>
+				<value_node value="wpn_fps_ass_mdr_308_pmag_sr"/>
+				<value_node value="wpn_fps_ass_fn40_gl"/>
+			</default_blueprint>		
+			<uses_parts>
+				<value_node value="wpn_fps_ass_mdr_308_barrel"/>
+				<value_node value="wpn_fps_ass_mdr_308_body"/>
+				<value_node value="wpn_fps_ass_mdr_308_kac_rear_up"/>
+				<value_node value="wpn_fps_ass_mdr_308_pmag_sr"/>
+				<value_node value="wpn_fps_ass_fn40_gl"/>
+				
+				<value_node value="wpn_fps_ass_mdr_308_snp_am"/>
+				<value_node value="wpn_fps_ass_mdr_308_barrel_sniper"/>
+				<value_node value="wpn_fps_ass_mdr_308_fl_left"/>
+				<value_node value="wpn_fps_ass_mdr_308_fl_top"/> 
+				<value_node value="wpn_fps_ass_mdr_308_mlok_rail"/>
+				<value_node value="wpn_fps_ass_mdr_308_kac_front_up"/>
+				
+				<value_node value="wpn_fps_upg_a_underbarrel_electric"/>
+				<value_node value="wpn_fps_upg_a_underbarrel_poison"/>
+				
+				<value_node value="wpn_fps_ass_mdr_308_body_black"/>
+				
+				<value_node value="wpn_fps_upg_o_var_cheap_rear"/>
+				<value_node value="wpn_fps_upg_o_var_dd_a1_rear"/>
+				<value_node value="wpn_fps_upg_o_var_kac_rear"/>
+				<value_node value="wpn_fps_upg_o_var_dh_iss_rear"/>
+				<value_node value="wpn_fps_upg_o_var_m4flipup_rear"/>
+				<value_node value="wpn_fps_upg_o_var_mbus_rear" />
+				<value_node value="wpn_fps_upg_o_var_mbuspro_rear"/>
+				<value_node value="wpn_fps_upg_o_var_scalarworks_peak_rear"/>
+				<value_node value="wpn_fps_upg_o_var_scorpionevo_rear"/>
+				<value_node value="wpn_fps_upg_o_var_troy_rear"/>
+				<value_node value="wpn_fps_upg_o_var_troym4_rear"/>
+				
+				<value_node value="wpn_fps_upg_m_kac10"/>
+				<value_node value="wpn_fps_upg_m_kac20"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_i_singlefire"/>
+				<value_node value="wpn_fps_upg_i_autofire"/>
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_45rds"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+				<value_node value="wpn_fps_upg_o_45rds_v2"/>
+			</uses_parts>
+		</factory>
+			<stance>
+				<standard>
+					<shoulders rotation="0 0 0 -1" translation="0 2 0"/>
+				</standard> 
+				<crouched>
+					<shoulders rotation="0 0 0 -1" translation="-2 -3 -1"/>
+				</crouched> 
+				<steelsight> 
+				<shoulders rotation="0 0 0 -1" translation="-11.055 1.5 3"/>
+				</steelsight> 
+			</stance>
+	</Weapon>
+	
+	<Weapon>
+		<weapon id="mdr_308_underbarrel" based_on="contraband_m203" weapon_hold="mdr_308" CLIP_AMMO_MAX="1" NR_CLIPS_MAX="3" ignore_damage_upgrades="true" hidden="true">
+			<categories>
+				<value_node value="grenade_launcher"/>
+			</categories>
+			<stats spread="25" recoil="25"/>
+			<timers reload_not_empty="3.2" reload_empty="3.2" unequip="0.6" equip="0.6" equip_underbarrel="0.4" unequip_underbarrel="0.4"/>
+<!-- 			<use_data selection_index="3"/> -->
+			<AMMO_PICKUP>
+				<value_node value="0.0"/>
+				<value_node value="0.50"/>
+			</AMMO_PICKUP>
+			<fire_mode_data fire_rate="0.75"/>
+			<kick>
+				<standing>
+					<value_node value="2.9"/>
+					<value_node value="3.0"/>
+					<value_node value="-0.5"/>
+					<value_node value="0.5"/>
+				</standing>
+				<crouching>
+					<value_node value="2.9"/>
+					<value_node value="3.0"/>
+					<value_node value="-0.5"/>
+					<value_node value="0.5"/>
+				</crouching>
+				<steelsight>
+					<value_node value="2.9"/>
+					<value_node value="3.0"/>
+					<value_node value="-0.5"/>
+					<value_node value="0.5"/>
+				</steelsight>
+			</kick>
+			<shake fire_multiplier="2" fire_steelsight_multiplier="2"/>
+			<sounds fire="fn40_gl_fire" dryfire="shotgun_dryfire"/>
+			<animations reload_name_id="mdr_308" equip_id="equip_mdr_308_underbarrel"/>
+		</weapon>
+		<factory id="wpn_fps_gl_fn40_gl" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"><!-- For some reason beardlib doesn't create the weapon without extra factory nonsense which we don't need!-->
+			<default_blueprint>
+			</default_blueprint>
+			<uses_parts>
+			</uses_parts>
+		</factory>
+		<stance/>
+	</Weapon>
+		
+<!--Sounds-->	
+	<Sounds directory="assets\sounds">
+	
+		<!--Tarkov Sounds  (The fire sounds are from the MDR, the reload sounds are a mix of generic Tarkov sounds and RFB sounds)-->
+		<sound id="mdr_308_fire" path="mdr_308_fire.ogg" prefix="regular"/>
+		<sound id="mdr_308_fire" path="mdr_308_supp.ogg" prefix="suppressed_a"/>
+		<sound id="mdr_308_fire" path="mdr_308_supp.ogg" prefix="suppressed_b"/>
+		<sound id="mdr_308_fire" path="mdr_308_supp.ogg" prefix="suppressed_c"/>
+		<sound id="mdr_308_mag_out" path="rfb_mag_out.ogg" prefix="first"/>
+		<sound id="mdr_308_mag_out" path="rfb_mag_out.ogg" prefix="third"/>	
+		<sound id="mdr_308_take_new_mag" path="weap_magin_rig.ogg" prefix="first"/>
+		<sound id="mdr_308_take_new_mag" path="weap_magin_rig.ogg" prefix="third"/>
+		<sound id="mdr_308_mag_contact" path="rfb_mag_contact.ogg" prefix="first"/>
+		<sound id="mdr_308_mag_contact" path="rfb_mag_contact.ogg" prefix="third"/>
+		<sound id="mdr_308_mag_in" path="rfb_mag_in.ogg" prefix="first"/>
+		<sound id="mdr_308_mag_in" path="rfb_mag_in.ogg" prefix="third"/>
+		<sound id="mdr_308_pull_lever" path="weap_bolt_in.ogg" prefix="first"/>
+		<sound id="mdr_308_pull_lever" path="weap_bolt_in.ogg" prefix="third"/>
+		<sound id="mdr_308_release_lever" path="weap_bolt_out.ogg" prefix="first"/>
+		<sound id="mdr_308_release_lever" path="weap_bolt_out.ogg" prefix="third"/>
+
+		<sound id="fn40_gl_fire" path="eglm_fire.ogg" prefix="regular"/>
+		<sound id="backpack_drop_generic1" path="backpack_drop_generic1.ogg" prefix="first"/>
+		<sound id="backpack_drop_generic1" path="backpack_drop_generic1.ogg" prefix="third"/>
+		<sound id="eglm_tube_open" path="eglm_tube_open.ogg" prefix="first"/>
+		<sound id="eglm_tube_open" path="eglm_tube_open.ogg" prefix="third"/>
+		<sound id="eglm_grenade_insert" path="eglm_grenade_insert.ogg" prefix="first"/>
+		<sound id="eglm_grenade_insert" path="eglm_grenade_insert.ogg" prefix="third"/>
+		<sound id="eglm_tube_close" path="eglm_tube_close.ogg" prefix="first"/>
+		<sound id="eglm_tube_close" path="eglm_tube_close.ogg" prefix="third"/>
+		<sound id="weapon_generic_spin1" path="weapon_generic_spin1.ogg" prefix="first"/>
+		<sound id="weapon_generic_spin1" path="weapon_generic_spin1.ogg" prefix="third"/>
+		
+		<sound id="wp_mdr_magout" path="reload_fast_magout.ogg" prefix="first"/>
+		<sound id="wp_mdr_magout" path="reload_fast_magout.ogg" prefix="third"/>
+		<sound id="wp_mdr_boltback" path="wp_mdr_boltback.ogg" prefix="first"/>
+		<sound id="wp_mdr_boltback" path="wp_mdr_boltback.ogg" prefix="third"/>
+		<sound id="wp_mdr_boltforward" path="wp_mdr_boltforward.ogg" prefix="first"/>
+		<sound id="wp_mdr_boltforward" path="wp_mdr_boltforward.ogg" prefix="third"/>
+		<sound id="wp_mdr_boltgrab" path="wp_mdr_boltgrab.ogg" prefix="first"/>
+		<sound id="wp_mdr_boltgrab" path="wp_mdr_boltgrab.ogg" prefix="third"/>
+		<sound id="wp_mdr_foley1" path="wp_mdr_foley1.ogg" prefix="first"/>
+		<sound id="wp_mdr_foley1" path="wp_mdr_foley1.ogg" prefix="third"/>
+		<sound id="wp_mdr_grab" path="wp_mdr_grab.ogg" prefix="first"/>
+		<sound id="wp_mdr_grab" path="wp_mdr_grab.ogg" prefix="third"/>
+		<sound id="wp_mdr_handtransition" path="wp_mdr_handtransition.ogg" prefix="first"/>
+		<sound id="wp_mdr_handtransition" path="wp_mdr_handtransition.ogg" prefix="third"/>
+		<sound id="wp_mdr_magfoley" path="wp_mdr_magfoley.ogg" prefix="first"/>
+		<sound id="wp_mdr_magfoley" path="wp_mdr_magfoley.ogg" prefix="third"/>
+		<sound id="wp_mdr_maggrab" path="wp_mdr_maggrab.ogg" prefix="first"/>
+		<sound id="wp_mdr_maggrab" path="wp_mdr_maggrab.ogg" prefix="third"/>
+		<sound id="wp_mdr_maghit" path="wp_mdr_maghit.ogg" prefix="first"/>
+		<sound id="wp_mdr_maghit" path="wp_mdr_maghit.ogg" prefix="third"/>
+		<sound id="wp_mdr_magin" path="wp_mdr_magin.ogg" prefix="first"/>
+		<sound id="wp_mdr_magin" path="wp_mdr_magin.ogg" prefix="third"/>
+		<sound id="wp_mdr_magraise" path="wp_mdr_magraise.ogg" prefix="first"/>
+		<sound id="wp_mdr_magraise" path="wp_mdr_magraise.ogg" prefix="third"/>
+		<sound id="wp_mdr_magrelease" path="wp_mdr_magrelease.ogg" prefix="first"/>
+		<sound id="wp_mdr_magrelease" path="wp_mdr_magrelease.ogg" prefix="third"/>
+		<sound id="wp_mdr_magtapin" path="wp_mdr_magtapin.ogg" prefix="first"/>
+		<sound id="wp_mdr_magtapin" path="wp_mdr_magtapin.ogg" prefix="third"/>
+		<sound id="wp_mdr_start" path="wp_mdr_start.ogg" prefix="first"/>
+		<sound id="wp_mdr_start" path="wp_mdr_start.ogg" prefix="third"/>
+		
+		<sound id="wp_eglm_b2i" path="wp_eglm_b2i.ogg" prefix="first"/>
+		<sound id="wp_eglm_b2i" path="wp_eglm_b2i.ogg" prefix="third"/>
+		<sound id="wp_eglm_insert" path="wp_eglm_insert.ogg" prefix="first"/>
+		<sound id="wp_eglm_insert" path="wp_eglm_insert.ogg" prefix="third"/>
+		<sound id="wp_eglm_openfoley" path="wp_eglm_openfoley.ogg" prefix="first"/>
+		<sound id="wp_eglm_openfoley" path="wp_eglm_openfoley.ogg" prefix="third"/>
+		<sound id="wp_eglm_shellfoley" path="wp_eglm_shellfoley.ogg" prefix="first"/>
+		<sound id="wp_eglm_shellfoley" path="wp_eglm_shellfoley.ogg" prefix="third"/>
+		<sound id="wp_eglm_start" path="wp_eglm_start.ogg" prefix="first"/>
+		<sound id="wp_eglm_start" path="wp_eglm_start.ogg" prefix="third"/>
+		<sound id="wp_eglm_tubespin" path="wp_eglm_tubespin.ogg" prefix="first"/>
+		<sound id="wp_eglm_tubespin" path="wp_eglm_tubespin.ogg" prefix="third"/>
+		
+		<!--Battlefield Hardline Sounds? (inb4 zhanna takes the piss out of Tarkov's quiet foley)-->
+		
+	</Sounds>
+	
+	<AddFiles directory="assets">
+<!--Unit Path -->
+		<unit_npc path="units/mods/weapons/wpn_fps_ass_mdr_308/wpn_fps_ass_mdr_308"/>
+
+<!--GUI -->
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/mdr_308"/>	
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_mdr_308_barrel_sniper"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_mdr_308_snp_am"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_mdr_308_fl_left"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_mdr_308_fl_top"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ub_fn40_gl"/>
+		
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_mdr_308_body_black"/>
+<!--Textures -->
+
+<!--Base Textures -->
+		<df_nm_cc path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/kac_sight_front"/>
+		<df_nm_cc path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/kac_sight_rear"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/magpul_mlok_rail"/>
+		<df_nm_cc path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/magpul_sr_gen3"/>
+		<df_nm_cc path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_barrel"/>
+		<df_nm_cc path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_grip"/>
+		<df_nm_cc path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_handguard"/>
+		<df_nm_cc path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_receiver_lower"/>
+		<df_nm_cc path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_receiver_upper"/>
+		<df_nm_cc path="units/mods/weapons/wpn_fps_upg_ub_fn40_gl_pts/textures/eglm_body"/>
+		<df_nm_cc path="units/mods/weapons/wpn_fps_upg_ub_fn40_gl_pts/textures/eglm_trigger"/>
+		<df_nm    path="units/mods/weapons/wpn_fps_upg_ub_fn40_gl_pts/textures/40mm_grenade"/>
+		
+<!--GSMA Add On Textures -->
+		<texture path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/weapon_metal_cubemap"/>		
+		
+		<texture path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/kac_sight_front_gsma"/>
+		<texture path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/kac_sight_rear_gsma"/>
+		<texture path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/magpul_mlok_rail_gsma"/>
+		<texture path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/magpul_sr_gen3_gsma"/>
+		<texture path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_barrel_gsma"/>
+		<texture path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_handguard_gsma"/>
+		<texture path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_grip_gsma"/>
+		<texture path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_receiver_lower_gsma"/>
+		<texture path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_receiver_upper_gsma"/>	
+		<texture path="units/mods/weapons/wpn_fps_upg_ub_fn40_gl_pts/textures/eglm_body_gsma"/>
+		<texture path="units/mods/weapons/wpn_fps_upg_ub_fn40_gl_pts/textures/eglm_trigger_gsma"/>
+				
+<!--Part Files -->
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/wpn_fps_ass_mdr_308_barrel"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/wpn_fps_ass_mdr_308_body"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/wpn_fps_ass_mdr_308_kac_front_up"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/wpn_fps_ass_mdr_308_kac_rear_up"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/wpn_fps_ass_mdr_308_mlok_rail"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/wpn_fps_ass_mdr_308_pmag_sr"/>
+		
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/wpn_fps_ass_mdr_308_barrel_sniper"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_upg_ub_fn40_gl_pts/wpn_fps_upg_ub_fn40_gl"/>
+		
+<!--Black Textures-->
+		<texture path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_handguard_black_df"/>
+		<texture path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_grip_black_df"/>
+		<texture path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_receiver_lower_black_df"/>
+		<texture path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_receiver_upper_black_df"/>		
+<!--	<texture path="units/mods/weapons/wpn_fps_upg_ub_fn40_gl_pts/textures/eglm_body_black_df"/>
+		<texture path="units/mods/weapons/wpn_fps_upg_ub_fn40_gl_pts/textures/eglm_trigger_black_df"/> -->
+		
+		<texture path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_grip_black_gsma"/>
+		<texture path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_receiver_upper_black_gsma"/>
+		<texture path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_receiver_lower_black_gsma"/>
+		<texture path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/mdr_handguard_black_gsma"/>
+		<texture path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/textures/weapon_metal_cubemap_black"/>
+
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_mdr_308_pts/wpn_fps_ass_mdr_308_body_black"/>
+<!--	<unit_mat_thq path="units/mods/weapons/wpn_fps_upg_ub_fn40_gl_pts/wpn_fps_upg_ub_fn40_gl_black"/> -->
+		
+<!-- animations -->
+		<animation path="anims/fps/mdr_308/mdr_308_reload" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_reload_not_empty" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_idle" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_recoil" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_recoil_enter" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_recoil_loop" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_recoil_exit" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_equip" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_unequip" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_melee" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_melee_miss" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_use" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_sprint_enter" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_sprint" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_sprint_exit" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_com_var1" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_com_var5" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_com_var6" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_com_var7" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_get_up" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_gogo" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_tased" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_tased_boost" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_tased_exit" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_inspect" load="true"/>
+		
+		<animation path="anims/fps/mdr_308/mdr_308_underbarrel_reload" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_underbarrel_idle" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_underbarrel_recoil" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_underbarrel_equip" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_underbarrel_enter" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_underbarrel_exit" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_underbarrel_unequip" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_underbarrel_melee" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_underbarrel_melee_miss" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_underbarrel_use" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_underbarrel_sprint_enter" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_underbarrel_sprint" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_underbarrel_sprint_exit" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_underbarrel_com_var1" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_underbarrel_com_var5" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_underbarrel_com_var6" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_underbarrel_com_var7" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_underbarrel_get_up" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_underbarrel_gogo" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_underbarrel_tased" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_underbarrel_tased_boost" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_underbarrel_tased_exit" load="true"/>
+		<animation path="anims/fps/mdr_308/mdr_308_underbarrel_inspect" load="true"/>		
+<!-- effects -->
+		<effect path="effects/shell_mdr"/>	
+	</AddFiles>
+	
+	<Hooks directory="hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="playermanager.lua"		    source_file="lib/managers/playermanager"/>
+<!--	<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/> -->
+	</Hooks> 
+	
+</mod>

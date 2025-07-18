@@ -1,0 +1,87 @@
+<table directory="assets">
+		
+<!-- DD5 Parts -->
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_ass_dd5/wpn_fps_ass_dd5"/>
+		<model path="units/mods/weapons/wpn_fps_ass_dd5/wpn_fps_ass_dd5"/>
+		<object path="units/mods/weapons/wpn_fps_ass_dd5/wpn_fps_ass_dd5"/>
+		<unit path="units/mods/weapons/wpn_fps_ass_dd5/wpn_fps_ass_dd5"/>
+		<unit path="units/mods/weapons/wpn_fps_ass_dd5/wpn_fps_ass_dd5_npc"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/dd5"/>
+
+
+		<texture							path="units/mods/weapons/wpn_fps_ass_dd5_pts/wpn_fps_ass_dd5_upper_standard_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_ass_dd5_pts/wpn_fps_ass_dd5_upper_standard_df_cc"/>
+		<texture							path="units/mods/weapons/wpn_fps_ass_dd5_pts/wpn_fps_ass_dd5_upper_standard_nm"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_dd5_pts/wpn_fps_ass_dd5_upper_standard"/>
+		<texture							path="units/mods/weapons/wpn_fps_ass_dd5_pts/wpn_fps_ass_dd5_lower_standard_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_ass_dd5_pts/wpn_fps_ass_dd5_lower_standard_df_cc"/>
+		<texture							path="units/mods/weapons/wpn_fps_ass_dd5_pts/wpn_fps_ass_dd5_lower_standard_nm"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_dd5_pts/wpn_fps_ass_dd5_lower_standard"/>
+		<texture							path="units/mods/weapons/wpn_fps_ass_dd5_pts/wpn_fps_ass_dd5_fg_standard_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_dd5_pts/wpn_fps_ass_dd5_fg_standard"/>
+		<texture							path="units/mods/weapons/wpn_fps_ass_dd5_pts/bolt_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_dd5_pts/wpn_fps_ass_dd5_bolt_standard"/>
+
+		<texture							path="units/mods/weapons/wpn_fps_ass_dd5_pts/wpn_fps_ass_dd5_fg_tti_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_ass_dd5_pts/wpn_fps_ass_dd5_fg_tti_df_cc"/>
+		<texture							path="units/mods/weapons/wpn_fps_ass_dd5_pts/wpn_fps_ass_dd5_fg_tti_nm"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_dd5_pts/wpn_fps_ass_dd5_fg_tti"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_dd5_pts/wpn_fps_ass_dd5_fg_msr"/>		
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_dd5_pts/wpn_fps_ass_dd5_b_short"/>	
+		<texture							path="units/mods/weapons/wpn_fps_ass_dd5_pts/wpn_fps_ass_dd5_mag_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_ass_dd5_pts/green_magpul_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_dd5_pts/wpn_fps_ass_dd5_m_speed"/>
+		<texture							path="units/mods/weapons/wpn_fps_ass_dd5_pts/wpn_fps_ass_dd5_ns_flash_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_ass_dd5_pts/wpn_fps_ass_dd5_ns_flash"/>
+
+<!-- Third -->
+
+		<unit_obj							path="units/mods/weapons/wpn_third_ass_dd5_pts/wpn_third_ass_dd5_upper_standard"/>
+		<unit_obj							path="units/mods/weapons/wpn_third_ass_dd5_pts/wpn_third_ass_dd5_lower_standard"/>
+
+		<unit_obj							path="units/mods/weapons/wpn_third_ass_dd5_pts/wpn_third_ass_dd5_fg_tti"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_dd5_pts/wpn_third_ass_dd5_fg_msr"/>
+		<texture							path="units/mods/weapons/wpn_third_ass_dd5_pts/wpn_third_ass_dd5_mag_df"/>
+		<texture							path="units/mods/weapons/wpn_third_ass_dd5_pts/third_green_magpul_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_ass_dd5_pts/wpn_third_ass_dd5_m_speed"/>
+		<unit_obj							path="units/mods/weapons/wpn_third_ass_dd5_pts/wpn_third_ass_dd5_ns_flash"/>
+
+<!-- Mods -->
+
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_dd5_b_short"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_dd5_fg_tti"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_dd5_fg_msr"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_dd5_o_dd_extra"/>	
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_dd5_m_quick"/>			
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_dd5_ns_flash"/>	
+
+<!-- Animations -->
+
+		<animation path="anims/fps/dd5/dd5_reload_not_empty" load="true"/>
+		<animation path="anims/fps/dd5/dd5_reload" load="true"/>
+		<animation path="anims/fps/dd5/dd5_idle" load="true"/>
+		<animation path="anims/fps/dd5/dd5_recoil" load="true"/>
+		<animation path="anims/fps/dd5/dd5_recoil_enter" load="true"/>
+		<animation path="anims/fps/dd5/dd5_recoil_loop" load="true"/>
+		<animation path="anims/fps/dd5/dd5_recoil_exit" load="true"/>
+		<animation path="anims/fps/dd5/dd5_equip" load="true"/>
+		<animation path="anims/fps/dd5/dd5_unequip" load="true"/>
+		<animation path="anims/fps/dd5/dd5_melee" load="true"/>
+		<animation path="anims/fps/dd5/dd5_melee_miss" load="true"/>
+		<animation path="anims/fps/dd5/dd5_use" load="true"/>
+		<animation path="anims/fps/dd5/dd5_sprint_enter" load="true"/>
+		<animation path="anims/fps/dd5/dd5_sprint" load="true"/>
+		<animation path="anims/fps/dd5/dd5_sprint_exit" load="true"/>
+		<animation path="anims/fps/dd5/dd5_com_var1" load="true"/>
+		<animation path="anims/fps/dd5/dd5_com_var5" load="true"/>
+		<animation path="anims/fps/dd5/dd5_com_var6" load="true"/>
+		<animation path="anims/fps/dd5/dd5_com_var7" load="true"/>
+		<animation path="anims/fps/dd5/dd5_get_up" load="true"/>
+		<animation path="anims/fps/dd5/dd5_gogo" load="true"/>
+		<animation path="anims/fps/dd5/dd5_tased" load="true"/>
+		<animation path="anims/fps/dd5/dd5_tased_boost" load="true"/>
+		<animation path="anims/fps/dd5/dd5_tased_exit" load="true"/>
+		<animation path="anims/fps/dd5/dd5_inspect" load="true"/> 
+
+</table>

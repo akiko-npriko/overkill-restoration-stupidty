@@ -1,0 +1,68 @@
+<table directory="assets">
+	<animation path="anims/fps/degfifty/degfifty_idle" load="true"/>
+	<animation path="anims/fps/degfifty/degfifty_melee" load="true"/>
+	<animation path="anims/fps/degfifty/degfifty_melee_miss" load="true"/>
+	<animation path="anims/fps/degfifty/degfifty_com_var1" load="true"/>
+	<animation path="anims/fps/degfifty/degfifty_com_var5" load="true"/>
+	<animation path="anims/fps/degfifty/degfifty_com_var6" load="true"/>
+	<animation path="anims/fps/degfifty/degfifty_com_var7" load="true"/>
+	<animation path="anims/fps/degfifty/degfifty_equip" load="true"/>
+	<animation path="anims/fps/degfifty/degfifty_unequip" load="true"/>
+	<animation path="anims/fps/degfifty/degfifty_getup" load="true"/>
+	<animation path="anims/fps/degfifty/degfifty_gogo" load="true"/>
+	<animation path="anims/fps/degfifty/degfifty_inspect" load="true"/>
+	<animation path="anims/fps/degfifty/degfifty_recoil" load="true"/>
+	<animation path="anims/fps/degfifty/degfifty_reload_not_empty" load="true"/>
+	<animation path="anims/fps/degfifty/degfifty_reload" load="true"/>
+	<animation path="anims/fps/degfifty/degfifty_sprint" load="true"/>
+	<animation path="anims/fps/degfifty/degfifty_sprint_enter" load="true"/>
+	<animation path="anims/fps/degfifty/degfifty_sprint_exit" load="true"/>
+	<animation path="anims/fps/degfifty/degfifty_use" load="true"/>
+	<animation path="anims/fps/degfifty/degfifty_tased_boost" load="true"/>
+	<animation path="anims/fps/degfifty/degfifty_tased_exit" load="true"/>
+	<animation path="anims/fps/degfifty/degfifty_tased" load="true"/>
+	<animation path="anims/fps/degfifty/degfifty_recoil_steelsight" load="true"/>
+	<cooked_physics path="units/mods/weapons/wpn_fps_pis_degfifty_pts/wpn_fps_pis_degfifty_m_std"/>
+	<cooked_physics path="units/mods/weapons/wpn_fps_pis_degfifty_pts/wpn_fps_pis_degfifty_body_std"/>
+	<cooked_physics path="units/mods/weapons/wpn_fps_pis_degfifty_pts/wpn_fps_pis_degfifty_b_std"/>
+	<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/degfifty"/>
+	<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_barrel_df"/>
+	<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_barrel_df_cc"/>
+	<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_barrel_nm"/>
+	<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_body_df"/>
+	<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_body_df_cc"/>
+	<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_body_nm"/>
+	<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_slide_df"/>
+	<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_slide_df_cc"/>
+	<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_slide_nm"/>
+	<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_mag_df"/>
+	<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_mag_df_cc"/>
+	<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_mag_nm"/>
+	<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_grip_df"/>
+	<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_grip_df_cc"/>
+	<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_grip_nm"/>
+	<model path="units/mods/weapons/wpn_fps_pis_degfifty_pts/wpn_fps_pis_degfifty_m_std"/>
+	<model path="units/mods/weapons/wpn_fps_pis_degfifty_pts/wpn_fps_pis_degfifty_b_std"/>
+	<model path="units/mods/weapons/wpn_fps_pis_degfifty_pts/wpn_fps_pis_degfifty_body_std"/>
+	<model path="units/mods/weapons/wpn_fps_pis_degfifty/wpn_fps_pis_degfifty"/>
+	<object path="units/mods/weapons/wpn_fps_pis_degfifty_pts/wpn_fps_pis_degfifty_body_std"/>
+	<object path="units/mods/weapons/wpn_fps_pis_degfifty_pts/wpn_fps_pis_degfifty_b_std"/>
+	<object path="units/mods/weapons/wpn_fps_pis_degfifty_pts/wpn_fps_pis_degfifty_m_std"/>
+	<object path="units/mods/weapons/wpn_fps_pis_degfifty/wpn_fps_pis_degfifty"/>
+	<material_config path="units/mods/weapons/wpn_fps_pis_degfifty_pts/wpn_fps_pis_degfifty_m_std_thq"/>
+	<material_config path="units/mods/weapons/wpn_fps_pis_degfifty_pts/wpn_fps_pis_degfifty_m_std"/>
+	<material_config path="units/mods/weapons/wpn_fps_pis_degfifty_pts/wpn_fps_pis_degfifty_body_std_thq"/>
+	<material_config path="units/mods/weapons/wpn_fps_pis_degfifty_pts/wpn_fps_pis_degfifty_body_std"/>
+	<material_config path="units/mods/weapons/wpn_fps_pis_degfifty_pts/wpn_fps_pis_degfifty_m_std_cc_thq"/>
+	<material_config path="units/mods/weapons/wpn_fps_pis_degfifty_pts/wpn_fps_pis_degfifty_m_std_cc"/>
+	<material_config path="units/mods/weapons/wpn_fps_pis_degfifty_pts/wpn_fps_pis_degfifty_body_std_cc_thq"/>
+	<material_config path="units/mods/weapons/wpn_fps_pis_degfifty_pts/wpn_fps_pis_degfifty_body_std_cc"/>
+	<material_config path="units/mods/weapons/wpn_fps_pis_degfifty_pts/wpn_fps_pis_degfifty_b_std_thq"/>
+	<material_config path="units/mods/weapons/wpn_fps_pis_degfifty_pts/wpn_fps_pis_degfifty_b_std"/>
+	<unit path="units/mods/weapons/wpn_fps_pis_degfifty_pts/wpn_fps_pis_degfifty_body_std"/>
+	<unit path="units/mods/weapons/wpn_fps_pis_degfifty/wpn_fps_pis_degfifty_npc"/>
+	<unit path="units/mods/weapons/wpn_fps_pis_degfifty_pts/wpn_fps_pis_degfifty_m_std"/>
+	<unit path="units/mods/weapons/wpn_fps_pis_degfifty_pts/wpn_fps_pis_degfifty_b_std"/>
+	<unit path="units/mods/weapons/wpn_fps_pis_degfifty/wpn_fps_pis_degfifty"/>
+
+</table>

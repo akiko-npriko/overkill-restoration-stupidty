@@ -1,0 +1,16 @@
+<materials version="3" group="weapon_group">
+
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" name="bullet" version="2">
+        <diffuse_texture	 file="units/mods/weapons/wpn_fps_lmg_mx63_pts/textures/m27_link_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_lmg_mx63_pts/textures/m27_link_nm"/>
+       <material_texture	 file="units/mods/weapons/wpn_fps_lmg_mx63_pts/textures/m27_link_gsma" />
+        <reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap"/>
+    </material>    
+
+	<material name="mag" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_lmg_mx63_pts/textures/mx63_magazine_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_lmg_mx63_pts/textures/mx63_magazine_nm"/>
+        <material_texture	 file="units/mods/weapons/wpn_fps_lmg_mx63_pts/textures/mx63_magazine_gsma"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+    </material>	
+</materials>

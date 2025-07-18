@@ -1,0 +1,16 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_ass_bulldog_pts/wpn_fps_ass_bulldog_body" orientation_object="rp_body" />
+	<animations>
+		<animation_group name="reload">
+			<object name="a_reload" enabled="true" />
+		</animation_group>
+		<animation_group name="questionable_malfunctioning_fixed_maybe">
+			<object name="a_recoil" enabled="false" />
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_body" enabled="true" />
+		<object name="g_bolt" enabled="false" /> <!-- The original gun has no bolt for some reason. -->
+		<object name="g_rail" enabled="true" />
+	</graphics>
+</dynamic_object>

@@ -1,0 +1,31 @@
+<dynamic_object>
+	<diesel orientation_object="rp_wpn_fps_snp_obrez"/>
+	<animations>
+<!--
+		<animation_group name="reload">
+			<object name="anim_bolt_reload" enabled="true"/>
+		</animation_group>
+-->
+		<animation_group name="reload_enter">
+			<object name="anim_bolt_reload_enter" enabled="true"/>
+			<object name="anim_connector_reload_enter" enabled="true"/>
+			<object name="anim_firingpin_reload_enter" enabled="true"/>
+
+			<object name="anim_bullet_reload_loop" enabled="true"/>
+			<object name="anim_mag_reload_loop" enabled="true"/>
+		</animation_group>
+		<animation_group name="reload_exit">
+			<object name="anim_bolt_reload_exit" enabled="true"/>
+			<object name="anim_connector_reload_exit" enabled="true"/>
+			<object name="anim_firingpin_reload_exit" enabled="true"/>
+		</animation_group>
+		<animation_group name="recoil">
+			<object name="anim_bolt_recoil" enabled="true"/>
+			<object name="anim_bullet_recoil" enabled="true"/>
+			<object name="anim_case_recoil" enabled="true"/>
+			<object name="anim_connector_recoil" enabled="true"/>
+			<object name="anim_firingpin_recoil" enabled="true"/>
+			<object name="anim_mag_recoil" enabled="true"/>
+		</animation_group>
+	</animations>
+</dynamic_object>

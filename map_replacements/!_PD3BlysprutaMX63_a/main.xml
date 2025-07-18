@@ -1,0 +1,548 @@
+<mod name="PAYDAY 3 - Blyspruta MX63 LMG">
+	<Localization directory="loc" default="english.txt"/>
+	<AssetUpdates id="48405" version="1.4" provider="modworkshop"/>
+	<GlobalValue id="hylie_pd3_mod" color="Color(0.53, 0.66, 0.42)"/>
+	<Hooks directory="Hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+	</Hooks>
+	<Sounds directory="assets\sounds">
+		<sound id="mx63_fire" path="mx63_fire_reg.ogg" prefix="regular"/>
+		<sound id="mx63_fire" path="mx63_fire_sup.ogg" prefix="suppressed_a"/>
+		<sound id="mx63_fire" path="mx63_fire_sup.ogg" prefix="suppressed_b"/>
+		<sound id="mx63_fire" path="mx63_fire_sup.ogg" prefix="suppressed_c"/>
+	</Sounds>
+
+	<!-- Blyspruta MX63 LMG - Default Parts -->
+
+	<WeaponMod id="wpn_fps_lmg_mx63_barrel_std" type="barrel" based_on="wpn_fps_lmg_m249_b_long" unit="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_barrel_std" hidden="true" ver="2">
+	      <stats damage="0" recoil="0" spread="0" concealment="0"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_lmg_mx63_lower" type="lower_reciever" based_on="wpn_fps_lmg_m249_body_standard" unit="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_lower" hidden="true" ver="2">
+	      <stats recoil="0" spread="0" concealment="0"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_lmg_mx63_bolt" type="bolt" a_obj="a_body" based_on="wpn_fps_amcar_bolt_standard" unit="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_bolt" hidden="true" ver="2">
+	      <stats recoil="0" spread="0" concealment="0"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_lmg_mx63_mag" type="magazine" based_on="wpn_fps_lmg_m249_m_standard" unit="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_mag" hidden="true" ver="2">
+	      <stats recoil="0" spread="0" concealment="0"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_lmg_mx63_dh" type="drag_handle" a_obj="a_dh" based_on="wpn_fps_ass_flint_dh_standard" unit="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_dh" hidden="true" ver="2">
+	      <stats recoil="0" spread="0" concealment="0"/>
+		  <animations reload="reload"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_lmg_mx63_upper" type="upper_reciever" based_on="wpn_fps_lmg_m249_upper_reciever" unit="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_upper" hidden="true" ver="2" global_value="hylie_pd3_mod">
+	      <stats recoil="0" spread="0" concealment="0"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_lmg_mx63_fg" type="foregrip" based_on="wpn_fps_lmg_m249_fg_standard" unit="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_fg" hidden="true" ver="2" global_value="hylie_pd3_mod">
+	      <stats recoil="0" spread="0" concealment="0"/>
+	      <forbids>
+	       <value_node value="wpn_fps_addon_ris"/>
+          </forbids>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_lmg_mx63_adapter_tube" type="stock_adapter" based_on="wpn_fps_upg_m4_s_adapter" unit="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_adapter_tube" hidden="true" ver="2">
+	      <stats recoil="0" spread="0" concealment="0"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_lmg_mx63_stock" type="stock" based_on="wpn_fps_lmg_m249_s_modern" unit="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_stock" hidden="true" ver="2">
+	      <stats recoil="0" spread="0" concealment="0"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_lmg_mx63_ext" type="barrel_ext" based_on="wpn_fps_ass_flint_ns_standard" unit="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_ext" hidden="true" ver="2">
+	      <stats recoil="0" spread="0" concealment="0"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_lmg_mx63_grip" type="grip" a_obj="a_body" based_on="wpn_fps_upg_m4_g_standard_vanilla" unit="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_grip" hidden="true" ver="2">
+	      <stats recoil="0" spread="0" concealment="0"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_lmg_mx63_o_rear" type="sight" a_obj="a_o_rear" based_on="wpn_fps_snp_victor_o_standard" unit="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_o_rear" hidden="true" ver="2">
+	      <stats recoil="0" spread="0" concealment="0"/>
+	      <adds>
+	       <value_node value="wpn_fps_lmg_mx63_o_front"/>
+          </adds>
+		<stance_mod>
+				<wpn_fps_lmg_mx63 translation="-0.07 -4 0" /> 
+		</stance_mod>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_lmg_mx63_o_front_down" type="extra" a_obj="a_o_front" based_on="wpn_fps_snp_victor_o_standard" unit="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_o_front_down" hidden="true" ver="2">
+	      <stats recoil="0" spread="0" concealment="0"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_lmg_mx63_o_front" type="extra" a_obj="a_o_front" based_on="wpn_fps_snp_victor_o_standard" unit="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_o_front" hidden="true" ver="2">
+	      <stats recoil="0" spread="0" concealment="0"/>
+	</WeaponMod>
+
+    <!-- Barrels -->
+
+	<WeaponMod id="wpn_fps_lmg_mx63_barrel_ext" type="barrel" based_on="wpn_fps_lmg_kacchainsaw_b_long" unit="units/mods/weapons/wpn_fps_upg_mx63/wpn_fps_lmg_mx63_barrel_ext" hidden="false" ver="2" global_value="hylie_pd3_mod">
+		    <override>
+				<wpn_fps_lmg_mx63_ext parent="barrel" a_obj="a_ns"/>
+		    </override>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_lmg_mx63_barrel_short" type="barrel" based_on="wpn_fps_lmg_kacchainsaw_b_short" unit="units/mods/weapons/wpn_fps_upg_mx63/wpn_fps_lmg_mx63_barrel_short" hidden="false" ver="2" global_value="hylie_pd3_mod">
+		    <override>
+				<wpn_fps_lmg_mx63_ext parent="barrel" a_obj="a_ns"/>
+		    </override>
+	</WeaponMod>
+
+	<!-- Blyspruta MX63 LMG - Factory -->
+
+	<Weapon unlock_level="22">
+		<weapon id="mx63" based_on="m249" weapon_hold="hcar" CLIP_AMMO_MAX="100" NR_CLIPS_MAX="4" has_description="true" desc_id="bm_w_mx63_desc" texture_bundle_folder="mods" global_value="hylie_pd3_mod">
+
+			<stats damage="80" spread="13" spread_moving="13" recoil="8" concealment="1"/>
+
+			<fire_mode_data fire_rate="0.083"/>
+
+			<timers reload_empty="5.0833333" reload_not_empty="4.1833333" equip="0.46" unequip="0.66"/>
+
+			<sounds fire="mx63_fire" fire_auto="mx63_fire" fire_single="mx63_fire" use_fix="true"/>
+
+			<animations reload="reload" reload_not_empty="reload_not_empty" reload_name_id="mx63"/>
+
+		</weapon>
+		<factory id="wpn_fps_lmg_mx63" unit="units/mods/weapons/wpn_fps_lmg_mx63/wpn_fps_lmg_mx63" stock_adapter="wpn_fps_lmg_mx63_adapter_tube">
+			<adds>
+				<wpn_fps_upg_o_specter>
+						<value_node value="wpn_fps_lmg_mx63_o_front_down"/>
+				</wpn_fps_upg_o_specter>	
+
+				<wpn_fps_upg_o_aimpoint>
+						<value_node value="wpn_fps_lmg_mx63_o_front_down"/>
+				</wpn_fps_upg_o_aimpoint>
+
+				<wpn_fps_upg_o_docter>
+						<value_node value="wpn_fps_lmg_mx63_o_front_down"/>
+				</wpn_fps_upg_o_docter>	
+
+				<wpn_fps_upg_o_eotech>
+						<value_node value="wpn_fps_lmg_mx63_o_front_down"/>
+				</wpn_fps_upg_o_eotech>	
+
+				<wpn_fps_upg_o_t1micro>
+						<value_node value="wpn_fps_lmg_mx63_o_front_down"/>
+				</wpn_fps_upg_o_t1micro>
+
+				<wpn_fps_upg_o_acog>
+						<value_node value="wpn_fps_lmg_mx63_o_front_down"/>
+				</wpn_fps_upg_o_acog>
+
+				<wpn_fps_upg_o_cmore>
+						<value_node value="wpn_fps_lmg_mx63_o_front_down"/>
+				</wpn_fps_upg_o_cmore>	
+
+				<wpn_fps_upg_o_aimpoint_2>
+						<value_node value="wpn_fps_lmg_mx63_o_front_down"/>
+				</wpn_fps_upg_o_aimpoint_2>
+
+				<wpn_fps_upg_o_eotech_xps>
+						<value_node value="wpn_fps_lmg_mx63_o_front_down"/>
+				</wpn_fps_upg_o_eotech_xps>	
+
+				<wpn_fps_upg_o_reflex>
+						<value_node value="wpn_fps_lmg_mx63_o_front_down"/>
+				</wpn_fps_upg_o_reflex>	
+
+				<wpn_fps_upg_o_rx01>
+						<value_node value="wpn_fps_lmg_mx63_o_front_down"/>
+				</wpn_fps_upg_o_rx01>
+
+				<wpn_fps_upg_o_rx30>
+						<value_node value="wpn_fps_lmg_mx63_o_front_down"/>
+				</wpn_fps_upg_o_rx30>
+
+				<wpn_fps_upg_o_cs>
+						<value_node value="wpn_fps_lmg_mx63_o_front_down"/>
+				</wpn_fps_upg_o_cs>	
+
+				<wpn_fps_upg_o_fc1>
+						<value_node value="wpn_fps_lmg_mx63_o_front_down"/>
+				</wpn_fps_upg_o_fc1>
+
+				<wpn_fps_upg_o_bmg>
+						<value_node value="wpn_fps_lmg_mx63_o_front_down"/>
+				</wpn_fps_upg_o_bmg>	
+
+				<wpn_fps_upg_o_uh>
+						<value_node value="wpn_fps_lmg_mx63_o_front_down"/>
+				</wpn_fps_upg_o_uh>
+
+				<wpn_fps_upg_o_spot>
+						<value_node value="wpn_fps_lmg_mx63_o_front_down"/>
+				</wpn_fps_upg_ospot>	
+
+				<wpn_fps_upg_o_poe>
+						<value_node value="wpn_fps_lmg_mx63_o_front_down"/>
+				</wpn_fps_upg_o_poe>
+
+				<wpn_fps_upg_o_tf90>
+						<value_node value="wpn_fps_lmg_mx63_o_front_down"/>
+				</wpn_fps_upg_o_tf90>
+
+				<wpn_fps_upg_o_hamr>
+						<value_node value="wpn_fps_lmg_mx63_o_front_down"/>
+				</wpn_fps_upg_o_hamr>	
+
+				<wpn_fps_upg_o_atibal>
+						<value_node value="wpn_fps_lmg_mx63_o_front_down"/>
+				</wpn_fps_upg_o_atibal>	
+
+				<wpn_fps_upg_o_health>				
+						<value_node value="wpn_fps_lmg_mx63_o_front_down"/>						
+				</wpn_fps_upg_o_health>
+			</adds>
+			<override>
+
+				<wpn_fps_upg_o_specter>
+				    <forbids>
+						<value_node value="wpn_fps_lmg_mx63_o_front"/>
+						<value_node value="wpn_fps_lmg_mx63_o_rear"/>
+				    </forbids>
+				</wpn_fps_upg_o_specter>	
+
+				<wpn_fps_upg_o_aimpoint>
+				    <forbids>
+						<value_node value="wpn_fps_lmg_mx63_o_front"/>
+						<value_node value="wpn_fps_lmg_mx63_o_rear"/>
+				    </forbids>
+				</wpn_fps_upg_o_aimpoint>
+
+				<wpn_fps_upg_o_docter>
+				    <forbids>
+						<value_node value="wpn_fps_lmg_mx63_o_front"/>
+						<value_node value="wpn_fps_lmg_mx63_o_rear"/>
+				    </forbids>
+				</wpn_fps_upg_o_docter>	
+
+				<wpn_fps_upg_o_eotech>
+				    <forbids>
+						<value_node value="wpn_fps_lmg_mx63_o_front"/>
+						<value_node value="wpn_fps_lmg_mx63_o_rear"/>
+				    </forbids>
+				</wpn_fps_upg_o_eotech>	
+
+				<wpn_fps_upg_o_t1micro>
+				    <forbids>
+						<value_node value="wpn_fps_lmg_mx63_o_front"/>
+						<value_node value="wpn_fps_lmg_mx63_o_rear"/>
+				    </forbids>
+				</wpn_fps_upg_o_t1micro>
+
+				<wpn_fps_upg_o_acog>
+				    <forbids>
+						<value_node value="wpn_fps_lmg_mx63_o_front"/>
+						<value_node value="wpn_fps_lmg_mx63_o_rear"/>
+				    </forbids>
+				</wpn_fps_upg_o_acog>
+
+				<wpn_fps_upg_o_cmore>
+				    <forbids>				
+						<value_node value="wpn_fps_lmg_mx63_o_front"/>
+						<value_node value="wpn_fps_lmg_mx63_o_rear"/>
+				    </forbids>
+				</wpn_fps_upg_o_cmore>	
+
+				<wpn_fps_upg_o_aimpoint_2>
+				    <forbids>
+						<value_node value="wpn_fps_lmg_mx63_o_front"/>
+						<value_node value="wpn_fps_lmg_mx63_o_rear"/>
+				    </forbids>
+				</wpn_fps_upg_o_aimpoint_2>
+
+				<wpn_fps_upg_o_eotech_xps>
+				    <forbids>
+						<value_node value="wpn_fps_lmg_mx63_o_front"/>
+						<value_node value="wpn_fps_lmg_mx63_o_rear"/>
+				    </forbids>
+				</wpn_fps_upg_o_eotech_xps>	
+
+				<wpn_fps_upg_o_reflex>
+				    <forbids>
+						<value_node value="wpn_fps_lmg_mx63_o_front"/>
+						<value_node value="wpn_fps_lmg_mx63_o_rear"/>
+				    </forbids>
+				</wpn_fps_upg_o_reflex>	
+
+				<wpn_fps_upg_o_rx01>
+				    <forbids>
+						<value_node value="wpn_fps_lmg_mx63_o_front"/>
+						<value_node value="wpn_fps_lmg_mx63_o_rear"/>
+				    </forbids>
+				</wpn_fps_upg_o_rx01>
+
+				<wpn_fps_upg_o_rx30>
+				    <forbids>
+						<value_node value="wpn_fps_lmg_mx63_o_front"/>
+						<value_node value="wpn_fps_lmg_mx63_o_rear"/>
+				    </forbids>						
+				</wpn_fps_upg_o_rx30>
+
+				<wpn_fps_upg_o_cs>
+				    <forbids>
+						<value_node value="wpn_fps_lmg_mx63_o_front"/>
+						<value_node value="wpn_fps_lmg_mx63_o_rear"/>
+				    </forbids>
+				</wpn_fps_upg_o_cs>	
+
+				<wpn_fps_upg_o_fc1>
+				    <forbids>
+						<value_node value="wpn_fps_lmg_mx63_o_front"/>
+						<value_node value="wpn_fps_lmg_mx63_o_rear"/>
+				    </forbids>
+				</wpn_fps_upg_o_fc1>
+
+				<wpn_fps_upg_o_bmg>
+				    <forbids>
+						<value_node value="wpn_fps_lmg_mx63_o_front"/>
+						<value_node value="wpn_fps_lmg_mx63_o_rear"/>
+				    </forbids>
+				</wpn_fps_upg_o_bmg>	
+
+				<wpn_fps_upg_o_uh>
+				    <forbids>
+						<value_node value="wpn_fps_lmg_mx63_o_front"/> 
+						<value_node value="wpn_fps_lmg_mx63_o_rear"/>
+				    </forbids>
+				</wpn_fps_upg_o_uh>	
+
+				<wpn_fps_upg_o_spot>
+				    <forbids>
+						<value_node value="wpn_fps_lmg_mx63_o_front"/>
+						<value_node value="wpn_fps_lmg_mx63_o_rear"/>
+				    </forbids>
+				</wpn_fps_upg_o_spot>	
+
+				<wpn_fps_upg_o_poe>
+				    <forbids>
+						<value_node value="wpn_fps_lmg_mx63_o_front"/>
+						<value_node value="wpn_fps_lmg_mx63_o_rear"/>
+				    </forbids>
+				</wpn_fps_upg_o_poe>
+
+				<wpn_fps_upg_o_tf90>
+				    <forbids>
+						<value_node value="wpn_fps_lmg_mx63_o_front"/>
+						<value_node value="wpn_fps_lmg_mx63_o_rear"/>
+				    </forbids>
+				</wpn_fps_upg_o_tf90>
+
+				<wpn_fps_upg_o_hamr>
+				    <forbids>
+						<value_node value="wpn_fps_lmg_mx63_o_front"/>
+						<value_node value="wpn_fps_lmg_mx63_o_rear"/>
+				    </forbids>
+				</wpn_fps_upg_o_hamr>	
+
+				<wpn_fps_upg_o_atibal>
+				    <forbids>
+						<value_node value="wpn_fps_lmg_mx63_o_front"/>
+						<value_node value="wpn_fps_lmg_mx63_o_rear"/>
+				    </forbids>
+				</wpn_fps_upg_o_atibal>	
+
+				<wpn_fps_upg_o_health>				
+				    <forbids>
+						<value_node value="wpn_fps_lmg_mx63_o_front"/>
+						<value_node value="wpn_fps_lmg_mx63_o_rear"/>		
+					</forbids>				
+				</wpn_fps_upg_o_health>
+
+			</override>
+			<default_blueprint>
+				<value_node value="wpn_fps_lmg_mx63_barrel_std"/>
+				<value_node value="wpn_fps_lmg_mx63_lower"/>
+				<value_node value="wpn_fps_lmg_mx63_bolt"/>
+				<value_node value="wpn_fps_lmg_mx63_mag"/> 
+				<value_node value="wpn_fps_lmg_mx63_dh"/>
+				<value_node value="wpn_fps_lmg_mx63_upper"/>
+				<value_node value="wpn_fps_lmg_mx63_fg"/> 
+				<value_node value="wpn_fps_lmg_mx63_stock"/>
+				<value_node value="wpn_fps_lmg_mx63_adapter_tube"/>
+				<value_node value="wpn_fps_lmg_mx63_ext"/> 
+				<value_node value="wpn_fps_lmg_mx63_grip"/>
+				<value_node value="wpn_fps_lmg_mx63_o_rear"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_lmg_mx63_barrel_std"/>
+				<value_node value="wpn_fps_lmg_mx63_lower"/>
+				<value_node value="wpn_fps_lmg_mx63_bolt"/>
+				<value_node value="wpn_fps_lmg_mx63_mag"/>
+				<value_node value="wpn_fps_lmg_mx63_dh"/>
+				<value_node value="wpn_fps_lmg_mx63_upper"/>
+				<value_node value="wpn_fps_lmg_mx63_fg"/>
+				<value_node value="wpn_fps_lmg_mx63_stock"/>
+				<value_node value="wpn_fps_lmg_mx63_adapter_tube"/>
+				<value_node value="wpn_fps_lmg_mx63_ext"/>
+				<value_node value="wpn_fps_lmg_mx63_grip"/>
+				<value_node value="wpn_fps_lmg_mx63_o_rear"/>
+
+				<value_node value="wpn_fps_lmg_mx63_barrel_short"/>
+				<value_node value="wpn_fps_lmg_mx63_barrel_ext"/>
+
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/> 
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_ass_shak12_ns_muzzle"/>
+				<value_node value="wpn_fps_ass_shak12_ns_suppressor"/>
+				<value_node value="wpn_fps_lmg_hk51b_ns_jcomp"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_v6"/>
+
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/>
+
+				<value_node value="wpn_fps_upg_m4_s_crane"/>
+				<value_node value="wpn_fps_upg_m4_s_pts"/>
+				<value_node value="wpn_fps_upg_m4_s_mk46"/>
+				<value_node value="wpn_fps_upg_m4_s_ubr"/>
+				<value_node value="wpn_fps_snp_tti_s_vltor"/>
+				<value_node value="wpn_fps_sho_sko12_stock"/>
+				<value_node value="wpn_fps_snp_victor_s_mod0"/>
+
+                <value_node value="wpn_fps_upg_m4_g_hgrip"/>
+                <value_node value="wpn_fps_upg_m4_g_mgrip"/>
+                <value_node value="wpn_fps_upg_m4_g_ergo"/>
+                <value_node value="wpn_fps_upg_m4_g_sniper"/>
+                <value_node value="wpn_fps_snp_tti_g_grippy"/>
+                <value_node value="wpn_fps_sho_sko12_body_grip"/>
+				<value_node value="wpn_fps_upg_g_m4_surgeon"/>
+				<value_node value="wpn_fps_snp_victor_g_mod3"/>
+				<value_node value="wpn_fps_m4_uupg_g_billet"/>
+
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_tf90"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_poe"/>		
+				<value_node value="wpn_fps_upg_o_fc1"/>
+				<value_node value="wpn_fps_upg_o_uh"/>
+				<value_node value="wpn_fps_upg_o_bmg"/>
+				<value_node value="wpn_fps_upg_o_hamr"/>
+				<value_node value="wpn_fps_upg_o_atibal"/>
+				<value_node value="wpn_fps_upg_o_health"/>
+			</uses_parts>
+		</factory>
+		<stance>
+	        <standard>
+		        <shoulders rotation="5.16507e-006 0.00548031 0.000942464 -0.999985" translation="-2.279 -1.631 -0.877"/>
+	        </standard>
+	        <crouched>
+		        <shoulders rotation="-0.000694754 0.0578086 0.000897517 -0.998327" translation="-3.721 -2.631 -2.877"/>
+	        </crouched>
+	        <steelsight>
+				<shoulders rotation="-0.00083258 0.00548109 0.000937872 -0.999984" translation="-10.775 8.631 1.775"/>
+	        </steelsight>
+		</stance>	
+	</Weapon>
+
+	<!--
+	original ADS stances
+	
+	<shoulders rotation="-0.0015708 0 -0 -0.999999" translation="-10.725 3.631 1.854"/> -->
+
+
+	
+	<AddFiles directory="assets">
+<!--Unit Path and Icon-->
+		<unit_npc path="units/mods/weapons/wpn_fps_lmg_mx63/wpn_fps_lmg_mx63"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/mx63"/>
+
+<!-- Animations -->
+		<animation path="anims/fps/mx63/mx63_reload"/>
+		<animation path="anims/fps/mx63/mx63_reload_not_empty"/>
+
+
+<!--GUI-->		
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_mx63_barrel_short"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_mx63_barrel_ext"/>
+
+<!--Base-->		
+		<texture path="units/mods/weapons/wpn_fps_lmg_mx63_pts/textures/weapon_metal_cubemap"/>
+		<df_nm_gsma	path="units/mods/weapons/wpn_fps_lmg_mx63_pts/textures/m27_link"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_lmg_mx63_pts/textures/mx63_barrel"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_lmg_mx63_pts/textures/mx63_bolt"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_lmg_mx63_pts/textures/mx63_buffer_tube"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_lmg_mx63_pts/textures/mx63_charging_handle"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_lmg_mx63_pts/textures/mx63_grip"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_lmg_mx63_pts/textures/mx63_handguard"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_lmg_mx63_pts/textures/mx63_hinge"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_lmg_mx63_pts/textures/mx63_lower"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_lmg_mx63_pts/textures/mx63_magazine"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_lmg_mx63_pts/textures/mx63_muzzle"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_lmg_mx63_pts/textures/mx63_sights"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_lmg_mx63_pts/textures/mx63_stock"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_lmg_mx63_pts/textures/mx63_upper"/>
+
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_barrel_std"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_upg_mx63/wpn_fps_lmg_mx63_barrel_short"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_upg_mx63/wpn_fps_lmg_mx63_barrel_ext"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_lower"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_bolt"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_mag"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_dh"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_upper"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_fg"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_adapter_tube"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_stock"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_ext"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_grip"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_o_rear"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_o_front"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_o_rear_down"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_lmg_mx63_pts/wpn_fps_lmg_mx63_o_front_down"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</AddFiles>
+	
+	
+	
+	
+
+	
+</mod>

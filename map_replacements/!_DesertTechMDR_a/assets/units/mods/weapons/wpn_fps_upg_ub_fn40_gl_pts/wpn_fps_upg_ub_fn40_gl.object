@@ -1,0 +1,25 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_upg_ub_fn40_gl_pts/wpn_fps_upg_ub_fn40_gl" orientation_object="rp_wpn_fps_ass_mdr308_gl_eglm" />
+	<animations>
+		<animation_group name="reload_ul">
+			<object name="anim_reload_grenade" enabled="true" />
+			<object name="anim_reload_eglm_barrel" enabled="true" />
+			<object name="anim_reload_eglm_grip" enabled="true" />
+			<object name="anim_reload_eglm_lock" enabled="true" />
+		</animation_group>
+		<animation_group name="recoil_ul">
+			<object name="anim_recoil_trigger" enabled="true" />
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_eglm_barrel" enabled="true" />
+		<object name="g_eglm_handguard" enabled="true" />
+		<object name="g_eglm_release" enabled="true" />
+		<object name="g_grenade_shell" 	enabled="true" />
+		<object name="g_grenade_1" 		enabled="true" />
+		<object name="g_eglm_trigger" enabled="true" />
+		<object name="g_eglm_frame" enabled="true" />
+		<object name="g_eglm_trigger_guard" enabled="true" />
+		<object name="g_mlok_magpul_bottom" enabled="true" />
+	</graphics>
+</dynamic_object>

@@ -1,0 +1,19 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_ass_xeno_pts/wpn_fps_ass_xeno_underbarrel_gl" orientation_object="rp_xeno"/>
+	<animations>
+		<animation_group name="reload">
+			<object name="anim_nade_reload" enabled="true"/>
+			<object name="anim_pump_reload" enabled="true"/>
+		</animation_group>
+		<animation_group name="safety_toggle">
+			<object name="anim_safety_toggle" enabled="true"/>
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_grenade_1" enabled="true"/>
+		<object name="g_grenade_shell" enabled="true"/>
+		<object name="g_safety" enabled="true"/>
+		<object name="g_ub_grenade" enabled="true"/>
+		<object name="g_ub_grenade_pump" enabled="true"/>
+	</graphics>
+</dynamic_object>

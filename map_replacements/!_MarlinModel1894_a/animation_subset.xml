@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+		<target mode="attach">
+			<anim name="m1894_reload_enter" 			file="anims/fps/m1894/m1894_reload_enter" blend_set="all"/>
+			<anim name="m1894_reload_loop" 				file="anims/fps/m1894/m1894_reload_loop" blend_set="all"/>
+			<anim name="m1894_reload_exit" 				file="anims/fps/m1894/m1894_reload_exit" blend_set="all"/>
+			<anim name="m1894_reload_not_empty_exit" 	file="anims/fps/m1894/m1894_reload_not_empty_exit" blend_set="all"/>
+			<anim name="m1894_idle" 					file="anims/fps/m1894/m1894_idle" blend_set="all"/>
+			<anim name="m1894_equip" 					file="anims/fps/coach/coach_equip" blend_set="all"/>
+			<anim name="m1894_unequip" 					file="anims/fps/coach/coach_unequip" blend_set="all"/>
+			<anim name="m1894_recoil" 					file="anims/fps/m1894/m1894_recoil" blend_set="all"/>
+			<anim name="m1894_recoil_steelsight" 		file="anims/fps/m1894/m1894_recoil_steelsight" blend_set="all"/>
+			<anim name="m1894_recoil_exit" 				file="anims/fps/m1894/m1894_recoil" blend_set="all"/>
+			<anim name="m1894_recoil_loop" 				file="anims/fps/m1894/m1894_recoil" blend_set="all"/>
+			<anim name="m1894_melee" 					file="anims/fps/coach/coach_melee" blend_set="all"/>
+			<anim name="m1894_melee_miss" 				file="anims/fps/coach/coach_melee_miss" blend_set="all"/>
+			<anim name="m1894_use" 						file="anims/fps/coach/coach_use" blend_set="all"/>
+			<anim name="m1894_sprint" 					file="anims/fps/coach/coach_sprint" blend_set="all"/>
+			<anim name="m1894_sprint_exit" 				file="anims/fps/coach/coach_sprint_exit" blend_set="all"/>
+			<anim name="m1894_sprint_enter" 			file="anims/fps/coach/coach_sprint_enter" blend_set="all"/>
+			<anim name="m1894_com_down_var1" 			file="anims/fps/coach/coach_com_var1" blend_set="all"/>
+			<anim name="m1894_com_stop" 				file="anims/fps/coach/coach_com_var5" blend_set="all"/>
+			<anim name="m1894_com_come" 				file="anims/fps/coach/coach_com_var6" blend_set="all"/>
+			<anim name="m1894_com_point" 				file="anims/fps/coach/coach_com_var7" blend_set="all"/>
+			<anim name="m1894_get_up" 					file="anims/fps/coach/coach_get_up" blend_set="all"/>
+			<anim name="m1894_gogo" 					file="anims/fps/coach/coach_gogo" blend_set="all"/>
+			<anim name="m1894_tased" 					file="anims/fps/coach/coach_tased" blend_set="all"/>
+			<anim name="m1894_tased_boost" 				file="anims/fps/coach/coach_tased_boost" blend_set="all"/>
+			<anim name="m1894_tased_exit"				file="anims/fps/coach/coach_tased_exit" blend_set="all"/>
+			<anim name="m1894_inspect"					file="anims/fps/coach/coach_inspect" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

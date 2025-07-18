@@ -1,0 +1,11 @@
+<unit type="wpn" slot="1">
+	<object file="units/mods/weapons/wpn_fps_ass_bulldog_pts/wpn_fps_ass_bulldog_reflex_reddot" />
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+                <extension name="base" class="WeaponSecondSight">
+		    <var name="_use_sound" value="true" />
+		    <var name="_use_anims" value="true" />
+		    <var name="anim" value="flip_up" />
+                </extension>
+	</extensions>
+</unit>

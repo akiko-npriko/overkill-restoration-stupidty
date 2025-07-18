@@ -1,0 +1,221 @@
+<mod name="VALORANT - Bulldog">
+	<Localization directory="loc" default="english.txt"/>
+	<AssetUpdates id="50421" version="0.8" provider="modworkshop"/>
+	<GlobalValue id="hylie_valo_mod" color="Color(0.65, 0.16, 0.16)"/>
+	<AddFiles directory="assets" auto_generate="true"/>
+	<Hooks directory="hooks">
+		<hook file="ValorantADSFadeInAndOut.lua" source_file="lib/​units/​weapons/​weaponsecondsight"/>
+	</Hooks>
+	<Sounds directory="assets\sounds">
+		<sound id="bulldog_fire" path="bulldog_fire_reg.ogg" prefix="regular"/>
+		<sound id="bulldog_fire" path="bulldog_fire_supp.ogg"  prefix="suppressed_a"/>
+		<sound id="bulldog_fire" path="bulldog_fire_supp.ogg"  prefix="suppressed_b"/>
+		<sound id="bulldog_fire" path="bulldog_fire_supp.ogg"  prefix="suppressed_c"/>
+		
+		<sound id="bulldog_generic_lever_release"	 	 path="bulldog_generic_lever_release.ogg" prefix="first"/>
+		<sound id="bulldog_generic_lever_release" 		 path="bulldog_generic_lever_release.ogg" prefix="third"/>
+		<sound id="bulldog_mag_out"	 					 path="bulldog_mag_out.ogg" prefix="first"/>
+		<sound id="bulldog_mag_out" 					 path="bulldog_mag_out.ogg" prefix="third"/>
+		<sound id="bulldog_mag_take_new"	 			 path="bulldog_mag_take_new.ogg" prefix="first"/>
+		<sound id="bulldog_mag_take_new" 				 path="bulldog_mag_take_new.ogg" prefix="third"/>
+		
+		<sound id="bulldog_mag_drop_ground"	 			 path="bulldog_mag_drop_ground.ogg" prefix="first"/>
+		<sound id="bulldog_mag_drop_ground" 			 path="bulldog_mag_drop_ground.ogg" prefix="third"/>
+		
+		<sound id="bulldog_mag_contact"	 	 			 path="bulldog_mag_contact.ogg" prefix="first"/>
+		<sound id="bulldog_mag_contact" 		 		 path="bulldog_mag_contact.ogg" prefix="third"/>
+		<sound id="bulldog_generic_mag_in_connect"	 	 path="bulldog_generic_mag_in_connect.ogg" prefix="first"/>
+		<sound id="bulldog_generic_mag_in_connect" 		 path="bulldog_generic_mag_in_connect.ogg" prefix="third"/>
+		<sound id="bulldog_mag_in"					 	 path="bulldog_mag_in.ogg" prefix="first"/>
+		<sound id="bulldog_mag_in" 						 path="bulldog_mag_in.ogg" prefix="third"/>
+		
+		<sound id="bulldog_charging_handle_grab"		  path="bulldog_charging_handle_grab.ogg" prefix="first"/>
+		<sound id="bulldog_charging_handle_grab" 		 path="bulldog_charging_handle_grab.ogg" prefix="third"/>
+		<sound id="bulldog_charging_handle_pull"		  path="bulldog_charging_handle_pull.ogg" prefix="first"/>
+		<sound id="bulldog_charging_handle_pull" 		 path="bulldog_charging_handle_pull.ogg" prefix="third"/>
+		<sound id="bulldog_charging_handle_release"	 	 path="bulldog_charging_handle_release.ogg" prefix="first"/>
+		<sound id="bulldog_charging_handle_release" 	 path="bulldog_charging_handle_release.ogg" prefix="third"/>
+		<sound id="bulldog_back_in_hand"	 	 		 path="bulldog_back_in_hand.ogg" prefix="first"/>
+		<sound id="bulldog_back_in_hand" 				 path="bulldog_back_in_hand.ogg" prefix="third"/>
+		
+	</Sounds>
+
+	<!-- Bulldog - Default Parts -->
+
+	<WeaponMod id="wpn_fps_ass_bulldog_b_std" type="barrel" based_on="wpn_fps_ass_famas_b_standard" unit="units/mods/weapons/wpn_fps_ass_bulldog_pts/wpn_fps_ass_bulldog_b_std" hidden="true" ver="2">
+	      <stats damage="0" extra_ammo="0" recoil="0" spread="0" concealment="0"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_bulldog_body" type="lower_reciever" based_on="wpn_fps_ass_famas_body_standard" unit="units/mods/weapons/wpn_fps_ass_bulldog_pts/wpn_fps_ass_bulldog_body" hidden="true" ver="2">
+	      <stats damage="0" extra_ammo="0" recoil="0" spread="0" concealment="0"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_bulldog_mag" type="magazine" based_on="wpn_fps_ass_famas_m_standard" unit="units/mods/weapons/wpn_fps_ass_bulldog_pts/wpn_fps_ass_bulldog_mag" hidden="true" ver="2">
+	      <stats damage="0" extra_ammo="0" recoil="0" spread="0" concealment="0"/>
+		  <bullet_objects prefix = "g_bullet_" amount="2"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_bulldog_ns" type="barrel_ext" based_on="wpn_fps_ass_flint_ns_standard" unit="units/mods/weapons/wpn_fps_ass_bulldog_pts/wpn_fps_ass_bulldog_ns" hidden="true" ver="2">
+	      <stats damage="0" extra_ammo="0" recoil="0" spread="0" concealment="0"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_bulldog_dh" type="drag_handle" based_on="wpn_fps_ass_flint_dh_standard" unit="units/mods/weapons/wpn_fps_ass_bulldog_pts/wpn_fps_ass_bulldog_dh" hidden="true" ver="2">
+	      <stats damage="0" extra_ammo="0" recoil="0" spread="0" concealment="0"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_bulldog_reflex" type="sight" based_on="wpn_fps_upg_o_reflex" unit="units/mods/weapons/wpn_fps_ass_bulldog_pts/wpn_fps_ass_bulldog_reflex" hidden="true" ver="2">
+	      <stats damage="0" extra_ammo="0" recoil="0" spread="0" concealment="0"/>
+		  <adds>
+			  <value_node value="wpn_fps_ass_bulldog_reflex_reddot"/>
+		  </adds>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_bulldog_reflex_reddot" type="second_sight" based_on="wpn_fps_upg_o_hamr_reddot" unit="units/mods/weapons/wpn_fps_ass_bulldog_pts/wpn_fps_ass_bulldog_reflex_reddot" hidden="true" ver="2">
+	      <stats damage="0" extra_ammo="0" recoil="0" spread="0" concealment="0"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_bulldog_burst" type="custom" based_on="wpn_fps_upg_i_autofire" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" hidden="true" ver="2">
+		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+		<perks>
+			<value_node value="fire_mode_burst"/>
+		</perks>
+	</WeaponMod>
+
+	<!-- Bulldog - Factory -->
+
+	<Weapon unlock_level="51">
+
+		<weapon id="bulldog" based_on="komodo" weapon_hold="l85a2" has_description="true" desc_id="bm_w_bulldog_desc" CAN_TOGGLE_FIREMODE="false" NR_CLIPS_MAX="3" CLIP_AMMO_MAX="24" chamber_size="1" global_value="hylie_valo_mod">
+
+			<stats damage="96" spread="16" spread_moving="15" recoil="13" concealment="19"/>
+
+			<AMMO_PICKUP>
+					<value_node value="2.0"/>
+					<value_node value="4.5"/>
+			</AMMO_PICKUP>
+
+			<kick>
+				<standing>
+					<value_node value="1.0"/>
+					<value_node value="1.4"/>
+					<value_node value="-0.8"/>
+					<value_node value="0.3"/>
+				</standing>
+				<crouching>
+					<value_node value="0.9"/>
+					<value_node value="1.1"/>
+					<value_node value="-0.7"/>
+					<value_node value="0.3"/>
+				</crouching>
+				<steelsight>
+					<value_node value="0.70"/>
+					<value_node value="0.75"/>
+					<value_node value="-0.6"/>
+					<value_node value="0.3"/>
+				</steelsight>
+			</kick>
+
+			<sounds fire="bulldog_fire" fire_single="bulldog_fire" use_fix="true"/>
+
+			<fire_mode_data fire_rate="0.09"/>
+
+			<timers reload_empty="2.7" reload_not_empty="2.1" />
+
+			<animations reload="reload" reload_not_empty="reload_not_empty" recoil_steelsight="true" reload_name_id="bulldog"/>
+
+		</weapon>
+		<factory id="wpn_fps_ass_bulldog" unit="units/mods/weapons/wpn_fps_ass_bulldog/wpn_fps_ass_bulldog">
+			<adds/>	
+			<override>
+				<wpn_fps_smg_hajk_vg_moe parent="lower_reciever" a_obj="a_vg"/>
+			</override>
+			<default_blueprint>
+				<value_node value="wpn_fps_ass_bulldog_b_std"/>
+				<value_node value="wpn_fps_ass_bulldog_body"/>
+				<value_node value="wpn_fps_ass_bulldog_mag"/>
+				<value_node value="wpn_fps_ass_bulldog_ns"/>
+				<value_node value="wpn_fps_ass_bulldog_dh"/>
+				<value_node value="wpn_fps_ass_bulldog_reflex"/>
+				<value_node value="wpn_fps_ass_bulldog_burst"/>
+
+				<value_node value="wpn_fps_smg_hajk_vg_moe"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_ass_bulldog_b_std"/>
+				<value_node value="wpn_fps_ass_bulldog_body"/>
+				<value_node value="wpn_fps_ass_bulldog_mag"/>
+				<value_node value="wpn_fps_ass_bulldog_ns"/>
+				<value_node value="wpn_fps_ass_bulldog_dh"/>
+				<value_node value="wpn_fps_ass_bulldog_reflex"/>
+				<value_node value="wpn_fps_ass_bulldog_burst"/>
+
+				<value_node value="wpn_fps_smg_hajk_vg_moe"/>
+
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_v6"/>
+				<value_node value="wpn_fps_lmg_hk51b_ns_jcomp"/>
+				<value_node value="wpn_fps_lmg_kacchainsaw_ns_muzzle"/>
+				<value_node value="wpn_fps_lmg_kacchainsaw_ns_suppressor"/>
+
+				<value_node value="wpn_fps_upg_i_singlefire"/>
+				<value_node value="wpn_fps_upg_i_autofire"/>
+
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_specter_piggyback"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_cs_piggyback"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_bmg"/>
+				<value_node value="wpn_fps_upg_o_uh"/>
+				<value_node value="wpn_fps_upg_o_fc1"/>
+				<value_node value="wpn_fps_upg_o_tf90"/>
+				<value_node value="wpn_fps_upg_o_poe"/>
+				<value_node value="wpn_fps_upg_o_hamr"/>
+				<value_node value="wpn_fps_upg_o_hamr_reddot"/>
+				<value_node value="wpn_fps_upg_o_atibal"/>
+				<value_node value="wpn_fps_upg_o_atibal_reddot"/>
+				<value_node value="wpn_fps_upg_o_health"/>
+
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/>
+			</uses_parts>
+		</factory>
+		<stance>
+	        <standard>
+		        <shoulders rotation="-8.72665e-006 -8.72665e-006 7.61544e-011 -1" translation="-3.017 -10.983 3"/>
+	        </standard>
+
+	        <crouched>
+		        <shoulders rotation="-8.59406e-006 0.173657 -1.51544e-006 -0.984806" translation="-7.017 -14.983 -2"/>
+	        </crouched>
+
+	        <steelsight>
+		        <shoulders rotation="-8.72665e-006 -8.72665e-006 7.61544e-011 -1" translation="-9.45 -16.983 2.7"/>
+	        </steelsight>
+		</stance>
+	</Weapon>
+</mod>

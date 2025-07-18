@@ -1,0 +1,252 @@
+	<mod name="Dutch Colonial Madsen Machine Gun" author="Matchbreakers, PlayBONK, and RJC9000" min_lib_ver="3.38">
+	<AssetUpdates id="47132" version="0.99" provider="modworkshop"/>
+	<Localization directory="loc" default="english.txt">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	<GlobalValue id="madsen_mg_mod" color="Color(0.9, 0.1, 0.1)"/>
+	
+	<!-- Parts -->
+	<WeaponMod id="wpn_fps_lmg_madsen_mg_barrel" based_on="wpn_fps_lmg_par_b_standard" type="barrel"  unit="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/wpn_fps_lmg_madsen_mg_barrel" hidden="true" global_value="madsen_mg_mod" ver="2">
+	</WeaponMod> 
+	<WeaponMod id="wpn_fps_lmg_madsen_mg_bipod" based_on="wpn_fps_upg_bp_lmg_lionbipod" desc_id="wpn_fps_upg_bp_lmg_lionbipod" type="bipod" a_obj="a_bp" unit="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/wpn_fps_lmg_madsen_mg_bipod" hidden="false" has_description="true" global_value="madsen_mg_mod" ver="2">
+	</WeaponMod> 
+	<WeaponMod id="wpn_fps_lmg_madsen_mg_muzzle" based_on="wpn_fps_upg_ns_ass_smg_stubby" type="barrel_ext" parent="foregrip" unit="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/wpn_fps_lmg_madsen_mg_muzzle" hidden="true" global_value="madsen_mg_mod" ver="2">
+		<stats damage="2" spread="1" recoil="1" concealment="0" suppression="-10"/>
+	</WeaponMod> 
+	<WeaponMod id="wpn_fps_lmg_madsen_mg_irons" based_on="wpn_fps_m4_uupg_o_flipup"  type="sight" unit="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/wpn_fps_lmg_madsen_mg_irons" hidden="true" global_value="madsen_mg_mod" ver="2">
+	</WeaponMod> 
+	<WeaponMod id="wpn_fps_lmg_madsen_mg_receiver" based_on="wpn_fps_lmg_par_body_standard"  type="lower_reciever" unit="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/wpn_fps_lmg_madsen_mg_receiver" hidden="true" global_value="madsen_mg_mod" ver="2">
+	</WeaponMod> 
+	<WeaponMod id="wpn_fps_lmg_madsen_mg_shroud" based_on="wpn_fps_sho_boot_fg_standard"  type="foregrip" unit="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/wpn_fps_lmg_madsen_mg_shroud" hidden="true" global_value="madsen_mg_mod" ver="2">
+	</WeaponMod> 
+`	<WeaponMod id="wpn_fps_lmg_madsen_mg_stock" based_on="wpn_fps_lmg_par_s_standard" type="stock" unit="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/wpn_fps_lmg_madsen_mg_stock" hidden="true" global_value="madsen_mg_mod"  ver="2">
+	</WeaponMod>
+
+	<!-- Cosmetic -->
+	<WeaponMod id="wpn_fps_lmg_madsen_mg_cloth_wrap" based_on="wpn_fps_sho_boot_fg_standard"  type="cloth_wrap" unit="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/wpn_fps_lmg_madsen_mg_cloth_wrap" hidden="false" has_description="true" global_value="madsen_mg_mod" ver="2">
+		<stats spread="0" recoil="0" concealment="0"/>
+	</WeaponMod> 
+
+	<!-- Magazine -->
+	<WeaponMod id="wpn_fps_lmg_madsen_mg_magazine" based_on="wpn_fps_lmg_par_m_standard"  type="magazine" unit="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/wpn_fps_lmg_madsen_mg_magazine" hidden="true" global_value="madsen_mg_mod" ver="2">
+		<bullet_objects prefix = "g_bullet_" amount="3"/>
+
+	</WeaponMod> 
+	<WeaponMod id="wpn_fps_lmg_madsen_mg_xmag" based_on="wpn_fps_lmg_par_m_standard"  type="magazine" unit="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/wpn_fps_lmg_madsen_mg_xmag" hidden="false" has_description="true" global_value="madsen_mg_mod" ver="2">
+		<bullet_objects prefix = "g_bullet_" amount="3"/>
+		<stats extra_ammo="8" concealment="-3"/>
+
+	</WeaponMod> 
+
+<!--Weapon-->
+		<Weapon unlock_level="30">
+		<weapon id="madsen_mg" based_on="par" weapon_hold="madsen_mg" CLIP_AMMO_MAX="25" NR_CLIPS_MAX="5" shell_ejection="effects/payday2/particles/weapons/shells/shell_sniper" global_value="madsen_mg_mod">
+			<stats damage="115" spread="16" spread_moving="15" recoil="15" concealment="13"/>
+			<fire_mode_data fire_rate="0.1165"/>
+				<sounds fire="madsen_mg_fire" fire_single="madsen_mg_fire" fire_auto="madsen_mg_fire" stop_fire="m16_stop" use_fix="true">
+				</sounds>		
+			<AMMO_PICKUP>
+				<value_node value="4.50"/>
+				<value_node value="6.00"/>
+			</AMMO_PICKUP>
+			<kick>
+				<standing>
+					<value_node value="0.9"/>
+					<value_node value="1.1"/>
+					<value_node value="-0.6"/>
+					<value_node value="0.6"/>
+				</standing>
+				<crouching>
+					<value_node value="0.8"/>
+					<value_node value="1.0"/>
+					<value_node value="-0.6"/>
+					<value_node value="0.6"/>
+				</crouching>
+				<steelsight>
+					<value_node value="0.8"/>
+					<value_node value="0.85"/>
+					<value_node value="0.5"/>
+					<value_node value="-0.5"/>
+				</steelsight>
+			</kick>
+			<animations reload_name_id="madsen_mg"/>
+			<timers reload_empty="3.3" reload_not_empty="2.4"/> 
+		</weapon>
+		<factory id="wpn_fps_lmg_madsen_mg" unit="units/mods/weapons/wpn_fps_lmg_madsen_mg/wpn_fps_lmg_madsen_mg" >
+		<animations reload="reload" fire="recoil" fire_steelsight="recoil" reload_not_empty="reload_not_empty" magazine_empty="last_recoil"/>
+		<adds/>
+		<override>
+			<wpn_fps_upg_ns_ass_smg_large parent="foregrip"/>
+			<wpn_fps_upg_ns_ass_smg_medium parent="foregrip"/>
+			<wpn_fps_upg_ns_ass_smg_small parent="foregrip"/>
+			<wpn_fps_upg_ns_ass_smg_firepig parent="foregrip"/>
+			<wpn_fps_upg_ns_ass_smg_stubby parent="foregrip"/>
+			<wpn_fps_upg_ns_ass_smg_tank parent="foregrip"/>
+			<wpn_fps_upg_ass_ns_jprifles parent="foregrip"/>
+			<wpn_fps_upg_ass_ns_linear parent="foregrip"/>
+			<wpn_fps_upg_ass_ns_surefire parent="foregrip"/>
+			<wpn_fps_upg_ass_ns_battle parent="foregrip"/>
+			<wpn_fps_upg_ns_ass_smg_v6 parent="foregrip"/>
+			<wpn_fps_lmg_hk51b_ns_jcomp parent="foregrip"/>
+			<wpn_fps_lmg_kacchainsaw_ns_muzzle parent="foregrip"/>
+			<wpn_fps_lmg_kacchainsaw_ns_suppressor parent="foregrip"/>		
+		</override>
+			<default_blueprint>
+				<value_node value="wpn_fps_lmg_madsen_mg_barrel"/>
+				<value_node value="wpn_fps_lmg_madsen_mg_irons"/>
+				<value_node value="wpn_fps_lmg_madsen_mg_magazine"/>
+				<value_node value="wpn_fps_lmg_madsen_mg_muzzle"/> 
+				<value_node value="wpn_fps_lmg_madsen_mg_receiver"/>
+				<value_node value="wpn_fps_lmg_madsen_mg_shroud"/>
+				<value_node value="wpn_fps_lmg_madsen_mg_stock"/>
+
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_lmg_madsen_mg_barrel"/>
+				<value_node value="wpn_fps_lmg_madsen_mg_bipod"/>
+				<value_node value="wpn_fps_lmg_madsen_mg_irons"/>
+				<value_node value="wpn_fps_lmg_madsen_mg_magazine"/>
+				<value_node value="wpn_fps_lmg_madsen_mg_muzzle"/>
+				<value_node value="wpn_fps_lmg_madsen_mg_receiver"/>
+				<value_node value="wpn_fps_lmg_madsen_mg_shroud"/>
+				<value_node value="wpn_fps_lmg_madsen_mg_stock"/>
+				<value_node value="wpn_fps_lmg_madsen_mg_xmag"/>
+				<value_node value="wpn_fps_lmg_madsen_mg_cloth_wrap"/>
+											
+			
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_v6"/>
+				<value_node value="wpn_fps_lmg_hk51b_ns_jcomp"/>
+				<value_node value="wpn_fps_lmg_kacchainsaw_ns_muzzle"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/> 
+			</uses_parts>
+		</factory>
+		<stance>
+		<standard>
+			<shoulders rotation="4.36332e-005 -8.72665e-006 -3.80772e-010 -1" translation="-0.545 2.393 0.267"/>
+		</standard>
+		<crouched>
+			<shoulders rotation="4.36332e-005 -8.72665e-006 -3.80772e-010 -1" translation="-1.545 -1.393 -1.667"/>
+		</crouched>
+		<steelsight> 
+			<shoulders rotation="0.000218195 0.00349938 9.49004e-006 -0.999994" translation="-9.685 -6.035 0.28"/>
+		</steelsight> 
+		</stance> 
+	</Weapon>
+
+
+
+
+
+
+	<Sounds directory="assets\sounds">
+		<sound id="madsen_mg_fire" path="madsen_mg_fire.ogg" prefix="regular"/>
+		<sound id="madsen_mg_fire" path="madsen_mg_fire.ogg"  prefix="suppressed_a"/>
+		<sound id="madsen_mg_fire" path="madsen_mg_fire.ogg"  prefix="suppressed_b"/>
+		<sound id="madsen_mg_fire" path="madsen_mg_fire.ogg"  prefix="suppressed_c"/> 
+
+		<sound id="madsen_mg_end_foley" path="madsen_end_foley.ogg" prefix="first"/>
+		<sound id="madsen_mg_end_foley" path="madsen_end_foley.ogg"  prefix="third"/>
+		<sound id="madsen_mg_enter_foley" path="madsen_enter_foley.ogg" prefix="first"/>
+		<sound id="madsen_mg_enter_foley" path="madsen_enter_foley.ogg"  prefix="third"/>
+		<sound id="madsen_mg_lever_grab" path="madsen_lever_grab.ogg" prefix="first"/>
+		<sound id="madsen_mg_lever_grab" path="madsen_lever_grab.ogg"  prefix="third"/>
+		<sound id="madsen_mg_lever_pull" path="madsen_lever_pull.ogg" prefix="first"/>
+		<sound id="madsen_mg_lever_pull" path="madsen_lever_pull.ogg"  prefix="third"/>
+		<sound id="madsen_mg_lever_push" path="madsen_lever_push.ogg" prefix="first"/>
+		<sound id="madsen_mg_lever_push" path="madsen_lever_push.ogg"  prefix="third"/>
+		<sound id="madsen_mg_mag_contact" path="madsen_mag_contact.ogg" prefix="first"/>
+		<sound id="madsen_mg_mag_contact" path="madsen_mag_contact.ogg"  prefix="third"/>
+		<sound id="madsen_mg_mag_impact_ground" path="madsen_mag_impact_ground.ogg" prefix="first"/>
+		<sound id="madsen_mg_mag_impact_ground" path="madsen_mag_impact_ground.ogg"  prefix="third"/>
+		<sound id="madsen_mg_mag_in" path="madsen_mag_in.ogg" prefix="first"/>
+		<sound id="madsen_mg_mag_in" path="madsen_mag_in.ogg"  prefix="third"/>
+		<sound id="madsen_mg_mag_out" path="madsen_mag_out.ogg" prefix="first"/>
+		<sound id="madsen_mg_mag_out" path="madsen_mag_out.ogg"  prefix="third"/>
+		<sound id="madsen_mg_mag_out_empty" path="madsen_mg_mag_out_empty.ogg" prefix="first"/>
+		<sound id="madsen_mg_mag_out_empty" path="madsen_mg_mag_out_empty.ogg"  prefix="third"/>
+		<sound id="madsen_mg_mag_take_new" path="madsen_mag_take_new.ogg" prefix="first"/>
+		<sound id="madsen_mg_mag_take_new" path="madsen_mag_take_new.ogg"  prefix="third"/>
+		<sound id="madsen_mg_regrab" path="madsen_regrab.ogg" prefix="first"/>
+		<sound id="madsen_mg_regrab" path="madsen_regrab.ogg"  prefix="third"/>
+		<sound id="madsen_mg_regrab_last" path="madsen_regrab_last.ogg" prefix="first"/>
+		<sound id="madsen_mg_regrab_last" path="madsen_regrab_last.ogg"  prefix="third"/>
+		<sound id="madsen_mg_regrab_left" path="madsen_regrab_left.ogg" prefix="first"/>
+		<sound id="madsen_mg_regrab_left" path="madsen_regrab_left.ogg"  prefix="third"/>
+
+		
+		
+	</Sounds>
+
+	<AddFiles directory="assets">
+	
+<!-- Animations -->
+		<animation path="anims/fps/madsen_mg/madsen_mg_reload" load="true"/>
+		<animation path="anims/fps/madsen_mg/madsen_mg_reload_not_empty" load="true"/>
+		
+		<animation path="anims/fps/madsen_mg/madsen_mg_inspect" load="true"/>
+		<animation path="anims/fps/madsen_mg/madsen_mg_equip" load="true"/>
+		
+		<animation path="anims/fps/madsen_mg/madsen_mg_recoil" load="true"/>
+		<animation path="anims/fps/madsen_mg/madsen_mg_recoil_enter" load="true"/>
+		<animation path="anims/fps/madsen_mg/madsen_mg_recoil_loop" load="true"/>
+		<animation path="anims/fps/madsen_mg/madsen_mg_recoil_exit" load="true"/>
+		
+<!--GUIs-->
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/madsen_mg"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_madsen_mg_bipod"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_madsen_mg_cloth_wrap"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_lmg_madsen_mg_xmag"/>
+		
+		
+	
+<!--Unit Path-->
+		<unit_npc path="units/mods/weapons/wpn_fps_lmg_madsen_mg/wpn_fps_lmg_madsen_mg"/>
+				
+<!--Parts-->
+		<texture path="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/weapon_metal_cubemap"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/black_df"/>
+
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/1893_clip"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/madsen_barrel"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/madsen_bipod"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/madsen_mini_magazine"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/madsen_muzzle"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/madsen_receiver"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/madsen_sights"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/madsen_stock"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/madsen_xmag"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/2042_covered_suppressor"/>
+
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/wpn_fps_lmg_madsen_mg_barrel"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/wpn_fps_lmg_madsen_mg_bipod"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/wpn_fps_lmg_madsen_mg_irons"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/wpn_fps_lmg_madsen_mg_muzzle"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/wpn_fps_lmg_madsen_mg_magazine"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/wpn_fps_lmg_madsen_mg_xmag"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/wpn_fps_lmg_madsen_mg_receiver"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/wpn_fps_lmg_madsen_mg_shroud"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/wpn_fps_lmg_madsen_mg_stock"/>
+
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/wpn_fps_lmg_madsen_mg_cloth_wrap"/>
+
+	</AddFiles>
+		
+	<Hooks directory="hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>  
+<!--	<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>  -->
+		
+	</Hooks>
+	
+</mod>

@@ -1,0 +1,14 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_sho_haymaker_pts/wpn_fps_sho_haymaker_dh_std_stick" orientation_object="rp_handle_stick" />
+	<graphics>
+		<object name="g_dh_stick" enabled="true" />
+	</graphics>
+	<animations>
+		<animation_group name="recoil">
+			<object name="anim_draghandle_recoil_stick" enabled="true" />
+		</animation_group>
+		<animation_group name="reload">
+			<object name="anim_draghandle_reload_stick" enabled="true" />
+		</animation_group>
+	</animations>
+</dynamic_object>

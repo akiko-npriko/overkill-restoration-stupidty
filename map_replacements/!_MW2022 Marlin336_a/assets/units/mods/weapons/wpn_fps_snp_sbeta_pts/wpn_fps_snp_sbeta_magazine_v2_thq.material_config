@@ -1,0 +1,11 @@
+<materials version="3" group="weapon_tti">
+	<material name="mtr_45gvt" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture 	 file="units/mods/weapons/wpn_fps_snp_sbeta_pts/textures/mw2022_45gvt_df" mip="1"/>
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_snp_sbeta_pts/textures/mw2022_45gvt_nm" mip="1"/>
+	</material>
+	<material name="mtr_sbeta_receiver" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_snp_sbeta_pts/textures/sbeta_receiver_v2_df" mip="1"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_snp_sbeta_pts/textures/sbeta_receiver_v2_nm" mip="1"/>
+    </material>	
+	
+</materials>

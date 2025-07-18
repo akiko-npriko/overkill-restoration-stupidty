@@ -1,0 +1,454 @@
+	<mod name="Payday 3 Tribue 32" author="Columbus, Masavik, and RJC9000" min_lib_ver="3.38">
+	<AssetUpdates id="51546" version="0.83" provider="modworkshop"/>
+	<Localization directory="loc" default="english.txt">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	<GlobalValue id="tribune32_mod" color="Color(0.9, 0.09, 0.08)"/>
+
+	
+	<!-- Universal -->
+
+	<WeaponMod id="wpn_fps_smg_tribune32_barrel" based_on="wpn_fps_smg_mac10_b_dummy" type="barrel" unit="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_barrel" hidden="true" ver="2">
+		<forbids>
+			<value_node value="wpn_fps_m4_uupg_fg_rail_ext"/>
+		</forbids>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_smg_tribune32_bolt" based_on="wpn_fps_amcar_bolt_standard" type="bolt"  unit="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_bolt" hidden="true" ver="2">
+	</WeaponMod>
+		
+	<WeaponMod id="wpn_fps_smg_tribune32_charging_handle" based_on="wpn_fps_m4_uupg_draghandle" a_obj="a_dh" type="drag_handle"  unit="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_charging_handle" hidden="true" ver="2"/>
+	
+	<WeaponMod id="wpn_fps_smg_tribune32_magazine_release" based_on="wpn_fps_smg_mac10_body_mac10" a_obj="a_mag_release" type="mag_release" unit="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_magazine_release" hidden="true" ver="2"/>
+	
+	<WeaponMod id="wpn_fps_smg_tribune32_optic_rail" based_on="wpn_fps_smg_mac10_body_mac10" type="extra" unit="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_optic_rail" hidden="true" ver="2">
+			   <override>
+				<wpn_upg_o_marksmansight_rear_vanilla unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+				<wpn_upg_o_marksmansight_front_vanilla unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+		    </override>
+	</WeaponMod>
+
+	<!-- Flash Hider -->
+	
+	<WeaponMod id="wpn_fps_smg_tribune32_flash_hider" based_on="wpn_fps_upg_ns_ass_smg_stubby" type="barrel_ext"  unit="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_flash_hider" hidden="true" global_value="tribune32_mod" ver="2"/>	
+	<WeaponMod id="wpn_fps_smg_tribune32_flash_hider_fool" based_on="wpn_fps_upg_ns_ass_smg_stubby" type="barrel_ext"  unit="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_flash_hider_fool" hidden="false" global_value="tribune32_mod" ver="2"/>
+	
+	<!-- Optics -->
+	
+	<WeaponMod id="wpn_fps_smg_tribune32_irons" based_on="wpn_fps_m4_uupg_o_flipup" type="sight" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" hidden="true" ver="2">
+		<stance_mod>
+			<wpn_fps_smg_tribune32 translation="0 0 0.3"/>
+		</stance_mod>
+	</WeaponMod>
+
+	<!-- Magazine -->
+	<WeaponMod id="wpn_fps_smg_tribune32_magazine" based_on="wpn_fps_smg_mac10_m_short" type="magazine" unit="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_magazine" hidden="true" ver="2">
+			<stats extra_ammo="0" concealment="0" reload="-1"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_smg_tribune32_magazine_fool" based_on="wpn_fps_smg_mac10_m_short" type="magazine" unit="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_magazine_fool" hidden="false" global_value="tribune32_mod" ver="2">
+			<stats extra_ammo="6" concealment="-3" reload="-1"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_smg_tribune32_magazine_short" based_on="wpn_fps_smg_mac10_m_short" type="magazine" unit="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_magazine_short" hidden="false" global_value="tribune32_mod" ver="2">
+			<stats extra_ammo="-8"  concealment="2" reload="-1"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_smg_tribune32_magazine_speedpull" based_on="wpn_fps_smg_mac10_m_short" type="magazine" unit="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_magazine_speedpull" hidden="false" global_value="tribune32_mod" ver="2">
+			<stats extra_ammo="0" concealment="-2" reload="2"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_smg_tribune32_xmag" based_on="wpn_fps_smg_mac10_m_short" type="magazine" unit="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_xmag" hidden="false" global_value="tribune32_mod" ver="2">
+			<stats extra_ammo="6" concealment="-3" reload="-1"/>
+	</WeaponMod>
+
+
+
+	<!--Receiver-->
+	<WeaponMod id="wpn_fps_smg_tribune32_receiver_lower" based_on="wpn_fps_smg_mac10_body_mac10" type="lower_reciever" unit="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_receiver_lower" hidden="true" ver="2">
+			   <override>
+				<wpn_fps_addon_ris unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+		    </override>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_smg_tribune32_receiver_upper" based_on="wpn_fps_smg_mac10_body_mac10" type="upper_reciever" unit="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_receiver_upper" hidden="true" ver="2"/>
+	
+	
+	<WeaponMod id="wpn_fps_smg_tribune32_receiver_lower_fool" based_on="wpn_fps_smg_mac10_body_mac10" type="lower_reciever" unit="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_receiver_lower_fool" hidden="false" ver="2">
+		   <override>
+				<wpn_fps_smg_tribune32_magazine_release unit="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_magazine_release_fool"/>
+		    </override>
+		<forbids>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/>
+		</forbids>			
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_smg_tribune32_receiver_upper_fool" based_on="wpn_fps_smg_mac10_body_mac10" type="upper_reciever" unit="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_receiver_upper_fool" hidden="false" ver="2">
+	</WeaponMod>
+	
+	
+	<!-- Stock -->
+	<WeaponMod id="wpn_fps_smg_tribune32_stock_adapter" based_on="wpn_fps_upg_m4_s_adapter" type="stock_adapter" unit="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_stock_adapter" hidden="true" global_value="tribune32_mod"  ver="2"/>
+
+	<WeaponMod id="wpn_fps_smg_tribune32_stock" based_on="wpn_fps_smg_mac10_s_skel" type="stock" unit="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_stock" hidden="true" global_value="tribune32_mod" ver="2">
+			<override>
+				<wpn_fps_smg_tribune32_stock_adapter unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+		   </override>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_smg_tribune32_stock_fool" based_on="wpn_fps_smg_mac10_s_skel" type="stock" unit="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_stock_fool" hidden="false" global_value="tribune32_mod" ver="2">
+			<override>
+				<wpn_fps_smg_tribune32_stock_adapter unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+		   </override>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_smg_tribune32_stock_unfolded_fool" based_on="wpn_fps_smg_mac10_s_skel" type="stock" unit="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_stock_unfolded_fool" hidden="false" global_value="tribune32_mod" ver="2">
+			<override>
+				<wpn_fps_smg_tribune32_stock_adapter unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+		   </override>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_smg_tribune32_stock_jmac" based_on="wpn_fps_smg_mac10_s_skel" type="stock" unit="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_stock_jmac" hidden="false" global_value="tribune32_mod" ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_smg_tribune32_stock_visor" based_on="wpn_fps_smg_mac10_s_skel" type="stock" unit="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_stock_visor" hidden="false" global_value="tribune32_mod" ver="2">
+	</WeaponMod>
+	
+<!--	Weapon -->
+
+	<Weapon unlock_level="2">
+			<weapon id="tribune32" based_on="mac10"  NR_CLIPS_MAX="5" CLIP_AMMO_MAX="33" chamber_size="1" global_value="tribune32_mod" >
+			<fire_mode_data fire_rate="0.06667"/>	
+			<timers reload_not_empty="1.83" reload_empty="2.0" unequip="0.6" equip="0.6" />			
+			<animations reload_name_id="tribune32"/>
+			</weapon>
+		<factory id="wpn_fps_smg_tribune32" >
+			<animations reload="reload" fire="recoil" fire_steelsight="recoil" reload_not_empty="reload_not_empty" magazine_empty="last_recoil"/>
+	        <adds>
+
+            </adds>
+			<override/>
+			<default_blueprint>
+				<value_node value="wpn_fps_smg_tribune32_barrel"/>
+				<value_node value="wpn_fps_smg_tribune32_bolt"/> 
+				<value_node value="wpn_fps_smg_tribune32_charging_handle"/>
+				<value_node value="wpn_fps_smg_tribune32_flash_hider"/> 
+				<value_node value="wpn_fps_smg_tribune32_irons"/>
+				<value_node value="wpn_fps_smg_tribune32_optic_rail"/>
+				<value_node value="wpn_fps_smg_tribune32_receiver_lower"/>
+				<value_node value="wpn_fps_smg_tribune32_receiver_upper"/>
+				<value_node value="wpn_fps_smg_tribune32_magazine_release"/>
+				<value_node value="wpn_fps_smg_tribune32_magazine"/>
+				<value_node value="wpn_fps_smg_tribune32_stock"/>
+				<value_node value="wpn_fps_smg_tribune32_stock_adapter"/>
+
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_smg_tribune32_barrel"/>
+				<value_node value="wpn_fps_smg_tribune32_bolt"/> 
+				<value_node value="wpn_fps_smg_tribune32_charging_handle"/>
+				<value_node value="wpn_fps_smg_tribune32_flash_hider"/> 
+				<value_node value="wpn_fps_smg_tribune32_flash_hider_fool"/> 
+				<value_node value="wpn_fps_smg_tribune32_irons"/>
+				<value_node value="wpn_fps_smg_tribune32_optic_rail"/>
+				<value_node value="wpn_fps_smg_tribune32_receiver_lower"/>
+				<value_node value="wpn_fps_smg_tribune32_receiver_upper"/>
+				<value_node value="wpn_fps_smg_tribune32_receiver_lower_fool"/>
+				<value_node value="wpn_fps_smg_tribune32_receiver_upper_fool"/>
+				<value_node value="wpn_fps_smg_tribune32_magazine_release"/>
+				<value_node value="wpn_fps_smg_tribune32_magazine"/>
+				<value_node value="wpn_fps_smg_tribune32_magazine_fool"/>
+				<value_node value="wpn_fps_smg_tribune32_magazine_short"/>
+				<value_node value="wpn_fps_smg_tribune32_magazine_speedpull"/>
+				<value_node value="wpn_fps_smg_tribune32_xmag"/>
+				<value_node value="wpn_fps_smg_tribune32_stock"/>
+				<value_node value="wpn_fps_smg_tribune32_stock_adapter"/>
+				<value_node value="wpn_fps_smg_tribune32_stock_fool"/>
+				<value_node value="wpn_fps_smg_tribune32_stock_unfolded_fool"/>
+				<value_node value="wpn_fps_smg_tribune32_stock_jmac"/>
+				<value_node value="wpn_fps_smg_tribune32_stock_visor"/>
+
+			
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_v6"/>
+
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/>
+
+				<value_node value="wpn_fps_upg_i_singlefire"/>
+				<value_node value="wpn_fps_upg_i_autofire"/>
+				
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+
+			</uses_parts>
+		</factory>
+		<stance>
+			<standard>
+				<shoulders rotation="0.00010978 0.00552384 0.000916862 -0.999984" translation="-0.681 -15.646 0.637"/>
+			</standard>
+			<crouched>
+				<shoulders rotation="0.00010978 0.00552384 0.000916862 -0.999984" translation="-2.681 -18.646 0.137"/>
+			</crouched>
+			<steelsight>
+				<shoulders rotation="0.00010978 0.00552384 0.000916862 -0.999984" translation="-8.681 -7.646 5.037"/>
+			</steelsight> 
+		</stance>	
+		
+	</Weapon>
+
+<!--	Akimbo -->
+
+	<Weapon unlock_level="0">
+			<weapon id="x_tribune32" based_on="x_mac10"  NR_CLIPS_MAX="3" CLIP_AMMO_MAX="66" chamber_size="2"  global_value="tribune32_mod" >
+			<fire_mode_data fire_rate="0.06667"/>		
+			<animations reload_name_id="x_mac10"/>
+			</weapon>
+		<factory id="wpn_fps_smg_x_tribune32" >
+			<animations reload="reload" fire="recoil" fire_steelsight="recoil" reload_not_empty="reload_not_empty" magazine_empty="last_recoil"/>
+	        <adds>
+            </adds>
+			<override>
+				<wpn_fps_smg_tribune32_magazine_fool>
+					<stats extra_ammo="12" concealment="-3" reload="0"/>
+				</wpn_fps_smg_tribune32_magazine_fool>	
+				<wpn_fps_smg_tribune32_xmag>
+					<stats extra_ammo="12" concealment="-3" reload="0"/>
+				</wpn_fps_smg_tribune32_xmag>	
+				<wpn_fps_smg_tribune32_magazine_short>
+					<stats extra_ammo="-16" concealment="2" reload="0"/>
+				</wpn_fps_smg_tribune32_magazine_short>	
+			</override>
+			<default_blueprint>
+				<value_node value="wpn_fps_smg_tribune32_barrel"/>
+				<value_node value="wpn_fps_smg_tribune32_bolt"/> 
+				<value_node value="wpn_fps_smg_tribune32_charging_handle"/>
+				<value_node value="wpn_fps_smg_tribune32_flash_hider"/> 
+				<value_node value="wpn_fps_smg_tribune32_optic_rail"/>
+				<value_node value="wpn_fps_smg_tribune32_receiver_lower"/>
+				<value_node value="wpn_fps_smg_tribune32_receiver_upper"/>
+				<value_node value="wpn_fps_smg_tribune32_magazine_release"/>
+				<value_node value="wpn_fps_smg_tribune32_magazine"/>
+				<value_node value="wpn_fps_smg_tribune32_stock"/>
+				<value_node value="wpn_fps_smg_tribune32_stock_adapter"/>
+
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_smg_tribune32_barrel"/>
+				<value_node value="wpn_fps_smg_tribune32_bolt"/> 
+				<value_node value="wpn_fps_smg_tribune32_charging_handle"/>
+				<value_node value="wpn_fps_smg_tribune32_flash_hider"/> 
+				<value_node value="wpn_fps_smg_tribune32_flash_hider_fool"/> 
+				<value_node value="wpn_fps_smg_tribune32_optic_rail"/>
+				<value_node value="wpn_fps_smg_tribune32_receiver_lower"/>
+				<value_node value="wpn_fps_smg_tribune32_receiver_upper"/>
+				<value_node value="wpn_fps_smg_tribune32_receiver_lower_fool"/>
+				<value_node value="wpn_fps_smg_tribune32_receiver_upper_fool"/>
+				<value_node value="wpn_fps_smg_tribune32_magazine_release"/>
+				<value_node value="wpn_fps_smg_tribune32_magazine"/>
+				<value_node value="wpn_fps_smg_tribune32_magazine_fool"/>
+				<value_node value="wpn_fps_smg_tribune32_magazine_short"/>
+				<value_node value="wpn_fps_smg_tribune32_magazine_speedpull"/>
+				<value_node value="wpn_fps_smg_tribune32_xmag"/>
+				<value_node value="wpn_fps_smg_tribune32_stock"/>
+				<value_node value="wpn_fps_smg_tribune32_stock_adapter"/>
+				<value_node value="wpn_fps_smg_tribune32_stock_fool"/>
+				<value_node value="wpn_fps_smg_tribune32_stock_unfolded_fool"/>
+				<value_node value="wpn_fps_smg_tribune32_stock_jmac"/>
+				<value_node value="wpn_fps_smg_tribune32_stock_visor"/>
+
+			
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_v6"/>
+
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/>
+
+				<value_node value="wpn_fps_upg_i_singlefire"/>
+				<value_node value="wpn_fps_upg_i_autofire"/>
+				
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+
+			</uses_parts>
+		</factory>
+		
+		<stance>
+			<standard>
+				<shoulders rotation="0 -0 0 -1" translation="-0.426 0.669 -4.341"/>
+			</standard>
+			<crouched>
+				<shoulders rotation="0 -0 0 -1" translation="-0.426 -2.331 -2.341"/>
+			</crouched>
+			<steelsight>
+				<shoulders rotation="0 -0 0 -1" translation="-0.426 18.669 -1.341"/>
+			</steelsight> 
+		</stance>
+		
+	</Weapon>
+
+
+
+	
+<!--Sounds-->	
+	<Sounds directory="assets\sounds">
+	
+		<sound id="tribune32_back_in_hand"		 	 			 path="tribune32_back_in_hand.ogg" prefix="first"/>
+		<sound id="tribune32_back_in_hand" 						 path="tribune32_back_in_hand.ogg" prefix="third"/>
+		<sound id="tribune32_bolt_grab"		 	 		 path="tribune32_bolt_grab.ogg" prefix="first"/>
+		<sound id="tribune32_bolt_grab" 				 path="tribune32_bolt_grab.ogg" prefix="third"/>
+		<sound id="tribune32_bolt_pull"		  	 		 path="tribune32_bolt_pull.ogg" prefix="first"/>
+		<sound id="tribune32_bolt_pull" 				 path="tribune32_bolt_pull.ogg" prefix="third"/>
+		<sound id="tribune32_bolt_release"		  	 	 path="tribune32_bolt_release.ogg" prefix="first"/>
+		<sound id="tribune32_bolt_release" 				 path="tribune32_bolt_release.ogg" prefix="third"/>	
+		<sound id="tribune32_grab_new_mag"		 			 	 path="tribune32_grab_new_mag.ogg" prefix="first"/>
+		<sound id="tribune32_grab_new_mag" 						 path="tribune32_grab_new_mag.ogg" prefix="third"/>	
+		<sound id="tribune32_mag_impact_ground"		 	 	 	 path="tribune32_mag_impact_ground.ogg" prefix="first"/>
+		<sound id="tribune32_mag_impact_ground" 				 path="tribune32_mag_impact_ground.ogg" prefix="third"/>	
+		<sound id="tribune32_magazine_hit"		 	 		 path="tribune32_magazine_hit.ogg" prefix="first"/>
+		<sound id="tribune32_magazine_hit" 					 path="tribune32_magazine_hit.ogg" prefix="third"/>
+		<sound id="tribune32_magazine_hit_empty"		     path="tribune32_magazine_hit_empty.ogg" prefix="first"/>
+		<sound id="tribune32_magazine_hit_empty" 			 path="tribune32_magazine_hit_empty.ogg" prefix="third"/>
+		<sound id="tribune32_magin"		 				 	 path="tribune32_magin.ogg" prefix="first"/>
+		<sound id="tribune32_magin" 							 path="tribune32_magin.ogg" prefix="third"/>
+		<sound id="tribune32_magin_contact"		 	 			 path="tribune32_magin_contact.ogg" prefix="first"/>
+		<sound id="tribune32_magin_contact" 					path="tribune32_magin_contact.ogg" prefix="third"/>
+		<sound id="tribune32_magout"		 	 			 path="tribune32_magout.ogg" prefix="first"/>
+		<sound id="tribune32_magout" 						path="tribune32_magout.ogg" prefix="third"/>
+		<sound id="tribune32_take_new_mag"		 	 	    path="tribune32_take_new_mag.ogg" prefix="first"/>
+		<sound id="tribune32_take_new_mag" 					path="tribune32_take_new_mag.ogg" prefix="third"/>
+		
+	</Sounds>
+	
+	<AddFiles directory="assets">
+	
+	
+	<!--Unit Path-->
+		<unit_npc path="units/mods/weapons/wpn_fps_smg_tribune32/wpn_fps_smg_tribune32"/>
+		<unit_npc path="units/mods/weapons/wpn_fps_smg_x_tribune32/wpn_fps_smg_x_tribune32"/>
+				
+<!-- Animations -->
+		<animation path="anims/fps/tribune32/tribune32_reload_not_empty" load="true"/>
+		<animation path="anims/fps/tribune32/tribune32_reload" load="true"/>
+	
+	
+	
+	
+<!--GUIs-->
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/tribune32"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/x_tribune32"/>
+		
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_tribune32_magazine_short"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_tribune32_magazine_speedpull"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_tribune32_xmag"/> 	
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_tribune32_stock_jmac"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_tribune32_stock_visor"/> 
+		
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_tribune32_flash_hider_fool"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_tribune32_magazine_fool"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_tribune32_receiver_lower_fool"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_tribune32_receiver_upper_fool"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_tribune32_stock_fool"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_tribune32_stock_unfolded_fool"/> 
+
+<!--Textures-->
+		<texture	path="units/mods/weapons/wpn_fps_smg_tribune32_pts/textures/weapon_metal_cubemap"/>
+
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_smg_tribune32_pts/textures/barrel"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_smg_tribune32_pts/textures/bolt"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_smg_tribune32_pts/textures/front_rail"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_smg_tribune32_pts/textures/grip"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_smg_tribune32_pts/textures/magazine"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_smg_tribune32_pts/textures/magazine_short"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_smg_tribune32_pts/textures/magazine_speedpull"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_smg_tribune32_pts/textures/receiver_lower"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_smg_tribune32_pts/textures/receiver_upper"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_smg_tribune32_pts/textures/stock"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_smg_tribune32_pts/textures/stock_mount_rail"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_smg_tribune32_pts/textures/stock_visor"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_smg_tribune32_pts/textures/xmag"/>
+		
+		
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_smg_tribune32_pts/textures/grip_fool"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_smg_tribune32_pts/textures/magazine_fool"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_smg_tribune32_pts/textures/mods_fool"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_smg_tribune32_pts/textures/receiver_lower_fool"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_smg_tribune32_pts/textures/receiver_upper_fool"/>
+		
+		
+<!--Unit THQ-->
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_barrel"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_bolt"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_charging_handle"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_flash_hider"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_magazine_release"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_magazine"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_magazine_short"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_magazine_speedpull"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_xmag"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_optic_rail"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_receiver_lower"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_receiver_upper"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_stock"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_stock_adapter"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_stock_jmac"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_stock_visor"/>
+		
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_flash_hider_fool"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_magazine_fool"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_magazine_release_fool"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_receiver_lower_fool"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_receiver_upper_fool"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_stock_fool"/>	
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_smg_tribune32_pts/wpn_fps_smg_tribune32_stock_unfolded_fool"/>	
+
+	</AddFiles>
+	<Hooks directory="hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+	</Hooks>
+	
+</mod>

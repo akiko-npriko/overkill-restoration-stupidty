@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<tweaks>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+		
+	
+		<target mode="append">
+			<state name="fps/reload/pkilo" type="once" segment="base" speed="1.0">
+				<anim name="pkilo_reload"/>
+				<keys timebase="relative">
+					<key at="trigger" trigger="bullets_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+					
+					<key at="trigger" trigger="wp_svinet_mag_out" callback="play_sound" class_name="base" param1="pkilo_mag_out"/>
+					<key at="trigger" trigger="wp_svinet_mag_in" callback="play_sound" class_name="base" param1="pkilo_mag_in"/>
+					<key at="trigger" trigger="wp_svinet_belt_to_feeder" callback="play_sound" class_name="base" param1="pkilo_belt_in_tray"/>
+					<key at="trigger" trigger="wp_pkilo_belt_in" callback="play_sound" class_name="base" param1="pkilo_belt_in"/>
+					<key at="trigger" trigger="wp_svinet_cover_up" callback="play_sound" class_name="base" param1="pkilo_cover_grab"/>
+					<key at="trigger" trigger="wp_svinet_cover_down" callback="play_sound" class_name="base" param1="pkilo_cover_close"/>
+					<key at="trigger" trigger="wp_pkilo_lever_pull" callback="play_sound" class_name="base" param1="pkilo_charging_handle_pull"/>
+					<key at="trigger" trigger="wp_pkilo_lever_back" callback="play_sound" class_name="base" param1="pkilo_charging_handle_release"/>
+					<key at="trigger" trigger="wp_svinet_lever_release" callback="play_sound" class_name="base" param1="wp_svinet_lever_release"/>
+					<key at="trigger" trigger="wp_pkilo_mag_connect" callback="play_sound" class_name="base" param1="pkilo_mag_in_contact"/>
+					<key at="trigger" trigger="wp_m249_tilt" callback="play_sound" class_name="base" param1="pkilo_tilt"/>
+					<key at="trigger" trigger="wp_m249_tilt_back" callback="play_sound" class_name="base" param1="pkilo_cover_open"/>
+					<key at="trigger" trigger="wp_m249_clip_hit_ground" callback="play_sound" class_name="base" param1="pkilo_mag_impact_ground"/>
+					<key at="trigger" trigger="wp_pkilo_lever_pull_second" callback="play_sound" class_name="base" param1="pkilo_load_charging_handle_pull"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="pkilo_charging_handle_release"/>
+					<key at="trigger" trigger="wp_pkilo_lever_back_second" callback="play_sound" class_name="base" param1="pkilo_load_charging_handle_release"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="pkilo_generic_mag_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="pkilo_mag_toss"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="pkilo_mag_take_new"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="pkilo_generic_mag_in_connect"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="pkilo_generic_lever_pull"/>
+					<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="pkilo_back_in_hand"/>
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+
+			 
+
+			<state name="fps/reload_not_empty/pkilo" type="once" segment="base" speed="1.0">
+				<anim name="pkilo_reload_not_empty"/>
+				<keys timebase="relative">
+					<key at="trigger" trigger="bullets_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+					
+					<key at="trigger" trigger="wp_svinet_mag_out" callback="play_sound" class_name="base" param1="pkilo_mag_out"/>
+					<key at="trigger" trigger="wp_svinet_mag_in" callback="play_sound" class_name="base" param1="pkilo_mag_in"/>
+					<key at="trigger" trigger="wp_svinet_belt_to_feeder" callback="play_sound" class_name="base" param1="pkilo_belt_in_tray"/>
+					<key at="trigger" trigger="wp_pkilo_belt_in" callback="play_sound" class_name="base" param1="pkilo_belt_in"/>
+					<key at="trigger" trigger="wp_svinet_cover_up" callback="play_sound" class_name="base" param1="pkilo_cover_grab"/>
+					<key at="trigger" trigger="wp_svinet_cover_down" callback="play_sound" class_name="base" param1="pkilo_cover_close"/>
+					<key at="trigger" trigger="wp_pkilo_lever_pull" callback="play_sound" class_name="base" param1="pkilo_charging_handle_pull"/>
+					<key at="trigger" trigger="wp_pkilo_lever_back" callback="play_sound" class_name="base" param1="pkilo_charging_handle_release"/>
+					<key at="trigger" trigger="wp_svinet_lever_release" callback="play_sound" class_name="base" param1="wp_svinet_lever_release"/>
+					<key at="trigger" trigger="wp_pkilo_mag_connect" callback="play_sound" class_name="base" param1="pkilo_mag_in_contact"/>
+					<key at="trigger" trigger="wp_m249_tilt" callback="play_sound" class_name="base" param1="pkilo_tilt"/>
+					<key at="trigger" trigger="wp_m249_tilt_back" callback="play_sound" class_name="base" param1="pkilo_cover_open"/>
+					<key at="trigger" trigger="wp_m249_clip_hit_ground" callback="play_sound" class_name="base" param1="pkilo_mag_impact_ground"/>
+					<key at="trigger" trigger="wp_pkilo_lever_pull_second" callback="play_sound" class_name="base" param1="pkilo_load_charging_handle_pull_tactical"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="pkilo_load_charging_handle_release_tactical"/>
+					<key at="trigger" trigger="wp_pkilo_lever_back_second" callback="play_sound" class_name="base" param1="pkilo_load_charging_handle_release"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="pkilo_generic_mag_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="pkilo_mag_toss"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="pkilo_mag_take_new"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="pkilo_generic_mag_in_connect"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="pkilo_generic_lever_pull"/>
+					<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="pkilo_back_in_hand"/>
+					
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+		</target>
+		
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+		<target mode="attach">
+		
+			<to name="reload_pkilo" 					redirect="fps/reload/pkilo"/>
+			<to name="reload_not_empty_pkilo" 			redirect="fps/reload_not_empty/pkilo"/>
+			
+		</target>
+	</tweak>
+</tweaks>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+			
+		<target mode="attach">
+			<anim name="riveter_reload" 					file="anims/fps/riveter/riveter_reload" blend_set="all"/>
+			<anim name="riveter_reload_not_empty" 			file="anims/fps/riveter/riveter_reload_not_empty" blend_set="all"/>
+
+			<anim name="riveter_recoil" 							file="anims/fps/riveter/riveter_recoil" blend_set="all"/>
+			<anim name="riveter_idle" 								file="anims/fps/riveter/riveter_idle" blend_set="all"/>
+			<anim name="riveter_recoil_enter" 						file="anims/fps/riveter/riveter_recoil_enter" blend_set="all"/>
+			<anim name="riveter_recoil_loop" 						file="anims/fps/riveter/riveter_recoil_loop" blend_set="all"/>
+			<anim name="riveter_recoil_exit" 						file="anims/fps/riveter/riveter_recoil_exit" blend_set="all"/>
+			<anim name="riveter_recoil_steelsight" 				file="anims/fps/riveter/riveter_recoil" blend_set="all"/>
+			<anim name="riveter_equip" 							file="anims/fps/riveter/riveter_equip" blend_set="all"/>
+			<anim name="riveter_unequip" 							file="anims/fps/riveter/riveter_unequip" blend_set="all"/>
+			<anim name="riveter_melee" 							file="anims/fps/riveter/riveter_melee" blend_set="all"/>
+			<anim name="riveter_melee_miss" 						file="anims/fps/riveter/riveter_melee_miss" blend_set="all"/>
+			<anim name="riveter_use" 								file="anims/fps/riveter/riveter_use" blend_set="all"/>
+			<anim name="riveter_sprint_enter" 						file="anims/fps/riveter/riveter_sprint_enter" blend_set="all"/>
+			<anim name="riveter_sprint" 							file="anims/fps/riveter/riveter_sprint" blend_set="all"/>
+			<anim name="riveter_sprint_exit" 						file="anims/fps/riveter/riveter_sprint_exit" blend_set="all"/>
+			<anim name="riveter_com_down_var1" 					file="anims/fps/riveter/riveter_com_var1" blend_set="all"/>
+			<anim name="riveter_com_stop" 							file="anims/fps/riveter/riveter_com_var5" blend_set="all"/>
+			<anim name="riveter_com_come" 							file="anims/fps/riveter/riveter_com_var6" blend_set="all"/>
+			<anim name="riveter_com_point" 						file="anims/fps/riveter/riveter_com_var7" blend_set="all"/>
+			<anim name="riveter_get_up" 							file="anims/fps/riveter/riveter_get_up" blend_set="all"/>
+			<anim name="riveter_gogo" 								file="anims/fps/riveter/riveter_gogo" blend_set="all"/>
+			<anim name="riveter_tased" 							file="anims/fps/riveter/riveter_tased" blend_set="all"/>
+			<anim name="riveter_tased_boost" 						file="anims/fps/riveter/riveter_tased_boost" blend_set="all"/>
+			<anim name="riveter_tased_exit" 						file="anims/fps/riveter/riveter_tased_exit" blend_set="all"/>
+			<anim name="riveter_inspect" 							file="anims/fps/riveter/riveter_inspect" blend_set="all"/> 
+		</target>
+	</tweak>
+</tweaks>

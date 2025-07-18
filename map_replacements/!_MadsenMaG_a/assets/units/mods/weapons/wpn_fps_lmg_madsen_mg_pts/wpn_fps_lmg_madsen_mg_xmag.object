@@ -1,0 +1,26 @@
+<dynamic_object>
+    <diesel orientation_object="rp_magazine" materials="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/wpn_fps_lmg_madsen_mg_xmag" />
+    
+	<animations>
+
+		<animation_group name="reload">
+			<object name="anim_reload_spring_catch" enabled="true" />
+
+		</animation_group>
+		<animation_group name="reload_not_empty">
+			<object name="anim_reload_not_empty_spring_catch" enabled="true" />
+
+		</animation_group>
+    </animations>
+	<graphics>
+        <object name="g_bullet_1" enabled="true" />
+		<object name="g_bullet_2" enabled="true" />
+		<object name="g_bullet_3" enabled="true" />
+		<object name="g_spring_catch" enabled="true" />
+		<object name="g_spring_catch_moving_part" enabled="true" />
+
+		<object name="g_xmag" enabled="true" />
+		<object name="g_xmag_follower" enabled="true" />
+
+    </graphics>
+</dynamic_object>

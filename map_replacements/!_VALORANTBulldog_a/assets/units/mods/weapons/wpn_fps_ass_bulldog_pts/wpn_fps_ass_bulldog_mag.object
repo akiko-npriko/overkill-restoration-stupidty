@@ -1,0 +1,16 @@
+<dynamic_object>
+    <diesel orientation_object="rp_mag" materials="units/mods/weapons/wpn_fps_ass_bulldog_pts/wpn_fps_ass_bulldog_mag" />
+	<animations>
+		<animation_group name="reload">
+			<object name="a_reload" enabled="true" />
+		</animation_group>
+		<animation_group name="reload_not_empty">
+			<object name="a_reload_not_empty" enabled="true" />
+		</animation_group>
+	</animations>
+        <graphics>
+              <object name="g_mag" enabled="true" />
+              <object name="g_bullet_1" enabled="true" />
+              <object name="g_bullet_2" enabled="true" />
+        </graphics>
+</dynamic_object>

@@ -1,0 +1,177 @@
+<mod name="M41A Pulse Rifle" color="Color(0.01,0.62,0.98)">
+	<Localization directory="loc" default="english.txt"/>
+	<AssetUpdates id="36847" version="1.15" provider="modworkshop"/>
+	<GlobalValue id="xenomod" color="Color(0.7, 0.2, 0.1)"/>
+	<WeaponMod id="wpn_fps_ass_xeno_barrel" based_on="wpn_fps_ass_l85a2_b_medium" wpn_pts="wpn_fps_ass_xeno" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_ass_xeno_bolt" based_on="wpn_fps_amcar_bolt_standard" wpn_pts="wpn_fps_ass_xeno" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_ass_xeno_ironsights" based_on="wpn_fps_ass_vhs_o_standard" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" hidden="true" ver="2">
+		<stance_mod>
+			<wpn_fps_ass_xeno translation="-0.015 0 1.285"/>
+		</stance_mod>
+		<override>
+			<wpn_fps_ass_xeno_sightrail unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+		</override>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_xeno_mag" based_on="wpn_fps_pis_holt_m_standard" wpn_pts="wpn_fps_ass_xeno" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_ass_xeno_rec" based_on="wpn_fps_m4_lower_reciever" wpn_pts="wpn_fps_ass_xeno" hidden="true" ver="2">
+
+		<adds>
+			<value_node value="wpn_fps_ass_xeno_sightrail"/>
+		</adds>
+		<perks>
+			<value_node value="highlight"/>
+			<value_node value="scope"/>
+		</perks>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_xeno_sightrail" based_on="wpn_fps_shot_r870_ris_special" wpn_pts="wpn_fps_ass_xeno" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_ass_xeno_stock" based_on="wpn_fps_m16_s_solid" wpn_pts="wpn_fps_ass_xeno" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_ass_xeno_underbarrel_gl" based_on="wpn_fps_ass_contraband_gl_m203" wpn_pts="wpn_fps_ass_xeno" hidden="true" ver="2">
+		<animations bipod_reload="reload" safety_toggle="safety_toggle"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_xeno_stock_ext" based_on="wpn_fps_m16_s_solid" wpn_pts="wpn_fps_ass_xeno" ver="2">
+		<stats recoil="2" concealment="-2"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_xeno_underbarrel_sg" based_on="wpn_fps_upg_a_underbarrel_hornet" muzzleflash="effects/payday2/particles/weapons/shotgun/sho_muzzleflash_hornet" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" ver="2">
+		<custom_stats muzzleflash="effects/payday2/particles/weapons/shotgun/sho_muzzleflash_hornet" can_shoot_through_shield="true" ignore_damage_upgrades="false">
+			<sounds fire_single="hornet_fire"/>
+		</custom_stats>
+		<override>
+			<wpn_fps_ass_xeno_underbarrel_gl unit="units/mods/weapons/wpn_fps_ass_xeno_pts/wpn_fps_upg_xeno_underbarrel_sg"/>
+		</override>
+	</WeaponMod>
+	<Weapon unlock_level="37">
+		<weapon id="xeno" based_on="corgi" weapon_hold="xeno" CLIP_AMMO_MAX="40" NR_CLIPS_MAX="3" ammo_pickup="3" shell_ejection="effects/payday2/particles/weapons/shells/shell_empty" use_get_name_id="true" global_value="xenomod">
+			<stats damage="66" spread="17" spread_moving="17" recoil="20" concealment="14" suppression="10"/>
+			<fire_mode_data fire_rate="0.075"/>
+			<kick>
+				<standing>
+					<value_node value="0.7"/>
+					<value_node value="0.5"/>
+					<value_node value="-0.8"/>
+					<value_node value="0.8"/>
+				</standing>
+				<crouching>
+					<value_node value="0.6"/>
+					<value_node value="0.4"/>
+					<value_node value="-0.6"/>
+					<value_node value="0.6"/>
+				</crouching>
+				<steelsight>
+					<value_node value="0.6"/>
+					<value_node value="0.4"/>
+					<value_node value="-0.6"/>
+					<value_node value="0.6"/>
+				</steelsight>
+			</kick>
+			<sounds fire="tec9_fire_single" fire_single="tec9_fire_single" fire_auto="tec9_fire" stop_fire="tec9_stop"/>
+			<timers reload_empty="3.5" reload_not_empty="2.9"/>
+		</weapon>
+		<factory id="wpn_fps_ass_xeno" unit="units/mods/weapons/wpn_fps_ass_xeno/wpn_fps_ass_xeno">
+			<animations fire="recoil" fire_steelsight="recoil" reload="reload" reload_not_empty="reload_not_empty"/>
+			<adds/>
+			<override/>
+			<default_blueprint>
+				<value_node value="wpn_fps_ass_xeno_barrel"/>
+				<value_node value="wpn_fps_ass_xeno_bolt"/>
+				<value_node value="wpn_fps_ass_xeno_ironsights"/>
+				<value_node value="wpn_fps_ass_xeno_mag"/>
+				<value_node value="wpn_fps_ass_xeno_rec"/>
+				<value_node value="wpn_fps_ass_xeno_stock"/>
+				<value_node value="wpn_fps_ass_xeno_underbarrel_gl"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_ass_xeno_barrel"/>
+				<value_node value="wpn_fps_ass_xeno_bolt"/>
+				<value_node value="wpn_fps_ass_xeno_ironsights"/>
+				<value_node value="wpn_fps_ass_xeno_mag"/>
+				<value_node value="wpn_fps_ass_xeno_rec"/>
+				<value_node value="wpn_fps_ass_xeno_stock"/>
+				<value_node value="wpn_fps_ass_xeno_underbarrel_gl"/>
+
+				<value_node value="wpn_fps_upg_xeno_stock_ext"/>
+				<value_node value="wpn_fps_upg_xeno_underbarrel_sg"/>
+
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_v6"/>
+				<value_node value="wpn_fps_ass_shak12_ns_muzzle"/>
+				<value_node value="wpn_fps_lmg_hk51b_ns_jcomp"/>
+				<value_node value="wpn_fps_lmg_kacchainsaw_ns_muzzle"/>
+				<value_node value="wpn_fps_lmg_kacchainsaw_ns_suppressor"/>
+				<value_node value="wpn_fps_upg_o_45rds"/>
+				<value_node value="wpn_fps_upg_o_45rds_v2"/>
+				<value_node value="wpn_fps_upg_o_45steel"/>
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_specter_piggyback"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_cs_piggyback"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+				<value_node value="wpn_fps_upg_o_bmg"/>
+				<value_node value="wpn_fps_upg_o_uh"/>
+				<value_node value="wpn_fps_upg_o_fc1"/>
+				<value_node value="wpn_fps_upg_o_sig"/>
+				<value_node value="wpn_fps_upg_o_tf90"/>
+				<value_node value="wpn_fps_upg_o_poe"/>
+				<value_node value="wpn_fps_upg_o_hamr"/>
+				<value_node value="wpn_fps_upg_o_hamr_reddot"/>
+				<value_node value="wpn_fps_upg_o_atibal"/>
+				<value_node value="wpn_fps_upg_o_atibal_reddot"/>
+				<value_node value="wpn_fps_upg_o_health"/>
+			</uses_parts>
+		</factory>
+		<stance>
+			<standard>
+				<shoulders rotation="0 -0.00873526 0 -0.999962" translation="0.234 -0.769 1.438"/>
+			</standard>
+			<crouched>
+				<shoulders rotation="-0 0.0436107 -0 -0.999049" translation="-1.841 0.231 -1.768"/>
+			</crouched>
+			<steelsight>
+				<shoulders rotation="0 -0 0 -1" translation="-10.045 -7.669 1.678"/>
+			</steelsight>
+			<bipod>
+				<shoulders rotation="0 -0 0 -1" translation="-9.935 -1.669 1.678"/>
+			</bipod>
+		</stance>
+	</Weapon>
+	<AddFiles directory="assets" auto_generate="true"/>
+	<Hooks directory="hooks">
+		<hook file="newraycastweaponbase.lua" source_file="lib/units/weapons/newraycastweaponbase"/>
+		<hook file="playerstandard.lua" source_file="lib/units/beings/player/states/playerstandard"/>
+		<hook file="raycastweaponbase.lua" source_file="lib/units/weapons/raycastweaponbase"/>
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="weaponunderbarrellauncher.lua" source_file="lib/units/weapons/weaponunderbarrellauncher"/>
+	</Hooks>
+</mod>

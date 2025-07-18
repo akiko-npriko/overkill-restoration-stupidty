@@ -1,0 +1,22 @@
+<materials version="3" group="weapon_deagle">
+	<material name="mtr_body_deg50" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_body_df"/>
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_body_nm" />
+		<reflection_texture type="cubemap" global_texture="current_global_texture"/>
+    </material>
+	<material name="mtr_barrel_deg50" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_barrel_df"/>
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_barrel_nm" />
+		<reflection_texture type="cubemap" global_texture="current_global_texture"/>
+    </material>
+	<material name="mtr_grip_deg50" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_grip_df"/>
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_grip_nm" />
+		<reflection_texture type="cubemap" global_texture="current_global_texture"/>
+    </material>
+	<material name="mtr_slide_deg50" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_slide_df"/>
+		<bump_normal_texture file="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_slide_nm" />
+		<reflection_texture type="cubemap" global_texture="current_global_texture"/>
+    </material>
+</materials>

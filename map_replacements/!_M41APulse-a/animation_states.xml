@@ -1,0 +1,527 @@
+<?xml version="1.0"?>
+<tweaks>	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+		<target mode="attach">
+			<to name="underbarrel_reload_xeno" redirect="fps/reload/underbarrel/xeno"/>
+			<to name="underbarrel_reload_not_empty_xeno" redirect="fps/reload_not_empty/underbarrel/xeno"/>
+			<to name="underbarrel_enter_xeno" redirect="fps/enter/underbarrel/xeno"/>
+			<to name="underbarrel_exit_xeno" redirect="fps/exit/underbarrel/xeno"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/idle"/>
+			<anim name="m4_idle" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_idle" weight="xeno_underbarrel * (1-steelsight_weight)"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+		<target mode="append">
+
+			<state name="fps/enter/underbarrel/xeno" type="once" segment="base" speed="1.0">
+				<anim name="xeno_underbarrel_enter"/>
+				<keys>
+					<key at="trigger" trigger="wp_foley_generic_tilt" callback="play_sound" class_name="base" param1="wp_foley_generic_tilt"/>
+					<key at="trigger" trigger="selector_switch" callback="play_sound" class_name="base" param1="arbiter_push_button"/>
+					<key at="trigger" trigger="wp_foley_generic_tilt_back" callback="play_sound" class_name="base" param1="wp_foley_generic_tilt_back"/>
+				</keys>
+				<exit name="fps/idle/underbarrel/xeno"/>
+			</state>
+
+			<state name="fps/exit/underbarrel/xeno" type="once" segment="base" speed="1.0">
+				<anim name="xeno_underbarrel_exit"/>
+				<keys>
+					<key at="trigger" trigger="wp_foley_generic_tilt" callback="play_sound" class_name="base" param1="wp_foley_generic_tilt"/>
+					<key at="trigger" trigger="selector_switch" callback="play_sound" class_name="base" param1="arbiter_push_button"/>
+					<key at="trigger" trigger="wp_foley_generic_tilt_back" callback="play_sound" class_name="base" param1="wp_foley_generic_tilt_back"/>
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+
+			<state name="fps/equip/underbarrel/xeno" type="mix" segment="base" speed="1.0">
+				<anim name="xeno_underbarrel_equip"/>
+			</state>
+
+			<state name="fps/unequip/underbarrel/xeno" type="mix" segment="base" speed="1.0">
+				<anim name="xeno_underbarrel_unequip"/>
+			</state>
+
+			<state name="fps/start_running/underbarrel/xeno" type="mix" segment="base" speed="1.0">
+				<anim name="xeno_underbarrel_sprint_enter"/>
+				<exit name="fps/running/underbarrel/xeno"/>
+			</state>
+
+			<state name="fps/running/underbarrel/xeno" type="mixloop" segment="base" speed="1.0">
+				<anim name="xeno_underbarrel_sprint"/>
+			</state>
+
+			<state name="fps/stop_running/underbarrel/xeno" type="mix" segment="base" speed="2.0">
+				<anim name="xeno_underbarrel_sprint_exit"/>
+				<exit name="fps/idle/underbarrel/xeno"/>
+			</state>
+
+			<state name="fps/melee/underbarrel/xeno" type="mix" segment="base" speed="1.0">
+				<anim name="xeno_underbarrel_melee"/>
+				<keys>
+					<key at="enter" callback="anim_clbk_stop_weapon_anim" class_name="base" param1="reload"/>
+					<key at="enter" callback="play_sound" class_name="base" param1="m4_melee_attack"/>
+				</keys>
+				<exit name="fps/idle/underbarrel/xeno"/>
+			</state>
+
+			<state name="fps/melee_miss/underbarrel/xeno" type="mix" segment="base" speed="1.0">
+				<anim name="xeno_underbarrel_melee_miss"/>
+				<keys>
+					<key at="enter" callback="anim_clbk_stop_weapon_anim" class_name="base" param1="reload"/>
+					<key at="enter" callback="play_sound" class_name="base" param1="m4_melee_attack"/>
+				</keys>
+				<exit name="fps/idle/underbarrel/xeno"/>
+			</state>
+
+			<state name="fps/idle/underbarrel/xeno" type="mixloop" segment="base" speed="1.0">
+				<anim name="xeno_underbarrel_idle"/>
+			</state>
+
+			<state name="fps/recoil/underbarrel/xeno" type="mixloop" segment="base" speed="1.0">
+				<anim name="xeno_underbarrel_recoil"/>
+			</state>
+
+			<state name="fps/recoil_enter/underbarrel/xeno" type="once" segment="base" speed="1.0">
+				<anim name="xeno_underbarrel_recoil_enter"/>
+				<exit name="fps/idle/underbarrel/xeno"/>
+			</state>
+
+			<state name="fps/recoil_exit/underbarrel/xeno" type="once" segment="base" speed="1.0">
+				<anim name="xeno_underbarrel_recoil_exit"/>
+				<exit name="fps/idle/underbarrel/xeno"/>
+			</state>
+
+			<state name="fps/recoil_loop/underbarrel/xeno" type="mixloop" segment="base" speed="1.0">
+				<anim name="xeno_underbarrel_recoil_loop"/>
+			</state>
+
+			<state name="fps/reload/underbarrel/xeno" type="once" segment="base" speed="1.0">
+				<anim name="xeno_underbarrel_reload"/>
+				<keys>
+					<key at="trigger" trigger="wp_china_push_in_shell" callback="play_sound" class_name="base" param1="wp_china_push_in_shell"/>
+					<key at="trigger" trigger="wp_china_pull_handle" callback="play_sound" class_name="base" param1="wp_china_pull_handle"/>
+					<key at="trigger" trigger="wp_china_push_handle" callback="play_sound" class_name="base" param1="wp_china_push_handle"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_pull"  callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+					<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+					<key at="trigger" trigger="wp_foley_generic_tilt_back" callback="play_sound" class_name="base" param1="wp_foley_generic_tilt_back"/>
+					<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+				</keys>
+				<exit name="fps/idle/underbarrel/xeno"/>
+			</state>
+			
+			<state name="fps/reload_not_empty/underbarrel/xeno" type="once" segment="base" speed="1.0">
+				<anim name="xeno_underbarrel_reload_not_empty"/>
+				<keys>
+					<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+				</keys>
+				<exit name="fps/idle/underbarrel/xeno"/>
+			</state>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/equip"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_equip" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/unequip"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_unequip" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil"/>
+			<anim name="m4_recoil" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_recoil" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil_steelsight"/>
+			<anim name="m4_recoil" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_recoil" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil_enter"/>
+			<anim name="m4_recoil_enter" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_recoil_enter" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil_loop"/>
+			<anim name="m4_recoil_loop" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_recoil_loop" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil_exit"/>
+			<anim name="m4_recoil_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_recoil_exit" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/start_running"/>
+			<anim name="m4_sprint_enter" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_sprint_enter" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/running"/>
+			<anim name="m4_sprint" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_sprint" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/stop_running"/>
+			<anim name="m4_sprint_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_sprint_exit" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_unequip" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee_exit"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_equip" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee"/>
+			<anim name="m4_melee" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_melee" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee_miss"/>
+			<anim name="m4_melee_miss" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_melee_miss" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/use"/>
+			<anim name="m4_use" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_use" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/down"/>
+			<anim name="m4_com_down_var1" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_com_down" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/stop"/>
+			<anim name="m4_com_stop" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_com_stop" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/come"/>
+			<anim name="m4_com_come" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_com_come" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/point"/>
+			<anim name="m4_com_point" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_com_point" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/get_up"/>
+			<anim name="m4_get_up" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_get_up" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/gogo"/>
+			<anim name="m4_gogo" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_gogo" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_projectile_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_unequip" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_projectile_exit"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_equip" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_grenade_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_unequip" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_molotov_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_unequip" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_concussion_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_unequip" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_dada_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_unequip" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_grenade_exit"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_equip" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/tased"/>
+			<anim name="m4_tased" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_tased" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/tased_boost"/>
+			<anim name="m4_tased_boost" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_tased_boost" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/tased_exit"/>
+			<anim name="m4_tased_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_tased_exit" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/enter_tazer_counter"/>
+			<anim name="m4_tased_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_tased_exit" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/cash_inspect"/>
+			<anim name="glock_inspect" weight="glock"/>
+		</search>
+		<target mode="append">
+			<anim name="xeno_underbarrel_inspect" weight="xeno_underbarrel"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/cash_inspect"/>
+			<anim name="xeno_idle" weight="xeno"/>
+		</search>
+		<target mode="replace">
+			<anim name="xeno_inspect" weight="xeno"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/cash_inspect"/>
+			<keys/>
+			<key at="exit" set_extension="anim_data" extension_key="cash_inspecting" extension_value="false"/>
+		</search>
+		<target mode="append">
+			<key at="trigger" trigger="wp_xeno_mag_slap_in" callback="play_sound" class_name="base" param1="wp_xeno_mag_slap_in"/>
+		</target>
+	</tweak>
+</tweaks>

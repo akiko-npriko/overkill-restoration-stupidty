@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+		<target mode="append">
+			<state name="fps/reload/bk500_spin1" type="once" segment="base" speed="1.0">
+			<anim name="bk500_spin1_reload"/>
+				<keys>
+					<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>	
+					<key at="trigger" trigger="wp_chinchilla_thumb" callback="play_sound" class_name="base" param1="wp_swhiskey_thumb"/>
+					<key at="trigger" trigger="wp_chinchilla_cylinder_out" callback="play_sound" class_name="base" param1="wp_swhiskey_cylinder_out"/>
+					<key at="trigger" trigger="wp_chinchilla_eject_shells" callback="play_sound" class_name="base" param1="wp_swhiskey_eject_shells"/>
+					<key at="trigger" trigger="wp_chinchilla_hand_up" callback="play_sound" class_name="base" param1="wp_swhiskey_hand_up"/>
+					<key at="trigger" trigger="wp_chinchilla_hand_down" callback="play_sound" class_name="base" param1="wp_swhiskey_hand_down"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_throw"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+					<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
+					<key at="trigger" trigger="wp_clip_generic_pist_center" callback="play_sound" class_name="base" param1="wp_clip_generic_pist_center"/>
+					<key at="trigger" trigger="wp_chinchilla_insert" callback="play_sound" class_name="base" param1="wp_swhiskey_insert"/>
+					<key at="trigger" trigger="wp_chinchilla_twist" callback="play_sound" class_name="base" param1="wp_swhiskey_twist"/>
+					<key at="trigger" trigger="wp_chinchilla_cylinder_in" callback="play_sound" class_name="base" param1="wp_swhiskey_cylinder_in"/>
+					<key at="trigger" trigger="wp_chinchilla_end_foley" callback="play_sound" class_name="base" param1="wp_swhiskey_end_foley"/>
+					<key at="trigger" trigger="wp_lemming_mantle_forward" callback="play_sound" class_name="base" param1="wp_lemming_mantle_forward"/>
+					<key at="trigger" trigger="wp_rbull_shell_hit_ground" callback="play_sound" class_name="base" param1="wp_swhiskey_shell_hit_ground"/>
+					
+					<key at="trigger" trigger="rjc_spin" callback="play_sound" class_name="base" param1="wp_swhiskey_spin"/>
+					<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+
+			<state name="fps/reload/bk500_spin2" type="once" segment="base" speed="1.0">
+			<anim name="bk500_spin2_reload"/>
+				<keys>
+					<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>	
+					<key at="trigger" trigger="wp_chinchilla_thumb" callback="play_sound" class_name="base" param1="wp_swhiskey_thumb"/>
+					<key at="trigger" trigger="wp_chinchilla_cylinder_out" callback="play_sound" class_name="base" param1="wp_swhiskey_cylinder_out"/>
+					<key at="trigger" trigger="wp_chinchilla_eject_shells" callback="play_sound" class_name="base" param1="wp_swhiskey_eject_shells"/>
+					<key at="trigger" trigger="wp_chinchilla_hand_up" callback="play_sound" class_name="base" param1="wp_swhiskey_hand_up"/>
+					<key at="trigger" trigger="wp_chinchilla_hand_down" callback="play_sound" class_name="base" param1="wp_swhiskey_hand_down"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_throw"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+					<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
+					<key at="trigger" trigger="wp_clip_generic_pist_center" callback="play_sound" class_name="base" param1="wp_clip_generic_pist_center"/>
+					<key at="trigger" trigger="wp_chinchilla_insert" callback="play_sound" class_name="base" param1="wp_swhiskey_insert"/>
+					<key at="trigger" trigger="wp_chinchilla_twist" callback="play_sound" class_name="base" param1="wp_swhiskey_twist"/>
+					<key at="trigger" trigger="wp_chinchilla_cylinder_in" callback="play_sound" class_name="base" param1="wp_swhiskey_cylinder_in"/>
+					<key at="trigger" trigger="wp_chinchilla_end_foley" callback="play_sound" class_name="base" param1="wp_swhiskey_end_foley"/>
+					<key at="trigger" trigger="wp_lemming_mantle_forward" callback="play_sound" class_name="base" param1="wp_lemming_mantle_forward"/>
+					<key at="trigger" trigger="wp_rbull_shell_hit_ground" callback="play_sound" class_name="base" param1="wp_swhiskey_shell_hit_ground"/>
+					
+					<key at="trigger" trigger="rjc_spin" callback="play_sound" class_name="base" param1="wp_swhiskey_spin"/>
+					<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+
+			<state name="fps/reload/bk500_spin3" type="once" segment="base" speed="1.0">
+			<anim name="bk500_spin3_reload"/>
+				<keys>
+					<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>	
+					<key at="trigger" trigger="wp_chinchilla_thumb" callback="play_sound" class_name="base" param1="wp_swhiskey_thumb"/>
+					<key at="trigger" trigger="wp_chinchilla_cylinder_out" callback="play_sound" class_name="base" param1="wp_swhiskey_cylinder_out"/>
+					<key at="trigger" trigger="wp_chinchilla_eject_shells" callback="play_sound" class_name="base" param1="wp_swhiskey_eject_shells"/>
+					<key at="trigger" trigger="wp_chinchilla_hand_up" callback="play_sound" class_name="base" param1="wp_swhiskey_hand_up"/>
+					<key at="trigger" trigger="wp_chinchilla_hand_down" callback="play_sound" class_name="base" param1="wp_swhiskey_hand_down"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_throw"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+					<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
+					<key at="trigger" trigger="wp_clip_generic_pist_center" callback="play_sound" class_name="base" param1="wp_clip_generic_pist_center"/>
+					<key at="trigger" trigger="wp_chinchilla_insert" callback="play_sound" class_name="base" param1="wp_swhiskey_insert"/>
+					<key at="trigger" trigger="wp_chinchilla_twist" callback="play_sound" class_name="base" param1="wp_swhiskey_twist"/>
+					<key at="trigger" trigger="wp_chinchilla_cylinder_in" callback="play_sound" class_name="base" param1="wp_swhiskey_cylinder_in"/>
+					<key at="trigger" trigger="wp_chinchilla_end_foley" callback="play_sound" class_name="base" param1="wp_swhiskey_end_foley"/>
+					<key at="trigger" trigger="wp_lemming_mantle_forward" callback="play_sound" class_name="base" param1="wp_lemming_mantle_forward"/>
+					<key at="trigger" trigger="wp_rbull_shell_hit_ground" callback="play_sound" class_name="base" param1="wp_swhiskey_shell_hit_ground"/>
+					
+					<key at="trigger" trigger="rjc_spin" callback="play_sound" class_name="base" param1="wp_swhiskey_spin"/>
+					<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+
+		</target>
+	</tweak>
+	
+	<!--Redirects-->
+				
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+		<target mode="attach">
+
+			<to name="reload_bk500_spin" 					redirect="fps/reload/bk500_spin1"/>
+			<to name="reload_bk500_spin" 					redirect="fps/reload/bk500_spin2"/>
+			<to name="reload_bk500_spin" 					redirect="fps/reload/bk500_spin3"/>
+
+			<to name="reload_not_empty_bk500_spin" 			redirect="fps/reload/bk500_spin1"/>
+			<to name="reload_not_empty_bk500_spin" 			redirect="fps/reload/bk500_spin2"/>
+			<to name="reload_not_empty_bk500_spin" 			redirect="fps/reload/bk500_spin3"/>
+			
+		</target>
+		
+	</tweak>
+</tweaks>

@@ -1,0 +1,331 @@
+<mod name="MW2023 Origin-12" author="HyHylie and 90% Wolf">
+
+	<Localization directory="loc" default="english.txt"/>
+
+	<asset_updates id="50784" version="1.1a" provider="modworkshop"/>
+
+	<GlobalValue id="commissioned_mod" color="Color(0.9, 0.17, 0.31)"/>
+
+	<AddFiles directory="assets" auto_generate="true"/>
+
+	<Hooks directory="hooks">	
+		<hook file="newraycastweaponbase.lua"  source_file="lib/units/weapons/newraycastweaponbase"/> 
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>	
+	</Hooks>
+
+	<Sounds directory="assets/sounds">
+		<sound id="haymaker_fire" path="haymaker_fire_reg.ogg" prefix="regular"/>
+		<sound id="haymaker_fire" path="haymaker_fire_reg.ogg" prefix="regular_b"/>
+		<sound id="haymaker_fire" path="haymaker_fire_reg.ogg" prefix="regular_c"/>
+		<sound id="haymaker_fire" path="haymaker_fire_sil.ogg"  prefix="suppressed_a"/>
+		<sound id="haymaker_fire" path="haymaker_fire_sil.ogg"  prefix="suppressed_b"/>
+		<sound id="haymaker_fire" path="haymaker_fire_sil.ogg"  prefix="suppressed_c"/>
+
+		<sound id="haymaker_back_in_hand"		 		 path="haymaker_back_in_hand.ogg" prefix="first"/>
+		<sound id="haymaker_back_in_hand" 				 path="haymaker_back_in_hand.ogg" prefix="third"/>
+		<sound id="haymaker_drum_contact"				 path="haymaker_drum_contact.ogg" prefix="first"/>
+		<sound id="haymaker_drum_contact" 	 			 path="haymaker_drum_contact.ogg" prefix="third"/> 
+		<sound id="haymaker_drum_impact_floor"		 path="haymaker_drum_impact_floor.ogg" prefix="first"/>
+		<sound id="haymaker_drum_impact_floor" 	 path="haymaker_drum_impact_floor.ogg" prefix="third"/> 
+		<sound id="haymaker_drum_in"				 path="haymaker_drum_in.ogg" prefix="first"/>
+		<sound id="haymaker_drum_in" 	 			 path="haymaker_drum_in.ogg" prefix="third"/> 
+		<sound id="haymaker_drum_in_contact"		 path="haymaker_drum_in_contact.ogg" prefix="first"/>
+		<sound id="haymaker_drum_in_contact" 	 	 path="haymaker_drum_in_contact.ogg" prefix="third"/> 
+		<sound id="haymaker_drum_in_contact_tactical"		 path="haymaker_drum_in_contact_tactical.ogg" prefix="first"/>
+		<sound id="haymaker_drum_in_contact_tactical" 	 	 path="haymaker_drum_in_contact_tactical.ogg" prefix="third"/> 
+		<sound id="haymaker_drum_in_tactical"		 path="haymaker_drum_in_tactical.ogg" prefix="first"/>
+		<sound id="haymaker_drum_in_tactical" 	 	 path="haymaker_drum_in_tactical.ogg" prefix="third"/> 
+		<sound id="haymaker_drum_out"				 path="haymaker_drum_out.ogg" prefix="first"/>
+		<sound id="haymaker_drum_out" 	 			 path="haymaker_drum_out.ogg" prefix="third"/> 
+		<sound id="haymaker_drum_smack"		 path="haymaker_drum_smack.ogg" prefix="first"/>
+		<sound id="haymaker_drum_smack" 	 	 path="haymaker_drum_smack.ogg" prefix="third"/> 
+		<sound id="haymaker_generic_drum_grab"			 path="haymaker_generic_drum_grab.ogg" prefix="first"/>
+		<sound id="haymaker_generic_drum_grab" 	 	 path="haymaker_generic_drum_grab.ogg" prefix="third"/> 
+		<sound id="haymaker_generic_drum_in_connect"		 path="haymaker_generic_drum_in_connect.ogg" prefix="first"/>
+		<sound id="haymaker_generic_drum_in_connect" 	 	 path="haymaker_generic_drum_in_connect.ogg" prefix="third"/> 
+		<sound id="haymaker_generic_drum_in_connect_tactical"		 path="haymaker_generic_drum_in_connect_tactical.ogg" prefix="first"/>
+		<sound id="haymaker_generic_drum_in_connect_tactical" 	 	 path="haymaker_generic_drum_in_connect_tactical.ogg" prefix="third"/> 
+		<sound id="haymaker_generic_drum_take_new"			 path="haymaker_generic_drum_take_new.ogg" prefix="first"/>
+		<sound id="haymaker_generic_drum_take_new" 	 	 path="haymaker_generic_drum_take_new.ogg" prefix="third"/> 
+		<sound id="haymaker_generic_drum_throw"		 path="haymaker_generic_drum_throw.ogg" prefix="first"/>
+		<sound id="haymaker_generic_drum_throw" 	 	 path="haymaker_generic_drum_throw.ogg" prefix="third"/> 
+		<sound id="haymaker_generic_mag_grab"		 path="haymaker_generic_mag_grab.ogg" prefix="first"/>
+		<sound id="haymaker_generic_mag_grab" 	 	 path="haymaker_generic_mag_grab.ogg" prefix="third"/> 
+		<sound id="haymaker_generic_mag_take_new"		 path="haymaker_generic_mag_take_new.ogg" prefix="first"/>
+		<sound id="haymaker_generic_mag_take_new" 	 	 path="haymaker_generic_mag_take_new.ogg" prefix="third"/> 
+		<sound id="haymaker_generic_mag_throw"		 path="haymaker_generic_mag_throw.ogg" prefix="first"/>
+		<sound id="haymaker_generic_mag_throw" 	  path="haymaker_generic_mag_throw.ogg" prefix="third"/> 
+		<sound id="haymaker_lever_grab"		 path="haymaker_lever_grab.ogg" prefix="first"/>
+		<sound id="haymaker_lever_grab" 	 	 path="haymaker_lever_grab.ogg" prefix="third"/> 
+		<sound id="haymaker_lever_pull"		 path="haymaker_lever_pull.ogg" prefix="first"/>
+		<sound id="haymaker_lever_pull" 	 	 path="haymaker_lever_pull.ogg" prefix="third"/> 
+		<sound id="haymaker_lever_release"		 path="haymaker_lever_release.ogg" prefix="first"/>
+		<sound id="haymaker_lever_release" 	 	 path="haymaker_lever_release.ogg" prefix="third"/> 		
+		<sound id="haymaker_mag_contact"		 path="haymaker_mag_contact.ogg" prefix="first"/>
+		<sound id="haymaker_mag_contact" 	 	 path="haymaker_mag_contact.ogg" prefix="third"/> 
+		<sound id="haymaker_mag_impact_floor"			 path="haymaker_mag_impact_floor.ogg" prefix="first"/>
+		<sound id="haymaker_mag_impact_floor" 	 		path="haymaker_mag_impact_floor.ogg" prefix="third"/> 
+		<sound id="haymaker_mag_in"			 path="haymaker_mag_in.ogg" prefix="first"/>
+		<sound id="haymaker_mag_in" 	 		path="haymaker_mag_in.ogg" prefix="third"/> 
+		<sound id="haymaker_mag_out"		 path="haymaker_mag_out.ogg" prefix="first"/>
+		<sound id="haymaker_mag_out" 	 		path="haymaker_mag_out.ogg" prefix="third"/> 
+		<sound id="haymaker_mag_out_tactical"	path="haymaker_mag_out_tactical.ogg" prefix="first"/>
+		<sound id="haymaker_mag_out_tactical" 	path="haymaker_mag_out_tactical.ogg" prefix="third"/> 
+		<sound id="haymaker_tilt"				 path="haymaker_tilt.ogg" prefix="first"/>
+		<sound id="haymaker_tilt" 				 path="haymaker_tilt.ogg" prefix="third"/>
+		<sound id="haymaker_tilt_back"		 	 path="haymaker_tilt_back.ogg" prefix="first"/>
+		<sound id="haymaker_tilt_back" 		 path="haymaker_tilt_back.ogg" prefix="third"/>
+		
+	</Sounds> 
+
+	<!-- Haymaker - Default Parts -->
+
+	<WeaponMod id="wpn_fps_sho_haymaker_b_std" type="barrel" based_on="wpn_fps_ass_flint_b_standard" unit="units/mods/weapons/wpn_fps_sho_haymaker_pts/wpn_fps_sho_haymaker_b_std" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_sho_haymaker_body_std" type="upper_reciever" based_on="wpn_fps_ass_flint_body_upperreceiver" unit="units/mods/weapons/wpn_fps_sho_haymaker_pts/wpn_fps_sho_haymaker_body_std" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_sho_haymaker_dh_std" type="drag_handle" based_on="wpn_fps_ass_flint_dh_standard" unit="units/mods/weapons/wpn_fps_sho_haymaker_pts/wpn_fps_sho_haymaker_dh_std" hidden="true" ver="2">
+			<animations fire="recoil" fire_steelsight="recoil" reload="reload"/>
+    </WeaponMod>
+
+	<WeaponMod id="wpn_fps_sho_haymaker_fg_std" type="foregrip" based_on="wpn_fps_ass_flint_fg_standard" unit="units/mods/weapons/wpn_fps_sho_haymaker_pts/wpn_fps_sho_haymaker_fg_std" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_sho_haymaker_fg_pd3" type="foregrip" based_on="wpn_fps_ass_flint_fg_standard" unit="units/mods/weapons/wpn_fps_sho_haymaker_pts/wpn_fps_sho_haymaker_fg_pd3" hidden="false" global_value="commissioned_mod" ver="2">
+			<override>
+				<wpn_fps_sho_haymaker_o_std unit="units/mods/weapons/wpn_fps_sho_haymaker_pts/wpn_fps_sho_haymaker_o_pd3"/>
+				<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="foregrip" a_obj="a_fl"/>
+				<wpn_fps_upg_fl_ass_smg_sho_surefire parent="foregrip" a_obj="a_fl"/>
+				<wpn_fps_upg_fl_ass_peq15 parent="foregrip" a_obj="a_fl"/>
+				<wpn_fps_upg_fl_ass_laser parent="foregrip" a_obj="a_fl"/>
+				<wpn_fps_upg_fl_ass_utg parent="foregrip" a_obj="a_fl"/>
+				<wpn_fps_upg_fl_dbal_laser parent="foregrip" a_obj="a_fl"/>
+			</override>
+    </WeaponMod>
+
+	<WeaponMod id="wpn_fps_sho_haymaker_g_std" type="grip" based_on="wpn_fps_ass_flint_g_standard" unit="units/mods/weapons/wpn_fps_sho_haymaker_pts/wpn_fps_sho_haymaker_g_std" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_sho_haymaker_m_20rnd" type="magazine" a_obj="a_m_drum" based_on="wpn_fps_ass_flint_m_standard" unit="units/mods/weapons/wpn_fps_sho_haymaker_pts/wpn_fps_sho_haymaker_m_20rnd" hidden="true" ver="2">
+			<bullet_objects prefix="g_shell_" amount="2"/>
+    </WeaponMod>
+
+	<WeaponMod id="wpn_fps_sho_haymaker_o_std" type="sight" based_on="wpn_fps_ass_flint_o_standard" unit="units/mods/weapons/wpn_fps_sho_haymaker_pts/wpn_fps_sho_haymaker_o_std" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_sho_haymaker_s_std" type="stock" based_on="wpn_fps_ass_flint_s_standard" unit="units/mods/weapons/wpn_fps_sho_haymaker_pts/wpn_fps_sho_haymaker_s_std" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_sho_haymaker_sa_std" type="stock_adapter" based_on="wpn_fps_upg_m4_s_adapter" unit="units/mods/weapons/wpn_fps_sho_haymaker_pts/wpn_fps_sho_haymaker_sa_std" hidden="true" ver="2"/>
+
+    <!-- Haymaker - Magazines -->
+
+	<WeaponMod id="wpn_fps_sho_haymaker_m_5rnd" type="magazine" based_on="wpn_fps_ass_flint_m_standard" unit="units/mods/weapons/wpn_fps_sho_haymaker_pts/wpn_fps_sho_haymaker_m_5rnd" hidden="false" global_value="commissioned_mod" ver="2">
+			<stats extra_ammo="-7" concealment="3"/>
+			<bullet_objects prefix="g_shell_" amount="2"/>
+			<override>
+				<wpn_fps_sho_haymaker_dh_std unit="units/mods/weapons/wpn_fps_sho_haymaker_pts/wpn_fps_sho_haymaker_dh_std_stick"/>
+			</override>
+    </WeaponMod>
+
+	<WeaponMod id="wpn_fps_sho_haymaker_m_8rnd" type="magazine" based_on="wpn_fps_ass_flint_m_standard" unit="units/mods/weapons/wpn_fps_sho_haymaker_pts/wpn_fps_sho_haymaker_m_8rnd" hidden="false" global_value="commissioned_mod" ver="2">
+			<stats extra_ammo="-6" concealment="2"/>
+			<bullet_objects prefix="g_shell_" amount="2"/>
+			<override>
+				<wpn_fps_sho_haymaker_dh_std unit="units/mods/weapons/wpn_fps_sho_haymaker_pts/wpn_fps_sho_haymaker_dh_std_stick"/>
+			</override>
+    </WeaponMod>
+
+	<WeaponMod id="wpn_fps_sho_haymaker_m_30rnd_pd3" type="magazine" a_obj="a_m_drum" based_on="wpn_fps_ass_flint_m_standard" unit="units/mods/weapons/wpn_fps_sho_haymaker_pts/wpn_fps_sho_haymaker_m_30rnd_pd3" hidden="false" global_value="commissioned_mod" ver="2">
+			<stats extra_ammo="6" concealment="-2"/>
+			<bullet_objects prefix="g_shell_" amount="32"/>
+    </WeaponMod>
+
+    <!-- Haymaker - Barrels -->
+
+	<WeaponMod id="wpn_fps_sho_haymaker_b_long" type="barrel" based_on="wpn_fps_ass_flint_b_standard" unit="units/mods/weapons/wpn_fps_sho_haymaker_pts/wpn_fps_sho_haymaker_b_long" hidden="false" global_value="commissioned_mod" ver="2">
+			<stats damage="2" spread="1" recoil="2" concealment="-2"/>
+    </WeaponMod>
+
+	<WeaponMod id="wpn_fps_sho_haymaker_b_short" type="barrel" based_on="wpn_fps_ass_flint_b_standard" unit="units/mods/weapons/wpn_fps_sho_haymaker_pts/wpn_fps_sho_haymaker_b_short" hidden="false" global_value="commissioned_mod" ver="2">
+			<stats damage="2" spread="-1" recoil="-1" concealment="2"/>
+    </WeaponMod>
+
+	<!-- Haymaker - Stocks (only 1 unless the commissioner asks for more) -->
+
+	<WeaponMod id="wpn_fps_sho_haymaker_s_no" type="stock" based_on="wpn_fps_ass_flint_s_standard" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" hidden="false" global_value="commissioned_mod" ver="2">
+			<stats recoil="-2" concealment="2"/>
+			<override>
+				<wpn_fps_sho_haymaker_sa_std unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+			</override>
+    </WeaponMod>
+
+	<!-- Haymaker - Factory -->
+
+	<Weapon unlock_level="24">
+
+		<weapon id="haymaker" based_on="sko12" weapon_hold="haymaker_drum" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="8" has_description="true" desc_id="bm_w_haymaker_desc" texture_bundle_folder="mods" muzzleflash="effects/payday2/particles/weapons/762_auto_fps" shell_ejection="effects/payday2/particles/weapons/shells/shell_slug" global_value="commissioned_mod">
+
+			<stats damage="65" spread="8" spread_moving="7" recoil="12" concealment="8"/>
+
+			<fire_mode_data fire_rate="0.2230483271375465"/>
+
+				<AMMO_PICKUP>
+					<value_node value="3.00"/>
+					<value_node value="4.00"/>
+				</AMMO_PICKUP>
+
+				<kick>
+				<standing>
+					<value_node value="1.1"/>
+					<value_node value="1.2"/>
+					<value_node value="-0.4"/>
+					<value_node value="0.4"/>
+				</standing>
+				<crouching>
+					<value_node value="1.0"/>
+					<value_node value="1.1"/>
+					<value_node value="-0.4"/>
+					<value_node value="0.4"/>
+				</crouching>
+				<steelsight>
+					<value_node value="0.7"/>
+					<value_node value="0.8"/>
+					<value_node value="-0.2"/>
+					<value_node value="0.4"/>
+				</steelsight>
+				</kick>
+		
+			<sounds fire="haymaker_fire" fire_auto="haymaker_fire" fire_single="haymaker_fire" use_fix="true"/>
+
+			<timers reload_empty="3.60" reload_not_empty="3.10"/>
+
+			<animations reload="reload" reload_not_empty="reload_not_empty" reload_name_id="haymaker_drum"/>
+
+		</weapon>
+
+		<factory id="wpn_fps_sho_haymaker" unit="units/mods/weapons/wpn_fps_sho_haymaker/wpn_fps_sho_haymaker" stock_adapter="wpn_fps_sho_haymaker_sa_std">
+
+			<animations fire="recoil" fire_steelsight="recoil" magazine_empty="last_recoil" reload="reload" reload_not_empty="reload_not_empty"/>
+
+            <adds/>
+
+			<override>
+				<wpn_fps_upg_m4_s_crane a_obj="a_s_pd2"/>
+				<wpn_fps_upg_m4_s_mk46 a_obj="a_s_pd2"/>
+				<wpn_fps_snp_tti_s_vltor a_obj="a_s_pd2_2"/>
+				<wpn_fps_snp_victor_s_mod0 a_obj="a_s_pd2_2"/>
+				<wpn_fps_sho_sko12_stock a_obj="a_s_pd2"/>
+				<wpn_fps_upg_m4_s_standard a_obj="a_s_pd2"/>
+			</override>
+
+			<default_blueprint>
+				<value_node value="wpn_fps_sho_haymaker_b_std"/>
+				<value_node value="wpn_fps_sho_haymaker_body_std"/>
+				<value_node value="wpn_fps_sho_haymaker_dh_std"/>
+				<value_node value="wpn_fps_sho_haymaker_fg_std"/>
+				<value_node value="wpn_fps_sho_haymaker_g_std"/>
+				<value_node value="wpn_fps_sho_haymaker_m_20rnd"/>
+				<value_node value="wpn_fps_sho_haymaker_o_std"/>
+				<value_node value="wpn_fps_sho_haymaker_s_std"/>
+				<value_node value="wpn_fps_sho_haymaker_sa_std"/>
+			</default_blueprint>
+
+			<uses_parts>
+				<value_node value="wpn_fps_sho_haymaker_b_std"/>
+				<value_node value="wpn_fps_sho_haymaker_body_std"/>
+				<value_node value="wpn_fps_sho_haymaker_dh_std"/>
+				<value_node value="wpn_fps_sho_haymaker_fg_std"/>
+				<value_node value="wpn_fps_sho_haymaker_g_std"/>
+				<value_node value="wpn_fps_sho_haymaker_m_20rnd"/>
+				<value_node value="wpn_fps_sho_haymaker_o_std"/>
+				<value_node value="wpn_fps_sho_haymaker_s_std"/>
+				<value_node value="wpn_fps_sho_haymaker_sa_std"/>
+
+				<value_node value="wpn_fps_sho_haymaker_fg_pd3"/>
+
+				<value_node value="wpn_fps_sho_haymaker_b_long"/>
+				<value_node value="wpn_fps_sho_haymaker_b_short"/>
+
+				<value_node value="wpn_fps_sho_haymaker_m_5rnd"/>
+				<value_node value="wpn_fps_sho_haymaker_m_8rnd"/>
+				<value_node value="wpn_fps_sho_haymaker_m_30rnd_pd3"/>
+
+				<value_node value="wpn_fps_sho_haymaker_s_no"/>
+
+				<value_node value="wpn_fps_upg_i_autofire"/>
+				<value_node value="wpn_fps_upg_i_singlefire"/>
+
+				<value_node value="wpn_fps_upg_a_slug"/>
+			    <value_node value="wpn_fps_upg_a_custom"/>
+		    	<value_node value="wpn_fps_upg_a_custom_free"/>
+		    	<value_node value="wpn_fps_upg_a_explosive"/>
+				<value_node value="wpn_fps_upg_a_rip"/>
+		     	<value_node value="wpn_fps_upg_a_piercing"/>
+		     	<value_node value="wpn_fps_upg_a_dragons_breath"/>
+
+				<value_node value="wpn_fps_upg_ns_shot_thick"/>
+				<value_node value="wpn_fps_upg_ns_shot_shark"/>
+				<value_node value="wpn_fps_upg_shot_ns_king"/>
+				<value_node value="wpn_fps_upg_ns_sho_salvo_large"/>
+				<value_node value="wpn_fps_upg_ns_duck"/>
+
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_specter_steelsight"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_bmg"/>
+				<value_node value="wpn_fps_upg_o_uh"/>
+				<value_node value="wpn_fps_upg_o_fc1"/>
+				<value_node value="wpn_fps_upg_o_tf90"/>
+				<value_node value="wpn_fps_upg_o_poe"/>
+				<value_node value="wpn_fps_upg_o_hamr"/>
+				<value_node value="wpn_fps_upg_o_hamr_steelsight"/>
+				<value_node value="wpn_fps_upg_o_atibal"/>
+				<value_node value="wpn_fps_upg_o_atibal_steelsight"/>
+				<value_node value="wpn_fps_upg_o_health"/>
+
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+				<value_node value="wpn_fps_upg_o_sig"/>
+				<value_node value="wpn_fps_upg_o_45rds"/>
+				<value_node value="wpn_fps_upg_o_45rds_v2"/>
+				<value_node value="wpn_fps_upg_o_45steel"/>
+
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/>
+
+				<value_node value="wpn_fps_upg_m4_s_crane"/>
+				<value_node value="wpn_fps_upg_m4_s_mk46"/>
+				<value_node value="wpn_fps_snp_tti_s_vltor"/>
+				<value_node value="wpn_fps_sho_sko12_stock"/>
+				<value_node value="wpn_fps_snp_victor_s_mod0"/>
+				<value_node value="wpn_fps_upg_m4_s_standard"/>
+			</uses_parts>
+
+		</factory>
+
+	    <stance>			
+			<standard>
+				<shoulders rotation="-0.000703316 0.0490945 0.000904497 -0.998793" translation="-0.036 3.157 -7.13"/>
+			</standard>
+			<crouched> 
+				<shoulders rotation="-0.000686138 0.0665184 0.000890469 -0.997785" translation="-0.036 3.343 -7.19"/>
+			</crouched>
+			<steelsight>
+				<shoulders rotation="-0.000313772 0.00548033 6.80904e-005 -0.999985" translation="-7.425 -1.157 -2.31"/>
+			</steelsight>
+		</stance>
+
+	</Weapon>
+</mod>

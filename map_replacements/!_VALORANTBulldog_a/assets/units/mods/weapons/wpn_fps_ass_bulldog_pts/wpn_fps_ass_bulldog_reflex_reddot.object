@@ -1,0 +1,21 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_ass_bulldog_pts/wpn_fps_ass_bulldog_reflex_reddot" orientation_object="rp_valo_reflex" />
+	<animations>
+		<animation_group name="flip_up">
+		  <object name="anim_ads_left_up" enabled="true" />
+		  <object name="anim_ads_right_up" enabled="true" />
+		</animation_group>		
+		<animation_group name="flip_down">
+		  <object name="anim_ads_left_down" enabled="true" />
+		  <object name="anim_ads_right_down" enabled="true" />
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_base" enabled="true" />
+		<object name="g_ads_left" enabled="true" />
+		<object name="g_ads_right" enabled="true" />
+
+		<object name="g_dot" enabled="true" />
+		<object name="g_base_glass" enabled="false" />
+	</graphics>
+</dynamic_object>

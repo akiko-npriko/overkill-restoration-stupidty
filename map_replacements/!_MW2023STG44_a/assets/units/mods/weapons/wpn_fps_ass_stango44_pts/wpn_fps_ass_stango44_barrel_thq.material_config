@@ -1,0 +1,15 @@
+<materials version="3" group="weapon_group">
+    <material name="mtr_stango44_barrel" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_ass_stango44_pts/textures/stango44_barrel_df" mip="1"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_ass_stango44_pts/textures/stango44_barrel_nm" mip="1"/>
+    </material>
+  	<material name="mtr_stango44_handguard" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_ass_stango44_pts/textures/stango44_handguard_df" mip="1"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_ass_stango44_pts/textures/stango44_handguard_nm" mip="1"/>
+        <material_texture	 file="units/mods/weapons/wpn_fps_ass_stango44_pts/textures/stango44_handguard_gsma" mip="1"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_ass_stango44_pts/textures/weapon_metal_cubemap"/>
+    </material>	
+
+
+
+</materials>

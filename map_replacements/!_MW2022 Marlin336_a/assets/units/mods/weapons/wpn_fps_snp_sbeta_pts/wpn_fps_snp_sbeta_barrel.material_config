@@ -1,0 +1,21 @@
+<materials version="3" group="weapon_tti">
+	<material name="mtr_sbeta_barrel" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_snp_sbeta_pts/textures/sbeta_barrel_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_snp_sbeta_pts/textures/sbeta_barrel_nm"/>
+        <material_texture	 file="units/mods/weapons/wpn_fps_snp_sbeta_pts/textures/sbeta_barrel_gsma"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_snp_sbeta_pts/textures/weapon_metal_cubemap"/>
+    </material>	
+	<material name="mtr_sbeta_mag" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_snp_sbeta_pts/textures/sbeta_magazine_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_snp_sbeta_pts/textures/sbeta_magazine_nm"/>
+        <material_texture	 file="units/mods/weapons/wpn_fps_snp_sbeta_pts/textures/sbeta_magazine_gsma"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_snp_sbeta_pts/textures/weapon_metal_cubemap"/>
+    </material>	
+	<material name="mtr_sbeta_sights" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_snp_sbeta_pts/textures/sbeta_sights_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_snp_sbeta_pts/textures/sbeta_sights_nm"/>
+        <material_texture	 file="units/mods/weapons/wpn_fps_snp_sbeta_pts/textures/sbeta_sights_gsma"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_snp_sbeta_pts/textures/weapon_metal_cubemap"/>
+    </material>	
+	
+</materials>

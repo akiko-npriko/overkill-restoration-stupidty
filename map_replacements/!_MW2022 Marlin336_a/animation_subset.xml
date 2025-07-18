@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+			
+		<target mode="attach">
+			<anim name="sbeta_idle" 					file="anims/fps/winchester1874/winchester1874_idle" blend_set="all"/>
+			
+			<anim name="sbeta_reload" 					file="anims/fps/sbeta/sbeta_reload_enter" blend_set="all"/>
+			<anim name="sbeta_reload_not_empty" 		file="anims/fps/sbeta/sbeta_reload_enter" blend_set="all"/>
+			<anim name="sbeta_reload_enter" 			file="anims/fps/sbeta/sbeta_reload_enter" blend_set="all"/>
+			<anim name="sbeta_reload_loop" 				file="anims/fps/sbeta/sbeta_reload" blend_set="all"/>
+			<anim name="sbeta_reload_exit" 				file="anims/fps/sbeta/sbeta_reload_exit" blend_set="all"/>
+			<anim name="sbeta_reload_not_empty_exit"	file="anims/fps/sbeta/sbeta_reload_not_empty_exit" blend_set="all"/>
+			
+			<anim name="sbeta_recoil" 					file="anims/fps/sbeta/sbeta_recoil" blend_set="all"/>
+			<anim name="sbeta_recoil_steelsight" 		file="anims/fps/winchester1874/winchester1874_recoil_zoom" blend_set="all"/>
+			
+			<anim name="sbeta_equip" 					file="anims/fps/winchester1874/winchester1874_equip" blend_set="all"/>
+			<anim name="sbeta_unequip" 					file="anims/fps/winchester1874/winchester1874_unequip" blend_set="all"/>
+			<anim name="sbeta_melee" 					file="anims/fps/winchester1874/winchester1874_melee" blend_set="all"/>
+			<anim name="sbeta_melee_miss" 				file="anims/fps/winchester1874/winchester1874_melee_miss" blend_set="all"/>
+			<anim name="sbeta_use" 						file="anims/fps/winchester1874/winchester1874_use" blend_set="all"/>
+			<anim name="sbeta_sprint" 					file="anims/fps/winchester1874/winchester1874_sprint" blend_set="all"/>
+			<anim name="sbeta_sprint_exit" 				file="anims/fps/winchester1874/winchester1874_sprint_exit" blend_set="all"/>
+			<anim name="sbeta_sprint_enter" 			file="anims/fps/winchester1874/winchester1874_sprint_enter" blend_set="all"/>
+			<anim name="sbeta_com_down_var1" 			file="anims/fps/winchester1874/winchester1874_com_var1" blend_set="all"/>
+			<anim name="sbeta_com_stop" 				file="anims/fps/winchester1874/winchester1874_com_var5" blend_set="all"/>
+			<anim name="sbeta_com_come" 				file="anims/fps/winchester1874/winchester1874_com_var6" blend_set="all"/>
+			<anim name="sbeta_com_point" 				file="anims/fps/winchester1874/winchester1874_com_var7" blend_set="all"/>
+			<anim name="sbeta_get_up" 					file="anims/fps/winchester1874/winchester1874_get_up" blend_set="all"/>
+			<anim name="sbeta_gogo" 					file="anims/fps/winchester1874/winchester1874_gogo" blend_set="all"/>
+			<anim name="sbeta_tased" 					file="anims/fps/winchester1874/winchester1874_tased" blend_set="all"/>
+			<anim name="sbeta_tased_boost" 				file="anims/fps/winchester1874/winchester1874_tased_boost" blend_set="all"/>
+			<anim name="sbeta_tased_exit" 				file="anims/fps/winchester1874/winchester1874_tased_exit" blend_set="all"/>
+			<anim name="sbeta_inspect"					file="anims/fps/winchester1874/winchester1874_inspect" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

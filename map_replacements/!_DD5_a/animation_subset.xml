@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+			
+		<target mode="attach">
+			<anim name="dd5_reload" 								file="anims/fps/dd5/dd5_reload" blend_set="all"/>
+			<anim name="dd5_reload_not_empty" 						file="anims/fps/dd5/dd5_reload_not_empty" blend_set="all"/>
+			<anim name="dd5_idle" 									file="anims/fps/dd5/dd5_idle" blend_set="all"/>
+			<anim name="dd5_recoil" 								file="anims/fps/dd5/dd5_recoil" blend_set="all"/>
+			<anim name="dd5_recoil_enter" 							file="anims/fps/dd5/dd5_recoil_enter" blend_set="all"/>
+			<anim name="dd5_recoil_loop" 							file="anims/fps/dd5/dd5_recoil_loop" blend_set="all"/>
+			<anim name="dd5_recoil_exit" 							file="anims/fps/dd5/dd5_recoil_exit" blend_set="all"/>
+			<anim name="dd5_recoil_steelsight" 					file="anims/fps/dd5/dd5_recoil" blend_set="all"/>
+			<anim name="dd5_equip" 								file="anims/fps/dd5/dd5_equip" blend_set="all"/>
+			<anim name="dd5_unequip" 								file="anims/fps/dd5/dd5_unequip" blend_set="all"/>
+			<anim name="dd5_melee" 								file="anims/fps/dd5/dd5_melee" blend_set="all"/>
+			<anim name="dd5_melee_miss" 							file="anims/fps/dd5/dd5_melee_miss" blend_set="all"/>
+			<anim name="dd5_use" 									file="anims/fps/dd5/dd5_use" blend_set="all"/>
+			<anim name="dd5_sprint_enter" 							file="anims/fps/dd5/dd5_sprint_enter" blend_set="all"/>
+			<anim name="dd5_sprint" 								file="anims/fps/dd5/dd5_sprint" blend_set="all"/>
+			<anim name="dd5_sprint_exit" 							file="anims/fps/dd5/dd5_sprint_exit" blend_set="all"/>
+			<anim name="dd5_com_down_var1" 						file="anims/fps/dd5/dd5_com_var1" blend_set="all"/>
+			<anim name="dd5_com_stop" 								file="anims/fps/dd5/dd5_com_var5" blend_set="all"/>
+			<anim name="dd5_com_come" 								file="anims/fps/dd5/dd5_com_var6" blend_set="all"/>
+			<anim name="dd5_com_point" 							file="anims/fps/dd5/dd5_com_var7" blend_set="all"/>
+			<anim name="dd5_get_up" 								file="anims/fps/dd5/dd5_get_up" blend_set="all"/>
+			<anim name="dd5_gogo" 									file="anims/fps/dd5/dd5_gogo" blend_set="all"/>
+			<anim name="dd5_tased" 								file="anims/fps/dd5/dd5_tased" blend_set="all"/>
+			<anim name="dd5_tased_boost" 							file="anims/fps/dd5/dd5_tased_boost" blend_set="all"/>
+			<anim name="dd5_tased_exit" 							file="anims/fps/dd5/dd5_tased_exit" blend_set="all"/>
+			<anim name="dd5_inspect" 								file="anims/fps/dd5/dd5_inspect" blend_set="all"/> 
+		</target>
+	</tweak>
+</tweaks>

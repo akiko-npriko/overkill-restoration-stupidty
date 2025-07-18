@@ -1,0 +1,17 @@
+<materials version="3" group="weapon_group">
+
+	<material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" name="mtr_madsen_xmag" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/madsen_xmag_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/madsen_xmag_nm"/>
+        <material_texture 	 file="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/madsen_xmag_gsma"/>
+        <reflection_texture type="cube" file="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/weapon_metal_cubemap"/>
+    </material>
+	<material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" name="mtr_mannlicher_clip" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/1893_clip_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/1893_clip_nm"/>
+        <material_texture 	 file="units/mods/weapons/wpn_fps_lmg_madsen_mg_pts/textures/1893_clip_gsma"/>
+	<reflection_texture   file="environments/cubemaps/cubemap_gold_strong_df" type="cubemap" />	
+    </material>
+	
+	
+</materials>

@@ -1,0 +1,237 @@
+<mod  name="PAYDAY 3 - Bullkick 500 Revolver" author="Hylie"  min_lib_ver="3.38">
+	<Localization directory="loc" default="english.txt">
+		<loc file="english.txt" language="english"/>
+	</Localization>	
+	<AssetUpdates id="49436" version="1" provider="modworkshop"/>
+	<GlobalValue id="hylie_pd3bib_mod" color="Color(0.0, 0.5, 1.0)"/>
+	<AddFiles directory="assets" auto_generate="true"/>
+	<Hooks directory="hooks">
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+	</Hooks>
+	<Sounds directory="assets\sounds">
+		<sound id="bk500_fire"			        path="wp_bk500_fire_reg.ogg" prefix="regular"/>
+		<sound id="bk500_fire"			        path="wp_bk500_fire_reg.ogg" prefix="regular_b"/>
+		<sound id="bk500_fire"			        path="wp_bk500_fire_reg.ogg" prefix="regular_c"/>
+
+		<sound id="wp_swhiskey_cylinder_in"			path="wp_bk500_cylinder_in.ogg" prefix="first"/>
+		<sound id="wp_swhiskey_cylinder_in"			path="wp_bk500_cylinder_in.ogg" prefix="third"/>
+		<sound id="wp_swhiskey_cylinder_out"		path="wp_bk500_cylinder_out.ogg" prefix="first"/>
+		<sound id="wp_swhiskey_cylinder_out"		path="wp_bk500_cylinder_out.ogg" prefix="third"/>
+		<sound id="wp_swhiskey_eject_shells"		path="wp_bk500_eject_shells.ogg" prefix="first"/>
+		<sound id="wp_swhiskey_eject_shells"		path="wp_bk500_eject_shells.ogg" prefix="third"/>
+		<sound id="wp_swhiskey_end_foley"			path="wp_bk500_end_foley.ogg" prefix="first"/>
+		<sound id="wp_swhiskey_end_foley"			path="wp_bk500_end_foley.ogg" prefix="third"/>
+		<sound id="wp_swhiskey_hand_down"			path="wp_bk500_hand_down.ogg" prefix="first"/>
+		<sound id="wp_swhiskey_hand_down"			path="wp_bk500_hand_down.ogg" prefix="third"/>
+		<sound id="wp_swhiskey_hand_up"				path="wp_bk500_hand_up.ogg" prefix="first"/>
+		<sound id="wp_swhiskey_hand_up"				path="wp_bk500_hand_up.ogg" prefix="third"/>
+		<sound id="wp_swhiskey_insert"				path="wp_bk500_insert.ogg" prefix="first"/>
+		<sound id="wp_swhiskey_insert"				path="wp_bk500_insert.ogg" prefix="third"/>
+		<sound id="wp_swhiskey_shell_hit_ground"	path="wp_bk500_shell_hit_ground.ogg" prefix="first"/>
+		<sound id="wp_swhiskey_shell_hit_ground"	path="wp_bk500_shell_hit_ground.ogg" prefix="third"/>
+		<sound id="wp_swhiskey_thumb"				path="wp_bk500_thumb.ogg" prefix="first"/>
+		<sound id="wp_swhiskey_thumb"				path="wp_bk500_thumb.ogg" prefix="third"/>
+		<sound id="wp_swhiskey_twist"				path="wp_bk500_twist.ogg" prefix="first"/>
+		<sound id="wp_swhiskey_twist"				path="wp_bk500_twist.ogg" prefix="third"/>
+		
+		<sound id="wp_swhiskey_spin"				path="wp_bk500_spin.ogg" prefix="first"/>
+		<sound id="wp_swhiskey_spin"				path="wp_bk500_spin.ogg" prefix="third"/>
+	</Sounds>
+
+<!-- Bullkick 500 - Default Parts -->	
+
+	<WeaponMod id="wpn_fps_pis_bk500_b_std" type="barrel" based_on="wpn_fps_pis_chinchilla_b_standard" unit="units/mods/weapons/wpn_fps_pis_bk500_pts/wpn_fps_pis_bk500_b_std" hidden="true" ver="2">
+   		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+			<override>
+				<wpn_fps_upg_ns_pis_ipsccomp a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_pis_ns_flash a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_meatgrinder a_obj="a_ns" parent="barrel"/>
+			</override>
+   	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_bk500_body_frame" type="lower_reciever" based_on="wpn_fps_pis_chinchilla_body" unit="units/mods/weapons/wpn_fps_pis_bk500_pts/wpn_fps_pis_bk500_body_frame" hidden="true" ver="2">
+   		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+   	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_bk500_bullets" type="ammo" based_on="wpn_fps_pis_chinchilla_m_bullets" unit="units/mods/weapons/wpn_fps_pis_bk500_pts/wpn_fps_pis_bk500_bullets" hidden="true" ver="2">
+   		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+		<bullet_objects prefix="g_bullet_" amount="5"/>
+   	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_bk500_crane" type="lockarm" based_on="wpn_fps_pis_chinchilla_lock_arm" unit="units/mods/weapons/wpn_fps_pis_bk500_pts/wpn_fps_pis_bk500_crane" hidden="true" ver="2">
+   		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+   	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_bk500_cylinder_std" type="magazine" based_on="wpn_fps_pis_chinchilla_cylinder" unit="units/mods/weapons/wpn_fps_pis_bk500_pts/wpn_fps_pis_bk500_cylinder_std" hidden="true" ver="2">
+   		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+   	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_bk500_ejector_rod" type="ejector_rod" based_on="wpn_fps_pis_chinchilla_ejectorpin" unit="units/mods/weapons/wpn_fps_pis_bk500_pts/wpn_fps_pis_bk500_ejector_rod" hidden="true" ver="2">
+   		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+   	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_bk500_g_std" type="grip" based_on="wpn_fps_pis_chinchilla_g_standard" unit="units/mods/weapons/wpn_fps_pis_bk500_pts/wpn_fps_pis_bk500_g_std" hidden="true" ver="2">
+   		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+   	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_bk500_hammer" type="drag_handle" based_on="wpn_fps_pis_chinchilla_dh_hammer" unit="units/mods/weapons/wpn_fps_pis_bk500_pts/wpn_fps_pis_bk500_hammer" hidden="true" ver="2">
+   		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+   	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_bk500_o_adapter_rail" type="extra" a_obj="a_adapter" based_on="wpn_fps_pis_chinchilla_body" unit="units/mods/weapons/wpn_fps_pis_bk500_pts/wpn_fps_pis_bk500_o_adapter_rail" hidden="true" ver="2">
+   		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+   	</WeaponMod>
+
+<!-- Bullkick 500 - Unique Parts -->
+
+	<WeaponMod id="wpn_fps_pis_bk500_b_ext" type="barrel" based_on="wpn_fps_pis_chinchilla_b_standard" unit="units/mods/weapons/wpn_fps_pis_bk500_pts/wpn_fps_pis_bk500_b_ext" hidden="false" global_value="hylie_pd3bib_mod" ver="2">
+		<stats damage="2" spread="2" recoil="0" concealment="-4"/>
+			<override>
+				<wpn_fps_upg_ns_pis_ipsccomp a_obj="a_ns1" parent="barrel"/>
+				<wpn_fps_upg_pis_ns_flash a_obj="a_ns1" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_meatgrinder a_obj="a_ns1" parent="barrel"/>
+			</override>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_bk500_b_short" type="barrel" based_on="wpn_fps_pis_chinchilla_b_standard" unit="units/mods/weapons/wpn_fps_pis_bk500_pts/wpn_fps_pis_bk500_b_short" hidden="false" global_value="hylie_pd3bib_mod" ver="2">
+		<stats damage="0" spread="-3" recoil="0" concealment="3"/>
+			<override>
+				<wpn_fps_upg_ns_pis_ipsccomp a_obj="a_ns2" parent="barrel"/>
+				<wpn_fps_upg_pis_ns_flash a_obj="a_ns2" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_meatgrinder a_obj="a_ns2" parent="barrel"/>
+			</override>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_bk500_b_tac" type="barrel" based_on="wpn_fps_pis_chinchilla_b_standard" unit="units/mods/weapons/wpn_fps_pis_bk500_pts/wpn_fps_pis_bk500_b_tac" hidden="false" global_value="hylie_pd3bib_mod" ver="2">
+		<stats damage="1" spread="-1" recoil="2" concealment="-1"/>
+			<override>
+				<wpn_fps_upg_ns_pis_ipsccomp a_obj="a_ns4" parent="barrel"/>
+				<wpn_fps_upg_pis_ns_flash a_obj="a_ns4" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_meatgrinder a_obj="a_ns4" parent="barrel"/>
+			</override>
+	</WeaponMod>
+
+
+	<WeaponMod id="wpn_fps_pis_bk500_cylinder_fluted" type="magazine" based_on="wpn_fps_pis_chinchilla_cylinder" unit="units/mods/weapons/wpn_fps_pis_bk500_pts/wpn_fps_pis_bk500_cylinder_fluted" hidden="false" global_value="hylie_pd3bib_mod" ver="2">
+		<stats reload="3" recoil="-1" concealment="-1"/>
+	</WeaponMod>
+
+
+	<WeaponMod id="wpn_fps_pis_bk500_g_ergo" based_on="wpn_fps_pis_chinchilla_g_standard" type="grip" unit="units/mods/weapons/wpn_fps_pis_bk500_pts/wpn_fps_pis_bk500_g_ergo" hidden="false" global_value="hylie_pd3bib_mod" ver="2">
+		<stats spread="-1" recoil="2" concealment="-2"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_pis_bk500_g_wood" based_on="wpn_fps_pis_chinchilla_g_standard" type="grip" unit="units/mods/weapons/wpn_fps_pis_bk500_pts/wpn_fps_pis_bk500_g_wood" hidden="false" global_value="hylie_pd3bib_mod" ver="2">
+		<stats spread="2" recoil="1" concealment="-1"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_pis_bk500_g_tac" based_on="wpn_fps_pis_chinchilla_g_standard" type="grip" unit="units/mods/weapons/wpn_fps_pis_bk500_pts/wpn_fps_pis_bk500_g_tac" hidden="false" global_value="hylie_pd3bib_mod" ver="2">
+		<stats spread="-1" recoil="1" concealment="1"/>
+	</WeaponMod>
+
+<!-- Bullkick 500 - Weapon Data -->
+
+		<Weapon unlock_level="50">
+		<weapon id="bk500" based_on="chinchilla" has_description="true" desc_id="bm_w_bk500_desc" CLIP_AMMO_MAX="5" NR_CLIPS_MAX="7" armor_piercing_chance="1" global_value="hylie_pd3bib_mod">
+
+			<stats damage="180" spread="20" spread_moving="14" recoil="0" concealment="28"/>
+
+			<fire_mode_data fire_rate="1.0"/>
+
+			<AMMO_PICKUP>
+					<value_node value="0.50"/>
+					<value_node value="1.00"/>
+			</AMMO_PICKUP>
+
+			<kick>
+				<standing>
+					<value_node value="6.0"/>
+					<value_node value="6.0"/>
+					<value_node value="-0.6"/>
+					<value_node value="0.6"/>
+				</standing>
+				<crouching>
+					<value_node value="6.0"/>
+					<value_node value="6.0"/>
+					<value_node value="-0.5"/>
+					<value_node value="0.5"/>
+				</crouching>
+				<steelsight>
+					<value_node value="6.0"/>
+					<value_node value="6.0"/>
+					<value_node value="-0.10"/>
+					<value_node value="0.50"/>
+				</steelsight>
+			</kick>
+
+			<sounds fire="bk500_fire"/>
+
+			<animations reload_name_id="bk500_spin"/>
+
+		</weapon>
+		<factory id="wpn_fps_pis_bk500" unit="units/mods/weapons/wpn_fps_pis_bk500/wpn_fps_pis_bk500">
+			<animations fire="recoil" fire_steelsight="recoil" reload="reload" reload_not_empty="reload_not_empty"/>
+			<optional_types>
+				<value_node value="gadget"/>
+				<value_node value="sight"/>
+			</optional_types>
+			<adds>
+				<wpn_fps_upg_o_acog>				
+						<value_node value="wpn_fps_pis_bk500_o_adapter_rail"/>						
+				</wpn_fps_upg_o_acog>
+			</adds>
+			<override>
+				<wpn_fps_upg_ns_pis_ipsccomp a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_pis_ns_flash a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_meatgrinder a_obj="a_ns" parent="barrel"/>
+			</override>
+			<default_blueprint>
+				<value_node value="wpn_fps_pis_bk500_b_std"/> 
+				<value_node value="wpn_fps_pis_bk500_body_frame"/> 
+				<value_node value="wpn_fps_pis_bk500_bullets"/>
+				<value_node value="wpn_fps_pis_bk500_crane"/> 
+				<value_node value="wpn_fps_pis_bk500_cylinder_std"/> 
+				<value_node value="wpn_fps_pis_bk500_ejector_rod"/> 
+				<value_node value="wpn_fps_pis_bk500_g_std"/> 
+				<value_node value="wpn_fps_pis_bk500_hammer"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_pis_bk500_b_std"/> 
+				<value_node value="wpn_fps_pis_bk500_body_frame"/> 
+				<value_node value="wpn_fps_pis_bk500_bullets"/>
+				<value_node value="wpn_fps_pis_bk500_crane"/> 
+				<value_node value="wpn_fps_pis_bk500_cylinder_std"/> 
+				<value_node value="wpn_fps_pis_bk500_ejector_rod"/> 
+				<value_node value="wpn_fps_pis_bk500_g_std"/> 
+				<value_node value="wpn_fps_pis_bk500_hammer"/>
+
+				<value_node value="wpn_fps_pis_bk500_b_ext"/> 
+				<value_node value="wpn_fps_pis_bk500_b_short"/>
+				<value_node value="wpn_fps_pis_bk500_b_tac"/> 
+
+				<value_node value="wpn_fps_pis_bk500_cylinder_fluted"/> 
+
+				<value_node value="wpn_fps_pis_bk500_g_ergo"/> 
+				<value_node value="wpn_fps_pis_bk500_g_wood"/> 
+				<value_node value="wpn_fps_pis_bk500_g_tac"/>
+
+				<value_node value="wpn_fps_upg_ns_pis_meatgrinder"/>
+				<value_node value="wpn_fps_upg_ns_pis_ipsccomp"/>
+				<value_node value="wpn_fps_upg_pis_ns_flash"/>
+
+				<value_node value="wpn_fps_upg_o_acog"/>
+			</uses_parts>
+		</factory>
+		<stance>
+			<standard>
+				<shoulders rotation="-0.00600759 0.00530257 0.000901872 -0.999968" translation="1.46 -9.696 -2.698"/>
+			</standard>
+			<crouched>
+				<shoulders rotation="-0.00595976 0.0489155 0.000638535 -0.998785" translation="-2.06 -13.696 -3.698"/>
+			</crouched>
+	        <steelsight>
+		        <shoulders rotation="-0.0060093 0.00530063 0.000578996 -0.999968" translation="-8.54 -18.696 2.002"/>
+	        </steelsight>
+		</stance>	
+	</Weapon>
+</mod>
+

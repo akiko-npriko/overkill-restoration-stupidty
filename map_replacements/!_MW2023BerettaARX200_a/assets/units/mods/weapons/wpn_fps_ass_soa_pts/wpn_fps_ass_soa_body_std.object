@@ -1,0 +1,20 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_ass_soa_pts/wpn_fps_ass_soa_body_std" orientation_object="rp_body" />
+	<animations>
+		<animation_group name="reload">
+			<object name="anim_bolt_reload" enabled="true" />
+		</animation_group>
+		<animation_group name="recoil">
+			<object name="anim_bolt_recoil" enabled="true" />
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_bolt" enabled="true" />
+		<object name="g_dh" enabled="true" />
+
+		<object name="g_latch" enabled="true" />
+		<object name="g_lower" enabled="true" />
+		<object name="g_mech" enabled="true" />
+		<object name="g_upper" enabled="true" />
+	</graphics>
+</dynamic_object>

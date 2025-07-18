@@ -1,0 +1,135 @@
+<mod name="Deagle but .50 Cal" author="Masavik" min_lib_ver="3.38">
+    <AssetUpdates id="48070" version="0.96" provider="modworkshop"/>
+	<GlobalValue id="degfiftymod" color="Color(1, 0.9, 0)"/>
+   	<Localization directory="loc" default="english.txt"/>
+	<AddFiles directory="assets" auto_generate="true"/>
+
+	<WeaponMod id="wpn_fps_pis_degfifty_b_std" based_on="wpn_fps_pis_deagle_b_standard" type="slide" wpn_pts="wpn_fps_pis_degfifty" hidden="true" ver="2"/>
+	
+	<WeaponMod id="wpn_fps_pis_degfifty_body_std" based_on="wpn_fps_pis_deagle_body_standard" type="lower_reciever" wpn_pts="wpn_fps_pis_degfifty" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_pis_degfifty_m_std" based_on="wpn_fps_pis_deagle_m_standard" type="magazine" wpn_pts="wpn_fps_pis_degfifty" hidden="true" ver="2"/>
+
+	<Weapon unlock_level="8">
+		<weapon id="degfifty" based_on="deagle" weapon_hold="degfifty" CLIP_AMMO_MAX="7" NR_CLIPS_MAX="6"  armor_piercing_chance="1" can_shoot_through_enemy="true" can_shoot_through_shield="true" can_shoot_through_wall="true" texture_bundle_folder="mods" shell_ejection="effects/payday2/particles/weapons/shells/shell_556" global_value="degfiftymod">
+			<stats damage="120" spread="13" recoil="3" concealment="5" reload="7"/>
+			<stats_modifiers damage="22"/>
+			<timers reload_empty="4.1" reload_not_empty="3.2" equip="0.7" unequip="0.5"/>
+			<fire_mode_data fire_rate="0.4"/>
+			<AMMO_PICKUP>
+				<value_node value="0.10"/>
+				<value_node value="0.65"/>
+			</AMMO_PICKUP>
+			<kick>
+				<standing>
+					<value_node value="6.2"/>
+					<value_node value="6.5"/>
+					<value_node value="0.4"/>
+					<value_node value="-0.4"/>
+				</standing>
+				<crouching>
+					<value_node value="5.8"/>
+					<value_node value="5.3"/>
+					<value_node value="0.4"/>
+					<value_node value="-0.4"/>
+				</crouching>
+				<steelsight>
+					<value_node value="4.5"/>
+					<value_node value="4.8"/>
+					<value_node value="0.4"/>
+					<value_node value="-0.4"/>
+				</steelsight>
+			</kick>
+			<animations reload="reload" fire="recoil" fire_steelsight="recoil" reload_not_empty="reload_not_empty" magazine_empty="last_recoil" reload_name_id="degfifty"/>
+		</weapon>
+       	<factory id="wpn_fps_pis_degfifty" unit="units/mods/weapons/wpn_fps_pis_degfifty/wpn_fps_pis_degfifty">
+			<optional_types>
+				<value_node value="barrel_ext"/>
+				<value_node value="gadget"/>
+				<value_node value="sight"/>
+			</optional_types>
+			<override>
+			</override>
+			<default_blueprint>
+				<value_node value="wpn_fps_pis_degfifty_body_std"/>
+				<value_node value="wpn_fps_pis_degfifty_m_std"/>
+				<value_node value="wpn_fps_pis_degfifty_b_std"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_pis_degfifty_body_std"/>
+				<value_node value="wpn_fps_pis_degfifty_m_std"/>
+				<value_node value="wpn_fps_pis_degfifty_b_std"/>
+
+			</uses_parts>
+		</factory>
+
+		<stance>
+			<standard>
+				<shoulders rotation="-0 0.00872654 -0 -0.999962" translation="-0.3 -2.5 1.7"/>
+			</standard>
+			<crouched>
+				<shoulders rotation="-0 -0 0 -1" translation="0 0 0"/>
+			</crouched>
+			<steelsight>
+				<shoulders rotation="-0.0103702 0.00548151 0.000929271 -0.999931" translation="-8.6 -4.3 1.49"/>
+			</steelsight>
+		</stance>
+
+	</Weapon>
+
+
+	<AddFiles directory="assets">
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/degfifty"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_barrel_df"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_barrel_df_cc"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_barrel_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_body_df"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_body_df_cc"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_body_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_slide_df"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_slide_df_cc"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_slide_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_mag_df"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_mag_df_cc"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_mag_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_grip_df"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_grip_df_cc"/>
+		<texture path="units/mods/weapons/wpn_fps_pis_degfifty_pts/textures/degfifty_grip_nm"/>
+				
+		<unit_npc path="units/mods/weapons/wpn_fps_pis_degfifty/wpn_fps_pis_degfifty"/>
+		
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_degfifty_pts/wpn_fps_pis_degfifty_b_std"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_degfifty_pts/wpn_fps_pis_degfifty_body_std"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_degfifty_pts/wpn_fps_pis_degfifty_m_std"/>
+		
+
+		<animation path="anims/fps/degfifty/degfifty_idle" load="true"/>
+		<animation path="anims/fps/degfifty/degfifty_melee" load="true"/>
+		<animation path="anims/fps/degfifty/degfifty_melee_miss" load="true"/>
+		<animation path="anims/fps/degfifty/degfifty_com_var1" load="true"/>
+		<animation path="anims/fps/degfifty/degfifty_com_var5" load="true"/>
+		<animation path="anims/fps/degfifty/degfifty_com_var6" load="true"/>
+		<animation path="anims/fps/degfifty/degfifty_com_var7" load="true"/>
+		<animation path="anims/fps/degfifty/degfifty_equip" load="true"/>
+		<animation path="anims/fps/degfifty/degfifty_unequip" load="true"/>
+		<animation path="anims/fps/degfifty/degfifty_getup" load="true"/>
+		<animation path="anims/fps/degfifty/degfifty_gogo" load="true"/>
+		<animation path="anims/fps/degfifty/degfifty_inspect" load="true"/>
+		<animation path="anims/fps/degfifty/degfifty_recoil" load="true"/>
+		<animation path="anims/fps/degfifty/degfifty_reload_not_empty" load="true"/>
+		<animation path="anims/fps/degfifty/degfifty_reload" load="true"/>
+		<animation path="anims/fps/degfifty/degfifty_sprint" load="true"/>
+		<animation path="anims/fps/degfifty/degfifty_sprint_enter" load="true"/>
+		<animation path="anims/fps/degfifty/degfifty_sprint_exit" load="true"/>
+		<animation path="anims/fps/degfifty/degfifty_use" load="true"/>
+		<animation path="anims/fps/degfifty/degfifty_tased_boost" load="true"/>
+		<animation path="anims/fps/degfifty/degfifty_tased_exit" load="true"/>
+		<animation path="anims/fps/degfifty/degfifty_tased" load="true"/>
+		<animation path="anims/fps/degfifty/degfifty_recoil_steelsight" load="true"/>
+
+	</AddFiles>
+	<Hooks directory="hooks">
+<!--		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>-->
+<!--		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>-->
+	</Hooks>
+</mod>

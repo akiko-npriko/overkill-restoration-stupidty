@@ -1,0 +1,1 @@
+M1A1WeaponBase = M1A1WeaponBase or class(NewRaycastWeaponBase)

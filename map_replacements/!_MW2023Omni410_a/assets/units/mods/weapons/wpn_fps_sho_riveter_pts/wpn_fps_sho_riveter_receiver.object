@@ -1,0 +1,26 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_sho_riveter_pts/wpn_fps_sho_riveter_receiver" orientation_object="rp_receiver" />
+	<animations>
+		<animation_group name="reload">
+			<object name="anim_dh" enabled="true" />
+			<object name="anim_bolt_reload_1" enabled="true" />
+		</animation_group>
+		<animation_group name="recoil">
+			<object name="anim_bolt_recoil_1" enabled="true" />
+		</animation_group>
+		<animation_group name="last_recoil">
+			<object name="anim_bolt_last_recoil_1" enabled="true" />
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_bolt" enabled="true" />
+		<object name="g_dh" enabled="true" />
+
+		<object name="g_adapter" enabled="true" />
+		<object name="g_firemode" enabled="true" />
+		<object name="g_lower" enabled="true" />
+		<object name="g_mech" enabled="true" />
+		<object name="g_tube" enabled="true" />
+		<object name="g_upper" enabled="true" />
+	</graphics>
+</dynamic_object>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+			
+		<target mode="attach">
+			<anim name="bp12_reload"						file="anims/fps/bp12/bp12_reload" blend_set="all"/>
+			<anim name="bp12_reload_not_empty" 			file="anims/fps/bp12/bp12_reload_not_empty" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>
