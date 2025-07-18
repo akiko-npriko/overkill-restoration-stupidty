@@ -1,0 +1,519 @@
+<mod name="COD BOCW EM2" author="RJC9000 and PlayBONK" min_lib_ver="3.38">
+	<Localization directory="loc" default="english.txt">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	<AssetUpdates id="45811" version="0.83" provider="modworkshop"/>
+	<GlobalValue id="t9britishmod" color="Color(0.7, 0.9, 0.3)"/>
+
+<!--Default Mods-->	
+	<WeaponMod id="wpn_fps_ass_t9british_bolt" based_on="wpn_fps_ass_flint_dh_standard" type="bolt"			 		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_bolt" 		hidden="true" ver="2">
+		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_t9british_flash_hider" based_on="wpn_fps_ass_vhs_ns_vhs" type="barrel_ext"	 		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_flash_hider"    hidden="true" ver="2">
+		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_t9british_gadget_mount" based_on="wpn_fps_addon_ris" type="gadget_rail"			 		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_gadget_mount" hidden="true" ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_t9british_receiver" based_on="wpn_fps_ass_flint_body_upperreceiver" type="lower_reciever"		a_obj="a_body" 		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_receiver" hidden="true" ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_t9british_stock_adapter" based_on="wpn_fps_ass_flint_s_adapter" type="stock_adapter" a_obj="a_s" unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_stock_adapter" hidden="true" ver="2">
+			<stats damage="0" spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+
+<!--Barrel-->	
+	<WeaponMod id="wpn_fps_ass_t9british_barrel" based_on="wpn_fps_ass_flint_b_standard" type="barrel"			 		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_barrel" 		hidden="true" ver="2">
+		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_t9british_barrel_01" based_on="wpn_fps_ass_flint_b_standard" type="barrel"			 		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_barrel_01" 		hidden="false" ver="2">
+		<stats damage="1" spread="2" recoil="0" concealment="-2"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_t9british_barrel_02" based_on="wpn_fps_ass_flint_b_standard" type="barrel"			 		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_barrel_02" 		hidden="false" ver="2">
+		<stats damage="0" spread="2" recoil="2" concealment="-4"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_t9british_barrel_heavy_01" based_on="wpn_fps_ass_flint_b_standard" type="barrel"			 		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_barrel_heavy_01" 		hidden="false" ver="2">
+		<stats damage="0" spread="-1" recoil="0" concealment="1"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_t9british_barrel_heavy_02" based_on="wpn_fps_ass_flint_b_standard" type="barrel"			 		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_barrel_heavy_02" 		hidden="false" ver="2">
+		<stats damage="0" spread="0" recoil="-1" concealment="1"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_t9british_barrel_mix_01" based_on="wpn_fps_ass_flint_b_standard" type="barrel"			 		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_barrel_mix_01" 		hidden="false" ver="2">
+		<stats damage="1" spread="0" recoil="2" concealment="-2"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_t9british_barrel_mix_02" based_on="wpn_fps_ass_flint_b_standard" type="barrel"			 		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_barrel_mix_02" 		hidden="false" ver="2">
+		<stats damage="16" spread="1" recoil="-6" concealment="-3"/>
+	</WeaponMod>
+	
+
+<!--Grip Tape-->
+
+	<WeaponMod id="wpn_fps_ass_t9british_handle_01" based_on="wpn_fps_ass_flint_g_standard" type="grip_tape"			 		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_handle_01" hidden="false" ver="2">
+		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_t9british_handle_02" based_on="wpn_fps_ass_flint_g_standard" type="grip_tape"			 		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_handle_02" hidden="false" ver="2">
+		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_t9british_handle_mix_01" based_on="wpn_fps_ass_flint_g_standard" type="grip_tape"			 		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_handle_mix_01" hidden="false" ver="2">
+		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_t9british_handle_mix_02" based_on="wpn_fps_ass_flint_g_standard" type="grip_tape"			 		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_handle_mix_02" hidden="false" ver="2">
+		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_t9british_handle_quickdraw_01" based_on="wpn_fps_ass_flint_g_standard" type="grip_tape"			 		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_handle_quickdraw_01" hidden="false" ver="2">
+		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_t9british_handle_quickdraw_02" based_on="wpn_fps_ass_flint_g_standard" type="grip_tape"			 		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_handle_quickdraw_02" hidden="false" ver="2">
+		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+	</WeaponMod> 
+
+<!--Optic-->
+<WeaponMod id="wpn_fps_ass_t9british_scope" based_on="wpn_fps_upg_o_aimpoint" type="sight" 	 unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_scope" steelsight_visible="false" hidden="true" ver="2">
+		<stats spread="0" recoil="0" concealment="0"/>
+		<override>
+			<wpn_fps_ass_t9british_optic_rail unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+		</override>
+		<adds>
+			<value_node value="wpn_fps_ass_t9british_scope_steelsight"/>
+		</adds>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_t9british_scope_steelsight" based_on="wpn_fps_upg_o_specter_steelsight" type="sight_swap" 	 unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_scope_steelsight" hidden="true" ver="2">
+		<stats spread="0" recoil="0" concealment="0" zoom="2"/>
+		<stance_mod>
+			<wpn_fps_ass_t9british 	rotation="6.09235e-009 -8.72665e-006 -0.000698132 -1" translation="0 -3 -0.79"/> 
+		</stance_mod>		
+	</WeaponMod>	
+	<WeaponMod id="wpn_fps_ass_t9british_irons" based_on="wpn_fps_upg_o_45steel"  type="second_sight"  a_obj="a_o"  unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_irons" hidden="false" has_description="true" global_value="t9britishmod" ver="2">
+	<stats spread="0" recoil="0" concealment="0" gadget_zoom="3" />
+		<forbids>
+			<value_node value="wpn_fps_ass_t9british_irons_folded"/>
+		</forbids>
+		<override>
+			<wpn_fps_ass_t9british_irons_up unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+		</override>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_t9british_irons_up" based_on="wpn_fps_ass_flint_o_standard" a_obj="a_o" type="irons_folded"	unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_irons_up" has_description="true" hidden="true" ver="2">
+		<stats spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_t9british_irons_folded" based_on="wpn_fps_ass_flint_o_standard" a_obj="a_o" type="irons_folded"	unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_irons_folded" hidden="false" has_description="true" global_value="t9britishmod" ver="2">
+		<stats spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_t9british_optic_rail" based_on="wpn_fps_ass_flint_body_upperreceiver" type="optic_rail"	a_obj="a_o"		 		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_optic_rail" hidden="true" ver="2">
+		<stats spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+
+<!--Magazine-->
+	<WeaponMod id="wpn_fps_ass_t9british_magazine" based_on="wpn_fps_ass_flint_m_standard" type="magazine"  		    		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_magazine" hidden="true" ver="2">
+		<stats spread="0" recoil="0" concealment="0" extra_ammo="0" total_ammo_mod="0" reload="0"/>
+		<bullet_objects prefix = "g_bullet_" amount="3"/>
+		<animations reload="reload" reload_not_empty="reload_not_empty"/>
+	</WeaponMod>		
+	<WeaponMod id="wpn_fps_ass_t9british_magazine_fast_01" based_on="wpn_fps_ass_flint_m_standard" type="magazine"  		    		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_magazine_fast_01" hidden="false" ver="2">
+		<stats spread="0" recoil="0" concealment="-2" extra_ammo="0" total_ammo_mod="0" reload="6"/>
+		<bullet_objects prefix = "g_bullet_" amount="3"/>
+		<animations reload="reload" reload_not_empty="reload_not_empty"/>
+	</WeaponMod>		
+	<WeaponMod id="wpn_fps_ass_t9british_magazine_fast_02" based_on="wpn_fps_ass_flint_m_standard" type="magazine"  		    		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_magazine_fast_02" hidden="false" ver="2">
+		<stats spread="0" recoil="0" concealment="-2" extra_ammo="0" total_ammo_mod="0" reload="6"/>
+		<bullet_objects prefix = "g_bullet_" amount="3"/>
+		<animations reload="reload" reload_not_empty="reload_not_empty"/>
+	</WeaponMod>		
+	<WeaponMod id="wpn_fps_ass_t9british_magazine_mix_01" based_on="wpn_fps_ass_flint_m_standard" type="magazine"  		    		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_magazine_mix_01" has_description="true" hidden="false" ver="2">
+		<stats spread="-1" recoil="-1" concealment="-1" extra_ammo="3" total_ammo_mod="0" reload="2"/>
+		<bullet_objects prefix = "g_bullet_" amount="3"/>
+		<animations reload="reload" reload_not_empty="reload_not_empty"/>
+	</WeaponMod>		
+	<WeaponMod id="wpn_fps_ass_t9british_magazine_mix_02" based_on="wpn_fps_ass_flint_m_standard" type="magazine"  		    		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_magazine_mix_02" hidden="false" ver="2">
+		<stats spread="-1" recoil="-1" concealment="-1" extra_ammo="5" total_ammo_mod="0" reload="1"/>
+		<bullet_objects prefix = "g_bullet_" amount="3"/>
+		<animations reload="reload" reload_not_empty="reload_not_empty"/>
+	</WeaponMod>		
+	<WeaponMod id="wpn_fps_ass_t9british_xmag_01" based_on="wpn_fps_ass_flint_m_standard" type="magazine"  		    		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_xmag_01" hidden="false" ver="2">
+		<stats spread="0" recoil="0" concealment="-3" extra_ammo="5" total_ammo_mod="2" reload="-2"/>
+		<bullet_objects prefix = "g_bullet_" amount="3"/>
+		<animations reload="reload" reload_not_empty="reload_not_empty"/>
+	</WeaponMod>		
+	<WeaponMod id="wpn_fps_ass_t9british_xmag_02" based_on="wpn_fps_ass_flint_m_standard" type="magazine"  		    		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_xmag_02" hidden="false" ver="2">
+		<stats spread="0" recoil="0" concealment="-3" extra_ammo="10" total_ammo_mod="4" reload="-4"/>
+		<bullet_objects prefix = "g_bullet_" amount="3"/>
+		<animations reload="reload" reload_not_empty="reload_not_empty"/>
+	</WeaponMod>		
+
+<!--Stocks-->
+	<WeaponMod id="wpn_fps_ass_t9british_stock" based_on="wpn_fps_upg_m4_s_pts" type="stock"			 		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_stock" hidden="true" ver="2">
+		<stats spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_t9british_stock_stalker_01" based_on="wpn_fps_upg_m4_s_pts" type="stock"			 		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_stock_stalker_01" hidden="false" global_value="t9britishmod" ver="2">
+		<stats spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_t9british_stock_stalker_02" based_on="wpn_fps_upg_m4_s_pts" type="stock"			 		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_stock_stalker_02" hidden="false" global_value="t9britishmod" ver="2">
+		<stats spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_t9british_stock_sprintout_01" based_on="wpn_fps_upg_m4_s_pts" type="stock"			 		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_stock_sprintout_01" hidden="false" global_value="t9britishmod" ver="2">
+		<stats spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_t9british_stock_sprintout_02" based_on="wpn_fps_upg_m4_s_pts" type="stock"			 		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_stock_sprintout_02" hidden="false" global_value="t9britishmod" ver="2">
+		<stats spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_t9british_stock_mix_01" based_on="wpn_fps_upg_m4_s_pts" type="stock"			 		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_stock_mix_01" hidden="false" global_value="t9britishmod" ver="2">
+		<stats spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_t9british_stock_mix_02" based_on="wpn_fps_upg_m4_s_pts" type="stock"			 		unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_stock_mix_02" hidden="false" global_value="t9britishmod" ver="2">
+		<stats spread="0" recoil="0" concealment="0"/>
+	</WeaponMod> 
+	
+<!--Weapon-->
+		<Weapon unlock_level="55">
+		<weapon id="t9british" based_on="flint" weapon_hold="flint" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="4" global_value="t9britishmod">
+			<stats damage="106" spread="17" spread_moving="16" recoil="13" concealment="15"/>
+			<timers reload_not_empty="2.0" reload_empty="3.0"/>
+			<fire_mode_data fire_rate="0.112149"/>
+			<AMMO_PICKUP>
+				<value_node value="2.00"/>
+				<value_node value="4.50"/>
+			</AMMO_PICKUP>
+			<sounds fire="t9british_fire" fire_single="t9british_fire" fire_auto="t9british_fire" use_fix="true"> 
+
+			</sounds> 
+			<kick>
+				<standing>
+					<value_node value="1.1"/>
+					<value_node value="1.2"/>
+					<value_node value="-0.7"/>
+					<value_node value="0.3"/>
+				</standing>
+				<crouching>
+					<value_node value="1.0"/>
+					<value_node value="1.0"/>
+					<value_node value="-0.6"/>
+					<value_node value="0.2"/>
+				</crouching>
+				<steelsight>
+					<value_node value="0.70"/>
+					<value_node value="0.75"/>
+					<value_node value="-0.5"/>
+					<value_node value="0.2"/>
+				</steelsight>
+			</kick>
+			<timers unequip="0.6" equip="0.6"/>
+			<animations reload_name_id="t9british"/>
+		</weapon>
+		<factory id="wpn_fps_ass_t9british" unit="units/mods/weapons/wpn_fps_ass_t9british/wpn_fps_ass_t9british" stock_adapter="wpn_fps_ass_t9british_stock_adapter">
+		<animations reload="reload" fire="recoil" fire_steelsight="recoil" reload_not_empty="reload_not_empty" magazine_empty="last_recoil" />
+	     		<adds>
+	            </adds>
+		<override>
+			<wpn_fps_addon_ris unit="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_gadget_mount"/> 
+		</override> 
+			<default_blueprint>
+				<value_node value="wpn_fps_ass_t9british_barrel"/>
+				<value_node value="wpn_fps_ass_t9british_bolt"/>
+				<value_node value="wpn_fps_ass_t9british_flash_hider"/>	 	
+				<value_node value="wpn_fps_ass_t9british_receiver"/>  
+				<value_node value="wpn_fps_ass_t9british_magazine"/>	
+				<value_node value="wpn_fps_ass_t9british_irons_up"/> 
+				<value_node value="wpn_fps_ass_t9british_optic_rail"/> 
+				<value_node value="wpn_fps_ass_t9british_scope"/> 
+				<value_node value="wpn_fps_ass_t9british_stock"/> 
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_ass_t9british_barrel"/>
+				<value_node value="wpn_fps_ass_t9british_bolt"/>
+				<value_node value="wpn_fps_ass_t9british_flash_hider"/>	 	
+				<value_node value="wpn_fps_ass_t9british_receiver"/>  
+				<value_node value="wpn_fps_ass_t9british_magazine"/>	
+				<value_node value="wpn_fps_ass_t9british_irons_up"/> 
+				<value_node value="wpn_fps_ass_t9british_optic_rail"/> 
+				<value_node value="wpn_fps_ass_t9british_scope"/> 
+				<value_node value="wpn_fps_ass_t9british_stock"/> 
+				
+				<value_node value="wpn_fps_ass_t9british_barrel_01"/>
+				<value_node value="wpn_fps_ass_t9british_barrel_02"/>
+				<value_node value="wpn_fps_ass_t9british_barrel_heavy_01"/>
+				<value_node value="wpn_fps_ass_t9british_barrel_heavy_02"/>
+				<value_node value="wpn_fps_ass_t9british_barrel_mix_01"/>
+				<value_node value="wpn_fps_ass_t9british_barrel_mix_02"/>
+				<value_node value="wpn_fps_ass_t9british_handle_01"/> 
+				<value_node value="wpn_fps_ass_t9british_handle_02"/> 
+				<value_node value="wpn_fps_ass_t9british_handle_mix_02"/> 
+				<value_node value="wpn_fps_ass_t9british_handle_mix_02"/> 
+				<value_node value="wpn_fps_ass_t9british_handle_quickdraw_01"/> 
+				<value_node value="wpn_fps_ass_t9british_handle_quickdraw_02"/> 
+				<value_node value="wpn_fps_ass_t9british_irons"/> 
+				<value_node value="wpn_fps_ass_t9british_irons_folded"/> 
+				<value_node value="wpn_fps_ass_t9british_magazine_fast_01"/>	
+				<value_node value="wpn_fps_ass_t9british_magazine_fast_02"/>	
+				<value_node value="wpn_fps_ass_t9british_magazine_mix_01"/>	
+				<value_node value="wpn_fps_ass_t9british_magazine_mix_02"/>	
+				<value_node value="wpn_fps_ass_t9british_xmag_01"/>	
+				<value_node value="wpn_fps_ass_t9british_xmag_02"/>	
+				<value_node value="wpn_fps_ass_t9british_stock_mix_01"/> 
+				<value_node value="wpn_fps_ass_t9british_stock_mix_02"/> 
+				<value_node value="wpn_fps_ass_t9british_stock_sprintout_01"/> 
+				<value_node value="wpn_fps_ass_t9british_stock_sprintout_02"/> 
+				<value_node value="wpn_fps_ass_t9british_stock_stalker_01"/> 
+				<value_node value="wpn_fps_ass_t9british_stock_stalker_02"/> 
+
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_v6"/>
+				<value_node value="wpn_fps_ass_shak12_ns_muzzle"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/>
+				<value_node value="wpn_fps_upg_i_singlefire"/>
+				<value_node value="wpn_fps_upg_i_autofire"/>
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_bmg"/>
+				<value_node value="wpn_fps_upg_o_uh"/>
+				<value_node value="wpn_fps_upg_o_fc1"/>
+				<value_node value="wpn_fps_upg_o_tf90"/>
+				<value_node value="wpn_fps_upg_o_poe"/>
+				<value_node value="wpn_fps_upg_o_hamr"/>
+				<value_node value="wpn_fps_upg_o_atibal"/>
+				<value_node value="wpn_fps_upg_o_health"/>
+								
+			</uses_parts>
+		</factory>
+		<stance>
+		<standard>
+			<shoulders rotation="0 -8.72665e-006 0 -1" translation="-0.247 3.304 -0.118"/>
+		</standard>
+		<crouched>
+			<shoulders rotation="0 0.0174611 0 -0.999848" translation="-1.247 2.304 -1.118"/>
+		</crouched>
+		<steelsight>
+			<shoulders rotation="0 -8.72665e-006 0 -1" translation="-10.245 20.304 2.99"/>
+		</steelsight> 
+		</stance>
+	</Weapon>
+
+
+
+
+
+
+
+
+
+	<Sounds directory="assets\sounds">
+		<sound id="t9british_fire" path="t9british_fire.ogg" prefix="regular"/>
+		<sound id="t9british_fire" path="t9british_supp.ogg" prefix="suppressed_a"/>
+		<sound id="t9british_fire" path="t9british_supp.ogg" prefix="suppressed_b"/>
+		<sound id="t9british_fire" path="t9british_supp.ogg" prefix="suppressed_c"/> 
+
+<!--	<sound id="t9british_"  path="t9british_.ogg" prefix="first"/>
+		<sound id="t9british_"  path="t9british_.ogg" prefix="third"/> -->
+		
+		<sound id="t9british_back_in_hand"  path="t9british_back_in_hand.ogg" prefix="first"/>
+		<sound id="t9british_back_in_hand"  path="t9british_back_in_hand.ogg" prefix="third"/>
+		<sound id="t9british_bolt_back_in_battery"  path="t9british_bolt_back_in_battery.ogg" prefix="first"/>
+		<sound id="t9british_bolt_back_in_battery"  path="t9british_bolt_back_in_battery.ogg" prefix="third"/>
+		<sound id="t9british_empty_mag_in"  path="t9british_empty_mag_in.ogg" prefix="first"/>
+		<sound id="t9british_empty_mag_in"  path="t9british_empty_mag_in.ogg" prefix="third"/>
+		<sound id="t9british_end_reload"  path="t9british_end_reload.ogg" prefix="first"/>
+		<sound id="t9british_end_reload"  path="t9british_end_reload.ogg" prefix="third"/>
+		<sound id="t9british_generic_ass_center"  path="t9british_generic_ass_center.ogg" prefix="first"/>
+		<sound id="t9british_generic_ass_center"  path="t9british_generic_ass_center.ogg" prefix="third"/>
+		<sound id="t9british_generic_mag_in_connect"  path="t9british_generic_mag_in_connect.ogg" prefix="first"/>
+		<sound id="t9british_generic_mag_in_connect"  path="t9british_generic_mag_in_connect.ogg" prefix="third"/>
+		<sound id="t9british_grab_mag"  path="t9british_grab_mag.ogg" prefix="first"/>
+		<sound id="t9british_grab_mag"  path="t9british_grab_mag.ogg" prefix="third"/>
+		<sound id="t9british_lower"  path="t9british_lower.ogg" prefix="first"/>
+		<sound id="t9british_lower"  path="t9british_lower.ogg" prefix="third"/>
+		<sound id="t9british_mag_drop_impact_floor"  path="t9british_mag_drop_impact_floor.ogg" prefix="first"/>
+		<sound id="t9british_mag_drop_impact_floor"  path="t9british_mag_drop_impact_floor.ogg" prefix="third"/>
+		<sound id="t9british_mag_in"  path="t9british_mag_in.ogg" prefix="first"/>
+		<sound id="t9british_mag_in"  path="t9british_mag_in.ogg" prefix="third"/>
+		<sound id="t9british_mag_out"  path="t9british_mag_out.ogg" prefix="first"/>
+		<sound id="t9british_mag_out"  path="t9british_mag_out.ogg" prefix="third"/>
+		<sound id="t9british_mag_rattle"  path="t9british_mag_rattle.ogg" prefix="first"/>
+		<sound id="t9british_mag_rattle"  path="t9british_mag_rattle.ogg" prefix="third"/>
+		<sound id="t9british_mag_take_new"  path="t9british_mag_take_new.ogg" prefix="first"/>
+		<sound id="t9british_mag_take_new"  path="t9british_mag_take_new.ogg" prefix="third"/>
+		<sound id="t9british_mag_tap"  path="t9british_mag_tap.ogg" prefix="first"/>
+		<sound id="t9british_mag_tap"  path="t9british_mag_tap.ogg" prefix="third"/>
+		<sound id="t9british_raise"  path="t9british_raise.ogg" prefix="first"/>
+		<sound id="t9british_raise"  path="t9british_raise.ogg" prefix="third"/>
+		<sound id="t9british_release_hand_mag"  path="t9british_release_hand_mag.ogg" prefix="first"/>
+		<sound id="t9british_release_hand_mag"  path="t9british_release_hand_mag.ogg" prefix="third"/>
+		<sound id="t9british_start_reload"  path="t9british_start_reload.ogg" prefix="first"/>
+		<sound id="t9british_start_reload"  path="t9british_start_reload.ogg" prefix="third"/>
+		
+		
+		
+		
+
+	</Sounds>
+	
+	<AddFiles directory="assets">
+		<!--Unit Base-->
+		<unit_npc path="units/mods/weapons/wpn_fps_ass_t9british/wpn_fps_ass_t9british"/>
+				
+		<!--Animations-->	
+		<animation path="anims/fps/t9british/t9british_reload_not_empty" load="true"/> 
+		<animation path="anims/fps/t9british/t9british_reload" load="true"/>  
+		
+		<animation path="anims/fps/t9british/t9britishdouble_reload_not_empty" load="true"/> 
+		<animation path="anims/fps/t9british/t9britishdouble_reload" load="true"/>  
+		
+		<animation path="anims/fps/t9british/t9britishext_reload" load="true"/>  
+		
+		
+		<!--Icons -->
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_t9british_barrel_01"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_t9british_barrel_02"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_t9british_barrel_heavy_01"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_t9british_barrel_heavy_02"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_t9british_barrel_mix_01"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_t9british_barrel_mix_02"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_t9british_handle_01"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_t9british_handle_02"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_t9british_handle_mix_01"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_t9british_handle_mix_02"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_t9british_irons"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_t9british_irons_folded"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_t9british_magazine_fast_01"/>		
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_t9british_magazine_fast_02"/>			
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_t9british_magazine_mix_01"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_t9british_magazine_mix_02"/>	
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_t9british_handle_quickdraw_01"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_t9british_handle_quickdraw_02"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_t9british_scope"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_t9british_stock_mix_01"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_t9british_stock_mix_02"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_t9british_stock_stalker_01"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_t9british_stock_stalker_02"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_t9british_stock_sprintout_01"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_t9british_stock_sprintout_02"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_t9british_xmag_01"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_t9british_xmag_02"/>
+
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/t9british"/>	
+
+		<!--Textures-->		
+		<texture path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/weapon_metal_cubemap"/>
+		
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/lm_t9accurate_rail"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/mlok_rail5"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9standard_side_mount"/>		
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9british_barrel"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9british_carry_handle"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9british_handguard"/>
+		<texture	path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9british_lens_df"/>
+		<texture	path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9british_lens_op"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9british_magazine"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9british_muzzle"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9british_rail"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9british_receiver"/>
+		<texture	path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9british_reticle_df"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9british_scope"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9british_scope_ads"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9british_stock"/>
+
+
+		<df_nm_gsma	path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9accurate_fastmag_01"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9accurate_fastmag_02"/>
+		<df_nm		path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9accurate_pistolgrip01"/>
+		<df_nm		path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9accurate_pistolgrip02"/>
+		<df_nm		path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9accurate_pistolgrip03"/>
+		<df_nm		path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9accurate_pistolgrip04"/>
+		<df_nm		path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9accurate_pistolgrip05"/>
+		<df_nm		path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9accurate_pistolgrip06"/>
+		<df_nm		path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9accurate_smag01"/>
+		<df_nm		path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9accurate_smag02"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9damage_semi_barrel_base"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9damage_semi_heavy"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9mobility_mixbarrel_03"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9mobility_mixbarrel_03_pro"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9slowhandling_xmag_01"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9slowhandling_xmag_01_pro"/>
+		
+		<df_nm		path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9cannon_minimal_stock_01_pro"/>
+		<df_nm		path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9cannon_minimal_stock_01"/>
+		<df_nm		path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9fastfire_cheekrest_01"/>
+		<df_nm		path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9fastfire_mixstock_01"/>
+		<df_nm		path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9fasthandling_mixstock_01"/>
+		<df_nm		path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9mobility_mixstock_01"/>
+		<df_nm		path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9mobility_mixstock_01_pro"/>
+		<df_nm		path="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9mobility_mixstock_02_pro"/>
+		
+		<!--Unit Material Stuff-->		
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_barrel"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_bolt"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_flash_hider"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_gadget_mount"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_irons"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_irons_folded"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_irons_up"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_magazine"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_receiver"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_optic_rail"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_scope"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_scope_steelsight"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_stock"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_stock_adapter"/>
+		
+
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_barrel_01"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_barrel_02"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_barrel_heavy_01"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_barrel_heavy_02"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_barrel_mix_01"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_barrel_mix_02"/>
+		
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_handle_01"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_handle_02"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_handle_mix_01"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_handle_mix_02"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_handle_quickdraw_01"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_handle_quickdraw_02"/>
+		
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_magazine_fast_01"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_magazine_fast_02"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_magazine_mix_01"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_magazine_mix_02"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_xmag_01"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_xmag_02"/>
+		
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_stock_mix_01"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_stock_mix_02"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_stock_sprintout_01"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_stock_sprintout_02"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_stock_stalker_01"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_stock_stalker_02"/>
+
+	</AddFiles>
+	
+	<Hooks directory="hooks">
+
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="newraycastweaponbase.lua" source_file="lib/units/weapons/newraycastweaponbase"/> 
+<!--	<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/> -->
+	</Hooks>
+</mod>
+
+
+

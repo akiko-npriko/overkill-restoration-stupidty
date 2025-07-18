@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps" extension="animation_state_machine">
+		<search>
+			<state_machine/>
+			<global name="beretta92" value="0"/>
+		</search>
+		
+		<!--Replace 'example' below with the ID of your animation.-->
+		
+		<target mode="append">
+			<global name="geasy9" value="0"/>
+			<global name="geasy9_drum" value="0"/>
+			<global name="geasy9_short" value="0"/>
+			<global name="geasy9_xmag1" value="0"/>
+			<global name="geasy9_fast" value="0"/>
+		</target>
+	</tweak>
+</tweaks>

@@ -1,0 +1,22 @@
+<dynamic_object>
+    <diesel orientation_object="rp_magazine_jungle" materials="units/mods/weapons/wpn_fps_ass_t9british_pts/wpn_fps_ass_t9british_magazine_fast_01" />
+	<animations>
+		<animation_group name="reload">
+			<object name="anim_reload" 					enabled="true" />
+		</animation_group>
+		<animation_group name="reload_not_empty">
+			<object name="anim_reload_ne" 				enabled="true" />
+		</animation_group>
+	</animations>
+	
+  <graphics>
+     <object name="g_bullet_1" enabled="true" />
+	 <object name="g_bullet_2" enabled="true" />
+	 <object name="g_bullet_3" enabled="true" />
+	 <object name="g_t9british_magazine_jungle" enabled="true" />
+	 <object name="g_t9british_magazine_jungle_spare" enabled="true" />
+	 <object name="g_t9british_fastmag_01" enabled="true" />
+
+	 
+  </graphics> 
+</dynamic_object>

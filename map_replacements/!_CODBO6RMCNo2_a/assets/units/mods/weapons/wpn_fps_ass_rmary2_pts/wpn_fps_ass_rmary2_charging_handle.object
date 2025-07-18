@@ -1,0 +1,17 @@
+<dynamic_object>
+    <diesel orientation_object="rp_charging_handle" materials="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_charging_handle" />	
+	<graphics>
+	
+	
+		<object name="g_charging_handle" enabled="true" />
+		<object name="g_charging_handle_arm" enabled="true" />
+
+
+	</graphics>
+	<animations>
+		<animation_group name="reload">
+			<object name="anim_reload_charging_handle" 			enabled="true" />
+			<object name="anim_reload_charging_handle_arm" 		enabled="true" />
+		</animation_group>
+	</animations>
+</dynamic_object>

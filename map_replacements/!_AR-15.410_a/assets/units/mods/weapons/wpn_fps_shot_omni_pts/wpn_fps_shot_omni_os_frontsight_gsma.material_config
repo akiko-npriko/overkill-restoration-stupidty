@@ -1,0 +1,12 @@
+<materials version="3" group="weapon_m16">
+    <material name="handle" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/payday2/weapons/wpn_fps_ass_m16_pts/wpn_fps_ass_m16_o_handle_sight_df"/>
+        <bump_normal_texture file="units/payday2/weapons/wpn_fps_ass_m16_pts/wpn_fps_ass_m16_o_handle_sight_nm"/>
+        <material_texture file="units/mods/weapons/wpn_fps_shot_omni_pts/wpn_fps_ass_m16_os_victor_gsma"/>
+    </material>
+	<material name="no_blurr" version="2" render_template="effect:DOF_CUTTER">
+        <variable value="10" type="scalar" name="fadeout_distance"/>
+        <diffuse_texture file="units/payday2/weapons/wpn_effects_textures/wpn_effect_no_blurr_df"/>
+        <variable value="182.69010925293" type="scalar" name="falloff_exp"/>
+    </material>
+</materials>

@@ -1,0 +1,16 @@
+<dynamic_object>
+    <diesel orientation_object="rp_wpn_fps_snp_sierra458_m_ecr" materials="units/mods/weapons/wpn_fps_snp_sierra458_ecr/wpn_fps_snp_sierra458_m_ecr" />
+   <animations>
+    <animation_group name="reload">
+      <object name="mag_align" enabled="true" />
+    </animation_group>    
+	<animation_group name="reload_not_empty">
+      <object name="mag_align_2" enabled="true" />
+    </animation_group>
+  </animations>
+  <graphics>
+        <object  name="g_wpn_fps_upg_m4_m_pmag" enabled="true" />
+		<object name="g_bullet_1" enabled="true" />
+		<object name="g_bullet_2" enabled="true" />
+  </graphics>
+</dynamic_object>

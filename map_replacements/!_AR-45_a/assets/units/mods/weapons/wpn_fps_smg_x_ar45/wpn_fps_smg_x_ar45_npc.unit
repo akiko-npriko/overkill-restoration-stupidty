@@ -1,0 +1,14 @@
+<unit type="wpn" slot="1">
+	<object file="units/mods/weapons/wpn_fps_smg_x_ar45/wpn_fps_smg_x_ar45" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_m1928_x"/>
+		<depends_on bnk="soundbanks/weapon_shepheard_x"/>
+		<depends_on bnk="soundbanks/weapon_uzi_x"/>
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="base" class="NPCAkimboWeaponBase" >
+			<var name="name_id" value="x_ar45_crew" />
+		</extension>
+	</extensions>
+</unit>

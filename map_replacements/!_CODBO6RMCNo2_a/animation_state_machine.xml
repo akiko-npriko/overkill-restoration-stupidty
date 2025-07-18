@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps" extension="animation_state_machine">
+		<search>
+			<state_machine/>
+			<global name="beretta92" value="0"/>
+		</search>
+		
+		<!--Replace 'rmary2' below with the ID of your animation.-->
+		
+		<target mode="append">
+			<global name="rmary2" value="0"/>
+			<global name="rmary2_jungle" value="0"/>
+			<global name="rmary2_drum" value="0"/>
+		</target>
+	</tweak>
+</tweaks>

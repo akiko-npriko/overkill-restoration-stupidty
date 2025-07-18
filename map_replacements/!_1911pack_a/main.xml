@@ -1,0 +1,963 @@
+<mod name="Two 1911s" author="Tangerine Paint" min_lib_ver="3.38">
+	<AssetUpdates id="52005" version="1.1" provider="modworkshop"/>
+	<Localization directory="loc" default="english.json"/>
+	<GlobalValue id="1911_paint" color="Color(0.6, 0.7, 0.4)"/>
+
+<!-- Polar 9mm stuff -->
+
+	<WeaponMod id="wpn_fps_pis_polar9_body_standard" based_on="wpn_fps_pis_1911_body_standard" type="lower_reciever" unit="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_body_standard" third_unit="units/mods/weapons/wpn_third_pis_polar9_pts/wpn_third_pis_polar9_body_standard" drop="false" is_a_unlockable="false">
+		<forbids>
+			<value_node value="wpn_fps_addon_ris"/>
+		</forbids>
+		<animations fire="recoil" reload="reload" fire_steelsight="recoil"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_polar9_sl_standard" based_on="wpn_fps_pis_1911_b_standard" type="slide" a_obj="a_sl" unit="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_b_standard" third_unit="units/payday2/weapons/wpn_third_pis_1911_pts/wpn_third_pis_1911_b_vented" drop="false" is_a_unlockable="false" inherit_adds="true">
+		<animations fire="" reload="" fire_steelsight="" magazine_empty=""/>
+		<stats/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_polar9_b_standard" based_on="wpn_fps_pis_shrew_b_barrel" type="barrel" a_obj="a_b" unit="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_b_standard" third_unit="units/payday2/weapons/wpn_third_pis_1911_pts/wpn_third_pis_1911_b_vented" drop="false" is_a_unlockable="false" inherit_adds="false" inherit_parts_adds="false" inherit_forbids="false" inherit_parts_forbids="false"/>
+
+	<WeaponMod id="wpn_fps_pis_polar9_g_standard" based_on="wpn_fps_pis_1911_g_standard" type="grip" unit="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_g_standard" third_unit="units/mods/weapons/wpn_third_pis_polar9_pts/wpn_third_pis_polar9_g_standard" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_pis_polar9_m_standard" based_on="wpn_fps_pis_1911_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_m_standard" third_unit="units/mods/weapons/wpn_third_pis_polar9_pts/wpn_third_pis_polar9_m_standard" drop="false" is_a_unlockable="false" animations="nil">
+		<animations reload_not_empty="" reload=""/>
+		<bullet_objects prefix="g_bullet_" amount="3"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_polar9_o_scopemount" based_on="wpn_fps_smg_coal_o_scopemount_standard" a_obj="a_body" type="extra" unit="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_o_scopemount" third_unit="units/mods/weapons/wpn_third_pis_polar9_pts/wpn_third_pis_polar9_o_scopemount" drop="false" is_a_unlockable="false">
+		<stance_mod>
+			<wpn_fps_pis_polar9 translation="0.0 -15 -4.15"  rotation="0 -0 -0 1"/>
+			<wpn_fps_pis_baller translation="0.0 -15 -4.15"  rotation="0 -0 -0 1"/>
+		</stance_mod>
+		<forbids>
+			<value_node value="wpn_fps_upg_o_rmr"/>
+			<value_node value="wpn_fps_upg_o_rms"/>
+			<value_node value="wpn_fps_upg_o_rikt"/>
+			<value_node value="wpn_upg_o_marksmansight_rear"/>	
+		</forbids>
+	</WeaponMod>	
+
+<!-- Mods -->
+
+	<WeaponMod id="wpn_fps_pis_polar9_g_ergo" based_on="wpn_fps_pis_1911_g_ergo" type="grip" unit="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_g_standard" third_unit="units/mods/weapons/wpn_third_pis_polar9_pts/wpn_third_pis_polar9_g_standard" drop="false" is_a_unlockable="true" global_value="1911_paint">
+		<stats concealment="1" spread="-1"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_polar9_m_extended" based_on="wpn_fps_pis_1911_m_extended" type="magazine" unit="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_m_extended" third_unit="units/mods/weapons/wpn_third_pis_polar9_pts/wpn_third_pis_polar9_m_extended" drop="false" is_a_unlockable="true" global_value="1911_paint">
+		<stats extra_ammo="5" concealment="-2"/>
+		<bullet_objects prefix="g_bullet_" amount="3"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_polar9_sl_long" based_on="wpn_fps_pis_1911_b_long" type="slide" a_obj="a_sl" unit="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_b_long" third_unit="units/mods/weapons/wpn_third_pis_polar9_pts/wpn_third_pis_polar9_b_long" drop="false" is_a_unlockable="true" inherit_adds="false" inherit_parts_adds="false" inherit_forbids="false" inherit_parts_forbids="false" inherit_weapons="false" global_value="1911_paint">
+		<override>
+			<wpn_fps_pis_polar9_b_standard unit="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_b_long" third_unit="units/mods/weapons/wpn_third_pis_polar9_pts/wpn_third_pis_polar9_b_long"/>
+		</override>
+		<animations fire="" reload="" fire_steelsight="" magazine_empty=""/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_polar9_sl_short" based_on="wpn_fps_pis_1911_b_vented" type="slide" a_obj="a_sl" unit="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_b_short" third_unit="units/mods/weapons/wpn_third_pis_polar9_pts/wpn_third_pis_polar9_b_short" drop="false" is_a_unlockable="true" inherit_adds="false" inherit_parts_adds="false" inherit_forbids="false" inherit_parts_forbids="false" inherit_weapons="false" global_value="1911_paint">
+		<stats damage="0" concealment="2" recoil="-1" spread="-2"/>
+		<override>
+			<wpn_fps_pis_polar9_b_standard unit="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_b_short" third_unit="units/mods/weapons/wpn_third_pis_polar9_pts/wpn_third_pis_polar9_b_short"/>
+			<wpn_fps_pis_1911_o_standard unit="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_o_short" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+			<wpn_fps_pis_baller_b_standard unit="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_b_short" third_unit="units/mods/weapons/wpn_third_pis_polar9_pts/wpn_third_pis_polar9_b_short"/>
+			<wpn_fps_pis_1911_o_long unit="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_o_short" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+			<wpn_fps_pis_1911_co_1 a_obj="a_co" parent="barrel"/>
+			<wpn_fps_pis_1911_co_2 a_obj="a_co" parent="barrel"/>	
+		</override>
+		<forbids>
+			<value_node value="wpn_upg_o_marksmansight_rear"/>
+		</forbids>
+		<animations fire="" reload="" fire_steelsight="" magazine_empty=""/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_polar9_g_sport" based_on="wpn_fps_pis_1911_g_engraved" type="grip" unit="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_g_sport" third_unit="units/mods/weapons/wpn_third_pis_polar9_pts/wpn_third_pis_polar9_g_standard" drop="false" is_a_unlockable="true" global_value="1911_paint">
+		<stats reload="2" recoil="0" concealment="-2"/>	
+		<adds>
+			<value_node value="wpn_fps_pis_polar9_flair_sport"/>			
+		</adds>
+		<stats/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_polar9_flair_sport" based_on="wpn_fps_pis_1911_g_standard" type="grip" a_obj="a_body" unit="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_flair_sport" third_unit="units/mods/weapons/wpn_third_pis_polar9_pts/wpn_third_pis_polar9_flair_sport" drop="false" is_a_unlockable="false"/>
+
+<!-- 1911 mod -->
+
+	<WeaponMod id="wpn_fps_pis_1911_b_short" based_on="wpn_fps_pis_1911_b_vented" type="slide" unit="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_b_short" third_unit="units/payday2/weapons/wpn_third_pis_1911_pts/wpn_third_pis_1911_b_short" drop="false" is_a_unlockable="true" inherit_adds="false" inherit_parts_adds="false" inherit_forbids="false" inherit_parts_forbids="false" inherit_weapons="false" global_value="1911_paint">
+		<stats damage="0" concealment="2" recoil="-1" spread="-2"/>
+		<override>
+			<wpn_fps_pis_1911_o_standard unit="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_o_short" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+			<wpn_fps_pis_1911_co_1 a_obj="a_co" parent="slide"/>
+			<wpn_fps_pis_1911_co_2 a_obj="a_co" parent="slide"/>	
+		</override>
+		<forbids>
+			<value_node value="wpn_upg_o_marksmansight_rear"/>
+		</forbids>
+		<weapons>
+			<value_node value="wpn_fps_pis_1911"/>
+			<value_node value="wpn_fps_x_1911"/>
+		</weapons>
+	</WeaponMod>
+
+<!-- The Gun itself -->
+
+	<Weapon unlock_level="19">
+		<weapon id="polar9" based_on="shrew" weapon_hold="colt_1911" has_description="true" desc_id="bm_polar9_desc" tactical_reload="1" texture_bundle_folder="mods" NR_CLIPS_MAX="9" CLIP_AMMO_MAX="17" global_value="1911_paint" > <!--FIRE_MODE="auto" CAN_TOGGLE_FIREMODE="true"-->
+			<use_data selection_index="1"/>
+			<stats damage="65" spread="14" spread_moving="14" recoil="15" concealment="28" />
+			<fire_mode_data fire_rate="0.09" />
+			<timers reload_not_empty="1.47" reload_empty="2.12"/>
+			<categories>
+				<value_node value="pistol"/>
+			</categories>
+			<AMMO_PICKUP>
+				<value_node value="3.83"/>
+				<value_node value="5.36"/>
+			</AMMO_PICKUP>
+			<animations reload_name_id="polar9" fire="recoil" fire_steelsight="recoil" reload_not_empty="reload_not_empty" magazine_empty="last_recoil"/>
+			<sounds fire="shrew_fire" fire_single="shrew_fire"/>
+		</weapon>
+		<factory id="wpn_fps_pis_polar9" unit="units/mods/weapons/wpn_fps_pis_polar9/wpn_fps_pis_polar9">
+			<animations reload="reload" fire="recoil" fire_steelsight="recoil" reload_not_empty="reload_not_empty" magazine_empty="last_recoil"/>
+			<optional_types>
+				<value_node value="barrel_ext"/>
+				<value_node value="gadget"/>
+				<value_node value="sight"/>
+			</optional_types>
+			<adds>
+			<!-- Rifle sights -->
+				<wpn_fps_upg_o_eotech_xps>
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_o_eotech_xps>	
+				
+				<wpn_fps_upg_o_cmore>	
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_o_cmore>			
+
+				<wpn_fps_upg_o_eotech>	
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_o_eotech>		
+				
+				<wpn_fps_upg_o_reflex>	
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_o_reflex>				
+
+				<wpn_fps_upg_o_rx01>	
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_o_rx01>				
+
+				<wpn_fps_upg_o_rx30>	
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_o_rx30>	
+				
+			<!-- Rifle gadgets -->
+				<wpn_fps_upg_fl_ass_smg_sho_surefire>
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_fl_ass_smg_sho_surefire>	
+				
+				<wpn_fps_upg_fl_ass_smg_sho_peqbox>
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_fl_ass_smg_sho_peqbox>			
+
+				<wpn_fps_upg_fl_ass_laser>
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_fl_ass_laser>	
+
+				<wpn_fps_upg_fl_ass_peq15>
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_fl_ass_peq15>	
+				
+				<wpn_fps_upg_fl_ass_utg>
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_fl_ass_utg>			
+
+				<wpn_fps_upg_fl_dbal_laser>
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_fl_dbal_laser>					
+			</adds>
+			<override>
+				<wpn_fps_pis_polar9_m_standard>
+					<animations reload_not_empty="" reload=""/> 
+				</wpn_fps_pis_polar9_m_standard>
+			
+				<wpn_fps_pis_1911_o_standard a_obj="a_o"/>
+				<wpn_fps_pis_1911_o_long a_obj="a_o"/>
+				<wpn_upg_o_marksmansight_rear>
+					<forbids>
+						<value_node value="wpn_fps_pis_1911_o_long"/>
+						<value_node value="wpn_fps_pis_1911_o_standard"/>
+					</forbids>
+				</wpn_upg_o_marksmansight_rear>
+				<wpn_upg_o_marksmansight_front a_obj="a_os"/>
+				<wpn_fps_upg_o_rmr parent="slide"/>
+				<wpn_fps_upg_o_rms parent="slide"/>
+				<wpn_fps_upg_o_rikt parent="slide"/>
+				
+				<wpn_fps_upg_ns_pis_putnik parent="barrel" a_obj="a_ns"/>
+				<wpn_fps_pis_1911_co_1 a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_pis_1911_co_2 a_obj="a_ns" parent="barrel"/>	
+				<wpn_fps_pis_g18c_co_1 a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_pis_g18c_co_comp_2 a_obj="a_ns" parent="barrel"/>				
+				<wpn_fps_upg_pis_ns_flash a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_medium_slim a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_ass_filter a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_jungle a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_large a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_medium a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_small a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_large_kac a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_medium_gem a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_ipsccomp a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_meatgrinder a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_typhoon a_obj="a_ns" parent="barrel"/>			
+
+				<wpn_fps_upg_o_eotech_xps a_obj="a_om"/>
+				<wpn_fps_upg_o_cmore a_obj="a_om"/>		
+				<wpn_fps_upg_o_eotech a_obj="a_om"/>
+				<wpn_fps_upg_o_reflex a_obj="a_om"/>		
+				<wpn_fps_upg_o_rx01 a_obj="a_om"/>
+				<wpn_fps_upg_o_rx30 a_obj="a_om"/>		
+
+
+				<wpn_fps_upg_fl_ass_smg_sho_surefire a_obj="a_flm">
+					<forbids>
+						<value_node value="wpn_fps_upg_o_eotech"/>
+						<value_node value="wpn_fps_upg_o_reflex"/>
+						<value_node value="wpn_fps_upg_o_rx01"/>	
+						<value_node value="wpn_fps_upg_o_rx30"/>	
+						<value_node value="wpn_fps_upg_o_eotech_xps"/>
+						<value_node value="wpn_fps_upg_o_cmore"/>	
+			
+						<value_node value="wpn_fps_upg_o_rmr"/>
+						<value_node value="wpn_fps_upg_o_rms"/>
+						<value_node value="wpn_fps_upg_o_rikt"/>
+						<value_node value="wpn_upg_o_marksmansight_rear"/>	
+					</forbids>
+					<stance_mod>
+						<wpn_fps_pis_polar9 rotation="-0.000947963 0.0436178 -0.00178173 -0.999046" translation="10 -1 -2.15"/>
+					</stance_mod>
+				</wpn_fps_upg_fl_ass_smg_sho_surefire>	
+				
+				<wpn_fps_upg_fl_ass_smg_sho_peqbox a_obj="a_flm">
+					<forbids>
+						<value_node value="wpn_fps_upg_o_eotech"/>
+						<value_node value="wpn_fps_upg_o_reflex"/>
+						<value_node value="wpn_fps_upg_o_rx01"/>	
+						<value_node value="wpn_fps_upg_o_rx30"/>	
+						<value_node value="wpn_fps_upg_o_eotech_xps"/>
+						<value_node value="wpn_fps_upg_o_cmore"/>	
+			
+						<value_node value="wpn_fps_upg_o_rmr"/>
+						<value_node value="wpn_fps_upg_o_rms"/>
+						<value_node value="wpn_fps_upg_o_rikt"/>
+						<value_node value="wpn_upg_o_marksmansight_rear"/>	
+					</forbids>
+					<stance_mod>
+						<wpn_fps_pis_polar9 rotation="-0.000947963 0.0436178 -0.00178173 -0.999046" translation="10 -1 -2.15"/>
+					</stance_mod>
+				</wpn_fps_upg_fl_ass_smg_sho_peqbox>			
+
+				<wpn_fps_upg_fl_ass_laser a_obj="a_flm">
+					<forbids>
+						<value_node value="wpn_fps_upg_o_eotech"/>
+						<value_node value="wpn_fps_upg_o_reflex"/>
+						<value_node value="wpn_fps_upg_o_rx01"/>	
+						<value_node value="wpn_fps_upg_o_rx30"/>	
+						<value_node value="wpn_fps_upg_o_eotech_xps"/>
+						<value_node value="wpn_fps_upg_o_cmore"/>	
+			
+						<value_node value="wpn_fps_upg_o_rmr"/>
+						<value_node value="wpn_fps_upg_o_rms"/>
+						<value_node value="wpn_fps_upg_o_rikt"/>
+						<value_node value="wpn_upg_o_marksmansight_rear"/>	
+					</forbids>
+					<stance_mod>
+						<wpn_fps_pis_polar9 rotation="-0.000947963 0.0436178 -0.00178173 -0.999046" translation="10 -1 -2.15"/>
+					</stance_mod>
+				</wpn_fps_upg_fl_ass_laser>	
+
+				<wpn_fps_upg_fl_ass_peq15 a_obj="a_flm">
+					<forbids>
+						<value_node value="wpn_fps_upg_o_eotech"/>
+						<value_node value="wpn_fps_upg_o_reflex"/>
+						<value_node value="wpn_fps_upg_o_rx01"/>	
+						<value_node value="wpn_fps_upg_o_rx30"/>	
+						<value_node value="wpn_fps_upg_o_eotech_xps"/>
+						<value_node value="wpn_fps_upg_o_cmore"/>	
+			
+						<value_node value="wpn_fps_upg_o_rmr"/>
+						<value_node value="wpn_fps_upg_o_rms"/>
+						<value_node value="wpn_fps_upg_o_rikt"/>
+						<value_node value="wpn_upg_o_marksmansight_rear"/>	
+					</forbids>
+					<stance_mod>
+						<wpn_fps_pis_polar9 rotation="-0.000947963 0.0436178 -0.00178173 -0.999046" translation="10 -1 -2.15"/>
+					</stance_mod>
+				</wpn_fps_upg_fl_ass_peq15>	
+				
+				<wpn_fps_upg_fl_ass_utg a_obj="a_flm">
+					<forbids>
+						<value_node value="wpn_fps_upg_o_eotech"/>
+						<value_node value="wpn_fps_upg_o_reflex"/>
+						<value_node value="wpn_fps_upg_o_rx01"/>	
+						<value_node value="wpn_fps_upg_o_rx30"/>	
+						<value_node value="wpn_fps_upg_o_eotech_xps"/>
+						<value_node value="wpn_fps_upg_o_cmore"/>	
+			
+						<value_node value="wpn_fps_upg_o_rmr"/>
+						<value_node value="wpn_fps_upg_o_rms"/>
+						<value_node value="wpn_fps_upg_o_rikt"/>
+						<value_node value="wpn_upg_o_marksmansight_rear"/>	
+					</forbids>
+					<stance_mod>
+						<wpn_fps_pis_polar9 rotation="-0.000947963 0.0436178 -0.00178173 -0.999046" translation="10 -1 -2.15"/>
+					</stance_mod>
+				</wpn_fps_upg_fl_ass_utg>			
+
+				<wpn_fps_upg_fl_dbal_laser a_obj="a_flm">
+					<forbids>
+						<value_node value="wpn_fps_upg_o_eotech"/>
+						<value_node value="wpn_fps_upg_o_reflex"/>
+						<value_node value="wpn_fps_upg_o_rx01"/>	
+						<value_node value="wpn_fps_upg_o_rx30"/>	
+						<value_node value="wpn_fps_upg_o_eotech_xps"/>
+						<value_node value="wpn_fps_upg_o_cmore"/>	
+			
+						<value_node value="wpn_fps_upg_o_rmr"/>
+						<value_node value="wpn_fps_upg_o_rms"/>
+						<value_node value="wpn_fps_upg_o_rikt"/>
+						<value_node value="wpn_upg_o_marksmansight_rear"/>	
+					</forbids>
+					<stance_mod>
+						<wpn_fps_pis_polar9 rotation="-0.000947963 0.0436178 -0.00178173 -0.999046" translation="10 -1 -2.15"/>
+					</stance_mod>
+				</wpn_fps_upg_fl_dbal_laser>				
+			</override>
+			<default_blueprint>
+				<value_node value="wpn_fps_pis_polar9_body_standard"/>
+				<value_node value="wpn_fps_pis_polar9_b_standard"/>
+				<value_node value="wpn_fps_pis_polar9_sl_standard"/>
+				<value_node value="wpn_fps_pis_polar9_g_standard"/>
+				<value_node value="wpn_fps_pis_polar9_m_standard"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_pis_polar9_body_standard"/>
+				<value_node value="wpn_fps_pis_polar9_b_standard"/>
+				<value_node value="wpn_fps_pis_polar9_sl_standard"/>
+				<value_node value="wpn_fps_pis_polar9_g_standard"/>
+				<value_node value="wpn_fps_pis_polar9_m_standard"/>
+
+				<value_node value="wpn_fps_pis_polar9_g_ergo"/>
+				<value_node value="wpn_fps_pis_polar9_g_sport"/>
+
+				<value_node value="wpn_fps_pis_polar9_m_extended"/>
+
+				<value_node value="wpn_fps_pis_polar9_sl_long"/>
+				<value_node value="wpn_fps_pis_polar9_sl_short"/>
+
+				<value_node value="wpn_fps_upg_ns_pis_large"/>
+				<value_node value="wpn_fps_upg_ns_pis_medium"/>
+				<value_node value="wpn_fps_upg_ns_pis_small"/>
+				<value_node value="wpn_fps_upg_ns_pis_large_kac"/>
+				<value_node value="wpn_fps_upg_ns_pis_medium_gem"/>
+				<value_node value="wpn_fps_upg_ns_pis_medium_slim"/>
+				<value_node value="wpn_fps_upg_ns_pis_jungle"/>
+				<value_node value="wpn_fps_upg_ns_pis_meatgrinder"/>
+				<value_node value="wpn_fps_upg_ns_pis_ipsccomp"/>
+				<value_node value="wpn_fps_upg_pis_ns_flash"/>
+				<value_node value="wpn_fps_pis_g18c_co_1"/>
+				<value_node value="wpn_fps_pis_g18c_co_comp_2"/>
+				<value_node value="wpn_fps_upg_ns_ass_filter"/>				
+				<value_node value="wpn_fps_upg_ns_pis_typhoon"/>	
+				<value_node value="wpn_fps_upg_ns_pis_putnik"/>	
+				<value_node value="wpn_fps_pis_1911_co_1"/>	
+				<value_node value="wpn_fps_pis_1911_co_2"/>
+				
+				<value_node value="wpn_fps_upg_fl_pis_laser"/>
+				<value_node value="wpn_fps_upg_fl_pis_tlr1"/>
+				<value_node value="wpn_fps_upg_fl_pis_crimson"/>
+				<value_node value="wpn_fps_upg_fl_pis_x400v"/>
+				<value_node value="wpn_fps_upg_fl_pis_m3x"/>
+				<value_node value="wpn_fps_upg_fl_pis_perst"/>
+				<value_node value="wpn_fps_upg_fl_pis_dbal"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/>		
+
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>	
+				<value_node value="wpn_fps_upg_o_rx30"/>	
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>	
+	
+				<value_node value="wpn_fps_upg_o_rmr"/>
+				<value_node value="wpn_fps_upg_o_rms"/>
+				<value_node value="wpn_fps_upg_o_rikt"/>
+				<value_node value="wpn_upg_o_marksmansight_rear"/>				
+			</uses_parts>
+		</factory>
+		<stance>
+			<steelsight>
+				<shoulders rotation="-0.00601608 0.00549461 0.000909395 -0.999966" translation="-8.617 0.798 2.606"/>
+			</steelsight>		
+			
+			<standard>
+				<shoulders rotation="-0.00601608 0.00549461 0.000909395 -0.999966" translation="-1.617 -9.202 -0.394"/>
+			</standard>	
+
+			<crouched>
+				<shoulder rotation="-0.00601608 0.00549461 0.000909395 -0.999966" translation="-2.617 -10.202 -1.394"/>
+			</crouched>				
+		</stance>
+	</Weapon>
+
+	<Weapon unlock_level="39">
+		<weapon id="x_polar9" based_on="x_shrew" has_description="true" desc_id="bm_polar9_desc" tactical_reload="1" texture_bundle_folder="mods" NR_CLIPS_MAX="5" CLIP_AMMO_MAX="34" global_value="1911_paint" >
+			<stats damage="65" spread="14" spread_moving="14" recoil="15" concealment="28" value="1"/>
+			<fire_mode_data fire_rate="0.08" />
+			<timers reload_not_empty="3.17" reload_empty="4"/>
+			<AMMO_PICKUP>
+				<value_node value="1.7"/>
+				<value_node value="5.95"/>
+			</AMMO_PICKUP>
+			<sounds fire="shrew_fire" fire_single="shrew_fire"/>
+			<animations reload_name_id="x_sparrow" has_steelsight_stance="true" recoil_steelsight="true" reload_not_empty="reload_right_not_empty">
+				<second_gun_versions reload_not_empty="reload_not_empty_left" reload="reload_left"/>
+			</animations>
+		</weapon>
+		<factory id="wpn_fps_pis_x_polar9" unit="units/mods/weapons/wpn_fps_pis_x_polar9/wpn_fps_pis_x_polar9">
+			<animations reload="reload_right" reload_left="reload_left" fire="recoil" fire_steelsight="recoil" reload_not_empty="reload_right_not_empty" reload_not_empty_left="reload_left_not_empty" magazine_empty="last_recoil"/>
+			<optional_types>
+				<value_node value="barrel_ext"/>
+				<value_node value="gadget"/>
+			</optional_types>
+			<adds>
+			<!-- Rifle gadgets -->
+				<wpn_fps_upg_fl_ass_smg_sho_surefire>
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_fl_ass_smg_sho_surefire>	
+				
+				<wpn_fps_upg_fl_ass_smg_sho_peqbox>
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_fl_ass_smg_sho_peqbox>			
+
+				<wpn_fps_upg_fl_ass_laser>
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_fl_ass_laser>	
+
+				<wpn_fps_upg_fl_ass_peq15>
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_fl_ass_peq15>	
+				
+				<wpn_fps_upg_fl_ass_utg>
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_fl_ass_utg>			
+
+				<wpn_fps_upg_fl_dbal_laser>
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_fl_dbal_laser>					
+			</adds>
+			<override>
+				<wpn_fps_pis_1911_o_standard a_obj="a_o"/>
+				<wpn_fps_pis_1911_o_long a_obj="a_o"/>
+
+				<wpn_fps_pis_polar9_m_extended>
+					<stats extra_ammo="10" concealment="-2"/>
+				</wpn_fps_pis_polar9_m_extended>
+			
+				<wpn_upg_o_marksmansight_rear a_obj="a_o">
+					<forbids>
+						<value_node value="wpn_fps_pis_1911_o_long"/>
+						<value_node value="wpn_fps_pis_1911_o_standard"/>
+					</forbids>
+				</wpn_upg_o_marksmansight_rear>
+				<wpn_upg_o_marksmansight_front a_obj="a_os"/>
+				<wpn_fps_upg_o_rmr parent="slide"/>
+				<wpn_fps_upg_o_rms parent="slide"/>
+				<wpn_fps_upg_o_rikt parent="slide"/>
+
+				<wpn_fps_upg_ns_pis_putnik parent="barrel" a_obj="a_ns"/>
+				<wpn_fps_pis_1911_co_1 a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_pis_1911_co_2 a_obj="a_ns" parent="barrel"/>	
+				<wpn_fps_pis_g18c_co_1 a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_pis_g18c_co_comp_2 a_obj="a_ns" parent="barrel"/>				
+				<wpn_fps_upg_pis_ns_flash a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_medium_slim a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_ass_filter a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_jungle a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_large a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_medium a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_small a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_large_kac a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_medium_gem a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_ipsccomp a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_meatgrinder a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_typhoon a_obj="a_ns" parent="barrel"/>		
+
+				<wpn_fps_upg_fl_ass_smg_sho_surefire a_obj="a_flm"/>
+				<wpn_fps_upg_fl_ass_smg_sho_peqbox a_obj="a_flm"/>			
+				<wpn_fps_upg_fl_ass_laser a_obj="a_flm"/>
+				<wpn_fps_upg_fl_ass_peq15 a_obj="a_flm"/>
+				<wpn_fps_upg_fl_ass_utg a_obj="a_flm"/>		
+				<wpn_fps_upg_fl_dbal_laser a_obj="a_flm"/>				
+			</override>
+			<default_blueprint>
+				<value_node value="wpn_fps_pis_polar9_body_standard"/>
+				<value_node value="wpn_fps_pis_polar9_b_standard"/>
+				<value_node value="wpn_fps_pis_polar9_sl_standard"/>
+				<value_node value="wpn_fps_pis_polar9_g_standard"/>
+				<value_node value="wpn_fps_pis_polar9_m_standard"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_pis_polar9_body_standard"/>
+				<value_node value="wpn_fps_pis_polar9_b_standard"/>
+				<value_node value="wpn_fps_pis_polar9_sl_standard"/>
+				<value_node value="wpn_fps_pis_polar9_g_standard"/>
+				<value_node value="wpn_fps_pis_polar9_m_standard"/>
+
+				<value_node value="wpn_fps_pis_polar9_g_ergo"/>
+				<value_node value="wpn_fps_pis_polar9_g_sport"/>
+
+				<value_node value="wpn_fps_pis_polar9_m_extended"/>
+
+				<value_node value="wpn_fps_pis_polar9_sl_long"/>
+				<value_node value="wpn_fps_pis_polar9_sl_short"/>
+
+				<value_node value="wpn_fps_upg_ns_pis_large"/>
+				<value_node value="wpn_fps_upg_ns_pis_medium"/>
+				<value_node value="wpn_fps_upg_ns_pis_small"/>
+				<value_node value="wpn_fps_upg_ns_pis_large_kac"/>
+				<value_node value="wpn_fps_upg_ns_pis_medium_gem"/>
+				<value_node value="wpn_fps_upg_ns_pis_medium_slim"/>
+				<value_node value="wpn_fps_upg_ns_pis_jungle"/>
+				<value_node value="wpn_fps_upg_ns_pis_meatgrinder"/>
+				<value_node value="wpn_fps_upg_ns_pis_ipsccomp"/>
+				<value_node value="wpn_fps_upg_pis_ns_flash"/>
+				<value_node value="wpn_fps_pis_g18c_co_1"/>
+				<value_node value="wpn_fps_pis_g18c_co_comp_2"/>
+				<value_node value="wpn_fps_upg_ns_ass_filter"/>				
+				<value_node value="wpn_fps_upg_ns_pis_typhoon"/>	
+				<value_node value="wpn_fps_upg_ns_pis_putnik"/>	
+				<value_node value="wpn_fps_pis_1911_co_1"/>	
+				<value_node value="wpn_fps_pis_1911_co_2"/>
+				
+				<value_node value="wpn_fps_upg_fl_pis_laser"/>
+				<value_node value="wpn_fps_upg_fl_pis_tlr1"/>
+				<value_node value="wpn_fps_upg_fl_pis_crimson"/>
+				<value_node value="wpn_fps_upg_fl_pis_x400v"/>
+				<value_node value="wpn_fps_upg_fl_pis_m3x"/>
+				<value_node value="wpn_fps_upg_fl_pis_perst"/>
+				<value_node value="wpn_fps_upg_fl_pis_dbal"/>		
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/>						
+			</uses_parts>
+		</factory>
+	</Weapon>
+
+<!-- Javelin 10mm stuff -->
+
+	<WeaponMod id="wpn_fps_pis_baller_body_standard" based_on="wpn_fps_pis_1911_body_standard" type="lower_reciever" unit="units/mods/weapons/wpn_fps_pis_baller_pts/wpn_fps_pis_baller_body_standard" third_unit="units/mods/weapons/wpn_third_pis_baller_pts/wpn_third_pis_baller_body_standard" drop="false" is_a_unlockable="false">
+		<forbids>
+			<value_node value="wpn_fps_addon_ris"/>
+		</forbids>
+		<animations fire="recoil" reload="reload" fire_steelsight="recoil"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_baller_sl_standard" based_on="wpn_fps_pis_1911_b_long" type="slide" a_obj="a_sl" unit="units/mods/weapons/wpn_fps_pis_baller_pts/wpn_fps_pis_baller_b_standard" third_unit="units/mods/weapons/wpn_third_pis_polar9_pts/wpn_third_pis_polar9_b_long" drop="false" is_a_unlockable="false" inherit_adds="true" supported="true">
+		<stats spread="0" recoil="0" damage="0" concealment="0" spread_moving="0"/>
+		<custom_stats/>
+		<override>
+			<wpn_fps_pis_1911_o_standard unit="units/payday2/weapons/wpn_fps_pis_1911_pts/wpn_fps_pis_1911_o_long" third_unit="units/payday2/weapons/wpn_third_pis_1911_pts/wpn_third_pis_1911_o_long"/>
+			<wpn_upg_o_marksmansight_front a_obj="a_ol"/>
+			<wpn_fps_pis_1911_co_1 a_obj="a_co" parent="barrel"/>
+			<wpn_fps_pis_1911_co_2 a_obj="a_co" parent="barrel"/>	
+		</override>
+		<animations fire="" reload="" fire_steelsight="" magazine_empty=""/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_baller_b_standard" based_on="wpn_fps_pis_shrew_b_barrel" type="barrel" a_obj="a_b" unit="units/mods/weapons/wpn_fps_pis_baller_pts/wpn_fps_pis_baller_b_standard" third_unit="units/mods/weapons/wpn_third_pis_polar9_pts/wpn_third_pis_polar9_b_long" drop="false" is_a_unlockable="false" inherit_adds="false" inherit_parts_adds="false" inherit_forbids="false" inherit_parts_forbids="false"/>
+
+	<WeaponMod id="wpn_fps_pis_baller_g_standard" based_on="wpn_fps_pis_1911_g_standard" type="grip" unit="units/mods/weapons/wpn_fps_pis_baller_pts/wpn_fps_pis_baller_g_standard" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_pis_baller_m_standard" based_on="wpn_fps_pis_1911_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_pis_baller_pts/wpn_fps_pis_baller_m_standard" drop="false" is_a_unlockable="false" animations="nil">
+	<!--<animations reload_not_empty="" reload=""/>-->
+		<bullet_objects prefix="g_bullet_" amount="3"/>
+		<animations reload_not_empty="" reload="" />
+	</WeaponMod>
+
+<!-- Mods -->
+
+	<WeaponMod id="wpn_fps_pis_baller_m_extended" based_on="wpn_fps_pis_1911_m_extended" type="magazine" unit="units/mods/weapons/wpn_fps_pis_baller_pts/wpn_fps_pis_baller_m_extended" third_unit="units/mods/weapons/wpn_third_pis_baller_pts/wpn_third_pis_baller_m_extended" drop="false" is_a_unlockable="true" global_value="1911_paint">
+		<stats extra_ammo="2" concealment="-1" reload="-1"/>
+		<bullet_objects prefix="g_bullet_" amount="3"/>
+		<pcs/>
+		<animations reload_not_empty="" reload="" />
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_baller_b_average" based_on="wpn_fps_pis_1911_b_standard" type="slide" a_obj="a_sl" unit="units/mods/weapons/wpn_fps_pis_baller_pts/wpn_fps_pis_baller_b_average" drop="false" is_a_unlockable="true" inherit_adds="true" global_value="1911_paint">
+		<stats concealment="1" spread="-1"/>
+		<override>
+			<wpn_fps_pis_baller_b_standard unit="units/mods/weapons/wpn_fps_pis_baller_pts/wpn_fps_pis_baller_b_average" third_unit="units/payday2/weapons/wpn_third_pis_1911_pts/wpn_third_pis_1911_b_standard"/>
+			<wpn_fps_pis_1911_co_1 a_obj="a_co" parent="barrel"/>
+			<wpn_fps_pis_1911_co_2 a_obj="a_co" parent="barrel"/>	
+		</override>
+		<animations fire="" reload="" fire_steelsight="" magazine_empty=""/>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_baller_m_classic" based_on="wpn_fps_pis_1911_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_pis_baller_pts/wpn_fps_pis_baller_m_classic" third_unit="units/mods/weapons/wpn_third_pis_baller_pts/wpn_third_pis_baller_m_classic" drop="false" is_a_unlockable="true" global_value="1911_paint">
+		<stats spread="-1" concealment="1"/>
+		<bullet_objects prefix="g_bullet_" amount="3"/>
+		<pcs/>
+		<weapons>
+			<value_node value="wpn_fps_pis_1911"/>
+			<value_node value="wpn_fps_x_1911"/>
+		</weapons>
+		<animations reload_not_empty="" reload="" />
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_baller_m_classic_extended" based_on="wpn_fps_pis_1911_m_extended" type="magazine" unit="units/mods/weapons/wpn_fps_pis_baller_pts/wpn_fps_pis_baller_m_classic_extended" third_unit="units/mods/weapons/wpn_third_pis_baller_pts/wpn_third_pis_baller_m_classic_extended" drop="false" is_a_unlockable="true" global_value="1911_paint">
+		<stats spread="-1" concealment="0" extra_ammo="1"/>
+		<bullet_objects prefix="g_bullet_" amount="3"/>
+		<pcs/>
+		<weapons>
+			<value_node value="wpn_fps_pis_1911"/>
+			<value_node value="wpn_fps_x_1911"/>
+		</weapons>
+		<animations reload_not_empty="" reload="" />
+	</WeaponMod>
+
+<!-- The Gun itself -->
+
+	<Weapon unlock_level="40">
+		<weapon id="baller" based_on="lemming" weapon_hold="colt_1911" has_description="true" desc_id="bm_baller_desc" tactical_reload="1" texture_bundle_folder="mods" NR_CLIPS_MAX="3" CLIP_AMMO_MAX="10" global_value="1911_paint" can_shoot_through_enemy="true" can_shoot_through_wall="true" can_shoot_through_shield="true" armor_piercing_chance="1"> <!--FIRE_MODE="auto" CAN_TOGGLE_FIREMODE="true"-->
+			<use_data selection_index="1"/>
+			<stats damage="175" spread="19" spread_moving="19" recoil="13" concealment="27" />
+			<fire_mode_data fire_rate="0.11" />
+			<timers reload_not_empty="1.47" reload_empty="2.12"/>
+			<categories>
+				<value_node value="pistol"/>
+			</categories>
+			<AMMO_PICKUP>
+				<value_node value="0.16"/>
+				<value_node value="0.625"/>
+			</AMMO_PICKUP>
+			<animations reload_name_id="baller" fire="recoil" recoil_steelsight="true" magazine_empty="last_recoil"/>
+			<sounds fire="usp45_fire" fire_single="usp45_fire"/>
+		</weapon>
+		<factory id="wpn_fps_pis_baller" unit="units/mods/weapons/wpn_fps_pis_baller/wpn_fps_pis_baller">
+			<animations reload="reload" fire="recoil" fire_steelsight="recoil" reload_not_empty="reload_not_empty" magazine_empty="last_recoil"/>
+			<optional_types>
+				<value_node value="barrel_ext"/>
+				<value_node value="gadget"/>
+				<value_node value="sight"/>
+			</optional_types>
+			<adds>
+			<!-- Rifle sights -->
+				<wpn_fps_upg_o_eotech_xps>
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_o_eotech_xps>	
+				
+				<wpn_fps_upg_o_cmore>	
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_o_cmore>			
+
+				<wpn_fps_upg_o_eotech>	
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_o_eotech>		
+				
+				<wpn_fps_upg_o_reflex>	
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_o_reflex>				
+
+				<wpn_fps_upg_o_rx01>	
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_o_rx01>				
+
+				<wpn_fps_upg_o_rx30>	
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_o_rx30>	
+				
+			<!-- Rifle gadgets -->
+				<wpn_fps_upg_fl_ass_smg_sho_surefire>
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_fl_ass_smg_sho_surefire>	
+				
+				<wpn_fps_upg_fl_ass_smg_sho_peqbox>
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_fl_ass_smg_sho_peqbox>			
+
+				<wpn_fps_upg_fl_ass_laser>
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_fl_ass_laser>	
+
+				<wpn_fps_upg_fl_ass_peq15>
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_fl_ass_peq15>	
+				
+				<wpn_fps_upg_fl_ass_utg>
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_fl_ass_utg>			
+
+				<wpn_fps_upg_fl_dbal_laser>
+					<value_node value="wpn_fps_pis_polar9_o_scopemount"/>
+				</wpn_fps_upg_fl_dbal_laser>					
+			</adds>
+			<override>
+				<wpn_upg_o_marksmansight_rear>
+					<forbids>
+						<value_node value="wpn_fps_pis_1911_o_long"/>
+						<value_node value="wpn_fps_pis_1911_o_standard"/>
+					</forbids>
+				</wpn_upg_o_marksmansight_rear>
+				<wpn_upg_o_marksmansight_front a_obj="a_os"/>
+				<wpn_fps_upg_o_rmr parent="slide"/>
+				<wpn_fps_upg_o_rms parent="slide"/>
+				<wpn_fps_upg_o_rikt parent="slide"/>
+
+				<wpn_fps_upg_ns_pis_putnik a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_pis_1911_co_1 a_obj="a_co" parent="barrel"/>
+				<wpn_fps_pis_1911_co_2 a_obj="a_co" parent="barrel"/>	
+				<wpn_fps_pis_g18c_co_1 a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_pis_g18c_co_comp_2 a_obj="a_ns" parent="barrel"/>				
+				<wpn_fps_upg_pis_ns_flash a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_medium_slim a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_ass_filter a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_jungle a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_large a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_medium a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_small a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_large_kac a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_medium_gem a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_ipsccomp a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_meatgrinder a_obj="a_ns" parent="barrel"/>
+				<wpn_fps_upg_ns_pis_typhoon a_obj="a_ns" parent="barrel"/>			
+
+				<wpn_fps_upg_o_eotech_xps a_obj="a_om"/>
+				<wpn_fps_upg_o_cmore a_obj="a_om"/>		
+				<wpn_fps_upg_o_eotech a_obj="a_om"/>
+				<wpn_fps_upg_o_reflex a_obj="a_om"/>		
+				<wpn_fps_upg_o_rx01 a_obj="a_om"/>
+				<wpn_fps_upg_o_rx30 a_obj="a_om"/>		
+
+
+				<wpn_fps_upg_fl_ass_smg_sho_surefire a_obj="a_flm">
+					<forbids>
+						<value_node value="wpn_fps_upg_o_eotech"/>
+						<value_node value="wpn_fps_upg_o_reflex"/>
+						<value_node value="wpn_fps_upg_o_rx01"/>	
+						<value_node value="wpn_fps_upg_o_rx30"/>	
+						<value_node value="wpn_fps_upg_o_eotech_xps"/>
+						<value_node value="wpn_fps_upg_o_cmore"/>	
+			
+						<value_node value="wpn_fps_upg_o_rmr"/>
+						<value_node value="wpn_fps_upg_o_rms"/>
+						<value_node value="wpn_fps_upg_o_rikt"/>
+						<value_node value="wpn_upg_o_marksmansight_rear"/>	
+					</forbids>
+					<stance_mod>
+						<wpn_fps_pis_baller rotation="-0.000947963 0.0436178 -0.00178173 -0.999046" translation="10 -1 -2.15"/>
+					</stance_mod>
+				</wpn_fps_upg_fl_ass_smg_sho_surefire>	
+				
+				<wpn_fps_upg_fl_ass_smg_sho_peqbox a_obj="a_flm">
+					<forbids>
+						<value_node value="wpn_fps_upg_o_eotech"/>
+						<value_node value="wpn_fps_upg_o_reflex"/>
+						<value_node value="wpn_fps_upg_o_rx01"/>	
+						<value_node value="wpn_fps_upg_o_rx30"/>	
+						<value_node value="wpn_fps_upg_o_eotech_xps"/>
+						<value_node value="wpn_fps_upg_o_cmore"/>	
+			
+						<value_node value="wpn_fps_upg_o_rmr"/>
+						<value_node value="wpn_fps_upg_o_rms"/>
+						<value_node value="wpn_fps_upg_o_rikt"/>
+						<value_node value="wpn_upg_o_marksmansight_rear"/>	
+					</forbids>
+					<stance_mod>
+						<wpn_fps_pis_baller rotation="-0.000947963 0.0436178 -0.00178173 -0.999046" translation="10 -1 -2.15"/>
+					</stance_mod>
+				</wpn_fps_upg_fl_ass_smg_sho_peqbox>			
+
+				<wpn_fps_upg_fl_ass_laser a_obj="a_flm">
+					<forbids>
+						<value_node value="wpn_fps_upg_o_eotech"/>
+						<value_node value="wpn_fps_upg_o_reflex"/>
+						<value_node value="wpn_fps_upg_o_rx01"/>	
+						<value_node value="wpn_fps_upg_o_rx30"/>	
+						<value_node value="wpn_fps_upg_o_eotech_xps"/>
+						<value_node value="wpn_fps_upg_o_cmore"/>	
+			
+						<value_node value="wpn_fps_upg_o_rmr"/>
+						<value_node value="wpn_fps_upg_o_rms"/>
+						<value_node value="wpn_fps_upg_o_rikt"/>
+						<value_node value="wpn_upg_o_marksmansight_rear"/>	
+					</forbids>
+					<stance_mod>
+						<wpn_fps_pis_baller rotation="-0.000947963 0.0436178 -0.00178173 -0.999046" translation="10 -1 -2.15"/>
+					</stance_mod>
+				</wpn_fps_upg_fl_ass_laser>	
+
+				<wpn_fps_upg_fl_ass_peq15 a_obj="a_flm">
+					<forbids>
+						<value_node value="wpn_fps_upg_o_eotech"/>
+						<value_node value="wpn_fps_upg_o_reflex"/>
+						<value_node value="wpn_fps_upg_o_rx01"/>	
+						<value_node value="wpn_fps_upg_o_rx30"/>	
+						<value_node value="wpn_fps_upg_o_eotech_xps"/>
+						<value_node value="wpn_fps_upg_o_cmore"/>	
+			
+						<value_node value="wpn_fps_upg_o_rmr"/>
+						<value_node value="wpn_fps_upg_o_rms"/>
+						<value_node value="wpn_fps_upg_o_rikt"/>
+						<value_node value="wpn_upg_o_marksmansight_rear"/>	
+					</forbids>
+					<stance_mod>
+						<wpn_fps_pis_baller rotation="-0.000947963 0.0436178 -0.00178173 -0.999046" translation="10 -1 -2.15"/>
+					</stance_mod>
+				</wpn_fps_upg_fl_ass_peq15>	
+				
+				<wpn_fps_upg_fl_ass_utg a_obj="a_flm">
+					<forbids>
+						<value_node value="wpn_fps_upg_o_eotech"/>
+						<value_node value="wpn_fps_upg_o_reflex"/>
+						<value_node value="wpn_fps_upg_o_rx01"/>	
+						<value_node value="wpn_fps_upg_o_rx30"/>	
+						<value_node value="wpn_fps_upg_o_eotech_xps"/>
+						<value_node value="wpn_fps_upg_o_cmore"/>	
+			
+						<value_node value="wpn_fps_upg_o_rmr"/>
+						<value_node value="wpn_fps_upg_o_rms"/>
+						<value_node value="wpn_fps_upg_o_rikt"/>
+						<value_node value="wpn_upg_o_marksmansight_rear"/>	
+					</forbids>
+					<stance_mod>
+						<wpn_fps_pis_baller rotation="-0.000947963 0.0436178 -0.00178173 -0.999046" translation="10 -1 -2.15"/>
+					</stance_mod>
+				</wpn_fps_upg_fl_ass_utg>			
+
+				<wpn_fps_upg_fl_dbal_laser a_obj="a_flm">
+					<forbids>
+						<value_node value="wpn_fps_upg_o_eotech"/>
+						<value_node value="wpn_fps_upg_o_reflex"/>
+						<value_node value="wpn_fps_upg_o_rx01"/>	
+						<value_node value="wpn_fps_upg_o_rx30"/>	
+						<value_node value="wpn_fps_upg_o_eotech_xps"/>
+						<value_node value="wpn_fps_upg_o_cmore"/>	
+			
+						<value_node value="wpn_fps_upg_o_rmr"/>
+						<value_node value="wpn_fps_upg_o_rms"/>
+						<value_node value="wpn_fps_upg_o_rikt"/>
+						<value_node value="wpn_upg_o_marksmansight_rear"/>	
+					</forbids>
+					<stance_mod>
+						<wpn_fps_pis_baller rotation="-0.000947963 0.0436178 -0.00178173 -0.999046" translation="10 -1 -2.15"/>
+					</stance_mod>
+				</wpn_fps_upg_fl_dbal_laser>				
+			</override>
+			<default_blueprint>
+				<value_node value="wpn_fps_pis_baller_body_standard"/>
+				<value_node value="wpn_fps_pis_baller_sl_standard"/>
+				<value_node value="wpn_fps_pis_baller_b_standard"/>
+				<value_node value="wpn_fps_pis_baller_g_standard"/>
+				<value_node value="wpn_fps_pis_baller_m_standard"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_pis_baller_body_standard"/>
+				<value_node value="wpn_fps_pis_baller_sl_standard"/>
+				<value_node value="wpn_fps_pis_baller_b_standard"/>
+				<value_node value="wpn_fps_pis_baller_g_standard"/>
+				<value_node value="wpn_fps_pis_baller_m_standard"/>
+
+				<value_node value="wpn_fps_pis_1911_g_ergo"/>
+				<value_node value="wpn_fps_pis_1911_g_bling"/>
+				<value_node value="wpn_fps_pis_1911_g_engraved"/>
+
+				<value_node value="wpn_fps_pis_baller_m_extended"/>
+				<value_node value="wpn_fps_pis_baller_m_classic"/>
+				<value_node value="wpn_fps_pis_baller_m_classic_extended"/>
+
+			<!--<value_node value="wpn_fps_pis_baller_body_modern"/>-->
+
+				<value_node value="wpn_fps_pis_polar9_sl_short"/>
+				<value_node value="wpn_fps_pis_baller_b_average"/>
+
+				<value_node value="wpn_fps_upg_ns_pis_large"/>
+				<value_node value="wpn_fps_upg_ns_pis_medium"/>
+				<value_node value="wpn_fps_upg_ns_pis_small"/>
+				<value_node value="wpn_fps_upg_ns_pis_large_kac"/>
+				<value_node value="wpn_fps_upg_ns_pis_medium_gem"/>
+				<value_node value="wpn_fps_upg_ns_pis_medium_slim"/>
+				<value_node value="wpn_fps_upg_ns_pis_jungle"/>
+				<value_node value="wpn_fps_upg_ns_pis_meatgrinder"/>
+				<value_node value="wpn_fps_upg_ns_pis_ipsccomp"/>
+				<value_node value="wpn_fps_upg_pis_ns_flash"/>
+				<value_node value="wpn_fps_pis_g18c_co_1"/>
+				<value_node value="wpn_fps_pis_g18c_co_comp_2"/>
+				<value_node value="wpn_fps_upg_ns_ass_filter"/>				
+				<value_node value="wpn_fps_upg_ns_pis_typhoon"/>	
+				<value_node value="wpn_fps_upg_ns_pis_putnik"/>	
+				<value_node value="wpn_fps_pis_1911_co_1"/>	
+				<value_node value="wpn_fps_pis_1911_co_2"/>
+				
+				<value_node value="wpn_fps_upg_fl_pis_laser"/>
+				<value_node value="wpn_fps_upg_fl_pis_tlr1"/>
+				<value_node value="wpn_fps_upg_fl_pis_crimson"/>
+				<value_node value="wpn_fps_upg_fl_pis_x400v"/>
+				<value_node value="wpn_fps_upg_fl_pis_m3x"/>
+				<value_node value="wpn_fps_upg_fl_pis_perst"/>
+				<value_node value="wpn_fps_upg_fl_pis_dbal"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/>		
+
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>	
+				<value_node value="wpn_fps_upg_o_rx30"/>	
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>	
+	
+				<value_node value="wpn_fps_upg_o_rmr"/>
+				<value_node value="wpn_fps_upg_o_rms"/>
+				<value_node value="wpn_fps_upg_o_rikt"/>
+				<value_node value="wpn_upg_o_marksmansight_rear"/>				
+			</uses_parts>
+		</factory>
+		<stance>
+			<steelsight>
+				<shoulders rotation="-0.00601608 0.00549461 0.000909395 -0.999966" translation="-8.617 0.798 2.606"/>
+			</steelsight>		
+			
+			<standard>
+				<shoulders rotation="-0.00601608 0.00549461 0.000909395 -0.999966" translation="-1.617 -9.202 -0.394"/>
+			</standard>	
+
+			<crouched>
+				<shoulder rotation="-0.00601608 0.00549461 0.000909395 -0.999966" translation="-2.617 -10.202 -1.394"/>
+			</crouched>				
+		</stance>
+	</Weapon>
+
+	<Hooks directory="hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="weaponfactorytweakdata_1911_sc.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
+	</Hooks>
+	
+	<AddFiles directory="assets" auto_generate="true"/>
+	
+</mod>

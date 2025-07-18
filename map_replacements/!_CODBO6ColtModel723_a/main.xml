@@ -1,0 +1,1035 @@
+	<mod name="Black Ops 6 Colt Model 723" author="RJC9000 and Masavik" min_lib_ver="3.38">
+	<AssetUpdates id="45957" version="1.00" provider="modworkshop"/>
+	<Localization directory="loc" default="english.txt">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	<GlobalValue id="coslo723_mod" color="Color(0.8, 0.1, 0.1)"/>
+	
+<!-- Universal -->
+
+	<WeaponMod id="wpn_fps_ass_coslo723_bolt" based_on="wpn_fps_amcar_bolt_standard" type="bolt"  unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_bolt" hidden="true" global_value="coslo723_mod" ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_stock_adapter" based_on="wpn_fps_upg_m4_s_adapter" type="stock_adapter" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_stock_adapter" hidden="true" global_value="coslo723_mod"  ver="2">
+	</WeaponMod>
+	
+<!-- Barrel/Handguard -->
+	<WeaponMod id="wpn_fps_ass_coslo723_barrel" based_on="wpn_fps_m4_uupg_b_medium_vanilla" type="barrel" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_barrel" hidden="true" global_value="coslo723_mod" ver="2">
+		<adds>
+				<value_node value="wpn_fps_ass_coslo723_handguard"/>
+	    </adds>
+		<forbids>		
+			<value_node value="wpn_fps_ass_coslo723_gadget_leftrail"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_toprail"/>
+			
+				<value_node value="wpn_fps_upg_gadget_heartsensor"/>	
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/> 
+		</forbids>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_barrel_14" based_on="wpn_fps_m4_uupg_b_medium_vanilla" type="barrel" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_barrel_14" hidden="false" global_value="coslo723_mod" ver="2">
+		<adds>
+			<value_node value="wpn_fps_ass_coslo723_handguard"/>
+	    </adds>
+		<override>
+			<wpn_fps_ass_coslo723_flash_hider 		a_obj="a_ns14_flash_hider" parent="barrel" />
+			<wpn_fps_ass_coslo723_suppressor_ae_m4 		a_obj="a_ns_ae_m4" parent="barrel" />
+		</override> 
+		<forbids>		
+			<value_node value="wpn_fps_ass_coslo723_gadget_leftrail"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_toprail"/>
+			
+				<value_node value="wpn_fps_upg_gadget_heartsensor"/>	
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/> 
+		</forbids>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_barrel_10" based_on="wpn_fps_m4_uupg_b_short" type="barrel" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_barrel_10" hidden="false" has_description="true" global_value="coslo723_mod" ver="2">
+		<adds>
+				<value_node value="wpn_fps_ass_coslo723_handguard"/>
+	    </adds>
+		<forbids>
+			<value_node value="wpn_fps_ass_coslo723_suppressor_ae_m4"/>
+		</forbids>
+		<forbids>		
+			<value_node value="wpn_fps_ass_coslo723_gadget_leftrail"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_toprail"/>
+			
+				<value_node value="wpn_fps_upg_gadget_heartsensor"/>	
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/> 
+		</forbids>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_barrel_heat" based_on="wpn_fps_m4_uupg_b_short" type="barrel" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_barrel_heat" hidden="false" has_description="true" global_value="coslo723_mod" ver="2">
+		<adds>
+				<value_node value="wpn_fps_ass_coslo723_handguard"/>
+	    </adds>
+		<forbids>
+			<value_node value="wpn_fps_ass_coslo723_suppressor_ae_m4"/>
+		</forbids>
+		<forbids>		
+			<value_node value="wpn_fps_ass_coslo723_gadget_leftrail"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_toprail"/>
+			
+				<value_node value="wpn_fps_upg_gadget_heartsensor"/>	
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/> 
+		</forbids>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_handguard" based_on="wpn_fps_amcar_uupg_fg_amcar"  type="foregrip" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_handguard" hidden="true" global_value="coslo723_mod"  ver="2">
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_ass_coslo723_barrel_grenadier" based_on="wpn_fps_m4_uupg_b_long" type="barrel" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_barrel_range" hidden="false" has_description="true" global_value="coslo723_mod" ver="2">
+		<adds>
+			<value_node value="wpn_fps_ass_coslo723_handguard_grenadier"/>
+	    </adds>
+		<override>
+			<wpn_fps_ass_coslo723_gas_block 			unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gas_block_range" />
+			<wpn_fps_ass_coslo723_gas_block_classic 	unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gas_block_range_classic" />
+			<wpn_fps_ass_coslo723_suppressor_ae_m4 		a_obj="a_ns_ae_m4" parent="barrel" />
+		</override> 
+		<forbids>
+			<value_node value="wpn_fps_ass_coslo723_gadget_surefire660"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_surefire660_combo"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_surefire660_diamond"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_qxl3"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_leftrail"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_toprail"/>
+		</forbids>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_handguard_grenadier" based_on="wpn_fps_upg_ass_m4_fg_moe"  type="foregrip" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_handguard_grenadier" hidden="true" global_value="coslo723_mod"  ver="2">
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_ass_coslo723_barrel_mix" based_on="wpn_fps_m4_uupg_b_medium_vanilla" type="barrel" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_barrel_mix" hidden="false" global_value="coslo723_mod" ver="2">
+		<adds>
+			<value_node value="wpn_fps_ass_coslo723_handguard_mix"/>
+	    </adds>
+		<forbids>
+			<value_node value="wpn_fps_ass_coslo723_gadget_surefire660"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_surefire660_combo"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_surefire660_diamond"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_qxl3"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_toprail"/>
+		</forbids>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_handguard_mix" based_on="wpn_fps_upg_ass_m4_fg_moe"  type="foregrip" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_handguard_mix" hidden="true" global_value="coslo723_mod"  ver="2">
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_ass_coslo723_barrel_range" based_on="wpn_fps_m4_uupg_b_long" type="barrel" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_barrel_range" hidden="false" has_description="true" global_value="coslo723_mod" ver="2">
+		<adds>
+				<value_node value="wpn_fps_ass_coslo723_handguard_range"/>
+	    </adds>
+		<override>
+			<wpn_fps_ass_coslo723_gas_block 			unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gas_block_range" />
+			<wpn_fps_ass_coslo723_gas_block_classic 	unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gas_block_range_classic" />
+			<wpn_fps_ass_coslo723_suppressor_ae_m4 		a_obj="a_ns_ae_m4" parent="barrel" />
+		</override> 
+		<forbids>
+			<value_node value="wpn_fps_ass_coslo723_gadget_surefire660"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_surefire660_combo"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_surefire660_diamond"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_leftrail"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_toprail"/>
+			
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/> 
+		</forbids>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_handguard_range" based_on="wpn_fps_m16_fg_standard"  type="foregrip" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_handguard_range" hidden="true" global_value="coslo723_mod"  ver="2">
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_ass_coslo723_barrel_short_hical1" based_on="wpn_fps_m4_uupg_b_short" type="barrel" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_barrel_short_hical1" hidden="false" has_description="true" global_value="coslo723_mod" ver="2">
+		<adds>
+				<value_node value="wpn_fps_ass_coslo723_handguard_short_hical1"/>
+	    </adds>
+		<override>
+			<wpn_fps_ass_coslo723_gas_block 			unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gas_block_short_hical1" />
+			<wpn_fps_ass_coslo723_gas_block_classic 	unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gas_block_short_hical1_classic" />
+		</override> 
+		<forbids>
+			<value_node value="wpn_fps_ass_coslo723_suppressor_ae_m4"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_surefire660"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_surefire660_combo"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_surefire660_diamond"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_qxl3"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_leftrail"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_toprail"/>
+		</forbids>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_handguard_short_hical1" based_on="wpn_fps_upg_ass_m4_fg_moe"  type="foregrip" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_handguard_short_hical1" hidden="true" global_value="coslo723_mod"  ver="2">
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_ass_coslo723_barrel_short_hical2" based_on="wpn_fps_m4_uupg_b_medium_vanilla" type="barrel" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_barrel_short_hical2" hidden="false" has_description="true" global_value="coslo723_mod" ver="2">
+		<adds>
+				<value_node value="wpn_fps_ass_coslo723_handguard_short_hical2"/>
+	    </adds>
+		<override>
+			<wpn_fps_ass_coslo723_gas_block 			unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gas_block_short_hical2" />
+			<wpn_fps_ass_coslo723_gas_block_classic 	unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gas_block_short_hical2_classic" />
+		</override> 
+		<forbids>
+			<value_node value="wpn_fps_ass_coslo723_suppressor_ae_m4"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_surefire660"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_surefire660_combo"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_surefire660_diamond"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_qxl3"/>
+		</forbids>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_handguard_short_hical2" based_on="wpn_fps_upg_ass_m4_fg_moe"  type="foregrip" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_handguard_short_hical2" hidden="true" global_value="coslo723_mod"  ver="2">
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_coslo723_barrel_velocity" based_on="wpn_fps_m4_uupg_b_medium_vanilla" type="barrel" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_barrel_velocity" hidden="false" has_description="true" global_value="coslo723_mod" ver="2">
+		<adds>
+			<value_node value="wpn_fps_ass_coslo723_handguard_velocity"/>
+	    </adds>
+		<override>
+			<wpn_fps_ass_coslo723_gas_block 			unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gas_block_velocity" />
+			<wpn_fps_ass_coslo723_gas_block_classic 	unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gas_block_velocity_classic" />
+		</override> 
+		<forbids>
+			<value_node value="wpn_fps_ass_coslo723_suppressor_ae_m4"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_surefire660"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_surefire660_combo"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_surefire660_diamond"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_qxl3"/>
+		</forbids>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_handguard_velocity" based_on="wpn_fps_upg_ass_m4_fg_moe"  type="foregrip" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_handguard_velocity" hidden="true" global_value="coslo723_mod"  ver="2">
+	</WeaponMod>
+
+<!-- Charging Handle -->
+	<WeaponMod id="wpn_fps_ass_coslo723_charging_handle" based_on="wpn_fps_m4_uupg_draghandle" type="drag_handle"  unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_charging_handle" hidden="true" global_value="coslo723_mod" ver="2">
+	</WeaponMod> 	
+
+<!-- Gas Block -->
+	<WeaponMod id="wpn_fps_ass_coslo723_gas_block" based_on="wpn_fps_m4_uupg_fg_rail_ext" type="gas_block" a_obj="a_gas_block"  unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gas_block" hidden="false" global_value="coslo723_mod" ver="2">
+		<forbids>
+			<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+			<value_node value="wpn_fps_upg_o_sig"/>
+			<value_node value="wpn_fps_ass_coslo723_irons_rear"/>
+		</forbids>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_gas_block_classic" based_on="wpn_fps_m4_uupg_fg_rail_ext" type="gas_block" a_obj="a_gas_block" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gas_block_classic" hidden="true" global_value="coslo723_mod" ver="2">
+	</WeaponMod>
+
+<!-- Gadget -->
+	<WeaponMod id="wpn_fps_ass_coslo723_gadget_qxl3" based_on="wpn_fps_upg_fl_ass_smg_sho_surefire" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gadget_qxl3" a_obj="a_fg"  hidden="false" inherit_adds="false" global_value="coslo723_mod" ver="2">
+		<stats concealment="0" recoil="0" spread="0"/>
+		<forbids>
+			<value_node value="wpn_fps_ass_coslo723_barrel_grenadier"/>
+			<value_node value="wpn_fps_ass_coslo723_barrel_mix"/>
+			<value_node value="wpn_fps_ass_coslo723_barrel_short_hical1"/>
+			<value_node value="wpn_fps_ass_coslo723_barrel_short_hical2"/>
+			<value_node value="wpn_fps_ass_coslo723_barrel_velocity"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_leftrail"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_toprail"/>
+		</forbids>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_gadget_surefire660" based_on="wpn_fps_upg_fl_ass_smg_sho_surefire" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gadget_surefire660" a_obj="a_fl" inherit_adds="false"  hidden="false" global_value="coslo723_mod" ver="2">
+		<stats spread="1" recoil="-1" concealment="0"/>
+		<forbids>
+			<value_node value="wpn_fps_ass_coslo723_barrel_grenadier"/>
+			<value_node value="wpn_fps_ass_coslo723_barrel_mix"/>
+			<value_node value="wpn_fps_ass_coslo723_barrel_short_hical1"/>
+			<value_node value="wpn_fps_ass_coslo723_barrel_short_hical2"/>
+			<value_node value="wpn_fps_ass_coslo723_barrel_range"/>
+			<value_node value="wpn_fps_ass_coslo723_barrel_velocity"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_leftrail"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_toprail"/>
+		</forbids>
+		<override>
+			<wpn_fps_ass_coslo723_handguard 	unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_handguard_gordon" />
+		</override> 
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_gadget_surefire660_diamond" based_on="wpn_fps_upg_fl_ass_smg_sho_surefire" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gadget_surefire660_diamond" a_obj="a_fl" inherit_adds="false"  hidden="false" global_value="coslo723_mod" ver="2">
+		<stats spread="1" recoil="-1" concealment="0"/>
+		<forbids>
+			<value_node value="wpn_fps_ass_coslo723_barrel_grenadier"/>
+			<value_node value="wpn_fps_ass_coslo723_barrel_mix"/>
+			<value_node value="wpn_fps_ass_coslo723_barrel_short_hical1"/>
+			<value_node value="wpn_fps_ass_coslo723_barrel_short_hical2"/>
+			<value_node value="wpn_fps_ass_coslo723_barrel_range"/>
+			<value_node value="wpn_fps_ass_coslo723_barrel_velocity"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_leftrail"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_toprail"/>
+		</forbids>
+		<override>
+			<wpn_fps_ass_coslo723_handguard 	unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_handguard_diamond" />
+		</override> 
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_gadget_surefire660_combo" based_on="wpn_fps_upg_fl_ass_utg" type="gadget" a_obj="a_fl" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gadget_surefire660_combo" drop="false" inherit_adds="true" hidden="false" global_value="coslo723_mod" ver="2">
+			<stats spread="1" recoil="-1" concealment="0"/>
+		<forbids>
+			<value_node value="wpn_fps_ass_coslo723_barrel_grenadier"/>
+			<value_node value="wpn_fps_ass_coslo723_barrel_mix"/>
+			<value_node value="wpn_fps_ass_coslo723_barrel_short_hical1"/>
+			<value_node value="wpn_fps_ass_coslo723_barrel_short_hical2"/>
+			<value_node value="wpn_fps_ass_coslo723_barrel_range"/>
+			<value_node value="wpn_fps_ass_coslo723_barrel_velocity"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_leftrail"/>
+			<value_node value="wpn_fps_ass_coslo723_gadget_toprail"/>
+		</forbids>
+		<override>
+			<wpn_fps_ass_coslo723_handguard 	unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_handguard_gordon" />
+		</override> 
+	</WeaponMod>	
+
+<!-- Gadget Placement -->
+	<WeaponMod id="wpn_fps_ass_coslo723_gadget_leftrail" based_on="wpn_fps_shot_r870_ris_special" type="gadget_placement" depends_on="gadget" has_description="true" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" ver="2">
+		<override>
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="foregrip" a_obj="a_fl_left"/>
+			<wpn_fps_upg_fl_ass_smg_sho_surefire parent="foregrip" a_obj="a_fl_left"/>
+			<wpn_fps_upg_fl_ass_peq15 parent="foregrip" a_obj="a_fl_left"/>
+			<wpn_fps_upg_fl_ass_laser parent="foregrip" a_obj="a_fl_left"/>
+			<wpn_fps_upg_fl_ass_utg parent="foregrip" a_obj="a_fl_left"/>
+			<wpn_fps_upg_fl_dbal_laser parent="foregrip" a_obj="a_fl_left"/>
+		</override>
+		<forbids>
+			<value_node value="wpn_fps_upg_gadget_heartsensor"/>
+						
+		</forbids>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_gadget_toprail" based_on="wpn_fps_shot_r870_ris_special" type="gadget_placement" depends_on="gadget" has_description="true" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" ver="2">
+		<override>
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="foregrip" a_obj="a_fl_top"/>
+			<wpn_fps_upg_fl_ass_smg_sho_surefire  parent="foregrip" a_obj="a_fl_top"/>
+			<wpn_fps_upg_fl_ass_peq15 parent="foregrip" a_obj="a_fl_top"/>
+			<wpn_fps_upg_fl_ass_laser parent="foregrip" a_obj="a_fl_top"/>
+			<wpn_fps_upg_fl_ass_utg parent="foregrip" a_obj="a_fl_top"/>
+			<wpn_fps_upg_fl_dbal_laser parent="foregrip" a_obj="a_fl_top"/>
+			<wpn_fps_addon_ris unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+		</override>
+		<forbids>
+			<value_node value="wpn_fps_upg_gadget_heartsensor"/>
+			
+		</forbids>
+	</WeaponMod>
+
+
+<!-- Pistol Grip -->
+	<WeaponMod id="wpn_fps_ass_coslo723_grip" 		   based_on="wpn_fps_snp_victor_g_mod3" type="grip" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_grip" hidden="true" global_value="coslo723_mod" ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_grip_mix" 		   based_on="wpn_fps_snp_victor_g_mod3" type="grip" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_grip_mix" hidden="false" global_value="coslo723_mod" ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_grip_quickdraw" 		   based_on="wpn_fps_snp_victor_g_mod3" type="grip" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_grip_quickdraw" hidden="false" global_value="coslo723_mod" ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_grip_quickdraw2" 		   based_on="wpn_fps_snp_victor_g_mod3" type="grip" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_grip_quickdraw2" hidden="false" global_value="coslo723_mod" ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_grip_sprintout" 		   based_on="wpn_fps_snp_victor_g_mod3" type="grip" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_grip_sprintout" hidden="false" global_value="coslo723_mod" ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_grip_sprintout2" 		   based_on="wpn_fps_snp_victor_g_mod3" type="grip" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_grip_sprintout2" hidden="false" global_value="coslo723_mod" ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_grip_a2" 		   based_on="wpn_fps_snp_victor_g_mod3" type="grip" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_grip_a2" hidden="false" global_value="coslo723_mod" ver="2">
+	</WeaponMod>
+
+<!-- Iron Sights -->
+	<WeaponMod id="wpn_fps_ass_coslo723_irons_rear" based_on="wpn_fps_m4_uupg_o_flipup" type="sight" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" hidden="true" global_value="coslo723_mod" ver="2">
+		<stance_mod>
+				<wpn_fps_ass_coslo723 translation="0 -8 0.3" /> 
+		</stance_mod>
+		<forbids>
+			<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+			<value_node value="wpn_fps_upg_o_sig"/>
+			<value_node value="wpn_fps_ass_coslo723_gas_block"/>
+		</forbids>
+		<override>
+			<wpn_fps_ass_coslo723_receiver_upper 	unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_receiver_upper_c7" />
+			<wpn_fps_ass_coslo723_receiver_upper_a2 	unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_receiver_upper_a2" />
+		</override> 
+	</WeaponMod>
+
+	
+	<WeaponMod id="wpn_fps_ass_coslo723_optic_aimpoint2000" based_on="wpn_fps_upg_o_aimpoint" type="sight" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_optic_aimpoint2000"  steelsight_visible="false" inherit_adds="false" inherit_override="true" inherit_parts_forbids="true" global_value="coslo723_mod" ver="2">
+		<stats recoil="0" concealment="0" zoom="1"/>
+		<forbids>
+			<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+			<value_node value="wpn_fps_upg_o_sig"/>
+		</forbids>	
+		<adds>
+			<value_node value="wpn_fps_ass_coslo723_optic_aimpoint2000_steelsight"/>
+		</adds> 
+		<override>
+			<wpn_fps_ass_coslo723_receiver_upper 	unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_receiver_upper_c7" />
+			<wpn_fps_ass_coslo723_receiver_upper_a2 	unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_receiver_upper_a2" />
+		</override> 
+		<stance_mod>
+			<wpn_fps_ass_coslo723 translation="0 -2 -2.6"/>
+		</stance_mod>
+	</WeaponMod> 
+	<WeaponMod id="wpn_fps_ass_coslo723_optic_aimpoint2000_steelsight" based_on="wpn_fps_upg_o_specter_steelsight" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_optic_aimpoint2000_steelsight"	hidden="true" ver="2">
+	</WeaponMod> 
+
+	<WeaponMod id="wpn_fps_ass_coslo723_optic_acog" based_on="wpn_fps_upg_o_specter" type="sight" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_optic_acog"  desc_id="bm_wp_upg_o_piggyback_desc" steelsight_visible="false" inherit_adds="false" inherit_override="true" inherit_parts_forbids="true" global_value="coslo723_mod" ver="2">
+		<stats recoil="0" concealment="0" zoom="4"/>
+		<forbids>
+			<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+			<value_node value="wpn_fps_upg_o_sig"/>
+			<value_node value="wpn_fps_ass_coslo723_gas_block"/>
+		</forbids>	
+		<adds>
+			<value_node value="wpn_fps_ass_coslo723_optic_acog_steelsight"/>
+			<value_node value="wpn_fps_ass_coslo723_optic_aimpoint2000_piggyback"/>
+		</adds> 
+		<override>
+			<wpn_fps_ass_coslo723_receiver_upper 	unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_receiver_upper_c7" />
+			<wpn_fps_ass_coslo723_receiver_upper_a2 	unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_receiver_upper_a2" />
+		</override> 
+		<stance_mod>
+			<wpn_fps_ass_coslo723 translation="0 -9 -1.693"/>
+		</stance_mod>
+	</WeaponMod> 
+	<WeaponMod id="wpn_fps_ass_coslo723_optic_acog_steelsight" based_on="wpn_fps_upg_o_specter_steelsight" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_optic_acog_steelsight"	hidden="true" ver="2">
+	</WeaponMod> 
+	<WeaponMod id="wpn_fps_ass_coslo723_optic_aimpoint2000_piggyback" based_on="wpn_fps_upg_o_specter_piggyback"  desc_id="bm_wp_upg_o_piggyback_desc" type="second_sight" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_optic_aimpoint2000_piggyback"	hidden="true" ver="2">
+		<stance_mod>
+			<wpn_fps_ass_coslo723 translation="0 -5 0.4"/>
+		</stance_mod>
+	</WeaponMod> 
+
+<!-- Magazine -->
+	<WeaponMod id="wpn_fps_ass_coslo723_magazine" based_on="wpn_fps_m4_uupg_m_std_vanilla" type="magazine" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_magazine" hidden="true" has_description="true" global_value="coslo723_mod" ver="2">
+			<stats spread="0" recoil="0" damage="0" concealment="0" reload="0"/>
+		<bullet_objects prefix = "g_bullet_" amount="5"/>
+		<reload_objects reload="g_follower" />	
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_magazine_fastreload1" based_on="wpn_fps_m4_uupg_m_std_vanilla" type="magazine" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_magazine_fastreload1" hidden="false" has_description="true" global_value="coslo723_mod" ver="2">
+			<stats extra_ammo="0" concealment="-1" reload="1"/>
+		<bullet_objects prefix = "g_bullet_" amount="5"/>
+		<reload_objects reload="g_follower" />	
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_magazine_fastreload2" based_on="wpn_fps_m4_uupg_m_std_vanilla" type="magazine" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_magazine_fastreload2" hidden="false" has_description="true" global_value="coslo723_mod" ver="2">
+			<stats extra_ammo="-5" concealment="1" reload="2"/>
+		<bullet_objects prefix = "g_bullet_" amount="5"/>
+		<reload_objects reload="g_follower" />	
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_magazine_ext" based_on="wpn_fps_m4_uupg_m_std_vanilla" type="magazine" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_magazine_ext" hidden="false" has_description="true" global_value="coslo723_mod" ver="2">
+		<stats extra_ammo="8" concealment="-2" reload="0"/>
+		<bullet_objects prefix = "g_bullet_" amount="5"/>
+		<reload_objects reload="g_follower" />	
+		<custom_stats ammo_offset="-1">
+		</custom_stats>	
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_magazine_box" based_on="wpn_fps_m4_uupg_m_std_vanilla" type="magazine" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_magazine_box" hidden="false" has_description="true" global_value="coslo723_mod" ver="2">
+			<stats extra_ammo="15" concealment="-3" reload="-1"/>
+		<bullet_objects prefix = "g_bullet_" amount="5"/>
+		<reload_objects reload="g_follower" />	
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_magazine_drum" based_on="wpn_fps_m4_uupg_m_std_vanilla" type="magazine" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_magazine_drum" hidden="false" has_description="true" global_value="coslo723_mod" ver="2">
+			<stats extra_ammo="35" total_ammo_mod="8" concealment="-5" reload="-2"/>
+		<bullet_objects prefix = "g_bullet_" amount="5"/>
+		<reload_objects reload="g_follower" />	
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_magazine_flip" based_on="wpn_fps_m4_uupg_m_std_vanilla" type="magazine" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_magazine_flip" hidden="false" has_description="true" global_value="coslo723_mod" ver="2">
+		<stats extra_ammo="-2" total_ammo_mod="0" concealment="0" reload="2"/>
+		<bullet_objects prefix = "g_bullet_" amount="5"/>
+		<reload_objects reload="g_follower" />
+		<custom_stats ammo_offset="-1">
+		</custom_stats>	
+	</WeaponMod>
+
+
+<!-- Receiver -->
+	<WeaponMod id="wpn_fps_ass_coslo723_receiver_lower" based_on="wpn_fps_m4_lower_reciever" type="lower_reciever" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_receiver_lower" hidden="true" global_value="coslo723_mod" ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_receiver_upper" based_on="wpn_fps_m4_upper_reciever_round" type="upper_reciever" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_receiver_upper" hidden="true" has_description="true" global_value="coslo723_mod" ver="2">
+		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+		<override>
+			<wpn_fps_m4_uupg_fg_rail_ext 	unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+			<wpn_fps_addon_ris 			    unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+		</override> 
+	</WeaponMod>	
+	<WeaponMod id="wpn_fps_ass_coslo723_receiver_upper_a2" based_on="wpn_fps_m4_upper_reciever_round" type="upper_reciever" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_receiver_upper_a2_mount" hidden="false" has_description="true" global_value="coslo723_mod" ver="2">
+		<stats damage="0" spread="0" recoil="0" concealment="0"/> 
+		<forbids>
+			<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+			<value_node value="wpn_fps_upg_o_sig"/>
+			<value_node value="wpn_fps_ass_coslo723_optic_acog"/>
+		</forbids>	
+		<stance_mod>
+					<wpn_fps_ass_coslo723  translation="0 0 -4.316" /> 
+		</stance_mod>
+		<override>
+			<wpn_fps_m4_uupg_fg_rail_ext 	unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+			<wpn_fps_addon_ris 			    unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+			<wpn_fps_upg_o_specter parent="upper_reciever" a_obj="a_o"/>                  
+			<wpn_fps_upg_o_aimpoint parent="upper_reciever" a_obj="a_o"/>
+			<wpn_fps_upg_o_aimpoint_2 parent="upper_reciever" a_obj="a_o"/>
+			<wpn_fps_upg_o_docter parent="upper_reciever" a_obj="a_o"/>
+           	<wpn_fps_upg_o_eotech parent="upper_reciever" a_obj="a_o"/>
+			<wpn_fps_upg_o_t1micro parent="upper_reciever" a_obj="a_o" />
+			<wpn_fps_upg_o_cmore parent="upper_reciever" a_obj="a_o" />
+			<wpn_fps_upg_o_acog parent="upper_reciever" a_obj="a_o"/>
+			<wpn_fps_upg_o_eotech_xps parent="upper_reciever" a_obj="a_o"/>
+			<wpn_fps_upg_o_reflex parent="upper_reciever" a_obj="a_o"/>
+			<wpn_fps_upg_o_rx01 parent="upper_reciever" a_obj="a_o"/>
+			<wpn_fps_upg_o_rx30 parent="upper_reciever" a_obj="a_o"/>
+			<wpn_fps_upg_o_cs parent="upper_reciever" a_obj="a_o"/>
+			<wpn_fps_upg_o_spot parent="upper_reciever" a_obj="a_o"/> 
+			<wpn_fps_upg_o_tf90 parent="upper_reciever" a_obj="a_o"/>
+			<wpn_fps_upg_o_fc1 parent="upper_reciever" a_obj="a_o"/>
+			<wpn_fps_upg_o_uh parent="upper_reciever" a_obj="a_o"/>
+			<wpn_fps_upg_o_hamr parent="upper_reciever" a_obj="a_o"/>
+			<wpn_fps_upg_o_health parent="upper_reciever" a_obj="a_o"/>
+			<wpn_fps_upg_o_atibal parent="upper_reciever" a_obj="a_o"/>
+			<wpn_fps_upg_o_bmg parent="upper_reciever" a_obj="a_o"/>
+			<wpn_fps_upg_o_poe parent="upper_reciever" a_obj="a_o"/>
+			<wpn_fps_upg_o_hamr parent="upper_reciever" a_obj="a_o"/>
+			<wpn_fps_upg_o_atibal parent="upper_reciever" a_obj="a_o"/>
+			<wpn_fps_upg_o_health parent="upper_reciever" a_obj="a_o"/>			
+			<wpn_fps_ass_coslo723_optic_aimpoint2000 parent="upper_reciever" a_obj="a_o_retro_optic">
+				<stance_mod>
+					<wpn_fps_ass_coslo723 translation="0 -1 1.5" /> 
+				</stance_mod>
+            </wpn_fps_ass_coslo723_optic_aimpoint2000> 
+			<wpn_fps_ass_coslo723_optic_aimpoint2000_steelsight parent="upper_reciever" a_obj="a_o_retro_optic">		
+            </wpn_fps_ass_coslo723_optic_aimpoint2000_steelsight> 
+            <wpn_fps_ass_coslo723_optic_acog> 
+				<stance_mod>
+					<wpn_fps_ass_coslo723 translation="0 -6 2.287" /> 
+				</stance_mod>
+			</wpn_fps_ass_coslo723_optic_acog> 
+			<wpn_fps_ass_coslo723_optic_acog_steelsight parent="upper_reciever" a_obj="a_o_retro_optic">		
+            </wpn_fps_ass_coslo723_optic_acog_steelsight> 
+			<wpn_fps_ass_coslo723_optic_aimpoint2000_piggyback>
+				<stance_mod>
+					<wpn_fps_ass_coslo723 translation="0 -2 4.5" /> 
+				</stance_mod>
+			</wpn_fps_ass_coslo723_optic_aimpoint2000_piggyback>	
+			<wpn_fps_ass_coslo723_irons_rear>
+				<stance_mod>
+					<wpn_fps_ass_coslo723 rotation="-0.00349065 0 -0 -0.999994" translation="0 -6 4.15" /> 
+				</stance_mod>
+		    </wpn_fps_ass_coslo723_irons_rear>	
+		</override> 
+	</WeaponMod>	
+
+
+<!-- Stock -->
+	<WeaponMod id="wpn_fps_ass_coslo723_stock" based_on="wpn_fps_snp_victor_s_mod0" type="stock" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_stock" hidden="true" global_value="coslo723_mod" ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_stock_adsmove" based_on="wpn_fps_snp_victor_s_mod0" type="stock" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_stock_adsmove" hidden="false" global_value="coslo723_mod" ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_stock_flinch" based_on="wpn_fps_upg_m4_s_mk46" type="stock" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_stock_flinch" hidden="false" global_value="coslo723_mod" ver="2">
+		<override>
+			<wpn_fps_ass_coslo723_receiver_lower 	unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_receiver_lower_flinch" />
+			<wpn_fps_ass_coslo723_stock_adapter 	unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+		</override> 
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_stock_light" based_on="wpn_fps_m4_uupg_s_zulu" type="stock" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_stock_light" hidden="false" global_value="coslo723_mod" ver="2">
+		<override>
+			<wpn_fps_ass_coslo723_stock_adapter 	unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" />
+		</override> 
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_stock_mix1" based_on="wpn_fps_upg_m4_s_crane" type="stock" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_stock_mix1" hidden="false" global_value="coslo723_mod" ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_stock_mix2" based_on="wpn_fps_snp_victor_s_mod0" type="stock" unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_stock_mix2" hidden="false" global_value="coslo723_mod" ver="2">
+	</WeaponMod>
+
+<!-- Suppressor/Muzzle Devices -->
+	<WeaponMod id="wpn_fps_ass_coslo723_flash_hider" based_on="wpn_fps_upg_ns_ass_smg_stubby" type="barrel_ext"  unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_flash_hider" hidden="true" global_value="coslo723_mod" ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_flash_hider_xm177" based_on="wpn_fps_upg_ns_ass_smg_stubby" type="barrel_ext"  unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_flash_hider_xm177" hidden="false" global_value="coslo723_mod" ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_coslo723_suppressor_ae_m4" based_on="wpn_fps_lmg_kacchainsaw_ns_suppressor" type="barrel_ext"  unit="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_suppressor_ae_m4" hidden="false" global_value="coslo723_mod" ver="2">
+	</WeaponMod>
+
+<!-- Aftermarket Parts Equivalent -->
+	<WeaponMod id="wpn_fps_ass_coslo723_mode_burst" based_on="wpn_fps_m4_lower_reciever" type="custom" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" hidden="false" has_description="true" global_value="coslo723_mod" ver="2">
+		<stats damage="18" total_ammo_mod="-4" spread="0" recoil="3" />
+		<custom_stats ammo_pickup_min_mul="0.70" ammo_pickup_max_mul="0.70" />
+		<perks>
+			<value_node value="fire_mode_burst"/>
+		</perks>
+	</WeaponMod>
+	
+<!--	Weapon  -->
+
+	<Weapon unlock_level="4">
+		<weapon id="coslo723" based_on="new_m4" weapon_hold="coslo723"  NR_CLIPS_MAX="5" CLIP_AMMO_MAX="30" chamber_size="1" global_value="coslo723_mod" >
+			<stats damage="63" spread="14" spread_moving="15" recoil="14" concealment="19"/>
+			<timers reload_not_empty="2.1" reload_empty="3.1" unequip="0.6" equip="0.6" />
+				<fire_mode_data fire_rate="0.075"/>
+				<sounds fire="coslo723_fire" fire_single="coslo723_fire" fire_auto="coslo723_fire" stop_fire="m16_stop" use_fix="true">
+				</sounds>							
+				<AMMO_PICKUP>
+					<value_node value="4.00"/>
+					<value_node value="8.00"/>
+				</AMMO_PICKUP>
+				<kick>
+				<standing>
+					<value_node value="1.0"/>
+					<value_node value="1.2"/>
+					<value_node value="-0.6"/>
+					<value_node value="0.7"/>
+				</standing>
+				<crouching>
+					<value_node value="0.9"/>
+					<value_node value="1.0"/>
+					<value_node value="-0.5"/>
+					<value_node value="0.6"/>
+				</crouching>
+				<steelsight>
+					<value_node value="0.65"/>
+					<value_node value="0.70"/>
+					<value_node value="-0.4"/>
+					<value_node value="0.4"/>
+				</steelsight>
+				</kick>
+			<animations reload_name_id="coslo723"/>
+		</weapon>
+		<factory id="wpn_fps_ass_coslo723" unit="units/mods/weapons/wpn_fps_ass_coslo723/wpn_fps_ass_coslo723" stock_adapter="wpn_fps_ass_coslo723_stock_adapter">
+			<animations reload="reload" fire="recoil" fire_steelsight="recoil" reload_not_empty="reload_not_empty" magazine_empty="last_recoil"/>
+	     		<adds>
+
+	            </adds>
+			<override>
+				<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="foregrip"/>
+				<wpn_fps_upg_fl_ass_smg_sho_surefire parent="foregrip"/>
+				<wpn_fps_upg_fl_ass_peq15 parent="foregrip"/>
+				<wpn_fps_upg_fl_ass_laser parent="foregrip"/>
+				<wpn_fps_upg_fl_ass_utg parent="foregrip"/>
+				<wpn_fps_upg_fl_dbal_laser parent="foregrip"/>
+				<wpn_fps_upg_vg_ass_smg_verticalgrip parent="foregrip"/>
+				<wpn_fps_upg_vg_ass_smg_afg parent="foregrip"/>
+			</override>
+			<default_blueprint>
+
+				<value_node value="wpn_fps_ass_coslo723_barrel"/>
+				<value_node value="wpn_fps_ass_coslo723_bolt"/> 
+				<value_node value="wpn_fps_ass_coslo723_charging_handle"/> 
+				<value_node value="wpn_fps_ass_coslo723_flash_hider"/>
+				<value_node value="wpn_fps_ass_coslo723_gas_block_classic"/> 
+				<value_node value="wpn_fps_ass_coslo723_grip"/>
+				<value_node value="wpn_fps_ass_coslo723_irons_rear"/>
+				<value_node value="wpn_fps_ass_coslo723_magazine"/> 
+				<value_node value="wpn_fps_ass_coslo723_receiver_lower"/>			
+				<value_node value="wpn_fps_ass_coslo723_receiver_upper"/>			
+				<value_node value="wpn_fps_ass_coslo723_stock"/>
+
+
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_ass_coslo723_barrel"/>
+				<value_node value="wpn_fps_ass_coslo723_bolt"/>
+				<value_node value="wpn_fps_ass_coslo723_charging_handle"/>
+				<value_node value="wpn_fps_ass_coslo723_flash_hider"/>
+				<value_node value="wpn_fps_ass_coslo723_gas_block"/>
+				<value_node value="wpn_fps_ass_coslo723_gas_block_classic"/>
+				<value_node value="wpn_fps_ass_coslo723_grip"/>
+				<value_node value="wpn_fps_ass_coslo723_irons_rear"/>
+				<value_node value="wpn_fps_ass_coslo723_magazine"/>
+				<value_node value="wpn_fps_ass_coslo723_receiver_lower"/>			
+				<value_node value="wpn_fps_ass_coslo723_receiver_upper"/>			
+				<value_node value="wpn_fps_ass_coslo723_stock"/>
+				
+				<value_node value="wpn_fps_ass_coslo723_flash_hider_xm177"/>	
+				<value_node value="wpn_fps_ass_coslo723_grip_a2"/>	
+				<value_node value="wpn_fps_ass_coslo723_gadget_surefire660"/>				
+				<value_node value="wpn_fps_ass_coslo723_gadget_surefire660_combo"/>		
+				<value_node value="wpn_fps_ass_coslo723_gadget_surefire660_diamond"/>			
+				<value_node value="wpn_fps_ass_coslo723_gadget_qxl3"/>				
+				<value_node value="wpn_fps_ass_coslo723_optic_acog"/>		
+				<value_node value="wpn_fps_ass_coslo723_optic_aimpoint2000"/>				
+				<value_node value="wpn_fps_ass_coslo723_receiver_upper_a2"/>		
+				<value_node value="wpn_fps_ass_coslo723_suppressor_ae_m4"/>				
+								
+				<value_node value="wpn_fps_ass_coslo723_barrel_10"/>
+				<value_node value="wpn_fps_ass_coslo723_barrel_14"/>
+				<value_node value="wpn_fps_ass_coslo723_barrel_heat"/>
+				<value_node value="wpn_fps_ass_coslo723_barrel_mix"/>
+				<value_node value="wpn_fps_ass_coslo723_barrel_grenadier"/>
+				<value_node value="wpn_fps_ass_coslo723_barrel_range"/>
+				<value_node value="wpn_fps_ass_coslo723_barrel_short_hical1"/>
+				<value_node value="wpn_fps_ass_coslo723_barrel_short_hical2"/>
+				<value_node value="wpn_fps_ass_coslo723_barrel_velocity"/>
+				
+				<value_node value="wpn_fps_ass_coslo723_magazine_fastreload1"/>
+				<value_node value="wpn_fps_ass_coslo723_magazine_fastreload2"/>
+				<value_node value="wpn_fps_ass_coslo723_magazine_box"/>
+				<value_node value="wpn_fps_ass_coslo723_magazine_ext"/>
+				<value_node value="wpn_fps_ass_coslo723_magazine_flip"/>
+				<value_node value="wpn_fps_ass_coslo723_magazine_drum"/>
+				
+				<value_node value="wpn_fps_ass_coslo723_gadget_leftrail"/>
+				<value_node value="wpn_fps_ass_coslo723_gadget_toprail"/>
+				<value_node value="wpn_fps_ass_coslo723_mode_burst"/>
+				
+				<value_node value="wpn_fps_ass_coslo723_grip_mix"/>
+				<value_node value="wpn_fps_ass_coslo723_grip_sprintout"/>
+				<value_node value="wpn_fps_ass_coslo723_grip_sprintout2"/>
+				<value_node value="wpn_fps_ass_coslo723_grip_quickdraw"/>
+				<value_node value="wpn_fps_ass_coslo723_grip_quickdraw2"/>
+				
+				<value_node value="wpn_fps_ass_coslo723_stock_adsmove"/>
+				<value_node value="wpn_fps_ass_coslo723_stock_flinch"/>
+				<value_node value="wpn_fps_ass_coslo723_stock_light"/>
+				<value_node value="wpn_fps_ass_coslo723_stock_mix1"/>
+				<value_node value="wpn_fps_ass_coslo723_stock_mix2"/>
+						
+			
+				<value_node value="wpn_fps_upg_m4_m_quad"/>
+				<value_node value="wpn_fps_upg_m4_m_pmag"/>
+				<value_node value="wpn_fps_upg_m4_m_straight"/>
+				<value_node value="wpn_fps_ass_l85a2_m_emag"/>
+				<value_node value="wpn_fps_upg_m4_m_l5"/>
+				<value_node value="wpn_fps_upg_m4_g_ergo"/>
+				<value_node value="wpn_fps_upg_m4_g_sniper"/>
+				<value_node value="wpn_fps_upg_m4_g_hgrip"/>
+				<value_node value="wpn_fps_upg_g_m4_surgeon"/>
+				<value_node value="wpn_fps_m4_uupg_m_strike"/>
+				<value_node value="wpn_fps_snp_tti_g_grippy"/>
+				<value_node value="wpn_fps_sho_sko12_body_grip"/>
+				<value_node value="wpn_fps_snp_victor_g_mod3"/>
+				<value_node value="wpn_fps_m4_uupg_g_billet"/>
+				<value_node value="wpn_fps_upg_m4_s_standard"/>
+				<value_node value="wpn_fps_upg_m4_s_pts"/>
+				<value_node value="wpn_fps_upg_m4_s_crane"/>
+				<value_node value="wpn_fps_upg_m4_s_mk46"/>
+				<value_node value="wpn_fps_upg_m4_s_ubr"/>
+				<value_node value="wpn_fps_snp_tti_s_vltor"/>
+				<value_node value="wpn_fps_sho_sko12_stock"/>
+				<value_node value="wpn_fps_m4_uupg_s_zulu"/>
+				<value_node value="wpn_fps_snp_victor_s_mod0"/>
+				
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_v6"/>
+				<value_node value="wpn_fps_ass_shak12_ns_muzzle"/>
+				<value_node value="wpn_fps_lmg_kacchainsaw_ns_suppressor"/>
+				<value_node value="wpn_fps_lmg_kacchainsaw_ns_muzzle"/>
+				
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/>
+				<value_node value="wpn_fps_upg_i_singlefire"/>
+				<value_node value="wpn_fps_upg_i_autofire"/>
+
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_bmg"/>
+				<value_node value="wpn_fps_upg_o_uh"/>
+				<value_node value="wpn_fps_upg_o_fc1"/>
+				<value_node value="wpn_fps_upg_o_tf90"/>
+				<value_node value="wpn_fps_upg_o_poe"/>
+				<value_node value="wpn_fps_upg_o_hamr"/>
+				<value_node value="wpn_fps_upg_o_atibal"/>
+				<value_node value="wpn_fps_upg_o_health"/>
+				<value_node value="wpn_fps_upg_o_sig"/>
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+			</uses_parts>
+		</factory>	
+	<stance>
+			<standard>
+				<shoulders rotation="-0.000720273 0.0316644 0.000918242 -0.999498" translation="-3.545 -4.005 -0.532"/>
+			</standard>
+			<crouched>
+				<shoulders rotation="-0.000694745 0.0578174 0.00089751 -0.998327" translation="-2.945 -6.505 -4.268"/>
+			</crouched>
+			<steelsight>
+				<shoulders rotation="-0.000745315 0.00548101 0.00093835 -0.999984" translation="-10.748 -2.996 1.293"/>
+			</steelsight>  
+		</stance>	
+	</Weapon>
+	
+
+	
+
+
+		
+	<Sounds directory="assets\sounds">
+		<sound id="coslo723_fire" path="coslo723_fire.ogg" prefix="regular"/>
+		<sound id="coslo723_fire" path="coslo723_supp.ogg"  prefix="suppressed_a"/>
+		<sound id="coslo723_fire" path="coslo723_supp.ogg"  prefix="suppressed_b"/>
+		<sound id="coslo723_fire" path="coslo723_supp.ogg"  prefix="suppressed_c"/>
+
+
+		<sound id="coslo723_tilt"		 	 path="coslo723_tilt.ogg" prefix="first"/>
+		<sound id="coslo723_tilt" 			 path="coslo723_tilt.ogg" prefix="third"/>
+		<sound id="coslo723_tilt_back"		 path="coslo723_tilt_back.ogg" prefix="first"/>
+		<sound id="coslo723_tilt_back" 	 	 path="coslo723_tilt_back.ogg" prefix="third"/> 
+		<sound id="coslo723_mag_take_new"		 path="coslo723_mag_take_new.ogg" prefix="first"/>
+		<sound id="coslo723_mag_take_new" 	 	 path="coslo723_mag_take_new.ogg" prefix="third"/> 
+		<sound id="coslo723_blank"		 path="coslo723_blank.ogg" prefix="first"/>
+		<sound id="coslo723_blank" 	 	 path="coslo723_blank.ogg" prefix="third"/> 
+		<sound id="coslo723_mag_contact"		 path="coslo723_mag_contact.ogg" prefix="first"/>
+		<sound id="coslo723_mag_contact" 	 	 path="coslo723_mag_contact.ogg" prefix="third"/> 
+		<sound id="coslo723_mag_in"		 path="coslo723_mag_in.ogg" prefix="first"/>
+		<sound id="coslo723_mag_in" 	 path="coslo723_mag_in.ogg" prefix="third"/> 
+		<sound id="coslo723_mag_smack"	 path="coslo723_mag_smack.ogg" prefix="first"/>
+		<sound id="coslo723_mag_smack" 	 path="coslo723_mag_smack.ogg" prefix="third"/> 
+		<sound id="coslo723_mag_out"		 path="coslo723_mag_out.ogg" prefix="first"/>
+		<sound id="coslo723_mag_out" 	 path="coslo723_mag_out.ogg" prefix="third"/> 
+		<sound id="coslo723_bolt_release"		 path="coslo723_bolt_release.ogg" prefix="first"/>
+		<sound id="coslo723_bolt_release" 		 path="coslo723_bolt_release.ogg" prefix="third"/>
+		<sound id="coslo723_back_in_hand"		 	 path="coslo723_back_in_hand.ogg" prefix="first"/>
+		<sound id="coslo723_back_in_hand" 			 path="coslo723_back_in_hand.ogg" prefix="third"/>
+		
+		<sound id="coslo723_generic_take_new"		 	 path="coslo723_generic_take_new.ogg" prefix="first"/>
+		<sound id="coslo723_generic_take_new" 			 path="coslo723_generic_take_new.ogg" prefix="third"/>
+		<sound id="coslo723_mag_pouch"		 	 path="coslo723_mag_pouch.ogg" prefix="first"/>
+		<sound id="coslo723_mag_pouch" 			 path="coslo723_mag_pouch.ogg" prefix="third"/>
+		<sound id="coslo723_mag_out_retention"	 path="coslo723_mag_out_retention.ogg" prefix="first"/>
+		<sound id="coslo723_mag_out_retention" 	 path="coslo723_mag_out_retention.ogg" prefix="third"/>
+
+
+	</Sounds>
+
+	<AddFiles directory="assets">
+<!--Unit Path and Icon-->
+		<unit_npc path="units/mods/weapons/wpn_fps_ass_coslo723/wpn_fps_ass_coslo723"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/coslo723"/>
+
+<!-- Animations -->
+		<animation path="anims/fps/coslo723/coslo723_reload_not_empty" load="true"/>
+		<animation path="anims/fps/coslo723/coslo723_reload" load="true"/>
+		<animation path="anims/fps/coslo723/coslo723_idle" load="true"/>
+		<animation path="anims/fps/coslo723/coslo723_recoil" load="true"/>
+		<animation path="anims/fps/coslo723/coslo723_recoil_enter" load="true"/>
+		<animation path="anims/fps/coslo723/coslo723_recoil_loop" load="true"/>
+		<animation path="anims/fps/coslo723/coslo723_recoil_exit" load="true"/>
+		<animation path="anims/fps/coslo723/coslo723_equip" load="true"/>
+		<animation path="anims/fps/coslo723/coslo723_unequip" load="true"/>
+		<animation path="anims/fps/coslo723/coslo723_melee" load="true"/>
+		<animation path="anims/fps/coslo723/coslo723_melee_miss" load="true"/>
+		<animation path="anims/fps/coslo723/coslo723_use" load="true"/>
+		<animation path="anims/fps/coslo723/coslo723_sprint_enter" load="true"/>
+		<animation path="anims/fps/coslo723/coslo723_sprint" load="true"/>
+		<animation path="anims/fps/coslo723/coslo723_sprint_exit" load="true"/>
+		<animation path="anims/fps/coslo723/coslo723_com_var1" load="true"/>
+		<animation path="anims/fps/coslo723/coslo723_com_var5" load="true"/>
+		<animation path="anims/fps/coslo723/coslo723_com_var6" load="true"/>
+		<animation path="anims/fps/coslo723/coslo723_com_var7" load="true"/>
+		<animation path="anims/fps/coslo723/coslo723_get_up" load="true"/>
+		<animation path="anims/fps/coslo723/coslo723_gogo" load="true"/>
+		<animation path="anims/fps/coslo723/coslo723_tased" load="true"/>
+		<animation path="anims/fps/coslo723/coslo723_tased_boost" load="true"/>
+		<animation path="anims/fps/coslo723/coslo723_tased_exit" load="true"/>
+		<animation path="anims/fps/coslo723/coslo723_inspect" load="true"/> 
+
+<!--GUI-->		
+
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_gadget_leftrail"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_gadget_toprail"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_gadget_qxl3"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_gadget_surefire660"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_gadget_surefire660_combo"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_gadget_surefire660_diamond"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_optic_aimpoint2000"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_optic_acog"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_suppressor_ae_m4"/>
+		
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_barrel_10"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_barrel_14"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_barrel_grenadier"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_barrel_heat"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_barrel_mix"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_barrel_range"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_barrel_short_hical1"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_barrel_short_hical2"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_barrel_velocity"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_flash_hider_xm177"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_gas_block"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_gadget_leftrail"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_gadget_toprail"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_grip_a2"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_grip_mix"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_grip_quickdraw"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_grip_quickdraw2"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_grip_sprintout"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_grip_sprintout2"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_magazine_box"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_magazine_drum"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_magazine_ext"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_magazine_fastreload1"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_magazine_fastreload2"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_magazine_flip"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_mode_burst"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_receiver_upper_a2"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_stock_adsmove"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_stock_flinch"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_stock_light"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_stock_mix1"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_coslo723_stock_mix2"/>
+		
+
+<!--Base-->		
+		<texture path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/weapon_metal_cubemap"/>
+		
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/aimpoint2000"/>
+		<texture	path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/aimpoint2000_op"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/acog_2x20"/>
+		<texture	path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/acog_2x20_emis"/>
+		<texture	path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/acog_ta47_reticle_df"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/divelight"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/car4_barrel"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/car4_promo_muzzle"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_accessories"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_barrel"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_barrel_range"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_barrel_range_grenadier"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_barrel_hical1"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_barrel_short_hical2"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_barrel_velocity"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_flash_hider"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_gadget_rail"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_grip"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_grip_mixgrip"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_grip_quickdraw"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_grip_quickdraw2"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_grip_sprintout"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_grip_sprintout2"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_handguard"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_handguard_mix"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_magazine"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_magazine_drum"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_magazine_ext1"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_magazine_ext2"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_magazine_fastreload2"/>
+		<df_nm		path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_magazine_fast2_tape"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_magazine_fast_20"/>
+		<df_nm		path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_mag_fastreload1"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_receiver"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_stock"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_stock_adsmove"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_stock_light"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_stock_mix1"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_stock_mix2"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/coslo723_weaver_rail"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/flashlight_surefire660"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/m16_barrel_extension"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/mike16_rail"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/mary16_stock"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/mike4_grip"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/m4x_barrel_370"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/receiver_upper_a2"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/suppressor_ae_m4"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/t9standard_barrel_body_mount_01"/>
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_ass_coslo723_pts/textures/t10_laser_01_west"/>
+		
+
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_barrel"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_barrel_mix"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_barrel_range"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_barrel_short_hical1"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_barrel_short_hical2"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_barrel_velocity"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_bolt"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_charging_handle"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_flash_hider"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gas_block"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gas_block_classic"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gas_block_range"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gas_block_range_classic"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gas_block_short_hical1"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gas_block_short_hical1_classic"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gas_block_short_hical2"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gas_block_short_hical2_classic"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gas_block_velocity"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gas_block_velocity_classic"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_grip"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_grip_mix"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_grip_quickdraw"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_grip_quickdraw2"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_grip_sprintout"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_grip_sprintout2"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_handguard"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_handguard_grenadier"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_handguard_mix"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_handguard_range"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_handguard_short_hical1"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_handguard_short_hical2"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_handguard_velocity"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_magazine"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_magazine_box"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_magazine_drum"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_magazine_ext"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_magazine_fastreload1"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_magazine_fastreload2"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_magazine_flip"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_rail"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_rail_range"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_receiver_lower"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_receiver_lower_flinch"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_receiver_upper"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_receiver_upper_c7"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_stock"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_stock_adsmove"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_stock_flinch"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_stock_light"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_stock_mix1"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_stock_mix2"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_stock_adapter"/> 
+
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_barrel_10"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_barrel_14"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_barrel_heat"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_flash_hider_xm177"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_grip_a2"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gadget_surefire660"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gadget_surefire660_diamond"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gadget_surefire660_combo"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_gadget_qxl3"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_handguard_gordon"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_handguard_diamond"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_optic_acog"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_optic_acog_steelsight"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_optic_aimpoint2000"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_optic_aimpoint2000_steelsight"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_optic_aimpoint2000_piggyback"/>		
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_receiver_upper_a2"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_receiver_upper_a2_mount"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_suppressor_ae_m4"/>
+
+
+	</AddFiles>
+		
+	<Hooks directory="hooks">
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>	
+<!--	<hook file="newraycastweaponbase.lua"  source_file="lib/units/weapons/newraycastweaponbase"/> -->
+	</Hooks>
+	
+</mod>
+

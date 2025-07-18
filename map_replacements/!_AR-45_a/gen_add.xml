@@ -1,0 +1,264 @@
+<table directory="assets">
+
+<!-- SBR .45 Parts -->
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_ar45/wpn_fps_smg_ar45"/>
+		<model path="units/mods/weapons/wpn_fps_smg_ar45/wpn_fps_smg_ar45"/>
+		<object path="units/mods/weapons/wpn_fps_smg_ar45/wpn_fps_smg_ar45"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_ar45/wpn_fps_smg_ar45"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_ar45/wpn_fps_smg_ar45_npc"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/ar45"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_x_ar45/wpn_fps_smg_x_ar45"/>
+		<model path="units/mods/weapons/wpn_fps_smg_x_ar45/wpn_fps_smg_x_ar45"/>
+		<object path="units/mods/weapons/wpn_fps_smg_x_ar45/wpn_fps_smg_x_ar45"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_x_ar45/wpn_fps_smg_x_ar45"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_x_ar45/wpn_fps_smg_x_ar45_npc"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/x_ar45"/>
+
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/upper_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/upper_df_cc"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/upper_nm"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_upper_standard"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/lower_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/lower_df_cc"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/lower_nm"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_lower_standard"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_s_tecci"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/bolt_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_bolt_standard"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/barrel_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_b_standard"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/handguard_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_fg_standard"/>
+
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/light_handguard_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_fg_light"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/slim_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_m_9mm"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_b_long"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/long_handguard_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_fg_long"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/handlesight_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_os_frontsight"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/classic_upper_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_upper_round"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/russian_stock_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_s_flint"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/fixed_stock_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_s_fixed"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/drum_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/drum_base_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/drum_base_df_cc"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/drum_base_nm"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_m_d50"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/tan_mag_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/magpul_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_m_speed"/>
+		
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/transparent_nm"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/transparent_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_m_trans"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/moe_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_fg_moe"/>		
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/edge_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_upper_edge"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/lvoa_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_fg_lvoa"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/tan_lower_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_lower_tan"/>
+		<unit_obj							path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_b_sd"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_fg_sd"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/shepheard_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_g_shepheard"/>
+
+		<texture							path="units/mods/weapons/wpn_fps_upg_ar45_custom/ar45_lower_core_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_upg_ar45_custom/ar45_lower_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_upg_ar45_custom/ar45_lower_df_cc"/>
+		<texture							path="units/mods/weapons/wpn_fps_upg_ar45_custom/ar45_lower_nm"/>
+		<texture							path="units/mods/weapons/wpn_fps_upg_ar45_custom/ar45_lower_gsma"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_upg_ar45_custom/wpn_fps_upg_ar45_lower_custom"/>
+		<texture							path="units/mods/weapons/wpn_fps_upg_ar45_custom/ar45_upper_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_upg_ar45_custom/wpn_fps_upg_ar45_upper_custom"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_upg_ar45_custom/wpn_fps_upg_ar45_bolt_custom"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_upg_ar45_custom/wpn_fps_upg_ar45_dh_custom"/>
+
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_upg_o_mbus_pro_ar45/wpn_fps_upg_o_mbus_pro_rear"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_upg_o_mbus_pro_ar45/wpn_fps_upg_o_mbus_pro_front"/>
+
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/rowland_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_m_rowland"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/fluted_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_b_fluted"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/cylinder_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/cylinder_nm"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_fg_cylinder"/>
+
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_business/business_upper_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_business/wpn_fps_smg_ar45_upper_business"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_business/business_lower_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_business/business_lower_df_cc"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_business/business_lower_nm"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_business/wpn_fps_smg_ar45_lower_business"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_business/business_grip_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_business/wpn_fps_smg_ar45_g_business"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_business/business_mag_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_business/wpn_fps_smg_ar45_m_business"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_business/business_smr_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_business/wpn_fps_smg_ar45_fg_business"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_business/business_handguard_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_business/wpn_fps_smg_ar45_fg_radian"/>
+
+		<texture							path="units/mods/weapons/wpn_fps_smg_ar45_pts/smr_short_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_fg_smr_short"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_b_short"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_fg_smr_mid"/>
+        <texture 							path="units/mods/weapons/wpn_fps_smg_ar45_pts/classic_lower_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_pts/wpn_fps_smg_ar45_lower_milspec"/>
+
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_business/wpn_fps_smg_ar45_fg_smr_short"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ar45_business/wpn_fps_smg_ar45_fg_smr_mid"/>
+
+        <texture 							path="units/mods/weapons/wpn_fps_upg_ar45_hera/hera_lower_df"/>
+        <texture 							path="units/mods/weapons/wpn_fps_upg_ar45_hera/hera_lower_gsma"/>
+        <texture 							path="units/mods/weapons/wpn_fps_upg_ar45_hera/hera_lower_nm"/>
+        <texture 							path="units/mods/weapons/wpn_fps_upg_ar45_hera/hera_lower_df_cc"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_upg_ar45_hera/wpn_fps_upg_ar45_lower_hera"/>
+        <texture 							path="units/mods/weapons/wpn_fps_upg_ar45_hera/hera_upper_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_upg_ar45_hera/wpn_fps_upg_ar45_upper_hera"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_upg_ar45_hera/wpn_fps_upg_ar45_bolt_hera"/>
+        <texture 							path="units/mods/weapons/wpn_fps_upg_ar45_hera/hera_charge_nm"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_upg_ar45_hera/wpn_fps_upg_ar45_draghandle_hera"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_upg_ar45_hera/wpn_fps_snp_victor_g_mod3_hera"/>		
+		
+<!-- Third Person Parts -->
+
+		<texture							path="units/mods/weapons/wpn_third_smg_ar45_pts/third_upper_df"/>
+		<texture							path="units/mods/weapons/wpn_third_smg_ar45_pts/third_upper_nm"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ar45_pts/wpn_third_smg_ar45_upper_standard"/>
+		<texture							path="units/mods/weapons/wpn_third_smg_ar45_pts/third_lower_df"/>
+		<texture							path="units/mods/weapons/wpn_third_smg_ar45_pts/third_lower_nm"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ar45_pts/wpn_third_smg_ar45_lower_standard"/>
+		<unit_obj							path="units/mods/weapons/wpn_third_smg_ar45_pts/wpn_third_smg_ar45_s_tecci"/>
+		<unit_obj							path="units/mods/weapons/wpn_third_smg_ar45_pts/wpn_third_smg_ar45_b_standard"/>
+		<texture							path="units/mods/weapons/wpn_third_smg_ar45_pts/third_handguard_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ar45_pts/wpn_third_smg_ar45_fg_standard"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ar45_pts/wpn_third_smg_polymer_m_standard"/>
+		<texture							path="units/mods/weapons/wpn_third_smg_ar45_pts/third_bolt_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ar45_pts/wpn_third_smg_ar45_bolt_standard"/>
+		
+		<texture							path="units/mods/weapons/wpn_third_smg_ar45_pts/third_light_handguard_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ar45_pts/wpn_third_smg_ar45_fg_light"/>
+		<unit_obj							path="units/mods/weapons/wpn_third_smg_ar45_pts/wpn_third_smg_ar45_m_9mm"/>
+		<unit_obj							path="units/mods/weapons/wpn_third_smg_ar45_pts/wpn_third_smg_ar45_b_long"/>		
+		<texture							path="units/mods/weapons/wpn_third_smg_ar45_pts/third_long_handguard_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ar45_pts/wpn_third_smg_ar45_fg_long"/>
+		<unit_obj							path="units/mods/weapons/wpn_third_smg_ar45_pts/wpn_third_smg_ar45_os_frontsight"/>
+		<texture							path="units/mods/weapons/wpn_third_smg_ar45_pts/third_russian_stock_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ar45_pts/wpn_third_smg_ar45_s_flint"/>
+		<texture							path="units/mods/weapons/wpn_third_smg_ar45_pts/third_fixed_stock_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ar45_pts/wpn_third_smg_ar45_s_fixed"/>
+		<texture							path="units/mods/weapons/wpn_third_smg_ar45_pts/third_drum_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ar45_pts/wpn_third_smg_ar45_m_d50"/>
+		<texture							path="units/mods/weapons/wpn_third_smg_ar45_pts/third_tan_mag_df"/>
+		<texture							path="units/mods/weapons/wpn_third_smg_ar45_pts/third_magpul_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ar45_pts/wpn_third_smg_ar45_m_speed"/>
+
+		<texture							path="units/mods/weapons/wpn_third_smg_ar45_pts/third_edge_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ar45_pts/wpn_third_smg_ar45_upper_edge"/>
+		<texture							path="units/mods/weapons/wpn_third_smg_ar45_pts/third_lvoa_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ar45_pts/wpn_third_smg_ar45_fg_lvoa"/>
+		<texture							path="units/mods/weapons/wpn_third_smg_ar45_pts/third_tan_lower_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ar45_pts/wpn_third_smg_ar45_lower_tan"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ar45_pts/wpn_third_smg_ar45_fg_sd"/>
+		<texture							path="units/mods/weapons/wpn_third_smg_ar45_pts/third_shepheard_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ar45_pts/wpn_third_smg_ar45_g_shepheard"/>
+
+		<texture							path="units/mods/weapons/wpn_third_upg_ar45_custom/ar45_third_lower_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_upg_ar45_custom/wpn_third_upg_ar45_lower_custom"/>
+		<texture							path="units/mods/weapons/wpn_third_upg_ar45_custom/ar45_third_upper_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_upg_ar45_custom/wpn_third_upg_ar45_upper_custom"/>
+	<!--<unit_mat							path="units/mods/weapons/wpn_third_upg_ar45_custom/wpn_third_upg_ar45_dh_custom"/>-->
+	
+		<unit_obj							path="units/mods/weapons/wpn_fps_upg_o_mbus_pro_ar45/wpn_third_upg_o_mbus_pro_rear"/>
+		<unit_obj							path="units/mods/weapons/wpn_fps_upg_o_mbus_pro_ar45/wpn_third_upg_o_mbus_pro_front"/>
+
+		<texture							path="units/mods/weapons/wpn_third_smg_ar45_pts/third_rowland_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ar45_pts/wpn_third_smg_ar45_m_rowland"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ar45_pts/wpn_third_smg_ar45_b_fluted"/>
+		<texture							path="units/mods/weapons/wpn_third_smg_ar45_pts/third_cylinder_df"/>
+		<texture							path="units/mods/weapons/wpn_third_smg_ar45_pts/third_cylinder_nm"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ar45_pts/wpn_third_smg_ar45_fg_cylinder"/>	
+
+		<texture							path="units/mods/weapons/wpn_third_smg_ar45_business/third_business_smr_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ar45_business/wpn_third_smg_ar45_fg_business"/>	
+		<texture							path="units/mods/weapons/wpn_third_smg_ar45_business/third_business_upper_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ar45_business/wpn_third_smg_ar45_upper_business"/>	
+		<texture							path="units/mods/weapons/wpn_third_smg_ar45_business/third_business_lower_df"/>
+		<texture							path="units/mods/weapons/wpn_third_smg_ar45_business/third_business_lower_nm"/>		
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ar45_business/wpn_third_smg_ar45_lower_business"/>	
+		<unit_obj							path="units/mods/weapons/wpn_third_smg_ar45_business/wpn_third_smg_ar45_g_business"/>	
+
+		<texture							path="units/mods/weapons/wpn_third_smg_ar45_pts/third_smr_short_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ar45_pts/wpn_third_smg_ar45_fg_smr_short"/>
+		<unit_obj							path="units/mods/weapons/wpn_third_smg_ar45_pts/wpn_third_smg_ar45_b_short"/>
+		<unit_obj							path="units/mods/weapons/wpn_third_smg_ar45_pts/wpn_third_smg_ar45_fg_smr_mid"/>
+        <texture 							path="units/mods/weapons/wpn_third_smg_ar45_pts/third_classic_lower_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ar45_pts/wpn_third_smg_ar45_lower_milspec"/>
+        <texture 							path="units/mods/weapons/wpn_third_smg_ar45_pts/third_classic_upper_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ar45_pts/wpn_third_smg_ar45_upper_round"/>
+
+		<unit_obj							path="units/mods/weapons/wpn_third_smg_ar45_business/wpn_third_smg_ar45_fg_smr_short"/>
+		<unit_obj							path="units/mods/weapons/wpn_third_smg_ar45_business/wpn_third_smg_ar45_fg_smr_mid"/>
+
+		<texture							path="units/mods/weapons/wpn_third_upg_ar45_hera/tp_hera_lowerreceiver_df"/>
+		<texture							path="units/mods/weapons/wpn_third_upg_ar45_hera/tp_hera_lowerreceiver_nm"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_upg_ar45_hera/wpn_third_upg_ar45_lower_hera"/>	
+		<texture							path="units/mods/weapons/wpn_third_upg_ar45_hera/tp_hera_uperreceiver_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_upg_ar45_hera/wpn_third_upg_ar45_upper_hera"/>	
+	
+<!-- Black Market Icons -->
+
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ar45_m_9mm"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ar45_fg_light"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ar45_s_collapse"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ar45_fg_long"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ar45_b_long"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_o_dd_ar45"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ar45_fg_jp"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_o_handle_ar45"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ar45_fg_m4"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ar45_upper_round"/>	
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ar45_s_flint"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ar45_s_fixed"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ar45_m_d50"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ar45_m_speed"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ar45_m_short"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ar45_m_trans"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ar45_fg_moe"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ar45_lower_custom"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ar45_upper_custom"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_o_mbus_pro_ar45"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ar45_upper_edge"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ar45_fg_lvoa"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ar45_lower_tan"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ar45_fg_sd"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ar45_g_shepheard"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ar45_m_rowland"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ar45_b_fluted"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ar45_fg_cylinder"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ar45_ck_business"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ar45_fg_smr"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ar45_fg_smr_short"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ar45_fg_smr_mid"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ar45_b_short"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ar45_lower_hera"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ar45_upper_hera"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ar45_lower_milspec"/>
+	
+<!-- Animations -->
+		
+		<animation path="anims/fps/ar45/ar45_reload"/>
+		<animation path="anims/fps/ar45/ar45_reload_not_empty"/>
+		
+</table>

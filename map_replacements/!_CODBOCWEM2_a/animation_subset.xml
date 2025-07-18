@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+			
+		<target mode="attach">
+			<anim name="t9british_reload_not_empty" 				file="anims/fps/t9british/t9british_reload_not_empty" blend_set="all"/>
+			<anim name="t9british_reload" 							file="anims/fps/t9british/t9british_reload" blend_set="all"/>
+			
+			<anim name="t9britishext_reload_not_empty" 				file="anims/fps/t9british/t9british_reload_not_empty" blend_set="all"/>
+			<anim name="t9britishext_reload" 						file="anims/fps/t9british/t9britishext_reload" blend_set="all"/>
+			
+			<anim name="t9britishdouble_reload_not_empty" 			file="anims/fps/t9british/t9britishdouble_reload_not_empty" blend_set="all"/>
+			<anim name="t9britishdouble_reload" 					file="anims/fps/t9british/t9britishdouble_reload" blend_set="all"/>
+		
+		</target>
+	</tweak>
+</tweaks>

@@ -1,0 +1,12 @@
+<unit type="static" slot="1" >
+	<object file="units/mods/weapons/wpn_fps_shot_uncle12/wpn_fps_shot_uncle12" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_aa12"/>
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="base" class="NewNPCRaycastWeaponBase" >
+			<var name="name_id" value="uncle12_crew" />
+		</extension>
+	</extensions>
+</unit>

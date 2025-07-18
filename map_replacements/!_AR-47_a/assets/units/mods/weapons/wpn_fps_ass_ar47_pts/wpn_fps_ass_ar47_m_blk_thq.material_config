@@ -1,0 +1,12 @@
+<materials version="3" group="weapon_group">
+
+	<material name="m4_mag_std" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_ass_ar47_pts/mag_300_df" mip="1"/>
+        <material_texture file="units/pd2_dlc_savi/weapons/wpn_fps_snp_victor_pts/victor_magazine_gsma"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_ass_ar47_pts/mag_300_nm" mip="1"/>
+    </material>
+	<material name="mtr_bullet" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_ass_ar47_pts/wpn_fps_bullet_300_df" mip="1" />
+		<bump_normal_texture file="units/pd2_dlc_gage_assault/weapons/wpn_fps_bullet/wpn_fps_bullet_556_nm" mip="1" />
+	</material>
+</materials>

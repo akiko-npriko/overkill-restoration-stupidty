@@ -1,0 +1,15 @@
+<materials version="3" group="weapon_g18c">
+    <material name="mat_mag" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_smg_ar45_pts/drum_base_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_smg_ar45_pts/drum_base_nm"/>
+    </material>
+	<material name="mat_bullet" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/pd2_dlc_lawp/weapons/wpn_fps_smg_fmg9_pts/bullet_df" />
+		<bump_normal_texture file="units/pd2_dlc_lawp/weapons/wpn_fps_smg_fmg9_pts/bullet_nm" />
+	</material>
+    <material name="hcar_m_drum" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_smg_ar45_pts/drum_df" />
+        <bump_normal_texture file="units/pd2_dlc_pxp3/weapons/wpn_fps_lmg_hcar_pts/hcar_mag_drum_nm" />
+        <material_texture file="units/pd2_dlc_pxp3/weapons/wpn_fps_lmg_hcar_pts/hcar_mag_drum_gsma"/>
+    </material>
+</materials>

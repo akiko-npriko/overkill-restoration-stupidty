@@ -1,0 +1,22 @@
+<materials version="3" group="weapon_group">
+	<material name="mtr_rail5" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+				   <diffuse_texture		  file="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/mlok_rail5_df"  />
+				 <bump_normal_texture     file="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/mlok_rail5_nm"  />
+				<material_texture	 	  file="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/mlok_rail5_gsma" />
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/weapon_metal_cubemap"/>		
+    </material>	
+	<material name="mtr_t9accurate_rail" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+				   <diffuse_texture		  file="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/lm_t9accurate_rail_df"  />
+				 <bump_normal_texture     file="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/lm_t9accurate_rail_nm"  />
+				<material_texture	 	  file="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/lm_t9accurate_rail_gsma" />
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/weapon_metal_cubemap"/>		
+    </material>	
+	<material name="mtr_t9standard_side_mount" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+				   <diffuse_texture		  file="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9standard_side_mount_df"  />
+				 <bump_normal_texture     file="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9standard_side_mount_nm"  />
+				<material_texture	 	  file="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9standard_side_mount_gsma" />
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/weapon_metal_cubemap"/>		
+    </material>	
+
+
+</materials>

@@ -1,0 +1,17 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_gre_as24_pts/wpn_fps_gre_as24_mag" orientation_object="rp_as24"/>
+	<animations>
+		<animation_group name="recoil">
+			<object name="anim_grenades_recoil" enabled="true"/>
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_drum" enabled="true"/>
+		<object name="g_drum_parts" enabled="true"/>
+		<object name="g_grenade_1" enabled="true"/>
+		<object name="g_grenade_2" enabled="true"/>
+		<object name="g_grenade_3" enabled="true"/>
+		<object name="g_grenade_4" enabled="true"/>
+		<object name="g_grenade_5" enabled="true"/>
+	</graphics>
+</dynamic_object>

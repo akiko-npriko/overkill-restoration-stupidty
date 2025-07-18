@@ -1,0 +1,31 @@
+<materials version="3" group="weapon_group">
+    <material name="g7_base_main" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_ass_g7_pts/textures/g7_main_base_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_ass_g7_pts/textures/g7_main_base_nm"/>
+        <material_texture file="units/mods/weapons/wpn_fps_ass_g7_pts/textures/g7_main_base_gsma"/>
+    </material>
+	<material name="g7_display" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_ass_g7_pts/textures/g7_display_df"/>
+	<bump_normal_texture file="units/mods/weapons/wpn_fps_ass_g7_pts/textures/g7_display_df"/>
+        <self_illumination_texture  file="units/mods/weapons/wpn_fps_ass_g7_pts/textures/g7_display_df"/>
+        <variable type="scalar" name="il_bloom" value="6.0070002853172"/>
+        <variable type="scalar" name="il_multiplier" value="reddot"/>
+    </material>
+    <material name="g7_glass" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:FPS" decal_material="glass_breakable" version="2">
+        <diffuse_texture file="units/payday2/weapons/wpn_effects_textures/green_glass_df"/>
+        <opacity_texture file="units/pd2_dlc_bbq/weapons/molotov_cocktail/textures/wpn_fps_molotov_glass_op"/>
+        <reflection_texture type="cubemap" global_texture="current_global_texture"/>
+        <variable type="vector3" name="fresnel_settings" value="0.9 0 1"/>
+    </material>
+	<material name="g7_sight_display" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_ass_g7_pts/textures/g7_sight_display_df"/>
+	<bump_normal_texture file="units/mods/weapons/wpn_fps_ass_g7_pts/textures/g7_sight_display_df"/>
+        <self_illumination_texture  file="units/mods/weapons/wpn_fps_ass_g7_pts/textures/g7_sight_display_df"/>
+        <variable type="scalar" name="il_bloom" value="0.3070002853172"/>
+        <variable type="scalar" name="il_multiplier" value="reddot"/>
+    </material>
+    <material name="g7_display_crosshair" render_template="effect:DIFFUSE0_TEXTURE:VIEW_ANGLE_FALLOFF_OP" version="2">
+        <variable value="reddot" type="scalar" name="intensity"/>
+        <diffuse_texture file="units/mods/weapons/wpn_fps_ass_g7_pts/textures/g7_crosshair_display_df"/>
+    </material>
+</materials>

@@ -1,0 +1,16 @@
+<materials version="3" group="weapon_m4">
+    <material name="m4_mag_std" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_snp_sierra458_siege/siege_mag_df"/>
+        <bump_normal_texture file="units/payday2/weapons/wpn_fps_ass_m4_pts/m4_mag_standard_nm"/>
+    </material>
+	<material name="mtr_bullet" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_snp_sierra458_pts/beowulf_bullet_df" />
+		<bump_normal_texture file="units/pd2_dlc_sawp/weapons/wpn_fps_ass_groza_pts/bullet_nm" />
+		<reflection_texture type="cube" global_texture="current_global_texture"/>
+	</material>
+    <material render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" name="mtr_wpn_fps_snp_awp_m_speed" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_snp_sierra458_siege/siege_speed_df"/>
+        <material_texture file="units/pd2_dlc_pxp4/weapons/wpn_fps_snp_awp_pts/wpn_fps_snp_awp_m_speedmag_gsma"/>
+        <bump_normal_texture file="units/pd2_dlc_pxp4/weapons/wpn_fps_snp_awp_pts/wpn_fps_snp_awp_m_speedmag_nm"/>
+    </material>
+</materials>

@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+<tweaks>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+		
+	
+		<target mode="append">
+			<state name="fps/reload/t9british" type="once" segment="base" speed="1.0">
+				<anim name="t9british_reload"/>
+					<keys>
+						<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>				
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+						
+						
+						<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="t9british_end_reload"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="t9british_mag_drop_impact_floor"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="t9british_mag_take_new"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="t9british_generic_mag_in_connect"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt_back" callback="play_sound" class_name="base" param1="wp_ak47_tilt_back"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt" callback="play_sound" class_name="base" param1="wp_ak47_tilt"/>
+						<key at="trigger" trigger="wp_flint_release_hand" callback="play_sound" class_name="base" param1="t9british_start_reload"/>
+						<key at="trigger" trigger="wp_flint_grab_mag" callback="play_sound" class_name="base" param1="t9british_grab_mag"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+						<key at="trigger" trigger="wp_flint_mag_out" callback="play_sound" class_name="base" param1="t9british_mag_out"/>
+						<key at="trigger" trigger="wp_flint_mag_rattle" callback="play_sound" class_name="base" param1="t9british_mag_rattle"/>
+						<key at="trigger" trigger="wp_flint_mag_in" callback="play_sound" class_name="base" param1="t9british_empty_mag_in"/>
+						<key at="trigger" trigger="wp_flint_release_hand_mag" callback="play_sound" class_name="base" param1="t9british_release_hand_mag"/>
+						<key at="trigger" trigger="wp_flint_cock_pull" callback="play_sound" class_name="base" param1="wp_flint_cock_pull"/>	
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand_soft" callback="play_sound" class_name="base" param1="t9british_raise"/>
+						<key at="trigger" trigger="wp_flint_cock_release" callback="play_sound" class_name="base" param1="t9british_bolt_back_in_battery"/>			
+						<key at="trigger" trigger="wp_flint_grab_hand" callback="play_sound" class_name="base" param1="t9british_back_in_hand"/>
+						<key at="trigger" trigger="wp_clip_generic_ass_center" callback="play_sound" class_name="base" param1="t9british_generic_ass_center"/>		
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+
+			<state name="fps/reload_not_empty/t9british" type="once" segment="base" speed="1.0">
+				<anim name="t9british_reload_not_empty"/>
+					<keys>			
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+						<key at="trigger" trigger="em2_lower_gun" callback="play_sound" class_name="base" param1="t9british_lower"/>
+						
+						<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="t9british_end_reload"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="t9british_mag_drop_impact_floor"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="t9british_mag_take_new"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="t9british_generic_mag_in_connect"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt_back" callback="play_sound" class_name="base" param1="wp_ak47_tilt_back"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt" callback="play_sound" class_name="base" param1="wp_ak47_tilt"/>
+						<key at="trigger" trigger="wp_flint_release_hand" callback="play_sound" class_name="base" param1="t9british_start_reload"/>
+						<key at="trigger" trigger="wp_flint_grab_mag" callback="play_sound" class_name="base" param1="t9british_grab_mag"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+						<key at="trigger" trigger="wp_flint_mag_out" callback="play_sound" class_name="base" param1="t9british_mag_out"/>
+						<key at="trigger" trigger="wp_flint_mag_rattle" callback="play_sound" class_name="base" param1="t9british_mag_rattle"/>
+						<key at="trigger" trigger="wp_flint_mag_in" callback="play_sound" class_name="base" param1="t9british_mag_in"/>
+						<key at="trigger" trigger="wp_flint_release_hand_mag" callback="play_sound" class_name="base" param1="t9british_release_hand_mag"/>
+						<key at="trigger" trigger="wp_flint_cock_pull" callback="play_sound" class_name="base" param1="wp_flint_cock_pull"/>	
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand_soft" callback="play_sound" class_name="base" param1="t9british_raise"/>
+						<key at="trigger" trigger="wp_flint_cock_release" callback="play_sound" class_name="base" param1="t9british_bolt_back_in_battery"/>			
+						<key at="trigger" trigger="wp_flint_grab_hand" callback="play_sound" class_name="base" param1="t9british_back_in_hand"/>
+						<key at="trigger" trigger="wp_clip_generic_ass_center" callback="play_sound" class_name="base" param1="t9british_generic_ass_center"/>		
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+			
+			<state name="fps/reload/t9britishext" type="once" segment="base" speed="1.0">
+				<anim name="t9britishext_reload"/>
+					<keys>
+						<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>				
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+						
+						
+						<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="t9british_end_reload"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="t9british_mag_drop_impact_floor"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="t9british_mag_take_new"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="t9british_generic_mag_in_connect"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt_back" callback="play_sound" class_name="base" param1="wp_ak47_tilt_back"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt" callback="play_sound" class_name="base" param1="wp_ak47_tilt"/>
+						<key at="trigger" trigger="wp_flint_release_hand" callback="play_sound" class_name="base" param1="t9british_start_reload"/>
+						<key at="trigger" trigger="wp_flint_grab_mag" callback="play_sound" class_name="base" param1="t9british_grab_mag"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+						<key at="trigger" trigger="wp_flint_mag_out" callback="play_sound" class_name="base" param1="t9british_mag_out"/>
+						<key at="trigger" trigger="wp_flint_mag_rattle" callback="play_sound" class_name="base" param1="t9british_mag_rattle"/>
+						<key at="trigger" trigger="wp_flint_mag_in" callback="play_sound" class_name="base" param1="t9british_empty_mag_in"/>
+						<key at="trigger" trigger="wp_flint_release_hand_mag" callback="play_sound" class_name="base" param1="t9british_release_hand_mag"/>
+						<key at="trigger" trigger="wp_flint_cock_pull" callback="play_sound" class_name="base" param1="wp_flint_cock_pull"/>	
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand_soft" callback="play_sound" class_name="base" param1="t9british_raise"/>
+						<key at="trigger" trigger="wp_flint_cock_release" callback="play_sound" class_name="base" param1="t9british_bolt_back_in_battery"/>			
+						<key at="trigger" trigger="wp_flint_grab_hand" callback="play_sound" class_name="base" param1="t9british_back_in_hand"/>
+						<key at="trigger" trigger="wp_clip_generic_ass_center" callback="play_sound" class_name="base" param1="t9british_generic_ass_center"/>		
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+
+			<state name="fps/reload_not_empty/t9britishext" type="once" segment="base" speed="1.0">
+				<anim name="t9britishext_reload_not_empty"/>
+					<keys>
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+						<key at="trigger" trigger="em2_lower_gun" callback="play_sound" class_name="base" param1="t9british_lower"/>
+						
+						<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="t9british_end_reload"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="t9british_mag_drop_impact_floor"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="t9british_mag_take_new"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="t9british_generic_mag_in_connect"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt_back" callback="play_sound" class_name="base" param1="wp_ak47_tilt_back"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt" callback="play_sound" class_name="base" param1="wp_ak47_tilt"/>
+						<key at="trigger" trigger="wp_flint_release_hand" callback="play_sound" class_name="base" param1="t9british_start_reload"/>
+						<key at="trigger" trigger="wp_flint_grab_mag" callback="play_sound" class_name="base" param1="t9british_grab_mag"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+						<key at="trigger" trigger="wp_flint_mag_out" callback="play_sound" class_name="base" param1="t9british_mag_out"/>
+						<key at="trigger" trigger="wp_flint_mag_rattle" callback="play_sound" class_name="base" param1="t9british_mag_rattle"/>
+						<key at="trigger" trigger="wp_flint_mag_in" callback="play_sound" class_name="base" param1="t9british_mag_in"/>
+						<key at="trigger" trigger="wp_flint_release_hand_mag" callback="play_sound" class_name="base" param1="t9british_release_hand_mag"/>
+						<key at="trigger" trigger="wp_flint_cock_pull" callback="play_sound" class_name="base" param1="wp_flint_cock_pull"/>	
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand_soft" callback="play_sound" class_name="base" param1="t9british_raise"/>
+						<key at="trigger" trigger="wp_flint_cock_release" callback="play_sound" class_name="base" param1="t9british_bolt_back_in_battery"/>			
+						<key at="trigger" trigger="wp_flint_grab_hand" callback="play_sound" class_name="base" param1="t9british_back_in_hand"/>
+						<key at="trigger" trigger="wp_clip_generic_ass_center" callback="play_sound" class_name="base" param1="t9british_generic_ass_center"/>		
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+			
+			
+			<state name="fps/reload/t9britishdouble" type="once" segment="base" speed="1.0">
+				<anim name="t9britishdouble_reload"/>
+					<keys>
+						<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>				
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+						
+						
+						<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="t9british_end_reload"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="t9british_mag_drop_impact_floor"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="t9british_mag_take_new"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="t9british_mag_tap"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt_back" callback="play_sound" class_name="base" param1="wp_ak47_tilt_back"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt" callback="play_sound" class_name="base" param1="wp_ak47_tilt"/>
+						<key at="trigger" trigger="wp_flint_release_hand" callback="play_sound" class_name="base" param1="t9british_start_reload"/>
+						<key at="trigger" trigger="wp_flint_grab_mag" callback="play_sound" class_name="base" param1="t9british_grab_mag"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+						<key at="trigger" trigger="wp_flint_mag_out" callback="play_sound" class_name="base" param1="t9british_mag_out"/>
+						<key at="trigger" trigger="wp_flint_mag_rattle" callback="play_sound" class_name="base" param1="t9british_mag_rattle"/>
+						<key at="trigger" trigger="wp_flint_mag_in" callback="play_sound" class_name="base" param1="t9british_empty_mag_in"/>
+						<key at="trigger" trigger="wp_flint_release_hand_mag" callback="play_sound" class_name="base" param1="t9british_release_hand_mag"/>
+						<key at="trigger" trigger="wp_flint_cock_pull" callback="play_sound" class_name="base" param1="wp_flint_cock_pull"/>	
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand_soft" callback="play_sound" class_name="base" param1="t9british_raise"/>
+						<key at="trigger" trigger="wp_flint_cock_release" callback="play_sound" class_name="base" param1="t9british_bolt_back_in_battery"/>			
+						<key at="trigger" trigger="wp_flint_grab_hand" callback="play_sound" class_name="base" param1="t9british_back_in_hand"/>
+						<key at="trigger" trigger="wp_clip_generic_ass_center" callback="play_sound" class_name="base" param1="t9british_generic_ass_center"/>		
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+
+			<state name="fps/reload_not_empty/t9britishdouble" type="once" segment="base" speed="1.0">
+				<anim name="t9britishdouble_reload_not_empty"/>
+					<keys>
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+						<key at="trigger" trigger="em2_lower_gun" callback="play_sound" class_name="base" param1="t9british_lower"/>
+						
+						<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="t9british_end_reload"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="t9british_mag_drop_impact_floor"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="t9british_mag_take_new"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="t9british_generic_mag_in_connect"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt_back" callback="play_sound" class_name="base" param1="wp_ak47_tilt_back"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt" callback="play_sound" class_name="base" param1="wp_ak47_tilt"/>
+						<key at="trigger" trigger="wp_flint_release_hand" callback="play_sound" class_name="base" param1="t9british_start_reload"/>
+						<key at="trigger" trigger="wp_flint_grab_mag" callback="play_sound" class_name="base" param1="t9british_grab_mag"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+						<key at="trigger" trigger="wp_flint_mag_out" callback="play_sound" class_name="base" param1="t9british_mag_out"/>
+						<key at="trigger" trigger="wp_flint_mag_rattle" callback="play_sound" class_name="base" param1="t9british_mag_rattle"/>
+						<key at="trigger" trigger="wp_flint_mag_in" callback="play_sound" class_name="base" param1="t9british_mag_in"/>
+						<key at="trigger" trigger="wp_flint_release_hand_mag" callback="play_sound" class_name="base" param1="t9british_release_hand_mag"/>
+						<key at="trigger" trigger="wp_flint_cock_pull" callback="play_sound" class_name="base" param1="wp_flint_cock_pull"/>	
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand_soft" callback="play_sound" class_name="base" param1="t9british_raise"/>
+						<key at="trigger" trigger="wp_flint_cock_release" callback="play_sound" class_name="base" param1="t9british_bolt_back_in_battery"/>			
+						<key at="trigger" trigger="wp_flint_grab_hand" callback="play_sound" class_name="base" param1="t9british_back_in_hand"/>
+						<key at="trigger" trigger="wp_clip_generic_ass_center" callback="play_sound" class_name="base" param1="t9british_generic_ass_center"/>		
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+		</target>
+		
+		
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+		<target mode="attach">
+			
+			<to name="reload_t9british" 					redirect="fps/reload/t9british"/>
+			<to name="reload_not_empty_t9british" 		redirect="fps/reload_not_empty/t9british"/>
+			<to name="reload_t9britishext" 				redirect="fps/reload/t9britishext"/>
+			<to name="reload_not_empty_t9britishext" 	redirect="fps/reload_not_empty/t9britishext"/>
+			<to name="reload_t9britishdouble" 			redirect="fps/reload/t9britishdouble"/>
+			<to name="reload_not_empty_t9britishdouble" 	redirect="fps/reload_not_empty/t9britishdouble"/>
+			
+		</target>
+	</tweak>
+</tweaks>

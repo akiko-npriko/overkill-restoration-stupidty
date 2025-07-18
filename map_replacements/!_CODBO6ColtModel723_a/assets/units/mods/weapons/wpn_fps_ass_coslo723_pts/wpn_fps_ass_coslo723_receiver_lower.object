@@ -1,0 +1,29 @@
+<dynamic_object>
+    <diesel orientation_object="rp_receiver_lower" materials="units/mods/weapons/wpn_fps_ass_coslo723_pts/wpn_fps_ass_coslo723_receiver_lower" />
+	
+       <animations>
+
+    <animation_group name="reload">
+      <object name="anim_reload_mag_release" enabled="true" />
+	  <object name="anim_reload_empty_bolt_catch" enabled="true" />
+	  
+    </animation_group>    
+	<animation_group name="reload_not_empty">
+      <object name="anim_reload_not_empty_mag_release" enabled="true" />
+
+    </animation_group>
+  </animations>
+  
+  <graphics>
+        <object  name="g_coslo723_bolt_catch" enabled="true" />
+		<object  name="g_coslo723_castle_nut" enabled="true" />
+        <object  name="g_coslo723_mag_release" enabled="true" />
+		<object  name="g_coslo723_interactables" enabled="true" />
+		<object  name="g_coslo723_receiver_lower" enabled="true" />
+		<object  name="g_coslo723_receiver_lower_accessories" enabled="true" />
+
+
+
+
+  </graphics>
+</dynamic_object>

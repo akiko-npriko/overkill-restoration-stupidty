@@ -1,0 +1,15 @@
+<dynamic_object>
+    <diesel materials="units/mods/weapons/wpn_fps_pis_baller_pts/wpn_fps_pis_baller_body_standard" orientation_object="rp_wpn_fps_pis_1911_body_standard"/>
+	<animations>
+		<animation_group name="reload">
+			<object name="anim_cocking_lever_reload" enabled="true" />	
+		</animation_group>
+		<animation_group name="recoil">
+			<object name="anim_cocking_lever_shoot" enabled="true" />	
+		</animation_group>
+	</animations>
+    <graphics>
+        <object enabled="true" name="g_body" />
+        <object enabled="true" name="g_hammer" />
+    </graphics>
+</dynamic_object>

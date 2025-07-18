@@ -1,0 +1,12 @@
+<table name="Alternative Flashbang Effect" global_key="HH_flashbang_effect" color="Color(0.01, 0.82, 0)">
+<AssetUpdates id="51013" provider="modworkshop" version="1"/>
+
+<AddFiles directory="assets">
+	<effect path="effects/pd2_mod_hh_flashbang/conc_floaties" />
+	<effect path="effects/pd2_mod_hh_flashbang/conc_floaties_pdth" />
+	<texture path="effects/pd2_mod_hh_flashbang/floaties_df" load="true" />
+</AddFiles>
+<Hooks directory="hooks">
+	<hook file="flashbang_magic.lua" source_file="core/lib/managers/coreenvironmentcontrollermanager"/>
+</Hooks>
+</table>

@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<tweaks>
+
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+
+		
+		<target mode="append">
+			<state name="fps/reload/ak15u" type="once" segment="base" speed="1.0">
+				<anim name="ak15u_reload"/>
+				<keys>
+					<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>	
+					
+                    <key at="trigger" trigger="wp_flint_release_hand" callback="play_sound" class_name="base" param1="wp_flint_release_hand"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+					<key at="trigger" trigger="wp_foley_generic_back_in_hand_soft" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand_soft"/>
+					<key at="trigger" trigger="wp_flint_grab_mag" callback="play_sound" class_name="base" param1="wp_flint_grab_mag"/>
+					<key at="trigger" trigger="wp_flint_mag_out" callback="play_sound" class_name="base" param1="wp_flint_mag_out"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_throw"/>
+					<key at="trigger" trigger="wp_clip_generic_ass_center" callback="play_sound" class_name="base" param1="wp_clip_generic_ass_center"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+					<key at="trigger" trigger="wp_flint_mag_rattle" callback="play_sound" class_name="base" param1="wp_flint_mag_rattle"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+					<key at="trigger" trigger="wp_flint_mag_in" callback="play_sound" class_name="base" param1="wp_flint_mag_in"/>
+					<key at="trigger" trigger="wp_flint_release_hand_mag" callback="play_sound" class_name="base" param1="wp_flint_release_hand_mag"/>
+					<key at="trigger" trigger="wp_foley_generic_back_in_hand_soft" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand_soft"/>
+					<key at="trigger" trigger="wp_flint_cock_pull" callback="play_sound" class_name="base" param1="wp_flint_cock_pull"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+					<key at="trigger" trigger="wp_flint_cock_release" callback="play_sound" class_name="base" param1="wp_flint_cock_release"/>
+					<key at="trigger" trigger="wp_flint_grab_hand" callback="play_sound" class_name="base" param1="wp_flint_grab_hand"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+					
+					<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+
+			<state name="fps/reload_not_empty/ak15u" type="once" segment="base" speed="1.0">
+				<anim name="ak15u_reload_not_empty"/>
+				<keys>
+					<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>	
+					
+                    <key at="trigger" trigger="wp_flint_release_hand" callback="play_sound" class_name="base" param1="wp_flint_release_hand"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+					<key at="trigger" trigger="wp_foley_generic_back_in_hand_soft" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand_soft"/>
+					<key at="trigger" trigger="wp_flint_grab_mag" callback="play_sound" class_name="base" param1="wp_flint_grab_mag"/>
+					<key at="trigger" trigger="wp_flint_mag_out" callback="play_sound" class_name="base" param1="wp_flint_mag_out"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_throw"/>
+					<key at="trigger" trigger="wp_clip_generic_ass_center" callback="play_sound" class_name="base" param1="wp_clip_generic_ass_center"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+					<key at="trigger" trigger="wp_flint_mag_rattle" callback="play_sound" class_name="base" param1="wp_flint_mag_rattle"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+					<key at="trigger" trigger="wp_flint_mag_in" callback="play_sound" class_name="base" param1="wp_flint_mag_in"/>
+					<key at="trigger" trigger="wp_flint_release_hand_mag" callback="play_sound" class_name="base" param1="wp_flint_release_hand_mag"/>
+					<key at="trigger" trigger="wp_foley_generic_back_in_hand_soft" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand_soft"/>
+					<key at="trigger" trigger="wp_flint_cock_pull" callback="play_sound" class_name="base" param1="wp_flint_cock_pull"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+					<key at="trigger" trigger="wp_flint_cock_release" callback="play_sound" class_name="base" param1="wp_flint_cock_release"/>
+					<key at="trigger" trigger="wp_flint_grab_hand" callback="play_sound" class_name="base" param1="wp_flint_grab_hand"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+
+					<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+		</target>
+		
+	</tweak>
+
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+		<target mode="attach">
+			<to name="reload_ak15u" 					redirect="fps/reload/ak15u"/>
+			<to name="reload_not_empty_ak15u" 			redirect="fps/reload_not_empty/ak15u"/>
+		</target>
+	</tweak>
+</tweaks>

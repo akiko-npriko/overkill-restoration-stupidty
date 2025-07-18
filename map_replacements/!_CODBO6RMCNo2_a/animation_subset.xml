@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+
+		<!--
+			Replace all instances of 'rmary2' below with the ID of your animation.
+			Note that recoil_steelsight does not have a unique animation in this rmary2; you can edit the filepath in the 'file' section with one if you wish.
+			If your gun cannot be fired in full auto, you can delete the recoil_enter, recoil_loop, and recoil_exit lines.
+		-->
+
+		<target mode="attach">
+			<anim name="rmary2_reload" 				file="anims/fps/rmary2/rmary2_reload" blend_set="all"/>
+			<anim name="rmary2_reload_not_empty" 		file="anims/fps/rmary2/rmary2_reload_not_empty" blend_set="all"/>
+			<anim name="rmary2_drum_reload" 				file="anims/fps/rmary2/rmary2_drum_reload" blend_set="all"/>
+			<anim name="rmary2_drum_reload_not_empty" 		file="anims/fps/rmary2/rmary2_drum_reload_not_empty" blend_set="all"/>
+			<anim name="rmary2_jungle_reload" 				file="anims/fps/rmary2/rmary2_jungle_reload" blend_set="all"/>
+			<anim name="rmary2_jungle_reload_not_empty" 		file="anims/fps/rmary2/rmary2_jungle_reload_not_empty" blend_set="all"/>
+			<anim name="rmary2_idle" 					file="anims/fps/rmary2/rmary2_idle" blend_set="all"/>
+			<anim name="rmary2_recoil" 				file="anims/fps/rmary2/rmary2_recoil" blend_set="all"/>
+			<anim name="rmary2_recoil_steelsight" 				file="anims/fps/rmary2/rmary2_recoil" blend_set="all"/>
+			<anim name="rmary2_recoil_loop" 			file="anims/fps/rmary2/rmary2_recoil_loop" blend_set="all"/>
+			<anim name="rmary2_recoil_enter" 			file="anims/fps/rmary2/rmary2_recoil_enter" blend_set="all"/>
+			<anim name="rmary2_recoil_exit" 			file="anims/fps/rmary2/rmary2_recoil_exit" blend_set="all"/>
+			<anim name="rmary2_equip" 					file="anims/fps/rmary2/rmary2_equip" blend_set="all"/>
+			<anim name="rmary2_unequip" 				file="anims/fps/rmary2/rmary2_unequip" blend_set="all"/>
+			<anim name="rmary2_melee" 					file="anims/fps/rmary2/rmary2_melee" blend_set="all"/>
+			<anim name="rmary2_melee_miss" 			file="anims/fps/rmary2/rmary2_melee_miss" blend_set="all"/>
+			<anim name="rmary2_use" 					file="anims/fps/rmary2/rmary2_use" blend_set="all"/>
+			<anim name="rmary2_sprint_enter" 			file="anims/fps/rmary2/rmary2_sprint_enter" blend_set="all"/>
+			<anim name="rmary2_sprint" 				file="anims/fps/rmary2/rmary2_sprint" blend_set="all"/>
+			<anim name="rmary2_sprint_exit" 			file="anims/fps/rmary2/rmary2_sprint_exit" blend_set="all"/>
+			<anim name="rmary2_com_down_var1" 			file="anims/fps/rmary2/rmary2_com_var1" blend_set="all"/>
+			<anim name="rmary2_com_stop" 				file="anims/fps/rmary2/rmary2_com_var5" blend_set="all"/>
+			<anim name="rmary2_com_come" 				file="anims/fps/rmary2/rmary2_com_var6" blend_set="all"/>
+			<anim name="rmary2_com_point" 				file="anims/fps/rmary2/rmary2_com_var7" blend_set="all"/>
+			<anim name="rmary2_get_up" 				file="anims/fps/rmary2/rmary2_get_up" blend_set="all"/>
+			<anim name="rmary2_gogo" 					file="anims/fps/rmary2/rmary2_gogo" blend_set="all"/>
+			<anim name="rmary2_tased" 					file="anims/fps/rmary2/rmary2_tased" blend_set="all"/>
+			<anim name="rmary2_tased_boost" 			file="anims/fps/rmary2/rmary2_tased_boost" blend_set="all"/>
+			<anim name="rmary2_tased_exit" 			file="anims/fps/rmary2/rmary2_tased_exit" blend_set="all"/>
+			<anim name="rmary2_inspect" 				file="anims/fps/rmary2/rmary2_inspect" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

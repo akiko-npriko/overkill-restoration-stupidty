@@ -1,0 +1,18 @@
+<materials version="3" group="weapon_victor">
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" name="sierra_mag" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_snp_sierra458_pts/mag_458_df" mip="4"/>
+        <material_texture file="units/mods/weapons/wpn_fps_snp_sierra458_pts/mag_458_gsma" mip="4"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_snp_sierra458_pts/mag_458_nm" mip="4"/>
+    </material>
+
+	<material name="mtr_bullet" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/pd2_dlc_sawp/weapons/wpn_fps_ass_groza_pts/bullet_df" mip="4"/>
+		<bump_normal_texture file="units/pd2_dlc_sawp/weapons/wpn_fps_ass_groza_pts/bullet_nm" mip="4"/>
+		<reflection_texture type="cube" global_texture="current_global_texture" mip="4"/>
+	</material>
+	
+    <material name="mtr_magpul" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_snp_sierra458_pts/magpul_df" mip="4"/>
+        <bump_normal_texture file="units/pd2_dlc_tng/weapons/wpn_fps_ass_aug_m_quick/magpul_nm" mip="4"/>
+    </material>	
+</materials>

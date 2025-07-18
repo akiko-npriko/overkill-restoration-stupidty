@@ -1,0 +1,363 @@
+<?xml version="1.0"?>
+<tweaks>
+	<!--
+		I've put this tweak first because it is the most important.
+		This section defines what should happen when particular animation triggers are reached in your reload animations. Generally, this is used for sounds.
+		Unlike the other files, simply replacing 'uncle12' with your animation ID will likely not work for you, since different animations use different triggers.
+	-->
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+		
+		
+		<target mode="append">
+			<state name="fps/reload/uncle12" type="once" segment="base" speed="1.0">
+				<anim name="uncle12_reload"/>
+					<keys>
+						<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>	
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+						
+						<key at="trigger" trigger="wp_uncle12_mag_grab" callback="play_sound" class_name="base" param1="uncle12_grab_new_mag"/>
+						<key at="trigger" trigger="wp_uncle12_magout" callback="play_sound" class_name="base" param1="uncle12_grab_mag"/>
+						<key at="trigger" trigger="wp_uncle12_mag_throw" callback="play_sound" class_name="base" param1="uncle12_mag_throw"/>
+						<key at="trigger" trigger="wp_uncle12_mag_hit_ground" callback="play_sound" class_name="base" param1="uncle12_reload_move_arm"/>
+						<key at="trigger" trigger="wp_uncle12_new_mag" callback="play_sound" class_name="base" param1="uncle12_grab_new_mag"/>
+						<key at="trigger" trigger="wp_uncle12_mag_contact" callback="play_sound" class_name="base" param1="uncle12_mag_slide_in"/>
+						<key at="trigger" trigger="wp_uncle12_magin" callback="play_sound" class_name="base" param1="uncle12_mag_in"/>
+						<key at="trigger" trigger="wp_uncle12_bolt_pull" callback="play_sound" class_name="base" param1="uncle12_charging_handle_pull"/>
+						<key at="trigger" trigger="wp_uncle12_bolt_release" callback="play_sound" class_name="base" param1="uncle12_charging_handle_release"/>
+						<key at="trigger" trigger="wp_uncle12_foley_last" callback="play_sound" class_name="base" param1="uncle12_reload_end"/>
+						
+						<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="uncle12_grab_charging_handle"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="uncle12_back_in_hand"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt_back" callback="play_sound" class_name="base" param1="uncle12_tilt_back"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+
+			<state name="fps/reload_not_empty/uncle12" type="once" segment="base" speed="1.0">
+				<anim name="uncle12_reload_not_empty"/>
+					<keys>
+						<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>	
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+						
+						<key at="trigger" trigger="wp_uncle12_new_mag" callback="play_sound" class_name="base" param1="uncle12_grab_new_mag"/>
+						<key at="trigger" trigger="wp_uncle12_mag_grab" callback="play_sound" class_name="base" param1="uncle12_grab_mag"/>
+						<key at="trigger" trigger="wp_uncle12_magout" callback="play_sound" class_name="base" param1="uncle12_mag_out"/>					
+						<key at="trigger" trigger="wp_uncle12_mag_contact" callback="play_sound" class_name="base" param1="uncle12_mag_in_contact_tactical"/>
+						<key at="trigger" trigger="wp_uncle12_magin" callback="play_sound" class_name="base" param1="uncle12_mag_in"/>
+						<key at="trigger" trigger="wp_uncle12_magback" callback="play_sound" class_name="base" param1="uncle12_store_magazine"/>					
+						<key at="trigger" trigger="wp_uncle12_foley_last" callback="play_sound" class_name="base" param1="uncle12_reload_end"/>
+						
+						<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="uncle12_grab_charging_handle"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="uncle12_back_in_hand"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt_back" callback="play_sound" class_name="base" param1="uncle12_tilt_back"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+		</target>
+		
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+		
+		
+		<target mode="append">
+			<state name="fps/reload/uncle12_ext1" type="once" segment="base" speed="1.0">
+				<anim name="uncle12_ext1_reload"/>
+					<keys>
+						<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>	
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+						
+						<key at="trigger" trigger="wp_uncle12_ext1_mag_grab" callback="play_sound" class_name="base" param1="uncle12_xmag01_grab_new"/>
+						<key at="trigger" trigger="wp_uncle12_ext1_magout" callback="play_sound" class_name="base" param1="uncle12_xmag01_out_empty"/>
+						<key at="trigger" trigger="wp_uncle12_ext1_new_mag" callback="play_sound" class_name="base" param1="uncle12_grab_new_mag"/>
+						<key at="trigger" trigger="wp_uncle12_ext1_mag_contact" callback="play_sound" class_name="base" param1="uncle12_xmag01_contact"/>
+						<key at="trigger" trigger="wp_uncle12_ext1_magin" callback="play_sound" class_name="base" param1="uncle12_xmag01_in_empty"/>
+						<key at="trigger" trigger="wp_uncle12_ext1_mag_hit" callback="play_sound" class_name="base" param1="uncle12_xmag01_smack_empty"/>
+						<key at="trigger" trigger="wp_uncle12_bolt_pull" callback="play_sound" class_name="base" param1="uncle12_xmag01_charging_handle_pull"/>
+						<key at="trigger" trigger="wp_uncle12_bolt_release" callback="play_sound" class_name="base" param1="uncle12_xmag01_charging_handle_release"/>
+						<key at="trigger" trigger="wp_uncle12_foley_last" callback="play_sound" class_name="base" param1="uncle12_reload_end"/>
+						
+						
+						<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="uncle12_grab_charging_handle"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="uncle12_back_in_hand"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt_back" callback="play_sound" class_name="base" param1="uncle12_tilt_back"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+
+			<state name="fps/reload_not_empty/uncle12_ext1" type="once" segment="base" speed="1.0">
+				<anim name="uncle12_ext1_reload_not_empty"/>
+					<keys>
+						<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+						
+						<key at="trigger" trigger="wp_uncle12_ext1_mag_grab" callback="play_sound" class_name="base" param1="uncle12_xmag01_grab_new"/>
+						<key at="trigger" trigger="wp_uncle12_ext1_magout" callback="play_sound" class_name="base" param1="uncle12_xmag01_out"/>
+						<key at="trigger" trigger="wp_uncle12_ext1_mag_contact" callback="play_sound" class_name="base" param1="uncle12_mag_in_contact"/>					
+						<key at="trigger" trigger="wp_uncle12_ext1_mag_hit" callback="play_sound" class_name="base" param1="uncle12_xmag01_smack"/>
+						<key at="trigger" trigger="wp_uncle12_ext1_new_mag" callback="play_sound" class_name="base" param1="uncle12_grab_new_mag"/>
+						<key at="trigger" trigger="wp_uncle12_ext1_magin" callback="play_sound" class_name="base" param1="uncle12_xmag01_in"/>
+						<key at="trigger" trigger="wp_uncle12_foley_last" callback="play_sound" class_name="base" param1="uncle12_reload_end"/>
+										
+						<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="uncle12_grab_charging_handle"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="uncle12_back_in_hand"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt_back" callback="play_sound" class_name="base" param1="uncle12_tilt_back"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+		</target>
+		
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+		
+		
+		<target mode="append">
+			<state name="fps/reload/uncle12_fast1" type="once" segment="base" speed="1.0">
+				<anim name="uncle12_fast1_reload"/>
+					<keys>
+						<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>	
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+						
+						<key at="trigger" trigger="wp_uncle12_fast1_mag_grab" callback="play_sound" class_name="base" param1="uncle12_grab_mag"/>
+						<key at="trigger" trigger="wp_uncle12_fast1_magout" callback="play_sound" class_name="base" param1="uncle12_magazine_fast01_out"/>
+						<key at="trigger" trigger="wp_uncle12_fast1_mag_hit" callback="play_sound" class_name="base" param1="uncle12_xmag01_smack"/>
+						<key at="trigger" trigger="wp_uncle12_fast1_new_mag" callback="play_sound" class_name="base" param1="uncle12_reload_move_arm"/>
+						<key at="trigger" trigger="wp_uncle12_fast1_mag_contact" callback="play_sound" class_name="base" param1="uncle12_magazine_fast01_contact"/>
+						<key at="trigger" trigger="wp_uncle12_fast1_magin" callback="play_sound" class_name="base" param1="uncle12_mag_in"/>
+						<key at="trigger" trigger="wp_uncle12_bolt_pull" callback="play_sound" class_name="base" param1="uncle12_charging_handle_pull"/>
+						<key at="trigger" trigger="wp_uncle12_bolt_release" callback="play_sound" class_name="base" param1="uncle12_charging_handle_release"/>
+						<key at="trigger" trigger="wp_uncle12_foley_last" callback="play_sound" class_name="base" param1="uncle12_reload_end"/>
+						
+						<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="uncle12_grab_charging_handle"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="uncle12_back_in_hand"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt_back" callback="play_sound" class_name="base" param1="uncle12_tilt_back"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+
+			<state name="fps/reload_not_empty/uncle12_fast1" type="once" segment="base" speed="1.0">
+				<anim name="uncle12_fast1_reload_not_empty"/>
+					<keys>
+						<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+						
+						<key at="trigger" trigger="wp_uncle12_fast1_mag_grab" callback="play_sound" class_name="base" param1="uncle12_grab_mag"/>
+						<key at="trigger" trigger="wp_uncle12_fast1_magout" callback="play_sound" class_name="base" param1="uncle12_magazine_fast01_out"/>
+						<key at="trigger" trigger="wp_uncle12_fast1_mag_hit_ground" callback="play_sound" class_name="base" param1="uncle12_mag_impact_ground"/>
+						<key at="trigger" trigger="wp_uncle12_fast1_mag_hit" callback="play_sound" class_name="base" param1="uncle12_xmag01_smack"/>
+						<key at="trigger" trigger="wp_uncle12_fast1_new_mag" callback="play_sound" class_name="base" param1="uncle12_reload_move_arm"/>
+						<key at="trigger" trigger="wp_uncle12_fast1_mag_contact" callback="play_sound" class_name="base" param1="uncle12_magazine_fast01_contact"/>
+						<key at="trigger" trigger="wp_uncle12_fast1_magin" callback="play_sound" class_name="base" param1="uncle12_mag_in"/>
+						<key at="trigger" trigger="wp_uncle12_foley_last" callback="play_sound" class_name="base" param1="uncle12_reload_end"/>
+						
+						<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="uncle12_grab_charging_handle"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="uncle12_back_in_hand"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt_back" callback="play_sound" class_name="base" param1="uncle12_tilt_back"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+		</target>
+		
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+		
+		
+		<target mode="append">
+			<state name="fps/reload/uncle12_drum" type="once" segment="base" speed="1.0">
+				<anim name="uncle12_drum_reload"/>
+					<keys>
+						<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>	
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+						
+						<key at="trigger" trigger="wp_uncle12_drum_mag_grab" callback="play_sound" class_name="base" param1="uncle12_mag_grab"/>
+						<key at="trigger" trigger="wp_uncle12_drum_magout" callback="play_sound" class_name="base" param1="uncle12_xmag02_out_empty"/>
+						<key at="trigger" trigger="wp_uncle12_drum_mag_hit_ground" callback="play_sound" class_name="base" param1="uncle12_xmag02_rotate"/>
+						<key at="trigger" trigger="wp_uncle12_drum_new_mag" callback="play_sound" class_name="base" param1="uncle12_xmag02_take_new"/>
+						<key at="trigger" trigger="wp_uncle12_drum_mag_contact" callback="play_sound" class_name="base" param1="uncle12_xmag02_contact_empty"/>
+						<key at="trigger" trigger="wp_uncle12_drum_magin" callback="play_sound" class_name="base" param1="uncle12_xmag02_in_empty"/>						
+						<key at="trigger" trigger="wp_uncle12_drum_mag_hit" callback="play_sound" class_name="base" param1="uncle12_xmag02_smack"/>
+						<key at="trigger" trigger="wp_uncle12_bolt_pull" callback="play_sound" class_name="base" param1="uncle12_xmag01_charging_handle_pull"/>
+						<key at="trigger" trigger="wp_uncle12_bolt_release" callback="play_sound" class_name="base" param1="uncle12_xmag01_charging_handle_release"/>					
+						<key at="trigger" trigger="wp_uncle12_foley_last" callback="play_sound" class_name="base" param1="uncle12_reload_end"/>
+						
+						<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="uncle12_grab_charging_handle"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="uncle12_back_in_hand"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt_back" callback="play_sound" class_name="base" param1="uncle12_tilt_back"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+
+			<state name="fps/reload_not_empty/uncle12_drum" type="once" segment="base" speed="1.0">
+				<anim name="uncle12_drum_reload_not_empty"/>
+					<keys>
+						<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+						
+						
+						<key at="trigger" trigger="wp_uncle12_drum_mag_grab" callback="play_sound" class_name="base" param1="uncle12_xmag02_grab"/>
+						<key at="trigger" trigger="wp_uncle12_drum_magout" callback="play_sound" class_name="base" param1="uncle12_xmag02_out"/>
+						<key at="trigger" trigger="wp_uncle12_drum_mag_hit_ground" callback="play_sound" class_name="base" param1="uncle12_reload_move_arm"/>
+						<key at="trigger" trigger="wp_uncle12_drum_new_mag" callback="play_sound" class_name="base" param1="uncle12_xmag02_take_new"/>
+						<key at="trigger" trigger="wp_uncle12_drum_mag_contact" callback="play_sound" class_name="base" param1="uncle12_xmag02_contact"/>
+						<key at="trigger" trigger="wp_uncle12_drum_magin" callback="play_sound" class_name="base" param1="uncle12_xmag02_in"/>
+						<key at="trigger" trigger="wp_uncle12_drum_mag_hit" callback="play_sound" class_name="base" param1="uncle12_xmag02_smack"/>
+						<key at="trigger" trigger="wp_uncle12_foley_last" callback="play_sound" class_name="base" param1="uncle12_reload_end"/>
+						
+						<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="uncle12_grab_charging_handle"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="uncle12_back_in_hand"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt_back" callback="play_sound" class_name="base" param1="uncle12_tilt_back"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+		</target>
+		
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+		
+		
+		<target mode="append">
+			<state name="fps/reload/uncle12_fast2" type="once" segment="base" speed="1.0">
+				<anim name="uncle12_fast2_reload"/>
+					<keys>
+						<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>	
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+						
+						<key at="trigger" trigger="wp_uncle12_fast2_mag_grab" callback="play_sound" class_name="base" param1="uncle12_grab_mag"/>
+						<key at="trigger" trigger="wp_uncle12_fast2_magout" callback="play_sound" class_name="base" param1="uncle12_magazine_fast02_out"/>
+						<key at="trigger" trigger="wp_uncle12_fast2_mag_hit_ground" callback="play_sound" class_name="base" param1="uncle12_mag_impact_ground"/>
+						<key at="trigger" trigger="wp_uncle12_fast2_new_mag" callback="play_sound" class_name="base" param1="uncle12_reload_move_arm"/>
+						<key at="trigger" trigger="wp_uncle12_fast2_mag_contact" callback="play_sound" class_name="base" param1="uncle12_magazine_fast02_contact"/>
+						<key at="trigger" trigger="wp_uncle12_fast2_magin" callback="play_sound" class_name="base" param1="uncle12_mag_in"/>
+						<key at="trigger" trigger="wp_uncle12_bolt_pull" callback="play_sound" class_name="base" param1="uncle12_magazine_fast02_charging_handle_pull"/>
+						<key at="trigger" trigger="wp_uncle12_bolt_release" callback="play_sound" class_name="base" param1="uncle12_magazine_fast02_charging_handle_release"/>
+						<key at="trigger" trigger="wp_uncle12_foley_last" callback="play_sound" class_name="base" param1="uncle12_reload_end"/>
+						
+						<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="uncle12_grab_charging_handle"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="uncle12_back_in_hand"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt_back" callback="play_sound" class_name="base" param1="uncle12_tilt_back"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+
+			<state name="fps/reload_not_empty/uncle12_fast2" type="once" segment="base" speed="1.0">
+				<anim name="uncle12_fast2_reload_not_empty"/>
+					<keys>
+						<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+						
+						<key at="trigger" trigger="wp_uncle12_fast2_mag_grab" callback="play_sound" class_name="base" param1="uncle12_grab_mag"/>
+						<key at="trigger" trigger="wp_uncle12_fast2_magout" callback="play_sound" class_name="base" param1="uncle12_magazine_fast02_out"/>
+						<key at="trigger" trigger="wp_uncle12_fast2_mag_hit_ground" callback="play_sound" class_name="base" param1="uncle12_mag_impact_ground"/>
+						<key at="trigger" trigger="wp_uncle12_fast2_new_mag" callback="play_sound" class_name="base" param1="uncle12_reload_move_arm"/>
+						<key at="trigger" trigger="wp_uncle12_fast2_mag_contact" callback="play_sound" class_name="base" param1="uncle12_magazine_fast02_contact"/>
+						<key at="trigger" trigger="wp_uncle12_fast2_magin" callback="play_sound" class_name="base" param1="uncle12_mag_in"/>
+						<key at="trigger" trigger="wp_uncle12_foley_last" callback="play_sound" class_name="base" param1="uncle12_reload_end"/>
+						
+						<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="uncle12_grab_charging_handle"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="uncle12_back_in_hand"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt_back" callback="play_sound" class_name="base" param1="uncle12_tilt_back"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+		</target>
+		
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+		<target mode="attach">
+			<to name="reload_uncle12" 						redirect="fps/reload/uncle12"/>
+			<to name="reload_not_empty_uncle12" 			redirect="fps/reload_not_empty/uncle12"/>
+			<to name="reload_uncle12_ext1" 					redirect="fps/reload/uncle12_ext1"/>
+			<to name="reload_not_empty_uncle12_ext1" 		redirect="fps/reload_not_empty/uncle12_ext1"/>
+			<to name="reload_uncle12_drum" 					redirect="fps/reload/uncle12_drum"/>
+			<to name="reload_not_empty_uncle12_drum" 		redirect="fps/reload_not_empty/uncle12_drum"/>
+			<to name="reload_uncle12_fast1" 				redirect="fps/reload/uncle12_fast1"/>
+			<to name="reload_not_empty_uncle12_fast1" 		redirect="fps/reload_not_empty/uncle12_fast1"/>
+			<to name="reload_uncle12_fast2" 				redirect="fps/reload/uncle12_fast2"/>
+			<to name="reload_not_empty_uncle12_fast2" 		redirect="fps/reload_not_empty/uncle12_fast2"/>
+		</target>
+	</tweak>
+</tweaks>

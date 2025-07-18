@@ -1,0 +1,12 @@
+<materials version="3" group="weapon_p1911">
+	<material name="barrel_vented" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_pis_polar9_pts/barrel_vented_df" mip="1"/>
+        <bump_normal_texture file="units/payday2/weapons/wpn_fps_pis_1911_pts/barrel_vented_nm" mip="1"/>
+		<reflection_texture file="environments/cubemaps/cubemap_steel" type="cubemap"/>
+    </material>
+	<material name="slide_long" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_pis_polar9_pts/slide_long_df" mip="1"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_pis_polar9_pts/slide_long_nm" mip="1"/>
+	<!--<reflection_texture type="cubemap" file="environments/cubemaps/jry_cubemaps/cubemap_chrome_df"/>-->
+    </material>	
+</materials>

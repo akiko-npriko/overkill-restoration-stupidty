@@ -1,0 +1,519 @@
+<mod name="BO6 RMC No.2" author="Asian Rifleman Nya, Masavik, RJC9000" min_lib_ver="3.38">
+	<Localization directory="loc" default="english.txt">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	<AssetUpdates id="50300" version="0.99" provider="modworkshop"/>
+	<GlobalValue id="rmary2mod" color="Color(0.9, 0.1, 0.1)"/>
+
+<!--Universal Parts-->	
+	<WeaponMod id="wpn_fps_ass_rmary2_bolt" based_on="wpn_fps_ass_fal_body_standard" type="bolt"	a_obj="a_bolt" 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_bolt" hidden="true" ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_rmary2_charging_handle" based_on="wpn_fps_ass_fal_body_standard" type="drag_handle" a_obj="a_dh"		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_charging_handle" hidden="true" ver="2">
+		<animations reload="reload"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_rmary2_flash_hider" based_on="wpn_fps_upg_ns_ass_smg_stubby" type="barrel_ext"			 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_flash_hider" hidden="true" ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_rmary2_irons" based_on="wpn_fps_m4_uupg_o_flipup" type="sight"	unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" hidden="true" ver="2">
+		<stats spread="0" recoil="0" concealment="0"/>
+		<stance_mod>
+			<wpn_fps_ass_rmary2 rotation="0.000872665 0 0 -1" translation="0 0 -1.65"/> 
+		</stance_mod>
+		<override>
+			<wpn_fps_ass_rmary2_receiver unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_receiver_irons" />
+		</override>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_rmary2_magazine_release" based_on="wpn_fps_ass_fal_body_standard" type="mag_release"		a_obj="a_mag_release"	 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_magazine_release" hidden="true" ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_rmary2_receiver" based_on="wpn_fps_ass_fal_body_standard" type="lower_reciever"			 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_receiver" hidden="true" ver="2">
+	</WeaponMod>
+
+<!--Barrels-->	
+	<WeaponMod id="wpn_fps_ass_rmary2_barrel" based_on="wpn_fps_ass_vhs_b_standard" type="barrel"			 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_barrel" 	hidden="true" ver="2">
+		<stats damage="0" spread="1" recoil="0" concealment="1"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_rmary2_barrel_hical1" based_on="wpn_fps_ass_vhs_b_standard" type="barrel"			 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_barrel_hical1" 	global_value="rmary2mod"	hidden="false" ver="2">
+		<stats damage="-2" spread="-2" recoil="0" concealment="4"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_rmary2_barrel_hical2" based_on="wpn_fps_ass_vhs_b_standard" type="barrel"			 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_barrel_hical2" 	global_value="rmary2mod"	hidden="false" ver="2">
+		<stats damage="-2" spread="-2" recoil="0" concealment="4"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_rmary2_barrel_mix" based_on="wpn_fps_ass_vhs_b_standard" type="barrel"			 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_barrel_mix" 	global_value="rmary2mod"	hidden="false" ver="2">
+		<stats damage="0" spread="1" recoil="1" concealment="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_rmary2_barrel_range" based_on="wpn_fps_ass_vhs_b_standard" type="barrel"			 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_barrel_range" 	global_value="rmary2mod"	hidden="false" ver="2">
+		<stats damage="2" spread="1" recoil="2" concealment="-4"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_rmary2_barrel_velocity" based_on="wpn_fps_ass_vhs_b_standard" type="barrel"			 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_barrel_velocity" 	global_value="rmary2mod"	hidden="false" ver="2">
+		<stats damage="2" spread="2" recoil="1" concealment="-4"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_rmary2_barrel_classic" based_on="wpn_fps_ass_vhs_b_standard" type="barrel"			 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_barrel_classic" global_value="rmary2mod" 	hidden="false" ver="2">
+		<stats damage="2" spread="1" recoil="2" concealment="-4"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_rmary2_barrel_short_classic" based_on="wpn_fps_ass_vhs_b_standard" type="barrel"			 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_barrel_short_classic" 	global_value="rmary2mod"	hidden="false" ver="2">
+		<stats damage="-2" spread="-2" recoil="0" concealment="4"/>
+	</WeaponMod>
+
+<!--Grips-->	
+	<WeaponMod id="wpn_fps_ass_rmary2_grip" based_on="wpn_fps_ass_fal_g_01" type="grip"			 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_grip" 	hidden="true" ver="2">
+		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_rmary2_grip_mix" based_on="wpn_fps_ass_fal_g_01" type="grip"			 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_grip_mix" 	global_value="rmary2mod"	hidden="false" ver="2">
+		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_rmary2_grip_quickdraw" based_on="wpn_fps_ass_fal_g_01" type="grip"			 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_grip_quickdraw" 	global_value="rmary2mod"	hidden="false" ver="2">
+		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_rmary2_grip_quickdraw2" based_on="wpn_fps_ass_fal_g_01" type="grip"			 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_grip_quickdraw2" 	global_value="rmary2mod"	hidden="false" ver="2">
+		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_rmary2_grip_sprintout" based_on="wpn_fps_ass_fal_g_01" type="grip"			 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_grip_sprintout" 	global_value="rmary2mod"	hidden="false" ver="2">
+		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_rmary2_grip_sprintout2" based_on="wpn_fps_ass_fal_g_01" type="grip"			 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_grip_sprintout2" 	global_value="rmary2mod"	hidden="false" ver="2">
+		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_rmary2_grip_classic" based_on="wpn_fps_ass_fal_g_01" type="grip"			 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_grip_classic" 	global_value="rmary2mod"	hidden="false" ver="2">
+		<stats damage="0" spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+	
+<!--Magazine-->	
+	<WeaponMod id="wpn_fps_ass_rmary2_magazine" based_on="wpn_fps_ass_fal_m_standard" type="magazine"			 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_magazine" 	hidden="true" ver="2">
+		<stats extra_ammo="0" total_ammo_mod="0" concealment="0"/>
+		<adds>
+			<value_node value="wpn_fps_ass_rmary2_magazine_empty"/>
+		</adds>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_rmary2_magazine_empty" based_on="wpn_fps_ass_fal_m_standard" type="extra"		a_obj="a_m_empty"			 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_magazine_empty" 	hidden="true" ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_rmary2_magazine_fast1" based_on="wpn_fps_ass_fal_m_standard" type="magazine"		a_obj="a_m_jungle"	unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_magazine_fast1" 	global_value="rmary2mod"	hidden="false" ver="2">
+		<stats extra_ammo="-2" total_ammo_mod="0" reload="1" concealment="-1"/>
+			<custom_stats ammo_offset="-1">
+		</custom_stats>
+		<forbids>
+			<value_node value="wpn_fps_ass_rmary2_magazine_empty"/>
+		</forbids>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_rmary2_magazine_fast2" based_on="wpn_fps_ass_fal_m_standard" type="magazine"		a_obj="a_m_jungle"	 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_magazine_fast2" 	global_value="rmary2mod"	hidden="false" ver="2">
+		<stats extra_ammo="-5" total_ammo_mod="0" reload="2" concealment="3"/>
+		<forbids>
+			<value_node value="wpn_fps_ass_rmary2_magazine_empty"/>
+		</forbids>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_rmary2_xmag1" based_on="wpn_fps_ass_fal_m_standard" type="magazine"		a_obj="a_m_jungle"	 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_xmag1" 	global_value="rmary2mod"	hidden="false" ver="2">
+		<stats extra_ammo="5" total_ammo_mod="0" reload="-1" concealment="-1"/>
+		<forbids>
+			<value_node value="wpn_fps_ass_rmary2_magazine_empty"/>
+		</forbids>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_rmary2_xmag2" based_on="wpn_fps_ass_fal_m_standard" type="magazine"		a_obj="a_m_drum"	 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_xmag2" 	global_value="rmary2mod"	hidden="false" ver="2">
+		<stats extra_ammo="10" total_ammo_mod="0" reload="-2" concealment="-3"/>
+		<forbids>
+			<value_node value="wpn_fps_ass_rmary2_magazine_empty"/>
+		</forbids>
+	</WeaponMod>
+	
+<!--Stock-->	
+	<WeaponMod id="wpn_fps_ass_rmary2_stock" based_on="wpn_fps_ass_fal_s_wood" type="stock"			 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_stock" hidden="true" ver="2">
+		<stats spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_rmary2_stock_adsmove" based_on="wpn_fps_ass_fal_s_wood" type="stock"			 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_stock_adsmove" hidden="false" global_value="rmary2mod"  ver="2">
+		<stats spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_rmary2_stock_flinch" based_on="wpn_fps_ass_fal_s_wood" type="stock"			 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_stock_flinch" hidden="false" global_value="rmary2mod"  ver="2">
+		<stats spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_rmary2_stock_hipfiremove" based_on="wpn_fps_ass_fal_s_wood" type="stock"			 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_stock_hipfiremove" hidden="false" global_value="rmary2mod"  ver="2">
+		<stats spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_rmary2_stock_mix" based_on="wpn_fps_ass_fal_s_wood" type="stock"			 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_stock_mix" hidden="false" global_value="rmary2mod"  ver="2">
+		<stats spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>	
+	<WeaponMod id="wpn_fps_ass_rmary2_stock_mix2" based_on="wpn_fps_ass_fal_s_wood" type="stock"			 		unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_stock_mix2" hidden="false" global_value="rmary2mod"  ver="2">
+		<stats spread="0" recoil="0" concealment="0"/>
+	</WeaponMod>	
+
+
+<!--Trigger-->	
+	<WeaponMod id="wpn_fps_ass_rmary2_trigger" based_on="wpn_fps_ass_vhs_body" type="trigger"		a_obj="a_trigger"	unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_trigger" hidden="true" ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_ass_rmary2_trigger_fast" based_on="wpn_fps_ass_vhs_body" type="trigger"	a_obj="a_trigger"	unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_trigger_fast" hidden="false" global_value="rmary2mod" ver="2">
+	</WeaponMod>
+	
+<!--Weapon-->
+		<Weapon unlock_level="42">
+		<weapon id="rmary2" based_on="fal" weapon_hold="rmary2" CLIP_AMMO_MAX="20" NR_CLIPS_MAX="3"  FIRE_MODE="single" CAN_TOGGLE_FIREMODE="true" global_value="rmary2mod">
+			<stats damage="160" spread="18" spread_moving="16" recoil="10" concealment="13"/>
+			<fire_mode_data fire_rate="0.1169"/>
+			<sounds fire="rmary2_fire" fire_single="rmary2_fire" fire_auto="rmary2_fire" stop_fire="m16_stop" use_fix="true">		
+			</sounds>		
+				<AMMO_PICKUP>
+					<value_node value="1.50"/>
+					<value_node value="3.00"/>
+				</AMMO_PICKUP>
+				<kick>
+				<standing>
+					<value_node value="1.2"/>
+					<value_node value="1.5"/>
+					<value_node value="-0.7"/>
+					<value_node value="0.7"/>
+				</standing>
+				<crouching>
+					<value_node value="1.0"/>
+					<value_node value="1.3"/>
+					<value_node value="-0.7"/>
+					<value_node value="0.7"/>
+				</crouching>
+				<steelsight>
+					<value_node value="0.75"/>
+					<value_node value="0.9"/>
+					<value_node value="-0.6"/>
+					<value_node value="0.6"/>
+				</steelsight>
+				</kick>
+			<timers reload_not_empty="2.3" reload_empty="3.6" unequip="0.6" equip="0.6" />
+			<animations reload_name_id="rmary2"/>
+		</weapon>
+		<factory id="wpn_fps_ass_rmary2" unit="units/mods/weapons/wpn_fps_ass_rmary2/wpn_fps_ass_rmary2" >
+		<animations reload="reload" fire="recoil" fire_steelsight="recoil" reload_not_empty="reload_not_empty" magazine_empty="last_recoil"/>
+		 <adds>
+	     </adds>
+			<override>
+				<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="barrel"/>
+				<wpn_fps_upg_fl_ass_smg_sho_surefire parent="barrel"/>
+				<wpn_fps_upg_fl_ass_peq15 parent="barrel"/>
+				<wpn_fps_upg_fl_ass_laser parent="barrel"/>
+				<wpn_fps_upg_fl_ass_utg parent="barrel"/>
+				<wpn_fps_upg_fl_dbal_laser parent="barrel"/>
+				
+				<wpn_fps_upg_tr_match 	unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_trigger_fast" a_obj="a_trigger" />
+				<wpn_fps_upg_tr_light 	unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_trigger_fast" a_obj="a_trigger" />
+				<wpn_fps_upg_tr_heavy 	unit="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_trigger" a_obj="a_trigger" />
+			</override>
+			<default_blueprint>
+				<value_node value="wpn_fps_ass_rmary2_barrel"/>
+				<value_node value="wpn_fps_ass_rmary2_bolt"/>
+				<value_node value="wpn_fps_ass_rmary2_charging_handle"/>
+				<value_node value="wpn_fps_ass_rmary2_flash_hider"/>
+				<value_node value="wpn_fps_ass_rmary2_grip"/>
+				<value_node value="wpn_fps_ass_rmary2_magazine"/>
+				<value_node value="wpn_fps_ass_rmary2_magazine_empty"/>
+				<value_node value="wpn_fps_ass_rmary2_magazine_release"/>
+				<value_node value="wpn_fps_ass_rmary2_irons"/> 
+				<value_node value="wpn_fps_ass_rmary2_receiver"/>
+				<value_node value="wpn_fps_ass_rmary2_trigger"/>
+				<value_node value="wpn_fps_ass_rmary2_stock"/> 
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_ass_rmary2_barrel"/>
+				<value_node value="wpn_fps_ass_rmary2_bolt"/>
+				<value_node value="wpn_fps_ass_rmary2_charging_handle"/>
+				<value_node value="wpn_fps_ass_rmary2_flash_hider"/>
+				<value_node value="wpn_fps_ass_rmary2_grip"/>
+				<value_node value="wpn_fps_ass_rmary2_magazine"/>
+				<value_node value="wpn_fps_ass_rmary2_magazine_empty"/>
+				<value_node value="wpn_fps_ass_rmary2_magazine_release"/>
+				<value_node value="wpn_fps_ass_rmary2_irons"/>
+				<value_node value="wpn_fps_ass_rmary2_receiver"/>
+				<value_node value="wpn_fps_ass_rmary2_trigger"/>
+				<value_node value="wpn_fps_ass_rmary2_stock"/>
+
+				<value_node value="wpn_fps_ass_rmary2_barrel_classic"/>
+				<value_node value="wpn_fps_ass_rmary2_barrel_short_classic"/>
+				<value_node value="wpn_fps_ass_rmary2_barrel_hical1"/>
+				<value_node value="wpn_fps_ass_rmary2_barrel_hical2"/>
+				<value_node value="wpn_fps_ass_rmary2_barrel_long"/>
+				<value_node value="wpn_fps_ass_rmary2_barrel_mix"/>
+				<value_node value="wpn_fps_ass_rmary2_barrel_range"/>
+				<value_node value="wpn_fps_ass_rmary2_barrel_velocity"/>
+				<value_node value="wpn_fps_ass_rmary2_grip_classic"/>
+				<value_node value="wpn_fps_ass_rmary2_grip_mix"/>
+				<value_node value="wpn_fps_ass_rmary2_grip_quickdraw"/>
+				<value_node value="wpn_fps_ass_rmary2_grip_quickdraw2"/>
+				<value_node value="wpn_fps_ass_rmary2_grip_sprintout"/>
+				<value_node value="wpn_fps_ass_rmary2_grip_sprintout2"/>
+				<value_node value="wpn_fps_ass_rmary2_magazine_fast1"/>
+				<value_node value="wpn_fps_ass_rmary2_magazine_fast2"/>
+				<value_node value="wpn_fps_ass_rmary2_xmag1"/>
+				<value_node value="wpn_fps_ass_rmary2_xmag2"/>
+				<value_node value="wpn_fps_ass_rmary2_trigger_fast"/>
+				<value_node value="wpn_fps_ass_rmary2_stock_adsmove"/>
+				<value_node value="wpn_fps_ass_rmary2_stock_flinch"/>
+				<value_node value="wpn_fps_ass_rmary2_stock_hipfiremove"/>
+				<value_node value="wpn_fps_ass_rmary2_stock_mix"/>
+				<value_node value="wpn_fps_ass_rmary2_stock_mix2"/>
+								
+				<value_node value="wpn_fps_upg_i_singlefire"/>
+				<value_node value="wpn_fps_upg_i_autofire"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_v6"/>
+				<value_node value="wpn_fps_lmg_hk51b_ns_jcomp"/>
+				<value_node value="wpn_fps_lmg_kacchainsaw_ns_muzzle"/>
+				<value_node value="wpn_fps_lmg_kacchainsaw_ns_suppressor"/>
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_specter_piggyback"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_cs_piggyback"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_bmg"/>
+				<value_node value="wpn_fps_upg_o_uh"/>
+				<value_node value="wpn_fps_upg_o_fc1"/>
+				<value_node value="wpn_fps_upg_o_tf90"/>
+				<value_node value="wpn_fps_upg_o_poe"/>
+				<value_node value="wpn_fps_upg_o_hamr"/>
+				<value_node value="wpn_fps_upg_o_hamr_reddot"/>
+				<value_node value="wpn_fps_upg_o_atibal"/>
+				<value_node value="wpn_fps_upg_o_atibal_reddot"/>
+				<value_node value="wpn_fps_upg_o_health"/>
+			</uses_parts>
+		</factory>
+		<stance>
+		<standard>
+			<shoulders rotation="-0.00263181 0.00452981 -0.00306616 -0.999982" translation="-2.43 10 -1.01"/>
+		</standard>
+		<crouched>
+			<shoulders rotation="-0.00263181 0.00452981 -0.00306616 -0.999982" translation="-2.43 6.784 -2.79"/>
+		</crouched>
+		<steelsight> 
+			<shoulders rotation="-0.000226507 0.00548032 6.85687e-005 -0.999985" translation="-9.525 -2.101 4.435"/>
+		</steelsight> 
+		</stance>
+		</Weapon>
+		
+
+
+
+
+	<Sounds directory="assets\sounds">
+		<sound id="rmary2_fire" path="rmary2_fire.ogg" prefix="regular"/>
+		<sound id="rmary2_fire" path="rmary2_supp.ogg"  prefix="suppressed_a"/>
+		<sound id="rmary2_fire" path="rmary2_supp.ogg"  prefix="suppressed_b"/>
+		<sound id="rmary2_fire" path="rmary2_supp.ogg"  prefix="suppressed_c"/>
+	
+		<sound id="rmary2_back_in_hand"			 path="rmary2_back_in_hand.ogg" prefix="first"/>
+		<sound id="rmary2_back_in_hand" 		 path="rmary2_back_in_hand.ogg" prefix="third"/>
+		<sound id="rmary2_bolt_forward"			 path="rmary2_bolt_forward.ogg" prefix="first"/>
+		<sound id="rmary2_bolt_forward" 		 path="rmary2_bolt_forward.ogg" prefix="third"/>
+		<sound id="rmary2_charging_handle_grab"			 path="rmary2_charging_handle_grab.ogg" prefix="first"/>
+		<sound id="rmary2_charging_handle_grab" 		 path="rmary2_charging_handle_grab.ogg" prefix="third"/>
+		<sound id="rmary2_charging_handle_pull"			 path="rmary2_charging_handle_pull.ogg" prefix="first"/>
+		<sound id="rmary2_charging_handle_pull" 		 path="rmary2_charging_handle_pull.ogg" prefix="third"/>
+		<sound id="rmary2_foley_end"					 path="rmary2_foley_end.ogg" prefix="first"/>
+		<sound id="rmary2_foley_end" 			 		 path="rmary2_foley_end.ogg" prefix="third"/>
+		<sound id="rmary2_generic_mag_grab"				 path="rmary2_generic_mag_grab.ogg" prefix="first"/>
+		<sound id="rmary2_generic_mag_grab" 			 path="rmary2_generic_mag_grab.ogg" prefix="third"/>
+		<sound id="rmary2_generic_mag_in_connect"			 path="rmary2_generic_mag_in_connect.ogg" prefix="first"/>
+		<sound id="rmary2_generic_mag_in_connect" 			 path="rmary2_generic_mag_in_connect.ogg" prefix="third"/>
+		<sound id="rmary2_generic_mag_in_connect_drum"			 path="rmary2_generic_mag_in_connect_drum.ogg" prefix="first"/>
+		<sound id="rmary2_generic_mag_in_connect_drum" 			 path="rmary2_generic_mag_in_connect_drum.ogg" prefix="third"/>
+		<sound id="rmary2_grab_new_mag"				 path="rmary2_grab_new_mag.ogg" prefix="first"/>
+		<sound id="rmary2_grab_new_mag" 			 path="rmary2_grab_new_mag.ogg" prefix="third"/>
+		<sound id="rmary2_grab_new_mag_drum"				 path="rmary2_grab_new_mag_drum.ogg" prefix="first"/>
+		<sound id="rmary2_grab_new_mag_drum" 			 path="rmary2_grab_new_mag_drum.ogg" prefix="third"/>
+		<sound id="rmary2_mag_contact"				 path="rmary2_mag_contact.ogg" prefix="first"/>
+		<sound id="rmary2_mag_contact" 				 path="rmary2_mag_contact.ogg" prefix="third"/>
+		<sound id="rmary2_mag_impact_ground"		 path="rmary2_mag_impact_ground.ogg" prefix="first"/>
+		<sound id="rmary2_mag_impact_ground" 		 path="rmary2_mag_impact_ground.ogg" prefix="third"/>		
+		<sound id="rmary2_mag_in"		 		 path="rmary2_mag_in.ogg" prefix="first"/>
+		<sound id="rmary2_mag_in" 			 path="rmary2_mag_in.ogg" prefix="third"/>
+		<sound id="rmary2_mag_in_drum"		 	 path="rmary2_mag_in_drum.ogg" prefix="first"/>
+		<sound id="rmary2_mag_in_drum" 			 path="rmary2_mag_in_drum.ogg" prefix="third"/>
+		<sound id="rmary2_mag_in_empty"		 		 path="rmary2_mag_in_empty.ogg" prefix="first"/>
+		<sound id="rmary2_mag_in_empty" 			 path="rmary2_mag_in_empty.ogg" prefix="third"/>
+		<sound id="rmary2_mag_out"		 	 path="rmary2_mag_out.ogg" prefix="first"/>
+		<sound id="rmary2_mag_out" 			 path="rmary2_mag_out.ogg" prefix="third"/>		
+		<sound id="rmary2_mag_out_drum"		 	 path="rmary2_mag_out_drum.ogg" prefix="first"/>
+		<sound id="rmary2_mag_out_drum" 			 path="rmary2_mag_out_drum.ogg" prefix="third"/>		
+		<sound id="rmary2_mag_out_empty"		 	 path="rmary2_mag_out_empty.ogg" prefix="first"/>
+		<sound id="rmary2_mag_out_empty" 			 path="rmary2_mag_out_empty.ogg" prefix="third"/>
+		<sound id="rmary2_mag_toss_drum"		 	 path="rmary2_mag_toss_drum.ogg" prefix="first"/>
+		<sound id="rmary2_mag_toss_drum" 			 path="rmary2_mag_toss_drum.ogg" prefix="third"/>
+		<sound id="rmary2_mag_toss_empty"		 	 path="rmary2_mag_toss_empty.ogg" prefix="first"/>
+		<sound id="rmary2_mag_toss_empty" 			 path="rmary2_mag_toss_empty.ogg" prefix="third"/>
+		<sound id="rmary2_tilt"		 path="rmary2_tilt.ogg" prefix="first"/>
+		<sound id="rmary2_tilt" 	 path="rmary2_tilt.ogg" prefix="third"/>		
+	</Sounds>
+	
+	<AddFiles directory="assets">
+	
+	<!-- Animations -->
+		<animation path="anims/fps/rmary2/rmary2_reload" load="true"/>
+		<animation path="anims/fps/rmary2/rmary2_reload_not_empty" load="true"/>
+		<animation path="anims/fps/rmary2/rmary2_drum_reload" load="true"/>
+		<animation path="anims/fps/rmary2/rmary2_drum_reload_not_empty" load="true"/>
+		<animation path="anims/fps/rmary2/rmary2_jungle_reload" load="true"/>
+		<animation path="anims/fps/rmary2/rmary2_jungle_reload_not_empty" load="true"/>
+		<animation path="anims/fps/rmary2/rmary2_idle" load="true"/>
+		<animation path="anims/fps/rmary2/rmary2_recoil" load="true"/>
+		<animation path="anims/fps/rmary2/rmary2_recoil_loop" load="true"/>
+		<animation path="anims/fps/rmary2/rmary2_recoil_enter" load="true"/>
+		<animation path="anims/fps/rmary2/rmary2_recoil_exit" load="true"/>
+		<animation path="anims/fps/rmary2/rmary2_equip" load="true"/>
+		<animation path="anims/fps/rmary2/rmary2_unequip" load="true"/>
+		<animation path="anims/fps/rmary2/rmary2_melee" load="true"/>
+		<animation path="anims/fps/rmary2/rmary2_melee_miss" load="true"/>
+		<animation path="anims/fps/rmary2/rmary2_use" load="true"/>
+		<animation path="anims/fps/rmary2/rmary2_sprint_enter" load="true"/>
+		<animation path="anims/fps/rmary2/rmary2_sprint" load="true"/>
+		<animation path="anims/fps/rmary2/rmary2_sprint_exit" load="true"/>
+		<animation path="anims/fps/rmary2/rmary2_com_var1" load="true"/>
+		<animation path="anims/fps/rmary2/rmary2_com_var5" load="true"/>
+		<animation path="anims/fps/rmary2/rmary2_com_var6" load="true"/>
+		<animation path="anims/fps/rmary2/rmary2_com_var7" load="true"/>
+		<animation path="anims/fps/rmary2/rmary2_get_up" load="true"/>
+		<animation path="anims/fps/rmary2/rmary2_gogo" load="true"/>
+		<animation path="anims/fps/rmary2/rmary2_tased" load="true"/>
+		<animation path="anims/fps/rmary2/rmary2_tased_boost" load="true"/>
+		<animation path="anims/fps/rmary2/rmary2_tased_exit" load="true"/>
+		<animation path="anims/fps/rmary2/rmary2_inspect" load="true"/>
+
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/rmary2"/>
+		
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_rmary2_barrel_classic"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_rmary2_barrel_short_classic"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_rmary2_barrel_hical1"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_rmary2_barrel_hical2"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_rmary2_barrel_long"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_rmary2_barrel_mix"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_rmary2_barrel_range"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_rmary2_barrel_velocity"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_rmary2_grip"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_rmary2_grip_classic"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_rmary2_grip_mix"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_rmary2_grip_quickdraw"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_rmary2_grip_quickdraw2"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_rmary2_grip_sprintout"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_rmary2_grip_sprintout2"/> 		
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_rmary2_magazine_fast1"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_rmary2_magazine_fast2"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_rmary2_xmag1"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_rmary2_xmag2"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_rmary2_stock_adsmove"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_rmary2_stock_flinch"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_rmary2_stock_hipfiremove"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_rmary2_stock_mix"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_rmary2_stock_mix2"/> 
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_ass_rmary2_trigger_fast"/> 
+
+		<!--Unit Base-->
+		<unit_npc path="units/mods/weapons/wpn_fps_ass_rmary2/wpn_fps_ass_rmary2"/>
+
+
+		<!--Textures-->		
+		<texture path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/weapon_metal_cubemap"/>
+		
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/762nato"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/rmary2_barrel"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/rmary2_barrel_hical1"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/rmary2_barrel_hical2"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/rmary2_barrel_mix"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/rmary2_barrel_range"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/rmary2_barrel_velocity"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/rmary2_flash_hider"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/rmary2_grip"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/rmary2_grip_mix"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/rmary2_grip_quickdraw"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/rmary2_grip_quickdraw2"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/rmary2_grip_sprintout"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/rmary2_grip_sprintout2"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/rmary2_magazine"/>
+		<df_nm		path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/rmary2_magazine_fast1_tape"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/rmary2_magazine_fast2"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/rmary2_xmag1"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/rmary2_xmag2"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/rmary2_receiver_irons"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/rmary2_receiver_rear"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/rmary2_receiver_weaver"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/rmary2_sights"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/rmary2_stock"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/rmary2_stock_adsmove"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/rmary2_stock_flinch"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/rmary2_stock_hipfiremove"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/rmary2_stock_mix"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/rmary2_stock_mix2"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/rmary2_trigger_fast"/>
+
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/falove_barrel_classic"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/falove_gas_block"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/falove_grip_mix_classic"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_ass_rmary2_pts/textures/falove_rails"/>
+		
+		<!--Unit Material Stuff-->		
+
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_barrel"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_bolt"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_charging_handle"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_flash_hider"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_grip"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_magazine"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_magazine_empty"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_magazine_release"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_receiver"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_receiver_irons"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_stock"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_trigger"/>
+
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_barrel_classic"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_barrel_short_classic"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_barrel_hical1"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_barrel_hical2"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_barrel_long"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_barrel_mix"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_barrel_range"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_barrel_velocity"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_grip_classic"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_grip_mix"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_grip_quickdraw"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_grip_quickdraw2"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_grip_sprintout"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_grip_sprintout2"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_magazine_fast1"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_magazine_fast2"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_trigger_fast"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_stock_adsmove"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_stock_flinch"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_stock_hipfiremove"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_stock_mix"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_stock_mix2"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_xmag1"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_ass_rmary2_pts/wpn_fps_ass_rmary2_xmag2"/>
+		
+		
+		
+		
+	</AddFiles>
+	
+	<Hooks directory="hooks">
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>	
+		<hook file="newraycastweaponbase.lua" source_file="lib/units/weapons/newraycastweaponbase"/>
+	</Hooks>
+</mod>
+
+

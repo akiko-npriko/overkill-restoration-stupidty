@@ -1,0 +1,21 @@
+<materials version="3" group="weapon_group">
+	<material name="mtr_22_110" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+				    <diffuse_texture		 file="units/mods/weapons/wpn_fps_pis_zip22_pts/textures/magazine_ruger22_110_df"  />
+				    <bump_normal_texture     file="units/mods/weapons/wpn_fps_pis_zip22_pts/textures/magazine_ruger22_110_nm"  />
+				   <material_texture	 	 file="units/mods/weapons/wpn_fps_pis_zip22_pts/textures/magazine_ruger22_110_gsma" />
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_pis_zip22_pts/textures/weapon_metal_cubemap"/>		
+    </material>	
+	<material name="mtr_cal_22rimfire" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+				    <diffuse_texture		 file="units/mods/weapons/wpn_fps_pis_zip22_pts/textures/22_rimfire_df"  />
+				    <bump_normal_texture     file="units/mods/weapons/wpn_fps_pis_zip22_pts/textures/22_rimfire_nm"  />
+				   <material_texture	 	 file="units/mods/weapons/wpn_fps_pis_zip22_pts/textures/22_rimfire_gsma" />
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_pis_zip22_pts/textures/weapon_metal_cubemap"/>		
+    </material>	
+	<material name="mtr_zip22" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+				    <diffuse_texture		 file="units/mods/weapons/wpn_fps_pis_zip22_pts/textures/zip22_df"  />
+				    <bump_normal_texture     file="units/mods/weapons/wpn_fps_pis_zip22_pts/textures/zip22_nm"  />
+				   <material_texture	 	 file="units/mods/weapons/wpn_fps_pis_zip22_pts/textures/zip22_gsma" />
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_pis_zip22_pts/textures/weapon_metal_cubemap"/>		
+    </material>	
+	
+</materials>

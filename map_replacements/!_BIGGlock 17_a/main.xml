@@ -1,0 +1,95 @@
+<mod name="A really big Glock 17-Chimano 88" color="Color(1,0,0)" min_lib_ver="3.38">
+	<Localization directory="Loc" default="english.txt"/>
+	<GlobalValue id="bigglockmod" color="Color(0.7, 0.2, 0.1)"/>
+	<Weapon>
+		<weapon id="bigglock" based_on="deagle" weapon_hold="bigglock" CLIP_AMMO_MAX="17" NR_CLIPS_MAX="4" ammo_pickup="1" name_id="bm_w_glock_17" global_value="bigglockmod">
+			<stats spread="15" recoil="10" concealment="25" suppression="5"/>
+			<fire_mode_data fire_rate="0.1578947368421053"/>
+			<kick>
+				<standing>
+					<value_node value="2.2"/>
+					<value_node value="1.8"/>
+					<value_node value="-1.4"/>
+					<value_node value="1.4"/>
+				</standing>
+				<crouching>
+					<value_node value="2.2"/>
+					<value_node value="1.8"/>
+					<value_node value="-1.4"/>
+					<value_node value="1.4"/>
+				</crouching>
+				<steelsight>
+					<value_node value="1.6"/>
+					<value_node value="1.2"/>
+					<value_node value="-1.2"/>
+					<value_node value="1.2"/>
+				</steelsight>
+			</kick>
+			<timers equip="0.35" unequip="0.5" reload_not_empty="1.47" reload_empty="2.12"/>
+			<sounds fire="g17_fire"/>
+		</weapon>
+		<factory id="wpn_fps_pis_bigglock" unit="units/mods/weapons/wpn_fps_pis_bigglock/wpn_fps_pis_bigglock">
+			<override>
+				<wpn_fps_upg_o_rmr parent="slide"/>
+				<wpn_fps_upg_o_rms parent="slide"/>
+				<wpn_fps_upg_o_rikt parent="slide"/>
+				<wpn_fps_upg_ns_pis_putnik a_obj="a_ns" parent="slide"/>
+			</override>
+			<default_blueprint>
+				<value_node value="wpn_fps_pis_g17_b_standard"/>
+				<value_node value="wpn_fps_pis_g17_body_standard"/>
+				<value_node value="wpn_fps_pis_g17_m_standard"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_pis_g17_b_standard"/>
+				<value_node value="wpn_fps_pis_g17_body_standard"/>
+				<value_node value="wpn_fps_pis_g17_m_standard"/>
+
+				<value_node value="wpn_fps_upg_fl_pis_laser"/>
+				<value_node value="wpn_fps_upg_fl_pis_tlr1"/>
+				<value_node value="wpn_fps_upg_fl_pis_crimson"/>
+				<value_node value="wpn_fps_upg_fl_pis_x400v"/>
+				<value_node value="wpn_fps_upg_fl_pis_m3x"/>
+				<value_node value="wpn_fps_upg_fl_pis_perst"/>
+				<value_node value="wpn_fps_upg_ns_pis_large"/>
+				<value_node value="wpn_fps_upg_ns_pis_medium"/>
+				<value_node value="wpn_fps_upg_ns_pis_small"/>
+				<value_node value="wpn_fps_upg_ns_pis_large_kac"/>
+				<value_node value="wpn_fps_upg_ns_pis_medium_gem"/>
+				<value_node value="wpn_fps_upg_ns_pis_medium_slim"/>
+				<value_node value="wpn_fps_upg_pis_ns_flash"/>
+				<value_node value="wpn_fps_upg_ns_pis_meatgrinder"/>
+				<value_node value="wpn_fps_upg_ns_pis_ipsccomp"/>
+				<value_node value="wpn_fps_upg_ns_pis_jungle"/>
+				<value_node value="wpn_fps_upg_ns_pis_typhoon"/>
+				<value_node value="wpn_fps_upg_ns_ass_filter"/>
+				<value_node value="wpn_fps_upg_ns_pis_putnik"/>
+				<value_node value="wpn_fps_upg_o_rmr"/>
+				<value_node value="wpn_fps_upg_o_rms"/>
+				<value_node value="wpn_fps_upg_o_rikt"/>
+				<value_node value="wpn_fps_pis_g26_g_gripforce"/>
+				<value_node value="wpn_fps_pis_g26_g_laser"/>
+				<value_node value="wpn_fps_pis_g18c_m_mag_33rnd"/>
+				<value_node value="wpn_fps_pis_g17_ck"/>
+			</uses_parts>
+		</factory>
+		<stance>
+			<standard>
+				<shoulders rotation="-0.00600736 0.0054946 0.000909443 -0.999966" translation="4.387 -12.82 -7.066"/>
+			</standard>
+			<crouched>
+				<shoulders rotation="-0.00600736 0.0054946 0.000909443 -0.999966" translation="0.387 -9.82 -9.066"/>
+			</crouched>
+			<steelsight>
+				<shoulders rotation="-0.00600736 0.0054946 0.000909443 -0.999966" translation="-8.59 -8.82 -4.925"/>
+			</steelsight>
+		</stance>
+	</Weapon>
+	<AddFiles directory="assets" auto_generate="true"/>
+	<Sounds directory="assets\sounds">
+		<sound id="metal_barrel_impact_hard3" path="metal_barrel_impact_hard3.ogg" prefix="first"/>
+	</Sounds>
+	<Hooks directory="hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+	</Hooks>
+</mod>

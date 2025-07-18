@@ -1,0 +1,15 @@
+<dynamic_object>
+	<diesel orientation_object="rp_wpn_fps_snp_musket"/>
+	<animations>
+		<animation_group name="reload">
+			<object name="anim_bullet_reload" enabled="true"/>
+			<object name="anim_frizzen_reload" enabled="true"/>
+			<object name="anim_hammer_reload" enabled="true"/>
+			<object name="anim_powder_reload" enabled="true"/>
+		</animation_group>
+		<animation_group name="recoil">
+			<object name="anim_frizzen_recoil" enabled="true"/>
+			<object name="anim_hammer_recoil" enabled="true"/>
+		</animation_group>
+	</animations>
+</dynamic_object>

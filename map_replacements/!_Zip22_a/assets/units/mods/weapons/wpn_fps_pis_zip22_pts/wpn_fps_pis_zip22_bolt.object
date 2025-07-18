@@ -1,0 +1,21 @@
+<dynamic_object>
+    <diesel materials="units/mods/weapons/wpn_fps_pis_zip22_pts/wpn_fps_pis_zip22_bolt" orientation_object="rp_bolt"/>
+	<animations>	
+		<animation_group name="reload">
+			<object name="anim_reload_bolt" enabled="true" />
+		</animation_group>
+				
+		<animation_group name="reload_drum">
+			<object name="anim_reload_bolt_drum" enabled="true" />
+		</animation_group>
+		
+		<animation_group name="recoil">
+			<object name="anim_recoil_bolt" enabled="true" />
+		</animation_group>
+
+		</animations>
+    <graphics>
+        <object enabled="true" name="g_bolt"/>
+
+    </graphics>
+</dynamic_object>

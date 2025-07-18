@@ -1,0 +1,24 @@
+<dynamic_object>
+    <diesel materials="units/mods/weapons/wpn_fps_ass_g7_pts/wpn_fps_ass_g7_body_main" orientation_object="rp_g7_body"/>
+	<animations>
+		<animation_group name="reload">
+		  <object name="a_bolt_handle_reload" enabled="true" />
+		  <object name="a_bolt_reload" enabled="true" />
+		</animation_group>    	
+		<animation_group name="recoil">
+		  <object name="a_bolt_handle_recoil" enabled="true" />
+		  <object name="a_bolt_recoil" enabled="true" />
+		</animation_group>
+	</animations>
+    <graphics>
+        <object enabled="true" name="g_dh" />
+        <object enabled="true" name="g_bolt" />
+        <object enabled="true" name="g_main" />
+        <object enabled="false" name="g_screen" />
+        <object enabled="true" name="g_ammo_counter" />
+        <object enabled="true" name="g_m_release" />
+        <object enabled="true" name="g_sight_rear" />
+        <object enabled="true" name="g_sight_display" />
+        <object enabled="true" name="g_crosshair_display" />
+    </graphics>
+</dynamic_object>

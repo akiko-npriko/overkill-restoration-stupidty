@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+			
+		<target mode="attach">
+			<anim name="coslo723_reload" 								file="anims/fps/coslo723/coslo723_reload" blend_set="all"/>
+			<anim name="coslo723_reload_not_empty" 					file="anims/fps/coslo723/coslo723_reload_not_empty" blend_set="all"/>
+			
+			<anim name="coslo723_idle" 								file="anims/fps/coslo723/coslo723_idle" blend_set="all"/>
+			<anim name="coslo723_recoil" 								file="anims/fps/coslo723/coslo723_recoil" blend_set="all"/>
+			<anim name="coslo723_recoil_enter" 						file="anims/fps/coslo723/coslo723_recoil_enter" blend_set="all"/>
+			<anim name="coslo723_recoil_loop" 						file="anims/fps/coslo723/coslo723_recoil_loop" blend_set="all"/>
+			<anim name="coslo723_recoil_exit" 						file="anims/fps/coslo723/coslo723_recoil_exit" blend_set="all"/>
+			<anim name="coslo723_recoil_steelsight" 					file="anims/fps/coslo723/coslo723_recoil" blend_set="all"/>
+			<anim name="coslo723_equip" 								file="anims/fps/coslo723/coslo723_equip" blend_set="all"/>
+			<anim name="coslo723_unequip" 							file="anims/fps/coslo723/coslo723_unequip" blend_set="all"/>
+			<anim name="coslo723_melee" 								file="anims/fps/coslo723/coslo723_melee" blend_set="all"/>
+			<anim name="coslo723_melee_miss" 							file="anims/fps/coslo723/coslo723_melee_miss" blend_set="all"/>
+			<anim name="coslo723_use" 								file="anims/fps/coslo723/coslo723_use" blend_set="all"/>
+			<anim name="coslo723_sprint_enter" 						file="anims/fps/coslo723/coslo723_sprint_enter" blend_set="all"/>
+			<anim name="coslo723_sprint" 								file="anims/fps/coslo723/coslo723_sprint" blend_set="all"/>
+			<anim name="coslo723_sprint_exit" 						file="anims/fps/coslo723/coslo723_sprint_exit" blend_set="all"/>
+			<anim name="coslo723_com_down_var1" 						file="anims/fps/coslo723/coslo723_com_var1" blend_set="all"/>
+			<anim name="coslo723_com_stop" 							file="anims/fps/coslo723/coslo723_com_var5" blend_set="all"/>
+			<anim name="coslo723_com_come" 							file="anims/fps/coslo723/coslo723_com_var6" blend_set="all"/>
+			<anim name="coslo723_com_point" 							file="anims/fps/coslo723/coslo723_com_var7" blend_set="all"/>
+			<anim name="coslo723_get_up" 								file="anims/fps/coslo723/coslo723_get_up" blend_set="all"/>
+			<anim name="coslo723_gogo" 								file="anims/fps/coslo723/coslo723_gogo" blend_set="all"/>
+			<anim name="coslo723_tased" 								file="anims/fps/coslo723/coslo723_tased" blend_set="all"/>
+			<anim name="coslo723_tased_boost" 						file="anims/fps/coslo723/coslo723_tased_boost" blend_set="all"/>
+			<anim name="coslo723_tased_exit" 							file="anims/fps/coslo723/coslo723_tased_exit" blend_set="all"/>
+			<anim name="coslo723_inspect" 							file="anims/fps/coslo723/coslo723_inspect" blend_set="all"/> 
+			
+	
+		</target>
+	</tweak>
+</tweaks>

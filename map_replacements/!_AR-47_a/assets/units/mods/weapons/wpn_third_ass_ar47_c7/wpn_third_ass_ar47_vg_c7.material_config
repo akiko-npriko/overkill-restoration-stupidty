@@ -1,0 +1,10 @@
+<materials version="3" group="weapon_group">
+	<material name="mtr_vg" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/vg_df" mip="3"/>
+		<bump_normal_texture file="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/vg_nm" mip="3"/>
+	</material>
+    <material name="addon" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/payday2/weapons/wpn_fps_upg_m4_reusable/wpn_fps_addon_ris_df" mip="3"/>
+        <bump_normal_texture file="units/payday2/weapons/wpn_fps_upg_m4_reusable/wpn_fps_addon_ris_nm" mip="3"/>
+    </material>
+</materials>

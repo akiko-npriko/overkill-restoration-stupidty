@@ -1,0 +1,15 @@
+<materials version="3" group="weapon_group">
+	<material name="mtr_l5" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/pd2_dlc_akm4_modpack/weapons/wpn_fps_upg_m4_m_l5/lancer_df" mip="1" />
+		<bump_normal_texture file="units/pd2_dlc_akm4_modpack/weapons/wpn_fps_upg_m4_m_l5/lancer_nm" mip="1" />
+	</material>
+    <material name="mtr_buckshot" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_shot_omni_pts/buck_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_million/weapons/wpn_fps_pis_judge_pts/buck_nm" mip="1"/>
+    </material>
+    <material name="mat_mag_bottom" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_shot_omni_pts/lancer_plate_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_mxm/weapons/wpn_fps_upg_mxm_m4/mag_strike_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_mxm/weapons/wpn_fps_upg_mxm_m4/mag_strike_gsma" mip="1"/>
+    </material>
+</materials>

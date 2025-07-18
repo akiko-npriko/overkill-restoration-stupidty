@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+		<target mode="attach">
+			<anim name="musket_idle" 					file="anims/fps/ching/ching_idle" blend_set="all"/>
+			<anim name="musket_recoil" 					file="anims/fps/musket/musket_recoil" blend_set="all"/>
+			<anim name="musket_recoil_steelsight" 		file="anims/fps/musket/musket_recoil_steelsight" blend_set="all"/>
+			<anim name="musket_equip" 					file="anims/fps/ching/ching_equip" blend_set="all"/>
+			<anim name="musket_unequip" 				file="anims/fps/ching/ching_unequip" blend_set="all"/>
+			<anim name="musket_melee" 					file="anims/fps/ching/ching_melee" blend_set="all"/>
+			<anim name="musket_melee_miss" 				file="anims/fps/ching/ching_melee_miss" blend_set="all"/>
+			<anim name="musket_use" 					file="anims/fps/ching/ching_use" blend_set="all"/>
+			<anim name="musket_sprint_enter" 			file="anims/fps/ching/ching_sprint_enter" blend_set="all"/>
+			<anim name="musket_sprint" 					file="anims/fps/ching/ching_sprint" blend_set="all"/>
+			<anim name="musket_sprint_exit" 			file="anims/fps/ching/ching_sprint_exit" blend_set="all"/>
+			<anim name="musket_com_down_var1" 			file="anims/fps/ching/ching_com_var1" blend_set="all"/>
+			<anim name="musket_com_stop" 				file="anims/fps/ching/ching_com_var5" blend_set="all"/>
+			<anim name="musket_com_come" 				file="anims/fps/ching/ching_com_var6" blend_set="all"/>
+			<anim name="musket_com_point" 				file="anims/fps/ching/ching_com_var7" blend_set="all"/>
+			<anim name="musket_get_up" 					file="anims/fps/ching/ching_get_up" blend_set="all"/>
+			<anim name="musket_gogo" 					file="anims/fps/ching/ching_gogo" blend_set="all"/>
+			<anim name="musket_tased" 					file="anims/fps/ching/ching_tased" blend_set="all"/>
+			<anim name="musket_tased_boost" 			file="anims/fps/ching/ching_tased_boost" blend_set="all"/>
+			<anim name="musket_tased_exit" 				file="anims/fps/ching/ching_tased_exit" blend_set="all"/>
+			<anim name="musket_inspect"					file="anims/fps/ching/ching_inspect" blend_set="all"/>
+			<anim name="musket_reload_not_empty" 		file="anims/fps/musket/musket_reload" blend_set="all"/>
+			<anim name="musket_reload" 					file="anims/fps/musket/musket_reload" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

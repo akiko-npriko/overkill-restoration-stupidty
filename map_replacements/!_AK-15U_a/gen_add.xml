@@ -1,0 +1,64 @@
+<table directory="assets">
+
+<!-- AK25U Parts -->
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_smg_ak15u/wpn_fps_smg_ak15u"/>
+		<model path="units/mods/weapons/wpn_fps_smg_ak15u/wpn_fps_smg_ak15u"/>
+		<object path="units/mods/weapons/wpn_fps_smg_ak15u/wpn_fps_smg_ak15u"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_ak15u/wpn_fps_smg_ak15u"/>
+		<unit path="units/mods/weapons/wpn_fps_smg_ak15u/wpn_fps_smg_ak15u_npc"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/ak15u"/>
+
+		<texture							path="units/mods/weapons/wpn_fps_smg_ak15u_pts/wpn_fps_smg_ak15u_body_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ak15u_pts/wpn_fps_smg_ak15u_body_receiver"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ak15u_pts/wpn_fps_smg_ak15u_m_release"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ak15u_pts/wpn_fps_smg_ak15u_fg_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ak15u_pts/wpn_fps_smg_ak15u_fg_standard"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ak15u_pts/wpn_fps_smg_ak15u_b_standard"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ak15u_pts/wpn_fps_smg_ak15u_g_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ak15u_pts/wpn_fps_smg_ak15u_g_standard"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ak15u_pts/wpn_fps_smg_ak15u_m_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ak15u_pts/wpn_fps_smg_ak15u_m_gsma"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ak15u_pts/wpn_fps_smg_ak15u_m_standard"/>
+		
+		<texture							path="units/mods/weapons/wpn_fps_smg_ak15u_pts/wpn_fps_smg_ak15u_s_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ak15u_pts/wpn_fps_smg_ak15u_s_df_cc"/>
+		<texture							path="units/mods/weapons/wpn_fps_smg_ak15u_pts/wpn_fps_smg_ak15u_s_gsma"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ak15u_pts/wpn_fps_smg_ak15u_s_standard"/>
+
+		<texture							path="units/mods/weapons/wpn_fps_smg_ak15u_pts/wpn_fps_smg_ak15u_supp_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ak15u_pts/wpn_fps_smg_ak15u_ns_supp"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ak15u_pts/wpn_fps_smg_ak15u_m_quick"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ak15u_pts/wpn_fps_smg_ak15u_ns_booster"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ak15u_pts/wpn_fps_smg_ak15u_b_short"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_smg_ak15u_pts/wpn_fps_smg_ak15u_dh_zenit"/>
+
+<!-- Third Person Parts -->
+
+		<unit_obj							path="units/mods/weapons/wpn_third_smg_ak15u_pts/wpn_third_smg_ak15u_b_standard"/>
+		<texture							path="units/mods/weapons/wpn_third_smg_ak15u_pts/wpn_third_smg_ak15u_body_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ak15u_pts/wpn_third_smg_ak15u_body_receiver"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ak15u_pts/wpn_third_smg_ak15u_m_release"/>
+		<texture							path="units/mods/weapons/wpn_third_smg_ak15u_pts/wpn_third_smg_ak15u_fg_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ak15u_pts/wpn_third_smg_ak15u_fg_standard"/>
+		<texture							path="units/mods/weapons/wpn_third_smg_ak15u_pts/wpn_third_smg_ak15u_m_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ak15u_pts/wpn_third_smg_ak15u_m_standard"/>	
+		<texture							path="units/mods/weapons/wpn_third_smg_ak15u_pts/wpn_third_smg_ak15u_supp_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_smg_ak15u_pts/wpn_third_smg_ak15u_ns_supp"/>	
+		<unit_obj							path="units/mods/weapons/wpn_third_smg_ak15u_pts/wpn_third_smg_ak15u_b_short"/>
+		<unit_obj							path="units/mods/weapons/wpn_third_smg_ak15u_pts/wpn_third_smg_ak15u_dh_zenit"/>
+
+<!-- Black Market Icons -->
+
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ak15u_b_supp"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ak15u_m_akm"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ak15u_ns_booster"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ak15u_b_short"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_smg_ak15u_dh_zenit"/>
+	
+<!-- Animations -->
+		
+		<animation path="anims/fps/ak15u/ak15u_reload"/>
+		<animation path="anims/fps/ak15u/ak15u_reload_not_empty"/>
+		
+</table>

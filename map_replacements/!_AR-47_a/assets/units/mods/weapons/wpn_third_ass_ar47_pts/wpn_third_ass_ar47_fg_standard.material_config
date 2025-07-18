@@ -1,0 +1,10 @@
+<materials version="3">
+	<material name="mtr_fg" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/third_fg_df" />
+		<bump_normal_texture file="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/third_fg_nm" />
+	</material>
+    <material name="m4_fg_rail" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_ass_ar47_pts/ar47_railcover_df" mip="2"/>
+        <bump_normal_texture file="units/pd2_dlc_dec5/weapons/wpn_fps_ass_scar_pts/rail_ext_nm" mip="2"/>
+    </material>
+</materials>

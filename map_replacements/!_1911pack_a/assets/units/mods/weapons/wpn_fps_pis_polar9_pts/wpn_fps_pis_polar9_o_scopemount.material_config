@@ -1,0 +1,11 @@
+<materials version="3" group="weapon_m1911">
+	<material name="mtr_frame" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/pd2_dlc_character_sokol/weapons/wpn_fps_ass_asval_pts/mount_df" />
+		<bump_normal_texture file="units/pd2_dlc_character_sokol/weapons/wpn_fps_ass_asval_pts/mount_nm" />
+		<reflection_texture type="cubemap" global_texture="current_global_texture"/>
+	</material>
+	<material name="mtr_mr07" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/pd2_dlc_fawp/weapons/wpn_fps_pis_m1911_pts/wpn_fps_pis_m1911_mr07_df" />
+		<bump_normal_texture file="units/pd2_dlc_fawp/weapons/wpn_fps_pis_m1911_pts/wpn_fps_pis_m1911_mr07_nm" />
+	</material>
+</materials>

@@ -1,0 +1,19 @@
+<dynamic_object>
+    <diesel materials="units/mods/weapons/wpn_fps_pis_zip22_pts/wpn_fps_pis_zip22_magazine" orientation_object="rp_magazine"/>
+	<animations>
+		<animation_group name="reload">
+			<object name="anim_m_reload" enabled="true" />
+		</animation_group>		
+		<animation_group name="reload_not_empty">
+			<object name="anim_m_reload_not_empty" enabled="true" />
+		</animation_group>
+
+	</animations>
+    <graphics>
+        <object enabled="true" name="g_magazine"/>
+		<object enabled="true" name="g_bullet_1"/>
+		<object enabled="true" name="g_bullet_2"/>
+
+
+    </graphics>
+</dynamic_object>

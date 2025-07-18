@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+
+		<!--
+			Replace all instances of 'zip22' below with the ID of your animation.
+			Note that recoil_steelsight does not have a unique animation in this zip22; you can edit the filepath in the 'file' section with one if you wish.
+			If your gun cannot be fired in full auto, you can delete the recoil_enter, recoil_loop, and recoil_exit lines.
+		-->
+
+		<target mode="attach">
+			<anim name="zip22_reload" 					file="anims/fps/zip22/zip22_reload" blend_set="all"/>
+			<anim name="zip22_reload_not_empty" 		file="anims/fps/zip22/zip22_reload_not_empty" blend_set="all"/>
+			
+			<anim name="zip22_drum_reload" 				file="anims/fps/zip22/zip22_drum_reload" blend_set="all"/>
+			<anim name="zip22_drum_reload_not_empty" 	file="anims/fps/zip22/zip22_drum_reload_not_empty" blend_set="all"/>
+			
+			<anim name="zip22_recoil" 					file="anims/fps/zip22/zip22_recoil" blend_set="all"/>
+			<anim name="zip22_recoil_steelsight" 		file="anims/fps/zip22/zip22_recoil_steelsight" blend_set="all"/>
+			
+			<anim name="zip22_idle" 				file="anims/fps/baka/baka_idle" blend_set="all"/>
+			<anim name="zip22_equip" 				file="anims/fps/baka/baka_equip" blend_set="all"/>
+			<anim name="zip22_unequip" 				file="anims/fps/baka/baka_unequip" blend_set="all"/>
+			<anim name="zip22_melee" 				file="anims/fps/baka/baka_melee" blend_set="all"/>
+			<anim name="zip22_melee_miss" 			file="anims/fps/baka/baka_melee_miss" blend_set="all"/>
+			<anim name="zip22_use" 					file="anims/fps/baka/baka_use" blend_set="all"/>
+			<anim name="zip22_sprint_enter" 		file="anims/fps/baka/baka_sprint_enter" blend_set="all"/>
+			<anim name="zip22_sprint" 				file="anims/fps/baka/baka_sprint" blend_set="all"/>
+			<anim name="zip22_sprint_exit" 			file="anims/fps/baka/baka_sprint_exit" blend_set="all"/>
+			<anim name="zip22_com_down_var1" 		file="anims/fps/baka/baka_com_var1" blend_set="all"/>
+			<anim name="zip22_com_stop" 			file="anims/fps/baka/baka_com_var5" blend_set="all"/>
+			<anim name="zip22_com_come" 			file="anims/fps/baka/baka_com_var6" blend_set="all"/>
+			<anim name="zip22_com_point" 			file="anims/fps/baka/baka_com_var7" blend_set="all"/>
+			<anim name="zip22_get_up" 				file="anims/fps/baka/baka_get_up" blend_set="all"/>
+			<anim name="zip22_gogo" 				file="anims/fps/baka/baka_gogo" blend_set="all"/>
+			<anim name="zip22_tased" 				file="anims/fps/baka/baka_tased" blend_set="all"/>
+			<anim name="zip22_tased_boost" 			file="anims/fps/baka/baka_tased_boost" blend_set="all"/>
+			<anim name="zip22_tased_exit" 			file="anims/fps/baka/baka_tased_exit" blend_set="all"/>
+			<anim name="zip22_inspect" 				file="anims/fps/baka/baka_inspect" blend_set="all"/>
+
+		</target>
+	</tweak>
+</tweaks>

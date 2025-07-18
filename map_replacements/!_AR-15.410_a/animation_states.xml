@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+
+<tweaks>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+		
+		<target mode="append">
+			<state name="fps/reload/omni" type="once" segment="base" speed="1.0">
+				<anim name="omni_reload"/>
+				<keys>
+					<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>	
+					
+			<key at="trigger" trigger="wp_m16_lever_release" callback="play_sound" class_name="base" param1="wp_m16_lever_release"/>
+			<key at="trigger" trigger="wp_m16_lever_pull_in" callback="play_sound" class_name="base" param1="wp_m16_lever_pull_in"/>
+			<key at="trigger" trigger="wp_m16_clip_slide_in" callback="play_sound" class_name="base" param1="wp_m16_clip_slide_in"/>
+			<key at="trigger" trigger="wp_m16_clip_in_contact" callback="play_sound" class_name="base" param1="wp_m16_clip_in_contact"/>
+			<key at="trigger" trigger="wp_m16_clip_grab_throw" callback="play_sound" class_name="base" param1="wp_m16_clip_grab_throw"/>
+			<key at="trigger" trigger="wp_m16_clip_take_new" callback="play_sound" class_name="base" param1="wp_m16_clip_take_new"/>
+			<key at="trigger" trigger="wp_m16_clip_grab" callback="play_sound" class_name="base" param1="wp_m16_clip_grab"/>
+			<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+			<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+			<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_throw"/>
+			<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+			<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+			<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+			<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+			<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
+			<key at="trigger" trigger="wp_clip_generic_ass_center" callback="play_sound" class_name="base" param1="wp_clip_generic_ass_center"/>
+			
+					<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+			
+			<state name="fps/reload_not_empty/omni" type="once" segment="base" speed="1.0">
+				<anim name="omni_reload_not_empty"/>
+				<keys>
+					<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>	
+				
+			<key at="trigger" trigger="wp_m16_clip_slide_in" callback="play_sound" class_name="base" param1="wp_m16_clip_slide_in"/>
+			<key at="trigger" trigger="wp_m16_clip_in_contact" callback="play_sound" class_name="base" param1="wp_m16_clip_in_contact"/>
+			<key at="trigger" trigger="wp_m16_clip_grab_throw" callback="play_sound" class_name="base" param1="wp_m16_clip_grab_throw"/>
+			<key at="trigger" trigger="wp_m16_clip_take_new" callback="play_sound" class_name="base" param1="wp_m16_clip_take_new"/>
+			<key at="trigger" trigger="wp_m16_clip_grab" callback="play_sound" class_name="base" param1="wp_m16_clip_grab"/>
+			<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+			<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+			<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_throw"/>
+			<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+			<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+			<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+			<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+			<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
+			<key at="trigger" trigger="wp_clip_generic_ass_center" callback="play_sound" class_name="base" param1="wp_clip_generic_ass_center"/>
+			<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+		</target>
+	</tweak>
+	
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+		<target mode="attach">
+			<to name="reload_omni" 						redirect="fps/reload/omni"/>
+			<to name="reload_not_empty_omni" 			redirect="fps/reload_not_empty/omni"/>
+		</target>
+	</tweak>
+</tweaks>

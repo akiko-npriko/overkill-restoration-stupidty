@@ -1,0 +1,134 @@
+<table directory="assets">
+
+<!-- Polar Cub 9mm and Javelin 10mm Parts -->
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_polar9/wpn_fps_pis_polar9"/>
+		<model path="units/mods/weapons/wpn_fps_pis_polar9/wpn_fps_pis_polar9"/>
+		<object path="units/mods/weapons/wpn_fps_pis_polar9/wpn_fps_pis_polar9"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_polar9/wpn_fps_pis_polar9"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_polar9/wpn_fps_pis_polar9_npc"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/polar9"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_x_polar9/wpn_fps_pis_x_polar9" />
+		<model path="units/mods/weapons/wpn_fps_pis_x_polar9/wpn_fps_pis_x_polar9" />
+		<object path="units/mods/weapons/wpn_fps_pis_x_polar9/wpn_fps_pis_x_polar9" />
+		<unit path="units/mods/weapons/wpn_fps_pis_x_polar9/wpn_fps_pis_x_polar9" />
+		<unit path="units/mods/weapons/wpn_fps_pis_x_polar9/wpn_fps_pis_x_polar9_npc" />
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/x_polar9" />
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_pis_baller/wpn_fps_pis_baller"/>
+		<model path="units/mods/weapons/wpn_fps_pis_baller/wpn_fps_pis_baller"/>
+		<object path="units/mods/weapons/wpn_fps_pis_baller/wpn_fps_pis_baller"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_baller/wpn_fps_pis_baller"/>
+		<unit path="units/mods/weapons/wpn_fps_pis_baller/wpn_fps_pis_baller_npc"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/baller"/>
+
+<!-- Polar 9mm parts -->
+
+		<texture							path="units/mods/weapons/wpn_fps_pis_polar9_pts/slide_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_pis_polar9_pts/slide_df_cc"/>
+		<texture							path="units/mods/weapons/wpn_fps_pis_polar9_pts/slide_nm"/>
+		<texture							path="units/mods/weapons/wpn_fps_pis_polar9_pts/barrel_vented_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_b_standard"/>		
+		<texture							path="units/mods/weapons/wpn_fps_pis_polar9_pts/body_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_body_standard"/>	
+		<texture							path="units/mods/weapons/wpn_fps_pis_polar9_pts/grip_nm"/>
+		<texture							path="units/mods/weapons/wpn_fps_pis_polar9_pts/grip_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_g_standard"/>	
+		<texture							path="units/mods/weapons/wpn_fps_pis_polar9_pts/mag_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_pis_polar9_pts/mag_df_cc"/>
+		<texture							path="units/mods/weapons/wpn_fps_pis_polar9_pts/mag_nm"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_m_standard"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_o_scopemount"/>	
+		
+		<texture							path="units/mods/weapons/wpn_fps_pis_polar9_pts/extended_mag_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_pis_polar9_pts/extended_mag_df_cc"/>
+		<texture							path="units/mods/weapons/wpn_fps_pis_polar9_pts/extended_mag_nm"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_m_extended"/>	
+		<texture							path="units/mods/weapons/wpn_fps_pis_polar9_pts/slide_long_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_pis_polar9_pts/slide_long_df_cc"/>
+		<texture							path="units/mods/weapons/wpn_fps_pis_polar9_pts/slide_long_nm"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_b_long"/>	
+		<texture							path="units/mods/weapons/wpn_fps_pis_polar9_pts/slide_short_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_pis_polar9_pts/slide_short_df_cc"/>
+		<texture							path="units/mods/weapons/wpn_fps_pis_polar9_pts/slide_short_nm"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_b_short"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_o_short"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_g_sport"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_polar9_pts/wpn_fps_pis_polar9_flair_sport"/>
+
+<!-- Third -->
+
+		<unit_obj							path="units/mods/weapons/wpn_third_pis_polar9_pts/wpn_third_pis_polar9_body_standard"/>		
+		<unit_mat							path="units/mods/weapons/wpn_third_pis_polar9_pts/wpn_third_pis_polar9_o_scopemount"/>	
+		<texture							path="units/mods/weapons/wpn_third_pis_polar9_pts/third_grip_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_pis_polar9_pts/wpn_third_pis_polar9_g_standard"/>	
+		<unit_obj							path="units/mods/weapons/wpn_third_pis_polar9_pts/wpn_third_pis_polar9_m_standard"/>
+		<texture							path="units/mods/weapons/wpn_third_pis_polar9_pts/barrel_vented_df"/>
+		<texture							path="units/mods/weapons/wpn_third_pis_polar9_pts/slide_vented_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_pis_polar9_pts/wpn_third_pis_polar9_b_standard"/>	
+
+		<unit_mat							path="units/mods/weapons/wpn_third_pis_polar9_pts/wpn_third_pis_polar9_m_extended"/>
+		<texture							path="units/mods/weapons/wpn_third_pis_polar9_pts/slide_short_df"/>
+		<texture							path="units/mods/weapons/wpn_third_pis_polar9_pts/slide_short_nm"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_pis_polar9_pts/wpn_third_pis_polar9_b_short"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_pis_polar9_pts/wpn_third_pis_polar9_flair_sport"/>
+		<texture							path="units/mods/weapons/wpn_third_pis_polar9_pts/slide_long_df"/>
+		<unit_mat							path="units/mods/weapons/wpn_third_pis_polar9_pts/wpn_third_pis_polar9_b_long"/>	
+
+<!-- Javelin 10mm parts -->
+
+		<texture							path="units/mods/weapons/wpn_fps_pis_baller_pts/body_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_pis_baller_pts/controls_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_baller_pts/wpn_fps_pis_baller_body_standard"/>	
+		<texture							path="units/mods/weapons/wpn_fps_pis_baller_pts/grip_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_pis_baller_pts/grip_nm"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_baller_pts/wpn_fps_pis_baller_g_standard"/>	
+		<texture							path="units/mods/weapons/wpn_fps_pis_baller_pts/barrel_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_pis_baller_pts/slide_long_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_pis_baller_pts/slide_long_df_cc"/>
+		<texture							path="units/mods/weapons/wpn_fps_pis_baller_pts/slide_long_nm"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_baller_pts/wpn_fps_pis_baller_b_standard"/>	
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_baller_pts/wpn_fps_pis_baller_m_standard"/>	
+
+		<texture							path="units/mods/weapons/wpn_fps_pis_baller_pts/extended_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_baller_pts/wpn_fps_pis_baller_m_extended"/>			
+		<texture							path="units/mods/weapons/wpn_fps_pis_baller_pts/slide_reg_df"/>
+		<texture							path="units/mods/weapons/wpn_fps_pis_baller_pts/slide_reg_df_cc"/>
+		<texture							path="units/mods/weapons/wpn_fps_pis_baller_pts/slide_reg_nm"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_baller_pts/wpn_fps_pis_baller_b_average"/>	
+		<texture							path="units/mods/weapons/wpn_fps_pis_baller_pts/classic_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_baller_pts/wpn_fps_pis_baller_m_classic"/>	
+		<texture							path="units/mods/weapons/wpn_fps_pis_baller_pts/classic_extended_df"/>
+		<unit_mat_cc						path="units/mods/weapons/wpn_fps_pis_baller_pts/wpn_fps_pis_baller_m_classic_extended"/>	
+
+<!-- Third -->
+
+		<unit_mat							path="units/mods/weapons/wpn_third_pis_baller_pts/wpn_third_pis_baller_body_standard"/>
+		<unit_obj							path="units/mods/weapons/wpn_third_pis_baller_pts/wpn_third_pis_baller_m_extended"/>
+		<unit_obj							path="units/mods/weapons/wpn_third_pis_baller_pts/wpn_third_pis_baller_m_classic"/>
+		<unit_obj							path="units/mods/weapons/wpn_third_pis_baller_pts/wpn_third_pis_baller_m_classic_extended"/>
+		
+<!-- Blackmarket Icons -->
+
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_polar9_g_ergo"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_polar9_m_extended"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_polar9_sl_long"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_polar9_sl_short"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_polar9_g_sport"/>
+		
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_1911_b_short"/>
+
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_baller_m_extended"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_baller_b_average"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_baller_m_classic"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_baller_m_classic_extended"/>
+
+<!-- Animations -->
+		
+		<animation path="anims/fps/polar9/polar9_reload"/>
+		<animation path="anims/fps/polar9/polar9_reload_not_empty"/>
+		<animation path="anims/fps/baller/baller_reload"/>
+		<animation path="anims/fps/baller/baller_reload_not_empty"/>
+		
+</table>

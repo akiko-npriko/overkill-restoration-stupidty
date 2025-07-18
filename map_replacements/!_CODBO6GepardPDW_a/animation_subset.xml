@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+			
+		<target mode="attach">
+			<anim name="geasy9_reload" 							file="anims/fps/geasy9/geasy9_reload" blend_set="all"/>
+			<anim name="geasy9_reload_not_empty" 				file="anims/fps/geasy9/geasy9_reload_not_empty" blend_set="all"/>
+			<anim name="geasy9_drum_reload" 					file="anims/fps/geasy9/geasy9_drum_reload" blend_set="all"/>
+			<anim name="geasy9_drum_reload_not_empty" 			file="anims/fps/geasy9/geasy9_drum_reload_not_empty" blend_set="all"/>
+			<anim name="geasy9_short_reload" 					file="anims/fps/geasy9/geasy9_short_reload" blend_set="all"/>
+			<anim name="geasy9_short_reload_not_empty" 			file="anims/fps/geasy9/geasy9_short_reload_not_empty" blend_set="all"/>
+			<anim name="geasy9_xmag1_reload" 					file="anims/fps/geasy9/geasy9_xmag1_reload" blend_set="all"/>
+			<anim name="geasy9_xmag1_reload_not_empty" 			file="anims/fps/geasy9/geasy9_xmag1_reload_not_empty" blend_set="all"/>
+			<anim name="geasy9_fast_reload" 					file="anims/fps/geasy9/geasy9_fast_reload" blend_set="all"/>
+			<anim name="geasy9_fast_reload_not_empty" 			file="anims/fps/geasy9/geasy9_fast_reload_not_empty" blend_set="all"/>
+			<anim name="geasy9_idle" 					file="anims/fps/geasy9/geasy9_idle" blend_set="all"/>
+			<anim name="geasy9_recoil" 				file="anims/fps/geasy9/geasy9_recoil" blend_set="all"/>
+			<anim name="geasy9_recoil_steelsight" 				file="anims/fps/geasy9/geasy9_recoil" blend_set="all"/>
+			<anim name="geasy9_recoil_loop" 			file="anims/fps/geasy9/geasy9_recoil_loop" blend_set="all"/>
+			<anim name="geasy9_recoil_enter" 			file="anims/fps/geasy9/geasy9_recoil_enter" blend_set="all"/>
+			<anim name="geasy9_recoil_exit" 			file="anims/fps/geasy9/geasy9_recoil_exit" blend_set="all"/>
+			<anim name="geasy9_equip" 					file="anims/fps/geasy9/geasy9_equip" blend_set="all"/>
+			<anim name="geasy9_unequip" 				file="anims/fps/geasy9/geasy9_unequip" blend_set="all"/>
+			<anim name="geasy9_melee" 					file="anims/fps/geasy9/geasy9_melee" blend_set="all"/>
+			<anim name="geasy9_melee_miss" 			file="anims/fps/geasy9/geasy9_melee_miss" blend_set="all"/>
+			<anim name="geasy9_use" 					file="anims/fps/geasy9/geasy9_use" blend_set="all"/>
+			<anim name="geasy9_sprint_enter" 			file="anims/fps/geasy9/geasy9_sprint_enter" blend_set="all"/>
+			<anim name="geasy9_sprint" 				file="anims/fps/geasy9/geasy9_sprint" blend_set="all"/>
+			<anim name="geasy9_sprint_exit" 			file="anims/fps/geasy9/geasy9_sprint_exit" blend_set="all"/>
+			<anim name="geasy9_com_down_var1" 			file="anims/fps/geasy9/geasy9_com_var1" blend_set="all"/>
+			<anim name="geasy9_com_stop" 				file="anims/fps/geasy9/geasy9_com_var5" blend_set="all"/>
+			<anim name="geasy9_com_come" 				file="anims/fps/geasy9/geasy9_com_var6" blend_set="all"/>
+			<anim name="geasy9_com_point" 				file="anims/fps/geasy9/geasy9_com_var7" blend_set="all"/>
+			<anim name="geasy9_get_up" 				file="anims/fps/geasy9/geasy9_get_up" blend_set="all"/>
+			<anim name="geasy9_gogo" 					file="anims/fps/geasy9/geasy9_gogo" blend_set="all"/>
+			<anim name="geasy9_tased" 					file="anims/fps/geasy9/geasy9_tased" blend_set="all"/>
+			<anim name="geasy9_tased_boost" 			file="anims/fps/geasy9/geasy9_tased_boost" blend_set="all"/>
+			<anim name="geasy9_tased_exit" 			file="anims/fps/geasy9/geasy9_tased_exit" blend_set="all"/>
+			<anim name="geasy9_inspect" 				file="anims/fps/geasy9/geasy9_inspect" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

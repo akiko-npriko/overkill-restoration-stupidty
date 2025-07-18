@@ -1,0 +1,12 @@
+<materials version="3" group="weapon_group">
+    <material name="g7_base_main" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_ass_g7_pts/textures/g7_main_base_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_ass_g7_pts/textures/g7_main_base_nm"/>
+        <material_texture file="units/mods/weapons/wpn_fps_ass_g7_pts/textures/g7_main_base_gsma"/>
+    </material>
+    <material name="g7_base_bullet" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_ass_g7_pts/textures/g7_main_bullet_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_ass_g7_pts/textures/g7_main_base_nm"/>
+        <material_texture file="units/mods/weapons/wpn_fps_ass_g7_pts/textures/g7_main_base_gsma"/>
+    </material>
+</materials>

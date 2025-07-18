@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<tweaks>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+		
+	
+		<target mode="append">
+			<state name="fps/reload/g7" type="once" segment="base" speed="1.0">
+				<anim name="g7_reload"/>
+					<keys>
+						<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>				
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+						
+						<key at="trigger" trigger="wp_foley_generic_clip_take_new" 		callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+						<key at="trigger" trigger="wp_m14_clip_slide_out" 		        callback="play_sound" class_name="base" param1="wp_g7_magout"/>
+						<key at="trigger" trigger="wp_clip_generic_ass_center" 	        callback="play_sound" class_name="base" param1="wp_clip_generic_ass_center"/>
+						<key at="trigger" trigger="wp_m14_clip_in_contact" 		        callback="play_sound" class_name="base" param1="wp_m14_clip_in_contact"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_in_connect" 	callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+						<key at="trigger" trigger="wp_m14_clip_slide_in" 		        callback="play_sound" class_name="base" param1="wp_g7_magin"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" 		callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+						<key at="trigger" trigger="wp_m14_lever_pull" 				    callback="play_sound" class_name="base" param1="wp_g7_handle_rack"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_release" 		callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+						<key at="trigger" trigger="wp_m14_lever_release" 		        callback="play_sound" class_name="base" param1="wp_m14_lever_release"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" 		callback="play_sound" class_name="base" param1="wp_g7_back_in_hand"/>
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+
+			<state name="fps/reload_not_empty/g7" type="once" segment="base" speed="1.0">
+				<anim name="g7_reload_not_empty"/>
+					<keys>			
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+
+						<key at="trigger" trigger="wp_foley_generic_clip_take_new" 		callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+						<key at="trigger" trigger="wp_m14_clip_slide_out" 		        callback="play_sound" class_name="base" param1="wp_g7_magout"/>
+						<key at="trigger" trigger="wp_clip_generic_ass_center" 	        callback="play_sound" class_name="base" param1="wp_clip_generic_ass_center"/>
+						<key at="trigger" trigger="wp_m14_clip_in_contact" 		        callback="play_sound" class_name="base" param1="wp_m14_clip_in_contact"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_in_connect" 	callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+						<key at="trigger" trigger="wp_m14_clip_slide_in" 		        callback="play_sound" class_name="base" param1="wp_g7_magin"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" 		callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+						<key at="trigger" trigger="wp_m14_lever_pull" 				    callback="play_sound" class_name="base" param1="wp_g7_handle_rack"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_release" 		callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+						<key at="trigger" trigger="wp_m14_lever_release" 		        callback="play_sound" class_name="base" param1="wp_m14_lever_release"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" 		callback="play_sound" class_name="base" param1="wp_g7_back_in_hand"/>
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+		</target>
+		
+		
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+		<target mode="attach">
+			
+			<to name="reload_g7" 					redirect="fps/reload/g7"/>
+			<to name="reload_not_empty_g7" 			redirect="fps/reload_not_empty/g7"/>
+			
+		</target>
+	</tweak>
+</tweaks>

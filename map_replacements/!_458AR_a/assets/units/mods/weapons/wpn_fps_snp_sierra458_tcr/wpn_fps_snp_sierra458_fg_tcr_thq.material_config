@@ -1,0 +1,11 @@
+<materials version="3" group="weapon_victor">
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" name="mat_handguard" version="2" unique="true">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_snp_sierra458_tcr/tcr_handguard_df"/>
+        <material_texture file="units/pd2_dlc_savi/weapons/wpn_fps_snp_victor_pts/victor_handguard_gsma"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_snp_sierra458_tcr/tcr_handguard_nm"/>
+    </material>
+	<material name="mtr_krebs" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2" unique="true">
+		<diffuse_texture file="units/pd2_dlc_akm4_modpack/weapons/wpn_fps_upg_ak_fg_krebs/krebs_df" />
+		<bump_normal_texture file="units/pd2_dlc_akm4_modpack/weapons/wpn_fps_upg_ak_fg_krebs/krebs_nm" />
+	</material>
+</materials>

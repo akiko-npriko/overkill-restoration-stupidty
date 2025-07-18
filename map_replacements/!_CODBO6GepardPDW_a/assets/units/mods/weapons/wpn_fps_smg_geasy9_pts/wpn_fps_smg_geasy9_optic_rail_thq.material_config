@@ -1,0 +1,9 @@
+<materials version="3" group="weapon_group">
+	<material name="mtr_geasy9_rail" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_smg_geasy9_pts/textures/geasy9_weaver_rail_df" mip="1"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_smg_geasy9_pts/textures/geasy9_weaver_rail_nm" mip="1"/>
+        <material_texture	 file="units/mods/weapons/wpn_fps_smg_geasy9_pts/textures/geasy9_weaver_rail_gsma" mip="1"/>
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_smg_geasy9_pts/textures/weapon_metal_cubemap"/>
+    </material>	
+
+</materials>

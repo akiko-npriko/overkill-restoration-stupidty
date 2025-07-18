@@ -1,0 +1,18 @@
+<materials version="3" group="weapon_group">
+	<material name="mtr_rail5" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture		 file="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/mlok_rail5_df" mip="1"   />
+		<bump_normal_texture 	 file="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/mlok_rail5_nm" mip="1"   />
+	</material>
+	<material name="mtr_t9accurate_rail" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+				   <diffuse_texture		  file="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/lm_t9accurate_rail_df" mip="1"  />
+				 <bump_normal_texture     file="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/lm_t9accurate_rail_nm" mip="1"  />
+
+    </material>	
+   	<material name="mtr_t9standard_side_mount" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+				   <diffuse_texture		  file="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9standard_side_mount_df" mip="1"  />
+				 <bump_normal_texture     file="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9standard_side_mount_nm" mip="1"   />
+	
+    </material>	
+
+	
+</materials>

@@ -1,0 +1,11 @@
+<materials version="3" group="weapon_victor">
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" name="mat_lower" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_snp_sierra458_pts/ar45_lower_df"/>
+        <material_texture file="units/mods/weapons/wpn_fps_snp_sierra458_pts/ar45_lower_gsma"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_snp_sierra458_pts/ar45_lower_nm"/>
+    </material>
+	<material name="mtr_lower" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_snp_sierra458_pts/ar45_lower_core_df" />
+		<bump_normal_texture file="units/pd2_dlc_akm4_modpack/weapons/wpn_fps_upg_ass_m4_lower_reciever_core/lower_nm" />
+	</material>
+</materials>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+		<target mode="attach">
+			<anim name="bigglock_idle"					file="anims/fps/bigglock/bigglock_idle" blend_set="all"/>
+			<anim name="bigglock_recoil"				file="anims/fps/bigglock/bigglock_recoil" blend_set="all"/>
+			<anim name="bigglock_recoil_steelsight"		file="anims/fps/bigglock/bigglock_recoil_steelsight" blend_set="all"/>
+			<anim name="bigglock_equip"					file="anims/fps/bigglock/bigglock_equip" blend_set="all"/>
+			<anim name="bigglock_unequip"				file="anims/fps/bigglock/bigglock_unequip" blend_set="all"/>
+			<anim name="bigglock_reload"				file="anims/fps/bigglock/bigglock_reload" blend_set="all"/>
+			<anim name="bigglock_reload_not_empty"		file="anims/fps/bigglock/bigglock_reload_not_empty" blend_set="all"/>
+			<anim name="bigglock_melee"					file="anims/fps/bigglock/bigglock_melee" blend_set="all"/>
+			<anim name="bigglock_melee_miss"			file="anims/fps/bigglock/bigglock_melee" blend_set="all"/>
+			<anim name="bigglock_use"					file="anims/fps/bigglock/bigglock_use" blend_set="all"/>
+			<anim name="bigglock_sprint_enter"			file="anims/fps/bigglock/bigglock_sprint_enter" blend_set="all"/>
+			<anim name="bigglock_sprint"				file="anims/fps/bigglock/bigglock_sprint" blend_set="all"/>
+			<anim name="bigglock_sprint_exit"			file="anims/fps/bigglock/bigglock_sprint_exit" blend_set="all"/>
+			<anim name="bigglock_com_down_var1"			file="anims/fps/bigglock/bigglock_com_down_var1" blend_set="all"/>
+			<anim name="bigglock_com_stop"				file="anims/fps/bigglock/bigglock_com_down_var1" blend_set="all"/>
+			<anim name="bigglock_com_come"				file="anims/fps/bigglock/bigglock_com_come" blend_set="all"/>
+			<anim name="bigglock_com_point"				file="anims/fps/bigglock/bigglock_com_come" blend_set="all"/>
+			<anim name="bigglock_get_up"				file="anims/fps/bigglock/bigglock_com_down_var1" blend_set="all"/>
+			<anim name="bigglock_gogo"					file="anims/fps/bigglock/bigglock_com_come" blend_set="all"/>
+			<anim name="bigglock_tased"					file="anims/fps/bigglock/bigglock_tased" blend_set="all"/>
+			<anim name="bigglock_tased_boost"			file="anims/fps/bigglock/bigglock_tased" blend_set="all"/>
+			<anim name="bigglock_tased_exit"			file="anims/fps/bigglock/bigglock_tased_exit" blend_set="all"/>
+			<anim name="bigglock_inspect"				file="anims/fps/bigglock/bigglock_inspect" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<tweaks>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+		<target mode="attach">
+			<to name="reload_ar45" 						redirect="fps/reload/ar45"/>
+			<to name="reload_not_empty_ar45" 			redirect="fps/reload_not_empty/ar45"/>
+		</target>
+	</tweak>
+		
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+		
+		<target mode="append">
+			<state name="fps/reload/ar45" type="once" segment="base" speed="1.0">
+				<anim name="ar45_reload"/>
+				<keys>
+			<!--<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>-->
+					<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_throw"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+					<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
+					<key at="trigger" trigger="wp_foley_generic_tilt_back" callback="play_sound" class_name="base" param1="wp_ak47_tilt_back"/>
+					<key at="trigger" trigger="wp_foley_generic_tilt" callback="play_sound" class_name="base" param1="wp_ak47_tilt"/>
+					<key at="trigger" trigger="shepheard_start_foley" callback="play_sound" class_name="base" param1="shepheard_start_foley"/>
+					<key at="trigger" trigger="contraband_lift_up" callback="play_sound" class_name="base" param1="contraband_lift_up"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+					<key at="trigger" trigger="shepheard_clip_out" callback="play_sound" class_name="base" param1="contraband_mag_out"/>
+					<key at="trigger" trigger="shepheard_clip_handle" callback="play_sound" class_name="base" param1="shepheard_clip_handle"/>
+					<key at="trigger" trigger="shepheard_clip_in" callback="play_sound" class_name="base" param1="wp_polymer_mag_in"/>
+					<key at="trigger" trigger="contraband_back_in_hand" callback="play_sound" class_name="base" param1="contraband_back_in_hand"/>
+					<key at="trigger" trigger="shepheard_bolt_forward" callback="play_sound" class_name="base" param1="shepheard_bolt_forward"/>				
+					<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+					<key at="trigger" trigger="wp_clip_generic_smg_center" callback="play_sound" class_name="base" param1="wp_clip_generic_smg_center"/>
+					<key at="trigger" trigger="wp_foley_generic_back_in_hand_soft" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand_soft"/>
+					<key at="trigger" trigger="shepheard_end_foley" callback="play_sound" class_name="base" param1="shepheard_end_foley"/>			
+					<key at="trigger" trigger="shepheard_clip_contact" callback="play_sound" class_name="base" param1="shepheard_clip_contact"/>			
+				</keys>
+				<exit name="fps/idle"/>
+			</state>	
+			<state name="fps/reload_not_empty/ar45" type="once" segment="base" speed="1.0">
+				<anim name="ar45_reload_not_empty"/>
+				<keys>
+			<!--<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>-->
+					<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_throw"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+					<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
+					<key at="trigger" trigger="wp_foley_generic_tilt_back" callback="play_sound" class_name="base" param1="wp_ak47_tilt_back"/>
+					<key at="trigger" trigger="wp_foley_generic_tilt" callback="play_sound" class_name="base" param1="wp_ak47_tilt"/>
+					<key at="trigger" trigger="shepheard_start_foley" callback="play_sound" class_name="base" param1="shepheard_start_foley"/>
+					<key at="trigger" trigger="contraband_lift_up" callback="play_sound" class_name="base" param1="contraband_lift_up"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+					<key at="trigger" trigger="shepheard_clip_out" callback="play_sound" class_name="base" param1="contraband_mag_out"/>
+					<key at="trigger" trigger="shepheard_clip_handle" callback="play_sound" class_name="base" param1="shepheard_clip_handle"/>
+					<key at="trigger" trigger="shepheard_clip_in" callback="play_sound" class_name="base" param1="wp_polymer_mag_in"/>
+					<key at="trigger" trigger="contraband_back_in_hand" callback="play_sound" class_name="base" param1="contraband_back_in_hand"/>
+					<key at="trigger" trigger="shepheard_bolt_forward" callback="play_sound" class_name="base" param1="shepheard_bolt_forward"/>				
+					<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+					<key at="trigger" trigger="wp_clip_generic_smg_center" callback="play_sound" class_name="base" param1="wp_clip_generic_smg_center"/>
+					<key at="trigger" trigger="wp_foley_generic_back_in_hand_soft" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand_soft"/>
+					<key at="trigger" trigger="shepheard_end_foley" callback="play_sound" class_name="base" param1="shepheard_end_foley"/>			
+					<key at="trigger" trigger="shepheard_clip_contact" callback="play_sound" class_name="base" param1="shepheard_clip_contact"/>
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+		</target>
+	</tweak>
+
+</tweaks>

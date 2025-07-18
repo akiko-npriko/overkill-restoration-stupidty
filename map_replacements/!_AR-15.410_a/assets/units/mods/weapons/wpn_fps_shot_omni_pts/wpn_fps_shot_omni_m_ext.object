@@ -1,0 +1,18 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_shot_omni_pts/wpn_fps_shot_omni_m_ext" orientation_object="rp_wpn_fps_m4_uupg_m_std" />
+	<animations>
+		<animation_group name="reload">
+			<object name="mag_align" enabled="true" />
+	</animation_group>  
+	
+	<animation_group name="reload_not_empty">
+			<object name="mag_align_2" enabled="true" />
+    </animation_group>
+  </animations>
+  
+	<graphics>
+		<object name="g_extended_mag" enabled="true" />
+		<object name="g_shell_1" enabled="true" />
+		<object name="g_shell_2" enabled="true" />
+	</graphics>
+</dynamic_object>

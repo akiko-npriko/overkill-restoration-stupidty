@@ -1,0 +1,1125 @@
+<mod name="458 SOCOM AR" author="Tangerine Paint" min_lib_ver="3.38">
+	<AssetUpdates id="41863" version="5.1" provider="modworkshop"/>
+	<Localization directory="loc" default="english.json"/>
+	<GlobalValue id="akcar_paint_4" color="Color(0.6, 0.7, 0.4)"/>
+	
+<!--458 SOCOM AR parts and entry -->
+
+	<WeaponMod id="wpn_fps_snp_sierra458_upper" based_on="wpn_fps_m4_upper_reciever_round" type="upper_reciever" unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_upper" third_unit="units/mods/weapons/wpn_third_snp_sierra458_pts/wpn_third_snp_sierra458_upper" drop="false" is_a_unlockable="false">
+		<override>
+			<wpn_fps_amcar_bolt_standard unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_bolt_standard" third_unit="units/mods/weapons/wpn_third_snp_sierra458_pts/wpn_third_snp_sierra458_bolt_standard"/>		
+		</override>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_lower" based_on="wpn_fps_m4_lower_reciever" type="lower_reciever" unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_lower" third_unit="units/mods/weapons/wpn_third_snp_sierra458_pts/wpn_third_snp_sierra458_lower" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_s_adapter" based_on="wpn_fps_snp_victor_s_adapter" unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_s_adapter" type="stock_adapter" drop="false" is_a_unlockable="false" inherit_override="true"/>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_fg_standard" based_on="wpn_fps_m4_uupg_fg_rail" unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_fg_standard" type="foregrip" drop="false" is_a_unlockable="false" inherit_override="true">
+		<override>
+			<wpn_fps_upg_sierra458_o_backup unit="units/pd2_dlc_savi/weapons/wpn_fps_snp_victor_pts/wpn_fps_snp_victor_o_hera" third_unit="units/pd2_dlc_savi/weapons/wpn_third_snp_victor_pts/wpn_third_snp_victor_o_hera"/>	
+			<wpn_fps_snp_sierra458_o_down unit="units/pd2_dlc_savi/weapons/wpn_fps_snp_victor_pts/wpn_fps_snp_victor_o_down_hera" third_unit="units/pd2_dlc_savi/weapons/wpn_third_snp_victor_pts/wpn_third_snp_victor_o_hera"/><wpn_fps_addon_ris unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>	
+		</override>
+		<forbids>		
+			<value_node value="wpn_fps_m4_uupg_fg_rail_ext"/>			
+		</forbids>
+	</WeaponMod>	
+
+	<WeaponMod id="wpn_fps_snp_sierra458_b_standard" based_on="wpn_fps_snp_victor_b_standard" unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_b_standard" third_unit="units/mods/weapons/wpn_third_snp_sierra458_pts/wpn_third_snp_sierra458_b_standard" type="barrel" drop="false" is_a_unlockable="false" inherit_override="true"/>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_m_standard" based_on="wpn_fps_m4_uupg_m_std_vanilla" unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_m_standard" third_unit="units/mods/weapons/wpn_third_snp_sierra458_pts/wpn_third_snp_sierra458_m_standard" type="magazine" drop="false" is_a_unlockable="false" inherit_override="true">
+		<adds>
+			<value_node value="wpn_fps_snp_sierra458_ap_switch"/>
+		</adds>
+		<bullet_objects prefix="g_bullet_" amount="3"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_snp_sierra458_o_down" based_on="wpn_fps_snp_victor_o_down" unit="units/pd2_dlc_savi/weapons/wpn_fps_snp_victor_pts/wpn_fps_snp_victor_o_down" third_unit="units/pd2_dlc_savi/weapons/wpn_third_snp_victor_pts/wpn_third_snp_victor_o_down" type="extra" drop="false" is_a_unlockable="false" inherit_override="true" a_obj="a_o" hidden="true">
+		<stats damage="0" concealment="0" recoil="0" spread="0"/>
+	</WeaponMod>
+
+<!-- Mods -->
+
+	<WeaponMod id="wpn_fps_snp_sierra458_ns_scout" based_on="wpn_fps_snp_victor_ns_omega" type="barrel_ext" a_obj="a_ns" unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_ns_scout" third_unit="units/mods/weapons/wpn_third_snp_sierra458_pts/wpn_third_snp_sierra458_ns_scout" drop="false" is_a_unlockable="true" inherit_weapons="false" inherit_adds="true" inherit_override="true" inherit_parts_override="true" inherit_parts_forbids="true" global_value="akcar_paint_4">
+		<stats damage="-2" concealment="-1" recoil="0" spread="1" reload="0"/>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_b_old" based_on="wpn_fps_m4_uupg_b_long" type="barrel" a_obj="a_b" unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_b_old" third_unit="units/mods/weapons/wpn_third_snp_sierra458_pts/wpn_third_snp_sierra458_b_old" has_description="false" desc_id="bm_wp_wpn_fps_snp_sierra458_b_old_desc" drop="false" is_a_unlockable="true" inherit_weapons="false" inherit_adds="true" inherit_override="true" inherit_parts_override="true" inherit_parts_forbids="true" global_value="akcar_paint_4">
+		<stats damage="0" concealment="-1" recoil="0" spread="1" reload="0" total_ammo_mod="0"/>
+		<custom_stats fire_rate_multiplier="1" ammo_pickup_min_mul="1" ammo_pickup_max_mul="1"/>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_sierra458_fg_edge" based_on="wpn_fps_m16_fg_railed" unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_upg_sierra458_fg_edge" type="foregrip" drop="false" is_a_unlockable="true" inherit_override="true" global_value="akcar_paint_4">
+		<stats damage="0" concealment="-1" recoil="2" spread="0"/>
+		<adds>
+			<value_node value="wpn_fps_upg_vg_ass_smg_afg"/>						
+		</adds>
+		<forbids>
+			<value_node value="wpn_fps_addon_ris"/>			
+			<value_node value="wpn_fps_m4_uupg_fg_rail_ext"/>			
+		</forbids>
+		<pcs/>
+	</WeaponMod>	
+
+	<WeaponMod id="wpn_fps_snp_sierra458_fg_mk12" based_on="wpn_fps_m16_fg_railed" unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_fg_mk12" third_unit="units/mods/weapons/wpn_third_snp_sierra458_pts/wpn_third_snp_sierra458_fg_mk12" type="foregrip" drop="false" is_a_unlockable="true" inherit_override="true" global_value="akcar_paint_4">
+		<stats damage="0" concealment="-3" recoil="4" spread="1"/>
+		<forbids>
+			<value_node value="wpn_fps_addon_ris"/>			
+			<value_node value="wpn_fps_m4_uupg_fg_rail_ext"/>			
+		</forbids>
+		<override>
+        	<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="foregrip" a_obj="a_fl_mk12"/>
+        	<wpn_fps_upg_fl_ass_smg_sho_surefire parent="foregrip" a_obj="a_fl_mk12"/>
+        	<wpn_fps_upg_fl_ass_peq15 parent="foregrip" a_obj="a_fl_mk12"/>
+        	<wpn_fps_upg_fl_ass_laser parent="foregrip" a_obj="a_fl_mk12"/>
+        	<wpn_fps_upg_fl_ass_utg parent="foregrip" a_obj="a_fl_mk12"/>
+        	<wpn_fps_upg_fl_dbal_laser parent="foregrip" a_obj="a_fl_mk12"/>
+		</override>
+		<pcs/>
+	</WeaponMod>	
+
+	<WeaponMod id="wpn_fps_snp_sierra458_m_d60" based_on="wpn_fps_upg_m4_m_quad" unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_m_d60" third_unit="units/mods/weapons/wpn_third_snp_sierra458_pts/wpn_third_snp_sierra458_m_d60" has_description="true" desc_id="bm_wp_wpn_fps_snp_sierra458_m_d60_desc" type="magazine" drop="false" is_a_unlockable="true" inherit_override="true" global_value="akcar_paint_4">
+		<adds>
+			<value_node value="wpn_fps_snp_sierra458_ap_switch"/>
+		</adds>
+		<stats extra_ammo="5" recoil="0" spread="-2" />
+		<custom_stats fire_rate_multiplier="1" ammo_pickup_min_mul="1" ammo_pickup_max_mul="1"/>
+		<pcs/>		
+		<bullet_objects prefix="g_bullet_" amount="3"/>
+	</WeaponMod>	
+
+	<WeaponMod id="wpn_fps_snp_sierra458_m_beowulf" based_on="wpn_fps_m4_uupg_m_std" unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_m_beowulf" third_unit="units/payday2/weapons/wpn_third_ass_m4_pts/wpn_third_m4_uupg_m_std" has_description="true" desc_id="bm_wp_wpn_fps_snp_sierra458_m_beowulf_desc" type="magazine" drop="false" is_a_unlockable="true" inherit_override="true" global_value="akcar_paint_4">
+		<adds>
+			<value_node value="wpn_fps_snp_sierra458_beowulf_switch"/>
+		</adds>
+		<stats damage="18" extra_ammo="0" concealment="-1" recoil="-2" spread="1" reload="0" total_ammo_mod="-4"/>
+		<custom_stats fire_rate_multiplier="0.75" ammo_pickup_min_mul="0.6666666667" ammo_pickup_max_mul="0.75"/>
+		<pcs/>	
+		<bullet_objects prefix="g_bullet_" amount="2"/>		
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_m_bush" based_on="wpn_fps_upg_m4_m_l5" unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_m_bush" third_unit="units/pd2_dlc_akm4_modpack/weapons/wpn_third_upg_m4_m_l5/wpn_third_upg_m4_m_l5" has_description="true" desc_id="bm_wp_wpn_fps_snp_sierra458_m_bush_desc" type="magazine" drop="false" is_a_unlockable="true" inherit_override="true" global_value="akcar_paint_4">
+		<adds>
+			<value_node value="wpn_fps_snp_sierra458_bush_switch"/>
+		</adds>
+		<stats damage="-5" extra_ammo="0" concealment="0" recoil="0" spread="0" reload="0" total_ammo_mod="-4"/>
+		<custom_stats fire_rate_multiplier="0.75" ammo_pickup_min_mul="0.6666666667" ammo_pickup_max_mul="0.75"/>
+		<pcs/>		
+		<bullet_objects prefix="g_bullet_" amount="3"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_sierra458_fg_shepheard" based_on="wpn_fps_upg_ass_m4_fg_lvoa" type="foregrip" unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_fg_shepheard" third_unit="units/mods/weapons/wpn_third_snp_sierra458_pts/wpn_third_snp_sierra458_fg_shepheard" drop="false" inherit_weapons="false" is_a_unlockable="true" texture_bundle_folder="mods" inherit_parts_override="true" inherit_parts_forbids="true" global_value="akcar_paint_4">
+		<stats concealment="0" spread="1" recoil="-2" damage="0" />
+		<forbids>
+			<value_node value="wpn_fps_addon_ris"/>		
+			<value_node value="wpn_fps_m4_uupg_fg_rail_ext"/>			
+		</forbids>
+		<adds>
+			<value_node value="wpn_fps_snp_sierra458_fg_shepheard_victor"/>				
+		</adds>
+		<override>
+        	<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="foregrip" a_obj="a_fl_shepheard"/>
+        	<wpn_fps_upg_fl_ass_smg_sho_surefire parent="foregrip" a_obj="a_fl_shepheard"/>
+        	<wpn_fps_upg_fl_ass_peq15 parent="foregrip" a_obj="a_fl_shepheard"/>
+        	<wpn_fps_upg_fl_ass_laser parent="foregrip" a_obj="a_fl_shepheard"/>
+        	<wpn_fps_upg_fl_ass_utg parent="foregrip" a_obj="a_fl_shepheard"/>
+        	<wpn_fps_upg_fl_dbal_laser parent="foregrip" a_obj="a_fl_shepheard"/>
+			<wpn_fps_snp_victor_o_standard unit="units/pd2_dlc_savi/weapons/wpn_fps_snp_victor_pts/wpn_fps_snp_victor_o_hera" third_unit="units/pd2_dlc_savi/weapons/wpn_third_snp_victor_pts/wpn_third_snp_victor_o_hera"/>	
+			<wpn_fps_upg_sierra458_o_backup unit="units/mods/weapons/wpn_fps_snp_sierra458_tcr/wpn_fps_snp_sierra458_o_tcr" third_unit="units/mods/weapons/wpn_third_snp_sierra458_tcr/wpn_third_snp_sierra458_o_tcr"/>
+			<wpn_fps_snp_sierra458_o_down unit="units/mods/weapons/wpn_fps_snp_sierra458_tcr/wpn_fps_snp_sierra458_o_tcr_down" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>			
+		</override>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_sierra458_o_backup" based_on="wpn_fps_snp_victor_o_standard" unit="units/pd2_dlc_savi/weapons/wpn_fps_snp_victor_pts/wpn_fps_snp_victor_o_standard" third_unit="units/pd2_dlc_savi/weapons/wpn_third_snp_victor_pts/wpn_third_snp_victor_o_standard" type="sight" drop="false" is_a_unlockable="true" inherit_override="true" inherit_forbids="false" global_value="akcar_paint_4">
+		<stats damage="0" concealment="0" recoil="-1" spread="0"/>
+		<stance_mod>
+			<wpn_fps_snp_sierra458 rotation="0 0 0 -1" translation="0 -2 0.3"/>
+		</stance_mod>
+		<override>
+			<wpn_fps_snp_sierra458_o_down unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+		</override>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_upper_milspec" based_on="wpn_fps_m4_upper_reciever_round" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" type="upper_reciever" drop="false" is_a_unlockable="true" inherit_override="true" inherit_forbids="false" global_value="akcar_paint_4">
+		<stats concealment="1" spread="0" recoil="-2" damage="0" />
+		<adds>
+			<value_node value="wpn_fps_m4_upper_reciever_round"/>						
+		</adds>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_lower_milspec" based_on="wpn_fps_m4_lower_reciever" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" type="lower_reciever" drop="false" is_a_unlockable="true" inherit_override="true" inherit_forbids="false" has_description="false" desc_id="bm_wp_wpn_fps_snp_sierra458_lower_milspec_desc" global_value="akcar_paint_4">
+		<stats concealment="-1" spread="-2" recoil="-2" damage="0" />
+		<adds>
+			<value_node value="wpn_fps_m4_lower_reciever"/>							
+		</adds>
+		<custom_stats fire_rate_multiplier="1.25" ammo_pickup_min_mul="0.8" ammo_pickup_max_mul="1.2"/>
+		<pcs/>
+	</WeaponMod>
+	
+<!-- AP Switch for certain mags -->
+
+	<WeaponMod id="wpn_fps_snp_sierra458_ap_switch" based_on="wpn_fps_upg_a_custom_free" type="ammo" sub_type="ammo_slug" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" texture_bundle_folder="mods" is_a_unlockable="false">
+		<stats damage="0" spread="0" recoil="0" concealment="0" total_ammo_mod="0"/>
+		<custom_stats armor_piercing_add="1" can_shoot_through_enemy="true" can_shoot_through_shield="true" can_shoot_through_wall="true" />
+	</WeaponMod> 
+
+	<WeaponMod id="wpn_fps_ass_m16_tcr_switch" based_on="wpn_fps_upg_a_custom_free" type="ammo" sub_type="ammo_slug" unit="units/pd2_dlc_gage_assault/weapons/wpn_fps_ass_galil/wpn_fps_ass_galil" third_unit="units/pd2_dlc_gage_assault/weapons/wpn_fps_ass_galil/wpn_fps_ass_galil" drop="false" texture_bundle_folder="mods" is_a_unlockable="false">
+		<stats damage="0" spread="0" recoil="0" concealment="0" total_ammo_mod="0"/>
+		<custom_stats>
+			<sounds fire="galil_fire_single" fire_single="galil_fire_single" fire_auto="galil_fire" stop_fire="galil_stop" use_fix="true"/>			
+		</custom_stats>
+	</WeaponMod> 
+
+	<WeaponMod id="wpn_fps_snp_sierra458_bush_switch" based_on="wpn_fps_upg_a_rip" type="ammo" sub_type="ammo_poison" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" texture_bundle_folder="mods" is_a_unlockable="false">
+		<stats damage="0" spread="0" recoil="0" concealment="0" total_ammo_mod="0"/>
+		<custom_stats armor_piercing_add="1" can_shoot_through_enemy="true" can_shoot_through_shield="false" can_shoot_through_wall="true" muzzleflash="effects/payday2/particles/weapons/shotgun/sho_muzzleflash_rip"/>
+	</WeaponMod> 
+
+<!-- v2 stuff -->
+
+<!-- The REAL legally distinct FTAC Recon -->
+
+	<WeaponMod id="wpn_fps_snp_sierra458_body_msecho" based_on="wpn_fps_m4_lower_reciever" type="exclusive_set" unit="units/mods/weapons/wpn_fps_snp_sierra458_msecho/wpn_fps_snp_sierra458_fg_msecho" third_unit="units/mods/weapons/wpn_third_snp_sierra458_msecho/wpn_third_snp_sierra458_fg_msecho" a_obj="a_fg" drop="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" texture_bundle_folder="mods" is_a_unlockable="true" global_value="akcar_paint_4" has_description="true" desc_id="bm_wp_wpn_fps_snp_sierra458_body_msecho_desc">
+		<stats damage="0" extra_ammo="0" concealment="-2" recoil="-3" spread="4" reload="0"/>
+		<override>
+			<wpn_fps_upg_m4_s_ubr unit="units/mods/weapons/wpn_fps_snp_sierra458_msecho/wpn_fps_snp_sierra458_s_msecho"	/>
+			<wpn_fps_upg_m4_s_standard unit="units/mods/weapons/wpn_fps_snp_sierra458_msecho/wpn_fps_snp_sierra458_s_msecho" />
+			<wpn_fps_upg_m4_s_standard_vanilla unit="units/mods/weapons/wpn_fps_snp_sierra458_msecho/wpn_fps_snp_sierra458_s_msecho" />
+			
+			<wpn_fps_snp_sierra458_fg_standard unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy">
+				<override>
+					<wpn_fps_snp_sierra458_o_down unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy">
+						<adds>
+							<value_node value="wpn_fps_upg_o_mbus_msecho_down"/>			
+						</adds>
+					</wpn_fps_snp_sierra458_o_down>
+					<wpn_fps_upg_sierra458_o_backup unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy">	
+						<adds>
+							<value_node value="wpn_fps_upg_o_mbus_msecho"/>			
+						</adds>					
+						<stance_mod>
+							<wpn_fps_snp_sierra458 translation="0.0 -2 0"  rotation="0 -0 -0 1"/>
+						</stance_mod>
+					</wpn_fps_upg_sierra458_o_backup>
+				</override>
+			</wpn_fps_snp_sierra458_fg_standard>			
+			<wpn_fps_snp_sierra458_lower unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/> 
+			<wpn_fps_snp_sierra458_upper unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy">
+				<override/>		
+			</wpn_fps_snp_sierra458_upper>
+
+			<wpn_fps_amcar_bolt_standard unit="units/mods/weapons/wpn_fps_snp_sierra458_msecho/wpn_fps_snp_sierra458_bolt_msecho"/>
+			<wpn_fps_m4_uupg_draghandle unit="units/pd2_dlc_mxm/weapons/wpn_fps_upg_mxm_m4/wpn_fps_m4_uupg_draghandle_radian" third_unit="units/pd2_dlc_akm4_modpack/weapons/wpn_third_m4_uupg_draghandle_core/wpn_third_m4_uupg_draghandle_core"/>
+			
+        	<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="exclusive_set" a_obj="a_fl_tti"/>
+        	<wpn_fps_upg_fl_ass_smg_sho_surefire parent="exclusive_set" a_obj="a_fl_tti"/>
+        	<wpn_fps_upg_fl_ass_peq15 parent="exclusive_set" a_obj="a_fl_tti"/>
+        	<wpn_fps_upg_fl_ass_laser parent="exclusive_set" a_obj="a_fl_tti"/>
+        	<wpn_fps_upg_fl_ass_utg parent="exclusive_set" a_obj="a_fl_tti"/>
+        	<wpn_fps_upg_fl_dbal_laser parent="exclusive_set" a_obj="a_fl_tti"/>
+			<wpn_fps_m4_uupg_fg_rail_ext unit="units/payday2/weapons/wpn_fps_smg_mp9_pts/wpn_fps_smg_mp9_b_dummy" third_unit="units/payday2/weapons/wpn_fps_smg_mp9_pts/wpn_fps_smg_mp9_b_dummy"/>
+			<wpn_fps_upg_vg_ass_smg_afg parent="exclusive_set" a_obj="a_vg_tti"/>
+			<wpn_fps_addon_ris unit="units/payday2/weapons/wpn_fps_smg_mp9_pts/wpn_fps_smg_mp9_b_dummy"/>			
+		</override>	
+		<adds>
+			<value_node value="wpn_fps_snp_sierra458_upper_msecho"/>
+			<value_node value="wpn_fps_snp_sierra458_lower_msecho"/>
+		</adds>
+		<forbids>
+			<value_node value="wpn_fps_upg_sierra458_fg_edge"/>	
+			<value_node value="wpn_fps_upg_sierra458_fg_shepheard"/>
+			<value_node value="wpn_fps_snp_sierra458_fg_mk12"/>
+			<value_node value="wpn_fps_snp_sierra458_fg_ecr"/>	
+			<value_node value="wpn_fps_snp_sierra458_fg_hera"/>
+			<value_node value="wpn_fps_snp_sierra458_fg_tti"/>	
+			<value_node value="wpn_fps_snp_sierra458_b_ecr"/>	
+			<value_node value="wpn_fps_snp_sierra458_fg_shepheard_victor"/>	
+			<value_node value="wpn_fps_snp_sierra458_fg_desert"/>	
+
+			<value_node value="wpn_fps_snp_sierra458_upper_milspec"/>
+			<value_node value="wpn_fps_snp_sierra458_lower_milspec"/>			
+			<value_node value="wpn_fps_snp_sierra458_upper_custom"/>
+			<value_node value="wpn_fps_snp_sierra458_lower_custom"/>					
+		</forbids>
+		<pcs/>	
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_upper_msecho" based_on="wpn_fps_m4_upper_reciever_round" type="upper_reciever" unit="units/mods/weapons/wpn_fps_snp_sierra458_msecho/wpn_fps_snp_sierra458_upper_msecho" third_unit="units/payday2/weapons/wpn_third_ass_m4_pts/wpn_third_m4_upper_reciever_edge" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_lower_msecho" based_on="wpn_fps_m4_lower_reciever" type="lower_reciever" unit="units/mods/weapons/wpn_fps_snp_sierra458_msecho/wpn_fps_snp_sierra458_lower_msecho" third_unit="units/payday2/weapons/wpn_third_ass_m4_pts/wpn_third_m4_lower_reciever" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_fg_msecho" based_on="wpn_fps_snp_tti_fg_standard" unit="units/mods/weapons/wpn_fps_snp_sierra458_msecho/wpn_fps_snp_sierra458_fg_msecho" type="foregrip_ext" a_obj="a_fg" drop="false" is_a_unlockable="false" inherit_override="true">
+		<override>
+			<wpn_fps_addon_ris unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>	
+		</override>
+		<forbids>		
+			<value_node value="wpn_fps_m4_uupg_fg_rail_ext"/>			
+		</forbids>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_o_mbus_msecho_down" based_on="wpn_fps_snp_victor_o_down" unit="units/mods/weapons/wpn_fps_snp_sierra458_msecho/wpn_fps_upg_o_mbus_msecho_down" third_unit="units/payday2/weapons/wpn_fps_smg_mp9_pts/wpn_fps_smg_mp9_b_dummy" type="extra" drop="false" is_a_unlockable="false" inherit_override="true" a_obj="a_o" hidden="true">
+		<stats/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_o_mbus_msecho" based_on="wpn_fps_snp_victor_o_standard" unit="units/mods/weapons/wpn_fps_snp_sierra458_msecho/wpn_fps_upg_o_mbus_msecho" type="extra" drop="false" is_a_unlockable="false" inherit_override="true" a_obj="a_o" hidden="true">
+		<stats/>
+	</WeaponMod> <!-- AAAAAAAAAAAAAAAAAAAA -->
+
+<!-- Alexander Arms Entry Complete Rifle Set -->
+
+	<WeaponMod id="wpn_fps_snp_sierra458_body_ecr" based_on="wpn_fps_m4_lower_reciever" type="exclusive_set" unit="units/mods/weapons/wpn_fps_snp_sierra458_ecr/wpn_fps_snp_sierra458_gasblock_ecr" third_unit="units/mods/weapons/wpn_third_snp_sierra458_ecr/wpn_third_snp_sierra458_gasblock_ecr" a_obj="a_fg" drop="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" texture_bundle_folder="mods" hidden="false" is_a_unlockable="true" global_value="akcar_paint_4" has_description="true" desc_id="bm_wp_wpn_fps_snp_sierra458_body_ecr_desc">
+		<stats damage="0" extra_ammo="0" concealment="2" recoil="-4" spread="-5" reload="0"/>
+		<custom_stats fire_rate_multiplier="1.25" ammo_pickup_min_mul="0.8" ammo_pickup_max_mul="1.2"/>
+		<override>
+			<wpn_fps_m16_s_solid unit="units/mods/weapons/wpn_fps_snp_sierra458_ecr/wpn_fps_snp_sierra458_s_ecr" third_unit="units/pd2_dlc_chico/weapons/wpn_third_ass_contraband_pts/wpn_third_ass_contraband_s_standard"/>
+			<wpn_fps_upg_m4_g_standard unit="units/mods/weapons/wpn_fps_snp_sierra458_ecr/wpn_fps_snp_sierra458_g_ecr"/>
+			<wpn_fps_upg_m4_g_standard_vanilla unit="units/mods/weapons/wpn_fps_snp_sierra458_ecr/wpn_fps_snp_sierra458_g_ecr"/>
+
+			<wpn_fps_snp_sierra458_fg_standard unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+			<wpn_fps_snp_sierra458_lower unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+			<wpn_fps_snp_sierra458_upper unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy">
+				<override/>		
+				<forbids/>
+			</wpn_fps_snp_sierra458_upper>
+
+			<wpn_fps_amcar_bolt_standard unit="units/payday2/weapons/wpn_fps_ass_m4_pts/wpn_fps_m4_bolt_edge"/>
+			<wpn_fps_m4_uupg_draghandle unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_fps_ass_tecci_dh_standard" third_unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_third_ass_tecci_dh_standard"/>
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="exclusive_set" a_obj="a_fl_ecr_2"/>
+        	<wpn_fps_upg_fl_ass_smg_sho_surefire parent="exclusive_set" a_obj="a_fl_ecr_2"/>
+        	<wpn_fps_upg_fl_ass_peq15 parent="exclusive_set" a_obj="a_fl_ecr_2"/>
+        	<wpn_fps_upg_fl_ass_laser parent="exclusive_set" a_obj="a_fl_ecr_2"/>
+        	<wpn_fps_upg_fl_ass_utg parent="exclusive_set" a_obj="a_fl_ecr_2"/>
+        	<wpn_fps_upg_fl_dbal_laser parent="exclusive_set" a_obj="a_fl_ecr_2"/>			
+		</override>	
+		<adds>		
+			<value_node value="wpn_fps_snp_sierra458_fg_ecr"/>
+			<value_node value="wpn_fps_snp_sierra458_upper_ecr"/>		
+			<value_node value="wpn_fps_snp_sierra458_lower_ecr"/>		
+		</adds>	
+		<forbids>
+			<value_node value="wpn_fps_upg_sierra458_fg_edge"/>	
+			<value_node value="wpn_fps_upg_sierra458_fg_shepheard"/>
+			<value_node value="wpn_fps_snp_sierra458_fg_mk12"/>	
+			<value_node value="wpn_fps_snp_sierra458_fg_hera"/>
+			<value_node value="wpn_fps_snp_sierra458_fg_tti"/>				
+			<value_node value="wpn_fps_snp_sierra458_fg_desert"/>	
+
+            <value_node value="wpn_fps_upg_m4_g_hgrip"/>
+            <value_node value="wpn_fps_upg_m4_g_mgrip"/>
+			<value_node value="wpn_fps_upg_m4_g_ergo"/>
+			<value_node value="wpn_fps_upg_m4_g_sniper"/>
+			<value_node value="wpn_fps_snp_tti_g_grippy"/>
+			<value_node value="wpn_fps_sho_sko12_body_grip"/>
+			<value_node value="wpn_fps_upg_g_m4_surgeon"/>
+			<value_node value="wpn_fps_snp_victor_g_mod3"/>
+			<value_node value="wpn_fps_m4_uupg_g_billet"/>		
+
+			<value_node value="wpn_fps_snp_sierra458_upper_milspec"/>
+			<value_node value="wpn_fps_snp_sierra458_lower_milspec"/>		
+			<value_node value="wpn_fps_snp_sierra458_upper_custom"/>
+			<value_node value="wpn_fps_snp_sierra458_lower_custom"/>					
+		</forbids>
+		<pcs/>	
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_upper_ecr" based_on="wpn_fps_m4_upper_reciever_round" type="upper_reciever" unit="units/mods/weapons/wpn_fps_snp_sierra458_ecr/wpn_fps_snp_sierra458_upper_ecr" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_lower_ecr" based_on="wpn_fps_m4_lower_reciever" type="lower_reciever" unit="units/mods/weapons/wpn_fps_snp_sierra458_ecr/wpn_fps_snp_sierra458_lower_ecr" third_unit="units/payday2/weapons/wpn_third_ass_m4_pts/wpn_third_m4_lower_reciever" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_m_ecr" based_on="wpn_fps_m4_uupg_m_std_vanilla" unit="units/mods/weapons/wpn_fps_snp_sierra458_ecr/wpn_fps_snp_sierra458_m_ecr" third_unit="units/payday2/weapons/wpn_third_upg_m4_reusable/wpn_third_upg_m4_m_pmag" has_description="true" desc_id="bm_wp_wpn_fps_snp_sierra458_m_beowulf_desc" type="magazine" drop="false" is_a_unlockable="true" inherit_override="true" global_value="akcar_paint_4">
+		<adds>
+			<value_node value="wpn_fps_snp_sierra458_beowulf_switch"/>
+		</adds>
+		<stats damage="18" extra_ammo="0" concealment="-1" recoil="0" spread="-2" reload="0" total_ammo_mod="-4"/>
+		<custom_stats fire_rate_multiplier="0.75" ammo_pickup_min_mul="0.6666666667" ammo_pickup_max_mul="0.75"/>
+		<pcs/>
+		<bullet_objects prefix="g_bullet_" amount="2"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_s_solid" based_on="wpn_fps_m16_s_solid" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" type="stock" a_obj="a_s" texture_bundle_folder="mods" drop="false" global_value="akcar_paint_4">
+		<stats damage="0" spread="2" recoil="4" concealment="-4"/>
+		<adds>
+			<value_node value="wpn_fps_m16_s_solid"/>			
+		</adds>
+		<pcs/>		
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_snp_sierra458_fg_ecr" based_on="wpn_fps_amcar_uupg_fg_amcar" type="foregrip_ext_2" unit="units/mods/weapons/wpn_fps_snp_sierra458_ecr/wpn_fps_snp_sierra458_fg_ecr" texture_bundle_folder="mods" inherit_adds="false" drop="false" global_value="akcar_paint_4" hidden="true">
+	<!--<stats damage="0" spread="-2" recoil="0" concealment="2"/>
+		<pcs/>-->
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_g_ecr" based_on="wpn_fps_upg_m4_g_standard" type="grip" unit="units/mods/weapons/wpn_fps_snp_sierra458_ecr/wpn_fps_snp_sierra458_g_ecr" texture_bundle_folder="mods" drop="false" global_value="akcar_paint_4" hidden="true">
+	<!--<stats damage="0" spread="2" recoil="-1" concealment="-1"/>
+		<pcs/>-->
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_b_ecr" based_on="wpn_fps_m4_uupg_b_short" type="barrel" a_obj="a_b" unit="units/mods/weapons/wpn_fps_snp_sierra458_ecr/wpn_fps_snp_sierra458_b_ecr" third_unit="units/mods/weapons/wpn_third_snp_sierra458_pts/wpn_third_snp_sierra458_b_ecr" drop="false" is_a_unlockable="true" inherit_weapons="false" inherit_adds="true" inherit_override="true" inherit_parts_override="true" inherit_parts_forbids="true" global_value="akcar_paint_4">
+		<stats damage="0" concealment="1" recoil="0" spread="-1" reload="0" total_ammo_mod="0"/>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_fg_hera" based_on="wpn_fps_m4_uupg_fg_lr300" global_value="akcar_paint_4" type="foregrip" unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_fg_hera" third_unit="units/mods/weapons/wpn_third_snp_sierra458_pts/wpn_third_snp_sierra458_fg_hera" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" inherit_parts_override="true" inherit_parts_forbids="true">
+		<stats concealment="1" recoil="2" spread="-2"/>
+		<override>
+        	<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="foregrip" a_obj="a_fl_hera"/>
+        	<wpn_fps_upg_fl_ass_smg_sho_surefire parent="foregrip" a_obj="a_fl_hera"/>
+        	<wpn_fps_upg_fl_ass_peq15 parent="foregrip" a_obj="a_fl_hera"/>
+        	<wpn_fps_upg_fl_ass_laser parent="foregrip" a_obj="a_fl_hera"/>
+        	<wpn_fps_upg_fl_ass_utg parent="foregrip" a_obj="a_fl_hera"/>
+        	<wpn_fps_upg_fl_dbal_laser parent="foregrip" a_obj="a_fl_hera"/>
+			<wpn_fps_addon_ris unit="units/payday2/weapons/wpn_fps_smg_mp9_pts/wpn_fps_smg_mp9_b_dummy"/>
+			<wpn_fps_upg_sierra458_o_backup unit="units/pd2_dlc_savi/weapons/wpn_fps_snp_victor_pts/wpn_fps_snp_victor_o_hera" third_unit="units/pd2_dlc_savi/weapons/wpn_third_snp_victor_pts/wpn_third_snp_victor_o_hera"/>
+			<wpn_fps_snp_sierra458_o_down unit="units/pd2_dlc_savi/weapons/wpn_fps_snp_victor_pts/wpn_fps_snp_victor_o_down_hera" third_unit="units/pd2_dlc_savi/weapons/wpn_third_snp_victor_pts/wpn_third_snp_victor_o_hera"/>
+		</override>
+		<forbids>		
+			<value_node value="wpn_fps_m4_uupg_fg_rail_ext"/>			
+		</forbids>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_fg_tti" based_on="wpn_fps_upg_ass_m4_fg_lvoa" type="foregrip" unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_fg_tti" third_unit="units/mods/weapons/wpn_third_snp_sierra458_pts/wpn_third_snp_sierra458_fg_tti" drop="false" inherit_weapons="false" texture_bundle_folder="mods" is_a_unlockable="true" inherit_parts_override="true" inherit_parts_forbids="true" global_value="akcar_paint_4">
+		<stats concealment="-2" spread="1" recoil="2" reload="0" extra_ammo="0" total_ammo_mod="0" damage="0"/>
+		<override>
+        	<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="foregrip" a_obj="a_fl_tti"/>
+        	<wpn_fps_upg_fl_ass_smg_sho_surefire parent="foregrip" a_obj="a_fl_tti"/>
+        	<wpn_fps_upg_fl_ass_peq15 parent="foregrip" a_obj="a_fl_tti"/>
+        	<wpn_fps_upg_fl_ass_laser parent="foregrip" a_obj="a_fl_tti"/>
+        	<wpn_fps_upg_fl_ass_utg parent="foregrip" a_obj="a_fl_tti"/>
+        	<wpn_fps_upg_fl_dbal_laser parent="foregrip" a_obj="a_fl_tti"/>
+			<wpn_fps_m4_uupg_fg_rail_ext unit="units/payday2/weapons/wpn_fps_smg_mp9_pts/wpn_fps_smg_mp9_b_dummy" third_unit="units/payday2/weapons/wpn_fps_smg_mp9_pts/wpn_fps_smg_mp9_b_dummy"/>
+			<wpn_fps_upg_vg_ass_smg_afg parent="foregrip" a_obj="a_vg_tti"/>
+			<wpn_fps_addon_ris unit="units/payday2/weapons/wpn_fps_smg_mp9_pts/wpn_fps_smg_mp9_b_dummy"/>
+		</override>
+		<pcs/>
+	</WeaponMod>
+
+<!-- V3 Stuff -->
+
+	<WeaponMod id="wpn_fps_snp_sierra458_m_treefiddy" based_on="wpn_fps_m4_upg_m_quick" unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_m_quick" type="magazine" drop="false" is_a_unlockable="true" inherit_override="true" global_value="akcar_paint_4" hidden="true">	
+		<adds>
+			<value_node value="wpn_fps_snp_sierra458_ap_switch"/>
+		</adds>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_m_quick" based_on="wpn_fps_m4_upg_m_quick" unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_m_quick" type="magazine" drop="false" is_a_unlockable="true" inherit_override="true" global_value="akcar_paint_4">
+		<adds>
+			<value_node value="wpn_fps_snp_sierra458_ap_switch"/>
+		</adds>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_fg_shepheard_victor" based_on="wpn_fps_m4_uupg_fg_rail_ext" type="foregrip_ext2" unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_fg_shepheard_victor" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_beowulf_switch" based_on="wpn_fps_upg_a_custom_free" type="ammo" sub_type="ammo_slug" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" texture_bundle_folder="mods" is_a_unlockable="false">
+		<custom_stats armor_piercing_add="1" can_shoot_through_enemy="true" can_shoot_through_shield="true" can_shoot_through_wall="true">
+			<sounds fire="ching_fire" fire_single="ching_fire" fire_auto="ching_fire" stop_fire="scar_stop" use_fix="true"/>			
+		</custom_stats>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_ecr_switch" based_on="wpn_fps_upg_a_custom_free" type="ammo" sub_type="ammo_slug" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" texture_bundle_folder="mods" is_a_unlockable="false">
+		<custom_stats armor_piercing_add="0" can_shoot_through_enemy="false" can_shoot_through_shield="false" can_shoot_through_wall="false">
+			<sounds fire="ching_fire" fire_single="ching_fire" fire_auto="ching_fire" stop_fire="scar_stop" use_fix="true"/>			
+		</custom_stats>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_m_transparent" based_on="wpn_fps_m4_uupg_m_std_vanilla" unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_m_transparent" type="magazine" drop="false" is_a_unlockable="true" inherit_override="true" has_description="true" desc_id="bm_wp_wpn_fps_snp_sierra458_m_transparent_desc" global_value="akcar_paint_4">
+		<adds>
+			<value_node value="wpn_fps_snp_sierra458_ap_switch"/>
+		</adds>
+		<pcs/>
+		<bullet_objects prefix="g_bullet_" amount="10"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_upper_custom" based_on="wpn_fps_m4_upper_reciever_round" unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_upper_custom" type="upper_reciever" drop="false" is_a_unlockable="true" inherit_override="true" inherit_forbids="false" global_value="akcar_paint_4">
+		<stats concealment="-1" spread="1" recoil="0" damage="0" />
+		<pcs/>
+		<override>
+			<wpn_fps_amcar_bolt_standard unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_bolt_custom"/>		
+			<wpn_fps_m4_uupg_draghandle unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_draghandle_custom"/>				
+		</override>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_lower_custom" based_on="wpn_fps_m4_lower_reciever" unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_lower_custom" type="lower_reciever" drop="false" is_a_unlockable="true" inherit_override="true" inherit_forbids="false" has_description="false" desc_id="bm_wp_wpn_fps_snp_sierra458_lower_milspec_desc" global_value="akcar_paint_4">
+		<stats concealment="-1" spread="-2" reload="2" />
+		<pcs/>
+	</WeaponMod>
+
+<!-- V4 Stuff -->
+
+<!-- Siege AR-15.50 Set -->
+
+	<WeaponMod id="wpn_fps_snp_sierra458_body_siege" based_on="wpn_fps_m4_lower_reciever" type="exclusive_set" unit="units/mods/weapons/wpn_fps_snp_sierra458_siege/wpn_fps_snp_sierra458_fg_siege" third_unit="units/mods/weapons/wpn_third_snp_sierra458_siege/wpn_third_snp_sierra458_fg_siege" a_obj="a_fg" drop="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" texture_bundle_folder="mods" hidden="false" is_a_unlockable="true" global_value="akcar_paint_4" has_description="true" desc_id="bm_wp_wpn_fps_snp_sierra458_body_siege_desc">
+		<stats damage="0" extra_ammo="0" concealment="2" recoil="-3" spread="2" reload="0"/>
+		<override>
+			<wpn_fps_upg_m4_s_standard unit="units/mods/weapons/wpn_fps_snp_sierra458_siege/wpn_fps_snp_sierra458_s_siege" />
+			<wpn_fps_upg_m4_s_standard_vanilla unit="units/mods/weapons/wpn_fps_snp_sierra458_siege/wpn_fps_snp_sierra458_s_siege" />
+			<wpn_fps_upg_m4_g_standard unit="units/mods/weapons/wpn_fps_snp_sierra458_siege/wpn_fps_snp_sierra458_g_siege"/>
+			<wpn_fps_upg_m4_g_standard_vanilla unit="units/mods/weapons/wpn_fps_snp_sierra458_siege/wpn_fps_snp_sierra458_g_siege"/>
+
+			<wpn_fps_snp_sierra458_b_standard unit="units/mods/weapons/wpn_fps_snp_sierra458_siege/wpn_fps_snp_sierra458_b_siege_dummy" third_unit="units/mods/weapons/wpn_fps_snp_sierra458_siege/wpn_fps_snp_sierra458_b_siege_dummy">
+				<adds>
+					<value_node value="wpn_fps_snp_sierra458_b_siege"/>
+				</adds>
+			</wpn_fps_snp_sierra458_b_standard>
+			<wpn_fps_snp_sierra458_fg_standard unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy">
+				<override/>
+				<adds/>
+			</wpn_fps_snp_sierra458_fg_standard>
+			<wpn_fps_snp_sierra458_lower unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+			<wpn_fps_snp_sierra458_upper unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy">
+				<override/>		
+				<forbids/>
+			</wpn_fps_snp_sierra458_upper>
+
+			<wpn_fps_ass_m16_os_frontsight parent="exclusive_set"/>
+			<wpn_fps_amcar_bolt_standard unit="units/payday2/weapons/wpn_fps_ass_m4_pts/wpn_fps_m4_bolt_edge"/>
+			<wpn_fps_m4_uupg_draghandle unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_fps_ass_tecci_dh_standard" third_unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_third_ass_tecci_dh_standard"/>
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="exclusive_set" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_ass_smg_sho_surefire parent="exclusive_set" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_ass_peq15 parent="exclusive_set" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_ass_laser parent="exclusive_set" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_ass_utg parent="exclusive_set" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_dbal_laser parent="exclusive_set" a_obj="a_fl"/>
+			<wpn_fps_snp_sierra458_ris_siege parent="exclusive_set" a_obj="a_fl"/>
+        	<wpn_fps_snp_sierra458_os_siege parent="exclusive_set" a_obj="a_os"/>
+			<wpn_fps_upg_sierra458_o_backup unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy">
+				<adds>
+					<value_node value="wpn_fps_ass_m16_o_handle_sight"/>
+				</adds>				
+				<stance_mod>
+					<wpn_fps_snp_sierra458 translation="0.0 -2 0"  rotation="0 -0 -0 1"/>
+				</stance_mod>
+				<override>
+					<wpn_fps_ass_m16_os_frontsight unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+				</override>
+			</wpn_fps_upg_sierra458_o_backup>
+			<wpn_fps_snp_sierra458_o_down unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>				
+		</override>	
+		<adds>		
+			<value_node value="wpn_fps_snp_sierra458_os_siege"/>
+			<value_node value="wpn_fps_snp_sierra458_upper_siege"/>		
+			<value_node value="wpn_fps_snp_sierra458_lower_siege"/>		
+			<value_node value="wpn_fps_snp_sierra458_ris_siege"/>	
+		</adds>	
+		<forbids>
+			<value_node value="wpn_fps_upg_sierra458_fg_edge"/>	
+			<value_node value="wpn_fps_upg_sierra458_fg_shepheard"/>
+			<value_node value="wpn_fps_snp_sierra458_fg_mk12"/>	
+			<value_node value="wpn_fps_snp_sierra458_fg_hera"/>
+			<value_node value="wpn_fps_snp_sierra458_fg_tti"/>				
+			<value_node value="wpn_fps_addon_ris"/>	
+			<value_node value="wpn_fps_snp_sierra458_fg_desert"/>	
+
+			<value_node value="wpn_fps_snp_sierra458_b_ecr"/>	
+			<value_node value="wpn_fps_snp_sierra458_b_old"/>
+
+            <value_node value="wpn_fps_upg_m4_g_hgrip"/>
+            <value_node value="wpn_fps_upg_m4_g_mgrip"/>
+			<value_node value="wpn_fps_upg_m4_g_ergo"/>
+			<value_node value="wpn_fps_upg_m4_g_sniper"/>
+			<value_node value="wpn_fps_snp_tti_g_grippy"/>
+			<value_node value="wpn_fps_sho_sko12_body_grip"/>
+			<value_node value="wpn_fps_upg_g_m4_surgeon"/>
+			<value_node value="wpn_fps_snp_victor_g_mod3"/>
+			<value_node value="wpn_fps_m4_uupg_g_billet"/>		
+
+			<value_node value="wpn_fps_snp_sierra458_upper_milspec"/>
+			<value_node value="wpn_fps_snp_sierra458_lower_milspec"/>		
+			<value_node value="wpn_fps_snp_sierra458_upper_custom"/>
+			<value_node value="wpn_fps_snp_sierra458_lower_custom"/>					
+		</forbids>
+		<pcs/>	
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_m_siege" based_on="wpn_fps_m4_upg_m_quick" unit="units/mods/weapons/wpn_fps_snp_sierra458_siege/wpn_fps_snp_sierra458_m_siege" inherit_override="true" global_value="akcar_paint_4" has_description="true" desc_id="bm_wp_wpn_fps_snp_sierra458_m_beowulf_desc" has_description="true" desc_id="bm_wp_wpn_fps_snp_sierra458_m_beowulf_desc" type="magazine" drop="false" is_a_unlockable="true" inherit_override="true" global_value="akcar_paint_4">
+		<adds>
+			<value_node value="wpn_fps_snp_sierra458_beowulf_switch"/>
+		</adds>
+		<stats damage="18" extra_ammo="0" concealment="-2" recoil="-2" spread="0" reload="3" total_ammo_mod="-4"/>
+		<custom_stats fire_rate_multiplier="0.75" ammo_pickup_min_mul="0.6666666667" ammo_pickup_max_mul="0.75"/>
+		<pcs/>
+		<bullet_objects prefix="g_bullet_" amount="2"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_os_siege" based_on="wpn_fps_snp_tti_fg_standard" type="sight_special" unit="units/mods/weapons/wpn_fps_snp_sierra458_siege/wpn_fps_snp_sierra458_os_siege" third_unit="units/payday2/weapons/wpn_third_add_m16_pts/wpn_third_ass_m16_os_frontsight" drop="false" is_a_unlockable="true" inherit_override="true" global_value="akcar_paint_4"/>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_ris_siege" based_on="wpn_fps_snp_tti_fg_standard" type="shitass3" unit="units/payday2/weapons/wpn_fps_upg_m4_reusable/wpn_fps_addon_ris" third_unit="units/payday2/weapons/wpn_third_upg_m4_reusable/wpn_third_addon_ris" inherit_parts_forbids="false" inherit_parts_override="false" drop="false" is_a_unlockable="true" inherit_override="true" global_value="akcar_paint_4"/>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_b_siege" based_on="wpn_fps_snp_victor_b_standard" type="barrelshitass" a_obj="a_b" unit="units/mods/weapons/wpn_fps_snp_sierra458_siege/wpn_fps_snp_sierra458_b_siege" third_unit="units/mods/weapons/wpn_third_snp_sierra458_pts/wpn_third_snp_sierra458_b_standard" type="barrel" drop="false" is_a_unlockable="false" inherit_override="true"/>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_upper_siege" based_on="wpn_fps_m4_upper_reciever_round" type="upper_reciever" unit="units/mods/weapons/wpn_fps_snp_sierra458_siege/wpn_fps_snp_sierra458_upper_siege" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_lower_siege" based_on="wpn_fps_m4_lower_reciever" type="lower_reciever" unit="units/mods/weapons/wpn_fps_snp_sierra458_siege/wpn_fps_snp_sierra458_lower_siege" third_unit="units/payday2/weapons/wpn_third_ass_m4_pts/wpn_third_m4_lower_reciever" drop="false" is_a_unlockable="false"/>
+
+<!-- Alexander Arms Tactical Complete Rifle Set -->
+
+	<WeaponMod id="wpn_fps_snp_sierra458_body_tcr" based_on="wpn_fps_m4_lower_reciever" type="exclusive_set" unit="units/mods/weapons/wpn_fps_snp_sierra458_tcr/wpn_fps_snp_sierra458_fg_tcr" third_unit="units/mods/weapons/wpn_third_snp_sierra458_tcr/wpn_third_snp_sierra458_fg_tcr" a_obj="a_fg" drop="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" texture_bundle_folder="mods" hidden="false" is_a_unlockable="true" global_value="akcar_paint_4" has_description="true" desc_id="bm_wp_wpn_fps_snp_sierra458_body_tcr_desc">
+		<stats damage="0" extra_ammo="0" concealment="-2" recoil="2" spread="1" reload="0"/>
+		<override>
+			<wpn_fps_m16_s_solid unit="units/mods/weapons/wpn_fps_snp_sierra458_ecr/wpn_fps_snp_sierra458_s_ecr" third_unit="units/pd2_dlc_chico/weapons/wpn_third_ass_contraband_pts/wpn_third_ass_contraband_s_standard"/>
+			<wpn_fps_upg_m4_s_standard unit="units/mods/weapons/wpn_fps_snp_sierra458_tcr/wpn_fps_snp_sierra458_s_tcr" />
+			<wpn_fps_upg_m4_s_standard_vanilla unit="units/mods/weapons/wpn_fps_snp_sierra458_tcr/wpn_fps_snp_sierra458_s_tcr" />
+			<wpn_fps_upg_m4_g_standard unit="units/mods/weapons/wpn_fps_snp_sierra458_tcr/wpn_fps_snp_sierra458_g_tcr" third_unit="units/mods/weapons/wpn_third_snp_sierra458_tcr/wpn_third_snp_sierra458_g_tcr"/>
+			<wpn_fps_upg_m4_g_standard_vanilla unit="units/mods/weapons/wpn_fps_snp_sierra458_tcr/wpn_fps_snp_sierra458_g_tcr" third_unit="units/mods/weapons/wpn_third_snp_sierra458_tcr/wpn_third_snp_sierra458_g_tcr"/>
+
+			<wpn_fps_snp_sierra458_fg_standard unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy">
+				<override/>
+				<adds/>
+				<forbids/>
+			</wpn_fps_snp_sierra458_fg_standard>
+			<wpn_fps_snp_sierra458_lower unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy">
+				<adds>
+					<value_node value="wpn_fps_m4_lower_reciever"/>					
+				</adds>
+			</wpn_fps_snp_sierra458_lower>
+			<wpn_fps_snp_sierra458_upper unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy">
+				<override/>		
+				<forbids/>
+				<adds>
+					<value_node value="wpn_fps_m4_upper_reciever_round"/>					
+				</adds>
+			</wpn_fps_snp_sierra458_upper>
+			
+			<wpn_fps_m4_upper_reciever_round unit="units/mods/weapons/wpn_fps_snp_sierra458_tcr/wpn_fps_snp_sierra458_upper_tcr">
+				<override/>	
+			</wpn_fps_m4_upper_reciever_round>	
+			
+			<wpn_fps_m4_lower_reciever unit="units/mods/weapons/wpn_fps_snp_sierra458_tcr/wpn_fps_snp_sierra458_lower_tcr"/>	
+
+			<wpn_fps_amcar_bolt_standard unit="units/payday2/weapons/wpn_fps_ass_m4_pts/wpn_fps_m4_bolt_edge"/>
+			<wpn_fps_m4_uupg_draghandle unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_fps_ass_tecci_dh_standard" third_unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_third_ass_tecci_dh_standard"/>
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="exclusive_set" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_ass_smg_sho_surefire parent="exclusive_set" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_ass_peq15 parent="exclusive_set" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_ass_laser parent="exclusive_set" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_ass_utg parent="exclusive_set" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_dbal_laser parent="exclusive_set" a_obj="a_fl"/>
+			<wpn_fps_addon_ris parent="exclusive_set" a_obj="a_fl"/>
+			<wpn_fps_upg_sierra458_o_backup unit="units/mods/weapons/wpn_fps_snp_sierra458_tcr/wpn_fps_snp_sierra458_o_tcr" third_unit="units/mods/weapons/wpn_third_snp_sierra458_tcr/wpn_third_snp_sierra458_o_tcr"/>
+			<wpn_fps_snp_sierra458_o_down unit="units/mods/weapons/wpn_fps_snp_sierra458_tcr/wpn_fps_snp_sierra458_o_tcr_down" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>				
+			
+			<wpn_fps_ass_m16_o_handle_sight unit="units/mods/weapons/wpn_fps_snp_sierra458_tcr/wpn_fps_snp_sierra458_o_tcr" third_unit="units/mods/weapons/wpn_third_snp_sierra458_tcr/wpn_third_snp_sierra458_o_tcr">
+				<stance_mod>
+					<wpn_fps_ass_m16 translation="0.015 -2 0.16"  rotation="0 -0 -0 1"/>
+				</stance_mod>
+			</wpn_fps_ass_m16_o_handle_sight>
+			
+			<wpn_fps_ass_m16_os_frontsight unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>				
+		</override>	
+		<forbids>
+			<value_node value="wpn_fps_upg_sierra458_fg_edge"/>	
+			<value_node value="wpn_fps_upg_sierra458_fg_shepheard"/>
+			<value_node value="wpn_fps_snp_sierra458_fg_mk12"/>	
+			<value_node value="wpn_fps_snp_sierra458_fg_hera"/>
+			<value_node value="wpn_fps_snp_sierra458_fg_tti"/>				
+			<value_node value="wpn_fps_snp_sierra458_fg_desert"/>	
+
+            <value_node value="wpn_fps_upg_m4_g_hgrip"/>
+            <value_node value="wpn_fps_upg_m4_g_mgrip"/>
+			<value_node value="wpn_fps_upg_m4_g_ergo"/>
+			<value_node value="wpn_fps_upg_m4_g_sniper"/>
+			<value_node value="wpn_fps_snp_tti_g_grippy"/>
+			<value_node value="wpn_fps_sho_sko12_body_grip"/>
+			<value_node value="wpn_fps_upg_g_m4_surgeon"/>
+			<value_node value="wpn_fps_snp_victor_g_mod3"/>
+			<value_node value="wpn_fps_m4_uupg_g_billet"/>		
+
+			<value_node value="wpn_fps_snp_sierra458_upper_milspec"/>
+			<value_node value="wpn_fps_snp_sierra458_lower_milspec"/>		
+			<value_node value="wpn_fps_snp_sierra458_upper_custom"/>
+			<value_node value="wpn_fps_snp_sierra458_lower_custom"/>					
+		</forbids>
+		<pcs/>	
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_ns_comp" based_on="wpn_fps_ass_tecci_ns_special" type="barrel_ext" a_obj="a_ns" unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_ns_comp" third_unit="units/mods/weapons/wpn_third_snp_sierra458_pts/wpn_third_snp_sierra458_ns_comp" drop="false" is_a_unlockable="true" inherit_weapons="false" inherit_adds="true" inherit_override="true" inherit_parts_override="true" inherit_parts_forbids="true" global_value="akcar_paint_4">
+		<stats damage="0" concealment="-2" recoil="2" spread="2" reload="0"/>
+		<pcs/>
+	</WeaponMod>
+
+<!-- V5 Stuff -->
+
+	<WeaponMod id="wpn_fps_snp_sierra458_fg_desert" based_on="wpn_fps_upg_ass_m4_fg_lvoa" type="foregrip" unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_fg_desert" third_unit="units/mods/weapons/wpn_third_snp_sierra458_pts/wpn_third_snp_sierra458_fg_desert" drop="false" inherit_weapons="false" is_a_unlockable="true" texture_bundle_folder="mods" inherit_parts_override="true" inherit_parts_forbids="true" global_value="akcar_paint_4">
+		<stats concealment="0" spread="-1" recoil="2" damage="0" />
+		<forbids>
+			<value_node value="wpn_fps_addon_ris"/>		
+			<value_node value="wpn_fps_m4_uupg_fg_rail_ext"/>			
+		</forbids>
+		<override>
+			<wpn_fps_snp_victor_o_standard unit="units/pd2_dlc_savi/weapons/wpn_fps_snp_victor_pts/wpn_fps_snp_victor_o_hera" third_unit="units/pd2_dlc_savi/weapons/wpn_third_snp_victor_pts/wpn_third_snp_victor_o_hera"/>	
+			<wpn_fps_upg_sierra458_o_backup unit="units/mods/weapons/wpn_fps_snp_sierra458_tcr/wpn_fps_snp_sierra458_o_tcr" third_unit="units/mods/weapons/wpn_third_snp_sierra458_tcr/wpn_third_snp_sierra458_o_tcr"/>
+			<wpn_fps_snp_sierra458_o_down unit="units/mods/weapons/wpn_fps_snp_sierra458_tcr/wpn_fps_snp_sierra458_o_tcr_down" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>			
+		</override>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_ns_tank" based_on="wpn_fps_ass_tecci_ns_special" type="barrel_ext" a_obj="a_ns" unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_ns_tank" third_unit="units/mods/weapons/wpn_third_snp_sierra458_pts/wpn_third_snp_sierra458_ns_tank" drop="false" is_a_unlockable="true" inherit_weapons="false" inherit_adds="true" inherit_override="true" inherit_parts_override="true" inherit_parts_forbids="true" global_value="akcar_paint_4">
+		<stats damage="0" concealment="-2" recoil="3" spread="1" reload="0" suppression="-5"/>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_m_beoplus" based_on="wpn_fps_m4_uupg_m_std_vanilla" unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_m_beoplus" third_unit="units/payday2/weapons/wpn_third_upg_m4_reusable/wpn_third_upg_m4_m_pmag" has_description="true" desc_id="bm_wp_wpn_fps_snp_sierra458_m_beoplus_desc" type="magazine" drop="false" is_a_unlockable="true" inherit_override="true" global_value="akcar_paint_4">
+		<adds>
+			<value_node value="wpn_fps_snp_sierra458_beowulf_switch"/>
+		</adds>
+		<stats damage="61" extra_ammo="0" concealment="-3" recoil="-4" spread="2" reload="0" total_ammo_mod="-8"/>
+		<custom_stats fire_rate_multiplier="0.65" ammo_pickup_min_mul="0.45" ammo_pickup_max_mul="0.475"/>
+		<pcs/>
+		<bullet_objects prefix="g_bullet_" amount="10"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_m_d60" based_on="wpn_fps_upg_m4_m_quad" unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_m_d60" third_unit="units/mods/weapons/wpn_third_snp_sierra458_pts/wpn_third_snp_sierra458_m_d60" has_description="true" desc_id="bm_wp_wpn_fps_snp_sierra458_m_d60_desc" type="magazine" drop="false" is_a_unlockable="true" inherit_override="true" global_value="akcar_paint_4">
+		<adds>
+			<value_node value="wpn_fps_snp_sierra458_ap_switch"/>
+		</adds>
+		<stats extra_ammo="5" recoil="0" spread="-2" />
+		<custom_stats fire_rate_multiplier="1" ammo_pickup_min_mul="1" ammo_pickup_max_mul="1"/>
+		<pcs/>		
+		<bullet_objects prefix="g_bullet_" amount="3"/>
+	</WeaponMod>	
+
+	<WeaponMod id="wpn_fps_snp_sierra458_m_beowulf_short" based_on="wpn_fps_upg_m4_m_straight" unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_m_beowulf_short" has_description="true" desc_id="bm_wp_wpn_fps_snp_sierra458_m_beowulf_desc" type="magazine" drop="false" is_a_unlockable="true" inherit_override="true" global_value="akcar_paint_4">
+		<adds>
+			<value_node value="wpn_fps_snp_sierra458_beowulf_switch"/>
+		</adds>
+		<stats damage="18" extra_ammo="-2" concealment="1" recoil="-2" spread="2" reload="3" total_ammo_mod="-4"/>
+		<custom_stats fire_rate_multiplier="0.75" ammo_pickup_min_mul="0.6666666667" ammo_pickup_max_mul="0.75" />
+		<pcs/>	
+		<bullet_objects prefix="g_bullet_" amount="2"/>		
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_m_short" based_on="wpn_fps_upg_m4_m_straight" unit="units/mods/weapons/wpn_fps_snp_sierra458_pts/wpn_fps_snp_sierra458_m_short" third_unit="units/mods/weapons/wpn_third_snp_sierra458_pts/wpn_third_snp_sierra458_m_short" has_description="true" type="magazine" drop="false" is_a_unlockable="true" inherit_override="true" global_value="akcar_paint_4">
+		<adds>
+			<value_node value="wpn_fps_snp_sierra458_ap_switch"/>
+		</adds>
+		<stats damage="0" extra_ammo="-2" concealment="2" recoil="0" spread="1" reload="3" total_ammo_mod="0"/>
+		<custom_stats/>
+		<pcs/>	
+		<bullet_objects prefix="g_bullet_" amount="3"/>		
+	</WeaponMod>
+
+<!-- GFL Beowulf Set -->
+
+	<WeaponMod id="wpn_fps_snp_sierra458_body_gfl" based_on="wpn_fps_m4_lower_reciever" type="exclusive_set" unit="units/mods/weapons/wpn_fps_snp_sierra458_gfl/wpn_fps_snp_sierra458_fg_gfl" third_unit="units/mods/weapons/wpn_third_snp_sierra458_gfl/wpn_third_snp_sierra458_fg_gfl" a_obj="a_fg" drop="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" texture_bundle_folder="mods" hidden="false" is_a_unlockable="true" global_value="akcar_paint_4" has_description="true" desc_id="bm_wp_wpn_fps_snp_sierra458_body_gfl_desc">
+		<stats damage="-7" extra_ammo="0" concealment="-2" recoil="-4" spread="-3" reload="0"/>
+		<custom_stats fire_rate_multiplier="1.5"/>
+		<override>
+			<wpn_fps_upg_m4_s_standard unit="units/mods/weapons/wpn_fps_snp_sierra458_msecho/wpn_fps_snp_sierra458_s_msecho" />
+			<wpn_fps_upg_m4_s_standard_vanilla unit="units/mods/weapons/wpn_fps_snp_sierra458_msecho/wpn_fps_snp_sierra458_s_msecho" />
+			<wpn_fps_upg_m4_g_standard unit="units/mods/weapons/wpn_fps_snp_sierra458_gfl/wpn_fps_snp_sierra458_g_gfl"/>
+			<wpn_fps_upg_m4_g_standard_vanilla unit="units/mods/weapons/wpn_fps_snp_sierra458_gfl/wpn_fps_snp_sierra458_g_gfl"/>
+
+			<wpn_fps_snp_sierra458_b_standard unit="units/mods/weapons/wpn_fps_snp_sierra458_gfl/wpn_fps_snp_sierra458_b_gfl" third_unit="units/mods/weapons/wpn_third_snp_sierra458_gfl/wpn_third_snp_sierra458_b_gfl"/>
+			<wpn_fps_snp_sierra458_b_ecr unit="units/mods/weapons/wpn_fps_snp_sierra458_gfl/wpn_fps_snp_sierra458_b_gfl_short" third_unit="units/mods/weapons/wpn_third_snp_sierra458_gfl/wpn_third_snp_sierra458_b_gfl_short"/>
+			
+			<wpn_fps_snp_sierra458_fg_standard unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+			<wpn_fps_snp_sierra458_lower unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy">
+				<adds>
+					<value_node value="wpn_fps_m4_lower_reciever"/>					
+				</adds>
+			</wpn_fps_snp_sierra458_lower>
+			<wpn_fps_snp_sierra458_upper unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy">
+				<override/>		
+				<forbids/>
+				<adds>
+					<value_node value="wpn_fps_m4_upper_reciever_round"/>					
+				</adds>
+			</wpn_fps_snp_sierra458_upper>
+			
+			<wpn_fps_m4_upper_reciever_round unit="units/mods/weapons/wpn_fps_snp_sierra458_ecr/wpn_fps_snp_sierra458_upper_ecr">
+				<override/>	
+			</wpn_fps_m4_upper_reciever_round>	
+			
+			<wpn_fps_m4_lower_reciever unit="units/mods/weapons/wpn_fps_snp_sierra458_siege/wpn_fps_snp_sierra458_lower_siege"/>	
+
+			<wpn_fps_amcar_bolt_standard unit="units/payday2/weapons/wpn_fps_ass_m4_pts/wpn_fps_m4_bolt_edge"/>
+			<wpn_fps_m4_uupg_draghandle unit="units/pd2_dlc_akm4_modpack/weapons/wpn_fps_m4_uupg_draghandle_core/wpn_fps_m4_uupg_draghandle_core" third_unit="units/pd2_dlc_akm4_modpack/weapons/wpn_third_m4_uupg_draghandle_core/wpn_third_m4_uupg_draghandle_core"/>
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="exclusive_set" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_ass_smg_sho_surefire parent="exclusive_set" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_ass_peq15 parent="exclusive_set" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_ass_laser parent="exclusive_set" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_ass_utg parent="exclusive_set" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_dbal_laser parent="exclusive_set" a_obj="a_fl"/>
+			<wpn_fps_smg_hajk_vg_moe parent="exclusive_set" a_obj="a_vg"/>				
+		</override>	
+		<adds>
+			<value_node value="wpn_fps_smg_hajk_vg_moe"/>			
+		</adds>
+		<forbids>
+			<value_node value="wpn_fps_upg_sierra458_fg_edge"/>	
+			<value_node value="wpn_fps_upg_sierra458_fg_shepheard"/>
+			<value_node value="wpn_fps_snp_sierra458_fg_mk12"/>	
+			<value_node value="wpn_fps_snp_sierra458_fg_hera"/>
+			<value_node value="wpn_fps_snp_sierra458_fg_tti"/>		
+			<value_node value="wpn_fps_snp_sierra458_fg_desert"/>	
+
+			<value_node value="wpn_fps_snp_sierra458_b_old"/>	
+			
+			<value_node value="wpn_fps_addon_ris"/>	
+
+			<value_node value="wpn_fps_upg_m4_g_hgrip"/>
+            <value_node value="wpn_fps_upg_m4_g_mgrip"/>
+			<value_node value="wpn_fps_upg_m4_g_ergo"/>
+			<value_node value="wpn_fps_upg_m4_g_sniper"/>
+			<value_node value="wpn_fps_snp_tti_g_grippy"/>
+			<value_node value="wpn_fps_sho_sko12_body_grip"/>
+			<value_node value="wpn_fps_upg_g_m4_surgeon"/>
+			<value_node value="wpn_fps_snp_victor_g_mod3"/>
+			<value_node value="wpn_fps_m4_uupg_g_billet"/>
+
+			<value_node value="wpn_fps_snp_sierra458_upper_milspec"/>
+			<value_node value="wpn_fps_snp_sierra458_lower_milspec"/>		
+			<value_node value="wpn_fps_snp_sierra458_upper_custom"/>
+			<value_node value="wpn_fps_snp_sierra458_lower_custom"/>					
+		</forbids>
+		<pcs/>	
+	</WeaponMod>
+
+<!-- FNV Survivalist Rifle Set -->
+
+	<WeaponMod id="wpn_fps_snp_sierra458_body_fnv" based_on="wpn_fps_m4_lower_reciever" type="exclusive_set" unit="units/mods/weapons/wpn_fps_snp_sierra458_fnv/wpn_fps_snp_sierra458_fg_fnv" third_unit="units/mods/weapons/wpn_third_snp_sierra458_fnv/wpn_third_snp_sierra458_fg_fnv" a_obj="a_fg" drop="false" inherit_parts_adds="false" inherit_parts_override="false" inherit_override="false" inherit_parts_forbids="true" texture_bundle_folder="mods" hidden="false" is_a_unlockable="true" global_value="akcar_paint_4" has_description="true" desc_id="bm_wp_wpn_fps_snp_sierra458_body_fnv_desc">
+		<stats damage="0" total_ammo_mod="4" concealment="-3" recoil="3" spread="2" reload="0"/>
+		<override>
+			<wpn_fps_m16_s_solid unit="units/mods/weapons/wpn_fps_snp_sierra458_fnv/wpn_fps_snp_sierra458_s_fnv" />
+			<wpn_fps_upg_m4_g_standard unit="units/mods/weapons/wpn_fps_snp_sierra458_fnv/wpn_fps_snp_sierra458_g_fnv"/>
+			<wpn_fps_upg_m4_g_standard_vanilla unit="units/mods/weapons/wpn_fps_snp_sierra458_fnv/wpn_fps_snp_sierra458_g_fnv"/>
+
+			<wpn_fps_snp_sierra458_b_standard unit="units/mods/weapons/wpn_fps_snp_sierra458_fnv/wpn_fps_snp_sierra458_b_fnv" third_unit="units/mods/weapons/wpn_third_snp_sierra458_fnv/wpn_third_snp_sierra458_b_fnv"/>
+			<wpn_fps_snp_sierra458_fg_standard unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy">
+				<override/>
+				<adds/>
+			</wpn_fps_snp_sierra458_fg_standard>
+			<wpn_fps_snp_sierra458_lower unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+			<wpn_fps_snp_sierra458_upper unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy">
+				<override/>		
+				<forbids/>
+			</wpn_fps_snp_sierra458_upper>
+			<wpn_fps_snp_sierra458_lower_siege unit="units/mods/weapons/wpn_fps_snp_sierra458_fnv/wpn_fps_snp_sierra458_lower_fnv"/>
+
+			<wpn_fps_amcar_bolt_standard unit="units/payday2/weapons/wpn_fps_ass_m4_pts/wpn_fps_m4_bolt_edge"/>
+			<wpn_fps_m4_uupg_draghandle unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_fps_ass_tecci_dh_standard" third_unit="units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci_pts/wpn_third_ass_tecci_dh_standard"/>
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox parent="exclusive_set" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_ass_smg_sho_surefire parent="exclusive_set" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_ass_peq15 parent="exclusive_set" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_ass_laser parent="exclusive_set" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_ass_utg parent="exclusive_set" a_obj="a_fl"/>
+        	<wpn_fps_upg_fl_dbal_laser parent="exclusive_set" a_obj="a_fl"/>
+			<wpn_fps_addon_ris parent="exclusive_set" a_obj="a_fl"/>
+        	<wpn_fps_snp_sierra458_os_siege a_obj="a_os"/>
+			<wpn_fps_upg_sierra458_o_backup unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy">
+				<adds>
+					<value_node value="wpn_fps_snp_sierra458_upper_fnv"/>
+				</adds>				
+				<stance_mod>
+					<wpn_fps_snp_sierra458 translation="0.0 -2 0"  rotation="0 -0 -0 1"/>
+				</stance_mod>
+				<override>
+					<wpn_fps_snp_sierra458_upper_ecr unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+				</override>
+			</wpn_fps_upg_sierra458_o_backup>
+			<wpn_fps_snp_sierra458_o_down unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>				
+		</override>	
+		<adds>		
+			<value_node value="wpn_fps_snp_sierra458_os_siege"/>
+			<value_node value="wpn_fps_snp_sierra458_upper_ecr"/>		
+			<value_node value="wpn_fps_snp_sierra458_lower_siege"/>		
+		</adds>	
+		<forbids>
+			<value_node value="wpn_fps_upg_sierra458_fg_edge"/>	
+			<value_node value="wpn_fps_upg_sierra458_fg_shepheard"/>
+			<value_node value="wpn_fps_snp_sierra458_fg_mk12"/>	
+			<value_node value="wpn_fps_snp_sierra458_fg_hera"/>
+			<value_node value="wpn_fps_snp_sierra458_fg_tti"/>				
+			<value_node value="wpn_fps_snp_sierra458_fg_desert"/>	
+
+			<value_node value="wpn_fps_snp_sierra458_b_ecr"/>	
+			<value_node value="wpn_fps_snp_sierra458_b_old"/>
+
+            <value_node value="wpn_fps_upg_m4_g_hgrip"/>
+            <value_node value="wpn_fps_upg_m4_g_mgrip"/>
+			<value_node value="wpn_fps_upg_m4_g_ergo"/>
+			<value_node value="wpn_fps_upg_m4_g_sniper"/>
+			<value_node value="wpn_fps_snp_tti_g_grippy"/>
+			<value_node value="wpn_fps_sho_sko12_body_grip"/>
+			<value_node value="wpn_fps_upg_g_m4_surgeon"/>
+			<value_node value="wpn_fps_snp_victor_g_mod3"/>
+			<value_node value="wpn_fps_m4_uupg_g_billet"/>		
+
+			<value_node value="wpn_fps_snp_sierra458_upper_milspec"/>
+			<value_node value="wpn_fps_snp_sierra458_lower_milspec"/>		
+			<value_node value="wpn_fps_snp_sierra458_upper_custom"/>
+			<value_node value="wpn_fps_snp_sierra458_lower_custom"/>					
+		</forbids>
+		<pcs/>	
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_snp_sierra458_upper_fnv" based_on="wpn_fps_amcar_uupg_body_upperreciever" type="upper_reciever" unit="units/mods/weapons/wpn_fps_snp_sierra458_fnv/wpn_fps_snp_sierra458_upper_fnv" drop="false" is_a_unlockable="false"/>
+
+<!-- The gun itself -->	
+
+	<Weapon unlock_level="45">
+		<weapon id="sierra458" based_on="tti" weapon_hold="m4" has_description="true" desc_id="bm_w_sierra458_desc" tactical_reload="1" texture_bundle_folder="mods" NR_CLIPS_MAX="5" CLIP_AMMO_MAX="10" armor_piercing_chance="0" can_shoot_through_enemy="false" can_shoot_through_shield="false" can_shoot_through_wall="false" global_value="akcar_paint_4" muzzleflash="effects/payday2/particles/weapons/50cal_auto" muzzleflash_silenced="effects/payday2/particles/weapons/big_762_auto_fps" shell_ejection="effects/payday2/particles/weapons/shells/shell_shak" FIRE_MODE="single" CAN_TOGGLE_FIREMODE="false">
+			<use_data selection_index="2"/>
+				<categories>
+					<value_node value="snp"/>
+				</categories>
+			<stats damage="62" spread="14" spread_moving="14" recoil="8" concealment="17" />
+			<stats_modifiers damage="2" />
+			<fire_mode_data fire_rate="0.3" burst_cooldown="0.1" />
+			<timers reload_not_empty="2.45" reload_empty="3.6"/>
+			<AMMO_PICKUP>
+				<value_node value="3"/>
+				<value_node value="4"/>
+			</AMMO_PICKUP>
+			<kick>
+				<standing>
+					<value_node value="1.6"/>
+					<value_node value="2"/>
+					<value_node value="-0.3"/>
+					<value_node value="0.2"/>
+				</standing>
+				<crouching>
+					<value_node value="1.6"/>
+					<value_node value="2"/>
+					<value_node value="-0.3"/>
+					<value_node value="0.2"/>
+				</crouching>
+				<steelsight>
+					<value_node value="1.6"/>
+					<value_node value="2"/>
+					<value_node value="-0.3"/>
+					<value_node value="0.2"/>
+				</steelsight>
+			</kick>
+			<sounds fire="m14_fire" fire_single="m14_fire" fire_auto="m14_fire_loop" stop_fire="scar_stop" use_fix="true"/>
+			<animations reload_name_id="sierra458" equip_id="equip_sierra458" recoil_steelsight="true"/>
+		</weapon>
+		<factory id="wpn_fps_snp_sierra458" unit="units/mods/weapons/wpn_fps_snp_sierra458/wpn_fps_snp_sierra458" stock_adapter="wpn_fps_snp_sierra458_s_adapter">
+			<animations reload="reload" fire="recoil" fire_steelsight="recoil" reload_not_empty="reload_not_empty" magazine_empty="last_recoil"/>
+			<adds>
+				<wpn_fps_amcar_bolt_standard>
+					<value_node value="wpn_fps_snp_sierra458_o_down"/>
+				</wpn_fps_amcar_bolt_standard>			
+			</adds>		
+			
+			<override>
+				<wpn_fps_upg_o_xpsg33_magnifier>
+					<forbids>
+						<value_node value="wpn_fps_snp_sierra458_o_down"/>
+					</forbids>
+				</wpn_fps_upg_o_xpsg33_magnifier>	
+
+				<wpn_fps_upg_o_sig>
+					<forbids>
+						<value_node value="wpn_fps_snp_sierra458_o_down"/>
+					</forbids>
+				</wpn_fps_upg_o_sig>							
+	
+				<wpn_fps_upg_o_box>
+					<forbids>
+						<value_node value="wpn_fps_snp_sierra458_o_down"/>
+					</forbids>
+				</wpn_fps_upg_o_box>	
+	
+				<wpn_fps_upg_sierra458_o_backup>
+					<forbids>
+						<value_node value="wpn_fps_snp_sierra458_o_down"/>
+					</forbids>
+				</wpn_fps_upg_sierra458_o_backup>	
+				
+				<wpn_fps_smg_olympic_s_short>
+					<stats concealment="3" recoil="-2"/>
+				</wpn_fps_smg_olympic_s_short>	
+			</override>
+			<default_blueprint>
+				<value_node value="wpn_fps_snp_sierra458_upper"/>
+				<value_node value="wpn_fps_snp_sierra458_b_standard"/>
+				<value_node value="wpn_fps_snp_sierra458_lower"/>
+				<value_node value="wpn_fps_amcar_bolt_standard"/>
+				<value_node value="wpn_fps_m4_uupg_draghandle"/>
+				<value_node value="wpn_fps_upg_o_shortdot"/>
+				<value_node value="wpn_fps_snp_sierra458_fg_standard"/>
+				<value_node value="wpn_fps_upg_m4_g_standard_vanilla"/>
+				<value_node value="wpn_fps_snp_sierra458_m_standard"/>
+				<value_node value="wpn_fps_upg_m4_s_standard_vanilla"/>
+				<value_node value="wpn_fps_snp_sierra458_o_down"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_snp_sierra458_upper"/>
+				<value_node value="wpn_fps_snp_sierra458_b_standard"/>
+				<value_node value="wpn_fps_snp_sierra458_lower"/>
+				<value_node value="wpn_fps_amcar_bolt_standard"/>
+				<value_node value="wpn_fps_m4_uupg_draghandle"/>
+				<value_node value="wpn_fps_upg_o_shortdot"/>
+				<value_node value="wpn_fps_snp_sierra458_fg_standard"/>
+				<value_node value="wpn_fps_upg_m4_g_standard_vanilla"/>
+				<value_node value="wpn_fps_snp_sierra458_m_standard"/>
+				<value_node value="wpn_fps_upg_m4_s_standard_vanilla"/>
+				<value_node value="wpn_fps_snp_sierra458_o_down"/>
+				
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/>		
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+				<value_node value="wpn_fps_upg_o_sig"/>
+
+				<value_node value="wpn_fps_upg_o_45iron"/>
+				<value_node value="wpn_fps_upg_o_45rds"/>
+				<value_node value="wpn_fps_upg_o_45rds_v2"/>
+				<value_node value="wpn_fps_upg_o_45steel"/>
+
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_tf90"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_poe"/>		
+				<value_node value="wpn_fps_upg_o_fc1"/>
+				<value_node value="wpn_fps_upg_o_uh"/>
+				<value_node value="wpn_fps_upg_o_bmg"/>
+				<value_node value="wpn_fps_upg_o_hamr"/>
+				<value_node value="wpn_fps_upg_o_atibal"/>
+				<value_node value="wpn_fps_upg_o_health"/>
+				<value_node value="wpn_fps_upg_sierra458_o_backup"/>
+				<value_node value="wpn_fps_upg_o_leupold"/>
+				<value_node value="wpn_fps_upg_o_box"/>
+				<value_node value="wpn_fps_upg_o_northtac"/>
+				<value_node value="wpn_fps_upg_o_schmidt"/>
+
+				<value_node value="wpn_fps_snp_sierra458_ns_scout"/>
+				<value_node value="wpn_fps_snp_sierra458_ns_comp"/>
+				<value_node value="wpn_fps_snp_sierra458_ns_tank"/>
+
+				<value_node value="wpn_fps_snp_sierra458_b_old"/>
+				<value_node value="wpn_fps_snp_sierra458_b_ecr"/>
+
+				<value_node value="wpn_fps_snp_sierra458_body_msecho"/>
+				<value_node value="wpn_fps_snp_sierra458_body_ecr"/>
+				<value_node value="wpn_fps_snp_sierra458_body_tcr"/>
+				<value_node value="wpn_fps_snp_sierra458_body_siege"/>
+				<value_node value="wpn_fps_snp_sierra458_body_gfl"/>
+				<value_node value="wpn_fps_snp_sierra458_body_fnv"/>
+
+				<value_node value="wpn_fps_upg_sierra458_fg_edge"/>
+				<value_node value="wpn_fps_upg_sierra458_fg_shepheard"/>
+				<value_node value="wpn_fps_snp_sierra458_fg_mk12"/>
+				<value_node value="wpn_fps_snp_sierra458_fg_ecr"/>
+				<value_node value="wpn_fps_snp_sierra458_fg_hera"/>
+				<value_node value="wpn_fps_snp_sierra458_fg_tti"/>
+				<value_node value="wpn_fps_snp_sierra458_fg_desert"/>
+
+				<value_node value="wpn_fps_snp_sierra458_m_d60"/>
+				<value_node value="wpn_fps_snp_sierra458_m_beowulf"/>
+				<value_node value="wpn_fps_snp_sierra458_m_bush"/>
+				<value_node value="wpn_fps_snp_sierra458_m_ecr"/>
+				<value_node value="wpn_fps_snp_sierra458_m_treefiddy"/>
+				<value_node value="wpn_fps_snp_sierra458_m_quick"/>
+				<value_node value="wpn_fps_snp_sierra458_m_transparent"/>
+				<value_node value="wpn_fps_snp_sierra458_m_siege"/>
+				<value_node value="wpn_fps_snp_sierra458_m_beoplus"/>
+				<value_node value="wpn_fps_snp_sierra458_m_short"/>
+				<value_node value="wpn_fps_snp_sierra458_m_beowulf_short"/>
+
+				<value_node value="wpn_fps_snp_sierra458_upper_milspec"/>
+				<value_node value="wpn_fps_snp_sierra458_upper_custom"/>				
+				<value_node value="wpn_fps_snp_sierra458_lower_milspec"/>
+				<value_node value="wpn_fps_snp_sierra458_lower_custom"/>
+
+				<value_node value="wpn_fps_upg_m4_s_pts"/>
+				<value_node value="wpn_fps_upg_m4_s_crane"/>
+				<value_node value="wpn_fps_upg_m4_s_mk46"/>
+				<value_node value="wpn_fps_upg_m4_s_ubr"/>
+				<value_node value="wpn_fps_snp_tti_s_vltor"/>
+				<value_node value="wpn_fps_smg_olympic_s_short"/>				 	
+				<value_node value="wpn_fps_sho_sko12_stock"/>
+				<value_node value="wpn_fps_m4_uupg_s_fold"/>
+				<value_node value="wpn_fps_snp_victor_s_mod0"/>
+				<value_node value="wpn_fps_m4_uupg_s_zulu"/>
+				<value_node value="wpn_fps_snp_sierra458_s_solid"/>
+
+                <value_node value="wpn_fps_upg_m4_g_hgrip"/>
+                <value_node value="wpn_fps_upg_m4_g_mgrip"/>
+                <value_node value="wpn_fps_upg_m4_g_ergo"/>
+                <value_node value="wpn_fps_upg_m4_g_sniper"/>
+                <value_node value="wpn_fps_snp_tti_g_grippy"/>
+                <value_node value="wpn_fps_sho_sko12_body_grip"/>
+				<value_node value="wpn_fps_upg_g_m4_surgeon"/>
+				<value_node value="wpn_fps_snp_victor_g_mod3"/>
+				<value_node value="wpn_fps_m4_uupg_g_billet"/>
+
+			<!--<value_node value="wpn_fps_m4_upper_reciever_edge"/>
+				<value_node value="wpn_fps_upg_ass_m4_upper_reciever_ballos"/>
+				<value_node value="wpn_fps_upg_ass_m4_upper_reciever_core"/>
+				<value_node value="wpn_fps_upg_ass_m4_lower_reciever_core"/>
+				<value_node value="wpn_fps_m4_uupg_lower_radian"/>
+				<value_node value="wpn_fps_m4_uupg_upper_radian"/>
+				<value_node value="wpn_fps_m4_uupg_draghandle_ballos"/>
+				<value_node value="wpn_fps_m4_uupg_draghandle_core"/>-->
+
+			</uses_parts>
+		</factory>
+		<stance>
+			<standard>
+				<shoulders rotation="0 -0 0 -1" translation="-1 -2 0"/>
+			</standard>
+			<crouched>
+				<shoulders rotation="0 -0 0 -1" translation="-2 -2 -1"/>
+			</crouched>
+			<steelsight>
+				<shoulders rotation="-0.000745307 0.00548974 0.000938344 -0.999984" translation="-10.745 -9.005 1.332"/>
+			</steelsight>
+		</stance>
+	</Weapon>
+
+<!--<Sounds directory="assets/sound">
+		<sound id="sierra458_fire" path="sierra458_fire.ogg" prefix="regular"/>
+		<sound id="sierra458_fire" path="sierra458_fire.ogg" prefix="regular_b"/>
+		<sound id="sierra458_fire" path="sierra458_supp.ogg" prefix="suppressed_a"/>
+		<sound id="sierra458_fire" path="sierra458_supp.ogg" prefix="suppressed_b"/>
+		<sound id="sierra458_fire" path="sierra458_supp.ogg" prefix="suppressed_c"/>
+		<sound id="sierra458_stop" path="sierra458_stop.ogg" prefix="regular"/>			
+		<sound id="sierra458_stop" path="sierra458_stop.ogg" prefix="regular_b"/>	
+		<sound id="sierra458_stop" path="sierra458_stop_supp.ogg" prefix="suppressed_a"/>
+		<sound id="sierra458_stop" path="sierra458_stop_supp.ogg" prefix="suppressed_b"/>
+		<sound id="sierra458_stop" path="sierra458_stop_supp.ogg" prefix="suppressed_c"/> 
+		
+		<sound id="ecr_fire" path="ecr_fire.ogg" prefix="regular"/>
+		<sound id="ecr_fire" path="ecr_fire.ogg" prefix="regular_b"/>
+		<sound id="ecr_fire" path="sierra458_supp.ogg" prefix="suppressed_a"/>
+		<sound id="ecr_fire" path="sierra458_supp.ogg" prefix="suppressed_b"/>
+		<sound id="ecr_fire" path="sierra458_supp.ogg" prefix="suppressed_c"/>		
+		<sound id="ecr_stop" path="sierra458_stop.ogg" prefix="regular"/>			
+		<sound id="ecr_stop" path="sierra458_stop.ogg" prefix="regular_b"/>
+		<sound id="ecr_stop" path="sierra458_stop_supp.ogg" prefix="suppressed_a"/>
+		<sound id="ecr_stop" path="sierra458_stop_supp.ogg" prefix="suppressed_b"/>
+		<sound id="ecr_stop" path="sierra458_stop_supp.ogg" prefix="suppressed_c"/> 
+	</Sounds>-->
+
+	<AddFiles directory="assets" auto_generate="true"/>
+
+	<Hooks directory="hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="weaponfactorytweakdata_458_sc.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/> 
+	</Hooks>
+
+</mod>

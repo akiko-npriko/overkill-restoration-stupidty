@@ -1,0 +1,38 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_ass_g7_pts/wpn_fps_ass_g7_mag" orientation_object="rp_g7_mag" />
+	<animations>  
+		<animation_group name="reload" enabled="false" >
+			<object name="mag_align_reload" enabled="true" />
+			<object name="spare_mag_align_reload" enabled="true" />
+		</animation_group>  
+		<animation_group name="reload_not_empty" enabled="false" >
+			<object name="mag_align_reload_tactical" enabled="true" />
+			<object name="spare_mag_align_reload_tactical" enabled="true" />
+		</animation_group>
+    </animations>
+	<graphics>
+		<object name="g_shell_1" enabled="true" />
+		<object name="g_shell_2" enabled="true" />
+		<object name="g_shell_3" enabled="true" />
+		<object name="g_shell_4" enabled="true" />
+		<object name="g_shell_5" enabled="true" />
+		<object name="g_shell_6" enabled="true" />
+		<object name="g_shell_7" enabled="true" />
+		<object name="g_shell_8" enabled="true" />
+		<object name="g_shell_9" enabled="true" />
+		<object name="g_shell_10" enabled="true" />
+		<object name="g_shell_11" enabled="true" />
+		<object name="g_shell_12" enabled="true" />
+		<object name="g_shell_13" enabled="true" />
+		<object name="g_shell_14" enabled="true" />
+		<object name="g_shell_15" enabled="true" />
+		<object name="g_shell_16" enabled="true" />
+		<object name="g_shell_17" enabled="true" />
+		<object name="g_shell_18" enabled="true" />
+		<object name="g_shell_19" enabled="true" />
+		<object name="g_shell_20" enabled="true" />
+		<object name="g_mag_main" enabled="true" />
+		<object name="g_mag_spare" enabled="true" />
+		<object name="g_bullets_spare" enabled="true" />
+	</graphics>
+</dynamic_object>

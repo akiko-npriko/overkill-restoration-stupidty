@@ -1,0 +1,17 @@
+<materials version="3" group="weapon_group">
+	<material name="mtr_t9damagesemi_heavy" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+				   <diffuse_texture		  file="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9damage_semi_heavy_df"  />
+				 <bump_normal_texture     file="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9damage_semi_heavy_nm"  />
+				<material_texture	 	  file="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9damage_semi_heavy_gsma" />
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/weapon_metal_cubemap"/>		
+    </material>	
+
+	<material name="mtr_t9damagesemi_barrel_base" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+				   <diffuse_texture		  file="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9damage_semi_barrel_base_df"  />
+				 <bump_normal_texture     file="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9damage_semi_barrel_base_nm"  />
+				<material_texture	 	  file="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/t9damage_semi_barrel_base_gsma" />
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_ass_t9british_pts/textures/weapon_metal_cubemap"/>		
+    </material>	
+
+
+</materials>
