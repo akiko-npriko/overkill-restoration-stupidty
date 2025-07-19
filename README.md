@@ -353,6 +353,6 @@ Yanked coding from... (intergrated into mod)
 	 
 # Gunsss
  - Do later there are too many i hate myself...
- 
+ - AN-92 (https://modworkshop.net/mod/20187)
  - Silent Killer - High Standard HDM (https://modworkshop.net/mod/25186)
  - Helldivers 2 - LAS-16 Sickle (https://modworkshop.net/mod/50720)
