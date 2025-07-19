@@ -5590,7 +5590,7 @@ Hooks:Add("LocalizationManagerPostInit", "SC_Localization_Skills_Eng", function(
 			--[[   CONTROLLER SUBTREE   ]]--
 				--Cable Guy
 				["menu_triathlete_beta_sc"] = "Cable Guy",
-				["menu_triathlete_beta_desc_sc"] = "BASIC: #{owned}#$basic##\nYou have #{skill_color}#$skill_value_b1.## cable ties.\n\nACE: #{owned}#$pro##\nYou now have #{skill_color}#100## cable ties.\n\nYour chance to pick up cable ties from ammo boxes is increased to #{skill_color}#30%.##",
+				["menu_triathlete_beta_desc_sc"] = "BASIC: #{owned}#$basic##\nYou have #{skill_color}#$skill_value_b1## cable ties.\n\nACE: #{owned}#$pro##\nYou now have #{skill_color}#100## cable ties.\n\nYour chance to pick up cable ties from ammo boxes is increased to #{skill_color}#30%.##",
 				
 				--["menu_triathlete_beta_desc_sc"] = "BASIC: #{owned}#$basic##\nYour supply of cable ties is increased by #{skill_color}#$skill_value_b1.##\n\nACE: #{owned}#$pro##\nYour supply of cable ties is increased by an additional #{skill_color}#$skill_value_p1.##\n\nYour chance to pick up cable ties from ammo boxes is increased to #{skill_color}#30%.##",
 
