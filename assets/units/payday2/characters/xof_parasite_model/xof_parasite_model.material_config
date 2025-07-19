@@ -1,0 +1,50 @@
+<materials version="3" group="xof_parasite_model">
+	<material name="mtr_body" render_template="generic:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:RL_COPS:SKINNED_3WEIGHTS" version="2">
+		<diffuse_texture file="units/payday2/characters/xof_parasite_model/material/parasite_body_df"/>
+		<material_texture file="units/payday2/characters/xof_parasite_model/material/parasite_body_gsma"/>
+		<bump_normal_texture file="units/payday2/characters/xof_parasite_model/material/parasite_body_nm"/>
+	</material>
+	<material name="mtr_head" render_template="generic:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:RL_COPS:SKINNED_3WEIGHTS" version="2">
+		<diffuse_texture file="units/payday2/characters/xof_parasite_model/material/parasite_head_df"/>
+		<material_texture file="units/payday2/characters/xof_parasite_model/material/parasite_head_gsma"/>
+		<bump_normal_texture file="units/payday2/characters/xof_parasite_model/material/parasite_head_nm"/>
+	</material>
+	<material name="mtr_equipment" render_template="generic:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:RL_COPS:SKINNED_3WEIGHTS" version="2">
+		<diffuse_texture file="units/payday2/characters/xof_parasite_model/material/parasite_equipment_df"/>
+		<material_texture file="units/payday2/characters/xof_parasite_model/material/parasite_equipment_gsma"/>
+		<bump_normal_texture file="units/payday2/characters/xof_parasite_model/material/parasite_equipment_nm"/>
+	</material>
+	<material name="mtr_racism_inhibitor" render_template="generic:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:RL_COPS:SKINNED_3WEIGHTS" version="2">
+		<diffuse_texture file="units/payday2/characters/xof_parasite_model/material/parasite_inject_df"/>
+		<material_texture file="units/payday2/characters/xof_parasite_model/material/parasite_inject_gsma"/>
+		<bump_normal_texture file="units/payday2/characters/xof_parasite_model/material/parasite_inject_nm"/>
+	</material>
+	<material name="mtr_patch" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:DOUBLE_SIDED:EXTERNAL_ALPHA_REF:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:OPACITY_TEXTURE:RL_COPS:SKINNED_3WEIGHTS" version="2">
+		<diffuse_texture file="units/payday2/characters/xof_parasite_model/material/dd_patch_df"/>
+		<material_texture file="units/payday2/characters/xof_parasite_model/material/dd_patch_gsma"/>
+		<bump_normal_texture file="units/payday2/characters/xof_parasite_model/material/dd_patch_nm"/>
+		<opacity_texture file="units/payday2/characters/xof_parasite_model/material/dd_patch_op"/>
+		<variable name="alpha_ref" type="scalar" value="0.12"/>
+	</material>
+	<material name="mtr_radio" render_template="generic:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:RL_COPS:SKINNED_3WEIGHTS" version="2">
+		<diffuse_texture file="units/payday2/characters/xof_parasite_model/material/walkman_df"/>
+		<material_texture file="units/payday2/characters/xof_parasite_model/material/walkman_gsma"/>
+		<bump_normal_texture file="units/payday2/characters/xof_parasite_model/material/walkman_nm"/>
+	</material>
+    <material render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE" unique="true" name="mtr_bulldozer" version="2">
+        <bump_normal_texture file="units/pd2_dlc_xmn/characters/xmn_acc_poolrepair/shared_textures/xmn_acc_poolrepair_toolharness_default_nm"/>
+        <diffuse_texture file="units/more_variants/characters/xmn_acc_poolrepair/shared_textures/xmn_acc_poolrepair_toolharness_plumber_df"/>
+		<variable value="0" type="scalar" name="intensity"/>
+    </material>
+    <material render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE" unique="true" name="mtr_bulldozer_lod_1" version="2">
+        <bump_normal_texture file="units/pd2_dlc_xmn/characters/xmn_acc_poolrepair/shared_textures/xmn_acc_poolrepair_toolharness_default_nm"/>
+        <diffuse_texture file="units/more_variants/characters/xmn_acc_poolrepair/shared_textures/xmn_acc_poolrepair_toolharness_plumber_df"/>
+		<variable value="0" type="scalar" name="intensity"/>
+    </material>
+    <material render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE" unique="true" name="mtr_bulldozer_lod_2" version="2">
+        <bump_normal_texture file="units/pd2_dlc_xmn/characters/xmn_acc_poolrepair/shared_textures/xmn_acc_poolrepair_toolharness_default_nm"/>
+        <diffuse_texture file="units/more_variants/characters/xmn_acc_poolrepair/shared_textures/xmn_acc_poolrepair_toolharness_plumber_df"/>
+		<variable value="0" type="scalar" name="intensity"/>
+    </material>
+    <material name="shadow_caster" render_template="shadow_caster_only:SKINNED_1WEIGHT" version="2"/>
+</materials>

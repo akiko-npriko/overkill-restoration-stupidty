@@ -82,6 +82,7 @@ function GameSetup:load_packages()
 	load_difficulty_package("packages/addwarthog")
 	load_difficulty_package("packages/addxofrpg")
 	load_difficulty_package("packages/addusngwarthog")
+	load_difficulty_package("packages/addparasitemodel")
 	
 	--[[
 	if difficulty_index == 4 then
