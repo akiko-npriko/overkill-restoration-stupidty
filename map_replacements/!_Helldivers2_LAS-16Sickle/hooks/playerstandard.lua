@@ -27,12 +27,13 @@ function PlayerStandard:_primary_pewpew_ammo(t, dt)
 				self:_check_stop_shooting()
 				self:_interupt_action_steelsight(t)
 			end
-			primary._primary_regen_rate = 0
+			primary._primary_regen_rate = nil
 		end
 		if primary:clip_empty() then 
 			primary._primary_regenerate_ammo_timer = nil
+			primary._sound_fire:post_event("sickle_cooloff")
 		end
-		if primary:get_ammo_remaining_in_clip() >= 100 then
+		if primary:get_ammo_remaining_in_clip() >= 87 then
 			primary._primary_regenerate_ammo_timer = regen_ammo_time
 		end
 		if primary._primary_regenerate_ammo_timer and not primary:clip_empty() and ((active and not self:_is_reloading()) or (not active)) then
@@ -42,7 +43,7 @@ function PlayerStandard:_primary_pewpew_ammo(t, dt)
 				if not primary._primary_recharge_yell then
 					primary._primary_recharge_yell = true
 					if active then
-						primary._sound_fire:post_event("night_vision_on")
+						primary._sound_fire:post_event("sickle_cooloff")
 					end
 				end
 			end

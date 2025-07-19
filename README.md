@@ -328,3 +328,4 @@ Yanked coding from... (intergrated into mod)
  - Do later there are too many i hate myself...
  
  - Silent Killer - High Standard HDM (https://modworkshop.net/mod/25186)
+ - Helldivers 2 - LAS-16 Sickle (https://modworkshop.net/mod/50720)
