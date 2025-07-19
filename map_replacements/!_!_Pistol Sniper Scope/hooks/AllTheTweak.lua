@@ -4,7 +4,7 @@ local ZoomValue = 1
 -- local ZoomValue = 0.08
 local TargetScopeID = "wpn_fps_upg_o_iuhPistolSniperScope"
 
-local old_get_zoom_fov = PlayerStandard.get_zoom_fov
+--local old_get_zoom_fov = PlayerStandard.get_zoom_fov
 
 -- Texture-related variables
 local ScopePanel = nil                 
@@ -145,6 +145,7 @@ function PlayerStandard:get_zoom_fov(...)
     initialize_scope_overlay()
 
     -- Retrieve the original zoom FOV
+	local old_get_zoom_fov = PlayerStandard.get_zoom_fov
     local get_zoom_fov = old_get_zoom_fov(self, ...)
 
     -- Validate equipped weapon and scope

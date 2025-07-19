@@ -1329,8 +1329,8 @@ function restoration:mission_script_add()
 if not ThinkFaster then
     _G.ThinkFaster = {}
     
-    ThinkFaster.ModPath = ModPath
-    ThinkFaster.SavePath = SavePath .. "thinkfaster.json"
+    --ThinkFaster.ModPath = ModPath
+    --ThinkFaster.SavePath = SavePath .. "thinkfaster.json"
 
     ThinkFaster.settings = {
         task_throughput = 500,
@@ -1362,19 +1362,20 @@ if not ThinkFaster then
     function ThinkFaster:refresh_current_throughput()
         ThinkFaster.current_throughput = ThinkFaster.settings.task_throughput
 
-        if self.settings.tailored_throughput_enabled then
+        if ThinkFaster.settings.tailored_throughput_enabled then
             -- Check if the current job needs a different throughput than the default
             local job = Global.level_data and Global.level_data.level_id
-            if job and self.heist_throughput_definitions[job] then
-                local name = self.heist_throughput_definitions[job]
-                if self.settings["tailored_throughput_" .. name] then
-                    ThinkFaster.current_throughput = self.settings["tailored_throughput_" .. name]
+            if job and ThinkFaster.heist_throughput_definitions[job] then
+                local name = ThinkFaster.heist_throughput_definitions[job]
+                if ThinkFaster.settings["tailored_throughput_" .. name] then
+                    ThinkFaster.current_throughput = ThinkFaster.settings["tailored_throughput_" .. name]
                 end
             end
         end
     end
 
     -- Load menu settings
+	--[[
     function ThinkFaster:Load()
         local file = io.open(self.SavePath, 'r')
         if file then
@@ -1397,7 +1398,8 @@ if not ThinkFaster then
     -- Immediately load/save settings to write a file and to load the settings early
     dofile(ModPath .. "loadconfig.lua")
     ThinkFaster:Save()
-
+	
     -- Initialize throughput with the freshly loaded settings
     ThinkFaster:refresh_current_throughput()
+	]]
 end

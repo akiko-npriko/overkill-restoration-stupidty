@@ -1,3 +1,4 @@
+dofile(ModPath .. "core.lua")
 function GameSetup:load_packages()
 	Setup.load_packages(self)
 
@@ -76,7 +77,8 @@ function GameSetup:load_packages()
 	--Note to self:
 		--<Package id="packages/akiko_misc" file="packages/akiko_package/addmisc.xml"/>
 		--USE PACKAGE ID AND NOT FILE LOCATION OR ASSETS ARE NEVER LOADED!!!
-	
+	-- Initialize throughput with the freshly loaded settings
+    ThinkFaster:refresh_current_throughput()
 	load_difficulty_package("packages/akiko_misc")
 	
 	--[[
