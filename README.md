@@ -11,6 +11,15 @@ Note: this is an older verison (gold edition kinda) of FanScot stuff
 
 # Femboi Changes:
 
+Update 1.5
+ - The Small Throwable Update
+	- HD2 Offensive (Stratagems)
+	- Cluster Bomb
+	- First-Aid-Kit-Bomb
+	- Poison Kunai
+	- Brick
+	- Pocket Sand
+
 Update 1.1???
 - Side Units bleh
 	- XOF Units from Metal Gear
@@ -323,6 +332,20 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/51971
  - Hostages Extend Break Time
 	- https://modworkshop.net/mod/50420
+ - HD2 Offensive (Stratagems)
+	- https://modworkshop.net/mod/52692
+ - Throwables Module
+	- https://modworkshop.net/mod/21303
+ - Cluster Bomb
+	- https://modworkshop.net/mod/21202
+ - First-Aid-Kit-Bomb
+	- https://modworkshop.net/mod/21316
+ - Poison Kunai
+	- https://modworkshop.net/mod/21367
+ - Brick
+	- https://modworkshop.net/mod/36470
+ - Pocket Sand
+	- https://modworkshop.net/mod/40581
 	 
 # Gunsss
  - Do later there are too many i hate myself...

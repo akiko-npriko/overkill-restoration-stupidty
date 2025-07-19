@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<unit type="item" slot="13">
+	<object file="units/pd2_dlc_hd2o/weapons/wpn_prj_hd2offensive/wpn_prj_hd2offensive" />
+	<dependencies>
+		<depends_on bnk="soundbanks/regular_weapon_sfx" />
+	</dependencies>
+	<extensions>
+		<extension name="base" class="HD2OffensiveGrenade" >
+			<var name="_tweak_projectile_entry" value="wpn_prj_hd2offensive_eagle_airstrike" />
+		</extension>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" >
+			<var name="_skip_give_body_collision_damage" value="true" />
+		</extension>
+	</extensions>
+	<sounds>
+		<default_soundsource source="rp_wpn_third_thr_ace" />
+		<soundsource name="snd" source="rp_wpn_third_thr_ace" />
+		<!-- <spawn_event source="snd" name="arrow_flyby" stop_when_killed="true"/> -->
+	</sounds>
+</unit>

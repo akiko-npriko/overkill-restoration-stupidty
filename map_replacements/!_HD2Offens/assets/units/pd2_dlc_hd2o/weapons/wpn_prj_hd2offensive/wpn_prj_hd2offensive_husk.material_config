@@ -1,0 +1,9 @@
+<materials version="3">
+	<material name="card" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_hd2o/weapons/wpn_prj_hd2offensive/textures/wpn_prj_hd2offensive_husk_df" />
+		<bump_normal_texture file="units/pd2_dlc_hd2o/weapons/wpn_prj_hd2offensive/textures/wpn_prj_hd2offensive_husk_nm" />
+		<reflection_texture type="cubemap" global_texture="current_global_texture"/>
+    </material>
+</materials>
+
+
