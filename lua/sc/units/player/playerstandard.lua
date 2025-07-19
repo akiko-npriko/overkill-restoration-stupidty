@@ -51,7 +51,7 @@ end
 function PlayerStandard:cancel_reload()
     if self:_is_reloading() then --i mean the interupt action function already kinds of checks it but better be safe than sorry ig
         local weapon = self._equipped_unit:base()
-        if weapon:clip_not_empty() then --so you dont completely stop the auto reload when trying to shoot forcing you to reload manually
+        if weapon:clip_not_empty() and not weapon:clip_full() then --so you dont completely stop the auto reload when trying to shoot forcing you to reload manually and dont skip reloads
             self:_interupt_action_reload()
             self._ext_camera:play_redirect(self:get_animation("idle")) --cancel the reload animation
         end
