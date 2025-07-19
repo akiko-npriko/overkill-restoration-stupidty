@@ -321,6 +321,8 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/34740
  - HD NPC Marshal Weapons
 	- https://modworkshop.net/mod/51971
+ - Hostages Extend Break Time
+	- https://modworkshop.net/mod/50420
 	 
 # Gunsss
  - Do later there are too many i hate myself...

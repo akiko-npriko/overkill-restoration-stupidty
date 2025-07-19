@@ -10,6 +10,12 @@ local math_floor = math.floor
 local table_contains = table.contains
 local pairs_g = pairs
 
+-- Function to calculate total hostage count
+function GroupAIStateBase:_get_total_hostages()
+    local total_hostages = (self._hostage_headcount or 0)
+    return total_hostages
+end
+
 -- Megaphone events must be appended to this table in order for them to be synced to clients
 GroupAIStateBase.MEGAPHONE_EVENTS = {
 	"mga_killed_civ_1st",
@@ -1135,17 +1141,28 @@ function GroupAIStateBase:_get_anticipation_duration(anticipation_duration_table
 	
 	if not managers.skirmish:is_skirmish() then
 		if is_first or self._assault_number and self._assault_number == 1 then
-			return 45
+			anticipation_duration = 40
+			--return 45
 		elseif self._assault_number and self._assault_number == 2 then
-			return 45
+			anticipation_duration = 40
+			--return 45
 		elseif self._assault_number and self._assault_number == 3 then
-			return 35
+			anticipation_duration = 30
+			--return 35
 		elseif self._assault_number and self._assault_number >= 4 then
-			return 25
+			anticipation_duration = 20
+			--return 25
 		else
-			return 45
+			anticipation_duration = 40
+			--return 45
 		end
-	else
+	--else
+		-- Hostage-based adjustment
+		local hostage_count = self:_get_total_hostages()  -- Get total hostages
+		local hostage_adjustment = hostage_count * 5      -- Add 5 seconds per hostage
+		anticipation_duration = math.clamp(anticipation_duration + hostage_adjustment, 5, 60) -- max 60 seconds
+		--anticipation_duration = anticipation_duration + hostage_adjustment
+		--math.clamp(self._drama_data.amount + amount, 0, 1)
 		return anticipation_duration
 	end
 	
