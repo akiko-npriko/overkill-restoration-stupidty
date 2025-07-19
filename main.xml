@@ -721,7 +721,10 @@
 	<Package id="packages/envcore" file="environments.xml"/>
 	
 	<!--///AKIKO PACKAGE\\\-->
-	<Package id="packages/akiko_misc" file="packages/akiko_package/addmisc.xml"/>
+	<Package id="packages/akikoforcedtoload" file="packages/akiko_package/forcedtoload.xml" use_clbk="self:LoadSCAssets"/>
+	<Package id="packages/addwarthog" file="packages/akiko_package/addwarthog.xml"/>
+	<Package id="packages/addxofrpg" file="packages/akiko_package/addxofrpg.xml"/>
+	<Package id="packages/addusngwarthog" file="packages/akiko_package/addusngwarthog.xml"/>
 
     <!-- ///DIFF PACKAGES AMERICA\\\ -->
     <Package id="packages/normal_sc_america" file="packages/america_diff/normal_sc_america.xml"/>

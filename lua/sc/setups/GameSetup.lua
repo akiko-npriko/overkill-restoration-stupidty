@@ -79,7 +79,9 @@ function GameSetup:load_packages()
 		--USE PACKAGE ID AND NOT FILE LOCATION OR ASSETS ARE NEVER LOADED!!!
 	-- Initialize throughput with the freshly loaded settings
     ThinkFaster:refresh_current_throughput()
-	load_difficulty_package("packages/akiko_misc")
+	load_difficulty_package("packages/addwarthog")
+	load_difficulty_package("packages/addxofrpg")
+	load_difficulty_package("packages/addusngwarthog")
 	
 	--[[
 	if difficulty_index == 4 then
