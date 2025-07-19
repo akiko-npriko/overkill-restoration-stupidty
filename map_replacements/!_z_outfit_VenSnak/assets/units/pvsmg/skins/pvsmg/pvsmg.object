@@ -1,0 +1,224 @@
+<?xml version="1.0" ?>
+<small_prop_object>
+	<diesel materials="units/pvsmg/skins/pvsmg/pvsmg" orientation_object="root_point"/>
+	
+	<!-- Some of the co boxes makes the belt on the hips look buggy, so i changed collision grouping and collider groups lol, it may clip with the legs sometimes, but its better than it looking like shit-->
+	<!-- Also this is all written by me-->
+	<!-- Steal and I will kill you on a thursday!!-->
+	<!-- You may not know which Thursday it will be, but it will be a fucking thursday alright-->
+	<!-- Watch your back, kid!-->
+	<!-- Drink some water :-)-->
+	<!-- Stay frosty-->
+	
+	<bodies>
+		<body name="Hips_belt_01" enabled="true" template="static" collision_class="hair" collision_group="7" collides_with="5" collides_with_mover="false" friction="0.01" keyframed="true" collision_script_quiet_time="0.05" collision_script_tag="small" ray="ignore" lin_damping="0" ang_damping="1" restitution="-10">
+			<object name="Hips"/>
+			<object name="co_box_01" collision_type="box" mass="1" padding="-4"/>
+		</body>
+		<body name="Hips_Belt_02" enabled="true" template="dynamic" collision_class="hair" collision_group="5" collides_with="7" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.05" collision_script_tag="small" ray="ignore" lin_damping="2.3" ang_damping="4" restitution="-10">
+			<object name="SKL_310_BELT_A"/>
+			<object name="co_box_02" collision_type="box" mass="1" padding="-4"/>
+		</body>
+		<body name="Hips_Belt_03" enabled="true" template="dynamic" collision_class="hair" collision_group="5" collides_with="7" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.05" collision_script_tag="small" ray="ignore" lin_damping="2.3" ang_damping="4" restitution="-10">
+			<object name="SKL_311_BELT_B"/>
+			<object name="co_box_03" collision_type="box" mass="1" padding="-4"/>
+		</body>
+		<body name="Hips_Belt_04" enabled="true" template="dynamic" collision_class="hair" collision_group="5" collides_with="7" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.05" collision_script_tag="small" ray="ignore" lin_damping="2.3" ang_damping="4" restitution="-10">
+			<object name="SKL_312_BELT_C"/>
+			<object name="co_box_04" collision_type="box" mass="1" padding="-4"/>
+		</body>
+		<body name="Hips_Belt_05" enabled="true" template="dynamic" collision_class="hair" collision_group="5" collides_with="7" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.05" collision_script_tag="small" ray="ignore" lin_damping="2.3" ang_damping="4" restitution="-10">
+			<object name="SKL_313_BELT_D"/>
+			<object name="co_box_05" collision_type="box" mass="1" padding="-4"/>
+		</body>
+		
+		
+		<body name="Head_Hair_01" enabled="true" template="static" collision_class="hair" collision_group="2" collides_with="1" collides_with_mover="false" friction="0.01" keyframed="true" collision_script_quiet_time="0.05" collision_script_tag="small" ray="ignore" lin_damping="20" ang_damping="25" restitution="0">
+			<object name="Head"/>
+			<object name="co_box_head" collision_type="box" mass="1" padding="-4"/>
+		</body>
+		<body name="Head_Hair_02" enabled="true" template="dynamic" collision_class="hair" collision_group="1" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.05" collision_script_tag="small" ray="ignore" lin_damping="20" ang_damping="25" restitution="0">
+			<object name="SKL_610_HAIR_SIM"/>
+			<object name="co_box_12" collision_type="box"  mass="1" padding="-4"/>
+		</body>
+		<body name="Head_Hair_03" enabled="true" template="dynamic" collision_class="hair" collision_group="1" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.05" collision_script_tag="small" ray="ignore" lin_damping="20" ang_damping="25" restitution="0">
+			<object name="SKL_611_HAIR_SIM"/>
+			<object name="co_box_11" collision_type="box"  mass="1" padding="-4"/>
+		</body>
+		<body name="Head_Hair_04" enabled="true" template="dynamic" collision_class="hair" collision_group="1" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.05" collision_script_tag="small" ray="ignore" lin_damping="2.3" ang_damping="4" restitution="0">
+			<object name="SKL_612_HAIR_SIM"/>
+			<object name="co_box_16" collision_type="box" mass="1" padding="-4"/>
+		</body>
+		<body name="Head_Hair_05" enabled="true" template="dynamic" collision_class="hair" collision_group="1" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.05" collision_script_tag="small" ray="ignore" lin_damping="2.3" ang_damping="4" restitution="0">
+			<object name="SKL_614_HAIR_SIM"/>
+			<object name="co_box_09" collision_type="box" mass="1" padding="-4"/>
+		</body>
+		<body name="Head_Hair_06" enabled="true" template="dynamic" collision_class="hair" collision_group="1" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.05" collision_script_tag="small" ray="ignore" lin_damping="2.3" ang_damping="4" restitution="0">
+			<object name="SKL_615_HAIR_SIM"/>
+			<object name="co_box_08" collision_type="box" mass="1" padding="-4"/>
+		</body>
+		<body name="Head_Hair_07" enabled="true" template="dynamic" collision_class="hair" collision_group="1" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.05" collision_script_tag="small" ray="ignore" lin_damping="2.3" ang_damping="4" restitution="0">
+			<object name="SKL_616_HAIR_SIM"/>
+			<object name="co_box_15" collision_type="box" mass="1" padding="-4"/>
+		</body>
+		<body name="Head_Hair_08" enabled="true" template="dynamic" collision_class="hair" collision_group="1" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.05" collision_script_tag="small" ray="ignore" lin_damping="2.3" ang_damping="4" restitution="0">
+			<object name="SKL_617_HAIR_SIM"/>
+			<object name="co_box_14" collision_type="box" mass="1" padding="-4"/>
+		</body>
+		<body name="Head_Hair_09" enabled="true" template="dynamic" collision_class="hair" collision_group="1" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.05" collision_script_tag="small" ray="ignore" lin_damping="2.3" ang_damping="4" restitution="0">
+			<object name="SKL_618_HAIR_SIM"/>
+			<object name="co_box_13" collision_type="box" mass="1" padding="-4"/>
+		</body>
+		<body name="Head_Hair_10" enabled="true" template="dynamic" collision_class="hair" collision_group="1" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.05" collision_script_tag="small" ray="ignore" lin_damping="2.3" ang_damping="4" restitution="0">
+			<object name="SKL_619_HAIR_SIM"/>
+			<object name="co_box_10" collision_type="box" mass="1" padding="-4"/>
+		</body>
+		
+		
+		
+		
+		
+		
+		<body name="Spine_Wire_01" enabled="false" template="static" collision_class="hair" collision_group="4" collides_with="5" collides_with_mover="false" friction="0.01" keyframed="true" collision_script_quiet_time="0.05" collision_script_tag="small" ray="ignore" lin_damping="0" ang_damping="1" restitution="0">
+			<object name="Spine"/>
+			<object name="co_box_01" collision_type="box" mass="1" padding="-4"/>
+		</body>
+		<body name="Spine_Wire_02" enabled="false" template="dynamic" collision_class="hair" collision_group="5" collides_with="4" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.05" collision_script_tag="small" ray="ignore" lin_damping="2.3" ang_damping="4" restitution="0">
+			<object name="SKL_625_ITEM_SIM"/>
+			<object name="co_box_06" collision_type="box" mass="0.1" padding="1"/>
+		</body>
+		
+		<body name="Spine2_Wire_01" enabled="false" template="static" collision_class="hair" collision_group="4" collides_with="5" collides_with_mover="false" friction="0.01" keyframed="true" collision_script_quiet_time="0.05" collision_script_tag="small" ray="ignore" lin_damping="0" ang_damping="1" restitution="0">
+			<object name="Spine2"/>
+			<object name="co_box_01" collision_type="box" mass="3" padding="1.5"/>
+		</body>
+		<body name="Spine2_Wire_02" enabled="false" template="dynamic" collision_class="hair" collision_group="5" collides_with="4" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.05" collision_script_tag="small" ray="ignore" lin_damping="2.3" ang_damping="4" restitution="0">
+			<object name="SKL_626_ITEM_SIM"/>
+			<object name="co_box_07" collision_type="box" mass="3" padding="1.5"/>
+		</body>
+	</bodies>
+	
+	<!-- Disabled because the wire physics made it droopy and look bad!!!-->
+	
+	<constraints>
+		<constraint type="ragdoll" name="cloth_constraint_1" enabled="true">
+			<param body_a="Head_Hair_01" body_b="Head_Hair_10"/>
+			<param pivot="position:SKL_619_HAIR_SIM"/>
+			<param twist_axis="xaxis:SKL_619_HAIR_SIM" twist_min="-0.1" twist_max="0.1" twist_freedom="0.1"/>
+			<param cone_y="1" cone_z="1" cone_freedom="1"/>
+			<param damping="2" spring_constant="2" min_restitution="0.2" max_restitution="0.2"/>
+		</constraint>
+		<constraint type="ragdoll" name="cloth_constraint_2" enabled="true">
+			<param body_a="Head_Hair_01" body_b="Head_Hair_09"/>
+			<param pivot="position:SKL_618_HAIR_SIM"/>
+			<param twist_axis="xaxis:SKL_618_HAIR_SIM" twist_min="-0.1" twist_max="0.1" twist_freedom="0.1"/>
+			<param cone_y="1" cone_z="1" cone_freedom="1"/>
+			<param damping="2" spring_constant="2" min_restitution="0.2" max_restitution="0.2"/>
+		</constraint>
+		<constraint type="ragdoll" name="cloth_constraint_3" enabled="true">
+			<param body_a="Head_Hair_01" body_b="Head_Hair_08"/>
+			<param pivot="position:SKL_617_HAIR_SIM"/>
+			<param twist_axis="xaxis:SKL_617_HAIR_SIM" twist_min="-0.1" twist_max="0.1" twist_freedom="0.1"/>
+			<param cone_y="1" cone_z="1" cone_freedom="1"/>
+			<param damping="2" spring_constant="2" min_restitution="0.2" max_restitution="0.2"/>
+		</constraint>
+		<constraint type="ragdoll" name="cloth_constraint_4" enabled="true">
+			<param body_a="Head_Hair_01" body_b="Head_Hair_07"/>
+			<param pivot="position:SKL_616_HAIR_SIM"/>
+			<param twist_axis="xaxis:SKL_616_HAIR_SIM" twist_min="-0.1" twist_max="0.1" twist_freedom="0.1"/>
+			<param cone_y="1" cone_z="1" cone_freedom="1"/>
+			<param damping="2" spring_constant="2" min_restitution="0.2" max_restitution="0.2"/>
+		</constraint>
+		<constraint type="ragdoll" name="cloth_constraint_5" enabled="true">
+			<param body_a="Head_Hair_01" body_b="Head_Hair_06"/>
+			<param pivot="position:SKL_615_HAIR_SIM"/>
+			<param twist_axis="xaxis:SKL_615_HAIR_SIM" twist_min="-0.1" twist_max="0.1" twist_freedom="0.1"/>
+			<param cone_y="1" cone_z="1" cone_freedom="1"/>
+			<param damping="2" spring_constant="2" min_restitution="0.2" max_restitution="0.2"/>
+		</constraint>
+		<constraint type="ragdoll" name="cloth_constraint_6" enabled="true">
+			<param body_a="Head_Hair_01" body_b="Head_Hair_05"/>
+			<param pivot="position:SKL_614_HAIR_SIM"/>
+			<param twist_axis="xaxis:SKL_614_HAIR_SIM" twist_min="-0.1" twist_max="0.1" twist_freedom="0.1"/>
+			<param cone_y="1" cone_z="1" cone_freedom="1"/>
+			<param damping="2" spring_constant="2" min_restitution="0.2" max_restitution="0.2"/>
+		</constraint>
+		<constraint type="ragdoll" name="cloth_constraint_7" enabled="true">
+			<param body_a="Head_Hair_01" body_b="Head_Hair_04"/>
+			<param pivot="position:SKL_612_HAIR_SIM"/>
+			<param twist_axis="xaxis:SKL_612_HAIR_SIM" twist_min="-0.1" twist_max="0.1" twist_freedom="0.1"/>
+			<param cone_y="1" cone_z="1" cone_freedom="1"/>
+			<param damping="2" spring_constant="2" min_restitution="0.2" max_restitution="0.2"/>
+		</constraint>
+		<constraint type="ragdoll" name="cloth_constraint_8" enabled="true">
+			<param body_a="Head_Hair_02" body_b="Head_Hair_03"/>
+			<param pivot="position:SKL_611_HAIR_SIM"/>
+			<param twist_axis="xaxis:SKL_611_HAIR_SIM" twist_min="-0.1" twist_max="0.1" twist_freedom="0.1"/>
+			<param cone_y="1" cone_z="1" cone_freedom="1"/>
+			<param damping="2" spring_constant="2" min_restitution="0.2" max_restitution="0.2"/>
+		</constraint>
+		<constraint type="ragdoll" name="cloth_constraint_9" enabled="true">
+			<param body_a="Head_Hair_01" body_b="Head_Hair_02"/>
+			<param pivot="position:SKL_610_HAIR_SIM"/>
+			<param twist_axis="xaxis:SKL_610_HAIR_SIM" twist_min="-0.1" twist_max="0.1" twist_freedom="0.1"/>
+			<param cone_y="1" cone_z="1" cone_freedom="1"/>
+			<param damping="2" spring_constant="2" min_restitution="0.2" max_restitution="0.2"/>
+		</constraint>
+		<constraint type="ragdoll" name="cloth_constraint_10" enabled="true">
+			<param body_a="Spine2_Wire_01" body_b="Spine2_Wire_02"/>
+			<param pivot="position:SKL_626_ITEM_SIM"/>
+			<param twist_axis="xaxis:SKL_626_ITEM_SIM" twist_min="-0.1" twist_max="0.1" twist_freedom="0.1"/>
+			<param cone_y="1" cone_z="1" cone_freedom="1"/>
+			<param damping="2" spring_constant="2" min_restitution="0.2" max_restitution="0.2"/>
+		</constraint>
+		<constraint type="ragdoll" name="cloth_constraint_11" enabled="true">
+			<param body_a="Spine_Wire_01" body_b="Spine_Wire_02"/>
+			<param pivot="position:SKL_625_ITEM_SIM"/>
+			<param twist_axis="xaxis:SKL_625_ITEM_SIM" twist_min="-0.1" twist_max="0.1" twist_freedom="0.1"/>
+			<param cone_y="1" cone_z="1" cone_freedom="1"/>
+			<param damping="2" spring_constant="2" min_restitution="0.2" max_restitution="0.2"/>
+		</constraint>
+		<constraint type="ragdoll" name="cloth_constraint_12" enabled="true">
+			<param body_a="Hips_belt_01" body_b="Hips_Belt_02"/>
+			<param pivot="position:SKL_310_BELT_A"/>
+			<param twist_axis="xaxis:SKL_310_BELT_A" twist_min="-0.1" twist_max="0.1" twist_freedom="0.1"/>
+			<param cone_y="1" cone_z="1" cone_freedom="1"/>
+			<param damping="2" spring_constant="2" min_restitution="0.2" max_restitution="0.2"/>
+		</constraint>
+		<constraint type="ragdoll" name="cloth_constraint_13" enabled="true">
+			<param body_a="Hips_Belt_02" body_b="Hips_Belt_03"/>
+			<param pivot="position:SKL_311_BELT_B"/>
+			<param twist_axis="xaxis:SKL_311_BELT_B" twist_min="-0.1" twist_max="0.1" twist_freedom="0.1"/>
+			<param cone_y="1" cone_z="1" cone_freedom="1"/>
+			<param damping="2" spring_constant="2" min_restitution="0.2" max_restitution="0.2"/>
+		</constraint>
+		<constraint type="ragdoll" name="cloth_constraint_14" enabled="true">
+			<param body_a="Hips_Belt_03" body_b="Hips_Belt_04"/>
+			<param pivot="position:SKL_312_BELT_C"/>
+			<param twist_axis="xaxis:SKL_312_BELT_C" twist_min="-0.1" twist_max="0.1" twist_freedom="0.1"/>
+			<param cone_y="1" cone_z="1" cone_freedom="1"/>
+			<param damping="25" spring_constant="2" min_restitution="0.2" max_restitution="0.2"/>
+		</constraint>
+		<constraint type="ragdoll" name="cloth_constraint_15" enabled="true">
+			<param body_a="Hips_Belt_04" body_b="Hips_Belt_05"/>
+			<param pivot="position:SKL_313_BELT_D"/>
+			<param twist_axis="xaxis:SKL_313_BELT_D" twist_min="-0.1" twist_max="0.1" twist_freedom="0.1"/>
+			<param cone_y="1" cone_z="1" cone_freedom="1"/>
+			<param damping="2" spring_constant="2" min_restitution="0.2" max_restitution="0.2"/>
+		</constraint>
+	</constraints>
+	
+<!--	<effects>
+		<effect_spawner name="sparkle" enabled="true" object="e_sparkle_diamond" effect="effects/payday2/particles/character/overkillpack/mega_kawaii_eyes" />
+	</effects> -->
+	
+	
+	<graphics>
+		<graphic_group culling_object="co_box" enabled="true" name="suit">
+			<object enabled="true" name="g_body"/>
+			<object enabled="true" name="g_hair"/>
+			<object enabled="true" name="g_wire"/>
+			<object enabled="true" name="g_belt"/>
+		</graphic_group>
+	</graphics>
+</small_prop_object>

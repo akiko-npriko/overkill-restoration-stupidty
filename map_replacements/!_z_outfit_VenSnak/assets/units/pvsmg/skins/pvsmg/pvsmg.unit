@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<unit slot="1" type="inf3">
+	<object file="units/pvsmg/skins/pvsmg/pvsmg"/>
+	
+	
+	<dependencies>
+	<depends_on effect="effects/payday2/particles/character/overkillpack/mega_kawaii_sparkles" />
+	</dependencies> <!-- it dont work :-( -->
+	
+	
+	<extensions>
+		<extension class="ScriptUnitData" name="unit_data"/>
+		<extension class="ContourExt" name="contour"/>
+	</extensions>
+</unit>

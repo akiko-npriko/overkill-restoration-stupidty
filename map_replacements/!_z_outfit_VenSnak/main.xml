@@ -1,0 +1,60 @@
+<table name="Metal Gear Solid V: The Phantom Pain - Punished ''Venom'' Snake MOOG" image="guis/dlcs/pvsmg/textures/pd2/blackmarket/icons/player_styles/pvsmg">
+	<Localization directory="localization" default="english.json"/>
+	
+	<GlobalValue id="pvsmg_mod" color="Color(1, 0.83137, 0)"/>
+	
+	<PlayerStyle id="pvsmg" unit="units/pvsmg/skins/fps_pvsmg/fps_pvsmg" third_unit="units/pvsmg/skins/pvsmg/pvsmg" exclude_glove_adapter="true" default_gloves="false" texture_bundle_folder="pvsmg" global_value="pvsmg_mod">
+		<third_body_replacement mask="true"	head="true" armor="false" body="true" hands="true" arms="true" vest="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="false" body="true" hands="true" arms="true" vest="true" glove_adapter="false"/>
+
+		<characters>
+			<dallas		third_unit="units/pvsmg/skins/pvsmg/pvsmg"/>
+			<dragon		third_unit="units/pvsmg/skins/pvsmg/pvsmg"/>
+			<dragan		third_unit="units/pvsmg/skins/pvsmg/pvsmg"/>
+			<old_hoxton	third_unit="units/pvsmg/skins/pvsmg/pvsmg"/>			
+			<hoxton		third_unit="units/pvsmg/skins/pvsmg/pvsmg"/>			
+			<wolf		third_unit="units/pvsmg/skins/pvsmg/pvsmg"/>			
+			<max		third_unit="units/pvsmg/skins/pvsmg/pvsmg"/>
+			<wild		third_unit="units/pvsmg/skins/pvsmg/pvsmg"/>
+			<jacket		third_unit="units/pvsmg/skins/pvsmg/pvsmg"/>
+			<jowi		third_unit="units/pvsmg/skins/pvsmg/pvsmg"/>
+			<chico		third_unit="units/pvsmg/skins/pvsmg/pvsmg"/>
+			<jimmy		third_unit="units/pvsmg/skins/pvsmg/pvsmg"/>
+			<sokol		third_unit="units/pvsmg/skins/pvsmg/pvsmg"/>
+			<bodhi		third_unit="units/pvsmg/skins/pvsmg/pvsmg"/>
+			<chains		third_unit="units/pvsmg/skins/pvsmg/pvsmg"/>
+			<myh		third_unit="units/pvsmg/skins/pvsmg/pvsmg"/>
+			<ecp_male	third_unit="units/pvsmg/skins/pvsmg/pvsmg"/>	
+			<female_1	third_unit="units/pvsmg/skins/pvsmg/pvsmg"/>
+			<sydney		third_unit="units/pvsmg/skins/pvsmg/pvsmg"/>
+			<ecp_female	third_unit="units/pvsmg/skins/pvsmg/pvsmg"/>
+			<joy		third_unit="units/pvsmg/skins/pvsmg/pvsmg"/>	
+			<bonnie		third_unit="units/pvsmg/skins/pvsmg/pvsmg"/>				
+		</characters>
+	</PlayerStyle>
+	
+	
+	
+
+    <AddFiles directory="assets">
+    <texture path="guis/dlcs/pvsmg/textures/pd2/blackmarket/icons/player_styles/pvsmg"/>
+
+		<df_nm_gsma path="units/pvsmg/skins/textures/arm"/>
+		<df_nm_gsma path="units/pvsmg/skins/textures/body"/>
+		<df_op path="units/pvsmg/skins/textures/emblem"/>
+		<df_op path="units/pvsmg/skins/textures/eyelashes"/>
+		<df_nm_gsma path="units/pvsmg/skins/textures/eyepatch"/>
+		<df_nm_gsma path="units/pvsmg/skins/textures/eyes"/>
+		<df_nm_gsma path="units/pvsmg/skins/textures/gun"/>
+		<df_nm_gsma_op path="units/pvsmg/skins/textures/hair"/>
+		<df_nm_gsma path="units/pvsmg/skins/textures/head"/>
+		<df_nm_gsma path="units/pvsmg/skins/textures/horn"/>
+		<df_nm_gsma path="units/pvsmg/skins/textures/knife"/>
+		<df_nm_gsma_op path="units/pvsmg/skins/textures/mark"/>
+		<df_nm_gsma path="units/pvsmg/skins/textures/sleeve"/>
+		<df_nm_gsma path="units/pvsmg/skins/textures/walkman"/>
+
+		<unit_mat path="units/pvsmg/skins/pvsmg/pvsmg"/>
+		<unit_mat path="units/pvsmg/skins/fps_pvsmg/fps_pvsmg"/>
+</AddFiles>
+</table>

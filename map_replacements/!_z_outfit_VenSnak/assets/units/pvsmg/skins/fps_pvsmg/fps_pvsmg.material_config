@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<materials version="3" group="IMNUCLEARARRRRRR">
+	<material name="mtr_arm" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/pvsmg/skins/textures/arm_df"/>
+		<material_texture file="units/pvsmg/skins/textures/arm_gsma"/>
+		<bump_normal_texture file="units/pvsmg/skins/textures/arm_nm"/>
+	</material>
+	<material name="mtr_sleeve" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/pvsmg/skins/textures/sleeve_df"/>
+		<material_texture file="units/pvsmg/skins/textures/sleeve_gsma"/>
+		<bump_normal_texture file="units/pvsmg/skins/textures/sleeve_nm"/>
+	</material>
+</materials>    

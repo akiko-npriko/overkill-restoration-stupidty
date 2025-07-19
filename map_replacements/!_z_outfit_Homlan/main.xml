@@ -1,0 +1,61 @@
+<table name="COD MW2022 Homelander MOOG" image="guis/dlcs/hlmw22/textures/pd2/blackmarket/icons/player_styles/hlmw22">
+	<Localization directory="localization" default="english.json"/>
+	
+	<GlobalValue id="hlmw22_mod" color="Color(1, 0.83137, 0)"/>
+	
+	<PlayerStyle id="hlmw22" unit="units/hlmw22/skins/fps_hlmw22/fps_hlmw22" third_unit="units/hlmw22/skins/hlmw22/hlmw22" exclude_glove_adapter="true" default_gloves="false" texture_bundle_folder="hlmw22" global_value="hlmw22_mod">
+		<third_body_replacement mask="true"	head="true" armor="true" body="true" hands="true" arms="true" vest="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" arms="true" vest="true" glove_adapter="false"/>
+
+		<characters>
+			<dallas		third_unit="units/hlmw22/skins/hlmw22/hlmw22"/>
+			<dragon		third_unit="units/hlmw22/skins/hlmw22/hlmw22"/>
+			<dragan		third_unit="units/hlmw22/skins/hlmw22/hlmw22"/>
+			<old_hoxton	third_unit="units/hlmw22/skins/hlmw22/hlmw22"/>			
+			<hoxton		third_unit="units/hlmw22/skins/hlmw22/hlmw22"/>			
+			<wolf		third_unit="units/hlmw22/skins/hlmw22/hlmw22"/>			
+			<max		third_unit="units/hlmw22/skins/hlmw22/hlmw22"/>
+			<wild		third_unit="units/hlmw22/skins/hlmw22/hlmw22"/>
+			<jacket		third_unit="units/hlmw22/skins/hlmw22/hlmw22"/>
+			<jowi		third_unit="units/hlmw22/skins/hlmw22/hlmw22"/>
+			<chico		third_unit="units/hlmw22/skins/hlmw22/hlmw22"/>
+			<jimmy		third_unit="units/hlmw22/skins/hlmw22/hlmw22"/>
+			<sokol		third_unit="units/hlmw22/skins/hlmw22/hlmw22"/>
+			<bodhi		third_unit="units/hlmw22/skins/hlmw22/hlmw22"/>
+			<chains		third_unit="units/hlmw22/skins/hlmw22/hlmw22"/>
+			<myh		third_unit="units/hlmw22/skins/hlmw22/hlmw22"/>
+			<ecp_male	third_unit="units/hlmw22/skins/hlmw22/hlmw22"/>	
+			<female_1	third_unit="units/hlmw22/skins/hlmw22/hlmw22"/>
+			<sydney		third_unit="units/hlmw22/skins/hlmw22/hlmw22"/>
+			<ecp_female	third_unit="units/hlmw22/skins/hlmw22/hlmw22"/>
+			<joy		third_unit="units/hlmw22/skins/hlmw22/hlmw22"/>	
+			<bonnie		third_unit="units/hlmw22/skins/hlmw22/hlmw22"/>				
+		</characters>
+	</PlayerStyle>
+	
+	
+	
+
+    <AddFiles directory="assets">
+    <texture path="guis/dlcs/hlmw22/textures/pd2/blackmarket/icons/player_styles/hlmw22"/>
+
+		<df_nm_gsma path="units/hlmw22/skins/textures/arms"/>
+		<df_nm_gsma path="units/hlmw22/skins/textures/belt"/>
+		<df_nm_gsma path="units/hlmw22/skins/textures/body"/>
+		<df_nm_gsma path="units/hlmw22/skins/textures/boots"/>
+		<df_nm_gsma path="units/hlmw22/skins/textures/cape"/>
+		<df_nm_gsma path="units/hlmw22/skins/textures/eagle"/>
+		<df_nm_gsma path="units/hlmw22/skins/textures/eagle_pad"/>
+		<df_nm_gsma path="units/hlmw22/skins/textures/pants"/>
+		
+		<df_nm_gsma path="units/hlmw22/skins/textures/eyes"/>
+		<df_nm_gsma path="units/hlmw22/skins/textures/head"/>
+		<df_nm_gsma_op path="units/hlmw22/skins/textures/eyebrows"/>
+		<df_nm_gsma_op path="units/hlmw22/skins/textures/hair_side"/>
+		<df_nm_gsma_op path="units/hlmw22/skins/textures/hair_top"/>
+		<df_op path="units/hlmw22/skins/textures/eyelashes"/>
+
+		<unit_mat path="units/hlmw22/skins/hlmw22/hlmw22"/>
+		<unit_mat path="units/hlmw22/skins/fps_hlmw22/fps_hlmw22"/>
+</AddFiles>
+</table>

@@ -1,0 +1,323 @@
+<?xml version="1.0" ?>
+<dynamic_object>
+	<diesel materials="units/hlmw22/skins/hlmw22/hlmw22" orientation_object="root_point"/>
+	
+	<!-- Da gabagool -->
+	<!-- *Door Slam* *Door Slam* *Door Slam* *Door Slam* "FUCK!" *Door Slam* *Door Slam* *Door Slam* -->
+	
+	 <bodies>
+	 
+	 
+
+    <body name="Cape_Spine2_Root" enabled="true" template="static" collision_class="hair" collision_group="2" collides_with="3" collides_with_mover="false" friction="0.01" keyframed="true" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="5" ang_damping="10" restitution="-4">
+      <object name="Cape_Root"/>
+      <object name="co_box_root" collision_type="capsule" mass="1" padding="4"/>                                                
+    </body>
+    <body name="Cape_M_01" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="5" ang_damping="10" restitution="-4">
+      <object name="Cape_Mi_01"/>
+      <object name="co_box_mid_01" collision_type="capsule" mass="3" padding="-2.5"/>                                                
+    </body>
+	<body name="Cape_M_02" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="5" ang_damping="10" restitution="-4">
+      <object name="Cape_Mi_02"/>
+      <object name="co_box_mid_02" collision_type="capsule" mass="3" padding="-2.5"/>                                                
+    </body>
+	<body name="Cape_M_03" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="5" ang_damping="10" restitution="-4">
+      <object name="Cape_Mi_03"/>
+      <object name="co_box_mid_03" collision_type="capsule" mass="3" padding="-2.5"/>                                                
+    </body>
+	<body name="Cape_M_04" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="5" ang_damping="10" restitution="-4">
+      <object name="Cape_Mi_04"/>
+      <object name="co_box_mid_04" collision_type="capsule" mass="3" padding="-2.5"/>                                                
+    </body>
+	<body name="Cape_M_05" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="5" ang_damping="10" restitution="-4">
+      <object name="Cape_Mi_05"/>
+      <object name="co_box_mid_05" collision_type="capsule" mass="3" padding="-2.5"/>                                                
+    </body>
+	
+	
+	<body name="Cape_M_Left_01" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="5" ang_damping="10" restitution="-4">
+      <object name="Cape_M_Le_01"/>
+      <object name="co_box_mid_left_01" collision_type="capsule" mass="3" padding="-2.5"/>                                                
+    </body>
+	<body name="Cape_M_Left_02" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="5" ang_damping="10" restitution="-4">
+      <object name="Cape_M_Le_02"/>
+      <object name="co_box_mid_left_02" collision_type="capsule" mass="3" padding="-2.5"/>                                                
+    </body>
+	<body name="Cape_M_Left_03" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="5" ang_damping="10" restitution="-4">
+      <object name="Cape_M_Le_03"/>
+      <object name="co_box_mid_left_03" collision_type="capsule" mass="3" padding="-2.5"/>                                                
+    </body>
+	<body name="Cape_M_Left_04" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="5" ang_damping="10" restitution="-4">
+      <object name="Cape_M_Le_04"/>
+      <object name="co_box_mid_left_04" collision_type="capsule" mass="3" padding="-2.5"/>                                                
+    </body>
+	<body name="Cape_M_Left_05" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="5" ang_damping="10" restitution="-4">
+      <object name="Cape_M_Le_05"/>
+      <object name="co_box_mid_left_05" collision_type="capsule" mass="3" padding="-2.5"/>                                                
+    </body>
+	
+	
+	<body name="Cape_F_Left_01" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="5" ang_damping="10" restitution="-4">
+      <object name="Cape_F_Le_01"/>
+      <object name="co_box_far_left_01" collision_type="capsule" mass="3" padding="-2.5"/>                                                
+    </body>
+	<body name="Cape_F_Left_02" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="5" ang_damping="10" restitution="-4">
+      <object name="Cape_F_Le_02"/>
+      <object name="co_box_far_left_02" collision_type="capsule" mass="3" padding="-2.5"/>                                                
+    </body>
+	<body name="Cape_F_Left_03" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="5" ang_damping="10" restitution="-4">
+      <object name="Cape_F_Le_03"/>
+      <object name="co_box_far_left_03" collision_type="capsule" mass="3" padding="-2.5"/>                                                
+    </body>
+	<body name="Cape_F_Left_04" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="5" ang_damping="10" restitution="-4">
+      <object name="Cape_F_Le_04"/>
+      <object name="co_box_far_left_04" collision_type="capsule" mass="3" padding="-2.5"/>                                                
+    </body>
+	<body name="Cape_F_Left_05" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="5" ang_damping="10" restitution="-4">
+      <object name="Cape_F_Le_05"/>
+      <object name="co_box_far_left_05" collision_type="capsule" mass="3" padding="-2.5"/>                                                
+    </body>
+	
+	
+	<body name="Cape_M_Right_01" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="5" ang_damping="10" restitution="-4">
+      <object name="Cape_M_Ri_01"/>
+      <object name="co_box_mid_right_01" collision_type="capsule" mass="3" padding="-2.5"/>                                                
+    </body>
+	<body name="Cape_M_Right_02" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="5" ang_damping="10" restitution="-4">
+      <object name="Cape_M_Ri_02"/>
+      <object name="co_box_mid_right_02" collision_type="capsule" mass="3" padding="-2.5"/>                                                
+    </body>
+	<body name="Cape_M_Right_03" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="5" ang_damping="10" restitution="-4">
+      <object name="Cape_M_Ri_03"/>
+      <object name="co_box_mid_right_03" collision_type="capsule" mass="3" padding="-2.5"/>                                                
+    </body>
+	<body name="Cape_M_Right_04" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="5" ang_damping="10" restitution="-4">
+      <object name="Cape_M_Ri_04"/>
+      <object name="co_box_mid_right_04" collision_type="capsule" mass="3" padding="-2.5"/>                                                
+    </body>
+	<body name="Cape_M_Right_05" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="5" ang_damping="10" restitution="-4">
+      <object name="Cape_M_Ri_05"/>
+      <object name="co_box_mid_right_05" collision_type="capsule" mass="3" padding="-2.5"/>                                                
+    </body>
+	
+	
+	<body name="Cape_F_Right_01" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="5" ang_damping="10" restitution="-4">
+      <object name="Cape_F_Ri_01"/>
+      <object name="co_box_far_right_01" collision_type="capsule" mass="3" padding="-2.5"/>                                                
+    </body>
+	<body name="Cape_F_Right_02" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="5" ang_damping="10" restitution="-4">
+      <object name="Cape_F_Ri_02"/>
+      <object name="co_box_far_right_02" collision_type="capsule" mass="3" padding="-2.5"/>                                                
+    </body>
+	<body name="Cape_F_Right_03" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="5" ang_damping="10" restitution="-4">
+      <object name="Cape_F_Ri_03"/>
+      <object name="co_box_far_right_03" collision_type="capsule" mass="3" padding="-2.5"/>                                                
+    </body>
+	<body name="Cape_F_Right_04" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="5" ang_damping="10" restitution="-4">
+      <object name="Cape_F_Ri_04"/>
+      <object name="co_box_far_right_04" collision_type="capsule" mass="3" padding="-2.5"/>                                                
+    </body>
+	<body name="Cape_F_Right_05" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false" friction="0.01" keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="5" ang_damping="10" restitution="-4">
+      <object name="Cape_F_Ri_05"/>
+      <object name="co_box_far_right_05" collision_type="capsule" mass="3" padding="-2.5"/>                                                
+    </body>
+	
+
+  </bodies>
+
+  <constraints>
+  
+  
+  <constraint type="ragdoll"  name="da_gabagool" enabled="true">
+      <param body_a="Cape_Spine2_Root" body_b="Cape_F_Right_01"/>
+      <param pivot="position:Cape_F_Ri_01"/>
+      <param twist_axis="xaxis:Cape_F_Ri_01" twist_min="-10" twist_max="10" twist_freedom="10"/>
+      <param cone_y="5" cone_z="5" cone_freedom="5"/>
+      <param damping="20" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+    </constraint>
+	 <constraint type="ragdoll"  name="da_gabagool" enabled="true">
+      <param body_a="Cape_F_Right_01" body_b="Cape_F_Right_02"/>
+      <param pivot="position:Cape_F_Ri_02"/>
+      <param twist_axis="xaxis:Cape_F_Ri_02" twist_min="-10" twist_max="10" twist_freedom="10"/>
+      <param cone_y="5" cone_z="5" cone_freedom="5"/>
+      <param damping="20" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+    </constraint>
+	 <constraint type="ragdoll"  name="da_gabagool" enabled="true">
+      <param body_a="Cape_F_Right_02" body_b="Cape_F_Right_03"/>
+      <param pivot="position:Cape_F_Ri_03"/>
+      <param twist_axis="xaxis:Cape_F_Ri_03" twist_min="-10" twist_max="10" twist_freedom="10"/>
+      <param cone_y="5" cone_z="5" cone_freedom="5"/>
+      <param damping="20" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+    </constraint>
+	 <constraint type="ragdoll"  name="da_gabagool" enabled="true">
+      <param body_a="Cape_F_Right_03" body_b="Cape_F_Right_04"/>
+      <param pivot="position:Cape_F_Ri_04"/>
+      <param twist_axis="xaxis:Cape_F_Ri_04" twist_min="-10" twist_max="10" twist_freedom="10"/>
+      <param cone_y="5" cone_z="5" cone_freedom="5"/>
+      <param damping="20" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+    </constraint>
+	 <constraint type="ragdoll"  name="da_gabagool" enabled="true">
+      <param body_a="Cape_F_Right_04" body_b="Cape_F_Right_05"/>
+      <param pivot="position:Cape_F_Ri_05"/>
+      <param twist_axis="xaxis:Cape_F_Ri_05" twist_min="-10" twist_max="10" twist_freedom="10"/>
+      <param cone_y="5" cone_z="5" cone_freedom="5"/>
+      <param damping="20" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+    </constraint>
+  
+  
+  <constraint type="ragdoll"  name="da_gabagool" enabled="true">
+      <param body_a="Cape_Spine2_Root" body_b="Cape_M_Right_01"/>
+      <param pivot="position:Cape_M_Ri_01"/>
+      <param twist_axis="xaxis:Cape_M_Ri_01" twist_min="-10" twist_max="10" twist_freedom="10"/>
+      <param cone_y="5" cone_z="5" cone_freedom="5"/>
+      <param damping="20" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+    </constraint>
+	 <constraint type="ragdoll"  name="da_gabagool" enabled="true">
+      <param body_a="Cape_M_Right_01" body_b="Cape_M_Right_02"/>
+      <param pivot="position:Cape_M_Ri_02"/>
+      <param twist_axis="xaxis:Cape_M_Ri_02" twist_min="-10" twist_max="10" twist_freedom="10"/>
+      <param cone_y="5" cone_z="5" cone_freedom="5"/>
+      <param damping="20" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+    </constraint>
+	 <constraint type="ragdoll"  name="da_gabagool" enabled="true">
+      <param body_a="Cape_M_Right_02" body_b="Cape_M_Right_03"/>
+      <param pivot="position:Cape_M_Ri_03"/>
+      <param twist_axis="xaxis:Cape_M_Ri_03" twist_min="-10" twist_max="10" twist_freedom="10"/>
+      <param cone_y="5" cone_z="5" cone_freedom="5"/>
+      <param damping="20" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+    </constraint>
+	 <constraint type="ragdoll"  name="da_gabagool" enabled="true">
+      <param body_a="Cape_M_Right_03" body_b="Cape_M_Right_04"/>
+      <param pivot="position:Cape_M_Ri_04"/>
+      <param twist_axis="xaxis:Cape_M_Ri_04" twist_min="-10" twist_max="10" twist_freedom="10"/>
+      <param cone_y="5" cone_z="5" cone_freedom="5"/>
+      <param damping="20" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+    </constraint>
+	 <constraint type="ragdoll"  name="da_gabagool" enabled="true">
+      <param body_a="Cape_M_Right_04" body_b="Cape_M_Right_05"/>
+      <param pivot="position:Cape_M_Ri_05"/>
+      <param twist_axis="xaxis:Cape_M_Ri_05" twist_min="-10" twist_max="10" twist_freedom="10"/>
+      <param cone_y="5" cone_z="5" cone_freedom="5"/>
+      <param damping="20" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+    </constraint>
+  
+  
+  <constraint type="ragdoll"  name="da_gabagool" enabled="true">
+      <param body_a="Cape_Spine2_Root" body_b="Cape_F_Left_01"/>
+      <param pivot="position:Cape_F_Le_01"/>
+      <param twist_axis="xaxis:Cape_F_Le_01" twist_min="-10" twist_max="10" twist_freedom="10"/>
+      <param cone_y="5" cone_z="5" cone_freedom="5"/>
+      <param damping="20" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+    </constraint>
+	 <constraint type="ragdoll"  name="da_gabagool" enabled="true">
+      <param body_a="Cape_F_Left_01" body_b="Cape_F_Left_02"/>
+      <param pivot="position:Cape_F_Le_02"/>
+      <param twist_axis="xaxis:Cape_F_Le_02" twist_min="-10" twist_max="10" twist_freedom="10"/>
+      <param cone_y="5" cone_z="5" cone_freedom="5"/>
+      <param damping="20" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+    </constraint>
+	 <constraint type="ragdoll"  name="da_gabagool" enabled="true">
+      <param body_a="Cape_F_Left_02" body_b="Cape_F_Left_03"/>
+      <param pivot="position:Cape_F_Le_03"/>
+      <param twist_axis="xaxis:Cape_F_Le_03" twist_min="-10" twist_max="10" twist_freedom="10"/>
+      <param cone_y="5" cone_z="5" cone_freedom="5"/>
+      <param damping="20" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+    </constraint>
+	 <constraint type="ragdoll"  name="da_gabagool" enabled="true">
+      <param body_a="Cape_F_Left_03" body_b="Cape_F_Left_04"/>
+      <param pivot="position:Cape_F_Le_04"/>
+      <param twist_axis="xaxis:Cape_F_Le_04" twist_min="-10" twist_max="10" twist_freedom="10"/>
+      <param cone_y="5" cone_z="5" cone_freedom="5"/>
+      <param damping="20" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+    </constraint>
+	 <constraint type="ragdoll"  name="da_gabagool" enabled="true">
+      <param body_a="Cape_F_Left_04" body_b="Cape_F_Left_05"/>
+      <param pivot="position:Cape_F_Le_05"/>
+      <param twist_axis="xaxis:Cape_F_Le_05" twist_min="-10" twist_max="10" twist_freedom="10"/>
+      <param cone_y="5" cone_z="5" cone_freedom="5"/>
+      <param damping="20" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+    </constraint>
+  
+  <constraint type="ragdoll"  name="da_gabagool" enabled="true">
+      <param body_a="Cape_Spine2_Root" body_b="Cape_M_Left_01"/>
+      <param pivot="position:Cape_M_Le_01"/>
+      <param twist_axis="xaxis:Cape_M_Le_01" twist_min="-10" twist_max="10" twist_freedom="10"/>
+      <param cone_y="5" cone_z="5" cone_freedom="5"/>
+      <param damping="20" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+    </constraint>
+	 <constraint type="ragdoll"  name="da_gabagool" enabled="true">
+      <param body_a="Cape_M_Left_01" body_b="Cape_M_Left_02"/>
+      <param pivot="position:Cape_M_Le_02"/>
+      <param twist_axis="xaxis:Cape_M_Le_02" twist_min="-10" twist_max="10" twist_freedom="10"/>
+      <param cone_y="5" cone_z="5" cone_freedom="5"/>
+      <param damping="20" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+    </constraint>
+	 <constraint type="ragdoll"  name="da_gabagool" enabled="true">
+      <param body_a="Cape_M_Left_02" body_b="Cape_M_Left_03"/>
+      <param pivot="position:Cape_M_Le_03"/>
+      <param twist_axis="xaxis:Cape_M_Le_03" twist_min="-10" twist_max="10" twist_freedom="10"/>
+      <param cone_y="5" cone_z="5" cone_freedom="5"/>
+      <param damping="20" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+    </constraint>
+	 <constraint type="ragdoll"  name="da_gabagool" enabled="true">
+      <param body_a="Cape_M_Left_03" body_b="Cape_M_Left_04"/>
+      <param pivot="position:Cape_M_Le_04"/>
+      <param twist_axis="xaxis:Cape_M_Le_04" twist_min="-10" twist_max="10" twist_freedom="10"/>
+      <param cone_y="5" cone_z="5" cone_freedom="5"/>
+      <param damping="20" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+    </constraint>
+	 <constraint type="ragdoll"  name="da_gabagool" enabled="true">
+      <param body_a="Cape_M_Left_04" body_b="Cape_M_Left_05"/>
+      <param pivot="position:Cape_M_Le_05"/>
+      <param twist_axis="xaxis:Cape_M_Le_05" twist_min="-10" twist_max="10" twist_freedom="10"/>
+      <param cone_y="5" cone_z="5" cone_freedom="5"/>
+      <param damping="20" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+    </constraint>
+  
+    <constraint type="ragdoll"  name="da_gabagool" enabled="true">
+      <param body_a="Cape_Spine2_Root" body_b="Cape_M_01"/>
+      <param pivot="position:Cape_Mi_01"/>
+      <param twist_axis="xaxis:Cape_Mi_01" twist_min="-10" twist_max="10" twist_freedom="10"/>
+      <param cone_y="5" cone_z="5" cone_freedom="5"/>
+      <param damping="20" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+    </constraint>
+	 <constraint type="ragdoll"  name="da_gabagool" enabled="true">
+      <param body_a="Cape_M_01" body_b="Cape_M_02"/>
+      <param pivot="position:Cape_Mi_02"/>
+      <param twist_axis="xaxis:Cape_Mi_02" twist_min="-10" twist_max="10" twist_freedom="10"/>
+      <param cone_y="5" cone_z="5" cone_freedom="5"/>
+      <param damping="20" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+    </constraint>
+	 <constraint type="ragdoll"  name="da_gabagool" enabled="true">
+      <param body_a="Cape_M_02" body_b="Cape_M_03"/>
+      <param pivot="position:Cape_Mi_03"/>
+      <param twist_axis="xaxis:Cape_Mi_03" twist_min="-10" twist_max="10" twist_freedom="10"/>
+      <param cone_y="5" cone_z="5" cone_freedom="5"/>
+      <param damping="20" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+    </constraint>
+	 <constraint type="ragdoll"  name="da_gabagool" enabled="true">
+      <param body_a="Cape_M_03" body_b="Cape_M_04"/>
+      <param pivot="position:Cape_Mi_04"/>
+      <param twist_axis="xaxis:Cape_Mi_04" twist_min="-10" twist_max="10" twist_freedom="10"/>
+      <param cone_y="5" cone_z="5" cone_freedom="5"/>
+      <param damping="20" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+    </constraint>
+	 <constraint type="ragdoll"  name="da_gabagool" enabled="true">
+      <param body_a="Cape_M_04" body_b="Cape_M_05"/>
+      <param pivot="position:Cape_Mi_05"/>
+      <param twist_axis="xaxis:Cape_Mi_05" twist_min="-10" twist_max="10" twist_freedom="10"/>
+      <param cone_y="5" cone_z="5" cone_freedom="5"/>
+      <param damping="20" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+    </constraint>
+	
+  </constraints>
+	
+	<graphics>
+		<graphic_group culling_object="co_box" enabled="true" name="suit">
+			<object enabled="true" name="g_body"/>
+			<object enabled="true" name="I_Fucking_Hate_This_Vertices_limit"/> <!-- :-) -->
+			<object enabled="true" name="g_cape"/>
+			<object enabled="true" shadow_caster="true" name="s_body"/>
+		</graphic_group>
+	</graphics>
+</dynamic_object>
