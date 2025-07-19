@@ -81,7 +81,9 @@ function GameSetup:load_packages()
     --ThinkFaster:refresh_current_throughput()
 	load_difficulty_package("packages/addwarthog")
 	load_difficulty_package("packages/addxofrpg")
-	load_difficulty_package("packages/addusngwarthog")
+	if difficulty_index == 8 then
+		load_difficulty_package("packages/addusngwarthog")
+	end
 	--load_difficulty_package("packages/addparasitemodel")
 	
 	--[[
