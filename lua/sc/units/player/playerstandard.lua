@@ -48,6 +48,16 @@ function PlayerStandard:init(unit)
 	end
 end
 
+function PlayerStandard:cancel_reload()
+    if self:_is_reloading() then --i mean the interupt action function already kinds of checks it but better be safe than sorry ig
+        local weapon = self._equipped_unit:base()
+        if weapon:clip_not_empty() then --so you dont completely stop the auto reload when trying to shoot forcing you to reload manually
+            self:_interupt_action_reload()
+            self._ext_camera:play_redirect(self:get_animation("idle")) --cancel the reload animation
+        end
+    end
+end
+
 --Allows night vision to be used with any mask.
 function PlayerStandard:set_night_vision_state(state)
 	local mask_id = managers.blackmarket:equipped_mask().mask_id
@@ -1395,6 +1405,18 @@ function PlayerStandard:_check_action_primary_attack(t, input, params)
 
 	return new_action
 end
+
+Hooks:PostHook(PlayerStandard, "_check_action_primary_attack", "_check_action_primary_attack_cancel_reload", function(self, t, input, params)
+    if (not input) then --check if input exists and cancelling reload when shooting is allowed
+        return
+    end
+
+    local primary_btn = input.btn_primary_attack_state or input.btn_primary_attack_release --check for input
+
+    if primary_btn then --just to make sure it doesnt run every frame even tho no button is pressed
+        self:cancel_reload()
+    end
+end)
 
 function PlayerStandard:_check_stop_shooting()
 	if self._shooting then
@@ -3403,7 +3425,16 @@ function PlayerStandard:_toggle_gadget(weap_base)
 	end
 end
 
+--[[
+Hooks:PreHook(PlayerStandard, "_start_action_steelsight", "_start_action_steelsight_cancel_reload", function(self, t, gadget_state)
+    if MenuCallbackHandler.cancel_reload_status().secondary_cancel then --check if cancelling reload when aiming is allowed
+        self:cancel_reload()
+    end
+end)
+]]
+
 function PlayerStandard:_start_action_steelsight(t, gadget_state)
+	self:cancel_reload()
 	if self._equipped_unit and self._equipped_unit:base() then
 		local speed_multiplier = self._equipped_unit:base():exit_run_speed_multiplier() or 1
 		local sprintout_anim_time = self._equipped_unit:base():weapon_tweak_data().sprintout_anim_time or 0.4
