@@ -346,6 +346,10 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/36470
  - Pocket Sand
 	- https://modworkshop.net/mod/40581
+ - Who's there? (Only in Stealth)
+	- https://modworkshop.net/mod/18754
+ - Who is there
+	- https://modworkshop.net/mod/27547
 	 
 # Gunsss
  - Do later there are too many i hate myself...
