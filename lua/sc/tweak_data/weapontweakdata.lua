@@ -20570,6 +20570,11 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 				self.as24.panic_suppression_chance = 0.05
 				self.as24.kick = self.stat_info.kick_tables.vertical_kick
 				self.as24.weapon_movement_penalty = 0.8
+				self.as24.upgrade_blocks = {
+					weapon = {
+						"clip_ammo_increase"
+					}
+				}
 			end
 
 			if self.rhino then
