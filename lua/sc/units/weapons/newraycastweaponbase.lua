@@ -1995,6 +1995,17 @@ end
 
 function NewRaycastWeaponBase:calculate_ammo_max_per_clip()
 	local ammo = tweak_data.weapon[self._name_id].CLIP_AMMO_MAX + (self._extra_ammo or 0)
+	if (self:weapon_tweak_data().CLIP_AMMO_MAX == 1 or self:upgrade_blocked("weapon", "clip_buff_block")) and managers.player:has_category_upgrade("weapon", "one_round_buff_1") then
+		else
+		ammo = ammo * managers.player:upgrade_value(self._name_id, "clip_ammo_increase", 1)
+		if not self:upgrade_blocked("weapon", "clip_ammo_increase") then
+			ammo = ammo * managers.player:upgrade_value("weapon", "clip_ammo_increase", 1)
+		end
+		if not self:upgrade_blocked(tweak_data.weapon[self._name_id].category, "clip_ammo_increase") then
+			ammo = ammo * managers.player:upgrade_value(tweak_data.weapon[self._name_id].category, "clip_ammo_increase", 1)
+		end
+	end
+	--[[
 	ammo = ammo * managers.player:upgrade_value(self._name_id, "clip_ammo_increase", 1)
 	if not self:upgrade_blocked("weapon", "clip_ammo_increase") then
 		ammo = ammo * managers.player:upgrade_value("weapon", "clip_ammo_increase", 1)
@@ -2002,6 +2013,7 @@ function NewRaycastWeaponBase:calculate_ammo_max_per_clip()
 	if not self:upgrade_blocked(tweak_data.weapon[self._name_id].category, "clip_ammo_increase") then
 		ammo = ammo * managers.player:upgrade_value(tweak_data.weapon[self._name_id].category, "clip_ammo_increase", 1)
 	end
+	]]
 	ammo = math.round(ammo)
 	return ammo
 end

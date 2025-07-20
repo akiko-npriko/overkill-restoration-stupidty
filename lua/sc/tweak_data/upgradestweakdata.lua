@@ -866,7 +866,7 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 					1.2, --Basic
 					1.5 --Ace
 				}
-				
+				self.values.weapon.one_round_buff_1 = {true}
 				self.skill_descs.spotter_teamwork = {
 					skill_value_b1 = tostring(self.values.weapon.clip_ammo_increase[1] % 1 * 100).."%", -- Mag size increase
 					skill_value_p1 = tostring((self.values.weapon.clip_ammo_increase[2] - self.values.weapon.clip_ammo_increase[1]) % 1 * 100).."%" -- Additional mag size increase
@@ -5710,6 +5710,15 @@ function UpgradesTweakData:_saw_definitions()
 			value = 1,
 			upgrade = "revive_reload",
 			category = "player"
+		}
+	}
+	self.definitions.weapon_one_round_buff_1 = {
+		--name_id = "menu_weapon_swap_speed_multiplier",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "one_round_buff_1",
+			category = "weapon"
 		}
 	}
 end

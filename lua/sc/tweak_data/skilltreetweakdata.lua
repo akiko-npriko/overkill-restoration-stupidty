@@ -429,7 +429,8 @@ function SkillTreeTweakData:init(tweak_data)
 				[2] = {
 					upgrades = {
 						"player_run_and_shoot_1",
-						"weapon_clip_ammo_increase_2"
+						"weapon_clip_ammo_increase_2",
+						"weapon_one_round_buff_1"
 					},
 					cost = self.costs.hightierpro
 				}
