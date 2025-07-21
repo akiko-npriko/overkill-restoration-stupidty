@@ -58,7 +58,10 @@ self.scar16_crew.pull_magazine_during_reload = "rifle"
 		}
 		self.scar16.stats_modifiers = nil
 		self.scar16.panic_suppression_chance = 0.05
-		self.scar16.timers = deep_clone(self.new_m4.timers)
+		self.scar16.timers.reload_empty = 3.1
+		self.scar16.timers.reload_exit_empty = 0.8
+		self.scar16.timers.reload_not_empty = 2.23
+		self.scar16.timers.reload_exit_not_empty = 0.8
 		
 	end
 

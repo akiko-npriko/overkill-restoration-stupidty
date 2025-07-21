@@ -964,6 +964,8 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "scar16paintf_sc", function(self)
 
 	if restoration then
 
+		table.insert(self.wpn_fps_ass_scar16.uses_parts, "wpn_fps_upg_o_northtac")
+
 		self.parts.wpn_fps_ass_scar16_b_long.has_description = false
 		self.parts.wpn_fps_ass_scar16_b_long.custom_stats = {
 			falloff_start_mult = 1.15,
@@ -1001,6 +1003,76 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "scar16paintf_sc", function(self)
 
 		self.parts.wpn_fps_ass_scar16_m_speed.stats = deep_clone(self.parts.wpn_fps_m4_upg_m_quick.stats)
 		
+		self.parts.wpn_fps_ass_scar16_body_hamr.supported = true
+		self.parts.wpn_fps_ass_scar16_body_hamr.has_description = true
+		self.parts.wpn_fps_ass_scar16_body_hamr.desc_id = "bm_wp_wpn_fps_ass_scar16_body_hamr_desc"
+		self.parts.wpn_fps_ass_scar16_body_hamr.stats = {
+			value = 7,
+			reload = -1,
+			recoil = -6,
+			concealment = -2
+		}
+		self.parts.wpn_fps_ass_scar16_body_hamr.custom_stats = {
+			alt_desc = "bm_scarhamr_sc_desc",
+			falloff_start_mult = 1.17857142857,
+			falloff_end_mult = 1.09230769231,
+			init_rof = {
+				count = 7,
+				rof_mult = 1.4992,
+				delay = 0.1,
+			},
+			ads_speed_mult = 372 / 340
+		}
+
+		self.parts.wpn_fps_upg_i_pf.supported = true
+		self.parts.wpn_fps_upg_i_pf.alt_icon = "guis/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_i_autofire"
+		self.parts.wpn_fps_upg_i_pf.pcs = {}
+		self.parts.wpn_fps_upg_i_pf.forbids = { "wpn_fps_ass_scar16_body_hamr" }
+		self.parts.wpn_fps_upg_i_pf.stats = {
+			value = 0,
+			spread = -2
+		}
+		self.parts.wpn_fps_upg_i_pf.custom_stats = {
+			falloff_start_mult = 0.85714285714,
+			falloff_end_mult = 0.84615384615,
+			rof_mult = 1.04
+		}		
+		
+		if self.parts.wpn_fps_m4_uupg_m_sharps then
+
+			self.parts.wpn_fps_ass_scar16_body_hamr.forbids = self.parts.wpn_fps_ass_scar16_body_hamr.forbids or {}
+			table.insert(self.parts.wpn_fps_ass_scar16_body_hamr.forbids, "wpn_fps_m4_uupg_m_sharps")
+
+			self.parts.wpn_fps_upg_i_pf.forbids = self.parts.wpn_fps_upg_i_pf.forbids or {}			
+			table.insert(self.parts.wpn_fps_upg_i_pf.forbids, "wpn_fps_m4_uupg_m_sharps")
+		
+		end
+
+		if self.parts.wpn_fps_ass_m16_m_soviet then
+
+			self.parts.wpn_fps_ass_scar16_body_hamr.forbids = self.parts.wpn_fps_ass_scar16_body_hamr.forbids or {}
+			table.insert(self.parts.wpn_fps_ass_scar16_body_hamr.forbids, "wpn_fps_ass_m16_m_soviet")	
+
+			self.parts.wpn_fps_upg_i_pf.forbids = self.parts.wpn_fps_upg_i_pf.forbids or {}			
+			table.insert(self.parts.wpn_fps_upg_i_pf.forbids, "wpn_fps_ass_m16_m_soviet")
+		
+		end
+		
+		self.parts.wpn_fps_ass_scar16_body_black.supported = true
+		self.parts.wpn_fps_ass_scar16_body_black.stats = {
+			value = 2,
+			spread = -1,
+			concealment = 1
+		}
+
+		self.parts.wpn_fps_ass_scar16_b_hamr.supported = true
+		self.parts.wpn_fps_ass_scar16_b_hamr.stats = {
+			value = 8,
+			spread = -1,
+			recoil = 4,
+			concealment = -1
+		}
+		
 		self.wpn_fps_ass_tecci.override = self.wpn_fps_ass_tecci.override or {}
 		self.wpn_fps_ass_tecci.override.wpn_fps_ass_scar16_m_hamr = {
 			stats = {
@@ -1018,7 +1090,20 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "scar16paintf_sc", function(self)
 			}
 		}
 
-		--Stocks
+		self.wpn_fps_smg_x_olympic.override = self.wpn_fps_smg_x_olympic.override or {}
+		self.wpn_fps_smg_x_olympic.override.wpn_fps_ass_scar16_m_hamr = {
+			stats = {
+				value = 0,
+				extra_ammo = 40,
+				concealment = -3,
+				reload = -5
+			},
+			custom_stats = {
+				ads_speed_mult = 1.075
+			}
+		}
+
+		--[[Stocks
 		self.wpn_fps_ass_scar16.override.wpn_fps_ass_scar_s_sniper = {
 			stats = deep_clone(stocks.fixed_acc_stats),
 			custom_stats = {}
@@ -1064,7 +1149,7 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "scar16paintf_sc", function(self)
 		self.wpn_fps_ass_scar16.override.wpn_fps_upg_m4_s_magless = {
 			stats = deep_clone(stocks.fixed_to_adj_dual_stats),
 			custom_stats = deep_clone(stocks.fixed_to_adj_dual_stats)
-		}
+		}]]
 
 		self.wpn_fps_ass_scar16_npc.uses_parts = deep_clone(self.wpn_fps_ass_scar16.uses_parts)
 		

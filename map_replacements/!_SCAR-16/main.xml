@@ -1,5 +1,5 @@
 <mod name="SCAR-16" author="Tangerine Paint" min_lib_ver="3.38">
-	<AssetUpdates id="52744" version="1.1" provider="modworkshop"/>
+	<AssetUpdates id="52744" version="2" provider="modworkshop"/>
 	<Localization directory="loc" default="english.json"/>
 	<GlobalValue id="scar16_paint" color="Color(0.6, 0.7, 0.4)"/>
 
@@ -96,6 +96,42 @@
 
 <!-- V2 stuff -->
 
+	<WeaponMod id="wpn_fps_ass_scar16_b_hamr" based_on="wpn_fps_ass_scar_b_medium" global_value="scar16_paint" type="barrel" unit="units/mods/weapons/wpn_fps_ass_scar16_pts/wpn_fps_ass_scar16_b_hamr" third_unit="units/mods/weapons/wpn_third_ass_scar16_pts/wpn_third_ass_scar16_b_hamr" drop="false" is_a_unlockable="true" texture_bundle_folder="mods">
+		<stats recoil="3" spread="-1" concealment="-2"/>
+		<override>
+			<wpn_fps_ass_scar_ns_standard parent="barrel" a_obj="a_ns_scar"/>
+		</override>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_scar16_body_hamr" based_on="wpn_fps_ass_scar_body_standard" global_value="scar16_paint" type="upper_reciever" unit="units/mods/weapons/wpn_fps_ass_scar16_pts/wpn_fps_ass_scar16_body_hamr" third_unit="units/mods/weapons/wpn_third_ass_scar16_pts/wpn_third_ass_scar16_body_hamr" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<animations reload=""/>
+		<stats recoil="4" spread="-1" concealment="-3"/>
+		<forbids>
+			<value_node value="wpn_fps_addon_ris"/>			
+		</forbids>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_scar16_body_black" based_on="wpn_fps_ass_scar_body_standard" global_value="scar16_paint" type="upper_reciever" unit="units/mods/weapons/wpn_fps_ass_scar16_pts/wpn_fps_ass_scar16_body_black" third_unit="units/mods/weapons/wpn_third_ass_scar16_pts/wpn_third_ass_scar16_body_black" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<animations reload=""/>
+		<stats concealment="1" spread="-1"/>
+		<forbids>
+			<value_node value="wpn_fps_addon_ris"/>			
+		</forbids>
+		<override>
+			<wpn_fps_ass_scar16_g_standard unit="units/payday2/weapons/wpn_fps_upg_m4_reusable/wpn_fps_upg_m4_g_standard" third_unit="units/payday2/weapons/wpn_third_upg_m4_reusable/wpn_third_upg_m4_g_standard"/>
+			<wpn_fps_ass_scar16_s_standard unit="units/mods/weapons/wpn_fps_ass_scar16_pts/wpn_fps_ass_scar16_s_black" third_unit="units/mods/weapons/wpn_third_ass_scar16_pts/wpn_third_ass_scar16_s_black"/>
+		</override>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_i_pf" based_on="wpn_fps_ass_s552_b_standard" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" third_unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" global_value="scar16_paint" type="custom" sub_type="autofire" internal_part="true" drop="false" texture_bundle_folder="mods" is_a_unlockable="true" inherit_weapons="false">
+		<forbids>
+			<value_node value="wpn_fps_ak_extra_ris"/>			
+		</forbids>
+	</WeaponMod>
+
 <!-- The Weapon itself -->	
 
 	<Weapon unlock_level="16">
@@ -190,14 +226,18 @@
 
 				<value_node value="wpn_fps_upg_i_singlefire"/>
 				<value_node value="wpn_fps_upg_i_autofire"/>
+				<value_node value="wpn_fps_upg_i_pf"/>
 
 				<value_node value="wpn_fps_ass_scar16_b_short"/>
 				<value_node value="wpn_fps_ass_scar16_b_long"/>
 				<value_node value="wpn_fps_ass_scar16_b_cqb"/>				
+				<value_node value="wpn_fps_ass_scar16_b_hamr"/>	
 			
 				<value_node value="wpn_fps_ass_scar_fg_railext"/>			
 		
 				<value_node value="wpn_fps_ass_scar16_body_tan"/>				
+				<value_node value="wpn_fps_ass_scar16_body_hamr"/>	
+				<value_node value="wpn_fps_ass_scar16_body_black"/>			
 		
 				<value_node value="wpn_fps_upg_m4_m_pmag"/>
 				<value_node value="wpn_fps_upg_m4_m_straight"/>
@@ -244,7 +284,7 @@
 				<shoulders rotation="-0.000745307 0.00548974 0.000938344 -0.999984" translation="-1.957 -7.5 -0.452"/>
 			</crouched>
 			<steelsight>
-				<shoulders rotation="-0 0 -0 -1" translation="-8.45 -2.472 1.75"/>
+				<shoulders rotation="-0.000745315 0.00548101 0.00093835 -0.999984" translation="-10.847 -7.472 -0.074"/>
 			</steelsight>
 		</stance>-->
 	</Weapon>

@@ -39,6 +39,7 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "scar16paintf", function(self)
 		table.insert(self.wpn_fps_ass_scar16.uses_parts, "wpn_fps_upg_fl_ass_smg_sho_pointshoot")			
 		table.insert(self.wpn_fps_ass_scar16.uses_parts, "wpn_fps_ass_m4_s_russian")		
 		table.insert(self.wpn_fps_ass_scar16.uses_parts, "wpn_fps_ass_m4_g_sg")	
+		table.insert(self.wpn_fps_ass_scar16.uses_parts, "wpn_fps_m4_uupg_m_extend")	
 
 		self.parts.wpn_fps_upg_fl_ass_smg_sho_pointshoot.stance_mod.wpn_fps_ass_scar16 = {
 			translation = Vector3(-4, 0, -13),
@@ -88,6 +89,28 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "scar16paintf", function(self)
 		animations = {
 			reload_not_empty = "reload_not_empty",
 			reload = "reload"
+		}
+	}
+
+    self.wpn_fps_smg_x_olympic.override = self.wpn_fps_smg_x_olympic.override or {}
+	self.wpn_fps_smg_x_olympic.override.wpn_fps_ass_scar16_m_hamr = {
+		stats = {
+			extra_ammo = 20,
+			recoil = 1,
+			spread = -1,
+			concealment = -2,
+			spread_moving = -2
+		}
+	}
+
+    self.wpn_fps_smg_x_hajk.override = self.wpn_fps_smg_x_hajk.override or {}
+	self.wpn_fps_smg_x_hajk.override.wpn_fps_ass_scar16_m_hamr = {
+		stats = {
+			extra_ammo = 20,
+			recoil = 1,
+			spread = -1,
+			concealment = -2,
+			spread_moving = -2
 		}
 	}
 	
