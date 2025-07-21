@@ -33871,7 +33871,7 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 		self.otwd_flare_gun.recategorize = { "heavy_pis", "handcannon" }
 		self.otwd_flare_gun.categories = { "pistol", "handcannon" }
 		self.otwd_flare_gun.damage_type = "handcannon"
-		self.otwd_flare_gun.fire_mode_data.fire_rate = 0.15
+		self.otwd_flare_gun.fire_mode_data.fire_rate = 0.5
 		--self.otwd_flare_gun.muzzleflash = "effects/payday2/particles/weapons/big_51b_auto_fps"
 		--self.otwd_flare_gun.desc_id = "bm_ap_weapon_sc_desc"
 		self.otwd_flare_gun.AMMO_MAX = 15
