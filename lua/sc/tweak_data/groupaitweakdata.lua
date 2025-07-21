@@ -51,7 +51,7 @@ function GroupAITweakData:CloaksInPears()
 	
 	--Clonker squads	
 	if difficulty_index <= 6 then
-		tweak_data.group_ai.enemy_spawn_groups.FBI_spoocs = {
+		self.enemy_spawn_groups.FBI_spoocs = {
 		amount = {2, 2},
 		spawn = {
 			{
@@ -59,13 +59,13 @@ function GroupAITweakData:CloaksInPears()
 				freq = 1,
 				amount_min = 2,
 				amount_max = 2,
-				tactics = tweak_data.group_ai._tactics.spooc,
+				tactics = self._tactics.spooc,
 				rank = 1
 			}
 		}
 	}
 	elseif difficulty_index == 7 then
-		tweak_data.group_ai.enemy_spawn_groups.FBI_spoocs = {
+		self.enemy_spawn_groups.FBI_spoocs = {
 		amount = {2, 3},
 		spawn = {
 			{
@@ -73,13 +73,13 @@ function GroupAITweakData:CloaksInPears()
 				freq = 1,
 				amount_min = 2,
 				amount_max = 3,
-				tactics = tweak_data.group_ai._tactics.spooc,
+				tactics = self._tactics.spooc,
 				rank = 1
 			}
 		}
 	}	
 	else
-		tweak_data.group_ai.enemy_spawn_groups.FBI_spoocs = {
+		self.enemy_spawn_groups.FBI_spoocs = {
 		amount = {3, 3},
 		spawn = {
 			{
@@ -87,7 +87,7 @@ function GroupAITweakData:CloaksInPears()
 				freq = 1,
 				amount_min = 3,
 				amount_max = 3,
-				tactics = tweak_data.group_ai._tactics.spooc,
+				tactics = self._tactics.spooc,
 				rank = 1
 			}
 		}			
