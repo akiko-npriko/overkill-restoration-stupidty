@@ -350,6 +350,8 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/18754
  - Who is there
 	- https://modworkshop.net/mod/27547
+ - Graphical Refresh (Reshade)
+	- https://modworkshop.net/mod/50493
 	 
 # Gunsss
  - Do later there are too many i hate myself...

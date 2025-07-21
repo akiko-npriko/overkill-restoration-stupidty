@@ -668,6 +668,10 @@ function RaycastWeaponBase:fire(from_pos, direction, dmg_mul, shoot_player, spre
 		end
 	end
 	local jam = math.rand(1)
+	if managers.chat then
+    managers.chat:send_message(ChatManager.GAME, "JAM RNG", 
+        "Your chance of jamming " .. jam .. " chance.")
+	end
 	if is_player and self:weapon_tweak_data().termina then
 		if jam < 0.51 then
 			dmg_mul = 0.0

@@ -15,6 +15,103 @@ function GroupAIStateBase:_get_total_hostages()
     local total_hostages = (self._hostage_headcount or 0)
     return total_hostages
 end
+function GroupAIStateBase:BullDozesInPears(difficulty_index, numberofgod)
+	--tee hee pears
+	if managers.chat then
+		managers.chat:send_message(ChatManager.GAME, "Funny RNG", 
+        "A Pack of Dozers")
+	end
+	--local difficulty = Global.game_settings and Global.game_settings.difficulty or "normal"
+	--local difficulty_index = tweak_data:difficulty_to_index(difficulty)
+	if difficulty_index <= 5 then
+		tweak_data.group_ai.special_unit_spawn_limits.tank = 2
+	else
+		tweak_data.group_ai.special_unit_spawn_limits.tank = 4
+	end
+	
+	local amount_min = numberofgod or 1
+	amount_min = math.clamp(amount_min, 1, 2)
+	local unit_categories = tweak_data.group_ai.unit_categories
+	local enemy_spawn_groups = tweak_data.group_ai.enemy_spawn_groups
+	local check_groups = {
+		"CS_tanks",
+		"GREEN_tanks",
+		"BLACK_tanks",
+		"SKULL_tanks",
+		"TIT_tanks"
+	}
+	for _, id in pairs(check_groups) do
+		local group = enemy_spawn_groups[id]
+		if group and group.spawn then
+			if type(group.amount) == "number" then
+				group.amount = group.amount + 1
+			else
+				group.amount = table.collect(group.amount, function(val) return val + 1 end)
+			end
+
+			for _, enemy in pairs(group.spawn) do
+				if unit_categories[enemy.unit] and unit_categories[enemy.unit].special_type == "tank" then
+					enemy.amount_min = amount_min
+					enemy.amount_max = 2
+					enemy.freq = 0.5
+				end
+			end
+		end
+	end
+end
+function GroupAIStateBase:CloaksInPears(difficulty_index)
+	if managers.chat then
+		managers.chat:send_message(ChatManager.GAME, "Funny RNG", 
+        "A Pack of Cloaks")
+	end
+	--local difficulty = Global.game_settings and Global.game_settings.difficulty or "normal"
+	--local difficulty_index = tweak_data:difficulty_to_index(difficulty)
+	
+	--Clonker squads	
+	if difficulty_index <= 6 then
+		tweak_data.group_ai.enemy_spawn_groups.FBI_spoocs = {
+		amount = {2, 2},
+		spawn = {
+			{
+				unit = "spooc",
+				freq = 1,
+				amount_min = 2,
+				amount_max = 2,
+				tactics = tweak_data.group_ai._tactics.spooc,
+				rank = 1
+			}
+		}
+	}
+	elseif difficulty_index == 7 then
+		tweak_data.group_ai.enemy_spawn_groups.FBI_spoocs = {
+		amount = {2, 3},
+		spawn = {
+			{
+				unit = "spooc",
+				freq = 1,
+				amount_min = 2,
+				amount_max = 3,
+				tactics = tweak_data.group_ai._tactics.spooc,
+				rank = 1
+			}
+		}
+	}	
+	else
+		tweak_data.group_ai.enemy_spawn_groups.FBI_spoocs = {
+		amount = {3, 3},
+		spawn = {
+			{
+				unit = "spooc",
+				freq = 1,
+				amount_min = 3,
+				amount_max = 3,
+				tactics = tweak_data.group_ai._tactics.spooc,
+				rank = 1
+			}
+		}			
+	}
+	end
+end
 
 -- Megaphone events must be appended to this table in order for them to be synced to clients
 GroupAIStateBase.MEGAPHONE_EVENTS = {
@@ -217,6 +314,9 @@ function GroupAIStateBase:on_simulation_started()
 	end
 	
 	self._summers_dr = 0.25
+	--Setup RNG Stuff
+	--GroupAIStateBase:BullDozesInPears(diff_index, 2)
+	--GroupAIStateBase:CloaksInPears(diff_index)
 end
 
 function GroupAIStateBase:_get_summers_dr()	

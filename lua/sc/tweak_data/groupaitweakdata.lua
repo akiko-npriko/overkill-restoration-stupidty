@@ -5,95 +5,6 @@ local pro_job = Global.game_settings and Global.game_settings.one_down
 Hooks:PostHook(GroupAITweakData, "init", "sh_init", function (self)
 	self.ai_tick_rate = 1 / 60
 end)
-function GroupAITweakData:BullDozesInPears(numberofgod)
-	--tee hee pears
-	local difficulty = Global.game_settings and Global.game_settings.difficulty or "normal"
-	local difficulty_index = tweak_data:difficulty_to_index(difficulty)
-	if difficulty_index <= 5 then
-		self.special_unit_spawn_limits.tank = 2
-	else
-		self.special_unit_spawn_limits.tank = 4
-	end
-	
-	local amount_min = numberofgod or 1
-	amount_min = math.clamp(amount_min, 1, 2)
-	local unit_categories = self.unit_categories
-	local enemy_spawn_groups = self.enemy_spawn_groups
-	local check_groups = {
-		"CS_tanks",
-		"GREEN_tanks",
-		"BLACK_tanks",
-		"SKULL_tanks",
-		"TIT_tanks"
-	}
-	for _, id in pairs(check_groups) do
-		local group = enemy_spawn_groups[id]
-		if group and group.spawn then
-			if type(group.amount) == "number" then
-				group.amount = group.amount + 1
-			else
-				group.amount = table.collect(group.amount, function(val) return val + 1 end)
-			end
-
-			for _, enemy in pairs(group.spawn) do
-				if unit_categories[enemy.unit] and unit_categories[enemy.unit].special_type == "tank" then
-					enemy.amount_min = amount_min
-					enemy.amount_max = 2
-					enemy.freq = 0.5
-				end
-			end
-		end
-	end
-end
-function GroupAITweakData:CloaksInPears()
-	local difficulty = Global.game_settings and Global.game_settings.difficulty or "normal"
-	local difficulty_index = tweak_data:difficulty_to_index(difficulty)
-	
-	--Clonker squads	
-	if difficulty_index <= 6 then
-		self.enemy_spawn_groups.FBI_spoocs = {
-		amount = {2, 2},
-		spawn = {
-			{
-				unit = "spooc",
-				freq = 1,
-				amount_min = 2,
-				amount_max = 2,
-				tactics = self._tactics.spooc,
-				rank = 1
-			}
-		}
-	}
-	elseif difficulty_index == 7 then
-		self.enemy_spawn_groups.FBI_spoocs = {
-		amount = {2, 3},
-		spawn = {
-			{
-				unit = "spooc",
-				freq = 1,
-				amount_min = 2,
-				amount_max = 3,
-				tactics = self._tactics.spooc,
-				rank = 1
-			}
-		}
-	}	
-	else
-		self.enemy_spawn_groups.FBI_spoocs = {
-		amount = {3, 3},
-		spawn = {
-			{
-				unit = "spooc",
-				freq = 1,
-				amount_min = 3,
-				amount_max = 3,
-				tactics = self._tactics.spooc,
-				rank = 1
-			}
-		}			
-	}
-	end
-end
 function GroupAITweakData:_init_chatter_data()
 	self.enemy_chatter = {}
 	--[[
@@ -15549,7 +15460,6 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	table.insert(unit_types_titan_sniper.nypd, xof_pigglet)
 	table.insert(unit_types_titan_sniper.lapd, xof_pigglet)
 	table.insert(unit_types_titan_sniper.fbi, xof_pigglet)
-	
 end
 	
 function GroupAITweakData:_init_enemy_spawn_groups(difficulty_index)
@@ -24070,7 +23980,4 @@ function GroupAITweakData:_init_task_data(difficulty_index, difficulty)
 		respawn_delay = 120
 	}
 	self.safehouse = deep_clone(self.besiege)	
-	--Setup RNG Stuff
-	GroupAITweakData:BullDozesInPears(2)
-	GroupAITweakData:CloaksInPears()
 end
