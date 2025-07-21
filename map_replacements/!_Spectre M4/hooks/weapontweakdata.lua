@@ -29,9 +29,11 @@ Hooks:PostHook( WeaponTweakData, "init", "Specter_M4_ModInit", function(self)
 					position = Vector3(-1.3, 15.5, -0),
 					rotation = Rotation(0, 0, 0)
 		})
-if not self.CustomWeaponsRebalanceEnabled then
-if self.spectre_m4 then
-    self.spectre_m4.AMMO_PICKUP = deep_clone(self.olympic.AMMO_PICKUP)
-end
-end
+	--[[
+	if not self.CustomWeaponsRebalanceEnabled then
+		if self.spectre_m4 then
+		--self.spectre_m4.AMMO_PICKUP = deep_clone(self.olympic.AMMO_PICKUP)
+		end
+	end
+	]]
 end )

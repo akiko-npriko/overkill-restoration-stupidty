@@ -1,8 +1,8 @@
 Hooks:PostHook(WeaponTweakData, "init", "G11WeaponModInit", function(self)
 
 	if self.temple then
-		self.temple.CAN_TOGGLE_FIREMODE = true
-		self.temple.FIRE_MODE = "auto"
+		--self.temple.CAN_TOGGLE_FIREMODE = true
+		--self.temple.FIRE_MODE = "auto"
 
 		self:SetupAttachmentPoint ( "temple",
 		{

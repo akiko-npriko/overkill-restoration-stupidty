@@ -31,9 +31,11 @@ if self.qbz95 then
 				rotation = Rotation(0, 0, 30)
 	})
 end
+--[[
 if not self.CustomWeaponsRebalanceEnabled then
-if self.qbz95 then
-	self.qbz95.AMMO_PICKUP = self:_pickup_chance((self.qbz95.AMMO_MAX - 10), 2)
+	if self.qbz95 then
+		self.qbz95.AMMO_PICKUP = self:_pickup_chance((self.qbz95.AMMO_MAX - 10), 2)
+	end
 end
-end
+]]
 end )

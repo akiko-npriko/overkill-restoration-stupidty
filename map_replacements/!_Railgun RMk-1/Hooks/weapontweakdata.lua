@@ -13,6 +13,6 @@ Hooks:PostHook(WeaponTweakData, "init", "RoachModInit", function(self)
 	--self.roach_crew.reload = "bullpup"
 	self.roach_crew.FIRE_MODE = "single"
 	self.roach_crew.is_shotgun = false
-	self.roach.damage_falloff = self.rpg7.damage_falloff
+	--self.roach.damage_falloff = self.rpg7.damage_falloff
 	
 end)
