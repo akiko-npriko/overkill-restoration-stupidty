@@ -15356,7 +15356,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	--ATF Field Agent
 	
 	--BullDozer Addition
-	
+	--[[
 	local unit_types_green_dozer = self.unit_categories.FBI_tank.unit_types
 	local unit_types_black_dozer = self.unit_categories.BLACK_tank.unit_types
 	local unit_types_skull_dozer = self.unit_categories.SKULL_tank.unit_types
@@ -15460,6 +15460,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	table.insert(unit_types_titan_sniper.nypd, xof_pigglet)
 	table.insert(unit_types_titan_sniper.lapd, xof_pigglet)
 	table.insert(unit_types_titan_sniper.fbi, xof_pigglet)
+	]]
 end
 	
 function GroupAITweakData:_init_enemy_spawn_groups(difficulty_index)
