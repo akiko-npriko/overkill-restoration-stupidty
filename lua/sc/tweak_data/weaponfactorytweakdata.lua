@@ -54365,4 +54365,42 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "resmod_npc_weaps", function(self
 	self.wpn_fps_ass_tecci_long_npc = deep_clone(self.wpn_fps_ass_tecci_long)
 	self.wpn_fps_ass_tecci_long_npc.unit = "units/pd2_dlc_opera/weapons/wpn_fps_ass_tecci/wpn_fps_ass_tecci_npc"
 end)
+
+--Akiko Edits
+--[[
+Hooks:PostHook( WeaponFactoryTweakData, "init", "icethrower", function(self)
+	if self.parts.wpn_fps_fla_system_body_iuhIceThrowerConversion then
+		self.parts.wpn_fps_fla_system_body_iuhIceThrowerConversion.supported = true
+		self.parts.wpn_fps_fla_system_body_iuhIceThrowerConversion.name_id = "bm_wp_upg_a_slug"
+		self.parts.wpn_fps_fla_system_body_iuhIceThrowerConversion.desc_id = "bm_wp_upg_a_slug_spam_desc"
+		self.parts.wpn_fps_fla_system_body_iuhIceThrowerConversion.stats = deep_clone(self.parts.wpn_fps_fla_system_body_standard.stats)
+		--self.parts.wpn_fps_fla_system_body_iuhIceThrowerConversion.custom_stats = deep_clone(self.parts.wpn_fps_fla_system_body_standard.custom_stats)
+		--self.parts.wpn_fps_fla_system_body_iuhIceThrowerConversion.custom_stats.flame_effect = "effects/iuhSnowthrower"
+		--self.parts.wpn_fps_fla_system_body_iuhIceThrowerConversion.custom_stats.fire_dot_data = {dot_trigger_chance = 0,dot_damage = 0,dot_length = 0,dot_trigger_max_distance = 0,dot_tick_period = 0}
+		--self.parts.wpn_fps_fla_system_body_iuhIceThrowerConversion.custom_stats.bullet_class = "iuhSnowBulletBase" 
+		self.parts.wpn_fps_fla_system_body_iuhIceThrowerConversion.adds = { "wpn_fps_fla_mk2_iceice" }
+				self.parts.wpn_fps_fla_mk2_iceice = {
+					a_obj = "a_body",
+					type = "ammo",
+					third_unit = "units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy",
+					internal_part = true,
+					name_id = "bm_wp_upg_a_fla_mk2_ammo_rare",
+					unit = "units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy",
+					pcs = {
+						25,
+						35,
+						45,
+						55
+					},
+					stats = {
+						value = 0
+					},
+					custom_stats = {
+						bullet_class = "iuhSnowBulletBase",
+						dot_data_name = "iceicebaby"
+					}
+				}
+	end
+end)
+]]
 --]]

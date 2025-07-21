@@ -22,6 +22,15 @@ function FireTweakData:_init_dot_entries_fire(entries)
 		dot_stun_max_distance = false,
 		use_weapon_damage_falloff_chance = false
 	}
+	
+	fire_entries.iceicebaby = {
+		dot_trigger_chance = 0,
+		dot_damage = 0,
+		dot_length = 0,
+		dot_trigger_max_distance = false,
+		dot_stun_max_distance = false,
+		use_weapon_damage_falloff_chance = false
+	}
 
 	--Underbarrel KAC ChainsSAW Flamethrower
 	fire_entries.weapon_kacchainsaw_flamethrower = {
