@@ -146,7 +146,7 @@ function WeaponDescription._get_skill_stats(name, category, slot, base_stats, mo
 					skill_stats[stat.name].value = skill_stats[stat.name].value + (managers.player:upgrade_value(weapon_tweak.category, "clip_ammo_increase", 1) - 1) * (weapon_tweak.CLIP_AMMO_MAX + (mods_stats[stat.name].value or 0))
 				end
 				skill_stats[stat.name].skill_in_effect = managers.player:has_category_upgrade(name, "clip_ammo_increase") or managers.player:has_category_upgrade("weapon", "clip_ammo_increase")
-				if ((weapon_tweak.CLIP_AMMO_MAX and weapon_tweak.CLIP_AMMO_MAX == 1) or (weapon_tweak.upgrade_blocks and weapon_tweak.upgrade_blocks[weapon_tweak.category] and table.contains(weapon_tweak.upgrade_blocks[weapon_tweak.category], "clip_buff_block"))) and managers.player:has_category_upgrade("weapon", "one_round_buff_1") then
+				if ((weapon_tweak.CLIP_AMMO_MAX and weapon_tweak.CLIP_AMMO_MAX == 1) or (weapon_tweak.upgrade_blocks and weapon_tweak.upgrade_blocks.weapon and table.contains(weapon_tweak.upgrade_blocks.weapon, "clip_buff_block"))) and managers.player:has_category_upgrade("weapon", "one_round_buff_1") then
 					skill_stats[stat.name].value = 0
 					skill_stats[stat.name].skill_in_effect = false
 				end

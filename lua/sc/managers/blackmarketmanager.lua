@@ -105,7 +105,7 @@ function BlackMarketManager:damage_multiplier(name, categories, silencer, detect
 	if managers.player:has_category_upgrade("weapon", "one_round_buff_1") then
 		if (weapon_tweak.CLIP_AMMO_MAX and weapon_tweak.CLIP_AMMO_MAX == 1) then
 			multiplier = multiplier - 0.25
-		elseif (weapon_tweak.upgrade_blocks and weapon_tweak.upgrade_blocks[weapon_tweak.category] and table.contains(weapon_tweak.upgrade_blocks[weapon_tweak.category], "clip_buff_block")) then
+		elseif (weapon_tweak.upgrade_blocks and weapon_tweak.upgrade_blocks.weapon and table.contains(weapon_tweak.upgrade_blocks.weapon, "clip_buff_block")) then
 			multiplier = multiplier - 0.2
 		end
 	end
