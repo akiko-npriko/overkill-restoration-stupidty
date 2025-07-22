@@ -15353,6 +15353,109 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	
 --AKIKKO EDITS (ADDON LMAOO)
 	
+	--DEBUG FUN CRAP (Forces all Swat to be the test unit)
+	local unit_types_debugGenSecM4 = self.unit_categories.GS_swat_M4.unit_types
+	local unit_types_debugFBIM4 = self.unit_categories.FBI_swat_M4.unit_types
+	local funnytestunitss = Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
+	local debugvalueeeeereplaceaa = true
+	local mericaaaafucyeaaa = true
+	if debugvalueeeeereplaceaa then
+		if mericaaaafucyeaaa then
+			table.insert(unit_types_debugGenSecM4.america, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.nypd, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.lapd, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.fbi, funnytestunitss)
+			--spam 10 times ig fml
+			table.insert(unit_types_debugGenSecM4.america, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.nypd, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.lapd, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.fbi, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.america, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.nypd, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.lapd, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.fbi, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.america, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.nypd, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.lapd, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.fbi, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.america, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.nypd, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.lapd, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.fbi, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.america, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.nypd, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.lapd, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.fbi, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.america, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.nypd, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.lapd, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.fbi, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.america, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.nypd, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.lapd, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.fbi, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.america, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.nypd, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.lapd, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.fbi, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.america, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.nypd, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.lapd, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.fbi, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.america, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.nypd, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.lapd, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.fbi, funnytestunitss)
+			--end
+			table.insert(unit_types_debugFBIM4.america, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.nypd, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.lapd, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.fbi, funnytestunitss)
+			--spam 10 times ig fml
+			table.insert(unit_types_debugFBIM4.america, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.nypd, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.lapd, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.fbi, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.america, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.nypd, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.lapd, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.fbi, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.america, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.nypd, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.lapd, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.fbi, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.america, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.nypd, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.lapd, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.fbi, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.america, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.nypd, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.lapd, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.fbi, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.america, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.nypd, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.lapd, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.fbi, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.america, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.nypd, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.lapd, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.fbi, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.america, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.nypd, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.lapd, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.fbi, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.america, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.nypd, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.lapd, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.fbi, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.america, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.nypd, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.lapd, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.fbi, funnytestunitss)
+			--end
+		end
+	end
+	
 	--ATF Field Agent
 	
 	--BullDozer Addition
@@ -15456,6 +15559,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	--XOF Piglet Unit
 	--DEBUG FOR NOW MAKE SERIOUS LATERRRR
 	--RN APPLIES TO ALL DIFFICULTIES
+	--[[
 	local unit_types_titan_sniper = self.unit_categories.titan_swat.unit_types
 	local xof_pigglet = Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
 	
@@ -15463,6 +15567,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	table.insert(unit_types_titan_sniper.nypd, xof_pigglet)
 	table.insert(unit_types_titan_sniper.lapd, xof_pigglet)
 	table.insert(unit_types_titan_sniper.fbi, xof_pigglet)
+	]]
 	
 end
 	
