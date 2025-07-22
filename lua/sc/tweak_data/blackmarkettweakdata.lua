@@ -1938,6 +1938,10 @@ function BlackMarketTweakData:_init_projectiles(tweak_data)
 	self.projectiles.wpn_gre_electric.no_cheat_count = true
 	self.projectiles.poison_gas_grenade.no_cheat_count = true
 	self.projectiles.sticky_grenade.no_cheat_count = true
+	
+	if self.projectiles.frag_cluster then
+		self.projectiles.frag_cluster.max_amount = 3
+	end
 
 	--Animation overrides for grenades so they aren't shitty. Like seriously, Javelin throw for grenades..?	
 	--HE

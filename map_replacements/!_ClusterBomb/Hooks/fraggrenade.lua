@@ -37,8 +37,8 @@ Hooks:PreHook(ClusterBombFragGrenade, "_detonate", "frag_cluster_detonate", func
 					small_one:base().__small_one = true
 					small_one:base()._range = 400
 					small_one:base()._timer = 2
-					small_one:base()._damage = 5
-					small_one:base()._player_damage = 1
+					small_one:base()._damage = 60
+					small_one:base()._player_damage = 60
 				end
 			end)
 		end
