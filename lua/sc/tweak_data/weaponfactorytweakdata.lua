@@ -40849,6 +40849,10 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 					recoil = -2,
 					concealment = 1
 				}
+			self.parts.wpn_fps_upg_o_tilt_scopemount.stance_mod = {
+				translation = Vector3(0, 0, 0),
+				rotation = Rotation(0, 0, 0)
+			}
 			self.parts.wpn_fps_ass_tilt_g_wood.supported = true
 			self.parts.wpn_fps_ass_tilt_g_wood.stats = deep_clone(grips.recoil_acc)
 			self.parts.wpn_fps_ass_tilt_g_wood.custom_stats = nil
