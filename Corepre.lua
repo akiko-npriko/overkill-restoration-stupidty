@@ -9,6 +9,9 @@ RestorationMapFramework:InitMods()
 if not PackageManager:loaded("packages/scassets") then
 	PackageManager:load("packages/scassets")
 end
+if not PackageManager:loaded("packages/akikoforcedtoload") then
+	PackageManager:load("packages/akikoforcedtoload")
+end
 if not PackageManager:loaded("packages/outfitassets") then
 	PackageManager:load("packages/outfitassets")
 end	
