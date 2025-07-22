@@ -15359,6 +15359,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	local funnytestunitss = Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
 	local debugvalueeeeereplaceaa = true
 	local mericaaaafucyeaaa = true
+	local murkywaterssssa = true
 	if debugvalueeeeereplaceaa then
 		if mericaaaafucyeaaa then
 			table.insert(unit_types_debugGenSecM4.america, funnytestunitss)
@@ -15453,6 +15454,30 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			table.insert(unit_types_debugFBIM4.lapd, funnytestunitss)
 			table.insert(unit_types_debugFBIM4.fbi, funnytestunitss)
 			--end
+		end
+		if murkywaterssssa then
+			table.insert(unit_types_debugGenSecM4.murkywater, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.murkywater, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.murkywater, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.murkywater, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.murkywater, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.murkywater, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.murkywater, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.murkywater, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.murkywater, funnytestunitss)
+			table.insert(unit_types_debugGenSecM4.murkywater, funnytestunitss)
+			
+			table.insert(unit_types_debugFBIM4.murkywater, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.murkywater, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.murkywater, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.murkywater, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.murkywater, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.murkywater, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.murkywater, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.murkywater, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.murkywater, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.murkywater, funnytestunitss)
+			table.insert(unit_types_debugFBIM4.murkywater, funnytestunitss)
 		end
 	end
 	
@@ -15568,7 +15593,14 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	table.insert(unit_types_titan_sniper.lapd, xof_pigglet)
 	table.insert(unit_types_titan_sniper.fbi, xof_pigglet)
 	]]
-	
+	--Temp Murkywater units
+	if difficulty_index == 5 or difficulty_index == 6 or difficulty_index == 7 or difficulty_index == 8 then
+		table.insert(unit_types_skull_dozer.murkywater, minigun_dozer)
+		--table.insert(unit_types_skull_dozer.murkywater, minigun_dozer)
+		table.insert(unit_types_black_dozer.murkywater, warthogg)
+		--table.insert(unit_types_black_dozer.murkywater, warthogg)
+		table.insert(unit_types_green_dozer.murkywater, medicdozer)
+	end
 end
 	
 function GroupAITweakData:_init_enemy_spawn_groups(difficulty_index)
