@@ -15356,7 +15356,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	--ATF Field Agent
 	
 	--BullDozer Addition
-	--[[
+	
 	local unit_types_green_dozer = self.unit_categories.FBI_tank.unit_types
 	local unit_types_black_dozer = self.unit_categories.BLACK_tank.unit_types
 	local unit_types_skull_dozer = self.unit_categories.SKULL_tank.unit_types
@@ -15392,12 +15392,13 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		table.insert(unit_types_black_dozer.nypd, warthogg)
 		table.insert(unit_types_black_dozer.lapd, warthogg)
 		table.insert(unit_types_black_dozer.fbi, warthogg)
-		
+		--[[
 		--Elite Bulldozers (Addon Skull Dozer) Mayhem (America, Nypd, Lapd, Fbi)
 		table.insert(unit_types_skull_dozer.america, ellite_dozer)
 		table.insert(unit_types_skull_dozer.nypd, ellite_dozer)
 		table.insert(unit_types_skull_dozer.lapd, ellite_dozer)
 		table.insert(unit_types_skull_dozer.fbi, ellite_dozer)
+		]]
 		
 	elseif difficulty_index == 7 then
 		--Medicbulldozer (Addon Green Dozer) Death Wish (America, Nypd, Lapd, Fbi)
@@ -15417,12 +15418,13 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		table.insert(unit_types_skull_dozer.nypd, minigun_dozer)
 		table.insert(unit_types_skull_dozer.lapd, minigun_dozer)
 		table.insert(unit_types_skull_dozer.fbi, minigun_dozer)
-		
+		--[[
 		--Elite Bulldozers (Addon Skull Dozer) Death Wish (America, Nypd, Lapd, Fbi)
 		table.insert(unit_types_skull_dozer.america, ellite_dozer)
 		table.insert(unit_types_skull_dozer.nypd, ellite_dozer)
 		table.insert(unit_types_skull_dozer.lapd, ellite_dozer)
 		table.insert(unit_types_skull_dozer.fbi, ellite_dozer)
+		]]
 		
 	elseif difficulty_index == 8 then
 		--National Guard Medicbulldozer (Addon Green Dozer) Death Sentence (America, Nypd, Lapd, Fbi)
@@ -15442,12 +15444,13 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		table.insert(unit_types_skull_dozer.nypd, marshall_minigundozer)
 		table.insert(unit_types_skull_dozer.lapd, marshall_minigundozer)
 		table.insert(unit_types_skull_dozer.fbi, marshall_minigundozer)
-		
+		--[[
 		--Bravo Bulldozers (Addon Skull Dozer) Death Sentence (America, Nypd, Lapd, Fbi)
 		table.insert(unit_types_skull_dozer.america, bravo_elite_dozer)
 		table.insert(unit_types_skull_dozer.nypd, bravo_elite_dozer)
 		table.insert(unit_types_skull_dozer.lapd, bravo_elite_dozer)
 		table.insert(unit_types_skull_dozer.fbi, bravo_elite_dozer)
+		]]
 	end
 	
 	--XOF Piglet Unit
@@ -15460,7 +15463,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	table.insert(unit_types_titan_sniper.nypd, xof_pigglet)
 	table.insert(unit_types_titan_sniper.lapd, xof_pigglet)
 	table.insert(unit_types_titan_sniper.fbi, xof_pigglet)
-	]]
+	
 end
 	
 function GroupAITweakData:_init_enemy_spawn_groups(difficulty_index)
