@@ -1,0 +1,388 @@
+<table name="LSAT" image="guis/mod_icons/lsat" color="Color(0.01,0.62,0.98)">
+	<Localization directory="Loc" default="english.txt"/>
+	<AssetUpdates id="20604" version="1.13" provider="modworkshop"/>
+	<GlobalValue id="lsatmod" color="Color(0.7, 0.2, 0.1)"/>
+	<WeaponMod id="wpn_fps_lmg_lsat_barrel" based_on="wpn_fps_lmg_m249_b_short" type="barrel" unit="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_barrel" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_lmg_lsat_bipod_folded" based_on="wpn_fps_sho_ksg_body_standard" type="bipod" unit="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_bipod_folded" drop="false" is_a_unlockable="false">
+		<forbids>
+			<value_node value="wpn_fps_upg_lsat_fab_ptk"/>
+			<value_node value="wpn_fps_upg_lsat_magpul_afg"/>
+		</forbids>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_lmg_lsat_body" based_on="wpn_fps_lmg_m249_body_standard" type="upper_reciever" unit="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_body" drop="false" is_a_unlockable="false">
+		<forbids>
+			<value_node value="wpn_fps_addon_ris"/>
+		</forbids>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_lmg_lsat_body_barrel" based_on="wpn_fps_sho_ksg_body_standard" type="barrel_model" unit="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_body_barrel" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_lmg_lsat_cover" based_on="wpn_fps_lmg_m249_upper_reciever" type="cover" unit="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_cover" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_lmg_lsat_flashhider" based_on="wpn_fps_ass_scar_ns_standard" type="barrel_ext" unit="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_flashhider" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_lmg_lsat_irons" based_on="wpn_fps_sho_ksg_body_standard" type="sight" unit="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_irons" drop="false" is_a_unlockable="false">
+		<stance_mod>
+			<wpn_fps_lmg_lsat rotation="-0.00109083 -0 0 -0.999999" translation="-0.022 -14 -0.8"/>
+		</stance_mod>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_lmg_lsat_mag" based_on="wpn_fps_lmg_m249_m_standard" type="magazine" a_obj="a_m2" unit="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_mag" drop="false" is_a_unlockable="false">
+		<stats reload="4"/>
+		<animations reload_not_empty="false" reload="false"/>
+		<adds>
+			<value_node value="wpn_fps_lmg_lsat_mag_anim"/>
+		</adds>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_lmg_lsat_mag_anim" based_on="wpn_fps_lmg_m249_m_standard" type="magazine_anim" bullet_objects="false" unit="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_mag_anim" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_lmg_lsat_stock" based_on="wpn_fps_sho_ksg_body_standard" type="stock" unit="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_stock" drop="false" is_a_unlockable="false">
+		<adds>
+			<value_node value="wpn_fps_lmg_lsat_stock_cap"/>
+		</adds>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_lmg_lsat_stock_cap" based_on="wpn_fps_sho_ksg_body_standard" type="stock_cap" unit="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_stock_cap" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_lmg_lsat_stock_cap_adapter" based_on="wpn_fps_sho_ksg_body_standard" type="stock_adapter" unit="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_stock_cap_adapter" drop="false" is_a_unlockable="false">
+		<adds>
+			<value_node value="wpn_fps_lmg_lsat_stock_cap_adapter_tube"/>
+		</adds>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_lmg_lsat_stock_cap_adapter_tube" based_on="wpn_fps_sho_ksg_body_standard" type="stock_adapter_tube" unit="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_stock_cap_adapter_tube" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_upg_lsat_barrel_long" based_on="wpn_fps_lmg_m249_b_short" type="barrel" a_obj="a_b_long" unit="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_barrel_long" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats spread="1" concealment="-1"/>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_lsat_barrel_short" based_on="wpn_fps_lmg_m249_b_short" type="barrel" a_obj="a_b_short" unit="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_barrel_short" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats recoil="-1" concealment="2"/>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_lsat_bipod" based_on="wpn_fps_upg_bp_lmg_lionbipod" type="bipod" desc_id="bm_wp_upg_bp_lmg_lionbipod_desc" animations="false" unit="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_bipod" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats concealment="-1"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_lsat_fab_ptk" based_on="wpn_fps_sho_ksg_body_standard" type="vertical_grip" unit="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_fab_ptk" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats recoil="1" concealment="-1"/>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_lsat_magpul_afg" based_on="wpn_fps_sho_ksg_body_standard" type="vertical_grip" unit="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_magpul_afg" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats recoil="1" concealment="-1"/>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_lsat_stock_collapsed" based_on="wpn_fps_sho_ksg_body_standard" type="stock" unit="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_stock_collapsed" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats concealment="2"/>
+		<adds>
+			<value_node value="wpn_fps_lmg_lsat_stock_cap"/>
+		</adds>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_lsat_vanilia_ads" based_on="wpn_fps_sho_ksg_body_standard" type="sight" unit="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_irons" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stance_mod>
+			<wpn_fps_lmg_lsat rotation="-0 0.0436194 -0 -0.999048" translation="9.53 -8 -0.285"/>
+		</stance_mod>
+		<pcs/>
+	</WeaponMod>
+<!-- temp -->
+	<WeaponMod id="wpn_fps_upg_lsat_irons" based_on="wpn_fps_sho_ksg_body_standard" type="sight" drop="false" is_a_unlockable="false"/>
+<!-- -->
+	<Weapon unlock_level="60">
+		<weapon id="lsat" based_on="m249" CLIP_AMMO_MAX="100" NR_CLIPS_MAX="4" bipod_camera_spin_limit="55" bipod_camera_pitch_limit="20" shell_ejection="effects/payday2/particles/weapons/shells/shell_empty" texture_bundle_folder="mods" global_value="lsatmod">
+			<stats damage="80" spread="14" spread_moving="14" recoil="11"/>
+			<fire_mode_data fire_rate="0.0857142857142857"/>
+			<kick>
+				<standing>
+					<value_node value="0.8"/>
+					<value_node value="0.4"/>
+					<value_node value="-0.7"/>
+					<value_node value="0.7"/>
+				</standing>
+				<crouching>
+					<value_node value="0.8"/>
+					<value_node value="0.4"/>
+					<value_node value="-0.6"/>
+					<value_node value="0.6"/>
+				</crouching>
+				<steelsight>
+					<value_node value="0.7"/>
+					<value_node value="0.3"/>
+					<value_node value="-0.6"/>
+					<value_node value="0.6"/>
+				</steelsight>
+			</kick>
+			<sounds fire="lsat_fire_single" fire_single="lsat_fire_single" use_fix="true"/>
+			<animations reload_name_id="m249"/>
+		</weapon>
+        <factory id="wpn_fps_lmg_lsat" unit="units/mods/weapons/wpn_fps_lmg_lsat/wpn_fps_lmg_lsat" stock_adapter="wpn_fps_lmg_lsat_stock_cap_adapter">
+			<adds/>
+			<override/>
+			<default_blueprint>
+				<value_node value="wpn_fps_lmg_lsat_barrel"/>
+				<value_node value="wpn_fps_lmg_lsat_bipod_folded"/>
+				<value_node value="wpn_fps_lmg_lsat_body"/>
+				<value_node value="wpn_fps_lmg_lsat_body_barrel"/>
+				<value_node value="wpn_fps_lmg_lsat_cover"/>
+				<value_node value="wpn_fps_lmg_lsat_flashhider"/>
+				<value_node value="wpn_fps_lmg_lsat_irons"/>
+				<value_node value="wpn_fps_lmg_lsat_mag"/>
+				<value_node value="wpn_fps_lmg_lsat_stock"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_lmg_lsat_barrel"/>
+				<value_node value="wpn_fps_lmg_lsat_bipod_folded"/>
+				<value_node value="wpn_fps_lmg_lsat_body"/>
+				<value_node value="wpn_fps_lmg_lsat_body_barrel"/>
+				<value_node value="wpn_fps_lmg_lsat_cover"/>
+				<value_node value="wpn_fps_lmg_lsat_flashhider"/>
+				<value_node value="wpn_fps_lmg_lsat_irons"/>
+				<value_node value="wpn_fps_lmg_lsat_mag"/>
+				<value_node value="wpn_fps_lmg_lsat_stock"/>
+
+				<value_node value="wpn_fps_upg_lsat_barrel_long"/>
+				<value_node value="wpn_fps_upg_lsat_barrel_short"/>
+				<value_node value="wpn_fps_upg_lsat_bipod"/>
+				<value_node value="wpn_fps_upg_lsat_fab_ptk"/>
+				<value_node value="wpn_fps_upg_lsat_magpul_afg"/>
+				<value_node value="wpn_fps_upg_lsat_stock_collapsed"/>
+				<value_node value="wpn_fps_upg_lsat_vanilia_ads"/>
+
+				<value_node value="wpn_fps_upg_m4_s_standard"/>
+				<value_node value="wpn_fps_upg_m4_s_pts"/>
+				<value_node value="wpn_fps_upg_m4_s_crane"/>
+				<value_node value="wpn_fps_upg_m4_s_mk46"/>
+				<value_node value="wpn_fps_upg_m4_s_ubr"/>
+				<value_node value="wpn_fps_snp_tti_s_vltor"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_xpsg33_magnifier"/>
+			</uses_parts>
+		</factory>
+		<stance>
+			<standard>
+				<shoulders rotation="-0.000745315 0.00548101 0.00093835 -0.999984" translation="0.279 12.631 -3.877"/>
+			</standard>
+			<crouched>
+				<shoulders rotation="-0.000745315 0.00548101 0.00093835 -0.999984" translation="-1.721 8.631 -4.877"/>
+			</crouched>
+			<steelsight>
+				<shoulders rotation="0 0.00174533 0.000785397 -0.999998" translation="-10.726 16.631 -1.666"/>
+			</steelsight>
+		</stance>
+	</Weapon>
+	<Sounds directory="Assets\sounds">
+		<sound id="lsat_fire_single" path="lsat_regular.ogg" prefix="regular"/>
+		<sound id="lsat_fire_single" path="lsat_suppressed.ogg" prefix="suppressed_a"/>
+		<sound id="lsat_fire_single" path="lsat_suppressed.ogg" prefix="suppressed_b"/>
+		<sound id="lsat_fire_single" path="lsat_suppressed.ogg" prefix="suppressed_c"/>
+	</Sounds>
+	<AddFiles directory="Assets">
+		<texture path="units/mods/weapons/wpn_fps_lmg_lsat_pts/textures/bipod_df"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_lsat_pts/textures/bipod_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_lsat_pts/textures/fab_ptk_df"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_lsat_pts/textures/fab_ptk_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_lsat_pts/textures/kac_irons_df"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_lsat_pts/textures/kac_irons_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_lsat_pts/textures/lsat_df"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_lsat_pts/textures/lsat_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_lsat_pts/textures/magpul_afg_df"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_lsat_pts/textures/magpul_afg_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_lsat_pts/textures/stockadapt_df"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_lsat_pts/textures/stockadapt_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_lsat_pts/textures_thq/bipod_df"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_lsat_pts/textures_thq/fab_ptk_df"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_lsat_pts/textures_thq/kac_irons_df"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_lsat_pts/textures_thq/lsat_df"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_lsat_pts/textures_thq/magpul_afg_df"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_lsat_pts/textures_thq/stockadapt_df"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_lsat/wpn_fps_lmg_lsat"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_lsat/wpn_fps_lmg_lsat"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_lsat/wpn_fps_lmg_lsat"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_lsat/wpn_fps_lmg_lsat"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_lsat/wpn_fps_lmg_lsat_npc"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_barrel"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_barrel"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_barrel"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_barrel_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_bipod_folded"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_bipod_folded"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_bipod_folded"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_bipod_folded"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_bipod_folded"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_bipod_folded_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_body"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_body"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_body"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_body_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_body_barrel"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_body_barrel"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_body_barrel"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_body_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_body_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_body_barrel_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_cover"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_cover"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_cover"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_cover"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_cover"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_cover_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_flashhider"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_flashhider"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_flashhider"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_flashhider"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_flashhider"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_flashhider_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_irons"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_irons"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_irons"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_irons"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_irons"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_irons_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_mag"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_mag"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_mag"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_mag"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_mag"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_mag_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_mag_anim"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_mag_anim"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_mag_anim"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_mag_anim"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_mag_anim"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_mag_anim_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_stock"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_stock"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_stock"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_stock"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_stock"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_stock_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_stock_cap"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_stock_cap"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_stock_cap"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_stock_cap"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_stock_cap"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_stock_cap_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_stock_cap_adapter"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_stock_cap_adapter"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_stock_cap_adapter"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_stock_cap_adapter"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_stock_cap_adapter"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_stock_cap_adapter_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_stock_cap_adapter_tube"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_stock_cap_adapter_tube"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_stock_cap_adapter_tube"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_stock_cap_adapter_tube"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_stock_cap_adapter_tube"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_lmg_lsat_stock_cap_adapter_tube_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_barrel_long"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_barrel_long"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_barrel_long"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_barrel_long"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_barrel_long"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_barrel_long_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_barrel_short"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_barrel_short"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_barrel_short"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_barrel_short"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_barrel_short"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_barrel_short_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_bipod"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_bipod"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_bipod"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_bipod"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_bipod"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_bipod_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_fab_ptk"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_fab_ptk"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_fab_ptk"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_fab_ptk"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_fab_ptk"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_fab_ptk_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_magpul_afg"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_magpul_afg"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_magpul_afg"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_magpul_afg"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_magpul_afg"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_magpul_afg_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_stock_collapsed"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_stock_collapsed"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_stock_collapsed"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_stock_collapsed"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_stock_collapsed"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_lsat_pts/wpn_fps_upg_lsat_stock_collapsed_thq"/>
+
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_lsat_barrel_long"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_lsat_barrel_short"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_lsat_bipod"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_lsat_fab_ptk"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_lsat_magpul_afg"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_lsat_stock_collapsed"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_lsat_vanilia_ads"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/lsat"/>
+		<texture path="guis/mod_icons/lsat"/>
+	</AddFiles>
+	<Hooks directory="Hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
+	</Hooks>
+</table>
