@@ -49272,7 +49272,37 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 		self.parts.wpn_fps_upg_o_iuhPSO1Scope.stats = { value = 0, zoom = 50 }
 		self.parts.wpn_fps_upg_o_iuhPSO1Scope.custom_stats = nil
 	end
-
+	
+	if self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound then
+		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.supported = true
+		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.has_description = true
+		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.keep_damage = true
+		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.desc_id = "bm_heavy_ap_weapon_sc_desc"
+		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.no_cull = true
+		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.custom_stats = {
+			armor_piercing_override = 1,
+			can_shoot_through_enemy = true,
+			can_shoot_through_enemy_unlim = true,
+			can_shoot_through_wall = true,
+			can_shoot_through_shield = true,
+			can_shoot_through_titan_shield = true,
+			--ignore_rof_mult_anims = true,
+			tweak_categories = {
+				"snp",
+				"amr"
+			},
+			hs_mult = 2,
+			alt_ammo_pickup_min_mul = 0,
+			alt_ammo_pickup_max_mul = 0,
+			ammo_pickup_min_mul = 0,
+			ammo_pickup_max_mul = 0,
+			trail_effect = "effects/particles/weapons/sniper_trail_sc",
+			alt_desc = "bm_heavy_ap_weapon_sc_desc",
+			table.insert(self.wpn_fps_rpg7.uses_parts, "wpn_fps_upg_a_grenade_launcher_iuhApRpgRound")
+		}
+	end
+	
+	--[[
 	if self.parts.wpn_fps_fla_system_body_iuhIceThrowerConversion then
 		self.parts.wpn_fps_fla_system_body_iuhIceThrowerConversion.supported = true
 		self.parts.wpn_fps_fla_system_body_iuhIceThrowerConversion.name_id = "bm_wp_upg_a_slug"
@@ -49305,6 +49335,7 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 			}
 		}
 	end
+	]]
 
 -- Edits end here --
 

@@ -1,6 +1,9 @@
 local mvec_spread_direction = Vector3()
 
 function ProjectileWeaponBase:_fire_raycast(user_unit, from_pos, direction, dmg_mul, shoot_player, spread_mul, autohit_mul, suppr_mul, shoot_through_data)
+	if self._parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound then
+		return NewRaycastWeaponBase._fire_raycast(self, user_unit, from_pos, direction, dmg_mul, shoot_player, spread_mul, autohit_mul, suppr_mul, shoot_through_data)
+	end
 	local unit = nil
 	local spread_x, spread_y = self:_get_spread(user_unit)
 	local right = direction:cross(math.UP):normalized()

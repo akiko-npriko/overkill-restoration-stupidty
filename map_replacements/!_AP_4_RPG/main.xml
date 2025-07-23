@@ -1,0 +1,23 @@
+<mod name="Armor Piercing Round For RPG">
+	<Localization directory="loc" default="english.txt"/>
+	<GlobalValue id="iuhApRpgRound" color="Color(255, 215, 0)"/>	
+	<AddFiles directory="assets" auto_generate="true"/>
+
+	<WeaponMod id="wpn_fps_upg_a_grenade_launcher_iuhApRpgRound" based_on="wpn_fps_upg_a_grenade_launcher_hornet" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" inherit_override="false" hidden = "false" global_value = "iuhApRpgRound" ver="2">					
+		<stats damage  = "80"/>
+		<weapons>
+			<value_node value="wpn_fps_rpg7"/>
+		</weapons>
+		<custom_stats rays = "1" muzzleflash = "effects/payday2/particles/weapons/50cal_auto_fps">
+		</custom_stats>			
+		<override>
+			<wpn_fps_rpg7_m_rocket unit="units/mods/weapons/wpn_fps_upg_a_grenade_launcher_iuhApRpgRound/wpn_fps_upg_a_grenade_launcher_iuhApRpgRound">		
+			</wpn_fps_rpg7_m_rocket>		 	
+		</override>			
+	</WeaponMod> 
+
+	<Hooks directory="hooks">
+	
+	</Hooks>
+</mod>
+
