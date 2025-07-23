@@ -63,8 +63,6 @@ function HD2Offensive:throw(data)
 	local random_x = not (tostring(data.random_x) == "false") and true or false
 	local random_y = not (tostring(data.random_y) == "false") and true or false
 
-	local position_fix = data.position_fix and Vector3(0, 0, data.position_fix) or Vector3(0, 0, 0)
-
 	---[[ spawn red trail effect
 	local data = {
 		position = base_to_pos,
@@ -155,11 +153,11 @@ function HD2Offensive:throw(data)
 				if type == "orbital" then
 					from_pos = base_from_pos
 					to_pos = base_to_pos + d_rot:x() * offset_x + d_rot:y() * offset_y
-					mvec_spread_direction = ((to_pos - from_pos) + position_fix):normalized()
+					mvec_spread_direction = (to_pos - from_pos):normalized()
 				elseif type == "fighter" then
 					from_pos = base_from_pos + d_rot:x() * offset_x + d_rot:y() * offset_y
 					to_pos = base_to_pos
-					mvec_spread_direction = ((to_pos - base_from_pos) + position_fix):normalized()
+					mvec_spread_direction = (to_pos - base_from_pos):normalized()
 				end
 
 				if Network:is_client() then

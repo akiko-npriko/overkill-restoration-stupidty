@@ -1,5 +1,5 @@
-<table name="HD2 Offensive" priority="-100">
-	<AssetUpdates id="52692" provider="modworkshop" use_local_dir="true" version="2"/>
+<table name="HD2 Offensive" priority="100">
+	<AssetUpdates id="52692" provider="modworkshop" use_local_dir="true" version="1"/>
 
 	<Localization default="english.txt" directory="loc">
 		<loc file="english.txt" language="english"/>	
@@ -35,9 +35,8 @@
 		
 		<!-- Texture -->
 
-		<texture				path="units/pd2_dlc_hd2o/weapons/wpn_prj_hd2offensive/textures/stratagem_df"/>
-		<texture				path="units/pd2_dlc_hd2o/weapons/wpn_prj_hd2offensive/textures/stratagem_gsma"/>
-		<texture				path="units/pd2_dlc_hd2o/weapons/wpn_prj_hd2offensive/textures/stratagem_nm"/>
+		<df_nm				path="units/pd2_dlc_hd2o/weapons/wpn_prj_hd2offensive/textures/wpn_prj_hd2offensive"/>
+		<df_nm				path="units/pd2_dlc_hd2o/weapons/wpn_prj_hd2offensive/textures/wpn_prj_hd2offensive_husk"/>
 
 		<!-- Effect -->
 
@@ -58,6 +57,7 @@
 
 		<hook file="network/networkfixed.lua" source_file="lib/managers/playermanager"/>
 		<hook file="network/networkfixed.lua" source_file="lib/network/base/networkpeer"/>
+		<hook file="network/networkfixed.lua" source_file="lib/tweak_data/blackmarket/projectilestweakdata"/>
 		<hook file="network/networkfixed.lua" source_file="lib/managers/blackmarketmanager"/>
 
 		<hook file="hd2offensive.lua" source_file="lib/units/weapons/projectiles/projectilebase"/>
