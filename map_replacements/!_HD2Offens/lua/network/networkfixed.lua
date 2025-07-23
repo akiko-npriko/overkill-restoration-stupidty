@@ -66,22 +66,56 @@ elseif RequiredScript== "lib/network/base/networkpeer" then
 
 		return old_NetworkPeer_grenade_id(self, ...)
 	end
-elseif RequiredScript== "lib/tweak_data/blackmarket/projectilestweakdata" then
-	local old_BlackMarketTweakData_get_index_from_projectile_id = BlackMarketTweakData.get_index_from_projectile_id
-	function BlackMarketTweakData:get_index_from_projectile_id(projectile_id, ...)
-		local grenade_td = tweak_data.blackmarket.projectiles[projectile_id]
 
-		if grenade_td.based_on then
-			for index, entry_name in ipairs(self._projectiles_index) do
+	local old_NetworkPeer_send = NetworkPeer.send
+	function NetworkPeer:send(func_name, p1, p2, p3, p4, p5, p6, p7, p8, p9, ...)
+		if func_name == "request_throw_projectile" then
+			local projectile_type = tweak_data.blackmarket:get_projectile_name_from_index(p1)
 
-				if entry_name == grenade_td.based_on then
-					return index
+			if tweak_data.blackmarket.projectiles[projectile_type].based_on then
+				if not self:has_custom_grenade(projectile_type) then
+					return
+				end
+			end
+		elseif func_name == "sync_throw_projectile" then
+			local projectile_type = tweak_data.blackmarket:get_projectile_name_from_index(p4)
+
+			if tweak_data.blackmarket.projectiles[projectile_type].based_on then
+				if not self:has_custom_grenade(projectile_type) then
+					return
+				end
+			end
+		elseif func_name == "sync_attach_projectile" then
+			local projectile_type = tweak_data.blackmarket:get_projectile_name_from_index(p8)
+
+			if tweak_data.blackmarket.projectiles[projectile_type].based_on then
+				if not self:has_custom_grenade(projectile_type) then
+					return
 				end
 			end
 		end
 
-		return old_BlackMarketTweakData_get_index_from_projectile_id(self, projectile_id, ...)
+		return old_NetworkPeer_send(self, func_name, p1, p2, p3, p4, p5, p6, p7, p8, p9, ...)
 	end
+
+	Hooks:PostHook(NetworkPeer, "init", "NetworkPeer_init_set_custom_grenades_tb", function(self)
+		self._custom_grenades = {}
+	end)
+
+	function NetworkPeer:has_custom_grenade(projectile_type)
+		return self._custom_grenades[projectile_type]
+	end
+
+	function NetworkPeer:add_custom_grenade(projectile_type)
+		self._custom_grenades[projectile_type] = true
+	end
+
+	Hooks:Add("NetworkReceivedData", "NetworkReceivedData_SyncPeerCustomGrenade", function(sender, message, data)
+		if message == "sync_local_custom_grenade" then
+			local peer = managers.network:session():peer(sender)
+			peer:add_custom_grenade(data)
+		end
+	end)
 elseif RequiredScript== "lib/managers/blackmarketmanager" then	
 	local NewProjectiles_OutfitString_Block = BlackMarketManager.outfit_string
 
@@ -90,6 +124,10 @@ elseif RequiredScript== "lib/managers/blackmarketmanager" then
 		local _grenade = self:equipped_grenade()
 		if tweak_data.blackmarket.projectiles[_grenade].based_on then
 			s = s:gsub(_grenade, tweak_data.blackmarket.projectiles[_grenade].based_on or 'concussion')
+
+			if LuaNetworking then
+				LuaNetworking:SendToPeers("sync_local_custom_grenade", _grenade)
+			end
 		end
 		return s
 	end
