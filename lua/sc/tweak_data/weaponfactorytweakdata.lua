@@ -49305,15 +49305,18 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 		--Moved Liberator Changes here cause game just randomly crashed (L ME)
 		if self.wpn_fps_ass_liberator then
 			table.insert(self.wpn_fps_ass_liberator.uses_parts, "wpn_fps_upg_o_northtac_alt")
-        
-			self.parts.wpn_fps_upg_o_northtac.stance_mod.wpn_fps_ass_liberator = deep_clone(self.parts.wpn_fps_upg_o_northtac.stance_mod.wpn_fps_snp_tti)
-			self.parts.wpn_fps_upg_o_northtac.stance_mod.wpn_fps_ass_liberator.translation = self.parts.wpn_fps_upg_o_northtac.stance_mod.wpn_fps_ass_liberator.translation + Vector3(-0.1, 0, -0.5)
-        
-			self.parts.wpn_fps_upg_o_northtac_reddot.stance_mod.wpn_fps_ass_liberator = deep_clone(self.parts.wpn_fps_upg_o_northtac_reddot.stance_mod.wpn_fps_snp_tti)
-			self.parts.wpn_fps_upg_o_northtac_reddot.stance_mod.wpn_fps_ass_liberator.translation = self.parts.wpn_fps_upg_o_northtac_reddot.stance_mod.wpn_fps_ass_liberator.translation + Vector3(-0.1, 0, -0.5)
-        
-			self.parts.wpn_fps_upg_o_northtac_alt.stance_mod.wpn_fps_ass_liberator = deep_clone(self.parts.wpn_fps_upg_o_northtac_alt.stance_mod.wpn_fps_snp_tti)
-			self.parts.wpn_fps_upg_o_northtac_alt.stance_mod.wpn_fps_ass_liberator.translation = self.parts.wpn_fps_upg_o_northtac_alt.stance_mod.wpn_fps_ass_liberator.translation + Vector3(0, 0, 0.25)
+			if self.parts.wpn_fps_upg_o_northtac then
+				self.parts.wpn_fps_upg_o_northtac.stance_mod.wpn_fps_ass_liberator = deep_clone(self.parts.wpn_fps_upg_o_northtac.stance_mod.wpn_fps_snp_tti)
+				self.parts.wpn_fps_upg_o_northtac.stance_mod.wpn_fps_ass_liberator.translation = self.parts.wpn_fps_upg_o_northtac.stance_mod.wpn_fps_ass_liberator.translation + Vector3(-0.1, 0, -0.5)
+			end
+			if self.parts.wpn_fps_upg_o_northtac_reddot then
+				self.parts.wpn_fps_upg_o_northtac_reddot.stance_mod.wpn_fps_ass_liberator = deep_clone(self.parts.wpn_fps_upg_o_northtac_reddot.stance_mod.wpn_fps_snp_tti)
+				self.parts.wpn_fps_upg_o_northtac_reddot.stance_mod.wpn_fps_ass_liberator.translation = self.parts.wpn_fps_upg_o_northtac_reddot.stance_mod.wpn_fps_ass_liberator.translation + Vector3(-0.1, 0, -0.5)
+			end
+			if self.parts.wpn_fps_upg_o_northtac_alt then 
+				self.parts.wpn_fps_upg_o_northtac_alt.stance_mod.wpn_fps_ass_liberator = deep_clone(self.parts.wpn_fps_upg_o_northtac_alt.stance_mod.wpn_fps_snp_tti)
+				self.parts.wpn_fps_upg_o_northtac_alt.stance_mod.wpn_fps_ass_liberator.translation = self.parts.wpn_fps_upg_o_northtac_alt.stance_mod.wpn_fps_ass_liberator.translation + Vector3(0, 0, 0.25)
+			end
 		end
 		
 	end
