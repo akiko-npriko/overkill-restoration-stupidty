@@ -49279,11 +49279,12 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.keep_damage = true
 		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.desc_id = "bm_heavy_ap_weapon_sc_desc"
 		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.no_cull = true
-		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.stats = {value = 12, spread = 100, recoil = 100, damage = 1300}
+		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.stats = {value = 12, spread = 100, recoil = 100, damage = 400}
 		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.custom_stats = {
 			armor_piercing_override = 1,
 			can_shoot_through_enemy = true,
 			can_shoot_through_enemy_unlim = true,
+			alt_dmg_mult = 10,
 			can_shoot_through_wall = true,
 			can_shoot_through_shield = true,
 			can_shoot_through_titan_shield = true,
