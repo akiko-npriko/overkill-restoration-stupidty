@@ -579,6 +579,116 @@
 				<file :name="e_framing_frame/stage_3/nav_manager_data.nav_data"/>
 				<file :name="skm/skm_big2/nav_manager_data.nav_data"/>
 			</group>
+			
+			<group :name="payday2/characters/">
+				<file :name="npc_acc_cage_bag_1/npc_acc_cage_bag_1.model"/>
+				<file :name="npc_acc_loot_bag_1/npc_acc_loot_bag_1.model"/>
+				<file :name="npc_acc_tools_bag_1/npc_acc_tools_bag_1.model"/>
+				<file :name="npc_acc_tools_bag_large_1/npc_acc_tools_bag_large_1.model"/>
+			</group>
+			<!-- Unique Bag Loot 2 Stuff -->
+			<group :name="payday2/pickups/">
+				<file :name="gen_pku_cage_bag/gen_pku_cage_bag.material_config"/>
+
+				<file :name="gen_pku_lootbag/gen_pku_lootbag.material_config"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_bag_full_of_drugs.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_bat.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_bci.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_beast.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_biker.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_bombfd.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_cage.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_caustic.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_charge.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_cmoney.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_coke.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_cokeP.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_DBreaker.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_dentist.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_dragon.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_e1.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_e2.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_e3.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_e4.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_e5.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_e6.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_e7.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_e8.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_e9.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_e10.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_e11.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_e12.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_elephant.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_evidence.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_fireworks.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_fuckyou.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_garnet.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_gnome.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_gold.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_hcl.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_it.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_lad.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_LostA.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_martin.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_MayanG.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_meth.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_money.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_mrkbomb.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_muriatic.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_mus.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_necklace.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_pig.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_pills.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_placeholder.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_precious.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_present.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_prototype.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_rome.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_samurai.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_shoes.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_snob.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_snobhq.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_snobv.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_supreme.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_tablet.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_TeaSet.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_thediamond.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_toast.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_toothbrush.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_toy.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_turret.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_turret_ammo.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_vlad.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_vnuke.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_vr.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_water.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_weapons.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_winch.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_df_yayo.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_il.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_il_MayanG.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_il_rome.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_il_tablet.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_il_vnuke.texture"/>
+				<file :name="gen_pku_lootbag/gen_pku_lootbag_nm_fireworks.texture"/>
+
+				<file :name="gen_pku_toolbag/gen_pku_toolbag.material_config"/>
+				<file :name="gen_pku_toolbag/gen_pku_toolbag_df.texture"/>
+				<file :name="gen_pku_toolbag/gen_pku_toolbag_df_lance.texture"/>
+
+				<file :name="gen_pku_toolbag_large/gen_pku_toolbag_large_df_beast.texture"/>
+				<file :name="gen_pku_toolbag_static/gen_pku_toolbag_static.material_config"/>
+			</group>
+
+			<file :name="payday2/props/stn_prop_evidence_set/stn_prop_evidence_set_df.texture"/>
+
+			<file :name="pd2_dlc_moon/props/moo_props_store_boxes/moo_props_store_boxes_vr_headset_df.texture"/>
+
+			<file :name="pd2_dlc_uno/props/uno_interactable_goldbag_open/uno_interactable_goldbag_open_df.texture"/>
+
+			<file :name="pd2_dlc1/pickups/gen_pku_explosivesbag/gen_pku_explosivesbag.material_config"/>
+
+			<file :name="pd2_mcmansion/props/mcm_prop_evidence_box/mcm_prop_evidence_box_df.texture"/>
 		<!--
 			<group :name="payday2/equipment/gen_interactable_sec_safe_1x1_titan/">
 				<file :name="gen_interactable_sec_safe_1x1_titan.object"/>

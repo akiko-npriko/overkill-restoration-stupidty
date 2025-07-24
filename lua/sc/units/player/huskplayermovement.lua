@@ -323,3 +323,9 @@ function HuskPlayerMovement:sync_call_civilian(civilian_unit)
 		civilian_unit:brain():set_objective(objective)
 	end
 end
+
+Hooks:PostHook(HuskPlayerMovement, "set_visual_carry", "UniqueLoot_HuskPlayerMovement_set_visual_carry", function(self, carry_id)
+	if carry_id and self._current_carry_unit and alive(self._current_carry_unit) then
+		CarryData.update_textures(self, carry_id, self._current_carry_unit, true)
+	end
+end)

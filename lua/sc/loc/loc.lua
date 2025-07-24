@@ -6297,6 +6297,8 @@ Hooks:Add("LocalizationManagerPostInit", "SC_Localization_Perk_Decks_Eng", funct
 	["menu_es_coins_progress"] = "Continental Coins",
 	["menu_cs_coins"] = "Continental Coins",
 	["bm_menu_btn_buy_mod"] = "Purchase with Continental Coins",
+	["hud_carry_lance_bag"] = "THERMAL LANCE",
+	["hud_int_hold_pickup_lance"] = "HOLD $BTN_INTERACT TO GRAB THE THERMAL LANCE",
 
 --AkimboPistols
 bm_w_x_b92fs         =       "Akimbo Beretta M92FS",
