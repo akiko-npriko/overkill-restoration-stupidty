@@ -97,11 +97,15 @@ end
 function RaycastWeaponBase:can_shoot_through_enemy_unlim()
 	return self._can_shoot_through_enemy_unlim
 end
+function RaycastWeaponBase:can_shoot_through_wall_unlim()
+	return self._can_shoot_through_wall_unlim
+end
 
 function RaycastWeaponBase:_collect_hits(from, to)
 	local setup_data = {
 		stop_on_impact = self:bullet_class().stop_on_impact,
 		can_shoot_through_wall = self:can_shoot_through_wall(),
+		can_shoot_through_wall_unlim = self:can_shoot_through_wall_unlim(),
 		can_shoot_through_shield = self:can_shoot_through_shield(),
 		can_shoot_through_titan_shield = self:can_shoot_through_titan_shield(),
 		can_shoot_through_enemy = self:can_shoot_through_enemy(),
@@ -161,6 +165,7 @@ function RaycastWeaponBase.collect_hits(from, to, setup_data, weapon_unit)
 	end
 
 	local can_shoot_through_wall = setup_data.can_shoot_through_wall
+	local can_shoot_through_wall_unlim = setup_data.can_shoot_through_wall_unlim
 	local can_shoot_through_shield = setup_data.can_shoot_through_shield
 	local can_shoot_through_titan_shield = setup_data.can_shoot_through_titan_shield
 	local can_shoot_through_enemy = setup_data.can_shoot_through_enemy
@@ -174,8 +179,9 @@ function RaycastWeaponBase.collect_hits(from, to, setup_data, weapon_unit)
 	local is_semi_snp = can_shoot_through_shield and weap_base and weap_base.categories and not weap_base:is_category("amr") and weap_base:is_category("semi_snp", "dmr_l", "dmr_h") 
 
 	--Just set this immediately.
-	local ray_hits = can_shoot_through_wall and World:raycast_wall("ray", from, to, "slot_mask", bullet_slotmask, "ignore_unit", ignore_unit, "thickness", 40, "thickness_mask", wall_mask)
-		or World:raycast_all("ray", from, to, "slot_mask", bullet_slotmask, "ignore_unit", ignore_unit)
+	local ray_hits = (can_shoot_through_wall_unlim and can_shoot_through_wall and World:raycast_wall("ray", from, to, "slot_mask", bullet_slotmask, "ignore_unit", ignore_unit, "thickness", math.huge, "thickness_mask", wall_mask))
+		or (can_shoot_through_wall and World:raycast_wall("ray", from, to, "slot_mask", bullet_slotmask, "ignore_unit", ignore_unit, "thickness", 40, "thickness_mask", wall_mask))
+		or (World:raycast_all("ray", from, to, "slot_mask", bullet_slotmask, "ignore_unit", ignore_unit))
 
 	local unique_hits = {}
 	local enemies_hit = {}
