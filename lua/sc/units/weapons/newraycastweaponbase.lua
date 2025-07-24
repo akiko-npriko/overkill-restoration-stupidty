@@ -24,6 +24,75 @@ local FIRE_MODE_IDS = {
 }
 local is_pro = Global.game_settings and Global.game_settings.one_down
 
+WeaponLibNRCWBRegis = {}
+WeaponLibNRCWBRegis.init_registrators = WeaponLibNRCWBRegis.init_registrators or {}
+WeaponLibNRCWBRegis.weapon_registrators = WeaponLibNRCWBRegis.weapon_registrators or {}
+WeaponLibNRCWBRegis.part_registrators = WeaponLibNRCWBRegis.part_registrators or {}
+
+Hooks:PostHook(NewRaycastWeaponBase, "init", "weaponlib_newraycastweaponbase_init", function(self, unit)
+	for _, registrator in pairs(WeaponLibNRCWBRegis.init_registrators) do
+		registrator(self, unit)
+	end
+end)
+
+Hooks:PostHook(NewRaycastWeaponBase, "clbk_assembly_complete", "weaponlib_newraycastweaponbase_clbk_assembly_complete", function(self, clbk, parts, blueprint)
+	local weapon_data = self:weapon_tweak_data()
+	local weapon_factory_data = tweak_data.weapon.factory[self._factory_id]
+
+	tweak_data.weapon.factory[self._factory_id].animations = tweak_data.weapon.factory[self._factory_id].animations or {}
+
+	for _, registrator in pairs(WeaponLibNRCWBRegis.weapon_registrators) do
+		registrator(self, self:_weapon_tweak_data_id(), weapon_data, self._factory_id, weapon_factory_data)
+	end
+
+	for part_id, part in pairs(self._parts) do
+		local part_data = managers.weapon_factory:get_part_data_by_part_id_from_weapon(part_id, self._factory_id, self._blueprint)
+
+		for _, registrator in pairs(WeaponLibNRCWBRegis.part_registrators) do
+			registrator(self, part, part_id, part_data)
+		end
+	end
+end)
+
+-- Scopes
+table.insert(WeaponLibNRCWBRegis.init_registrators, function(self, unit)
+	self._scope_index_lookup = {}
+	self._scope_part_ids = {}
+	self._scope_steelsight_weapon_visible = {}
+	self._scope_effects = {}
+end)
+
+table.insert(WeaponLibNRCWBRegis.weapon_registrators, function(self, weapon_id, weapon_data, weapon_factory_id, weapon_factory_data)
+	self._scope_index_lookup = {}
+	self._scope_part_ids = {}
+	self._scope_steelsight_weapon_visible = {}
+	self._scope_effects = {}
+
+	self._scope_second_sight_setup_index = 2
+end)
+
+table.insert(WeaponLibNRCWBRegis.part_registrators, function(self, part, part_id, part_data)
+	local is_sight = part_data.type == "sight"
+	local is_second_sight = part_data.perks and table.contains(part_data.perks, "second_sight")
+
+	if is_sight or is_second_sight then
+		local index = 1
+		if not is_sight then
+			index = self._scope_second_sight_setup_index
+			self._scope_second_sight_setup_index = self._scope_second_sight_setup_index + 1
+		end
+
+		self._scope_index_lookup[part_id] = index
+		self._scope_part_ids[index] = part_id
+		self._scope_steelsight_weapon_visible[index] = part_data.ads_weapon_visible == nil and true or part_data.ads_weapon_visible
+		self._scope_effects[index] = part_data.ads_shader or "payday_off"
+	end
+end)
+
+function NewRaycastWeaponBase:set_visual_scope_index(scope_index)
+	self._visual_scope_index = scope_index
+end
+
 --Adds ability to define per weapon category AP skills.
 Hooks:PostHook(NewRaycastWeaponBase, "init", "ResExtraSkills", function(self)
 	--Since armor piercing chance is no longer used, lets use weapon category to determine armor piercing baseline.
@@ -2519,6 +2588,10 @@ end
 
 function NewRaycastWeaponBase:_set_parts_visible(visible)
 	if self._parts then
+		
+		local hide_weapon_base = visible == false
+		local hide_all_parts = hide_weapon_base
+	
 		local empty_s = Idstring("")
 		local anim_groups, is_visible = nil
 		local is_player = self._setup.user_unit == managers.player:player_unit()
@@ -2527,39 +2600,60 @@ function NewRaycastWeaponBase:_set_parts_visible(visible)
 		if is_player then
 			steelsight_swap_state = self._setup.user_unit:camera() and alive(self._setup.user_unit:camera():camera_unit()) and self._setup.user_unit:camera():camera_unit():base():get_steelsight_swap_state() or false
 		end
+		if not hide_all_parts then
+			hide_all_parts = not self:get_scope_steelsight_weapon_visible(self._visual_scope_index)
 
-		for part_id, data in pairs(self._parts) do
-			local unit = data.unit or data.link_to_unit
+			if not hide_all_parts then
+				for part_id, data in pairs(self._parts) do
+					local unit = data.unit or data.link_to_unit
 
-			if alive(unit) then
-				is_visible = visible and self:_is_part_visible(part_id)
-				is_visible = is_visible and (self._parts[part_id].steelsight_visible == nil or self._parts[part_id].steelsight_visible == steelsight_swap_state)
+					if alive(unit) then
+						is_visible = visible and self:_is_part_visible(part_id)
+						is_visible = is_visible and (self._parts[part_id].steelsight_visible == nil or self._parts[part_id].steelsight_visible == steelsight_swap_state)
 
-				unit:set_visible(is_visible)
+						unit:set_visible(is_visible)
 
-				if not visible and (not unit:base() or (unit:base().GADGET_TYPE ~= "second_sight" and unit:base().GADGET_TYPE ~= "simple_anim")) then
-					anim_groups = unit:anim_groups()
+						if not visible and (not unit:base() or (unit:base().GADGET_TYPE ~= "second_sight" and unit:base().GADGET_TYPE ~= "simple_anim")) then
+							anim_groups = unit:anim_groups()
 
-					for _, anim in ipairs(anim_groups) do
-						if anim ~= empty_s then
-							unit:anim_play_to(anim, 0)
-							unit:anim_stop()
+							for _, anim in ipairs(anim_groups) do
+								if anim ~= empty_s then
+									unit:anim_play_to(anim, 0)
+									unit:anim_stop()
+								end
+							end
+						end
+
+						if unit:digital_gui() then
+							unit:digital_gui():set_visible(visible)
+						end
+
+						if unit:digital_gui_upper() then
+							unit:digital_gui_upper():set_visible(visible)
+						end
+
+						if unit:digital_gui_thd() then
+							unit:digital_gui_thd():set_visible(visible)
 						end
 					end
 				end
+			end
+		end
+		if hide_all_parts then
+			for part_id, data in pairs(self._parts) do
+				local unit = data.unit or data.link_to_unit
 
-				if unit:digital_gui() then
-					unit:digital_gui():set_visible(visible)
-				end
-
-				if unit:digital_gui_upper() then
-					unit:digital_gui_upper():set_visible(visible)
-				end
-
-				if unit:digital_gui_thd() then
-					unit:digital_gui_thd():set_visible(visible)
+				if alive(unit) then
+					unit:set_visible(false)
+					self:_set_digital_gui_visibility(unit, false)
 				end
 			end
+		end
+
+		if hide_weapon_base then
+			self._unit:set_visible(false)
+		else
+			self._unit:set_visible(true)
 		end
 	end
 
@@ -2591,4 +2685,26 @@ if SKSWeaponBase then
 			self:weapon_tweak_data().animations.reload_name_id = "sks"
 		end
 	end
+end
+
+function NewRaycastWeaponBase:_set_digital_gui_visibility(unit, visible)
+	if unit:digital_gui() then
+		unit:digital_gui():set_visible(visible)
+	end
+
+	if unit:digital_gui_upper() then
+		unit:digital_gui_upper():set_visible(visible)
+	end
+
+	if unit:digital_gui_thd() then
+		unit:digital_gui_thd():set_visible(visible)
+	end
+end
+
+function NewRaycastWeaponBase:get_scope_steelsight_weapon_visible(scope_index)
+	return self._scope_steelsight_weapon_visible and (self._scope_steelsight_weapon_visible[scope_index] == nil and true or self._scope_steelsight_weapon_visible[scope_index])
+end
+
+function NewRaycastWeaponBase:get_scope_effect(scope_index)
+	return self._scope_effects and self._scope_effects[scope_index] or "payday_off"
 end

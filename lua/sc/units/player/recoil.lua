@@ -28,6 +28,64 @@ function FPCameraPlayerBase:init( unit )
 end
 --]]
 
+Hooks:PostHook(FPCameraPlayerBase, "init", "Weaponlibinit_cam", function(self, unit)
+	self:_set_scope_index(0)
+
+	self._resolution_changed_callback = callback(self, self, "resolution_changed")
+	managers.viewport:add_resolution_changed_func(self._resolution_changed_callback)
+end)
+
+local scope_effect_ids = Idstring("scope_effect_post")
+local color_off_ids = Idstring("color_off")
+
+function FPCameraPlayerBase:_set_scope_index(scope_index)
+	local last_scope_index = self._current_scope_index
+	self._current_scope_index = scope_index
+
+	if not (self._parent_unit) then return end
+	if not (self._parent_unit.inventory and self._parent_unit:inventory()) then return end
+	if not (self._parent_unit:inventory().equipped_unit and self._parent_unit:inventory():equipped_unit()) then return end
+
+	local equipped_weapon = self._parent_unit:inventory():equipped_unit()
+	local weapon_base = equipped_weapon:base()
+
+	if not weapon_base then return end
+
+	weapon_base:set_visual_scope_index(scope_index)
+	weapon_base:update_visibility_state()
+
+	if scope_index == 0 then
+		self._unit:set_visible(true)
+		for unit_id, unit_entry in pairs(self._unit:spawn_manager():spawned_units()) do
+			if alive(unit_entry.unit) then
+				unit_entry.unit:set_visible(true)
+			end
+		end
+
+		self._parent_unit:camera():viewport():vp():set_post_processor_effect("World", scope_effect_ids, color_off_ids)
+	else
+		local visible = weapon_base:get_scope_steelsight_weapon_visible(scope_index)
+		self._unit:set_visible(visible)
+		for unit_id, unit_entry in pairs(self._unit:spawn_manager():spawned_units()) do
+			if alive(unit_entry.unit) then
+				unit_entry.unit:set_visible(visible)
+			end
+		end
+
+		local scope_overlay = false
+		local scope_overlay_border_color = false
+		if scope_overlay and scope_overlay_border_color then
+			
+		end
+
+		self._parent_unit:camera():viewport():vp():set_post_processor_effect("World", scope_effect_ids, Idstring(weapon_base:get_scope_effect(scope_index)))
+	end
+end
+
+function FPCameraPlayerBase:resolution_changed()
+	self:_set_scope_index(self._current_scope_index)
+end
+
 --Add limit constraints to recoil, to allow for recoil to occur with a bipod.
 function FPCameraPlayerBase:_update_movement(t, dt)
 	local data = self._camera_properties
@@ -429,6 +487,44 @@ local bezier_values2 = {
 	1,
 	1
 }
+
+Hooks:PreHook(FPCameraPlayerBase, "_update_stance", "Weaponlib_update_stance_cam", function(self, t, dt)
+	if not (self._parent_unit) then return end
+	if not (self._parent_unit.inventory and self._parent_unit:inventory()) then return end
+	if not (self._parent_unit:inventory().equipped_unit and self._parent_unit:inventory():equipped_unit()) then return end
+
+	local equipped_weapon = self._parent_unit:inventory():equipped_unit()
+	local weapon_base = equipped_weapon:base()
+
+	local in_steelsight = self._parent_movement_ext._current_state:in_steelsight()
+
+	local last_scope_index = self._current_scope_index
+	local new_scope_index = 0
+
+	if in_steelsight then
+		new_scope_index = weapon_base:is_second_sight_on() and 2 or 1
+	end
+
+	local scope_changed = last_scope_index ~= new_scope_index
+
+	if scope_changed and self._shoulder_stance.transition then
+		local trans_data = self._shoulder_stance.transition
+		local elapsed_t = t - trans_data.start_t
+
+		if trans_data.duration < elapsed_t then
+			self:_set_scope_index(new_scope_index)
+		else
+			local progress_smooth = elapsed_t / trans_data.duration
+
+			if last_scope_index == 0 and progress_smooth >= trans_data.steelsight_swap_progress_trigger then
+				self:_set_scope_index(new_scope_index)
+			elseif last_scope_index ~= 0 and progress_smooth >= (1 - trans_data.steelsight_swap_progress_trigger) then
+				self:_set_scope_index(0)
+			end
+		end
+	end
+end)
+
 --Still wonky when swapping to your main optic (culls too early)
 --Also stuff to make ADS transitions less "on-rails"
 Hooks:PostHook(FPCameraPlayerBase, "_update_stance", "ResFixSecondSight", function(self, t, dt)
@@ -504,6 +600,12 @@ Hooks:PostHook(FPCameraPlayerBase, "_update_stance", "ResFixSecondSight", functi
 
 		end
 	end
+end)
+
+Hooks:PostHook(FPCameraPlayerBase, "destroy", "Weaponlib_destroy_cam", function(self, unit)
+	managers.viewport:remove_resolution_changed_func(self._resolution_changed_callback)
+
+	self:_set_scope_index(0)
 end)
 
 --For controllers

@@ -49257,6 +49257,8 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 		self.parts.wpn_fps_ass_temple_o_dummy.desc_id = "bm_wp_upg_o_4"
 		self.parts.wpn_fps_ass_temple_o_dummy.stats = { value = 0, zoom = 30 }
 		self.parts.wpn_fps_ass_temple_o_dummy.custom_stats = nil
+		self.parts.wpn_fps_ass_temple_o_dummy.ads_weapon_visible = false
+		self.parts.wpn_fps_ass_temple_o_dummy.steelsight_visible = false
 	end
 	if self.parts.wpn_fps_upg_o_iuhPistolSniperScope then
 		self.parts.wpn_fps_upg_o_iuhPistolSniperScope.supported = true
@@ -49264,6 +49266,8 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 		self.parts.wpn_fps_upg_o_iuhPistolSniperScope.desc_id = "bm_wp_upg_o_6"
 		self.parts.wpn_fps_upg_o_iuhPistolSniperScope.stats = { value = 0, zoom = 50 }
 		self.parts.wpn_fps_upg_o_iuhPistolSniperScope.custom_stats = nil
+		self.parts.wpn_fps_upg_o_iuhPistolSniperScope.ads_weapon_visible = false
+		self.parts.wpn_fps_upg_o_iuhPistolSniperScope.steelsight_visible = false
 	end
 	if self.parts.wpn_fps_upg_o_iuhPSO1Scope then
 		self.parts.wpn_fps_upg_o_iuhPSO1Scope.supported = true
@@ -49271,6 +49275,9 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 		self.parts.wpn_fps_upg_o_iuhPSO1Scope.desc_id = "bm_wp_upg_o_6"
 		self.parts.wpn_fps_upg_o_iuhPSO1Scope.stats = { value = 0, zoom = 50 }
 		self.parts.wpn_fps_upg_o_iuhPSO1Scope.custom_stats = nil
+		self.parts.wpn_fps_upg_o_iuhPSO1Scope.ads_weapon_visible = false
+		self.parts.wpn_fps_upg_o_iuhPSO1Scope.ads_shader = "color_night_vision"
+		self.parts.wpn_fps_upg_o_iuhPSO1Scope.steelsight_visible = false
 	end
 	
 	if self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound then
