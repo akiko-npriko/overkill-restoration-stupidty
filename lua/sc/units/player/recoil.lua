@@ -72,12 +72,6 @@ function FPCameraPlayerBase:_set_scope_index(scope_index)
 			end
 		end
 
-		local scope_overlay = false
-		local scope_overlay_border_color = false
-		if scope_overlay and scope_overlay_border_color then
-			
-		end
-
 		self._parent_unit:camera():viewport():vp():set_post_processor_effect("World", scope_effect_ids, Idstring(weapon_base:get_scope_effect(scope_index)))
 	end
 end
