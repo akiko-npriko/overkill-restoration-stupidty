@@ -49295,6 +49295,7 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 			armor_piercing_override = 1,
 			can_shoot_through_enemy = true,
 			can_shoot_through_enemy_unlim = true,
+			can_shoot_through_wall_unlim = true,
 			alt_dmg_mult = 10,
 			can_shoot_through_wall = true,
 			can_shoot_through_shield = true,
