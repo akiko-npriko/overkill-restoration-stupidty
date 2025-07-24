@@ -229,6 +229,9 @@ function RaycastWeaponBase.collect_hits(from, to, setup_data, weapon_unit)
 			
 			setup_data.has_hit_wall = setup_data.has_hit_wall or hit.unit:in_slot(wall_mask)
 			setup_data.has_hit_enemy = not can_shoot_through_enemy_unlim and (setup_data.has_hit_enemy or hit_enemy)
+			if can_shoot_through_wall_unlim then
+				setup_data.has_hit_wall = nil
+			end
 		end
 	end
 
