@@ -30469,6 +30469,7 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 				self.sickle.sounds.magazine_empty = "wp_sentrygun_swap_ammo"
 				self.sickle.sounds.spin_start = "hailstorm_shotgun_fire_charge"
 				self.sickle.sounds.spin_end = "swatturret_spin_stop"
+				self.sickle.sounds.stop_fire = "judge_x_fire"
 				self.sickle.recoil_values = {
 					{ 80, 60 },
 					7.5,
@@ -34814,7 +34815,10 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 						weap.damage_falloff.start_dist = math.floor(((weap.damage_falloff.start_dist / 100) * 0.8)) * 100
 					end
 				end
-				if table.contains(weap.categories, "pistol") then
+				if table.contains(weap.recategorize, "handcannon") then
+					weap.damage_falloff.start_dist = math.floor(((weap.damage_falloff.start_dist / 100) * 0.8)) * 100
+					weap.damage_falloff.end_dist = math.floor(((weap.damage_falloff.end_dist / 100) * 0.9)) * 100
+				elseif table.contains(weap.categories, "pistol") then
 					weap.damage_falloff.start_dist = math.floor(((weap.damage_falloff.start_dist / 100) * 0.9)) * 100
 					weap.damage_falloff.end_dist = math.floor(((weap.damage_falloff.end_dist / 100) * 0.9)) * 100
 				end
