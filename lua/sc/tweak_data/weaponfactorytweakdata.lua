@@ -49278,6 +49278,8 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 		self.parts.wpn_fps_upg_o_iuhPSO1Scope.ads_weapon_visible = false
 		self.parts.wpn_fps_upg_o_iuhPSO1Scope.ads_shader = "color_night_vision_blue"
 		--self.parts.wpn_fps_upg_o_iuhPSO1Scope.ads_shader = "color_night_vision"
+		--self.parts.wpn_fps_upg_o_iuhPSO1Scope.ads_shader = "scope_infrared"
+		--self.parts.wpn_fps_upg_o_iuhPSO1Scope.ads_shader = "color_FLIR"
 		self.parts.wpn_fps_upg_o_iuhPSO1Scope.steelsight_visible = false
 		--self.parts.wpn_fps_upg_o_iuhPSO1Scope.perks = {"infrared"}
 	end
