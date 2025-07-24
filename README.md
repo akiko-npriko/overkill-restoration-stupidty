@@ -358,6 +358,12 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/43313
  - WeaponLib
 	- https://modworkshop.net/mod/24177
+ - Astolfo Beneath The Mountain Masterpiece
+	- https://modworkshop.net/mod/37522
+ - Astolfo Computer Screens
+	- https://modworkshop.net/mod/34840
+ - Unique Loot 2
+	- https://modworkshop.net/mod/27711
 	 
 # Gunsss
  - Do later there are too many i hate myself...
