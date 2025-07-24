@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="core/shaders/post_processor" extension="post_processor">
+		<search>
+			<?xml version="1.0" encoding="utf-8" ?>
+			<post_processor/>
+		</search>
+
+		<target mode="attach">
+			<effect name="scope_infrared">
+				<combiner diffuse_texture="contour_target" dst="low_target_1" material="post_scope_infrared" render_template="post_night_vision"/>
+                <combiner diffuse_texture="low_target_1" dst="low_target_2" render_template="post_contour_mask" depth_stencil_target="scene_depth_stencil"/>
+
+                <combiner src_respect_viewport="false" dst_respect_viewport="false" diffuse_texture="low_target_6" dst="lut_target" render_template="post_color_grading_prepare" material="cg_scope_infrared" scriptable="lut_settings"/>
+                <combiner diffuse_texture="low_target_2" self_illumination_texture="lut_target" dst="back_buffer" render_template="post_color_grading" material="cg_scope_infrared" scriptable="lut_settings"/>
+			</effect>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="core/shaders/post_processor" extension="post_processor">
+		<search>
+			<?xml version="1.0" encoding="utf-8" ?>
+			<post_processor/>
+			<materials/>
+		</search>
+
+		<target mode="attach">
+			<material name="cg_scope_infrared">
+				<variable name="LUT_settings_a" type="vector3" value="0 0 0"/>
+				<variable name="LUT_settings_b" type="vector3" value="0 0 0"/>
+				<variable name="contrast" type="scalar" value="0"/>
+				<reflection_texture file="core/textures/cg_he"/> <!-- Fire LUT -->
+				<filter_color_texture file="color_grading/infrared"/>
+			</material>
+			<material name="post_scope_infrared">
+				<filter_color_texture file="color_grading/infrared"/>
+                <variable name="scanline_settings" type="vector3" value="2 0.025 0"/>
+                <variable name="noise_settings_a" type="vector3" value="1 100 2"/>
+                <variable name="noise_settings_b" type="vector3" value="0.04 1 0"/>
+                <variable name="vignette_settings_a" type="vector3" value="1.1 0 0"/>
+                <variable name="vignette_settings_b" type="vector3" value="0.008 0.8 2"/>
+			</material>
+		</target>
+	</tweak>
+</tweaks>
