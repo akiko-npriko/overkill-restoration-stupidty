@@ -53,6 +53,8 @@ Some Normalish Stuff:
 
 - Brought back rpg grunt mutator
 
+- Added thermalish color grading (https://modworkshop.net/mod/43313)
+
 - Support for VxWolf's HK G11, Railgun (Roach), OTWD Flaregun, and Cobray Terminator
  - Cobray Terminator can jam
 
@@ -352,6 +354,10 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/27547
  - Graphical Refresh (Reshade)
 	- https://modworkshop.net/mod/50493
+ - FLIR Vision Color Grading
+	- https://modworkshop.net/mod/43313
+ - WeaponLib
+	- https://modworkshop.net/mod/24177
 	 
 # Gunsss
  - Do later there are too many i hate myself...
