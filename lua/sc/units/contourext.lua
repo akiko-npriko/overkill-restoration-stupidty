@@ -18,6 +18,12 @@ ContourExt._types.medic_buff = {
 	fadeout = 2,
 	color = Vector3(255, 140, 0)
 }
+ContourExt._types.mark_infrared = {
+	priority = 1,
+	fadeout = 0,
+	material_swap_required = true,
+	color = Vector3(0.5, 0.5, 1)
+}
 ContourExt._types.deployable_blackout = { --for autumn's deployable disabling ability
 	priority = 1,
 	color = Vector3(0.5,0,1)
