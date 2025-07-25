@@ -5626,3 +5626,13 @@ if AdvMov then --Everything here was originally from Solo Queue Pixy and none of
 	end
 
 end
+
+Hooks:PostHook(PlayerStandard, "_update_fwd_ray", "InfraredHighlighting__update_fwd_ray", function(self)
+	if alive(self._equipped_unit) and self._equipped_unit:base() then
+		if self:full_steelsight() and self._equipped_unit:base().check_infrared_highlight and not self._equipped_unit:base():is_second_sight_on() then
+			self._equipped_unit:base():check_infrared_highlight()
+		elseif self:full_steelsight() and self._equipped_unit:base().check_second_infrared_highlight then
+			self._equipped_unit:base():check_second_infrared_highlight()
+		end
+	end
+end)

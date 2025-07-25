@@ -179,9 +179,8 @@ function RaycastWeaponBase.collect_hits(from, to, setup_data, weapon_unit)
 	local is_semi_snp = can_shoot_through_shield and weap_base and weap_base.categories and not weap_base:is_category("amr") and weap_base:is_category("semi_snp", "dmr_l", "dmr_h") 
 
 	--Just set this immediately.
-	local ray_hits = (can_shoot_through_wall_unlim and can_shoot_through_wall and World:raycast_wall("ray", from, to, "slot_mask", bullet_slotmask, "ignore_unit", ignore_unit, "thickness", math.huge, "thickness_mask", wall_mask))
-		or (can_shoot_through_wall and World:raycast_wall("ray", from, to, "slot_mask", bullet_slotmask, "ignore_unit", ignore_unit, "thickness", 40, "thickness_mask", wall_mask))
-		or (World:raycast_all("ray", from, to, "slot_mask", bullet_slotmask, "ignore_unit", ignore_unit))
+	local ray_hits = can_shoot_through_wall and not can_shoot_through_wall_unlim and World:raycast_wall("ray", from, to, "slot_mask", bullet_slotmask, "ignore_unit", ignore_unit, "thickness", 40, "thickness_mask", wall_mask)
+		or World:raycast_all("ray", from, to, "slot_mask", bullet_slotmask, "ignore_unit", ignore_unit)
 
 	local unique_hits = {}
 	local enemies_hit = {}
@@ -208,7 +207,7 @@ function RaycastWeaponBase.collect_hits(from, to, setup_data, weapon_unit)
 
 			if (setup_data.has_hit_enemy or not can_shoot_through_enemy and is_enemy) or (armour[hit.body:name():key()] and armor_piercing_chance <= 0 ) then
 				break
-			elseif setup_data.has_hit_wall or (not can_shoot_through_wall and in_slot_func(unit, wall_mask) and (has_ray_type_func(hit.body, ai_vision_ids) or has_ray_type_func(hit.body, bulletproof_ids))) then
+			elseif (setup_data.has_hit_wall or (not can_shoot_through_wall and in_slot_func(unit, wall_mask) and (has_ray_type_func(hit.body, ai_vision_ids) or has_ray_type_func(hit.body, bulletproof_ids)))) and not can_shoot_through_wall_unlim then
 				break
 			elseif hit.unit:in_slot(shield_mask) and (not can_shoot_through_shield or (is_semi_snp and distance > near_falloff_distance)) then
 				break
@@ -229,9 +228,6 @@ function RaycastWeaponBase.collect_hits(from, to, setup_data, weapon_unit)
 			
 			setup_data.has_hit_wall = setup_data.has_hit_wall or hit.unit:in_slot(wall_mask)
 			setup_data.has_hit_enemy = not can_shoot_through_enemy_unlim and (setup_data.has_hit_enemy or hit_enemy)
-			if can_shoot_through_wall_unlim then
-				setup_data.has_hit_wall = nil
-			end
 		end
 	end
 

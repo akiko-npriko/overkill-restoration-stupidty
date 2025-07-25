@@ -1053,6 +1053,8 @@ function NewRaycastWeaponBase:_update_stats_values(disallow_replenish, ammo_data
 	self._nato = self:weapon_tweak_data().nato
 	self._plasma_b = self:weapon_tweak_data().plasma_b
 	self._terminator = self:weapon_tweak_data().terminator
+	self._can_infrared_highlight = managers.weapon_factory:has_perk("infrared_highlight", self._factory_id, self._blueprint)
+	self._can_second_infrared_highlight = managers.weapon_factory:has_perk("second_infrared_highlight", self._factory_id, self._blueprint)
 
 	if not self:is_npc() then
 		local weapon = {
@@ -2721,4 +2723,35 @@ end
 
 function NewRaycastWeaponBase:get_scope_effect(scope_index)
 	return self._scope_effects and self._scope_effects[scope_index] or "payday_off"
+end
+
+function NewRaycastWeaponBase:gen_infrared_highlight()
+	local enemiesaa = managers.enemy:all_enemies() or {}
+	local civiliansaa = managers.enemy:all_civilians() or {}
+	for u_key, u_data in pairs(enemiesaa) do
+		if u_data.unit and alive(u_data.unit) then
+			u_data.unit:contour():add("mark_infrared", false)
+		end
+	end
+	for u_key, u_data in pairs(civiliansaa) do
+		if u_data.unit and alive(u_data.unit) then
+			u_data.unit:contour():add("mark_infrared", false)
+		end
+	end
+end
+
+function NewRaycastWeaponBase:check_infrared_highlight()
+	if not self._can_infrared_highlight then
+		return
+	end
+
+	NewRaycastWeaponBase:gen_infrared_highlight()
+end
+
+function NewRaycastWeaponBase:check_second_infrared_highlight()
+	if not self._can_second_infrared_highlight then
+		return
+	end
+
+	NewRaycastWeaponBase:gen_infrared_highlight()
 end
