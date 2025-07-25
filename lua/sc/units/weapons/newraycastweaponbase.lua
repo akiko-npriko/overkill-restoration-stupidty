@@ -60,6 +60,7 @@ table.insert(WeaponLibNRCWBRegis.init_registrators, function(self, unit)
 	self._scope_part_ids = {}
 	self._scope_steelsight_weapon_visible = {}
 	self._scope_effects = {}
+	self._scope_overlays = {}
 end)
 
 table.insert(WeaponLibNRCWBRegis.weapon_registrators, function(self, weapon_id, weapon_data, weapon_factory_id, weapon_factory_data)
@@ -67,6 +68,7 @@ table.insert(WeaponLibNRCWBRegis.weapon_registrators, function(self, weapon_id, 
 	self._scope_part_ids = {}
 	self._scope_steelsight_weapon_visible = {}
 	self._scope_effects = {}
+	self._scope_overlays = {}
 
 	self._scope_second_sight_setup_index = 2
 end)
@@ -86,6 +88,7 @@ table.insert(WeaponLibNRCWBRegis.part_registrators, function(self, part, part_id
 		self._scope_part_ids[index] = part_id
 		self._scope_steelsight_weapon_visible[index] = part_data.ads_weapon_visible == nil and true or part_data.ads_weapon_visible
 		self._scope_effects[index] = part_data.ads_shader or "payday_off"
+		self._scope_overlays[index] = part_data.ads_overlay
 	end
 end)
 
@@ -2723,6 +2726,15 @@ end
 
 function NewRaycastWeaponBase:get_scope_effect(scope_index)
 	return self._scope_effects and self._scope_effects[scope_index] or "payday_off"
+end
+
+function NewRaycastWeaponBase:get_scope_overlay(scope_index)
+	return self._scope_overlays and self._scope_overlays[scope_index] or nil
+end
+
+function NewRaycastWeaponBase:get_scope_overlay_border_color(scope_index)
+	--return self._scope_overlay_border_colors and self._scope_overlay_border_colors[scope_index] or Color.black
+	return Color.black
 end
 
 function NewRaycastWeaponBase:gen_infrared_highlight()

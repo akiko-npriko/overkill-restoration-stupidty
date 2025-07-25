@@ -49276,6 +49276,7 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 		self.parts.wpn_fps_upg_o_iuhPSO1Scope.stats = { value = 0, zoom = 30 }
 		self.parts.wpn_fps_upg_o_iuhPSO1Scope.custom_stats = nil
 		self.parts.wpn_fps_upg_o_iuhPSO1Scope.ads_weapon_visible = false
+		self.parts.wpn_fps_upg_o_iuhPSO1Scope.ads_overlay = "guis/scope_overlay/iuhPSO1ScopeOverlay"
 		--self.parts.wpn_fps_upg_o_iuhPSO1Scope.ads_shader = "color_night_vision_blue"
 		self.parts.wpn_fps_upg_o_iuhPSO1Scope.ads_shader = "color_night_vision"
 		--self.parts.wpn_fps_upg_o_iuhPSO1Scope.ads_shader = "scope_infrared"
@@ -49291,6 +49292,7 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 		self.parts.wpn_fps_upg_o_iuhPSO2Scope.stats = { value = 0, zoom = 50 }
 		self.parts.wpn_fps_upg_o_iuhPSO2Scope.custom_stats = nil
 		self.parts.wpn_fps_upg_o_iuhPSO2Scope.ads_weapon_visible = false
+		self.parts.wpn_fps_upg_o_iuhPSO2Scope.ads_overlay = "guis/scope_overlay/iuhPSO1ScopeOverlay"
 		--self.parts.wpn_fps_upg_o_iuhPSO2Scope.ads_shader = "color_night_vision_blue"
 		--self.parts.wpn_fps_upg_o_iuhPSO2Scope.ads_shader = "color_night_vision"
 		self.parts.wpn_fps_upg_o_iuhPSO2Scope.ads_shader = "scope_infrared"

@@ -30,6 +30,50 @@ end
 
 Hooks:PostHook(FPCameraPlayerBase, "init", "Weaponlibinit_cam", function(self, unit)
 	self:_set_scope_index(0)
+	
+	self._workspace = managers.hud:workspace("workspace")
+	self._panel = self._workspace:panel():child("scope_overlay_panel") or self._workspace:panel():panel({
+		name = "scope_overlay_panel",
+		layer = -10
+	})
+	self._scope_bitmap = self._panel:bitmap({
+		name = "scope_bitmap",
+		visible = true,
+		valign = "center",
+		layer = 0,
+		color = Color.white
+	})
+
+	self._top_black = self._panel:rect({
+		name = "top_black",
+		visible = true,
+		valign = "center",
+		layer = 0,
+		color = Color.black
+	})
+	self._right_black = self._panel:rect({
+		name = "right_black",
+		visible = true,
+		valign = "center",
+		layer = 0,
+		color = Color.black
+	})
+	self._bottom_black = self._panel:rect({
+		name = "bottom_black",
+		visible = true,
+		valign = "center",
+		layer = 0,
+		color = Color.black
+	})
+	self._left_black = self._panel:rect({
+		name = "left_black",
+		visible = true,
+		valign = "center",
+		layer = 0,
+		color = Color.black
+	})
+
+	self._panel:set_visible(false)
 
 	self._resolution_changed_callback = callback(self, self, "resolution_changed")
 	managers.viewport:add_resolution_changed_func(self._resolution_changed_callback)
@@ -71,12 +115,58 @@ function FPCameraPlayerBase:_set_scope_index(scope_index)
 				unit_entry.unit:set_visible(visible)
 			end
 		end
+		
+		local scope_overlay = weapon_base:get_scope_overlay(scope_index)
+		local scope_overlay_border_color = Color.black
+		if scope_overlay and scope_overlay_border_color then
+			self._scope_bitmap:set_image(scope_overlay)
+
+			local scope_width = self._scope_bitmap:texture_width()
+			local scope_height = self._scope_bitmap:texture_height()
+			local scope_aspect_ratio = scope_width/scope_height
+
+			local width = self._panel:w()
+			local height = self._panel:h()
+			local aspect_ratio = width/height
+
+			if aspect_ratio < scope_aspect_ratio then
+				scope_width = width
+				scope_height = width / scope_aspect_ratio
+			else
+				scope_height = height
+				scope_width = height * scope_aspect_ratio
+			end
+
+			self._scope_bitmap:set_size(scope_width, scope_height)
+			self._scope_bitmap:set_center(width/2, height/2)
+
+			local vertical_bar_height = (height - scope_height)/2
+			local horizontal_bar_width = (width - scope_width)/2
+
+			self._top_black:set_size(width,vertical_bar_height)
+			self._top_black:set_lefttop(0, 0)
+			self._top_black:set_color(scope_overlay_border_color)
+
+			self._right_black:set_size(horizontal_bar_width, height)
+			self._right_black:set_rightbottom(width, height)
+			self._right_black:set_color(scope_overlay_border_color)
+
+			self._bottom_black:set_size(width, vertical_bar_height)
+			self._bottom_black:set_rightbottom(width, height)
+			self._bottom_black:set_color(scope_overlay_border_color)
+
+			self._left_black:set_size(horizontal_bar_width, height)
+			self._left_black:set_lefttop(0, 0)
+			self._left_black:set_color(scope_overlay_border_color)
+		end
 
 		self._parent_unit:camera():viewport():vp():set_post_processor_effect("World", scope_effect_ids, Idstring(weapon_base:get_scope_effect(scope_index)))
 	end
 end
 
 function FPCameraPlayerBase:resolution_changed()
+	self._panel:set_size(self._workspace:width(), self._workspace:height())
+
 	self:_set_scope_index(self._current_scope_index)
 end
 
@@ -483,6 +573,15 @@ local bezier_values2 = {
 }
 
 Hooks:PreHook(FPCameraPlayerBase, "_update_stance", "Weaponlib_update_stance_cam", function(self, t, dt)
+	if self._workspace then
+		if self._last_workspace_width ~= self._workspace:width() or self._last_workspace_height ~= self._workspace:height() then
+			self:resolution_changed()
+
+			self._last_workspace_width = self._workspace:width()
+			self._last_workspace_height = self._workspace:height()
+		end
+	end
+
 	if not (self._parent_unit) then return end
 	if not (self._parent_unit.inventory and self._parent_unit:inventory()) then return end
 	if not (self._parent_unit:inventory().equipped_unit and self._parent_unit:inventory():equipped_unit()) then return end
@@ -516,6 +615,12 @@ Hooks:PreHook(FPCameraPlayerBase, "_update_stance", "Weaponlib_update_stance_cam
 				self:_set_scope_index(0)
 			end
 		end
+	end
+
+	if last_scope_index == 0 or self._parent_unit:camera():viewport() ~= managers.viewport:first_active_viewport() then
+		self._panel:set_visible(false)
+	elseif last_scope_index ~= 0 and weapon_base:get_scope_overlay(last_scope_index) then
+		self._panel:set_visible(true)
 	end
 end)
 
@@ -598,8 +703,8 @@ end)
 
 Hooks:PostHook(FPCameraPlayerBase, "destroy", "Weaponlib_destroy_cam", function(self, unit)
 	managers.viewport:remove_resolution_changed_func(self._resolution_changed_callback)
-
 	self:_set_scope_index(0)
+	self._panel:set_visible(false)
 end)
 
 --For controllers
