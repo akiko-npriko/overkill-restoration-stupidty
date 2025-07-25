@@ -1,7 +1,7 @@
 -- Target texture, Target zoom value and Target attachment ID  (Note. The lower value ZoomValue the more zoom power you get. Try value around 0.5 - 0.001 or more)
-local TargetTexture = Idstring("guis/scopeoverlay/iuhPSO2ScopeOverlay")
-local ZoomValue = 1
-local TargetScopeID = "wpn_fps_upg_o_iuhPSO2Scope"
+local TargetTexture = Idstring("guis/scopeoverlay/iuhPSO1ScopeOverlay")
+local ZoomValue = 0.35
+local TargetScopeID = "wpn_fps_upg_o_iuhPSO1Scope"
 
 local old_get_zoom_fov = PlayerStandard.get_zoom_fov
 
