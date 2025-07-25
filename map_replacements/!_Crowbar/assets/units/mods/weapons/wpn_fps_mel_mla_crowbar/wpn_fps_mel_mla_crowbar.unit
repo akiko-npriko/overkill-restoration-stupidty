@@ -1,0 +1,9 @@
+<unit type="wpn" slot="1">
+	<object file="units/mods/weapons/wpn_fps_mel_mla_crowbar/wpn_fps_mel_mla_crowbar" />
+	<dependencies>
+		<depends_on bnk="soundbanks/melee_mining_pick"/>
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+	</extensions>
+</unit>
