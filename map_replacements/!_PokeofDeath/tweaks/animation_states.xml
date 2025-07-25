@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+        <search>
+            <xml/>
+            <state name="fps/melee_start"/>
+            <anim name="melee_start" weight="melee_knife"/>
+        </search>
+        <target mode="append">
+            <anim name="zd_poke_start" weight="zd_poke"/> 
+        </target>
+    </tweak>
+    
+    <tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+        <search>
+            <xml/>
+            <state name="fps/melee_charge"/>
+            <anim name="melee_charge_var2" weight="melee_knife * charge_lerp"/>
+        </search>
+        <target mode="append">
+            <anim name="zd_poke_charge"                 weight="zd_poke * (1-charge_lerp)"/>
+            <anim name="zd_poke_charge_var2"            weight="zd_poke * charge_lerp"/>
+        </target>
+    </tweak>
+    
+    <tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+        <search>
+            <xml/>
+            <state name="fps/melee_attack"/>
+            <anim name="melee_attack_var3" weight="melee_knife * var3"/>
+        </search>
+        <target mode="append">
+            <anim name="zd_poke_attack_var1"             weight="zd_poke * var1"/>  
+			<anim name="zd_poke_attack_var1"             weight="zd_poke * var2"/>  
+			<anim name="zd_poke_attack_var1"             weight="zd_poke * var3"/>  
+			<anim name="zd_poke_attack_var1"             weight="zd_poke * var4"/>  
+			<anim name="zd_poke_attack_var1"             weight="zd_poke * var5"/>  
+        </target>
+    </tweak>
+</tweaks>

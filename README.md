@@ -364,6 +364,10 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/34840
  - Unique Loot 2
 	- https://modworkshop.net/mod/27711
+ - Predator Stun Gun Taser REBORN(Again)
+	- https://modworkshop.net/mod/20029
+ - (April Fools 2023) Poke of Death
+	- https://modworkshop.net/mod/41775
 	 
 # Gunsss
  - Do later there are too many i hate myself...

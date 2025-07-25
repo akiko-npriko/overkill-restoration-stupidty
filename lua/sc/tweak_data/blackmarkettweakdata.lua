@@ -6825,8 +6825,19 @@ Hooks:PostHook(BlackMarketTweakData, "init", "CustomMelee", function(self, tweak
 			var1 = {"right", 0.2}
 		}
 	end
-
-
+	--Akiko Edits :3
+	if self.melee_weapons.tazergun then 
+		self.melee_weapons.tazergun.stats.min_damage = 2.5
+		self.melee_weapons.tazergun.stats.max_damage = 2.5
+		--[[
+		self.melee_weapons.tazergun.stats.min_damage = 1
+		self.melee_weapons.tazergun.stats.max_damage = 1
+		self.melee_weapons.tazergun.stats.min_damage_effect = 1.0
+		self.melee_weapons.tazergun.stats.max_damage_effect = 1.0
+		--self.melee_weapons.tazergun.stats.charge_time = 1.25
+		self.melee_weapons.tazergun.stats.range = 1200
+		]]
+	end
 
 	local blanket_speed_mult = 1.1
 	for melee_id, _ in pairs(self.melee_weapons) do
