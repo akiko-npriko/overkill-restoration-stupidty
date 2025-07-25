@@ -49259,6 +49259,7 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 		self.parts.wpn_fps_ass_temple_o_dummy.custom_stats = nil
 		self.parts.wpn_fps_ass_temple_o_dummy.ads_weapon_visible = false
 		self.parts.wpn_fps_ass_temple_o_dummy.steelsight_visible = false
+		self.parts.wpn_fps_ass_temple_o_dummy.ads_overlay = "guis/scope_overlay/g11_reticle_overlay"
 	end
 	if self.parts.wpn_fps_upg_o_iuhPistolSniperScope then
 		self.parts.wpn_fps_upg_o_iuhPistolSniperScope.supported = true
@@ -49268,6 +49269,7 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 		self.parts.wpn_fps_upg_o_iuhPistolSniperScope.custom_stats = nil
 		self.parts.wpn_fps_upg_o_iuhPistolSniperScope.ads_weapon_visible = false
 		self.parts.wpn_fps_upg_o_iuhPistolSniperScope.steelsight_visible = false
+		self.parts.wpn_fps_upg_o_iuhPistolSniperScope.ads_overlay = "guis/scope_overlay/iuhPistolSniperScopeOverlay"
 	end
 	if self.parts.wpn_fps_upg_o_iuhPSO1Scope then
 		self.parts.wpn_fps_upg_o_iuhPSO1Scope.supported = true
