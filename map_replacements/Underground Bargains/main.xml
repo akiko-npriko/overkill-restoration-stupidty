@@ -84,9 +84,7 @@
 		<achievement desc_id="UB_achiev_desc_gun" icon="guis/achiev/ub_signatureweapon" id="UB_achiev_gun" name_id="UB_achiev_gun" rank="3"/>
 	</Achievements>
 	<AssetUpdates id="cr001ub" provider="payday2concepts" use_local_dir="true" version="2.2"/>
-	<Dependencies>
-		<Dependency id="pd2mcore" min_ver="0.8" name="PD2MapsCore" provider="payday2concepts" type="mod_overrides"/>
-	</Dependencies>
+
 	<HeistMusic directory="assets\music\labyrinthine" id="aviators" volume="0.7">
 		<event name="setup" source="stealth.ogg" start_source="stealthintro.ogg"/>
 		<event name="anticipation" source="anticiloop.ogg" start_source="anticipation.ogg"/>
