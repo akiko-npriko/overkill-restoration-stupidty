@@ -382,8 +382,8 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/27040
  - Cargoship Raid
 	- https://modworkshop.net/mod/25979
- - All Custom Heists In The Custom Heists Tab
-	- https://modworkshop.net/mod/30027
+ - Scrollable Contract Brokers
+	- https://modworkshop.net/mod/37050
 	 
 # Gunsss
  - Do later there are too many i hate myself...
