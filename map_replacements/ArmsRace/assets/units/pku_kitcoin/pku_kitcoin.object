@@ -1,0 +1,12 @@
+<dynamic_object>
+    <diesel orientation_object="rp_rootpoint" materials="units/pku_kitcoin/pku_kitcoin" />
+	<sequence_manager file="units/pku_kitcoin/pku_kitcoin"/>
+    <bodies>
+        <body enabled="true" template="editor" name="static_body" >
+			<object collision_type="box" name="c_box_01" />
+        </body>
+    </bodies>
+    <graphics>
+        <object enabled="true" name="g_g" />
+    </graphics>
+</dynamic_object>

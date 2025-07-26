@@ -1,0 +1,187 @@
+<table min_lib_ver="4.5" name="ArmsRace">
+	<instance id="armsrace_c4_placeable">
+		<packages>
+			<value_node value="levels/instances/unique/chas/chas_c4_wall/world"/>
+			<value_node value="levels/instances/unique/chas/chas_c4_wall/world_sounds"/>
+			<value_node value="levels/instances/unique/chas/chas_c4_wall/world/world"/>
+		</packages>
+	</instance>
+	<instance id="armsrace_mex_gas_burn">
+		<packages>
+			<value_node value="levels/instances/unique/friend/painting_stack_burn/world"/>
+			<value_node value="levels/instances/unique/friend/painting_stack_burn/world/world"/>
+		</packages>
+	</instance>
+	<instance id="armsrace_panel_wire">
+		<packages>
+			<value_node value="levels/instances/unique/friend/panel_wire/world"/>
+			<value_node value="levels/instances/unique/friend/panel_wire/world_sounds"/>
+			<value_node value="levels/instances/unique/friend/panel_wire/world/world"/>
+		</packages>
+	</instance>
+	<instance id="AR_HeftyCrate">
+		<packages/>
+	</instance>
+	<HeistMusic directory="assets/sounds/music" id="gnp" volume="0.7">
+        <event name="setup" source="stealth.ogg" start_source="stealth_intro.ogg"/>
+        <event name="anticipation" source="anticipation.ogg" start_source="anticipation_start.ogg"/>
+        <event name="assault" source="assault.ogg" start_source="assault_start.ogg"/>
+        <event name="control" source="control.ogg" start_source="control_start.ogg"/>
+    </HeistMusic>
+	<Achievements icon="guis/achievements/AR_icon" id="ArmsRace">
+		<achievement desc_id="AR_Achieve_DiffN_desc" icon="guis/achievements/AR_Normal" id="AR_Achieve_DiffN" name_id="AR_Achieve_DiffN_name" rank="1"/>
+		<achievement desc_id="AR_Achieve_DiffH_desc" icon="guis/achievements/AR_Hard" id="AR_Achieve_DiffH" name_id="AR_Achieve_DiffH_name" rank="1"/>
+		<achievement desc_id="AR_Achieve_DiffVH_desc" icon="guis/achievements/AR_VeryHard" id="AR_Achieve_DiffVH" name_id="AR_Achieve_DiffVH_name" rank="2" reward_amount="3" reward_type="cc"/>
+		<achievement desc_id="AR_Achieve_DiffO_desc" icon="guis/achievements/AR_Overkill" id="AR_Achieve_DiffO" name_id="AR_Achieve_DiffO_name" rank="2" reward_amount="3" reward_type="cc"/>
+		<achievement desc_id="AR_Achieve_DiffM_desc" icon="guis/achievements/AR_Mayhem" id="AR_Achieve_DiffM" name_id="AR_Achieve_DiffM_name" rank="3" reward_amount="6" reward_type="cc"/>
+		<achievement desc_id="AR_Achieve_DiffDW_desc" icon="guis/achievements/AR_DeathWish" id="AR_Achieve_DiffDW" name_id="AR_Achieve_DiffDW_name" rank="3" reward_amount="6" reward_type="cc"/>
+		<achievement desc_id="AR_Achieve_DiffDS_desc" icon="guis/achievements/AR_DeathSentence" id="AR_Achieve_DiffDS" name_id="AR_Achieve_DiffDS_name" rank="4" reward_amount="9" reward_type="cc"/>
+		<achievement desc_id="AR_Achieve_DiffOD_desc" icon="guis/achievements/AR_OneDown" id="AR_Achieve_DiffOD" name_id="AR_Achieve_DiffOD_name" rank="4" reward_amount="9" reward_type="cc"/>
+		<achievement desc_id="AR_Achieve_NoSniper_desc" icon="guis/achievements/AR_Sniper" id="AR_Achieve_NoSniper" name_id="AR_Achieve_NoSniper_name" rank="2" reward_amount="3" reward_type="cc"/>
+		<achievement desc_id="AR_Achieve_Weapons_desc" icon="guis/achievements/AR_Weapons" id="AR_Achieve_Weapons" name_id="AR_Achieve_Weapons_name" rank="3" reward_amount="6" reward_type="cc"/>
+		<achievement desc_id="AR_Achieve_Speedkill_desc" icon="guis/achievements/AR_Speedkill" id="AR_Achieve_Speedkill" name_id="AR_Achieve_Speedkill_name" rank="4" reward_amount="9" reward_type="cc"/>
+		<achievement desc_id="AR_Achieve_Kittehcoin_desc" icon="guis/achievements/AR_Kittehcoin" id="AR_Achieve_Kittehcoin" name_id="AR_Achieve_Kittehcoin_name" rank="3" reward_amount="6" reward_type="cc"/>
+	</Achievements>
+	<AddFiles directory="assets">
+		<texture force="true" path="textures/ArmsRace_Broker"/>
+		<texture force="true" path="textures/ArmsRace_Loading"/>
+		<texture force="true" path="guis/achievements/AR_icon"/>
+		<texture force="true" path="guis/achievements/AR_Normal"/>
+		<texture force="true" path="guis/achievements/AR_Hard"/>
+		<texture force="true" path="guis/achievements/AR_VeryHard"/>
+		<texture force="true" path="guis/achievements/AR_Overkill"/>
+		<texture force="true" path="guis/achievements/AR_Mayhem"/>
+		<texture force="true" path="guis/achievements/AR_DeathWish"/>
+		<texture force="true" path="guis/achievements/AR_DeathSentence"/>
+		<texture force="true" path="guis/achievements/AR_OneDown"/>
+		<texture force="true" path="guis/achievements/AR_Kittehcoin"/>
+		<texture force="true" path="guis/achievements/AR_Sniper"/>
+		<texture force="true" path="guis/achievements/AR_Speedkill"/>
+		<texture force="true" path="guis/achievements/AR_Weapons"/>
+	</AddFiles>
+	<Hooks directory="hooks">
+		<hook file="musicmanager.lua" source_file="lib/managers/musicmanager"/>
+	</Hooks>
+	<AssetUpdates id="50752" provider="modworkshop" version="1.1"/>
+	<Localization default="english.txt" directory="loc">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	<Sounds directory="assets/vo">
+		<sound id="AR_crimenet_briefing" path="yaeger_AR_crimenet_briefing.ogg" subtitle_id="AR_Yaeger_crimenet_briefing"/>
+	</Sounds>
+	<add directory="assets"/>
+	<contact assets_gui="guis/mission_briefing/preload_contact_bain" id="yaeger" name_id="contact_yaeger_name" package="packages/contact_bain"/>
+	<level ai_group_type="america" briefing_dialog="AR_LobbyBriefing" id="ArmsRace" intro_event="AR_IntroEvent" load_screen="textures/ArmsRace_Loading" max_bags="17" player_style="generic">
+		<assets/>
+		<hooks directory="hooks">
+			<hook file="missionendstate.lua" source_file="lib/states/missionendstate"/>
+		</hooks>
+		<outro_event>
+			<value_node value="AR_OutroEvent"/>
+		</outro_event>
+		<packages>
+			<value_node value="levels/instances/unique/hlm_gate_base/world/world"/>
+			<value_node value="levels/instances/unique/hox_estate_escape_heli/world/world"/>
+		</packages>
+		<script_data_mods directory="scriptdata">
+			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
+				<options merge_mode="add" mode="add"/>
+			</mod>
+		</script_data_mods>
+		<sounds directory="assets/vo" unload="true">
+			<sound id="AR_LobbyBriefing" path="yaeger_AR_lobby_briefing.ogg" subtitle_id="Yaeger_AR_LobbyBriefing"/>
+			<sound id="AR_IntroEvent" path="yaeger_AR_intro_event.ogg" subtitle_id="Yaeger_AR_IntroEvent"/>
+			<sound id="AR_OutroEvent" path="yaeger_AR_outro_event.ogg" subtitle_id="Yaeger_AR_OutroEvent"/>
+			<sound id="AR_BikerObj1_1" path="biker_AR_obj1_1.ogg" subtitle_id="Biker_AR_Obj1_1"/>
+			<sound id="AR_BikerObj1_2" path="biker_AR_obj1_2.ogg" subtitle_id="Biker_AR_Obj1_2"/>
+			<sound id="AR_BikerObj1_3" path="biker_AR_obj1_3.ogg" subtitle_id="Biker_AR_Obj1_3"/>
+			<sound id="AR_YaegerObj1_1" path="yaeger_AR_obj1_1.ogg" subtitle_id="Yaeger_AR_Obj1_1"/>
+			<sound id="AR_YaegerObj1_2" path="yaeger_AR_obj1_2.ogg" subtitle_id="Yaeger_AR_Obj1_2"/>
+			<sound id="AR_YaegerObj1_3" path="yaeger_AR_obj1_3.ogg" subtitle_id="Yaeger_AR_Obj1_3"/>
+			<sound id="AR_BikerObj2" path="biker_AR_obj2.ogg" subtitle_id="Biker_AR_Obj2"/>
+			<sound id="AR_BikerObj3" path="biker_AR_obj3.ogg" subtitle_id="Biker_AR_Obj3"/>
+			<sound id="AR_BikerObj4_1" path="biker_AR_obj4_1.ogg" subtitle_id="Biker_AR_Obj4_1"/>
+			<sound id="AR_BikerObj4_2" path="biker_AR_obj4_2.ogg" subtitle_id="Biker_AR_Obj4_2"/>
+			<sound id="AR_YaegerObj4_1" path="yaeger_AR_obj4_1.ogg" subtitle_id="Yaeger_AR_Obj4_1"/>
+			<sound id="AR_YaegerObj4_2" path="yaeger_AR_obj4_2.ogg" subtitle_id="Yaeger_AR_Obj4_2"/>
+			<sound id="AR_YaegerObj4_3" path="yaeger_AR_obj4_3.ogg" subtitle_id="Yaeger_AR_Obj4_3"/>
+			<sound id="AR_NaomiObj4" path="naomi_AR_obj4.ogg" subtitle_id="Naomi_AR_Obj4"/>
+			<sound id="AR_YaegerObj5" path="yaeger_AR_obj5.ogg" subtitle_id="Yaeger_AR_Obj5"/>
+			<sound id="AR_YaegerObj6" path="yaeger_AR_obj6.ogg" subtitle_id="Yaeger_AR_Obj6"/>
+			<sound id="AR_YaegerObj7" path="yaeger_AR_obj7.ogg" subtitle_id="Yaeger_AR_Obj7"/>
+			<sound id="AR_YaegerObj8_1" path="yaeger_AR_obj8_1.ogg" subtitle_id="Yaeger_AR_Obj8_1"/>
+			<sound id="AR_YaegerObj8_2" path="yaeger_AR_obj8_2.ogg" subtitle_id="Yaeger_AR_Obj8_2"/>
+			<sound id="AR_YaegerObj8_3" path="yaeger_AR_obj8_3.ogg" subtitle_id="Yaeger_AR_Obj8_3"/>
+			<sound id="AR_YaegerObj9" path="yaeger_AR_obj9.ogg" subtitle_id="Yaeger_AR_Obj9"/>
+			<sound id="AR_YaegerObj10" path="yaeger_AR_obj10.ogg" subtitle_id="Yaeger_AR_Obj10"/>
+			<sound id="AR_YaegerObj11" path="yaeger_AR_obj11.ogg" subtitle_id="Yaeger_AR_Obj11"/>
+			<sound id="AR_NaomiObj11_1" path="naomi_AR_obj11_1.ogg" subtitle_id="Naomi_AR_Obj11_1"/>
+			<sound id="AR_NaomiObj11_2" path="naomi_AR_obj11_2.ogg" subtitle_id="Naomi_AR_Obj11_2"/>
+			<sound id="AR_NaomiObj12" path="naomi_AR_obj12.ogg" subtitle_id="Naomi_AR_Obj12"/>
+			<sound id="AR_YaegerObj13" path="yaeger_AR_obj13.ogg" subtitle_id="Yaeger_AR_Obj13"/>
+		</sounds>
+		<xml>
+			<file path="scriptdata/custom_interactions.xml"/>
+			<file path="scriptdata/custom_carry.xml"/>
+		</xml>
+	</level>
+	<narrative briefing_event="AR_crimenet_briefing" contact="yaeger" id="ArmsRaceNarr">
+		<chain>
+			<table level_id="ArmsRace" type="d" type_id="heist_type_assault"/>
+		</chain>
+		<contract_cost>
+			<value_node value="9000"/>
+			<value_node value="18000"/>
+			<value_node value="45000"/>
+			<value_node value="90000"/>
+			<value_node value="150000"/>
+			<value_node value="180000"/>
+			<value_node value="225000"/>
+		</contract_cost>
+		<crimenet_callouts>
+			<value_node value="nothing"/>
+		</crimenet_callouts>
+		<crimenet_videos>
+			<value_node value="cn_branchbank2"/>
+		</crimenet_videos>
+		<debrief_event>
+			<value_node value=""/>
+		</debrief_event>
+		<experience_mul>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+		</experience_mul>
+		<max_mission_xp>
+			<value_node value="42000"/>
+			<value_node value="42000"/>
+			<value_node value="42000"/>
+			<value_node value="42000"/>
+			<value_node value="42000"/>
+			<value_node value="42000"/>
+			<value_node value="42000"/>
+		</max_mission_xp>
+		<min_mission_xp>
+			<value_node value="31000"/>
+			<value_node value="31000"/>
+			<value_node value="31000"/>
+			<value_node value="31000"/>
+			<value_node value="31000"/>
+			<value_node value="31000"/>
+			<value_node value="31000"/>
+		</min_mission_xp>
+		<payout>
+			<value_node value="13500"/>
+			<value_node value="24000"/>
+			<value_node value="67500"/>
+			<value_node value="112500"/>
+			<value_node value="180000"/>
+			<value_node value="210000"/>
+			<value_node value="250000"/>
+		</payout>
+	</narrative>
+</table>

@@ -1,0 +1,168 @@
+<table name="Sniper Assassin">
+	<Achievements icon="textures/snp/snp_pack" id="snp_pack">
+		<achievement icon="textures/snp/snp_easy" id="snp_easy" rank="1" reward_amount="2" reward_type="cc"/>
+		<achievement icon="textures/snp/snp_medium" id="snp_medium" rank="1" reward_amount="2" reward_type="cc"/>
+		<achievement icon="textures/snp/snp_hard" id="snp_hard" rank="1" reward_amount="2" reward_type="cc"/>
+		<achievement icon="textures/snp/snp_ontarget" id="snp_ontarget" rank="4" reward_amount="6" reward_type="cc"/>
+		<achievement icon="textures/snp/snp_alert" id="snp_alert" rank="4" reward_amount="6" reward_type="cc"/>
+		<achievement icon="textures/snp/snp_time" id="snp_time" rank="4" reward_amount="6" reward_type="cc"/>
+		<achievement icon="textures/snp/snp_fail" id="snp_fail" rank="1" reward_amount="1" reward_type="cc"/>
+		<achievement icon="textures/snp/snp_mp" id="snp_mp" rank="3" reward_amount="5" reward_type="cc"/>
+		<achievement icon="textures/snp/snp_hidden" id="snp_hidden" rank="3" reward_amount="5" reward_type="cc"/>
+		<achievement icon="textures/snp/snp_ponr" id="snp_ponr" rank="3" reward_amount="5" reward_type="cc"/>
+		<achievement icon="textures/snp/snp_all" id="snp_all" rank="4" reward_amount="15" reward_type="cc"/>
+		<achievement icon="textures/snp/snp_target1" id="snp_target1" rank="2" reward_amount="3" reward_type="cc"/>
+		<achievement icon="textures/snp/snp_target2" id="snp_target2" rank="2" reward_amount="3" reward_type="cc"/>
+		<achievement icon="textures/snp/snp_target3" id="snp_target3" rank="2" reward_amount="3" reward_type="cc"/>
+		<achievement icon="textures/snp/snp_target4" id="snp_target4" rank="2" reward_amount="3" reward_type="cc"/>
+		<achievement icon="textures/snp/snp_target5" id="snp_target5" rank="3" reward_amount="3" reward_type="cc"/>
+	</Achievements>
+	<AddFiles directory="assets">
+		<png force="true" path="textures/snp/snp_asset1"/>
+		<png force="true" path="textures/snp/snp_asset2"/>
+		<png force="true" path="textures/snp/snp_asset3"/>
+		<png force="true" path="textures/snp/snp_asset4"/>
+		<png force="true" path="textures/snp/snp_asset5"/>
+		<texture force="true" path="textures/snp/snp_pack"/>
+		<texture force="true" path="textures/snp/snp_easy"/>
+		<texture force="true" path="textures/snp/snp_medium"/>
+		<texture force="true" path="textures/snp/snp_hard"/>
+		<texture force="true" path="textures/snp/snp_ontarget"/>
+		<texture force="true" path="textures/snp/snp_alert"/>
+		<texture force="true" path="textures/snp/snp_time"/>
+		<texture force="true" path="textures/snp/snp_fail"/>
+		<texture force="true" path="textures/snp/snp_mp"/>
+		<texture force="true" path="textures/snp/snp_hidden"/>
+		<texture force="true" path="textures/snp/snp_ponr"/>
+		<texture force="true" path="textures/snp/snp_all"/>
+		<texture force="true" path="textures/snp/snp_target1"/>
+		<texture force="true" path="textures/snp/snp_target2"/>
+		<texture force="true" path="textures/snp/snp_target3"/>
+		<texture force="true" path="textures/snp/snp_target4"/>
+		<texture force="true" path="textures/snp/snp_target5"/>
+		<texture path="textures/snp/snp_icon"/>
+		<texture path="textures/snp/snp_loading"/>
+	</AddFiles>
+	<AssetUpdates id="33335" provider="modworkshop" version="2.0"/>
+	<Hooks directory="hooks">
+		<hook file="musicmanager.lua" source_file="lib/managers/musicmanager"/>
+		<hook file="AssetsTweakData.lua" source_file="lib/tweak_data/assetstweakdata"/>
+		<hook file="charactertweakdata.lua" source_file="lib/tweak_data/charactertweakdata"/>
+	</Hooks>
+	<Localization default="english.txt" directory="loc">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	<Sounds directory="assets/sounds">
+		<sound id="snp_brief" path="snp_brief.ogg" subtitle_id="snp_brief"/>
+		<sound id="snp_intro" path="snp_intro.ogg" subtitle_id="snp_intro"/>
+		<sound id="snp_hello1" path="snp_hello1.ogg" subtitle_id="snp_hello1"/>
+		<sound id="snp_hello2" path="snp_hello2.ogg" subtitle_id="snp_hello2"/>
+		<sound id="snp_getup1" path="snp_getup1.ogg" subtitle_id="snp_getup1"/>
+		<sound id="snp_getup2" path="snp_getup2.ogg" subtitle_id="snp_getup2"/>
+		<sound id="snp_letsgo1" path="snp_letsgo1.ogg" subtitle_id="snp_letsgo1"/>
+		<sound id="snp_letsgo2" path="snp_letsgo2.ogg" subtitle_id="snp_letsgo2"/>
+		<sound id="snp_1down1" path="snp_1down1.ogg" subtitle_id="snp_1down1"/>
+		<sound id="snp_1down2" path="snp_1down2.ogg" subtitle_id="snp_1down2"/>
+		<sound id="snp_2down1" path="snp_2down1.ogg" subtitle_id="snp_2down1"/>
+		<sound id="snp_2down2" path="snp_2down2.ogg" subtitle_id="snp_2down2"/>
+		<sound id="snp_3down1" path="snp_3down1.ogg" subtitle_id="snp_3down1"/>
+		<sound id="snp_3down2" path="snp_3down2.ogg" subtitle_id="snp_3down2"/>
+		<sound id="snp_4down1" path="snp_4down1.ogg" subtitle_id="snp_4down1"/>
+		<sound id="snp_4down2" path="snp_4down2.ogg" subtitle_id="snp_4down2"/>
+		<sound id="snp_5down1" path="snp_5down1.ogg" subtitle_id="snp_5down1"/>
+		<sound id="snp_5down2" path="snp_5down2.ogg" subtitle_id="snp_5down2"/>
+		<sound id="snp_done1" path="snp_done1.ogg" subtitle_id="snp_done1"/>
+		<sound id="snp_done2" path="snp_done2.ogg" subtitle_id="snp_done2"/>
+		<sound id="snp_fail1" path="snp_fail1.ogg" subtitle_id="snp_fail1"/>
+		<sound id="snp_fail2" path="snp_fail2.ogg" subtitle_id="snp_fail2"/>
+	</Sounds>
+	<StealthMusic directory="assets/music/Death of the Dragon" id="deathofthedragon" volume="1">
+		<event name="suspense_1" source="suspense_1.ogg"/>
+		<event name="suspense_2" source="suspense_2.ogg"/>
+		<event name="suspense_3" source="suspense_3.ogg"/>
+		<event name="suspense_4" source="suspense_4.ogg"/>
+		<event name="suspense_5" source="suspense_5.ogg"/>
+	</StealthMusic>
+	<level ai_group_type="America" briefing_dialog="snp_brief" id="snp1" intro_event="snp_intro" max_bags="54" music="ghost" music_ext_start="suspense_1" player_style="generic" team_ai_off="true">
+		<add file="levels/snp1/add.xml"/>
+		<assets>
+			<asset name="snp_asset1"/>
+			<asset name="snp_asset2"/>
+			<asset name="snp_asset3"/>
+			<asset name="snp_asset4"/>
+			<asset name="snp_asset5"/>
+			<asset name="camera_access"/>
+		</assets>
+		<outro_event>
+			<value_node value=""/>
+		</outro_event>
+		<packages>
+			<value_node value="levels/instances/unique/sub_sewer_sidespawn/world/world"/>
+			<value_node value="packages/narr_arm_for"/>
+		</packages>
+		<script_data_mods directory="scriptdata">
+			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
+				<options merge_mode="add" mode="add"/>
+			</mod>
+		</script_data_mods>
+	</level>
+	<narrative briefing_event="" contact="custom" id="snp">
+		<chain>
+			<table level_id="snp1" type="d" type_id="heist_type_assault"/>
+		</chain>
+		<contract_cost>
+			<value_node value="10000"/>
+			<value_node value="20000"/>
+			<value_node value="40000"/>
+			<value_node value="80000"/>
+			<value_node value="100000"/>
+			<value_node value="200000"/>
+			<value_node value="400000"/>
+		</contract_cost>
+		<crimenet_callouts>
+			<value_node value="nothing"/>
+		</crimenet_callouts>
+		<crimenet_videos>
+			<value_node value="cn_branchbank2"/>
+		</crimenet_videos>
+		<debrief_event>
+			<value_node value=""/>
+		</debrief_event>
+		<experience_mul>
+			<value_node value="5"/>
+			<value_node value="5"/>
+			<value_node value="5"/>
+			<value_node value="5"/>
+			<value_node value="5"/>
+			<value_node value="5"/>
+			<value_node value="5"/>
+		</experience_mul>
+		<max_mission_xp>
+			<value_node value="12000"/>
+			<value_node value="12000"/>
+			<value_node value="12000"/>
+			<value_node value="12000"/>
+			<value_node value="12000"/>
+			<value_node value="12000"/>
+			<value_node value="12000"/>
+		</max_mission_xp>
+		<min_mission_xp>
+			<value_node value="12000"/>
+			<value_node value="12000"/>
+			<value_node value="12000"/>
+			<value_node value="12000"/>
+			<value_node value="12000"/>
+			<value_node value="12000"/>
+			<value_node value="12000"/>
+		</min_mission_xp>
+		<payout>
+			<value_node value="37500"/>
+			<value_node value="60000"/>
+			<value_node value="150000"/>
+			<value_node value="250000"/>
+			<value_node value="300000"/>
+			<value_node value="300000"/>
+			<value_node value="300000"/>
+		</payout>
+	</narrative>
+</table>

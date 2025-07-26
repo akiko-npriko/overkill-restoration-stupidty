@@ -1,0 +1,99 @@
+<table min_lib_ver="4.5" name="cook_off_meth_slaves">
+	<AssetUpdates id="43335" provider="modworkshop" version="1.2"/>
+	<Localization default="english.txt" directory="loc">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	<level ai_group_type="america" briefing_dialog="Play_pln_rt1b_brf_01" cube="cube_apply_heist_bank" id="lid_cookoff_methslaves" intro_event="Play_pln_rt1b_intro_01" max_bags="999" music="heist" player_style="generic">
+		<assets>
+			<asset name="health_bag"/>
+			<asset name="ammo_bag"/>
+			<asset name="grenade_crate"/>
+			<asset name="sniper_spot_rats1"/>
+			<asset name="rat_1_lights"/>
+		</assets>
+		<outro_event>
+			<value_node value="Play_pln_rt1b_end_01"/>
+			<value_node value="Play_pln_rt1b_end_02"/>
+			<value_node value="Play_pln_rt1b_end_03"/>
+			<value_node value="Play_pln_rt1b_end_04"/>
+		</outro_event>
+		<packages>
+			<value_node value="packages/narr_alex1"/>
+			<value_node value="levels/narratives/bain/rat/world"/>
+			<value_node value="levels/narratives/bain/rat/world_sounds"/>
+			<value_node value="levels/narratives/bain/rat/world/world"/>
+			<value_node value="levels/narratives/bain/rat/editor_only/editor_only"/>
+			<value_node value="levels/narratives/bain/rat/interior_01/interior_01"/>
+			<value_node value="levels/instances/unique/mus_flare/world/world"/>
+		</packages>
+		<script_data_mods directory="scriptdata">
+			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
+				<options merge_mode="add" mode="add"/>
+			</mod>
+		</script_data_mods>
+	</level>
+	<narrative briefing_event="pln_rt1b_cbf_01" contact="custom" icon="guis/dlcs/bro/textures/pd2/crimenet/cook_off" id="nid_cookoff_methslaves" jc="60" load_screen="guis/dlcs/pic/textures/loading/job_cookoff" region="street">
+		<chain>
+			<table level_id="lid_cookoff_methslaves" type="d" type_id="heist_type_assault"/>
+		</chain>
+		<contract_cost>
+			<value_node value="47000"/>
+			<value_node value="94000"/>
+			<value_node value="235000"/>
+			<value_node value="470000"/>
+			<value_node value="600000"/>
+			<value_node value="600000"/>
+			<value_node value="600000"/>
+		</contract_cost>
+		<crimenet_callouts>
+			<value_node value="pln_rt1b_cnc_01"/>
+		</crimenet_callouts>
+		<crimenet_videos>
+			<value_node value="cn_branchbank1"/>
+			<value_node value="cn_branchbank2"/>
+			<value_node value="cn_branchbank3"/>
+		</crimenet_videos>
+		<debrief_event>
+			<value_node value="Play_pln_rt1b_end_01"/>
+			<value_node value="Play_pln_rt1b_end_02"/>
+			<value_node value="Play_pln_rt1b_end_03"/>
+			<value_node value="Play_pln_rt1b_end_04"/>
+		</debrief_event>
+		<experience_mul>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+		</experience_mul>
+		<max_mission_xp>
+			<value_node value="9.6e+006"/>
+			<value_node value="9.6e+006"/>
+			<value_node value="9.6e+006"/>
+			<value_node value="9.6e+006"/>
+			<value_node value="9.6e+006"/>
+			<value_node value="9.6e+006"/>
+			<value_node value="9.6e+006"/>
+		</max_mission_xp>
+		<min_mission_xp>
+			<value_node value="16000"/>
+			<value_node value="16000"/>
+			<value_node value="16000"/>
+			<value_node value="16000"/>
+			<value_node value="16000"/>
+			<value_node value="16000"/>
+			<value_node value="16000"/>
+		</min_mission_xp>
+		<payout>
+			<value_node value="90000"/>
+			<value_node value="135000"/>
+			<value_node value="180000"/>
+			<value_node value="310000"/>
+			<value_node value="380000"/>
+			<value_node value="380000"/>
+			<value_node value="380000"/>
+		</payout>
+	</narrative>
+</table>

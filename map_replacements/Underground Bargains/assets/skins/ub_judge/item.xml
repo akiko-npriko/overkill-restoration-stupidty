@@ -1,0 +1,151 @@
+<ugcitem>
+	<param key="name" value="ub_judge"/>
+	<node name="data">
+		<param key="id" value="n_judge_ub_judge"/>
+		<param key="weapon_id" value="judge"/>
+		<param key="pattern_gradient_name" value="patgra_ub_judge.tga"/>
+		<node name="types">
+			<node name="sight">
+				<param key="base_gradient_name" value="base_ub_judge_2.tga"/>
+			</node>
+			<node name="barrel_ext">
+				<param key="pattern_tweak" value="Vector3(1, 0, 0.148581)"/>
+				<param key="pattern_name" value="pat_base_red.tga"/>
+				<param key="pattern_gradient_name" value="patgra_ub_judge.tga"/>
+			</node>
+			<node name="gadget">
+				<param key="pattern_tweak" value="Vector3(1, 0, 0.198665)"/>
+				<param key="pattern_name" value="pat_base_red.tga"/>
+				<param key="pattern_gradient_name" value="patgra_ub_judge.tga"/>
+			</node>
+		</node>
+		<param key="base_gradient_name" value="base_ub_judge.tga"/>
+		<param key="name_id" value="bm_wskn_judge_ub_judge"/>
+		<param key="reserve_quality" value="true"/>
+		<node name="parts">
+			<node name="wpn_fps_upg_ns_duck">
+				<node name="9c7d00a920be2534">
+					<param key="pattern_name" value="pat_base_red.tga"/>
+					<param key="pattern_tweak" value="Vector3(1, 0, 0.937992)"/>
+				</node>
+			</node>
+			<node name="wpn_fps_pis_judge_body_standard">
+				<node name="e17afb784a3fd7c1">
+				</node>
+				<node name="b2d80ae4b017b88d">
+					<param key="pattern_gradient_name" value="patgra_ub_judge_2.tga"/>
+					<param key="uv_scale" value="Vector3(6.44608, 6.44608, 0.0388744)"/>
+					<param key="sticker_name" value="stk_body_cards.tga"/>
+					<param key="uv_offset_rot" value="Vector3(-0.232292, 0.68352, 5.7737)"/>
+					<param key="pattern_name" value="pat_ub_judge_body.tga"/>
+					<param key="pattern_tweak" value="Vector3(1, 0, 0.150966)"/>
+				</node>
+				<node name="74509de82be411e5">
+					<param key="pattern_name" value="pat_ub_judge_mag.tga"/>
+					<param key="pattern_tweak" value="Vector3(1, 0, 0)"/>
+				</node>
+				<node name="386a583c15a62364">
+					<param key="pattern_gradient_name" value="patgra_ub_judge_2.tga"/>
+					<param key="pattern_name" value="pat_ub_judge_mag.tga"/>
+					<param key="pattern_tweak" value="Vector3(1.11138, 0, 0.234438)"/>
+				</node>
+			</node>
+			<node name="wpn_fps_pis_judge_fl_adapter">
+				<node name="042fe19c39a15bf5">
+					<param key="pattern_tweak" value="Vector3(1, 0, 0.129502)"/>
+					<param key="pattern_name" value="pat_base_red.tga"/>
+					<param key="pattern_gradient_name" value="patgra_ub_judge.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_pis_rage_o_adapter">
+				<node name="042fe19c39a15bf5">
+					<param key="pattern_tweak" value="Vector3(1, 0, 0.0317196)"/>
+					<param key="pattern_name" value="pat_base_red.tga"/>
+					<param key="pattern_gradient_name" value="patgra_ub_judge.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_upg_o_t1micro">
+				<node name="bf75b1a84131514f">
+					<param key="base_gradient_name" value="base_ub_judge_3.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_upg_o_eotech_xps">
+				<node name="a39cc02b116094ae">
+				</node>
+			</node>
+			<node name="wpn_fps_upg_o_rmr_riser">
+				<node name="53aa0d8a63083268">
+				</node>
+				<node name="4f2912710fde9823">
+					<param key="base_gradient_name" value="base_ub_judge.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_upg_ns_sho_salvo_large">
+				<node name="790d371cd3ee5e9a">
+					<param key="pattern_name" value="pat_base_red.tga"/>
+					<param key="base_gradient_name" value="base_ub_judge_2.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_upg_o_acog">
+				<node name="4144c08a44a4f6bc">
+					<param key="base_gradient_name" value="base_ub_judge_4.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_pis_judge_g_standard">
+				<node name="f2b8c82d630f798c">
+					<param key="base_gradient_name" value="base_ub_judge_2.tga"/>
+				</node>
+				<node name="610a834f63be4a13">
+					<param key="uv_scale" value="Vector3(3.53793, 3.53793, 0.596947)"/>
+					<param key="uv_offset_rot" value="Vector3(0.0729792, 1.00787, 4.6798)"/>
+					<param key="sticker_name" value="stk_grip_icons.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_pis_judge_body_modern">
+				<node name="f0ec83d29b26f650">
+					<param key="pattern_name" value="pat_ub_judge_mag_modern.tga"/>
+					<param key="pattern_tweak" value="Vector3(1, 0, 0.17243)"/>
+				</node>
+				<node name="386a583c15a62364">
+					<param key="pattern_tweak" value="Vector3(1, 0, 0)"/>
+					<param key="pattern_name" value="pat_ub_judge_mag.tga"/>
+					<param key="pattern_gradient_name" value="patgra_ub_judge_2.tga"/>
+				</node>
+				<node name="d5c9ca7ed8ec36f9">
+					<param key="pattern_gradient_name" value="patgra_ub_judge_2.tga"/>
+					<param key="uv_scale" value="Vector3(12.3101, 12.3101, 0.246363)"/>
+					<param key="sticker_name" value="stk_body_cards.tga"/>
+					<param key="uv_offset_rot" value="Vector3(-0.117815, 0.836156, 5.75871)"/>
+					<param key="pattern_name" value="pat_ub_judge_body_modern.tga"/>
+					<param key="pattern_tweak" value="Vector3(1, 0, 0.053184)"/>
+				</node>
+			</node>
+			<node name="wpn_fps_upg_ns_shot_thick">
+				<node name="74cc52207d38feb0">
+					<param key="base_gradient_name" value="base_ub_judge_2.tga"/>
+					<param key="pattern_name" value="pat_base_red.tga"/>
+					<param key="pattern_tweak" value="Vector3(1, 0, 0)"/>
+				</node>
+			</node>
+			<node name="wpn_fps_upg_o_cs">
+				<node name="87a5402dd2bfd794">
+				</node>
+			</node>
+			<node name="wpn_fps_upg_o_rx01">
+				<node name="bbf177cf6c3dead2">
+				</node>
+			</node>
+			<node name="wpn_fps_upg_o_specter">
+				<node name="ea8d4f769511011d">
+					<param key="base_gradient_name" value="base_ub_judge_3.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_upg_o_aimpoint_2">
+				<node name="e25840e790fcd5fc">
+				</node>
+			</node>
+		</node>
+	</node>
+	<param key="type" value="weapon_skin"/>
+	<param key="timestamp" value="2019190213750"/>
+</ugcitem>

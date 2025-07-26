@@ -1,0 +1,123 @@
+<table directory="assets">
+	<add from_db="true" path="units/payday2/architecture/res_apartments/res_apartment_8x11" type="unit">
+		<material_config path="units/payday2/architecture/res_apartments/res_apartments_int"/>
+		<object path="units/payday2/architecture/res_apartments/res_apartment_8x11"/>
+		<unit path="units/payday2/architecture/res_apartments/res_apartment_8x11"/>
+	</add>
+	<add from_db="true" path="units/payday2/props/off_prop_appliance_computer/off_prop_appliance_computer" type="unit">
+		<material_config path="units/payday2/props/off_prop_appliance_computer/off_prop_appliance_computer"/>
+		<object path="units/payday2/props/off_prop_appliance_computer/off_prop_appliance_computer"/>
+		<unit path="units/payday2/props/off_prop_appliance_computer/off_prop_appliance_computer"/>
+	</add>
+	<add from_db="true" path="units/world/props/office/chair/office_chair_leather" type="unit">
+		<material_config path="units/world/props/office/chair/office_chair_leather"/>
+		<object path="units/world/props/office/chair/office_chair_leather"/>
+		<unit path="units/world/props/office/chair/office_chair_leather"/>
+	</add>
+	<add from_db="true" path="units/world/props/secret_stash_circuitbreaker/secret_stash_circuitbreaker" type="unit">
+		<material_config path="units/world/props/secret_stash_circuitbreaker/secret_stash_circuitbreaker"/>
+		<object path="units/world/props/secret_stash_circuitbreaker/secret_stash_circuitbreaker"/>
+		<sequence_manager path="units/world/props/secret_stash_circuitbreaker/secret_stash_circuitbreaker"/>
+		<unit path="units/world/props/secret_stash_circuitbreaker/secret_stash_circuitbreaker"/>
+	</add>
+	<add from_db="true" path="units/dev_tools/level_tools/collision/dev_collision_50m/dev_collision_50m" type="unit">
+		<material_config path="core/material_configs/hub_elements"/>
+		<object path="units/dev_tools/level_tools/collision/dev_collision_50m/dev_collision_50m"/>
+		<unit path="units/dev_tools/level_tools/collision/dev_collision_50m/dev_collision_50m"/>
+	</add>
+	<add from_db="true" path="units/test/jocke/plane_black_temp" type="unit">
+		<material_config path="units/test/jocke/plane_black_temp"/>
+		<object path="units/test/jocke/plane_black_temp"/>
+		<unit path="units/test/jocke/plane_black_temp"/>
+	</add>
+	<add from_db="true" path="units/vehicles/helicopter/helicopter_ranger/helicopter_cops" type="unit">
+		<effect load="true" path="effects/particles/weapons/flashlight/flashlight"/>
+		<effect load="true" path="effects/particles/window/vehicle_window"/>
+		<animation_def path="anims/units/helicopter/helicopter"/>
+		<animation_state_machine path="anims/units/helicopter/helicopter"/>
+		<animation_states path="anims/units/helicopter/std"/>
+		<animation_subset path="anims/units/helicopter/std"/>
+		<material_config path="units/vehicles/helicopter/helicopter_ranger/helicopter"/>
+		<object path="units/vehicles/helicopter/helicopter_ranger/helicopter_cops"/>
+		<sequence_manager path="units/vehicles/helicopter/helicopter_ranger/helicopter_cops"/>
+		<unit path="units/vehicles/helicopter/helicopter_ranger/helicopter_cops"/>
+	</add>
+	<add from_db="true" path="units/dev_tools/editable_text_short/editable_text_short" type="unit">
+		<material_config path="units/dev_tools/editable_text_short/editable_text_short"/>
+		<object path="units/dev_tools/editable_text_short/editable_text_short"/>
+		<unit path="units/dev_tools/editable_text_short/editable_text_short"/>
+	</add>
+	<add from_db="true" path="effects/particles/bullet_hit/sheet_metal/bullet_impact_onespark" type="effect">
+		<effect load="true" path="effects/particles/bullet_hit/sheet_metal/bullet_impact_onespark"/>
+	</add>
+	<add from_db="true" path="effects/particles/dest/prison_trans_sparks" type="effect">
+		<effect load="true" path="effects/particles/dest/prison_trans_sparks"/>
+		<effect load="true" path="effects/particles/environment/bridge_prison_sparkspawn"/>
+	</add>
+	<add from_db="true" path="effects/particles/dest/slghtr_corner_sparks" type="effect">
+		<effect load="true" path="effects/particles/dest/slghtr_corner_sparks"/>
+		<effect load="true" path="effects/particles/environment/wide_sparks_col_rev_x"/>
+		<effect load="true" path="effects/particles/environment/slghtr_ambush_puffspawn_rev_x"/>
+	</add>
+	<add from_db="true" path="effects/particles/dest/slghtr_long_sparks" type="effect">
+		<effect load="true" path="effects/particles/dest/slghtr_long_sparks"/>
+		<effect load="true" path="effects/particles/environment/wide_sparks_col"/>
+		<effect load="true" path="effects/particles/environment/slghtr_ambush_puffspawn"/>
+	</add>
+	<add from_db="true" path="effects/particles/dest/sparks_roof_lamp_break" type="effect">
+		<effect load="true" path="effects/particles/dest/sparks_roof_lamp_break"/>
+	</add>
+	<add from_db="true" path="effects/particles/environment/scene_env_sparks" type="effect">
+		<effect load="true" path="effects/particles/environment/scene_env_sparks"/>
+		<effect load="true" path="effects/particles/environment/sparkspawn"/>
+	</add>
+	<add from_db="true" path="effects/payday2/environment/electric_spark" type="effect">
+		<effect load="true" path="effects/payday2/environment/electric_spark"/>
+	</add>
+	<add from_db="true" path="effects/particles/environment/sparkspawn" type="effect">
+		<effect load="true" path="effects/particles/environment/sparkspawn"/>
+	</add>
+	<add from_db="true" path="effects/particles/environment/wide_sparks_col" type="effect">
+		<effect load="true" path="effects/particles/environment/wide_sparks_col"/>
+	</add>
+	<add from_db="true" path="effects/payday2/environment/hatch_sparks" type="effect">
+		<effect load="true" path="effects/payday2/environment/hatch_sparks"/>
+	</add>
+	<add from_db="true" path="effects/payday2/particles/impacts/bullet_burn/heavy_bullet_burn_spark" type="effect">
+		<effect load="true" path="effects/payday2/particles/impacts/bullet_burn/heavy_bullet_burn_spark"/>
+	</add>
+	<add from_db="true" path="effects/cinematics/sparks_random_02_slow" type="effect">
+		<effect load="true" path="effects/cinematics/sparks_random_02_slow"/>
+	</add>
+	<add from_db="true" path="effects/particles/bullet_hit/sheet_metal/bullet_impact_onespark_empty" type="effect">
+		<effect load="true" path="effects/particles/bullet_hit/sheet_metal/bullet_impact_onespark_empty"/>
+	</add>
+	<add from_db="true" path="effects/particles/environment/bridge_prison_sparkspawn" type="effect">
+		<effect load="true" path="effects/particles/environment/bridge_prison_sparkspawn"/>
+	</add>
+	<add from_db="true" path="effects/particles/environment/wide_sparks_col_rev_x" type="effect">
+		<effect load="true" path="effects/particles/environment/wide_sparks_col_rev_x"/>
+	</add>
+	<add from_db="true" path="effects/particles/fire/small_sparkles" type="effect">
+		<effect load="true" path="effects/particles/fire/small_sparkles"/>
+	</add>
+	<add from_db="true" path="effects/payday2/economy/particles/equipment/eco_drill_sparks" type="effect">
+		<effect load="true" path="effects/payday2/economy/particles/equipment/eco_drill_sparks"/>
+		<effect load="true" path="effects/payday2/particles/equipment/sparks_random_slow"/>
+	</add>
+	<add from_db="true" path="effects/payday2/environment/parts/beast_thermal_sparks" type="effect">
+		<effect load="true" path="effects/payday2/environment/parts/beast_thermal_sparks"/>
+	</add>
+	<add from_db="true" path="effects/payday2/menu/parts/electric_spark_console" type="effect">
+		<effect load="true" path="effects/payday2/menu/parts/electric_spark_console"/>
+	</add>
+	<add from_db="true" path="effects/payday2/particles/electric/electric_sparks_turret" type="effect">
+		<effect load="true" path="effects/payday2/particles/electric/electric_sparks_turret"/>
+	</add>
+	<add from_db="true" path="effects/payday2/particles/character/overkillpack/mega_kawaii_sparkles" type="effect">
+		<effect load="true" path="effects/payday2/particles/character/overkillpack/mega_kawaii_sparkles"/>
+	</add>
+	<add from_db="true" path="effects/payday2/particles/electric/electric_sparks_break" type="effect">
+		<effect load="true" path="effects/payday2/particles/electric/electric_sparks_break"/>
+	</add>
+</table>

@@ -1,0 +1,7 @@
+<materials version="3">
+    <material name="sky" render_template="generic:DIFFUSE_TEXTURE:RL_BACKDROP:SELF_ILLUMINATION" version="2">
+        <diffuse_texture file="units/payday2/architecture/skydomes/skydome_quick_diamond_df"/>
+		<self_illumination_texture file="units/payday2/architecture/skydomes/sky_il_df"/>
+		<variable value="none" type="scalar" name="il_multiplier"/>
+    </material>
+</materials>

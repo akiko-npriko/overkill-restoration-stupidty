@@ -1,0 +1,55 @@
+<table>
+	<unit>
+		<variables>
+			<var_painting value="1"/>
+		</variables>
+		
+		
+		<sequence name="'startup'" startup="true">
+			<run_sequence name="'random_painting'" />
+		</sequence>
+		
+		
+		<sequence name="'random_painting'">
+			<object enabled="false" name="'g_painting_'..vars.var_painting"/>
+			<decal_mesh enabled="false" name="'c_painting_'..vars.var_painting"/>
+			<body enabled="false" name="'body_painting_'..vars.var_painting"/>
+			
+			<set_variables var_painting="pick(1,2,3,4,5,6,7)" />
+			
+			<object enabled="true" name="'g_painting_'..vars.var_painting"/>
+			<decal_mesh enabled="true" name="'c_painting_'..vars.var_painting"/>
+			<body enabled="true" name="'body_painting_'..vars.var_painting"/>
+			<material_config name="'units/pd2_mod_custom/cus_loot_painting/cus_loot_painting_'..pick('blue', 'red', 'green')"/>
+		</sequence>
+		
+		
+		<sequence editable_state="true" name="'hide_and_disable'" triggable="true">
+			<graphic_group visibility="false" name="'grp_paintings'"/>
+			<interaction enabled="false"/>
+		</sequence>
+		
+		<sequence editable_state="true" name="'show_and_enable'" triggable="true">
+			<run_sequence name="'show_only'" />
+			<interaction enabled="true"/>
+		</sequence>
+		
+		
+		<sequence editable_state="true" name="'show_and_disable'" triggable="true">
+			<graphic_group visibility="true" name="'grp_paintings'"/>
+			<interaction enabled="false"/>
+		</sequence>
+		
+		
+		<sequence editable_state="true" name="'enable_interaction'" triggable="true">
+			<interaction enabled="true"/>
+		</sequence>
+		
+		<sequence editable_state="true" name="'disable_interaction'" triggable="true">
+			<interaction enabled="true"/>
+		</sequence>
+		
+		
+		<sequence editable_state="true" name="'interact'" triggable="true"/>
+	</unit>
+</table>

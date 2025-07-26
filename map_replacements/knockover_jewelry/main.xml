@@ -1,0 +1,100 @@
+<table name="knockover_jewelry">
+	<AddFiles directory="assets">
+		<texture load="true" path="guis/textures/knk_jwl_icon"/>
+	</AddFiles>
+	<AssetUpdates id="28523" provider="modworkshop" use_local_dir="true" version="1.3"/>
+	<Localization default="english.txt" directory="loc">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	<level ai_group_type="America" briefing_assets_gui="@IDbf70ce3b3bc4ae52@" briefing_dialog="" cube="cube_apply_heist_bank" group_ai_preset="small_urban" id="knk_jwl" intro_event="Play_pln_knk_jwl_a_01" max_bags="26" music="heist" orig_id="knk_jwl">
+		<add file="levels/knk_jwl/add.xml"/>
+		<assets>
+			<asset name="ukrainian_job_front"/>
+			<asset name="ukrainian_job_metal_detector"/>
+			<asset name="ukrainian_job_shutter"/>
+			<asset name="ukrainian_job_cam"/>
+			<asset name="security_safe_05x05"/>
+		</assets>
+		<outro_event>
+			<value_node value="Play_ban_g02x"/>
+		</outro_event>
+		<packages>
+			<value_node value="packages/ukrainian_job"/>
+			<value_node value="packages/job_ukrainian"/>
+			<value_node value="levels/narratives/vlad/ukrainian_job/world"/>
+			<value_node value="levels/narratives/vlad/ukrainian_job/world_sounds"/>
+			<value_node value="levels/narratives/vlad/ukrainian_job/pc_only/pc_only"/>
+			<value_node value="levels/narratives/vlad/ukrainian_job/world/world"/>
+			<value_node value="levels/narratives/vlad/ukrainian_job/editor_only/editor_only"/>
+			<value_node value="levels/narratives/locke/des/editor_only/editor_only"/>
+			<value_node value="levels/narratives/vlad/nightclub/world/world"/>
+			<value_node value="levels/instances/unique/moon/crate_shoes/world/world"/>
+			<value_node value="levels/instances/shared/skm_negotiator/world/world"/>
+			<value_node value="levels/narratives/vlad/jewelry_store/world/world"/>
+			<value_node value="levels/instances/unique/rvd/rvd_hackbox/world/world"/>
+			<value_node value="levels/narratives/escapes/escape_street/world/world"/>
+			<value_node value="levels/narratives/vlad/four_stores/world/world"/>
+			<value_node value="levels/narratives/classics/dinner/world"/>
+		</packages>
+		<script_data_mods directory="scriptdata"/>
+	</level>
+	<narrative briefing_event="" contact="vlad" icon="guis/textures/knk_jwl_icon" id="knockover_jewelry" jc="20" load_screen="guis/dlcs/pic/textures/loading/job_jewelry_store" region="street">
+		<chain>
+			<table level_id="knk_jwl" type="c" type_id="heist_type_knockover"/>
+		</chain>
+		<contract_cost>
+			<value_node value="10000"/>
+			<value_node value="20000"/>
+			<value_node value="50000"/>
+			<value_node value="100000"/>
+			<value_node value="110000"/>
+			<value_node value="130000"/>
+			<value_node value="140000"/>
+		</contract_cost>
+		<crimenet_callouts>
+			<value_node value="nothing"/>
+		</crimenet_callouts>
+		<crimenet_videos>
+			<value_node value="cn_ukr1"/>
+			<value_node value="cn_ukr2"/>
+			<value_node value="cn_ukr3"/>
+		</crimenet_videos>
+		<debrief_event/>
+		<experience_mul>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+		</experience_mul>
+		<max_mission_xp>
+			<value_node value="10000"/>
+			<value_node value="10000"/>
+			<value_node value="10000"/>
+			<value_node value="10000"/>
+			<value_node value="10000"/>
+			<value_node value="10000"/>
+			<value_node value="10000"/>
+		</max_mission_xp>
+		<min_mission_xp>
+			<value_node value="4000"/>
+			<value_node value="4000"/>
+			<value_node value="4000"/>
+			<value_node value="4000"/>
+			<value_node value="4000"/>
+			<value_node value="4000"/>
+			<value_node value="4000"/>
+		</min_mission_xp>
+		<payout>
+			<value_node value="5000"/>
+			<value_node value="10000"/>
+			<value_node value="25000"/>
+			<value_node value="50000"/>
+			<value_node value="55000"/>
+			<value_node value="65000"/>
+			<value_node value="65000"/>
+		</payout>
+	</narrative>
+</table>

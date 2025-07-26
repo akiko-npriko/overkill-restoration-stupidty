@@ -1,0 +1,87 @@
+<dynamic_object>
+	<diesel materials="units/cpone/weapon_inventory_rack/weapon_inventory_rack" orientation_object="rp_weapon_inventory_rack"/>
+
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_weapon_inventory_rack"/>
+
+			<object name="c_box_rack_01" collision_type="box" padding="-2.5"/>
+			<object name="c_box_rack_02" collision_type="box" padding="-2.5"/>
+			<object name="c_box_rack_03" collision_type="box" padding="-2.5"/>
+			<object name="c_box_rack_05" collision_type="box" padding="-2.5"/>
+			<object name="c_box_rack_04" collision_type="box" padding="-2.5"/>
+			<object name="c_box_rack_06" collision_type="box" padding="-2.5"/>
+			<object name="c_box_rack_07" collision_type="box" padding="-2.5"/>
+			<object name="c_box_rack_08" collision_type="box" padding="-2.5"/>
+			<object name="c_box_rack_09" collision_type="box" padding="-2.5"/>
+			<object name="c_box_rack_10" collision_type="box" padding="-2.5"/>
+			<object name="c_box_rack_11" collision_type="box" padding="-2.5"/>
+			<object name="c_box_rack_12" collision_type="box" padding="-2.5"/>
+			<object name="c_box_rack_13" collision_type="box" padding="-2.5"/>
+			<object name="c_box_rack_14" collision_type="box" padding="-2.5"/>
+			<object name="c_box_rack_15" collision_type="box" padding="-2.5"/>
+			<object name="c_box_rack_16" collision_type="box" padding="-2.5"/>
+			<object name="c_box_rack_17" collision_type="box" padding="-2.5"/>
+			<object name="c_box_rack_18" collision_type="box" padding="-2.5"/>
+			<object name="c_box_rack_19" collision_type="box" padding="-2.5"/>
+			<object name="c_box_rack_20" collision_type="box" padding="-2.5"/>
+
+			<object name="c_box_bench_01" collision_type="box" padding="-2.5"/>
+			<object name="c_box_bench_02" collision_type="box" padding="-2.5"/>
+			<object name="c_box_bench_03" collision_type="box" padding="-2.5"/>
+			<object name="c_box_bench_04" collision_type="box" padding="-2.5"/>
+			<object name="c_box_bench_05" collision_type="box" padding="-2.5"/>
+			<object name="c_box_bench_06" collision_type="box" padding="-2.5"/>
+			<object name="c_box_bench_07" collision_type="box" padding="-2.5"/>
+			<object name="c_box_bench_08" collision_type="box" padding="-2.5"/>
+			<object name="c_box_bench_09" collision_type="box" padding="-2.5"/>
+			<object name="c_box_bench_10" collision_type="box" padding="-2.5"/>
+
+			<object name="c_box_bullet_thing_01" collision_type="box" padding="-2.5"/>
+			<object name="c_box_bullet_thing_02" collision_type="convex" padding="-2.5"/>
+
+			<object name="c_box_computer" collision_type="box"/>
+
+			<object name="c_monitor_01" collision_type="convex"/>
+			<object name="c_monitor_02" collision_type="convex"/>
+			<object name="c_monitor_03" collision_type="convex"/>
+			<object name="c_monitor_box" collision_type="box"/>
+		</body>
+	</bodies>
+
+	<decal_surfaces default_material="metal">
+		<decal_mesh name="dm_metal_rack" enabled="true" material="metal"/>
+		<decal_mesh name="dm_metal_bench" enabled="true" material="metal"/>
+		<decal_mesh name="dm_metal_bullet_thing" enabled="true" material="metal"/>
+
+		<decal_mesh name="dm_metal_chassis_computer" enabled="true" material="metal_chassis"/>
+
+		<decal_mesh name="dm_wood_bench" enabled="true" material="wood"/>
+	</decal_surfaces>
+
+	<graphics>
+		<lod_object name="rack_mat_lod">
+			<object name="g_rack" enabled="true">
+				<material materials="mtr_rack" max_distance="1000"/>
+				<material materials="mtr_rack_lod1" max_distance="1200"/>	   
+				<material materials="mtr_rack_lod2"/>		
+			</object>
+		</lod_object>
+
+		<object name="g_bench" enabled="true"/>
+		<object name="g_bullet_thing" enabled="true"/>
+
+		<object name="g_computer" enabled="true"/>
+
+		<object name="g_mouse" enabled="true"/>
+		<object name="g_keyboard" enabled="true"/>
+
+		<object name="g_monitor" enabled="true"/>
+		<object name="g_monitor_display" enabled="true"/>
+
+		<object name="s_rack" enabled="true" shadow_caster="true"/>
+		<object name="s_bench" enabled="true" shadow_caster="true"/>
+		<object name="s_bullet_thing" enabled="true" shadow_caster="true"/>
+		<object name="s_monitor" enabled="true" shadow_caster="true"/>
+	</graphics>
+</dynamic_object>

@@ -1,0 +1,129 @@
+<table>
+	<Sounds auto_pause="true" directory="assets/sounds/vo" dont_store_float="true" dialog="true" unload="true">
+        <sound id="Play_clt_jambank_brf_01" path="jambank_brf_01.ogg"/>
+        <sound id="Play_clt_jambank_end_01" path="jambank_end_01.ogg"/>
+        <sound id="Play_clt_jambank_intro_01" path="jambank_intro_01.ogg">
+            <markers>
+                <table position="1" label="clt_jambank_intro_01"/>
+                <table position="6.5" label="clt_jambank_intro_02"/>
+                <table position="11.9" label="clt_jambank_intro_03"/>
+            </markers>
+        </sound>
+        <sound id="Play_clt_jambank_01" path="jambank_01_1.ogg" subtitle_id="clt_jambank_01_1"/>
+        <sound id="Play_clt_jambank_02" path="jambank_02_1.ogg" subtitle_id="clt_jambank_02_1"/>
+        <sound id="Play_clt_jambank_03" path="jambank_03_1.ogg" subtitle_id="clt_jambank_03_1"/>
+        <sound id="clt_jambank_04_01" path="jambank_04_1.ogg" subtitle_id="clt_jambank_04_1"/>
+        <sound id="clt_jambank_04_02" path="jambank_04_2.ogg" subtitle_id="clt_jambank_04_2"/>
+        <random id="Play_clt_jambank_04">
+            <sound id="clt_jambank_04_01"/>
+            <sound id="clt_jambank_04_02"/>  
+        </random>
+        <sound id="Play_clt_jambank_05" path="jambank_05_1.ogg" subtitle_id="clt_jambank_05_1"/>
+        <sound id="clt_jambank_05_02" path="jambank_05_2.ogg" subtitle_id="clt_jambank_05_2"/>
+        <sound id="clt_jambank_05_03" path="jambank_05_3.ogg" subtitle_id="clt_jambank_05_3"/>
+        <random id="Play_clt_jambank_05_2">
+            <sound id="clt_jambank_05_02"/>
+            <sound id="clt_jambank_05_03"/>  
+        </random>
+        <sound id="Play_clt_jambank_06" path="jambank_06_1.ogg" subtitle_id="clt_jambank_06_1"/>
+        <sound id="clt_jambank_07_01" path="jambank_07_1.ogg" subtitle_id="clt_jambank_07_1"/>
+        <sound id="clt_jambank_07_02" path="jambank_07_2.ogg" subtitle_id="clt_jambank_07_2"/>
+        <sound id="clt_jambank_07_03" path="jambank_07_3.ogg" subtitle_id="clt_jambank_07_3"/>
+        <random id="Play_clt_jambank_07">
+            <sound id="clt_jambank_07_01"/>
+            <sound id="clt_jambank_07_02"/>  
+            <sound id="clt_jambank_07_03"/>  
+        </random>
+        <sound id="Play_clt_jambank_08" path="jambank_08_1.ogg" subtitle_id="clt_jambank_08_1"/>
+        <sound id="Play_clt_jambank_09" path="jambank_09_1.ogg" subtitle_id="clt_jambank_09_1"/>
+        <sound id="clt_jambank_10_01" path="jambank_10_1.ogg" subtitle_id="clt_jambank_10_1"/>
+        <sound id="clt_jambank_10_02" path="jambank_10_2.ogg" subtitle_id="clt_jambank_10_2"/>
+        <sound id="clt_jambank_10_03" path="jambank_10_3.ogg" subtitle_id="clt_jambank_10_3"/>
+        <random id="Play_clt_jambank_10">
+            <sound id="clt_jambank_10_01"/>
+            <sound id="clt_jambank_10_02"/>  
+            <sound id="clt_jambank_10_03"/>  
+        </random>
+        <sound id="Play_clt_jambank_11" path="jambank_11_1.ogg" subtitle_id="clt_jambank_11_1"/>
+        <sound id="clt_jambank_12_01" path="jambank_12_1.ogg" subtitle_id="clt_jambank_12_1"/>
+        <sound id="clt_jambank_12_02" path="jambank_12_2.ogg" subtitle_id="clt_jambank_12_2"/>
+        <random id="Play_clt_jambank_12">
+            <sound id="clt_jambank_12_01"/>
+            <sound id="clt_jambank_12_02"/>  
+        </random>
+        <sound id="Play_clt_jambank_13" path="jambank_13_1.ogg" subtitle_id="clt_jambank_13_1"/>
+        <sound id="Play_clt_jambank_14" path="jambank_14_1.ogg" subtitle_id="clt_jambank_14_1"/>
+        <sound id="Play_clt_jambank_15" path="jambank_15_1.ogg" subtitle_id="clt_jambank_15_1"/>
+        <sound id="Play_clt_jambank_16" path="jambank_16_1.ogg" subtitle_id="clt_jambank_16_1"/>
+        <sound id="Play_clt_jambank_17" path="jambank_17_1.ogg" subtitle_id="clt_jambank_17_1"/>
+        <sound id="Play_clt_jambank_18" path="jambank_18_1.ogg" subtitle_id="clt_jambank_18_1"/>
+        <sound id="Play_clt_jambank_19" path="jambank_19_1.ogg" subtitle_id="clt_jambank_19_1"/>
+        <sound id="Play_clt_jambank_20" path="jambank_20_1.ogg" subtitle_id="clt_jambank_20_1"/>
+        <sound id="Play_clt_jambank_21" path="jambank_21_1.ogg" subtitle_id="clt_jambank_21_1"/>
+        <sound id="Play_clt_jambank_22" path="jambank_22_1.ogg" subtitle_id="clt_jambank_22_1"/>
+        <sound id="Play_clt_jambank_23" path="jambank_23_1.ogg" subtitle_id="clt_jambank_23_1"/>
+        <sound id="Play_clt_jambank_24" path="jambank_24_1.ogg" subtitle_id="clt_jambank_24_1"/>
+        <sound id="Play_clt_jambank_25" path="jambank_25_1.ogg" subtitle_id="clt_jambank_25_1"/>
+        <sound id="Play_clt_jambank_26" path="jambank_26_1.ogg" subtitle_id="clt_jambank_26_1"/>
+        <sound id="Play_clt_jambank_27" path="jambank_27_1.ogg" subtitle_id="clt_jambank_27_1"/>
+        <sound id="Play_clt_jambank_28" path="jambank_28.ogg"/>
+        <sound id="Play_clt_jambank_29" path="jambank_29_1.ogg" subtitle_id="clt_jambank_29_1"/>
+        <sound id="Play_clt_jambank_30" path="jambank_30_1.ogg" subtitle_id="clt_jambank_30_1"/>
+        <sound id="Play_clt_jambank_31" path="jambank_31_1.ogg" subtitle_id="clt_jambank_31_1"/>
+        <sound id="clt_jambank_32_01" path="jambank_32_1.ogg" subtitle_id="clt_jambank_32_1"/>
+        <sound id="clt_jambank_32_02" path="jambank_32_2.ogg" subtitle_id="clt_jambank_32_2"/>
+        <sound id="clt_jambank_32_03" path="jambank_32_3.ogg" subtitle_id="clt_jambank_32_3"/>
+        <random id="Play_clt_jambank_32">
+            <sound id="clt_jambank_32_01"/>
+            <sound id="clt_jambank_32_02"/>  
+            <sound id="clt_jambank_32_03"/>  
+        </random>
+        <sound id="Play_clt_jambank_33" path="jambank_33_1.ogg" subtitle_id="clt_jambank_33_1"/>
+        <sound id="Play_clt_jambank_34" path="jambank_34_1.ogg" subtitle_id="clt_jambank_34_1"/>
+
+        <sound id="Play_ton_jambank_01" path="ton_jambank_01.ogg" relative="true"/>
+        <sound id="ton_jambank_02_1" path="ton_jambank_02_1.ogg" relative="true"/>
+        <sound id="ton_jambank_02_2" path="ton_jambank_02_2.ogg" relative="true"/>
+        <sound id="ton_jambank_02_3" path="ton_jambank_02_3.ogg" relative="true"/>
+        <random id="Play_ton_jambank_02" relative="true">
+            <sound id="ton_jambank_02_1" relative="true"/>
+            <sound id="ton_jambank_02_2" relative="true"/>  
+            <sound id="ton_jambank_02_3" relative="true"/>  
+        </random>
+        <sound id="ton_jambank_03_1" path="ton_jambank_03_1.ogg" relative="true"/>
+        <sound id="ton_jambank_03_2" path="ton_jambank_03_2.ogg" relative="true"/>
+        <sound id="ton_jambank_03_3" path="ton_jambank_03_3.ogg" relative="true"/>
+        <random id="Play_ton_jambank_03" relative="true">
+            <sound id="ton_jambank_03_1" relative="true"/>
+            <sound id="ton_jambank_03_2" relative="true"/>  
+            <sound id="ton_jambank_03_3" relative="true"/>  
+        </random>
+        <sound id="ton_jambank_04_1" path="ton_jambank_04_1.ogg" relative="true"/>
+        <sound id="ton_jambank_04_2" path="ton_jambank_04_2.ogg" relative="true"/>
+        <sound id="ton_jambank_04_3" path="ton_jambank_04_3.ogg" relative="true"/>
+        <sound id="ton_jambank_04_4" path="ton_jambank_04_4.ogg" relative="true"/>
+        <random id="Play_ton_jambank_04">
+            <sound id="ton_jambank_04_1" relative="true"/>
+            <sound id="ton_jambank_04_2" relative="true"/>  
+            <sound id="ton_jambank_04_3" relative="true"/>  
+            <sound id="ton_jambank_04_4" relative="true"/>  
+        </random>
+        <sound id="ton_jambank_05_1" path="ton_jambank_05_1.ogg" relative="true"/>
+        <sound id="ton_jambank_05_2" path="ton_jambank_05_2.ogg" relative="true"/>
+        <sound id="ton_jambank_05_3" path="ton_jambank_05_3.ogg" relative="true"/>
+        <sound id="ton_jambank_05_4" path="ton_jambank_05_4.ogg" relative="true"/>
+        <random id="Play_ton_jambank_05">
+            <sound id="ton_jambank_05_1" relative="true"/>
+            <sound id="ton_jambank_05_2" relative="true"/>  
+            <sound id="ton_jambank_05_3" relative="true"/>  
+            <sound id="ton_jambank_05_4" relative="true"/>  
+        </random>
+        <sound id="Play_ton_jambank_06" path="ton_jambank_06.ogg" relative="true"/>
+
+        <sound id="Play_drv_jambank_01" path="drv_jambank_01.ogg"  subtitle_id="drv_jambank_01"/>
+        <sound id="Play_drv_jambank_02" path="drv_jambank_02.ogg"  subtitle_id="drv_jambank_02"/>
+        <sound id="Play_drv_jambank_03" path="drv_jambank_03.ogg"  subtitle_id="drv_jambank_03"/>
+        <sound id="Play_drv_jambank_04" path="drv_jambank_04.ogg"  subtitle_id="drv_jambank_04"/>
+        <sound id="Play_drv_jambank_05" path="drv_jambank_05.ogg"  subtitle_id="drv_jambank_05"/>
+    </Sounds>
+</table>

@@ -1,0 +1,218 @@
+<table>
+	<add from_db="true" path="effects/payday2/environment/short_1_day_1_fog" type="effect">
+		<effect load="true" path="effects/payday2/environment/short_1_day_1_fog"/>
+	</add>
+	<add from_db="true" path="effects/payday2/environment/cane_white_fog" type="effect">
+		<effect load="true" path="effects/payday2/environment/cane_white_fog"/>
+	</add>
+	<add from_db="true" path="units/payday2/pickups/gen_pku_crowbar/gen_pku_crowbar" type="unit">
+		<material_config path="units/payday2/pickups/gen_pku_crowbar/gen_pku_crowbar"/>
+		<object path="units/payday2/pickups/gen_pku_crowbar/gen_pku_crowbar"/>
+		<sequence_manager path="units/payday2/pickups/gen_pku_crowbar/gen_pku_crowbar"/>
+		<unit path="units/payday2/pickups/gen_pku_crowbar/gen_pku_crowbar"/>
+	</add>
+	<add from_db="true" path="units/pd2_dlc_help/props/hlp_interactable_wheel_timer/hlp_interactable_wheel_timer" type="unit">
+		<bnk path="soundbanks/halloween_2016"/>
+		<font path="fonts/font_digital"/>
+		<material_config path="units/pd2_dlc_help/props/hlp_interactable_wheel_timer/hlp_interactable_wheel_timer"/>
+		<object path="units/pd2_dlc_help/props/hlp_interactable_wheel_timer/hlp_interactable_wheel_timer"/>
+		<sequence_manager path="units/pd2_dlc_help/props/hlp_interactable_wheel_timer/hlp_interactable_wheel_timer"/>
+		<unit path="units/pd2_dlc_help/props/hlp_interactable_wheel_timer/hlp_interactable_wheel_timer"/>
+	</add>
+	<add from_db="true" path="units/pd2_dlc_mill/ind_int_wall_button/ind_int_wall_button" type="unit">
+		<material_config path="units/pd2_dlc_mill/ind_int_wall_button/ind_int_wall_button"/>
+		<object path="units/pd2_dlc_mill/ind_int_wall_button/ind_int_wall_button"/>
+		<sequence_manager path="units/pd2_dlc_mill/ind_int_wall_button/ind_int_wall_button"/>
+		<unit path="units/pd2_dlc_mill/ind_int_wall_button/ind_int_wall_button"/>
+	</add>
+	<add from_db="true" path="units/world/architecture/hospital/props/panic_button/panic_button" type="unit">
+		<material_config path="units/world/architecture/hospital/props/panic_button/panic_button"/>
+		<object path="units/world/architecture/hospital/props/panic_button/panic_button"/>
+		<unit path="units/world/architecture/hospital/props/panic_button/panic_button"/>
+	</add>
+	<add from_db="true" path="units/pd2_dlc1/architecture/bnk_ext_garage/bnk_ext_garage_door_button" type="unit">
+		<material_config path="units/pd2_dlc1/architecture/bnk_ext_garage/bnk_ext_garage_door_button"/>
+		<object path="units/pd2_dlc1/architecture/bnk_ext_garage/bnk_ext_garage_door_button"/>
+		<sequence_manager path="units/pd2_dlc1/architecture/bnk_ext_garage/bnk_ext_garage_door_button"/>
+		<unit path="units/pd2_dlc1/architecture/bnk_ext_garage/bnk_ext_garage_door_button"/>
+	</add>
+	<add from_db="true" path="units/payday2/props/str_prop_com_generic_button/str_prop_com_generic_button" type="unit">
+		<material_config path="units/payday2/props/str_prop_com_generic_button/str_prop_com_generic_button"/>
+		<object path="units/payday2/props/str_prop_com_generic_button/str_prop_com_generic_button"/>
+		<sequence_manager path="units/payday2/props/str_prop_com_generic_button/str_prop_com_generic_button"/>
+		<unit path="units/payday2/props/str_prop_com_generic_button/str_prop_com_generic_button"/>
+	</add>
+	<add from_db="true" path="units/payday2/characters/civ_male_casual_1/civ_male_casual_1" type="unit">
+		<unit path="units/payday2/characters/civ_male_casual_1/civ_male_casual_1"/>
+		<unit load="true" path="units/payday2/characters/civ_male_casual_1/civ_male_casual_1_husk"/>
+		<animation_def path="anims/units/enemies/cop/cop_def"/>
+		<animation_state_machine path="anims/units/enemies/cop/cop_machine"/>
+		<bnk path="soundbanks/regular_vox"/>
+		<material_config path="units/payday2/characters/civ_male_casual_1/civ_male_casual_1"/>
+		<object path="units/payday2/characters/civ_male_casual_1/civ_male_casual_1"/>
+		<sequence_manager path="units/payday2/characters/ragdoll"/>
+	</add>
+	<add from_db="true" path="units/dev_tools/level_tools/shadow_caster_10x10" type="unit">
+		<material_config path="units/dev_tools/level_tools/shadow_caster"/>
+		<object path="units/dev_tools/level_tools/shadow_caster_10x10"/>
+		<sequence_manager path="units/dev_tools/level_tools/shadow_caster"/>
+		<unit path="units/dev_tools/level_tools/shadow_caster_10x10"/>
+	</add>
+	<add from_db="true" path="units/dev_tools/level_tools/collision/dev_collision_50m/dev_collision_50m" type="unit">
+		<material_config path="core/material_configs/hub_elements"/>
+		<object path="units/dev_tools/level_tools/collision/dev_collision_50m/dev_collision_50m"/>
+		<unit path="units/dev_tools/level_tools/collision/dev_collision_50m/dev_collision_50m"/>
+	</add>
+	<add from_db="true" path="units/dev_tools/level_tools/collision/dev_collision_20m/dev_collision_20m" type="unit">
+		<material_config path="core/material_configs/hub_elements"/>
+		<object path="units/dev_tools/level_tools/collision/dev_collision_20m/dev_collision_20m"/>
+		<unit path="units/dev_tools/level_tools/collision/dev_collision_20m/dev_collision_20m"/>
+	</add>
+	<add from_db="true" path="units/dev_tools/level_tools/dev_collision_4m" type="unit">
+		<material_config path="core/material_configs/hub_elements"/>
+		<object path="units/dev_tools/level_tools/dev_collision_4m"/>
+		<unit path="units/dev_tools/level_tools/dev_collision_4m"/>
+	</add>
+	<add from_db="true" path="units/dev_tools/level_tools/dev_collision_5m" type="unit">
+		<material_config path="core/material_configs/hub_elements"/>
+		<object path="units/dev_tools/level_tools/dev_collision_5m"/>
+		<unit path="units/dev_tools/level_tools/dev_collision_5m"/>
+	</add>
+	<add from_db="true" path="units/pd2_dlc_casino/dev/cas_gen_square_drop_marker_2x3_watertank/cas_gen_square_drop_marker_2x3_watertank" type="unit">
+		<material_config path="units/pd2_dlc_casino/dev/cas_gen_square_drop_marker_2x3_watertank/cas_gen_square_drop_marker_2x3_watertank"/>
+		<object path="units/pd2_dlc_casino/dev/cas_gen_square_drop_marker_2x3_watertank/cas_gen_square_drop_marker_2x3_watertank"/>
+		<sequence_manager path="units/pd2_dlc_casino/dev/cas_gen_square_drop_marker_2x3_watertank/cas_gen_square_drop_marker_2x3_watertank"/>
+		<unit path="units/pd2_dlc_casino/dev/cas_gen_square_drop_marker_2x3_watertank/cas_gen_square_drop_marker_2x3_watertank"/>
+	</add>
+	<add from_db="true" path="units/pd2_dlc_fex/architecture/ext/fex_ext_shark_tank/fex_ext_shark_tank" type="unit">
+		<effect load="true" path="effects/payday2/particles/water/water_bubbles_tank"/>
+		<material_config path="units/pd2_dlc_fex/architecture/ext/fex_ext_shark_tank/fex_ext_shark_tank"/>
+		<object path="units/pd2_dlc_fex/architecture/ext/fex_ext_shark_tank/fex_ext_shark_tank"/>
+		<sequence_manager path="units/pd2_dlc_fex/architecture/ext/fex_ext_shark_tank/fex_ext_shark_tank"/>
+		<unit path="units/pd2_dlc_fex/architecture/ext/fex_ext_shark_tank/fex_ext_shark_tank"/>
+	</add>
+	<add from_db="true" path="units/world/props/zombie_toys/zombie_tank" type="unit">
+		<material_config path="units/world/props/zombie_toys/zombie_toys"/>
+		<object path="units/world/props/zombie_toys/zombie_tank"/>
+		<unit path="units/world/props/zombie_toys/zombie_tank"/>
+	</add>
+	<add from_db="true" path="units/payday2/props/str_prop_construction_waterbarrier_white_2m/str_prop_construction_waterbarrier_white_2m" type="unit">
+		<material_config path="units/payday2/props/str_prop_construction_waterbarrier_white_2m/str_prop_construction_waterbarrier_white_2m"/>
+		<object path="units/payday2/props/str_prop_construction_waterbarrier_white_2m/str_prop_construction_waterbarrier_white_2m"/>
+		<unit path="units/payday2/props/str_prop_construction_waterbarrier_white_2m/str_prop_construction_waterbarrier_white_2m"/>
+	</add>
+	<add from_db="true" path="units/payday2/props/str_prop_mechanical_tank_water/str_prop_mechanical_tank_water" type="unit">
+		<material_config path="units/payday2/props/str_prop_mechanical_tank_water/str_prop_mechanical_tank_water"/>
+		<object path="units/payday2/props/str_prop_mechanical_tank_water/str_prop_mechanical_tank_water"/>
+		<unit path="units/payday2/props/str_prop_mechanical_tank_water/str_prop_mechanical_tank_water"/>
+	</add>
+	<add from_db="true" path="units/payday2/vehicles/gen_vehicle_cocaineboat/gen_vehicle_cocaineboat_no_water" type="unit">
+		<bnk path="soundbanks/regular_sfx"/>
+		<effect load="true" path="effects/particles/dest/fire_hydrant_splash"/>
+		<material_config path="units/payday2/vehicles/gen_vehicle_cocaineboat/gen_vehicle_cocaineboat_no_water"/>
+		<object path="units/payday2/vehicles/gen_vehicle_cocaineboat/gen_vehicle_cocaineboat_no_water"/>
+		<sequence_manager path="units/payday2/vehicles/gen_vehicle_cocaineboat/gen_vehicle_cocaineboat_no_water"/>
+		<unit path="units/payday2/vehicles/gen_vehicle_cocaineboat/gen_vehicle_cocaineboat_no_water"/>
+	</add>
+	<add from_db="true" path="units/pd2_dlc1/architecture/str_ext_park/str_ext_park_water_a" type="unit">
+		<material_config path="units/pd2_dlc1/architecture/str_ext_park/str_ext_park_water"/>
+		<object path="units/pd2_dlc1/architecture/str_ext_park/str_ext_park_water_a"/>
+		<unit path="units/pd2_dlc1/architecture/str_ext_park/str_ext_park_water_a"/>
+	</add>
+	<add from_db="true" path="units/pd2_dlc2/csgo_models/props_buildings/watertower_001a_skybox" type="unit">
+		<material_config path="units/pd2_dlc2/csgo_models/props_buildings/watertower_001a_skybox"/>
+		<object path="units/pd2_dlc2/csgo_models/props_buildings/watertower_001a_skybox"/>
+		<unit path="units/pd2_dlc2/csgo_models/props_buildings/watertower_001a_skybox"/>
+	</add>
+	<add from_db="true" path="units/pd2_dlc2/csgo_models/props/de_vertigo/de_vertigo_skybox01_part_02" type="unit">
+		<material_config path="units/pd2_dlc2/csgo_models/props/de_vertigo/de_vertigo_skybox01_part_02"/>
+		<object path="units/pd2_dlc2/csgo_models/props/de_vertigo/de_vertigo_skybox01_part_02"/>
+		<unit path="units/pd2_dlc2/csgo_models/props/de_vertigo/de_vertigo_skybox01_part_02"/>
+	</add>
+	<add from_db="true" path="units/payday2/equipment/gen_interactable_weapon_case_2x1/gen_interactable_weapon_case_2x1" type="unit">
+		<unit path="units/payday2/equipment/gen_interactable_weapon_case_2x1/gen_interactable_weapon_case_2x1"/>
+		<object path="units/payday2/equipment/gen_interactable_weapon_case_2x1/gen_interactable_weapon_case_2x1"/>
+		<material_config path="units/payday2/equipment/gen_interactable_weapon_case_2x1/gen_interactable_weapon_case_2x1"/>
+		<sequence_manager path="units/payday2/equipment/gen_interactable_weapon_case_2x1/gen_interactable_weapon_case_2x1"/>
+		<unit path="units/payday2/equipment/gen_interactable_weapon_case_2x1/spawn_ak47"/>
+		<object path="units/payday2/equipment/gen_interactable_weapon_case_2x1/spawn_ak47"/>
+		<material_config path="units/payday2/equipment/gen_interactable_weapon_case_2x1/spawn_ak47"/>
+		<sequence_manager path="units/payday2/equipment/gen_interactable_weapon_case_2x1/spawn_ak47"/>
+		<bnk path="soundbanks/regular_sfx"/>
+	</add>
+	<add from_db="true" path="units/payday2/equipment/gen_interactable_weapon_case_2x1/spawn_ak47_z_axis" type="unit">
+		<material_config path="units/payday2/equipment/gen_interactable_weapon_case_2x1/spawn_ak47"/>
+		<object path="units/payday2/equipment/gen_interactable_weapon_case_2x1/spawn_ak47"/>
+		<sequence_manager path="units/payday2/equipment/gen_interactable_weapon_case_2x1/spawn_ak47"/>
+		<unit path="units/payday2/equipment/gen_interactable_weapon_case_2x1/spawn_ak47_z_axis"/>
+	</add>
+	<add from_db="true" path="units/payday2/props/gen_prop_weapon_case/gen_prop_weapon_case_1x1_closed" type="unit">
+		<material_config path="units/payday2/props/gen_prop_weapon_case/gen_prop_weapon_case"/>
+		<object path="units/payday2/props/gen_prop_weapon_case/gen_prop_weapon_case_1x1_closed"/>
+		<unit path="units/payday2/props/gen_prop_weapon_case/gen_prop_weapon_case_1x1_closed"/>
+	</add>
+	<add from_db="true" path="units/payday2/props/gen_prop_weapon_case/gen_prop_weapon_case_2x1_closed" type="unit">
+		<material_config path="units/payday2/props/gen_prop_weapon_case/gen_prop_weapon_case"/>
+		<object path="units/payday2/props/gen_prop_weapon_case/gen_prop_weapon_case_2x1_closed"/>
+		<unit path="units/payday2/props/gen_prop_weapon_case/gen_prop_weapon_case_2x1_closed"/>
+	</add>
+	<add from_db="true" path="units/payday2/props/gen_prop_weapon_r870/gen_prop_weapon_r870" type="unit">
+		<material_config path="units/payday2/props/gen_prop_weapon_r870/gen_prop_weapon_r870"/>
+		<object path="units/payday2/props/gen_prop_weapon_r870/gen_prop_weapon_r870"/>
+		<unit path="units/payday2/props/gen_prop_weapon_r870/gen_prop_weapon_r870"/>
+	</add>
+	<add from_db="true" path="units/payday2/equipment/gen_interactable_weapon_case_2x1/gen_interactable_weapon_case_2x1_z_axis" type="unit">
+		<unit path="units/payday2/equipment/gen_interactable_weapon_case_2x1/gen_interactable_weapon_case_2x1_z_axis"/>
+		<object path="units/payday2/equipment/gen_interactable_weapon_case_2x1/gen_interactable_weapon_case_2x1_z_axis"/>
+		<material_config path="units/payday2/equipment/gen_interactable_weapon_case_2x1/gen_interactable_weapon_case_2x1"/>
+		<sequence_manager path="units/payday2/equipment/gen_interactable_weapon_case_2x1/gen_interactable_weapon_case_2x1_z_axis"/>
+		<unit path="units/payday2/equipment/gen_interactable_weapon_case_2x1/spawn_ak47_z_axis"/>
+		<object path="units/payday2/equipment/gen_interactable_weapon_case_2x1/spawn_ak47"/>
+		<material_config path="units/payday2/equipment/gen_interactable_weapon_case_2x1/spawn_ak47"/>
+		<sequence_manager path="units/payday2/equipment/gen_interactable_weapon_case_2x1/spawn_ak47"/>
+		<bnk path="soundbanks/regular_sfx"/>
+	</add>
+	<add from_db="true" path="units/pd2_dlc_dark/equipment/drk_interactable_weapon_case_1x1/drk_interactable_weapon_case_1x1" type="unit">
+		<unit path="units/pd2_dlc_dark/equipment/drk_interactable_weapon_case_1x1/drk_interactable_weapon_case_1x1"/>
+		<object path="units/pd2_dlc_dark/equipment/drk_interactable_weapon_case_1x1/drk_interactable_weapon_case_1x1"/>
+		<material_config path="units/pd2_dlc_dark/equipment/drk_interactable_weapon_case_1x1/drk_interactable_weapon_case_1x1"/>
+		<sequence_manager path="units/pd2_dlc_dark/equipment/drk_interactable_weapon_case_1x1/drk_interactable_weapon_case_1x1"/>
+		<unit path="units/pd2_dlc_dark/equipment/drk_interactable_weapon_case_1x1/spawn_glock"/>
+		<object path="units/pd2_dlc_dark/equipment/drk_interactable_weapon_case_1x1/spawn_glock"/>
+		<material_config path="units/pd2_dlc_dark/equipment/drk_interactable_weapon_case_1x1/spawn_glock"/>
+		<sequence_manager path="units/pd2_dlc_dark/equipment/drk_interactable_weapon_case_1x1/spawn_glock"/>
+		<bnk path="soundbanks/regular_sfx"/>
+	</add>
+	<add from_db="true" path="units/pd2_dlc_mad/props/mad_interactable_weapon_case/mad_interactable_weapon_case_1x1_closed" type="unit">
+		<material_config path="units/payday2/props/bnk_prop_office_briefcase_steel/bnk_prop_office_briefcase_steel"/>
+		<object path="units/pd2_dlc_mad/props/mad_interactable_weapon_case/mad_interactable_weapon_case_1x1_closed"/>
+		<sequence_manager path="units/pd2_dlc_mad/props/mad_interactable_weapon_case/mad_interactable_weapon_case_1x1_closed"/>
+		<unit path="units/pd2_dlc_mad/props/mad_interactable_weapon_case/mad_interactable_weapon_case_1x1_closed"/>
+	</add>
+	<add from_db="true" path="units/pd2_dlc_dark/equipment/drk_interactable_weapon_case_2x1/drk_interactable_weapon_case_2x1" type="unit">
+		<unit path="units/pd2_dlc_dark/equipment/drk_interactable_weapon_case_2x1/drk_interactable_weapon_case_2x1"/>
+		<object path="units/pd2_dlc_dark/equipment/drk_interactable_weapon_case_2x1/drk_interactable_weapon_case_2x1"/>
+		<material_config path="units/pd2_dlc_dark/equipment/drk_interactable_weapon_case_2x1/drk_interactable_weapon_case_2x1"/>
+		<sequence_manager path="units/pd2_dlc_dark/equipment/drk_interactable_weapon_case_2x1/drk_interactable_weapon_case_2x1"/>
+		<unit path="units/pd2_dlc_dark/equipment/drk_interactable_weapon_case_2x1/spawn_scar"/>
+		<object path="units/pd2_dlc_dark/equipment/drk_interactable_weapon_case_2x1/spawn_scar"/>
+		<material_config path="units/pd2_dlc_dark/equipment/drk_interactable_weapon_case_2x1/spawn_scar"/>
+		<sequence_manager path="units/pd2_dlc_dark/equipment/drk_interactable_weapon_case_2x1/spawn_scar"/>
+		<bnk path="soundbanks/regular_sfx"/>
+	</add>
+	<add from_db="true" path="units/dev_tools/level_tools/navigation/navigation_blocker_10m" type="unit">
+		<material_config path="core/material_configs/hub_elements"/>
+		<object path="units/dev_tools/level_tools/navigation_splitter_10m"/>
+		<unit path="units/dev_tools/level_tools/navigation/navigation_blocker_10m"/>
+	</add>
+	<add from_db="true" path="units/dev_tools/level_tools/navigation/navigation_blocker_01m_square" type="unit">
+		<material_config path="core/material_configs/hub_elements"/>
+		<object path="units/dev_tools/level_tools/navigation_splitter"/>
+		<unit path="units/dev_tools/level_tools/navigation/navigation_blocker_01m_square"/>
+	</add>
+	<add from_db="true" path="units/dev_tools/level_tools/collision/dev_collision_1m/dev_collision_1m_bag" type="unit">
+		<unit path="units/dev_tools/level_tools/collision/dev_collision_1m/dev_collision_1m_bag"/>
+		<object path="units/dev_tools/level_tools/collision/dev_collision_1m/dev_collision_1m_bag"/>
+		<material_config path="core/material_configs/hub_elements"/>
+	</add>
+</table>

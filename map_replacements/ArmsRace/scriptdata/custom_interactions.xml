@@ -1,0 +1,20 @@
+<table>
+	<Interactions>
+		<interaction action_text_id="AR_RemovingJammer" id="AR_RemoveJammer" interact_distance="100" timer="4"/>
+		
+		<interaction action_text_id="AR_MovingCart" id="AR_MoveCart" interact_distance="100" timer="4"/>
+
+		<interaction id="gen_pku_weed" 
+			based_on="gen_pku_cocaine"
+			text_id="hud_int_hold_take_weed"
+			action_text_id="hud_action_taking_weed"
+			axis="y"
+		/>
+
+		<interaction id="bag_weed"
+			text_id="AR_bag_weed"
+			action_text_id="AR_action_bagging_weed"
+			timer="2"
+		/>
+	</Interactions>
+</table>

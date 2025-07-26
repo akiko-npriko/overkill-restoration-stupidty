@@ -1,0 +1,148 @@
+<table name="train_encore">
+	<instance id="train_cam_computer2">
+		<packages>
+			<value_node value="levels/instances/unique/train_cam_computer/world"/>
+			<value_node value="levels/instances/unique/train_cam_computer/world_sounds"/>
+			<value_node value="levels/instances/unique/train_cam_computer/world/world"/>
+		</packages>
+	</instance>
+	<instance id="train_security_box2">
+		<packages>
+			<value_node value="levels/instances/unique/train_security_box/world"/>
+			<value_node value="levels/instances/unique/train_security_box/world_sounds"/>
+			<value_node value="levels/instances/unique/train_security_box/world/world"/>
+		</packages>
+	</instance>
+	<instance id="random_loot_box">
+		<packages>
+			<value_node value="levels/instances/unique/crojob/random_loot/world"/>
+			<value_node value="levels/instances/unique/crojob/random_loot/world_sounds"/>
+			<value_node value="levels/instances/unique/crojob/random_loot/world/world"/>
+		</packages>
+	</instance>
+	<Achievements icon="guis/achievements/tRain2_pack" id="tRain2">
+		<achievement desc_id="Sneaky_desc" icon="guis/achievements/tRain2_sneaky" id="Sneaky" name_id="Sneaky" objective_id="Sneaky_obj" rank="2"/>
+		<achievement desc_id="DS_desc" icon="guis/achievements/tRain2_DS" id="DS" name_id="DS" objective_id="DS_obj" rank="3"/>
+		<achievement desc_id="OD_desc" icon="guis/achievements/tRain2_OD" id="OD" name_id="OD" objective_id="OD_obj" rank="4"/>
+		<achievement desc_id="all_loot_desc" icon="guis/achievements/tRain2_all_loot" id="all_loot" name_id="all_loot" objective_id="all_loot_obj" rank="3"/>
+		<achievement desc_id="SuperSneaky_desc" icon="guis/achievements/tRain2_supersneaky" id="SuperSneaky" name_id="SuperSneaky" objective_id="SuperSneaky_obj" rank="4"/>
+		<achievement desc_id="HappyHour_desc" icon="guis/achievements/tRain2_all_happy_hour" id="HappyHour" name_id="HappyHour" objective_id="HappyHour_obj" rank="4"/>
+	</Achievements>
+	<AddFiles directory="assets">
+		<texture force="true" path="guis/achievements/tRain2_pack"/>
+		<texture force="true" path="guis/achievements/tRain2_all_loot"/>
+		<texture force="true" path="guis/achievements/tRain2_DS"/>
+		<texture force="true" path="guis/achievements/tRain2_OD"/>
+		<texture force="true" path="guis/achievements/tRain2_all_happy_hour"/>
+		<texture force="true" path="guis/achievements/tRain2_supersneaky"/>
+		<texture force="true" path="guis/achievements/tRain2_sneaky"/>
+		<texture force="true" path="guis/textures/tRain"/>
+	</AddFiles>
+	<AssetUpdates id="42002" provider="modworkshop" use_local_dir="true" version="1.4.3.1"/>
+	<Hooks directory="Hooks">
+		<hook file="timergui.lua" source_file="lib/units/props/timergui"/>
+		<hook file="moosik.lua" source_file="lib/managers/musicmanager"/>
+	</Hooks>
+	<Localization default="english.txt" directory="loc">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	<level ai_group_type="America" bonus_escape="false" briefing_dialog="" cube="cube_apply_heist_bank" ghost_bonus="0.1" id="tRain_returns" intro_event="" max_bags="60" music="heist">
+		<add file="levels/tRain_returns/add.xml"/>
+		<assets>
+			<asset name="arm_for_ammo"/>
+			<asset name="arm_for_health"/>
+			<asset name="grenade_crate"/>
+			<asset name="bodybags_bag"/>
+		</assets>
+		<outro_event>
+			<value_node value=""/>
+		</outro_event>
+		<packages>
+			<value_node value="packages/narr_arm_for"/>
+			<value_node value="levels/narratives/armadillo/arm_for/world"/>
+			<value_node value="levels/narratives/armadillo/arm_for/world_sounds"/>
+			<value_node value="levels/narratives/armadillo/arm_for/pc_only/pc_only"/>
+			<value_node value="levels/narratives/armadillo/arm_for/world/world"/>
+			<value_node value="levels/narratives/armadillo/arm_for/brolake/brolake"/>
+			<value_node value="levels/narratives/armadillo/arm_for/bush/bush"/>
+			<value_node value="levels/narratives/armadillo/arm_for/editor_only/editor_only"/>
+			<value_node value="levels/instances/unique/crojob/random_loot/world/world"/>
+			<value_node value="levels/narratives/vlad/nightclub/world_sounds"/>
+			<value_node value="levels/instances/unique/are_exfil_puzzle/world/world"/>
+			<value_node value="levels/instances/unique/pbr/pbr_mountain_loot_crate/world/world"/>
+			<value_node value="levels/instances/unique/train_cam_computer/world/world"/>
+			<value_node value="levels/instances/unique/train_security_box/world/world"/>
+			<value_node value="levels/narratives/armadillo/arm_fac/world/world"/>
+		</packages>
+		<script_data_mods directory="scriptdata">
+			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
+				<options merge_mode="add" mode="add"/>
+			</mod>
+		</script_data_mods>
+	</level>
+	<narrative briefing_event="" contact="custom" hide_from_crimenet="false" icon="guis/textures/tRain" id="tRain_II" jc="50" load_screen="guis/dlcs/pic/textures/loading/job_trainheist" region="street">
+		<chain>
+			<table level_id="tRain_returns" type="d" type_id="heist_type_assault">
+				<mission_filter>
+					<value_node value="4"/>
+				</mission_filter>
+			</table>
+		</chain>
+		<contract_cost>
+			<value_node value="35000"/>
+			<value_node value="35000"/>
+			<value_node value="35000"/>
+			<value_node value="35000"/>
+			<value_node value="50000"/>
+			<value_node value="50000"/>
+			<value_node value="50000"/>
+		</contract_cost>
+		<crimenet_callouts>
+			<value_node value=""/>
+		</crimenet_callouts>
+		<crimenet_videos>
+			<value_node value="cn_jewel1"/>
+			<value_node value="cn_jewel2"/>
+			<value_node value="cn_jewel1"/>
+		</crimenet_videos>
+		<debrief_event>
+			<value_node value=""/>
+		</debrief_event>
+		<experience_mul>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1.5"/>
+			<value_node value="1.5"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+		</experience_mul>
+		<max_mission_xp>
+			<value_node value="68250"/>
+			<value_node value="68250"/>
+			<value_node value="68250"/>
+			<value_node value="68250"/>
+			<value_node value="68250"/>
+			<value_node value="68250"/>
+			<value_node value="68250"/>
+		</max_mission_xp>
+		<min_mission_xp>
+			<value_node value="4250"/>
+			<value_node value="4250"/>
+			<value_node value="4250"/>
+			<value_node value="4250"/>
+			<value_node value="4250"/>
+			<value_node value="4250"/>
+			<value_node value="4250"/>
+		</min_mission_xp>
+		<payout>
+			<value_node value="20000"/>
+			<value_node value="20000"/>
+			<value_node value="20000"/>
+			<value_node value="20000"/>
+			<value_node value="20000"/>
+			<value_node value="20000"/>
+			<value_node value="20000"/>
+		</payout>
+	</narrative>
+</table>

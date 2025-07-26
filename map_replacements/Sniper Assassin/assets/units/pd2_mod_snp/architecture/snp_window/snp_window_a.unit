@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<unit type="hcm" slot="1">
+    <object file="units/pd2_mod_snp/architecture/snp_window/snp_window_a" />
+	<network sync="spawn"/>
+
+	<dependencies>
+		
+	</dependencies>
+
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="attention" class="AIAttentionObject" />
+	</extensions>
+</unit>

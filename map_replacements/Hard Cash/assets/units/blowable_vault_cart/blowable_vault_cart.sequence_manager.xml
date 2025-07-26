@@ -1,0 +1,45 @@
+<sequence_manager>
+	<unit>
+	
+		<sequence editable_state="true" name="'kaboom'" triggable="true">
+			<animation_group enabled="true" from="0/30" name="'animation_group_kaboom'" to="60/30"/>
+			
+			<body ebabled="true" name="'body_vault_doors'"/>
+			
+			<body ebabled="true" name="'body_collision_blown'"/>
+			<body ebabled="false" name="'body_collision_clean'"/>
+			
+			<object enabled="true" name="'g_l_vault_door'"/>
+			<object enabled="true" name="'g_r_vault_door'"/>
+			
+			<object enabled="true" name="'g_tra_ext_blown'"/>
+			<object enabled="false" name="'g_tra_ext'"/>
+			<object enabled="true" name="'g_tra_int'"/>
+			
+			<object enabled="true" name="'g_bottom_door_blown'"/>
+			<object enabled="false" name="'g_bottom_door_clean'"/>
+			<object enabled="false" name="'g_doors_clean'"/>
+		</sequence>
+		
+		<sequence editable_state="true" name="'reset'" triggable="true">
+			<animation_group enabled="true" from="0/30" name="'animation_group_kaboom'" to="1/30"/>
+			
+			<body ebabled="false" name="'body_vault_doors'"/>
+			
+			<body ebabled="false" name="'body_collision_blown'"/>
+			<body ebabled="true" name="'body_collision_clean'"/>
+			
+			<object enabled="false" name="'g_l_vault_door'"/>
+			<object enabled="false" name="'g_r_vault_door'"/>
+			
+			<object enabled="false" name="'g_tra_ext_blown'"/>
+			<object enabled="true" name="'g_tra_ext'"/>
+			<object enabled="false" name="'g_tra_int'"/>
+			
+			<object enabled="false" name="'g_bottom_door_blown'"/>
+			<object enabled="true" name="'g_bottom_door_clean'"/>
+			<object enabled="true" name="'g_doors_clean'"/>
+		</sequence>
+		
+	</unit>
+</sequence_manager>

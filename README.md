@@ -384,6 +384,19 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/25979
  - Election Funds - PD2M
 	- https://modworkshop.net/mod/25521
+ - Underground Bargains - PD2M
+	- https://modworkshop.net/mod/25398
+ - Yaeger - Arms Race
+	- https://modworkshop.net/mod/50752
+ - Bookmaker's Office
+	- https://modworkshop.net/mod/22675
+ - Deal Denied
+	- https://modworkshop.net/mod/30506
+ - Hard Cash
+	- https://modworkshop.net/mod/41204
+ - THERE ARE MORE HEISTS DO THEM LATER!!!
+ - Restoration Mod - custom heists compatibility patches
+	- https://modworkshop.net/mod/38252
  - Scrollable Contract Brokers
 	- https://modworkshop.net/mod/37050
 	 

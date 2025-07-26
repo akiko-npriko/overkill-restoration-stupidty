@@ -1,0 +1,17 @@
+<table directory="assets">
+	<add from_db="true" path="units/payday2/pickups/gen_pku_crowbar/gen_pku_crowbar" type="unit">
+		<object path="units/payday2/pickups/gen_pku_crowbar/gen_pku_crowbar"/>
+		<sequence_manager path="units/payday2/pickups/gen_pku_crowbar/gen_pku_crowbar"/>
+		<unit path="units/payday2/pickups/gen_pku_crowbar/gen_pku_crowbar"/>
+	</add>
+	<add from_db="true" path="units/dev_tools/editable_text_short/editable_text_short" type="unit">
+		<material_config path="units/dev_tools/editable_text_short/editable_text_short"/>
+		<object path="units/dev_tools/editable_text_short/editable_text_short"/>
+		<unit path="units/dev_tools/editable_text_short/editable_text_short"/>
+	</add>
+	<add from_db="true" path="units/dev_tools/level_tools/collision/dev_collision_1m/dev_collision_1m" type="unit">
+		<material_config path="core/material_configs/hub_elements"/>
+		<object path="units/dev_tools/level_tools/collision/dev_collision_1m/dev_collision_1m"/>
+		<unit path="units/dev_tools/level_tools/collision/dev_collision_1m/dev_collision_1m"/>
+	</add>
+</table>

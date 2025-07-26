@@ -1,0 +1,16 @@
+<dynamic_object>
+    <diesel materials="units/custom/pd2_mod_underground_bargains/chl_hospital_saw_teddy/chl_hospital_saw_teddy" orientation_object="rp_hospital_saw_teddy" />
+	<sequence_manager file="units/custom/pd2_mod_underground_bargains/chl_hospital_saw_teddy/chl_hospital_saw_teddy" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_hospital_saw_teddy" />
+			<object name="c_editor" collision_type="box" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="cloth">
+		<decal_mesh name="g_donkey" enabled="true" material="cloth" />
+	</decal_surfaces>
+	<graphics>
+        <object enabled="true" name="g_donkey" />
+    </graphics>
+</dynamic_object>

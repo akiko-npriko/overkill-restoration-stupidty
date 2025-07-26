@@ -1,0 +1,89 @@
+<?xml version="1.0" ?>
+<dynamic_object>
+	<diesel materials="units/payday2/architecture/safehouse/safehouse" orientation_object="rp_safehouse_drycleaner" />
+		<bodies>
+			<body name="static_body" template="static" enabled="true" >
+				<object name="rp_safehouse_drycleaner"/>
+				<object name="c_safehouse_drycleaner_1" collision_type="mesh_mopp" padding="-2.5"/>
+				<object name="c_safehouse_drycleaner_2" collision_type="mesh_mopp" padding="-2.5"/>
+				<object name="c_safehouse_drycleaner_3" collision_type="mesh_mopp" padding="-2.5"/>
+				<object name="c_safehouse_drycleaner_4" collision_type="mesh_mopp" padding="-2.5"/>
+				<object name="c_safehouse_drycleaner_details_1" collision_type="mesh_mopp" padding="-2.5"/>
+				<object name="c_safehouse_drycleaner_details_2" collision_type="mesh_mopp" padding="-2.5"/>
+				<object name="c_safehouse_drycleaner_ext_dirty" collision_type="mesh_mopp" padding="-2.5"/>
+				<object name="c_safehouse_drycleaner_garagedoor" collision_type="mesh_mopp" padding="-2.5"/>
+				<object name="c_safehouse_drycleaner_int_1" collision_type="mesh_mopp" padding="-2.5"/>
+				<object name="c_safehouse_drycleaner_int_2" collision_type="mesh_mopp" padding="-2.5"/>
+				<object name="c_safehouse_drycleaner_int_3" collision_type="mesh_mopp" padding="-2.5"/>
+				<object name="c_safehouse_drycleaner_int_details" collision_type="mesh_mopp" padding="-2.5"/>
+				<object name="c_safehouse_drycleaner_int_garage" collision_type="mesh_mopp" padding="-2.5"/>
+			</body>
+		</bodies>
+
+	<decal_surfaces default_material="stone" static="true">
+		<decal_mesh name="dm_cloth_stuffed_1" enabled="true" material="cloth"/>
+		<decal_mesh name="dm_cloth_stuffed_2" enabled="true" material="cloth"/>
+		<decal_mesh name="dm_concrete_1" enabled="true" material="concrete"/>
+		<decal_mesh name="dm_concrete_2" enabled="true" material="concrete"/>
+		<decal_mesh name="dm_glass_unbreakable_2" enabled="true" material="glass_unbreakable"/>
+		<decal_mesh name="dm_hardwood_1" enabled="true" material="hardwood"/>
+		<decal_mesh name="dm_hardwood_2" enabled="true" material="hardwood"/>
+		<decal_mesh name="dm_hardwood_3" enabled="true" material="hardwood"/>
+		<decal_mesh name="dm_metal_1" enabled="true" material="metal"/>
+		<decal_mesh name="dm_metal_2" enabled="true" material="metal"/>
+		<decal_mesh name="dm_metal_3" enabled="true" material="metal"/>
+		<decal_mesh name="dm_metal_hollow_1" enabled="true" material="metal"/>
+		<decal_mesh name="dm_metal_hollow_2" enabled="true" material="metal"/>
+		<decal_mesh name="dm_plaster_1" enabled="true" material="plaster"/>
+		<decal_mesh name="dm_plaster_2" enabled="true" material="plaster"/>
+		<decal_mesh name="dm_plaster_3" enabled="true" material="plaster"/>
+		<decal_mesh name="dm_rubber" enabled="true" material="rubber"/>
+		<decal_mesh name="dm_stone_1" enabled="true" material="stone"/>
+		<decal_mesh name="dm_stone_2" enabled="true" material="stone"/>
+		<decal_mesh name="dm_stone_3" enabled="true" material="stone"/>
+		<decal_mesh name="dm_stone_4" enabled="true" material="stone"/>
+		<decal_mesh name="dm_thin_layer" enabled="true" material="thin_layer"/>
+		<decal_mesh name="dm_tile_1" enabled="true" material="tile"/>
+		<decal_mesh name="dm_tile_2" enabled="true" material="tile"/>
+		<decal_mesh name="dm_wood" enabled="true" material="wood"/>
+	</decal_surfaces>
+
+	<graphics>
+		<object name="g_safehouse_drycleaner_1" enabled="true" shadow_caster="false"/>
+		<object name="g_safehouse_drycleaner_2" enabled="true" shadow_caster="false"/>
+		<object name="g_safehouse_drycleaner_3" enabled="true" shadow_caster="false"/>
+		<object name="g_safehouse_drycleaner_4" enabled="true" shadow_caster="false"/>
+		<object name="g_safehouse_drycleaner_details_1" enabled="true" shadow_caster="false"/>
+		<object name="g_safehouse_drycleaner_details_2" enabled="true" shadow_caster="false"/>
+		<object name="g_safehouse_drycleaner_drain_1" enabled="true" shadow_caster="false"/>
+		<object name="g_safehouse_drycleaner_drain_2" enabled="true" shadow_caster="false"/>
+		<object name="g_safehouse_drycleaner_drain_3" enabled="true" shadow_caster="false"/>
+		<object name="g_safehouse_drycleaner_ext_dirty" enabled="true" shadow_caster="false"/>
+		<object name="g_safehouse_drycleaner_fan" enabled="true" shadow_caster="true"/>
+		<object name="g_safehouse_drycleaner_fan2" enabled="true" shadow_caster="true"/>
+		<object name="g_safehouse_drycleaner_fan3" enabled="true" shadow_caster="true"/>
+		<object name="g_safehouse_drycleaner_fan4" enabled="true" shadow_caster="true"/>
+		<object name="g_safehouse_drycleaner_garagedoor" enabled="true" shadow_caster="false"/>
+		<object name="g_safehouse_drycleaner_industrialwindows_1" enabled="true" shadow_caster="false"/>
+		<object name="g_safehouse_drycleaner_industrialwindows_2" enabled="true" shadow_caster="false"/>
+		<object name="g_safehouse_drycleaner_industrialwindows_3" enabled="true" shadow_caster="false"/>
+		<object name="g_safehouse_drycleaner_int_1" enabled="true" shadow_caster="false"/>
+		<object name="g_safehouse_drycleaner_int_2" enabled="true" shadow_caster="false"/>
+		<object name="g_safehouse_drycleaner_int_3" enabled="true" shadow_caster="false"/>
+		<object name="g_safehouse_drycleaner_int_ceilingcables" enabled="true" shadow_caster="false"/>
+		<object name="g_safehouse_drycleaner_int_details_1" enabled="true" shadow_caster="false"/>
+		<object name="g_safehouse_drycleaner_int_details_2" enabled="true" shadow_caster="false"/>
+		<object name="g_safehouse_drycleaner_int_garage" enabled="true" shadow_caster="false"/>
+		<object name="s_safehouse_drycleaner_1" enabled="true" shadow_caster="true"/>
+		<object name="s_safehouse_drycleaner_2" enabled="true" shadow_caster="true"/>
+		<object name="s_safehouse_drycleaner_3" enabled="true" shadow_caster="true"/>
+		<object name="s_safehouse_drycleaner_4" enabled="true" shadow_caster="true"/>
+		<object name="s_safehouse_drycleaner_details_1" enabled="true" shadow_caster="true"/>
+		<object name="s_safehouse_drycleaner_details_2" enabled="true" shadow_caster="true"/>
+		<object name="s_safehouse_drycleaner_drain_1" enabled="true" shadow_caster="true"/>
+		<object name="s_safehouse_drycleaner_drain_2" enabled="true" shadow_caster="true"/>
+		<object name="s_safehouse_drycleaner_drain_3" enabled="true" shadow_caster="true"/>
+		<object name="s_safehouse_drycleaner_garagedoor" enabled="true" shadow_caster="true"/>
+	</graphics>
+
+</dynamic_object>

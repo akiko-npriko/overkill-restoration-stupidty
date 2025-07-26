@@ -1,0 +1,14 @@
+<unit type="hsp" slot="1" >
+    <object file="units/custom/pd2_mod_underground_bargains/chl_hospital_saw_teddy/chl_hospital_saw_teddy" />
+    <extensions>
+        <extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="CarryInteractionExt">
+			<var name="tweak_data" value="gen_pku_teddy" />
+			<var name="_remove_on_interact" value="true" />
+		</extension>
+		<extension name="carry_data" class="CarryData">
+			<var name="_carry_id" value="pd2m_ub_teddy" />
+		</extension>
+    </extensions>
+</unit>

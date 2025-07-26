@@ -1,0 +1,7 @@
+<materials version="3">
+    <material name="shadow_caster" render_template="shadow_caster_only" version="2"/>
+    <material version="2" render_template="generic:DIFFUSE_TEXTURE:DOUBLE_SIDED:NORMALMAP:RL_ENVIRONMENT:VERTEX_COLOR" name="mat_lcm_canopy">
+        <diffuse_texture file="units/payday2/architecture/lcm/cannopy_all_df"/>
+        <bump_normal_texture file="units/payday2/architecture/lcm/cannopy_all_nm"/>
+    </material>
+</materials>

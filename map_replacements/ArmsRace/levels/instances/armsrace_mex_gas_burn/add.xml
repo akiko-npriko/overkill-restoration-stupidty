@@ -1,0 +1,15 @@
+<table directory="assets">
+	<add from_db="true" path="effects/payday2/environment/mallcrasher_fire" type="effect">
+		<effect load="true" path="effects/payday2/environment/mallcrasher_fire"/>
+	</add>
+	<add from_db="true" path="units/payday2/equipment/hlm_equipment_gas_can_shoot/hlm_equipment_gas_can_shoot" type="unit">
+		<effect load="true" path="effects/particles/fire/large_light_fire"/>
+		<material_config path="units/payday2/equipment/hlm_equipment_gas_can_shoot/hlm_equipment_gas_can_shoot"/>
+		<object path="units/payday2/equipment/hlm_equipment_gas_can_shoot/hlm_equipment_gas_can_shoot"/>
+		<sequence_manager path="units/payday2/equipment/hlm_equipment_gas_can_shoot/hlm_equipment_gas_can_shoot"/>
+		<unit path="units/payday2/equipment/hlm_equipment_gas_can_shoot/hlm_equipment_gas_can_shoot"/>
+	</add>
+	<add from_db="true" path="effects/payday2/environment/fire_alex_must_die_1" type="effect">
+		<effect load="true" path="effects/payday2/environment/fire_alex_must_die_1"/>
+	</add>
+</table>

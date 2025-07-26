@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<unit type="fwb" slot="1">
+	<object file="units/equipment/pd2_vault_drill/pd2_vault_drill"/>
+	<network sync="spawn"/>
+	<dependencies>
+		<depends_on gui="guis/timer_gui" />
+		<depends_on effect="effects/payday2/environment/drill"/>
+		<depends_on effect="effects/particles/equipment/vault_drill/drill_jammed"/>
+		<depends_on bnk="soundbanks/drill" />
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="base" class="Drill">
+			<var name="is_drill" value="true" />
+		</extension>
+		<extension name="interaction" class="UseInteractionExt">
+			<var name="tweak_data" value="pd1_drill" />
+		<var name="_interact_object" value="int_location" />
+		</extension>
+		<extension name="timer_gui" class="TimerGui">
+			<var name="_gui_object"			value="timer_gui" />
+			<var name="_jammed_tweak_data"	value="drill_jammed" />
+			<var name="_start_event"		value="drill" />
+			<var name="_jam_event"			value="drill_jam" />
+			<var name="_resume_event"		value="drill_resume" />
+			<var name="_done_event"			value="drill_end" />
+			<var name="_can_jam"			value="true" />
+			<var name="_jam_times"			value="3" />
+		</extension>
+	</extensions>
+	<sounds>
+	<default_soundsource source="rp_vault_drill"/>
+	</sounds>
+</unit>

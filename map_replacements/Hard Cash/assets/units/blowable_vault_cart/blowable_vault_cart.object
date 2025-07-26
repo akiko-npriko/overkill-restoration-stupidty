@@ -1,0 +1,86 @@
+<dynamic_object>
+    <diesel orientation_object="root_point" materials="units/pd2_mod_battleship/props/blowable_vault_cart/blowable_vault_cart" />
+	<sequence_manager file="units/pd2_mod_battleship/props/blowable_vault_cart/blowable_vault_cart" />
+	
+	<animations>
+		<animation_group name="animation_group_kaboom" enabled="false">
+			<object name="animation_kaboom" />
+		</animation_group>
+	</animations>
+	
+	
+	<bodies>
+    	<body name="train" enabled="true" template="animated">
+    		<object name="root_point" />
+    		<object name="animation_kaboom" />
+			<object name="c_convex_00" collision_type="convex" padding="-2.5"/>
+			<object name="c_convex_01" collision_type="convex" padding="-2.5"/>
+			<object name="c_convex_02" collision_type="convex" padding="-2.5"/>
+			<object name="c_convex_03" collision_type="convex" padding="-2.5"/>
+			<object name="c_convex_04" collision_type="convex" padding="-2.5"/>
+			<object name="c_convex_05" collision_type="convex" padding="-2.5"/>
+			<object name="c_convex_06" collision_type="convex" padding="-2.5"/>
+		</body>
+
+		<body name="body_vault_doors" enabled="false" template="animated">
+			<object name="c_l_vault_door" collision_type="box" padding="-2.5"/>
+			<object name="c_r_vault_door" collision_type="box" padding="-2.5"/>
+		</body>
+		
+		<body name="body_collision_clean" enabled="true" template="animated">
+			<object name="c_tra_ext" collision_type="mesh_mopp"/>
+		</body>
+		<body name="body_collision_blown" enabled="false" template="animated">
+			<object name="c_cart_blown" collision_type="mesh_mopp"/>
+		</body>
+		
+		<body name="body_collision_doors" enabled="true" template="animated">
+			<object name="c_doors" collision_type="mesh_mopp"/>
+		</body>
+		<body name="body_collision_doors_clean" enabled="true" template="animated">
+			<object name="c_doors_clean" collision_type="mesh_mopp"/>
+		</body>
+
+    </bodies>
+   
+    <decal_surfaces default_material="steel" static="false">
+        <decal_mesh name="dm_metal"        		 enabled="false"  	material="metal" />
+        <decal_mesh name="dm_sheet_metal"        enabled="false"     material="sheet_metal" />
+        <decal_mesh name="dm_sheet_metal_blown"        enabled="true"     material="sheet_metal" />
+    </decal_surfaces>
+	
+    <graphics>
+	
+        <object name="g_hatch_a"           	enabled="true" />	
+        <object name="g_hatch_b"           	enabled="true" />
+		
+        <object name="g_tra_ext"           	enabled="true" />
+        <object name="g_tra_ext_blown"      enabled="false" />
+        <object name="g_tra_int"           	enabled="false" />
+		
+        <object name="g_l_vault_door"     	enabled="false" />
+        <object name="g_r_vault_door"     	enabled="false" />
+		
+        <object name="g_bottom_doors"     		enabled="true" />
+        <object name="g_bottom_door_clean"     	enabled="true" />
+        <object name="g_bottom_door_blown"     	enabled="false" />
+		
+        <object name="g_doors"     			enabled="true" />
+        <object name="g_doors_clean"     	enabled="true" />
+		
+        <object name="s_s"                  enabled="true"  shadow_caster="true"/>
+        <object name="s_tra_int_vault"      enabled="true"  shadow_caster="true"/>
+        <object name="s_hatch_a"            enabled="true"  shadow_caster="true"/>
+        <object name="s_hatch_b"            enabled="true"  shadow_caster="true"/>
+		
+        
+    </graphics>
+
+	<!--
+    <effects>
+    	<effect_spawner name="top" enabled="false" object="e_top" effect="effects/payday2/particles/fire/thermite_long_burn" />
+    	<effect_spawner name="left" enabled="false" object="e_left" effect="effects/payday2/particles/fire/thermite_long_burn" />
+    	<effect_spawner name="right" enabled="false" object="e_right" effect="effects/payday2/particles/fire/thermite_long_burn" />
+    </effects>
+	/-->
+</dynamic_object>

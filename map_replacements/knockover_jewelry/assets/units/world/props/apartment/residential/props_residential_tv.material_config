@@ -1,0 +1,10 @@
+<materials version="3">
+    <material name="props_residential_tv" version="2" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP">
+        <bump_normal_texture file="units/world/props/apartment/residential/props_residental_tv_nm"/>
+        <diffuse_texture file="units/world/props/apartment/residential/props_residental_tv_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2" name="props_residential_tvshelf">
+        <bump_normal_texture file="units/world/props/apartment/residential/props_residential_tvshelf_nm"/>
+        <diffuse_texture file="units/world/props/apartment/residential/props_residential_tvshelf_df"/>
+    </material>
+</materials>

@@ -1,0 +1,22 @@
+<effect force_synch="false">
+    <atom name="cloud2" min_size="1" max_size="1" lifetime="1.5" random_start_time="false" start_time="0" preroll="0" inherit_velocity_multiplier="2" fade_in_start="-1" fade_in_length="0" fade_out_start="-1" spawn_cull_policy="initialize" cull_policy="update" cull_gracetime="0" max_particle_radius="-1" soundbank="" cue="" ambient="false" grab_relative="effect" grab_pos="0 0 0" grab_radius="200" grab_backfacing="false" timeline="">
+        <effect_spawn event="tick" effect="effects/payday2/particles/explosions/burnpuff"/>
+        <initializerstack>
+            <boxrandomposition relative="effect" min="0 0 0" max="0 0 0"/>
+            <boxrandomvelocity relative="effect" min="0 0 0" max="0 0 0"/>
+            <boxrandomaspectsize size="10 10" min="0.4" max="2"/>
+            <constantage age="99999"/>
+        </initializerstack>
+        <simulatorstack>
+            <velocityintegrator channel="world"/>
+            <teleporter name="" trigger_teleport="distance" teleport_dist="5" teleport_cap="1" current_position="false" channel="world" normal_variation="0" teleport_event="false" positioner="circle">
+                <circle radius="0" on_edge="false"/>
+                <normal min_velocity="0" max_velocity="0"/>
+            </teleporter>
+            <eventtick frequency="10" jitter="0" use_velocity="false" use_rotation="false"/>
+        </simulatorstack>
+        <visualizerstack>
+            <billboard texture="core/textures/default_texture_df" intensity="none" billboard_type="camera_facing" rotation_channel="world_rotation" blend_mode="normal" render_template="effect_op" origo="0.5 0.5" per_particle_age="false" size_input="constant" size="100 100" color_input="constant" color="255 255 255" opacity_input="constant" opacity="0" rotation_input="constant" rotation="0" rotation_axis="0 0 1" uv_size="1 1" uv_offset_input="constant" uv_offset="0 0"/>
+        </visualizerstack>
+    </atom>
+</effect>

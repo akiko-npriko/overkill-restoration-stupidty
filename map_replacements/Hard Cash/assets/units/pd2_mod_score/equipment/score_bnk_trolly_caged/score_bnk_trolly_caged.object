@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<dynamic_object>
+	<diesel materials="units/pd2_mod_score/equipment/score_bnk_trolly_caged/score_bnk_trolly_caged" orientation_object="rp_root" />
+	<sequence_manager file="units/pd2_mod_score/equipment/score_bnk_trolly_caged/score_bnk_trolly_caged" />
+    <bodies>
+        <body name="static_body" template="static" enabled="true" >
+            <object name="rp_root"/>
+			<object name="c_box_001" collision_type="box" padding="-2.5"/>
+			<object name="c_box_002" collision_type="box" padding="-2.5"/>
+			<object name="c_box_003" collision_type="box" padding="-2.5"/>
+			<object name="c_box_004" collision_type="box" padding="-2.5"/>
+			<object name="c_box_005" collision_type="box" padding="-2.5"/>
+			<object name="c_box_006" collision_type="box" padding="-2.5"/>
+        </body>
+		<body name="bag_body" enabled="true" template="bag" collision_class="bag_blocker">
+			<object name="c_convex_001" collision_type="convex" padding="-2.5"/>
+			<object name="c_convex_002" collision_type="convex" padding="-2.5"/>
+		</body>
+        <body name="panel_body_static" template="static" enabled="true" >
+			<object name="a_panel" />
+			<object name="c_panel" collision_type="convex" padding="-2.5" />
+		</body>
+		<body name="panel_body" enabled="false" template="small_prop" collision_class="bag" pushed_by_mover="false" friction="0.01" sweep="true" keyframed="false" tag="bag" collision_script_quiet_time="0.5" collision_script_tag="small" lin_damping="0.4" ang_damping="20" restitution="0">
+			<object name="a_panel" />
+			<object name="c_panel" collision_type="convex" mass="75" padding="-2.5" />
+		</body>
+    </bodies>
+	
+	<decal_surfaces default_material="metal" static="true">
+		<decal_mesh name="g_trolley" material="sheet_metal" enabled="true"/>
+		<decal_mesh name="g_panel" material="sheet_metal" enabled="true"/>
+	</decal_surfaces>
+	
+	<graphics>
+		<graphic_group name="g_group" enabled="true" culling_object="co_culling">
+			<object name="g_mul" 			enabled="true" 	shadow_caster="true"/>
+			<object name="g_trolley" 		enabled="true" 	shadow_caster="true"/>
+			<object name="g_panel" 			enabled="true" 	shadow_caster="true"/>
+			<object name="g_money_full_001"	enabled="true" 	shadow_caster="true"/>
+			<object name="g_money_full_002"	enabled="true" 	shadow_caster="true"/>
+		</graphic_group>
+	</graphics>
+</dynamic_object> 

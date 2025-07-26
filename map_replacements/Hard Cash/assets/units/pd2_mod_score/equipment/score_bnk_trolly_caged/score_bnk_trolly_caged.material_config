@@ -1,0 +1,19 @@
+<materials version="3">
+    <material name="shadow_caster" render_template="shadow_caster_only" version="2"/>
+    <material name="mtl_bnk_int_1" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture		file="units/payday2/architecture/bnk/bnk_int_wall_1_df"/>
+        <bump_normal_texture	file="units/payday2/architecture/bnk/bnk_int_wall_1_nm"/>
+    </material>
+    <material name="mtl_money" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture		file="units/payday2/props/gen_prop_vault_money_burnt/gen_prop_vault_money_df"/>
+        <bump_normal_texture	file="units/payday2/props/gen_prop_vault_money_burnt/gen_prop_vault_money_nm"/> 
+    </material>
+    <material name="mtl_money_burnt" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture		file="units/payday2/props/gen_prop_vault_money_burnt/gen_prop_vault_money_burnt_df"/>
+        <bump_normal_texture	file="units/payday2/props/gen_prop_vault_money_burnt/gen_prop_vault_money_burnt_nm"/> 
+    </material>
+    <material name="mtl_mul" render_template="decal:DIFFUSE_TEXTURE" version="2">
+        <diffuse_texture		file="units/payday2/props/shadow_mullplan/shadow_mullplan_v2_df"/>
+        <variable				value="sun" type="scalar" name="intensity"/>
+    </material>
+</materials>

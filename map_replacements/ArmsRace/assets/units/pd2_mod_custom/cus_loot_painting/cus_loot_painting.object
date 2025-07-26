@@ -1,0 +1,53 @@
+<dynamic_object>
+    <diesel materials="units/pd2_mod_custom/cus_loot_painting/cus_loot_painting_blue" orientation_object="rp_root" />
+    <sequence_manager file="units/pd2_mod_custom/cus_loot_painting/cus_loot_painting" />
+	
+    <bodies>
+        <body enabled="true" template="editor" name="editor_only">
+            <object name="c_painting_1" collision_type="box"/>
+        </body>
+        <body enabled="false" template="static" name="body_painting_1">
+            <object name="c_painting_1" collision_type="box" padding="-2.5"/>
+        </body>
+        <body enabled="false" template="static" name="body_painting_2">
+            <object name="c_painting_2" collision_type="box" padding="-2.5"/>
+        </body>
+        <body enabled="false" template="static" name="body_painting_3">
+            <object name="c_painting_3" collision_type="box" padding="-2.5"/>
+        </body>
+        <body enabled="false" template="static" name="body_painting_4">
+            <object name="c_painting_4" collision_type="box" padding="-2.5"/>
+        </body>
+        <body enabled="false" template="static" name="body_painting_5">
+            <object name="c_painting_5" collision_type="box" padding="-2.5"/>
+        </body>
+        <body enabled="false" template="static" name="body_painting_6">
+            <object name="c_painting_6" collision_type="box" padding="-2.5"/>
+        </body>
+        <body enabled="false" template="static" name="body_painting_7">
+            <object name="c_painting_7" collision_type="box" padding="-2.5"/>
+        </body>
+    </bodies>
+	
+    <decal_surfaces>
+        <decal_mesh enabled="false" name="c_painting_1" material="cloth" />
+        <decal_mesh enabled="false" name="c_painting_2" material="cloth" />
+        <decal_mesh enabled="false" name="c_painting_3" material="cloth" />
+        <decal_mesh enabled="false" name="c_painting_4" material="cloth" />
+        <decal_mesh enabled="false" name="c_painting_5" material="cloth" />
+        <decal_mesh enabled="false" name="c_painting_6" material="cloth" />
+        <decal_mesh enabled="false" name="c_painting_7" material="cloth" />
+    </decal_surfaces>
+	
+    <graphics>
+		<graphic_group name="grp_paintings" enabled="true">
+			<object name="g_painting_1" enabled="false" />
+			<object name="g_painting_2" enabled="false" />
+			<object name="g_painting_3" enabled="false" />
+			<object name="g_painting_4" enabled="false" />
+			<object name="g_painting_5" enabled="false" />
+			<object name="g_painting_6" enabled="false" />
+			<object name="g_painting_7" enabled="false" />
+		</graphic_group>
+    </graphics>
+</dynamic_object>

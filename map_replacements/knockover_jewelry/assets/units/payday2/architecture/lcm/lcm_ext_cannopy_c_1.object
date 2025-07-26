@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<dynamic_object>
+	<diesel materials="units/payday2/architecture/lcm/lcm_ext_canopy" orientation_object="rp_lcm_ext_cannopy_c_1" />
+    <bodies>
+        <body name="static_body" template="static" enabled="true" >
+            <object name="rp_lcm_ext_cannopy_c_1"/>
+            <object collision_type="box" enabled="true" name="c_box_01"/>
+        </body>
+    </bodies>
+	
+	<decal_surfaces default_material="metal" static="true">
+		<decal_mesh name="g_lcm_ext_cannopy_c" material="thin_layer" enabled="true"/>
+	</decal_surfaces> 
+	
+    <graphics>
+        <object enabled="true" name="g_lcm_ext_cannopy_c" />
+        <object enabled="true" name="s_s" shadow_caster="true" />
+    </graphics>
+</dynamic_object> 

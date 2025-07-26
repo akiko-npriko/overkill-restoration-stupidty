@@ -1,0 +1,20 @@
+<unit type="chl" slot="1">
+	<network sync="spawn"/>
+
+	<object file="units/cpone/weapon_inventory_rack/weapon_inventory_rack"/>
+
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData"/>
+		<extension name="damage" class="UnitDamage"/>
+		<extension name="contour" class="ContourExt"/>
+		<extension name="interaction" class="AccessWeaponMenuInteractionExt">
+			<var name="tweak_data" value="access_weapon_primary"/>
+			<var name="_interact_object" value="interact"/>
+		</extension>
+		<extension name="weapon_dummies" class="InventoryWeaponDummiesExt">
+			<var name="category" value="primaries"/>
+			<var name="amount" value="1"/>
+			<var name="prefix" value="a_weapon_"/>
+		</extension>
+	</extensions>
+</unit>

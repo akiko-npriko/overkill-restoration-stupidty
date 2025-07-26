@@ -1,0 +1,43 @@
+<menues>
+	<menu id="custom_safehouse_menu">
+		<default_node name="empty"/>
+		<node name="empty"/>
+
+		<node menu_components="blackmarket inventory_chats" modifier="MenuComponentInitiator" name="blackmarket_node" no_item_parent="true" no_menu_wrapper="true" scene_state="blackmarket" topic_id="menu_blackmarket">
+			<default_item name="back"/>
+			<legend name="menu_legend_preview_move"/>
+			<legend name="menu_legend_back"/>
+		</node>
+
+		<node back_callback="_left_blackmarket" gui_class="MenuNodeDOFGui" menu_components="blackmarket menuscene_info inventory_chats" modifier="MenuComponentInitiator" name="blackmarket_crafting_node" no_menu_wrapper="true" scene_state="blackmarket_crafting" topic_id="menu_blackmarket">
+			<legend name="menu_legend_preview_move"/>
+			<legend name="menu_legend_preview_zoom"/>
+			<legend name="menu_legend_back"/>
+			<default_item name="back"/>
+		</node>
+
+		<node back_callback="_left_blackmarket" menu_components="menuscene_info inventory_chats" modifier="MenuComponentInitiator" name="blackmarket_preview_node" no_menu_wrapper="true" scene_state="blackmarket_item" topic_id="menu_blackmarket">
+			<legend name="menu_legend_preview_move"/>
+			<legend name="menu_legend_preview_zoom"/>
+			<legend name="menu_legend_back"/>
+			<default_item name="back"/>
+			<item back="true" name="back" previous_node="true" text_id="menu_back" visible_callback="is_pc_controller"/>
+		</node>
+
+		<node align_line_proportions="0.7" gui_class="MenuNodeReticleSwitchGui" menu_components="blackmarket inventory_chats" modifier="MenuReticleSwitchInitiator" name="blackmarket_reticle_switch" refresh="MenuReticleSwitchInitiator" scene_state="blackmarket_crafting" topic_id="menu_reticle_switch">
+			<default_item name="back"/>
+		</node>
+		<node align_line_proportions="0.7" gui_class="MenuNodeCustomizeGadgetGui" menu_components="blackmarket inventory_chats" modifier="MenuCustomizeGadgetInitiator" name="blackmarket_customize_gadget" refresh="MenuCustomizeGadgetInitiator" scene_state="blackmarket_crafting" topic_id="menu_customize_gadget">
+			<default_item name="back"/>
+		</node>
+
+		<node align_line_proportions="0.7" back_callback="on_exit_weapon_color_customize" gui_class="MenuNodeCustomizeWeaponColorGui" menu_components="menuscene_info inventory_chats" modifier="MenuCustomizeWeaponColorInitiator" name="blackmarket_customize_weapon_color" refresh="MenuCustomizeWeaponColorInitiator" scene_state="blackmarket_weapon_color" topic_id="menu_customize_weapon_color">
+			<default_item name="back"/>
+			<legend name="menu_legend_manual_switch_page"/>
+			<legend name="menu_legend_preview_move"/>
+			<legend name="menu_legend_preview_zoom"/>
+			<legend name="menu_legend_select"/>
+			<legend name="menu_legend_back"/>
+		</node>
+	</menu>
+</menues>

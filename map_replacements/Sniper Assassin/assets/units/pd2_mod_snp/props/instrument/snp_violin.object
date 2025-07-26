@@ -1,0 +1,65 @@
+<dynamic_object>
+    <diesel orientation_object="rp_violin" materials="units/pd2_mod_snp/props/instrument/snp_violin" />
+
+    
+	<bodies>
+        <body enabled="true" template="static" name="body0" >
+            <object name="rp_violin" />
+            <object collision_type="box" name="c_box_01" />
+            <object collision_type="box" name="c_box_02" />
+            <object collision_type="box" name="c_box_03" />
+            <object collision_type="box" name="c_box_04" />
+            <object collision_type="box" name="c_box_05" />
+        </body>
+
+		<body enabled="true" template="static" name="static_body">
+            <object name="rp_violin" />
+            <object collision_type="convex" name="c_convex_01" padding="-2.5" />
+        </body>
+
+		<body enabled="false" template="dynamic" name="dynamic_body" collides_with_mover="false">
+            <object collision_type="convex" name="c_convex_01" mass="0.1" padding="-2.5" />
+        </body>
+		
+		
+        <body enabled="true" template="static" name="glass_01" >
+            <object name="rp_violin" />
+            <object collision_type="box" name="c_glass_01" />
+        </body>
+        <body enabled="true" template="static" name="glass_02" >
+            <object name="rp_violin" />
+            <object collision_type="box" name="c_glass_02" />
+        </body>
+        <body enabled="true" template="static" name="glass_03" >
+            <object name="rp_violin" />
+            <object collision_type="box" name="c_glass_03" />
+        </body>
+        <body enabled="true" template="static" name="glass_04" >
+            <object name="rp_violin" />
+            <object collision_type="box" name="c_glass_04" />
+        </body>
+        <body enabled="true" template="static" name="glass_05" >
+            <object name="rp_violin" />
+            <object collision_type="box" name="c_glass_05" />
+        </body>
+    </bodies>
+
+  <decal_surfaces default_material="wood">
+    <decal_mesh name="dm_mesh" enabled="true" material="wood" />
+  </decal_surfaces>
+  
+    <graphics>
+        <object enabled="true" name="g_mesh" />
+        <object enabled="true" name="g_case" />
+        <object enabled="true" name="g_glass_01" />
+        <object enabled="true" name="g_glass_02" />
+        <object enabled="true" name="g_glass_03" />
+        <object enabled="true" name="g_glass_04" />
+        <object enabled="true" name="g_glass_05" />
+        <object enabled="false" name="g_glass_broken_01" />
+        <object enabled="false" name="g_glass_broken_02" />
+        <object enabled="false" name="g_glass_broken_03" />
+        <object enabled="false" name="g_glass_broken_04" />
+        <object enabled="false" name="g_glass_broken_05" />
+    </graphics>
+</dynamic_object>

@@ -1,0 +1,179 @@
+<table directory="assets">
+	<add from_db="true" path="environments/pd2_env_midday/pd2_env_midday" type="environment">
+		<environment path="environments/pd2_env_midday/pd2_env_midday"/>
+		<material_config path="core/environments/skies/sky_1224_clear_sky/sky_1224_clear_sky"/>
+		<scene load="true" path="core/environments/skies/sky_1224_clear_sky/sky_1224_clear_sky"/>
+		<texture path="units/payday2/cubemaps/cubemap_window_weak_df"/>
+	</add>
+	<add from_db="true" path="effects/payday2/particles/fire/thermite_infinite" type="effect">
+		<effect load="true" path="effects/payday2/particles/fire/thermite_infinite"/>
+		<effect load="true" path="effects/payday2/particles/impacts/sparks/sparks_random_02_slow"/>
+	</add>
+	<add from_db="true" path="effects/payday2/particles/fire/thermite_fade" type="effect">
+		<effect load="true" path="effects/payday2/particles/fire/thermite_fade"/>
+	</add>
+	<add from_db="true">
+		<unit load="true" path="units/payday2/equipment/item_door_drill_small/item_door_drill_small_jam_once"/>
+		<object path="units/payday2/equipment/item_door_drill_small/item_door_drill_small"/>
+		<material_config path="units/payday2/equipment/item_door_drill_small/item_door_drill_small"/>
+		<sequence_manager path="units/payday2/equipment/item_door_drill_small/item_door_drill_small"/>
+		<object path="units/payday2/equipment/gen_equipment_shape_charge/gen_equipment_shape_charge"/>
+		<material_config path="units/payday2/equipment/gen_equipment_shape_charge/gen_equipment_shape_charge"/>
+		<sequence_manager path="units/payday2/equipment/gen_equipment_shape_charge/gen_equipment_shape_charge"/>
+		<effect load="true" path="effects/payday2/particles/explosions/shapecharger_explosion"/>
+
+		<bnk load="true" path="soundbanks/ambiences"/>
+		<unit load="true" path="units/dev_tools/mission_elements/point_interaction/interaction_dummy"/>
+	</add>
+	<add auto_cp="false" unload_on_restart="true">
+		<texture path="guis/textures/mods/mission_briefing/assets/jambank/asset_zipline"/>
+
+		<!--CHARACTERS-->
+		<unit load="true" path="units/pd2_mod_jam/characters/civ_male_tonis_manager/civ_male_tonis_manager"/>
+		<object path="units/pd2_mod_jam/characters/civ_male_tonis_manager/civ_male_tonis_manager"/>
+		<material_config path="units/pd2_mod_jam/characters/civ_male_tonis_manager/civ_male_tonis_manager"/>
+		<model path="units/pd2_mod_jam/characters/civ_male_tonis_manager/civ_male_tonis_manager"/>
+		<unit load="true" path="units/pd2_mod_jam/characters/civ_male_tonis_manager/civ_male_tonis_manager_husk"/>
+		<material_config path="units/pd2_mod_jam/characters/civ_male_tonis_manager/civ_male_tonis_manager_contour"/>
+		<sequence_manager from_db="true" path="units/payday2/characters/civ_male_taxman/civ_male_taxman"/>
+
+		<!--ROADS-->
+		<material_config path="units/pd2_mod_jam/architecture/jam_ext_road/jam_ext_road"/>
+
+        <unit_obj path="units/pd2_mod_jam/architecture/jam_ext_road/jam_ext_road_16x16m"/>
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_ext_road/jam_ext_road_32x24m"/>
+
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_ext_road/jam_ext_road_16x24m_tcross"/>
+
+        <unit_obj path="units/pd2_mod_jam/architecture/jam_ext_road/jam_ext_sidewalk_2x2m"/>
+        <unit_obj path="units/pd2_mod_jam/architecture/jam_ext_road/jam_ext_sidewalk_4x4m"/>
+        <unit_obj path="units/pd2_mod_jam/architecture/jam_ext_road/jam_ext_sidewalk_8x8m"/>
+
+		<!--EXTERIOR ARCHITECTURE-->
+		<unit_mat path="units/pd2_mod_jam/architecture/jam_bdrop/jam_bdrop_port"/>
+
+		<material_config path="units/pd2_mod_jam/architecture/jam_ext_wall/jam_ext_wall"/>
+		<unit_mat path="units/pd2_mod_jam/architecture/jam_ext_entrance/jam_ext_entrance"/>
+
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_ext_wall/jam_ext_wall_2m_v1"/>
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_ext_wall/jam_ext_wall_2m_v2"/>
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_ext_wall/jam_ext_wall_2m_corner_v1"/>
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_ext_wall/jam_ext_wall_2m_corner_v2"/>
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_ext_wall/jam_ext_pillar_2m"/>
+
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_ext_wall/jam_ext_wall_4m_v1"/>
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_ext_wall/jam_ext_wall_4m_v2"/>
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_ext_wall/jam_ext_wall_4m_window_v1"/>
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_ext_wall/jam_ext_wall_4m_window_v2"/>
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_ext_wall/jam_ext_wall_4m_door"/>
+
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_ext_wall/jam_ext_wall_8m_v1"/>
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_ext_wall/jam_ext_wall_8m_v2"/>
+
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_ext_wall/jam_ext_wall_6m_window_v1"/>
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_ext_wall/jam_ext_wall_6m_window_v2"/>
+
+		<unit_obj_seq path="units/pd2_mod_jam/architecture/jam_ext_wall/jam_ext_wall_8m_window_v1"/>
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_ext_wall/jam_ext_wall_8m_window_v2"/>
+
+		<!--INTERIOR ARCHITECTURE-->
+		<material_config path="units/pd2_mod_jam/architecture/jam_int_bank/jam_int_wall_a"/>
+		<material_config path="units/pd2_mod_jam/architecture/jam_int_bank/jam_int_wall_b"/>
+		<material_config path="units/pd2_mod_jam/architecture/jam_int_bank/jam_int_wall_c"/>
+		<material_config path="units/pd2_mod_jam/architecture/jam_int_bank/jam_int_floor_a"/>
+		<material_config path="units/pd2_mod_jam/architecture/jam_int_bank/jam_int_floor_b"/>
+		<material_config path="units/pd2_mod_jam/architecture/jam_int_bank/jam_int_floor_c"/>
+		<material_config path="units/pd2_mod_jam/architecture/jam_int_bank/jam_int_floor_d"/>
+		<material_config path="units/pd2_mod_jam/architecture/jam_int_bank/jam_int_floor_e"/>
+		<material_config path="units/pd2_mod_jam/architecture/jam_int_bank/jam_int_ceiling_a"/>
+		<material_config path="units/pd2_mod_jam/architecture/jam_int_bank/jam_int_ceiling_b"/>
+
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_int_bank/jam_int_wall_1m"/>
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_int_bank/jam_int_wall_2m"/>
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_int_bank/jam_int_wall_2m_door"/>
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_int_bank/jam_int_wall_2m_window"/>
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_int_bank/jam_int_wall_4m"/>
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_int_bank/jam_int_wall_4m_window"/>
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_int_bank/jam_int_wall_4m_door"/>
+
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_int_bank/jam_int_trim_4m"/>
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_int_bank/jam_int_trim_2m"/>
+		
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_int_bank/jam_int_beam"/>
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_int_bank/jam_int_ceiling_beam_4m"/>
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_int_bank/jam_int_ceiling_beam_4x4m"/>
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_int_bank/jam_int_office_ceiling_2m"/>
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_int_bank/jam_int_office_ceiling_4m"/>
+
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_int_bank/jam_int_floor_1m"/>
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_int_bank/jam_int_floor_2m"/>
+		<unit_obj path="units/pd2_mod_jam/architecture/jam_int_bank/jam_int_floor_4m"/>
+
+		<unit_mat path="units/pd2_mod_jam/architecture/jam_int_bank/jam_int_vault"/>
+
+		<!--PROPS-->
+		<unit_mat_seq path="units/pd2_mod_jam/props/jam_prop_coin_chest/jam_prop_coin_chest"/>
+		<unit_mat_seq path="units/pd2_mod_jam/props/jam_prop_coin_chest/jam_prop_coin_chest_spawn"/>
+		<unit_mat_seq path="units/pd2_mod_jam/props/jam_prop_cupboard/jam_prop_cupboard"/>
+
+		<unit_obj path="units/pd2_mod_jam/props/jam_prop_stairs/jam_prop_stairs"/>
+
+		<unit_mat_seq path="units/pd2_mod_jam/props/jam_prop_vault_door/jam_prop_vault_door"/>
+		<unit_mat_seq path="units/pd2_mod_jam/props/jam_prop_double_door/jam_prop_double_door"/>
+
+		<unit_mat_seq path="units/pd2_mod_jam/props/jam_prop_magnetic_lock/jam_prop_magnetic_lock"/>
+		<unit_obj_seq path="units/pd2_mod_jam/props/jam_prop_magnetic_lock/jam_prop_magnetic_cables"/>
+		<material_config path="units/pd2_mod_jam/props/jam_prop_magnetic_lock/jam_prop_magnetic_cable_red_blue"/>
+		<material_config path="units/pd2_mod_jam/props/jam_prop_magnetic_lock/jam_prop_magnetic_cable_red_yellow"/>
+		<material_config path="units/pd2_mod_jam/props/jam_prop_magnetic_lock/jam_prop_magnetic_cable_blue_yellow"/>
+		<material_config path="units/pd2_mod_jam/props/jam_prop_magnetic_lock/jam_prop_magnetic_cable_blue_red"/>
+		<material_config path="units/pd2_mod_jam/props/jam_prop_magnetic_lock/jam_prop_magnetic_cable_yellow_red"/>
+		<material_config path="units/pd2_mod_jam/props/jam_prop_magnetic_lock/jam_prop_magnetic_cable_yellow_blue"/>
+
+		<!--TURRET-->
+		<unit_mat_seq path="units/pd2_mod_jam/vehicles/jam_turret_ceiling_hatch/jam_turret_ceiling_hatch"/>
+		<unit_obj path="units/pd2_mod_jam/vehicles/jam_turret_ceiling_hatch/jam_turret_ceiling_debris"/>
+
+		<unit_mat_seq path="units/pd2_mod_jam/pickups/jam_pku_katcoin/jam_pku_katcoin"/>
+	</add>
+
+	<add from_db="true" path="units/pd2_dlc_berry/vehicles/gen_turret_ceiling/gen_turret_ceiling" type="unit">
+		<unit path="units/pd2_dlc_berry/vehicles/gen_turret_ceiling/gen_turret_ceiling"/>
+		<object path="units/pd2_dlc_berry/vehicles/gen_turret_ceiling/gen_turret_ceiling"/>
+		<material_config path="units/pd2_dlc_berry/vehicles/gen_turret_ceiling/gen_turret_ceiling"/>
+		<unit path="units/payday2/vehicles/gen_vehicle_turret/spawn_turret_debris"/>
+		<object path="units/payday2/vehicles/gen_vehicle_turret/spawn_turret_debris"/>
+		<material_config path="units/payday2/vehicles/gen_vehicle_turret/gen_vehicle_turret"/>
+		<unit path="units/payday2/vehicles/gen_vehicle_turret/spawn_shield_front"/>
+		<object path="units/payday2/vehicles/gen_vehicle_turret/spawn_shield_front"/>
+		<effect load="true" path="effects/payday2/particles/explosions/sentry_aftersmoke"/>
+		<effect load="true" path="effects/payday2/particles/explosions/sentry_damage_smoke"/>
+		<effect load="true" path="effects/payday2/particles/explosions/sentry_damage_smoke_med"/>
+		<effect load="true" path="effects/payday2/particles/explosions/sentry_damage_smoke_large"/>
+		<effect load="true" path="effects/payday2/particles/explosions/sparks/sparks_loop"/>
+		<effect load="true" path="effects/payday2/particles/explosions/sentry_explosion"/>
+		<unit path="units/payday2/vehicles/gen_vehicle_turret/spawn_shield_upper"/>
+		<object path="units/payday2/vehicles/gen_vehicle_turret/spawn_shield_upper"/>
+		<bnk path="soundbanks/weapon_swatturret"/>
+		<physic_effect path="physic_effects/push_sphere"/>
+		<sequence_manager path="units/pd2_dlc_berry/vehicles/gen_turret_ceiling/gen_turret_ceiling"/>
+	</add>
+	<!--CRASH SEQUENCE VECHICLE-->
+	<add>
+		<unit path="units/pd2_mod_jam/vehicles/jam_vehicle_cadillac/jam_vehicle_cadillac"/>
+		<object path="units/pd2_mod_jam/vehicles/jam_vehicle_cadillac/jam_vehicle_cadillac"/>
+		<material_config path="units/pd2_mod_jam/vehicles/jam_vehicle_cadillac/jam_vehicle_cadillac"/>
+		<sequence_manager path="units/pd2_mod_jam/vehicles/jam_vehicle_cadillac/jam_vehicle_cadillac"/>
+		<cooked_physics path="units/pd2_mod_jam/vehicles/jam_vehicle_cadillac/jam_vehicle_cadillac"/>
+		<model path="units/pd2_mod_jam/vehicles/jam_vehicle_cadillac/jam_vehicle_cadillac"/>
+		<texture path="units/pd2_mod_jam/vehicles/jam_vehicle_cadillac/jam_vehicle_cadillac_exterior_df"/>
+		<animation from_db="true" path="anims/level/rvd/rvd_vehicle_cadillac_crash_05"/>
+		<animation path="units/pd2_mod_jam/vehicles/jam_vehicle_cadillac/anims/jam_vehicle_cadillac_leave"/>
+		<material_config from_db="true" path="units/payday2/props/dest_glass/glass_shatter"/>
+		<animation_def path="units/pd2_mod_jam/vehicles/jam_vehicle_cadillac/anims/car"/>
+		<animation_state_machine path="units/pd2_mod_jam/vehicles/jam_vehicle_cadillac/anims/car"/>
+		<animation_states path="units/pd2_mod_jam/vehicles/jam_vehicle_cadillac/anims/std"/>
+		<animation_subset path="units/pd2_mod_jam/vehicles/jam_vehicle_cadillac/anims/std"/>
+		<effect from_db="true" load="true" path="effects/particles/environment/steam_01"/>
+	</add>
+</table>

@@ -1,0 +1,40 @@
+<table>
+	<unit>
+		<variables>
+			<var_loot value="2"/>
+		</variables>
+		
+		<filter name="'filter_has_cash'">
+			<check value="vars.var_loot > 0"/>
+		</filter>
+		<filter name="'filter_no_cash'">
+			<check value="vars.var_loot == 0"/>
+		</filter>
+		<filter name="'filter_1_cash'">
+			<check value="vars.var_loot == 1"/>
+		</filter>
+		
+		<sequence name="'startup'" startup="true" >
+			<run_sequence name="'check_interaction'"/>
+		</sequence>
+		
+		<sequence name="'interact'" triggable="true">
+			<set_variables var_loot="vars.var_loot - 1"/>
+			
+			<object enabled="false"	name="'g_money_full'"/>
+			<body	enabled="false"	name="'cash_full_body'"/>
+			
+			<object filter="'filter_has_cash'"	enabled="true"	name="'g_money_half'"/>
+			<body	filter="'filter_has_cash'"	enabled="true"	name="'cash_half_body'"/>
+			
+			<object filter="'filter_no_cash'"	enabled="false"	name="'g_money_half'"/>
+			<body	filter="'filter_no_cash'"	enabled="false"	name="'cash_half_body'"/>
+			<run_sequence name="'check_interaction'"/>
+		</sequence>
+		
+		<sequence name="'check_interaction'" >
+			<interaction filter="'filter_has_cash'"	enabled="true"/>
+			<interaction filter="'filter_no_cash'"	enabled="false"/>
+		</sequence>
+	</unit>
+</table>

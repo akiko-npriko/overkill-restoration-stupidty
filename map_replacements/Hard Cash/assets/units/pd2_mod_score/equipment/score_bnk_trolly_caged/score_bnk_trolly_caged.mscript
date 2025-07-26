@@ -1,0 +1,114 @@
+<?xml version="1.0" ?>
+<modelscript>
+    <object3d name="rp_root" mode="add">
+        <parent root="true" />
+    </object3d>
+	<object3d name="a_box_001" mode="add">
+		<parent name="rp_root" />
+		<position x="0" y="0" z="10" />
+		<rotation w="1" x="0" y="0" z="0" />
+	</object3d>
+	<object3d name="a_box_002" mode="add">
+		<parent name="rp_root" />
+		<position x="0" y="0" z="50" />
+		<rotation w="1" x="0" y="0" z="0" />
+	</object3d>
+	<object3d name="a_box_003" mode="add">
+		<parent name="rp_root" />
+		<position x="0" y="0" z="90" />
+		<rotation w="1" x="0" y="0" z="0" />
+	</object3d>
+	<object3d name="a_box_004" mode="add">
+		<parent name="rp_root" />
+		<position x="28" y="-50" z="10" />
+		<rotation w="1" x="0" y="0" z="0" />
+	</object3d>
+	<object3d name="a_box_005" mode="add">
+		<parent name="rp_root" />
+		<position x="28" y="50" z="10" />
+		<rotation w="1" x="0" y="0" z="0" />
+	</object3d>
+	<object3d name="a_box_006" mode="add">
+		<parent name="rp_root" />
+		<position x="-28" y="50" z="10" />
+		<rotation w="1" x="0" y="0" z="0" />
+	</object3d>
+	
+	<object3d name="a_loot_top" mode="add">
+		<parent name="rp_root" />
+		<position x="0" y="0" z="56" />
+		<rotation w="1" x="0" y="0" z="0" />
+	</object3d>
+	<object3d name="a_loot_bot" mode="add">
+		<parent name="rp_root" />
+		<position x="0" y="0" z="16" />
+		<rotation w="0" x="0" y="0" z="1" />
+	</object3d>
+	
+	<object3d name="a_panel" mode="add">
+		<parent name="rp_root" />
+		<position x="25" y="0" z="75" />
+		<rotation w="1" x="0" y="0" z="0" />
+	</object3d>
+	
+	<object3d name="a_drill" mode="add">
+		<parent name="rp_root" />
+		<position x="28" y="47" z="70" />
+		<rotation w="0.707107" x="0" y="0" z="0.707107" />
+	</object3d>
+	<object3d name="a_c4_1" mode="add">
+		<parent name="rp_root" />
+		<position x="28" y="47" z="50" />
+		<rotation w="0.5" x="-0.5" y="0.5" z="-0.5" />
+	</object3d>
+	<object3d name="a_c4_2" mode="add">
+		<parent name="rp_root" />
+		<position x="28" y="-47" z="50" />
+		<rotation w="0.5" x="-0.5" y="0.5" z="-0.5" />
+	</object3d>
+	<object3d name="e_cash" mode="add">
+		<parent name="rp_root" />
+		<position x="20" y="0" z="50" />
+		<rotation w="0.5" x="-0.5" y="0.5" z="-0.5" />
+	</object3d>
+	
+	<object3d name="waypoint_extension" mode="add">
+		<parent name="rp_root" />
+		<position x="0" y="0" z="115" />
+		<rotation w="1" x="0" y="0" z="0" />
+	</object3d>
+	
+	<import file="score_bnk_trolly_caged.obj" type="obj" create_objects="true">
+        <rootpoint name="rp_root">
+            <default/>
+        </rootpoint>
+        <rootpoint	name="a_box_001">
+            <object	name="c_box_001" />
+        </rootpoint>
+        <rootpoint	name="a_box_002">
+            <object	name="c_box_002" />
+        </rootpoint>
+        <rootpoint	name="a_box_003">
+            <object	name="c_box_003" />
+        </rootpoint>
+        <rootpoint	name="a_box_004">
+            <object	name="c_box_004" />
+        </rootpoint>
+        <rootpoint	name="a_box_005">
+            <object	name="c_box_005" />
+        </rootpoint>
+        <rootpoint	name="a_box_006">
+            <object	name="c_box_006" />
+        </rootpoint>
+        <rootpoint	name="a_panel">
+            <object	name="c_panel" />
+            <object	name="g_panel" />
+        </rootpoint>
+        <rootpoint	name="a_loot_top">
+            <object	name="g_money_full_001" />
+        </rootpoint>
+        <rootpoint	name="a_loot_bot">
+            <object	name="g_money_full_002" />
+        </rootpoint>
+    </import>
+</modelscript>

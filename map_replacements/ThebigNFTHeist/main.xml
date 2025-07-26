@@ -1,0 +1,141 @@
+<table name="ThebigNFTHeist">
+	
+	<AssetUpdates id="35205" provider="modworkshop" version="1.3"/>
+	
+	<AddFiles directory="assets">
+		<texture force="true" path="guis/NFT_icon"/>
+		<texture force="true" path="guis/NFT_loading"/>
+	</AddFiles>
+	
+	<Localization default="english.txt" directory="loc">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	
+	<Sounds directory="VO">
+		<sound id="TSNFT_CrimenetIntro" path="TSNFT_CrimenetIntro.ogg"/>
+		<sound id="TSNFT_Loadout_Brief" path="TSNFT_Loadout_Brief.ogg"/>
+		<sound id="TSNFT_Alarm" path="TSNFT_Alarm.ogg" subtitle_id="TSNFT_Alarm_sub"/>
+		<sound id="TSNFT_PlayerSpawned" path="TSNFT_PlayerSpawned.ogg" subtitle_id="TSNFT_PlayerSpawned_sub"/>
+		<sound id="TSNFT_NFT01" path="TSNFT_NFT01.ogg" subtitle_id="TSNFT_NFT01_sub"/>
+		<sound id="TSNFT_NFT02" path="TSNFT_NFT02.ogg" subtitle_id="TSNFT_NFT02_sub"/>
+		<sound id="TSNFT_NFT03" path="TSNFT_NFT03.ogg" subtitle_id="TSNFT_NFT03_sub"/>
+		<sound id="TSNFT_NFT04" path="TSNFT_NFT04.ogg" subtitle_id="TSNFT_NFT04_sub"/>
+		<sound id="TSNFT_NFT05" path="TSNFT_NFT05.ogg" subtitle_id="TSNFT_NFT05_sub"/>
+		<sound id="TSNFT_NFT06" path="TSNFT_NFT06.ogg" subtitle_id="TSNFT_NFT06_sub"/>
+		<sound id="TSNFT_NFT07" path="TSNFT_NFT07.ogg" subtitle_id="TSNFT_NFT07_sub"/>
+		<sound id="TSNFT_PCON" path="TSNFT_PCON.ogg" subtitle_id="TSNFT_PCON_sub"/>
+		<sound id="TSNFT_escape_coming" path="TSNFT_escape_coming.ogg" subtitle_id="TSNFT_escape_coming_sub"/>
+		<sound id="TSNFT_escape" path="TSNFT_escape.ogg" subtitle_id="TSNFT_escape_sub"/>
+		<sound id="TSNFT_Escape_plus" path="TSNFT_Escape_plus.ogg" subtitle_id="TSNFT_Escape_plus_sub"/>
+		<sound id="TSNFT_CHack01" path="TSNFT_CHack01.ogg" subtitle_id="TSNFT_CHack01_sub"/>
+		<sound id="TSNFT_CHack02" path="TSNFT_CHack02.ogg" subtitle_id="TSNFT_CHack02_sub"/>
+		<sound id="TSNFT_CHack03" path="TSNFT_CHack03.ogg" subtitle_id="TSNFT_CHack03_sub"/>
+		<sound id="TSNFT_CHack04" path="TSNFT_CHack04.ogg" subtitle_id="TSNFT_CHack04_sub"/>
+		<sound id="TSNFT_CHack05" path="TSNFT_CHack05.ogg" subtitle_id="TSNFT_CHack05_sub"/>
+		<sound id="TSNFT_CHack06" path="TSNFT_CHack06.ogg" subtitle_id="TSNFT_CHack06_sub"/>
+		<sound id="TSNFT_Fuze01" path="TSNFT_Fuze01.ogg" subtitle_id="TSNFT_Fuze01_sub"/>
+		<sound id="TSNFT_Fuze02" path="TSNFT_Fuze02.ogg" subtitle_id="TSNFT_Fuze02_sub"/>
+		<sound id="TSNFT_Fuze03" path="TSNFT_Fuze03.ogg" subtitle_id="TSNFT_Fuze03_sub"/>
+		<sound id="TSNFT_Fuze04" path="TSNFT_Fuze04.ogg" subtitle_id="TSNFT_Fuze04_sub"/>
+		<sound id="TSNFT_Fuze05" path="TSNFT_Fuze05.ogg" subtitle_id="TSNFT_Fuze05_sub"/>
+		<sound id="TSNFT_Fuze06" path="TSNFT_Fuze06.ogg" subtitle_id="TSNFT_Fuze06_sub"/>
+	</Sounds>
+	
+	
+	<level ai_group_type="America" briefing_dialog="TSNFT_Loadout_Brief" ghost_required="false" id="NFTApartment" load_screen="guis/NFT_loading" intro_event="" max_bags="50" player_style="generic">
+		
+		<hooks directory="hooks">
+			<hook file="CarryTweakdata.lua" source_file="lib/tweak_data/carrytweakdata"/>
+		</hooks>
+		
+		<assets>
+			<asset name="ammo_bag"/>
+			<asset name="health_bag"/>
+			<asset name="grenade_crate"/>
+		</assets>
+		
+		<outro_event>
+			<value_node value=""/>
+		</outro_event>
+		
+		<packages>
+			<value_node value="levels/narratives/h_alex_must_die/stage_2/world/world"/>
+			<value_node value="levels/instances/unique/cag_computer/world/world"/>
+			<value_node value="levels/instances/unique/kenaz/limo_escape/world/world"/>
+			<value_node value="levels/narratives/short1/stage1/editor_only/editor_only"/>
+			<value_node value="levels/instances/unique/brb/brb_sniper_spawns/world/world"/>
+		</packages>
+		
+		<script_data_mods directory="scriptdata">
+			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
+				<options merge_mode="add" mode="add"/>
+			</mod>
+		</script_data_mods>
+	</level>
+	
+	<narrative briefing_event="TSNFT_CrimenetIntro" contact="custom" hide_from_crimenet="false" id="TheBigNFTHeist" icon="guis/NFT_icon">
+		
+		<chain>
+			<table level_id="NFTApartment" type="d" type_id="heist_type_assault"/>
+		</chain>
+		
+		<contract_cost>
+			<value_node value="4000"/>
+			<value_node value="8000"/>
+			<value_node value="20000"/>
+			<value_node value="40000"/>
+			<value_node value="100000"/>
+			<value_node value="100000"/>
+			<value_node value="100000"/>
+		</contract_cost>
+		
+		<crimenet_callouts>
+			<value_node value="nothing"/>
+		</crimenet_callouts>
+		
+		<crimenet_videos>
+			<value_node value="cn_branchbank2"/>
+		</crimenet_videos>
+		
+		<debrief_event>
+			<value_node value=""/>
+		</debrief_event>
+		
+		<experience_mul>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+		</experience_mul>
+		<max_mission_xp>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+		</max_mission_xp>
+		<min_mission_xp>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+		</min_mission_xp>
+		<payout>
+			<value_node value="6000"/>
+			<value_node value="12000"/>
+			<value_node value="30000"/>
+			<value_node value="50000"/>
+			<value_node value="60000"/>
+			<value_node value="60000"/>
+			<value_node value="60000"/>
+		</payout>
+	</narrative>
+</table>

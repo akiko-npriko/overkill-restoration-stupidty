@@ -1,0 +1,196 @@
+<table name="Bookmaker's Office">
+	<AddFiles directory="assets">
+		<texture force="true" path="guis/custom_asset/rgbo_asset_few_civil"/>
+		<texture force="true" path="guis/custom_asset/rgbo_asset_toolbag"/>
+		<texture force="true" path="guis/custom_asset/rgbo_keycard"/>
+		<texture force="true" path="guis/loading/rgbo_icon"/>
+		<texture force="true" path="guis/loading/rgbo_loading"/>
+		<movie force="true" path="vo/rgbo_briefing"/>
+		<movie force="true" path="vo/rgbo_start"/>
+		<movie force="true" path="vo/rgbo_end"/>
+		<movie force="true" path="vo/vo_rgbo_raine_start_heist"/>
+		<movie force="true" path="vo/vo_rgbo_raine_bo_enter"/>
+		<movie force="true" path="vo/vo_rgbo_raine_hack_pc"/>
+		<movie force="true" path="vo/vo_rgbo_raine_hack_pc_wait"/>
+		<movie force="true" path="vo/vo_rgbo_raine_stealth_hack_pc_jammed1"/>
+		<movie force="true" path="vo/vo_rgbo_raine_hack_pc_jammed_complete1"/>
+		<movie force="true" path="vo/vo_rgbo_raine_stealth_hack_pc_jammed2"/>
+		<movie force="true" path="vo/vo_rgbo_raine_hack_pc_jammed_complete2"/>
+		<movie force="true" path="vo/vo_rgbo_raine_hack_two_pc"/>
+		<movie force="true" path="vo/vo_rgbo_raine_on_pc1"/>
+		<movie force="true" path="vo/vo_rgbo_raine_hack_two_pc_fail1"/>
+		<movie force="true" path="vo/vo_rgbo_raine_hack_two_pc_fail2"/>
+		<movie force="true" path="vo/vo_rgbo_raine_hack_two_pc_fail3"/>
+		<movie force="true" path="vo/vo_rgbo_raine_hack_two_pc_20sec"/>
+		<movie force="true" path="vo/vo_rgbo_raine_hack_two_pc_10sec"/>
+		<movie force="true" path="vo/vo_rgbo_raine_hack_two_pc_5sec"/>
+		<movie force="true" path="vo/vo_rgbo_raine_vault_open"/>
+		<movie force="true" path="vo/vo_rgbo_raine_lasers"/>
+		<movie force="true" path="vo/vo_rgbo_raine_lasers_disable"/>
+		<movie force="true" path="vo/vo_rgbo_raine_vault_enter"/>
+		<movie force="true" path="vo/vo_rgbo_raine_escape"/>
+		<movie force="true" path="vo/vo_rgbo_raine_alarm"/>
+		<movie force="true" path="vo/vo_rgbo_raine_cops1"/>
+		<movie force="true" path="vo/vo_rgbo_raine_cops2"/>
+		<movie force="true" path="vo/vo_rgbo_raine_cops3"/>
+		<movie force="true" path="vo/vo_rgbo_raine_helicopter"/>
+		<movie force="true" path="vo/vo_rgbo_pilot_time_3min"/>
+		<movie force="true" path="vo/vo_rgbo_pilot_time_2min3"/>
+		<movie force="true" path="vo/vo_rgbo_pilot_time_2min"/>
+		<movie force="true" path="vo/vo_rgbo_pilot_time_1min2"/>
+		<movie force="true" path="vo/vo_rgbo_pilot_time_1min"/>
+		<movie force="true" path="vo/vo_rgbo_pilot_time_30sec"/>
+		<movie force="true" path="vo/vo_rgbo_pilot_bo1"/>
+		<movie force="true" path="vo/vo_rgbo_pilot_bo2"/>
+		<movie force="true" path="vo/vo_rgbo_thermal_drill"/>
+		<movie force="true" path="vo/vo_rgbo_thermal_drill_placed"/>
+		<movie force="true" path="vo/vo_rgbo_thermal_drill_jammed1"/>
+		<movie force="true" path="vo/vo_rgbo_thermal_drill_jammed2"/>
+		<movie force="true" path="vo/vo_rgbo_thermal_drill_jammed3"/>
+		<movie force="true" path="vo/vo_rgbo_raine_luck_open_vault"/>
+	</AddFiles>
+	<AssetUpdates id="22675" provider="modworkshop" use_local_dir="true" version="6"/>
+	<Localization default="english.txt" directory="loc">
+		<localization file="russian.txt" language="russian"/>
+		<localization file="english.txt" language="english"/>
+		<localization file="italian.txt" language="italian"/>
+	</Localization>
+	<contact assets_gui="guis/mission_briefing/preload_contact_bain" id="raine" name_id="heist_contact_raine" package="packages/contact_bain"/>
+	<level ai_group_type="America" briefing_dialog="" ghost_bonus="0.15" id="bookmakers_office" load_screen="guis/loading/rgbo_loading" max_bags="59">
+		<add file="levels/bookmakers_office/add.xml"/>
+		<assets>
+			<asset name="health_bag"/>
+			<asset name="grenade_crate"/>
+			<asset name="bodybags_bag"/>
+			<asset name="rgbo_asset_toolbag"/>
+			<asset name="rgbo_asset_few_civil"/>
+			<asset name="ammo_bag"/>
+			<asset name="rgbo_keycard"/>
+			<asset name="rgbo_loot_vent"/>
+		</assets>
+		<hooks>
+			<hook file="hooks/assetstweakdata.lua" source_file="lib/tweak_data/assetstweakdata"/>
+			<hook file="hooks/CrimeSpreeHook.lua" source_file="lib/tweak_data/crimespreetweakdata"/>
+		</hooks>
+		<include directory="levels/bookmakers_office">
+			<file file="world.world" type="binary"/>
+			<file file="continents.continents" type="binary"/>
+			<file file="mission.mission" type="binary"/>
+			<file file="nav_manager_data.nav_data" type="binary"/>
+			<file file="world_sounds.world_sounds" type="binary"/>
+			<file file="world_cameras.world_cameras" type="binary"/>
+			<file file="editor_only/editor_only.continent" type="binary"/>
+			<file file="editor_only/editor_only.mission" type="binary"/>
+			<file file="world/world.continent" type="binary"/>
+			<file file="world/world.mission" type="binary"/>
+			<file file="cover_data.cover_data" type="binary"/>
+			<file file="environments/bookmakers_office.environment" type="custom_xml"/>
+		</include>
+		<intro_event>
+			<value_node value="vo/rgbo_start"/>
+		</intro_event>
+		<outro_event>
+			<value_node value="vo/rgbo_end"/>
+		</outro_event>
+		<packages>
+			<value_node value="levels/narratives/elephant/chew/collision/collision"/>
+			<value_node value="levels/narratives/vlad/nightclub/nightclub_interior/nightclub_interior"/>
+			<value_node value="levels/narratives/vlad/moon/world/world"/>
+			<value_node value="levels/narratives/short2/stage1/world"/>
+			<value_node value="levels/narratives/vlad/nightclub/world/world"/>
+			<value_node value="levels/narratives/short1/stage2/world/world"/>
+			<value_node value="levels/narratives/h_firestarter/stage_3/world/world"/>
+			<value_node value="levels/narratives/short2/stage1/nightclub_interior/nightclub_interior"/>
+			<value_node value="levels/narratives/e_election_day/stage_3/world"/>
+			<value_node value="levels/narratives/e_framing_frame/stage_3/world/world"/>
+			<value_node value="levels/narratives/vlad/nightclub/world"/>
+			<value_node value="levels/narratives/vlad/nightclub/kitchen/kitchen"/>
+			<value_node value="levels/narratives/short2/stage1/pc_only/pc_only"/>
+			<value_node value="levels/narratives/h_firestarter/stage_3/pc_only/pc_only"/>
+			<value_node value="levels/narratives/vlad/nightclub/background/background"/>
+			<value_node value="levels/instances/unique/chill/jimmy_stage_01/world/world"/>
+			<value_node value="levels/narratives/bain/roberts/world/world"/>
+			<value_node value="levels/instances/shared/obj_link/world/world"/>
+			<value_node value="levels/narratives/bain/cage/editor_only/editor_only"/>
+			<value_node value="levels/narratives/short1/stage1/editor_only/editor_only"/>
+			<value_node value="levels/narratives/classics/glace/editor_only/editor_only"/>
+			<value_node value="levels/instances/unique/pbr/pbr_mountain_arch/world/world"/>
+			<value_node value="levels/narratives/vlad/jewelry_store/world/world"/>
+			<value_node value="levels/instances/unique/mus_circuit_box/world/world"/>
+			<value_node value="packages/narr_roberts"/>
+			<value_node value="packages/vlad_nightclub"/>
+			<value_node value="levels/instances/unique/are_loot_shoot/world/world"/>
+			<value_node value="packages/narr_firestarter3"/>
+			<value_node value="levels/instances/unique/moon/crate_shoes/world/world"/>
+			<value_node value="levels/instances/unique/kenaz/vault/world"/>
+			<value_node value="levels/narratives/e_framing_frame/stage_3/world"/>
+			<value_node value="levels/narratives/classics/glace/level_art/level_art"/>
+			<value_node value="packages/narr_rat"/>
+			<value_node value="packages/dlcs/nmh/job_nmh"/>
+		</packages>
+		<script_data_mods directory="scriptdata">
+			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
+				<options merge_mode="add" mode="add"/>
+			</mod>
+		</script_data_mods>
+	</level>
+	<narrative briefing_event="vo/rgbo_briefing" contact="raine" icon="guis/loading/rgbo_icon" id="bookmakers_office_briefing">
+		<chain>
+			<table level_id="bookmakers_office" type="d" type_id="heist_type_assault"/>
+		</chain>
+		<contract_cost>
+			<value_node value="4000"/>
+			<value_node value="8000"/>
+			<value_node value="20000"/>
+			<value_node value="40000"/>
+			<value_node value="100000"/>
+			<value_node value="100000"/>
+			<value_node value="100000"/>
+		</contract_cost>
+		<crimenet_callouts>
+			<value_node value="nothing"/>
+		</crimenet_callouts>
+		<crimenet_videos>
+			<value_node value="cn_branchbank2"/>
+		</crimenet_videos>
+		<debrief_event>
+			<value_node value=""/>
+		</debrief_event>
+		<experience_mul>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+		</experience_mul>
+		<max_mission_xp>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+		</max_mission_xp>
+		<min_mission_xp>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+		</min_mission_xp>
+		<payout>
+			<value_node value="6000"/>
+			<value_node value="12000"/>
+			<value_node value="30000"/>
+			<value_node value="50000"/>
+			<value_node value="60000"/>
+			<value_node value="60000"/>
+			<value_node value="60000"/>
+		</payout>
+	</narrative>
+</table>

@@ -1,0 +1,92 @@
+<table>
+	<unit>
+		<sequence editable_state="true" name=" 'show_and_enable' " triggable="true">
+			<run_sequence name="'show'"/>
+			<run_sequence name="'enable_interaction'"/>
+		</sequence>
+		<sequence editable_state="true" name=" 'hide' " triggable="true">
+			<function		extension="'base'" function="'deactivate'"/>
+			<object			enabled="false" name="'g_trolley'"/>
+			<object			enabled="false" name="'g_panel'"/>
+			<object			enabled="false" name="'g_mul'"/>
+			<object			enabled="false" name="'g_money_full_001'"/>
+			<object			enabled="false" name="'g_money_full_002'"/>
+			<body			enabled="false" name="'static_body'"/>
+			<body			enabled="false" name="'panel_body_static'"/>
+			<body			enabled="false" name="'bag_body'"/>
+			<attention		giveaway="'crate_open'" operation="'remove'" preset_name="'prop_law_scary'"/>
+		</sequence>
+		<sequence editable_state="true" name=" 'show' " triggable="true">
+			<object			enabled="true" name="'g_trolley'"/>
+			<object			enabled="true" name="'g_panel'"/>
+			<object			enabled="true" name="'g_mul'"/>
+			<object			enabled="true" name="'g_money_full_001'"/>
+			<object			enabled="true" name="'g_money_full_002'"/>
+			<body			enabled="true" name="'static_body'"/>
+			<body			enabled="true" name="'panel_body_static'"/>
+			<body			enabled="true" name="'bag_body'"/>
+		</sequence>
+		<sequence editable_state="true" name=" 'enable_interaction' " triggable="true">
+			<function		extension="'base'" function="'activate'"/>
+		</sequence>
+		<sequence editable_state="true" name=" 'disable_interaction' " triggable="true">
+			<function		extension="'base'" function="'deactivate'"/>
+		</sequence>
+		
+		<sequence editable_state="true" name="'open_door'" triggable="true">
+			<run_sequence name="'remove_panel'"/>
+			<spawn_unit name="'units/pd2_mod_score/equipment/score_bnk_trolly_caged/score_bnk_trolly_money'" position="object_pos('a_loot_top')" rotation="object_rot('a_loot_top')"/>
+			<spawn_unit name="'units/pd2_mod_score/equipment/score_bnk_trolly_caged/score_bnk_trolly_money'" position="object_pos('a_loot_bot')" rotation="object_rot('a_loot_bot')"/>
+		</sequence>
+		
+		<sequence name="'explode_door'">
+			<run_sequence name="'remove_panel'"/>
+			<sound action="'play'" event="'c4_explode_metal'" object="'a_panel'"/>
+			<effect name="'effects/payday2/particles/explosions/shapecharger_explosion'" parent="object( 'a_c4_1' )" position="v()"/>
+			<effect name="'effects/payday2/particles/explosions/shapecharger_explosion'" parent="object( 'a_c4_2' )" position="v()"/>
+			<effect name="'effects/payday2/environment/arm_money_truck_exp'" parent="object( 'e_cash' )" position="v()"/>
+			<physic_effect name="'physic_effects/push_sphere'" param1="150" param2="600" target="dest_unit:get_object( Idstring('a_loot_top') )"/>
+			<spawn_unit name="'units/pd2_mod_score/equipment/score_bnk_trolly_caged/score_bnk_trolly_money_burnt'" position="object_pos('a_loot_top')" rotation="object_rot('a_loot_top')"/>
+			<spawn_unit name="'units/pd2_mod_score/equipment/score_bnk_trolly_caged/score_bnk_trolly_money_burnt'" position="object_pos('a_loot_bot')" rotation="object_rot('a_loot_bot')"/>
+		</sequence>
+		
+		<sequence name="'remove_panel'" once="true">
+			<body enabled="false" name="'panel_body_static'"/>
+			<body enabled="true" name="'panel_body'"/>
+			<body enabled="false" name="'panel_body'" start_time="360/30"/>
+			<attention giveaway="'crate_open'" operation="'add'" preset_name="'prop_law_scary'"/>
+			<object enabled="false" name="'g_money_full_001'"/>
+			<object enabled="false" name="'g_money_full_002'"/>
+		</sequence>
+		
+		<sequence name="'wp_add_defend'">
+			<function extension="'waypoint'" function="'add_waypoint'" param1=" 'pd2_defend' " param2="125" />
+		</sequence>
+		<sequence name="'wp_add_repair'">
+			<function extension="'waypoint'" function="'add_waypoint'" param1=" 'pd2_fix' " param2="125" />
+		</sequence>
+		<sequence name="'wp_rmv'">
+			<function extension="'waypoint'" function="'remove_waypoint'"/>
+		</sequence>
+		
+		
+		<sequence name=" 'c4_placed' "/>
+		<sequence name=" 'c4_completed' "/>
+		<sequence name=" 'all_c4_placed' "/>
+		
+		<sequence name=" 'drill_placed' ">
+			<run_sequence name="'wp_add_defend'"/>
+		</sequence>
+		<sequence name=" 'drill_jammed' ">
+			<run_sequence name="'wp_rmv'"/>
+			<run_sequence name="'wp_add_repair'"/>
+		</sequence>
+		<sequence name=" 'drill_resumed' ">
+			<run_sequence name="'wp_rmv'"/>
+			<run_sequence name="'wp_add_defend'"/>
+		</sequence>
+		<sequence name=" 'drill_completed' ">
+			<run_sequence name="'wp_rmv'"/>
+		</sequence>
+	</unit>
+</table>

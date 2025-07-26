@@ -1,0 +1,12 @@
+<materials version="3">
+    <material name="stn_booth_garage" decal_material="metal" version="2" render_template="generic:DIFFUSE_TEXTURE:VERTEX_COLOR">
+        <diffuse_texture file="units/world/architecture/gym/gym_booth_garage/gym_booth_garage_df"/>
+    </material>
+    <material render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE" decal_material="glass_breakable" version="2" name="stn_booth_garage_glass">
+        <variable value="0 1 0.59999996423721" type="vector3" name="fresnel_settings"/>
+        <opacity_texture file="units/glass/vehicle_glass_op"/>
+        <diffuse_texture file="units/glass/vehicle_glass_df"/>
+        <reflection_texture type="cubemap" global_texture="current_global_texture"/>
+    </material>
+    <material name="shadow_caster" render_template="shadow_caster_only" version="2"/>
+</materials>

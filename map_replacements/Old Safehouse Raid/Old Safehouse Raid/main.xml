@@ -1,0 +1,91 @@
+<table min_lib_ver="4.5" name="Old Safehouse Raid">
+	<AssetUpdates id="34616" provider="modworkshop" version="1.2"/>
+	<Localization default="english.txt" directory="loc">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	<Package file="scriptdata/custom_units.xml" id="packages/levels/cshr"/>
+	<level ai_group_type="America" briefing_dialog="Play_pln_sfr_brf" cube="cube_apply_heist_bank" group_ai_state="safehouse" id="cshr" intro_event="Play_pln_sfr_intro" max_bags="0" music="heist" player_style="generic" team_ai_off="false" wave_count="3">
+		<assets/>
+		<outro_event>
+			<value_node value="Play_pln_sfr_end"/>
+		</outro_event>
+		<packages>
+			<value_node value="packages/safehouse"/>
+			<value_node value="packages/levels/cshr"/>
+			<value_node value="levels/narratives/safehouse/world"/>
+			<value_node value="levels/narratives/safehouse/world_sounds"/>
+			<value_node value="levels/narratives/safehouse/pc_only/pc_only"/>
+			<value_node value="levels/narratives/safehouse/shadow_casters/shadow_casters"/>
+			<value_node value="levels/narratives/safehouse/prop/prop"/>
+			<value_node value="levels/narratives/safehouse/world/world"/>
+			<value_node value="levels/narratives/safehouse/editor_only/editor_only"/>
+			<value_node value="levels/narratives/safehouse/safehouse_worldmesh/safehouse_worldmesh"/>
+			<value_node value="levels/narratives/vlad/ukrainian_job/world_sounds"/>
+			<value_node value="levels/instances/unique/vit/vit_bookshelf/world"/>
+		</packages>
+		<script_data_mods directory="scriptdata">
+			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
+				<options merge_mode="add" mode="add"/>
+			</mod>
+		</script_data_mods>
+	</level>
+	<narrative briefing_event="pln_sfr_cbf_01" contact="bain" icon="guis/dlcs/bro/textures/pd2/crimenet/safehouse_old" id="cshr">
+		<chain>
+			<table level_id="cshr" type="d" type_id="heist_type_assault"/>
+		</chain>
+		<contract_cost>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+		</contract_cost>
+		<crimenet_callouts>
+			<value_node value="pln_sfr_cnc_01_01"/>
+		</crimenet_callouts>
+		<crimenet_videos>
+			<value_node value="contact_bain1"/>
+		</crimenet_videos>
+		<debrief_event>
+			<value_node value=""/>
+		</debrief_event>
+		<experience_mul>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+		</experience_mul>
+		<max_mission_xp>
+			<value_node value="10000"/>
+			<value_node value="10000"/>
+			<value_node value="10000"/>
+			<value_node value="10000"/>
+			<value_node value="10000"/>
+			<value_node value="10000"/>
+			<value_node value="10000"/>
+		</max_mission_xp>
+		<min_mission_xp>
+			<value_node value="10000"/>
+			<value_node value="10000"/>
+			<value_node value="10000"/>
+			<value_node value="10000"/>
+			<value_node value="10000"/>
+			<value_node value="10000"/>
+			<value_node value="10000"/>
+		</min_mission_xp>
+		<payout>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+			<value_node value="0"/>
+		</payout>
+	</narrative>
+</table>

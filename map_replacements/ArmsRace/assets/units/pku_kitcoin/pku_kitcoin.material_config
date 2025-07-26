@@ -1,0 +1,14 @@
+<materials version="3">
+    <material name="mat_coin" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture		file="units/pd2_dlc_uno/props/uno_interactable_goldbag_open/uno_interactable_goldbag_bar_df" />
+        <material_texture		file="units/pd2_dlc_uno/props/uno_interactable_goldbag_open/uno_interactable_goldbag_bar_gsma" mip="3" />
+        <bump_normal_texture	file="core/textures/blank_texture_nm"/>
+        <reflection_texture		file="environments/cubemaps/cubemap_gold" type="cubemap"/>
+    </material>
+    <material name="g_outline_lod0" unique="true" render_template="generic:ALPHA_MASKED:CONTOUR:DIFFUSE_TEXTURE:OPACITY_TEXTURE" version="2">
+        <diffuse_texture file="units/white_df"/>
+        <opacity_texture file="units/transparent_op"/>
+        <variable value="0 1 0" type="vector3" name="contour_color"/>
+        <variable value="0" type="scalar" name="contour_opacity"/>
+    </material>
+</materials>

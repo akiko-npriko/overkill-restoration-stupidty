@@ -1,0 +1,39 @@
+<effect force_synch="false">
+    <atom name="stream" min_size="1" max_size="1" lifetime="2" random_start_time="false" start_time="0" preroll="0" inherit_velocity_multiplier="2" fade_in_start="-1" fade_in_length="0" fade_out_start="-1" spawn_cull_policy="kill" cull_policy="kill" cull_gracetime="0" max_particle_radius="-1" soundbank="" cue="" ambient="false" grab_relative="effect" grab_pos="0 0 0" grab_radius="200" grab_backfacing="false" timeline="">
+        <initializerstack>
+            <boxrandomvelocity relative="world" min="0 0 20" max="0 0 30"/>
+            <boxrandomrotation relative="effect" min="-10 -10 1" max="10 10 1" min_rot="0" max_rot="365"/>
+            <localboxrandomposition min="-1 -1 -1" max="1 1 1"/>
+            <worldtransform transform_rotations="false"/>
+            <trail size="3"/>
+        </initializerstack>
+        <simulatorstack>
+            <velocityintegrator channel="world"/>
+            <trail size="3" mode="frequency" frequency=".5"/>
+        </simulatorstack>
+        <visualizerstack>
+            <trail size="3" trail_type="normal_locked" tesselation="6" curvature="0.38999998569489" tile_uv="false" tiles_per_meter="1" texture="effects/textures/effects_atlas" intensity="identity" blend_mode="normal" render_template="effect_op" per_particle_age="false" color_input="constant" color="255 255 255" opacity_input="keys" width_input="keys" uv_size="0.25 0.25" uv_offset_input="constant" uv_offset="0.5 0.5">
+                <color_multiplier_keys loop="false">
+                    <key t="0" v="1 1 1"/>
+                </color_multiplier_keys>
+                <opacity_keys loop="false">
+                    <key t="0" v="0"/>
+                    <key t="0.12195122241974" v="50"/>
+                    <key t="0.21602787077427" v="50"/>
+                    <key t="1.9947733879089" v="0"/>
+                </opacity_keys>
+                <opacity_multiplier_keys loop="false">
+                    <key t="0" v="0"/>
+                    <key t="16.515678405762" v="2"/>
+                    <key t="45.365852355957" v="0"/>
+                </opacity_multiplier_keys>
+                <width_keys loop="false">
+                    <key t="0" v="0"/>
+                    <key t="25.714286804199" v="10"/>
+                    <key t="59.163761138916" v="1"/>
+                    <key t="120" v="15"/>
+                </width_keys>
+            </trail>
+        </visualizerstack>
+    </atom>
+</effect>

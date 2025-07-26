@@ -1,0 +1,15 @@
+<unit type="chl" slot="1">
+	<network sync="spawn"/>
+
+	<object file="units/cpone/weapon_inventory_bench/weapon_inventory_bench"/>
+
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData"/>
+		<extension name="damage" class="UnitDamage"/>
+		<extension name="contour" class="ContourExt"/>
+		<extension name="interaction" class="AccessWeaponMenuInteractionExt">
+			<var name="tweak_data" value="access_weapon_primary"/>
+			<var name="_interact_object" value="interact"/>
+		</extension>
+	</extensions>
+</unit>

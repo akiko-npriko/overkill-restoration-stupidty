@@ -1,0 +1,42 @@
+<table directory="assets">
+	<add from_db="true" path="units/pd2_dlc1/equipment/ind_interactable_shipping_crate/ind_interactable_shipping_crate" type="unit">
+		<unit path="units/pd2_dlc1/equipment/ind_interactable_shipping_crate/ind_interactable_shipping_crate"/>
+		<object path="units/pd2_dlc1/equipment/ind_interactable_shipping_crate/ind_interactable_shipping_crate"/>
+		<material_config path="units/pd2_dlc1/equipment/ind_interactable_shipping_crate/ind_interactable_shipping_crate"/>
+		<sequence_manager path="units/pd2_dlc1/equipment/ind_interactable_shipping_crate/ind_interactable_shipping_crate"/>
+		<unit path="units/payday2/pickups/gen_pku_diamonds/gen_pku_diamonds"/>
+		<object path="units/payday2/pickups/gen_pku_diamonds/gen_pku_diamonds"/>
+		<material_config path="units/payday2/pickups/gen_pku_diamonds/gen_pku_diamonds"/>
+		<sequence_manager path="units/payday2/pickups/gen_pku_diamonds/gen_pku_diamonds"/>
+		<unit path="units/payday2/props/bnk_prop_vault_loot/bnk_prop_vault_loot_special_money"/>
+		<object path="units/payday2/props/bnk_prop_vault_loot/bnk_prop_vault_loot_special_money"/>
+		<material_config path="units/payday2/props/bnk_prop_vault_loot/bnk_prop_vault_loot_special_money"/>
+		<sequence_manager path="units/payday2/props/bnk_prop_vault_loot/bnk_prop_vault_loot_special_money"/>
+		<unit path="units/payday2/props/bnk_prop_vault_loot/bnk_prop_vault_loot_special_gold"/>
+		<object path="units/payday2/props/bnk_prop_vault_loot/bnk_prop_vault_loot_special_gold"/>
+		<material_config path="units/payday2/props/bnk_prop_vault_loot/bnk_prop_vault_loot_special_gold"/>
+		<sequence_manager path="units/payday2/props/bnk_prop_vault_loot/bnk_prop_vault_loot_special_gold"/>
+	</add>
+	<add from_db="true" path="units/payday2/architecture/mkp/mkp_int_floor_4x4m_a" type="unit">
+		<material_config path="units/payday2/architecture/mkp/mkp" unload="true"/>
+		<object path="units/payday2/architecture/mkp/mkp_int_floor_4x4m_a" unload="true"/>
+		<unit path="units/payday2/architecture/mkp/mkp_int_floor_4x4m_a" unload="true"/>
+	</add>
+	<add from_db="true" path="units/pd2_dlc_berry/pickups/bry_pku_blowtorch/bry_pku_blowtorch" type="unit">
+		<material_config path="units/pd2_dlc_berry/pickups/bry_pku_blowtorch/bry_pku_blowtorch"/>
+		<object path="units/pd2_dlc_berry/pickups/bry_pku_blowtorch/bry_pku_blowtorch"/>
+		<sequence_manager path="units/pd2_dlc_berry/pickups/bry_pku_blowtorch/bry_pku_blowtorch"/>
+		<unit path="units/pd2_dlc_berry/pickups/bry_pku_blowtorch/bry_pku_blowtorch"/>
+	</add>
+	<add from_db="true" path="units/test/jocke/plane_black_temp" type="unit">
+		<material_config path="units/test/jocke/plane_black_temp"/>
+		<object path="units/test/jocke/plane_black_temp"/>
+		<unit path="units/test/jocke/plane_black_temp"/>
+	</add>
+	<add from_db="true" path="units/pd2_dlc_fex/pickups/fex_pku_blowtorch/fex_pku_blowtorch" type="unit">
+		<unit path="units/pd2_dlc_fex/pickups/fex_pku_blowtorch/fex_pku_blowtorch"/>
+		<object path="units/pd2_dlc_fex/pickups/fex_pku_blowtorch/fex_pku_blowtorch"/>
+		<material_config path="units/pd2_dlc_fex/pickups/fex_pku_blowtorch/fex_pku_blowtorch"/>
+		<sequence_manager path="units/pd2_dlc_fex/pickups/fex_pku_blowtorch/fex_pku_blowtorch"/>
+	</add>
+</table>
