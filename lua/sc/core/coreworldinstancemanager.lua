@@ -34,6 +34,7 @@ local standard_spawngroups = {
 		"GS_defend_b",
 		"GS_defend_c",
 		"GS_defend_d",
+		"GS_defend_shields",
 		"GS_swats",
 		"GS_Heavys",
 		"GS_heavys_boom",
@@ -53,7 +54,8 @@ local standard_spawngroups = {
 		--Recurring spawns
 		"titan_snipers",
 		--Event units
-		"snowman_boss"		
+		"snowman_boss",		
+		"piggydozer"
 	},
 	["standard_with_single_spooc"] = {
 		--All Blue units
@@ -90,6 +92,7 @@ local standard_spawngroups = {
 		"GS_defend_b",
 		"GS_defend_c",
 		"GS_defend_d",
+		"GS_defend_shields",
 		"GS_swats",
 		"GS_Heavys",
 		"GS_heavys_boom",
@@ -108,7 +111,8 @@ local standard_spawngroups = {
 		--Recurring spawns
 		"titan_snipers",
 		--Event units
-		"snowman_boss"		
+		"snowman_boss",		
+		"piggydozer"
 	},
 	["proprietary_pbr"] = {
 		"single_spooc",
@@ -140,14 +144,15 @@ local standard_spawngroups = {
 		"HVH_Boss",
 		"FBI_heavys",
 		"FBI_heavys_boom",
-		"GS_heavys",
+		"GS_Heavys",
 		"GS_heavys_boom",
 		"FBI_swats",
 		"GS_swats",
 		--Recurring spawns
 		"titan_snipers",
 		--Event units
-		"snowman_boss"		
+		"snowman_boss",		
+		"piggydozer"
 	}
 }
 
@@ -315,6 +320,7 @@ function CoreWorldInstanceManager:_get_instance_mission_data(path)
 	if elements then
 		for _, element in ipairs(result.default.elements) do
 			if elements[element.id] then
+				element.values.ignore_replace_preferred = true
 				element.values.interval = elements[element.id].interval
 				element.values.preferred_spawn_groups = elements[element.id].preferred_spawn_groups
 			end
