@@ -404,8 +404,8 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/30747
  - Proving Grounds
 	- https://modworkshop.net/mod/29905
- - (Notoriety) R&B Bank remake
-	- https://modworkshop.net/mod/47374
+ - Blackridge Facility
+	- https://modworkshop.net/mod/22392
  - FBI Office Holdout
 	- https://modworkshop.net/mod/45068
  - Sniper Assassin
