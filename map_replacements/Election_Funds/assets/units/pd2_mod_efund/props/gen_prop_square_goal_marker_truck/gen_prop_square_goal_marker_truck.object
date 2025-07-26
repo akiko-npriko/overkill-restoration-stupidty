@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/pd2_mod_efund/props/gen_prop_square_goal_marker_truck/gen_prop_square_goal_marker_truck" orientation_object="rp_root" />
+	<sequence_manager file="units/pd2_mod_efund/props/gen_prop_square_goal_marker_truck/gen_prop_square_goal_marker_truck" />
+	<bodies>
+		<body name="static_body" enabled="true" template="editor">
+			<object name="rp_root" />
+			<object name="c_cube" collision_type="box" />
+		</body>
+	</bodies>
+	<graphics>
+		<graphic_group name="g_group" enabled="true" culling_object="co_culling">
+			<object name="g_goal" enabled="true" />
+			<object name="g_anim" enabled="true" />
+			<object name="g_icon" enabled="true" />
+		</graphic_group>
+	</graphics>
+</dynamic_object>

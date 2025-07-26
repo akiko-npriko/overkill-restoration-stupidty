@@ -382,6 +382,8 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/27040
  - Cargoship Raid
 	- https://modworkshop.net/mod/25979
+ - Election Funds - PD2M
+	- https://modworkshop.net/mod/25521
  - Scrollable Contract Brokers
 	- https://modworkshop.net/mod/37050
 	 
