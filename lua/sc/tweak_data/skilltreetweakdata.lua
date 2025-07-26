@@ -1276,7 +1276,8 @@ function SkillTreeTweakData:init(tweak_data)
 					upgrades = {
 						"player_buy_bodybags_asset",
 						"player_additional_assets",
-						"player_buy_spotter_asset"
+						"player_buy_spotter_asset",
+						"player_grant_night_vision"
 					},
 					cost = self.costs.pro
 				}
@@ -1356,7 +1357,8 @@ function SkillTreeTweakData:init(tweak_data)
 				},
 				[2] = {
 					upgrades = {
-						"player_marked_enemy_extra_damage"
+						"player_marked_enemy_extra_damage",
+						"weapon_grant_op_af_infrared"
 					},
 					cost = self.costs.hightierpro
 				}

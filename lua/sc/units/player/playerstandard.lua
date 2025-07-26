@@ -46,6 +46,7 @@ function PlayerStandard:init(unit)
 		self._slotmask_bullet_impact_targets = managers.mutators:modify_value("PlayerStandard:init:melee_slot_mask", self._slotmask_bullet_impact_targets)
 		self._slotmask_bullet_impact_targets = managers.modifiers:modify_value("PlayerStandard:init:melee_slot_mask", self._slotmask_bullet_impact_targets)
 	end
+	self._nighaaatvision_infrared_highlight = false
 end
 
 function PlayerStandard:cancel_reload()
@@ -71,9 +72,13 @@ function PlayerStandard:set_night_vision_state(state)
 			light = not _G.IS_VR and 0.3 or 0.1
 		}
 	end
-
+	self._nighaaatvision_infrared_highlight = false
 	--This conditional is hilarious in vanilla btw.
 	if self._state_data.night_vision_active == state then
+		return
+	end
+	--Now needs perk :3
+	if not managers.player:has_category_upgrade("player", "grant_night_vision") then
 		return
 	end
 
@@ -93,12 +98,20 @@ function PlayerStandard:set_night_vision_state(state)
 		end
 
 		managers.viewport:create_global_environment_modifier(ambient_color_key, true, light_modifier)
+		if managers.player:has_category_upgrade("weapon", "grant_op_af_infrared") and managers.groupai:state():whisper_mode() then
+			self._nighaaatvision_infrared_highlight = true
+		end
 	else
 		managers.viewport:destroy_global_environment_modifier(ambient_color_key)
 	end
 
 	self._unit:sound():play(state and "night_vision_on" or "night_vision_off", nil, false)
-	managers.environment_controller:set_default_color_grading(effect, state)
+	if self._nighaaatvision_infrared_highlight then
+		managers.environment_controller:set_default_color_grading("scope_infrared", state)
+	else
+		managers.environment_controller:set_default_color_grading(effect, state)
+	end
+	
 	managers.environment_controller:refresh_render_settings()
 
 	self._state_data.night_vision_active = state
@@ -5633,6 +5646,10 @@ Hooks:PostHook(PlayerStandard, "_update_fwd_ray", "InfraredHighlighting__update_
 			self._equipped_unit:base():check_infrared_highlight()
 		elseif self:full_steelsight() and self._equipped_unit:base().check_second_infrared_highlight then
 			self._equipped_unit:base():check_second_infrared_highlight()
+		elseif self._nighaaatvision_infrared_highlight and managers.groupai:state():whisper_mode() then
+			self._equipped_unit:base():check_nvg_infrared_highlight()
+		elseif self._nighaaatvision_infrared_highlight then
+			self:set_night_vision_state(not self._state_data.night_vision_active)
 		end
 	end
 end)

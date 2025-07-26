@@ -2740,13 +2740,19 @@ end
 function NewRaycastWeaponBase:gen_infrared_highlight()
 	local enemiesaa = managers.enemy:all_enemies() or {}
 	local civiliansaa = managers.enemy:all_civilians() or {}
+	local friendlyallisses = managers.groupai:state():all_char_criminals() or {}
 	for u_key, u_data in pairs(enemiesaa) do
-		if u_data.unit and alive(u_data.unit) then
+		if u_data.unit and alive(u_data.unit) and u_data.unit:contour() then
 			u_data.unit:contour():add("mark_infrared", false)
 		end
 	end
 	for u_key, u_data in pairs(civiliansaa) do
-		if u_data.unit and alive(u_data.unit) then
+		if u_data.unit and alive(u_data.unit) and u_data.unit:contour() then
+			u_data.unit:contour():add("mark_infrared", false)
+		end
+	end
+	for u_key, u_data in pairs(friendlyallisses) do
+		if u_data.unit and alive(u_data.unit) and u_data.unit:contour() then
 			u_data.unit:contour():add("mark_infrared", false)
 		end
 	end
@@ -2762,6 +2768,14 @@ end
 
 function NewRaycastWeaponBase:check_second_infrared_highlight()
 	if not self._can_second_infrared_highlight then
+		return
+	end
+
+	NewRaycastWeaponBase:gen_infrared_highlight()
+end
+
+function NewRaycastWeaponBase:check_nvg_infrared_highlight()
+	if not managers.player:has_category_upgrade("weapon", "grant_op_af_infrared") then
 		return
 	end
 

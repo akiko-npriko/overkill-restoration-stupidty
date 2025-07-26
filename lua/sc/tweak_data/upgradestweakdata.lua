@@ -1429,7 +1429,8 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 				--Ace
 					self.values.player.additional_assets = {true}
 					self.values.player.buy_bodybags_asset = {true}
-					self.values.player.buy_spotter_asset = {true}				
+					self.values.player.buy_spotter_asset = {true}	
+					self.values.player.grant_night_vision = {true}					
 
 			--ECM Overdrive
 			--Basic
@@ -1467,6 +1468,7 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 				--Ace
 				self.values.player.marked_enemy_extra_damage = {true}
 				self.values.player.marked_enemy_damage_mul = 1.35
+				self.values.weapon.grant_op_af_infrared = {true}
 
 				self.skill_descs.ecm_2x = {
 					skill_value_b1 = tostring(self.values.player.marked_inc_dmg_distance[1][2] % 1 * 100).."%", -- +damage if player position > distance
@@ -5737,6 +5739,22 @@ function UpgradesTweakData:_saw_definitions()
 		upgrade = {
 			value = 1,
 			upgrade = "one_round_buff_1",
+			category = "weapon"
+		}
+	}
+	self.definitions.player_grant_night_vision = {
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "grant_night_vision",
+			category = "player"
+		}
+	}
+	self.definitions.weapon_grant_op_af_infrared = {
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "grant_op_af_infrared",
 			category = "weapon"
 		}
 	}
