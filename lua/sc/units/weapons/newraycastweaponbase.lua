@@ -329,7 +329,7 @@ function NewRaycastWeaponBase:conditional_accuracy_multiplier(current_state)
 	end
 
 	local is_moving = current_state._moving or current_state:in_air()
-	local full_steelsight = current_state:full_steelsight()
+	local full_steelsight = current_state:full_steelsight() or false
 
 	if full_steelsight then
 		if multi_ray then
@@ -626,7 +626,7 @@ function NewRaycastWeaponBase:recoil_multiplier(...)
 	local current_state = alive(user_unit) and user_unit:movement() and user_unit:movement()._current_state
 	if current_state then
 		local is_moving = current_state._moving or current_state:in_air()
-		local full_steelsight = current_state:full_steelsight()
+		local full_steelsight = current_state:full_steelsight() or false
 		if full_steelsight then
 			local weapon_stats = tweak_data.weapon.stats
 			local base_zoom = weapon_stats.zoom and weapon_stats.zoom[1]
