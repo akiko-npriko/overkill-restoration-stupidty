@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/custom/pd2_mod_tj_htsb/pickups/pickup_bank_manager_key/pickup_bank_manager_key" orientation_object="rp_key_card" />
+	<sequence_manager file="units/custom/pd2_mod_tj_htsb/pickups/pickup_bank_manager_key/pickup_bank_manager_key" />
+	
+	<bodies>
+		<body name="editor" enabled="true" template="editor">
+			<object name="rp_key_card" />
+			<object name="g_key_card" collision_type="box" />
+		</body>
+	</bodies>
+	
+	<graphics>
+		<object name="g_key_card" enabled="true" />
+	</graphics>
+</dynamic_object> 

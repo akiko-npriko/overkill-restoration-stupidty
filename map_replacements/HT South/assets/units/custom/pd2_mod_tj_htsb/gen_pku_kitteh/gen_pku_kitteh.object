@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<dynamic_object>
+  <diesel materials="units/custom/pd2_mod_tj_htsb/gen_pku_kitteh/gen_pku_kitteh" orientation_object="rp_smo_01_mask" />
+  <sequence_manager file="units/custom/pd2_mod_tj_htsb/gen_pku_kitteh/gen_pku_kitteh" />
+
+  <bodies>
+    <body name="body_kitteh" enabled="true" template="static">
+      <object name="rp_smo_01_mask" />
+      <object name="g_g" collision_type="mesh_mopp" />
+    </body>
+  </bodies>
+
+  <graphics>
+    <object name="g_g" enabled="true" />    
+  </graphics>
+</dynamic_object> 

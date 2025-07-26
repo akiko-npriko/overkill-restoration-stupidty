@@ -1,0 +1,6 @@
+<materials version="3">
+	<material name="mtr_mask" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE" version="2">
+		<diffuse_texture file="units/custom/pd2_mod_tj_htsb/gen_pku_golden_kitteh/gen_pku_golden_kitteh_df" />
+		<reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap"/>
+	</material>
+</materials>

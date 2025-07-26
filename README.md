@@ -394,7 +394,36 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/30506
  - Hard Cash
 	- https://modworkshop.net/mod/41204
- - THERE ARE MORE HEISTS DO THEM LATER!!!
+ - Cook Off: Meth Slaves
+	- https://modworkshop.net/mod/43335
+ - Knockover: Jewelry Store
+	- https://modworkshop.net/mod/28523
+ - Old Safehouse Raid
+	- https://modworkshop.net/mod/34616
+ - Out Of Frame Fix
+	- https://modworkshop.net/mod/30747
+ - Proving Grounds
+	- https://modworkshop.net/mod/29905
+ - (Notoriety) R&B Bank remake
+	- https://modworkshop.net/mod/47374
+ - FBI Office Holdout
+	- https://modworkshop.net/mod/45068
+ - Sniper Assassin
+	- https://modworkshop.net/mod/33335
+ - The Botched Bank Heist
+	- https://modworkshop.net/mod/40787
+ - Train Heist: Encore
+	- https://modworkshop.net/mod/42002
+ - The Big NFT Heist (1.3 update)
+	- https://modworkshop.net/mod/35205
+ - The House Robbery
+	- https://modworkshop.net/mod/45238
+ - Yaeger - Fueled Feud
+	- https://modworkshop.net/mod/43544
+ - Office Strike
+	- https://modworkshop.net/mod/21032
+ - Harvest & Trustee: Southern Branch
+	- https://modworkshop.net/mod/29669
  - Restoration Mod - custom heists compatibility patches
 	- https://modworkshop.net/mod/38252
  - Scrollable Contract Brokers

@@ -1,0 +1,444 @@
+<table directory="assets">
+	<add from_db="true">
+		<effect load="true" path="effects/particles/rain/raindrop_screen"/>
+		<effect load="true" path="effects/particles/rain/rain_only"/>
+		<effect load="true" path="effects/particles/rain/rain_01_a"/>
+		<effect load="true" path="effects/particles/rain/rain_glace_inside"/>
+		<effect load="true" path="effects/payday2/environment/hatch_sparks"/>
+		<effect load="true" path="effects/payday2/environment/gas_damage_area"/>
+		<effect load="true" path="effects/payday2/particles/impacts/blood/blood_dripping"/>
+		<effect load="true" path="effects/payday2/particles/impacts/blood/blood_splash"/>
+
+		<bnk load="true" path="soundbanks/ambiences"/>
+		<material_config path="core/environments/skies/sky_1313_cloudy/sky_1313_cloudy"/>
+
+		<unit load="true" path="units/pd2_dlc_chico/weapons/wpn_launcher_frag_m203/wpn_launcher_frag_m203"/>
+		<material_config path="units/pd2_dlc_gage_assault/weapons/wpn_launcher_frag_grenade/wpn_launcher_frag_grenade"/>
+		<object path="units/pd2_dlc_gage_assault/weapons/wpn_launcher_frag_grenade/wpn_launcher_frag_grenade"/>
+		<sequence_manager path="units/pd2_dlc_gage_assault/weapons/wpn_launcher_frag_grenade/wpn_launcher_frag_grenade"/>
+		
+		<unit load="true" path="units/payday2/characters/ene_cop_1/ene_cop_1"/>
+		<unit load="true" path="units/payday2/characters/ene_cop_1/ene_cop_1_husk"/>
+		<material_config path="units/payday2/characters/ene_cop_1/ene_cop_1"/>
+		<object path="units/payday2/characters/ene_cop_1/ene_cop_1"/>
+		<unit load="true" path="units/payday2/characters/ene_cop_2/ene_cop_2"/>
+		<object path="units/payday2/characters/ene_cop_2/ene_cop_2"/>
+		<material_config path="units/payday2/characters/ene_cop_2/ene_cop_2"/>
+		<unit load="true" path="units/payday2/characters/ene_acc_cop_hat/ene_acc_cop_hat"/>
+		<object path="units/payday2/characters/ene_acc_cop_hat/ene_acc_cop_hat"/>
+		<material_config path="units/payday2/characters/ene_acc_cop_hat/ene_acc_cop_hat"/>
+		<unit load="true" path="units/payday2/characters/ene_cop_2/ene_cop_2_husk"/>
+		<unit load="true" path="units/payday2/characters/civ_female_casual_1/civ_female_casual_1"/>
+		<unit load="true" path="units/payday2/characters/civ_female_casual_1/civ_female_casual_1_husk"/>
+		<material_config path="units/payday2/characters/civ_female_casual_1/civ_female_casual_1"/>
+		<object path="units/payday2/characters/civ_female_casual_1/civ_female_casual_1"/>
+		<unit load="true" path="units/payday2/characters/civ_male_casual_2/civ_male_casual_2"/>
+		<unit load="true" path="units/payday2/characters/civ_male_casual_2/civ_male_casual_2_husk"/>
+		<material_config path="units/payday2/characters/civ_male_casual_2/civ_male_casual_2"/>
+		<object path="units/payday2/characters/civ_male_casual_2/civ_male_casual_2"/>
+		<unit load="true" path="units/payday2/characters/ene_gang_black_1/ene_gang_black_1"/>
+		<object path="units/payday2/characters/ene_gang_black_1/ene_gang_black_1"/>
+		<material_config path="units/payday2/characters/ene_gang_black_1/ene_gang_black_1"/>
+		<unit path="units/payday2/characters/ene_acc_gang_cap_1/ene_acc_gang_cap_1"/>
+		<object path="units/payday2/characters/ene_acc_gang_cap_1/ene_acc_gang_cap_1"/>
+		<material_config path="units/payday2/characters/ene_acc_gang_cap_1/ene_acc_gang_cap_1"/>
+		<unit load="true" path="units/payday2/characters/ene_gang_black_1/ene_gang_black_1_husk"/>
+		<unit load="true" path="units/payday2/characters/ene_gang_black_2/ene_gang_black_2"/>
+		<object path="units/payday2/characters/ene_gang_black_2/ene_gang_black_2"/>
+		<material_config path="units/payday2/characters/ene_gang_black_2/ene_gang_black_2"/>
+		<unit path="units/payday2/characters/ene_acc_gang_cap_2/ene_acc_gang_cap_2"/>
+		<object path="units/payday2/characters/ene_acc_gang_cap_2/ene_acc_gang_cap_2"/>
+		<material_config path="units/payday2/characters/ene_acc_gang_cap_2/ene_acc_gang_cap_2"/>
+		<unit load="true" path="units/payday2/characters/ene_gang_black_2/ene_gang_black_2_husk"/>
+		<unit load="true" path="units/payday2/characters/ene_gang_black_3/ene_gang_black_3"/>
+		<unit load="true" path="units/payday2/characters/ene_gang_black_3/ene_gang_black_3_husk"/>
+		<material_config path="units/payday2/characters/ene_gang_black_3/ene_gang_black_3"/>
+		<object path="units/payday2/characters/ene_gang_black_3/ene_gang_black_3"/>
+		<unit load="true" path="units/payday2/characters/ene_gang_russian_2/ene_gang_russian_2"/>
+		<unit load="true" path="units/payday2/characters/ene_gang_russian_2/ene_gang_russian_2_husk"/>
+		<material_config path="units/payday2/characters/ene_gang_russian_2/ene_gang_russian_2"/>
+		<object path="units/payday2/characters/ene_gang_russian_2/ene_gang_russian_2"/>
+		<unit load="true" path="units/payday2/characters/ene_gang_russian_1/ene_gang_russian_1"/>
+		<unit load="true" path="units/payday2/characters/ene_gang_russian_1/ene_gang_russian_1_husk"/>
+		<material_config path="units/payday2/characters/ene_gang_russian_1/ene_gang_russian_1"/>
+		<object path="units/payday2/characters/ene_gang_russian_1/ene_gang_russian_1"/>
+		<unit load="true" path="units/payday2/characters/ene_gang_russian_3/ene_gang_russian_3"/>
+		<unit load="true" path="units/payday2/characters/ene_gang_russian_3/ene_gang_russian_3_husk"/>
+		<material_config path="units/payday2/characters/ene_gang_russian_3/ene_gang_russian_3"/>
+		<object path="units/payday2/characters/ene_gang_russian_3/ene_gang_russian_3"/>
+		<unit load="true" path="units/payday2/characters/ene_gang_russian_4/ene_gang_russian_4"/>
+		<unit load="true" path="units/payday2/characters/ene_gang_russian_4/ene_gang_russian_4_husk"/>
+		<material_config path="units/payday2/characters/ene_gang_russian_4/ene_gang_russian_4"/>
+		<object path="units/payday2/characters/ene_gang_russian_4/ene_gang_russian_4"/>
+		<unit load="true" path="units/payday2/characters/ene_gang_russian_5/ene_gang_russian_5"/>
+		<unit load="true" path="units/payday2/characters/ene_gang_russian_5/ene_gang_russian_5_husk"/>
+		<material_config path="units/payday2/characters/ene_gang_russian_5/ene_gang_russian_5"/>
+		<object path="units/payday2/characters/ene_gang_russian_5/ene_gang_russian_5"/>
+		<unit load="true" path="units/payday2/characters/ene_gang_black_4/ene_gang_black_4"/>
+		<unit load="true" path="units/payday2/characters/ene_gang_black_4/ene_gang_black_4_husk"/>
+		<object path="units/payday2/characters/ene_gang_black_4/ene_gang_black_4"/>
+		<material_config path="units/payday2/characters/ene_gang_black_4/ene_gang_black_4"/>
+		<unit path="units/payday2/vehicles/anim_vehicle_van_swat/anim_vehicle_van_swat"/>
+		<object path="units/payday2/vehicles/anim_vehicle_van_swat/anim_vehicle_van_swat"/>
+		<material_config path="units/payday2/vehicles/anim_vehicle_van_swat/anim_vehicle_van_swat"/>
+		<sequence_manager path="units/payday2/vehicles/anim_vehicle_van_swat/anim_vehicle_van_swat"/>
+		<effect load="true" path="effects/payday2/particles/flares/scene_flare_small_01"/>
+		<effect load="true" path="effects/payday2/particles/spotlight/scene_spotlight_01"/>
+		<unit path="units/payday2/vehicles/gen_vehicle_turret/gen_vehicle_turret"/>
+		<object path="units/payday2/vehicles/gen_vehicle_turret/gen_vehicle_turret"/>
+		<material_config path="units/payday2/vehicles/gen_vehicle_turret/gen_vehicle_turret"/>
+		<sequence_manager path="units/payday2/vehicles/gen_vehicle_turret/gen_vehicle_turret"/>
+		<unit path="units/payday2/vehicles/gen_vehicle_turret/spawn_turret_debris"/>
+		<object path="units/payday2/vehicles/gen_vehicle_turret/spawn_turret_debris"/>
+		<unit path="units/payday2/vehicles/gen_vehicle_turret/spawn_shield_front"/>
+		<object path="units/payday2/vehicles/gen_vehicle_turret/spawn_shield_front"/>
+		<effect load="true" path="effects/particles/weapons/flashlight/flashlight"/>
+		<effect load="true" path="effects/payday2/particles/explosions/sentry_aftersmoke"/>
+		<effect load="true" path="effects/payday2/particles/explosions/sentry_damage_smoke"/>
+		<effect load="true" path="effects/payday2/particles/explosions/sentry_damage_smoke_med"/>
+		<effect load="true" path="effects/payday2/particles/explosions/sentry_damage_smoke_large"/>
+		<effect load="true" path="effects/payday2/particles/explosions/sparks/sparks_loop"/>
+		<effect load="true" path="effects/payday2/particles/weapons/big_762_auto"/>
+		<effect load="true" path="effects/payday2/particles/weapons/parts/combo_light_all"/>
+		<effect load="true" path="effects/payday2/particles/weapons/parts/distance_halo_big"/>
+		<effect load="true" path="effects/payday2/particles/weapons/shells/shell_556_lmg"/>
+		<effect load="true" path="effects/payday2/particles/weapons/shells/shell_link"/>
+		<effect load="true" path="effects/payday2/particles/explosions/sentry_explosion"/>
+		<animation path="anims/car/van_swat_firestarter_1_arrive_1"/>
+		<animation path="anims/car/van_swat_firestarter_1_arrive_2"/>
+		<unit path="units/payday2/vehicles/gen_vehicle_turret/spawn_shield_upper"/>
+		<object path="units/payday2/vehicles/gen_vehicle_turret/spawn_shield_upper"/>
+		<bnk path="soundbanks/weapon_swatturret"/>
+		<unit path="units/payday2/vehicles/gen_vehicle_turret/bex_vehicle_turret"/>
+		<object path="units/payday2/vehicles/gen_vehicle_turret/bex_vehicle_turret"/>
+		<material_config path="units/payday2/vehicles/gen_vehicle_turret/bex_vehicle_turret"/>
+		<sequence_manager path="units/payday2/vehicles/gen_vehicle_turret/bex_vehicle_turret"/>
+		<unit path="units/payday2/vehicles/gen_vehicle_turret/bex_spawn_turret_debris"/>
+		<object path="units/payday2/vehicles/gen_vehicle_turret/bex_spawn_turret_debris"/>
+		<unit path="units/payday2/vehicles/gen_vehicle_turret/bex_spawn_shield_front"/>
+		<object path="units/payday2/vehicles/gen_vehicle_turret/bex_spawn_shield_front"/>
+		<unit path="units/payday2/vehicles/gen_vehicle_turret/bex_spawn_shield_upper"/>
+		<object path="units/payday2/vehicles/gen_vehicle_turret/bex_spawn_shield_upper"/>
+		<effect load="true" path="effects/payday2/particles/smoke_trail/smoke_trail_wanker_car_no_windup"/>
+		<material_config path="units/payday2/props/dest_glass/glass_shatter"/>
+		<material_config path="units/payday2/mockup/occluder_plane"/>
+		<animation_def path="anims/units/swat_van/swat_van"/>
+		<animation_state_machine path="anims/units/swat_van/swat_van"/>
+		<animation_states path="anims/units/swat_van/std"/>
+		<animation_subset path="anims/units/swat_van/std"/>
+		<physic_effect path="physic_effects/push_sphere"/>
+		<scene load="true" path="core/environments/skies/sky_1313_cloudy/sky_1313_cloudy"/>
+
+		<unit load="true" path="units/dev_tools/mission_elements/point_interaction/interaction_dummy"/>
+	</add>
+	<add>
+		<texture path="guis/mods/fuel/textures/pd2/pre_planning/fuel_loc_a_df"/>
+		<texture path="guis/mods/fuel/textures/pd2/pre_planning/mission_briefing_fuel"/>
+		<texture path="guis/mods/fuel/textures/pd2/hud_pickups_fuel"/>
+		<unit path="units/payday2/props/bnk_prop_vault_loot/bnk_prop_vault_loot_value_k"/>
+		<object path="units/payday2/vehicles/str_vehicle_pickup_sportcab_anim_wdog/str_vehicle_pickup_sportcab_anim_wdog"/>
+		<object path="units/payday2/vehicles/str_vehicle_van_anim_shouse/str_vehicle_van_anim_shouse"/>
+
+		<unit load="true" path="units/pd2_mod_fuel/characters/ene_fuel_hostage/ene_fuel_hostage"/>
+		<object path="units/pd2_mod_fuel/characters/ene_fuel_hostage/ene_fuel_hostage"/>
+		<model path="units/pd2_mod_fuel/characters/ene_fuel_hostage/ene_fuel_hostage"/>
+		<material_config path="units/pd2_mod_fuel/characters/ene_fuel_hostage/ene_fuel_hostage"/>
+		<unit load="true" path="units/pd2_mod_fuel/characters/ene_fuel_hostage/ene_fuel_hostage_husk"/>
+		<sequence_manager path="units/pd2_mod_fuel/characters/ene_fuel_hostage/ene_fuel_hostage"/>
+		<texture path="units/pd2_mod_fuel/characters/ene_fuel_hostage/alvarez_head_h_df"/>
+		<texture path="units/pd2_mod_fuel/characters/ene_fuel_hostage/alvarez_head_h_nm"/>
+		<texture path="units/pd2_mod_fuel/characters/ene_fuel_hostage/alvarez_h_df"/>
+		<texture path="units/pd2_mod_fuel/characters/ene_fuel_hostage/alvarez_h_nm"/>
+
+		<unit load="true" path="units/pd2_mod_fuel/characters/ene_fuel_boss/ene_fuel_boss"/>
+		<object path="units/pd2_mod_fuel/characters/ene_fuel_boss/ene_fuel_boss"/>
+		<model path="units/pd2_mod_fuel/characters/ene_fuel_boss/ene_fuel_boss"/>
+		<material_config path="units/pd2_mod_fuel/characters/ene_fuel_boss/ene_fuel_boss"/>
+		<material_config path="units/pd2_mod_fuel/characters/ene_fuel_boss/ene_fuel_boss_contour"/>
+		<unit load="true" path="units/pd2_mod_fuel/characters/ene_fuel_boss/ene_fuel_boss_husk"/>
+
+		<unit load="true" path="units/pd2_mod_fuel/characters/ene_fuel_boss/ene_fuel_boss_2"/>
+		<object path="units/pd2_mod_fuel/characters/ene_fuel_boss/ene_fuel_boss_2"/>
+		<model path="units/pd2_mod_fuel/characters/ene_fuel_boss/ene_fuel_boss_2"/>
+		<unit load="true" path="units/pd2_mod_fuel/characters/ene_fuel_boss/ene_fuel_boss_2_husk"/>
+		<texture path="units/pd2_mod_fuel/characters/ene_fuel_boss/victor_head_df"/>
+		<texture path="units/pd2_mod_fuel/characters/ene_fuel_boss/victor_head_nm"/>
+		<texture path="units/pd2_mod_fuel/characters/ene_fuel_boss/victor_df"/>
+		<texture path="units/pd2_mod_fuel/characters/ene_fuel_boss/victor_nm"/>
+		<texture path="units/pd2_mod_fuel/characters/ene_fuel_boss/ene_vic_jug_helmet_df"/>
+		<texture path="units/pd2_mod_fuel/characters/ene_fuel_boss/ene_vic_jug_helmet_nm"/>
+		<texture path="units/pd2_mod_fuel/characters/ene_fuel_boss/ene_vic_jug_df"/>
+		<texture path="units/pd2_mod_fuel/characters/ene_fuel_boss/ene_vic_jug_nm"/>
+
+		<unit load="true" path="units/pd2_mod_fuel/characters/ene_fuel_tonis/ene_fuel_tonis"/>
+		<unit load="true" path="units/pd2_mod_fuel/characters/ene_fuel_tonis/ene_fuel_tonis_husk"/>
+		<material_config from_db="true" path="units/pd2_dlc_wwh/characters/ene_male_crew_02/ene_male_crew_02"/>
+		<object from_db="true" path="units/pd2_dlc_wwh/characters/ene_male_crew_02/ene_male_crew_02"/>
+		<model from_db="true" path="units/pd2_dlc_wwh/characters/ene_male_crew_02/ene_male_crew_02"/>
+		<sequence_manager from_db="true" path="units/payday2/characters/ragdoll"/>
+
+		<material_config path="units/payday2/vehicles/bnk_vehicle_car_police_anim_1/bnk_vehicle_car_police_anim_1"/>
+		<material_config path="units/payday2/architecture/lcm_b/lcm_b_ext_storefront_barista_corner_8x8m"/>
+		<material_config path="units/pd2_dlc1/props/res_prop_store/res_prop_store_counter"/>
+		<material_config path="units/pd2_dlc1/architecture/res_ext_gas_station/res_prop_gas_window"/>
+		<material_config path="units/pd2_dlc1/architecture/res_ext_gas_station/res_prop_gas_price_sign"/>
+		<texture path="units/pd2_mod_fuel/architecture/fuel_gas_station/fuel_prop_gas_price_sign_df"/>
+		<texture path="units/pd2_mod_fuel/architecture/fuel_gas_station/fuel_prop_gas_price_sign_il"/>
+
+		<model path="units/pd2_mod_fuel/mockup/occluder_fuel"/>
+		<object path="units/pd2_mod_fuel/mockup/occluder_fuel"/>
+		<unit path="units/pd2_mod_fuel/mockup/occluder_fuel"/>
+		<material_config path="units/pd2_mod_fuel/architecture/fuel_gas_station/fuel_ext_gas_station"/>
+		<model path="units/pd2_mod_fuel/architecture/fuel_gas_station/fuel_ext_gas_station"/>
+		<object path="units/pd2_mod_fuel/architecture/fuel_gas_station/fuel_ext_gas_station"/>
+		<unit path="units/pd2_mod_fuel/architecture/fuel_gas_station/fuel_ext_gas_station"/>
+		<sequence_manager path="units/pd2_mod_fuel/architecture/fuel_gas_station/fuel_ext_gas_station"/>
+		<texture path="units/pd2_mod_fuel/architecture/fuel_gas_station/fuel_ext_gas_station_extra_df"/>
+		<unit path="units/pd2_mod_fuel/architecture/fuel_gas_station/fuel_int_gas_station"/>
+		<object path="units/pd2_mod_fuel/architecture/fuel_gas_station/fuel_int_gas_station"/>
+		<model path="units/pd2_mod_fuel/architecture/fuel_gas_station/fuel_int_gas_station"/>
+		<material_config path="units/pd2_mod_fuel/architecture/fuel_gas_station/fuel_int_gas_station"/>
+		<texture path="units/pd2_mod_fuel/architecture/fuel_gas_station/fuel_prop_store_signs_df"/>
+		<unit path="units/pd2_mod_fuel/architecture/fuel_gas_station/fuel_ext_gas_roof"/>
+		<object path="units/pd2_mod_fuel/architecture/fuel_gas_station/fuel_ext_gas_roof"/>
+		<model path="units/pd2_mod_fuel/architecture/fuel_gas_station/fuel_ext_gas_roof"/>
+		<material_config path="units/pd2_mod_fuel/architecture/fuel_gas_station/fuel_ext_gas_roof"/>
+		<texture path="units/pd2_mod_fuel/architecture/fuel_gas_station/fuel_ext_gas_station_df"/>
+		<texture path="units/pd2_mod_fuel/architecture/fuel_gas_station/fuel_ext_gas_station_nm"/>
+		<material_config path="units/pd2_mod_fuel/architecture/fuel_ext_road_driveway/fuel_ext_road_driveway"/>
+		<model path="units/pd2_mod_fuel/architecture/fuel_ext_road_driveway/fuel_ext_road_driveway"/>
+		<object path="units/pd2_mod_fuel/architecture/fuel_ext_road_driveway/fuel_ext_road_driveway"/>
+		<unit path="units/pd2_mod_fuel/architecture/fuel_ext_road_driveway/fuel_ext_road_driveway"/>
+		<material_config path="units/pd2_mod_fuel/architecture/fuel_gas_station_ground/fuel_gas_station_ground"/>
+		<model path="units/pd2_mod_fuel/architecture/fuel_gas_station_ground/fuel_gas_station_ground"/>
+		<object path="units/pd2_mod_fuel/architecture/fuel_gas_station_ground/fuel_gas_station_ground"/>
+		<unit path="units/pd2_mod_fuel/architecture/fuel_gas_station_ground/fuel_gas_station_ground"/>
+		<material_config path="units/pd2_mod_fuel/architecture/fuel_gas_station_kitteh/fuel_gas_station_kitteh"/>
+		<model path="units/pd2_mod_fuel/architecture/fuel_gas_station_kitteh/fuel_gas_station_kitteh"/>
+		<object path="units/pd2_mod_fuel/architecture/fuel_gas_station_kitteh/fuel_gas_station_kitteh"/>
+		<unit path="units/pd2_mod_fuel/architecture/fuel_gas_station_kitteh/fuel_gas_station_kitteh"/>
+		<sequence_manager path="units/pd2_mod_fuel/architecture/fuel_gas_station_kitteh/fuel_gas_station_kitteh"/>
+		<material_config path="units/pd2_mod_fuel/architecture/fuel_basement/fuel_basement"/>
+		<model path="units/pd2_mod_fuel/architecture/fuel_basement/fuel_basement"/>
+		<object path="units/pd2_mod_fuel/architecture/fuel_basement/fuel_basement"/>
+		<unit path="units/pd2_mod_fuel/architecture/fuel_basement/fuel_basement"/>
+
+		<material_config path="units/pd2_mod_fuel/architecture/fuel_hostel_facade/fuel_hostel_facade"/>
+		<model path="units/pd2_mod_fuel/architecture/fuel_hostel_facade/fuel_hostel_facade"/>
+		<object path="units/pd2_mod_fuel/architecture/fuel_hostel_facade/fuel_hostel_facade"/>
+		<unit path="units/pd2_mod_fuel/architecture/fuel_hostel_facade/fuel_hostel_facade"/>
+
+		<material_config path="units/pd2_mod_fuel/architecture/fuel_int_hostel/fuel_int_hostel"/>
+		<model path="units/pd2_mod_fuel/architecture/fuel_int_hostel/fuel_hostel_entrance"/>
+		<object path="units/pd2_mod_fuel/architecture/fuel_int_hostel/fuel_hostel_entrance"/>
+		<unit path="units/pd2_mod_fuel/architecture/fuel_int_hostel/fuel_hostel_entrance"/>
+		<model path="units/pd2_mod_fuel/architecture/fuel_int_hostel/fuel_hostel_floor1"/>
+		<object path="units/pd2_mod_fuel/architecture/fuel_int_hostel/fuel_hostel_floor1"/>
+		<unit path="units/pd2_mod_fuel/architecture/fuel_int_hostel/fuel_hostel_floor1"/>
+		<model path="units/pd2_mod_fuel/architecture/fuel_int_hostel/fuel_hostel_floor2"/>
+		<object path="units/pd2_mod_fuel/architecture/fuel_int_hostel/fuel_hostel_floor2"/>
+		<unit path="units/pd2_mod_fuel/architecture/fuel_int_hostel/fuel_hostel_floor2"/>
+		<model path="units/pd2_mod_fuel/architecture/fuel_int_hostel/fuel_hostel_basement"/>
+		<object path="units/pd2_mod_fuel/architecture/fuel_int_hostel/fuel_hostel_basement"/>
+		<unit path="units/pd2_mod_fuel/architecture/fuel_int_hostel/fuel_hostel_basement"/>
+
+		<model path="units/pd2_mod_fuel/architecture/fuel_basement/fuel_basement_wall_4m"/>
+		<object path="units/pd2_mod_fuel/architecture/fuel_basement/fuel_basement_wall_4m"/>
+		<unit path="units/pd2_mod_fuel/architecture/fuel_basement/fuel_basement_wall_4m"/>
+		<model path="units/pd2_mod_fuel/architecture/fuel_basement/fuel_basement_wall_door"/>
+		<object path="units/pd2_mod_fuel/architecture/fuel_basement/fuel_basement_wall_door"/>
+		<unit path="units/pd2_mod_fuel/architecture/fuel_basement/fuel_basement_wall_door"/>
+		<model path="units/pd2_mod_fuel/architecture/fuel_basement/fuel_basement_wall_explosion"/>
+		<object path="units/pd2_mod_fuel/architecture/fuel_basement/fuel_basement_wall_explosion"/>
+		<unit path="units/pd2_mod_fuel/architecture/fuel_basement/fuel_basement_wall_explosion"/>
+		<sequence_manager path="units/pd2_mod_fuel/architecture/fuel_basement/fuel_basement_wall_explosion"/>
+		<material_config path="units/pd2_mod_fuel/architecture/fuel_basement/fuel_basement_wall_explosion"/>
+		
+		<material_config path="units/pd2_mod_fuel/props/fuel_prop_winch/fuel_prop_winch"/>
+		<model path="units/pd2_mod_fuel/props/fuel_prop_winch/fuel_prop_winch"/>
+		<object path="units/pd2_mod_fuel/props/fuel_prop_winch/fuel_prop_winch"/>
+		<unit path="units/pd2_mod_fuel/props/fuel_prop_winch/fuel_prop_winch"/>
+		<sequence_manager path="units/pd2_mod_fuel/props/fuel_prop_winch/fuel_prop_winch"/>
+		<texture path="units/pd2_mod_fuel/props/fuel_prop_winch/fuel_prop_winch_df"/>
+		<unit path="units/pd2_mod_fuel/pickups/fuel_pku_winch/fuel_pku_winch"/>
+
+		<material_config path="units/pd2_mod_fuel/props/fuel_prop_winch_cable/fuel_prop_winch_cable"/>
+		<model path="units/pd2_mod_fuel/props/fuel_prop_winch_cable/fuel_prop_winch_cable"/>
+		<object path="units/pd2_mod_fuel/props/fuel_prop_winch_cable/fuel_prop_winch_cable"/>
+		<unit path="units/pd2_mod_fuel/props/fuel_prop_winch_cable/fuel_prop_winch_cable"/>
+		<sequence_manager path="units/pd2_mod_fuel/props/fuel_prop_winch_cable/fuel_prop_winch_cable"/>
+
+		<material_config path="units/pd2_mod_fuel/props/fuel_prop_log_ticket/fuel_prop_log_ticket"/>
+		<model path="units/pd2_mod_fuel/props/fuel_prop_log_ticket/fuel_prop_log_ticket"/>
+		<object path="units/pd2_mod_fuel/props/fuel_prop_log_ticket/fuel_prop_log_ticket"/>
+		<unit path="units/pd2_mod_fuel/props/fuel_prop_log_ticket/fuel_prop_log_ticket"/>
+		<sequence_manager path="units/pd2_mod_fuel/props/fuel_prop_log_ticket/fuel_prop_log_ticket"/>
+		<texture path="units/pd2_mod_fuel/props/fuel_prop_log_ticket/fuel_prop_log_ticket_df"/>
+
+		<material_config path="units/pd2_mod_fuel/props/fuel_prop_battery/fuel_prop_battery"/>
+		<model path="units/pd2_mod_fuel/props/fuel_prop_battery/fuel_prop_battery"/>
+		<object path="units/pd2_mod_fuel/props/fuel_prop_battery/fuel_prop_battery"/>
+		<unit path="units/pd2_mod_fuel/props/fuel_prop_battery/fuel_prop_battery"/>
+		<sequence_manager path="units/pd2_mod_fuel/props/fuel_prop_battery/fuel_prop_battery"/>
+		<texture path="units/pd2_mod_fuel/props/fuel_prop_battery/fuel_prop_battery_df"/>
+		<material_config path="units/pd2_mod_fuel/props/fuel_prop_jumper_cable/fuel_prop_jumper_cable"/>
+		<model path="units/pd2_mod_fuel/props/fuel_prop_jumper_cable/fuel_prop_jumper_cable"/>
+		<object path="units/pd2_mod_fuel/props/fuel_prop_jumper_cable/fuel_prop_jumper_cable"/>
+		<unit path="units/pd2_mod_fuel/props/fuel_prop_jumper_cable/fuel_prop_jumper_cable"/>
+		<sequence_manager path="units/pd2_mod_fuel/props/fuel_prop_jumper_cable/fuel_prop_jumper_cable"/>
+		<texture path="units/pd2_mod_fuel/props/fuel_prop_jumper_cable/fuel_prop_jumper_cable_df"/>
+		<model path="units/pd2_mod_fuel/props/fuel_prop_jumper_cable/pku_jumper_cable"/>
+		<object path="units/pd2_mod_fuel/props/fuel_prop_jumper_cable/pku_jumper_cable"/>
+		<unit path="units/pd2_mod_fuel/props/fuel_prop_jumper_cable/pku_jumper_cable"/>
+		<sequence_manager path="units/pd2_mod_fuel/props/fuel_prop_jumper_cable/pku_jumper_cable"/>
+
+		<material_config path="units/pd2_mod_fuel/props/fuel_prop_generator/fuel_prop_generator"/>
+		<model path="units/pd2_mod_fuel/props/fuel_prop_generator/fuel_prop_generator"/>
+		<object path="units/pd2_mod_fuel/props/fuel_prop_generator/fuel_prop_generator"/>
+		<unit path="units/pd2_mod_fuel/props/fuel_prop_generator/fuel_prop_generator"/>
+		<sequence_manager path="units/pd2_mod_fuel/props/fuel_prop_generator/fuel_prop_generator"/>
+
+		<material_config path="units/pd2_mod_fuel/props/fuel_prop_number_book/fuel_prop_number_book"/>
+		<model path="units/pd2_mod_fuel/props/fuel_prop_number_book/fuel_prop_number_book"/>
+		<object path="units/pd2_mod_fuel/props/fuel_prop_number_book/fuel_prop_number_book"/>
+		<unit path="units/pd2_mod_fuel/props/fuel_prop_number_book/fuel_prop_number_book"/>
+		<sequence_manager path="units/pd2_mod_fuel/props/fuel_prop_number_book/fuel_prop_number_book"/>
+		<texture path="units/pd2_mod_fuel/props/fuel_prop_number_book/fuel_prop_number_book_df"/>
+
+		<material_config path="units/pd2_mod_fuel/props/fuel_prop_gas_pump/fuel_prop_gas_pump"/>
+		<model path="units/pd2_mod_fuel/props/fuel_prop_gas_pump/fuel_prop_gas_pump"/>
+		<object path="units/pd2_mod_fuel/props/fuel_prop_gas_pump/fuel_prop_gas_pump"/>
+		<unit path="units/pd2_mod_fuel/props/fuel_prop_gas_pump/fuel_prop_gas_pump"/>
+		<sequence_manager path="units/pd2_mod_fuel/props/fuel_prop_gas_pump/fuel_prop_gas_pump"/>
+		<texture path="units/pd2_mod_fuel/props/fuel_prop_gas_pump/fuel_prop_gas_pump_df"/>
+
+		<material_config path="units/pd2_mod_fuel/props/fuel_prop_hostel_catwalk/fuel_prop_hostel_catwalk"/>
+		<model path="units/pd2_mod_fuel/props/fuel_prop_hostel_catwalk/fuel_prop_hostel_catwalk"/>
+		<object path="units/pd2_mod_fuel/props/fuel_prop_hostel_catwalk/fuel_prop_hostel_catwalk"/>
+		<unit path="units/pd2_mod_fuel/props/fuel_prop_hostel_catwalk/fuel_prop_hostel_catwalk"/>
+
+		<material_config path="units/pd2_mod_fuel/props/fuel_prop_money_bundle/fuel_prop_money_bundle"/>
+		<model path="units/pd2_mod_fuel/props/fuel_prop_money_bundle/fuel_prop_money_bundle"/>
+		<object path="units/pd2_mod_fuel/props/fuel_prop_money_bundle/fuel_prop_money_bundle"/>
+		<unit path="units/pd2_mod_fuel/props/fuel_prop_money_bundle/fuel_prop_money_bundle"/>
+		<cooked_physics path="units/pd2_mod_fuel/props/fuel_prop_money_bundle/fuel_prop_money_bundle"/>
+		<sequence_manager path="units/pd2_mod_fuel/props/fuel_prop_money_bundle/fuel_prop_money_bundle"/>
+
+		<material_config path="units/pd2_mod_fuel/props/fuel_prop_monitor/fuel_prop_monitor"/>
+		<model path="units/pd2_mod_fuel/props/fuel_prop_monitor/fuel_prop_monitor"/>
+		<object path="units/pd2_mod_fuel/props/fuel_prop_monitor/fuel_prop_monitor"/>
+		<unit path="units/pd2_mod_fuel/props/fuel_prop_monitor/fuel_prop_monitor"/>
+		<sequence_manager path="units/pd2_mod_fuel/props/fuel_prop_monitor/fuel_prop_monitor"/>
+		<texture path="units/pd2_mod_fuel/props/fuel_prop_monitor/fuel_prop_monitor_screen_df"/>
+		<texture path="units/pd2_mod_fuel/props/fuel_prop_monitor/fuel_prop_monitor_mascot_df"/>
+		<texture path="units/pd2_mod_fuel/props/fuel_prop_monitor/fuel_prop_monitor_effect_df"/>
+
+		<material_config path="units/pd2_mod_fuel/props/fuel_prop_security_monitor_rack/fuel_prop_security_monitor_rack"/>
+		<model path="units/pd2_mod_fuel/props/fuel_prop_security_monitor_rack/fuel_prop_security_monitor_rack"/>
+		<object path="units/pd2_mod_fuel/props/fuel_prop_security_monitor_rack/fuel_prop_security_monitor_rack"/>
+		<unit path="units/pd2_mod_fuel/props/fuel_prop_security_monitor_rack/fuel_prop_security_monitor_rack"/>
+		<sequence_manager path="units/pd2_mod_fuel/props/fuel_prop_security_monitor_rack/fuel_prop_security_monitor_rack"/>
+		<texture path="units/pd2_mod_fuel/props/fuel_prop_security_monitor_rack/fuel_screen_ticket_vcr_df"/>
+
+		<material_config path="units/pd2_mod_fuel/equipment/fuel_interactable_pizzabox/fuel_interactable_place_pizzabox"/>
+		<cooked_physics path="units/pd2_mod_fuel/equipment/fuel_interactable_pizzabox/fuel_interactable_place_pizzabox"/>
+		<sequence_manager path="units/pd2_mod_fuel/equipment/fuel_interactable_pizzabox/fuel_interactable_place_pizzabox"/>
+		<model path="units/pd2_mod_fuel/equipment/fuel_interactable_pizzabox/fuel_interactable_place_pizzabox"/>
+		<object path="units/pd2_mod_fuel/equipment/fuel_interactable_pizzabox/fuel_interactable_place_pizzabox"/>
+		<unit path="units/pd2_mod_fuel/equipment/fuel_interactable_pizzabox/fuel_interactable_place_pizzabox"/>
+
+		<material_config path="units/pd2_mod_fuel/equipment/fuel_interactable_pizzabox/fuel_interactable_pickup_pizzabox"/>
+		<cooked_physics path="units/pd2_mod_fuel/equipment/fuel_interactable_pizzabox/fuel_interactable_pickup_pizzabox"/>
+		<sequence_manager path="units/pd2_mod_fuel/equipment/fuel_interactable_pizzabox/fuel_interactable_pickup_pizzabox"/>
+		<model path="units/pd2_mod_fuel/equipment/fuel_interactable_pizzabox/fuel_interactable_pickup_pizzabox"/>
+		<object path="units/pd2_mod_fuel/equipment/fuel_interactable_pizzabox/fuel_interactable_pickup_pizzabox"/>
+		<unit path="units/pd2_mod_fuel/equipment/fuel_interactable_pizzabox/fuel_interactable_pickup_pizzabox"/>
+
+		<material_config path="units/pd2_mod_fuel/props/fuel_prop_melee_box/fuel_prop_melee_box"/>
+		<sequence_manager path="units/pd2_mod_fuel/props/fuel_prop_melee_box/fuel_prop_melee_box"/>
+		<model path="units/pd2_mod_fuel/props/fuel_prop_melee_box/fuel_prop_melee_box"/>
+		<object path="units/pd2_mod_fuel/props/fuel_prop_melee_box/fuel_prop_melee_box"/>
+		<unit path="units/pd2_mod_fuel/props/fuel_prop_melee_box/fuel_prop_melee_box"/>
+
+		<material_config path="units/pd2_mod_fuel/pickups/fuel_pku_generator/fuel_pku_generator"/>
+		<model path="units/pd2_mod_fuel/pickups/fuel_pku_generator/fuel_pku_generator"/>
+		<object path="units/pd2_mod_fuel/pickups/fuel_pku_generator/fuel_pku_generator"/>
+		<unit path="units/pd2_mod_fuel/pickups/fuel_pku_generator/fuel_pku_generator"/>
+		<sequence_manager path="units/pd2_mod_fuel/pickups/fuel_pku_generator/fuel_pku_generator"/>
+		<material_config path="units/pd2_mod_fuel/vehicles/fps_vehicle_suv_fuel/fps_vehicle_suv_fuel"/>
+		<model path="units/pd2_mod_fuel/vehicles/fps_vehicle_suv_fuel/fps_vehicle_suv_fuel"/>
+		<object path="units/pd2_mod_fuel/vehicles/fps_vehicle_suv_fuel/fps_vehicle_suv_fuel"/>
+		<unit path="units/pd2_mod_fuel/vehicles/fps_vehicle_suv_fuel/fps_vehicle_suv_fuel"/>
+		<sequence_manager path="units/pd2_mod_fuel/vehicles/fps_vehicle_suv_fuel/fps_vehicle_suv_fuel"/>
+		<texture path="units/pd2_mod_fuel/vehicles/fps_vehicle_suv_fuel/fuel_vehicle_suv_kat_df"/>
+		<unit path="units/pd2_mod_fuel/vehicles/str_vehicle_car_suv_slav/str_vehicle_car_suv_slav"/>
+		<object path="units/pd2_mod_fuel/vehicles/str_vehicle_car_suv_slav/str_vehicle_car_suv_slav"/>
+		<cooked_physics path="units/pd2_mod_fuel/vehicles/str_vehicle_car_suv_slav/str_vehicle_car_suv_slav"/>
+		<model path="units/pd2_mod_fuel/vehicles/str_vehicle_car_suv_slav/str_vehicle_car_suv_slav"/>
+		<material_config path="units/pd2_mod_fuel/vehicles/str_vehicle_car_suv_slav/str_vehicle_car_suv_slav"/>
+		<sequence_manager path="units/pd2_mod_fuel/vehicles/str_vehicle_car_suv_slav/str_vehicle_car_suv_slav"/>
+		<texture path="units/pd2_mod_fuel/vehicles/str_vehicle_car_suv_slav/str_vehicle_car_suv_slav_df"/>
+
+		<material_config path="units/pd2_mod_fuel/equipment/auc_security_cameras/auc_security_camera_ceiling"/>
+		<model path="units/pd2_mod_fuel/equipment/auc_security_cameras/auc_security_camera_ceiling"/>
+		<object path="units/pd2_mod_fuel/equipment/auc_security_cameras/auc_security_camera_ceiling"/>
+		<unit path="units/pd2_mod_fuel/equipment/auc_security_cameras/auc_security_camera_ceiling"/>
+		<sequence_manager path="units/pd2_mod_fuel/equipment/auc_security_cameras/auc_security_camera_ceiling"/>
+		<texture path="units/pd2_mod_fuel/equipment/auc_security_cameras/auc_camera_glass_titan_df"/>
+		<texture path="units/pd2_mod_fuel/equipment/auc_security_cameras/auc_camera_sticker_blackmesa_df"/>
+		<texture path="units/pd2_mod_fuel/equipment/auc_security_cameras/auc_camera_light_blue"/>
+		<texture path="units/pd2_mod_fuel/equipment/auc_security_cameras/auc_camera_light_red"/>
+
+		<material_config path="units/pd2_mod_fuel/equipment/fuel_interactable_ticket_reader/fuel_interactable_ticket_reader"/>
+		<model path="units/pd2_mod_fuel/equipment/fuel_interactable_ticket_reader/fuel_interactable_ticket_reader"/>
+		<object path="units/pd2_mod_fuel/equipment/fuel_interactable_ticket_reader/fuel_interactable_ticket_reader"/>
+		<unit path="units/pd2_mod_fuel/equipment/fuel_interactable_ticket_reader/fuel_interactable_ticket_reader"/>
+		<sequence_manager path="units/pd2_mod_fuel/equipment/fuel_interactable_ticket_reader/fuel_interactable_ticket_reader"/>
+
+		<unit path="units/pd2_mod_custom/cus_bodydump_crate/cus_bodydump_crate" unload="true"/>
+		<object path="units/pd2_mod_custom/cus_bodydump_crate/cus_bodydump_crate" unload="true"/>
+		<model path="units/pd2_mod_custom/cus_bodydump_crate/cus_bodydump_crate" unload="true"/>
+		<material_config path="units/pd2_mod_custom/cus_bodydump_crate/cus_bodydump_crate" unload="true"/>
+		<sequence_manager path="units/pd2_mod_custom/cus_bodydump_crate/cus_bodydump_crate" unload="true"/>
+		<unit path="units/pd2_mod_custom/cus_loot_m4/cases/cus_loot_m4_case" unload="true"/>
+		<object path="units/pd2_mod_custom/cus_loot_m4/cases/cus_loot_m4_case" unload="true"/>
+		<model path="units/pd2_mod_custom/cus_loot_m4/cases/cus_loot_m4_case" unload="true"/>
+		<material_config path="units/pd2_mod_custom/cus_loot_m4/cases/cus_loot_m4_case" unload="true"/>
+		<sequence_manager path="units/pd2_mod_custom/cus_loot_m4/cases/cus_loot_m4_case" unload="true"/>
+		<cooked_physics path="units/pd2_mod_custom/cus_loot_m4/cases/cus_loot_m4_case" unload="true"/>
+		<unit path="units/pd2_mod_custom/cus_loot_m4/cases/cus_loot_m4_case_z_axis" unload="true"/>
+		<object path="units/pd2_mod_custom/cus_loot_m4/cases/cus_loot_m4_case_z_axis" unload="true"/>
+		<model path="units/pd2_mod_custom/cus_loot_m4/cases/cus_loot_m4_case_z_axis" unload="true"/>
+		<sequence_manager path="units/pd2_mod_custom/cus_loot_m4/cases/cus_loot_m4_case_z_axis" unload="true"/>
+		<cooked_physics path="units/pd2_mod_custom/cus_loot_m4/cases/cus_loot_m4_case_z_axis" unload="true"/>
+		<unit load="true" path="units/pd2_mod_custom/cus_loot_m4/weapons/cus_loot_m4_spawn" unload="true"/>
+		<unit load="true" path="units/pd2_mod_custom/cus_loot_m4/weapons/cus_loot_m4_spawn_z_axis" unload="true"/>
+		<object path="units/pd2_mod_custom/cus_loot_m4/weapons/cus_loot_m4" unload="true"/>
+		<model path="units/pd2_mod_custom/cus_loot_m4/weapons/cus_loot_m4" unload="true"/>
+		<material_config path="units/pd2_mod_custom/cus_loot_m4/weapons/cus_loot_m4" unload="true"/>
+		<sequence_manager path="units/pd2_mod_custom/cus_loot_m4/weapons/cus_loot_m4" unload="true"/>
+		<unit load="true" path="units/pd2_mod_custom/cus_loot_m4/weapons/cus_loot_m4_static" unload="true"/>
+		<unit load="true" path="units/pd2_mod_custom/cus_loot_m4/weapons/cus_loot_m4_static_z_axis" unload="true"/>
+		<object path="units/pd2_mod_custom/cus_loot_m4/weapons/cus_loot_m4_static" unload="true"/>
+		<model path="units/pd2_mod_custom/cus_loot_m4/weapons/cus_loot_m4_static" unload="true"/>
+		<unit path="units/pd2_mod_custom/cus_loot_grenades/cases/cus_loot_grenades_case" unload="true"/>
+		<object path="units/pd2_mod_custom/cus_loot_grenades/cases/cus_loot_grenades_case" unload="true"/>
+		<model path="units/pd2_mod_custom/cus_loot_grenades/cases/cus_loot_grenades_case" unload="true"/>
+		<material_config path="units/pd2_mod_custom/cus_loot_grenades/cases/cus_loot_grenades_case" unload="true"/>
+		<sequence_manager path="units/pd2_mod_custom/cus_loot_grenades/cases/cus_loot_grenades_case" unload="true"/>
+		<unit path="units/pd2_mod_custom/cus_loot_grenades/cases/cus_loot_grenades_case_z_axis" unload="true"/>
+		<object path="units/pd2_mod_custom/cus_loot_grenades/cases/cus_loot_grenades_case_z_axis" unload="true"/>
+		<model path="units/pd2_mod_custom/cus_loot_grenades/cases/cus_loot_grenades_case_z_axis" unload="true"/>
+		<sequence_manager path="units/pd2_mod_custom/cus_loot_grenades/cases/cus_loot_grenades_case_z_axis" unload="true"/>
+		<unit load="true" path="units/pd2_mod_custom/cus_loot_grenades/weapons/cus_loot_grenades_spawn" unload="true"/>
+		<unit load="true" path="units/pd2_mod_custom/cus_loot_grenades/weapons/cus_loot_grenades_spawn_z_axis" unload="true"/>
+		<object path="units/pd2_mod_custom/cus_loot_grenades/weapons/cus_loot_grenades" unload="true"/>
+		<model path="units/pd2_mod_custom/cus_loot_grenades/weapons/cus_loot_grenades" unload="true"/>
+		<material_config path="units/pd2_mod_custom/cus_loot_grenades/weapons/cus_loot_grenades" unload="true"/>
+		<sequence_manager path="units/pd2_mod_custom/cus_loot_grenades/weapons/cus_loot_grenades" unload="true"/>
+		<unit load="true" path="units/pd2_mod_custom/cus_loot_grenades/weapons/cus_loot_grenades_static" unload="true"/>
+		<unit load="true" path="units/pd2_mod_custom/cus_loot_grenades/weapons/cus_loot_grenades_static_z_axis" unload="true"/>
+		<object path="units/pd2_mod_custom/cus_loot_grenades/weapons/cus_loot_grenades_static" unload="true"/>
+		<model path="units/pd2_mod_custom/cus_loot_grenades/weapons/cus_loot_grenades_static" unload="true"/>
+	</add>
+</table>

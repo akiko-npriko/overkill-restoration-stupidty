@@ -1,0 +1,11 @@
+<unit type="pku" slot="1" >
+    <object file="units/pku_kitcoin/pku_kitcoin" />
+	<network sync="spawn" />
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="UseInteractionExt">
+			<var name="tweak_data" value="press_to_interact" />
+		</extension>
+    </extensions>
+</unit>

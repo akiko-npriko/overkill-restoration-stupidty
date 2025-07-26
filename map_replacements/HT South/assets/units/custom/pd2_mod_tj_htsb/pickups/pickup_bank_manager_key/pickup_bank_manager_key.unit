@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<unit type="gen" slot="1">
+	<object file="units/custom/pd2_mod_tj_htsb/pickups/pickup_bank_manager_key/pickup_bank_manager_key" />
+	<network sync="spawn" />
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="interaction" class="SpecialEquipmentInteractionExt" >
+			<var name="_special_equipment" value="tj_htsb_manager_keycard" />
+			<var name="_remove_on_interact" value="true" />
+			<var name="tweak_data" value="tj_htsb_pickup_manager_keycard" />
+			<var name="_global_event" value="bankmanager_key" />
+			<var name="_interact_object" value="interact"/>
+		</extension>
+		<extension name="damage" class="UnitDamage" />
+	</extensions>
+</unit>

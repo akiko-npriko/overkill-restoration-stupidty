@@ -1,0 +1,14 @@
+<unit type="gen" slot="1" >
+    <object file="units/pd2_mod_bot/props/kitteh_bopper/kitteh_bopper" />
+    <network sync="spawn"/>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="UseInteractionExt">
+			<var name="tweak_data" value="bop_kitteh" />
+			<var name="_ray_object_names" type="table" >
+				<var value="interact"/>
+			</var>
+		</extension>
+	</extensions>
+</unit>

@@ -1,0 +1,7 @@
+<materials version="3">
+    <material name="grass" render_template="generic:ALIGN_NORMAL_WORLD_Z:ALPHA_MASKED:DIFFUSE_TEXTURE:DOUBLE_SIDED:EXTERNAL_ALPHA_REF:INSTANCED" version="2">
+        <diffuse_texture file="units/world/brushes/grass/grass_brush_df"/>
+        <variable value="0.050000000745058" type="scalar" name="alpha_ref"/>
+        <variable value="1" type="scalar" name="normal_world_z_blend"/>
+    </material>
+</materials>
