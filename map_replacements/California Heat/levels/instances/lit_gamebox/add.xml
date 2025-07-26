@@ -1,0 +1,61 @@
+<table directory="assets">
+  <add path="units/pd2_mod_lit/decals/pd3_small/pd3_small" type="unit">
+    <cooked_physics force="true" path="units/pd2_mod_lit/decals/pd3_small/pd3_small" unload="true"/>
+    <material_config force="true" path="units/pd2_mod_lit/decals/pd3_small/pd3_small" unload="true"/>
+    <model force="true" path="units/pd2_mod_lit/decals/pd3_small/pd3_small" unload="true"/>
+    <object force="true" path="units/pd2_mod_lit/decals/pd3_small/pd3_small" unload="true"/>
+    <texture force="true" path="units/pd2_mod_lit/decals/pd3_small/pd3_small" unload="true"/>
+    <unit force="true" path="units/pd2_mod_lit/decals/pd3_small/pd3_small" unload="true"/>
+  </add>
+	<add from_db="true" path="units/world/props/desert/des_prop_cardboardbox/des_prop_cardboardbox" type="unit">
+		<material_config path="units/world/props/desert/des_prop_cardboardbox/des_prop_cardboardbox"/>
+		<object path="units/world/props/desert/des_prop_cardboardbox/des_prop_cardboardbox"/>
+		<unit path="units/world/props/desert/des_prop_cardboardbox/des_prop_cardboardbox"/>
+	</add>
+	<add from_db="true" path="units/payday2/architecture/mkp/mkp_int_floor_4x4m_a" type="unit">
+		<material_config path="units/payday2/architecture/mkp/mkp" unload="true"/>
+		<object path="units/payday2/architecture/mkp/mkp_int_floor_4x4m_a" unload="true"/>
+		<unit path="units/payday2/architecture/mkp/mkp_int_floor_4x4m_a" unload="true"/>
+	</add>
+	<add from_db="true" path="units/payday2/props/ind_prop_warehouse_set/ind_prop_warehouse_box_c" type="unit">
+		<material_config path="units/payday2/props/ind_prop_warehouse_set/ind_prop_warehouse_box_c"/>
+		<object path="units/payday2/props/ind_prop_warehouse_set/ind_prop_warehouse_box_c"/>
+		<unit path="units/payday2/props/ind_prop_warehouse_set/ind_prop_warehouse_box_c"/>
+	</add>
+	<add from_db="true" path="units/pd2_dlc_mad/props/editable_text_proto/editable_text_proto" type="unit">
+		<font path="fonts/font_proto"/>
+		<material_config path="units/pd2_dlc_mad/props/editable_text_proto/editable_text_proto"/>
+		<object path="units/pd2_dlc_mad/props/editable_text_proto/editable_text_proto"/>
+		<unit path="units/pd2_dlc_mad/props/editable_text_proto/editable_text_proto"/>
+	</add>
+	<add from_db="true" path="units/pd2_dlc_chew/props/editable_text_futura/editable_text_futura" type="unit">
+		<font path="fonts/font_futura"/>
+		<material_config path="units/pd2_dlc_chew/props/editable_text_futura/editable_text_futura"/>
+		<object path="units/pd2_dlc_chew/props/editable_text_futura/editable_text_futura"/>
+		<unit path="units/pd2_dlc_chew/props/editable_text_futura/editable_text_futura"/>
+	</add>
+	<add from_db="true" path="units/pd2_dlc_arena/props/editable_text_eurostile/editable_text_eurostile" type="unit">
+		<font path="fonts/font_eurostile_ext"/>
+		<material_config path="units/pd2_dlc_arena/props/editable_text_eurostile/editable_text_eurostile"/>
+		<object path="units/pd2_dlc_arena/props/editable_text_eurostile/editable_text_eurostile"/>
+		<unit path="units/pd2_dlc_arena/props/editable_text_eurostile/editable_text_eurostile"/>
+	</add>
+	<add from_db="true" path="units/pd2_dlc_berry/props/editable_text_euro_stencil/editable_text_euro_stencil" type="unit">
+		<font path="fonts/font_euro_stencil"/>
+		<material_config path="units/pd2_dlc_arena/props/editable_text_eurostile/editable_text_eurostile"/>
+		<object path="units/pd2_dlc_berry/props/editable_text_euro_stencil/editable_text_euro_stencil"/>
+		<unit path="units/pd2_dlc_berry/props/editable_text_euro_stencil/editable_text_euro_stencil"/>
+	</add>
+	<add from_db="true" path="units/pd2_dlc_dark/props/editable_text_dunton/editable_text_dunton" type="unit">
+		<font path="fonts/font_dunton_writing"/>
+		<material_config path="units/pd2_dlc_dark/props/editable_text_dunton/editable_text_dunton"/>
+		<object path="units/pd2_dlc_dark/props/editable_text_dunton/editable_text_dunton"/>
+		<unit path="units/pd2_dlc_dark/props/editable_text_dunton/editable_text_dunton"/>
+	</add>
+	<add from_db="true" path="units/pd2_dlc_arena/props/editable_text_caslon/editable_text_caslon" type="unit">
+		<unit path="units/pd2_dlc_arena/props/editable_text_caslon/editable_text_caslon"/>
+		<object path="units/pd2_dlc_arena/props/editable_text_caslon/editable_text_caslon"/>
+		<material_config path="units/pd2_dlc_arena/props/editable_text_caslon/editable_text_caslon"/>
+		<font path="fonts/font_caslon"/>
+	</add>
+</table>

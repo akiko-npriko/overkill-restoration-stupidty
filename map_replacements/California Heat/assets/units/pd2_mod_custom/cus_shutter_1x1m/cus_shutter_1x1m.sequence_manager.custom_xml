@@ -1,0 +1,159 @@
+<table>
+	<unit>
+		<variables>
+			<var_lockpick	value="0"/>
+			<var_saw		value="0"/>
+		</variables>
+		
+		
+		<filter name="'filter_is_saw'">
+			<check value="vars.var_saw == 1"/>
+		</filter>
+		
+		<filter name="'filter_is_lock'">
+			<check value="vars.var_lockpick > 0"/>
+		</filter>
+		
+		<filter name="'filter_is_lock1'">
+			<check value="vars.var_lockpick == 1"/>
+		</filter>
+		
+		<filter name="'filter_is_lock2'">
+			<check value="vars.var_lockpick == 2"/>
+		</filter>
+		
+		
+		<body name=" 'body_saw_hitbox' ">
+			<endurance lock="55">
+				<run_sequence name=" 'anim_open' "/>
+				<run_sequence name=" 'trigger_done_opened' "/>
+			</endurance>
+		</body>
+		
+		
+		<sequence editable_state="true" name=" 'interact' " triggable="true">
+			<run_sequence name=" 'anim_open' "/>
+			<run_sequence name=" 'trigger_done_opened' "/>
+		</sequence>
+		
+		
+		<sequence editable_state="true" name=" 'anim_open' " triggable="true">
+			<sound action="'play'" event="'security_door_01'" object="'a_openclose'"/>
+			<animation_group enabled="true" name="'anim_open_close'" from="0/30" to="30/30" speed="1" />
+			<body enabled="false" name="'body_panel2'" start_time="25/30"/>
+			<body enabled="false" name="'body_panel3'" start_time="19/30"/>
+			<body enabled="false" name="'body_panel4'" start_time="13/30"/>
+			<body enabled="false" name="'body_panel5'" start_time="7/30"/>
+			<object enabled="false" name="'g_panel2'" start_time="25/30"/>
+			<object enabled="false" name="'g_panel3'" start_time="19/30"/>
+			<object enabled="false" name="'g_panel4'" start_time="13/30"/>
+			<object enabled="false" name="'g_panel5'" start_time="7/30"/>
+			<run_sequence name=" 'disable_interaction' "/>
+		</sequence>
+		
+		<sequence editable_state="true" name=" 'anim_close' " triggable="true">
+			<sound action="'play'" event="'security_door_01'" object="'a_openclose'"/>
+			<animation_group enabled="true" name="'anim_open_close'" from="30/30" to="60/30" speed="1" />
+			<body enabled="true" name="'body_panel2'" start_time="7/30"/>
+			<body enabled="true" name="'body_panel3'" start_time="13/30"/>
+			<body enabled="true" name="'body_panel4'" start_time="19/30"/>
+			<body enabled="true" name="'body_panel5'" start_time="25/30"/>
+			<object enabled="true" name="'g_panel2'" start_time="7/30"/>
+			<object enabled="true" name="'g_panel3'" start_time="13/30"/>
+			<object enabled="true" name="'g_panel4'" start_time="19/30"/>
+			<object enabled="true" name="'g_panel5'" start_time="25/30"/>
+			<run_sequence name=" 'enable_interaction' "/>
+		</sequence>
+		
+		<sequence editable_state="true" name=" 'state_close' " triggable="true">
+			<animation_group enabled="true" name="'anim_open_close'" from="0/30" to="0/30"/>
+			<body enabled="true" name="'body_panel2'"/>
+			<body enabled="true" name="'body_panel3'"/>
+			<body enabled="true" name="'body_panel4'"/>
+			<body enabled="true" name="'body_panel5'"/>
+			<object enabled="true" name="'g_panel2'"/>
+			<object enabled="true" name="'g_panel3'"/>
+			<object enabled="true" name="'g_panel4'"/>
+			<object enabled="true" name="'g_panel5'"/>
+			<run_sequence name=" 'enable_interaction' "/>
+		</sequence>
+		
+		<sequence editable_state="true" name=" 'state_open' " triggable="true">
+			<animation_group enabled="true" name="'anim_open_close'" from="30/30" to="30/30"/>
+			<body enabled="true" name="'body_panel2'"/>
+			<body enabled="true" name="'body_panel3'"/>
+			<body enabled="true" name="'body_panel4'"/>
+			<body enabled="true" name="'body_panel5'"/>
+			<object enabled="true" name="'g_panel2'"/>
+			<object enabled="true" name="'g_panel3'"/>
+			<object enabled="true" name="'g_panel4'"/>
+			<object enabled="true" name="'g_panel5'"/>
+			<run_sequence name=" 'disable_interaction' "/>
+		</sequence>
+		
+		<sequence editable_state="true" name=" 'disable_interaction' " triggable="true">
+			<graphic_group visibility="false" name="'grp_lockpick1'"/>
+			<graphic_group visibility="false" name="'grp_lockpick2'"/>
+			<graphic_group visibility="false" name="'grp_saw'"/>
+			<body enabled="false" name="'body_saw_hitbox'" />
+			<interaction enabled="false"/>
+		</sequence>
+		
+		<sequence editable_state="true" name=" 'enable_interaction' " triggable="true">
+			<graphic_group	filter="'filter_is_lock1'" visibility="true" name="'grp_lockpick1'"/>
+			<graphic_group	filter="'filter_is_lock1'" visibility="false" name="'grp_lockpick2'"/>
+			<graphic_group	filter="'filter_is_lock2'" visibility="false" name="'grp_lockpick1'"/>
+			<graphic_group	filter="'filter_is_lock2'" visibility="true" name="'grp_lockpick2'"/>
+			<interaction	filter="'filter_is_lock'" enabled="true"/>
+			<body			filter="'filter_is_saw'" enabled="true" name="'body_saw_hitbox'" />
+			<graphic_group	filter="'filter_is_saw'" visibility="true" name="'grp_saw'"/>
+		</sequence>
+		
+		
+		<sequence editable_state="true" name=" 'hide' " triggable="true">
+			<run_sequence name=" 'disable_interaction' "/>
+			<graphic_group visibility="false" name="'grp_main'"/>
+		</sequence>
+		
+		
+		<sequence editable_state="true" name=" 'show' " triggable="true">
+			<run_sequence name=" 'enable_interaction' "/>
+			<graphic_group visibility="true" name="'grp_main'"/>
+		</sequence>
+		
+		
+		<sequence editable_state="true" name=" 'trigger_done_opened' " triggable="true">
+		</sequence>
+		
+		
+		<sequence editable_state="true" name=" 'set_no_lock_no_saw' " triggable="true">
+			<set_variables var_lockpick="0" />
+			<set_variables var_saw="0" />
+		</sequence>
+		
+		<sequence editable_state="true" name=" 'set_lock_easy_no_skill' " triggable="true">
+			<set_variables var_lockpick="1" />
+			<function extension="'interaction'" function="'set_tweak_data'" param1="'pick_lock_easy_no_skill'"/>
+		</sequence>
+		
+		<sequence editable_state="true" name=" 'set_lock_hard_no_skill' " triggable="true">
+			<set_variables var_lockpick="1" />
+			<function extension="'interaction'" function="'set_tweak_data'" param1="'pick_lock_hard_no_skill'"/>
+		</sequence>
+		
+		<sequence editable_state="true" name=" 'set_lock_easy' " triggable="true">
+			<set_variables var_lockpick="2" />
+			<function extension="'interaction'" function="'set_tweak_data'" param1="'pick_lock_easy'"/>
+		</sequence>
+		
+		<sequence editable_state="true" name=" 'set_lock_hard' " triggable="true">
+			<set_variables var_lockpick="2" />
+			<function extension="'interaction'" function="'set_tweak_data'" param1="'pick_lock_hard'"/>
+		</sequence>
+		
+		<sequence editable_state="true" name=" 'set_saw' " triggable="true">
+			<set_variables var_saw="1" />
+		</sequence>
+		
+	</unit>
+</table>

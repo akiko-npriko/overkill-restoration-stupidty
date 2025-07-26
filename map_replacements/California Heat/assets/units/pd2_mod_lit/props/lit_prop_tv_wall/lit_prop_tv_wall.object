@@ -1,0 +1,16 @@
+<dynamic_object>
+    <diesel materials="units/pd2_mod_lit/props/lit_prop_tv_wall/lit_prop_tv_wall" orientation_object="chca_prop_tv_wall" />
+    <sequence_manager file="units/pd2_dlc_chca/props/chca_prop_tv_wall/chca_prop_tv_wall" />  
+    <bodies>
+        <body enabled="true" template="static" name="static_body" >
+            <object collision_type="box" name="c_c" padding="-2.5" />
+        </body>
+    </bodies>
+    <decal_surfaces>
+        <decal_mesh enabled="true" name="dm_dm" material="plastic" />
+    </decal_surfaces>
+    <graphics>
+        <object enabled="true" name="g_tv" />
+        <object name="g_call" enabled="false"/>
+    </graphics>
+</dynamic_object>

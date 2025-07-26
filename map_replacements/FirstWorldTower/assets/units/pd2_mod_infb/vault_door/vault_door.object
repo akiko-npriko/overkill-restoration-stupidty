@@ -1,0 +1,117 @@
+<dynamic_object>
+	<diesel materials="units/pd2_mod_infb/vault_door/vault_door" orientation_object="rp_brb_vault_door_light" />
+	<sequence_manager file="units/pd2_mod_infb/vault_door/vault_door" />
+	<animations>
+		<animation_group name="open" enabled="false">			
+				<object name="anim_door_open" />
+				<object name="anim_door_02" />
+				<object name="anim_wheel" />
+				<object name="anim_wheel_02" />
+				<object name="a_wheel" />
+				<object name="anim_wheel_02" />
+				<object name="a_lock_bar_1" />
+				<object name="a_lock_bar_2" />
+				<object name="a_mover_blocker_anim" />
+		</animation_group>
+		<animation_group name="slide" enabled="false">
+				<object name="a_door" />
+		</animation_group>
+	</animations>
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_brb_vault_door_light" />
+			<object name="c_frame" collision_type="mesh_mopp" padding="-2.5" />
+		</body>
+		<body name="body_collision_01" enabled="true" template="animated">
+			<object name="anim_door_open" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+			<object name="c_box_04" collision_type="box" padding="-2.5" />
+			<object name="c_box_05" collision_type="box" padding="-2.5" />
+			<object name="c_box_06" collision_type="box" padding="-2.5" />
+			<object name="c_box_07" collision_type="box" padding="-2.5" />
+			<object name="c_box_08" collision_type="box" padding="-2.5" />
+			<object name="c_box_09" collision_type="box" padding="-2.5" />
+			<object name="c_box_010" collision_type="box" padding="-2.5" />
+			<object name="c_box_011" collision_type="box" padding="-2.5" />
+			<object name="c_box_012" collision_type="box" padding="-2.5" />
+			<object name="c_box_013" collision_type="box" padding="-2.5" />
+			<object name="c_convex_door" collision_type="convex" padding="-2.5" />
+		</body>
+		<body name="body_collision_02" enabled="true" template="animated">
+			<object name="anim_door_open" />
+			<object name="c_convex_door_01" collision_type="convex" />
+		</body>
+		<body name="body_collision_03" enabled="true" template="animated">
+			<object name="anim_wheel" />
+			<object name="c_mesh_mopp_wheel" collision_type="mesh_mopp" />
+		</body>
+		<body name="body_collision_04" enabled="true" template="animated">
+			<object name="anim_wheel_02" />
+			<object name="c_mesh_mopp_wheel_02" collision_type="mesh_mopp" />
+		</body>
+		<body name="body_mover_blocker" enabled="false" template="mover_blocker" keyframed="true">
+			<object name="a_mover_blocker_anim" />
+			<object name="c_mover_blocker" collision_type="box" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="metal">
+		<decal_mesh name="dm_frame" enabled="true" material="metal" />
+		<decal_mesh name="dm_sheet_metal" enabled="true" material="sheet_metal" />
+		<decal_mesh name="dm_wheel" enabled="true" material="metal" />
+		<decal_mesh name="dm_wheel_02" enabled="true" material="metal" />
+	</decal_surfaces>
+	<graphics>
+		<graphic_group name="grp_vault_door" enabled="true" culling_object="co_box">			
+			<object name="g_wheel" enabled="true" />
+			<object name="g_wheel_02" enabled="true" />
+			<object name="g_door" enabled="true" />
+			<object name="g_frame" enabled="true" />
+			<object name="s_s" enabled="true" shadow_caster="true" />
+		</graphic_group>
+		<graphic_group name="grp_hinge_whole_top" 					enabled="true">
+			<object name="g_door_hinge_whole_top" enabled="true" />
+		</graphic_group>
+		<graphic_group name="grp_hinge_whole_bottom" 					enabled="true">
+			<object name="g_door_hinge_whole_bottom" enabled="true" />
+		</graphic_group>
+		<graphic_group name="grp_hinge_broken_top" 					enabled="false">
+			<object name="g_door_hinge_broken_top" enabled="true" />
+			<object name="g_door_hinge_part_broken_top" enabled="true" />
+		</graphic_group>
+		<graphic_group name="grp_hinge_broken_bottom" 					enabled="false">
+			<object name="g_door_hinge_broken_bottom" enabled="true" />
+			<object name="g_door_hinge_part_broken_bottom" enabled="true" />
+		</graphic_group>
+		<graphic_group name="grp_lock_01_whole" 				enabled="true">
+			<object name="g_lock_01" enabled="true" />
+		</graphic_group>
+		<graphic_group name="grp_lock_02_whole" 				enabled="true">
+			<object name="g_lock_02" enabled="true" />
+		</graphic_group>
+		<graphic_group name="grp_lock_01_broken" 				enabled="false">
+			<object name="g_lock_01_broken" enabled="true" />
+		</graphic_group>
+		<graphic_group name="grp_lock_02_broken" 				enabled="false">
+			<object name="g_lock_02_broken" enabled="true" />
+		</graphic_group>
+		<graphic_group name="grp_lock_box_01" enabled="true" >
+			<object name="g_lock_box_whole_01" enabled="true" />
+		</graphic_group>
+		<graphic_group name="grp_lock_box_02" enabled="true" >
+			<object name="g_lock_box_whole_02" enabled="true" />
+		</graphic_group>
+		<graphic_group name="grp_lock_box_broken_01" enabled="false" >
+			<object name="g_lock_box_broken_01" enabled="true" />
+		</graphic_group>
+		<graphic_group name="grp_lock_box_broken_02" enabled="false" >
+			<object name="g_lock_box_broken_02" enabled="true" />
+		</graphic_group>
+		<object name="g_thermite_lock_01" enabled="false" />
+		<object name="g_thermite_lock_02" enabled="false" />
+		<object name="g_thermite_hinge_02" enabled="false" />
+		<object name="g_thermite_hinge_01" enabled="false" />
+		<object name="g_outline_lod_0" enabled="false" />
+	</graphics>
+</dynamic_object>

@@ -1,0 +1,70 @@
+<table>
+	<unit>
+		<sequence editable_state="true" name="'state_hide'" triggable="true">
+			<interaction enabled="false"/>
+			<body enabled="false" name="'body0'"/>
+			<object enabled="false" name="'g_drill'"/>
+			<object enabled="false" name="'g_base'"/>
+			<object enabled="false" name="'g_toolbag'"/>
+			<object enabled="false" name="'g_toolbag_empty'"/>
+			<graphic_group name="'drillicongroup'" visibility="false"/>
+			<function extension="'timer_gui'" function="'reset'" />
+			<function extension="'timer_gui'" function="'set_visible'" param1="false"/>
+		</sequence>
+		<sequence editable_state="true" name="'state_show'" triggable="true">
+			<interaction enabled="true"/>
+			<body enabled="true" name="'body0'"/>
+			<graphic_group name="'drillicongroup'" visibility="true"/>
+			<object enabled="false" name="'g_drill'"/>
+			<object enabled="false" name="'g_base'"/>
+			<function extension="'timer_gui'" function="'set_visible'" param1="true"/>
+		</sequence>
+		<sequence editable_state="true" name=" 'activate' " triggable="true">
+			<animation_group enabled="true" from="0/30" name="'anim_mover'" speed="1" to="20/30"/>
+			<body enabled="true" name="'body_mover'"/>
+			<body enabled="false" name="'body_mover'" start_time="20/30"/>
+			<body enabled="true" name="'body0'" start_time="20/30"/>
+			<interaction enabled="true"/>
+			<function extension="'timer_gui'" function="'set_visible'" param1="false"/>
+			<graphic_group name="'drillicongroup'" visibility="true"/>
+			<object enabled="true" name="'g_toolbag'"/>
+			<object enabled="false" name="'g_toolbag_empty'"/>
+			<object enabled="false" name="'g_drill'"/>
+			<object enabled="false" name="'g_base'"/>
+		</sequence>
+		<sequence editable_state="true" name=" 'reactivate' " triggable="true">
+			<interaction enabled="true"/>
+		</sequence>
+		<sequence name=" 'deactivate' " triggable="true">
+			<interaction enabled="false"/>
+			<graphic_group name="'drillicongroup'" visibility="false"/>
+			<object enabled="false" name="'g_toolbag'"/>
+			<object enabled="false" name="'g_toolbag_empty'"/>
+			<function extension="'timer_gui'" function="'set_visible'" param1="false"/>
+		</sequence>
+		<sequence name=" 'power_off' " triggable="true">
+			<function extension="'timer_gui'" function="'set_powered'" param1="false"/>
+		</sequence>
+		<sequence name=" 'power_on' " triggable="true">
+			<function extension="'timer_gui'" function="'set_powered'" param1="true"/>
+		</sequence>
+		<sequence name=" 'power_jammed' " triggable="true">
+			<function extension="'timer_gui'" function="'set_jammed'" param1="true"/>
+		</sequence>
+		<sequence name="'jammed_trigger'"/>
+		<sequence name="'timer_done'"/>
+		<sequence name=" 'interact' ">
+			<run_sequence name="'int_seq_drill'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_drill'" triggable="false">
+			<function extension="'timer_gui'" function="'set_visible'" param1="true"/>
+			<function extension="'timer_gui'" function="'start'" param1="'120'"/>
+			<graphic_group name="'drillicongroup'" visibility="false"/>
+			<object enabled="false" name="'g_toolbag'"/>
+			<object enabled="true" name="'g_toolbag_empty'"/>
+			<object enabled="true" name="'g_drill'"/>
+			<object enabled="true" name="'g_base'"/>
+		</sequence>
+		<sequence editable_state="false" name="'done_shock'" triggable="false"/>
+	</unit>
+</table>

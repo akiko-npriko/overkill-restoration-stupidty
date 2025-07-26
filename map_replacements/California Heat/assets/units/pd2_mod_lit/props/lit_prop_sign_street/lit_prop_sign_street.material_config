@@ -1,0 +1,7 @@
+<materials version="3">
+    <material name="com_prop_store_sign_street_mat" decal_material="plastic" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/pd2_mod_lit/props/lit_prop_sign_street/lit_prop_sign_street"/>
+        <bump_normal_texture file="units/payday2/props/com_prop_gallery_sign_street/com_prop_gallery_sign_street_nm"/>
+    </material>
+    <material name="shadow_caster" render_template="shadow_caster_only" version="2"/>
+</materials>

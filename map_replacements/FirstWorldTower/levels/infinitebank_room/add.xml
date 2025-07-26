@@ -1,0 +1,121 @@
+<table directory="assets">
+	<add path="units/payday2/props/bnk_prop_vault_table/bnk_prop_vault_table" type="unit">
+		<material_config path="units/payday2/props/bnk_prop_vault_table/bnk_prop_vault_table" unload="true"/>
+		<object path="units/payday2/props/bnk_prop_vault_table/bnk_prop_vault_table" unload="true"/>
+		<unit path="units/payday2/props/bnk_prop_vault_table/bnk_prop_vault_table" unload="true"/>
+	</add>
+	<add unload_on_restart="true">
+		<material_config path="units/pd2_mod_infb/bank/vault" unload="true"/>
+		<sequence_manager path="units/pd2_mod_infb/bank/vault" unload="true"/>
+		<model path="units/pd2_mod_infb/bank/vault" unload="true"/>
+		<object path="units/pd2_mod_infb/bank/vault" unload="true"/>
+		<unit path="units/pd2_mod_infb/bank/vault" unload="true"/>
+		<material_config path="units/pd2_mod_infb/vault_door/vault_door" unload="true"/>
+		<sequence_manager path="units/pd2_mod_infb/vault_door/vault_door" unload="true"/>
+		<model path="units/pd2_mod_infb/vault_door/vault_door" unload="true"/>
+		<object path="units/pd2_mod_infb/vault_door/vault_door" unload="true"/>
+		<unit path="units/pd2_mod_infb/vault_door/vault_door" unload="true"/>
+		<unit path="units/pd2_mod_infb/bank/lance" unload="true"/>
+		<object path="units/pd2_mod_infb/bank/lance" unload="true"/>
+		<model path="units/pd2_mod_infb/bank/lance" unload="true"/>
+		<material_config path="units/pd2_mod_infb/bank/lance" unload="true"/>
+		<sequence_manager path="units/pd2_mod_infb/bank/lance" unload="true"/>
+		<cooked_physics path="units/pd2_mod_infb/bank/lance" unload="true"/>
+		
+		<unit path="units/pd2_mod_infb/fancy_timer/fancy_timer" unload="true"/>
+		<object path="units/pd2_mod_infb/fancy_timer/fancy_timer" unload="true"/>
+		<model path="units/pd2_mod_infb/fancy_timer/fancy_timer" unload="true"/>
+		<material_config path="units/pd2_mod_infb/fancy_timer/fancy_timer" unload="true"/>
+		<sequence_manager path="units/pd2_mod_infb/fancy_timer/fancy_timer" unload="true"/>
+	</add>
+	<add path="units/payday2/pickups/gen_pku_money/gen_pku_money" type="unit">
+		<effect load="true" path="effects/payday2/particles/grab/grab_money" unload="true"/>
+		<material_config path="units/payday2/pickups/gen_pku_money/gen_pku_money" unload="true"/>
+		<object path="units/payday2/pickups/gen_pku_money/gen_pku_money" unload="true"/>
+		<sequence_manager path="units/payday2/pickups/gen_pku_money/gen_pku_money" unload="true"/>
+		<unit path="units/payday2/pickups/gen_pku_money/gen_pku_money" unload="true"/>
+	</add>
+	<add path="units/pd2_dlc_tag/architecture/tag_int/tag_int_elevator/tag_int_elevator_doors" type="unit">
+		<material_config path="units/pd2_dlc_tag/architecture/tag_int/tag_int_elevator/tag_int_elevator" unload="true"/>
+		<object path="units/pd2_dlc_tag/architecture/tag_int/tag_int_elevator/tag_int_elevator_doors" unload="true"/>
+		<sequence_manager path="units/pd2_dlc_tag/architecture/tag_int/tag_int_elevator/tag_int_elevator_doors" unload="true"/>
+		<unit path="units/pd2_dlc_tag/architecture/tag_int/tag_int_elevator/tag_int_elevator_doors" unload="true"/>
+	</add>
+	<add path="units/pd2_dlc_tag/architecture/tag_int/tag_int_elevator/tag_int_elevator" type="unit">
+		<material_config path="units/pd2_dlc_tag/architecture/tag_int/tag_int_elevator/tag_int_elevator" unload="true"/>
+		<object path="units/pd2_dlc_tag/architecture/tag_int/tag_int_elevator/tag_int_elevator" unload="true"/>
+		<sequence_manager path="units/pd2_dlc_tag/architecture/tag_int/tag_int_elevator/tag_int_elevator" unload="true"/>
+		<unit path="units/pd2_dlc_tag/architecture/tag_int/tag_int_elevator/tag_int_elevator" unload="true"/>
+	</add>
+	<add path="units/payday2/equipment/gen_interactable_lance_large/gen_interactable_lance_large" type="unit">
+		<effect load="true" path="effects/payday2/environment/drill" unload="true"/>
+		<effect load="true" path="effects/payday2/environment/parts/drill_sparks_particles" unload="true"/>
+		<effect load="true" path="effects/payday2/environment/parts/drill_sparks" unload="true"/>
+		<effect load="true" path="effects/payday2/environment/drill_jammed" unload="true"/>
+		<effect load="true" path="effects/payday2/environment/thermal_lance" unload="true"/>
+		<effect load="true" path="effects/payday2/environment/parts/thermal_fire" unload="true"/>
+		<effect load="true" path="effects/payday2/environment/parts/thermal_spark" unload="true"/>
+		<gui path="guis/timer_gui" unload="true"/>
+		<material_config path="units/payday2/equipment/gen_interactable_lance_large/gen_interactable_lance_large" unload="true"/>
+		<object path="units/payday2/equipment/gen_interactable_lance_large/gen_interactable_lance_large" unload="true"/>
+		<sequence_manager path="units/payday2/equipment/gen_interactable_lance_large/gen_interactable_lance_large" unload="true"/>
+		<unit path="units/payday2/equipment/gen_interactable_lance_large/gen_interactable_lance_large" unload="true"/>
+	</add>
+	<add path="units/pd2_dlc_dah/vehicles/dah_turret_ceiling/dah_turret_ceiling" type="unit">
+		<unit path="units/pd2_dlc_dah/vehicles/dah_turret_ceiling/dah_turret_ceiling" unload="true"/>
+		<object path="units/pd2_dlc_dah/vehicles/dah_turret_ceiling/dah_turret_ceiling" unload="true"/>
+		<unit path="units/pd2_dlc_dah/vehicles/dah_turret_ceiling/spawn_turret_debris" unload="true"/>
+		<object path="units/pd2_dlc_dah/vehicles/dah_turret_ceiling/spawn_turret_debris" unload="true"/>
+		<unit path="units/pd2_dlc_dah/vehicles/dah_turret_ceiling/spawn_shield_front" unload="true"/>
+		<object path="units/pd2_dlc_dah/vehicles/dah_turret_ceiling/spawn_shield_front" unload="true"/>
+		<effect load="true" path="effects/particles/weapons/flashlight/flashlight" unload="true"/>
+		<effect load="true" path="effects/payday2/particles/explosions/sentry_aftersmoke" unload="true"/>
+		<effect load="true" path="effects/payday2/particles/explosions/sentry_damage_smoke" unload="true"/>
+		<effect load="true" path="effects/payday2/particles/explosions/sentry_damage_smoke_med" unload="true"/>
+		<effect load="true" path="effects/payday2/particles/explosions/sentry_damage_smoke_large" unload="true"/>
+		<effect load="true" path="effects/payday2/particles/explosions/sparks/sparks_loop" unload="true"/>
+		<effect load="true" path="effects/payday2/particles/weapons/big_762_auto" unload="true"/>
+		<effect load="true" path="effects/payday2/particles/weapons/parts/combo_light_all" unload="true"/>
+		<effect load="true" path="effects/payday2/particles/weapons/parts/distance_halo_big" unload="true"/>
+		<effect load="true" path="effects/payday2/particles/weapons/shells/shell_556_lmg" unload="true"/>
+		<effect load="true" path="effects/payday2/particles/weapons/shells/shell_link" unload="true"/>
+		<effect load="true" path="effects/payday2/particles/explosions/sentry_explosion" unload="true"/>
+		<unit path="units/pd2_dlc_dah/vehicles/dah_turret_ceiling/spawn_shield_upper" unload="true"/>
+		<object path="units/pd2_dlc_dah/vehicles/dah_turret_ceiling/spawn_shield_upper" unload="true"/>
+		<bnk path="soundbanks/weapon_swatturret" unload="true"/>
+		<material_config path="units/pd2_dlc_dah/vehicles/dah_turret_ceiling/dah_turret_ceiling" unload="true"/>
+		<physic_effect path="physic_effects/push_sphere" unload="true"/>
+		<sequence_manager path="units/pd2_dlc_dah/vehicles/dah_turret_ceiling/dah_turret_ceiling" unload="true"/>
+	</add>
+	<add path="units/pd2_dlc_dah/vehicles/dah_turret_ceiling_hatch/dah_turret_ceiling_hatch" type="unit">
+		<unit path="units/pd2_dlc_dah/vehicles/dah_turret_ceiling_hatch/dah_turret_ceiling_hatch" unload="true"/>
+		<object path="units/pd2_dlc_dah/vehicles/dah_turret_ceiling_hatch/dah_turret_ceiling_hatch" unload="true"/>
+		<material_config path="units/pd2_dlc_dah/vehicles/dah_turret_ceiling_hatch/dah_turret_ceiling_hatch" unload="true"/>
+		<sequence_manager path="units/pd2_dlc_dah/vehicles/dah_turret_ceiling_hatch/dah_turret_ceiling_hatch" unload="true"/>
+		<unit path="units/pd2_dlc_dah/vehicles/dah_turret_ceiling/dah_turret_ceiling" unload="true"/>
+		<object path="units/pd2_dlc_dah/vehicles/dah_turret_ceiling/dah_turret_ceiling" unload="true"/>
+		<material_config path="units/pd2_dlc_dah/vehicles/dah_turret_ceiling/dah_turret_ceiling" unload="true"/>
+		<sequence_manager path="units/pd2_dlc_dah/vehicles/dah_turret_ceiling/dah_turret_ceiling" unload="true"/>
+		<unit path="units/pd2_dlc_dah/vehicles/dah_turret_ceiling/spawn_turret_debris" unload="true"/>
+		<object path="units/pd2_dlc_dah/vehicles/dah_turret_ceiling/spawn_turret_debris" unload="true"/>
+		<unit path="units/pd2_dlc_dah/vehicles/dah_turret_ceiling/spawn_shield_front" unload="true"/>
+		<object path="units/pd2_dlc_dah/vehicles/dah_turret_ceiling/spawn_shield_front" unload="true"/>
+		<effect load="true" path="effects/payday2/particles/explosions/sentry_aftersmoke" unload="true"/>
+		<effect load="true" path="effects/payday2/particles/explosions/sentry_damage_smoke" unload="true"/>
+		<effect load="true" path="effects/payday2/particles/explosions/sentry_damage_smoke_med" unload="true"/>
+		<effect load="true" path="effects/payday2/particles/explosions/sentry_damage_smoke_large" unload="true"/>
+		<effect load="true" path="effects/payday2/particles/explosions/sparks/sparks_loop" unload="true"/>
+		<effect load="true" path="effects/payday2/particles/explosions/sentry_explosion" unload="true"/>
+		<unit path="units/pd2_dlc_dah/vehicles/dah_turret_ceiling/spawn_shield_upper" unload="true"/>
+		<object path="units/pd2_dlc_dah/vehicles/dah_turret_ceiling/spawn_shield_upper" unload="true"/>
+		<bnk path="soundbanks/weapon_swatturret" unload="true"/>
+		<physic_effect path="physic_effects/push_sphere" unload="true"/>
+	</add>
+	<add path="units/pd2_dlc_chill/props/chl_prop_timer_large/chl_prop_timer_large" type="unit">
+		<unit path="units/pd2_dlc_chill/props/chl_prop_timer_large/chl_prop_timer_large" unload="true"/>
+		<object path="units/pd2_dlc_chill/props/chl_prop_timer_large/chl_prop_timer_large" unload="true"/>
+		<material_config path="units/pd2_dlc_chill/props/chl_prop_timer_large/chl_prop_timer_large" unload="true"/>
+		<sequence_manager path="units/pd2_dlc_chill/props/chl_prop_timer_large/chl_prop_timer_large" unload="true"/>
+		<font path="fonts/font_digital" unload="true"/>
+	</add>
+</table>

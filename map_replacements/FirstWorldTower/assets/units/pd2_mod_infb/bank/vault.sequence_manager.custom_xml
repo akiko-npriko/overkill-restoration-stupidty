@@ -1,0 +1,31 @@
+<table>
+	<unit>
+		<sequence editable_state="true" name="'cover_vent_holes'" triggable="true">
+			<body	enabled="true"	name="'body_vent_001'"/>
+			<object	enabled="true"	name="'g_vent_001'"/>
+			<body	enabled="true"	name="'body_vent_002'"/>
+			<object	enabled="true"	name="'g_vent_002'"/>
+		</sequence>
+		
+		<sequence editable_state="true" name="'show_vent_hole_001'" triggable="true">
+			<body	enabled="false"	name="'body_vent_001'"/>
+			<object	enabled="false"	name="'g_vent_001'"/>
+		</sequence>
+		<sequence editable_state="true" name="'show_vent_hole_002'" triggable="true">
+			<body	enabled="false"	name="'body_vent_002'"/>
+			<object	enabled="false"	name="'g_vent_002'"/>
+		</sequence>
+		<sequence editable_state="true" name="'show_vent_hole_003'" triggable="true">
+			<body	enabled="false"	name="'body_vent_003'"/>
+			<object	enabled="false"	name="'g_vent_003'"/>
+		</sequence>
+		<sequence editable_state="true" name="'show_vent_hole_004'" triggable="true">
+			<body	enabled="false"	name="'body_vent_004'"/>
+			<object	enabled="false"	name="'g_vent_004'"/>
+		</sequence>
+		<sequence editable_state="true" name="'show_vent_hole_005'" triggable="true">
+			<body	enabled="false"	name="'body_vent_005'"/>
+			<object	enabled="false"	name="'g_vent_005'"/>
+		</sequence>
+	</unit>
+</table>

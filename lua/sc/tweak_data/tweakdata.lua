@@ -1867,3 +1867,27 @@ if twb.weapon_skins.tecci_cnuy_ibuki then --Version 0.7.0
 		end
 	end
 end
+
+for id,_job in pairs(tweak_data.narrative.jobs) do
+    if _job.contact == "skirmish" then
+        _job.skirmish = true
+    end
+end
+
+for id,_job in pairs(tweak_data.narrative.jobs) do
+    if _job.contact == "zombies_mode" then
+        _job.zombies_mode = true
+    end
+end
+
+for id,_job in pairs(tweak_data.narrative.jobs) do
+    if tweak_data.narrative.contacts[_job.contact] and tweak_data.narrative.contacts[_job.contact].hidden == true then 
+        _job.custom = false
+    end
+end
+
+for id,_job in pairs(tweak_data.narrative.jobs) do
+    if _job.custom == true and not _job.skirmish and not _job.zombies_mode then
+        _job.contact = "custom"
+    end
+end

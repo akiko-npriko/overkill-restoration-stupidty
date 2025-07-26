@@ -368,6 +368,18 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/20029
  - (April Fools 2023) Poke of Death
 	- https://modworkshop.net/mod/41775
+ - The House Robbery
+	- https://modworkshop.net/mod/45238
+ - The Skyscraper Heist
+	- https://modworkshop.net/mod/31371
+ - Brooklyn Bank: Ranted
+	- https://modworkshop.net/mod/30416
+ - Branch Bank Initiative
+	- https://modworkshop.net/mod/42921
+ - California Heat (+Almir's Games)
+	- https://modworkshop.net/mod/35162
+ - All Custom Heists In The Custom Heists Tab
+	- https://modworkshop.net/mod/30027
 	 
 # Gunsss
  - Do later there are too many i hate myself...

@@ -1,0 +1,35 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_arena/props/are_prop_merchandise_table/are_prop_merchandise_table" orientation_object="rp_are_prop_merchandise_table" />
+	<bodies>
+		<body name="body_blocker" enabled="true" template="bag" collision_class="bag_blocker" >
+			<object name="rp_are_prop_merchandise_table" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_are_prop_merchandise_table" />
+			<object name="c_box_04" collision_type="box" padding="-2.5" />
+			<object name="c_box_05" collision_type="box" padding="-2.5" />
+			<object name="c_box_06" collision_type="box" padding="-2.5" />
+			<object name="c_box_07" collision_type="box" padding="-2.5" />
+			<object name="c_box_08" collision_type="box" padding="-2.5" />
+			<object name="c_box_09" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="steel">
+		<decal_mesh name="dm_cloth" enabled="true" material="cloth" />
+		<decal_mesh name="dm_plastic" enabled="true" material="plastic" />
+		<decal_mesh name="dm_steel" enabled="true" material="steel" />
+	</decal_surfaces>
+	<graphics>
+		<lod_object name="lod_g_tables">
+			<object name="g_tables_lod0" enabled="true" max_distance="1500" />
+			<object name="g_tables_lod1" enabled="true" />
+		</lod_object>
+    <lod_object name="lod_g_skirt">
+      <object name="g_skirt_lod0" enabled="true" max_distance="1500" />
+      <object name="g_skirt_lod1" enabled="true" />
+    </lod_object>
+	</graphics>
+</dynamic_object>

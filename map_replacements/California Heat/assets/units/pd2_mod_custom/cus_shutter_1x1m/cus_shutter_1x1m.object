@@ -1,0 +1,67 @@
+<dynamic_object>
+	<diesel materials="units/pd2_mod_custom/cus_shutter_1x1m/cus_shutter_1x1m" orientation_object="rp_root" />
+	<sequence_manager file="units/pd2_mod_custom/cus_shutter_1x1m/cus_shutter_1x1m"/>
+
+	<animations>
+		<animation_group name="anim_open_close" enabled="false">
+			<object name="a_openclose" />
+		</animation_group>
+	</animations>
+	
+	<bodies>
+		<body name="body_saw_hitbox" enabled="false" template="static">
+			<object name="c_saw" collision_type="box" padding="-2.5"/>
+		</body>
+		<body name="body_panel1" enabled="true" template="animated">
+			<object name="c_panel1" collision_type="box" padding="-2.5"/>
+		</body>
+		<body name="body_panel2" enabled="true" template="animated">
+			<object name="c_panel2" collision_type="box" padding="-2.5"/>
+		</body>
+		<body name="body_panel3" enabled="true" template="animated">
+			<object name="c_panel3" collision_type="box" padding="-2.5"/>
+		</body>
+		<body name="body_panel4" enabled="true" template="animated">
+			<object name="c_panel4" collision_type="box" padding="-2.5"/>
+		</body>
+		<body name="body_panel5" enabled="true" template="animated">
+			<object name="c_panel5" collision_type="box" padding="-2.5"/>
+		</body>
+	</bodies>
+	
+	<decal_surfaces default_material="steel"/>
+	
+	<graphics>
+        <graphic_group name="grp_main" enabled="true" >
+			<object name="g_frame"				enabled="true"	shadow_caster="true"/>
+			<object name="g_panel1"				enabled="true"	shadow_caster="true"/>
+			<object name="g_panel2"				enabled="true"	shadow_caster="true"/>
+			<object name="g_panel3"				enabled="true"	shadow_caster="true"/>
+			<object name="g_panel4"				enabled="true"	shadow_caster="true"/>
+			<object name="g_panel5"				enabled="true"	shadow_caster="true"/>
+        </graphic_group>
+		
+        <graphic_group name="grp_lockpick1" enabled="false" >
+            <lod_object name="lod_lockpick1">
+                <object name="g_lockpick1_lod0"		enabled="true"	max_distance="450"	max_draw_lod="0" />
+                <object name="g_lockpick1_lod1"		enabled="true"	lod="1" />
+            </lod_object> 
+        </graphic_group>
+		
+        <graphic_group name="grp_lockpick2" enabled="false" >
+            <lod_object name="lod_lockpick2">
+                <object name="g_lockpick2_lod0"		enabled="true"	max_distance="450"	max_draw_lod="0" />
+                <object name="g_lockpick2_lod1"		enabled="true"	lod="1" />
+            </lod_object> 
+        </graphic_group>
+		
+        <graphic_group name="grp_saw" enabled="false" >
+            <lod_object name="lod_saw">
+                <object name="g_saw_lod0"		enabled="true"	max_distance="450"	max_draw_lod="0" />
+                <object name="g_saw_lod1"		enabled="true"	lod="1" />
+            </lod_object> 
+        </graphic_group>
+		
+	</graphics>
+	
+</dynamic_object>

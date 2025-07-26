@@ -1,0 +1,24 @@
+<unit type="infb" slot="1" >
+    <object file="units/pd2_mod_infb/vault_door/vault_door" />
+    <network sync="spawn"/>
+    <dependencies>
+    	<depends_on bnk="soundbanks/regular_sfx" />
+    	<!-- <depends_on effect="effects/payday2/particles/fire/thermite_infinite" /> -->
+    	<!-- <depends_on effect="effects/payday2/particles/fire/thermite_fade" /> -->
+    </dependencies>
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+        <extension class="UnitDamage" name="damage" />
+        <extension name="interaction" class="UseInteractionExt">
+            <var name="drop_in_sync_tweak_data" value="true" />
+            <var name="tweak_data" value="hold_open_vault_2s" />
+            <var name="_interact_object" value="int_locator"/>
+        </extension>
+    </extensions>
+    <sounds>
+    	<default_soundsource source="rp_brb_vault_door_light"/>
+        <soundsource name="snd" source="anim_door_02" />
+    	<soundsource name="snd_01" source="anim_wheel" />
+    </sounds>
+</unit>
+

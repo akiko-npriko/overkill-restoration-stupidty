@@ -1,0 +1,21 @@
+<dynamic_object>
+    <diesel materials="units/payday2/architecture/com_ext_mall_facades/com_ext_facades" orientation_object="rp_com_mall_big_chungus" />
+	
+    <bodies>
+        <body  name="static_body"  template="static" enabled="true">
+			<object name="rp_com_mall_big_chungus" />		
+			<object name="c_plaster" collision_type="convex"/>
+        </body>
+    </bodies>
+
+	<decal_surfaces default_material="plaster">
+		<decal_mesh name="dm_plaster" enabled="true" material="plaster" />
+	</decal_surfaces>
+	
+    <graphics>
+        <object name="g_g"  enabled="true" />
+    </graphics>
+	
+</dynamic_object>
+
+

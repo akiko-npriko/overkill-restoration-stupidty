@@ -1,0 +1,102 @@
+<table>
+	<unit>
+		<sequence editable_state="true" name="'enable_interaction'" triggable="true">
+			<interaction enabled="true"/>
+			<object enabled="true" name="'g_outline_lod_0'"/>
+		</sequence>
+		<sequence editable_state="true" name="'disable_interaction'" triggable="true">
+			<interaction enabled="false"/>
+			<object enabled="false" name="'g_outline_lod_0'"/>
+		</sequence>
+		<sequence editable_state="true" name="'int_seq_startup'" startup="true" triggable="true">
+			<material name="'mat_glow'" time="0"/>
+			<material name="'mat_glow'" state="'pause'"/>
+		</sequence>
+		<sequence editable_state="false" name="'anim_open'" triggable="false">
+			<animation_group enabled="true" from="0/30" name="'open'" to="600/30"/>
+			<sound action="'play'" event="'bank_vault_door_light_open_brb'" source="'snd'"/>
+			<body enabled="false" name="'body_mover_blocker'" start_time="600/30"/>
+		</sequence>
+		<sequence editable_state="false" name="'anim_close'" triggable="false">
+			<animation_group enabled="true" from="600/30" name="'open'" speed="-1" to="0/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'state_thermite_hinge_01'" triggable="true">
+			<effect_spawner enabled="true" name="'effect_hinge_01'"/>
+			<sound action="'play'" event="'thermite_paste_start'" object="'e_effect_hinge_01'"/>
+			<object enabled="true" name="'g_thermite_hinge_01'"/>
+		</sequence>
+		<sequence editable_state="true" name="'state_thermite_hinge_02'" triggable="true">
+			<effect_spawner enabled="true" name="'effect_hinge_02'"/>
+			<sound action="'play'" event="'thermite_paste_start'" object="'e_effect_hinge_02'"/>
+			<object enabled="true" name="'g_thermite_hinge_02'"/>
+		</sequence>
+		<sequence editable_state="true" name="'state_thermite_lock_01'" triggable="true">
+			<effect_spawner enabled="true" name="'effect_lock_01'"/>
+			<sound action="'play'" event="'thermite_paste_start'" object="'e_effect_lock_01'"/>
+			<object enabled="true" name="'g_thermite_lock_01'"/>
+		</sequence>
+		<sequence editable_state="true" name="'state_thermite_lock_02'" triggable="true">
+			<effect_spawner enabled="true" name="'effect_lock_02'"/>
+			<sound action="'play'" event="'thermite_paste_start'" object="'e_effect_lock_02'"/>
+			<object enabled="true" name="'g_thermite_lock_02'"/>
+		</sequence>
+		<sequence editable_state="true" name="'state_hinge_01_destroy'" triggable="true">
+			<material name="'mat_glow'" state="'play -0.08'" time="1"/>
+			<graphic_group name="'grp_hinge_broken_top'" visibility="true"/>
+			<graphic_group name="'grp_hinge_whole_top'" visibility="false"/>
+			<effect_spawner enabled="false" name="'effect_hinge_01'" start_time="2"/>
+			<object enabled="false" name="'g_thermite_hinge_01'" start_time="2"/>
+			<sound action="'play'" event="'thermite_paste_finish'" object="'e_effect_hinge_01'" start_time="2"/>
+			<effect name="'effects/payday2/particles/fire/thermite_fade'" parent="object( 'e_effect_hinge_01' )" position="v()"/>
+		</sequence>
+		<sequence editable_state="true" name="'state_hinge_02_destroy'" triggable="true">
+			<material name="'mat_glow'" state="'play -0.08'" time="1"/>
+			<graphic_group name="'grp_hinge_broken_bottom'" visibility="true"/>
+			<graphic_group name="'grp_hinge_whole_bottom'" visibility="false"/>
+			<effect_spawner enabled="false" name="'effect_hinge_02'" start_time="2"/>
+			<object enabled="false" name="'g_thermite_hinge_02'" start_time="2"/>
+			<sound action="'play'" event="'thermite_paste_finish'" object="'e_effect_hinge_02'" start_time="2"/>
+			<effect name="'effects/payday2/particles/fire/thermite_fade'" parent="object( 'e_effect_hinge_02' )" position="v()"/>
+		</sequence>
+		<sequence editable_state="true" name="'state_lock_01_destroy'" triggable="true">
+			<material name="'mat_glow'" state="'play -0.08'" time="1"/>
+			<graphic_group name="'grp_lock_01_whole'" visibility="false"/>
+			<graphic_group name="'grp_lock_01_broken'" visibility="true"/>
+			<graphic_group name="'grp_lock_box_01'" visibility="false"/>
+			<graphic_group name="'grp_lock_box_broken_01'" visibility="true"/>
+			<effect_spawner enabled="false" name="'effect_lock_01'" start_time="2"/>
+			<object enabled="false" name="'g_thermite_lock_01'" start_time="2"/>
+			<sound action="'play'" event="'thermite_paste_finish'" object="'e_effect_lock_01'" start_time="2"/>
+			<effect name="'effects/payday2/particles/fire/thermite_fade'" parent="object( 'e_effect_lock_01' )" position="v()"/>
+		</sequence>
+		<sequence editable_state="true" name="'state_lock_02_destroy'" triggable="true">
+			<material name="'mat_glow'" state="'play -0.08'" time="1"/>
+			<graphic_group name="'grp_lock_02_whole'" visibility="false"/>
+			<graphic_group name="'grp_lock_02_broken'" visibility="true"/>
+			<graphic_group name="'grp_lock_box_02'" visibility="false"/>
+			<graphic_group name="'grp_lock_box_broken_02'" visibility="true"/>
+			<effect_spawner enabled="false" name="'effect_lock_02'" start_time="2"/>
+			<object enabled="false" name="'g_thermite_lock_02'" start_time="2"/>
+			<sound action="'play'" event="'thermite_paste_finish'" object="'e_effect_lock_02'" start_time="2"/>
+			<effect name="'effects/payday2/particles/fire/thermite_fade'" parent="object( 'e_effect_lock_02' )" position="v()"/>
+		</sequence>
+		<sequence editable_state="true" name="'anim_door_slide_out'" triggable="true">
+			<animation_group enabled="true" from="0/30" name="'slide'" to="265/30"/>
+			<sound action="'play'" event="'brb_winch_animation_pull_02'" source="'snd_01'"/>
+		</sequence>
+		<sequence editable_state="true" name="'state_closed'" triggable="true">
+			<animation_group enabled="true" from="0/30" name="'open'" to="0/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'state_opened'" triggable="true">
+			<animation_group enabled="true" from="600/30" name="'open'" to="600/30"/>
+		</sequence>
+		<sequence editable_state="true" name="'open_door'" triggable="true">
+			<run_sequence name="'anim_open'"/>
+			<body enabled="true" name="'body_mover_blocker'"/>
+		</sequence>
+		<sequence editable_state="false" name="'interact'" triggable="false">
+			<run_sequence name="'anim_open'"/>
+			<run_sequence name="'disable_interaction'"/>
+		</sequence>
+	</unit>
+</table>

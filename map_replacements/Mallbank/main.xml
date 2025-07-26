@@ -1,0 +1,180 @@
+<table name="Mallbank">
+	<instance id="fri_computer_hack">
+		<add file="levels/instances/fri_computer_hack/add.xml"/>
+		<packages>
+			<value_node value="levels/instances/unique/red/red_hacking_quick/world/world"/>
+		</packages>
+		<script_data_mods directory="scriptdata"/>
+	</instance>
+	<instance id="fri_vault">
+		<add file="levels/instances/fri_vault/add.xml"/>
+		<packages>
+			<value_node value="levels/instances/unique/sub_sewer_sidespawn/world/world"/>
+			<value_node value="levels/narratives/e_election_day/stage_3/world"/>
+			<value_node value="levels/instances/unique/red/red_gates/world/world"/>
+			<value_node value="levels/instances/unique/mus_security_barrier/world/world"/>
+			<value_node value="levels/narratives/e_election_day/stage_3/world/world"/>
+		</packages>
+		<script_data_mods directory="scriptdata"/>
+	</instance>
+	<instance id="fri_helicopter">
+		<add directory="assets"/>
+		<packages>
+			<value_node value="levels/instances/unique/sub_sewer_sidespawn/world/world"/>
+			<value_node value="levels/instances/shared/helicopter_secure_escape/world"/>
+			<value_node value="levels/instances/shared/helicopter_secure_escape/world_sounds"/>
+			<value_node value="levels/instances/shared/helicopter_secure_escape/world/world"/>
+		</packages>
+		<script_data_mods directory="scriptdata"/>
+	</instance>
+	<instance id="fri_mac_attack">
+		<packages/>
+	</instance>
+	<Achievements icon="guis/textures/Mallbank" id="Mallbank">
+		<achievement desc_id="Mallbank1_desc" icon="guis/textures/Mallbank1" id="shopper" name_id="Mallbank1" objective_id="Mallbank1_obj" rank="2"/>
+		<achievement desc_id="Mallbank2_desc" icon="guis/textures/Mallbank2" id="speedrunner" name_id="Mallbank2" objective_id="Mallbank2_obj" rank="2"/>
+		<achievement desc_id="capitol_290_desc" icon="guis/textures/Mallbank290" id="capitol_290" name_id="capitol_290" objective_id="capitol_290_obj" rank="3"/>
+		<achievement desc_id="Mallbank_pj_desc" icon="guis/textures/MallbankPJ" id="projob" name_id="Mallbank_pj" objective_id="Mallbank_pj_obj" rank="4"/>
+		<achievement desc_id="Mallbank_sniper_desc" icon="guis/textures/MallbankSniper" id="window" name_id="Mallbank_sniper" objective_id="Mallbank_sniper_obj" rank="3"/>
+	</Achievements>
+	<AddFiles directory="assets">
+		<texture path="guis/textures/friday_loading_new" unload="true"/>
+		<texture load="true" path="guis/textures/narr_friday"/>
+		<texture force="true" path="guis/textures/Mallbank"/>
+		<texture force="true" path="guis/textures/Mallbank1"/>
+		<texture force="true" path="guis/textures/Mallbank2"/>
+		<texture force="true" path="guis/textures/Mallbank290"/>
+		<texture force="true" path="guis/textures/MallbankPJ"/>
+		<texture force="true" path="guis/textures/MallbankSniper"/>
+	</AddFiles>
+	<AssetUpdates id="44630" provider="modworkshop" use_local_dir="true" version="1.0.2.3"/>
+	<HeistMusic directory="assets/sounds/music/friday" id="music_friday" volume="0.6">
+		<event name="setup" source="stealth.ogg" start_source="stealthintro.ogg"/>
+		<event name="anticipation" source="anticiloop.ogg" start_source="anticipation.ogg"/>
+		<event name="assault" source="assault.ogg" start_source="assaultintro.ogg"/>
+		<event name="control" source="control.ogg" start_source="controlintro.ogg"/>
+	</HeistMusic>
+	<Hooks directory="hooks">
+		<hook file="musicmanager.lua" source_file="lib/managers/musicmanager"/>
+		<hook file="contours.lua" source_file="lib/units/enemies/cop/copbase"/>
+		<hook file="animfix.lua" source_file="lib/units/enemies/cop/copbase"/>
+	</Hooks>
+	<Localization default="english.txt" directory="loc">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	<Package file="fridaypackageassets.xml" id="packages/friday" unload_on_restart="true"/>
+	<level ai_group_type="america" briefing_dialog="friday_brief" cube="cube_apply_heist_bank" drop_pickups_to_ground="true" id="lvl_friday" intro_event="friday_intro_a,friday_intro_b,friday_intro_c" load_screen="guis/textures/friday_loading_new" max_bags="25" music="heist" repossess_bags="false">
+		<add file="levels/lvl_friday/add.xml"/>
+		<assets>
+			<asset name="mallcrasher_health"/>
+			<asset name="mallcrasher_ammo"/>
+			<asset name="grenade_crate"/>
+			<asset name="camera_access"/>
+		</assets>
+		<outro_event>
+			<value_node value="friday_escape"/>
+			<value_node value="friday_escape_a"/>
+			<value_node value="friday_escape_b"/>
+		</outro_event>
+		<packages>
+			<value_node value="levels/narratives/vlad/mallcrasher/world_sounds"/>
+			<value_node value="levels/narratives/vlad/mallcrasher/pc_only/pc_only"/>
+			<value_node value="levels/narratives/vlad/mallcrasher/world/world"/>
+			<value_node value="levels/instances/unique/chew/chew_swat_van/world/world"/>
+			<value_node value="levels/instances/unique/dark/equipment_board/world/world"/>
+			<value_node value="levels/narratives/chill/editor_only/editor_only"/>
+			<value_node value="levels/instances/unique/red/red_hacking_quick/world/world"/>
+			<value_node value="levels/narratives/butcher/thebomb/stage_2/occluders/occluders"/>
+			<value_node value="levels/narratives/vlad/ukrainian_job/world_sounds"/>
+			<value_node value="levels/narratives/h_firestarter/stage_3/world_sounds"/>
+			<value_node value="levels/narratives/skm/skm_mallcrasher/world"/>
+			<value_node value="levels/narratives/vlad/mallcrasher/ed3_world/ed3_world"/>
+			<value_node value="levels/narratives/e_election_day/stage_3/new_mall/new_mall"/>
+			<value_node value="levels/narratives/e_election_day/stage_3/world/world"/>
+			<value_node value="levels/narratives/e_election_day/stage_3/world"/>
+			<value_node value="levels/narratives/vlad/mallcrasher/mission_turf_war/mission_turf_war"/>
+			<value_node value="packages/job_branchbank_cash"/>
+			<value_node value="packages/narr_election3"/>
+			<value_node value="packages/friday"/>
+		</packages>
+		<script_data_mods directory="scriptdata">
+			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
+				<options merge_mode="add" mode="add"/>
+			</mod>
+		</script_data_mods>
+		<sounds directory="assets/vo/narrative">
+			<sound id="friday_brief" path="friday.ogg" volume="1"/>
+			<sound id="friday_escape" path="friday_escape.ogg" volume="1"/>
+			<sound id="friday_escape_a" path="friday_escape_a.ogg" volume="1"/>
+			<sound id="friday_escape_b" path="friday_escape_b.ogg" volume="1"/>
+			<sound id="friday_intro_a" path="jkl_heist_intro_1.ogg" volume="1"/>
+			<sound id="friday_intro_b" path="jkl_heist_intro_2.ogg" volume="1"/>
+			<sound id="friday_intro_c" path="jkl_heist_intro_3.ogg" volume="1"/>
+		</sounds>
+	</level>
+	<narrative briefing_event="friday_brief" contact="custom" hide_from_crimenet="false" id="narr_friday" jc="40" icon="guis/textures/narr_friday" region="street">
+		<chain>
+			<table level_id="lvl_friday" type="d" type_id="heist_type_assault">
+				<mission_filter>
+					<value_node value="1"/>
+				</mission_filter>
+			</table>
+		</chain>
+		<contract_cost>
+			<value_node value="60000"/>
+			<value_node value="80000"/>
+			<value_node value="100000"/>
+			<value_node value="150000"/>
+			<value_node value="300000"/>
+			<value_node value="300000"/>
+			<value_node value="300000"/>
+		</contract_cost>
+		<crimenet_callouts>
+			<value_node value="friday_brief"/>
+		</crimenet_callouts>
+		<crimenet_videos>
+			<value_node value="cn_branchbank1"/>
+			<value_node value="cn_branchbank2"/>
+			<value_node value="cn_branchbank3"/>
+		</crimenet_videos>
+		<debrief_event>
+			<value_node value="friday_brief"/>
+		</debrief_event>
+		<experience_mul>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+		</experience_mul>
+		<max_mission_xp>
+			<value_node value="40000"/>
+			<value_node value="40000"/>
+			<value_node value="40000"/>
+			<value_node value="40000"/>
+			<value_node value="40000"/>
+			<value_node value="40000"/>
+			<value_node value="40000"/>
+		</max_mission_xp>
+		<min_mission_xp>
+			<value_node value="15000"/>
+			<value_node value="15000"/>
+			<value_node value="15000"/>
+			<value_node value="15000"/>
+			<value_node value="15000"/>
+			<value_node value="15000"/>
+			<value_node value="15000"/>
+		</min_mission_xp>
+		<payout>
+			<value_node value="100000"/>
+			<value_node value="175000"/>
+			<value_node value="500000"/>
+			<value_node value="900000"/>
+			<value_node value="1e+006"/>
+			<value_node value="1e+006"/>
+			<value_node value="1e+006"/>
+		</payout>
+	</narrative>
+</table>

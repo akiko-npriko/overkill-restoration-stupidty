@@ -1,0 +1,19 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_dah/vehicles/dah_turret_ceiling/dah_turret_ceiling" orientation_object="rp_spawn_turret_debris" />
+	<bodies>
+		<body name="body_debris" enabled="true" template="dynamic" collides_with_mover="false">
+			<object name="c_convex" collision_type="convex" mass="250"/>
+		</body>
+		<body name="base_left_debris" enabled="true" template="dynamic" collides_with_mover="false">
+			<object name="c_convex_l" collision_type="convex" mass="250"/>
+		</body>
+		<body name="base_right_debris" enabled="true" template="dynamic" collides_with_mover="false">
+			<object name="c_convex_r" collision_type="convex" mass="250"/>
+		</body>
+	</bodies>
+	<graphics>
+		<object name="g_g" enabled="true" />
+		<object name="g_l" enabled="true" />
+		<object name="g_r" enabled="true" />
+	</graphics>
+</dynamic_object>
