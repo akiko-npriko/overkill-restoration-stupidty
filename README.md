@@ -378,6 +378,10 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/42921
  - California Heat (+Almir's Games)
 	- https://modworkshop.net/mod/35162
+ - First World Tower Heist
+	- https://modworkshop.net/mod/27040
+ - Cargoship Raid
+	- https://modworkshop.net/mod/25979
  - All Custom Heists In The Custom Heists Tab
 	- https://modworkshop.net/mod/30027
 	 

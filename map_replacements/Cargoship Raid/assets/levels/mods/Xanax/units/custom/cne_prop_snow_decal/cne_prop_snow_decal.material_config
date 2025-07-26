@@ -1,0 +1,12 @@
+<materials version="3">
+    <material name="mat_snow_decal" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:OPACITY_TEXTURE" version="2">
+        <diffuse_texture file="levels/mods/Xanax/units/custom/cne_prop_snow_decal/cne_prop_snow_decal_df"/>
+        <variable value="0.36400002241135" type="scalar" name="alpha_ref"/>
+        <opacity_texture file="levels/mods/Xanax/units/custom/cne_prop_snow_decal/cne_prop_snow_decal_df"/>
+    </material>
+    <material name="mat_snow_decal_lod" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:OPACITY_TEXTURE" version="2">
+        <diffuse_texture mip="4" file="levels/mods/Xanax/units/custom/cne_prop_snow_decal/cne_prop_snow_decal_df"/>
+        <variable value="0.36399999260902" type="scalar" name="alpha_ref"/>
+        <opacity_texture mip="4" file="levels/mods/Xanax/units/custom/cne_prop_snow_decal/cne_prop_snow_decal_df"/>
+    </material>
+</materials>

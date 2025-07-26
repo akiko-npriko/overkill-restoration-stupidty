@@ -1,0 +1,14 @@
+<dynamic_object>
+	<diesel materials="levels/mods/Xanax/units/custom/cne_prop_snow_decal/cne_prop_snow_decal" orientation_object="rp_cne_prop_snow_decal" />
+		<bodies>
+<body name="body static" enabled="true" template="static">
+	<object name="rp_cne_prop_snow_decal" />
+</body>
+</bodies>
+	<graphics>
+		<lod_object name="lod_g_g">
+			<object name="g_g_lod0" enabled="true" max_distance="1500" />
+			<object name="g_g_lod1" enabled="true" />
+		</lod_object>
+	</graphics>
+</dynamic_object>

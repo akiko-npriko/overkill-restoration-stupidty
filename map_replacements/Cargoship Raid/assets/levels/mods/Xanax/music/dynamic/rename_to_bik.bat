@@ -1,0 +1,1 @@
+forfiles /S /M *.movie /C "cmd /c rename @file @fname.bik
