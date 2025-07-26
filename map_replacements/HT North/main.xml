@@ -1,0 +1,135 @@
+<table name="Harvest and Trustee - Northern Branch">
+	<AddFiles directory="assets">
+		<png force="true" path="guis/achiev/htnb_diff_0"/>
+		<png force="true" path="guis/achiev/htnb_diff_1"/>
+		<png force="true" path="guis/achiev/htnb_diff_2"/>
+		<png force="true" path="guis/achiev/htnb_diff_3"/>
+		<png force="true" path="guis/achiev/htnb_diff_4"/>
+		<png force="true" path="guis/achiev/htnb_diff_5"/>
+		<png force="true" path="guis/achiev/htnb_diff_6"/>
+		<png force="true" path="guis/achiev/htnb_allatm"/>
+		<png force="true" path="guis/achiev/htnb_ds8min"/>
+		<png force="true" path="guis/achiev/htnb_dsvault"/>
+		<png force="true" path="guis/achiev/htnb_greed"/>
+		<png force="true" path="guis/achiev/htnb_nocivstealth"/>
+		<png force="true" path="guis/achiev/htnb_ovklallgold"/>
+		<png force="true" path="guis/achiev/htnb_secretbag"/>
+		<png force="true" path="guis/achiev/htnb_pack"/>
+		<png force="true" path="guis/achiev/htnb_stealthnodrill"/>
+		<png force="true" path="guis/achiev/htnb_stealthnoshutter"/>
+	</AddFiles>
+	<AddFiles directory="assets">
+		<texture force="true" path="icons/htnb_icon"/>
+		<texture force="true" path="guis/htnb_loadingScreen"/>
+	</AddFiles>
+	<Achievements icon="guis/achiev/htnb_pack" id="htnb_pack">
+		<achievement desc_id="htnb_achiev_desc_normal" icon="guis/achiev/htnb_diff_0" id="htnb_achiev_normal" name_id="htnb_achiev_normal" rank="1"/>
+		<achievement desc_id="htnb_achiev_desc_hard" icon="guis/achiev/htnb_diff_1" id="htnb_achiev_hard" name_id="htnb_achiev_hard" rank="1"/>
+		<achievement desc_id="htnb_achiev_desc_veryhard" icon="guis/achiev/htnb_diff_2" id="htnb_achiev_veryhard" name_id="htnb_achiev_veryhard" rank="1"/>
+		<achievement desc_id="htnb_achiev_desc_overkill" icon="guis/achiev/htnb_diff_3" id="htnb_achiev_overkill" name_id="htnb_achiev_overkill" rank="2" reward_amount="2" reward_type="cc"/>
+		<achievement desc_id="htnb_achiev_desc_mayhem" icon="guis/achiev/htnb_diff_4" id="htnb_achiev_mayhem" name_id="htnb_achiev_mayhem" rank="2" reward_amount="4" reward_type="cc"/>
+		<achievement desc_id="htnb_achiev_desc_deathwish" icon="guis/achiev/htnb_diff_5" id="htnb_achiev_deathwish" name_id="htnb_achiev_deathwish" rank="3" reward_amount="6" reward_type="cc"/>
+		<achievement desc_id="htnb_achiev_desc_onedown" icon="guis/achiev/htnb_diff_6" id="htnb_achiev_onedown" name_id="htnb_achiev_onedown" rank="4" reward_amount="8" reward_type="cc"/>
+		<achievement desc_id="htnb_achiev_desc_allatm" icon="guis/achiev/htnb_allatm" id="htnb_achiev_allatm" name_id="htnb_achiev_allatm" rank="2" reward_amount="5" reward_type="cc"/>
+		<achievement desc_id="htnb_achiev_desc_ds8min" icon="guis/achiev/htnb_ds8min" id="htnb_achiev_ds8min" name_id="htnb_achiev_ds8min" rank="3" reward_amount="5" reward_type="cc"/>
+		<achievement desc_id="htnb_achiev_desc_dsvault" icon="guis/achiev/htnb_dsvault" id="htnb_achiev_dsvault" name_id="htnb_achiev_dsvault" rank="4" reward_amount="20" reward_type="cc"/>
+		<achievement desc_id="htnb_achiev_desc_greed" icon="guis/achiev/htnb_greed" id="htnb_achiev_greed" name_id="htnb_achiev_greed" rank="1"/>
+		<achievement desc_id="htnb_achiev_desc_nocivstealth" icon="guis/achiev/htnb_nocivstealth" id="htnb_achiev_nocivstealth" name_id="htnb_achiev_nocivstealth" rank="3"/>
+		<achievement desc_id="htnb_achiev_desc_ovklallgold" icon="guis/achiev/htnb_ovklallgold" id="htnb_achiev_ovklallgold" name_id="htnb_achiev_ovklallgold" rank="2"/>
+		<achievement desc_id="htnb_achiev_desc_secretbag" icon="guis/achiev/htnb_secretbag" id="htnb_achiev_secretbag" name_id="htnb_achiev_secretbag" rank="2" reward_amount="4" reward_type="cc"/>
+		<achievement desc_id="htnb_achiev_desc_stealthnodrill" icon="guis/achiev/htnb_stealthnodrill" id="htnb_achiev_stealthnodrill" name_id="htnb_achiev_stealthnodrill" rank="2" reward_amount="4" reward_type="cc"/>
+		<achievement desc_id="htnb_achiev_desc_stealthnoshutter" icon="guis/achiev/htnb_stealthnoshutter" id="htnb_achiev_stealthnoshutter" name_id="htnb_achiev_stealthnoshutter" rank="3" reward_amount="10" reward_type="cc"/>
+	</Achievements>
+	<AssetUpdates id="q009htnb" provider="payday2concepts" use_local_dir="true" version="13"/>
+	<Dependencies>
+		<Dependency id="pd2mcore" min_ver="0.8" name="PD2MapsCore" provider="payday2concepts" type="mod_overrides"/>
+	</Dependencies>
+	<Hooks directory="hooks"/>
+	<Localization default="english.txt" directory="loc"/>
+	<level ai_group_type="America" briefing_dialog="Play_pln_branchbank_random_stage1_brief" ghost_bonus="0.1" id="hntn" load_screen="guis/htnb_loadingScreen" max_bags="54">
+		<add file="levels/hntn/add.xml"/>
+		<assets>
+			<asset name="ammo_bag"/>
+			<asset name="health_bag"/>
+			<asset name="grenade_crate"/>
+			<asset name="bodybags_bag"/>
+			<asset name="camera_access"/>
+		</assets>
+		<intro_event>
+			<value_node value="Play_pln_branchbank_cash_stage1_intro_a"/>
+		</intro_event>
+		<outro_event>
+			<value_node value="Play_pln_branchbank_stage1_end"/>
+		</outro_event>
+		<packages>
+			<value_node value="levels/narratives/h_firestarter/stage_3/world"/>
+			<value_node value="levels/narratives/h_firestarter/stage_3/world_sounds"/>
+			<value_node value="levels/narratives/bain/roberts/world_sounds"/>
+			<value_node value="levels/narratives/elephant/dark/world_sounds"/>
+		</packages>
+		<script_data_mods directory="scriptdata">
+			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
+				<options merge_mode="add" mode="add"/>
+			</mod>
+		</script_data_mods>
+	</level>
+	<narrative briefing_event="pln_branchbank_cash_brf_speak" contact="pd2maps" icon="icons/htnb_icon" id="Harvest and Trustee North" jc="30">
+		<chain>
+			<table level_id="hntn" type="d" type_id="heist_type_assault"/>
+		</chain>
+		<contract_cost>
+			<value_node value="16000"/>
+			<value_node value="32000"/>
+			<value_node value="80000"/>
+			<value_node value="160000"/>
+			<value_node value="200000"/>
+			<value_node value="200000"/>
+			<value_node value="200000"/>
+		</contract_cost>
+		<crimenet_callouts>
+			<value_node value="pln_branchbank_cash_cnc_01"/>
+		</crimenet_callouts>
+		<crimenet_videos>
+			<value_node value="cn_branchbank2"/>
+		</crimenet_videos>
+		<debrief_event>
+			<value_node value=""/>
+		</debrief_event>
+		<experience_mul>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+		</experience_mul>
+		<max_mission_xp>
+			<value_node value="12000"/>
+			<value_node value="12000"/>
+			<value_node value="12000"/>
+			<value_node value="12000"/>
+			<value_node value="12000"/>
+			<value_node value="12000"/>
+			<value_node value="12000"/>
+		</max_mission_xp>
+		<min_mission_xp>
+			<value_node value="12000"/>
+			<value_node value="12000"/>
+			<value_node value="12000"/>
+			<value_node value="12000"/>
+			<value_node value="12000"/>
+			<value_node value="12000"/>
+			<value_node value="12000"/>
+		</min_mission_xp>
+		<payout>
+			<value_node value="10000"/>
+			<value_node value="15000"/>
+			<value_node value="40000"/>
+			<value_node value="60000"/>
+			<value_node value="75000"/>
+			<value_node value="75000"/>
+			<value_node value="75000"/>
+		</payout>
+	</narrative>
+</table>

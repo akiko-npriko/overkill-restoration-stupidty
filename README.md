@@ -422,6 +422,8 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/43544
  - Office Strike
 	- https://modworkshop.net/mod/21032
+ - Harvest & Trustee Northern Branch - PD2M
+	- https://modworkshop.net/mod/20872
  - Harvest & Trustee: Southern Branch
 	- https://modworkshop.net/mod/29669
  - Restoration Mod - custom heists compatibility patches
