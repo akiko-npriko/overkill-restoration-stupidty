@@ -1,0 +1,14 @@
+<dynamic_object>
+    <diesel orientation_object="rp_hcm_d_ext_stairs_100x200x125_a" materials="units/payday2/architecture/hcm_d/hcm_d_ext_stairs" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body" >
+			<object name="c_convex_01" collision_type="convex" padding="-2.5"/>
+        </body>
+    </bodies>
+	<decal_surfaces default_material="marble" static="true">
+		<decal_mesh name="dm_marble" enabled="true" material="marble"/>
+	</decal_surfaces> 
+    <graphics>
+        <object enabled="true" name="g_g" />
+    </graphics>
+</dynamic_object>

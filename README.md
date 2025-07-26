@@ -426,6 +426,8 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/20872
  - Harvest & Trustee: Southern Branch
 	- https://modworkshop.net/mod/29669
+ - Armored Transport: Atrium Redux
+	- https://modworkshop.net/mod/31370
  - Restoration Mod - custom heists compatibility patches
 	- https://modworkshop.net/mod/38252
  - Scrollable Contract Brokers
