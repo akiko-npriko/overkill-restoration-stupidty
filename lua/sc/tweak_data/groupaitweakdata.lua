@@ -15352,7 +15352,6 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	}
 	
 	--Snipers up my ass
-	--Normal and Hard
 	if difficulty_index <= 3 then
 		self.unit_categories.FBI_groundsniper = {
 			special_type = "sniper",
@@ -15371,13 +15370,20 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 				},
 				federales = {
 					Idstring("units/pd2_dlc_bex/characters/ene_swat_policia_sniper/ene_swat_policia_sniper")
+				},
+				nypd = {
+					Idstring("units/payday2/characters/ene_sniper_1/ene_sniper_1")
+				},
+				lapd = {
+					Idstring("units/payday2/characters/ene_sniper_1/ene_sniper_1")
+				},
+				fbi = {
+					Idstring("units/payday2/characters/ene_sniper_1/ene_sniper_1")
 				}
 			},
 			access = access_type_all
 		}
-	end
-	--Very Hard and Overkill
-	if difficulty_index > 3 and difficulty_index < 6 then
+	elseif difficulty_index > 3 and difficulty_index < 6 then
 		self.unit_categories.FBI_groundsniper = {
 			special_type = "sniper",
 			unit_types = {
@@ -15395,30 +15401,15 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 				},
 				federales = {
 					Idstring("units/pd2_dlc_bex/characters/ene_swat_policia_sniper/ene_swat_policia_sniper")
-				}
-			},
-			access = access_type_all
-		}
-	end
-	--Mayhem and Deathwish
-	if StreamHeist and difficulty_index > 5 and difficulty_index < 8 then
-		self.unit_categories.FBI_groundsniper = {
-			special_type = "sniper",
-			unit_types = {
-				america = {
-					Idstring("units/payday2/characters/ene_sniper_3/ene_sniper_3")
 				},
-				russia = {
-					Idstring("units/pd2_dlc_mad/characters/ene_akan_cs_swat_sniper_svd_snp/ene_akan_cs_swat_sniper_svd_snp")
+				nypd = {
+					Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2")
 				},
-				zombie = {
-					Idstring("units/payday2/characters/ene_sniper_3/ene_sniper_3")
+				lapd = {
+					Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2")
 				},
-				murkywater = {
-					Idstring("units/pd2_dlc_bph/characters/ene_murkywater_sniper/ene_murkywater_sniper")
-				},
-				federales = {
-					Idstring("units/pd2_dlc_bex/characters/ene_swat_policia_sniper/ene_swat_policia_sniper")
+				fbi = {
+					Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2")
 				}
 			},
 			access = access_type_all
@@ -15441,35 +15432,20 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 				},
 				federales = {
 					Idstring("units/pd2_dlc_bex/characters/ene_swat_policia_sniper/ene_swat_policia_sniper")
+				},
+				nypd = {
+					Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2")
+				},
+				lapd = {
+					Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2")
+				},
+				fbi = {
+					Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2")
 				}
 			},
 			access = access_type_all
 		}
-	end
-	--Death Sentence
-	if StreamHeist and difficulty_index == 8 then
-		self.unit_categories.FBI_groundsniper = {
-			special_type = "sniper",
-			unit_types = {
-				america = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_sniper/ene_zeal_sniper")
-				},
-				russia = {
-					Idstring("units/pd2_dlc_mad/characters/ene_akan_cs_swat_sniper_svd_snp/ene_akan_cs_swat_sniper_svd_snp")
-				},
-				zombie = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_sniper/ene_zeal_sniper")
-				},
-				murkywater = {
-					Idstring("units/pd2_dlc_bph/characters/ene_murkywater_sniper/ene_murkywater_sniper")
-				},
-				federales = {
-					Idstring("units/pd2_dlc_bex/characters/ene_swat_policia_sniper/ene_swat_policia_sniper")
-				}
-			},
-			access = access_type_all
-		}
-	elseif difficulty_index == 8 then
+	else
 		self.unit_categories.FBI_groundsniper = {
 			special_type = "sniper",
 			unit_types = {
@@ -15487,6 +15463,15 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 				},
 				federales = {
 					Idstring("units/pd2_dlc_bex/characters/ene_swat_policia_sniper/ene_swat_policia_sniper")
+				},
+				nypd = {
+					Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2")
+				},
+				lapd = {
+					Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2")
+				},
+				fbi = {
+					Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2")
 				}
 			},
 			access = access_type_all
