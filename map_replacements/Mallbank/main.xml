@@ -111,7 +111,7 @@
 			<sound id="friday_intro_c" path="jkl_heist_intro_3.ogg" volume="1"/>
 		</sounds>
 	</level>
-	<narrative briefing_event="friday_brief" contact="cartel" hide_from_crimenet="false" id="narr_friday" jc="40" icon="guis/textures/narr_friday" region="street">
+	<narrative briefing_event="friday_brief" contact="shatter" hide_from_crimenet="false" id="narr_friday" jc="40" icon="guis/textures/narr_friday" region="street">
 		<chain>
 			<table level_id="lvl_friday" type="d" type_id="heist_type_assault">
 				<mission_filter>
@@ -132,9 +132,7 @@
 			<value_node value="friday_brief"/>
 		</crimenet_callouts>
 		<crimenet_videos>
-			<value_node value="cn_branchbank1"/>
-			<value_node value="cn_branchbank2"/>
-			<value_node value="cn_branchbank3"/>
+			<value_node value="cn_veritasgroup1"/>
 		</crimenet_videos>
 		<debrief_event>
 			<value_node value="friday_brief"/>
