@@ -1,0 +1,178 @@
+<table directory="assets">
+	<add unload_on_restart="true">
+		<texture path="textures/FirstFloor" unload="true"/>
+		<texture path="textures/SecondFloor" unload="true"/>
+		<texture path="textures/Outside" unload="true"/>
+		<texture path="textures/Empty" unload="true"/>
+	</add>
+	<add>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_friendly_backup_1/ene_friendly_backup_1" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_friendly_backup_1/ene_friendly_backup_1_husk" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_friendly_backup_1/ene_friendly_backup_1" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_friendly_backup_1/ene_friendly_backup_1_contour" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/ene_friendly_backup_1/ene_friendly_backup_1_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/ene_friendly_backup_1/ene_friendly_backup_1_head_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/ene_friendly_backup_1/ene_friendly_backup_1_head_nm" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_friendly_backup_2/ene_friendly_backup_2" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_friendly_backup_2/ene_friendly_backup_2_husk" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/ene_friendly_backup_1/ene_friendly_backup_1" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/ene_friendly_backup_1/ene_friendly_backup_1" unload="true"/>
+	</add>
+	<add unload_on_restart="true">
+		<material_config path="units/pd2_dlc_ahop/architecture/ahop/ahop_prop/ahop_shelf_single" unload="true"/>
+		<model path="units/pd2_dlc_ahop/architecture/ahop/ahop_prop/ahop_shelf_single" unload="true"/>
+		<object path="units/pd2_dlc_ahop/architecture/ahop/ahop_prop/ahop_shelf_single" unload="true"/>
+		<unit load="true" path="units/pd2_dlc_ahop/architecture/ahop/ahop_prop/ahop_shelf_single" unload="true"/>
+	</add>
+	<add>
+		<unit force="true" load="true" path="units/pd2_mod_ttr/characters/ene_secret_service_fex/ene_secret_service_fex"/>
+		<unit force="true" load="true" path="units/pd2_mod_ttr/characters/ene_secret_service_fex/ene_secret_service_fex_husk"/>
+		<object path="units/pd2_mod_ttr/characters/ene_secret_service_fex/ene_secret_service_fex"/>
+		<model path="units/pd2_mod_ttr/characters/ene_secret_service_fex/ene_secret_service_fex"/>
+		<cooked_physics path="units/pd2_mod_ttr/characters/ene_secret_service_fex/ene_secret_service_fex"/>
+		<unit force="true" load="true" path="units/pd2_mod_ttr/characters/ene_mex_guard_vip/ene_mex_guard_vip"/>
+		<unit force="true" load="true" path="units/pd2_mod_ttr/characters/ene_mex_guard_vip/ene_mex_guard_vip_husk"/>
+		<object path="units/pd2_mod_ttr/characters/ene_mex_guard_vip/ene_mex_guard_vip"/>
+		<model path="units/pd2_mod_ttr/characters/ene_mex_guard_vip/ene_mex_guard_vip"/>
+		<cooked_physics path="units/pd2_mod_ttr/characters/ene_mex_guard_vip/ene_mex_guard_vip"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_mex_guard_vip/ene_mex_guard_vip"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_mex_guard_vip/ene_mex_guard_vip_contour"/>
+		<unit force="true" load="true" path="units/pd2_mod_ttr/characters/ene_secret_service_fex_2/ene_secret_service_fex_2"/>
+		<unit force="true" load="true" path="units/pd2_mod_ttr/characters/ene_secret_service_fex_2/ene_secret_service_fex_2_husk"/>
+		<object path="units/pd2_mod_ttr/characters/ene_secret_service_fex_2/ene_secret_service_fex_2"/>
+		<model path="units/pd2_mod_ttr/characters/ene_secret_service_fex_2/ene_secret_service_fex_2"/>
+		<cooked_physics path="units/pd2_mod_ttr/characters/ene_secret_service_fex_2/ene_secret_service_fex_2"/>
+		<texture path="units/pd2_mod_ttr/characters/ene_secret_service_fex/ene_secret_service_fex_df"/>
+		<texture path="units/pd2_mod_ttr/characters/ene_secret_service_fex/ene_secret_service_fex_nm"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_secret_service_fex/ene_secret_service_fex"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_secret_service_fex/ene_secret_service_fex_contour"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_secret_service_fex_2/ene_secret_service_fex_2"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_secret_service_fex_2/ene_secret_service_fex_2_contour"/>
+		<unit force="true" load="true" path="units/pd2_mod_ttr/characters/ene_mex_boss/ene_mex_boss"/>
+		<unit force="true" load="true" path="units/pd2_mod_ttr/characters/ene_mex_boss/ene_mex_boss_husk"/>
+		<object path="units/pd2_mod_ttr/characters/ene_mex_boss/ene_mex_boss"/>
+		<model path="units/pd2_mod_ttr/characters/ene_mex_boss/ene_mex_boss"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_mex_boss/ene_mex_boss"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_mex_boss/ene_mex_boss_contour"/>
+		<unit force="true" load="true" path="units/pd2_mod_ttr/characters/ene_secret_service_fex_3/ene_secret_service_fex_3"/>
+		<unit force="true" load="true" path="units/pd2_mod_ttr/characters/ene_secret_service_fex_3/ene_secret_service_fex_3_husk"/>
+		<object path="units/pd2_mod_ttr/characters/ene_secret_service_fex_3/ene_secret_service_fex_3"/>
+		<model path="units/pd2_mod_ttr/characters/ene_secret_service_fex_3/ene_secret_service_fex_3"/>
+		<cooked_physics path="units/pd2_mod_ttr/characters/ene_secret_service_fex_3/ene_secret_service_fex_3"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_secret_service_fex_3/ene_secret_service_fex_3"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_secret_service_fex_3/ene_secret_service_fex_3_contour"/>
+	</add>
+	<add>
+		<cooked_physics path="units/world/props/melee_box_large/melee_box_large" unload="true"/>
+		<material_config path="units/world/props/melee_box_large/melee_box_large" unload="true"/>
+		<model path="units/world/props/melee_box_large/melee_box_large" unload="true"/>
+		<object path="units/world/props/melee_box_large/melee_box_large" unload="true"/>
+		<sequence_manager path="units/world/props/melee_box_large/melee_box_large" unload="true"/>
+		<unit path="units/world/props/melee_box_large/melee_box_large" unload="true"/>
+	</add>
+	<add>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_4/civ_female_bikini_mexican_4" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_4/civ_female_bikini_mexican_4_husk" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_4/civ_female_bikini_mexican_4" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_4/civ_female_bikini_mexican_4_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_4/civ_female_bikini_mexican_4" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_4/civ_female_bikini_mexican_4" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_4/civ_female_bikini_mexican_4_df" unload="true"/>
+	</add>
+	<add>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_mexican_wife/civ_female_mexican_wife" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_mexican_wife/civ_female_mexican_wife_husk" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_mexican_wife/civ_female_mexican_wife" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_mexican_wife/civ_female_mexican_wife_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_female_mexican_wife/civ_female_mexican_wife" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_female_mexican_wife/civ_female_mexican_wife" unload="true"/>
+	</add>
+	<add>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_1/civ_male_mex_bathrobe_1" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_1/civ_male_mex_bathrobe_1_husk" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_1/civ_male_mex_bathrobe_1" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_1/civ_male_mex_bathrobe_1_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_1/civ_male_mex_bathrobe_1" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_1/civ_male_mex_bathrobe_1" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_2/civ_male_mex_bathrobe_2" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_2/civ_male_mex_bathrobe_2_husk" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_2/civ_male_mex_bathrobe_2" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_2/civ_male_mex_bathrobe_2_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_2/civ_male_mex_bathrobe_2" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_2/civ_male_mex_bathrobe_2" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_2/civ_male_mex_bathrobe_2_head_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/shared_textures/civ_male_bathhouse_1/civ_male_bathhouse_body_1_df" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_3/civ_male_mex_bathrobe_3" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_3/civ_male_mex_bathrobe_3_husk" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_3/civ_male_mex_bathrobe_3" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_3/civ_male_mex_bathrobe_3_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_3/civ_male_mex_bathrobe_3" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_3/civ_male_mex_bathrobe_3" unload="true"/>
+	</add>
+	<add>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_bikini_african_1/civ_female_bikini_african_1" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_bikini_african_1/civ_female_bikini_african_1_husk" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_african_1/civ_female_bikini_african_1_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_african_1/civ_female_bikini_african_1_head_1_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_african_1/civ_female_bikini_african_1_head_1_nm" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_bikini_african_1/civ_female_bikini_african_1" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_bikini_african_1/civ_female_bikini_african_1_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_female_bikini_african_1/civ_female_bikini_african_1" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_female_bikini_african_1/civ_female_bikini_african_1" unload="true"/>
+	</add>
+	<add>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_1/civ_female_bikini_mexican_1" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_1/civ_female_bikini_mexican_1_husk" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_1/civ_female_bikini_mexican_1_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_1/civ_female_bikini_mexican_1_head_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_1/civ_female_bikini_mexican_1_head_nm" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_1/civ_female_bikini_mexican_1" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_1/civ_female_bikini_mexican_1_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_1/civ_female_bikini_mexican_1" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_1/civ_female_bikini_mexican_1" unload="true"/>
+	</add>
+	<add>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_5/civ_female_bikini_mexican_5" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_5/civ_female_bikini_mexican_5_husk" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_5/civ_female_bikini_mexican_5_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_5/civ_female_bikini_mexican_5_head_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_5/civ_female_bikini_mexican_5_head_nm" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_5/civ_female_bikini_mexican_5" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_5/civ_female_bikini_mexican_5_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_5/civ_female_bikini_mexican_5" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_5/civ_female_bikini_mexican_5" unload="true"/>
+	</add>
+	<add>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_3/civ_female_bikini_mexican_3" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_3/civ_female_bikini_mexican_3_husk" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_3/civ_female_bikini_mexican_3_df" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_3/civ_female_bikini_mexican_3" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_3/civ_female_bikini_mexican_3_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_3/civ_female_bikini_mexican_3" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_3/civ_female_bikini_mexican_3" unload="true"/>
+	</add>	
+	<add>
+		<texture path="units/pd2_mod_ttr/characters/shared_textures/asian/ntr_hair_black_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/shared_textures/asian/ntr_hair_gray_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/shared_textures/triad_vip_arms_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/shared_textures/asian/ntr_generic_hair_op" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/shared_textures/asian/ntr_generic_hair_2_op" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/shared_textures/bikini_nm" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/shared_textures/triad_enforcer_body_df" unload="true"/>
+	</add>
+	<add unload_on_restart="true">
+		<model path="units/pd2_cus_era/nature/terrain/era_terrain_custom_turfwar/era_terrain_custom_turfwar" unload="true"/>
+		<object path="units/pd2_cus_era/nature/terrain/era_terrain_custom_turfwar/era_terrain_custom_turfwar" unload="true"/>
+		<unit load="true" path="units/pd2_cus_era/nature/terrain/era_terrain_custom_turfwar/era_terrain_custom_turfwar" unload="true"/>
+		<model path="units/pd2_cus_era/nature/terrain/era_terrain_custom_turfwar/era_terrain_custom_turfwar_01" unload="true"/>
+		<object path="units/pd2_cus_era/nature/terrain/era_terrain_custom_turfwar/era_terrain_custom_turfwar_01" unload="true"/>
+		<unit load="true" path="units/pd2_cus_era/nature/terrain/era_terrain_custom_turfwar/era_terrain_custom_turfwar_01" unload="true"/>
+		<model path="units/pd2_cus_era/nature/terrain/era_terrain_custom_turfwar/era_terrain_custom_turfwar_02" unload="true"/>
+		<object path="units/pd2_cus_era/nature/terrain/era_terrain_custom_turfwar/era_terrain_custom_turfwar_02" unload="true"/>
+		<unit load="true" path="units/pd2_cus_era/nature/terrain/era_terrain_custom_turfwar/era_terrain_custom_turfwar_02" unload="true"/>
+		<model path="units/pd2_cus_era/nature/terrain/era_terrain_custom_turfwar/era_terrain_custom_turfwar_03" unload="true"/>
+		<object path="units/pd2_cus_era/nature/terrain/era_terrain_custom_turfwar/era_terrain_custom_turfwar_03" unload="true"/>
+		<unit load="true" path="units/pd2_cus_era/nature/terrain/era_terrain_custom_turfwar/era_terrain_custom_turfwar_03" unload="true"/>
+		<material_config path="units/pd2_cus_era/nature/terrain/era_terrain_custom_turfwar/era_terrain_custom_turfwar" unload="true"/>
+	</add>
+</table>

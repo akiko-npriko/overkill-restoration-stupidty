@@ -1,0 +1,11 @@
+<materials version="3">
+	<material name="mat_industrial_b" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_holly/river/architecture/lxa_backdrop/lxa_bdrop_mid_industrial_b_df" />
+		<bump_normal_texture file="units/pd2_dlc_holly/river/architecture/lxa_backdrop/lxa_bdrop_mid_industrial_b_nm" />
+	</material>
+	<material name="mat_unique" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_holly/river/architecture/lxa_backdrop/lxa_bdrop_mid_unique_df" />
+		<bump_normal_texture file="units/pd2_dlc_holly/river/architecture/lxa_backdrop/lxa_bdrop_mid_unique_nm" />
+	</material>
+	<material name="shadow_caster" render_template="shadow_caster_only" version="2" />
+</materials>

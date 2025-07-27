@@ -1,0 +1,7 @@
+<materials version="3">
+    <material render_template="generic:CONTOUR:DIFFUSE_TEXTURE" unique="true" name="mtr_deleted_unit" version="2">
+        <variable value="1" type="scalar" name="contour_opacity"/>
+        <diffuse_texture file="units/dev_tools/deleted_unit/deleted_unit_df"/>
+        <variable value="1 0 1" type="vector3" name="contour_color"/>
+    </material>
+</materials>

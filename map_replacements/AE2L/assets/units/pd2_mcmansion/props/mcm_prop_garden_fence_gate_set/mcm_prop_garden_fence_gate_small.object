@@ -1,0 +1,47 @@
+<dynamic_object>
+	<diesel materials="units/pd2_mcmansion/props/mcm_prop_garden_fence_gate_set/mcm_prop_garden_fence_gate_set" orientation_object="rp_mcm_prop_garden_fence_gate_small" />
+	<sequence_manager file="units/pd2_mcmansion/props/mcm_prop_garden_fence_gate_set/mcm_prop_garden_fence_gate_small" />
+	<animations>
+		<animation_group name="anim_grp_gate" enabled="false">
+			<object name="anim_gate" />
+			<object name="anim_bolt" />
+		</animation_group>
+	</animations>
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_mcm_prop_garden_fence_gate_small" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_anim_gate" enabled="true" template="animated">
+			<object name="anim_gate" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="metal">
+		<decal_mesh name="dm_metal" enabled="true" material="metal" />
+		<decal_mesh name="dm_metal_02" enabled="true" material="metal" />
+		<decal_mesh name="dm_wood_01" enabled="true" material="wood" />
+		<decal_mesh name="dm_wood_02" enabled="true" material="wood" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_bolt" enabled="true" />
+		<object name="g_bolt1" enabled="true" />
+		<object name="g_gate" enabled="true" />
+		<object name="g_pillars" enabled="true" />
+
+		<graphic_group name="grp_icon" enabled="true">
+			<lod_object name="lod_g_icon_a_lockpick">
+				<object name="g_icon_lockpick_a_lod0" enabled="true" max_distance="1500" />
+				<object name="g_icon_lockpick_a_lod1" enabled="true" />
+			</lod_object>
+			<lod_object name="lod_g_icon_b_lockpick">
+				<object name="g_icon_lockpick_b_lod0" enabled="true" max_distance="1500" />
+				<object name="g_icon_lockpick_b_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<object name="s_gate" enabled="true" shadow_caster="true" />
+		<object name="s_pillars" enabled="true" shadow_caster="true" />
+	</graphics>
+</dynamic_object>

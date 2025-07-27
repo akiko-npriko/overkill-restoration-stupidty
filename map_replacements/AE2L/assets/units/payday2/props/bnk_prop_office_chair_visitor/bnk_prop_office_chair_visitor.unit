@@ -1,0 +1,8 @@
+<unit type="bnk" slot="1" >
+    <object file="units/payday2/props/bnk_prop_office_chair_visitor/bnk_prop_office_chair_visitor" />
+	<network sync="spawn"/>
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+		<extension name="damage" class="UnitDamage" />
+    </extensions>
+</unit>

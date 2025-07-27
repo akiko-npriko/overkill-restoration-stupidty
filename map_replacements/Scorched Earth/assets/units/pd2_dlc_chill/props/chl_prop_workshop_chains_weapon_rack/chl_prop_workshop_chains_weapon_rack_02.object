@@ -1,0 +1,16 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_chill/props/chl_prop_workshop_chains_weapon_rack/chl_prop_workshop_chains_weapon_rack_02" orientation_object="rp_chl_prop_workshop_chains_weapon_rack_02" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_chl_prop_workshop_chains_weapon_rack_02" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<graphics>
+		<lod_object name="lod_g_glod0">
+			<object name="g_glod0" enabled="true" max_distance="1500" />
+			<object name="g_glod1" enabled="true" />
+		</lod_object>
+	</graphics>
+</dynamic_object>

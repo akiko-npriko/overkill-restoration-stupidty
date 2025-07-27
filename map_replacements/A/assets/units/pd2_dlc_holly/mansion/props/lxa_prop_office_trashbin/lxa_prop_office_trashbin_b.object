@@ -1,0 +1,18 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_holly/mansion/props/lxa_prop_office_trashbin/lxa_prop_office_trashbin_b" orientation_object="rp_lxa_prop_office_trashbin_b" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_lxa_prop_office_trashbin_b" />
+			<object name="c_convex_01" collision_type="convex" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="plastic">
+		<decal_mesh name="dm_metal" enabled="true" material="plastic" />
+	</decal_surfaces>
+	<graphics>
+		<lod_object name="lod_g">
+			<object name="g_lod0" enabled="true" max_distance="1500" />
+			<object name="g_lod1" enabled="true" />
+		</lod_object>
+	</graphics>
+</dynamic_object>

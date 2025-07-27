@@ -1,0 +1,16 @@
+<unit type="bex" slot="1">
+  <network sync="spawn"/>
+  <object file="units/pd2_dlc_bex/props/bex_prop_cup/bex_cup" />
+  <dependencies>
+    <depends_on bnk="soundbanks/regular_sfx" />
+  </dependencies>
+  <extensions>
+    <extension name="unit_data" class="ScriptUnitData" />
+    <extension name="damage" class="UnitDamage" />
+     <extension name="interaction" class="SpecialEquipmentGiveAndTakeInteractionExt">
+			<var name="_special_equipment" value="fingerprint" />
+			<var name="_remove_on_interact" value="false" />
+			<var name="tweak_data" value="bex_take_cupprint" />
+		</extension> 
+	</extensions>
+</unit>

@@ -1,0 +1,105 @@
+<materials version="3">
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" name="mat_temp" version="2">
+        <diffuse_texture file="units/pd2_dlc_mad/architecture/mad_sawmill/mad_test_df"/>
+        <bump_normal_texture file="units/pd2_dlc_mad/architecture/mad_sawmill/mad_test_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_barn_planks_floor_01" version="2">
+        <diffuse_texture file="units/pd2_dlc_peta/architecture/pta_2/pta_barn_planks_floor_01_df"/>
+        <bump_normal_texture file="units/pd2_dlc_peta/architecture/pta_2/pta_barn_planks_floor_01_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_barn_planks_floor_01_b" version="2">
+        <diffuse_texture file="units/pd2_dlc_peta/architecture/pta_2/pta_barn_planks_floor_01_b_df"/>
+        <bump_normal_texture file="units/pd2_dlc_peta/architecture/pta_2/pta_barn_planks_floor_01_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_barn_pillar_01" version="2">
+        <diffuse_texture file="units/pd2_dlc_peta/architecture/pta_2/pta_barn_pillar_01_df"/>
+        <bump_normal_texture file="units/pd2_dlc_peta/architecture/pta_2/pta_barn_pillar_01_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_barn_pillar_01_b" version="2">
+        <diffuse_texture file="units/pd2_dlc_peta/architecture/pta_2/pta_barn_pillar_01_b_df"/>
+        <bump_normal_texture file="units/pd2_dlc_peta/architecture/pta_2/pta_barn_pillar_01_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_barn_planks_painted" version="2">
+        <diffuse_texture file="units/pd2_dlc_peta/architecture/pta_2/pta_barn_planks_painted_01_df"/>
+        <bump_normal_texture file="units/pd2_dlc_peta/architecture/pta_2/pta_barn_planks_floor_01_nm"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_warehouse_wood_wall" version="2">
+        <diffuse_texture file="units/pd2_dlc_ranc/architecture/ext/tiling_textures/ranc_warehouse_wood_wall_df"/>
+        <bump_normal_texture file="units/pd2_dlc_ranc/architecture/ext/tiling_textures/ranc_warehouse_wood_wall_nm"/>
+        <material_texture file="units/pd2_dlc_ranc/architecture/ext/tiling_textures/ranc_warehouse_wood_wall_gsma"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_corrugated_metal_roof" version="2">
+        <diffuse_texture file="units/pd2_dlc_ranc/architecture/ext/tiling_textures/ranc_ext_corrugated_metal_roof_df"/>
+        <bump_normal_texture file="units/pd2_dlc_ranc/architecture/ext/tiling_textures/ranc_ext_corrugated_metal_roof_nm"/>
+        <material_texture file="units/pd2_dlc_ranc/architecture/ext/tiling_textures/ranc_ext_corrugated_metal_roof_gsma"/>
+        <reflection_texture file="environments/cubemaps/cubemap_night_lcm" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_ranc_currogated_metal" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_roofing_metal_plates_df"/>
+        <bump_normal_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_roofing_metal_plates_nm"/>
+        <material_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_roofing_metal_plates_gsma"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+    </material>
+    <material render_template="shadow_caster_only" name="shadow_caster" version="2"/>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_workshop_concrete" version="2">
+        <diffuse_texture file="units/pd2_dlc_pent/architecture/ext/ext_textures/pent_concrete_wall_df"/>
+        <bump_normal_texture file="units/pd2_dlc_pent/architecture/ext/ext_textures/pent_ext_watertank_plastic_nm"/>
+        <reflection_texture file="environments/cubemaps/cubemap_apartment_01" type="cubemap"/>
+        <material_texture file="units/pd2_dlc_ranc/architecture/ext/tiling_textures/ranc_painted_metal_gsma"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_white_wood" version="2">
+        <diffuse_texture file="units/pd2_dlc_peta/architecture/pta_2/pta_barn_planks_painted_01_df"/>
+        <bump_normal_texture file="units/pd2_dlc_peta/architecture/pta_2/pta_barn_planks_floor_01_nm"/>
+        <material_texture file="units/pd2_dlc_ranc/architecture/int/int_textures/ranch_house/ranc_wood_planks_gsma"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_stonewall" version="2">
+        <diffuse_texture file="units/pd2_dlc_ranc/architecture/int/int_textures/ranch_house/ranc_ext_stone_wall_irregular_01_df"/>
+        <bump_normal_texture file="units/pd2_dlc_ranc/architecture/int/int_textures/ranch_house/ranc_ext_stone_wall_irregular_01_nm"/>
+        <material_texture file="units/pd2_dlc_ranc/architecture/int/int_textures/ranch_house/ranc_ext_stone_wall_irregular_01_gsma"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_roof_tiles_barn" version="2">
+        <diffuse_texture file="units/pd2_dlc_ranc/architecture/ext/tiling_textures/ranc_ext_roof_tiles_barn_df"/>
+        <bump_normal_texture file="units/pd2_dlc_ranc/architecture/ext/tiling_textures/ranc_ext_roof_tiles_barn_nm"/>
+        <material_texture file="units/pd2_dlc_ranc/architecture/ext/tiling_textures/ranc_ext_roof_tiles_barn_gsma"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_gov_d_int_wall_brick_a" version="2">
+        <diffuse_texture file="units/pd2_dlc_born/architecture/bor_clubhouse/bor_club_brick_wall_b_df"/>
+        <bump_normal_texture file="units/pd2_dlc_born/architecture/bor_clubhouse/bor_club_brick_wall_b_nm"/>
+    </material>
+    <material render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE" name="mat_glass_b1" version="2">
+        <opacity_texture file="units/payday2/architecture/lux/lux_ext_glass_01_op"/>
+        <diffuse_texture file="units/payday2/architecture/lux/lux_ext_glass_01_df"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <variable type="vector3" name="fresnel_settings" value="0.78999996185303 0.56999999284744 0.81000000238419"/>
+    </material>
+    <material render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE" name="mat_glass_b" version="2">
+        <opacity_texture file="units/payday2/architecture/lux/lux_ext_glass_01_op"/>
+        <diffuse_texture file="units/payday2/architecture/lux/lux_ext_glass_01_df"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <variable type="vector3" name="fresnel_settings" value="0.78999996185303 0.56999999284744 0.81000000238419"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_int_concrete_floor" version="2">
+        <diffuse_texture file="units/pd2_dlc_ranc/architecture/int/int_textures/ranch_house/ranc_int_garage_floor_df"/>
+        <bump_normal_texture file="units/pd2_dlc_ranc/architecture/int/int_textures/ranch_house/ranc_int_garage_floor_nm"/>
+        <material_texture file="units/pd2_dlc_ranc/architecture/int/int_textures/ranch_house/ranc_int_garage_floor_gsma"/>
+    </material>
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:NORMALMAP" name="mat_fence" version="2">
+        <diffuse_texture file="units/world/props/shared_textures/fence_tile_df"/>
+        <bump_normal_texture file="units/world/props/shared_textures/fence_tile_nm"/>
+        <variable type="scalar" name="alpha_ref" value="0.20000000949949"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_ranc_d_int_wall_brick_a" version="2">
+        <diffuse_texture file="units/pd2_dlc_born/architecture/bor_clubhouse/bor_club_brick_wall_b_df"/>
+        <bump_normal_texture file="units/pd2_dlc_born/architecture/bor_clubhouse/bor_club_brick_wall_b_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:VERTEX_COLOR" name="mat_black_roll_roof" version="2">
+        <diffuse_texture file="units/pd2_dlc_ranc/architecture/ext/tiling_textures/ranc_black_roll_roof_df"/>
+    </material>
+    <material render_template="decal:DIFFUSE_TEXTURE:NORMALMAP:OPACITY_TEXTURE" name="mat_road_02_decal" version="2">
+        <diffuse_texture file="units/pd2_dlc_ranc/architecture/ext/ext_textures/ranc_ext_dirt_road_02_df"/>
+        <opacity_texture file="units/pd2_dlc_ranc/architecture/ext/ext_textures/ranc_ext_dirt_road_02_decal_op"/>
+        <bump_normal_texture file="units/pd2_dlc_ranc/architecture/ext/ext_textures/ranc_ext_dirt_road_02_nm"/>
+    </material>
+</materials>

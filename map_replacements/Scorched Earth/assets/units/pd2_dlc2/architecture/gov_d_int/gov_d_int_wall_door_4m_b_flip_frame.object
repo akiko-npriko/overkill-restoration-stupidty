@@ -1,0 +1,23 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_lobby" orientation_object="rp_gov_d_int_wall_door_4m_b_flip_frame" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_gov_d_int_wall_door_4m_b_flip_frame" />
+			<object name="c_box_00" collision_type="box" padding="-2.5" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+			<object name="c_box_04" collision_type="box" padding="-2.5" />
+			<object name="c_box_05" collision_type="box" padding="-2.5" />
+			<object name="c_box_06" collision_type="box" padding="-2.5" />
+			<object name="c_box_07" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces>
+        <decal_mesh enabled="true" name="g_g" material="plaster" />
+    </decal_surfaces>
+	<graphics>
+		<object name="g_g" enabled="true" />
+		<object name="g_glass_01" enabled="true" />
+	</graphics>
+</dynamic_object>

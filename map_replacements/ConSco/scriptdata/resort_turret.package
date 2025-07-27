@@ -1,0 +1,13 @@
+<table directory="assets">
+	<add unload_on_restart="true">
+		<effect load="true" path="units/pd2_dlc_uno/architecture/effects/lightbeam_01/uno_lightbeam_01"/>
+		<material_config path="units/pd2_mod_constantine_resort/props/adv_laser_turret/adv_laser_turret"/>
+		<model path="units/pd2_mod_constantine_resort/props/adv_laser_turret/adv_laser_turret"/>
+		<object path="units/pd2_mod_constantine_resort/props/adv_laser_turret/adv_laser_turret"/>
+		<sequence_manager path="units/pd2_mod_constantine_resort/props/adv_laser_turret/adv_laser_turret"/>
+		<unit path="units/pd2_mod_constantine_resort/props/adv_laser_turret/adv_laser_turret"/>
+	</add>
+	<add from_db="true" path="units/pd2_dlc_uno/architecture/effects/lightbeam_01/uno_lightbeam_01" type="effect">
+		<effect load="true" path="units/pd2_dlc_uno/architecture/effects/lightbeam_01/uno_lightbeam_01"/>
+	</add>	
+</table>

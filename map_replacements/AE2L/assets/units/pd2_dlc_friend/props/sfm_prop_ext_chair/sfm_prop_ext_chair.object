@@ -1,0 +1,63 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_friend/props/sfm_prop_ext_chair/sfm_prop_ext_chair" orientation_object="rp_sfm_prop_ext_chair" />
+	<sequence_manager file="units/pd2_dlc_friend/props/sfm_prop_ext_chair/sfm_prop_ext_chair" />
+	<bodies>
+		<body name="static_body" enabled="true" template="static">
+			<object name="rp_sfm_prop_ext_chair" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+			<object name="c_box_04" collision_type="box" padding="-2.5" />
+			
+		</body>
+
+		<body name="body_collision_01" enabled="false" template="debris">
+			<object name="c_convex_01" collision_type="convex" padding="-2.5" />
+		</body>
+
+		<body name="body_collision_02" enabled="false" template="debris">
+			<object name="c_convex_02" collision_type="convex" padding="-2.5" />			
+		</body>
+
+		<body name="body_collision_03" enabled="false" template="debris">
+			<object name="c_convex_03" collision_type="convex" padding="-2.5" />				
+		</body>
+
+		<body name="body_collision_04" enabled="true" template="debris">
+			<object name="c_convex_04" collision_type="convex" padding="-2.5" />
+		</body>		
+	</bodies>
+	<!--decal_surfaces default_material="concrete">
+		<decal_mesh name="dm_concrete" enabled="true" material="concrete" />
+	</decal_surfaces-->
+
+
+	<graphics>
+		<graphic_group name="grp_static" enabled="true" >
+			<lod_object name="lod_g">
+				<object name="g_lod0" enabled="true" max_distance="5000" />
+				<object name="g_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<graphic_group name="grp_dmg" enabled="false" >
+			<lod_object name="lod_g_dmg_01">
+				<object name="g_dmg_01_lod0" enabled="true" max_distance="5000" />
+				<object name="g_dmg_01_lod1" enabled="true" />
+			</lod_object>
+
+			<lod_object name="lod_g_dmg_02">
+				<object name="g_dmg_02_lod0" enabled="true" max_distance="5000" />
+				<object name="g_dmg_02_lod1" enabled="true" />
+			</lod_object>
+
+			<lod_object name="lod_g_dmg_03">
+				<object name="g_dmg_03_lod0" enabled="true" max_distance="5000" />
+				<object name="g_dmg_03_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<object name="s_s" enabled="true" shadow_caster="true" />
+	</graphics>
+
+</dynamic_object>

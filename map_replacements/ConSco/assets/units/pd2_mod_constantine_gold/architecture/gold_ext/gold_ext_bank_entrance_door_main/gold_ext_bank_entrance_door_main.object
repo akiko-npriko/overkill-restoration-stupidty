@@ -1,0 +1,60 @@
+<dynamic_object>
+	<diesel materials="units/pd2_mod_constantine_gold/architecture/gold_ext/gold_ext_bank_entrance_door_main/gold_ext_bank_entrance_door_main" orientation_object="rp_brb_ext_bank_entrance_door_main" />
+	<sequence_manager file="units/pd2_mod_constantine_gold/architecture/gold_ext/gold_ext_bank_entrance_door_main/gold_ext_bank_entrance_door_main" />
+	<bodies>
+		<body name="body_doors_closed" enabled="true" template="static">
+			<object name="rp_brb_ext_bank_entrance_door_main" />
+			<object name="c_box_doors_closed_01" collision_type="box" padding="-2.5" />
+		</body>
+
+		<body name="body_doors_open" enabled="true" template="static">
+			<object name="rp_brb_ext_bank_entrance_door_main" />
+			<object name="c_box_doors_open_01" 			collision_type="box" padding="-2.5" />
+			<object name="c_box_doors_open_02" 			collision_type="box" padding="-2.5" />
+			<object name="c_box_doors_open_03" 			collision_type="box" padding="-2.5" />
+			<object name="c_box_doors_open_04" 			collision_type="box" padding="-2.5" />
+			<object name="c_box_doors_open_05" 			collision_type="box" padding="-2.5" />
+			<object name="c_mopp_doors_frame" 			collision_type="mesh_mopp" padding="-2.5" />
+		</body>
+
+		<body name="body_doors_crashed_open" enabled="true" template="static">
+			<object name="rp_brb_ext_bank_entrance_door_main" />
+			<object name="c_box_doors_crashed_open_03" 	collision_type="box" padding="-2.5" />
+			<object name="c_box_doors_crashed_open_04" 	collision_type="box" padding="-2.5" />
+			<object name="c_box_doors_crashed_open_05" 	collision_type="box" padding="-2.5" />
+			<object name="c_box_doors_crashed_open_06" 	collision_type="box" padding="-2.5" />
+			<object name="c_box_doors_crashed_open_07" 	collision_type="box" padding="-2.5" />
+			<object name="c_mopp_doors_frame_crashed" 	collision_type="mesh_mopp" padding="-2.5" />
+		</body>
+		<body name="body_dm_doors_crashed_open" enabled="true" template="static" collides_with_mover="false">
+			<object name="rp_brb_ext_bank_entrance_door_main" />
+			<object name="c_box_doors_crashed_open_01" 	collision_type="box" padding="-2.5" />
+			<object name="c_box_doors_crashed_open_02" 	collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_doors_crashed_open_nav" enabled="true" template="nav_walk">
+			<object name="rp_brb_ext_bank_entrance_door_main" />
+			<object name="c_mopp_nav_doors_crashed_open" 	collision_type="mesh_mopp" padding="-2.5" />
+		</body>
+
+	</bodies>
+
+	<decal_surfaces default_material="thin_layer">
+		<decal_mesh name="dm_metal_closed" 			enabled="true" material="metal" />
+		<decal_mesh name="dm_metal_open" 			enabled="true" material="metal" />
+		<decal_mesh name="dm_metal_crashed_open" 	enabled="true" material="metal" />
+		<decal_mesh name="dm_plaster" 				enabled="true" material="plaster" />
+		<decal_mesh name="dm_plaster_crashed" 		enabled="true" material="plaster" />
+	</decal_surfaces>
+
+	<graphics>
+		<graphic_group name="grp_doors_closed" enabled="false">
+			<object name="g_doors_closed" enabled="true" />
+		</graphic_group>
+		<graphic_group name="grp_doors_open" enabled="true">
+			<object name="g_doors_open" enabled="true" />
+		</graphic_group>
+		<graphic_group name="grp_doors_crashed_open" enabled="false">
+			<object name="g_doors_crashed_open" enabled="true" />
+		</graphic_group>
+	</graphics>
+</dynamic_object>

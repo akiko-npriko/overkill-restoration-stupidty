@@ -1,0 +1,88 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_cage/props/ind_prop_cardealership_lamp_hanging/ind_prop_cardealership_lamp_hanging" orientation_object="rp_ind_prop_cardealership_lamp_hanging" />
+	<sequence_manager file="units/pd2_dlc_cage/props/ind_prop_cardealership_lamp_hanging/ind_prop_cardealership_lamp_hanging" />
+	<bodies>
+		<body name="body_static_01" enabled="true" template="static">
+			<object name="rp_ind_prop_cardealership_lamp_hanging" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_static_02" enabled="true" template="static">
+			<object name="rp_ind_prop_cardealership_lamp_hanging" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_static_03" enabled="true" template="static">
+			<object name="rp_ind_prop_cardealership_lamp_hanging" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="plastic">
+		<decal_mesh name="dm_cloth" enabled="true" material="cloth" />
+		<decal_mesh name="dm_metal" enabled="true" material="metal" />
+	</decal_surfaces>
+	<graphics>
+
+		<graphic_group name="grp_on_01" enabled="true" >
+			<lod_object name="lod_g_g_01">
+				<object name="g_g_01_lod0" enabled="true" max_distance="3000" />
+				<object name="g_g_01_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<graphic_group name="grp_off_01" enabled="false" >
+			<lod_object name="lod_g_g_off_01">
+				<object name="g_g_off_01_lod0" enabled="true" max_distance="3000" />
+				<object name="g_g_off_01_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<graphic_group name="grp_dmg_01" enabled="false" >
+			<lod_object name="lod_g_g_dmg_01">
+				<object name="g_g_dmg_01_lod0" enabled="true" max_distance="3000" />
+				<object name="g_g_dmg_01_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<graphic_group name="grp_on_02" enabled="true" >
+			<lod_object name="lod_g_g_02">
+				<object name="g_g_02_lod0" enabled="true" max_distance="3000" />
+				<object name="g_g_02_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<graphic_group name="grp_off_02" enabled="false" >
+			<lod_object name="lod_g_g_off_02">
+				<object name="g_g_off_02_lod0" enabled="true" max_distance="3000" />
+				<object name="g_g_off_02_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<graphic_group name="grp_dmg_02" enabled="false" >
+			<lod_object name="lod_g_g_dmg_02">
+				<object name="g_g_dmg_02_lod0" enabled="true" max_distance="3000" />
+				<object name="g_g_dmg_02_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<graphic_group name="grp_on_03" enabled="true" >
+			<lod_object name="lod_g_g_03">
+				<object name="g_g_03_lod0" enabled="true" max_distance="3000" />
+				<object name="g_g_03_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<graphic_group name="grp_off_03" enabled="false" >
+			<lod_object name="lod_g_g_off_03">
+				<object name="g_g_off_03_lod0" enabled="true" max_distance="3000" />
+				<object name="g_g_off_03_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<graphic_group name="grp_dmg_03" enabled="false" >
+			<lod_object name="lod_g_g_dmg_03">
+				<object name="g_g_dmg_03_lod0" enabled="true" max_distance="3000" />
+				<object name="g_g_dmg_03_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+	</graphics>
+</dynamic_object>

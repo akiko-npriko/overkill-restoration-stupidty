@@ -1,0 +1,21 @@
+<unit type="chas" slot="1">
+	<object file="units/pd2_dlc_chas/equipment/chas_interactable_c4_placeable/chas_interactable_c4_placeable" />
+	<network sync="spawn"/>
+	<dependencies>
+		<depends_on font="fonts/font_digital" />
+		<depends_on effect="effects/payday2/particles/flares/red_flare_blinking" />
+		<depends_on effect="effects/payday2/particles/explosions/grenade_explosion" />
+		<depends_on bnk="soundbanks/regular_sfx" />
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="UseInteractionExt">
+			<var name="tweak_data" value="c4_stackable" />
+			<var name="_interact_object" value="interact"/>
+		</extension>
+		<extension class="DigitalGui" name="digital_gui" >
+			<var name="_gui_object" value="g_display" />
+		</extension>
+	</extensions>
+</unit>

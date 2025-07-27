@@ -1,0 +1,27 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_rvd/architecture/rvd_ext/rvd_ext_backdrop_building/rvd_ext_building_backdrop_corner" orientation_object="rp_rvd_ext_building_backdrop_under_construction_16x15" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_rvd_ext_building_backdrop_under_construction_16x15" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+
+	<decal_surfaces default_material="plastic">
+		<decal_mesh name="dm_plastic" enabled="true" material="plastic" />
+
+	</decal_surfaces>
+
+	<graphics>
+		<object name="s_s" enabled="true" shadow_caster="true"/>
+			<lod_object name="lod_material">
+	        	<object enabled="true" name="g_g" >
+					<material materials="mat_under_construction, mat_advert_01, mat_advert_01b" max_distance="4500"/>
+			        <material materials="mat_under_construction_lod, mat_advert_01_lod, mat_advert_01b_lod" max_distance="6000"/>
+			        <material materials="mat_under_construction_lod_2, mat_advert_01_lod_2, mat_advert_01b_lod_2"/>
+				</object>
+		</lod_object>	
+	</graphics>
+</dynamic_object>
+
+

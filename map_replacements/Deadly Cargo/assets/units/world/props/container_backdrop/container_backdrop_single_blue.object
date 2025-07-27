@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<dynamic_object>
+  <diesel materials="units/world/props/container_backdrop/container_backdrop_single" orientation_object="rp_cont_backdrop_single_blue" />
+  <bodies>
+  <body name="static_body" enabled="true" template="static">
+      <object name="c_container_box" collision_type="box" />
+	</body>
+	</bodies>
+  <graphics>
+    <object name="g_container" enabled="true" shadow_caster="true" instance_struct="world_tm"/>	
+  </graphics>
+</dynamic_object>

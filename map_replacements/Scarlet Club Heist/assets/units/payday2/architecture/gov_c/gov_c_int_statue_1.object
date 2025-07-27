@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<dynamic_object>
+    <diesel materials="units/payday2/architecture/gov_c/gov_c" orientation_object="rp_gov_c_int_statue_1" />
+    <bodies>
+        <body name="static_body" template="static" enabled="true" >
+            <object name="rp_gov_c_int_statue_1"/>
+            <object collision_type="mesh_mopp" enabled="true" name="g_gov_c_int_statue_1"/>
+        </body>
+    </bodies>
+    
+    <decal_surfaces default_material="stone" static="true">
+        <decal_mesh name="g_gov_c_int_statue_1" material="stone" enabled="true"/>
+    </decal_surfaces> 
+    
+    <graphics>
+        
+        <object enabled="true" name="g_gov_c_int_statue_1" shadow_caster="true" />
+    </graphics>
+    
+</dynamic_object>

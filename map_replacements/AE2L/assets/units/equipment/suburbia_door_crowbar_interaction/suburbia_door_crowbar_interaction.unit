@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<unit type="cft" slot="1">
+  <network sync="spawn"/>
+  <object file="units/equipment/suburbia_door_crowbar_interaction/suburbia_door_crowbar_interaction" />
+  <dependencies>
+    <depends_on bnk="soundbanks/regular_sfx" />
+    <depends_on bnk="soundbanks/sfx_cft" />
+	<depends_on effect="effects/particles/dest/door_wood_crowbar" />    
+  </dependencies>
+  <extensions>
+    <extension name="unit_data" class="ScriptUnitData" />
+  	<extension name="damage" class="UnitDamage" />
+  	<extension name="interaction" class="UseInteractionExt">
+      <var name="tweak_data" value="suburbia_door_crowbar" />
+      <var name="drop_in_sync_tweak_data" value="true" />
+  	  <var name="_interact_object" value="int_"/>
+    </extension>
+  </extensions>
+</unit> 

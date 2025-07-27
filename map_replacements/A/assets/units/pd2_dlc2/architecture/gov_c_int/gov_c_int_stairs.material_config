@@ -1,0 +1,32 @@
+<materials version="3">
+    <material name="mat_carpet" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" version="2">
+        <diffuse_texture file="units/pd2_dlc2/architecture/gov_c_int/gov_c_int_carpet_df"/>
+        <bump_normal_texture file="units/pd2_dlc2/architecture/gov_c_int/gov_c_int_carpet_nm"/>
+    </material>
+    <material name="mat_int_stairs" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/pd2_dlc2/architecture/gov_c_int/gov_c_int_baluster_df"/>
+        <bump_normal_texture file="units/pd2_dlc2/architecture/gov_c_int/gov_c_int_baluster_nm"/>
+        <reflection_texture type="cubemap" file="environments/cubemaps/cubemap_int_bigbank"/>
+        <variable value="1 0 2" type="vector3" name="environment_settings"/>
+    </material>
+    <material name="mat_int_stairs_steps" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/pd2_dlc2/architecture/gov_c_int/gov_c_int_stairs_steps_df"/>
+        <bump_normal_texture file="units/pd2_dlc2/architecture/gov_c_int/gov_c_int_stairs_steps_nm"/>
+        <reflection_texture type="cubemap" file="environments/cubemaps/cubemap_int_bigbank"/>
+        <variable value="1 0 2" type="vector3" name="environment_settings"/>
+    </material>
+    <material name="mat_marble_d" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/pd2_dlc2/architecture/gov_c_int/gov_c_int_marble_d_df"/>
+        <reflection_texture file="environments/cubemaps/cubemap_int_bigbank_vault" type="cubemap"/>
+        <variable value="1 0 2" type="vector3" name="environment_settings"/>
+        <bump_normal_texture file="units/pd2_dlc2/architecture/gov_c_int/gov_c_int_marble_d_nm"/>
+    </material>
+
+    <material name="mat_entrance_grating" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/pd2_dlc2/architecture/gov_c_int/gov_c_int_entrance_grating_df"/>
+        <bump_normal_texture file="units/pd2_dlc2/architecture/gov_c_int/gov_c_int_entrance_grating_nm"/>
+        <reflection_texture type="cubemap" file="environments/cubemaps/cubemap_gold"/>
+        <variable value="1 0 2" type="vector3" name="environment_settings"/>
+    </material>
+    <material version="2" render_template="shadow_caster_only" name="shadow_caster"/>
+</materials>

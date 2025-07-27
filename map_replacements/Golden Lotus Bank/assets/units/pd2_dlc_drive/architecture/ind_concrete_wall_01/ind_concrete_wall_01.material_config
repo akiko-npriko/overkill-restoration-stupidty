@@ -1,0 +1,13 @@
+<materials version="3">
+    <material name="wall" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/pd2_dlc_drive/architecture/ind_concrete_wall_01/textures/ind_concrete_wall_01_df"/>
+        <bump_normal_texture file="units/pd2_dlc_drive/architecture/ind_concrete_wall_01/textures/ind_concrete_wall_01_nm"/>
+        <reflection_texture type="cubemap" file="units/payday2/cubemaps/cubemap_branch_office_weak"/>
+        <variable value="1 0 2" type="vector3" name="environment_settings"/>
+    </material>
+    <material name="wire" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:DOUBLE_SIDED:EXTERNAL_ALPHA_REF" version="2">
+        <diffuse_texture file="units/pd2_dlc_drive/architecture/ind_concrete_wall_01/textures/ind_concrete_wall_01_df"/>
+        <variable value="0.0050000003539026" type="scalar" name="alpha_ref"/>
+    </material>
+    <material version="2" render_template="shadow_caster_only" name="s_shadow"/>
+</materials>

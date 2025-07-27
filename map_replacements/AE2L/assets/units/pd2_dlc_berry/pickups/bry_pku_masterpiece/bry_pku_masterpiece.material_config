@@ -1,0 +1,10 @@
+<materials version="3">
+	<material name="mat_bry_prop_masterpiece" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_berry/pickups/bry_pku_masterpiece/bry_pku_masterpiece_df" />
+		<bump_normal_texture file="units/pd2_dlc_berry/pickups/bry_pku_masterpiece/bry_pku_masterpiece_nm" />
+	</material>
+	<material name="mat_bry_prop_masterpiece_lod" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_berry/pickups/bry_pku_masterpiece/bry_pku_masterpiece_df" mip="4" />
+		<bump_normal_texture file="units/pd2_dlc_berry/pickups/bry_pku_masterpiece/bry_pku_masterpiece_nm" mip="4" />
+	</material>
+</materials>

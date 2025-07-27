@@ -1,0 +1,12 @@
+<unit type="gov" slot="1" >
+    <object file="units/pd2_dlc2/architecture/gov_c_int/gov_c_int_wall_explosion" />
+	<network sync="spawn"/>
+	<dependencies>
+		<depends_on effect="effects/payday2/particles/destruction/dest_bus_bank" />
+		<depends_on bnk="soundbanks/regular_sfx" />
+	</dependencies>
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+        <extension class="UnitDamage" name="damage" />
+    </extensions>
+</unit>

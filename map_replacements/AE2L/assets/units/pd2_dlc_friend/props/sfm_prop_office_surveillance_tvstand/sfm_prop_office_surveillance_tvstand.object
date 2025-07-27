@@ -1,0 +1,38 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_friend/props/sfm_prop_office_surveillance_tvstand/sfm_prop_office_surveillance_tvstand" orientation_object="rp_sfm_prop_office_surveillance_tvstand" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_sfm_prop_office_surveillance_tvstand" />			
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+			<object name="c_box_04" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="glass_body" template="static" enabled="true" >
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+	    </body>		
+	</bodies>
+
+	<decal_surfaces >
+		<decal_mesh name="dm_glass_breakable" enabled="true" material="glass_breakable" />
+		<decal_mesh name="dm_metal" enabled="true" material="metal" />
+	</decal_surfaces>
+
+	<graphics>
+
+		<graphic_group name="grp_static" enabled="true" >
+			<lod_object name="lod_g">
+				<object name="g_lod0" enabled="true" max_distance="5000" />
+				<object name="g_lod1" enabled="true" max_distance="8000" />
+				<object name="g_lod2" enabled="true" />
+			</lod_object>
+		</graphic_group>
+		<graphic_group name="grp_dmg" enabled="true" >
+			<lod_object name="lod_g_glass">
+				<object name="g_glass_lod0" enabled="true" max_distance="5000" />
+				<object name="g_glass_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<object name="s_s" enabled="true" shadow_caster="true" />
+	</graphics>
+</dynamic_object>

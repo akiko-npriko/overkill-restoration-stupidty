@@ -1,0 +1,27 @@
+<materials version="3">
+    <material name="m_per_wallin" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:RL_CIVILIANS:SKINNED_3WEIGHTS" version="2">
+        <bump_normal_texture file="units/payday2/characters/shared_textures/per_wallin_nm"/>
+        <diffuse_texture file="units/payday2/characters/shared_textures/per_wallin_df"/>
+    </material>
+    <material name="mtr_casual_male_6" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:RL_CIVILIANS:SKINNED_3WEIGHTS" version="2">
+        <bump_normal_texture file="units/payday2/characters/shared_textures/casual_male_6_nm"/>
+        <diffuse_texture file="units/payday2/characters/shared_textures/casual_male_6_df"/>
+    </material>
+    <material name="mat_res_prop_kitchen_chair_c_worn" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/payday2/props/res_prop_kitchen_table_c_short_worn_grime/res_prop_kitchen_c_worn_grime_df"/>
+        <bump_normal_texture file="units/payday2/props/res_prop_kitchen_table_c_short_worn_grime/res_prop_kitchen_c_worn_grime_nm"/>
+    </material>
+    <material name="mtr_items" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP" unique="true" version="2">
+        <diffuse_texture file="units/payday2/props/hlm_prop_bombstrapped/vest_df"/>
+        <bump_normal_texture file="units/payday2/props/hlm_prop_bombstrapped/vest_nm"/>
+        <variable value="1 1 1" type="vector3" name="contour_color"/>
+        <variable value="0" type="scalar" name="contour_opacity"/>
+    </material>
+    <material name="mtr_head" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/payday2/props/hlm_prop_bombstrapped/vest_df"/>
+        <bump_normal_texture file="units/payday2/props/hlm_prop_bombstrapped/vest_nm"/>
+    </material>
+    <material name="mtr_scorch" render_template="decal:DIFFUSE_TEXTURE" version="2">
+        <diffuse_texture file="units/payday2/props/hlm_prop_bombstrapped/scorch_df"/>
+    </material>
+</materials>

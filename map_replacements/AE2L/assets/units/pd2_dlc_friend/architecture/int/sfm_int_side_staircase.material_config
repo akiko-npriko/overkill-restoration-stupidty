@@ -1,0 +1,30 @@
+<materials version="3">
+    <material render_template="generic:DIFFUSE_TEXTURE:VERTEX_COLOR" name="mat_mainroom_wall_red_square" version="2">
+        <diffuse_texture file="units/pd2_dlc_friend/architecture/int/sfm_int_mainroom/sfm_mainroom_wall_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_red_rug" version="2">
+        <diffuse_texture file="units/pd2_dlc_friend/architecture/int/sfm_int_mainroom/sfm_mainroom_carpet_df"/>
+        <bump_normal_texture file="units/pd2_dlc_casino/architecture/textures/cas_int_carpet_01_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:VERTEX_COLOR" name="mat_sfm_main_white_marble" version="2">
+        <diffuse_texture file="units/pd2_dlc_friend/architecture/int/textures/sfm_mainroom_stairs_marble_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_sfm_mainroom_white_door" version="2">
+        <diffuse_texture file="units/pd2_dlc_friend/props/sfm_prop_office_door_black/sfm_prop_office_door_white_df"/>
+        <bump_normal_texture file="units/pd2_dlc_friend/props/sfm_prop_office_door_black/sfm_prop_office_door_black_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_sfm_mainroon_dado_rail" version="2">
+        <diffuse_texture file="units/pd2_dlc_friend/architecture/int/textures/sfm_mainroom_marble_dado_rail_df"/>
+        <bump_normal_texture file="units/pd2_dlc_friend/architecture/int/textures/sfm_mainroom_marble_dado_rail_nm"/>
+    </material>
+    <material decal_material="water_puddle" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_trim" version="2">
+        <diffuse_texture file="units/pd2_dlc_friend/architecture/int/textures/sfm_int_bedroom_ceiling_df"/>
+        <bump_normal_texture file="units/pd2_dlc_friend/architecture/int/textures/sfm_int_bedroom_ceiling_nm"/>
+        <material_texture file="units/pd2_dlc_friend/architecture/int/textures/sfm_int_bedroom_ceiling_gsma"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:VERTEX_COLOR" name="mat_wallpaper" version="2">
+        <diffuse_texture file="units/pd2_dlc_friend/architecture/int/textures/sfm_int_corridors_wallpaper_df"/>
+        <material_texture file="units/pd2_dlc_friend/architecture/int/textures/sfm_int_corridors_wallpaper_gsma"/>
+    </material>
+    <material render_template="shadow_caster_only" name="shadow_caster" version="2"/>
+</materials>

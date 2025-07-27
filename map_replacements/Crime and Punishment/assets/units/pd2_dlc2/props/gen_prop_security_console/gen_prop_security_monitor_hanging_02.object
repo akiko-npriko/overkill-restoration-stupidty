@@ -1,0 +1,21 @@
+<dynamic_object>	
+    <diesel orientation_object="rp_gen_prop_security_monitor_hanging_02" materials="units/pd2_dlc2/props/gen_prop_security_console/gen_prop_security_monitor_hanging_01" />	
+		<sequence_manager file="units/pd2_dlc2/props/gen_prop_security_console/gen_prop_security_monitor_hanging" />
+	<bodies>
+		<body name="body" enabled="true" template="static" >
+			<object name="rp_gen_prop_security_monitor_hanging_02" />
+			<object name="g_screens" collision_type="convex" padding="-2.5" />
+		</body>
+	</bodies>
+	
+	<decal_surfaces default_material="plastic">
+		<decal_mesh name="g_monitor" 		enabled="true" material="plastic" />
+		<decal_mesh name="g_screens" 		enabled="true" material="glass_breakable" />
+	</decal_surfaces>
+	
+    <graphics>
+        <object enabled="true" name="g_monitor" />
+        <object enabled="true" name="g_screens" />
+        <object enabled="false" name="g_screens1" />
+    </graphics>
+</dynamic_object>

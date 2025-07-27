@@ -1,0 +1,15 @@
+<materials version="3">
+	<material name="mat_carpet_diningroom" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_vit/props/vit_prop_carpet_diningroom/vit_carpet_diningroom_df" />
+		<bump_normal_texture file="units/pd2_dlc_vit/props/vit_prop_carpet_redroom/vit_carpet_redroom_brown_nm" />
+		<material_texture file="units/pd2_dlc_vit/props/vit_prop_carpet_redroom/vit_carpet_redroom_brown_gsma" />
+	</material>
+	<material name="mat_carpet_details_diningroom" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_vit/props/vit_prop_carpet_diningroom/vit_carpet_details_diningroom_df" />
+		<bump_normal_texture file="units/pd2_dlc_vit/props/vit_prop_carpet_diningroom/vit_carpet_details_diningroom_nm" />
+		<material_texture file="units/pd2_dlc_vit/props/vit_prop_carpet_diningroom/vit_carpet_details_diningroom_nm" />
+	</material>
+	    <material render_template="decal:DIFFUSE_TEXTURE" name="mat_contactshadow" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/props/vit_prop_carpet_redroom/vit_carpet_contactshadow_dcd"/>
+    </material>
+</materials>

@@ -1,0 +1,69 @@
+<dynamic_object>
+    <diesel orientation_object="rp_cas_prop_button" materials="units/pd2_dlc_casino/props/cas_prop_keypad/cas_prop_button" />
+    <sequence_manager file="units/pd2_dlc_casino/props/cas_prop_keypad/cas_prop_button" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body">
+            <object name="rp_cas_prop_button" />
+            <object name="g_button_01" collision_type="mesh_mopp" />
+        </body>
+    </bodies>
+    <decal_surfaces />
+    <graphics>
+    	<graphic_group name="button_grp" enabled="true">
+	    	<lod_object name="button_01">
+	    		<object name="g_button_01" enabled="true"  max_distance="600"  max_draw_lod="0" />
+	    		<object name="g_button_lod" enabled="true"  lod="1" />
+	    	</lod_object>
+	    	<lod_object name="button_02">
+	    		<object name="g_button_02" enabled="true"  max_distance="600"  max_draw_lod="0" />
+	    		<object name="g_button_lod" enabled="true"  lod="1" />
+	    	</lod_object>
+	    	<lod_object name="button_03">
+	    		<object name="g_button_03" enabled="true"  max_distance="600"  max_draw_lod="0" />
+	    		<object name="g_button_lod" enabled="true"  lod="1" />
+	    	</lod_object>
+	    	<lod_object name="button_04">
+	    		<object name="g_button_04" enabled="true"  max_distance="600"  max_draw_lod="0" />
+	    		<object name="g_button_lod" enabled="true"  lod="1" />
+	    	</lod_object>
+	    	<lod_object name="button_05">
+	    		<object name="g_button_05" enabled="true"  max_distance="600"  max_draw_lod="0" />
+	    		<object name="g_button_lod" enabled="true"  lod="1" />
+	    	</lod_object>
+	    	<lod_object name="button_06">
+	    		<object name="g_button_06" enabled="true"  max_distance="600"  max_draw_lod="0" />
+	    		<object name="g_button_lod" enabled="true"  lod="1" />
+	    	</lod_object>
+	    	<lod_object name="button_07">
+	    		<object name="g_button_07" enabled="true"  max_distance="600"  max_draw_lod="0" />
+	    		<object name="g_button_lod" enabled="true"  lod="1" />
+	    	</lod_object>
+	    	<lod_object name="button_08">
+	    		<object name="g_button_08" enabled="true"  max_distance="600"  max_draw_lod="0" />
+	    		<object name="g_button_lod" enabled="true"  lod="1" />
+	    	</lod_object>
+	    	<lod_object name="button_09">
+	    		<object name="g_button_09" enabled="true"  max_distance="600"  max_draw_lod="0" />
+	    		<object name="g_button_lod" enabled="true"  lod="1" />
+	    	</lod_object>
+	    	<lod_object name="button_0">
+	    		<object name="g_button_0" enabled="true"  max_distance="600"  max_draw_lod="0" />
+	    		<object name="g_button_lod" enabled="true"  lod="1" />
+	    	</lod_object>
+	    	<lod_object name="button_clear">
+	    		<object name="g_button_clear" enabled="true"  max_distance="600"  max_draw_lod="0" />
+	    		<object name="g_button_lod" enabled="true"  lod="1" />
+	    	</lod_object>
+	    	<lod_object name="button_enter">
+	    		<object name="g_button_enter" enabled="true"  max_distance="600"  max_draw_lod="0" />
+	    		<object name="g_button_lod" enabled="true"  lod="1" />
+	    	</lod_object>
+	    </graphic_group>
+	    <graphic_group name="grp_outline" enabled="true" >
+	    	<lod_object name="lod_outline">
+	    		<object name="g_outline_lod0" enabled="true"  max_distance="600" />
+	    		<object name="g_outline_lod1" enabled="true" />
+	    	</lod_object>
+	    </graphic_group>
+    </graphics>
+</dynamic_object>

@@ -1,0 +1,46 @@
+<table directory="assets">
+	<add from_db="true" path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_door_b" type="unit">
+		<unit path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_door_b" unload="true"/>
+		<object path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_door_b" unload="true"/>
+		<material_config path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_door_b" unload="true"/>
+		<sequence_manager path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_door_b" unload="true"/>
+		<unit path="units/payday2/equipment/gen_interactable_door_keycard/item_door_keycard_jammer_double" unload="true"/>
+		<object path="units/payday2/equipment/gen_interactable_door_keycard/item_door_keycard_jammer_double" unload="true"/>
+		<material_config path="units/payday2/equipment/gen_interactable_door_keycard/gen_interactable_door_keycard_jammer" unload="true"/>
+		<sequence_manager path="units/payday2/equipment/gen_interactable_door_keycard/item_door_keycard_jammer_double" unload="true"/>
+		<unit path="units/payday2/equipment/gen_interactable_panel_keycard/item_panel_keycard_double" unload="true"/>
+		<object path="units/payday2/equipment/gen_interactable_panel_keycard/gen_interactable_panel_keycard" unload="true"/>
+		<material_config path="units/pickups/pickup_bank_manager_key/pickup_bank_manager_key" unload="true"/>
+		<sequence_manager path="units/payday2/equipment/gen_interactable_panel_keycard/gen_interactable_panel_keycard" unload="true"/>
+		<bnk path="soundbanks/regular_sfx" unload="true"/>
+	</add>
+	<add from_db="true" path="units/pd2_dlc2/architecture/gov_d_int/spawn_debris_gov_d_int_door_a" type="unit">
+		<material_config path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_door_a" unload="true"/>
+		<object path="units/pd2_dlc2/architecture/gov_d_int/spawn_debris_gov_d_int_door_a" unload="true"/>
+		<unit path="units/pd2_dlc2/architecture/gov_d_int/spawn_debris_gov_d_int_door_a" unload="true"/>
+	</add>
+	<add from_db="true" path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_door_c" type="unit">
+		<unit path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_door_c" unload="true"/>
+		<object path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_door_c" unload="true"/>
+		<material_config path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_door_c" unload="true"/>
+		<sequence_manager path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_door_c" unload="true"/>
+		<unit path="units/pd2_dlc2/architecture/gov_d_int/spawn_debris_gov_d_int_door_a" unload="true"/>
+		<object path="units/pd2_dlc2/architecture/gov_d_int/spawn_debris_gov_d_int_door_a" unload="true"/>
+		<material_config path="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_door_a" unload="true"/>
+		<object path="units/payday2/equipment/gen_equipment_shape_charge/gen_equipment_shape_charge" unload="true"/>
+		<material_config path="units/payday2/equipment/gen_equipment_shape_charge/gen_equipment_shape_charge" unload="true"/>
+		<sequence_manager path="units/payday2/equipment/gen_equipment_shape_charge/gen_equipment_shape_charge" unload="true"/>
+		<bnk path="soundbanks/regular_sfx" unload="true"/>
+		<physic_effect path="physic_effects/push_sphere" unload="true"/>
+	</add>
+	<add from_db="true" path="units/dev_tools/level_tools/dev_door_blocker/dev_door_blocker_1x4x3" type="unit">
+		<material_config path="core/material_configs/hub_elements" unload="true"/>
+		<object path="units/dev_tools/level_tools/dev_door_blocker/dev_door_blocker_1x4x3" unload="true"/>
+		<unit path="units/dev_tools/level_tools/dev_door_blocker/dev_door_blocker_1x4x3" unload="true"/>
+	</add>
+	<add from_db="true" path="units/dev_tools/level_tools/dev_door_blocker/dev_door_blocker_1x2x3" type="unit">
+		<unit path="units/dev_tools/level_tools/dev_door_blocker/dev_door_blocker_1x2x3" unload="true"/>
+		<object path="units/dev_tools/level_tools/dev_door_blocker/dev_door_blocker_1x2x3" unload="true"/>
+		<material_config path="core/material_configs/hub_elements" unload="true"/>
+	</add>
+</table>

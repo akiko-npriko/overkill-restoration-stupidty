@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<dynamic_object>
+  <diesel materials="units/world/props/signs/construction_signs/construction_sign_hardhat" orientation_object="rp_sign_hardhat" />
+  <bodies>
+    <body name="static_body" enabled="true" template="static">
+      <object name="rp_sign_hardhat" />
+      <object name="c_sign" collision_type="box" />
+    </body>
+  </bodies>
+  <decal_surfaces default_material="plastic" static="true">
+    <decal_mesh name="c_sign" enabled="true" material="plastic" />
+  </decal_surfaces>
+  <graphics>
+    <object name="g_sign" enabled="true" />
+  </graphics>
+</dynamic_object>

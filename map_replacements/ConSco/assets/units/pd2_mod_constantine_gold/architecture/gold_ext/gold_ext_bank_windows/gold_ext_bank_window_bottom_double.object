@@ -1,0 +1,40 @@
+<dynamic_object>
+	<diesel materials="units/pd2_mod_constantine_gold/architecture/gold_ext/gold_ext_bank_windows/gold_ext_bank_windows" orientation_object="rp_brb_ext_bank_window_bottom_double" />
+	<sequence_manager file="units/pd2_mod_constantine_gold/architecture/gold_ext/gold_ext_bank_windows/gold_ext_bank_window_bottom_double" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_brb_ext_bank_window_bottom_double" />
+			<object name="c_box_00" collision_type="box" padding="-2.5" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+			<object name="c_box_05" collision_type="box" padding="-2.5" />
+			<object name="c_box_06" collision_type="box" padding="-2.5" />
+			<object name="c_box_010" collision_type="box" padding="-2.5" />
+			<object name="c_box_011" collision_type="box" padding="-2.5" />
+			<object name="c_box_012" collision_type="box" padding="-2.5" />
+			<object name="c_box_013" collision_type="box" padding="-2.5" />
+			<object name="c_box_014" collision_type="box" padding="-2.5" />
+			<object name="c_box_015" collision_type="box" padding="-2.5" />
+			<object name="c_box_016" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="glass_body_01" enabled="true" template="window">
+			<object name="e_glass_01" />
+			<object name="c_box_glass_01" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="glass_body_02" enabled="true" template="window">
+			<object name="e_glass_02" />
+			<object name="c_box_glass_02" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="glass_breakable">
+		<decal_mesh name="dm_glass_breakable_01" enabled="true" material="glass_breakable" />
+		<decal_mesh name="dm_glass_breakable_02" enabled="true" material="glass_breakable" />
+		<decal_mesh name="dm_metal" enabled="true" material="metal" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_glass_01" enabled="true" />
+		<object name="g_glass_02" enabled="true" />
+		<object name="g_g" enabled="true" />
+	</graphics>
+</dynamic_object>

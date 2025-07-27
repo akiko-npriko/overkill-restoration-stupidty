@@ -1,0 +1,61 @@
+<materials version="3">
+    <material render_template="shadow_caster_only" name="shadow_caster" version="2"/>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_int_concrete_floor_01" version="2">
+        <diffuse_texture file="units/payday2/architecture/air_hangar_segment/air_conc01_a_df"/>
+        <bump_normal_texture file="units/payday2/architecture/air_hangar_segment/air_conc01_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_int_plaster_01" version="2">
+        <diffuse_texture file="units/pd2_dlc1/architecture/hcm_int_falcogini/hcm_int_painted_plaster_df"/>
+        <bump_normal_texture file="units/pd2_dlc1/architecture/hcm_int_falcogini/hcm_int_painted_plaster_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_int_toilet_floor_tiles2" version="2">
+        <diffuse_texture file="units/pd2_dlc_cro/ind_security_building_a/textures/floor_tiles_01_df"/>
+        <bump_normal_texture file="units/pd2_dlc_cro/ind_security_building_a/textures/floor_tiles_01_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_int_toilet_wall_tiles2" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_int/int_textures/rvd_int_tiles_wall_02_df"/>
+        <bump_normal_texture file="units/pd2_dlc_rvd/architecture/rvd_int/int_textures/rvd_int_tiles_wall_02_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_int_toilet_wall_tiles_vtx2" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_int/int_textures/rvd_int_tiles_wall_02_df"/>
+        <bump_normal_texture file="units/pd2_dlc_rvd/architecture/rvd_int/int_textures/rvd_int_tiles_wall_02_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_metal_beam_01" version="2">
+        <diffuse_texture file="units/pd2_dlc_mex/architecture/ext_textures/mex_metal_beam_01_df"/>
+        <bump_normal_texture file="units/pd2_dlc_mex/architecture/ext_textures/mex_metal_beam_01_nm"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SIMPLE_TINT" name="mat_roof_dirty" version="2">
+        <diffuse_texture file="units/pd2_dlc_pex/architecture/int/int_textures/pex_int_plaster_01_df"/>
+        <bump_normal_texture file="units/pd2_dlc_pex/architecture/int/int_textures/pex_int_plaster_01_nm"/>
+        <variable type="vector3" name="tint_color" value="0.05196850299835 0.054346151649952 0.054346151649952"/>
+        <material_texture file="units/pd2_dlc_pex/architecture/int/int_textures/pex_int_plaster_01_gsma"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_upper_floow_walls" version="2">
+        <diffuse_texture file="units/pd2_mod_gunrunnerclubhouse/architecture/gunrunner_building/gunrunner_apartment_corridor_wall_01_df"/>
+        <bump_normal_texture file="units/payday2/architecture/res_ext_apartment/res_apartment_corridor_wall_01_nm"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SIMPLE_TINT" name="mat_upper_wall" version="2">
+        <diffuse_texture file="units/pd2_dlc_pex/architecture/int/int_textures/pex_int_plaster_01_df"/>
+        <bump_normal_texture file="units/pd2_dlc_pex/architecture/int/int_textures/pex_int_plaster_01_nm"/>
+        <variable type="vector3" name="tint_color" value="0.3 0.3 0.3"/>
+        <material_texture file="units/pd2_dlc_pex/architecture/int/int_textures/pex_int_plaster_01_gsma"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:SIMPLE_TINT" name="mat_wall_plaster" version="2">
+        <diffuse_texture file="units/pd2_dlc_pex/architecture/int/int_textures/pex_int_plaster_01_df"/>
+        <bump_normal_texture file="units/pd2_dlc_pex/architecture/int/int_textures/pex_int_plaster_01_nm"/>
+        <variable type="vector3" name="tint_color" value="0.25196850299835 0.054346151649952 0.054346151649952"/>
+        <material_texture file="units/pd2_dlc_pex/architecture/int/int_textures/pex_int_plaster_01_gsma"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_wood_floor" version="2">
+        <diffuse_texture file="units/pd2_dlc_chca/architecture/int/int_textures/chca_int_herringbone_wood_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_chca/architecture/int/int_textures/chca_int_herringbone_wood_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_chca/architecture/int/int_textures/chca_int_herringbone_wood_gsma" mip="1"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_wooden_beam_02" version="2">
+        <diffuse_texture file="units/pd2_dlc_born/architecture/bor_clubhouse/bor_clubhouse_wood_beams_df"/>
+        <bump_normal_texture file="units/pd2_dlc_born/architecture/bor_clubhouse/bor_clubhouse_wood_beams_nm"/>
+    </material>
+</materials>

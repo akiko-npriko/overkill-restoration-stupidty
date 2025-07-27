@@ -1,0 +1,11 @@
+<materials version="3">
+    <material name="mat_lxa_prop_debris_v2" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/pd2_dlc_holly/river/props/lxa_prop_debris/lxa_prop_debris_v2_df" mip="4"/>
+        <bump_normal_texture file="units/dev_tools/temp_textures/temp_texture_nm" mip="4"/>
+    </material>
+    <material name="mat_lxa_prop_debris_alpha_v2" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:NORMALMAP" version="2">
+        <diffuse_texture file="units/pd2_dlc_holly/river/props/lxa_prop_debris/lxa_prop_debris_alpha_v2_df" mip="4"/>
+        <bump_normal_texture file="units/dev_tools/temp_textures/temp_texture_nm" mip="4"/>
+        <variable value="0.0010000000474975" type="scalar" name="alpha_ref"/>
+    </material>
+</materials>

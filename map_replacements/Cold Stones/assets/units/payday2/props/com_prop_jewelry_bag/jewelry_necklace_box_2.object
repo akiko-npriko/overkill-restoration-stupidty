@@ -1,0 +1,21 @@
+<dynamic_object>
+    <diesel orientation_object="rp_luxury_necklace_box_2" materials="units/payday2/props/com_prop_jewelry_bag/jewelry_bag" />
+	<sequence_manager file="units/payday2/props/com_prop_jewelry_bag/jewelry_necklace_box_2" />
+	<bodies>
+        <body enabled="false" template="raycoll_static" name="body">
+            <object name="rp_luxury_necklace_box_2" />
+            <object enabled="true" name="g_necklace_box_2" collision_type="box" />
+        </body>
+		<body enabled="true" template="editor" name="editor">
+            <object name="rp_luxury_necklace_box_2" />
+            <object enabled="true" name="g_necklace_box_2" collision_type="box" />
+        </body>
+    </bodies>
+	<decal_surfaces default_material="plaster">
+        <decal_mesh enabled="true" name="dm_necklace_box_2" material="plaster" />
+    </decal_surfaces>
+    <graphics>
+        <object enabled="true" name="g_necklace_box_2" />
+        <object enabled="true" name="g_necklace1" />
+    </graphics>
+</dynamic_object>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/pd2_mod_venice/props/balcony/prop_balcony_new" orientation_object="rp_root" />
+	
+	<bodies>
+		<body name="body_main" enabled="true" template="static">
+			<object name="rp_root"/>
+			<object name="c_box_001"	collision_type="convex" padding="-2.5" />
+			<object name="c_box_002"	collision_type="convex" padding="-2.5" />
+			<object name="c_box_003"	collision_type="convex" padding="-2.5" />
+			<object name="c_box_004"	collision_type="convex" padding="-2.5" />
+			<object name="c_box_005"	collision_type="convex" padding="-2.5" />
+			<object name="c_box_006"	collision_type="convex" padding="-2.5" />
+			<object name="c_box_007"	collision_type="convex" padding="-2.5" />
+			<object name="c_box_008"	collision_type="convex" padding="-2.5" />
+			<object name="c_box_009"	collision_type="convex" padding="-2.5" />
+			<object name="c_box_010"	collision_type="convex" padding="-2.5" />
+			<object name="c_box_011"	collision_type="convex" padding="-2.5" />
+			<object name="c_box_012"	collision_type="convex" padding="-2.5" />
+			<object name="c_box_013"	collision_type="convex" padding="-2.5" />
+			<object name="c_box_014"	collision_type="convex" padding="-2.5" />
+		</body>
+	</bodies>
+	
+	<decal_surfaces default_material="tile">
+		<decal_mesh name="g_mortar_brick" enabled="true" material="tile" />
+	</decal_surfaces>
+	
+	<graphics>
+		<graphic_group name="g_group" enabled="true" culling_object="co_culling">
+			<object name="g_mortar_brick"	enabled="true" 	shadow_caster="true"/>
+		</graphic_group>
+	</graphics>
+</dynamic_object>

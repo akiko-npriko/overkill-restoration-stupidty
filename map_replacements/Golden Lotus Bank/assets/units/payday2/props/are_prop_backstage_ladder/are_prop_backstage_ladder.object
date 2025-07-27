@@ -1,0 +1,21 @@
+<dynamic_object>
+    <diesel orientation_object="rp_are_prop_backstage_ladder" materials="units/payday2/props/are_prop_backstage_ladder/are_prop_backstage_ladder" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body" >
+            <object name="rp_are_prop_backstage_ladder" />
+			<object collision_type="box" name="c_box_01" padding="-2.5"/>
+            <object collision_type="box" name="c_box_02" padding="-2.5"/>
+		</body>
+        <body enabled="true" template="fence" name="fence_body" >		
+            <object name="rp_are_prop_backstage_ladder" />
+            <object collision_type="box" name="c_box_03" padding="-2.5"/>
+            <object collision_type="box" name="c_box_04" padding="-2.5"/>
+        </body>
+    </bodies>
+    <decal_surfaces>
+        <decal_mesh enabled="true" name="dm_sheet_metal" material="sheet_metal" />
+    </decal_surfaces>
+    <graphics>
+        <object enabled="true" name="g_are_prop_backstage_ladder" shadow_caster="true"/>
+    </graphics>
+</dynamic_object>

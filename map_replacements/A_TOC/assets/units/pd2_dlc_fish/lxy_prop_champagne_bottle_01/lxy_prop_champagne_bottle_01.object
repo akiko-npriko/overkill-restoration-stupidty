@@ -1,0 +1,25 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_fish/lxy_prop_champagne_bottle_01/lxy_prop_champagne_bottle_01" orientation_object="rp_lxy_prop_champagne_bottle_01" />
+	<sequence_manager file="units/pd2_dlc_fish/lxy_prop_champagne_bottle_01/lxy_prop_champagne_bottle_01" />
+	<bodies>
+		<body name="static_body" enabled="true" template="raycoll_static">
+			<object name="rp_lxy_prop_champagne_bottle_01" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+
+	<decal_surfaces static="true" default_material="glass_breakable">
+		<decal_mesh name="dm_glass_breakable" enabled="true" material="glass_breakable" />
+	</decal_surfaces>
+
+	<graphics>
+		
+		<lod_object name="lod_g">
+			<object name="g_lod0" enabled="true" max_distance="1500" />
+			<object name="g_lod1" enabled="true" max_distance="3000" />
+			<object name="g_lod2" enabled="true" />			
+		</lod_object>
+
+		<object name="s_s" enabled="true" shadow_caster="true" />
+	</graphics>
+</dynamic_object>

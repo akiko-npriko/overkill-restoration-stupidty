@@ -1,0 +1,26 @@
+<dynamic_object>
+    <diesel orientation_object="rp_gen_prop_batroom_sink" materials="units/payday2/props/gen_prop_batroom_sink/gen_prop_batroom_sink" />
+ <bodies>
+        <body name="static_body" template="static" enabled="true" >
+            <object name="rp_gen_prop_batroom_sink"/>
+			<object name="c_box_01" collision_type="box" padding="-2.5"/>
+			<object name="c_box_02" collision_type="box" padding="-2.5"/>
+			<object name="c_box_03" collision_type="box" padding="-2.5"/>
+			<object name="c_box_04" collision_type="box" padding="-2.5"/>
+			<object name="c_box_05" collision_type="box" padding="-2.5"/>
+        </body>
+    </bodies>
+	
+	<decal_surfaces default_material="wood" static="true">
+		<decal_mesh name="dm_wood" material="wood" enabled="true"/>
+		<decal_mesh name="dm_marble" material="marble" enabled="true"/>
+		<decal_mesh name="dm_plastic" material="plastic" enabled="true"/>
+		<decal_mesh name="dm_glass_breakable" material="glass_breakable" enabled="true"/>
+	</decal_surfaces> 
+	
+    <graphics>
+        <object enabled="true" name="g_sink" />
+        <object enabled="true" name="g_mirror" />
+        <object enabled="true" shadow_caster="true" name="s_s" />
+    </graphics>
+</dynamic_object>

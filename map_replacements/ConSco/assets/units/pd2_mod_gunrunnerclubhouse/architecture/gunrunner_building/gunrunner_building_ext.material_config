@@ -1,0 +1,180 @@
+<materials version="3">
+    <material render_template="shadow_caster_only" name="shadow_caster" version="2"/>
+    <material render_template="generic" name="mat_blinn" version="2"/>
+    <material render_template="generic:BLEND_DIFFUSE:BLEND_GSMA:BLEND_MASK_CONTROL:BLEND_MASK_CROSSBLEND:BLEND_NORMAL:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_brick_wall_blend" version="2">
+        <diffuse_texture file="units/pd2_dlc_mex/architecture/ext_textures/mex_brick_wall_01_dirty_df"/>
+        <bump_normal_texture file="units/pd2_dlc_mad/architecture/mad_sawmill/mad_brick_wall_01_nm"/>
+        <diffuse_layer0_texture file="units/pd2_dlc_mex/architecture/ext_textures/mex_brick_wall_01_df"/>
+        <variable type="vector3" name="blend_control" value="0.12999999523163 0.20000000298023 0"/>
+        <normal_layer0_texture file="units/pd2_dlc_mad/architecture/mad_sawmill/mad_brick_wall_01_nm"/>
+        <material_texture file="units/pd2_dlc_mex/architecture/ext_textures/mex_brick_wall_01_dirty_gsma"/>
+        <diffuse_layer2_texture file="units/pd2_dlc_mex/architecture/ext_textures/mex_brick_wall_01_gsma"/>
+        <reflection_texture file="environments/cubemaps/cubemap_bank_01" type="cubemap"/>
+    </material>
+    <material render_template="generic:BLEND_DIFFUSE:BLEND_GSMA:BLEND_MASK_CONTROL:BLEND_MASK_CROSSBLEND:BLEND_NORMAL:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_brick_wall_blend_grout" version="2">
+        <diffuse_texture file="units/pd2_dlc_mex/architecture/ext_textures/mex_brick_wall_01_grout_df"/>
+        <bump_normal_texture file="units/pd2_dlc_mex/architecture/ext_textures/mex_brick_wall_01_grout_nm"/>
+        <diffuse_layer0_texture file="units/pd2_dlc_mex/architecture/ext_textures/mex_brick_wall_01_df"/>
+        <variable type="vector3" name="blend_control" value="0.3299999833107 0.5 0"/>
+        <normal_layer0_texture file="units/pd2_dlc_mad/architecture/mad_sawmill/mad_brick_wall_01_nm"/>
+        <material_texture file="units/pd2_dlc_mex/architecture/ext_textures/mex_brick_wall_01_dirty_gsma"/>
+        <diffuse_layer2_texture file="units/pd2_dlc_mex/architecture/ext_textures/mex_brick_wall_01_gsma"/>
+        <reflection_texture file="environments/cubemaps/cubemap_bank_01" type="cubemap"/>
+    </material>
+    <material render_template="generic:BLEND_DIFFUSE:BLEND_GSMA:BLEND_MASK_CONTROL:BLEND_MASK_CROSSBLEND:BLEND_NORMAL:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" name="mat_brick_wall" version="2">
+        <diffuse_texture file="units/pd2_dlc_mad/terrain/mad_ice_water/mad_snow_df"/>
+        <bump_normal_texture file="units/pd2_dlc_mad/architecture/mad_sawmill/mad_brick_wall_01_nm"/>
+        <diffuse_layer0_texture file="units/pd2_dlc_mad/architecture/mad_sawmill/mad_brick_wall_01_df"/>
+        <variable type="vector3" name="blend_control" value="0.5 0.5 0"/>
+        <normal_layer0_texture file="units/pd2_dlc_mad/architecture/mad_sawmill/mad_brick_wall_01_nm"/>
+        <material_texture file="units/pd2_dlc_mad/terrain/mad_ice_water/mad_snow_gsma"/>
+        <diffuse_layer2_texture file="units/pd2_dlc_mad/architecture/mad_sawmill/mad_brick_wall_01_gsma"/>
+        <reflection_texture file="environments/cubemaps/cubemap_bank_01" type="cubemap"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SIMPLE_TINT" name="mat_brick_wall_02" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_red_brick_df"/>
+        <bump_normal_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_red_brick_nm"/>
+        <material_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_red_brick_gsma"/>
+        <variable type="vector3" name="tint_color" value="0.40157479047775 0.33700788021088 0.22519685328007"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SIMPLE_TINT" name="mat_brick_window_details" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_red_brick_clean_df"/>
+        <bump_normal_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_red_brick_clean_nm"/>
+        <material_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_red_brick_clean_gsma"/>
+        <variable type="vector3" name="tint_color" value="0.45669293403625 0.43878343701363 0.32058054208755"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SIMPLE_TINT" name="mat_cinderblocks_01" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_cinderblocks_df"/>
+        <bump_normal_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_cinderblocks_nm"/>
+        <material_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_cinderblocks_gsma"/>
+        <variable type="vector3" name="tint_color" value="0.41732281446457 0.35513356328011 0.25039368867874"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SIMPLE_TINT" name="mat_concrete_blend" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_int_textures/dah_int_concrete_df"/>
+        <bump_normal_texture file="units/pd2_dlc_dah/architecture/dah_int_textures/dah_int_concrete_nm"/>
+        <variable type="vector3" name="tint_color" value="0.62204724550247 0.52691066265106 0.36347076296806"/>
+        <material_texture file="units/pd2_dlc_dah/architecture/dah_int_textures/dah_int_concrete_floor_01_gsma"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SIMPLE_TINT:VERTEX_COLOR" name="mat_concrete_blend_vxtc" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_int_textures/dah_int_concrete_df"/>
+        <bump_normal_texture file="units/pd2_dlc_dah/architecture/dah_int_textures/dah_int_concrete_nm"/>
+        <variable type="vector3" name="tint_color" value="0.62204724550247 0.52691066265106 0.36347076296806"/>
+        <material_texture file="units/pd2_dlc_dah/architecture/dah_int_textures/dah_int_concrete_floor_01_gsma"/>
+    </material>
+    <material render_template="generic:BLEND_DIFFUSE:BLEND_GSMA:BLEND_MASK_CONTROL:BLEND_MASK_CROSSBLEND:BLEND_NORMAL:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_corrugated_metal_blend" version="2">
+        <diffuse_texture file="units/pd2_dlc_mad/architecture/mad_sawmill/mad_rust_df"/>
+        <bump_normal_texture file="units/pd2_dlc_mad/architecture/mad_sawmill/mad_metal_corrugated_01_nm"/>
+        <diffuse_layer0_texture file="units/pd2_dlc_born/architecture/bor_clubhouse/bor_club_roof_plates_df"/>
+        <variable type="vector3" name="blend_control" value="0.37999999523163 0.5 0"/>
+        <normal_layer0_texture file="units/pd2_dlc_mad/architecture/mad_sawmill/mad_metal_corrugated_02_nm"/>
+        <material_texture file="units/pd2_dlc_mad/architecture/mad_sawmill/mad_rust_gsma"/>
+        <diffuse_layer2_texture file="units/pd2_dlc_mad/architecture/mad_sawmill/mad_metal_corrugated_01_gsma"/>
+        <reflection_texture file="environments/cubemaps/cubemap_bank_01" type="cubemap"/>
+    </material>
+    <material render_template="generic:BLEND_DIFFUSE:BLEND_GSMA:BLEND_MASK_CONTROL:BLEND_MASK_CROSSBLEND:BLEND_NORMAL:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_ext_bunker_concrete" version="2">
+        <diffuse_texture file="units/pd2_dlc_mex/architecture/ext_textures/mex_ext_base_concrete_01_df"/>
+        <bump_normal_texture file="units/pd2_dlc_mex/architecture/ext_textures/mex_ext_base_concrete_01_nm"/>
+        <diffuse_layer0_texture file="units/pd2_dlc_mex/terrain/mex_terrain_textures/mex_soil_small_pebbles_df"/>
+        <variable type="vector3" name="blend_control" value="0.25999999046326 0.90000003576279 0"/>
+        <normal_layer0_texture file="units/pd2_dlc_mex/terrain/mex_terrain_textures/mex_soil_small_pebbles_nm"/>
+        <material_texture file="units/pd2_dlc_mex/architecture/ext_textures/mex_ext_base_concrete_01_gsma"/>
+        <diffuse_layer2_texture file="units/pd2_dlc_mex/terrain/mex_terrain_textures/mex_soil_small_pebbles_gsma"/>
+        <reflection_texture file="environments/cubemaps/cubemap_bank_01" type="cubemap"/>
+    </material>
+    <diffuse_texture file="units/pd2_dlc_mex/architecture/ext_textures/mex_ext_base_concrete_01_df"/>
+    <bump_normal_texture file="units/pd2_dlc_mex/architecture/ext_textures/mex_ext_base_concrete_01_nm"/>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SIMPLE_TINT" name="mat_ext_plaster_01" version="2">
+        <diffuse_texture file="units/pd2_dlc_bph/architecture/bph_int/int_textures/bph_int_rough_plaster_df"/>
+        <bump_normal_texture file="units/pd2_dlc_bph/architecture/bph_int/int_textures/bph_int_plain_plaster_nm"/>
+        <material_texture file="units/pd2_dlc_bph/architecture/bph_int/int_textures/bph_int_rough_plaster_gsma"/>
+        <variable type="vector3" name="tint_color" value="1 0.80784320831299 0.52941179275513"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:SIMPLE_TINT" name="mat_ext_wall_trim" version="2">
+        <diffuse_texture file="units/payday2/architecture/res_ext_apartment/res_ext_apartment_trim_01_df"/>
+        <variable type="vector3" name="tint_color" value="0.78740155696869 0.78740155696869 0.78740155696869"/>
+        <bump_normal_texture file="units/payday2/architecture/res_ext_apartment/res_ext_apartment_trim_01_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SIMPLE_TINT" name="mat_metal_01" version="2">
+        <diffuse_texture file="units/pd2_dlc_des/tiling_textures/mat_metal_trim_sheet_01/des_metal_trim_sheet_01_df"/>
+        <bump_normal_texture file="units/pd2_dlc_des/tiling_textures/mat_metal_trim_sheet_01/des_metal_trim_sheet_01_nm"/>
+        <material_texture file="units/pd2_dlc_des/tiling_textures/mat_metal_trim_sheet_01/des_metal_trim_sheet_01_gsma"/>
+        <variable type="vector3" name="tint_color" value="0.48031497001648 0.4238073527813 0.32962793111801"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" name="mat_metal_stairs" version="2">
+        <diffuse_texture file="units/payday2/architecture/ind/ind_ext_outdoor_stairs_df"/>
+        <bump_normal_texture file="units/payday2/architecture/ind/ind_ext_outdoor_stairs_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:SIMPLE_TINT" name="mat_wooden_beam_01" version="2">
+        <diffuse_texture file="units/pd2_dlc_jerry/props/jry_prop_fence_wooden/jry_fence_wooden_df"/>
+        <variable type="vector3" name="tint_color" value="0.3464567065239 0.32743558287621 0.28124135732651"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:VERTEX_COLOR" name="mat_corrugated_metal" version="2">
+        <diffuse_texture file="units/pd2_dlc_mex/architecture/ext_textures/mex_corrugated_metal_roof_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" name="mat_plywood_01" version="2">
+        <diffuse_texture file="units/pd2_indiana/architecture/mus_int_lab/mus_int_lab_plywood_df"/>
+        <bump_normal_texture file="units/pd2_indiana/architecture/mus_int_lab/mus_int_lab_plywood_nm"/>
+    </material>
+    <material render_template="decal:DIFFUSE_TEXTURE" name="mat_decal_facade_ad_01" version="2">
+        <diffuse_texture file="units/pd2_dlc_mex/architecture/mex_bldg_a/mex_facade_ad_vintage_01_dcd"/>
+    </material>
+    <material render_template="decal:DIFFUSE_TEXTURE" name="mat_decal_facade_ad_02" version="2">
+        <diffuse_texture file="units/pd2_dlc_mex/architecture/mex_bldg_a/mex_facade_ad_vintage_02_dcd"/>
+    </material>
+    <material render_template="decal:DIFFUSE_TEXTURE" name="mat_decal_facade_ad_03" version="2">
+        <diffuse_texture file="units/pd2_dlc_mex/architecture/mex_bldg_a/mex_facade_ad_vintage_03_dcd"/>
+    </material>
+    <material render_template="decal:DIFFUSE_TEXTURE:OPACITY_TEXTURE:SIMPLE_TINT" name="mat_decal_graffiti_01" version="2">
+        <diffuse_texture file="units/pd2_dlc_chill/props/chl_props_graffiti/chl_props_graffiti5_df"/>
+        <opacity_texture file="units/pd2_dlc_chill/props/chl_props_graffiti/chl_props_graffiti5_op"/>
+        <variable type="vector3" name="tint_color" value="0.51233595609665 0.53543305397034 0.3464567065239"/>
+    </material>
+    <material render_template="decal:DIFFUSE_TEXTURE:OPACITY_TEXTURE" name="mat_decal_graffiti_02" version="2">
+        <diffuse_texture file="units/pd2_dlc_chill/props/chl_props_graffiti/chl_props_graffiti8_df"/>
+        <opacity_texture file="units/pd2_dlc_chill/props/chl_props_graffiti/chl_props_graffiti8_op"/>
+    </material>
+    <material render_template="decal:DIFFUSE_TEXTURE:OPACITY_TEXTURE:VERTEX_COLOR" name="mat_decal_tags" version="2">
+        <diffuse_texture file="units/pd2_dlc_chill/props/chl_props_graffiti/chl_props_tag_white_df"/>
+        <opacity_texture file="units/pd2_dlc_chill/props/chl_props_graffiti/chl_props_tags_op"/>
+    </material>
+    <material render_template="decal:DIFFUSE_TEXTURE:OPACITY_TEXTURE" name="mat_decal_graffiti_03" version="2">
+        <diffuse_texture file="units/pd2_dlc_chill/props/chl_props_graffiti/chl_props_graffiti4_df"/>
+        <opacity_texture file="units/pd2_dlc_chill/props/chl_props_graffiti/chl_props_graffiti4_op"/>
+    </material>
+    <material render_template="decal:DIFFUSE_TEXTURE" name="mat_decal_graffiti_04" version="2">
+        <diffuse_texture file="units/payday2/props/str_prop_decal_graffiti_clans/str_prop_decal_graffiti_clans_buff_df"/>
+    </material>
+    <material render_template="decal:DIFFUSE_TEXTURE" name="mat_decal_graffiti_05" version="2">
+        <diffuse_texture file="units/pd2_dlc_mex/architecture/mex_bldg_a/mex_decals_graffiti_01_dcd"/>
+    </material>
+    <material render_template="decal:DIFFUSE_TEXTURE:SIMPLE_TINT" name="mat_decal_graffiti_06" version="2">
+        <diffuse_texture file="units/pd2_dlc_mex/architecture/mex_bldg_a/mex_decals_graffiti_02_dcd"/>
+        <variable type="vector3" name="tint_color" value="0.5 0.46862748265266 0.34705883264542"/>
+    </material>
+    <material render_template="decal:DIFFUSE_TEXTURE:OPACITY_TEXTURE" name="mat_decal_mc_logo" version="2">
+        <diffuse_texture file="units/pd2_dlc_born/decals/bor_mc_logo_decal_df"/>
+        <opacity_texture file="units/pd2_dlc_born/decals/bor_mc_logo_decal_df"/>
+    </material>
+    <material render_template="decal:DIFFUSE_TEXTURE:OPACITY_TEXTURE" name="mat_decal_mc_texts" version="2">
+        <diffuse_texture file="units/pd2_dlc_born/decals/bor_mc_exterior_text_df"/>
+        <opacity_texture file="units/pd2_dlc_born/decals/bor_mc_exterior_text_df"/>
+    </material>
+    <material render_template="generic:BLEND_DIFFUSE:BLEND_GSMA:BLEND_MASK_CONTROL:BLEND_MASK_CROSSBLEND:BLEND_NORMAL:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" name="mat_corrugated_metal_01" version="2">
+        <diffuse_texture file="units/pd2_dlc_mad/architecture/mad_sawmill/mad_rust_df"/>
+        <bump_normal_texture file="units/pd2_dlc_mad/architecture/mad_sawmill/mad_metal_corrugated_01_nm"/>
+        <diffuse_layer0_texture file="units/pd2_dlc_mad/architecture/mad_sawmill/mad_metal_corrugated_01_df"/>
+        <variable type="vector3" name="blend_control" value="0.20000000298023 1 0"/>
+        <normal_layer0_texture file="units/pd2_dlc_mad/architecture/mad_sawmill/mad_metal_corrugated_01_nm"/>
+        <material_texture file="units/pd2_dlc_mad/architecture/mad_sawmill/mad_rust_gsma"/>
+        <diffuse_layer2_texture file="units/pd2_dlc_mad/architecture/mad_sawmill/mad_metal_corrugated_01_gsma"/>
+        <reflection_texture file="environments/cubemaps/cubemap_bank_01" type="cubemap"/>
+    </material>
+    <material render_template="decal:DIFFUSE_TEXTURE:OPACITY_TEXTURE" name="mat_decal_graffiti_07" version="2">
+        <diffuse_texture file="units/pd2_dlc_born/architecture/bor_bunker/bor_bunker_graffiti_df"/>
+        <opacity_texture file="units/pd2_dlc_born/architecture/bor_bunker/bor_bunker_graffiti_op"/>
+    </material>
+    <material render_template="effect:BLEND_MUL:DIFFUSE0_TEXTURE" name="mat_decal_dirt_01" version="2">
+        <diffuse_texture file="units/payday2/architecture/com_ext_parking_garage/com_ext_parking_garage_dirt_decals_mull_df"/>
+        <variable type="scalar" name="intensity" value="identity"/>
+    </material>
+</materials>

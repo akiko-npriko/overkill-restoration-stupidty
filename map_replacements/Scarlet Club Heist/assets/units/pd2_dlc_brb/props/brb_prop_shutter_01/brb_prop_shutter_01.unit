@@ -1,0 +1,12 @@
+<unit type="brb" slot="1">
+	<network sync="spawn"/>
+	<object file="units/pd2_dlc_brb/props/brb_prop_shutter_01/brb_prop_shutter_01" />
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+	</extensions>
+	<sounds>
+		<default_soundsource source="rp_brb_prop_shutter_01"/>
+		<soundsource name="snd" source="shutter_01" />
+	</sounds>
+</unit>

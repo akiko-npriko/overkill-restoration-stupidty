@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<dynamic_object>
+  <diesel materials="units/world/props/gym/gym_atlas/gym_atlas" orientation_object="rp_prop_gym_triceps_extension" />
+  <bodies>
+    <body name="static_body" enabled="true" template="static">
+      <object name="rp_prop_gym_triceps_extension" />
+      <object name="c_prop_gym_triceps_extension_mesh_mopp" collision_type="mesh_mopp" />
+    </body>
+  </bodies>
+  <decal_surfaces>
+    <decal_mesh name="g_prop_gym_triceps_extension" enabled="true" />
+  </decal_surfaces>
+  <graphics>
+    <object name="g_prop_gym_triceps_extension" enabled="true"  />
+  </graphics>
+</dynamic_object>

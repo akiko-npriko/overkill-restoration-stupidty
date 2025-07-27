@@ -1,0 +1,15 @@
+<materials version="3">
+    <material name="lxa_prop_kitchen_table_long_wood" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/payday2/props/lxa_prop_livingroom_fireplace/lxa_prop_livingroom_fireplace_df"/>
+        <bump_normal_texture file="units/payday2/props/lxa_prop_livingroom_fireplace/lxa_prop_livingroom_fireplace_nm"/>
+    </material>
+    <material name="lxa_prop_kitchen_table_long_glow" render_template="generic:DIFFUSE_TEXTURE" version="2">
+        <diffuse_texture file="units/payday2/props/lxa_prop_kitchen_table_long/lxa_kitchen_table_long_df"/>
+    </material>
+    <material version="2" decal_material="glass_breakable" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE" name="lxa_prop_kitchen_table_long_glass">
+        <variable value="0 1 0.59999996423721" type="vector3" name="fresnel_settings"/>
+        <opacity_texture file="units/payday2/glass/glass_clear_default_op"/>
+        <diffuse_texture file="units/payday2/glass/glass_clear_default_df"/>
+        <reflection_texture type="cubemap" global_texture="current_global_texture"/>
+    </material>
+</materials>

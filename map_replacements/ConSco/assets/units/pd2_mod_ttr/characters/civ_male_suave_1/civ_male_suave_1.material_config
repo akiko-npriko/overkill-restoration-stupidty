@@ -1,0 +1,42 @@
+<materials version="3" group="civ_male_mitch">
+     <material render_template="generic:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:RL_COPS:SKINNED_3WEIGHTS" name="mtr_head" version="2">
+        <bump_normal_texture file="units/pd2_mod_ttr/characters/civ_male_suave_1/civ_male_suave_1_head_nm"/>
+        <diffuse_texture file="units/pd2_mod_ttr/characters/civ_male_suave_1/civ_male_suave_1_head_df"/>
+		<material_texture file="units/pd2_dlc_chas/characters/shared_textures/ntr_male_asian_heads/ntr_male_asian_head_02_gsma"/>
+    </material>
+        <material render_template="generic:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:RL_COPS:SKINNED_3WEIGHTS" name="mtr_head_lod1" version="2">
+        <bump_normal_texture file="units/pd2_mod_ttr/characters/civ_male_suave_1/civ_male_suave_1_head_nm" mip="1"/>
+        <diffuse_texture file="units/pd2_mod_ttr/characters/civ_male_suave_1/civ_male_suave_1_head_df" mip="1"/>
+		        <material_texture file="units/pd2_dlc_chas/characters/shared_textures/ntr_male_asian_heads/ntr_male_asian_head_02_gsma"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:RL_COPS:SKINNED_3WEIGHTS" name="mtr_head_lod2" version="2">
+        <bump_normal_texture file="units/pd2_mod_ttr/characters/civ_male_suave_1/civ_male_suave_1_head_nm" mip="4"/>
+        <diffuse_texture file="units/pd2_mod_ttr/characters/civ_male_suave_1/civ_male_suave_1_head_df" mip="4"/>
+		        <material_texture file="units/pd2_dlc_chas/characters/shared_textures/ntr_male_asian_heads/ntr_male_asian_head_02_gsma"/>
+    </material>
+	
+	
+	<material name="mtr_hair" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:NORMALMAP:OPACITY_TEXTURE" version="2">
+		<diffuse_texture file="units/pd2_mod_ttr/characters/shared_textures/asian/ntr_hair_black_df"/>
+		<bump_normal_texture file="units/pd2_dlc_fex/characters/ntr_hair/ntr_generic_hair_nm"/>
+		<opacity_texture file="units/pd2_mod_ttr/characters/shared_textures/asian/ntr_generic_hair_op"/>
+		<variable name="alpha_ref" type="scalar" value="0.60"/>
+	</material>
+
+    <material name="mtr_body" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:RL_CIVILIANS:SKINNED_3WEIGHTS" version="2">
+        <bump_normal_texture file="units/pd2_dlc_pal/characters/civ_male_mitch/body_mitch_nm"/>
+        <diffuse_texture file="units/pd2_mod_ttr/characters/civ_male_suave_1/civ_male_suave_1_df"/>
+    </material>
+    <material name="mtr_body_lod1" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:RL_CIVILIANS:SKINNED_3WEIGHTS" version="2">
+        <bump_normal_texture file="units/pd2_dlc_pal/characters/civ_male_mitch/body_mitch_nm" mip="1"/>
+        <diffuse_texture file="units/pd2_mod_ttr/characters/civ_male_suave_1/civ_male_suave_1_df" mip="1"/>
+    </material>
+    <material name="mtr_body_lod2" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:RL_CIVILIANS:SKINNED_3WEIGHTS" version="2">
+        <bump_normal_texture file="units/pd2_dlc_pal/characters/civ_male_mitch/body_mitch_nm" mip="4"/>
+        <diffuse_texture file="units/pd2_mod_ttr/characters/civ_male_suave_1/civ_male_suave_1_df" mip="4"/>
+    </material>
+	
+
+	
+    <material name="shadow_caster" render_template="shadow_caster_only:SKINNED_1WEIGHT" version="2"/>
+</materials>

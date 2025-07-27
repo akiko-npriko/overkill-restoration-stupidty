@@ -1,0 +1,42 @@
+<dynamic_object>
+    <diesel orientation_object="rp_cas_int_prop_gambling_lamp_big_01" materials="units/pd2_dlc_casino/props/cas_prop_int_bar_lamp/cas_prop_int_gambling_lamp_big_01" />
+    <sequence_manager file="units/pd2_dlc_casino/props/cas_prop_int_bar_lamp/cas_prop_int_gambling_lamp_big_01" />
+    <bodies>
+        <body enabled="true" template="editor" name="static_body" >
+            <object collision_type="box" name="c_box_01" />
+        </body>
+    </bodies>
+    <effects>
+        <effect_spawner name="indoor_lamp_small" enabled="false" object="e_effect" effect="effects/payday2/particles/flares/indoor_lamp_small" />
+        <effect_spawner name="indoor_lamp_small1" enabled="false" object="e_effect1" effect="effects/payday2/particles/flares/indoor_lamp_small" />
+        <effect_spawner name="indoor_lamp_small2" enabled="false" object="e_effect2" effect="effects/payday2/particles/flares/indoor_lamp_small" />
+        <effect_spawner name="indoor_lamp_small3" enabled="false" object="e_effect3" effect="effects/payday2/particles/flares/indoor_lamp_small" />
+        <effect_spawner name="indoor_lamp_small4" enabled="false" object="e_effect4" effect="effects/payday2/particles/flares/indoor_lamp_small" />
+        <effect_spawner name="indoor_lamp_small5" enabled="false" object="e_effect5" effect="effects/payday2/particles/flares/indoor_lamp_small" />
+        <effect_spawner name="indoor_lamp_small6" enabled="false" object="e_effect6" effect="effects/payday2/particles/flares/indoor_lamp_small" />
+        <effect_spawner name="indoor_lamp_small7" enabled="false" object="e_effect7" effect="effects/payday2/particles/flares/indoor_lamp_small" />
+        <effect_spawner name="indoor_lamp_small8" enabled="false" object="e_effect8" effect="effects/payday2/particles/flares/indoor_lamp_small" />
+        <effect_spawner name="indoor_lamp_small9" enabled="false" object="e_effect9" effect="effects/payday2/particles/flares/indoor_lamp_small" />
+        <effect_spawner name="indoor_lamp_small10" enabled="false" object="e_effect10" effect="effects/payday2/particles/flares/indoor_lamp_small" />
+        
+        
+        
+        
+    </effects>
+    <graphics>
+        <object enabled="true" name="g_il_01" />
+        <object enabled="true" name="g_lamp_01" />
+        <object enabled="true" name="g_lamp_02" />
+        <object enabled="true" name="g_lamp_03" />
+        <object enabled="true" name="g_lamp_04" />
+        <object enabled="true" name="g_lamp_05" />
+        <object enabled="true" name="g_lamp_06" />
+        <object enabled="true" name="g_lamp_07" />
+        <object enabled="true" name="g_lamp_08" />
+        <object enabled="true" name="g_decal_dark01" />
+
+        
+        
+        
+    </graphics>
+</dynamic_object>

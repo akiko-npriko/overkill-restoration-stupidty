@@ -1,0 +1,20 @@
+<materials version="3">
+	<material name="mat_il" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:INSTANCED" version="2">
+		<diffuse_texture file="units/pd2_dlc_cage/props/ind_prop_cardealership_spotlight_ceiling/ind_prop_cardealership_spotlight_ceiling_glow_df" />
+        <variable value="dimlight" type="scalar" name="intensity"/>
+	</material>
+	<material name="mat_il_lod" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:INSTANCED" version="2">
+		<diffuse_texture file="units/pd2_dlc_cage/props/ind_prop_cardealership_spotlight_ceiling/ind_prop_cardealership_spotlight_ceiling_glow_df" mip="4" />
+        <variable value="dimlight" type="scalar" name="intensity"/>
+	</material>
+	<material name="mat_lamp" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:INSTANCED" version="2">
+		<diffuse_texture file="units/pd2_dlc_cage/props/ind_prop_cardealership_spotlight_ceiling/ind_prop_cardealership_spotlight_ceiling_df" />
+        <reflection_texture type="cubemap" file="environments/cubemaps/cubemap_steel"/>
+        <variable value="1 0 2" type="vector3" name="environment_settings"/>
+	</material>
+	<material name="mat_lamp_lod" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:INSTANCED" version="2">
+		<diffuse_texture file="units/pd2_dlc_cage/props/ind_prop_cardealership_spotlight_ceiling/ind_prop_cardealership_spotlight_ceiling_df" mip="3" />
+        <reflection_texture type="cubemap" file="environments/cubemaps/cubemap_steel"/>
+        <variable value="1 0 2" type="vector3" name="environment_settings"/>
+	</material>
+</materials>

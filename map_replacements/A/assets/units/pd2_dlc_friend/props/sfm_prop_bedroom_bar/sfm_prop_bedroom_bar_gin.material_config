@@ -1,0 +1,17 @@
+<materials version="3">
+	<material name="mat_gin" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_bar/sfm_prop_bedroom_bar_gin_df"/>
+        <opacity_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_bar/sfm_prop_bedroom_bar_gin_op"/>
+        <bump_normal_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_bar/sfm_prop_bedroom_bar_gin_nm"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <variable name="fresnel_settings" type="vector3" value="1.6799999475479 0 0.79999995231628" />
+	</material>
+	<material name="mat_gin_lod" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_bar/sfm_prop_bedroom_bar_gin_df" mip="4" />
+        <opacity_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_bar/sfm_prop_bedroom_bar_gin_op" mip="4" />
+        <bump_normal_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_bar/sfm_prop_bedroom_bar_gin_nm" mip="4" />
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <variable name="fresnel_settings" type="vector3" value="1.6799999475479 0 0.79999995231628" />
+	</material>
+	<material name="shadow_caster" render_template="shadow_caster_only" version="2" />
+</materials>

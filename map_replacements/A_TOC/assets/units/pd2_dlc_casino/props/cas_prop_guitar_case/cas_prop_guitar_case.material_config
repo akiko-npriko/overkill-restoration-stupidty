@@ -1,0 +1,7 @@
+<materials version="3">
+    <material name="Default" render_template="generic" version="2"/>
+    <material name="mat_case" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/pd2_dlc_casino/props/cas_prop_guitar_case/textures/guitar_case_df"/>
+        <bump_normal_texture file="units/pd2_dlc_casino/props/cas_prop_guitar_case/textures/guitar_case_nm"/>
+    </material>
+</materials>

@@ -1,0 +1,45 @@
+<dynamic_object>
+	<diesel materials="units/pd2_indiana/props/mus_prop_exhibit_c_pottery/mus_prop_exhibit_c_pottery_a" orientation_object="rp_mus_prop_exhibit_c_pottery_a" />
+	<sequence_manager file="units/pd2_indiana/props/mus_prop_exhibit_c_pottery/mus_prop_exhibit_c_pottery_a" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_mus_prop_exhibit_c_pottery_a" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_dmg_01" enabled="false" template="dynamic">
+			<object name="c_convex_01" collision_type="convex" padding="-2.5" mass="50"/>
+		</body>
+		<body name="body_dmg_02" enabled="false" template="dynamic">
+			<object name="c_convex_02" collision_type="convex" padding="-2.5" mass="50"/>			
+		</body>
+		<body name="body_dmg_03" enabled="false" template="dynamic">			
+			<object name="c_convex_03" collision_type="convex" padding="-2.5" mass="50"/>
+		</body>
+		<body name="body_dmg_04" enabled="false" template="dynamic">			
+			<object name="c_convex_04" collision_type="convex" padding="-2.5" mass="50"/>
+		</body>
+		<body name="body_dmg_05" enabled="false" template="dynamic">			
+			<object name="c_convex_05" collision_type="convex" padding="-2.5" mass="50"/>
+		</body>
+		<body name="body_dmg_06" enabled="false" template="dynamic">			
+			<object name="c_convex_06" collision_type="convex" padding="-2.5" mass="50"/>
+		</body>
+		<body name="body_dmg_07" enabled="false" template="dynamic">			
+			<object name="c_convex_07" collision_type="convex" padding="-2.5" mass="50"/>
+		</body>
+	</bodies>
+	<decal_surfaces default_material="thin_layer">
+		<decal_mesh name="dm_concrete" enabled="true" material="concrete" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_m" 			enabled="true" />
+		<object name="g_dmg_base" 	enabled="false" />
+		<object name="g_dmg_01" 	enabled="false" />
+		<object name="g_dmg_02" 	enabled="false" />
+		<object name="g_dmg_03" 	enabled="false" />
+		<object name="g_dmg_04" 	enabled="false" />
+		<object name="g_dmg_05" 	enabled="false" />
+		<object name="g_dmg_06" 	enabled="false" />
+		<object name="g_dmg_07" 	enabled="false" />
+	</graphics>	
+</dynamic_object>

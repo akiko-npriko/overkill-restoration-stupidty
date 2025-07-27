@@ -1,0 +1,34 @@
+<dynamic_object>
+    <diesel orientation_object="rp_gov_c_ext_roof_baluster_4x1m" materials="units/pd2_dlc2/architecture/gov_c_ext/gov_c_ext_roof_baluster"/>
+    
+	<bodies>
+		<body enabled="true" template="static" name="static_body">
+			<object name="rp_gov_c_ext_roof_baluster_4x1m" />
+			
+			<object name="c_capsule_00" collision_type="capsule" padding="-2.5"/>
+			<object name="c_capsule_01" collision_type="capsule" padding="-2.5"/>
+			<object name="c_capsule_02" collision_type="capsule" padding="-2.5"/>
+			<object name="c_capsule_03" collision_type="capsule" padding="-2.5"/>
+			<object name="c_capsule_04" collision_type="capsule" padding="-2.5"/>
+			<object name="c_capsule_05" collision_type="capsule" padding="-2.5"/>
+			<object name="c_capsule_06" collision_type="capsule" padding="-2.5"/>
+			<object name="c_capsule_07" collision_type="capsule" padding="-2.5"/>
+			<object name="c_capsule_08" collision_type="capsule" padding="-2.5"/>
+			<object name="c_capsule_09" collision_type="capsule" padding="-2.5"/>
+			
+			<object name="c_box_00" collision_type="box" padding="-2.5"/>
+			<object name="c_box_01" collision_type="box" padding="-2.5"/>
+			<object name="c_box_02" collision_type="box" padding="-2.5"/>
+			<object name="c_box_03" collision_type="box" padding="-2.5"/>
+		</body>
+	</bodies>
+	
+	<decal_surfaces default_material="concrete" static="true">
+		<decal_mesh name="dm_concrete" material="concrete" enabled="true"/>
+	</decal_surfaces>
+	
+	<graphics>
+		<object enabled="true" name="s_s" shadow_caster="true"/>
+		<object enabled="true" name="g_g" shadow_caster="false"/>
+    </graphics>
+</dynamic_object>

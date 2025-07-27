@@ -1,0 +1,17 @@
+<dynamic_object>
+    <diesel orientation_object="rp_lxa_prop_kitchen_drawers" materials="units/payday2/props/lxa_prop_kitchen_drawers/lxa_prop_kitchen_drawers" />
+    <bodies>
+        <body enabled="true" template="static" name="body0" >
+            <object name="rp_lxa_prop_kitchen_drawers" />
+            <object collision_type="box" name="c_box_01" />
+            <object collision_type="box" name="c_box_02" />
+        </body>
+    </bodies>
+    <decal_surfaces>
+        <decal_mesh enabled="true" name="c_box_01" material="plastic" />
+        <decal_mesh enabled="true" name="c_box_02" material="plastic" />
+    </decal_surfaces>
+    <graphics>
+        <object enabled="true" name="g_lxa_prop_kitchen_drawers" />
+    </graphics>
+</dynamic_object>

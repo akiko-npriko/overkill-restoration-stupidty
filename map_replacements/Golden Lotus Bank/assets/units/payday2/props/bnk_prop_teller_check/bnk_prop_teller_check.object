@@ -1,0 +1,11 @@
+<dynamic_object>
+    <diesel materials="units/payday2/props/bnk_prop_teller_check/bnk_prop_teller_check" orientation_object="rp_bnk_prop_teller_check" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body" >
+			<object name="c_box" collision_type="box" padding="-2.5"/>
+        </body>
+    </bodies>
+    <graphics>
+        <object enabled="true" name="g_check" />
+    </graphics>
+</dynamic_object>

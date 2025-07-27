@@ -1,0 +1,8 @@
+<table>
+	<unit>
+		<sequence editable_state="true" name="'explode'" once="true" startup="true">
+			<physic_effect name="'physic_effects/push_sphere_unit'" param1="25" param2="15" target="dest_unit:position()"/>
+			<slot slot="0" start_time="15.0"/>
+		</sequence>
+	</unit>
+</table>

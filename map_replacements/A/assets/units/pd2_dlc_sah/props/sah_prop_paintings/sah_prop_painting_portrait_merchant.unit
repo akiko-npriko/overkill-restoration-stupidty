@@ -1,0 +1,11 @@
+<unit type="sah" slot="1">
+	<object file="units/pd2_dlc_sah/props/sah_prop_paintings/sah_prop_painting_portrait_merchant" />
+	<network sync="spawn"/>
+	<dependencies>
+		<depends_on physic_effect="physic_effects/push_sphere_unit" />
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+	</extensions>
+</unit>

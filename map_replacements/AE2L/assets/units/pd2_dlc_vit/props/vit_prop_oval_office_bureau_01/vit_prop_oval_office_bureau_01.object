@@ -1,0 +1,25 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_vit/props/vit_prop_oval_office_bureau_01/vit_prop_oval_office_bureau_01" orientation_object="rp_vit_prop_oval_office_bureau_01" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_vit_prop_oval_office_bureau_01" />
+			<object name="c_box_1" collision_type="box" padding="-2.5" />
+			<object name="c_box_2" collision_type="box" padding="-2.5" />
+			<object name="c_box_3" collision_type="box" padding="-2.5" />
+			<object name="c_box_4" collision_type="box" padding="-2.5" />
+			<object name="c_box_5" collision_type="box" padding="-2.5" />
+			<object name="c_box_6" collision_type="box" padding="-2.5" />
+			<object name="c_meshmop_1" collision_type="mesh_mopp" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="metal">
+		<decal_mesh name="dm_metal" enabled="true" material="metal" />
+		<decal_mesh name="dm_wood" enabled="true" material="wood" />
+	</decal_surfaces>
+	<graphics>
+		<lod_object name="lod_g_prop_oval_office_bureau">
+			<object name="g_prop_oval_office_bureau_lod0" enabled="true" max_distance="1500" />
+			<object name="g_prop_oval_office_bureau_lod1" enabled="true" />
+		</lod_object>
+	</graphics>
+</dynamic_object>

@@ -1,0 +1,54 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_friend/props/sfm_prop_bedroom_bar/sfm_prop_bedroom_bar_decanter" orientation_object="rp_sfm_prop_bedroom_bar_decanter" />
+	<sequence_manager file="units/pd2_dlc_friend/props/sfm_prop_bedroom_bar/sfm_prop_bedroom_bar_decanter" />
+	<bodies>
+		<body name="body_static" enabled="true" template="window">
+			<object name="rp_sfm_prop_bedroom_bar_decanter" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_collision_01" template="window" enabled="false" pushed_by_mover="false" >
+			<object name="rp_sfm_prop_bedroom_bar_decanter" />
+			<object name="c_convex_01" collision_type="convex" padding="-2.5" />
+		</body>
+		<body name="body_collision_02" template="window" enabled="false" pushed_by_mover="false" >
+			<object name="rp_sfm_prop_bedroom_bar_decanter" />
+			<object name="c_convex_02" collision_type="convex" padding="-2.5" />
+		</body>
+		<body name="body_collision_03" template="window" enabled="false" pushed_by_mover="false" >
+			<object name="rp_sfm_prop_bedroom_bar_decanter" />
+			<object name="c_convex_03" collision_type="convex" padding="-2.5" />
+		</body>
+		<body name="body_collision_04" template="window" enabled="false" pushed_by_mover="false" >
+			<object name="rp_sfm_prop_bedroom_bar_decanter" />
+			<object name="c_convex_04" collision_type="convex" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="glass_breakable">
+		<decal_mesh name="dm_glass_breakable" enabled="true" material="glass_breakable" />
+	</decal_surfaces>
+	<graphics>
+		<lod_object name="lod_g">
+			<object name="g_lod0" enabled="true" max_distance="1500" />
+			<object name="g_lod1" enabled="true" />
+		</lod_object>
+		<graphic_group name="dmg_pieces" enabled="false">
+			<lod_object name="lod_g_dmg_01">
+				<object name="g_dmg_01_lod0" enabled="false" max_distance="1500" />
+				<object name="g_dmg_01_lod1" enabled="false" />
+			</lod_object>
+			<lod_object name="lod_g_dmg_02">
+				<object name="g_dmg_02_lod0" enabled="false" max_distance="1500" />
+				<object name="g_dmg_02_lod1" enabled="false" />
+			</lod_object>
+			<lod_object name="lod_g_dmg_03">
+				<object name="g_dmg_03_lod0" enabled="false" max_distance="1500" />
+				<object name="g_dmg_03_lod1" enabled="false" />
+			</lod_object>
+			<lod_object name="lod_g_dmg_04">
+				<object name="g_dmg_04_lod0" enabled="true" max_distance="1500" />
+				<object name="g_dmg_04_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+		<object name="s_s" enabled="true" shadow_caster="true" />
+	</graphics>
+</dynamic_object>

@@ -1,0 +1,28 @@
+<unit type="cas" slot="1">
+	<object file="units/pd2_dlc_casino/props/cas_prop_security_door/cas_prop_security_door" />
+	<network sync="spawn"/>
+	<dependencies>
+
+		<depends_on bnk="soundbanks/regular_sfx" />
+		<depends_on unit="units/pd2_dlc_casino/props/cas_prop_security_door/spawn_door_shards" />
+		<depends_on unit="units/payday2/equipment/item_door_drill_small/item_door_drill_small" />
+		<depends_on unit="units/payday2/equipment/gen_equipment_shape_charge/gen_equipment_shape_charge" />
+		<depends_on effect="effects/payday2/particles/explosions/shapecharger_explosion" />
+		<depends_on physic_effect="physic_effects/push_sphere" />
+
+	</dependencies>
+	<extensions>
+
+		<extension name="unit_data"			 class="ScriptUnitData" />
+		<extension name="damage"			 class="UnitDamage" />
+	
+		<extension name="base"				 class="MissionDoor" >
+			<var name="tweak_data"			 value="reinforced_door" />			
+		</extension>	
+		<extension name="interaction"		 class="UseInteractionExt">
+			<var name="tweak_data"			 value="pick_lock_hard_no_skill" />
+			<var name="_interact_object"	 value="interact_locator"/>
+		</extension>
+
+	</extensions>
+</unit>

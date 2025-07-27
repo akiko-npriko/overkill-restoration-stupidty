@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/world/architecture/suburbia/suburbia" orientation_object="rp_suburbia_pool_cellar" />
+	<sequence_manager file="units/world/architecture/suburbia/suburbia_pool_cellar" />
+	<!-- collision_group="5" -->
+	<bodies>
+		<body name="static_body" enabled="true" template="static">
+			<object name="rp_suburbia_pool_cellar"/>
+			<object collision_type="convex" name="c_convex_001" padding="-2.5"/>
+			<object collision_type="convex" name="c_convex_002" padding="-2.5"/>
+			
+			<object collision_type="box" name="c_box_000" padding="-2"/>
+			<object collision_type="box" name="c_box_001" padding="-2"/>
+			<object collision_type="box" name="c_box_002" padding="-2"/>
+			<object collision_type="box" name="c_box_003" padding="-2"/>
+			<object collision_type="box" name="c_box_004" padding="-2"/>
+			<object collision_type="box" name="c_box_005" padding="-2"/>
+			<object collision_type="box" name="c_box_006" padding="-2"/>
+			<object collision_type="box" name="c_box_007" padding="-2"/>
+			<object collision_type="box" name="c_box_008" padding="-2"/>
+			<object collision_type="box" name="c_box_009" padding="-2"/>
+			<object collision_type="box" name="c_box_010" padding="-2"/>
+			<object collision_type="box" name="c_box_011" padding="-2"/>
+			<object collision_type="box" name="c_box_012" padding="-2"/>
+			<object collision_type="box" name="c_box_013" padding="-2"/>
+			<object collision_type="box" name="c_box_014" padding="-2"/>
+			<object collision_type="box" name="c_box_015" padding="-2"/>
+			<object collision_type="box" name="c_box_016" padding="-2"/>
+			<object collision_type="box" name="c_box_017" padding="-2"/>
+			<object collision_type="box" name="c_box_018" padding="-2"/>
+			<object collision_type="box" name="c_box_019" padding="-2"/>
+			<object collision_type="box" name="c_box_020" padding="-2"/>
+			<object collision_type="box" name="c_box_021" padding="-2"/>
+			<object collision_type="box" name="c_box_022" padding="-2"/>
+			<object collision_type="box" name="c_box_023" padding="-2"/>
+			<object collision_type="box" name="c_box_024" padding="-2"/>
+			<object collision_type="box" name="c_box_025" padding="-2"/>
+			<object collision_type="box" name="c_box_026" padding="-2"/>
+			<object collision_type="box" name="c_box_027" padding="-2"/>
+			<object collision_type="box" name="c_box_028" padding="-2"/>
+			<object collision_type="box" name="c_box_029" padding="-2"/>
+			<object collision_type="box" name="c_box_030" padding="-2"/>
+			<object collision_type="box" name="c_box_031" padding="-2"/>
+			<object collision_type="box" name="c_box_032" padding="-2"/>
+			<object collision_type="box" name="c_box_033" padding="-2"/>
+			<object collision_type="box" name="c_box_034" padding="-2"/>
+			<object collision_type="box" name="c_box_035" padding="-2"/>
+			<object collision_type="box" name="c_box_036" padding="-2"/>
+			<object collision_type="box" name="c_box_037" padding="-2"/>
+			<object collision_type="box" name="c_box_038" padding="-2"/>
+			<object collision_type="box" name="c_box_040" padding="-2"/>
+
+		</body>
+		
+		<body name="fill" enabled="true" template="static">
+			<object collision_type="box" name="c_box_fill"/>
+		</body>
+		
+		
+		<body name="debris" enabled="false" template="static">
+			<object name="rp_suburbia_pool_cellar" />
+			<object collision_type="convex" name="c_convex_debris" padding="-2.5"/>
+			<object collision_type="box" name="c_box_039" padding="-2"/>
+		</body>
+
+	</bodies>
+
+	<decal_surfaces default_material="concrete" static="true">
+		<decal_mesh enabled="true" material="concrete" name="dm_concrete"/>
+		<decal_mesh enabled="true" material="concrete" name="dm_concrete_fill"/>
+		<decal_mesh enabled="true" material="concrete" name="dm_concrete_dest"/>
+	</decal_surfaces>
+
+	<graphics>
+		<object enabled="true" name="g_main"/>
+		<object enabled="true" name="g_fill"/>
+		<object enabled="false" name="g_dest"/>
+		
+		<!-- 
+		<object enabled="true" name="g_pipes_1"/>
+		<object enabled="true" name="g_pipes_2"/>
+		-->
+		
+		<object shadow_caster="true" enabled="true" name="s_fill"/>
+		<object shadow_caster="true" enabled="false" name="s_dest"/>
+		<object shadow_caster="true" enabled="true" name="s_s"/>
+	</graphics>
+</dynamic_object> 

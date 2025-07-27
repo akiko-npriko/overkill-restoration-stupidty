@@ -1,0 +1,60 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_berry/props/bry_prop_mountain_door_welding/bry_prop_mountain_door_welding" orientation_object="rp_bry_prop_mountain_door_welding" />
+	<sequence_manager file="units/pd2_dlc_berry/props/bry_prop_mountain_door_welding/bry_prop_mountain_door_welding" />
+
+	<animations>
+		<animation_group name="grp_anim_door" enabled="false">
+			<object name="anim_door" />
+		</animation_group>
+	</animations>
+
+	<bodies>
+		<body name="body_frame" enabled="true" template="static">
+			<object name="rp_bry_prop_mountain_door_welding" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+			<object name="c_box_04" collision_type="box" padding="-2.5" />
+		</body>
+
+		<body name="body_door" enabled="true" template="animated">
+			<object name="anim_door" />
+			<object name="c_box_05" collision_type="box" padding="-2.5" />
+			<object name="c_box_06" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+
+	<decal_surfaces default_material="metal">
+		<decal_mesh name="dm_metal_01" enabled="true" material="metal" />
+		<decal_mesh name="dm_metal_02" enabled="true" material="metal" />
+	</decal_surfaces>
+
+	<graphics>
+
+		<object name="g_hinge_01" enabled="true" />
+		<object name="g_hinge_02" enabled="true" />
+		<object name="g_hinge_03" enabled="true" />
+		<object name="g_hinge_04" enabled="true" />
+
+		<object name="g_hinge_01_dmg" enabled="false" />
+		<object name="g_hinge_02_dmg" enabled="false" />
+		<object name="g_hinge_03_dmg" enabled="false" />
+		<object name="g_hinge_04_dmg" enabled="false" />
+
+		<object name="g_welding_frame_01" enabled="false" />
+		<object name="g_welding_frame_02" enabled="false" />
+		<object name="g_welding_frame_03" enabled="false" />
+		<object name="g_welding_frame_04" enabled="false" />
+
+
+		<lod_object name="lod_g_door">
+			<object name="g_door_lod0" enabled="true" max_distance="2500" />
+			<object name="g_door_lod1" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_g_frame">
+			<object name="g_frame_lod0" enabled="true" max_distance="2500" />
+			<object name="g_frame_lod1" enabled="true" />
+		</lod_object>
+
+	</graphics>
+</dynamic_object>

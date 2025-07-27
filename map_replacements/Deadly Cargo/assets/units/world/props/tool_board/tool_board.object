@@ -1,0 +1,22 @@
+<dynamic_object>
+    <diesel orientation_object="rp_tool_board" materials="units/world/props/tool_board/tool_board" />
+    
+	<bodies>
+        <body enabled="true" template="static" name="body0" >
+            <object name="rp_tool_board" />
+            <object collision_type="box" name="c_box_board"   padding="-2" />
+            <object collision_type="box" name="c_box_metal_1" padding="-2" />
+            <object collision_type="box" name="c_box_metal_2" padding="-2" />
+            <object collision_type="box" name="c_box_metal_3" padding="-2" />
+        </body>
+    </bodies>    
+	
+	<decal_surfaces default_material="metal">
+        <decal_mesh enabled="true" name="dm_wood" material="wood" />
+        <decal_mesh enabled="true" name="dm_sheet_metal" material="sheet_metal" />
+    </decal_surfaces>
+   
+   <graphics>
+        <object enabled="true" name="g_g" />
+    </graphics>
+</dynamic_object>

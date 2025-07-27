@@ -1,0 +1,19 @@
+<dynamic_object>
+    <diesel orientation_object="rp_lamp" materials="units/payday2/props/off_prop_officehigh_lamp_floor/off_prop_officehigh_lamp_floor" />
+	<sequence_manager file="units/payday2/props/off_prop_officehigh_lamp_floor/off_prop_officehigh_lamp_floor" />
+  <bodies>
+    <body name="static_body" enabled="true" template="window" ray="ignore">
+			<object name="c_box_01" collision_type="box" padding="-2.5"/>
+			<object name="c_box_02" collision_type="box" padding="-2.5"/>
+			<object name="c_box_03" collision_type="box" padding="-2.5"/>
+			<object name="c_box_04" collision_type="box" padding="-2.5"/>
+    </body>
+	<body name="static_shade" enabled="true" template="static">
+			<object name="c_mesh_bullet" collision_type="mesh_mopp" />
+    </body>
+  </bodies>
+    <graphics>
+        <object name="g_lamp" enabled="true" />
+		<object name="s_lamp" enabled="true" shadow_caster="true"/>
+    </graphics>
+</dynamic_object>

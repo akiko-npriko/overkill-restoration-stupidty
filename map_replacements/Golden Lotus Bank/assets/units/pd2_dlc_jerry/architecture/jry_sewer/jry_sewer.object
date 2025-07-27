@@ -1,0 +1,33 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_jerry/architecture/jry_sewer/jry_sewer" orientation_object="rp_jry_sewer" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_jry_sewer" />
+			<object name="c_mesh_01" collision_type="mesh_mopp" padding="-2.5" />
+			<object name="c_mesh_02" collision_type="mesh_mopp" padding="-2.5" />
+			<object name="c_mesh_03" collision_type="mesh_mopp" padding="-2.5" />
+			<object name="c_mesh_04" collision_type="mesh_mopp" padding="-2.5" />
+			<object name="c_mesh_05" collision_type="mesh_mopp" padding="-2.5" />
+			<object name="c_mesh_06" collision_type="mesh_mopp" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+
+	<decal_surfaces default_material="concrete">
+		<decal_mesh name="c_mesh_06" enabled="true" material="water_puddle" />
+	</decal_surfaces>
+
+	<graphics>
+		<lod_object name="lod_g_sewer_part1">
+			<object name="g_sewer_part1_lod0" enabled="true" max_distance="10000" />
+			<object name="g_sewer_part1_lod1" enabled="true" />	
+		</lod_object>
+		<lod_object name="lod_g_sewer_part2">
+			<object name="g_sewer_part2_lod0" enabled="true" max_distance="20000" />
+			<object name="g_sewer_part2_lod1" enabled="true" />
+		</lod_object>
+		<object name="s_s" enabled="true" shadow_caster="true" />
+	</graphics>
+</dynamic_object>

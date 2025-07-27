@@ -1,0 +1,261 @@
+<?xml version="1.0" ?>
+<dynamic_object>
+	<diesel materials="units/payday2/architecture/hcm/hcm_ext_8x16m_e_corner" orientation_object="rp_hcm_ext_8x16m_e_corner" />
+	<sequence_manager file="units/payday2/architecture/hcm/hcm_ext_8x16m_e_corner" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_hcm_ext_8x16m_e_corner" />
+			<object name="c_mesh_mopp" collision_type="mesh_mopp" padding="-2.5"/>
+		</body>
+		
+		<body name="bag_blocker" enabled="true"  template="bag" collision_class="bag_blocker">
+            <object name="rp_hcm_ext_8x16m_e_corner"/>
+			<object name="c_box_railing_01" collision_type="box" padding="-2.5"/>
+			<object name="c_box_railing_02" collision_type="box" padding="-2.5"/>
+		</body>
+
+		<body name="body_win_5" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_5" />
+			<object name="c_box_win_5" collision_type="box" padding="-2.5"/>
+		</body>
+		<body name="body_win_6" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_6" />
+			<object name="c_box_win_6" collision_type="box" />
+		</body>
+		<body name="body_win_7" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_7" />
+			<object name="c_box_win_7" collision_type="box" />
+		</body>
+		<body name="body_win_8" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_8" />
+			<object name="c_box_win_8" collision_type="box" />
+		</body>
+		<body name="body_win_9" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_9" />
+			<object name="c_box_win_9" collision_type="box" />
+		</body>
+		<body name="body_win_10" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_10" />
+			<object name="c_box_win_10" collision_type="box" />
+		</body>
+		<body name="body_win_11" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_11" />
+			<object name="c_box_win_11" collision_type="box" />
+		</body>
+		<body name="body_win_12" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_12" />
+			<object name="c_box_win_12" collision_type="box" />
+		</body>
+		<body name="body_win_13" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_13" />
+			<object name="c_box_win_13" collision_type="box" />
+		</body>
+		<body name="body_win_14" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_14" />
+			<object name="c_box_win_14" collision_type="box" />
+		</body>
+		<body name="body_win_15" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_15" />
+			<object name="c_box_win_15" collision_type="box" />
+		</body>
+		<body name="body_win_16" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_16" />
+			<object name="c_box_win_16" collision_type="box" />
+		</body>
+		<body name="body_win_18" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_18" />
+			<object name="c_box_win_18" collision_type="box" />
+		</body>
+		<body name="body_win_19" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_19" />
+			<object name="c_box_win_19" collision_type="box" />
+		</body>
+		<body name="body_win_20" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_20" />
+			<object name="c_box_win_20" collision_type="box" />
+		</body>
+		<body name="body_win_22" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_22" />
+			<object name="c_box_win_22" collision_type="box" />
+		</body>
+		<body name="body_win_23" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_23" />
+			<object name="c_box_win_23" collision_type="box" />
+		</body>
+		<body name="body_win_24" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_24" />
+			<object name="c_box_win_24" collision_type="box" />
+		</body>
+		<body name="body_win_26" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_26" />
+			<object name="c_box_win_26" collision_type="box" />
+		</body>
+		<body name="body_win_27" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_27" />
+			<object name="c_box_win_27" collision_type="box" />
+		</body>
+		<body name="body_win_28" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_28" />
+			<object name="c_box_win_28" collision_type="box" />
+		</body>
+		<body name="body_win_30" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_30" />
+			<object name="c_box_win_30" collision_type="box" />
+		</body>
+		<body name="body_win_31" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_31" />
+			<object name="c_box_win_31" collision_type="box" />
+		</body>
+		<body name="body_win_34" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_34" />
+			<object name="c_box_win_34" collision_type="box" />
+		</body>
+		<body name="body_win_35" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_35" />
+			<object name="c_box_win_35" collision_type="box" />
+		</body>
+		<body name="body_win_36" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_36" />
+			<object name="c_box_win_36" collision_type="box" />
+		</body>
+		<body name="body_win_37" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_37" />
+			<object name="c_box_win_37" collision_type="box" />
+		</body>
+		<body name="body_win_38" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_38" />
+			<object name="c_box_win_38" collision_type="box" />
+		</body>
+		<body name="body_win_39" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_39" />
+			<object name="c_box_win_39" collision_type="box" />
+		</body>
+		<body name="body_win_40" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_40" />
+			<object name="c_mesh_win_40" collision_type="mesh_mopp" />
+		</body>
+		<body name="body_win_41" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_41" />
+			<object name="c_box_win_41" collision_type="box" />
+		</body>
+		<body name="body_win_42" enabled="true" template="static" remove_ray_type="vis_graph ai_vision">
+			<object name="e_win_42" />
+			<object name="c_box_win_42" collision_type="box" />
+		</body>
+	</bodies>
+
+	<decal_surfaces default_material="metal" static="true">
+		<decal_mesh name="g_hcm_ext_8x16m_e_corner"  		enabled="true" material="metal" />
+		<decal_mesh name="g_hcm_ext_8x16m_e_rail" 			enabled="true" material="metal" />
+		<decal_mesh name="g_hcm_ext_8x16m_e_corner_glass" 	enabled="true" material="glass_breakable" />
+
+		<decal_mesh name="dm_win_5" 						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_6" 						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_7" 						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_8" 						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_9" 						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_10"						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_11"						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_12"						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_13" 						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_14" 						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_15" 						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_16" 						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_18" 						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_19" 						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_20" 						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_22" 						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_23" 						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_24" 						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_26" 						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_27" 						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_28" 						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_30" 						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_31" 						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_34" 						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_35" 						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_36" 						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_37" 						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_38" 						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_39" 						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_40" 						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_41" 						enabled="false" material="glass_breakable" />
+		<decal_mesh name="dm_win_42" 						enabled="false" material="glass_breakable" />
+	</decal_surfaces>
+
+	<graphics>
+		<object name="g_railing_shadowcaster" enabled="true" shadow_caster="true"/>
+		<object name="s_s" enabled="true" shadow_caster="true"/>
+
+		<object name="g_hcm_ext_8x16m_e_corner_glass" 	enabled="true" />
+		<object name="g_hcm_ext_8x16m_e_corner" 		enabled="true" />
+		<object name="g_hcm_ext_8x16m_e_rail" 			enabled="true" />
+
+		<object name="g_win_5" 	    enabled="false" />
+		<object name="g_win_6" 	    enabled="false" />
+		<object name="g_win_7" 	    enabled="false" />
+		<object name="g_win_8" 	    enabled="false" />
+		<object name="g_win_9" 	    enabled="false" />
+		<object name="g_win_10"	    enabled="false" />
+		<object name="g_win_11"	    enabled="false" />
+		<object name="g_win_12"	    enabled="false" />
+		<object name="g_win_13"     enabled="false" />
+		<object name="g_win_14"     enabled="false" />
+		<object name="g_win_15"     enabled="false" />
+		<object name="g_win_16"     enabled="false" />
+		<object name="g_win_18"     enabled="false" />
+		<object name="g_win_19"     enabled="false" />
+		<object name="g_win_20"     enabled="false" />
+		<object name="g_win_22"     enabled="false" />
+		<object name="g_win_23"     enabled="false" />
+		<object name="g_win_24"     enabled="false" />
+		<object name="g_win_26"     enabled="false" />
+		<object name="g_win_27"     enabled="false" />
+		<object name="g_win_28"     enabled="false" />
+		<object name="g_win_30"     enabled="false" />
+		<object name="g_win_31"     enabled="false" />                                                    
+		<object name="g_win_34"     enabled="false" />
+		<object name="g_win_35"     enabled="false" />
+		<object name="g_win_36"     enabled="false" />
+		<object name="g_win_37"     enabled="false" />
+		<object name="g_win_38"     enabled="false" />
+		<object name="g_win_39"     enabled="false" />
+		<object name="g_win_40"     enabled="false" />
+		<object name="g_win_41"     enabled="false" />
+		<object name="g_win_42"     enabled="false" />
+                                                    
+		<object name="g_win_dmg_5" 	enabled="false" />
+		<object name="g_win_dmg_6" 	enabled="false" />
+		<object name="g_win_dmg_7" 	enabled="false" />
+		<object name="g_win_dmg_8" 	enabled="false" />
+		<object name="g_win_dmg_9" 	enabled="false" />
+		<object name="g_win_dmg_10"	enabled="false" />
+		<object name="g_win_dmg_11"	enabled="false" />
+		<object name="g_win_dmg_12"	enabled="false" />
+		<object name="g_win_dmg_13" enabled="false" />
+		<object name="g_win_dmg_14" enabled="false" />
+		<object name="g_win_dmg_15" enabled="false" />
+		<object name="g_win_dmg_16" enabled="false" />
+		<object name="g_win_dmg_18" enabled="false" />
+		<object name="g_win_dmg_19" enabled="false" />
+		<object name="g_win_dmg_20" enabled="false" />
+		<object name="g_win_dmg_22" enabled="false" />
+		<object name="g_win_dmg_23" enabled="false" />
+		<object name="g_win_dmg_24" enabled="false" />
+		<object name="g_win_dmg_26" enabled="false" />
+		<object name="g_win_dmg_27" enabled="false" />
+		<object name="g_win_dmg_28" enabled="false" />
+		<object name="g_win_dmg_30" enabled="false" />
+		<object name="g_win_dmg_31" enabled="false" />
+                                                    
+		<object name="g_win_dmg_34" enabled="false" />
+		<object name="g_win_dmg_35" enabled="false" />
+		<object name="g_win_dmg_36" enabled="false" />
+		<object name="g_win_dmg_37" enabled="false" />
+		<object name="g_win_dmg_38" enabled="false" />
+		<object name="g_win_dmg_39" enabled="false" />
+		<object name="g_win_dmg_40" enabled="false" />
+		<object name="g_win_dmg_41" enabled="false" />
+		<object name="g_win_dmg_42" enabled="false" />
+	</graphics>
+</dynamic_object>

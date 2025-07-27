@@ -1,0 +1,75 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_friend/props/sfm_prop_bedroom_vase/sfm_prop_bedroom_vase" orientation_object="rp_sfm_prop_bedroom_vase" />
+	<sequence_manager file="units/pd2_dlc_friend/props/sfm_prop_bedroom_vase/sfm_prop_bedroom_vase" />
+	
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_sfm_prop_bedroom_vase" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+
+		<body name="body_collision_01" enabled="false" template="dynamic" collides_with_mover="false" pushed_by_mover="false" >		
+			<object name="c_convex_01" collision_type="convex" padding="-2.5" />
+		</body>
+		<body name="body_collision_02" enabled="false" template="dynamic" collides_with_mover="false" pushed_by_mover="false" >				
+			<object name="c_convex_02" collision_type="convex" padding="-2.5" />
+		</body>
+		<body name="body_collision_03" enabled="false" template="dynamic" collides_with_mover="false" pushed_by_mover="false" >				
+			<object name="c_convex_03" collision_type="convex" padding="-2.5" />
+		</body>
+		<body name="body_collision_04" enabled="false" template="dynamic" collides_with_mover="false" pushed_by_mover="false" >				
+			<object name="c_convex_04" collision_type="convex" padding="-2.5" />
+		</body>
+	</bodies>
+
+
+
+	<decal_surfaces >
+		<decal_mesh name="dm_glass_breakable" enabled="true" material="glass_breakable" />
+	</decal_surfaces>
+
+
+	<graphics>
+
+		<graphic_group name="gfx_grp" enabled="true" culling_object="g_vase_lod0">
+			<lod_object name="lod_g_flower">
+				<object name="g_flower_lod0" enabled="true" max_distance="1500" />
+				<object name="g_flower_lod1" enabled="true" />
+			</lod_object>
+			<lod_object name="lod_g_vase">
+				<object name="g_vase_lod0" enabled="true" max_distance="1500" />
+				<object name="g_vase_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<graphic_group name="grp_dmg_01" enabled="false" culling_object="g_dmg_01_lod0">
+			<lod_object name="lod_g_dmg_01">
+				<object name="g_dmg_01_lod0" enabled="true" max_distance="1500" />
+				<object name="g_dmg_01_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<graphic_group name="grp_dmg_02" enabled="false" culling_object="g_dmg_02_lod0">
+			<lod_object name="lod_g_dmg_02">
+				<object name="g_dmg_02_lod0" enabled="true" max_distance="1500" />
+				<object name="g_dmg_02_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<graphic_group name="grp_dmg_03" enabled="false" culling_object="g_dmg_03_lod0">
+			<lod_object name="lod_g_dmg_03">
+				<object name="g_dmg_03_lod0" enabled="true" max_distance="1500" />
+				<object name="g_dmg_03_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+		
+		<graphic_group name="grp_dmg_04" enabled="false" culling_object="g_dmg_04_lod0">	
+			<lod_object name="lod_g_dmg_04">
+				<object name="g_dmg_04_lod0" enabled="true" max_distance="1500" />
+				<object name="g_dmg_04_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<object name="s_s" enabled="true" shadow_caster="false" />
+	</graphics>
+</dynamic_object>

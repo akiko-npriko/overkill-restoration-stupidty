@@ -1,0 +1,12 @@
+<unit type="off" slot="1" >
+    <object file="units/payday2/props/off_prop_officehigh_dividers/off_prop_officehigh_dividers_150_high_1_glass" />
+    <network sync="spawn"/>
+    <dependencies>
+    	<depends_on effect="effects/payday2/particles/destruction/des_glass_small" />
+    </dependencies>
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+        <extension name="damage" class="UnitDamage" />
+        <extension name="attention" class="AIAttentionObject" />
+    </extensions>
+</unit>

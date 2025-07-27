@@ -1,0 +1,18 @@
+<dynamic_object>
+    <diesel orientation_object="rp_sawblade_icon" materials="units/pd2_dlc_cro/sawblade_icon/sawblade_icon" />
+	<sequence_manager file="units/pd2_dlc_cro/sawblade_icon_1m_collision/sawblade_icon_1m_collision" />
+    <graphics>
+		<lod_object name="saw_icon">
+			<object name="g_icon_saw"   enabled="true"  max_distance="450"  max_draw_lod="0" />
+			<object name="g_icon_saw_lod01"  enabled="true"  lod="1" />
+		</lod_object> 
+    </graphics>
+	
+	<bodies>
+		<body enabled="true" collides_with_mover="false" template="static" name="saw_collider">
+            <object name="c_box_saw_sensitive" collision_type="box" />
+        </body>
+    </bodies>
+</dynamic_object>
+
+

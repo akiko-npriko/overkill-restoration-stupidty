@@ -1,0 +1,11 @@
+<dynamic_object>
+    <diesel orientation_object="rp_hcm_ext_facade_a" materials="units/pd2_dlc2/architecture/gov_d_ext/hcm_ext_facade_a" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body" >
+            <object name="c_box_00" padding="-2.5" collision_type="box"/>
+        </body>
+    </bodies>
+    <graphics>
+        <object enabled="true" name="g_facade_a" />
+    </graphics>
+</dynamic_object>

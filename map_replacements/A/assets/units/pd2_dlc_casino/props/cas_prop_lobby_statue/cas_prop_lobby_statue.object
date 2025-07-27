@@ -1,0 +1,137 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_casino/props/cas_prop_lobby_statue/cas_prop_lobby_statue" orientation_object="rp_cas_prop_lobby_statue" />
+	<sequence_manager file="units/pd2_dlc_casino/props/cas_prop_lobby_statue/cas_prop_lobby_statue" />
+	<bodies>
+
+		<body name="static_head" enabled="true" template="static">
+			<object name="rp_cas_prop_lobby_statue" />
+			<object name="c_convex_head" collision_type="convex" padding="-2.5" />
+		</body>
+
+		<body name="static_right_arm" enabled="true" template="static">
+			<object name="rp_cas_prop_lobby_statue" />
+			<object name="c_convex_right_hand" collision_type="convex" padding="-2.5" />
+			<object name="c_capsule_right_arm" collision_type="capsule" padding="-2.5" />
+		</body>
+
+		<body name="static_left_arm" enabled="true" template="static">
+			<object name="rp_cas_prop_lobby_statue" />
+			<object name="c_capsule_left_arm_01" collision_type="capsule" padding="-2.5" />
+			<object name="c_capsule_left_arm_02" collision_type="capsule" padding="-2.5" />
+		</body>
+
+		<body name="static_body_01" enabled="true" template="static">
+			<object name="rp_cas_prop_lobby_statue" />
+			<object name="c_convex_body_01" collision_type="convex" padding="-2.5" />
+		</body>
+
+		<body name="static_body_02" enabled="true" template="static">
+			<object name="rp_cas_prop_lobby_statue" />
+			<object name="c_convex_body_02" collision_type="convex" padding="-2.5" />
+		</body>
+
+		<body name="static_body_03" enabled="true" template="static">
+			<object name="rp_cas_prop_lobby_statue" />
+			<object name="c_convex_body_03" collision_type="convex" padding="-2.5" />
+		</body>
+
+		<body name="static_body_04" enabled="true" template="static">
+			<object name="rp_cas_prop_lobby_statue" />
+			<object name="c_convex_body_04" collision_type="convex" padding="-2.5" />
+			<object name="c_convex_body_05" collision_type="convex" padding="-2.5" />
+		</body>
+
+		<body name="static_right_leg" enabled="true" template="static">
+			<object name="rp_cas_prop_lobby_statue" />
+			<object name="c_convex_right_leg_01" collision_type="convex" padding="-2.5" />
+		</body>
+
+		<body name="static_left_leg" enabled="true" template="static">
+			<object name="rp_cas_prop_lobby_statue" />
+			<object name="c_convex_left_leg_01" collision_type="convex" padding="-2.5" />
+			<object name="c_convex_left_leg_02" collision_type="convex" padding="-2.5" />
+		</body>
+
+		<body name="static_podium" enabled="true" template="static">
+			<object name="rp_cas_prop_lobby_statue" />
+			<object name="c_box_podium" collision_type="box" padding="-2.5" />
+		</body>
+
+	</bodies>
+
+	<decal_surfaces default_material="marble" />
+
+	<graphics>
+
+		<graphic_group name="grp_body_01" enabled="true" >
+			<lod_object name="lod_g_body_01">
+				<object name="g_body_01_lod0" enabled="true" max_distance="5000" />
+				<object name="g_body_01_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<graphic_group name="grp_body_02" enabled="true" >
+			<lod_object name="lod_g_body_02">
+				<object name="g_body_02_lod0" enabled="true" max_distance="5000" />
+				<object name="g_body_02_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<graphic_group name="grp_body_03" enabled="true" >
+			<lod_object name="lod_g_body_03">
+				<object name="g_body_03_lod0" enabled="true" max_distance="5000" />
+				<object name="g_body_03_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<graphic_group name="grp_body_04" enabled="true" >
+			<lod_object name="lod_g_body_04">
+				<object name="g_body_04_lod0" enabled="true" max_distance="5000" />
+				<object name="g_body_04_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<graphic_group name="grp_head" enabled="true" >
+			<lod_object name="lod_g_head">
+				<object name="g_head_lod0" enabled="true" max_distance="5000" />
+				<object name="g_head_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<graphic_group name="grp_left_arm" enabled="true" >
+			<lod_object name="lod_g_left_arm">
+				<object name="g_left_arm_lod0" enabled="true" max_distance="5000" />
+				<object name="g_left_arm_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<graphic_group name="grp_left_leg" enabled="true" >
+			<lod_object name="lod_g_left_leg">
+				<object name="g_left_leg_lod0" enabled="true" max_distance="5000" />
+				<object name="g_left_leg_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<graphic_group name="grp_podium" enabled="true" >
+			<lod_object name="lod_g_podium">
+				<object name="g_podium_lod0" enabled="true" max_distance="5000" />
+				<object name="g_podium_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<graphic_group name="grp_right_arm" enabled="true" >
+			<lod_object name="lod_g_right_arm">
+				<object name="g_right_arm_lod0" enabled="true" max_distance="5000" />
+				<object name="g_right_arm_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<graphic_group name="grp_right_leg" enabled="true" >
+			<lod_object name="lod_g_right_leg">
+				<object name="g_right_leg_lod0" enabled="true" max_distance="5000" />
+				<object name="g_right_leg_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+		
+	</graphics>
+</dynamic_object>

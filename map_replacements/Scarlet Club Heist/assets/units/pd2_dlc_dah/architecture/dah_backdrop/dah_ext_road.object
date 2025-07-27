@@ -1,0 +1,12 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_dah/architecture/dah_backdrop/dah_ext_road" orientation_object="rp_dah_ext_road" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_dah_ext_road" />
+			<object name="c_box" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<graphics>
+		<object name="g_g" enabled="true" />
+	</graphics>
+</dynamic_object>

@@ -1,0 +1,76 @@
+<materials version="3">
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR:VERTEX_COLOR_ALPHA" name="mat_sfm_bedroom_pillar" version="2">
+        <diffuse_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_pillar/sfm_prop_bedroom_pillar_whitemarble_df"/>
+        <bump_normal_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_pillar/sfm_prop_bedroom_pillar_whitemarble_nm"/>
+        <material_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_pillar/sfm_prop_bedroom_pillar_whitemarble_gsma"/>
+        <reflection_texture file="units/payday2/cubemaps/cubemap_carshop_tunnels" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_mainroom_wall_red_square" version="2">
+        <diffuse_texture file="units/pd2_dlc_friend/architecture/int/textures/sfm_staircaseroom_wall_df"/>
+        <reflection_texture file="units/payday2/cubemaps/cubemap_carshop_tunnels" type="cubemap"/>
+        <material_texture file="units/pd2_dlc_friend/architecture/int/sfm_int_mainroom/sfm_mainroom_wall_gsma"/>
+        <bump_normal_texture file="units/pd2_dlc_friend/architecture/int/sfm_int_mainroom/sfm_mainroom_wall_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:VERTEX_COLOR" name="mat_sfm_int_staircaseroom_walls" version="2">
+        <diffuse_texture file="units/pd2_dlc_friend/architecture/int/textures/sfm_int_staircaseroom_walls_df"/>
+        <material_texture file="units/pd2_dlc_friend/architecture/int/textures/sfm_int_staircaseroom_walls_gsma"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_sfm_main_white_marble1" version="2">
+        <diffuse_texture file="units/pd2_dlc_friend/architecture/int/textures/sfm_mainroom_stairs_marble_df"/>
+        <bump_normal_texture file="units/pd2_dlc_friend/architecture/int/textures/sfm_int_white_marble_nm" mip="1"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR:VERTEX_COLOR_ALPHA" name="mat_sfm_mainroom_carpet" version="2">
+        <diffuse_texture file="units/pd2_dlc_friend/architecture/int/textures/sfm_staircaseroom_carpet_df"/>
+        <bump_normal_texture file="units/pd2_dlc_friend/architecture/int/textures/sfm_staircaseroom_carpet_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_friend/architecture/int/textures/sfm_staircaseroom_carpet_gsma"/>
+        <reflection_texture type="cubemap" global_texture="current_global_texture"/>
+    </material>
+    <material render_template="generic:ALPHA_MASKED:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:NORMALMAP:OPACITY_TEXTURE" name="mat_sfm_mainroom_railings" version="2">
+        <diffuse_texture file="units/pd2_dlc_friend/architecture/int/sfm_int_mainroom/sfm_mainroom_staircase_railings_df"/>
+        <bump_normal_texture file="units/pd2_dlc_friend/architecture/int/sfm_int_mainroom/sfm_mainroom_staircase_railings_nm"/>
+        <opacity_texture file="units/pd2_dlc_friend/architecture/int/sfm_int_mainroom/sfm_mainroom_staircase_railings_op"/>
+        <variable type="scalar" name="alpha_ref" value="0.68900003272574"/>
+        <reflection_texture file="units/payday2/cubemaps/cubemap_carshop_tunnels" type="cubemap"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_sfm_mainroom_red_wall" version="2">
+        <diffuse_texture file="units/pd2_dlc_casino/architecture/textures/cas_int_cloth_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_sfm_mainroom_shutterstock" version="2">
+        <diffuse_texture file="units/pd2_dlc_chill/props/chl_prop_cardboard_swat_a/chl_prop_cardboard_shutterstock_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_sfm_pillar_plinth" version="2">
+        <diffuse_texture file="units/pd2_dlc_friend/architecture/int/sfm_int_mainroom/sfm_mainroom_pillar_plinth_df"/>
+        <bump_normal_texture file="units/pd2_dlc_friend/architecture/int/sfm_int_mainroom/sfm_mainroom_pillar_plinth_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_sfm_mainroon_dado_rail" version="2">
+        <diffuse_texture file="units/pd2_dlc_friend/architecture/int/textures/sfm_mainroom_marble_dado_rail_df"/>
+        <bump_normal_texture file="units/pd2_dlc_friend/architecture/int/textures/sfm_mainroom_marble_dado_rail_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" name="mat_sfm_int_mainroom_railing_plinth" version="2">
+        <diffuse_texture file="units/pd2_dlc_friend/architecture/int/textures/sfm_int_mainroom_railing_plinth_df"/>
+        <bump_normal_texture file="units/pd2_dlc_friend/architecture/int/textures/sfm_int_mainroom_railing_plinth_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_sfm_mainroom_white_door" version="2">
+        <diffuse_texture file="units/pd2_dlc_friend/props/sfm_prop_office_door_black/sfm_prop_office_door_white_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_sfm_mainroom_ceiling" version="2">
+        <diffuse_texture file="units/pd2_dlc_friend/architecture/int/textures/sfm_int_staircaseroom_ceiling_df"/>
+        <bump_normal_texture file="units/pd2_dlc_friend/architecture/int/textures/sfm_int_bedroom_whitewalls_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_friend/architecture/int/textures/sfm_int_bedroom_whitewalls_gsma" mip="1"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" name="mat_prop_bedroom_doorcrest_white" version="2">
+        <diffuse_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_crest/sfm_prop_bedroom_crest_df"/>
+        <bump_normal_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_crest/sfm_prop_bedroom_crest_nm"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_sfm_prop_mainroom_pillar_gold" version="2">
+        <diffuse_texture file="units/pd2_dlc_friend/architecture/int/textures/sfm_int_mainroom_pillar_gold_df"/>
+        <bump_normal_texture file="units/pd2_dlc_friend/architecture/int/textures/sfm_int_mainroom_pillar_gold_nm"/>
+        <reflection_texture file="units/payday2/cubemaps/cubemap_carshop_tunnels" type="cubemap"/>
+        <material_texture file="units/pd2_dlc_friend/architecture/int/textures/sfm_int_mainroom_pillar_gold_gsma"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_sfm_prop_mainroom_pillar_wood" version="2">
+        <diffuse_texture file="units/pd2_dlc_friend/architecture/int/textures/sfm_int_mainroom_pillar_df"/>
+        <bump_normal_texture file="units/pd2_dlc_friend/architecture/int/textures/sfm_int_mainroom_pillar_nm"/>
+    </material>
+    <material name="shadow_caster" render_template="shadow_caster_only" version="2" />
+</materials>

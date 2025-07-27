@@ -1,0 +1,13 @@
+<unit type="rvd" slot="1">
+	<network sync="spawn"/>
+	<object file="units/pd2_dlc_rvd/props/rvd_prop_nitrogen_canister/rvd_prop_nitrogen_canister" />
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="SpecialEquipmentInteractionExt">
+			<var name="_special_equipment" value="liquid_nitrogen" />
+			<var name="_remove_on_interact" value="true" />
+			<var name="tweak_data" value="press_take_liquid_nitrogen" />
+		</extension>
+	</extensions>
+</unit>

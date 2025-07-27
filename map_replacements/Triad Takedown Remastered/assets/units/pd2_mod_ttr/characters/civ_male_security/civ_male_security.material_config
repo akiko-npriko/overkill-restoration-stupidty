@@ -1,0 +1,18 @@
+<materials version="3" group="civ_male_boss_2">
+    <material name="mtr_head" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:RL_CIVILIANS:SKINNED_3WEIGHTS" version="2">
+        <bump_normal_texture 	file="units/pd2_dlc_chca/characters/civ_male_lideng/civ_male_lideng_head_nm"/>
+        <diffuse_texture 		file="units/pd2_dlc_chca/characters/civ_male_lideng/civ_male_lideng_head_df"/>
+    </material>
+    <material name="mtr_body" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:RL_CIVILIANS:SKINNED_3WEIGHTS" version="2">
+        <bump_normal_texture 	file="units/pd2_dlc_chca/characters/civ_male_lideng/civ_male_lideng_body_nm"/>
+        <diffuse_texture 		file="units/pd2_mod_ttr/characters/civ_male_security/civ_male_security_body_df"/>
+    </material>
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:DOUBLE_SIDED:EXTERNAL_ALPHA_REF:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:OPACITY_TEXTURE:RL_CIVILIANS:SKINNED_3WEIGHTS" name="mtr_hair" version="2">
+        <bump_normal_texture file="units/pd2_dlc_pex/characters/ntr_hair/ntr_hair_nm"/>
+        <diffuse_texture file="units/pd2_dlc_pex/characters/ntr_hair/ntr_hair_brown_df"/>
+        <opacity_texture file="units/pd2_dlc_pex/characters/ntr_hair/ntr_hair_op"/>
+        <variable type="scalar" name="alpha_ref" value="0.12100000574719"/>
+        <material_texture file="units/pd2_dlc_pex/characters/ntr_hair/ntr_hair_gsma"/>
+    </material>
+    <material name="shadow_caster" render_template="shadow_caster_only:SKINNED_1WEIGHT" version="2"/>
+</materials>

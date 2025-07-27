@@ -1,0 +1,44 @@
+<dynamic_object>
+    <diesel orientation_object="rp_cas_yard_01" materials="units/pd2_dlc_casino/architecture/cas_ext_yard_area_01/cas_ext_yard_area_01" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body">
+            <object name="rp_cas_yard_01" />
+            <object name="c_box_01" collision_type="box" padding="-2.5" />
+            <object name="c_box_02" collision_type="box" padding="-2.5" />
+            <object name="c_box_03" collision_type="box" padding="-2.5" />
+            <object name="c_box_04" collision_type="box" padding="-2.5" />
+            <object name="c_box_05" collision_type="box" padding="-2.5" />
+            <object name="c_box_06" collision_type="box" padding="-2.5" />
+            <object name="c_box_07" collision_type="box" padding="-2.5" />
+            <object name="c_box_08" collision_type="box" padding="-2.5" />
+            <object name="c_box_09" collision_type="box" padding="-2.5" />
+            <object name="c_box_10" collision_type="box" padding="-2.5" />
+            <object name="c_box_11" collision_type="box" padding="-2.5" />
+            <object name="c_box_12" collision_type="box" padding="-2.5" />
+            <object name="c_box_13" collision_type="box" padding="-2.5" />
+            <object name="c_box_14" collision_type="box" padding="-2.5" />
+            <object name="c_box_15" collision_type="box" padding="-2.5" />
+            <object name="c_box_16" collision_type="box" padding="-2.5" />
+            <object name="c_box_17" collision_type="box" padding="-2.5" />
+            <object name="c_box_18" collision_type="box" padding="-2.5" />
+            <object name="c_box_19" collision_type="box" padding="-2.5" />
+            <object name="c_box_20" collision_type="box" padding="-2.5" />
+            <object name="c_box_21" collision_type="box" padding="-2.5" />
+            <object name="c_box_22" collision_type="box" padding="-2.5" />
+            <object name="c_box_23" collision_type="box" padding="-2.5" />
+            <object name="c_box_24" collision_type="box" padding="-2.5" />
+            <object name="c_convex_01" collision_type="convex" padding="-2.5" />
+            <object name="c_convex_02" collision_type="convex" padding="-2.5" />
+            <object name="c_convex_03" collision_type="convex" padding="-2.5" />
+            <object name="c_meshmopp_01" collision_type="mesh_mopp" padding="-2.5" />
+            <object name="c_meshmopp_02" collision_type="mesh_mopp" padding="-2.5" />
+        </body>
+    </bodies>
+    <decal_surfaces>
+        <decal_mesh name="dm_concrete" enabled="true" material="concrete" />
+    </decal_surfaces>
+    <graphics>
+        <object name="g_cas_yard_01" enabled="true" />
+        <object name="s_cas_yard" enabled="true" shadow_caster="true" />
+    </graphics>
+</dynamic_object>

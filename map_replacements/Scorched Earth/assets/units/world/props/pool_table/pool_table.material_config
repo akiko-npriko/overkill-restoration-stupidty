@@ -1,0 +1,9 @@
+<materials version="3">
+    <material name="mat_pool_table" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GLOSS_CONTROL_VALUE:NORMALMAP:VERTEX_COLOR" version="2">
+        <diffuse_texture file="units/world/props/pool_table/pool_table_df"/>
+        <bump_normal_texture file="units/world/props/pool_table/pool_table_nm"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <variable value="0.76700001955032" type="scalar" name="glossiness_control"/>
+    </material>
+    <material version="2" render_template="shadow_caster_only" name="shadow_caster"/>
+</materials>

@@ -1,0 +1,14 @@
+<unit type="chas" slot="1">
+	<object file="units/payday2/architecture/glb/glb_int_teashop_destroyed_wall_brick" />
+	<network sync="spawn"/>
+ 	<dependencies>
+	 	<depends_on bnk="soundbanks/regular_sfx" />
+	 	<depends_on effect="effects/payday2/particles/impacts/car_crash_concrete_big" />
+	 </dependencies>
+
+
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+	</extensions>
+</unit>

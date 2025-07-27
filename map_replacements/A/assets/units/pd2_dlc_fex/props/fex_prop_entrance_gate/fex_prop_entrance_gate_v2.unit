@@ -1,0 +1,25 @@
+<unit type="fex" slot="1">
+	<object file="units/pd2_dlc_fex/props/fex_prop_entrance_gate/fex_prop_entrance_gate_v2" />
+	<network sync="spawn"/>
+    <dependencies>
+    	<depends_on bnk="soundbanks/regular_sfx" />
+    	<depends_on effect="effects/payday2/particles/fire/thermite_infinite" />
+    	<depends_on effect="effects/payday2/particles/fire/thermite_fade" />
+        <depends_on bnk="soundbanks/regular_sfx" />
+    </dependencies>
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+        <extension class="UnitDamage" name="damage" />
+        <extension name="sync_materials" class="SyncMaterials">
+            <var name="_materials" type="table">
+                <var value="mat_il"/>
+            </var>
+        </extension>
+        <extension name="interaction" class="UseInteractionExt">
+            <var name="drop_in_sync_tweak_data" value="true" />
+            <var name="tweak_data" value="hold_open_vault_2s" />
+            <var name="_interact_object" value="int_locator"/>
+        </extension>
+    </extensions>
+	
+</unit>

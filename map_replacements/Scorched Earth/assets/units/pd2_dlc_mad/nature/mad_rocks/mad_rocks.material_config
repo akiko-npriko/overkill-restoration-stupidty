@@ -1,0 +1,31 @@
+<materials version="3">
+    <material name="mat_rock_snowy" render_template="generic:BLEND_DIFFUSE:BLEND_GSMA:BLEND_MASK_CONTROL:BLEND_MASK_CROSSBLEND:BLEND_NORMAL:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR:WORLD_UP_BLEND" version="2">
+        <diffuse_texture file="units/pd2_dlc_mad/nature/mad_terrain/mad_rock_mossy_snow_df"/>
+        <bump_normal_texture file="units/pd2_dlc_mad/nature/mad_terrain/mad_rock_mossy_snow_nm"/>
+        <diffuse_layer0_texture file="units/pd2_dlc_mad/nature/mad_terrain/mad_rock_mossy_df"/>
+        <variable value="0.17000000178814 1 0" type="vector3" name="blend_control"/>
+        <normal_layer0_texture file="units/pd2_dlc_mad/nature/mad_terrain/mad_rock_mossy_nm"/>
+        <material_texture file="units/pd2_dlc_mad/nature/mad_terrain/mad_rock_mossy_snow_gsma"/>
+        <diffuse_layer2_texture file="units/pd2_dlc_mad/nature/mad_terrain/mad_rock_mossy_gsma"/>
+        <reflection_texture file="environments/cubemaps/cubemap_bank_01" type="cubemap"/>
+        <variable value="3.7699999809265" type="scalar" name="world_up_blend_bias"/>
+    </material>
+    <material name="mat_rock_snowy_instanced" render_template="generic:BLEND_DIFFUSE:BLEND_GSMA:BLEND_MASK_CONTROL:BLEND_MASK_CROSSBLEND:BLEND_NORMAL:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:INSTANCED:NORMALMAP:VERTEX_COLOR:WORLD_UP_BLEND" version="2">
+        <diffuse_texture file="units/pd2_dlc_mad/nature/mad_terrain/mad_rock_mossy_snow_df"/>
+        <bump_normal_texture file="units/pd2_dlc_mad/nature/mad_terrain/mad_rock_mossy_snow_nm"/>
+        <diffuse_layer0_texture file="units/pd2_dlc_mad/nature/mad_terrain/mad_rock_mossy_df"/>
+        <variable value="0.17000000178814 1 0" type="vector3" name="blend_control"/>
+        <normal_layer0_texture file="units/pd2_dlc_mad/nature/mad_terrain/mad_rock_mossy_nm"/>
+        <material_texture file="units/pd2_dlc_mad/nature/mad_terrain/mad_rock_mossy_snow_gsma"/>
+        <diffuse_layer2_texture file="units/pd2_dlc_mad/nature/mad_terrain/mad_rock_mossy_gsma"/>
+        <reflection_texture file="environments/cubemaps/cubemap_bank_01" type="cubemap"/>
+        <variable value="3.7699999809265" type="scalar" name="world_up_blend_bias"/>
+    </material>
+    <material name="mat_rocks_small" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:DISTANCE_FADE_2:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:INSTANCED:NORMALMAP" version="2">
+        <diffuse_texture file="units/pd2_dlc_mad/nature/mad_terrain/mad_rock_mossy_snow_df"/>
+        <bump_normal_texture file="units/pd2_dlc_mad/nature/mad_terrain/mad_rock_mossy_snow_nm"/>
+        <material_texture file="units/pd2_dlc_mad/nature/mad_terrain/mad_rock_mossy_snow_gsma"/>
+        <reflection_texture file="environments/cubemaps/cubemap_bank_01" type="cubemap"/>
+    </material>
+    <material name="shadow_caster" render_template="shadow_caster_only" version="2"/>
+</materials>

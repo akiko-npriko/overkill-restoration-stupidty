@@ -1,0 +1,19 @@
+<unit type="sand" slot="1">
+	<object file="units/pd2_dlc_sand/props/sand_interactable_sliding_gate/sand_interactable_sliding_gate" />
+	<network sync="spawn" />
+    <dependencies>
+    	<depends_on material_config="units/pd2_dlc_sand/props/sand_interactable_sliding_gate/sand_interactable_sliding_gate" />
+    </dependencies>		
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="UseInteractionExt">
+			<var name="tweak_data" value="sand_open_slide_gate" />
+			<var name="_interact_object" value="interact"/>
+		</extension>		
+	</extensions>
+	<sounds>
+		<default_soundsource source="rp_sand_interactable_sliding_gate"/>
+		<soundsource name="snd" source="anim_right_door" />
+	</sounds>
+</unit>

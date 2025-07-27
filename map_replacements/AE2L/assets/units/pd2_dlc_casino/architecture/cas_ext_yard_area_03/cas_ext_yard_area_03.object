@@ -1,0 +1,23 @@
+<dynamic_object>
+    <diesel orientation_object="rp_cas_yard_03" materials="units/pd2_dlc_casino/architecture/cas_ext_yard_area_03/cas_ext_yard_area_03" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body">
+            <object name="rp_cas_yard_03" />
+            <object name="c_box_01" collision_type="box" padding="-2.5" />
+            <object name="c_box_02" collision_type="box" padding="-2.5" />
+            <object name="c_box_03" collision_type="box" padding="-2.5" />
+            <object name="c_box_04" collision_type="box" padding="-2.5" />
+            <object name="c_box_05" collision_type="box" padding="-2.5" />
+            <object name="c_box_06" collision_type="box" padding="-2.5" />
+            <object name="c_box_07" collision_type="box" padding="-2.5" />
+            <object name="c_box_08" collision_type="box" padding="-2.5" />
+            <object name="c_box_09 (2)" collision_type="box" padding="-2.5" />
+        </body>
+    </bodies>
+    <decal_surfaces>
+        <decal_mesh name="dm_concrete" enabled="true" material="concrete" />
+    </decal_surfaces>
+    <graphics>
+        <object name="g_cas_yard_03" enabled="true" />
+    </graphics>
+</dynamic_object>

@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<dynamic_object>
+	<diesel materials="units/payday2/architecture/safehouse/safehouse_int_trapdoor" orientation_object="rp_safehouse_int_trapdoor" />
+	<sequence_manager file="units/payday2/architecture/safehouse/safehouse_int_trapdoor" />
+
+	<animations>
+		<animation_group name="anim" enabled="false">
+			<object name="anim_door" />
+		</animation_group>
+	</animations>
+
+	<bodies>
+		<body name="body_walls" enabled="true" template="static">
+			<object name="rp_safehouse_int_trapdoor" />
+			<object name="c_walls_01" collision_type="box" padding="-2.5"/>
+			<object name="c_walls_02" collision_type="box" padding="-2.5"/>
+			<object name="c_walls_03" collision_type="box" padding="-2.5"/>
+			<object name="c_walls_04" collision_type="box" padding="-2.5"/>
+		</body>
+
+		<body name="body_stairs" enabled="true" template="nav_walk">
+			<object name="rp_safehouse_int_trapdoor" />
+			<object name="c_safehouse_int_trapdoor_stairs" collision_type="convex" />
+		</body>
+
+		<body name="body_door" enabled="true" template="animated">
+			<object name="anim_door" />
+			<object name="g_safehouse_int_trapdoor" collision_type="box" />
+		</body>
+	</bodies>
+
+	<decal_surfaces default_material="stone" static="false">
+		<decal_mesh name="g_safehouse_int_trapdoor" 		enabled="true" material="stone" />
+		<decal_mesh name="g_safehouse_int_trapdoor_stairs" 	enabled="true" material="stone" />
+	</decal_surfaces>
+
+	<graphics>
+		<object name="g_safehouse_int_trapdoor" 		enabled="true" shadow_caster="true" />
+		<object name="g_safehouse_int_trapdoor_stairs" 	enabled="true" shadow_caster="true" />
+	</graphics>
+
+</dynamic_object>

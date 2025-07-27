@@ -1,0 +1,24 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_cage/props/ind_prop_cardealership_spotlight_ceiling/ind_prop_cardealership_spotlight_ceiling" orientation_object="rp_ind_prop_cardealership_spotlight_ceiling" />
+	<sequence_manager file="units/pd2_dlc_cage/props/ind_prop_cardealership_spotlight_ceiling/ind_prop_cardealership_spotlight_ceiling" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_ind_prop_cardealership_spotlight_ceiling" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<graphics>
+		<graphic_group name="grp_on" enabled="true" >
+			<lod_object name="lod_g_g">
+				<object name="g_g_lod0" enabled="true" max_distance="1500" instance_struct="world_tm"/>
+				<object name="g_g_lod1" enabled="true" instance_struct="world_tm" />
+			</lod_object>
+		</graphic_group>
+		<graphic_group name="grp_off" enabled="false" >
+			<lod_object name="lod_g_g_off">
+				<object name="g_g_off_lod0" enabled="true" max_distance="1500" instance_struct="world_tm" />
+				<object name="g_g_off_lod1" enabled="true" instance_struct="world_tm" />
+			</lod_object>
+		</graphic_group>
+	</graphics>
+</dynamic_object>

@@ -1,0 +1,13 @@
+<unit type="bor" slot="1">
+	<object file="units/pd2_dlc_born/props/bor_prop_garage_toolbox/bor_prop_garage_toolbox" />
+	<network sync="spawn"/>
+	<extensions>		
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="sync_unit_data" class="SyncUnitData" />
+		<extension name="interaction" class="UseInteractionExt">
+			<var name="tweak_data" value="hold_born_search_tools" />
+			<var name="_interact_object" value="interact"/>
+		</extension>
+	</extensions>
+</unit>

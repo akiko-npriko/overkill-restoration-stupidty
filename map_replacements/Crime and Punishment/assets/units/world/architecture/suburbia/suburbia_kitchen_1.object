@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/world/architecture/suburbia/suburbia_kitchen" orientation_object="rp_suburbia_kitchen_1" />
+	
+	<bodies>
+		<body name="static_body" enabled="true" template="static">
+			<object name="rp_suburbia_kitchen_1"/>
+			<object collision_type="box" name="c_box_00" padding="-2"/>
+			<object collision_type="box" name="c_box_01" padding="-2"/>
+			<object collision_type="box" name="c_box_02" padding="-2"/>
+			<object collision_type="box" name="c_box_03" padding="-2"/>
+			<object collision_type="box" name="c_box_04" padding="-2"/>
+			<object collision_type="box" name="c_box_05" padding="-2"/>
+			<object collision_type="box" name="c_box_06" padding="-2"/>
+			<object collision_type="box" name="c_box_07" padding="-2"/>
+			<object collision_type="box" name="c_box_08" padding="-2"/>
+			<object collision_type="box" name="c_box_09" padding="-2"/>
+			<object collision_type="box" name="c_box_10" padding="-2"/>
+			<object collision_type="box" name="c_box_11" padding="-2"/>
+			<object collision_type="box" name="c_box_12" padding="-2"/>
+			<object collision_type="box" name="c_box_13" padding="-2"/>
+			<object collision_type="box" name="c_box_14" padding="-2"/>
+			<object collision_type="box" name="c_box_15" padding="-2"/>
+			<object collision_type="box" name="c_box_16" padding="-2"/>
+			<object collision_type="box" name="c_box_17" padding="-2"/>
+			<object collision_type="box" name="c_box_18" padding="-2"/>
+			<object collision_type="box" name="c_box_19" padding="-2"/>
+			<object collision_type="box" name="c_box_20" padding="-2"/>
+			<object collision_type="box" name="c_box_21" padding="-2"/>
+			<object collision_type="box" name="c_box_22" padding="-2"/>
+			<object collision_type="box" name="c_box_23" padding="-2"/>
+		</body>
+	</bodies>
+
+	<decal_surfaces default_material="wood" static="true">
+		<decal_mesh enabled="true" material="metal" 			name="dm_metal"/>
+		<decal_mesh enabled="true" material="wood"  			name="dm_wood"/>
+		<decal_mesh enabled="true" material="glass_breakable" 	name="dm_glass"/>
+		<decal_mesh enabled="true" material="stone"  			name="dm_marble"/>
+	</decal_surfaces>
+
+	<graphics>
+		<object enabled="true"  name="g_suburbia_kitchen_1" />
+	</graphics>
+</dynamic_object> 

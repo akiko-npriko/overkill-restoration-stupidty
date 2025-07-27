@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<dynamic_object>
+  <diesel materials="units/world/props/diamond_heist/party/diamondheist_party_speaker" orientation_object="rp_diamondheist_party_speaker" />
+  <bodies>
+    <body name="static_body" enabled="true" template="static">
+      <object name="rp_diamondheist_party_speaker" />
+      <object name="c_diamondheist_party_speaker" collision_type="box" />
+    </body>
+  </bodies>
+  
+  <decal_surfaces default_material="metal_chassis" static="true">
+    <decal_mesh name="g_diamondheist_party_speaker" enabled="true" material="metal_chassis" />
+  </decal_surfaces>
+  
+  <graphics>
+    <object name="g_diamondheist_party_speaker" enabled="true" />
+  </graphics>
+</dynamic_object>

@@ -1,0 +1,52 @@
+<dynamic_object>
+    <diesel orientation_object="rp_trombone" materials="units/payday2/props/lxa_prop_gallery_instrument/lxa_prop_gallery_instrument_trombone" />
+	<sequence_manager file="units/payday2/props/lxa_prop_gallery_instrument/lxa_prop_gallery_instrument_trombone" />
+    
+	<bodies>
+        <body enabled="true" template="static" name="body0" >
+            <object name="rp_trombone" />
+            <object collision_type="box" name="c_box_01"  padding="-2.5" />
+            <object collision_type="box" name="c_box_02"  padding="-2.5" />
+            <object collision_type="box" name="c_box_03"  padding="-2.5" />
+            <object collision_type="box" name="c_box_04"  padding="-2.5" />
+        </body>
+		
+        <body enabled="true" template="static" name="static_body" >
+            <object name="rp_trombone" />
+            <object collision_type="convex" name="c_convex_01" padding="-2.5" />
+        </body>
+
+		<body enabled="false" template="dynamic" name="dynamic_body"  collides_with_mover="false">
+            <object collision_type="convex" name="c_convex_01" mass="0.1" padding="-2.5" />
+        </body>
+		
+        <body enabled="true" template="static" name="glass_01" >
+            <object name="rp_trombone" />
+            <object collision_type="box" name="c_glass_01" />
+        </body>
+        <body enabled="true" template="static" name="glass_02" >
+            <object name="rp_trombone" />
+            <object collision_type="box" name="c_glass_02" />
+        </body>
+        <body enabled="true" template="static" name="glass_03" >
+            <object name="rp_trombone" />
+            <object collision_type="box" name="c_glass_03" />
+        </body>
+    </bodies>
+
+  <decal_surfaces default_material="sheet_metal">
+    <decal_mesh name="dm_mesh" enabled="true" material="sheet_metal" />
+  </decal_surfaces>
+  
+	
+    <graphics>
+        <object enabled="true" name="g_mesh" />
+        <object enabled="true" name="g_case" />
+        <object enabled="true" name="g_glass_01" />
+        <object enabled="true" name="g_glass_02" />
+        <object enabled="true" name="g_glass_03" />
+        <object enabled="false" name="g_glass_broken_01" />
+        <object enabled="false" name="g_glass_broken_02" />
+        <object enabled="false" name="g_glass_broken_03" />
+    </graphics>
+</dynamic_object>

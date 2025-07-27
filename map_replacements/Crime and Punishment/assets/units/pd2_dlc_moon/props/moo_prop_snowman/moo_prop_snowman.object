@@ -1,0 +1,13 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_moon/props/moo_prop_snowman/moo_prop_snowman" orientation_object="rp_moo_prop_snowman" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_moo_prop_snowman" />
+			<object name="c_box_1" collision_type="box" padding="-2.5" />
+			<object name="c_box_2" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<graphics>
+		<object name="g_snow_man" enabled="true" />
+	</graphics>
+</dynamic_object>

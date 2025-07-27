@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<dynamic_object>
+  <diesel materials="units/world/props/gym/gym_atlas/gym_atlas" orientation_object="rp_prop_gym_dumbellrack" />
+  <bodies>
+    <body name="static_body" enabled="true" template="static">
+      <object name="rp_prop_gym_dumbellrack" />
+      <object name="c_prop_gym_dumbellrack_mesh_mopp" collision_type="mesh_mopp" />
+    </body>
+  </bodies>
+  
+  <decal_surfaces default_material="metal">
+    <decal_mesh name="g_prop_gym_dumbellrack" enabled="true" material="metal"/>
+  </decal_surfaces>
+  
+  <graphics>
+    <object name="g_prop_gym_dumbellrack" enabled="true"  />
+  </graphics>
+</dynamic_object>

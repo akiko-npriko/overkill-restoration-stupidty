@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/payday2/architecture/anl/houses" orientation_object="rp_suburbia"/>	
+	<bodies>
+		<body name="static_body" enabled="true" template="static">
+			<object name="rp_suburbia"/>
+			
+			
+		</body>
+	</bodies>
+
+	<decal_surfaces default_material="grass" static="true">
+	
+	</decal_surfaces>
+
+	<graphics>
+		
+		<object enabled="true" shadow_caster="true" name="s_s"/>
+		
+		<object enabled="true" name="g_driveway_asphalt"/>
+		<object enabled="true" name="g_backdrop_houses_1"/>
+		<object enabled="true" name="g_backdrop_houses_2"/>
+		<object enabled="true" name="g_backdrop_houses_3"/>
+		<object enabled="true" name="g_backdrop_houses_4"/>
+		<object enabled="true" name="g_backdrop_house_1"/>
+		<object enabled="true" name="g_backdrop_house_2"/>
+		<object enabled="true" name="g_backdrop_house_3"/>
+		<object enabled="true" name="g_backdrop_house_1_door"/>
+		<object enabled="true" name="g_backdrop_house_3_door"/>
+		<object enabled="true" name="g_backdrop_house_4"/>
+		<object enabled="true" name="g_backdrop_house_5"/>
+		<object enabled="true" name="g_backdrop_house_6"/>
+		<object enabled="true" name="g_backdrop_house_7"/>
+		<object enabled="true" name="g_backdrop_house_8"/>
+        <object enabled="true" name="g_lifeguard_hut"/>
+        <object enabled="true" name="g_backdrop_flag_us"/>
+        <object enabled="true" name="g_backdrop_flag"/>
+        <object enabled="true" name="g_props"/>
+
+		<object enabled="true" name="g_backdrop_far"/>
+		<object enabled="true" name="g_backdrop_props"/>
+
+		<object enabled="true" name="g_backdrop_windows"/>
+
+	</graphics>
+	
+	<occluders>
+		
+	</occluders>
+</dynamic_object> 

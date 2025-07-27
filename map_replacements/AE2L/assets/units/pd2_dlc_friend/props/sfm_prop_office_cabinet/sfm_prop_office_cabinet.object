@@ -1,0 +1,46 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_friend/props/sfm_prop_office_cabinet/sfm_prop_office_cabinet" orientation_object="rp_sfm_prop_office_cabinet" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_sfm_prop_office_cabinet" />
+			<object name="c_box_14" collision_type="box" padding="-2.5" />
+			<object name="c_box_11" collision_type="box" padding="-2.5" />
+			<object name="c_box_10" collision_type="box" padding="-2.5" />
+			<object name="c_box_09" collision_type="box" padding="-2.5" />
+			<object name="c_box_08" collision_type="box" padding="-2.5" />
+			<object name="c_box_07" collision_type="box" padding="-2.5" />
+			<object name="c_box_06" collision_type="box" padding="-2.5" />
+			<object name="c_box_05" collision_type="box" padding="-2.5" />
+			<object name="c_box_04" collision_type="box" padding="-2.5" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_collision_01" enabled="true" template="animated">
+			<object name="anim_door_left" />
+			<object name="c_box_01_door_l" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_collision_02" enabled="true" template="animated">
+			<object name="anim_door_right" />
+			<object name="c_box_01_door_r" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="marble">
+		<decal_mesh name="dm_marble" enabled="true" material="marble" />
+		<decal_mesh name="dm_metal_door_l" enabled="true" material="thin_layer" />
+		<decal_mesh name="dm_metal_door_r" enabled="true" material="thin_layer" />
+	</decal_surfaces>
+	<graphics>
+		<lod_object name="lod_g">
+			<object name="g_lod0" enabled="true" max_distance="1500" />
+			<object name="g_lod1" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_g_door_l">
+			<object name="g_door_l_lod0" enabled="true" max_distance="1500" />
+			<object name="g_door_l_lod1" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_g_door_r">
+			<object name="g_door_r_lod0" enabled="true" max_distance="1500" />
+			<object name="g_door_r_lod1" enabled="true" />
+		</lod_object>
+		<object name="s_s" enabled="true" shadow_caster="true" />
+	</graphics>
+</dynamic_object>

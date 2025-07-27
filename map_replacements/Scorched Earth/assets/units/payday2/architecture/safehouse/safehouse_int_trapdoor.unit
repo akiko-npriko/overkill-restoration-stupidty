@@ -1,0 +1,8 @@
+<unit type="str" slot="1" >
+	<object file="units/payday2/architecture/safehouse/safehouse_int_trapdoor" />
+	<network sync="spawn"/>
+	<extensions>
+		<extension class="ScriptUnitData" name="unit_data" />
+		<extension name="damage" class="UnitDamage" />
+	</extensions>
+</unit>

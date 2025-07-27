@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<unit slot="12" type="being">
+	<anim_state_machine name="anims/units/enemies/cop/cop_machine"/>
+	<object file="units/pd2_mod_ttr/characters/ene_friendly_backup_1/ene_friendly_backup_1"/>
+	<dependencies/>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData">
+			<var name="disable_shout" value="true" />
+		</extension>
+		<extension class="CopBase" name="base">
+			<var name="_tweak_table" value="constantine_backup"/>
+			<var name="_default_weapon_id" value="r870"/>
+		</extension>
+		<extension class="CopInventory" name="inventory"/>
+		<extension class="CopBrain" name="brain"/>
+		<extension class="PlayerAnimationData" name="anim_data"/>
+		<extension class="CopDamage" name="character_damage"/>
+		<extension class="CopMovement" name="movement">
+			<var name="_footwear" value="hardsole"/>
+			<var name="_anim_global" value="cop"/>
+		</extension>
+		<extension class="IntimitateInteractionExt" name="interaction">
+			<var name="tweak_data" value="intimidate"/>
+		</extension>
+		<extension class="NetworkBaseExtension" name="network"/>
+		<extension class="UnitDamage" name="damage">
+			<var name="_skip_save_anim_state_machine" value="True"/>
+		</extension>
+		<extension class="ContourExt" name="contour"/>
+		<extension class="CopSound" name="sound"/>
+	</extensions>
+	<network remote_unit="units/pd2_mod_ttr/characters/ene_friendly_backup_2/ene_friendly_backup_2_husk" sync="spawn"/>
+	<sounds>
+		<default_soundsource source="Hips"/>
+	</sounds>
+</unit>

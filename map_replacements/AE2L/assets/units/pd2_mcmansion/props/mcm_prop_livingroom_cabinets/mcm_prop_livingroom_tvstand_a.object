@@ -1,0 +1,47 @@
+<dynamic_object>
+	<diesel materials="units/pd2_mcmansion/props/mcm_prop_livingroom_cabinets/mcm_prop_livingroom_shelf_set" orientation_object="rp_mcm_prop_livingroom_tvstand_a" />
+	<sequence_manager file="units/pd2_mcmansion/props/mcm_prop_livingroom_cabinets/mcm_prop_livingroom_tvstand_a" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_mcm_prop_livingroom_tvstand_a" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+			<object name="c_box_04" collision_type="box" padding="-2.5" />
+			<object name="c_box_05" collision_type="box" padding="-2.5" />
+			<object name="c_box_06" collision_type="box" padding="-2.5" />
+			<object name="c_box_07" collision_type="box" padding="-2.5" />
+			<object name="c_box_08" collision_type="box" padding="-2.5" />
+			<object name="c_box_09" collision_type="box" padding="-2.5" />
+			<object name="c_box_10" collision_type="box" padding="-2.5" />
+			<object name="c_box_11" collision_type="box" padding="-2.5" />
+			<object name="c_box_12" collision_type="box" padding="-2.5" />
+		</body>
+
+		<body name="win_1" enabled="true" template="static">
+			<object name="c_box_window_01" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="win_2" enabled="true" template="static">
+			<object name="c_box_window_02" collision_type="box" padding="-2.5" />
+		</body>
+
+	</bodies>
+	<decal_surfaces default_material="wood">
+		<decal_mesh name="dm_glass_breakable_01" enabled="true" material="glass_breakable" />
+		<decal_mesh name="dm_glass_breakable_02" enabled="true" material="glass_breakable" />
+		<decal_mesh name="dm_glass_breakable_03" enabled="true" material="glass_breakable" />
+		<decal_mesh name="dm_wood" enabled="true" material="wood" />
+	</decal_surfaces>
+	<graphics>
+
+		<object name="g_tvstand_a_glass_01" enabled="true" />
+		<object name="g_tvstand_a_glass_02" enabled="true" />
+
+		<lod_object name="grp_lod_g_tvstand_a">
+			<object name="g_tvstand_a_lod0" enabled="true" max_distance="3500" />
+			<object name="g_tvstand_a_lod1" enabled="true" max_distance="4500" />
+			<object name="g_tvstand_a_lod2" enabled="true" />
+		</lod_object>
+
+	</graphics>
+</dynamic_object>

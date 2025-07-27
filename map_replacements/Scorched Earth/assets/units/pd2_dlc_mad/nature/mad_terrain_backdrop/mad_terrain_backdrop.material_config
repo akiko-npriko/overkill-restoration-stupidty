@@ -1,0 +1,7 @@
+<materials version="3">
+    <material name="mat_terrrain_backdrop" render_template="generic:DIFFUSE_TEXTURE:GLOSS_CONTROL_VALUE:NORMALMAP" version="2">
+        <diffuse_texture file="units/pd2_dlc_mad/nature/mad_terrain_backdrop/mad_terrain_backdrop_df"/>
+        <variable value="0" type="scalar" name="glossiness_control"/>
+        <bump_normal_texture file="units/pd2_dlc_mad/nature/mad_terrain_backdrop/mad_terrain_backdrop_nm"/>
+    </material>
+</materials>

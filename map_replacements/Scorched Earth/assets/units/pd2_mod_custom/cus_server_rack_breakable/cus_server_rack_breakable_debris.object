@@ -1,0 +1,13 @@
+<dynamic_object>
+    <diesel materials="units/pd2_mod_custom/cus_server_rack_breakable/cus_server_rack_breakable" orientation_object="rp_debris" />
+	<sequence_manager file="units/pd2_mod_custom/cus_server_rack_breakable/cus_server_rack_breakable_debris" />	
+    <bodies>
+        <body enabled="true" template="dynamic" name="debris1" >
+			<object name="rp_debris" />
+			<object name="c_server_debris" collision_type="box" mass="35" padding="-2.5"/>
+        </body>
+    </bodies>
+    <graphics>
+        <object name="g_server_debris" enabled="true"/>
+    </graphics>
+</dynamic_object> 

@@ -1,0 +1,100 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_glace/vehicles/glc_vehicle_truck_prisontransport/glc_vehicle_truck_prisontransport" orientation_object="rp_glc_vehicle_truck_prisontransport" />
+	<sequence_manager file="units/pd2_dlc_glace/vehicles/glc_vehicle_truck_prisontransport/glc_vehicle_truck_prisontransport" />
+	<animations>
+		<animation_group name="anim_open_doors" enabled="false">
+				<object name="anim_door_r_right" />
+				<object name="anim_door_r_left" />
+		</animation_group>
+	</animations>
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_glc_vehicle_truck_prisontransport" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+			<object name="c_box_04" collision_type="box" padding="-2.5" />
+			<object name="c_box_05" collision_type="box" padding="-2.5" />
+			<object name="c_box_06" collision_type="box" padding="-2.5" />
+			<object name="c_box_07" collision_type="box" padding="-2.5" />
+			<object name="c_box_08" collision_type="box" padding="-2.5" />
+			<object name="c_box_09" collision_type="box" padding="-2.5" />
+			<object name="c_box_010" collision_type="box" padding="-2.5" />
+			<object name="c_convex_03" collision_type="convex" padding="-2.5" />
+			<object name="c_convex_04" collision_type="convex" padding="-2.5" />
+			<object name="c_convex_02" collision_type="convex" padding="-2.5" />
+			<object name="c_convex_01" collision_type="convex" padding="-2.5" />
+		</body>
+		<body name="body_collision_01" enabled="true" template="animated">
+			<object name="anim_door_f_left" />
+			<object name="c_box_10" collision_type="box" padding="-2.5" />
+			<object name="c_box_11" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_collision_02" enabled="true" template="animated">
+			<object name="anim_door_f_right" />
+			<object name="c_box_12" collision_type="box" padding="-2.5" />
+			<object name="c_box_13" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_collision_03" enabled="true" template="animated">
+			<object name="anim_door_r_left" />
+			<object name="c_box_15" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_collision_04" enabled="true" template="animated">
+			<object name="anim_door_r_right" />
+			<object name="c_box_14" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="glass_unbreakable">
+		<decal_mesh name="dm_cloth_stuffed" enabled="true" material="cloth_stuffed" />
+		<decal_mesh name="dm_glass_unbreakable_door_f_left" enabled="true" material="glass_unbreakable" />
+		<decal_mesh name="dm_glass_unbreakable_door_f_right" enabled="true" material="glass_unbreakable" />
+		<decal_mesh name="dm_glass_unbreakable_door_r_right" enabled="true" material="glass_unbreakable" />
+		<decal_mesh name="dm_glass_unbreakable_door_r_left" enabled="true" material="glass_unbreakable" />
+		<decal_mesh name="dm_glass_unbreakable" enabled="true" material="glass_unbreakable" />
+		<decal_mesh name="dm_metal" enabled="true" material="metal" />
+		<decal_mesh name="dm_metal_door_f_left" enabled="true" material="metal" />
+		<decal_mesh name="dm_metal_door_f_right" enabled="true" material="metal" />
+		<decal_mesh name="dm_metal_door_r_right" enabled="true" material="metal" />
+		<decal_mesh name="dm_metal_door_r_left" enabled="true" material="metal" />
+		<decal_mesh name="dm_plastic" enabled="true" material="plastic" />
+		<decal_mesh name="dm_plastic_door_f_left" enabled="true" material="plastic" />
+		<decal_mesh name="dm_plastic_door_f_right" enabled="true" material="plastic" />
+		<decal_mesh name="dm_rubber" enabled="true" material="rubber" />
+	</decal_surfaces>
+	<graphics>
+		<lod_object name="lod_g">
+			<object name="g_lod0" enabled="true" max_distance="1500" />
+			<object name="g_lod1" enabled="true" max_distance="3000" />
+			<object name="g_lod2" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_g_door_f_left">
+			<object name="g_door_f_left_lod0" enabled="true" max_distance="1500" />
+			<object name="g_door_f_left_lod1" enabled="true" max_distance="3000" />
+			<object name="g_door_f_left_lod2" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_g_door_f_right">
+			<object name="g_door_f_right_lod0" enabled="true" max_distance="1500" />
+			<object name="g_door_f_right_lod1" enabled="true" max_distance="3000" />
+			<object name="g_door_f_right_lod2" enabled="true" />
+		</lod_object>
+		<graphic_group name="door_r_r" enabled="true">
+			<lod_object name="lod_g_door_r_left">
+				<object name="g_door_r_left_lod0" enabled="true" max_distance="1500" />
+				<object name="g_door_r_left_lod1" enabled="true" max_distance="3000" />
+				<object name="g_door_r_left_lod2" enabled="true" />
+			</lod_object>
+		</graphic_group>
+		<graphic_group name="door_r_l" enabled="true">
+			<lod_object name="lod_g_door_r_right">
+				<object name="g_door_r_right_lod0" enabled="true" max_distance="1500" />
+				<object name="g_door_r_right_lod1" enabled="true" max_distance="3000" />
+				<object name="g_door_r_right_lod2" enabled="true" />
+			</lod_object>
+		</graphic_group>
+		<object name="s_s" enabled="true" shadow_caster="true" />
+		<object name="s_door_f_left" enabled="true" shadow_caster="true" />
+		<object name="s_door_f_right" enabled="true" shadow_caster="true" />
+		<object name="s_door_r_right" enabled="true" shadow_caster="true" />
+		<object name="s_door_r_left" enabled="true" shadow_caster="true" />
+	</graphics>
+</dynamic_object>

@@ -1,0 +1,15 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_casino/props/cas_prop_lobby_statue/cas_prop_lobby_statue" orientation_object="rp_spawn_head" />
+	<bodies>
+		<body name="body_static" enabled="true" template="dynamic" collides_with_mover="false">
+			<object name="rp_spawn_head" />
+			<object name="c_convex_head" collision_type="convex" padding="-2.5" material="stone" />
+		</body>
+	</bodies>
+	<graphics>
+		<lod_object name="lod_g_head">
+			<object name="g_head_lod0" enabled="true" max_distance="5000" />
+			<object name="g_head_lod1" enabled="true" />
+		</lod_object>
+	</graphics>
+</dynamic_object>

@@ -1,0 +1,58 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_rvd/architecture/rvd_ext/rvd_ext_backdrop_building/rvd_ext_building_backdrop_corner" orientation_object="rp_rvd_ext_building_backdrop_tomford_16x12" />
+	<sequence_manager file="units/pd2_dlc_rvd/architecture/rvd_ext/rvd_ext_backdrop_building/rvd_ext_building_backdrop_tomford_16x12" />
+	<bodies>
+
+		<body remove_ray_type="vis_graph ai_vision" name="window1" enabled="true" template="static">
+			<object name="rp_rvd_ext_building_backdrop_tomford_16x12"/>
+			<object name="c_box_22" collision_type="box" padding="-2" />
+		</body>
+
+
+		<body remove_ray_type="vis_graph ai_vision" name="window2" enabled="true" template="static">
+			<object name="rp_rvd_ext_building_backdrop_tomford_16x12"/>
+			<object name="c_box_21" collision_type="box" padding="-2" />
+		</body>
+
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_rvd_ext_building_backdrop_tomford_16x12" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+			<object name="c_box_04" collision_type="box" padding="-2.5" />
+			<object name="c_box_05" collision_type="box" padding="-2.5" />
+			<object name="c_box_06" collision_type="box" padding="-2.5" />
+			<object name="c_box_07" collision_type="box" padding="-2.5" />
+			<object name="c_box_08" collision_type="box" padding="-2.5" />
+			<object name="c_box_09" collision_type="box" padding="-2.5" />
+			<object name="c_box_10" collision_type="box" padding="-2.5" />
+			<object name="c_box_11" collision_type="box" padding="-2.5" />
+			<object name="c_box_12" collision_type="box" padding="-2.5" />
+			<object name="c_box_13" collision_type="box" padding="-2.5" />
+			<object name="c_box_14" collision_type="box" padding="-2.5" />
+			<object name="c_box_15" collision_type="box" padding="-2.5" />
+			<object name="c_box_16" collision_type="box" padding="-2.5" />
+			<object name="c_box_17" collision_type="box" padding="-2.5" />
+			<object name="c_box_18" collision_type="box" padding="-2.5" />
+			<object name="c_box_19" collision_type="box" padding="-2.5" />
+			<object name="c_box_20" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="marble">
+		<decal_mesh name="dm_concrete" enabled="true" material="concrete" />
+		<decal_mesh name="dm_marble" enabled="true" material="marble" />
+		<decal_mesh name="dm_metal" enabled="true" material="metal" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_glass_05" enabled="true" />
+		<object name="g_glass_06" enabled="true" />
+		<object name="g_glass_05_shattered" enabled="false" />
+		<object name="g_glass_06_shattered" enabled="false" />
+		<object name="g_g" enabled="true" />
+		<object name="s_s" enabled="true" shadow_caster="true" />
+	</graphics>
+	<objects>
+		<align_point name="e_glass_01" enabled="true" parent="rp_rvd_ext_building_backdrop_corner" position="0 0 0" rotation="0 0 0" />
+		<align_point name="e_glass_02" enabled="true" parent="rp_rvd_ext_building_backdrop_corner" position="0 0 0" rotation="0 0 0" />
+	</objects>
+</dynamic_object>

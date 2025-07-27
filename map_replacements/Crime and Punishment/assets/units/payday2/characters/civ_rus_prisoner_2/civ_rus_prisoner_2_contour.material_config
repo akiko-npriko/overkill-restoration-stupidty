@@ -1,0 +1,15 @@
+<materials version="3" group="npc_prisoner_4">
+    <material version="2" unique="true" name="mtr_head" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+        <bump_normal_texture file="units/pd2_dlc_glace/characters/npc_prisoner_4/npc_prisoner_4_nm"/>
+        <diffuse_texture file="units/pd2_dlc_glace/characters/npc_prisoner_4/npc_prisoner_4_df"/>
+        <variable value="1 1 1" type="vector3" name="contour_color"/>
+        <variable value="0" type="scalar" name="contour_opacity"/>
+    </material>
+    <material version="2" unique="true" name="mtr_body" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+        <bump_normal_texture file="units/payday2/characters/shared_textures/rus_prisoner_nm"/>
+        <diffuse_texture file="units/payday2/characters/shared_textures/rus_prisoner_df"/>
+        <variable value="1 1 1" type="vector3" name="contour_color"/>
+        <variable value="0" type="scalar" name="contour_opacity"/>
+    </material>
+    <material version="2" render_template="shadow_caster_only:SKINNED_1WEIGHT" name="shadow_caster"/>
+</materials>

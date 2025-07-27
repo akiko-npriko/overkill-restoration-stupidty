@@ -1,0 +1,18 @@
+<dynamic_object>
+    <diesel orientation_object="rp_gen_interactable_thermite_backpack" materials="units/payday2/equipment/gen_interactable_thermite_backpack/gen_interactable_thermite_backpack_inf" />
+    <sequence_manager file="units/payday2/equipment/gen_interactable_thermite_backpack/gen_interactable_thermite_backpack_inf" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body" >
+            <object collision_type="box" name="c_box" padding="-2.5" />
+        </body>
+    </bodies>
+    <graphics>
+        <object enabled="true" name="g_g" />
+        <graphic_group name="grp_outline" enabled="true" >
+            <lod_object name="lod_outline">
+                <object name="g_outline_lod0" enabled="true"  max_distance="500" />
+                <object name="g_outline_lod1" enabled="true" />
+            </lod_object>
+        </graphic_group>
+    </graphics>
+</dynamic_object>

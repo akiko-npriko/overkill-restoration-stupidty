@@ -1,0 +1,41 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_berry/pickups/bry_pku_breaching_charges/bry_pku_breaching_charges" orientation_object="rp_bry_pku_breaching_charges" />
+	<sequence_manager file="units/pd2_dlc_berry/pickups/bry_pku_breaching_charges/bry_pku_breaching_charges" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_bry_pku_breaching_charges" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_static_2" enabled="true" template="static">
+			<object name="rp_bry_pku_breaching_charges" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="metal">
+	</decal_surfaces>
+	<graphics>
+		<object name="g_light_green" enabled="false" />
+		<object name="g_light_red" enabled="false" />
+
+		<object name="g_light_green_2" enabled="false" />
+		<object name="g_light_red_2" enabled="false" />
+	
+		<graphic_group name="grp" enabled="true">
+			<lod_object name="lod_g_charge">
+				<object name="g_charge_lod0" enabled="true" max_distance="1000" />
+				<object name="g_charge_lod1" enabled="true" max_distance="2000" />
+				<object name="g_charge_lod2" enabled="true" />
+			</lod_object>
+
+			<lod_object name="lod_g_charge_2">
+				<object name="g_charge_2_lod0" enabled="true" max_distance="1000" />
+				<object name="g_charge_2_lod1" enabled="true" max_distance="2000" />
+				<object name="g_charge_2_lod2" enabled="true" />
+			</lod_object>
+
+	
+			<object name="s_s" enabled="true" shadow_caster="true" />
+			<object name="s_s_2" enabled="true" shadow_caster="true" />
+		</graphic_group>
+	</graphics>
+</dynamic_object>

@@ -1,0 +1,12 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_flat/architecture/flt_facade_backdrop/flt_facade_backdrop_05" orientation_object="rp_flt_facade_backdrop_05" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_flt_facade_backdrop_05" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<graphics>
+			<object name="g_lod0" enabled="true" />
+	</graphics>
+</dynamic_object>

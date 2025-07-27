@@ -1,0 +1,36 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_casino/props/cas_prop_firebowl_showgirl_statue/cas_prop_firebowl_showgirl_statue" orientation_object="rp_cas_prop_firebowl_showgirl_statue" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_cas_prop_firebowl_showgirl_statue" />
+			<object name="c_capsule" collision_type="capsule" padding="-2.5" />
+			<object name="c_convex_04" collision_type="convex" padding="-2.5" />
+			<object name="c_convex_03" collision_type="convex" padding="-2.5" />
+			<object name="c_convex_02" collision_type="convex" padding="-2.5" />
+			<object name="c_box_07" collision_type="box" padding="-2.5" />
+			<object name="c_box_06" collision_type="box" padding="-2.5" />
+			<object name="c_box_05" collision_type="box" padding="-2.5" />
+			<object name="c_box_04" collision_type="box" padding="-2.5" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_08" collision_type="box" padding="-2.5" />
+			<object name="c_box_09" collision_type="box" padding="-2.5" />
+			<object name="c_box_010" collision_type="box" padding="-2.5" />
+			<object name="c_box_011" collision_type="box" padding="-2.5" />
+			<object name="c_box_012" collision_type="box" padding="-2.5" />
+			<object name="c_box_013" collision_type="box" padding="-2.5" />
+			<object name="c_box_014" collision_type="box" padding="-2.5" />
+			<object name="c_box_015" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="marble">
+		<decal_mesh name="dm_marble" enabled="true" material="marble" />
+	</decal_surfaces>
+	<graphics>
+		<lod_object name="lod_g_g">
+			<object name="g_g_lod0" enabled="true" max_distance="7500" />
+			<object name="g_g_lod1" enabled="true" />
+		</lod_object>
+	</graphics>
+</dynamic_object>

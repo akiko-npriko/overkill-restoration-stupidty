@@ -1,0 +1,90 @@
+<dynamic_object>
+    <diesel orientation_object="rp_hlm_prop_bombstrapped" materials="units/pd2_dlc_ahop/architecture/ahop/ahop_prop/ahop_prop_bombstrapped" />
+	<sequence_manager file="units/pd2_dlc_ahop/architecture/ahop/ahop_prop/ahop_prop_bombstrapped" />
+	
+  <animations>
+        <animation_group name="bombstrapped" enabled="false">
+			<object name="Neck" />
+			<object name="Head" />
+			<object name="Hips" />
+			<object name="Spine" />
+			<object name="Spine1" />
+			<object name="Spine2" />
+			<object name="RightUpLeg" />
+			<object name="LeftUpLeg" />
+			<object name="RightArm" />
+			<object name="LeftArm" />
+			<object name="RightForeArm" />
+			<object name="RightForeArmRoll" />
+			<object name="RightHand" />
+			<object name="RightHandThumb1" />
+			<object name="RightHandThumb2" />
+			<object name="RightHandThumb3" />
+			<object name="RightHandThumb4" />
+			<object name="RightHandIndex1" />
+			<object name="RightHandIndex2" />
+			<object name="RightHandIndex3" />
+			<object name="RightHandIndex4" />
+			<object name="RightHandMiddle1" />
+			<object name="RightHandMiddle2" />
+			<object name="RightHandMiddle3" />
+			<object name="RightHandMiddle4" />
+			<object name="RightHandRing1" />
+			<object name="RightHandRing2" />
+			<object name="RightHandRing3" />
+			<object name="RightHandRing4" />
+			<object name="RightHandPinky1" />
+			<object name="RightHandPinky2" />
+			<object name="RightHandPinky3" />
+			<object name="RightHandPinky4" />
+			<object name="LeftForeArm" />
+			<object name="LeftForeArmRoll" />
+			<object name="LeftHand" />
+			<object name="LeftHandThumb1" />
+			<object name="LeftHandThumb2" />
+			<object name="LeftHandThumb3" />
+			<object name="LeftHandThumb4" />
+			<object name="LeftHandIndex1" />
+			<object name="LeftHandIndex2" />
+			<object name="LeftHandIndex3" />
+			<object name="LeftHandIndex4" />
+			<object name="LeftHandMiddle1" />
+			<object name="LeftHandMiddle2" />
+			<object name="LeftHandMiddle3" />
+			<object name="LeftHandMiddle4" />
+			<object name="LeftHandRing1" />
+			<object name="LeftHandRing2" />
+			<object name="LeftHandRing3" />
+			<object name="LeftHandRing4" />
+			<object name="LeftHandPinky1" />
+			<object name="LeftHandPinky2" />
+			<object name="LeftHandPinky3" />
+			<object name="LeftHandPinky4" />
+			<object name="RightLeg" />
+			<object name="LeftLeg" />
+			<object name="RightShoulder" />
+			<object name="LeftShoulder" />
+        </animation_group>
+    </animations>
+	
+	    <bodies>
+			<body name="bomb_trigger" enabled="false" template="static" >
+				<object name="c_capsule_shot" collision_type="capsule" />
+			</body>
+			<body name="body_static" enabled="true" template="static">
+				<object name="c_c" collision_type="mesh_mopp" />
+			</body>
+		</bodies>
+	
+	<decal_surfaces default_material="flesh">
+	</decal_surfaces>
+
+    <graphics>
+        <object enabled="false" name="g_head" />
+        <object enabled="true" name="g_body" />
+        <object enabled="true" name="g_bag" />
+        <object enabled="true" name="g_vest" />
+        <object enabled="true" name="g_chair" />
+        <object enabled="false" name="g_scorch" />
+    </graphics>
+</dynamic_object>

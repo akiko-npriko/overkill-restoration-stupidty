@@ -1,0 +1,9 @@
+<materials version="3" group="lux_floor_glass_group">
+    <material name="lambert1" render_template="generic" version="2"/>
+    <material name="mat_gam_flr_03" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:SELF_ILLUMINATION" version="2">
+        <diffuse_texture file="units/pd2_mod_lux/architecture/pd2_mod_lux_nightclub/lux_int_nightclub_dance_floor_df"/>
+        <self_illumination_texture file="units/pd2_mod_lux/architecture/pd2_mod_lux_nightclub/lux_int_nightclub_dance_floor_orange_il"/>
+        <variable value="identity" type="scalar" name="il_multiplier"/>
+        <bump_normal_texture file="units/pd2_mod_lux/architecture/pd2_mod_lux_nightclub/lux_int_nightclub_dance_floor_nm"/>
+    </material>
+</materials>

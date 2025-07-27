@@ -1,0 +1,67 @@
+<table directory="assets">
+	<add unload_on_restart="true">
+		<texture path="textures/GunrunnerClubhouseFirstFloor" unload="true"/>
+		<texture path="textures/Outside" unload="true"/>
+		<texture path="textures/Empty" unload="true"/>
+	</add>
+	<add unload_on_restart="true">
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_friendly_security_winter_1/ene_friendly_security_winter_1" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_friendly_security_winter_1/ene_friendly_security_winter_1_husk" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_friendly_security_winter_1/ene_friendly_security_winter_1" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_friendly_security_winter_1/ene_friendly_security_winter_1_contour" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/ene_friendly_security_winter_1/security_winter_df" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/ene_friendly_security_winter_1/ene_friendly_security_winter_1" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/ene_friendly_security_winter_1/ene_friendly_security_winter_1" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_captain_dozer/ene_captain_dozer" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_captain_dozer/ene_captain_dozer_husk" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_captain_dozer/ene_captain_dozer" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_captain_dozer/ene_captain_dozer_contour" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/ene_captain_dozer/ene_captain_dozer_df" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/ene_captain_dozer/ene_captain_dozer" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/ene_captain_dozer/ene_captain_dozer" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_agent_soldier_1/ene_agent_soldier_1" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_agent_soldier_1/ene_agent_soldier_1_husk" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_agent_soldier_1/ene_agent_soldier_1" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_agent_soldier_1/ene_agent_soldier_1_contour" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/ene_agent_soldier_1/ene_agent_soldier_1_df" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/ene_agent_soldier_1/ene_agent_soldier_1" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/ene_agent_soldier_1/ene_agent_soldier_1" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_agent_soldier_2/ene_agent_soldier_2" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_agent_soldier_2/ene_agent_soldier_2_husk" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_agent_soldier_3/ene_agent_soldier_3" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/shared_textures/heads_atlas_nm" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/shared_textures/heads_atlas_df" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_diego/civ_diego" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_diego/civ_diego_husk" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/ene_gang_mobster_clubsecurity/ene_gang_mobster_clubsecurity_arms_df" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_diego/civ_diego" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_diego/civ_diego_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_diego/civ_diego" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_diego/civ_diego" unload="true"/>
+		<sequence_manager path="units/pd2_mod_ttr/characters/ene_captain_dozer/ene_captain_dozer" unload="true"/>
+	</add>
+	<add unload_on_restart="true">
+		<cooked_physics path="units/pd2_mod_gunrunnerclubhouse/terrain/gunrunner_terrain"/>
+		<material_config path="units/pd2_mod_gunrunnerclubhouse/terrain/gunrunner_terrain"/>
+		<model path="units/pd2_mod_gunrunnerclubhouse/terrain/gunrunner_terrain"/>
+		<object path="units/pd2_mod_gunrunnerclubhouse/terrain/gunrunner_terrain"/>
+		<unit path="units/pd2_mod_gunrunnerclubhouse/terrain/gunrunner_terrain"/>
+		<cooked_physics path="units/pd2_mod_gunrunnerclubhouse/architecture/gunrunner_building/gunrunner_building_int"/>
+		<material_config path="units/pd2_mod_gunrunnerclubhouse/architecture/gunrunner_building/gunrunner_building_int"/>
+		<model path="units/pd2_mod_gunrunnerclubhouse/architecture/gunrunner_building/gunrunner_building_int"/>
+		<object path="units/pd2_mod_gunrunnerclubhouse/architecture/gunrunner_building/gunrunner_building_int"/>
+		<unit path="units/pd2_mod_gunrunnerclubhouse/architecture/gunrunner_building/gunrunner_building_int"/>
+		<cooked_physics path="units/pd2_mod_gunrunnerclubhouse/architecture/gunrunner_building/gunrunner_building_wall"/>
+		<material_config path="units/pd2_mod_gunrunnerclubhouse/architecture/gunrunner_building/gunrunner_building_wall"/>
+		<model path="units/pd2_mod_gunrunnerclubhouse/architecture/gunrunner_building/gunrunner_building_wall"/>
+		<object path="units/pd2_mod_gunrunnerclubhouse/architecture/gunrunner_building/gunrunner_building_wall"/>
+		<unit path="units/pd2_mod_gunrunnerclubhouse/architecture/gunrunner_building/gunrunner_building_wall"/>
+		<cooked_physics path="units/pd2_mod_gunrunnerclubhouse/architecture/gunrunner_building/gunrunner_building_ext"/>
+		<material_config path="units/pd2_mod_gunrunnerclubhouse/architecture/gunrunner_building/gunrunner_building_ext"/>
+		<model path="units/pd2_mod_gunrunnerclubhouse/architecture/gunrunner_building/gunrunner_building_ext"/>
+		<object path="units/pd2_mod_gunrunnerclubhouse/architecture/gunrunner_building/gunrunner_building_ext"/>
+		<unit path="units/pd2_mod_gunrunnerclubhouse/architecture/gunrunner_building/gunrunner_building_ext"/>
+		<sequence_manager path="units/pd2_mod_gunrunnerclubhouse/architecture/gunrunner_building/gunrunner_building_wall"/>
+		<texture path="units/pd2_mod_gunrunnerclubhouse/architecture/gunrunner_building/gunrunner_apartment_corridor_wall_01_df" unload="true"/>
+	</add>
+</table>

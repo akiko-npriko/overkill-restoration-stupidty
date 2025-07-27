@@ -1,0 +1,21 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_brb/architecture/brb_ext/brb_ext_sewers/brb_ext_sewer_water" orientation_object="rp_brb_ext_sewer_water" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static" collides_with_mover="false">
+			<object name="rp_brb_ext_sewer_water" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+
+	<decal_surfaces default_material="water_puddle">
+		<decal_mesh name="dm_water" enabled="true" material="water_puddle" />
+	</decal_surfaces>
+
+	<graphics>
+		<lod_object name="lod_g_sewer_water">
+			<object name="g_sewer_water_lod0" enabled="true" max_distance="1500" />
+			<object name="g_sewer_water_lod1" enabled="true" max_distance="4000" />
+			<object name="g_sewer_water_lod2" enabled="true" />
+		</lod_object>
+	</graphics>
+</dynamic_object>

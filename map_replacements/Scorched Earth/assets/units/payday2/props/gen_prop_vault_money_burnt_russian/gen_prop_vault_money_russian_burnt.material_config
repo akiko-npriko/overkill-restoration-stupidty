@@ -1,0 +1,13 @@
+<materials version="3" group="gen_prop_vault_money_burnt">
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" decal_material="sheet_metal" version="2" name="mtr_money">
+      <!--  <variable value="candle" type="scalar" name="il_multiplier"/> -->
+        <diffuse_texture file="units/payday2/props/gen_prop_vault_money_burnt_russian/gen_prop_vault_money_burnt_rus_df"/>
+     <!--   <self_illumination_texture file="units/payday2/props/gen_prop_vault_money_burnt/gen_prop_vault_money_burnt_il"/> -->
+        <bump_normal_texture file="units/payday2/props/gen_prop_vault_money_burnt_russian/gen_prop_vault_money_burnt_rus_nm"/> 
+     <!--   <variable value="0.05 0 0" type="vector3" name="uv_speed"/> -->
+    </material>
+    <material version="2"  name="mtr_money_glow" render_template="generic">
+    </material>
+    <material version="2" name="mtr_money_no_glow" render_template="generic">
+    </material>
+</materials>

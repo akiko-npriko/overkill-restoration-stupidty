@@ -1,0 +1,14 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc2/architecture/csb_sewer/csb_sewer" orientation_object="rp_spawn_sewer_door" />
+	<bodies>
+		<body name="body_box_door_dynamic" enabled="true" template="debris" friction="0.8" collides_with_mover="false">
+			<object name="c_convex_door_dynamic" collision_type="convex" mass="10" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="metal">
+		<decal_mesh name="dm_door_metal" 		enabled="true" material="metal" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_door" 		enabled="true" shadow_caster="false" />
+	</graphics>
+</dynamic_object>

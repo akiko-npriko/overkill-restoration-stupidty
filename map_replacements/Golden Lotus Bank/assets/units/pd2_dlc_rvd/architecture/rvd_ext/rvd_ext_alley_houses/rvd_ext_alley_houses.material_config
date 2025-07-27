@@ -1,0 +1,225 @@
+<materials version="3">
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" name="mat_temp" version="2">
+        <diffuse_texture file="units/pd2_dlc_berry/architecture/temp_textures/white_no_spec_df"/>
+        <bump_normal_texture file="units/pd2_dlc_berry/architecture/temp_textures/white_no_spec_nm"/>
+    </material>
+    <material render_template="shadow_caster_only" name="shadow_caster" version="2"/>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLORc" name="mat_ext_white_plaster" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_white_plaster_df"/>
+        <bump_normal_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_white_plaster_nm"/>
+        <material_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_white_plaster_gsma"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_ext_red_brick" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_red_brick_df"/>
+        <bump_normal_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_red_brick_nm"/>
+        <material_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_red_brick_gsma"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_ext_red_brick_clean" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_red_brick_clean_df"/>
+        <bump_normal_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_red_brick_clean_nm"/>
+        <material_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_red_brick_clean_gsma"/>
+    </material>
+    <material render_template="generic:BLEND_DIFFUSE:BLEND_GSMA:BLEND_MASK_CONTROL:BLEND_MASK_CROSSBLEND:BLEND_NORMAL:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_ext_brick_mortar_blend" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_mortar_df"/>
+        <bump_normal_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_mortar_nm"/>
+        <diffuse_layer0_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_red_brick_df"/>
+        <variable type="vector3" name="blend_control" value="0.019999999552965 0.90000003576279 0"/>
+        <normal_layer0_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_red_brick_nm"/>
+        <material_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_mortar_gsma"/>
+        <diffuse_layer2_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_red_brick_gsma"/>
+        <reflection_texture file="environments/cubemaps/cubemap_bank_01" type="cubemap"/>
+    </material>
+    <material render_template="generic:BLEND_DIFFUSE:BLEND_GSMA:BLEND_MASK_CONTROL:BLEND_MASK_CROSSBLEND:BLEND_NORMAL:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_ext_concrete_blend" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_rough_concrete_df"/>
+        <bump_normal_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_rough_concrete_nm"/>
+        <diffuse_layer0_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_concrete_df"/>
+        <variable type="vector3" name="blend_control" value="0.03999999910593 0.69999998807907 0"/>
+        <normal_layer0_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_concrete_nm"/>
+        <material_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_rough_concrete_gsma"/>
+        <diffuse_layer2_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_concrete_gsma"/>
+        <reflection_texture file="environments/cubemaps/cubemap_bank_01" type="cubemap"/>
+    </material>
+    <material render_template="generic:BLEND_DIFFUSE:BLEND_GSMA:BLEND_MASK_CONTROL:BLEND_MASK_CROSSBLEND:BLEND_NORMAL:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_ext_moss_plaster_blend" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_moss_grunge_df"/>
+        <bump_normal_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_moss_grunge_nm"/>
+        <diffuse_layer0_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_white_plaster_df"/>
+        <variable type="vector3" name="blend_control" value="0.50999999046326 0.20000000298023 0"/>
+        <normal_layer0_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_white_plaster_nm"/>
+        <material_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_moss_grunge_gsma"/>
+        <diffuse_layer2_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_white_plaster_gsma"/>
+        <reflection_texture file="environments/cubemaps/cubemap_bank_01" type="cubemap"/>
+    </material>
+    <material render_template="generic:BLEND_DIFFUSE:BLEND_GSMA:BLEND_MASK_CONTROL:BLEND_MASK_CROSSBLEND:BLEND_NORMAL:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_ext_alley_concrete_blend" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_concrete_df"/>
+        <bump_normal_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_concrete_nm"/>
+        <diffuse_layer0_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_alley_concrete_01_df"/>
+        <variable type="vector3" name="blend_control" value="0.1499999910593 0.80000001192093 0"/>
+        <normal_layer0_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_alley_concrete_01_nm"/>
+        <material_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_concrete_gsma"/>
+        <diffuse_layer2_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_alley_concrete_01_gsma"/>
+        <reflection_texture file="environments/cubemaps/cubemap_bank_01" type="cubemap"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_ext_roof_tiles" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_roof_tiles_df"/>
+        <bump_normal_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_roof_tiles_nm"/>
+        <material_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_roof_tiles_gsma"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" name="mat_ext_roof" version="2">
+        <diffuse_texture file="units/pd2_dlc_cage/architecture/ind_cardealership_facade/ind_cardealership_facade_roof_df"/>
+        <bump_normal_texture file="units/pd2_dlc_cage/architecture/ind_cardealership_facade/ind_cardealership_facade_roof_nm"/>
+    </material>
+    <material name="mat_ext_industrial_window_01_glass" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:NORMALMAP:OPACITY_FADE" version="2" decal_material="glass_breakable">
+        <variable type="vector3" name="fresnel_settings" value="0 0 1"/>
+        <opacity_texture file="units/payday2/architecture/ind/ind_ext_dock_bld_window_glass_op"/>
+        <diffuse_texture file="units/payday2/architecture/ind/ind_ext_dock_bld_window_glass_df"/>
+        <reflection_texture file="units/payday2/cubemaps/cubemap_window_weak_df" type="cubemap"/>
+        <variable type="vector3" name="opacity_fade" value="0 8950 0"/>
+        <bump_normal_texture file="units/payday2/architecture/ind/ind_ext_dock_bld_window_glass_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:RL_CORE_ENVIRONMENT" name="mat_ext_industrial_window_01_frame" version="2">
+        <diffuse_texture file="units/payday2/architecture/ind/ind_ext_dock_bld_window_solid_df"/>
+        <bump_normal_texture file="units/payday2/architecture/ind/ind_ext_dock_bld_window_solid_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_ext_concrete" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_concrete_df"/>
+        <bump_normal_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_concrete_nm"/>
+        <material_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_concrete_gsma"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_ext_corrugated_metal" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_corrugated_metal_df"/>
+        <bump_normal_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_corrugated_metal_nm"/>
+        <material_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_corrugated_metal_gsma"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_ext_cinderblocks" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_cinderblocks_df"/>
+        <bump_normal_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_cinderblocks_nm"/>
+        <material_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_cinderblocks_gsma"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_DEPTH_TEXTURE:NORMALMAP_UV1:PARALLAX:PARALLAX_RELIEF:VERTEX_COLOR" name="mat_ext_cinderblocks_parallax" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_cinderblocks_df"/>
+        <bump_normal_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_cinderblocks_dnm"/>
+        <material_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_cinderblocks_gsma"/>
+        <variable type="scalar" name="parallax_scale" value="0.012"/>
+        <variable type="scalar" name="parallax_layers" value="16"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_ext_painted_brick" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_painted_brick_df"/>
+        <bump_normal_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_painted_brick_nm"/>
+        <material_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_painted_brick_gsma"/>
+    </material>
+    <material render_template="decal:DIFFUSE_TEXTURE:NORMALMAP:OPACITY_TEXTURE:VERTEX_COLOR" name="mat_ext_edge_decals" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_edge_decals_df"/>
+        <opacity_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_edge_decals_op"/>
+        <bump_normal_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_edge_decals_nm"/>
+    </material>
+    <material render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_ext_water_decals" version="2">
+        <opacity_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_water_decal_op"/>
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_water_decal_df"/>
+        <bump_normal_texture file="units/pd2_dlc_berry/architecture/temp_textures/white_no_spec_nm"/>
+        <reflection_texture file="environments/cubemaps/cubemap_bank_01" type="cubemap"/>
+        <variable type="vector3" name="fresnel_settings" value="0 1 0.5"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_ext_trims" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_trims_df"/>
+        <bump_normal_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_trims_nm"/>
+        <material_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_trims_gsma"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_ext_metal_trim" version="2">
+        <diffuse_texture file="units/pd2_dlc_mad/architecture/mad_sawmill/mad_building_trims_01_df"/>
+        <bump_normal_texture file="units/pd2_dlc_mad/architecture/mad_sawmill/mad_building_trims_01_nm"/>
+        <material_texture file="units/pd2_dlc_mad/architecture/mad_sawmill/mad_building_trims_01_gsma"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_ext_wood_trim" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_wood_trim_df"/>
+        <bump_normal_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_wood_trim_nm"/>
+        <material_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_wood_trim_gsma"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:RL_ENVIRONMENT" name="mat_bry_office_building_window" version="2">
+        <diffuse_texture file="units/pd2_dlc_berry/architecture/bry_office_building/bry_office_building_window_df"/>
+        <bump_normal_texture file="units/pd2_dlc_berry/architecture/bry_office_building/bry_office_building_window_nm"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP:RL_ENVIRONMENT" name="mat_bry_office_building_window_cubemap" version="2">
+        <diffuse_texture file="units/pd2_dlc_berry/architecture/bry_office_building/bry_office_building_window_df"/>
+        <bump_normal_texture file="units/pd2_dlc_berry/architecture/bry_office_building/bry_office_building_window_nm"/>
+        <reflection_texture file="units/payday2/cubemaps/cubemap_steel" type="cubemap"/>
+    </material>
+    <material render_template="generic:BLEND_DIFFUSE:BLEND_GSMA:BLEND_MASK_CONTROL:BLEND_MASK_CROSSBLEND:BLEND_NORMAL:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_ext_concrete_peelingpaint_blend" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_concrete_df"/>
+        <bump_normal_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_concrete_nm"/>
+        <diffuse_layer0_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_peeling_paint_blue_df"/>
+        <variable type="vector3" name="blend_control" value="0.049999997019768 1 0"/>
+        <normal_layer0_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_peeling_paint_blue_nm"/>
+        <material_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_concrete_gsma"/>
+        <diffuse_layer2_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_peeling_paint_blue_gsma"/>
+        <reflection_texture file="environments/cubemaps/cubemap_bank_01" type="cubemap"/>
+    </material>
+    <material render_template="generic:BLEND_DIFFUSE:BLEND_GSMA:BLEND_MASK_CONTROL:BLEND_MASK_CROSSBLEND:BLEND_NORMAL:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_ext_concrete_slab_moss_blend" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_moss_grunge_df"/>
+        <bump_normal_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_moss_grunge_nm"/>
+        <diffuse_layer0_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_concrete_slabs_ground_df"/>
+        <variable type="vector3" name="blend_control" value="0.68000000715256 0.60000002384186 0"/>
+        <normal_layer0_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_concrete_slabs_ground_nm"/>
+        <material_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_moss_grunge_gsma"/>
+        <diffuse_layer2_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_concrete_slabs_ground_gsma"/>
+        <reflection_texture file="environments/cubemaps/cubemap_bank_01" type="cubemap"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_red_metal_trim" version="2">
+        <diffuse_texture file="units/pd2_dlc_chew/props/chw_prop_coal_car/chw_train_coal_metal_trim_df"/>
+        <bump_normal_texture file="units/pd2_dlc_chew/props/chw_prop_coal_car/chw_train_coal_metal_trim_nm"/>
+        <material_texture file="units/pd2_dlc_chew/props/chw_prop_coal_car/chw_train_coal_metal_trim_gsma"/>
+    </material>
+    <material render_template="generic:BLEND_DIFFUSE:BLEND_GSMA:BLEND_MASK_CONTROL:BLEND_MASK_CROSSBLEND:BLEND_NORMAL:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_metal_floor_anti_slip" version="2">
+        <diffuse_texture file="units/pd2_dlc_chew/props/chw_prop_excess_height_car/chw_metal_floor_anti_slip_df"/>
+        <bump_normal_texture file="units/pd2_dlc_chew/props/chw_prop_excess_height_car/chw_metal_floor_anti_slip_nm"/>
+        <diffuse_layer0_texture file="units/pd2_dlc_chew/props/chw_prop_excess_height_car/chw_metal_floor_anti_slip_rusty_df"/>
+        <variable type="vector3" name="blend_control" value="0.14000000059605 0.5 0"/>
+        <normal_layer0_texture file="units/pd2_dlc_chew/props/chw_prop_excess_height_car/chw_metal_floor_anti_slip_rusty_nm"/>
+        <material_texture file="units/pd2_dlc_chew/props/chw_prop_excess_height_car/chw_metal_floor_anti_slip_gsma"/>
+        <diffuse_layer2_texture file="units/pd2_dlc_chew/props/chw_prop_excess_height_car/chw_metal_floor_anti_slip_rusty_gsma"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_ext_storage_unit_walls" version="2">
+        <diffuse_texture file="units/pd2_dlc_chill/architecture/chl_whole_building/chl_int_bodhi_df"/>
+        <bump_normal_texture file="units/pd2_dlc_chill/architecture/chl_whole_building/chl_int_bodhi_nm"/>
+        <material_texture file="units/pd2_dlc_chill/architecture/chl_whole_building/chl_int_bodhi_gsma"/>
+        <reflection_texture file="environments/cubemaps/cubemap_bridge_01" type="cubemap"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_ext_storage_unit_concrete" version="2">
+        <diffuse_texture file="units/pd2_dlc_chill/architecture/chl_whole_building/chl_basement_floor_df"/>
+        <bump_normal_texture file="units/pd2_dlc_chill/architecture/chl_whole_building/chl_basement_floor_nm" mip="1"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_int_laundromat_floor" version="2">
+        <diffuse_texture file="units/payday2/architecture/safehouse/safehouse_int_floor_01_df"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <variable type="vector3" name="environment_settings" value="1 0 2"/>
+        <bump_normal_texture file="units/payday2/architecture/safehouse/safehouse_int_floor_01_nm"/>
+    </material>
+    <material render_template="generic:BLEND_DIFFUSE:BLEND_MASK_SEPERATE:BLEND_SMOOTH:DIFFUSE_TEXTURE:NORMALMAP:RL_CORE_ENVIRONMENT:VERTEX_COLOR" name="mat_int_laundromat_ceiling" version="2">
+        <diffuse_texture file="units/payday2/architecture/safehouse/safehouse_int_ceiling_02b_df"/>
+        <diffuse_layer0_texture file="units/payday2/architecture/safehouse/safehouse_int_ceiling_02a_df"/>
+        <diffuse_layer1_texture file="units/payday2/architecture/safehouse/safehouse_int_ceiling_02mask_df"/>
+        <bump_normal_texture file="units/payday2/architecture/safehouse/safehouse_int_ceiling_02a_nm"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_int_laundromat_wall" version="2">
+        <diffuse_texture file="units/payday2/architecture/safehouse/safehouse_int_wall_02_df"/>
+        <bump_normal_texture file="units/payday2/architecture/safehouse/safehouse_int_wall_02_nm"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <variable type="vector3" name="environment_settings" value="1.1000000238419 0.10800000280142 5.1999998092651"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:DOUBLE_SIDED:NORMALMAP" name="mat_int_blinds" version="2">
+        <diffuse_texture file="units/pd2_dlc_jerry/architecture/jry_diner/stn_prop_blinds_df"/>
+        <bump_normal_texture file="units/pd2_dlc_jerry/architecture/jry_diner/stn_prop_blinds_nm"/>
+    </material>
+    <material name="mat_glass" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:NORMALMAP:OPACITY_FADE" version="2" decal_material="glass_breakable">
+        <variable type="vector3" name="fresnel_settings" value="2 0.87999999523163 0.52999997138977"/>
+        <opacity_texture file="units/pd2_dlc_flat/architecture/flt_ext_apartment_exterior/flt_ext_apartment_glass_op"/>
+        <diffuse_texture file="units/pd2_dlc_flat/architecture/flt_ext_apartment_exterior/flt_ext_apartment_glass_df"/>
+        <reflection_texture type="cubemap" global_texture="current_global_texture"/>
+        <variable type="vector3" name="opacity_fade" value="10 3669 0"/>
+        <bump_normal_texture file="units/pd2_dlc_flat/architecture/flt_ext_apartment_exterior/flt_ext_apartment_glass_nm"/>
+    </material>
+    <material render_template="decal:DIFFUSE_TEXTURE:SIMPLE_TINT" name="mat_text" version="2">
+        <diffuse_texture file="units/world/props/diamond_heist/signs/diamondheist_directionsigns_df"/>
+        <variable type="vector3" name="tint_color" value="0.38582676649094 0.38582676649094 0.38582676649094"/>
+    </material>
+</materials>

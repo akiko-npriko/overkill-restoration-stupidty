@@ -1,0 +1,22 @@
+<dynamic_object>
+    <diesel orientation_object="rp_com_prop_janitor_shelf" materials="units/payday2/props/com_prop_janitor_shelf/com_prop_janitor_shelf" />
+    <bodies>
+        <body enabled="true" template="static" name="body0" >
+			<object name="rp_com_prop_janitor_shelf" />
+            <object collision_type="box" name="c_box01" />
+            <object collision_type="box" name="c_box02" />
+            <object collision_type="box" name="c_box03" />
+            <object collision_type="box" name="c_box04" />
+            <object collision_type="box" name="c_box05" />
+            <object collision_type="box" name="c_box06" />
+            <object collision_type="box" name="c_convex01" />
+            <object collision_type="box" name="c_convex02" />
+            <object collision_type="box" name="c_convex03" />
+            <object collision_type="box" name="c_convex04" />
+        </body>
+    </bodies>
+    <graphics>
+        <object enabled="true" name="g_com_prop_janitor_shelf" />
+        <object enabled="true" shadow_caster="true" name="s_com_prop_janitor_shelf" />
+    </graphics>
+</dynamic_object>

@@ -1,0 +1,17 @@
+<unit type="gov" slot="1" >
+    <object file="units/pd2_dlc2/architecture/gov_c_int/gov_c_int_wall_explosion_b" />
+	<network sync="spawn"/>
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+        <extension class="UnitDamage" name="damage" />
+    </extensions>	
+	<dependencies>
+		<depends_on physic_effect="physic_effects/push_sphere" />
+		<depends_on unit="units/payday2/architecture/hcm/hcm_int_wall_explosion_debris" />
+		<depends_on effect="effects/payday2/particles/explosions/c4_wall_explosion" />
+	</dependencies>
+	<sounds>
+		<default_soundsource source="e_push_1"/>
+		<soundsource name="sound_explosion" source="e_push_1" />
+	</sounds>
+</unit>

@@ -1,0 +1,21 @@
+<materials version="3">
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" name="mat_electric_box" version="2">
+        <diffuse_texture file="units/payday2/props/str_prop_street_electric_box/str_prop_street_electric_box_df"/>
+        <bump_normal_texture file="units/payday2/props/str_prop_street_electric_box/str_prop_street_electric_box_nm"/>
+    </material>
+    <material render_template="generic:SELF_ILLUMINATION" name="mtr_il_display" version="2">
+        <self_illumination_texture file="units/pd2_dlc_chas/equipment/chas_interactable_alarmbox/chas_interactable_alarmbox_df"/>
+        <variable type="scalar" name="il_multiplier" value="monitor"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" name="mtr_pcb" version="2">
+        <diffuse_texture file="units/pd2_dlc_chas/equipment/chas_interactable_alarmbox/chas_interactable_alarmbox_df"/>
+        <bump_normal_texture file="units/pd2_dlc_chas/equipment/chas_interactable_alarmbox/chas_interactable_alarmbox_nm"/>
+    </material>
+	<material name="mtr_outline" render_template="generic:ALPHA_MASKED:CONTOUR:DIFFUSE_TEXTURE:OPACITY_TEXTURE" unique="true" version="2">
+    	<diffuse_texture file="units/white_df"/>
+    	<variable value="1.0 0.5 0" type="vector3" name="contour_color"/>
+    	<variable value="1" type="scalar" name="contour_opacity"/>
+    	<opacity_texture file="units/transparent_op"/>
+	</material>
+    <material render_template="shadow_caster_only" name="shadow_caster" version="2"/>
+</materials>

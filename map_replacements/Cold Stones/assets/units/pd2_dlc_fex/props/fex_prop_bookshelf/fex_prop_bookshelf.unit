@@ -1,0 +1,19 @@
+<unit type="fex" slot="1">
+	<network sync="spawn"/>
+	<object file="units/pd2_dlc_fex/props/fex_prop_bookshelf/fex_prop_bookshelf" />
+	<dependencies>
+		<depends_on bnk="soundbanks/regular_sfx" />
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="UseInteractionExt">
+			<var name="tweak_data" value="hold_interact_inspect_bookshelf" />
+			<var name="_interact_object" value="interact"/>
+		</extension>
+	</extensions>
+	<sounds>
+		<default_soundsource source="rp_fex_prop_bookshelf"/>
+		<soundsource name="snd" source="anim_shelf" />
+	</sounds>
+</unit>

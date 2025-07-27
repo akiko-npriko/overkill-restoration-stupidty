@@ -1,0 +1,15 @@
+<dynamic_object>
+    <diesel orientation_object="rp_com_ext_parking_garage_concrete_decal_a" materials="units/payday2/architecture/com_ext_parking_garage/com_ext_parking_garage_concrete" />
+	
+    <bodies>
+        <body enabled="true" template="editor" name="editor_body" >
+			<object name="rp_com_ext_parking_garage_concrete_decal_a"/>
+			<object name="c_box_editor" collision_type="box"/>
+		
+        </body>
+    </bodies>
+	
+    <graphics>
+        <object enabled="true" name="g_g" shadow_caster="true"/>
+    </graphics>
+</dynamic_object>

@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<materials group="civ_male_boss_1" version="3">
+	<material name="mtr_body" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:RL_CIVILIANS:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/pd2_mod_ttr/characters/civ_kozlov/civ_kozlov_df"/>
+		<bump_normal_texture file="units/pd2_mod_ttr/characters/civ_kozlov/civ_kozlov_nm"/>
+		<variable name="contour_color" type="vector3" value="1 1 1"/>
+		<variable name="contour_opacity" type="scalar" value="0"/>
+	</material>
+	<material name="mtr_head" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:RL_CIVILIANS:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/pd2_mod_ttr/characters/civ_kozlov/civ_kozlov_head_df"/>
+		<bump_normal_texture file="units/pd2_mod_ttr/characters/civ_kozlov/civ_kozlov_head_nm"/>
+		<variable name="contour_color" type="vector3" value="1 1 1"/>
+		<variable name="contour_opacity" type="scalar" value="0"/>
+	</material>
+	<material name="mtr_woodhand" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:RL_CIVILIANS:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/pd2_dlc_chca/characters/civ_male_xunkang/civ_male_xunkang_woodhand_df"/>
+		<bump_normal_texture file="units/pd2_dlc_chca/characters/civ_male_xunkang/civ_male_xunkang_woodhand_nm"/>
+		<variable name="contour_color" type="vector3" value="1 1 1"/>
+		<variable name="contour_opacity" type="scalar" value="0"/>
+	</material>
+	<material render_template="generic:ALPHA_MASKED:CONTOUR:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:OPACITY_TEXTURE:RL_CIVILIANS:SKINNED_3WEIGHTS" name="mtr_hair" version="2">
+        <bump_normal_texture file="units/pd2_dlc_fex/characters/ntr_hair/ntr_generic_hair_nm"/>
+        <diffuse_texture file="units/pd2_dlc_chas/characters/shared_textures/ntr_hair/ntr_generic_hair_df"/>
+        <opacity_texture file="units/pd2_dlc_chas/characters/shared_textures/ntr_hair/ntr_generic_hair_op"/>
+        <variable type="scalar" name="alpha_ref" value="0.09100000574719"/>
+        <material_texture file="units/pd2_dlc_fex/characters/ntr_hair/ntr_hair_gsma"/>
+        <variable type="vector3" name="contour_color" value="1 1 1"/>
+        <variable type="scalar" name="contour_opacity" value="0"/>
+    </material>
+	<material name="shadow_caster" render_template="shadow_caster_only:SKINNED_1WEIGHT"/>
+</materials>

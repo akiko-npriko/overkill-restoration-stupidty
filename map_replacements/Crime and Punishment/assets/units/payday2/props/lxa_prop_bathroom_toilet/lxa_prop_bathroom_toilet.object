@@ -1,0 +1,14 @@
+<dynamic_object>
+    <diesel orientation_object="rp_toilet" materials="units/payday2/props/lxa_prop_bathroom_toilet/lxa_prop_bathroom_toilet" />
+    <bodies>
+        <body enabled="true" template="static" name="body0" >
+			<object name="c_convex" collision_type="convex" padding="-2.5"/>
+        </body>
+    </bodies>
+    <decal_surfaces>
+		<decal_mesh name="dm_tile" enabled="true" material="tile"/>
+    </decal_surfaces>
+    <graphics>
+        <object enabled="true" name="g_mesh" />
+    </graphics>
+</dynamic_object>

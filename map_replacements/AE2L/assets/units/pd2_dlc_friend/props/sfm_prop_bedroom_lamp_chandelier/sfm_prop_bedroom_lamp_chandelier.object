@@ -1,0 +1,93 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_friend/props/sfm_prop_bedroom_lamp_chandelier/sfm_prop_bedroom_lamp_chandelier" orientation_object="rp_sfm_prop_bedroom_lamp_chandelier" />
+	<sequence_manager file="units/pd2_dlc_friend/props/sfm_prop_bedroom_lamp_chandelier/sfm_prop_bedroom_lamp_chandelier" />
+	
+
+	<bodies>
+
+	    <body remove_ray_type="walk vis_graph" name="static_body" enabled="true" template="raycoll_static">
+	       	<object name="rp_sfm_prop_bedroom_lamp_chandelier" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+	    </body>
+
+		<body name="part1_body_dyn" template="debris" enabled="false" pushed_by_mover="false">
+		      <object name="c_convex_01" collision_type="convex" padding="-2.5" />
+		</body>
+
+		<body name="part2_body_dyn" template="debris" enabled="false" pushed_by_mover="false">
+		      <object name="c_convex_02" collision_type="convex" padding="-2.5" />
+		</body>
+
+		<body name="part3_body_dyn" template="debris" enabled="false" pushed_by_mover="false">
+		      <object name="c_convex_03" collision_type="convex" padding="-2.5" />
+		</body>
+
+		<body name="part4_body_dyn" template="debris" enabled="false" pushed_by_mover="false">
+		      <object name="c_convex_04" collision_type="convex" padding="-2.5" />
+		</body>	
+
+		 <body name="part5_body_dyn" template="debris" enabled="false" pushed_by_mover="false">
+		      <object name="c_convex_05" collision_type="convex" padding="-2.5" />
+		</body>
+		
+		<body name="part6_body_dyn" template="debris" enabled="false" pushed_by_mover="false">
+		      <object name="c_convex_06" collision_type="convex" padding="-2.5" />
+		</body>
+
+		<body name="part7_body_dyn" template="debris" enabled="false" pushed_by_mover="false">
+		      <object name="c_convex_07" collision_type="convex" padding="-2.5" />
+		</body>
+
+		<body name="part8_body_dyn" template="debris" enabled="false" pushed_by_mover="false">
+		      <object name="c_box_03" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+
+	<decal_surfaces default_material="glass_breakable">
+		<decal_mesh name="dm_glass_breakable" enabled="true" material="glass_breakable" />
+	</decal_surfaces>
+
+	<graphics>
+
+		<lod_object name="lod_g">
+			<object name="g_lod0" enabled="true" max_distance="1500" />
+			<object name="g_lod1" enabled="true" max_distance="3000" />
+			<object name="g_lod2" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_g_dmg_01">
+			<object name="g_dmg_01_lod0" enabled="true" max_distance="1500" />
+			<object name="g_dmg_01_lod1" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_g_dmg_02">
+			<object name="g_dmg_02_lod0" enabled="true" max_distance="1500" />
+			<object name="g_dmg_02_lod1" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_g_dmg_03">
+			<object name="g_dmg_03_lod0" enabled="true" max_distance="1500" />
+			<object name="g_dmg_03_lod1" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_g_dmg_04">
+			<object name="g_dmg_04_lod0" enabled="true" max_distance="1500" />
+			<object name="g_dmg_04_lod1" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_g_dmg_05">
+			<object name="g_dmg_05_lod0" enabled="true" max_distance="1500" />
+			<object name="g_dmg_05_lod1" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_g_dmg_06">
+			<object name="g_dmg_06_lod0" enabled="true" max_distance="1500" />
+			<object name="g_dmg_06_lod1" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_g_dmg_07">
+			<object name="g_dmg_07_lod0" enabled="true" max_distance="1500" />
+			<object name="g_dmg_07_lod1" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_g_dmg_08">
+			<object name="g_dmg_08_lod0" enabled="true" max_distance="1500" />
+			<object name="g_dmg_08_lod1" enabled="true" />
+		</lod_object>
+		<object name="s_s" enabled="true" shadow_caster="true" />
+	</graphics>
+	
+</dynamic_object>

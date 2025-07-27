@@ -1,0 +1,35 @@
+<dynamic_object>
+    <diesel orientation_object="rp_off_prop_officehigh_drawer_zebra_large_glass_door" materials="units/payday2/props/off_prop_officehigh_drawer/off_prop_officehigh_drawer_zebra" />
+	<sequence_manager file="units/payday2/props/off_prop_officehigh_drawer/off_prop_officehigh_drawer_zebra_large_glass_door" />
+	
+	<bodies>
+        <body enabled="true" template="static" name="body0" >
+            <object name="rp_off_prop_officehigh_drawer_zebra_large_glass_door" />
+            <object collision_type="mesh_mopp" name="c_mesh" />
+        </body>
+		<body enabled="true" template="static" name="body_glass_01" >
+            <object collision_type="box" name="c_box_01" />
+        </body>		
+		<body enabled="true" template="static" name="body_glass_02" >
+            <object collision_type="box" name="c_box_02" />
+        </body>		
+		<body enabled="true" template="static" name="body_glass_03" >
+            <object collision_type="box" name="c_box_03" />
+        </body>
+		<body enabled="true" template="static" name="body_glass_04" >
+            <object collision_type="box" name="c_box_04" />
+        </body>
+    </bodies>
+	<decal_surfaces static="true" default_material="wood">
+        <decal_mesh enabled="true" name="c_mesh" material="wood" />
+    </decal_surfaces>
+    <graphics>
+        <object enabled="true" name="g_glass_01" />
+        <object enabled="true" name="g_glass_02" />
+        <object enabled="true" name="g_glass_03" />
+        <object enabled="true" name="g_glass_04" />
+        <object enabled="true" name="g_handle_01" />
+        <object enabled="true" name="g_mesh" />
+    </graphics>
+</dynamic_object>
+

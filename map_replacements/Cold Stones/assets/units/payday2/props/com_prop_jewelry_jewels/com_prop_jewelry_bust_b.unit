@@ -1,0 +1,21 @@
+<unit type="com" slot="1" >
+	<object file="units/payday2/props/com_prop_jewelry_jewels/com_prop_jewelry_bust_b" />
+	<network sync="spawn"/>
+	<extensions>
+		<extension class="ScriptUnitData" name="unit_data" />
+		<extension name="damage" class="UnitDamage" />
+		
+		<extension name="base" class="SmallLootBase">
+			<var name="small_loot" value="diamondheist_vault_bust" />
+			<var name="skip_remove_unit" value="true" />
+		</extension>
+		
+		<extension name="interaction" class="SmallLootInteractionExt">
+			<var name="tweak_data" value="diamond_pickup" />
+			<var name="_ray_object_names" type="table" >
+					<var value="a_ray_object_1"/>
+			</var>
+			<var name="_global_event" value="pku_jewelry_instant" />
+		</extension>
+	</extensions>
+</unit> 

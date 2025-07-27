@@ -1,0 +1,17 @@
+<unit type="rvd" slot="1">
+	<object file="units/pd2_dlc_rvd/props/rvd_prop_jewelry_box_01/rvd_prop_jewelry_box_01" />
+	<network sync="spawn" />
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+		<extension class="UnitDamage" name="damage"/>
+		<extension name="interaction" class="CarryInteractionExt">
+		  <var name="tweak_data" value="diamonds_pickup_full" />
+		  <var name="_interact_object" value="interaction"/>
+		  <var name="_remove_on_interact" value="true" />
+		  <var name="_global_event" value="pku_jewelry" />
+		</extension>
+		<extension name="carry_data" class="CarryData">
+			<var name="_carry_id" value="diamonds_dah" />
+		</extension>
+    </extensions>
+</unit>

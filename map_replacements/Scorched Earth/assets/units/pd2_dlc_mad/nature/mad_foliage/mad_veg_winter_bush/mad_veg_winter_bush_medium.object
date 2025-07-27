@@ -1,0 +1,16 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_mad/nature/mad_foliage/mad_veg_winter_bush/mad_veg_winter_bush" orientation_object="rp_mad_veg_winter_bush_medium" />
+	<bodies>
+		<body name="body_static" add_ray_type="ai_vision" template="foliage" editable="true" collides_with_mover="false" enabled="true">
+			<object name="rp_mad_veg_winter_bush_medium" />
+			<object name="c_convex_01" collision_type="convex" padding="-2.5" />
+		</body>
+	</bodies>
+	<graphics>
+		<lod_object name="lod_g">
+			<object name="g_lod0" enabled="true" max_distance="5000" shadow_caster="true" />
+			<object name="g_lod1" enabled="true" max_distance="7000" shadow_caster="true" />
+			<object name="g_lod2" enabled="true" shadow_caster="true" />
+		</lod_object>
+	</graphics>
+</dynamic_object>

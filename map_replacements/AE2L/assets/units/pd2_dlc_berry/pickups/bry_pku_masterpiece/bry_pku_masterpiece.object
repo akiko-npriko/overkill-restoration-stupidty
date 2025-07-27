@@ -1,0 +1,22 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_berry/pickups/bry_pku_masterpiece/bry_pku_masterpiece" orientation_object="rp_bry_pku_masterpiece" />
+	<sequence_manager file="units/pd2_dlc_berry/pickups/bry_pku_masterpiece/bry_pku_masterpiece" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_bry_pku_masterpiece" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="cloth">
+		<decal_mesh name="dm_cloth" enabled="true" material="cloth" />
+		<decal_mesh name="dm_wood" enabled="true" material="wood" />
+	</decal_surfaces>
+	<graphics>
+		<graphic_group name="grp_painting" enabled="true" >
+			<lod_object name="lod_g">
+				<object name="g_lod_0" enabled="true" max_distance="2000" />
+				<object name="g_lod_1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+	</graphics>
+</dynamic_object>

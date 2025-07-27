@@ -1,0 +1,12 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_rvd/props/rvd_prop_flag_garnet_group/rvd_prop_flag_garnet_group_01" orientation_object="rp_rvd_prop_flag_garnet_group_01" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_rvd_prop_flag_garnet_group_01" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<graphics>
+		<object name="g_rvd_flag_garnet_group_01" enabled="true" />
+	</graphics>
+</dynamic_object>

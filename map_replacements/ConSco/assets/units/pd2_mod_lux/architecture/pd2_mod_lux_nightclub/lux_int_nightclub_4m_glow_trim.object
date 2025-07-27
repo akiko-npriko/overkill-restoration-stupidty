@@ -1,0 +1,16 @@
+<dynamic_object>
+	<metadata material_config_group="lux_nightclub_wall_group"/>
+    <diesel orientation_object="rp_com_int_nightclub_trim_4x1m_a" materials="units/pd2_mod_lux/architecture/pd2_mod_lux_nightclub/lux_int_nightclub" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body" >
+            <object name="rp_com_int_nightclub_trim_4x1m_a"/>
+            <object collision_type="box" name="c_box_000" />
+        </body>
+    </bodies>
+    <decal_surfaces default_material="thin_layer" static="true">
+        <decal_mesh enabled="true" name="dm_thin_layer" material="thin_layer" />
+    </decal_surfaces>
+    <graphics>
+        <object enabled="true" name="g_g" />
+    </graphics>
+</dynamic_object>

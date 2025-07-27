@@ -1,0 +1,19 @@
+<unit type="sfm" slot="1">
+	<network sync="spawn"/>
+	<object file="units/pd2_dlc_friend/props/sfm_prop_ext_door_shed/sfm_prop_ext_door_shed" />
+	<dependencies>
+		<depends_on effect="effects/payday2/particles/wood/wood_door_shotgun_dmg_in" />
+		<depends_on effect="effects/payday2/particles/wood/wood_door_shotgun_dmg_out" />
+		<depends_on unit="units/pd2_dlc_friend/props/sfm_prop_ext_door_shed/sfm_prop_ext_door_shed_debri" />
+		<depends_on physic_effect="physic_effects/push_sphere" />
+		<depends_on bnk="soundbanks/regular_sfx" />
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="UseInteractionExt">
+			<var name="tweak_data" value="pick_lock_easy_no_skill" />
+			<var name="_interact_object" value="interact"/>
+		</extension>
+	</extensions>
+</unit>

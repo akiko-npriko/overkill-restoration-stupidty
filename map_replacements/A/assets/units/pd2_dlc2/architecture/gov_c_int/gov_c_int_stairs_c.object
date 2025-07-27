@@ -1,0 +1,17 @@
+<dynamic_object>
+    <diesel orientation_object="rp_gov_c_int_stairs_c" materials="units/pd2_dlc2/architecture/gov_c_int/gov_c_int_stairs" />
+    
+	<bodies>
+		<body enabled="true" template="static" name="static_body" >
+				<object name="rp_gov_c_int_stairs_c" />
+				<object collision_type="mesh_mopp" name="g_g"/>
+		</body>
+		<body enabled="true" template="nav_walk" name="ramp_body" > <!-- CHANGE!! -->
+				<object name="rp_gov_c_int_stairs_c" />
+				<object collision_type="mesh_mopp" name="c_mesh_mopp_ramp"/>
+		</body>
+	</bodies>
+	<graphics>
+        <object enabled="true" name="g_g" />
+    </graphics>
+</dynamic_object>

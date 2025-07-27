@@ -1,0 +1,20 @@
+<unit type="bry" slot="1">
+	<object file="units/pd2_dlc_berry/pickups/bry_pku_masterpiece/bry_pku_masterpiece" />
+	<network sync="spawn"/>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+
+		<extension name="interaction" class="CarryInteractionExt">
+			<var name="tweak_data" value="hold_take_painting" />
+			<var name="_interact_object" value="interaction" />
+			<var name="_remove_on_interact" value="true" />
+			<var name="_ray_object_names" type="table" >
+			</var>
+		</extension>
+		<extension name="carry_data" class="CarryData">
+			<var name="_carry_id" value="masterpiece_painting" />
+		</extension>
+
+	</extensions>
+</unit>

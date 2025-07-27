@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/world/props/diamond_heist/apartment/apartment_livingroom/officedesk_deluxe/materials_shared" orientation_object="rp_receptiondesk_02" />
+	<bodies>
+		<body name="static_body" enabled="true" template="static">
+			<object name="rp_receptiondesk_02"/>
+			<object name="c_receptiondesk_02" collision_type="mesh_mopp" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="wood" static="true">
+		<decal_mesh name="dm_receptiondesk_02" enabled="true" material="wood" />
+		<decal_mesh name="dm_receptiondesk_02_metal" enabled="true" material="metal" />
+	</decal_surfaces>
+	<objects>
+		<align_point name="snap" enabled="true" parent="rp_receptiondesk_02" position="0 0 0" rotation="0 0 0" />
+	</objects>
+	<graphics>
+		<object name="s_receptiondesk_02" enabled="true" shadow_caster="true" 	instance_struct="world_tm" />
+		<object name="g_receptiondesk_02" enabled="true" shadow_caster="false"  instance_struct="world_tm" />
+	</graphics>
+</dynamic_object> 

@@ -1,0 +1,17 @@
+<materials version="3">
+    <material render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:NORMALMAP" name="mat_bourbon" version="2">
+        <diffuse_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_bar/sfm_prop_bedroom_bar_bourbon_df"/>
+        <opacity_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_bar/sfm_prop_bedroom_bar_bourbon_op"/>
+        <bump_normal_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_bar/sfm_prop_bedroom_bar_bourbon_nm"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <variable name="fresnel_settings" type="vector3" value="1.6799999475479 0 0.79999995231628" />
+    </material>
+    <material render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:NORMALMAP" name="mat_bourbon_lod" version="2">
+        <diffuse_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_bar/sfm_prop_bedroom_bar_bourbon_df" mip="4"/>
+        <opacity_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_bar/sfm_prop_bedroom_bar_bourbon_op" mip="4"/>
+        <bump_normal_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_bar/sfm_prop_bedroom_bar_bourbon_nm" mip="4"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <variable name="fresnel_settings" type="vector3" value="1.6799999475479 0 0.79999995231628" />
+    </material>
+    <material render_template="shadow_caster_only" name="shadow_caster" version="2"/>
+</materials>

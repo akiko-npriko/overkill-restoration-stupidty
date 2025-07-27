@@ -1,0 +1,11 @@
+<unit type="des" slot="1">
+	<object file="units/pd2_dlc_des/props/des_prop_lab_tank/des_prop_lab_tank" />
+	<dependencies>
+		<depends_on effect="effects/payday2/particles/water/water_bubbles_slow_short" />
+		<depends_on effect="effects/payday2/particles/water/water_bubbles_slow" />
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+	</extensions>
+</unit>

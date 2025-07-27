@@ -1,0 +1,34 @@
+<materials version="3">
+	<material name="mat_dollar" render_template="generic:DIFFUSE_TEXTURE" version="2">
+		<diffuse_texture		file="units/payday2_cash/safe_room/100_dollar_bill_front_df" />
+	</material>
+	<material name="mat_lootbag" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture		file="units/payday2_cash/safe_room/gen_cs_trailer_lootbag_df" />
+		<bump_normal_texture	file="units/payday2_cash/safe_room/gen_cs_trailer_lootbag_nm" />
+	</material>
+	<material name="mat_money_wrapped" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture		file="units/payday2/props/gen_prop_vault_money_burnt/gen_prop_vault_money_df"  />
+		<bump_normal_texture	file="units/payday2/props/gen_prop_vault_money_burnt/gen_prop_vault_money_nm" />
+	</material>
+	
+	<!--GOAL-->
+    <material name="anim" render_template="effect:DIFFUSE0_TEXTURE:DIFFUSE0_UVANIM" version="2">
+        <diffuse_texture file="units/payday2/props/shared_textures/goal_df"/>
+        <variable value="sun" type="scalar" name="intensity"/>
+        <variable value="1 0 0" type="vector3" name="uv0_speed"/>
+    </material>
+    <material name="area" render_template="effect:DIFFUSE0_TEXTURE" version="2">
+        <diffuse_texture file="units/gui/area_indicator_df"/>
+        <variable value="identity" type="scalar" name="intensity"/>
+    </material>
+    <material name="mtr_icon" render_template="effect:DIFFUSE0_TEXTURE" version="2">
+        <diffuse_texture file="units/gui/thermite_indicator_df"/>
+        <variable value="identity" type="scalar" name="intensity"/>
+    </material>
+	
+    <material render_template="decal:DIFFUSE_TEXTURE:NORMALMAP:OPACITY_TEXTURE:OPACITY_TEXTURE_G" name="mat_sot" version="2">
+        <diffuse_texture file="units/payday2/props/gen_prop_burnt_ground/gen_prop_burnt_ground_df"/>
+        <opacity_texture file="units/payday2/props/gen_prop_burnt_ground/gen_prop_burnt_ground_op"/>
+        <bump_normal_texture file="units/payday2/props/gen_prop_burnt_ground/gen_prop_burnt_ground_nm"/>
+    </material>
+</materials>

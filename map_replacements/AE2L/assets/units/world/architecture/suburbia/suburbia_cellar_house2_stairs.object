@@ -1,0 +1,52 @@
+<dynamic_object>
+    <diesel orientation_object="rp_suburbia_cellar_house2_stairs" materials="units/world/architecture/suburbia/suburbia"/>
+	<bodies>
+		<body name="bullet_only" enabled="true" collides_with_mover="false" template="static">
+			<object name="rp_suburbia_cellar_house2_stairs"/>
+			<object name="c_bullet_box_001" collision_type="box" padding="-2"/>
+			<object name="c_bullet_box_002" collision_type="box" padding="-2"/>
+			<object name="c_bullet_box_003" collision_type="box" padding="-2"/>
+			<object name="c_bullet_box_004" collision_type="box" padding="-2"/>
+			<object name="c_bullet_box_005" collision_type="box" padding="-2"/>
+			<object name="c_bullet_box_006" collision_type="box" padding="-2"/>
+			<object name="c_bullet_box_007" collision_type="box" padding="-2"/>
+			<object name="c_bullet_capsule_000" collision_type="capsule" padding="-2"/>
+			<object name="c_bullet_capsule_001" collision_type="capsule" padding="-2"/>
+			<object name="c_bullet_capsule_002" collision_type="capsule" padding="-2"/>
+			<object name="c_bullet_capsule_003" collision_type="capsule" padding="-2"/>
+			<object name="c_bullet_capsule_004" collision_type="capsule" padding="-2"/>
+			<object name="c_bullet_capsule_005" collision_type="capsule" padding="-2"/>
+			<object name="c_bullet_capsule_006" collision_type="capsule" padding="-2"/>
+			<object name="c_bullet_capsule_007" collision_type="capsule" padding="-2"/>
+			<object name="c_bullet_capsule_008" collision_type="capsule" padding="-2"/>
+			<object name="c_bullet_capsule_009" collision_type="capsule" padding="-2"/>
+		</body>
+		<body name="stairs_ramp" enabled="true" template="static">
+			<object name="rp_suburbia_cellar_house2_stairs"/>
+			<object name="c_ramp_box_001" collision_type="box" padding="-2"/>
+			<object name="c_ramp_box_002" collision_type="box" padding="-2"/>
+			<object name="c_ramp_box_003" collision_type="box" padding="-2"/>
+			<object name="c_ramp_box_004" collision_type="box" padding="-2"/>
+		</body>
+		<body name="player_collision" enabled="true" template="mover_blocker">
+			<object name="rp_suburbia_cellar_house2_stairs"/>
+			<object name="c_player_box_001" collision_type="box" padding="-2"/>
+			<object name="c_player_box_002" collision_type="box" padding="-2"/>
+			<object name="c_player_box_003" collision_type="box" padding="-2"/>
+			<object name="c_player_box_004" collision_type="box" padding="-2"/>
+			<object name="c_player_box_005" collision_type="box" padding="-2"/>
+			<object name="c_player_box_006" collision_type="box" padding="-2"/>
+		</body>
+	</bodies>
+	
+	<decal_surfaces default_material="hardwood">
+		<decal_mesh name="dm_hardwood" enabled="true" material="hardwood" />
+	<!--	<decal_mesh name="dm_carpet" enabled="true" material="carpet" /> -->
+	</decal_surfaces>
+	
+	<graphics>
+        <object enabled="true" name="g_cellar_stairs_2" />
+        <object enabled="true" name="g_railing" />
+        <object enabled="true" name="g_railing_planes" />
+    </graphics>
+</dynamic_object>

@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<dynamic_object>
+	<diesel materials="units/payday2/architecture/ind/ind_ext_level/ind_ext_fence_cloth_side" orientation_object="rp_ind_ext_fence_cloth_side" />
+	<bodies>
+        <body name="static_body" template="static" enabled="true" >
+            <object name="rp_ind_ext_fence_cloth_side"/>
+			<object name="c_box_01" collision_type="box" padding="-2.5"/>
+        </body>
+    </bodies>
+	
+	<decal_surfaces default_material="plastic" />
+
+    <graphics>
+        <object enabled="true" name="g_g" />
+		<object enabled="true" name="s_s" shadow_caster="true"/>
+    </graphics>
+</dynamic_object> 
+
+
+
+

@@ -1,0 +1,20 @@
+<dynamic_object>
+	<diesel materials="units/payday2/props/off_prop_officehigh_desk/off_prop_officehigh_desk_colored" orientation_object="rp_off_prop_officehigh_desk_colored_straight_15" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_off_prop_officehigh_desk_colored_straight_15" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+			<object name="c_box_04" collision_type="box" padding="-2.5" />
+			<object name="c_box_05" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="plastic">
+		<decal_mesh name="dm_plastic" enabled="true" material="plastic" />
+		<decal_mesh name="dm_sheet_metal" enabled="true" material="sheet_metal" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_mesh" enabled="true" />
+	</graphics>
+</dynamic_object>

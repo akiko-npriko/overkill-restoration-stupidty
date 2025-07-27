@@ -1,0 +1,21 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_run/architecture/run_ext_skyscrape_02/run_ext_skyscrape_02_bottom_20x40" orientation_object="rp_run_ext_skyscrape_01_top_20x40" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_run_ext_skyscrape_01_top_20x40" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="plaster">
+		<decal_mesh name="dm_plaster" enabled="true" material="plaster" />
+	</decal_surfaces>
+	<graphics>
+		<lod_object name="lod_g_build">
+			<object name="g_build_lod0" enabled="true" max_distance="20000" />
+			<object name="g_build_lod1" enabled="true" max_distance="25000" />
+			<object name="g_build_lod2" enabled="true" />
+		</lod_object>
+		<object name="s_s" enabled="true" shadow_caster="true" />
+	</graphics>
+</dynamic_object>

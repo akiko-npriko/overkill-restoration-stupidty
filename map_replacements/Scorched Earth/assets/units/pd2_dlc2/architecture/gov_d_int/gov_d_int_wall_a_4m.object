@@ -1,0 +1,14 @@
+<dynamic_object>
+    <diesel orientation_object="rp_gov_d_int_wall_a_4m" materials="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_wall_a_instanced" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body" >
+            <object collision_type="box" name="c_box_00" />
+        </body>
+    </bodies>
+    <decal_surfaces>
+        <decal_mesh enabled="true" name="g_g" material="plaster" />
+    </decal_surfaces>
+    <graphics>
+        <object enabled="true" name="g_g" instance_struct="world_tm"/>
+    </graphics>
+</dynamic_object>

@@ -1,0 +1,63 @@
+<dynamic_object>
+    <diesel orientation_object="rp_speed_boat" materials="units/payday2/vehicles/gen_vehicle_loot_boat/gen_vehicle_loot_boat" />
+    <sequence_manager file="units/payday2/vehicles/gen_vehicle_loot_boat/gen_vehicle_loot_boat" />
+	
+	<bodies>
+		<body name="static_body" enabled="true" template="animated">
+			<object name="c_mesh_mopp" collision_type="mesh_mopp" />
+		</body>
+	</bodies> 
+	<animations>
+        <animation_group name="hi_and_bye" >
+            <object enabled="true" name="a_head" />
+            <object enabled="true" name="a_fingers" />
+            <object enabled="true" name="a_wrist" />
+            <object enabled="true" name="a_elbow" />
+            <object enabled="true" name="a_shoulder" />
+            <object enabled="true" name="a_torso" />
+            <object enabled="true" name="a_body" />
+        </animation_group>
+       
+        <animation_group name="boat" >
+            <object enabled="true" name="boat_pos" />
+            <object enabled="true" name="boat_bank" />
+            <object enabled="true" name="water_wave" />
+        </animation_group>
+    </animations>
+    <graphics>
+        <object enabled="true" name="g_snubbe" />
+        <object enabled="true" name="g_speedboat" shadow_caster="true" />
+        <object enabled="true" name="g_water_wave" />
+        <!-- Graphics Objects Loot -->
+		<object name="g_lootbag_1" 					enabled="false" 	shadow_caster="false" />
+		<object name="g_lootbag_2" 					enabled="false" 	shadow_caster="false" />
+		<object name="g_lootbag_3" 					enabled="false" 	shadow_caster="false" />
+		<object name="g_lootbag_4" 					enabled="false" 	shadow_caster="false" />
+		<object name="g_lootbag_5" 					enabled="false" 	shadow_caster="false" />
+		<object name="g_lootbag_6" 					enabled="false" 	shadow_caster="false" />
+		<object name="g_lootbag_7" 					enabled="false" 	shadow_caster="false" />
+		<object name="g_lootbag_8" 					enabled="false" 	shadow_caster="false" />
+		<object name="g_lootbag_9" 					enabled="false" 	shadow_caster="false" />
+		<object name="g_lootbag_10" 				enabled="false" 	shadow_caster="false" />
+		<object name="g_lootbag_11" 				enabled="false" 	shadow_caster="false" />
+		<object name="g_lootbag_12" 				enabled="false" 	shadow_caster="false" />
+		<object name="g_lootbag_13" 				enabled="false" 	shadow_caster="false" />
+		<object name="g_lootbag_14" 				enabled="false" 	shadow_caster="false" />
+		<object name="g_lootbag_15" 				enabled="false" 	shadow_caster="false" />
+		<object name="g_lootbag_16" 				enabled="false" 	shadow_caster="false" />
+		<object name="g_lootbag_17" 				enabled="false" 	shadow_caster="false" />
+		<object name="g_lootbag_18" 				enabled="false" 	shadow_caster="false" />
+		<object name="g_lootbag_19" 				enabled="false" 	shadow_caster="false" />
+		<object name="g_lootbag_20" 				enabled="false" 	shadow_caster="false" />
+    </graphics>
+	<effects>
+		<effect_spawner name="water_splash_1" 		enabled="false" object="e_splash_1" 	effect="effects/particles/dest/fire_hydrant_splash" />
+		<effect_spawner name="water_splash_2" 		enabled="false" object="e_splash_2" 	effect="effects/particles/dest/fire_hydrant_splash" />
+		<effect_spawner name="water_splash_3" 		enabled="false" object="e_splash_3" 	effect="effects/particles/dest/fire_hydrant_splash" />
+		<effect_spawner name="water_splash_4" 		enabled="false" object="e_splash_4" 	effect="effects/particles/dest/fire_hydrant_splash" />
+		<effect_spawner name="water_splash_5" 		enabled="false" object="e_splash_5" 	effect="effects/particles/dest/fire_hydrant_splash" />
+		<effect_spawner name="water_splash_6" 		enabled="false" object="e_splash_6" 	effect="effects/particles/dest/fire_hydrant_splash" />
+		<effect_spawner name="water_splash_7" 		enabled="false" object="e_splash_7" 	effect="effects/particles/dest/fire_hydrant_splash" />
+		<effect_spawner name="water_splash_8" 		enabled="false" object="e_splash_8" 	effect="effects/particles/dest/fire_hydrant_splash" />
+	</effects>
+</dynamic_object>

@@ -1,0 +1,13 @@
+<materials version="3">
+	<material name="mat_painting_photo_family" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/pd2_dlc_sah/props/sah_prop_paintings/sah_prop_painting_photo_family_df"  mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_sah/props/sah_prop_paintings/sah_prop_painting_shared_frame_glass_nm"  mip="1"/>
+	</material>
+	<material decal_material="glass_breakable" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:NORMALMAP" version="2" name="glass">
+        <variable type="vector3" name="fresnel_settings" value="0 0.79999995231628 0.39999997615814"/>
+        <opacity_texture file="units/pd2_indiana/props/mus_prop_exhibit_display_set/glass_clear_default_op" mip="1"/>
+        <diffuse_texture file="units/pd2_indiana/props/mus_prop_exhibit_display_set/glass_clear_default_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_indiana/props/mus_prop_exhibit_display_set/glass_clear_default_nm" mip="1"/>
+        <reflection_texture type="cubemap" file="environments/cubemaps/cubemap_electionday_df"/>
+    </material>
+</materials>

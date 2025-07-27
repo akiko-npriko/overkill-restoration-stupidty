@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_casino/props/cas_prop_lounge_couch/cas_prop_lounge_couch_red" orientation_object="rp_cas_prop_lounge_couch" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_cas_prop_lounge_couch" />
+			<object name="c_cas_prop_lounge_couch" 		collision_type="mesh_mopp" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="cloth">
+		<decal_mesh name="dm_cas_prop_lounge_couch" 		enabled="true" material="cloth" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_cas_prop_lounge_couch" enabled="true" instance_struct="world_tm" />
+		<object name="g_mull" enabled="true" instance_struct="world_tm"/>
+	</graphics>
+</dynamic_object>

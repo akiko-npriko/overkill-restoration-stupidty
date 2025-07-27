@@ -1,0 +1,18 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_chas/props/chas_prop_signs/chas_prop_signs" orientation_object="rp_chas_prop_signs" />
+	<sequence_manager file="units/pd2_dlc_chas/props/chas_prop_signs/chas_prop_signs" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_chas_prop_signs" />
+			<object name="c_box_00" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="metal">
+		<decal_mesh name="dm_metal_00" enabled="true" material="metal" />
+		<decal_mesh name="dm_metal_01" enabled="true" material="metal" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_warning" enabled="true" />
+		<object name="g_voltage" enabled="true" />
+	</graphics>
+</dynamic_object>

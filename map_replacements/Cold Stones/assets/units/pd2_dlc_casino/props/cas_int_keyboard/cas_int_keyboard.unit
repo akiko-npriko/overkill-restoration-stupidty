@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<unit type="off" slot="1">
+<network sync="spawn"/>
+	<object file="units/pd2_dlc_casino/props/cas_int_keyboard/cas_int_keyboard" />
+	<dependencies>
+		<depends_on bnk="soundbanks/regular_sfx" />
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+        <extension name="interaction" class="UseInteractionExt">
+        	<var name="tweak_data" value="cas_customer_database" />
+            <var name="drop_in_sync_tweak_data" value="true" /> 
+        </extension>
+	</extensions>
+</unit>

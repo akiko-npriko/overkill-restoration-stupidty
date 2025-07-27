@@ -1,0 +1,25 @@
+<unit type="mus" slot="1" >
+    <object file="units/pd2_indiana/props/mus_prop_exhibit_b_pottery_b/mus_prop_exhibit_b_pottery_b" />
+	<network sync="spawn"/>
+	<dependencies>
+		<depends_on effect="effects/payday2/particles/destruction/dest_statue_bust" />
+		<depends_on physic_effect="physic_effects/push_sphere_unit" />
+		<depends_on unit="units/pd2_indiana/props/mus_prop_exhibit_b_pottery_b/spawn_pottery_b" />
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="CarryInteractionExt">
+			<var name="tweak_data" value="gen_pku_artifact" />
+			<var name="_remove_on_interact" value="true" />
+			<var name="_global_event" value="pku_artifact_statue" />
+			<var name="_ray_object_names" type="table" >
+					<var value="e_pos"/>
+					<!-- <var value="a_ray_object_2"/> -->
+			</var>
+		</extension>
+		<extension name="carry_data" class="CarryData">
+			<var name="_carry_id" value="mus_artifact" />
+		</extension>
+	</extensions>
+</unit>

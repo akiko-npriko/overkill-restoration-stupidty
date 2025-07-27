@@ -1,0 +1,20 @@
+<dynamic_object>
+    <diesel orientation_object="rp_harp" materials="units/payday2/props/lxa_prop_gallery_instrument/lxa_prop_gallery_instrument_harp" />
+		<sequence_manager file="units/payday2/props/lxa_prop_gallery_instrument/lxa_prop_gallery_instrument_harp" />
+    <bodies>
+        <body enabled="true" template="static" name="body0" >
+            <object name="rp_harp" />
+            <object collision_type="mesh_mopp" name="c_mesh" />
+        </body>
+    </bodies>
+  
+  <decal_surfaces default_material="wood">
+    <decal_mesh name="dm_mesh" enabled="true" material="wood" />
+    <decal_mesh name="dm_mesh_broken" enabled="false" material="wood" />
+  </decal_surfaces>
+  
+    <graphics>
+        <object enabled="true" name="g_mesh" />
+        <object enabled="false" name="g_mesh_broken" />
+    </graphics>
+</dynamic_object>

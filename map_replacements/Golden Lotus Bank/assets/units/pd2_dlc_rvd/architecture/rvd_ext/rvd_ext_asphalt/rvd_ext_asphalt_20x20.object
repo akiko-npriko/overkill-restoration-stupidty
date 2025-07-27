@@ -1,0 +1,16 @@
+<dynamic_object>
+  <diesel orientation_object="rp_shadow_caster_20x20" materials="units/pd2_dlc_rvd/architecture/rvd_ext/rvd_ext_asphalt/rvd_ext_asphalt_20x20" />
+
+  <bodies>
+    <body name="static_body" enabled="true" template="editor">
+      <object name="g_shadow_caster" collision_type="box" />
+    </body>
+  </bodies>  
+  <decal_surfaces default_material="concrete">
+    <decal_mesh name="g_shadow_caster" enabled="true" material="concrete" />
+  </decal_surfaces>
+  <graphics>
+		<object name="s_shadow_caster" enabled="false" shadow_caster="true"/>    
+    <object name="g_shadow_caster" enabled="true"/>    
+  </graphics>
+</dynamic_object>

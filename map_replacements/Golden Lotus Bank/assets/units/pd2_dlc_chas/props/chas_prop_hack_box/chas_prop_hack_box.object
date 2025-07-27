@@ -1,0 +1,35 @@
+<dynamic_object>
+	<diesel orientation_object="rp_chas_prop_hack_box" materials="units/pd2_dlc_chas/props/chas_prop_hack_box/chas_prop_hack_box" />
+	<sequence_manager file="units/pd2_dlc_chas/props/chas_prop_hack_box/chas_prop_hack_box" />
+	<animations>
+		<animation_group name="ag_open" enabled="false">
+			<object name="a_hack_box_door" />
+		</animation_group>
+	</animations>
+  
+    <bodies>
+        <body enabled="true" template="static" name="body0" >
+            <object name="rp_chas_prop_hack_box" />
+            <object enabled="true" name="c_hack_box" collision_type="mesh_mopp" />
+        </body>
+        <body enabled="true" template="static" name="body1" >
+            <object name="a_hack_box_door"/>
+            <object enabled="true" name="c_hack_box_door" collision_type="box" />
+        </body>
+    </bodies>
+	
+	<decal_surfaces default_material="metal_chassis" static="true">
+		<decal_mesh name="dm_hack_box" material="metal_chassis" />
+		<decal_mesh name="dm_hack_box_door" material="metal_chassis"/>
+	</decal_surfaces>
+	
+    <graphics>
+        <object enabled="true" name="g_hack_box_door" />
+        <object enabled="true" name="g_hack_box" />
+        <object enabled="true" name="g_hack_box_red_light" />
+        <object enabled="false" name="g_hack_box_display" />
+        <object enabled="true" name="g_larm_cable" />
+        <object enabled="false" name="g_larm_cable_out" />
+        <object enabled="false" name="g_hack_box_glow" />
+    </graphics>
+</dynamic_object>

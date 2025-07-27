@@ -1,0 +1,13 @@
+<dynamic_object>
+	<diesel materials="units/payday2/props/gen_prop_square_drop_marker_2x1/gen_prop_square_drop_marker_2x1" orientation_object="rp_gen_prop_square_drop_marker_2x1" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_gen_prop_square_drop_marker_2x1" />
+			<object name="c_cube" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<graphics>
+		<object name="g_icon" enabled="true" />
+		<object name="g_goal" enabled="true" />
+	</graphics>
+</dynamic_object>

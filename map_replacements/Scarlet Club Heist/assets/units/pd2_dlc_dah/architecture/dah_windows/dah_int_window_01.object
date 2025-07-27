@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_dah/architecture/dah_windows/dah_int_window_01" orientation_object="rp_dah_int_window_01" />
+	<sequence_manager file="units/pd2_dlc_dah/architecture/dah_windows/dah_int_window_01" />
+	<bodies>
+		<body remove_ray_type="vis_graph ai_vision" name="window1" enabled="true" template="static">
+			<object name="rp_dah_int_window_01"/>
+			<object name="c_box" collision_type="box" padding="-2" />
+		</body>
+	</bodies>
+	
+	<graphics>
+		<object name="g_1" enabled="true" instance_struct="world_tm"/>
+		<object name="g_2" instance_struct="world_tm"/>
+	</graphics>
+	
+	<decal_surfaces default_material="glass_breakable" static="true">
+		<decal_mesh name="dm_1" enabled="true" material="glass_breakable" />
+	</decal_surfaces>
+	
+	<objects>
+		<align_point name="e_e" enabled="true" parent="rp_dah_int_window_01" position="0 0 0" rotation="0 0 0" />
+	</objects>
+</dynamic_object>

@@ -1,0 +1,18 @@
+<unit type="chas" slot="1">
+	<object file="units/pd2_dlc_chas/equipment/chas_interactable_c4/chas_interactable_c4" />
+	<network sync="spawn"/>
+	<dependencies>
+		<depends_on font="fonts/font_digital" />
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="UseInteractionExt">
+			<var name="tweak_data" value="disarm_bomb" />
+			<var name="_interact_object" value="interact"/>
+		</extension>
+		<extension class="DigitalGui" name="digital_gui" >
+			<var name="_gui_object" value="g_display" />
+		</extension>
+	</extensions>
+</unit>

@@ -1,0 +1,79 @@
+<dynamic_object>
+    <diesel orientation_object="rp_mus_prop_caeser_bust" materials="units/pd2_indiana/props/mus_prop_caeser_bust/mus_prop_caeser_bust" />
+    <sequence_manager file="units/pd2_indiana/props/mus_prop_caeser_bust/mus_prop_caeser_bust" />
+	
+	<bodies>
+		<body enabled="true" template="static" name="base" >	
+            <object collision_type="box" name="c_box_01" padding="-2.5"/>
+		</body>
+		<body enabled="true" template="static" name="bust" >
+			<object collision_type="convex" name="c_con_01" padding="-2.5"/>
+		</body>
+		<body enabled="false" template="debris" name="bust_dynamic" >	
+			<object collision_type="convex" name="c_con_02" padding="-2.5" mass="0.5"/>
+		</body>	
+		<body enabled="false" template="debris" name="bust_dmg_1" >	
+            <object collision_type="convex" name="c_con_03" padding="-2.5" mass="0.2"/>
+		</body>
+		<body enabled="false" template="debris" name="bust_dmg_2" >			
+            <object collision_type="convex" name="c_con_04" padding="-2.5" mass="0.2"/>
+		</body>
+		<body enabled="false" template="debris" name="bust_dmg_3" >	
+            <object collision_type="convex" name="c_con_05" padding="-2.5" mass="0.3"/>
+		</body>
+		<body enabled="false" template="debris" name="bust_dmg_4" >		
+            <object collision_type="convex" name="c_con_06" padding="-2.5" mass="0.1"/>
+		</body>
+    </bodies>
+	
+		
+	<decal_surfaces>
+        <decal_mesh enabled="true" name="dm_bust" material="marble" />
+        <decal_mesh enabled="true" name="dm_base" material="marble" />
+    </decal_surfaces>
+	
+	
+    <graphics>
+	
+	<graphic_group name="grp_damage" enabled="true">
+		
+			<lod_object name="bust">
+				<object  name="g_bust_lod0" enabled="true" max_draw_lod="0" max_distance="1800" />
+				<object  name="g_bust_lod1" enabled="true" lod="1"  />
+			</lod_object>
+			
+			<lod_object name="base">
+				<object  name="g_base_lod0" enabled="true" max_draw_lod="0" max_distance="1800" />
+				<object  name="g_base_lod1" enabled="true" lod="1"  />
+			</lod_object>
+
+			<lod_object name="torso_2">			
+				<object  name="g_torso_02_lod0" enabled="false" max_draw_lod="0" max_distance="1800" />
+				<object  name="g_torso_02_lod1" enabled="false" lod="1"  />
+			</lod_object>
+			
+			<lod_object name="torso">			
+				<object  name="g_torso_lod0" enabled="false" max_draw_lod="0" max_distance="1800" />
+				<object  name="g_torso_lod1" enabled="false" lod="1"  />
+			</lod_object>
+			
+			<lod_object name="head">			
+				<object  name="g_head_01_lod0" enabled="false" max_draw_lod="0" max_distance="1800" />
+				<object  name="g_head_01_lod1" enabled="false" lod="1"  />
+			</lod_object>	
+			
+			<lod_object name="head_2">			
+				<object  name="g_head_02_lod0" enabled="false" max_draw_lod="0" max_distance="1800" />
+				<object  name="g_head_02_lod1" enabled="false" lod="1"  />
+			</lod_object>
+						
+			<lod_object name="head_3">			
+				<object  name="g_head_03_lod0" enabled="false" max_draw_lod="0" max_distance="1800" />
+				<object  name="g_head_03_lod1" enabled="false" lod="1"  />
+			</lod_object>
+			
+        </graphic_group>
+		
+    </graphics>
+
+</dynamic_object>

@@ -1,0 +1,13 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_cage/props/ind_prop_cardealership_int_sign/ind_prop_cardealership_int_signs" orientation_object="rp_ind_prop_cardealership_int_sign_storage" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_ind_prop_cardealership_int_sign_storage" />
+			<object name="c_box" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="metal" />
+	<graphics>
+		<object name="g_g" enabled="true" />
+	</graphics>
+</dynamic_object>

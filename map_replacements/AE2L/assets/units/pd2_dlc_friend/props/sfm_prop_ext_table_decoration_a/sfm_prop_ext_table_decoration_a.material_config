@@ -1,0 +1,13 @@
+<materials version="3">
+	<material decal_material="no_decal" name="mat_table_decoration" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_friend/props/sfm_prop_ext_table_decoration_a/sfm_prop_ext_table_decoration_a_df" />
+		<material_texture file="units/pd2_dlc_friend/props/sfm_prop_ext_table_decoration_a/sfm_prop_ext_table_decoration_a_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_friend/props/sfm_prop_ext_table_decoration_a/sfm_prop_ext_table_decoration_a_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_table_decoration_lod" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_friend/props/sfm_prop_ext_table_decoration_a/sfm_prop_ext_table_decoration_a_df" mip="4" />
+		<material_texture file="units/pd2_dlc_friend/props/sfm_prop_ext_table_decoration_a/sfm_prop_ext_table_decoration_a_gsma" mip="4" />
+		<bump_normal_texture file="units/pd2_dlc_friend/props/sfm_prop_ext_table_decoration_a/sfm_prop_ext_table_decoration_a_nm" mip="4" />
+	</material>
+	<material name="shadow_caster" render_template="shadow_caster_only" version="2" />
+</materials>

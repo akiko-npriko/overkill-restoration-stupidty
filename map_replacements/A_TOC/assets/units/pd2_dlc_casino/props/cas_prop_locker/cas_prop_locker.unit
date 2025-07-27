@@ -1,0 +1,12 @@
+<unit type="cas" slot="1">
+    <object file="units/pd2_dlc_casino/props/cas_prop_locker/cas_prop_locker" />
+    <network sync="spawn"/>
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+        <extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="UseInteractionExt">
+		  	<var name="tweak_data" value="lockpick_locker" />
+		  	<var name="_interact_object" value="int_location"/>
+		  </extension>  
+    </extensions>
+</unit>

@@ -1,0 +1,7 @@
+<materials version="3">
+    <material name="mat_grass" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:DOUBLE_SIDED:EXTERNAL_ALPHA_REF:INSTANCED:NORMALMAP" version="2">
+        <diffuse_texture file="units/pd2_dlc_holly/mansion/vegetation/lxa_veg/lxa_veg_grasspatches_df"/>
+        <bump_normal_texture file="units/pd2_dlc_holly/mansion/vegetation/lxa_veg/lxa_veg_grasspatches_nm"/>
+        <variable value="0.110" type="scalar" name="alpha_ref"/>
+    </material>
+</materials>

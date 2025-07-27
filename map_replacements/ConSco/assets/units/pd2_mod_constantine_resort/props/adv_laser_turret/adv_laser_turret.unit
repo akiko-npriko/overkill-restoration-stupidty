@@ -1,0 +1,14 @@
+<unit type="des" slot="1">
+	<network sync="spawn"/>
+	<object file="units/pd2_mod_constantine_resort/props/adv_laser_turret/adv_laser_turret" />
+	<dependencies>
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+	</extensions>
+	<sounds>
+		<default_soundsource source="rp_des_ray_turret"/>
+		<soundsource name="snd" source="anim_pitch" />
+	</sounds>
+</unit>

@@ -1,0 +1,86 @@
+<dynamic_object>
+	<diesel materials="units/pd2_mod_custom/cus_moneybag_pile_burnable/cus_moneybag_pile_burnable" orientation_object="rp_root" />
+	<sequence_manager file="units/pd2_mod_custom/cus_moneybag_pile_burnable/cus_moneybag_pile_burnable"/>
+	
+	<bodies>
+		<body name="editor" enabled="true" template="editor">
+			<object name="g_goal" collision_type="box" padding="-2.5"/>
+		</body>
+		
+		<!-- BAGS -->
+		<body name="body_moneybag_1" enabled="false" template="static">
+			<object name="c_moneybag_1" collision_type="box" padding="-2.5"/>
+		</body>
+		<body name="body_moneybag_2" enabled="false" template="static">
+			<object name="c_moneybag_2" collision_type="box" padding="-2.5"/>
+		</body>
+		<body name="body_moneybag_3" enabled="false" template="static">
+			<object name="c_moneybag_3" collision_type="box" padding="-2.5"/>
+		</body>
+		<body name="body_moneybag_4" enabled="false" template="static">
+			<object name="c_moneybag_4" collision_type="box" padding="-2.5"/>
+		</body>
+		<body name="body_moneybag_5" enabled="false" template="static">
+			<object name="c_moneybag_5" collision_type="box" padding="-2.5"/>
+		</body>
+		<body name="body_moneybag_6" enabled="false" template="static">
+			<object name="c_moneybag_6" collision_type="box" padding="-2.5"/>
+		</body>
+		<body name="body_moneybag_7" enabled="false" template="static">
+			<object name="c_moneybag_7" collision_type="box" padding="-2.5"/>
+		</body>
+		<body name="body_moneybag_8" enabled="false" template="static">
+			<object name="c_moneybag_8" collision_type="box" padding="-2.5"/>
+		</body>
+		<body name="body_moneybag_9" enabled="false" template="static">
+			<object name="c_moneybag_9" collision_type="box" padding="-2.5"/>
+		</body>
+		<body name="body_moneybag_10" enabled="false" template="static">
+			<object name="c_moneybag_10" collision_type="box" padding="-2.5"/>
+		</body>
+		<body name="body_moneybag_11" enabled="false" template="static">
+			<object name="c_moneybag_11" collision_type="box" padding="-2.5"/>
+		</body>
+		<body name="body_moneybag_12" enabled="false" template="static">
+			<object name="c_moneybag_12" collision_type="box" padding="-2.5"/>
+		</body>
+		<body name="body_moneybag_13" enabled="false" template="static">
+			<object name="c_moneybag_13" collision_type="box" padding="-2.5"/>
+		</body>
+		<body name="body_moneybag_14" enabled="false" template="static">
+			<object name="c_moneybag_14" collision_type="box" padding="-2.5"/>
+		</body>
+		<body name="body_moneybag_15" enabled="false" template="static">
+			<object name="c_moneybag_15" collision_type="box" padding="-2.5"/>
+		</body>
+		<body name="body_moneybag_16" enabled="false" template="static">
+			<object name="c_moneybag_16" collision_type="box" padding="-2.5"/>
+		</body>
+	</bodies>
+	
+	<decal_surfaces default_material="cloth">
+	</decal_surfaces>
+	
+	<graphics>
+		<object name="g_goal"					enabled="true"/>
+		<object name="g_decal_burnt"			enabled="true"/>
+		
+		<object name="g_moneybag_1"				enabled="false"	shadow_caster="true"/>
+		<object name="g_moneybag_2"				enabled="false"	shadow_caster="true"/>
+		<object name="g_moneybag_3"				enabled="false"	shadow_caster="true"/>
+		<object name="g_moneybag_4"				enabled="false"	shadow_caster="true"/>
+		<object name="g_moneybag_5"				enabled="false"	shadow_caster="true"/>
+		<object name="g_moneybag_6"				enabled="false"	shadow_caster="true"/>
+		<object name="g_moneybag_7"				enabled="false"	shadow_caster="true"/>
+		<object name="g_moneybag_8"				enabled="false"	shadow_caster="true"/>
+		<object name="g_moneybag_9"				enabled="false"	shadow_caster="true"/>
+		<object name="g_moneybag_10"			enabled="false"	shadow_caster="true"/>
+		<object name="g_moneybag_11"			enabled="false"	shadow_caster="true"/>
+		<object name="g_moneybag_12"			enabled="false"	shadow_caster="true"/>
+		<object name="g_moneybag_13"			enabled="false"	shadow_caster="true"/>
+		<object name="g_moneybag_14"			enabled="false"	shadow_caster="true"/>
+		<object name="g_moneybag_15"			enabled="false"	shadow_caster="true"/>
+		<object name="g_moneybag_16"			enabled="false"	shadow_caster="true"/>
+	</graphics>
+	
+</dynamic_object>

@@ -1,0 +1,64 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_friend/props/sfm_prop_ext_door_shed/sfm_prop_ext_door_shed" orientation_object="rp_sfm_prop_ext_door_shed" />
+	<sequence_manager file="units/pd2_dlc_friend/props/sfm_prop_ext_door_shed/sfm_prop_ext_door_shed" />
+
+	<animations>
+		<animation_group name="anim_door_grp" enabled="false">
+			<object name="anim_door" />
+		</animation_group>
+	</animations>
+
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_sfm_prop_ext_door_shed" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+			<object name="c_box_04" collision_type="box" padding="-2.5" />
+		</body>
+
+		<body name="body_animated" enabled="true" template="animated">
+			<object name="anim_door" />
+			<object name="c_box_door" collision_type="box" padding="-2.5" />
+		</body>
+
+		<body name="body_door_hitbox_01" enabled="true" template="animated">
+			<object name="anim_door" />
+			<object name="c_box_door_handle_01" collision_type="box" padding="-2.5" />
+		</body>
+
+		<body name="body_door_hitbox_02" enabled="true" template="animated">
+			<object name="anim_door" />
+			<object name="c_box_door_handle_02" collision_type="box" padding="-2.5" />
+		</body>
+
+		<body name="body_door_explosion_in" enabled="true" template="fence" collides_with_mover="false">
+			<object name="c_explosion_in" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_door_explosion_out" enabled="true" template="fence" collides_with_mover="false">
+			<object name="c_explosion_out" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+
+	<decal_surfaces default_material="wood">
+		<decal_mesh name="dm_door" enabled="true" material="wood" />
+		<decal_mesh name="dm_door_broken" enabled="false" material="wood" />
+		<decal_mesh name="dm_frame" enabled="true" material="wood" />
+	</decal_surfaces>
+
+	<effects>
+		<effect_spawner name="wood_splinters_in" enabled="false" object="interact" effect="effects/payday2/particles/wood/wood_door_shotgun_dmg_in" />
+		<effect_spawner name="wood_splinters_out" enabled="false" object="interact" effect="effects/payday2/particles/wood/wood_door_shotgun_dmg_out" />
+	</effects>
+
+	<graphics>
+		<object name="g_door" 			enabled="true"/>
+		<object name="g_icon_lockpick" 	enabled="true"/>
+		<object name="g_frame" 			enabled="true"/>
+		<object name="g_door_broken_01" enabled="false"/>
+		<object name="s_door" 			enabled="true"	shadow_caster="true"/>
+		<object name="s_frame" 			enabled="true"	shadow_caster="true"/>
+	</graphics>
+
+
+</dynamic_object>

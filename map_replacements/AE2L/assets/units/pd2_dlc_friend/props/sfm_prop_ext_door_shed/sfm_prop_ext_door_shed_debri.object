@@ -1,0 +1,31 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_friend/props/sfm_prop_ext_door_shed/sfm_prop_ext_door_shed" orientation_object="rp_sfm_prop_ext_door_shed_debri" />
+
+	<bodies>
+		<body name="body_door_dynamic_01" enabled="true" template="small_prop" collides_with_mover="false">
+			<object name="c_convex_01" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_door_dynamic_02" enabled="true" template="small_prop" collides_with_mover="false">
+			<object name="c_convex_02" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_door_dynamic_03" enabled="true" template="small_prop" collides_with_mover="false">
+			<object name="c_convex_03" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_door_dynamic_04" enabled="true" template="small_prop" collides_with_mover="false">
+			<object name="c_convex_04" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_door_dynamic_05" enabled="true" template="small_prop" collides_with_mover="false">
+			<object name="c_convex_05" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+
+	<graphics>
+		<object name="g_debri_01" 			enabled="true"/>
+		<object name="g_debri_02" 			enabled="true"/>
+		<object name="g_debri_03" 			enabled="true"/>
+		<object name="g_debri_04" 			enabled="true"/>
+		<object name="g_debri_05" 			enabled="true"/>
+	</graphics>
+
+
+</dynamic_object>

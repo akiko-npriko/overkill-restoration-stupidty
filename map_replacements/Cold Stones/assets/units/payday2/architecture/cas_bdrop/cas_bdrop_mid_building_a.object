@@ -1,0 +1,18 @@
+<dynamic_object>
+	<diesel materials="units/payday2/architecture/cas_bdrop/cas_bdrop_buildings" orientation_object="rp_cas_bdrop_mid_building_a" />
+	<bodies>
+		<body name="body_static" enabled="true" template="editor">
+			<object name="rp_cas_bdrop_mid_building_a" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+			<object name="c_box_04" collision_type="box" padding="-2.5" />
+			<object name="c_box_05" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<graphics>
+		<object name="g_g" enabled="true" />
+		<object name="g_g_il" enabled="true" />
+		<object name="s_s" enabled="true" shadow_caster="true" />
+	</graphics>
+</dynamic_object>

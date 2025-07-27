@@ -1,0 +1,24 @@
+<dynamic_object>
+	<diesel materials="units/pd2_indiana/props/mus_prop_exhibit_d_pottery/mus_prop_exhibit_d_pottery_c" orientation_object="rp_mus_prop_exhibit_d_pottery_c" />
+	<sequence_manager file="units/pd2_indiana/props/mus_prop_exhibit_d_pottery/mus_prop_exhibit_d_pottery_c" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_mus_prop_exhibit_d_pottery_c" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_convex_08" collision_type="convex" padding="-2.5" />
+			<object name="c_convex_09" collision_type="convex" padding="-2.5" />
+			<object name="c_convex_010" collision_type="convex" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="thin_layer">
+		<decal_mesh name="dm_marble" enabled="true" material="marble" />
+	</decal_surfaces>
+	<graphics>
+		<graphic_group name="grp_pot" enabled="true" >
+			<lod_object name="lod_pot">
+				<object name="g_g_lod0" enabled="true"  max_distance="1500" />
+				<object name="g_g_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+	</graphics>
+</dynamic_object>

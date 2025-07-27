@@ -1,0 +1,10 @@
+<materials version="3">
+	<material name="mtr_desk" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2" >
+		<diffuse_texture file="units/payday2/props/stn_prop_office_desk_communication/stn_prop_office_desk_communication_df"/>
+		<bump_normal_texture file="units/payday2/props/stn_prop_office_desk_communication/stn_prop_office_desk_communication_nm"/>
+	</material>
+	<material name="mtr_screen" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2" >
+		<diffuse_texture file="units/payday2/props/stn_prop_office_desk_communication/stn_prop_office_desk_communication_screen_df"/>
+		<bump_normal_texture file="units/payday2/props/stn_prop_office_desk_communication/stn_prop_office_desk_communication_screen_nm"/>
+	</material>
+</materials>

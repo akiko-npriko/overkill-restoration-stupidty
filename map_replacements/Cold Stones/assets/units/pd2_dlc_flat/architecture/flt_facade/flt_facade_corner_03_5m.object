@@ -1,0 +1,13 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_flat/architecture/flt_facade/flt_facade_corner_03_5m" orientation_object="rp_flt_facade_corner_03_5m" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_flt_facade_corner_03_5m" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<graphics>
+		<object name="g_lod0" enabled="true" />
+		<object name="s_s"     enabled="true" shadow_caster="true"/>
+	</graphics>
+</dynamic_object>

@@ -1,0 +1,49 @@
+<dynamic_object>
+    <diesel orientation_object="rp_com_int_election_elevator" materials="units/payday2/architecture/com_int_election/com_int_election" />
+    <sequence_manager file="units/payday2/architecture/com_int_election/com_int_election_elevator" />
+	<animations>
+		<animation_group name="anim_door_left" enabled="true">
+			<object name="a_door_left" />
+		</animation_group>
+		<animation_group name="anim_door_right" enabled="true">
+			<object name="a_door_right" />
+		</animation_group>
+	</animations>
+    <bodies>
+        <body enabled="true" template="static" name="static_body" >
+			<object name="rp_com_int_election_elevator" />
+			<object name="c_box_01" collision_type="box" padding="-2.5"/>
+			<object name="c_box_02" collision_type="box" padding="-2.5"/>
+			<object name="c_box_03" collision_type="box" padding="-2.5"/>
+			<object name="c_box_04" collision_type="box" padding="-2.5"/>
+			<object name="c_box_05" collision_type="box" padding="-2.5"/>
+			<object name="c_box_06" collision_type="box" padding="-2.5"/>
+			<object name="c_box_07" collision_type="box" padding="-2.5"/>
+        </body>
+        <body enabled="true" template="animated" name="door_left" remove_ray_type="mover walk" >
+			<object name="a_door_left" />
+			<object name="c_box_d_left" collision_type="box" padding="-2.5"/>
+        </body>
+        <body enabled="true" template="animated" name="door_right" remove_ray_type="mover walk" >
+			<object name="a_door_right" />
+			<object name="c_box_d_right" collision_type="box" padding="-2.5"/>
+        </body>
+    </bodies>
+	<decal_surfaces>
+		<decal_mesh name="dm_metal_door_l" 	enabled="true" material="metal"/>
+		<decal_mesh name="dm_metal_door_r" 	enabled="true" material="metal"/>
+		<decal_mesh name="dm_glass" 		enabled="true" material="glass_breakable"/>
+		<decal_mesh name="dm_marble" 		enabled="true" material="marble"/>
+		<decal_mesh name="dm_metal" 		enabled="true" material="metal"/>
+	</decal_surfaces>
+    <graphics>
+		<object name="g_door_left" 	enabled="true"/>
+		<object name="g_door_right" enabled="true"/>
+		<object name="g_g" 			enabled="true"/>
+		<object name="g_glow" 		enabled="true"/>
+		<object name="g_vtxc" 		enabled="true"/>
+		<object name="g_frame" 		enabled="true"/>
+		<object name="g_elevator_inside" 		enabled="true"/>
+		<object name="s_s" 			enabled="true" shadow_caster="true"/>
+    </graphics>
+</dynamic_object>

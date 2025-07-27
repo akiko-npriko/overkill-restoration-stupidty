@@ -1,0 +1,25 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_rvd/props/rvd_prop_street_statue/rvd_prop_street_statue_mat" orientation_object="rp_rvd_prop_street_statue" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_rvd_prop_street_statue" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_convex_01" collision_type="convex" padding="-2.5" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_capsule_09" collision_type="capsule" padding="-2.5" />
+			<object name="c_capsule_10" collision_type="capsule" padding="-2.5" />
+			<object name="c_capsule_08" collision_type="capsule" padding="-2.5" />
+			<object name="c_capsule_06" collision_type="capsule" padding="-2.5" />
+			<object name="c_capsule_05" collision_type="capsule" padding="-2.5" />
+			<object name="c_capsule_04" collision_type="capsule" padding="-2.5" />
+			<object name="c_capsule_03" collision_type="capsule" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="stone">
+		<decal_mesh name="dm_stone" enabled="true" material="stone" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_body" enabled="true" />
+		<object name="s_s" enabled="true" shadow_caster="true" />
+	</graphics>
+</dynamic_object>

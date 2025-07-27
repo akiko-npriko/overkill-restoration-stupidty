@@ -1,0 +1,30 @@
+<dynamic_object>
+    <diesel orientation_object="rp_csb_sewer_t_intersect_entry_4m" materials="units/pd2_dlc2/architecture/csb_sewer/csb_sewer" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body" >
+            <object name="rp_csb_sewer_t_intersect_entry_4m" />
+            <object collision_type="mesh_mopp" name="c_c" />
+        </body>
+		<body enabled="true" template="nav_walk" name="mover_body" >
+			<object name="rp_csb_sewer_t_intersect_entry_4m" />
+            <object name="c_box_mover_00" collision_type="box" padding="-2.5"/>
+			<object name="c_box_mover_01" collision_type="box" padding="-2.5"/>
+			<object name="c_box_mover_02" collision_type="box" padding="-2.5"/>
+			<object name="c_box_mover_03" collision_type="box" padding="-2.5"/>
+			<object name="c_box_mover_04" collision_type="box" padding="-2.5"/>
+        </body>
+    </bodies>
+	
+	<decal_surfaces default_material="concrete" static="true">
+		<decal_mesh name="dm_concrete" material="concrete" enabled="true"/>
+		<decal_mesh name="dm_tile" material="tile" enabled="true"/>
+		<decal_mesh name="dm_metal" material="metal" enabled="true"/>
+	</decal_surfaces>
+	
+    <graphics>
+        <object enabled="true" name="g_lamps_add" />
+        <object enabled="true" name="g_lamps" />
+        <object enabled="true" name="g_g" />
+		<object enabled="true" name="s_s" shadow_caster="true" />
+    </graphics>
+</dynamic_object>

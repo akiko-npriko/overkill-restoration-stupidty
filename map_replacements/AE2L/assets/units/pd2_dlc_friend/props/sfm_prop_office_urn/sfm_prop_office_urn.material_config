@@ -1,0 +1,13 @@
+<materials version="3">
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_urn" version="2">
+        <diffuse_texture file="units/pd2_dlc_friend/props/sfm_prop_office_urn/sfm_prop_office_urn_df"/>
+        <bump_normal_texture file="units/pd2_dlc_friend/props/sfm_prop_office_urn/sfm_prop_office_urn_nm"/>
+        <material_texture file="units/pd2_dlc_friend/props/sfm_prop_office_urn/sfm_prop_office_urn_gsma"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:GSMA_TEXTURE" name="mat_urn_lod" version="2">
+        <diffuse_texture file="units/pd2_dlc_friend/props/sfm_prop_office_urn/sfm_prop_office_urn_df" mip="4"/>
+        <bump_normal_texture file="units/pd2_dlc_friend/props/sfm_prop_office_urn/sfm_prop_office_urn_nm" mip="4"/>
+        <material_texture file="units/pd2_dlc_friend/props/sfm_prop_office_urn/sfm_prop_office_urn_gsma" mip="4"/>
+    </material>
+    <material render_template="shadow_caster_only" name="shadow_caster" version="2"/>
+</materials>

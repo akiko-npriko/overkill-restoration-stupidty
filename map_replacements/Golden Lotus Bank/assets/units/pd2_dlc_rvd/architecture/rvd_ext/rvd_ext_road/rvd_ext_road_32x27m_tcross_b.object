@@ -1,0 +1,19 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_rvd/architecture/rvd_ext/rvd_ext_road/rvd_ext_road_16x24m_a" orientation_object="rp_rvd_ext_road_32x27m_tcross_b" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_rvd_ext_road_32x27m_tcross_b" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_mopp_01" collision_type="mesh_mopp" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="concrete">
+		<decal_mesh name="dm_concrete" enabled="true" material="concrete" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_rvd_ext_pavement_red" enabled="true" />
+		<object name="g_rvd_ext_road_16x24m_b_marking14" enabled="true" />
+		<object name="g_rvd_ext_road_16x22m_b8" enabled="true" />
+	</graphics>
+</dynamic_object>

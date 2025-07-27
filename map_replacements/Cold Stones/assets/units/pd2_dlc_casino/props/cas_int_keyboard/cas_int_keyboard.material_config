@@ -1,0 +1,10 @@
+<materials version="3" >
+    <material render_template="generic:CONTOUR:DIFFUSE_TEXTURE" unique="true" version="2" name="display">
+        <diffuse_texture file="units/world/architecture/secret_stash/props_textures/secret_stash_interaction_screen_df"/>
+        <variable value="1.0 0.5 0.0" type="vector3" name="contour_color"/>
+        <variable value="1" type="scalar" name="contour_opacity"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" unique="true" version="2" name="display_no_contour">
+        <diffuse_texture file="units/world/architecture/secret_stash/props_textures/secret_stash_interaction_screen_df"/>
+    </material>
+</materials>

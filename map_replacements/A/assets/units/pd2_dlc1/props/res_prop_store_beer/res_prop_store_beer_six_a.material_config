@@ -1,0 +1,32 @@
+<materials version="3" group="res_prop_store_beer_six">
+    <material name="mat_beer_sixpack_lod0" render_template="generic:DIFFUSE_TEXTURE:INSTANCED:NORMALMAP" version="2">
+        <diffuse_texture file="units/pd2_dlc1/props/res_prop_store_beer/res_prop_beer_sixpack_a_df"/>
+        <bump_normal_texture file="units/payday2/textures/blank_nm"/>
+    </material>
+    <material name="mat_beer_sixpack_lod1" render_template="generic:DIFFUSE_TEXTURE:INSTANCED:NORMALMAP" version="2">
+        <diffuse_texture mip="2" file="units/pd2_dlc1/props/res_prop_store_beer/res_prop_beer_sixpack_a_df"/>
+        <bump_normal_texture file="units/payday2/textures/blank_nm"/>
+    </material>
+    <material name="mat_beer_sixpack_lod2" render_template="generic:DIFFUSE_TEXTURE:INSTANCED:NORMALMAP" version="2">
+        <diffuse_texture mip="4" file="units/pd2_dlc1/props/res_prop_store_beer/res_prop_beer_sixpack_a_df"/>
+        <bump_normal_texture file="units/payday2/textures/blank_nm"/>
+    </material>
+    <material name="mat_glass_bottle_lod0" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:INSTANCED:NORMALMAP" version="2">
+        <diffuse_texture file="units/pd2_dlc1/props/res_prop_store_beer/res_prop_store_beer_a_df"/>
+        <bump_normal_texture file="units/pd2_dlc1/props/res_prop_store_beer/res_prop_store_beer_a_nm"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <material_texture file="units/pd2_dlc1/props/res_prop_store_beer/res_prop_store_beer_a_gsma"/>
+    </material>
+    <material name="mat_glass_bottle_lod1" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:INSTANCED:NORMALMAP" version="2">
+        <diffuse_texture mip="2" file="units/pd2_dlc1/props/res_prop_store_beer/res_prop_store_beer_a_df"/>
+        <bump_normal_texture mip="2" file="units/pd2_dlc1/props/res_prop_store_beer/res_prop_store_beer_a_nm"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <material_texture mip="1" file="units/pd2_dlc1/props/res_prop_store_beer/res_prop_store_beer_a_gsma"/>
+    </material>
+    <material name="mat_glass_bottle_lod2" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:INSTANCED:NORMALMAP" version="2">
+        <diffuse_texture mip="4" file="units/pd2_dlc1/props/res_prop_store_beer/res_prop_store_beer_a_df"/>
+        <bump_normal_texture mip="4" file="units/pd2_dlc1/props/res_prop_store_beer/res_prop_store_beer_a_nm"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <material_texture mip="3" file="units/pd2_dlc1/props/res_prop_store_beer/res_prop_store_beer_a_gsma"/>
+    </material>
+</materials>

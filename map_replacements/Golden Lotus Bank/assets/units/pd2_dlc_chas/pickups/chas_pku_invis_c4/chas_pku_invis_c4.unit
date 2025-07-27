@@ -1,0 +1,17 @@
+<unit type="chas" slot="1">
+	<object file="units/pd2_dlc_chas/pickups/chas_pku_invis_c4/chas_pku_invis_c4" />
+	<network sync="spawn"/>
+	<dependencies>
+		<depends_on font="fonts/font_digital" />
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="SpecialEquipmentInteractionExt">
+			<var name="_special_equipment" value="c4_stackable" />
+			<var name="tweak_data" value="press_c4_pku" />
+			<var name="_interact_object" value="interact"/>
+			<var name="_remove_on_interact" value="true" />
+		</extension>
+	</extensions>
+</unit>

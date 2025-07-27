@@ -1,0 +1,8 @@
+<materials version="3">
+    <material name="bush_juniperus_sabina" version="2" render_template="generic:ALIGN_NORMAL_WORLD_Z:ALPHA_MASKED:DIFFUSE_TEXTURE:DOUBLE_SIDED:EXTERNAL_ALPHA_REF">
+        <diffuse_texture file="units/payday2/vegetation/str_veg_bush_juniperus/juniperus_sabina_df"/>
+        <variable value="0.053000003099442" type="scalar" name="alpha_ref"/>
+        <variable value="0.82600003480911" type="scalar" name="normal_world_z_blend"/>
+    </material>
+    <material name="shadow_caster" render_template="shadow_caster_only" version="2"/>
+</materials>

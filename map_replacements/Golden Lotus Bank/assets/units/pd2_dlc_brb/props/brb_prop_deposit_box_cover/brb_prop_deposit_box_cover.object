@@ -1,0 +1,15 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_brb/props/brb_prop_deposit_box_cover/brb_prop_deposit_box_cover" orientation_object="rp_brb_prop_deposit_box_cover" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_brb_prop_deposit_box_cover" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="steel_no_decal">
+		<decal_mesh name="dm_steel" enabled="true" material="steel_no_decal" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_deposit_box_cover" enabled="true" />
+	</graphics>
+</dynamic_object>

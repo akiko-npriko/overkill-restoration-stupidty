@@ -1,0 +1,18 @@
+<unit type="vit" slot="1">
+    <network sync="spawn"/>
+	<object file="units/pd2_dlc_vit/props/vit_prop_security_shutter/vit_prop_branch_security_shutter" />
+	<dependencies>
+		<depends_on bnk="soundbanks/regular_sfx" />
+		<depends_on effect="effects/payday2/environment/parts/flashing_light_60s" />
+		<depends_on effect="effects/payday2/environment/small_thermal_burner_60s" />
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+	</extensions>
+	<sounds>
+		<default_soundsource source="rp_vit_prop_branch_security_shutter"/>
+		<soundsource name="snd" source="a_shutter" />
+		<soundsource name="snd_01" source="anim_debris" />
+	</sounds>
+</unit>

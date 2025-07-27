@@ -1,0 +1,32 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_ahop/architecture/ahop/ahop_int/ahop_wall_explosion" orientation_object="rp_gov_c_int_wall_explosion_a" />
+	<sequence_manager file="units/pd2_dlc_ahop/architecture/ahop/ahop_int/ahop_wall_explosion" />
+	<bodies>
+		<body name="static_body" enabled="false" template="static" >
+			<object name="rp_gov_c_int_wall_explosion_a" />
+			<object name="c_box" collision_type="box" padding="-2.5"/>
+			<object name="c_convex_01" collision_type="convex" padding="-2.5"/>
+			<object name="c_convex_02" collision_type="convex" padding="-2.5"/>
+			<object name="c_convex_03" collision_type="convex" padding="-2.5"/>
+		</body>
+		<body name="wall_body" enabled="true" template="static" >
+			<object name="c_box_00" collision_type="box" padding="-2.5"/>
+			<object name="c_box_01" collision_type="box" padding="-2.5"/>
+		</body>
+	</bodies>
+
+	<decal_surfaces static="true" default_material="marble">
+		<decal_mesh name="dm_concrete" enabled="false" material="concrete"/>
+		<decal_mesh name="dm_marble" enabled="false" material="marble"/>
+	</decal_surfaces>
+
+	<graphics>
+		<object name="g_decals" 			enabled="false" />
+		<object name="g_decals_other" 		enabled="false" />
+		<object name="g_wall" 				enabled="true" />		
+		<object name="g_decals_wall" 		enabled="false" />		
+		<object name="g_g" 					enabled="false" />
+		<object name="g_boarder" 			enabled="false" />
+	</graphics>
+
+</dynamic_object>

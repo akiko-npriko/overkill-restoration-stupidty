@@ -1,0 +1,15 @@
+<materials version="3">
+	<material name="mat_carpet" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_vit/props/vit_prop_carpet_crosshall_red/vit_carpet_crosshall_red_df" />
+		<bump_normal_texture file="units/pd2_dlc_vit/props/vit_prop_carpet_crosshall_red/vit_carpet_crosshall_red_nm" />
+		<material_texture file="units/pd2_dlc_vit/props/vit_prop_carpet_crosshall_red/vit_carpet_crosshall_red_gsma" />
+	</material>
+	<material name="mat_carpet_trim" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_vit/props/vit_prop_carpet_crosshall_red/vit_carpet_crosshall_red_trim_df" />
+		<bump_normal_texture file="units/pd2_dlc_vit/props/vit_prop_carpet_crosshall_red/vit_carpet_crosshall_red_trim_nm" />
+		<material_texture file="units/pd2_dlc_vit/props/vit_prop_carpet_crosshall_red/vit_carpet_crosshall_red_trim_gsma" />
+	</material>
+		    <material render_template="decal:DIFFUSE_TEXTURE" name="mat_contactshadow" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/props/vit_prop_carpet_redroom/vit_carpet_contactshadow_dcd"/>
+    </material>
+</materials>

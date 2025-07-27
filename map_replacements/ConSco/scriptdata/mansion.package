@@ -1,0 +1,548 @@
+<table directory="assets">
+	<add>
+		<texture path="textures/MansionFirstFloor" unload="true"/>
+		<texture path="textures/Outside" unload="true"/>
+		<texture path="textures/Empty" unload="true"/>
+		<material_config path="units/pd2_mod_custom/cus_bodydump_band_flightcase/cus_bodydump_band_flightcase" unload="true"/>
+		<model path="units/pd2_mod_custom/cus_bodydump_band_flightcase/cus_bodydump_band_flightcase" unload="true"/>
+		<object path="units/pd2_mod_custom/cus_bodydump_band_flightcase/cus_bodydump_band_flightcase" unload="true"/>
+		<sequence_manager path="units/pd2_mod_custom/cus_bodydump_band_flightcase/cus_bodydump_band_flightcase" unload="true"/>
+		<unit load="true" path="units/pd2_mod_custom/cus_bodydump_band_flightcase/cus_bodydump_band_flightcase" unload="true"/>
+		<material_config path="units/pd2_mod_gcr/architecture/gcr_pool/gcr_pool_water" unload="true"/>
+		<model path="units/pd2_mod_gcr/architecture/gcr_pool/gcr_pool_water" unload="true"/>
+		<object path="units/pd2_mod_gcr/architecture/gcr_pool/gcr_pool_water" unload="true"/>
+		<unit load="true" path="units/pd2_mod_gcr/architecture/gcr_pool/gcr_pool_water" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_gang_mobster_1_pager/ene_gang_mobster_1_pager" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_gang_mobster_1_pager/ene_gang_mobster_1_pager_husk" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_gang_mobster_1_pager/ene_gang_mobster_1_pager" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_gang_mobster_1_pager/ene_gang_mobster_1_pager_contour" unload="true"/>
+		<cooked_physics path="units/pd2_mod_ttr/characters/ene_gang_mobster_1_pager/ene_gang_mobster_1_pager" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/ene_gang_mobster_1_pager/ene_gang_mobster_1_pager" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/ene_gang_mobster_1_pager/ene_gang_mobster_1_pager" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_gang_mobster_2_pager/ene_gang_mobster_2_pager" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_gang_mobster_2_pager/ene_gang_mobster_2_pager_husk" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_gang_mobster_2_pager/ene_gang_mobster_2_pager" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_gang_mobster_2_pager/ene_gang_mobster_2_pager_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/ene_gang_mobster_2_pager/ene_gang_mobster_2_pager" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/ene_gang_mobster_2_pager/ene_gang_mobster_2_pager" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_gang_mobster_3_pager/ene_gang_mobster_3_pager" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_gang_mobster_3_pager/ene_gang_mobster_3_pager_husk" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_gang_mobster_3_pager/ene_gang_mobster_3_pager" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_gang_mobster_3_pager/ene_gang_mobster_3_pager_contour" unload="true"/>
+		<cooked_physics path="units/pd2_mod_ttr/characters/ene_gang_mobster_3_pager/ene_gang_mobster_3_pager" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/ene_gang_mobster_3_pager/ene_gang_mobster_3_pager" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/ene_gang_mobster_3_pager/ene_gang_mobster_3_pager" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_gang_mobster_4_pager/ene_gang_mobster_4_pager" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_gang_mobster_4_pager/ene_gang_mobster_4_pager_husk" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_gang_mobster_4_pager/ene_gang_mobster_4_pager" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_gang_mobster_4_pager/ene_gang_mobster_4_pager_contour" unload="true"/>
+		<cooked_physics path="units/pd2_mod_ttr/characters/ene_gang_mobster_4_pager/ene_gang_mobster_4_pager" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/ene_gang_mobster_4_pager/ene_gang_mobster_4_pager" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/ene_gang_mobster_4_pager/ene_gang_mobster_4_pager" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_gang_mobster_5_pager/ene_gang_mobster_5_pager" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_gang_mobster_5_pager/ene_gang_mobster_5_pager_husk" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_gang_mobster_6_pager/ene_gang_mobster_6_pager" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_gang_mobster_6_pager/ene_gang_mobster_6_pager_husk" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_gang_mobster_7_pager/ene_gang_mobster_7_pager" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_gang_mobster_7_pager/ene_gang_mobster_7_pager_husk" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_gang_mobster_7_pager/ene_gang_mobster_7_pager" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_gang_mobster_7_pager/ene_gang_mobster_7_pager_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/ene_gang_mobster_7_pager/ene_gang_mobster_7_pager" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/ene_gang_mobster_7_pager/ene_gang_mobster_7_pager" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/shared_textures/new_mobster_df" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_gang_mobster_clubsecurity/ene_gang_mobster_clubsecurity" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_gang_mobster_clubsecurity/ene_gang_mobster_clubsecurity_husk" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_gang_mobster_clubsecurity/ene_gang_mobster_clubsecurity" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_gang_mobster_clubsecurity/ene_gang_mobster_clubsecurity_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/ene_gang_mobster_clubsecurity/ene_gang_mobster_clubsecurity" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/ene_gang_mobster_clubsecurity/ene_gang_mobster_clubsecurity" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/ene_gang_mobster_clubsecurity/ene_gang_mobster_clubsecurity_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/ene_gang_mobster_clubsecurity/ene_gang_mobster_clubsecurity_head_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/ene_gang_mobster_clubsecurity/ene_gang_mobster_clubsecurity_nm" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/ene_gang_mobster_clubsecurity/ene_gang_mobster_clubsecurity_arms_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/shared_textures/mobster_security_body_df" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_gang_mobster_5/ene_gang_mobster_5" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_gang_mobster_5/ene_gang_mobster_5_husk" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_gang_mobster_5/ene_gang_mobster_5" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_gang_mobster_5/ene_gang_mobster_5_contour" unload="true"/>
+		<cooked_physics path="units/pd2_mod_ttr/characters/ene_gang_mobster_5/ene_gang_mobster_5" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/ene_gang_mobster_5/ene_gang_mobster_5" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/ene_gang_mobster_5/ene_gang_mobster_5" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_gang_mobster_6/ene_gang_mobster_6" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_gang_mobster_6/ene_gang_mobster_6_husk" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_gang_mobster_6/ene_gang_mobster_6" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_gang_mobster_6/ene_gang_mobster_6_contour" unload="true"/>
+		<cooked_physics path="units/pd2_mod_ttr/characters/ene_gang_mobster_6/ene_gang_mobster_6" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/ene_gang_mobster_6/ene_gang_mobster_6" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/ene_gang_mobster_6/ene_gang_mobster_6" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_friendly_backup_1/ene_friendly_backup_1" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_friendly_backup_1/ene_friendly_backup_1_husk" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_friendly_backup_1/ene_friendly_backup_1" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/ene_friendly_backup_1/ene_friendly_backup_1_contour" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/ene_friendly_backup_1/ene_friendly_backup_1_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/ene_friendly_backup_1/ene_friendly_backup_1_head_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/ene_friendly_backup_1/ene_friendly_backup_1_head_nm" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_friendly_backup_2/ene_friendly_backup_2" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_friendly_backup_2/ene_friendly_backup_2_husk" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_friendly_backup_1_vehicle/ene_friendly_backup_1_vehicle" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_friendly_backup_1_vehicle/ene_friendly_backup_1_vehicle_husk" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_friendly_backup_2_vehicle/ene_friendly_backup_2_vehicle" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_friendly_backup_2_vehicle/ene_friendly_backup_2_vehicle_husk" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/ene_friendly_backup_1/ene_friendly_backup_1" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/ene_friendly_backup_1/ene_friendly_backup_1" unload="true"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_1m_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_1m_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_1m_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_1m_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_2m_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_2m_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_2m_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_2m_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_2m_door_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_2m_door_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_2m_door_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_2m_door_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_2m_window_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_2m_window_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_2m_window_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_2m_window_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_4m_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_4m_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_4m_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_4m_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_025m_cap_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_025m_cap_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_025m_cap_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_025m_cap_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_050m_cap_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_050m_cap_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_050m_cap_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_050m_cap_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_fireplace_2m_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_fireplace_2m_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_fireplace_2m_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3_fireplace_2m_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3d_2m_door_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3d_2m_door_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3d_2m_door_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3d_2m_door_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3d_4m_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3d_4m_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3d_4m_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3d_4m_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3d_4m_closetdoor_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3d_4m_closetdoor_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3d_4m_closetdoor_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3d_4m_closetdoor_a"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_ext"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_ext_scarface"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_red"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_dark_red"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_cyan"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_emerald"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_gray"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_black"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_light_blue"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_lime_green"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_yellow"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_orange"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_black_pattern_floral"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_dark_red_pattern_floral"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_cyan_pattern_floral"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_emerald_pattern_floral"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_light_blue_pattern_floral"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_gray_pattern_floral"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_red_pattern_floral"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_orange_pattern_floral"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_yellow_pattern_floral"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall_door_cap_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall_door_cap_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall_door_cap_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall_door_cap_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_025m_cap_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_025m_cap_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_025m_cap_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_025m_cap_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_050m_cap_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_050m_cap_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_050m_cap_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_050m_cap_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_1m_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_1m_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_1m_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_1m_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_1m_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_1m_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_1m_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_1m_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_1x1m_corner_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_1x1m_corner_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_1x1m_corner_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_1x1m_corner_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_2m_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_2m_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_2m_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_2m_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_2m_a_elevator_static"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_2m_a_elevator_static"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_2m_a_elevator_static" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_2m_a_elevator_static"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_2m_door_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_2m_door_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_2m_door_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_2m_door_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_2m_vent_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_2m_vent_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_2m_vent_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_2m_vent_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_4m_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_4m_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_4m_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_4m_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_4m_a_doubledoor"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_4m_a_doubledoor"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_4m_a_doubledoor" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1d_4m_a_doubledoor"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_cellceiling1_2x2m_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_cellceiling1_2x2m_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_cellceiling1_2x2m_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_cellceiling1_2x2m_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_flatceiling1_1x1m_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_flatceiling1_1x1m_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_flatceiling1_1x1m_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_flatceiling1_1x1m_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_flatceiling1_2x2m_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_flatceiling1_2x2m_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_flatceiling1_2x2m_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_flatceiling1_2x2m_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_flatceiling1_4x4m_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_flatceiling1_4x4m_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_flatceiling1_4x4m_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_flatceiling1_4x4m_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_1m_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_1m_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_1m_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_1m_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_1x1m_corner_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_1x1m_corner_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_1x1m_corner_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_1x1m_corner_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_2m_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_2m_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_2m_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_2m_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_2m_arch_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_2m_arch_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_2m_arch_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_2m_arch_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_2m_door_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_2m_door_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_2m_door_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_2m_door_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_2m_window_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_2m_window_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_2m_window_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_2m_window_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_4m_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_4m_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_4m_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_4m_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_4m_a_doubledoor"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_4m_a_doubledoor"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_4m_a_doubledoor" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_4m_a_doubledoor"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_4m_a_doubledoor_villavivaldimainentrance"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_4m_a_doubledoor_villavivaldimainentrance"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_4m_a_doubledoor_villavivaldimainentrance" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_4m_a_doubledoor_villavivaldimainentrance"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_4m_arch_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_4m_arch_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_4m_arch_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_4m_arch_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_4m_b"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_4m_b"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_4m_b" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall1_4m_b"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall_arch_cap_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall_arch_cap_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall_arch_cap_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall_arch_cap_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall_arch_cap_b"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall_arch_cap_b"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall_arch_cap_b" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall_arch_cap_b"/>
+		<texture path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_01_df" unload="true"/>
+		<texture path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_01_nm" unload="true"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_wood_floor_2x2m"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_wood_floor_2x2m"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_wood_floor_2x2m" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_wood_floor_2x2m"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_wood_floor"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_wood_floor_dark"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_wood_floor_yacht"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_wood_floor_chca"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_wood_floor_light"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_wood_floor_light_pattern"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_wood_floor_4x4m"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_wood_floor_4x4m"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_wood_floor_4x4m" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_wood_floor_4x4m"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_wood_floor_1x1m"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_wood_floor_1x1m"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_wood_floor_1x1m" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_wood_floor_1x1m"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_marble_floor_2x2m"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_marble_floor_2x2m"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_marble_floor_2x2m" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_marble_floor_2x2m"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_marble_floor"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_marble_floor_black"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_terracotta_floor"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_terracotta_middle_floor"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_marble_floor_4x4m"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_marble_floor_4x4m"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_marble_floor_4x4m" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_marble_floor_4x4m"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_marble_floor_1x1m"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_marble_floor_1x1m"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_marble_floor_1x1m" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_marble_floor_1x1m"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_wall_ext_4m"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_wall_ext_4m"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_wall_ext_4m"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_wall_ext_4m" unload="true"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_grass_floor_2x2m"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_grass_floor_2x2m"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_grass_floor_2x2m" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_grass_floor_2x2m"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_grass_floor"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_grass_floor_4x4m"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_grass_floor_4x4m"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_grass_floor_4x4m" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_grass_floor_4x4m"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_grass_floor_1x1m"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_grass_floor_1x1m"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_grass_floor_1x1m" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux_floor/lux_int_grass_floor_1x1m"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_ext_pool_1"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_ext_pool_1"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_ext_pool_1" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_ext_pool_1"/>
+		<material_config path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_ext_pool_1"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_pillar_025m_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_pillar_025m_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_pillar_025m_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_pillar_025m_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_pillar_050m_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_pillar_050m_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_pillar_050m_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_pillar_050m_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_pillar1_025m_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_pillar1_025m_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_pillar1_025m_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_pillar1_025m_a" unload="true"/>
+		<cooked_physics path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_pillar1_050m_a"/>
+		<model path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_pillar1_050m_a"/>
+		<object path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_pillar1_050m_a"/>
+		<unit load="true" path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_pillar1_050m_a" unload="true"/>
+		<sequence_manager path="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_wall3d_4m_closetdoor_a"/>
+		<unit path="units/pd2_mod_venice/props/rooftiles/rooftile_4m_corner"/>
+		<object path="units/pd2_mod_venice/props/rooftiles/rooftile_4m_corner"/>
+		<model path="units/pd2_mod_venice/props/rooftiles/rooftile_4m_corner"/>
+		<unit path="units/pd2_mod_venice/props/rooftiles/rooftile_4m_mid"/>
+		<object path="units/pd2_mod_venice/props/rooftiles/rooftile_4m_mid"/>
+		<model path="units/pd2_mod_venice/props/rooftiles/rooftile_4m_mid"/>
+		<unit path="units/pd2_mod_venice/props/rooftiles/rooftile_2m_mid"/>
+		<object path="units/pd2_mod_venice/props/rooftiles/rooftile_2m_mid"/>
+		<model path="units/pd2_mod_venice/props/rooftiles/rooftile_2m_mid"/>
+		<material_config path="units/pd2_mod_venice/props/rooftiles/rooftiles"/>
+		<unit path="units/pd2_mod_venice/props/balcony/prop_balcony_new"/>
+		<object path="units/pd2_mod_venice/props/balcony/prop_balcony_new"/>
+		<model path="units/pd2_mod_venice/props/balcony/prop_balcony_new"/>
+		<material_config path="units/pd2_mod_venice/props/balcony/prop_balcony_new"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_1/civ_female_bikini_mexican_1" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_1/civ_female_bikini_mexican_1_husk" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_1/civ_female_bikini_mexican_1_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_1/civ_female_bikini_mexican_1_head_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_1/civ_female_bikini_mexican_1_head_nm" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_1/civ_female_bikini_mexican_1" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_1/civ_female_bikini_mexican_1_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_1/civ_female_bikini_mexican_1" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_1/civ_female_bikini_mexican_1" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_5/civ_female_bikini_mexican_5" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_5/civ_female_bikini_mexican_5_husk" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_5/civ_female_bikini_mexican_5_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_5/civ_female_bikini_mexican_5_head_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_5/civ_female_bikini_mexican_5_head_nm" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_5/civ_female_bikini_mexican_5" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_5/civ_female_bikini_mexican_5_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_5/civ_female_bikini_mexican_5" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_female_bikini_mexican_5/civ_female_bikini_mexican_5" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_1/civ_male_mex_bathrobe_1" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_1/civ_male_mex_bathrobe_1_husk" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_1/civ_male_mex_bathrobe_1" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_1/civ_male_mex_bathrobe_1_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_1/civ_male_mex_bathrobe_1" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_1/civ_male_mex_bathrobe_1" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_3/civ_male_mex_bathrobe_3" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_3/civ_male_mex_bathrobe_3_husk" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_3/civ_male_mex_bathrobe_3" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_3/civ_male_mex_bathrobe_3_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_3/civ_male_mex_bathrobe_3" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_male_mex_bathrobe_3/civ_male_mex_bathrobe_3" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_male_white_bathrobe_1/civ_male_white_bathrobe_1" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_male_white_bathrobe_1/civ_male_white_bathrobe_1_husk" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_male_white_bathrobe_1/civ_male_white_bathrobe_1" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_male_white_bathrobe_1/civ_male_white_bathrobe_1_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_male_white_bathrobe_1/civ_male_white_bathrobe_1" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_male_white_bathrobe_1/civ_male_white_bathrobe_1" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_male_white_bathrobe_2/civ_male_white_bathrobe_2" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_male_white_bathrobe_2/civ_male_white_bathrobe_2_husk" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_male_white_bathrobe_2/civ_male_white_bathrobe_2" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_male_white_bathrobe_2/civ_male_white_bathrobe_2_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_male_white_bathrobe_2/civ_male_white_bathrobe_2" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_male_white_bathrobe_2/civ_male_white_bathrobe_2" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/shared_textures/civ_male_bathhouse_1/civ_male_bathhouse_body_1_df" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_male_security/civ_male_security" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_male_security/civ_male_security_husk" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_male_security/civ_male_security_normal" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_male_security/civ_male_security_normal_husk" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_male_security/civ_male_security" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_male_security/civ_male_security_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_male_security/civ_male_security" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_male_security/civ_male_security" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_male_security/civ_male_security_body_df" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_kozlov/civ_kozlov" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_kozlov/civ_kozlov_husk" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_kozlov/civ_kozlov" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_kozlov/civ_kozlov_contour" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_kozlov/civ_kozlov_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_kozlov/civ_kozlov_nm" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_kozlov/civ_kozlov_head_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_kozlov/civ_kozlov_head_nm" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_kozlov/civ_kozlov" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_kozlov/civ_kozlov" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_bikini_african_1/civ_female_bikini_african_1" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_bikini_african_1/civ_female_bikini_african_1_husk" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_african_1/civ_female_bikini_african_1_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_african_1/civ_female_bikini_african_1_head_1_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_african_1/civ_female_bikini_african_1_head_1_nm" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_bikini_african_1/civ_female_bikini_african_1" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_bikini_african_1/civ_female_bikini_african_1_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_female_bikini_african_1/civ_female_bikini_african_1" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_female_bikini_african_1/civ_female_bikini_african_1" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_male_suave_1/civ_male_suave_1" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_male_suave_1/civ_male_suave_1_husk" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_male_suave_1/civ_male_suave_1_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_male_suave_1/civ_male_suave_1_head_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_male_suave_1/civ_male_suave_1_head_nm" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_male_suave_1/civ_male_suave_1" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_male_suave_1/civ_male_suave_1_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_male_suave_1/civ_male_suave_1" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_male_suave_1/civ_male_suave_1" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_male_suave_2/civ_male_suave_2" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_male_suave_2/civ_male_suave_2_husk" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_male_suave_2/civ_male_suave_2_df" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_male_suave_2/civ_male_suave_2" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_male_suave_2/civ_male_suave_2_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_male_suave_2/civ_male_suave_2" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_male_suave_2/civ_male_suave_2" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_male_suave_3/civ_male_suave_3" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_male_suave_3/civ_male_suave_3_husk" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_male_suave_3/civ_male_suave_3_df" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_male_suave_3/civ_male_suave_3" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_male_suave_3/civ_male_suave_3_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_male_suave_3/civ_male_suave_3" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_male_suave_3/civ_male_suave_3" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_male_suave_4/civ_male_suave_4" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_male_suave_4/civ_male_suave_4_husk" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_male_suave_4/civ_male_suave_4_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_male_suave_4/civ_male_suave_4_head_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_male_suave_4/civ_male_suave_4_head_nm" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_male_suave_4/civ_male_suave_4" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_male_suave_4/civ_male_suave_4_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_male_suave_4/civ_male_suave_4" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_male_suave_4/civ_male_suave_4" unload="true"/>
+		<unit load="true" path="units/pd2_dlc_chca/characters/civ_male_bathhouse_1/civ_male_bathhouse_1" unload="true"/>
+		<unit load="true" path="units/pd2_dlc_chca/characters/civ_male_bathhouse_1/civ_male_bathhouse_1_husk" unload="true"/>
+		<material_config path="units/pd2_dlc_chca/characters/civ_male_bathhouse_1/civ_male_bathhouse_1" unload="true"/>
+		<material_config path="units/pd2_dlc_chca/characters/civ_male_bathhouse_1/civ_male_bathhouse_1_contour" unload="true"/>
+		<model path="units/pd2_dlc_chca/characters/civ_male_bathhouse_1/civ_male_bathhouse_1" unload="true"/>
+		<object path="units/pd2_dlc_chca/characters/civ_male_bathhouse_1/civ_male_bathhouse_1" unload="true"/>
+		<unit load="true" path="units/pd2_dlc_chca/characters/civ_male_bathhouse_2/civ_male_bathhouse_2" unload="true"/>
+		<unit load="true" path="units/pd2_dlc_chca/characters/civ_male_bathhouse_2/civ_male_bathhouse_2_husk" unload="true"/>
+		<material_config path="units/pd2_dlc_chca/characters/civ_male_bathhouse_2/civ_male_bathhouse_2" unload="true"/>
+		<material_config path="units/pd2_dlc_chca/characters/civ_male_bathhouse_2/civ_male_bathhouse_2_contour" unload="true"/>
+		<model path="units/pd2_dlc_chca/characters/civ_male_bathhouse_2/civ_male_bathhouse_2" unload="true"/>
+		<object path="units/pd2_dlc_chca/characters/civ_male_bathhouse_2/civ_male_bathhouse_2" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_bikini_brunette_1/civ_female_bikini_brunette_1" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_bikini_brunette_1/civ_female_bikini_brunette_1_husk" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_brunette_1/civ_female_bikini_brunette_1_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_brunette_1/civ_female_bikini_brunette_1_head_1_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_brunette_1/civ_female_bikini_brunette_1_head_1_nm" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_brunette_1/civ_female_bikini_brunette_1_hair_1_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_brunette_1/civ_female_bikini_brunette_1_hair_1_nm" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_brunette_1/civ_female_bikini_brunette_1_hair_1_op" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_bikini_brunette_1/civ_female_bikini_brunette_1" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_bikini_brunette_1/civ_female_bikini_brunette_1_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_female_bikini_brunette_1/civ_female_bikini_brunette_1" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_female_bikini_brunette_1/civ_female_bikini_brunette_1" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_bikini_brunette_2/civ_female_bikini_brunette_2" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_bikini_brunette_2/civ_female_bikini_brunette_2_husk" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_brunette_2/civ_female_bikini_brunette_2_head_1_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_brunette_2/civ_female_bikini_brunette_2_head_1_nm" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_brunette_2/civ_female_bikini_brunette_2_hair_1_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_brunette_2/civ_female_bikini_brunette_2_hair_1_nm" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_brunette_2/civ_female_bikini_brunette_2_hair_1_op" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_bikini_brunette_2/civ_female_bikini_brunette_2" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_bikini_brunette_2/civ_female_bikini_brunette_2_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_female_bikini_brunette_2/civ_female_bikini_brunette_2" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_female_bikini_brunette_2/civ_female_bikini_brunette_2" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_bikini_blonde_1/civ_female_bikini_blonde_1" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_bikini_blonde_1/civ_female_bikini_blonde_1_husk" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_blonde_1/civ_female_bikini_blonde_1_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_blonde_1/civ_female_bikini_blonde_1_head_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_blonde_1/civ_female_bikini_blonde_1_head_nm" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_bikini_blonde_1/civ_female_bikini_blonde_1" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_bikini_blonde_1/civ_female_bikini_blonde_1_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_female_bikini_blonde_1/civ_female_bikini_blonde_1" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_female_bikini_blonde_1/civ_female_bikini_blonde_1" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_bikini_blonde_2/civ_female_bikini_blonde_2" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_bikini_blonde_2/civ_female_bikini_blonde_2_husk" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_blonde_2/civ_female_bikini_blonde_2_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_blonde_2/civ_female_bikini_blonde_2_head_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_blonde_2/civ_female_bikini_blonde_2_head_nm" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_bikini_blonde_2/civ_female_bikini_blonde_2" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_bikini_blonde_2/civ_female_bikini_blonde_2_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_female_bikini_blonde_2/civ_female_bikini_blonde_2" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_female_bikini_blonde_2/civ_female_bikini_blonde_2" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_bikini_asian_1/civ_female_bikini_asian_1" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_bikini_asian_1/civ_female_bikini_asian_1_husk" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_asian_1/civ_female_bikini_asian_1_head_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/civ_female_bikini_asian_1/civ_female_bikini_asian_1_head_nm" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_bikini_asian_1/civ_female_bikini_asian_1" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_bikini_asian_1/civ_female_bikini_asian_1_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_female_bikini_asian_1/civ_female_bikini_asian_1" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_female_bikini_asian_1/civ_female_bikini_asian_1" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_bikini_asian_2/civ_female_bikini_asian_2" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_female_bikini_asian_2/civ_female_bikini_asian_2_husk" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_bikini_asian_2/civ_female_bikini_asian_2" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_female_bikini_asian_2/civ_female_bikini_asian_2_contour" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_female_bikini_asian_2/civ_female_bikini_asian_2" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_female_bikini_asian_2/civ_female_bikini_asian_2" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/shared_textures/asian/ntr_hair_black_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/shared_textures/asian/ntr_hair_gray_df" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/shared_textures/asian/ntr_generic_hair_op" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/shared_textures/asian/ntr_generic_hair_2_op" unload="true"/>
+		<texture path="units/pd2_mod_ttr/characters/shared_textures/bikini_nm" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_diego_backup/ene_diego_backup" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/ene_diego_backup/ene_diego_backup_husk" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_diego/civ_diego" unload="true"/>
+		<unit load="true" path="units/pd2_mod_ttr/characters/civ_diego/civ_diego_husk" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_diego/civ_diego_contour" unload="true"/>
+		<material_config path="units/pd2_mod_ttr/characters/civ_diego/civ_diego" unload="true"/>
+		<model path="units/pd2_mod_ttr/characters/civ_diego/civ_diego" unload="true"/>
+		<object path="units/pd2_mod_ttr/characters/civ_diego/civ_diego" unload="true"/>
+	</add>
+</table>

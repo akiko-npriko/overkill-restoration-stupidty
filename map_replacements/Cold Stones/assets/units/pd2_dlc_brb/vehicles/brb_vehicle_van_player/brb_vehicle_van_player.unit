@@ -1,0 +1,15 @@
+<unit type="brb" slot="1">
+	<object file="units/pd2_dlc_brb/vehicles/brb_vehicle_van_player/brb_vehicle_van_player" />
+	<network sync="spawn"/>
+
+	<dependencies>
+    	<depends_on effect="effects/particles/bullet_hit/misc/misc_tire" />
+    	<depends_on effect="effects/payday2/particles/window/storefront_window_small" />	    
+  	</dependencies>
+
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+	</extensions>
+</unit>
+

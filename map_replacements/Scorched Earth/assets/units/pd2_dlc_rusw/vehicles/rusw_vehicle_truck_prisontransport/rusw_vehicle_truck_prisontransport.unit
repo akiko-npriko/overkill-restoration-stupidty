@@ -1,0 +1,23 @@
+<unit type="glc" slot="1">
+	<network sync="spawn"/>
+	<object file="units/pd2_dlc_rusw/vehicles/rusw_vehicle_truck_prisontransport/rusw_vehicle_truck_prisontransport" />
+	<dependencies>
+		<depends_on unit="units/payday2/equipment/gen_equipment_shape_charge/gen_equipment_shape_charge" />
+		<depends_on unit="units/pd2_dlc_rusw/vehicles/rusw_vehicle_truck_prisontransport/spawn_right_door" />
+		<depends_on unit="units/pd2_dlc_rusw/vehicles/rusw_vehicle_truck_prisontransport/spawn_left_door" />
+		<depends_on physic_effect="physic_effects/push_sphere" />
+		<depends_on bnk="soundbanks/regular_sfx" />
+		<depends_on effect="effects/payday2/particles/explosions/shapecharger_explosion" />
+	</dependencies>
+	<extensions>
+		<extension name="base" class="MissionDoor" >
+			<var name="tweak_data" value="only_shape_charge_4" />
+		</extension>
+		<extension class="ScriptUnitData" name="unit_data" />
+		<extension name="damage" class="UnitDamage" />
+	</extensions>
+	<sounds>
+		<default_soundsource source="rp_glc_vehicle_truck_prisontransport"/>
+		<soundsource name="snd" source="snd_01" />
+	</sounds>
+</unit>

@@ -1,0 +1,155 @@
+<materials version="3">
+    <material render_template="generic:BLEND_DIFFUSE:BLEND_MASK_SEPERATE:BLEND_SMOOTH:DIFFUSE_TEXTURE:NORMALMAP:RL_CORE_ENVIRONMENT:VERTEX_COLOR" name="mat_autre_metal" version="2">
+        <diffuse_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/metal_trim_01/trai_int_metal_trim_01_df"/>
+        <diffuse_layer0_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/metal_trim_01/trai_int_metal_trim_01_dirty_df"/>
+        <diffuse_layer1_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/metal_trim_01/trai_int_metal_trim_01_mask"/>
+        <bump_normal_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/metal_trim_01/trai_int_metal_trim_01_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_autre_metal_vertex" version="2">
+        <diffuse_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/metal_trim_01/trai_int_metal_trim_01_df"/>
+        <bump_normal_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/metal_trim_01/trai_int_metal_trim_01_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_epoxy_floor" version="2">
+        <diffuse_texture file="units/pd2_dlc_trai/architecture/int/int_textures/trai_int_epoxy_floor_01/trai_int_epoxy_floor_01_df"/>
+        <bump_normal_texture file="units/pd2_dlc_trai/architecture/int/int_textures/trai_int_epoxy_floor_01/trai_int_epoxy_floor_01_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_metal_trim_01" version="2">
+        <diffuse_texture file="units/pd2_dlc_trai/architecture/int/int_textures/trai_mad_building_trims_01/trai_mad_building_trims_01_df"/>
+        <bump_normal_texture file="units/pd2_dlc_trai/architecture/int/int_textures/trai_mad_building_trims_01/trai_mad_building_trims_01_nm"/>
+        <material_texture file="units/pd2_dlc_trai/architecture/int/int_textures/trai_mad_building_trims_01/trai_mad_building_trims_01_gsma"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" name="mat_dualsignallight" version="2">
+        <diffuse_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/trai_prop_train_signallight_dual/trai_prop_train_signallight_dual_df"/>
+        <bump_normal_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/trai_prop_train_signallight_dual/trai_prop_train_signallight_dual_nm"/>
+    </material>
+    <material render_template="generic:BLEND_DIFFUSE:BLEND_MASK_SEPERATE:BLEND_SMOOTH:DIFFUSE_TEXTURE:NORMALMAP:RL_CORE_ENVIRONMENT:VERTEX_COLOR" name="mat_trai_int_plaster" version="2">
+        <diffuse_texture file="units/pd2_dlc_trai/architecture/int/int_textures/trai_int_plaster_01/trai_int_plaster_clean_01_df"/>
+        <diffuse_layer0_texture file="units/pd2_dlc_trai/architecture/int/int_textures/trai_int_plaster_01/trai_int_plaster_dirty_01_df"/>
+        <diffuse_layer1_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/trai_generic_blend_01_mask"/>
+        <bump_normal_texture file="units/pd2_dlc_trai/architecture/int/int_textures/trai_int_plaster_01/trai_int_plaster_clean_01_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_trai_metal_floor" version="2">
+        <diffuse_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/metal_floor/trai_int_metal_floor_df"/>
+        <bump_normal_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/metal_floor/trai_int_metal_floor_nm"/>
+        <material_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/metal_floor/trai_int_metal_floor_gsma"/>
+    </material>
+    <material render_template="generic:BLEND_DIFFUSE:BLEND_MASK_SEPERATE:BLEND_SMOOTH:DIFFUSE_TEXTURE:NORMALMAP:RL_CORE_ENVIRONMENT:VERTEX_COLOR" name="mat_trai_metal_panels" version="2">
+        <diffuse_texture file="units/pd2_dlc_mad/architecture/mad_sawmill/mad_metal_corrugated_01_df"/>
+        <diffuse_layer0_texture file="units/pd2_dlc_mad/architecture/mad_sawmill/mad_metal_corrugated_01_df"/>
+        <diffuse_layer1_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/trai_ext_corrugated_shed_mask"/>
+        <bump_normal_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/trai_ext_corrugated_shed_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" name="are_int_double_door_lod2" version="2">
+        <diffuse_texture file="units/payday2/props/are_int_double_door/are_int_double_door_df" mip="3"/>
+        <bump_normal_texture file="units/payday2/props/are_int_double_door/are_int_double_door_nm" mip="3"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_wall_concrete" version="2">
+        <diffuse_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/trai_int_concrete_wall/trai_int_concrete_wall_df"/>
+        <bump_normal_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/trai_int_concrete_wall/trai_int_concrete_wall_nm"/>
+        <material_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/trai_int_concrete_wall/trai_int_concrete_wall_gsma"/>
+    </material>
+    <material render_template="generic:BLEND_DIFFUSE:BLEND_MASK_SEPERATE:BLEND_SMOOTH:DIFFUSE_TEXTURE:GLOSS_CONTROL_VALUE:NORMALMAP:RL_CORE_ENVIRONMENT:VERTEX_COLOR" name="mat_autre_metal_bollard" version="2">
+        <diffuse_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/metal_trim_01/trai_int_metal_trim_01_df"/>
+        <diffuse_layer0_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/metal_trim_01/trai_int_metal_trim_01_dirty_df"/>
+        <diffuse_layer1_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/metal_trim_01/trai_int_metal_trim_01_mask"/>
+        <bump_normal_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/metal_trim_01/trai_int_metal_trim_01_nm"/>
+        <variable type="scalar" name="glossiness_control" value="0.40500001923647"/>
+    </material>
+    <material render_template="opacity:DIFFUSE_TEXTURE:VERTEX_COLOR" name="mat_trai_road_markings" version="2">
+        <opacity_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/trai_ext_stripes_01/trai_ext_stripes_01_mask"/>
+        <diffuse_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/trai_ext_stripes_01/trai_ext_stripes_01_df"/>
+    </material>
+    <material render_template="generic:BLEND_DIFFUSE:BLEND_MASK_SEPERATE:BLEND_SMOOTH:DIFFUSE_TEXTURE:GLOSS_CONTROL_VALUE:NORMALMAP:RL_CORE_ENVIRONMENT:VERTEX_COLOR" name="mat_trai_concrete" version="2">
+        <diffuse_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/concrete_floor/trai_workshop_concrete_floor_worn_df"/>
+        <diffuse_layer0_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/concrete_floor/trai_workshop_concrete_floor_clean_df"/>
+        <diffuse_layer1_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/trai_generic_blend_01_mask"/>
+        <bump_normal_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/concrete_floor/trai_workshop_concrete_floor_clean_nm"/>
+        <variable type="scalar" name="glossiness_control" value="0.050000002374873"/>
+    </material>
+    <material render_template="opacity:DIFFUSE_TEXTURE:OPACITY_FADE" name="mat_trai_dirt_trim" version="2">
+        <opacity_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/trai_ext_dirt_skirt_mask"/>
+        <diffuse_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/trai_ext_dirt_skirt_df"/>
+        <variable type="vector3" name="opacity_fade" value="10 2286 0"/>
+    </material>
+    <material render_template="generic:BLEND_DIFFUSE:BLEND_MASK_SEPERATE:BLEND_SMOOTH:DIFFUSE_TEXTURE:NORMALMAP:RL_CORE_ENVIRONMENT:VERTEX_COLOR" name="mat_trai_ext_brick_red" version="2">
+        <diffuse_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/trai_d_int_wall_brick_01_df"/>
+        <diffuse_layer0_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/trai_d_int_wall_brick_01_dirty_df"/>
+        <diffuse_layer1_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/trai_d_int_wall_brick_01_mask"/>
+        <bump_normal_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/trai_d_int_wall_brick_01_nm"/>
+    </material>
+    <material render_template="generic:BLEND_DIFFUSE:BLEND_MASK_SEPERATE:BLEND_NORMAL:BLEND_SMOOTH:DIFFUSE_TEXTURE:NORMALMAP:RL_CORE_ENVIRONMENT:VERTEX_COLOR" name="mat_trai_ext_painted" version="2">
+        <diffuse_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/concrete_floor/trai_workshop_concrete_floor_clean_df"/>
+        <diffuse_layer0_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/backdrop/ground/trai_soil_dead_shrubs_df"/>
+        <diffuse_layer1_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/trai_generic_blend_01_mask"/>
+        <bump_normal_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/concrete_floor/trai_workshop_concrete_floor_clean_nm"/>
+        <normal_layer0_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/backdrop/ground/trai_soil_dead_shrubs_nm"/>
+    </material>
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:DOUBLE_SIDED:EXTERNAL_ALPHA_REF:NORMALMAP" name="mat_trai_metal_fence" version="2">
+        <diffuse_texture file="units/pd2_dlc_trai/architecture/int/int_textures/trai_int_metal_fence_square_01/trai_int_metal_fence_square_01_df"/>
+        <bump_normal_texture file="units/pd2_dlc_trai/architecture/int/int_textures/trai_int_metal_fence_square_01/trai_int_metal_fence_square_01_nm"/>
+        <variable type="scalar" name="alpha_ref" value="0.19"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_trai_windows" version="2">
+        <diffuse_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/trai_windows_02_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SIMPLE_TINT" name="mat_autre_metal_door" version="2">
+        <diffuse_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/metal_trim_01/trai_int_metal_trim_01_df"/>
+        <variable type="vector3" name="tint_color" value="0.32283467054367 0.12153776735067 0.04431064426899"/>
+        <material_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/metal_trim_01/trai_int_metal_trim_01_gsma"/>
+        <bump_normal_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/metal_trim_01/trai_int_metal_trim_01_nm"/>
+    </material>
+    <material version="2" render_template="opacity:DIFFUSE_TEXTURE:OPACITY_CONTROLLER" name="mat_floor_markings" src="GLOBAL">
+        <opacity_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/trai_ext_stripes_01/trai_ext_stripes_01_mask"/>
+        <diffuse_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/trai_ext_stripes_01_original/trai_ext_stripes_01_original_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_carpet" version="2">
+        <diffuse_texture file="units/pd2_dlc_trai/architecture/int/int_textures/trai_int_floor_carpet/trai_int_floor_carpet_df"/>
+        <bump_normal_texture file="units/pd2_dlc_trai/architecture/int/int_textures/trai_int_floor_carpet/trai_int_floor_carpet_nm"/>
+    </material>
+    <material render_template="shadow_caster_only" name="shadow_caster" version="2"/>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SIMPLE_TINT" name="mat_autre_metal_lift_A" version="2">
+        <diffuse_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/metal_trim_01/trai_int_metal_trim_01_df"/>
+        <bump_normal_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/metal_trim_01/trai_int_metal_trim_01_nm"/>
+        <material_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/metal_trim_01/trai_int_metal_trim_01_gsma"/>
+        <variable type="vector3" name="tint_color" value="0.97637796401978 0.86151003837585 0.29482787847519"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SIMPLE_TINT" name="mat_autre_metal_lift_B" version="2">
+        <diffuse_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/metal_trim_01/trai_int_metal_trim_01_df"/>
+        <variable type="vector3" name="tint_color" value="0.277906447649 0.32014819979668 0.56692910194397"/>
+        <bump_normal_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/metal_trim_01/trai_int_metal_trim_01_nm"/>
+        <material_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/metal_trim_01/trai_int_metal_trim_01_gsma"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GLOSS_CONTROL_VALUE:NORMALMAP" name="mat_trai_trim_railling" version="2">
+        <diffuse_texture file="units/pd2_dlc_trai/architecture/int/int_textures/trai_curved_metal_railling_trimsheet/trai_curved_metal_railling_trimsheet_df"/>
+        <bump_normal_texture file="units/pd2_dlc_trai/architecture/int/int_textures/trai_curved_metal_railling_trimsheet/trai_curved_metal_railling_trimsheet_nm"/>
+        <variable type="scalar" name="glossiness_control" value="0.10400000493973"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" name="mat_details_wire" version="2">
+        <diffuse_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/details_ceiling/trai_details_ceiling_01_df"/>
+        <bump_normal_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/details_ceiling/trai_details_ceiling_01_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" name="mat_ext_pavement_01" version="2">
+        <diffuse_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/road/trai_ext_pavement_01_df"/>
+        <bump_normal_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/road/trai_ext_pavement_01_nm"/>
+    </material>
+    <material render_template="opacity:DIFFUSE_TEXTURE:OPACITY_FADE" name="mat_trai_leaks" version="2">
+        <opacity_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/trai_ext_decals_leaking_mask"/>
+        <diffuse_texture file="units/pd2_dlc_trai/architecture/ext/ext_textures/trai_ext_decals_leaking_df"/>
+        <variable type="vector3" name="opacity_fade" value="354 6906 0"/>
+    </material>
+    <variable Cname="alpha_ref" Btype="scalar" Avalue="0"/>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" name="are_int_double_door" version="2">
+        <diffuse_texture file="units/payday2/props/are_int_double_door/are_int_double_door_df"/>
+        <bump_normal_texture file="units/payday2/props/are_int_double_door/are_int_double_door_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" name="are_int_double_door_lod1" version="2">
+        <diffuse_texture file="units/payday2/props/are_int_double_door/are_int_double_door_df" mip="1"/>
+        <bump_normal_texture file="units/payday2/props/are_int_double_door/are_int_double_door_nm" mip="1"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP:RL_CORE_ENVIRONMENT" version="2" name="mat_lcm_b_ext_rooftar_a">
+        <diffuse_texture file="units/payday2/architecture/lcm_b/lcm_b_ext_rooftar_a_df"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <bump_normal_texture file="units/payday2/architecture/lcm_b/lcm_b_ext_rooftar_a_nm"/>
+    </material>
+</materials>

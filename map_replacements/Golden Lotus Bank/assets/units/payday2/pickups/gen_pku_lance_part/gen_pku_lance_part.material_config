@@ -1,0 +1,8 @@
+<materials version="3">
+    <material name="mtr_spareparts" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP" version="2" unique="true">
+        <diffuse_texture file="units/payday2/pickups/gen_pku_lance_part/spares_df"/>
+        <bump_normal_texture file="units/payday2/pickups/gen_pku_lance_part/spares_nm"/>
+        <variable value="1 1 1" type="vector3" name="contour_color"/>
+        <variable value="0" type="scalar" name="contour_opacity"/>
+    </material>
+</materials>

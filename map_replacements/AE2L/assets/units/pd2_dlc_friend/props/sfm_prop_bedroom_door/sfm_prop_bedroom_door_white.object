@@ -1,0 +1,50 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_friend/props/sfm_prop_bedroom_door/sfm_prop_bedroom_door_white" orientation_object="rp_sfm_prop_bedroom_door_white" />
+	<sequence_manager file="units/pd2_dlc_friend/props/sfm_prop_bedroom_door/sfm_prop_bedroom_door_white" />
+	<bodies>
+		<body name="body_door" enabled="true" template="animated">
+			<object name="axis" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+
+	<animations>
+		<animation_group name="anim_open_close" enabled="false">
+			<object name="axis" />
+		</animation_group>
+	</animations>
+
+	<decal_surfaces default_material="wood">
+		<decal_mesh name="dm_metal" enabled="true" material="metal" />
+		<decal_mesh name="dm_wood" enabled="true" material="wood" />
+	</decal_surfaces>
+
+
+	<graphics>
+
+		<graphic_group name="grp_lockpick" 			enabled="true" >
+			<lod_object name="lod_g_icon">
+				<object name="g_icon_lod0" 			enabled="true" 	max_distance="450" 	max_draw_lod="0"/>
+				<object name="g_icon_lod1"			enabled="true" 	lod="1"/>
+			</lod_object>
+			<lod_object name="lod_g_icon2">
+				<object name="g_icon2_lod0" 			enabled="true" 	max_distance="450" 	max_draw_lod="0"/>
+				<object name="g_icon2_lod1"			enabled="true" 	lod="1"/>
+			</lod_object>
+			<lod_object name="grp_bracket">
+				<object name="g_icon_frame_lod0" 	enabled="true" 	max_distance="450"	max_draw_lod="0"/>
+				<object name="g_icon_frame_lod1" 	enabled="true" 	lod="1"/>
+			</lod_object>
+			<lod_object name="grp_bracket2">
+				<object name="g_icon2_frame_lod0" 	enabled="true" 	max_distance="450"	max_draw_lod="0"/>
+				<object name="g_icon2_frame_lod1" 	enabled="true" 	lod="1"/>
+			</lod_object>
+		</graphic_group>
+
+		<graphic_group name="door" enabled="true" culling_object="co_box">
+			<object name="g_door" 						enabled="true" 	shadow_caster="true"/>
+			<object name="g_hinge" 						enabled="true" 	shadow_caster="false"/>
+		</graphic_group>
+
+	</graphics>
+</dynamic_object>

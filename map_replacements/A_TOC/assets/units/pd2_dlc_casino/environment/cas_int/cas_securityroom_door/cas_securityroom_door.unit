@@ -1,0 +1,17 @@
+<unit type="cas" slot="1" >
+	<object file="units/pd2_dlc_casino/environment/cas_int/cas_securityroom_door/cas_securityroom_door" />
+	<network sync="spawn"/>
+	<dependencies>
+		<depends_on bnk="soundbanks/regular_sfx" />
+		<depends_on effect="effects/payday2/particles/window/storefront_window_small" />
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="attention" class="AIAttentionObject" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="UseInteractionExt">
+			<var name="tweak_data" value="cas_security_door" />
+			<var name="_interact_object" value="int_location"/>
+		</extension>
+	</extensions>
+</unit>

@@ -1,0 +1,8 @@
+<unit type="bry" slot="1">
+	<object file="units/pd2_dlc_berry/props/bry_prop_mountain_door_welding/bry_prop_mountain_door_welding" />
+	<network sync="spawn"/>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+	</extensions>
+</unit>

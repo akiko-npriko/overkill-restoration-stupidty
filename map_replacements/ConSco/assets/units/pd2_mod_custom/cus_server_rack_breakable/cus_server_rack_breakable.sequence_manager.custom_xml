@@ -1,0 +1,305 @@
+<table>
+	<unit>
+		
+		<variables>
+			<var_servers value="0"/>
+		</variables>
+		
+		
+		<filter name="'filter_all_destroyed'">
+			<check value="vars.var_servers == 0"/>
+		</filter>
+		
+
+		<sequence name="'startup'" startup="true">
+			<run_sequence name="'pick_servers'"/>
+		</sequence>
+		
+		
+		<sequence name="'pick_servers'">
+			<run_sequence filter="rand()*6 > 2" name="'show_server_1'"/>
+			<run_sequence filter="rand()*6 > 3" name="'show_server_2'"/>
+			<run_sequence filter="rand()*6 > 4" name="'show_server_3'"/>
+			<run_sequence filter="rand()*6 > 2" name="'show_server_4'"/>
+			<run_sequence filter="rand()*6 > 3" name="'show_server_5'"/>
+			<run_sequence filter="rand()*6 > 4" name="'show_server_6'"/>
+			<run_sequence filter="rand()*6 > 2" name="'show_server_7'"/>
+			<run_sequence filter="rand()*6 > 3" name="'show_server_8'"/>
+			<run_sequence filter="rand()*6 > 4" name="'show_server_9'"/>
+			<run_sequence filter="rand()*6 > 2" name="'show_server_10'"/>
+			<run_sequence filter="'filter_all_destroyed'" name="'pick_servers'" start_time="1.0"/>
+		</sequence>
+		
+		
+		<!-- Breakable -->
+		<sequence editable_state="true" name="'set_breakable'" triggable="true">
+			<run_sequence filter="body( 'body_server_1_no_damage' ):enabled()" name="'enable_breakable_server_1'"/>
+			<run_sequence filter="body( 'body_server_2_no_damage' ):enabled()" name="'enable_breakable_server_2'"/>
+			<run_sequence filter="body( 'body_server_3_no_damage' ):enabled()" name="'enable_breakable_server_3'"/>
+			<run_sequence filter="body( 'body_server_4_no_damage' ):enabled()" name="'enable_breakable_server_4'"/>
+			<run_sequence filter="body( 'body_server_5_no_damage' ):enabled()" name="'enable_breakable_server_5'"/>
+			<run_sequence filter="body( 'body_server_6_no_damage' ):enabled()" name="'enable_breakable_server_6'"/>
+			<run_sequence filter="body( 'body_server_7_no_damage' ):enabled()" name="'enable_breakable_server_7'"/>
+			<run_sequence filter="body( 'body_server_8_no_damage' ):enabled()" name="'enable_breakable_server_8'"/>
+			<run_sequence filter="body( 'body_server_9_no_damage' ):enabled()" name="'enable_breakable_server_9'"/>
+			<run_sequence filter="body( 'body_server_10_no_damage' ):enabled()" name="'enable_breakable_server_10'"/>
+		</sequence>
+		
+		<sequence editable_state="true" name="'destroy_server'" triggable="true">
+			<set_variables var_servers="vars.var_servers - 1" />
+			<run_sequence filter="'filter_all_destroyed'" name="'destroyed_all_servers'"/>
+		</sequence>
+		
+		<sequence editable_state="true" name="'destroyed_all_servers'" once="true" triggable="true"/>
+		
+		<!-- 1 -->
+		<sequence name="'show_server_1'">
+			<set_variables var_servers="vars.var_servers + 1" />
+			<object		enabled="true"	name="'g_server_1'"/>
+			<decal_mesh	enabled="true"	name="'g_server_1'"/>
+			<body		enabled="true"	name="'body_server_1_no_damage'"/>
+		</sequence>
+		<sequence name="'enable_breakable_server_1'">
+			<object		enabled="true"	name="'g_server_1_outline'"/>
+			<body		enabled="false"	name="'body_server_1_no_damage'"/>
+			<body		enabled="true"	name="'body_server_1'"/>
+		</sequence>
+		<body name="'body_server_1'">
+			<endurance bullet="3" explosion="2" melee="1">
+				<run_sequence name="'destroy_server_1'"/>
+			</endurance>
+		</body>
+		<sequence name="'destroy_server_1'">
+			<body	enabled="false"	name="'body_server_1'"/>
+			<object enabled="false"	name="'g_server_1'"/>
+			<object enabled="false"	name="'g_server_1_outline'"/>
+			<spawn_unit name="'units/pd2_mod_custom/cus_server_rack_breakable/cus_server_rack_breakable_debris'" position="object_pos('sp_debris_1')" rotation="object_rot('sp_debris_1')"/>
+			<run_sequence name="'destroy_server'"/>
+		</sequence>
+		
+		<!-- 2 -->
+		<sequence name="'show_server_2'">
+			<set_variables var_servers="vars.var_servers + 1" />
+			<object		enabled="true"	name="'g_server_2'"/>
+			<decal_mesh	enabled="true"	name="'g_server_2'"/>
+			<body		enabled="true"	name="'body_server_2_no_damage'"/>
+		</sequence>
+		<sequence name="'enable_breakable_server_2'">
+			<object		enabled="true"	name="'g_server_2_outline'"/>
+			<body		enabled="false"	name="'body_server_2_no_damage'"/>
+			<body		enabled="true"	name="'body_server_2'"/>
+		</sequence>
+		<body name="'body_server_2'">
+			<endurance bullet="3" explosion="2" melee="1">
+				<run_sequence name="'destroy_server_2'"/>
+			</endurance>
+		</body>
+		<sequence name="'destroy_server_2'">
+			<body	enabled="false"	name="'body_server_2'"/>
+			<object enabled="false"	name="'g_server_2'"/>
+			<object enabled="false"	name="'g_server_2_outline'"/>
+			<spawn_unit name="'units/pd2_mod_custom/cus_server_rack_breakable/cus_server_rack_breakable_debris'" position="object_pos('sp_debris_2')" rotation="object_rot('sp_debris_2')"/>
+			<run_sequence name="'destroy_server'"/>
+		</sequence>
+		
+		<!-- 3 -->
+		<sequence name="'show_server_3'">
+			<set_variables var_servers="vars.var_servers + 1" />
+			<object		enabled="true"	name="'g_server_3'"/>
+			<decal_mesh	enabled="true"	name="'g_server_3'"/>
+			<body		enabled="true"	name="'body_server_3_no_damage'"/>
+		</sequence>
+		<sequence name="'enable_breakable_server_3'">
+			<object		enabled="true"	name="'g_server_3_outline'"/>
+			<body		enabled="false"	name="'body_server_3_no_damage'"/>
+			<body		enabled="true"	name="'body_server_3'"/>
+		</sequence>
+		<body name="'body_server_3'">
+			<endurance bullet="3" explosion="2" melee="1">
+				<run_sequence name="'destroy_server_3'"/>
+			</endurance>
+		</body>
+		<sequence name="'destroy_server_3'">
+			<body	enabled="false"	name="'body_server_3'"/>
+			<object enabled="false"	name="'g_server_3'"/>
+			<object enabled="false"	name="'g_server_3_outline'"/>
+			<spawn_unit name="'units/pd2_mod_custom/cus_server_rack_breakable/cus_server_rack_breakable_debris'" position="object_pos('sp_debris_3')" rotation="object_rot('sp_debris_3')"/>
+			<run_sequence name="'destroy_server'"/>
+		</sequence>
+		
+		<!-- 4 -->
+		<sequence name="'show_server_4'">
+			<set_variables var_servers="vars.var_servers + 1" />
+			<object		enabled="true"	name="'g_server_4'"/>
+			<decal_mesh	enabled="true"	name="'g_server_4'"/>
+			<body		enabled="true"	name="'body_server_4_no_damage'"/>
+		</sequence>
+		<sequence name="'enable_breakable_server_4'">
+			<object		enabled="true"	name="'g_server_4_outline'"/>
+			<body		enabled="false"	name="'body_server_4_no_damage'"/>
+			<body		enabled="true"	name="'body_server_4'"/>
+		</sequence>
+		<body name="'body_server_4'">
+			<endurance bullet="3" explosion="2" melee="1">
+				<run_sequence name="'destroy_server_4'"/>
+			</endurance>
+		</body>
+		<sequence name="'destroy_server_4'">
+			<body	enabled="false"	name="'body_server_4'"/>
+			<object enabled="false"	name="'g_server_4'"/>
+			<object enabled="false"	name="'g_server_4_outline'"/>
+			<spawn_unit name="'units/pd2_mod_custom/cus_server_rack_breakable/cus_server_rack_breakable_debris'" position="object_pos('sp_debris_4')" rotation="object_rot('sp_debris_4')"/>
+			<run_sequence name="'destroy_server'"/>
+		</sequence>
+		
+		<!-- 5 -->
+		<sequence name="'show_server_5'">
+			<set_variables var_servers="vars.var_servers + 1" />
+			<object		enabled="true"	name="'g_server_5'"/>
+			<decal_mesh	enabled="true"	name="'g_server_5'"/>
+			<body		enabled="true"	name="'body_server_5_no_damage'"/>
+		</sequence>
+		<sequence name="'enable_breakable_server_5'">
+			<object		enabled="true"	name="'g_server_5_outline'"/>
+			<body		enabled="false"	name="'body_server_5_no_damage'"/>
+			<body		enabled="true"	name="'body_server_5'"/>
+		</sequence>
+		<body name="'body_server_5'">
+			<endurance bullet="3" explosion="2" melee="1">
+				<run_sequence name="'destroy_server_5'"/>
+			</endurance>
+		</body>
+		<sequence name="'destroy_server_5'">
+			<body	enabled="false"	name="'body_server_5'"/>
+			<object enabled="false"	name="'g_server_5'"/>
+			<object enabled="false"	name="'g_server_5_outline'"/>
+			<spawn_unit name="'units/pd2_mod_custom/cus_server_rack_breakable/cus_server_rack_breakable_debris'" position="object_pos('sp_debris_5')" rotation="object_rot('sp_debris_5')"/>
+			<run_sequence name="'destroy_server'"/>
+		</sequence>
+		
+		<!-- 6 -->
+		<sequence name="'show_server_6'">
+			<set_variables var_servers="vars.var_servers + 1" />
+			<object		enabled="true"	name="'g_server_6'"/>
+			<decal_mesh	enabled="true"	name="'g_server_6'"/>
+			<body		enabled="true"	name="'body_server_6_no_damage'"/>
+		</sequence>
+		<sequence name="'enable_breakable_server_6'">
+			<object		enabled="true"	name="'g_server_6_outline'"/>
+			<body		enabled="false"	name="'body_server_6_no_damage'"/>
+			<body		enabled="true"	name="'body_server_6'"/>
+		</sequence>
+		<body name="'body_server_6'">
+			<endurance bullet="3" explosion="2" melee="1">
+				<run_sequence name="'destroy_server_6'"/>
+			</endurance>
+		</body>
+		<sequence name="'destroy_server_6'">
+			<body	enabled="false"	name="'body_server_6'"/>
+			<object enabled="false"	name="'g_server_6'"/>
+			<object enabled="false"	name="'g_server_6_outline'"/>
+			<spawn_unit name="'units/pd2_mod_custom/cus_server_rack_breakable/cus_server_rack_breakable_debris'" position="object_pos('sp_debris_6')" rotation="object_rot('sp_debris_6')"/>
+			<run_sequence name="'destroy_server'"/>
+		</sequence>
+		
+		<!-- 7 -->
+		<sequence name="'show_server_7'">
+			<set_variables var_servers="vars.var_servers + 1" />
+			<object		enabled="true"	name="'g_server_7'"/>
+			<decal_mesh	enabled="true"	name="'g_server_7'"/>
+			<body		enabled="true"	name="'body_server_7_no_damage'"/>
+		</sequence>
+		<sequence name="'enable_breakable_server_7'">
+			<object		enabled="true"	name="'g_server_7_outline'"/>
+			<body		enabled="false"	name="'body_server_7_no_damage'"/>
+			<body		enabled="true"	name="'body_server_7'"/>
+		</sequence>
+		<body name="'body_server_7'">
+			<endurance bullet="3" explosion="2" melee="1">
+				<run_sequence name="'destroy_server_7'"/>
+			</endurance>
+		</body>
+		<sequence name="'destroy_server_7'">
+			<body	enabled="false"	name="'body_server_7'"/>
+			<object enabled="false"	name="'g_server_7'"/>
+			<object enabled="false"	name="'g_server_7_outline'"/>
+			<spawn_unit name="'units/pd2_mod_custom/cus_server_rack_breakable/cus_server_rack_breakable_debris'" position="object_pos('sp_debris_7')" rotation="object_rot('sp_debris_7')"/>
+			<run_sequence name="'destroy_server'"/>
+		</sequence>
+		
+		<!-- 8 -->
+		<sequence name="'show_server_8'">
+			<set_variables var_servers="vars.var_servers + 1" />
+			<object		enabled="true"	name="'g_server_8'"/>
+			<decal_mesh	enabled="true"	name="'g_server_8'"/>
+			<body		enabled="true"	name="'body_server_8_no_damage'"/>
+		</sequence>
+		<sequence name="'enable_breakable_server_8'">
+			<object		enabled="true"	name="'g_server_8_outline'"/>
+			<body		enabled="false"	name="'body_server_8_no_damage'"/>
+			<body		enabled="true"	name="'body_server_8'"/>
+		</sequence>
+		<body name="'body_server_8'">
+			<endurance bullet="3" explosion="2" melee="1">
+				<run_sequence name="'destroy_server_8'"/>
+			</endurance>
+		</body>
+		<sequence name="'destroy_server_8'">
+			<body	enabled="false"	name="'body_server_8'"/>
+			<object enabled="false"	name="'g_server_8'"/>
+			<object enabled="false"	name="'g_server_8_outline'"/>
+			<spawn_unit name="'units/pd2_mod_custom/cus_server_rack_breakable/cus_server_rack_breakable_debris'" position="object_pos('sp_debris_8')" rotation="object_rot('sp_debris_8')"/>
+			<run_sequence name="'destroy_server'"/>
+		</sequence>
+		
+		<!-- 9 -->
+		<sequence name="'show_server_9'">
+			<set_variables var_servers="vars.var_servers + 1" />
+			<object		enabled="true"	name="'g_server_9'"/>
+			<decal_mesh	enabled="true"	name="'g_server_9'"/>
+			<body		enabled="true"	name="'body_server_9_no_damage'"/>
+		</sequence>
+		<sequence name="'enable_breakable_server_9'">
+			<object		enabled="true"	name="'g_server_9_outline'"/>
+			<body		enabled="false"	name="'body_server_9_no_damage'"/>
+			<body		enabled="true"	name="'body_server_9'"/>
+		</sequence>
+		<body name="'body_server_9'">
+			<endurance bullet="3" explosion="2" melee="1">
+				<run_sequence name="'destroy_server_9'"/>
+			</endurance>
+		</body>
+		<sequence name="'destroy_server_9'">
+			<body	enabled="false"	name="'body_server_9'"/>
+			<object enabled="false"	name="'g_server_9'"/>
+			<object enabled="false"	name="'g_server_9_outline'"/>
+			<spawn_unit name="'units/pd2_mod_custom/cus_server_rack_breakable/cus_server_rack_breakable_debris'" position="object_pos('sp_debris_9')" rotation="object_rot('sp_debris_9')"/>
+			<run_sequence name="'destroy_server'"/>
+		</sequence>
+		
+		<!-- 10 -->
+		<sequence name="'show_server_10'">
+			<set_variables var_servers="vars.var_servers + 1" />
+			<object		enabled="true"	name="'g_server_10'"/>
+			<decal_mesh	enabled="true"	name="'g_server_10'"/>
+			<body		enabled="true"	name="'body_server_10_no_damage'"/>
+		</sequence>
+		<sequence name="'enable_breakable_server_10'">
+			<object		enabled="true"	name="'g_server_10_outline'"/>
+			<body		enabled="false"	name="'body_server_10_no_damage'"/>
+			<body		enabled="true"	name="'body_server_10'"/>
+		</sequence>
+		<body name="'body_server_10'">
+			<endurance bullet="3" explosion="2" melee="1">
+				<run_sequence name="'destroy_server_10'"/>
+			</endurance>
+		</body>
+		<sequence name="'destroy_server_10'">
+			<body	enabled="false"	name="'body_server_10'"/>
+			<object enabled="false"	name="'g_server_10'"/>
+			<object enabled="false"	name="'g_server_10_outline'"/>
+			<spawn_unit name="'units/pd2_mod_custom/cus_server_rack_breakable/cus_server_rack_breakable_debris'" position="object_pos('sp_debris_10')" rotation="object_rot('sp_debris_10')"/>
+			<run_sequence name="'destroy_server'"/>
+		</sequence>
+	</unit>
+</table>

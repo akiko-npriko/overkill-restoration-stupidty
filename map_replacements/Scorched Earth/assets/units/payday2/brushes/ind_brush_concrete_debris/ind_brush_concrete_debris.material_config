@@ -1,0 +1,13 @@
+<materials version="3">
+    <material name="mat_brush_debris" render_template="generic:DIFFUSE_TEXTURE:INSTANCED:NORMALMAP" version="2">
+        <diffuse_texture file="units/payday2/brushes/ind_brush_concrete_debris/ind_brush_concrete_debris_df"/>
+        <bump_normal_texture file="units/payday2/brushes/ind_brush_concrete_debris/ind_brush_concrete_debris_nm"/>
+    </material>
+    <material name="mat_brush_debris_mul" render_template="effect:BLEND_MUL:DIFFUSE0_TEXTURE:INSTANCED" version="2">
+        <diffuse_texture file="units/payday2/brushes/ind_brush_concrete_debris/ind_brush_concrete_debris_mul_df"/>
+		<variable value="dimlight" type="scalar" name="intensity"/>
+    </material>
+</materials>
+
+
+

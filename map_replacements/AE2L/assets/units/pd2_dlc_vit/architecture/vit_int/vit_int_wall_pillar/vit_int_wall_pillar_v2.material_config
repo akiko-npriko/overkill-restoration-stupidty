@@ -1,0 +1,20 @@
+<materials version="3">
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SIMPLE_TINT" name="mat_int_pillar" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/vit_int/vit_int_wall_pillar/vit_int_wall_pillar_df"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/vit_int/vit_int_wall_pillar/vit_int_wall_pillar_nm"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/vit_int/vit_int_wall_pillar/vit_int_wall_pillar_gsma"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+        <variable type="vector3" name="tint_color" value="0.74509805440903 0.70588237047195 0.66274511814117"/>
+    </material>	
+	<material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_trimsheet_02" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/trimsheet_02/vit_trimsheet_02_df"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/trimsheet_02/vit_trimsheet_02_nm"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/tilling_textures/trimsheet_02/vit_trimsheet_02_gsma"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight" type="cubemap"/>
+    </material>
+	<material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_int_trim_pattern" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/trimsheet_01/vit_trimsheet_01_df"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/trimsheet_01/vit_trimsheet_01_nm"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/tilling_textures/trimsheet_01/vit_trimsheet_01_gsma"/>
+    </material>
+</materials>

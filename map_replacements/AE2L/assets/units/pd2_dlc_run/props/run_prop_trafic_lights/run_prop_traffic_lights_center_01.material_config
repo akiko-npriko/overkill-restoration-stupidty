@@ -1,0 +1,22 @@
+<materials version="3">
+
+	<material decal_material="no_decal" name="mat_traffic_lights" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_run/props/run_prop_trafic_lights/run_prop_trafic_lights_01_df" />
+		<material_texture file="units/pd2_dlc_run/props/run_prop_trafic_lights/run_prop_trafic_lights_01_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_run/props/run_prop_trafic_lights/run_prop_trafic_lights_01_nm" />
+	</material>
+
+	<material decal_material="glass_breakable" name="mat_traffic_lights_il" render_template="generic:DIFFUSE_TEXTURE:SELF_ILLUMINATION" version="2">
+		<diffuse_texture file="units/pd2_dlc_run/props/run_prop_trafic_lights/run_prop_trafic_lights_01_df" />
+		<self_illumination_texture file="units/pd2_dlc_run/props/run_prop_trafic_lights/run_prop_trafic_lights_01_il" />
+		<variable value="identity" type="scalar" name="il_multiplier"/>		
+	</material>
+
+	<material decal_material="no_decal" name="mat_traffic_lights_lod" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_run/props/run_prop_trafic_lights/run_prop_trafic_lights_01_df" mip="4" />
+		<material_texture file="units/pd2_dlc_run/props/run_prop_trafic_lights/run_prop_trafic_lights_01_gsma" mip="4" />
+		<bump_normal_texture file="units/pd2_dlc_run/props/run_prop_trafic_lights/run_prop_trafic_lights_01_nm" mip="4" />
+	</material>
+
+	<material name="shadow_caster" render_template="shadow_caster_only" version="2" />
+</materials>

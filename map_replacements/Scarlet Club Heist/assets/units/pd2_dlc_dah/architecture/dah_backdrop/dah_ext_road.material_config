@@ -1,0 +1,39 @@
+<materials version="3">
+    <material render_template="generic:DIFFUSE_TEXTURE:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" name="mat_road" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_road_df"/>
+        <self_illumination_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_road_df"/>
+        <variable type="scalar" name="il_multiplier" value="megatron"/>
+        <variable type="scalar" name="il_bloom" value="0.57000002707355"/>
+    </material>
+    <material render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:DIFFUSE0_TINT" name="mat_light_gradient" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_light_gradient_edf"/>
+        <variable type="scalar" name="intensity" value="sun"/>
+        <variable type="vector3" name="tint_diffuse0_color" value="0.16535431146622 0.14395552873611 0.07846225053072"/>
+    </material>
+    <material render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:VERTEX_COLOR" version="2" name="mat_traffic_light">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_lamp_red_edf"/>
+        <variable type="scalar" name="intensity" value="sun"/>
+    </material>
+    <material version="2" render_template="generic:DIFFUSE_TEXTURE:GLOSS_CONTROL_VALUE" name="mat_ground" src="GLOBAL">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_ground_df"/>
+        <variable type="scalar" name="glossiness_control" value="0.99900004744995"/>
+    </material>
+    <material render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:DIFFUSE0_UVANIM:VERTEX_COLOR" name="mat_cars" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_cars_df"/>
+        <variable type="scalar" name="intensity" value="inside of borg queen"/>
+        <variable type="vector3" name="uv0_speed" value="0.17100024223328 2.3748725652695e-07 0"/>
+    </material>
+    <material render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE" name="mat_cars_nomove" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_cars_df"/>
+        <variable type="scalar" name="intensity" value="sun"/>
+    </material>
+    <material render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:DIFFUSE0_UVANIM:VERTEX_COLOR" name="mat_cars_nofront" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_cars_nofront_df"/>
+        <variable type="scalar" name="intensity" value="megatron"/>
+        <variable type="vector3" name="uv0_speed" value="0.125 0 0"/>
+    </material>
+    <material render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE" version="2" name="mat_traffic_green">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_traffic_green_df"/>
+        <variable type="scalar" name="intensity" value="sun"/>
+    </material>
+</materials>

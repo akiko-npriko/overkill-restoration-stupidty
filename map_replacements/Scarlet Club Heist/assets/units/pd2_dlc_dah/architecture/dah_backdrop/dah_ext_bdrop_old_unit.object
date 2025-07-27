@@ -1,0 +1,12 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_dah/architecture/dah_backdrop/dah_ext_bdrop_old_unit" orientation_object="rp_dah_ext_bdrop_old_unit" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_dah_ext_bdrop_old_unit" />
+			<object name="c_backdrop_scrapers_box" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<graphics>
+		<object name="g_backdrop_scrapers" enabled="true" />
+	</graphics>
+</dynamic_object>

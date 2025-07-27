@@ -1,0 +1,63 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_rvd/props/rvd_prop_diner_plate/rvd_prop_diner_plate_01" orientation_object="rp_rvd_prop_diner_plate_03" />
+	<sequence_manager file="units/pd2_dlc_rvd/props/rvd_prop_diner_plate/rvd_prop_diner_plate_03" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_rvd_prop_diner_plate_03" />
+			<object name="c_box_00" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_collision_01" enabled="false" template="dynamic" collides_with_mover="false" pushed_by_mover="false">			
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_collision_02" enabled="false" template="dynamic" collides_with_mover="false" pushed_by_mover="false">			
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_collision_03" enabled="false" template="dynamic" collides_with_mover="false" pushed_by_mover="false">			
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+		</body>
+		
+	</bodies>
+
+	<decal_surfaces default_material="marble">
+		<decal_mesh name="dm_marble" enabled="true" material="marble" />
+	</decal_surfaces>
+
+	<graphics>	
+
+		<graphic_group name="main_grp" enabled="true" >
+			<lod_object name="lod_g">
+				<object name="g_lod0" enabled="true" max_distance="5000" />
+				<object name="g_lod1" enabled="true" max_distance="8000" />
+				<object name="g_lod2" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<graphic_group name="grp_dmg_01" enabled="false" culling_object="g_dmg_01_lod0">
+			<lod_object name="lod_g_dmg_01">
+				<object name="g_dmg_01_lod0" enabled="true" max_distance="5000" />
+				<object name="g_dmg_01_lod1" enabled="true" max_distance="8000" />
+				<object name="g_dmg_01_lod2" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<graphic_group name="grp_dmg_02" enabled="false" culling_object="g_dmg_02_lod0">
+			<lod_object name="lod_g_dmg_02">
+				<object name="g_dmg_02_lod0" enabled="true" max_distance="5000" />
+				<object name="g_dmg_02_lod1" enabled="true" max_distance="8000" />
+				<object name="g_dmg_02_lod2" enabled="true" />
+			</lod_object>
+		</graphic_group>
+		
+		<graphic_group name="grp_dmg_03" enabled="false" culling_object="g_dmg_03_lod0">
+			<lod_object name="lod_g_dmg_03">
+				<object name="g_dmg_03_lod0" enabled="true" max_distance="5000" />
+				<object name="g_dmg_03_lod1" enabled="true" max_distance="8000" />
+				<object name="g_dmg_03_lod2" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<object name="g_pasta" enabled="true" />
+
+		<object name="s_s" enabled="true" shadow_caster="true" />
+	</graphics>
+</dynamic_object>

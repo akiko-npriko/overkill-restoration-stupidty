@@ -1,0 +1,15 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_mad/props/mad_prop_keycard/mad_prop_keycard" orientation_object="rp_mad_prop_keycard" />
+	<sequence_manager file="units/pd2_dlc_mad/props/mad_prop_keycard/mad_prop_keycard" />
+	<bodies>
+        <body name="static_body" template="editor" enabled="true">
+            <object name="rp_mad_prop_keycard"/>
+            <object name="c_keycard" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<graphics>
+		<object name="g_keycard" enabled="true" />
+	</graphics>
+
+	
+</dynamic_object>

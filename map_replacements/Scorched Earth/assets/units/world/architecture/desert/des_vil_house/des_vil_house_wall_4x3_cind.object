@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<dynamic_object>
+  <diesel materials="units/world/architecture/desert/des_vil_house/des_vil_house_master" orientation_object="rp_des_vil_house_wall_4x3_cind" />
+  <bodies>
+    <body name="static_body" enabled="true" template="static">
+      <object name="c_des_vil_house_wall_4x3_cind_box" collision_type="mesh_mopp" />
+    </body>
+  </bodies>
+  <decal_surfaces>
+    <decal_mesh name="g_des_vil_house_wall_4x3_cind" enabled="true" />
+  </decal_surfaces>
+  <graphics>
+    <object name="g_des_vil_house_wall_4x3_cind" enabled="true" />
+  </graphics>
+</dynamic_object>

@@ -1,0 +1,21 @@
+<dynamic_object>
+    <diesel orientation_object="rp_bnk_prop_lobby_statue_lion" materials="units/payday2/props/bnk_prop_lobby_statue/bnk_prop_lobby_statue_lion" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body" >
+			<object name="rp_bnk_prop_lobby_statue_lion" />
+			<object name="c_box" collision_type="box" padding="-2.5"/>
+			<object name="c_sphere_01" collision_type="sphere" padding="-2.5"/>
+			<object name="c_sphere_02" collision_type="sphere" padding="-2.5"/>
+			<object name="c_capsule_01" collision_type="capsule" padding="-2.5"/>
+			<object name="c_capsule_02" collision_type="capsule" padding="-2.5"/>
+			<object name="c_capsule_03" collision_type="capsule" padding="-2.5"/>
+        </body>
+    </bodies>
+    <decal_surfaces>
+		<decal_mesh name="dm_metal" enabled="true" material="metal"/>
+    </decal_surfaces>
+    <graphics>
+		<object name="g_lion" enabled="true"/>
+		<object name="g_mull" enabled="true"/>
+    </graphics>
+</dynamic_object>

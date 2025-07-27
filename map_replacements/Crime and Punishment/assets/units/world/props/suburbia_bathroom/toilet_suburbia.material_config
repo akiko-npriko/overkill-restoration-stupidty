@@ -1,0 +1,16 @@
+<materials version="3">
+    <material name="toilet_water" decal_material="water" render_template="generic:DIFFUSE_TEXTURE" version="2">
+        <diffuse_texture file="units/dev_tools/deleted_unit/deleted_unit_df"/>
+    </material>
+    <material name="mtr_toilet" decal_material="ceramic" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <bump_normal_texture file="units/world/props/suburbia_bathroom/toilet_suburbia_nm"/>
+        <diffuse_texture file="units/world/props/suburbia_bathroom/toilet_suburbia_df"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <variable value="1 0 2" type="vector3" name="environment_settings"/>
+    </material>
+    <material name="mtr_toiletpaper" decal_material="ceramic" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE" version="2">
+        <diffuse_texture file="units/world/props/suburbia_bathroom/toiletpaper_suburbia_df"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <variable value="4.8000001907349 0 16.300001144409" type="vector3" name="environment_settings"/>
+    </material>
+</materials>

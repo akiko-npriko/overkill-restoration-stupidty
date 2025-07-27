@@ -1,0 +1,23 @@
+<unit type="str" slot="1" >
+    <object file="units/pd2_dlc2/architecture/csb_sewer/csb_sewer_gate" />
+	<network sync="spawn"/>
+	<dependencies>
+		<depends_on unit="units/payday2/equipment/gen_equipment_shape_charge/gen_equipment_shape_charge" />
+		<depends_on unit="units/pd2_dlc2/architecture/csb_sewer/spawn_sewer_door" />
+		<depends_on physic_effect="physic_effects/push_sphere" />
+		<depends_on effect="effects/particles/explosions/explosion_grenade" />
+		<depends_on effect="effects/particles/dest/smoke_pocket_puff" />
+		<depends_on bnk="soundbanks/regular_sfx" />
+	</dependencies>
+	<extensions>
+		<extension name="base" class="MissionDoor" >
+			<var name="tweak_data" value="reinforced_door" />
+		</extension>
+		<extension class="ScriptUnitData" name="unit_data" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="UseInteractionExt">
+			<var name="tweak_data" value="pick_lock_hard_no_skill" />
+			<var name="_interact_object" value="int_"/>
+		</extension>
+	</extensions>
+</unit>

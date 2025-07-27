@@ -1,0 +1,17 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_dark/props/drk_prop_cardboard_box/drk_cardboard_box" orientation_object="rp_drk_cardboard_box" />
+    <bodies>
+    <body name="static_body" enabled="true" template="static">
+      <object name="rp_drk_cardboard_box" />
+      <object name="dm_wood" collision_type="mesh_mopp" />
+	</body>
+  </bodies>
+	
+	<decal_surfaces default_material="thin_layer">
+    <decal_mesh name="dm_wood" enabled="true" material="thin_layer"  />
+    </decal_surfaces>
+	
+	<graphics>
+		<object name="g_cardboard_box" enabled="true" />
+	</graphics>
+</dynamic_object>

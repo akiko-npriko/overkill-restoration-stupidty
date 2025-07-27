@@ -1,0 +1,14 @@
+<dynamic_object>
+    <diesel materials="units/payday2/props/com_prop_jewelry_jewels/com_prop_jewelry_box" orientation_object="rp_com_prop_jewelry_bust_b"/>
+	<sequence_manager file="units/payday2/props/com_prop_jewelry_jewels/com_prop_jewelry_bust"/>
+    <bodies>
+        <body name="static_body" enabled="true" template="static"  >
+			<object name="rp_com_prop_jewelry_bust_b" />
+			<object name="g_bust" collision_type="box" padding="-2.5"/>
+        </body>
+    </bodies>
+    <graphics>
+        <object enabled="true" name="g_bust" />
+		<object enabled="true" name="g_necklace" enabled="true"/>
+    </graphics>
+</dynamic_object>

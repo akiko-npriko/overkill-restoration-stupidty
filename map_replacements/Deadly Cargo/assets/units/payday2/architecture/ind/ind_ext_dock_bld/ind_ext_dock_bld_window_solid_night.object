@@ -1,0 +1,138 @@
+<dynamic_object>
+    <diesel orientation_object="rp_ind_ext_dock_bld_window_solid_night" materials="units/payday2/architecture/ind/ind_ext_dock_bld/ind_ext_dock_bld_window_solid_night" />
+	<sequence_manager file="units/payday2/architecture/ind/ind_ext_dock_bld/ind_ext_dock_bld_window_solid" />
+	
+<bodies>	
+		<body name="glass_body_whole" template="window" enabled="true" >
+			<object name="c_box_frame_01" collision_type="box" padding="-2.5"/>
+			<object name="c_box_frame_02" collision_type="box" padding="-2.5"/>
+			<object name="c_box_frame_03" collision_type="box" padding="-2.5"/>
+			<object name="c_box_frame_04" collision_type="box" padding="-2.5"/>
+			<object name="c_box_frame_05" collision_type="box" padding="-2.5"/>
+			<object name="c_box_frame_06" collision_type="box" padding="-2.5"/>
+			<object name="c_box_frame_07" collision_type="box" padding="-2.5"/>
+			<object name="c_box_frame_08" collision_type="box" padding="-2.5"/>
+		</body>	
+		<body name="glass_body_01" template="window" enabled="true" >
+			<object name="c_box_glass_01" collision_type="box" padding="-2.5"/>
+		</body>	
+		<body name="glass_body_02" template="window" enabled="true" >
+			<object name="c_box_glass_02" collision_type="box" padding="-2.5"/>
+		</body>	
+		<body name="glass_body_03" template="window" enabled="true" >
+			<object name="c_box_glass_03" collision_type="box" padding="-2.5"/>
+		</body>	
+		<body name="glass_body_04" template="window" enabled="true" >
+			<object name="c_box_glass_04" collision_type="box" padding="-2.5"/>
+		</body>	
+		<body name="glass_body_05" template="window" enabled="true" >
+			<object name="c_box_glass_05" collision_type="box" padding="-2.5"/>
+		</body>	
+		<body name="glass_body_06" template="window" enabled="true" >
+			<object name="c_box_glass_06" collision_type="box" padding="-2.5"/>
+		</body>	
+		<body name="glass_body_07" template="window" enabled="true" >
+			<object name="c_box_glass_07" collision_type="box" padding="-2.5"/>
+		</body>	
+		<body name="glass_body_08" template="window" enabled="true" >
+			<object name="c_box_glass_08" collision_type="box" padding="-2.5"/>
+		</body>	
+		<body name="glass_body_09" template="window" enabled="true" >
+			<object name="c_box_glass_09" collision_type="box" padding="-2.5"/>
+		</body>	
+		<body name="glass_body_10" template="window" enabled="true" >
+			<object name="c_box_glass_10" collision_type="box" padding="-2.5"/>
+		</body>	
+		<body name="glass_body_11" template="window" enabled="true" >
+			<object name="c_box_glass_11" collision_type="box" padding="-2.5"/>
+		</body>	
+		<body name="glass_body_12" template="window" enabled="true" >
+			<object name="c_box_glass_12" collision_type="box" padding="-2.5"/>
+		</body>	
+		<body name="glass_body_13" template="window" enabled="true" >
+			<object name="c_box_glass_13" collision_type="box" padding="-2.5"/>
+		</body>	
+		<body name="glass_body_14" template="window" enabled="true" >
+			<object name="c_box_glass_14" collision_type="box" padding="-2.5"/>
+		</body>	
+		<body name="glass_body_15" template="window" enabled="true" >
+			<object name="c_box_glass_15" collision_type="box" padding="-2.5"/>
+		</body>	
+		<body name="glass_body_16" template="window" enabled="true" >
+			<object name="c_box_glass_16" collision_type="box" padding="-2.5"/>
+		</body>	
+		<body name="glass_body_17" template="window" enabled="true" >
+			<object name="c_box_glass_17" collision_type="box" padding="-2.5"/>
+		</body>	
+		<body name="glass_body_18" template="window" enabled="true" >
+			<object name="c_box_glass_18" collision_type="box" padding="-2.5"/>
+		</body>	
+		<body name="glass_body_19" template="window" enabled="true" >
+			<object name="c_box_glass_19" collision_type="box" padding="-2.5"/>
+		</body>	
+		<body name="glass_body_20" template="window" enabled="true" >
+			<object name="c_box_glass_20" collision_type="box" padding="-2.5"/>
+		</body>	
+		<body name="glass_body_21" template="window" enabled="true" >
+			<object name="c_box_glass_21" collision_type="box" padding="-2.5"/>
+		</body>	
+
+	</bodies>
+
+	<decal_surfaces default_material="glass_breakable" window="true">
+<!-- 		<decal_mesh name="dm_glass_breakable" material="glass_breakable" enabled="true"/> -->
+	</decal_surfaces> 
+	
+    <graphics>
+        <object enabled="true"  instance_struct="world_tm" name="g_ind_ext_dock_bld_window_solid" />
+		<object enabled="true"  instance_struct="world_tm" name="s_s" shadow_caster="true"/>
+
+		<object enabled="true"  instance_struct="world_tm" name="g_frame"/>
+		<object enabled="true"  instance_struct="world_tm" name="s_frame" shadow_caster="true"/>
+
+		<object name="g_glass_01" 		enabled="true" instance_struct="world_tm"/>
+		<object name="g_glass_02" 		enabled="true" instance_struct="world_tm"/>
+		<object name="g_glass_03" 		enabled="true" instance_struct="world_tm"/>
+		<object name="g_glass_04" 		enabled="true" instance_struct="world_tm"/>
+		<object name="g_glass_05" 		enabled="true" instance_struct="world_tm"/>
+		<object name="g_glass_06" 		enabled="true" instance_struct="world_tm"/>
+		<object name="g_glass_07" 		enabled="true" instance_struct="world_tm"/>
+		<object name="g_glass_08" 		enabled="true" instance_struct="world_tm"/>
+		<object name="g_glass_09" 		enabled="true" instance_struct="world_tm"/>
+		<object name="g_glass_10" 		enabled="true" instance_struct="world_tm"/>
+		<object name="g_glass_11" 		enabled="true" instance_struct="world_tm"/>
+		<object name="g_glass_12" 		enabled="true" instance_struct="world_tm"/>
+		<object name="g_glass_13" 		enabled="true" instance_struct="world_tm"/>
+		<object name="g_glass_14" 		enabled="true" instance_struct="world_tm"/>
+		<object name="g_glass_15" 		enabled="true" instance_struct="world_tm"/>
+		<object name="g_glass_16" 		enabled="true" instance_struct="world_tm"/>
+		<object name="g_glass_17" 		enabled="true" instance_struct="world_tm"/>
+		<object name="g_glass_18" 		enabled="true" instance_struct="world_tm"/>
+		<object name="g_glass_19" 		enabled="true" instance_struct="world_tm"/>
+		<object name="g_glass_20" 		enabled="true" instance_struct="world_tm"/>
+		<object name="g_glass_21" 		enabled="true" instance_struct="world_tm"/>
+<!-- 		
+		<object name="g_glass_dmg_01" 	enabled="false" instance_struct="world_tm"/>
+		<object name="g_glass_dmg_02" 	enabled="false" instance_struct="world_tm"/>
+		<object name="g_glass_dmg_03" 	enabled="false" instance_struct="world_tm"/>
+		<object name="g_glass_dmg_04" 	enabled="false" instance_struct="world_tm"/>
+		<object name="g_glass_dmg_05" 	enabled="false" instance_struct="world_tm"/>
+		<object name="g_glass_dmg_06" 	enabled="false" instance_struct="world_tm"/>
+		<object name="g_glass_dmg_07" 	enabled="false" instance_struct="world_tm"/>
+		<object name="g_glass_dmg_08" 	enabled="false" instance_struct="world_tm"/>
+		<object name="g_glass_dmg_09" 	enabled="false" instance_struct="world_tm"/>
+		<object name="g_glass_dmg_10" 	enabled="false" instance_struct="world_tm"/>
+		<object name="g_glass_dmg_11" 	enabled="false" instance_struct="world_tm"/>
+		<object name="g_glass_dmg_12" 	enabled="false" instance_struct="world_tm"/>
+		<object name="g_glass_dmg_13" 	enabled="false" instance_struct="world_tm"/>
+		<object name="g_glass_dmg_14" 	enabled="false" instance_struct="world_tm"/>
+		<object name="g_glass_dmg_15" 	enabled="false" instance_struct="world_tm"/>
+		<object name="g_glass_dmg_16" 	enabled="false" instance_struct="world_tm"/>
+		<object name="g_glass_dmg_17" 	enabled="false" instance_struct="world_tm"/>
+		<object name="g_glass_dmg_18" 	enabled="false" instance_struct="world_tm"/>
+		<object name="g_glass_dmg_19" 	enabled="false" instance_struct="world_tm"/>
+		<object name="g_glass_dmg_20" 	enabled="false" instance_struct="world_tm"/>
+		<object name="g_glass_dmg_21" 	enabled="false" instance_struct="world_tm"/>
+ -->
+    </graphics>
+</dynamic_object>

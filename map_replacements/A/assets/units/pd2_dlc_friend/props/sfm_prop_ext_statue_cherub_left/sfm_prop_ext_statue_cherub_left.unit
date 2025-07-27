@@ -1,0 +1,11 @@
+<unit type="sfm" slot="1">
+	<network sync="spawn"/>
+	<object file="units/pd2_dlc_friend/props/sfm_prop_ext_statue_cherub_left/sfm_prop_ext_statue_cherub_left" />
+	<dependencies>
+		<depends_on physic_effect="physic_effects/push_sphere" />
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+	</extensions>
+</unit>

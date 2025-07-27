@@ -1,0 +1,18 @@
+<materials version="3">
+    <material name="mat_leaves" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:DOUBLE_SIDED:EXTERNAL_ALPHA_REF" version="2">
+        <diffuse_texture file="units/pd2_dlc_casino/props/cas_prop_int_plant_tall/cas_prop_int_plant_tall_leaves_df"/>
+        <variable value="0.1" type="scalar" name="alpha_ref"/>
+    </material>
+    <material name="mat_leaves_lod" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:DOUBLE_SIDED:EXTERNAL_ALPHA_REF" version="2">
+        <diffuse_texture mip="4" file="units/pd2_dlc_casino/props/cas_prop_int_plant_tall/cas_prop_int_plant_tall_leaves_df"/>
+        <variable value="0.1" type="scalar" name="alpha_ref"/>
+    </material>
+    <material name="mat_pot" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/pd2_dlc_casino/props/cas_prop_int_plant_tall/cas_prop_int_plant_tall_pot_df"/>
+        <bump_normal_texture file="units/pd2_dlc_casino/props/cas_prop_int_plant_tall/cas_prop_int_plant_tall_pot_nm"/>
+    </material>
+    <material name="mat_pot_lod" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture mip="4" file="units/pd2_dlc_casino/props/cas_prop_int_plant_tall/cas_prop_int_plant_tall_pot_df"/>
+        <bump_normal_texture mip="4" file="units/pd2_dlc_casino/props/cas_prop_int_plant_tall/cas_prop_int_plant_tall_pot_nm"/>
+    </material>
+</materials>

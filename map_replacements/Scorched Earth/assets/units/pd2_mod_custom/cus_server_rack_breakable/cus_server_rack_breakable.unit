@@ -1,0 +1,8 @@
+<unit type="gen" slot="1" >
+    <object file="units/pd2_mod_custom/cus_server_rack_breakable/cus_server_rack_breakable" />
+	<network sync="spawn"/>
+    <extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+    </extensions>
+</unit>

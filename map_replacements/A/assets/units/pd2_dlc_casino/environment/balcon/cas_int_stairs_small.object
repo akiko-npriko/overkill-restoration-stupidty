@@ -1,0 +1,19 @@
+<dynamic_object>
+    <diesel orientation_object="rp_cas_int_stairs_small" materials="units/pd2_dlc_casino/environment/balcon/cas_int_stairs_small" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body" >
+            <object collision_type="box" name="c_box_00" />
+            
+           
+            
+        </body>
+    </bodies>
+    <graphics>
+        <object enabled="true" name="g_cas_int_stairs_small" />
+    </graphics>
+
+    <decal_surfaces>
+        <decal_mesh enabled="true" name="dm_cas_int_stairs_stone" material="stone" />
+    </decal_surfaces>
+
+</dynamic_object>

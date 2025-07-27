@@ -1,0 +1,22 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_jerry/architecture/jry_bdrop_buildings/jry_bdrop_combuilding_a" orientation_object="rp_jry_bdrop_buildings" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_jry_bdrop_buildings" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<graphics>
+		<object name="g_g" enabled="true" />
+
+		<lod_object name="buildings_lod">
+			<object name="g_g" enabled="true" >
+				<material materials="mat_combuilding, mat_combuilding_b, mat_indbuilding_a, mat_resbuilding_a, mat_resbuilding_b, mat_resbuilding_c" max_distance="20000" />
+				<material materials="mat_combuilding_lod, mat_combuilding_b_lod, mat_indbuilding_a_lod, mat_resbuilding_a_lod, mat_resbuilding_b_lod, mat_resbuilding_c_lod" />		 
+			</object>
+		</lod_object>
+
+
+		<object name="s_s" enabled="true" shadow_caster="true" />
+	</graphics>
+</dynamic_object>

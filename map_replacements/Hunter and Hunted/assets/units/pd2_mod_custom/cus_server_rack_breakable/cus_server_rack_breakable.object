@@ -1,0 +1,112 @@
+<dynamic_object>
+    <diesel materials="units/pd2_mod_custom/cus_server_rack_breakable/cus_server_rack_breakable" orientation_object="rp_root" />
+    <sequence_manager file="units/pd2_mod_custom/cus_server_rack_breakable/cus_server_rack_breakable" />
+    <bodies>
+	
+        <body enabled="true" template="static" name="body_static" >
+            <object collision_type="mesh_mopp" name="c_c" />
+            <object collision_type="box" name="c_pusher" />
+        </body>
+		
+		
+        <body enabled="false" template="static" name="body_server_1_no_damage" >
+            <object collision_type="box" name="c_server_1" padding="-2.5"/>
+        </body>
+        <body enabled="false" template="static" name="body_server_2_no_damage" >
+            <object collision_type="box" name="c_server_2" padding="-2.5"/>
+        </body>
+        <body enabled="false" template="static" name="body_server_3_no_damage" >
+            <object collision_type="box" name="c_server_3" padding="-2.5"/>
+        </body>
+        <body enabled="false" template="static" name="body_server_4_no_damage" >
+            <object collision_type="box" name="c_server_4" padding="-2.5"/>
+        </body>
+        <body enabled="false" template="static" name="body_server_5_no_damage" >
+            <object collision_type="box" name="c_server_5" padding="-2.5"/>
+        </body>
+        <body enabled="false" template="static" name="body_server_6_no_damage" >
+            <object collision_type="box" name="c_server_6" padding="-2.5"/>
+        </body>
+        <body enabled="false" template="static" name="body_server_7_no_damage" >
+            <object collision_type="box" name="c_server_7" padding="-2.5"/>
+        </body>
+        <body enabled="false" template="static" name="body_server_8_no_damage" >
+            <object collision_type="box" name="c_server_8" padding="-2.5"/>
+        </body>
+        <body enabled="false" template="static" name="body_server_9_no_damage" >
+            <object collision_type="box" name="c_server_9" padding="-2.5"/>
+        </body>
+        <body enabled="false" template="static" name="body_server_10_no_damage" >
+            <object collision_type="box" name="c_server_10" padding="-2.5"/>
+        </body>
+		
+        <body enabled="false" template="static" name="body_server_1" >
+            <object collision_type="box" name="c_server_1" padding="-2.5"/>
+        </body>
+        <body enabled="false" template="static" name="body_server_2" >
+            <object collision_type="box" name="c_server_2" padding="-2.5"/>
+        </body>
+        <body enabled="false" template="static" name="body_server_3" >
+            <object collision_type="box" name="c_server_3" padding="-2.5"/>
+        </body>
+        <body enabled="false" template="static" name="body_server_4" >
+            <object collision_type="box" name="c_server_4" padding="-2.5"/>
+        </body>
+        <body enabled="false" template="static" name="body_server_5" >
+            <object collision_type="box" name="c_server_5" padding="-2.5"/>
+        </body>
+        <body enabled="false" template="static" name="body_server_6" >
+            <object collision_type="box" name="c_server_6" padding="-2.5"/>
+        </body>
+        <body enabled="false" template="static" name="body_server_7" >
+            <object collision_type="box" name="c_server_7" padding="-2.5"/>
+        </body>
+        <body enabled="false" template="static" name="body_server_8" >
+            <object collision_type="box" name="c_server_8" padding="-2.5"/>
+        </body>
+        <body enabled="false" template="static" name="body_server_9" >
+            <object collision_type="box" name="c_server_9" padding="-2.5"/>
+        </body>
+        <body enabled="false" template="static" name="body_server_10" >
+            <object collision_type="box" name="c_server_10" padding="-2.5"/>
+        </body>
+		
+    </bodies>
+    <decal_surfaces>
+        <decal_mesh enabled="true" name="dm_dm" material="sheet_metal" />
+        <decal_mesh enabled="false" name="c_server_1" material="sheet_metal" />
+        <decal_mesh enabled="false" name="c_server_2" material="sheet_metal" />
+        <decal_mesh enabled="false" name="c_server_3" material="sheet_metal" />
+        <decal_mesh enabled="false" name="c_server_4" material="sheet_metal" />
+        <decal_mesh enabled="false" name="c_server_5" material="sheet_metal" />
+        <decal_mesh enabled="false" name="c_server_6" material="sheet_metal" />
+        <decal_mesh enabled="false" name="c_server_7" material="sheet_metal" />
+        <decal_mesh enabled="false" name="c_server_8" material="sheet_metal" />
+        <decal_mesh enabled="false" name="c_server_9" material="sheet_metal" />
+        <decal_mesh enabled="false" name="c_server_10" material="sheet_metal" />
+    </decal_surfaces>
+    <graphics>
+        <object enabled="true" name="g_chassi" />
+        <object enabled="false" name="g_server_1" />
+        <object enabled="false" name="g_server_2" />
+        <object enabled="false" name="g_server_3" />
+        <object enabled="false" name="g_server_4" />
+        <object enabled="false" name="g_server_5" />
+        <object enabled="false" name="g_server_6" />
+        <object enabled="false" name="g_server_7" />
+        <object enabled="false" name="g_server_8" />
+        <object enabled="false" name="g_server_9" />
+        <object enabled="false" name="g_server_10" />
+        <object enabled="false" name="g_server_1_outline" />
+        <object enabled="false" name="g_server_2_outline" />
+        <object enabled="false" name="g_server_3_outline" />
+        <object enabled="false" name="g_server_4_outline" />
+        <object enabled="false" name="g_server_5_outline" />
+        <object enabled="false" name="g_server_6_outline" />
+        <object enabled="false" name="g_server_7_outline" />
+        <object enabled="false" name="g_server_8_outline" />
+        <object enabled="false" name="g_server_9_outline" />
+        <object enabled="false" name="g_server_10_outline" />
+		<object enabled="true" shadow_caster="true" name="s_s" />
+    </graphics>
+</dynamic_object>

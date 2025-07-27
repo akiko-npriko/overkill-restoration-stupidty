@@ -1,0 +1,22 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_bex/props/bex_prop_cup/bex_cup" orientation_object="rp_bex_cup" />
+  <sequence_manager file="units/pd2_dlc_bex/props/bex_prop_cup/bex_cup" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_bex_cup" />
+			<object name="c_bex_cup" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="thin_layer">
+		<decal_mesh name="dm_bex_cup" enabled="true" material="thin_layer" />
+	</decal_surfaces>
+	<graphics>
+    <graphic_group name="cup_grp" enabled="true">
+      <object name="g_bex_cup" enabled="true" />
+      <lod_object name="cup_lod">
+        <object name="g_bex_cup_outline_LOD0" enabled="true"  max_distance="400" />
+        <object name="g_bex_cup_outline_LOD1" enabled="true" />
+    </lod_object>
+    </graphic_group>
+	</graphics>
+</dynamic_object>

@@ -1,0 +1,15 @@
+<materials version="3">
+    <material name="garbagetruck" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP:RL_BIGPROPS:VERTEX_COLOR" version="2">
+        <diffuse_texture file="units/vehicles/garbagetruck/garbagetruck_df"/>
+        <bump_normal_texture file="units/vehicles/garbagetruck/garbagetruck_nm"/>
+        <reflection_texture type="cubemap" global_texture="current_global_texture"/>
+        <variable value="1 0.11000000685453 2" type="vector3" name="environment_settings"/>
+    </material>
+    <material version="2" decal_material="glass_breakable" name="mat_window" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP">
+        <diffuse_texture file="units/payday2/textures/metal_df"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <variable value="1 0 2" type="vector3" name="environment_settings"/>
+        <bump_normal_texture file="units/payday2/textures/blank_nm"/>
+    </material>
+    <material name="shadow_caster" render_template="shadow_caster_only" version="2"/>
+</materials>

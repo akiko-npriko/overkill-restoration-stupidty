@@ -1,0 +1,87 @@
+<dynamic_object>
+	<diesel materials="units/pd2_indiana/props/mus_prop_exhibit_b_pottery_a/mus_prop_exhibit_b_pottery_a" orientation_object="rp_spawn_pottery_a_dmg" />
+	<bodies>
+		<body enabled="true" template="dynamic" collides_with_mover="false" name="dmg_1" >
+			<object name="e_debris_01"/>
+			<object collision_type="convex" name="c_convex_01" padding="-2.5" mass="3"/>
+			<object name="g_debri_01_lod0" />
+			<object name="g_debri_01_lod1" />
+		</body>		
+		<body enabled="true" template="dynamic" collides_with_mover="false" name="dmg_2" >
+			<object name="e_debris_02"/>	
+            <object collision_type="convex" name="c_convex_02" padding="-2.5" mass="3"/>
+			<object name="g_debri_02_lod0" />
+			<object name="g_debri_02_lod1" />
+		</body>
+		<body enabled="true" template="dynamic" collides_with_mover="false" name="dmg_3" >	
+			<object name="e_debris_03"/>		
+            <object collision_type="convex" name="c_convex_03" padding="-2.5" mass="3"/>
+			<object name="g_debri_03_lod0" />
+			<object name="g_debri_03_lod1" />
+		</body>
+		<body enabled="true" template="dynamic" collides_with_mover="false" name="dmg_4" >	
+			<object name="e_debris_04"/>
+            <object collision_type="convex" name="c_convex_04" padding="-2.5" mass="3"/>
+			<object name="g_debri_04_lod0" />
+			<object name="g_debri_04_lod1" />
+		</body>
+		<body enabled="true" template="dynamic" collides_with_mover="false" name="dmg_5" >	
+			<object name="e_debris_05"/>	
+            <object collision_type="convex" name="c_convex_05" padding="-2.5" mass="3"/>
+			<object name="g_debri_05_lod0" />
+			<object name="g_debri_05_lod1" />
+		</body>
+		<body enabled="true" template="dynamic" collides_with_mover="false" name="dmg_6" >	
+			<object name="e_debris_06"/>		
+			<object collision_type="convex" name="c_convex_06" padding="-2.5" mass="3"/>
+			<object name="g_debri_06_lod0" />
+			<object name="g_debri_06_lod1" />
+		</body>
+		<body enabled="true" template="dynamic" collides_with_mover="false" name="dmg_7" >
+			<object name="e_debris_07"/>				
+			<object collision_type="convex" name="c_convex_07" padding="-2.5" mass="3"/>
+			<object name="g_debri_07_lod0" />
+			<object name="g_debri_07_lod1" />
+		</body>
+		<body enabled="true" template="dynamic" collides_with_mover="false" name="dmg_8" >
+			<object name="e_debris_08"/>
+			<object collision_type="convex" name="c_convex_08" padding="-2.5" mass="3"/>
+			<object name="g_debri_08_lod0" />
+			<object name="g_debri_08_lod1" />
+		</body>
+	</bodies>
+	<graphics>
+		<lod_object name="lod_01">
+			<object name="g_debri_01_lod0" enabled="true"  max_distance="1500" />
+			<object name="g_debri_01_lod1" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_02">
+			<object name="g_debri_02_lod0" enabled="true"  max_distance="1500" />
+			<object name="g_debri_02_lod1" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_03">
+			<object name="g_debri_03_lod0" enabled="true"  max_distance="1500" />
+			<object name="g_debri_03_lod1" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_04">
+			<object name="g_debri_04_lod0" enabled="true"  max_distance="1500" />
+			<object name="g_debri_04_lod1" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_05">
+			<object name="g_debri_05_lod0" enabled="true"  max_distance="1500" />
+			<object name="g_debri_05_lod1" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_06">
+			<object name="g_debri_06_lod0" enabled="true"  max_distance="1500" />
+			<object name="g_debri_06_lod1" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_07">
+			<object name="g_debri_07_lod0" enabled="true"  max_distance="1500" />
+			<object name="g_debri_07_lod1" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_08">
+			<object name="g_debri_08_lod0" enabled="true"  max_distance="1500" />
+			<object name="g_debri_08_lod1" enabled="true" />
+		</lod_object>
+	</graphics>
+</dynamic_object>

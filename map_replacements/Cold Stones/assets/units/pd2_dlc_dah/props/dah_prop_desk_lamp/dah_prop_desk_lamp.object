@@ -1,0 +1,38 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_dah/props/dah_prop_desk_lamp/dah_prop_desk_lamp" orientation_object="rp_dah_prop_desk_lamp" />
+	<sequence_manager file="units/pd2_dlc_dah/props/dah_prop_desk_lamp/dah_prop_desk_lamp" />
+	<bodies>
+		<body remove_ray_type="walk vis_graph" name="static_body" enabled="true" template="raycoll_static">
+			<object name="rp_dah_prop_desk_lamp" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_convex_01" collision_type="convex" padding="-2.5" />
+			<object name="c_convex_02" collision_type="convex" padding="-2.5" />
+		</body>
+		<body name="dynamic_body" enabled="false" template="small_prop" pushed_by_mover="false">
+	    	<object name="rp_dah_prop_desk_lamp" />
+			<object name="c_box_01" collision_type="box" material="plastic"/>
+			<object name="c_box_02" collision_type="box" material="plastic"/>
+			<object name="c_convex_01" collision_type="convex"    material="plastic"/>
+			<object name="c_convex_02" collision_type="convex"    material="plastic"/>
+	    </body>
+	</bodies>
+
+	<decal_surfaces default_material="glass_unbreakable">
+		<decal_mesh name="dm_glass_unbreakable" enabled="true" material="glass_unbreakable" />
+		<decal_mesh name="dm_metal" enabled="true" material="metal" />
+	</decal_surfaces>
+
+	<graphics>
+		<lod_object name="lod_g">
+			<object name="g_lod0" enabled="true" max_distance="1500" />
+			<object name="g_lod1" enabled="true" max_distance="3000" />
+			<object name="g_lod2" enabled="true" />
+		</lod_object>
+		
+		<object name="s_s" enabled="true" shadow_caster="true" />
+	</graphics>
+	<lights>
+		<light name="lo_omni" enabled="true" editable="true" type="omni|specular" multiplier="1" far_range="350" falloff="4" />
+	</lights>
+</dynamic_object>

@@ -1,0 +1,16 @@
+<materials version="3">
+
+	<material name="shadow_caster" render_template="shadow_caster_only" version="2"/>
+    <material name="mat_light_planes" version="2" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE">
+        <diffuse_texture file="units/pd2_dlc2/architecture/csb_sewer/csb_sewer_drain_glow_blue_df"/>
+        <variable value="candle" type="scalar" name="intensity"/>
+    </material>
+    <material name="mat_sewer_atlas" version="2" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:RL_ENVIRONMENT">
+        <diffuse_texture file="units/pd2_dlc2/architecture/csb_sewer/csb_sewer_df"/>
+        <bump_normal_texture file="units/pd2_dlc2/architecture/csb_sewer/csb_sewer_nm"/>
+    </material>
+    <material name="mat_sewer_atlas_lod" version="2" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:RL_ENVIRONMENT">
+        <diffuse_texture file="units/pd2_dlc2/architecture/csb_sewer/csb_sewer_df" mip="5"/>
+        <bump_normal_texture file="units/pd2_dlc2/architecture/csb_sewer/csb_sewer_nm" mip="6"/>
+    </material>
+</materials>

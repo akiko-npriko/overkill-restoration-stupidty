@@ -1,0 +1,17 @@
+<dynamic_object>
+    <diesel orientation_object="rp_hcm_j_ext_top_b_8x12" materials="units/payday2/architecture/hcm_j_ext/hcm_j_ext_top" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body" >
+            <object name="rp_hcm_j_ext_top_b_8x12" />
+			<object name="c_mesh" collision_type="mesh_mopp" />
+        </body>
+    </bodies>
+    <decal_surfaces default_material="stone" >
+        <decal_mesh enabled="true" name="dm_stone" material="thin_layer" />
+        <decal_mesh enabled="true" name="dm_glass_breakable" material="thin_layer" />
+    </decal_surfaces>
+    <graphics>
+		<object name="g_top_c" 	enabled="true"/>
+		<object name="s_s" 		enabled="true" shadow_caster="true"/>
+    </graphics>
+</dynamic_object>

@@ -1,0 +1,15 @@
+<dynamic_object>
+    <diesel orientation_object="rp_off_prop_officehigh_drawer_colored_large_drawers_3" materials="units/payday2/props/off_prop_officehigh_drawer/off_prop_officehigh_drawer_colored" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body" >
+			<object name="rp_off_prop_officehigh_drawer_colored_large_drawers_3" />
+            <object collision_type="box" name="c_box" />
+        </body>
+    </bodies>
+    <decal_surfaces>
+        <decal_mesh enabled="true" name="dm_plastic" material="plastic" />
+    </decal_surfaces>
+    <graphics>
+        <object enabled="true" name="g_mesh" />
+    </graphics>
+</dynamic_object>

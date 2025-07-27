@@ -1,0 +1,12 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_des/props/des_prop_mouse_01/des_mouse_01" orientation_object="rp_des_mouse_01" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_des_mouse_01" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<graphics>
+		<object name="g_mouse" enabled="true" />
+	</graphics>
+</dynamic_object>

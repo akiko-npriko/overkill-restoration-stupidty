@@ -1,0 +1,42 @@
+<dynamic_object>
+	<diesel materials="units/pd2_mod_gunrunnerclubhouse/architecture/gunrunner_building/gunrunner_building_wall" orientation_object="rp_mex_int_breakable_wall" />
+	<sequence_manager file="units/pd2_mod_gunrunnerclubhouse/architecture/gunrunner_building/gunrunner_building_wall" />
+	<bodies>
+		<body name="body_origin" enabled="true" template="static">
+			<object name="rp_mex_int_breakable_wall" />
+			<object name="c_box_4" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_damaged" enabled="false" template="static">
+			<object name="rp_mex_int_breakable_wall" />
+			<object name="c_box_1" collision_type="box" padding="-2.5" />
+			<object name="c_box_2" collision_type="box" padding="-2.5" />
+			<object name="c_box_3" collision_type="box" padding="-2.5" />
+		</body>	
+		
+		<body name="body_doorfame" enabled="false" template="static">
+			<object name="rp_mex_int_breakable_wall" />
+			<object name="c_box_5" collision_type="box" padding="-2.5" />
+			<object name="c_box_6" collision_type="box" padding="-2.5" />
+			<object name="c_box_7" collision_type="box" padding="-2.5" />
+		</body>	
+		
+	</bodies>
+	
+	
+	
+	
+	<decal_surfaces default_material="concrete">
+		<decal_mesh name="dm_wood_01" enabled="false" material="wood"/>
+		<decal_mesh name="dm_wood_02" enabled="false" material="wood"/>
+		<decal_mesh name="dm_wood_03" enabled="false" material="wood"/>
+		<decal_mesh name="dm_plaster_01" enabled="false" material="plaster"/>
+		<decal_mesh name="dm_plaster_02" enabled="false" material="plaster"/>
+		<decal_mesh name="dm_plaster_03" enabled="false" material="plaster"/>
+	</decal_surfaces>
+	
+	<graphics>
+		<object name="g_wall_original" enabled="true" />
+		<object name="g_wall_damaged" enabled="false" />
+		<object name="g_wall_doorframe" enabled="false" />
+	</graphics>
+</dynamic_object>

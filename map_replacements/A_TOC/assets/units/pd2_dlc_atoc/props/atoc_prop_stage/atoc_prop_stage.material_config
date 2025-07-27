@@ -1,0 +1,25 @@
+<materials version="3">
+	<material name="mat_carpet_patterned" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" version="2">
+		<diffuse_texture file="units/pd2_dlc_sah/tiling_textures/sah_carpet_patterned/sah_carpet_patterned_bw_df"  mip="1"/>
+		<bump_normal_texture file="units/pd2_dlc_sah/tiling_textures/sah_carpet_patterned/sah_carpet_patterned_nm" mip="1"/>
+	</material>
+	<material name="sah_prop_stage_skirt" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<bump_normal_texture file="units/pd2_dlc_sah/props/sah_prop_stage/sah_prop_stage_skirt_nm"  mip="1"/>
+		<diffuse_texture file="units/pd2_dlc_sah/props/sah_prop_stage/sah_prop_stage_skirt_df"  mip="1"/>
+		<material_texture file="units/pd2_dlc_sah/props/sah_prop_stage/sah_prop_stage_skirt_gsma"  mip="1"/>
+		<reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap" />
+	</material>
+	<material name="mat_prop_stage_podium" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" version="2">
+		<diffuse_texture file="units/pd2_dlc_sah/props/sah_prop_stage/sah_prop_stage_podium_df"  mip="1"/>
+		<bump_normal_texture file="units/pd2_dlc_sah/props/sah_prop_stage/sah_prop_stage_podium_nm"  mip="1"/>
+		<material_texture file="units/pd2_dlc_sah/props/sah_prop_stage/sah_prop_stage_podium_gsma"  mip="1"/>
+		<reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap" />
+	</material>
+	<material name="mat_stage_prop_desk" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_atoc/props/atoc_prop_stage/atoc_prop_stage_desk_df"/>
+		<bump_normal_texture file="units/pd2_dlc_atoc/props/atoc_prop_stage/atoc_prop_stage_desk_nm"  mip="1"/>
+		<material_texture file="units/pd2_dlc_atoc/props/atoc_prop_stage/atoc_prop_stage_desk_gsma"  mip="1"/>
+		<reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap" />
+	</material>
+	<material name="shadow_caster" render_template="shadow_caster_only" version="2" />
+</materials>

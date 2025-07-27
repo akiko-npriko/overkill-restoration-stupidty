@@ -1,0 +1,19 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_cage/props/ind_prop_cardealership_table_conference/ind_prop_cardealership_table_conference" orientation_object="rp_ind_prop_cardealership_table_conference" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_ind_prop_cardealership_table_conference" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="metal">
+		<decal_mesh name="dm_metal" enabled="true" material="metal" />
+	</decal_surfaces>
+	<graphics>
+		<lod_object name="lod_g_m">
+			<object name="g_m_lod0" enabled="true" max_distance="1500" />
+			<object name="g_m_lod1" enabled="true" />
+		</lod_object>
+	</graphics>
+</dynamic_object>

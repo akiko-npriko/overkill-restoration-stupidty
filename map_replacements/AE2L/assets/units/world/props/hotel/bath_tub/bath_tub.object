@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<dynamic_object>
+  <diesel materials="units/world/props/hotel/bath_tub/bath_tub" orientation_object="rp_bath_tub" />
+  <bodies>
+    <body name="static_body" enabled="true" template="static">
+      <object name="rp_bath_tub" />
+      <object name="c_metal" collision_type="mesh_mopp" />
+      <object name="c_marble" collision_type="mesh_mopp" />
+    </body>
+  </bodies>
+  <decal_surfaces default_material="marble">
+    <decal_mesh name="c_metal" enabled="true" material="metal" />
+    <decal_mesh name="c_marble" enabled="true" material="marble" />
+  </decal_surfaces>
+  <graphics>
+    <object name="g_bath_tub" enabled="true"  />
+  </graphics>
+</dynamic_object>

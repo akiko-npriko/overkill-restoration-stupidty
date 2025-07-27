@@ -1,0 +1,23 @@
+<dynamic_object>
+    <diesel orientation_object="rp_off_prop_officehigh_drawer_colored_thin_shelves_9" materials="units/payday2/props/off_prop_officehigh_drawer/off_prop_officehigh_drawer_colored" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body" >
+			<object name="rp_off_prop_officehigh_drawer_colored_thin_shelves_9" />
+            <object collision_type="box" name="c_box_01" padding="-2.5"/>
+			<object collision_type="box" name="c_box_02" padding="-2.5"/>
+			<object collision_type="box" name="c_box_03" padding="-2.5"/>
+			<object collision_type="box" name="c_box_04" padding="-2.5"/>
+			<object collision_type="box" name="c_box_05" padding="-2.5"/>
+			<object collision_type="box" name="c_box_06" padding="-2.5"/>
+			<object collision_type="box" name="c_box_07" padding="-2.5"/>
+			<object collision_type="box" name="c_box_08" padding="-2.5"/>
+			<object collision_type="box" name="c_box_09" padding="-2.5"/>
+        </body>
+    </bodies>
+	<decal_surfaces static="true" default_material="plastic">
+		<decal_mesh name="dm_plastic" enabled="true" material="plastic"/>
+	 </decal_surfaces>
+    <graphics>
+        <object enabled="true" name="g_mesh" />
+    </graphics>
+</dynamic_object>

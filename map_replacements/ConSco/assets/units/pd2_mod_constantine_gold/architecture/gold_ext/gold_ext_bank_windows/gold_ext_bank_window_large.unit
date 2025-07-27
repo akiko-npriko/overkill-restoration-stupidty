@@ -1,0 +1,12 @@
+<unit type="brb" slot="1">
+	<object file="units/pd2_mod_constantine_gold/architecture/gold_ext/gold_ext_bank_windows/gold_ext_bank_window_large" />
+	<network sync="spawn"/>
+    <extensions>
+        <extension class="ScriptUnitData" 	name="unit_data" />
+        <extension class="UnitDamage" 		name="damage" />
+		<extension name="attention" class="AIAttentionObject" />
+    </extensions>
+	<dependencies>
+		<depends_on effect="effects/payday2/particles/window/storefront_window_small" />
+	</dependencies>
+</unit>

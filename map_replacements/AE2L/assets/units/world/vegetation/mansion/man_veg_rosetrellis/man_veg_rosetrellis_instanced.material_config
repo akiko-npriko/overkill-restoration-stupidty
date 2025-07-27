@@ -1,0 +1,13 @@
+<materials version="3">
+    <material version="2" decal_material="foliage" name="man_veg_rosetreli" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:INSTANCED:NORMALMAP">
+        <variable value="0.034000001847744" type="scalar" name="alpha_ref"/>
+        <diffuse_texture file="units/world/vegetation/mansion/man_veg_rosetrellis/man_veg_rosetrellis_df"/>
+        <bump_normal_texture file="units/world/vegetation/mansion/man_veg_rosetrellis/man_veg_rosetrellis_nm"/>
+    </material>
+    <material name="hedge_buxbom" version="2" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:INSTANCED:NORMALMAP">
+        <bump_normal_texture file="units/world/props/hedge_buxbom/hedge_buxbom_nm"/>
+        <diffuse_texture file="units/world/props/hedge_buxbom/hedge_buxbom_df"/>
+        <variable value="0.070000000298023" type="scalar" name="alpha_ref"/>
+    </material>
+    <material name="shadow_caster" render_template="shadow_caster_only:INSTANCED" version="2"/>
+</materials>

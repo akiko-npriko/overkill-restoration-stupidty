@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<unit type="spa" slot="14">
+	<object file="units/pd2_dlc_spa/props/spa_prop_armory_shelf_ammo/spa_prop_armory_shelf_ammo" />
+	<network sync="spawn"/>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="base" class="CustomAmmoBagBase" />
+		<extension name="damage" class="UnitDamage" />		
+    	<extension name="interaction" class="AmmoBagInteractionExt" >
+    		<var name="tweak_data" value="ammo_bag" />
+    		<var name="_interact_object" value="interact_locator"/>
+    	</extension>
+	</extensions>
+	<sounds>
+		<default_soundsource source="interact_locator"/>
+	</sounds>
+</unit>

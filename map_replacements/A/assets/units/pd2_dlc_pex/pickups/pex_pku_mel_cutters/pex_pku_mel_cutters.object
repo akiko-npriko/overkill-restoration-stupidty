@@ -1,0 +1,16 @@
+<dynamic_object>
+    <diesel orientation_object="rp_wpn_fps_mel_cutters" materials="units/pd2_dlc_pex/pickups/pex_pku_mel_cutters/pex_pku_mel_cutters" />
+    <sequence_manager file="units/pd2_dlc_pex/pickups/pex_pku_mel_cutters/pex_pku_mel_cutters" />
+    <graphics>
+        <lod_object name="lod_g_cutters_outline">
+            <object name="g_outline_lod_0" enabled="true"  max_distance="600"  max_draw_lod="0" />
+            <object name="g_outline_lod_1" enabled="true" lod="1" />
+        </lod_object>
+        <object name="g_cutters" enabled="true" />
+    </graphics>
+	<bodies>
+		<body name="static_body" enabled="true" template="static">
+			<object name="c_collision" collision_type="box" padding="-2.5"/>
+		</body>
+	</bodies>
+</dynamic_object>

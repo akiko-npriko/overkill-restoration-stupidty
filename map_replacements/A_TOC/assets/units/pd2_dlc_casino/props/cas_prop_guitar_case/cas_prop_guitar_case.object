@@ -1,0 +1,27 @@
+<dynamic_object>
+    <diesel orientation_object="rp_cas_prop_guitar_case" materials="units/pd2_dlc_casino/props/cas_prop_guitar_case/cas_prop_guitar_case" />
+    <sequence_manager file="units/pd2_dlc_casino/props/cas_prop_guitar_case/cas_prop_guitar_case" />
+    <bodies>
+        <body enabled="true" template="static" name="body_closed">
+            <object name="rp_cas_prop_guitar_case" />
+            <object name="c_box_closed_01" collision_type="box" />
+            <object name="c_box_closed_02" collision_type="box" />
+        </body>
+        <body name="body_open" enabled="false" template="static">
+        	<object name="rp_cas_prop_guitar_case" />
+        	<object name="c_box_open_01" collision_type="box" />
+        	<object name="c_box_open_02" collision_type="box" />
+        	<object name="c_box_open_03" collision_type="box" />
+        	<object name="c_box_open_04" collision_type="box" />
+        </body>
+    </bodies>
+    <decal_surfaces />
+    <graphics>
+    	<graphic_group name="geometry" enabled="true" culling_object="bounding_box">
+    		<object name="g_guitar_case_open" enabled="false" />
+            <object name="g_guitar_case_closed" enabled="true" />
+            <object name="s_shadow_closed" enabled="false" />
+    		<object name="s_shadow_open" enabled="false" />
+    	</graphic_group>
+    </graphics>
+</dynamic_object>

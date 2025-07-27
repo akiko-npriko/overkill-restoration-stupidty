@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/payday2/architecture/str_bdrop_dumpster/str_bdrop_dumpster" orientation_object="rp_str_bdrop_dumpster" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_str_bdrop_dumpster" />
+			<object name="c_box_01" collision_type="box" padding="-2.5"/>
+		</body>
+	</bodies>
+	<graphics>
+		<object name="g_g" enabled="true"  />
+	</graphics>
+</dynamic_object>

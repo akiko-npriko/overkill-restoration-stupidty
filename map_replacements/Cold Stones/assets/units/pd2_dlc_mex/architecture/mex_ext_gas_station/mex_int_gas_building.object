@@ -1,0 +1,26 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_mex/architecture/mex_ext_gas_station/mex_int_gas_building" orientation_object="rp_mex_int_gas_building" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_mex_int_gas_building" />
+			<object name="c_mesh_mopp" collision_type="mesh_mopp" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+
+	
+	
+	<graphics>
+		<lod_object name="lod_g_g">
+			<object name="g_g_lod0" enabled="true" max_distance="1800" />
+			<object name="g_g_lod1" enabled="true" />
+		</lod_object>
+				<lod_object name="lod_g_vtxc">
+			<object name="g_vtxc_lod0" enabled="true" max_distance="1800" />
+			<object name="g_vtxc_lod1" enabled="true" />
+		</lod_object>
+
+	</graphics>
+</dynamic_object>

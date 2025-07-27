@@ -1,0 +1,7 @@
+<materials version="3">
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:NORMALMAP" name="mat_wall_painting" version="2">
+        <diffuse_texture file="units/pd2_dlc_friend/props/sfm_prop_lobby_wall_painting_j/sfm_prop_lobby_wall_painting_j_df"/>
+        <variable type="scalar" name="alpha_ref" value="0.066000003134832"/>
+        <bump_normal_texture file="units/pd2_dlc_berry/architecture/temp_textures/white_no_spec_nm"/>
+    </material>
+</materials>

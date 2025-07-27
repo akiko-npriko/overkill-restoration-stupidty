@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<unit type="hlm" slot="1">
+	<object file="units/payday2/equipment/hlm_equipment_gas_can_shoot/hlm_equipment_gas_can_shoot" />
+	<network sync="spawn" />
+	<dependencies>
+		<depends_on effect="effects/particles/fire/large_light_fire" />
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="UseInteractionExt">
+			<var name="tweak_data" value="gasoline" />
+		</extension>
+	</extensions>
+</unit>

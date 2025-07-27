@@ -1,0 +1,45 @@
+<materials version="3">
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" name="mtr_auction_door" version="2">
+        <diffuse_texture file="units/pd2_dlc_chas/equipment/chas_interactable_auction_door/chas_interactable_auction_door_df"/>
+        <bump_normal_texture file="units/pd2_dlc_chas/equipment/chas_interactable_auction_door/chas_interactable_auction_door_nm"/>
+    </material>
+    <material unique="true" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF" name="mtr_door_splinters" version="2">
+        <diffuse_texture file="units/pd2_dlc_chas/equipment/chas_interactable_auction_door/chas_interactable_auction_door_splinters_df"/>
+        <variable type="scalar" name="alpha_ref" value="0.36000001709908"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" name="mtr_broken" version="2">
+        <diffuse_texture file="units/pd2_dlc1/equipment/gen_interactable_door_wooden_c/gen_interactable_door_wooden_c_color_dirty_df"/>
+        <bump_normal_texture file="units/pd2_dlc1/equipment/gen_interactable_door_wooden_c/gen_interactable_door_wooden_c_color_dirty_nm"/>
+    </material>
+
+    <material unique="true" render_template="generic:ALPHA_MASKED:CONTOUR:DIFFUSE_TEXTURE:OPACITY_TEXTURE" name="mtr_outline" version="2">
+        <diffuse_texture file="units/white_df"/>
+        <variable type="vector3" name="contour_color" value="1.0 0.5 0"/>
+        <variable type="scalar" name="contour_opacity" value="1"/>
+        <opacity_texture file="units/transparent_op"/>
+        <variable type="scalar" name="contour_distance" value="0"/>
+    </material>
+    <material render_template="effect:DIFFUSE0_TEXTURE:VIEW_ANGLE_FALLOFF_OP" name="hud_brackets1" version="2">
+        <diffuse_texture file="units/gui/gui_brackets_df"/>
+        <variable type="scalar" name="intensity" value="identity"/>
+        <variable type="scalar" name="falloff_exp" value="1"/> 
+    </material>
+    <material render_template="effect:DIFFUSE0_TEXTURE:VIEW_ANGLE_FALLOFF_OP" name="mtr_lockpick1" version="2">
+        <diffuse_texture file="units/gui/lockpick_indicator_df"/>
+        <variable type="scalar" name="intensity" value="identity"/>
+        <variable type="scalar" name="falloff_exp" value="1"/>
+    </material>
+    <material unique="true" render_template="generic:ALPHA_MASKED:CONTOUR:DIFFUSE_TEXTURE:OPACITY_TEXTURE" name="mat_contour1" version="2">
+        <diffuse_texture file="units/white_df"/>
+        <variable type="vector3" name="contour_color" value="0 1 0"/>
+        <variable type="scalar" name="contour_opacity" value="1"/>
+        <opacity_texture file="units/transparent_op"/>
+    </material>
+    <material render_template="effect:DIFFUSE0_TEXTURE:DIFFUSE0_UVANIM:VIEW_ANGLE_FALLOFF_OP" name="mtr_saw1" version="2">
+        <diffuse_texture file="units/gui/sawblade_indicator_df"/>
+        <variable type="scalar" name="intensity" value="identity"/>
+        <variable type="scalar" name="falloff_exp" value="2"/>
+        <variable type="vector3" name="uv0_speed" value="3 0 0"/>
+    </material>
+    <material render_template="shadow_caster_only" name="shadow_caster" version="2"/>
+</materials>

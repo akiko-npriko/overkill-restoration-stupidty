@@ -1,0 +1,35 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_casino/props/cas_bedroom_door/cas_bedroom_door" orientation_object="rp_door_debris" />
+	<bodies>
+		<body name="body_debris_01" enabled="true" template="debris">
+			<object name="c_convex_01" collision_type="convex" padding="-2.5" material="wood" />
+		</body>
+		<body name="body_debris_02" enabled="true" template="debris">
+			<object name="c_convex_02" collision_type="convex" padding="-2.5" material="wood" />
+		</body>
+		<body name="body_debris_03" enabled="true" template="debris">
+			<object name="c_convex_03" collision_type="convex" padding="-2.5" material="wood" />
+		</body>
+		<body name="body_debris_04" enabled="true" template="debris">
+			<object name="c_convex_04" collision_type="convex" padding="-2.5" material="wood" />
+		</body>
+	</bodies>
+	<graphics>
+		<lod_object name="lod_g_debris_01">
+			<object name="g_debris_01_lod0" enabled="true" max_distance="1500" />
+			<object name="g_debris_01_lod1" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_g_debris_02">
+			<object name="g_debris_02_lod0" enabled="true" max_distance="1500" />
+			<object name="g_debris_02_lod1" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_g_debris_03">
+			<object name="g_debris_03_lod0" enabled="true" max_distance="1500" />
+			<object name="g_debris_03_lod1" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_g_debris_04">
+			<object name="g_debris_04_lod0" enabled="true" max_distance="1500" />
+			<object name="g_debris_04_lod1" enabled="true" />
+		</lod_object>
+	</graphics>
+</dynamic_object>

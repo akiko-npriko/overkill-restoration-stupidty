@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<dynamic_object>
+  <diesel materials="units/world/props/apartment/microscope/microscope" orientation_object="rp_microscope" />
+  <bodies>
+    <body name="static_body" enabled="true" template="static">
+      <object name="c_microscope" collision_type="box" />
+    </body>
+  </bodies>
+  
+  <decal_surfaces static="true" default_material="metal">
+  </decal_surfaces>
+  
+  <graphics>
+    <object name="g_microscope" enabled="true" />
+  </graphics>
+</dynamic_object>

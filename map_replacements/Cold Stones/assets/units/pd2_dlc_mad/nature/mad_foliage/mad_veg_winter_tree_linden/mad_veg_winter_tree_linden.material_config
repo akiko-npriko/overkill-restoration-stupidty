@@ -1,0 +1,20 @@
+<materials version="3">
+    <material name="mat_tree_linden" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:INSTANCED:NORMALMAP:OPACITY_TEXTURE:VEGETATION_BENDING" version="2">
+        <diffuse_texture file="units/pd2_dlc_mad/nature/mad_foliage/mad_veg_winter_tree_linden/mad_veg_winter_tree_linden_df"/>
+        <bump_normal_texture file="units/pd2_dlc_mad/nature/mad_foliage/mad_veg_winter_tree_linden/mad_veg_winter_tree_linden_nm"/>
+        <variable value="0.5" type="scalar" name="alpha_ref"/>
+        <opacity_texture file="units/pd2_dlc_mad/nature/mad_foliage/mad_veg_winter_tree_linden/mad_veg_winter_tree_linden_op"/>
+        <variable value="0.9" type="scalar" name="speed"/>
+        <variable value="7 0.10000000149012 0" type="vector3" name="detail_settings"/>
+        <variable value="1 1 0" type="vector3" name="branch_settings"/>
+    </material>
+    <material name="mat_tree_linden_lod" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:INSTANCED:NORMALMAP:OPACITY_TEXTURE:VEGETATION_BENDING" version="2">
+        <diffuse_texture mip="2" file="units/pd2_dlc_mad/nature/mad_foliage/mad_veg_winter_tree_linden/mad_veg_winter_tree_linden_df"/>
+        <bump_normal_texture mip="2" file="units/pd2_dlc_mad/nature/mad_foliage/mad_veg_winter_tree_linden/mad_veg_winter_tree_linden_nm"/>
+        <variable value="0.5" type="scalar" name="alpha_ref"/>
+        <opacity_texture file="units/pd2_dlc_mad/nature/mad_foliage/mad_veg_winter_tree_linden/mad_veg_winter_tree_linden_op"/>
+        <variable value="0.9" type="scalar" name="speed"/>
+        <variable value="7 0.10000000149012 0" type="vector3" name="detail_settings"/>
+        <variable value="1 1 0" type="vector3" name="branch_settings"/>
+    </material>
+</materials>

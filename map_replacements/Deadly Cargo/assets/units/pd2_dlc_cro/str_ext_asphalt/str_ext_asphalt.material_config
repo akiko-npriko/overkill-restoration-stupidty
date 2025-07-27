@@ -1,0 +1,26 @@
+<materials version="3">
+	<material name="floor" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_cro/str_ext_asphalt/floor_01_textures_df"/>
+		<bump_normal_texture file="units/pd2_dlc_cro/str_ext_asphalt/floor_01_textures_nm"/>
+	</material>
+	<material version="2" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:NORMALMAP:OPACITY_TEXTURE:VERTEX_COLOR" name="mat_motel_edge">
+		<diffuse_texture file="units/pd2_dlc1/architecture/res_ext_motel/res_ext_motel_edge_df"/>
+		<bump_normal_texture file="units/pd2_dlc1/architecture/res_ext_motel/res_ext_motel_edge_nm"/>
+		<opacity_texture file="units/pd2_dlc1/architecture/res_ext_motel/res_ext_motel_edge_mask_op"/>
+		<variable value="0.58300000429153" type="scalar" name="alpha_ref"/>
+	</material>
+	<material name="mat_motel_edge_02" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:NORMALMAP:OPACITY_TEXTURE:VERTEX_COLOR" version="2">
+		<diffuse_texture file="units/pd2_dlc1/architecture/res_ext_motel/res_ext_motel_edge_02_df"/>
+		<bump_normal_texture file="units/pd2_dlc1/architecture/res_ext_motel/res_ext_motel_edge_02_nm"/>
+		<opacity_texture file="units/pd2_dlc1/architecture/res_ext_motel/res_ext_motel_edge_02_mask_op"/>
+		<variable value="0.58300000429153" type="scalar" name="alpha_ref"/>
+	</material>
+	<material name="mat_docks_ground_v2" render_template="generic:BLEND_DIFFUSE:BLEND_MASK_SEPERATE:BLEND_NORMAL:BLEND_SMOOTH:DIFFUSE_TEXTURE:NORMALMAP:RL_CORE_ENVIRONMENT:VERTEX_COLOR" version="2">
+		<diffuse_texture file="units/payday2/architecture/ind/ind_ext_docks_ground_b_df"/>
+		<diffuse_layer0_texture file="units/pd2_dlc_cro/str_ext_asphalt/floor_01_textures_df"/>
+		<diffuse_layer1_texture file="units/payday2/architecture/ind/ind_ext_docks_pavement_mask_df"/>
+		<bump_normal_texture file="units/payday2/architecture/ind/ind_ext_docks_ground_b_nm"/>
+		<normal_layer0_texture file="units/pd2_dlc_cro/str_ext_asphalt/floor_01_textures_nm"/>
+	</material>
+	<material name="shadow_caster" render_template="shadow_caster_only" version="2"/>
+</materials>

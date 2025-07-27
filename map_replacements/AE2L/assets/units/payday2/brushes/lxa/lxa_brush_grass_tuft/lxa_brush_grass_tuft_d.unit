@@ -1,0 +1,13 @@
+<unit type="brush" slot="29" >
+	
+	<object file="units/payday2/brushes/lxa/lxa_brush_grass_tuft/lxa_brush_grass_tuft_d" />
+	
+	<mass>
+		<spawn in="2500" method="pool" out="2750" />
+	</mass>	
+
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+	</extensions>
+	
+</unit>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<unit type="dah" slot="1">
+<network sync="spawn"/>
+<object file="units/pd2_dlc_dah/architecture/dah_windows/dah_int_window_02" />
+	
+	<dependencies>
+		<depends_on effect="effects/particles/window/bank_entrance_window_lobby_railing"/>
+		<depends_on bnk="soundbanks/effects"/>
+	</dependencies>
+	
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData"/>
+		<extension name="damage" class="UnitDamage"/>
+		<extension name="attention" class="AIAttentionObject" />
+	</extensions>
+	
+
+</unit>

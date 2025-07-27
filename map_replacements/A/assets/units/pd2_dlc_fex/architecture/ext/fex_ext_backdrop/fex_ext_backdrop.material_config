@@ -1,0 +1,56 @@
+<materials version="3">
+    <material render_template="generic:DIFFUSE_TEXTURE:VERTEX_COLOR" name="mat_backdrop" version="2">
+        <diffuse_texture file="units/pd2_dlc_fex/architecture/ext/fex_ext_backdrop/fex_ext_backdrop_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_backdrop_mountains" version="2">
+        <diffuse_texture file="units/pd2_dlc_fex/architecture/ext/fex_ext_backdrop/fex_ext_backdrop_mountains_df"/>
+        <bump_normal_texture file="units/pd2_dlc_fex/architecture/ext/fex_ext_backdrop/fex_ext_backdrop_mountains_nm" mip="1"/>
+    </material>
+    <material render_template="water" name="mat_water" version="2">
+        <diffuse_texture file="units/pd2_dlc_bph/props/bph_prop_waveplane/foam_tile_df"/>
+        <variable type="vector3" name="water_settings_c" value="0.1296000033617 0.62629997730255 0"/>
+        <variable type="vector3" name="water_settings_b" value="0.0049999998882413 0.0049999998882413 1.2094999551773"/>
+        <bump_normal_texture file="units/world/water/water_nm"/>
+        <variable type="vector3" name="water_settings_d" value="36 68 0.4190000295639"/>
+        <variable type="vector3" name="water_color_shallow" value="0.33959248661995 0.36961171030998 0.47843137383461"/>
+        <variable type="vector3" name="water_settings" value="5.5999999046326 0 0"/>
+        <reflection_texture file="environments/cubemaps/cubemap_fex_sky" type="cubemap"/>
+        <variable type="vector3" name="water_color_deep" value="0.50588238239288 1 0.96862751245499"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_cliff" version="2">
+        <diffuse_texture file="units/pd2_dlc_fex/architecture/ext/fex_ext_backdrop/fex_ext_cliff_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_fex/architecture/ext/fex_ext_backdrop/fex_ext_cliff_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_fex/architecture/ext/fex_ext_backdrop/fex_ext_cliff_gsma" mip="2"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_ground_near" version="2">
+        <diffuse_texture file="units/payday2/architecture/str_ext_park_ground/str_ext_park_ground_grass_xy_df"/>
+        <bump_normal_texture file="units/payday2/architecture/str_ext_park_ground/str_ext_park_ground_grass_xy_nm"/>
+    </material>
+    <material render_template="generic:BLEND_DIFFUSE:BLEND_MASK_CONTROL:BLEND_NORMAL:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_road" version="2">
+        <diffuse_texture file="units/pd2_dlc_bex/architecture/ext/ext_textures/bex_ext_gravel_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_bex/architecture/ext/ext_textures/bex_ext_gravel_nm" mip="2"/>
+        <material_texture file="units/pd2_dlc_bex/architecture/ext/ext_textures/bex_ext_gravel_gsma" mip="2"/>
+        <diffuse_layer0_texture file="units/pd2_dlc_fex/architecture/ext/fex_ext_backdrop/fex_ext_road_dirt_df"/>
+        <variable type="vector3" name="blend_control" value="0.58999997377396 0.40000000596046 0"/>
+        <normal_layer0_texture file="units/pd2_dlc_bex/architecture/ext/ext_textures/bex_plaster_clean_nm"/>
+    </material>
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:GSMA_TEXTURE:RL_BACKDROP" name="mat_trees_backdrop" version="2">
+        <diffuse_texture file="units/pd2_dlc_fex/architecture/ext/fex_ext_backdrop/fex_ext_trees_backdrop_df" mip="1"/>
+        <material_texture file="units/pd2_dlc_fex/architecture/ext/fex_ext_backdrop/fex_ext_trees_backdrop_gsma"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_planters_outside" version="2">
+        <diffuse_texture file="units/pd2_dlc_fex/architecture/ext/fex_ext_front_courtyard/fex_ext_stone_wall_irregular_02_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_bex/architecture/ext/ext_textures/bex_ext_stone_wall_irregular_02_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_bex/architecture/ext/ext_textures/bex_ext_stone_wall_irregular_02_gsma" mip="2"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_ext_trims" version="2">
+        <diffuse_texture file="units/pd2_dlc_bex/architecture/ext/ext_textures/bex_ext_flat_stone_df"/>
+        <bump_normal_texture file="units/pd2_dlc_bex/architecture/ext/ext_textures/bex_ext_flat_stone_nm"/>
+        <material_texture file="units/pd2_dlc_bex/architecture/ext/ext_textures/bex_ext_flat_stone_gsma" mip="1"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_wood_planks" version="2">
+        <diffuse_texture file="units/pd2_dlc_sah/tiling_textures/sah_old_planks/sah_old_planks_df"/>
+        <bump_normal_texture file="units/pd2_dlc_sah/tiling_textures/sah_old_planks/sah_old_planks_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_sah/tiling_textures/sah_old_planks/sah_old_planks_gsma" mip="2"/>
+    </material>
+</materials>

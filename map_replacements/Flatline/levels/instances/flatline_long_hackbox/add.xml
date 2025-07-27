@@ -1,0 +1,13 @@
+<table directory="assets">
+	<add from_db="true" path="units/pd2_dlc_dah/props/dah_prop_hack_box/dah_prop_hack_ipad_unit" type="unit">
+		<unit path="units/pd2_dlc_dah/props/dah_prop_hack_box/dah_prop_hack_ipad_unit" unload="true"/>
+		<object path="units/pd2_dlc_dah/props/dah_prop_hack_box/dah_prop_hack_ipad_unit" unload="true"/>
+		<material_config path="units/pd2_dlc_dah/props/dah_prop_hack_box/dah_prop_hack_box" unload="true"/>
+		<sequence_manager path="units/pd2_dlc_dah/props/dah_prop_hack_box/dah_prop_hack_ipad_unit" unload="true"/>
+		<gui path="guis/timer_gui" unload="true"/>
+		<bnk path="soundbanks/hacking_device" unload="true"/>
+		<bnk path="soundbanks/regular_sfx" unload="true"/>
+		<effect load="true" path="effects/particles/equipment/vault_drill/drill_active" unload="true"/>
+		<effect load="true" path="effects/particles/equipment/vault_drill/drill_jammed" unload="true"/>
+	</add>
+</table>

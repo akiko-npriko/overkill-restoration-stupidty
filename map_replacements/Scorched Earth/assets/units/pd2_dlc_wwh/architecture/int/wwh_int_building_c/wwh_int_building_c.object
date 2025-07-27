@@ -1,0 +1,51 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_wwh/architecture/int/wwh_int_building_c/wwh_int_building_c" orientation_object="rp_wwh_int_building_c" />
+	<sequence_manager file="units/pd2_dlc_wwh/architecture/int/wwh_int_building_c/wwh_int_building_c" />
+	<bodies>
+		<body name="c_always" enabled="true" template="static">
+			<object name="rp_wwh_int_building_c" />			
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+			<object name="c_box_04" collision_type="box" padding="-2.5" />
+			<object name="c_box_05" collision_type="box" padding="-2.5" />
+			<object name="c_box_06" collision_type="box" padding="-2.5" />
+			<object name="c_box_07" collision_type="box" padding="-2.5" />
+			<object name="c_box_08" collision_type="box" padding="-2.5" />
+			<object name="c_box_09" collision_type="box" padding="-2.5" />
+			<object name="c_box_10" collision_type="box" padding="-2.5" />
+			<object name="c_box_11" collision_type="box" padding="-2.5" />
+			<object name="c_box_12" collision_type="box" padding="-2.5" />
+			<object name="c_box_13" collision_type="box" padding="-2.5" />
+			<object name="c_box_14" collision_type="box" padding="-2.5" />
+			<object name="c_box_15" collision_type="box" padding="-2.5" />
+			<object name="c_box_16" collision_type="box" padding="-2.5" />
+			<object name="c_box_17" collision_type="box" padding="-2.5" />
+			<object name="c_box_18" collision_type="box" padding="-2.5" />
+			<object name="c_box_19" collision_type="box" padding="-2.5" />
+			<object name="c_box_20" collision_type="box" padding="-2.5" />
+			<object name="c_box_21" collision_type="box" padding="-2.5" />
+			<object name="c_box_22" collision_type="box" padding="-2.5" />
+			<object name="c_box_23" collision_type="box" padding="-2.5" />
+			<object name="c_box_24" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="c_random" enabled="true" template="static">
+			<object name="rp_wwh_int_building_c" />
+			<object name="c_box_random" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="wood">
+		<decal_mesh name="dm_sheet_metal" enabled="true" material="sheet_metal" />
+		<decal_mesh name="dm_sheet_metal_random" enabled="true" material="sheet_metal" />
+		<decal_mesh name="dm_steel" enabled="true" material="steel" />
+		<decal_mesh name="dm_wood" enabled="true" material="wood" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_floor" enabled="true" />
+		<object name="g_roof" enabled="true" />
+		<object name="g_metal_beams" enabled="true" />
+		<object name="g_random_door" enabled="true" />
+		<object name="g_walls" enabled="true" />
+		<object name="g_walls_2" enabled="true" />
+	</graphics>
+</dynamic_object>

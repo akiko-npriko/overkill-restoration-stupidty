@@ -1,0 +1,143 @@
+<materials version="3">
+    <material name="shadow_caster" render_template="shadow_caster_only" version="2"/>
+    <material name="glass_shards" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE" version="2">
+        <variable value="2 1 0.59999996423721" type="vector3" name="fresnel_settings"/>
+        <opacity_texture file="units/world/architecture/suburbia/glass_shards_op"/>
+        <diffuse_texture file="units/world/architecture/suburbia/glass_shards_df"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+    </material>
+    <material name="wood_splinters" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF" version="2">
+        <diffuse_texture file="units/world/architecture/suburbia/wood_splinters_df"/>
+        <variable value="0.02900000102818" type="scalar" name="alpha_ref"/>
+    </material>
+    <material name="mat_speaker" render_template="generic:DIFFUSE_TEXTURE:VERTEX_COLOR" version="2">
+        <diffuse_texture file="units/world/props/diamond_heist/apartment/apartment_livingroom/tv_speaker/tv_speaker_df"/>
+    </material>
+    <material name="table" render_template="generic:DIFFUSE_TEXTURE" version="2">
+        <diffuse_texture file="units/world/props/table_suburbia/table_suburbia_df"/>
+    </material>
+    <material name="mtr_suburbia_hole" render_template="generic:DIFFUSE_TEXTURE:VERTEX_COLOR" version="2">
+        <diffuse_texture file="units/world/architecture/suburbia/suburbia_house2_crash_event_df"/>
+    </material>
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:DOUBLE_SIDED:EXTERNAL_ALPHA_REF" version="2" name="flower">
+        <diffuse_texture file="units/world/props/yacht/flowers/lxy_prop_flower_vase_master_df"/>
+        <variable value="0.019999999552965" type="scalar" name="alpha_ref"/>
+    </material>
+    <material version="2" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" name="mtr_lxy_prop_ext_chair_deck">
+        <bump_normal_texture file="units/world/props/yacht/chair_deck/lxy_prop_ext_chair_deck_nm"/>
+        <diffuse_texture file="units/world/props/yacht/chair_deck/lxy_prop_ext_chair_deck_df"/>
+    </material>
+    <material name="dmg_glass_instanced" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:NORMALMAP:OPACITY_FADE" version="2">
+        <variable value="2 1 0.59999996423721" type="vector3" name="fresnel_settings"/>
+        <opacity_texture file="units/vehicles/window/glass_shattered_2_op"/>
+        <diffuse_texture file="units/vehicles/window/glass_shattered_df"/>
+        <reflection_texture type="cubemap" global_texture="current_global_texture"/>
+        <bump_normal_texture file="units/vehicles/window/glass_shattered_nm"/>
+        <variable value="10 4000 0" type="vector3" name="opacity_fade"/>
+    </material>
+    <material name="glass_instanced" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:OPACITY_FADE" version="2">
+        <variable value="1 0 0.5" type="vector3" name="fresnel_settings"/>
+        <opacity_texture file="units/payday2/glass/glass_clear_default_op"/>
+        <diffuse_texture file="units/payday2/glass/glass_clear_default_df"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <variable value="5000 4000 0" type="vector3" name="opacity_fade"/>
+    </material>
+    <material name="wood" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" version="2">
+        <diffuse_texture file="units/world/architecture/suburbia/textures/wood_df"/>
+        <bump_normal_texture file="units/world/architecture/suburbia/textures/wood_nm"/>
+    </material>
+    <material name="interior" render_template="generic:DIFFUSE_TEXTURE:VERTEX_COLOR" version="2">
+        <diffuse_texture file="units/world/architecture/suburbia/textures/wallpaper_df"/>
+    </material>
+    <material version="2" src="GLOBAL" name="stn_vehicle_truck" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP:RL_BIGPROPS:VERTEX_COLOR:VERTEX_COLOR_ALPHA">
+        <diffuse_texture file="units/vehicles/police_armored_truck/police_armored_truck_df"/>
+        <bump_normal_texture file="units/vehicles/police_armored_truck/police_armored_truck_nm"/>
+        <reflection_texture type="cubemap" global_texture="current_global_texture"/>
+    </material>
+    <material render_template="decal:DIFFUSE_TEXTURE" src="GLOBAL" name="logo" version="2">
+        <diffuse_texture file="units/vehicles/police_armored_truck/logo_df"/>
+    </material>
+    <material name="champagne_glass" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE" version="2">
+        <variable value="0.1499999910593 0.87999999523163 0.9099999666214" type="vector3" name="fresnel_settings"/>
+        <opacity_texture file="units/payday2/glass/glass_clear_vehicle_op"/>
+        <diffuse_texture file="units/payday2/glass/glass_clear_vehicle_df"/>
+        <reflection_texture type="cubemap" global_texture="current_global_texture"/>
+    </material>
+    <material name="fence" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:NORMALMAP" version="2">
+        <diffuse_texture file="units/world/props/shared_textures/fence_tile_df"/>
+        <bump_normal_texture file="units/world/props/shared_textures/fence_tile_nm"/>
+        <variable value="0.053000003099442" type="scalar" name="alpha_ref"/>
+    </material>
+    <material name="door_instanced" render_template="generic:DIFFUSE_TEXTURE" version="2">
+        <diffuse_texture file="units/world/props/door_suburban_01/door_suburbua_df"/>
+    </material>
+    <material version="2" name="bottle_1" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE">
+        <diffuse_texture file="units/world/props/bottle/bottle_1_df"/>
+        <reflection_texture type="cubemap" global_texture="current_global_texture"/>
+        <variable value="3.2999999523163 0.27400001883507 0.69999998807907" type="vector3" name="environment_settings"/>
+    </material>
+    <material version="2" name="bottle_2" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE">
+        <diffuse_texture file="units/world/props/bottle/bottle_2_df"/>
+        <reflection_texture type="cubemap" global_texture="current_global_texture"/>
+        <variable value="4.8000001907349 0.30000001192093 0.69999998807907" type="vector3" name="environment_settings"/>
+    </material>
+    <material name="cutlery" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:NORMALMAP" version="2">
+        <bump_normal_texture file="units/world/props/mansion/man_prop_int_cutlery/man_int_prop_cutlery_nm"/>
+        <diffuse_texture file="units/world/props/mansion/man_prop_int_cutlery/man_int_prop_cutlery_df"/>
+        <variable value="0.5" type="scalar" name="alpha_ref"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" version="2" name="painting_25">
+        <diffuse_texture file="units/world/props/bank/paintings/textures/painting_25_df"/>
+    </material>
+    <material name="glass" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE" version="2">
+        <opacity_texture file="units/world/props/bank/paintings/textures/glass_op"/>
+        <diffuse_texture file="units/world/props/bank/paintings/textures/glass_df"/>
+        <reflection_texture type="cubemap" global_texture="current_global_texture"/>
+    </material>
+    <material name="suburbia_fence" render_template="generic:DIFFUSE_TEXTURE" version="2">
+        <diffuse_texture file="units/world/props/fence_suburbia/fence_suburbia_df"/>
+    </material>
+    <material name="hedge_buxbom" version="2" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:DOUBLE_SIDED:EXTERNAL_ALPHA_REF:NORMALMAP">
+        <bump_normal_texture file="units/world/props/hedge_buxbom/hedge_buxbom_nm"/>
+        <diffuse_texture file="units/world/props/hedge_buxbom/hedge_buxbom_df"/>
+        <variable value="0.070000000298023" type="scalar" name="alpha_ref"/>
+    </material>
+    <material name="glass_breakable" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE" version="2">
+        <variable value="0 1 0.59999996423721" type="vector3" name="fresnel_settings"/>
+        <opacity_texture file="units/payday2/glass/glass_clear_vehicle_dark_op"/>
+        <diffuse_texture file="units/payday2/glass/glass_clear_vehicle_dark_b_df"/>
+        <reflection_texture type="cubemap" global_texture="current_global_texture"/>
+    </material>
+    <material render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE" name="glass_shattered" version="2">
+        <variable value="2 1 0.59999996423721" type="vector3" name="fresnel_settings"/>
+        <opacity_texture file="units/vehicles/window/glass_shattered_2_op"/>
+        <diffuse_texture file="units/vehicles/window/glass_shattered_df"/>
+        <reflection_texture type="cubemap" global_texture="current_global_texture"/>
+    </material>
+    <material version="2" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:NORMALMAP" name="glass_shattered_dark">
+        <variable value="2 1 0.59999996423721" type="vector3" name="fresnel_settings"/>
+        <opacity_texture file="units/payday2/glass/glass_clear_vehicle_dark_op"/>
+        <diffuse_texture file="units/vehicles/window/glass_shattered_dark_df"/>
+        <reflection_texture type="cubemap" global_texture="current_global_texture"/>
+        <bump_normal_texture file="units/vehicles/window/glass_shattered_nm"/>
+    </material>
+    <material name="apc" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/payday2/vehicles/gen_vehicle_truck_fbi/gen_vehicle_truck_fbi_df"/>
+        <bump_normal_texture file="units/payday2/vehicles/gen_vehicle_truck_fbi/gen_vehicle_truck_fbi_nm"/>
+    </material>
+    <material name="mtr_illumination" render_template="generic:DIFFUSE_TEXTURE:SELF_ILLUMINATION" version="2">
+        <diffuse_texture file="units/payday2/vehicles/gen_vehicle_truck_fbi/gen_vehicle_truck_fbi_df"/>
+        <self_illumination_texture file="units/payday2/weapons/wpn_effects_textures/wpn_effect_flashlight_il"/>
+        <variable value="searchlight" type="scalar" name="il_multiplier"/>
+    </material>
+    <material name="net" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:DOUBLE_SIDED:EXTERNAL_ALPHA_REF:NORMALMAP" version="2">
+        <diffuse_texture file="units/world/props/shared_textures/fence_tile_df"/>
+        <bump_normal_texture file="units/world/props/shared_textures/fence_tile_nm"/>
+        <variable value="0.053000003099442" type="scalar" name="alpha_ref"/>
+    </material>
+    <material version="2" decal_material="sheet_metal" name="cone_light" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:DOUBLE_SIDED:VIEW_ANGLE_FALLOFF_OP">
+        <diffuse_texture file="units/world/street/street_lights/cone_light_df"/>
+        <variable value="2" type="scalar" name="falloff_exp"/>
+        <variable value="identity" type="scalar" name="intensity"/>
+    </material>
+</materials>

@@ -1,0 +1,61 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_casino/props/cas_prop_security_door/cas_prop_security_door" orientation_object="rp_cas_prop_security_door" />
+	<sequence_manager file="units/pd2_dlc_casino/props/cas_prop_security_door/cas_prop_security_door" />
+
+	<animations>
+		<animation_group name="grp_anim_door" enabled="false">
+			<object name="anim_door" />
+		</animation_group>
+	</animations>
+
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_cas_prop_security_door" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+			<object name="c_box_04" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_anim_door" enabled="true" template="animated">
+			<object name="anim_door" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_lock" enabled="false" template="static">
+			<object name="rp_cas_prop_security_door" />
+			<object name="c_lock" collision_type="box" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="wood">
+		<decal_mesh name="dm_wood_02" enabled="true" material="wood" />
+		<decal_mesh name="dm_wood_1" enabled="true" material="wood" />
+	</decal_surfaces>
+	<graphics>
+		<graphic_group name="grp_door" enabled="true" culling_object="co_box">
+			<lod_object name="lod_g_m_door">
+				<object name="g_m_door_lod0" enabled="true" max_distance="5000" />
+				<object name="g_m_door_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+		<graphic_group name="grp_door_shot" enabled="false" culling_object="co_box">
+			<lod_object name="lod_g_shot_door">
+				<object name="g_dmg_shot_door" enabled="true" max_distance="5000" />
+				<object name="g_m_door_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+		<graphic_group name="grp_door_saw" enabled="false" culling_object="co_box">
+			<lod_object name="lod_g_saw_door">
+				<object name="g_dmg_saw_door" enabled="true" max_distance="5000" />
+				<object name="g_m_door_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+		<lod_object name="lod_g_m_frame">
+			<object name="g_m_frame_lod0" enabled="true" max_distance="5000" />
+			<object name="g_m_frame_lod1" enabled="true" />
+		</lod_object>
+		<graphic_group name="grp_icon" enabled="false" >
+			<lod_object name="lod_g_icon">
+				<object name="g_icon_lod0" enabled="true" max_distance="450" />
+				<object name="g_icon_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+	</graphics>
+</dynamic_object>

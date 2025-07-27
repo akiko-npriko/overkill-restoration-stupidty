@@ -1,0 +1,19 @@
+<dynamic_object>
+	<diesel materials="units/pd2_indiana/architecture/int/mus_int" orientation_object="rp_mus_int_hall_b_door_double" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_mus_int_hall_b_door_double" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+			<object name="c_box_04" collision_type="box" padding="-2.5" />
+			<object name="c_box_05" collision_type="box" padding="-2.5" />
+			<object name="c_box_06" collision_type="box" padding="-2.5" />
+			<object name="c_box_07" collision_type="box" padding="-2.5" />
+			<object name="c_box_08" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<graphics>
+		<object name="g_g" enabled="true" />
+		<object name="s_s" enabled="true" shadow_caster="true" />
+	</graphics>
+</dynamic_object>

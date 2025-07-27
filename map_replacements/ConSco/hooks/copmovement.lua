@@ -1,0 +1,26 @@
+CopMovement._action_variants.constantine_backup = CopMovement._action_variants.drug_lord_boss_stealth
+CopMovement._action_variants.mobster_ttr_vip = CopMovement._action_variants.drug_lord_boss_stealth
+CopMovement._action_variants.mobster_ttr_clubowner = CopMovement._action_variants.drug_lord_boss
+CopMovement._action_variants.mobster_ttr_enforcer = CopMovement._action_variants.drug_lord_boss
+CopMovement._action_variants.mobster_ttr_securityclub = CopMovement._action_variants.drug_lord_boss
+CopMovement._action_variants.ttr_friendly = CopMovement._action_variants.city_swat
+CopMovement._action_variants.ttr_captain_tank = CopMovement._action_variants.city_swat
+
+
+CopMovement._action_variants.cartel_tazer = CopMovement._action_variants.city_swat
+
+
+CopMovement._action_variants.agent_ttr_swat = CopMovement._action_variants.city_swat
+
+CopMovement._action_variants.ttr_civilian_noflee = CopMovement._action_variants.bank_manager
+
+
+CopMovement._action_variants.ttr_civilian_noflee_female = CopMovement._action_variants.bank_manager
+
+CopMovement._action_variants.cartel_grenadier = CopMovement._action_variants.drug_lord_boss
+
+
+CopMovement._action_variants.cartel_grenadier_fire = CopMovement._action_variants.drug_lord_boss
+
+CopMovement._action_variants.cartel_commando = CopMovement._action_variants.medic
+

@@ -1,0 +1,15 @@
+<unit type="lxy" slot="1">
+	<network sync="spawn"/>
+	<object file="units/pd2_dlc_fish/props/lxy_prop_server_rack_1/lxy_prop_server_rack_2" />
+	<dependencies>
+		<depends_on bnk="soundbanks/regular_sfx" />
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+	</extensions>
+	<sounds>
+		<default_soundsource source="rp_lxy_prop_server_rack_2"/>
+		<soundsource name="snd" source="sound_source" />
+	</sounds>
+</unit>

@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/payday2/equipment/glb_interactable_thermite/glb_interactable_thermite" orientation_object="rp_gen_interactable_thermite" />
+	<sequence_manager file="units/payday2/equipment/glb_interactable_thermite/glb_interactable_thermite" />
+	<animations>
+		<animation_group name="anim_falling_piece">
+			<object name="a_piece_1" />
+			<object name="a_piece_2" />
+			<object name="a_piece_3" />
+			<object name="a_piece_4" />
+		</animation_group>
+	</animations>
+	<bodies>
+	    <body       name="body_piece_1" enabled="true" template="animated" >
+            <object     name="c_convex_1" collision_type="convex" />
+        </body>
+        <body           name="body_piece_2" enabled="true" template="animated" >
+            <object     name="c_convex_2" collision_type="convex" />
+        </body>
+        <body           name="body_piece_3" enabled="true" template="animated" >
+            <object     name="c_convex_3" collision_type="convex" />
+        </body>
+        <body           name="body_piece_4" enabled="true" template="animated" >
+            <object     name="c_convex_4" collision_type="convex" />
+        </body>
+		
+		<body name="body_floor_whole" enabled="true" template="static">
+			<object name="rp_gen_interactable_thermite" />
+			<object name="c_box_floor_whole" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_thermite_frame" enabled="false" template="static">
+			<object name="rp_gen_interactable_thermite" />
+			<object name="c_box_thermite_frame_1" collision_type="box" padding="-2.5" />
+			<object name="c_box_thermite_frame_2" collision_type="box" padding="-2.5" />
+			<object name="c_box_thermite_frame_3" collision_type="box" padding="-2.5" />
+			<object name="c_box_thermite_frame_4" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_floor_melted" enabled="false" template="static">
+			<object name="rp_gen_interactable_thermite" />
+			<object name="c_box_floor_melted_1" collision_type="box" padding="-2.5" />
+			<object name="c_box_floor_melted_2" collision_type="box" padding="-2.5" />
+			<object name="c_box_floor_melted_3" collision_type="box" padding="-2.5" />
+			<object name="c_box_floor_melted_4" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces>
+		<decal_mesh name="dm_thermite_frame" 	enabled="true" material="steel" />
+		<decal_mesh name="g_floor_whole" 		enabled="true" material="marble" />
+		<decal_mesh name="g_floor_melted" 		enabled="false" material="marble" />
+	</decal_surfaces>
+	
+	<graphics>
+		<object name="g_floor_whole" 		enabled="true"/>
+		<object name="g_floor_melted" 		enabled="false"/>
+		<object name="g_floor_melted_il" 	enabled="false"/>
+		<object name="g_dirt_plane" 		enabled="false"/>
+		<object name="g_fuse" 				enabled="false"/>
+			
+		<graphic_group name="falling_pieces" enabled="false">
+			<object name="g_piece_1" 	enabled="true"/>
+			<object name="g_piece_2" 	enabled="true"/>
+			<object name="g_piece_3" 	enabled="true"/>
+			<object name="g_piece_4" 	enabled="true"/>
+		</graphic_group>
+		
+		<graphic_group name="thermite_packed_blocks"	enabled="false">
+			<object name="g_thermite_packed_block_1" 	enabled="true"/>
+			<object name="g_thermite_packed_block_2" 	enabled="true"/>
+			<object name="g_thermite_packed_block_3" 	enabled="true"/>
+			<object name="g_thermite_packed_block_4" 	enabled="true"/>
+			<object name="g_thermite_packed_block_5" 	enabled="true"/>
+			<object name="g_thermite_packed_block_6" 	enabled="true"/>
+			<object name="g_thermite_packed_block_7" 	enabled="true"/>
+			<object name="g_thermite_packed_block_8" 	enabled="true"/>
+			<object name="g_thermite_packed_block_9" 	enabled="true"/>
+			<object name="g_thermite_packed_block_10" 	enabled="true"/>
+			<object name="g_thermite_packed_block_11" 	enabled="true"/>
+			<object name="g_thermite_packed_block_12" 	enabled="true"/>
+			<object name="g_thermite_packed_block_13" 	enabled="true"/>
+			<object name="g_thermite_packed_block_14" 	enabled="true"/>
+			<object name="g_thermite_packed_block_15" 	enabled="true"/>
+			<object name="g_thermite_packed_block_16" 	enabled="true"/>
+			<object name="g_thermite_packed_block_17" 	enabled="true"/>
+			<object name="g_thermite_packed_block_18" 	enabled="true"/>
+		</graphic_group>
+
+		<graphic_group name="thermite_melted_blocks" enabled="true">
+			<object name="g_thermite_melted_block_1" 	enabled="false"/>
+			<object name="g_thermite_melted_block_2" 	enabled="false"/>
+			<object name="g_thermite_melted_block_3" 	enabled="false"/>
+			<object name="g_thermite_melted_block_4" 	enabled="false"/>
+			<object name="g_thermite_melted_block_5" 	enabled="false"/>
+			<object name="g_thermite_melted_block_6" 	enabled="false"/>
+			<object name="g_thermite_melted_block_7" 	enabled="false"/>
+			<object name="g_thermite_melted_block_8" 	enabled="false"/>
+			<object name="g_thermite_melted_block_9" 	enabled="false"/>
+			<object name="g_thermite_melted_block_10" 	enabled="false"/>
+			<object name="g_thermite_melted_block_11" 	enabled="false"/>
+			<object name="g_thermite_melted_block_12" 	enabled="false"/>
+			<object name="g_thermite_melted_block_13" 	enabled="false"/>
+			<object name="g_thermite_melted_block_14" 	enabled="false"/>
+			<object name="g_thermite_melted_block_15" 	enabled="false"/>
+			<object name="g_thermite_melted_block_16" 	enabled="false"/>
+			<object name="g_thermite_melted_block_17" 	enabled="false"/>
+			<object name="g_thermite_melted_block_18" 	enabled="false"/>
+		</graphic_group>
+
+		<graphic_group name="icon" 	enabled="false" culling_object="g_icon">
+			<lod_object name="icon_lod">
+					<object name="g_icon" 		enabled="true"  max_distance="450"  max_draw_lod="0" />
+					<object name="g_icon_lod1" 	enabled="true"  lod="1" />
+			</lod_object>
+		</graphic_group>
+	</graphics>
+</dynamic_object>

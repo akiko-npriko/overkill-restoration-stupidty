@@ -428,6 +428,8 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/29669
  - Armored Transport: Atrium Redux
 	- https://modworkshop.net/mod/31370
+ - Constantine Heists Archive (with fixes)
+	- https://modworkshop.net/mod/43578
  - Restoration Mod - custom heists compatibility patches
 	- https://modworkshop.net/mod/38252
  - Scrollable Contract Brokers

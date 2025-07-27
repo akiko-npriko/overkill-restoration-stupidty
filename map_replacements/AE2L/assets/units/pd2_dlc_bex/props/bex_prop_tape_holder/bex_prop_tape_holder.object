@@ -1,0 +1,17 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_bex/props/bex_prop_tape_holder/bex_prop_tape_holder" orientation_object="rp_bex_prop_tape_holder" />
+	<sequence_manager file="units/pd2_dlc_bex/props/bex_prop_tape_holder/bex_prop_tape_holder"/>
+	<bodies>
+		<body name="body_static" enabled="true" template="editor">
+			<object name="rp_bex_prop_tape_holder" />
+			<object name="c_box" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<graphics>
+		<object name="g_tape_holder" enabled="true" />
+		<lod_object name="lod_tape_holder">
+			<object name="g_tape_holder_highlight_lod0" enabled="true"  max_distance="400" />
+			<object name="g_tape_holder_highlight_lod1" enabled="true" />
+		</lod_object>
+	</graphics>
+</dynamic_object>

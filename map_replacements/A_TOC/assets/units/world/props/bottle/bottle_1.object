@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<dynamic_object>
+  <diesel materials="units/world/props/bottle/bottle_1" orientation_object="rp_bottle_1" />
+  <sequence_manager file="units/world/props/bottle/bottle_1" />
+  <bodies>
+    <body name="static_body" enabled="true" template="raycoll_static">
+      <object name="rp_bottle_1"/>
+      <object name="c_bottle_1" collision_type="mesh_mopp" />
+    </body>
+  </bodies>
+  
+  <decal_surfaces static="true" default_material="glass_breakable">
+    <decal_mesh name="dm_bottle_1" enabled="true" material="glass_breakable"/>
+  </decal_surfaces>
+  
+  <graphics>
+    <object name="g_bottle_1" enabled="true" instance_struct="world_tm"/>
+  </graphics>
+</dynamic_object>

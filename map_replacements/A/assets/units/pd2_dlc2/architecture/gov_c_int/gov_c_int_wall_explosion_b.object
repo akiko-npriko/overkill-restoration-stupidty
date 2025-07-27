@@ -1,0 +1,30 @@
+<dynamic_object>
+    <diesel orientation_object="rp_gov_c_int_wall_explosion_b" materials="units/pd2_dlc2/architecture/gov_c_int/gov_c_int_wall_explosion" />
+    <sequence_manager file="units/pd2_dlc2/architecture/gov_c_int/gov_c_int_wall_explosion_b" />
+	
+    <bodies>
+        <body template="static" name="static_body_destroyed" enabled="false">
+			<object name="rp_gov_c_int_wall_explosion_b" />
+			<object name="g_destroyed" 		collision_type="mesh_mopp" />
+			<object name="g_destroyed_vtxc" 	collision_type="mesh_mopp" />
+        </body>
+        <body template="static" name="static_body_whole" enabled="true">
+			<object name="g_whole" 			collision_type="mesh_mopp" />
+        </body>
+    </bodies>
+	
+	<decal_surfaces>
+		<decal_mesh name="g_destroyed" 		enabled="true" material="concrete"/>
+		<decal_mesh name="g_destroyed_vtxc" enabled="true" material="plaster"/>
+		<decal_mesh name="g_whole" 			enabled="true" material="plaster"/>
+	</decal_surfaces>
+	
+    <graphics>
+		<object name="g_destroyed" 			enabled="false" />
+		<object name="g_destroyed_vtxc" 	enabled="false" />
+		<object name="g_whole" 				enabled="true"  />
+		
+		<object name="g_decals" 			enabled="false"/>
+    </graphics>
+
+</dynamic_object>

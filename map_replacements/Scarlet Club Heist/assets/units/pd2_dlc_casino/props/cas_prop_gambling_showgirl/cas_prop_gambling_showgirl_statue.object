@@ -1,0 +1,43 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_casino/props/cas_prop_gambling_showgirl/cas_prop_gambling_showgirl_statue" orientation_object="rp_cas_prop_gambling_showgirl_statue" />
+	<sequence_manager file="units/pd2_dlc_casino/props/cas_prop_gambling_showgirl/cas_prop_gambling_showgirl_statue" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_cas_prop_gambling_showgirl_statue" />
+			<object name="c_convex_01" collision_type="convex" padding="-2.5" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+			<object name="c_box_04" collision_type="box" padding="-2.5" />
+			<object name="c_box_05" collision_type="box" padding="-2.5" />
+			<object name="c_box_06" collision_type="box" padding="-2.5" />
+			<object name="c_box_07" collision_type="box" padding="-2.5" />
+			<object name="c_box_08" collision_type="box" padding="-2.5" />
+			<object name="c_box_09" collision_type="box" padding="-2.5" />
+			<object name="c_box_010" collision_type="box" padding="-2.5" />
+			<object name="c_box_011" collision_type="box" padding="-2.5" />
+			<object name="c_box_012" collision_type="box" padding="-2.5" />
+			<object name="c_box_013" collision_type="box" padding="-2.5" />
+			<object name="c_convex_02" collision_type="convex" padding="-2.5" />
+			<object name="c_convex_03" collision_type="convex" padding="-2.5" />
+			<object name="c_convex_04" collision_type="convex" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="metal">
+		<decal_mesh name="dm_metal" enabled="true" material="metal" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_neon" enabled="true" />
+		<object name="g_neon_il" enabled="true" />
+		<lod_object name="lod_g_m_base">
+			<object name="g_m_base_lod0" enabled="true" max_distance="14500" />
+			<object name="g_m_base_lod1" enabled="true" max_distance="16500" />
+			<object name="g_m_base_lod2" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_g_m_top">
+			<object name="g_m_top_lod0" enabled="true" max_distance="14500" />
+			<object name="g_m_top_lod1" enabled="true" max_distance="16500" />
+			<object name="g_m_top_lod2" enabled="true" />
+		</lod_object>
+	</graphics>
+</dynamic_object>

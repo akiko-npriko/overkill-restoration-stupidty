@@ -1,0 +1,10 @@
+<unit type="ind" slot="1" >
+    <object file="units/payday2/vehicles/ind_vehicle_boat_tug/ind_vehicle_boat_tug" />
+	<dependencies>
+		<depends_on effect="effects/particles/dest/fire_hydrant_splash" />
+	</dependencies>	
+    <extensions>
+		<extension name="damage" class="UnitDamage" />		
+        <extension class="ScriptUnitData" name="unit_data" />
+    </extensions>
+</unit>

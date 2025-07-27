@@ -1,0 +1,7 @@
+<materials version="3">
+    <material render_template="generic:DIFFUSE_TEXTURE:SELF_ILLUMINATION" name="backdrop_scrapers_night" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_old_unit_df"/>
+        <self_illumination_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_old_unit_il"/>
+        <variable type="scalar" name="il_multiplier" value="sun"/>
+    </material>
+</materials>

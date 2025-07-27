@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<dynamic_object>
+  <diesel materials="units/world/props/container_backdrop/container_backdrop" orientation_object="rp_container_backdrop" />
+  <bodies>
+  <body name="static_body" enabled="true" template="editor">
+      <object name="g_con_backdrop" collision_type="box" />
+	</body>
+	</bodies>
+	<decal_surfaces default_material="steel">
+    <decal_mesh name="dm_con_backdrop" 			enabled="true" material="steel"/> 
+  </decal_surfaces>
+  <graphics>
+    <object name="g_con_backdrop" enabled="true" />
+	<object name="s_con_backdrop" shadow_caster="true"	enabled="true" />
+	
+  </graphics>
+</dynamic_object>

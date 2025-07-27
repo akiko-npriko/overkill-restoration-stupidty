@@ -1,0 +1,13 @@
+<dynamic_object>
+    <diesel orientation_object="rp_str_prop_park_fence_gate_open" materials="units/payday2/props/str_prop_park_fence/str_prop_park_fence" />
+    <bodies>
+    		<body enabled="true" template="mover_blocker" name="mover_blocker0" >
+				<object name="rp_str_prop_park_fence_gate_open"/>
+				<object collision_type="box" name="c_mover_blocker_door_r" padding="-2"/>
+				<object collision_type="box" name="c_mover_blocker_door_l" padding="-2"/>
+			</body>
+    </bodies>
+	<graphics>
+        <object enabled="true" name="g_g" shadow_caster="true" />
+    </graphics>
+</dynamic_object>

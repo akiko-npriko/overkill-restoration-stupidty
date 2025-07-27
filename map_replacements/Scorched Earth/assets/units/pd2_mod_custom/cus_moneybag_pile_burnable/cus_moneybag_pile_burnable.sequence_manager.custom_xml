@@ -1,0 +1,117 @@
+<table>
+	<unit>
+		<variables>
+			<var_default_material	value=" 'units/pd2_mod_custom/cus_moneybag_pile_burnable/cus_moneybag_pile_burnable' " />
+			<var_burnt_material		value=" 'units/pd2_mod_custom/cus_moneybag_pile_burnable/cus_moneybag_pile_burnable_toasted' " />
+			<var_bags value="0"/>
+			<var_bags_req value="8"/>
+		</variables>
+		
+		
+		<filter name="'filter_enough_bags'">
+			<check value="vars.var_bags == vars.var_bags_req"/>
+		</filter>
+		
+		
+		<sequence editable_state="true" name=" 'hide' " triggable="true">
+			<interaction enabled="false"/>
+			<stop_effect id_list_var="'burning_effs'" instant="false"/>
+			<material_config name="vars.var_default_material" synchronous="true"/>
+			<object enabled="false" name="'g_goal'"/>
+			<object enabled="false" name="'g_moneybag_1'"/>
+			<object enabled="false" name="'g_moneybag_2'"/>
+			<object enabled="false" name="'g_moneybag_3'"/>
+			<object enabled="false" name="'g_moneybag_4'"/>
+			<object enabled="false" name="'g_moneybag_5'"/>
+			<object enabled="false" name="'g_moneybag_6'"/>
+			<object enabled="false" name="'g_moneybag_7'"/>
+			<object enabled="false" name="'g_moneybag_8'"/>
+			<object enabled="false" name="'g_moneybag_9'"/>
+			<object enabled="false" name="'g_moneybag_10'"/>
+			<object enabled="false" name="'g_moneybag_11'"/>
+			<object enabled="false" name="'g_moneybag_12'"/>
+			<object enabled="false" name="'g_moneybag_13'"/>
+			<object enabled="false" name="'g_moneybag_14'"/>
+			<object enabled="false" name="'g_moneybag_15'"/>
+			<object enabled="false" name="'g_moneybag_16'"/>
+			<object enabled="false" name="'g_decal_burnt'"/>
+		</sequence>
+		
+		
+		<sequence editable_state="true" name=" 'show_goal' " triggable="true">
+			<object enabled="true" name="'g_goal'"/>
+		</sequence>
+		
+		<sequence editable_state="true" name=" 'add_lootbag' " triggable="true">
+			<set_variables var_bags="vars.var_bags + 1" />
+			<object enabled="true" name="'g_moneybag_'..vars.var_bags "/>
+			<body enabled="true" name=" 'body_moneybag_'..vars.var_bags "/>
+			<sound action="'play'" event="'bag_medium_drop'" object="'e_fire'"/>
+			<run_sequence filter="'filter_enough_bags'" name=" 'placed_enough_bags' "/>
+		</sequence>
+		
+		<sequence editable_state="true" name=" 'placed_enough_bags' " triggable="true">
+			<interaction enabled="true"/>
+			<object enabled="false" name="'g_goal'"/>
+		</sequence>
+		
+		<sequence name=" 'interact' ">
+			<run_sequence name=" 'start_burning' "/>
+		</sequence>
+		
+		<sequence editable_state="true" name=" 'start_burning' " triggable="true">
+			<interaction enabled="false"/>
+			<object enabled="true" name="'g_decal_burnt'"/>
+			<effect name=" 'units/pd2_mod_custom/cus_moneybag_pile_burnable/cus_moneybag_pile_burnable' " parent=" 'e_fire' " store_id_list_var=" 'burning_effs' "/>
+			<sound action="'play'" event="'large_fire'" object="'e_fire'"/>
+			<material_config name="vars.var_burnt_material" synchronous="true"/>
+			<run_sequence name=" 'done_burning' " start_time="60"/>
+		</sequence>
+		
+		<sequence editable_state="true" name=" 'done_burning' " triggable="true">
+			<sound action="'play'" event="'large_fire_stop'" object="'e_fire'"/>
+			<stop_effect id_list_var="'burning_effs'" instant="false"/>
+		</sequence>
+		
+		<sequence editable_state="true" name=" 'set_req_4' " triggable="true">
+			<set_variables var_bags_req="4" />
+		</sequence>
+		<sequence  editable_state="true" name=" 'set_req_5' " triggable="true">
+			<set_variables var_bags_req="5" />
+		</sequence>
+		<sequence  editable_state="true" name=" 'set_req_6' " triggable="true">
+			<set_variables var_bags_req="6" />
+		</sequence>
+		<sequence  editable_state="true" name=" 'set_req_7' " triggable="true">
+			<set_variables var_bags_req="7" />
+		</sequence>
+		<sequence  editable_state="true" name=" 'set_req_8' " triggable="true">
+			<set_variables var_bags_req="8" />
+		</sequence>
+		<sequence  editable_state="true" name=" 'set_req_9' " triggable="true">
+			<set_variables var_bags_req="9" />
+		</sequence>
+		<sequence  editable_state="true" name=" 'set_req_10' " triggable="true">
+			<set_variables var_bags_req="10" />
+		</sequence>
+		<sequence  editable_state="true" name=" 'set_req_11' " triggable="true">
+			<set_variables var_bags_req="11" />
+		</sequence>
+		<sequence  editable_state="true" name=" 'set_req_12' " triggable="true">
+			<set_variables var_bags_req="12" />
+		</sequence>
+		<sequence  editable_state="true" name=" 'set_req_13' " triggable="true">
+			<set_variables var_bags_req="13" />
+		</sequence>
+		<sequence  editable_state="true" name=" 'set_req_14' " triggable="true">
+			<set_variables var_bags_req="14" />
+		</sequence>
+		<sequence  editable_state="true" name=" 'set_req_15' " triggable="true">
+			<set_variables var_bags_req="15" />
+		</sequence>
+		<sequence  editable_state="true" name=" 'set_req_16' " triggable="true">
+			<set_variables var_bags_req="16" />
+		</sequence>
+		
+	</unit>
+</table>

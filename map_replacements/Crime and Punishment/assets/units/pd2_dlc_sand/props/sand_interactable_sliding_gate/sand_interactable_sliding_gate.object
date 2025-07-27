@@ -1,0 +1,28 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_sand/props/sand_interactable_sliding_gate/sand_interactable_sliding_gate_contour" orientation_object="rp_sand_interactable_sliding_gate" />
+	<sequence_manager file="units/pd2_dlc_sand/props/sand_interactable_sliding_gate/sand_interactable_sliding_gate" />
+
+	<animations>
+		<animation_group name="anim" enabled="false">
+			<object name="anim_right_door"/>
+		</animation_group>
+	</animations>	
+
+	<bodies>
+		<body name="body_collision_01" enabled="true" template="animated">
+			<object name="anim_right_door" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+
+	<decal_surfaces default_material="metal_hollow">
+		<decal_mesh name="dm_metal_hollow" enabled="true" material="metal_hollow" />
+	</decal_surfaces>
+
+	<graphics>
+		<object name="g_metal_gate" enabled="true" />
+		<object name="g_metal_base" enabled="true" />
+		<object name="s_s" enabled="true" shadow_caster="true" />
+	</graphics>
+	
+</dynamic_object>

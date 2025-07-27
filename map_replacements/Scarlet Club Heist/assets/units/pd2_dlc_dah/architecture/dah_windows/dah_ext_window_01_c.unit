@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<unit type="dah" slot="1">
+<network sync="spawn"/>
+	<object file="units/pd2_dlc_dah/architecture/dah_windows/dah_ext_window_01_c" />
+	
+	<dependencies>
+		<depends_on effect="effects/particles/window/diamond_glass_exterior_01c"/>
+		<depends_on bnk="soundbanks/effects"/>
+	</dependencies>
+	
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData"/>
+		<extension name="damage" class="UnitDamage"/>
+		<extension name="attention" class="AIAttentionObject" />
+	</extensions>
+	
+</unit>

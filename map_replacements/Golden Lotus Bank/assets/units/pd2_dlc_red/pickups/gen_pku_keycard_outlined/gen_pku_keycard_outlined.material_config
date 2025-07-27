@@ -1,0 +1,10 @@
+<materials version="3">
+    <material name="mat_keycard" render_template="generic:DIFFUSE_TEXTURE" version="2">
+        <diffuse_texture file="units/pickups/pickup_bank_manager_key/pickup_bank_manager_key_df"/>
+    </material>
+    <material name="mat_keycard_outline" render_template="generic:CONTOUR:DIFFUSE_TEXTURE" version="2">
+        <diffuse_texture file="units/pickups/pickup_bank_manager_key/pickup_bank_manager_key_df"/>
+        <variable value="1" type="scalar" name="contour_opacity"/>
+        <variable value="1 0.5 0.0" type="vector3" name="contour_color"/>
+    </material>
+</materials>

@@ -1,0 +1,18 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_rvd/architecture/rvd_ext/rvd_ext_road/rvd_ext_road_16x24m_a" orientation_object="rp_rvd_ext_median_strip_end" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_rvd_ext_median_strip_end" />
+			<object name="c_convex_01" collision_type="convex" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="grass">		
+		<decal_mesh name="dm_concrete" enabled="true" material="concrete" />
+		<decal_mesh name="dm_grass" enabled="true" material="grass" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_flower_bed" enabled="true" />
+		<object name="g_curb" enabled="true" />
+		<object name="s_s" enabled="true" shadow_caster="true" />
+	</graphics>
+</dynamic_object>

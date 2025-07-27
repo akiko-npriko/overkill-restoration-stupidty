@@ -1,0 +1,16 @@
+<unit type="des" slot="1">
+    <object file="units/pd2_dlc_des/props/des_interactable_thermite/des_interactable_thermite" />
+    <network sync="spawn"/>
+    <dependencies>
+    	<depends_on effect="effects/payday2/particles/fire/thermite_long_30sec_burn" />
+    </dependencies>
+    <extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="UseInteractionExt">
+			<var name="tweak_data" value="apply_concoction_paste" />
+			<var name="_interact_object" value="int_location"/>
+			<var name="drop_in_sync_tweak_data" value="true" />
+		</extension>
+	</extensions>
+</unit>

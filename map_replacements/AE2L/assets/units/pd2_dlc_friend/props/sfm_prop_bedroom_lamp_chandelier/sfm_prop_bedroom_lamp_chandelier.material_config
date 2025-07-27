@@ -1,0 +1,23 @@
+<materials version="3">
+	<material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:NORMALMAP:OPACITY_TEXTURE:SELF_ILLUMINATION" name="mat_lamp" version="2">
+		<diffuse_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_lamp_chandelier/sfm_prop_bedroom_lamp_chandelier_df" />
+		<bump_normal_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_lamp_chandelier/sfm_prop_bedroom_lamp_chandelier_nm" />
+		<self_illumination_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_lamp_chandelier/sfm_prop_bedroom_lamp_chandelier_il" />
+		<opacity_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_lamp_chandelier/sfm_prop_bedroom_lamp_chandelier_op"/>
+        <variable type="scalar" name="alpha_ref" value="0.46500002208631"/>        
+        <variable type="scalar" name="il_multiplier" value="sun"/>        
+    </material>
+
+	<material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:NORMALMAP:OPACITY_TEXTURE:SELF_ILLUMINATION" name="mat_lamp_lod" version="2">
+		<diffuse_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_lamp_chandelier/sfm_prop_bedroom_lamp_chandelier_df" mip="4" />
+		<bump_normal_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_lamp_chandelier/sfm_prop_bedroom_lamp_chandelier_nm" mip="4" />
+		<self_illumination_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_lamp_chandelier/sfm_prop_bedroom_lamp_chandelier_il" mip="4" />
+		<opacity_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_lamp_chandelier/sfm_prop_bedroom_lamp_chandelier_op" mip="4" />
+        <variable type="scalar" name="alpha_ref" value="0.46500002208631"/>
+        <variable type="scalar" name="il_multiplier" value="sun"/>
+    </material>
+
+	<material name="shadow_caster" render_template="shadow_caster_only" version="2" />
+</materials>
+
+

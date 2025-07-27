@@ -1,0 +1,11 @@
+<unit type="com" slot="1" >
+    <object file="units/payday2/props/off_prop_officehigh_lamp_floor/off_prop_officehigh_lamp_floor" />
+		<network sync="spawn"/>
+    <dependencies>
+    	<depends_on effect="effects/particles/dest/sparks_lamp_dest" />
+    </dependencies>
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+		<extension class="UnitDamage" name="damage" />
+    </extensions>
+</unit>

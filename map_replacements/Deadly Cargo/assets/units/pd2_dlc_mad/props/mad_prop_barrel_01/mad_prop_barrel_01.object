@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<dynamic_object>
+  <diesel materials="units/pd2_dlc_mad/props/mad_prop_barrel_01/mad_prop_barrel_01" orientation_object="rp_mad_prop_barrel_01" />
+  <sequence_manager file="units/pd2_dlc_mad/props/mad_prop_barrel_01/mad_prop_barrel_01" />
+  <bodies>
+    <body name="static_body" enabled="true" template="static">
+      <object name="rp_mad_prop_barrel_01"/>
+      <object name="c_c" collision_type="convex" padding="-2"/>
+    </body>
+  </bodies>
+  <decal_surfaces static="true" default_material="sheet_metal">
+    <decal_mesh name="dm_dm" enabled="true" material="sheet_metal"/>
+  </decal_surfaces>
+  <graphics>
+    <object name="g_g" enabled="true" />
+    <object name="g_g_snow" enabled="false" />
+    <object name="s_s" enabled="true"  shadow_caster="true" />
+  </graphics>
+</dynamic_object>

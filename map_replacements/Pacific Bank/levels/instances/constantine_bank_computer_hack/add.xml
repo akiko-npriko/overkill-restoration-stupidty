@@ -1,0 +1,15 @@
+<table directory="assets">
+	<add from_db="true" path="units/world/props/office/computer/computer_keyboard_02" type="unit">
+		<unit path="units/world/props/office/computer/computer_keyboard_02"/>
+		<object path="units/world/props/office/computer/computer_keyboard_02"/>
+		<material_config path="units/world/props/office/computer/computer_keyboards"/>
+	</add>
+	<add from_db="true" path="units/payday2/equipment/gen_interactable_hack_computer/gen_interactable_hack_computer_b" type="unit">
+		<bnk path="soundbanks/regular_sfx"/>
+		<gui path="guis/timer_gui"/>
+		<material_config path="units/payday2/equipment/gen_interactable_hack_computer/gen_interactable_hack_computer_b"/>
+		<object path="units/payday2/equipment/gen_interactable_hack_computer/gen_interactable_hack_computer_b"/>
+		<sequence_manager path="units/payday2/equipment/gen_interactable_hack_computer/gen_interactable_hack_computer_b"/>
+		<unit path="units/payday2/equipment/gen_interactable_hack_computer/gen_interactable_hack_computer_b"/>
+	</add>
+</table>

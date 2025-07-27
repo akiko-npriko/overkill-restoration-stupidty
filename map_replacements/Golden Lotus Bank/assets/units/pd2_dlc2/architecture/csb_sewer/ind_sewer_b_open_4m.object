@@ -1,0 +1,23 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc2/architecture/csb_sewer/csb_sewer" orientation_object="rp_ind_sewer_b_open_4m" />
+	<bodies>
+		<body enabled="true" template="static" name="static_body" >
+            <object name="rp_ind_sewer_b_open_4m" />
+            <object collision_type="mesh_mopp" name="c_c" />
+        </body>
+		<body enabled="true" template="nav_walk" name="mover_body" >
+            <object name="rp_ind_sewer_b_open_4m" />
+			<object name="c_box_mover_00" collision_type="box" padding="-2.5"/>
+			<object name="c_box_mover_01" collision_type="box" padding="-2.5"/>
+        </body>
+	</bodies>
+	<decal_surfaces default_material="tile">
+		<decal_mesh name="dm_concrete" enabled="true" material="concrete" />
+		<decal_mesh name="dm_tile" enabled="true" material="tile" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_g" enabled="true" />
+		<object name="g_add" enabled="true" />
+		<object name="s_s" enabled="true" shadow_caster="true" />
+	</graphics>
+</dynamic_object>

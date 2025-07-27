@@ -1,0 +1,21 @@
+<dynamic_object>
+    <diesel orientation_object="rp_luxury_necklace_box_1" materials="units/world/props/luxury_props/luxury_bags" />
+	<sequence_manager file="units/world/props/luxury_props/luxury_necklace_box_1" />
+	<bodies>
+		<body enabled="false" template="raycoll_static" name="body">
+            <object name="rp_luxury_necklace_box_1" />
+            <object enabled="true" name="g_necklace_box_1" collision_type="box" />
+        </body>
+		<body enabled="true" template="editor" name="editor">
+            <object name="rp_luxury_necklace_box_1" />
+            <object enabled="true" name="g_necklace_box_1" collision_type="box" />
+        </body>
+    </bodies>
+	<decal_surfaces default_material="plaster">
+        <decal_mesh enabled="true" name="dm_necklace_box_1" material="plaster" />
+    </decal_surfaces>
+    <graphics>
+        <object enabled="true" name="g_necklace_box_1" />
+        <object enabled="true" name="g_necklace" />
+    </graphics>
+</dynamic_object>

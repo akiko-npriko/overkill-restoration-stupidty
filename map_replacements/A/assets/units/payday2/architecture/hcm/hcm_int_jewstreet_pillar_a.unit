@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<unit type="hcm" slot="1">
+	<object file="units/payday2/architecture/hcm/hcm_int_jewstreet_pillar_a" />
+	<dependencies>
+		<depends_on physic_effect="physic_effects/push_sphere" />
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" 	class="UnitDamage" />
+	</extensions>
+</unit>

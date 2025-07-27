@@ -1,0 +1,18 @@
+<materials version="3">
+
+    <material name="mat_safehouse_int_floor_02" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" version="2">
+        <diffuse_texture file="units/payday2/architecture/safehouse/safehouse_int_floor_02_df"/>
+        <reflection_texture global_texture="current_global_texture" type="cube"/>
+        <variable value="1 0 2" type="vector3" name="environment_settings"/>
+        <bump_normal_texture file="units/payday2/architecture/safehouse/safehouse_int_floor_02_nm"/>
+    </material>
+
+    <material name="mat_safehouse_int_trapdoor_01" render_template="generic:DIFFUSE_TEXTURE:VERTEX_COLOR" version="2">
+        <diffuse_texture file="units/payday2/architecture/safehouse/safehouse_int_trapdoor_01_df"/>
+    </material>
+    <material version="2" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:VERTEX_COLOR" name="mat_safehouse_int_trapdoor_01_alpha">
+        <diffuse_texture file="units/payday2/architecture/safehouse/safehouse_int_trapdoor_01_df"/>
+        <variable value="0.11000000685453" type="scalar" name="alpha_ref"/>
+    </material>
+   
+</materials>

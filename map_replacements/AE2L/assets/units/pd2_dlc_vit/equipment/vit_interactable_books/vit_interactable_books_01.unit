@@ -1,0 +1,15 @@
+<unit type="vit" slot="1">
+	<object file="units/pd2_dlc_vit/equipment/vit_interactable_books/vit_interactable_books_01" />
+	<network sync="spawn"/>
+	<dependencies>
+		<depends_on physic_effect="physic_effects/push_sphere" />
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="UseInteractionExt">
+			<var name="tweak_data" value="vit_search" />
+			<var name="_interact_object" value="interaction"/>
+		</extension>
+	</extensions>
+</unit>

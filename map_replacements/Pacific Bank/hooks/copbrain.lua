@@ -1,0 +1,1 @@
+CopBrain._logic_variants.constantine_backup = CopBrain._logic_variants.drug_lord_boss_stealth

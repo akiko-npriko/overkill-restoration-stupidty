@@ -1,0 +1,55 @@
+<dynamic_object>
+	<diesel materials="units/pd2_mcmansion/props/mcm_prop_garden_fence_gate_set/mcm_prop_garden_fence_gate_set" orientation_object="rp_mcm_prop_garden_fence_2m_dmg" />
+	<sequence_manager file="units/pd2_mcmansion/props/mcm_prop_garden_fence_gate_set/mcm_prop_garden_fence_2m_dmg" />
+	<bodies>
+
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_mcm_prop_garden_fence_2m_dmg" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_meshmopp_01" collision_type="mesh_mopp" />
+		</body>
+
+		<body name="body_clean" enabled="true" template="static">
+			<object name="rp_mcm_prop_garden_fence_2m_dmg" />
+			<object name="c_box_clean" collision_type="box" />
+		</body>
+
+		<body name="body_dmg" enabled="false" template="static">
+			<object name="rp_mcm_prop_garden_fence_2m_dmg" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+			<object name="c_convex_01" collision_type="convex" padding="-2.5" />
+			<object name="c_convex_02" collision_type="convex" padding="-2.5" />
+			<object name="c_convex_03" collision_type="convex" padding="-2.5" />
+			<object name="c_convex_04" collision_type="convex" padding="-2.5" />
+		</body>
+
+		<body name="body_nav_walk" add_ray_type="ai_vision" enabled="false" template="nav_walk">
+			<object name="rp_mcm_prop_garden_fence_2m_dmg" />
+			<object name="c_nav_walk_01" collision_type="mesh_mopp" />
+		</body>
+	</bodies>
+
+	<decal_surfaces default_material="wood">
+		<decal_mesh name="dm_wood" enabled="true" material="wood" />
+	</decal_surfaces>
+
+	<graphics>
+		<object name="g_fence" enabled="true" shadow_caster="true"/>
+		<object name="g_debris_fence" enabled="true" shadow_caster="true"/>
+
+		<graphic_group name="grp_icon_a" enabled="true" >
+			<lod_object name="lod_icon">
+				<object name="g_icon_lockpick_a_lod0" enabled="true"  max_distance="300"   />
+				<object name="g_icon_lockpick_a_lod1" enabled="true"  />
+			</lod_object>
+		</graphic_group>
+		<graphic_group name="grp_icon_b" enabled="false" >
+			<lod_object name="lod_icon_b">
+				<object name="g_icon_lockpick_b_lod0" enabled="true"  max_distance="300"   />
+				<object name="g_icon_lockpick_b_lod1" enabled="true"  />
+			</lod_object>
+		</graphic_group>
+		
+	</graphics>
+</dynamic_object>

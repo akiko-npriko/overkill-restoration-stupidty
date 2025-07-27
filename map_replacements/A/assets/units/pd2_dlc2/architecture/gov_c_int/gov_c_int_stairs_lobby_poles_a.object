@@ -1,0 +1,79 @@
+<dynamic_object>
+    <diesel orientation_object="rp_gov_c_int_stairs_lobby_poles_a" materials="units/pd2_dlc2/architecture/gov_c_int/gov_c_int_stairs" />
+    <sequence_manager file="units/pd2_dlc2/architecture/gov_c_int/gov_c_int_stairs_lobby_poles_a" />
+    
+	<bodies>				
+		<body enabled="true" template="static" name="pole_01" >
+			<object name="e_effect_01" />
+			<object name="c_capsule_01" collision_type="capsule" padding="-2.5"/>
+		</body>
+		<body enabled="true" template="static" name="pole_02" >
+			<object name="e_effect_02" />
+			<object name="c_capsule_02" collision_type="capsule" padding="-2.5"/>
+		</body>
+		<body enabled="true" template="static" name="pole_03" >
+			<object name="e_effect_03" />
+			<object name="c_capsule_03" collision_type="capsule" padding="-2.5"/>
+		</body>
+		<body enabled="true" template="static" name="pole_04" >
+			<object name="e_effect_04" />
+			<object name="c_capsule_04" collision_type="capsule" padding="-2.5"/>
+		</body>
+		<body enabled="true" template="static" name="pole_05" >
+			<object name="e_effect_05" />
+			<object name="c_capsule_05" collision_type="capsule" padding="-2.5"/>
+		</body>
+		<body enabled="true" template="static" name="pole_06" >
+			<object name="e_effect_06" />
+			<object name="c_capsule_06" collision_type="capsule" padding="-2.5"/>
+		</body>
+		<body enabled="true" template="static" name="pole_07" >
+			<object name="e_effect_07" />
+			<object name="c_capsule_07" collision_type="capsule" padding="-2.5"/>
+		</body>
+		<body enabled="true" template="static" name="pole_08" >
+			<object name="e_effect_08" />
+			<object name="c_capsule_08" collision_type="capsule" padding="-2.5"/>
+		</body>
+	</bodies>
+
+	<decal_surfaces>
+		<decal_mesh name="g_pole_01" enabled="true" material="marble" />
+		<decal_mesh name="g_pole_02" enabled="true" material="marble" />
+		<decal_mesh name="g_pole_03" enabled="true" material="marble" />
+		<decal_mesh name="g_pole_04" enabled="true" material="marble" />
+		<decal_mesh name="g_pole_05" enabled="true" material="marble" />
+		<decal_mesh name="g_pole_06" enabled="true" material="marble" />
+		<decal_mesh name="g_pole_07" enabled="true" material="marble" />
+		<decal_mesh name="g_pole_08" enabled="true" material="marble" />
+	</decal_surfaces>
+	
+	<graphics>				
+		<object name="g_pole_01" enabled="true"/>
+		<object name="g_pole_02" enabled="true"/>
+		<object name="g_pole_03" enabled="true"/>
+		<object name="g_pole_04" enabled="true"/>
+		<object name="g_pole_05" enabled="true"/>
+		<object name="g_pole_06" enabled="true"/>
+		<object name="g_pole_07" enabled="true"/>
+		<object name="g_pole_08" enabled="true"/>
+		
+		<object name="s_01" enabled="true" shadow_caster="true"/>
+		<object name="s_02" enabled="true" shadow_caster="true"/>
+		<object name="s_03" enabled="true" shadow_caster="true"/>
+		<object name="s_04" enabled="true" shadow_caster="true"/>
+		<object name="s_05" enabled="true" shadow_caster="true"/>
+		<object name="s_06" enabled="true" shadow_caster="true"/>
+		<object name="s_07" enabled="true" shadow_caster="true"/>
+		<object name="s_08" enabled="true" shadow_caster="true"/>
+		
+		<object name="g_pole_01_dmg" enabled="false"/>
+		<object name="g_pole_02_dmg" enabled="false"/>
+		<object name="g_pole_03_dmg" enabled="false"/>
+		<object name="g_pole_04_dmg" enabled="false"/>
+		<object name="g_pole_05_dmg" enabled="false"/>
+		<object name="g_pole_06_dmg" enabled="false"/>
+		<object name="g_pole_07_dmg" enabled="false"/>
+		<object name="g_pole_08_dmg" enabled="false"/>		
+    </graphics>
+</dynamic_object>

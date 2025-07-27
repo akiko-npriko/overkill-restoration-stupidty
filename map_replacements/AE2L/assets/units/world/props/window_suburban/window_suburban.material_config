@@ -1,0 +1,20 @@
+<materials version="3">
+    <material name="door_instanced" render_template="generic:DIFFUSE_TEXTURE:INSTANCED" version="2">
+        <diffuse_texture file="units/world/props/door_suburban_01/door_suburbua_df"/>
+    </material>
+    <material name="dmg_glass_instanced" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:INSTANCED:NORMALMAP:OPACITY_FADE" version="2">
+        <variable value="2 1 0.59999996423721" type="vector3" name="fresnel_settings"/>
+        <opacity_texture file="units/vehicles/window/glass_shattered_2_op"/>
+        <diffuse_texture file="units/vehicles/window/glass_shattered_df"/>
+        <reflection_texture type="cubemap" global_texture="current_global_texture"/>
+        <bump_normal_texture file="units/vehicles/window/glass_shattered_nm"/>
+        <variable value="10 4000 0" type="vector3" name="opacity_fade"/>
+    </material>
+    <material name="glass_instanced" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:INSTANCED:OPACITY_FADE" version="2">
+        <variable value="1 0 0.5" type="vector3" name="fresnel_settings"/>
+        <opacity_texture file="units/payday2/glass/glass_clear_default_op"/>
+        <diffuse_texture file="units/payday2/glass/glass_clear_default_df"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <variable value="5000 4000 0" type="vector3" name="opacity_fade"/>
+    </material>
+</materials>

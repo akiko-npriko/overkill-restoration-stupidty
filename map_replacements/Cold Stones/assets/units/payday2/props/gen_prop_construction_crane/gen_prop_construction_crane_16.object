@@ -1,0 +1,12 @@
+<dynamic_object>
+    <diesel orientation_object="rp_gen_prop_construction_crane_mocup_below" materials="units/payday2/props/gen_prop_construction_crane/gen_prop_construction_crane_16" />
+	<bodies>
+		<body name="static" enabled="true" template="static" >
+			<object name="rp_gen_prop_construction_crane_mocup_below" />
+			<object name="g_test" collision_type="box" />
+		</body>
+	</bodies>
+    <graphics>
+        <object enabled="true" name="g_test" shadow_caster="true"/>
+    </graphics>
+</dynamic_object>

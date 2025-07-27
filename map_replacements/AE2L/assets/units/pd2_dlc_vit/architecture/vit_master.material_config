@@ -1,0 +1,386 @@
+<materials version="3">
+    <material render_template="shadow_caster_only" name="shadow_caster" version="2"/>
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF" version="2" name="ext_catwalk">
+        <diffuse_texture file="units/pd2_dlc_dinner/architecture/textures/ext_catwalk_df" mip="2"/>
+        <variable type="scalar" name="alpha_ref" value="0.074000000953674"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_alarm_sticker" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/vit_building_main/vit_alarm_sticker_df"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_generic_painted_wall" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/generic_painted_wall/vit_generic_painted_wall_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/generic_painted_wall/vit_generic_painted_wall_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/tilling_textures/generic_painted_wall/vit_generic_painted_wall_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_temp" version="2">
+        <diffuse_texture file="units/pd2_dlc_sah/test_actors/temp_texture_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_sah/test_actors/temp_texture_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_sah/test_actors/temp_texture_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" name="mat_glow_ceiling" version="2">
+        <diffuse_texture file="units/pd2_dlc_sah/architecture/sah_int/sah_int_ceiling_cell/sah_int_ceiling_cell_df" mip="1"/>
+        <self_illumination_texture file="units/pd2_dlc_vit/architecture/vit_int/vit_int_west_wing/vit_int_ceiling_cell_il" mip="1"/>
+        <variable type="scalar" name="il_multiplier" value="sun"/>
+        <variable type="scalar" name="il_bloom" value="0.79200003761798"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_carpet_office" version="2">
+        <diffuse_texture file="units/pd2_dlc_tag/architecture/tiling_textures/tag_carpet/tag_carpet_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_tag/architecture/tiling_textures/tag_carpet/tag_carpet_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_tag/architecture/tiling_textures/tag_carpet/tag_carpet_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_roosevelt_carpet" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/vit_int/vit_int_west_wing/vit_int_roosevelt_carpet_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/vit_int/vit_int_west_wing/vit_int_roosevelt_carpet_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_tag/architecture/tiling_textures/tag_carpet/tag_carpet_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_int_west_wing_trims" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/vit_int/vit_int_west_wing/vit_int_west_wing_trims_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/vit_int/vit_int_west_wing/vit_int_west_wing_trims_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/vit_int/vit_int_west_wing/vit_int_west_wing_trims_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_painted_fresco" version="2">
+        <diffuse_texture file="units/pd2_dlc_sah/test_actors/temp_texture_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_sah/test_actors/temp_texture_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_sah/test_actors/temp_texture_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_ceiling_tiles" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_int_textures/dah_office_ceiling_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_dah/architecture/dah_int_textures/dah_office_ceiling_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_dah/architecture/dah_int_textures/dah_office_ceiling_gsma" mip="1"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_white_marbel_floor" version="2">
+        <diffuse_texture file="units/pd2_dlc_sah/test_actors/temp_texture_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_sah/test_actors/temp_texture_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_sah/test_actors/temp_texture_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_white_marbel_tiles" version="2">
+        <diffuse_texture file="units/pd2_dlc_sah/test_actors/temp_texture_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_sah/test_actors/temp_texture_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_sah/test_actors/temp_texture_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_green_marbel" version="2">
+        <diffuse_texture file="units/pd2_dlc_sah/tiling_textures/sah_green_marble_03/sah_green_marble_03_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_sah/tiling_textures/sah_green_marble_01/sah_green_marble_01_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_sah/tiling_textures/sah_green_marble_01/sah_green_marble_01_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_checker_patterned_marble" version="2">
+        <diffuse_texture file="units/pd2_dlc_sah/test_actors/temp_texture_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_sah/test_actors/temp_texture_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_sah/test_actors/temp_texture_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_wooden_floor_oval_office" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_int_oval_office_wood_floor/vit_int_wood_floor_oval_office_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_int_oval_office_wood_floor/vit_int_wood_floor_oval_office_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_int_oval_office_wood_floor/vit_int_wood_floor_oval_office_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_straight_wooden_floor" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_int_wooden_floor/vit_int_wooden_floor_straight_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_int_wooden_floor/vit_int_wooden_floor_straight_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_int_wooden_floor/vit_int_wooden_floor_straight_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_herringbone_wooden_floor" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_int_wooden_floor/vit_int_wooden_floor_herringbone_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_int_wooden_floor/vit_int_wooden_floor_herringbone_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_int_wooden_floor/vit_int_wooden_floor_herringbone_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_patterned_wooden_floor" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_int_wooden_floor/vit_int_wooden_floor_pattern_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_int_wooden_floor/vit_int_wooden_floor_pattern_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_int_wooden_floor/vit_int_wooden_floor_pattern_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SIMPLE_TINT" name="mat_int_concrete_ceiling" version="2">
+        <diffuse_texture file="units/pd2_dlc_des/tiling_textures/concrete_floor_clean/des_concrete_floor_clean_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_des/tiling_textures/concrete_floor_clean/des_concrete_floor_clean_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_des/tiling_textures/concrete_floor_clean/des_concrete_floor_clean_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+        <variable type="vector3" name="tint_color" value="0.67716538906097 0.61343222856522 0.52314352989197"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_metal_trim_sheet_clean" version="2">
+        <diffuse_texture file="units/pd2_dlc_des/tiling_textures/des_trimsheet_1/des_trimsheet_1_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_des/tiling_textures/des_trimsheet_1/des_trimsheet_1_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_des/tiling_textures/des_trimsheet_1/des_trimsheet_1_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_int_concrete_wall" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/concrete_walls_01/vit_concrete_walls_01_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/concrete_walls_01/vit_concrete_walls_01_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/tilling_textures/concrete_walls_01/vit_concrete_walls_01_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_int_concrete_floor" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/concrete_floor_polished/vit_concrete_floor_polished_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/concrete_floor_polished/vit_concrete_floor_polished_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/tilling_textures/concrete_floor_polished/vit_concrete_floor_polished_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight" type="cubemap"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:DOUBLE_SIDED" name="mat_text" version="2">
+        <diffuse_texture file="units/white_df" mip="1"/>
+    </material>
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:NORMALMAP:OPACITY_TEXTURE:RL_ENVIRONMENT" name="mat_ind_ext_level_stairs_alpha" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/props/vit_prop_stairs/vit_prop_stairs_01_df" mip="1"/>
+        <bump_normal_texture file="units/payday2/architecture/ind/ind_ext_level/ind_ext_level_stairs_nm" mip="1"/>
+        <opacity_texture file="units/payday2/architecture/ind/ind_ext_level/ind_ext_level_stairs_alpha_df"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_vit_ext_plaster" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/house_facede/vit_house_facede_df" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/tilling_textures/house_facede/vit_house_facede_gsma" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/house_facede/vit_house_facede_nm" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" name="mat_ext_window_frame" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/vit_building_main/vit_ext_window_frames_df"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/vit_building_main/vit_ext_window_frames_nm" mip="1"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP" name="mat_ext_steps" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_ext_steps/vit_ext_steps_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_ext_steps/vit_ext_steps_nm" mip="1"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" name="mat_ext_roof_trim" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/vit_building_main/vit_ext_roof_trim_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/vit_building_main/vit_ext_roof_trim_nm" mip="1"/>
+    </material>
+    <material render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE" name="mat_glass" version="2">
+        <variable type="vector3" name="fresnel_settings" value="1.3500000238419 0.59999996423721 0"/>
+        <opacity_texture file="units/payday2/glass/glass_clear_small_op"/>
+        <diffuse_texture file="units/payday2/glass/glass_clear_small_df" mip="1"/>
+        <reflection_texture type="cubemap" file="environments/cubemaps/cubemap_steel"/>
+    </material>
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:NORMALMAP" name="mat_window_bars_alhpa" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/vit_building_main/vit_ext_window_basement_bars_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/vit_building_main/vit_ext_window_basement_bars_nm" mip="1"/>
+        <variable type="scalar" name="alpha_ref" value="0.47500002256129"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_checkered_marble_floor" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/checkered_marble_floor/vit_checkered_marble_floor_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/checkered_marble_floor/vit_checkered_marble_floor_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/tilling_textures/checkered_marble_floor/vit_checkered_marble_floor_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_white_marble_floor_01" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/white_marble_floor_01/white_marble_floor_01_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/white_marble_floor_01/white_marble_floor_01_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/tilling_textures/white_marble_floor_01/white_marble_floor_01_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_polished_limestone" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/polished_limestone_01/vit_polished_limestone_01_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/polished_limestone_01/vit_polished_limestone_01_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/tilling_textures/polished_limestone_01/vit_polished_limestone_01_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_sah/environments/cubemaps/white_plasma" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_metal_sheet_01" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/metal_sheet_01/vit_metal_sheet_01_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/metal_sheet_01/vit_metal_sheet_01_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/tilling_textures/metal_sheet_01/vit_metal_sheet_01_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_metal" type="cubemap"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_concrete" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/textures/vit_env_concrete_df" mip="1"/>
+    </material>
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:DOUBLE_SIDED:EXTERNAL_ALPHA_REF:NORMALMAP" name="mat_railing_alpha" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_ext_railing/vit_ext_railing_alpha_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_ext_railing/vit_ext_railing_alpha_nm" mip="1"/>
+        <variable type="scalar" name="alpha_ref" value="0.27900001325179"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_wallpaper_blueroom" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_wallpaper_blueroom/vit_wallpaper_blueroom_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_wallpaper_blueroom/vit_wallpaper_blueroom_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_wallpaper_blueroom/vit_wallpaper_blueroom_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_wallpaper_oval_office_wallpaper" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_int_wallpaper_oval_office/vit_int_wallpaper_oval_offices_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_int_wallpaper_oval_office/vit_int_wallpaper_oval_offices_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_int_wallpaper_oval_office/vit_int_wallpaper_oval_offices_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_trimsheet_01" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/trimsheet_01/vit_trimsheet_01_df" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/tilling_textures/trimsheet_01/vit_trimsheet_01_gsma" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/trimsheet_01/vit_trimsheet_01_nm" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_int_plaster_plain" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/int_plaster_plain/vit_int_plaster_plain_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/int_plaster_plain/vit_int_plaster_plain_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/tilling_textures/int_plaster_plain/vit_int_plaster_plain_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_oval_office_celling_trim" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_prop_oval_office_celling_trim/vit_prop_oval_office_celling_trim_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_prop_oval_office_celling_trim/vit_prop_oval_office_celling_trim_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/tilling_textures/int_plaster_plain/vit_int_plaster_plain_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_oval_office_floor_trims" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_int_ocal_office_floor_trims/vit_int_oval_office_floor_trims_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_int_ocal_office_floor_trims/vit_int_oval_office_floor_trims_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/tilling_textures/int_plaster_plain/vit_int_plaster_plain_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_stair_carpet" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/props/vit_prop_carpet_crosshall_red/vit_carpet_crosshall_red_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/props/vit_prop_carpet_crosshall_red/vit_carpet_crosshall_red_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/props/vit_prop_carpet_crosshall_red/vit_carpet_crosshall_red_gsma" mip="1"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_carpet" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_carpet_vertextint/vit_carpet_crosshall_red_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_carpet_vertextint/vit_carpet_crosshall_red_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_carpet_vertextint/vit_carpet_crosshall_red_gsma" mip="1"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_ext_west_wing" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/vit_ext/vit_ext_west_wing/vit_ext_west_wing_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/vit_ext/vit_ext_west_wing/vit_ext_west_wing_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/vit_ext/vit_ext_west_wing/vit_ext_west_wing_gsma" mip="1"/>
+        <reflection_texture file="environments/cubemaps/cubemap_bridge_01" type="cubemap"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_ext_blind_glass" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/vit_ext/vit_ext_west_wing/vit_ext_west_wing_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/vit_ext/vit_ext_west_wing/vit_ext_west_wing_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/vit_ext/vit_ext_west_wing/vit_ext_west_wing_gsma" mip="1"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_stair_carpet_trim" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/props/vit_prop_carpet_crosshall_red/vit_carpet_crosshall_red_trim_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/props/vit_prop_carpet_crosshall_red/vit_carpet_crosshall_red_trim_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/props/vit_prop_carpet_crosshall_red/vit_carpet_crosshall_red_trim_gsma" mip="1"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_limestone_02" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/polished_limestone_02/vit_polished_limestone_02_df" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/tilling_textures/polished_limestone_02/vit_polished_limestone_02_gsma" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/polished_limestone_02/vit_polished_limestone_02_nm" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_brushed_metal_01" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_int_textures/metallics/dah_dark_brushed_metal_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_dah/architecture/dah_int_textures/metallics/dah_dark_brushed_metal_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_dah/architecture/dah_int_textures/metallics/dah_dark_brushed_metal_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+    </material>
+    <material render_template="shadow_caster_only:ALPHA_MASKED:EXTERNAL_ALPHA_REF" name="mat_railing_alpha_shadow" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_ext_railing/vit_ext_railing_alpha_df" mip="1"/>
+        <variable type="scalar" name="alpha_ref" value="0.089000004227273"/>
+    </material>
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:DOUBLE_SIDED:EXTERNAL_ALPHA_REF:NORMALMAP" name="mat_ext_roof_balustrade" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/vit_building_main/vit_ext_roof_balustrade_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/vit_building_main/vit_ext_roof_balustrade_nm" mip="1"/>
+        <variable type="scalar" name="alpha_ref" value="0.16400000778958"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_trimsheet_02" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/trimsheet_02/vit_trimsheet_02_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/trimsheet_02/vit_trimsheet_02_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/tilling_textures/trimsheet_02/vit_trimsheet_02_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SIMPLE_TINT" name="mat_int_ceiling_trim" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/vit_int/vit_int_trims/vit_int_trims_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/vit_int/vit_int_trims/vit_int_trims_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/vit_int/vit_int_trims/vit_int_trims_gsma" mip="1"/>
+        <reflection_texture file="environments/cubemaps/cubemap_bank_01" type="cubemap"/>
+        <variable type="vector3" name="tint_color" value="0.74509805440903 0.70588237047195 0.66274511814117"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_greenroom_wallpaper" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/green_roomwallpaper/vit_greenroom_wallpaper_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/tilling_textures/green_roomwallpaper/vit_greenroom_wallpaper_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+    </material>
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:DOUBLE_SIDED:EXTERNAL_ALPHA_REF:NORMALMAP" name="mat_ext_fika_house" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_ext_fika_house/vit_ext_fika_house_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_ext_fika_house/vit_ext_fika_house_nm" mip="1"/>
+        <variable type="scalar" name="alpha_ref" value="0.64100003044587"/>
+    </material>
+    <material render_template="shadow_caster_only:ALPHA_MASKED:DOUBLE_SIDED:EXTERNAL_ALPHA_REF" name="mat_ext_fika_house_shadow" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_ext_fika_house/vit_ext_fika_house_df" mip="1"/>
+        <variable type="scalar" name="alpha_ref" value="0.5120000243187"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_rough_concrete_wall" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/rough_concrete_wall/vit_rough_concrete_wall_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/rough_concrete_wall/vit_rough_concrete_wall_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/tilling_textures/rough_concrete_wall/vit_rough_concrete_wall_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight_blurry" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GLOSS_CONTROL_VALUE:NORMALMAP" version="2" name="mat_roof_sheets">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_ext_roof_sheets/vit_ext_roof_sheets_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_ext_roof_sheets/vit_ext_roof_sheets_nm" mip="1"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <variable type="scalar" name="glossiness_control" value="0.39600001880899"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GLOSS_CONTROL_VALUE:NORMALMAP" version="2" name="mat_roof_sheets_lod">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_ext_roof_sheets/vit_ext_roof_sheets_df" mip="4"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_ext_roof_sheets/vit_ext_roof_sheets_nm" mip="4"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <variable type="scalar" name="glossiness_control" value="0.39600001880899"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_press_ceiling_beams" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/textures/vit_int_press_room_beams/vit_int_press_room_beams_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/textures/vit_int_press_room_beams/vit_int_press_room_beams_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/textures/vit_int_press_room_beams/vit_int_press_room_beams_gsma" mip="1"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_diplomatic_room_wall_painting" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_diplomatic_room_painting/vit_diplomatic_room_wall_painting_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_diplomatic_room_painting/vit_diplomatic_room_wall_painting_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/tilling_textures/int_plaster_plain/vit_int_plaster_plain_gsma" mip="1"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_diplomatic_room_wall_painting_v2" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_diplomatic_room_painting/vit_diplomatic_room_wall_painting_v2_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_diplomatic_room_painting/vit_diplomatic_room_wall_painting_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/tilling_textures/int_plaster_plain/vit_int_plaster_plain_gsma" mip="1"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_gold" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_int_textures/metallics/dah_tiling_gold_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_dah/architecture/dah_int_textures/metallics/dah_tiling_metallics_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_dah/architecture/dah_int_textures/metallics/dah_tiling_gold_gsma" mip="1"/>
+        <reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_DEPTH_TEXTURE:NORMALMAP_UV1:PARALLAX" name="mat_palm_room_wall" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_int_palm_rom_wall/vit_int_palm_room_wall_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_int_palm_rom_wall/vit_int_palm_room_wall_dnm" mip="2"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_int_palm_rom_wall/vit_int_palm_room_wall_gsma" mip="2"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight" type="cubemap"/>
+        <variable type="scalar" name="parallax_scale" value="0.010500000498723"/>
+        <variable type="scalar" name="parallax_layers" value="8"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_door_south_portico" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/equipment/vit_interactable_door_south_portico/vit_interactable_door_south_portico_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/equipment/vit_interactable_door_south_portico/vit_interactable_door_south_portico_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/equipment/vit_interactable_door_south_portico/vit_interactable_door_south_portico_gsma" mip="1"/>
+        <reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_palm_room_floor" version="2">
+        <diffuse_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_int_palm_room_floor/vit_int_palm_room_floor_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_int_palm_room_floor/vit_int_palm_room_floor_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_vit/architecture/tilling_textures/vit_int_palm_room_floor/vit_int_palm_room_floor_gsma" mip="1"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_white_highlight" type="cubemap"/>
+    </material>
+    <material unique="true" render_template="generic:ALPHA_MASKED:CONTOUR:DIFFUSE_TEXTURE:OPACITY_TEXTURE" name="mat_outline" version="2">
+        <diffuse_texture file="units/white_df" mip="1"/>
+        <variable type="vector3" name="contour_color" value="1.0 0.5 0"/>
+        <variable type="scalar" name="contour_opacity" value="1"/>
+        <opacity_texture file="units/transparent_op"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" name="mat_broken" version="2">
+        <diffuse_texture file="units/pd2_dlc_red/props/red_prop_pillar_dest/red_prop_pillar_dest_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_red/props/red_prop_pillar_dest/red_prop_pillar_dest_nm" mip="2"/>
+    </material>
+
+<material name="mat_wood_panel_a" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_wood_panel_a_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_wood_panel_a_nm"/>
+    </material>
+    
+</materials>

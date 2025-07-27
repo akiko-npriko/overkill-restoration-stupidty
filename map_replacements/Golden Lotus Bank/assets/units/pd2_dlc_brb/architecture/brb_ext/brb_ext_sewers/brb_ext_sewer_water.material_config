@@ -1,0 +1,13 @@
+<materials version="3">
+    <material render_template="opacity:DIFFUSE_TEXTURE:DOUBLE_SIDED:IS_WATER:NORMALMAP:TAKE_FOG:TAKE_GLOBAL_LIGHT" name="mat_water" version="2">
+        <reflection_texture file="environments/cubemaps/cubemap_night_lcm" type="cubemap"/>
+        <diffuse_texture file="units/world/water/water_foam_df"/>
+        <bump_normal_texture file="units/test/water_shader/water_nm"/>
+        <variable type="scalar" name="depth_opacity" value="1566"/>
+        <variable type="vector3" name="water_col_a" value="0.07420102506876 0.12755906581879 0.21259844303131"/>
+        <variable type="vector3" name="water_col_b" value="0.16498377919197 0.28661417961121 0.30708658695221"/>
+        <variable type="vector3" name="water_settingz_b" value="0.010999999940395 0.0099999997764826 0.019899999722838"/>
+        <variable type="vector3" name="water_settingz_c" value="0.10639994591475 -1.7021000385284 0.0099999997764826"/>
+        <variable type="vector3" name="surface_settings" value="0.39999997615814 0.84999996423721 0.5"/>
+    </material>
+</materials>

@@ -1,0 +1,100 @@
+<dynamic_object>
+    <diesel orientation_object="rp_suburbia_cellar_house2" materials="units/world/architecture/suburbia/suburbia" />
+    
+	<bodies>		
+		<body name="static_body" enabled="true" template="static">
+			<object name="rp_suburbia_cellar_house2"/>
+			<object collision_type="box" name="c_bullet_box_001" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_002" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_003" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_004" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_005" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_006" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_007" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_008" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_009" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_010" padding="-2"/>
+			                                                 
+			<object collision_type="box" name="c_bullet_box_011" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_012" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_013" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_014" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_015" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_016" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_017" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_018" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_019" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_020" padding="-2"/>
+			                                                     
+			<object collision_type="box" name="c_bullet_box_021" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_022" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_023" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_024" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_025" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_026" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_027" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_028" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_029" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_030" padding="-2"/>
+			                                             
+			<object collision_type="box" name="c_bullet_box_031" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_032" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_033" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_034" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_035" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_036" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_037" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_038" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_039" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_040" padding="-2"/>
+			                                                  
+			<object collision_type="box" name="c_bullet_box_041" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_042" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_043" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_044" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_045" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_046" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_047" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_048" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_049" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_050" padding="-2"/>
+			                                                    
+			<object collision_type="box" name="c_bullet_box_050" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_051" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_052" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_053" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_054" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_055" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_056" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_057" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_058" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_059" padding="-2"/>
+			<object collision_type="box" name="c_bullet_box_060" padding="-2"/>			
+			
+			<object collision_type="convex" name="c_bullet_convex_001"/>
+			<object collision_type="convex" name="c_bullet_convex_002"/>
+			<object collision_type="convex" name="c_bullet_convex_003"/>
+			<object collision_type="convex" name="c_bullet_convex_004"/>
+			<object collision_type="convex" name="c_bullet_convex_005"/>
+			<object collision_type="convex" name="c_bullet_convex_006"/>
+			<object collision_type="convex" name="c_bullet_convex_007"/>
+			<object collision_type="convex" name="c_bullet_convex_008"/>
+			<object collision_type="convex" name="c_bullet_convex_009"/>
+			<object collision_type="convex" name="c_bullet_convex_010"/>
+			
+		</body>
+	</bodies>
+	
+	<decal_surfaces default_material="hardwood" static="true">
+		<decal_mesh name="dm_concrete" enabled="true" material="concrete" />
+		<decal_mesh name="dm_hardwood" enabled="true" material="hardwood" />
+		<decal_mesh name="dm_metal" enabled="true" material="metal" />
+	</decal_surfaces>
+	
+	<graphics>
+        <object enabled="true" name="g_cellar_house2_walls_floor" />
+        <object enabled="true" name="g_bar" />
+        <object enabled="true" name="g_wood_panel_room" />
+		<object enabled="true" name="s_s" shadow_caster="true"/>
+    </graphics>
+</dynamic_object>

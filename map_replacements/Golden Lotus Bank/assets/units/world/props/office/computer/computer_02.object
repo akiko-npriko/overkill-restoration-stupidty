@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<dynamic_object>
+  <diesel materials="units/world/props/office/computer/computer_tower" orientation_object="rp_computer_02" />
+   <sequence_manager file="units/world/props/office/computer/computer_led" />
+  <bodies>
+    <body name="static_body" enabled="true" template="static">
+      <object name="rp_computer_02" />
+      <object name="c_box" collision_type="box" padding="-3"/>
+    </body>
+  </bodies>
+  
+  <decal_surfaces default_material="sheet_metal">
+    <decal_mesh name="g_computer_02" enabled="true" material="sheet_metal"/>
+  </decal_surfaces>
+  
+  <graphics>
+    <object name="g_computer_02" enabled="true" shadow_caster="false" instance_struct="world_tm" />
+    <object name="g_led_on" enabled="true" shadow_caster="false" instance_struct="world_tm" />
+    <object name="g_led_off" enabled="false" shadow_caster="false" instance_struct="world_tm" />
+  </graphics>
+</dynamic_object> 

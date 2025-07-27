@@ -1,0 +1,55 @@
+<materials version="3">
+	<material name="mat_combuilding" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_jerry/architecture/jry_bdrop_buildings/jry_bdrop_combuilding_a_df" />
+		<bump_normal_texture file="units/pd2_dlc_jerry/architecture/jry_bdrop_buildings/jry_bdrop_combuilding_a_nm" />
+	</material>
+	<material name="mat_combuilding_lod" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_jerry/architecture/jry_bdrop_buildings/jry_bdrop_combuilding_a_lod2_df" mip="5" />
+		<bump_normal_texture file="units/pd2_dlc_jerry/architecture/jry_bdrop_buildings/jry_bdrop_combuilding_a_lod2_nm" mip="5" />
+	</material>
+	<material name="mat_common" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_jerry/architecture/jry_bdrop_buildings/jry_bdrop_building_common_df" />
+		<bump_normal_texture file="units/pd2_dlc_jerry/architecture/jry_bdrop_buildings/jry_bdrop_building_common_nm" />
+	</material>
+	<material name="shadow_caster" render_template="shadow_caster_only" version="2" />
+	<material name="mat_combuilding_b" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_jerry/architecture/jry_bdrop_buildings/jry_bdrop_combuilding_b_df" />
+		<bump_normal_texture file="units/pd2_dlc_jerry/architecture/jry_bdrop_buildings/jry_bdrop_combuilding_b_nm" />
+	</material>
+	<material name="mat_combuilding_b_lod" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_jerry/architecture/jry_bdrop_buildings/jry_bdrop_combuilding_b_lod2_df" mip="5" />
+		<bump_normal_texture file="units/pd2_dlc_jerry/architecture/jry_bdrop_buildings/jry_bdrop_combuilding_b_lod2_nm" mip="5" />
+	</material>
+	<material name="mat_indbuilding_a" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_jerry/architecture/jry_bdrop_buildings/jry_bdrop_indbuilding_a_df" />
+		<bump_normal_texture file="units/pd2_dlc_jerry/architecture/jry_bdrop_buildings/jry_bdrop_indbuilding_a_nm" />
+	</material>
+	<material name="mat_indbuilding_a_lod" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_jerry/architecture/jry_bdrop_buildings/jry_bdrop_indbuilding_a_lod2_df" mip="5" />
+		<bump_normal_texture file="units/pd2_dlc_jerry/architecture/jry_bdrop_buildings/jry_bdrop_indbuilding_a_lod2_nm" mip="5" />
+	</material>
+	<material name="mat_resbuilding_a" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_jerry/architecture/jry_bdrop_buildings/jry_bdrop_resbuilding_a_df" />
+		<bump_normal_texture file="units/pd2_dlc_jerry/architecture/jry_bdrop_buildings/jry_bdrop_resbuilding_a_nm" />
+	</material>
+	<material name="mat_resbuilding_a_lod" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_jerry/architecture/jry_bdrop_buildings/jry_bdrop_resbuilding_a_lod2_df" mip="5" />
+		<bump_normal_texture file="units/pd2_dlc_jerry/architecture/jry_bdrop_buildings/jry_bdrop_resbuilding_a_lod2_nm" mip="5" />
+	</material>
+	<material name="mat_resbuilding_b" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_jerry/architecture/jry_bdrop_buildings/jry_bdrop_resbuilding_b_df" />
+		<bump_normal_texture file="units/pd2_dlc_jerry/architecture/jry_bdrop_buildings/jry_bdrop_resbuilding_b_nm" />
+	</material>
+	<material name="mat_resbuilding_b_lod" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_jerry/architecture/jry_bdrop_buildings/jry_bdrop_resbuilding_b_lod2_df" mip="5" />
+		<bump_normal_texture file="units/pd2_dlc_jerry/architecture/jry_bdrop_buildings/jry_bdrop_resbuilding_b_lod2_nm" mip="5" />
+	</material>
+	<material name="mat_resbuilding_c" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_jerry/architecture/jry_bdrop_buildings/jry_bdrop_resbuilding_c_df" />
+		<bump_normal_texture file="units/pd2_dlc_jerry/architecture/jry_bdrop_buildings/jry_bdrop_resbuilding_c_nm" />
+	</material>
+	<material name="mat_resbuilding_c_lod" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_jerry/architecture/jry_bdrop_buildings/jry_bdrop_resbuilding_c_lod2_df" mip="5" />
+		<bump_normal_texture file="units/pd2_dlc_jerry/architecture/jry_bdrop_buildings/jry_bdrop_resbuilding_c_lod2_nm" mip="5" />
+	</material>
+</materials>

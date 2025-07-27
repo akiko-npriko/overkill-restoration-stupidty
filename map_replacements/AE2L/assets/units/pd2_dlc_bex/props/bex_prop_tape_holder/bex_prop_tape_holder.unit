@@ -1,0 +1,15 @@
+<unit type="bex" slot="1">
+	<object file="units/pd2_dlc_bex/props/bex_prop_tape_holder/bex_prop_tape_holder" />
+	<dependencies>
+		<depends_on bnk="soundbanks/regular_sfx" />
+	</dependencies>
+	<extensions>
+        <extension name="damage" class="UnitDamage" />
+		<extension name="unit_data" class="ScriptUnitData" />
+	    <extension name="interaction" class="SpecialEquipmentInteractionExt">
+			<var name="tweak_data" value="take_tape" />
+			<var name="_special_equipment" value="tape" />
+			<var name="_remove_on_interact" value="false" />
+	    </extension>
+	</extensions>
+</unit>

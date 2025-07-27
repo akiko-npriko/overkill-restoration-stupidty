@@ -1,0 +1,14 @@
+<dynamic_object>
+    <diesel orientation_object="rp_mus_prop_curator_dividers_glass_01" materials="units/pd2_indiana/architecture/mus_int_lab/mus_prop_curator_dividers" />
+	<sequence_manager file="units/pd2_indiana/architecture/mus_int_lab/mus_prop_curator_dividers_glass_01" />
+	
+    <bodies>
+		<body name="glass_body" template="window" enabled="true" >
+			<object name="c_box_glass" collision_type="box" padding="-2.5"/>
+	    </body>
+    </bodies>
+
+    <graphics>
+		<object enabled="true" name="g_glass" />
+    </graphics>
+</dynamic_object>

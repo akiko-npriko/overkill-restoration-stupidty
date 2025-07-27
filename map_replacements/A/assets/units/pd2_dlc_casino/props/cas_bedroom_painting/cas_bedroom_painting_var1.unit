@@ -1,0 +1,12 @@
+<unit type="cas" slot="1">
+	<object file="units/pd2_dlc_casino/props/cas_bedroom_painting/cas_bedroom_painting_var1" />
+	<network sync="spawn"/>
+	<dependencies>
+		<depends_on physic_effect="physic_effects/push_sphere_unit" />
+ 	</dependencies>
+
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+	</extensions>
+</unit>

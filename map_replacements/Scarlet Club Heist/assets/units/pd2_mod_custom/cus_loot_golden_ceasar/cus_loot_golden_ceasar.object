@@ -1,0 +1,26 @@
+<dynamic_object>
+    <diesel materials="units/pd2_mod_custom/cus_loot_golden_ceasar/cus_loot_golden_ceasar" orientation_object="rp_root" />
+    <sequence_manager file="units/pd2_mod_custom/cus_loot_golden_ceasar/cus_loot_golden_ceasar" />
+	
+	<bodies>
+		<body enabled="true" template="static" name="body_pillow" >	
+            <object collision_type="box" name="c_pillow" padding="-2.5"/>
+		</body>
+		<body enabled="true" template="static" name="body_bust" >	
+            <object collision_type="convex" name="c_bust" padding="-2.5"/>
+		</body>
+    </bodies>
+	
+		
+	<decal_surfaces>
+        <decal_mesh enabled="true" name="g_bust" material="steel" />
+        <decal_mesh enabled="true" name="g_pillow" material="cloth" />
+    </decal_surfaces>
+	
+	
+    <graphics>
+		<object name="g_pillow" enabled="true"/>
+		<object name="g_bust" enabled="true"/>
+    </graphics>
+
+</dynamic_object>

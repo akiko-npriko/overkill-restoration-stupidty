@@ -1,0 +1,25 @@
+<materials version="3" group="dah_prop_desk_lamp_group">
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_desk_lamp" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/props/dah_prop_desk_lamp/dah_prop_desk_lamp_df"/>
+        <bump_normal_texture file="units/pd2_dlc_dah/props/dah_prop_desk_lamp/dah_prop_desk_lamp_nm"/>
+		<material_texture file="units/pd2_dlc_dah/props/dah_prop_desk_lamp/dah_prop_desk_lamp_gsma"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:SELF_ILLUMINATION" name="mat_desk_lamp_il" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/props/dah_prop_desk_lamp/dah_prop_desk_lamp_df"/>
+        <bump_normal_texture file="units/pd2_dlc_dah/props/dah_prop_desk_lamp/dah_prop_desk_lamp_nm"/>
+        <self_illumination_texture file="units/pd2_dlc_dah/props/dah_prop_desk_lamp/dah_prop_desk_lamp_il"/>
+        <variable type="scalar" name="il_multiplier" value="match"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_desk_lamp_lod" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/props/dah_prop_desk_lamp/dah_prop_desk_lamp_df" mip="4"/>
+        <bump_normal_texture file="units/pd2_dlc_dah/props/dah_prop_desk_lamp/dah_prop_desk_lamp_nm" mip="4"/>
+		<material_texture file="units/pd2_dlc_dah/props/dah_prop_desk_lamp/dah_prop_desk_lamp_gsma" mip="4"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:SELF_ILLUMINATION" name="mat_desk_lamp_lod_il" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/props/dah_prop_desk_lamp/dah_prop_desk_lamp_df" mip="4"/>
+        <bump_normal_texture file="units/pd2_dlc_dah/props/dah_prop_desk_lamp/dah_prop_desk_lamp_nm" mip="4"/>
+        <self_illumination_texture file="units/pd2_dlc_dah/props/dah_prop_desk_lamp/dah_prop_desk_lamp_il" mip="2"/>
+        <variable type="scalar" name="il_multiplier" value="match"/>
+    </material>
+    <material render_template="shadow_caster_only" name="shadow_caster" version="2"/>
+</materials>

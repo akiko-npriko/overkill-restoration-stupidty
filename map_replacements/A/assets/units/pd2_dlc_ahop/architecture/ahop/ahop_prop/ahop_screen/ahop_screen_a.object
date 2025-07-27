@@ -1,0 +1,15 @@
+<dynamic_object>
+    <diesel orientation_object="rp_stn_prop_screen_a" materials="units/pd2_dlc_ahop/architecture/ahop/ahop_prop/ahop_screen/ahop_screen_a"/>
+	<sequence_manager file="units/pd2_dlc_ahop/architecture/ahop/ahop_prop/ahop_screen/ahop_screen"/>
+	<bodies>
+        <body enabled="true" template="static" name="monitor_body">
+            <object collision_type="box" name="c_box_00" />
+        </body>
+    </bodies>	
+    <decal_surfaces>
+        <decal_mesh enabled="true" name="dm_plastic" material="plastic"/>
+    </decal_surfaces>
+    <graphics>
+        <object enabled="true" name="g_screen" />
+    </graphics>
+</dynamic_object>

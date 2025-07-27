@@ -1,0 +1,40 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_sah/architecture/sah_master" orientation_object="rp_sah_int_wood_railing_1m" />
+	<sequence_manager file="units/pd2_dlc_sah/architecture/sah_int/sah_int_wood_railing/sah_int_wood_railing_1m" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_sah_int_wood_railing_1m" />
+			<object name="c_baluster_01_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_baluster_01_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_baluster_01_capsule_01" collision_type="capsule" padding="-2.5" />
+			<object name="c_baluster_02_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_baluster_02_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_baluster_02_capsule_01" collision_type="capsule" padding="-2.5" />
+			<object name="c_baluster_03_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_baluster_03_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_baluster_03_capsule_01" collision_type="capsule" padding="-2.5" />
+			<object name="c_baluster_04_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_baluster_04_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_baluster_04_capsule_01" collision_type="capsule" padding="-2.5" />
+			<object name="c_handrail_01_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_handrail_01_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_stringer_01_box_01" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="wood">
+		<decal_mesh name="dm_wood_baluster_01" enabled="true" material="wood" />
+		<decal_mesh name="dm_wood_baluster_02" enabled="true" material="wood" />
+		<decal_mesh name="dm_wood_baluster_03" enabled="true" material="wood" />
+		<decal_mesh name="dm_wood_baluster_04" enabled="true" material="wood" />
+		<decal_mesh name="dm_wood_handrail_01" enabled="true" material="wood" />
+		<decal_mesh name="dm_wood_stringer_01" enabled="true" material="wood" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_baluster_01" enabled="true" />
+		<object name="g_baluster_02" enabled="true" />
+		<object name="g_baluster_03" enabled="true" />
+		<object name="g_baluster_04" enabled="true" />
+		<object name="g_handrail_01" enabled="true" />
+		<object name="g_stringer_01" enabled="true" />
+	</graphics>
+</dynamic_object>

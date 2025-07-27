@@ -1,0 +1,15 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_fish/props/lxy_int_prop_rug/lxy_int_prop_rug" orientation_object="rp_lxy_int_prop_rug" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_lxy_int_prop_rug" />
+			<object name="c_c" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="cloth">
+		<decal_mesh name="dm_cloth" enabled="true" material="cloth" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_g" enabled="true" />
+	</graphics>
+</dynamic_object>

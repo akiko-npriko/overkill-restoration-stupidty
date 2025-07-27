@@ -1,0 +1,48 @@
+<dynamic_object>
+    <diesel orientation_object="rp_com_prop_flowervase" materials="units/payday2/props/com_prop_flowervase/com_prop_flowervase" />
+    <sequence_manager file="units/payday2/props/com_prop_flowervase/com_prop_flowervase" />
+	<bodies>
+		<body name="static_body_vase" enabled="true" template="static">
+			<object name="rp_com_prop_flowervase" />
+			<object name="c_box_vase" collision_type="box" padding="-2.5"/>
+			<object name="c_sphere_01" collision_type="sphere" padding="-2.5"/>
+		</body>
+		<body name="dynamic_body_vase" enabled="false" template="debris">
+			<object name="c_box_vase" collision_type="box" padding="-2.5"/>
+		</body>
+				
+		<body name="deb_body_01" enabled="false" template="debris">
+			<object name="c_convex_debris_01" collision_type="convex"  padding="0.5"/>
+		</body>
+		<body name="deb_body_02" enabled="false" template="debris">
+			<object name="c_convex_debris_02" collision_type="convex" padding="0.5"/>
+		</body>
+		<body name="deb_body_03" enabled="false" template="debris">
+			<object name="c_convex_debris_03" collision_type="convex" padding="0.5"/>
+		</body>
+		<body name="deb_body_04" enabled="false" template="debris">
+			<object name="c_capsule_debris_04" collision_type="capsule" />
+		</body>
+		<body name="deb_body_05" enabled="false" template="debris">      
+			<object name="c_capsule_debris_05" collision_type="capsule" />
+		</body> 
+		<body name="deb_body_06" enabled="false" template="debris">      
+			<object name="c_capsule_debris_06" collision_type="capsule" />
+		</body>
+	</bodies>
+    <graphics>
+		<object name="g_deb_01" enabled="false"/>
+		<object name="g_deb_02" enabled="false"/>
+		<object name="g_deb_03" enabled="false"/>
+		<object name="g_deb_04" enabled="false"/>
+		<object name="g_deb_05" enabled="false"/>
+		<object name="g_deb_06" enabled="false"/>
+
+		<object name="g_deb_07" enabled="false"/>
+		<object name="g_deb_08" enabled="false"/>
+		<object name="g_deb_09" enabled="false"/>
+
+		<object name="g_flower" enabled="true"/>
+		<object name="g_vase" 	enabled="true"/>
+    </graphics>
+</dynamic_object>

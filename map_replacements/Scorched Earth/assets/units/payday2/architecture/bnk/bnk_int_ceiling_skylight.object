@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<dynamic_object>
+	<diesel materials="units/payday2/architecture/bnk/bnk_int" orientation_object="rp_bnk_int_ceiling_skylight" />
+    <bodies>
+        <body name="static_body" template="static" enabled="true" >
+            <object name="rp_bnk_int_ceiling_skylight"/>
+			<object name="c_meshmopp" collision_type="mesh_mopp" />
+        </body>
+    </bodies>
+	
+	<decal_surfaces default_material="plaster" static="true">
+		<decal_mesh name="dm_plaster" material="plaster" enabled="true"/>
+	</decal_surfaces> 
+	
+    <graphics>
+        <object enabled="true" name="g_g" />
+		<object name="s_s" enabled="true" shadow_caster="true"/>
+    </graphics>
+</dynamic_object> 

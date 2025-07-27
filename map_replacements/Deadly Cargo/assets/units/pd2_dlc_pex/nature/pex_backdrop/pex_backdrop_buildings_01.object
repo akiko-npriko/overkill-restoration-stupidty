@@ -1,0 +1,12 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_pex/nature/pex_backdrop/pex_backdrop_buildings_01" orientation_object="rp_pex_backdrop_buildings_01" />
+	<graphics>
+		<object name="g_g" enabled="true" />
+	</graphics>
+	<bodies>
+        <body enabled="true" template="editor" name="editor_body" >
+			<object name="rp_pex_backdrop_buildings_01"/>
+			<object name="c_box_editor" collision_type="box"/>
+        </body>
+    </bodies>
+</dynamic_object>

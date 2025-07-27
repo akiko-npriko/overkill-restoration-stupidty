@@ -1,0 +1,45 @@
+<materials version="3">
+    <material name="door" render_template="generic:DIFFUSE_TEXTURE" version="2">
+        <diffuse_texture file="units/world/props/door_suburban_01/door_suburbua_df"/>
+    </material>
+	
+	<material name="porch_glass" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:NORMALMAP:OPACITY_FADE_TO_SOLID" version="2">
+        <variable value="0 1 0.41999998688698" type="vector3" name="fresnel_settings"/>
+        <opacity_texture file="units/world/architecture/suburbia/textures/porch_glass_op"/>
+        <diffuse_texture file="units/world/architecture/suburbia/textures/porch_glass_df"/>
+        <reflection_texture type="cubemap" global_texture="current_global_texture"/>
+        <bump_normal_texture file="units/world/architecture/suburbia/textures/porch_glass_nm"/>
+        <variable value="577 3051 0" type="vector3" name="opacity_fade_to_solid"/>
+    </material>
+	
+	<material name="crowbareddoor_material" render_template="decal:DIFFUSE_TEXTURE" version="2">
+        <diffuse_texture file="units/world/architecture/suburbia/textures/crowbared_door_decal_df"/>
+    </material>
+
+    <material name="mtr_lockpick" render_template="effect:DIFFUSE0_TEXTURE:VIEW_ANGLE_FALLOFF_OP" version="2">
+        <diffuse_texture file="units/gui/lockpick_indicator_df"/>
+        <variable value="identity" type="scalar" name="intensity"/>
+        <variable value="1" type="scalar" name="falloff_exp"/>
+    </material>
+    <material name="mat_crowbar" render_template="effect:DIFFUSE0_TEXTURE:VIEW_ANGLE_FALLOFF_OP" version="2">
+        <diffuse_texture file="units/gui/crowbar_indicator_df"/>
+        <variable value="identity" type="scalar" name="intensity"/>
+        <variable value="1" type="scalar" name="falloff_exp"/>
+    </material>
+    <material name="mat_contour" render_template="generic:ALPHA_MASKED:CONTOUR:DIFFUSE_TEXTURE:OPACITY_TEXTURE" unique="true" version="2">
+        <diffuse_texture file="units/white_df"/>
+        <variable value="0 1 0" type="vector3" name="contour_color"/>
+        <variable value="1" type="scalar" name="contour_opacity"/>
+        <opacity_texture file="units/transparent_op"/>
+    </material>
+
+    <material name="hud_brackets" render_template="effect:DIFFUSE0_TEXTURE:VIEW_ANGLE_FALLOFF_OP" version="2">
+        <diffuse_texture file="units/gui/gui_brackets_df"/>
+        <variable value="identity" type="scalar" name="intensity"/>
+        <variable value="1" type="scalar" name="falloff_exp"/>
+    </material>
+	
+
+    <material name="shadow_caster" render_template="shadow_caster_only" version="2"/>
+    
+</materials> 

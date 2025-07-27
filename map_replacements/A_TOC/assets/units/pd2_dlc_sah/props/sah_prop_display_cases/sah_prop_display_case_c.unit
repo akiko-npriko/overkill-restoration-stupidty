@@ -1,0 +1,15 @@
+<unit type="sah" slot="1">
+	<object file="units/pd2_dlc_sah/props/sah_prop_display_cases/sah_prop_display_case_c" />
+	<dependencies>
+		<depends_on effect="effects/payday2/particles/window/storefront_window_small" />		
+	</dependencies>	
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+        <extension name="interaction" class="UseInteractionExt">
+        	<var name="tweak_data" value="pick_lock_easy_no_skill" />
+        	<var name="_interact_object" value="interact"/>
+            <var name="drop_in_sync_tweak_data" value="true" />
+        </extension>
+	</extensions>
+</unit>

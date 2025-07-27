@@ -1,0 +1,63 @@
+<dynamic_object>
+    <diesel orientation_object="rp_csb_sewer_gate" materials="units/pd2_dlc2/architecture/csb_sewer/csb_sewer" />
+	<sequence_manager file="units/pd2_dlc2/architecture/csb_sewer/csb_sewer_gate" />
+    <animations>
+		<animation_group name="door" enabled="false">
+			<object name="a_door" />
+		</animation_group>
+	</animations>
+	
+	<bodies>
+        <body enabled="true" template="mover_blocker" name="mover_body" >
+			<object name="rp_csb_sewer_gate"/>
+			<object name="c_box_mover0" collision_type="box" padding="-2.5"/>
+			<object name="c_box_mover1" collision_type="box" padding="-2.5"/>
+			<object name="c_box_mover2" collision_type="box" padding="-2.5"/>
+        </body>
+		<body name="door_mover" enabled="true" template="animated_no_ray">
+			<object name="a_door"/>
+			<object name="c_box_door_mover" collision_type="box" padding="-2"/>
+		</body>
+
+		<body name="door_bullet" enabled="true" template="raycoll">
+			<object name="rp_csb_sewer_gate"/>
+			<object name="c_box_bullet_00" collision_type="box" padding="-2"/>
+			<object name="c_box_bullet_01" collision_type="box" padding="-2"/>
+			<object name="c_box_bullet_02" collision_type="box" padding="-2"/>
+			<object name="c_box_bullet_03" collision_type="box" padding="-2"/>
+			<object name="c_box_bullet_04" collision_type="box" padding="-2"/>
+		</body>
+
+		<body name="body_convex_ramp" enabled="true" template="nav_walk">
+			<object name="rp_csb_sewer_gate" />
+			<object name="c_convex_ramp" collision_type="convex" padding="-2.5" />
+		</body>
+
+		<body name="body_hitbox_door_handle_out" enabled="true" template="static" collides_with_mover="false">
+			<object name="a_door" />
+			<object name="c_hitbox_door_handle_out" collision_type="box" padding="-2.5" />
+		</body>
+    </bodies>
+			
+    <decal_surfaces>
+        <decal_mesh enabled="true" name="dm_door_metal" material="metal" />
+        <decal_mesh enabled="true" name="dm_frame_metal" material="metal" />
+        <decal_mesh enabled="true" name="dm_frame_stone" material="thin_layer" />
+    </decal_surfaces>
+	
+    <!--<effects>
+        <effect_spawner enabled="true" name="e_spark" />
+    </effects>
+	-->
+    <graphics>
+        <object enabled="true" name="g_door" />
+        <object enabled="true" name="g_gate" />
+
+        <graphic_group name="ghosticongroup" 	enabled="true" culling_object="g_icon">
+			<lod_object name="icon_lod">
+					<object name="g_icon" 		enabled="true"  max_distance="450"  max_draw_lod="0" />
+					<object name="g_icon_lod1" 	enabled="true"  lod="1" />
+			</lod_object>
+		</graphic_group>
+    </graphics>
+</dynamic_object>

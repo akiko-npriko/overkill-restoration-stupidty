@@ -1,0 +1,14 @@
+<materials version="3">
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE" name="mat_pex_backdrop_buildings_01" version="2">
+        <diffuse_texture file="units/pd2_dlc_pex/nature/pex_backdrop/pex_backdrop_buildings_01_df"/>
+        <material_texture file="units/pd2_dlc_pex/nature/pex_backdrop/pex_backdrop_buildings_01_gsma"/>
+    </material>
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF" name="mat_pex_backdrop_vegetation_01" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/rvd_ext_bdrop_houseblock/rvd_ext_bdrop_houseblock_props_df"/>
+        <variable type="scalar" name="alpha_ref" value="0.015000000712462"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE" name="mat_pex_highway_01" version="2">
+        <diffuse_texture file="units/pd2_dlc_pex/nature/pex_backdrop/pex_backdrop_highway_01_df"/>
+        <material_texture file="units/pd2_dlc_pex/nature/pex_backdrop/pex_backdrop_highway_01_gsma"/>
+    </material>
+</materials>

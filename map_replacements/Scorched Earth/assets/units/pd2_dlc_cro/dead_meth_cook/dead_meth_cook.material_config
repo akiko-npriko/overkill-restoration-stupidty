@@ -1,0 +1,7 @@
+<materials version="3">
+    <material name="mtr_body" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <bump_normal_texture 	file="units/payday2/characters/shared_textures/civ_male_methcook_1_nm"/>
+        <diffuse_texture 		file="units/payday2/characters/shared_textures/civ_male_methcook_1_df"/>
+    </material>
+    <material name="shadow_caster" render_template="shadow_caster_only" version="2"/>
+</materials>

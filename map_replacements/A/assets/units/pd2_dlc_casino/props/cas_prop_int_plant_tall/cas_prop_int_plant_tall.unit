@@ -1,0 +1,13 @@
+<unit type="cas" slot="1">
+	<object file="units/pd2_dlc_casino/props/cas_prop_int_plant_tall/cas_prop_int_plant_tall" />
+	<network sync="spawn"/>
+	<dependencies>
+		<depends_on bnk="soundbanks/regular_sfx" />
+		<depends_on physic_effect="physic_effects/push_sphere" />
+		<depends_on effect="effects/payday2/particles/destruction/dest_plant_matter" />
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+	</extensions>
+</unit>

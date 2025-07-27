@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_casino/props/cas_int_keyboard/cas_int_keyboard" orientation_object="rp_cas_int_keyboard" />
+	<sequence_manager file="units/pd2_dlc_casino/props/cas_int_keyboard/cas_int_keyboard"/>
+	<bodies>
+		<body name="static_body" enabled="false" template="static">
+			<object name="rp_cas_int_keyboard" />
+			<object name="c_box_01" collision_type="box" />
+		</body>
+		<body name="editor" enabled="true" template="editor">
+			<object name="c_box_01" collision_type="box" />
+		</body>
+	</bodies>
+	
+	<decal_surfaces default_material="plastic" static="true">
+		<decal_mesh name="dm_computer_keyboard" enabled="true" material="plastic" />
+	</decal_surfaces>
+	
+	<graphics>
+		<graphic_group name="keyboard_grp" enabled="true">
+			<lod_object name="graphic_lod">
+				<object name="g_computer_keyboard" enabled="true"  max_distance="200"  max_draw_lod="0" />
+				<object name="g_contour" enabled="true" lod="2" />
+			</lod_object>
+		</graphic_group>
+		
+	</graphics>
+</dynamic_object>
+

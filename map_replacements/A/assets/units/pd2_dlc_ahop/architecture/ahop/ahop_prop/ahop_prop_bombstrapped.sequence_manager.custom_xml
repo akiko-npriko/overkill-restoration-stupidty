@@ -1,0 +1,33 @@
+<table>
+	<unit>
+		<body name="'bomb_trigger'">
+			<endurance bullet="3" explosion="1" lock="2" melee="1">
+				<run_sequence name="'switch_to_explode'"/>
+			</endurance>
+		</body>
+		<sequence editable_state="true" name="'state_enable_interaction'" triggable="true">
+			<interaction enabled="true"/>
+		</sequence>
+		<sequence editable_state="true" name="'state_disable_interaction'" triggable="true">
+			<interaction enabled="false"/>
+		</sequence>
+		<sequence editable_state="false" name="'switch_to_explode'" once="true" triggable="false">
+			<interaction enabled="false"/>
+			<body enabled="false" name="'body_static'"/>
+			<body enabled="false" name="'bomb_trigger'"/>
+			<object enabled="false" name="'g_head'"/>
+			<object enabled="false" name="'g_body'"/>
+			<object enabled="false" name="'g_bag'"/>
+			<object enabled="false" name="'g_vest'"/>
+			<object enabled="false" name="'g_chair'"/>
+			<object enabled="true" name="'g_scorch'"/>
+			<effect name="'effects/payday2/particles/explosions/c4_blood_explosion'" parent="object( 'e_explosion' )" position="v()"/>
+			<spawn_unit name="'units/payday2/props/hlm_prop_bombstrapped/hlm_prop_gib_shoulder'" position="object_pos('spawn_gib_shoulder')" rotation="object_rot('spawn_gib_shoulder')"/>
+			<spawn_unit name="'units/payday2/props/hlm_prop_bombstrapped/hlm_prop_gib_arm'" position="object_pos('spawn_gib_arm')" rotation="object_rot('spawn_gib_arm')"/>
+			<spawn_unit name="'units/payday2/props/hlm_prop_bombstrapped/hlm_prop_gib_leg'" position="object_pos('spawn_gib_leg')" rotation="object_rot('spawn_gib_leg')"/>
+			<physic_effect name="'physic_effects/push_sphere'" param1="45" param2="25" target="dest_unit:get_object( Idstring('Spine') )"/>
+			<sound action="'play'" event="'explosion_human'" object="'e_explosion'"/>
+		</sequence>
+		<sequence editable_state="false" name="'interact'" triggable="false"/>
+	</unit>
+</table>

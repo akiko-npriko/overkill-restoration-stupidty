@@ -1,0 +1,18 @@
+<unit type="pta" slot="1" >
+    <object file="units/pd2_dlc_peta/props/pta_interactable_electric_box/pta_interactable_electric_box"/>
+    <network sync="spawn"/>
+    <dependencies>
+        <depends_on bnk="soundbanks/regular_sfx" />
+        <depends_on effect="effects/particles/dest/sparks_lamp_dest" />
+    </dependencies>
+    
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+        <extension name="damage" class="UnitDamage" />
+        <extension name="interaction" class="UseInteractionExt">
+        	<var name="tweak_data" value="invisible_interaction_open_axis" />
+        	<var name="_interact_object" value="interact"/>
+            <var name="drop_in_sync_tweak_data" value="true" />
+        </extension>
+    </extensions>
+</unit>

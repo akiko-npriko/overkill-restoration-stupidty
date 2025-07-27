@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<unit type="gen" slot="1">
+	<object file="units/payday2/equipment/gen_interactable_thermite/gen_interactable_thermite" />
+	<network sync="spawn"/>
+	<dependencies>
+		<depends_on effect="effects/payday2/particles/fire/thermite" />
+		<depends_on effect="effects/payday2/environment/thermal_hole_drops" />
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="UseInteractionExt">
+			<var name="tweak_data" value="gen_int_thermite_rig" />
+			<var name="_interact_object" value="int_location"/>
+			<var name="drop_in_sync_tweak_data" value="true" />
+		</extension>
+	</extensions>
+</unit>

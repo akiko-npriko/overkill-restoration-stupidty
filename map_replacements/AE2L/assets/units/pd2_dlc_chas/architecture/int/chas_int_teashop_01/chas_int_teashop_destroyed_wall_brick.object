@@ -1,0 +1,31 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_chas/architecture/int/chas_int_teashop_01/chas_int_teashop_destroyed_wall_brick" orientation_object="rp_chas_int_teashop_destroyed_wall_brick" />
+	<sequence_manager file="units/pd2_dlc_chas/architecture/int/chas_int_teashop_01/chas_int_teashop_destroyed_wall_brick" />
+	<bodies>
+		<body name="body_whole" enabled="true" template="static">
+			<object name="rp_chas_int_teashop_destroyed_wall_brick" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />			
+		</body>
+		<body name="body_destroyed" enabled="false" template="static">
+			<object name="rp_chas_int_teashop_destroyed_wall_brick" />			
+			<object name="c_box_05" collision_type="box" padding="-2.5" />
+			<object name="c_box_06" collision_type="box" padding="-2.5" />
+			<object name="c_box_07" collision_type="box" padding="-2.5" />
+			<object name="c_box_08" collision_type="box" padding="-2.5" />
+			<object name="c_meshmopp_01" collision_type="mesh_mopp" />
+		</body>
+	</bodies>
+
+	<effects>
+		<effect_spawner name="break" enabled="false" object="e_effect" effect="effects/payday2/particles/impacts/car_crash_concrete_big" />
+	</effects>
+	
+	<decal_surfaces default_material="thin_layer">
+		<decal_mesh name="dm_plaster_destroyed" enabled="false" material="plaster" />
+		<decal_mesh name="dm_plaster_whole" enabled="true" material="plaster" />		
+	</decal_surfaces>
+	<graphics>
+		<object name="g_g_destroyed" enabled="false" />
+		<object name="g_g_whole" enabled="true" />
+	</graphics>
+</dynamic_object>

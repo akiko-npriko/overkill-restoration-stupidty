@@ -1,0 +1,269 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/payday2/architecture/hcm/hcm_jewstreet" orientation_object="rp_hcm_int_jewstreet_pillar_a" />
+	<sequence_manager file="units/payday2/architecture/hcm/hcm_int_jewstreet_pillar_a" />
+	
+	<bodies>
+		<body name="body_concrete" enabled="true"template="static" >
+			<object name="rp_hcm_int_jewstreet_pillar_a" />
+			<object name="c_pillar_a_concretebase" collision_type="convex" padding="-2.5" />
+		</body>
+		<body name="body_tiles" enabled="true"template="static" collision_class="minor_debris">
+			<object name="rp_hcm_int_jewstreet_pillar_a" />
+			<object name="c_pillar_a" collision_type="mesh_mopp" />
+		</body>
+		<!-- STATIC DESTRUCTION PIECES -->
+		<body name="body_stc_tiles_piece_1" enabled="true"template="static" collision_class="minor_debris">
+			<object name="c_gibs_1" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_stc_tiles_piece_2" enabled="true"template="static" collision_class="minor_debris">
+			<object name="c_gibs_2" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_stc_tiles_piece_3" enabled="true"template="static" collision_class="minor_debris">
+			<object name="c_gibs_3" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_stc_tiles_piece_4" enabled="true"template="static" collision_class="minor_debris">
+			<object name="c_gibs_4" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_stc_tiles_piece_5" enabled="true"template="static" collision_class="minor_debris">
+			<object name="c_gibs_5" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_stc_tiles_piece_6" enabled="true"template="static" collision_class="minor_debris">
+			<object name="c_gibs_6" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_stc_tiles_piece_7" enabled="true"template="static" collision_class="minor_debris">
+			<object name="c_gibs_7" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_stc_tiles_piece_8" enabled="true"template="static" collision_class="minor_debris">
+			<object name="c_gibs_8" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_stc_tiles_piece_9" enabled="true"template="static" collision_class="minor_debris">
+			<object name="c_gibs_9" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_stc_tiles_piece_10" enabled="true"template="static" collision_class="minor_debris">
+			<object name="c_gibs_10" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_stc_tiles_piece_11" enabled="true"template="static" collision_class="minor_debris">
+			<object name="c_gibs_11" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_stc_tiles_piece_12" enabled="true"template="static" collision_class="minor_debris">
+			<object name="c_gibs_12" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_stc_tiles_piece_13" enabled="true"template="static" collision_class="minor_debris">
+			<object name="c_gibs_13" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_stc_tiles_piece_14" enabled="true"template="static" collision_class="minor_debris">
+			<object name="c_gibs_14" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_stc_tiles_piece_15" enabled="true"template="static" collision_class="minor_debris">
+			<object name="c_gibs_15" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_stc_tiles_piece_16" enabled="true"template="static" collision_class="minor_debris">
+			<object name="c_gibs_16" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_stc_tiles_piece_17" enabled="true"template="static" collision_class="minor_debris">
+			<object name="c_gibs_17" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_stc_tiles_piece_18" enabled="true"template="static" collision_class="minor_debris">
+			<object name="c_gibs_18" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_stc_tiles_piece_19" enabled="true"template="static" collision_class="minor_debris">
+			<object name="c_gibs_19" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_stc_tiles_piece_20" enabled="true"template="static" collision_class="minor_debris">
+			<object name="c_gibs_20" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_stc_tiles_piece_21" enabled="true"template="static" collision_class="minor_debris">
+			<object name="c_gibs_21" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_stc_tiles_piece_22" enabled="true"template="static" collision_class="minor_debris">
+			<object name="c_gibs_22" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_stc_tiles_piece_23" enabled="true"template="static" collision_class="minor_debris">
+			<object name="c_gibs_23" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_stc_tiles_piece_24" enabled="true"template="static" collision_class="minor_debris">
+			<object name="c_gibs_24" collision_type="convex" padding="-4" />
+		</body>
+		<!-- DESTRUCTION PIECES -->
+		<body name="body_dst_tiles_piece_1" enabled="false" template="dynamic" collision_class="minor_debris" collides_with_mover="false" pushed_by_mover="false">
+			<object name="c_gibs_1" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_dst_tiles_piece_2" enabled="false" template="dynamic" collision_class="minor_debris" collides_with_mover="false" pushed_by_mover="false">
+			<object name="c_gibs_2" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_dst_tiles_piece_3" enabled="false" template="dynamic" collision_class="minor_debris" collides_with_mover="false" pushed_by_mover="false">
+			<object name="c_gibs_3" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_dst_tiles_piece_4" enabled="false" template="dynamic" collision_class="minor_debris" collides_with_mover="false" pushed_by_mover="false">
+			<object name="c_gibs_4" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_dst_tiles_piece_5" enabled="false" template="dynamic" collision_class="minor_debris" collides_with_mover="false" pushed_by_mover="false">
+			<object name="c_gibs_5" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_dst_tiles_piece_6" enabled="false" template="dynamic" collision_class="minor_debris" collides_with_mover="false" pushed_by_mover="false">
+			<object name="c_gibs_6" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_dst_tiles_piece_7" enabled="false" template="dynamic" collision_class="minor_debris" collides_with_mover="false" pushed_by_mover="false">
+			<object name="c_gibs_7" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_dst_tiles_piece_8" enabled="false" template="dynamic" collision_class="minor_debris" collides_with_mover="false" pushed_by_mover="false">
+			<object name="c_gibs_8" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_dst_tiles_piece_9" enabled="false" template="dynamic" collision_class="minor_debris" collides_with_mover="false" pushed_by_mover="false">
+			<object name="c_gibs_9" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_dst_tiles_piece_10" enabled="false" template="dynamic" collision_class="minor_debris" collides_with_mover="false" pushed_by_mover="false">
+			<object name="c_gibs_10" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_dst_tiles_piece_11" enabled="false" template="dynamic" collision_class="minor_debris" collides_with_mover="false" pushed_by_mover="false">
+			<object name="c_gibs_11" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_dst_tiles_piece_12" enabled="false" template="dynamic" collision_class="minor_debris" collides_with_mover="false" pushed_by_mover="false">
+			<object name="c_gibs_12" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_dst_tiles_piece_13" enabled="false" template="dynamic" collision_class="minor_debris" collides_with_mover="false" pushed_by_mover="false">
+			<object name="c_gibs_13" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_dst_tiles_piece_14" enabled="false" template="dynamic" collision_class="minor_debris" collides_with_mover="false" pushed_by_mover="false">
+			<object name="c_gibs_14" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_dst_tiles_piece_15" enabled="false" template="dynamic" collision_class="minor_debris" collides_with_mover="false" pushed_by_mover="false">
+			<object name="c_gibs_15" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_dst_tiles_piece_16" enabled="false" template="dynamic" collision_class="minor_debris" collides_with_mover="false" pushed_by_mover="false">
+			<object name="c_gibs_16" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_dst_tiles_piece_17" enabled="false" template="dynamic" collision_class="minor_debris" collides_with_mover="false" pushed_by_mover="false">
+			<object name="c_gibs_17" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_dst_tiles_piece_18" enabled="false" template="dynamic" collision_class="minor_debris" collides_with_mover="false" pushed_by_mover="false">
+			<object name="c_gibs_18" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_dst_tiles_piece_19" enabled="false" template="dynamic" collision_class="minor_debris" collides_with_mover="false" pushed_by_mover="false">
+			<object name="c_gibs_19" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_dst_tiles_piece_20" enabled="false" template="dynamic" collision_class="minor_debris" collides_with_mover="false" pushed_by_mover="false">
+			<object name="c_gibs_20" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_dst_tiles_piece_21" enabled="false" template="dynamic" collision_class="minor_debris" collides_with_mover="false" pushed_by_mover="false">
+			<object name="c_gibs_21" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_dst_tiles_piece_22" enabled="false" template="dynamic" collision_class="minor_debris" collides_with_mover="false" pushed_by_mover="false">
+			<object name="c_gibs_22" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_dst_tiles_piece_23" enabled="false" template="dynamic" collision_class="minor_debris" collides_with_mover="false" pushed_by_mover="false">
+			<object name="c_gibs_23" collision_type="convex" padding="-4" />
+		</body>
+
+		<body name="body_dst_tiles_piece_24" enabled="false" template="dynamic" collision_class="minor_debris" collides_with_mover="false" pushed_by_mover="false">
+			<object name="c_gibs_24" collision_type="convex" padding="-4" />
+		</body>
+	</bodies>
+
+	<decal_surfaces default_material="tile">
+		<decal_mesh name="g_pillar_a_concretebase" 	enabled="true" material="concrete" />
+		<decal_mesh name="g_pillar_a" 				enabled="true" material="tile" />
+		<!-- DESTRUCTION PIECES -->
+		<decal_mesh name="dm_gibs_1" 				enabled="true" material="tile" />
+		<decal_mesh name="dm_gibs_2" 				enabled="true" material="tile" />
+		<decal_mesh name="dm_gibs_3" 				enabled="true" material="tile" />
+		<decal_mesh name="dm_gibs_4" 				enabled="true" material="tile" />
+		<decal_mesh name="dm_gibs_5" 				enabled="true" material="tile" />
+		<decal_mesh name="dm_gibs_6" 				enabled="true" material="tile" />
+		<decal_mesh name="dm_gibs_7" 				enabled="true" material="tile" />
+		<decal_mesh name="dm_gibs_8" 				enabled="true" material="tile" />
+		<decal_mesh name="dm_gibs_9" 				enabled="true" material="tile" />
+		<decal_mesh name="dm_gibs_10" 				enabled="true" material="tile" />
+		<decal_mesh name="dm_gibs_11" 				enabled="true" material="tile" />
+		<decal_mesh name="dm_gibs_12" 				enabled="true" material="tile" />
+		<decal_mesh name="dm_gibs_13" 				enabled="true" material="tile" />
+		<decal_mesh name="dm_gibs_14" 				enabled="true" material="tile" />
+		<decal_mesh name="dm_gibs_15" 				enabled="true" material="tile" />
+		<decal_mesh name="dm_gibs_16" 				enabled="true" material="tile" />
+		<decal_mesh name="dm_gibs_17" 				enabled="true" material="tile" />
+		<decal_mesh name="dm_gibs_18" 				enabled="true" material="tile" />
+		<decal_mesh name="dm_gibs_19" 				enabled="true" material="tile" />
+		<decal_mesh name="dm_gibs_20" 				enabled="true" material="tile" />
+		<decal_mesh name="dm_gibs_21" 				enabled="true" material="tile" />
+		<decal_mesh name="dm_gibs_22" 				enabled="true" material="tile" />
+		<decal_mesh name="dm_gibs_23" 				enabled="true" material="tile" />
+		<decal_mesh name="dm_gibs_24" 				enabled="true" material="tile" />
+	</decal_surfaces>
+
+	<graphics>
+		<object name="g_pillar_a_concretebase" 	enabled="false" shadow_caster="false" />
+		<object name="g_pillar_a" 				enabled="true" shadow_caster="false" />
+		<!-- DESTRUCTION PIECES -->
+		<object name="g_gibs_1" 				enabled="true" shadow_caster="false" />
+		<object name="g_gibs_2" 				enabled="true" shadow_caster="false" />
+		<object name="g_gibs_3" 				enabled="true" shadow_caster="false" />
+		<object name="g_gibs_4" 				enabled="true" shadow_caster="false" />
+		<object name="g_gibs_5" 				enabled="true" shadow_caster="false" />
+		<object name="g_gibs_6" 				enabled="true" shadow_caster="false" />
+		<object name="g_gibs_7" 				enabled="true" shadow_caster="false" />
+		<object name="g_gibs_8" 				enabled="true" shadow_caster="false" />
+		<object name="g_gibs_9" 				enabled="true" shadow_caster="false" />
+		<object name="g_gibs_10" 				enabled="true" shadow_caster="false" />
+		<object name="g_gibs_11" 				enabled="true" shadow_caster="false" />
+		<object name="g_gibs_12" 				enabled="true" shadow_caster="false" />
+		<object name="g_gibs_13" 				enabled="true" shadow_caster="false" />
+		<object name="g_gibs_14" 				enabled="true" shadow_caster="false" />
+		<object name="g_gibs_15" 				enabled="true" shadow_caster="false" />
+		<object name="g_gibs_16" 				enabled="true" shadow_caster="false" />
+		<object name="g_gibs_17" 				enabled="true" shadow_caster="false" />
+		<object name="g_gibs_18" 				enabled="true" shadow_caster="false" />
+		<object name="g_gibs_19" 				enabled="true" shadow_caster="false" />
+		<object name="g_gibs_20" 				enabled="true" shadow_caster="false" />
+		<object name="g_gibs_21" 				enabled="true" shadow_caster="false" />
+		<object name="g_gibs_22" 				enabled="true" shadow_caster="false" />
+		<object name="g_gibs_23" 				enabled="true" shadow_caster="false" />
+		<object name="g_gibs_24" 				enabled="true" shadow_caster="false" />
+	</graphics>
+
+</dynamic_object>

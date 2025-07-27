@@ -1,0 +1,58 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_friend/props/sfm_prop_bedroom_wardrobe/sfm_prop_bedroom_wardrobe" orientation_object="rp_sfm_prop_bedroom_wardrobe_tony" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_sfm_prop_bedroom_wardrobe_tony" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_collision_01" enabled="true" template="animated">
+			<object name="anim_door_02" />
+			<object name="c_box_01_door_02" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_collision_02" enabled="true" template="animated">
+			<object name="anim_door_03" />
+			<object name="c_box_01_door_03" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="wood">
+		<decal_mesh name="dm_cloth" enabled="true" material="cloth" />
+		<decal_mesh name="dm_glass_unbreakable_door_01" enabled="true" material="thin_layer" />
+		<decal_mesh name="dm_glass_unbreakable_door_02" enabled="true" material="thin_layer" />
+		<decal_mesh name="dm_glass_unbreakable_door_03" enabled="true" material="thin_layer" />
+		<decal_mesh name="dm_glass_unbreakable_door_04" enabled="true" material="thin_layer" />
+		<decal_mesh name="dm_plastic" enabled="true" material="plastic" />
+		<decal_mesh name="dm_wood" enabled="true" material="wood" />
+	</decal_surfaces>
+	<graphics>
+		<lod_object name="lod_g">
+			<object name="g_lod0" enabled="true" max_distance="1500" />
+			<object name="g_lod1" enabled="true" max_distance="3000" />
+			<object name="g_lod2" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_g_door_01">
+			<object name="g_door_01_lod0" enabled="true" max_distance="1500" />
+			<object name="g_door_01_lod1" enabled="true" max_distance="3000" />
+			<object name="g_door_01_lod2" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_g_door_02">
+			<object name="g_door_02_lod0" enabled="true" max_distance="1500" />
+			<object name="g_door_02_lod1" enabled="true" max_distance="3000" />
+			<object name="g_door_02_lod2" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_g_door_03">
+			<object name="g_door_03_lod0" enabled="true" max_distance="1500" />
+			<object name="g_door_03_lod1" enabled="true" max_distance="3000" />
+			<object name="g_door_03_lod2" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_g_door_04">
+			<object name="g_door_04_lod0" enabled="true" max_distance="1500" />
+			<object name="g_door_04_lod1" enabled="true" max_distance="3000" />
+			<object name="g_door_04_lod2" enabled="true" />
+		</lod_object>
+		<object name="s_s" enabled="true" shadow_caster="true" />
+		<object name="s_s_door_01" enabled="true" shadow_caster="true" />
+		<object name="s_s_door_02" enabled="true" shadow_caster="true" />
+		<object name="s_s_door_03" enabled="true" shadow_caster="true" />
+		<object name="s_s_door_04" enabled="true" shadow_caster="true" />
+	</graphics>
+</dynamic_object>

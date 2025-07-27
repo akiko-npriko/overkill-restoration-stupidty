@@ -1,0 +1,291 @@
+<materials version="3">
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" name="mat_besh" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_besh_df"/>
+        <bump_normal_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_besh_nm"/>
+        <material_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_besh_gsma"/>
+        <self_illumination_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_besh_il"/>
+        <variable type="scalar" name="il_multiplier" value="sun"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_dah_city_skyline" type="cubemap"/>
+        <variable type="scalar" name="il_bloom" value="1.6820001273882"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" name="mat_besh_02" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_besh_02_df"/>
+        <bump_normal_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_besh_nm"/>
+        <material_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_besh_gsma"/>
+        <self_illumination_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_besh_il"/>
+        <variable type="scalar" name="il_multiplier" value="sun"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_dah_city_skyline" type="cubemap"/>
+        <variable type="scalar" name="il_bloom" value="1.6820001273882"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" name="mat_245park" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_245park_df"/>
+        <self_illumination_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_245park_il"/>
+        <bump_normal_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_245park_nm"/>
+        <variable type="scalar" name="il_multiplier" value="sun"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_dah_city_skyline" type="cubemap"/>
+        <material_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_245park_gsma"/>
+        <variable type="scalar" name="il_bloom" value="2.6820001273882"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" name="mat_245park_tile_01" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_245park_01_df"/>
+        <self_illumination_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_245park_01_il"/>
+        <bump_normal_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_245park_01_nm"/>
+        <variable type="scalar" name="il_multiplier" value="sun"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_dah_city_skyline" type="cubemap"/>
+        <material_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_245park_01_gsma"/>
+        <variable type="scalar" name="il_bloom" value="2.6820001273882"/>
+    </material>
+    <material name="mat_grand_central_tower00_1" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" version="2" src="GLOBAL">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_grand_central_tower00_1_df"/>
+        <self_illumination_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_grand_central_tower00_1_il"/>
+        <variable type="scalar" name="il_multiplier" value="sun"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_dah_city_skyline" type="cubemap"/>
+        <material_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_grand_central_tower00_1_gsma"/>
+        <variable type="scalar" name="il_bloom" value="2.8810001368402"/>
+        <bump_normal_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_grand_central_tower00_1_normal_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_grigiointermedio" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_grigiointermedio_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:VERTEX_COLOR" name="mat_roof_terrace" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_roof_terrace_df"/>
+    </material>
+    <material render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:DIFFUSE0_UVANIM" name="mat_lamp_red" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_lamp_red_edf"/>
+        <variable type="scalar" name="intensity" value="sun"/>
+        <variable type="vector3" name="uv0_speed" value="2.5290002822876 0.7790002822876 0"/>
+    </material>
+    <material render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:VERTEX_COLOR" name="mat_light_gradient" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_light_gradient_edf"/>
+        <variable type="scalar" name="intensity" value="sun"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_incrocio_02" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext__bdrop_incrocio_02_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_incrocio_03" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext__bdrop_incrocio_03_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_incrocio_04" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext__bdrop_incrocio_04_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_236park" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_236park_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_asfalto01" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_asfalto01_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_asfalto02" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_asfalto02_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_bianco" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_bianco_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_calyon02" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_calyon02_df"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:SELF_ILLUMINATION" name="mat_giallognolo" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_giallognolo_df"/>
+        <self_illumination_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_giallognolo_il"/>
+        <reflection_texture file="environments/cubemaps/cubemap_greenbridge_wet_df" type="cubemap"/>
+        <variable type="scalar" name="il_multiplier" value="candle"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_grigetto" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_grigetto_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_grigettochiaro" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_grigettochiaro_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_grigioverdino" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_grigioverdino_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_incrocio01" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_incrocio01_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_lincolnBuilding_01" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_lincolnbuilding_01_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_marciapiedi_01" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_marciapiedi_01_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_marciapiedi_02" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_marciapiedi_02_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_marroncinochiaro_01" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_marroncinochiaro_01_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_muri" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_muri_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_partisunydistrict" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_partisunydistrict_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_partisunydistrict02" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_partisunydistrict02_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_partisunydistrict03" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_partisunydistrict03_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_rossochiaro" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_rossochiaro_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_soprametlife" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_soprametlife_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:VERTEX_COLOR" name="mat_soprany" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_soprany_df"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" name="mat_chrysler" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_chrysler_df"/>
+        <bump_normal_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_chrysler_nm"/>
+        <material_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_chrysler_gsma"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_dah_city_skyline" type="cubemap"/>
+        <self_illumination_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_chrysler_il"/>
+        <variable type="scalar" name="il_multiplier" value="sun"/>
+        <variable type="scalar" name="il_bloom" value="2.167000102927"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" name="mat_150east_01_1" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/150east_01_1_df"/>
+        <bump_normal_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/150east_01_1_nm"/>
+        <material_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/150east_01_1_gsma"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_dah_city_skyline" type="cubemap"/>
+        <self_illumination_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/150east_01_1_il"/>
+        <variable type="scalar" name="il_multiplier" value="sun"/>
+        <variable type="scalar" name="il_bloom" value="2.167000102927"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" name="mat_383madison_avenue_1" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/383madison_avenue_1_df"/>
+        <self_illumination_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/383madison_avenue_1_il"/>
+        <variable type="scalar" name="il_multiplier" value="sun"/>
+        <variable type="scalar" name="il_bloom" value="3.2700001553167"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_100parkavenue_5" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_100parkavenue_5_df"/>
+        <material_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_100parkavenue_5_gsma"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_dah_city_skyline" type="cubemap"/>
+        <bump_normal_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_100parkavenue_5_nm"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" name="mat_101parkavenue_01_1" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_101parkavenue_01_1_df"/>
+        <bump_normal_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_101parkavenue_01_1_nm"/>
+        <material_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_101parkavenue_01_1_gsma"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_dah_city_skyline" type="cubemap"/>
+        <self_illumination_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_101parkavenue_01_1_il"/>
+        <variable type="scalar" name="il_multiplier" value="sun"/>
+        <variable type="scalar" name="il_bloom" value="2.167000102927"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_150east_05_1" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_150east_05_1_df"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP:SELF_ILLUMINATION" name="mat_236parkavenue01_1" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_236parkavenue01_1_df"/>
+        <self_illumination_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_236parkavenue01_1_il"/>
+        <variable type="scalar" name="il_multiplier" value="megatron"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_dah_city_skyline" type="cubemap"/>
+        <bump_normal_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_236parkavenue01_1_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_236parkavenue01_2" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_236parkavenue01_2_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_245park01_1" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_245park01_1_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_245park01_2" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_245park01_2_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_383madison_avenue_2" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_383madison_avenue_2_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_425lexington01_1" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_425lexington01_1_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_450lexingtonavenue01_2" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_450lexingtonavenue01_2_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_450lexingtonavenue01_3" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_450lexingtonavenue01_3_df"/>
+    </material>
+    <material version="2" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" name="mat_485lexingtonavenue00_1" src="GLOBAL">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_485lexingtonavenue00_1_df"/>
+        <self_illumination_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_485lexingtonavenue00_1_il"/>
+        <variable type="scalar" name="il_multiplier" value="sun"/>
+        <variable type="scalar" name="il_bloom" value="1.8630000884878"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_dah_city_skyline" type="cubemap"/>
+        <material_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_485lexingtonavenue00_1_gsma"/>
+        <bump_normal_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_485lexingtonavenue00_1_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_6003rd_02_2" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_6003rd_02_2_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_750third00_1" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_750third00_1_df"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" name="mat_general_telephonebld01_1" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_general_telephonebld01_1_df"/>
+        <bump_normal_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_general_telephonebld01_1_nm"/>
+        <material_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_general_telephonebld01_1_gsma"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_dah_city_skyline" type="cubemap"/>
+        <self_illumination_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_general_telephonebld01_1_il"/>
+        <variable type="scalar" name="il_multiplier" value="reddot"/>
+        <variable type="scalar" name="il_bloom" value="1.749000083073"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_calyon01_1" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_calyon01_1_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_chrysler03_1" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_chrysler03_1_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_chrysler03_2" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_chrysler03_2_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_consulting00_3" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_consulting00_3_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_dankabuilding02_1" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_dankabuilding02_1_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_hyatt00_1" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_hyatt00_1_df"/>
+    </material>
+    <material name="mat_metlife15_1" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2" src="GLOBAL">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_grand_central_tower00_1_df"/>
+        <material_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_grand_central_tower00_1_gsma"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_dah_city_skyline" type="cubemap"/>
+        <bump_normal_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_grand_central_tower00_1_normal_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_pinnacle01_1" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_pinnacle01_1_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_proprint28_1" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_proprint28_1_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_fagiolini25_3" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/fagiolini25_3_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_fagiolini25_2" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_fagiolini25_2_df"/>
+    </material>
+    <material name="mat_glass_water" render_template="generic:CUBE_ENVIRONMENT_MAPPING:CUBE_ENVIRONMENT_MAPPING_WATER:DIFFUSE_TEXTURE:NORMALMAP:RL_BACKDROP:WATER_BIG" version="2" src="GLOBAL">
+        <diffuse_texture type="cube" global_texture="current_global_texture"/>
+        <variable type="vector3" name="water_settings_c" value="0 0 0"/>
+        <variable type="vector3" name="water_settings_b" value="0 0 0"/>
+        <bump_normal_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_101parkavenue_01_1_nm"/>
+        <variable type="vector3" name="water_color_a" value="0.082352943718433 0.098039217293262 0.10980392247438"/>
+        <variable type="vector3" name="water_color_b" value="0.13552570343018 0.1496062874794 0.13552570343018"/>
+        <variable type="vector3" name="water_settings" value="6.3000001907349 9.25 28881"/>
+        <reflection_texture file="environments/cubemaps/cubemap_greenbridge_wet_df" type="cubemap"/>
+    </material>
+    <material render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:DIFFUSE0_UVANIM" name="mat_window_blink" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_prop_window_anim_blink_df"/>
+        <variable type="scalar" name="intensity" value="neonsign"/>
+        <variable type="vector3" name="uv0_speed" value="0.10000000149012 0.10000000149012 0"/>
+    </material>
+    <material render_template="generic" name="ColorEffectR79G231B149FBXASC045material" version="2"/>
+    <material render_template="generic" name="ColorEffectR86G169B199FBXASC045material" version="2"/>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="Converted_LightgrigioMetlife" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_marciapiedi_02_df"/>
+    </material>
+    <material render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE" name="mat_metlife_sign" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/architecture/dah_backdrop/ext_textures/dah_ext_bdrop_metlife_sign_il"/>
+        <variable type="scalar" name="intensity" value="streetlight"/>
+    </material>
+</materials>

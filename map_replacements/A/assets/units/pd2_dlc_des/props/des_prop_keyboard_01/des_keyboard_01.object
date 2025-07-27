@@ -1,0 +1,15 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_des/props/des_prop_keyboard_01/des_keyboard_01" orientation_object="rp_des_keyboard_01" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_des_keyboard_01" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="thin_layer">
+		<decal_mesh name="dm_plsatic_01" enabled="true" material="thin_layer" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_keyboard_01" enabled="true" />
+	</graphics>
+</dynamic_object>

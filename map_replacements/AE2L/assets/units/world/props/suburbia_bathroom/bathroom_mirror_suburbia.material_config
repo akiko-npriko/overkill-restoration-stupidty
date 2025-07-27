@@ -1,0 +1,8 @@
+<materials version="3">
+    <material name="suburbia_bathroom_mirror" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GLOSS_CONTROL_VALUE:INSTANCED:NORMALMAP" version="2">
+        <variable value="0.49600002169609" type="scalar" name="glossiness_control"/>
+        <diffuse_texture file="units/world/props/suburbia_bathroom/bathroom_mirror_suburbia_df"/>
+        <reflection_texture global_texture="current_global_texture" type="cube"/>
+        <bump_normal_texture file="units/payday2/textures/blank_nm"/>
+    </material>
+</materials>

@@ -1,0 +1,21 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_chew/props/chw_prop_cargocrate/chw_prop_cargocrate_a" orientation_object="rp_chw_prop_cargocrate_a" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_chw_prop_cargocrate_a" />
+			<object name="c_mesh_01" collision_type="mesh_mopp" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="plastic">
+		<decal_mesh name="dm_metal" enabled="true" material="metal" />
+		<decal_mesh name="dm_plastic" enabled="true" material="plastic" />
+		<decal_mesh name="dm_wood" enabled="true" material="wood" />
+	</decal_surfaces>
+	<graphics>
+		<lod_object name="lod_g">
+			<object name="g_lod0" enabled="true" max_distance="2500" />
+			<object name="g_lod1" enabled="true" />
+		</lod_object>
+		<object name="s_s" enabled="true" shadow_caster="true" />
+	</graphics>
+</dynamic_object>

@@ -1,0 +1,13 @@
+<unit type="gen" slot="1" >
+    <object file="units/pd2_dlc_chas/props/chas_prop_hack_box/chas_prop_hack_box" />
+    <sounds/>
+    <network sync="spawn"/>
+  <extensions>
+    <extension name="unit_data" class="ScriptUnitData" />
+    <extension name="damage" class="UnitDamage" />
+	<extension name="interaction" class="UseInteractionExt">
+      <var name="tweak_data" value="chas_prop_hack_box" />
+      <var name="_interact_object" value="interact"/>
+	  </extension>
+  </extensions>
+</unit>

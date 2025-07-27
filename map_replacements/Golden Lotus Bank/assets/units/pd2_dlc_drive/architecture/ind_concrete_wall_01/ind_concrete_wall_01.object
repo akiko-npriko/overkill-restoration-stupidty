@@ -1,0 +1,20 @@
+<dynamic_object>
+    <diesel orientation_object="rp_ind_concrete_wall_01" materials="units/pd2_dlc_drive/architecture/ind_concrete_wall_01/ind_concrete_wall_01" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body">
+            <object name="rp_ind_concrete_wall_01" />
+            <object name="c_box_01" collision_type="box" />
+            <object name="c_box_02" collision_type="box" />
+        </body>
+    </bodies>
+    <decal_surfaces>
+        <decal_mesh name="dm_concrete" enabled="true" material="concrete" />
+    </decal_surfaces>
+    <graphics>
+		<lod_object name="concrete_wall">
+			<object name="g_g_lod0" enabled="true"  max_distance="5000" />
+			<object name="g_g_lod1" enabled="true" />
+		</lod_object>
+        <object name="s_shadow" enabled="true" shadow_caster="true" />
+    </graphics>
+</dynamic_object>

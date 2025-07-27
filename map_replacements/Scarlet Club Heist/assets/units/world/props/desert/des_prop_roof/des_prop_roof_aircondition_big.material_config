@@ -1,0 +1,7 @@
+<materials version="3">
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:SKINNED_1WEIGHT" decal_material="metal" version="2" name="m_aircondition">
+        <variable value="0.05800000205636" type="scalar" name="alpha_ref"/>
+        <diffuse_texture file="units/world/props/desert/des_prop_roof/des_prop_roof_aircondition_df"/>
+    </material>
+    <material name="shadow_caster" render_template="shadow_caster_only" version="2"/>
+</materials>

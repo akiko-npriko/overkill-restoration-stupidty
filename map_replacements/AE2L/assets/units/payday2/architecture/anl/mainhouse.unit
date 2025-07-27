@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<unit type="cft" slot="1">
+  <network sync="spawn" />
+  <object file="units/payday2/architecture/anl/mainhouse" />
+  <extensions>
+    <extension name="unit_data" class="ScriptUnitData" />
+    <extension name="damage" class="UnitDamage" />
+  </extensions>
+</unit>

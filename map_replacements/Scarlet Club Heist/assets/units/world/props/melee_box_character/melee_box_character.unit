@@ -1,0 +1,17 @@
+<unit type="und" slot="1" >
+<network sync="spawn"/>
+    <object file="units/world/props/melee_box/melee_box" />
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+        <extension name="base" class="UnitBase" >
+			<var name="_tweak_table" value="escort_undercover" />
+		</extension>
+		<extension name="character_damage" class="CivilianDamage" >
+			<var name="immortal" value="true" />
+			<var name="_no_blood" value="true" />
+		</extension>
+		<extension name="damage" class="UnitDamage" >
+			<var name="_skip_save_anim_state_machine" value="true" />
+		</extension>
+    </extensions>
+</unit>

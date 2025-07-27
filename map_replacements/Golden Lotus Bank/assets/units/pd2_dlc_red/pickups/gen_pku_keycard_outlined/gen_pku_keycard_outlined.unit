@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<unit type="gen" slot="1">
+	<object file="units/pd2_dlc_red/pickups/gen_pku_keycard_outlined/gen_pku_keycard_outlined" />
+	<network sync="spawn" />
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="interaction" class="SpecialEquipmentInteractionExt" >
+			<var name="_special_equipment" value="bank_manager_key" />
+			<var name="_remove_on_interact" value="true" />
+			<var name="tweak_data" value="pickup_keycard" />
+			<var name="_global_event" value="keycard" />
+		</extension>
+		<extension name="damage" class="UnitDamage" />
+	</extensions>
+</unit> 

@@ -1,0 +1,40 @@
+<materials version="3">
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="m_chas_dragongate_misc" version="2">
+        <diffuse_texture file="units/pd2_dlc_chas/architecture/ext/chas_ext_dragongate_01/chas_ext_dragongate_misc_df"/>
+        <bump_normal_texture file="units/pd2_dlc_chas/architecture/ext/chas_ext_dragongate_01/chas_ext_dragongate_misc_nm"/>
+        <material_texture file="units/pd2_dlc_chas/architecture/ext/chas_ext_dragongate_01/chas_ext_dragongate_misc_gsma"/>
+        <reflection_texture file="environments/cubemaps/cubemap_chas_ext_02" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="m_dragon_01" version="2">
+        <diffuse_texture file="units/pd2_dlc_chas/architecture/ext/chas_ext_dragongate_01/chas_dragongate_dragon_df"/>
+        <bump_normal_texture file="units/pd2_dlc_chas/architecture/ext/chas_ext_dragongate_01/chas_dragongate_dragon_nm"/>
+        <material_texture file="units/pd2_dlc_chas/architecture/ext/chas_ext_dragongate_01/chas_dragongate_dragon_gsma"/>
+        <reflection_texture file="environments/cubemaps/cubemap_chas_ext_02" type="cubemap"/>
+    </material>
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:GSMA_TEXTURE:NORMALMAP:OPACITY_TEXTURE" name="m_dragongate_chain" version="2">
+        <diffuse_texture file="units/pd2_dlc_chas/architecture/ext/chas_ext_dragongate_01/chas_dragongate_chain_01_df"/>
+        <bump_normal_texture file="units/pd2_dlc_chas/architecture/ext/chas_ext_dragongate_01/chas_dragongate_chain_01_nm"/>
+        <material_texture file="units/pd2_dlc_chas/architecture/ext/chas_ext_dragongate_01/chas_dragongate_chain_01_gsma"/>
+        <opacity_texture file="units/pd2_dlc_chas/architecture/ext/chas_ext_dragongate_01/chas_dragongate_chain_01_op"/>
+        <variable type="scalar" name="alpha_ref" value="0.5"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="m_dragongate_jade" version="2">
+        <diffuse_texture file="units/pd2_dlc_chas/architecture/ext/chas_ext_dragongate_01/chas_ext_dragongate_roof_df"/>
+        <bump_normal_texture file="units/pd2_dlc_chas/architecture/ext/chas_ext_dragongate_01/chas_ext_dragongate_roof_nm"/>
+        <material_texture file="units/pd2_dlc_chas/architecture/ext/chas_ext_dragongate_01/chas_ext_dragongate_roof_gsma"/>
+        <reflection_texture file="environments/cubemaps/cubemap_chas_ext_02" type="cubemap"/>
+    </material>
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:GSMA_TEXTURE:NORMALMAP:OPACITY_TEXTURE" name="m_dragongate_sign" version="2">
+        <diffuse_texture file="units/pd2_dlc_chas/architecture/ext/chas_ext_dragongate_01/chas_ext_dragongate_sign_df"/>
+        <bump_normal_texture file="units/pd2_dlc_chas/architecture/ext/chas_ext_dragongate_01/chas_ext_dragongate_sign_nm"/>
+        <material_texture file="units/pd2_dlc_chas/architecture/ext/chas_ext_dragongate_01/chas_ext_dragongate_sign_gsma"/>
+		<opacity_texture file="units/transparent_op"/>
+		<variable type="scalar" name="alpha_ref" value="1.5"/>	
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="m_dragongate_wood" version="2">
+        <diffuse_texture file="units/pd2_dlc_chas/architecture/ext/chas_ext_dragongate_01/chas_ext_dragongate_wood_df"/>
+        <bump_normal_texture file="units/pd2_dlc_chas/architecture/ext/chas_ext_dragongate_01/chas_ext_dragongate_wood_nm"/>
+        <material_texture file="units/pd2_dlc_chas/architecture/ext/chas_ext_dragongate_01/chas_ext_dragongate_wood_gsma"/>
+    </material>
+    <material render_template="shadow_caster_only" name="shadow_caster" version="2"/>
+</materials>

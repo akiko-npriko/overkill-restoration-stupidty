@@ -1,0 +1,6 @@
+<materials version="3" group="crane_tint_group">
+    <material name="construction_crane_foundation" render_template="generic:DIFFUSE_TEXTURE:RL_BIGPROPS:VERTEX_COLOR" version="2">
+        <diffuse_texture file="units/world/props/construction_crane/construction_crane_foundation_df"/>
+    </material>
+    <material name="shadow_caster" render_template="shadow_caster_only" version="2"/>
+</materials>

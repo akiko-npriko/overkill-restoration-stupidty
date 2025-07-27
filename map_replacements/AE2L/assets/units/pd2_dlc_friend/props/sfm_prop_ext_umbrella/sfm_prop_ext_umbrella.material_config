@@ -1,0 +1,11 @@
+<materials version="3">
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" decal_material="metal" name="lxy_prop_ext_umbrella" version="2">
+        <variable value="0" type="scalar" name="specular_power"/>
+        <diffuse_texture file="units/pd2_dlc_lxy/props/yacht/umbrella/lxy_prop_ext_umbrella_df"/>
+        <bump_normal_texture file="units/pd2_dlc_lxy/props/yacht/umbrella/lxy_prop_ext_umbrella_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" decal_material="thin_layer" name="lxy_prop_ext_umbrella_cloth" version="2">
+        <variable value="0" type="scalar" name="specular_power"/>
+        <diffuse_texture file="units/pd2_dlc_friend/props/sfm_prop_ext_umbrella/sfm_prop_ext_umbrella_cloth_df"/>
+    </material>
+</materials>

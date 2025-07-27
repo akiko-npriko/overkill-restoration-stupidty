@@ -1,0 +1,24 @@
+<unit type="mus" slot="1" >
+    <object file="units/pd2_indiana/props/mus_prop_exhibit_d_pottery/mus_prop_exhibit_d_pottery_a" />
+    <network sync="spawn"/>
+    <dependencies>
+    	<depends_on bnk="soundbanks/regular_sfx" />
+    	<depends_on unit="units/pd2_indiana/props/mus_prop_exhibit_d_pottery/spawn_pottery_a_dmg" />
+    </dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="CarryInteractionExt">
+			<var name="tweak_data" value="gen_pku_artifact" />
+			<var name="_remove_on_interact" value="true" />
+			<var name="_global_event" value="pku_artifact_statue" />
+			<var name="_ray_object_names" type="table" >
+					<var value="rp_mus_prop_exhibit_d_pottery_a"/>
+					<!-- <var value="a_ray_object_2"/> -->
+			</var>
+		</extension>
+		<extension name="carry_data" class="CarryData">
+			<var name="_carry_id" value="mus_artifact" />
+		</extension>
+	</extensions>
+</unit>

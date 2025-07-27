@@ -1,0 +1,8 @@
+<materials version="3">
+	<material name="mat_desk_d" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_dah/props/dah_prop_desk_d/dah_prop_desk_d_df" />
+		<bump_normal_texture file="units/pd2_dlc_dah/props/dah_prop_desk_d/dah_prop_desk_d_nm" />
+		<material_texture file="units/pd2_dlc_dah/props/dah_prop_desk_d/dah_prop_desk_d_gsma" />
+	</material>
+	<material name="shadow_caster" render_template="shadow_caster_only" version="2" />
+</materials>

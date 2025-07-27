@@ -1,0 +1,10 @@
+<unit type="ind" slot="1">
+	<object file="units/pd2_dlc_cage/props/ind_prop_cardealership_spotlight_ceiling/ind_prop_cardealership_spotlight_ceiling" />
+	<dependencies>
+   		<depends_on effect="effects/particles/dest/sparks_lamp_dest" />
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+	</extensions>
+</unit>

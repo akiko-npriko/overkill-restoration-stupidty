@@ -1,0 +1,40 @@
+<materials version="3">
+	<material name="mat_ext_brick" render_template="generic:BLEND_DIFFUSE:BLEND_MASK_SEPERATE:BLEND_NORMAL:BLEND_SMOOTH:DIFFUSE_TEXTURE:NORMALMAP:RL_CORE_ENVIRONMENT:VERTEX_COLOR" version="2">
+		<diffuse_texture file="units/pd2_dlc_flat/architecture/flt_ext_apartment_exterior/flt_ext_red_brick_blend_df" />
+		<diffuse_layer0_texture file="units/pd2_dlc_flat/architecture/flt_ext_apartment_exterior/flt_ext_red_brick_df" />
+		<diffuse_layer1_texture file="units/pd2_dlc_flat/architecture/flt_ext_apartment_exterior/flt_ext_red_brick_mask" />
+		<bump_normal_texture file="units/pd2_dlc_flat/architecture/flt_ext_apartment_exterior/flt_ext_red_brick_blend_nm" mip="1"/>
+		<normal_layer0_texture file="units/pd2_dlc_flat/architecture/flt_ext_apartment_exterior/flt_ext_red_brick_nm" mip="1"/>
+	</material>
+	<material name="mat_ext_misc" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_flat/architecture/flt_ext_apartment_exterior/flt_ext_misc_df" />
+		<bump_normal_texture file="units/pd2_dlc_flat/architecture/flt_ext_apartment_exterior/flt_ext_misc_nm" mip="1"/>
+	</material>
+	<material name="mat_ext_step" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_flat/architecture/flt_ext_apartment_exterior/flt_ext_step_df" />
+		<bump_normal_texture file="units/pd2_dlc_flat/architecture/flt_ext_apartment_exterior/flt_ext_step_nm" mip="1"/>
+	</material>
+	<material name="mat_ext_alley_misc" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_flat/architecture/flt_ext_apartment_alley/flt_ext_alley_misc_df" />
+		<bump_normal_texture file="units/pd2_dlc_flat/architecture/flt_ext_apartment_alley/flt_ext_alley_misc_nm" mip="1"/>
+	</material>
+	<material name="mat_ext_windows" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_flat/architecture/flt_ext_apartment_exterior/flt_ext_windows_df" />
+		<bump_normal_texture file="units/pd2_dlc_flat/architecture/flt_ext_apartment_exterior/flt_ext_windows_nm" mip="1" />
+	</material>
+	<material name="mat_roof" render_template="generic:BLEND_DIFFUSE:BLEND_MASK_SEPERATE:BLEND_NORMAL:BLEND_SMOOTH:DIFFUSE_TEXTURE:NORMALMAP:RL_CORE_ENVIRONMENT:VERTEX_COLOR" version="2">
+		<diffuse_texture file="units/pd2_dlc_flat/architecture/flt_ext_apartment_roof/flt_ext_apartment_roof_blend_df" />
+		<diffuse_layer0_texture file="units/pd2_dlc_flat/architecture/flt_ext_apartment_roof/flt_ext_apartment_roof_df" />
+		<diffuse_layer1_texture file="units/pd2_dlc_flat/architecture/flt_ext_apartment_roof/flt_ext_apartment_roof_blend_mask_df" />
+		<bump_normal_texture file="units/pd2_dlc_flat/architecture/flt_ext_apartment_roof/flt_ext_apartment_roof_blend_nm" />
+		<normal_layer0_texture file="units/pd2_dlc_flat/architecture/flt_ext_apartment_roof/flt_ext_apartment_roof_nm" />
+	</material>
+	<material name="mat_floor" decal_material="plaster" render_template="generic:BLEND_DIFFUSE:BLEND_MASK_SEPERATE:BLEND_NORMAL:BLEND_SMOOTH:DIFFUSE_TEXTURE:NORMALMAP:RL_CORE_ENVIRONMENT:VERTEX_COLOR" version="2">
+		<diffuse_texture file="units/pd2_dlc_flat/architecture/flt_ext_apartment_alley/flt_ext_alley_floor_blend_df" />
+		<diffuse_layer0_texture file="units/pd2_dlc_flat/architecture/flt_ext_apartment_alley/flt_ext_alley_floor_df" />
+		<diffuse_layer1_texture file="units/pd2_dlc_flat/architecture/flt_ext_apartment_alley/flt_ext_alley_floor_mask_df" />
+		<bump_normal_texture file="units/pd2_dlc_flat/architecture/flt_ext_apartment_alley/flt_ext_alley_floor_blend_nm" mip="1" />
+		<normal_layer0_texture file="units/pd2_dlc_flat/architecture/flt_ext_apartment_alley/flt_ext_alley_floor_nm" mip="1"/>
+	</material>
+	<material name="shadow_caster" render_template="shadow_caster_only" version="2" />
+</materials>

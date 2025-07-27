@@ -1,0 +1,12 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_brb/architecture/brb_ext/brb_ext_road_snow/brb_road" orientation_object="rp_brb_ext_sidewalk_16x16m_a" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_brb_ext_sidewalk_16x16m_a" />
+			<object name="c_box" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<graphics>
+		<object name="g_brb_ext_sidewalk_16x16m_a" enabled="true" />
+	</graphics>
+</dynamic_object>

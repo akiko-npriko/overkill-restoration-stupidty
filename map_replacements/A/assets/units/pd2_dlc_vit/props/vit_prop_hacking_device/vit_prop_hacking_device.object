@@ -1,0 +1,21 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_vit/props/vit_prop_hacking_device/vit_prop_hacking_device" orientation_object="rp_vit_prop_hacking_device" />
+	<sequence_manager file="units/pd2_dlc_vit/props/vit_prop_hacking_device/vit_prop_hacking_device" />
+	<bodies>
+		<body name="body_editor" enabled="true" template="editor">
+			<object name="rp_vit_prop_hacking_device" />
+			<object name="c_box" collision_type="box" padding="-2.5"/>
+		</body>
+	</bodies>
+	<graphics>
+		<object name="g_hack" enabled="false" />
+		<object name="g_leds" enabled="false" />
+		<graphic_group name="grp_outline" enabled="true" >
+			<lod_object name="lod_g_outline">
+				<object name="g_outline_lod0" enabled="true" max_distance="500" />
+				<object name="g_outline_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+	</graphics>
+</dynamic_object>

@@ -1,0 +1,12 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_mad/nature/mad_terrain/mad_terrain" orientation_object="rp_mad_terrain_tunnel" />
+	<bodies>
+		<body name="body_static" enabled="true" template="editor">
+			<object name="rp_mad_terrain_tunnel" />
+			<object name="g_mad_terrain" collision_type="box" padding="-1000.0" />
+		</body>
+	</bodies>
+	<graphics>
+		<object name="g_mad_terrain" enabled="true" />
+	</graphics>
+</dynamic_object>

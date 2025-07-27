@@ -1,0 +1,10 @@
+<materials version="3">
+	<material name="mat_chair" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_casino/props/cas_prop_bar_chair/cas_prop_bar_chair_df" />
+		<bump_normal_texture file="units/pd2_dlc_casino/props/cas_prop_bar_chair/cas_prop_bar_chair_nm" />
+	</material>
+	<material name="mat_chair_lod" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_casino/props/cas_prop_bar_chair/cas_prop_bar_chair_df" mip="4" />
+		<bump_normal_texture file="units/pd2_dlc_casino/props/cas_prop_bar_chair/cas_prop_bar_chair_nm" mip="4" />
+	</material>
+</materials>

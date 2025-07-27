@@ -1,0 +1,126 @@
+<materials version="3">
+    <material render_template="decal:DIFFUSE_TEXTURE:NORMALMAP:OPACITY_TEXTURE" name="mat_road_02_decal" version="2">
+        <diffuse_texture file="units/pd2_dlc_ranc/architecture/ext/ext_textures/ranc_ext_dirt_road_02_df"/>
+        <opacity_texture file="units/pd2_dlc_ranc/architecture/ext/ext_textures/ranc_ext_dirt_road_02_decal_op"/>
+        <bump_normal_texture file="units/pd2_dlc_ranc/architecture/ext/ext_textures/ranc_ext_dirt_road_02_nm"/>
+    </material>
+    <material render_template="generic:BLEND_DIFFUSE:BLEND_GSMA:BLEND_MASK_CONTROL:BLEND_MASK_CROSSBLEND:BLEND_NORMAL:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_blend_soil" version="2">
+        <diffuse_layer0_texture file="units/pd2_dlc_jerry/terrain/jry_terrain_grass_df" mip="1"/>
+        <variable type="vector3" name="blend_control" value="0.31999999284744 0.40000000596046 0"/>
+        <normal_layer0_texture file="units/pd2_dlc_ranc/architecture/ext/ext_textures/ranc_ext_soil_02_nm" mip="1"/>
+        <diffuse_layer2_texture file="units/pd2_dlc_jerry/terrain/jry_terrain_grass_gsma" mip="1"/>
+        <diffuse_texture file="units/pd2_dlc_jerry/terrain/jry_terrain_grass_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_ranc/architecture/ext/ext_textures/ranc_ext_soil_01_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_jerry/terrain/jry_terrain_grass_gsma" mip="1"/>
+    </material>
+    <material render_template="generic:BLEND_DIFFUSE:BLEND_GSMA:BLEND_MASK_CONTROL:BLEND_MASK_CROSSBLEND:BLEND_NORMAL:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_ranc_wood_planks_01" version="2">
+        <diffuse_layer0_texture file="units/pd2_dlc_jerry/terrain/jry_terrain_grass_df" mip="1"/>
+        <variable type="vector3" name="blend_control" value="0.23999999463558 0.80000001192093 0"/>
+        <normal_layer0_texture file="units/pd2_dlc_mex/terrain/mex_terrain_textures/mex_soil_small_pebbles_nm" mip="1"/>
+        <diffuse_layer2_texture file="units/pd2_dlc_pent/architecture/int/int_textures/pent_gravel_gsma" mip="1"/>
+        <diffuse_texture file="units/pd2_dlc_sah/tiling_textures/sah_old_planks/sah_old_planks_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_sah/tiling_textures/sah_old_planks/sah_old_planks_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_sah/tiling_textures/sah_old_planks/sah_old_planks_gsma" mip="1"/>
+    </material>
+    <material render_template="generic:BLEND_DIFFUSE:BLEND_GSMA:BLEND_MASK_CONTROL:BLEND_MASK_CROSSBLEND:BLEND_NORMAL:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_blend_road_01" version="2">
+        <diffuse_layer0_texture file="units/pd2_dlc_ranc/architecture/ext/ext_textures/ranc_ext_dirt_road_02_df" mip="1"/>
+        <variable type="vector3" name="blend_control" value="0.25 0 0"/>
+        <normal_layer0_texture file="units/pd2_dlc_ranc/architecture/ext/ext_textures/ranc_ext_dirt_road_02_nm" mip="1"/>
+        <diffuse_layer2_texture file="units/pd2_dlc_pent/architecture/int/int_textures/pent_gravel_gsma" mip="1"/>
+        <diffuse_texture file="units/pd2_dlc_ranc/architecture/ext/ext_textures/ranc_ext_dirt_road_02_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_ranc/architecture/ext/ext_textures/ranc_ext_soil_01_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_pent/architecture/int/int_textures/pent_gravel_gsma" mip="1"/>
+    </material>
+    <material render_template="generic:BLEND_DIFFUSE:BLEND_GSMA:BLEND_MASK_CONTROL:BLEND_MASK_CROSSBLEND:BLEND_NORMAL:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_blend_asphalt_01" version="2">
+        <diffuse_layer0_texture file="units/pd2_dlc_friend/nature/terrain/textures/sfm_terrain_soil_df" mip="1"/>
+        <variable type="vector3" name="blend_control" value="0.28999999165535 0.5 0"/>
+        <normal_layer0_texture file="units/pd2_dlc_ranc/architecture/ext/ext_textures/ranc_ext_asphalt_01_nm" mip="1"/>
+        <diffuse_layer2_texture file="units/pd2_dlc_pent/architecture/int/int_textures/pent_gravel_gsma" mip="1"/>
+        <diffuse_texture file="units/pd2_dlc_friend/nature/terrain/textures/sfm_terrain_soil_df" mip="1"/>
+        <bump_normal_texture file="units/pd2_dlc_mex/terrain/mex_terrain_textures/mex_soil_small_pebbles_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_pent/architecture/int/int_textures/pent_gravel_gsma" mip="1"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_ranc_wood_wall_planks" version="2">
+        <diffuse_texture file="units/pd2_dlc_ranc/architecture/ext/ext_textures/ranc_ext_wood_wall_planks_df"/>
+        <bump_normal_texture file="units/pd2_dlc_ranc/architecture/ext/ext_textures/ranc_ext_wood_wall_planks_nm"/>
+        <material_texture file="units/pd2_dlc_ranc/architecture/ext/ext_textures/ranc_ext_wood_wall_planks_gsma"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_ranc_wood_osb" version="2">
+        <diffuse_texture file="units/pd2_dlc_ranc/architecture/ext/ext_textures/ranc_ext_wood_osb_df"/>
+        <bump_normal_texture file="units/pd2_dlc_ranc/architecture/ext/ext_textures/ranc_ext_wood_osb_nm"/>
+        <material_texture file="units/pd2_dlc_ranc/architecture/ext/ext_textures/ranc_ext_wood_osb_gsma"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="ranc_wood_fence" version="2">
+        <diffuse_texture file="units/pd2_dlc_ranc/props/ranc_ext_prop_barriers/ranc_wood_fence_df"/>
+        <bump_normal_texture file="units/pd2_dlc_ranc/props/ranc_ext_prop_barriers/ranc_wood_fence_nm"/>
+        <material_texture file="units/pd2_dlc_ranc/props/ranc_ext_prop_barriers/ranc_wood_fence_gsma"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:SIMPLE_TINT" name="mat_int_wood_beams_01" version="2">
+        <diffuse_texture file="units/pd2_dlc_ranc/architecture/int/int_textures/ranch_house/ranc_wood_beam_01_df"/>
+        <bump_normal_texture file="units/pd2_dlc_ranc/architecture/int/int_textures/ranch_house/ranc_wood_beam_01_nm"/>
+        <variable type="vector3" name="tint_color" value="1 0.91764712333679 0.79607850313187"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" name="mat_ranc_currogated_roof_vtx" version="2">
+        <diffuse_texture file="units/pd2_dlc_ranc/architecture/ext/tiling_textures/ranc_ext_corrugated_metal_roof_df"/>
+        <bump_normal_texture file="units/pd2_dlc_ranc/architecture/ext/tiling_textures/ranc_ext_corrugated_metal_roof_nm"/>
+        <material_texture file="units/pd2_dlc_ranc/architecture/ext/tiling_textures/ranc_ext_corrugated_metal_roof_gsma"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+    </material>
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:NORMALMAP:SIMPLE_TINT" name="mat_pta_prop_barn_hay_decal" version="2">
+        <diffuse_texture file="units/pd2_dlc_peta/props/pta_prop_barn_hay_decal/pta_prop_barn_hay_decal_df"/>
+        <bump_normal_texture file="units/pd2_dlc_peta/props/pta_prop_barn_hay_decal/pta_prop_barn_hay_decal_nm"/>
+        <variable type="scalar" name="alpha_ref" value="0.0040000001899898"/>
+        <variable type="vector3" name="tint_color" value="0.37007874250412 0.28155013918877 0.26558592915535"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_white_wood" version="2">
+        <diffuse_texture file="units/pd2_dlc_ranc/architecture/ext/ext_textures/ranc_club_wood_white_df"/>
+        <bump_normal_texture file="units/pd2_dlc_ranc/architecture/int/int_textures/ranch_house/ranc_wood_beam_01_nm"/>
+        <material_texture file="units/pd2_dlc_ranc/architecture/int/int_textures/ranch_house/ranc_wood_planks_gsma"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_ranc_terracotta" version="2">
+        <diffuse_texture file="units/pd2_dlc_ranc/architecture/ext/ext_textures/ranc_ext_terracotta_df"/>
+        <bump_normal_texture file="units/pd2_dlc_ranc/architecture/ext/ext_textures/ranc_ext_terracotta_nm"/>
+        <material_texture file="units/pd2_dlc_ranc/architecture/ext/ext_textures/ranc_ext_terracotta_gsma"/>
+    </material>
+    <material render_template="decal:DIFFUSE_TEXTURE:NORMALMAP:OPACITY_TEXTURE" name="mat_road_edge" version="2">
+        <diffuse_texture file="units/pd2_dlc_ranc/architecture/ext/ext_textures/ranc_ext_dirt_road_02_df"/>
+        <opacity_texture file="units/pd2_dlc_ranc/architecture/ext/ext_textures/ranc_ext_dirt_road_02_op"/>
+        <bump_normal_texture file="units/pd2_dlc_ranc/architecture/ext/ext_textures/ranc_ext_dirt_road_02_nm"/>
+    </material>
+    <material render_template="landscape:BLEND_MASKS:MAT0:MAT0_BLEND_WORLD_MASK:MAT0_NM:MAT0_W_UV_A:MAT1:MAT1_BLEND_WORLD_MASK:MAT1_NM:MAT1_W_UV_A:MAT2:MAT2_BLEND_WORLD_MASK:MAT2_NM:MAT2_W_UV_A:MAT3:MAT3_BLEND_WORLD_MASK:MAT3_NM:MAT3_W_UV_A:OVERLAY_OVER_DETAIL:WORLD_MASK_A_WETNESS:WORLD_NM:WORLD_OVERLAY_MASK_TEXTURE:WORLD_OVERLAY_TEXTURE:WORLD_TEX_UV1" name="mat_mex_terrain" version="2">
+        <world_overlay_mask_texture type="texture" global_texture="current_global_world_overlay_mask_texture"/>
+        <diffuse_layer0_texture file="units/pd2_dlc_jerry/terrain/jry_terrain_grass_df" mip="1"/>
+        <diffuse_layer1_texture file="units/pd2_dlc_jerry/terrain/jry_terrain_grass_df"/>
+        <normal_layer0_texture file="units/pd2_dlc_peta/terrain/pta_terrain_grass_nm" mip="1"/>
+        <world_overlay_texture type="texture" global_texture="current_global_world_overlay_texture"/>
+        <normal_layer1_texture file="units/pd2_dlc_peta/terrain/pta_terrain_grass_nm" mip="1"/>
+        <diffuse_layer2_texture file="units/pd2_dlc_mex/terrain/mex_terrain_textures/mex_dry_soil_df"/>
+        <normal_layer2_texture file="units/pd2_dlc_mex/terrain/mex_terrain_textures/mex_dry_soil_nm" mip="1"/>
+        <diffuse_layer3_texture file="units/pd2_dlc_mex/terrain/mex_terrain_textures/mex_soil_dead_shrubs_df" mip="1"/>
+        <normal_layer3_texture file="units/pd2_dlc_mex/terrain/mex_terrain_textures/mex_soil_dead_shrubs_nm" mip="1"/>
+        <variable type="vector3" name="detail_scale" value="235 260.60000610352 0"/>
+        <variable type="scalar" name="specular_power" value="0.99900004744995"/>
+        <variable type="vector3" name="detail_fadeout" value="2401 9302 0"/>
+        <variable type="vector3" name="detail_fadeout" value="1 39902 0"/>
+        <variable type="vector3" name="mask_weight" value="0.69999998807907 0.69999998807907 0.90000003576279"/>
+        <bump_normal_texture file="units/pd2_dlc_ranc/architecture/ext/ranc_ext_ground/ranc_terrain_playable_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_int_concrete_floor" version="2">
+        <diffuse_texture file="units/pd2_dlc_ranc/architecture/int/int_textures/ranch_house/ranc_int_garage_floor_df"/>
+        <bump_normal_texture file="units/pd2_dlc_ranc/architecture/int/int_textures/ranch_house/ranc_int_garage_floor_nm"/>
+        <material_texture file="units/pd2_dlc_ranc/architecture/int/int_textures/ranch_house/ranc_int_garage_floor_gsma"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_white_wood" version="2">
+        <diffuse_texture file="units/pd2_dlc_peta/architecture/pta_2/pta_barn_planks_painted_01_df"/>
+        <bump_normal_texture file="units/pd2_dlc_peta/architecture/pta_2/pta_barn_planks_floor_01_nm"/>
+        <material_texture file="units/pd2_dlc_ranc/architecture/int/int_textures/ranch_house/ranc_wood_planks_gsma"/>
+    </material>
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:GSMA_TEXTURE:NORMALMAP:OPACITY_TEXTURE" name="mat_road_edge_02" version="2">
+        <diffuse_texture file="units/pd2_dlc_ranc/architecture/ext/ext_textures/ranc_ext_dirt_road_02_df"/>
+        <bump_normal_texture file="units/pd2_dlc_ranc/architecture/ext/ext_textures/ranc_ext_dirt_road_02_nm"/>
+        <opacity_texture file="units/pd2_dlc_ranc/architecture/ext/ext_textures/ranc_ext_dirt_road_02_op"/>
+        <variable type="scalar" name="alpha_ref" value="0.37300001771655"/>
+        <material_texture file="units/pd2_dlc_pent/architecture/int/int_textures/pent_gravel_gsma"/>
+    </material>
+    <material render_template="shadow_caster_only" name="shadow_caster" version="2"/>
+</materials>

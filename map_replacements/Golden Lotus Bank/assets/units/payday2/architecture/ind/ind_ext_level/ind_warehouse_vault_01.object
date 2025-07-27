@@ -1,0 +1,67 @@
+<dynamic_object>
+    <diesel orientation_object="rp_ind_warehouse_vault_01" materials="units/payday2/architecture/ind/ind_ext_level/kosugi_warehouse_vault" />
+    <bodies>
+        <body enabled="true" template="static" name="body0" >
+            <object name="rp_ind_warehouse_vault_01" />
+			<object name="c_box_13" collision_type="box" padding="-2.5"/>
+			<object name="c_box_14" collision_type="box" padding="-2.5"/>
+			<object name="c_box_15" collision_type="box" padding="-2.5"/>
+			<object name="c_box_16" collision_type="box" padding="-2.5"/>
+			<object name="c_box_17" collision_type="box" padding="-2.5"/>
+			<object name="c_box_18" collision_type="box" padding="-2.5"/>
+			<object name="c_box_19" collision_type="box" padding="-2.5"/>
+			<object name="c_box_20" collision_type="box" padding="-2.5"/>
+			<object name="c_box_21" collision_type="box" padding="-2.5"/>
+			<object name="c_box_22" collision_type="box" padding="-2.5"/>
+			<object name="c_box_23" collision_type="box" padding="-2.5"/>
+			<object name="c_box_24" collision_type="box" padding="-2.5"/>
+			<object name="c_box_25" collision_type="box" padding="-2.5"/>
+			<object name="c_box_26" collision_type="box" padding="-2.5"/>
+			<object name="c_box_27" collision_type="box" padding="-2.5"/>
+			<object name="c_box_28" collision_type="box" padding="-2.5"/>
+			<object name="c_box_29" collision_type="box" padding="-2.5"/>
+			<object name="c_box_30" collision_type="box" padding="-2.5"/>
+			<object name="c_box_31" collision_type="box" padding="-2.5"/>
+			<object name="c_box_32" collision_type="box" padding="-2.5"/>
+			<object name="c_box_33" collision_type="box" padding="-2.5"/>
+			<object name="c_box_34" collision_type="box" padding="-2.5"/>
+			<object name="c_box_35" collision_type="box" padding="-2.5"/>
+			<object name="c_box_36" collision_type="box" padding="-2.5"/>
+			<object name="c_box_37" collision_type="box" padding="-2.5"/>
+			<object name="c_box_38" collision_type="box" padding="-2.5"/>
+			<object name="c_box_07" collision_type="box" padding="-2.5"/>
+			<object name="c_box_08" collision_type="box" padding="-2.5"/>
+			<object name="c_box_09" collision_type="box" padding="-2.5"/>
+			<object name="c_box_10" collision_type="box" padding="-2.5"/>
+			<object name="c_box_11" collision_type="box" padding="-2.5"/>
+			<object name="c_box_12" collision_type="box" padding="-2.5"/>
+        </body>
+		 <body name="nav_body" template="nav_walk" enabled="true" >
+            <object name="rp_ind_warehouse_vault_01"/>
+            <object collision_type="box" enabled="true" name="c_box_01"/>
+            <object collision_type="box" enabled="true" name="c_box_02"/>
+            <object collision_type="box" enabled="true" name="c_box_03"/>
+            <object collision_type="box" enabled="true" name="c_box_04"/>
+            <object collision_type="box" enabled="true" name="c_box_05"/>
+            <object collision_type="box" enabled="true" name="c_box_06"/>
+        </body>
+			<body name="ray_body" template="static" enabled="true" >
+            <object name="rp_ind_warehouse_vault_01"/>
+            <object collision_type="mesh_mopp" enabled="true" name="g_bars"/>
+        </body>
+    </bodies>
+	
+<decal_surfaces default_material="metal" static="true">
+  <decal_mesh enabled="true" name="dm_metal" material="sheet_metal" />
+  <decal_mesh enabled="true" name="dm_plastic" material="rubber" />
+</decal_surfaces>
+  
+    <graphics>
+		<object enabled="true" name="g_g" shadow_caster="false"/>
+		<object enabled="true" name="g_trim" shadow_caster="false"/>
+		<object enabled="true" name="g_bars" shadow_caster="false"/>
+		<object enabled="true" name="g_shelf" shadow_caster="false"/>
+		<object enabled="true" name="g_wall_bars" shadow_caster="false"/>
+		<object enabled="true" name="s_s" shadow_caster="true"/>
+    </graphics>
+</dynamic_object>

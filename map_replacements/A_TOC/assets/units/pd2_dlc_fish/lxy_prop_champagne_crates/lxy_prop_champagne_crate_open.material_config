@@ -1,0 +1,29 @@
+<materials version="3">
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_lxy_champagne_bottle" version="2">
+        <diffuse_texture file="units/pd2_dlc_fish/lxy_prop_champagne_bottle_01/lxy_prop_champagne_bottle_01_df"/>
+        <bump_normal_texture file="units/pd2_dlc_fish/lxy_prop_champagne_bottle_01/lxy_prop_champagne_bottle_01_nm"/>
+        <material_texture file="units/pd2_dlc_fish/lxy_prop_champagne_bottle_01/lxy_prop_champagne_bottle_01_gsma"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_lxy_champagne_bottle_lod" version="2">
+        <diffuse_texture file="units/pd2_dlc_fish/lxy_prop_champagne_bottle_01/lxy_prop_champagne_bottle_01_df" mip="4"/>
+        <bump_normal_texture file="units/pd2_dlc_fish/lxy_prop_champagne_bottle_01/lxy_prop_champagne_bottle_01_nm" mip="4"/>
+        <material_texture file="units/pd2_dlc_fish/lxy_prop_champagne_bottle_01/lxy_prop_champagne_bottle_01_gsma" mip="4"/>
+    </material>
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:DOUBLE_SIDED:EXTERNAL_ALPHA_REF:NORMALMAP:OPACITY_TEXTURE" name="mat_lxy_champagne_crate_straw" version="2">
+        <diffuse_texture file="units/pd2_dlc_fish/lxy_prop_champagne_crates/lxy_prop_champagne_crate_straw_df"/>
+        <bump_normal_texture file="units/pd2_dlc_fish/lxy_prop_champagne_crates/lxy_prop_champagne_crate_straw_nm"/>
+        <opacity_texture file="units/pd2_dlc_fish/lxy_prop_champagne_crates/lxy_prop_champagne_crate_straw_op"/>
+        <variable type="scalar" name="alpha_ref" value="0.24400001158938"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_lxy_prop_champagne_crates" version="2">
+        <diffuse_texture file="units/pd2_dlc_fish/lxy_prop_champagne_crates/lxy_prop_champagne_crates_df"/>
+        <bump_normal_texture file="units/pd2_dlc_fish/lxy_prop_champagne_crates/lxy_prop_champagne_crates_nm"/>
+        <material_texture file="units/pd2_dlc_fish/lxy_prop_champagne_crates/lxy_prop_champagne_crates_gsma"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_lxy_prop_champagne_crates_lod" version="2">
+        <diffuse_texture file="units/pd2_dlc_fish/lxy_prop_champagne_crates/lxy_prop_champagne_crates_df" mip="4"/>
+        <bump_normal_texture file="units/pd2_dlc_fish/lxy_prop_champagne_crates/lxy_prop_champagne_crates_nm" mip="4"/>
+        <material_texture file="units/pd2_dlc_fish/lxy_prop_champagne_crates/lxy_prop_champagne_crates_gsma" mip="4"/>
+    </material>
+    <material render_template="shadow_caster_only" name="shadow_caster" version="2"/>
+</materials>

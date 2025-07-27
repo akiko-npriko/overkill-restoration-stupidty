@@ -1,0 +1,50 @@
+<dynamic_object>
+	<diesel materials="units/pd2_mod_custom/cus_double_keycard_panel/cus_double_keycard_panel" orientation_object="rp_root" />
+	<sequence_manager file="units/pd2_mod_custom/cus_double_keycard_panel/cus_double_keycard_panel" />
+	
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="c_c" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	
+	<animations>
+		<animation_group name="anim_keycard1" enabled="false">
+			<object name="anim_key1" />
+		</animation_group>
+		<animation_group name="anim_keycard2" enabled="false">
+			<object name="anim_key2" />
+		</animation_group>
+	</animations>
+
+	<decal_surfaces default_material="thin_layer">
+		<decal_mesh name="g_g"				enabled="true" material="plastic" />
+		<decal_mesh name="g_screen_closed"	enabled="true" material="glass" />
+	</decal_surfaces>
+	
+	<graphics>
+		<graphic_group name="grp_graphics" enabled="true" culling_object="g_g">
+			<object name="g_g"				enabled="true" />
+			<object name="g_keycard1"		enabled="false" />
+			<object name="g_keycard2"		enabled="false" />
+			<object name="g_screen_closed"	enabled="true" />
+			<object name="g_screen_opened"	enabled="false" />
+			<object name="g_screen_jammed"	enabled="false" />
+			<object name="g_screen_reboot"	enabled="false" />
+		</graphic_group>
+		
+		<graphic_group name="grp_keycard1_contour" enabled="true" culling_object="g_keycard1_contour">
+			<lod_object name="lod_keycard1_contour">
+				<object name="g_keycard1_contour" 			enabled="true"  max_distance="450"  max_draw_lod="0" />
+				<object name="g_keycard1_contour_lod1" 		enabled="true"  lod="1" />
+			</lod_object>
+		</graphic_group>
+		
+		<graphic_group name="grp_keycard2_contour" enabled="false" culling_object="g_keycard2_contour">
+			<lod_object name="lod_keycard2_contour">
+				<object name="g_keycard2_contour" 			enabled="true"  max_distance="450"  max_draw_lod="0" />
+				<object name="g_keycard2_contour_lod1" 		enabled="true"  lod="1" />
+			</lod_object>
+		</graphic_group>
+	</graphics>
+</dynamic_object>

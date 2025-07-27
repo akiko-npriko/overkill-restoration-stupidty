@@ -1,0 +1,92 @@
+<materials version="3" group="lux_nightclub_wall_group">
+    <material name="mat_dance_floor" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:SELF_ILLUMINATION" version="2">
+        <diffuse_texture file="units/payday2/architecture/com_int_nightclub/com_int_nightclub_dance_floor_df"/>
+        <self_illumination_texture file="units/payday2/architecture/com_int_nightclub/com_int_nightclub_dance_floor_il"/>
+        <variable value="identity" type="scalar" name="il_multiplier"/>
+        <bump_normal_texture file="units/payday2/architecture/com_int_nightclub/com_int_nightclub_dance_floor_glass_nm"/>
+    </material>
+
+    <material name="mat_tile_wall" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/payday2/architecture/com_int_nightclub/com_int_nightclub_wall_tiles_df"/>
+        <bump_normal_texture file="units/payday2/architecture/com_int_nightclub/com_int_nightclub_wall_tiles_nm"/>
+    </material>
+    <material name="mat_wallpaper" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/payday2/architecture/com_int_nightclub/com_int_nightclub_wall_wallpaper_df"/>
+        <bump_normal_texture file="units/payday2/architecture/com_int_nightclub/com_int_nightclub_wall_wallpaper_nm"/>
+    </material>
+    <material name="mat_metal" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:RL_CORE_ENVIRONMENT" version="2">
+        <diffuse_texture file="units/payday2/architecture/com_int_nightclub/com_int_nightclub_df"/>
+        <bump_normal_texture file="units/payday2/architecture/com_int_nightclub/com_int_nightclub_nm"/>
+    </material>	
+	
+	
+
+    <material name="lux_int_01_wallpapertile_b" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:INSTANCED:NORMALMAP" version="2">
+        <diffuse_texture file="units/pd2_dlc_pent/architecture/int/int_textures/pent_int_black_wood_df"/>
+        <bump_normal_texture file="units/pd2_dlc_pent/architecture/int/int_textures/pent_int_black_wood_nm"/>
+        <material_texture file="units/pd2_dlc_pent/architecture/int/int_textures/pent_int_black_wood_gsma"/>
+    </material>	
+	
+	<material name="mat_hcm_int_a" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/pd2_dlc_pent/architecture/int/int_textures/pent_int_black_wood_df"/>
+        <bump_normal_texture file="units/pd2_dlc_pent/architecture/int/int_textures/pent_int_black_wood_nm"/>
+        <material_texture file="units/pd2_dlc_pent/architecture/int/int_textures/pent_int_black_wood_gsma"/>
+    </material>
+	
+	
+	
+	
+	
+    <material name="lux_int_01" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:INSTANCED:NORMALMAP:RL_ENVIRONMENT:VERTEX_COLOR" version="2">
+        <diffuse_texture file="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_01_df"/>
+        <bump_normal_texture file="units/pd2_mod_lux/architecture/pd2_mod_lux/lux_int_01_nm"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+    </material>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    <material name="mat_nightclub_vc" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:RL_CORE_ENVIRONMENT:VERTEX_COLOR" version="2">
+        <diffuse_texture file="units/payday2/architecture/com_int_nightclub/com_int_nightclub_df"/>
+        <bump_normal_texture file="units/payday2/architecture/com_int_nightclub/com_int_nightclub_nm"/>
+    </material>
+    <material name="mat_glow_trims" render_template="generic:DIFFUSE_TEXTURE:RL_CORE_ENVIRONMENT:SELF_ILLUMINATION" version="2">
+        <diffuse_texture file="units/payday2/architecture/com_int_nightclub/com_int_nightclub_glow_trims_df"/>
+        <self_illumination_texture file="units/pd2_mod_lux/architecture/pd2_mod_lux_nightclub/lux_int_nightclub_glow_trims_red_il"/>
+        <variable value="streetlight" type="scalar" name="il_multiplier"/>
+    </material>
+    <material name="mat_glass_dance_floor" decal_material="glass_breakable" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <variable value="0 1 0.66999995708466" type="vector3" name="fresnel_settings"/>
+        <opacity_texture file="units/payday2/architecture/com_int_nightclub/com_int_nightclub_dance_floor_glass_op"/>
+        <diffuse_texture file="units/payday2/architecture/com_int_nightclub/com_int_nightclub_dance_floor_glass_df"/>
+        <reflection_texture global_texture="current_global_texture" type="cube"/>
+        <bump_normal_texture file="units/payday2/architecture/com_int_nightclub/com_int_nightclub_dance_floor_glass_nm"/>
+    </material>
+    <material name="mat_glass" decal_material="glass_breakable" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE" version="2">
+        <variable value="0 1 0.66999995708466" type="vector3" name="fresnel_settings"/>
+        <opacity_texture file="units/payday2/architecture/com_int_nightclub/com_int_nightclub_glass_op"/>
+        <diffuse_texture file="units/payday2/architecture/com_int_nightclub/com_int_nightclub_glass_df"/>
+        <reflection_texture type="cubemap" global_texture="current_global_texture"/>
+    </material>
+    <material name="mat_glass_shattered" version="2" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:NORMALMAP">
+        <variable value="2 0 0" type="vector3" name="fresnel_settings"/>
+        <opacity_texture file="units/payday2/glass/glass_shattered_op"/>
+        <diffuse_texture file="units/payday2/glass/glass_shattered_df"/>
+        <bump_normal_texture file="units/payday2/glass/glass_shattered_nm"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+    </material>
+    <material name="mat_fluorescent" version="2" render_template="generic:DIFFUSE_TEXTURE:SELF_ILLUMINATION">
+        <diffuse_texture file="units/payday2/architecture/hcm/hcm_int_01_fluorescent_df"/>
+        <self_illumination_texture file="units/payday2/architecture/hcm/hcm_int_01_fluorescent_df"/>
+        <variable value="identity" type="scalar" name="il_multiplier"/>
+    </material>
+    <material name="mat_glow" version="2" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE">
+        <diffuse_texture file="units/payday2/architecture/hcm/hcm_int_01_glow_op"/>
+        <variable value="dimlight" type="scalar" name="intensity"/>
+    </material>
+</materials>

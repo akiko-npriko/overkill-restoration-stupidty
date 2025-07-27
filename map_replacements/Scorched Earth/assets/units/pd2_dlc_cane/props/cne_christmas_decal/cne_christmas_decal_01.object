@@ -1,0 +1,15 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_cane/props/cne_christmas_decal/cne_christmas_decal_01" orientation_object="rp_cne_christmas_decal_01" />
+	<bodies>
+<body name="body static" enabled="true" template="static">
+	<object name="rp_cne_christmas_decal_01" />
+	<object name="g_lod0" collision_type="box" padding="-2.5" />
+</body>
+</bodies>
+	<graphics>
+		<lod_object name="lod_g">
+			<object name="g_lod0" enabled="true" max_distance="3500" />
+			<object name="g_lod1" enabled="true" />
+		</lod_object>
+	</graphics>
+</dynamic_object>

@@ -1,0 +1,15 @@
+<dynamic_object>
+    <diesel orientation_object="rp_stove" materials="units/payday2/props/lxa_prop_kitchen_stove/lxa_prop_kitchen_stove" />
+    <bodies>
+        <body enabled="true" template="static" name="body0" >
+            <object name="rp_stove" />
+            <object collision_type="box" name="c_box_01" padding="-2.5"/>
+        </body>
+    </bodies>
+	<decal_surfaces>
+        <decal_mesh enabled="true" name="c_box_01" material="plastic" />
+    </decal_surfaces>
+    <graphics>
+        <object enabled="true" name="g_mesh" />
+    </graphics>
+</dynamic_object>

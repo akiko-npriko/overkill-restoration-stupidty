@@ -1,0 +1,203 @@
+<materials version="3">
+	<material decal_material="no_decal" name="mat_lxy_int_floor_woodtrim" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_floor_woodtrim_df" />
+		<reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap" />
+		<material_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_floor_woodtrim_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_floor_woodtrim_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_ext_tanbed_jacuzzi" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_ext_tanbed_jacuzzi_df" />
+		<reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap" />
+		<material_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_ext_tanbed_jacuzzi_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_ext_tanbed_jacuzzi_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_mahogany_light" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_mahogany_light_df" />
+		<reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap" />
+		<material_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_mahogany_dark_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_mahogany_dark_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_mahogany_light_trim" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_mahogany_light_df" />
+		<reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap" />
+		<material_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_mahogany_dark_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_wood_dado_trim_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_hull_wall" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_wall_df" />
+		<reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap" />
+		<material_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_wall_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_wall_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_hull_black_painted" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_black_painted_df" />
+		<reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap" />
+		<material_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_white_painted_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_white_painted_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_int_ceiling_props" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_ceiling_props_df" />
+		<reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap" />
+		<material_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_ceiling_props_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_ceiling_props_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_hull_white_painted" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_white_painted_df" />
+		<reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap" />
+		<material_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_white_painted_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_white_painted_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_ext_tanbed_leather" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_ext_tanbed_leather_df" />
+		<material_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_ext_tanbed_leather_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_ext_tanbed_leather_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_int_veneer" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_veneer_df" />
+		<reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap" />
+		<material_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_veneer_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_veneer_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_glass" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:DOUBLE_SIDED:OPACITY_FADE" version="2">
+        <variable value="0.55000001192093 1 0.37000000476837" type="vector3" name="fresnel_settings"/>
+        <opacity_texture file="units/payday2/glass/glass_clear_vehicle_op"/>
+        <diffuse_texture file="units/payday2/glass/glass_clear_vehicle_df"/>
+        <reflection_texture type="cubemap" global_texture="current_global_texture"/>
+        <variable value="10 4000 0" type="vector3" name="opacity_fade"/>
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_int_floor_hallway" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_floor_hallway_df" />
+		<reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap" />
+		<material_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_floor_hallway_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_floor_hallway_nm" />
+	</material>
+	<material name="shadow_caster" render_template="shadow_caster_only" version="2" />
+	<material decal_material="no_decal" name="mat_lxy_hull_chrome" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_chrome_df" />
+		<material_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_chrome_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_chrome_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_int_floor_carpet" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_floor_carpet_df" />
+		<reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap" />
+		<material_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_floor_carpet_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_floor_carpet_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_hull_ceiling" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_ceiling_df" />
+		<reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap" />
+		<material_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_ceiling_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_ceiling_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_mahogany_dark" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_mahogany_dark_df" />
+		<reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap" />
+		<material_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_mahogany_dark_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_mahogany_dark_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_mahogany_dark_trim" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_mahogany_dark_df" />
+		<reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap" />
+		<material_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_mahogany_dark_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_wood_dado_trim_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_int_ceiling_glossy" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_ceiling_glossy_df" />
+		<reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap" />
+		<material_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_ceiling_glossy_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_ceiling_glossy_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_int_gold" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_gold_df" />
+		<reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap" />
+		<material_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_gold_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_gold_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_hull_wooden_floor" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_wooden_floor_df" />
+		<reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap" />
+		<material_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_wooden_floor_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_wooden_floor_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_hull_radartower_misc" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_radartower_misc_df" />
+		<reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap" />
+		<material_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_radartower_misc_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_radartower_misc_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_int_floor_marble" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_floor_marble_df" />
+		<reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap" />
+		<material_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_floor_marble_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_floor_marble_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_hull_chrome_var" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_chrome_var_df" />
+		<reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap" />
+		<material_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_chrome_var_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_chrome_var_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_yellowlight" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:SELF_ILLUMINATION" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_yellowlight_df" />
+		<self_illumination_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_yellowlight_il" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_yellowlight_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_int_curtain" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_curtain_df" />
+		<material_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_curtain_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_curtain_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_bluelight" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:SELF_ILLUMINATION" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_bluelight_df" />
+		<self_illumination_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_bluelight_il" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_bluelight_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_int_wood_dado_trim" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_wood_dado_trim_df" />
+		<reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap" />
+		<material_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_wood_dado_trim_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_wood_dado_trim_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_int_floor_wood" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_floor_wood_df" />
+		<reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap" />
+		<material_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_floor_wood_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_floor_wood_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_int_ceiling_padded_var" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_ceiling_padded_var_df" />
+		<material_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_ceiling_padded_var_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_ceiling_padded_var_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_int_ceiling_padded" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_ceiling_padded_df" />
+		<material_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_ceiling_padded_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_int_ceiling_padded_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_hull_trim" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_trim_df" />
+		<reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap" />
+		<material_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_trim_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_trim_nm" />
+	</material>
+	<material decal_material="no_decal" name="mat_lxy_hull_stern_misc" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_stern_misc_df" />
+		<reflection_texture file="environments/cubemaps/cubemap_gold" type="cubemap" />
+		<material_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_stern_misc_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_hull_stern_misc_nm" />
+	</material>
+	<material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" version="2" decal_material="glass" name="mat_lxy_yellowlight_il">
+        <diffuse_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_yellowlight_df"/>
+        <reflection_texture type="cubemap" file="units/payday2/cubemaps/cubemap_zero_df"/>
+        <variable type="scalar" name="il_multiplier" value="desklight"/>
+        <bump_normal_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_yellowlight_nm"/>
+        <self_illumination_texture file="units/pd2_dlc_lxy/architecture/yacht_dhruva/textures/lxy_yellowlight_il"/>
+        <variable type="scalar" name="il_bloom" value="2.0540000975598"/>
+    </material>
+	
+    <material name="mat_lxy_glass" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP" decal_material="glass_breakable" version="2">
+        <bump_normal_texture file="units/payday2/architecture/bnk_glass/bnk_glass_a_nm"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <diffuse_texture file="units/payday2/architecture/bnk_glass/bnk_glass_a_df"/>
+    </material>		
+</materials>

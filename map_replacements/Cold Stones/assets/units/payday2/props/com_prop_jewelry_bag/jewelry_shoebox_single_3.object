@@ -1,0 +1,15 @@
+<dynamic_object>
+    <diesel orientation_object="rp_luxury_shoebox_single_3" materials="units/payday2/props/com_prop_jewelry_bag/jewelry_bag" />
+		<bodies>
+        <body enabled="true" template="raycoll_static" name="body">
+            <object name="rp_luxury_shoebox_single_3" />
+            <object enabled="true" name="g_shoebox_bella_closed" collision_type="box" />
+        </body>
+    </bodies>
+	<decal_surfaces default_material="thin_layer">
+        <decal_mesh enabled="true" name="dm_shoebox_closed" material="thin_layer" />
+    </decal_surfaces>
+    <graphics>
+        <object enabled="true" name="g_shoebox_bella_closed" />
+    </graphics>
+</dynamic_object>

@@ -1,0 +1,16 @@
+<materials version="3">
+    <material unique="true" render_template="generic:ALPHA_MASKED:CONTOUR:DIFFUSE_TEXTURE:OPACITY_TEXTURE" name="mtr_c4" version="2">
+        <diffuse_texture file="units/white_df"/>
+        <variable type="vector3" name="contour_color" value="1.0 0.5 0"/>
+        <variable type="scalar" name="contour_opacity" value="1"/>
+        <opacity_texture file="units/transparent_op"/>
+        <variable type="scalar" name="contour_distance" value="500"/>
+    </material>
+    <material unique="true" render_template="generic:ALPHA_MASKED:CONTOUR:DIFFUSE_TEXTURE:OPACITY_TEXTURE" name="mtr_diodes" version="2">
+        <diffuse_texture file="units/white_df"/>
+        <variable type="vector3" name="contour_color" value="1.0 0.5 0"/>
+        <variable type="scalar" name="contour_opacity" value="1"/>
+        <opacity_texture file="units/transparent_op"/>
+        <variable type="scalar" name="contour_distance" value="500"/>
+    </material>
+</materials>

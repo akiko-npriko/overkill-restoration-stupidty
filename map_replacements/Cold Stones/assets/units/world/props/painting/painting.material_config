@@ -1,0 +1,11 @@
+<materials version="3">
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" decal_material="wood" version="2" name="painting">
+        <variable value="0" type="scalar" name="specular_power"/>
+        <diffuse_texture file="units/world/props/painting/painting_df"/>
+        <bump_normal_texture file="units/world/props/painting/painting_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" decal_material="wood" version="2" name="mtr_manager">
+        <variable value="0" type="scalar" name="specular_power"/>
+        <diffuse_texture file="units/world/props/painting/painting_manager_df"/>
+    </material>
+</materials>

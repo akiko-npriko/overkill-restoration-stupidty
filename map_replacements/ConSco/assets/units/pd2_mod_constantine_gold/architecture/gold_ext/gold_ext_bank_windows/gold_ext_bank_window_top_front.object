@@ -1,0 +1,69 @@
+<dynamic_object>
+	<diesel materials="units/pd2_mod_constantine_gold/architecture/gold_ext/gold_ext_bank_windows/gold_ext_bank_windows" orientation_object="rp_brb_ext_bank_window_top_front" />
+	<sequence_manager file="units/pd2_mod_constantine_gold/architecture/gold_ext/gold_ext_bank_windows/gold_ext_bank_window_top_front" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_brb_ext_bank_window_top_front" />
+			<object name="c_box_00" collision_type="box" padding="-2.5" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+			<object name="c_box_04" collision_type="box" padding="-2.5" />
+			<object name="c_box_05" collision_type="box" padding="-2.5" />
+			<object name="c_box_06" collision_type="box" padding="-2.5" />
+			<object name="c_box_07" collision_type="box" padding="-2.5" />
+			<object name="c_box_09" collision_type="box" padding="-2.5" />
+			<object name="c_box_10" collision_type="box" padding="-2.5" />
+			<object name="c_box_11" collision_type="box" padding="-2.5" />
+			<object name="c_box_12" collision_type="box" padding="-2.5" />
+			<object name="c_box_08" collision_type="box" padding="-2.5" />
+			<object name="c_box_13" collision_type="box" padding="-2.5" />
+			<object name="c_box_14" collision_type="box" padding="-2.5" />
+			<object name="c_box_15" collision_type="box" padding="-2.5" />
+			<object name="c_box_16" collision_type="box" padding="-2.5" />
+			<object name="c_box_17" collision_type="box" padding="-2.5" />
+			<object name="c_box_18" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="glass_body_02" enabled="true" template="window">
+			<object name="e_glass_02" />
+			<object name="c_box_glass_02" enabled="true" collision_type="box" padding="-2.5"/>
+        </body>
+		<body name="glass_body_03" enabled="true" template="window">
+			<object name="e_glass_03" />
+			<object name="c_box_glass_03" collision_type="box" padding="-2.5"/>
+        </body>
+		<body name="glass_body_04" enabled="true" template="window">
+			<object name="e_glass_04" />
+			<object name="c_box_glass_04" collision_type="box" padding="-2.5"/>
+        </body>
+		<body name="glass_body_05" enabled="true" template="window">
+			<object name="e_glass_05" />
+			<object name="c_box_glass_05" collision_type="box" padding="-2.5"/>
+        </body>
+		<body name="glass_body_06" enabled="true" template="window">
+			<object name="e_glass_06" />
+			<object name="c_box_glass_06" collision_type="box" padding="-2.5"/>
+        </body>
+		<body name="body_nav_walk" add_ray_type="ai_vision" enabled="true" template="nav_walk">
+			<object name="rp_brb_ext_bank_window_top_front" />
+			<object name="c_nav_walk_01" collision_type="mesh_mopp" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="glass_breakable">
+		<decal_mesh name="dm_glass_breakable_02" enabled="true" material="glass_breakable" />
+		<decal_mesh name="dm_glass_breakable_03" enabled="true" material="glass_breakable" />
+		<decal_mesh name="dm_glass_breakable_04" enabled="true" material="glass_breakable" />
+		<decal_mesh name="dm_glass_breakable_05" enabled="true" material="glass_breakable" />
+		<decal_mesh name="dm_glass_breakable_06" enabled="true" material="glass_breakable" />
+		<decal_mesh name="dm_metal" enabled="true" material="metal" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_glass_02" enabled="true" />
+		<object name="g_glass_03" enabled="true" />
+		<object name="g_glass_04" enabled="true" />
+		<object name="g_glass_05" enabled="true" />
+		<object name="g_glass_06" enabled="true" />
+		<object name="g_glass_shattered" enabled="true" />
+		<object name="g_g" enabled="true" />
+	</graphics>
+</dynamic_object>

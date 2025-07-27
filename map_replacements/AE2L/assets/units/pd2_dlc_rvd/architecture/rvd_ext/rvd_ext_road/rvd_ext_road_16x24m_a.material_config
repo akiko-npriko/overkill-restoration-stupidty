@@ -1,0 +1,52 @@
+<materials version="3">
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:VERTEX_COLOR" name="mat_rvd_01" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_road_and_path_df"/>
+        <bump_normal_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_road_and_path_nm" mip="1"/>
+        <material_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_road_and_path_gsma"/>
+    </material>
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:NORMALMAP:OPACITY_TEXTURE:VERTEX_COLOR" name="mat_rvd_concrete_slabs" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_road_concrete_df"/>
+        <bump_normal_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_road_concrete_nm"/>
+        <opacity_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_road_concrete_op"/>
+        <variable type="scalar" name="alpha_ref" value="0.25800001225434"/>
+    </material>
+    <material version="2" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:NORMALMAP:RL_ENVIRONMENT:VERTEX_COLOR" decal_material="concrete" name="mat_rvd_marking_01">
+        <diffuse_texture file="units/payday2/architecture/str/str_ext_marking_01_df"/>
+        <bump_normal_texture file="units/payday2/architecture/str/str_ext_marking_01_nm"/>
+        <variable type="scalar" name="alpha_ref" value="0.053000003099442"/>
+    </material>
+    <material version="2" render_template="decal:DIFFUSE_TEXTURE" decal_material="stone" name="mat_rvd_ao">
+        <diffuse_texture file="units/pd2_dlc_chill/architecture/chl_int_bar_v2/chl_int_bar_ao_plane_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" name="mat_rvd_pavement_red" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_road_pavement_red_df"/>
+        <bump_normal_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_road_pavement_red_nm"/>
+    </material>
+    <material render_template="decal:DIFFUSE_TEXTURE" name="mat_rvd_mark" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_road_wait_here_mark_df"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" name="mat_rvd_flower_bed" version="2">
+        <diffuse_texture file="units/payday2/props/com_prop_mall_planter_modular/com_prop_mall_planter_modular_df"/>
+        <bump_normal_texture file="units/payday2/props/com_prop_mall_planter_modular/com_prop_mall_planter_modular_nm"/>
+    </material>
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:DISTANCE_FADE_3:EXTERNAL_ALPHA_REF:NORMALMAP:OPACITY_TEXTURE:VERTEX_COLOR" name="mat_rvd_low_bush" version="2">
+        <diffuse_texture file="units/pd2_dlc_chew/nature/chw_foliage/chw_veg_desert_bush_df"/>
+        <bump_normal_texture file="units/pd2_dlc_chew/nature/chw_foliage/chw_veg_desert_bush_nm"/>
+        <variable type="scalar" name="alpha_ref" value="0.2"/>
+        <opacity_texture file="units/pd2_dlc_chew/nature/chw_foliage/chw_veg_desert_bush_op"/>
+    </material>
+    <material render_template="shadow_caster_only" name="shadow_caster" version="2"/>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:RL_ENVIRONMENT:VERTEX_COLOR" name="mat_rvd_01_construction" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_construction_df"/>
+        <bump_normal_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_construction_nm"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP:RL_ENVIRONMENT" name="mat_rvd_01_construction_puddle" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_construction_df"/>
+        <bump_normal_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/ext_textures/rvd_ext_construction_nm"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:RL_ENVIRONMENT:VERTEX_COLOR" name="mat_rvd_red_pavment" version="2">
+        <diffuse_texture file="units/payday2/architecture/str/str_02_df"/>
+        <bump_normal_texture file="units/payday2/architecture/str/str_02_nm"/>
+    </material>
+</materials>

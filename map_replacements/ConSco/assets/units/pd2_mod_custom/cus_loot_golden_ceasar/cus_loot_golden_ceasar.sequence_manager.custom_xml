@@ -1,0 +1,27 @@
+<table>
+	<unit>
+		<sequence editable_state="true" name=" 'hide' " triggable="true">
+			<object name="'g_pillow'" enabled="false"/>
+			<decal_mesh name=" 'g_pillow' " enabled="false"/>
+			<body name=" 'body_pillow' " enabled="false"/>
+			<object name="'g_bust'" enabled="false"/>
+			<decal_mesh name=" 'g_bust' " enabled="false"/>
+			<body name=" 'body_bust' " enabled="false"/>
+			<interaction enabled="false"/>
+		</sequence>
+		<sequence editable_state="true" name="' show '" triggable="true">
+			<object name="'g_pillow'" enabled="true"/>
+			<decal_mesh name=" 'g_pillow' " enabled="true"/>
+			<body name=" 'body_pillow' " enabled="true"/>
+			<object name="'g_bust'" enabled="true"/>
+			<decal_mesh name=" 'g_bust' " enabled="true"/>
+			<body name=" 'body_bust' " enabled="true"/>
+			<interaction enabled="true"/>
+		</sequence>
+		<sequence name="'interact'">
+			<object name="'g_bust'" enabled="false"/>
+			<decal_mesh name=" 'g_bust' " enabled="false"/>
+			<body name=" 'body_bust' " enabled="false"/>
+		</sequence>
+	</unit>
+</table>

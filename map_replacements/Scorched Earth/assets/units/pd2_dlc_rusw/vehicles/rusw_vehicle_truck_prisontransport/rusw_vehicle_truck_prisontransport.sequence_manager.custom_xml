@@ -1,0 +1,37 @@
+<table>
+	<unit>
+		<sequence editable_state="true" name="'anim_open_rear_doors'" triggable="true">
+			<animation_group enabled="true" from="0/30" name="'anim_open_doors'" to="15/30"/>
+			<sound action="'play'" event="'bar_prison_transport_door_open_finished'" source="'snd'"/>
+		</sequence>
+		<sequence editable_state="true" name="'hide_doors'" triggable="true">
+			<graphic_group name="'door_r_r'" visibility="false"/>
+			<graphic_group name="'door_r_l'" visibility="false"/>
+			<body enabled="false" name="'body_collision_03'"/>
+			<body enabled="false" name="'body_collision_04'"/>
+			<decal_mesh enabled="false" name="'dm_glass_unbreakable_door_r_right'"/>
+			<decal_mesh enabled="false" name="'dm_glass_unbreakable_door_r_left'"/>
+			<decal_mesh enabled="false" name="'dm_metal_door_r_right'"/>
+			<decal_mesh enabled="false" name="'dm_metal_door_r_left'"/>
+		</sequence>
+		<sequence editable_state="false" name="'interact'" triggable="true"/>
+		<sequence editable_state="true" name="'activate_door'" triggable="true">
+			<function extension="'base'" function="'activate'"/>
+		</sequence>
+		<sequence editable_state="true" name="'deactivate_door'" triggable="true">
+			<function extension="'base'" function="'deactivate'"/>
+		</sequence>
+		<sequence editable_state="false" name="'c4_placed'" triggable="true"/>
+		<sequence editable_state="false" name="'all_c4_placed'" triggable="true"/>
+		<sequence editable_state="false" name="'c4_completed'" triggable="true"/>
+		<sequence editable_state="false" name="'door_opened'" triggable="true"/>
+		<sequence editable_state="false" name="'explode_door'" triggable="true">
+			<effect name="'effects/payday2/particles/explosions/shapecharger_explosion'" parent="object( 'e_effect' )" position="v()"/>
+			<sound action="'play'" event="'c4_explode_metal'" object="'e_effect'"/>
+			<spawn_unit name="'units/pd2_dlc_rusw/vehicles/rusw_vehicle_truck_prisontransport/spawn_right_door'" position="object_pos('rp_glc_vehicle_truck_prisontransport')" rotation="object_rot('rp_glc_vehicle_truck_prisontransport')"/>
+			<spawn_unit name="'units/pd2_dlc_rusw/vehicles/rusw_vehicle_truck_prisontransport/spawn_left_door'" position="object_pos('rp_glc_vehicle_truck_prisontransport')" rotation="object_rot('rp_glc_vehicle_truck_prisontransport')"/>
+			<physic_effect name="'physic_effects/push_sphere'" param1="100" param2="20" target="dest_unit:get_object( Idstring('e_effect') )"/>
+			<run_sequence name="'hide_doors'"/>
+		</sequence>
+	</unit>
+</table>

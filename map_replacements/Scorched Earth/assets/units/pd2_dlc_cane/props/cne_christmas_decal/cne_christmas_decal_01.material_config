@@ -1,0 +1,13 @@
+<materials version="3">
+	  <material name="mat_decals" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:OPACITY_TEXTURE" version="2">
+        <diffuse_texture file="units/pd2_dlc_cane/props/cne_christmas_decal/cne_props_christmas_decal_df"/>
+        <opacity_texture file="units/pd2_dlc_cane/props/cne_christmas_decal/cne_props_christmas_decal_df"/>
+        <variable value="0.085" type="scalar" name="alpha_ref"/>
+    </material>
+
+      <material name="mat_decals_lod" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:OPACITY_TEXTURE" version="2">
+        <diffuse_texture file="units/pd2_dlc_cane/props/cne_christmas_decal/cne_props_christmas_decal_df"/>
+        <opacity_texture file="units/pd2_dlc_cane/props/cne_christmas_decal/cne_props_christmas_decal_df"/>
+        <variable value="0.085" type="scalar" name="alpha_ref"/>
+    </material>
+</materials>

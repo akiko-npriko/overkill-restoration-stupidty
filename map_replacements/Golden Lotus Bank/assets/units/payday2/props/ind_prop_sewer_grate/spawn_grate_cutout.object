@@ -1,0 +1,11 @@
+<dynamic_object>
+    <diesel orientation_object="rp_spawn_grate_cutout" materials="units/payday2/props/ind_prop_sewer_grate/ind_prop_sewer_grate" />
+    <bodies>
+        <body enabled="true" template="debris" name="grate_cutout" mass="20" >
+			<object collision_type="convex" name="c_grate_cutout" padding="-2.5" />
+		</body>
+    </bodies>
+    <graphics>
+        <object enabled="true" name="g_grate_cutout" />
+    </graphics>
+</dynamic_object>

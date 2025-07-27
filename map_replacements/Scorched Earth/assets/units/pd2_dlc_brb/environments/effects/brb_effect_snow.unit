@@ -1,0 +1,9 @@
+<unit type="brb" slot="1">
+	<object file="units/pd2_dlc_brb/environments/effects/brb_effect_snow" />
+		<dependencies>
+		<depends_on effect="effects/particles/snow/snow_02" />
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+	</extensions>
+</unit>

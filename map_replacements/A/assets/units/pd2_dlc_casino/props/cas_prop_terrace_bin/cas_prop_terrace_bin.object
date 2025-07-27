@@ -1,0 +1,18 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_casino/props/cas_prop_terrace_bin/cas_prop_terrace_bin" orientation_object="rp_cas_prop_terrace_bin" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_cas_prop_terrace_bin" />
+			<object name="c_capsule_01" collision_type="capsule" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="metal">
+		<decal_mesh name="dm_metal" enabled="true" material="metal" />
+	</decal_surfaces>
+	<graphics>
+		<lod_object name="lod_g">
+			<object name="g_lod0" enabled="true" max_distance="1500" />
+			<object name="g_lod1" enabled="true" />
+		</lod_object>
+	</graphics>
+</dynamic_object>

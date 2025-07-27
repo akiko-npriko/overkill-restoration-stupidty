@@ -1,0 +1,18 @@
+<materials version="3">
+    <material name="mat_ind_water_dirt" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:EXTERNAL_ALPHA_REF:VEGETATION_BENDING" version="2">
+        <diffuse_texture file="units/payday2/architecture/ind/ind_water_dirt_df"/>
+        <variable value="0.36500000953674" type="scalar" name="alpha_ref"/>
+        <variable value="1.3500000238419" type="scalar" name="speed"/>
+        <variable value="9.5 0.57500004768372 0" type="vector3" name="detail_settings"/>
+        <variable value="20 0.33000001311302 0" type="vector3" name="branch_settings"/>
+        <variable value="-0.0119 -0.0119 0" type="vector3" name="uv_speed"/>
+    </material>
+	<material name="mat_ind_water_waves" render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:EXTERNAL_ALPHA_REF:VEGETATION_BENDING" version="2">
+        <diffuse_texture file="units/payday2/architecture/ind/ind_water_waves_df"/>
+        <variable value="0.36500000953674" type="scalar" name="alpha_ref"/>
+        <variable value="1.3500000238419" type="scalar" name="speed"/>
+        <variable value="9.5 0.57500004768372 0" type="vector3" name="detail_settings"/>
+        <variable value="20 0.33000001311302 0" type="vector3" name="branch_settings"/>
+        <variable value="0.008 0.0 0" type="vector3" name="uv_speed"/>
+    </material>
+</materials>

@@ -1,0 +1,7 @@
+<materials version="3">
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:VERTEX_COLOR" name="mat_pex_backdrop_house_block" version="2">
+        <diffuse_texture file="units/pd2_dlc_pex/architecture/ext/pex_ext_backdrop/pex_ext_backdrop_house_block_01_df"/>
+        <material_texture file="units/pd2_dlc_pex/architecture/ext/pex_ext_backdrop/pex_ext_backdrop_house_block_01_gsma"/>
+    </material>
+    <material render_template="shadow_caster_only" name="shadow_caster" version="2"/>
+</materials>

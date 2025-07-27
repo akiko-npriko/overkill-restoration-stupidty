@@ -1,0 +1,30 @@
+<dynamic_object>
+    <diesel orientation_object="rp_com_int_nightclub_cloth_roof" materials="units/payday2/architecture/sch_int_nightclub/sch_int_nightclub_cloth_roof" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body" >
+            <object collision_type="box" name="c_box_1" padding="-2.5" />
+            <object collision_type="box" name="c_box_2" padding="-2.5" />
+            <object collision_type="box" name="c_box_3" padding="-2.5" />
+            <object collision_type="box" name="c_box_4" padding="-2.5" />
+            <object collision_type="box" name="c_box_5" padding="-2.5" />
+            <object collision_type="box" name="c_box_6" padding="-2.5" />
+            <object collision_type="box" name="c_box_7" padding="-2.5" />
+            <object collision_type="box" name="c_box_8" padding="-2.5" />
+            <object collision_type="box" name="c_box_9" padding="-2.5" />
+            <object collision_type="box" name="c_box_10" padding="-2.5" />
+            <object collision_type="box" name="c_box_11" padding="-2.5" />
+        </body>
+        <body enabled="true" template="static" collides_with_mover="false" name="cloth" >
+            <object collision_type="mesh_mopp" name="c_mesh_mopp_cloth" />
+        </body>
+    </bodies>
+    <decal_surfaces>
+        <decal_mesh enabled="true" name="g_cloth" material="thin_layer" />
+        <decal_mesh enabled="true" name="g_iron_bars" material="metal" />
+    </decal_surfaces>
+    <graphics>
+        <object enabled="true" name="g_cloth" shadow_caster="true" />
+        <object enabled="true" name="g_iron_bars" />
+        <object enabled="true" name="g_spike" />
+    </graphics>
+</dynamic_object>

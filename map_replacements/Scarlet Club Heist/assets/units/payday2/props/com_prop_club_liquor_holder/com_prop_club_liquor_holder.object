@@ -1,0 +1,29 @@
+<dynamic_object>
+    <diesel orientation_object="rp_com_prop_club_liquor_holder" materials="units/payday2/props/com_prop_club_liquor_holder/com_prop_club_liquor_holder" />
+	<sequence_manager file="units/payday2/props/com_prop_club_liquor_holder/com_prop_club_liquor_holder"/>
+    <bodies>
+        <body enabled="true" template="static" name="static_body" >
+			<object name="c_mesh_bottleholder" collision_type="mesh_mopp" />
+        </body>
+        <body enabled="true" template="static" name="static_bottle_01" >
+			<object name="c_convex_01" collision_type="convex" padding="-2.5"/>
+        </body>
+        <body enabled="true" template="static" name="static_bottle_02" >
+			<object name="c_convex_02" collision_type="convex" padding="-2.5"/>
+        </body>
+        <body enabled="true" template="static" name="static_bottle_03" >
+			<object name="c_convex_03" collision_type="convex" padding="-2.5"/>
+        </body>
+    </bodies>
+    <decal_surfaces>
+        <decal_mesh enabled="true" name="dm_bottle_01" material="thin_layer" />
+        <decal_mesh enabled="true" name="dm_bottle_02" material="thin_layer" />
+        <decal_mesh enabled="true" name="dm_bottle_03" material="thin_layer" />
+    </decal_surfaces>
+    <graphics>
+        <object enabled="true" name="g_g" />
+        <object enabled="true" name="g_bottle_01" />
+        <object enabled="true" name="g_bottle_02" />
+        <object enabled="true" name="g_bottle_03" />
+    </graphics>
+</dynamic_object>

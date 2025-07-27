@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<materials group="civ_male_bathhouse_2" version="3">
+	<material name="mtr_body" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:RL_CIVILIANS:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/pd2_dlc_chca/characters/shared_textures/civ_male_bathhouse_1/civ_male_bathhouse_body_1_df"/>
+		<bump_normal_texture file="units/pd2_dlc_chca/characters/shared_textures/civ_male_bathhouse_1/civ_male_bathhouse_body_1_nm"/>
+		<variable name="contour_color" type="vector3" value="1 1 1"/>
+		<variable name="contour_opacity" type="scalar" value="0"/>
+	</material>
+	<material name="mtr_head" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:RL_CIVILIANS:SKINNED_3WEIGHTS" unique="true" version="2">
+		<diffuse_texture file="units/payday2/characters/shared_textures/casual_male_head_9_df"/>
+		<bump_normal_texture file="units/payday2/characters/shared_textures/casual_male_head_9_nm"/>
+		<variable name="contour_color" type="vector3" value="1 1 1"/>
+		<variable name="contour_opacity" type="scalar" value="0"/>
+	</material>
+	<material name="shadow_caster" render_template="shadow_caster_only:SKINNED_1WEIGHT"/>
+</materials>

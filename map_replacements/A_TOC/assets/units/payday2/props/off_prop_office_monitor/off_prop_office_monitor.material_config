@@ -1,0 +1,15 @@
+<materials version="3">
+    <material decal_material="glass_breakable" render_template="generic:DIFFUSE_TEXTURE:INSTANCED:SELF_ILLUMINATION" version="2" name="display">
+        <diffuse_texture file="units/payday2/props/off_prop_office_monitor/display_master_jewelry_df"/>
+        <self_illumination_texture file="units/payday2/props/off_prop_office_monitor/display_master_jewelry_df"/>
+        <variable type="scalar" name="il_multiplier" value="monitor"/>
+    </material>
+    <material render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE" name="mat_pixels" version="2">
+        <diffuse_texture file="units/payday2/textures/lcd_pixels_df"/>
+        <variable type="scalar" name="intensity" value="flashlight"/>
+    </material>
+    <material render_template="effect:BLEND_MUL:DIFFUSE0_TEXTURE" name="mat_pixels_mul" version="2">
+        <diffuse_texture file="units/payday2/textures/lcd_pixels_mask_df"/>
+        <variable type="scalar" name="intensity" value="megatron"/>
+    </material>
+</materials>

@@ -1,0 +1,15 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_vit/architecture/vit_int/vit_int_wall_pillar/vit_int_wall_pillar_v2" orientation_object="rp_vit_int_wall_panel_1_m" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_vit_int_wall_panel_1_m" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="wood">
+		<decal_mesh name="dm_wood" enabled="true" material="wood" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_g" enabled="true" />
+	</graphics>
+</dynamic_object>

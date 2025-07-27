@@ -1,0 +1,10 @@
+<unit type="lxa" slot="1" >
+    <object file="units/payday2/architecture/lux/lux_int_cellceiling1_2x2m_a" />
+    <dependencies>
+    	<depends_on effect="effects/payday2/particles/flares/scene_flare_small_01" />
+    	<depends_on effect="effects/payday2/particles/spotlight/scene_spotlight_01" />
+    </dependencies>
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+    </extensions>
+</unit>

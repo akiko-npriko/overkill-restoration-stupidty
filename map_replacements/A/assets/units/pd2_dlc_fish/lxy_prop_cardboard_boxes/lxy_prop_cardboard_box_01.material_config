@@ -1,0 +1,8 @@
+<materials version="3">
+	<material decal_material="no_decal" name="mat_cardboard_box" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_fish/lxy_prop_cardboard_boxes/lxy_prop_cardboard_boxes_df" />
+		<material_texture file="units/pd2_dlc_fish/lxy_prop_cardboard_boxes/lxy_prop_cardboard_boxes_gsma" />
+		<bump_normal_texture file="units/pd2_dlc_fish/lxy_prop_cardboard_boxes/lxy_prop_cardboard_boxes_nm" />
+	</material>
+	<material name="shadow_caster" render_template="shadow_caster_only" version="2" />
+</materials>

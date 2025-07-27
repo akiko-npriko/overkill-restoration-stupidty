@@ -1,0 +1,30 @@
+<materials version="3">
+    <material name="mat_bnk_prop_kitchen_cabinet" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/payday2/props/bnk_prop_kitchen_cabinets/bnk_prop_kitchen_cabinets_df"/>
+        <bump_normal_texture file="units/payday2/props/bnk_prop_kitchen_cabinets/bnk_prop_kitchen_cabinets_nm"/>
+    </material>
+    <material name="mat_bnk_prop_kitchen_dishwasher" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/payday2/props/bnk_prop_kitchen_dishwasher/bnk_prop_kitchen_dishwasher_df"/>
+        <bump_normal_texture file="units/payday2/props/bnk_prop_kitchen_dishwasher/bnk_prop_kitchen_dishwasher_nm"/>
+    </material>		
+    <material name="mat_bnk_prop_kitchen_glow" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE" version="2">
+        <diffuse_texture file="units/payday2/props/bnk_prop_kitchen_cabinets/bnk_prop_kitchen_glow_df"/>
+        <variable value="dimlight" type="scalar" name="intensity"/>
+    </material>
+    <material name="mat_bnk_prop_kitchen_microwave" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:SELF_ILLUMINATION" version="2">
+        <diffuse_texture file="units/payday2/props/bnk_prop_kitchen_microwave/bnk_prop_kitchen_microwave_df"/>
+        <bump_normal_texture file="units/payday2/props/bnk_prop_kitchen_microwave/bnk_prop_kitchen_microwave_nm"/>
+        <self_illumination_texture file="units/payday2/props/bnk_prop_kitchen_microwave/bnk_prop_kitchen_microwave_il"/>
+        <variable value="dimlight" type="scalar" name="il_multiplier"/>		
+    </material>
+    <material name="mat_bnk_prop_kitchen_fridge" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:SELF_ILLUMINATION" version="2">
+        <diffuse_texture file="units/payday2/props/bnk_prop_kitchen_fridge/bnk_prop_kitchen_fridge_df"/>
+        <bump_normal_texture file="units/payday2/props/bnk_prop_kitchen_fridge/bnk_prop_kitchen_fridge_nm"/>
+        <self_illumination_texture file="units/payday2/props/bnk_prop_kitchen_fridge/bnk_prop_kitchen_fridge_il"/>
+        <variable value="dimlight" type="scalar" name="il_multiplier"/>			
+    </material>	
+    <material name="mat_bnk_prop_kitchen_streaks" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE" version="2">
+        <diffuse_texture file="units/payday2/props/bnk_prop_kitchen_cabinets/bnk_prop_kitchen_streak_df"/>
+        <variable value="desklight" type="scalar" name="intensity"/>
+    </material>
+</materials>

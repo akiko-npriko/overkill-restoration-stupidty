@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<unit type="chas" slot="1">
+	<object file="units/pd2_dlc_chas/vehicles/chas_vehicle_car_sedan/chas_vehicle_car_sedan" />
+	<network sync="spawn"/>
+
+	<anim_state_machine name="anims/units/car/car" />
+	
+	<dependencies>
+		<depends_on effect="effects/payday2/particles/window/storefront_window_small" />
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" 	class="ScriptUnitData" />
+		<extension name="damage" 		class="UnitDamage" />
+		<extension name="base" class="AnimatedVehicleBase">
+			<var name="_body_name" value="anim_body"/>
+		</extension>
+	</extensions>
+	<sounds>
+		<default_soundsource source="anim_body"/>
+		<soundsource name="snd" source="anim_body" />
+	</sounds>
+</unit>

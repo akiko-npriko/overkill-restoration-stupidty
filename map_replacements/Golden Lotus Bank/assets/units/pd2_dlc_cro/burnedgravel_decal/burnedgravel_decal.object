@@ -1,0 +1,13 @@
+<dynamic_object>
+    <diesel orientation_object="rp_burnedground_decal" materials="units/pd2_dlc_cro/burnedgravel_decal/burnedgravel_decal" />
+    <bodies>
+        <body enabled="true" template="editor" name="static_body">
+            <object name="rp_burnedground_decal" />
+            <object name="c_box" collision_type="box" />
+        </body>
+    </bodies>
+    <decal_surfaces />
+    <graphics>
+        <object name="g_g" enabled="true" />
+    </graphics>
+</dynamic_object>

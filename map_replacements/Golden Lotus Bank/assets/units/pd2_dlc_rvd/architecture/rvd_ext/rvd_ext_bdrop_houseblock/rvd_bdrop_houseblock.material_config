@@ -1,0 +1,16 @@
+<materials version="3">
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_houseblock" version="2">
+        <diffuse_texture file="units/payday2/architecture/cas_bdrop/cas_bdrop_houseblock_df"/>
+    </material>
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF" name="mat_houseblock_alpha" version="2">
+        <diffuse_texture file="units/payday2/architecture/cas_bdrop/cas_bdrop_houseblock_df"/>
+        <variable type="scalar" name="alpha_ref" value="0.0030000001424924"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_houseblock_base" version="2">
+        <diffuse_texture file="units/payday2/architecture/cas_bdrop/cas_bdrop_houseblock_base_df"/>
+    </material>
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF" name="mat_houseblock_props" version="2">
+        <diffuse_texture file="units/pd2_dlc_rvd/architecture/rvd_ext/rvd_ext_bdrop_houseblock/rvd_ext_bdrop_houseblock_props_df"/>
+        <variable type="scalar" name="alpha_ref" value="0.015000000712462"/>
+    </material>
+</materials>

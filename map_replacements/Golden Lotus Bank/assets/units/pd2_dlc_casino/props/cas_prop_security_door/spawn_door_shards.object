@@ -1,0 +1,51 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_casino/props/cas_prop_security_door/cas_prop_security_door" orientation_object="rp_spawn_door_shards" />
+	<bodies>
+		<body name="body_shard_01" enabled="true" template="debris" collides_with_mover="false">
+			<object name="c_convex_01" collision_type="convex" padding="-2.5" material="wood" />
+		</body>
+		<body name="body_shard_02" enabled="true" template="debris" collides_with_mover="false">
+			<object name="c_convex_02" collision_type="convex" padding="-2.5" material="wood" />
+		</body>
+		<body name="body_shard_03" enabled="true" template="debris" collides_with_mover="false">
+			<object name="c_convex_03" collision_type="convex" padding="-2.5" material="wood" />
+		</body>
+		<body name="body_shard_04" enabled="true" template="debris" collides_with_mover="false">
+			<object name="c_convex_04" collision_type="convex" padding="-2.5" material="wood" />
+		</body>
+		<body name="body_shard_05" enabled="true" template="debris" collides_with_mover="false">
+			<object name="c_convex_05" collision_type="convex" padding="-2.5" material="wood" />
+		</body>
+		<body name="body_shard_07" enabled="true" template="debris" collides_with_mover="false">
+			<object name="c_convex_07" collision_type="convex" padding="-2.5" material="wood" />
+		</body>
+		<body name="body_shard_08" enabled="true" template="debris" collides_with_mover="false">
+			<object name="c_convex_08" collision_type="convex" padding="-2.5" material="wood" />
+		</body>
+		<body name="body_shard_09" enabled="true" template="debris" collides_with_mover="false">
+			<object name="c_convex_09" collision_type="convex" padding="-2.5" material="wood" />
+		</body>
+		<body name="body_shard_10" enabled="true" template="debris" collides_with_mover="false">
+			<object name="c_convex_10" collision_type="convex" padding="-2.5" material="wood" />
+		</body>
+		<body name="body_shard_11" enabled="true" template="debris" collides_with_mover="false">
+			<object name="c_convex_11" collision_type="convex" padding="-2.5" material="wood" />
+		</body>
+		<body name="body_shard_12" enabled="true" template="debris" collides_with_mover="false">
+			<object name="c_convex_12" collision_type="convex" padding="-2.5" material="wood" />
+		</body>
+	</bodies>
+	<graphics>
+		<object name="g_shard_12" enabled="true" />
+		<object name="g_shard_11" enabled="true" />
+		<object name="g_shard_10" enabled="true" />
+		<object name="g_shard_09" enabled="true" />
+		<object name="g_shard_08" enabled="true" />
+		<object name="g_shard_07" enabled="true" />
+		<object name="g_shard_05" enabled="true" />
+		<object name="g_shard_04" enabled="true" />
+		<object name="g_shard_03" enabled="true" />
+		<object name="g_shard_02" enabled="true" />
+		<object name="g_shard_01" enabled="true" />
+	</graphics>
+</dynamic_object>

@@ -1,0 +1,42 @@
+<materials version="3">
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:NORMALMAP:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" name="mat_skyline" version="2">
+        <diffuse_texture file="units/pd2_dlc_chas/architecture/ext/backdrop/chas_ext_backdrop_skyline_buildings_df"/>
+        <bump_normal_texture file="units/pd2_dlc_chas/architecture/ext/backdrop/chas_ext_backdrop_skyline_buildings_nm"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <self_illumination_texture file="units/pd2_dlc_chas/architecture/ext/backdrop/chas_ext_backdrop_skyline_buildings_il"/>
+        <variable type="scalar" name="il_multiplier" value="sun"/>
+        <variable type="scalar" name="il_bloom" value="1.6820001273882"/>
+    </material>
+    <material render_template="generic" name="mat_terrain" version="2"/>
+    <material render_template="generic" name="mat_backdrop_02" version="2"/>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_backdrop_01" version="2">
+        <diffuse_texture file="units/pd2_dlc_chas/architecture/ext/backdrop/chas_ext_backdrop_skyline_buildings_df"/>
+    </material>
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" name="mat_far_backdrop" version="2">
+        <diffuse_texture file="units/pd2_dlc_chas/architecture/ext/backdrop/chas_ext_backdrop_far_mountains_df"/>
+        <variable type="scalar" name="alpha_ref" value="0.26500001258682"/>
+        <self_illumination_texture file="units/pd2_dlc_chas/architecture/ext/backdrop/chas_ext_backdrop_far_mountains_il"/>
+        <variable type="scalar" name="il_bloom" value="1.5220000722911"/>
+        <variable type="scalar" name="il_multiplier" value="streetlight"/>
+    </material>
+    <material render_template="generic" name="mat_buildings_block_01" version="2"/>
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" name="mat_ferry_building" version="2">
+        <diffuse_texture file="units/pd2_dlc_chas/architecture/ext/backdrop/chas_ext_backdrop_ferry_building_df"/>
+        <variable type="scalar" name="alpha_ref" value="0.26600001263432"/>
+        <self_illumination_texture file="units/pd2_dlc_chas/architecture/ext/backdrop/chas_ext_backdrop_ferry_building_il"/>
+        <variable type="scalar" name="il_multiplier" value="sun"/>
+        <variable type="scalar" name="il_bloom" value="7.9920003795996"/>
+    </material>
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" name="mat_oakland_bridge" version="2">
+        <diffuse_texture file="units/pd2_dlc_chas/architecture/ext/backdrop/chas_ext_backdrop_oakland_bridge_df"/>
+        <variable type="scalar" name="alpha_ref" value="0.4310000204714"/>
+        <self_illumination_texture file="units/pd2_dlc_chas/architecture/ext/backdrop/chas_ext_backdrop_oakland_bridge_il"/>
+        <variable type="scalar" name="il_multiplier" value="sun"/>
+        <variable type="scalar" name="il_bloom" value="9.999000474927"/>
+    </material>
+    <material render_template="generic" name="mat_buildings_block_02" version="2"/>
+    <material render_template="generic:DIFFUSE_TEXTURE" name="mat_res_ext_background_trim_03" version="2">
+        <diffuse_texture file="units/pd2_dlc_brb/architecture/brb_ext/brb_ext_roof_trims/brb_ext_roof_trim_02_df"/>
+    </material>
+    <material render_template="shadow_caster_only" name="shadow_caster" version="2"/>
+</materials>

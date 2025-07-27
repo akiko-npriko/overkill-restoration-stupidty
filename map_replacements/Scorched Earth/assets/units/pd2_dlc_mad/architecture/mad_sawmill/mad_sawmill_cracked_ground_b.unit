@@ -1,0 +1,8 @@
+<unit type="mad" slot="1">
+	<object file="units/pd2_dlc_mad/architecture/mad_sawmill/mad_sawmill_cracked_ground_b" />
+	<network sync="spawn"/>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+	</extensions>
+</unit>

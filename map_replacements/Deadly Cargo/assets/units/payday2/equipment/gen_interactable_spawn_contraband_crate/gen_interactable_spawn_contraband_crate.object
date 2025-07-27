@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/payday2/equipment/gen_interactable_spawn_contraband_crate/gen_interactable_spawn_contraband_crate" orientation_object="rp_gen_interactable_spawn_contraband_crate" />
+	<sequence_manager file="units/payday2/equipment/gen_interactable_spawn_contraband_crate/gen_interactable_spawn_contraband_crate" />
+
+	<bodies>
+		<body name="body_closed" enabled="true" template="static">
+			<object name="rp_gen_interactable_spawn_contraband_crate" />
+			<object name="c_c" collision_type="mesh_mopp" />
+		</body>
+		<body name="body_open" enabled="false" template="static">
+			<object name="rp_gen_interactable_spawn_contraband_crate" />
+			<object name="c_c_open" collision_type="mesh_mopp" />
+		</body>
+		<body name="body_blocker_mover" enabled="true" template="mover_blocker">
+			<object name="rp_gen_interactable_spawn_contraband_crate" />
+			<object name="c_mover_blocker" collision_type="box" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="wood">
+		<decal_mesh name="g_g" 			enabled="true" material="wood" />
+		<decal_mesh name="g_g_open" 	enabled="false" material="wood" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_g" 			enabled="true"  />
+		<object name="g_g_open" 	enabled="false"  />
+		<object name="s_s" 			enabled="true" shadow_caster="true" />
+		<object name="s_s_open" 	enabled="false" shadow_caster="true" />
+	</graphics>
+</dynamic_object>

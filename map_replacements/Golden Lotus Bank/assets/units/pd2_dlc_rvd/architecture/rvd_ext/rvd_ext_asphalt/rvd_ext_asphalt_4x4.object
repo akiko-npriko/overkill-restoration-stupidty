@@ -1,0 +1,15 @@
+<dynamic_object>
+    <diesel orientation_object="rp_cas_int_lobby_floor_4X4m" materials="units/pd2_dlc_rvd/architecture/rvd_ext/rvd_ext_asphalt/rvd_ext_asphalt_4x4" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body">
+            <object name="rp_cas_int_lobby_floor_4X4m" />
+            <object name="c_box_01" collision_type="box" />
+        </body>
+    </bodies>
+    <decal_surfaces default_material="stone">
+        <decal_mesh name="dm_stone" enabled="true" material="stone" />
+    </decal_surfaces>
+    <graphics>
+        <object name="g_g" enabled="true" />
+    </graphics>
+</dynamic_object>

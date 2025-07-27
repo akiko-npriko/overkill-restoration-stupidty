@@ -1,0 +1,8 @@
+<materials version="3">
+    <material version="2" render_template="generic:DIFFUSE_TEXTURE:DOUBLE_SIDED:VEGETATION_BENDING" decal_material="cloth" name="mat_flag_long">
+        <diffuse_texture file="units/pd2_dlc_rvd/props/rvd_prop_flag_garnet_group/rvd_prop_flag_garnet_group_01_df"/>
+        <variable type="scalar" name="speed" value="0.4"/>
+        <variable type="vector3" name="detail_settings" value="80 0.2 0"/>
+        <variable type="vector3" name="branch_settings" value="0.01 1 0"/>
+    </material>
+</materials>

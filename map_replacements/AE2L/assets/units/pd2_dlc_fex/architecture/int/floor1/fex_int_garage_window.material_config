@@ -1,0 +1,18 @@
+<materials version="3">
+    
+    <material render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:OPACITY_FADE_TO_SOLID" name="glass_breakable" version="2">
+        <opacity_texture file="units/glass/window_glass/windows_op_texture_03_op"/>
+        <diffuse_texture file="units/glass/window_glass/window_glass_blue_df"/>
+        <variable type="vector3" name="opacity_fade_to_solid" value="0 7064 0"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_night_sky" type="cubemap"/>
+        <variable type="vector3" name="fresnel_settings" value="1.9900000095367 0.53999996185303 0.53999996185303"/>
+    </material>
+    
+    <material render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:OPACITY_FADE_TO_SOLID" name="glass_shattered" version="2">
+        <opacity_texture file="units/glass/window_glass/cracked_glass_op"/>
+        <diffuse_texture file="units/glass/window_glass/cracked_glass_df"/>
+        <variable type="vector3" name="opacity_fade_to_solid" value="3536 5784 0"/>
+        <reflection_texture file="environments/cubemaps/cubemap_diamond_01" type="cubemap"/>
+        <variable type="vector3" name="fresnel_settings" value="0 1 1"/>
+    </material>
+</materials>

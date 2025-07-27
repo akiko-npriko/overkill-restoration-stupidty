@@ -1,0 +1,57 @@
+<materials version="3" group="ene_bex_security_01">
+	<material name="mtr_head" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:RL_COPS:SKINNED_3WEIGHTS" version="2">
+			<bump_normal_texture 	file="units/pd2_mod_ttr/characters/shared_textures/heads_atlas_nm"/>
+			<diffuse_texture 		file="units/pd2_mod_ttr/characters/shared_textures/cartel_head_atlas_df"/>
+		</material>
+		<material name="mtr_head_lod_1" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:RL_COPS:SKINNED_3WEIGHTS" version="2">
+			<bump_normal_texture 	file="units/pd2_mod_ttr/characters/shared_textures/heads_atlas_nm" mip="1"/>
+			<diffuse_texture 		file="units/pd2_mod_ttr/characters/shared_textures/cartel_head_atlas_df" mip="1"/>
+		</material>
+			<material name="mtr_head_lod_2" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:RL_COPS:SKINNED_3WEIGHTS" version="2">
+			<bump_normal_texture 	file="units/pd2_mod_ttr/characters/shared_textures/heads_atlas_nm" mip="4"/>
+			<diffuse_texture 		file="units/pd2_mod_ttr/characters/shared_textures/cartel_head_atlas_df" mip="4"/>
+		</material>
+
+
+
+
+	<material name="mtr_body" render_template="generic:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:RL_COPS:SKINNED_3WEIGHTS" version="2">
+        <bump_normal_texture file="units/pd2_dlc_trd/characters/trd_acc_jumpsuits/shared_textures/trd_acc_jumpsuits_nm" mip="1"/>
+        <diffuse_texture file="units/pd2_dlc_trd/characters/trd_acc_jumpsuits/shared_textures/trd_acc_jumpsuits_green_df"/>
+        <material_texture file="units/pd2_dlc_trd/characters/trd_acc_jumpsuits/shared_textures/trd_acc_jumpsuits_gsma"/>
+	</material>
+	<material name="mtr_body_lod_1" render_template="generic:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:RL_COPS:SKINNED_3WEIGHTS" version="2">
+        <bump_normal_texture file="units/pd2_dlc_trd/characters/trd_acc_jumpsuits/shared_textures/trd_acc_jumpsuits_nm" mip="1"/>
+        <diffuse_texture file="units/pd2_dlc_trd/characters/trd_acc_jumpsuits/shared_textures/trd_acc_jumpsuits_green_df" mip="1"/>
+        <material_texture file="units/pd2_dlc_trd/characters/trd_acc_jumpsuits/shared_textures/trd_acc_jumpsuits_gsma" mip="1"/>
+	</material>
+	<material name="mtr_body_lod_2" render_template="generic:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:RL_COPS:SKINNED_3WEIGHTS" version="2">
+        <bump_normal_texture file="units/pd2_dlc_trd/characters/trd_acc_jumpsuits/shared_textures/trd_acc_jumpsuits_nm" mip="4"/>
+        <diffuse_texture file="units/pd2_dlc_trd/characters/trd_acc_jumpsuits/shared_textures/trd_acc_jumpsuits_green_df" mip="4"/>
+        <material_texture file="units/pd2_dlc_trd/characters/trd_acc_jumpsuits/shared_textures/trd_acc_jumpsuits_gsma" mip="4"/>
+	</material>
+	
+	
+	
+	
+	<material name="mtr_arms" render_template="generic:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:RL_COPS:SKINNED_3WEIGHTS" version="2">
+		<bump_normal_texture file="units/pd2_dlc_pex/characters/ntr_male_generic_arms/ntr_male_generic_arms_hispanic_nm"/>
+		<diffuse_texture file="units/pd2_dlc_fex/characters/ene_guard_serpent_mask/ene_guard_serpent_mask_arms_df"/>
+		<material_texture file="units/pd2_dlc_pex/characters/ntr_male_generic_arms/ntr_male_generic_arms_hispanic_gsma"/>
+	</material>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<material name="mtr_hat" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:RL_COPS:SKINNED_3WEIGHTS" version="2">
+		<bump_normal_texture 	file="units/pd2_dlc_trd/characters/trd_acc_miami/shared_textures/trd_acc_miami_male_nm" mip="4"/>
+		<diffuse_texture 		file="units/pd2_dlc_trd/characters/trd_acc_miami/shared_textures/trd_acc_miami_male_white_df" mip="4"/>
+	</material>
+    <material name="shadow_caster" render_template="shadow_caster_only:SKINNED_1WEIGHT" version="2"/>
+</materials>

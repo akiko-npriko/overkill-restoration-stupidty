@@ -1,0 +1,12 @@
+<unit type="mex" slot="1" >
+    <object file="units/pd2_dlc_mex/architecture/mex_ext_gas_station/mex_ext_gas_building" />
+	<network sync="spawn"/>
+	<dependencies>
+		<depends_on effect="effects/payday2/particles/window/storefront_window_small"/>
+	</dependencies>
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+        <extension class="UnitDamage" name="damage" />
+		<extension name="attention" class="AIAttentionObject" />
+    </extensions>
+</unit>

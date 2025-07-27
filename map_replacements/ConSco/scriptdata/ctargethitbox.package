@@ -1,0 +1,15 @@
+<table directory="assets">
+	<add unload_on_restart="true">
+		<material_config path="core/material_configs/hub_elements"/>
+		<model path="units/dev_tools/level_tools/constantine_target_hitbox_big/constantine_target_hitbox_big"/>
+		<object path="units/dev_tools/level_tools/constantine_target_hitbox_big/constantine_target_hitbox_big"/>
+		<sequence_manager path="units/dev_tools/level_tools/constantine_target_hitbox_big/constantine_target_hitbox_big"/>
+		<unit path="units/dev_tools/level_tools/constantine_target_hitbox_big/constantine_target_hitbox_big"/>
+	</add>
+	<add from_db="true" path="units/dev_tools/level_tools/target_hitbox/target_hitbox" type="unit">
+		<material_config path="core/material_configs/hub_elements"/>
+		<object path="units/dev_tools/level_tools/target_hitbox/target_hitbox"/>
+		<sequence_manager path="units/dev_tools/level_tools/target_hitbox/target_hitbox"/>
+		<unit path="units/dev_tools/level_tools/target_hitbox/target_hitbox"/>
+	</add>	
+</table>

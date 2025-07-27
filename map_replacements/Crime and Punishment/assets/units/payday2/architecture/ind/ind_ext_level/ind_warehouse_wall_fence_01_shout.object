@@ -1,0 +1,23 @@
+<dynamic_object>
+	<diesel materials="units/payday2/architecture/ind/ind_ext_level/ind_kosugi" orientation_object="rp_ind_warehouse_wall_fence_01_shout" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_ind_warehouse_wall_fence_01_shout" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+			<object name="c_box_04" collision_type="box" padding="-2.5" />
+			<object name="c_box_05" collision_type="box" padding="-2.5" />
+			<object name="c_box_06" collision_type="box" padding="-2.5" />
+			<object name="c_box_07" collision_type="box" padding="-2.5" />
+			<object name="c_box_08" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="concrete">
+		<decal_mesh name="dm_concrete" enabled="true" material="concrete" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_g" enabled="true" />
+		<object name="s_s" enabled="true" shadow_caster="true" />
+	</graphics>
+</dynamic_object>

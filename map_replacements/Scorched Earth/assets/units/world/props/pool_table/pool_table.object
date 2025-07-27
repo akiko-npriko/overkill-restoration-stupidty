@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/world/props/pool_table/pool_table" orientation_object="rp_pool_table" />
+	<bodies>
+		<body name="bullet" enabled="true" collides_with_mover="false" remove_ray_type="walk camera" template="static">
+			<object name="rp_pool_table"/>
+			<object name="c_table_side1_convex" 	collision_type="convex" 	padding="-2"/>
+			<object name="c_table_side2_convex" 	collision_type="convex" 	padding="-2"/>
+			<object name="c_table_side3_convex" 	collision_type="convex" 	padding="-2"/>
+			<object name="c_table_side4_convex" 	collision_type="convex" 	padding="-2"/>
+			<object name="c_table_convex" 			collision_type="convex" 	padding="-2"/>
+			<object name="c_table_leg1_convex" 		collision_type="convex" 	padding="-2"/>
+			<object name="c_table_leg2_convex" 		collision_type="convex" 	padding="-2"/>
+			<object name="c_table_box" 				collision_type="box" 		padding="-2"/>
+			<object name="g_cue_stick" 				collision_type="box" 		padding="-2"/>
+			<object name="g_ball" 					collision_type="sphere"		padding="-2"/>
+		</body>
+		<body name="ai_player" enabled="true" add_ray_type="camera" template="nav_walk">
+			<object name="c_mover" 				collision_type="box" 		padding="-2" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="hardwood">
+		<decal_mesh name="dm_pool_table_hardwood" enabled="true" material="hardwood" />
+		<decal_mesh name="dm_pool_table_carpet" enabled="true" material="carpet" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_pool_table" enabled="true" />
+		<object name="g_cue_stick" enabled="true" />
+		<object name="g_ball" enabled="true" />
+		<object name="s_pool_table" enabled="true" shadow_caster="true" />
+	</graphics>
+</dynamic_object> 

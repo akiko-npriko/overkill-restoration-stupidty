@@ -1,0 +1,20 @@
+<dynamic_object>
+    <diesel orientation_object="rp_toilet_shelf" materials="units/payday2/props/lxa_prop_bathroom_toilet/lxa_prop_bathroom_toilet" />
+    <bodies>
+        <body enabled="true" template="static" name="body0" >
+            <object name="rp_toilet_shelf"/>
+            <object collision_type="convex" name="c_convex_01"  padding="-2.5"/>
+            <object collision_type="box" name="c_box_01"  padding="-2.5"/>
+            <object collision_type="box" name="c_box_02"  padding="-2.5"/>
+            <object collision_type="box" name="c_box_03"  padding="-2.5"/>
+        </body>
+    </bodies>
+    <decal_surfaces>
+        <decal_mesh enabled="true" name="c_box_01" material="cloth" />
+        <decal_mesh enabled="true" name="c_box_02" material="plastic" />
+        <decal_mesh enabled="true" name="c_box_03" material="plastic" />
+    </decal_surfaces>
+    <graphics>
+        <object enabled="true" name="g_mesh" />
+    </graphics>
+</dynamic_object>

@@ -1,0 +1,14 @@
+<materials version="3">
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" name="mat_garnet_group_text_logo" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/props/dah_prop_garnet_group_v1/dah_prop_garnet_group_logo_v1_df"/>
+        <bump_normal_texture file="units/pd2_dlc_dah/props/dah_prop_garnet_group_v1/dah_prop_garnet_group_logo_v1_nm"/>
+        <material_texture file="units/pd2_dlc_dah/props/dah_prop_garnet_group_v1/dah_prop_garnet_group_logo_v1_gsma"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_night_sky" type="cubemap"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_CONTROL_VALUE:NORMALMAP" name="mat_sign_holder" version="2">
+        <diffuse_texture file="units/pd2_dlc_dah/props/dah_prop_building_logo_gg/dah_prop_logo_holder_df"/>
+        <bump_normal_texture file="units/pd2_dlc_dah/props/dah_prop_sign_garnet/dah_prop_garnet_sign_nm"/>
+        <reflection_texture file="units/pd2_dlc_dah/environments/cubemaps/cubemap_night_sky" type="cubemap"/>
+        <variable type="scalar" name="glossiness_control" value="0.057000002707355"/>
+    </material>
+</materials>

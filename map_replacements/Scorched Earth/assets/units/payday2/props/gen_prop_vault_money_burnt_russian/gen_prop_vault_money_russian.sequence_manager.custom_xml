@@ -1,0 +1,51 @@
+<table>
+	<unit>
+		<sequence editable_state="true" name="'enable_interaction'" triggable="true">
+			<interaction enabled="true"/>
+		</sequence>
+		<sequence editable_state="true" name="'disable_interaction'" triggable="true">
+			<interaction enabled="false"/>
+		</sequence>
+		<sequence editable_state="true" name="'hide'" triggable="true">
+			<interaction enabled="false"/>
+			<object enabled="false" name="'g_money'"/>
+			<graphic_group name="'grp_money'" visibility="false"/>
+			<body enabled="false" name="'body_money'"/>
+			<body enabled="false" name="'body_money_static'"/>
+			<body enabled="false" name="'body_money_anim'"/>
+			<body enabled="false" name="'body_money_anim_fill'"/>
+		</sequence>
+		<sequence editable_state="true" name="'show'" triggable="true">
+			<object enabled="false" name="'g_money'"/>
+			<graphic_group name="'grp_money'" visibility="true"/>
+			<body enabled="true" name="'body_money'"/>
+			<body enabled="false" name="'body_money_static'"/>
+			<body enabled="false" name="'body_money_anim'"/>
+			<body enabled="false" name="'body_money_anim_fill'"/>
+		</sequence>
+		<sequence editable_state="true" name="'show_and_enable_interaction'" triggable="true">
+			<interaction enabled="true"/>
+			<object enabled="true" name="'g_money'"/>
+			<decal_mesh enabled="true" name="'dm_money'"/>
+			<body enabled="true" name="'body_money'"/>
+			<body enabled="false" name="'body_money_static'"/>
+			<body enabled="false" name="'body_money_anim'"/>t
+			<body enabled="false" name="'body_money_anim_fill'"/>
+		</sequence>
+		<sequence editable_state="false" name="'state_burned'" triggable="false">
+			<interaction enabled="false"/>
+			<object enabled="true" name="'g_money'"/>
+			<graphic_group name="'grp_money'" visibility="false"/>
+			<material_config name="'units/payday2/props/gen_prop_vault_money_burnt_russian/gen_prop_vault_money_russian_burnt'"/>
+			<animation_group enabled="true" from="0/30" name="'anim'" speed="0.01" to="30/30"/>
+			<material_config name="'units/payday2/props/gen_prop_vault_money_burnt_russian/gen_prop_vault_money_russian_burnt_done'" start_time="80"/>
+			<body enabled="false" name="'body_money'"/>
+			<body enabled="true" name="'body_money_static'"/>
+			<body enabled="true" name="'body_money_anim'"/>
+			<body enabled="true" name="'body_money_anim_fill'"/>
+		</sequence>
+		<sequence editable_state="false" name="'interact'" triggable="false">
+			<run_sequence name="'state_burned'"/>
+		</sequence>
+	</unit>
+</table>

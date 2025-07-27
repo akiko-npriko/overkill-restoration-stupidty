@@ -1,0 +1,61 @@
+<dynamic_object>
+	<diesel materials="units/pd2_mod_constantine_resort/props/adv_laser_turret/adv_laser_turret" orientation_object="rp_des_ray_turret" />
+	<sequence_manager file="units/pd2_mod_constantine_resort/props/adv_laser_turret/adv_laser_turret" />
+	<animations>
+		<animation_group name="anim_turret" enabled="false">
+			<object name="align_yaw" />
+			<object name="anim_yaw" />
+			<object name="align_pitch" />
+			<object name="anim_pitch" />
+			<object name="anim_cable_top" />
+			<object name="anim_cable_01" />
+			<object name="anim_cable_02" />
+			<object name="anim_cable_03" />
+			<object name="anim_cable_04" />
+			<object name="anim_cable_05" />
+			<object name="anim_cable_06" />
+			<object name="anim_cable_root" />
+		</animation_group>
+	</animations>
+	<bodies>
+		<body name="body_base" enabled="true" template="animated">
+			<object name="rp_des_ray_turret" />
+			<object name="c_convex_base_02" collision_type="convex" padding="-2.5"/>
+			<object name="c_convex_base_01" collision_type="convex" padding="-2.5" />
+		</body>
+		<body name="body_middle" enabled="true" template="animated">
+			<object name="anim_yaw" />
+			<object name="c_convex_middle_01" collision_type="convex" padding="-2.5" />
+			<object name="c_box_middle_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_middle_02" collision_type="box" padding="-2.5" />
+			<object name="c_box_middle_03" collision_type="box" padding="-2.5" />
+			<object name="c_box_middle_04" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_top" enabled="true" template="animated">
+			<object name="anim_pitch" />
+			<object name="c_convex_top_01" collision_type="convex" padding="-2.5" />
+			<object name="c_convex_top_02" collision_type="convex" padding="-2.5" />
+			<object name="c_convex_top_03" collision_type="convex" padding="-2.5" />
+			<object name="c_convex_top_04" collision_type="convex" padding="-2.5" />
+			<object name="c_convex_top_05" collision_type="convex" padding="-2.5" />
+			<object name="c_box_top_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_top_02" collision_type="box" padding="-2.5" />
+			<object name="c_box_top_03" collision_type="box" padding="-2.5" />
+			<object name="c_box_top_04" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="metal">
+		<decal_mesh name="dm_metal_middle" enabled="true" material="metal" />
+		<decal_mesh name="dm_metal_base" enabled="true" material="metal" />
+		<decal_mesh name="dm_metal_top" enabled="true" material="metal" />
+	</decal_surfaces>
+	<effects>
+		<effect_spawner name="laser" enabled="false" object="e_effect_01" effect="effects/payday2/particles/laser/laser_beam" />
+	</effects>
+	<graphics>
+		<object name="g_base" enabled="true" />
+		<object name="g_laser_top" enabled="true" />
+		<object name="g_laser_bottom" enabled="true" />
+		<object name="g_cables" enabled="true" />
+	</graphics>
+</dynamic_object>

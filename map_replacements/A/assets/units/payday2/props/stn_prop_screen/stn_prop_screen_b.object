@@ -1,0 +1,19 @@
+<dynamic_object>
+    <diesel orientation_object="rp_stn_prop_screen_b" materials="units/payday2/props/stn_prop_screen/stn_prop_screen_b" />
+	<sequence_manager file="units/payday2/props/stn_prop_screen/stn_prop_screen"/>
+    <bodies>
+        <body enabled="true" template="static" name="monitor_body" >
+            <object collision_type="box" name="c_box_01" padding="-2.5"/>
+            <object collision_type="box" name="c_box_02" padding="-2.5"/>
+            <object collision_type="box" name="c_box_03" padding="-2.5"/>
+        </body>
+    </bodies>
+    <decal_surfaces>
+        <decal_mesh enabled="true" name="dm_plastic" material="thin_layer" />
+    </decal_surfaces>
+    <graphics>
+        <object enabled="true" name="g_screen" />
+        <object enabled="false" name="g_screen_dmg" />
+        <object enabled="false" name="g_screen_off" />
+    </graphics>
+</dynamic_object>

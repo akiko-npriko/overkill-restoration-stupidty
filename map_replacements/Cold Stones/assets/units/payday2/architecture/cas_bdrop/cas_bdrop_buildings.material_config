@@ -1,0 +1,19 @@
+<materials version="3">
+    <material name="mat_mid_buildings" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:RL_BACKDROP" version="2">
+        <diffuse_texture file="units/payday2/architecture/cas_bdrop/cas_bdrop_mid_building_df"/>
+        <bump_normal_texture file="units/payday2/architecture/cas_bdrop/cas_bdrop_mid_building_nm"/>
+    </material>
+    <material name="mat_far_buildings" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:RL_BACKDROP" version="2">
+        <diffuse_texture file="units/payday2/architecture/cas_bdrop/cas_bdrop_far_building_df"/>
+        <bump_normal_texture file="units/payday2/architecture/cas_bdrop/cas_bdrop_far_building_nm"/>
+    </material>
+    <material name="mat_mid_buildings_il_effect" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE" version="2">
+        <diffuse_texture file="units/payday2/architecture/cas_bdrop/cas_bdrop_mid_building_il"/>
+        <variable value="reddot" type="scalar" name="intensity"/>
+    </material>
+    <material name="mat_far_buildings_il_effect" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE" version="2">
+        <diffuse_texture file="units/payday2/architecture/cas_bdrop/cas_bdrop_far_building_il"/>
+        <variable value="reddot" type="scalar" name="intensity"/>
+    </material>
+    <material name="shadow_caster" render_template="shadow_caster_only" version="2"/>
+</materials>

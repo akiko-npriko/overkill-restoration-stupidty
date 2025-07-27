@@ -1,0 +1,63 @@
+<dynamic_object>
+	<diesel materials="units/pd2_indiana/props/mus_prop_exhibit_d_pottery/mus_prop_exhibit_d_pottery_a" orientation_object="rp_spawn_pottery_a_dmg" />
+	<bodies>
+		<body enabled="true" template="dynamic" name="dmg_1" collides_with_mover="false" pushed_by_mover="false">	
+            <object collision_type="convex" name="c_convex_01" padding="-2.5" mass="3"/>
+		</body>		
+		<body enabled="true" template="dynamic" name="dmg_2" collides_with_mover="false" pushed_by_mover="false">	
+            <object collision_type="convex" name="c_convex_02" padding="-2.5" mass="3"/>
+		</body>
+		<body enabled="true" template="dynamic" name="dmg_3" collides_with_mover="false" pushed_by_mover="false">			
+            <object collision_type="convex" name="c_convex_03" padding="-2.5" mass="3"/>
+		</body>
+		<body enabled="true" template="dynamic" name="dmg_4" collides_with_mover="false" pushed_by_mover="false">	
+            <object collision_type="convex" name="c_convex_04" padding="-2.5" mass="3"/>
+		</body>
+		<body enabled="true" template="dynamic" name="dmg_5" collides_with_mover="false" pushed_by_mover="false">		
+            <object collision_type="convex" name="c_convex_05" padding="-2.5" mass="3"/>
+		</body>		
+		<body enabled="true" template="dynamic" name="dmg_6" collides_with_mover="false" pushed_by_mover="false">		
+            <object collision_type="convex" name="c_convex_06" padding="-2.5" mass="3"/>
+		</body>	
+		<body enabled="true" template="dynamic" name="dmg_7" collides_with_mover="false" pushed_by_mover="false">		
+            <object collision_type="convex" name="c_convex_07" padding="-2.5" mass="3"/>
+		</body>	
+		<body enabled="true" template="dynamic" name="dmg_8" collides_with_mover="false" pushed_by_mover="false">		
+            <object collision_type="convex" name="c_convex_08" padding="-2.5" mass="3"/>
+		</body>
+	</bodies>
+	<graphics>
+		<lod_object name="lod_01"> 
+			<object name="g_dmg_01_lod0" enabled="true"  max_distance="1500" />
+			<object name="g_dmg_01_lod1" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_02">
+			<object name="g_dmg_02_lod0" enabled="true"  max_distance="1500" />
+			<object name="g_dmg_02_lod1" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_03">
+			<object name="g_dmg_03_lod0" enabled="true"  max_distance="1500" />
+			<object name="g_dmg_03_lod1" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_04">
+			<object name="g_dmg_04_lod0" enabled="true"  max_distance="1500" />
+			<object name="g_dmg_04_lod1" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_05">
+			<object name="g_dmg_05_lod0" enabled="true"  max_distance="1500" />
+			<object name="g_dmg_05_lod1" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_06">
+			<object name="g_dmg_06_lod0" enabled="true"  max_distance="1500" />
+			<object name="g_dmg_06_lod1" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_07">
+			<object name="g_dmg_07_lod0" enabled="true"  max_distance="1500" />
+			<object name="g_dmg_07_lod1" enabled="true" />
+		</lod_object>
+		<lod_object name="lod_08">
+			<object name="g_dmg_08_lod0" enabled="true"  max_distance="1500" />
+			<object name="g_dmg_08_lod1" enabled="true" />
+		</lod_object>
+	</graphics>
+</dynamic_object>

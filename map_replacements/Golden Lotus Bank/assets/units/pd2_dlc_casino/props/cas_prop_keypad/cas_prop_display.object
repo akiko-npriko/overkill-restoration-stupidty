@@ -1,0 +1,18 @@
+<dynamic_object>
+    <diesel orientation_object="rp_cas_prop_display" materials="units/pd2_dlc_casino/props/cas_prop_keypad/cas_prop_keypad" />
+    <sequence_manager file="units/pd2_dlc_casino/props/cas_prop_keypad/cas_prop_display" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body">
+            <object name="rp_cas_prop_display" />
+            <object name="g_display_red" collision_type="mesh_mopp"/>
+			<object name="g_display_blue" collision_type="mesh_mopp"/>
+			<object name="g_display_green" collision_type="mesh_mopp"/>
+        </body>
+    </bodies>
+    <decal_surfaces />
+    <graphics>
+        <object name="g_display_red" enabled="false" />
+		<object name="g_display_blue" enabled="false" />
+		<object name="g_display_green" enabled="false" />
+    </graphics>
+</dynamic_object>

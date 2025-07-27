@@ -1,0 +1,11 @@
+<unit type="brush" slot="29">
+	<object file="units/pd2_dlc_mad/nature/mad_rocks/mad_rock_small_snowy_brush" />
+
+	<mass>
+		<spawn in="2600" method="pool" out="2700" />
+	</mass>	
+	
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+	</extensions>
+</unit>

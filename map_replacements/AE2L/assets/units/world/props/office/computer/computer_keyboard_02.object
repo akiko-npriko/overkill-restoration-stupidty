@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<dynamic_object>
+  <diesel materials="units/world/props/office/computer/computer_keyboards" orientation_object="rp_keyboard_02" />
+  <bodies>
+    <body name="static_body" enabled="true" template="static">
+      <object name="rp_keyboard_02" />
+      <object name="c_keyboard_02_box" collision_type="box" />
+    </body>
+  </bodies>
+  <decal_surfaces>
+    <decal_mesh name="g_keyboard_02" enabled="true" />
+  </decal_surfaces>
+  <graphics>
+    <object name="g_keyboard_02" enabled="true" shadow_caster="false" />
+  </graphics>
+</dynamic_object>

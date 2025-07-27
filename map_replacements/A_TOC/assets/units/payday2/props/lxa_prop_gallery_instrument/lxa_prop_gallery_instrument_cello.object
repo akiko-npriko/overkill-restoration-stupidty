@@ -1,0 +1,59 @@
+<dynamic_object>
+    <diesel orientation_object="rp_cello" materials="units/payday2/props/lxa_prop_gallery_instrument/lxa_prop_gallery_instrument_violin" />
+	<sequence_manager file="units/payday2/props/lxa_prop_gallery_instrument/lxa_prop_gallery_instrument_cello" />
+    
+	<bodies>
+		<body enabled="false" template="dynamic" name="dynamic_body" collides_with_mover="false" >
+            <object collision_type="convex" name="c_convex_01" mass="0.1"/>
+        </body>
+		
+		
+		<body enabled="false" template="dynamic" name="dynamic_body_2"  collides_with_mover="false">
+            <object collision_type="convex" name="c_convex_02" mass="0.1"/>
+        </body>
+		
+		<body enabled="true" template="static" name="static_body" >
+            <object name="rp_cello" />
+            <object collision_type="mesh_mopp" name="c_mesh" />
+        </body>
+		
+        <body enabled="true" template="static" name="body0" >
+            <object name="rp_cello" />
+			<object name="c_box_01" collision_type="box" padding="-2.5"/>
+			<object name="c_box_02" collision_type="box" padding="-2.5"/>
+			<object name="c_box_03" collision_type="box" padding="-2.5"/>
+			<object name="c_box_04" collision_type="box" padding="-2.5"/>
+			<object name="c_box_05" collision_type="box" padding="-2.5"/>			
+        </body>
+        <body enabled="true" template="static" name="glass_01" >
+            <object name="rp_cello" />
+            <object collision_type="box" name="c_box_glass_01" />
+        </body>
+        <body enabled="true" template="static" name="glass_02" >
+            <object name="rp_cello" />
+            <object collision_type="box" name="c_box_glass_02" />
+        </body>
+        <body enabled="true" template="static" name="glass_03" >
+            <object name="rp_cello" />
+            <object collision_type="box" name="c_box_glass_03" />
+        </body>
+    </bodies>
+	
+  <decal_surfaces default_material="wood">
+    <decal_mesh name="dm_mesh" enabled="true" material="wood" />
+  </decal_surfaces>
+  
+  
+    <graphics>
+        <object enabled="true" name="g_mesh" />
+        <object enabled="false" name="g_mesh_broken_01" />
+        <object enabled="false" name="g_mesh_broken_02" />
+        <object enabled="true" name="g_case" />
+        <object enabled="true" name="g_glass_01" />
+        <object enabled="true" name="g_glass_02" />
+        <object enabled="true" name="g_glass_03" />
+        <object enabled="false" name="g_glass_broken_01" />
+        <object enabled="false" name="g_glass_broken_02" />
+        <object enabled="false" name="g_glass_broken_03" />
+    </graphics>
+</dynamic_object>

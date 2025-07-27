@@ -1,0 +1,78 @@
+<materials version="3" group="ene_bex_security_01">
+    <material name="mtr_head" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2" >
+        <bump_normal_texture    file="units/pd2_dlc_bex/characters/shared_textures/ntr_generic_male_heads/ntr_male_generic_hispanic_head_03_nm"/>
+        <diffuse_texture        file="units/pd2_dlc_bex/characters/shared_textures/ntr_generic_male_heads/ntr_male_generic_hispanic_head_03_df"/>
+        <variable value="1 1 1" type="vector3" name="contour_color"/>
+        <variable value="0"     type="scalar" name="contour_opacity"/>
+    </material> 
+    <material name="mtr_head_lod_1" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2" >
+        <bump_normal_texture    file="units/pd2_dlc_bex/characters/shared_textures/ntr_generic_male_heads/ntr_male_generic_hispanic_head_03_nm" mip="1"/>
+        <diffuse_texture        file="units/pd2_dlc_bex/characters/shared_textures/ntr_generic_male_heads/ntr_male_generic_hispanic_head_03_df" mip="1"/>
+        <variable value="1 1 1" type="vector3" name="contour_color"/>
+        <variable value="0"     type="scalar" name="contour_opacity"/>
+    </material>
+    <material name="mtr_head_lod_2" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2" >
+        <bump_normal_texture    file="units/pd2_dlc_bex/characters/shared_textures/ntr_generic_male_heads/ntr_male_generic_hispanic_head_03_nm" mip="4"/>
+        <diffuse_texture        file="units/pd2_dlc_bex/characters/shared_textures/ntr_generic_male_heads/ntr_male_generic_hispanic_head_03_df" mip="4"/>
+        <variable value="1 1 1" type="vector3" name="contour_color"/>
+        <variable value="0"     type="scalar" name="contour_opacity"/>
+    </material>
+
+
+
+
+
+
+    <material name="mtr_enforcer_vest" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2" >
+        <bump_normal_texture    file="units/pd2_mod_ttr/characters/shared_textures/cartel_armor_nm"/>
+        <diffuse_texture        file="units/pd2_mod_ttr/characters/shared_textures/cartel_grenadier_armor_df"/>
+        <variable value="1 1 1" type="vector3" name="contour_color"/>
+        <variable value="0"     type="scalar" name="contour_opacity"/>
+    </material>
+    <material name="mtr_enforcer_vest_lod_1" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2" >
+        <bump_normal_texture    file="units/pd2_mod_ttr/characters/shared_textures/cartel_armor_nm" mip="1"/>
+        <diffuse_texture        file="units/pd2_mod_ttr/characters/shared_textures/cartel_grenadier_armor_df" mip="1"/>
+        <variable value="1 1 1" type="vector3" name="contour_color"/>
+        <variable value="0"     type="scalar" name="contour_opacity"/>
+    </material>
+    <material name="mtr_enforcer_vest_lod_2" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2" >
+		<bump_normal_texture 	file="units/pd2_mod_ttr/characters/shared_textures/cartel_armor_nm" mip="4"/>
+		<diffuse_texture 		file="units/pd2_mod_ttr/characters/shared_textures/cartel_grenadier_armor_df" mip="4"/>
+        <variable value="1 1 1" type="vector3" name="contour_color"/>
+        <variable value="0"     type="scalar" name="contour_opacity"/>
+    </material>
+
+
+
+
+
+
+
+
+    <material name="mtr_body" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2" >
+        <bump_normal_texture    file="units/pd2_dlc_mex/characters/ene_mex_security_guard_3/ene_thug_indoor_cartel_regular_02_nm"/>
+        <diffuse_texture        file="units/pd2_mod_ttr/characters/ene_cartel_bulldozer/ene_cartel_bulldozer_df"/>
+        <variable value="1 1 1" type="vector3" name="contour_color"/>
+        <variable value="0"     type="scalar" name="contour_opacity"/>
+    </material>
+    <material name="mtr_body_lod_1" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2" >
+        <bump_normal_texture    file="units/pd2_dlc_mex/characters/ene_mex_security_guard_3/ene_thug_indoor_cartel_regular_02_nm" mip="1"/>
+        <diffuse_texture        file="units/pd2_mod_ttr/characters/ene_cartel_bulldozer/ene_cartel_bulldozer_df" mip="1"/>
+        <variable value="1 1 1" type="vector3" name="contour_color"/>
+        <variable value="0"     type="scalar" name="contour_opacity"/>
+    </material>
+    <material name="mtr_body_lod_2" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2" >
+		<bump_normal_texture 	file="units/pd2_dlc_mex/characters/ene_mex_security_guard_3/ene_thug_indoor_cartel_regular_02_nm" mip="4"/>
+		<diffuse_texture 		file="units/pd2_mod_ttr/characters/ene_cartel_bulldozer/ene_cartel_bulldozer_df" mip="4"/>
+        <variable value="1 1 1" type="vector3" name="contour_color"/>
+        <variable value="0"     type="scalar" name="contour_opacity"/>
+    </material>
+    <material name="mtr_hat" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2" >
+		<bump_normal_texture 	file="units/pd2_mod_ttr/characters/shared_textures/cartel_armor_nm" mip="1"/>
+		<diffuse_texture 		file="units/pd2_mod_ttr/characters/shared_textures/cartel_grenadier_armor_df"/>
+        <variable value="1 1 1" type="vector3" name="contour_color"/>
+        <variable value="0"     type="scalar" name="contour_opacity"/>
+    </material>
+
+    <material name="shadow_caster" render_template="shadow_caster_only:SKINNED_1WEIGHT" version="2"/>
+</materials>

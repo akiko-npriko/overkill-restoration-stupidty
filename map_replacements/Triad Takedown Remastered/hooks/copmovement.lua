@@ -1,0 +1,1 @@
+CopMovement._action_variants.constantine_backup = CopMovement._action_variants.drug_lord_boss_stealth

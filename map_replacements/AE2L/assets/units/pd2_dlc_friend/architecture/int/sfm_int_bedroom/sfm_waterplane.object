@@ -1,0 +1,15 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_friend/architecture/int/sfm_int_bedroom/sfm_waterplane" orientation_object="rp_sfm_waterplane" />
+		<bodies>
+        <body name="static_body" enabled="true" template="editor">
+			<object name="rp_sfm_waterplane" />
+			<object name="c_box_01" collision_type="box" padding="-2.5"/>
+        </body>
+    </bodies>
+		<decal_surfaces default_material="water_puddle" static="true">
+		<decal_mesh name="dm_water_puddle" enabled="true" material="water_puddle"/>
+	</decal_surfaces>
+	<graphics>
+        <object enabled="true" name="g_g" />
+    </graphics>
+</dynamic_object>

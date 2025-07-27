@@ -1,0 +1,17 @@
+<dynamic_object>
+    <diesel orientation_object="rp_com_int_nightclub_trim_light_4m" materials="units/payday2/architecture/sch_int_nightclub/sch_int_nightclub" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body" >
+            <object name="rp_com_int_nightclub_trim_light_4m"/>
+            <object collision_type="box" name="c_box_000" />
+        </body>
+    </bodies>
+    <decal_surfaces default_material="plaster" static="true">
+        <decal_mesh enabled="true" name="dm_plaster" material="plaster" />
+    </decal_surfaces>
+    <graphics>
+        <object enabled="true" name="g_g" />
+        <object enabled="true" name="g_glow" />
+        <object enabled="true" name="g_flourescent" />
+    </graphics>
+</dynamic_object>

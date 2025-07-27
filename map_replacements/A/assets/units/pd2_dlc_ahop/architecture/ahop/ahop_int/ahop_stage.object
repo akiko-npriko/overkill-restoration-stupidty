@@ -1,0 +1,23 @@
+<dynamic_object>
+    <diesel orientation_object="rp_cas_int_car_stage" materials="units/pd2_dlc_ahop/architecture/ahop/ahop_int/ahop_stage" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body" >
+
+			<object name="g_stairs" collision_type="mesh_mopp" padding="-2.5"/>	
+           
+            
+        </body>
+    </bodies>
+    <graphics>
+        
+        <object enabled="true" name="g_stairs" />
+        <object enabled="false" name="g_cas_int_stairs_small_01" />
+        <object enabled="false" name="g_cas_int_stairs_small_02" />
+
+
+    </graphics>
+    <decal_surfaces>
+        <decal_mesh enabled="false" name="dm_cas_int_stairs_stone" material="stone" />
+        <decal_mesh enabled="true" name="dm_cas_int_car_stage_stone" material="stone" />
+    </decal_surfaces>
+</dynamic_object>

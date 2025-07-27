@@ -1,0 +1,6 @@
+<materials version="3">
+    <material name="con_backdrop" render_template="generic:DIFFUSE_TEXTURE:RL_BACKDROP" version="2">
+        <diffuse_texture file="units/world/props/container_backdrop/con_backdrop_df"/>
+    </material>
+    <material name="shadow_caster" render_template="shadow_caster_only" version="2"/>
+</materials>

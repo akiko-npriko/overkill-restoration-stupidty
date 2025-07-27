@@ -1,0 +1,71 @@
+<materials version="3">
+    <material name="des_vil_house_walls_df" version="2" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" decal_material="metal" >
+        <diffuse_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_walls_df"/>
+        <bump_normal_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_walls_nm"/>
+    </material>
+    <material name="des_vil_house_extras" version="2" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" decal_material="metal" >
+        <diffuse_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_extras_df"/>
+        <bump_normal_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_extras_nm"/>
+    </material>
+    <material name="des_vil_minaret" version="2" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" decal_material="metal" >
+        <diffuse_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_walls_df"/>
+        <bump_normal_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_walls_nm"/>
+    </material>
+	<material name="des_vil_house_extras_df" version="2" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" decal_material="metal" >
+        <diffuse_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_extras_df"/>
+        <bump_normal_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_extras_nm"/>
+    </material>
+    <material name="des_vil_house_windows" version="2" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" decal_material="metal" >
+        <diffuse_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_extras_df"/>
+        <bump_normal_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_extras_nm"/>
+    </material>
+    <material name="des_vil_house_walls" version="2" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" decal_material="metal" >
+        <diffuse_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_walls_df"/>
+        <bump_normal_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_walls_nm"/>
+    </material>
+    <material name="mtr_des_vil_house_walls" version="2" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" decal_material="metal" >
+        <diffuse_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_walls_df"/>
+        <bump_normal_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_walls_nm"/>
+    </material>
+    <material name="mtr_des_vil_house_extras_256" version="2" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" decal_material="metal" >
+        <diffuse_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_extras_df"/>
+        <bump_normal_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_extras_df"/>
+    </material>
+    <material name="mtr_des_vil_house_extras" version="2" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" decal_material="metal" >
+        <diffuse_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_extras_df"/>
+        <bump_normal_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_extras_nm"/>
+    </material>
+    <material name="mtr_des_vil_house_walls_256" version="2" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" decal_material="metal" >
+        <diffuse_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_walls_df"/>
+        <bump_normal_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_walls_nm"/>
+    </material>
+    <material name="des_vil_house_06" version="2" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" decal_material="metal" >
+        <diffuse_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_walls_df"/>
+        <bump_normal_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_walls_nm"/>
+    </material>
+    <material name="strefronts_MAYA_2_lambert4SG" version="2" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" decal_material="metal" >
+        <diffuse_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_walls_df"/>
+        <bump_normal_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_walls_nm"/>
+    </material>
+    <material name="mtr_des_vil_house_walls_plaster" version="2" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" decal_material="metal" >
+        <diffuse_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_walls_df"/>
+        <bump_normal_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_walls_nm"/>
+    </material>
+    <material name="des_vil" version="2" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" decal_material="metal" >
+        <diffuse_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_walls_df"/>
+        <bump_normal_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_walls_nm"/>
+    </material>
+    <material name="mtr_bazaar_shop" version="2" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" decal_material="metal" >
+        <diffuse_texture file="units/world/architecture/desert/des_bazaar_shop/des_bazaar_shop_df"/>
+        <bump_normal_texture file="units/world/architecture/desert/des_bazaar_shop/des_bazaar_shop_nm"/>
+    </material>
+    <material name="mtr_des_bazaar_stand" version="2" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:VERTEX_COLOR" decal_material="metal" >
+        <diffuse_texture file="units/world/architecture/desert/des_bazaar_stand/des_bazaar_stand_df"/>
+        <bump_normal_texture file="units/world/architecture/desert/des_bazaar_stand/des_bazaar_stand_nm"/>
+        <variable value="0" type="scalar" name="specular_power"/>
+    </material>
+	    <material name="des_vil_house_door" version="2" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" decal_material="metal" >
+        <diffuse_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_walls_df"/>
+        <bump_normal_texture file="units/world/architecture/desert/des_vil_house/des_vil_house_walls_nm"/>
+    </material>
+</materials>

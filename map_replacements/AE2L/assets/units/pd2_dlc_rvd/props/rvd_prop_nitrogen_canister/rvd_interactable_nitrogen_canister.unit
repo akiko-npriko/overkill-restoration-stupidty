@@ -1,0 +1,15 @@
+<unit type="rvd" slot="1">
+	<network sync="spawn"/>
+	<object file="units/pd2_dlc_rvd/props/rvd_prop_nitrogen_canister/rvd_interactable_nitrogen_canister" />
+	<dependencies>
+		<depends_on effect="effects/payday2/particles/smoke_trail/smoke_nitrogen" />
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+		<extension name="interaction" class="UseInteractionExt">
+			<var name="tweak_data" value="hold_place_liquid_nitrogen" />
+			<var name="_interact_object" value="interact"/>
+		</extension>
+	</extensions>
+</unit>

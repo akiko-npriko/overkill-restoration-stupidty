@@ -1,0 +1,50 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_fex/props/fex_prop_garage_door/fex_prop_garage_door" orientation_object="rp_fex_prop_garage_door" />
+	<sequence_manager file="units/pd2_dlc_fex/props/fex_prop_garage_door/fex_prop_garage_door" />
+
+    <animations>
+    	<animation_group name="anim_open" enabled="false">
+    		<object name="root_rot" 	/>
+    		<object name="root_piston" 	/>
+    		<object name="anim_piston" 	/>
+    		<object name="anim_piston2" />
+    		<object name="anim_rotate" 	/>
+    	</animation_group>
+    </animations>
+
+	<bodies>
+		<body name="static_body" enabled="true" template="static">
+			<object name="rp_fex_prop_garage_door"/>
+			<object enabled="true" name="c_box_000" collision_type="box" padding="-2.5"/>
+			<object enabled="true" name="c_box_001" collision_type="box" padding="-2.5"/>
+			<object enabled="true" name="c_box_003" collision_type="box" padding="-2.5"/>
+			<object enabled="true" name="c_box_004" collision_type="box" padding="-2.5"/>
+			<object enabled="true" name="c_box_005" collision_type="box" padding="-2.5"/>
+			<object enabled="true" name="c_box_006" collision_type="box" padding="-2.5"/>
+			<object enabled="true" name="c_box_008" collision_type="box" padding="-2.5"/>
+			<object enabled="true" name="c_box_009" collision_type="box" padding="-2.5"/>
+			<object enabled="true" name="c_box_010" collision_type="box" padding="-2.5"/>
+			<object enabled="true" name="c_box_011" collision_type="box" padding="-2.5"/>
+		</body>
+		<body name="body_door" enabled="true" template="animated">
+			<object name="anim_rotate" />
+			<object name="c_box_door_closed" collision_type="box" padding="-2.5"/>
+		</body>	
+		<body name="body_piston" enabled="true" template="animated">
+			<object name="anim_piston" />
+			<object name="c_box_002" collision_type="box" padding="-2.5"/>
+			<object name="c_box_007" collision_type="box" padding="-2.5"/>
+		</body>	
+	</bodies>
+	<decal_surfaces default_material="glass">
+		<decal_mesh name="dm_glass" enabled="true" material="glass" />
+		<decal_mesh name="dm_wood" enabled="true" material="wood" />
+	</decal_surfaces>
+	<graphics>
+        <object enabled="true" name="g_door" />
+        <object enabled="true" name="g_piston1" />
+        <object enabled="true" name="g_piston2" />
+        <object enabled="true" name="g_pivot" />
+        <object enabled="true" name="g_frame" />
+    </graphics>
+</dynamic_object>

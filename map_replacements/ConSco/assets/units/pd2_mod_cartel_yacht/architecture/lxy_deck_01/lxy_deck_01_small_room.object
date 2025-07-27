@@ -1,0 +1,12 @@
+<dynamic_object>
+	<diesel materials="units/pd2_mod_cartel_yacht/architecture/lxy_deck_01/lxy_int_yacht" orientation_object="rp_lxy_deck_01_small_room" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_lxy_deck_01_small_room" />
+			<object name="g_g" collision_type="mesh_mopp" />
+		</body>
+	</bodies>
+	<graphics>
+		<object name="g_g" enabled="true" />
+	</graphics>
+</dynamic_object>

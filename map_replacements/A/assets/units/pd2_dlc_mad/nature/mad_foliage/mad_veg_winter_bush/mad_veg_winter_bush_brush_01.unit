@@ -1,0 +1,11 @@
+<unit type="brush" slot="29">
+	<object file="units/pd2_dlc_mad/nature/mad_foliage/mad_veg_winter_bush/mad_veg_winter_bush_brush_01" />
+
+	<mass>
+		<spawn in="3000" method="pool" out="3100" />
+	</mass>	
+	
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+	</extensions>
+</unit>

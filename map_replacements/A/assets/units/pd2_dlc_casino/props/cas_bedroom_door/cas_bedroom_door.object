@@ -1,0 +1,71 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_casino/props/cas_bedroom_door/cas_bedroom_door" orientation_object="rp_cas_bedroom_door" />
+	<sequence_manager file="units/pd2_dlc_casino/props/cas_bedroom_door/cas_bedroom_door" />
+
+	<animations>
+		<animation_group name="grp_anim_door" enabled="false">
+				<object name="anim_door" />
+		</animation_group>
+	</animations>
+
+	<bodies>
+
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_cas_bedroom_door" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+			<object name="c_box_04" collision_type="box" padding="-2.5" />
+			<object name="c_box_05" collision_type="box" padding="-2.5" />
+			<object name="c_box_06" collision_type="box" padding="-2.5" />
+			<object name="c_box_07" collision_type="box" padding="-2.5" />
+			<object name="c_box_08" collision_type="box" padding="-2.5" />
+			<object name="c_box_09" collision_type="box" padding="-2.5" />
+			<object name="c_box_10" collision_type="box" padding="-2.5" />
+			<object name="c_box_11" collision_type="box" padding="-2.5" />
+		</body>
+		<body name="body_anim_door" enabled="true" template="animated">
+			<object name="anim_door" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+
+		<body name="body_lock" template="static" enabled="false" >
+            <object name="c_lock" collision_type="box" padding="-2.5" />
+        </body>
+
+	</bodies>
+	<decal_surfaces default_material="wood">
+		<decal_mesh name="dm_wood_01" enabled="true" material="wood" />
+		<decal_mesh name="dm_wood_02" enabled="true" material="wood" />
+	</decal_surfaces>
+	<graphics>
+		<graphic_group name="grp_door_dmg" enabled="false" >
+			<lod_object name="lod_g_frame">
+				<object name="g_frame_lod0" enabled="true" max_distance="1500" />
+				<object name="g_frame_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<graphic_group name="grp_door" enabled="true" culling_object="co_box">
+			<lod_object name="lod_g_door">
+				<object name="g_door_lod0" enabled="true" max_distance="1500" />
+				<object name="g_door_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+		<graphic_group name="grp_icon_no_skill" enabled="false">
+			<lod_object name="grp_lod_g_icon_lockpick_no_skill">
+				<object name="g_icon_lockpick_no_skill_lod0" enabled="true" max_distance="450" />
+				<object name="g_icon_lockpick_no_skill_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+		<graphic_group name="grp_icon_skill" enabled="false">
+			<lod_object name="grp_lod_g_icon_lockpick_skill">
+				<object name="g_icon_lockpick_skill_lod0" enabled="true" max_distance="450" />
+				<object name="g_icon_lockpick_skill_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+
+		<object name="s_s_01" enabled="true" shadow_caster="true" />
+		<object name="s_s_02" enabled="true" shadow_caster="true" />
+		
+	</graphics>
+</dynamic_object>

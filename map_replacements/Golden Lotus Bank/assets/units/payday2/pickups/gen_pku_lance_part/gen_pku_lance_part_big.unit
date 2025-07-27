@@ -1,0 +1,13 @@
+<unit type="gen" slot="1" >
+	<object file="units/payday2/pickups/gen_pku_lance_part/gen_pku_lance_part_big" />
+	<network sync="spawn" />
+	<extensions>
+		<extension class="ScriptUnitData" name="unit_data" />
+		<extension name="interaction" class="SpecialEquipmentInteractionExt" >
+			<var name="_special_equipment" value="lance_part" />
+			<var name="_remove_on_interact" value="false" />
+			<var name="tweak_data" value="gen_pku_lance_part" />
+		</extension>
+		<extension name="damage" class="UnitDamage" />
+	</extensions>
+</unit>

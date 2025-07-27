@@ -1,0 +1,12 @@
+<unit type="sfm" slot="1">
+	<object file="units/payday2/props/anl/anl_prop_office_surveillance_tv_screen/anl_prop_office_surveillance_tv_screen" />
+	<network sync="spawn"/>
+	<dependencies>
+    	<depends_on effect="effects/particles/dest/sparks_lamp_dest" />
+		<depends_on effect="effects/payday2/particles/window/car_window_small" />
+    </dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+	</extensions>
+</unit>

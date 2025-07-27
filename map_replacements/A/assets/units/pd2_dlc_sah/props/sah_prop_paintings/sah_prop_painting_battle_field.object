@@ -1,0 +1,16 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_sah/props/sah_prop_paintings/sah_prop_painting_battle_field" orientation_object="rp_sah_prop_painting_battle_field" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_sah_prop_painting_battle_field" />
+			<object name="c_convex_01" collision_type="convex" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="wood">
+		<decal_mesh name="dm_cloth" enabled="true" material="cloth" />
+		<decal_mesh name="dm_wood" enabled="true" material="wood" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_painting_battle_field" enabled="true" />
+	</graphics>
+</dynamic_object>

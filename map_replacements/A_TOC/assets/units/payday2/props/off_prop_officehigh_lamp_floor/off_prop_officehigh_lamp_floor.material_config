@@ -1,0 +1,9 @@
+<materials version="3" group="off_prop_officehigh_lamp_floor">
+    <material name="map_lamp" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:SELF_ILLUMINATION" version="2">
+        <diffuse_texture file="units/payday2/props/off_prop_officehigh_lamp_floor/off_prop_officehigh_lamp_floor_df"/>
+        <bump_normal_texture file="units/payday2/props/off_prop_officehigh_lamp_floor/off_prop_officehigh_lamp_floor_nm"/>
+        <self_illumination_texture file="units/payday2/props/off_prop_officehigh_lamp_floor/off_prop_officehigh_lamp_floor_il"/>
+        <variable value="neonsign" type="scalar" name="il_multiplier"/>
+    </material>
+    <material version="2" render_template="shadow_caster_only" name="shadow_caster"/>
+</materials>

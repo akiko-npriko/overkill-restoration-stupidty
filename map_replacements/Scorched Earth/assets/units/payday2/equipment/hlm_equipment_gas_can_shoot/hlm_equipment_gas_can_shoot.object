@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/payday2/equipment/hlm_equipment_gas_can_shoot/hlm_equipment_gas_can_shoot" orientation_object="rp_hlm_equipment_gas_can_shoot" />
+	<sequence_manager file="units/payday2/equipment/hlm_equipment_gas_can_shoot/hlm_equipment_gas_can_shoot" />
+	
+	<bodies>
+		<body name="static_body" enabled="true" template="static">
+			<object name="rp_hlm_equipment_gas_can_shoot"/>
+			<object name="c_box" collision_type="box" />
+		</body>
+		<body name="body_hitbox" enabled="false" template="static">
+			<object name="rp_hlm_equipment_gas_can_shoot"/>
+			<object name="c_box" collision_type="box" />
+		</body>
+	</bodies>
+	
+	<decal_surfaces default_material="sheet_metal" static="true">
+		<decal_mesh material="sheet_metal" name="g_g" enabled="true" />
+	</decal_surfaces>
+	
+	<effects>
+		<effect_spawner name="fire" enabled="false" object="e_fire" effect="effects/particles/fire/large_light_fire" />
+	</effects>
+
+	<graphics>
+		<object name="g_g"			enabled="false" />
+		<object name="g_contour"	enabled="true" />
+	</graphics>
+</dynamic_object> 

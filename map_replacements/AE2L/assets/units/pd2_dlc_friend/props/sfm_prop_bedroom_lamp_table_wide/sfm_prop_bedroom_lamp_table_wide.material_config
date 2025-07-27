@@ -1,0 +1,16 @@
+<materials version="3">
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:NORMALMAP:OPACITY_TEXTURE:SELF_ILLUMINATION" name="mat_lamp" version="2">
+        <diffuse_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_lamp_table_wide/sfm_prop_bedroom_lamp_table_wide_df"/>
+        <bump_normal_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_lamp_table_wide/sfm_prop_bedroom_lamp_table_wide_nm"/>
+        <variable type="scalar" name="alpha_ref" value="0.46500002208631"/>
+        <self_illumination_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_lamp_table_wide/sfm_prop_bedroom_lamp_table_wide_il"/>
+        <variable type="scalar" name="il_multiplier" value="streetlight"/>
+        <opacity_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_lamp_table_wide/sfm_prop_bedroom_lamp_table_wide_op"/>
+    </material>
+    <material render_template="generic:ALPHA_MASKED:DIFFUSE_TEXTURE:EXTERNAL_ALPHA_REF:NORMALMAP" name="mat_lamp_lod" version="2">
+        <diffuse_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_lamp_table_wide/sfm_prop_bedroom_lamp_table_wide_df" mip="4"/>
+        <bump_normal_texture file="units/pd2_dlc_friend/props/sfm_prop_bedroom_lamp_table_wide/sfm_prop_bedroom_lamp_table_wide_nm" mip="4"/>
+        <variable type="scalar" name="alpha_ref" value="0"/>
+    </material>
+    <material render_template="shadow_caster_only" name="shadow_caster" version="2"/>
+</materials>

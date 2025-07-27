@@ -1,0 +1,8 @@
+<unit type="dev" slot="1">
+    <object file="units/pd2_dlc_cro/sawblade_icon_1m_collision/sawblade_icon_1m_collision" />
+    <network sync="spawn"/>
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+		<extension name="damage" class="UnitDamage" />
+    </extensions>
+</unit>

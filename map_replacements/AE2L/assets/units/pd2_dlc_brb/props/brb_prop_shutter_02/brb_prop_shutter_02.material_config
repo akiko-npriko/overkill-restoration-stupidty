@@ -1,0 +1,9 @@
+<materials version="3">
+	<material name="mat_brb_shutter" render_template="generic:DIFFUSE_TEXTURE" version="2">
+		<diffuse_texture file="units/pd2_dlc_arena/architecture/are_lobby/are_lobby_popcornstand_metal_df" />
+	</material>
+	<material name="mat_metal_trim" render_template="generic:DIFFUSE_TEXTURE" version="2">
+		<diffuse_texture file="units/pd2_dlc_brb/architecture/brb_int/brb_int_railing/brb_railing_metallics_df" />
+	</material>
+	<material name="shadow_caster" render_template="shadow_caster_only" version="2" />
+</materials>

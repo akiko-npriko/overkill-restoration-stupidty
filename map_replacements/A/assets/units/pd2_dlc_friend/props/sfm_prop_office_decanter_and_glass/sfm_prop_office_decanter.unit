@@ -1,0 +1,11 @@
+<unit type="sfm" slot="1">
+	<object file="units/pd2_dlc_friend/props/sfm_prop_office_decanter_and_glass/sfm_prop_office_decanter" />
+	<dependencies>
+		<depends_on effect="effects/particles/dest/brown_bottle_dest" />
+		<depends_on bnk="soundbanks/regular_sfx" />
+	</dependencies>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+	</extensions>
+</unit>

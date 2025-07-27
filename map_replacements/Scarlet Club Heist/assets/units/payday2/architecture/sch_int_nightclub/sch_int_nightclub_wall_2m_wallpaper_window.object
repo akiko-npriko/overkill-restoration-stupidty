@@ -1,0 +1,24 @@
+<dynamic_object>
+    <diesel orientation_object="rp_com_int_nightclub_wall_2m_wallpaper_window" materials="units/payday2/architecture/sch_int_nightclub/sch_int_nightclub" />
+	<sequence_manager file="units/payday2/architecture/sch_int_nightclub/sch_int_nightclub_wall_2m_wallpaper_window" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body" >
+            <object name="rp_com_int_nightclub_wall_2m_wallpaper_window"/>
+            <object collision_type="box" name="c_box_000" />
+            <object collision_type="box" name="c_box_001" />
+        </body>
+        <body enabled="true" template="static" name="static_glass" remove_ray_type="vis_graph ai_vision" >
+            <object name="rp_com_int_nightclub_wall_2m_wallpaper_window"/>
+            <object collision_type="box" name="c_box_002" />
+        </body>
+    </bodies>
+    <decal_surfaces default_material="wood" static="true">
+        <decal_mesh enabled="true" name="dm_wood" material="wood" />
+        <decal_mesh enabled="true" name="dm_plaster" material="plaster" />
+		<decal_mesh name="dm_glass" enabled="true" material="glass_breakable"/>
+    </decal_surfaces>
+    <graphics>
+        <object enabled="true" name="g_g"/>
+		<object name="g_glass" enabled="true"/>
+    </graphics>
+</dynamic_object>

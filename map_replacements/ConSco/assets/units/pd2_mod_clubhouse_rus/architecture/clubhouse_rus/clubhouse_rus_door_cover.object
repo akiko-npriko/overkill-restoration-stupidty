@@ -1,0 +1,27 @@
+<dynamic_object>
+	<diesel materials="units/pd2_mod_clubhouse_rus/architecture/clubhouse_rus/clubhouse_rus_door_cover" orientation_object="rp_bor_clubhouse_door_cover" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_bor_clubhouse_door_cover" />
+			<object name="c_box" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="stone">
+		<decal_mesh name="dm_stone" enabled="true" material="stone" />
+		<decal_mesh name="dm_wood" enabled="true" material="wood" />
+	</decal_surfaces>
+	<graphics>
+		<lod_object name="lod_wall ">
+	        <object enabled="true" name="g_wall" >
+			  	<material materials="mat_club_concrete_tiles" max_distance="500"/>
+	        	<material materials="mat_club_concrete_tiles_lod" />
+			</object>
+		</lod_object>
+		<lod_object name="lod_wood_01">
+	        <object enabled="true" name="g_wood" >
+			  	<material materials="mat_club_wood_blend" max_distance="500"/>
+	        	<material materials="mat_club_wood_blend_lod" />
+			</object>
+		</lod_object>
+	</graphics>
+</dynamic_object>

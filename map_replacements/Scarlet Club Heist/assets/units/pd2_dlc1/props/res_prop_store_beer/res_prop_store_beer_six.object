@@ -1,0 +1,20 @@
+<dynamic_object>
+	<metadata material_config_group="res_prop_store_beer_six"/>
+	<diesel materials="units/pd2_dlc1/props/res_prop_store_beer/res_prop_store_beer_six_a" orientation_object="rp_res_prop_store_beer_six" />
+	<sequence_manager file="units/pd2_dlc1/props/res_prop_store_beer/res_prop_store_beer_six" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_res_prop_store_beer_six" />
+			<object name="c_box" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<graphics>
+		<graphic_group name="bottles_six" enabled="true">
+			<lod_object name="lod_g_g">
+				<object name="g_g_lod0" enabled="true" max_distance="400" instance_struct="world_tm" />
+				<object name="g_g_lod1" enabled="true" max_distance="750" instance_struct="world_tm" />
+				<object name="g_g_lod2" enabled="true" instance_struct="world_tm" />
+			</lod_object>
+		</graphic_group>
+	</graphics>
+</dynamic_object>

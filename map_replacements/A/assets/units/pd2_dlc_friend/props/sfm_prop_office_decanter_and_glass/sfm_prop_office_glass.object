@@ -1,0 +1,22 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_friend/props/sfm_prop_office_decanter_and_glass/sfm_prop_office_decanter" orientation_object="rp_sfm_prop_office_glass" />
+	<sequence_manager file="units/pd2_dlc_friend/props/sfm_prop_office_decanter_and_glass/sfm_prop_office_glass" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_sfm_prop_office_glass" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="glass">
+		<decal_mesh name="dm_glass" enabled="true" material="glass" />
+	</decal_surfaces>
+	<graphics>
+		<graphic_group name="glass" enabled="true" >
+			<lod_object name="lod_g">
+				<object name="g_lod0" enabled="true" max_distance="1500" />
+				<object name="g_lod1" enabled="true" />
+			</lod_object>
+			<object name="s_s" enabled="true" shadow_caster="true" />
+		</graphic_group>
+	</graphics>
+</dynamic_object>

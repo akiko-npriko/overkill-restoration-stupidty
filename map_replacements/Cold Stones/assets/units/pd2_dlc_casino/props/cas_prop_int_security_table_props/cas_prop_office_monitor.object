@@ -1,0 +1,31 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_casino/props/cas_prop_int_security_table_props/cas_prop_office_monitor" orientation_object="rp_cas_prop_office_monitor" />
+	<sequence_manager file="units/pd2_dlc_casino/props/cas_prop_int_security_table_props/cas_prop_office_monitor" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_cas_prop_office_monitor" />
+			<object name="c_capsule_01" collision_type="capsule" padding="-2.5" />
+			<object name="c_convex_01" collision_type="convex" padding="-2.5" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="metal">
+		<decal_mesh name="dm_glass_breakable" enabled="true" material="glass_breakable" />
+		<decal_mesh name="dm_metal" enabled="true" material="metal" />
+		<decal_mesh name="dm_plastic" enabled="true" material="plastic" />
+	</decal_surfaces>
+	<graphics>
+		<graphic_group name="grp_clean" enabled="true">
+			<lod_object name="lod_g">
+				<object name="g_lod0" enabled="true" max_distance="1300" />
+				<object name="g_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+		<graphic_group name="grp_dmg" enabled="false">
+			<lod_object name="lod_g_dmg" >
+				<object name="g_dmg_lod0" enabled="true" max_distance="1300" />
+				<object name="g_dmg_lod1" enabled="true" />
+			</lod_object>
+		</graphic_group>
+	</graphics>
+</dynamic_object>

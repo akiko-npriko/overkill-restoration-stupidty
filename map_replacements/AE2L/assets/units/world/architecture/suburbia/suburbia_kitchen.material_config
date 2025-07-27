@@ -1,0 +1,45 @@
+<materials version="3">
+    <material name="mtr_kitchen_wood_light" render_template="generic:DIFFUSE_TEXTURE:GLOSS_CONTROL_VALUE" version="2">
+        <diffuse_texture file="units/world/architecture/suburbia/textures/kitchen_wood_light_df"/>
+        <variable value="0" type="scalar" name="glossiness_control"/>
+    </material>
+    <material name="mtr_kitchen_wood_dark" render_template="generic:DIFFUSE_TEXTURE" version="2">
+        <diffuse_texture file="units/world/architecture/suburbia/textures/kitchen_wood_dark_df"/>
+    </material>
+    <material name="glass" decal_material="glass_breakable" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE" version="2">
+        <variable value="0 1 0.59999996423721" type="vector3" name="fresnel_settings"/>
+        <opacity_texture file="units/payday2/glass/glass_clear_default_op"/>
+        <diffuse_texture file="units/world/architecture/suburbia/textures/stove_glass_df"/>
+        <reflection_texture type="cubemap" global_texture="current_global_texture"/>
+    </material>
+    <material name="mtr_stainless_steel" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE" version="2">
+        <diffuse_texture file="units/world/architecture/suburbia/textures/stainless_steel_df"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <variable value="1 0 2" type="vector3" name="environment_settings"/>
+    </material>
+    <material name="mtr_kitchen_appliances" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE" version="2">
+        <diffuse_texture file="units/world/architecture/suburbia/textures/kitchen_appliances_df"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <variable value="1 0 2" type="vector3" name="environment_settings"/>
+    </material>
+    <material name="mtr_marble" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE" version="2">
+        <diffuse_texture file="units/world/architecture/suburbia/textures/marble_df"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <variable value="1 0 2" type="vector3" name="environment_settings"/>
+    </material>
+    <material name="mtr_marble_white" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE" version="2">
+        <diffuse_texture file="units/world/architecture/suburbia/textures/marble_white_df"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <variable value="1 0 2" type="vector3" name="environment_settings"/>
+    </material>
+    <material version="2" decal_material="glass_breakable" name="bottle_3" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE">
+        <diffuse_texture file="units/world/props/bottle/bottle_3_df"/>
+        <reflection_texture type="cubemap" global_texture="current_global_texture"/>
+        <variable value="3.2999999523163 0.27000001072884 0.69999998807907" type="vector3" name="environment_settings"/>
+    </material>
+    <material version="2" decal_material="glass_breakable" name="bottle_1" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE">
+        <diffuse_texture file="units/world/props/bottle/bottle_1_df"/>
+        <reflection_texture type="cubemap" global_texture="current_global_texture"/>
+        <variable value="3.2999999523163 0.27400001883507 0.69999998807907" type="vector3" name="environment_settings"/>
+    </material>
+</materials>

@@ -1,0 +1,140 @@
+<dynamic_object>
+    <diesel orientation_object="rp_gov_c_int_wall_explosion" materials="units/pd2_dlc2/architecture/gov_c_int/gov_c_int_wall_explosion" />
+    <sequence_manager file="units/pd2_dlc2/architecture/gov_c_int/gov_c_int_wall_explosion" />
+	
+	<animations>
+		<animation_group name="anim" enabled="false">
+			<object 	name="a_anim"/>
+			<object 	name="a_anim_secondary"/>
+			<object 	name="a_cinderblock_01"/>
+			<object 	name="a_cinderblock_02"/>
+			<object 	name="a_cinderblock_03"/>
+			<object 	name="a_cinderblock_04"/>
+			<object 	name="a_cinderblock_05"/>
+			<object 	name="a_cinderblock_06"/>
+			<object 	name="a_cinderblock_07"/>
+			<object 	name="a_cinderblock_08"/>
+			<object 	name="a_cinderblock_09"/>
+			<object 	name="a_cinderblock_10"/>
+			<object 	name="a_cinderblock_11"/>
+			<object 	name="a_cinderblock_12"/>
+			<object 	name="a_cinderblock_13"/>
+			<object 	name="a_cinderblock_14"/>
+			<object 	name="a_cinderblock_15"/>
+			<object 	name="a_cinderblock_16"/>
+			<object 	name="a_cinderblock_17"/>
+			<object 	name="a_cinderblock_18"/>
+			<object 	name="a_cinderblock_19"/>
+			<object 	name="a_cinderblock_20"/>
+			<object 	name="a_cinderblock_21"/>
+			<object 	name="a_cinderblock_22"/>
+			<object 	name="a_cinderblock_23"/>
+			<object 	name="a_cinderblock_24"/>
+			<object 	name="a_cinderblock_25"/>
+			<object 	name="a_cinderblock_26"/>
+			<object 	name="a_cinderblock_27"/>
+			<object 	name="a_cinderblock_28"/>
+			<object 	name="a_cinderblock_29"/>
+			<object 	name="a_cinderblock_30"/>
+			<object 	name="a_cinderblock_31"/>
+			<object 	name="a_cinderblock_32"/>
+			<object 	name="a_cinderblock_33"/>
+			<object 	name="a_cinderblock_34"/>
+			<object 	name="a_cinderblock_35"/>
+			<object 	name="a_cinderblock_36"/>
+			<object 	name="a_cinderblock_37"/>
+			<object 	name="a_cinderblock_38"/>
+			<object 	name="a_cinderblock_39"/>
+			<object 	name="a_cinderblock_40"/>
+			<object 	name="a_cinderblock_41"/>
+			<object 	name="a_cinderblock_42"/>
+			<object 	name="a_cinderblock_43"/>
+			<object 	name="a_cinderblock_44"/>
+			<object 	name="a_cinderblock_45"/>
+			<object 	name="a_cinderblock_46"/>
+			<object 	name="a_cinderblock_47"/>
+			<object 	name="a_cinderblock_48"/>
+			<object 	name="a_cinderblock_49"/>
+			<object 	name="a_cinderblock_50"/>
+			<object 	name="a_cinderblock_51"/>
+			<object 	name="a_cinderblock_52"/>
+			<object 	name="a_cinderblock_53"/>
+			<object 	name="a_cinderblock_54"/>
+			<object 	name="a_cinderblock_55"/>
+			<object 	name="a_cinderblock_56"/>
+			<object 	name="a_cinderblock_57"/>
+			<object 	name="a_cinderblock_58"/>
+			<object 	name="a_cinderblock_59"/>
+			<object 	name="a_cinderblock_60"/>
+			<object 	name="a_cinderblock_61"/>
+			<object 	name="a_cinderblock_62"/>
+			<object 	name="a_cinderblock_63"/>
+			<object 	name="a_cinderblock_64"/>
+			<object 	name="a_cinderblock_65"/>
+			<object 	name="a_cinderblock_66"/>
+			<object 	name="a_cinderblock_67"/>
+			<object 	name="a_cinderblock_68"/>
+			<object 	name="a_cinderblock_69"/>
+			<object 	name="a_cinderblock_70"/>
+			<object 	name="a_cinderblock_71"/>
+			<object 	name="a_cinderblock_72"/>
+			<object 	name="a_cinderblock_73"/>
+			<object 	name="a_cinderblock_74"/>
+			<object 	name="a_cinderblock_75"/>
+			<object 	name="a_cinderblock_76"/>
+			<object 	name="a_cinderblock_77"/>
+			<object 	name="a_cinderblock_78"/>
+			<object 	name="a_door_1"/>
+			<object 	name="a_door_2"/>
+			<object 	name="e_smoke"/>
+		</animation_group>
+	</animations>
+
+    <bodies>
+        <body template="static" name="static_body_destroyed" enabled="false">
+			<object name="rp_gov_c_int_wall_explosion" />
+			<object name="g_destroyed" 		collision_type="mesh_mopp" />
+			<object name="g_destroyed_vtxc" 	collision_type="mesh_mopp" />
+        </body>
+        <body template="static" name="static_body_whole" enabled="true">
+			<object name="g_whole" 			collision_type="mesh_mopp" />
+        </body>
+
+		<body enabled="true" template="animated" name="wrecked_bus" >
+            <object collision_type="mesh_mopp" name="c_bus" />
+        </body>
+        <body name="body_ramp" enabled="true" template="nav_walk" keyframed="true">
+        	<object collision_type="convex" name="c_convex_ramp" />
+        </body>
+        <body name="body_blocker" enabled="true" template="mover_blocker">
+        	<object name="a_anim_secondary" />
+        	<object name="c_bus" collision_type="box" padding="-2.5"/>
+        </body>
+    </bodies>
+	
+	<decal_surfaces>
+		<decal_mesh name="g_destroyed" 		enabled="true" material="concrete"/>
+		<decal_mesh name="g_destroyed_vtxc" enabled="true" material="plaster"/>
+		<decal_mesh name="g_whole" 			enabled="true" material="plaster"/>
+		<decal_mesh enabled="true" name="dm_bus" material="sheet_metal" />
+	</decal_surfaces>
+	
+    <graphics>
+		<object name="g_destroyed" 			enabled="false" />
+		<object name="g_destroyed_vtxc" 	enabled="false" />
+		<object name="g_whole" 				enabled="true"  />
+			
+		
+		<graphic_group name="destroy" enabled="false">
+			<object enabled="true" name="g_bus" />
+			<object enabled="true" name="g_door_1" />
+			<object enabled="true" name="g_door_2" />
+        	<object enabled="true" name="g_glass_shattered" />
+        	<object enabled="true" shadow_caster="true" name="s_bus" />
+		</graphic_group>
+		<graphic_group name="grp_debris" enabled="false" culling_object="co_cull_debris">
+			<object 	name="g_debris" enabled="true"/>
+        </graphic_group>
+    </graphics>
+
+</dynamic_object>

@@ -1,0 +1,18 @@
+<materials version="3" group="main_water_valve_suburbia">
+    <material name="contour" render_template="generic:CONTOUR:DIFFUSE_TEXTURE" version="2" unique="true">
+        <diffuse_texture file="units/equipment/garden_tap_interactive/main_water_valve_df"/>
+        <variable value="1.0 0.5 0.0" type="vector3" name="contour_color"/>
+        <variable value="1" type="scalar" name="contour_opacity"/>
+    </material>
+    <material version="2" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:VERTEX_COLOR" name="contour_vertexcolor">
+        <diffuse_texture file="units/equipment/garden_tap_interactive/main_water_valve_df"/>
+        <variable value="1.0 0.5 0.0" type="vector3" name="contour_color"/>
+        <variable value="1" type="scalar" name="contour_opacity"/>
+    </material>
+    <material version="2" render_template="generic:DIFFUSE_TEXTURE" name="base">
+        <diffuse_texture file="units/equipment/garden_tap_interactive/main_water_valve_df"/>
+    </material>
+    <material version="2" render_template="generic:DIFFUSE_TEXTURE:VERTEX_COLOR" name="base_vertexcolor">
+        <diffuse_texture file="units/equipment/garden_tap_interactive/main_water_valve_df"/>
+    </material>
+</materials>

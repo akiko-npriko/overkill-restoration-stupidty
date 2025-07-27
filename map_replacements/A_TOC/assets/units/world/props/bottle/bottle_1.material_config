@@ -1,0 +1,7 @@
+<materials version="3">
+    <material name="bottle_1" decal_material="glass_breakable" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:INSTANCED" version="2">
+        <diffuse_texture file="units/world/props/bottle/bottle_1_df"/>
+        <reflection_texture type="cubemap" global_texture="current_global_texture"/>
+        <variable value="3.2999999523163 0.27400001883507 0.69999998807907" type="vector3" name="environment_settings"/>
+    </material>
+</materials>

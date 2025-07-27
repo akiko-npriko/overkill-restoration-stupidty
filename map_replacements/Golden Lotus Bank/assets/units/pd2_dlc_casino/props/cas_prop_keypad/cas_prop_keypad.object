@@ -1,0 +1,13 @@
+<dynamic_object>
+    <diesel orientation_object="rp_cas_prop_keypad" materials="units/pd2_dlc_casino/props/cas_prop_keypad/cas_prop_keypad" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body">
+            <object name="rp_cas_prop_keypad" />
+            <object name="c_box_01" collision_type="box" />
+        </body>
+    </bodies>
+    <decal_surfaces />
+    <graphics>
+        <object name="g_keypad" enabled="true" />
+    </graphics>
+</dynamic_object>

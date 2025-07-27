@@ -1,0 +1,14 @@
+<unit type="rvd" slot="1">
+	<object file="units/pd2_dlc_rvd/architecture/rvd_ext/rvd_ext_backdrop_building/rvd_ext_building_backdrop_tomford_16x12" />
+	<network sync="spawn"/>
+
+	<dependencies>
+		<depends_on effect="effects/payday2/particles/window/mallcrasher_window_large"/>
+	</dependencies>
+
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage"/>
+		<extension name="attention" class="AIAttentionObject" />
+	</extensions>
+</unit>

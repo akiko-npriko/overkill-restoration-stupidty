@@ -1,0 +1,17 @@
+<dynamic_object>
+    <diesel orientation_object="rp_com_prop_club_heater" materials="units/payday2/props/com_prop_club_heater/com_prop_club_heater" />
+	<bodies>
+        <body enabled="true" template="static" name="body0" >
+			<object name="rp_com_prop_club_heater" />
+            <object collision_type="capsule" name="c_capsule_01" padding="-2.5"/>
+            <object collision_type="convex" name="c_convex_01" padding="-2.5"/>
+            <object collision_type="convex" name="c_convex_02" padding="-2.5"/>
+        </body>
+    </bodies>
+    <decal_surfaces>
+        <decal_mesh enabled="true" name="dm_sheet_metal" material="sheet_metal" />
+    </decal_surfaces>
+    <graphics>
+        <object enabled="true" name="g_g" />
+    </graphics>
+</dynamic_object>

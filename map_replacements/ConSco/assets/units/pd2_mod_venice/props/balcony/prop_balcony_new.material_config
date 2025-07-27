@@ -1,0 +1,8 @@
+<materials version="3">
+    <material render_template="shadow_caster_only" version="2" name="shadow_caster"/>
+    <material name="mtl_mortar_brick" render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/payday2/architecture/lux/lux_int_01_wallpapertile_d_df" />
+        <material_texture		file="units/pd2_dlc_friend/architecture/ext/textures/sfm_ext_white_mortar_gsma"/>
+		<bump_normal_texture file="units/payday2/architecture/lux/lux_int_01_wallpapertile_d_nm" />
+    </material>
+</materials>

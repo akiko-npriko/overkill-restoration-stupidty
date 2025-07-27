@@ -1,0 +1,24 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_dah/props/dah_prop_sofa_c/dah_prop_sofa_c" orientation_object="rp_dah_prop_sofa_a_single" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_dah_prop_sofa_a_single" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+			<object name="c_box_03" collision_type="box" padding="-2.5" />
+			<object name="c_box_04" collision_type="box" padding="-2.5" />
+			<object name="c_box_05" collision_type="box" padding="-2.5" />
+			<object name="c_box_06" collision_type="box" padding="-2.5" />
+			<object name="c_box_07" collision_type="box" padding="-2.5" />
+			<object name="c_box_08" collision_type="box" padding="-2.5" />
+			<object name="c_box_09" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="cloth_stuffed">
+		<decal_mesh name="dm_cloth_stuffed" enabled="true" material="cloth_stuffed" />
+	</decal_surfaces>
+	<graphics>
+		<object name="g_g" enabled="true" />
+		<object name="s__s" enabled="true" shadow_caster="true" />
+	</graphics>
+</dynamic_object>

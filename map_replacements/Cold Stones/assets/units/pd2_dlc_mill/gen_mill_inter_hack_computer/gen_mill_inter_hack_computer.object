@@ -1,0 +1,25 @@
+<dynamic_object>
+    <diesel orientation_object="rp_gen_mill_inter_hack_computer" materials="units/pd2_dlc_mill/gen_mill_inter_hack_computer/gen_mill_inter_hack_computer" />
+	<sequence_manager file="units/pd2_dlc_mill/gen_mill_inter_hack_computer/gen_mill_inter_hack_computer" />
+    <bodies>
+        <body enabled="true" template="static" name="body0" >
+            <object name="rp_gen_mill_inter_hack_computer" />
+            <object collision_type="box" name="c_bottom_box" />
+            <object collision_type="box" name="c_screen_box" />
+        </body>
+    </bodies>
+    <graphics>
+		<object name="g_off" enabled="true"/>
+		<object name="g_computerscreen" enabled="true"/>
+		<object name="g_finish" enabled="false"/>
+		<object name="g_upload" enabled="false"/>
+		<object name="g_on" enabled="false"/>
+        <object name="g_symbol_x" enabled="false" />
+        <object name="g_symbol_o" enabled="false" />
+        <object name="g_symbol_square" enabled="false" />
+        <object name="g_symbol_triangle" enabled="false" />
+        <graphic_group name="grp_keyboard" enabled="true">
+        	<object name="g_keyboard" enabled="true" />
+        </graphic_group>
+    </graphics>
+</dynamic_object>

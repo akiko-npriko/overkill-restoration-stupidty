@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<dynamic_object>
+  <diesel materials="units/dev_tools/deleted_unit/deleted_unit" orientation_object="rp_deleted_unit" />
+  <bodies>
+    <body name="static_body" enabled="true" template="editor">
+      <object name="c_deleted_unit" collision_type="box" />
+    </body>
+  </bodies>
+  <graphics>
+    <object name="g_deleted_unit" enabled="true" shadow_caster="false"/>
+  </graphics>
+  <sound_event source="rp_deleted_unit" name="deleted_unit"/>
+</dynamic_object>

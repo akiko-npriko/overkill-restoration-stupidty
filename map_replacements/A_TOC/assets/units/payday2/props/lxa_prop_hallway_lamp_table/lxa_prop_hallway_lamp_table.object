@@ -1,0 +1,24 @@
+<dynamic_object>
+    <diesel orientation_object="rp_lxa_prop_hallway_lamp_table" materials="units/payday2/props/lxa_prop_hallway_lamp_table/lxa_prop_hallway_lamp_table" />
+	<sequence_manager file="units/payday2/props/lxa_prop_hallway_lamp_table/lxa_prop_hallway_lamp_table" />
+    <bodies>
+        <body enabled="true" template="static" name="static_body" >
+			<object name="rp_lxa_prop_hallway_lamp_table" />
+            <object collision_type="capsule" name="c_capsule_01" padding="-2.5" mass="2"/>
+            <object collision_type="convex" name="c_convex_01" padding="-2.5" mass="2"/>
+        </body>
+		<body name="dynamic_body" enabled="false" template="small_prop">
+			<object name="rp_lxa_prop_hallway_lamp_table" />
+            <object collision_type="capsule" name="c_capsule_01" padding="-2.5" mass="2"/>
+            <object collision_type="convex" name="c_convex_01" padding="-2.5" mass="2"/>
+		</body>
+	</bodies>
+    <decal_surfaces>
+        <decal_mesh enabled="true" name="dm_cloth" material="cloth" />
+        <decal_mesh enabled="true" name="dm_sheet_metal" material="sheet_metal" />
+    </decal_surfaces>
+    <graphics>
+        <object enabled="true" name="g_g" />
+		<object enabled="false" name="g_dmg" />
+    </graphics>
+</dynamic_object>

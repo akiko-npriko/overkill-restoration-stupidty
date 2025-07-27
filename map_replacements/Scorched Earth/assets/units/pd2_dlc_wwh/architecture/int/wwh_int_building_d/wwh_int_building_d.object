@@ -1,0 +1,29 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_wwh/architecture/int/wwh_int_building_d/wwh_int_building_d" orientation_object="rp_wwh_int_building_d" />
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_wwh_int_building_d" />
+			<object name="c_bbx_01" collision_type="box" padding="-2.5"/>
+			<object name="c_bbx_02" collision_type="box" padding="-2.5"/>
+			<object name="c_bbx_03" collision_type="box" padding="-2.5"/>
+			<object name="c_bbx_04" collision_type="box" padding="-2.5"/>
+			<object name="c_bbx_05" collision_type="box" padding="-2.5"/>
+			<object name="c_bbx_06" collision_type="box" padding="-2.5"/>
+			<object name="c_bbx_07" collision_type="box" padding="-2.5"/>
+			<object name="c_bbx_08" collision_type="box" padding="-2.5"/>
+			<object name="c_bbx_09" collision_type="box" padding="-2.5"/>
+			<object name="c_bbx_10" collision_type="box" padding="-2.5"/>
+			<object name="c_box_11" collision_type="box" padding="-2.5"/>
+			<object name="c_box_12" collision_type="box" padding="-2.5"/>
+		</body>
+	</bodies>
+	<decal_surfaces default_material="sheet_metal">
+		<decal_mesh name="dm_sheet_metal" enabled="true" material="sheet_metal" />
+		<decal_mesh name="dm_wood" enabled="true" material="wood" />		
+	</decal_surfaces>
+	<graphics>
+		<object name="g_floor1" enabled="true" />
+		<object name="g_walls" enabled="true" />
+		<object name="g_wood_support_frames" enabled="true" />
+	</graphics>
+</dynamic_object>

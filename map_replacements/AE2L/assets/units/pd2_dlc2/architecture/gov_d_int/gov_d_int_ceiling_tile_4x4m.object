@@ -1,0 +1,19 @@
+<dynamic_object>
+    <diesel orientation_object="rp_gov_d_int_ceiling_tile_4x4m" materials="units/pd2_dlc2/architecture/gov_d_int/gov_d_int_ceiling_tile_instanced" />
+   
+   <bodies>
+        <body enabled="true" template="static" name="static_body" >
+            <object name="rp_gov_d_int_ceiling_tile_4x4m" />
+            <object collision_type="box" name="c_box_00" />
+        </body>
+    </bodies>
+	
+    <decal_surfaces default_material="plaster" static="true">
+        <decal_mesh enabled="true" name="dm_plaster" material="plaster" />
+    </decal_surfaces>
+	
+    <graphics>
+        <object enabled="true" name="g_g"  instance_struct="world_tm"/>
+    </graphics>
+	
+</dynamic_object>

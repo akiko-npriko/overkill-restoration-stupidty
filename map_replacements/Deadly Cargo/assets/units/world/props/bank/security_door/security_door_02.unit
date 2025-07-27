@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<unit type="fwb" slot="1">
+  <object file="units/world/props/bank/security_door/security_door_02" />
+  <network sync="spawn"/>
+  <dependencies>
+  </dependencies>
+  <extensions>
+    <extension name="unit_data" class="ScriptUnitData" />
+    <extension name="damage" class="UnitDamage" />
+  </extensions>
+  <sounds>
+  	<default_soundsource source="rp_security_door_02"/>
+  	<soundsource name="snd" source="g_security_door" />
+  </sounds>
+</unit>

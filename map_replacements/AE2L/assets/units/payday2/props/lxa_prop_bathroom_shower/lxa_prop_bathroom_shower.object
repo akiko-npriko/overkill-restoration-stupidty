@@ -1,0 +1,49 @@
+<dynamic_object>
+    <diesel orientation_object="rp_shower" materials="units/payday2/props/lxa_prop_bathroom_shower/lxa_prop_bathroom_shower" />
+	<sequence_manager file="units/payday2/props/lxa_prop_bathroom_shower/lxa_prop_bathroom_shower" />	
+	
+    <bodies>
+        <body enabled="true" template="static" name="body0" >
+            <object name="rp_shower" />
+            <object collision_type="mesh_mopp" name="c_mesh"  padding="-2.5"/>
+        </body>
+		
+        <body enabled="true" template="static" name="glass_01" >
+            <object name="rp_shower" />
+            <object collision_type="box" name="c_box_glass_01"  padding="-2.5"/>
+        </body>
+		
+        <body enabled="true" template="static" name="glass_02" >
+            <object name="rp_shower" />
+            <object collision_type="box" name="c_box_glass_02"  padding="-2.5"/>
+        </body>
+		
+        <body enabled="true" template="static" name="glass_03" >
+            <object name="rp_shower" />
+            <object collision_type="box" name="c_box_glass_03"  padding="-2.5"/>
+        </body>
+		
+    </bodies>
+    <decal_surfaces>
+        <decal_mesh enabled="true" name="dm_wood_01" material="wood" /> 
+        <decal_mesh enabled="true" name="dm_wood_02" material="wood" /> 
+        <decal_mesh enabled="true" name="dm_wood_03" material="wood" /> 
+        <decal_mesh enabled="true" name="dm_wood_04" material="wood" /> 
+        <decal_mesh enabled="true" name="dm_wood_05" material="wood" /> 
+        <decal_mesh enabled="true" name="dm_wood_06" material="wood" /> 
+        <decal_mesh enabled="true" name="dm_wood_07" material="wood" /> 
+        
+        <decal_mesh enabled="true" name="dm_plastic_01" material="plastic" /> 
+        <decal_mesh enabled="true" name="dm_plastic_02" material="plastic" /> 
+    </decal_surfaces>
+    <graphics>
+        <object enabled="true" name="g_glass_01" />
+        <object enabled="true" name="g_glass_02" />
+        <object enabled="true" name="g_glass_03" />
+        <object enabled="false" name="g_glass_broken_01" />
+        <object enabled="false" name="g_glass_broken_02" />
+        <object enabled="false" name="g_glass_broken_03" />
+        <object enabled="true" name="g_mesh" />
+    </graphics>
+</dynamic_object>
+

@@ -1,0 +1,15 @@
+<unit type="gen" slot="1" >
+    <object file="units/pd2_dlc2/props/gen_prop_security_console/gen_prop_security_monitor_hanging_02" />
+    <network sync="spawn"/>
+	<dependencies>
+		<depends_on bnk="soundbanks/regular_sfx" />
+	</dependencies>
+    <extensions>
+        <extension class="ScriptUnitData" name="unit_data" />
+        <extension class="UnitDamage" name="damage" />
+    </extensions>
+<sounds>
+	<default_soundsource source="rp_gen_prop_security_monitor_hanging_01"/>
+	<soundsource name="snd_01" source="snd_source" />
+</sounds>
+</unit>
