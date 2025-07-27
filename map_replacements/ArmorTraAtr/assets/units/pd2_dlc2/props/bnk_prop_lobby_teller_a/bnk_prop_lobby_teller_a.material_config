@@ -1,7 +1,0 @@
-<materials version="3">
-    <material name="mat_teller" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE" version="2">
-        <diffuse_texture file="units/pd2_dlc2/props/bnk_prop_lobby_teller_a/bnk_prop_lobby_teller_a_df"/>
-		<reflection_texture type="cubemap" file="environments/cubemaps/cubemap_int_bigbank"/>
-    </material>
-    <material version="2" render_template="shadow_caster_only" name="shadow_caster"/>
-</materials>

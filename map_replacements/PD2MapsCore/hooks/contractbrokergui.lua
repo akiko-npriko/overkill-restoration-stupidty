@@ -1,5 +1,4 @@
 --PAYDAY 2 Creatos hook. https://discordapp.com/invite/GKRZAhF for more tutorials and hooks
---[[
 Hooks:PostHook(ContractBrokerGui, '_create_job_data', 'new_heist_hook', function(self, ...)
 	for index, job_data in ipairs(self._job_data) do
 		local job_tweak = tweak_data.narrative:job_data(job_data.job_id)
@@ -10,4 +9,3 @@ Hooks:PostHook(ContractBrokerGui, '_create_job_data', 'new_heist_hook', function
 		end
 	end
 end)
-]]
