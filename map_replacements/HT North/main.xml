@@ -41,9 +41,7 @@
 		<achievement desc_id="htnb_achiev_desc_stealthnoshutter" icon="guis/achiev/htnb_stealthnoshutter" id="htnb_achiev_stealthnoshutter" name_id="htnb_achiev_stealthnoshutter" rank="3" reward_amount="10" reward_type="cc"/>
 	</Achievements>
 	<AssetUpdates id="q009htnb" provider="payday2concepts" use_local_dir="true" version="13"/>
-	<Dependencies>
-		<Dependency id="pd2mcore" min_ver="0.8" name="PD2MapsCore" provider="payday2concepts" type="mod_overrides"/>
-	</Dependencies>
+	
 	<Hooks directory="hooks"/>
 	<Localization default="english.txt" directory="loc"/>
 	<level ai_group_type="America" briefing_dialog="Play_pln_branchbank_random_stage1_brief" ghost_bonus="0.1" id="hntn" load_screen="guis/htnb_loadingScreen" max_bags="54">
@@ -73,7 +71,7 @@
 			</mod>
 		</script_data_mods>
 	</level>
-	<narrative briefing_event="pln_branchbank_cash_brf_speak" contact="pd2maps" icon="icons/htnb_icon" id="Harvest and Trustee North" jc="30">
+	<narrative briefing_event="pln_branchbank_cash_brf_speak" contact="bain" icon="icons/htnb_icon" id="Harvest and Trustee North" jc="30">
 		<chain>
 			<table level_id="hntn" type="d" type_id="heist_type_assault"/>
 		</chain>
