@@ -23337,11 +23337,6 @@ function GroupAITweakData:_init_task_data(difficulty_index, difficulty)
 	else
 		self.special_unit_spawn_limits.sniper = 10
 	end
-	self.besiege.assault.groups.tac_sniper = {
-		0.1,
-		0.11,
-		0.125
-	}
 	
 	--Assault groups
 	if difficulty_index <= 2 then
@@ -23750,7 +23745,13 @@ function GroupAITweakData:_init_task_data(difficulty_index, difficulty)
 			}
 		}
 	end
-			
+	--Akiko assault besiege stuff
+	self.besiege.assault.groups.tac_sniper = {
+		0.1,
+		0.11,
+		0.125
+	}
+	--restore assassult besiege continue below	
 	self.besiege.assault.groups.single_spooc = {
 		0,
 		0,
