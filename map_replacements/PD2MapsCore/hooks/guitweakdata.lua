@@ -4,12 +4,12 @@ Hooks:PostHook( GuiTweakData, "init", "pd2maps_contact", function(self)
 		name_id = "heist_contact_pd2maps",
 		{
 			desc_id = "heist_contact_pd2maps_desc",
-			video = "cn_veritasgroup1",
+			video = "bain",
 			post_event = nil
 		},
 		{
-			desc_id = "heist_contact_pd2maps_desc",
-			video = "cn_veritasgroup1",
+			desc_id = "heist_contact_pd2maps_crew_desc",
+			video = "bain",
 			post_event = nil
 		}
 	}
