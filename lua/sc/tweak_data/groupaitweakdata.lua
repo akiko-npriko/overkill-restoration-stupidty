@@ -15490,7 +15490,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	local unit_types_debugGenSecM4 = self.unit_categories.GS_swat_M4.unit_types
 	local unit_types_debugFBIM4 = self.unit_categories.FBI_swat_M4.unit_types
 	local funnytestunitss = Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
-	local debugvalueeeeereplaceaa = true
+	local debugvalueeeeereplaceaa = false
 	local mericaaaafucyeaaa = true
 	local murkywaterssssa = true
 	if debugvalueeeeereplaceaa then
