@@ -366,8 +366,6 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/27711
  - Predator Stun Gun Taser REBORN(Again)
 	- https://modworkshop.net/mod/20029
- - (April Fools 2023) Poke of Death
-	- https://modworkshop.net/mod/41775
  - The House Robbery
 	- https://modworkshop.net/mod/45238
  - The Skyscraper Heist
@@ -402,8 +400,6 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/34616
  - Out Of Frame Fix
 	- https://modworkshop.net/mod/30747
- - Proving Grounds
-	- https://modworkshop.net/mod/29905
  - Blackridge Facility
 	- https://modworkshop.net/mod/22392
  - FBI Office Holdout
