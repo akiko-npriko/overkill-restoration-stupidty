@@ -49332,29 +49332,79 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 			ammo_pickup_min_mul = 0,
 			ammo_pickup_max_mul = 0,
 			trail_effect = "effects/particles/weapons/sniper_trail_sc",
-			alt_desc = "bm_heavy_ap_weapon_sc_desc",
-			table.insert(self.wpn_fps_rpg7.uses_parts, "wpn_fps_upg_a_grenade_launcher_iuhApRpgRound")
+			alt_desc = "bm_heavy_ap_weapon_sc_desc"
+			--"effects/payday2/particles/weapons/50cal_auto_fps"
 		}
-		
-		--Moved Liberator Changes here cause game just randomly crashed (L ME)
-		if self.wpn_fps_ass_liberator then
-			table.insert(self.wpn_fps_ass_liberator.uses_parts, "wpn_fps_upg_o_northtac_alt")
-			if self.parts.wpn_fps_upg_o_northtac then
-				self.parts.wpn_fps_upg_o_northtac.stance_mod.wpn_fps_ass_liberator = deep_clone(self.parts.wpn_fps_upg_o_northtac.stance_mod.wpn_fps_snp_tti)
-				self.parts.wpn_fps_upg_o_northtac.stance_mod.wpn_fps_ass_liberator.translation = self.parts.wpn_fps_upg_o_northtac.stance_mod.wpn_fps_ass_liberator.translation + Vector3(-0.1, 0, -0.5)
-			end
-			if self.parts.wpn_fps_upg_o_northtac_reddot then
-				self.parts.wpn_fps_upg_o_northtac_reddot.stance_mod.wpn_fps_ass_liberator = deep_clone(self.parts.wpn_fps_upg_o_northtac_reddot.stance_mod.wpn_fps_snp_tti)
-				self.parts.wpn_fps_upg_o_northtac_reddot.stance_mod.wpn_fps_ass_liberator.translation = self.parts.wpn_fps_upg_o_northtac_reddot.stance_mod.wpn_fps_ass_liberator.translation + Vector3(-0.1, 0, -0.5)
-			end
-			if self.parts.wpn_fps_upg_o_northtac_alt then 
-				self.parts.wpn_fps_upg_o_northtac_alt.stance_mod.wpn_fps_ass_liberator = deep_clone(self.parts.wpn_fps_upg_o_northtac_alt.stance_mod.wpn_fps_snp_tti)
-				self.parts.wpn_fps_upg_o_northtac_alt.stance_mod.wpn_fps_ass_liberator.translation = self.parts.wpn_fps_upg_o_northtac_alt.stance_mod.wpn_fps_ass_liberator.translation + Vector3(0, 0, 0.25)
-			end
-		end
-		
+		table.insert(self.wpn_fps_rpg7.uses_parts, "wpn_fps_upg_a_grenade_launcher_iuhApRpgRound")
 	end
 	
+	--Moved Liberator Changes here cause game just randomly crashed (L ME)
+	if self.wpn_fps_ass_liberator then
+		table.insert(self.wpn_fps_ass_liberator.uses_parts, "wpn_fps_upg_o_northtac_alt")
+		if self.parts.wpn_fps_upg_o_northtac then
+			self.parts.wpn_fps_upg_o_northtac.stance_mod.wpn_fps_ass_liberator = deep_clone(self.parts.wpn_fps_upg_o_northtac.stance_mod.wpn_fps_snp_tti)
+			self.parts.wpn_fps_upg_o_northtac.stance_mod.wpn_fps_ass_liberator.translation = self.parts.wpn_fps_upg_o_northtac.stance_mod.wpn_fps_ass_liberator.translation + Vector3(-0.1, 0, -0.5)
+		end
+		if self.parts.wpn_fps_upg_o_northtac_reddot then
+			self.parts.wpn_fps_upg_o_northtac_reddot.stance_mod.wpn_fps_ass_liberator = deep_clone(self.parts.wpn_fps_upg_o_northtac_reddot.stance_mod.wpn_fps_snp_tti)
+			self.parts.wpn_fps_upg_o_northtac_reddot.stance_mod.wpn_fps_ass_liberator.translation = self.parts.wpn_fps_upg_o_northtac_reddot.stance_mod.wpn_fps_ass_liberator.translation + Vector3(-0.1, 0, -0.5)
+		end
+		if self.parts.wpn_fps_upg_o_northtac_alt then 
+			self.parts.wpn_fps_upg_o_northtac_alt.stance_mod.wpn_fps_ass_liberator = deep_clone(self.parts.wpn_fps_upg_o_northtac_alt.stance_mod.wpn_fps_snp_tti)
+			self.parts.wpn_fps_upg_o_northtac_alt.stance_mod.wpn_fps_ass_liberator.translation = self.parts.wpn_fps_upg_o_northtac_alt.stance_mod.wpn_fps_ass_liberator.translation + Vector3(0, 0, 0.25)
+		end
+	end
+	--[[
+	if self.parts.wpn_fps_upg_a_infin_wall_pen then
+		self.parts.wpn_fps_upg_a_infin_wall_pen.supported = true
+		self.parts.wpn_fps_upg_a_infin_wall_pen.has_description = true
+		self.parts.wpn_fps_upg_a_infin_wall_pen.keep_damage = true
+		self.parts.wpn_fps_upg_a_infin_wall_pen.desc_id = "bm_heavy_ap_weapon_sc_desc"
+		self.parts.wpn_fps_upg_a_infin_wall_pen.no_cull = true
+		self.parts.wpn_fps_upg_a_infin_wall_pen.stats = {value = 10, spread = -3, recoil = -3, damage = -100}
+		self.parts.wpn_fps_upg_a_infin_wall_pen.custom_stats = {
+			armor_piercing_override = 1,
+			can_shoot_through_enemy = true,
+			can_shoot_through_enemy_unlim = true,
+			can_shoot_through_wall_unlim = true,
+			--alt_dmg_mult = 10,
+			can_shoot_through_wall = true,
+			can_shoot_through_shield = true,
+			can_shoot_through_titan_shield = true,
+			--ignore_rof_mult_anims = true,
+			--hs_mult = 2,
+			--alt_ammo_pickup_min_mul = 0,
+			--alt_ammo_pickup_max_mul = 0,
+			--ammo_pickup_min_mul = 0,
+			--ammo_pickup_max_mul = 0,
+			trail_effect = "effects/particles/weapons/sniper_trail_sc",
+			--alt_desc = "bm_heavy_ap_weapon_sc_desc",
+			--"effects/payday2/particles/weapons/50cal_auto_fps"
+		}
+		
+		local function definepurehatred(factory_id)
+			for id, data in pairs(tweak_data.upgrades.definitions) do
+				if data.category == "weapon" and data.factory_id == factory_id then
+					return data.weapon_id
+				end
+			end
+		end
+		for _, factory_id in ipairs(self) do
+			if self[factory_id] and self[factory_id].uses_parts then
+			local weapon_id = definepurehatred(factory_id)
+				if tweak_data.weapon[weapon_id] then
+					local twa = tweak_data.weapon[ weapon_id ]
+					if twa.categories then
+						if table.contains( twa.categories , "snp")
+							table.insert(self[factory_id].uses_parts, "wpn_fps_upg_a_infin_wall_pen")
+							table.insert(self[factory_id .. "_npc"].uses_parts, "wpn_fps_upg_a_infin_wall_pen")
+						end
+					end
+				end
+			end
+		end
+	end
+	]]
 	--[[
 	if self.parts.wpn_fps_fla_system_body_iuhIceThrowerConversion then
 		self.parts.wpn_fps_fla_system_body_iuhIceThrowerConversion.supported = true
