@@ -15351,6 +15351,154 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		ignore_spawn_cap = true
 	}
 	
+	--Snipers up my ass
+	--Normal and Hard
+	if difficulty_index <= 3 then
+		self.unit_categories.FBI_groundsniper = {
+			special_type = "sniper",
+			unit_types = {
+				america = {
+					Idstring("units/payday2/characters/ene_sniper_1/ene_sniper_1")
+				},
+				russia = {
+					Idstring("units/pd2_dlc_mad/characters/ene_akan_cs_swat_sniper_svd_snp/ene_akan_cs_swat_sniper_svd_snp")
+				},
+				zombie = {
+					Idstring("units/payday2/characters/ene_sniper_1/ene_sniper_1")
+				},
+				murkywater = {
+					Idstring("units/pd2_dlc_bph/characters/ene_murkywater_sniper/ene_murkywater_sniper")
+				},
+				federales = {
+					Idstring("units/pd2_dlc_bex/characters/ene_swat_policia_sniper/ene_swat_policia_sniper")
+				}
+			},
+			access = access_type_all
+		}
+	end
+	--Very Hard and Overkill
+	if difficulty_index > 3 and difficulty_index < 6 then
+		self.unit_categories.FBI_groundsniper = {
+			special_type = "sniper",
+			unit_types = {
+				america = {
+					Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2")
+				},
+				russia = {
+					Idstring("units/pd2_dlc_mad/characters/ene_akan_cs_swat_sniper_svd_snp/ene_akan_cs_swat_sniper_svd_snp")
+				},
+				zombie = {
+					Idstring("units/pd2_dlc_hvh/characters/ene_sniper_hvh_2/ene_sniper_hvh_2")
+				},
+				murkywater = {
+					Idstring("units/pd2_dlc_bph/characters/ene_murkywater_sniper/ene_murkywater_sniper")
+				},
+				federales = {
+					Idstring("units/pd2_dlc_bex/characters/ene_swat_policia_sniper/ene_swat_policia_sniper")
+				}
+			},
+			access = access_type_all
+		}
+	end
+	--Mayhem and Deathwish
+	if StreamHeist and difficulty_index > 5 and difficulty_index < 8 then
+		self.unit_categories.FBI_groundsniper = {
+			special_type = "sniper",
+			unit_types = {
+				america = {
+					Idstring("units/payday2/characters/ene_sniper_3/ene_sniper_3")
+				},
+				russia = {
+					Idstring("units/pd2_dlc_mad/characters/ene_akan_cs_swat_sniper_svd_snp/ene_akan_cs_swat_sniper_svd_snp")
+				},
+				zombie = {
+					Idstring("units/payday2/characters/ene_sniper_3/ene_sniper_3")
+				},
+				murkywater = {
+					Idstring("units/pd2_dlc_bph/characters/ene_murkywater_sniper/ene_murkywater_sniper")
+				},
+				federales = {
+					Idstring("units/pd2_dlc_bex/characters/ene_swat_policia_sniper/ene_swat_policia_sniper")
+				}
+			},
+			access = access_type_all
+		}
+	elseif difficulty_index > 5 and difficulty_index < 8 then
+		self.unit_categories.FBI_groundsniper = {
+			special_type = "sniper",
+			unit_types = {
+				america = {
+					Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2")
+				},
+				russia = {
+					Idstring("units/pd2_dlc_mad/characters/ene_akan_cs_swat_sniper_svd_snp/ene_akan_cs_swat_sniper_svd_snp")
+				},
+				zombie = {
+					Idstring("units/pd2_dlc_hvh/characters/ene_sniper_hvh_2/ene_sniper_hvh_2")
+				},
+				murkywater = {
+					Idstring("units/pd2_dlc_bph/characters/ene_murkywater_sniper/ene_murkywater_sniper")
+				},
+				federales = {
+					Idstring("units/pd2_dlc_bex/characters/ene_swat_policia_sniper/ene_swat_policia_sniper")
+				}
+			},
+			access = access_type_all
+		}
+	end
+	--Death Sentence
+	if StreamHeist and difficulty_index == 8 then
+		self.unit_categories.FBI_groundsniper = {
+			special_type = "sniper",
+			unit_types = {
+				america = {
+					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_sniper/ene_zeal_sniper")
+				},
+				russia = {
+					Idstring("units/pd2_dlc_mad/characters/ene_akan_cs_swat_sniper_svd_snp/ene_akan_cs_swat_sniper_svd_snp")
+				},
+				zombie = {
+					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_sniper/ene_zeal_sniper")
+				},
+				murkywater = {
+					Idstring("units/pd2_dlc_bph/characters/ene_murkywater_sniper/ene_murkywater_sniper")
+				},
+				federales = {
+					Idstring("units/pd2_dlc_bex/characters/ene_swat_policia_sniper/ene_swat_policia_sniper")
+				}
+			},
+			access = access_type_all
+		}
+	elseif difficulty_index == 8 then
+		self.unit_categories.FBI_groundsniper = {
+			special_type = "sniper",
+			unit_types = {
+				america = {
+					Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2")
+				},
+				russia = {
+					Idstring("units/pd2_dlc_mad/characters/ene_akan_cs_swat_sniper_svd_snp/ene_akan_cs_swat_sniper_svd_snp")
+				},
+				zombie = {
+					Idstring("units/pd2_dlc_hvh/characters/ene_sniper_hvh_2/ene_sniper_hvh_2")
+				},
+				murkywater = {
+					Idstring("units/pd2_dlc_bph/characters/ene_murkywater_sniper/ene_murkywater_sniper")
+				},
+				federales = {
+					Idstring("units/pd2_dlc_bex/characters/ene_swat_policia_sniper/ene_swat_policia_sniper")
+				}
+			},
+			access = access_type_all
+		}
+	end
+	--For some fucking reason, the files for the Murkywater Sniper don't load when you play on White House
+	--so he gets replaced by the FBI Sniper
+	if Global and Global.level_data and Global.level_data.level_id == "vit" then
+		self.unit_categories.FBI_groundsniper.unit_types.murkywater = {
+			Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2")
+		}
+	end
 --AKIKKO EDITS (ADDON LMAOO)
 	
 	--DEBUG FUN CRAP (Forces all Swat to be the test unit)
@@ -16222,7 +16370,35 @@ function GroupAITweakData:_init_enemy_spawn_groups(difficulty_index)
 			"ranged_fire"
 		}
 	}
+	--Akiko Tactics
+	self._tactics.groundsniper = {
+		"ranged_fire",
+		"flank",
+		"provide_support"
+	}
+	
+	
 	self.enemy_spawn_groups = {}
+	--Akiko Spawn Groups
+	
+	self.enemy_spawn_groups.tac_sniper = {
+		amount = {
+			3,
+			3
+		},
+		spawn = {
+			{
+				amount_min = 3,
+				freq = 1,
+				amount_max = 3,
+				rank = 2,
+				unit = "FBI_groundsniper",
+				tactics = self._tactics.groundsniper
+			}
+		}
+	}
+	
+	--Restore Spawn Groups
 	self.enemy_spawn_groups.CS_defend_a = {
 		amount = {3, 4},
 		spawn = {
@@ -23150,6 +23326,22 @@ function GroupAITweakData:_init_task_data(difficulty_index, difficulty)
 			summers = 1
 		}
 	end
+	--Akiko Spawnlimits and Assult Besiege?
+	--More Snipers in my bussy :3
+	if difficulty_index <= 3 then
+		self.special_unit_spawn_limits.sniper = 4
+	elseif difficulty_index <= 5 then
+		self.special_unit_spawn_limits.sniper = 6
+	elseif difficulty_index <= 7 then
+		self.special_unit_spawn_limits.sniper = 8
+	else
+		self.special_unit_spawn_limits.sniper = 10
+	end
+	self.besiege.assault.groups.tac_sniper = {
+		0.1,
+		0.11,
+		0.125
+	}
 	
 	--Assault groups
 	if difficulty_index <= 2 then

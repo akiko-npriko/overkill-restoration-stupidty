@@ -434,6 +434,8 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/38252
  - Scrollable Contract Brokers
 	- https://modworkshop.net/mod/37050
+ - Snipers In Assaults
+	- https://modworkshop.net/mod/49136
 	 
 # Gunsss
  - Do later there are too many i hate myself...
