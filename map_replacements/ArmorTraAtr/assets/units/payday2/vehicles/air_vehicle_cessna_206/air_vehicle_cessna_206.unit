@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<unit type="air" slot="1">
+	<object file="units/payday2/vehicles/air_vehicle_cessna_206/air_vehicle_cessna_206" />
+	<network sync="spawn"/>
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+	</extensions>
+</unit> 

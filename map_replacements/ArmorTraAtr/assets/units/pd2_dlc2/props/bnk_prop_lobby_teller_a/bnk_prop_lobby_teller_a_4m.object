@@ -1,0 +1,22 @@
+<dynamic_object>
+    <diesel orientation_object="rp_bnk_prop_lobby_teller_a_4m" materials="units/pd2_dlc2/props/bnk_prop_lobby_teller_a/bnk_prop_lobby_teller_a" />
+    
+	<bodies>
+		<body enabled="true" template="static" name="static_body" >
+			<object name="rp_bnk_prop_lobby_teller_a_4m" />
+			<object name="c_box_01" collision_type="box" padding="-2.5"/>
+			<object name="c_box_02" collision_type="box" padding="-2.5"/>
+			<object name="c_box_03" collision_type="box" padding="-2.5"/>
+			<object name="c_box_04" collision_type="box" padding="-2.5"/>
+			<object name="c_box_05" collision_type="box" padding="-2.5"/>
+			<object name="c_box_06" collision_type="box" padding="-2.5"/>
+			<object name="c_box_07" collision_type="box" padding="-2.5"/>
+			<object name="c_box_08" collision_type="box" padding="-2.5"/>
+		</body>
+	</bodies>
+	<graphics>
+		<object name="g_g" enabled="true"/>
+		<object name="g_counter" enabled="true"/>
+		<object name="s_shadow" enabled="true" shadow_caster="true"/>
+	</graphics>
+</dynamic_object>

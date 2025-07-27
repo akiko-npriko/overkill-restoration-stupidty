@@ -1,0 +1,9 @@
+<unit type="com" slot="1" >
+<network sync="spawn"/>
+    <object file="units/payday2/architecture/com_ext_mall/com_ext_railing_a1" />
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData"/>
+		<extension name="damage" class="UnitDamage"/>
+		<extension name="attention" class="AIAttentionObject" />
+	</extensions>
+</unit>

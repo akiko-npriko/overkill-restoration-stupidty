@@ -1,0 +1,19 @@
+<dynamic_object>
+    <diesel orientation_object="rp_gov_c_ext_pillar_a" materials="units/pd2_dlc2/architecture/gov_c_ext/gov_c_ext_pillar" />
+    
+	<bodies>
+		<body enabled="true" template="static" name="static_body" >
+				<object name="rp_gov_c_ext_pillar_a" />
+				<object name="c_capsule_00" collision_type="capsule"/>
+				<object name="c_convex_00" collision_type="convex" padding="-2.5"/>
+				<object name="c_box_00" collision_type="box" padding="-2.5"/>
+		</body>
+	</bodies>
+	<decal_surfaces default_material="concrete" static="true">
+        <decal_mesh name="dm_concrete" material="concrete" enabled="true"/>
+    </decal_surfaces>
+	<graphics>
+        <object enabled="true" name="g_g" shadow_caster="false"/>
+        <object enabled="true" name="s_s" shadow_caster="true"/>
+    </graphics>
+</dynamic_object>
