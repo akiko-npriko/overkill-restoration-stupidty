@@ -1,0 +1,382 @@
+<table name="Kar98k">
+	
+	<AssetUpdates id="21092" name="asset_updates" folder_name="Kar98k Standalone" version="1.4" provider="modworkshop"/>
+    <Localization directory="Localization" default="english.txt"/>
+    <GlobalValue id="kar98k" color="Color(0.5, 0, 0)"/>
+	
+<!-- Defaults Parts -->
+	<WeaponMod id="wpn_fps_snp_kar98k_b_medium" based_on="wpn_fps_snp_mosin_b_medium" wpn_pts="wpn_fps_snp_kar98k" hidden="true" ver="2" />
+	
+	<WeaponMod id="wpn_fps_snp_kar98k_body_1935" based_on="wpn_fps_snp_mosin_body_black" type="upper_reciever" wpn_pts="wpn_fps_snp_kar98k" hidden="true" ver="2"/>
+    
+	<WeaponMod id="wpn_fps_snp_kar98k_m_standard" based_on="wpn_fps_snp_mosin_m_standard" wpn_pts="wpn_fps_snp_kar98k" hidden="true" ver="2">
+		<forbids>
+			<value_node value="wpn_fps_upg_a_german12"/>
+			<value_node value="wpn_fps_upg_a_slug"/>
+			<value_node value="wpn_fps_upg_a_explosive"/>
+			<value_node value="wpn_fps_upg_a_piercing"/>
+			<value_node value="wpn_fps_upg_a_dragons_breath"/>
+		</forbids>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_snp_kar98k_iron_sight" based_on="wpn_fps_snp_mosin_iron_sight" wpn_pts="wpn_fps_snp_kar98k" hidden="true" ver="2" >
+		<stats zoom="3" recoil="0" value="0" concealment="2" />
+		<forbids>
+			<value_node value="wpn_fps_snp_kar98k_rail"/>
+		</forbids>
+		<stance_mod>
+			<wpn_fps_snp_kar98k translation="0.077 -5 -0.2" />
+		</stance_mod>
+	</WeaponMod>
+	
+<!-- Barrel -->
+	<!-- Short -->
+	<WeaponMod id="wpn_fps_snp_kar98k_b_short" based_on="wpn_fps_snp_mosin_b_short" type="barrel" wpn_pts="wpn_fps_snp_kar98k" ver="2">
+		<stats spread="-2" recoil="-2" concealment="2"/>
+    </WeaponMod>
+	
+	<!-- Standard -->
+    <WeaponMod id="wpn_fps_snp_kar98k_b_standard" based_on="wpn_fps_snp_mosin_b_standard" type="barrel" wpn_pts="wpn_fps_snp_kar98k" ver="2">
+		<stats spread="1" recoil="1"concealment="-1"/>
+    </WeaponMod>
+	
+	<!-- Sniper -->
+	<WeaponMod id="wpn_fps_snp_kar98k_b_sniper" based_on="wpn_fps_snp_mosin_b_sniper" type="barrel" wpn_pts="wpn_fps_snp_kar98k" ver="2">
+		<stats damage="-6" spread="0" recoil="1" concealment="-1" suppression="12" />
+		<sound_switch suppressed="suppressed_b"/>
+    </WeaponMod>
+	
+	<!-- Geha -->
+	<WeaponMod id="wpn_fps_snp_kar98k_b_geha" based_on="wpn_fps_snp_mosin_b_standard" type="barrel" wpn_pts="wpn_fps_snp_kar98k" has_description="true" ver="2">
+		<stats concealment="1" spread="-22" recoil="0"/>
+	</WeaponMod>
+	
+<!----Body---->
+	<!-- Black body -->
+	<WeaponMod id="wpn_fps_snp_kar98k_body_1935_black_dummy" based_on="wpn_fps_upg_a_custom_free" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" type="stock" wpn_pts="wpn_fps_snp_kar98k" ver="2">
+		<stats damage="0" concealment="1" recoil="0" spread="-1"/>
+		<override>
+			<wpn_fps_snp_kar98k_b_short unit="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_short_black"/>
+			<wpn_fps_snp_kar98k_b_medium unit="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_medium_black"/>
+			<wpn_fps_snp_kar98k_b_standard unit="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_standard_black"/>
+			<wpn_fps_snp_kar98k_b_geha unit="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_geha_black"/>
+			
+			<wpn_fps_snp_kar98k_body_standard unit="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_body_black"/>
+			<wpn_fps_snp_kar98k_body_1935 unit="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_body_1935_black"/>
+		</override>
+	</WeaponMod>
+	
+<!-- Upper Receiver -->
+	<!--  normal receiver -->
+    <WeaponMod id="wpn_fps_snp_kar98k_body_standard" based_on="wpn_fps_snp_mosin_body_standard" type="upper_reciever" wpn_pts="wpn_fps_snp_kar98k" ver="2" >
+		<stats concealment="0" recoil="0" spread="0"/>
+	</WeaponMod>
+	
+<!-- Magazine -->
+	<!-- Geha Magazine -->
+	<WeaponMod id="wpn_fps_snp_kar98k_m_geha" based_on="wpn_fps_snp_mosin_m_standard" type="magazine" wpn_pts="wpn_fps_snp_kar98k" has_description="true" ver="2">
+		<stats damage="-15" extra_ammo="-1" recoil="-1" spread="4" reload="2"/>
+		<weapons_override categories="shotgun" />
+		<requires>
+			<value_node value="wpn_fps_snp_kar98k_b_geha"/>
+		</requires>
+	</WeaponMod>
+	
+<!-- Ammo -->
+	<!-- Custom 000 Buckshot -->
+	<WeaponMod id="wpn_fps_upg_a_german12" based_on="wpn_fps_upg_a_custom_free" type="ammo" sub_type="ammo_custom" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" has_description="true" ver="2">
+		<stats damage="0" />
+		<custom_stats rays="12" armor_piercing_add="0" can_shoot_through_enemy="false" can_shoot_through_shield="false" can_shoot_through_wall="false" damage_near_mul="1.5" damage_far_mul="0.35" />
+	</WeaponMod>
+	
+<!----Sights---->
+	<!-- Standard Scope -->
+    <WeaponMod id="wpn_fps_upg_o_shortdot_rm" based_on="wpn_fps_upg_o_spot" type="sight" unit="units/pd2_dlc_gage_snp/weapons/wpn_fps_upg_o_shortdot/wpn_fps_upg_o_shortdot" drop="false" texture_bundle_folder="mods" is_a_unlockable="true"/>
+	
+<!----Rail---->
+	<!-- Standard Rail -->
+	<WeaponMod id="wpn_fps_snp_kar98k_rail" based_on="wpn_fps_snp_mosin_rail" type="extra" wpn_pts="wpn_fps_snp_kar98k" hidden="true" ver="2" />
+	
+<!-- Weapon customisation -->
+    <WeaponNew unlock_level="35">
+		<weapon id="kar98k" based_on="mosin" weapon_hold="mosin" CLIP_AMMO_MAX="5" NR_CLIPS_MAX="7" texture_bundle_folder="mods" global_value="kar98k" >
+			<AMMO_PICKUP>
+				<value_node value="0.7"/>
+				<value_node value="1"/>
+			</AMMO_PICKUP>
+			<stats damage="90" spread="21" spread_moving="19" recoil="5" concealment="2" />
+			<animations reload_name_id="mosin" equip_id="equip_mosin" recoil_steelsight="true"/>
+			<stats_modifiers damage="5"/>
+			<sounds fire="model70_fire"/>
+		</weapon>
+		<factory id="wpn_fps_snp_kar98k" unit="units/mods/weapons/wpn_fps_snp_kar98k/wpn_fps_snp_kar98k">
+			<optional_types>
+				<value_node value="barrel_ext"/>
+				<value_node value="gadget"/>
+				<value_node value="sight"/>
+			</optional_types>
+			<default_blueprint>
+				<value_node value="wpn_fps_snp_kar98k_b_medium"/>
+				<value_node value="wpn_fps_snp_kar98k_body_1935"/>
+				<value_node value="wpn_fps_snp_kar98k_m_standard"/> 
+				<value_node value="wpn_fps_snp_kar98k_iron_sight"/>			
+				<value_node value="wpn_fps_snp_kar98k_rail"/>				
+			</default_blueprint>
+			<uses_parts>
+				
+				<!-- Barrels -->
+				<value_node value="wpn_fps_snp_kar98k_b_short"/> 
+				<value_node value="wpn_fps_snp_kar98k_b_medium"/>
+				<value_node value="wpn_fps_snp_kar98k_b_standard"/>
+				<value_node value="wpn_fps_snp_kar98k_b_sniper"/>
+				<value_node value="wpn_fps_snp_kar98k_b_geha"/> 
+				
+				<!-- Body -->
+				<value_node value="wpn_fps_snp_kar98k_body_1935_black_dummy"/>
+				
+				<!-- Upper Reciver -->
+				<value_node value="wpn_fps_snp_kar98k_body_1935"/>
+				<value_node value="wpn_fps_snp_kar98k_body_standard"/>
+				
+				<!-- Magazine -->
+				<value_node value="wpn_fps_snp_kar98k_m_standard"/>
+				<value_node value="wpn_fps_snp_kar98k_m_geha"/>  
+				
+				<!-- Ammo -->
+				<value_node value="wpn_fps_upg_a_german12"/>
+				<value_node value="wpn_fps_upg_a_slug"/>
+				<value_node value="wpn_fps_upg_a_slug"/>
+				<value_node value="wpn_fps_upg_a_explosive"/>
+				<value_node value="wpn_fps_upg_a_piercing"/>
+				<value_node value="wpn_fps_upg_a_dragons_breath"/>
+				
+				<!-- Rail -->
+				<value_node value="wpn_fps_snp_kar98k_rail"/>
+				
+				<!-- Scopes -->
+				<value_node value="wpn_fps_snp_kar98k_iron_sight"/>	   				
+				
+				<value_node value="wpn_fps_upg_o_specter"/> 
+				<value_node value="wpn_fps_upg_o_aimpoint"/> 
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/> 
+				<value_node value="wpn_fps_upg_o_docter"/> 
+				<value_node value="wpn_fps_upg_o_eotech"/> 
+				<value_node value="wpn_fps_upg_o_t1micro"/> 
+				<value_node value="wpn_fps_upg_o_cmore"/> 
+				<value_node value="wpn_fps_upg_o_acog"/> 
+				<value_node value="wpn_fps_upg_o_cs"/> 
+				<value_node value="wpn_fps_upg_o_eotech_xps"/> 
+				<value_node value="wpn_fps_upg_o_reflex"/> 
+				<value_node value="wpn_fps_upg_o_rx01"/> 
+				<value_node value="wpn_fps_upg_o_rx30"/> 
+				<value_node value="wpn_fps_upg_o_shortdot_rm"/> 
+				<value_node value="wpn_fps_upg_o_leupold"/> 
+				<value_node value="wpn_fps_upg_o_spot"/> 
+				<value_node value="wpn_fps_upg_o_box"/> 
+				<value_node value="wpn_fps_upg_o_bmg"/> 
+				<value_node value="wpn_fps_upg_o_uh"/> 
+				<value_node value="wpn_fps_upg_o_fc1"/> 
+				<value_node value="wpn_fps_upg_o_tf90"/> 
+				
+			</uses_parts>
+		</factory>
+	</WeaponNew>
+	
+    <AddFiles directory="assets">    
+	
+	<!-- Models + Textures --> 
+		<!-- Textures -->
+		<texture 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/b_short_df"/>
+        <texture 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/b_short_nm"/>	
+        <texture 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/b_short_black_df"/>
+        <texture 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/b_short_black_nm"/>
+		
+		<texture 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/b_med_df"/>
+        <texture 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/b_med_nm"/>
+		<texture 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/b_med_black_df"/>
+        <texture 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/b_med_black_nm"/>
+		
+        <texture 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/b_standard_df"/>
+        <texture 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/b_standard_nm"/>
+		<texture 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/b_standard_black_df"/>
+        <texture 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/b_standard_black_nm"/>
+		
+        <texture 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/b_sniper_df"/>
+        <texture 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/b_sniper_nm"/>
+		
+        <texture 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/body_df"/>
+        <texture 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/body_nm"/>
+		
+		<texture 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/body_black_df"/>
+        <texture 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/body_black_nm"/>
+		
+		<texture 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/bolt_df"/>
+        <texture 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/bolt_nm"/>
+		
+        <texture 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/mag_df"/>
+        <texture 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/mag_nm"/>
+		
+		<texture			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/mag_geha_df"/>
+        <texture			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/mag_geha_nm"/>
+		
+        <texture 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/upper_df"/>
+        <texture 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/upper_nm"/>
+		
+		<!-- Default Weapon Model -->
+        <cooked_physics	 	path="units/mods/weapons/wpn_fps_snp_kar98k/wpn_fps_snp_kar98k"/>
+        <model				path="units/mods/weapons/wpn_fps_snp_kar98k/wpn_fps_snp_kar98k"/>
+        <object				path="units/mods/weapons/wpn_fps_snp_kar98k/wpn_fps_snp_kar98k"/>
+        <unit 			 	path="units/mods/weapons/wpn_fps_snp_kar98k/wpn_fps_snp_kar98k"/>
+		
+		<!-- short barrel -->
+        <cooked_physics 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_short"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_short"/>
+        <model 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_short"/>
+        <object 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_short"/>
+        <unit 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_short"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_short_thq"/>
+			<!-- short barrel black -->
+        <cooked_physics 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_short_black"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_short_black"/>
+        <model 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_short_black"/>
+        <object 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_short_black"/>
+        <unit 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_short_black"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_short_black_thq"/>
+		
+		<!-- medium barrel -->
+        <cooked_physics 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_medium"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_medium"/>
+        <model 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_medium"/>
+        <object 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_medium"/>
+        <unit 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_medium"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_medium_thq"/>
+			<!-- medium barrel black -->
+        <cooked_physics 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_medium_black"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_medium_black"/>
+        <model 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_medium_black"/>
+        <object 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_medium_black"/>
+        <unit 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_medium_black"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_medium_black_thq"/>
+		
+		<!-- standard barrel -->
+        <cooked_physics 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_standard"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_standard"/>
+        <model 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_standard"/>
+        <object 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_standard"/>
+        <unit 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_standard"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_standard_thq"/>
+			<!-- standard barrel black -->
+        <cooked_physics 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_standard_black"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_standard_black"/>
+        <model 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_standard_black"/>
+        <object 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_standard_black"/>
+        <unit 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_standard_black"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_standard_black_thq"/>
+		
+		<!-- sniper barrel -->
+        <cooked_physics 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_sniper"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_sniper"/>
+        <model 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_sniper"/>
+        <object 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_sniper"/>
+        <unit 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_sniper"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_sniper_thq"/>
+		
+		<!-- geha barrel -->
+        <cooked_physics 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_geha"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_geha"/>
+        <model 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_geha"/>
+        <object 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_geha"/>
+        <unit 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_geha"/>
+			<!-- geha barrel black -->
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_geha_thq"/>
+        <cooked_physics 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_geha_black"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_geha_black"/>
+        <model 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_geha_black"/>
+        <object 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_geha_black"/>
+        <unit 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_geha_black"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_b_geha_black_thq"/>
+		
+		<!-- standard body -->
+        <cooked_physics 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_body_standard"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_body_standard"/>
+        <model 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_body_standard"/>
+        <object 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_body_standard"/>
+        <unit 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_body_standard"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_body_standard_thq"/>
+		
+		<!-- Standard Black Body -->
+        <cooked_physics 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_body_black"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_body_black"/>
+        <model 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_body_black"/>
+        <object 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_body_black"/>
+        <unit 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_body_black"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_body_black_thq"/>
+		
+		<!-- 1935 body --> 
+        <cooked_physics 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_body_1935"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_body_1935"/>
+        <model 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_body_1935"/>
+        <object 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_body_1935"/>
+        <unit 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_body_1935"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_body_1935_thq"/>
+			<!-- 1935 body black -->
+        <cooked_physics 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_body_1935_black"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_body_1935_black"/>
+        <model 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_body_1935_black"/>
+        <object 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_body_1935_black"/>
+        <unit 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_body_1935_black"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_body_1935_black_thq"/>
+		
+		<!-- Iron sight? should delet this -->
+        <cooked_physics 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_iron_sight"/>
+        <model 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_iron_sight"/>
+        <object 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_iron_sight"/>
+        <unit 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_iron_sight"/>
+		
+		<!-- standard mag -->
+        <cooked_physics 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_m_standard"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_m_standard"/>
+        <model 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_m_standard"/>
+        <object 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_m_standard"/>
+        <unit 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_m_standard"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_m_standard_thq"/>
+		
+		<!-- geha mag -->
+        <cooked_physics 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_m_geha"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_m_geha"/>
+        <model 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_m_geha"/>
+        <object 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_m_geha"/>
+        <unit 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_m_geha"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_m_geha_thq"/>
+		
+		<!-- rail -->
+        <cooked_physics 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_rail"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_rail"/>
+        <model 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_rail"/>
+        <object 			path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_rail"/>
+        <unit 				path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_rail"/>
+        <material_config 	path="units/mods/weapons/wpn_fps_snp_kar98k_pts/wpn_fps_snp_kar98k_rail_thq"/>
+		
+		<!-- icon -->
+        <texture 			path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/kar98k"/>
+		
+        <texture 			path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_snp_kar98k_b_short"/>
+        <texture 			path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_snp_kar98k_b_medium"/>
+        <texture 			path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_snp_kar98k_b_standard"/>
+        <texture 			path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_snp_kar98k_b_sniper"/>
+		<texture 			path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_snp_kar98k_b_geha"/>
+		
+        <texture 			path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_snp_kar98k_body_1935_black_dummy"/>
+		
+		<texture 			path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_snp_kar98k_body_standard"/>
+		
+		<texture 			path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_snp_kar98k_m_geha"/>
+		
+		<texture 			path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_a_german12"/>
+		
+	    <texture 			path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_snp_kar98k_iron_sight"/>
+		<texture			path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_o_shortdot_rm"/>
+		
+    </AddFiles>
+
+</table>

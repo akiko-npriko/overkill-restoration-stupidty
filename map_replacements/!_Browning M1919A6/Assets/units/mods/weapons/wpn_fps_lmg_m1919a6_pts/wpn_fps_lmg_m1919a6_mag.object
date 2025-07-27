@@ -1,0 +1,40 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_mag" orientation_object="rp_wpn_fps_lmg_svinet_m_standard" />
+
+   <animations>
+		<animation_group name="reload">
+		  <object name="a_reload" enabled="true" />
+		  <object name="a_belt_5_reload" enabled="true" />
+		  <object name="a_belt_4_reload" enabled="true" />
+		  <object name="a_belt_3_reload" enabled="true" />
+		  <object name="a_belt_2_reload" enabled="true" />
+		  <object name="a_belt_1_reload" enabled="true" />
+		</animation_group>
+		
+		<animation_group name="reload_not_empty">
+		  <object name="a_reload_not_empty" enabled="true" />
+		  <object name="a_belt_5_reload_not_empty" enabled="true" />
+		  <object name="a_belt_4_reload_not_empty" enabled="true" />
+		  <object name="a_belt_3_reload_not_empty" enabled="true" />
+		  <object name="a_belt_2_reload_not_empty" enabled="true" />
+		  <object name="a_belt_1_reload_not_empty" enabled="true" />
+		</animation_group>
+		
+		<animation_group name="recoil">
+		  <object name="a_belt_1_recoil" enabled="true" />
+		  <object name="a_belt_2_recoil" enabled="true" />
+		  <object name="a_belt_3_recoil" enabled="true" />
+		  <object name="a_belt_4_recoil" enabled="true" />
+		  <object name="a_belt_5_recoil" enabled="true" />
+		</animation_group>
+	</animations>
+
+	<graphics>
+		<object name="g_mag" enabled="true" />
+		<object name="g_bullet_5" enabled="true" />
+		<object name="g_bullet_4" enabled="true" />
+		<object name="g_bullet_3" enabled="true" />
+		<object name="g_bullet_2" enabled="true" />
+		<object name="g_bullet_1" enabled="true" />
+	</graphics>
+</dynamic_object>

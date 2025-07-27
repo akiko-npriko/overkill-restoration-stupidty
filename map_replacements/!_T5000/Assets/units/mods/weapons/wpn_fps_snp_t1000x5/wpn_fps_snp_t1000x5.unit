@@ -1,0 +1,12 @@
+<unit type="wpn" slot="1" >
+    <object file="units/mods/weapons/wpn_fps_snp_t1000x5/wpn_fps_snp_t1000x5" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_msr"/>
+	</dependencies>
+    <extensions>
+        <extension name="unit_data" class="ScriptUnitData" />
+        <extension name="base" class="NewRaycastWeaponBase" >
+			<var name="name_id" value="t1000x5" />
+		</extension>
+    </extensions>
+</unit>

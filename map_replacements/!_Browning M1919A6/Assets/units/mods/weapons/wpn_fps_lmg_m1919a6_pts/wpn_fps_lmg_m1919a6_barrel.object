@@ -1,0 +1,9 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_barrel" orientation_object="rp_wpn_fps_lmg_svinet_b_standard" />
+	<graphics>
+		<object name="g_b" enabled="true" />
+		<graphic_group name="character" enabled="true" culling_object="g_b">
+			<object enabled="true" name="g_b" inherit_bounding_volume="co_culling"/>
+		</graphic_group>
+	</graphics>
+</dynamic_object>

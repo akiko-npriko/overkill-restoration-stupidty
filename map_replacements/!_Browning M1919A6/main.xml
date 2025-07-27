@@ -1,0 +1,277 @@
+<table name="Browning M1919A6" color="Color(0.01,0.62,0.98)">
+	<Localization directory="Loc" default="english.txt"/>
+	<AssetUpdates id="22728" version="1.03" provider="modworkshop"/>
+	<GlobalValue id="m1919a6mod" color="Color(0.7, 0.2, 0.1)"/>
+	<WeaponMod id="wpn_fps_lmg_m1919a6_barrel" based_on="wpn_fps_lmg_par_b_standard" type="barrel" unit="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_barrel" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_lmg_m1919a6_body" based_on="wpn_fps_m4_lower_reciever" type="lower_reciever" unit="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_body" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_lmg_m1919a6_bolt" based_on="wpn_fps_lmg_par_body_standard" type="drag_handle" unit="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_bolt" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_lmg_m1919a6_cover" based_on="wpn_fps_lmg_par_upper_reciever" type="upper_reciever" unit="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_cover" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_lmg_m1919a6_mag" based_on="wpn_fps_lmg_par_m_standard" type="magazine" unit="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_mag" drop="false" is_a_unlockable="false">
+		<stats reload="6"/>
+		<bullet_objects prefix="g_bullet_" amount="5"/>
+	</WeaponMod>
+	
+	<WeaponMod id="wpn_fps_lmg_m1919a6_stock" based_on="wpn_fps_m4_lower_reciever" type="stock" unit="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_stock" drop="false" is_a_unlockable="false"/>
+
+	<WeaponMod id="wpn_fps_upg_m1919a6_bipod" based_on="wpn_fps_upg_bp_lmg_lionbipod" type="bipod" desc_id="bm_wp_upg_bp_lmg_lionbipod_desc" animations="false" unit="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_bipod" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats recoil="1" concealment="-1"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_m1919a6_barrel_m1917" based_on="wpn_fps_lmg_par_b_standard" type="barrel" a_obj="a_b_m1917" unit="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_barrel_m1917" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats spread="1" recoil="4"/>
+		<forbids>
+			<value_node value="wpn_fps_upg_m1919a6_bipod"/>
+		</forbids>
+		<override>
+			<wpn_fps_addon_ris a_obj="a_fl_m1917"/>
+			<wpn_fps_upg_fl_ass_smg_sho_peqbox a_obj="a_fl_m1917"/>
+			<wpn_fps_upg_fl_ass_smg_sho_surefire a_obj="a_fl_m1917"/>
+			<wpn_fps_upg_fl_ass_peq15 a_obj="a_fl_m1917"/>
+			<wpn_fps_upg_fl_ass_laser a_obj="a_fl_m1917"/>
+			<wpn_fps_upg_fl_ass_utg a_obj="a_fl_m1917"/>
+		</override>
+		<stance_mod>
+			<wpn_fps_lmg_m1919a6 translation="0 0 0" rotation="0.00532323 -0 -0 -0.999986"/>
+		</stance_mod>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_m1919a6_irons" based_on="wpn_fps_m4_uupg_o_flipup" type="sight" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stance_mod>
+			<wpn_fps_lmg_m1919a6 translation="-5.35 8 2.325" rotation="0.000913502 -0.0414388 -0.00103886 -0.99914"/>
+		</stance_mod>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_m1919a6_mag_ext" based_on="wpn_fps_lmg_par_m_standard" type="magazine" has_description="true" unit="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_mag_ext" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats extra_ammo="25" recoil="1" reload="3"/>
+		<bullet_objects prefix="g_bullet_" amount="5"/>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_m1919a6_mag_m60" based_on="wpn_fps_lmg_par_m_standard" type="magazine" has_description="true" unit="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_mag_m60" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats extra_ammo="10" recoil="-1" reload="5"/>
+		<bullet_objects prefix="g_bullet_" amount="5"/>
+		<pcs/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_m1919a6_stock_m1" based_on="wpn_fps_m4_lower_reciever" type="stock" unit="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_stock_m1" drop="false" texture_bundle_folder="mods" is_a_unlockable="true">
+		<stats spread="1" recoil="-1"/>
+		<pcs/>
+	</WeaponMod>
+	<Weapon unlock_level="90">
+		<weapon id="m1919a6" based_on="par" CLIP_AMMO_MAX="80" NR_CLIPS_MAX="3" bipod_camera_spin_limit="55" bipod_camera_pitch_limit="20" texture_bundle_folder="mods" global_value="m1919a6mod">
+			<AMMO_PICKUP>
+				<value_node value="2.25"/>
+				<value_node value="5.25"/>
+			</AMMO_PICKUP>
+			<stats damage="160" spread="14" spread_moving="14" recoil="4" suppression="3"/>
+			<fire_mode_data fire_rate="0.1090909090909091"/>
+			<kick>
+				<standing>
+					<value_node value="1.0"/>
+					<value_node value="0.8"/>
+					<value_node value="-1.6"/>
+					<value_node value="1.0"/>
+				</standing>
+				<crouching>
+					<value_node value="1.0"/>
+					<value_node value="0.8"/>
+					<value_node value="-1.4"/>
+					<value_node value="0.8"/>
+				</crouching>
+				<steelsight>
+					<value_node value="0.9"/>
+					<value_node value="0.7"/>
+					<value_node value="-1.4"/>
+					<value_node value="0.8"/>
+				</steelsight>
+			</kick>
+			<sounds fire="m1919a6_fire_single" fire_single="m1919a6_fire_single" use_fix="true"/>
+			<animations reload_name_id="par"/>
+		</weapon>
+        <factory id="wpn_fps_lmg_m1919a6" unit="units/mods/weapons/wpn_fps_lmg_m1919a6/wpn_fps_lmg_m1919a6">
+			<optional_types>
+				<value_node value="barrel_ext"/>
+				<value_node value="gadget"/>
+			</optional_types>
+			<adds/>
+			<override>
+				<wpn_fps_addon_ris unit="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_gadget_rail"/>
+			</override>
+			<default_blueprint>
+				<value_node value="wpn_fps_lmg_m1919a6_barrel"/>
+				<value_node value="wpn_fps_lmg_m1919a6_body"/>
+				<value_node value="wpn_fps_lmg_m1919a6_bolt"/>
+				<value_node value="wpn_fps_lmg_m1919a6_cover"/>
+				<value_node value="wpn_fps_lmg_m1919a6_mag"/>
+				<value_node value="wpn_fps_lmg_m1919a6_stock"/>
+			</default_blueprint>
+			<uses_parts>
+				<value_node value="wpn_fps_lmg_m1919a6_barrel"/>
+				<value_node value="wpn_fps_lmg_m1919a6_body"/>
+				<value_node value="wpn_fps_lmg_m1919a6_bolt"/>
+				<value_node value="wpn_fps_lmg_m1919a6_cover"/>
+				<value_node value="wpn_fps_lmg_m1919a6_mag"/>
+				<value_node value="wpn_fps_lmg_m1919a6_stock"/>
+
+				<value_node value="wpn_fps_upg_m1919a6_barrel_m1917"/>
+				<value_node value="wpn_fps_upg_m1919a6_bipod"/>
+				<value_node value="wpn_fps_upg_m1919a6_irons"/>
+				<value_node value="wpn_fps_upg_m1919a6_mag_ext"/>
+				<value_node value="wpn_fps_upg_m1919a6_mag_m60"/>
+				<value_node value="wpn_fps_upg_m1919a6_stock_m1"/>
+
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+			</uses_parts>
+		</factory>
+		<stance>
+			<standard>
+				<shoulders rotation="-0.00425483 0.00546958 -0.00253645 -0.999973" translation="-0.691 4.552 -0.407"/>
+			</standard>
+			<crouched>
+				<shoulders rotation="-0.00250008 0.00547833 -0.000799062 -0.999982" translation="-1.706 2.591 -2.392"/>
+			</crouched>
+			<steelsight>
+				<shoulders rotation="-0.000790478 0.0490946 0.000900212 -0.998793" translation="-4.735 -0.369 1.686"/>
+			</steelsight>
+		</stance>
+	</Weapon>
+	<Sounds directory="Assets\sounds">
+		<sound id="m1919a6_fire_single" path="m1919a6_regular.ogg" prefix="regular"/>
+		<redirect id="m1919a6_fire_single" to="svinet_fire_single" prefix="suppressed_a"/>
+		<redirect id="m1919a6_fire_single" to="svinet_fire_single" prefix="suppressed_b"/>
+		<redirect id="m1919a6_fire_single" to="svinet_fire_single" prefix="suppressed_c"/>
+	</Sounds>
+	<AddFiles directory="Assets">
+		<texture path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/textures/m1carbine_df"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/textures/m1carbine_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/textures/m1917_df"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/textures/m1917_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/textures/m1919_df"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/textures/m1919_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/textures/mag_m60_df"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/textures/mag_m60_nm"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/textures/rail_df"/>
+		<texture path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/textures/rail_nm"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_m1919a6/wpn_fps_lmg_m1919a6"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_m1919a6/wpn_fps_lmg_m1919a6"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_m1919a6/wpn_fps_lmg_m1919a6"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_m1919a6/wpn_fps_lmg_m1919a6"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_m1919a6/wpn_fps_lmg_m1919a6_npc"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_barrel"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_barrel"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_barrel"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_barrel"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_barrel_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_body"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_body"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_body"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_body"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_body_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_bolt"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_bolt"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_bolt"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_bolt"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_bolt"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_bolt_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_cover"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_cover"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_cover"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_cover"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_cover"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_cover_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_gadget_rail"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_gadget_rail"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_gadget_rail"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_gadget_rail"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_gadget_rail"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_gadget_rail_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_mag"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_mag"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_mag"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_mag"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_mag"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_mag_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_stock"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_stock"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_stock"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_stock"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_stock"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_lmg_m1919a6_stock_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_barrel_m1917"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_barrel_m1917"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_barrel_m1917"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_barrel_m1917"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_barrel_m1917"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_barrel_m1917_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_bipod"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_bipod"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_bipod"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_bipod"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_bipod"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_bipod_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_mag_ext"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_mag_ext"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_mag_ext"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_mag_ext"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_mag_ext"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_mag_ext_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_mag_m60"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_mag_m60"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_mag_m60"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_mag_m60"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_mag_m60"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_mag_m60_thq"/>
+
+		<cooked_physics path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_stock_m1"/>
+		<model path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_stock_m1"/>
+		<object path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_stock_m1"/>
+		<unit path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_stock_m1"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_stock_m1"/>
+		<material_config path="units/mods/weapons/wpn_fps_lmg_m1919a6_pts/wpn_fps_upg_m1919a6_stock_m1_thq"/>
+
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_m1919a6_barrel_m1917"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_m1919a6_bipod"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_m1919a6_irons"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_m1919a6_mag_ext"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_m1919a6_mag_m60"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_m1919a6_stock_m1"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/m1919a6"/>
+	</AddFiles>
+	<Hooks directory="Hooks">
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
+	</Hooks>
+</table>
