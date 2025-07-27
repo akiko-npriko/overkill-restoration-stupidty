@@ -161,8 +161,6 @@
 		<event name="control" source="control.ogg" start_source="controlintro.ogg"/>
 	</HeistMusic>
 	<Hooks>
-		<hook file="hooks/contractbrokergui.lua" source_file="lib/managers/menu/contractbrokergui"/>
-		<hook file="hooks/guitweakdata.lua" source_file="lib/tweak_data/guitweakdata"/>
 		<hook file="hooks/crimenetmanager.lua" source_file="lib/managers/crimenetmanager"/>
 		<hook file="hooks/crimenetmanager.lua" source_file="lib/managers/menu/menucomponentmanager"/>
 	</Hooks>
@@ -209,7 +207,7 @@
 			</mod>
 		</script_data_mods>
 	</level>
-	<narrative contact="shinobi" icon="levels/mods/Xanax/textures/cr_brokericon" id="YouAreNeverAloneInTheDark" is_custom="true" jc="30">
+	<narrative contact="pd2maps" icon="levels/mods/Xanax/textures/cr_brokericon" id="YouAreNeverAloneInTheDark" is_custom="true" jc="30">
 		<chain>
 			<table level_id="Xanax" type="d" type_id="heist_type_assault"/>
 		</chain>
