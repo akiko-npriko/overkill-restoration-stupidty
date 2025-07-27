@@ -42,7 +42,7 @@
 		<unit path="units/custom/dragon_calendar_01/dragon_calendar_01"/>
 	</AddFiles>
 	<Hooks directory="hooks">
-		<hook file="guitweakdata.lua" source_file="lib/tweak_data/guitweakdata"/>
+		<!--hook file="guitweakdata.lua" source_file="lib/tweak_data/guitweakdata"/-->
 	</Hooks>
 	<Localization default="english.txt" directory="loc"/>
 	<contact assets_gui="guis/mission_briefing/preload_contact_bain" id="trooperjack" name_id="heist_contact_trooperjack" package="packages/contact_bain"/>
@@ -93,7 +93,7 @@
 			</mod>
 		</script_data_mods>
 	</level>
-	<narrative briefing_event="" contact="trooperjack" icon="icons/os_icon" id="office_strike_wrapper">
+	<narrative briefing_event="" contact="pd2maps" icon="icons/os_icon" id="office_strike_wrapper">
 		<chain>
 			<table level_id="office_strike" type="d" type_id="heist_type_assault"/>
 		</chain>
