@@ -1,1 +1,0 @@
-dofile(ModPath .. "hooks/elementweaponswitch.lua")
