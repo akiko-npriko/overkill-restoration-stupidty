@@ -62,7 +62,7 @@
 	</Localization>
 	<Package file="scriptdata/endofanera.package" id="packages/levels/constantine_endofanera/world/world" unload_on_restart="true"/>
 	<contact assets_gui="guis/mission_briefing/preload_contact_bain" id="constantine" name_id="contact_constantine_name" package="packages/contact_bain"/>
-	<level ai_group_type="America" briefing_assets_gui="@ID22163786cf7929ac@" briefing_dialog="cmex_brief" cube="cube_apply_heist_bank" ghost_bonus="0.1" id="constantine_mex_level" intro_event="cmex_intro" max_bags="54" music="heist" narrator="locke" player_style="generic">
+	<level ai_group_type="federales" briefing_assets_gui="@ID22163786cf7929ac@" briefing_dialog="cmex_brief" cube="cube_apply_heist_bank" ghost_bonus="0.1" id="constantine_mex_level" intro_event="cmex_intro" max_bags="54" music="heist" narrator="locke" player_style="suit_sunny">
 		<assets/>
 		<hooks directory="hooks">
 			<hook file="charactertweakdata.lua" source_file="lib/tweak_data/charactertweakdata"/>

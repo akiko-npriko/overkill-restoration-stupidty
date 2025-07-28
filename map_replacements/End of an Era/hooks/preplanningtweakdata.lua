@@ -89,7 +89,11 @@ Hooks:PostHook(PrePlanningTweakData,"init","init_constantine_mex_level",function
 		post_event = "preplan_07",
 		cost = 2000,
 		budget_cost = 4,
-		prio = 2
+		prio = 2,
+		upgrade_lock = {
+			upgrade = "additional_assets",
+			category = "player"
+		}
 	}
 
 	self.types.cmex_c4 = {
@@ -114,7 +118,18 @@ Hooks:PostHook(PrePlanningTweakData,"init","init_constantine_mex_level",function
 		cost = 2000,
 		budget_cost = 6,
 		prio = 2
-	}	
+	}
+
+	if Global.game_settings and Global.game_settings.one_down then
+			self.types.cmex_backup_crew.upgrade_lock = {
+			upgrade = "additional_assets_pro",
+			category = "player"
+		}
+			self.types.cmex_backup_crew_addon.upgrade_lock = {
+			upgrade = "additional_assets_pro",
+			category = "player"
+		}
+	end	
 end)
 
 Hooks:PostHook(PrePlanningTweakData,"_create_locations","_constantine_mex_level",function(self)

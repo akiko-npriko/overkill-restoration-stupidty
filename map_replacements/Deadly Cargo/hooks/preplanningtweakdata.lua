@@ -44,7 +44,11 @@ Hooks:PostHook(PrePlanningTweakData,"init","init_deadcargol",function(self)
 		post_event = "preplan_13",
 		prio = 1,
 		cost = 2000,
-		budget_cost = 2
+		budget_cost = 2,
+		upgrade_lock = {
+		upgrade = "additional_assets",
+		category = "player"
+			}
 	}
 	
 	
@@ -57,7 +61,11 @@ Hooks:PostHook(PrePlanningTweakData,"init","init_deadcargol",function(self)
 		post_event = "preplan_07",
 		cost = 2000,
 		budget_cost = 1,
-		prio = 2
+		prio = 2,
+		upgrade_lock = {
+		upgrade = "additional_assets",
+		category = "player"
+			}
 	}
 	
 end)
