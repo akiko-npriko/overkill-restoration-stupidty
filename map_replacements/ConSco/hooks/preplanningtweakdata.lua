@@ -1,5 +1,6 @@
 Hooks:PostHook(PrePlanningTweakData,"init","init_constantine_ondisplay_lvl",function(self)
 
+
 	self:_create_locations(tweak_data)
 
 
@@ -547,7 +548,24 @@ Hooks:PostHook(PrePlanningTweakData,"init","init_constantine_ondisplay_lvl",func
 	}
 	
 	
-	
+	if Global.game_settings and Global.game_settings.one_down then
+		self.types.score_backupcrew.upgrade_lock = {
+		upgrade = "additional_assets_pro",
+		category = "player"
+	}
+		self.types.cgunner_sentries.upgrade_lock = {
+		upgrade = "additional_assets_pro",
+		category = "player"
+	}
+		self.types.cgunner_firetrap.upgrade_lock = {
+	 	upgrade = "additional_assets_pro",
+	 	category = "player"
+	}
+	  self.types.cgunner_turret.upgrade_lock = {
+		upgrade = "additional_assets_pro",
+		category = "player"
+	}
+end
 	
 	
 	

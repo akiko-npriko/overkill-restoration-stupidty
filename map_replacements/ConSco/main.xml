@@ -1017,7 +1017,7 @@
 			<value_node value="60000"/>
 		</payout>
 	</narrative>
-	<level ai_group_type="america" briefing_dialog="police_brief" id="constantine_policestation_lvl" max_bags="54" narrator="locke">
+	<level ai_group_type="fbi" briefing_dialog="police_brief" id="constantine_policestation_lvl" max_bags="54" narrator="locke">
 		<assets>
 			<asset name="ammo_bag"/>
 			<asset name="health_bag"/>
@@ -1144,7 +1144,7 @@
 			<value_node value="40000"/>
 		</payout>
 	</narrative>
-	<level ai_group_type="america" briefing_dialog="gunrunner_brief" id="constantine_gunrunnerclubhouse_lvl" max_bags="54" narrator="locke">
+	<level ai_group_type="murkywater" briefing_dialog="gunrunner_brief" id="constantine_gunrunnerclubhouse_lvl" max_bags="54" narrator="locke">
 		<assets/>
 		<hooks directory="hooks">
 			<hook file="smackdowncharacters.lua" source_file="lib/tweak_data/charactertweakdata"/>
@@ -1255,7 +1255,7 @@
 			<value_node value="48000"/>
 		</payout>
 	</narrative>
-	<level ai_group_type="america" briefing_dialog="cresort_brief" ghost_bonus="0.1" id="constantine_resort_lvl" max_bags="54" narrator="locke">
+	<level ai_group_type="nypd" briefing_dialog="cresort_brief" ghost_bonus="0.1" id="constantine_resort_lvl" max_bags="54" narrator="locke">
 		<assets/>
 		<hooks directory="hooks">
 			<hook file="smackdowncharacters.lua" source_file="lib/tweak_data/charactertweakdata"/>
@@ -1275,6 +1275,7 @@
 			<value_node value="levels/instances/unique/tag/tag_hack_box/world"/>
 			<value_node value="packages/levels/constantine_cresort/world/world"/>
 			<value_node value="packages/levels/constantine_resort_turret/world/world"/>
+			<value_node value="packages/overkill_290_sc_america"/>
 		</packages>
 		<script_data_mods directory="scriptdata">
 			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
@@ -1409,7 +1410,7 @@
 			<value_node value="9000"/>
 		</payout>
 	</narrative>
-	<level ai_group_type="america" briefing_dialog="murkyairportbrief" id="constantine_murkyairport_lvl" max_bags="54" narrator="locke">
+	<level ai_group_type="murkywater" briefing_dialog="murkyairportbrief" id="constantine_murkyairport_lvl" max_bags="54" narrator="locke">
 		<assets>
 			<asset name="ammo_bag"/>
 			<asset name="health_bag"/>
@@ -1517,7 +1518,7 @@
 			<value_node value="44000"/>
 		</payout>
 	</narrative>
-	<level ai_group_type="america" briefing_dialog="restaurant_brief" ghost_bonus="0.1" id="constantine_restaurant_lvl" max_bags="54" narrator="locke">
+	<level ai_group_type="nypd" briefing_dialog="restaurant_brief" ghost_bonus="0.1" id="constantine_restaurant_lvl" max_bags="54" narrator="locke">
 		<assets/>
 		<hooks directory="hooks">
 			<hook file="smackdowncharacters.lua" source_file="lib/tweak_data/charactertweakdata"/>
@@ -1636,7 +1637,7 @@
 			<value_node value="50000"/>
 		</payout>
 	</narrative>
-	<level ai_group_type="america" briefing_dialog="cpenthouse_brief" id="constantine_penthouse_lvl" max_bags="54" narrator="locke">
+	<level ai_group_type="nypd" briefing_dialog="cpenthouse_brief" id="constantine_penthouse_lvl" max_bags="54" narrator="locke">
 		<assets>
 			<asset name="ammo_bag"/>
 			<asset name="health_bag"/>
@@ -1658,6 +1659,7 @@
 			<value_node value="packages/dlcs/sah/job_sah"/>
 			<value_node value="packages/job_branchbank_deposit"/>
 			<value_node value="levels/narratives/classics/man/world_sounds"/>
+			<value_node value="packages/overkill_290_sc_america"/>
 		</packages>
 		<script_data_mods directory="scriptdata">
 			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
@@ -1743,7 +1745,7 @@
 			<value_node value="9000"/>
 		</payout>
 	</narrative>
-	<level ai_group_type="america" briefing_dialog="gold_brief" ghost_bonus="0.1" id="constantine_gold_lvl" max_bags="54" narrator="locke">
+	<level ai_group_type="nypd" briefing_dialog="gold_brief" ghost_bonus="0.1" id="constantine_gold_lvl" max_bags="54" narrator="locke">
 		<assets/>
 		<hooks directory="hooks">
 			<hook file="smackdowncharacters.lua" source_file="lib/tweak_data/charactertweakdata"/>
@@ -1850,7 +1852,7 @@
 			<value_node value="15000"/>
 		</payout>
 	</narrative>
-	<level ai_group_type="america" briefing_dialog="wintersniper_brief" ghost_bonus="0.05" ghost_required="true" id="constantine_wintersniper_lvl" max_bags="54" music="ghost" music_ext_start="suspense_1" narrator="locke">
+	<level ai_group_type="murkywater" briefing_dialog="wintersniper_brief" ghost_bonus="0.05" ghost_required="true" id="constantine_wintersniper_lvl" max_bags="54" music="ghost" music_ext_start="suspense_1" narrator="locke">
 		<assets/>
 		<hooks directory="hooks">
 			<hook file="smackdowncharacters.lua" source_file="lib/tweak_data/charactertweakdata"/>
@@ -1956,7 +1958,7 @@
 			<value_node value="29000"/>
 		</payout>
 	</narrative>
-	<level ai_group_type="america" briefing_dialog="dwtd_brief" id="constantine_dwtd_lvl" max_bags="54" narrator="locke">
+	<level ai_group_type="federales" briefing_dialog="dwtd_brief" id="constantine_dwtd_lvl" max_bags="54" narrator="locke">
 		<assets>
 			<asset name="ammo_bag"/>
 			<asset name="health_bag"/>
@@ -2076,7 +2078,7 @@
 			<value_node value="24000"/>
 		</payout>
 	</narrative>
-	<level ai_group_type="america" briefing_dialog="suburbia_brief" id="constantine_suburbia_lvl" max_bags="54" narrator="locke">
+	<level ai_group_type="federales" briefing_dialog="suburbia_brief" id="constantine_suburbia_lvl" max_bags="54" narrator="locke">
 		<assets>
 			<asset name="ammo_bag"/>
 			<asset name="health_bag"/>
@@ -2181,7 +2183,7 @@
 			<value_node value="24000"/>
 		</payout>
 	</narrative>
-	<level ai_group_type="america" briefing_dialog="train_brief" id="constantine_train_lvl" max_bags="54" narrator="locke">
+	<level ai_group_type="federales" briefing_dialog="train_brief" id="constantine_train_lvl" max_bags="54" narrator="locke">
 		<assets>
 			<asset name="ammo_bag"/>
 			<asset name="health_bag"/>
@@ -2296,7 +2298,7 @@
 			<value_node value="24000"/>
 		</payout>
 	</narrative>
-	<level ai_group_type="america" briefing_dialog="cjungle_brief" id="constantine_jungle_lvl" max_bags="54" narrator="locke">
+	<level ai_group_type="federales" briefing_dialog="cjungle_brief" id="constantine_jungle_lvl" max_bags="54" narrator="locke">
 		<assets>
 			<asset name="ammo_bag"/>
 			<asset name="health_bag"/>
@@ -2405,7 +2407,7 @@
 			<value_node value="34000"/>
 		</payout>
 	</narrative>
-	<level ai_group_type="america" briefing_dialog="cfiesta_brief" id="constantine_fiesta_lvl" max_bags="54" narrator="locke">
+	<level ai_group_type="federeles" briefing_dialog="cfiesta_brief" id="constantine_fiesta_lvl" max_bags="54" narrator="locke">
 		<assets/>
 		<hooks directory="hooks">
 			<hook file="smackdowncharacters.lua" source_file="lib/tweak_data/charactertweakdata"/>
@@ -2426,6 +2428,7 @@
 			<value_node value="levels/instances/unique/sand/sand_helicopter_turret/world/world"/>
 			<value_node value="levels/instances/unique/hvh/hvh_chance/world/world"/>
 			<value_node value="levels/narratives/vlad/fex/world_sounds"/>
+			
 		</packages>
 		<script_data_mods directory="scriptdata">
 			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
@@ -2528,7 +2531,7 @@
 			<value_node value="80000"/>
 		</payout>
 	</narrative>
-	<level ai_group_type="america" briefing_dialog="cyacht_brief" id="constantine_yacht_lvl" max_bags="54" narrator="locke">
+	<level ai_group_type="federales" briefing_dialog="cyacht_brief" id="constantine_yacht_lvl" max_bags="54" narrator="locke">
 		<assets>
 			<asset name="ammo_bag"/>
 			<asset name="health_bag"/>
@@ -2660,7 +2663,7 @@
 			<value_node value="12000"/>
 		</payout>
 	</narrative>
-	<level ai_group_type="america" briefing_dialog="ctransport_brief" id="constantine_cart_dwn_lvl" max_bags="54" narrator="locke">
+	<level ai_group_type="federales" briefing_dialog="ctransport_brief" id="constantine_cart_dwn_lvl" max_bags="54" narrator="locke">
 		<assets>
 			<asset name="ammo_bag"/>
 			<asset name="health_bag"/>
@@ -2766,7 +2769,7 @@
 			<value_node value="12000"/>
 		</payout>
 	</narrative>
-	<level ai_group_type="america" briefing_dialog="ctransport_brief" id="constantine_cart_con_lvl" max_bags="54" narrator="locke">
+	<level ai_group_type="federales" briefing_dialog="ctransport_brief" id="constantine_cart_con_lvl" max_bags="54" narrator="locke">
 		<assets>
 			<asset name="ammo_bag"/>
 			<asset name="health_bag"/>
@@ -2831,7 +2834,7 @@
 		<texture force="true" load="true" path="textures/cartdwnicon"/>
 		<texture force="true" load="true" path="textures/cartconicon"/>
 	</AddFiles>
-	<AssetUpdates id="37297" provider="modworkshop" version="4.03"/>
+	<AssetUpdates id="37297" provider="modworkshop" version="4.02"/>
 	<Localization default="english.txt" directory="loc">
 		<loc file="english.txt" language="english"/>
 	</Localization>

@@ -43,7 +43,10 @@ Hooks:PostHook(CharacterTweakData, "init", "cdhook_constantine_backup", function
 
 	self.mobster_ttr_vip.ecm_vulnerability = 0
 	self.mobster_ttr_vip.ecm_hurts = {
-		ears = 0
+		ears = {
+			max_duration = 0,
+			min_duration = 0
+		}
 	}
 	
 	self.mobster_ttr_vip.HEALTH_INIT = 30
@@ -79,7 +82,10 @@ Hooks:PostHook(CharacterTweakData, "init", "cdhook_constantine_backup", function
 	
 	self.constantine_backup.ecm_vulnerability = 0
 	self.constantine_backup.ecm_hurts = {
-		ears = 0
+		ears = {
+			max_duration = 0,
+			min_duration = 0
+		}
 	}
 	
 	
@@ -100,7 +106,10 @@ Hooks:PostHook(CharacterTweakData, "init", "cdhook_constantine_backup", function
 	
 	self.mobster_ttr_clubowner.ecm_vulnerability = 0
 	self.mobster_ttr_clubowner.ecm_hurts = {
-		ears = 0
+		ears = {
+			max_duration = 0,
+			min_duration = 0
+		}
 	}
 	self.mobster_ttr_clubowner.throwable = "launcher_m203"
 	self.mobster_ttr_clubowner.throwable_target_verified = true
@@ -132,7 +141,10 @@ Hooks:PostHook(CharacterTweakData, "init", "cdhook_constantine_backup", function
 	
 	self.mobster_ttr_enforcer.ecm_vulnerability = 0
 	self.mobster_ttr_enforcer.ecm_hurts = {
-		ears = 0
+		ears = {
+			max_duration = 0,
+			min_duration = 0
+		}
 	}
 	self.mobster_ttr_enforcer.throwable = "frag"
 	self.mobster_ttr_enforcer.throwable_target_verified = true
@@ -166,7 +178,10 @@ Hooks:PostHook(CharacterTweakData, "init", "cdhook_constantine_backup", function
 	
 	self.mobster_ttr_securityclub.ecm_vulnerability = 0
 	self.mobster_ttr_securityclub.ecm_hurts = {
-		ears = 0
+		ears = {
+			max_duration = 0,
+			min_duration = 0
+		}
 	}
 	self.mobster_ttr_securityclub.throwable = "frag"
 	self.mobster_ttr_securityclub.throwable_target_verified = true
@@ -205,10 +220,13 @@ Hooks:PostHook(CharacterTweakData, "init", "cdhook_constantine_backup", function
 	
 	self.agent_ttr_swat.ecm_vulnerability = 0
 	self.agent_ttr_swat.ecm_hurts = {
-		ears = 0
+		ears = {
+			max_duration = 0,
+			min_duration = 0
+		}
 	}
 		
-	self.agent_ttr_swat.weapon = self.presets.weapon.easywish	
+	self.agent_ttr_swat.weapon = self.presets.weapon.expert	
 -- FRIENDLY UNIT
 
 	self.ttr_friendly.HEALTH_INIT = 60
@@ -241,7 +259,10 @@ Hooks:PostHook(CharacterTweakData, "init", "cdhook_constantine_backup", function
 	
 	self.ttr_friendly.ecm_vulnerability = 0
 	self.ttr_friendly.ecm_hurts = {
-		ears = 0
+		ears = {
+			max_duration = 0,
+			min_duration = 0	
+		}
 	}
 	
 		
@@ -281,7 +302,10 @@ Hooks:PostHook(CharacterTweakData, "init", "cdhook_constantine_backup", function
 	
 	self.ttr_captain_tank.ecm_vulnerability = 0
 	self.ttr_captain_tank.ecm_hurts = {
-		ears = 0
+		ears = {
+			max_duration = 0,
+			min_duration = 0
+		}
 	}
 	
 		
@@ -306,7 +330,7 @@ Hooks:PostHook(CharacterTweakData, "init", "cdhook_constantine_backup", function
 	self.cartel_tazer.no_arrest = true	
 	
 
-	self.cartel_tazer.weapon = self.presets.weapon.easywish
+	self.cartel_tazer.weapon = self.presets.weapon.expert
 	self.cartel_tazer.weapon.is_rifle.tase_distance = 1500
 	self.cartel_tazer.weapon.is_rifle.tase_sphere_cast_radius = 30
 	self.cartel_tazer.weapon.is_rifle.aim_delay_tase = {0, 0}
@@ -323,13 +347,14 @@ Hooks:PostHook(CharacterTweakData, "init", "cdhook_constantine_backup", function
 	self.cartel_grenadier.DAMAGE_CLAMP_EXPLOSION = 300
 	
 	self.cartel_grenadier.move_speed = self.presets.move_speed.fast
+	self.cartel_grenadier.damage.hurt_severity = self.presets.hurt_severities.nohurts	
 	self.cartel_grenadier.can_be_tased = true	
 ---	self.cartel_grenadier.weapon = self.presets.weapon.gang_member
 	self.cartel_grenadier.damage.immune_to_knockback = true
 	self.cartel_grenadier.immune_to_knock_down = true
 	self.cartel_grenadier.no_retreat = true	
 	
-	self.cartel_grenadier.weapon = self.presets.weapon.easywish
+	self.cartel_grenadier.weapon = self.presets.weapon.expert
 	
 	
 
@@ -350,13 +375,14 @@ Hooks:PostHook(CharacterTweakData, "init", "cdhook_constantine_backup", function
 	self.cartel_grenadier_fire.DAMAGE_CLAMP_EXPLOSION = 300
 	
 	self.cartel_grenadier_fire.move_speed = self.presets.move_speed.fast
+	self.cartel_grenadier_fire.damage.hurt_severity = self.presets.hurt_severities.nohurts	
 	self.cartel_grenadier_fire.can_be_tased = true	
 ---	self.cartel_grenadier_fire.weapon = self.presets.weapon.gang_member
 	self.cartel_grenadier_fire.damage.immune_to_knockback = true
 	self.cartel_grenadier_fire.immune_to_knock_down = true
 	self.cartel_grenadier_fire.no_retreat = true
 
-	self.cartel_grenadier_fire.weapon = self.presets.weapon.easywish
+	self.cartel_grenadier_fire.weapon = self.presets.weapon.expert
 	
 	
 
@@ -379,7 +405,7 @@ Hooks:PostHook(CharacterTweakData, "init", "cdhook_constantine_backup", function
 	self.cartel_commando.DAMAGE_CLAMP_BULLET = 200
 	self.cartel_commando.DAMAGE_CLAMP_EXPLOSION	= 100
 		
-	self.cartel_commando.weapon = self.presets.weapon.easywish
+	self.cartel_commando.weapon = self.presets.weapon.expert
 
 	self.cartel_commando.explosion_damage_mul = 0.85
 
@@ -410,7 +436,10 @@ Hooks:PostHook(CharacterTweakData, "init", "cdhook_constantine_backup", function
 		
 	
 	self.cartel_commando.ecm_hurts = {
-		ears = 0
+		ears = {
+			max_duration = 0,
+			min_duration = 0
+		}
 	}
 	
 
