@@ -400,8 +400,8 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/34616
  - Out Of Frame Fix
 	- https://modworkshop.net/mod/30747
- - Blackridge Facility
-	- https://modworkshop.net/mod/22392
+ - Yaeger - Rogue Company (Custom Heist)
+	- https://modworkshop.net/mod/32301
  - FBI Office Holdout
 	- https://modworkshop.net/mod/45068
  - Sniper Assassin

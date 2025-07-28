@@ -1,0 +1,21 @@
+<materials version="3">
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" name="mat_monitor" version="2">
+        <diffuse_texture file="units/pd2_dlc_corp/props/corp_prop_display_monitors/corp_prop_display_monitor_df"/>
+        <material_texture file="units/pd2_dlc_corp/props/corp_prop_display_monitors/corp_prop_display_monitor_gsma"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <bump_normal_texture file="units/pd2_dlc_corp/props/corp_prop_display_monitors/corp_prop_display_monitor_nm"/>
+    </material>
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" name="mat_monitor_lod" version="2">
+        <diffuse_texture file="units/pd2_dlc_corp/props/corp_prop_display_monitors/corp_prop_display_monitor_df"/>
+        <material_texture file="units/pd2_dlc_corp/props/corp_prop_display_monitors/corp_prop_display_monitor_gsma"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+        <bump_normal_texture file="units/pd2_dlc_corp/props/corp_prop_display_monitors/corp_prop_display_monitor_nm"/>
+    </material>
+    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" name="mat_monitor_il" version="2">
+        <diffuse_texture file="units/pd2_mod_yrc/props/yrc_prop_display_monitor/yrc_prop_display_monitor_il"/>
+        <variable type="scalar" name="il_multiplier" value="candle"/>
+        <self_illumination_texture file="units/pd2_mod_yrc/props/yrc_prop_display_monitor/yrc_prop_display_monitor_il"/>
+        <variable type="scalar" name="il_bloom" value="0.15000000596046"/>
+        <material_texture file="units/pd2_dlc_corp/props/corp_prop_display_monitors/corp_prop_display_monitor_gsma"/>
+    </material>
+</materials>

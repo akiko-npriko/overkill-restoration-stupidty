@@ -1,0 +1,25 @@
+<dynamic_object>
+	<diesel materials="units/pd2_mod_yrc/props/yrc_prop_display_monitor/yrc_prop_display_monitor" orientation_object="rp_ybm_prop_display_monitor_small" />
+	<sequence_manager file="units/pd2_mod_yrc/props/yrc_prop_display_monitor/yrc_prop_display_monitor"/>
+
+	<bodies>
+		<body name="body_static" enabled="true" template="static">
+			<object name="rp_ybm_prop_display_monitor_small" />
+			<object name="c_box_01" collision_type="box" padding="-2.5" />
+			<object name="c_box_02" collision_type="box" padding="-2.5" />
+		</body>
+	</bodies>
+	<decal_surfaces default_material="glass_unbreakable">
+		<decal_mesh name="dm_glass_unbreakable" enabled="true" material="glass_unbreakable" />
+		<decal_mesh name="dm_plastic" enabled="true" material="plastic" />
+	</decal_surfaces>
+	<graphics>
+		<lod_object name="lod_g">
+			<object name="g_lod0" enabled="true" max_distance="1500" />
+			<object name="g_lod1" enabled="true" />
+		</lod_object>
+		<object name="g_display_1" enabled="true" />
+		<object name="g_display_2" enabled="false" />
+		<object name="g_display_3" enabled="false" />
+	</graphics>
+</dynamic_object>
