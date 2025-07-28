@@ -68,7 +68,11 @@ Hooks:PostHook(PrePlanningTweakData,"init","init_constantine_harbor_lvl",functio
 		post_event = "preplan_07",
 		cost = 2000,
 		budget_cost = 6,
-		prio = 2
+		prio = 2,
+		upgrade_lock = {
+		upgrade = "additional_assets",
+		category = "player"
+			}
 	}
 
 
@@ -87,7 +91,16 @@ Hooks:PostHook(PrePlanningTweakData,"init","init_constantine_harbor_lvl",functio
 	}
 
 
-
+	if Global.game_settings and Global.game_settings.one_down then
+			self.types.charbor_backup_crew.upgrade_lock = {
+			upgrade = "additional_assets_pro",
+			category = "player"
+		}
+			self.types.charbor_longfellow.upgrade_lock = {
+			upgrade = "additional_assets_pro",
+			category = "player"
+		}
+	end
 
 
 

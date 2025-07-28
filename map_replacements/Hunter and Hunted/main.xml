@@ -16,7 +16,7 @@
         <achievement icon="textures/hunter_dsod" id="hunter_dsod" rank="4"/>
     </Achievements>
 
-	<level ai_group_type="America" briefing_dialog="party_brief" id="hunter_party" intro_event="party_intro" max_bags="54" player_style="generic">
+	<level ai_group_type="russia" briefing_dialog="party_brief" id="hunter_party" intro_event="party_intro" max_bags="54" player_style="continental">
 		<assets/>
 	<sounds directory="assets/sound">
 		<sound id="party_brief" path="PBrief.ogg"/>
@@ -85,7 +85,7 @@
 			</mod>
 		</script_data_mods>
 	</level>
-	<level ai_group_type="America" briefing_dialog="departure_brief" id="hunter_departure" intro_event="departure_intro" max_bags="54" player_style="generic">
+	<level ai_group_type="russia" briefing_dialog="departure_brief" id="hunter_departure" flashlights_on="true" intro_event="departure_intro" max_bags="54" player_style="winter_suit">
 	<sounds directory="assets/sound">
 		<sound id="party_brief" path="PBrief.ogg"/>
 		<sound id="fall_brief" path="FBrief.ogg"/>
@@ -155,7 +155,7 @@
 			</mod>
 		</script_data_mods>
 	</level>
-	<level ai_group_type="America" briefing_dialog="fall_brief" id="hunter_fall" intro_event="fall_intro" max_bags="54" player_style="generic">
+	<level ai_group_type="russia" briefing_dialog="fall_brief" id="hunter_fall" intro_event="fall_intro" max_bags="54" player_style="loud_suit">
 		<assets/>
 		<sounds directory="assets/sound">
 		<sound id="party_brief" path="PBrief.ogg"/>

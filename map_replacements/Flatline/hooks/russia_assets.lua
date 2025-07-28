@@ -18,4 +18,10 @@ Hooks:PostHook(AssetsTweakData, "_init_assets", "russia_assets", function(self, 
 		money_lock = tweak_data:get_value("money_manager", "mission_asset_cost_medium", 4)
 	}
 	
+	if Global.game_settings and Global.game_settings.one_down then
+			self.nikolai_backup.upgrade_lock = {
+			upgrade = "additional_assets_pro",
+			category = "player"
+		}
+	end
 end)

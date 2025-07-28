@@ -42,7 +42,7 @@
 	</Localization>
 	<Package file="scriptdata/charbor.package" id="packages/levels/constantine_charbor/world/world" unload_on_restart="true"/>
 	<contact assets_gui="guis/mission_briefing/preload_contact_bain" id="constantine" name_id="contact_constantine_name" package="packages/contact_bain"/>
-	<level ai_group_type="america" briefing_dialog="charbor_brief" id="constantine_harbor_lvl" intro_event="charbor_intro" max_bags="54" narrator="locke">
+	<level ai_group_type="lapd" flashlights_on="true" briefing_dialog="charbor_brief" id="constantine_harbor_lvl" intro_event="charbor_intro" max_bags="54" narrator="locke" player_style="loud_suit">
 		<assets/>
 		<hooks directory="hooks">
 			<hook file="charactertweakdata.lua" source_file="lib/tweak_data/charactertweakdata"/>

@@ -26,6 +26,7 @@
 		<model path="units/payday2/characters/npc_backup_2/npc_backup_2" unload="true"/>
 		<object path="units/payday2/characters/npc_backup_2/npc_backup_2" unload="true"/>
 	</add>
+
 	<add>
 		<unit load="true" path="units/payday2/characters/npc_nikolai_winter_1/npc_nikolai_winter_1" unload="true"/>
 		<unit load="true" path="units/payday2/characters/npc_nikolai_winter_1/npc_nikolai_winter_1_husk" unload="true"/>
@@ -2314,21 +2315,9 @@
 		<unit path="units/pd2_dlc_flat/props/flt_prop_vent_tunnel/flt_prop_vent_tunnel_straight_x3" unload="true"/>
 	</add>
 	<add from_db="true" path="units/world/props/desert/des_prop_roof/des_prop_roof_aircondition_big" type="unit">
-		<material_config path="units/world/props/desert/des_prop_roof/des_prop_roof_aircondition_big" unload="true"/>
-		<object path="units/world/props/desert/des_prop_roof/des_prop_roof_aircondition_big" unload="true"/>
-		<sequence_manager path="units/world/props/desert/des_prop_roof/des_prop_roof_aircondition_big" unload="true"/>
 		<unit path="units/world/props/desert/des_prop_roof/des_prop_roof_aircondition_big" unload="true"/>
-	</add>
-	<add from_db="true" path="units/dev_tools/level_tools/dev_ai_vis_blocker/dev_ai_vis_blocker_005x6x6m" type="unit">
-		<material_config path="core/material_configs/hub_elements"/>
-		<object path="units/dev_tools/level_tools/dev_ai_vis_blocker/dev_ai_vis_blocker_005x6x6m"/>
-		<sequence_manager path="units/dev_tools/level_tools/dev_ai_vis_blocker/dev_ai_vis_blocker_005x6x6m"/>
-		<unit path="units/dev_tools/level_tools/dev_ai_vis_blocker/dev_ai_vis_blocker_005x6x6m"/>
-	</add>
-	<add from_db="true" path="units/dev_tools/level_tools/dev_ai_vis_blocker/dev_ai_vis_blocker_005x2x2m" type="unit">
-		<unit path="units/dev_tools/level_tools/dev_ai_vis_blocker/dev_ai_vis_blocker_005x2x2m"/>
-		<object path="units/dev_tools/level_tools/dev_ai_vis_blocker/dev_ai_vis_blocker_005x2x2m"/>
-		<material_config path="core/material_configs/hub_elements"/>
-		<sequence_manager path="units/dev_tools/level_tools/dev_ai_vis_blocker/dev_ai_vis_blocker_005x2x2m"/>
+		<object path="units/world/props/desert/des_prop_roof/des_prop_roof_aircondition_big" unload="true"/>
+		<material_config path="units/world/props/desert/des_prop_roof/des_prop_roof_aircondition_big" unload="true"/>
+		<sequence_manager path="units/world/props/desert/des_prop_roof/des_prop_roof_aircondition_big" unload="true"/>
 	</add>
 </table>
