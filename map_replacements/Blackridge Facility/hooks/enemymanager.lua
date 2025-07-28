@@ -57,6 +57,7 @@ end
 
 local gone_enemy_list = {}
 
+--[[
 local checked_mods = {
     ["RestorationMod"] = true, ["Payday 2 Hyper Heisting Shin Shootout"] = true
 }
@@ -68,6 +69,8 @@ for _,mod in pairs(installed_mods) do
 		overhaul_installed = true
     end
 end
+]]
+local overhaul_installed = true
 local x = 0
 function counting(name, id)
 	if not managers.groupai:state():whisper_mode() then
@@ -107,12 +110,14 @@ function counting(name, id)
 			changeElement:execute({"100474"})
 		end
 	end
-	
+	--[[
 	if BeardLib.Utils:ModExists("RestorationMod") or BeardLib.Utils:ModExists("Payday 2 Hyper Heisting Shin Shootout") or overhaul_installed then
 		x = 6
 	else
 		x = 4
 	end
+	]]
+	x = 6
 	if table.size(gone_enemy_list) == x then
 		DelayedCalls:Add("SomeDelay", 1, function()
 			changeElement:execute({"100567"})
