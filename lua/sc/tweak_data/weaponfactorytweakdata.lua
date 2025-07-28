@@ -49355,7 +49355,7 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 			self.parts.wpn_fps_upg_o_northtac_alt.stance_mod.wpn_fps_ass_liberator.translation = self.parts.wpn_fps_upg_o_northtac_alt.stance_mod.wpn_fps_ass_liberator.translation + Vector3(0, 0, 0.25)
 		end
 	end
-	
+	--[[
 	if self.parts.wpn_fps_upg_a_infin_wall_pen then
 		self.parts.wpn_fps_upg_a_infin_wall_pen.supported = true
 		self.parts.wpn_fps_upg_a_infin_wall_pen.has_description = true
@@ -49384,6 +49384,7 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 			--"effects/payday2/particles/weapons/50cal_auto_fps"
 		}
 		table.insert(self.wpn_fps_snp_m95.uses_parts, "wpn_fps_upg_a_infin_wall_pen")
+		]]
 		--wpn_fps_snp_m95
 		--[[
 		local function definepurehatred(factory_id)

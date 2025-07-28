@@ -1140,7 +1140,7 @@ local standard_spawngroups = {
 		"FBI_spoocs"
 	}
 }
---ElementSpawnEnemyGroup:akikofunspawns()
+ElementSpawnEnemyGroup:akikofunspawns()
 -- fuckhuge table
 local spawnpoint_delays = {
 	["alex_1"] = {
