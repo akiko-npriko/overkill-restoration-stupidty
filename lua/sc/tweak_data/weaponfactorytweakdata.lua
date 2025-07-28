@@ -49306,6 +49306,7 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 	
 	if self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound then
 		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.supported = true
+		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.pcs = {}
 		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.has_description = true
 		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.keep_damage = true
 		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.desc_id = "bm_heavy_ap_weapon_sc_desc"
@@ -49354,14 +49355,15 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 			self.parts.wpn_fps_upg_o_northtac_alt.stance_mod.wpn_fps_ass_liberator.translation = self.parts.wpn_fps_upg_o_northtac_alt.stance_mod.wpn_fps_ass_liberator.translation + Vector3(0, 0, 0.25)
 		end
 	end
-	--[[
+	
 	if self.parts.wpn_fps_upg_a_infin_wall_pen then
 		self.parts.wpn_fps_upg_a_infin_wall_pen.supported = true
 		self.parts.wpn_fps_upg_a_infin_wall_pen.has_description = true
 		self.parts.wpn_fps_upg_a_infin_wall_pen.keep_damage = true
 		self.parts.wpn_fps_upg_a_infin_wall_pen.desc_id = "bm_heavy_ap_weapon_sc_desc"
 		self.parts.wpn_fps_upg_a_infin_wall_pen.no_cull = true
-		self.parts.wpn_fps_upg_a_infin_wall_pen.stats = {value = 10, spread = -3, recoil = -3, damage = -100}
+		self.parts.wpn_fps_upg_a_infin_wall_pen.pcs = {}
+		self.parts.wpn_fps_upg_a_infin_wall_pen.stats = {value = 10, spread = -6, recoil = -9, damage = -100}
 		self.parts.wpn_fps_upg_a_infin_wall_pen.custom_stats = {
 			armor_piercing_override = 1,
 			can_shoot_through_enemy = true,
@@ -49381,7 +49383,9 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 			--alt_desc = "bm_heavy_ap_weapon_sc_desc",
 			--"effects/payday2/particles/weapons/50cal_auto_fps"
 		}
-		
+		table.insert(self.wpn_fps_snp_m95.uses_parts, "wpn_fps_upg_a_infin_wall_pen")
+		--wpn_fps_snp_m95
+		--[[
 		local function definepurehatred(factory_id)
 			for id, data in pairs(tweak_data.upgrades.definitions) do
 				if data.category == "weapon" and data.factory_id == factory_id then
@@ -49404,6 +49408,7 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 			end
 		end
 	end
+	--launcher_grenade
 	]]
 	--[[
 	if self.parts.wpn_fps_fla_system_body_iuhIceThrowerConversion then
