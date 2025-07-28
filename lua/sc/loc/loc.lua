@@ -5823,7 +5823,7 @@ Hooks:Add("LocalizationManagerPostInit", "SC_Localization_Skills_Eng", function(
 
 				--Spotter--
 				["menu_ecm_2x_beta_sc"] = "Spotter",
-				["menu_ecm_2x_beta_desc_sc"] = "BASIC: #{owned}#$basic##\nEnemies you mark take #{skill_color}#$skill_value_b1## more damage when further than #{risk}#$skill_value_b2## meters away.\n\nACE: #{owned}#$pro##\nEnemies you mark take an additional #{skill_color}#$skill_value_p1## more damage #{skill_color}#at all ranges.##\n\nNight vision goggles are upgraded with #{skill_color}#stealth-only Infrared Wallhacks.##\n\n#{risk}#NOTE: NVGs are only obtained through Aced Sixth Sense.##",
+				["menu_ecm_2x_beta_desc_sc"] = "BASIC: #{owned}#$basic##\nEnemies you mark take #{skill_color}#$skill_value_b1## more damage when further than #{risk}#$skill_value_b2## meters away.\n\nACE: #{owned}#$pro##\nEnemies you mark take an additional #{skill_color}#$skill_value_p1## more damage #{skill_color}#at all ranges.##\n\nNight vision goggles are upgraded with #{skill_color}#Infrared Wallhacks.##\n\n#{risk}#NOTE: NVGs are only obtained through Aced Sixth Sense.##",
 
 			--[[   ARTFUL DODGER SUBTREE   ]]--
 				--Duck and Cover--

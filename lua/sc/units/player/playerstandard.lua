@@ -98,7 +98,7 @@ function PlayerStandard:set_night_vision_state(state)
 		end
 
 		managers.viewport:create_global_environment_modifier(ambient_color_key, true, light_modifier)
-		if managers.player:has_category_upgrade("weapon", "grant_op_af_infrared") and managers.groupai:state():whisper_mode() then
+		if managers.player:has_category_upgrade("weapon", "grant_op_af_infrared") then
 			self._nighaaatvision_infrared_highlight = true
 		end
 	else
@@ -5694,14 +5694,12 @@ end
 
 Hooks:PostHook(PlayerStandard, "_update_fwd_ray", "InfraredHighlighting__update_fwd_ray", function(self)
 	if alive(self._equipped_unit) and self._equipped_unit:base() then
-		if self:full_steelsight() and self._equipped_unit:base().check_infrared_highlight and not self._equipped_unit:base():is_second_sight_on() then
+		if self._nighaaatvision_infrared_highlight and self._equipped_unit:base().check_nvg_infrared_highlight then
+			self._equipped_unit:base():check_nvg_infrared_highlight()
+		elseif self:full_steelsight() and self._equipped_unit:base().check_infrared_highlight and not self._equipped_unit:base():is_second_sight_on() then
 			self._equipped_unit:base():check_infrared_highlight()
 		elseif self:full_steelsight() and self._equipped_unit:base().check_second_infrared_highlight then
 			self._equipped_unit:base():check_second_infrared_highlight()
-		elseif self._nighaaatvision_infrared_highlight and managers.groupai:state():whisper_mode() then
-			self._equipped_unit:base():check_nvg_infrared_highlight()
-		elseif self._nighaaatvision_infrared_highlight then
-			self:set_night_vision_state(not self._state_data.night_vision_active)
 		end
 	end
 end)
