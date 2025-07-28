@@ -5696,6 +5696,8 @@ Hooks:PostHook(PlayerStandard, "_update_fwd_ray", "InfraredHighlighting__update_
 	if alive(self._equipped_unit) and self._equipped_unit:base() then
 		if self._nighaaatvision_infrared_highlight and self._equipped_unit:base().check_nvg_infrared_highlight then
 			self._equipped_unit:base():check_nvg_infrared_highlight()
+			--Temp for now ig (Kinda realize this is bad for game but oh well)
+			self:_interupt_action_steelsight(0)
 		elseif self:full_steelsight() and self._equipped_unit:base().check_infrared_highlight and not self._equipped_unit:base():is_second_sight_on() then
 			self._equipped_unit:base():check_infrared_highlight()
 		elseif self:full_steelsight() and self._equipped_unit:base().check_second_infrared_highlight then
