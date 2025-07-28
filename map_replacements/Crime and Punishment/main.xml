@@ -112,7 +112,7 @@
 		<loc file="english.txt" language="english"/>
 	</Localization>
 	<contact assets_gui="guis/mission_briefing/preload_contact_bain" id="constantine" name_id="contact_constantine_name" package="packages/contact_bain"/>
-	<level ai_group_type="America" briefing_dialog="crime_brief" id="crimepunishlvl" intro_event="crime_intro" max_bags="54" player_style="generic">
+	<level ai_group_type="russia" briefing_dialog="crime_brief" id="crimepunishlvl" intro_event="crime_intro" max_bags="54" player_style="suit_prison">
 		<add file="levels/crimepunishlvl/add.xml"/>
 		<assets>
 			<asset name="ammo_bag"/>
@@ -122,7 +122,7 @@
 		<hooks directory="hooks">
 			<hook file="russia_charactertweakdata.lua" source_file="lib/tweak_data/charactertweakdata"/>
 			<hook file="russia_pager_sfx_fix.lua" source_file="lib/units/enemies/cop/copbrain"/>
-			<hook file="russia_enemies.lua" source_file="lib/tweak_data/groupaitweakdata"/>
+			<!--hook file="russia_enemies.lua" source_file="lib/tweak_data/groupaitweakdata"/-->
 			<hook file="copbrain.lua" source_file="lib/units/enemies/cop/copbrain"/>
 			<hook file="copmovement.lua" source_file="lib/units/enemies/cop/copmovement"/>
 		</hooks>

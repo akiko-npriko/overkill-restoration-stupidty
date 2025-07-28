@@ -7,7 +7,23 @@
 		<loc file="english.txt" language="english"/>
 	</Localization>
 	<contact assets_gui="guis/mission_briefing/preload_contact_bain" id="constantine" name_id="contact_constantine_name" package="packages/contact_bain"/>
-	<level ai_group_type="America" briefing_dialog="rusd_brief" id="rusdl" intro_event="rusd_intro" max_bags="54" player_style="generic">
+	<level ai_group_type="russia" briefing_dialog="rusd_brief" id="rusdl" intro_event="rusd_intro" max_bags="54" player_style="winter_suit">
+	<sounds directory="assets/sound">
+		<sound id="rusd_brief" path="Brief.ogg"/>
+		<sound id="rusd_intro" path="Intro.ogg" subtitle_id="rusd_intro"/>
+		<sound id="rusd_thermite" path="ThermiteHint.ogg" subtitle_id="rusd_thermite"/>
+		<sound id="rusd_thermitevariant" path="ThermiteHintVariant.ogg" subtitle_id="rusd_thermitevariant"/>
+		<sound id="rusd_diamond" path="DiamondHint.ogg" subtitle_id="rusd_diamond"/>
+		<sound id="rusd_escape" path="EscapeHint.ogg" subtitle_id="rusd_escape"/>
+		<sound id="rusd_entervault" path="EnterVaultHint.ogg" subtitle_id="rusd_entervault"/>
+		<sound id="rusd_start" path="StartHint.ogg" subtitle_id="rusd_start"/>
+		<sound id="rusd_thermitewait" path="ThermiteDefendHint.ogg" subtitle_id="rusd_thermitewait"/>
+		<sound id="rusd_manager" path="FindManagerHint.ogg" subtitle_id="rusd_manager"/>
+		<sound id="rusd_vaultdialogueone" path="VaultDialogueOne.ogg" subtitle_id="rusd_vaultdialogueone"/>
+		<sound id="rusd_vaultdialoguetwo" path="VaultDialogueTwo.ogg" subtitle_id="rusd_vaultdialoguetwo"/>
+		<sound id="rusd_vaultdialoguethree" path="VaultDialogueThree.ogg" subtitle_id="rusd_vaultdialoguethree"/>
+		<sound id="rusd_timelock" path="TimelockHint.ogg" subtitle_id="rusd_timelock"/>
+	</sounds>
 		<add file="levels/rusdl/add.xml"/>
 		<assets/>
 		<hooks directory="hooks">
@@ -16,9 +32,22 @@
 			<hook file="copmovement.lua" source_file="lib/units/enemies/cop/copmovement"/>
 			<hook file="preplanningtweakdata.lua" source_file="lib/tweak_data/preplanningtweakdata"/>
 			<hook file="russia_pager_sfx_fix.lua" source_file="lib/units/enemies/cop/copbrain"/>
-			<hook file="russia_enemies.lua" source_file="lib/tweak_data/groupaitweakdata"/>
 			<hook file="russia_assets.lua" source_file="lib/tweak_data/assetstweakdata"/>
 		</hooks>
+		<include directory="levels/rusdl">
+			<file file="world.world" type="binary"/>
+			<file file="continents.continents" type="binary"/>
+			<file file="mission.mission" type="binary"/>
+			<file file="nav_manager_data.nav_data" type="binary"/>
+			<file file="world_sounds.world_sounds" type="binary"/>
+			<file file="world_cameras.world_cameras" type="binary"/>
+			<file file="editor_only/editor_only.continent" type="binary"/>
+			<file file="editor_only/editor_only.mission" type="binary"/>
+			<file file="world/world.continent" type="binary"/>
+			<file file="world/world.mission" type="binary"/>
+			<file file="cover_data.cover_data" type="binary"/>
+			<file file="environments/default.environment" type="custom_xml"/>
+		</include>
 		<outro_event>
 			<value_node value=""/>
 		</outro_event>
@@ -57,22 +86,6 @@
 				<options merge_mode="add" mode="add"/>
 			</mod>
 		</script_data_mods>
-		<sounds directory="assets/sound">
-			<sound id="rusd_brief" path="Brief.ogg"/>
-			<sound id="rusd_intro" path="Intro.ogg" subtitle_id="rusd_intro"/>
-			<sound id="rusd_thermite" path="ThermiteHint.ogg" subtitle_id="rusd_thermite"/>
-			<sound id="rusd_thermitevariant" path="ThermiteHintVariant.ogg" subtitle_id="rusd_thermitevariant"/>
-			<sound id="rusd_diamond" path="DiamondHint.ogg" subtitle_id="rusd_diamond"/>
-			<sound id="rusd_escape" path="EscapeHint.ogg" subtitle_id="rusd_escape"/>
-			<sound id="rusd_entervault" path="EnterVaultHint.ogg" subtitle_id="rusd_entervault"/>
-			<sound id="rusd_start" path="StartHint.ogg" subtitle_id="rusd_start"/>
-			<sound id="rusd_thermitewait" path="ThermiteDefendHint.ogg" subtitle_id="rusd_thermitewait"/>
-			<sound id="rusd_manager" path="FindManagerHint.ogg" subtitle_id="rusd_manager"/>
-			<sound id="rusd_vaultdialogueone" path="VaultDialogueOne.ogg" subtitle_id="rusd_vaultdialogueone"/>
-			<sound id="rusd_vaultdialoguetwo" path="VaultDialogueTwo.ogg" subtitle_id="rusd_vaultdialoguetwo"/>
-			<sound id="rusd_vaultdialoguethree" path="VaultDialogueThree.ogg" subtitle_id="rusd_vaultdialoguethree"/>
-			<sound id="rusd_timelock" path="TimelockHint.ogg" subtitle_id="rusd_timelock"/>
-		</sounds>
 	</level>
 	<narrative briefing_event="" contact="constantine" icon="textures/coldstoneicon" id="rusd">
 		<chain>

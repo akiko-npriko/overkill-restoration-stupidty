@@ -29,6 +29,13 @@ Hooks:PostHook(PrePlanningTweakData,"init","init_rusdl",function(self)
 		post_event = "preplan_10",
 		prio = 3
 	}
+
+	if Global.game_settings and Global.game_settings.one_down then
+			self.types.rusdl_backup_heister.upgrade_lock = {
+			upgrade = "additional_assets_pro",
+			category = "player"
+		}
+	end
 	
 	
 end)
