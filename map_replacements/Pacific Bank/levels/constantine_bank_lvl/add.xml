@@ -1602,6 +1602,32 @@
 		<object path="units/payday2/characters/ene_fbi_2/ene_fbi_2" unload="true"/>
 		<sequence_manager path="units/payday2/characters/ragdoll" unload="true"/>
 	</add>
+	<add from_db="true" path="units/payday2/characters/ene_fbi_3/ene_fbi_3" type="unit">
+		<unit path="units/payday2/characters/ene_fbi_3/ene_fbi_3" unload="true"/>
+		<animation_states path="anims/units/enemies/cop/civilian" unload="true"/>
+		<animation_subset path="anims/units/enemies/cop/neutral_legs" unload="true"/>
+		<animation_subset path="anims/units/enemies/cop/neutral_rifle" unload="true"/>
+		<animation_subset path="anims/units/enemies/cop/neutral_pistol" unload="true"/>
+		<animation_subset path="anims/units/enemies/cop/hostile_legs" unload="true"/>
+		<animation_subset path="anims/units/enemies/cop/hostile_rifle" unload="true"/>
+		<animation_subset path="anims/units/enemies/cop/hostile_pistol" unload="true"/>
+		<animation_subset path="anims/units/enemies/cop/combat_legs" unload="true"/>
+		<animation_subset path="anims/units/enemies/cop/combat_rifle" unload="true"/>
+		<animation_subset path="anims/units/enemies/cop/combat_pistol" unload="true"/>
+		<animation_subset path="anims/units/enemies/cop/civilian" unload="true"/>
+		<animation_subset path="anims/units/enemies/cop/hostile_akimbo_pistol" unload="true"/>
+		<animation_subset path="anims/units/enemies/cop/combat_akimbo_pistol" unload="true"/>
+		<animation_subset path="anims/units/enemies/cop/hostile_bow" unload="true"/>
+		<animation_subset path="anims/units/enemies/cop/combat_bow" unload="true"/>
+		<animation_subset path="anims/units/enemies/cop/combat_bullpup" unload="true"/>
+		<unit load="true" path="units/payday2/characters/ene_fbi_3/ene_fbi_3_husk" unload="true"/>
+		<animation_def path="anims/units/enemies/cop/cop_def" unload="true"/>
+		<animation_state_machine path="anims/units/enemies/cop/cop_machine" unload="true"/>
+		<bnk path="soundbanks/regular_vox" unload="true"/>
+		<material_config path="units/payday2/characters/ene_fbi_3/ene_fbi_3" unload="true"/>
+		<object path="units/payday2/characters/ene_fbi_3/ene_fbi_3" unload="true"/>
+		<sequence_manager path="units/payday2/characters/ragdoll" unload="true"/>
+	</add>
 	<add from_db="true" path="units/payday2/characters/ene_fbi_swat_1/ene_fbi_swat_1" type="unit">
 		<unit path="units/payday2/characters/ene_fbi_swat_1/ene_fbi_swat_1" unload="true"/>
 		<animation_states path="anims/units/enemies/cop/civilian" unload="true"/>
@@ -1616,7 +1642,6 @@
 		<animation_subset path="anims/units/enemies/cop/combat_legs" unload="true"/>
 		<animation_subset path="anims/units/enemies/cop/combat_rifle" unload="true"/>
 		<animation_subset path="anims/units/enemies/cop/combat_pistol" unload="true"/>
-		<animation_subset path="anims/units/enemies/cop/civilian" unload="true"/>
 		<animation_subset path="anims/units/enemies/cop/hostile_akimbo_pistol" unload="true"/>
 		<animation_subset path="anims/units/enemies/cop/combat_akimbo_pistol" unload="true"/>
 		<animation_subset path="anims/units/enemies/cop/hostile_bow" unload="true"/>

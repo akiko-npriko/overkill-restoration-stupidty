@@ -66,7 +66,7 @@
 	</Localization>
 	<Package file="scriptdata/ttryacht.package" id="packages/levels/constantine_ttryacht/world/world" unload_on_restart="true"/>
 	<contact assets_gui="guis/mission_briefing/preload_contact_bain" id="constantine" name_id="contact_constantine_name" package="packages/contact_bain"/>
-	<level ai_group_type="America" briefing_dialog="ttr_brief" cube="cube_apply_heist_bank" id="ttr_yct_lvl" intro_event="ttr_intro" max_bags="99" narrator="locke" player_style="generic">
+	<level ai_group_type="murkywater" briefing_dialog="ttr_brief" cube="cube_apply_heist_bank" id="ttr_yct_lvl" intro_event="ttr_intro" max_bags="99" narrator="locke" player_style="suit_sunny">
 		<assets/>
 		<hooks directory="hooks">
 			<hook file="charactertweakdata.lua" source_file="lib/tweak_data/charactertweakdata"/>

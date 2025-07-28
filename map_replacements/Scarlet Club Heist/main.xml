@@ -2,17 +2,22 @@
 	<AddFiles directory="assets">
 		<texture force="true" load="true" path="textures/scarleticon"/>
 	</AddFiles>
-	<Localization default="english.txt" directory="loc">
-		<loc file="english.txt" language="english"/>
-	</Localization>
-	<HeistMusic id="neonnight" directory="sounds">
-		<event name="setup" source="stealth.ogg"/>
+	<AssetUpdates id="32438" provider="modworkshop" version="1.3"/>
+	<HeistMusic directory="sounds" id="neonnight">
+		<event name="setup" source="setup.ogg"/>
 		<event name="anticipation" source="anticipation.ogg"/>
 		<event name="assault" source="assault.ogg"/>
 		<event name="control" source="control.ogg"/>
 	</HeistMusic>
+	<Hooks directory="hooks">
+		<hook file="musicmanager.lua" source_file="lib/managers/musicmanager"/>
+	</Hooks>
+	<Localization default="english.txt" directory="loc">
+		<loc file="english.txt" language="english"/>
+	</Localization>
 	<Sounds directory="assets/sounds">
 		<sound id="sch_brief" path="Brief.ogg"/>
+		<sound id="sch_outro" path="Outro.ogg"/>
 		<sound id="sch_intro" path="Intro.ogg" subtitle_id="sch_intro"/>
 		<sound id="sch_override" path="OverrideHint.ogg" subtitle_id="sch_override"/>
 		<sound id="sch_c4" path="C4Hint.ogg" subtitle_id="sch_c4"/>
@@ -23,6 +28,7 @@
 		<sound id="sch_cash" path="SecureCashHint.ogg" subtitle_id="sch_cash"/>
 		<sound id="sch_cover" path="CoverHint.ogg" subtitle_id="sch_cover"/>
 		<sound id="sch_painting" path="PaintingHint.ogg" subtitle_id="sch_painting"/>
+		<sound id="sch_paintingtwo" path="PaintingHintTwo.ogg" subtitle_id="sch_paintingtwo"/>
 		<sound id="sch_gascan" path="GasCanHint.ogg" subtitle_id="sch_gascan"/>
 		<sound id="sch_escort" path="EscortHint.ogg" subtitle_id="sch_escort"/>
 		<sound id="sch_chair" path="ChairHint.ogg" subtitle_id="sch_chair"/>
@@ -45,9 +51,16 @@
 		<sound id="sch_book" path="BookHint.ogg" subtitle_id="sch_book"/>
 		<sound id="sch_kill" path="KillManagerHint.ogg" subtitle_id="sch_kill"/>
 		<sound id="sch_guyfall" path="GuyFall.ogg"/>
+		<sound id="sch_guyscaredone" path="GuyScaredOne.ogg"/>
+		<sound id="sch_guyscaredtwo" path="GuyScaredTwo.ogg"/>
+		<sound id="sch_guyhitone" path="GuyHitOne.ogg"/>
+		<sound id="sch_guyhittwo" path="GuyHitTwo.ogg"/>
+		<sound id="sch_guyhitthree" path="GuyHitThree.ogg"/>
+		<sound id="sch_guyhitfour" path="GuyHitFour.ogg"/>
+		<sound id="sch_guyreactionone" path="GuyReactionOne.ogg"/>
 	</Sounds>
 	<contact assets_gui="guis/mission_briefing/preload_contact_bain" id="constantine" name_id="contact_constantine_name" package="packages/contact_bain"/>
-	<level ai_group_type="America" briefing_dialog="sch_brief" id="schl" intro_event="sch_intro" max_bags="54" player_style="generic">
+	<level ai_group_type="lapd" briefing_dialog="sch_brief" id="schl" flashlights_on="true" intro_event="sch_intro" max_bags="54" player_style="suit_sunny">
 		<add file="levels/schl/add.xml"/>
 		<assets>
 			<asset name="ammo_bag"/>
@@ -72,7 +85,7 @@
 			<file file="environments/default.environment" type="custom_xml"/>
 		</include>
 		<outro_event>
-			<value_node value=""/>
+			<value_node value="sch_outro"/>
 		</outro_event>
 		<packages>
 			<value_node value="levels/instances/unique/sub_sewer_sidespawn/world/world"/>

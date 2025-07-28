@@ -70,7 +70,7 @@
 	</Localization>
 	<Package file="scriptdata/cbank.package" id="packages/levels/constantine_cbank/world/world" unload_on_restart="true"/>
 	<contact assets_gui="guis/mission_briefing/preload_contact_bain" id="constantine" name_id="contact_constantine_name" package="packages/contact_bain"/>
-	<level ai_group_type="America" briefing_dialog="cbank_brief" ghost_bonus="0.1" id="constantine_bank_lvl" intro_event="cbank_intro" max_bags="99" narrator="locke" player_style="generic">
+	<level ai_group_type="lapd" briefing_dialog="cbank_brief" ghost_bonus="0.1" id="constantine_bank_lvl" intro_event="cbank_intro" max_bags="99" narrator="locke">
 		<assets/>
 		<hooks directory="hooks">
 			<hook file="charactertweakdata.lua" source_file="lib/tweak_data/charactertweakdata"/>

@@ -84,6 +84,13 @@ Hooks:PostHook(PrePlanningTweakData,"init","init_ttr_yct_lvl",function(self)
 		prio = 2
 	}
 
+	if Global.game_settings and Global.game_settings.one_down then
+			self.types.ttr_backup_crew.upgrade_lock = {
+			upgrade = "additional_assets_pro",
+			category = "player"
+		}
+	end
+
 	
 end)
 

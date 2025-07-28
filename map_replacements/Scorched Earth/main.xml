@@ -48,7 +48,7 @@
 		<loc file="english.txt" language="english"/>
 	</Localization>
 	<contact assets_gui="guis/mission_briefing/preload_contact_bain" id="constantine" name_id="contact_constantine_name" package="packages/contact_bain"/>
-	<level ai_group_type="America" briefing_dialog="rusw_brief" id="ruswl" intro_event="rusw_intro" max_bags="54" player_style="winter_suit">
+	<level ai_group_type="russia" briefing_dialog="rusw_brief" id="ruswl" intro_event="rusw_intro" max_bags="54" player_style="winter_suit">
 		<sounds directory="assets/sound">
 			<sound id="rusw_brief" path="Brief.ogg"/>
 			<sound id="rusw_intro" path="Intro.ogg" subtitle_id="rusw_intro"/>

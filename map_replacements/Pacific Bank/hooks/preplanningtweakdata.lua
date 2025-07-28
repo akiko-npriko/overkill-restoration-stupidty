@@ -98,7 +98,11 @@ Hooks:PostHook(PrePlanningTweakData,"init","init_constantine_bank_lvl",function(
 		cost = 1000,
 		budget_cost = 4,
 		post_event = "",
-		prio = 3
+		prio = 3,
+		upgrade_lock = {
+		upgrade = "additional_assets",
+		category = "player"
+			}
 	}
 	
 	
@@ -112,7 +116,11 @@ Hooks:PostHook(PrePlanningTweakData,"init","init_constantine_bank_lvl",function(
 		post_event = "preplan_13",
 		prio = 1,
 		cost = 2000,
-		budget_cost = 4
+		budget_cost = 4,
+		upgrade_lock = {
+		upgrade = "additional_assets",
+		category = "player"
+			}
 	}
 	
 	
@@ -128,7 +136,16 @@ Hooks:PostHook(PrePlanningTweakData,"init","init_constantine_bank_lvl",function(
 		budget_cost = 4
 	}
 	
-	
+	if Global.game_settings and Global.game_settings.one_down then
+			self.types.constantine_bank_backup_crew.upgrade_lock = {
+			upgrade = "additional_assets_pro",
+			category = "player"
+		}
+			self.types.constantine_bank_expert_van_escape.upgrade_lock = {
+			upgrade = "additional_assets_pro",
+			category = "player"
+		}
+	end	
 	
 
 	
