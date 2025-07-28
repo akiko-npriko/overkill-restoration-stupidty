@@ -347,7 +347,7 @@ Hooks:PostHook(CharacterTweakData, "init", "cdhook_constantine_backup", function
 	self.cartel_grenadier.DAMAGE_CLAMP_EXPLOSION = 300
 	
 	self.cartel_grenadier.move_speed = self.presets.move_speed.fast
-	self.cartel_grenadier.damage.hurt_severity = self.presets.hurt_severities.nohurts	
+	self.cartel_grenadier.damage.hurt_severity = self.presets.hurt_severities.no_hurts	
 	self.cartel_grenadier.can_be_tased = true	
 ---	self.cartel_grenadier.weapon = self.presets.weapon.gang_member
 	self.cartel_grenadier.damage.immune_to_knockback = true
@@ -375,7 +375,7 @@ Hooks:PostHook(CharacterTweakData, "init", "cdhook_constantine_backup", function
 	self.cartel_grenadier_fire.DAMAGE_CLAMP_EXPLOSION = 300
 	
 	self.cartel_grenadier_fire.move_speed = self.presets.move_speed.fast
-	self.cartel_grenadier_fire.damage.hurt_severity = self.presets.hurt_severities.nohurts	
+	self.cartel_grenadier_fire.damage.hurt_severity = self.presets.hurt_severities.no_hurts	
 	self.cartel_grenadier_fire.can_be_tased = true	
 ---	self.cartel_grenadier_fire.weapon = self.presets.weapon.gang_member
 	self.cartel_grenadier_fire.damage.immune_to_knockback = true
