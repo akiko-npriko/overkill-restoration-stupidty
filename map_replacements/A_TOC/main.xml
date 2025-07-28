@@ -1,11 +1,4 @@
 <table name="A Touch of Class">
-	<AddFiles directory="assets">
-		<texture force="true" load="true" path="textures/atocicon"/>
-	</AddFiles>
-	<AssetUpdates id="32605" provider="modworkshop" version="1.4"/>
-	<Localization default="english.txt" directory="loc">
-		<loc file="english.txt" language="english"/>
-	</Localization>
 	<Sounds directory="assets/sfx">
 		<sound id="rus_dsp_radio_query_1_a" path="rus_dsp_radio_query_1_a.ogg"/>
 		<sound id="rus_dsp_radio_query_1_b" path="rus_dsp_radio_query_1_b.ogg"/>
@@ -43,8 +36,31 @@
 			<sound id="fri_dsp_stop_all"/>
 		</random>
 	</Sounds>
+
+	<AddFiles directory="assets">
+		<texture force="true" load="true" path="textures/atocicon"/>
+	</AddFiles>
+	<AssetUpdates id="32605" provider="modworkshop" version="1.4"/>
+	<Localization default="english.txt" directory="loc">
+		<loc file="english.txt" language="english"/>
+	</Localization>
 	<contact assets_gui="guis/mission_briefing/preload_contact_bain" id="constantine" name_id="contact_constantine_name" package="packages/contact_bain"/>
-	<level ai_group_type="America" briefing_dialog="atoc_brief" ghost_bonus="0.1" id="atocl" intro_event="atoc_intro" max_bags="54" player_style="generic">
+	<level ai_group_type="russia" briefing_dialog="atoc_brief" ghost_bonus="0.1" id="atocl" intro_event="atoc_intro" max_bags="54" player_style="continental">
+	
+	
+	<sounds directory="assets/sound">
+		<sound id="atoc_brief" path="Brief.ogg"/>
+		<sound id="atoc_intro" path="Intro.ogg" subtitle_id="atoc_intro"/>
+		<sound id="atoc_upstairs" path="HeadUpstairsHint.ogg" subtitle_id="atoc_upstairs"/>
+		<sound id="atoc_findserver" path="ServerHint.ogg" subtitle_id="atoc_findserver"/>
+		<sound id="atoc_keycard" path="KeycardHint.ogg" subtitle_id="atoc_keycard"/>
+		<sound id="atoc_serverpc" path="ServerPCHint.ogg" subtitle_id="atoc_serverpc"/>
+		<sound id="atoc_device" path="DeviceHint.ogg" subtitle_id="atoc_device"/>
+		<sound id="atoc_phone" path="PhoneHint.ogg" subtitle_id="atoc_phone"/>
+		<sound id="atoc_enteroffice" path="OfficeHint.ogg" subtitle_id="atoc_enteroffice"/>
+		<sound id="atoc_officepc" path="OfficePCHint.ogg" subtitle_id="atoc_officepc"/>
+		<sound id="atoc_escape" path="EscapeHint.ogg" subtitle_id="atoc_escape"/>
+	</sounds>	
 		<add file="levels/atocl/add.xml"/>
 		<assets>
 			<asset name="bodybags_bag"/>
@@ -53,6 +69,20 @@
 			<hook file="russia_pager_sfx_fix.lua" source_file="lib/units/enemies/cop/copbrain"/>
 			<hook file="russia_charactertweakdata.lua" source_file="lib/tweak_data/charactertweakdata"/>
 		</hooks>
+		<include directory="levels/atocl">
+			<file file="world.world" type="binary"/>
+			<file file="continents.continents" type="binary"/>
+			<file file="mission.mission" type="binary"/>
+			<file file="nav_manager_data.nav_data" type="binary"/>
+			<file file="world_sounds.world_sounds" type="binary"/>
+			<file file="world_cameras.world_cameras" type="binary"/>
+			<file file="editor_only/editor_only.continent" type="binary"/>
+			<file file="editor_only/editor_only.mission" type="binary"/>
+			<file file="world/world.continent" type="binary"/>
+			<file file="world/world.mission" type="binary"/>
+			<file file="cover_data.cover_data" type="binary"/>
+			<file file="environments/default.environment" type="custom_xml"/>
+		</include>
 		<outro_event>
 			<value_node value=""/>
 		</outro_event>
@@ -92,19 +122,6 @@
 				<options merge_mode="add" mode="add"/>
 			</mod>
 		</script_data_mods>
-		<sounds directory="assets/sound">
-			<sound id="atoc_brief" path="Brief.ogg"/>
-			<sound id="atoc_intro" path="Intro.ogg" subtitle_id="atoc_intro"/>
-			<sound id="atoc_upstairs" path="HeadUpstairsHint.ogg" subtitle_id="atoc_upstairs"/>
-			<sound id="atoc_findserver" path="ServerHint.ogg" subtitle_id="atoc_findserver"/>
-			<sound id="atoc_keycard" path="KeycardHint.ogg" subtitle_id="atoc_keycard"/>
-			<sound id="atoc_serverpc" path="ServerPCHint.ogg" subtitle_id="atoc_serverpc"/>
-			<sound id="atoc_device" path="DeviceHint.ogg" subtitle_id="atoc_device"/>
-			<sound id="atoc_phone" path="PhoneHint.ogg" subtitle_id="atoc_phone"/>
-			<sound id="atoc_enteroffice" path="OfficeHint.ogg" subtitle_id="atoc_enteroffice"/>
-			<sound id="atoc_officepc" path="OfficePCHint.ogg" subtitle_id="atoc_officepc"/>
-			<sound id="atoc_escape" path="EscapeHint.ogg" subtitle_id="atoc_escape"/>
-		</sounds>
 	</level>
 	<narrative briefing_event="" contact="constantine" icon="textures/atocicon" id="atoc">
 		<chain>
