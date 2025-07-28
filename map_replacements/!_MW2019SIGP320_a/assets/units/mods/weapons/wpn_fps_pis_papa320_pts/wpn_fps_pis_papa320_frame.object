@@ -1,0 +1,15 @@
+<dynamic_object>
+    <diesel materials="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_frame" orientation_object="rp_frame" />
+    <animations>
+		<animation_group name="reload">
+			<object name="anim_cocking_lever_reload" enabled="true" />	
+		</animation_group>
+		<animation_group name="recoil">
+			<object name="anim_cocking_lever_shoot" enabled="true" />	
+		</animation_group>
+	</animations>
+    <graphics>
+        <object name="g_papa320_frame" enabled="true" />
+        <object name="g_papa320_striker" enabled="true" />
+    </graphics>
+</dynamic_object>

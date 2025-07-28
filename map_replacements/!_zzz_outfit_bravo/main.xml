@@ -1,0 +1,405 @@
+<table name="Bravo Teams Outfit Pack" image="">
+	<Localization directory="localization" default="english.txt"/>
+	<GlobalValue id="bravo_g" color="Color(0.8, 0.2, 0)"/>
+
+	<!--USNG Rifleman-->
+	<PlayerStyle id="bravo_america_rifle" unit="units/bravo/armor_skins/bravo_america_rifle/bravo_america_rifle_fps" third_unit="units/bravo/armor_skins/bravo_america_rifle/bravo_america_rifle" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic USNG Rifleman-->
+	<PlayerStyle id="bravo_america_rifle_classic" unit="units/bravo/armor_skins/bravo_america_rifle_classic/bravo_america_rifle_classic_fps" third_unit="units/bravo/armor_skins/bravo_america_rifle_classic/bravo_america_rifle_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--USNG Shotgunner-->
+	<PlayerStyle id="bravo_america_shotgun" unit="units/bravo/armor_skins/bravo_america_shotgun/bravo_america_shotgun_fps" third_unit="units/bravo/armor_skins/bravo_america_shotgun/bravo_america_shotgun" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic USNG Shotgunner-->
+	<PlayerStyle id="bravo_america_shotgun_classic" unit="units/bravo/armor_skins/bravo_america_shotgun_classic/bravo_america_shotgun_classic_fps" third_unit="units/bravo/armor_skins/bravo_america_shotgun_classic/bravo_america_shotgun_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--USNG Marksman-->
+	<PlayerStyle id="bravo_america_dmr" unit="units/bravo/armor_skins/bravo_america_dmr/bravo_america_dmr_fps" third_unit="units/bravo/armor_skins/bravo_america_dmr/bravo_america_dmr" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic USNG Marksman-->
+	<PlayerStyle id="bravo_america_dmr_classic" unit="units/bravo/armor_skins/bravo_america_dmr_classic/bravo_america_dmr_classic_fps" third_unit="units/bravo/armor_skins/bravo_america_dmr_classic/bravo_america_dmr_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--USNG LMG Elite-->
+	<PlayerStyle id="bravo_america_lmg" unit="units/bravo/armor_skins/bravo_america_lmg/bravo_america_lmg_fps" third_unit="units/bravo/armor_skins/bravo_america_lmg/bravo_america_lmg" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic USNG LMG Elite-->
+	<PlayerStyle id="bravo_america_lmg_classic" unit="units/bravo/armor_skins/bravo_america_lmg_classic/bravo_america_lmg_classic_fps" third_unit="units/bravo/armor_skins/bravo_america_lmg_classic/bravo_america_lmg_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--AKAN CT Rifleman-->
+	<PlayerStyle id="bravo_reaper_rifle" unit="units/bravo/armor_skins/bravo_reaper_rifle/bravo_reaper_rifle_fps" third_unit="units/bravo/armor_skins/bravo_reaper_rifle/bravo_reaper_rifle" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic AKAN CT Rifleman-->
+	<PlayerStyle id="bravo_reaper_rifle_classic" unit="units/bravo/armor_skins/bravo_reaper_rifle_classic/bravo_reaper_rifle_classic_fps" third_unit="units/bravo/armor_skins/bravo_reaper_rifle_classic/bravo_reaper_rifle_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--AKAN CT Shotgunner-->
+	<PlayerStyle id="bravo_reaper_shotgun" unit="units/bravo/armor_skins/bravo_reaper_shotgun/bravo_reaper_shotgun_fps" third_unit="units/bravo/armor_skins/bravo_reaper_shotgun/bravo_reaper_shotgun" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic AKAN CT Shotgunner-->
+	<PlayerStyle id="bravo_reaper_shotgun_classic" unit="units/bravo/armor_skins/bravo_reaper_shotgun_classic/bravo_reaper_shotgun_classic_fps" third_unit="units/bravo/armor_skins/bravo_reaper_shotgun_classic/bravo_reaper_shotgun_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--AKAN CT Marksman-->
+	<PlayerStyle id="bravo_reaper_dmr" unit="units/bravo/armor_skins/bravo_reaper_dmr/bravo_reaper_dmr_fps" third_unit="units/bravo/armor_skins/bravo_reaper_dmr/bravo_reaper_dmr" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic AKAN CT Marksman-->
+	<PlayerStyle id="bravo_reaper_dmr_classic" unit="units/bravo/armor_skins/bravo_reaper_dmr_classic/bravo_reaper_dmr_classic_fps" third_unit="units/bravo/armor_skins/bravo_reaper_dmr_classic/bravo_reaper_dmr_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--AKAN CT LMG Elite-->
+	<PlayerStyle id="bravo_reaper_lmg" unit="units/bravo/armor_skins/bravo_reaper_lmg/bravo_reaper_lmg_fps" third_unit="units/bravo/armor_skins/bravo_reaper_lmg/bravo_reaper_lmg" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic AKAN CT LMG Elite-->
+	<PlayerStyle id="bravo_reaper_lmg_classic" unit="units/bravo/armor_skins/bravo_reaper_lmg_classic/bravo_reaper_lmg_classic_fps" third_unit="units/bravo/armor_skins/bravo_reaper_lmg_classic/bravo_reaper_lmg_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--MC Rifleman-->
+	<PlayerStyle id="bravo_murkywater_rifle" unit="units/bravo/armor_skins/bravo_murkywater_rifle/bravo_murkywater_rifle_fps" third_unit="units/bravo/armor_skins/bravo_murkywater_rifle/bravo_murkywater_rifle" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--MC Shotgunner-->
+	<PlayerStyle id="bravo_murkywater_shotgun" unit="units/bravo/armor_skins/bravo_murkywater_shotgun/bravo_murkywater_shotgun_fps" third_unit="units/bravo/armor_skins/bravo_murkywater_shotgun/bravo_murkywater_shotgun" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--MC Marksman-->
+	<PlayerStyle id="bravo_murkywater_dmr" unit="units/bravo/armor_skins/bravo_murkywater_dmr/bravo_murkywater_dmr_fps" third_unit="units/bravo/armor_skins/bravo_murkywater_dmr/bravo_murkywater_dmr" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--MC LMG Elite 1-->
+	<PlayerStyle id="bravo_murkywater_lmg_1" unit="units/bravo/armor_skins/bravo_murkywater_lmg_1/bravo_murkywater_lmg_1_fps" third_unit="units/bravo/armor_skins/bravo_murkywater_lmg_1/bravo_murkywater_lmg_1" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--MC LMG Elite 2-->
+	<PlayerStyle id="bravo_murkywater_lmg_2" unit="units/bravo/armor_skins/bravo_murkywater_lmg_2/bravo_murkywater_lmg_2_fps" third_unit="units/bravo/armor_skins/bravo_murkywater_lmg_2/bravo_murkywater_lmg_2" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--OMNIA Rifleman-->
+	<PlayerStyle id="bravo_omnia_rifle" unit="units/bravo/armor_skins/bravo_omnia_rifle/bravo_omnia_rifle_fps" third_unit="units/bravo/armor_skins/bravo_omnia_rifle/bravo_omnia_rifle" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--OMNIA Shotgunner-->
+	<PlayerStyle id="bravo_omnia_shotgun" unit="units/bravo/armor_skins/bravo_omnia_rifle/bravo_omnia_rifle_fps" third_unit="units/bravo/armor_skins/bravo_omnia_shotgun/bravo_omnia_shotgun" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--OMNIA Marksman-->
+	<PlayerStyle id="bravo_omnia_dmr" unit="units/bravo/armor_skins/bravo_omnia_rifle/bravo_omnia_rifle_fps" third_unit="units/bravo/armor_skins/bravo_omnia_dmr/bravo_omnia_dmr" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--OMNIA LMG Elite-->
+	<PlayerStyle id="bravo_omnia_lmg" unit="units/bravo/armor_skins/bravo_omnia_lmg/bravo_omnia_lmg_fps" third_unit="units/bravo/armor_skins/bravo_omnia_lmg/bravo_omnia_lmg" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--EM Rifleman-->
+	<PlayerStyle id="bravo_federales_rifle" unit="units/bravo/armor_skins/bravo_federales_rifle/bravo_federales_rifle_fps" third_unit="units/bravo/armor_skins/bravo_federales_rifle/bravo_federales_rifle" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--EM Shotgunner-->
+	<PlayerStyle id="bravo_federales_shotgun" unit="units/bravo/armor_skins/bravo_federales_shotgun/bravo_federales_shotgun_fps" third_unit="units/bravo/armor_skins/bravo_federales_shotgun/bravo_federales_shotgun" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--EM Marksman-->
+	<PlayerStyle id="bravo_federales_dmr" unit="units/bravo/armor_skins/bravo_federales_dmr/bravo_federales_dmr_fps" third_unit="units/bravo/armor_skins/bravo_federales_dmr/bravo_federales_dmr" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--EM LMG Elite-->
+	<PlayerStyle id="bravo_federales_lmg" unit="units/bravo/armor_skins/bravo_federales_lmg/bravo_federales_lmg_fps" third_unit="units/bravo/armor_skins/bravo_federales_lmg/bravo_federales_lmg" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--USNG Dozer-->
+	<PlayerStyle id="bravo_dozer" unit="units/bravo/armor_skins/bravo_dozer/bravo_dozer_fps" third_unit="units/bravo/armor_skins/bravo_dozer/bravo_dozer" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="bravo" global_value="bravo_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<AddFiles directory="assets">
+	<!--USNG Rifleman-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_america_rifle"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_america_rifle/bravo_america_rifle"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_america_rifle/bravo_america_rifle_fps"/>
+
+	<!--Classic USNG Rifleman-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_america_rifle_classic"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_america_rifle_classic/bravo_america_rifle_classic"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_america_rifle_classic/bravo_america_rifle_classic_fps"/>
+
+	<!--USNG Shotgunner-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_america_shotgun"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_america_shotgun/bravo_america_shotgun"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_america_shotgun/bravo_america_shotgun_fps"/>
+
+	<!--Classic USNG Shotgunner-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_america_shotgun_classic"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_america_shotgun_classic/bravo_america_shotgun_classic"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_america_shotgun_classic/bravo_america_shotgun_classic_fps"/>
+
+	<!--USNG Marksman-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_america_dmr"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_america_dmr/bravo_america_dmr"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_america_dmr/bravo_america_dmr_fps"/>
+
+	<!--Classic USNG Marksman-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_america_dmr_classic"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_america_dmr_classic/bravo_america_dmr_classic"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_america_dmr_classic/bravo_america_dmr_classic_fps"/>
+
+	<!--USNG LMG Elite-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_america_lmg"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_america_lmg/bravo_america_lmg"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_america_lmg/bravo_america_lmg_fps"/>
+
+	<!--Classic USNG LMG Elite-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_america_lmg_classic"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_america_lmg_classic/bravo_america_lmg_classic"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_america_lmg_classic/bravo_america_lmg_classic_fps"/>
+
+	<!--AKAN CT Rifleman-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_reaper_rifle"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_reaper_rifle/bravo_reaper_rifle"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_reaper_rifle/bravo_reaper_rifle_fps"/>
+
+	<!--Classic AKAN CT Rifleman-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_reaper_rifle_classic"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_reaper_rifle_classic/bravo_reaper_rifle_classic"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_reaper_rifle_classic/bravo_reaper_rifle_classic_fps"/>
+
+	<!--AKAN CT Shotgunner-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_reaper_shotgun"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_reaper_shotgun/bravo_reaper_shotgun"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_reaper_shotgun/bravo_reaper_shotgun_fps"/>
+
+	<!--Classic AKAN CT Shotgunner-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_reaper_shotgun_classic"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_reaper_shotgun_classic/bravo_reaper_shotgun_classic"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_reaper_shotgun_classic/bravo_reaper_shotgun_classic_fps"/>
+
+	<!--AKAN CT Marksman-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_reaper_dmr"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_reaper_dmr/bravo_reaper_dmr"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_reaper_dmr/bravo_reaper_dmr_fps"/>
+
+	<!--Classic AKAN CT Marksman-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_reaper_dmr_classic"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_reaper_dmr_classic/bravo_reaper_dmr_classic"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_reaper_dmr_classic/bravo_reaper_dmr_classic_fps"/>
+
+	<!--AKAN CT LMG Elite-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_reaper_lmg"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_reaper_lmg/bravo_reaper_lmg"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_reaper_lmg/bravo_reaper_lmg_fps"/>
+
+	<!--Classic AKAN CT LMG Elite-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_reaper_lmg_classic"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_reaper_lmg_classic/bravo_reaper_lmg_classic"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_reaper_lmg_classic/bravo_reaper_lmg_classic_fps"/>
+
+	<!--MC Rifleman-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_murkywater_rifle"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_murkywater_rifle/bravo_murkywater_rifle"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_murkywater_rifle/bravo_murkywater_rifle_fps"/>
+
+	<!--MC Shotgunner-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_murkywater_shotgun"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_murkywater_shotgun/bravo_murkywater_shotgun"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_murkywater_shotgun/bravo_murkywater_shotgun_fps"/>
+
+	<!--MC Marksman-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_murkywater_dmr"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_murkywater_dmr/bravo_murkywater_dmr"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_murkywater_dmr/bravo_murkywater_dmr_fps"/>
+		<texture path="units/bravo/armor_skins/bravo_murkywater_dmr/dmr_hood_nm"/>
+		<texture path="units/bravo/armor_skins/bravo_murkywater_dmr/dmr_hood_df"/>
+		<texture path="units/bravo/armor_skins/bravo_murkywater_dmr/leaves_df"/>
+		<texture path="units/bravo/armor_skins/bravo_murkywater_dmr/leaves_op"/>
+
+	<!--MC LMG Elite 1-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_murkywater_lmg_1"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_murkywater_lmg_1/bravo_murkywater_lmg_1"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_murkywater_lmg_1/bravo_murkywater_lmg_1_fps"/>
+
+	<!--MC LMG Elite 2-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_murkywater_lmg_2"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_murkywater_lmg_2/bravo_murkywater_lmg_2"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_murkywater_lmg_2/bravo_murkywater_lmg_2_fps"/>
+		<texture path="units/bravo/armor_skins/bravo_murkywater_lmg_2/bravo_lmg_murky_df"/>
+		<texture path="units/bravo/armor_skins/bravo_murkywater_lmg_2/helmet_nm"/>
+		<texture path="units/bravo/armor_skins/bravo_murkywater_lmg_2/helmet_df"/>
+		<texture path="units/bravo/armor_skins/bravo_murkywater_lmg_2/helmet_op"/>
+
+	<!--OMNIA Rifleman-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_omnia_rifle"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_omnia_rifle/bravo_omnia_rifle"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_omnia_rifle/bravo_omnia_rifle_fps"/>
+
+	<!--OMNIA Shotgunner-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_omnia_shotgun"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_omnia_shotgun/bravo_omnia_shotgun"/>
+
+	<!--OMNIA Marksman-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_omnia_dmr"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_omnia_dmr/bravo_omnia_dmr"/>
+
+	<!--OMNIA LMG Elite-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_omnia_lmg"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_omnia_lmg/bravo_omnia_lmg"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_omnia_lmg/bravo_omnia_lmg_fps"/>
+
+	<!--EM Rifleman-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_federales_rifle"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_federales_rifle/bravo_federales_rifle"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_federales_rifle/bravo_federales_rifle_fps"/>
+
+	<!--EM Shotgunner-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_federales_shotgun"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_federales_shotgun/bravo_federales_shotgun"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_federales_shotgun/bravo_federales_shotgun_fps"/>
+		<texture path="units/bravo/armor_skins/bravo_federales_shotgun/ene_bex_cop_policia_head_atlas_nm"/>
+		<texture path="units/bravo/armor_skins/bravo_federales_shotgun/ene_bex_cop_policia_head_atlas_df"/>
+
+	<!--EM Marksman-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_federales_dmr"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_federales_dmr/bravo_federales_dmr"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_federales_dmr/bravo_federales_dmr_fps"/>
+
+	<!--EM LMG Elite-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_federales_lmg"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_federales_lmg/bravo_federales_lmg"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_federales_lmg/bravo_federales_lmg_fps"/>
+
+	<!--USNG Dozer-->
+		<texture path="guis/dlcs/bravo/textures/pd2/blackmarket/icons/player_styles/bravo_dozer"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_dozer/bravo_dozer"/>
+		<unit_mat path="units/bravo/armor_skins/bravo_dozer/bravo_dozer_fps"/>
+		<texture path="units/bravo/armor_skins/bravo_dozer/ene_bravo_bulldozer_nm"/>
+		<texture path="units/bravo/armor_skins/bravo_dozer/ene_bravo_bulldozer_df"/>
+
+	<!--Shared Textures-->
+		<texture path="units/bravo/armor_skins/shared_textures/bravo_atlas_nm"/>
+		<texture path="units/bravo/armor_skins/shared_textures/bravo_atlas_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/bravo_body_nm"/>
+		<texture path="units/bravo/armor_skins/shared_textures/bravo_dmr_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/bravo_dmr_murky_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/bravo_dmr_ru_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/bravo_lmg_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/bravo_lmg_murky_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/bravo_lmg_ru_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/bravo_mex_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/bravo_mex_elite_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/bravo_murky_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/bravo_rifle_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/bravo_rifle_helmet_ru_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/bravo_rifle_helmet_ru_classic_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/bravo_rifle_ru_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/bravo_rifle_ru_classic_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/bravo_ru_head_nm"/>
+		<texture path="units/bravo/armor_skins/shared_textures/bravo_ru_head_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/bravo_ru_head_classic_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/bravo_ru_head_il"/>
+		<texture path="units/bravo/armor_skins/shared_textures/bravo_shotgun_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/bravo_shotgun_ru_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/bulldozer_glass_op"/>
+		<texture path="units/bravo/armor_skins/shared_textures/ene_akan_medic_body_nm"/>
+		<texture path="units/bravo/armor_skins/shared_textures/ene_akan_medic_head_nm"/>
+		<texture path="units/bravo/armor_skins/shared_textures/ene_omnia_city_nm"/>
+		<texture path="units/bravo/armor_skins/shared_textures/ene_omnia_city_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/ene_security_gensec_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/ene_soldier_akan_1_nm"/>
+		<texture path="units/bravo/armor_skins/shared_textures/eyes_il"/>
+		<texture path="units/bravo/armor_skins/shared_textures/gren_glass_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/head_01_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/head_new_nm"/>
+		<texture path="units/bravo/armor_skins/shared_textures/head_new_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/heads_atlas_nm"/>
+		<texture path="units/bravo/armor_skins/shared_textures/heads_atlas_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/heads_atlas_mex_nm"/>
+		<texture path="units/bravo/armor_skins/shared_textures/heads_atlas_mex_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/heads_atlas_murky_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/heads_atlas_omnia_nm"/>
+		<texture path="units/bravo/armor_skins/shared_textures/heads_atlas_omnia_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/heads_atlas_ru_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/helmets_atlas_nm"/>
+		<texture path="units/bravo/armor_skins/shared_textures/helmets_atlas_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/helmets_atlas_mex_nm"/>
+		<texture path="units/bravo/armor_skins/shared_textures/helmets_atlas_mex_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/helmets_atlas_murky_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/helmets_atlas_ru_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/helmets_omnia_atlas_nm"/>
+		<texture path="units/bravo/armor_skins/shared_textures/helmets_omnia_atlas_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/murky_grenadier_helm_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/red_glass_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/swat_atlas_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/titan_glass_df"/>
+		<texture path="units/bravo/armor_skins/shared_textures/titan_glass_op"/>
+		<texture path="units/bravo/armor_skins/shared_textures/zomnia_glass_op"/>
+	</AddFiles>
+</table>

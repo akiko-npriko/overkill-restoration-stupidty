@@ -1,0 +1,136 @@
+<table name="Zombie Titans Outfit Pack" image="">
+	<Localization directory="localization" default="english.txt"/>
+	<GlobalValue id="zombie_titan_g" color="Color(0, 1, 0)"/>
+
+	<!--SWAT Rifleman-->
+	<PlayerStyle id="zombie_titan_swat_rifle" unit="units/zombie_titan/armor_skins/zombie_titan_swat_rifle/zombie_titan_swat_rifle_fps" third_unit="units/zombie_titan/armor_skins/zombie_titan_swat_rifle/zombie_titan_swat_rifle" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="zombie_titan" global_value="zombie_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--SWAT Shotgunner-->
+	<PlayerStyle id="zombie_titan_swat_shotgun" unit="units/zombie_titan/armor_skins/zombie_titan_swat_shotgun/zombie_titan_swat_shotgun_fps" third_unit="units/zombie_titan/armor_skins/zombie_titan_swat_shotgun/zombie_titan_swat_shotgun" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="zombie_titan" global_value="zombie_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Shield-->
+	<PlayerStyle id="zombie_titan_shield" unit="units/zombie_titan/armor_skins/zombie_titan_shield/zombie_titan_shield_fps" third_unit="units/zombie_titan/armor_skins/zombie_titan_shield/zombie_titan_shield" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="zombie_titan" global_value="zombie_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Sniper-->
+	<PlayerStyle id="zombie_titan_sniper" unit="units/zombie_titan/armor_skins/zombie_titan_sniper/zombie_titan_sniper_fps" third_unit="units/zombie_titan/armor_skins/zombie_titan_sniper/zombie_titan_sniper" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="zombie_titan" global_value="zombie_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--ASU-->
+	<PlayerStyle id="zombie_titan_fbi" unit="units/zombie_titan/armor_skins/zombie_titan_fbi/zombie_titan_fbi_fps" third_unit="units/zombie_titan/armor_skins/zombie_titan_fbi/zombie_titan_fbi" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="zombie_titan" global_value="zombie_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Taser-->
+	<PlayerStyle id="zombie_titan_taser" unit="units/zombie_titan/armor_skins/zombie_titan_taser/zombie_titan_taser_fps" third_unit="units/zombie_titan/armor_skins/zombie_titan_taser/zombie_titan_taser" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="zombie_titan" global_value="zombie_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Cloaker-->
+	<PlayerStyle id="zombie_titan_spook" unit="units/zombie_titan/armor_skins/zombie_titan_spook/zombie_titan_spook_fps" third_unit="units/zombie_titan/armor_skins/zombie_titan_spook/zombie_titan_spook" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="zombie_titan" global_value="zombie_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--LPF-->
+	<PlayerStyle id="zombie_titan_lpf" unit="units/zombie_titan/armor_skins/zombie_titan_lpf/zombie_titan_lpf_fps" third_unit="units/zombie_titan/armor_skins/zombie_titan_lpf/zombie_titan_lpf" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="zombie_titan" global_value="zombie_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--HHHTDH-->
+	<PlayerStyle id="zombie_captain_hatman" unit="units/zombie_titan/armor_skins/zombie_captain_hatman/zombie_captain_hatman_fps" third_unit="units/zombie_titan/armor_skins/zombie_captain_hatman/zombie_captain_hatman" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="zombie_titan" global_value="zombie_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<AddFiles directory="assets">
+	<!--SWAT Rifleman-->
+		<texture path="guis/dlcs/zombie_titan/textures/pd2/blackmarket/icons/player_styles/zombie_titan_swat_rifle"/>
+		<unit_mat path="units/zombie_titan/armor_skins/zombie_titan_swat_rifle/zombie_titan_swat_rifle"/>
+		<unit_mat path="units/zombie_titan/armor_skins/zombie_titan_swat_rifle/zombie_titan_swat_rifle_fps"/>
+
+	<!--SWAT Shotgunner-->
+		<texture path="guis/dlcs/zombie_titan/textures/pd2/blackmarket/icons/player_styles/zombie_titan_swat_shotgun"/>
+		<unit_mat path="units/zombie_titan/armor_skins/zombie_titan_swat_shotgun/zombie_titan_swat_shotgun"/>
+		<unit_mat path="units/zombie_titan/armor_skins/zombie_titan_swat_shotgun/zombie_titan_swat_shotgun_fps"/>
+
+	<!--Shield-->
+		<texture path="guis/dlcs/zombie_titan/textures/pd2/blackmarket/icons/player_styles/zombie_titan_shield"/>
+		<unit_mat path="units/zombie_titan/armor_skins/zombie_titan_shield/zombie_titan_shield"/>
+		<unit_mat path="units/zombie_titan/armor_skins/zombie_titan_shield/zombie_titan_shield_fps"/>
+		<texture path="units/zombie_titan/armor_skins/zombie_titan_shield/heads_atlas_hvh_df"/>
+		<texture path="units/zombie_titan/armor_skins/zombie_titan_shield/vampirecount_df"/>
+
+	<!--Sniper-->
+		<texture path="guis/dlcs/zombie_titan/textures/pd2/blackmarket/icons/player_styles/zombie_titan_sniper"/>
+		<unit_mat path="units/zombie_titan/armor_skins/zombie_titan_sniper/zombie_titan_sniper"/>
+		<unit_mat path="units/zombie_titan/armor_skins/zombie_titan_sniper/zombie_titan_sniper_fps"/>
+		<texture path="units/zombie_titan/armor_skins/zombie_titan_sniper/alien_helmet_df"/>
+
+	<!--ASU-->
+		<texture path="guis/dlcs/zombie_titan/textures/pd2/blackmarket/icons/player_styles/zombie_titan_fbi"/>
+		<unit_mat path="units/zombie_titan/armor_skins/zombie_titan_fbi/zombie_titan_fbi"/>
+		<unit_mat path="units/zombie_titan/armor_skins/zombie_titan_fbi/zombie_titan_fbi_fps"/>
+
+	<!--Taser-->
+		<texture path="guis/dlcs/zombie_titan/textures/pd2/blackmarket/icons/player_styles/zombie_titan_taser"/>
+		<unit_mat path="units/zombie_titan/armor_skins/zombie_titan_taser/zombie_titan_taser"/>
+		<unit_mat path="units/zombie_titan/armor_skins/zombie_titan_taser/zombie_titan_taser_fps"/>
+		<texture path="units/zombie_titan/armor_skins/zombie_titan_taser/frank_df"/>
+		<texture path="units/zombie_titan/armor_skins/zombie_titan_taser/phalanx_medic_head_df"/>
+
+	<!--Cloaker-->
+		<texture path="guis/dlcs/zombie_titan/textures/pd2/blackmarket/icons/player_styles/zombie_titan_spook"/>
+		<unit_mat path="units/zombie_titan/armor_skins/zombie_titan_spook/zombie_titan_spook"/>
+		<unit_mat path="units/zombie_titan/armor_skins/zombie_titan_spook/zombie_titan_spook_fps"/>
+
+	<!--LPF-->
+		<texture path="guis/dlcs/zombie_titan/textures/pd2/blackmarket/icons/player_styles/zombie_titan_lpf"/>
+		<unit_mat path="units/zombie_titan/armor_skins/zombie_titan_lpf/zombie_titan_lpf"/>
+		<unit_mat path="units/zombie_titan/armor_skins/zombie_titan_lpf/zombie_titan_lpf_fps"/>
+
+	<!--HHHTDH-->
+		<texture path="guis/dlcs/zombie_titan/textures/pd2/blackmarket/icons/player_styles/zombie_captain_hatman"/>
+		<unit_mat path="units/zombie_titan/armor_skins/zombie_captain_hatman/zombie_captain_hatman"/>
+		<unit_mat path="units/zombie_titan/armor_skins/zombie_captain_hatman/zombie_captain_hatman_fps"/>
+		<texture path="units/zombie_titan/armor_skins/zombie_captain_hatman/hatman_nm"/>
+		<texture path="units/zombie_titan/armor_skins/zombie_captain_hatman/hatman_df"/>
+
+	<!--Shared Textures-->
+		<texture path="units/zombie_titan/armor_skins/shared_textures/ene_omnia_lpf_nm"/>
+		<texture path="units/zombie_titan/armor_skins/shared_textures/ene_omnia_lpf_df"/>
+		<texture path="units/zombie_titan/armor_skins/shared_textures/ene_phalanx_body_df"/>
+		<texture path="units/zombie_titan/armor_skins/shared_textures/ene_phalanx_snp_df"/>
+		<texture path="units/zombie_titan/armor_skins/shared_textures/ene_soldier_akan_1_nm"/>
+		<texture path="units/zombie_titan/armor_skins/shared_textures/ene_skele_swat_df"/>
+		<texture path="units/zombie_titan/armor_skins/shared_textures/ene_skele_swat_2_df"/>
+		<texture path="units/zombie_titan/armor_skins/shared_textures/ene_titan_fbi_df"/>
+		<texture path="units/zombie_titan/armor_skins/shared_textures/ene_titan_fbi_head_df"/>
+		<texture path="units/zombie_titan/armor_skins/shared_textures/ene_titan_taser_df"/>
+		<texture path="units/zombie_titan/armor_skins/shared_textures/head_01_df"/>
+		<texture path="units/zombie_titan/armor_skins/shared_textures/heads_atlas_df"/>
+		<texture path="units/zombie_titan/armor_skins/shared_textures/lycan_df"/>
+		<texture path="units/zombie_titan/armor_skins/shared_textures/lycan_il"/>
+		<texture path="units/zombie_titan/armor_skins/shared_textures/material_sds_04_df"/>
+		<texture path="units/zombie_titan/armor_skins/shared_textures/mcm_hector_helmet_df"/>
+		<texture path="units/zombie_titan/armor_skins/shared_textures/skull_nm"/>
+		<texture path="units/zombie_titan/armor_skins/shared_textures/skull_df"/>
+		<texture path="units/zombie_titan/armor_skins/shared_textures/spine_nm"/>
+		<texture path="units/zombie_titan/armor_skins/shared_textures/spine_df"/>
+		<texture path="units/zombie_titan/armor_skins/shared_textures/spook_cloak_dead_df"/>
+		<texture path="units/zombie_titan/armor_skins/shared_textures/titan_il"/>
+	</AddFiles>
+</table>

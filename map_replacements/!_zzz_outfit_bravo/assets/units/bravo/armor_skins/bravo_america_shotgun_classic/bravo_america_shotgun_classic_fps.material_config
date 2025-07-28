@@ -1,0 +1,14 @@
+<materials version="3" group="ene_bravo_shotgun">
+	<material name="mtr_body" version="2" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<bump_normal_texture file="units/bravo/armor_skins/shared_textures/bravo_body_nm"/>
+		<diffuse_texture file="units/bravo/armor_skins/shared_textures/bravo_shotgun_df"/>
+	</material>
+	<material name="mtr_arms" version="2" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<bump_normal_texture file="units/payday2/characters/shared_textures/head_01_nm"/>
+		<diffuse_texture file="units/bravo/armor_skins/shared_textures/head_01_df"/>
+	</material>
+    <material name="shadow_caster" render_template="shadow_caster_only:SKINNED_1WEIGHT" version="2"/>
+</materials>
+
+ 
+ 

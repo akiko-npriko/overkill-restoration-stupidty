@@ -1,0 +1,8 @@
+<materials version="3" group="weapon_p226">
+    <material name="mtr_papa320_frame" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+			<diffuse_texture file="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/textures/papa320_frame_v5_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/textures/papa320_frame_v5_nm"/>
+		   <material_texture file="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/textures/papa320_frame_v5_gsma"/>
+        <reflection_texture   file="environments/cubemaps/cubemap_gold_strong_df" type="cubemap" />
+    </material>	
+</materials>

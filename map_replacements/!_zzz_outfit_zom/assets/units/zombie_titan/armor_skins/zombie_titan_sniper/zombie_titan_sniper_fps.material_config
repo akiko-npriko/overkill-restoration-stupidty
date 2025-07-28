@@ -1,0 +1,10 @@
+<materials version="3" group="ene_city_swat_3">
+	<material name="mtr_city_swat" version="2" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<bump_normal_texture 	file="units/payday2/characters/shared_textures/swat_body_nm"/>
+		<diffuse_texture 	file="units/zombie_titan/armor_skins/shared_textures/ene_phalanx_snp_df"/>
+	</material>
+    <material name="shadow_caster" render_template="shadow_caster_only:SKINNED_1WEIGHT" version="2"/>
+</materials>
+
+ 
+ 

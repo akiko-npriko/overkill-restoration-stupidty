@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/zombie_titan/armor_skins/zombie_captain_hatman/zombie_captain_hatman" orientation_object="root_point" />
+
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="g_body">
+			<object name="g_body" enabled="true"/>
+			<object name="g_helmet" enabled="true"/>
+			<object name="g_armor_chest" enabled="true"/>
+			<object name="g_armor_stomache" enabled="true"/>
+			<object name="g_armor_back" enabled="true"/>
+			<object name="g_throat" enabled="true"/>
+			<object name="g_neck" enabled="true"/>
+			<object name="g_helmet_glass" enabled="true"/>
+		</graphic_group>
+	</graphics>
+
+</dynamic_object>

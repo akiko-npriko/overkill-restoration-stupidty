@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/bravo/armor_skins/bravo_america_dmr/bravo_america_dmr_fps" orientation_object="root_point" />
+	
+
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="co_culling">
+		<!--Bodies; Only one should be used at a time-->
+		<!--Should be the same as the third-person model-->
+			<object name="g_body_black" enabled="true"/> <!--Rolled-down sleeves-->
+			<object name="g_body_sg_black" enabled="false"/> <!--Rolled-up sleeves-->
+
+		<!--Arms; Only one should be used at a time and they should only be used alongside g_body_sg_black-->
+		<!--Should be the same as the third-person model-->
+			<object name="g_arms_a" enabled="false"/> <!--Use alongside g_head_a, g_head_recon, or g_face_a-->
+			<object name="g_arms_b" enabled="false"/> <!--Use alongside g_head_b or g_face_b-->
+			<object name="g_arms_c" enabled="false"/> <!--Use alongside g_head_c or g_face_c-->
+			<object name="g_arms_d" enabled="false"/> <!--Use alongside g_head_d or g_face_d-->
+			<object name="g_arms_e" enabled="false"/> <!--Use alongside g_head_e or g_face_e-->
+		</graphic_group>
+	</graphics>
+
+</dynamic_object>

@@ -1,0 +1,20 @@
+<materials version="3" group="weapon_p226">
+    <material name="mtr_papa320_slide_vented" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+			<diffuse_texture file="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/textures/papa320_slide_vented_v16_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/textures/papa320_slide_vented_v16_nm"/>
+		   <material_texture file="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/textures/papa320_slide_vented_v16_gsma"/>		
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_pis_papa320_pts/textures/weapon_metal_cubemap_black"/>
+    </material>	
+    <material name="mtr_papa320_sights" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture	 file="units/mods/weapons/wpn_fps_pis_papa320_pts/textures/papa320_irons_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_pis_papa320_pts/textures/papa320_irons_nm"/>
+        <material_texture	 file="units/mods/weapons/wpn_fps_pis_papa320_pts/textures/papa320_irons_gsma"/>		
+		<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_pis_papa320_pts/textures/weapon_metal_cubemap"/>
+    </material>		
+
+	<material name="no_blurr" version="2" render_template="effect:DOF_CUTTER">
+        <variable value="4" type="scalar" name="fadeout_distance"/>
+        <diffuse_texture file="units/payday2/weapons/wpn_effects_textures/wpn_effect_no_blurr_df"/>
+        <variable value="182.69010925293" type="scalar" name="falloff_exp"/>
+    </material>
+</materials>

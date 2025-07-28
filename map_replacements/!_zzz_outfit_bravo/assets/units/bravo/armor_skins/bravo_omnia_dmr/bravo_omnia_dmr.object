@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/bravo/armor_skins/bravo_omnia_dmr/bravo_omnia_dmr" orientation_object="root_point" />
+
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="g_body">
+			<object name="g_body" enabled="true"/>
+			<object name="g_head" enabled="true"/>
+			<object name="g_helmet_lod1" enabled="true"/>
+			<object name="g_helmet_lod3" enabled="true"/>
+			<object name="g_helmet_lod4" enabled="true"/>
+		</graphic_group>
+	</graphics>
+
+</dynamic_object>

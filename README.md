@@ -432,6 +432,10 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/37050
  - Snipers In Assaults
 	- https://modworkshop.net/mod/49136
+ - Zombie Titans Outfit Pack
+	- https://modworkshop.net/mod/49742
+ - Bravo Teams Outfit Pack
+	- https://modworkshop.net/mod/47131
 	 
 # Gunsss
  - Do later there are too many i hate myself...
@@ -444,3 +448,4 @@ Yanked coding from... (intergrated into mod)
  - Standalone Kar98k (https://modworkshop.net/mod/21092)
  - ORSIS T-5000 (https://modworkshop.net/mod/24744)
  - Browning M1919A6 (https://modworkshop.net/mod/22728)
+ - MW2019 SIG Sauer P320 (https://modworkshop.net/mod/33336)

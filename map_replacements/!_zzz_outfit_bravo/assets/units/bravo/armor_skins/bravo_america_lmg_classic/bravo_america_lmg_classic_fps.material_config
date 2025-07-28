@@ -1,0 +1,10 @@
+<materials version="3" group="ene_akan_fbi_heavy_g36">
+	<material name="mtr_body" version="2" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<bump_normal_texture file="units/bravo/armor_skins/shared_textures/bravo_body_nm"/>
+		<diffuse_texture file="units/bravo/armor_skins/shared_textures/bravo_lmg_df"/>
+	</material>
+    <material name="shadow_caster" render_template="shadow_caster_only:SKINNED_1WEIGHT" version="2"/>
+</materials>
+
+ 
+ 

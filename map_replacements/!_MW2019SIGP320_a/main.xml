@@ -1,0 +1,756 @@
+<mod name="MW2019 SIG Sauer P320" author="RJC9000"  min_lib_ver="3.38">
+	<Localization directory="loc" default="english.txt">
+		<loc file="english.txt" language="english"/>
+	</Localization>	
+	<AssetUpdates id="33336" name="asset_updates" version="1.04" provider="modworkshop"/>
+	<GlobalValue id="papa320_mod" color="Color(0.9, 0.09, 0.08)"/> 
+	<GlobalValue id="papa320_mw2019_mod" color="Color(0.9, 0.09, 0.08)"/> 
+
+<!---------------------------------------------------------------Default Weapon Mods----------------------------------------------------------------------------->
+	<WeaponMod id="wpn_fps_pis_papa320_barrel" based_on="wpn_fps_pis_p226_b_barrel_standard" type="barrel"	 	   unit="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_barrel" hidden="true" ver="2">
+		<texture_variants>
+			    <severance name_id="bm_w_paint_papa320_v5" desc_id="bm_w_paint_papa320_v5_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_barrel_v5"/>
+			<heavy_silence name_id="bm_w_paint_papa320_v13" desc_id="bm_w_paint_papa320_v13_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_slide_v13"/>
+		</texture_variants>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_pis_papa320_irons" based_on="wpn_upg_o_marksmansight_rear" type="sight" 		  unit="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_irons"  hidden="true" ver="2">
+		<stance_mod>
+			<wpn_fps_pis_papa320 translation="0 0 0.2"/>
+		</stance_mod>
+		<override>
+			<wpn_upg_o_marksmansight_front unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+		</override>
+		<texture_variants>
+			    <severance name_id="bm_w_paint_papa320_v5" desc_id="bm_w_paint_papa320_v5_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_irons_v5"/>
+		</texture_variants>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_pis_papa320_frame" based_on="wpn_fps_pis_p226_body_standard" type="lower_receiver"  unit="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_frame" hidden="true" ver="2">
+		<texture_variants>
+			<dirty_business name_id="bm_w_paint_papa320_v3" desc_id="bm_w_paint_papa320_v3_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_frame_v3"/>
+			<severance name_id="bm_w_paint_papa320_v5" desc_id="bm_w_paint_papa320_v5_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_frame_v5"/>
+			<red_dwarf name_id="bm_w_paint_papa320_v9" desc_id="bm_w_paint_papa320_v9_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_frame_v9"/>
+			<heavy_silence name_id="bm_w_paint_papa320_v13" desc_id="bm_w_paint_papa320_v13_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_frame_v13"/>
+		</texture_variants>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_pis_papa320_grip" based_on="wpn_fps_pis_p226_g_standard" type="grip"  			 	   unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" hidden="true" ver="2">
+	</WeaponMod>	
+	
+	<!--Notes on Reload objects: The specified reload object is the spare bullets in the retention magazine?
+	apparently, this causes the reload objects get disabled when the reload timer hits zero-->	
+	<WeaponMod id="wpn_fps_pis_papa320_magazine" based_on="wpn_fps_pis_p226_m_standard" type="magazine" 		   unit="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_magazine" hidden="true" ver="2">
+		<reload_objects reload="g_papa320_bullet_retention" reload_not_empty="g_papa320_bullet_retention"/>
+		<bullet_objects prefix = "g_papa320_bullet_" amount="2"/>
+	<texture_variants>
+		<dirty_business name_id="bm_w_paint_papa320_v3" desc_id="bm_w_paint_papa320_v3_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_magazine_v3"/>
+	</texture_variants>
+    </WeaponMod>	
+	<WeaponMod id="wpn_fps_pis_papa320_slide" based_on="wpn_fps_pis_p226_b_standard" type="slide"  	 unit="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_slide"   hidden="true" ver="2">
+		<forbids>
+			<value_node value="wpn_fps_pis_p226_o_standard"/>
+		</forbids>
+		<override>
+			<wpn_fps_pis_p226_b_barrel_standard unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+		</override>
+		<adds>
+			<value_node value="wpn_fps_pis_papa320_barrel"/>
+		</adds>
+		<texture_variants>
+			<dirty_business name_id="bm_w_paint_papa320_v3" desc_id="bm_w_paint_papa320_v3_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_slide_v3"/>
+			<severance name_id="bm_w_paint_papa320_v5" desc_id="bm_w_paint_papa320_v5_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_slide_v5"/>
+			<heavy_silence name_id="bm_w_paint_papa320_v13" desc_id="bm_w_paint_papa320_v13_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_slide_v13"/>
+		</texture_variants>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_pis_papa320_trigger" based_on="wpn_fps_pis_p226_g_standard" type="trigger"		   unit="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_trigger" hidden="true" ver="2">
+		<texture_variants>
+			    <severance name_id="bm_w_paint_papa320_v5" desc_id="bm_w_paint_papa320_v5_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_trigger_v5"/>
+		</texture_variants>
+	</WeaponMod>
+	
+<!--Ammo-->
+	<WeaponMod id="wpn_fps_pis_papa320_ammo_40sw" based_on="wpn_fps_upg_a_custom_free" type="ammo" sub_type="ammo_slug" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" hidden="false" has_description="true" global_value="papa320_mw2019_mod" ver="2">
+		<stats damage="21" spread="3" recoil="-3" extra_ammo="-2" total_ammo_mod="-6"  />
+		<custom_stats ammo_pickup_min_mul="0.5" ammo_pickup_max_mul="1.0">
+		</custom_stats>	
+	</WeaponMod>	
+
+<!--Barrel/Slides-->
+	<WeaponMod id="wpn_fps_pis_papa320_barrel_vented" based_on="wpn_fps_pis_p226_b_barrel_standard" type="barrel"	 	   unit="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_barrel_vented" hidden="true" ver="2">
+		<texture_variants>
+			<tanker name_id="bm_w_paint_papa320_v16" desc_id="bm_w_paint_papa320_v16_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_slide_vented_v16"/>
+		</texture_variants>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_pis_papa320_slide_vented" based_on="wpn_fps_pis_p226_b_standard" type="slide"  	 unit="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_slide_vented"   hidden="false" has_description="true" global_value="papa320_mw2019_mod" ver="2">
+		<stats damage="1" spread="1" recoil="0" concealment="-1" />
+		<override>
+			<wpn_fps_pis_p226_b_barrel_standard unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+		</override>
+		<adds>
+			<value_node value="wpn_fps_pis_papa320_barrel_vented"/>
+		</adds>
+		<forbids>
+			<value_node value="wpn_fps_pis_p226_o_standard"/>
+		</forbids>
+		<texture_variants>
+			<tanker name_id="bm_w_paint_papa320_v16" desc_id="bm_w_paint_papa320_v16_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_slide_vented_v16"/>
+		</texture_variants>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_pis_papa320_barrel_ext" based_on="wpn_fps_pis_p226_b_barrel_standard" type="barrel"	 	   unit="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_barrel_ext" hidden="true" ver="2">
+		<texture_variants>
+			<red_dwarf name_id="bm_w_paint_papa320_v9" desc_id="bm_w_paint_papa320_v9_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_slide_ext_v9"/>
+		</texture_variants>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_pis_papa320_slide_ext" based_on="wpn_fps_pis_p226_b_standard" type="slide"  	 unit="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_slide_ext"   hidden="false" has_description="true" global_value="papa320_mw2019_mod" ver="2">
+		<stats damage="2" spread="2" recoil="0" concealment="-2" />
+		<override>
+			<wpn_fps_pis_p226_b_barrel_standard unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+		</override>
+		<adds>
+			<value_node value="wpn_fps_pis_papa320_barrel_ext"/>
+		</adds>
+		<forbids>
+			<value_node value="wpn_fps_pis_p226_o_standard"/>
+		</forbids>
+		<texture_variants>
+			<red_dwarf name_id="bm_w_paint_papa320_v9" desc_id="bm_w_paint_papa320_v9_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_slide_ext_v9"/>
+		</texture_variants>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_pis_papa320_barrel_v2" based_on="wpn_fps_pis_p226_b_barrel_standard" type="barrel"	 	   unit="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_barrel_v2" hidden="true" ver="2">
+		<texture_variants>
+			<utilitarian name_id="bm_w_paint_papa320_v12" desc_id="bm_w_paint_papa320_v12_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_slide_v12"/>
+		</texture_variants>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_pis_papa320_slide_v2" based_on="wpn_fps_pis_p226_b_standard" type="slide"  	 unit="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_slide_v2"   hidden="false" has_description="true" global_value="papa320_mw2019_mod" ver="2">
+		<stats damage="0" spread="-1" recoil="1" concealment="1" />
+		<adds>
+			<value_node value="wpn_fps_pis_papa320_barrel_v2"/>
+		</adds>
+		<override>
+			<wpn_fps_pis_p226_b_barrel_standard unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+		</override>
+		<forbids>
+			<value_node value="wpn_fps_pis_p226_o_standard"/>
+		</forbids>
+		<texture_variants>
+			<utilitarian name_id="bm_w_paint_papa320_v12" desc_id="bm_w_paint_papa320_v12_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_slide_v12"/>
+		</texture_variants>
+	</WeaponMod>
+
+<!--Frame-->
+	<WeaponMod id="wpn_fps_pis_papa320_frame_v2" based_on="wpn_fps_pis_p226_body_standard" type="lower_receiver"  unit="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_frame_v2" hidden="false" has_description="true" global_value="papa320_mw2019_mod" ver="2">
+		<stats damage="0" spread="1" recoil="1" concealment="0" />
+		<forbids>
+			<value_node value="wpn_fps_pis_papa320_griptape"/>
+			<value_node value="wpn_fps_pis_papa320_griptape02"/>
+			<value_node value="wpn_fps_pis_papa320_griptape03"/>
+		</forbids>
+		<texture_variants>
+			<utilitarian name_id="bm_w_paint_papa320_v12" desc_id="bm_w_paint_papa320_v12_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_frame_v12"/>
+			<tanker name_id="bm_w_paint_papa320_v16" desc_id="bm_w_paint_papa320_v16_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_frame_v16"/>
+		</texture_variants>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_fl_pis_mw2022_laser02" based_on="wpn_fps_upg_fl_pis_x400v" type="gadget"  unit="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_upg_fl_pis_mw2022_laser02"   hidden="false" has_description="true" global_value="papa320_mw2019_mod" ver="2">
+		<stats concealment="-1" recoil="0" spread="1"/>
+	</WeaponMod>
+
+<!--Grip Tape-->
+
+	<WeaponMod id="wpn_fps_pis_papa320_griptape" based_on="wpn_fps_pis_p226_g_standard" type="grip"  unit="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_griptape" hidden="false" has_description="true" global_value="papa320_mw2019_mod" ver="2">
+		<stats spread="0" recoil="1" concealment="0"/>
+	</WeaponMod>	
+	<WeaponMod id="wpn_fps_pis_papa320_griptape02" based_on="wpn_fps_pis_p226_g_standard" type="grip"  unit="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_griptape02" hidden="false" has_description="true" global_value="papa320_mw2019_mod" ver="2">
+		<stats spread="1" recoil="0" concealment="0"/>
+	</WeaponMod>	
+	<WeaponMod id="wpn_fps_pis_papa320_griptape03" based_on="wpn_fps_pis_p226_g_standard" type="grip"  unit="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_griptape03" hidden="false" has_description="true" global_value="papa320_mw2019_mod" ver="2">
+		<stats spread="0" recoil="0" concealment="1"/>
+	</WeaponMod>	
+
+<!--Magazines-->
+	<WeaponMod id="wpn_fps_pis_papa320_magazine_ext" based_on="wpn_fps_pis_p226_m_standard" type="magazine" 		   unit="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_magazine_ext" hidden="false" has_description="true" global_value="papa320_mw2019_mod" ver="2">
+		<stats spread="0" recoil="-1" concealment="-1" extra_ammo="2" total_ammo_mod="2" reload="-1"/>
+		<reload_objects reload="g_papa320_mag_ext_bullet_retention" reload_not_empty="g_papa320_mag_ext_bullet_retention"/>
+		<bullet_objects prefix = "g_papa320_mag_ext_bullet_" amount="2"/>
+    </WeaponMod>
+	<WeaponMod id="wpn_fps_pis_papa320_magazine_ext2" based_on="wpn_fps_pis_p226_m_standard" type="magazine" 		   unit="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_magazine_ext2" hidden="false" has_description="true" global_value="papa320_mw2019_mod" ver="2">
+		<stats spread="0" recoil="-2" concealment="-3" extra_ammo="7" total_ammo_mod="7" reload="-3"/>
+		<reload_objects reload="g_papa320_mag_ext2_bullet_retention" reload_not_empty="g_papa320_mag_ext2_bullet_retention"/>
+		<bullet_objects prefix = "g_papa320_mag_ext2_bullet_" amount="2"/>
+    </WeaponMod>
+
+
+<!--Suppressor-->
+	<WeaponMod id="wpn_fps_pis_papa320_suppressor_v13" based_on="wpn_fps_upg_ns_pis_large" type="barrel_ext" unit="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_suppressor_v13" hidden="false" has_description="true" global_value="papa320_mw2019_mod" ver="2">
+		<stats damage="0" spread="2" recoil="0" concealment="-2"/>
+	</WeaponMod>
+
+<!--Triggers-->
+	<WeaponMod id="wpn_fps_pis_papa320_trigger_custom" based_on="wpn_fps_pis_p226_g_standard" type="trigger" unit="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_trigger_custom" hidden="false" has_description="true" global_value="papa320_mw2019_mod" ver="2">
+		<stats spread="-2" recoil="-1"/>
+		<custom_stats  fire_rate_multiplier="1.10">
+		</custom_stats>	
+		<texture_variants>
+			<red_dwarf name_id="bm_w_paint_papa320_v9" desc_id="bm_w_paint_papa320_v9_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_trigger_custom_v9"/>
+		</texture_variants>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_pis_papa320_trigger_custom_02" based_on="wpn_fps_pis_p226_g_standard" type="trigger" unit="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_trigger_custom_02" hidden="false" has_description="true" global_value="papa320_mw2019_mod" ver="2">
+		<stats spread="2" recoil="1"/>
+		<custom_stats  fire_rate_multiplier="0.90">
+		</custom_stats>	
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_pis_papa320_trigger_custom_03" based_on="wpn_fps_pis_p226_g_standard" type="trigger" unit="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_trigger_custom_03" hidden="false" has_description="true" global_value="papa320_mw2019_mod" ver="2">
+		<stats spread="-1" recoil="-1"/>
+		<custom_stats  fire_rate_multiplier="1.05">
+		</custom_stats>	
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_pis_papa320_trigger_hair" based_on="wpn_fps_pis_p226_g_standard" type="trigger" unit="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_trigger_hair" hidden="false" has_description="true" global_value="papa320_mw2019_mod" ver="2">
+		<stats spread="-2" recoil="-1"/>
+		<custom_stats  fire_rate_multiplier="1.10">
+		</custom_stats>	
+		<texture_variants>
+			<heavy_silence name_id="bm_w_paint_papa320_v13" desc_id="bm_w_paint_papa320_v13_desc" texture_bundle_folder="mods" material_config="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_trigger_hair_v13"/>
+		</texture_variants>
+	</WeaponMod>
+
+<!---------------------------------------------------------------Single P320----------------------------------------------------------------------------->
+
+	<Weapon unlock_level="37">
+		<weapon id="papa320" based_on="p226" CLIP_AMMO_MAX="17" NR_CLIPS_MAX="6" chamber_size="1" lock_slide="true" texture_bundle_folder="mods" global_value="papa320_mod">
+			<stats damage="61" spread="15" spread_moving="14" recoil="14" concealment="28"/>
+			<fire_mode_data fire_rate="0.12"/>
+			<kick>
+				<standing>
+					<value_node value="1.1"/>
+					<value_node value="1.5"/>
+					<value_node value="-0.6"/>
+					<value_node value="0.6"/>
+				</standing>
+				<crouching>
+					<value_node value="0.8"/>
+					<value_node value="1.0"/>
+					<value_node value="-0.5"/>
+					<value_node value="0.5"/>
+				</crouching>
+				<steelsight>
+					<value_node value="0.6"/>
+					<value_node value="1.0"/>
+					<value_node value="-0.3"/>
+					<value_node value="0.3"/>
+				</steelsight>
+			</kick>
+			<AMMO_PICKUP>
+				<value_node value="2.0"/>
+				<value_node value="4.0"/>
+			</AMMO_PICKUP>
+			<sounds fire="papa320_fire">
+			  <reload wp_g17_clip_grab="papa320_mag_grab"
+		    wp_foley_generic_clip_grab="papa320_generic_mag_grab"
+			wp_clip_generic_pist_right="papa320_generic_right"
+					   wp_usp_clip_out="papa320_magout" 
+				wp_g17_clip_in_contact="papa320_mag_contact" 
+				  wp_usp_clip_slide_in="papa320_magin" 
+	       wp_foley_generic_lever_grab="papa320_wiggle" 
+		   wp_foley_generic_lever_pull="papa320_slide_pull" 
+	    wp_foley_generic_lever_release="papa320_slide_release" 	/>	
+			</sounds> 
+			<animations reload_name_id="papa320"/>
+		</weapon>
+	<factory id="wpn_fps_pis_papa320" unit="units/mods/weapons/wpn_fps_pis_papa320/wpn_fps_pis_papa320">		
+			<animations reload="reload" reload_not_empty="reload_not_empty" fire="recoil" fire_steelsight="recoil" magazine_empty="last_recoil"/>
+			<optional_types>
+				<value_node value="barrel_ext"/>
+			</optional_types>
+			<adds/>
+			<override>
+				<wpn_fps_upg_o_rmr parent="slide">
+				</wpn_fps_upg_o_rmr>				
+				<wpn_fps_upg_o_rikt parent="slide">
+				</wpn_fps_upg_o_rikt>				
+				<wpn_fps_upg_o_rms parent="slide">
+				</wpn_fps_upg_o_rms>		
+			</override>
+			<default_blueprint>	
+				<value_node value="wpn_fps_pis_papa320_frame"/>		
+				<value_node value="wpn_fps_pis_papa320_grip"/>		
+				<value_node value="wpn_fps_pis_papa320_irons"/>		
+				<value_node value="wpn_fps_pis_papa320_magazine"/>		
+				<value_node value="wpn_fps_pis_papa320_slide"/>
+				<value_node value="wpn_fps_pis_papa320_trigger"/>	
+			</default_blueprint>
+			<uses_parts>	
+				<value_node value="wpn_fps_pis_papa320_barrel"/>
+				<value_node value="wpn_fps_pis_papa320_frame"/>		
+				<value_node value="wpn_fps_pis_papa320_grip"/>		
+				<value_node value="wpn_fps_pis_papa320_irons"/>		
+				<value_node value="wpn_fps_pis_papa320_magazine"/>		
+				<value_node value="wpn_fps_pis_papa320_slide"/>
+				<value_node value="wpn_fps_pis_papa320_trigger"/>	
+				
+				<value_node value="wpn_fps_pis_papa320_ammo_40sw"/>	
+			
+				<value_node value="wpn_fps_pis_papa320_frame_v2"/>			
+				
+				<value_node value="wpn_fps_pis_papa320_griptape"/>	
+				<value_node value="wpn_fps_pis_papa320_griptape02"/>	
+				<value_node value="wpn_fps_pis_papa320_griptape03"/>	
+			
+				<value_node value="wpn_fps_upg_fl_pis_mw2022_laser02"/>	
+			
+				<value_node value="wpn_fps_pis_papa320_magazine_ext"/>	
+				<value_node value="wpn_fps_pis_papa320_magazine_ext2"/>	
+				
+				<value_node value="wpn_fps_pis_papa320_barrel_ext"/>
+				<value_node value="wpn_fps_pis_papa320_barrel_vented"/>
+				<value_node value="wpn_fps_pis_papa320_barrel_v2"/>
+				<value_node value="wpn_fps_pis_papa320_slide_ext"/>
+				<value_node value="wpn_fps_pis_papa320_slide_vented"/>
+				<value_node value="wpn_fps_pis_papa320_slide_v2"/>
+				
+				<value_node value="wpn_fps_pis_papa320_suppressor_v13"/>	
+			
+				<value_node value="wpn_fps_pis_papa320_trigger_custom"/>	
+				<value_node value="wpn_fps_pis_papa320_trigger_custom_02"/>	
+				<value_node value="wpn_fps_pis_papa320_trigger_custom_03"/>	
+				<value_node value="wpn_fps_pis_papa320_trigger_hair"/>					
+				
+				<value_node value="wpn_fps_upg_ns_pis_large"/>
+				<value_node value="wpn_fps_upg_ns_pis_medium"/>
+				<value_node value="wpn_fps_upg_ns_pis_small"/>
+				<value_node value="wpn_fps_upg_ns_pis_large_kac"/>
+				<value_node value="wpn_fps_upg_ns_pis_medium_gem"/>
+				<value_node value="wpn_fps_upg_ns_pis_medium_slim"/>
+				<value_node value="wpn_fps_upg_ns_pis_jungle"/>
+				<value_node value="wpn_fps_upg_ns_pis_meatgrinder"/>
+				<value_node value="wpn_fps_upg_ns_pis_ipsccomp"/>
+				<value_node value="wpn_fps_upg_pis_ns_flash"/>
+				<value_node value="wpn_fps_upg_ns_pis_typhoon"/>
+				<value_node value="wpn_fps_upg_ns_ass_filter"/>
+				
+				<value_node value="wpn_fps_upg_fl_pis_laser"/>
+				<value_node value="wpn_fps_upg_fl_pis_tlr1"/>
+				<value_node value="wpn_fps_upg_fl_pis_crimson"/>
+				<value_node value="wpn_fps_upg_fl_pis_x400v"/>
+				<value_node value="wpn_fps_upg_fl_pis_m3x"/>
+				<value_node value="wpn_fps_upg_fl_pis_perst"/>
+				
+				<value_node value="wpn_fps_upg_o_rmr"/>
+				<value_node value="wpn_fps_upg_o_rikt"/>
+				<value_node value="wpn_fps_upg_o_rms"/>
+
+			</uses_parts>	
+		</factory>
+	<stance>			
+		<standard>
+			<shoulders rotation="-0.00773119 0.0915027 -0.000210645 -0.995775" translation="-6.072 -8.166 -2.022"/>
+		</standard>
+		<crouched> 
+			<shoulders rotation="-0.00654313 0.258817 -0.00120555 -0.965904" translation="-10.572 -13.166 -6.022"/>
+		</crouched>
+		<steelsight>
+			<shoulders rotation="-0.00601718 0.0043689 0.000916179 -0.999972" translation="-8.572 -2.166 4.022"/>
+		</steelsight>
+		</stance> 
+	</Weapon>
+
+<Weapon unlock_level="37">
+		<weapon id="x_papa320" based_on="x_p226" CLIP_AMMO_MAX="34" NR_CLIPS_MAX="4" chamber_size="1" texture_bundle_folder="mods" global_value="papa320_mod">
+			<stats damage="61" spread="15" spread_moving="14" recoil="14" concealment="28"/>
+			<fire_mode_data fire_rate="0.12"/>
+			<kick>
+				<standing>
+					<value_node value="1.1"/>
+					<value_node value="1.5"/>
+					<value_node value="-0.6"/>
+					<value_node value="0.6"/>
+				</standing>
+				<crouching>
+					<value_node value="0.8"/>
+					<value_node value="1.0"/>
+					<value_node value="-0.5"/>
+					<value_node value="0.5"/>
+				</crouching>
+				<steelsight>
+					<value_node value="0.6"/>
+					<value_node value="1.0"/>
+					<value_node value="-0.3"/>
+					<value_node value="0.3"/>
+				</steelsight>
+			</kick>
+			<AMMO_PICKUP>
+				<value_node value="1.0"/>
+				<value_node value="5.5"/>
+			</AMMO_PICKUP>
+		<sounds fire="papa320_fire">
+			  <reload wp_g17_clip_grab="papa320_mag_grab"
+		    wp_foley_generic_clip_grab="papa320_generic_mag_grab"
+			wp_clip_generic_pist_right="papa320_generic_right"
+					   wp_usp_clip_out="papa320_magout" 
+				wp_g17_clip_in_contact="papa320_mag_contact" 
+				  wp_usp_clip_slide_in="papa320_magin" 
+	       wp_foley_generic_lever_grab="papa320_wiggle" 
+		   wp_foley_generic_lever_pull="papa320_slide_pull" 
+	    wp_foley_generic_lever_release="papa320_slide_release" 	/>	
+			</sounds> 
+			<animations reload_name_id="x_p226"/>
+		</weapon>
+	<factory id="wpn_fps_pis_x_papa320" unit="units/mods/weapons/wpn_fps_pis_x_papa320/wpn_fps_pis_x_papa320">		
+			<animations reload="reload" reload_not_empty="reload_not_empty" fire="recoil" fire_steelsight="recoil" magazine_empty="last_recoil"/>
+			<optional_types>
+			</optional_types>
+			<adds/>
+          <override>
+                <wpn_fps_upg_o_rmr parent="slide">
+                </wpn_fps_upg_o_rmr>                
+                <wpn_fps_upg_o_rikt parent="slide">
+                </wpn_fps_upg_o_rikt>                
+                <wpn_fps_upg_o_rms parent="slide">
+                </wpn_fps_upg_o_rms>        
+                
+                <wpn_fps_pis_papa320_magazine>
+                    <animations reload="false" reload_not_empty="false"/>
+                </wpn_fps_pis_papa320_magazine>        
+                
+                <wpn_fps_pis_papa320_magazine_ext>
+                    <animations reload="false" reload_not_empty="false"/>
+                </wpn_fps_pis_papa320_magazine_ext>            
+                
+                <wpn_fps_pis_papa320_magazine_ext2>
+                    <animations reload="false" reload_not_empty="false"/>
+                </wpn_fps_pis_papa320_magazine_ext2>        
+                
+            </override>
+			<default_blueprint>	
+				<value_node value="wpn_fps_pis_papa320_frame"/>		
+				<value_node value="wpn_fps_pis_papa320_grip"/>		
+				<value_node value="wpn_fps_pis_papa320_irons"/>		
+				<value_node value="wpn_fps_pis_papa320_magazine"/>		
+				<value_node value="wpn_fps_pis_papa320_slide"/>
+				<value_node value="wpn_fps_pis_papa320_trigger"/>	
+			</default_blueprint>
+			<uses_parts>	
+				<value_node value="wpn_fps_pis_papa320_barrel"/>
+				<value_node value="wpn_fps_pis_papa320_frame"/>		
+				<value_node value="wpn_fps_pis_papa320_grip"/>		
+				<value_node value="wpn_fps_pis_papa320_irons"/>		
+				<value_node value="wpn_fps_pis_papa320_magazine"/>		
+				<value_node value="wpn_fps_pis_papa320_slide"/>
+				<value_node value="wpn_fps_pis_papa320_trigger"/>	
+				
+				<value_node value="wpn_fps_pis_papa320_ammo_40sw"/>	
+			
+				<value_node value="wpn_fps_pis_papa320_frame_v2"/>			
+				
+				<value_node value="wpn_fps_pis_papa320_griptape"/>	
+				<value_node value="wpn_fps_pis_papa320_griptape02"/>	
+				<value_node value="wpn_fps_pis_papa320_griptape03"/>	
+			
+				<value_node value="wpn_fps_upg_fl_pis_mw2022_laser02"/>	
+			
+				<value_node value="wpn_fps_pis_papa320_magazine_ext"/>	
+				<value_node value="wpn_fps_pis_papa320_magazine_ext2"/>	
+				
+				<value_node value="wpn_fps_pis_papa320_barrel_ext"/>
+				<value_node value="wpn_fps_pis_papa320_barrel_vented"/>
+				<value_node value="wpn_fps_pis_papa320_barrel_v2"/>
+				<value_node value="wpn_fps_pis_papa320_slide_ext"/>
+				<value_node value="wpn_fps_pis_papa320_slide_vented"/>
+				<value_node value="wpn_fps_pis_papa320_slide_v2"/>
+				
+				<value_node value="wpn_fps_pis_papa320_suppressor_v13"/>	
+			
+				<value_node value="wpn_fps_pis_papa320_trigger_custom"/>	
+				<value_node value="wpn_fps_pis_papa320_trigger_custom_02"/>	
+				<value_node value="wpn_fps_pis_papa320_trigger_custom_03"/>	
+				<value_node value="wpn_fps_pis_papa320_trigger_hair"/>					
+				
+				<value_node value="wpn_fps_upg_ns_pis_large"/>
+				<value_node value="wpn_fps_upg_ns_pis_medium"/>
+				<value_node value="wpn_fps_upg_ns_pis_small"/>
+				<value_node value="wpn_fps_upg_ns_pis_large_kac"/>
+				<value_node value="wpn_fps_upg_ns_pis_medium_gem"/>
+				<value_node value="wpn_fps_upg_ns_pis_medium_slim"/>
+				<value_node value="wpn_fps_upg_ns_pis_jungle"/>
+				<value_node value="wpn_fps_upg_ns_pis_meatgrinder"/>
+				<value_node value="wpn_fps_upg_ns_pis_ipsccomp"/>
+				<value_node value="wpn_fps_upg_pis_ns_flash"/>
+				<value_node value="wpn_fps_upg_ns_pis_typhoon"/>
+				<value_node value="wpn_fps_upg_ns_ass_filter"/>
+				
+				<value_node value="wpn_fps_upg_fl_pis_laser"/>
+				<value_node value="wpn_fps_upg_fl_pis_tlr1"/>
+				<value_node value="wpn_fps_upg_fl_pis_crimson"/>
+				<value_node value="wpn_fps_upg_fl_pis_x400v"/>
+				<value_node value="wpn_fps_upg_fl_pis_m3x"/>
+				<value_node value="wpn_fps_upg_fl_pis_perst"/>
+				
+				<value_node value="wpn_fps_upg_o_rmr"/>
+				<value_node value="wpn_fps_upg_o_rikt"/>
+				<value_node value="wpn_fps_upg_o_rms"/>
+
+			</uses_parts>	
+		</factory>
+	<stance>			
+		<standard>
+			<shoulders rotation="0 -0 0 -1" translation="-0.426 -8.331 -4.341"/>	
+		</standard>
+		<crouched> 
+			<shoulders rotation="0 -0 0 -1" translation="-0.426 -10.331 -2.341"/>
+		</crouched>
+		<steelsight>
+			<shoulders rotation="0 -0 0 -1" translation="-0.426 -1.331 -2.341"/>
+		</steelsight>
+		</stance> 
+	</Weapon>
+
+<!--	
+	Not Empty:
+		wp_g17_clip_grab > grab a new mag 
+		wp_foley_generic_clip_grab > grab the old mag 
+		wp_usp_clip_out > drop old mag 
+		wp_clip_generic_pist_right > twist the gun to exchange the mags 
+		wp_g17_clip_in_contact > new mag is about to be slid into the pistol (contacts)
+		wp_usp_clip_slide_in > slide the new mag in
+		wp_foley_generic_lever_grab > resettle gun
+		
+	Empty:
+		wp_foley_generic_clip_grab > grab a new mag 
+		wp_g17_clip_grab > beginning to drop old mag and prepare to insert new mag
+		wp_usp_clip_out > drop old mag 
+		wp_clip_generic_pist_right > prepare to insert new mag 
+		wp_g17_clip_in_contact > new mag is about to be slid into the pistol (contacts)
+		wp_usp_clip_slide_in > slide the new mag in
+		wp_foley_generic_lever_grab > grab the slide
+		wp_foley_generic_lever_pull > pull back the slide
+		wp_foley_generic_lever_release > release the slide
+		wp_foley_generic_lever_grab > resettle gun after pulling back slide
+		
+	   -->		
+	
+	<Sounds directory="assets\sounds">
+		<sound id="papa320_fire" path="papa320_fire.ogg" prefix="regular"/>
+		<sound id="papa320_fire" path="papa320_supp.ogg" prefix="suppressed_a"/>
+		<sound id="papa320_fire" path="papa320_supp.ogg" prefix="suppressed_b"/>
+		<sound id="papa320_fire" path="papa320_supp.ogg" prefix="suppressed_c"/>
+		
+		<sound id="papa320_mag_grab" path="papa320_magin_fast_start.ogg" prefix="first"/>
+		<sound id="papa320_mag_grab" path="papa320_magin_fast_start.ogg" prefix="third"/>
+		<sound id="papa320_generic_mag_grab" path="papa320_magin_xmag_start.ogg" prefix="first"/>
+		<sound id="papa320_generic_mag_grab" path="papa320_magin_xmag_start.ogg" prefix="third"/>
+		<sound id="papa320_generic_right" path="papa320_generic_right.ogg" prefix="first"/>
+		<sound id="papa320_generic_right" path="papa320_generic_right.ogg" prefix="third"/>
+		<sound id="papa320_magout" path="papa320_magout.ogg" prefix="first"/>
+		<sound id="papa320_magout" path="papa320_magout.ogg" prefix="third"/>
+		<sound id="papa320_mag_contact" path="papa320_magin_contact.ogg" prefix="first"/>
+		<sound id="papa320_mag_contact" path="papa320_magin_contact.ogg" prefix="third"/>
+		<sound id="papa320_magin" path="papa320_magin.ogg" prefix="first"/>
+        <sound id="papa320_magin" path="papa320_magin.ogg" prefix="third"/>
+		<sound id="papa320_wiggle" path="papa320_wiggle.ogg" prefix="first"/>
+		<sound id="papa320_wiggle" path="papa320_wiggle.ogg" prefix="third"/>
+		<sound id="papa320_slide_pull" path="papa320_charge_start.ogg" prefix="first"/>
+		<sound id="papa320_slide_pull" path="papa320_charge_start.ogg" prefix="third"/>
+		<sound id="papa320_slide_release" path="papa320_charge_finish.ogg" prefix="first"/>
+		<sound id="papa320_slide_release" path="papa320_charge_finish.ogg" prefix="third"/>
+
+	</Sounds>
+
+
+	<AddFiles directory="assets">
+
+	<!-- Animations -->
+		<animation path="anims/fps/papa320/papa320_reload_not_empty" load="true"/>
+		<animation path="anims/fps/papa320/papa320_reload" load="true"/>
+
+	<!--Unit Base-->
+		<unit_npc path="units/mods/weapons/wpn_fps_pis_papa320/wpn_fps_pis_papa320"/>
+		<unit_npc path="units/mods/weapons/wpn_fps_pis_x_papa320/wpn_fps_pis_x_papa320"/>
+	
+	<!--Base Weapon GUI-->
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/papa320"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/x_papa320"/>
+		
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_papa320_ammo_40sw"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_papa320_frame_v2"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_papa320_slide_v2"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_papa320_slide_vented"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_papa320_slide_ext"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_fl_pis_mw2022_laser02"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_papa320_griptape"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_papa320_griptape02"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_papa320_griptape03"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_papa320_magazine_ext"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_papa320_magazine_ext2"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_papa320_suppressor_v13"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_papa320_trigger_custom"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_papa320_trigger_custom_02"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_papa320_trigger_custom_03"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/mods/wpn_fps_pis_papa320_trigger_hair"/>
+
+	<!--Base Weapon Textures-->
+		<texture path="units/mods/weapons/wpn_fps_pis_papa320_pts/textures/weapon_metal_cubemap"/>				
+		<texture path="units/mods/weapons/wpn_fps_pis_papa320_pts/textures/weapon_metal_cubemap_black"/>			
+		<texture path="units/mods/weapons/wpn_fps_pis_papa320_pts/textures/weapon_metal_cubemap_bronze"/>		
+		
+		
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_pts/textures/papa320_frame"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_pts/textures/papa320_irons"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_pts/textures/papa320_magazine"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_pts/textures/papa320_slide"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_pts/textures/mw2022_laser_pistol_02"/>
+		
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_pts/textures/papa320_barrel_ext"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_pts/textures/papa320_slide_vented"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_pts/textures/papa320_slide_v2"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_pts/textures/papa320_sights_v2"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_pts/textures/papa320_frame_v2"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_pts/textures/granulated_grip_tape"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_pts/textures/rubberized_grip_tape"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_pts/textures/stippled_grip_tape"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_pts/textures/papa320_magazine_ext"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_pts/textures/papa320_magazine_ext2"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_pts/textures/papa320_suppressor_v13"/>
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_pts/textures/papa320_trigger2"/>				
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_pts/textures/papa320_trigger3"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_pts/textures/papa320_trigger4"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_pts/textures/papa320_trigger_hair"/>	
+	
+<!--Base Weapon Unit Path-->
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_barrel"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_frame"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_irons"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_magazine"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_slide"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_trigger"/>		
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_upg_fl_pis_mw2022_laser02"/>		
+		
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_barrel_ext"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_slide_ext"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_barrel_vented"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_slide_vented"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_barrel_v2"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_slide_v2"/>	
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_frame_v2"/>		
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_griptape"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_griptape02"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_griptape03"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_magazine_ext"/>
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_magazine_ext2"/>	
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_suppressor_v13"/>	
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_trigger_custom"/>	
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_trigger_custom_02"/>	
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_trigger_custom_03"/>	
+		<unit_mat_thq path="units/mods/weapons/wpn_fps_pis_papa320_pts/wpn_fps_pis_papa320_trigger_hair"/>	
+
+
+<!--Blueprint Parts-->
+
+<!--Dirty Business-->
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_pis_papa320_frame/dirty_business"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_pis_papa320_magazine/dirty_business"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_pis_papa320_slide/dirty_business"/>
+		
+		<texture path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/textures/papa320_frame_v3_df"/>	
+		<texture path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/textures/papa320_magazine_v3_df"/>	
+		<texture path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/textures/papa320_slide_v3_df"/>	
+			
+
+		<material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_frame_v3"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_frame_v3_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_magazine_v3"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_magazine_v3_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_slide_v3"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_slide_v3_thq"/>
+		
+
+<!--Severance-->
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_pis_papa320_barrel/severance"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_pis_papa320_frame/severance"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_pis_papa320_irons/severance"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_pis_papa320_slide/severance"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_pis_papa320_trigger/severance"/>
+		
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/textures/papa320_frame_v5"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/textures/papa320_slide_v5"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/textures/papa320_sights_v5"/>	
+			
+		<material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_barrel_v5"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_barrel_v5_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_frame_v5"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_frame_v5_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_irons_v5"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_irons_v5_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_slide_v5"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_slide_v5_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_trigger_v5"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_trigger_v5_thq"/>
+
+<!--Red Dorf-->
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_pis_papa320_barrel_ext/red_dwarf"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_pis_papa320_frame/red_dwarf"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_pis_papa320_slide_ext/red_dwarf"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_pis_papa320_trigger_custom/red_dwarf"/>
+		
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/textures/papa320_barrel_ext_v9"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/textures/papa320_frame_v9"/>	
+		   <texture path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/textures/papa320_trigger2_v9_df"/>	
+		
+		<material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_frame_v9"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_frame_v9_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_slide_ext_v9"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_slide_ext_v9_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_trigger_custom_v9"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_trigger_custom_v9_thq"/>
+
+<!--Utilitarian-->
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_pis_papa320_barrel_v2/utilitarian"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_pis_papa320_frame_v2/utilitarian"/>	
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_pis_papa320_slide_v2/utilitarian"/>
+		
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/textures/papa320_frame_v12"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/textures/papa320_slide_v12"/>	
+			
+		<material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_frame_v12"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_frame_v12_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_slide_v12"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_slide_v12_thq"/>
+
+<!--Heavy Silence-->
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_pis_papa320_barrel/heavy_silence"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_pis_papa320_frame/heavy_silence"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_pis_papa320_trigger_hair/heavy_silence"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_pis_papa320_slide/heavy_silence"/>
+		
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/textures/papa320_frame_v13"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/textures/papa320_slide_v13"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/textures/papa320_trigger_hair_v13"/>	
+		
+		<material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_frame_v13"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_frame_v13_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_slide_v13"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_slide_v13_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_trigger_hair_v13"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_trigger_hair_v13_thq"/>
+
+
+<!--Tanker-->
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_pis_papa320_barrel_vented/tanker"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_pis_papa320_frame_v2/tanker"/>
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/texture_variants/wpn_fps_pis_papa320_slide_vented/tanker"/>
+		
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/textures/papa320_frame_v16"/>	
+		<df_nm_gsma path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/textures/papa320_slide_vented_v16"/>	
+		
+		<material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_frame_v16"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_frame_v16_thq"/>
+		<material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_slide_vented_v16"/>
+        <material_config path="units/mods/weapons/wpn_fps_pis_papa320_blueprint_pts/wpn_fps_pis_papa320_slide_vented_v16_thq"/>
+
+
+	</AddFiles>
+
+	<Hooks directory="Hooks">
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>		
+	</Hooks>
+	
+</mod>
+
+
+

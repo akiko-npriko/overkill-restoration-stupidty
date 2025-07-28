@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/bravo/armor_skins/bravo_dozer/bravo_dozer_fps" orientation_object="root_point" />
+
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="co_culling">
+			<object name="g_body" enabled="true"/>
+			<object name="g_shoulderpad_l" enabled="false"/>
+			<object name="g_shoulderpad_r" enabled="false"/>
+		</graphic_group>
+	</graphics>
+</dynamic_object>
