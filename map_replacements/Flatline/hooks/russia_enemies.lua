@@ -1,4 +1,4 @@
-
+return
 if not Global.level_data or BeardLib.Utils:ModExists("RestorationMod") then return end
 
 Hooks:PostHook(GroupAITweakData, "_init_unit_categories", "russia_groupai", function(self, difficulty_index)
