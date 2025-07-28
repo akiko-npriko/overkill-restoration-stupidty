@@ -161,7 +161,28 @@ Hooks:PostHook(PrePlanningTweakData,"init","init_ahopl",function(self)
 		budget_cost = 4
 	}
 	
-	
+		self.types.ahop_gate_key.upgrade_lock = {
+			upgrade = "additional_assets",
+			category = "player"
+		}
+		self.types.ahop_body_disposal_unit.upgrade_lock = {
+			upgrade = "additional_assets",
+			category = "player"
+		}
+		self.types.ahop_reduce_guard.upgrade_lock = {
+			upgrade = "additional_assets",
+			category = "player"
+		}
+		if Global.game_settings and Global.game_settings.one_down then
+			self.types.ahopl_backup_crew.upgrade_lock = {
+				upgrade = "additional_assets_pro",
+				category = "player"
+			}
+			self.types.ahopl_backup_heister.upgrade_lock = {
+				upgrade = "additional_assets_pro",
+				category = "player"
+			}
+		end
 	
 	
 end)

@@ -141,47 +141,21 @@
 			<sound id="fri_dsp_stop_all"/>
 		</random>
 	</Sounds>
-	<Sounds directory="assets/sound">
-		<sound id="ahop_brief" path="Brief.ogg"/>
-		<sound id="ahop_intro" path="Intro.ogg" subtitle_id="ahop_intro"/>
-		<sound id="ahop_override" path="OverrideHint.ogg" subtitle_id="ahop_override"/>
-		<sound id="ahop_saw" path="SawHint.ogg" subtitle_id="ahop_saw"/>
-		<sound id="ahop_keycard" path="KeycardHint.ogg" subtitle_id="ahop_keycard"/>
-		<sound id="ahop_escape" path="EscapeHint.ogg" subtitle_id="ahop_escape"/>
-		<sound id="ahop_timelockblock" path="TimelockBlockHint.ogg" subtitle_id="ahop_timelockblock"/>
-		<sound id="ahop_contactdied" path="ContactDiedHint.ogg" subtitle_id="ahop_contactdied"/>
-		<sound id="ahop_code" path="CodeHint.ogg" subtitle_id="ahop_code"/>
-		<sound id="ahop_disarmc4" path="DisarmHint.ogg" subtitle_id="ahop_disarmc4"/>
-		<sound id="ahop_cutter" path="CutHint.ogg" subtitle_id="ahop_cutter"/>
-		<sound id="ahop_delay" path="DelayHint.ogg" subtitle_id="ahop_delay"/>
-		<sound id="ahop_delaytwo" path="DelayHintTwo.ogg" subtitle_id="ahop_delaytwo"/>
-		<sound id="ahop_c4" path="C4Hint.ogg" subtitle_id="ahop_c4"/>
-		<sound id="ahop_ripeye" path="RipEyeHint.ogg" subtitle_id="ahop_ripeye"/>
-		<sound id="ahop_scaneye" path="ScanEyeHint.ogg" subtitle_id="ahop_scaneye"/>
-		<sound id="ahop_stealthbox" path="StealthBoxHint.ogg" subtitle_id="ahop_stealthbox"/>
-		<sound id="ahop_stealthcomputer" path="ComputerHint.ogg" subtitle_id="ahop_stealthcomputer"/>
-		<sound id="ahop_kill" path="KillHint.ogg" subtitle_id="ahop_kill"/>
-		<sound id="ahop_escort" path="EscortHint.ogg" subtitle_id="ahop_escort"/>
-		<sound id="ahop_contactlist" path="ContactListHint.ogg" subtitle_id="ahop_contactlist"/>
-		<sound id="ahop_defendescort" path="DefendEscort.ogg" subtitle_id="ahop_defendescort"/>
-		<sound id="ahop_beatupitguy" path="BeatUpITGuyHint.ogg" subtitle_id="ahop_beatupitguy"/>
-		<sound id="ahop_timelock" path="TimelockHint.ogg" subtitle_id="ahop_timelock"/>
-	</Sounds>
 	<AddFiles directory="assets">
 		<texture force="true" load="true" path="textures/ahopicon"/>
 	</AddFiles>
-	<AssetUpdates id="32924" provider="modworkshop" version="1.5"/>
+	<AssetUpdates id="32924" provider="modworkshop" version="1.7"/>
 	<Localization default="english.txt" directory="loc">
 		<loc file="english.txt" language="english"/>
 	</Localization>
 	<contact assets_gui="guis/mission_briefing/preload_contact_bain" id="constantine" name_id="contact_constantine_name" package="packages/contact_bain"/>
-	<level ai_group_type="America" briefing_dialog="ahop_brief" ghost_bonus="0.1" id="ahopl" intro_event="ahop_intro" max_bags="54" player_style="generic">
+	<level ai_group_type="russia" briefing_dialog="ahop_brief" ghost_bonus="0.1" id="ahopl" intro_event="ahop_intro" max_bags="54">
 		<add file="levels/ahopl/add.xml"/>
 		<hooks directory="hooks">
 			<hook file="russia_charactertweakdata.lua" source_file="lib/tweak_data/charactertweakdata"/>
 			<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
 			<hook file="russia_pager_sfx_fix.lua" source_file="lib/units/enemies/cop/copbrain"/>
-			<hook file="russia_enemies.lua" source_file="lib/tweak_data/groupaitweakdata"/>
+			<!--hook file="russia_enemies.lua" source_file="lib/tweak_data/groupaitweakdata"/-->
 			<hook file="copbrain.lua" source_file="lib/units/enemies/cop/copbrain"/>
 			<hook file="interactiontweakdata.lua" source_file="lib/tweak_data/interactiontweakdata"/>
 			<hook file="copmovement.lua" source_file="lib/units/enemies/cop/copmovement"/>
@@ -245,6 +219,34 @@
 				<options merge_mode="add" mode="add"/>
 			</mod>
 		</script_data_mods>
+		
+	<sounds directory="assets/sound">
+		<sound id="ahop_brief" path="Brief.ogg"/>
+		<sound id="ahop_intro" path="Intro.ogg" subtitle_id="ahop_intro"/>
+		<sound id="ahop_override" path="OverrideHint.ogg" subtitle_id="ahop_override"/>
+		<sound id="ahop_saw" path="SawHint.ogg" subtitle_id="ahop_saw"/>
+		<sound id="ahop_keycard" path="KeycardHint.ogg" subtitle_id="ahop_keycard"/>
+		<sound id="ahop_escape" path="EscapeHint.ogg" subtitle_id="ahop_escape"/>
+		<sound id="ahop_timelockblock" path="TimelockBlockHint.ogg" subtitle_id="ahop_timelockblock"/>
+		<sound id="ahop_contactdied" path="ContactDiedHint.ogg" subtitle_id="ahop_contactdied"/>
+		<sound id="ahop_code" path="CodeHint.ogg" subtitle_id="ahop_code"/>
+		<sound id="ahop_disarmc4" path="DisarmHint.ogg" subtitle_id="ahop_disarmc4"/>
+		<sound id="ahop_cutter" path="CutHint.ogg" subtitle_id="ahop_cutter"/>
+		<sound id="ahop_delay" path="DelayHint.ogg" subtitle_id="ahop_delay"/>
+		<sound id="ahop_delaytwo" path="DelayHintTwo.ogg" subtitle_id="ahop_delaytwo"/>
+		<sound id="ahop_c4" path="C4Hint.ogg" subtitle_id="ahop_c4"/>
+		<sound id="ahop_ripeye" path="RipEyeHint.ogg" subtitle_id="ahop_ripeye"/>
+		<sound id="ahop_scaneye" path="ScanEyeHint.ogg" subtitle_id="ahop_scaneye"/>
+		<sound id="ahop_stealthbox" path="StealthBoxHint.ogg" subtitle_id="ahop_stealthbox"/>
+		<sound id="ahop_stealthcomputer" path="ComputerHint.ogg" subtitle_id="ahop_stealthcomputer"/>
+		<sound id="ahop_kill" path="KillHint.ogg" subtitle_id="ahop_kill"/>
+		<sound id="ahop_escort" path="EscortHint.ogg" subtitle_id="ahop_escort"/>
+		<sound id="ahop_contactlist" path="ContactListHint.ogg" subtitle_id="ahop_contactlist"/>
+		<sound id="ahop_defendescort" path="DefendEscort.ogg" subtitle_id="ahop_defendescort"/>
+		<sound id="ahop_beatupitguy" path="BeatUpITGuyHint.ogg" subtitle_id="ahop_beatupitguy"/>
+		<sound id="ahop_timelock" path="TimelockHint.ogg" subtitle_id="ahop_timelock"/>
+	</sounds>		
+		
 	</level>
 	<narrative briefing_event="" contact="constantine" icon="textures/ahopicon" id="ahop">
 		<chain>
