@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+			
+		<target mode="attach">
+			<anim name="howa_type20_reload" 								file="anims/fps/howa_type20/howa_type20_reload" blend_set="all"/>
+			<anim name="howa_type20_reload_not_empty" 						file="anims/fps/howa_type20/howa_type20_reload_not_empty" blend_set="all"/>
+			<anim name="howa_type20_idle" 									file="anims/fps/howa_type20/howa_type20_idle" blend_set="all"/>
+			<anim name="howa_type20_recoil" 								file="anims/fps/howa_type20/howa_type20_recoil" blend_set="all"/>
+			<anim name="howa_type20_recoil_enter" 							file="anims/fps/howa_type20/howa_type20_recoil_enter" blend_set="all"/>
+			<anim name="howa_type20_recoil_loop" 							file="anims/fps/howa_type20/howa_type20_recoil_loop" blend_set="all"/>
+			<anim name="howa_type20_recoil_exit" 							file="anims/fps/howa_type20/howa_type20_recoil_exit" blend_set="all"/>
+			<anim name="howa_type20_recoil_steelsight" 					file="anims/fps/howa_type20/howa_type20_recoil" blend_set="all"/>
+			<anim name="howa_type20_equip" 								file="anims/fps/howa_type20/howa_type20_equip" blend_set="all"/>
+			<anim name="howa_type20_unequip" 								file="anims/fps/howa_type20/howa_type20_unequip" blend_set="all"/>
+			<anim name="howa_type20_melee" 								file="anims/fps/howa_type20/howa_type20_melee" blend_set="all"/>
+			<anim name="howa_type20_melee_miss" 							file="anims/fps/howa_type20/howa_type20_melee_miss" blend_set="all"/>
+			<anim name="howa_type20_use" 									file="anims/fps/howa_type20/howa_type20_use" blend_set="all"/>
+			<anim name="howa_type20_sprint_enter" 							file="anims/fps/howa_type20/howa_type20_sprint_enter" blend_set="all"/>
+			<anim name="howa_type20_sprint" 								file="anims/fps/howa_type20/howa_type20_sprint" blend_set="all"/>
+			<anim name="howa_type20_sprint_exit" 							file="anims/fps/howa_type20/howa_type20_sprint_exit" blend_set="all"/>
+			<anim name="howa_type20_com_down_var1" 						file="anims/fps/howa_type20/howa_type20_com_var1" blend_set="all"/>
+			<anim name="howa_type20_com_stop" 								file="anims/fps/howa_type20/howa_type20_com_var5" blend_set="all"/>
+			<anim name="howa_type20_com_come" 								file="anims/fps/howa_type20/howa_type20_com_var6" blend_set="all"/>
+			<anim name="howa_type20_com_point" 							file="anims/fps/howa_type20/howa_type20_com_var7" blend_set="all"/>
+			<anim name="howa_type20_get_up" 								file="anims/fps/howa_type20/howa_type20_get_up" blend_set="all"/>
+			<anim name="howa_type20_gogo" 									file="anims/fps/howa_type20/howa_type20_gogo" blend_set="all"/>
+			<anim name="howa_type20_tased" 								file="anims/fps/howa_type20/howa_type20_tased" blend_set="all"/>
+			<anim name="howa_type20_tased_boost" 							file="anims/fps/howa_type20/howa_type20_tased_boost" blend_set="all"/>
+			<anim name="howa_type20_tased_exit" 							file="anims/fps/howa_type20/howa_type20_tased_exit" blend_set="all"/>
+			<anim name="howa_type20_inspect" 								file="anims/fps/howa_type20/howa_type20_inspect" blend_set="all"/> 
+			
+			
+		</target>
+	</tweak>
+</tweaks>
