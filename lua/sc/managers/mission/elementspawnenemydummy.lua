@@ -2665,6 +2665,13 @@ ElementSpawnEnemyDummy.faction_mapping.fbi.normal = ElementSpawnEnemyDummy.facti
 ElementSpawnEnemyDummy.faction_mapping.fbi.hard = ElementSpawnEnemyDummy.faction_mapping.fbi.overkill
 
 ElementSpawnEnemyDummy.enemy_mapping = {
+	--My Stupid Attempts at Fixes :3 (Unused Stuff Apprently)
+	[Idstring("units/payday2/characters/ene_sm_shield/ene_sm_shield"):key()] = "shield",
+	[Idstring("units/payday2/characters/ene_sm_heavy_g36/ene_sm_heavy_g36"):key()] = "heavy_1",
+	[Idstring("units/payday2/characters/ene_sm_heavy_r870/ene_sm_heavy_r870"):key()] = "heavy_2",
+	[Idstring("units/payday2/characters/ene_sm_swat_1/ene_sm_swat_1"):key()] = "swat_1",
+	[Idstring("units/payday2/characters/ene_sm_swat_r870/ene_sm_swat_r870"):key()] = "swat_2",
+	
 	--Vanilla Factions
 	--America
 	--Security
