@@ -15,6 +15,7 @@ Hooks:PostHook(CoreBodyDamage, "init", "sh_init", function (self)
 	end
 end)
 
+--[[
 -- Hook the correct class - CoreUnitDamage instead of CoreDamageExtension
 Hooks:PostHook(CoreUnitDamage, "run_sequence_simple", "DebugMissingSequenceRun", function(self, name, ...)
 	if not self._sequences then
@@ -25,3 +26,4 @@ Hooks:PostHook(CoreUnitDamage, "run_sequence_simple", "DebugMissingSequenceRun",
 		log("[SEQUENCE DEBUG] Missing sequence: '" .. tostring(name) .. "' on unit: " .. tostring(self._unit:name()))
 	end
 end)
+]]
