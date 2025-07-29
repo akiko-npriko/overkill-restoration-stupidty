@@ -1465,9 +1465,13 @@ Hooks:Add("LocalizationManagerPostInit", "SC_Localization_Eng", function(loc)
 		["bm_heavy_ap_no_mult_weapon_sc_desc"] = "#{skill_color}#Can pierce multiple enemies, their body armor, shields, titan-shields and thin walls.##",
 		["bm_integral_suppressor_desc"] = "Comes #{skill_color}#integrally suppressed##.",
 		
-		--teststuff
+		--akikko teststuff
+		["bm_depeleted_uranium_rounds_sc"] = "OMNIA's Depleted Uranium Rounds",
 		["bm_heavy_ap_weapon_scteststat_desc"] = "A unique heavy launcher that fires SCAB rounds\n#{risk}#SCAB rounds start at 50k+ damage and rapidly drop to 180 damage past 4m##\n#{skill_color}#Can pierce body armor and stagger enemies.##",
-
+		["bm_heavy_ap_weapon_all_walls_2_sc_desc"] = "#{skill_color}#Can pierce multiple enemies, their body armor, shields, titan-shields and all walls.##",
+		["bm_heavy_ap_weapon_all_walls_all_shield_2_sc_desc"] = "#{skill_color}#Can pierce multiple enemies, their body armor, all shields and all walls.##",
+		["bm_heavy_ap_weapon_all_shield_2_sc_desc"] = "#{skill_color}#Can pierce multiple enemies, their body armor, all shields and thin walls.##",
+		
 		["bm_bow_sc_desc"] = "Hold #{skill_color}#$BTN_FIRE## to draw an arrow, release to fire.\nDamage and velocity of the arrow increases as you approach full draw.\n\nPress #{skill_color}#$BTN_AIM## to let down your drawn arrow.\n\nArrows can be retrieved by picking them up.\n#{skill_color}#Can pierce body armor.##",
 		["bm_bow_exp_sc_desc"] = "Hold #{skill_color}#$BTN_FIRE## to draw an arrow, release to fire.\nVelocity of the arrow increases as you approach full draw.\n\nPress #{skill_color}#$BTN_AIM## to let down your drawn arrow.\n\n#{risk}#Arrows explode on impact;## #{risk}#damage is split between the arrow and explosion.##",
 		["bm_w_bow_exp_desc"] = "Fire arrows that #{risk}#explode## on impact in a #{skill_color}#2## meter radius.\n\n#{important_1}#Arrow velocity is reduced and they cannot be retrieved for reuse.##",

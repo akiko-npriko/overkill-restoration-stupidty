@@ -23838,7 +23838,7 @@ end)
 						end
 					end
 				end
-				end
+			end
 		end
 
 
@@ -49251,6 +49251,10 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 		self.parts.wpn_fps_smg_m38a_m_20rnd.custom_stats = nil
 	end
 -- [[Akiko Edits]]
+	if self.parts.wpn_fps_snp_sako_85_scope then
+		self.parts.wpn_fps_snp_sako_85_scope.ads_weapon_visible = false
+		self.parts.wpn_fps_snp_sako_85_scope.ads_overlay = "guis/scope_overlay/iuhPSO1ScopeOverlay"
+	end
 	if self.parts.wpn_fps_ass_temple_o_dummy then
 		self.parts.wpn_fps_ass_temple_o_dummy.supported = true
 		self.parts.wpn_fps_ass_temple_o_dummy.has_description = true
@@ -49355,62 +49359,101 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 			self.parts.wpn_fps_upg_o_northtac_alt.stance_mod.wpn_fps_ass_liberator.translation = self.parts.wpn_fps_upg_o_northtac_alt.stance_mod.wpn_fps_ass_liberator.translation + Vector3(0, 0, 0.25)
 		end
 	end
-	--[[
-	if self.parts.wpn_fps_upg_a_infin_wall_pen then
-		self.parts.wpn_fps_upg_a_infin_wall_pen.supported = true
-		self.parts.wpn_fps_upg_a_infin_wall_pen.has_description = true
-		self.parts.wpn_fps_upg_a_infin_wall_pen.keep_damage = true
-		self.parts.wpn_fps_upg_a_infin_wall_pen.desc_id = "bm_heavy_ap_weapon_sc_desc"
-		self.parts.wpn_fps_upg_a_infin_wall_pen.no_cull = true
-		self.parts.wpn_fps_upg_a_infin_wall_pen.pcs = {}
-		self.parts.wpn_fps_upg_a_infin_wall_pen.stats = {value = 10, spread = -6, recoil = -9, damage = -100}
-		self.parts.wpn_fps_upg_a_infin_wall_pen.custom_stats = {
-			armor_piercing_override = 1,
-			can_shoot_through_enemy = true,
-			can_shoot_through_enemy_unlim = true,
-			can_shoot_through_wall_unlim = true,
-			--alt_dmg_mult = 10,
-			can_shoot_through_wall = true,
-			can_shoot_through_shield = true,
-			can_shoot_through_titan_shield = true,
-			--ignore_rof_mult_anims = true,
-			--hs_mult = 2,
-			--alt_ammo_pickup_min_mul = 0,
-			--alt_ammo_pickup_max_mul = 0,
-			--ammo_pickup_min_mul = 0,
-			--ammo_pickup_max_mul = 0,
-			trail_effect = "effects/particles/weapons/sniper_trail_sc",
-			--alt_desc = "bm_heavy_ap_weapon_sc_desc",
-			--"effects/payday2/particles/weapons/50cal_auto_fps"
+	Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "Akiko_Extras", function(self, tweak_data, weapon_skins)
+		self.parts.wpn_fps_upg_a_infinee_wall_pen = {
+			pcs = {},
+			no_cull = true,
+			type = "ammo",
+			name_id = "bm_depeleted_uranium_rounds_sc",
+			desc_id = "bm_heavy_ap_weapon_all_walls_2_sc_desc",
+			a_obj = "a_body",
+			unit = "units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy",
+			third_unit = "units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy",
+			has_description = true,
+			alt_icon = "guis/textures/pd2/blackmarket/icons/deployables/ammo_bag",
+			dlc = nil,
+			supported = true,
+			stats = {value = 10, spread = -8, recoil = -6, damage = -40},
+			custom_stats = {
+				armor_piercing_override = 1,
+				can_shoot_through_enemy = true,
+				can_shoot_through_enemy_unlim = true,
+				can_shoot_through_wall_unlim = true,
+				--alt_dmg_mult = 10,
+				can_shoot_through_wall = true,
+				can_shoot_through_shield = true,
+				can_shoot_through_titan_shield = true,
+				--ignore_rof_mult_anims = true,
+				--hs_mult = 2,
+				--alt_ammo_pickup_min_mul = 0,
+				--alt_ammo_pickup_max_mul = 0,
+				--ammo_pickup_min_mul = 0,
+				--ammo_pickup_max_mul = 0,
+				trail_effect = "effects/particles/weapons/sniper_trail_sc",
+				--alt_desc = "bm_heavy_ap_weapon_sc_desc",
+				--"effects/payday2/particles/weapons/50cal_auto_fps"
+			}
 		}
-		table.insert(self.wpn_fps_snp_m95.uses_parts, "wpn_fps_upg_a_infin_wall_pen")
-		]]
-		--wpn_fps_snp_m95
-		--[[
-		local function definepurehatred(factory_id)
+		self.parts.wpn_fps_upg_a_infinee_wall_pen_high_cal = {
+			pcs = {},
+			no_cull = true,
+			type = "ammo",
+			name_id = "bm_depeleted_uranium_rounds_sc",
+			desc_id = "bm_heavy_ap_weapon_all_walls_2_sc_desc",
+			a_obj = "a_body",
+			unit = "units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy",
+			third_unit = "units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy",
+			has_description = true,
+			alt_icon = "guis/textures/pd2/blackmarket/icons/deployables/ammo_bag",
+			dlc = nil,
+			supported = true,
+			stats = {value = 10, spread = -12, recoil = -9, damage = -50},
+			custom_stats = {
+				armor_piercing_override = 1,
+				can_shoot_through_enemy = true,
+				can_shoot_through_enemy_unlim = true,
+				can_shoot_through_wall_unlim = true,
+				--alt_dmg_mult = 10,
+				can_shoot_through_wall = true,
+				can_shoot_through_shield = true,
+				can_shoot_through_titan_shield = true,
+				--ignore_rof_mult_anims = true,
+				--hs_mult = 2,
+				--alt_ammo_pickup_min_mul = 0,
+				--alt_ammo_pickup_max_mul = 0,
+				--ammo_pickup_min_mul = 0,
+				--ammo_pickup_max_mul = 0,
+				trail_effect = "effects/particles/weapons/sniper_trail_sc",
+				--alt_desc = "bm_heavy_ap_weapon_sc_desc",
+				--"effects/payday2/particles/weapons/50cal_auto_fps"
+			}
+		}
+		local function purehatred(factory_id)
 			for id, data in pairs(tweak_data.upgrades.definitions) do
 				if data.category == "weapon" and data.factory_id == factory_id then
 					return data.weapon_id
 				end
 			end
 		end
-		for _, factory_id in ipairs(self) do
-			if self[factory_id] and self[factory_id].uses_parts then
-			local weapon_id = definepurehatred(factory_id)
-				if tweak_data.weapon[weapon_id] then
+
+		for factory_id, i in pairs(self) do
+			if self[ factory_id ] then
+				local weapon_id = purehatred(factory_id)
+				if tweak_data.weapon[ weapon_id ] then
 					local twa = tweak_data.weapon[ weapon_id ]
 					if twa.categories then
-						if table.contains( twa.categories , "snp")
-							table.insert(self[factory_id].uses_parts, "wpn_fps_upg_a_infin_wall_pen")
-							table.insert(self[factory_id .. "_npc"].uses_parts, "wpn_fps_upg_a_infin_wall_pen")
+						if table.contains( twa.categories , "amr") then
+							if twa.stats and twa.stats.damage and twa.stats.damage >= 180 then
+								table.insert(self[ factory_id ].uses_parts, "wpn_fps_upg_a_infinee_wall_pen_high_cal")
+							else
+								table.insert(self[ factory_id ].uses_parts, "wpn_fps_upg_a_infinee_wall_pen")
+							end
 						end
 					end
 				end
 			end
 		end
-	end
-	--launcher_grenade
-	]]
+	end)
 	--[[
 	if self.parts.wpn_fps_fla_system_body_iuhIceThrowerConversion then
 		self.parts.wpn_fps_fla_system_body_iuhIceThrowerConversion.supported = true
