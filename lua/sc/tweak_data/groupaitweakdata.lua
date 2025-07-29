@@ -16336,11 +16336,40 @@ function GroupAITweakData:_init_enemy_spawn_groups(difficulty_index)
 		}
 	}
 	--Akiko Tactics
-	self._tactics.groundsniper = {
-		"ranged_fire",
-		"flank",
-		"provide_support"
-	}
+	if difficulty_index == 8 then
+		self._tactics.groundsniper = {
+			"ranged_fire",
+			"flank",
+			"provide_support",
+			"provide_coverfire",
+			"grouphrtr",
+			"smoke_grenade",
+			"flash_grenade",
+			"shield_cover"
+		}
+	elseif difficulty_index == 6 or difficulty_index == 7 then
+		self._tactics.groundsniper = {
+			"ranged_fire",
+			"flank",
+			"grouphrtr",
+			"provide_coverfire",
+			"provide_support",
+			"shield_cover"
+		}
+	elseif difficulty_index == 4 or difficulty_index == 5 then
+		self._tactics.groundsniper = {
+			"ranged_fire",
+			"flank",
+			"provide_support",
+			"shield_cover"
+		}
+	else
+		self._tactics.groundsniper = {
+			"ranged_fire",
+			"flank",
+			"shield_cover"
+		}
+	end
 	
 	
 	self.enemy_spawn_groups = {}
