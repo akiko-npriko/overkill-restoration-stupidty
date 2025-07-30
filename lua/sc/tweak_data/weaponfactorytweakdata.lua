@@ -49375,6 +49375,7 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 			supported = true,
 			stats = {value = 10, spread = -8, recoil = -6, damage = -40},
 			custom_stats = {
+				damage_min_mult = 1.85,
 				armor_piercing_override = 1,
 				can_shoot_through_enemy = true,
 				can_shoot_through_enemy_unlim = true,
@@ -49409,6 +49410,7 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 			supported = true,
 			stats = {value = 10, spread = -12, recoil = -9, damage = -50},
 			custom_stats = {
+				damage_min_mult = 1.75,
 				armor_piercing_override = 1,
 				can_shoot_through_enemy = true,
 				can_shoot_through_enemy_unlim = true,
