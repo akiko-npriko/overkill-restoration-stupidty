@@ -15739,13 +15739,27 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		table.insert(unit_types_black_dozer.murkywater, warthogg)
 	end
 	
+	local function akikominigunnerdozer()
+		--Minigogdozer (Addon Skull Dozer) - (America, Nypd, Lapd, Fbi)
+		table.insert(unit_types_skull_dozer.america, minigun_dozer)
+		table.insert(unit_types_skull_dozer.nypd, minigun_dozer)
+		table.insert(unit_types_skull_dozer.lapd, minigun_dozer)
+		table.insert(unit_types_skull_dozer.fbi, minigun_dozer)
+	end
+	
+	local function akikonationalminigunnerdozer()
+		--National Guard Minigogdozer (Addon Skull Dozer) - (America, Nypd, Lapd, Fbi)
+		table.insert(unit_types_skull_dozer.america, marshall_minigundozer)
+		table.insert(unit_types_skull_dozer.nypd, marshall_minigundozer)
+		table.insert(unit_types_skull_dozer.lapd, marshall_minigundozer)
+		table.insert(unit_types_skull_dozer.fbi, marshall_minigundozer)
+	end
+	
 	if difficulty_index == 5 then
 		akikomedicdozersdwbelow()
-		
 	elseif difficulty_index == 6 then
 		akikomedicdozersdwbelow()
 		akikoregwarthog()
-		
 		--[[
 		--Elite Bulldozers (Addon Skull Dozer) Mayhem (America, Nypd, Lapd, Fbi)
 		table.insert(unit_types_skull_dozer.america, ellite_dozer)
@@ -15753,16 +15767,10 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		table.insert(unit_types_skull_dozer.lapd, ellite_dozer)
 		table.insert(unit_types_skull_dozer.fbi, ellite_dozer)
 		]]
-		
 	elseif difficulty_index == 7 then
 		akikomedicdozersdwbelow()
 		akikoregwarthog()
-		
-		--Minigogdozer (Addon Skull Dozer) Death Wish (America, Nypd, Lapd, Fbi)
-		table.insert(unit_types_skull_dozer.america, minigun_dozer)
-		table.insert(unit_types_skull_dozer.nypd, minigun_dozer)
-		table.insert(unit_types_skull_dozer.lapd, minigun_dozer)
-		table.insert(unit_types_skull_dozer.fbi, minigun_dozer)
+		akikominigunnerdozer()
 		--[[
 		--Elite Bulldozers (Addon Skull Dozer) Death Wish (America, Nypd, Lapd, Fbi)
 		table.insert(unit_types_skull_dozer.america, ellite_dozer)
@@ -15770,16 +15778,10 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		table.insert(unit_types_skull_dozer.lapd, ellite_dozer)
 		table.insert(unit_types_skull_dozer.fbi, ellite_dozer)
 		]]
-		
 	elseif difficulty_index == 8 then
 		akikomedicdozersds()
 		akikonationalgwarthog()
-		
-		--National Guard Minigogdozer (Addon Skull Dozer) Death Sentence (America, Nypd, Lapd, Fbi)
-		table.insert(unit_types_skull_dozer.america, marshall_minigundozer)
-		table.insert(unit_types_skull_dozer.nypd, marshall_minigundozer)
-		table.insert(unit_types_skull_dozer.lapd, marshall_minigundozer)
-		table.insert(unit_types_skull_dozer.fbi, marshall_minigundozer)
+		akikonationalminigunnerdozer()
 		--[[
 		--Bravo Bulldozers (Addon Skull Dozer) Death Sentence (America, Nypd, Lapd, Fbi)
 		table.insert(unit_types_skull_dozer.america, bravo_elite_dozer)
