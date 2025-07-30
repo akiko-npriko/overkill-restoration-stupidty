@@ -49313,9 +49313,9 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.pcs = {}
 		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.has_description = true
 		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.keep_damage = true
-		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.desc_id = "bm_heavy_ap_weapon_sc_desc"
+		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.desc_id = "bm_heavy_ap_weapon_all_walls_2_sc_desc"
 		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.no_cull = true
-		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.stats = {value = 10, spread = 100, recoil = 100, total_ammo_mod = 3,}
+		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.stats = {value = 10, spread = 100, recoil = 100, total_ammo_mod = 400}
 		--self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.stats = {value = 12, spread = 100, recoil = 100, damage = 100, total_ammo_mod = 999,}
 		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.custom_stats = {
 			armor_piercing_override = 1,
@@ -49337,7 +49337,7 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 			--ammo_pickup_min_mul = 0,
 			--ammo_pickup_max_mul = 0,
 			trail_effect = "effects/particles/weapons/sniper_trail_sc",
-			alt_desc = "bm_heavy_ap_weapon_sc_desc"
+			alt_desc = "bm_heavy_ap_weapon_all_walls_2_sc_desc"
 			--"effects/payday2/particles/weapons/50cal_auto_fps"
 		}
 		table.insert(self.wpn_fps_rpg7.uses_parts, "wpn_fps_upg_a_grenade_launcher_iuhApRpgRound")
