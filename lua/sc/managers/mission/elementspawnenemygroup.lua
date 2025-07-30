@@ -1131,6 +1131,8 @@ local standard_spawngroups = {
 	}
 }
 local debugwith1unut = true
+local unit2replacewith = "GREEN_tanks"
+
 function ElementSpawnEnemyGroup:akikofunspawns()
 	if standard_spawngroups ~= nil then
 		for k, v in pairs(standard_spawngroups) do
@@ -1143,7 +1145,7 @@ ElementSpawnEnemyGroup:akikofunspawns()
 if debugwith1unut then
 	if standard_spawngroups ~= nil then
 		for k, v in pairs(standard_spawngroups) do
-			v = {"tac_sniper"}
+			v = {unit2replacewith}
 		end
 	end
 end
