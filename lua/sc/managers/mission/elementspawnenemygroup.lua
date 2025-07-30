@@ -26,16 +26,6 @@ Hooks:OverrideFunction(ElementSpawnEnemyGroup, "on_executed", function (self, in
 	ElementSpawnEnemyGroup.super.on_executed(self, instigator)
 end)
 
-function ElementSpawnEnemyGroup:akikofunspawns()
-	if standard_spawngroups ~= nil then
-		for k, v in pairs(standard_spawngroups) do
-			--if v == "tac_swat_rifle_flank" then
-				table.insert(v, "tac_sniper")
-			--end
-		end
-	end
-end
-
 local standard_spawngroups = {
 	["standard"] = {
 		--All Blue units
@@ -1140,7 +1130,17 @@ local standard_spawngroups = {
 		"FBI_spoocs"
 	}
 }
+function ElementSpawnEnemyGroup:akikofunspawns()
+	if standard_spawngroups ~= nil then
+		for k, v in pairs(standard_spawngroups) do
+			--if v == "tac_swat_rifle_flank" then
+				table.insert(v, "tac_sniper")
+			--end
+		end
+	end
+end
 ElementSpawnEnemyGroup:akikofunspawns()
+
 -- fuckhuge table
 local spawnpoint_delays = {
 	["alex_1"] = {
