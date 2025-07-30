@@ -4294,8 +4294,8 @@ function CharacterTweakData:_init_city_swat_rpg(presets)
 	self.xof_rpg.dodge = presets.dodge.athletic
 	self.xof_rpg.move_speed = presets.move_speed.normal
 	self.xof_rpg.yellow_blood = false
-	self.xof_rpg.HEALTH_INIT = 25
-	self.xof_rpg.headshot_dmg_mul = 1.9
+	self.xof_rpg.HEALTH_INIT = 5.5
+	self.xof_rpg.headshot_dmg_mul = 2.5
 	self.xof_rpg.damage.bullet_damage_mul = 1
 	self.xof_rpg.damage.explosion_damage_mul = 1
 	self.xof_rpg.damage.tase_damage_mul = 1
