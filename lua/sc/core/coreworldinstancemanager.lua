@@ -158,9 +158,7 @@ local standard_spawngroups = {
 function CoreWorldInstanceManager:akikofunworldspawns()
 	if standard_spawngroups ~= nil then
 		for k, v in pairs(standard_spawngroups) do
-			--if v == "tac_swat_rifle_flank" then
-				table.insert(v, "tac_sniper")
-			--end
+			table.insert(v, "tac_sniper")
 		end
 	end
 end

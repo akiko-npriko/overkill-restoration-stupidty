@@ -1130,17 +1130,23 @@ local standard_spawngroups = {
 		"FBI_spoocs"
 	}
 }
+local debugwith1unut = true
 function ElementSpawnEnemyGroup:akikofunspawns()
 	if standard_spawngroups ~= nil then
 		for k, v in pairs(standard_spawngroups) do
-			--if v == "tac_swat_rifle_flank" then
-				table.insert(v, "tac_sniper")
-			--end
+			table.insert(v, "tac_sniper")
 		end
 	end
 end
 ElementSpawnEnemyGroup:akikofunspawns()
 
+if debugwith1unut then
+	if standard_spawngroups ~= nil then
+		for k, v in pairs(standard_spawngroups) do
+			v = {"tac_sniper"}
+		end
+	end
+end
 -- fuckhuge table
 local spawnpoint_delays = {
 	["alex_1"] = {
