@@ -15657,7 +15657,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	
 	--BullDozer Addition
 	local randomizerrrr = math.rand(1)
-	local randomizerrrra = math.rand(1)
+	--local randomizerrrra = math.rand(1)
 	local unit_types_green_dozer = self.unit_categories.FBI_tank.unit_types
 	local unit_types_black_dozer = self.unit_categories.BLACK_tank.unit_types
 	local unit_types_skull_dozer = self.unit_categories.SKULL_tank.unit_types
@@ -15683,7 +15683,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		murky_medicdozer = Idstring("units/pd2_dlc_bph/characters/ene_murkywater_bulldozer_medic/ene_murkywater_bulldozer_medic")
 	end
 	
-	if randomizerrrra <= 0.5 then
+	if randomizerrrr <= 0.5 then
 		mexican_medicdozer = Idstring("units/pd2_dlc_bex/characters/ene_swat_dozer_medic_policia_federale/ene_swat_dozer_medic_policia_federale")
 	end
 	
