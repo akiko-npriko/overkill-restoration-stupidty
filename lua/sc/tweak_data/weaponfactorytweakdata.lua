@@ -49315,7 +49315,7 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.keep_damage = true
 		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.desc_id = "bm_heavy_ap_weapon_sc_desc"
 		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.no_cull = true
-		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.stats = {value = 10, spread = 100, recoil = 100, damage = 100}
+		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.stats = {value = 10, spread = 100, recoil = 100, total_ammo_mod = 3,}
 		--self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.stats = {value = 12, spread = 100, recoil = 100, damage = 100, total_ammo_mod = 999,}
 		self.parts.wpn_fps_upg_a_grenade_launcher_iuhApRpgRound.custom_stats = {
 			armor_piercing_override = 1,
@@ -49332,10 +49332,10 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 				"amr"
 			},
 			hs_mult = 2,
-			alt_ammo_pickup_min_mul = 0,
-			alt_ammo_pickup_max_mul = 0,
-			ammo_pickup_min_mul = 0,
-			ammo_pickup_max_mul = 0,
+			--alt_ammo_pickup_min_mul = 0,
+			--alt_ammo_pickup_max_mul = 0,
+			--ammo_pickup_min_mul = 0,
+			--ammo_pickup_max_mul = 0,
 			trail_effect = "effects/particles/weapons/sniper_trail_sc",
 			alt_desc = "bm_heavy_ap_weapon_sc_desc"
 			--"effects/payday2/particles/weapons/50cal_auto_fps"
