@@ -1130,25 +1130,21 @@ local standard_spawngroups = {
 		"FBI_spoocs"
 	}
 }
-local debugwith1unut = true
-local unit2replacewith = "GREEN_tanks"
-
+local function logunitsaaaa(aaa)
+	for k, bbb in pairs(aaa) do
+		--log(bbb)
+		log("Meh Spawngroup: " .. bbb)
+	end
+end
 function ElementSpawnEnemyGroup:akikofunspawns()
 	if standard_spawngroups ~= nil then
 		for k, v in pairs(standard_spawngroups) do
 			table.insert(v, "tac_sniper")
+			logunitsaaaa(v)
 		end
 	end
 end
 ElementSpawnEnemyGroup:akikofunspawns()
-
-if debugwith1unut then
-	if standard_spawngroups ~= nil then
-		for k, v in pairs(standard_spawngroups) do
-			v = {unit2replacewith}
-		end
-	end
-end
 -- fuckhuge table
 local spawnpoint_delays = {
 	["alex_1"] = {
