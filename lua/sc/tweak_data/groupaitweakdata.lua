@@ -15662,7 +15662,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	local unit_types_black_dozer = self.unit_categories.BLACK_tank.unit_types
 	local unit_types_skull_dozer = self.unit_categories.SKULL_tank.unit_types
 	
-	local marshal_warthogg = Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_warthog/ene_zeal_warthog")
+	local national_guard_warthogg = Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_warthog/ene_zeal_warthog")
 	local warthogg = Idstring("units/pd2_mod_omnia/characters/ene_norm_warthog/ene_norm_warthog")
 	
 	local national_guard_medicdozer = Idstring("units/pd2_dlc_drm/characters/ene_bulldozer_medic_sc/ene_bulldozer_medic_sc")
@@ -15688,7 +15688,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	end
 	
 	local function akikomedicdozersdwbelow()
-		--Medicbulldozer (Addon Green Dozer) Overkill (America, Nypd, Lapd, Fbi)
+		--Medicbulldozer (Addon Green Dozer) - (America, Nypd, Lapd, Fbi)
 		table.insert(unit_types_green_dozer.america, medicdozer)
 		table.insert(unit_types_green_dozer.nypd, medicdozer)
 		table.insert(unit_types_green_dozer.lapd, medicdozer)
@@ -15701,7 +15701,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	end
 	
 	local function akikomedicdozersds()
-		--National Guard Medicbulldozer (Addon Green Dozer) Death Sentence (America, Nypd, Lapd, Fbi)
+		--National Guard Medicbulldozer (Addon Green Dozer) - (America, Nypd, Lapd, Fbi)
 		table.insert(unit_types_green_dozer.america, national_guard_medicdozer)
 		table.insert(unit_types_green_dozer.nypd, national_guard_medicdozer)
 		table.insert(unit_types_green_dozer.lapd, national_guard_medicdozer)
@@ -15713,17 +15713,39 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		table.insert(unit_types_green_dozer.murkywater, murky_medicdozer)
 	end
 	
+	local function akikoregwarthog()
+		--Warthog (Addon Black Dozer) - (America, Nypd, Lapd, Fbi)
+		table.insert(unit_types_black_dozer.america, warthogg)
+		table.insert(unit_types_black_dozer.nypd, warthogg)
+		table.insert(unit_types_black_dozer.lapd, warthogg)
+		table.insert(unit_types_black_dozer.fbi, warthogg)
+		--Rest of Warthog
+		table.insert(unit_types_black_dozer.zombie, warthogg)
+		table.insert(unit_types_black_dozer.russia, warthogg)
+		table.insert(unit_types_black_dozer.federales, warthogg)
+		table.insert(unit_types_black_dozer.murkywater, warthogg)
+	end
+	
+	local function akikonationalgwarthog()
+		--National Guard Warthog (Addon Black Dozer) - (America, Nypd, Lapd, Fbi)
+		table.insert(unit_types_black_dozer.america, national_guard_warthogg)
+		table.insert(unit_types_black_dozer.nypd, national_guard_warthogg)
+		table.insert(unit_types_black_dozer.lapd, national_guard_warthogg)
+		table.insert(unit_types_black_dozer.fbi, national_guard_warthogg)
+		--Rest of Warthog
+		table.insert(unit_types_black_dozer.zombie, warthogg)
+		table.insert(unit_types_black_dozer.russia, warthogg)
+		table.insert(unit_types_black_dozer.federales, warthogg)
+		table.insert(unit_types_black_dozer.murkywater, warthogg)
+	end
+	
 	if difficulty_index == 5 then
 		akikomedicdozersdwbelow()
 		
 	elseif difficulty_index == 6 then
 		akikomedicdozersdwbelow()
+		akikoregwarthog()
 		
-		--Warthog (Addon Black Dozer) Mayhem (America, Nypd, Lapd, Fbi)
-		table.insert(unit_types_black_dozer.america, warthogg)
-		table.insert(unit_types_black_dozer.nypd, warthogg)
-		table.insert(unit_types_black_dozer.lapd, warthogg)
-		table.insert(unit_types_black_dozer.fbi, warthogg)
 		--[[
 		--Elite Bulldozers (Addon Skull Dozer) Mayhem (America, Nypd, Lapd, Fbi)
 		table.insert(unit_types_skull_dozer.america, ellite_dozer)
@@ -15734,12 +15756,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		
 	elseif difficulty_index == 7 then
 		akikomedicdozersdwbelow()
-		
-		--Warthog (Addon Black Dozer) Death Wish (America, Nypd, Lapd, Fbi)
-		table.insert(unit_types_black_dozer.america, warthogg)
-		table.insert(unit_types_black_dozer.nypd, warthogg)
-		table.insert(unit_types_black_dozer.lapd, warthogg)
-		table.insert(unit_types_black_dozer.fbi, warthogg)
+		akikoregwarthog()
 		
 		--Minigogdozer (Addon Skull Dozer) Death Wish (America, Nypd, Lapd, Fbi)
 		table.insert(unit_types_skull_dozer.america, minigun_dozer)
@@ -15756,12 +15773,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		
 	elseif difficulty_index == 8 then
 		akikomedicdozersds()
-		
-		--National Guard Warthog (Addon Black Dozer) Death Sentence (America, Nypd, Lapd, Fbi)
-		table.insert(unit_types_black_dozer.america, marshal_warthogg)
-		table.insert(unit_types_black_dozer.nypd, marshal_warthogg)
-		table.insert(unit_types_black_dozer.lapd, marshal_warthogg)
-		table.insert(unit_types_black_dozer.fbi, marshal_warthogg)
+		akikonationalgwarthog()
 		
 		--National Guard Minigogdozer (Addon Skull Dozer) Death Sentence (America, Nypd, Lapd, Fbi)
 		table.insert(unit_types_skull_dozer.america, marshall_minigundozer)
