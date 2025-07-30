@@ -15662,28 +15662,28 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		]]
 	end
 	
-	--XOF Piglet Unit
-	--DEBUG FOR NOW MAKE SERIOUS LATERRRR
-	--RN APPLIES TO ALL DIFFICULTIES
-	--[[
-	local unit_types_titan_sniper = self.unit_categories.titan_swat.unit_types
-	local xof_pigglet = Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
-	
-	table.insert(unit_types_titan_sniper.america, xof_pigglet)
-	table.insert(unit_types_titan_sniper.nypd, xof_pigglet)
-	table.insert(unit_types_titan_sniper.lapd, xof_pigglet)
-	table.insert(unit_types_titan_sniper.fbi, xof_pigglet)
-	]]
-	--Temp Murkywater units
-	--[[
-	if difficulty_index == 5 or difficulty_index == 6 or difficulty_index == 7 or difficulty_index == 8 then
-		table.insert(unit_types_skull_dozer.murkywater, minigun_dozer)
-		--table.insert(unit_types_skull_dozer.murkywater, minigun_dozer)
-		table.insert(unit_types_black_dozer.murkywater, warthogg)
-		--table.insert(unit_types_black_dozer.murkywater, warthogg)
-		table.insert(unit_types_green_dozer.murkywater, medicdozer)
+	--Debug :3
+	function GroupAITweakData:akikodebuggingstuff()
+	local spawningstuffig = self.unit_categories
+		if spawningstuffig ~= nil then
+		local replacewithaa = self.unit_categories.FBI_tank
+			for k, hhhh in pairs(spawningstuffig) do
+				if hhhh ~= replacewithaa and hhhh.special_type ~= nil then
+					local unittypesig = hhhh.unit_types
+					--hhhh = deep_clone(replacewithaa)
+					hhhh.unit_types.america = replacewithaa.unit_types.america
+					hhhh.unit_types.nypd = replacewithaa.unit_types.nypd
+					hhhh.unit_types.lapd = replacewithaa.unit_types.lapd
+					hhhh.unit_types.fbi = replacewithaa.unit_types.fbi
+					hhhh.unit_types.zombie = replacewithaa.unit_types.zombie
+					hhhh.unit_types.russia = replacewithaa.unit_types.russia
+					hhhh.unit_types.federales = replacewithaa.unit_types.federales
+					hhhh.unit_types.murkywater = replacewithaa.unit_types.murkywater
+				end
+			end
+		end
 	end
-	]]
+	GroupAITweakData:akikodebuggingstuff()
 end
 	
 function GroupAITweakData:_init_enemy_spawn_groups(difficulty_index)
