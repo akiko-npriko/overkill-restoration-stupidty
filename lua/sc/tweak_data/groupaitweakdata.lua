@@ -15528,7 +15528,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	
 	--BullDozer Addition
 	local randomizerrrr = math.rand(1)
-	--local randomizerrrra = math.rand(1)
+	local randomizerrrra = math.rand(1)
 	local unit_types_green_dozer = self.unit_categories.FBI_tank.unit_types
 	local unit_types_black_dozer = self.unit_categories.BLACK_tank.unit_types
 	local unit_types_skull_dozer = self.unit_categories.SKULL_tank.unit_types
@@ -15695,7 +15695,9 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			self.unit_categories.GS_heavy_G36_w.special_type = nil
 		end
 	end
-	akikobulldozerrampage()
+	if randomizerrrra <= 0.001 then
+		akikobulldozerrampage()
+	end
 end
 	
 function GroupAITweakData:_init_enemy_spawn_groups(difficulty_index)
