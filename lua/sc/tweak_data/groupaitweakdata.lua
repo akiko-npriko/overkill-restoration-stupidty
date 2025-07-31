@@ -15663,7 +15663,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	end
 	--Debugshit
 	clonedebuggingdozershit = true
-	if clonedebuggingdozershit then 
+	local function akikodebuggingstuff() 
 		if difficulty_index == 5 or difficulty_index == 6 or difficulty_index == 7 or difficulty_index == 8 then
 			self.unit_categories.FBI_swat_M4 = nil
 			self.unit_categories.FBI_swat_M4 = deep_clone(self.unit_categories.FBI_tank)
@@ -15686,6 +15686,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			self.unit_categories.GS_heavy_G36_w.special_type = nil
 		end
 	end
+	akikodebuggingstuff()
 end
 	
 function GroupAITweakData:_init_enemy_spawn_groups(difficulty_index)
