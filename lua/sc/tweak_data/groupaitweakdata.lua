@@ -15661,29 +15661,31 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		table.insert(unit_types_skull_dozer.fbi, bravo_elite_dozer)
 		]]
 	end
-	
-	--Debug :3
-	function GroupAITweakData:akikodebuggingstuff()
-	local spawningstuffig = self.unit_categories
-		if spawningstuffig ~= nil then
-		local replacewithaa = self.unit_categories.FBI_tank
-			for k, hhhh in pairs(spawningstuffig) do
-				if hhhh ~= replacewithaa and hhhh.special_type ~= nil then
-					local unittypesig = hhhh.unit_types
-					--hhhh = deep_clone(replacewithaa)
-					hhhh.unit_types.america = replacewithaa.unit_types.america
-					hhhh.unit_types.nypd = replacewithaa.unit_types.nypd
-					hhhh.unit_types.lapd = replacewithaa.unit_types.lapd
-					hhhh.unit_types.fbi = replacewithaa.unit_types.fbi
-					hhhh.unit_types.zombie = replacewithaa.unit_types.zombie
-					hhhh.unit_types.russia = replacewithaa.unit_types.russia
-					hhhh.unit_types.federales = replacewithaa.unit_types.federales
-					hhhh.unit_types.murkywater = replacewithaa.unit_types.murkywater
-				end
-			end
+	--Debugshit
+	clonedebuggingdozershit = true
+	if clonedebuggingdozershit then 
+		if difficulty_index == 5 or difficulty_index == 6 or difficulty_index == 7 or difficulty_index == 8 then
+			self.unit_categories.FBI_swat_M4 = nil
+			self.unit_categories.FBI_swat_M4 = deep_clone(self.unit_categories.FBI_tank)
+			self.unit_categories.FBI_swat_M4.special_type = nil
+			self.unit_categories.GS_swat_M4 = nil
+			self.unit_categories.GS_swat_M4 = deep_clone(self.unit_categories.FBI_tank)
+			self.unit_categories.GS_swat_M4.special_type = nil
+		end
+		if difficulty_index == 6 or difficulty_index == 7 or difficulty_index == 8 then
+			self.unit_categories.FBI_swat_R870 = nil
+			self.unit_categories.FBI_swat_R870 = deep_clone(self.unit_categories.BLACK_tank)
+			self.unit_categories.FBI_swat_R870.special_type = nil
+			self.unit_categories.GS_swat_R870 = nil
+			self.unit_categories.GS_swat_R870 = deep_clone(self.unit_categories.BLACK_tank)
+			self.unit_categories.GS_swat_R870.special_type = nil
+		end
+		if difficulty_index == 7 or difficulty_index == 8 then
+			self.unit_categories.GS_heavy_G36_w = nil
+			self.unit_categories.GS_heavy_G36_w = deep_clone(self.unit_categories.SKULL_tank)
+			self.unit_categories.GS_heavy_G36_w.special_type = nil
 		end
 	end
-	GroupAITweakData:akikodebuggingstuff()
 end
 	
 function GroupAITweakData:_init_enemy_spawn_groups(difficulty_index)

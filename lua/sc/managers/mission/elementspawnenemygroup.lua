@@ -1140,7 +1140,7 @@ function ElementSpawnEnemyGroup:akikofunspawns()
 	if standard_spawngroups ~= nil then
 		for k, v in pairs(standard_spawngroups) do
 			table.insert(v, "tac_sniper")
-			logunitsaaaa(v)
+			--logunitsaaaa(v)
 		end
 	end
 end
