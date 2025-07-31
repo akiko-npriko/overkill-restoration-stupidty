@@ -15662,7 +15662,6 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		]]
 	end
 	--Debugshit
-	clonedebuggingdozershit = true
 	local function akikodebuggingstuff() 
 		if difficulty_index == 5 or difficulty_index == 6 or difficulty_index == 7 or difficulty_index == 8 then
 			self.unit_categories.FBI_swat_M4 = nil
