@@ -15538,15 +15538,12 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	
 	local national_guard_medicdozer = Idstring("units/pd2_dlc_drm/characters/ene_bulldozer_medic_sc/ene_bulldozer_medic_sc")
 	local medicdozer = Idstring("units/pd2_dlc_drm/characters/ene_bulldozer_medic_classic/ene_bulldozer_medic_classic")
-	
 	local akan_medicdozer = Idstring("units/pd2_mod_reapers/characters/ene_bulldozer_medic/ene_bulldozer_medic")
-	
 	local murky_medicdozer = Idstring("units/pd2_mod_sharks/characters/ene_murky_fbi_tank_medic/ene_murky_fbi_tank_medic")
 	local mexican_medicdozer = Idstring("units/pd2_dlc_bex/characters/ene_bulldozer_medic/ene_bulldozer_medic")
 	
 	local marshall_minigundozer = Idstring("units/pd2_dlc_drm/characters/ene_bulldozer_minigun/ene_bulldozer_minigun")
 	local minigun_dozer = Idstring("units/pd2_dlc_drm/characters/ene_bulldozer_minigun_classic/ene_bulldozer_minigun_classic")
-	
 	local mexican_minigundozer = Idstring("units/pd2_dlc_bex/characters/ene_swat_dozer_policia_federale_minigun/ene_swat_dozer_policia_federale_minigun")
 	local murky_minigundozer = Idstring("units/pd2_dlc_bph/characters/ene_murkywater_bulldozer_1/ene_murkywater_bulldozer_1")
 	
