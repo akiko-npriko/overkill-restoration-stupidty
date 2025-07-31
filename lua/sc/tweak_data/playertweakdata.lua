@@ -156,12 +156,6 @@ function PlayerTweakData:_set_sm_wish()
 	self.damage.custody_ammo_drained  = 0.75
 end
 
-function PlayerTweakData:_set_singleplayer()
-	if not restoration.Options:GetValue("OTHER/DisableSoloBoons") then
-		self.max_nr_following_hostages = 4
-	end
-end
-
 function PlayerTweakData:_set_multiplayer()
 end
 
@@ -265,7 +259,7 @@ function PlayerTweakData:init()
 			0
 		}
 	}
-	self.max_nr_following_hostages = 1
+	self.max_nr_following_hostages = 3
 	self.TRANSITION_DURATION = 0.2
 	self.stances = {
 		default = {
