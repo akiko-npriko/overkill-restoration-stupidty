@@ -436,8 +436,7 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/49742
  - Bravo Teams Outfit Pack
 	- https://modworkshop.net/mod/47131
- - Hostage Escort Tweaks
-	- https://modworkshop.net/mod/13781
+
 	 
 # Gunsss
  - Do later there are too many i hate myself...
