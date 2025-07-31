@@ -15547,6 +15547,9 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	local marshall_minigundozer = Idstring("units/pd2_dlc_drm/characters/ene_bulldozer_minigun/ene_bulldozer_minigun")
 	local minigun_dozer = Idstring("units/pd2_dlc_drm/characters/ene_bulldozer_minigun_classic/ene_bulldozer_minigun_classic")
 	
+	local mexican_minigundozer = Idstring("units/pd2_dlc_bex/characters/ene_swat_dozer_policia_federale_minigun/ene_swat_dozer_policia_federale_minigun")
+	local murky_minigundozer = Idstring("units/pd2_dlc_bph/characters/ene_murkywater_bulldozer_1/ene_murkywater_bulldozer_1")
+	
 	local bravo_elite_dozer = Idstring("units/pd2_dlc_gitgud/characters/ene_bulldozer_minigun/ene_bulldozer_minigun")
 	local ellite_dozer = Idstring("units/pd2_mod_bravo/characters/ene_bravo_bulldozer/ene_bravo_bulldozer")
 	
@@ -15616,6 +15619,11 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		table.insert(unit_types_skull_dozer.nypd, minigun_dozer)
 		table.insert(unit_types_skull_dozer.lapd, minigun_dozer)
 		table.insert(unit_types_skull_dozer.fbi, minigun_dozer)
+		--Rest of Minigogdozer
+		table.insert(unit_types_skull_dozer.zombie, minigun_dozer)
+		table.insert(unit_types_skull_dozer.russia, warthogg) -- there isnt one so just use warthog for pain and suffering
+		table.insert(unit_types_skull_dozer.federales, mexican_minigundozer)
+		table.insert(unit_types_skull_dozer.murkywater, murky_minigundozer)
 	end
 	
 	local function akikonationalminigunnerdozer()
@@ -15624,6 +15632,11 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		table.insert(unit_types_skull_dozer.nypd, marshall_minigundozer)
 		table.insert(unit_types_skull_dozer.lapd, marshall_minigundozer)
 		table.insert(unit_types_skull_dozer.fbi, marshall_minigundozer)
+		--Rest of Minigogdozer
+		table.insert(unit_types_skull_dozer.zombie, minigun_dozer)
+		table.insert(unit_types_skull_dozer.russia, warthogg) -- there isnt one so just use warthog for pain and suffering
+		table.insert(unit_types_skull_dozer.federales, mexican_minigundozer)
+		table.insert(unit_types_skull_dozer.murkywater, murky_minigundozer)
 	end
 	
 	if difficulty_index == 5 then
