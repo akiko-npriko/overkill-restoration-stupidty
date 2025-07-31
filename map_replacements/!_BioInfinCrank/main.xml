@@ -1,0 +1,204 @@
+<mod name="Bioshock Infinite Crankgun" author="PlayBONK and RJC9000" min_lib_ver="3.38">
+	<AssetUpdates id="50398" version="1.01" provider="modworkshop"/>
+	<Localization directory="loc" default="english.txt">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	<GlobalValue id="bioshock_crankgun_mod" color="Color(0.9, 0.1, 0.1)"/>
+	
+	
+<!--Parts-->
+	
+	
+	<WeaponMod id="wpn_fps_lmg_peppermill_barrel" based_on="wpn_fps_lmg_shuno_b_standard" unit="units/mods/weapons/wpn_fps_lmg_peppermill_pts/wpn_fps_lmg_peppermill_barrel"  hidden="true" ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_lmg_peppermill_crank" based_on="wpn_fps_sho_aa12_dh" type="drag_handle"  a_obj="a_crank" unit="units/mods/weapons/wpn_fps_lmg_peppermill_pts/wpn_fps_lmg_peppermill_crank"  hidden="true" ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_lmg_peppermill_belt_lock" based_on="wpn_fps_lmg_shuno_m_standard"  type="belt_lock"   a_obj="a_belt_lock" unit="units/mods/weapons/wpn_fps_lmg_peppermill_pts/wpn_fps_lmg_peppermill_belt_lock"  hidden="true" ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_lmg_peppermill_magazine" based_on="wpn_fps_lmg_shuno_m_standard"  unit="units/mods/weapons/wpn_fps_lmg_peppermill_pts/wpn_fps_lmg_peppermill_magazine"  hidden="true" ver="2">
+			<animations fire="recoil" fire_steelsight="recoil" reload="reload" reload_not_empty="reload"/>
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_lmg_peppermill_piston" based_on="wpn_fps_lmg_shuno_b_standard" type="piston"  a_obj="a_piston" unit="units/mods/weapons/wpn_fps_lmg_peppermill_pts/wpn_fps_lmg_peppermill_piston"  hidden="true" ver="2">
+	</WeaponMod>
+	<WeaponMod id="wpn_fps_lmg_peppermill_receiver" based_on="wpn_fps_lmg_shuno_body_standard" unit="units/mods/weapons/wpn_fps_lmg_peppermill_pts/wpn_fps_lmg_peppermill_receiver"  hidden="true" ver="2">
+	</WeaponMod>
+
+	
+	
+	
+<!--Weapon-->	
+	
+	<Weapon unlock_level="0">
+	
+		<weapon id="peppermill" based_on="shuno" weapon_hold="peppermill"  CLIP_AMMO_MAX="100" NR_CLIPS_MAX="2"  global_value="bioshock_crankgun_mod">		
+			<stats damage="120" spread="12" spread_moving="10" recoil="20" concealment="0"/>	
+			<fire_mode_data fire_rate="0.10"/>
+			<timers reload_not_empty="3.5" reload_empty="3.5" />
+				<sounds fire="peppermill_fire" fire_single="peppermill_fire" fire_auto="peppermill_fire" stop_fire="m16_stop" use_fix="true">		
+				</sounds>				
+			<AMMO_PICKUP>
+				<value_node value="3.00"/>
+				<value_node value="8.00"/>
+			</AMMO_PICKUP>
+			
+			<kick>
+				<standing>
+					<value_node value="0.8"/>
+					<value_node value="1.0"/>
+					<value_node value="-0.6"/>
+					<value_node value="0.6"/>
+				</standing>
+				<crouching>
+					<value_node value="0.7"/>
+					<value_node value="0.9"/>
+					<value_node value="-0.4"/>
+					<value_node value="0.4"/>
+				</crouching>
+				<steelsight>
+					<value_node value="0.6"/>
+					<value_node value="0.8"/>
+					<value_node value="-0.4"/>
+					<value_node value="0.4"/>
+				</steelsight>
+			</kick>	
+				
+			<timers reload_not_empty="3.4" reload_empty="3.4" unequip="0.6" equip="0.6"/>
+			
+			<animations reload_name_id="peppermill"/>
+		</weapon>
+		
+		<factory id="wpn_fps_lmg_peppermill" unit="units/mods/weapons/wpn_fps_lmg_peppermill/wpn_fps_lmg_peppermill">
+			
+			<animations fire="recoil" fire_steelsight="recoil" reload="reload" reload_not_empty="reload"/>
+			
+			<adds/>
+			
+			<override/>
+			
+			<default_blueprint>
+				<value_node value="wpn_fps_lmg_peppermill_barrel"/>
+				<value_node value="wpn_fps_lmg_peppermill_belt_lock"/>
+				<value_node value="wpn_fps_lmg_peppermill_crank"/>
+				<value_node value="wpn_fps_lmg_peppermill_magazine"/>
+				<value_node value="wpn_fps_lmg_peppermill_piston"/>
+				<value_node value="wpn_fps_lmg_peppermill_receiver"/>
+			</default_blueprint>
+			
+			<uses_parts>
+				<value_node value="wpn_fps_lmg_peppermill_barrel"/>
+				<value_node value="wpn_fps_lmg_peppermill_belt_lock"/>
+				<value_node value="wpn_fps_lmg_peppermill_crank"/>
+				<value_node value="wpn_fps_lmg_peppermill_magazine"/>
+				<value_node value="wpn_fps_lmg_peppermill_piston"/>
+				<value_node value="wpn_fps_lmg_peppermill_receiver"/>
+
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/>
+			</uses_parts>
+			
+		</factory>
+		<stance>
+			<standard>
+				<shoulders rotation="-0 0 -0 -1" translation="1.886 -6.573 -2.567"/>
+			</standard>
+			<crouched>
+				<shoulders rotation="-0 0.0697565 -0 -0.997564" translation="0.886 -10.573 -5.567"/>
+			</crouched>
+			<steelsight>
+				<shoulders rotation="0.000995435 0.00872282 -0.00492129 -0.999949" translation="-1.255 -7.485 2.701"/>
+			</steelsight>
+		</stance>
+	</Weapon>
+
+
+		
+	<Sounds directory="assets\sounds">
+		<sound id="peppermill_fire" path="peppermill_fire.ogg" prefix="regular"/>
+		<sound id="peppermill_fire" path="peppermill_fire.ogg"  prefix="suppressed_a"/>
+		<sound id="peppermill_fire" path="peppermill_fire.ogg"  prefix="suppressed_b"/>
+		<sound id="peppermill_fire" path="peppermill_fire.ogg"  prefix="suppressed_c"/>
+		
+		<sound id="peppermill_lid_close"		 path="peppermill_lid_close.ogg" prefix="first"/>
+		<sound id="peppermill_lid_close" 		 path="peppermill_lid_close.ogg" prefix="third"/>
+		<sound id="peppermill_mag_in"		 path="peppermill_mag_in.ogg" prefix="first"/>
+		<sound id="peppermill_mag_in" 		 path="peppermill_mag_in.ogg" prefix="third"/>
+		<sound id="peppermill_magout"		 	 path="peppermill_magout.ogg" prefix="first"/>
+		<sound id="peppermill_magout" 			 path="peppermill_magout.ogg" prefix="third"/>
+		<sound id="peppermill_reload_start"		 path="peppermill_reload_start.ogg" prefix="first"/>
+		<sound id="peppermill_reload_start" 		 path="peppermill_reload_start.ogg" prefix="third"/>
+		<sound id="peppermill_spin_end_reload"		 path="peppermill_spin_end_reload.ogg" prefix="first"/>
+		<sound id="peppermill_spin_end_reload" 		 path="peppermill_spin_end_reload.ogg" prefix="third"/>
+		<sound id="peppermill_spin_start_reload"		 path="peppermill_spin_start_reload.ogg" prefix="first"/>
+		<sound id="peppermill_spin_start_reload" 		 path="peppermill_spin_start_reload.ogg" prefix="third"/>
+		<sound id="peppermill_stop"		 path="peppermill_stop.ogg" prefix="first"/>
+		<sound id="peppermill_stop" 		 path="peppermill_stop.ogg" prefix="third"/>
+
+	</Sounds>
+
+
+
+	<AddFiles directory="assets">
+<!--GUIs-->
+		<texture path="guis/dlcs/mods/textures/pd2/blackmarket/icons/weapons/peppermill"/>
+
+		
+<!--Textures-->
+
+		<df_nm_cc_gsma path="units/mods/weapons/wpn_fps_lmg_peppermill_pts/textures/gatling_gun"/>			
+		
+
+
+<!--Unit Path-->
+		<unit_npc path="units/mods/weapons/wpn_fps_lmg_peppermill/wpn_fps_lmg_peppermill"/>
+				
+<!-- Animations -->
+		<animation path="anims/fps/peppermill/peppermill_reload" load="true"/>
+		<animation path="anims/fps/peppermill/peppermill_idle" load="true"/>
+		<animation path="anims/fps/peppermill/peppermill_recoil_enter" load="true"/>
+		<animation path="anims/fps/peppermill/peppermill_recoil" load="true"/>
+		<animation path="anims/fps/peppermill/peppermill_recoil_exit" load="true"/>
+		<animation path="anims/fps/peppermill/peppermill_equip" load="true"/>
+		<animation path="anims/fps/peppermill/peppermill_unequip" load="true"/>
+		<animation path="anims/fps/peppermill/peppermill_melee" load="true"/>
+		<animation path="anims/fps/peppermill/peppermill_melee_miss" load="true"/>
+		<animation path="anims/fps/peppermill/peppermill_use" load="true"/>
+		<animation path="anims/fps/peppermill/peppermill_sprint_enter" load="true"/>
+		<animation path="anims/fps/peppermill/peppermill_sprint" load="true"/>
+		<animation path="anims/fps/peppermill/peppermill_sprint_exit" load="true"/>
+		<animation path="anims/fps/peppermill/peppermill_social" load="true"/>
+		<animation path="anims/fps/peppermill/peppermill_social_come" load="true"/>
+		<animation path="anims/fps/peppermill/peppermill_inspect" load="true"/> 
+
+<!--Unit THQ-->
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_lmg_peppermill_pts/wpn_fps_lmg_peppermill_barrel"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_lmg_peppermill_pts/wpn_fps_lmg_peppermill_belt_lock"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_lmg_peppermill_pts/wpn_fps_lmg_peppermill_crank"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_lmg_peppermill_pts/wpn_fps_lmg_peppermill_magazine"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_lmg_peppermill_pts/wpn_fps_lmg_peppermill_piston"/>
+		<unit_mat_cc path="units/mods/weapons/wpn_fps_lmg_peppermill_pts/wpn_fps_lmg_peppermill_receiver"/>
+
+
+
+
+	</AddFiles>
+		
+	<Hooks directory="hooks">
+<!--	<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/> 
+		<hook file="newraycastweaponbase.lua" source_file="lib/units/weapons/newraycastweaponbase"/> -->
+	</Hooks>
+	
+
+
+
+
+
+
+
+
+
+
+</mod>

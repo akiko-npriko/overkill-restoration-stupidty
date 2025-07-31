@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+			
+		<target mode="attach">
+			<anim name="peppermill_reload" 									file="anims/fps/peppermill/peppermill_reload" blend_set="all"/>
+			<anim name="peppermill_reload_not_empty" 						file="anims/fps/peppermill/peppermill_reload" blend_set="all"/>
+			
+			<anim name="peppermill_idle" 									file="anims/fps/peppermill/peppermill_idle" blend_set="all"/>
+			
+			<anim name="peppermill_recoil" 									file="anims/fps/peppermill/peppermill_recoil" blend_set="all"/>
+			<anim name="peppermill_recoil_enter" 							file="anims/fps/peppermill/peppermill_recoil_enter" blend_set="all"/>
+			<anim name="peppermill_recoil_loop" 							file="anims/fps/peppermill/peppermill_recoil" blend_set="all"/>
+			<anim name="peppermill_recoil_exit" 							file="anims/fps/peppermill/peppermill_recoil_exit" blend_set="all"/>
+			<anim name="peppermill_recoil_steelsight" 						file="anims/fps/peppermill/peppermill_recoil" blend_set="all"/>
+			
+			<anim name="peppermill_equip" 									file="anims/fps/peppermill/peppermill_equip" blend_set="all"/>
+			<anim name="peppermill_unequip" 								file="anims/fps/peppermill/peppermill_unequip" blend_set="all"/>
+			
+			<anim name="peppermill_melee" 									file="anims/fps/peppermill/peppermill_melee" blend_set="all"/>
+			<anim name="peppermill_melee_miss" 								file="anims/fps/peppermill/peppermill_melee_miss" blend_set="all"/>
+			
+			<anim name="peppermill_use" 									file="anims/fps/peppermill/peppermill_use" blend_set="all"/>
+			
+			<anim name="peppermill_sprint_enter" 							file="anims/fps/peppermill/peppermill_sprint_enter" blend_set="all"/>
+			<anim name="peppermill_sprint" 									file="anims/fps/peppermill/peppermill_sprint" blend_set="all"/>
+			<anim name="peppermill_sprint_exit" 							file="anims/fps/peppermill/peppermill_sprint_exit" blend_set="all"/>
+			
+			<anim name="peppermill_com_come" 								file="anims/fps/peppermill/peppermill_social_come" blend_set="all"/>
+			<anim name="peppermill_com_down_var1" 							file="anims/fps/peppermill/peppermill_social" blend_set="all"/>
+			<anim name="peppermill_com_stop" 								file="anims/fps/peppermill/peppermill_social" blend_set="all"/>
+			<anim name="peppermill_com_point" 								file="anims/fps/peppermill/peppermill_social" blend_set="all"/>
+			<anim name="peppermill_get_up" 									file="anims/fps/peppermill/peppermill_social" blend_set="all"/>
+			<anim name="peppermill_gogo" 									file="anims/fps/peppermill/peppermill_social" blend_set="all"/>
+			
+			<anim name="peppermill_tased" 									file="anims/fps/peppermill/peppermill_idle" blend_set="all"/>
+			<anim name="peppermill_tased_boost" 							file="anims/fps/peppermill/peppermill_recoil" blend_set="all"/>
+			<anim name="peppermill_tased_exit" 								file="anims/fps/peppermill/peppermill_unequip" blend_set="all"/>
+			
+			<anim name="peppermill_inspect" 								file="anims/fps/peppermill/peppermill_inspect" blend_set="all"/> 
+			
+			
+		</target>
+	</tweak>
+</tweaks>

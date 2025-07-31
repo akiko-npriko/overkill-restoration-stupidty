@@ -1,0 +1,12 @@
+<unit type="wpn" slot="1" >
+	<object file="units/mods/weapons/wpn_fps_lmg_peppermill/wpn_fps_lmg_peppermill" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_svinet"/>
+	</dependencies>
+    <extensions>
+        <extension name="unit_data" class="ScriptUnitData" />
+        <extension name="base" class="NewRaycastWeaponBase" >
+			<var name="name_id" value="peppermill" />
+		</extension>
+    </extensions>
+</unit>
