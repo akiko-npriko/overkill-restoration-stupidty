@@ -15662,7 +15662,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		]]
 	end
 	--Debugshit
-	local function akikodebuggingstuff() 
+	local function akikobulldozerrampage() --0.1% chance to occur and makes some basic units into bulldozer varients
 		if difficulty_index == 5 or difficulty_index == 6 or difficulty_index == 7 or difficulty_index == 8 then
 			self.unit_categories.FBI_swat_M4 = nil
 			self.unit_categories.FBI_swat_M4 = deep_clone(self.unit_categories.FBI_tank)
@@ -15685,7 +15685,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			self.unit_categories.GS_heavy_G36_w.special_type = nil
 		end
 	end
-	akikodebuggingstuff()
+	akikobulldozerrampage()
 end
 	
 function GroupAITweakData:_init_enemy_spawn_groups(difficulty_index)
