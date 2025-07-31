@@ -84,7 +84,7 @@ function GameSetup:load_packages()
 	if difficulty_index == 8 and (ai_type == a or ai_type == feds or ai_type == la or ai_type == ny) then
 		load_difficulty_package("packages/addusngwarthog")
 		--Temp Solution
-		load_difficulty_package("packages/addtempsolutionforngbd")
+		--load_difficulty_package("packages/addtempsolutionforngbd")
 	end
 	--load_difficulty_package("packages/addparasitemodel")
 	
