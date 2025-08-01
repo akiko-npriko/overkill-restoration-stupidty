@@ -9,9 +9,61 @@
 	<texture path="guis/scope_overlay/iuhPistolSniperScopeOverlay"/>
 	<texture path="guis/scope_overlay/iuhPSO1ScopeOverlay"/>
 	
+	<!--Marshal Shields-->
+	<sequence_manager	path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_1/marshal_shield_1"/>	
+	<sequence_manager	path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_2/marshal_shield_2"/>
+	
+	<df_nm_gsma path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_1/marshal_shield"/>
+	<model				path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_1/marshal_shield_1" force="true"/>
+	<model				path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_1/marshal_shield_debris_1" force="true"/>
+	<model				path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_1/marshal_shield_debris_2" force="true"/>
+	<model				path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_1/marshal_shield_debris_3" force="true"/>
+	<model				path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_1/marshal_shield_debris_4" force="true"/>
+	<model				path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_1/marshal_shield_debris_5" force="true"/>
+	<model				path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_1/marshal_shield_debris_6" force="true"/>
+	<material_config	path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_1/marshal_shield_1" force="true"/>
+	
+	<texture path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_2/marshal_shield_2_df"/>
+	<texture path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_2/marshal_shield_2_gsma"/>
+	<model				path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_2/marshal_shield_2" force="true"/>
+	<model				path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_2/marshal_shield_debris_1" force="true"/>
+	<model				path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_2/marshal_shield_debris_2" force="true"/>
+	<model				path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_2/marshal_shield_debris_3" force="true"/>
+	<model				path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_2/marshal_shield_debris_4" force="true"/>
+	<model				path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_2/marshal_shield_debris_5" force="true"/>
+	<model				path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_2/marshal_shield_debris_6" force="true"/>
+	<material_config	path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_2/marshal_shield_2" force="true"/>
+	
+	<texture			path="units/pd2_dlc_usm2/characters/ene_male_marshal_shield_1/ene_male_marshal_shield_1_equipment_df" force="true"/>
+	<texture			path="units/pd2_dlc_usm2/characters/ene_male_marshal_shield_2/ene_male_marshal_shield_2_equipment_df" force="true"/>
+	
+	<!--Marshal Marksmen-->
+	<df_nm path="units/pd2_dlc_usm1/characters/shared_textures/ene_male_marshal_arms" force="true"/>
+	<df_nm path="units/pd2_dlc_usm1/characters/shared_textures/ene_male_marshal_head_1" force="true"/>
+	<texture path="units/pd2_dlc_usm1/characters/shared_textures/ene_marshal_body_df" force="true"/>
+	<texture path="units/pd2_dlc_usm1/characters/shared_textures/ene_marshal_body_merc_df" force="true"/>
+	<texture path="units/pd2_dlc_usm1/characters/shared_textures/ene_marshal_equipment_df" force="true"/>
+	<texture path="units/pd2_dlc_usm1/characters/shared_textures/ene_marshal_equipment_merc_df" force="true"/>
+	<model path="units/pd2_dlc_usm1/characters/ene_male_marshal_marksman_1/ene_male_marshal_marksman_1" force="true"/>
+	
+	<!--Bell-Meat Marksmen-->
+	<model path="units/pd2_dlc_usm1/characters/ene_acc_marksman_hat_2/ene_acc_marksman_hat_2" force="true"/>
+	
+	<cooked_physics path="units/pd2_dlc_usm1/characters/ene_male_marshal_marksman_2/ene_male_marshal_marksman_2" force="true"/>
+	<model path="units/pd2_dlc_usm1/characters/ene_male_marshal_marksman_2/ene_male_marshal_marksman_2" force="true"/>
+	<object path="units/pd2_dlc_usm1/characters/ene_male_marshal_marksman_2/ene_male_marshal_marksman_2" force="true"/>
+	<material_config path="units/pd2_dlc_usm1/characters/ene_male_marshal_marksman_2/ene_male_marshal_marksman_2" force="true"/>
+	<material_config path="units/pd2_dlc_usm1/characters/ene_male_marshal_marksman_2/ene_male_marshal_marksman_2_contour" force="true"/>
+	<unit path="units/pd2_dlc_usm1/characters/ene_male_marshal_marksman_2/ene_male_marshal_marksman_2" force="true" load="true"/>
+	<unit path="units/pd2_dlc_usm1/characters/ene_male_marshal_marksman_2/ene_male_marshal_marksman_2_husk" force="true" load="true"/>
+	
+	
 	<!--TEXTURE FIXESSSS-->
 	<texture path="core/textures/cg_FLIR"/>
 	<texture path="color_grading/infrared"/>
+	<texture			path="units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer/bulldozer_df" force="true"/>
+	<texture			path="units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_2/bulldozer_2_df" force="true"/>
+	<texture			path="units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3/bulldozer_3_df" force="true"/>
 	<df_nm path="units/pd2_dlc_help/characters/ene_zeal_bulldozer_halloween/bulldozer"/>
 	<material_config	path="units/pd2_dlc_help/characters/ene_zeal_bulldozer_halloween/ene_zeal_bulldozer_halloween" force="true"/>
 	<material_config	path="units/pd2_dlc_help/characters/ene_zeal_bulldozer_halloween/ene_zeal_bulldozer_halloween_contour" force="true"/>
@@ -100,9 +152,9 @@
 	<df_nm path="units/pd2_dlc_gitgud/characters/ene_zeal_swat/yeehaw"/>
 	<df_nm path="units/pd2_dlc_gitgud/characters/ene_zeal_swat/a_ene_zeal_swat"/>
 	
-	<model path="units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat"/>
-	<material_config path="units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat"/>
-	<material_config path="units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat_contour"/>
+	<model path="units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat" force="true"/>
+	<material_config path="units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat" force="true"/>
+	<material_config path="units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat_contour" force="true"/>
 	
 	<texture path="effects/textures/fire/e_fire_dynamic_01_8x4_seq_loop_green"/>
 	<texture path="effects/textures/fire/e_fire_dynamic_01_8x4_seq_loop_black"/>

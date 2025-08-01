@@ -1281,31 +1281,6 @@
 
 	<unit				path="units/pd2_dlc_usm1/characters/ene_male_marshal_marksman_scripted_2/ene_male_marshal_marksman_scripted_2" load="true" force="false"/>
 	<unit				path="units/pd2_dlc_usm1/characters/ene_male_marshal_marksman_scripted_2/ene_male_marshal_marksman_scripted_2_husk" load="true" force="false"/>
-
-	<!--Marshal Shields-->
-	<sequence_manager	path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_1/marshal_shield_1"/>	
-	<sequence_manager	path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_2/marshal_shield_2"/>
-	
-	<df_nm_gsma path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_1/marshal_shield"/>
-	<model				path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_1/marshal_shield_1" force="true"/>
-	<model				path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_1/marshal_shield_debris_1" force="true"/>
-	<model				path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_1/marshal_shield_debris_2" force="true"/>
-	<model				path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_1/marshal_shield_debris_3" force="true"/>
-	<model				path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_1/marshal_shield_debris_4" force="true"/>
-	<model				path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_1/marshal_shield_debris_5" force="true"/>
-	<model				path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_1/marshal_shield_debris_6" force="true"/>
-	<material_config	path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_1/marshal_shield_1" force="true"/>
-	
-	<texture path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_2/marshal_shield_2_df"/>
-	<texture path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_2/marshal_shield_2_gsma"/>
-	<model				path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_2/marshal_shield_2" force="true"/>
-	<model				path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_2/marshal_shield_debris_1" force="true"/>
-	<model				path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_2/marshal_shield_debris_2" force="true"/>
-	<model				path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_2/marshal_shield_debris_3" force="true"/>
-	<model				path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_2/marshal_shield_debris_4" force="true"/>
-	<model				path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_2/marshal_shield_debris_5" force="true"/>
-	<model				path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_2/marshal_shield_debris_6" force="true"/>
-	<material_config	path="units/pd2_dlc_usm2/characters/ene_acc_marshal_shield_2/marshal_shield_2" force="true"/>
 	
 	<!--LPF and Medic (over-)healing Effects-->
 	<effect path="effects/pd2_mod_omnia/particles/character/overkillpack/mega_alien_eyes"/>
