@@ -15524,11 +15524,14 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		}
 	end
 --AKIKO EDITS (ADDON LMAOO)
+	local forcedebugashittonofdozers = false
+	local forcedebugtitaaandozer = false
 	--ATF Field Agent
 	
 	--BullDozer Addition
 	local randomizerrrr = math.rand(1)
 	local randomizerrrra = math.rand(1)
+	local randomizrrrb = math.rand(1)
 	local unit_types_green_dozer = self.unit_categories.FBI_tank.unit_types
 	local unit_types_black_dozer = self.unit_categories.BLACK_tank.unit_types
 	local unit_types_skull_dozer = self.unit_categories.SKULL_tank.unit_types
@@ -15560,7 +15563,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		mexican_medicdozer = Idstring("units/pd2_dlc_bex/characters/ene_swat_dozer_medic_policia_federale/ene_swat_dozer_medic_policia_federale")
 	end
 	
-	--test crap
+	if (randomizrrrb <= 0.01 or forcedebugtitaaandozer) and (difficulty_index == 5 or difficulty_index == 6 or difficulty_index == 7 or difficulty_index == 8) then
 		table.insert(unit_types_green_dozer.america, titanshielddozer)
 		table.insert(unit_types_green_dozer.nypd, titanshielddozer)
 		table.insert(unit_types_green_dozer.lapd, titanshielddozer)
@@ -15590,7 +15593,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		table.insert(unit_types_skull_dozer.russia, titanshielddozer)
 		table.insert(unit_types_skull_dozer.federales, titanshielddozer)
 		table.insert(unit_types_skull_dozer.murkywater, titanshielddozer)
-	--end of test crap
+	end
 	
 	
 	local function akikomedicdozersdwbelow()
@@ -15730,7 +15733,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			self.unit_categories.GS_heavy_G36_w.special_type = nil
 		end
 	end
-	if randomizerrrra <= 0.001 then
+	if randomizerrrra <= 0.001 or forcedebugashittonofdozers then
 		akikobulldozerrampage()
 	end
 end
