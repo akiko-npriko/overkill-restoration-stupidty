@@ -4319,7 +4319,7 @@ function CharacterTweakData:_init_us_warthog(presets)
 	self.us_warthog.speech_prefix_count = nil
 	self.us_warthog.custom_voicework = "piggy_dozer"
 	self.us_warthog.can_throw_molotov = true
-	self.us_warthog.grenade_toss_chance = 0.45
+	self.us_warthog.grenade_toss_chance = 0.4
 	--self.us_warthog.grenade_cooldown = 20
 	
 	table.insert(self._enemy_list, "us_warthog")
@@ -4335,7 +4335,7 @@ function CharacterTweakData:_init_us_warthog(presets)
 	self.norm_warthog.move_speed = presets.move_speed.slow_plus
 	self.norm_warthog.damage.hurt_severity = presets.hurt_severities.only_explosion_hurts_tankblack
 	self.norm_warthog.can_throw_molotov = true
-	self.norm_warthog.grenade_toss_chance = 0.3
+	self.norm_warthog.grenade_toss_chance = 0.25
 	--self.norm_warthog.grenade_cooldown = 30
 
 	table.insert(self._enemy_list, "norm_warthog")
