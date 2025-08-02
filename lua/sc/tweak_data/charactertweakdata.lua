@@ -19480,7 +19480,6 @@ function CharacterTweakData:character_map()
 				"ene_zeal_swat_heavy_sc",
 				"ene_zeal_swat_heavy_r870_sc",
 				"ene_zeal_swat_heavy_benelli",
-				"ene_zeal_warthog",
 				'ene_xof_rpg'
 			}
 		}
@@ -19935,7 +19934,8 @@ function CharacterTweakData:character_map()
 		char_map.akiko = {
 			path = "units/pd2_mod_akiko/characters/",
 			list = {
-				"ene_titan_shield_bulldozer"
+				"ene_titan_shield_bulldozer",
+				"ene_zeal_warthog"
 			}
 		}
 

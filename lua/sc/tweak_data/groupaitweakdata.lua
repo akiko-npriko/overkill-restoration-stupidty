@@ -15538,7 +15538,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	
 	local titanshielddozer = Idstring("units/pd2_mod_akiko/characters/ene_titan_shield_bulldozer/ene_titan_shield_bulldozer")
 	
-	local national_guard_warthogg = Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_warthog/ene_zeal_warthog")
+	local national_guard_warthogg = Idstring("units/pd2_mod_akiko/characters/ene_zeal_warthog/ene_zeal_warthog")
 	local warthogg = Idstring("units/pd2_mod_omnia/characters/ene_norm_warthog/ene_norm_warthog")
 	
 	local national_guard_medicdozer = Idstring("units/pd2_dlc_drm/characters/ene_bulldozer_medic_sc/ene_bulldozer_medic_sc")
