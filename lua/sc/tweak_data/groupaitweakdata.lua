@@ -15533,6 +15533,8 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	local unit_types_black_dozer = self.unit_categories.BLACK_tank.unit_types
 	local unit_types_skull_dozer = self.unit_categories.SKULL_tank.unit_types
 	
+	local titanshielddozer = Idstring("units/pd2_mod_akiko/characters/ene_titan_shield_bulldozer/ene_titan_shield_bulldozer")
+	
 	local national_guard_warthogg = Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_warthog/ene_zeal_warthog")
 	local warthogg = Idstring("units/pd2_mod_omnia/characters/ene_norm_warthog/ene_norm_warthog")
 	
@@ -15557,6 +15559,39 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	if randomizerrrr <= 0.5 then
 		mexican_medicdozer = Idstring("units/pd2_dlc_bex/characters/ene_swat_dozer_medic_policia_federale/ene_swat_dozer_medic_policia_federale")
 	end
+	
+	--test crap
+		table.insert(unit_types_green_dozer.america, titanshielddozer)
+		table.insert(unit_types_green_dozer.nypd, titanshielddozer)
+		table.insert(unit_types_green_dozer.lapd, titanshielddozer)
+		table.insert(unit_types_green_dozer.fbi, titanshielddozer)
+		
+		table.insert(unit_types_green_dozer.zombie, titanshielddozer)
+		table.insert(unit_types_green_dozer.russia, titanshielddozer)
+		table.insert(unit_types_green_dozer.federales, titanshielddozer)
+		table.insert(unit_types_green_dozer.murkywater, titanshielddozer)
+		
+		table.insert(unit_types_black_dozer.america, titanshielddozer)
+		table.insert(unit_types_black_dozer.nypd, titanshielddozer)
+		table.insert(unit_types_black_dozer.lapd, titanshielddozer)
+		table.insert(unit_types_black_dozer.fbi, titanshielddozer)
+		
+		table.insert(unit_types_black_dozer.zombie, titanshielddozer)
+		table.insert(unit_types_black_dozer.russia, titanshielddozer)
+		table.insert(unit_types_black_dozer.federales, titanshielddozer)
+		table.insert(unit_types_black_dozer.murkywater, titanshielddozer)
+		
+		table.insert(unit_types_skull_dozer.america, titanshielddozer)
+		table.insert(unit_types_skull_dozer.nypd, titanshielddozer)
+		table.insert(unit_types_skull_dozer.lapd, titanshielddozer)
+		table.insert(unit_types_skull_dozer.fbi, titanshielddozer)
+		
+		table.insert(unit_types_skull_dozer.zombie, titanshielddozer)
+		table.insert(unit_types_skull_dozer.russia, titanshielddozer)
+		table.insert(unit_types_skull_dozer.federales, titanshielddozer)
+		table.insert(unit_types_skull_dozer.murkywater, titanshielddozer)
+	--end of test crap
+	
 	
 	local function akikomedicdozersdwbelow()
 		--Medicbulldozer (Addon Green Dozer) - (America, Nypd, Lapd, Fbi)
