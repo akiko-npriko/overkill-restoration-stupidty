@@ -19661,8 +19661,7 @@ function CharacterTweakData:character_map()
 				"ene_omnia_taser",
 				"ene_omnia_sniper",
 				"ene_omnia_sniper_2",
-				"ene_omnia_shield",
-				"ene_norm_warthog"
+				"ene_omnia_shield"
 			}
 		}
 
@@ -19935,7 +19934,8 @@ function CharacterTweakData:character_map()
 			path = "units/pd2_mod_akiko/characters/",
 			list = {
 				"ene_titan_shield_bulldozer",
-				"ene_zeal_warthog"
+				"ene_zeal_warthog",
+				"ene_norm_warthog"
 			}
 		}
 
