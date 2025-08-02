@@ -15526,10 +15526,12 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 --AKIKO EDITS (ADDON LMAOO)
 	local forcedebugashittonofdozers = false
 	local forcedebugtitaaandozer = false
+	--[[
 	if restoration.dozerhavefloddedmeeee then
 		forcedebugashittonofdozers = true
 		forcedebugtitaaandozer = true
 	end
+	]]
 	--ATF Field Agent
 	
 	--BullDozer Addition
