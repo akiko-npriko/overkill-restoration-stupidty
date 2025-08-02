@@ -4312,7 +4312,7 @@ function CharacterTweakData:_init_us_warthog(presets)
 	self.us_warthog = deep_clone(self.tank_skull)
 	self.us_warthog.experience = {}
 	self.us_warthog.HEALTH_INIT = 475
-	self.us_warthog.move_speed = presets.move_speed.very_slow
+	self.us_warthog.move_speed = presets.move_speed.slow_plus
 	self.us_warthog.damage.hurt_severity = presets.hurt_severities.only_explosion_hurts_tankblack
 	self.us_warthog.speech_prefix_p1 = "fuckingpig"
 	self.us_warthog.speech_prefix_p2 = nil
@@ -4326,13 +4326,13 @@ function CharacterTweakData:_init_us_warthog(presets)
 	
 	self.norm_warthog = deep_clone(self.tank)
 	self.norm_warthog.experience = {}
-	self.norm_warthog.headshot_dmg_mul = 18.75
-	self.norm_warthog.HEALTH_INIT = 350
+	self.norm_warthog.headshot_dmg_mul = 13.25
+	self.norm_warthog.HEALTH_INIT = 375
 	self.norm_warthog.speech_prefix_p1 = "fuckingpig"
 	self.norm_warthog.speech_prefix_p2 = nil
 	self.norm_warthog.speech_prefix_count = nil
 	self.norm_warthog.custom_voicework = "piggy_dozer"
-	self.norm_warthog.move_speed = presets.move_speed.very_slow
+	self.norm_warthog.move_speed = presets.move_speed.slow_plus
 	self.norm_warthog.damage.hurt_severity = presets.hurt_severities.only_explosion_hurts_tankblack
 	self.norm_warthog.can_throw_molotov = true
 	self.norm_warthog.grenade_toss_chance = 0.3
