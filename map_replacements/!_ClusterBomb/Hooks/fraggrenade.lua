@@ -35,10 +35,10 @@ Hooks:PreHook(ClusterBombFragGrenade, "_detonate", "frag_cluster_detonate", func
 				local small_one = AddonProjectileBase.throw_projectile(_l[i], pos + _pos_offset(i), Vector3(0, 0, 0.5) + _xy[i], managers.network:session():local_peer():id())
 				if small_one and small_one.base and small_one:base() then
 					small_one:base().__small_one = true
-					small_one:base()._range = 400
-					small_one:base()._timer = 2
-					small_one:base()._damage = 60
-					small_one:base()._player_damage = 60
+					small_one:base()._range = 600
+					small_one:base()._timer = 3
+					small_one:base()._damage = 25
+					small_one:base()._player_damage = 25
 				end
 			end)
 		end
