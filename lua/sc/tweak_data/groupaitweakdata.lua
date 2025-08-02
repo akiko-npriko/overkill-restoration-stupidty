@@ -15453,7 +15453,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			},
 			access = access_type_all
 		}
-	elseif difficulty_index == 7 then
+	elseif difficulty_index == 7 or difficulty_index == 8 then
 		self.unit_categories.FBI_groundsniper = {
 			special_type = "sniper",
 			unit_types = {
@@ -15516,6 +15516,36 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			access = access_type_all
 		}
 	end
+	self.unit_categories.Xof_piggy = {
+		special_type = "xofboom",
+		unit_types = {
+			america = {
+				Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
+			},
+			russia = {
+				Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
+			},
+			zombie = {
+				Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
+			},
+			murkywater = {
+				Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
+			},
+			federales = {
+				Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
+			},
+			nypd = {
+				Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
+			},
+			lapd = {
+				Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
+			},
+			fbi = {
+				Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
+			}
+		},
+		access = access_type_all
+	}
 	--For some fucking reason, the files for the Murkywater Sniper don't load when you play on White House
 	--so he gets replaced by the FBI Sniper
 	if Global and Global.level_data and Global.level_data.level_id == "vit" then
@@ -16396,7 +16426,32 @@ function GroupAITweakData:_init_enemy_spawn_groups(difficulty_index)
 	
 	self.enemy_spawn_groups = {}
 	--Akiko Spawn Groups
-	
+	if difficulty_index == 8 then
+	self.enemy_spawn_groups.tac_sniper = {
+		amount = {
+			3,
+			3
+		},
+		spawn = {
+			{
+				--amount_min = 3,
+				freq = 1,
+				--amount_max = 3,
+				rank = 1,
+				unit = "FBI_groundsniper",
+				tactics = self._tactics.groundsniper
+			},
+			{
+				amount_min = 3,
+				freq = 0.2,
+				amount_max = 3,
+				rank = 2,
+				unit = "Xof_piggy",
+				tactics = self._tactics.groundsniper
+			}
+		}
+	}
+	else
 	self.enemy_spawn_groups.tac_sniper = {
 		amount = {
 			3,
@@ -16407,12 +16462,13 @@ function GroupAITweakData:_init_enemy_spawn_groups(difficulty_index)
 				amount_min = 3,
 				freq = 1,
 				amount_max = 3,
-				rank = 2,
+				rank = 1,
 				unit = "FBI_groundsniper",
 				tactics = self._tactics.groundsniper
 			}
 		}
 	}
+	end
 	
 	--Restore Spawn Groups
 	self.enemy_spawn_groups.CS_defend_a = {
@@ -23345,15 +23401,15 @@ function GroupAITweakData:_init_task_data(difficulty_index, difficulty)
 	--Akiko Spawnlimits and Assult Besiege?
 	--More Snipers in my bussy :3
 	if difficulty_index <= 3 then
-		self.special_unit_spawn_limits.sniper = 4
+		self.special_unit_spawn_limits.sniper = 3
 	elseif difficulty_index <= 5 then
 		self.special_unit_spawn_limits.sniper = 6
 	elseif difficulty_index <= 7 then
-		self.special_unit_spawn_limits.sniper = 8
+		self.special_unit_spawn_limits.sniper = 9
 	else
-		self.special_unit_spawn_limits.sniper = 10
+		self.special_unit_spawn_limits.sniper = 12
 	end
-	
+	self.special_unit_spawn_limits.xofboom = 3
 	--Assault groups
 	if difficulty_index <= 2 then
 		self.besiege.assault.groups = {
@@ -23764,8 +23820,8 @@ function GroupAITweakData:_init_task_data(difficulty_index, difficulty)
 	--Akiko assault besiege stuff
 	self.besiege.assault.groups.tac_sniper = {
 		0.1,
-		0.11,
-		0.125
+		0.1,
+		0.1
 	}
 	--restore assassult besiege continue below	
 	self.besiege.assault.groups.single_spooc = {
