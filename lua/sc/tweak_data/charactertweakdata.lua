@@ -19932,6 +19932,12 @@ function CharacterTweakData:character_map()
 				"ene_titan_taser"
 			}
 		}
+		char_map.akiko = {
+			path = "units/pd2_mod_akiko/characters/",
+			list = {
+				"ene_titan_shield_bulldozer"
+			}
+		}
 
 	return char_map
 end
