@@ -17,10 +17,10 @@ MutatorDEBUGGGGGTANK.icon_coords = {
 	1
 }
 
-MutatorDEBUGGGGGTANK.load_priority = -10
+--MutatorDEBUGGGGGTANK.load_priority = -10
 
 function MutatorDEBUGGGGGTANK:setup(data)
-	if restoration then
-		restoration.dozerhavefloddedmeeee = true
-	end
+	--if restoration then
+		--restoration.dozerhavefloddedmeeee = true
+	--end
 end
