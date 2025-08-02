@@ -215,6 +215,7 @@ function restoration:Init()
 
 	restoration.global_spawn_multiplier = 1
 	restoration.disco_inferno = false
+	restoration.dozerhavefloddedmeeee = false
 	restoration.force_halloween = false
 	restoration.always_bravos = false
 	restoration.civ_death_diff_increase = true

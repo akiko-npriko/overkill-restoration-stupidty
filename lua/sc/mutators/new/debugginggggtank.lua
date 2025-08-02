@@ -17,13 +17,10 @@ MutatorDEBUGGGGGTANK.icon_coords = {
 	1
 }
 
-function MutatorOopsAllSpecials:modify_unit_categories(group_ai_tweak, difficulty_index)
-	group_ai_tweak.special_unit_spawn_limits = {
-		tank = math.huge,
-		taser = 0,
-		boom = 0,
-		spooc = 0,
-		shield = 0,
-		medic = 0
-	}
+MutatorDEBUGGGGGTANK.load_priority = -10
+
+function MutatorDEBUGGGGGTANK:setup(data)
+	if restoration then
+		restoration.dozerhavefloddedmeeee = true
+	end
 end
