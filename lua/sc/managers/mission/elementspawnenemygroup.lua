@@ -1141,6 +1141,9 @@ function ElementSpawnEnemyGroup:akikofunspawns()
 		for k, v in pairs(standard_spawngroups) do
 			table.insert(v, "tac_sniper")
 			--logunitsaaaa(v)
+			if table.contains(v, "TIT_tanks") then
+				table.insert(v, "Shield_TIT_tanks")
+			end
 		end
 	end
 end
