@@ -4344,17 +4344,42 @@ end
 
 function CharacterTweakData:_init_shield_dozers(presets)
 	self.tank_shield_titan_shielded = deep_clone(self.tank_titan)
+	self.tank_shield_titan_shielded.tags = {"law", "tank", "special", "tank_titan", "customvo", "shield", "shield_titan"}
 	self.tank_shield_titan_shielded.experience = {}
 	self.tank_shield_titan_shielded.damage.explosion_damage_mul = 0.05
 	self.tank_shield_titan_shielded.damage.rocket_damage_mul = 0.05
 	self.tank_shield_titan_shielded.damage.tase_damage_mul = 2.5
 	self.tank_shield_titan_shielded.melee_push_multiplier = 4 --he punches you a lot harder now
+	self.tank_shield_titan_shielded.use_animation_on_fire_damage = false
+	self.tank_shield_titan_shielded.surrender = nil
+	self.tank_shield_titan_shielded.is_special = true
+	self.tank_shield_titan_shielded.rotation_speed = 0.75
+	--self.tank_shield_titan_shielded.no_asu = true
+	self.tank_shield_titan_shielded.allowed_poses = {crouch = true}
+	self.tank_shield_titan_shielded.crouch_move = true
+	self.tank_shield_titan_shielded.immune_to_concussion = true
+	self.tank_shield_titan_shielded.always_face_enemy = true
+	self.tank_shield_titan_shielded.no_run_start = true
+	self.tank_shield_titan_shielded.no_run_stop = true
+	self.tank_shield_titan_shielded.no_retreat = true
+	self.tank_shield_titan_shielded.no_limping = true
+	self.tank_shield_titan_shielded.no_arrest = true
+	self.tank_shield_titan_shielded.no_equip_anim = true
+	self.tank_shield_titan_shielded.wall_fwd_offset = 100
+	self.tank_shield_titan_shielded.calls_in = nil
+	self.tank_shield_titan_shielded.ignore_medic_revive_animation = true
+	self.tank_shield_titan_shielded.damage.hurt_severity = presets.hurt_severities.only_explosion_hurts
+	self.tank_shield_titan_shielded.damage.shield_knocked = true
+	self.tank_shield_titan_shielded.HEALTH_INIT = 1750
+	self.tank_shield_titan_shielded.headshot_dmg_mul = 1.0
 	
 	table.insert(self._enemy_list, "tank_shield_titan_shielded")
 	
 	self.tank_shield_titan = deep_clone(self.tank_titan)
 	self.tank_shield_titan.experience = {}
 	self.tank_shield_titan.melee_push_multiplier = 1
+	self.tank_shield_titan.HEALTH_INIT = 625
+	self.tank_shield_titan.headshot_dmg_mul = 2.5
 
 	table.insert(self._enemy_list, "tank_shield_titan")
 end
