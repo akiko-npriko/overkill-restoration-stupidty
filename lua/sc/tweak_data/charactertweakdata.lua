@@ -2790,6 +2790,7 @@ function CharacterTweakData:_init_tank(presets)
 	table.insert(self._enemy_list, "tank_mini")	
 	
 	self:_init_us_warthog(presets)
+	self:_init_shield_dozers(presets)
 end
 
 function CharacterTweakData:_init_tank_biker(presets)
@@ -4339,6 +4340,18 @@ function CharacterTweakData:_init_us_warthog(presets)
 	--self.norm_warthog.grenade_cooldown = 30
 
 	table.insert(self._enemy_list, "norm_warthog")
+end
+
+function CharacterTweakData:_init_shield_dozers(presets)
+	self.tank_shield_titan_shielded = deep_clone(self.tank_titan)
+	self.tank_shield_titan_shielded.experience = {}
+	
+	table.insert(self._enemy_list, "tank_shield_titan_shielded")
+	
+	self.tank_shield_titan = deep_clone(tank_titan)
+	self.tank_shield_titan.experience = {}
+
+	table.insert(self._enemy_list, "tank_shield_titan")
 end
 
 function CharacterTweakData:_presets(tweak_data)

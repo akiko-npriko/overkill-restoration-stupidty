@@ -19,7 +19,7 @@
 		<extension name="unit_data" class="ScriptUnitData" />
 		<extension name="base" class="HuskCopBase" >
 			<var name="can_be_marked" value="true" />
-			<var name="_tweak_table" value="tank_titan" />
+			<var name="_tweak_table" value="tank_shield_titan_shielded" />
 			<var name="_default_weapons" type="table">
 				<var name="primary" value="hk21_sc"/>
 				<var name="secondary" value="hk21_sc"/>
@@ -29,8 +29,8 @@
 			<var name="_shield_unit_name" value="units/pd2_dlc_vip/characters/ene_acc_shield_vip/ene_acc_shield_vip_dummy" />
 			<var name="_shield_break_data" type="table">
 				<var name="anim_global_switch" value="tank"/>
-				<var name="stats_name_switch" value="tank_titan"/>
-				<var name="tweak_table_name_switch" value="tank_titan"/>
+				<var name="stats_name_switch" value="tank_shield_titan"/>
+				<var name="tweak_table_name_switch" value="tank_shield_titan"/>
 				<var name="hurt_data" value="table">
 					<var name="hurt_type" value="hurt"/>
 				</var>

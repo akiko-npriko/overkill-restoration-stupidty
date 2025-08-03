@@ -261,6 +261,14 @@ logic_variants.us_warthog.attack = TankCopLogicAttack
 logic_variants.norm_warthog = clone(security_variant)
 logic_variants.norm_warthog.attack = TankCopLogicAttack
 
+logic_variants.tank_shield_titan = clone(security_variant)
+logic_variants.tank_shield_titan.attack = TankCopLogicAttack
+
+logic_variants.tank_shield_titan_shielded = clone(security_variant)
+logic_variants.tank_shield_titan_shielded.attack = ShieldLogicAttack
+logic_variants.tank_shield_titan_shielded.intimidated = nil
+logic_variants.tank_shield_titan_shielded.flee = nil
+
 logic_variants.heavy_swat_sniper = clone(security_variant)
 logic_variants.heavy_swat_sniper.attack = MarshalLogicAttack
 logic_variants.heavy_swat_sniper_scripted = clone(security_variant)

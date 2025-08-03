@@ -85,6 +85,14 @@ action_variants.us_warthog.walk = TankCopActionWalk
 action_variants.norm_warthog = clone(security_variant)
 action_variants.norm_warthog.walk = TankCopActionWalk
 
+action_variants.tank_shield_titan = clone(security_variant)
+action_variants.tank_shield_titan.walk = TankCopActionWalk
+
+action_variants.tank_shield_titan_shielded = clone(security_variant)
+action_variants.tank_shield_titan_shielded.hurt = ShieldActionHurt
+action_variants.tank_shield_titan_shielded.turn = ShieldActionTurn
+action_variants.tank_shield_titan_shielded.walk = ShieldCopActionWalk
+
 function CopMovement:post_init()
 	local unit = self._unit
 	self._ext_brain = unit:brain()
