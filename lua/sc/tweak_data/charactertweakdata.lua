@@ -4378,8 +4378,9 @@ function CharacterTweakData:_init_shield_dozers(presets)
 	self.tank_shield_titan = deep_clone(self.tank_titan)
 	self.tank_shield_titan.experience = {}
 	self.tank_shield_titan.melee_push_multiplier = 1
-	self.tank_shield_titan.HEALTH_INIT = 625
+	self.tank_shield_titan.HEALTH_INIT = 500
 	self.tank_shield_titan.headshot_dmg_mul = 2.5
+	self.tank_shield_titan.move_speed = presets.move_speed.normal
 
 	table.insert(self._enemy_list, "tank_shield_titan")
 end
