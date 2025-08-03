@@ -15703,7 +15703,36 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		table.insert(unit_types_skull_dozer.federales, mexican_minigundozer)
 		table.insert(unit_types_skull_dozer.murkywater, murky_minigundozer)
 	end
-	
+	self.unit_categories.Shield_TIT_tank = {
+		unit_types = {
+			america = {
+				Idstring("units/pd2_mod_akiko/characters/ene_titan_shield_bulldozer/ene_titan_shield_bulldozer")
+			},
+			russia = {
+				Idstring("units/pd2_mod_akiko/characters/ene_titan_shield_bulldozer/ene_titan_shield_bulldozer")
+			},
+			zombie = {
+				Idstring("units/pd2_mod_akiko/characters/ene_titan_shield_bulldozer/ene_titan_shield_bulldozer")
+			},
+			murkywater = {
+				Idstring("units/pd2_mod_akiko/characters/ene_titan_shield_bulldozer/ene_titan_shield_bulldozer")
+			},
+			federales = {
+				Idstring("units/pd2_mod_akiko/characters/ene_titan_shield_bulldozer/ene_titan_shield_bulldozer")
+			},
+			nypd = {
+				Idstring("units/pd2_mod_akiko/characters/ene_titan_shield_bulldozer/ene_titan_shield_bulldozer")
+			},
+			lapd = {
+				Idstring("units/pd2_mod_akiko/characters/ene_titan_shield_bulldozer/ene_titan_shield_bulldozer")
+			},
+			fbi = {
+				Idstring("units/pd2_mod_akiko/characters/ene_titan_shield_bulldozer/ene_titan_shield_bulldozer")
+			}
+		},
+		access = access_type_all,
+		special_type = "tank"
+	}
 	if difficulty_index == 5 then
 		akikomedicdozersdwbelow()
 	elseif difficulty_index == 6 then
@@ -16422,6 +16451,14 @@ function GroupAITweakData:_init_enemy_spawn_groups(difficulty_index)
 			"shield_cover"
 		}
 	end
+	Shield_TIT_tank = {
+		"charge",
+		"murder",
+		--"ranged_fire",
+		"shield",
+		"provide_coverfire",
+		"provide_support"
+	}
 	
 	
 	self.enemy_spawn_groups = {}
@@ -16469,6 +16506,33 @@ function GroupAITweakData:_init_enemy_spawn_groups(difficulty_index)
 		}
 	}
 	end
+	self.enemy_spawn_groups.Shield_TIT_tanks = {
+		amount = {4, 5},
+		spawn = {
+			{
+				unit = "Shield_TIT_tank",
+				freq = 1,
+				amount_min = 1,
+				amount_max = 1,
+				tactics = self._tactics.Shield_TIT_tank,
+				rank = 3
+			},
+			{
+				unit = "GS_heavy_R870",
+				freq = 1,
+				amount_min = 1,
+				tactics = self._tactics.ELITE_heavy_shotgun,
+				rank = 1
+			},
+			{
+				unit = "medic_M4",
+				freq = 0.75,
+				amount_max = 2,
+				tactics = self._tactics.FBI_medic_flank,
+				rank = 2
+			}
+		}
+	}
 	
 	--Restore Spawn Groups
 	self.enemy_spawn_groups.CS_defend_a = {
@@ -23823,6 +23887,19 @@ function GroupAITweakData:_init_task_data(difficulty_index, difficulty)
 		0.1,
 		0.1
 	}
+	if difficulty_index == 8 then
+		Shield_TIT_tanks = {
+			0.002,
+			0.0025,
+			0.003
+		}
+	else
+		Shield_TIT_tanks = {
+			0.0,
+			0.0,
+			0.0
+		}
+	end
 	--restore assassult besiege continue below	
 	self.besiege.assault.groups.single_spooc = {
 		0,
@@ -24302,6 +24379,9 @@ function GroupAITweakData:_init_task_data(difficulty_index, difficulty)
 			cooldown = dozer_cooldown
 		},
 		TIT_tanks = {
+			cooldown = dozer_cooldown
+		},
+		Shield_TIT_tanks = {
 			cooldown = dozer_cooldown
 		},
 		SKM_BLACK_Tank_W4 = {
