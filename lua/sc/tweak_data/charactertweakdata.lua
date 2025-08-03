@@ -4345,11 +4345,16 @@ end
 function CharacterTweakData:_init_shield_dozers(presets)
 	self.tank_shield_titan_shielded = deep_clone(self.tank_titan)
 	self.tank_shield_titan_shielded.experience = {}
+	self.tank_shield_titan_shielded.damage.explosion_damage_mul = 0.05
+	self.tank_shield_titan_shielded.damage.rocket_damage_mul = 0.05
+	self.tank_shield_titan_shielded.damage.tase_damage_mul = 2.5
+	self.tank_shield_titan_shielded.melee_push_multiplier = 4 --he punches you a lot harder now
 	
 	table.insert(self._enemy_list, "tank_shield_titan_shielded")
 	
-	self.tank_shield_titan = deep_clone(tank_titan)
+	self.tank_shield_titan = deep_clone(self.tank_titan)
 	self.tank_shield_titan.experience = {}
+	self.tank_shield_titan.melee_push_multiplier = 1
 
 	table.insert(self._enemy_list, "tank_shield_titan")
 end
