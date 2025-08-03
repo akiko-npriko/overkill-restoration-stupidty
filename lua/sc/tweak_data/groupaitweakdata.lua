@@ -15453,7 +15453,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			},
 			access = access_type_all
 		}
-	elseif difficulty_index == 7 or difficulty_index == 8 then
+	elseif difficulty_index == 7 then
 		self.unit_categories.FBI_groundsniper = {
 			special_type = "sniper",
 			unit_types = {
@@ -15484,33 +15484,33 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			},
 			access = access_type_all
 		}
-	else  --Swaps from Snipers to Xof Piglets
+	else
 		self.unit_categories.FBI_groundsniper = {
 			special_type = "sniper",
 			unit_types = {
 				america = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
+					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_sniper/ene_zeal_sniper")
 				},
 				russia = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
+					Idstring("units/pd2_mod_reapers/characters/ene_zeal_sniper/ene_zeal_sniper")
 				},
 				zombie = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
+					Idstring("units/pd2_mod_halloween/characters/ene_zeal_sniper/ene_zeal_sniper")
 				},
 				murkywater = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
+					Idstring("units/pd2_mod_sharks/characters/ene_murky_sniper_2/ene_murky_sniper_2")
 				},
 				federales = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
+					Idstring("units/pd2_dlc_bex/characters/ene_zeal_sniper/ene_zeal_sniper")
 				},
 				nypd = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
+					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_sniper/ene_zeal_sniper")
 				},
 				lapd = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
+					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_sniper/ene_zeal_sniper")
 				},
 				fbi = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
+					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_sniper/ene_zeal_sniper")
 				}
 			},
 			access = access_type_all
