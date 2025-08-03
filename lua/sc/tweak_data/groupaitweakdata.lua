@@ -16451,7 +16451,7 @@ function GroupAITweakData:_init_enemy_spawn_groups(difficulty_index)
 			"shield_cover"
 		}
 	end
-	Shield_TIT_tank = {
+	self._tactics.Shield_TIT_tank = {
 		"charge",
 		"murder",
 		--"ranged_fire",
