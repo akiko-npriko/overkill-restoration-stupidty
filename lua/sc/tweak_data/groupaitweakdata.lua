@@ -23888,13 +23888,13 @@ function GroupAITweakData:_init_task_data(difficulty_index, difficulty)
 		0.1
 	}
 	if difficulty_index == 8 then
-		Shield_TIT_tanks = {
+		self.besiege.assault.groups.Shield_TIT_tanks = {
 			0.002,
 			0.0025,
 			0.003
 		}
 	else
-		Shield_TIT_tanks = {
+		self.besiege.assault.groups.Shield_TIT_tanks = {
 			0.0,
 			0.0,
 			0.0
