@@ -59,6 +59,13 @@ function GameSetup:load_packages()
 			PackageManager:load(package_name)
 		end
     end
+	local function isthisaskimerish()
+		if managers and managers.skirmish and managers.skirmish:is_skirmish() then
+			return managers.skirmish:is_skirmish()
+		end
+		log("[isthisaskimerish] Warning: SkirmishManager or is_skirmish not available")
+		return false
+    end
 
     local a = tweak_data.levels.ai_groups.america
     local r = tweak_data.levels.ai_groups.russia
@@ -72,7 +79,7 @@ function GameSetup:load_packages()
 
 	local difficulty = Global.game_settings and Global.game_settings.difficulty or "normal"
 	local difficulty_index = tweak_data:difficulty_to_index(difficulty)
-	
+	local amiaskimiersh = isthisaskimerish()
 	--Akiko Edits
 	--Note to self:
 		--<Package id="packages/akiko_misc" file="packages/akiko_package/addmisc.xml"/>
@@ -82,14 +89,14 @@ function GameSetup:load_packages()
 	load_difficulty_package("packages/addwarthog")
 	load_difficulty_package("packages/addgroundsniperfbi")
 	load_difficulty_package("packages/addgroundsniperswat")
-	if (difficulty_index == 7) then
+	if (difficulty_index == 7 or amiaskimiersh) then
 		load_difficulty_package("packages/addgroundsnipergensec")
 	end
-	if (difficulty_index == 8) then
+	if (difficulty_index == 8 or amiaskimiersh) then
 		load_difficulty_package("packages/addxofrpg")
 		load_difficulty_package("packages/addtitanshielddozer")
 	end
-	if (difficulty_index == 8) and (ai_type == a or ai_type == feds or ai_type == la or ai_type == ny) then
+	if (difficulty_index == 8 or amiaskimiersh) and (ai_type == a or ai_type == feds or ai_type == la or ai_type == ny) then
 		load_difficulty_package("packages/addusngwarthog")
 	end
 	
