@@ -15520,28 +15520,28 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		special_type = "xofboom",
 		unit_types = {
 			america = {
-				Idstring("units/pd2_mod_akiko/characters/ene_xof_rpg/ene_xof_rpg")
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_piglet/ene_xof_piglet")
 			},
 			russia = {
-				Idstring("units/pd2_mod_akiko/characters/ene_xof_rpg/ene_xof_rpg")
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_piglet/ene_xof_piglet")
 			},
 			zombie = {
-				Idstring("units/pd2_mod_akiko/characters/ene_xof_rpg/ene_xof_rpg")
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_piglet/ene_xof_piglet")
 			},
 			murkywater = {
-				Idstring("units/pd2_mod_akiko/characters/ene_xof_rpg/ene_xof_rpg")
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_piglet/ene_xof_piglet")
 			},
 			federales = {
-				Idstring("units/pd2_mod_akiko/characters/ene_xof_rpg/ene_xof_rpg")
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_piglet/ene_xof_piglet")
 			},
 			nypd = {
-				Idstring("units/pd2_mod_akiko/characters/ene_xof_rpg/ene_xof_rpg")
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_piglet/ene_xof_piglet")
 			},
 			lapd = {
-				Idstring("units/pd2_mod_akiko/characters/ene_xof_rpg/ene_xof_rpg")
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_piglet/ene_xof_piglet")
 			},
 			fbi = {
-				Idstring("units/pd2_mod_akiko/characters/ene_xof_rpg/ene_xof_rpg")
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_piglet/ene_xof_piglet")
 			}
 		},
 		access = access_type_all
