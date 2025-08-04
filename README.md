@@ -445,6 +445,8 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/52737
  - HECU voicelines over ResMod US National Guard voicelines
 	- https://modworkshop.net/mod/51970
+ - New Coppers
+	- https://modworkshop.net/mod/19336
 
 	 
 # Gunsss
