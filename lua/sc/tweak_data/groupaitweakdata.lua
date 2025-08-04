@@ -15733,6 +15733,9 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		access = access_type_all,
 		special_type = "tank"
 	}
+	--Reinforce titan shield dozer with titan shields with no special cap
+	self.unit_categories.TIT_shield_assist = deep_clone(self.unit_categories.TIT_shield)
+	self.unit_categories.TIT_shield_assist.special_type = nil
 	if difficulty_index == 5 then
 		akikomedicdozersdwbelow()
 	elseif difficulty_index == 6 then
@@ -16424,7 +16427,6 @@ function GroupAITweakData:_init_enemy_spawn_groups(difficulty_index)
 			"provide_support",
 			"provide_coverfire",
 			"grouphrtr",
-			"smoke_grenade",
 			"flash_grenade",
 			"shield_cover"
 		}
@@ -16451,6 +16453,11 @@ function GroupAITweakData:_init_enemy_spawn_groups(difficulty_index)
 			"shield_cover"
 		}
 	end
+	self._tactics.xof_piggy_tat = {
+		"ranged_fire",
+		"flank",
+		"deathguard"
+	}
 	self._tactics.Shield_TIT_tank = {
 		"charge",
 		"murder",
@@ -16463,7 +16470,6 @@ function GroupAITweakData:_init_enemy_spawn_groups(difficulty_index)
 	
 	self.enemy_spawn_groups = {}
 	--Akiko Spawn Groups
-	if difficulty_index == 8 then
 	self.enemy_spawn_groups.tac_sniper = {
 		amount = {
 			3,
@@ -16471,41 +16477,31 @@ function GroupAITweakData:_init_enemy_spawn_groups(difficulty_index)
 		},
 		spawn = {
 			{
-				--amount_min = 3,
+				amount_min = 3,
 				freq = 1,
-				--amount_max = 3,
+				amount_max = 3,
 				rank = 1,
 				unit = "FBI_groundsniper",
 				tactics = self._tactics.groundsniper
-			},
+			}
+		}
+	}
+	self.enemy_spawn_groups.xof_lapiggy = {
+		amount = {
+			3,
+			3
+		},
+		spawn = {
 			{
 				amount_min = 3,
-				freq = 0.2,
+				freq = 1,
 				amount_max = 3,
-				rank = 2,
+				rank = 1,
 				unit = "Xof_piggy",
-				tactics = self._tactics.groundsniper
+				tactics = self._tactics.xof_piggy_tat
 			}
 		}
 	}
-	else
-	self.enemy_spawn_groups.tac_sniper = {
-		amount = {
-			3,
-			3
-		},
-		spawn = {
-			{
-				amount_min = 3,
-				freq = 1,
-				amount_max = 3,
-				rank = 1,
-				unit = "FBI_groundsniper",
-				tactics = self._tactics.groundsniper
-			}
-		}
-	}
-	end
 	self.enemy_spawn_groups.Shield_TIT_tanks = {
 		amount = {4, 5},
 		spawn = {
@@ -16518,10 +16514,10 @@ function GroupAITweakData:_init_enemy_spawn_groups(difficulty_index)
 				rank = 3
 			},
 			{
-				unit = "GS_heavy_R870",
+				unit = "TIT_shield_assist",
 				freq = 1,
-				amount_min = 1,
-				tactics = self._tactics.ELITE_heavy_shotgun,
+				amount_min = 2,
+				tactics = self._tactics.MH_shield,
 				rank = 1
 			},
 			{
@@ -23882,19 +23878,37 @@ function GroupAITweakData:_init_task_data(difficulty_index, difficulty)
 		}
 	end
 	--Akiko assault besiege stuff
-	self.besiege.assault.groups.tac_sniper = {
-		0.1,
-		0.1,
-		0.1
-	}
+	if difficulty_index > 3 then
+		self.besiege.assault.groups.tac_sniper = {
+			0.08,
+			0.08,
+			0.08
+		}
+	else
+		self.besiege.assault.groups.tac_sniper = {
+			0.0,
+			0.0,
+			0.0
+		}
+	end
 	if difficulty_index == 8 then
 		self.besiege.assault.groups.Shield_TIT_tanks = {
 			0.002,
 			0.0025,
 			0.003
 		}
+		self.besiege.assault.groups.xof_lapiggy = {
+			0.0,
+			0.02,
+			0.03
+		}
 	else
 		self.besiege.assault.groups.Shield_TIT_tanks = {
+			0.0,
+			0.0,
+			0.0
+		}
+		self.besiege.assault.groups.xof_lapiggy = {
 			0.0,
 			0.0,
 			0.0
