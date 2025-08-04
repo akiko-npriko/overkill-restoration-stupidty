@@ -4299,7 +4299,7 @@ function CharacterTweakData:_init_city_swat_rpg(presets)
 	self.xof_rpg.damage.bullet_damage_mul = 1
 	self.xof_rpg.damage.explosion_damage_mul = 1
 	self.xof_rpg.damage.tase_damage_mul = 1
-	self.xof_rpg.custom_voicework = "rpg_grunt"
+	self.xof_rpg.custom_voicework = "hecu_dmr"
 	self.xof_rpg.can_throw_frag = true
 	self.xof_rpg.grenade_toss_chance = 0.35
 	table.insert(self._enemy_list, "xof_rpg")
