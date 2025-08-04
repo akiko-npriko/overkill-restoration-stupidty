@@ -15520,28 +15520,28 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		special_type = "xofboom",
 		unit_types = {
 			america = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_rpg/ene_xof_rpg")
 			},
 			russia = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_rpg/ene_xof_rpg")
 			},
 			zombie = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_rpg/ene_xof_rpg")
 			},
 			murkywater = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_rpg/ene_xof_rpg")
 			},
 			federales = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_rpg/ene_xof_rpg")
 			},
 			nypd = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_rpg/ene_xof_rpg")
 			},
 			lapd = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_rpg/ene_xof_rpg")
 			},
 			fbi = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_xof_rpg/ene_xof_rpg")
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_rpg/ene_xof_rpg")
 			}
 		},
 		access = access_type_all

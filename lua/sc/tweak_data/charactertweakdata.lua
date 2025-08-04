@@ -19522,8 +19522,7 @@ function CharacterTweakData:character_map()
 				"ene_zeal_fbi_mp5",
 				"ene_zeal_swat_heavy_sc",
 				"ene_zeal_swat_heavy_r870_sc",
-				"ene_zeal_swat_heavy_benelli",
-				'ene_xof_rpg'
+				"ene_zeal_swat_heavy_benelli"
 			}
 		}
 	--drm
@@ -19978,7 +19977,8 @@ function CharacterTweakData:character_map()
 			list = {
 				"ene_titan_shield_bulldozer",
 				"ene_zeal_warthog",
-				"ene_norm_warthog"
+				"ene_norm_warthog",
+				"ene_xof_rpg"
 			}
 		}
 
