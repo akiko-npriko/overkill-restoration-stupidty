@@ -546,6 +546,7 @@ function CharacterTweakData:_init_fbi(presets)
 	self.meme_man.move_speed = presets.move_speed.lightning
 	self.meme_man.surrender = nil
 	self.meme_man.is_special = true
+	self.meme_man.custom_voicework = "meme_man"
 	self.meme_man.no_asu = true
 	self.meme_man.heal_cooldown = 22.5
 	self.meme_man.rescue_hostages = false
@@ -650,11 +651,7 @@ function CharacterTweakData:_init_medic(presets)
 	self.medic_heavy.HEALTH_INIT = 63
 	self.medic_heavy.headshot_dmg_mul = 1.6
 	self.medic_heavy.move_speed = presets.move_speed.normal
-	if self:get_ai_group_type() == "russia" or self:get_ai_group_type() == "federales" then
-		self.medic_heavy.custom_voicework = nil
-	else
-		self.medic_heavy.custom_voicework = "murky_medic"
-	end
+	self.medic_heavy.custom_voicework = "heavy_medic"
 	self.medic_heavy.dodge = presets.dodge.heavy
 	table.insert(self._enemy_list, "medic_heavy")
 	
@@ -1275,6 +1272,8 @@ function CharacterTweakData:_init_city_swat(presets)
 		self.city_swat_titan.custom_voicework = "tswat_ru"
 	elseif self:get_ai_group_type() == "zombie" then
 		self.city_swat_titan.custom_voicework = "skeleton"
+	elseif self:get_ai_group_type() == "murkywater" then
+		self.city_swat_titan.custom_voicework = "murky_tswat"
 	else
 		self.city_swat_titan.custom_voicework = "pdth"
 	end
@@ -4300,7 +4299,7 @@ function CharacterTweakData:_init_city_swat_rpg(presets)
 	self.xof_rpg.damage.bullet_damage_mul = 1
 	self.xof_rpg.damage.explosion_damage_mul = 1
 	self.xof_rpg.damage.tase_damage_mul = 1
-	--self.xof_rpg.custom_voicework = "rpg_grunt"
+	self.xof_rpg.custom_voicework = "rpg_grunt"
 	self.xof_rpg.can_throw_frag = true
 	self.xof_rpg.grenade_toss_chance = 0.35
 	table.insert(self._enemy_list, "xof_rpg")

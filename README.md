@@ -161,6 +161,8 @@ Heavy SWAT: Alliance (Unit: Classified)
 
 Heavy SWAT Murky: SAS (Counter Strike)
 
+Titan SWAT: Zulu Squad (Spec Ops: The Line)
+
 Spring: Robot Heavy (Team Fortress 2)
 
 Biker Bulldozer: Brute (Typical Colors 2)
@@ -192,6 +194,12 @@ Summers: Bill (Left 4 Dead Russian Dub)
 Sergeant Doc: Nick (Left 4 Dead 2 Russian Dub)
 
 Major Molly: Rochelle (Left 4 Dead 2 Russian Dub)
+
+RPG Grunt: Soldier (Team Fortess 2)
+
+Mememen: Vinesauce Joel (https://gamebanana.com/sounds/46534)
+
+Heavy Medic: Mezz (https://gamebanana.com/sounds/69020)
 
 # Credits
 
