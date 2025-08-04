@@ -687,13 +687,6 @@ function RaycastWeaponBase:fire(from_pos, direction, dmg_mul, shoot_player, spre
 			dmg_mul = 0.25
 		end
 	end
-	local universaljamchance = 0.051
-	if is_player and not (self:weapon_tweak_data().termina or self:weapon_tweak_data().zippy) then
-		if jam < universaljamchance then
-			dmg_mul = 0.0
-			consume_ammo = false
-		end
-	end
 	if consume_ammo and (is_player or Network:is_server()) then
 		local base = self:ammo_base()
 
@@ -838,14 +831,6 @@ function RaycastWeaponBase:fire(from_pos, direction, dmg_mul, shoot_player, spre
 					variant = "explosion"
 				})
 			end
-		end
-	elseif (jam < universaljamchance) and dmg_mul == 0 then
-		local player_unit = managers.player:player_unit()
-		if player_unit and player_unit.character_damage and player_unit:character_damage() then
-			player_unit:character_damage()._unit:sound():play("player_hit_permadamage")
-			--local base = self:ammo_base()
-			--local ammo_in_clip = base:get_ammo_remaining_in_clip()
-			--base:set_ammo_remaining_in_clip(ammo_in_clip - ammo_usage)
 		end
 	end
 
