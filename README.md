@@ -323,10 +323,6 @@ Yanked coding from... (intergrated into mod)
 	 - https://modworkshop.net/mod/38272
  - National Guard ZEAL Units
 	 - https://modworkshop.net/mod/37321
- - Zulu Squad voicelines replace ResMod OMNIA voicelines
-	 - https://modworkshop.net/mod/49627
- - 33rd Infantry voicelines replace ResMod US National Guard voicelines
-	 - https://modworkshop.net/mod/49440
  - New Marshal Shield (Transparent Visor Addition)
 	 - https://modworkshop.net/mod/41470
  - Metal Gear Solid Alert Sound - Replace Detection Sound
@@ -441,6 +437,14 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/49742
  - Bravo Teams Outfit Pack
 	- https://modworkshop.net/mod/47131
+ - Zulu Squad voicelines over ResMods US National Guard voicelines
+	- https://modworkshop.net/mod/51920
+ - 33rd Infantry voicelines replace ResMod US National Guard voicelines
+	- https://modworkshop.net/mod/49440
+ - Half Life 2 Combine Voicelines over ResMod OMNIA Voicelines
+	- https://modworkshop.net/mod/52737
+ - HECU voicelines over ResMod US National Guard voicelines
+	- https://modworkshop.net/mod/51970
 
 	 
 # Gunsss
