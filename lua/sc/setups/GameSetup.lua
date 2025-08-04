@@ -82,7 +82,9 @@ function GameSetup:load_packages()
 	load_difficulty_package("packages/addwarthog")
 	load_difficulty_package("packages/addgroundsniperfbi")
 	load_difficulty_package("packages/addgroundsniperswat")
-	load_difficulty_package("packages/addgroundsnipergensec")
+	if (difficulty_index == 7) then
+		load_difficulty_package("packages/addgroundsnipergensec")
+	end
 	if (difficulty_index == 8) then
 		load_difficulty_package("packages/addxofrpg")
 		load_difficulty_package("packages/addtitanshielddozer")
