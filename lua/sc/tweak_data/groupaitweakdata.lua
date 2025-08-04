@@ -15458,7 +15458,8 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			special_type = "sniper",
 			unit_types = {
 				america = {
-					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_fbi/ene_groundsniper_fbi")
+					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_fbi/ene_groundsniper_fbi"),
+					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_gensec/ene_groundsniper_gensec")
 				},
 				russia = {
 					Idstring("units/pd2_dlc_mad/characters/ene_akan_cs_swat_sniper_svd_snp/ene_akan_cs_swat_sniper_svd_snp")
@@ -15473,13 +15474,16 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 					Idstring("units/pd2_dlc_bex/characters/ene_swat_policia_sniper/ene_swat_policia_sniper")
 				},
 				nypd = {
-					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_fbi/ene_groundsniper_fbi")
+					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_fbi/ene_groundsniper_fbi"),
+					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_gensec/ene_groundsniper_gensec")
 				},
 				lapd = {
-					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_fbi/ene_groundsniper_fbi")
+					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_fbi/ene_groundsniper_fbi"),
+					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_gensec/ene_groundsniper_gensec")
 				},
 				fbi = {
-					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_fbi/ene_groundsniper_fbi")
+					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_fbi/ene_groundsniper_fbi"),
+					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_gensec/ene_groundsniper_gensec")
 				}
 			},
 			access = access_type_all

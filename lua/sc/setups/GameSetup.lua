@@ -84,6 +84,7 @@ function GameSetup:load_packages()
 	load_difficulty_package("packages/addtitanshielddozer")
 	load_difficulty_package("packages/addgroundsniperfbi")
 	load_difficulty_package("packages/addgroundsniperswat")
+	load_difficulty_package("packages/addgroundsnipergensec")
 	if (difficulty_index == 8) and (ai_type == a or ai_type == feds or ai_type == la or ai_type == ny) then
 		load_difficulty_package("packages/addusngwarthog")
 	end

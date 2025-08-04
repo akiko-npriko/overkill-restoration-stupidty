@@ -19980,7 +19980,8 @@ function CharacterTweakData:character_map()
 				"ene_norm_warthog",
 				"ene_xof_piglet",
 				"ene_groundsniper_fbi",
-				"ene_groundsniper_swat"
+				"ene_groundsniper_swat",
+				"ene_groundsniper_gensec"
 			}
 		}
 
