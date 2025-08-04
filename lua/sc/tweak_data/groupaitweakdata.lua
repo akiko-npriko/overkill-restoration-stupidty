@@ -15392,13 +15392,13 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			special_type = "sniper",
 			unit_types = {
 				america = {
-					Idstring("units/payday2/characters/ene_sniper_1/ene_sniper_1")
+					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_swat/ene_groundsniper_swat")
 				},
 				russia = {
 					Idstring("units/pd2_dlc_mad/characters/ene_akan_cs_swat_sniper_svd_snp/ene_akan_cs_swat_sniper_svd_snp")
 				},
 				zombie = {
-					Idstring("units/payday2/characters/ene_sniper_1/ene_sniper_1")
+					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_swat/ene_groundsniper_swat")
 				},
 				murkywater = {
 					Idstring("units/pd2_dlc_bph/characters/ene_murkywater_sniper/ene_murkywater_sniper")
@@ -15407,13 +15407,13 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 					Idstring("units/pd2_dlc_bex/characters/ene_swat_policia_sniper/ene_swat_policia_sniper")
 				},
 				nypd = {
-					Idstring("units/payday2/characters/ene_sniper_1/ene_sniper_1")
+					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_swat/ene_groundsniper_swat")
 				},
 				lapd = {
-					Idstring("units/payday2/characters/ene_sniper_1/ene_sniper_1")
+					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_swat/ene_groundsniper_swat")
 				},
 				fbi = {
-					Idstring("units/payday2/characters/ene_sniper_1/ene_sniper_1")
+					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_swat/ene_groundsniper_swat")
 				}
 			},
 			access = access_type_all
@@ -15423,8 +15423,8 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			special_type = "sniper",
 			unit_types = {
 				america = {
-					Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2"),
-					Idstring("units/payday2/characters/ene_sniper_1/ene_sniper_1")
+					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_fbi/ene_groundsniper_fbi"),
+					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_swat/ene_groundsniper_swat")
 				},
 				russia = {
 					Idstring("units/pd2_dlc_mad/characters/ene_akan_cs_swat_sniper_svd_snp/ene_akan_cs_swat_sniper_svd_snp")
@@ -15439,16 +15439,16 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 					Idstring("units/pd2_dlc_bex/characters/ene_swat_policia_sniper/ene_swat_policia_sniper")
 				},
 				nypd = {
-					Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2"),
-					Idstring("units/payday2/characters/ene_sniper_1/ene_sniper_1")
+					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_fbi/ene_groundsniper_fbi"),
+					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_swat/ene_groundsniper_swat")
 				},
 				lapd = {
-					Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2"),
-					Idstring("units/payday2/characters/ene_sniper_1/ene_sniper_1")
+					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_fbi/ene_groundsniper_fbi"),
+					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_swat/ene_groundsniper_swat")
 				},
 				fbi = {
-					Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2"),
-					Idstring("units/payday2/characters/ene_sniper_1/ene_sniper_1")
+					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_fbi/ene_groundsniper_fbi"),
+					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_swat/ene_groundsniper_swat")
 				}
 			},
 			access = access_type_all
@@ -15458,7 +15458,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			special_type = "sniper",
 			unit_types = {
 				america = {
-					Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2")
+					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_fbi/ene_groundsniper_fbi")
 				},
 				russia = {
 					Idstring("units/pd2_dlc_mad/characters/ene_akan_cs_swat_sniper_svd_snp/ene_akan_cs_swat_sniper_svd_snp")
@@ -15473,13 +15473,13 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 					Idstring("units/pd2_dlc_bex/characters/ene_swat_policia_sniper/ene_swat_policia_sniper")
 				},
 				nypd = {
-					Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2")
+					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_fbi/ene_groundsniper_fbi")
 				},
 				lapd = {
-					Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2")
+					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_fbi/ene_groundsniper_fbi")
 				},
 				fbi = {
-					Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2")
+					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_fbi/ene_groundsniper_fbi")
 				}
 			},
 			access = access_type_all
@@ -15550,7 +15550,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	--so he gets replaced by the FBI Sniper
 	if Global and Global.level_data and Global.level_data.level_id == "vit" then
 		self.unit_categories.FBI_groundsniper.unit_types.murkywater = {
-			Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2")
+			Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_fbi/ene_groundsniper_fbi")
 		}
 	end
 --AKIKO EDITS (ADDON LMAOO)

@@ -19978,7 +19978,9 @@ function CharacterTweakData:character_map()
 				"ene_titan_shield_bulldozer",
 				"ene_zeal_warthog",
 				"ene_norm_warthog",
-				"ene_xof_piglet"
+				"ene_xof_piglet",
+				"ene_groundsniper_fbi",
+				"ene_groundsniper_swat"
 			}
 		}
 
