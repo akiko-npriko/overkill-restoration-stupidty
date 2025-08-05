@@ -334,7 +334,6 @@ function GameSetup:load_packages()
 			PackageManager:load(package)
 		end
 	end
-	load_difficulty_package("packages/forceloadafterallpack")
 end
 
 function GameSetup:gather_packages_to_unload()
