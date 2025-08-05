@@ -5354,8 +5354,6 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 					Idstring("units/payday2/characters/ene_city_swat_2/ene_city_swat_2"),
 					Idstring("units/payday2/characters/ene_city_swat_r870/ene_city_swat_r870"),
 					Idstring("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"),
-					Idstring("units/payday2/characters/ene_sniper_1/ene_sniper_1"),
-					Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2"),
 					Idstring("units/pd2_dlc_vip/characters/ene_titan_shotgun/ene_titan_shotgun"),
 					Idstring("units/pd2_dlc_vip/characters/ene_titan_shotgun/ene_titan_shotgun")					
 				},
@@ -5369,7 +5367,6 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 					Idstring("units/pd2_dlc_mad/characters/ene_akan_fbi_swat_dw_r870/ene_akan_fbi_swat_dw_r870"),
 					Idstring("units/pd2_mod_reapers/characters/ene_city_swat_3/ene_city_swat_3"),
 					Idstring("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"),
-					Idstring("units/pd2_dlc_mad/characters/ene_akan_cs_swat_sniper_svd_snp/ene_akan_cs_swat_sniper_svd_snp"),
 					Idstring("units/pd2_mod_reapers/characters/ene_titan_shotgun/ene_titan_shotgun"),
 					Idstring("units/pd2_mod_reapers/characters/ene_titan_shotgun/ene_titan_shotgun")
 				},
@@ -5395,7 +5392,6 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 					Idstring("units/pd2_dlc_bph/characters/ene_murkywater_light_city_r870/ene_murkywater_light_city_r870"),
 					Idstring("units/pd2_mod_sharks/characters/ene_city_swat_3/ene_city_swat_3"),
 					Idstring("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"),
-					Idstring("units/pd2_mod_sharks/characters/ene_murky_sniper_2/ene_murky_sniper_2"),
 					Idstring("units/pd2_mod_sharks/characters/ene_titan_shotgun/ene_titan_shotgun"),
 					Idstring("units/pd2_mod_sharks/characters/ene_titan_shotgun/ene_titan_shotgun")
 				},
@@ -5409,7 +5405,6 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 					Idstring("units/pd2_dlc_bex/characters/ene_swat_policia_federale_city_r870/ene_swat_policia_federale_city_r870"),
 					Idstring("units/pd2_dlc_bex/characters/ene_city_swat_3/ene_city_swat_3"),
 					Idstring("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"),
-					Idstring("units/pd2_dlc_bex/characters/ene_swat_policia_sniper/ene_swat_policia_sniper"),
 					Idstring("units/pd2_mod_reapers/characters/ene_titan_shotgun/ene_titan_shotgun"),
 					Idstring("units/pd2_mod_reapers/characters/ene_titan_shotgun/ene_titan_shotgun")					
 				},					
@@ -5423,8 +5418,6 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 					Idstring("units/payday2/characters/ene_city_swat_2/ene_city_swat_2"),
 					Idstring("units/payday2/characters/ene_city_swat_r870/ene_city_swat_r870"),
 					Idstring("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"),
-					Idstring("units/payday2/characters/ene_sniper_1/ene_sniper_1"),
-					Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2"),
 					Idstring("units/pd2_dlc_vip/characters/ene_titan_shotgun/ene_titan_shotgun"),
 					Idstring("units/pd2_dlc_vip/characters/ene_titan_shotgun/ene_titan_shotgun")					
 				},	
@@ -5438,8 +5431,6 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 					Idstring("units/payday2/characters/ene_city_swat_2/ene_city_swat_2"),
 					Idstring("units/payday2/characters/ene_city_swat_r870/ene_city_swat_r870"),
 					Idstring("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"),
-					Idstring("units/payday2/characters/ene_sniper_1/ene_sniper_1"),
-					Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2"),
 					Idstring("units/pd2_dlc_vip/characters/ene_titan_shotgun/ene_titan_shotgun"),
 					Idstring("units/pd2_dlc_vip/characters/ene_titan_shotgun/ene_titan_shotgun")					
 				},
@@ -5453,8 +5444,6 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 					Idstring("units/payday2/characters/ene_city_swat_2/ene_city_swat_2"),
 					Idstring("units/payday2/characters/ene_city_swat_r870/ene_city_swat_r870"),
 					Idstring("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"),
-					Idstring("units/payday2/characters/ene_sniper_1/ene_sniper_1"),
-					Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2"),
 					Idstring("units/pd2_dlc_vip/characters/ene_titan_shotgun/ene_titan_shotgun"),
 					Idstring("units/pd2_dlc_vip/characters/ene_titan_shotgun/ene_titan_shotgun")					
 				}					
@@ -5472,9 +5461,6 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_2/ene_zeal_city_2"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_3/ene_zeal_city_3"),
 					Idstring("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"),
-					Idstring("units/payday2/characters/ene_sniper_1/ene_sniper_1"),
-					Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_sniper/ene_zeal_sniper"),
 					Idstring("units/pd2_dlc_vip/characters/ene_titan_shotgun/ene_titan_shotgun"),
 					Idstring("units/pd2_dlc_vip/characters/ene_titan_shotgun/ene_titan_shotgun")
 				},
@@ -5486,7 +5472,6 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 					Idstring("units/pd2_dlc_mad/characters/ene_akan_fbi_swat_dw_r870/ene_akan_fbi_swat_dw_r870"),
 					Idstring("units/pd2_dlc_mad/characters/ene_akan_fbi_swat_dw_r870/ene_akan_fbi_swat_dw_r870"),
 					Idstring("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"),
-					Idstring("units/pd2_dlc_mad/characters/ene_akan_cs_swat_sniper_svd_snp/ene_akan_cs_swat_sniper_svd_snp"),
 					Idstring("units/pd2_mod_reapers/characters/ene_titan_shotgun/ene_titan_shotgun"),
 					Idstring("units/pd2_mod_reapers/characters/ene_titan_shotgun/ene_titan_shotgun")
 				},
@@ -5508,7 +5493,6 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 					Idstring("units/pd2_mod_sharks/characters/ene_zeal_city_2/ene_zeal_city_2"),
 					Idstring("units/pd2_mod_sharks/characters/ene_zeal_city_3/ene_zeal_city_3"),
 					Idstring("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"),
-					Idstring("units/pd2_mod_sharks/characters/ene_murky_sniper_2/ene_murky_sniper_2"),
 					Idstring("units/pd2_mod_sharks/characters/ene_titan_shotgun/ene_titan_shotgun"),
 					Idstring("units/pd2_mod_sharks/characters/ene_titan_shotgun/ene_titan_shotgun")
 				},
@@ -5520,7 +5504,6 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 					Idstring("units/pd2_dlc_bex/characters/ene_zeal_city_2/ene_zeal_city_2"),
 					Idstring("units/pd2_dlc_bex/characters/ene_zeal_city_3/ene_zeal_city_3"),
 					Idstring("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"),
-					Idstring("units/pd2_dlc_bex/characters/ene_swat_policia_sniper/ene_swat_policia_sniper"),
 					Idstring("units/pd2_mod_reapers/characters/ene_titan_shotgun/ene_titan_shotgun"),
 					Idstring("units/pd2_mod_reapers/characters/ene_titan_shotgun/ene_titan_shotgun")
 				},					
@@ -5532,9 +5515,6 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_2/ene_zeal_city_2"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_3/ene_zeal_city_3"),
 					Idstring("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"),
-					Idstring("units/payday2/characters/ene_sniper_1/ene_sniper_1"),
-					Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_sniper/ene_zeal_sniper"),
 					Idstring("units/pd2_dlc_vip/characters/ene_titan_shotgun/ene_titan_shotgun"),
 					Idstring("units/pd2_dlc_vip/characters/ene_titan_shotgun/ene_titan_shotgun")
 				},
@@ -5546,9 +5526,6 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_2/ene_zeal_city_2"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_3/ene_zeal_city_3"),
 					Idstring("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"),
-					Idstring("units/payday2/characters/ene_sniper_1/ene_sniper_1"),
-					Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_sniper/ene_zeal_sniper"),
 					Idstring("units/pd2_dlc_vip/characters/ene_titan_shotgun/ene_titan_shotgun"),
 					Idstring("units/pd2_dlc_vip/characters/ene_titan_shotgun/ene_titan_shotgun")
 				},
@@ -5560,9 +5537,6 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_2/ene_zeal_city_2"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_3/ene_zeal_city_3"),
 					Idstring("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"),
-					Idstring("units/payday2/characters/ene_sniper_1/ene_sniper_1"),
-					Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_sniper/ene_zeal_sniper"),
 					Idstring("units/pd2_dlc_vip/characters/ene_titan_shotgun/ene_titan_shotgun"),
 					Idstring("units/pd2_dlc_vip/characters/ene_titan_shotgun/ene_titan_shotgun")
 				}				
