@@ -60,10 +60,33 @@ function GameSetup:load_packages()
 		end
     end
 	local function isthisaskimerish()
-		if managers and managers.skirmish and managers.skirmish:is_skirmish() then
-			return managers.skirmish:is_skirmish()
+		local laskirmish_heists = {
+		"skmc_mad",
+		"skm_red2",
+		"skm_mus",
+		"skm_arena",
+		"skmc_ovengrill",
+		"skm_watchdogs_stage2",
+		"skm_firestarter_2",
+		"skm_nightmare_lvl",
+		"skm_big2",
+		"skm_mallcrasher",
+		"skm_cas",
+		"skm_bex",
+		"skm_friend",
+		"skm_street"
+		}
+		if Global.level_data and Global.level_data.level_id then
+			local level_id = Global.level_data.level_id
+			if table.contains(laskirmish_heists, level_id) then
+				log("[isthisaskimerish] Current heist (" .. level_id .. ") is a Skirmish heist.")
+				return true
+			else
+				log("[isthisaskimerish] Current heist (" .. level_id .. ") is NOT a Skirmish heist or is not tracked.")
+				return false
+			end
 		end
-		log("[isthisaskimerish] Warning: SkirmishManager or is_skirmish not available")
+		log("[isthisaskimerish] Warning: This is not available")
 		return false
     end
 
