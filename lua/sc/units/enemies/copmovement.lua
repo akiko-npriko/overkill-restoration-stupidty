@@ -101,6 +101,7 @@ action_variants.xof_shield.walk = ShieldCopActionWalk
 action_variants.xof_markman = clone(security_variant)
 
 action_variants.xof_heavy_swat = clone(security_variant)
+action_variants.xof_swat = clone(security_variant)
 
 function CopMovement:post_init()
 	local unit = self._unit

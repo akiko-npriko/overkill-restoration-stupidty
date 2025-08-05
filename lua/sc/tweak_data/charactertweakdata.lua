@@ -870,6 +870,7 @@ function CharacterTweakData:_init_swat(presets)
 	self.hrt_titan.no_asu = true
 	self.hrt_titan.marshal_logic = true
 	table.insert(self._enemy_list, "hrt_titan")
+	self:_init_xof_swat(presets)
 end
 
 function CharacterTweakData:_init_heavy_swat(presets)	
@@ -4390,6 +4391,7 @@ end
 function CharacterTweakData:_init_xof_shield(presets)
 	self.xof_shield = deep_clone(self.shield)
 	self.xof_shield.custom_voicework = "combine"
+	self.xof_shield.yellow_blood = false
 	self.xof_shield.weapon.is_pistol.melee_speed = enemy_melee_speed.normal
 	self.xof_shield.weapon.is_pistol.melee_dmg = enemy_melee_damage_base
 	self.xof_shield.weapon.is_pistol.melee_retry_delay = {2, 2}
@@ -4416,6 +4418,15 @@ function CharacterTweakData:_init_xof_heavy_swat(presets)
 	self.xof_heavy_swat.dodge = deep_clone(self.presets.dodge.heavy_overkill)
 	table.insert(self._enemy_list, "xof_heavy_swat")
 end
+
+function CharacterTweakData:_init_xof_swat(presets)
+	self.xof_swat = deep_clone(self.swat)
+	self.xof_swat.custom_voicework = "combine_elite"
+	self.xof_swat.yellow_blood = false
+	self.xof_swat.can_shoot_while_dodging = true
+	table.insert(self._enemy_list, "xof_swat")
+end
+
 function CharacterTweakData:_presets(tweak_data)
 	local presets = {}
 	presets.enemy_chatter = {
