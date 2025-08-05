@@ -4622,9 +4622,9 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			unit_types = {
 				america = {
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_1/ene_zeal_city_1"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_1/ene_zeal_city_1"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light"),
 					Idstring("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"),
 					Idstring("units/pd2_dlc_vip/characters/ene_titan_rifle/ene_titan_rifle")
 				},
@@ -4662,25 +4662,25 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 				},					
 				nypd = {
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_1/ene_zeal_city_1"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_1/ene_zeal_city_1"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light"),
 					Idstring("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"),
 					Idstring("units/pd2_dlc_vip/characters/ene_titan_rifle/ene_titan_rifle")
 				},	
 				lapd = {
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_1/ene_zeal_city_1"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_1/ene_zeal_city_1"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light"),
 					Idstring("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"),
 					Idstring("units/pd2_dlc_vip/characters/ene_titan_rifle/ene_titan_rifle")
 				},
 				fbi = {
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_1/ene_zeal_city_1"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_1/ene_zeal_city_1"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light"),
 					Idstring("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"),
 					Idstring("units/pd2_dlc_vip/characters/ene_titan_rifle/ene_titan_rifle")
 				}				
@@ -7497,8 +7497,8 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 				Idstring("units/pd2_dlc_vip/characters/ene_titan_sniper/ene_titan_sniper"),
 				Idstring("units/pd2_dlc_usm1/characters/ene_male_marshal_marksman_1/ene_male_marshal_marksman_1"),
 				Idstring("units/pd2_dlc_usm1/characters/ene_male_marshal_marksman_2/ene_male_marshal_marksman_2"),
-				Idstring("units/pd2_dlc_drm/characters/ene_zeal_swat_heavy_sniper/ene_zeal_swat_heavy_sniper"),
-				Idstring("units/pd2_dlc_drm/characters/ene_zeal_swat_heavy_sniper/ene_zeal_swat_heavy_sniper")
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy_sniper/ene_xof_heavy_sniper"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy_sniper/ene_xof_heavy_sniper")
 			},
 			russia = {
 				Idstring("units/pd2_mod_reapers/characters/ene_titan_sniper/ene_titan_sniper"),
@@ -7520,22 +7520,22 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 				Idstring("units/pd2_dlc_vip/characters/ene_titan_sniper/ene_titan_sniper"),
 				Idstring("units/pd2_dlc_usm1/characters/ene_male_marshal_marksman_1/ene_male_marshal_marksman_1"),
 				Idstring("units/pd2_dlc_usm1/characters/ene_male_marshal_marksman_2/ene_male_marshal_marksman_2"),
-				Idstring("units/pd2_dlc_drm/characters/ene_zeal_swat_heavy_sniper/ene_zeal_swat_heavy_sniper"),
-				Idstring("units/pd2_dlc_drm/characters/ene_zeal_swat_heavy_sniper/ene_zeal_swat_heavy_sniper")
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy_sniper/ene_xof_heavy_sniper"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy_sniper/ene_xof_heavy_sniper")
 			},
 			lapd = {
 				Idstring("units/pd2_dlc_vip/characters/ene_titan_sniper/ene_titan_sniper"),
 				Idstring("units/pd2_dlc_usm1/characters/ene_male_marshal_marksman_1/ene_male_marshal_marksman_1"),
 				Idstring("units/pd2_dlc_usm1/characters/ene_male_marshal_marksman_2/ene_male_marshal_marksman_2"),
-				Idstring("units/pd2_dlc_drm/characters/ene_zeal_swat_heavy_sniper/ene_zeal_swat_heavy_sniper"),
-				Idstring("units/pd2_dlc_drm/characters/ene_zeal_swat_heavy_sniper/ene_zeal_swat_heavy_sniper")
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy_sniper/ene_xof_heavy_sniper"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy_sniper/ene_xof_heavy_sniper")
 			},
 			fbi = {
 				Idstring("units/pd2_dlc_vip/characters/ene_titan_sniper/ene_titan_sniper"),
 				Idstring("units/pd2_dlc_usm1/characters/ene_male_marshal_marksman_1/ene_male_marshal_marksman_1"),
 				Idstring("units/pd2_dlc_usm1/characters/ene_male_marshal_marksman_2/ene_male_marshal_marksman_2"),
-				Idstring("units/pd2_dlc_drm/characters/ene_zeal_swat_heavy_sniper/ene_zeal_swat_heavy_sniper"),
-				Idstring("units/pd2_dlc_drm/characters/ene_zeal_swat_heavy_sniper/ene_zeal_swat_heavy_sniper")
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy_sniper/ene_xof_heavy_sniper"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy_sniper/ene_xof_heavy_sniper")
 			}
 		},
 		access = access_type_all
@@ -11588,9 +11588,9 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		unit_types = {
 			america = {
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_1/ene_zeal_city_1"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_1/ene_zeal_city_1"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light"),
 				Idstring("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"),
 				Idstring("units/payday2/characters/ene_sniper_1/ene_sniper_1"),
 				Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2"),
@@ -11634,9 +11634,9 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			},					
 			nypd = {
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_1/ene_zeal_city_1"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_1/ene_zeal_city_1"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light"),
 				Idstring("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"),
 				Idstring("units/payday2/characters/ene_sniper_1/ene_sniper_1"),
 				Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2"),
@@ -11644,9 +11644,9 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			},	
 			lapd = {
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_1/ene_zeal_city_1"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_1/ene_zeal_city_1"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light"),
 				Idstring("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"),
 				Idstring("units/payday2/characters/ene_sniper_1/ene_sniper_1"),
 				Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2"),
@@ -11654,9 +11654,9 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			},
 			fbi = {
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_1/ene_zeal_city_1"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_1/ene_zeal_city_1"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light"),
 				Idstring("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"),
 				Idstring("units/payday2/characters/ene_sniper_1/ene_sniper_1"),
 				Idstring("units/payday2/characters/ene_sniper_2/ene_sniper_2"),
@@ -13523,9 +13523,9 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		unit_types = {
 			america = {
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_1/ene_zeal_city_1"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_1/ene_zeal_city_1"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light"),
 				Idstring("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"),
 				Idstring("units/pd2_dlc_vip/characters/ene_titan_rifle/ene_titan_rifle"),
 				Idstring("units/pd2_mod_bravo/characters/ene_bravo_rifle/ene_bravo_rifle"),
@@ -13591,9 +13591,9 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			},					
 			nypd = {
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_1/ene_zeal_city_1"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_1/ene_zeal_city_1"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light"),
 				Idstring("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"),
 				Idstring("units/pd2_dlc_vip/characters/ene_titan_rifle/ene_titan_rifle"),
 				Idstring("units/pd2_mod_bravo/characters/ene_bravo_rifle/ene_bravo_rifle"),
@@ -13605,9 +13605,9 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			},	
 			lapd = {
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_1/ene_zeal_city_1"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_1/ene_zeal_city_1"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light"),
 				Idstring("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"),
 				Idstring("units/pd2_dlc_vip/characters/ene_titan_rifle/ene_titan_rifle"),
 				Idstring("units/pd2_mod_bravo/characters/ene_bravo_rifle/ene_bravo_rifle"),
@@ -13619,9 +13619,9 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			},
 			fbi = {
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_1/ene_zeal_city_1"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_city_1/ene_zeal_city_1"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light"),
 				Idstring("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"),
 				Idstring("units/pd2_dlc_vip/characters/ene_titan_rifle/ene_titan_rifle"),
 				Idstring("units/pd2_mod_bravo/characters/ene_bravo_rifle/ene_bravo_rifle"),
