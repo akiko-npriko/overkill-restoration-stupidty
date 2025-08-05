@@ -1039,6 +1039,7 @@ function CharacterTweakData:_init_heavy_swat(presets)
 	self.weekend_dmr_scripted.die_sound_event_2 = "mga_death_scream"
 	self.weekend_dmr_scripted.damage.hurt_severity = presets.hurt_severities.no_hurts
 	table.insert(self._enemy_list, "weekend_dmr")
+	self:_init_xof_markman(presets)
 end
 
 function CharacterTweakData:_init_fbi_swat(presets)	
@@ -3144,6 +3145,7 @@ function CharacterTweakData:_init_shield(presets)
 		self.shield.custom_voicework = nil
 	end
 	table.insert(self._enemy_list, "shield")
+	self:_init_xof_shield(presets)
 end
 
 function CharacterTweakData:_init_phalanx_minion(presets)	
@@ -4382,6 +4384,18 @@ function CharacterTweakData:_init_shield_dozers(presets)
 	self.tank_shield_titan.move_speed = presets.move_speed.normal
 
 	table.insert(self._enemy_list, "tank_shield_titan")
+end
+
+function CharacterTweakData:_init_xof_shield(presets)
+	self.xof_shield = deep_clone(self.shield)
+	self.xof_shield.custom_voicework = "combine"
+	table.insert(self._enemy_list, "xof_shield")
+end
+
+function CharacterTweakData:_init_xof_markman(presets)
+	self.xof_markman = deep_clone(self.heavy_swat_sniper)
+	self.xof_markman.custom_voicework = "hecu_dmr"
+	table.insert(self._enemy_list, "xof_markman")
 end
 
 function CharacterTweakData:_presets(tweak_data)

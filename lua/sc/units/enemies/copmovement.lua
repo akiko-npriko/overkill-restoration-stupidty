@@ -93,6 +93,13 @@ action_variants.tank_shield_titan_shielded.hurt = ShieldActionHurt
 action_variants.tank_shield_titan_shielded.turn = ShieldActionTurn
 action_variants.tank_shield_titan_shielded.walk = ShieldCopActionWalk
 
+action_variants.xof_shield = clone(security_variant)
+action_variants.xof_shield.hurt = ShieldActionHurt
+action_variants.xof_shield.turn = ShieldActionTurn
+action_variants.xof_shield.walk = ShieldCopActionWalk
+
+action_variants.xof_markman = clone(security_variant)
+
 function CopMovement:post_init()
 	local unit = self._unit
 	self._ext_brain = unit:brain()

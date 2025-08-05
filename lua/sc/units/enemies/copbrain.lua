@@ -254,20 +254,6 @@ logic_variants.taser_titan = clone(security_variant)
 logic_variants.autumn = clone(security_variant)	
 logic_variants.boom_titan = clone(security_variant)
 logic_variants.city_swat_rpg = clone(security_variant)
-logic_variants.xof_rpg = clone(security_variant)
-logic_variants.us_warthog = clone(security_variant)
-logic_variants.us_warthog.attack = TankCopLogicAttack
-
-logic_variants.norm_warthog = clone(security_variant)
-logic_variants.norm_warthog.attack = TankCopLogicAttack
-
-logic_variants.tank_shield_titan = clone(security_variant)
-logic_variants.tank_shield_titan.attack = TankCopLogicAttack
-
-logic_variants.tank_shield_titan_shielded = clone(security_variant)
-logic_variants.tank_shield_titan_shielded.attack = ShieldLogicAttack
-logic_variants.tank_shield_titan_shielded.intimidated = nil
-logic_variants.tank_shield_titan_shielded.flee = nil
 
 logic_variants.heavy_swat_sniper = clone(security_variant)
 logic_variants.heavy_swat_sniper.attack = MarshalLogicAttack
@@ -290,6 +276,29 @@ logic_variants.weekend_lmg = clone(security_variant)
 logic_variants.weekend_lmg.attack = MarshalLogicAttack		
 logic_variants.taser_titan_reaper = clone(security_variant)
 logic_variants.taser_titan_reaper.attack = MarshalLogicAttack			
+
+logic_variants.xof_rpg = clone(security_variant)
+logic_variants.us_warthog = clone(security_variant)
+logic_variants.us_warthog.attack = TankCopLogicAttack
+
+logic_variants.norm_warthog = clone(security_variant)
+logic_variants.norm_warthog.attack = TankCopLogicAttack
+
+logic_variants.tank_shield_titan = clone(security_variant)
+logic_variants.tank_shield_titan.attack = TankCopLogicAttack
+
+logic_variants.tank_shield_titan_shielded = clone(security_variant)
+logic_variants.tank_shield_titan_shielded.attack = ShieldLogicAttack
+logic_variants.tank_shield_titan_shielded.intimidated = nil
+logic_variants.tank_shield_titan_shielded.flee = nil
+
+logic_variants.xof_shield = clone(security_variant)
+logic_variants.xof_shield.attack = ShieldLogicAttack
+logic_variants.xof_shield.intimidated = nil
+logic_variants.xof_shield.flee = nil
+
+logic_variants.xof_markman = clone(security_variant)
+logic_variants.xof_markman.attack = MarshalLogicAttack
 
 --Set up boss logics
 logic_variants.mobster_boss = logic_variants.triad_boss
