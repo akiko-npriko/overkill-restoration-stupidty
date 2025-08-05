@@ -191,7 +191,7 @@ function GameSetup:load_packages()
 
 		load_difficulty_package(diff_package)
     end
-    
+    load_difficulty_package("packages/forceloadafterscpack")
     self._loaded_faction_packages = {}
 
     local faction_package
