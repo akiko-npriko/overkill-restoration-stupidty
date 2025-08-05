@@ -447,6 +447,8 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/51970
  - New Coppers
 	- https://modworkshop.net/mod/19336
+ - Locke Contractor Video in Holdout Briefing
+	- https://modworkshop.net/mod/53351
 
 	 
 # Gunsss

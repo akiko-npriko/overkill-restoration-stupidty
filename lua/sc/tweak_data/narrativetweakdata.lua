@@ -393,6 +393,11 @@ Hooks:PostHook( NarrativeTweakData, "init", "SC_Narratives", function(self)
 	
 	--Ukrainian Prisoner now use Jiu Feng video instead of Vlad
 	self.jobs.sand.crimenet_videos = {"codex/jiufeng1"}
+	
+	self.contacts.skirmish = {
+		assets_gui = Idstring("guis/dlcs/berry/guis/preload_contact_locke"),
+		hidden = true
+	}
 end)
 
 --[[
