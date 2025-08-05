@@ -20024,7 +20024,11 @@ function CharacterTweakData:character_map()
 				"ene_xof_piglet",
 				"ene_groundsniper_fbi",
 				"ene_groundsniper_swat",
-				"ene_groundsniper_gensec"
+				"ene_groundsniper_gensec",
+				"ene_xof_heavy",
+				"ene_xof_heavy_sniper",
+				"ene_xof_light",
+				"ene_xof_shield"
 			}
 		}
 
