@@ -78,6 +78,13 @@ end
 Hooks:PostHook(CopLogicSniper, "action_complete_clbk", "sh_action_complete_clbk", function (data, action)
 	local action_type = action:type()
 	local my_data = data.internal_data
+	--Added here to fix advancing = nil as pointed out by RedFlame
+	if action_type == "walk" then
+		my_data.advancing = nil
+		if action:expired() then
+			my_data.reposition = nil
+		end
+	end
 
 	if action_type ~= "hurt" and action_type ~= "dodge" and action_type ~= "act" then
 		return

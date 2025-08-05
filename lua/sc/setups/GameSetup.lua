@@ -116,7 +116,7 @@ function GameSetup:load_packages()
 		load_difficulty_package("packages/addgroundsnipergensec")
 	end
 	if (difficulty_index == 8 or amiaskimiersh) then
-		load_difficulty_package("packages/addxofrpg")
+		load_difficulty_package("packages/addxofunit")
 		load_difficulty_package("packages/addtitanshielddozer")
 	end
 	if (difficulty_index == 8 or amiaskimiersh) and (ai_type == a or ai_type == feds or ai_type == la or ai_type == ny) then
