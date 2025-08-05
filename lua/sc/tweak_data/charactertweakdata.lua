@@ -1040,6 +1040,7 @@ function CharacterTweakData:_init_heavy_swat(presets)
 	self.weekend_dmr_scripted.damage.hurt_severity = presets.hurt_severities.no_hurts
 	table.insert(self._enemy_list, "weekend_dmr")
 	self:_init_xof_markman(presets)
+	self:_init_xof_heavy_swat(presets)
 end
 
 function CharacterTweakData:_init_fbi_swat(presets)	
@@ -4389,15 +4390,32 @@ end
 function CharacterTweakData:_init_xof_shield(presets)
 	self.xof_shield = deep_clone(self.shield)
 	self.xof_shield.custom_voicework = "combine"
+	self.xof_shield.weapon.is_pistol.melee_speed = enemy_melee_speed.normal
+	self.xof_shield.weapon.is_pistol.melee_dmg = enemy_melee_damage_base
+	self.xof_shield.weapon.is_pistol.melee_retry_delay = {2, 2}
+	self.xof_shield.weapon.is_pistol.melee_range = 200
+	self.xof_shield.overheal_mult = 2
+	self.xof_shield.damage.hurt_severity = self.presets.hurt_severities.no_hurts
+	self.xof_shield.damage.explosion_damage_mul = 0.7
 	table.insert(self._enemy_list, "xof_shield")
 end
 
 function CharacterTweakData:_init_xof_markman(presets)
 	self.xof_markman = deep_clone(self.heavy_swat_sniper)
 	self.xof_markman.custom_voicework = "hecu_dmr"
+	self.xof_markman.yellow_blood = false
 	table.insert(self._enemy_list, "xof_markman")
 end
 
+function CharacterTweakData:_init_xof_heavy_swat(presets)
+	self.xof_heavy_swat = deep_clone(self.heavy_swat)
+	self.xof_heavy_swat.custom_voicework = "hecu_elite"
+	self.xof_heavy_swat.yellow_blood = false
+	self.xof_heavy_swat.weapon = deep_clone(self.presets.weapon.good)
+	self.xof_heavy_swat.melee_weapon_dmg_multiplier = 1.5
+	self.xof_heavy_swat.dodge = deep_clone(self.presets.dodge.heavy_overkill)
+	table.insert(self._enemy_list, "xof_heavy_swat")
+end
 function CharacterTweakData:_presets(tweak_data)
 	local presets = {}
 	presets.enemy_chatter = {

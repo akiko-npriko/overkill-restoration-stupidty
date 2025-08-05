@@ -300,6 +300,8 @@ logic_variants.xof_shield.flee = nil
 logic_variants.xof_markman = clone(security_variant)
 logic_variants.xof_markman.attack = MarshalLogicAttack
 
+logic_variants.xof_heavy_swat = clone(security_variant)
+
 --Set up boss logics
 logic_variants.mobster_boss = logic_variants.triad_boss
 logic_variants.chavez_boss = logic_variants.triad_boss
