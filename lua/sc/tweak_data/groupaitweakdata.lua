@@ -5704,7 +5704,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		self.unit_categories.GS_heavy_G36 = {
 			unit_types = {
 				america = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_sc/ene_zeal_swat_heavy_sc")
 				},
 				russia = {
@@ -5723,15 +5723,15 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 					Idstring("units/pd2_dlc_bex/characters/ene_zeal_swat_heavy_sc/ene_zeal_swat_heavy_sc")
 				},
 				nypd = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_sc/ene_zeal_swat_heavy_sc")
 				},	
 				lapd = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_sc/ene_zeal_swat_heavy_sc")
 				},
 				fbi = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_sc/ene_zeal_swat_heavy_sc")
 				}					
 			},
@@ -5780,7 +5780,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		self.unit_categories.GS_heavy_R870 = {
 			unit_types = {
 				america = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_r870_sc/ene_zeal_swat_heavy_r870_sc")	
 				},
 				russia = {
@@ -5799,15 +5799,15 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 					Idstring("units/pd2_dlc_bex/characters/ene_zeal_swat_heavy_r870/ene_zeal_swat_heavy_r870")
 				},
 				nypd = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_r870_sc/ene_zeal_swat_heavy_r870_sc")
 				},	
 				lapd = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_r870_sc/ene_zeal_swat_heavy_r870_sc")	
 				},
 				fbi = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_r870_sc/ene_zeal_swat_heavy_r870_sc")				
 				}			
 			},
@@ -5856,7 +5856,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		self.unit_categories.GS_heavy_G36_w = {
 			unit_types = {
 				america = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_sc/ene_zeal_swat_heavy_sc")
 				},
 				russia = {
@@ -5875,15 +5875,15 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 					Idstring("units/pd2_dlc_bex/characters/ene_zeal_swat_heavy_sc/ene_zeal_swat_heavy_sc")
 				},
 				nypd = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_sc/ene_zeal_swat_heavy_sc")
 				},	
 				lapd = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_sc/ene_zeal_swat_heavy_sc")
 				},	
 				fbi = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_sc/ene_zeal_swat_heavy_sc")
 				}				
 			},
@@ -6329,13 +6329,13 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			unit_types = {
 				america = {
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
 					Idstring("units/pd2_dlc_usm2/characters/ene_male_marshal_shield_1/ene_male_marshal_shield_1"),
 					Idstring("units/pd2_dlc_usm2/characters/ene_male_marshal_shield_1/ene_male_marshal_shield_1"),
@@ -6439,13 +6439,13 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 				},					
 				nypd = {
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
 					Idstring("units/pd2_dlc_usm2/characters/ene_male_marshal_shield_1/ene_male_marshal_shield_1"),
 					Idstring("units/pd2_dlc_usm2/characters/ene_male_marshal_shield_1/ene_male_marshal_shield_1"),
@@ -6461,13 +6461,13 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 				},	
 				lapd = {
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
 					Idstring("units/pd2_dlc_usm2/characters/ene_male_marshal_shield_1/ene_male_marshal_shield_1"),
 					Idstring("units/pd2_dlc_usm2/characters/ene_male_marshal_shield_1/ene_male_marshal_shield_1"),
@@ -6483,13 +6483,13 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 				},
 				fbi = {
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
 					Idstring("units/pd2_dlc_usm2/characters/ene_male_marshal_shield_1/ene_male_marshal_shield_1"),
 					Idstring("units/pd2_dlc_usm2/characters/ene_male_marshal_shield_1/ene_male_marshal_shield_1"),
@@ -11934,7 +11934,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	self.unit_categories.SKM_Heavy_SWAT_Rifle_W5 = {
 		unit_types = {
 			america = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_sc/ene_zeal_swat_heavy_sc")
 			},
 			russia = {
@@ -11953,15 +11953,15 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 				Idstring("units/pd2_dlc_bex/characters/ene_zeal_swat_heavy_sc/ene_zeal_swat_heavy_sc")
 			},
 			nypd = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_sc/ene_zeal_swat_heavy_sc")
 			},	
 			lapd = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_sc/ene_zeal_swat_heavy_sc")
 			},
 			fbi = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_sc/ene_zeal_swat_heavy_sc")
 			}					
 		},
@@ -12010,7 +12010,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	self.unit_categories.SKM_Heavy_SWAT_Shotgun_W5 = {
 		unit_types = {
 			america = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_r870_sc/ene_zeal_swat_heavy_r870_sc")	
 			},
 			russia = {
@@ -12029,15 +12029,15 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 				Idstring("units/pd2_dlc_bex/characters/ene_zeal_swat_heavy_r870/ene_zeal_swat_heavy_r870")				
 			},
 			nypd = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_r870_sc/ene_zeal_swat_heavy_r870_sc")
 			},	
 			lapd = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_r870_sc/ene_zeal_swat_heavy_r870_sc")	
 			},
 			fbi = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_r870_sc/ene_zeal_swat_heavy_r870_sc")				
 			}			
 		},
@@ -12547,13 +12547,13 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		unit_types = {
 			america = {
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
 				Idstring("units/pd2_dlc_usm2/characters/ene_male_marshal_shield_1/ene_male_marshal_shield_1"),
 				Idstring("units/pd2_dlc_usm2/characters/ene_male_marshal_shield_1/ene_male_marshal_shield_1"),
@@ -12657,13 +12657,13 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			},					
 			nypd = {
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
 				Idstring("units/pd2_dlc_usm2/characters/ene_male_marshal_shield_1/ene_male_marshal_shield_1"),
 				Idstring("units/pd2_dlc_usm2/characters/ene_male_marshal_shield_1/ene_male_marshal_shield_1"),
@@ -12679,13 +12679,13 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			},
 			lapd = {
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
 				Idstring("units/pd2_dlc_usm2/characters/ene_male_marshal_shield_1/ene_male_marshal_shield_1"),
 				Idstring("units/pd2_dlc_usm2/characters/ene_male_marshal_shield_1/ene_male_marshal_shield_1"),
@@ -12701,13 +12701,13 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			},
 			fbi = {
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
 				Idstring("units/pd2_dlc_usm2/characters/ene_male_marshal_shield_1/ene_male_marshal_shield_1"),
 				Idstring("units/pd2_dlc_usm2/characters/ene_male_marshal_shield_1/ene_male_marshal_shield_1"),
@@ -12731,13 +12731,13 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		unit_types = {
 			america = {
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
 				Idstring("units/pd2_dlc_usm2/characters/ene_male_marshal_shield_1/ene_male_marshal_shield_1"),
 				Idstring("units/pd2_dlc_usm2/characters/ene_male_marshal_shield_1/ene_male_marshal_shield_1"),
@@ -12841,13 +12841,13 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			},					
 			nypd = {
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
 				Idstring("units/pd2_dlc_usm2/characters/ene_male_marshal_shield_1/ene_male_marshal_shield_1"),
 				Idstring("units/pd2_dlc_usm2/characters/ene_male_marshal_shield_1/ene_male_marshal_shield_1"),
@@ -12863,13 +12863,13 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			},	
 			lapd = {
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
 				Idstring("units/pd2_dlc_usm2/characters/ene_male_marshal_shield_1/ene_male_marshal_shield_1"),
 				Idstring("units/pd2_dlc_usm2/characters/ene_male_marshal_shield_1/ene_male_marshal_shield_1"),
@@ -12885,13 +12885,13 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			},
 			fbi = {
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield_sc/ene_zeal_swat_shield_sc"),
 				Idstring("units/pd2_dlc_usm2/characters/ene_male_marshal_shield_1/ene_male_marshal_shield_1"),
 				Idstring("units/pd2_dlc_usm2/characters/ene_male_marshal_shield_1/ene_male_marshal_shield_1"),
@@ -13797,7 +13797,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	self.unit_categories.SKM_Heavy_SWAT_Shotgun_W7 = {
 		unit_types = {
 			america = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_r870_sc/ene_zeal_swat_heavy_r870_sc")
 			},
 			russia = {
@@ -13817,15 +13817,15 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 				Idstring("units/pd2_dlc_bex/characters/ene_zeal_swat_heavy_r870/ene_zeal_swat_heavy_r870")
 			},
 			nypd = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_r870_sc/ene_zeal_swat_heavy_r870_sc")
 			},
 			lapd = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_r870_sc/ene_zeal_swat_heavy_r870_sc")
 			},
 			fbi = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_r870_sc/ene_zeal_swat_heavy_r870_sc")
 			}
 		},
@@ -13835,7 +13835,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	self.unit_categories.SKM_Heavy_SWAT_Rifle_W7 = {
 		unit_types = {
 			america = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_sc/ene_zeal_swat_heavy_sc")
 			},
 			russia = {
@@ -13855,15 +13855,15 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 				Idstring("units/pd2_dlc_bex/characters/ene_zeal_swat_heavy_sc/ene_zeal_swat_heavy_sc")
 			},
 			nypd = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_sc/ene_zeal_swat_heavy_sc")
 			},	
 			lapd = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_sc/ene_zeal_swat_heavy_sc")
 			},
 			fbi = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_sc/ene_zeal_swat_heavy_sc")
 			}					
 		},
@@ -14039,7 +14039,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	self.unit_categories.SKM_Heavy_SWAT_Shotgun_W8 = {
 		unit_types = {
 			america = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_r870_sc/ene_zeal_swat_heavy_r870_sc")				
 			},
 			russia = {
@@ -14057,15 +14057,15 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 				Idstring("units/pd2_dlc_bex/characters/ene_zeal_swat_heavy_r870/ene_zeal_swat_heavy_r870")				
 			},
 			nypd = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_r870_sc/ene_zeal_swat_heavy_r870_sc")	
 			},	
 			lapd = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_r870_sc/ene_zeal_swat_heavy_r870_sc")	
 			},
 			fbi = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_r870_sc/ene_zeal_swat_heavy_r870_sc")				
 			}
 		},
@@ -14075,7 +14075,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	self.unit_categories.SKM_Heavy_SWAT_Rifle_W8 = {
 		unit_types = {
 			america = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_sc/ene_zeal_swat_heavy_sc")
 			},
 			russia = {
@@ -14094,15 +14094,15 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 				Idstring("units/pd2_dlc_bex/characters/ene_zeal_swat_heavy_sc/ene_zeal_swat_heavy_sc")
 			},
 			nypd = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_sc/ene_zeal_swat_heavy_sc")
 			},	
 			lapd = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_sc/ene_zeal_swat_heavy_sc")
 			},
 			fbi = {
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_heavy_sc/ene_zeal_swat_heavy_sc")
 			}					
 		},
