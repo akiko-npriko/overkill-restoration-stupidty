@@ -4390,6 +4390,9 @@ end
 
 function CharacterTweakData:_init_xof_shield(presets)
 	self.xof_shield = deep_clone(self.shield)
+	self.xof_shield.speech_prefix_p1 = "define me pure hate"
+	self.xof_shield.speech_prefix_p2 = nil
+	self.xof_shield.speech_prefix_count = nil
 	self.xof_shield.custom_voicework = "combine"
 	self.xof_shield.yellow_blood = false
 	self.xof_shield.weapon.is_pistol.melee_speed = enemy_melee_speed.normal
@@ -4404,6 +4407,9 @@ end
 
 function CharacterTweakData:_init_xof_markman(presets)
 	self.xof_markman = deep_clone(self.heavy_swat_sniper)
+	self.xof_markman.speech_prefix_p1 = "define me pure hate"
+	self.xof_markman.speech_prefix_p2 = nil
+	self.xof_markman.speech_prefix_count = nil
 	self.xof_markman.custom_voicework = "hecu_dmr"
 	self.xof_markman.yellow_blood = false
 	table.insert(self._enemy_list, "xof_markman")
@@ -4411,6 +4417,9 @@ end
 
 function CharacterTweakData:_init_xof_heavy_swat(presets)
 	self.xof_heavy_swat = deep_clone(self.heavy_swat)
+	self.xof_heavy_swat.speech_prefix_p1 = "define me pure hate"
+	self.xof_heavy_swat.speech_prefix_p2 = nil
+	self.xof_heavy_swat.speech_prefix_count = nil
 	self.xof_heavy_swat.custom_voicework = "hecu_elite"
 	self.xof_heavy_swat.yellow_blood = false
 	self.xof_heavy_swat.weapon = deep_clone(self.presets.weapon.good)
@@ -4421,6 +4430,9 @@ end
 
 function CharacterTweakData:_init_xof_swat(presets)
 	self.xof_swat = deep_clone(self.swat)
+	self.xof_swat.speech_prefix_p1 = "define me pure hate"
+	self.xof_swat.speech_prefix_p2 = nil
+	self.xof_swat.speech_prefix_count = nil
 	self.xof_swat.custom_voicework = "combine_elite"
 	self.xof_swat.yellow_blood = false
 	self.xof_swat.can_shoot_while_dodging = true
