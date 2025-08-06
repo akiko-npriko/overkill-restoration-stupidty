@@ -465,3 +465,8 @@ Yanked coding from... (intergrated into mod)
  - MW2019 SIG Sauer P320 (https://modworkshop.net/mod/33336)
  - Howa Type 20 (https://modworkshop.net/mod/52587)
  - Bioshock Infinite Crank Gun (https://modworkshop.net/mod/52763)
+ 
+# Incompatible Shit
+ - Spending Offshore Converter (https://modworkshop.net/mod/30447)
+	- Breaks Restore's Voiceline loading and causes voicelines to only load on paused menu
+	- Modifies function GameStateMachine:update(t, dt) which restoration voicelines rely on to load
