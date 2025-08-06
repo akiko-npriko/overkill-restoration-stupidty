@@ -97,7 +97,10 @@ local enemies_visor = {
 	ids_func("units/pd2_mod_nypd/characters/ene_nypd_heavy_m4/ene_nypd_heavy_m4"),
 	ids_func("units/pd2_mod_nypd/characters/ene_nypd_heavy_m4/ene_nypd_heavy_m4_husk"),                 
 	ids_func("units/pd2_mod_nypd/characters/ene_nypd_heavy_r870/ene_nypd_heavy_r870"),
-	ids_func("units/pd2_mod_nypd/characters/ene_nypd_heavy_r870/ene_nypd_heavy_r870_husk"),                 	
+	ids_func("units/pd2_mod_nypd/characters/ene_nypd_heavy_r870/ene_nypd_heavy_r870_husk"),
+	ids_func("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"),
+	ids_func("units/pd2_mod_akiko/characters/ene_xof_heavy_sniper/ene_xof_heavy_sniper"),
+	ids_func("units/pd2_mod_akiko/characters/ene_xof_piglet/ene_xof_piglet"),	
 }
 
 local enemies_plink = {
@@ -3983,4 +3986,21 @@ function CopDamage.MAD_3_ACHIEVEMENT(attack_data)
 	if attack_data.variant ~= "melee" and unit_base and not unit_base.tased and is_player_or_ally then
 		managers.job:set_memory("mad_3", false)
 	end
+end
+
+--ig to prevent xof tazer dismemberment???
+local old1 = CopDamage._check_special_death_conditions
+function CopDamage:_check_special_death_conditions(...)
+	if tostring(self._unit:base()._tweak_table) == "taser" then
+		return
+	end
+	return old1(self, ...)
+end
+
+local old2 = CopDamage._dismember_body_part
+function CopDamage:_dismember_body_part(...)
+	if tostring(self._unit:base()._tweak_table) == "taser" then
+		return
+	end
+	return old2(self, ...)
 end
