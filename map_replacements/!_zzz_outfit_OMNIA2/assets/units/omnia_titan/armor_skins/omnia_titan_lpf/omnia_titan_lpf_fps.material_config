@@ -1,7 +1,7 @@
-<materials version="3" group="ene_swat_heavy_1">
-	<material name="mtr_swat" version="2" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
-		<bump_normal_texture 	file="units/omnia_titan/armor_skins/shared_textures/ene_omnia_lpf_nm"/>
-		<diffuse_texture 	file="units/omnia_titan/armor_skins/shared_textures/ene_omnia_lpf_df"/>
+<materials version="3" group="ene_titan_rifle">
+	<material name="mtr_body" version="2" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<bump_normal_texture 	file="units/omnia_titan/armor_skins/shared_textures/titan_atlas_nm"/>
+		<diffuse_texture 	file="units/omnia_titan/armor_skins/shared_textures/titan_atlas_df"/>
 	</material>
     <material name="shadow_caster" render_template="shadow_caster_only:SKINNED_1WEIGHT" version="2"/>
 </materials>

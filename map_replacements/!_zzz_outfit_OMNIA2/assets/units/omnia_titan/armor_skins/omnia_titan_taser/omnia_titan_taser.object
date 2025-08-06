@@ -3,13 +3,20 @@
 	<diesel materials="units/omnia_titan/armor_skins/omnia_titan_taser/omnia_titan_taser" orientation_object="root_point" />
 
 	<graphics>
-		<graphic_group name="character" enabled="true" culling_object="g_body">
-			<object name="g_body" enabled="true"/>
-			<object name="g_head" enabled="true"/>
-			<object name="g_helmet_lod1" enabled="true"/>
-			<object name="g_helmet_lod3" enabled="true"/>
+		<graphic_group name="character" enabled="true" culling_object="co_culling">
+			<object name="g_body_tazer" enabled="true"/>
+			<object name="g_balaclava_b" enabled="true"/>
+			<object name="g_face_t" enabled="true"/>
+			<object name="g_helmet_taser_lod1" enabled="true"/>
+			<object name="g_helmet_taser_lod3" enabled="true"/>
 
+		<!--Gun Holster-->
+			<object name="g_holster_l" enabled="true"/>
 		</graphic_group>
 	</graphics>
+
+	<lights>
+		<light multiplier="identity" far_range="0" name="ls_light" enabled="false" type="spot|specular" />
+	</lights>
 
 </dynamic_object>

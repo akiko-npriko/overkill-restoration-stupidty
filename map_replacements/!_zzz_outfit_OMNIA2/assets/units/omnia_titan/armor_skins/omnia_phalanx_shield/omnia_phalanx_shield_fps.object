@@ -4,8 +4,8 @@
 	
 
 	<graphics>
-		<graphic_group name="character" enabled="true" culling_object="co_culling">
-			<object name="g_body" enabled="true"/>
+		<graphic_group name="character" enabled="true" culling_object="bounding_box_char">
+			<object name="g_body_shield" enabled="true"/>
 			
 		</graphic_group>
 	</graphics>

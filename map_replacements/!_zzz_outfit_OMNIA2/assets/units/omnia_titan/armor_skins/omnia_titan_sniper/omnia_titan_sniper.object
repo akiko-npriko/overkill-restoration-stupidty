@@ -3,12 +3,28 @@
 	<diesel materials="units/omnia_titan/armor_skins/omnia_titan_sniper/omnia_titan_sniper" orientation_object="root_point" />
 
 	<graphics>
-		<graphic_group name="character" enabled="true" culling_object="g_body">
+		<graphic_group name="character" enabled="true" culling_object="bounding_box_char">
 			<object name="g_body" enabled="true"/>
-			<object name="g_head" enabled="true"/>
+			<object name="g_face" enabled="true"/>
 			<object name="g_helmet_lod1" enabled="true"/>
-			<object name="g_glass" enabled="true"/>
-			<object name="g_eyes" enabled="true"/>
+
+		<!--Shoulderpads-->
+		<!--If changed, the first-person model should also be changed-->
+			<object name="g_body_armor" enabled="true"/>
+
+		<!--Balaclavas; Only one should be used at a time-->
+			<object name="g_balaclava" enabled="true"/> <!--White balaclava-->
+			<object name="g_balaclava_b" enabled="false"/> <!--Black balaclava-->
+
+		<!--Goggles; Only one should be used at a time and they should each be used with their corresponding glass-->
+			<object name="g_goggles_a" enabled="false"/> <!--Use alongside g_glass-->
+			<object name="g_glass" enabled="false"/>
+
+			<object name="g_glasses" enabled="true"/> <!--Use alongside g_glasses_glass-->
+			<object name="g_glasses_glass" enabled="true"/>
+
+		<!--Headset-->
+			<object name="g_headset" enabled="true"/>
 		</graphic_group>
 	</graphics>
 

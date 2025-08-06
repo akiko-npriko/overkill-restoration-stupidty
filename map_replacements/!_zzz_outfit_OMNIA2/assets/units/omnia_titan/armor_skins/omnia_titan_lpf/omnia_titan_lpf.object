@@ -3,12 +3,15 @@
 	<diesel materials="units/omnia_titan/armor_skins/omnia_titan_lpf/omnia_titan_lpf" orientation_object="root_point" />
 
 	<graphics>
-		<graphic_group name="character" enabled="true" culling_object="g_body">
+		<graphic_group name="character" enabled="true" culling_object="co_culling">
 			<object name="g_body" enabled="true"/>
-			<object name="g_head" enabled="true"/>
+			<object name="g_balaclava" enabled="true"/>
 			<object name="g_helmet_lod1" enabled="true"/>
 			<object name="g_glass" enabled="true"/>
 			<object name="g_mask" enabled="true"/>
+
+		<!--Antenna-->
+			<object name="g_body_antenna" enabled="true"/>
 		</graphic_group>
 	</graphics>
 

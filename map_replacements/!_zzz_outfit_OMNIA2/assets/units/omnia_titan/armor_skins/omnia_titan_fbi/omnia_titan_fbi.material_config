@@ -1,16 +1,34 @@
-<materials version="3" group="ene_security_2">
-    <material name="mtr_security_head" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2" >
-        <bump_normal_texture    file="units/omnia_titan/armor_skins/omnia_titan_fbi/asu_nm"/>
-        <diffuse_texture        file="units/omnia_titan/armor_skins/omnia_titan_fbi/asu_df"/>
-        <variable value="1 1 1" type="vector3" name="contour_color"/>
-        <variable value="0"     type="scalar" name="contour_opacity"/>
+<materials version="3" group="ene_titan_rifle">	
+    <material name="mtr_body" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2" >
+	<bump_normal_texture file="units/omnia_titan/armor_skins/shared_textures/titan_atlas_nm"/>
+	<diffuse_texture file="units/omnia_titan/armor_skins/shared_textures/titan_atlas_df"/>
+        <self_illumination_texture file="units/omnia_titan/armor_skins/shared_textures/titan_atlas_il"/>
+		<variable value="1 1 1" type="vector3" name="contour_color"/>
+		<variable value="0" 	type="scalar" name="contour_opacity"/>		
     </material>
 
-    <material name="mtr_security_body" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2" >
-        <bump_normal_texture    file="units/omnia_titan/armor_skins/omnia_titan_fbi/asu_nm"/>
-        <diffuse_texture        file="units/omnia_titan/armor_skins/omnia_titan_fbi/asu_df"/>
+    <material name="mtr_head" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" version="2" >
+        <bump_normal_texture file="units/omnia_titan/armor_skins/shared_textures/head_new_nm"/>
+        <diffuse_texture file="units/omnia_titan/armor_skins/shared_textures/head_new_df"/>
         <variable value="1 1 1" type="vector3" name="contour_color"/>
-        <variable value="0"     type="scalar" name="contour_opacity"/>
+        <variable value="0" type="scalar" name="contour_opacity"/>
     </material>
+
+     <material name="mtr_swat_static" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" unique="true" version="2" >
+        <bump_normal_texture file="units/omnia_titan/armor_skins/shared_textures/titan_atlas_nm" />
+	<diffuse_texture file="units/omnia_titan/armor_skins/shared_textures/titan_atlas_df"/>
+	<self_illumination_texture file="units/omnia_titan/armor_skins/shared_textures/titan_atlas_il"/>
+        <variable type="scalar" name="il_bloom" value="10"/>
+        <variable type="scalar" name="il_multiplier" value="reddot"/>				
+        <variable value="1 1 1" type="vector3" name="contour_color"/>
+        <variable value="0" type="scalar" name="contour_opacity"/>
+    </material>
+
+	<material name="mtr_glass" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE" version="2">
+        <variable value="2 1 0.6" type="vector3" name="fresnel_settings"/>
+        <opacity_texture file="units/pd2_mcmansion/masks/msk_hectors_helmet/glass_op"/>
+        <diffuse_texture file="units/omnia_titan/armor_skins/shared_textures/titan_atlas_df"/>
+        <reflection_texture type="cubemap" global_texture="current_global_texture"/>
+	</material>
     <material name="shadow_caster" render_template="shadow_caster_only:SKINNED_1WEIGHT" version="2"/>
 </materials>

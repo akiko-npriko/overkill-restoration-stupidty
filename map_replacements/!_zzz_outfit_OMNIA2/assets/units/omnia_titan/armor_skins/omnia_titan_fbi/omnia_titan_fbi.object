@@ -3,11 +3,25 @@
 	<diesel materials="units/omnia_titan/armor_skins/omnia_titan_fbi/omnia_titan_fbi" orientation_object="root_point" />
 
 	<graphics>
-		<graphic_group name="character" enabled="true" culling_object="g_body">
+		<graphic_group name="character" enabled="true" culling_object="co_culling">
 			<object name="g_body" enabled="true"/>
-			<object name="g_head" enabled="true"/>
 			<object name="g_hat_lod1" enabled="true"/>
 
+		<!--Heads; Only one should be used at a time-->
+		<!--If changed, the first-person model should also be changed-->
+			<object name="g_head_black_a_var1" enabled="true"/>
+			<object name="g_head_black_a_var2" enabled="false"/>
+			<object name="g_head_black_a_var3" enabled="false"/>
+			<object name="g_head_black_a_var4" enabled="false"/>
+			<object name="g_head_black_a_var5" enabled="false"/>
+			<object name="g_head_white_a_var1" enabled="false"/>
+			<object name="g_head_white_a_var2" enabled="false"/>
+			<object name="g_head_white_a_var3" enabled="false"/>
+			<object name="g_head_white_a_var4" enabled="false"/>
+			<object name="g_head_white_a_var5" enabled="false"/>
+
+		<!--Shades-->
+			<object name="g_shades" enabled="true"/>
 		</graphic_group>
 	</graphics>
 

@@ -15,7 +15,7 @@
 	</PlayerStyle>
 
 	<!--SWAT Shotgunner-->
-	<PlayerStyle id="omnia_titan_swat_shotgun" unit="units/omnia_titan/armor_skins/omnia_titan_swat_shotgun/omnia_titan_swat_shotgun_fps" third_unit="units/omnia_titan/armor_skins/omnia_titan_swat_shotgun/omnia_titan_swat_shotgun" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
+	<PlayerStyle id="omnia_titan_swat_shotgun" unit="units/omnia_titan/armor_skins/omnia_titan_swat_rifle/omnia_titan_swat_rifle_fps" third_unit="units/omnia_titan/armor_skins/omnia_titan_swat_shotgun/omnia_titan_swat_shotgun" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
 		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
 		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
 	</PlayerStyle>
@@ -27,7 +27,7 @@
 	</PlayerStyle>
 
 	<!--Shield-->
-	<PlayerStyle id="omnia_titan_shield" unit="units/omnia_titan/armor_skins/omnia_titan_shield/omnia_titan_shield_fps" third_unit="units/omnia_titan/armor_skins/omnia_titan_shield/omnia_titan_shield" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
+	<PlayerStyle id="omnia_titan_shield" unit="units/omnia_titan/armor_skins/omnia_titan_swat_rifle/omnia_titan_swat_rifle_fps" third_unit="units/omnia_titan/armor_skins/omnia_titan_shield/omnia_titan_shield" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
 		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
 		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
 	</PlayerStyle>
@@ -40,6 +40,12 @@
 
 	<!--Sniper-->
 	<PlayerStyle id="omnia_titan_sniper" unit="units/omnia_titan/armor_skins/omnia_titan_sniper/omnia_titan_sniper_fps" third_unit="units/omnia_titan/armor_skins/omnia_titan_sniper/omnia_titan_sniper" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic Sniper-->
+	<PlayerStyle id="omnia_titan_sniper_classic" unit="units/omnia_titan/armor_skins/omnia_titan_sniper_classic/omnia_titan_sniper_classic_fps" third_unit="units/omnia_titan/armor_skins/omnia_titan_sniper_classic/omnia_titan_sniper_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
 		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
 		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
 	</PlayerStyle>
@@ -68,6 +74,12 @@
 		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
 	</PlayerStyle>
 
+	<!--Retro Taser-->
+	<PlayerStyle id="omnia_titan_taser_retro" unit="units/omnia_titan/armor_skins/omnia_titan_taser_retro/omnia_titan_taser_retro_fps" third_unit="units/omnia_titan/armor_skins/omnia_titan_taser_retro/omnia_titan_taser_retro" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
 	<!--Cloaker-->
 	<PlayerStyle id="omnia_titan_spook" unit="units/omnia_titan/armor_skins/omnia_titan_spook/omnia_titan_spook_fps" third_unit="units/omnia_titan/armor_skins/omnia_titan_spook/omnia_titan_spook" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
 		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
@@ -76,6 +88,12 @@
 
 	<!--Bulldozer-->
 	<PlayerStyle id="omnia_titan_dozer" unit="units/omnia_titan/armor_skins/omnia_titan_dozer/omnia_titan_dozer_fps" third_unit="units/omnia_titan/armor_skins/omnia_titan_dozer/omnia_titan_dozer" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Classic Bulldozer-->
+	<PlayerStyle id="omnia_titan_dozer_classic" unit="units/omnia_titan/armor_skins/omnia_titan_dozer_classic/omnia_titan_dozer_classic_fps" third_unit="units/omnia_titan/armor_skins/omnia_titan_dozer_classic/omnia_titan_dozer_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
 		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
 		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
 	</PlayerStyle>
@@ -134,6 +152,12 @@
 		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
 	</PlayerStyle>
 
+	<!--Classic Captain Spring-->
+	<PlayerStyle id="omnia_captain_spring_classic" unit="units/omnia_titan/armor_skins/omnia_captain_spring_classic/omnia_captain_spring_classic_fps" third_unit="units/omnia_titan/armor_skins/omnia_captain_spring_classic/omnia_captain_spring_classic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
 	<!--Captain Autumn-->
 	<PlayerStyle id="omnia_captain_autumn" unit="units/omnia_titan/armor_skins/omnia_captain_autumn/omnia_captain_autumn_fps" third_unit="units/omnia_titan/armor_skins/omnia_captain_autumn/omnia_captain_autumn" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="omnia_titan" global_value="omnia_titan_g">
 		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
@@ -154,7 +178,6 @@
 	<!--SWAT Shotgunner-->
 		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_titan_swat_shotgun"/>
 		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_swat_shotgun/omnia_titan_swat_shotgun"/>
-		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_swat_shotgun/omnia_titan_swat_shotgun_fps"/>
 
 	<!--Classic SWAT Shotgunner-->
 		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_titan_swat_shotgun_classic"/>
@@ -164,7 +187,6 @@
 	<!--Shield-->
 		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_titan_shield"/>
 		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_shield/omnia_titan_shield"/>
-		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_shield/omnia_titan_shield_fps"/>
 
 	<!--Classic Shield-->
 		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_titan_shield_classic"/>
@@ -176,12 +198,15 @@
 		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_sniper/omnia_titan_sniper"/>
 		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_sniper/omnia_titan_sniper_fps"/>
 
+	<!--Classic Sniper-->
+		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_titan_sniper_classic"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_sniper_classic/omnia_titan_sniper_classic"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_sniper_classic/omnia_titan_sniper_classic_fps"/>
+
 	<!--ASU-->
 		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_titan_fbi"/>
 		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_fbi/omnia_titan_fbi"/>
 		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_fbi/omnia_titan_fbi_fps"/>
-		<texture path="units/omnia_titan/armor_skins/omnia_titan_fbi/asu_nm"/>
-		<texture path="units/omnia_titan/armor_skins/omnia_titan_fbi/asu_df"/>
 
 	<!--Classic ASU-->
 		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_titan_fbi_classic"/>
@@ -198,6 +223,11 @@
 		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_taser_classic/omnia_titan_taser_classic"/>
 		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_taser_classic/omnia_titan_taser_classic_fps"/>
 
+	<!--Retro Taser-->
+		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_titan_taser_retro"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_taser_retro/omnia_titan_taser_retro"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_taser_retro/omnia_titan_taser_retro_fps"/>
+
 	<!--Cloaker-->
 		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_titan_spook"/>
 		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_spook/omnia_titan_spook"/>
@@ -207,6 +237,12 @@
 		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_titan_dozer"/>
 		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_dozer/omnia_titan_dozer"/>
 		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_dozer/omnia_titan_dozer_fps"/>
+
+	<!--Classic Bulldozer-->
+		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_titan_dozer_classic"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_dozer_classic/omnia_titan_dozer_classic"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_titan_dozer_classic/omnia_titan_dozer_classic_fps"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_titan_dozer_classic/vip_2_body_df"/>
 
 	<!--LPF-->
 		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_titan_lpf"/>
@@ -278,6 +314,12 @@
 		<texture path="units/omnia_titan/armor_skins/omnia_captain_spring/heads_spring_df"/>
 		<texture path="units/omnia_titan/armor_skins/omnia_captain_spring/heads_spring_il"/>
 
+	<!--Classic Captain Spring-->
+		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_captain_spring_classic"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_captain_spring_classic/omnia_captain_spring_classic"/>
+		<unit_mat path="units/omnia_titan/armor_skins/omnia_captain_spring_classic/omnia_captain_spring_classic_fps"/>
+		<texture path="units/omnia_titan/armor_skins/omnia_captain_spring_classic/spring_df"/>
+
 	<!--Captain Autumn-->
 		<texture path="guis/dlcs/omnia_titan/textures/pd2/blackmarket/icons/player_styles/omnia_captain_autumn"/>
 		<unit_mat path="units/omnia_titan/armor_skins/omnia_captain_autumn/omnia_captain_autumn"/>
@@ -304,12 +346,12 @@
 		<texture path="units/omnia_titan/armor_skins/shared_textures/ene_titan_taser_df"/>
 		<texture path="units/omnia_titan/armor_skins/shared_textures/glass_df"/>
 		<texture path="units/omnia_titan/armor_skins/shared_textures/head_01_df"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/head_new_nm"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/head_new_df"/>
 		<texture path="units/omnia_titan/armor_skins/shared_textures/heads_atlas_df"/>
 		<texture path="units/omnia_titan/armor_skins/shared_textures/heads_dozer_df"/>
 		<texture path="units/omnia_titan/armor_skins/shared_textures/heads_dozer_il"/>
 		<texture path="units/omnia_titan/armor_skins/shared_textures/helmets_atlas_df"/>
-		<texture path="units/omnia_titan/armor_skins/shared_textures/helmets_omnia_atlas_nm"/>
-		<texture path="units/omnia_titan/armor_skins/shared_textures/helmets_omnia_atlas_df"/>
 		<texture path="units/omnia_titan/armor_skins/shared_textures/mask_df"/>
 		<texture path="units/omnia_titan/armor_skins/shared_textures/mask_shield_df"/>
 		<texture path="units/omnia_titan/armor_skins/shared_textures/mcm_hector_helmet_df"/>
@@ -320,10 +362,11 @@
 		<texture path="units/omnia_titan/armor_skins/shared_textures/spook_cloak_dead_df"/>
 		<texture path="units/omnia_titan/armor_skins/shared_textures/spring_glass_op"/>
 		<texture path="units/omnia_titan/armor_skins/shared_textures/titan_il"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/titan_atlas_nm"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/titan_atlas_df"/>
+		<texture path="units/omnia_titan/armor_skins/shared_textures/titan_atlas_il"/>
 		<texture path="units/omnia_titan/armor_skins/shared_textures/titan_glass_df"/>
 		<texture path="units/omnia_titan/armor_skins/shared_textures/titan_glass_op"/>
-		<texture path="units/omnia_titan/armor_skins/shared_textures/titan_swat_glass_blue_df"/>
-		<texture path="units/omnia_titan/armor_skins/shared_textures/titan_swat_glass_red_df"/>
 		<texture path="units/omnia_titan/armor_skins/shared_textures/vip_2_body_nm"/>
 		<texture path="units/omnia_titan/armor_skins/shared_textures/vip_2_body_df"/>
 		<texture path="units/omnia_titan/armor_skins/shared_textures/vip_body_nm"/>

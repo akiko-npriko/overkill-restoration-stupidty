@@ -4,9 +4,12 @@
 	
 
 	<graphics>
-		<graphic_group name="character" enabled="true" culling_object="co_culling">
+		<graphic_group name="character" enabled="true" culling_object="bounding_box_char">
 			<object name="g_body" enabled="true"/>
-			
+
+		<!--Shoulderpads-->
+		<!--Should be the same as the third-person model-->
+			<object name="g_body_armor" enabled="true"/>
 		</graphic_group>
 	</graphics>
 

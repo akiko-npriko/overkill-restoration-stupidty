@@ -1,12 +1,23 @@
 <?xml version="1.0"?>
 <dynamic_object>
 	<diesel materials="units/omnia_titan/armor_skins/omnia_titan_fbi/omnia_titan_fbi_fps" orientation_object="root_point" />
-	
 
 	<graphics>
 		<graphic_group name="character" enabled="true" culling_object="co_culling">
 			<object name="g_body" enabled="true"/>
-			
+
+		<!--Arms; Only one should be used at a time-->
+		<!--Should be the same as the third-person model-->
+			<object name="g_head_black_a_var1" enabled="true"/>
+			<object name="g_head_black_a_var2" enabled="false"/>
+			<object name="g_head_black_a_var3" enabled="false"/>
+			<object name="g_head_black_a_var4" enabled="false"/>
+			<object name="g_head_black_a_var5" enabled="false"/>
+			<object name="g_head_white_a_var1" enabled="false"/>
+			<object name="g_head_white_a_var2" enabled="false"/>
+			<object name="g_head_white_a_var3" enabled="false"/>
+			<object name="g_head_white_a_var4" enabled="false"/>
+			<object name="g_head_white_a_var5" enabled="false"/>
 		</graphic_group>
 	</graphics>
 

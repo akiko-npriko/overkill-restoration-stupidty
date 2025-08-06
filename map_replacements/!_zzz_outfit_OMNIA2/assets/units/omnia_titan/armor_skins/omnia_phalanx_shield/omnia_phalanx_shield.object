@@ -3,11 +3,15 @@
 	<diesel materials="units/omnia_titan/armor_skins/omnia_phalanx_shield/omnia_phalanx_shield" orientation_object="root_point" />
 
 	<graphics>
-		<graphic_group name="character" enabled="true" culling_object="g_body">
-			<object name="g_body" enabled="true"/>
-			<object name="g_head" enabled="true"/>
-			<object name="g_helmet_lod1" enabled="true"/>
-			<object name="g_helmet_lod3" enabled="true"/>
+		<graphic_group name="character" enabled="true" culling_object="bounding_box_char">
+			<object name="g_body_shield" enabled="true"/>
+			<object name="g_face" enabled="true"/>
+			<object name="g_helmet_lod5" enabled="true"/>
+			<object name="g_helmet_lod7" enabled="true"/>
+
+		<!--Balaclavas; Only one should be used at a time-->
+			<object name="g_balaclava" enabled="false"/> <!--White balaclava-->
+			<object name="g_balaclava_b" enabled="true"/> <!--Black balaclava-->
 		</graphic_group>
 	</graphics>
 
