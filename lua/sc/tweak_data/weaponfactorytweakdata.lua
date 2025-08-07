@@ -49262,7 +49262,7 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 		self.parts.wpn_fps_ass_temple_o_dummy.stats = { value = 0, zoom = 5 }
 		self.parts.wpn_fps_ass_temple_o_dummy.custom_stats = nil
 		self.parts.wpn_fps_ass_temple_o_dummy.ads_weapon_visible = false
-		self.parts.wpn_fps_ass_temple_o_dummy.steelsight_visible = false
+		self.parts.wpn_fps_ass_temple_o_dummy.steelsight_visible = nil
 		self.parts.wpn_fps_ass_temple_o_dummy.ads_overlay = "guis/scope_overlay/g11_reticle_overlay"
 	end
 	if self.parts.wpn_fps_upg_o_iuhPistolSniperScope then
@@ -49272,7 +49272,7 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 		self.parts.wpn_fps_upg_o_iuhPistolSniperScope.stats = { value = 0, zoom = 50 }
 		self.parts.wpn_fps_upg_o_iuhPistolSniperScope.custom_stats = nil
 		self.parts.wpn_fps_upg_o_iuhPistolSniperScope.ads_weapon_visible = false
-		self.parts.wpn_fps_upg_o_iuhPistolSniperScope.steelsight_visible = false
+		self.parts.wpn_fps_upg_o_iuhPistolSniperScope.steelsight_visible = nil
 		self.parts.wpn_fps_upg_o_iuhPistolSniperScope.ads_overlay = "guis/scope_overlay/iuhPistolSniperScopeOverlay"
 	end
 	if self.parts.wpn_fps_upg_o_iuhPSO1Scope then
@@ -49287,7 +49287,7 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 		self.parts.wpn_fps_upg_o_iuhPSO1Scope.ads_shader = "color_night_vision"
 		--self.parts.wpn_fps_upg_o_iuhPSO1Scope.ads_shader = "scope_infrared"
 		--self.parts.wpn_fps_upg_o_iuhPSO1Scope.ads_shader = "color_FLIR"
-		self.parts.wpn_fps_upg_o_iuhPSO1Scope.steelsight_visible = false
+		self.parts.wpn_fps_upg_o_iuhPSO1Scope.steelsight_visible = nil
 		--self.parts.wpn_fps_upg_o_iuhPSO1Scope.perks = {"infrared_highlight"}
 		--self.parts.wpn_fps_upg_o_iuhPSO1Scope.perks = {"second_infrared_highlight"}
 	end
@@ -49303,7 +49303,7 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 		--self.parts.wpn_fps_upg_o_iuhPSO2Scope.ads_shader = "color_night_vision"
 		self.parts.wpn_fps_upg_o_iuhPSO2Scope.ads_shader = "scope_infrared"
 		--self.parts.wpn_fps_upg_o_iuhPSO2Scope.ads_shader = "color_FLIR"
-		self.parts.wpn_fps_upg_o_iuhPSO2Scope.steelsight_visible = false
+		self.parts.wpn_fps_upg_o_iuhPSO2Scope.steelsight_visible = nil
 		self.parts.wpn_fps_upg_o_iuhPSO2Scope.perks = {"infrared_highlight"}
 		--self.parts.wpn_fps_upg_o_iuhPSO2Scope.perks = {"second_infrared_highlight"}
 	end
