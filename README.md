@@ -449,10 +449,7 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/19336
  - Locke Contractor Video in Holdout Briefing
 	- https://modworkshop.net/mod/53351
- - Hitsound Reborn (CODMW2019 Hitmaker Sound)
-	- https://modworkshop.net/mod/44223
- - Hitsound Reborn
-	- https://modworkshop.net/mod/14707
+
 	 
 # Gunsss
  - Do later there are too many i hate myself...
