@@ -580,6 +580,8 @@
 			<!--</option_group>-->
 			<option_group name="OTHER">
 				<option_group name="WeaponHandling">
+					<option type="bool" default_value="false" name="RunAndShootAnims"/>
+					<divider name="tod_divider" size="14"/>
 					<option type="bool" default_value="true" name="WpnFireDescope"/>
 					<divider name="tod_divider" size="14"/>
 					<option type="bool" default_value="false" name="ManualReloads"/>

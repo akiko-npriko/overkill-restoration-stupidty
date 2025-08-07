@@ -105,13 +105,6 @@ Hooks:PostHook(NewRaycastWeaponBase, "init", "ResExtraSkills", function(self)
 
 	self._skill_global_ap = (managers.player:has_category_upgrade("player", "ap_bullets") and managers.player:upgrade_value("player", "ap_bullets", 1)) or nil
 
-	for _, category in ipairs(self:categories()) do
-		if managers.player:has_category_upgrade(category, "automatic_kills_to_damage") then
-			self._automatic_kills_to_damage_max_stacks = managers.player:upgrade_value(category, "automatic_kills_to_damage")[1]
-			self._automatic_kills_to_damage_dmg_mult = managers.player:upgrade_value(category, "automatic_kills_to_damage")[2]
-		end
-	end
-
 	local fire_mode_data = self:weapon_tweak_data().fire_mode_data or {}
 	local volley_fire_mode = fire_mode_data.volley
 
@@ -1773,6 +1766,7 @@ function NewRaycastWeaponBase:precalculate_ammo_pickup()
 
 		--Pickup multiplier from skills.
 		local pickup_multiplier = managers.player:upgrade_value("player", "fully_loaded_pick_up_multiplier", 1)	
+		local min_pickup_multiplier = managers.player:upgrade_value("player", "minimum_pick_up_multiplier", 1)	
 		local is_solo = (Global.game_settings and Global.game_settings.single_player and 2) or 1
 		if not is_pro then
 			pickup_multiplier = pickup_multiplier * ( ((managers.player:upgrade_value("player", "passive_pick_up_multiplier", 1) - 1) * is_solo) + 1 )
@@ -1793,7 +1787,7 @@ function NewRaycastWeaponBase:precalculate_ammo_pickup()
 		pickup_multiplier = pickup_multiplier * ((self._is_controller and 1.15) or 1)
 
 		--Apply multiplier from skills and ammo.
-		self._ammo_pickup[1] = self._ammo_pickup[1] * pickup_multiplier * ((self._ammo_data and self._ammo_data.ammo_pickup_min_mul) or 1)
+		self._ammo_pickup[1] = self._ammo_pickup[1] * pickup_multiplier * min_pickup_multiplier * ((self._ammo_data and self._ammo_data.ammo_pickup_min_mul) or 1)
 		self._ammo_pickup[2] = self._ammo_pickup[2] * pickup_multiplier * ((self._ammo_data and self._ammo_data.ammo_pickup_max_mul) or 1)
 	end
 end
@@ -2005,6 +1999,7 @@ function NewRaycastWeaponBase:reload_speed_multiplier()
 	if not is_pro then
 		multiplier = multiplier * managers.player:upgrade_value("weapon", "passive_reload_speed_multiplier", 1)
 	end
+	multiplier = multiplier * managers.player:upgrade_value("player", "reload_speed_multiplier", 1)
 	multiplier = multiplier * managers.player:upgrade_value(self._name_id, "reload_speed_multiplier", 1)
 
 	if self:get_ammo_remaining_in_clip() ~= 0 then
@@ -2078,25 +2073,19 @@ end
 
 function NewRaycastWeaponBase:calculate_ammo_max_per_clip()
 	local ammo = tweak_data.weapon[self._name_id].CLIP_AMMO_MAX + (self._extra_ammo or 0)
-	if (self:weapon_tweak_data().CLIP_AMMO_MAX == 1 or self:upgrade_blocked("weapon", "clip_buff_block")) and managers.player:has_category_upgrade("weapon", "one_round_buff_1") then
-		else
-		ammo = ammo * managers.player:upgrade_value(self._name_id, "clip_ammo_increase", 1)
+	local ammo_mult = 1
+	if not self._starwars then
+		ammo_mult = ammo_mult * managers.player:upgrade_value(self._name_id, "clip_ammo_increase", 1)
 		if not self:upgrade_blocked("weapon", "clip_ammo_increase") then
-			ammo = ammo * managers.player:upgrade_value("weapon", "clip_ammo_increase", 1)
+			ammo_mult = ammo_mult + ((managers.player:upgrade_value("weapon", "clip_ammo_increase", 1) - 1))
 		end
-		if not self:upgrade_blocked(tweak_data.weapon[self._name_id].category, "clip_ammo_increase") then
-			ammo = ammo * managers.player:upgrade_value(tweak_data.weapon[self._name_id].category, "clip_ammo_increase", 1)
+		for _, category in ipairs(tweak_data.weapon[self._name_id].categories) do
+			if not self:upgrade_blocked(category, "clip_ammo_increase") then
+				ammo_mult = ammo_mult + ((managers.player:upgrade_value(category, "clip_ammo_increase", 1) - 1))
+			end
 		end
 	end
-	--[[
-	ammo = ammo * managers.player:upgrade_value(self._name_id, "clip_ammo_increase", 1)
-	if not self:upgrade_blocked("weapon", "clip_ammo_increase") then
-		ammo = ammo * managers.player:upgrade_value("weapon", "clip_ammo_increase", 1)
-	end
-	if not self:upgrade_blocked(tweak_data.weapon[self._name_id].category, "clip_ammo_increase") then
-		ammo = ammo * managers.player:upgrade_value(tweak_data.weapon[self._name_id].category, "clip_ammo_increase", 1)
-	end
-	]]
+	ammo = ammo * ammo_mult
 	ammo = math.round(ammo)
 	return ammo
 end

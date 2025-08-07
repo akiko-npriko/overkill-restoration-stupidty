@@ -77,7 +77,6 @@ function RaycastWeaponBase:setup(setup_data, damage_multiplier)
 		end
 	end
 	self._shots_without_releasing_trigger = 0
-	self._no_cheevo_kills_without_releasing_trigger = 0
 	self._shot_recoil_pattern_count = 0
 	self._shot_recoil_magnitude_count = 0
 end
@@ -454,24 +453,11 @@ function RaycastWeaponBase:_fire_raycast(user_unit, from_pos, direction, dmg_mul
 	local is_civ_f = CopDamage.is_civilian
 	local damage = self:_get_current_damage(dmg_mul)
 
-	if self:fire_mode() == "auto" and self._no_cheevo_kills_without_releasing_trigger > 0 then
-		managers.hud:start_buff("body_expertise", (tweak_data.upgrades.automatic_kills_to_damage_reset_t or 0))
-	end
-
 	for _, hit in ipairs(ray_hits) do
 		local dmg = self:get_damage_falloff(damage, hit, user_unit)
 
 		local hit_unit = hit and hit.unit
 		local is_alive = hit_unit and hit_unit:character_damage() and not hit_unit:character_damage():dead()
-		local track_body_expert = nil
-		local stacks = (self._automatic_kills_to_damage_max_stacks and math.min(self._no_cheevo_kills_without_releasing_trigger, self._automatic_kills_to_damage_max_stacks)) or 0
-		
-		if is_alive and self:fire_mode() == "auto" and self._automatic_kills_to_damage_max_stacks then
-			track_body_expert = true
-			if self._no_cheevo_kills_without_releasing_trigger > 0 then
-				dmg = dmg * (1 + (self._automatic_kills_to_damage_dmg_mult * stacks))
-			end
-		end
 		
 		--[[
 		if self:fire_mode() == "auto" and self._shoot_through_enemy_max_stacks and hit_count <= self._shoot_through_enemy_max_stacks then
@@ -511,12 +497,6 @@ function RaycastWeaponBase:_fire_raycast(user_unit, from_pos, direction, dmg_mul
 						kill_data.civilian_kills = kill_data.civilian_kills + 1
 					else
 						cop_kill_count = cop_kill_count + 1
-					end
-
-					if track_body_expert then
-						self._no_cheevo_kills_without_releasing_trigger = math.min(self._no_cheevo_kills_without_releasing_trigger + 1, self._automatic_kills_to_damage_max_stacks)
-						managers.hud:start_buff("body_expertise", (tweak_data.upgrades.automatic_kills_to_damage_reset_t or 0))
-						managers.hud:set_stacks("body_expertise", (stacks == 0 and 1) or math.min(stacks + 1, self._automatic_kills_to_damage_max_stacks))
 					end
 
 					self:_check_kill_achievements(cop_kill_count, unit_base, unit_type, is_civilian, hit_through_wall, hit_through_shield)
@@ -904,6 +884,15 @@ function RaycastWeaponBase:stop_shooting(...)
 	end
 end
 
+function RaycastWeaponBase:run_and_shoot_allowed()
+	local allowed = managers.player:has_category_upgrade("player", "run_and_shoot")
+
+	for _, category in ipairs(self:categories()) do
+		allowed = allowed or managers.player:has_category_upgrade(category, "hip_run_and_shoot")
+	end
+	
+	return allowed
+end
 
 --Multipliers for overall spread.
 function RaycastWeaponBase:conditional_accuracy_multiplier(current_state)

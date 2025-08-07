@@ -1140,7 +1140,12 @@ function PlayerStandard:_check_action_primary_attack(t, input, params)
 							local upgrade = weap_base:is_category("saw") and self._damage_health_ratio_mul_melee or self._damage_health_ratio_mul
 							dmg_mul = dmg_mul * (1 + upgrade * damage_health_ratio)
 						end
-
+						
+						if weap_base:is_category("smg") and managers.player:has_category_upgrade("smg", "automatic_kills_to_damage") then
+							local merciless_dmg = 1 + (managers.player:upgrade_value("smg", "automatic_kills_to_damage", 1)[2] * (managers.player._merciless_stacks or 0))
+							dmg_mul = dmg_mul * merciless_dmg
+						end
+						
 						dmg_mul = dmg_mul * managers.player:temporary_upgrade_value("temporary", "berserker_damage_multiplier", 1)
 						dmg_mul = dmg_mul * managers.player:get_property("trigger_happy", 1)
 					end
@@ -1382,7 +1387,7 @@ function PlayerStandard:_check_action_primary_attack(t, input, params)
 							end
 							
 							DelayedCalls:Add("clip_empty", 0.1, function ()
-								if not self:_is_reloading() and weap_base:clip_empty() and not manual_reloads then
+								if not self:_changing_weapon() and not self:_is_charging_weapon() and not self:_is_meleeing() and not self:_is_reloading() and weap_base:clip_empty() and not manual_reloads then
 									self:_start_action_reload_enter(t)
 								end
 							end)
@@ -1930,6 +1935,7 @@ end
 
 --Allows for melee sprinting.
 function PlayerStandard:_start_action_running(t)
+	self._delay_running_anim = nil
 	local weap_base = alive(self._equipped_unit) and self._equipped_unit:base()
 
 	local second_sight_sprint = restoration.Options:GetValue("OTHER/WeaponHandling/SecondSightSprint")
@@ -1981,14 +1987,15 @@ function PlayerStandard:_start_action_running(t)
 	self._start_running_t = t
 
 	local cancel_sprint = restoration.Options:GetValue("OTHER/WeaponHandling/SprintCancel")
-	
+	local rugandshootani = restoration.Options:GetValue("OTHER/WeaponHandling/RunAndShootAnims")
 	--Skip sprinting animations of player is doing melee things.
-	if not self:_changing_weapon() and not self:_is_charging_weapon() and not self:_is_meleeing() and (not self:_is_reloading() or (not self.RUN_AND_RELOAD or (self.RUN_AND_RELOAD and cancel_sprint == true))) then
-		if not self._equipped_unit:base():run_and_shoot_allowed() then
-			self._ext_camera:play_redirect(self:get_animation("start_running"))	
+	if not self:_changing_weapon() and not self:_is_charging_weapon() and not self:_is_meleeing() and (not self:_is_reloading() or (not self.RUN_AND_RELOAD or (self.RUN_AND_RELOAD and cancel_sprint == true))) and (not self._equipped_unit:base():run_and_shoot_allowed() or (self._equipped_unit:base():run_and_shoot_allowed() and not self._shooting)) then
+		if not self._equipped_unit:base():run_and_shoot_allowed() or 
+			(self._equipped_unit:base():run_and_shoot_allowed() and rugandshootani) then
+			self._ext_camera:play_redirect(self:get_animation("start_running"))
 		else
-			self._ext_camera:play_redirect(self:get_animation("idle"))	
-		end	
+			self._ext_camera:play_redirect(self:get_animation("idle"))
+		end
 	end
 	
 	if not self.RUN_AND_RELOAD or (self.RUN_AND_RELOAD and cancel_sprint == true) then
@@ -2020,10 +2027,13 @@ function PlayerStandard:_end_action_running(t)
 		self._end_running_expire_t = t + sprintout_anim_time / speed_multiplier
 		--Adds a few melee related checks to avoid cutting off animations.
 		local cancel_sprint = restoration.Options:GetValue("OTHER/WeaponHandling/SprintCancel")
-		local stop_running = not self:_changing_weapon() and not self:_is_charging_weapon() and not self:_is_meleeing() and not self._equipped_unit:base():run_and_shoot_allowed() and ((not self:_is_reloading() or not self.RUN_AND_RELOAD))
-		
-		if stop_running then
-			self._ext_camera:play_redirect(self:get_animation("stop_running"), math.min(speed_multiplier, 2) )
+		local stop_running = not self:_changing_weapon() and not self:_is_charging_weapon() and not self:_is_meleeing() --[[and not self._equipped_unit:base():run_and_shoot_allowed()]] and ((not self:_is_reloading() or not self.RUN_AND_RELOAD)) and not self._delay_running_anim		
+		local rugandshootani = restoration.Options:GetValue("OTHER/WeaponHandling/RunAndShootAnims")
+		if stop_running and not self._shooting then
+			if not self._equipped_unit:base():run_and_shoot_allowed() or 
+				(self._equipped_unit:base():run_and_shoot_allowed() and rugandshootani) then
+				self._ext_camera:play_redirect(self:get_animation("stop_running"), math.min(speed_multiplier, 2) )
+			end
 		end
 	end
 end
@@ -2225,8 +2235,10 @@ end
 function PlayerStandard:_update_melee_timers(t, input)
 	--Resume normal sprinting animations once melee attack is done.
 	--Making it not cancel the equip animation will require a fair amount more work, since it doesn't set the timers. Is a job for another day.
+	local rugandshootani = restoration.Options:GetValue("OTHER/WeaponHandling/RunAndShootAnims")
 	if self._running and not self._end_running_expire_t and not self._state_data.meleeing and self._state_data.melee_expire_t and t >= self._state_data.melee_expire_t and not self:_is_charging_weapon() and (not self:_is_reloading() or not self.RUN_AND_RELOAD) and (instant or not self._state_data.melee_repeat_expire_t) then
-		if not self._equipped_unit:base():run_and_shoot_allowed() then
+		if not self._equipped_unit:base():run_and_shoot_allowed() or 
+			(self._equipped_unit:base():run_and_shoot_allowed() and rugandshootani) then
 			self._ext_camera:play_redirect(self:get_animation("start_running"))
 			self._equipped_unit:base():tweak_data_anim_stop("equip")
 		else
@@ -2720,13 +2732,27 @@ function PlayerStandard:_do_action_melee(t, input, skip_damage)
 	end
 end
 
+function PlayerStandard:_update_run_and_shoot_anim(t)
+	local weap_unit = self._equipped_unit
+	local weap_base = weap_unit and weap_unit:base()
+	local rugandshootani = restoration.Options:GetValue("OTHER/WeaponHandling/RunAndShootAnims")
+	if self._shooting then
+		local delay = 0.3 + ((weap_base and (weap_base._next_fire_allowed - t)) or 0)
+		self._delay_running_anim = t + delay
+	elseif self._delay_running_anim and self._delay_running_anim < t then
+		self._delay_running_anim = nil
+		if rugandshootani and not self:_changing_weapon() and not self:_is_charging_weapon() and not self:_is_meleeing() and (not self:_is_reloading() or (not self.RUN_AND_RELOAD or (self.RUN_AND_RELOAD and cancel_sprint == true))) then
+			self._ext_camera:play_redirect(self:get_animation("start_running"))
+		end
+	end
+end
+
 --Updates burst fire and minigun spinup.
 Hooks:PreHook(PlayerStandard, "update", "ResWeaponUpdate", function(self, t, dt)
 	if alive(self._equipped_unit) then
 		self:_update_burst_fire(t)
 		self:_update_slide_locks()
 		self:_shooting_move_speed_timer(t, dt)
-		self:_last_shot_t(t, dt)
 		self:_last_shot_recoil_t(t, dt)
 	end
 	self:_update_js_t(t, dt)
@@ -2746,6 +2772,12 @@ Hooks:PreHook(PlayerStandard, "update", "ResWeaponUpdate", function(self, t, dt)
 		managers.hud:set_teammate_weapon_firemode_burst(weapon:selection_index())
 	end
 	--]]
+	
+	if weapon:run_and_shoot_allowed() then
+		if self._running and not self._end_running_expire_t then
+			self:_update_run_and_shoot_anim(t)
+		end
+	end
 
 	local primary = alive(self._unit) and self._unit.inventory and alive(self._unit:inventory():unit_by_selection(2)) and self._unit:inventory():unit_by_selection(2).base and self._unit:inventory():unit_by_selection(2):base()
 	local secondary = alive(self._unit) and self._unit.inventory and alive(self._unit:inventory():unit_by_selection(1)) and self._unit:inventory():unit_by_selection(1).base and self._unit:inventory():unit_by_selection(1):base()
@@ -2926,29 +2958,6 @@ function PlayerStandard:_update_drain_stamina(t, dt)
 	if self._state_data._drain_stamina then
 		self._unit:movement()._regenerate_timer = 1
 		self._unit:movement():subtract_stamina((self._unit:movement():_max_stamina() * 0.0181818) * dt)
-	end
-end
-
-function PlayerStandard:_last_shot_t(t, dt)
-	local weapon = alive(self._equipped_unit) and self._equipped_unit:base()
-	local fire_mode = weapon and weapon:fire_mode()
-	local reset_delay_t = tweak_data.upgrades.automatic_kills_to_damage_reset_t or 1
-	if weapon and weapon._no_cheevo_kills_without_releasing_trigger then
-		if self._shooting and fire_mode == "auto" then
-			self._last_shooting_t = reset_delay_t
-		else
-			if self._last_shooting_t then
-				self._last_shooting_t = self._last_shooting_t - dt
-				if self._last_shooting_t < 0 then
-					self._last_shooting_t = reset_delay_t
-					if weapon._no_cheevo_kills_without_releasing_trigger > 0 then
-						weapon._no_cheevo_kills_without_releasing_trigger = weapon._no_cheevo_kills_without_releasing_trigger - 1
-					end
-					managers.hud:start_buff("body_expertise", reset_delay_t)
-					managers.hud:set_stacks("body_expertise", weapon._no_cheevo_kills_without_releasing_trigger)
-				end
-			end
-		end
 	end
 end
 
@@ -4237,10 +4246,14 @@ function PlayerStandard:_update_reload_timers(t, dt, input)
 				end
 				managers.statistics:reloaded()
 				managers.hud:set_ammo_amount(self._equipped_unit:base():selection_index(), self._equipped_unit:base():ammo_info())
+				local rugandshootani = restoration.Options:GetValue("OTHER/WeaponHandling/RunAndShootAnims")
 				if input.btn_steelsight_state then
 					self._steelsight_wanted = true
-				elseif self.RUN_AND_RELOAD and self._running and not self._end_running_expire_t and not self._equipped_unit:base():run_and_shoot_allowed() then
-					self._ext_camera:play_redirect(self:get_animation("start_running"))
+				elseif self.RUN_AND_RELOAD and self._running and not self._end_running_expire_t --[[and not self._equipped_unit:base():run_and_shoot_allowed()]] then
+					if not self._equipped_unit:base():run_and_shoot_allowed() or 
+						(self._equipped_unit:base():run_and_shoot_allowed() and rugandshootani) then
+						self._ext_camera:play_redirect(self:get_animation("start_running"))
+					end
 				end
 			end
 		end
@@ -4261,8 +4274,12 @@ function PlayerStandard:_update_reload_timers(t, dt, input)
 			managers.hud:set_ammo_amount(self._equipped_unit:base():selection_index(), self._equipped_unit:base():ammo_info())
 			if input.btn_steelsight_state then
 				self._steelsight_wanted = true
-			elseif self.RUN_AND_RELOAD and self._running and not self._end_running_expire_t and not self._equipped_unit:base():run_and_shoot_allowed() then
-				self._ext_camera:play_redirect(self:get_animation("start_running"))
+			elseif self.RUN_AND_RELOAD and self._running and not self._end_running_expire_t --[[and not self._equipped_unit:base():run_and_shoot_allowed()]] then
+				local rugandshootani = restoration.Options:GetValue("OTHER/WeaponHandling/RunAndShootAnims")
+				if not self._equipped_unit:base():run_and_shoot_allowed() or 
+					(self._equipped_unit:base():run_and_shoot_allowed() and rugandshootani) then
+					self._ext_camera:play_redirect(self:get_animation("start_running"))
+				end
 			end
 			if self._equipped_unit:base().on_reload_stop then
 				self._equipped_unit:base():on_reload_stop()
@@ -4667,7 +4684,7 @@ function PlayerStandard:_check_action_deploy_underbarrel(t, input)
 	--Removed the ADS check so you can swap to the underbarrel while doing that, also for Kick Starter top tier skill
 	action_forbidden = self:_is_throwing_projectile() or self:_is_meleeing() or self:is_equipping() or self:_changing_weapon() or self:shooting() or self:_is_reloading() or self:is_switching_stances() or self:_interacting() and not managers.player:has_category_upgrade("player", "no_interrupt_interaction") or self:running() and not self._equipped_unit:base():run_and_shoot_allowed()
 
-	if self._running and not self._equipped_unit:base():run_and_shoot_allowed() and not self._end_running_expire_t then
+	if self._running --[[and not self._equipped_unit:base():run_and_shoot_allowed()]] and not self._end_running_expire_t then
 		self:_interupt_action_running(t)
 
 		self._toggle_underbarrel_wanted = true
@@ -4824,12 +4841,15 @@ function PlayerStandard:_update_equip_weapon_timers(t, input)
 		end
 
 		if self._running and not self._end_running_expire_t then
-			if not self._equipped_unit:base():run_and_shoot_allowed() then
-				self._ext_camera:play_redirect(self:get_animation("start_running"))	
+		local rugandshootani = restoration.Options:GetValue("OTHER/WeaponHandling/RunAndShootAnims")
+			if not self._equipped_unit:base():run_and_shoot_allowed() or 
+				(self._equipped_unit:base():run_and_shoot_allowed() and rugandshootani) then
+				self._ext_camera:play_redirect(self:get_animation("start_running"))
 			else
-				self._ext_camera:play_redirect(self:get_animation("idle"))	
-			end	
+				self._ext_camera:play_redirect(self:get_animation("idle"))
+			end
 		end
+
 
 		TestAPIHelper.on_event("load_weapon")
 		TestAPIHelper.on_event("mask_up")

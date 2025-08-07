@@ -35,6 +35,27 @@ Hooks:PostHook(PlayerManager, "init", "ResInit", function(self)
 		power = 0, --% slow when first started.
 		start_time = 0 --Time when slow was started.
 	}
+	if self:has_category_upgrade("smg", "automatic_kills_to_damage") then
+		self._merciless_t = 0
+		self._merciless_stacks = 0
+	end
+end)
+
+Hooks:PostHook(PlayerManager, "update", "ResPlayerManagerUpdate", function(self, t, dt)
+	if self:has_category_upgrade("smg", "automatic_kills_to_damage") and self._merciless_t then
+		if self._merciless_t > 0 then
+			self._merciless_t = math.max(0, self._merciless_t - dt)
+		else
+			local max = self:upgrade_value("smg", "automatic_kills_to_damage")[1]
+			local time = self:upgrade_value("smg", "automatic_kills_to_damage")[3]
+			self._merciless_t = time
+			self._merciless_stacks = math.max(0, (self._merciless_stacks or 0) - 1)
+			if managers.hud then
+				managers.hud:start_buff("body_expertise", self._merciless_t)
+				managers.hud:set_stacks("body_expertise", self._merciless_stacks)
+			end
+		end
+	end
 end)
 
 --Had to do this cause Bodybag base was being a bastard
@@ -303,6 +324,21 @@ function PlayerManager:on_killshot(killed_unit, variant, headshot, weapon_id)
 				player_unit:movement():add_stamina(player_unit:movement():_max_stamina() * 0.1)
 			end
 		end
+	end
+	
+	local equipped_unit = self:get_current_state()._equipped_unit
+	local weap_base = alive(equipped_unit) and equipped_unit.base and equipped_unit:base()
+	if weap_base and variant == "bullet" then
+		--for _, category in ipairs(weap_base:categories()) do
+			if self:has_category_upgrade("smg", "automatic_kills_to_damage") and weap_base:fire_mode() == "auto" then
+				local max = self:upgrade_value("smg", "automatic_kills_to_damage")[1]
+				local time = self:upgrade_value("smg", "automatic_kills_to_damage")[3]
+				self._merciless_t = time
+				self._merciless_stacks = math.clamp((self._merciless_stacks or 0) + 1, 0, max)
+				managers.hud:start_buff("body_expertise", self._merciless_t)
+				managers.hud:set_stacks("body_expertise", self._merciless_stacks)
+			end
+		--end
 	end
 
 	local killshot_cooldown_reduction = (variant and variant == "melee" and tweak_data.upgrades.on_killshot_cooldown_reduction_melee) or tweak_data.upgrades.on_killshot_cooldown_reduction or 0
