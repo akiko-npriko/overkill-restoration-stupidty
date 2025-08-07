@@ -102,6 +102,7 @@ function BlackMarketManager:damage_multiplier(name, categories, silencer, detect
 	multiplier = multiplier + (1 - managers.player:upgrade_value("player", "passive_damage_multiplier", 1))
 	multiplier = multiplier + (1 - managers.player:upgrade_value("weapon", "passive_damage_multiplier", 1))
 	local weapon_tweak = tweak_data.weapon[name]
+	--[[
 	if managers.player:has_category_upgrade("weapon", "one_round_buff_1") then
 		if (weapon_tweak.CLIP_AMMO_MAX and weapon_tweak.CLIP_AMMO_MAX == 1) then
 			multiplier = multiplier - 0.25
@@ -109,6 +110,7 @@ function BlackMarketManager:damage_multiplier(name, categories, silencer, detect
 			multiplier = multiplier - 0.2
 		end
 	end
+	]]
 	if silencer then
 		multiplier = multiplier + (1 - managers.player:upgrade_value("weapon", "silencer_damage_multiplier", 1))
 	end

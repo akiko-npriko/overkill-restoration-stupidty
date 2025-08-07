@@ -19020,11 +19020,6 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 				}
 				self.quadbarrel.stats_modifiers = nil
 				self.quadbarrel.panic_suppression_chance = 0.05
-				self.quadbarrel.upgrade_blocks = {
-					weapon = {
-						"clip_buff_block"
-					}
-				}
 			end
 
 			if self.ks23 then --Pawcio's KS23
@@ -21807,11 +21802,6 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 				if BeardLib.Utils:FindMod("Restored Mosconi Reload Animation") then
 					self.triple.animations.ignore_nonemptyreload = true
 				end
-				self.triple.upgrade_blocks = {
-					weapon = {
-						"clip_buff_block"
-					}
-				}
 			end
 
 			if self.appistol then
@@ -22772,11 +22762,6 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 				self.merkel.armor_piercing_chance = 1
 				self.merkel.reload_speed_multiplier = 0.8
 				self.merkel.timers = deep_clone(self.b682.timers)
-				self.merkel.upgrade_blocks = {
-					weapon = {
-						"clip_buff_block"
-					}
-				}
 			end
 
 			if self.mas49 then
