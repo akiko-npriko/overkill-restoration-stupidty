@@ -695,7 +695,7 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 				self.skill_descs.fast_learner = {
 					skill_value_b1 = tostring((1-self.first_aid_kit.revived_damage_reduction[1][1]) * 100).."%", -- DR for revived player
 					skill_value_b2 = tostring(self.first_aid_kit.revived_damage_reduction[1][2]), -- Duration of DR effect
-					skill_value_p1 = tostring((1-(self.first_aid_kit.revived_damage_reduction[1][1] - self.first_aid_kit.revived_damage_reduction[2][1])) * 100).."%", -- Aced DR for revived player
+					skill_value_p1 = tostring((self.first_aid_kit.revived_damage_reduction[1][1] - self.first_aid_kit.revived_damage_reduction[2][1]) * 100).."%", -- Additional DR for revived player
 				}
 
 			--Uppers
@@ -1015,6 +1015,7 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 					self.values.player.resist_melee_push = {0.025}
 				--Ace
 					self.values.player.flashbang_multiplier = {1, 0.5}
+					self.values.player.resist_knockback_push = {0.025}
 					
 					self.skill_descs.oppressor = {
 						skill_value_b1 = tostring(self.values.player.resist_melee_push[1] * 100).."%", -- Melee push resistance (depends of armor)
@@ -1580,8 +1581,8 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 			--Shockproof
 				--Basic
 					self.values.player.taser_malfunction = {{
-							interval = 1,
-							chance_to_trigger = 0.15
+							interval = 0.5,
+							chance_to_trigger = 0.3
 					}}
 					self.values.player.knockback_resistance = {0.7}
 				--Ace
@@ -5567,6 +5568,15 @@ function UpgradesTweakData:_saw_definitions()
 		upgrade = {
 			value = 1,
 			upgrade = "resist_melee_push",
+			category = "player"
+		}
+	}
+	self.definitions.player_resist_knockback_push = {
+		name_id = "menu_player_resist_knockback_push",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "resist_knockback_push",
 			category = "player"
 		}
 	}
