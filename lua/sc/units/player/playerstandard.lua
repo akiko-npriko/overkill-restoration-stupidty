@@ -3622,6 +3622,9 @@ function PlayerStandard:full_steelsight()
 	return self._state_data.in_steelsight and self._camera_unit:base():is_stance_done()
 end
 
+function PlayerStandard:is_full_steelsight()
+	return self._state_data.in_full_steelsight
+end
 
 --Ends minigun spinup.
 Hooks:PostHook(PlayerStandard, "_end_action_steelsight", "ResMinigunExitSteelsight", function(self, t, gadget_state)
@@ -5718,9 +5721,9 @@ Hooks:PostHook(PlayerStandard, "_update_fwd_ray", "InfraredHighlighting__update_
 			self._equipped_unit:base():check_nvg_infrared_highlight()
 			--Temp for now ig (Kinda realize this is bad for game but oh well)
 			self:_interupt_action_steelsight(0)
-		elseif self:full_steelsight() and self._equipped_unit:base().check_infrared_highlight and not self._equipped_unit:base():is_second_sight_on() then
+		elseif self._state_data.in_full_steelsight and self._equipped_unit:base().check_infrared_highlight and not self._equipped_unit:base():is_second_sight_on() then
 			self._equipped_unit:base():check_infrared_highlight()
-		elseif self:full_steelsight() and self._equipped_unit:base().check_second_infrared_highlight then
+		elseif self._state_data.in_full_steelsight and self._equipped_unit:base().check_second_infrared_highlight then
 			self._equipped_unit:base():check_second_infrared_highlight()
 		end
 	end

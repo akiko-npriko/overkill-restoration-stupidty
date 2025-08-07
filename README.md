@@ -449,6 +449,8 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/19336
  - Locke Contractor Video in Holdout Briefing
 	- https://modworkshop.net/mod/53351
+ - KSG-25 Barrel
+	- https://modworkshop.net/mod/53381
 
 	 
 # Gunsss
