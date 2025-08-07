@@ -861,18 +861,6 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 						skill_value_p2 = tostring(self.values.smg.reload_speed_multiplier[1] % 1 * 100).."%" -- Reload speed buff
 					}
 				
-			--Shock and Awe
-				self.values.smg.clip_ammo_increase = {
-					1.2, --Basic
-					1.5 --Ace
-				}
-				self.skill_descs.spotter_teamwork = {
-					skill_value_b1 = tostring(self.values.smg.clip_ammo_increase[1] % 1 * 100).."%", -- Mag size increase
-					skill_value_p1 = tostring((self.values.smg.clip_ammo_increase[2] - self.values.smg.clip_ammo_increase[1]) % 1 * 100).."%" -- Additional mag size increase
-				}
-				
-				
-
 			--MG Specialist
 				--Basic
 					self.values.smg.move_spread_multiplier = {0.4}
@@ -886,6 +874,16 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 						skill_value_p2 = tostring(self.values.smg.full_auto_free_ammo[1]) -- Every X bullet fired without releasing the trigger consumes no ammo					
 					}
 				
+			--Shock and Awe
+				self.values.smg.clip_ammo_increase = {
+					1.2, --Basic
+					1.5 --Ace
+				}
+				self.skill_descs.spotter_teamwork = {
+					skill_value_b1 = tostring(self.values.smg.clip_ammo_increase[1] % 1 * 100).."%", -- Mag size increase
+					skill_value_p1 = tostring((self.values.smg.clip_ammo_increase[2] - self.values.smg.clip_ammo_increase[1]) % 1 * 100).."%" -- Additional mag size increase
+				}
+
 			--Heavy Impact
 				--Basic
 					self.values.weapon.knock_down = {
@@ -895,6 +893,7 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 				--Ace
 					self.values.player.bipod_damage_reduction = {0.75}
 					self.values.player.crouching_damage_reduction = {0.875}
+					self.values.smg.hip_run_and_shoot = {true}
 					
 					self.skill_descs.speedy_reload = {
 						skill_value_b1 = tostring(self.values.weapon.knock_down[1] * 100).."%", -- Stagger chance
@@ -5200,6 +5199,15 @@ function UpgradesTweakData:_smg_definitions()
 			category = "smg",
 			upgrade = "clip_ammo_increase",
 			value = 2
+		}
+	}
+	self.definitions.smg_hip_run_and_shoot_1 = {
+		name_id = "menu_smg_hip_run_and_shoot",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "hip_run_and_shoot",
+			category = "smg"
 		}
 	}
 end
