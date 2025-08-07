@@ -4349,9 +4349,13 @@ function CharacterTweakData:_init_shield_dozers(presets)
 	self.tank_shield_titan_shielded = deep_clone(self.tank_titan)
 	self.tank_shield_titan_shielded.tags = {"law", "tank", "special", "tank_titan", "customvo", "shield", "shield_titan"}
 	self.tank_shield_titan_shielded.experience = {}
-	self.tank_shield_titan_shielded.damage.explosion_damage_mul = 0.05
-	self.tank_shield_titan_shielded.damage.rocket_damage_mul = 0.05
-	self.tank_shield_titan_shielded.damage.tase_damage_mul = 2.5
+	self.tank_shield_titan_shielded.damage.explosion_damage_mul = 0.25
+	self.tank_shield_titan_shielded.damage.rocket_damage_mul = 0.25
+	self.tank_shield_titan_shielded.damage.bullet_damage_mul = 0.25
+	self.tank_shield_titan_shielded.damage.fire_damage_mul = 0.25
+	self.tank_shield_titan_shielded.damage.tase_damage_mul = 0.25
+	self.tank_shield_titan_shielded.damage.dot_damage_mul = 0.25
+	self.tank_shield_titan_shielded.damage.fire_pool_damage_mul = 0.25
 	self.tank_shield_titan_shielded.melee_push_multiplier = 4 --he punches you a lot harder now
 	self.tank_shield_titan_shielded.use_animation_on_fire_damage = false
 	self.tank_shield_titan_shielded.surrender = nil
@@ -4372,8 +4376,8 @@ function CharacterTweakData:_init_shield_dozers(presets)
 	self.tank_shield_titan_shielded.calls_in = nil
 	self.tank_shield_titan_shielded.ignore_medic_revive_animation = true
 	self.tank_shield_titan_shielded.damage.hurt_severity = presets.hurt_severities.only_explosion_hurts
-	self.tank_shield_titan_shielded.damage.shield_knocked = true
-	self.tank_shield_titan_shielded.HEALTH_INIT = 1750
+	self.tank_shield_titan_shielded.damage.shield_knocked = false
+	self.tank_shield_titan_shielded.HEALTH_INIT = 600
 	self.tank_shield_titan_shielded.headshot_dmg_mul = 1.0
 	
 	table.insert(self._enemy_list, "tank_shield_titan_shielded")
@@ -4381,7 +4385,7 @@ function CharacterTweakData:_init_shield_dozers(presets)
 	self.tank_shield_titan = deep_clone(self.tank_titan)
 	self.tank_shield_titan.experience = {}
 	self.tank_shield_titan.melee_push_multiplier = 1
-	self.tank_shield_titan.HEALTH_INIT = 500
+	self.tank_shield_titan.HEALTH_INIT = 600
 	self.tank_shield_titan.headshot_dmg_mul = 2.5
 	self.tank_shield_titan.move_speed = presets.move_speed.normal
 
