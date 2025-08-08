@@ -451,6 +451,8 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/53351
  - Rainbow Six: Siege GIGN Doc as Medic
 	- https://modworkshop.net/mod/23122
+ - New Coppers Outfit Pack
+	- https://modworkshop.net/mod/47940
 
 	 
 # Gunsss

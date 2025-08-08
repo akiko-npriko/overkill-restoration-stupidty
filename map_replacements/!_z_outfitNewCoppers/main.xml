@@ -1,0 +1,473 @@
+<table name="New Coppers Outfit Pack" image="">
+	<Localization directory="localization" default="english.txt"/>
+	<GlobalValue id="new_coppers_g" color="Color(0, 1, 1)"/>
+
+	<!--SWAT Female-->
+	<PlayerStyle id="swat_light_female" unit="units/new_coppers/armor_skins/swat_light_female/swat_light_female_fps" third_unit="units/new_coppers/armor_skins/swat_light_female/swat_light_female" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--FBI Female-->
+	<PlayerStyle id="fbi_light_female" unit="units/new_coppers/armor_skins/fbi_light_female/fbi_light_female_fps" third_unit="units/new_coppers/armor_skins/fbi_light_female/fbi_light_female" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--FBI Heavy Gunner-->
+	<PlayerStyle id="fbi_heavygunner" unit="units/new_coppers/armor_skins/fbi_heavygunner/fbi_heavygunner_fps" third_unit="units/new_coppers/armor_skins/fbi_heavygunner/fbi_heavygunner" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--FBI Ground Sniper-->
+	<PlayerStyle id="fbi_groundsniper" unit="units/new_coppers/armor_skins/fbi_groundsniper/fbi_groundsniper_fps" third_unit="units/new_coppers/armor_skins/fbi_groundsniper/fbi_groundsniper" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--GenSec Light Submachinegunner-->
+	<PlayerStyle id="gensec_light_smg_classic_2" unit="units/new_coppers/armor_skins/gensec_light_smg_classic_2/gensec_light_smg_classic_2_fps" third_unit="units/new_coppers/armor_skins/gensec_light_smg_classic_2/gensec_light_smg_classic_2" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--GenSec Female-->
+	<PlayerStyle id="gensec_light_female" unit="units/new_coppers/armor_skins/gensec_light_female/gensec_light_female_fps" third_unit="units/new_coppers/armor_skins/gensec_light_female/gensec_light_female" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--GenSec Sergeant-->
+	<PlayerStyle id="gensec_sergeant" unit="units/new_coppers/armor_skins/gensec_sergeant/gensec_sergeant_fps" third_unit="units/new_coppers/armor_skins/gensec_sergeant/gensec_sergeant" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--GenSec M249 Heavy Gunner-->
+	<PlayerStyle id="gensec_heavygunner_m249" unit="units/new_coppers/armor_skins/gensec_heavygunner_m249/gensec_heavygunner_m249_fps" third_unit="units/new_coppers/armor_skins/gensec_heavygunner_m249/gensec_heavygunner_m249" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--GenSec Saiga Heavy Gunner-->
+	<PlayerStyle id="gensec_heavygunner_saiga" unit="units/new_coppers/armor_skins/gensec_heavygunner_saiga/gensec_heavygunner_saiga_fps" third_unit="units/new_coppers/armor_skins/gensec_heavygunner_saiga/gensec_heavygunner_saiga" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--GenSec Ground Sniper-->
+	<PlayerStyle id="gensec_groundsniper" unit="units/new_coppers/armor_skins/gensec_groundsniper/gensec_groundsniper_fps" third_unit="units/new_coppers/armor_skins/gensec_groundsniper/gensec_groundsniper" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Female Cop-->
+	<PlayerStyle id="dcpd_cop_female" unit="units/new_coppers/armor_skins/dcpd_cop_female/dcpd_cop_female_fps" third_unit="units/new_coppers/armor_skins/dcpd_cop_female/dcpd_cop_female" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Special Agent-->
+	<PlayerStyle id="fbi_agent_4" unit="units/new_coppers/armor_skins/fbi_agent_4/fbi_agent_4_fps" third_unit="units/new_coppers/armor_skins/fbi_agent_4/fbi_agent_4" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="false" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="false" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--HRT-->
+	<PlayerStyle id="fbi_agent_5" unit="units/new_coppers/armor_skins/fbi_agent_5/fbi_agent_5_fps" third_unit="units/new_coppers/armor_skins/fbi_agent_5/fbi_agent_5" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Taser Shotgunner-->
+	<PlayerStyle id="dcpd_taser_shotgun" unit="units/new_coppers/armor_skins/dcpd_taser_shotgun/dcpd_taser_shotgun_fps" third_unit="units/new_coppers/armor_skins/dcpd_taser_shotgun/dcpd_taser_shotgun" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Heavy Medic-->
+	<PlayerStyle id="dcpd_medic_heavy" unit="units/new_coppers/armor_skins/dcpd_medic_heavy/dcpd_medic_heavy_fps" third_unit="units/new_coppers/armor_skins/dcpd_medic_heavy/dcpd_medic_heavy" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--DHS Agent 1-->
+	<PlayerStyle id="dhs_agent_1" unit="units/new_coppers/armor_skins/dhs_agent_1/dhs_agent_1_fps" third_unit="units/new_coppers/armor_skins/dhs_agent_1/dhs_agent_1" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--DHS Agent 2-->
+	<PlayerStyle id="dhs_agent_2" unit="units/new_coppers/armor_skins/dhs_agent_2/dhs_agent_2_fps" third_unit="units/new_coppers/armor_skins/dhs_agent_2/dhs_agent_2" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="false" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="false" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--DHS Agent 3-->
+	<PlayerStyle id="dhs_agent_3" unit="units/new_coppers/armor_skins/dhs_agent_3/dhs_agent_3_fps" third_unit="units/new_coppers/armor_skins/dhs_agent_3/dhs_agent_3" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="false" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="false" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--DHS Agent 4-->
+	<PlayerStyle id="dhs_agent_4" unit="units/new_coppers/armor_skins/dhs_agent_4/dhs_agent_4_fps" third_unit="units/new_coppers/armor_skins/dhs_agent_4/dhs_agent_4" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--ZEAL Taser-->
+	<PlayerStyle id="zulus_taser_nc" unit="units/new_coppers/armor_skins/zulus_taser_nc/zulus_taser_nc_fps" third_unit="units/new_coppers/armor_skins/zulus_taser_nc/zulus_taser_nc" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--ZEAL Medic-->
+	<PlayerStyle id="zulus_medic_nc" unit="units/new_coppers/armor_skins/zulus_medic_nc/zulus_medic_nc_fps" third_unit="units/new_coppers/armor_skins/zulus_medic_nc/zulus_medic_nc" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--NG Light Rifleman 1-->
+	<PlayerStyle id="ng_city_light_rifle_1" unit="units/new_coppers/armor_skins/ng_city_light_rifle_1/ng_city_light_rifle_1_fps" third_unit="units/new_coppers/armor_skins/ng_city_light_rifle_1/ng_city_light_rifle_1" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--NG Light Rifleman 2-->
+	<PlayerStyle id="ng_city_light_rifle_2" unit="units/new_coppers/armor_skins/ng_city_light_rifle_2/ng_city_light_rifle_2_fps" third_unit="units/new_coppers/armor_skins/ng_city_light_rifle_2/ng_city_light_rifle_2" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--NG Light Shotgunner-->
+	<PlayerStyle id="ng_city_light_shotgun" unit="units/new_coppers/armor_skins/ng_city_light_shotgun/ng_city_light_shotgun_fps" third_unit="units/new_coppers/armor_skins/ng_city_light_shotgun/ng_city_light_shotgun" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--NG Light Submachinegunner-->
+	<PlayerStyle id="ng_city_light_smg" unit="units/new_coppers/armor_skins/ng_city_light_smg/ng_city_light_smg_fps" third_unit="units/new_coppers/armor_skins/ng_city_light_smg/ng_city_light_smg" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--NG Heavy Rifleman-->
+	<PlayerStyle id="ng_city_heavy_rifle" unit="units/new_coppers/armor_skins/ng_city_heavy_rifle/ng_city_heavy_rifle_fps" third_unit="units/new_coppers/armor_skins/ng_city_heavy_rifle/ng_city_heavy_rifle" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--NG Heavy Shotgunner-->
+	<PlayerStyle id="ng_city_heavy_shotgun" unit="units/new_coppers/armor_skins/ng_city_heavy_shotgun/ng_city_heavy_shotgun_fps" third_unit="units/new_coppers/armor_skins/ng_city_heavy_shotgun/ng_city_heavy_shotgun" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--NG Shield-->
+	<PlayerStyle id="ng_city_shield" unit="units/new_coppers/armor_skins/ng_city_shield/ng_city_shield_fps" third_unit="units/new_coppers/armor_skins/ng_city_shield/ng_city_shield" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--NG Ground Sniper-->
+	<PlayerStyle id="ng_city_groundsniper" unit="units/new_coppers/armor_skins/ng_city_groundsniper/ng_city_groundsniper_fps" third_unit="units/new_coppers/armor_skins/ng_city_groundsniper/ng_city_groundsniper" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="false" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="false" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--NG Taser-->
+	<PlayerStyle id="ng_city_taser" unit="units/new_coppers/armor_skins/ng_city_taser/ng_city_taser_fps" third_unit="units/new_coppers/armor_skins/ng_city_taser/ng_city_taser" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--NG Medic-->
+	<PlayerStyle id="ng_city_medic" unit="units/new_coppers/armor_skins/ng_city_medic/ng_city_medic_fps" third_unit="units/new_coppers/armor_skins/ng_city_medic/ng_city_medic" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Murkywater M249 Heavy Gunner-->
+	<PlayerStyle id="murkywater_heavygunner_m249" unit="units/new_coppers/armor_skins/murkywater_heavygunner_m249/murkywater_heavygunner_m249_fps" third_unit="units/new_coppers/armor_skins/murkywater_heavygunner_m249/murkywater_heavygunner_m249" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Murkywater Saiga Heavy Gunner-->
+	<PlayerStyle id="murkywater_heavygunner_saiga" unit="units/new_coppers/armor_skins/murkywater_heavygunner_saiga/murkywater_heavygunner_saiga_fps" third_unit="units/new_coppers/armor_skins/murkywater_heavygunner_saiga/murkywater_heavygunner_saiga" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Murkywater HRT 1-->
+	<PlayerStyle id="murkywater_hrt_nc_1" unit="units/new_coppers/armor_skins/murkywater_hrt_nc_1/murkywater_hrt_nc_1_fps" third_unit="units/new_coppers/armor_skins/murkywater_hrt_nc_1/murkywater_hrt_nc_1" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<!--Murkywater HRT 2-->
+	<PlayerStyle id="murkywater_hrt_nc_2" unit="units/new_coppers/armor_skins/murkywater_hrt_nc_2/murkywater_hrt_nc_2_fps" third_unit="units/new_coppers/armor_skins/murkywater_hrt_nc_2/murkywater_hrt_nc_2" default_gloves="false" exclude_glove_adapter="true" texture_bundle_folder="new_coppers" global_value="new_coppers_g">
+		<third_body_replacement	mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+		<body_replacement		mask="true" head="true" armor="true" body="true" hands="true" vest="true" arms="true" glove_adapter="false"/>
+	</PlayerStyle>
+
+	<AddFiles directory="assets">
+	<!--SWAT Female-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/swat_light_female"/>
+		<unit_mat path="units/new_coppers/armor_skins/swat_light_female/swat_light_female"/>
+		<unit_mat path="units/new_coppers/armor_skins/swat_light_female/swat_light_female_fps"/>
+		<texture path="units/new_coppers/armor_skins/swat_light_female/fem_swat_head_nm"/>
+		<texture path="units/new_coppers/armor_skins/swat_light_female/fem_swat_head_df"/>
+
+	<!--FBI Female-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/fbi_light_female"/>
+		<unit_mat path="units/new_coppers/armor_skins/fbi_light_female/fbi_light_female"/>
+		<unit_mat path="units/new_coppers/armor_skins/fbi_light_female/fbi_light_female_fps"/>
+		<texture path="units/new_coppers/armor_skins/fbi_light_female/female_head_nm"/>
+		<texture path="units/new_coppers/armor_skins/fbi_light_female/female_head_df"/>
+
+	<!--FBI Heavy Gunner-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/fbi_heavygunner"/>
+		<unit_mat path="units/new_coppers/armor_skins/fbi_heavygunner/fbi_heavygunner"/>
+		<unit_mat path="units/new_coppers/armor_skins/fbi_heavygunner/fbi_heavygunner_fps"/>
+		<texture path="units/new_coppers/armor_skins/fbi_heavygunner/helmets_atlas_df"/>
+		<texture path="units/new_coppers/armor_skins/fbi_heavygunner/swat_body_df"/>
+
+	<!--FBI Ground Sniper-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/fbi_groundsniper"/>
+		<unit_mat path="units/new_coppers/armor_skins/fbi_groundsniper/fbi_groundsniper"/>
+		<unit_mat path="units/new_coppers/armor_skins/fbi_groundsniper/fbi_groundsniper_fps"/>
+
+	<!--GenSec Light Submachinegunner-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/gensec_light_smg_classic_2"/>
+		<unit_mat path="units/new_coppers/armor_skins/gensec_light_smg_classic_2/gensec_light_smg_classic_2"/>
+		<unit_mat path="units/new_coppers/armor_skins/gensec_light_smg_classic_2/gensec_light_smg_classic_2_fps"/>
+
+	<!--GenSec Female-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/gensec_light_female"/>
+		<unit_mat path="units/new_coppers/armor_skins/gensec_light_female/gensec_light_female"/>
+		<unit_mat path="units/new_coppers/armor_skins/gensec_light_female/gensec_light_female_fps"/>
+		<texture path="units/new_coppers/armor_skins/gensec_light_female/fem_swat_head_nm"/>
+		<texture path="units/new_coppers/armor_skins/gensec_light_female/fem_swat_head_df"/>
+
+	<!--GenSec Sergeant-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/gensec_sergeant"/>
+		<unit_mat path="units/new_coppers/armor_skins/gensec_sergeant/gensec_sergeant"/>
+		<unit_mat path="units/new_coppers/armor_skins/gensec_sergeant/gensec_sergeant_fps"/>
+		<texture path="units/new_coppers/armor_skins/gensec_sergeant/body_df"/>
+		<texture path="units/new_coppers/armor_skins/gensec_sergeant/head_df"/>
+
+	<!--GenSec M249 Heavy Gunner-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/gensec_heavygunner_m249"/>
+		<unit_mat path="units/new_coppers/armor_skins/gensec_heavygunner_m249/gensec_heavygunner_m249"/>
+		<unit_mat path="units/new_coppers/armor_skins/gensec_heavygunner_m249/gensec_heavygunner_m249_fps"/>
+		<texture path="units/new_coppers/armor_skins/gensec_heavygunner_m249/body_df"/>
+
+	<!--GenSec Saiga Heavy Gunner-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/gensec_heavygunner_saiga"/>
+		<unit_mat path="units/new_coppers/armor_skins/gensec_heavygunner_saiga/gensec_heavygunner_saiga"/>
+		<unit_mat path="units/new_coppers/armor_skins/gensec_heavygunner_saiga/gensec_heavygunner_saiga_fps"/>
+		<texture path="units/new_coppers/armor_skins/gensec_heavygunner_saiga/body_df"/>
+
+	<!--GenSec Ground Sniper-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/gensec_groundsniper"/>
+		<unit_mat path="units/new_coppers/armor_skins/gensec_groundsniper/gensec_groundsniper"/>
+		<unit_mat path="units/new_coppers/armor_skins/gensec_groundsniper/gensec_groundsniper_fps"/>
+
+	<!--Female Cop-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/dcpd_cop_female"/>
+		<unit_mat path="units/new_coppers/armor_skins/dcpd_cop_female/dcpd_cop_female"/>
+		<unit_mat path="units/new_coppers/armor_skins/dcpd_cop_female/dcpd_cop_female_fps"/>
+		<texture path="units/new_coppers/armor_skins/dcpd_cop_female/ene_prisonguard_female_1_hair_df"/>
+		<texture path="units/new_coppers/armor_skins/dcpd_cop_female/ene_prisonguard_female_1_head_df"/>
+		<texture path="units/new_coppers/armor_skins/dcpd_cop_female/hair_falloff_1_df"/>
+		<texture path="units/new_coppers/armor_skins/dcpd_cop_female/police_nm"/>
+		<texture path="units/new_coppers/armor_skins/dcpd_cop_female/police_df"/>
+
+	<!--Special Agent-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/fbi_agent_4"/>
+		<unit_mat path="units/new_coppers/armor_skins/fbi_agent_4/fbi_agent_4"/>
+		<unit_mat path="units/new_coppers/armor_skins/fbi_agent_4/fbi_agent_4_fps"/>
+		<texture path="units/new_coppers/armor_skins/fbi_agent_4/body_nm"/>
+		<texture path="units/new_coppers/armor_skins/fbi_agent_4/body_df"/>
+		<texture path="units/new_coppers/armor_skins/fbi_agent_4/head_df"/>
+
+	<!--HRT-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/fbi_agent_5"/>
+		<unit_mat path="units/new_coppers/armor_skins/fbi_agent_5/fbi_agent_5"/>
+		<unit_mat path="units/new_coppers/armor_skins/fbi_agent_5/fbi_agent_5_fps"/>
+		<texture path="units/new_coppers/armor_skins/fbi_agent_5/fbi_df"/>
+
+	<!--Taser Shotgunner-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/dcpd_taser_shotgun"/>
+		<unit_mat path="units/new_coppers/armor_skins/dcpd_taser_shotgun/dcpd_taser_shotgun"/>
+		<unit_mat path="units/new_coppers/armor_skins/dcpd_taser_shotgun/dcpd_taser_shotgun_fps"/>
+		<texture path="units/new_coppers/armor_skins/dcpd_taser_shotgun/head_nm"/>
+		<texture path="units/new_coppers/armor_skins/dcpd_taser_shotgun/head_df"/>
+		<texture path="units/new_coppers/armor_skins/dcpd_taser_shotgun/helmets_heavy_taser_atlas_df"/>
+		<texture path="units/new_coppers/armor_skins/dcpd_taser_shotgun/taser_body_df"/>
+
+	<!--Heavy Medic-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/dcpd_medic_heavy"/>
+		<unit_mat path="units/new_coppers/armor_skins/dcpd_medic_heavy/dcpd_medic_heavy"/>
+		<unit_mat path="units/new_coppers/armor_skins/dcpd_medic_heavy/dcpd_medic_heavy_fps"/>
+		<texture path="units/new_coppers/armor_skins/dcpd_medic_heavy/body_df"/>
+		<texture path="units/new_coppers/armor_skins/dcpd_medic_heavy/gasmask_nm"/>
+		<texture path="units/new_coppers/armor_skins/dcpd_medic_heavy/gasmask_df"/>
+		<texture path="units/new_coppers/armor_skins/dcpd_medic_heavy/head_df"/>
+
+	<!--DHS Agent 1-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/dhs_agent_1"/>
+		<unit_mat path="units/new_coppers/armor_skins/dhs_agent_1/dhs_agent_1"/>
+		<unit_mat path="units/new_coppers/armor_skins/dhs_agent_1/dhs_agent_1_fps"/>
+
+	<!--DHS Agent 2-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/dhs_agent_2"/>
+		<unit_mat path="units/new_coppers/armor_skins/dhs_agent_2/dhs_agent_2"/>
+		<unit_mat path="units/new_coppers/armor_skins/dhs_agent_2/dhs_agent_2_fps"/>
+
+	<!--DHS Agent 3-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/dhs_agent_3"/>
+		<unit_mat path="units/new_coppers/armor_skins/dhs_agent_3/dhs_agent_3"/>
+		<unit_mat path="units/new_coppers/armor_skins/dhs_agent_3/dhs_agent_3_fps"/>
+		<texture path="units/new_coppers/armor_skins/dhs_agent_3/head_df"/>
+
+	<!--DHS Agent 4-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/dhs_agent_4"/>
+		<unit_mat path="units/new_coppers/armor_skins/dhs_agent_4/dhs_agent_4"/>
+		<unit_mat path="units/new_coppers/armor_skins/dhs_agent_4/dhs_agent_4_fps"/>
+		<texture path="units/new_coppers/armor_skins/dhs_agent_4/dhs_female_df"/>
+		<texture path="units/new_coppers/armor_skins/dhs_agent_4/ene_fbi_female_1_hair_df"/>
+		<texture path="units/new_coppers/armor_skins/dhs_agent_4/ene_fbi_female_1_head_df"/>
+
+	<!--ZEAL Taser-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/zulus_taser_nc"/>
+		<unit_mat path="units/new_coppers/armor_skins/zulus_taser_nc/zulus_taser_nc"/>
+		<unit_mat path="units/new_coppers/armor_skins/zulus_taser_nc/zulus_taser_nc_fps"/>
+		<texture path="units/new_coppers/armor_skins/zulus_taser_nc/body_nm"/>
+		<texture path="units/new_coppers/armor_skins/zulus_taser_nc/body_df"/>
+		<texture path="units/new_coppers/armor_skins/zulus_taser_nc/head_nm"/>
+		<texture path="units/new_coppers/armor_skins/zulus_taser_nc/head_df"/>
+
+	<!--ZEAL Medic-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/zulus_medic_nc"/>
+		<unit_mat path="units/new_coppers/armor_skins/zulus_medic_nc/zulus_medic_nc"/>
+		<unit_mat path="units/new_coppers/armor_skins/zulus_medic_nc/zulus_medic_nc_fps"/>
+		<texture path="units/new_coppers/armor_skins/zulus_medic_nc/ene_medic_head_nm"/>
+		<texture path="units/new_coppers/armor_skins/zulus_medic_nc/ene_medic_head_df"/>
+		<texture path="units/new_coppers/armor_skins/zulus_medic_nc/medic_df"/>
+		<texture path="units/new_coppers/armor_skins/zulus_medic_nc/swat_heavy_head_df"/>
+
+	<!--NG Light Rifleman 1-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/ng_city_light_rifle_1"/>
+		<unit_mat path="units/new_coppers/armor_skins/ng_city_light_rifle_1/ng_city_light_rifle_1"/>
+		<unit_mat path="units/new_coppers/armor_skins/ng_city_light_rifle_1/ng_city_light_rifle_1_fps"/>
+
+	<!--NG Light Rifleman 2-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/ng_city_light_rifle_2"/>
+		<unit_mat path="units/new_coppers/armor_skins/ng_city_light_rifle_2/ng_city_light_rifle_2"/>
+		<unit_mat path="units/new_coppers/armor_skins/ng_city_light_rifle_2/ng_city_light_rifle_2_fps"/>
+
+	<!--NG Light Shotgunner-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/ng_city_light_shotgun"/>
+		<unit_mat path="units/new_coppers/armor_skins/ng_city_light_shotgun/ng_city_light_shotgun"/>
+		<unit_mat path="units/new_coppers/armor_skins/ng_city_light_shotgun/ng_city_light_shotgun_fps"/>
+
+	<!--NG Light Submachinegunner-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/ng_city_light_smg"/>
+		<unit_mat path="units/new_coppers/armor_skins/ng_city_light_smg/ng_city_light_smg"/>
+		<unit_mat path="units/new_coppers/armor_skins/ng_city_light_smg/ng_city_light_smg_fps"/>
+
+	<!--NG Heavy Rifleman-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/ng_city_heavy_rifle"/>
+		<unit_mat path="units/new_coppers/armor_skins/ng_city_heavy_rifle/ng_city_heavy_rifle"/>
+		<unit_mat path="units/new_coppers/armor_skins/ng_city_heavy_rifle/ng_city_heavy_rifle_fps"/>
+
+	<!--NG Heavy Shotgunner-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/ng_city_heavy_shotgun"/>
+		<unit_mat path="units/new_coppers/armor_skins/ng_city_heavy_shotgun/ng_city_heavy_shotgun"/>
+		<unit_mat path="units/new_coppers/armor_skins/ng_city_heavy_shotgun/ng_city_heavy_shotgun_fps"/>
+
+	<!--NG Shield-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/ng_city_shield"/>
+		<unit_mat path="units/new_coppers/armor_skins/ng_city_shield/ng_city_shield"/>
+		<unit_mat path="units/new_coppers/armor_skins/ng_city_shield/ng_city_shield_fps"/>
+
+	<!--NG Ground Sniper-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/ng_city_groundsniper"/>
+		<unit_mat path="units/new_coppers/armor_skins/ng_city_groundsniper/ng_city_groundsniper"/>
+		<unit_mat path="units/new_coppers/armor_skins/ng_city_groundsniper/ng_city_groundsniper_fps"/>
+
+	<!--NG Taser-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/ng_city_taser"/>
+		<unit_mat path="units/new_coppers/armor_skins/ng_city_taser/ng_city_taser"/>
+		<unit_mat path="units/new_coppers/armor_skins/ng_city_taser/ng_city_taser_fps"/>
+		<texture path="units/new_coppers/armor_skins/ng_city_taser/ntl_taser_atlas_df"/>
+		<texture path="units/new_coppers/armor_skins/ng_city_taser/ntl_taser_body_df"/>
+
+	<!--NG Medic-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/ng_city_medic"/>
+		<unit_mat path="units/new_coppers/armor_skins/ng_city_medic/ng_city_medic"/>
+		<unit_mat path="units/new_coppers/armor_skins/ng_city_medic/ng_city_medic_fps"/>
+		<texture path="units/new_coppers/armor_skins/ng_city_medic/national_guard_medic_df"/>
+		<texture path="units/new_coppers/armor_skins/ng_city_medic/ntl_medic_helmet_df"/>
+
+	<!--Murkywater M249 Heavy Gunner-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/murkywater_heavygunner_m249"/>
+		<unit_mat path="units/new_coppers/armor_skins/murkywater_heavygunner_m249/murkywater_heavygunner_m249"/>
+		<unit_mat path="units/new_coppers/armor_skins/murkywater_heavygunner_m249/murkywater_heavygunner_m249_fps"/>
+		<texture path="units/new_coppers/armor_skins/murkywater_heavygunner_m249/body_df"/>
+
+	<!--Murkywater Saiga Heavy Gunner-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/murkywater_heavygunner_saiga"/>
+		<unit_mat path="units/new_coppers/armor_skins/murkywater_heavygunner_saiga/murkywater_heavygunner_saiga"/>
+		<unit_mat path="units/new_coppers/armor_skins/murkywater_heavygunner_saiga/murkywater_heavygunner_saiga_fps"/>
+		<texture path="units/new_coppers/armor_skins/murkywater_heavygunner_saiga/body_df"/>
+
+	<!--Murkywater HRT 1-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/murkywater_hrt_nc_1"/>
+		<unit_mat path="units/new_coppers/armor_skins/murkywater_hrt_nc_1/murkywater_hrt_nc_1"/>
+		<unit_mat path="units/new_coppers/armor_skins/murkywater_hrt_nc_1/murkywater_hrt_nc_1_fps"/>
+		<texture path="units/new_coppers/armor_skins/murkywater_hrt_nc_1/ene_guard_security_heavy_1_head_df"/>
+
+	<!--Murkywater HRT 2-->
+		<texture path="guis/dlcs/new_coppers/textures/pd2/blackmarket/icons/player_styles/murkywater_hrt_nc_2"/>
+		<unit_mat path="units/new_coppers/armor_skins/murkywater_hrt_nc_2/murkywater_hrt_nc_2"/>
+		<unit_mat path="units/new_coppers/armor_skins/murkywater_hrt_nc_2/murkywater_hrt_nc_2_fps"/>
+		<texture path="units/new_coppers/armor_skins/murkywater_hrt_nc_2/ene_guard_security_heavy_2_head_df"/>
+
+	<!--Shared Textures-->
+		<texture path="units/new_coppers/armor_skins/shared_textures/dhs_df"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/head_01_df"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/heads_city_df"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/heads_fbi_df"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/heavygunner_body_nm"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/heavygunner_head_nm"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/heavygunner_head_df"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/helmets_city_df"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/helmets_fbi_df"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/helmets_ng_df"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/helmets_swat_df"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/hrt_df"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/jonatan_df"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/national_guard_1_nm"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/national_guard_1_df"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/national_guard_2_df"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/national_guard_3_nm"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/national_guard_3_df"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/national_guard_face_nm"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/national_guard_face_df"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/national_guard_face_2_df"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/ntl_hat_nm"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/ntl_hat_df"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/ntl_helmet_nm"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/ntl_helmet_df"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/s10_nm"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/s10_df"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/sam_head_df"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/swat_body_df"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/swat_city_df"/>
+		<texture path="units/new_coppers/armor_skins/shared_textures/swat_fbi_body_df"/>
+	</AddFiles>
+</table>

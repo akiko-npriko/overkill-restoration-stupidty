@@ -1,0 +1,10 @@
+<materials version="3" group="ene_akan_cs_swat_r870">
+	<material name="mtr_body" version="2" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<bump_normal_texture 	file="units/new_coppers/armor_skins/fbi_agent_4/body_nm"/>
+		<diffuse_texture 	file="units/new_coppers/armor_skins/fbi_agent_4/body_df"/>
+	</material>
+    <material name="shadow_caster" render_template="shadow_caster_only:SKINNED_1WEIGHT" version="2"/>
+</materials>
+
+ 
+ 

@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/new_coppers/armor_skins/dhs_agent_4/dhs_agent_4" orientation_object="root_point" />
+
+	<graphics>
+		<graphic_group name="character" enabled="true" culling_object="g_body">
+			<object name="g_body" enabled="true"/>
+			<object name="g_body_details" enabled="true"/>
+			<object name="g_head" enabled="true"/>
+			<object name="g_hair_cloth1" enabled="true"/>
+		</graphic_group>
+	</graphics>
+
+	<bodies>
+		<body  name="cloth_headphys1" enabled="true" template="static" collision_class="hair" collision_group="2" collides_with="3" collides_with_mover="false" friction="0.01"  keyframed="true" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="0" ang_damping="1" restitution="0">
+			<object name="Head" />
+			<object name="c_headphys1" collision_type="capsule" mass="1" padding="-4"/>
+		</body>
+		<body  name="cloth_headphys2" enabled="true" template="static" collision_class="hair" collision_group="2" collides_with="3" collides_with_mover="false" friction="0.01"  keyframed="true" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="0" ang_damping="1" restitution="0">
+			<object name="Spine2" />
+			<object name="c_headphys2" collision_type="capsule" mass="1" padding="-4"/>
+		</body>
+		<body  name="cloth_joint1" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false"  friction="0.01"  keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="0.5" ang_damping="0.7" restitution="0">
+			<object name="c_joint1" />
+			<object name="c_cube1" collision_type="sphere" mass="1" padding="-4"/>
+		</body>
+		<body  name="cloth_joint2" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false"  friction="0.01"  keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="0.5" ang_damping="0.7" restitution="0">
+			<object name="c_joint2" />
+			<object name="c_cube2" collision_type="sphere" mass="1" padding="-4"/>
+		</body>
+		<body  name="cloth_joint3" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false"  friction="0.01"  keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="0.5" ang_damping="0.7" restitution="0">
+			<object name="c_joint3" />
+			<object name="c_cube3" collision_type="sphere" mass="1" padding="-4"/>
+		</body>
+		<body  name="cloth_joint4" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false"  friction="0.01"  keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="0.5" ang_damping="0.7" restitution="0">
+			<object name="c_joint4" />
+			<object name="c_cube4" collision_type="sphere" mass="1" padding="-4"/>
+		</body>
+		<body  name="cloth_joint5" enabled="true" template="dynamic" collision_class="hair" collision_group="3" collides_with="2" collides_with_mover="false"  friction="0.01"  keyframed="false" collision_script_quiet_time="0.5" collision_script_tag="small" ray="ignore" lin_damping="0.5" ang_damping="0.7" restitution="0">
+			<object name="c_joint5" />
+			<object name="c_cube5" collision_type="sphere" mass="1" padding="-4"/>
+		</body>
+	</bodies>
+
+	<constraints>
+		<constraint type="ragdoll" name="joint1" enabled="true">
+			<param body_a="cloth_headphys1" body_b="cloth_joint1"/>
+			<param pivot="position:c_joint1"/>
+ 			<param twist_axis="xaxis:c_joint1" twist_min="-10" twist_max="10" twist_freedom="10"/>
+			<param cone_y="5" cone_z="5" cone_freedom="5"/>
+			<param damping="200" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+		</constraint>
+		<constraint type="ragdoll" name="joint2" enabled="true">
+			<param body_a="cloth_joint1" body_b="cloth_joint2"/>
+			<param pivot="position:c_joint2"/>
+ 			<param twist_axis="xaxis:c_joint2" twist_min="-10" twist_max="10" twist_freedom="10"/>
+			<param cone_y="5" cone_z="5" cone_freedom="5"/>
+			<param damping="200" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+		</constraint>
+		<constraint type="ragdoll" name="joint3" enabled="true">
+			<param body_a="cloth_joint2" body_b="cloth_joint3"/>
+			<param pivot="position:c_joint3"/>
+ 			<param twist_axis="xaxis:c_joint3" twist_min="-10" twist_max="10" twist_freedom="10"/>
+			<param cone_y="5" cone_z="5" cone_freedom="5"/>
+			<param damping="200" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+		</constraint>
+		<constraint type="ragdoll" name="joint4" enabled="true">
+			<param body_a="cloth_joint3" body_b="cloth_joint4"/>
+			<param pivot="position:c_joint4"/>
+ 			<param twist_axis="xaxis:c_joint4" twist_min="-10" twist_max="10" twist_freedom="10"/>
+			<param cone_y="5" cone_z="5" cone_freedom="5"/>
+			<param damping="200" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+		</constraint>
+		<constraint type="ragdoll" name="joint5" enabled="true">
+			<param body_a="cloth_joint4" body_b="cloth_joint5"/>
+			<param pivot="position:c_joint5"/>
+ 			<param twist_axis="xaxis:c_joint5" twist_min="-10" twist_max="10" twist_freedom="10"/>
+			<param cone_y="5" cone_z="5" cone_freedom="5"/>
+			<param damping="200" spring_constant="200" min_restitution="0.1" max_restitution="0.1"/>
+		</constraint>
+	</constraints>
+
+</dynamic_object>

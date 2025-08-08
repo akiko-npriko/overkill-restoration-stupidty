@@ -1,0 +1,16 @@
+<materials version="3" group="ene_guard_security_heavy_2">
+    <material name="mtr_ene_guard_security_heavy_2_head" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:RL_COPS:SKINNED_3WEIGHTS" version="2">
+        <bump_normal_texture file="units/pd2_dlc_arena/characters/ene_guard_security_heavy_2/ene_guard_security_heavy_2_head_nm"/>
+        <diffuse_texture file="units/new_coppers/armor_skins/murkywater_hrt_nc_2/ene_guard_security_heavy_2_head_df"/>
+        <variable value="1 1 1" type="vector3" name="contour_color"/>
+        <variable value="0"     type="scalar" name="contour_opacity"/>
+    </material>
+
+    <material name="mtr_ene_guard_security_heavy_2_body" unique="true" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:RL_COPS:SKINNED_3WEIGHTS" version="2">
+        <bump_normal_texture file="units/pd2_dlc_arena/characters/ene_guard_security_heavy_1/ene_guard_security_heavy_1_body_nm"/>
+        <diffuse_texture file="units/new_coppers/armor_skins/shared_textures/hrt_df"/>
+        <variable value="1 1 1" type="vector3" name="contour_color"/>
+        <variable value="0"     type="scalar" name="contour_opacity"/>
+    </material>
+   <material name="shadow_caster" render_template="shadow_caster_only:SKINNED_1WEIGHT" version="2"/>
+</materials>

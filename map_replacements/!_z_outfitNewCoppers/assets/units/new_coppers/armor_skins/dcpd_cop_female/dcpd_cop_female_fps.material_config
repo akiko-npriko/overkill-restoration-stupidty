@@ -1,0 +1,10 @@
+<materials version="3" group="ene_prisonguard_female_1">
+	<material name="mtr_body" version="2" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS">
+		<bump_normal_texture 	file="units/new_coppers/armor_skins/dcpd_cop_female/police_nm"/>
+		<diffuse_texture 	file="units/new_coppers/armor_skins/dcpd_cop_female/police_df"/>
+	</material>
+    <material name="shadow_caster" render_template="shadow_caster_only:SKINNED_1WEIGHT" version="2"/>
+</materials>
+
+ 
+ 
