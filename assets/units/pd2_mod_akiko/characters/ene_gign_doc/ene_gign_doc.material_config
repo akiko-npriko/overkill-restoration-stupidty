@@ -10,11 +10,11 @@
 	
 
 	<material name="mtr_swat" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:RL_COPS:SKINNED_3WEIGHTS" version="2">
-		<bump_normal_texture 	file="units/payday2/characters/shared_textures/ene_medic_nm"/>
+		<bump_normal_texture 	file="units/pd2_mod_akiko/characters/shared_textures/ene_gign_doc_nm"/>
 		<diffuse_texture 		file="units/pd2_mod_akiko/characters/shared_textures/ene_gign_doc_df"/>
 	</material>
 	<material name="mtr_swat_lod1" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:RL_COPS:SKINNED_3WEIGHTS" version="2">
-		<bump_normal_texture 	file="units/payday2/characters/shared_textures/ene_medic_nm" mip="1"/>
+		<bump_normal_texture 	file="units/pd2_mod_akiko/characters/shared_textures/ene_gign_doc_nm" mip="1"/>
 		<diffuse_texture 		file="units/pd2_mod_akiko/characters/shared_textures/ene_gign_doc_df" mip="1"/>
 	</material>
 	
@@ -24,7 +24,7 @@
 	</material>
     <material name="mtr_ene_acc_swat_helmet_lod1" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE" version="2">
         <variable value="0 0 0" type="vector3" name="fresnel_settings"/>
-        <opacity_texture file="units/pd2_dlc_mad/masks/mad_helmet_mask/glass_clear_small_dark_fade_op"/>
+        <opacity_texture file="units/pd2_mod_akiko/characters/shared_textures/gign_glass_clear_small_dark_fade_op"/>
         <diffuse_texture file="units/pd2_mod_akiko/characters/shared_textures/ene_gign_doc_glass_df"/>
         <reflection_texture type="cubemap" global_texture="current_global_texture"/>
 	</material>
