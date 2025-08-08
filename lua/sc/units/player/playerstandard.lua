@@ -1388,7 +1388,7 @@ function PlayerStandard:_check_action_primary_attack(t, input, params)
 							
 							DelayedCalls:Add("clip_empty", 0.1, function ()
 								if not self:_changing_weapon() and not self:_is_charging_weapon() and not self:_is_meleeing() and not self:_is_reloading() and weap_base:clip_empty() and not manual_reloads then
-									self:_start_action_reload_enter(t)
+									self:_start_action_reload_enter(t + 0.1)
 								end
 							end)
 						end
@@ -3372,8 +3372,11 @@ end
 --Recoil used at the end of burst fire.
 function PlayerStandard:force_recoil_kick(weap_base, shots_fired)
 	local recoil_multiplier = (weap_base:recoil() + weap_base:recoil_addend()) * weap_base:recoil_multiplier() * (shots_fired or 1)
+	local recoil_index = tweak_data.weapon.stats.recoil
+	local recoil_multiplier_h = (recoil_index and ((recoil_index[weap_base._current_stats_indices.spread] + weap_base:recoil_addend()) * weap_base:recoil_multiplier() * (shots_fired or 1))) or recoil_multiplier
+	recoil_multiplier_h = math.lerp(recoil_multiplier, recoil_multiplier_h, 0.25)
 	local up, down, left, right = unpack(weap_base:weapon_tweak_data().kick[self._state_data.in_steelsight and "steelsight" or self._state_data.ducking and "crouching" or "standing"])
-	self._camera_unit:base():recoil_kick(up * recoil_multiplier, down * recoil_multiplier, left * recoil_multiplier, right * recoil_multiplier)
+	self._camera_unit:base():recoil_kick(up * recoil_multiplier, down * recoil_multiplier, left * recoil_multiplier_h, right * recoil_multiplier_h)
 end
 
 function PlayerStandard:_check_action_deploy_bipod(t, input, autodeploy)
