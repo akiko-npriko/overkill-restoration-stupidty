@@ -34269,11 +34269,17 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 	-- OVERKILL WEAPOONS
 	
 	if self.roach then
-		self.roach.external_support = true
+		--self.roach.external_support = true
+		self.roach.ammo_ratio = 9999999
 		self.roach.categories = {
 			"snp",
 			"semi_snp",
 			"battery"
+		}
+		self.roach.upgrade_blocks = {
+			weapon = {
+				"clip_ammo_increase"
+			}
 		}
 		self.roach.recategorize = { "heavy_snp" }
 		self.roach.damage_type = "sniper"
@@ -34295,6 +34301,7 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 		self.roach.fire_mode_data.volley.can_shoot_through_enemy = true
 		self.roach.fire_mode_data.volley.can_shoot_through_enemy_unlim = true
 		self.roach.fire_mode_data.volley.can_shoot_through_titan_shield = true
+		self.roach.fire_mode_data.volley.can_shoot_through_wall_unlim = true
 		self.roach.fire_mode_data.volley.rebecca = {1250}
 		self.roach.fire_mode_data.volley.armor_piercing_chance = 1
 		--self.roach.fire_mode_data.volley.spin_up_t = 1.25
@@ -34318,7 +34325,8 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 		self.roach.AMMO_MAX = self.roach.CLIP_AMMO_MAX
 		self.roach.no_auto_anims = true
 		self.roach.no_reload_anims = true
-		self.roach.fire_mode_data.fire_rate = 0.6
+		--self.roach.fire_mode_data.fire_rate = 0.6
+		self.roach.fire_mode_data.fire_rate = 1
 		self.roach.can_shoot_through_enemy = true
 		self.roach.can_shoot_through_shield = true
 		self.roach.can_shoot_through_wall = true
@@ -34330,7 +34338,7 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 			min_mult = 1
 		}
 		self.roach.stats = {
-			damage = 300,
+			damage = 360,
 			spread = 100,
 			recoil = 25,
 			spread_moving = 6,
@@ -35434,7 +35442,8 @@ function WeaponTweakData:calculate_ammo_pickup(weapon, id)
 	local exclude_ammo = {
 		"m134",
 		"shuno",
-		"as24"
+		"as24",
+		"roach"
 	}
 	if id and weapon.AMMO_MAX and weapon.CLIP_AMMO_MAX and
 	not table.contains(exclude_ammo, id) and not table.contains(weapon.categories, "minigun") and not table.contains(weapon.categories, "saw") then

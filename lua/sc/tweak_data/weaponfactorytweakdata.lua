@@ -49249,6 +49249,27 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 		self.parts.wpn_fps_smg_m38a_m_20rnd.custom_stats = nil
 	end
 -- [[Akiko Edits]]
+	if self.parts.wpn_fps_special_roach_frame then
+		self.parts.wpn_fps_special_roach_frame.custom_stats = {
+			starwars = {
+				no_tracers = true,
+				regen_ammo_time = 0.01,
+				regen_rate = 0.05,
+				can_reload = false,
+				mag_regen = true,
+				empty_no_regen = false
+			}
+		}
+		self.parts.wpn_fps_special_roach_irons.ads_weapon_visible = false
+		self.parts.wpn_fps_special_roach_irons.ads_shader = "scope_infrared"
+		self.parts.wpn_fps_special_roach_irons.perks = {"infrared_highlight"}
+		self.parts.wpn_fps_special_roach_irons.ads_overlay = "guis/scope_overlay/rorsch_scopeoverlay"
+		--clear out stats
+		self.parts.wpn_fps_special_roach_irons.steelsight_visible = nil
+		self.parts.wpn_fps_special_roach_irons.scope_effect = nil
+		self.parts.wpn_fps_special_roach_irons.scope_overlay = nil
+		self.parts.wpn_fps_special_roach_irons.scope_overlay_hide_weapon = nil
+	end
 	if self.parts.wpn_fps_snp_sako_85_scope then
 		self.parts.wpn_fps_snp_sako_85_scope.ads_weapon_visible = false
 		self.parts.wpn_fps_snp_sako_85_scope.ads_overlay = "guis/scope_overlay/iuhPSO1ScopeOverlay"
