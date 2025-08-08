@@ -601,8 +601,6 @@ function SkillTreeTweakData:init(tweak_data)
 					cost = self.costs.hightierpro
 				}
 			}
-			
-
 			--}
 			
 			--[[   ARMORER SUBTREE   ]]--
@@ -1143,6 +1141,8 @@ function SkillTreeTweakData:init(tweak_data)
 				},
 				[2] = {
 					upgrades = {
+						"assault_rifle_ap_bullets_min_1",
+						"snp_ap_bullets_min_1",
 						"assault_rifle_reload_speed_multiplier",
 						"snp_reload_speed_multiplier"
 					},
