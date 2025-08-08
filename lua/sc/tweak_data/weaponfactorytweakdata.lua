@@ -49253,11 +49253,12 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 		self.parts.wpn_fps_special_roach_frame.custom_stats = {
 			starwars = {
 				no_tracers = true,
-				regen_ammo_time = 0.01,
+				regen_ammo_time = 0.25,
 				regen_rate = 0.05,
 				can_reload = false,
 				mag_regen = true,
-				empty_no_regen = false
+				empty_no_regen = false,
+				regen_rate_overheat = 0.2
 			}
 		}
 		self.parts.wpn_fps_special_roach_irons.ads_weapon_visible = false
