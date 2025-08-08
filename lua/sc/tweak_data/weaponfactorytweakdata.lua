@@ -9481,8 +9481,6 @@ end)
 				table.insert(self.wpn_fps_lmg_mg42.uses_parts, "wpn_fps_upg_o_sig")
 				table.insert(self.wpn_fps_lmg_mg42.uses_parts, "wpn_fps_lmg_mg42_m_75")
 				table.insert(self.wpn_fps_lmg_mg42.uses_parts, "wpn_fps_lmg_mg42_m_100")
-				--PLASMAA
-				table.insert(self.wpn_fps_lmg_mg42.uses_parts, "wpn_fps_lmg_mg42_b_vg38")
 				self.wpn_fps_lmg_mg42.adds = {}
 				self.wpn_fps_lmg_mg42.override = self.wpn_fps_lmg_mg42.override or {}
 
