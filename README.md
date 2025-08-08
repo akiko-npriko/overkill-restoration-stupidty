@@ -449,8 +449,8 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/19336
  - Locke Contractor Video in Holdout Briefing
 	- https://modworkshop.net/mod/53351
- - KSG-25 Barrel
-	- https://modworkshop.net/mod/53381
+ - Rainbow Six: Siege GIGN Doc as Medic
+	- https://modworkshop.net/mod/23122
 
 	 
 # Gunsss
@@ -467,6 +467,7 @@ Yanked coding from... (intergrated into mod)
  - MW2019 SIG Sauer P320 (https://modworkshop.net/mod/33336)
  - Howa Type 20 (https://modworkshop.net/mod/52587)
  - Bioshock Infinite Crank Gun (https://modworkshop.net/mod/52763)
+ - KSG-25 Barrel (https://modworkshop.net/mod/53381)
  
 # Incompatible Shit
  - Spending Offshore Converter (https://modworkshop.net/mod/30447)

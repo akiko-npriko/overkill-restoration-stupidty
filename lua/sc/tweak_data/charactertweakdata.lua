@@ -20044,7 +20044,8 @@ function CharacterTweakData:character_map()
 				"ene_xof_heavy",
 				"ene_xof_heavy_sniper",
 				"ene_xof_light",
-				"ene_xof_shield"
+				"ene_xof_shield",
+				"ene_gign_doc"
 			}
 		}
 
