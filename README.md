@@ -455,6 +455,8 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/47940
  - Terminator-Hand
 	- https://modworkshop.net/mod/53334
+ - Lock Smasher - Break Locks with Melee
+	- https://modworkshop.net/mod/23258
 
 	 
 # Gunsss

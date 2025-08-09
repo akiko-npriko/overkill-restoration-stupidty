@@ -2756,6 +2756,7 @@ function PlayerStandard:_do_action_melee(t, input, skip_damage)
 			local to = from + self._unit:movement():m_head_rot():y() * range
 			local ray = self._unit:raycast("ray", from, to, "slot_mask", 1, "ignore_unit", self._unit)
 			if ray and ray.unit then
+				local damage = 200
 				local hit_unit = ray.unit
 				if hit_unit:base() and type(hit_unit:base()._devices) == "table" and type(hit_unit:base()._devices.c4) == "table" and type(hit_unit:base()._devices.c4.amount) == "number" then
 					local c4_data = hit_unit:base()._devices.c4
@@ -2766,6 +2767,13 @@ function PlayerStandard:_do_action_melee(t, input, skip_damage)
 					c4_data.max_health = c4_data.max_health - melee_dmg
 					if c4_data.max_health <= 0 then
 						hit_unit:base():device_completed("c4") 
+					end
+				elseif hit_unit:damage() and ray.body:extension() and ray.body:extension().damage then
+					--do the thing
+					ray.body:extension().damage:damage_lock(user_unit, ray.normal, ray.position, ray.direction, damage)
+					--sync to peers
+					if hit_unit:id() ~= -1 then
+						managers.network:session():send_to_peers_synched("sync_body_damage_lock", ray.body, damage)
 					end
 				end
 			end
