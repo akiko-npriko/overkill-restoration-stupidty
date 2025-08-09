@@ -2552,10 +2552,11 @@ function PlayerStandard:_get_melee_charge_lerp_value(t, offset)
 	return math.clamp(t - self._state_data.melee_start_t - offset, 0, max_charge_time) / max_charge_time
 end
 
-local function terminatorcheck()
-	if managers.player:has_category_upgrade("player", "bullet_shield_knock") and managers.player:has_category_upgrade("player", "resist_knockback_push") and managers.player:has_category_upgrade("player", "deflection_addend_2") and managers.player:has_category_upgrade("player", "health_multiplier_2") and managers.player:has_category_upgrade("player", "headshot_regen_armor_bonus_2") then
-		-- and managers.player:has_category_upgrade("carry", "movement_penalty_nullifier")
-		return true
+function terminatorcheck()
+	if managers.player:has_category_upgrade("player", "bullet_shield_knock") and managers.player:has_category_upgrade("carry", "movement_penalty_nullifier") and managers.player:has_category_upgrade("player", "resist_knockback_push") and managers.player:has_category_upgrade("player", "deflection_addend") and managers.player:has_category_upgrade("player", "health_multiplier") and managers.player:has_category_upgrade("player", "headshot_regen_armor_bonus") then
+		if self:upgrade_value("player", "deflection_addend", 0) > 0.09 and self:upgrade_value("player", "health_multiplier", 0) > 1.2 and self:upgrade_value("player", "headshot_regen_armor_bonus", 0) > 3.25 then
+			return true
+		end
 	end
 	return false
 end
