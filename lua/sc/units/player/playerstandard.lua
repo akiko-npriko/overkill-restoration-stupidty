@@ -2738,48 +2738,56 @@ function PlayerStandard:_do_action_melee(t, input, skip_damage)
 		melee_item_tweak_anim = melee_item_prefix .. melee_item_tweak_anim .. melee_item_suffix
 
 		self._camera_unit:base():play_anim_melee_item(melee_item_tweak_anim, speed)
-		
-		local function terminatorcheck()
-			--Requirements: ACE entire juggernaut subtree
-			if managers.player:has_category_upgrade("player", "bullet_shield_knock") and managers.player:has_category_upgrade("carry", "movement_penalty_nullifier") and managers.player:has_category_upgrade("player", "resist_knockback_push") and managers.player:has_category_upgrade("player", "deflection_addend") and managers.player:has_category_upgrade("player", "health_multiplier") and managers.player:has_category_upgrade("player", "headshot_regen_armor_bonus") then
-				if managers.player:upgrade_value("player", "deflection_addend", 0) > 0.09 and managers.player:upgrade_value("player", "health_multiplier", 0) > 1.2 and managers.player:upgrade_value("player", "headshot_regen_armor_bonus", 0) > 3.25 then
-					return true
-				end
-			end
-			return false
-		end
-		--TERMINATOR HANDS
-		local terminatorcheckerrr = terminatorcheck()
-		if terminatorcheckerrr then
-			local range = tweak_data.blackmarket.melee_weapons[melee_entry].stats.range or 175
-			local from = self._unit:movement():m_head_pos()
-			local to = from + self._unit:movement():m_head_rot():y() * range
-			local ray = self._unit:raycast("ray", from, to, "slot_mask", 1, "ignore_unit", self._unit)
-			if ray and ray.unit then
-				local damage = 200
-				local hit_unit = ray.unit
-				if hit_unit:base() and type(hit_unit:base()._devices) == "table" and type(hit_unit:base()._devices.c4) == "table" and type(hit_unit:base()._devices.c4.amount) == "number" then
-					local c4_data = hit_unit:base()._devices.c4
-					if not c4_data.max_health then
-						c4_data.max_health = c4_data.amount * 500
-					end
-					local melee_dmg = 2000000000 
-					c4_data.max_health = c4_data.max_health - melee_dmg
-					if c4_data.max_health <= 0 then
-						hit_unit:base():device_completed("c4") 
-					end
-				elseif hit_unit:damage() and ray.body:extension() and ray.body:extension().damage then
-					--do the thing
-					ray.body:extension().damage:damage_lock(user_unit, ray.normal, ray.position, ray.direction, damage)
-					--sync to peers
-					if hit_unit:id() ~= -1 then
-						managers.network:session():send_to_peers_synched("sync_body_damage_lock", ray.body, damage)
-					end
-				end
-			end
-		end
-		--END OF FUNNY BOOM
 	end
+	local function terminatorcheck()
+		--Requirements: ACE entire juggernaut subtree
+		if managers.player:has_category_upgrade("player", "bullet_shield_knock") and managers.player:has_category_upgrade("carry", "movement_penalty_nullifier") and managers.player:has_category_upgrade("player", "resist_knockback_push") and managers.player:has_category_upgrade("player", "deflection_addend") and managers.player:has_category_upgrade("player", "health_multiplier") and managers.player:has_category_upgrade("player", "headshot_regen_armor_bonus") then
+			if managers.player:upgrade_value("player", "deflection_addend", 0) > 0.09 and managers.player:upgrade_value("player", "health_multiplier", 0) > 1.2 and managers.player:upgrade_value("player", "headshot_regen_armor_bonus", 0) > 3.25 then
+				return true
+			end
+		end
+		return false
+	end
+	local function terminatorrfunction()
+		local range = tweak_data.blackmarket.melee_weapons[melee_entry].stats.range or 175
+		local from = self._unit:movement():m_head_pos()
+		local to = from + self._unit:movement():m_head_rot():y() * range
+		local ray = self._unit:raycast("ray", from, to, "slot_mask", 1, "ignore_unit", self._unit)
+		if ray and ray.unit then
+			local damage = 200
+			local hit_unit = ray.unit
+			if hit_unit:base() and type(hit_unit:base()._devices) == "table" and type(hit_unit:base()._devices.c4) == "table" and type(hit_unit:base()._devices.c4.amount) == "number" then
+				local c4_data = hit_unit:base()._devices.c4
+				if not c4_data.max_health then
+					c4_data.max_health = c4_data.amount * 500
+				end
+				local melee_dmg = 2000000000 
+				c4_data.max_health = c4_data.max_health - melee_dmg
+				if c4_data.max_health <= 0 then
+					hit_unit:base():device_completed("c4") 
+				end
+			elseif hit_unit:damage() and ray.body:extension() and ray.body:extension().damage then
+				--do the thing
+				ray.body:extension().damage:damage_lock(user_unit, ray.normal, ray.position, ray.direction, damage)
+				--sync to peers
+				if hit_unit:id() ~= -1 then
+					managers.network:session():send_to_peers_synched("sync_body_damage_lock", ray.body, damage)
+				end
+			end
+		end
+	end
+	--TERMINATOR HANDS
+	if terminatorcheck() then
+		local melee_damage_delay = tweak_data.blackmarket.melee_weapons[melee_entry].melee_damage_delay or 0
+		if melee_damage_delay <= 0 then
+			terminatorrfunction()
+		else
+			DelayedCalls:Add("terminatordelay", melee_damage_delay, function()
+				terminatorrfunction()
+			end)
+		end
+	end
+	--END OF FUNNY BOOM
 end
 
 function PlayerStandard:_update_run_and_shoot_anim(t)
