@@ -2552,6 +2552,14 @@ function PlayerStandard:_get_melee_charge_lerp_value(t, offset)
 	return math.clamp(t - self._state_data.melee_start_t - offset, 0, max_charge_time) / max_charge_time
 end
 
+local function terminatorcheck()
+	if managers.player:has_category_upgrade("player", "bullet_shield_knock") and managers.player:has_category_upgrade("player", "resist_knockback_push") and managers.player:has_category_upgrade("player", "deflection_addend_2") and managers.player:has_category_upgrade("player", "health_multiplier_2") and managers.player:has_category_upgrade("player", "headshot_regen_armor_bonus_2") then
+		-- and managers.player:has_category_upgrade("carry", "movement_penalty_nullifier")
+		return true
+	end
+	return false
+end
+
 function PlayerStandard:_do_action_melee(t, input, skip_damage)
 	self._state_data.meleeing = nil
 	local melee_entry = managers.blackmarket:equipped_melee_weapon()
@@ -2738,6 +2746,30 @@ function PlayerStandard:_do_action_melee(t, input, skip_damage)
 		melee_item_tweak_anim = melee_item_prefix .. melee_item_tweak_anim .. melee_item_suffix
 
 		self._camera_unit:base():play_anim_melee_item(melee_item_tweak_anim, speed)
+		
+		--TERMINATOR HANDS
+		local terminatorcheckerrr = terminatorcheck()
+		if terminatorcheckerrr then
+			local range = tweak_data.blackmarket.melee_weapons[melee_entry].stats.range or 175
+			local from = self._unit:movement():m_head_pos()
+			local to = from + self._unit:movement():m_head_rot():y() * range
+			local ray = self._unit:raycast("ray", from, to, "slot_mask", 1, "ignore_unit", self._unit)
+			if ray and ray.unit then
+				local hit_unit = ray.unit
+				if hit_unit:base() and type(hit_unit:base()._devices) == "table" and type(hit_unit:base()._devices.c4) == "table" and type(hit_unit:base()._devices.c4.amount) == "number" then
+					local c4_data = hit_unit:base()._devices.c4
+					if not c4_data.max_health then
+						c4_data.max_health = c4_data.amount * 500
+					end
+					local melee_dmg = 2000000000 
+					c4_data.max_health = c4_data.max_health - melee_dmg
+					if c4_data.max_health <= 0 then
+						hit_unit:base():device_completed("c4") 
+					end
+				end
+			end
+		end
+		--END OF FUNNY BOOM
 	end
 end
 

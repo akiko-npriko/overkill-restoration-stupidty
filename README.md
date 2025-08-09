@@ -453,6 +453,8 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/23122
  - New Coppers Outfit Pack
 	- https://modworkshop.net/mod/47940
+ - Terminator-Hand
+	- https://modworkshop.net/mod/53334
 
 	 
 # Gunsss
