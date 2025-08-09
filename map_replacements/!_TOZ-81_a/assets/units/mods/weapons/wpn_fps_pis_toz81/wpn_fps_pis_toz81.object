@@ -1,6 +1,9 @@
 <dynamic_object>
 	<diesel orientation_object="rp_toz81" />
 	<animations>  
+		<animation_group name="recoil" enabled="false" >
+			<object name="a_recoil_cylinder" enabled="true" />
+		</animation_group> 
 		<animation_group name="reload" enabled="false" >
 			<object name="a_reload_barrel" enabled="true" />
 			<object name="a_reload_mag" enabled="true" />

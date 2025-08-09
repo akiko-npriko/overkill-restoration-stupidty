@@ -474,7 +474,7 @@ Yanked coding from... (intergrated into mod)
  - Howa Type 20 (https://modworkshop.net/mod/52587)
  - Bioshock Infinite Crank Gun (https://modworkshop.net/mod/52763)
  - KSG-25 Barrel (https://modworkshop.net/mod/53381)
- 
+ - TOZ-81 MARS Revolver (https://modworkshop.net/mod/50307)
 # Incompatible Shit
  - Spending Offshore Converter (https://modworkshop.net/mod/30447)
 	- Breaks Restore's Voiceline loading and causes voicelines to only load on paused menu
