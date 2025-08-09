@@ -1719,7 +1719,7 @@ function NewRaycastWeaponBase:tweak_data_anim_play(anim, speed_multiplier, set_o
 
 			local offset = self:_get_anim_start_offset(anim_name) or set_offset
 
-			if offset then
+			if offset and data.unit ~= nil then
 				data.unit:anim_set_time(ids_anim_name, offset)
 			end
 		end
@@ -1757,7 +1757,7 @@ function NewRaycastWeaponBase:tweak_data_anim_offset(anim, offset, second_gun)
 			self._second_gun:base()._unit:anim_set_time(ids_anim_name, offset)
 		end
 		for part_id, data in pairs(self._second_gun:base()._parts) do
-			if data.animations and data.animations[unit_anim] then
+			if data.animations and data.animations[unit_anim] and data.unit ~= nil then
 				local anim_name = data.animations[unit_anim]
 				local ids_anim_name = Idstring(anim_name)
 				data.unit:anim_set_time(ids_anim_name, offset)
@@ -1771,7 +1771,7 @@ function NewRaycastWeaponBase:tweak_data_anim_offset(anim, offset, second_gun)
 		end
 	
 		for part_id, data in pairs(self._parts) do
-			if data.animations and data.animations[unit_anim] then
+			if data.animations and data.animations[unit_anim] and data.unit ~= nil then
 				local anim_name = data.animations[unit_anim]
 				local ids_anim_name = Idstring(anim_name)
 				data.unit:anim_set_time(ids_anim_name, offset)
