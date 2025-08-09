@@ -2741,7 +2741,7 @@ function PlayerStandard:_do_action_melee(t, input, skip_damage)
 		
 		local function terminatorcheck()
 			if managers.player:has_category_upgrade("player", "bullet_shield_knock") and managers.player:has_category_upgrade("carry", "movement_penalty_nullifier") and managers.player:has_category_upgrade("player", "resist_knockback_push") and managers.player:has_category_upgrade("player", "deflection_addend") and managers.player:has_category_upgrade("player", "health_multiplier") and managers.player:has_category_upgrade("player", "headshot_regen_armor_bonus") then
-				if self:upgrade_value("player", "deflection_addend", 0) > 0.09 and self:upgrade_value("player", "health_multiplier", 0) > 1.2 and self:upgrade_value("player", "headshot_regen_armor_bonus", 0) > 3.25 then
+				if managers.player:upgrade_value("player", "deflection_addend", 0) > 0.09 and managers.player:upgrade_value("player", "health_multiplier", 0) > 1.2 and managers.player:upgrade_value("player", "headshot_regen_armor_bonus", 0) > 3.25 then
 					return true
 				end
 			end
