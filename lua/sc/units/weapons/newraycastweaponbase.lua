@@ -2748,22 +2748,54 @@ function NewRaycastWeaponBase:get_scope_overlay_border_color(scope_index)
 	return Color.black
 end
 
+function is_enemy_in_front(player_unit, enemy_unit)
+	-- Get player head position and forward direction
+	local player_pos = player_unit:movement():m_head_pos()
+	local player_forward = player_unit:movement():m_head_rot():y() -- Forward vector
+
+	-- Get enemy position
+	local enemy_pos = enemy_unit:movement():m_pos()
+
+	-- Calculate vector from player to enemy
+	local to_enemy = enemy_pos - player_pos
+
+	-- Normalize vectors for dot product
+	local to_enemy_normalized = to_enemy:normalized()
+	local player_forward_normalized = player_forward:normalized()
+	
+	-- Calculate dot product to check angle
+	local dot_product = to_enemy_normalized:dot(player_forward_normalized)
+	
+	-- Log dot product
+	--log("dot_product: " .. tostring(dot_product))
+
+	if dot_product < 0 then
+		return false
+	end
+
+	return true
+end
+
 function NewRaycastWeaponBase:gen_infrared_highlight()
 	local enemiesaa = managers.enemy:all_enemies() or {}
 	local civiliansaa = managers.enemy:all_civilians() or {}
 	local friendlyallisses = managers.groupai:state():all_char_criminals() or {}
+	local user_unit = managers.player:player_unit() or false
+	if not user_unit then
+		return
+	end
 	for u_key, u_data in pairs(enemiesaa) do
-		if u_data.unit and alive(u_data.unit) and u_data.unit:contour() then
+		if u_data.unit and alive(u_data.unit) and u_data.unit:contour() and is_enemy_in_front(user_unit, u_data.unit) then
 			u_data.unit:contour():add("mark_infrared", false)
 		end
 	end
 	for u_key, u_data in pairs(civiliansaa) do
-		if u_data.unit and alive(u_data.unit) and u_data.unit:contour() then
+		if u_data.unit and alive(u_data.unit) and u_data.unit:contour() and is_enemy_in_front(user_unit, u_data.unit) then
 			u_data.unit:contour():add("mark_infrared", false)
 		end
 	end
 	for u_key, u_data in pairs(friendlyallisses) do
-		if u_data.unit and alive(u_data.unit) and u_data.unit:contour() then
+		if u_data.unit and alive(u_data.unit) and u_data.unit:contour() and is_enemy_in_front(user_unit, u_data.unit) then
 			u_data.unit:contour():add("mark_infrared", false)
 		end
 	end
