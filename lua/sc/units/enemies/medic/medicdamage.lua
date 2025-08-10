@@ -105,9 +105,10 @@ function MedicDamage:verify_heal_requesting_unit(requesting_unit, ...)
 end
 
 Hooks:PostHook(MedicDamage, "init", "MedicDropFAK_MedicDamage_init", function(self, ...)
-	if math.random(1, 10) >= 6 then
-		self:set_pickup(nil)
-	else
+	local randomizerrraar = math.rand(1)
+	if randomizerrraar <= 0.1 then
 		self:set_pickup("medic_fak")
+	else
+		self:set_pickup(nil)
 	end
 end )
