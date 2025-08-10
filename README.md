@@ -457,6 +457,8 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/53334
  - Lock Smasher - Break Locks with Melee
 	- https://modworkshop.net/mod/23258
+ - Bri'ish medic (Gamebanana)
+	- https://gamebanana.com/sounds/54962
 
 	 
 # Gunsss
