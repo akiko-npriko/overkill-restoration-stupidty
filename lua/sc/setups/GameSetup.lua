@@ -109,8 +109,8 @@ function GameSetup:load_packages()
 		--USE PACKAGE ID AND NOT FILE LOCATION OR ASSETS ARE NEVER LOADED!!!
 	-- Initialize throughput with the freshly loaded settings
     --ThinkFaster:refresh_current_throughput()
-	--Starts first loads shared textures
-	load_difficulty_package("packages/addsharedtextures")
+	--Starts first loads shared textures and assets
+	load_difficulty_package("packages/addsharedassets")
 	
 	load_difficulty_package("packages/addwarthog")
 	load_difficulty_package("packages/addgroundsniperfbi")
