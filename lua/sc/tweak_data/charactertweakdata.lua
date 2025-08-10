@@ -4294,9 +4294,11 @@ function CharacterTweakData:_init_city_swat_rpg(presets)
 	self.city_swat_rpg.custom_voicework = "rpg_grunt"
 	table.insert(self._enemy_list, "city_swat_rpg")
 	
+	--This is now flamethrower units too lazy to rename tweak
 	self.xof_rpg = deep_clone(self.city_swat_titan)
 	self.xof_rpg.dodge = presets.dodge.athletic
-	self.xof_rpg.move_speed = presets.move_speed.normal
+	self.xof_rpg.move_speed = presets.move_speed.very_fast
+	self.xof_rpg.crouch_move = nil
 	self.xof_rpg.yellow_blood = false
 	self.xof_rpg.HEALTH_INIT = 5.5
 	self.xof_rpg.headshot_dmg_mul = 2.5
@@ -4304,8 +4306,8 @@ function CharacterTweakData:_init_city_swat_rpg(presets)
 	self.xof_rpg.damage.explosion_damage_mul = 1
 	self.xof_rpg.damage.tase_damage_mul = 1
 	self.xof_rpg.custom_voicework = "hecu_dmr"
-	self.xof_rpg.can_throw_frag = true
-	self.xof_rpg.grenade_toss_chance = 0.35
+	--self.xof_rpg.can_throw_frag = true
+	--self.xof_rpg.grenade_toss_chance = 0.35
 	table.insert(self._enemy_list, "xof_rpg")
 end
 

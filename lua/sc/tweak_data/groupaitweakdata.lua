@@ -16194,10 +16194,15 @@ function GroupAITweakData:_init_enemy_spawn_groups(difficulty_index)
 		}
 	end
 	self._tactics.xof_piggy_tat = {
+		"murder"
+	}
+	--[[
+	self._tactics.xof_piggy_tat = {
 		"ranged_fire",
 		"flank",
 		"deathguard"
 	}
+	]]
 	self._tactics.Shield_TIT_tank = {
 		"charge",
 		"murder",
