@@ -4294,21 +4294,22 @@ function CharacterTweakData:_init_city_swat_rpg(presets)
 	self.city_swat_rpg.custom_voicework = "rpg_grunt"
 	table.insert(self._enemy_list, "city_swat_rpg")
 	
-	--This is now flamethrower units too lazy to rename tweak
-	self.xof_rpg = deep_clone(self.city_swat_titan)
-	self.xof_rpg.dodge = presets.dodge.athletic
-	self.xof_rpg.move_speed = presets.move_speed.very_fast
-	self.xof_rpg.crouch_move = nil
-	self.xof_rpg.yellow_blood = false
-	self.xof_rpg.HEALTH_INIT = 5.5
-	self.xof_rpg.headshot_dmg_mul = 2.5
-	self.xof_rpg.damage.bullet_damage_mul = 1
-	self.xof_rpg.damage.explosion_damage_mul = 1
-	self.xof_rpg.damage.tase_damage_mul = 1
-	self.xof_rpg.custom_voicework = "hecu_dmr"
-	--self.xof_rpg.can_throw_frag = true
-	--self.xof_rpg.grenade_toss_chance = 0.35
-	table.insert(self._enemy_list, "xof_rpg")
+	--This is now flamethrower xof unit
+	self.xof_pigglet = deep_clone(self.city_swat_titan)
+	self.xof_pigglet.dodge = presets.dodge.athletic
+	self.xof_pigglet.move_speed = presets.move_speed.lightning
+	--self.xof_pigglet.move_speed = presets.move_speed.very_fast
+	self.xof_pigglet.crouch_move = nil
+	self.xof_pigglet.yellow_blood = false
+	self.xof_pigglet.HEALTH_INIT = 5.5
+	self.xof_pigglet.headshot_dmg_mul = 2.5
+	self.xof_pigglet.damage.bullet_damage_mul = 1
+	self.xof_pigglet.damage.explosion_damage_mul = 1
+	self.xof_pigglet.damage.tase_damage_mul = 1
+	self.xof_pigglet.custom_voicework = "hecu_dmr"
+	--self.xof_pigglet.can_throw_frag = true
+	--self.xof_pigglet.grenade_toss_chance = 0.35
+	table.insert(self._enemy_list, "xof_pigglet")
 end
 
 -- US Warthog, similar stats to Skull Dozer

@@ -277,7 +277,7 @@ logic_variants.weekend_lmg.attack = MarshalLogicAttack
 logic_variants.taser_titan_reaper = clone(security_variant)
 logic_variants.taser_titan_reaper.attack = MarshalLogicAttack			
 
-logic_variants.xof_rpg = clone(security_variant)
+logic_variants.xof_pigglet = clone(security_variant)
 logic_variants.us_warthog = clone(security_variant)
 logic_variants.us_warthog.attack = TankCopLogicAttack
 

@@ -78,7 +78,7 @@ action_variants.taser_titan = clone(security_variant)
 action_variants.taser_titan_reaper = clone(security_variant)
 action_variants.boom_titan = clone(security_variant)
 action_variants.city_swat_rpg = clone(security_variant)
-action_variants.xof_rpg = clone(security_variant)
+action_variants.xof_pigglet = clone(security_variant)
 action_variants.us_warthog = clone(security_variant)
 action_variants.us_warthog.walk = TankCopActionWalk
 
