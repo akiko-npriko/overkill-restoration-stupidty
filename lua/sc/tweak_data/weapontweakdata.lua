@@ -1270,6 +1270,9 @@ local crew_wep_preset = {
 		self.railgun_npc.trail_effect = Idstring("effects/particles/weapons/sniper_trail_sc")
 		self.railgun_npc.use_sniper_trail = true
 		--self.railgun_npc.sounds.prefix = "barrett_npc"
+		
+		--Port Railgun
+		self.port_railgun_npc = deep_clone(self.railgun_npc)
 	end
 
 	function WeaponTweakData:_init_data_heavy_snp_npc()
