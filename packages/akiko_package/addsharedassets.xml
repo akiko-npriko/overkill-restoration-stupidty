@@ -1,9 +1,41 @@
 <table directory="assets">		
-	<texture path="units/pd2_mod_akiko/characters/shared_textures/vip_2_body_df"/>
-	<texture path="units/pd2_mod_akiko/characters/shared_textures/ene_gign_doc_df"/>
-	<texture path="units/pd2_mod_akiko/characters/shared_textures/ene_gign_doc_glass_df"/>
-	<texture path="units/pd2_mod_akiko/characters/shared_textures/ene_gign_doc_head_df"/>
-	<texture path="units/pd2_mod_akiko/characters/shared_textures/ene_gign_doc_head_nm"/>
-	<texture path="units/pd2_mod_akiko/characters/shared_textures/ene_gign_doc_nm"/>
-	<texture path="units/pd2_mod_akiko/characters/shared_textures/gign_glass_clear_small_dark_fade_op"/>
+	<!--NPC Port Railgun-->
+	<cooked_physics		path="units/pd2_mod_akiko/weapons/wpn_npc_railgun/wpn_npc_railgun" force="false"/>
+	<material_config	path="units/pd2_mod_akiko/weapons/wpn_npc_railgun/wpn_npc_railgun" force="false"/>
+	<model				path="units/pd2_mod_akiko/weapons/wpn_npc_railgun/wpn_npc_railgun" force="false"/>
+	<object				path="units/pd2_mod_akiko/weapons/wpn_npc_railgun/wpn_npc_railgun" force="false"/>
+	<sequence_manager	path="units/pd2_mod_akiko/weapons/wpn_npc_railgun/wpn_npc_railgun" force="false"/>
+	<unit				path="units/pd2_mod_akiko/weapons/wpn_npc_railgun/wpn_npc_railgun" force="false" load="false"/>
+	<texture			path="units/pd2_mod_akiko/weapons/wpn_npc_railgun/wpn_npc_railgun_df" force="false"/>
+	<texture			path="units/pd2_mod_akiko/weapons/wpn_npc_railgun/wpn_npc_railgun_nm" force="false"/>
+	
+	<!--Gign Helmet-->
+	<unit path="units/pd2_mod_akiko/characters/ene_acc_gign_doc_helmet/ene_acc_gign_doc_helmet" force="false" load="false"/>
+	<object path="units/pd2_mod_akiko/characters/ene_acc_gign_doc_helmet/ene_acc_gign_doc_helmet" force="false"/>
+	<model path="units/pd2_mod_akiko/characters/ene_acc_gign_doc_helmet/ene_acc_gign_doc_helmet" force="false"/>
+	<material_config path="units/pd2_mod_akiko/characters/ene_acc_gign_doc_helmet/ene_acc_gign_doc_helmet" force="false"/>
+	<cooked_physics path="units/pd2_mod_akiko/characters/ene_acc_gign_doc_helmet/ene_acc_gign_doc_helmet" force="false"/>
+	
+	<!--XOF Shield (not person)-->
+	<unit path="units/pd2_mod_akiko/characters/ene_acc_xof_shield/ene_acc_xof_shield" force="false" load="false"/>
+	<object path="units/pd2_mod_akiko/characters/ene_acc_xof_shield/ene_acc_xof_shield" force="false"/>
+	<model path="units/pd2_mod_akiko/characters/ene_acc_xof_shield/ene_acc_xof_shield" force="false"/>
+	<material_config path="units/pd2_mod_akiko/characters/ene_acc_xof_shield/ene_acc_xof_shield" force="false"/>
+	<sequence_manager path="units/pd2_mod_akiko/characters/ene_acc_xof_shield/ene_acc_xof_shield" force="false"/>
+	<cooked_physics path="units/pd2_mod_akiko/characters/ene_acc_xof_shield/ene_acc_xof_shield" force="false"/>
+	<!--XOF Cowboy Hat-->
+	<unit path="units/pd2_mod_akiko/characters/ene_acc_xof_cowhat/ene_acc_xof_cowhat" force="false" load="false"/>
+	<object path="units/pd2_mod_akiko/characters/ene_acc_xof_cowhat/ene_acc_xof_cowhat" force="false"/>
+	<model path="units/pd2_mod_akiko/characters/ene_acc_xof_cowhat/ene_acc_xof_cowhat" force="false"/>
+	<material_config path="units/pd2_mod_akiko/characters/ene_acc_xof_cowhat/ene_acc_xof_cowhat" force="false"/>
+	<cooked_physics path="units/pd2_mod_akiko/characters/ene_acc_xof_cowhat/ene_acc_xof_cowhat" force="false"/>
+	
+	<!--Shared Textures-->
+	<texture path="units/pd2_mod_akiko/characters/shared_textures/vip_2_body_df" force="false"/>
+	<texture path="units/pd2_mod_akiko/characters/shared_textures/ene_gign_doc_df" force="false"/>
+	<texture path="units/pd2_mod_akiko/characters/shared_textures/ene_gign_doc_glass_df" force="false"/>
+	<texture path="units/pd2_mod_akiko/characters/shared_textures/ene_gign_doc_head_df" force="false"/>
+	<texture path="units/pd2_mod_akiko/characters/shared_textures/ene_gign_doc_head_nm" force="false"/>
+	<texture path="units/pd2_mod_akiko/characters/shared_textures/ene_gign_doc_nm" force="false"/>
+	<texture path="units/pd2_mod_akiko/characters/shared_textures/gign_glass_clear_small_dark_fade_op" force="false"/>
 </table>
