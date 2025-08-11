@@ -15958,9 +15958,10 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 					self.bs23.recategorize = { "break_shot" }
 					self.bs23.damage_type = "shotgun_heavy"
 					self.bs23.damage_type_single_ray = "anti_materiel"
+					self.bs23.use_data.selection_index = 1
 					self.bs23.always_play_anims = true
 					self.bs23.tactical_reload = 1
-					self.bs23.AMMO_MAX = 30
+					self.bs23.AMMO_MAX = 15
 					self.bs23.CLIP_AMMO_MAX = 3
 					self.bs23.reload_speed_multiplier = 1.3
 					self.bs23.fire_rate_multiplier = 1.20
@@ -15990,6 +15991,7 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 						reload = 20
 					}
 					self.bs23.stats_modifiers = nil
+					self.bs23.descope_on_fire = true
 					self.bs23.panic_suppression_chance = 0.05
 					self.bs23.timers.unequip = 0.6
 					self.bs23.timers.equip = 1
@@ -19031,9 +19033,7 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 				self.ks23.has_description = false
 				self.ks23.always_play_anims = true
 				self.ks23.use_data.selection_index = 2
-				self.ks23.categories = {
-						"shotgun"
-				}
+				self.ks23.categories = { "shotgun" }
 				self.ks23.recategorize = { "break_shot" }
 				self.ks23.damage_type = "shotgun_heavy"
 				self.ks23.damage_type_single_ray = "anti_materiel"
@@ -19067,6 +19067,7 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 					reload = 20
 				}
 				self.ks23.armor_piercing_chance = 1
+				self.ks23.descope_on_fire = true
 				self.ks23.panic_suppression_chance = 0.05
 				self.ks23.stats_modifiers = nil
 				self.ks23.timers.unequip = 0.6
@@ -21648,6 +21649,7 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 				self.toz66.stats_modifiers = nil
 				self.toz66.reload_speed_multiplier = 1.1
 				self.toz66.panic_suppression_chance = 0.05
+				self.toz66.sounds.stop_fire = "judge_x_fire"
 				self.toz66.timers = deep_clone(self.huntsman.timers)
 				if BeardLib.Utils:FindMod("Restored Mosconi Reload Animation") then
 					self.toz66.animations.ignore_nonemptyreload = true
@@ -24832,6 +24834,59 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 
 		--[[     RJC9000'S MODS     ]]--
 			
+			if self.howa_type20 then --ACR but Japanese
+				self.howa_type20.categories = { "assault_rifle" }
+				self.howa_type20.recategorize = { "light_ar" }
+				self.howa_type20.damage_type = "assault_rifle"
+				self.howa_type20.nato = true
+				self.howa_type20.tactical_reload = 1
+				self.howa_type20.fire_mode_data.fire_rate = 0.088235294
+				self.howa_type20.CLIP_AMMO_MAX = 30
+				self.howa_type20.AMMO_MAX = 150
+				self.howa_type20.CAN_TOGGLE_FIREMODE = true
+				self.howa_type20.FIRE_MODE = "auto"
+				self.howa_type20.kick = {}
+				self.howa_type20.kick = self.stat_info.kick_tables.moderate_kick
+				self.howa_type20.kick_pattern = {
+					{0, self.stat_info.kick_tables.left_recoil},
+					{4, self.stat_info.kick_tables.moderate_left_kick},
+					{9, self.stat_info.kick_tables.even_recoil},
+					{12, self.stat_info.kick_tables.moderate_right_kick},
+					{17, self.stat_info.kick_tables.even_recoil},
+					{21, self.stat_info.kick_tables.moderate_left_kick},
+					{25, self.stat_info.kick_tables.even_recoil}
+				}
+				self.howa_type20.supported = true
+				self.howa_type20.ads_speed = 0.300
+				self.howa_type20.damage_falloff = {
+					start_dist = 2600,
+					end_dist = 6000,
+					min_mult = 0.5
+				}
+				self.howa_type20.stats = {
+					damage = 24,
+					spread = 86,
+					recoil = 89,
+					spread_moving = 5,
+					zoom = 1,
+					concealment = 24,
+					suppression = 10,
+					alert_size = 2,
+					extra_ammo = 101,
+					total_ammo_mod = 400,
+					value = 9,
+					reload = 20
+				}
+				self.howa_type20.stats_modifiers = nil
+				self.howa_type20.panic_suppression_chance = 0.05
+				self.howa_type20.sounds.magazine_empty = "wp_rifle_slide_lock"
+				self.howa_type20.timers.reload_empty = 3.12
+				self.howa_type20.timers.reload_exit_empty = 0.75
+				self.howa_type20.timers.reload_not_empty = 2.3
+				self.howa_type20.timers.reload_exit_not_empty = 0.96
+				self.howa_type20.reload_speed_multiplier = 1
+			end
+
 			if self.peppermill then --Bioshocock Infimate Crank Gun
 				self.peppermill.categories = {
 					"minigun",
@@ -25876,7 +25931,7 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 					{20, self.stat_info.kick_tables.right_kick}
 				}
 				self.acr_2012.supported = true
-				self.acr_2012.ads_speed = 0.300
+				self.acr_2012.ads_speed = 0.320
 				self.acr_2012.damage_falloff = {
 					start_dist = 2400,
 					end_dist = 5800,
@@ -25885,7 +25940,7 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 				self.acr_2012.stats = {
 					damage = 24,
 					spread = 83,
-					recoil = 95,
+					recoil = 91,
 					spread_moving = 5,
 					zoom = 1,
 					concealment = 24,
@@ -29636,6 +29691,7 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 				self.toz81.panic_suppression_chance = 0.05
 				self.toz81.use_hipfire_stance = "breech"
 				self.toz81.reload_speed_multiplier = 1.02
+				self.toz81.sounds.stop_fire = "judge_x_fire"
 				self.toz81.timers.reload_empty = 2.18
 				self.toz81.timers.reload_exit_empty = 1.15
 				self.toz81.timers.reload_not_empty = 2.18
@@ -29686,6 +29742,7 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 				}
 				self.x_toz81.stats_modifiers = nil
 				self.x_toz81.panic_suppression_chance = 0.05
+				self.x_toz81.sounds.stop_fire = "judge_x_fire"
 				self.x_toz81.timers = deep_clone(self.x_judge.timers)
 			end
 

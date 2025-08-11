@@ -233,9 +233,11 @@ function PlayerManager:on_killshot(killed_unit, variant, headshot, weapon_id)
 
 	if self._saw_panic_when_kill and variant ~= "melee" then
 		local equipped_unit = self:get_current_state()._equipped_unit:base()
+		local check_id = equipped_unit and equipped_unit._name_id
 
 		--Allow all special weapons to spread panic with skill.
-		if equipped_unit:is_category("saw") or equipped_unit:is_category("grenade_launcher") or equipped_unit:is_category("bow") or equipped_unit:is_category("crossbow") then
+		if weapon_id == check_id and 
+			(equipped_unit:is_category("saw") or equipped_unit:is_category("grenade_launcher") or equipped_unit:is_category("bow") or equipped_unit:is_category("crossbow")) then
 			local pos = player_unit:position()
 			local skill = self:upgrade_value("saw", "panic_when_kill")
 
@@ -1144,7 +1146,7 @@ function PlayerManager:_trigger_sharpshooter(unit, attack_data)
 	local attacker_unit = attack_data.attacker_unit
 	local variant = attack_data.variant
 
-	if attacker_unit == self:player_unit() and variant == "bullet" and weapon_unit and weapon_unit:base():fire_mode() == "single" and weapon_unit:base():is_category("assault_rifle", "snp") and attack_data.result.type == "death" then
+	if attacker_unit == self:player_unit() and variant == "bullet" and weapon_unit --[[and weapon_unit:base():fire_mode() == "single"]] and weapon_unit:base():is_category("assault_rifle", "snp") and attack_data.result.type == "death" then
 		self:activate_temporary_upgrade("temporary", "headshot_fire_rate_mult")
 	end
 end
