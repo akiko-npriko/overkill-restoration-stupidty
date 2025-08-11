@@ -49287,6 +49287,17 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 		self.parts.wpn_fps_special_roach_irons.scope_overlay = nil
 		self.parts.wpn_fps_special_roach_irons.scope_overlay_hide_weapon = nil
 	end
+	
+	if self.wpn_fps_sho_iuhM79Shotgun then
+		self.wpn_fps_sho_iuhM79Shotgun.override = self.wpn_fps_sho_iuhM79Shotgun.override or {}
+		self.wpn_fps_sho_iuhM79Shotgun.override.wpn_fps_upg_a_slug = deep_clone(shot_ammo.a_slug_heavy_override)
+		self.wpn_fps_sho_iuhM79Shotgun.override.wpn_fps_upg_a_custom = deep_clone(shot_ammo.a_custom_heavy_override)
+		self.wpn_fps_sho_iuhM79Shotgun.override.wpn_fps_upg_a_custom_free = deep_clone(shot_ammo.a_custom_heavy_override)
+		self.wpn_fps_sho_iuhM79Shotgun.override.wpn_fps_upg_a_explosive = deep_clone(shot_ammo.a_explosive_heavy_override)
+		self.wpn_fps_sho_iuhM79Shotgun.override.wpn_fps_upg_a_piercing = deep_clone(shot_ammo.a_piercing_heavy_override)
+		self.wpn_fps_sho_iuhM79Shotgun.override.wpn_fps_upg_a_dragons_breath = deep_clone(shot_ammo.a_dragons_breath_heavy_override)
+	end
+	
 	if self.parts.wpn_fps_snp_sako_85_scope then
 		self.parts.wpn_fps_snp_sako_85_scope.ads_weapon_visible = false
 		self.parts.wpn_fps_snp_sako_85_scope.ads_overlay = "guis/scope_overlay/iuhPSO1ScopeOverlay"
