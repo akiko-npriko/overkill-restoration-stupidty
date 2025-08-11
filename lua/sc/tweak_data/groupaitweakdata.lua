@@ -15476,6 +15476,11 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	--Reinforce titan shield dozer with titan shields with no special cap
 	self.unit_categories.TIT_shield_assist = deep_clone(self.unit_categories.TIT_shield)
 	self.unit_categories.TIT_shield_assist.special_type = nil
+	
+	--Reinforce Captain Winters with titan shield dozers with no special cap
+	self.unit_categories.Shield_TIT_tank_assist = deep_clone(self.unit_categories.Shield_TIT_tank)
+	self.unit_categories.Shield_TIT_tank_assist.special_type = nil
+	
 	if difficulty_index == 5 then
 		akikomedicdozersdwbelow()
 	elseif difficulty_index == 6 then
@@ -18760,7 +18765,7 @@ function GroupAITweakData:_init_enemy_spawn_groups(difficulty_index)
 		}
 	elseif difficulty_index == 7 then
 		self.enemy_spawn_groups.Cap_Winters = {
-			amount = 10,
+			amount = 12,
 			force = true,
 			spawn = {
 				{
@@ -18780,6 +18785,14 @@ function GroupAITweakData:_init_enemy_spawn_groups(difficulty_index)
 					rank = 2
 				},
 				{
+					unit = "Shield_TIT_tank_assist",
+					freq = 1,
+					amount_min = 2,
+					amount_max = 2,
+					tactics = self._tactics.Shield_TIT_tank,
+					rank = 2
+				},
+				{
 					unit = "Phalanx_sniper",
 					freq = 1,
 					amount_min = 3,
@@ -18791,7 +18804,7 @@ function GroupAITweakData:_init_enemy_spawn_groups(difficulty_index)
 		}
 	else
 		self.enemy_spawn_groups.Cap_Winters = {
-			amount = 15,
+			amount = 18,
 			force = true,
 			spawn = {
 				{
@@ -18816,6 +18829,14 @@ function GroupAITweakData:_init_enemy_spawn_groups(difficulty_index)
 					amount_min = 2,
 					amount_max = 2,
 					tactics = self._tactics.Cap_winters_minion,
+					rank = 2
+				},
+				{
+					unit = "Shield_TIT_tank_assist",
+					freq = 1,
+					amount_min = 3,
+					amount_max = 3,
+					tactics = self._tactics.Shield_TIT_tank,
 					rank = 2
 				},
 				{
@@ -19429,7 +19450,7 @@ else
 		}
 	elseif difficulty_index == 7 then
 		self.enemy_spawn_groups.Cap_Winters = {
-			amount = 8,
+			amount = 10,
 			force = true,
 			spawn = {
 				{
@@ -19446,6 +19467,14 @@ else
 					amount_min = 5,
 					amount_max = 5,
 					tactics = self._tactics.Cap_winters_minion,
+					rank = 2
+				},
+				{
+					unit = "Shield_TIT_tank_assist",
+					freq = 1,
+					amount_min = 2,
+					amount_max = 2,
+					tactics = self._tactics.Shield_TIT_tank,
 					rank = 2
 				},
 				{
@@ -19460,7 +19489,7 @@ else
 		}
 	else
 		self.enemy_spawn_groups.Cap_Winters = {
-			amount = 9,
+			amount = 12,
 			force = true,
 			spawn = {
 				{
@@ -19474,9 +19503,17 @@ else
 				{
 					unit = "Phalanx_minion_new",
 					freq = 1,
-					amount_min = 5,
-					amount_max = 5,
+					amount_min = 6,
+					amount_max = 6,
 					tactics = self._tactics.Cap_winters_minion,
+					rank = 2
+				},
+				{
+					unit = "Shield_TIT_tank_assist",
+					freq = 1,
+					amount_min = 2,
+					amount_max = 2,
+					tactics = self._tactics.Shield_TIT_tank,
 					rank = 2
 				},
 				{
