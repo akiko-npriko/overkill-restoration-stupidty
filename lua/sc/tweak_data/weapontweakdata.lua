@@ -34064,6 +34064,53 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 			self.x_pm9.use_data.selection_index = 5
 
 	-- [[Akiko Edits]]
+	if self.iuhM79Shotgun then
+		self.iuhM79Shotgun.upgrade_blocks = {
+			weapon = {
+				"clip_ammo_increase"
+			}
+		}
+		self.iuhM79Shotgun.desc_id = "bm_w_iuhM79Shotgun_sc_desc"
+		self.iuhM79Shotgun.has_description = true
+		self.iuhM79Shotgun.fire_mode_data.fire_rate = 1.3
+		self.iuhM79Shotgun.fire_rate_multiplier = 0.75
+		self.iuhM79Shotgun.AMMO_MAX = 18
+		self.iuhM79Shotgun.rays = 20
+		self.iuhM79Shotgun.kick = self.stat_info.kick_tables.vertical_kick
+		self.iuhM79Shotgun.supported = true
+		self.iuhM79Shotgun.ads_speed = 0.500
+		self.iuhM79Shotgun.categories = { "shotgun" }
+		self.iuhM79Shotgun.recategorize = { "break_shot" }
+		self.iuhM79Shotgun.damage_type = "shotgun_heavy"
+		self.iuhM79Shotgun.damage_type_single_ray = "anti_materiel"
+		self.iuhM79Shotgun.damage_falloff = {
+			start_dist = 900,
+			end_dist = 4500,
+			min_mult = 0.033333
+		}
+		self.iuhM79Shotgun.stats = {
+			damage = 60,
+			spread = 26,
+			recoil = 51,
+			spread_moving = 6,
+			zoom = 1,
+			concealment = 14,
+			suppression = 1,
+			alert_size = 2,
+			extra_ammo = 101,
+			total_ammo_mod = 400,
+			value = 1,
+			reload = 20
+		}
+		self.iuhM79Shotgun.panic_suppression_chance = 0.05
+		self.iuhM79Shotgun.stats_modifiers = {damage = 10}
+		self.iuhM79Shotgun.reload_speed_multiplier = 1.0
+		self.iuhM79Shotgun.descope_on_fire = true
+		self.iuhM79Shotgun.timers.shotgun_reload_first_shell_offset = 0.5
+		self.iuhM79Shotgun.timers.shotgun_reload_exit_empty = 1.4
+		self.iuhM79Shotgun.timers.shotgun_reload_exit_not_empty = 0.7
+	end
+	
 	if self.otwd_flare_gun then
 		self.otwd_flare_gun.recategorize = { "heavy_pis", "handcannon" }
 		self.otwd_flare_gun.categories = { "pistol", "handcannon" }
@@ -35493,6 +35540,11 @@ function WeaponTweakData:calculate_ammo_pickup(weapon, id)
 	--Double multiplier if gun is a secondary, to compensate for lower total ammo.
 	if weapon.use_data.selection_index == 1 then
 		pickup_multiplier = pickup_multiplier * 2
+	end
+	
+	--Fix ammo multi for M79 Shotgun.
+	if id == "iuhM79Shotgun" then
+		pickup_multiplier = pickup_multiplier * 5
 	end
 
 	--Set actual pickup values to use.

@@ -1,0 +1,13 @@
+<unit type="wpn" slot="1" >
+	<object file="units/mods/weapons/wpn_fps_sho_iuhM79Shotgun/wpn_fps_sho_iuhM79Shotgun" />
+	<dependencies>
+		<depends_on bnk="soundbanks/weapon_gl40"/>
+		<depends_on unit="units/pd2_dlc_gage_assault/weapons/wpn_launcher_frag_grenade/wpn_launcher_frag_grenade"/>
+	</dependencies>
+	<extensions>
+		<extension class="ScriptUnitData" name="unit_data" />
+		<extension name="base" class="NewNPCRaycastWeaponBase" >
+			<var name="name_id" value="iuhM79Shotgun_crew" />
+		</extension>
+	</extensions>
+</unit>
