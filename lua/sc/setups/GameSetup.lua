@@ -115,7 +115,9 @@ function GameSetup:load_packages()
 	load_difficulty_package("packages/addwarthog")
 	load_difficulty_package("packages/addgroundsniperfbi")
 	load_difficulty_package("packages/addgroundsniperswat")
-	load_difficulty_package("packages/addgigndoc")
+	if (difficulty_index == 6 or difficulty_index == 7 or difficulty_index == 8 or amiaskimiersh) then
+		load_difficulty_package("packages/addgigndoc")
+	end
 	if (difficulty_index == 7 or amiaskimiersh) then
 		load_difficulty_package("packages/addgroundsnipergensec")
 	end
