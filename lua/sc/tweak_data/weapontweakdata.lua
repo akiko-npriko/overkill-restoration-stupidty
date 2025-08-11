@@ -34070,8 +34070,6 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 				"clip_ammo_increase"
 			}
 		}
-		self.iuhM79Shotgun.desc_id = "bm_w_iuhM79Shotgun_sc_desc"
-		self.iuhM79Shotgun.has_description = true
 		self.iuhM79Shotgun.fire_mode_data.fire_rate = 1.3
 		self.iuhM79Shotgun.fire_rate_multiplier = 0.75
 		self.iuhM79Shotgun.AMMO_MAX = 18
@@ -35544,7 +35542,7 @@ function WeaponTweakData:calculate_ammo_pickup(weapon, id)
 	
 	--Fix ammo multi for M79 Shotgun.
 	if id == "iuhM79Shotgun" then
-		pickup_multiplier = pickup_multiplier * 5
+		pickup_multiplier = pickup_multiplier * 1.75
 	end
 
 	--Set actual pickup values to use.
