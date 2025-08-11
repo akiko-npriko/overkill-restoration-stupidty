@@ -1193,6 +1193,42 @@ local grips = {
 					--]]
 				}
 			},
+			
+			m79_varient_piercing_heavy_override = {
+				desc_id = "bm_wp_upg_a_piercing_heavy_desc_per_pellet",
+				stats = {
+					value = 9,
+					damage = -60,
+					total_ammo_mod = -165,
+					spread = 5
+				},
+				custom_stats = {
+					hip_mult = 0.8,
+					ap_desc = "bm_ap_armor_weapon_sc_desc",
+					trail_effect = "_dmc/effects/nato_trail",
+					ene_hs_mult_add = 0.2,
+					ammo_pickup_max_mul = 0.8,
+					ammo_pickup_min_mul = 0.8,
+					hs_mult = 3,
+					hs_mult_desc = true,
+					falloff_start_mult = 1,
+					falloff_end_mult = 1.1,
+					damage_min_mult = 5,
+					armor_piercing_add = 1,
+					rays = 12,
+					--[[
+					bullet_class = "BleedBulletBase",
+					dot_data = {
+						type = "bleed",
+						custom_data = {
+							dot_damage = 1.5,
+							dot_length = 8.1,
+							dot_tick_period = 0.5
+						}
+					}
+					--]]
+				}
+			},
 
 		--Poison
 			a_rip_auto_override = {
@@ -1378,6 +1414,28 @@ local grips = {
 					dot_data_name = "ammo_dragons_breath_heavy"
 				}
 			},
+			
+			m79_varient_dragons_breath_heavy_override = {
+				stats = {
+					value = 9,
+					damage = -30
+				},
+				custom_stats = {
+					ammo_pickup_max_mul = 0.95,
+					ammo_pickup_min_mul = 0.95,
+					falloff_start_mult = 1.2,
+					falloff_end_mult = 0.8,
+					damage_min_mult = 0.2,
+					ignore_statistic = true,
+					bullet_class = "FlameBulletBase",
+					armor_piercing_add = 0.01,
+					can_shoot_through_shield = false,
+					rays = 16,
+					trail_effect = "",
+					muzzleflash = "effects/payday2/particles/weapons/shotgun/sho_muzzleflash_dragons_breath",
+					dot_data_name = "ammo_dragons_breath_heavy"
+				}
+			},
 
 		--000 Buck
 			a_custom_auto_override = {
@@ -1443,6 +1501,24 @@ local grips = {
 					spread = -5,
 					total_ammo_mod = -77,
 					damage = 60
+				},
+				custom_stats = {
+					hip_mult = 1.5,
+					falloff_start_mult = 1.2,
+					falloff_end_mult = 0.8,
+					damage_min_mult = 0.79999,
+					ammo_pickup_max_mul = 0.75,
+					ammo_pickup_min_mul = 0.75,
+					rays = 6
+				}
+			},
+			
+			m79_varient_custom_heavy_override = {
+				stats = {
+					value = 9,
+					spread = -5,
+					total_ammo_mod = -77,
+					damage = 30
 				},
 				custom_stats = {
 					hip_mult = 1.5,
@@ -49290,12 +49366,10 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 	
 	if self.wpn_fps_sho_iuhM79Shotgun then
 		self.wpn_fps_sho_iuhM79Shotgun.override = self.wpn_fps_sho_iuhM79Shotgun.override or {}
-		self.wpn_fps_sho_iuhM79Shotgun.override.wpn_fps_upg_a_slug = deep_clone(shot_ammo.a_slug_heavy_override)
-		self.wpn_fps_sho_iuhM79Shotgun.override.wpn_fps_upg_a_custom = deep_clone(shot_ammo.a_custom_heavy_override)
-		self.wpn_fps_sho_iuhM79Shotgun.override.wpn_fps_upg_a_custom_free = deep_clone(shot_ammo.a_custom_heavy_override)
-		self.wpn_fps_sho_iuhM79Shotgun.override.wpn_fps_upg_a_explosive = deep_clone(shot_ammo.a_explosive_heavy_override)
-		self.wpn_fps_sho_iuhM79Shotgun.override.wpn_fps_upg_a_piercing = deep_clone(shot_ammo.a_piercing_heavy_override)
-		self.wpn_fps_sho_iuhM79Shotgun.override.wpn_fps_upg_a_dragons_breath = deep_clone(shot_ammo.a_dragons_breath_heavy_override)
+		self.wpn_fps_sho_iuhM79Shotgun.override.wpn_fps_upg_a_custom = deep_clone(shot_ammo.m79_varient_custom_heavy_override)
+		self.wpn_fps_sho_iuhM79Shotgun.override.wpn_fps_upg_a_custom_free = deep_clone(shot_ammo.m79_varient_custom_heavy_override)
+		self.wpn_fps_sho_iuhM79Shotgun.override.wpn_fps_upg_a_piercing = deep_clone(shot_ammo.m79_varient_piercing_heavy_override)
+		self.wpn_fps_sho_iuhM79Shotgun.override.wpn_fps_upg_a_dragons_breath = deep_clone(shot_ammo.m79_varient_dragons_breath_heavy_override)
 	end
 	
 	if self.parts.wpn_fps_snp_sako_85_scope then

@@ -34089,7 +34089,7 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 			min_mult = 0.033333
 		}
 		self.iuhM79Shotgun.stats = {
-			damage = 600,
+			damage = 300,
 			spread = 26,
 			recoil = 51,
 			spread_moving = 6,
@@ -34103,7 +34103,7 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 			reload = 20
 		}
 		self.iuhM79Shotgun.panic_suppression_chance = 0.05
-		self.iuhM79Shotgun.stats_modifiers = nil
+		self.iuhM79Shotgun.stats_modifiers = {damage = 2}
 		self.iuhM79Shotgun.reload_speed_multiplier = 1.0
 		self.iuhM79Shotgun.descope_on_fire = true
 		self.iuhM79Shotgun.timers.shotgun_reload_first_shell_offset = 0.5
