@@ -700,6 +700,8 @@ function CharacterTweakData:_init_medic(presets)
 	self.medic_summers.min_obj_interrupt_dis = 300
 	self.medic_summers.reduce_summers_dr_on_death = true
 	table.insert(self._enemy_list, "medic_summers")
+	
+	self:_init_gign_doc(presets)
 end
 
 function CharacterTweakData:_init_omnia_lpf(presets)	
@@ -4300,8 +4302,8 @@ function CharacterTweakData:_init_city_swat_rpg(presets)
 	self.xof_pigglet.move_speed = presets.move_speed.lightning
 	--self.xof_pigglet.move_speed = presets.move_speed.very_fast
 	self.xof_pigglet.yellow_blood = false
-	self.xof_pigglet.HEALTH_INIT = 5.5
-	self.xof_pigglet.headshot_dmg_mul = 2.5
+	self.xof_pigglet.HEALTH_INIT = 15
+	self.xof_pigglet.headshot_dmg_mul = 2
 	self.xof_pigglet.damage.bullet_damage_mul = 1
 	self.xof_pigglet.damage.explosion_damage_mul = 1
 	self.xof_pigglet.damage.tase_damage_mul = 1
@@ -4443,6 +4445,19 @@ function CharacterTweakData:_init_xof_swat(presets)
 	self.xof_swat.yellow_blood = false
 	self.xof_swat.can_shoot_while_dodging = true
 	table.insert(self._enemy_list, "xof_swat")
+end
+
+function CharacterTweakData:_init_gign_doc(presets)
+	self.gign_doc = deep_clone(self.medic)
+	self.gign_doc.HEALTH_INIT = 50
+	self.gign_doc.headshot_dmg_mul = 1.75
+	self.gign_doc.move_speed = presets.move_speed.fast
+	self.gign_doc.speech_prefix_p1 = "define me pure hate"
+	self.gign_doc.speech_prefix_p2 = nil
+	self.gign_doc.speech_prefix_count = nil
+	self.gign_doc.custom_voicework = "brit_medic"
+	self.gign_doc.dodge = presets.dodge.heavy
+	table.insert(self._enemy_list, "gign_doc")
 end
 
 function CharacterTweakData:_presets(tweak_data)

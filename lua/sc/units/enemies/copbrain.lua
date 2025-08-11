@@ -303,6 +303,8 @@ logic_variants.xof_markman.attack = MarshalLogicAttack
 logic_variants.xof_heavy_swat = clone(security_variant)
 logic_variants.xof_swat = clone(security_variant)
 
+logic_variants.gign_doc = security_variant
+
 --Set up boss logics
 logic_variants.mobster_boss = logic_variants.triad_boss
 logic_variants.chavez_boss = logic_variants.triad_boss
