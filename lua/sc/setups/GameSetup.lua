@@ -121,6 +121,8 @@ function GameSetup:load_packages()
 	end
 	if (difficulty_index == 8 or amiaskimiersh) then
 		load_difficulty_package("packages/addxofunit")
+	end
+	if (difficulty_index == 7 or difficulty_index == 8 or amiaskimiersh) then
 		load_difficulty_package("packages/addtitanshielddozer")
 	end
 	if (difficulty_index == 8 or amiaskimiersh) and (ai_type == a or ai_type == feds or ai_type == la or ai_type == ny) then
