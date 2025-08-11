@@ -4,44 +4,67 @@
 		<search>
 			<xml/>
 		</search>
-			
 		<target mode="attach">
 			<anim name="toz81_com_down_var1" 				file="anims/fps/toz81/toz81_com_var1" blend_set="all"/>
 			<anim name="toz81_com_stop" 					file="anims/fps/toz81/toz81_com_var5" blend_set="all"/>
 			<anim name="toz81_com_come" 					file="anims/fps/toz81/toz81_com_var6" blend_set="all"/>
 			<anim name="toz81_com_point" 					file="anims/fps/toz81/toz81_com_var7" blend_set="all"/>
-
 			<anim name="toz81_equip" 					    file="anims/fps/toz81/toz81_equip" blend_set="all"/>
 			<anim name="toz81_unequip" 					    file="anims/fps/toz81/toz81_unequip" blend_set="all"/>
-
 			<anim name="toz81_get_up" 					    file="anims/fps/toz81/toz81_get_up" blend_set="all"/>
-
 			<anim name="toz81_gogo" 					    file="anims/fps/toz81/toz81_gogo" blend_set="all"/>
-
 			<anim name="toz81_idle" 					    file="anims/fps/toz81/toz81_idle" blend_set="all"/>
-
 			<anim name="toz81_inspect" 					    file="anims/fps/toz81/toz81_inspect" blend_set="all"/>
-
 			<anim name="toz81_melee" 					    file="anims/fps/toz81/toz81_melee" blend_set="all"/>
 			<anim name="toz81_melee_bayonet" 				file="anims/fps/toz81/toz81_melee_bayonet" blend_set="all"/>
 			<anim name="toz81_melee_bayonet_miss" 		    file="anims/fps/toz81/toz81_melee_bayonet_miss" blend_set="all"/>
 			<anim name="toz81_melee_miss" 					file="anims/fps/toz81/toz81_melee_miss" blend_set="all"/>
-
 			<anim name="toz81_recoil" 					    file="anims/fps/toz81/toz81_recoil" blend_set="all"/>
 			<anim name="toz81_recoil_steelsight" 			file="anims/fps/toz81/toz81_idle" blend_set="all"/>
-
 			<anim name="toz81_reload" 					    file="anims/fps/toz81/toz81_reload" blend_set="all"/>
 			<anim name="toz81_reload_not_empty" 		    file="anims/fps/toz81/toz81_reload_not_empty" blend_set="all"/>
-
 			<anim name="toz81_sprint" 					    file="anims/fps/toz81/toz81_sprint" blend_set="all"/>
 			<anim name="toz81_sprint_enter" 			    file="anims/fps/toz81/toz81_sprint_enter" blend_set="all"/>
 			<anim name="toz81_sprint_exit" 			        file="anims/fps/toz81/toz81_sprint_exit" blend_set="all"/>
-
 			<anim name="toz81_tased" 					    file="anims/fps/toz81/toz81_tased" blend_set="all"/>
 			<anim name="toz81_tased_boost" 			        file="anims/fps/toz81/toz81_tased_boost" blend_set="all"/>
 			<anim name="toz81_tased_exit" 					file="anims/fps/toz81/toz81_tased_exit" blend_set="all"/>
-
 			<anim name="toz81_use" 					        file="anims/fps/toz81/toz81_use" blend_set="all"/>
+
+			<anim name="x_toz81_com_down_var1" 				file="anims/fps/x_deagle/x_deagle_get_down" blend_set="all"/>
+			<anim name="x_toz81_com_stop" 					file="anims/fps/x_deagle/x_deagle_stop" blend_set="all"/>
+			<anim name="x_toz81_com_come" 					file="anims/fps/x_deagle/x_deagle_come_here" blend_set="all"/>
+			<anim name="x_toz81_com_point" 					file="anims/fps/x_deagle/x_deagle_point" blend_set="all"/>
+			<anim name="x_toz81_equip" 					    file="anims/fps/x_deagle/x_deagle_equip" blend_set="all"/>
+			<anim name="x_toz81_unequip" 					file="anims/fps/x_deagle/x_deagle_unequip" blend_set="all"/>
+			<anim name="x_toz81_aim_equip" 					file="anims/fps/x_deagle/x_deagle_aim_equip" blend_set="all"/>
+			<anim name="x_toz81_aim_unequip" 			    file="anims/fps/x_deagle/x_deagle_aim_unequip" blend_set="all"/>
+			<anim name="x_toz81_get_up" 					file="anims/fps/x_deagle/x_deagle_get_up" blend_set="all"/>
+			<anim name="x_toz81_gogo" 					    file="anims/fps/x_deagle/x_deagle_gogo" blend_set="all"/>
+			<anim name="x_toz81_idle" 					    file="anims/fps/x_deagle/x_deagle_idle" blend_set="all"/>
+			<anim name="x_toz81_inspect" 					file="anims/fps/x_deagle/x_deagle_inspect" blend_set="all"/>
+			<anim name="x_toz81_melee" 					    file="anims/fps/x_deagle/x_deagle_melee" blend_set="all"/>
+			<anim name="x_toz81_melee_miss" 			    file="anims/fps/x_deagle/x_deagle_melee_miss" blend_set="all"/>
+			<anim name="x_toz81_aim_melee" 					file="anims/fps/x_deagle/x_deagle_aim_melee" blend_set="all"/>
+			<anim name="x_toz81_aim_melee_miss" 			file="anims/fps/x_deagle/x_deagle_aim_melee_miss" blend_set="all"/>
+			<anim name="x_toz81_melee_bayonet" 				file="anims/fps/x_toz81/x_toz81_melee_bayonet" blend_set="all"/>
+			<anim name="x_toz81_melee_bayonet_miss" 		file="anims/fps/x_toz81/x_toz81_melee_bayonet_miss" blend_set="all"/>
+			<anim name="x_toz81_aim_melee_bayonet" 		    file="anims/fps/x_toz81/x_toz81_aim_melee_bayonet" blend_set="all"/>
+			<anim name="x_toz81_aim_melee_bayonet_miss"     file="anims/fps/x_toz81/x_toz81_aim_melee_bayonet_miss" blend_set="all"/>
+			<anim name="x_toz81_recoil" 					file="anims/fps/x_deagle/x_deagle_recoil" blend_set="all"/>
+			<anim name="x_toz81_aim" 			            file="anims/fps/x_deagle/x_deagle_aim" blend_set="all"/>
+			<anim name="x_toz81_aim_recoil" 			    file="anims/fps/x_toz81/x_toz81_aim_recoil" blend_set="all"/>
+			<anim name="x_toz81_reload" 					file="anims/fps/x_deagle/x_deagle_reload" blend_set="all"/>
+			<anim name="x_toz81_reload_not_empty" 		    file="anims/fps/x_deagle/x_deagle_reload_not_empty" blend_set="all"/>
+			<anim name="x_toz81_sprint" 					file="anims/fps/x_deagle/x_deagle_sprint" blend_set="all"/>
+			<anim name="x_toz81_sprint_enter" 			    file="anims/fps/x_deagle/x_deagle_sprint_enter" blend_set="all"/>
+			<anim name="x_toz81_sprint_exit" 			    file="anims/fps/x_deagle/x_deagle_sprint_exit" blend_set="all"/>
+			<anim name="x_toz81_aim_sprint_enter" 			file="anims/fps/x_deagle/x_deagle_aim_sprint_enter" blend_set="all"/>
+			<anim name="x_toz81_aim_sprint_exit" 			file="anims/fps/x_deagle/x_deagle_aim_sprint_exit" blend_set="all"/>
+			<anim name="x_toz81_tased" 					    file="anims/fps/x_deagle/x_deagle_tased" blend_set="all"/>
+			<anim name="x_toz81_tased_boost" 			    file="anims/fps/x_deagle/x_deagle_tased_boost" blend_set="all"/>
+			<anim name="x_toz81_tased_exit" 	            file="anims/fps/x_deagle/x_deagle_tased_exit" blend_set="all"/>
+			<anim name="x_toz81_use" 					    file="anims/fps/x_deagle/x_deagle_use" blend_set="all"/>
 		</target>
 	</tweak>
 </tweaks>

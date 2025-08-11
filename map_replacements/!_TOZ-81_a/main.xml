@@ -2,7 +2,7 @@
 
 	<Localization directory="loc" default="english.txt"/>
 
-	<AssetUpdates id="50307" version="5" provider="modworkshop"/>
+	<AssetUpdates id="50307" version="6" provider="modworkshop"/>
 
 	<GlobalValue id="fiery_hylie_mod" color="Color(0.8, 0.7, 0.2)"/>
 
@@ -13,10 +13,34 @@
 		<sound id="toz81_fire" path="toz81_fire_sil.ogg" prefix="suppressed_a"/>
 		<sound id="toz81_fire" path="toz81_fire_sil.ogg" prefix="suppressed_b"/>
 		<sound id="toz81_fire" path="toz81_fire_sil.ogg" prefix="suppressed_c"/>
+
+		<sound id="toz81_barrel_open" path="toz81_barrel_open.ogg" prefix="first"/>
+		<sound id="toz81_barrel_open" path="toz81_barrel_open.ogg" prefix="third"/>
+		<sound id="toz81_barrel_close" path="toz81_barrel_close.ogg" prefix="first"/>
+		<sound id="toz81_barrel_close" path="toz81_barrel_close.ogg" prefix="third"/>
+
+		<sound id="toz81_lock_open" path="toz81_lock_open.ogg" prefix="first"/>
+		<sound id="toz81_lock_open" path="toz81_lock_open.ogg" prefix="third"/>
+
+		<sound id="toz81_shell_contact" path="toz81_shell_contact.ogg" prefix="first"/>
+		<sound id="toz81_shell_contact" path="toz81_shell_contact.ogg" prefix="third"/>
+		<sound id="toz81_shells_ground" path="toz81_shells_ground.ogg" prefix="first"/>
+		<sound id="toz81_shells_ground" path="toz81_shells_ground.ogg" prefix="third"/>
+		<sound id="toz81_shells_in" path="toz81_shells_in.ogg" prefix="first"/>
+		<sound id="toz81_shells_in" path="toz81_shells_in.ogg" prefix="third"/>
+		<sound id="toz81_shells_out" path="toz81_shells_out.ogg" prefix="first"/>
+		<sound id="toz81_shells_out" path="toz81_shells_out.ogg" prefix="third"/>
+
+		<sound id="toz81_tilt" path="toz81_tilt.ogg" prefix="first"/>
+		<sound id="toz81_tilt" path="toz81_tilt.ogg" prefix="third"/>
+		<sound id="toz81_tilt_back" path="toz81_tilt_back.ogg" prefix="first"/>
+		<sound id="toz81_tilt_back" path="toz81_tilt_back.ogg" prefix="third"/>
 	</Sounds>
 
 	<Hooks directory="hooks">		
-		<hook file="playerstandard.lua" source_file="lib/units/beings/player/states/playerstandard"/> 
+		<hook file="playerstandard.lua" source_file="lib/units/beings/player/states/playerstandard"/>
+		<hook file="blackmarketmanager.lua" source_file="lib/managers/blackmarketmanager"/>
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
 	</Hooks>
 
 <!-- TOZ-81 MARS - Default Parts -->	
@@ -60,6 +84,13 @@
 <!-- TOZ-81 MARS - Weapon Mods -->
 
 	<WeaponMod id="wpn_fps_pis_toz81_bayonet_unfolded" type="bayonet" based_on="wpn_fps_snp_mosin_ns_bayonet" has_description="true" desc_id="bm_toz81_bayonet_desc" unit="units/mods/weapons/wpn_fps_pis_toz81_pts/wpn_fps_pis_toz81_bayonet_unfolded" hidden="false" global_value="fiery_hylie_mod" ver="2">
+	    <stats min_damage="10" max_damage="10" min_damage_effect="3.50" max_damage_effect="3.50" concealment="-2"/>
+	    <override>
+		   <wpn_fps_pis_toz81_bayonet unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+		</override>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_pis_toz81_bayonet_unfolded_x" type="bayonet" based_on="wpn_fps_snp_mosin_ns_bayonet" has_description="true" desc_id="bm_toz81_bayonet_desc" unit="units/mods/weapons/wpn_fps_pis_toz81_pts/wpn_fps_pis_toz81_bayonet_unfolded" hidden="false" global_value="fiery_hylie_mod" ver="2">
 	    <stats min_damage="10" max_damage="10" concealment="-2"/>
 	    <override>
 		   <wpn_fps_pis_toz81_bayonet unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
@@ -68,7 +99,7 @@
 
 	<WeaponMod id="wpn_fps_pis_toz81_m_bullets" type="ammo" based_on="wpn_fps_pis_chinchilla_m_bullets" a_obj="a_m" has_description="true" desc_id="bm_toz81_bullets_desc" unit="units/mods/weapons/wpn_fps_pis_toz81_pts/wpn_fps_pis_toz81_m_bullets" global_value="fiery_hylie_mod" hidden="false" ver="2">
 	    <animations reload="reload_not_empty" reload_not_empty="reload_not_empty"/>
-   		<stats total_ammo_mod="12" damage="20" spread="5" recoil="-6"/>
+   		<stats total_ammo_mod="12" damage="-121" spread="-4" recoil="14"/>
 		<custom_stats do_shotgun_push="false" damage_far_mul="2" damage_near_mul="10" rays="1"/>
 		<bullet_objects prefix="g_bullet_" amount="5"/>
    	</WeaponMod>
@@ -81,9 +112,11 @@
 
 		<weapon id="toz81" based_on="judge" weapon_hold="toz81" FIRE_MODE="single" has_description="true" desc_id="bm_w_toz81_desc" do_shotgun_push="true" damage_near="2000" damage_far="3000" rays="10" CLIP_AMMO_MAX="5" NR_CLIPS_MAX="5" global_value="fiery_hylie_mod">
 
-			<stats damage="155" spread="14" spread_moving="14" recoil="8" concealment="26"/>
+            <use_data selection_index="1"/>
 
-			<fire_mode_data fire_rate="0.21"/>
+			<stats damage="176" spread="17" spread_moving="15" recoil="2" concealment="20"/>
+
+			<fire_mode_data fire_rate="0.15"/>
 
 			<sounds fire="toz81_fire" fire_single="toz81_fire" fire_auto="toz81_fire" use_fix="true"/>
 	
@@ -321,17 +354,19 @@
 
 		<Weapon unlock_level="70">
 
-		<weapon id="x_toz81" based_on="x_judge" weapon_hold="x_judge" FIRE_MODE="single" do_shotgun_push="true" damage_near="2000" damage_far="3000" rays="10" CLIP_AMMO_MAX="10" NR_CLIPS_MAX="10" global_value="fiery_hylie_mod">
+		<weapon id="x_toz81" based_on="x_judge" weapon_hold="x_toz81" FIRE_MODE="single" has_description="true" desc_id="bm_w_x_toz81_desc" do_shotgun_push="true" damage_near="2000" damage_far="3000" rays="10" CLIP_AMMO_MAX="10" NR_CLIPS_MAX="5" global_value="fiery_hylie_mod">
 
-			<stats damage="155" spread="14" spread_moving="14" recoil="8" concealment="26"/>
+			<stats damage="176" spread="17" spread_moving="15" recoil="8" concealment="20"/>
 
-			<fire_mode_data fire_rate="0.21"/>
+			<fire_mode_data fire_rate="0.15"/>
 
 			<sounds fire="toz81_fire" fire_single="toz81_fire" fire_auto="toz81_fire" use_fix="true"/>
 
-			<timers reload_empty="3.5" reload_not_empty="3" equip="0.5" unequip="0.5"/>
+			<timers reload_empty="3.17" reload_not_empty="3.17" equip="0.5" unequip="0.5"/>
 
-			<animations reload_name_id="x_judge" has_steelsight_stance="true" recoil_steelsight="true"/>
+			<animations reload_name_id="x_judge" has_steelsight_stance="true" recoil_steelsight="true">
+			   <second_gun_versions reload_not_empty="reload_not_empty_left" reload="reload_left"/>
+			</animations>
 
 		</weapon>
 
@@ -343,6 +378,7 @@
 
 			<override>
 				<wpn_fps_pis_toz81_bayonet parent="barrel" a_obj="a_bayonet"/>
+				<wpn_fps_pis_toz81_bayonet_unfolded_x parent="barrel" a_obj="a_bayonet_unfolded"/>
 			</override>
 
 			<default_blueprint>
@@ -360,9 +396,11 @@
 				<value_node value="wpn_fps_pis_toz81_cylinder"/>
 				<value_node value="wpn_fps_pis_toz81_ejector"/> 
 				<value_node value="wpn_fps_pis_toz81_frame"/> 
-				<value_node value="wpn_fps_pis_toz81_m_shells"/> 
+				<value_node value="wpn_fps_pis_toz81_m_shells"/>
 
+				<value_node value="wpn_fps_pis_toz81_bayonet_unfolded_x"/> 
 				<value_node value="wpn_fps_pis_toz81_m_bullets"/>
+				<value_node value="wpn_fps_pis_toz81_stock"/>
 
 				<value_node value="wpn_fps_upg_a_dragons_breath"/>
 				<value_node value="wpn_fps_upg_a_rip"/>
@@ -393,9 +431,5 @@
 		</stance>-->
 
 	</Weapon>
-	
-	<Hooks directory="hooks">
-		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>	
-	</Hooks>
 </mod> 
 

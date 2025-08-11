@@ -1,5 +1,4 @@
 <?xml version="1.0"?>
-
 <tweaks>
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
@@ -11,7 +10,6 @@
 			<to name="reload_not_empty_toz81" 			redirect="fps/reload_not_empty/toz81"/>
 		</target>
 	</tweak>
-	
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -20,53 +18,46 @@
 		<target mode="append">
 			<state name="fps/reload/toz81" type="once" segment="base" speed="1.0">
 				<anim name="toz81_reload"/>
-					<keys>
-						
-						<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>	
-							
-						<key at="trigger" trigger="wp_foley_generic_clip_take_new" 				callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
-						<key at="trigger" trigger="wp_gl40_lock_open" 				            callback="play_sound" class_name="base" param1="wp_gl40_lock_open"/>
-						<key at="trigger" trigger="wp_gl40_barrel_open" 				        callback="play_sound" class_name="base" param1="wp_gl40_barrel_open"/>	
-						<key at="trigger" trigger="wp_ak47_tilt_back" 				            callback="play_sound" class_name="base" param1="wp_ak47_tilt_back"/>
-						<key at="trigger" trigger="wp_gl40_shell_out" 				            callback="play_sound" class_name="base" param1="wp_rbull_shells_out"/>
-						<key at="trigger" trigger="wp_ak47_tilt" 				                callback="play_sound" class_name="base" param1="wp_ak47_tilt"/>
-						<key at="trigger" trigger="gl_casing_land_hard" 				        callback="play_sound" class_name="base" param1="wp_rbull_shell_hit_ground"/>
-						<key at="trigger" trigger="wp_foley_generic_clip_in_connect" 			callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
-						<key at="trigger" trigger="wp_gl40_shell_contact" 			            callback="play_sound" class_name="base" param1="wp_gl40_shell_contact"/>
-						<key at="trigger" trigger="wp_gl40_shell_in" 			                callback="play_sound" class_name="base" param1="wp_rbull_shells_in"/>
-						<key at="trigger" trigger="wp_gl40_barrel_close" 			            callback="play_sound" class_name="base" param1="wp_gl40_barrel_close"/>
-						<key at="trigger" trigger="wp_foley_generic_back_in_hand" 			    callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
-
-						<key at="trigger" trigger="bullet_show" 								callback="anim_clbk_check_bullet_object" class_name="base" />
-					</keys>
-					<exit name="fps/idle"/>
-				</state>
-			
-			
+				<keys>
+					<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_take_new" 				callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+					<key at="trigger" trigger="wp_gl40_lock_open" 				            callback="play_sound" class_name="base" param1="toz81_lock_open"/>
+					<key at="trigger" trigger="wp_gl40_barrel_open" 				        callback="play_sound" class_name="base" param1="toz81_barrel_open"/>
+					<key at="trigger" trigger="wp_ak47_tilt_back" 				            callback="play_sound" class_name="base" param1="toz81_tilt_back"/>
+					<key at="trigger" trigger="wp_gl40_shell_out" 				            callback="play_sound" class_name="base" param1="toz81_shells_out"/>
+					<key at="trigger" trigger="wp_ak47_tilt" 				                callback="play_sound" class_name="base" param1="toz81_tilt"/>
+					<key at="trigger" trigger="gl_casing_land_hard" 				        callback="play_sound" class_name="base" param1="toz81_shells_ground"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_in_connect" 			callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+					<key at="trigger" trigger="wp_gl40_shell_contact" 			            callback="play_sound" class_name="base" param1="toz81_shell_contact"/>
+					<key at="trigger" trigger="wp_gl40_shell_in" 			                callback="play_sound" class_name="base" param1="toz81_shells_in"/>
+					<key at="trigger" trigger="wp_gl40_barrel_close" 			            callback="play_sound" class_name="base" param1="toz81_barrel_close"/>
+					<key at="trigger" trigger="wp_foley_generic_back_in_hand" 			    callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
+					<key at="trigger" trigger="bullet_show" 								callback="anim_clbk_check_bullet_object" class_name="base" />
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
 			<state name="fps/reload_not_empty/toz81" type="once" segment="base" speed="1.0">
 				<anim name="toz81_reload_not_empty"/>
-				<keys>		
-						<key at="trigger" trigger="wp_foley_generic_clip_take_new" 				callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
-						<key at="trigger" trigger="wp_gl40_lock_open" 				            callback="play_sound" class_name="base" param1="wp_gl40_lock_open"/>
-						<key at="trigger" trigger="wp_gl40_barrel_open" 				        callback="play_sound" class_name="base" param1="wp_gl40_barrel_open"/>	
-						<key at="trigger" trigger="wp_ak47_tilt_back" 				            callback="play_sound" class_name="base" param1="wp_ak47_tilt_back"/>
-						<key at="trigger" trigger="wp_gl40_shell_out" 				            callback="play_sound" class_name="base" param1="wp_rbull_shells_out"/>
-						<key at="trigger" trigger="wp_ak47_tilt" 				                callback="play_sound" class_name="base" param1="wp_ak47_tilt"/>
-						<key at="trigger" trigger="gl_casing_land_hard" 				        callback="play_sound" class_name="base" param1="wp_rbull_shell_hit_ground"/>
-						<key at="trigger" trigger="wp_foley_generic_clip_in_connect" 			callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
-						<key at="trigger" trigger="wp_gl40_shell_contact" 			            callback="play_sound" class_name="base" param1="wp_gl40_shell_contact"/>
-						<key at="trigger" trigger="wp_gl40_shell_in" 			                callback="play_sound" class_name="base" param1="wp_rbull_shells_in"/>
-						<key at="trigger" trigger="wp_gl40_barrel_close" 			            callback="play_sound" class_name="base" param1="wp_gl40_barrel_close"/>
-						<key at="trigger" trigger="wp_foley_generic_back_in_hand" 			    callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
-
-						<key at="trigger" trigger="bullet_show" 								callback="anim_clbk_check_bullet_object" class_name="base" />
+				<keys>
+					<key at="trigger" trigger="wp_foley_generic_clip_take_new" 				callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+					<key at="trigger" trigger="wp_gl40_lock_open" 				            callback="play_sound" class_name="base" param1="toz81_lock_open"/>
+					<key at="trigger" trigger="wp_gl40_barrel_open" 				        callback="play_sound" class_name="base" param1="toz81_barrel_open"/>
+					<key at="trigger" trigger="wp_ak47_tilt_back" 				            callback="play_sound" class_name="base" param1="toz81_tilt_back"/>
+					<key at="trigger" trigger="wp_gl40_shell_out" 				            callback="play_sound" class_name="base" param1="toz81_shells_out"/>
+					<key at="trigger" trigger="wp_ak47_tilt" 				                callback="play_sound" class_name="base" param1="toz81_tilt"/>
+					<key at="trigger" trigger="gl_casing_land_hard" 				        callback="play_sound" class_name="base" param1="toz81_shells_ground"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_in_connect" 			callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+					<key at="trigger" trigger="wp_gl40_shell_contact" 			            callback="play_sound" class_name="base" param1="toz81_shell_contact"/>
+					<key at="trigger" trigger="wp_gl40_shell_in" 			                callback="play_sound" class_name="base" param1="toz81_shells_in"/>
+					<key at="trigger" trigger="wp_gl40_barrel_close" 			            callback="play_sound" class_name="base" param1="toz81_barrel_close"/>
+					<key at="trigger" trigger="wp_foley_generic_back_in_hand" 			    callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand"/>
+					<key at="trigger" trigger="bullet_show" 								callback="anim_clbk_check_bullet_object" class_name="base" />
 				</keys>
 				<exit name="fps/idle"/>
 			</state>
 		</target>
 	</tweak>
-
-   <tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
 			<state name="fps/recoil"/>
@@ -76,7 +67,6 @@
 			<anim name="toz81_recoil" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -87,7 +77,6 @@
 			<anim name="toz81_recoil" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -98,7 +87,6 @@
 			<anim name="toz81_idle" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -109,7 +97,6 @@
 			<anim name="toz81_equip" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -120,7 +107,6 @@
 			<anim name="toz81_unequip" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -131,7 +117,6 @@
 			<anim name="toz81_sprint_enter" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -142,7 +127,6 @@
 			<anim name="toz81_sprint" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -153,7 +137,6 @@
 			<anim name="toz81_sprint_exit" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -164,7 +147,6 @@
 			<anim name="toz81_unequip" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -175,7 +157,6 @@
 			<anim name="toz81_equip" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -185,8 +166,7 @@
 		<target mode="append">
 			<anim name="toz81_melee_bayonet_miss" weight="toz81"/>
 		</target>
-	</tweak> 
-		
+	</tweak>
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -196,8 +176,7 @@
 		<target mode="append">
 			<anim name="toz81_melee_bayonet" weight="toz81"/>
 		</target>
-	</tweak> 
-
+	</tweak>
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -208,7 +187,6 @@
 			<anim name="toz81_melee" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -219,7 +197,6 @@
 			<anim name="toz81_melee_miss" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -230,7 +207,6 @@
 			<anim name="toz81_use" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -241,7 +217,6 @@
 			<anim name="toz81_com_down_var1" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -252,7 +227,6 @@
 			<anim name="toz81_com_stop" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -263,7 +237,6 @@
 			<anim name="toz81_com_come" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -274,7 +247,6 @@
 			<anim name="toz81_com_point" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -285,7 +257,6 @@
 			<anim name="toz81_get_up" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -296,7 +267,6 @@
 			<anim name="toz81_gogo" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -307,7 +277,6 @@
 			<anim name="toz81_unequip" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -318,7 +287,6 @@
 			<anim name="toz81_equip" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -329,7 +297,6 @@
 			<anim name="toz81_unequip" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -340,7 +307,6 @@
 			<anim name="toz81_unequip" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -351,7 +317,6 @@
 			<anim name="toz81_unequip" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -362,7 +327,6 @@
 			<anim name="toz81_unequip" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -373,7 +337,6 @@
 			<anim name="toz81_equip" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -384,7 +347,6 @@
 			<anim name="toz81_tased" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -395,7 +357,6 @@
 			<anim name="toz81_tased_boost" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -406,7 +367,6 @@
 			<anim name="toz81_tased_exit" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -417,7 +377,6 @@
 			<anim name="toz81_tased_exit" weight="toz81"/>
 		</target>
 	</tweak>
-
 	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
 		<search>
 			<xml/>
@@ -426,6 +385,368 @@
 		</search>
 		<target mode="append">
 			<anim name="toz81_inspect" weight="toz81"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+		<target mode="attach">
+			<to name="reload_x_toz81" 					redirect="fps/reload/x_toz81"/>
+			<to name="reload_not_empty_x_toz81" 		redirect="fps/reload_not_empty/x_toz81"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil"/>
+			<anim name="m4_recoil" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_recoil" weight="x_toz81 * (1-steelsight_weight)"/>
+			<anim name="x_toz81_aim_recoil" weight="x_toz81 * steelsight_weight"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil_steelsight"/>
+			<anim name="m4_recoil" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_recoil" weight="x_toz81 * (1-steelsight_weight)"/>
+			<anim name="x_toz81_aim_recoil" weight="x_toz81 * steelsight_weight"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/idle"/>
+			<anim name="m4_idle" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_idle" weight="x_toz81 * (1-steelsight_weight)"/>
+			<anim name="x_toz81_aim" weight="x_toz81 * steelsight_weight"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/equip"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_equip" weight="x_toz81 * (1-steelsight_weight)"/>
+			<anim name="x_toz81_aim_equip" weight="x_toz81 * steelsight_weight"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/unequip"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_unequip" weight="x_toz81 * (1-steelsight_weight)"/>
+			<anim name="x_toz81_aim_unequip" weight="x_toz81 * steelsight_weight"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/start_running"/>
+			<anim name="m4_sprint_enter" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_sprint_enter" weight="x_toz81 * (1-steelsight_weight)"/>
+			<anim name="x_toz81_aim_sprint_enter" weight="x_toz81 * steelsight_weight"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/running"/>
+			<anim name="m4_sprint" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_sprint" weight="x_toz81 * (1-steelsight_weight)"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/stop_running"/>
+			<anim name="m4_sprint_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_sprint_exit" weight="x_toz81 * (1-steelsight_weight)"/>
+			<anim name="x_toz81_aim_sprint_exit" weight="x_toz81 * steelsight_weight"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_unequip" weight="x_toz81 * (1-steelsight_weight)"/>
+			<anim name="x_toz81_aim_unequip" weight="x_toz81 * steelsight_weight"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/equip"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_equip" weight="x_toz81 * (1-steelsight_weight)"/>
+			<anim name="x_toz81_aim_equip" weight="x_toz81 * steelsight_weight"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee_miss_bayonet"/>
+			<anim name="bessy_melee_miss_bayonet" weight="bessy"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_melee_bayonet_miss" weight="x_toz81 * (1-steelsight_weight)"/>
+			<anim name="x_toz81_aim_melee_bayonet_miss" weight="x_toz81 * steelsight_weight"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee_bayonet"/>
+			<anim name="bessy_melee_bayonet" weight="bessy"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_melee_bayonet" weight="x_toz81 * (1-steelsight_weight)"/>
+			<anim name="x_toz81_aim_melee_bayonet" weight="x_toz81 * steelsight_weight"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee"/>
+			<anim name="m4_melee" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_melee" weight="x_toz81 * (1-steelsight_weight)"/>
+			<anim name="x_toz81_aim_melee" weight="x_toz81 * steelsight_weight"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee_miss"/>
+			<anim name="m4_melee_miss" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_melee_miss" weight="x_toz81 * (1-steelsight_weight)"/>
+			<anim name="x_toz81_aim_melee_miss" weight="x_toz81 * steelsight_weight"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/use"/>
+			<anim name="m4_use" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_use" weight="x_toz81 * (1-steelsight_weight)"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/down"/>
+			<anim name="m4_com_down_var1" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_com_down_var1" weight="x_toz81 * (1-steelsight_weight)"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/stop"/>
+			<anim name="m4_com_stop" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_com_stop" weight="x_toz81 * (1-steelsight_weight)"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/come"/>
+			<anim name="m4_com_come" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_com_come" weight="x_toz81 * (1-steelsight_weight)"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/point"/>
+			<anim name="m4_com_point" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_com_point" weight="x_toz81 * (1-steelsight_weight)"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/get_up"/>
+			<anim name="m4_get_up" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_get_up" weight="x_toz81 * (1-steelsight_weight)"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/gogo"/>
+			<anim name="m4_gogo" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_gogo" weight="x_toz81 * (1-steelsight_weight)"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_projectile_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_unequip" weight="x_toz81 * (1-steelsight_weight)"/>
+			<anim name="x_toz81_aim_unequip" weight="x_toz81 * steelsight_weight"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_projectile_exit"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_equip" weight="x_toz81 * (1-steelsight_weight)"/>
+			<anim name="x_toz81_aim_equip" weight="x_toz81 * steelsight_weight"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_grenade_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_unequip" weight="x_toz81 * (1-steelsight_weight)"/>
+			<anim name="x_toz81_aim_unequip" weight="x_toz81 * steelsight_weight"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_molotov_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_unequip" weight="x_toz81 * (1-steelsight_weight)"/>
+			<anim name="x_toz81_aim_unequip" weight="x_toz81 * steelsight_weight"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_concussion_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_unequip" weight="x_toz81 * (1-steelsight_weight)"/>
+			<anim name="x_toz81_aim_unequip" weight="x_toz81 * steelsight_weight"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_dada_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_unequip" weight="x_toz81 * (1-steelsight_weight)"/>
+			<anim name="x_toz81_aim_unequip" weight="x_toz81 * steelsight_weight"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_grenade_exit"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_equip" weight="x_toz81 * (1-steelsight_weight)"/>
+			<anim name="x_toz81_aim_equip" weight="x_toz81 * steelsight_weight"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/tased"/>
+			<anim name="m4_tased" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_tased" weight="x_toz81 * (1-steelsight_weight)"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/tased_boost"/>
+			<anim name="m4_tased_boost" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_tased_boost" weight="x_toz81 * (1-steelsight_weight)"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/tased_exit"/>
+			<anim name="m4_tased_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_tased_exit" weight="x_toz81 * (1-steelsight_weight)"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/enter_tazer_counter"/>
+			<anim name="m4_tased_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_tased_exit" weight="x_toz81 * (1-steelsight_weight)"/>
+		</target>
+	</tweak>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/cash_inspect"/>
+			<anim name="glock_inspect" weight="glock"/>
+		</search>
+		<target mode="append">
+			<anim name="x_toz81_inspect" weight="x_toz81 * (1-steelsight_weight)"/>
+			<anim name="x_toz81_inspect" weight="x_toz81 * steelsight_weight"/>
 		</target>
 	</tweak>
 </tweaks>
