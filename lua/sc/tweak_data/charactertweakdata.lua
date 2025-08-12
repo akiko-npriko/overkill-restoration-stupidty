@@ -4302,7 +4302,7 @@ function CharacterTweakData:_init_city_swat_rpg(presets)
 	self.xof_pigglet.move_speed = presets.move_speed.lightning
 	--self.xof_pigglet.move_speed = presets.move_speed.very_fast
 	self.xof_pigglet.yellow_blood = false
-	self.xof_pigglet.HEALTH_INIT = 15
+	self.xof_pigglet.HEALTH_INIT = 12.5
 	self.xof_pigglet.headshot_dmg_mul = 2
 	self.xof_pigglet.damage.bullet_damage_mul = 1
 	self.xof_pigglet.damage.explosion_damage_mul = 1
