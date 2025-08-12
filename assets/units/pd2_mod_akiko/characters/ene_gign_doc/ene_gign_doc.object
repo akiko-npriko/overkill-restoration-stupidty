@@ -207,23 +207,6 @@
 				<object name="g_head_lod1" enabled="true" />
 			</lod_object>
             
-			<lod_object name="g_helmet_lod">
-			    <object name="g_helmet_lod1" enabled="true" cpy_material_vars="contour_color, contour_opacity">
-					<material materials="mat_light"/>
-					<material materials="mtr_ene_acc_swat_helmet"/>
-				</object>
-			</lod_object>			
-			
-			<lod_object name="g_helmet_lod_2">
-			    <object name="g_helmet_lod2" enabled="true">
-					<material materials="mat_light" max_distance="0"/>
-					<material materials="mtr_ene_acc_swat_helmet" max_distance="0"/>
-					<material materials="mtr_ene_acc_swat_helmet_lod1" />
-				</object>
-			</lod_object>
-			
-			<object name="g_helmet_lod2" enabled="false"/>		
-			
 			<object name="s_body" 			enabled="true" shadow_caster="true"/>	
 		</graphic_group>
 	</graphics>
