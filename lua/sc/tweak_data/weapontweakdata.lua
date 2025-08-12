@@ -34070,7 +34070,7 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 				"clip_ammo_increase"
 			}
 		}
-		self.iuhM79Shotgun.fire_mode_data.fire_rate = 1.3
+		self.iuhM79Shotgun.fire_mode_data.fire_rate = 1.2
 		self.iuhM79Shotgun.fire_rate_multiplier = 0.75
 		self.iuhM79Shotgun.AMMO_MAX = 18
 		self.iuhM79Shotgun.rays = 20
@@ -34092,7 +34092,7 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 			recoil = 51,
 			spread_moving = 6,
 			zoom = 1,
-			concealment = 14,
+			concealment = 23,
 			suppression = 1,
 			alert_size = 2,
 			extra_ammo = 101,
@@ -34102,11 +34102,9 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 		}
 		self.iuhM79Shotgun.panic_suppression_chance = 0.05
 		self.iuhM79Shotgun.stats_modifiers = {damage = 2}
-		self.iuhM79Shotgun.reload_speed_multiplier = 1.0
+		self.iuhM79Shotgun.reload_speed_multiplier = 1.4
 		self.iuhM79Shotgun.descope_on_fire = true
-		self.iuhM79Shotgun.timers.shotgun_reload_first_shell_offset = 0.5
-		self.iuhM79Shotgun.timers.shotgun_reload_exit_empty = 1.4
-		self.iuhM79Shotgun.timers.shotgun_reload_exit_not_empty = 0.7
+		--self.iuhM79Shotgun.timers = deep_clone(self.gre_m79.timers)
 	end
 	
 	if self.otwd_flare_gun then
