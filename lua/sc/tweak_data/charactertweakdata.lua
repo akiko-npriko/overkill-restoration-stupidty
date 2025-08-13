@@ -18213,61 +18213,62 @@ function CharacterTweakData:_presets(tweak_data)
 				}
 			}
 		},
+		--About 25% Faster at Running than Very Fast (Rest of stats similar to lightning)
 		very_fast_plus = {
 			stand = {
 				walk = {
 					ntl = {
-						fwd = 160,
-						strafe = 130,
-						bwd = 120
+						fwd = 150,
+						strafe = 120,
+						bwd = 110
 					},
 					hos = {
-						fwd = 342,
-						strafe = 342,
-						bwd = 342
+						fwd = 350,
+						strafe = 350,
+						bwd = 350
 					},
 					cbt = {
-						fwd = 342,
-						strafe = 342,
-						bwd = 342
+						fwd = 350,
+						strafe = 350,
+						bwd = 350
 					}
 				},
 				run = {
 					hos = {
-						fwd = 556,
-						strafe = 342,
-						bwd = 342
+						fwd = 683,
+						strafe = 350,
+						bwd = 350
 					},
 					cbt = {
-						fwd = 556,
-						strafe = 342,
-						bwd = 342
+						fwd = 683,
+						strafe = 350,
+						bwd = 350
 					}
 				}
 			},
 			crouch = {
 				walk = {
 					hos = {
-						fwd = 223,
-						strafe = 223,
-						bwd = 223
+						fwd = 225,
+						strafe = 225,
+						bwd = 225
 					},
 					cbt = {
-						fwd = 223,
-						strafe = 223,
-						bwd = 223
+						fwd = 225,
+						strafe = 225,
+						bwd = 225
 					}
 				},
 				run = {
 					hos = {
 						fwd = 350,
-						strafe = 223,
-						bwd = 223
+						strafe = 225,
+						bwd = 225
 					},
 					cbt = {
 						fwd = 350,
-						strafe = 223,
-						bwd = 223
+						strafe = 225,
+						bwd = 225
 					}
 				}
 			}
