@@ -459,7 +459,8 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/23258
  - Bri'ish medic (Gamebanana)
 	- https://gamebanana.com/sounds/54962
-
+ - Metal Gear Solid Alert Sound - Replace Detection Sound
+	- https://modworkshop.net/mod/14660
 	 
 # Gunsss
  - Do later there are too many i hate myself...
