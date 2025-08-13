@@ -4299,7 +4299,7 @@ function CharacterTweakData:_init_city_swat_rpg(presets)
 	--This is now flamethrower xof unit
 	self.xof_pigglet = deep_clone(self.city_swat_titan)
 	self.xof_pigglet.dodge = presets.dodge.athletic
-	self.xof_pigglet.move_speed = presets.move_speed.lightning
+	self.xof_pigglet.move_speed = presets.move_speed.very_fast_plus
 	--self.xof_pigglet.move_speed = presets.move_speed.very_fast
 	self.xof_pigglet.yellow_blood = false
 	self.xof_pigglet.HEALTH_INIT = 12.5
@@ -18212,7 +18212,66 @@ function CharacterTweakData:_presets(tweak_data)
 					}
 				}
 			}
-		}	
+		},
+		very_fast_plus = {
+			stand = {
+				walk = {
+					ntl = {
+						fwd = 160,
+						strafe = 130,
+						bwd = 120
+					},
+					hos = {
+						fwd = 342,
+						strafe = 342,
+						bwd = 342
+					},
+					cbt = {
+						fwd = 342,
+						strafe = 342,
+						bwd = 342
+					}
+				},
+				run = {
+					hos = {
+						fwd = 556,
+						strafe = 342,
+						bwd = 342
+					},
+					cbt = {
+						fwd = 556,
+						strafe = 342,
+						bwd = 342
+					}
+				}
+			},
+			crouch = {
+				walk = {
+					hos = {
+						fwd = 223,
+						strafe = 223,
+						bwd = 223
+					},
+					cbt = {
+						fwd = 223,
+						strafe = 223,
+						bwd = 223
+					}
+				},
+				run = {
+					hos = {
+						fwd = 350,
+						strafe = 223,
+						bwd = 223
+					},
+					cbt = {
+						fwd = 350,
+						strafe = 223,
+						bwd = 223
+					}
+				}
+			}
+		}
 	}
 	for speed_preset_name, poses in pairs(presets.move_speed) do
 		for pose, hastes in pairs(poses) do
@@ -18297,7 +18356,32 @@ function CharacterTweakData:_presets(tweak_data)
 				[300] = 0.2
 			}
 		}
-	}	
+	}
+	-- somehow even lower than special
+	presets.surrender.bravo_hard = {
+		base_chance = 0.25,
+		significant_chance = 0.3,
+		violence_timeout = 1.5,
+		reasons = {
+			health = {
+				[1] = 0.2,
+				[0.75] = 0.4,
+				[0.5] = 0.6,
+			},
+			weapon_down = 0.5,
+			pants_down = 1,
+			isolated = 0.12
+		},
+		factors = {
+			flanked = 0.03,
+			unaware_of_aggressor = 0.1,
+			enemy_weap_cold = 0.11,
+			aggressor_dis = {
+				[1000] = 0,
+				[300] = 0.2
+			}
+		}
+	}
 	presets.surrender.special = {
 		base_chance = 0.25,
 		significant_chance = 0.35,
