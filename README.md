@@ -461,6 +461,8 @@ Yanked coding from... (intergrated into mod)
 	- https://gamebanana.com/sounds/54962
  - Metal Gear Solid Alert Sound - Replace Detection Sound
 	- https://modworkshop.net/mod/14660
+ - Custom Weapon Reverb (loudday2 reverb test v2)
+	- https://github.com/Sokolov49/pepemods/blob/main/overrides%20folder/Custom%20Weapon%20Reverb/loudday2%20reverb%20test%20v2.zip
 	 
 # Gunsss
  - Do later there are too many i hate myself...
