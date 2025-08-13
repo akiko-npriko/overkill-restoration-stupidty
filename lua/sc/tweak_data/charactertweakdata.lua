@@ -4450,8 +4450,8 @@ end
 function CharacterTweakData:_init_gign_doc(presets)
 	self.gign_doc = deep_clone(self.medic)
 	self.gign_doc.HEALTH_INIT = 50
-	self.gign_doc.headshot_dmg_mul = 1.75
-	self.gign_doc.move_speed = presets.move_speed.fast
+	self.gign_doc.headshot_dmg_mul = 3
+	self.gign_doc.move_speed = presets.move_speed.very_fast_plus
 	self.gign_doc.speech_prefix_p1 = "define me pure hate"
 	self.gign_doc.speech_prefix_p2 = nil
 	self.gign_doc.speech_prefix_count = nil
