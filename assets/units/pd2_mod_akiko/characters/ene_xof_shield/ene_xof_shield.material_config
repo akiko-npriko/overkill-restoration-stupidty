@@ -6,13 +6,13 @@
 	</material>
 		<material name="mtr_helmet.001" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:RL_COPS" version="2">
 		<!-- I'm a lazy fuck and i'm too lazy to rename it in blender -->
-		<bump_normal_texture 	file="units/pd2_dlc_gitgud/characters/ene_zeal_swat/yeehaw_nm"/>
-		<diffuse_texture 		file="units/pd2_dlc_gitgud/characters/ene_zeal_swat/yeehaw_df"/>
+		<bump_normal_texture 	file="units/pd2_mod_akiko/characters/shared_textures/yeehaw_nm"/>
+		<diffuse_texture 		file="units/pd2_mod_akiko/characters/shared_textures/yeehaw_df"/>
 	</material>
 	<material name="mtr_swat.001" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:RL_COPS:SKINNED_3WEIGHTS" version="2">
 	<!-- this too lmao -->
-		<bump_normal_texture 	file="units/pd2_dlc_gitgud/characters/ene_zeal_swat/a_ene_zeal_swat_nm"/>
-		<diffuse_texture 		file="units/pd2_dlc_gitgud/characters/ene_zeal_swat/a_ene_zeal_swat_df"/>
+		<bump_normal_texture 	file="units/pd2_mod_akiko/characters/shared_textures/xof_light_nm"/>
+		<diffuse_texture 		file="units/pd2_mod_akiko/characters/shared_textures/xof_light_df"/>
 	</material>
 	    <material render_template="generic:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:SKINNED_3WEIGHTS" unique="true" name="mtr_arms" version="2">
         <bump_normal_texture file="units/pd2_dlc_sus/characters/sus_npc_male_arms/npc_male_criminals_arms_caucasian_nm"/>
