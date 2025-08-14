@@ -7,7 +7,7 @@ function SoundTweakData:_init_acoustics()
 	}
 	self.acoustics.pd2_acoustics_flat = {
 		states = {
-			acoustic_flag = "acoustic_flat"
+			acoustic_flag = "acoustic_indoors_small"
 		}
 	}
 	self.acoustics.pd2_acoustics_indoor_small = {
