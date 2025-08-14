@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <materials version="3" group="ene_tazer_1">
 	<material name="mtr_body" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:RL_COPS:SKINNED_3WEIGHTS" version="2">
-		<bump_normal_texture 	file="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/body_nm"/>
-		<diffuse_texture 		file="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/body_df"/>
-		<material_texture 		file="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/body_gsma"/>
+		<bump_normal_texture 	file="units/pd2_mod_akiko/characters/shared_textures/xof_volunteer/body_nm"/>
+		<diffuse_texture 		file="units/pd2_mod_akiko/characters/shared_textures/xof_volunteer/body_df"/>
+		<material_texture 		file="units/pd2_mod_akiko/characters/shared_textures/xof_volunteer/body_gsma"/>
 		 <variable value="1 1 1" type="vector3" name="contour_color"/>
         <variable value="0" 	type="scalar" name="contour_opacity"/>
 	</material>
 	<material name="mtr_arms" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:RL_COPS:SKINNED_3WEIGHTS" version="2">
-		<bump_normal_texture 	file="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/arm_nm"/>
-		<diffuse_texture 		file="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/arm_df"/>
-		<material_texture 		file="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/arm_gsma"/>
+		<bump_normal_texture 	file="units/pd2_mod_akiko/characters/shared_textures/xof_volunteer/arm_nm"/>
+		<diffuse_texture 		file="units/pd2_mod_akiko/characters/shared_textures/xof_volunteer/arm_df"/>
+		<material_texture 		file="units/pd2_mod_akiko/characters/shared_textures/xof_volunteer/arm_gsma"/>
 		 <variable value="1 1 1" type="vector3" name="contour_color"/>
         <variable value="0" 	type="scalar" name="contour_opacity"/>
 	</material>
@@ -21,51 +21,51 @@
         <variable value="0" 	type="scalar" name="contour_opacity"/>
 	</material>
 	<material name="mtr_hand" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:NORMALMAP:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SKINNED_3WEIGHTS" version="2">
-		<bump_normal_texture 	file="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/robot_nm"/>
-		<diffuse_texture 		file="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/robot_df"/>
-	<self_illumination_texture  file="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/robot_gsma"/>
+		<bump_normal_texture 	file="units/pd2_mod_akiko/characters/shared_textures/xof_volunteer/robot_nm"/>
+		<diffuse_texture 		file="units/pd2_mod_akiko/characters/shared_textures/xof_volunteer/robot_df"/>
+	<self_illumination_texture  file="units/pd2_mod_akiko/characters/shared_textures/xof_volunteer/robot_gsma"/>
 		<variable type="scalar" name="il_multiplier" value="identity"/>
         <variable type="scalar" name="il_bloom" value="4.23423458937465347895"/>
 		<variable value="1 1 1" type="vector3" name="contour_color"/>
         <variable value="0" 	type="scalar" name="contour_opacity"/>
 	</material>
 	<material name="mat_knife" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:RL_COPS:SKINNED_3WEIGHTS" version="2">
-		<bump_normal_texture 	file="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/knife_nm"/>
-		<diffuse_texture 		file="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/knife_df"/>
-		<material_texture 		file="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/knife_gsma"/>
+		<bump_normal_texture 	file="units/pd2_mod_akiko/characters/shared_textures/xof_volunteer/knife_nm"/>
+		<diffuse_texture 		file="units/pd2_mod_akiko/characters/shared_textures/xof_volunteer/knife_df"/>
+		<material_texture 		file="units/pd2_mod_akiko/characters/shared_textures/xof_volunteer/knife_gsma"/>
 		 <variable value="1 1 1" type="vector3" name="contour_color"/>
         <variable value="0" 	type="scalar" name="contour_opacity"/>
 	</material>
 	<material name="mtr_recorder" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:RL_COPS:SKINNED_3WEIGHTS" version="2">
-		<bump_normal_texture 	file="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/recorder_nm"/>
-		<diffuse_texture 		file="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/recorder_df"/>
-		<material_texture 		file="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/recorder_gsma"/>
+		<bump_normal_texture 	file="units/pd2_mod_akiko/characters/shared_textures/xof_volunteer/recorder_nm"/>
+		<diffuse_texture 		file="units/pd2_mod_akiko/characters/shared_textures/xof_volunteer/recorder_df"/>
+		<material_texture 		file="units/pd2_mod_akiko/characters/shared_textures/xof_volunteer/recorder_gsma"/>
 		 <variable value="1 1 1" type="vector3" name="contour_color"/>
         <variable value="0" 	type="scalar" name="contour_opacity"/>
 	</material>
 	<material name="mtr_goofy_cowboy_hats" render_template="opacity:DIFFUSE_TEXTURE:SKINNED_3WEIGHTS" version="2">
-		<diffuse_texture 		file="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/logo_df"/>
-		<opacity_texture 		file="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/logo_op"/>
+		<diffuse_texture 		file="units/pd2_mod_akiko/characters/shared_textures/xof_volunteer/logo_df"/>
+		<opacity_texture 		file="units/pd2_mod_akiko/characters/shared_textures/xof_volunteer/logo_op"/>
 	</material>
 	
 	<material name="mtr_spikey" render_template="generic:CONTOUR:DIFFUSE_TEXTURE:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:RL_COPS:SKINNED_3WEIGHTS" version="2">
-		<bump_normal_texture 	file="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/horn_nm"/>
-		<diffuse_texture 		file="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/horn_df"/>
-		<material_texture 		file="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/horn_gsma"/>
+		<bump_normal_texture 	file="units/pd2_mod_akiko/characters/shared_textures/xof_volunteer/horn_nm"/>
+		<diffuse_texture 		file="units/pd2_mod_akiko/characters/shared_textures/xof_volunteer/horn_df"/>
+		<material_texture 		file="units/pd2_mod_akiko/characters/shared_textures/xof_volunteer/horn_gsma"/>
 		 <variable value="1 1 1" type="vector3" name="contour_color"/>
         <variable value="0" 	type="scalar" name="contour_opacity"/>
 	</material>
 	<material name="mtr_gasmask" render_template="generic:DIFFUSE_TEXTURE:DOUBLE_SIDED:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:RL_COPS:SKINNED_3WEIGHTS" version="2">
-		<bump_normal_texture 	file="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/gasmask_nm"/>
-		<diffuse_texture 		file="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/gasmask_df"/>
-		<material_texture 		file="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/gasmask_gsma"/>
+		<bump_normal_texture 	file="units/pd2_mod_akiko/characters/shared_textures/xof_volunteer/gasmask_nm"/>
+		<diffuse_texture 		file="units/pd2_mod_akiko/characters/shared_textures/xof_volunteer/gasmask_df"/>
+		<material_texture 		file="units/pd2_mod_akiko/characters/shared_textures/xof_volunteer/gasmask_gsma"/>
 		 <variable value="1 1 1" type="vector3" name="contour_color"/>
         <variable value="0" 	type="scalar" name="contour_opacity"/>
 	</material>
 	<material name="mtr_mask" render_template="generic:DIFFUSE_TEXTURE:DOUBLE_SIDED:GLOBAL_ENVIRONMENT_MAPPING:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP:RL_COPS:SKINNED_3WEIGHTS" version="2">
-		<bump_normal_texture 	file="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/eyepatch_nm"/>
-		<diffuse_texture 		file="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/eyepatch_df"/>
-		<material_texture 		file="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/eyepatch_gsma"/>
+		<bump_normal_texture 	file="units/pd2_mod_akiko/characters/shared_textures/xof_volunteer/eyepatch_nm"/>
+		<diffuse_texture 		file="units/pd2_mod_akiko/characters/shared_textures/xof_volunteer/eyepatch_df"/>
+		<material_texture 		file="units/pd2_mod_akiko/characters/shared_textures/xof_volunteer/eyepatch_gsma"/>
 		 <variable value="1 1 1" type="vector3" name="contour_color"/>
         <variable value="0" 	type="scalar" name="contour_opacity"/>
 	</material>
