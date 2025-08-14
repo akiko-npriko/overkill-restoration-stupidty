@@ -62,6 +62,10 @@ function CharacterTweakData:init(tweak_data, presets)
 	
 	--Akiko Extras Charactertweaks (if attempt to index field '_char_tweak' then u forgot to put function here)
 	self:_init_xof_volunteer(presets)
+	self:_init_xof_swat(presets)
+	self:_init_xof_markman(presets)
+	self:_init_xof_heavy_swat(presets)
+	self:_init_xof_shield(presets)
 	
 	--Rest of Res Stuff
 	self:_process_weapon_usage_table()
@@ -877,7 +881,6 @@ function CharacterTweakData:_init_swat(presets)
 	self.hrt_titan.no_asu = true
 	self.hrt_titan.marshal_logic = true
 	table.insert(self._enemy_list, "hrt_titan")
-	self:_init_xof_swat(presets)
 end
 
 function CharacterTweakData:_init_heavy_swat(presets)	
@@ -1047,8 +1050,6 @@ function CharacterTweakData:_init_heavy_swat(presets)
 	self.weekend_dmr_scripted.die_sound_event_2 = "mga_death_scream"
 	self.weekend_dmr_scripted.damage.hurt_severity = presets.hurt_severities.no_hurts
 	table.insert(self._enemy_list, "weekend_dmr")
-	self:_init_xof_markman(presets)
-	self:_init_xof_heavy_swat(presets)
 end
 
 function CharacterTweakData:_init_fbi_swat(presets)	
@@ -3154,7 +3155,6 @@ function CharacterTweakData:_init_shield(presets)
 		self.shield.custom_voicework = nil
 	end
 	table.insert(self._enemy_list, "shield")
-	self:_init_xof_shield(presets)
 end
 
 function CharacterTweakData:_init_phalanx_minion(presets)	
