@@ -206,9 +206,14 @@
 	<texture path="effects/textures/fire/e_fire_dynamic_01_8x4_seq_loop_white"/>
 	<texture path="effects/textures/fire/e_fire_dynamic_01_8x4_seq_loop_gold"/>
 	
-	<model path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/ene_zeal_tazer" force="true"/>
+	<!--Tazer Stuff Remove Later-->
+	<!--model path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/ene_zeal_tazer" force="true"/>
+	<object path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/ene_zeal_tazer" force="true"/>
 	<material_config path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/ene_zeal_tazer" force="true"/>
 	<material_config path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/ene_zeal_tazer_contour" force="true"/>
+	<object path="units/pd2_dlc_gitgud/characters/ene_acc_zeal_tazer_helmet/ene_acc_zeal_tazer_helmet" force="true"/-->
+	
+	<!--Textures for Xof Vol... Move Later-->
 	<df_nm_gsma path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/arm"/>
 	<df_nm_gsma path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/body"/>
 	<df_nm_gsma path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/eyepatch"/>
@@ -219,7 +224,6 @@
 	<texture path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/logo_op"/>
 	<df_nm_gsma path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/recorder"/>
 	<df_nm_gsma path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/robot"/>
-	<object path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/ene_zeal_tazer" force="true"/>
 	<texture path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/logo_df"/>
 	<texture path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer/logo_op"/>
 	
@@ -228,7 +232,6 @@
 	<model path="units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield" force="true"/>
 	
 	<object path="units/pd2_dlc_gitgud/characters/ene_acc_zeal_swat_heavy_helmet/ene_acc_zeal_swat_heavy_helmet" force="true"/>
-	<object path="units/pd2_dlc_gitgud/characters/ene_acc_zeal_tazer_helmet/ene_acc_zeal_tazer_helmet" force="true"/>
 	<material_config path="units/pd2_dlc_gitgud/characters/ene_acc_zeal_swat_helmet/ene_acc_zeal_swat_helmet" force="true"/>
 	<model path="units/pd2_dlc_gitgud/characters/ene_acc_zeal_swat_helmet/ene_acc_zeal_swat_helmet" force="true"/>
 	

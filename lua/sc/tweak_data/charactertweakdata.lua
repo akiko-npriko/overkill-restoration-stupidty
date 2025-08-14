@@ -4298,6 +4298,7 @@ function CharacterTweakData:_init_city_swat_rpg(presets)
 	
 	--This is now flamethrower xof unit
 	self.xof_pigglet = deep_clone(self.city_swat_titan)
+	self.xof_pigglet.special_deaths = nil
 	self.xof_pigglet.dodge = presets.dodge.athletic
 	self.xof_pigglet.move_speed = presets.move_speed.very_fast_plus
 	--self.xof_pigglet.move_speed = presets.move_speed.very_fast
@@ -4398,6 +4399,7 @@ end
 
 function CharacterTweakData:_init_xof_shield(presets)
 	self.xof_shield = deep_clone(self.shield)
+	self.xof_shield.special_deaths = nil
 	self.xof_shield.speech_prefix_p1 = "define me pure hate"
 	self.xof_shield.speech_prefix_p2 = nil
 	self.xof_shield.speech_prefix_count = nil
@@ -4415,6 +4417,7 @@ end
 
 function CharacterTweakData:_init_xof_markman(presets)
 	self.xof_markman = deep_clone(self.heavy_swat_sniper)
+	self.xof_markman.special_deaths = nil
 	self.xof_markman.speech_prefix_p1 = "define me pure hate"
 	self.xof_markman.speech_prefix_p2 = nil
 	self.xof_markman.speech_prefix_count = nil
@@ -4425,6 +4428,7 @@ end
 
 function CharacterTweakData:_init_xof_heavy_swat(presets)
 	self.xof_heavy_swat = deep_clone(self.heavy_swat)
+	self.xof_heavy_swat.special_deaths = nil
 	self.xof_heavy_swat.speech_prefix_p1 = "define me pure hate"
 	self.xof_heavy_swat.speech_prefix_p2 = nil
 	self.xof_heavy_swat.speech_prefix_count = nil
@@ -4438,6 +4442,7 @@ end
 
 function CharacterTweakData:_init_xof_swat(presets)
 	self.xof_swat = deep_clone(self.swat)
+	self.xof_swat.special_deaths = nil
 	self.xof_swat.speech_prefix_p1 = "define me pure hate"
 	self.xof_swat.speech_prefix_p2 = nil
 	self.xof_swat.speech_prefix_count = nil
@@ -4447,8 +4452,22 @@ function CharacterTweakData:_init_xof_swat(presets)
 	table.insert(self._enemy_list, "xof_swat")
 end
 
+function CharacterTweakData:_init_xof_volunteer(presets)
+	--Modify Stats Later no time now
+	self.xof_volunteer = deep_clone(self.taser)
+	self.xof_volunteer.special_deaths = nil
+	self.xof_volunteer.speech_prefix_p1 = "define me pure hate"
+	self.xof_volunteer.speech_prefix_p2 = nil
+	self.xof_volunteer.speech_prefix_count = nil
+	self.xof_volunteer.custom_voicework = "combine_elite"
+	self.xof_volunteer.yellow_blood = false
+	self.xof_volunteer.can_shoot_while_dodging = true
+	table.insert(self._enemy_list, "xof_volunteer")
+end
+
 function CharacterTweakData:_init_gign_doc(presets)
 	self.gign_doc = deep_clone(self.medic)
+	self.gign_doc.special_deaths = nil
 	self.gign_doc.HEALTH_INIT = 50
 	self.gign_doc.headshot_dmg_mul = 5
 	self.gign_doc.move_speed = presets.move_speed.very_fast_plus
@@ -20151,7 +20170,8 @@ function CharacterTweakData:character_map()
 				"ene_xof_heavy_sniper",
 				"ene_xof_light",
 				"ene_xof_shield",
-				"ene_gign_doc"
+				"ene_gign_doc",
+				"ene_xof_volunteer"
 			}
 		}
 

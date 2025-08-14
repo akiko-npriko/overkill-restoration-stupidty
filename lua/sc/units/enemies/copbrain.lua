@@ -302,6 +302,8 @@ logic_variants.xof_markman.attack = MarshalLogicAttack
 
 logic_variants.xof_heavy_swat = clone(security_variant)
 logic_variants.xof_swat = clone(security_variant)
+logic_variants.xof_volunteer = clone(security_variant)
+logic_variants.xof_volunteer.attack = TaserLogicAttack
 
 logic_variants.gign_doc = security_variant
 
