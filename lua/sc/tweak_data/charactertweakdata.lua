@@ -59,13 +59,18 @@ function CharacterTweakData:init(tweak_data, presets)
 	self:_init_tank_biker(presets)
 	self:_init_zombie(presets)
 	self:_init_heavygunner(presets)
+	self:_init_city_swat_rpg(presets)
 	
 	--Akiko Extras Charactertweaks (if attempt to index field '_char_tweak' then u forgot to put function here)
-	self:_init_xof_volunteer(presets)
 	self:_init_xof_swat(presets)
 	self:_init_xof_markman(presets)
 	self:_init_xof_heavy_swat(presets)
 	self:_init_xof_shield(presets)
+	self:_init_xof_pigglet(presets)
+	self:_init_xof_volunteer(presets)
+	self:_init_gign_doc(presets)
+	self:_init_us_warthog(presets)
+	self:_init_shield_dozers(presets)
 	
 	--Rest of Res Stuff
 	self:_process_weapon_usage_table()
@@ -709,8 +714,6 @@ function CharacterTweakData:_init_medic(presets)
 	self.medic_summers.min_obj_interrupt_dis = 300
 	self.medic_summers.reduce_summers_dr_on_death = true
 	table.insert(self._enemy_list, "medic_summers")
-	
-	self:_init_gign_doc(presets)
 end
 
 function CharacterTweakData:_init_omnia_lpf(presets)	
@@ -1364,9 +1367,6 @@ function CharacterTweakData:_init_city_swat(presets)
 		self.weekend_elite_guard.access = "security"
 	end
 	table.insert(self._enemy_list, "weekend_elite_guard")
-	
-	self:_init_city_swat_rpg(presets)
-	
 end
 
 function CharacterTweakData:_init_sniper(presets)	
@@ -2798,9 +2798,6 @@ function CharacterTweakData:_init_tank(presets)
 	self.tank_mini.grenade_toss_chance = 0.4
 	self.tank_mini.spawn_sound_event = self._prefix_data_p1.bulldozer() .. "_entrance_elite"
 	table.insert(self._enemy_list, "tank_mini")	
-	
-	self:_init_us_warthog(presets)
-	self:_init_shield_dozers(presets)
 end
 
 function CharacterTweakData:_init_tank_biker(presets)
@@ -4300,7 +4297,9 @@ function CharacterTweakData:_init_city_swat_rpg(presets)
 	self.city_swat_rpg.damage.tase_damage_mul = 1
 	self.city_swat_rpg.custom_voicework = "rpg_grunt"
 	table.insert(self._enemy_list, "city_swat_rpg")
-	
+end
+
+function CharacterTweakData:_init_xof_pigglet(presets)
 	--This is now flamethrower xof unit
 	self.xof_pigglet = deep_clone(self.city_swat_titan)
 	self.xof_pigglet.special_deaths = nil
