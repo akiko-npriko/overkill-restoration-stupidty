@@ -2032,7 +2032,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			unit_types = {
 				america = {
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer_sc/ene_zeal_tazer_sc"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer/ene_zeal_tazer"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_volunteer/ene_xof_volunteer"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer_sc/ene_zeal_tazer_sc"),
 					Idstring("units/pd2_dlc_vip/characters/ene_titan_taser/ene_titan_taser")
 				},
@@ -2062,19 +2062,19 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 				},		
 				nypd = {
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer_sc/ene_zeal_tazer_sc"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer/ene_zeal_tazer"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_volunteer/ene_xof_volunteer"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer_sc/ene_zeal_tazer_sc"),
 					Idstring("units/pd2_dlc_vip/characters/ene_titan_taser/ene_titan_taser")
 				},	
 				lapd = {
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer_sc/ene_zeal_tazer_sc"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer/ene_zeal_tazer"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_volunteer/ene_xof_volunteer"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer_sc/ene_zeal_tazer_sc"),
 					Idstring("units/pd2_dlc_vip/characters/ene_titan_taser/ene_titan_taser")		
 				},
 				fbi = {
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer_sc/ene_zeal_tazer_sc"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer/ene_zeal_tazer"),
+					Idstring("units/pd2_mod_akiko/characters/ene_xof_volunteer/ene_xof_volunteer"),
 					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer_sc/ene_zeal_tazer_sc"),
 					Idstring("units/pd2_dlc_vip/characters/ene_titan_taser/ene_titan_taser")
 				}				
@@ -11183,7 +11183,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		unit_types = {
 			america = {
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer_sc/ene_zeal_tazer_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer/ene_zeal_tazer"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_volunteer/ene_xof_volunteer"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer_sc/ene_zeal_tazer_sc"),
 				Idstring("units/pd2_dlc_vip/characters/ene_titan_taser/ene_titan_taser")
 			},
@@ -11213,19 +11213,19 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			},		
 			nypd = {
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer_sc/ene_zeal_tazer_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer/ene_zeal_tazer"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_volunteer/ene_xof_volunteer"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer_sc/ene_zeal_tazer_sc"),
 				Idstring("units/pd2_dlc_vip/characters/ene_titan_taser/ene_titan_taser")
 			},	
 			lapd = {
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer_sc/ene_zeal_tazer_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer/ene_zeal_tazer"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_volunteer/ene_xof_volunteer"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer_sc/ene_zeal_tazer_sc"),
 				Idstring("units/pd2_dlc_vip/characters/ene_titan_taser/ene_titan_taser")		
 			},
 			fbi = {
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer_sc/ene_zeal_tazer_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer/ene_zeal_tazer"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_volunteer/ene_xof_volunteer"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer_sc/ene_zeal_tazer_sc"),
 				Idstring("units/pd2_dlc_vip/characters/ene_titan_taser/ene_titan_taser")
 			}				
@@ -11239,7 +11239,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		unit_types = {
 			america = {
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer_sc/ene_zeal_tazer_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer/ene_zeal_tazer"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_volunteer/ene_xof_volunteer"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer_sc/ene_zeal_tazer_sc"),
 				Idstring("units/pd2_dlc_vip/characters/ene_titan_taser/ene_titan_taser")
 			},
@@ -11269,19 +11269,19 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			},		
 			nypd = {
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer_sc/ene_zeal_tazer_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer/ene_zeal_tazer"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_volunteer/ene_xof_volunteer"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer_sc/ene_zeal_tazer_sc"),
 				Idstring("units/pd2_dlc_vip/characters/ene_titan_taser/ene_titan_taser")
 			},	
 			lapd = {
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer_sc/ene_zeal_tazer_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer/ene_zeal_tazer"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_volunteer/ene_xof_volunteer"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer_sc/ene_zeal_tazer_sc"),
 				Idstring("units/pd2_dlc_vip/characters/ene_titan_taser/ene_titan_taser")		
 			},
 			fbi = {
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer_sc/ene_zeal_tazer_sc"),
-				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer/ene_zeal_tazer"),
+				Idstring("units/pd2_mod_akiko/characters/ene_xof_volunteer/ene_xof_volunteer"),
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer_sc/ene_zeal_tazer_sc"),
 				Idstring("units/pd2_dlc_vip/characters/ene_titan_taser/ene_titan_taser")
 			}				
