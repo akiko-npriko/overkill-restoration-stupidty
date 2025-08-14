@@ -59,6 +59,11 @@ function CharacterTweakData:init(tweak_data, presets)
 	self:_init_tank_biker(presets)
 	self:_init_zombie(presets)
 	self:_init_heavygunner(presets)
+	
+	--Akiko Extras Charactertweaks (if attempt to index field '_char_tweak' then u forgot to put function here)
+	self:_init_xof_volunteer(presets)
+	
+	--Rest of Res Stuff
 	self:_process_weapon_usage_table()
 	
 	--Dozer Armor Multiplier, lower means more EHP
