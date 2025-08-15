@@ -68,7 +68,8 @@ function MutatorsManager:init()
 		MutatorHighNoon:new(self),
 		MutatorHeavyMedics:new(self),
 		MutatorRocketGrunts:new(self),
-		MutatorDEBUGGGGGTANK:new(self)
+		MutatorDEBUGGGGGTANK:new(self),
+		MutatorFactionsReplacer:new(self)
 	}
 	self._active_mutators = {}
 	local activate = Global.mutators and Global.mutators.active_on_load
