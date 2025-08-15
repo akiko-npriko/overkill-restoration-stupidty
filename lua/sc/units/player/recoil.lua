@@ -717,3 +717,135 @@ local currentKick = 0
 function FPCameraPlayerBase:isPlayerStillReceivingRecoilKick()
 	return accumulatedKick ~= currentKick
 end
+
+Hooks:PostHook(FPCameraPlayerBase, "update", "viewmodel_tweaks", function(self, unit, t, dt)
+    local p_unit = self._parent_unit
+    local p_mov = self._parent_movement_ext
+	local p_cam = p_unit:camera()
+    local p_equipped = p_unit:inventory():equipped_unit()
+
+    if p_mov._current_state == nil then
+        return
+    end
+    
+    local p_rot = unit:rotation()
+
+    local in_sight = p_mov._current_state:in_steelsight()
+    local in_air = p_mov:in_air()
+    local input_axis = p_unit:base():controller():get_input_axis("move")
+	local in_walk = not in_air and mvector3.length(input_axis) ~= 0
+    local in_run = in_walk and p_mov:running()
+    
+    local deltaT = math.max(dt, .0016)
+    local lp_speed = 16 * deltaT
+    local t_pi_2 = t * math.pi * 2
+
+    -----------------------------------------------------------------------------------------------------------------------------
+    -----------------------------------------------------------------------------------------------------------------------------
+
+    -- VM Tweaks
+
+    previousFrequency = previousFrequency or {}
+    phaseOffset = phaseOffset or {}
+
+    local function getWaveValue(frequency, socket)
+        previousFrequency[socket] = previousFrequency[socket] or 0
+        phaseOffset[socket] = phaseOffset[socket] or 0
+
+        if frequency ~= previousFrequency[socket] then
+            phaseOffset[socket] = phaseOffset[socket] + (previousFrequency[socket] - frequency) * t * math.pi * 2
+            previousFrequency[socket] = frequency
+        end
+        return t * frequency * math.pi * 2 + phaseOffset[socket]
+    end
+
+    -----------------------------------------------------------------------------------------------------------------------------
+
+    local mov_lp_speed = deltaT * 5.5
+    local run_mul = in_run and 1.65 or 1
+    local mov_mul = in_sight and 0.15 or (in_run and 3.65 or 1.75)
+
+    mov_pos = mov_pos or Vector3()
+    mov_ang = mov_ang or Rotation()
+
+	mrotation.slerp(mov_ang, mov_ang, in_walk and Rotation(math.cos(getWaveValue(64 * run_mul, 1)) * mov_mul, math.sin(getWaveValue(128 * run_mul, 2)) * mov_mul, math.sin(getWaveValue(64 * run_mul, 1)) * mov_mul) or Rotation(), mov_lp_speed)
+
+    -----------------------------------------------------------------------------------------------------------------------------
+
+    look_pos = look_pos or Vector3()
+
+	mvector3.lerp(look_pos, look_pos, (not in_sight) and Vector3(0, 0, -unit:rotation():pitch() / 48) or Vector3(), lp_speed)
+    
+    -----------------------------------------------------------------------------------------------------------------------------
+
+    local tilt_lp_speed = deltaT * 5.5
+
+    tilt_pos = tilt_pos or Vector3()
+    tilt_ang = tilt_ang or Rotation()
+
+	mvector3.lerp(tilt_pos, tilt_pos, (not in_air) and Vector3((not in_sight and 16 or 0.5) * input_axis.x / 16, 0, (not in_sight and 2.25 or 0.4) * input_axis.x / 2) or Vector3(), tilt_lp_speed)
+    mrotation.slerp(tilt_ang, tilt_ang, (not in_air) and Rotation(0, 0, (not in_sight and 2.25 or 0.5) * input_axis.x * 2.625) or Rotation(), tilt_lp_speed)
+    
+    -----------------------------------------------------------------------------------------------------------------------------
+
+    local jump_lp_speed = deltaT * 8
+    local z_vel = p_unit:velocity().z / 5
+
+    z_last_vel = z_last_vel or 0
+	jump_wobble = jump_wobble or 0
+    invert_jump_wobble = invert_jump_wobble or 0
+
+	jump_pos = jump_pos or Vector3()
+
+	invert_jump_wobble = math.lerp(invert_jump_wobble, jump_wobble, jump_lp_speed)
+    jump_wobble = math.lerp(jump_wobble, (z_last_vel - z_vel) + (jump_wobble - invert_jump_wobble), jump_lp_speed)
+	mvector3.lerp(jump_pos, jump_pos, Vector3(0, 0, ((not in_sight and 0.85 or 0.05) * jump_wobble)) / (deltaT * 100), jump_lp_speed * 4)
+
+    z_last_vel = z_vel
+
+    -----------------------------------------------------------------------------------------------------------------------------
+
+	local sway_lp_speed = deltaT * 16
+
+	last_p_rot = last_p_rot or Rotation()
+
+	local p_rot_diff = Rotation(p_rot:yaw() - last_p_rot:yaw(), p_rot:pitch() - last_p_rot:pitch(), p_rot:roll() - last_p_rot:roll())
+	p_rot_diff_yaw = p_rot_diff_yaw and math.clamp(p_rot_diff:yaw(), -5, 5) * (not in_sight and 0.45 or 0.035) or 0
+	p_rot_diff_pitch = p_rot_diff_pitch and math.clamp(p_rot_diff:pitch(), -5, 5) * (not in_sight and 0.45 or 0.035) or 0
+
+    sway_yaw = sway_yaw or 0
+	invert_sway_yaw = invert_sway_yaw and math.lerp(invert_sway_yaw, sway_yaw, sway_lp_speed) or 0
+    sway_yaw = math.lerp(sway_yaw, p_rot_diff_yaw + (sway_yaw - invert_sway_yaw), sway_lp_speed)
+
+	sway_pitch = sway_pitch or 0
+	invert_sway_pitch = invert_sway_pitch and math.lerp(invert_sway_pitch, sway_pitch, sway_lp_speed) or 0
+    sway_pitch = math.lerp(sway_pitch, p_rot_diff_pitch + (sway_pitch - invert_sway_pitch), sway_lp_speed)
+
+	last_p_rot = p_rot
+
+	sway_pos = sway_pos or Vector3()
+	mvector3.lerp(sway_pos, sway_pos, Vector3(sway_yaw / 2, -sway_yaw / 2, -sway_pitch / 4), sway_lp_speed)
+
+	sway_ang = sway_ang or Rotation()
+	mrotation.slerp(sway_ang, sway_ang, Rotation(sway_yaw * 2, sway_pitch * 2, 0), sway_lp_speed)
+
+    -----------------------------------------------------------------------------------------------------------------------------
+
+    local wall_lp_speed = deltaT * 8
+	wall_pos = wall_pos or Vector3()
+
+	if p_equipped then
+		local from = p_cam:position() + p_cam:forward()
+		local to = p_cam:position() + p_cam:forward() * 100
+
+		local ray = self._unit:raycast("ray", from, to, "slot_mask", managers.slot:get_mask("bullet_impact_targets"))
+
+		mvector3.lerp(wall_pos, wall_pos, ray and (-math.Y * (10 - ray.distance / 10)) or Vector3(), wall_lp_speed)
+	end
+
+    -----------------------------------------------------------------------------------------------------------------------------
+
+    mvector3.set(self._vel_overshot.translation, mov_pos + look_pos + tilt_pos + jump_pos + sway_pos + wall_pos)
+    mrotation.set_zero(self._vel_overshot.rotation)
+	mrotation.multiply(self._vel_overshot.rotation, mov_ang * tilt_ang * sway_ang)
+end)

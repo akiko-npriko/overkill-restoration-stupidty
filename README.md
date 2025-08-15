@@ -463,6 +463,8 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/14660
  - Custom Weapon Reverb (loudday2 reverb test v2)
 	- https://github.com/Sokolov49/pepemods/blob/main/overrides%20folder/Custom%20Weapon%20Reverb/loudday2%20reverb%20test%20v2.zip
+ - Viewmodel Tweaks
+	- https://modworkshop.net/mod/53453
 	 
 # Gunsss
  - Do later there are too many i hate myself...
