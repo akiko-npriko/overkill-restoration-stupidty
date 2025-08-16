@@ -16,7 +16,6 @@ Update 1.5
 	- Cluster Bomb
 	- First-Aid-Kit-Bomb
 	- Poison Kunai
-	- Brick
 	- Pocket Sand
 
 Update 1.1???
@@ -345,8 +344,6 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/21316
  - Poison Kunai
 	- https://modworkshop.net/mod/21367
- - Brick
-	- https://modworkshop.net/mod/36470
  - Pocket Sand
 	- https://modworkshop.net/mod/40581
  - Who's there? (Only in Stealth)
