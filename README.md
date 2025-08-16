@@ -467,6 +467,8 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/53453
  - CIA Marshals
 	- https://modworkshop.net/mod/39963
+ - ATF Field Agent over US Marshal
+	- https://modworkshop.net/mod/38787
 	 
 # Gunsss
  - Do later there are too many i hate myself...
