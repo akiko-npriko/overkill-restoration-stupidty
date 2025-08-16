@@ -465,6 +465,8 @@ Yanked coding from... (intergrated into mod)
 	- https://github.com/Sokolov49/pepemods/blob/main/overrides%20folder/Custom%20Weapon%20Reverb/loudday2%20reverb%20test%20v2.zip
  - Viewmodel Tweaks
 	- https://modworkshop.net/mod/53453
+ - CIA Marshals
+	- https://modworkshop.net/mod/39963
 	 
 # Gunsss
  - Do later there are too many i hate myself...
