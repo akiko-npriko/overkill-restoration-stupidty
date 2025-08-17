@@ -15499,7 +15499,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat")
 			},
 			russia = {
-				Idstring("units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light")
+				Idstring("units/pd2_mod_akiko/characters/ene_cia_zeal_light/ene_cia_zeal_light")
 			},
 			zombie = {
 				Idstring("units/pd2_mod_halloween/characters/ene_zeal_city_1/ene_zeal_city_1"),
@@ -15507,10 +15507,10 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 				Idstring("units/pd2_mod_halloween/characters/ene_zeal_city_3/ene_zeal_city_3")
 			},
 			murkywater = {
-				Idstring("units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light")
+				Idstring("units/pd2_mod_akiko/characters/ene_cia_zeal_light/ene_cia_zeal_light")
 			},
 			federales = {
-				Idstring("units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light")
+				Idstring("units/pd2_mod_akiko/characters/ene_cia_zeal_light/ene_cia_zeal_light")
 			},					
 			nypd = {
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat/ene_zeal_swat")
