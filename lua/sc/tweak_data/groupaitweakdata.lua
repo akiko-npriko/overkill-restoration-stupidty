@@ -15580,7 +15580,8 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_swat_shield/ene_zeal_swat_shield")
 			}
 		},
-		access = access_type_all
+		access = access_type_all,
+		special_type = "shield"
 	}
 	self.unit_categories.zeal_taser = {
 		unit_types = {
@@ -15609,7 +15610,8 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 				Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_tazer/ene_zeal_tazer")
 			}
 		},
-		access = access_type_all
+		access = access_type_all,
+		special_type = "taser"
 	}
 	
 	if difficulty_index == 5 then
@@ -16358,6 +16360,70 @@ function GroupAITweakData:_init_enemy_spawn_groups(difficulty_index)
 	
 	self.enemy_spawn_groups = {}
 	--Akiko Spawn Groups
+	self.enemy_spawn_groups.zeal_tazers = {
+		amount = {3, 4},
+		spawn = {
+			{
+				unit = "zeal_taser",
+				freq = 1,
+				amount_min = 1,
+				amount_max = 2,
+				tactics_ = self._tactics.DW_tazer,
+				rank = 2
+			},
+			{
+				unit = "zeal_shield",
+				freq = 1,
+				amount_min = 1,
+				amount_max = 2,
+				tactics = self._tactics.MH_shield,
+				rank = 3
+			},
+			{
+				unit = "zeal_heavy",
+				freq = 1,
+				amount_max = 2,
+				tactics = self._tactics.DW_heavy,
+				rank = 1
+			}
+		}
+	}
+	self.enemy_spawn_groups.zeal_shields = {
+			amount = {3, 4},
+			spawn = {
+				{
+					unit = "zeal_shield",
+					freq = 1,
+					amount_min = 1,
+					amount_max = 2,
+					tactics = self._tactics.MH_shield,
+					rank = 3
+				},
+				--Supposed to be FBI Stealth but too lazy rn
+				{
+					unit = "zeal_light",
+					freq = 1,
+					amount_min = 1,
+					tactics = self._tactics.HRT_attack,
+					rank = 1
+				},
+				--Make Zeal Cloaker Later
+				{
+					unit = "spooc",
+					freq = 0.15,
+					amount_max = 1,
+					tactics = self._tactics.spooc,
+					rank = 1
+				},
+				{
+					unit = "zeal_taser",
+					freq = 0.75,
+					amount_max = 2,
+					tactics = self._tactics.DW_tazer,
+					rank = 2
+				}
+			}
+		}
 	self.enemy_spawn_groups.tac_sniper = {
 		amount = {
 			3,
@@ -23798,6 +23864,30 @@ function GroupAITweakData:_init_task_data(difficulty_index, difficulty)
 		}
 	end
 	--Akiko assault besiege stuff
+	--TEST ZEAL SHIT (test for now will add to recon later)
+	if difficulty_index == 7 or difficulty_index == 8 then
+		self.besiege.assault.groups.zeal_tazers = {
+			0.0,
+			0.16,
+			0.21
+		}
+		self.besiege.assault.groups.zeal_shields = {
+			0.0,
+			0.16,
+			0.21
+		}
+	else
+		self.besiege.assault.groups.zeal_tazers = {
+			0.0,
+			0.0,
+			0.0
+		}
+		self.besiege.assault.groups.zeal_shields = {
+			0.0,
+			0.0,
+			0.0
+		}
+	end
 	if difficulty_index == 8 then
 		self.besiege.assault.groups.tac_sniper = {
 			0.16,
