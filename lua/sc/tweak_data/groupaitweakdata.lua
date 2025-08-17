@@ -23679,11 +23679,23 @@ function GroupAITweakData:_init_task_data(difficulty_index, difficulty)
 		}
 	end
 	--Akiko assault besiege stuff
-	if difficulty_index > 3 then
+	if difficulty_index == 8 then
 		self.besiege.assault.groups.tac_sniper = {
-			0.18,
+			0.16,
 			0.21,
 			0.25
+		}
+	elseif difficulty_index == 7 then
+		self.besiege.assault.groups.tac_sniper = {
+			0.0,
+			0.16,
+			0.21
+		}
+	elseif difficulty_index > 3 then
+		self.besiege.assault.groups.tac_sniper = {
+			0.0,
+			0.1,
+			0.18
 		}
 	else
 		self.besiege.assault.groups.tac_sniper = {
