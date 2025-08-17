@@ -18804,6 +18804,10 @@ Hooks:PostHook(CharacterTweakData, "_create_table_structure", "remod_create_tabl
 	--Port Railgun
 	table.insert(self.weap_ids, "port_railgun_npc")
 	table.insert(self.weap_unit_names, Idstring("units/pd2_mod_akiko/weapons/wpn_npc_railgun/wpn_npc_railgun"))
+	
+	--Ground Sniper M14
+	table.insert(self.weap_ids, "groundsniper_m14")
+	table.insert(self.weap_unit_names, Idstring("units/payday2/weapons/wpn_npc_sniper_sc/wpn_npc_sniper_sc"))
 
 end)
 
