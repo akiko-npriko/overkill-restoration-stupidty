@@ -131,6 +131,7 @@ function GameSetup:load_packages()
 	end
 	if (difficulty_index == 8 or amiaskimiersh) and (ai_type == a or ai_type == feds or ai_type == la or ai_type == ny) then
 		load_difficulty_package("packages/addusngwarthog")
+		load_difficulty_package("packages/addgroundsniperng")
 	end
 	
 	--[[

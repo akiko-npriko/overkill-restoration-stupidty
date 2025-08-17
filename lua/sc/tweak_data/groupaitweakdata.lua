@@ -15229,7 +15229,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 			special_type = "sniper",
 			unit_types = {
 				america = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_sniper/ene_zeal_sniper")
+					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_ng/ene_groundsniper_ng")
 				},
 				russia = {
 					Idstring("units/pd2_mod_reapers/characters/ene_zeal_sniper/ene_zeal_sniper")
@@ -15244,13 +15244,13 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 					Idstring("units/pd2_dlc_bex/characters/ene_zeal_sniper/ene_zeal_sniper")
 				},
 				nypd = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_sniper/ene_zeal_sniper")
+					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_ng/ene_groundsniper_ng")
 				},
 				lapd = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_sniper/ene_zeal_sniper")
+					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_ng/ene_groundsniper_ng")
 				},
 				fbi = {
-					Idstring("units/pd2_dlc_gitgud/characters/ene_zeal_sniper/ene_zeal_sniper")
+					Idstring("units/pd2_mod_akiko/characters/ene_groundsniper_ng/ene_groundsniper_ng")
 				}
 			},
 			access = access_type_all

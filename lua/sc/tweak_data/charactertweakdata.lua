@@ -20201,6 +20201,7 @@ function CharacterTweakData:character_map()
 				"ene_xof_shield",
 				"ene_gign_doc",
 				"ene_xof_volunteer",
+				"ene_groundsniper_ng",
 				"ene_atf_agent",
 				"ene_cia_agent"
 			}
