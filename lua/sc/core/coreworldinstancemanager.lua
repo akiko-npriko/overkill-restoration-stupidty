@@ -163,6 +163,12 @@ function CoreWorldInstanceManager:akikofunworldspawns()
 			if table.contains(v, "TIT_tanks") then
 				table.insert(v, "Shield_TIT_tanks")
 			end
+			if table.contains(v, "CS_tazers") then
+				table.insert(v, "zeal_tazers")
+			end
+			if table.contains(v, "GS_shields") then
+				table.insert(v, "zeal_shields")
+			end
 		end
 	end
 end
