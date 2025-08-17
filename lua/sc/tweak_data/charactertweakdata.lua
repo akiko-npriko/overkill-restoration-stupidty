@@ -20188,6 +20188,9 @@ function CharacterTweakData:character_map()
 		char_map.akiko = {
 			path = "units/pd2_mod_akiko/characters/",
 			list = {
+				"ene_zeal_swat",
+				"ene_zeal_swat_heavy",
+				"ene_zeal_swat_shield",
 				"ene_titan_shield_bulldozer",
 				"ene_zeal_warthog",
 				"ene_norm_warthog",

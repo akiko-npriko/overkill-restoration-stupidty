@@ -128,7 +128,7 @@ function GameSetup:load_packages()
 		if randomizerrrr <= 0.5 then
 			load_difficulty_package("packages/addzealunits")
 		else
-			--load_difficulty_package("packages/addzealunits")
+			load_difficulty_package("packages/addzealunits")
 		end
 		load_difficulty_package("packages/addxofunit")
 		load_difficulty_package("packages/addtitanshielddozer")
