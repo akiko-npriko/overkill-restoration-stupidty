@@ -15493,98 +15493,6 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	self.unit_categories.Shield_TIT_tank_assist = deep_clone(self.unit_categories.Shield_TIT_tank)
 	self.unit_categories.Shield_TIT_tank_assist.special_type = nil
 	
-	if PackageManager:loaded("packages/addzealunits") then
-	self.unit_categories.zeal_light = {
-		unit_types = {
-			america = {
-				Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat/ene_zeal_swat")
-			},
-			russia = {
-				Idstring("units/pd2_mod_akiko/characters/ene_cia_zeal_light/ene_cia_zeal_light")
-			},
-			zombie = {
-				Idstring("units/pd2_mod_halloween/characters/ene_zeal_city_1/ene_zeal_city_1"),
-				Idstring("units/pd2_mod_halloween/characters/ene_zeal_city_2/ene_zeal_city_2"),
-				Idstring("units/pd2_mod_halloween/characters/ene_zeal_city_3/ene_zeal_city_3")
-			},
-			murkywater = {
-				Idstring("units/pd2_mod_akiko/characters/ene_cia_zeal_light/ene_cia_zeal_light")
-			},
-			federales = {
-				Idstring("units/pd2_mod_akiko/characters/ene_cia_zeal_light/ene_cia_zeal_light")
-			},					
-			nypd = {
-				Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat/ene_zeal_swat")
-			},	
-			lapd = {
-				Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat/ene_zeal_swat")
-			},
-			fbi = {
-				Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat/ene_zeal_swat")
-			}
-		},
-		access = access_type_all
-	}
-	self.unit_categories.zeal_heavy = {
-		unit_types = {
-			america = {
-				Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy")
-			},
-			russia = {
-				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy")
-			},
-			zombie = {
-				Idstring("units/pd2_mod_halloween/characters/ene_zeal_swat_heavy_sc/ene_zeal_swat_heavy_sc")
-			},
-			murkywater = {
-				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy")
-			},
-			federales = {
-				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy")
-			},					
-			nypd = {
-				Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy")
-			},	
-			lapd = {
-				Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy")
-			},
-			fbi = {
-				Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy")
-			}
-		},
-		access = access_type_all
-	}
-	self.unit_categories.zeal_shield = {
-		unit_types = {
-			america = {
-				Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat_shield/ene_zeal_swat_shield")
-			},
-			russia = {
-				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield")
-			},
-			zombie = {
-				Idstring("units/pd2_mod_halloween/characters/ene_zeal_swat_shield/ene_zeal_swat_shield")
-			},
-			murkywater = {
-				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield")
-			},
-			federales = {
-				Idstring("units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield")
-			},					
-			nypd = {
-				Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat_shield/ene_zeal_swat_shield")
-			},	
-			lapd = {
-				Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat_shield/ene_zeal_swat_shield")
-			},
-			fbi = {
-				Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat_shield/ene_zeal_swat_shield")
-			}
-		},
-		access = access_type_all,
-		special_type = "shield"
-	}
-	else
 	self.unit_categories.zeal_light = {
 		unit_types = {
 			america = {
@@ -15675,7 +15583,6 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		access = access_type_all,
 		special_type = "shield"
 	}
-	end
 	self.unit_categories.zeal_taser = {
 		unit_types = {
 			america = {
@@ -15706,7 +15613,22 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		access = access_type_all,
 		special_type = "taser"
 	}
+	if PackageManager:loaded("packages/addzealunits") then
+		self.unit_categories.zeal_light.unit_types.america = Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat/ene_zeal_swat")
+		self.unit_categories.zeal_light.unit_types.nypd = Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat/ene_zeal_swat")
+		self.unit_categories.zeal_light.unit_types.lapd = Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat/ene_zeal_swat")
+		self.unit_categories.zeal_light.unit_types.fbi = Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat/ene_zeal_swat")
 	
+		self.unit_categories.zeal_heavy.unit_types.america = Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy")
+		self.unit_categories.zeal_heavy.unit_types.nypd = Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy")
+		self.unit_categories.zeal_heavy.unit_types.lapd = Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy")
+		self.unit_categories.zeal_heavy.unit_types.fbi = Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy")
+	
+		self.unit_categories.zeal_shield.unit_types.america = Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat_shield/ene_zeal_swat_shield")
+		self.unit_categories.zeal_shield.unit_types.nypd = Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat_shield/ene_zeal_swat_shield")
+		self.unit_categories.zeal_shield.unit_types.lapd = Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat_shield/ene_zeal_swat_shield")
+		self.unit_categories.zeal_shield.unit_types.fbi = Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat_shield/ene_zeal_swat_shield")
+	end
 	if difficulty_index == 5 then
 		akikomedicdozersdwbelow()
 	elseif difficulty_index == 6 then
