@@ -16816,6 +16816,23 @@ function CharacterTweakData:_presets(tweak_data)
 	presets.weapon.gang_member.is_dmr.RELOAD_SPEED = 0.9
 	presets.weapon.gang_member.is_sniper = deep_clone(presets.weapon.gang_member.rifle)
 	presets.weapon.gang_member.is_sniper.RELOAD_SPEED = 0.9
+	
+	--Akiko Groundsniper Setup
+	restoration.log_shit("SC: akiko groundsniper presets")
+	presets.weapon.normal.is_groundsniper = deep_clone(presets.weapon.normal.is_sniper)
+	presets.weapon.good.is_groundsniper = deep_clone(presets.weapon.good.is_sniper)
+	presets.weapon.expert.is_groundsniper = deep_clone(presets.weapon.expert.is_sniper)
+	presets.weapon.deathwish.is_groundsniper = deep_clone(presets.weapon.deathwish.is_sniper)
+	presets.weapon.gang_member.is_groundsniper = deep_clone(presets.weapon.gang_member.is_sniper)
+	
+	presets.weapon.normal.is_groundsniper.aim_delay = {1, 1}
+	presets.weapon.good.is_groundsniper.aim_delay = {1, 1}
+	presets.weapon.expert.is_groundsniper.aim_delay = {1, 1}
+	presets.weapon.deathwish.is_groundsniper.aim_delay = {1, 1}
+	--presets.weapon.normal.is_groundsniper.focus_delay = 10
+	--presets.weapon.normal.is_groundsniper.focus_dis = 200
+	--Akiko Groundsniper Done
+	
 	restoration.log_shit("SC: normal presets")
 	presets.weapon.normal.akimbo_pistol = deep_clone(presets.weapon.normal.is_pistol)
 	presets.weapon.normal.rifle = deep_clone(presets.weapon.normal.is_rifle)

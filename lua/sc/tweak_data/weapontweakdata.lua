@@ -1266,13 +1266,15 @@ local crew_wep_preset = {
 		--Railgun
 		self.railgun_npc = deep_clone(self.m14_sniper_npc)
 		self.railgun_npc.CLIP_AMMO_MAX = 4
-		self.railgun_npc.DAMAGE = 18
+		--self.railgun_npc.DAMAGE = 18
+		self.railgun_npc.DAMAGE = 20
 		self.railgun_npc.trail_effect = Idstring("effects/particles/weapons/sniper_trail_sc")
 		self.railgun_npc.use_sniper_trail = true
 		--self.railgun_npc.sounds.prefix = "barrett_npc"
 		
 		--Port Railgun
 		self.port_railgun_npc = deep_clone(self.railgun_npc)
+		self.port_railgun_npc.usage = "is_groundsniper"
 	end
 
 	function WeaponTweakData:_init_data_heavy_snp_npc()
