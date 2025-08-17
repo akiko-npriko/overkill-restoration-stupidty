@@ -65,16 +65,6 @@ PickUpWeapons.weapon_table.m14_sniper = {
 	}
 }
 
-PickUpWeapons.weapon_table.groundsniper_m14 = {
-	id = "msr",
-	blueprint = {
-		"wpn_fps_snp_msr_b_standard",
-		"wpn_fps_snp_msr_body_msr",
-		"wpn_fps_snp_msr_m_standard",
-		"wpn_fps_upg_o_shortdot"
-	}
-}
-
 PickUpWeapons.weapon_table.m249 = {
 	blueprint = {
 		"wpn_fps_lmg_m249_body_standard",
