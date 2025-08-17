@@ -9478,7 +9478,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 				},
 				zombie = {
 					Idstring("units/pd2_mod_omnia/characters/ene_bulldozer_minigun/ene_bulldozer_minigun"),
-					Idstring("units/pd2_dlc_gitgud/characters/ene_bulldozer_minigun/ene_bulldozer_minigun")
+					Idstring("units/pd2_dlc_drm/characters/ene_bulldozer_minigun/ene_bulldozer_minigun")
 				},					
 				russia = {
 					Idstring("units/pd2_mod_omnia/characters/ene_bulldozer_minigun/ene_bulldozer_minigun"),
@@ -15319,7 +15319,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	local murky_medicdozer = Idstring("units/pd2_mod_sharks/characters/ene_murky_fbi_tank_medic/ene_murky_fbi_tank_medic")
 	local mexican_medicdozer = Idstring("units/pd2_dlc_bex/characters/ene_bulldozer_medic/ene_bulldozer_medic")
 	
-	local marshall_minigundozer = Idstring("units/pd2_dlc_drm/characters/ene_bulldozer_minigun/ene_bulldozer_minigun")
+	local national_guard_minigundozer = Idstring("units/pd2_dlc_drm/characters/ene_bulldozer_minigun/ene_bulldozer_minigun")
 	local minigun_dozer = Idstring("units/pd2_dlc_drm/characters/ene_bulldozer_minigun_classic/ene_bulldozer_minigun_classic")
 	local mexican_minigundozer = Idstring("units/pd2_dlc_bex/characters/ene_swat_dozer_policia_federale_minigun/ene_swat_dozer_policia_federale_minigun")
 	local murky_minigundozer = Idstring("units/pd2_dlc_bph/characters/ene_murkywater_bulldozer_1/ene_murkywater_bulldozer_1")
@@ -15445,10 +15445,10 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	
 	local function akikonationalminigunnerdozer()
 		--National Guard Minigogdozer (Addon Skull Dozer) - (America, Nypd, Lapd, Fbi)
-		table.insert(unit_types_skull_dozer.america, marshall_minigundozer)
-		table.insert(unit_types_skull_dozer.nypd, marshall_minigundozer)
-		table.insert(unit_types_skull_dozer.lapd, marshall_minigundozer)
-		table.insert(unit_types_skull_dozer.fbi, marshall_minigundozer)
+		table.insert(unit_types_skull_dozer.america, national_guard_minigundozer)
+		table.insert(unit_types_skull_dozer.nypd, national_guard_minigundozer)
+		table.insert(unit_types_skull_dozer.lapd, national_guard_minigundozer)
+		table.insert(unit_types_skull_dozer.fbi, national_guard_minigundozer)
 		--Rest of Minigogdozer
 		table.insert(unit_types_skull_dozer.zombie, minigun_dozer)
 		table.insert(unit_types_skull_dozer.russia, warthogg) -- there isnt one so just use warthog for pain and suffering
