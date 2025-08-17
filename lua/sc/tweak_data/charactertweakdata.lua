@@ -20203,7 +20203,8 @@ function CharacterTweakData:character_map()
 				"ene_xof_volunteer",
 				"ene_groundsniper_ng",
 				"ene_atf_agent",
-				"ene_cia_agent"
+				"ene_cia_agent",
+				"ene_cia_zeal_light"
 			}
 		}
 
