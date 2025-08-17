@@ -29,6 +29,17 @@
 	<material_config path="units/pd2_mod_akiko/characters/ene_acc_xof_cowhat/ene_acc_xof_cowhat" force="false"/>
 	<cooked_physics path="units/pd2_mod_akiko/characters/ene_acc_xof_cowhat/ene_acc_xof_cowhat" force="false"/>
 	
+	<!--Zeal Shield (not person)-->
+	<unit path="units/pd2_mod_akiko/characters/ene_acc_zeal_shield/ene_acc_zeal_shield" force="false" load="false"/>
+	<object path="units/pd2_mod_akiko/characters/ene_acc_zeal_shield/ene_acc_zeal_shield" force="false"/>
+	<model path="units/pd2_mod_akiko/characters/ene_acc_zeal_shield/ene_acc_zeal_shield" force="false"/>
+	<material_config path="units/pd2_mod_akiko/characters/ene_acc_zeal_shield/ene_acc_zeal_shield" force="false"/>
+	<sequence_manager path="units/pd2_mod_akiko/characters/ene_acc_zeal_shield/ene_acc_zeal_shield" force="false"/>
+	<cooked_physics path="units/pd2_mod_akiko/characters/ene_acc_zeal_shield/ene_acc_zeal_shield" force="false"/>
+	<texture path="units/pd2_mod_akiko/characters/ene_acc_zeal_shield/shield_df" force="false"/>
+	<texture path="units/pd2_mod_akiko/characters/ene_acc_zeal_shield/shield_il" force="false"/>
+	<texture path="units/pd2_mod_akiko/characters/ene_acc_zeal_shield/shield_nm" force="false"/>
+	
 	<!--Shared Textures-->
 	<texture path="units/pd2_mod_akiko/characters/shared_textures/atf_body_df" force="false"/>
 	<texture path="units/pd2_mod_akiko/characters/shared_textures/atf_body_nm" force="false"/>
@@ -44,10 +55,10 @@
 	<df_nm path="units/pd2_mod_akiko/characters/shared_textures/yeehaw"/>
 	<df_nm path="units/pd2_mod_akiko/characters/shared_textures/xof_light"/>
 	<!--Shared Textures for NG-->
-	<df_nm path="units/pd2_dlc_gitgud/characters/ene_acc_shield_new_swat_sc/shield" />
-	<df_nm path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer_sc/ene_zeal_tazer" />
-	<df_nm path="units/pd2_dlc_gitgud/characters/shared_textures/ng_heavy/ng_heavy"/>
-	<df_nm path="units/pd2_dlc_gitgud/characters/shared_textures/ng_heavy/ng_heavy_head"/>
+	<df_nm path="units/pd2_dlc_gitgud/characters/ene_acc_shield_new_swat_sc/shield" force="false"/>
+	<df_nm path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer_sc/ene_zeal_tazer" force="false"/>
+	<df_nm path="units/pd2_dlc_gitgud/characters/shared_textures/ng_heavy/ng_heavy" force="false"/>
+	<df_nm path="units/pd2_dlc_gitgud/characters/shared_textures/ng_heavy/ng_heavy_head" force="false"/>
 	
 	<!--Textures for Xof Vol-->
 	<df_nm_gsma path="units/pd2_mod_akiko/characters/shared_textures/xof_volunteer/arm" force="false"/>
@@ -62,11 +73,11 @@
 	<df_nm_gsma path="units/pd2_mod_akiko/characters/shared_textures/xof_volunteer/robot" force="false"/>
 	
 	<!--Textures for Xof Heavy-->
-	<df_nm path="units/pd2_mod_akiko/characters/shared_textures/xof_heavy/body"/>
-	<df_nm path="units/pd2_mod_akiko/characters/shared_textures/xof_heavy/extra"/>
-	<df_nm path="units/pd2_mod_akiko/characters/shared_textures/xof_heavy/helmet"/>
-	<df_nm path="units/pd2_mod_akiko/characters/shared_textures/xof_heavy/tank"/>
-	<df_nm path="units/pd2_mod_akiko/characters/shared_textures/xof_heavy/glass"/>
-	<texture path="units/pd2_mod_akiko/characters/shared_textures/xof_heavy/glass_op"/>
+	<df_nm path="units/pd2_mod_akiko/characters/shared_textures/xof_heavy/body" force="false"/>
+	<df_nm path="units/pd2_mod_akiko/characters/shared_textures/xof_heavy/extra" force="false"/>
+	<df_nm path="units/pd2_mod_akiko/characters/shared_textures/xof_heavy/helmet" force="false"/>
+	<df_nm path="units/pd2_mod_akiko/characters/shared_textures/xof_heavy/tank" force="false"/>
+	<df_nm path="units/pd2_mod_akiko/characters/shared_textures/xof_heavy/glass" force="false"/>
+	<texture path="units/pd2_mod_akiko/characters/shared_textures/xof_heavy/glass_op" force="false"/>
 	
 </table>
