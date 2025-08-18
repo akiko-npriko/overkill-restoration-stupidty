@@ -124,12 +124,7 @@ function GameSetup:load_packages()
 		load_difficulty_package("packages/addgroundsnipergensec")
 	end
 	if (difficulty_index == 7 or difficulty_index == 8 or amiaskimiersh) then
-		local randomizerrrr = math.rand(1)
-		if randomizerrrr <= 0.5 then
-			load_difficulty_package("packages/addzealunits")
-		else
-			load_difficulty_package("packages/addzealunits")
-		end
+		load_difficulty_package("packages/addzealunits")
 		load_difficulty_package("packages/addxofunit")
 		load_difficulty_package("packages/addtitanshielddozer")
 	end
