@@ -15615,20 +15615,20 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		special_type = "taser"
 	}
 	if randomizrzeal <= 0.5 then
-		self.unit_categories.zeal_light.unit_types.america = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat/ene_zeal_swat")}
-		self.unit_categories.zeal_light.unit_types.nypd = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat/ene_zeal_swat")}
-		self.unit_categories.zeal_light.unit_types.lapd = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat/ene_zeal_swat")}
-		self.unit_categories.zeal_light.unit_types.fbi = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat/ene_zeal_swat")}
+		self.unit_categories.zeal_light.unit_types.america = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo/ene_zeal_camo")}
+		self.unit_categories.zeal_light.unit_types.nypd = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo/ene_zeal_camo")}
+		self.unit_categories.zeal_light.unit_types.lapd = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo/ene_zeal_camo")}
+		self.unit_categories.zeal_light.unit_types.fbi = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo/ene_zeal_camo")}
 	
-		self.unit_categories.zeal_heavy.unit_types.america = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy")}
-		self.unit_categories.zeal_heavy.unit_types.nypd = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy")}
-		self.unit_categories.zeal_heavy.unit_types.lapd = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy")}
-		self.unit_categories.zeal_heavy.unit_types.fbi = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat_heavy/ene_zeal_swat_heavy")}
+		self.unit_categories.zeal_heavy.unit_types.america = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo_heavy/ene_zeal_camo_heavy")}
+		self.unit_categories.zeal_heavy.unit_types.nypd = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo_heavy/ene_zeal_camo_heavy")}
+		self.unit_categories.zeal_heavy.unit_types.lapd = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo_heavy/ene_zeal_camo_heavy")}
+		self.unit_categories.zeal_heavy.unit_types.fbi = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo_heavy/ene_zeal_camo_heavy")}
 	
-		self.unit_categories.zeal_shield.unit_types.america = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat_shield/ene_zeal_swat_shield")}
-		self.unit_categories.zeal_shield.unit_types.nypd = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat_shield/ene_zeal_swat_shield")}
-		self.unit_categories.zeal_shield.unit_types.lapd = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat_shield/ene_zeal_swat_shield")}
-		self.unit_categories.zeal_shield.unit_types.fbi = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_swat_shield/ene_zeal_swat_shield")}
+		self.unit_categories.zeal_shield.unit_types.america = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo_shield/ene_zeal_camo_shield")}
+		self.unit_categories.zeal_shield.unit_types.nypd = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo_shield/ene_zeal_camo_shield")}
+		self.unit_categories.zeal_shield.unit_types.lapd = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo_shield/ene_zeal_camo_shield")}
+		self.unit_categories.zeal_shield.unit_types.fbi = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo_shield/ene_zeal_camo_shield")}
 	end
 	if difficulty_index == 5 then
 		akikomedicdozersdwbelow()
