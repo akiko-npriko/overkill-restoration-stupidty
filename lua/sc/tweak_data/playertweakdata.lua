@@ -410,8 +410,6 @@ function PlayerTweakData:init()
 	self.omniscience.target_resense_t = 3.5
 	self:_init_parachute()
 	
-	
-	
 end
 
 
