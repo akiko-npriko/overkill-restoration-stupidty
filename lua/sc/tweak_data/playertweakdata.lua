@@ -410,16 +410,7 @@ function PlayerTweakData:init()
 	self.omniscience.target_resense_t = 3.5
 	self:_init_parachute()
 	
-	for k, v in pairs(self.stances) do
-        for k2, v2 in pairs(v) do
-            if v2.vel_overshot then
-                v2.vel_overshot.yaw_neg = 0
-                v2.vel_overshot.yaw_pos = 0
-                v2.vel_overshot.pitch_neg = 0
-                v2.vel_overshot.pitch_pos = 0
-            end
-        end
-    end
+	
 	
 end
 
