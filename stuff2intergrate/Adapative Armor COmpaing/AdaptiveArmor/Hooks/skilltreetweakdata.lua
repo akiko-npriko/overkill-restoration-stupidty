@@ -129,7 +129,9 @@ function SkillTreeTweakData:add_custom_deck(self)
 				short_id = "menu_deck_adaptive_9_short",
 				name_id = "menu_deck_adaptive_9",
 				upgrades = {
-					"player_passive_always_regen_armor_1",
+					"player_perk_armor_regen_timer_multiplier_1",
+					"player_perk_armor_regen_timer_multiplier_2",
+					"player_perk_armor_regen_timer_multiplier_3",
 					"player_tier_armor_multiplier_5",
 					"player_tier_armor_multiplier_6",
 					"player_passive_loot_drop_multiplier"

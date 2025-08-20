@@ -1,3 +1,5 @@
+PlayerDamage.pre_regen_armor = PlayerDamage.pre_regen_armor or 0
+
 Hooks:PostHook(PlayerDamage, "update", "hook_post_damage_update", function(self, unit, t, dt)
 	self:update_custom(unit, t, dt)
 end)
@@ -45,6 +47,11 @@ function PlayerDamage:_check_custom_damage(attack_data)
 	end
 end
 
+Hooks:PreHook(PlayerDamage, "_regenerate_armor", "hook_pre_regen_armor", function(self, no_sound)
+	-- capture armor pre_regen
+	self.pre_regen_armor = self:get_real_armor()
+end)
+
 Hooks:PostHook(PlayerDamage, "_regenerate_armor", "hook_post_regen_armor", function(self, no_sound)
 	self:regen_custom()
 end)
@@ -54,40 +61,26 @@ function PlayerDamage:regen_custom()
 	
 	local max_armor = self:_max_armor()
 	local stage = self:get_adaptive_plate_stages()
+	local cur_armor = self.pre_regen_armor
 
 	if pm:has_category_upgrade("player", "adaptive_plate_multiplier") then
 		local s = pm.adaptive_plate_stage
+		
+		-- if stage 0, regen all armor
 		if s == 0 then
 			self:set_armor(max_armor)
+		
+		-- if below stage, regent to stage
+		elseif cur_armor <= stage[s] then
+			self:set_armor(stage[s])
+		
+		-- if above stage, stay at the pre_regen armor (enables bullseye)
 		else
-			self:set_armor(stage[s])
+			self:set_armor(self.pre_regen_armor)
 		end
-	end
-end
-
-Hooks:PostHook(PlayerDamage, "restore_armor", "hook_post_restore_armor", function(self, armor_restored)
-	if self._dead or self._bleed_out or self._check_berserker_done then
-		return
-	end
-
-	self:restore_custom(armor_restored)
-end)
-
-function PlayerDamage:restore_custom(armor_restored)
-	local cur_armor = self:get_real_armor()
-	local pm = managers.player
-	
-	local max_armor = self:_max_armor()
-	local stage = self:get_adaptive_plate_stages()
-
-	if pm:has_category_upgrade("player", "adaptive_plate_multiplier") then
-		local s = pm.adaptive_plate_stage
-		if s == 0 then
-			self:set_armor(max_armor)
-		elseif cur_armor > stage[s] then
-			self:set_armor(stage[s])
-			armor_restored = 0
-		end
+		
+		self.pre_regen_armor = 0
+		
 	end
 end
 
@@ -99,7 +92,7 @@ function PlayerDamage:calc_adaptive_plate_stage(damage)
 	local change = false
 	local s = pm.adaptive_plate_stage
 	
-	if s < 4 then
+	if s < count then
 		if cur_armor-damage <= stage[s+1] then
 			pm.adaptive_plate_stage = s+1
 			change = true
@@ -161,3 +154,32 @@ function PlayerDamage:get_adaptive_plate_stage_count()
 	
 	return stages
 end
+
+
+-- this disables bulls eye from working --
+
+-- Hooks:PostHook(PlayerDamage, "restore_armor", "hook_post_restore_armor", function(self, armor_restored)
+	-- if self._dead or self._bleed_out or self._check_berserker_done then
+		-- return
+	-- end
+	
+	-- self:restore_custom(armor_restored)
+-- end)
+
+-- function PlayerDamage:restore_custom(armor_restored)
+	-- local cur_armor = self:get_real_armor()
+	-- local pm = managers.player
+	
+	-- local max_armor = self:_max_armor()
+	-- local stage = self:get_adaptive_plate_stages()
+
+	-- if pm:has_category_upgrade("player", "adaptive_plate_multiplier") then
+		-- local s = pm.adaptive_plate_stage
+		-- if s == 0 then
+			-- self:set_armor(max_armor)
+		-- elseif cur_armor > stage[s] then
+			-- self:set_armor(stage[s])
+			-- armor_restored = 0
+		-- end
+	-- end
+-- end
