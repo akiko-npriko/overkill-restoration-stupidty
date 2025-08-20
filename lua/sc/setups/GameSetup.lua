@@ -124,7 +124,7 @@ function GameSetup:load_packages()
 		load_difficulty_package("packages/addgroundsnipergensec")
 	end
 	if (difficulty_index == 7 or difficulty_index == 8 or amiaskimiersh) then
-		load_difficulty_package("packages/addngminigun")
+		--load_difficulty_package("packages/addngminigun")
 		load_difficulty_package("packages/addzealunits")
 		load_difficulty_package("packages/addxofunit")
 		load_difficulty_package("packages/addtitanshielddozer")
