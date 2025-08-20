@@ -1,0 +1,23 @@
+<table name="AdaptiveArmor" color="Color(1.00,0.52,0.10)">
+	<AssetUpdates id="53506" version="0.2" provider="modworkshop"/>
+	
+	<Localization directory="loc" default="english.txt">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	
+	<AddFiles directory="assets">
+		<!-- <texture path="guis/dlcs/adaptive_plate/textures/pd2/equipment_02"/> -->
+		<texture path="guis/dlcs/adaptive_plate/textures/pd2/blackmarket/icons/grenades/adaptive_plate"/>
+	</AddFiles>
+	
+	<Hooks directory="hooks">
+		<!-- <hook file="tweakdatapd2.lua" source_file="lib/tweak_data/tweakdatapd2"/> -->
+		<hook file="projectilestweakdata.lua" source_file="lib/tweak_data/blackmarket/projectilestweakdata"/>
+		<hook file="upgradestweakdata.lua" source_file="lib/tweak_data/upgradestweakdata"/>
+		<hook file="skilltreetweakdata.lua" source_file="lib/tweak_data/skilltreetweakdata"/>
+		<hook file="playerdamage.lua" source_file="lib/units/beings/player/playerdamage"/>
+		<hook file="playermanager.lua" source_file="lib/managers/playermanager"/>
+		<hook file="playerbleedout.lua" source_file="lib/units/beings/player/states/playerbleedout"/>
+		<hook file="BeardLibSyncUtil.lua" source_file="lib/managers/BeardLibSyncUtil"/>
+	</Hooks>
+</table>
