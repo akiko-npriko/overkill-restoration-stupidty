@@ -49,7 +49,7 @@ Update 2.0
 	- Custom guns yanked into this mod
 		- Like 200+ i think
 	- 30+ Heists + Constantine Heists
-Update 1.5
+ Update 1.5
  - The Small Throwable Update
 	- Cluster Bomb
 	- First-Aid-Kit-Bomb
