@@ -11,6 +11,22 @@ Note: this is an older verison (gold edition kinda) of FanScot stuff
 
 # Femboi Changes:
 
+# Update Log:
+Update 2.0
+ - The Forgotten Update (I forgot to document)
+	- Xof Units Seperated
+	- Zeal Units Reintroduced
+		- Two Zeal Types
+			- Black Zeal
+			- Camo Zeal
+	- CIA Agents Added
+	- ATF Agents Added
+	- Groundsnipers Added to Spawn
+		- Regular Snipers removed from spawn
+		- New models (America, LAPD, FBI, and NYPD)
+	- Custom guns yanked into this mod
+		- Like 200+ i think
+	- 
 Update 1.5
  - The Small Throwable Update
 	- Cluster Bomb
@@ -55,12 +71,6 @@ Some Normalish Stuff:
 
 - Support for VxWolf's HK G11, Railgun (Roach), OTWD Flaregun, and Cobray Terminator
  - Cobray Terminator can jam
-
-- Zulu Squad voicelines replace ResMod OMNIA voicelines
-	- https://modworkshop.net/mod/49627
-
-- 33rd Infantry voicelines replace ResMod US National Guard voicelines
-	- https://modworkshop.net/mod/49440
 
 - Changed Marshall Shield Asset
 
