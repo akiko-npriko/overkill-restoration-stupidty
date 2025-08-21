@@ -50,7 +50,7 @@ Hooks:PostHook(PlayerManager, "init", "ResInit", function(self)
 end)
 
 Hooks:PostHook(PlayerManager, "update", "ResPlayerManagerUpdate", function(self, t, dt)
-	if self._buildup_meter_t then
+	if self:has_category_upgrade("player", "buildup_meter") and self._buildup_meter_t then
 		if self._buildup_meter_t > 0 then
 			self._buildup_meter_t = math.max(0, self._buildup_meter_t - dt)
 		else
@@ -60,8 +60,10 @@ Hooks:PostHook(PlayerManager, "update", "ResPlayerManagerUpdate", function(self,
 			local combo_decay = self:upgrade_value("player", "buildup_meter", 0).combo_decay + combo_decay_mod
 			self._buildup_meter_t = combo_t
 			self._buildup_meter = math.max(0, (self._buildup_meter or 0) - combo_decay)
-			managers.hud:start_buff("sociopath", self._buildup_meter_t)
-			managers.hud:set_stacks("sociopath", self._buildup_meter)
+			if managers.hud then
+				managers.hud:start_buff("sociopath", self._buildup_meter_t)
+				managers.hud:set_stacks("sociopath", self._buildup_meter)
+			end
 		end
 	end
 	
@@ -464,8 +466,10 @@ function PlayerManager:on_killshot(killed_unit, variant, headshot, weapon_id)
 					self._buildup_meter = math.clamp((self._buildup_meter or 0) + self:upgrade_value("player", "buildup_meter_aubrey", 0).combo_add * enemy_unit_mult(), 0, self._buildup_meter_max)
 					managers.hud:set_stacks("sociopath", self._buildup_meter)
 				else	
-					self._buildup_meter_t = (self._buildup_meter > 0 and time) or self._buildup_meter_t
-					managers.hud:start_buff("sociopath", self._buildup_meter_t)
+					if self._buildup_meter > 0 then
+						self._buildup_meter_t = time
+						managers.hud:start_buff("sociopath", self._buildup_meter_t)
+					end
 				end
 			end
 		end
@@ -531,8 +535,6 @@ function PlayerManager:on_killshot(killed_unit, variant, headshot, weapon_id)
 			+ self:upgrade_value("player", "killshot_extra_spooky_panic_chance", 0) --Add Haunt skill to panic chance.
 			+ self:upgrade_value("player", "killshot_spooky_panic_chance", 0) * self:player_unit():character_damage():get_missing_revives()
 		panic_chance = managers.modifiers:modify_value("PlayerManager:GetKillshotPanicChance", panic_chance)
-		
-		managers.hud:show_hint( { text = "panic_chance  " .. tostring( panic_chance ) } )
 		
 		if panic_chance > 0 or panic_chance == -1 then
 			local slotmask = managers.slot:get_mask("enemies")
@@ -1372,7 +1374,7 @@ function PlayerManager:fixed_health_regen()
 	local health_regen = 0
 	health_regen = health_regen + self:get_hostage_bonus_addend("health_regen")
 	local groupai = managers.groupai and managers.groupai:state()
-	if self:has_category_upgrade("player", "hostage_health_regen_max_mult") and ((groupai and groupai:hostage_count() + (groupai._num_converted_police or self:num_local_minions()) or self:num_local_minions() or 0) >= tweak_data:get_raw_value("upgrades", "hostage_max_num", "health_regen")) then
+	if self:has_category_upgrade("player", "hostage_health_regen_max_mult") and ((groupai and groupai:hostage_count() + (groupai:num_converted_police() or self:num_local_minions()) or self:num_local_minions() or 0) >= tweak_data:get_raw_value("upgrades", "hostage_max_num", "health_regen")) then
 		health_regen = health_regen * self:upgrade_value("player", "hostage_health_regen_max_mult", 0)
 	end
 	health_regen = health_regen + self:upgrade_value("team", "crew_health_regen", 0)
@@ -1553,7 +1555,7 @@ end
 function PlayerManager:get_hostage_bonus_multiplier(category)
 	local groupai = managers.groupai and managers.groupai:state()
 	local hostages = groupai and groupai:hostage_count() or 0
-	hostages = hostages + (groupai and groupai._num_converted_police or self:num_local_minions() or 0)
+	hostages = hostages + (groupai and groupai:num_converted_police() or self:num_local_minions() or 0)
 	local multiplier = 0
 	local hostage_max_num = tweak_data:get_raw_value("upgrades", "hostage_max_num", category)
 
@@ -1576,7 +1578,7 @@ end
 function PlayerManager:get_hostage_bonus_addend(category)
 	local groupai = managers.groupai and managers.groupai:state()
 	local hostages = groupai and groupai:hostage_count() or 0
-	hostages = hostages + (groupai and groupai._num_converted_police or self:num_local_minions() or 0)
+	hostages = hostages + (groupai and groupai:num_converted_police() or self:num_local_minions() or 0)
 	local addend = 0
 	local hostage_max_num = tweak_data:get_raw_value("upgrades", "hostage_max_num", category)
 

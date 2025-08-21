@@ -4696,6 +4696,7 @@ function BlackMarketTweakData:_init_melee_weapons(tweak_data)
 	self.melee_weapons.weapon.stats.concealment = 30
 	--Remember the basics of CQC Snake--
 	self.melee_weapons.fists.info_id = "bm_melee_fists_info"
+	self.melee_weapons.fists.stats.weapon_type = "fists"
 	self.melee_weapons.fists.stats.cleave = 1
 	self.melee_weapons.fists.stats.raycasts = 8
 	self.melee_weapons.fists.stats.raycasts_charge = 20
@@ -4711,6 +4712,7 @@ function BlackMarketTweakData:_init_melee_weapons(tweak_data)
 	--[[     BLUNT     ]]
 		--Tough love, tooth shot--
 		self.melee_weapons.brass_knuckles.info_id = "bm_melee_brass_knuckles_info"
+		self.melee_weapons.brass_knuckles.stats.weapon_type = "brass"
 		self.melee_weapons.brass_knuckles.stats.cleave = 1
 		self.melee_weapons.brass_knuckles.stats.raycasts = 8
 		self.melee_weapons.brass_knuckles.stats.raycasts_charge = 20
