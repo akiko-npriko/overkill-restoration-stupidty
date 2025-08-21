@@ -1769,9 +1769,16 @@ function GroupAIStateBase:set_difficulty(script_value, manual_value)
         end
     end
 
-    if not manual_value then
-        return
-    end
+	if not manual_value then
+		return
+	end
+
+	-- Check if this heist has natural Bravo spawns on Pro Jobs
+	local pro_job = Global.game_settings and Global.game_settings.one_down
+	local bravos_threshold = pro_job and restoration.natural_mode_13[job]
+	if bravos_threshold and bravos_threshold < self._difficulty_value + manual_value then
+		restoration.always_bravos = true
+	end
 
 	--note that this ADDS, not replaces. only way to replace is with a script_value of 0
     self._difficulty_value = math.min(self._difficulty_value + manual_value, 1)
