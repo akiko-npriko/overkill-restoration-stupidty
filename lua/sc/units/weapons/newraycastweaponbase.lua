@@ -1629,7 +1629,6 @@ function NewRaycastWeaponBase:_update_stats_values(disallow_replenish, ammo_data
 	end
 end
 
-
 function NewRaycastWeaponBase:_check_reticle_obj()
 	self._reticle_obj = nil
 	--Kill reticle obj
