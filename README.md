@@ -1,16 +1,37 @@
 # What's this?
 Turns out github is probably an easier place to modify files and send updates to a friend
-This is a part of a private and really broken (glitchy af) modpack
-High chance stuff added to this will not work unless u have exact mods that have been also modified with garbage code
-Side note: Reverted to a gold verison of FanScot due to being too unstable
+This is a part of a private modpack
+ - Slowly merging modpack into this
+ - Why?
+	- Less stuff to download / Less User Error
+
+Side note: This branch uses the gold verison of FanScot branch because of the packages
+ - Has some dev branch changes
 
 FanScot Notes:
 This is a couple of edits to Restoration Mod fitted for my liking.
 These range from minor weapon tweaks to new features such as mutators.
-Note: this is an older verison (gold edition kinda) of FanScot stuff
 
-# Femboi Changes:
-
+# Femboi Features:
+- Cableties are now only avaliable in a skill (3 norm and 100 aced)
+- Hostages affecting duration of control
+	- Each hostage adds 5 seconds to duration and maxes out at 60 seconds
+- First Aid Kits suffer from 75% of all health degrading (LFD2 ahh Painkillers)
+- Medics drop first aid kits
+- Armor influences ammo pickup
+  	- From dev
+- Medic Bag buffed with temp deflection
+	- From dev
+- Fixed A24 Max Ammo
+- Infrared Wallhacks
+	- Avaliable for Attachments and as Skill Bonus
+- Night Vision Changed
+	- Avaliable for Attachments
+	- Locked behind skill
+- U.S. & Bellmead Sharpshooter have new model
+	- Less Tacky Marshals (Both)
+	- Bellmead Sharpshooter
+		- Marshals: An Alternative Take
 # Update Log:
 Update 2.0
  - The Forgotten Update (I forgot to document)
@@ -19,6 +40,7 @@ Update 2.0
 		- Two Zeal Types
 			- Black Zeal
 			- Camo Zeal
+		- Appears on Very Hard (dw) & Overkill (ds)
 	- CIA Agents Added
 	- ATF Agents Added
 	- Groundsnipers Added to Spawn
@@ -26,13 +48,21 @@ Update 2.0
 		- New models (America, LAPD, FBI, and NYPD)
 	- Custom guns yanked into this mod
 		- Like 200+ i think
-	- 
+	- 30+ Heists + Constantine Heists
 Update 1.5
  - The Small Throwable Update
 	- Cluster Bomb
 	- First-Aid-Kit-Bomb
 	- Poison Kunai
 	- Pocket Sand
+	- Difficulty Renamed
+ 		- Very Easy
+  		- Easy
+		- Normal
+		- Medimum
+		- Hard
+		- Very Hard
+		- Overkill
 
 Update 1.1???
 - Side Units bleh
@@ -47,28 +77,11 @@ UPDATE 1??
 		- Minigun Dozers appear at Death Wish and above
 		- Elite Dozers and Warthog appear at Mayhem and above
 		- Medic Dozers appear at Overkill and above
-
-Hardcore Stuff
-- Cableties are now only avaliable in a skill (3 norm and 100 aced)
-- First Aid Kits now heal all health however 75% of all health regained degrades (LFD2 ahh Painkillers)
-- Medics drop first aid kits
-- Armor influences ammo pickup (stuff from dev)
-- plan - add rpg, medicdozer, restore verison of minidozer to death wish
-- plan - add vanilla minidozer, warthog, to death sentence
-- to do - readd hostages affecting timer
-
-Stuff that is broken without mod:
-- plan - overkill ahh weapons (super overpowered weapon that are an equipment that disable ammobag use and uh is overpowered)
+	- National Guard replaces Res's Zeals
 
 Some Normalish Stuff:
-- Fixed A24 Max Ammo being 48 (this makes it stronger than like any other grenade launcher) - main it a lot before noticing intended max ammo
-
 - Fixed in my opinion broken: two perk decks being cheaper than main perk decks
-
-- Brought back rpg grunt mutator
-
-- Added thermalish color grading (https://modworkshop.net/mod/43313)
-
+- 
 - Support for VxWolf's HK G11, Railgun (Roach), OTWD Flaregun, and Cobray Terminator
  - Cobray Terminator can jam
 
