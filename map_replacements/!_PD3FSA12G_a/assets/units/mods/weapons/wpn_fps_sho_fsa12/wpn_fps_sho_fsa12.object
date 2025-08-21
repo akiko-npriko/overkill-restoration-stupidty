@@ -1,0 +1,16 @@
+<dynamic_object>
+	<diesel orientation_object="rp_fsa12" />
+	<animations>  
+		<animation_group name="recoil" enabled="false" >
+			<object name="anim_bolt_recoil" enabled="true" />
+		</animation_group> 
+		<animation_group name="reload" enabled="false" >
+			<object name="anim_bolt_reload" enabled="true" />
+			<object name="anim_mag_reload_fastmag2" enabled="true" />
+		</animation_group>  
+		<animation_group name="reload_not_empty" enabled="false" >
+			<object name="anim_bolt_reload_not_empty" enabled="true" />
+			<object name="anim_mag_reload_not_empty_fastmag2" enabled="true" />
+		</animation_group>
+    </animations>
+</dynamic_object>

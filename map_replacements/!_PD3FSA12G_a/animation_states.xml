@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<tweaks>
+	<!--
+		I've put this tweak first because it is the most important.
+		This section defines what should happen when particular animation triggers are reached in your reload animations. Generally, this is used for sounds.
+		Unlike the other files, simply replacing 'fsa12' with your animation ID will likely not work for you, since different animations use different triggers.
+	-->
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+			
+		<target mode="append">
+			<state name="fps/reload/fsa12" type="once" segment="base" speed="1.0">
+				<anim name="fsa12_reload"/>
+					<keys>
+						<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>	
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+						
+						<key at="trigger" trigger="wp_uncle12_fast2_mag_grab" callback="play_sound" class_name="base" param1="fsa12_grab_mag"/>
+						<key at="trigger" trigger="wp_uncle12_fast2_magout" callback="play_sound" class_name="base" param1="fsa12_empty_mag_out"/>
+						<key at="trigger" trigger="wp_uncle12_fast2_mag_hit_ground" callback="play_sound" class_name="base" param1="fsa12_mag_impact_ground"/>
+						<key at="trigger" trigger="wp_uncle12_fast2_new_mag" callback="play_sound" class_name="base" param1="fsa12_reload_move_arm"/>
+						<key at="trigger" trigger="wp_uncle12_fast2_mag_contact" callback="play_sound" class_name="base" param1="fsa12_empty_mag_contact"/>
+						<key at="trigger" trigger="wp_uncle12_fast2_magin" callback="play_sound" class_name="base" param1="fsa12_empty_mag_in"/>
+						<key at="trigger" trigger="wp_uncle12_bolt_pull" callback="play_sound" class_name="base" param1="fsa12_empty_lever_pull"/>
+						<key at="trigger" trigger="wp_uncle12_bolt_release" callback="play_sound" class_name="base" param1="fsa12_empty_lever_release"/>
+						<!--<key at="trigger" trigger="wp_uncle12_foley_last" callback="play_sound" class_name="base" param1="fsa12_reload_move_arm"/>-->
+						
+						<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="fsa12_grab_lever"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="fsa12_empty_back_in_hand"/>
+						<!--<key at="trigger" trigger="wp_foley_generic_tilt_back" callback="play_sound" class_name="base" param1="fsa12_tilt_back"/>-->
+						<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+
+			<state name="fps/reload_not_empty/fsa12" type="once" segment="base" speed="1.0">
+				<anim name="fsa12_reload_not_empty"/>
+					<keys>
+						<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>	
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+						
+						<key at="trigger" trigger="wp_uncle12_fast2_mag_grab" callback="play_sound" class_name="base" param1="fsa12_grab_mag"/>
+						<key at="trigger" trigger="wp_uncle12_fast2_magout" callback="play_sound" class_name="base" param1="fsa12_tactical_mag_out"/>
+						<key at="trigger" trigger="wp_uncle12_fast2_mag_hit_ground" callback="play_sound" class_name="base" param1="fsa12_mag_impact_ground"/>
+						<key at="trigger" trigger="wp_uncle12_fast2_new_mag" callback="play_sound" class_name="base" param1="fsa12_reload_move_arm"/>
+						<key at="trigger" trigger="wp_uncle12_fast2_mag_contact" callback="play_sound" class_name="base" param1="fsa12_tactical_mag_contact"/>
+						<key at="trigger" trigger="wp_uncle12_fast2_magin" callback="play_sound" class_name="base" param1="fsa12_tactcal_mag_in"/>
+						<!--<key at="trigger" trigger="wp_uncle12_foley_last" callback="play_sound" class_name="base" param1="fsa12_tactical_back_in_hand"/>-->
+						
+						<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_take_new"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="fsa12_grab_lever"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="fsa12_tactical_back_in_hand"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt_back" callback="play_sound" class_name="base" param1="fsa12_tactical_back_in_hand"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_grab"/>
+
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+		</target>
+	</tweak>
+	
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+		<target mode="attach">
+			<to name="reload_fsa12" 						redirect="fps/reload/fsa12"/>
+			<to name="reload_not_empty_fsa12" 				redirect="fps/reload_not_empty/fsa12"/>
+
+		</target>
+	</tweak>
+</tweaks>
