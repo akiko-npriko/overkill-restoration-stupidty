@@ -2894,7 +2894,7 @@ function SkillTreeTweakData:init(tweak_data)
 			deck6,
 			{
 				upgrades = {
-					"player_buildup_meter_2",
+					"player_buildup_meter_quickening",
 					"buildup_meter_elude_1",
 					"player_passive_dodge_chance_2"
 					--"player_killshot_close_regen_armor_bonus",
@@ -2909,6 +2909,7 @@ function SkillTreeTweakData:init(tweak_data)
 			deck8,
 			{
 				upgrades = {
+					"player_buildup_meter_2",
 					"buildup_meter_terrify_1",
 					"player_passive_loot_drop_multiplier_1"
 					--"player_killshot_close_panic_chance",

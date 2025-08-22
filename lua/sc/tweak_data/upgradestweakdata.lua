@@ -2460,6 +2460,9 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 			effect_max = 0.1,
 		},
 	}
+	self.values.player.buildup_meter_quickening = { --armor to base combo
+		{combo_add_mod = 1, armor_steps = 10}
+	}
 	self.values.player.buildup_meter_terrify = { --panic
 		{
 			combo_steps = 5,
@@ -5547,6 +5550,15 @@ function UpgradesTweakData:_player_definitions()
 		upgrade = {
 			value = 4,
 			upgrade = "buildup_meter_elude",
+			category = "player"
+		}
+	}
+	self.definitions.player_buildup_meter_quickening = {
+		name_id = "menu_player_buildup_quickening",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "buildup_meter_quickening",
 			category = "player"
 		}
 	}
