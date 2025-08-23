@@ -4481,7 +4481,27 @@ function CharacterTweakData:_init_gign_doc(presets)
 	self.gign_doc.speech_prefix_p2 = nil
 	self.gign_doc.speech_prefix_count = nil
 	self.gign_doc.custom_voicework = "brit_medic"
-	self.gign_doc.dodge = presets.dodge.heavy
+	self.gign_doc.dodge = self.presets.dodge.athletic_very_hard
+	--self.gign_doc.can_shoot_while_dodging = true
+	self.gign_doc.can_slide_on_suppress = true
+	--self.gign_doc.gas_on_death = true
+	self.gign_doc.dodge_with_grenade = {
+        flash = {duration = {
+            12,
+            12
+        }},
+        check = function (t, nr_grenades_used)
+            local delay_till_next_use = 1
+            local chance = 0.5
+
+            if math.random() < chance then
+                return true, t + delay_till_next_use
+            end
+
+            return false, t + delay_till_next_use
+        end
+    }
+	self.gign_doc.static_dodge_preset = true
 	table.insert(self._enemy_list, "gign_doc")
 end
 
