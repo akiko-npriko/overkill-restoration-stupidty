@@ -4,21 +4,24 @@ Overkill-restoration-stupidty (ORS) uses a separate save file compared to ResMod
 	- Can be different depending on where Steam was installed
  - You can convert your ResMod save file by making a copy of save077.sav and renaming the copy to save069.sav
 	- In addition, make a copy of vr_save077.sav and renaming the copy to vr_save069.sav
+ - Go to C:\Users\[ur stupid user]\AppData\Local\PAYDAY 2\saves\[spammed numbers]
+	- Can be any drive tbh
+ - Copy and paste save069.sav vr_save069.sav
+ - If done correctly, the game will give an error about local save and cloud save
+ 	- YOU MUST PRESS YES FOR GAME TO REGISTER GAME SAVE!
 
-IF YOU HAVE NEVER USED RESMOD!
+IF YOU HAVE NEVER PLAYED RESMOD!
  - If you wanna attempt vanilla save file:
 	- Use https://modworkshop.net/mod/24537 (Sell All Items) before attempting this
 		- As Noted by DMC, "It is highly advised you sell all of your primary and secondary weapons prior to converting your save due to changes done with primary/secondary slots and permitted attachments."
 	- You can convert your Vanilla save file by making a copy of save098.sav and renaming the copy to save069.sav
 		- In addition, make a copy of vr_save098.sav and renaming the copy to vr_save069.sav
-
-LAST STEP IS TO!!!
- - Go to C:\Users\[ur stupid user]\AppData\Local\PAYDAY 2\saves\[spammed numbers]
+- Go to C:\Users\[ur stupid user]\AppData\Local\PAYDAY 2\saves\[spammed numbers]
 	- Can be any drive tbh
- - Copy and paste save069.sav vr_save069.sav
+- Copy and paste save069.sav vr_save069.sav
+ - If done correctly, the game will give an error about local save and cloud save
+ 	- YOU MUST PRESS YES FOR GAME TO REGISTER GAME SAVE!
 
-IF DONE CORRECT IT WILL POP UP AN ERROR ASK YOU YES OR NO
- - PRESS YES!
 
 # What's this?
 Turns out github is probably an easier place to modify files and send updates to a friend
