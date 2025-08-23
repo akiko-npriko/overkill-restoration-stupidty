@@ -13,8 +13,10 @@ IF YOU HAVE NEVER USED RESMOD!
 		- In addition, make a copy of vr_save098.sav and renaming the copy to vr_save069.sav
 
 LAST STEP IS TO!!!
- - Go to C:\Users\[ur stupid user]\AppData\Local\PAYDAY 2\saves\[spammed numbers] and copy and paste save069.sav vr_save069.sav
+ - Go to C:\Users\[ur stupid user]\AppData\Local\PAYDAY 2\saves\[spammed numbers]
 	- Can be any drive tbh
+ - Copy and paste save069.sav vr_save069.sav
+
 IF DONE CORRECT IT WILL POP UP AN ERROR ASK YOU YES OR NO
  - PRESS YES!
 
