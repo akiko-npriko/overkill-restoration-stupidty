@@ -6926,6 +6926,7 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 						self.x_breech.stats_modifiers = nil
 						self.x_breech.panic_suppression_chance = 0.05
 						self.x_breech.reload_speed_multiplier = 1.1
+						self.x_breech.weapon_movement_penalty = 1.10
 						self.x_breech.timers.reload_empty = 3
 						self.x_breech.timers.reload_exit_empty = 1.55
 						self.x_breech.timers.reload_not_empty = 1.8
@@ -19078,6 +19079,7 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 				self.ks23.descope_on_fire = true
 				self.ks23.panic_suppression_chance = 0.05
 				self.ks23.stats_modifiers = nil
+				self.ks23.sounds.stop_fire = "saiga_stop"
 				self.ks23.timers.unequip = 0.6
 				self.ks23.timers.equip = 1
 				self.ks23.timers.shotgun_reload_first_shell_offset = 0.45
@@ -19602,6 +19604,7 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 				self.sks.can_shoot_through_enemy = false
 				self.sks.ignore_reload_objects_not_empty = true
 				self.sks.panic_suppression_chance = 0.05
+				self.sks.sounds.stop_fire = "akm_stop"
 				--mag timers
 				--[[
 				self.sks.timers.reload_empty = 3.03
@@ -26663,6 +26666,7 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 				self.cp2077_guts.stats_modifiers = nil
 				self.cp2077_guts.reload_speed_multiplier = 0.95
 				self.cp2077_guts.panic_suppression_chance = 0.05
+				self.cp2077_guts.sounds.stop_fire = "saiga_stop"
 				self.cp2077_guts.timers.shotgun_reload_exit_not_empty = 0.5
 				self.cp2077_guts.timers.shotgun_reload_exit_empty = 0.77
 				self.cp2077_guts.timers.shotgun_reload_first_shell_offset = 0.25
@@ -31521,7 +31525,7 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 				}
 				self.nothing.stats_modifiers = nil
 				self.nothing.swap_speed_multiplier = 2
-				self.nothing.weapon_movement_penalty = 1.07
+				self.nothing.weapon_movement_penalty = 1.14
 				self.nothing.timers = {
 					reload_not_empty = 0,
 					reload_empty = 0,
@@ -31562,7 +31566,7 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 				}
 				self.nothing2.stats_modifiers = nil
 				self.nothing2.swap_speed_multiplier = 2
-				self.nothing2.weapon_movement_penalty = 1.07
+				self.nothing2.weapon_movement_penalty = 1.14
 				self.nothing2.timers = {
 					reload_not_empty = 0,
 					reload_empty = 0,

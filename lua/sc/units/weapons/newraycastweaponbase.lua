@@ -2717,6 +2717,12 @@ function NewRaycastWeaponBase:_set_parts_visible(visible)
 	self:_chk_charm_upd_state()
 end
 
+Hooks:PreHook(NewRaycastWeaponBase, "stance_mod", "stance_mod_npc", function(self)
+	if self:is_npc() then
+		return nil
+	end
+end)
+
 if OWLFBullpupWeaponBase then
 	function OWLFBullpupWeaponBase:clbk_assembly_complete(...)
 		OWLFBullpupWeaponBase.super.clbk_assembly_complete(self, ...)
