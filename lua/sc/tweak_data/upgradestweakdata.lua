@@ -2467,13 +2467,13 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 	self.values.player.buildup_meter_hysteria = { --healing
 		{
 			combo_steps = 5,
-			effect = 0.05,
-			effect_max = 0.5,
+			effect = 0.03,
+			effect_max = 0.3,
 		},
 		{
 			combo_steps = 5,
-			effect = 0.025,
-			effect_max = 0.25,
+			effect = 0.015,
+			effect_max = 0.15,
 		}
 	}
 	self.values.player.buildup_meter_elude = { --dodge on kill
@@ -2503,25 +2503,29 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 		},
 	}
 	self.values.player.buildup_meter_quickening = { --armor to base combo
-		{combo_add_mod = 1, armor_steps = 10}
+		{
+			combo_add_mod = 1, --base combo added per step
+			hurt_t_mod = 0.5, --hurt decay cooldown added per step
+			armor_steps = 10 --armor steps
+		}
 	}
 	self.values.player.buildup_meter_terrify = { --panic
 		{
 			combo_steps = 5,
-			effect = 0.015,
-			effect_max = 0.15,
+			effect = 0.01,
+			effect_max = 0.1,
 			melee_mult = 3
 		},
 		{	--Tony
 			combo_steps = 5,
-			effect = 0.01,
-			effect_max = 0.1,
+			effect = 0.006,
+			effect_max = 0.06,
 			melee_mult = 2.33334
 		},
 		{	--Tony R
 			combo_steps = 5,
-			effect = 0.005,
-			effect_max = 0.05,
+			effect = 0.003,
+			effect_max = 0.03,
 			melee_mult = 1.66667
 		},
 	}
@@ -3190,6 +3194,7 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 		perk_value_5 = tostring(self.values.player.buildup_meter_elude[1].effect_max * 100) .. "%",
 		perk_value_6 = tostring((self.values.player.passive_dodge_chance[2] - self.values.player.passive_dodge_chance[1]) * 100), -- Passive dodge increase
 		perk_value_7 = tostring((self.values.player.buildup_meter_elude[1].melee_mult - 1) * 100) .. "%", -- Melee mult
+		perk_value_8 = tostring(self.values.player.buildup_meter_quickening[1].hurt_t_mod), -- Armor to hurst decay mod
 	}
 	self.specialization_descs[9][9] = {
 		--perk_value_1 = "18", -- Required range to activate panic (Same range as "Underdog" skill)
