@@ -516,6 +516,12 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/39963
  - ATF Field Agent over US Marshal
 	- https://modworkshop.net/mod/38787
+ - Mercenary Perk Deck
+	- https://modworkshop.net/mod/40828
+ - Liberator Perk Deck
+	- https://modworkshop.net/mod/40731
+ - Adaptive Plate - Custom Perk Deck (Modified by Akiko - me)
+	- https://modworkshop.net/mod/53506
 	 
 # Gunsss
  - Do later there are too many i hate myself...

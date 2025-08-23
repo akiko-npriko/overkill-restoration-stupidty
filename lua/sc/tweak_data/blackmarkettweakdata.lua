@@ -1873,7 +1873,10 @@ function BlackMarketTweakData:_init_projectiles(tweak_data)
 		--Other mods
 		"tachi",
 		"nerf_dart_standard",
-		"nerf_dart_poison"
+		"nerf_dart_poison",
+		
+		--Akiko Armor Plate Perk Deck (og. Hacker_lyx)
+		"adaptive_plate"
 	}
 
 	--Throwables--
@@ -2089,6 +2092,25 @@ function BlackMarketTweakData:_init_projectiles(tweak_data)
 	for i, proj_id in ipairs(give_trails) do
 		self.projectiles[proj_id].add_trail_effect = true
 	end
+	
+	--Akiko Armor Plate Perk Deck (og. Hacker_lyx) --Throwable Tweakdata (Registered Above)
+	self.projectiles.adaptive_plate = {
+		name_id = "bm_adaptive_plate",
+		desc_id = "bm_adaptive_plate_desc",
+		custom = true,
+		ignore_statistics = true,
+		based_on = "chico_injector",
+		--icon = "adaptive_plate",
+		icon = "equipment_armor_kit",
+		ability = "adaptive_plate",
+		texture_bundle_folder = "adaptive_plate",
+		base_cooldown = 60,
+		max_amount = 4,
+		sounds = {
+			activate = "perkdeck_activate",
+			cooldown = "perkdeck_cooldown_over"
+		}
+	}
 end
 
 

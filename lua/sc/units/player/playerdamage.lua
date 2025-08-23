@@ -2,6 +2,8 @@ local mvec1 = Vector3()
 local is_pro = Global.game_settings and Global.game_settings.one_down
 PlayerDamage._UPPERS_COOLDOWN = tweak_data.upgrades.values.first_aid_kit.uppers_cooldown
 
+PlayerDamage.pre_regen_armor = PlayerDamage.pre_regen_armor or 0
+
 function PlayerDamage:init(unit)
 	self._lives_init = tweak_data.player.damage.LIVES_INIT
 	--No longer check for one_down.
@@ -1647,7 +1649,7 @@ function PlayerDamage:cloak_or_shock_incap(damage)
 	self._keep_health_on_revive = true
 end
 
-Hooks:PostHook(PlayerDamage, "update" , "ResDamageInfoUpdate" , function(self, unit, t, dt)
+Hooks:PostHook(PlayerDamage, "update", "ResDamageInfoUpdate" , function(self, unit, t, dt)
 	local pm = managers.player
 	self._in_smoke_bomb = 0.0
 	for _, smoke_screen in ipairs(pm._smoke_screen_effects or {}) do
@@ -1720,6 +1722,8 @@ Hooks:PostHook(PlayerDamage, "update" , "ResDamageInfoUpdate" , function(self, u
 				self._kmerc_bloody_armor_t = nil
 			end
 		end
+	--Akiko Armor Plate Perk Deck (og. Hacker_lyx) - Hud Updating I believe
+	self:update_adaptive_plate(unit, t, dt)
 end)
 
 --Deals with resmod's health regen changes.
@@ -1845,7 +1849,8 @@ end)
 
 
 function PlayerDamage:_calc_armor_damage(attack_data)
-
+	--Akiko Armor Plate Perk Deck (og. Hacker_lyx) --Checks Damage
+	self:_check_adaptive_plate_damage(attack_data)
 	--OFFYERROCKER'S MERC PERK DECK
 	--[ [
 		if managers.player:get_temporary_property("kmerc_invuln") then
@@ -2118,6 +2123,9 @@ end
 --New trigger for ex-pres. Now occurs when armor regen kicks in any time after armor has been broken. Ignores partial regen from stuff like Bullseye.
 --Also includes trigger for Hitman dodge regen bonus.
 Hooks:PreHook(PlayerDamage, "_regenerate_armor", "ResTriggerExPres", function(self, no_sound)
+	--Akiko Armor Plate Perk Deck (og. Hacker_lyx) This captures armor pre_regen
+	self.pre_regen_armor = self:get_real_armor()
+	
 	if self._armor_broken then
 		if managers.player:has_category_upgrade("player", "armor_health_store_amount") then
 			self:consume_armor_stored_health()
@@ -2125,6 +2133,11 @@ Hooks:PreHook(PlayerDamage, "_regenerate_armor", "ResTriggerExPres", function(se
 		self._armor_broken = nil
 	end
 	self:fill_dodge_meter(managers.player:upgrade_value("player", "armor_regen_dodge", 0) * (self._dodge_points or 0))
+end)
+
+--Akiko Armor Plate Perk Deck (og. Hacker_lyx) This runs regen armor plate...
+Hooks:PostHook(PlayerDamage, "_regenerate_armor", "adaptive_plate_post_regen_armor", function(self, no_sound)
+	self:regen_adaptive_plate()
 end)
 
 --Remove old ex-pres stuff.
@@ -2260,4 +2273,151 @@ end
 
 function PlayerDamage:stun_hit(attack_data)
 	return
+end
+
+--Akiko Armor Plate Perk Deck (og. Hacker_lyx) 
+--Functions:
+
+--Function for Hud and Checks Active?
+function PlayerDamage:update_adaptive_plate(unit, t, dt)
+	if managers.player:has_activate_temporary_upgrade("temporary", "adaptive_plate_base") then
+		self._adaptive_plate_active = true
+		local total_time = managers.player:upgrade_value("temporary", "adaptive_plate_base")[2]
+		local current_time = managers.player:get_activate_temporary_expire_time("temporary", "adaptive_plate_base") - t
+		
+		managers.hud:set_player_ability_radial({
+			current = current_time,
+			total = total_time
+		})
+	elseif self._adaptive_plate_active then
+		managers.hud:set_player_ability_radial({
+			current = 0,
+			total = 1
+		})
+	
+		self._adaptive_plate_active = nil
+	end
+end
+
+--Check Damage Armor Plate
+function PlayerDamage:_check_adaptive_plate_damage(attack_data)
+	local pm = managers.player
+	local damage = attack_data.damage
+	local cur_armor = self:get_real_armor()
+	
+	if cur_armor > 0 and pm:has_category_upgrade("player", "adaptive_plate_multiplier") then
+		local stage, s, c = self:calc_adaptive_plate_stage(damage)
+		if s > 0 and c then
+			self:set_armor(stage[s])
+			attack_data.damage = 0
+			
+			if pm:has_inactivate_temporary_upgrade("temporary", "adaptive_plate_stage_"..s) then
+				pm:activate_temporary_upgrade("temporary", "adaptive_plate_stage_"..s)
+				self._can_take_dmg_timer = pm:temporary_upgrade_value("temporary", "adaptive_plate_stage_"..s, 0)
+			end
+		end
+	end
+end
+
+--Function to Regen Armor Plate
+function PlayerDamage:regen_adaptive_plate()
+	local pm = managers.player
+	
+	local max_armor = self:_max_armor()
+	local stage = self:get_adaptive_plate_stages()
+	local cur_armor = self.pre_regen_armor
+
+	if pm:has_category_upgrade("player", "adaptive_plate_multiplier") then
+		local s = pm.adaptive_plate_stage
+		
+		-- if stage 0, regen all armor
+		if s == 0 then
+			self:set_armor(max_armor)
+		
+		-- if below stage, regent to stage
+		elseif cur_armor <= stage[s] then
+				self:set_armor(stage[s])
+		
+		-- if above stage, stay at the pre_regen armor (enables bullseye)
+		else
+			self:set_armor(self.pre_regen_armor)
+		end
+		
+		self.pre_regen_armor = 0
+		
+	end
+end
+
+--Function to Modify Armor Plate Stages after Plate changes
+function PlayerDamage:calc_adaptive_plate_stage(damage)
+	local cur_armor = self:get_real_armor()
+	local pm = managers.player
+	local stage = self:get_adaptive_plate_stages()
+	local count = #stage
+	local change = false
+	local s = pm.adaptive_plate_stage
+	
+	if s < count then
+		if cur_armor-damage <= stage[s+1] then
+			pm.adaptive_plate_stage = s+1
+			change = true
+		end
+	end
+	
+	return stage, pm.adaptive_plate_stage, change
+end
+
+--Function to Calc Armor Plate Stages
+function PlayerDamage:get_adaptive_plate_stages()
+	local pm = managers.player
+	local stages = self:get_adaptive_plate_stage_count()
+	
+	local max_armor = self:_max_armor()
+	local cur_armor = self:get_real_armor()
+	local armor_step = max_armor/stages
+	local stage = {}
+	
+	for i=1,stages,1 do
+		table.insert(stage, max_armor-(armor_step*i))
+	end
+	
+	return stage
+end
+
+--Declares what armor plate stages are avaliable (Modify this function to increase or decrease stage amount)
+function PlayerDamage:get_adaptive_plate_stage_count()
+	local pm = managers.player
+	local armor_id = managers.blackmarket:equipped_armor()
+	local stages = 0
+	local throwables = 0
+	
+	if armor_id == "level_1" then
+		stages = 1
+		throwables = 4
+	elseif armor_id == "level_2" or armor_id == "level_3" then
+		stages = 2
+		throwables = 3
+	elseif armor_id == "level_4" or armor_id == "level_5" then
+		stages = 3
+		throwables = 2
+	elseif armor_id == "level_6" or armor_id == "level_7" then
+		stages = 4
+		throwables = 1
+	end
+	
+	if tweak_data.blackmarket.projectiles.adaptive_plate.max_amount ~= throwables then
+		tweak_data.blackmarket.projectiles.adaptive_plate.max_amount = throwables
+		local grenade, amount = managers.blackmarket:equipped_grenade()
+		local peer_id = managers.network:session():local_peer():id()
+		
+		if pm:has_grenade(peer_id) then
+			amount = pm:get_grenade_amount(peer_id) or amount
+		end
+		
+		amount = managers.modifiers:modify_value("PlayerManager:GetThrowablesMaxAmount", amount)
+		
+		pm:_set_grenade({grenade = grenade, amount = math.min(amount, pm:get_max_grenades())})
+	end
+	
+	return stages
 end

@@ -24,6 +24,12 @@ function PlayerBleedOut:enter(state_data, enter_data)
 		self:_start_action_unequip_weapon(managers.player:player_timer():time(), {selection_wanted = 1})
 	end
 	
+	--Akiko Armor Plate Perk Deck (og. Hacker_lyx)
+	local pm = managers.player
+	if pm:has_category_upgrade("player", "adaptive_plate_multiplier") then
+		pm.adaptive_plate_stage = 0
+	end
+	
 	local effect_id_world = "world_downed_Peer" .. tostring(managers.network:session():local_peer():id())
 
 	managers.time_speed:play_effect(effect_id_world, tweak_data.timespeed.downed)

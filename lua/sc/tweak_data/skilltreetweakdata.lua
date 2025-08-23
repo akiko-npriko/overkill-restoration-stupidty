@@ -4377,7 +4377,96 @@ function SkillTreeTweakData:init(tweak_data)
 				desc_id = "menu_deck00_9_desc"
 			}
 		}	
-
+	
+	--Akiko Armor Plate Perk Deck (og. Hacker_lyx) -- Stats 2 Change :3
+	local sc_armor_plate_deck = {
+		{
+				cost = 200,
+				desc_id = "menu_deck_adaptive_1_desc",
+				short_id = "menu_deck_adaptive_1_short",
+				name_id = "menu_deck_adaptive_1",
+				upgrades = {
+					"adaptive_plate",
+					"adaptive_plate_base",
+					"temporary_adaptive_plate_stage_0"
+				},
+				icon_xy = {
+					6,
+					0
+				}
+			},
+			deck2,
+			{
+				cost = 400,
+				desc_id = "menu_deck_adaptive_3_desc",
+				short_id = "menu_deck_adaptive_3_short",
+				name_id = "menu_deck_adaptive_3",
+				upgrades = {
+					"player_tier_armor_multiplier_1",
+					"player_tier_armor_multiplier_2"
+				},
+				icon_xy = {
+					5,
+					1
+				}
+			},
+			deck4,
+			{
+				cost = 1000,
+				desc_id = "menu_deck_adaptive_5_desc",
+				short_id = "menu_deck_adaptive_5_short",
+				name_id = "menu_deck_adaptive_5",
+				upgrades = {
+					"player_adaptive_plate_multiplier_1",
+					"temporary_adaptive_plate_stage_1",
+					"temporary_adaptive_plate_stage_2",
+					"temporary_adaptive_plate_stage_3",
+					"temporary_adaptive_plate_stage_4"
+				},
+				icon_xy = {
+					7,
+					1
+				}
+			},
+			deck6,
+			{
+				cost = 2400,
+				desc_id = "menu_deck_adaptive_7_desc",
+				short_id = "menu_deck_adaptive_7_short",
+				name_id = "menu_deck_adaptive_7",
+				upgrades = {
+					"player_tier_armor_multiplier_3",
+					"player_tier_armor_multiplier_4"
+				},
+				icon_xy = {
+					6,
+					1
+				}
+			},
+			deck8,
+			{
+				cost = 4000,
+				desc_id = "menu_deck_adaptive_9_desc",
+				short_id = "menu_deck_adaptive_9_short",
+				name_id = "menu_deck_adaptive_9",
+				upgrades = {
+					"player_perk_armor_regen_timer_multiplier_1",
+					"player_perk_armor_regen_timer_multiplier_2",
+					"player_perk_armor_regen_timer_multiplier_3",
+					"player_tier_armor_multiplier_5",
+					"player_tier_armor_multiplier_6",
+					"player_passive_loot_drop_multiplier"
+				},
+				icon_xy = {
+					0,
+					2
+				}
+			},
+			name_id = "menu_st_spec_adaptive",
+			desc_id = "menu_st_spec_adaptive_desc",
+			category = "activated"
+	}
+	
 	--Then we insert our new perk decks into the table--
 	self.specializations[1] = sc_crew_chief
 	self.specializations[2] = sc_muscle
@@ -4404,6 +4493,7 @@ function SkillTreeTweakData:init(tweak_data)
 	self.specializations[23] = sc_steamed
 	self.specializations[24] = sc_blank
 	self.specializations[25] = sc_yes_man
+	self.specializations[26] = sc_armor_plate_deck
 	
 
 	self.specialization_category = {
