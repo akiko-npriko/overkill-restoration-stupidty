@@ -1450,7 +1450,9 @@ function PlayerDamage:_calc_health_damage_no_deflection(attack_data)
 		self:_chk_cheat_death(ignore_reduce_revive)
 	end
 	
-	self:_damage_screen()
+	if attack_data.variant ~= "delayed_tick" then
+		self:_damage_screen()
+	end
 	self:_check_bleed_out(trigger_skills, nil, ignore_reduce_revive)
 	managers.hud:set_player_health({
 		current = self:get_real_health(),
