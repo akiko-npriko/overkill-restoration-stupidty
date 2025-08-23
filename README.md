@@ -12,6 +12,12 @@ IF YOU HAVE NEVER USED RESMOD!
 	- You can convert your Vanilla save file by making a copy of save098.sav and renaming the copy to save069.sav
 		- In addition, make a copy of vr_save098.sav and renaming the copy to vr_save069.sav
 
+LAST STEP IS TO!!!
+ - Go to C:\Users\[ur stupid user]\AppData\Local\PAYDAY 2\saves\[spammed numbers] and copy and paste save069.sav vr_save069.sav
+	- Can be any drive tbh
+IF DONE CORRECT IT WILL POP UP AN ERROR ASK YOU YES OR NO
+ - PRESS YES!
+
 # What's this?
 Turns out github is probably an easier place to modify files and send updates to a friend
 This is a part of a private modpack
