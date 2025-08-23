@@ -854,7 +854,7 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 				--Basic
 					self.values.smg.hip_fire_spread_multiplier = {0.8, 0.5}
 				--Ace
-					self.values.smg.reload_speed_multiplier = {1.20}
+					self.values.smg.reload_speed_multiplier = {1.15}
 					
 					self.skill_descs.rifleman = {
 						skill_value_b1 = tostring((1 - self.values.smg.hip_fire_spread_multiplier[1]) % 1 * 100).."%", -- Hipfire +accuracy
@@ -864,7 +864,7 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 				
 			--MG Specialist
 				--Basic
-					self.values.smg.move_spread_multiplier = {0.4}
+					self.values.smg.move_spread_multiplier = {0.6}
 				--Ace
 					self.values.smg.fire_rate_multiplier = {1.15, 1.15}
 					self.values.smg.full_auto_free_ammo = {4}
@@ -1318,8 +1318,8 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 		--Combat Engineer--
 			--Sharpshooter
 				--Basic
-					self.values.snp.recoil_index_addend = {2, 4}
-					self.values.assault_rifle.recoil_index_addend = {2, 4}
+					self.values.snp.recoil_index_addend = {2, 4} --2nd tier is in Rifleman Basic; you can't get Rifleman before this skill, so it's alright
+					self.values.assault_rifle.recoil_index_addend = {2, 4} --I'm reminded of Miku saying "I got that green onion for 90 yen, so it's alright" when I read that
 				--Ace
 					self.values.temporary.headshot_fire_rate_mult = {{1.2, 10}}
 					
@@ -1334,14 +1334,15 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 					self.values.snp.move_spread_multiplier = {0.4}
 					self.values.assault_rifle.move_spread_multiplier = {0.4}
 				--Ace
-					self.values.snp.reload_speed_multiplier = {1.15}					
-					self.values.assault_rifle.reload_speed_multiplier = {1.15}
+					self.values.snp.reload_speed_multiplier = {1.05, 1.15}
+					self.values.assault_rifle.reload_speed_multiplier = {1.05, 1.15}
 					self.values.snp.ap_bullets_min = {0.25}
 					self.values.assault_rifle.ap_bullets_min = {0.25}
-					
+
 					self.skill_descs.heavy_impact = {
 						skill_value_b1 = tostring((1 - self.values.snp.move_spread_multiplier[1]) * 100).."%", -- Movespeed during ADS
-						skill_value_p1 = tostring(self.values.assault_rifle.reload_speed_multiplier[1] % 1 * 100).."%", -- Reload speed
+						skill_value_b2 = tostring(self.values.assault_rifle.reload_speed_multiplier[1] % 1 * 100).."%", -- Reload speed
+						skill_value_p1 = tostring((self.values.assault_rifle.reload_speed_multiplier[2] - self.values.assault_rifle.reload_speed_multiplier[1]) % 1 * 100).."%", -- Reload speed
 						skill_value_p2 = tostring(self.values.assault_rifle.ap_bullets_min[1] % 1 * 100).."%" -- AP
 					}
 
@@ -1352,16 +1353,16 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 					self.values.assault_rifle.steelsight_range_inc = {1.10, 1.25}
 					self.values.snp.steelsight_range_inc = {1.10, 1.25}
 
-					self.values.assault_rifle.enter_steelsight_speed_multiplier = {1.075}
-					self.values.snp.enter_steelsight_speed_multiplier = {1.075}
-					
+					self.values.assault_rifle.enter_steelsight_speed_multiplier = {1.1}
+					self.values.snp.enter_steelsight_speed_multiplier = {1.1}
+
 					self.skill_descs.fire_control = {
 						skill_value_b1 = tostring(self.values.snp.steelsight_range_inc[1] % 1 * 100).."%", -- Accuracy and range buff
 						skill_value_b2 = tostring(self.values.snp.recoil_index_addend[1]), --++Stabilty
 						skill_value_p1 = tostring((self.values.snp.steelsight_range_inc[2] - self.values.snp.steelsight_range_inc[1]) * 100).."%",
 						skill_value_p2 = tostring(self.values.snp.enter_steelsight_speed_multiplier[1] % 1 * 100).."%" --ADS speed buff
 					}
-					
+
 			--Aggressive Reload
 				self.values.temporary.single_shot_fast_reload = {
 					{ --Basic
@@ -4093,7 +4094,7 @@ function UpgradesTweakData:_player_definitions()
 
 	--New Definitions, calling em here to play it safe--
 	self.definitions.assault_rifle_recoil_index_addend_2 = {
-		name_id = "menu_assualt_rifle_recoil_index_addend",
+		name_id = "menu_assault_rifle_recoil_index_addend",
 		category = "feature",
 		upgrade = {
 			category = "assault_rifle",
@@ -4107,6 +4108,24 @@ function UpgradesTweakData:_player_definitions()
 		upgrade = {
 			category = "snp",
 			upgrade = "recoil_index_addend",
+			value = 2
+		}
+	}
+	self.definitions.assault_rifle_reload_speed_multiplier_2 = {
+		name_id = "menu_assault_rifle_reload_speed_multiplier",
+		category = "feature",
+		upgrade = {
+			category = "assault_rifle",
+			upgrade = "reload_speed_multiplier",
+			value = 2
+		}
+	}
+	self.definitions.snp_reload_speed_multiplier_2 = {
+		name_id = "menu_snp_reload_speed_multiplier",
+		category = "feature",
+		upgrade = {
+			category = "snp",
+			upgrade = "reload_speed_multiplier",
 			value = 2
 		}
 	}

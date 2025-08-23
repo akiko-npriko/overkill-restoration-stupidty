@@ -2462,6 +2462,9 @@ Hooks:Add("LocalizationManagerPostInit", "SC_Localization_Weapons_Eng", function
 				--Glock
 				["bm_wp_upg_i_csglock"] = "T-Side Burst Kit",
 				["bm_wp_upg_i_csglock_desc"] = "#{risk}#Adds a fire selector##, permitting this weapon to switch to a #{skill_color}#1200 RPM 3-round burst## setting, at the cost of a lower semi-auto fire rate.",
+				--SG552
+				["bm_wp_upg_i_krieg"] = "Krieg Commando Kit",
+				["bm_wp_upg_i_krieg_desc"] = "#{important_1}#Removes burst-fire## in exchange for an #{risk}#altered full-auto fire rate.##",
 				--AK12
 				["bm_wp_upg_i_abakan"] = "Abakan Kit",
 				["bm_wp_upg_i_abakan_desc"] = "Allows this weapon to fire a #{risk}#hyperburst## with each trigger pull at the cost of a slower base fire rate.",
@@ -2502,6 +2505,7 @@ Hooks:Add("LocalizationManagerPostInit", "SC_Localization_Weapons_Eng", function
 				["bm_wp_upg_suppressor"] = "#{skill_color}#Silences## your weapon and #{risk}#reduces the chance of enemies evading your aim.##",
 				["bm_wp_upg_suppressor_boss"] = "\"What a thrill...\"\n\n#{skill_color}#Silences## your weapon and #{risk}#reduces the chance of enemies evading your aim.##",
 				["bm_wp_upg_suppressor_warn"] = "#{skill_color}#Silences## your weapon and #{risk}#reduces the chance of enemies evading your aim.##\n\n#{important_1}#May block sights.##",
+				["bm_wp_upg_unsuppressor"] = "#{skill_color}#Unsilences## your weapon and #{risk}#increases the chance of enemies evading your aim.##",
 				["bm_wp_upg_o_shortdot_dmc"] = "Shortdot Scope",
 				["bm_wp_upg_o_5_default"] = "Long-range scope.\nAttach to be able to modify the default sniper scope reticle.\n#{risk}#5x magnification.##",
 				["bm_wp_upg_mil_desc"] = "", --These didn't do anything when edited, maybe they aren't actually called?--

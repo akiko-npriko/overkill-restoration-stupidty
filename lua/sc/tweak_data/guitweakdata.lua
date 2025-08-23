@@ -131,7 +131,18 @@ function GuiTweakData:init()
 		wpn_fps_upg_o_hamr = "1 8",
 		wpn_fps_upg_o_atibal = "1 " .. tostring(#self.weapon_texture_switches.types.sight_swap - 3),
 		--Mod Sights
+		wpn_fps_upg_o_eotech_tan = "3 " .. tostring(#self.weapon_texture_switches.types.sight_swap - 6),
 		wpn_fps_shot_tti_dracarys_eotech = "1 " .. tostring(#self.weapon_texture_switches.types.sight_swap - 7),
-		wpn_fps_upg_o_mw2022_holotherm01 = "4 " .. tostring(#self.weapon_texture_switches.types.sight_swap)
+		wpn_fps_upg_o_mw2022_holotherm01 = "4 " .. tostring(#self.weapon_texture_switches.types.sight_swap),
+		wpn_fps_upg_o_kobra = "1 6",
+		wpn_fps_upg_o_coyote = "1 4",
+		wpn_fps_ass_fakedefy_o_mh1 = "1 4",
+		wpn_fps_upg_o_horzine = "1 5",
+		wpn_fps_upg_o_mw2022_minireddot04_tall = "2 3",
+		wpn_fps_upg_o_eotech_exps3_riser = "3 " .. tostring(#self.weapon_texture_switches.types.sight_swap - 7),
+		wpn_fps_ass_morita_optic_reflex = "1 " .. tostring(#self.weapon_texture_switches.types.sight_swap - 7),
+		wpn_fps_ass_morita_optic_2x = "1 4",
+		wpn_fps_ass_morita_optic_4x = "3 7",
+		wpn_fps_ass_morita_optic_hawkeye = "4 18",
 	}
 end
