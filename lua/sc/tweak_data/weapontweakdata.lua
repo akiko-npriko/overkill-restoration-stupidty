@@ -35619,7 +35619,9 @@ function WeaponTweakData:calculate_ammo_pickup(weapon, id)
 		"m134",
 		"shuno",
 		"as24",
-		"roach"
+		"roach",
+		"nothing",
+		"nothing2"
 	}
 	if id and weapon.AMMO_MAX and weapon.CLIP_AMMO_MAX then
 		--Ugly as fuck but it works
