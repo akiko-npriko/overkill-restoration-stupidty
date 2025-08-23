@@ -7002,74 +7002,35 @@ Hooks:PostHook(UpgradesTweakData, "init", "ResOtherModSkills", function(self)
 		}
 
 	--LIBERATOR DECK
-		self.values.player.tachi_base = {
-			{
-				cooldown_drain_per_kill = 1,
-				regen_interval = 0.5
-			}
-		}
-		self.values.player.tachi_restore_health = {
-			0
-		}
-		self.values.player.tachi_restore_stamina = {
-			15,
-			30
-		}
-		self.values.player.tachi_hot_cancelled_damage_resistance_consolation = {
-			0.1
-		}
-		self.values.player.tachi_hot_amount = {
-			0.025,
-			0.05,
-			0.1
-		}
-		
-		self.values.player.tachi_hot_duration = {
-			6,
-			8,
-			10
-		}
-
-		self.definitions.player_tachi_hot_amount_3 = {
-			name_id = "menu_deck_liberator_9",
-			category = "feature",
-			upgrade = {
-				value = 3,
-				upgrade = "tachi_hot_amount",
-				category = "player"
-			}
-		}
-
-
 end)
 
 Hooks:PostHook(UpgradesTweakData,"_player_definitions","tachi_init_player_definitions",function(self)
 	self.values.player.tachi_base = {
 		{
-			cooldown_drain_per_kill = 6,
-			regen_interval = 1
+			cooldown_drain_per_kill = 1,
+			regen_interval = 0.5
 		}
 	}
 	self.values.player.tachi_restore_health = {
-		5 --50 health
+		0
 	}
 	self.values.player.tachi_restore_stamina = {
-		2.5,
-		5
+		15,
+		30
 	}
 	self.values.player.tachi_hot_cancelled_damage_resistance_consolation = {
-		0.36
+		0.1
 	}
 	self.values.player.tachi_hot_amount = {
-		2.5,
-		3.5,
-		5
+		0.025,
+		0.05,
+		0.1
 	}
 	
 	self.values.player.tachi_hot_duration = {
-		4,
 		6,
-		8
+		8,
+		10
 	}
 	
 	self.definitions.player_tachi_base = {
@@ -7140,7 +7101,7 @@ Hooks:PostHook(UpgradesTweakData,"_player_definitions","tachi_init_player_defini
 		name_id = "menu_deck_liberator_9",
 		category = "feature",
 		upgrade = {
-			value = 2,
+			value = 3,
 			upgrade = "tachi_hot_amount",
 			category = "player"
 		}
