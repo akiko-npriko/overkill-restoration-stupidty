@@ -5995,11 +5995,18 @@ function UpgradesTweakData:_player_definitions()
 			category = "temporary"
 		}
 	}
-	
+end
+
+Hooks:PostHook(UpgradesTweakData,"_grenades_definitions","res_mreowp_grenades_definitions",function(self)
+	--Akiko Armor Plate Perk Deck (og. Hacker_lyx)
 	self.definitions.adaptive_plate = {
 		category = "grenade"
 	}
-end
+	--Offyerrocker Liberator Perk Deck (+ SpireWitch)
+	self.definitions.tachi = {
+		category = "grenade"
+	}
+end)
 
 function UpgradesTweakData:_smg_definitions()
 	self.definitions.smg_reload_speed_multiplier = {
@@ -7034,4 +7041,135 @@ Hooks:PostHook(UpgradesTweakData, "init", "ResOtherModSkills", function(self)
 		}
 
 
+end)
+
+Hooks:PostHook(UpgradesTweakData,"_player_definitions","tachi_init_player_definitions",function(self)
+	self.values.player.tachi_base = {
+		{
+			cooldown_drain_per_kill = 6,
+			regen_interval = 1
+		}
+	}
+	self.values.player.tachi_restore_health = {
+		5 --50 health
+	}
+	self.values.player.tachi_restore_stamina = {
+		2.5,
+		5
+	}
+	self.values.player.tachi_hot_cancelled_damage_resistance_consolation = {
+		0.36
+	}
+	self.values.player.tachi_hot_amount = {
+		2.5,
+		3.5,
+		5
+	}
+	
+	self.values.player.tachi_hot_duration = {
+		4,
+		6,
+		8
+	}
+	
+	self.definitions.player_tachi_base = {
+		name_id = "menu_deck_liberator_1",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "tachi_base",
+			category = "player"
+		}
+	}
+	self.definitions.player_tachi_restore_health_1 = {
+		name_id = "menu_deck_liberator_1",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "tachi_restore_health",
+			category = "player"
+		}
+	}
+	self.definitions.player_tachi_hot_cancelled_damage_resistance_consolation = {
+		name_id = "menu_deck_liberator_1",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "tachi_hot_cancelled_damage_resistance_consolation",
+			category = "player"
+		}
+	}
+	self.definitions.player_tachi_restore_stamina_1 = {
+		name_id = "menu_deck_liberator_1",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "tachi_restore_stamina",
+			category = "player"
+		}
+	}
+	self.definitions.player_tachi_restore_stamina_2 = {
+		name_id = "menu_deck_liberator_5",
+		category = "feature",
+		upgrade = {
+			value = 2,
+			upgrade = "tachi_restore_stamina",
+			category = "player"
+		}
+	}
+	
+	self.definitions.player_tachi_hot_amount_1 = {
+		name_id = "menu_deck_liberator_1",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "tachi_hot_amount",
+			category = "player"
+		}
+	}
+	self.definitions.player_tachi_hot_amount_2 = {
+		name_id = "menu_deck_liberator_3",
+		category = "feature",
+		upgrade = {
+			value = 2,
+			upgrade = "tachi_hot_amount",
+			category = "player"
+		}
+	}
+	self.definitions.player_tachi_hot_amount_3 = {
+		name_id = "menu_deck_liberator_9",
+		category = "feature",
+		upgrade = {
+			value = 2,
+			upgrade = "tachi_hot_amount",
+			category = "player"
+		}
+	}
+	self.definitions.player_tachi_hot_duration_1 = {
+		name_id = "menu_deck_liberator_1",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "tachi_hot_duration",
+			category = "player"
+		}
+	}
+	self.definitions.player_tachi_hot_duration_2 = {
+		name_id = "menu_deck_liberator_3",
+		category = "feature",
+		upgrade = {
+			value = 2,
+			upgrade = "tachi_hot_duration",
+			category = "player"
+		}
+	}
+	self.definitions.player_tachi_hot_duration_3 = {
+		name_id = "menu_deck_liberator_7",
+		category = "feature",
+		upgrade = {
+			value = 3,
+			upgrade = "tachi_hot_duration",
+			category = "player"
+		}
+	}
 end)

@@ -1836,6 +1836,35 @@ function PlayerManager:_attempt_adaptive_plate()
 end
 
 --Offyerrocker Functions:
+
+--Liberator Perk Deck (+ SpireWitch)
+function PlayerManager:_attempt_tachi()
+	if self:has_category_upgrade("player","tachi_base") then 
+		
+		if self._coroutine_mgr:is_running("tachi_syringe") then
+			return false
+		end
+
+		local player = self:local_player()
+		if self:has_category_upgrade("player","tachi_restore_health") then
+			local dmg_ext = player:character_damage()
+			local restore_health_amount = self:upgrade_value("player","tachi_restore_health",0)
+			dmg_ext:restore_health(restore_health_amount,true,false)
+		end
+		if self:has_category_upgrade("player","tachi_restore_stamina") then
+			local mov_ext = player:movement()
+			local restore_stamina_amount = self:upgrade_value("player","tachi_restore_stamina",0)
+			mov_ext:add_stamina(restore_stamina_amount)
+		end
+		
+		self:add_coroutine("tachi_syringe", PlayerAction.Tachi)
+		
+		return true
+	end
+	return false
+end
+
+--Global Functions:
 	--Fixes networking issues (to not crash other players)
 	--Used in Offyerrocker's Liberator Perk Deck
 	--Plus Armor Plate Perk (Akiko and og. Hacker_lyx)

@@ -2074,24 +2074,6 @@ function BlackMarketTweakData:_init_projectiles(tweak_data)
 		time_cheat = 0,
 		adjust_z = 0
 	}
-
-	self.projectiles.rocket_ray_frag.physic_effect = nil --Idstring("physic_effects/molotov_throw")
-	self.projectiles.rocket_frag.physic_effect = nil --Idstring("physic_effects/molotov_throw")
-
-	local give_trails = {
-		'launcher_frag','launcher_incendiary','launcher_electric','launcher_poison_gre_m79',
-		'launcher_frag_china','launcher_incendiary_china','launcher_electric_china','launcher_poison_china',
-		'launcher_frag_m32','launcher_incendiary_m32','launcher_electric_m32','launcher_poison_m32',
-		'launcher_m203','underbarrel_electric','launcher_poison_contraband',
-		'underbarrel_m203_groza','underbarrel_electric_groza','launcher_poison_groza',
-		'launcher_frag_slap','launcher_incendiary_slap','launcher_electric_slap','launcher_poison_slap',
-		'launcher_frag_arbiter','launcher_incendiary_arbiter','launcher_electric_arbiter','launcher_poison_arbiter',
-		'launcher_frag_osipr','launcher_incendiary_osipr','launcher_electric_osipr',
-		'launcher_frag_ms3gl','launcher_incendiary_ms3gl','launcher_electric_ms3gl','launcher_poison','launcher_poison_ms3gl_conversion'
-	}
-	for i, proj_id in ipairs(give_trails) do
-		self.projectiles[proj_id].add_trail_effect = true
-	end
 	
 	--Akiko Armor Plate Perk Deck (og. Hacker_lyx) --Throwable Tweakdata (Registered Above)
 	self.projectiles.adaptive_plate = {
@@ -2111,6 +2093,43 @@ function BlackMarketTweakData:_init_projectiles(tweak_data)
 			cooldown = "perkdeck_cooldown_over"
 		}
 	}
+	
+	--Offyerrocker Liberator Perk Deck (+ SpireWitch) - Thorwable Tweakdata (Reg Above)
+	self.projectiles.tachi = {
+		name_id = "bm_tachi",
+		desc_id = "bm_tachi_desc",
+		ability = "tachi",
+		custom = true,
+		ignore_statistics = true,
+		based_on = "chico_injector",
+		texture_bundle_folder = "liberator",
+		icon = "chico_injector",
+		max_amount = 1,
+		base_cooldown = 30,
+		sounds = {
+			activate = "perkdeck_activate",
+			cooldown = "perkdeck_cooldown_over"
+		}
+	}
+	
+	self.projectiles.rocket_ray_frag.physic_effect = nil --Idstring("physic_effects/molotov_throw")
+	self.projectiles.rocket_frag.physic_effect = nil --Idstring("physic_effects/molotov_throw")
+
+	local give_trails = {
+		'launcher_frag','launcher_incendiary','launcher_electric','launcher_poison_gre_m79',
+		'launcher_frag_china','launcher_incendiary_china','launcher_electric_china','launcher_poison_china',
+		'launcher_frag_m32','launcher_incendiary_m32','launcher_electric_m32','launcher_poison_m32',
+		'launcher_m203','underbarrel_electric','launcher_poison_contraband',
+		'underbarrel_m203_groza','underbarrel_electric_groza','launcher_poison_groza',
+		'launcher_frag_slap','launcher_incendiary_slap','launcher_electric_slap','launcher_poison_slap',
+		'launcher_frag_arbiter','launcher_incendiary_arbiter','launcher_electric_arbiter','launcher_poison_arbiter',
+		'launcher_frag_osipr','launcher_incendiary_osipr','launcher_electric_osipr',
+		'launcher_frag_ms3gl','launcher_incendiary_ms3gl','launcher_electric_ms3gl','launcher_poison','launcher_poison_ms3gl_conversion'
+	}
+	for i, proj_id in ipairs(give_trails) do
+		self.projectiles[proj_id].add_trail_effect = true
+	end
+
 end
 
 
