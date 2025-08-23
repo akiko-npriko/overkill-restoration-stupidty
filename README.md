@@ -10,7 +10,7 @@ Overkill-restoration-stupidty (ORS) uses a separate save file compared to ResMod
  - If done correctly, the game will give an error about local save and cloud save
  	- YOU MUST PRESS YES FOR GAME TO REGISTER GAME SAVE!
 
-IF YOU HAVE NEVER USED RESMOD!
+IF YOU HAVE NEVER PLAYED RESMOD!
  - If you wanna attempt vanilla save file:
 	- Use https://modworkshop.net/mod/24537 (Sell All Items) before attempting this
 		- As Noted by DMC, "It is highly advised you sell all of your primary and secondary weapons prior to converting your save due to changes done with primary/secondary slots and permitted attachments."
