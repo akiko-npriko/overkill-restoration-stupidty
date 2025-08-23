@@ -2374,6 +2374,7 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 				{tank = 5},
 				{spooc_titan = 3},
 				{spooc = 2.75},
+				{vet = 2.75},
 				{taser_titan = 2.25},
 				{taser = 2.75},
 				{medic = 2.25},
@@ -2386,7 +2387,7 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 			combo_t = 5, --Combo decay timer
 			combo_decay = 10, --Points lost when combo decay timer expires
 			hurt_decay = 5, --Points lost when health is lost
-			hurt_t = 1.5, --Hurt decay cooldown
+			hurt_t = 1, --Hurt decay cooldown
 			incap_decay = 40 --Points lost when entering bleedout (heath is 0)
 		},
 		{
@@ -2397,6 +2398,7 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 				{tank = 5},
 				{spooc_titan = 3},
 				{spooc = 2.75},
+				{vet = 2.75},
 				{taser_titan = 2.25},
 				{taser = 2.75},
 				{medic = 2.25},
@@ -2409,17 +2411,18 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 			combo_t = 5,
 			combo_decay = 5,
 			hurt_decay = 5,
-			hurt_t = 1.5,
+			hurt_t = 1,
 			incap_decay = 40
 		},
 		{ --Copycat
 			combo_max = 50, --Max combo
-			combo_add = 3, --points per kill
+			combo_add = 2, --points per kill
 			combo_ene_mult = { --Point multiplier based on enemy killed
 				{captain = 10},
 				{tank = 5},
 				{spooc_titan = 3},
 				{spooc = 2.75},
+				{vet = 2.75},
 				{taser_titan = 2.25},
 				{taser = 2.75},
 				{medic = 2.25},
@@ -2432,7 +2435,7 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 			combo_t = 5, --Combo decay timer
 			combo_decay = 10, --Points lost when combo decay timer expires
 			hurt_decay = 5, --Points lost when health is lost
-			hurt_t = 1.5, --Hurt decay cooldown
+			hurt_t = 1, --Hurt decay cooldown
 			incap_decay = 40 --Points lost when entering bleedout (heath is 0)
 		},
 	}
