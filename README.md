@@ -68,6 +68,7 @@ Update 2.0
 		- Appears on Very Hard (dw) & Overkill (ds)
 	- CIA Agents Added
 	- ATF Agents Added
+	- Gign Doc Added
 	- Groundsnipers Added to Spawn
 		- Regular Snipers removed from spawn
 		- New models (America, LAPD, FBI, and NYPD)
