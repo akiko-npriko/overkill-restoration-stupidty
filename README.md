@@ -1,3 +1,16 @@
+#IMPORTANT
+This Fork uses a different save file compared to ResMod:
+ - Your saves will usually be located in C:\Program Files (x86)\Steam\userdata\[user-id]\218620\remote
+	- Can be different depending on where Steam was installed
+ - You can convert your ResMod save file by making a copy of save077.sav and renaming the copy to save069.sav
+	- In addition, make a copy of vr_save077.sav and renaming the copy to vr_save069.sav
+
+IF YOU HAVE NEVER USED RESMOD!
+ - If you wanna attempt vanilla save file:
+	- Use https://modworkshop.net/mod/24537 (Sell All Items) before attempting this
+		- As Noted by DMC, "It is highly advised you sell all of your primary and secondary weapons prior to converting your save due to changes done with primary/secondary slots and permitted attachments."
+	- You can convert your Vanilla save file by making a copy of save098.sav and renaming the copy to save069.sav
+		- In addition, make a copy of vr_save098.sav and renaming the copy to vr_save069.sav
 # What's this?
 Turns out github is probably an easier place to modify files and send updates to a friend
 This is a part of a private modpack
