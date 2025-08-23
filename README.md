@@ -16,9 +16,9 @@ IF YOU HAVE NEVER USED RESMOD!
 		- As Noted by DMC, "It is highly advised you sell all of your primary and secondary weapons prior to converting your save due to changes done with primary/secondary slots and permitted attachments."
 	- You can convert your Vanilla save file by making a copy of save098.sav and renaming the copy to save069.sav
 		- In addition, make a copy of vr_save098.sav and renaming the copy to vr_save069.sav
-	- Go to C:\Users\[ur stupid user]\AppData\Local\PAYDAY 2\saves\[spammed numbers]
-		- Can be any drive tbh
-	- Copy and paste save069.sav vr_save069.sav
+- Go to C:\Users\[ur stupid user]\AppData\Local\PAYDAY 2\saves\[spammed numbers]
+	- Can be any drive tbh
+- Copy and paste save069.sav vr_save069.sav
  - If done correctly, the game will give an error about local save and cloud save
  	- YOU MUST PRESS YES FOR GAME TO REGISTER GAME SAVE!
 
