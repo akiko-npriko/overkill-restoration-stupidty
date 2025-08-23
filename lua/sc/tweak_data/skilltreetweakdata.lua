@@ -4464,9 +4464,84 @@ function SkillTreeTweakData:init(tweak_data)
 			},
 			name_id = "menu_st_spec_adaptive",
 			desc_id = "menu_st_spec_adaptive_desc",
-			category = "activated"
+			category = {
+				"defensive",
+				"activated"
+			}
 	}
 	
+	--Offyerrocker Liberator Perk Deck (+ SpireWitch) -- Stats 2 Change :3
+	local sc_liberator = {
+		name_id = "menu_deck_liberator_title",
+		desc_id = "menu_deck_liberator_desc",
+		{
+			upgrades = {
+				"tachi", --unlocks throwable
+				"player_tachi_base", --base throwable stats (number of charges, cooldown speed etc)
+				"player_tachi_restore_health_1",
+				"player_tachi_restore_stamina_1",
+				"player_tachi_hot_amount_1",
+				"player_tachi_hot_duration_1"
+			},
+			cost = 200,
+			icon_xy = {0, 0},
+			texture_bundle_folder = "liberator",
+			name_id = "menu_deck_liberator_1",
+			desc_id = "menu_deck_liberator_1_desc"
+		},
+		deck2,
+		{
+			upgrades = {
+				"player_tachi_hot_duration_2",
+				"player_tachi_hot_cancelled_damage_resistance_consolation"
+			},
+			cost = 400,
+			icon_xy = {1,0},
+			texture_bundle_folder = "liberator",
+			name_id = "menu_deck_liberator_3",
+			desc_id = "menu_deck_liberator_3_desc"
+		},
+		deck4,
+		{
+			upgrades = {
+--				"player_tier_dodge_chance_2",
+--				"player_tier_dodge_chance_1",
+				"player_tachi_hot_amount_2",
+				"player_tachi_restore_stamina_2",
+				"player_passive_dodge_chance_1"
+			},
+			cost = 1000,
+			icon_xy = {2, 0},
+			texture_bundle_folder = "liberator",
+			name_id = "menu_deck_liberator_5",
+			desc_id = "menu_deck_liberator_5_desc"
+		},
+		deck6,
+		{
+			upgrades = {
+				"player_passive_health_multiplier_1",
+				"player_passive_health_multiplier_2",
+				"player_passive_health_multiplier_3",
+				"player_tachi_hot_duration_3"
+			},
+			cost = 2400,
+			icon_xy = {3, 0},
+			texture_bundle_folder = "liberator",
+			name_id = "menu_deck_liberator_7",
+			desc_id = "menu_deck_liberator_7_desc"
+		},
+		deck8,
+		{
+			upgrades = {
+				"player_tachi_hot_amount_2"
+			},
+			cost = 4000,
+			icon_xy = {0,1},
+			texture_bundle_folder = "liberator",
+			name_id = "menu_deck_liberator_9",
+			desc_id = "menu_deck_liberator_9_desc"
+		}
+	}
 	--Then we insert our new perk decks into the table--
 	self.specializations[1] = sc_crew_chief
 	self.specializations[2] = sc_muscle
@@ -4494,6 +4569,7 @@ function SkillTreeTweakData:init(tweak_data)
 	self.specializations[24] = sc_blank
 	self.specializations[25] = sc_yes_man
 	self.specializations[26] = sc_armor_plate_deck
+	self.specializations[27] = sc_liberator
 	
 
 	self.specialization_category = {
