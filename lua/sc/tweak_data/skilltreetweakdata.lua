@@ -2621,6 +2621,7 @@ function SkillTreeTweakData:init(tweak_data)
 			upgrades = {
 				"buildup_meter_pacify_1",
 				"buildup_meter_redline_1",
+				"buildup_meter_hysteria_1",
 				"buildup_meter_elude_1",
 				"buildup_meter_terrify_1",
 			},
@@ -2635,6 +2636,7 @@ function SkillTreeTweakData:init(tweak_data)
 			upgrades = {
 				"buildup_meter_pacify_1",
 				"buildup_meter_redline_1",
+				"buildup_meter_hysteria_1",
 				"buildup_meter_elude_1",
 				"buildup_meter_terrify_1",
 				
@@ -2663,6 +2665,7 @@ function SkillTreeTweakData:init(tweak_data)
 			upgrades = {
 				"buildup_meter_pacify_1",
 				"buildup_meter_redline_1",
+				"buildup_meter_hysteria_1",
 				"buildup_meter_elude_1",
 				"buildup_meter_terrify_1",
 				
@@ -2679,6 +2682,7 @@ function SkillTreeTweakData:init(tweak_data)
 			upgrades = {
 				"buildup_meter_pacify_1",
 				"buildup_meter_redline_1",
+				"buildup_meter_hysteria_1",
 				"buildup_meter_elude_1",
 				"buildup_meter_terrify_1",
 				
@@ -2697,6 +2701,7 @@ function SkillTreeTweakData:init(tweak_data)
 			upgrades = {
 				"buildup_meter_pacify_1",
 				"buildup_meter_redline_1",
+				"buildup_meter_hysteria_1",
 				"buildup_meter_elude_1",
 				"buildup_meter_terrify_1",
 				
@@ -2713,6 +2718,7 @@ function SkillTreeTweakData:init(tweak_data)
 			upgrades = {
 				"buildup_meter_pacify_1",
 				"buildup_meter_redline_1",
+				"buildup_meter_hysteria_1",
 				"buildup_meter_elude_1",
 				"buildup_meter_terrify_1",
 
@@ -2729,6 +2735,7 @@ function SkillTreeTweakData:init(tweak_data)
 			upgrades = {
 				"buildup_meter_pacify_1",
 				"buildup_meter_redline_1",
+				"buildup_meter_hysteria_1",
 				"buildup_meter_elude_1",
 				"buildup_meter_terrify_1",
 
@@ -2747,10 +2754,12 @@ function SkillTreeTweakData:init(tweak_data)
 			upgrades = {
 				"buildup_meter_pacify_1",
 				"buildup_meter_redline_1",
+				"buildup_meter_hysteria_1",
 				"buildup_meter_elude_1",
 				"buildup_meter_terrify_1",
 				
-				"player_buildup_meter_earl"
+				"player_buildup_meter_earl",
+				"buildup_meter_hysteria_2",
 			},
 			texture_bundle_folder = "sc",
 			icon_xy = {0, 7}
@@ -2763,6 +2772,7 @@ function SkillTreeTweakData:init(tweak_data)
 			upgrades = {
 				"buildup_meter_pacify_1",
 				"buildup_meter_redline_1",
+				"buildup_meter_hysteria_1",
 				"buildup_meter_elude_1",
 				"buildup_meter_terrify_1",
 				
@@ -2798,6 +2808,7 @@ function SkillTreeTweakData:init(tweak_data)
 			upgrades = {
 				"buildup_meter_pacify_1",
 				"buildup_meter_redline_1",
+				"buildup_meter_hysteria_1",
 				"buildup_meter_elude_1",
 				"buildup_meter_terrify_1",
 				
@@ -2814,6 +2825,7 @@ function SkillTreeTweakData:init(tweak_data)
 			upgrades = {
 				"buildup_meter_pacify_1",
 				"buildup_meter_redline_1",
+				"buildup_meter_hysteria_1",
 				"buildup_meter_elude_1",
 				"buildup_meter_terrify_1",
 				
@@ -2830,6 +2842,7 @@ function SkillTreeTweakData:init(tweak_data)
 			upgrades = {
 				"buildup_meter_pacify_1",
 				"buildup_meter_redline_1",
+				"buildup_meter_hysteria_1",
 				"buildup_meter_elude_1",
 				"buildup_meter_terrify_1",
 				
