@@ -75,13 +75,6 @@ Update 2.0
 	- Custom guns yanked into this mod
 		- Like 200+ i think
 	- 30+ Heists + Constantine Heists
-
-Update 1.5
- - The Small Throwable Update
-	- Cluster Bomb
-	- First-Aid-Kit-Bomb
-	- Poison Kunai
-	- Pocket Sand
 	- Difficulty Renamed
  		- Very Easy
   		- Easy
@@ -91,7 +84,7 @@ Update 1.5
 		- Very Hard
 		- Overkill
 
-Update 1.1???
+Update 1.5
 - Side Units bleh
 	- XOF Units from Metal Gear
 		- XOF Piglet Units "Boom Boom"
@@ -386,16 +379,6 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/51971
  - Hostages Extend Break Time
 	- https://modworkshop.net/mod/50420
- - Throwables Module
-	- https://modworkshop.net/mod/21303
- - Cluster Bomb
-	- https://modworkshop.net/mod/21202
- - First-Aid-Kit-Bomb
-	- https://modworkshop.net/mod/21316
- - Poison Kunai
-	- https://modworkshop.net/mod/21367
- - Pocket Sand
-	- https://modworkshop.net/mod/40581
  - Who's there? (Only in Stealth)
 	- https://modworkshop.net/mod/18754
  - Who is there
