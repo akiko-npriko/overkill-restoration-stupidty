@@ -6348,7 +6348,7 @@ Hooks:Add("LocalizationManagerPostInit", "SC_Localization_Perk_Decks_Eng", funct
 			--Akiko Armor Plate Perk Deck (og. Hacker_lyx)
 				["bm_adaptive_plate"] = "Armor Plate Bag",
 				["bm_adaptive_plate_desc"] = "Activating the Armor Plate Bag will replace the plates in your carrier.\nCompletely restoring armor and giving you 2 seconds of invulnerability\nHeavier Armor will reduce the amount of charges the Plate bag has.",
-				["bm_menu_skill_locked_adaptive_plate"] = "Requires the Armor Plate Perk Deck Equipped",
+				["bm_menu_skill_locked_adaptive_plate"] = "Requires the Modular Aegis Perk Deck Equipped",
 
 				["menu_st_spec_adaptive"] = "Modular Aegis",
 				["menu_st_spec_adaptive_desc"] = "The Modular Aegis brings cutting-edge armor technology to the fight. Designed for heisters who thrive in the thick of combat, this allows them to swap out armor plates on the fly, ensuring they stay protected through the fiercest firefights. With quick reflexes and strategic timing, they are a powerful shield that adapts to the chaos.",
