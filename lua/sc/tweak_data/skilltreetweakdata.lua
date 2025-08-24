@@ -4475,7 +4475,7 @@ function SkillTreeTweakData:init(tweak_data)
 			name_id = "menu_deck_liberator_title",
 			desc_id = "menu_deck_liberator_desc",
 			category = {
-				"mod",
+				--"mod",
 				"activated"
 			},
 			{

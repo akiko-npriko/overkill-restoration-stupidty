@@ -6346,6 +6346,15 @@ Hooks:Add("LocalizationManagerPostInit", "SC_Localization_Perk_Decks_Eng", funct
 		["menu_st_spec_25"] = "Innatae",
 		--MOD PERK DECKS
 			--OFFYERROCKER'S MERCENARY PERK DECK
+				["bm_tachi"] = "Tachi-2B Survival Syringe",
+				["bm_tachi_desc"] = "These syringes contain a mixture of potent medicine and microscopic robots. When used, these robots enter the body and rapidly heal any damaged tissue around their insertion point. This specific variant of the syringes also give the user a boost of adrenaline - perfect for finding a comfortable spot to let the robots do their job.",
+				["menu_deck_liberator_title"] = "Liberator",
+				["menu_deck_liberator_desc"] = "The Liberator has a long history of 'reclaiming' government and corporate belongings, typically in the way of digital documents. With little experience in groundwork, the Liberator occasionally needs to stop and take a breather before getting back into the fight against whatever tyrants sit at the top.",
+				["menu_deck_liberator_1"] = "Survival Shortcut",
+				["menu_deck_liberator_3"] = "Preemptive Interference",
+				["menu_deck_liberator_5"] = "Non-empirical",
+				["menu_deck_liberator_7"] = "Trouble Entity",
+				["menu_deck_liberator_9"] = "Emergent Power",
 				["menu_deck_kmerc_1_desc_sc"] = "Take greatly reduced damage from heavy hits to your health so that no single attack can kill you.\n\nYou gain ##5%## more health.",
 				["menu_deck_kmerc_3_desc_sc"] = "You gain ##1%## reload speed and ##2%## weapon swap speed for every ##4## points armor you have.\n\nYou gain ##5%## more armor.",
 				["menu_deck_kmerc_5_desc_sc"] = "When your health would become ##0##, it becomes ##1## instead and you gain ##2## seconds of invulnerability.\nYou cannot sprint while under the effects of this invulnerability.\nThis effect cannot occur again until you are restored to full health.\n\nYou gain an additional ##5%## more health.",
