@@ -2421,3 +2421,21 @@ function PlayerDamage:get_adaptive_plate_stage_count()
 	
 	return stages
 end
+
+--Mercenary Perk Deck FUNCTIONS
+Hooks:PostHook(PlayerDamage,"_check_update_max_health","kmerc_playerdamage_check_max_health",function(self)
+	if not managers.player:get_property("kmerc_invuln_ready") then
+		if self:full_health() then
+			managers.player:set_property("kmerc_invuln_ready",true)
+		end
+	end
+end)
+
+local orig_is_suppressed = PlayerDamage.is_suppressed
+function PlayerDamage:is_suppressed(...)
+	if managers.player:has_category_upgrade("player","kmerc_suppression_immunity") then 
+		return false
+	else
+		return orig_is_suppressed(self,...)
+	end
+end

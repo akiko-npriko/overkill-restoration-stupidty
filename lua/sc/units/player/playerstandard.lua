@@ -1914,6 +1914,11 @@ function PlayerStandard:_update_movement(t, dt)
 end
 
 function PlayerStandard:_check_action_run(t, input)
+	--Change from Mercenary Perk
+	if managers.player:get_temporary_property("kmerc_invuln") then
+		return
+	end
+	--End
 	if input then
 		if self._setting_hold_to_run and input.btn_run_release or self._running and not self._move_dir then
 			self._running_wanted = false

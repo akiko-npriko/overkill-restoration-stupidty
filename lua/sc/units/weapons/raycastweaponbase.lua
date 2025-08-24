@@ -1935,3 +1935,20 @@ function RaycastWeaponBase:check_autoaimModded(from_pos, direction, max_dist, us
 
 	return closest_ray, suppression_enemies
 end
+
+Hooks:PostHook(RaycastWeaponBase, "reload_speed_multiplier", "kmerc_weaponbase_reloadmul_raycastweaponbase" , function(self,...)
+	if managers.player:has_category_upgrade("player","kmerc_reload_speed_per_max_armor") then
+		local player = managers.player:local_player()
+		if alive(player) then
+			local dmg_ext = player:character_damage() 
+			if dmg_ext then
+				local orig_value = Hooks:GetReturn()
+				local rate_bonus = managers.player:upgrade_value("player","kmerc_reload_speed_per_max_armor",0)
+				local rate_armor = tweak_data.upgrades.values.player.kmerc_generic_bonus_per_max_armor_rate
+				local max_armor = dmg_ext:_max_armor()
+				local bonus = math.floor(max_armor / rate_armor) * rate_bonus
+				return orig_value + bonus
+			end
+		end
+	end
+end)

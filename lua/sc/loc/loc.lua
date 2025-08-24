@@ -6345,6 +6345,7 @@ Hooks:Add("LocalizationManagerPostInit", "SC_Localization_Perk_Decks_Eng", funct
 		["menu_st_spec_24"] = "Tabula Rasa",
 		["menu_st_spec_25"] = "Innatae",
 		--MOD PERK DECKS
+			--Akiko Armor Plate Perk Deck (og. Hacker_lyx)
 				["bm_adaptive_plate"] = "Armor Plate Bag",
 				["bm_adaptive_plate_desc"] = "Activating the Armor Plate Bag will replace the plates in your carrier.\nCompletely restoring armor and giving you 2 seconds of invulnerability\nHeavier Armor will reduce the amount of charges the Plate bag has.",
 				["bm_menu_skill_locked_adaptive_plate"] = "Requires the Armor Plate Perk Deck Equipped",
@@ -6373,6 +6374,13 @@ Hooks:Add("LocalizationManagerPostInit", "SC_Localization_Perk_Decks_Eng", funct
 				["menu_deck_adaptive_9_desc"] = "Your armor recovery rate is increased by ##25%##.\n\nYou gain an additional ##5%## more armor.",
 	
 			--OFFYERROCKER'S MERCENARY PERK DECK
+				["menu_deck_kmerc_title"] = "Mercenary",
+				["menu_deck_kmerc_desc"] = "The expert Mercenary has trained in a hundred thousand ways in staying alive and a hundred thousand more in making the enemy dead instead. In even the heaviest lead-fights, a Mercenary has the grit, the perseverance, and the sheer strength of will to carry on. Survival is rule number one; when all is said and done, and the dust has settled, what's a million dollar's pay to a dead man?",
+				["menu_deck_kmerc_1"] = "Scar Tissue",
+				["menu_deck_kmerc_3"] = "Keep 'Em Coming!",
+				["menu_deck_kmerc_5"] = "Walk It Off",
+				["menu_deck_kmerc_7"] = "Salve Lining",
+				["menu_deck_kmerc_9"] = "Strongside",
 				["menu_deck_kmerc_1_desc_sc"] = "Take greatly reduced damage from heavy hits to your health so that no single attack can kill you.\n\nYou gain ##5%## more health.",
 				["menu_deck_kmerc_3_desc_sc"] = "You gain ##1%## reload speed and ##2%## weapon swap speed for every ##4## points armor you have.\n\nYou gain ##5%## more armor.",
 				["menu_deck_kmerc_5_desc_sc"] = "When your health would become ##0##, it becomes ##1## instead and you gain ##2## seconds of invulnerability.\nYou cannot sprint while under the effects of this invulnerability.\nThis effect cannot occur again until you are restored to full health.\n\nYou gain an additional ##5%## more health.",

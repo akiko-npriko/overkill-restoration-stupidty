@@ -6125,6 +6125,136 @@ function UpgradesTweakData:_player_definitions()
 			category = "player"
 		}
 	}
+	
+	--Offyerrocker Mercenary Perk Deck (+ Kuzidas)
+	self.values.player.kmerc_reactive_absorption = {
+		true
+	}
+	self.values.player.kmerc_crit_chance_per_max_armor = {
+		{
+			crit_chance = 0.01,
+			armor_points = 1.2
+		}
+	}
+	self.values.player.kmerc_swap_speed_per_max_armor = {
+		0.02
+	}
+	self.values.player.kmerc_reload_speed_per_max_armor = {
+		0.01
+	}
+	self.values.player.kmerc_generic_bonus_per_max_armor_rate = 0.4 --referenced directly; not an upgrade value
+	
+	self.values.player.kmerc_armored_hot = {
+		{
+			hot_percent = 0.05,
+			interval = 0.75,
+			warmup = 2 -- heal over time counter is reset whenever armor is depleted and initially starts again at 1 second after any amount of armor is regenerated
+		}
+	}
+	self.values.player.kmerc_fatal_triggers_invuln = {
+		{
+			hp = 0.1, --hp instead set to 1 upon taking fatal damage
+			duration = 2 --2 second invuln upon taking fatal damage
+		}
+	}
+	self.values.player.kmerc_bloody_armor = {
+		true
+	}
+	self.values.player.kmerc_passive_health_multiplier = {
+		0.15,
+		0.3
+	}
+
+	self.definitions.player_kmerc_passive_health_multiplier_1 = {
+		name_id = "kmerc_1",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "kmerc_passive_health_multiplier",
+			category = "player"
+		}
+	}
+	self.definitions.player_kmerc_passive_health_multiplier_2 = {
+		name_id = "kmerc_1",
+		category = "feature",
+		upgrade = {
+			value = 2,
+			upgrade = "kmerc_passive_health_multiplier",
+			category = "player"
+		}
+	}
+	self.definitions.player_kmerc_reactive_absorption = {
+		name_id = "kmerc_1", --name_id field doesn't matter
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "kmerc_reactive_absorption",
+			category = "player"
+		}
+	}
+	self.definitions.player_kmerc_crit_chance_per_max_armor = {
+		name_id = "kmerc_3",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "kmerc_crit_chance_per_max_armor",
+			category = "player"
+		}
+	}
+	self.definitions.player_kmerc_swap_speed_bonus_per_max_armor = {
+		name_id = "kmerc_3",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "kmerc_swap_speed_per_max_armor",
+			category = "player"
+		}
+	}
+	self.definitions.player_kmerc_reload_speed_bonus_per_max_armor = {
+		name_id = "kmerc_3",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "kmerc_reload_speed_per_max_armor",
+			category = "player"
+		}
+	}
+	self.definitions.player_kmerc_armored_hot = {
+		name_id = "kmerc_5",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "kmerc_armored_hot",
+			category = "player"
+		}
+	}
+	self.definitions.player_kmerc_fatal_triggers_invuln = {
+		name_id = "kmerc_7",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "kmerc_fatal_triggers_invuln",
+			category = "player"
+		}
+	}
+	self.definitions.player_kmerc_bloody_armor = {
+		name_id = "kmerc_9",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "kmerc_bloody_armor",
+			category = "player"
+		}
+	}
+	self.definitions.player_kmerc_suppression_immunity = {
+		name_id = "kmerc_9",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "kmerc_suppression_immunity",
+			category = "player"
+		}
+	}
 end
 
 Hooks:PostHook(UpgradesTweakData,"_grenades_definitions","res_mreowp_grenades_definitions",function(self)

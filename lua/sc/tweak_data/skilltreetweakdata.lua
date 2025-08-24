@@ -4543,6 +4543,84 @@ function SkillTreeTweakData:init(tweak_data)
 				desc_id = "menu_deck_liberator_9_desc_sc"
 			}
 		}
+		--Offyerrocker Mercenary Perk Deck (+ Kuzidas)
+		local sc_kmerc = {
+			name_id = "menu_deck_kmerc_title",
+			desc_id = "menu_deck_kmerc_desc",
+			category = {
+				"mod"
+			},
+			{
+				name_id = "menu_deck_kmerc_1",
+				desc_id = "menu_deck_kmerc_1_desc_sc",
+				cost = 200,
+				upgrades = {
+					"player_kmerc_reactive_absorption",
+					"player_kmerc_passive_health_multiplier_1"
+				},
+				texture_bundle_folder = "kmerc",
+				icon_xy = {
+					0,
+					0
+				}
+			},
+			deck2,
+			{
+				name_id = "menu_deck_kmerc_3",
+				desc_id = "menu_deck_kmerc_3_desc_sc",
+				cost = 400,
+				upgrades = {
+					"player_kmerc_reload_speed_bonus_per_max_armor",
+					"player_kmerc_swap_speed_bonus_per_max_armor",
+					"player_tier_armor_multiplier_1"
+				},
+				texture_bundle_folder = "kmerc",
+				icon_xy = {1,0}
+			},
+			deck4,
+			{
+				name_id = "menu_deck_kmerc_5",
+				desc_id = "menu_deck_kmerc_5_desc_sc",
+				cost = 1000,
+				upgrades = {
+					"player_kmerc_fatal_triggers_invuln",
+					"player_kmerc_passive_health_multiplier_2"
+				},
+				texture_bundle_folder = "kmerc",
+				icon_xy = {
+					2,
+					0
+				}
+			},
+			deck6,
+			{
+				name_id = "menu_deck_kmerc_7",
+				desc_id = "menu_deck_kmerc_7_desc_sc",
+				cost = 2400,
+				upgrades = {
+					"player_kmerc_armored_hot"
+				},
+				texture_bundle_folder = "kmerc",
+				icon_xy = {
+					3,
+					0
+				}
+			},
+			deck8,
+			{
+				name_id = "menu_deck_kmerc_9",
+				desc_id = "menu_deck_kmerc_9_desc_sc",
+				cost = 4000,
+				upgrades = {
+					"player_kmerc_bloody_armor"
+				},
+				texture_bundle_folder = "kmerc",
+				icon_xy = {
+					0,
+					1
+				}
+			}
+		}
 		
 	--Then we insert our new perk decks into the table--
 	self.specializations[1] = sc_crew_chief
@@ -4572,6 +4650,7 @@ function SkillTreeTweakData:init(tweak_data)
 	self.specializations[25] = sc_yes_man
 	self.specializations[26] = sc_armor_plate_deck
 	self.specializations[27] = sc_liberator
+	self.specializations[28] = sc_kmerc
 	
 
 	self.specialization_category = {
