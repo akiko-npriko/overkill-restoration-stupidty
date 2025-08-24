@@ -4548,7 +4548,7 @@ function SkillTreeTweakData:init(tweak_data)
 			name_id = "menu_deck_kmerc_title",
 			desc_id = "menu_deck_kmerc_desc",
 			category = {
-				"mod"
+				"defensive"
 			},
 			{
 				name_id = "menu_deck_kmerc_1",
