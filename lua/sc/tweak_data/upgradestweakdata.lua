@@ -6133,21 +6133,17 @@ function UpgradesTweakData:_player_definitions()
 	self.values.player.kmerc_crit_chance_per_max_armor = {
 		{
 			crit_chance = 0.01,
-			armor_points = 1.2
+			armor_points = 2.0
 		}
 	}
-	self.values.player.kmerc_swap_speed_per_max_armor = {
-		0.02
-	}
-	self.values.player.kmerc_reload_speed_per_max_armor = {
-		0.01
-	}
-	self.values.player.kmerc_generic_bonus_per_max_armor_rate = 0.4 --referenced directly; not an upgrade value
+	self.values.player.kmerc_swap_speed_per_max_armor = { 0.01 }
+	self.values.player.kmerc_reload_speed_per_max_armor = { 0.01 }
+	self.values.player.kmerc_generic_bonus_per_max_armor_rate = 0.8 --referenced directly; not an upgrade value
 	
 	self.values.player.kmerc_armored_hot = {
 		{
-			hot_percent = 0.05,
-			interval = 0.75,
+			hot_percent = 0.01,
+			interval = 5,
 			warmup = 2 -- heal over time counter is reset whenever armor is depleted and initially starts again at 1 second after any amount of armor is regenerated
 		}
 	}
@@ -6161,8 +6157,8 @@ function UpgradesTweakData:_player_definitions()
 		true
 	}
 	self.values.player.kmerc_passive_health_multiplier = {
-		0.15,
-		0.3
+		1.05,
+		1.10
 	}
 
 	self.definitions.player_kmerc_passive_health_multiplier_1 = {
@@ -7229,37 +7225,9 @@ Hooks:PostHook(UpgradesTweakData, "_weapon_definitions", "ResWeaponSkills", func
 		}
 	}
 end)
-
+--[[
 Hooks:PostHook(UpgradesTweakData, "init", "ResOtherModSkills", function(self)
-
 	--MERCENARY DECK
-		self.values.player.kmerc_generic_bonus_per_max_armor_rate = 0.8
-		self.values.player.kmerc_swap_speed_per_max_armor = { 0.01 }
-		self.values.player.kmerc_reload_speed_per_max_armor = { 0.01 }
-
-		self.values.player.kmerc_crit_chance_per_max_armor = {
-			{
-				crit_chance = 0.01,
-				armor_points = 2.0
-			}
-		}
-		self.values.player.kmerc_armored_hot = {
-			{
-				hot_percent = 0.01,
-				interval = 5,
-				warmup = 2 -- heal over time counter is reset whenever armor is depleted and initially starts again at 1 second after any amount of armor is regenerated
-			}
-		}
-		self.values.player.kmerc_fatal_triggers_invuln = {
-			{
-				hp = 0.1, --hp instead set to 1 upon taking fatal damage
-				duration = 2 --2 second invuln upon taking fatal damage
-			}
-		}
-		self.values.player.kmerc_passive_health_multiplier = {
-			1.05,
-			1.10
-		}
-
 	--LIBERATOR DECK
 end)
+]]
