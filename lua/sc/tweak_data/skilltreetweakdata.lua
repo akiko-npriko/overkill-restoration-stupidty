@@ -4455,7 +4455,7 @@ function SkillTreeTweakData:init(tweak_data)
 					"player_perk_armor_regen_timer_multiplier_3",
 					"player_tier_armor_multiplier_5",
 					"player_tier_armor_multiplier_6",
-					"player_passive_loot_drop_multiplier"
+					"player_passive_loot_drop_multiplier_1"
 				},
 				icon_xy = {
 					0,
@@ -4534,7 +4534,8 @@ function SkillTreeTweakData:init(tweak_data)
 			deck8,
 			{
 				upgrades = {
-					"player_tachi_hot_amount_3"
+					"player_tachi_hot_amount_3",
+					"player_passive_loot_drop_multiplier_1"
 				},
 				cost = 4000,
 				icon_xy = {0,1},
@@ -4612,7 +4613,8 @@ function SkillTreeTweakData:init(tweak_data)
 				desc_id = "menu_deck_kmerc_9_desc_sc",
 				cost = 4000,
 				upgrades = {
-					"player_kmerc_bloody_armor"
+					"player_kmerc_bloody_armor",
+					"player_passive_loot_drop_multiplier_1"
 				},
 				texture_bundle_folder = "kmerc",
 				icon_xy = {
