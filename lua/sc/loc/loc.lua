@@ -6350,7 +6350,7 @@ Hooks:Add("LocalizationManagerPostInit", "SC_Localization_Perk_Decks_Eng", funct
 				["bm_menu_skill_locked_Armor_plate"] = "Requires the Armor Plate Perk Deck Equipped",
 
 				["menu_st_spec_Armor"] = "Modular Aegis",
-				["menu_st_spec_Armor_desc"] = "With these new Armors plates, it gives a heister the ability to quickly swap out broken plates to ensure they can make it through that next fire fight.",
+				["menu_st_spec_Armor_desc"] = "The Modular Aegis brings cutting-edge armor technology to the fight. Designed for heisters who thrive in the thick of combat, this allows them to swap out armor plates on the fly, ensuring they stay protected through the fiercest firefights. With quick reflexes and strategic timing, they are a powerful shield that adapts to the chaos.",
 
 				["menu_deck_Armor_1"] = "Armor Plate 1",
 				["menu_deck_Armor_1_short"] = "Unlocks the Armor Plate Bag as a Throwable.\n\nActivating the Armor Plate Bag will replace the plates in your carrier.\nCompletely restoring armor and giving you ##2## seconds of invulnerability.\n\nHeavier Armor will reduce the amount of charges the Plate bag has.\nEach Charge has a ##60## second cooldown.\nKills will reduce the cooldown by ##6## seconds.",
@@ -6370,7 +6370,7 @@ Hooks:Add("LocalizationManagerPostInit", "SC_Localization_Perk_Decks_Eng", funct
 
 				["menu_deck_Armor_9"] = "Armor Plate 5",
 				["menu_deck_Armor_9_short"] = "Your armor recovery rate is increased by ##25%##.\n\nYou gain an additional ##5%## more armor.",
-				["menu_deck_Armor_9_desc"] = "Your armor recovery rate is increased by ##25%##.\n\nYou gain an additional ##5%## more armor."
+				["menu_deck_Armor_9_desc"] = "Your armor recovery rate is increased by ##25%##.\n\nYou gain an additional ##5%## more armor.",
 	
 			--OFFYERROCKER'S MERCENARY PERK DECK
 				["menu_deck_kmerc_1_desc_sc"] = "Take greatly reduced damage from heavy hits to your health so that no single attack can kill you.\n\nYou gain ##5%## more health.",
