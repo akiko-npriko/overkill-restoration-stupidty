@@ -4384,8 +4384,8 @@ function SkillTreeTweakData:init(tweak_data)
 	local armor_plate_material_multi_choice = {
 		{
 			name_id = "menu_deck_adaptive_alt1_9",
-			desc_id = "menu_deck_adaptive_9_alt1_desc",
-			short_id = "menu_deck_adaptive_9_alt1_desc",
+			desc_id = "menu_deck_adaptive_alt1_9_desc",
+			short_id = "menu_deck_adaptive_alt1_9_desc",
 			icon_atlas = "icons_atlas",
 			upgrades = {
 				"player_perk_armor_regen_timer_multiplier_5"
@@ -4394,9 +4394,9 @@ function SkillTreeTweakData:init(tweak_data)
 			icon_xy = {0, 0}
 		},
 		{
-			name_id = "menu_deck_adaptive_alt1_9",
-			desc_id = "menu_deck_adaptive_9_alt1_desc",
-			short_id = "menu_deck_adaptive_9_alt1_desc",
+			name_id = "menu_deck_adaptive_alt2_9",
+			desc_id = "menu_deck_adaptive_alt2_9_desc",
+			short_id = "menu_deck_adaptive_alt2_9_desc",
 			icon_atlas = "icons_atlas",
 			upgrades = {
 				"player_perk_armor_regen_timer_multiplier_5",
@@ -4406,9 +4406,9 @@ function SkillTreeTweakData:init(tweak_data)
 			icon_xy = {0, 0}
 		},
 		{
-			name_id = "menu_deck_adaptive_alt1_9",
-			desc_id = "menu_deck_adaptive_9_alt1_desc",
-			short_id = "menu_deck_adaptive_9_alt1_desc",
+			name_id = "menu_deck_adaptive_alt3_9",
+			desc_id = "menu_deck_adaptive_alt3_9_desc",
+			short_id = "menu_deck_adaptive_alt3_9_desc",
 			icon_atlas = "icons_atlas",
 			upgrades = {
 				"player_perk_armor_regen_timer_multiplier_5",
