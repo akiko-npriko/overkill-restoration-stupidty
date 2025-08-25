@@ -101,6 +101,7 @@ function PlayerManager:body_armor_skill_multiplier(override_armor)
 	multiplier = multiplier + self:upgrade_value("player", tostring(override_armor or managers.blackmarket:equipped_armor(true, true)) .. "_armor_multiplier", 1) - 1
 	multiplier = multiplier + self:upgrade_value("player", "chico_armor_multiplier", 1) - 1
 	multiplier = multiplier + self:upgrade_value("player", "mrwi_armor_multiplier", 1) - 1
+	multiplier = multiplier + self:upgrade_value("player", "titan_bd_armor_multiplier", 1) - 1
 	multiplier = multiplier + self:upgrade_value("team", "crew_add_armor", 1) - 1 --Added bot armor boost.
 
 	return multiplier

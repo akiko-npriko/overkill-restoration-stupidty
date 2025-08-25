@@ -4411,6 +4411,7 @@ function SkillTreeTweakData:init(tweak_data)
 			short_id = "menu_deck_adaptive_alt3_9_desc",
 			icon_atlas = "icons_atlas",
 			upgrades = {
+				"titan_bd_armor_multiplier_1",
 				"player_perk_armor_regen_timer_multiplier_5",
 				"player_perk_armor_regen_timer_multiplier_6",
 				"player_perk_armor_regen_timer_multiplier_7"
