@@ -1855,8 +1855,8 @@ function PlayerDamage:_calc_armor_damage(attack_data)
 			return 0
 		end
 	--]]
-	--Akiko Armor Plate Perk Deck (og. Hacker_lyx) --Checks Damage
-	self:_check_adaptive_plate_damage(attack_data)
+	--Akiko Armor Plate Perk Deck (og. Hacker_lyx) --Checks Damage and Mods it too
+	attack_data = self:_check_adaptive_plate_damage(attack_data)
 	
 	local health_subtracted = 0
 
@@ -2309,14 +2309,25 @@ function PlayerDamage:_check_adaptive_plate_damage(attack_data)
 		local stage, s, c = self:calc_adaptive_plate_stage(damage)
 		if s > 0 and c then
 			self:set_armor(stage[s])
+			--[[
 			attack_data.damage = 0
 			
 			if pm:has_inactivate_temporary_upgrade("temporary", "adaptive_plate_stage_"..s) then
 				pm:activate_temporary_upgrade("temporary", "adaptive_plate_stage_"..s)
 				self._can_take_dmg_timer = pm:temporary_upgrade_value("temporary", "adaptive_plate_stage_"..s, 0)
 			end
+			]]
+			if pm:has_inactivate_temporary_upgrade("temporary", "adaptive_plate_stage_"..s) then
+				pm:activate_temporary_upgrade("temporary", "adaptive_plate_stage_"..s)
+				attack_data.damage = attack_data.damage * 0.2
+			end
 		end
 	end
+	--test function fix later i fucking guess
+	if pm:has_activate_temporary_upgrade("temporary", "adaptive_plate_stage_0") or pm:has_activate_temporary_upgrade("temporary", "adaptive_plate_stage_1") or pm:has_activate_temporary_upgrade("temporary", "adaptive_plate_stage_2") or pm:has_activate_temporary_upgrade("temporary", "adaptive_plate_stage_3") or pm:has_activate_temporary_upgrade("temporary", "adaptive_plate_stage_4") then
+		attack_data.damage = attack_data.damage * 0.2
+	end
+	return attack_data
 end
 
 --Function to Regen Armor Plate
