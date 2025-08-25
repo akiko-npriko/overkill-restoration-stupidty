@@ -83,18 +83,6 @@
 		{ 
 			"hook_id" : "lib/units/enemies/cop/copinventory", 
 			"script_path" : "pickup_sc2.lua" 
-		},
-		{
-			"hook_id":"lib/units/beings/player/states/playerstandard", 
-			"script_path":"DrNewbie_Stuff/meleecophuh.lua"
-		},
-		{
-			"hook_id": "lib/units/weapons/projectiles/projectilebase",
-			"script_path": "DrNewbie_Stuff/throwablecophuh.lua"
-		},
-		{
-			"hook_id": "lib/units/beings/player/states/playerstandard",
-			"script_path": "DrNewbie_Stuff/throwablecophuh.lua"
 		}
 	]
 }

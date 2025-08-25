@@ -200,3 +200,7 @@ Hooks:PreHook(ProjectileBase, "throw_projectile_npc", "sh_throw_projectile_npc",
 		managers.dyn_resource:load(unit_ids, unit_name, managers.dyn_resource.DYN_RESOURCES_PACKAGE)
 	end
 end)
+
+Hooks:PostHook(ProjectileBase, "clbk_impact", "creates_proj_sounds4guards", function(self, tag, unit, body, other_unit, other_body, position, ...)
+	restoration:sound_create_point(position)
+end)
