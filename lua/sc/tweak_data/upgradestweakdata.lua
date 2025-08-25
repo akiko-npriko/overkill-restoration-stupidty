@@ -2099,7 +2099,10 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 
 		--Unused
 		0.9,
-		0.9
+		--Aegis Stuff
+		0.5,
+		3.0,
+		11.0
 	}
 
 	--Hitman

@@ -6369,9 +6369,9 @@ Hooks:Add("LocalizationManagerPostInit", "SC_Localization_Perk_Decks_Eng", funct
 				["menu_deck_adaptive_7_short"] = "You gain ##20%## more armor.",
 				["menu_deck_adaptive_7_desc"] = "You gain ##20%## more armor.",
 
-				["menu_deck_adaptive_9"] = "Armor Plate 5",
-				["menu_deck_adaptive_9_short"] = "Your armor recovery rate is increased by ##25%##.\n\nYou gain an additional ##5%## more armor.",
-				["menu_deck_adaptive_9_desc"] = "Your armor recovery rate is increased by ##25%##.\n\nYou gain an additional ##5%## more armor.",
+				["menu_deck_adaptive_9"] = "Armor Plate Material",
+				["menu_deck_adaptive_9_short"] = "Choose your armor plate material.\n\nDeck Completion Bonus: Your chance of getting a higher quality item during a PAYDAY is increased by ##10%.##",
+				["menu_deck_adaptive_9_desc"] = "Choose your armor plate material.\n\nDeck Completion Bonus: Your chance of getting a higher quality item during a PAYDAY is increased by ##10%.##",
 	
 			--OFFYERROCKER'S MERCENARY PERK DECK
 				["menu_deck_kmerc_title"] = "Mercenary",

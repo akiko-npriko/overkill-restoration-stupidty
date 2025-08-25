@@ -4379,6 +4379,48 @@ function SkillTreeTweakData:init(tweak_data)
 		}	
 	
 	--Akiko Armor Plate Perk Deck (og. Hacker_lyx) -- Stats 2 Change :3
+	
+	--TEST
+	local armor_plate_material_multi_choice = {
+		{
+			name_id = "menu_deck_adaptive_alt1_9",
+			desc_id = "menu_deck_adaptive_9_alt1_desc",
+			short_id = "menu_deck_adaptive_9_alt1_desc",
+			icon_atlas = "icons_atlas",
+			upgrades = {
+				"player_perk_armor_regen_timer_multiplier_5"
+			},
+			texture_bundle_folder = "sc",
+			icon_xy = {0, 0}
+		},
+		{
+			name_id = "menu_deck_adaptive_alt1_9",
+			desc_id = "menu_deck_adaptive_9_alt1_desc",
+			short_id = "menu_deck_adaptive_9_alt1_desc",
+			icon_atlas = "icons_atlas",
+			upgrades = {
+				"player_perk_armor_regen_timer_multiplier_5",
+				"player_perk_armor_regen_timer_multiplier_6"
+			},
+			texture_bundle_folder = "sc",
+			icon_xy = {0, 0}
+		},
+		{
+			name_id = "menu_deck_adaptive_alt1_9",
+			desc_id = "menu_deck_adaptive_9_alt1_desc",
+			short_id = "menu_deck_adaptive_9_alt1_desc",
+			icon_atlas = "icons_atlas",
+			upgrades = {
+				"player_perk_armor_regen_timer_multiplier_5",
+				"player_perk_armor_regen_timer_multiplier_6",
+				"player_perk_armor_regen_timer_multiplier_7"
+			},
+			texture_bundle_folder = "sc",
+			icon_xy = {0, 0}
+		},
+	}
+	--REPLACE LATER
+	
 	local sc_armor_plate_deck = {
 		{
 				cost = 200,
@@ -4402,6 +4444,7 @@ function SkillTreeTweakData:init(tweak_data)
 				short_id = "menu_deck_adaptive_3_short",
 				name_id = "menu_deck_adaptive_3",
 				upgrades = {
+					--Change This
 					"player_tier_armor_multiplier_1",
 					"player_tier_armor_multiplier_2"
 				},
@@ -4435,6 +4478,7 @@ function SkillTreeTweakData:init(tweak_data)
 				short_id = "menu_deck_adaptive_7_short",
 				name_id = "menu_deck_adaptive_7",
 				upgrades = {
+					--Change This tooo
 					"player_tier_armor_multiplier_3",
 					"player_tier_armor_multiplier_4"
 				},
@@ -4453,14 +4497,14 @@ function SkillTreeTweakData:init(tweak_data)
 					"player_perk_armor_regen_timer_multiplier_1",
 					"player_perk_armor_regen_timer_multiplier_2",
 					"player_perk_armor_regen_timer_multiplier_3",
-					"player_tier_armor_multiplier_5",
-					"player_tier_armor_multiplier_6",
+					"player_perk_armor_regen_timer_multiplier_4",
 					"player_passive_loot_drop_multiplier_1"
 				},
 				icon_xy = {
 					0,
 					2
-				}
+				},
+				multi_choice = armor_plate_material_multi_choice
 			},
 			name_id = "menu_st_spec_adaptive",
 			desc_id = "menu_st_spec_adaptive_desc",
