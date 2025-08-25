@@ -2323,7 +2323,7 @@ function PlayerDamage:_check_adaptive_plate_damage(attack_data)
 			end
 		end
 	end
-	--test function fix later i fucking guess
+	--test function fix later i fucking guess (replace 0.2 with has_player_upgrade shit for top too)
 	if pm:has_activate_temporary_upgrade("temporary", "adaptive_plate_stage_0") or pm:has_activate_temporary_upgrade("temporary", "adaptive_plate_stage_1") or pm:has_activate_temporary_upgrade("temporary", "adaptive_plate_stage_2") or pm:has_activate_temporary_upgrade("temporary", "adaptive_plate_stage_3") or pm:has_activate_temporary_upgrade("temporary", "adaptive_plate_stage_4") then
 		attack_data.damage = attack_data.damage * 0.2
 	end
