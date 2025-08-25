@@ -2757,15 +2757,6 @@ function PlayerStandard:_do_action_melee(t, input, skip_damage)
 
 		self._camera_unit:base():play_anim_melee_item(melee_item_tweak_anim, speed)
 	end
-	local function definemeadistrac()
-		local range = tweak_data.blackmarket.melee_weapons[melee_entry].stats.range or 175
-		local from = self._unit:movement():m_head_pos()
-		local to = from + self._unit:movement():m_head_rot():y() * range
-		local ray = self._unit:raycast("ray", from, to, "slot_mask", 1, "ignore_unit", self._unit)
-		if ray and ray.unit and ray.position then
-			restoration:sound_create_point(ray.position)
-		end
-	end
 	local function terminatorcheck()
 		--Requirements: ACE entire juggernaut subtree
 		if managers.player:has_category_upgrade("player", "bullet_shield_knock") and managers.player:has_category_upgrade("carry", "movement_penalty_nullifier") and managers.player:has_category_upgrade("player", "resist_knockback_push") and managers.player:has_category_upgrade("player", "deflection_addend") and managers.player:has_category_upgrade("player", "health_multiplier") and managers.player:has_category_upgrade("player", "headshot_regen_armor_bonus") then
@@ -2813,14 +2804,7 @@ function PlayerStandard:_do_action_melee(t, input, skip_damage)
 			end)
 		end
 	end
-	--Distraction in Stealth
-	if melee_damage_delay <= 0 then
-		definemeadistrac()
-	else
-		DelayedCalls:Add("distractonelolstealt", melee_damage_delay, function()
-			definemeadistrac()
-		end)
-	end
+	--END OF FUNNY BOOM
 end
 
 function PlayerStandard:_update_run_and_shoot_anim(t)
