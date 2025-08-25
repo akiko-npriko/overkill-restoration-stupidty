@@ -1849,15 +1849,15 @@ end)
 
 
 function PlayerDamage:_calc_armor_damage(attack_data)
-	--Akiko Armor Plate Perk Deck (og. Hacker_lyx) --Checks Damage
-	self:_check_adaptive_plate_damage(attack_data)
 	--OFFYERROCKER'S MERC PERK DECK
 	--[ [
 		if managers.player:get_temporary_property("kmerc_invuln") then
 			return 0
 		end
 	--]]
-
+	--Akiko Armor Plate Perk Deck (og. Hacker_lyx) --Checks Damage
+	self:_check_adaptive_plate_damage(attack_data)
+	
 	local health_subtracted = 0
 
 	if self:get_real_armor() > 0 then
