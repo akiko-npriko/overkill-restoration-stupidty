@@ -2158,9 +2158,33 @@ Hooks:PreHook(PlayerDamage, "_regenerate_armor", "ResTriggerExPres", function(se
 	self:fill_dodge_meter(managers.player:upgrade_value("player", "armor_regen_dodge", 0) * (self._dodge_points or 0))
 end)
 
---Akiko Armor Plate Perk Deck (og. Hacker_lyx) This runs regen armor plate...
+--Akiko Armor Plate Perk Deck (og. Hacker_lyx) - This uses alt. armor plate regen...
 Hooks:PostHook(PlayerDamage, "_regenerate_armor", "adaptive_plate_post_regen_armor", function(self, no_sound)
-	self:regen_adaptive_plate()
+	local pm = managers.player
+	
+	local max_armor = self:_max_armor()
+	local stage = self:get_adaptive_plate_stages()
+	local cur_armor = self.pre_regen_armor
+
+	if pm:has_category_upgrade("player", "adaptive_plate_multiplier") then
+		local s = pm.adaptive_plate_stage
+		
+		-- if stage 0, regen all armor
+		if s == 0 then
+			self:set_armor(max_armor)
+		
+		-- if below stage, regent to stage
+		elseif cur_armor <= stage[s] then
+				self:set_armor(stage[s])
+		
+		-- if above stage, stay at the pre_regen armor (enables bullseye)
+		else
+			self:set_armor(self.pre_regen_armor)
+		end
+		
+		self.pre_regen_armor = 0
+		
+	end
 end)
 
 --Remove old ex-pres stuff.
@@ -2319,35 +2343,6 @@ function PlayerDamage:update_adaptive_plate(unit, t, dt)
 		})
 	
 		self._adaptive_plate_active = nil
-	end
-end
-
---Function to Regen Armor Plate
-function PlayerDamage:regen_adaptive_plate()
-	local pm = managers.player
-	
-	local max_armor = self:_max_armor()
-	local stage = self:get_adaptive_plate_stages()
-	local cur_armor = self.pre_regen_armor
-
-	if pm:has_category_upgrade("player", "adaptive_plate_multiplier") then
-		local s = pm.adaptive_plate_stage
-		
-		-- if stage 0, regen all armor
-		if s == 0 then
-			self:set_armor(max_armor)
-		
-		-- if below stage, regent to stage
-		elseif cur_armor <= stage[s] then
-				self:set_armor(stage[s])
-		
-		-- if above stage, stay at the pre_regen armor (enables bullseye)
-		else
-			self:set_armor(self.pre_regen_armor)
-		end
-		
-		self.pre_regen_armor = 0
-		
 	end
 end
 
