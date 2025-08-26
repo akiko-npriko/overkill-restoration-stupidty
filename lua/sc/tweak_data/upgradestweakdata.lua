@@ -5932,12 +5932,25 @@ function UpgradesTweakData:_player_definitions()
 		3.0,
 		3.0
 	}
+	self.values.player.invul_adaptive_plate_varient = {
+		1,
+		1
+	}
 	self.definitions.titan_bd_armor_multiplier_1 = {
 		name_id = "menu_titan_bd_armor_multiplier",
 		category = "feature",
 		upgrade = {
 			value = 1,
 			upgrade = "titan_bd_armor_multiplier",
+			category = "player"
+		}
+	}
+	self.definitions.player_invul_adaptive_plate_varient_1 = {
+		name_id = "menu_player_invul_adaptive_plate_varient_1",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "invul_adaptive_plate_varient",
 			category = "player"
 		}
 	}
