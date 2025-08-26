@@ -1863,6 +1863,7 @@ function PlayerDamage:_calc_armor_damage(attack_data)
 		
 		--Akiko Armor Plate Perk Deck (og. Hacker_lyx) --Checks Damage and Mods it too
 		if pm:has_category_upgrade("player", "adaptive_plate_multiplier") then
+			local damage = attack_data.damage
 			local stage, s, c = self:calc_adaptive_plate_stage(damage)
 			if s > 0 and c then
 				self:set_armor(stage[s])
