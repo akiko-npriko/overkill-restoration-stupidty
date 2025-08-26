@@ -1869,7 +1869,7 @@ function PlayerDamage:_calc_armor_damage(attack_data)
 				attack_data.damage = 0
 				
 				--Deal with timers later ig idfk
-				if pm:has_category_upgrade("player", "invul_adaptive_plate_varient") -- add and timer here later when invincible timer is made and uh u know then
+				if pm:has_category_upgrade("player", "invul_adaptive_plate_varient") then-- add and timer here later when invincible timer is made and uh u know
 					pm:activate_temporary_upgrade("temporary", "adaptive_plate_stage_"..s)
 					self._can_take_dmg_timer = pm:temporary_upgrade_value("temporary", "adaptive_plate_stage_"..s, 0)
 				elseif pm:has_inactivate_temporary_upgrade("temporary", "adaptive_plate_stage_"..s) then
