@@ -4389,6 +4389,7 @@ function SkillTreeTweakData:init(tweak_data)
 			icon_atlas = "icons_atlas",
 			upgrades = {
 				"player_invul_adaptive_plate_varient_1",
+				"invul_adaptive_plate_timer_1",
 				"player_perk_armor_regen_timer_multiplier_5"
 			},
 			texture_bundle_folder = "sc",

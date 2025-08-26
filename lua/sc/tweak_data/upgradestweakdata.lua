@@ -5936,6 +5936,12 @@ function UpgradesTweakData:_player_definitions()
 		1,
 		1
 	}
+	self.values.temporary.invul_adaptive_plate_timer = {
+		{
+			2,
+			2
+		}
+	}
 	self.definitions.titan_bd_armor_multiplier_1 = {
 		name_id = "menu_titan_bd_armor_multiplier",
 		category = "feature",
@@ -5952,6 +5958,15 @@ function UpgradesTweakData:_player_definitions()
 			value = 1,
 			upgrade = "invul_adaptive_plate_varient",
 			category = "player"
+		}
+	}
+	self.definitions.invul_adaptive_plate_timer_1 = {
+		name_id = "menu_invul_adaptive_plate_timer",
+		category = "temporary",
+		upgrade = {
+			value = 1,
+			upgrade = "invul_adaptive_plate_timer",
+			category = "temporary"
 		}
 	}
 	self.definitions.adaptive_plate_base = {
