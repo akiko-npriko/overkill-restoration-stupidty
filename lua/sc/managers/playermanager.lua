@@ -1,8 +1,4 @@
---Akiko Armor Plate Perk Deck (og. Hacker_lyx) - Global Variable to make APC Perk Work
 PlayerManager.adaptive_plate_stage = PlayerManager.adaptive_plate_stage or 0
-PlayerManager.akiko_apc_give_armor_thingy = PlayerManager.akiko_apc_give_armor_thingy or 0
-PlayerManager.akiko_apc_give_armor_stage_thingy = PlayerManager.akiko_apc_give_armor_stage_thingy or 0
-PlayerManager.akiko_apc_give_me_mercy = false
 --Local functions requested elsewhere. These are vanilla code.
 local function make_double_hud_string(a, b)
 	return string.format("%01d|%01d", a, b)
@@ -1808,28 +1804,17 @@ function PlayerManager:_attempt_adaptive_plate()
 	local managers = _G.managers
 	local player = self:local_player()
 	local damage_ext = player:character_damage()
+	
 	if self:has_category_upgrade("player","adaptive_plate_multiplier") then
 		if self:has_activate_temporary_upgrade("temporary", "adaptive_plate_base") then
 			return false
 		end
 		
-		--Test Thingy (Make fix for bulleyes or not ur choice lmfao)
+		--Replace a Broken Armor Plate with New One
 		local stages = damage_ext:get_adaptive_plate_stage_count()
 		local max_armor = damage_ext:_max_armor()
 		local cur_armor = damage_ext:get_real_armor()
 		local armor_step = max_armor/stages
-		self.akiko_apc_give_armor_thingy = 0
-		self.akiko_apc_give_armor_stage_thingy = 0
-		self.akiko_apc_give_me_mercy = false
-		for i=1,stages,1 do
-			self.akiko_apc_give_armor_thingy = (armor_step*i)
-			self.akiko_apc_give_armor_stage_thingy = i
-			if cur_armor < (armor_step*i - (armor_step/100)) then
-				break
-			end
-		end
-		
-		--debug shit
 		
 		if managers.chat then
 			managers.chat:send_message(ChatManager.GAME, "Stupid Crap", "Your max armor " .. max_armor)
@@ -1841,26 +1826,16 @@ function PlayerManager:_attempt_adaptive_plate()
 			managers.chat:send_message(ChatManager.GAME, "Stupid Crap", "The current armor stage " .. self.adaptive_plate_stage)
 		end
 		
-		
-		if self.akiko_apc_give_armor_thingy <= 0 then
-			return false
-		elseif cur_armor > (self.akiko_apc_give_armor_thingy - (armor_step/4)) then
-			self.akiko_apc_give_me_mercy = true
-		end
-		--Remember that self.akiko_apc_give_armor_stage_thingy is reversed
-		self.adaptive_plate_stage = stages - self.akiko_apc_give_armor_stage_thingy
-		damage_ext:set_armor(self.akiko_apc_give_armor_thingy)
-		
-		if self.akiko_apc_give_me_mercy then
-			--maybe change effect idfk
+		if self.adaptive_plate_stage == 0 or cur_armor >= max_armor then
 			return false
 		end
 		
+		self.adaptive_plate_stage = math.clamp(self.adaptive_plate_stage - 1, 0, stages)
+		damage_ext:set_armor(math.clamp(cur_armor + armor_step, 0, max_armor))
 		--[[
-		
 		self.adaptive_plate_stage = 0
 		damage_ext:set_armor(damage_ext:_max_armor())
-		--]]
+		]]
 		
 		local duration = self:upgrade_value("temporary", "adaptive_plate_base")[2]
 		local now = managers.game_play_central:get_heist_timer()
