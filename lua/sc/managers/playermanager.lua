@@ -1813,7 +1813,7 @@ function PlayerManager:_attempt_adaptive_plate()
 			return false
 		end
 		
-		--Test Thingy (HAVING ONE ARMOR PLATE WONT ALLOW ADDING ANOTEHER FIX LATER!)
+		--Test Thingy (Make fix for bulleyes or not ur choice lmfao)
 		local stages = damage_ext:get_adaptive_plate_stage_count()
 		local max_armor = damage_ext:_max_armor()
 		local cur_armor = damage_ext:get_real_armor()
