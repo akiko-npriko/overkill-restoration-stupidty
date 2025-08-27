@@ -1,4 +1,7 @@
+--Akiko Armor Plate Perk Deck (og. Hacker_lyx) - Global Variable to make APC Perk Work
 PlayerManager.adaptive_plate_stage = PlayerManager.adaptive_plate_stage or 0
+PlayerManager.akiko_apc_give_armor_thingy = PlayerManager.akiko_apc_give_armor_thingy or 0
+PlayerManager.akiko_apc_give_armor_stage_thingy = PlayerManager.akiko_apc_give_armor_stage_thingy or 0
 --Local functions requested elsewhere. These are vanilla code.
 local function make_double_hud_string(a, b)
 	return string.format("%01d|%01d", a, b)
@@ -1814,21 +1817,33 @@ function PlayerManager:_attempt_adaptive_plate()
 		local max_armor = damage_ext:_max_armor()
 		local cur_armor = damage_ext:get_real_armor()
 		local armor_step = max_armor/stages
-		local givearmorthingy = 0
-		local givemearmorstage = 0
+		self.akiko_apc_give_armor_thingy = 0
+		self.akiko_apc_give_armor_stage_thingy = 0
 		for i=1,stages,1 do
 			if cur_armor <= (armor_step*i) then
-				givearmorthingy = (armor_step*i)
-				givemearmorstage = i
+				self.akiko_apc_give_armor_thingy = (armor_step*i)
+				self.akiko_apc_give_armor_stage_thingy = i
 			else
 				break
 			end
 		end
-		if givearmorthingy <= 0 then
+		
+		--debug shit
+		if managers.chat then
+			managers.chat:send_message(ChatManager.GAME, "Stupid Crap", "Your max armor " .. max_armor)
+			managers.chat:send_message(ChatManager.GAME, "Stupid Crap", "Your current armor " .. cur_armor)
+			managers.chat:send_message(ChatManager.GAME, "Stupid Crap", "Your divided by " .. stages)
+			managers.chat:send_message(ChatManager.GAME, "Stupid Crap", "Your divided armor " .. armor_step)
+			managers.chat:send_message(ChatManager.GAME, "Stupid Crap", "Your gived armor " .. self.akiko_apc_give_armor_thingy)
+			managers.chat:send_message(ChatManager.GAME, "Stupid Crap", "Your gived armor stage " .. self.akiko_apc_give_armor_stage_thingy)
+			managers.chat:send_message(ChatManager.GAME, "Stupid Crap", "The current armor stage " .. self.adaptive_plate_stage)
+		end
+		
+		if self.akiko_apc_give_armor_thingy <= 0 then
 			return false
 		end
-		self.adaptive_plate_stage = givemearmorstage
-		damage_ext:set_armor(givearmorthingy)
+		self.adaptive_plate_stage = self.akiko_apc_give_armor_stage_thingy
+		damage_ext:set_armor(self.akiko_apc_give_armor_thingy)
 		
 		--[[
 		
