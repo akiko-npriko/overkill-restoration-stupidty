@@ -2,6 +2,7 @@
 PlayerManager.adaptive_plate_stage = PlayerManager.adaptive_plate_stage or 0
 PlayerManager.akiko_apc_give_armor_thingy = PlayerManager.akiko_apc_give_armor_thingy or 0
 PlayerManager.akiko_apc_give_armor_stage_thingy = PlayerManager.akiko_apc_give_armor_stage_thingy or 0
+PlayerManager.akiko_apc_give_me_mercy = false
 --Local functions requested elsewhere. These are vanilla code.
 local function make_double_hud_string(a, b)
 	return string.format("%01d|%01d", a, b)
@@ -1819,6 +1820,7 @@ function PlayerManager:_attempt_adaptive_plate()
 		local armor_step = max_armor/stages
 		self.akiko_apc_give_armor_thingy = 0
 		self.akiko_apc_give_armor_stage_thingy = 0
+		self.akiko_apc_give_me_mercy = false
 		for i=1,stages,1 do
 			self.akiko_apc_give_armor_thingy = (armor_step*i)
 			self.akiko_apc_give_armor_stage_thingy = i
@@ -1842,10 +1844,17 @@ function PlayerManager:_attempt_adaptive_plate()
 		
 		if self.akiko_apc_give_armor_thingy <= 0 then
 			return false
+		elseif cur_armor > (akiko_apc_give_armor_thingy - (armor_step/4)) then
+			self.akiko_apc_give_me_mercy = true
 		end
 		--Remember that akiko_apc_give_armor_stage_thingy is reversed
 		self.adaptive_plate_stage = stages - self.akiko_apc_give_armor_stage_thingy
 		damage_ext:set_armor(self.akiko_apc_give_armor_thingy)
+		
+		if self.akiko_apc_give_me_mercy then
+			--maybe change effect idfk
+			return false
+		end
 		
 		--[[
 		
