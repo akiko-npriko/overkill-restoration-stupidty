@@ -1820,10 +1820,9 @@ function PlayerManager:_attempt_adaptive_plate()
 		self.akiko_apc_give_armor_thingy = 0
 		self.akiko_apc_give_armor_stage_thingy = 0
 		for i=1,stages,1 do
+			self.akiko_apc_give_armor_thingy = (armor_step*i)
+			self.akiko_apc_give_armor_stage_thingy = i
 			if cur_armor <= (armor_step*i) then
-				self.akiko_apc_give_armor_thingy = (armor_step*i)
-				self.akiko_apc_give_armor_stage_thingy = i
-			else
 				break
 			end
 		end
@@ -1842,7 +1841,8 @@ function PlayerManager:_attempt_adaptive_plate()
 		if self.akiko_apc_give_armor_thingy <= 0 then
 			return false
 		end
-		self.adaptive_plate_stage = self.akiko_apc_give_armor_stage_thingy
+		--Remember that akiko_apc_give_armor_stage_thingy is reversed
+		self.adaptive_plate_stage = stages - self.akiko_apc_give_armor_stage_thingy
 		damage_ext:set_armor(self.akiko_apc_give_armor_thingy)
 		
 		--[[
