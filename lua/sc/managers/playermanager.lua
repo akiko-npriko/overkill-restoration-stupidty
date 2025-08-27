@@ -1804,19 +1804,16 @@ function PlayerManager:_attempt_adaptive_plate()
 	local managers = _G.managers
 	local player = self:local_player()
 	local damage_ext = player:character_damage()
-	log("PLZ SEND ME SOMETHING")
 	if self:has_category_upgrade("player","adaptive_plate_multiplier") then
 		if self:has_activate_temporary_upgrade("temporary", "adaptive_plate_base") then
 			return false
 		end
-		--[[
+		
 		--Test Thingy
 		local stages = damage_ext:get_adaptive_plate_stage_count()
-		log(tostring(stages))
 		local max_armor = damage_ext:_max_armor()
 		local cur_armor = damage_ext:get_real_armor()
 		local armor_step = max_armor/stages
-		log(tostring(armor_step))
 		local givearmorthingy = 0
 		local givemearmorstage = 0
 		for i=1,stages,1 do
@@ -1827,18 +1824,17 @@ function PlayerManager:_attempt_adaptive_plate()
 				break
 			end
 		end
-		log(tostring(givearmorthingy))
 		if givearmorthingy <= 0 then
 			return false
 		end
 		self.adaptive_plate_stage = givemearmorstage
 		damage_ext:set_armor(givearmorthingy)
-		]]
-		--[ [
+		
+		--[[
 		
 		self.adaptive_plate_stage = 0
 		damage_ext:set_armor(damage_ext:_max_armor())
-		--] ]
+		--]]
 		
 		local duration = self:upgrade_value("temporary", "adaptive_plate_base")[2]
 		local now = managers.game_play_central:get_heist_timer()
