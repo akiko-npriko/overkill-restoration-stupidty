@@ -1844,10 +1844,10 @@ function PlayerManager:_attempt_adaptive_plate()
 		
 		if self.akiko_apc_give_armor_thingy <= 0 then
 			return false
-		elseif cur_armor > (akiko_apc_give_armor_thingy - (armor_step/4)) then
+		elseif cur_armor > (self.akiko_apc_give_armor_thingy - (armor_step/4)) then
 			self.akiko_apc_give_me_mercy = true
 		end
-		--Remember that akiko_apc_give_armor_stage_thingy is reversed
+		--Remember that self.akiko_apc_give_armor_stage_thingy is reversed
 		self.adaptive_plate_stage = stages - self.akiko_apc_give_armor_stage_thingy
 		damage_ext:set_armor(self.akiko_apc_give_armor_thingy)
 		
