@@ -1828,6 +1828,7 @@ function PlayerManager:_attempt_adaptive_plate()
 		end
 		
 		--debug shit
+		--[[
 		if managers.chat then
 			managers.chat:send_message(ChatManager.GAME, "Stupid Crap", "Your max armor " .. max_armor)
 			managers.chat:send_message(ChatManager.GAME, "Stupid Crap", "Your current armor " .. cur_armor)
@@ -1837,6 +1838,7 @@ function PlayerManager:_attempt_adaptive_plate()
 			managers.chat:send_message(ChatManager.GAME, "Stupid Crap", "Your gived armor stage " .. self.akiko_apc_give_armor_stage_thingy)
 			managers.chat:send_message(ChatManager.GAME, "Stupid Crap", "The current armor stage " .. self.adaptive_plate_stage)
 		end
+		]]
 		
 		if self.akiko_apc_give_armor_thingy <= 0 then
 			return false
