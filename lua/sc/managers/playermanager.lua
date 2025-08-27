@@ -1820,9 +1820,10 @@ function PlayerManager:_attempt_adaptive_plate()
 		self.akiko_apc_give_armor_thingy = 0
 		self.akiko_apc_give_armor_stage_thingy = 0
 		for i=1,stages,1 do
-			self.akiko_apc_give_armor_thingy = (armor_step*i)
-			self.akiko_apc_give_armor_stage_thingy = i
 			if cur_armor <= (armor_step*i) then
+				local numtoluvv = math.clamp((i+1), 0, stages)
+				self.akiko_apc_give_armor_thingy = (armor_step*numtoluvv)
+				self.akiko_apc_give_armor_stage_thingy = numtoluvv
 				break
 			end
 		end
