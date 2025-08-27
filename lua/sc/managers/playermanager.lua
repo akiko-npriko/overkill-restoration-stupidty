@@ -1824,7 +1824,7 @@ function PlayerManager:_attempt_adaptive_plate()
 		for i=1,stages,1 do
 			self.akiko_apc_give_armor_thingy = (armor_step*i)
 			self.akiko_apc_give_armor_stage_thingy = i
-			if cur_armor < (armor_step*i) then
+			if cur_armor < (armor_step*i - (armor_step/25)) then
 				break
 			end
 		end
