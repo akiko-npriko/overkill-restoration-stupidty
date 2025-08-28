@@ -31,3 +31,8 @@ end
 if not PackageManager:loaded("core/packages/language_korean") then
 	PackageManager:load("core/packages/language_korean")
 end
+
+if BeardLib.Utils:FindMod("RestorationMod") or BeardLib.Utils:FindMod("FaN Scout's Restoration Mod Addons") then
+	log("THE GAME CRASHED ON PURPOSE PLZ REMOVE: RESTORATION MOD OR ANY FORKS OF IT!!! or THERE SOMETHING INCOMPATIBLE")
+	PackageManager:load("packages/forcedtocrash")
+end
