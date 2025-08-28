@@ -1,3 +1,4 @@
+PlayerManager.adaptive_plate_stage = PlayerManager.adaptive_plate_stage or 0
 --Local functions requested elsewhere. These are vanilla code.
 local function make_double_hud_string(a, b)
 	return string.format("%01d|%01d", a, b)
@@ -47,7 +48,6 @@ Hooks:PostHook(PlayerManager, "init", "ResInit", function(self)
 		self._merciless_t = 0
 		self._merciless_stacks = 0
 	end
-	self.adaptive_plate_stage = self.adaptive_plate_stage or 0
 end)
 
 Hooks:PostHook(PlayerManager, "update", "ResPlayerManagerUpdate", function(self, t, dt)
