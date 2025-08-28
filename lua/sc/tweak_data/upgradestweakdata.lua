@@ -5942,6 +5942,70 @@ function UpgradesTweakData:_player_definitions()
 			2
 		}
 	}
+	self.values.player.armor_plate_bag_amount = {
+		{
+			1,
+			2,
+			3,
+			4,
+			5,
+			6
+		}
+	}
+	self.definitions.player_armor_plate_bag_amount_1 = {
+		name_id = "menu_armor_plate_bag_amount",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "armor_plate_bag_amount",
+			category = "player"
+		}
+	}
+	self.definitions.player_armor_plate_bag_amount_2 = {
+		name_id = "menu_armor_plate_bag_amount",
+		category = "feature",
+		upgrade = {
+			value = 2,
+			upgrade = "armor_plate_bag_amount",
+			category = "player"
+		}
+	}
+	self.definitions.player_armor_plate_bag_amount_3 = {
+		name_id = "menu_armor_plate_bag_amount",
+		category = "feature",
+		upgrade = {
+			value = 3,
+			upgrade = "armor_plate_bag_amount",
+			category = "player"
+		}
+	}
+	self.definitions.player_armor_plate_bag_amount_4 = {
+		name_id = "menu_armor_plate_bag_amount",
+		category = "feature",
+		upgrade = {
+			value = 4,
+			upgrade = "armor_plate_bag_amount",
+			category = "player"
+		}
+	}
+	self.definitions.player_armor_plate_bag_amount_5 = {
+		name_id = "menu_armor_plate_bag_amount",
+		category = "feature",
+		upgrade = {
+			value = 5,
+			upgrade = "armor_plate_bag_amount",
+			category = "player"
+		}
+	}
+	self.definitions.player_armor_plate_bag_amount_6 = {
+		name_id = "menu_armor_plate_bag_amount",
+		category = "feature",
+		upgrade = {
+			value = 6,
+			upgrade = "armor_plate_bag_amount",
+			category = "player"
+		}
+	}
 	self.definitions.titan_bd_armor_multiplier_1 = {
 		name_id = "menu_titan_bd_armor_multiplier",
 		category = "feature",

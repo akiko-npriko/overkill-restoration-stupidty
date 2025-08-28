@@ -4444,6 +4444,14 @@ function SkillTreeTweakData:init(tweak_data)
 				short_id = "menu_deck_adaptive_1_short",
 				name_id = "menu_deck_adaptive_1",
 				upgrades = {
+					--BLAH BLAH
+					"player_armor_plate_bag_amount_1",
+					"player_armor_plate_bag_amount_2",
+					"player_armor_plate_bag_amount_3",
+					"player_armor_plate_bag_amount_4",
+					"player_armor_plate_bag_amount_5",
+					"player_armor_plate_bag_amount_6",
+					--TEST REPLACE LATER
 					"adaptive_plate",
 					"adaptive_plate_base",
 					"temporary_adaptive_plate_stage_0"
