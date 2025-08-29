@@ -1,44 +1,48 @@
 <table directory="assets">		
-	<!--XOF Piglet-->
-	<unit path="units/pd2_mod_akiko/characters/ene_xof_piglet/ene_xof_piglet"  load="true"/>
-	<unit path="units/pd2_mod_akiko/characters/ene_xof_piglet/ene_xof_piglet_husk"  load="true"/>
-	<!--Xof Unit Voiceline Replacements :3-->
-	<unit path="units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield" load="true"/>
-	<unit path="units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield_husk" load="true"/>
-	<unit path="units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy" load="true"/>
-	<unit path="units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy_husk" load="true"/>
-	<unit path="units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light" load="true"/>
-	<unit path="units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light_husk" load="true"/>
-	<unit path="units/pd2_mod_akiko/characters/ene_xof_heavy_sniper/ene_xof_heavy_sniper" load="true"/>
-	<unit path="units/pd2_mod_akiko/characters/ene_xof_heavy_sniper/ene_xof_heavy_sniper_husk" load="true"/>
+	<!--IRS Bulldozer Debrie-->
+	<cooked_physics path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_back/ene_acc_irs_bulldozer_back" force="false"/>
+	<material_config path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_back/ene_acc_irs_bulldozer_back" force="false"/>
+	<model path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_back/ene_acc_irs_bulldozer_back" force="false"/>
+	<object path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_back/ene_acc_irs_bulldozer_back" force="false"/>
+	<unit path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_back/ene_acc_irs_bulldozer_back" force="false" load="false"/>
 	
-	<!--Xof Heavy-->
-	<object path="units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy" force="false"/>
-	<model path="units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy" force="false"/>
-	<material_config path="units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy_contour" force="false"/>
-	<material_config path="units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy" force="false"/>
-	<cooked_physics path="units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy" force="false"/>
+	<cooked_physics path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_chest/ene_acc_irs_bulldozer_chest" force="false"/>
+	<material_config path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_chest/ene_acc_irs_bulldozer_chest" force="false"/>
+	<model path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_chest/ene_acc_irs_bulldozer_chest" force="false"/>
+	<object path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_chest/ene_acc_irs_bulldozer_chest" force="false"/>
+	<unit path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_chest/ene_acc_irs_bulldozer_chest" force="false" load="false"/>
 	
-	<!--Xof Light-->
-	<object path="units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light" force="false"/>
-	<model path="units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light" force="false"/>
-	<material_config path="units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light_contour" force="false"/>
-	<material_config path="units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light" force="false"/>
-	<cooked_physics path="units/pd2_mod_akiko/characters/ene_xof_light/ene_xof_light" force="false"/>
+	<cooked_physics path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_helmet_plate/ene_acc_irs_bulldozer_helmet_plate" force="false"/>
+	<material_config path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_helmet_plate/ene_acc_irs_bulldozer_helmet_plate" force="false"/>
+	<model path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_helmet_plate/ene_acc_irs_bulldozer_helmet_plate" force="false"/>
+	<object path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_helmet_plate/ene_acc_irs_bulldozer_helmet_plate" force="false"/>
+	<unit path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_helmet_plate/ene_acc_irs_bulldozer_helmet_plate" force="false" load="false"/>
 	
-	<!--Xof Shield-->
-	<object path="units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield" force="false"/>
-	<model path="units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield" force="false"/>
-	<material_config path="units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield_contour" force="false"/>
-	<material_config path="units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield" force="false"/>
-	<cooked_physics path="units/pd2_mod_akiko/characters/ene_xof_shield/ene_xof_shield" force="false"/>
+	<cooked_physics path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_neck/ene_acc_irs_bulldozer_neck" force="false"/>
+	<material_config path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_neck/ene_acc_irs_bulldozer_neck" force="false"/>
+	<model path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_neck/ene_acc_irs_bulldozer_neck" force="false"/>
+	<object path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_neck/ene_acc_irs_bulldozer_neck" force="false"/>
+	<unit path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_neck/ene_acc_irs_bulldozer_neck" force="false" load="false"/>
 	
-	<!--Xof Volunteer-->
-	<unit path="units/pd2_mod_akiko/characters/ene_xof_volunteer/ene_xof_volunteer" load="true"/>
-	<unit path="units/pd2_mod_akiko/characters/ene_xof_volunteer/ene_xof_volunteer_husk" load="true"/>
-	<object path="units/pd2_mod_akiko/characters/ene_xof_volunteer/ene_xof_volunteer" force="false"/>
-	<model path="units/pd2_mod_akiko/characters/ene_xof_volunteer/ene_xof_volunteer" force="false"/>
-	<material_config path="units/pd2_mod_akiko/characters/ene_xof_volunteer/ene_xof_volunteer_contour" force="false"/>
-	<material_config path="units/pd2_mod_akiko/characters/ene_xof_volunteer/ene_xof_volunteer" force="false"/>
-	<cooked_physics path="units/pd2_mod_akiko/characters/ene_xof_volunteer/ene_xof_volunteer" force="false"/>
+	<cooked_physics path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_stomache/ene_acc_irs_bulldozer_stomache" force="false"/>
+	<material_config path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_stomache/ene_acc_irs_bulldozer_stomache" force="false"/>
+	<model path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_stomache/ene_acc_irs_bulldozer_stomache" force="false"/>
+	<object path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_stomache/ene_acc_irs_bulldozer_stomache" force="false"/>
+	<unit path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_stomache/ene_acc_irs_bulldozer_stomache" force="false" load="false"/>
+	
+	<cooked_physics path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_throat/ene_acc_irs_bulldozer_throat" force="false"/>
+	<material_config path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_throat/ene_acc_irs_bulldozer_throat" force="false"/>
+	<model path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_throat/ene_acc_irs_bulldozer_throat" force="false"/>
+	<object path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_throat/ene_acc_irs_bulldozer_throat" force="false"/>
+	<unit path="units/pd2_mod_akiko/weapons/ene_acc_irs_bulldozer_throat/ene_acc_irs_bulldozer_throat" force="false" load="false"/>
+	
+	<!--IRS Bulldozer (Mini Captain)-->
+	<unit path="units/pd2_mod_akiko/characters/ene_irs_bulldozer_skull/ene_irs_bulldozer_skull" load="true"/>
+	<unit path="units/pd2_mod_akiko/characters/ene_irs_bulldozer_skull/ene_irs_bulldozer_skull_husk" load="true"/>
+	<object path="units/pd2_mod_akiko/characters/ene_irs_bulldozer_skull/ene_irs_bulldozer_skull" force="false"/>
+	<model path="units/pd2_mod_akiko/characters/ene_irs_bulldozer_skull/ene_irs_bulldozer_skull" force="false"/>
+	<material_config path="units/pd2_mod_akiko/characters/ene_irs_bulldozer_skull/ene_irs_bulldozer_skull_contour" force="false"/>
+	<material_config path="units/pd2_mod_akiko/characters/ene_irs_bulldozer_skull/ene_irs_bulldozer_skull" force="false"/>
+	<cooked_physics path="units/pd2_mod_akiko/characters/ene_irs_bulldozer_skull/ene_irs_bulldozer_skull" force="false"/>
+	
 </table>

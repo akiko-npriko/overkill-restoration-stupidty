@@ -20233,6 +20233,7 @@ function CharacterTweakData:character_map()
 				"ene_atf_agent",
 				"ene_cia_agent",
 				"ene_cia_zeal_light",
+				"ene_irs_bulldozer_skull",
 				"ene_ng_minigunner"
 			}
 		}
