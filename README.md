@@ -505,6 +505,10 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/40731
  - Adaptive Plate - Custom Perk Deck (Modified by Akiko - me)
 	- https://modworkshop.net/mod/53506
+ - Taser Dozer Standalone Enemy
+	- https://modworkshop.net/mod/23969
+ - IRS GenSec
+	- https://modworkshop.net/mod/28423
 	 
 # Gunsss
  - Do later there are too many i hate myself...
