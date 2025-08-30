@@ -1277,8 +1277,8 @@ local crew_wep_preset = {
 		self.port_railgun_npc.usage = "is_groundsniper"
 		
 		--Ground Sniper M14
-		self.groundsniper_m14 = deep_clone(self.m14_sniper_npc)
-		self.groundsniper_m14.usage = "is_groundsniper"
+		self.groundsniper_m14_npc = deep_clone(self.m14_sniper_npc)
+		self.groundsniper_m14_npc.usage = "is_groundsniper"
 	end
 
 	function WeaponTweakData:_init_data_heavy_snp_npc()
