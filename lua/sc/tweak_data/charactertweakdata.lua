@@ -5594,7 +5594,8 @@ function CharacterTweakData:_presets(tweak_data)
 		is_sniper = {},
 		is_flamethrower = {},
 		is_m32 = {},
-		is_dmr = {}
+		is_dmr = {},
+		is_groundsniper = {}
 	}
 	presets.weapon.normal.is_pistol.aim_delay = {0.15, 0.15}
 	presets.weapon.normal.is_pistol.focus_delay = 10
