@@ -18829,7 +18829,7 @@ Hooks:PostHook(CharacterTweakData, "_create_table_structure", "remod_create_tabl
 	
 	--Ground Sniper M14
 	table.insert(self.weap_ids, "groundsniper_m14")
-	table.insert(self.weap_unit_names, Idstring("units/payday2/weapons/wpn_npc_sniper_sc/wpn_npc_sniper_sc"))
+	table.insert(self.weap_unit_names, Idstring("units/pd2_mod_akiko/weapons/wpn_npc_sniper_sc/wpn_npc_sniper_sc"))
 
 end)
 
