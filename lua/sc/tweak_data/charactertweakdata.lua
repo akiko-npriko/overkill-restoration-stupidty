@@ -5595,7 +5595,8 @@ function CharacterTweakData:_presets(tweak_data)
 		is_flamethrower = {},
 		is_m32 = {},
 		is_dmr = {},
-		is_groundsniper = {}
+		is_groundsniper = {},
+		is_groundsniper_no_laser = {}
 	}
 	presets.weapon.normal.is_pistol.aim_delay = {0.15, 0.15}
 	presets.weapon.normal.is_pistol.focus_delay = 10
@@ -16858,6 +16859,17 @@ function CharacterTweakData:_presets(tweak_data)
 	presets.weapon.deathwish.is_groundsniper.focus_delay = 5
 	--presets.weapon.normal.is_groundsniper.focus_delay = 10
 	--presets.weapon.normal.is_groundsniper.focus_dis = 200
+	
+	presets.weapon.normal.is_groundsniper_no_laser = deep_clone(presets.weapon.normal.is_groundsniper)
+	presets.weapon.good.is_groundsniper_no_laser = deep_clone(presets.weapon.good.is_groundsniper)
+	presets.weapon.expert.is_groundsniper_no_laser = deep_clone(presets.weapon.expert.is_groundsniper)
+	presets.weapon.deathwish.is_groundsniper_no_laser = deep_clone(presets.weapon.deathwish.is_groundsniper)
+	presets.weapon.gang_member.is_groundsniper_no_laser = deep_clone(presets.weapon.gang_member.is_groundsniper)
+	
+	presets.weapon.normal.is_groundsniper_no_laser.use_laser = false
+	presets.weapon.good.is_groundsniper_no_laser.use_laser = false
+	presets.weapon.expert.is_groundsniper_no_laser.use_laser = false
+	presets.weapon.deathwish.is_groundsniper_no_laser.use_laser = false
 	--Akiko Groundsniper Done
 	
 	restoration.log_shit("SC: normal presets")
