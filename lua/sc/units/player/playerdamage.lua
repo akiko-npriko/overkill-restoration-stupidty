@@ -2421,7 +2421,9 @@ function PlayerDamage:get_adaptive_plate_stage_count()
 		
 		pm:_set_grenade({grenade = grenade, amount = math.min(amount, pm:get_max_grenades())})
 		]]
-		pm:_set_grenade({grenade = grenade, amount = throwables})
+		DelayedCalls:Add("refresh_apc_inst", 0.01, function()
+			pm:speed_up_grenade_cooldown((tweak_data.blackmarket.projectiles[managers.blackmarket:equipped_grenade()].base_cooldown) * throwables)
+		end)
 	end
 	
 	return stages
