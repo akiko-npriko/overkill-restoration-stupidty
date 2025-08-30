@@ -16849,13 +16849,13 @@ function CharacterTweakData:_presets(tweak_data)
 	presets.weapon.gang_member.is_groundsniper = deep_clone(presets.weapon.gang_member.is_sniper)
 	
 	presets.weapon.normal.is_groundsniper.aim_delay = {1, 1}
-	presets.weapon.normal.is_groundsniper.focus_delay = 6
+	presets.weapon.normal.is_groundsniper.focus_delay = 5
 	presets.weapon.good.is_groundsniper.aim_delay = {1, 1}
-	presets.weapon.good.is_groundsniper.focus_delay = 6
+	presets.weapon.good.is_groundsniper.focus_delay = 5
 	presets.weapon.expert.is_groundsniper.aim_delay = {1, 1}
-	presets.weapon.expert.is_groundsniper.focus_delay = 6
+	presets.weapon.expert.is_groundsniper.focus_delay = 5
 	presets.weapon.deathwish.is_groundsniper.aim_delay = {1, 1}
-	presets.weapon.deathwish.is_groundsniper.focus_delay = 6
+	presets.weapon.deathwish.is_groundsniper.focus_delay = 5
 	--presets.weapon.normal.is_groundsniper.focus_delay = 10
 	--presets.weapon.normal.is_groundsniper.focus_dis = 200
 	--Akiko Groundsniper Done
