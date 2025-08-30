@@ -2404,10 +2404,12 @@ function PlayerDamage:get_adaptive_plate_stage_count()
 	end
 	
 	--Isnt working fix later ig
-	throwables = managers.player:upgrade_value("player", "armor_plate_bag_amount", 1)
+	throwables = managers.player:upgrade_value("player", "armor_plate_bag_amount", 6)
 	
 	if tweak_data.blackmarket.projectiles.adaptive_plate.max_amount ~= throwables then
 		tweak_data.blackmarket.projectiles.adaptive_plate.max_amount = throwables
+		--Figure out wtf this is for
+		--[[
 		local grenade, amount = managers.blackmarket:equipped_grenade()
 		local peer_id = managers.network:session():local_peer():id()
 		
@@ -2418,6 +2420,8 @@ function PlayerDamage:get_adaptive_plate_stage_count()
 		amount = managers.modifiers:modify_value("PlayerManager:GetThrowablesMaxAmount", amount)
 		
 		pm:_set_grenade({grenade = grenade, amount = math.min(amount, pm:get_max_grenades())})
+		]]
+		pm:_set_grenade({grenade = grenade, amount = throwables})
 	end
 	
 	return stages

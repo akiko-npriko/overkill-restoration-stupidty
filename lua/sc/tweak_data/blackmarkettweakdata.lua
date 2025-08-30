@@ -2086,8 +2086,8 @@ function BlackMarketTweakData:_init_projectiles(tweak_data)
 		icon = "equipment_armor_kit",
 		ability = "adaptive_plate",
 		texture_bundle_folder = "adaptive_plate",
-		base_cooldown = 60,
-		max_amount = 6,
+		base_cooldown = 30,
+		max_amount = 1,
 		sounds = {
 			activate = "perkdeck_activate",
 			cooldown = "perkdeck_cooldown_over"
