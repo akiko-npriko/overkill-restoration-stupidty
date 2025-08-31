@@ -117,6 +117,8 @@ function GameSetup:load_packages()
 	load_difficulty_package("packages/addgroundsniperswat")
 	load_difficulty_package("packages/addatfagent")
 	load_difficulty_package("packages/addciaagent")
+	load_difficulty_package("packages/addtazerdozer")
+	load_difficulty_package("packages/addzealtazerdozer")
 	if (difficulty_index == 6 or difficulty_index == 7 or difficulty_index == 8 or amiaskimiersh) then
 		load_difficulty_package("packages/addgigndoc")
 	end
