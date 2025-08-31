@@ -1,15 +1,20 @@
 <table directory="assets">		
-	<!--Titan Shield Bulldozer-->
-	<unit path="units/pd2_mod_akiko/characters/ene_titan_shield_bulldozer/ene_titan_shield_bulldozer"  load="true"/>
-	<unit path="units/pd2_mod_akiko/characters/ene_titan_shield_bulldozer/ene_titan_shield_bulldozer_husk"  load="true"/>
+	<!--Tazer Bulldozer Debrie-->
+	<cooked_physics path="units/pd2_mod_akiko/characters/ene_acc_bulldozer_back_taser_1/ene_acc_bulldozer_back_taser_1" force="false"/>
+	<material_config path="units/pd2_mod_akiko/characters/ene_acc_bulldozer_back_taser_1/ene_acc_bulldozer_back_taser_1" force="false"/>
+	<model path="units/pd2_mod_akiko/characters/ene_acc_bulldozer_back_taser_1/ene_acc_bulldozer_back_taser_1" force="false"/>
+	<object path="units/pd2_mod_akiko/characters/ene_acc_bulldozer_back_taser_1/ene_acc_bulldozer_back_taser_1" force="false"/>
+	<unit path="units/pd2_mod_akiko/characters/ene_acc_bulldozer_back_taser_1/ene_acc_bulldozer_back_taser_1" force="false" load="false"/>
 	
-	<object path="units/pd2_mod_akiko/characters/ene_titan_shield_bulldozer/ene_titan_shield_bulldozer" force="false"/>
-	<model path="units/pd2_mod_akiko/characters/ene_titan_shield_bulldozer/ene_titan_shield_bulldozer" force="false"/>
-	
-	<material_config path="units/pd2_mod_akiko/characters/ene_titan_shield_bulldozer/ene_titan_shield_bulldozer_contour" force="false"/>
-	<material_config path="units/pd2_mod_akiko/characters/ene_titan_shield_bulldozer/ene_titan_shield_bulldozer" force="false"/>
-	
-	<!--sequence_manager path="units/pd2_mod_akiko/characters/ene_titan_shield_bulldozer/ene_titan_shield_bulldozer" force="false"/-->
-	<cooked_physics path="units/pd2_mod_akiko/characters/ene_titan_shield_bulldozer/ene_titan_shield_bulldozer" force="false"/>
+	<!--Tazer Bulldozer-->
+	<texture path="units/pd2_mod_akiko/characters/ene_bulldozer_taser/ene_bulldozer_taser_df" force="false"/>
+	<unit path="units/pd2_mod_akiko/characters/ene_bulldozer_taser/ene_bulldozer_taser" load="true"/>
+	<unit path="units/pd2_mod_akiko/characters/ene_bulldozer_taser/ene_bulldozer_taser_husk" load="true"/>
+	<object path="units/pd2_mod_akiko/characters/ene_bulldozer_taser/ene_bulldozer_taser" force="false"/>
+	<sequence_manager path="units/pd2_mod_akiko/characters/ene_bulldozer_taser/ene_bulldozer_taser" force="false"/>
+	<model path="units/pd2_mod_akiko/characters/ene_bulldozer_taser/ene_bulldozer_taser" force="false"/>
+	<material_config path="units/pd2_mod_akiko/characters/ene_bulldozer_taser/ene_bulldozer_taser_contour" force="false"/>
+	<material_config path="units/pd2_mod_akiko/characters/ene_bulldozer_taser/ene_bulldozer_taser" force="false"/>
+	<cooked_physics path="units/pd2_mod_akiko/characters/ene_bulldozer_taser/ene_bulldozer_taser" force="false"/>
 	
 </table>
