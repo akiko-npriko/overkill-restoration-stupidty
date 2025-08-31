@@ -70,6 +70,7 @@ function CharacterTweakData:init(tweak_data, presets)
 	self:_init_xof_volunteer(presets)
 	self:_init_gign_doc(presets)
 	self:_init_us_warthog(presets)
+	self:_init_tank_taser(presets)
 	self:_init_shield_dozers(presets)
 	
 	--Rest of Res Stuff
@@ -4354,6 +4355,17 @@ function CharacterTweakData:_init_us_warthog(presets)
 	--self.norm_warthog.grenade_cooldown = 30
 
 	table.insert(self._enemy_list, "norm_warthog")
+end
+
+function CharacterTweakData:_init_tank_taser(presets)
+	self.tank_taser = deep_clone(self.tank)
+	self.tank_taser.experience = {}
+	self.tank_taser.weapon = deep_clone(presets.weapon.normal)
+	self.tank_taser.weapon.is_rifle.tase_distance = 1400
+	self.tank_taser.weapon.is_rifle.aim_delay_tase = {0.65, 0.65}
+	self.tank_taser.weapon.is_rifle.tase_sphere_cast_radius = 30
+	
+	table.insert(self._enemy_list, "tank_taser")
 end
 
 function CharacterTweakData:_init_shield_dozers(presets)
@@ -20247,6 +20259,8 @@ function CharacterTweakData:character_map()
 				"ene_cia_agent",
 				"ene_cia_zeal_light",
 				"ene_irs_bulldozer_skull",
+				"ene_bulldozer_taser",
+				"ene_zeal_bulldozer_taser",
 				"ene_ng_minigunner"
 			}
 		}

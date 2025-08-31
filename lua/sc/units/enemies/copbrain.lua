@@ -306,6 +306,8 @@ logic_variants.xof_volunteer = clone(security_variant)
 logic_variants.xof_volunteer.attack = TaserLogicAttack
 
 logic_variants.gign_doc = security_variant
+logic_variants.tank_taser = clone(security_variant)
+logic_variants.tank_taser.attack = TaserLogicAttack
 
 --Set up boss logics
 logic_variants.mobster_boss = logic_variants.triad_boss
