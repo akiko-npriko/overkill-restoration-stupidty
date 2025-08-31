@@ -4361,9 +4361,10 @@ function CharacterTweakData:_init_tank_taser(presets)
 	self.tank_taser = deep_clone(self.tank)
 	self.tank_taser.experience = {}
 	self.tank_taser.weapon = deep_clone(presets.weapon.normal)
-	self.tank_taser.weapon.is_rifle.tase_distance = 1400
-	self.tank_taser.weapon.is_rifle.aim_delay_tase = {0.65, 0.65}
+	self.tank_taser.weapon.is_rifle.tase_distance = 1000
+	self.tank_taser.weapon.is_rifle.aim_delay_tase = {0.95, 0.95}
 	self.tank_taser.weapon.is_rifle.tase_sphere_cast_radius = 30
+	self.tank_taser.shock_damage = 2.0 --Amount of damage dealt when taser shocks down.
 	
 	table.insert(self._enemy_list, "tank_taser")
 end
