@@ -20263,6 +20263,7 @@ function CharacterTweakData:character_map()
 				"ene_bulldozer_taser",
 				"ene_zeal_bulldozer_taser",
 				"ene_ng_minigunner",
+				"ene_ng_heavy_sniper",
 				"ene_ng_bulldozer_medic",
 				"ene_ng_bulldozer_minigun"
 			}
