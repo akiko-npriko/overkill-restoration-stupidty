@@ -416,11 +416,6 @@ function ModifiersManager:modify_value(id, value, ...)
 		return self._unit_table[value] or result 
 	elseif id == "GroupAIStateBesiege:SpawningUnit" and restoration and restoration.always_bravos then 
 		return self._unit_table[value] or result 
-	elseif id == "GroupAIStateBesiege:SpawningUnit" then
-	--TEST TEE HEE
-		if math.rand(1) <= 0.5 and (value == Idstring("units/pd2_mod_akiko/characters/ene_zeal_warthog/ene_zeal_warthog") or value == Idstring("units/pd2_mod_akiko/characters/ene_norm_warthog/ene_norm_warthog")) then
-			return Idstring("units/pd2_mod_akiko/characters/ene_zeal_bulldozer_taser/ene_zeal_bulldozer_taser") or result 
-		end
 	end
 	return result
 end
