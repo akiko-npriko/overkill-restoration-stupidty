@@ -201,6 +201,8 @@ Hooks:PreHook(ProjectileBase, "throw_projectile_npc", "sh_throw_projectile_npc",
 	end
 end)
 
+--[[
 Hooks:PostHook(ProjectileBase, "clbk_impact", "creates_proj_sounds4guards", function(self, tag, unit, body, other_unit, other_body, position, ...)
 	restoration:sound_create_point(position)
 end)
+]]
