@@ -20262,7 +20262,8 @@ function CharacterTweakData:character_map()
 				"ene_irs_bulldozer_skull",
 				"ene_bulldozer_taser",
 				"ene_zeal_bulldozer_taser",
-				"ene_ng_minigunner"
+				"ene_ng_minigunner",
+				"ene_ng_bulldozer_medic"
 			}
 		}
 
