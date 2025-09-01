@@ -7497,7 +7497,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 				Idstring("units/pd2_dlc_vip/characters/ene_titan_sniper/ene_titan_sniper"),
 				Idstring("units/pd2_dlc_usm1/characters/ene_male_marshal_marksman_1/ene_male_marshal_marksman_1"),
 				Idstring("units/pd2_dlc_usm1/characters/ene_male_marshal_marksman_2/ene_male_marshal_marksman_2"),
-				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy_sniper/ene_xof_heavy_sniper"),
+				Idstring("units/pd2_mod_akiko/characters/ene_ng_heavy_sniper/ene_ng_heavy_sniper"),
 				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy_sniper/ene_xof_heavy_sniper")
 			},
 			russia = {
@@ -7520,21 +7520,21 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 				Idstring("units/pd2_dlc_vip/characters/ene_titan_sniper/ene_titan_sniper"),
 				Idstring("units/pd2_dlc_usm1/characters/ene_male_marshal_marksman_1/ene_male_marshal_marksman_1"),
 				Idstring("units/pd2_dlc_usm1/characters/ene_male_marshal_marksman_2/ene_male_marshal_marksman_2"),
-				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy_sniper/ene_xof_heavy_sniper"),
+				Idstring("units/pd2_mod_akiko/characters/ene_ng_heavy_sniper/ene_ng_heavy_sniper"),
 				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy_sniper/ene_xof_heavy_sniper")
 			},
 			lapd = {
 				Idstring("units/pd2_dlc_vip/characters/ene_titan_sniper/ene_titan_sniper"),
 				Idstring("units/pd2_dlc_usm1/characters/ene_male_marshal_marksman_1/ene_male_marshal_marksman_1"),
 				Idstring("units/pd2_dlc_usm1/characters/ene_male_marshal_marksman_2/ene_male_marshal_marksman_2"),
-				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy_sniper/ene_xof_heavy_sniper"),
+				Idstring("units/pd2_mod_akiko/characters/ene_ng_heavy_sniper/ene_ng_heavy_sniper"),
 				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy_sniper/ene_xof_heavy_sniper")
 			},
 			fbi = {
 				Idstring("units/pd2_dlc_vip/characters/ene_titan_sniper/ene_titan_sniper"),
 				Idstring("units/pd2_dlc_usm1/characters/ene_male_marshal_marksman_1/ene_male_marshal_marksman_1"),
 				Idstring("units/pd2_dlc_usm1/characters/ene_male_marshal_marksman_2/ene_male_marshal_marksman_2"),
-				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy_sniper/ene_xof_heavy_sniper"),
+				Idstring("units/pd2_mod_akiko/characters/ene_ng_heavy_sniper/ene_ng_heavy_sniper"),
 				Idstring("units/pd2_mod_akiko/characters/ene_xof_heavy_sniper/ene_xof_heavy_sniper")
 			}
 		},
