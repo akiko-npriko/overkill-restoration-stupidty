@@ -20260,6 +20260,7 @@ function CharacterTweakData:character_map()
 				"ene_cia_agent",
 				"ene_cia_zeal_light",
 				"ene_irs_bulldozer_skull",
+				"ene_irs_mpu",
 				"ene_bulldozer_taser",
 				"ene_zeal_bulldozer_taser",
 				"ene_ng_minigunner",
