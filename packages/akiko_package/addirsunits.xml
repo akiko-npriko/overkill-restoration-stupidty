@@ -46,4 +46,20 @@
 	<material_config path="units/pd2_mod_akiko/characters/ene_irs_bulldozer_skull/ene_irs_bulldozer_skull" force="false"/>
 	<cooked_physics path="units/pd2_mod_akiko/characters/ene_irs_bulldozer_skull/ene_irs_bulldozer_skull" force="false"/>
 	
+	<!--IRS Multipurpose Unit Helmet-->
+	<unit path="units/pd2_mod_akiko/characters/ene_acc_irs_mpu_helmet/ene_acc_irs_mpu_helmet" force="false" load="false"/>
+	<object path="units/pd2_mod_akiko/characters/ene_acc_irs_mpu_helmet/ene_acc_irs_mpu_helmet" force="false"/>
+	<model path="units/pd2_mod_akiko/characters/ene_acc_irs_mpu_helmet/ene_acc_irs_mpu_helmet" force="false"/>
+	<material_config path="units/pd2_mod_akiko/characters/ene_acc_irs_mpu_helmet/ene_acc_irs_mpu_helmet" force="false"/>
+	<cooked_physics path="units/pd2_mod_akiko/characters/ene_acc_irs_mpu_helmet/ene_acc_irs_mpu_helmet" force="false"/>
+	
+	<!--IRS Multipurpose Unit-->
+	<unit path="units/pd2_mod_akiko/characters/ene_irs_mpu/ene_irs_mpu" load="true"/>
+	<unit path="units/pd2_mod_akiko/characters/ene_irs_mpu/ene_irs_mpu_husk" load="true"/>
+	<object path="units/pd2_mod_akiko/characters/ene_irs_mpu/ene_irs_mpu" force="false"/>
+	<model path="units/pd2_mod_akiko/characters/ene_irs_mpu/ene_irs_mpu" force="false"/>
+	<material_config path="units/pd2_mod_akiko/characters/ene_irs_mpu/ene_irs_mpu_contour" force="false"/>
+	<material_config path="units/pd2_mod_akiko/characters/ene_irs_mpu/ene_irs_mpu" force="false"/>
+	<cooked_physics path="units/pd2_mod_akiko/characters/ene_irs_mpu/ene_irs_mpu" force="false"/>
+	
 </table>
