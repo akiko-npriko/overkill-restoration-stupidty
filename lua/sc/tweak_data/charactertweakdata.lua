@@ -4366,7 +4366,7 @@ function CharacterTweakData:_init_tank_taser(presets)
 	self.tank_taser.weapon.is_rifle.tase_distance = 1000
 	self.tank_taser.weapon.is_rifle.aim_delay_tase = {0.85, 0.85}
 	self.tank_taser.weapon.is_rifle.tase_sphere_cast_radius = 30
-	self.tank_taser.shock_damage = 4 --Amount of damage dealt when taserdozer shocks down. (Fuck it make them hard af)
+	self.tank_taser.shock_damage = nil --Taser Mechanic doesnt even use per unit shock_damage (taser.shock_damage)
 	
 	table.insert(self._enemy_list, "tank_taser")
 end
@@ -4530,7 +4530,7 @@ function CharacterTweakData:_init_irs_mpv(presets)
 	self.irs_mpu.weapon.is_rifle.tase_distance = 1400
 	self.irs_mpu.weapon.is_rifle.aim_delay_tase = {0.75, 0.75}
 	self.irs_mpu.weapon.is_rifle.tase_sphere_cast_radius = 30
-	self.irs_mpu.shock_damage = 8.0 --Amount of damage dealt when irs mpu shocks down.
+	self.irs_mpu.shock_damage = nil --same deal
 	table.insert(self._enemy_list, "irs_mpu")
 end
 
