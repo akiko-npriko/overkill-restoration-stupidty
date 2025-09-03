@@ -4366,7 +4366,7 @@ function CharacterTweakData:_init_tank_taser(presets)
 	self.tank_taser.weapon.is_rifle.tase_distance = 1000
 	self.tank_taser.weapon.is_rifle.aim_delay_tase = {0.85, 0.85}
 	self.tank_taser.weapon.is_rifle.tase_sphere_cast_radius = 30
-	self.tank_taser.shock_damage = 1 --Amount of damage dealt when taserdozer shocks down.
+	self.tank_taser.shock_damage = 4 --Amount of damage dealt when taserdozer shocks down. (Fuck it make them hard af)
 	
 	table.insert(self._enemy_list, "tank_taser")
 end
