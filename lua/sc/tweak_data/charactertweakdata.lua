@@ -4360,6 +4360,7 @@ end
 
 function CharacterTweakData:_init_tank_taser(presets)
 	self.tank_taser = deep_clone(self.tank)
+	self.tank_taser.tags = {"law", "tank", "special", "taser"}
 	self.tank_taser.experience = {}
 	self.tank_taser.weapon = deep_clone(presets.weapon.normal)
 	self.tank_taser.weapon.is_rifle.tase_distance = 1000
@@ -4522,6 +4523,7 @@ end
 
 function CharacterTweakData:_init_irs_mpv(presets)
 	self.irs_mpu = deep_clone(self.medic)
+	self.irs_mpu.tags = {"law", "medic", "special", "taser"}
 	self.irs_mpu.experience = {}
 	self.irs_mpu.special_deaths = nil
 	self.irs_mpu.weapon = deep_clone(presets.weapon.normal)
