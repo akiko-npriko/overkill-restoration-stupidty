@@ -69,6 +69,7 @@ function CharacterTweakData:init(tweak_data, presets)
 	self:_init_xof_pigglet(presets)
 	self:_init_xof_volunteer(presets)
 	self:_init_gign_doc(presets)
+	self:_init_irs_mpv(presets)
 	self:_init_us_warthog(presets)
 	self:_init_tank_taser(presets)
 	self:_init_shield_dozers(presets)
@@ -4488,6 +4489,7 @@ function CharacterTweakData:_init_gign_doc(presets)
 	self.gign_doc = deep_clone(self.medic)
 	self.gign_doc.special_deaths = nil
 	self.gign_doc.HEALTH_INIT = 50
+	self.gign_doc.heal_cooldown = 6
 	self.gign_doc.headshot_dmg_mul = 5
 	self.gign_doc.move_speed = presets.move_speed.very_fast_plus
 	self.gign_doc.speech_prefix_p1 = "define me pure hate"
@@ -4516,6 +4518,18 @@ function CharacterTweakData:_init_gign_doc(presets)
     }
 	self.gign_doc.static_dodge_preset = true
 	table.insert(self._enemy_list, "gign_doc")
+end
+
+function CharacterTweakData:_init_irs_mpv(presets)
+	self.irs_mpu = deep_clone(self.medic)
+	self.irs_mpu.experience = {}
+	self.irs_mpu.special_deaths = nil
+	self.irs_mpu.weapon = deep_clone(presets.weapon.normal)
+	self.irs_mpu.weapon.is_rifle.tase_distance = 1400
+	self.irs_mpu.weapon.is_rifle.aim_delay_tase = {0.75, 0.75}
+	self.irs_mpu.weapon.is_rifle.tase_sphere_cast_radius = 30
+	self.irs_mpu.shock_damage = 8.0 --Amount of damage dealt when irs mpu shocks down.
+	table.insert(self._enemy_list, "irs_mpu")
 end
 
 function CharacterTweakData:_presets(tweak_data)
