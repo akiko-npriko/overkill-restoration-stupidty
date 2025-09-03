@@ -15299,6 +15299,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	--ATF Field Agent
 	
 	--BullDozer Addition
+	math.randomseed(os.time())
 	local randomizerrrr = math.rand(1)
 	local randomizerrrra = math.rand(1)
 	local randomizrrrb = math.rand(1)
