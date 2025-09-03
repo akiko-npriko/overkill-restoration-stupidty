@@ -15304,6 +15304,11 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	local randomizerrrra = math.rand(1)
 	local randomizrrrb = math.rand(1)
 	local randomizrzeal = math.rand(1)
+	log("TEST")
+	log(randomizerrrr)
+	log(randomizerrrra)
+	log(randomizrrrb)
+	log(randomizrzeal)
 	local unit_types_green_dozer = self.unit_categories.FBI_tank.unit_types
 	local unit_types_black_dozer = self.unit_categories.BLACK_tank.unit_types
 	local unit_types_skull_dozer = self.unit_categories.SKULL_tank.unit_types
