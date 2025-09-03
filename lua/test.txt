@@ -1,5 +1,6 @@
 local char_map = orig_character_map()
 	--Basic
+		table.insert(char_map.basic.list, "ene_head_atlas")
 	
 		--CS Tier
 		table.insert(char_map.basic.list, "ene_bulldozer_1_sc")
@@ -45,8 +46,8 @@ local char_map = orig_character_map()
 		table.insert(char_map.basic.list, "ene_city_guard_3")		
 		
 		--Other
-		table.insert(char_map.basic.list, "ene_bulldozer_2_hw")		
-		table.insert(char_map.basic.list, "ene_vip_2")		
+		table.insert(char_map.basic.list, "ene_bulldozer_2_hw")	
+		table.insert(char_map.basic.list, "ene_bulldozer_4_minion")			
 		table.insert(char_map.basic.list, "ene_mememan_1")
 		table.insert(char_map.basic.list, "ene_mememan_2")
 		table.insert(char_map.basic.list, "ene_bulldozer_biker_1")
@@ -92,15 +93,21 @@ local char_map = orig_character_map()
 		table.insert(char_map.ranc.list, "ene_cop_4")
 	--usm1
 		table.insert(char_map.usm1.list, "ene_male_marshal_marksman_scripted_2")
+		table.insert(char_map.usm1.list, "ene_titan_sniper")
+		table.insert(char_map.usm1.list, "ene_titan_rifle")
+		table.insert(char_map.usm1.list, "ene_titan_shotgun")
+		table.insert(char_map.usm1.list, "ene_titan_taser")
+		table.insert(char_map.usm1.list, "ene_phalanx_1_assault")
+		
 	--Christmas
-		table.insert(char_map.cg22.list, "ene_bulldozer_snowman")
+		table.insert(char_map.cg22.list, "ene_bulldozer_snowman")		
 	--vip
 		char_map.vip = {
 			path = "units/pd2_dlc_vip/characters/",
 			list = {
 				"ene_vip_1",
 				"ene_vip_2",
-				"ene_vip_2_assault",
+				"ene_vip_2_assault",			
 				"ene_spring",
 				"ene_vip_autumn",
 				"ene_spook_cloak_1",
@@ -109,7 +116,7 @@ local char_map = orig_character_map()
 				"ene_phalanx_grenadier",
 				"ene_phalanx_taser",
 				"ene_phalanx_1",
-				"ene_phalanx_1_assault",
+				"ene_phalanx_1_assault",					
 				"ene_titan_shotgun",
 				"ene_titan_rifle",
 				"ene_omnia_lpf",
@@ -329,7 +336,7 @@ local char_map = orig_character_map()
 				"ene_omnia_taser",
 				"ene_omnia_sniper",
 				"ene_omnia_sniper_2",
-				"ene_omnia_shield"
+				"ene_omnia_shield"					
 			}
 		}
 
@@ -353,8 +360,10 @@ local char_map = orig_character_map()
 				"ene_sniper_3",
 				"ene_spook_1",
 				"ene_bulldozer_1",
+				"ene_head_atlas",
 				"ene_bulldozer_1_hard",
 				"ene_bulldozer_2",
+				"ene_bulldozer_3",
 				"ene_nypd_heavy_m4",					
 				"ene_nypd_medic",
 				"ene_tazer_1",
@@ -394,6 +403,7 @@ local char_map = orig_character_map()
 				"ene_cop_4",				
 				"ene_sniper_1",
 				"ene_sniper_3",				
+				"ene_grenadier_1",
 				"ene_tazer_1",
 				"ene_spook_1",	
 				"ene_fbi_swat_1",
@@ -447,22 +457,14 @@ local char_map = orig_character_map()
 				"ene_bravo_shotgun_mex"
 			}
 		}
-
+		
 		char_map.dave = {
 			path = "units/pd2_mod_dave/characters/",
 			list = {
 				"ene_big_dave"
 			}
 		}
-
-		char_map.nc = {
-			path = "units/pd2_mod_nc/characters/",
-			list = {
-				"ene_heavymedic_1",
-				"ene_gensec_heavygunner"
-			}
-		}
-
+		
 		char_map.halloween = {
 			path = "units/pd2_mod_halloween/characters/",
 			list = {
@@ -588,6 +590,7 @@ local char_map = orig_character_map()
 				"ene_akan_medic_zdann",	
 				"ene_akan_lpf",
 				"ene_vip_2",
+				"ene_vip_2_assault",
 				"ene_titan_shotgun",
 				"ene_titan_rifle",
 				"ene_fbi_titan_1",

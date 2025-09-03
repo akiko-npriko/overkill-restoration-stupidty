@@ -19697,7 +19697,7 @@ function CharacterTweakData:character_map()
 		
 		--Other
 		table.insert(char_map.basic.list, "ene_bulldozer_2_hw")		
-		table.insert(char_map.basic.list, "ene_vip_2")		
+		table.insert(char_map.basic.list, "ene_bulldozer_4_minion")		
 		table.insert(char_map.basic.list, "ene_mememan_1")
 		table.insert(char_map.basic.list, "ene_mememan_2")
 		table.insert(char_map.basic.list, "ene_bulldozer_biker_1")
@@ -20239,6 +20239,7 @@ function CharacterTweakData:character_map()
 				"ene_akan_medic_zdann",	
 				"ene_akan_lpf",
 				"ene_vip_2",
+				"ene_vip_2_assault",
 				"ene_titan_shotgun",
 				"ene_titan_rifle",
 				"ene_fbi_titan_1",
