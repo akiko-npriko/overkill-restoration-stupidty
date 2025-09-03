@@ -1,0 +1,600 @@
+local char_map = orig_character_map()
+	--Basic
+	
+		--CS Tier
+		table.insert(char_map.basic.list, "ene_bulldozer_1_sc")
+		table.insert(char_map.basic.list, "ene_bulldozer_1_hard")	
+		table.insert(char_map.basic.list, "ene_swat_1_sc")
+		table.insert(char_map.basic.list, "ene_swat_2_sc")		
+		table.insert(char_map.basic.list, "ene_swat_3")
+		table.insert(char_map.basic.list, "ene_swat_heavy_1_sc")
+		table.insert(char_map.basic.list, "ene_swat_heavy_r870_sc")	
+		table.insert(char_map.basic.list, "ene_sniper_2_sc")
+		table.insert(char_map.basic.list, "ene_tazer_1_sc")
+		table.insert(char_map.basic.list, "ene_shield_2_sc")
+		
+		--FBI
+		table.insert(char_map.basic.list, "ene_bulldozer_2_sc")
+		table.insert(char_map.basic.list, "ene_medic_mp5")
+		table.insert(char_map.basic.list, "ene_grenadier_1")
+		table.insert(char_map.basic.list, "ene_fbi_swat_1_sc")
+		table.insert(char_map.basic.list, "ene_fbi_swat_2_sc")
+		table.insert(char_map.basic.list, "ene_fbi_swat_3")
+		table.insert(char_map.basic.list, "ene_fbi_heavy_1_sc")
+		table.insert(char_map.basic.list, "ene_fbi_heavy_r870_sc")		
+		table.insert(char_map.basic.list, "ene_veteran_cop_1")
+		table.insert(char_map.basic.list, "ene_veteran_cop_2")		
+		table.insert(char_map.basic.list, "ene_sniper_1_sc")
+		table.insert(char_map.basic.list, "ene_shield_1_sc")
+		
+		--GenSec	
+		table.insert(char_map.basic.list, "ene_bulldozer_3_sc")
+		table.insert(char_map.basic.list, "ene_city_swat_1_sc")
+		table.insert(char_map.basic.list, "ene_city_swat_2_sc")
+		table.insert(char_map.basic.list, "ene_city_swat_3_sc")
+		table.insert(char_map.basic.list, "ene_city_heavy_g36_sc")
+		table.insert(char_map.basic.list, "ene_city_heavy_r870_sc")
+		table.insert(char_map.basic.list, "ene_city_heavy_ump_sc")
+		table.insert(char_map.basic.list, "ene_city_shield")
+		table.insert(char_map.basic.list, "ene_shield_gensec")		
+		table.insert(char_map.basic.list, "ene_sniper_3")
+		
+		--Zeal (The Few that are here and not in gitgud)
+		table.insert(char_map.basic.list, "ene_city_guard_1")
+		table.insert(char_map.basic.list, "ene_city_guard_2")
+		table.insert(char_map.basic.list, "ene_city_guard_3")		
+		
+		--Other
+		table.insert(char_map.basic.list, "ene_bulldozer_2_hw")		
+		table.insert(char_map.basic.list, "ene_vip_2")		
+		table.insert(char_map.basic.list, "ene_mememan_1")
+		table.insert(char_map.basic.list, "ene_mememan_2")
+		table.insert(char_map.basic.list, "ene_bulldozer_biker_1")
+		table.insert(char_map.basic.list, "ene_guard_biker_1")
+		table.insert(char_map.basic.list, "ene_gang_black_enforcer")
+		table.insert(char_map.basic.list, "ene_gang_mobster_enforcer")
+		table.insert(char_map.basic.list, "ene_veteran_lod_1")
+		table.insert(char_map.basic.list, "ene_veteran_lod_2")
+		table.insert(char_map.basic.list, "ene_hoxton_breakout_guard_1")
+		table.insert(char_map.basic.list, "ene_hoxton_breakout_guard_2")
+		table.insert(char_map.basic.list, "ene_hoxton_breakout_responder_1")
+		table.insert(char_map.basic.list, "ene_hoxton_breakout_responder_2")
+		table.insert(char_map.basic.list, "ene_cop_1_forest")
+		table.insert(char_map.basic.list, "ene_cop_2_forest")
+			
+	--dlc1
+		table.insert(char_map.dlc1.list, "ene_security_gensec_guard_1")
+		table.insert(char_map.dlc1.list, "ene_security_gensec_guard_2")
+		table.insert(char_map.dlc1.list, "ene_security_gensec_3")
+		
+	--drm	
+		table.insert(char_map.drm.list, "ene_bulldozer_medic_sc")
+		
+	--flat
+		table.insert(char_map.flat.list, "ene_gang_colombian_1")
+		table.insert(char_map.flat.list, "ene_gang_colombian_2")	
+		table.insert(char_map.flat.list, "ene_gang_colombian_3")
+		table.insert(char_map.flat.list, "ene_gang_colombian_boss")
+		table.insert(char_map.flat.list, "ene_gang_colombian_enforcer")
+	--chas
+		table.insert(char_map.chas.list, "ene_cop_1")
+		table.insert(char_map.chas.list, "ene_cop_2")
+		table.insert(char_map.chas.list, "ene_cop_3")
+		table.insert(char_map.chas.list, "ene_cop_4")
+		
+	--pent
+		table.insert(char_map.pent.list, "ene_male_kungfumaster_1")
+		table.insert(char_map.pent.list, "ene_male_kungfumaster_2")
+	--ranc
+		table.insert(char_map.ranc.list, "ene_cop_1")
+		table.insert(char_map.ranc.list, "ene_cop_2")	
+		table.insert(char_map.ranc.list, "ene_cop_3")
+		table.insert(char_map.ranc.list, "ene_cop_4")
+	--usm1
+		table.insert(char_map.usm1.list, "ene_male_marshal_marksman_scripted_2")
+	--Christmas
+		table.insert(char_map.cg22.list, "ene_bulldozer_snowman")
+	--vip
+		char_map.vip = {
+			path = "units/pd2_dlc_vip/characters/",
+			list = {
+				"ene_vip_1",
+				"ene_vip_2",
+				"ene_vip_2_assault",
+				"ene_spring",
+				"ene_vip_autumn",
+				"ene_spook_cloak_1",
+				"ene_summers",
+				"ene_phalanx_medic",
+				"ene_phalanx_grenadier",
+				"ene_phalanx_taser",
+				"ene_phalanx_1",
+				"ene_phalanx_1_assault",
+				"ene_titan_shotgun",
+				"ene_titan_rifle",
+				"ene_omnia_lpf",
+				"ene_fbi_titan_1",
+				"ene_titan_sniper",
+				"ene_titan_sniper_scripted",
+				"ene_titan_taser"
+			}
+		}
+	--gitgud
+		char_map.gitgud = {
+			path = "units/pd2_dlc_gitgud/characters/",
+			list = {
+				"ene_zeal_bulldozer",
+				"ene_zeal_bulldozer_2",
+				"ene_zeal_bulldozer_3",
+				"ene_zeal_bulldozer_sc",
+				"ene_zeal_bulldozer_2_sc",
+				"ene_zeal_bulldozer_3_sc",
+				"ene_bulldozer_minigun",				
+				"ene_zeal_cloaker",
+				"ene_zeal_cloaker_sc",
+				"ene_zeal_swat",
+				"ene_zeal_city_1",
+				"ene_zeal_city_2",
+				"ene_zeal_city_3",
+				"ene_zeal_medic",				
+				"ene_grenadier_1",				
+				"ene_zeal_sniper",
+				"ene_zeal_swat_heavy",
+				"ene_zeal_swat_shield",
+				"ene_zeal_swat_shield_sc",
+				"ene_zeal_tazer",
+				"ene_zeal_tazer_sc",
+				"ene_zeal_fbi_m4",
+				"ene_zeal_fbi_mp5",
+				"ene_zeal_swat_heavy_sc",
+				"ene_zeal_swat_heavy_r870_sc",
+				"ene_zeal_swat_heavy_benelli"
+			}
+		}
+	--drm
+		table.insert(char_map.drm.list, "ene_bulldozer_medic_classic")
+	--bex
+		char_map.bex = {
+			path = "units/pd2_dlc_bex/characters/",
+			list = {
+				"ene_swat_policia_federale",
+				"ene_swat_policia_federale_r870",
+				"ene_swat_policia_federale_city",
+				"ene_swat_policia_federale_city_r870",
+				"ene_swat_policia_federale_fbi",
+				"ene_swat_policia_federale_fbi_r870",
+				"ene_swat_medic_policia_federale",
+				"ene_swat_medic_policia_federale_r870",
+				"ene_swat_cloaker_policia_federale",
+				"ene_swat_policia_sniper",
+				"ene_swat_shield_policia_federale_mp9",
+				"ene_swat_shield_policia_federale_c45",
+				"ene_swat_tazer_policia_federale",
+				"ene_swat_heavy_policia_federale",
+				"ene_swat_heavy_policia_federale_r870",
+				"ene_swat_heavy_policia_federale_g36",
+				"ene_swat_heavy_policia_federale_fbi",
+				"ene_swat_heavy_policia_federale_fbi_r870",
+				"ene_swat_heavy_policia_federale_fbi_g36",
+				"ene_swat_dozer_medic_policia_federale",
+				"ene_swat_dozer_policia_federale_r870",
+				"ene_swat_dozer_policia_federale_saiga",
+				"ene_swat_dozer_policia_federale_m249",
+				"ene_swat_dozer_policia_federale_minigun",
+				"ene_shield_1",
+				"ene_shield_2",
+				"ene_shield_gensec",	
+				"ene_zeal_swat_shield",
+				"ene_sniper_1",	
+				"ene_zeal_sniper",
+				"ene_medic_mp5",
+				"ene_tazer_1",	
+				"ene_spook_1",
+				"ene_fbi_swat_1",
+				"ene_fbi_swat_2",
+				"ene_fbi_swat_3",
+				"ene_city_swat_1",
+				"ene_city_swat_2",
+				"ene_city_swat_3",
+				"ene_zeal_city_1",
+				"ene_zeal_city_2",
+				"ene_zeal_city_3",
+				"ene_bulldozer_1",
+				"ene_bulldozer_1_hard",
+				"ene_bulldozer_2",
+				"ene_bulldozer_3",
+				"ene_bulldozer_minigun",
+				"ene_bulldozer_medic",
+				"ene_fbi_heavy_1",
+				"ene_fbi_heavy_r870",
+				"ene_city_heavy_g36",
+				"ene_city_heavy_r870",
+				"ene_zeal_swat_heavy_sc",
+				"ene_zeal_swat_heavy_r870",
+				"ene_zeal_swat_heavy_benelli",
+				"ene_swat_1",
+				"ene_swat_2",
+				"ene_swat_3",
+				"ene_swat_heavy_1",
+				"ene_swat_heavy_r870",
+				"ene_policia_01",
+				"ene_policia_02",
+				"ene_policia_03",
+				"ene_policia_04",
+				"ene_fbi_1",
+				"ene_fbi_2",
+				"ene_fbi_3",
+				"ene_grenadier_1",
+				"ene_bex_security_01",
+				"ene_bex_security_02",
+				"ene_bex_security_03",
+				"ene_bex_security_suit_01",
+				"ene_bex_security_suit_02",
+				"ene_bex_security_suit_03",
+				"civ_male_it_guy",
+				"ene_veteran_enrique_1",
+				"ene_veteran_enrique_2",
+				"civ_male_bex_bank_manager",
+				"civ_male_bex_business",
+				"civ_male_mariachi_01",
+				"civ_male_mariachi_02",
+				"civ_male_mariachi_03",
+				"civ_male_mariachi_04"
+			}
+		}
+	--fully custom
+		char_map.sharks = {
+			path = "units/pd2_mod_sharks/characters/",
+			list = {
+				"ene_murky_cs_cop_c45",
+				"ene_murky_cs_cop_mp5",
+				"ene_murky_cs_cop_r870",
+				"ene_murky_cs_cop_raging_bull",
+				"ene_murky_security_c45",
+				"ene_murky_security_mp5",
+				"ene_murky_security_r870",
+				"ene_murky_security_raging_bull",
+				"ene_murky_elite_guard_1",
+				"ene_murky_elite_guard_2",
+				"ene_murky_elite_guard_3",
+				"ene_fbi_3",
+				"ene_fbi_1",
+				"ene_fbi_2",
+				"ene_fbi_swat_1",
+				"ene_fbi_swat_2",
+				"ene_fbi_swat_3",
+				"ene_fbi_heavy_1",
+				"ene_fbi_heavy_r870",
+				"ene_swat_heavy_1",
+				"ene_swat_heavy_r870",
+				"ene_murky_shield_yellow",
+				"ene_murky_shield_fbi",
+				"ene_murky_shield_city",
+				"ene_zeal_swat_shield",
+				"ene_titan_rifle",
+				"ene_titan_shotgun",
+				"ene_rpg_grunt",
+				"ene_titan_sniper",
+				"ene_titan_sniper_scripted",
+				"ene_city_swat_1",
+				"ene_city_swat_2",
+				"ene_city_swat_3",
+				"ene_zeal_city_1",
+				"ene_zeal_city_2",
+				"ene_zeal_city_3",
+				"ene_zeal_swat_heavy",
+				"ene_zeal_swat_heavy_r870",
+				"ene_zeal_swat_heavy_benelli",
+				"ene_murky_fbi_tank_m249",
+				"ene_murky_fbi_tank_benelli",
+				"ene_murky_fbi_tank_medic",
+				"ene_murky_fbi_tank_saiga",
+				"ene_murky_fbi_tank_r870",
+				"ene_murky_fbi_tank_r870_hard",
+				"ene_murky_spook",
+				"ene_murky_veteran_1",
+				"ene_murky_veteran_2",
+				"ene_grenadier_1",
+				"ene_murky_medic_m4",
+				"ene_murky_tazer",
+				"ene_swat_1",
+				"ene_swat_2",
+				"ene_swat_3",
+				"ene_murky_sniper",
+				"ene_murky_sniper_2"
+			}
+		}
+
+		char_map.omnia = {
+			path = "units/pd2_mod_omnia/characters/",
+			list = {
+				"ene_omnia_hrt_1",
+				"ene_omnia_hrt_2",
+				"ene_omnia_hrt_3",
+				"ene_omnia_crew",
+				"ene_omnia_crew_2",
+				"ene_omnia_city",
+				"ene_omnia_city_2",
+				"ene_omnia_city_3",
+				"ene_omnia_heavy",
+				"ene_omnia_heavy_r870",
+				"ene_bulldozer_1",
+				"ene_bulldozer_2",
+				"ene_bulldozer_3",
+				"ene_bulldozer_medic",
+				"ene_bulldozer_minigun",
+				"ene_omnia_spook",
+				"ene_grenadier_1",
+				"ene_omnia_medic",
+				"ene_omnia_taser",
+				"ene_omnia_sniper",
+				"ene_omnia_sniper_2",
+				"ene_omnia_shield"
+			}
+		}
+
+		char_map.nypd = {
+			path = "units/pd2_mod_nypd/characters/",
+			list = {
+				"ene_shield_1",
+				"ene_sniper_1",
+				"ene_fbi_swat_1",
+				"ene_fbi_swat_2",
+				"ene_fbi_swat_3",
+				"ene_fbi_heavy_1",
+				"ene_fbi_heavy_r870",
+				"ene_fbi_heavy_r870_sc",
+				"ene_city_swat_1",
+				"ene_city_swat_2",
+				"ene_city_swat_3",
+				"ene_shield_gensec",
+				"ene_city_heavy_g36",
+				"ene_city_heavy_r870",
+				"ene_sniper_3",
+				"ene_spook_1",
+				"ene_bulldozer_1",
+				"ene_bulldozer_1_hard",
+				"ene_bulldozer_2",
+				"ene_nypd_heavy_m4",					
+				"ene_nypd_medic",
+				"ene_tazer_1",
+				"ene_grenadier_1",
+				"ene_fbi_2",	
+				"ene_fbi_3",	
+				"ene_nypd_veteran_cop_1",		
+				"ene_nypd_veteran_cop_2",										
+				"ene_nypd_heavy_r870",
+				"ene_nypd_swat_1",
+				"ene_nypd_swat_2",
+				"ene_nypd_swat_3",
+				"ene_nypd_shield",
+				"ene_nypd_murky_1",
+				"ene_nypd_murky_2",
+				"ene_security_1",	
+				"ene_security_2",	
+				"ene_security_3",	
+				"ene_security_gensec_1",	
+				"ene_security_gensec_2",	
+				"ene_security_gensec_3",					
+				"ene_cop_1",
+				"ene_cop_2",
+				"ene_cop_3",
+				"ene_cop_4"
+			}
+		}
+
+		char_map.lapd = {
+			path = "units/pd2_mod_lapd/characters/",
+			list = {
+				"ene_shield_1",
+				"ene_shield_2",
+				"ene_cop_1",
+				"ene_cop_2",
+				"ene_cop_3",
+				"ene_cop_4",				
+				"ene_sniper_1",
+				"ene_sniper_3",				
+				"ene_tazer_1",
+				"ene_spook_1",	
+				"ene_fbi_swat_1",
+				"ene_fbi_swat_2",
+				"ene_fbi_3",
+				"ene_fbi_2",
+				"ene_fbi_swat_3",
+				"ene_city_swat_1",
+				"ene_city_swat_2",
+				"ene_city_swat_3",
+				"ene_bulldozer_3",
+				"ene_city_shield",
+				"ene_fbi_heavy_1",
+				"ene_fbi_heavy_r870",
+				"ene_fbi_heavy_r870_sc",
+				"ene_city_heavy_g36",
+				"ene_city_heavy_r870_sc",
+				"ene_swat_1",
+				"ene_swat_2",
+				"ene_swat_3",
+				"ene_swat_heavy_1",
+				"ene_swat_heavy_r870",
+				"ene_lapd_veteran_cop_1",
+				"ene_lapd_veteran_cop_2"
+			}
+		}
+
+		char_map.bravo = {
+			path = "units/pd2_mod_bravo/characters/",
+			list = {
+				"ene_bravo_guard_1",
+				"ene_bravo_guard_2",
+				"ene_bravo_guard_3",
+				"ene_bravo_dmr",
+				"ene_bravo_dmr_scripted",
+				"ene_bravo_lmg",
+				"ene_bravo_rifle",
+				"ene_bravo_bulldozer",
+				"ene_bravo_shotgun",
+				"ene_bravo_dmr_ru",
+				"ene_bravo_lmg_ru",
+				"ene_bravo_rifle_ru",
+				"ene_bravo_shotgun_ru",
+				"ene_bravo_dmr_murky",
+				"ene_bravo_lmg_murky",
+				"ene_bravo_rifle_murky",
+				"ene_bravo_shotgun_murky",
+				"ene_bravo_dmr_mex",
+				"ene_bravo_lmg_mex",
+				"ene_bravo_rifle_mex",
+				"ene_bravo_shotgun_mex"
+			}
+		}
+
+		char_map.dave = {
+			path = "units/pd2_mod_dave/characters/",
+			list = {
+				"ene_big_dave"
+			}
+		}
+
+		char_map.nc = {
+			path = "units/pd2_mod_nc/characters/",
+			list = {
+				"ene_heavymedic_1",
+				"ene_gensec_heavygunner"
+			}
+		}
+
+		char_map.halloween = {
+			path = "units/pd2_mod_halloween/characters/",
+			list = {
+				"ene_skele_swat",
+				"ene_skele_swat_2",
+				"ene_zeal_city_1",
+				"ene_zeal_city_2",
+				"ene_zeal_city_3",
+				"ene_zeal_swat_heavy_sc",
+				"ene_zeal_swat_heavy_r870_sc",
+				"ene_zeal_swat_heavy_benelli",
+				"ene_city_swat_1",
+				"ene_city_swat_2",
+				"ene_city_swat_3",
+				"ene_swat_1",
+				"ene_swat_2",
+				"ene_swat_3",
+				"ene_fbi_swat_1",
+				"ene_fbi_swat_2",
+				"ene_fbi_swat_3",
+				"ene_sniper_1",
+				"ene_sniper_2",
+				"ene_sniper_3",
+				"ene_shield_1",
+				"ene_shield_2",
+				"ene_bulldozer_1",
+				"ene_bulldozer_1_hard",
+				"ene_bulldozer_2",
+				"ene_bulldozer_3",
+				"ene_medic_mp5",
+				"ene_zeal_fbi_m4",
+				"ene_zeal_fbi_mp5",
+				"ene_zeal_medic",
+				"ene_zeal_swat_shield",
+				"ene_zeal_bulldozer",
+				"ene_zeal_bulldozer_2",
+				"ene_zeal_bulldozer_3",
+				"ene_zeal_cloaker",
+				"ene_grenadier_1",
+				"ene_zeal_tazer",
+				"ene_zeal_sniper",
+				"ene_shield_gensec",
+				"ene_fbi_heavy_1_sc",
+				"ene_fbi_heavy_r870_sc",
+				"ene_city_heavy_g36",
+				"ene_city_heavy_r870_sc",
+				"ene_swat_heavy_1_sc",
+				"ene_swat_heavy_r870_sc",
+				"ene_spook_1",
+				"ene_tazer_1",
+				"ene_headless_hatman",				
+				"ene_spook_cloak_1",	
+				"ene_omnia_lpf",
+				"ene_fbi_titan_1",
+				"ene_titan_sniper",
+				"ene_titan_sniper_scripted",
+				"ene_titan_taser",
+				"ene_veteran_cop_1",
+				"ene_phalanx_1_assault"
+			}
+		}
+		
+		char_map.reapers = {
+			path = "units/pd2_mod_reapers/characters/",
+			list = {
+				"ene_security_1",
+				"ene_security_2",
+				"ene_security_3",
+				"ene_security_4",
+				"ene_cop_1",
+				"ene_cop_2",
+				"ene_cop_3",
+				"ene_cop_4",
+				"ene_fbi_swat_1",
+				"ene_fbi_swat_2",
+				"ene_fbi_swat_3",
+				"ene_fbi_heavy_1",
+				"ene_fbi_heavy_r870",
+				"ene_city_heavy_g36",
+				"ene_city_heavy_r870",
+				"ene_swat_heavy_1",
+				"ene_swat_heavy_r870",
+				"ene_swat_1",
+				"ene_swat_2",
+				"ene_swat_3",
+				"ene_fbi_1",
+				"ene_fbi_2",
+				"ene_fbi_3",
+				"ene_drak_hrt_1",
+				"ene_drak_hrt_2",
+				"ene_akan_veteran_1",
+				"ene_akan_veteran_2",
+				"ene_akan_veteran_subject",
+				"ene_sniper_1",
+				"ene_tazer_1",
+				"ene_sniper_2",
+				"ene_sniper_3",
+				"ene_shield_2",
+				"ene_shield_1",
+				"ene_city_shield",
+				"ene_city_swat_1",
+				"ene_city_swat_2",
+				"ene_city_swat_3",
+				"ene_bulldozer_1_hard",
+				"ene_bulldozer_1",
+				"ene_bulldozer_2",
+				"ene_bulldozer_3",
+				"ene_bulldozer_mini",
+				"ene_bulldozer_medic",
+				"ene_spook_1",
+				"ene_zeal_city_1",
+				"ene_zeal_city_2",
+				"ene_zeal_city_3",
+				"ene_zeal_swat_heavy",
+				"ene_zeal_swat_heavy_r870",
+				"ene_zeal_swat_heavy_benelli",
+				"ene_zeal_swat_shield",
+				"ene_drak_medic",
+				"ene_zeal_sniper",
+				"ene_subject_enforcer",
+				"ene_grenadier_1",
+				"ene_akan_medic_bob",
+				"ene_akan_medic_zdann",	
+				"ene_akan_lpf",
+				"ene_vip_2",
+				"ene_titan_shotgun",
+				"ene_titan_rifle",
+				"ene_fbi_titan_1",
+				"ene_phalanx_1_assault",										
+				"ene_spook_cloak_1",										
+				"ene_titan_sniper",
+				"ene_titan_sniper_scripted",
+				"ene_titan_taser"
+			}
+		}
