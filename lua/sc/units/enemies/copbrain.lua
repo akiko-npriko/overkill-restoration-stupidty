@@ -310,6 +310,9 @@ logic_variants.tank_taser = clone(security_variant)
 logic_variants.tank_taser.attack = TaserLogicAttack
 logic_variants.irs_mpu = clone(security_variant)
 logic_variants.irs_mpu.attack = TaserLogicAttack
+logic_variants.xof_spooc = clone(security_variant)
+logic_variants.xof_spooc.idle = SpoocLogicIdle
+logic_variants.xof_spooc.attack = SpoocLogicAttack
 
 --Set up boss logics
 logic_variants.mobster_boss = logic_variants.triad_boss
