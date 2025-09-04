@@ -20270,6 +20270,7 @@ function CharacterTweakData:character_map()
 				"ene_xof_heavy_sniper",
 				"ene_xof_light",
 				"ene_xof_shield",
+				"ene_xof_specialist",
 				"ene_gign_doc",
 				"ene_xof_volunteer",
 				"ene_groundsniper_ng",
