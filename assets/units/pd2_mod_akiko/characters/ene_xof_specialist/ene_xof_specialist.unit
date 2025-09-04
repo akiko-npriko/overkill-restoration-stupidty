@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <unit type="being" slot="12">
 	<anim_state_machine name="anims/units/enemies/cop/cop_machine" />
-	<object file="units/pd2_dlc_gitgud/characters/ene_zeal_cloaker/ene_zeal_cloaker" />
+	<object file="units/pd2_mod_akiko/characters/ene_xof_specialist/ene_xof_specialist" />
 
 	<dependencies>
 		<depends_on physic_effect="core/physic_effects/sequencemanager_push" />
@@ -40,7 +40,7 @@
 		<extension name="sound" class="CopSound" />
 	</extensions>
 
-	<network sync="spawn" remote_unit="units/pd2_dlc_gitgud/characters/ene_zeal_cloaker/ene_zeal_cloaker_husk"/>
+	<network sync="spawn" remote_unit="units/pd2_mod_akiko/characters/ene_xof_specialist/ene_xof_specialist_husk"/>
 
 	<sounds>
 		<default_soundsource source="Hips"/>
