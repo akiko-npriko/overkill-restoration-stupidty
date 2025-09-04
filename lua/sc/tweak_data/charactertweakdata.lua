@@ -68,6 +68,7 @@ function CharacterTweakData:init(tweak_data, presets)
 	self:_init_xof_shield(presets)
 	self:_init_xof_pigglet(presets)
 	self:_init_xof_volunteer(presets)
+	self:_init_xof_spooc(presets)
 	self:_init_gign_doc(presets)
 	self:_init_irs_mpv(presets)
 	self:_init_us_warthog(presets)
@@ -4484,6 +4485,18 @@ function CharacterTweakData:_init_xof_volunteer(presets)
 	self.xof_volunteer.yellow_blood = false
 	self.xof_volunteer.can_shoot_while_dodging = true
 	table.insert(self._enemy_list, "xof_volunteer")
+end
+
+function CharacterTweakData:_init_xof_spooc(presets)
+	self.xof_spooc = deep_clone(self.spooc)
+	self.xof_spooc.special_deaths = nil
+	self.xof_spooc.speech_prefix_p1 = "define me pure hate"
+	self.xof_spooc.speech_prefix_p2 = nil
+	self.xof_spooc.speech_prefix_count = nil
+	self.xof_spooc.custom_voicework = "combine_elite"
+	self.xof_spooc.yellow_blood = false
+	self.xof_spooc.can_shoot_while_dodging = true
+	table.insert(self._enemy_list, "xof_spooc")
 end
 
 function CharacterTweakData:_init_gign_doc(presets)
