@@ -4556,7 +4556,10 @@ function CharacterTweakData:_init_zombie_test(presets)
 	self.zombie_test.speech_prefix_count = nil
 	self.zombie_test.custom_voicework = "combine_elite"
 	self.zombie_test.yellow_blood = false
+	self.zombie_test.melee_weapon = "knife_1"
+	self.zombie_test.melee_weapon_dmg_multiplier = 2
 	self.zombie_test.can_shoot_while_dodging = true
+	self.zombie_test.move_speed = presets.move_speed.very_fast_plus
 	table.insert(self._enemy_list, "zombie_test")
 end
 
