@@ -1272,6 +1272,19 @@ local crew_wep_preset = {
 		self.railgun_npc.use_sniper_trail = true
 		--self.railgun_npc.sounds.prefix = "barrett_npc"
 		
+		--Nothing (Sniper/Rifles)
+		self.nothin_rifles_npc = deep_clone(self.m14_sniper_npc)
+		self.nothin_rifles_npc.DAMAGE = 0
+		self.nothin_rifles_npc.can_shoot_through_enemy = false
+		self.nothin_rifles_npc.can_shoot_through_shield = false
+		self.nothin_rifles_npc.can_shoot_through_wall = false
+		self.nothin_rifles_npc.CLIP_AMMO_MAX = 0
+		self.nothin_rifles_npc.NR_CLIPS_MAX = 0
+		self.nothin_rifles_npc.hold = "rifle"
+		self.nothin_rifles_npc.alert_size = 0
+		self.nothin_rifles_npc.suppression = 0
+		self.nothin_rifles_npc.armor_piercing = false
+		
 		--Port Railgun
 		self.port_railgun_npc = deep_clone(self.railgun_npc)
 		self.port_railgun_npc.usage = "is_groundsniper"
