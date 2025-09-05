@@ -314,6 +314,9 @@ logic_variants.xof_spooc = clone(security_variant)
 logic_variants.xof_spooc.idle = SpoocLogicIdle
 logic_variants.xof_spooc.attack = SpoocLogicAttack
 
+logic_variants.zombie_test = clone(security_variant)
+logic_variants.zombie_test.attack = ZombieLogicAttack
+
 --Set up boss logics
 logic_variants.mobster_boss = logic_variants.triad_boss
 logic_variants.chavez_boss = logic_variants.triad_boss

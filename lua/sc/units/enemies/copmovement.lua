@@ -110,6 +110,9 @@ action_variants.tank_taser.walk = TankCopActionWalk
 action_variants.irs_mpu = security_variant
 action_variants.xof_spooc = security_variant
 
+action_variants.zombie_test = clone(security_variant)
+action_variants.zombie_test.shoot = ZombieActionShoot
+
 function CopMovement:post_init()
 	local unit = self._unit
 	self._ext_brain = unit:brain()
