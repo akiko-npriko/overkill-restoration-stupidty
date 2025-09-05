@@ -29,6 +29,7 @@ local tmp_vec = Vector3()
 function ZombieActionShoot:update(t)
 	local shoot_from_pos = self._shoot_from_pos
 	local target_vec, target_dis
+	local disableetempaimsolution = false
 
 	if self._attention then
 		_, target_vec, target_dis = self:_get_target_pos(shoot_from_pos, self._attention, t)
@@ -57,8 +58,12 @@ function ZombieActionShoot:update(t)
 		target_vec = self:_upd_ik(target_vec, fwd_dot, t)
 
 		if self._attention.unit and target_vec and not self._ext_anim.equip and self._mod_enable_t < t then
+			disableetempaimsolution = true
 			self:_chk_start_melee(target_dis, t)
 		end
+	end
+	if not disableetempaimsolution then
+		self:_chk_start_melee(475, t)
 	end
 
 	if self._ext_anim.base_need_upd then
