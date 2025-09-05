@@ -1,9 +1,4 @@
---[[
-
 ZombieLogicAttack = ZombieLogicAttack or class(TankCopLogicAttack)
-
-CopBrain._logic_variants.zombie_light = clone(CopBrain._logic_variants.security)
-CopBrain._logic_variants.zombie_light.attack = ZombieLogicAttack
 
 function ZombieLogicAttack.enter(data, new_logic_name, enter_params)
 	CopLogicBase.enter(data, new_logic_name, enter_params)
@@ -212,5 +207,3 @@ Hooks:PostHook(CopLogicBase, "on_new_objective", "on_new_objective_zombies", fun
 		objective.interrupt_dis = objective.interrupt_dis * 10
 	end
 end)
-
-]]--

@@ -1,10 +1,4 @@
---[[
-
 ZombieActionShoot = ZombieActionShoot or class(CopActionShoot)
-
-CopMovement._action_variants.zombie_light = clone(CopMovement._action_variants.security)
-CopMovement._action_variants.zombie_light.shoot = ZombieActionShoot
-
 
 -- Redirects to make melee charge work
 CopMovement.anim_cbk_spawn_melee_item = CopMovement.anim_clbk_enemy_spawn_melee_item
@@ -189,5 +183,3 @@ function ZombieActionShoot:anim_clbk_melee_strike()
 		})
 	end
 end
-
-]]--
