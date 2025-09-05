@@ -74,6 +74,7 @@ function CharacterTweakData:init(tweak_data, presets)
 	self:_init_us_warthog(presets)
 	self:_init_tank_taser(presets)
 	self:_init_shield_dozers(presets)
+	self:_init_zombie_test(presets)
 	
 	--Rest of Res Stuff
 	self:_process_weapon_usage_table()
@@ -4545,6 +4546,18 @@ function CharacterTweakData:_init_irs_mpv(presets)
 	self.irs_mpu.weapon.is_rifle.tase_sphere_cast_radius = 30
 	self.irs_mpu.shock_damage = nil --same deal
 	table.insert(self._enemy_list, "irs_mpu")
+end
+
+function CharacterTweakData:_init_zombie_test(presets)
+	self.zombie_test = deep_clone(self.swat)
+	self.zombie_test.special_deaths = nil
+	self.zombie_test.speech_prefix_p1 = "define me pure hate"
+	self.zombie_test.speech_prefix_p2 = nil
+	self.zombie_test.speech_prefix_count = nil
+	self.zombie_test.custom_voicework = "combine_elite"
+	self.zombie_test.yellow_blood = false
+	self.zombie_test.can_shoot_while_dodging = true
+	table.insert(self._enemy_list, "zombie_test")
 end
 
 function CharacterTweakData:_presets(tweak_data)
