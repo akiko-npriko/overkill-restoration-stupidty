@@ -29308,7 +29308,156 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 
 
 	--[[ RJC9000'S MODS ]]
-	
+
+		if self.parts.wpn_fps_smg_mas38_bolt then
+			self.parts.wpn_fps_smg_mas38_barrel.stats = { value = 0 }
+			self.parts.wpn_fps_smg_mas38_barrel.custom_stats = nil
+			
+			self.wpn_fps_smg_mas38.adds = {
+				wpn_fps_upg_o_specter = { "wpn_fps_smg_thompson_o_adapter" },
+				wpn_fps_upg_o_aimpoint = { "wpn_fps_smg_thompson_o_adapter" },
+				wpn_fps_upg_o_aimpoint_2 = { "wpn_fps_smg_thompson_o_adapter" },
+				wpn_fps_upg_o_docter = { "wpn_fps_smg_thompson_o_adapter" },
+				wpn_fps_upg_o_eotech = { "wpn_fps_smg_thompson_o_adapter" },
+				wpn_fps_upg_o_t1micro = { "wpn_fps_smg_thompson_o_adapter" },
+				wpn_fps_upg_o_cmore = { "wpn_fps_smg_thompson_o_adapter" },
+				wpn_fps_upg_o_acog = { "wpn_fps_smg_thompson_o_adapter" },
+				wpn_fps_upg_o_cs = { "wpn_fps_smg_thompson_o_adapter" },
+				wpn_fps_upg_o_eotech_xps = { "wpn_fps_smg_thompson_o_adapter" },
+				wpn_fps_upg_o_reflex = { "wpn_fps_smg_thompson_o_adapter" },
+				wpn_fps_upg_o_rx01 = { "wpn_fps_smg_thompson_o_adapter" },
+				wpn_fps_upg_o_rx30 = { "wpn_fps_smg_thompson_o_adapter" },
+				wpn_fps_upg_o_spot = { "wpn_fps_smg_thompson_o_adapter" },
+				wpn_fps_upg_o_bmg = { "wpn_fps_smg_thompson_o_adapter" },
+				wpn_fps_upg_o_uh = { "wpn_fps_smg_thompson_o_adapter" },
+				wpn_fps_upg_o_fc1 = { "wpn_fps_smg_thompson_o_adapter" },
+				wpn_fps_upg_o_tf90 = { "wpn_fps_smg_thompson_o_adapter" },
+				wpn_fps_upg_o_poe = { "wpn_fps_smg_thompson_o_adapter" },
+				wpn_fps_upg_o_health = { "wpn_fps_smg_thompson_o_adapter" },
+				wpn_fps_upg_o_hamr = { "wpn_fps_smg_thompson_o_adapter" },
+				wpn_fps_upg_o_atibal = { "wpn_fps_smg_thompson_o_adapter" },
+			}
+
+			table.insert(self.wpn_fps_smg_mas38.uses_parts, "wpn_fps_upg_o_specter")
+			table.insert(self.wpn_fps_smg_mas38.uses_parts, "wpn_fps_upg_o_aimpoint")
+			table.insert(self.wpn_fps_smg_mas38.uses_parts, "wpn_fps_upg_o_docter")
+			table.insert(self.wpn_fps_smg_mas38.uses_parts, "wpn_fps_upg_o_eotech")
+			table.insert(self.wpn_fps_smg_mas38.uses_parts, "wpn_fps_upg_o_t1micro")
+			table.insert(self.wpn_fps_smg_mas38.uses_parts, "wpn_fps_upg_o_rx30")
+			table.insert(self.wpn_fps_smg_mas38.uses_parts, "wpn_fps_upg_o_rx01")
+			table.insert(self.wpn_fps_smg_mas38.uses_parts, "wpn_fps_upg_o_reflex")
+			table.insert(self.wpn_fps_smg_mas38.uses_parts, "wpn_fps_upg_o_eotech_xps")
+			table.insert(self.wpn_fps_smg_mas38.uses_parts, "wpn_fps_upg_o_cmore")
+			table.insert(self.wpn_fps_smg_mas38.uses_parts, "wpn_fps_upg_o_aimpoint_2")
+			table.insert(self.wpn_fps_smg_mas38.uses_parts, "wpn_fps_upg_o_acog")
+			table.insert(self.wpn_fps_smg_mas38.uses_parts, "wpn_fps_upg_o_cs")
+			table.insert(self.wpn_fps_smg_mas38.uses_parts, "wpn_fps_upg_o_spot")
+			table.insert(self.wpn_fps_smg_mas38.uses_parts, "wpn_fps_upg_o_bmg")
+			table.insert(self.wpn_fps_smg_mas38.uses_parts, "wpn_fps_upg_o_uh")
+			table.insert(self.wpn_fps_smg_mas38.uses_parts, "wpn_fps_upg_o_fc1")
+			table.insert(self.wpn_fps_smg_mas38.uses_parts, "wpn_fps_upg_o_tf90")
+			table.insert(self.wpn_fps_smg_mas38.uses_parts, "wpn_fps_upg_o_poe")
+			table.insert(self.wpn_fps_smg_mas38.uses_parts, "wpn_fps_upg_o_health")
+			table.insert(self.wpn_fps_smg_mas38.uses_parts, "wpn_fps_upg_o_hamr")
+			table.insert(self.wpn_fps_smg_mas38.uses_parts, "wpn_fps_upg_o_atibal")
+			table.insert(self.wpn_fps_smg_mas38.uses_parts, "wpn_fps_upg_o_xpsg33_magnifier")
+			table.insert(self.wpn_fps_smg_mas38.uses_parts, "wpn_fps_upg_o_sig")
+
+			self.wpn_fps_smg_mas38_npc.adds = deep_clone(self.wpn_fps_smg_mas38.adds)
+			self.wpn_fps_smg_mas38_npc.uses_parts = deep_clone(self.wpn_fps_smg_mas38.uses_parts)
+
+		end
+
+		if self.parts.wpn_fps_ass_ak15_irons then
+			self.parts.wpn_fps_ass_ak15_flash_hider.stats = { value = 0 }
+			self.parts.wpn_fps_ass_ak15_flash_hider.custom_stats = nil
+			self.parts.wpn_fps_ass_ak15_flash_hider.perks = nil
+
+			self.parts.wpn_fps_ass_ak15_irons.stance_mod = {
+				wpn_fps_ass_ak15 = {
+					translation = Vector3(-0.01, -9, -0.1),
+					rotation = Rotation(0, 0, 0)
+				}
+			}
+
+			self.parts.wpn_fps_ass_ak15_barrel_short.supported = true
+			self.parts.wpn_fps_ass_ak15_barrel_short.stats = deep_clone(barrels.short_b2_stats)
+			self.parts.wpn_fps_ass_ak15_barrel_short.custom_stats = deep_clone(barrels.short_b2_stats)
+		end
+
+		if self.parts.wpn_fps_ass_howa_type89_bolt then
+			self.parts.wpn_fps_ass_howa_type89_barrel.stats = { value = 0 }
+			self.parts.wpn_fps_ass_howa_type89_barrel.custom_stats = nil
+			self.parts.wpn_fps_ass_howa_type89_flash_hider.stats = { value = 0 }
+			self.parts.wpn_fps_ass_howa_type89_flash_hider.custom_stats = nil
+			self.parts.wpn_fps_ass_howa_type89_handguard.stats = { value = 0 }
+			self.parts.wpn_fps_ass_howa_type89_handguard.custom_stats = nil
+			self.parts.wpn_fps_ass_howa_type89_stock.stats = { value = 0 }
+			self.parts.wpn_fps_ass_howa_type89_stock.custom_stats = nil
+			self.parts.wpn_fps_ass_howa_type89_stock_gfl.stats = { value = 0 }
+			self.parts.wpn_fps_ass_howa_type89_stock_gfl.custom_stats = nil
+
+			self.parts.wpn_fps_ass_howa_type89_flash_hider_bayonet.supported = true
+			self.parts.wpn_fps_ass_howa_type89_flash_hider_bayonet.desc_id = "bm_wp_mosin_ns_bayonet_desc"
+			self.parts.wpn_fps_ass_howa_type89_flash_hider_bayonet.stats = {
+				value = 0,
+				concealment = -3,
+				spread = -2,
+				max_damage = 6,
+				min_damage = 6,
+				max_damage_effect = 1,
+				min_damage_effect = 1,
+				bayonet_range = 50
+			}
+			self.parts.wpn_fps_ass_howa_type89_flash_hider_bayonet.custom_stats = {
+				melee_speed_mult = 0.8,
+				alt_melee_sounds = {
+					"knife_hit_body",
+					"knife_hit_gen"
+				}
+			}
+
+			self.parts.wpn_fps_ass_howa_type89_barrel_carbine.supported = true
+			self.parts.wpn_fps_ass_howa_type89_barrel_carbine.stats = deep_clone(barrels.short_b1_stats)
+			self.parts.wpn_fps_ass_howa_type89_barrel_carbine.stats.bayonet_range = -20
+			self.parts.wpn_fps_ass_howa_type89_barrel_carbine.custom_stats = deep_clone(barrels.short_b1_stats)
+
+			self.parts.wpn_fps_ass_howa_type89_magazine_20.supported = true
+			self.parts.wpn_fps_ass_howa_type89_magazine_20.stats = deep_clone(self.parts.wpn_fps_upg_m4_m_straight.stats)
+			self.parts.wpn_fps_ass_howa_type89_magazine_20.custom_stats = deep_clone(self.parts.wpn_fps_upg_m4_m_straight.custom_stats)
+
+			self.parts.wpn_fps_ass_howa_type89_optic_acog.supported = true
+			self.parts.wpn_fps_ass_howa_type89_optic_acog.desc_id = "bm_wp_upg_o_2_5"
+			self.parts.wpn_fps_ass_howa_type89_optic_acog.stats = {
+				zoom = 15
+			}
+			self.parts.wpn_fps_ass_howa_type89_optic_acog.stance_mod = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod)
+			for i, weap in pairs(self.parts.wpn_fps_ass_howa_type89_optic_acog.stance_mod) do
+				if weap and weap.translation then
+					weap.translation = weap.translation + Vector3(0,-8,-0.07)
+				end
+			end
+
+			self.parts.wpn_fps_ass_howa_type89_optic_mdn.supported = true
+			self.parts.wpn_fps_ass_howa_type89_optic_mdn.desc_id = "bm_wp_upg_o_1_8"
+			self.parts.wpn_fps_ass_howa_type89_optic_mdn.stats = {
+				zoom = 8
+			}
+			self.parts.wpn_fps_ass_howa_type89_optic_mdn.stance_mod = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod)
+			for i, weap in pairs(self.parts.wpn_fps_ass_howa_type89_optic_mdn.stance_mod) do
+				if weap and weap.translation then
+					weap.translation = weap.translation + Vector3(0,-2,-0.07)
+				end
+			end
+
+			self.parts.wpn_fps_ass_howa_type89_stock_acr.supported = true
+			self.parts.wpn_fps_ass_howa_type89_stock_acr.stats = deep_clone(stocks.fixed_to_adj_acc_stats)
+			self.parts.wpn_fps_ass_howa_type89_stock_acr.custom_stats = deep_clone(stocks.fixed_to_adj_acc_stats)
+			self.parts.wpn_fps_ass_howa_type89_stock_paratrooper.supported = true
+			self.parts.wpn_fps_ass_howa_type89_stock_paratrooper.stats = deep_clone(stocks.fixed_to_folder_stats)
+			self.parts.wpn_fps_ass_howa_type89_stock_paratrooper.custom_stats = deep_clone(stocks.fixed_to_folder_stats)
+		end
+
 		if self.parts.wpn_fps_ass_howa_type20_irons_rear_folded then
 			self.parts.wpn_fps_ass_howa_type20_flash_hider.stats = { value = 0 }
 			self.parts.wpn_fps_ass_howa_type20_flash_hider.custom_stats = {}
