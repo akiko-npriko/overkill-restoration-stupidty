@@ -1,0 +1,14 @@
+<materials version="3" group="weapon_group">
+    <material name="vsk94_magazine" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/vsk94_magazine_df"/>
+        <bump_normal_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/vsk94_magazine_nm"/>
+        <material_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/vsk94_magazine_gsma"/>
+	<reflection_texture type="cubemap" file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/weapon_metal_cubemap"/>
+    </material>
+    <material name="bullet_9x39_fmj" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/bullet_9x39_fmj_df"/>
+        <bump_normal_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/bullet_9x39_fmj_nm"/>
+        <material_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/bullet_9x39_fmj_gsma"/>
+	<reflection_texture type="cubemap" file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/weapon_metal_cubemap"/>
+    </material>
+</materials>

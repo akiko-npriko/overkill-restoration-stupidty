@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<tweaks>
+	<!--
+		I've put this tweak first because it is the most important.
+		This section defines what should happen when particular animation triggers are reached in your reload animations. Generally, this is used for sounds.
+		Unlike the other files, simply replacing 'example' with your animation ID will likely not work for you, since different animations use different triggers.
+	-->
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+		
+		<!--
+			Put your tweaks within the <target> section below.
+			If you're using an existing animation as a basis for your custom one, you can copy the appropriate reload states from 'anims/fps/fps_spawn.animation_states'.
+			Just make sure to edit the 'anim_name' to match yours.
+		
+			Otherwise, you can manually edit the trigger names and sounds using the code below as reference.
+			'trigger' is for the name of the trigger in your animation, 'param1' corresponds to the sound ID. You can safely ignore the other parameters.
+			Make sure you keep the 'anim_clbk_stop_weapon_magazine_empty' and 'bullet_show' triggers intact.
+		-->
+		
+		<target mode="append">
+			<state name="fps/reload/vsk94" type="once" segment="base" speed="1.0">
+				<anim name="vsk94_reload"/>
+				<keys>
+					<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>	
+					
+                    <key at="trigger" trigger="asval_mag_click_out" callback="play_sound" class_name="base" param1="vsk94_mag_click_out"/>
+					<key at="trigger" trigger="asval_mag_slide_out" callback="play_sound" class_name="base" param1="vsk94_mag_slide_out"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="vsk94_clip_throw"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="vsk94_mag_take_new"/>
+					<key at="trigger" trigger="wp_clip_generic_ass_center" callback="play_sound" class_name="base" param1="vsk94_ass_center"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+					<key at="trigger" trigger="asval_mag_slide_in" callback="play_sound" class_name="base" param1="vsk94_mag_slide_in"/>
+					<key at="trigger" trigger="asval_lever_pull" callback="play_sound" class_name="base" param1="vsk94_lever_pull"/>
+					<key at="trigger" trigger="wp_clip_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_clip_generic_lever_pull"/>
+					<key at="trigger" trigger="asval_release_lever" callback="play_sound" class_name="base" param1="vsk94_release_lever"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+					<key at="trigger" trigger="asval_back_in_hand" callback="play_sound" class_name="base" param1="vsk94_back_in_hand"/>
+					
+					<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+
+			<state name="fps/reload_not_empty/vsk94" type="once" segment="base" speed="1.0">
+				<anim name="vsk94_reload_not_empty"/>
+				<keys>
+					<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>	
+					
+                    <key at="trigger" trigger="asval_mag_click_out" callback="play_sound" class_name="base" param1="vsk94_mag_click_out"/>
+					<key at="trigger" trigger="asval_mag_slide_out" callback="play_sound" class_name="base" param1="vsk94_mag_slide_out"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="vsk94_clip_throw"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_take_new" callback="play_sound" class_name="base" param1="vsk94_mag_take_new"/>
+					<key at="trigger" trigger="wp_clip_generic_ass_center" callback="play_sound" class_name="base" param1="vsk94_ass_center"/>
+					<key at="trigger" trigger="wp_foley_generic_clip_in_connect" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_in_connect"/>
+					<key at="trigger" trigger="asval_mag_slide_in" callback="play_sound" class_name="base" param1="vsk94_mag_slide_in"/>
+					<key at="trigger" trigger="asval_lever_pull" callback="play_sound" class_name="base" param1="vsk94_lever_pull"/>
+					<key at="trigger" trigger="wp_clip_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_clip_generic_lever_pull"/>
+					<key at="trigger" trigger="asval_release_lever" callback="play_sound" class_name="base" param1="vsk94_release_lever"/>
+					<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+					<key at="trigger" trigger="asval_back_in_hand" callback="play_sound" class_name="base" param1="vsk94_back_in_hand"/>
+
+					<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+		</target>
+		
+	</tweak>
+	
+	<!--
+		From this point on, you can replace every instance of 'example' below with the ID of your animation.
+		I recommend just using the Replace All window (CTRL + H in most editors) to avoid having to manually edit them.
+		Feel free to read each section if you want to make additional edits though.
+	-->
+	
+	<!--Redirects these two names to the appropriate reload states.-->
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+		<target mode="attach">
+			<to name="reload_vsk94" 					redirect="fps/reload/vsk94"/>
+			<to name="reload_not_empty_vsk94" 			redirect="fps/reload_not_empty/vsk94"/>
+		</target>
+	</tweak>
+</tweaks>

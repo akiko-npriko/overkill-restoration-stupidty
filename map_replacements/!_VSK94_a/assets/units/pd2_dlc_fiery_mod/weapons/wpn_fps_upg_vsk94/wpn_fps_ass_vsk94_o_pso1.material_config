@@ -1,0 +1,22 @@
+<materials version="3" group="weapon_group">
+    <material name="pso_1m2_4x24" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/pso_1m2_4x24_df"/>
+        <bump_normal_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/pso_1m2_4x24_nm"/>
+        <material_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/pso_1m2_4x24_gsma"/>
+    </material>
+    <material name="pso_eyecup" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/pso_eyecup_df"/>
+        <bump_normal_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/pso_eyecup_nm"/>
+        <material_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/pso_eyecup_gsma"/>
+    </material>
+    <material name="4x_lens_marks" version="2" render_template="effect:DIFFUSE0_TEXTURE:VIEW_ANGLE_FALLOFF_OP">
+        <variable value="reddot" type="scalar" name="intensity"/>
+        <diffuse_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/pso1_scope_marks_df"/>
+        <variable value="0" type="scalar" name="falloff_exp"/>
+    </material>
+    <material name="4x_lens" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/4x_lens_df"/>
+        <bump_normal_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/4x_lens_nm"/>
+        <material_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/4x_lens_gsma"/>
+    </material>
+</materials>

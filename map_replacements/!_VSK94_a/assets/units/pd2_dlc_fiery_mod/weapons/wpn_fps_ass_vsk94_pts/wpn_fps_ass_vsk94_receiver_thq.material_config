@@ -1,0 +1,24 @@
+<materials version="3" group="weapon_group">
+    <material name="weapon_kbp_vsk94_internals_9x39_LOD0" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/vsk94_internals_df"/>
+        <bump_normal_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/vsk94_internals_nm"/>
+        <material_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/vsk94_internals_gsma"/>
+	<reflection_texture type="cubemap" file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/weapon_metal_cubemap"/>
+    </material>
+    <material name="weapon_kbp_vsk94_9x39_LOD0" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/vsk94_df"/>
+        <bump_normal_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/vsk94_nm"/>
+        <material_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/vsk94_gsma"/>
+	<reflection_texture type="cubemap" file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/weapon_metal_cubemap"/>
+    </material>
+    <material name="reciever_9a91_kbp_vsk94_std_LOD0" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/vsk94_receiver_df"/>
+        <bump_normal_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/vsk94_receiver_nm"/>
+        <material_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/vsk94_receiver_gsma"/>
+	<reflection_texture type="cubemap" file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/weapon_metal_cubemap"/>
+    </material>
+    <material name="m4_lower_reciever" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/payday2/weapons/wpn_fps_ass_m4_pts/m4_lower_reciever_df" mip="1"/>
+        <bump_normal_texture file="units/payday2/weapons/wpn_fps_ass_m4_pts/m4_lower_reciever_nm" mip="1"/>
+    </material>
+</materials>

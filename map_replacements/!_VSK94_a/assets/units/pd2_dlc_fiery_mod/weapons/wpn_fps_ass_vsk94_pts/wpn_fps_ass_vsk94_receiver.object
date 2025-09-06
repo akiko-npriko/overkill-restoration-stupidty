@@ -1,0 +1,29 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_receiver" orientation_object="rp_receiver" />
+		
+	<animations>
+    <animation_group name="reload" enabled="false">
+		<object name="a_reload"/>
+		<object name="a_reload_release"/>
+    </animation_group>
+	
+    <animation_group name="reload_not_empty" enabled="false">
+		<object name="a_reload_not_empty"/>
+		<object name="a_reload_release_not_empty"/>
+    </animation_group>
+
+    <animation_group name="recoil">
+		<object name="a_recoil_bolt" enabled="false" />
+    </animation_group>
+  </animations>
+  
+	<graphics>
+		<object name="g_vsk94_upper" enabled="true" />
+		<object name="g_vsk94_lower" enabled="true" />
+		<object name="g_fire_select" enabled="true" />
+		<object name="g_vsk94_receiver_1" enabled="true" />
+		<object name="g_vsk94_trigger" enabled="true" />
+		<object name="g_vsk94_bolt" enabled="true" />
+		<object name="g_vsk94_m_release" enabled="true" />
+	</graphics>
+</dynamic_object>

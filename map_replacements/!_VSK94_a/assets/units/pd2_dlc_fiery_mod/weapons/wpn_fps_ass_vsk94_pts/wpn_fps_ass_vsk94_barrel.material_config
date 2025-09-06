@@ -1,0 +1,14 @@
+<materials version="3" group="weapon_group">
+    <material name="vsk94_barrel" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/vsk94_barrel_df"/>
+        <bump_normal_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/vsk94_barrel_nm"/>
+        <material_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/vsk94_barrel_gsma"/>
+	<reflection_texture type="cubemap" file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/weapon_metal_cubemap"/>
+    </material>
+    <material name="vsk94_muzzle_hanguard_retainer" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/vsk94_retainer_df"/>
+        <bump_normal_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/vsk94_retainer_nm"/>
+        <material_texture file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/vsk94_retainer_gsma"/>
+	<reflection_texture type="cubemap" file="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/textures/weapon_metal_cubemap"/>
+    </material>
+</materials>

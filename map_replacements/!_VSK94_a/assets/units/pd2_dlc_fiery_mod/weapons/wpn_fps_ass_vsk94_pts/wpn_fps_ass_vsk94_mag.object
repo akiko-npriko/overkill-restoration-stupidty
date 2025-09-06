@@ -1,0 +1,19 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_fiery_mod/weapons/wpn_fps_ass_vsk94_pts/wpn_fps_ass_vsk94_mag" orientation_object="rp_magazine" />
+		
+	<animations>
+    <animation_group name="reload" enabled="false">
+		<object name="a_reload"/>
+    </animation_group>
+	
+    <animation_group name="reload_not_empty" enabled="false">
+		<object name="a_reload_not_empty"/>
+    </animation_group>
+	</animations>
+
+	<graphics>
+		<object name="g_vsk94_magazine" enabled="true" />
+		<object name="g_fmj_1" enabled="true" />
+		<object name="g_fmj_2" enabled="true" />
+	</graphics>
+</dynamic_object>
