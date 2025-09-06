@@ -48389,7 +48389,8 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 				end
 			end
 		end
-
+		--For the lols
+		--[[
 		for i, part_id in pairs(self.wpn_fps_snp_kar98k.uses_parts) do
 			attachment_list = {
 				"wpn_fps_upg_a_slug",
@@ -48404,6 +48405,7 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 				end
 			end
 		end
+		]]
 		for i, part_id in pairs(self.wpn_fps_snp_kar98k.default_blueprint) do
 			attachment_list = {
 				"wpn_fps_snp_kar98k_rail"
