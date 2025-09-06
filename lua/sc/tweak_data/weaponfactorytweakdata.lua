@@ -43841,7 +43841,131 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 		end
 
 	--[[ HYLIE'S MODS ]]
-	
+
+		if self.parts.wpn_fps_pis_mk22_pistol_frame then
+			self.parts.wpn_fps_pis_mk22_pistol_frame.stance_mod = {
+				wpn_fps_pis_mk22_pistol = {
+					translation = Vector3(0, 0, 0.7)
+				}
+			}
+			self.parts.wpn_fps_pis_mk22_pistol_frame.adds = {
+				"wpn_fps_pis_mk22_pistol_ammo_tranq"
+			}
+
+			self.parts.wpn_fps_pis_mk22_pistol_ammo_tranq.pcs = nil
+			self.parts.wpn_fps_pis_mk22_pistol_ammo_tranq.no_cull = true
+			self.parts.wpn_fps_pis_mk22_pistol_ammo_tranq.supported = true
+			self.parts.wpn_fps_pis_mk22_pistol_ammo_tranq.stats = { value = 0}
+			self.parts.wpn_fps_pis_mk22_pistol_ammo_tranq.custom_stats = {
+				muzzleflash = "effects/payday2/particles/weapons/9mm_auto_fps",
+				muzzleflash_silenced = "effects/payday2/particles/weapons/air_pressure",
+				trail_effect = "_dmc/effects/warsaw_trail",
+				bullet_class = "PoisonBulletBase",
+				dot_data_name = "weapon_tranq_heavy"
+			}
+
+			self.parts.wpn_fps_pis_mk22_pistol_silencer.supported = true
+			self.parts.wpn_fps_pis_mk22_pistol_silencer.stats = {
+				value = 0,
+				alert_size = -1,
+				suppression = 12
+			}
+
+			--I don't feel like dealing with optic alignment in wake of the ironsight adjustments above, so I'm jsut removing the option
+			for i, part_id in pairs(self.wpn_fps_pis_mk22_pistol.uses_parts) do
+				attachment_list = {
+					"wpn_fps_upg_o_rmr",
+					"wpn_fps_upg_o_rikt",
+					"wpn_fps_upg_o_rms",
+
+					"wpn_fps_pis_triggermod_fast",
+					"wpn_fps_pis_triggermod_slow"
+				}
+				for _, remove_id in ipairs(attachment_list) do
+					if part_id == remove_id then
+						self.wpn_fps_pis_mk22_pistol.uses_parts[i] = "resmod_dummy"
+					end
+				end
+			end
+
+			self.wpn_fps_pis_mk22_pistol_npc.uses_parts = deep_clone(self.wpn_fps_pis_mk22_pistol.uses_parts)
+		end
+
+		if self.parts.wpn_fps_ass_vsk94_ns_silencer then
+			self.parts.wpn_fps_ass_vsk94_ns_silencer.supported = true
+			self.parts.wpn_fps_ass_vsk94_ns_silencer.stats = { alert_size = -1, suppression = 12 }
+			self.parts.wpn_fps_ass_vsk94_ns_silencer.custom_stats = nil
+			self.parts.wpn_fps_ass_vsk94_ns_nosilencer.supported = true
+			self.parts.wpn_fps_ass_vsk94_ns_nosilencer.stats = { value = 0 }
+			self.parts.wpn_fps_ass_vsk94_ns_nosilencer.custom_stats = nil
+
+			self.parts.wpn_fps_ass_vsk94_fg_9a91.supported = true
+			self.parts.wpn_fps_ass_vsk94_fg_9a91.stats = {
+				value = 2,
+				recoil = 2,
+				concealment = -1
+			}
+
+			self.parts.wpn_fps_ass_vsk94_m_asval.supported = true
+			self.parts.wpn_fps_ass_vsk94_m_asval.stats = {
+				value = 2,
+				recoil = 2,
+				concealment = -1
+			}
+
+			self.parts.wpn_fps_ass_vsk94_s_9a91.supported = true
+			self.parts.wpn_fps_ass_vsk94_s_9a91.stats = {
+				value = 6,
+				spread = -2,
+				recoil = -8,
+				concealment = 6
+			}
+			self.parts.wpn_fps_ass_vsk94_s_9a91.custom_stats = {
+				ads_speed_mult = 0.85
+			}
+
+			self.parts.wpn_fps_ass_vsk94_o_pso1.supported = true
+			self.parts.wpn_fps_ass_vsk94_o_pso1.desc_id = "bm_wp_upg_o_4"
+			self.parts.wpn_fps_ass_vsk94_o_pso1.stats = { value = 3, zoom = 30 }
+			self.parts.wpn_fps_ass_vsk94_o_pso1.custom_stats = { big_scope = true }
+			self.parts.wpn_fps_ass_vsk94_o_pso1.stance_mod = deep_clone(self.parts.wpn_fps_upg_o_specter.stance_mod)
+			for i, weap in pairs(self.parts.wpn_fps_ass_vsk94_o_pso1.stance_mod) do
+				if weap and weap.translation then
+					weap.translation = weap.translation + Vector3(1.31, 45, -0.5)
+					weap.rotation = (weap.rotation or Rotation(0,0,0)) * Rotation(0, 0, 1.25)
+				end
+			end
+		end
+
+		if self.parts.wpn_fps_ass_ak19_o_std then
+			self.parts.wpn_fps_ass_ak19_o_std.stance_mod = {
+				wpn_fps_ass_ak19 = {
+					translation = Vector3(-0.08, -19, -0.18),
+					rotation = Rotation(0, 0, -1)
+				}
+			}
+
+			self.parts.wpn_fps_ass_ak19_b_cqb.supported = true
+			self.parts.wpn_fps_ass_ak19_b_cqb.stats = deep_clone(barrels.short_b2_stats)
+			self.parts.wpn_fps_ass_ak19_b_cqb.custom_stats = deep_clone(barrels.short_b2_stats)
+
+			self.parts.wpn_fps_ass_ak19_s_folded.supported = true
+			self.parts.wpn_fps_ass_ak19_s_folded.stats = deep_clone(stocks.adj_to_folded_stats)
+			self.parts.wpn_fps_ass_ak19_s_folded.stats.value = 0
+			self.parts.wpn_fps_ass_ak19_s_folded.custom_stats = deep_clone(stocks.adj_to_folded_stats)
+			self.parts.wpn_fps_ass_ak19_s_retracted.supported = true
+			self.parts.wpn_fps_ass_ak19_s_retracted.stats = deep_clone(stocks.adj_hvy_rec_stats)
+			self.parts.wpn_fps_ass_ak19_s_retracted.stats.value = 0
+			self.parts.wpn_fps_ass_ak19_s_retracted.custom_stats = deep_clone(stocks.adj_hvy_rec_stats)
+
+			self.parts.wpn_fps_ass_ak19_m_banana.supported = true
+			self.parts.wpn_fps_ass_ak19_m_banana.stats = { value = 4, concealment = -1, recoil = 2}
+			self.parts.wpn_fps_ass_ak19_m_banana.custom_stats = nil
+			self.parts.wpn_fps_ass_ak19_m_classic.supported = true
+			self.parts.wpn_fps_ass_ak19_m_classic.stats = { value = 2, concealment = 1, recoil = -2}
+			self.parts.wpn_fps_ass_ak19_m_classic.custom_stats = nil
+		end
+
 		if self.parts.wpn_fps_sho_fsa12_b_ext then
 			self.parts.wpn_fps_sho_fsa12_b_ext.supported = true
 			self.parts.wpn_fps_sho_fsa12_b_ext.stats = deep_clone(barrels.long_b2_stats)
