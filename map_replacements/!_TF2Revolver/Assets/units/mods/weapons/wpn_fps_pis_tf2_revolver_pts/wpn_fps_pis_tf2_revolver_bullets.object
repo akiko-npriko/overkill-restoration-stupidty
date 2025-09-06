@@ -1,0 +1,32 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_pis_tf2_revolver_pts/wpn_fps_pis_tf2_revolver_bullets" orientation_object="rp_wpn_fps_pis_chinchilla_m_bullets" />
+	<animations>  
+		<animation_group name="reload" enabled="false" >
+			<object name="anim_bullet_1_reload" enabled="true" />
+			<object name="anim_bullet_2_reload" enabled="true" />
+			<object name="anim_bullet_3_reload" enabled="true" />
+			<object name="anim_bullet_4_reload" enabled="true" />
+			<object name="anim_bullet_5_reload" enabled="true" />
+			<object name="anim_bullet_6_reload" enabled="true" />
+			<object name="anim_speedloader_reload" enabled="true" />
+		</animation_group>
+		<animation_group name="reload_left" enabled="false" >
+		</animation_group>
+    </animations> 	
+	<graphics>
+		<object name="g_cartridge_1" enabled="true" />
+		<object name="g_cartridge_2" enabled="true" />
+		<object name="g_cartridge_3" enabled="true" />
+		<object name="g_cartridge_4" enabled="true" />
+		<object name="g_cartridge_5" enabled="true" />
+		<object name="g_cartridge_6" enabled="true" />
+		<object name="g_bullet_1" enabled="true" />
+		<object name="g_bullet_2" enabled="true" />
+		<object name="g_bullet_3" enabled="true" />
+		<object name="g_bullet_4" enabled="true" />
+		<object name="g_bullet_5" enabled="true" />
+		<object name="g_bullet_6" enabled="true" />
+		
+		<object name="g_speedloader" enabled="false" />
+	</graphics>
+</dynamic_object>

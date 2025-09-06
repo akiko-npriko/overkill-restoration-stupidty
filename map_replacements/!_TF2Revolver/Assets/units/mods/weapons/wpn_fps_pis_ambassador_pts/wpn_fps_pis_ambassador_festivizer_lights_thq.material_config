@@ -1,0 +1,8 @@
+<materials version="3" group="weapon_chinchilla">
+	<material name="base" render_template="generic:DIFFUSE_TEXTURE:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM" version="2">
+		<diffuse_texture file="units/mods/weapons/wpn_fps_pis_ambassador_pts/xms_colored_lights" mip="1"/>
+        <self_illumination_texture file="units/mods/weapons/wpn_fps_pis_ambassador_pts/xms_colored_lights"/>
+        <variable type="scalar" name="il_bloom" value="6"/>
+        <variable type="scalar" name="il_multiplier" value="reddot"/>
+	</material>
+</materials>
