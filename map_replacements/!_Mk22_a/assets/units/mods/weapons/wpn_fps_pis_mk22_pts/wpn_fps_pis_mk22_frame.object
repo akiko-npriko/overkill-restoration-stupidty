@@ -1,0 +1,15 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_pis_mk22_pts/wpn_fps_pis_mk22_frame" orientation_object="rp_frame" />
+	<animations>  
+		<animation_group name="reload" enabled="false" >
+			<object name="anim_bolt_reload" enabled="true" />
+		</animation_group>  
+		<animation_group name="recoil" enabled="false" >
+			<object name="anim_bolt_recoil" enabled="true" />
+		</animation_group>
+    </animations>
+	<graphics>
+		<object name="g_frame" enabled="true" />
+		<object name="g_slide" enabled="true" />
+	</graphics>
+</dynamic_object>

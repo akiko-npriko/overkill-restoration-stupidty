@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+			
+		<target mode="attach">
+			<anim name="mk22_pistol_idle" 					    file="anims/fps/glock/glock_idle" blend_set="all"/>
+			
+			<anim name="mk22_pistol_reload" 					file="anims/fps/mk22_pistol/mk22_pistol_reload" blend_set="all"/>
+			<anim name="mk22_pistol_reload_not_empty"	        file="anims/fps/mk22_pistol/mk22_pistol_reload_not_empty" blend_set="all"/>
+			
+			<anim name="mk22_pistol_recoil" 					file="anims/fps/mk22_pistol/mk22_pistol_recoil" blend_set="all"/>
+			<anim name="mk22_pistol_recoil_steelsight" 			file="anims/fps/mk22_pistol/mk22_pistol_recoil" blend_set="all"/>
+			
+			<anim name="mk22_pistol_equip" 					    file="anims/fps/glock/glock_equip" blend_set="all"/>
+			<anim name="mk22_pistol_unequip" 					file="anims/fps/glock/glock_unequip" blend_set="all"/>
+			<anim name="mk22_pistol_melee" 					    file="anims/fps/glock/glock_melee" blend_set="all"/>
+			<anim name="mk22_pistol_melee_miss" 				file="anims/fps/glock/glock_melee_miss" blend_set="all"/>
+			<anim name="mk22_pistol_use" 						file="anims/fps/glock/glock_use" blend_set="all"/>
+			<anim name="mk22_pistol_sprint" 					file="anims/fps/deagle/deagle_sprint" blend_set="all"/>
+			<anim name="mk22_pistol_sprint_exit" 				file="anims/fps/deagle/deagle_sprint_exit" blend_set="all"/>
+			<anim name="mk22_pistol_sprint_enter" 			    file="anims/fps/deagle/deagle_sprint_enter" blend_set="all"/>
+			<anim name="mk22_pistol_com_down_var1" 			    file="anims/fps/glock/glock_com_var1" blend_set="all"/>
+			<anim name="mk22_pistol_com_stop" 				    file="anims/fps/glock/glock_com_var5" blend_set="all"/>
+			<anim name="mk22_pistol_com_come" 				    file="anims/fps/glock/glock_com_var6" blend_set="all"/>
+			<anim name="mk22_pistol_com_point" 				    file="anims/fps/glock/glock_com_var7" blend_set="all"/>
+			<anim name="mk22_pistol_get_up" 					file="anims/fps/glock/glock_get_up" blend_set="all"/>
+			<anim name="mk22_pistol_gogo" 					    file="anims/fps/glock/glock_gogo" blend_set="all"/>
+			<anim name="mk22_pistol_tased" 					    file="anims/fps/glock/glock_tased" blend_set="all"/>
+			<anim name="mk22_pistol_tased_boost" 				file="anims/fps/glock/glock_tased_boost" blend_set="all"/>
+			<anim name="mk22_pistol_tased_exit" 				file="anims/fps/glock/glock_tased_exit" blend_set="all"/>
+			<anim name="mk22_pistol_inspect"					file="anims/fps/deagle/deagle_inspect" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

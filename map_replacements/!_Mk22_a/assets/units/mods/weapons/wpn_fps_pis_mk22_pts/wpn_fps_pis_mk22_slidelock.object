@@ -1,0 +1,14 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_pis_mk22_pts/wpn_fps_pis_mk22_slidelock" orientation_object="rp_slidelock" />
+    <animations>
+		<animation_group name="reload">
+			<object name="anim_sl_reload" enabled="true" />
+		</animation_group>
+		<animation_group name="recoil">
+			<object name="anim_sl_recoil" enabled="true" />
+		</animation_group>
+    </animations>
+	<graphics>
+		<object name="g_slidelock" enabled="true" />
+	</graphics>
+</dynamic_object>
