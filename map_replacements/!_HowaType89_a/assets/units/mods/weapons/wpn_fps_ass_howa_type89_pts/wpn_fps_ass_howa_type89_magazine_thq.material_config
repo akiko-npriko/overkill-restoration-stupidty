@@ -1,0 +1,12 @@
+<materials version="3" group="weapon_group">
+    <material name="mtr_howa_type89_mags" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_ass_howa_type89_pts/textures/magazine_stanag_jsdf_df"  mip="1"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_ass_howa_type89_pts/textures/magazine_stanag_jsdf_nm"  mip="1"/>
+    </material>
+	<material name="mtr_m855" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture 	 file="units/mods/weapons/wpn_fps_ass_howa_type89_pts/textures/m855_df" mip="1"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_ass_howa_type89_pts/textures/m855_nm" mip="1"/>
+	</material>
+	
+	
+</materials>

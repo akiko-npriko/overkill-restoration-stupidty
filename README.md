@@ -531,6 +531,7 @@ Yanked coding from... (intergrated into mod)
  - Helldivers 2 - R-6 Deadeye (https://modworkshop.net/mod/51915)
  - MAS-38 (https://modworkshop.net/mod/53418)
  - S&W Mk22 "Hush Puppy" (https://modworkshop.net/mod/53677)
+ - Howa Type 89 (https://modworkshop.net/mod/52466)
 # Incompatible Shit
  - Spending Offshore Converter (https://modworkshop.net/mod/30447)
 	- Breaks Restore's Voiceline loading and causes voicelines to only load on paused menu
