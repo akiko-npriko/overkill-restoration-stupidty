@@ -529,6 +529,7 @@ Yanked coding from... (intergrated into mod)
  - PAYDAY 3 - FSA-12G Shotgun (https://modworkshop.net/mod/53517)
  - Helldivers 2 - R-2 Amendment (https://modworkshop.net/mod/52300)
  - Helldivers 2 - R-6 Deadeye (https://modworkshop.net/mod/51915)
+ - MAS-38 (https://modworkshop.net/mod/53418)
 # Incompatible Shit
  - Spending Offshore Converter (https://modworkshop.net/mod/30447)
 	- Breaks Restore's Voiceline loading and causes voicelines to only load on paused menu

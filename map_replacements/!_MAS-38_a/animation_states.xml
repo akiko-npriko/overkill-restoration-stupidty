@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<tweaks>
+	<!--
+		I've put this tweak first because it is the most important.
+		This section defines what should happen when particular animation triggers are reached in your reload animations. Generally, this is used for sounds.
+		Unlike the other files, simply replacing 'example' with your animation ID will likely not work for you, since different animations use different triggers.
+	-->
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+		
+		<!--
+			Put your tweaks within the <target> section below.
+			If you're using an existing animation as a basis for your custom one, you can copy the appropriate reload states from 'anims/fps/fps_spawn.animation_states'.
+			Just make sure to edit the 'anim_name' to match yours.
+		
+			Otherwise, you can manually edit the trigger names and sounds using the code below as reference.
+			'trigger' is for the name of the trigger in your animation, 'param1' corresponds to the sound ID. You can safely ignore the other parameters.
+			Make sure you keep the 'anim_clbk_stop_weapon_magazine_empty' and 'bullet_show' triggers intact.
+		-->
+		
+		<target mode="append">
+			<state name="fps/reload/mas38" type="once" segment="base" speed="1.0">
+				<anim name="mas38_reload"/>
+				<keys>
+					<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>	
+					
+			<key at="trigger" trigger="wp_mas38_tilt_start" callback="play_sound" class_name="base" param1="mas38_tilt_start"/>
+			<key at="trigger" trigger="wp_mas38_mag_grab" callback="play_sound" class_name="base" param1="mas38_mag_grab"/>
+			<key at="trigger" trigger="wp_mas38_magout" callback="play_sound" class_name="base" param1="mas38_magout"/>
+			<key at="trigger" trigger="wp_mas38_mag_hit_ground" callback="play_sound" class_name="base" param1="mas38_mag_impact_ground"/>
+			<key at="trigger" trigger="wp_mas38_mag_take_new" callback="play_sound" class_name="base" param1="mas38_mag_take_new"/>
+			<key at="trigger" trigger="wp_mas38_mag_contact" callback="play_sound" class_name="base" param1="mas38_mag_in_contact"/>
+			<key at="trigger" trigger="wp_mas38_magin" callback="play_sound" class_name="base" param1="mas38_magin"/>
+			<key at="trigger" trigger="wp_mas38_tilt" callback="play_sound" class_name="base" param1="mas38_tilt"/>
+			<key at="trigger" trigger="wp_mas38_bolt_push_forward" callback="play_sound" class_name="base" param1="mas38_bolt_forwards"/>
+			<key at="trigger" trigger="wp_mas38_bolt_pull_back" callback="play_sound" class_name="base" param1="mas38_bolt_backwards"/>
+			<key at="trigger" trigger="wp_mas38_end_tilt" callback="play_sound" class_name="base" param1="mas38_foley_end"/>
+			
+					
+					<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+
+			<state name="fps/reload_not_empty/mas38" type="once" segment="base" speed="1.0">
+				<anim name="mas38_reload_not_empty"/>
+				<keys>
+					<key at="enter" callback="anim_clbk_stop_weapon_magazine_empty" class_name="base" param1="reload"/>	
+					
+			<key at="trigger" trigger="wp_mas38_tilt_start" callback="play_sound" class_name="base" param1="mas38_tilt_start"/>
+			<key at="trigger" trigger="wp_mas38_mag_grab" callback="play_sound" class_name="base" param1="mas38_mag_grab"/>
+			<key at="trigger" trigger="wp_mas38_magout" callback="play_sound" class_name="base" param1="mas38_magout"/>
+			<key at="trigger" trigger="wp_mas38_mag_hit_ground" callback="play_sound" class_name="base" param1="mas38_mag_impact_ground"/>
+			<key at="trigger" trigger="wp_mas38_mag_take_new" callback="play_sound" class_name="base" param1="mas38_mag_take_new"/>
+			<key at="trigger" trigger="wp_mas38_mag_contact" callback="play_sound" class_name="base" param1="mas38_mag_in_contact"/>
+			<key at="trigger" trigger="wp_mas38_magin" callback="play_sound" class_name="base" param1="mas38_magin"/>
+			<key at="trigger" trigger="wp_mas38_tilt" callback="play_sound" class_name="base" param1="mas38_tilt"/>
+			<key at="trigger" trigger="wp_mas38_bolt_push_forward" callback="play_sound" class_name="base" param1="mas38_bolt_forwards"/>
+			<key at="trigger" trigger="wp_mas38_bolt_pull_back" callback="play_sound" class_name="base" param1="mas38_bolt_backwards"/>
+			<key at="trigger" trigger="wp_mas38_end_tilt" callback="play_sound" class_name="base" param1="mas38_foley_end"/>
+					
+					<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+				</keys>
+				<exit name="fps/idle"/>
+			</state>
+		</target>
+		
+	</tweak>
+	
+	<!--
+		From this point on, you can replace every instance of 'mas38' below with the ID of your animation.
+		I recommend just using the Replace All window (CTRL + H in most editors) to avoid having to manually edit them.
+		Feel free to read each section if you want to make additional edits though.
+	-->
+	
+	<!--Redirects these two names to the appropriate reload states.-->
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+		<target mode="attach">
+			<to name="reload_mas38" 						redirect="fps/reload/mas38"/>
+			<to name="reload_not_empty_mas38" 			redirect="fps/reload_not_empty/mas38"/>
+		</target>
+	</tweak>
+</tweaks>
