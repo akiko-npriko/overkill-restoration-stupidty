@@ -357,6 +357,12 @@ function CopDamage:damage_fire(attack_data)
 	if self:chk_immune_to_attacker(attacker_unit) then
 		return
 	end
+	
+	local hit_body = attack_data and attack_data.col_ray and attack_data.col_ray.body
+
+	if hit_body and impenetrable_armour[hit_body:name():key()] then -- nothing
+		return
+	end
 
 	local attacker_unit = attack_data.attacker_unit
 	local attacker_unit_base = attacker_unit and alive(attacker_unit) and attacker_unit:base()
@@ -425,6 +431,16 @@ function CopDamage:damage_fire(attack_data)
 			damage = damage * self._char_tweak.headshot_dmg_mul * headshot_multiplier
 		else
 			damage = self._health * 10
+		end
+	end
+
+	local damage_type = attack_data.weapon_unit:base():get_damage_type() or "normal"
+	if limbs[hit_body:name():key()] then
+		if damage_type_mult[damage_type] then
+			damage = damage * damage_type_mult[damage_type]
+		end
+		if is_pro and damage_type ~= "flamethrower" then
+			damage = damage * 0.75
 		end
 	end
 
@@ -565,6 +581,7 @@ function CopDamage:damage_fire(attack_data)
 				self._unit:damage():run_sequence_simple("grenadier_glass_break")
 			elseif self._head_body_name then
 				local body = self._unit:body(self._head_body_name)
+
 
 				if self._unit:damage() and self._unit:damage():has_sequence("spawn_helmet")  then
 					self._unit:damage():run_sequence_simple("spawn_helmet")
