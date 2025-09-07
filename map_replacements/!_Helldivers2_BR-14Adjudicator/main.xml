@@ -2,9 +2,7 @@
 
 	<Localization directory="loc" default="english.txt"/>
 
-	<AssetUpdates id="51113" version="1" provider="modworkshop"/>
-
-	<GlobalValue id="fiery_hylie_mod" color="Color(0.8, 0.7, 0.2)"/>
+	<GlobalValue id="helldivers2dd_mod" color="Color(0.8, 0.0, 0.0)"/>
 
 	<AddFiles directory="assets" auto_generate="true"/>
 
@@ -44,7 +42,6 @@
 	</Sounds>
 
 	<Hooks directory="hooks">
-		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/>
 		<hook file="HD2DiscardMagOnReload.lua" source_file="lib/units/weapons/raycastweaponbase"/>
 	</Hooks>
 
@@ -77,7 +74,7 @@
 
 	<Weapon unlock_level="20">
 
-		<weapon id="br14" based_on="flint" weapon_hold="br14" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="8" has_description="true" desc_id="bm_w_br14_desc" can_shoot_through_enemy="true" armor_piercing_chance="1" texture_bundle_folder="mods" global_value="fiery_hylie_mod">
+		<weapon id="br14" based_on="flint" weapon_hold="br14" CLIP_AMMO_MAX="30" NR_CLIPS_MAX="8" discard_ammo_from_clip="true" has_description="true" desc_id="bm_w_br14_desc" armor_piercing_chance="1" texture_bundle_folder="mods" global_value="helldivers2dd_mod">
 
 			<stats damage="90" spread="12" spread_moving="11" recoil="9" concealment="16"/>
 
@@ -161,7 +158,7 @@
 				<shoulders rotation="0 0.0871644 0 -0.996194" translation="-0.247 1.304 -9.118"/>
 			</crouched>
 			<steelsight>
-				<shoulders rotation="0 -8.72665e-006 0 -1" translation="-8.397 25.304 -0.822"/>
+				<shoulders rotation="0 -8.72665e-006 0 -1" translation="-8.397 15.304 -0.822"/>
 			</steelsight>
 		</stance>
 

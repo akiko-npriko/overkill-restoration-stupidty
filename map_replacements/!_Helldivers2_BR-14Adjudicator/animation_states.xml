@@ -34,8 +34,8 @@
 						<key at="trigger" trigger="wp_m4_clip_slide_in" callback="play_sound" class_name="base" param1="br14_mag_in"/>
 						<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="br14_back_in_hand"/>
 						<key at="trigger" trigger="wp_foley_generic_tilt_back" callback="play_sound" class_name="base" param1="br14_tilt_back"/>
-						<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="br14_charging_handle_grab"/>
-						<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="br14_charging_handle_pull"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
 						<key at="trigger" trigger="wp_m4_lever_pull_in" callback="play_sound" class_name="base" param1="br14_charging_handle_pull"/>
 						<key at="trigger" trigger="wp_m4_lever_release" callback="play_sound" class_name="base" param1="br14_charging_handle_release"/>
 					</keys>
@@ -50,15 +50,15 @@
 						
 						<key at="trigger" trigger="wp_foley_generic_tilt" callback="play_sound" class_name="base" param1="br14_tilt"/>
 						<key at="trigger" trigger="wp_m4_clip_grab" callback="play_sound" class_name="base" param1="br14_mag_grab"/>
-						<key at="trigger" trigger="wp_m4_clip_grab_out" callback="play_sound" class_name="base" param1="br14_mag_out_tactical"/>
+						<key at="trigger" trigger="wp_m4_clip_grab_out" callback="play_sound" class_name="base" param1="br14_mag_out"/>
 						<key at="trigger" trigger="wp_m4_clip_take_new" callback="play_sound" class_name="base" param1="br14_mag_take_new"/>
 						<key at="trigger" trigger="wp_clip_generic_ass_left" callback="play_sound" class_name="base" param1="wp_clip_generic_ass_left"/>
 						<key at="trigger" trigger="wp_m4_clip_in_contact" callback="play_sound" class_name="base" param1="br14_mag_contact"/>
-						<key at="trigger" trigger="wp_m4_clip_slide_in" callback="play_sound" class_name="base" param1="br14_mag_in_tactical"/>
+						<key at="trigger" trigger="wp_m4_clip_slide_in" callback="play_sound" class_name="base" param1="br14_mag_in"/>
 						<key at="trigger" trigger="wp_foley_generic_back_in_hand" callback="play_sound" class_name="base" param1="br14_back_in_hand"/>
 						<key at="trigger" trigger="wp_foley_generic_tilt_back" callback="play_sound" class_name="base" param1="br14_tilt_back"/>
-						<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="br14_charging_handle_grab"/>
-						<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="br14_charging_handle_pull"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_pull" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_pull"/>
 						<key at="trigger" trigger="wp_m4_lever_pull_in" callback="play_sound" class_name="base" param1="br14_charging_handle_pull"/>
 						<key at="trigger" trigger="wp_m4_lever_release" callback="play_sound" class_name="base" param1="br14_charging_handle_release"/>
 					</keys>
