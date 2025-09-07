@@ -9,6 +9,7 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "BakerRepeater_TweakData_init", f
 
  self.parts.wpn_fps_snp_baker_mag.animations = {
 		reload = "reload"
+		reload_not_empty = "reload"
 		}
 
 end )

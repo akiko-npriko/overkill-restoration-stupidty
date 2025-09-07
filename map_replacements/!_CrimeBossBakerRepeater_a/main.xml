@@ -1,6 +1,5 @@
 <mod name="Baker's Repeater">
 	<Localization directory="loc" default="english.txt"/>
-	<AssetUpdates id="48128" version="1.1" provider="modworkshop"/>
 	<GlobalValue id="fiery_hylie_mod" color="Color(0.8, 0.7, 0.2)"/>
 	<AddFiles directory="assets" auto_generate="true"/>
 	<Hooks directory="hooks">
@@ -97,5 +96,20 @@
 				<value_node value="wpn_fps_snp_baker_stock"/>
 			</uses_parts>
 		</factory>
+
+		<stance>
+			<standard>
+				<shoulders rotation="-0.000750384 0.00549777 1.3327e-005 -0.999985" translation="1.297 -0.182 3.799"/>
+			</standard>
+
+			<crouched>
+				<shoulders rotation="-0.000750384 0.00549777 1.3327e-005 -0.999985" translation="0.297 -1.182 2.799"/>
+			</crouched>
+
+			<steelsight>
+				<shoulders rotation="-0.000750384 0.00549777 1.3327e-005 -0.999985" translation="-10.703 -7.182 8.299"/>
+			</steelsight>
+		</stance>
+
 	</Weapon>
 </mod>
