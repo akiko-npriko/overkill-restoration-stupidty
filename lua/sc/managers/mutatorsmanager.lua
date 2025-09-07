@@ -60,6 +60,7 @@ function MutatorsManager:init()
 		MutatorReloadMarathon:new(self),
 		MutatorMagazineMartyr:new(self),
 		MutatorNoAmmoPickups:new(self),
+		MutatorNoAmmoDrop:new(self),
 		MutatorOopsAllSpecials:new(self),
 		MutatorPiggyBulldozer:new(self),
 		MutatorSnipersAndSnipers:new(self),
