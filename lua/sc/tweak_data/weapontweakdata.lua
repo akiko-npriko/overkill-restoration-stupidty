@@ -35412,42 +35412,6 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 			self.owen.tactical_reload = 1
 		end
 
-		if self.m3 then	-- M3 Grease Gun
-			self.m3.use_data.selection_index = 2	
-			self.m3.categories = {"smg"}
-			self.m3.recategorize = {"heavy_smg"}
-			self.m3.damage_type = "machine_gun"
-			self.m3.fire_mode_data.fire_rate = 0.13258
-			self.m3.CLIP_AMMO_MAX = 30
-			self.m3.AMMO_MAX = 120
-			self.m3.kick = self.stat_info.kick_tables.even_recoil
-			self.m3.supported = true
-			self.m3.ads_speed = 0.25
-			self.m3.damage_falloff = {
-				start_dist = 1500,
-				end_dist = 3500,
-				min_mult = 0.3
-			}
-			self.m3.stats = {
-				damage = 30,
-				spread = 62,
-				recoil = 86,
-				spread_moving = 4,
-				zoom = 1,
-				concealment = 27,
-				suppression = 9,
-				alert_size = 2,
-				extra_ammo = 101,
-				total_ammo_mod = 400,
-				value = 5,
-				reload = 20
-			}
-			self.m3.hs_mult = 1.50
-			self.m3.stats_modifiers = nil
-			self.m3.timers = deep_clone(self.m45.timers)
-			self.m3.panic_suppression_chance = 0.05
-		end
-
 		if self.m38a then -- Beretta M38A
 			self.m38a.use_data.selection_index = 2	
 			self.m38a.categories = {"smg"}
