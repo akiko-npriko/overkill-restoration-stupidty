@@ -1,0 +1,187 @@
+<mod name="Helldivers 2 - AR-2 Coyote">
+
+	<Localization directory="loc" default="english.txt"/>
+
+	<GlobalValue id="dustdevils_mod" color="Color(0.93, 0.79, 0.69)"/>
+
+	<AddFiles directory="assets" auto_generate="true"/>
+
+	<Sounds directory="assets\sounds">
+		<sound id="coyote_fire" path="coyote_fire_single.ogg" prefix="regular"/>
+		<sound id="coyote_fire" path="coyote_fire_single.ogg" prefix="regular_b"/>
+		<sound id="coyote_fire" path="coyote_fire_single.ogg" prefix="regular_c"/>
+
+		<sound id="coyote_lever_pull" path="coyote_lever_pull.ogg" prefix="first"/>
+		<sound id="coyote_lever_pull" path="coyote_lever_pull.ogg" prefix="third"/>
+		<sound id="coyote_lever_release" path="coyote_lever_release.ogg" prefix="first"/>
+		<sound id="coyote_lever_release" path="coyote_lever_release.ogg" prefix="third"/>
+		<sound id="coyote_mag_in" path="coyote_mag_in.ogg" prefix="first"/>
+		<sound id="coyote_mag_in" path="coyote_mag_in.ogg" prefix="third"/>
+		<sound id="coyote_mag_out" path="coyote_mag_out.ogg" prefix="first"/>
+		<sound id="coyote_mag_out" path="coyote_mag_out.ogg" prefix="third"/>
+	</Sounds>
+
+	<Hooks directory="hooks">
+		<hook file="HD2DiscardMagOnReload.lua" source_file="lib/units/weapons/raycastweaponbase"/>
+	</Hooks>
+
+	<!-- AR-2 Coyote - Default Parts -->
+
+	<WeaponMod id="wpn_fps_ass_coyote_barrel" type="barrel" based_on="wpn_fps_ass_flint_b_standard" unit="units/mods/weapons/wpn_fps_ass_coyote_pts/wpn_fps_ass_coyote_barrel" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_ass_coyote_magazine" type="magazine" based_on="wpn_fps_ass_flint_m_standard" unit="units/mods/weapons/wpn_fps_ass_coyote_pts/wpn_fps_ass_coyote_magazine" hidden="true" ver="2">
+	   <bullet_objects prefix="g_bullet_" amount="5"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_coyote_muzzle" type="barrel_ext" based_on="wpn_fps_ass_flint_ns_standard" unit="units/mods/weapons/wpn_fps_ass_coyote_pts/wpn_fps_ass_coyote_muzzle" hidden="true" ver="2"/>
+
+	<WeaponMod id="wpn_fps_ass_coyote_receiver" type="lower_receiver" based_on="wpn_fps_ass_flint_body_upperreceiver" unit="units/mods/weapons/wpn_fps_ass_coyote_pts/wpn_fps_ass_coyote_receiver" hidden="true" ver="2">
+	   <animations reload="reload" fire="recoil" fire_steelsight="recoil"/>
+	   <override>
+	      <wpn_fps_addon_ris unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy"/>
+	   </override>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_coyote_ammo_incendiary" type="ammo" based_on="wpn_fps_upg_a_dragons_breath" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" hidden="true" ver="2">
+	    <stats damage="0" spread="0" total_ammo_mod="0"/>
+		<custom_stats rays="1" bullet_class="FlameBulletBase" dot_data_name="ammo_dragons_breath" muzzleflash="effects/payday2/particles/weapons/big_762_auto"/>
+    </WeaponMod>
+
+	<!-- AR-2 Coyote - Scopes -->
+
+	<WeaponMod id="wpn_fps_ass_coyote_4x_optic" based_on="wpn_fps_upg_o_bmg" type="sight" a_obj="a_o" steelsight_visible="false" has_description="true" desc_id="bm_wp_4x_desc" unit="units/mods/weapons/wpn_fps_upg_hd2_scopes/wpn_fps_ass_ar23_optic" hidden="false" global_value="dustdevils_mod" ver="2">
+		<stats damage="0" spread="1"  recoil="2" concealment="-3"/>
+		<adds>
+			<value_node value="wpn_fps_ass_coyote_4x_optic_steelsight"/>
+		</adds>
+	</WeaponMod>
+
+    <WeaponMod id="wpn_fps_ass_coyote_4x_optic_steelsight" based_on="wpn_fps_upg_o_specter_steelsight" unit="units/mods/weapons/wpn_fps_upg_hd2_scopes/wpn_fps_ass_ar23_optic_steelsight" hidden="true" ver="2">
+	   	<stance_mod>
+		   <wpn_fps_ass_coyote translation="0 0 0"/>
+		</stance_mod>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_coyote_reflex_sight_mk2" based_on="wpn_fps_upg_o_reflex" type="sight" a_obj="a_o" has_description="true" desc_id="bm_wp_reflex2_desc" unit="units/mods/weapons/wpn_fps_upg_hd2_scopes/wpn_fps_ass_ar23_o_carbine" hidden="false" global_value="dustdevils_mod" ver="2">
+		<stats damage="0" spread="0"  recoil="1" concealment="-1"/>
+	   	<stance_mod>
+		   <wpn_fps_ass_coyote translation="0 0 -2.9"/>
+		</stance_mod>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_coyote_holographic_sight" type="sight" based_on="wpn_fps_upg_o_reflex" has_description="true" desc_id="bm_wp_holographic_desc" unit="units/mods/weapons/wpn_fps_upg_hd2_scopes/wpn_fps_smg_reprimand_optic" hidden="false" global_value="dustdevils_mod" ver="2">
+	        <stats recoil="1" concealment="-1"/>
+		<stance_mod>
+		   <wpn_fps_ass_coyote translation="0 0 -2.5"/>
+		</stance_mod>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_coyote_reflex_sight" type="sight" based_on="wpn_fps_upg_o_reflex" has_description="true" desc_id="bm_wp_reflex_desc" unit="units/mods/weapons/wpn_fps_upg_hd2_scopes/wpn_fps_gp31_o_std" hidden="false" global_value="dustdevils_mod" ver="2">
+	        <stats recoil="1" concealment="-1"/>
+		<stance_mod>
+		   <wpn_fps_ass_coyote translation="0 0 -5"/>
+		</stance_mod>
+	</WeaponMod>
+
+	<!-- AR-2 Coyote - Factory -->
+
+	<Weapon unlock_level="35">
+
+		<weapon id="coyote" based_on="flint" weapon_hold="coyote" FIRE_MODE="auto" CAN_TOGGLE_FIREMODE="true" discard_ammo_from_clip="true" ignore_damage_upgrades="true" CLIP_AMMO_MAX="45" NR_CLIPS_MAX="8" has_description="true" desc_id="bm_w_coyote_desc" muzzleflash="effects/payday2/particles/weapons/big_762_auto" armor_piercing_chance="1" texture_bundle_folder="mods" global_value="dustdevils_mod">
+
+			<stats damage="75" spread="14" spread_moving="12" recoil="16" concealment="16"/>
+
+			<fire_mode_data fire_rate="0.1">
+			    <toggable>
+				   <value_node value="auto"/>
+				   <value_node value="single"/>
+				</toggable>
+			</fire_mode_data>
+		
+			<sounds fire="coyote_fire" fire_auto="coyote_fire" fire_single="coyote_fire" use_fix="true"/>
+
+			<timers reload_empty="3.08" reload_not_empty="2.05"/>
+
+			<animations reload="reload" reload_not_empty="reload_not_empty" reload_name_id="coyote"/>
+
+		</weapon>
+
+		<factory id="wpn_fps_ass_coyote" unit="units/mods/weapons/wpn_fps_ass_coyote/wpn_fps_ass_coyote">
+
+			<animations fire="recoil" fire_steelsight="recoil" reload="reload" reload_not_empty="reload_not_empty"/>
+
+			<override>
+				<wpn_fps_ass_coyote_muzzle parent="barrel" a_obj="a_ns"/>
+
+				<wpn_fps_upg_ns_ass_smg_firepig parent="barrel" a_obj="a_ns"/>
+				<wpn_fps_upg_ns_ass_smg_stubby parent="barrel" a_obj="a_ns"/>
+				<wpn_fps_upg_ns_ass_smg_tank parent="barrel" a_obj="a_ns"/>
+				<wpn_fps_upg_ass_ns_jprifles parent="barrel" a_obj="a_ns"/>
+				<wpn_fps_upg_ass_ns_linear parent="barrel" a_obj="a_ns"/>
+				<wpn_fps_upg_ass_ns_surefire parent="barrel" a_obj="a_ns"/>
+				<wpn_fps_upg_ass_ns_battle parent="barrel" a_obj="a_ns"/>
+				<wpn_fps_upg_ns_ass_smg_v6 parent="barrel" a_obj="a_ns"/>
+				<wpn_fps_lmg_hk51b_ns_jcomp parent="barrel" a_obj="a_ns"/>
+				<wpn_fps_lmg_kacchainsaw_ns_muzzle parent="barrel" a_obj="a_ns"/>
+				<wpn_fps_lmg_kacchainsaw_ns_suppressor parent="barrel" a_obj="a_ns"/>
+			</override>
+
+			<default_blueprint>
+				<value_node value="wpn_fps_ass_coyote_barrel"/>
+				<value_node value="wpn_fps_ass_coyote_magazine"/>
+				<value_node value="wpn_fps_ass_coyote_muzzle"/>
+				<value_node value="wpn_fps_ass_coyote_receiver"/>
+				<value_node value="wpn_fps_ass_coyote_ammo_incendiary"/>
+			</default_blueprint>
+
+			<uses_parts>
+				<value_node value="wpn_fps_ass_coyote_barrel"/>
+				<value_node value="wpn_fps_ass_coyote_magazine"/>
+				<value_node value="wpn_fps_ass_coyote_muzzle"/>
+				<value_node value="wpn_fps_ass_coyote_receiver"/>
+				<value_node value="wpn_fps_ass_coyote_ammo_incendiary"/>
+
+				<value_node value="wpn_fps_ass_coyote_4x_optic"/>
+				<value_node value="wpn_fps_ass_coyote_reflex_sight"/>
+				<value_node value="wpn_fps_ass_coyote_reflex_sight_mk2"/>
+				<value_node value="wpn_fps_ass_coyote_holographic_sight"/>
+
+				<value_node value="wpn_fps_upg_i_autofire"/>
+				<value_node value="wpn_fps_upg_i_singlefire"/>
+
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/>
+
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_v6"/>
+				<value_node value="wpn_fps_lmg_hk51b_ns_jcomp"/>
+				<value_node value="wpn_fps_lmg_kacchainsaw_ns_muzzle"/>
+				<value_node value="wpn_fps_lmg_kacchainsaw_ns_suppressor"/>
+			</uses_parts>
+
+		</factory>
+
+	    <stance>			
+			<standard>
+				<shoulders rotation="0 -8.72665e-006 0 -1" translation="0.247 3.304 -3.118"/>
+			</standard>
+			<crouched> 
+				<shoulders rotation="0 0.0261857 0 -0.999657" translation="0.247 1.304 -4.118"/>
+			</crouched>
+			<steelsight>
+				<shoulders rotation="0 -8.72665e-006 0 -1" translation="-10.717 6.304 1.082"/>
+			</steelsight>
+		</stance>
+
+	</Weapon>
+</mod>

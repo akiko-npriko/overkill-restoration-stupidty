@@ -1,0 +1,14 @@
+<materials version="3" group="weapon_group">
+    <material name="HD2_Coyote_MAIN" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_ass_coyote_pts/textures/coyote_receiver_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_ass_coyote_pts/textures/coyote_receiver_nm"/>
+        <material_texture file="units/mods/weapons/wpn_fps_ass_coyote_pts/textures/coyote_receiver_gsma"/>
+	<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_ass_coyote_pts/textures/weapon_metal_cubemap"/>
+    </material>
+    <material name="HD2_Coyote_RAIL" render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" version="2">
+        <diffuse_texture file="units/mods/weapons/wpn_fps_ass_coyote_pts/textures/coyote_rails_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_ass_coyote_pts/textures/coyote_rails_nm"/>
+        <material_texture file="units/mods/weapons/wpn_fps_ass_coyote_pts/textures/coyote_rails_gsma"/>
+	<reflection_texture type="cubemap" file="units/mods/weapons/wpn_fps_ass_coyote_pts/textures/weapon_metal_cubemap"/>
+    </material>
+</materials>

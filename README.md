@@ -534,6 +534,7 @@ Yanked coding from... (intergrated into mod)
  - Howa Type 89 (https://modworkshop.net/mod/52466)
  - TF2 Revolver Pack (https://modworkshop.net/mod/25362)
  - VSK-94 (https://modworkshop.net/mod/53540)
+ - Helldivers 2 - AR-2 Coyote (https://modworkshop.net/mod/53689)
 # Incompatible Shit
  - Spending Offshore Converter (https://modworkshop.net/mod/30447)
 	- Breaks Restore's Voiceline loading and causes voicelines to only load on paused menu

@@ -1,0 +1,16 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_ass_coyote_pts/wpn_fps_ass_coyote_receiver" orientation_object="rp_receiver" />	
+	<animations>  
+		<animation_group name="reload" enabled="false" >
+			<object name="anim_reload_bolt" enabled="true" />
+		</animation_group>  
+		<animation_group name="recoil" enabled="false" >
+			<object name="anim_recoil" enabled="true" />
+		</animation_group>
+    </animations>
+	<graphics>
+		<object name="g_receiver" enabled="true"/>
+		<object name="g_rails" enabled="true"/>
+		<object name="g_bolt" enabled="true"/>
+	</graphics>
+</dynamic_object>
