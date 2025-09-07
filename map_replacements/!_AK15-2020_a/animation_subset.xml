@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+			
+		<target mode="attach">
+			<anim name="ak15_reload"						file="anims/fps/ak15/ak15_reload" blend_set="all"/>
+			<anim name="ak15_reload_not_empty" 				file="anims/fps/ak15/ak15_reload_not_empty" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>
