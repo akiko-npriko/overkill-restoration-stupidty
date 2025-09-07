@@ -447,7 +447,7 @@ function CopDamage:damage_fire(attack_data)
 	
 	--Temp Disable until Dev Fixes this (troubleshooting dev shows that this crashes)
 	--[[
-	local damage_type = attack_data.weapon_unit:base():get_damage_type() or "normal"
+	local damage_type = (weap_unit and weap_unit:base():get_damage_type()) or "normal"
 	if limbs[hit_body:name():key()] then
 		if damage_type_mult[damage_type] then
 			damage = damage * damage_type_mult[damage_type]
