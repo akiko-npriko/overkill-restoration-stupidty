@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+
+		<!--
+			Replace all instances of 'sta11' below with the ID of your animation.
+			Note that recoil_steelsight does not have a unique animation in this sta11; you can edit the filepath in the 'file' section with one if you wish.
+			If your gun cannot be fired in full auto, you can delete the recoil_enter, recoil_loop, and recoil_exit lines.
+		-->
+
+		<target mode="attach">
+			<anim name="sta11_reload" 					file="anims/fps/sta11/sta11_reload" blend_set="all"/>
+			<anim name="sta11_reload_not_empty" 		file="anims/fps/sta11/sta11_reload_not_empty" blend_set="all"/>
+		</target>
+	</tweak>
+</tweaks>

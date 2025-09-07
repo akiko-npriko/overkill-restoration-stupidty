@@ -1,0 +1,11 @@
+<materials version="3" group="weapon_group">
+
+	<material name="Helldivers2StA11SMG_MAIN" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_smg_sta11_pts/textures/receiver_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_smg_sta11_pts/textures/receiver_nm"/>
+    </material>
+	<material name="Helldivers2StA11SMG_RAILS" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture 	 file="units/mods/weapons/wpn_fps_smg_sta11_pts/textures/rails_df"/>
+        <bump_normal_texture file="units/mods/weapons/wpn_fps_smg_sta11_pts/textures/rails_nm"/>
+    </material>	
+</materials>

@@ -538,6 +538,7 @@ Yanked coding from... (intergrated into mod)
  - AK15 "2020" (https://modworkshop.net/mod/53522)
  - AK-19 Assault Rifle (https://modworkshop.net/mod/53538)
  - Helldivers 2 - BR-14 Adjudicator (https://modworkshop.net/mod/51113)
+ - Helldivers 2 x Killzone 2 - StA-11 Submachine Gun (https://modworkshop.net/mod/50684)
  - Crime Boss: Rockay City - Baker's Repeater (https://modworkshop.net/mod/48128)
 # Incompatible Shit
  - Spending Offshore Converter (https://modworkshop.net/mod/30447)

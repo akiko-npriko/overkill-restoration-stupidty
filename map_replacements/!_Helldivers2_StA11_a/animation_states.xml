@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<tweaks>
+	<!--
+		I've put this tweak first because it is the most important.
+		This section defines what should happen when particular animation triggers are reached in your reload animations. Generally, this is used for sounds.
+		Unlike the other files, simply replacing 'sta11' with your animation ID will likely not work for you, since different animations use different triggers.
+	-->
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+		
+		<!--
+			Put your tweaks within the <target> section below.
+			If you're using an existing animation as a basis for your custom one, you can copy the appropriate reload states from 'anims/fps/fps_spawn.animation_states'.
+			Just make sure to edit the 'anim_name' to match yours.
+		
+			Otherwise, you can manually edit the trigger names and sounds using the code below as reference.
+			'trigger' is for the name of the trigger in your animation, 'param1' corresponds to the sound ID. You can safely ignore the other parameters.
+			Make sure you keep the 'anim_clbk_stop_weapon_magazine_empty' and 'bullet_show' triggers intact.
+		-->
+		
+		<target mode="append">
+			<state name="fps/reload/sta11" type="once" segment="base" speed="1.0">
+				<anim name="sta11_reload"/>
+					<keys>					
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+						
+						<key at="trigger" trigger="wp_coal_tilt_up" callback="play_sound" class_name="base" param1="wp_coal_tilt_up"/>
+						
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand_soft" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand_soft"/>
+						<key at="trigger" trigger="wp_coal_mag_release" callback="play_sound" class_name="base" param1="wp_coal_mag_release"/>
+						<key at="trigger" trigger="wp_coal_mag_out_back" callback="play_sound" class_name="base" param1="wp_coal_mag_out_back"/>		
+						
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>	
+						<key at="trigger" trigger="wp_coal_mag_out_front" callback="play_sound" class_name="base" param1="wp_coal_mag_out_front"/>
+						<key at="trigger" trigger="wp_clip_generic_ass_center" callback="play_sound" class_name="base" param1="wp_clip_generic_ass_center"/>		
+						
+						<key at="trigger" trigger="wp_coal_take_new_mag" callback="play_sound" class_name="base" param1="wp_coal_take_new_mag"/>
+						<key at="trigger" trigger="wp_coal_mag_in_front" callback="play_sound" class_name="base" param1="wp_coal_mag_in_front"/>
+						
+						<key at="trigger" trigger="wp_coal_mag_in_back" callback="play_sound" class_name="base" param1="wp_coal_mag_in_back"/>
+						<key at="trigger" trigger="wp_coal_secure_mag" callback="play_sound" class_name="base" param1="wp_coal_secure_mag"/>
+
+						<key at="trigger" trigger="wp_coal_tilt_down" callback="play_sound" class_name="base" param1="wp_coal_tilt_down"/>
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+
+			<state name="fps/reload_not_empty/sta11" type="once" segment="base" speed="1.0">
+				<anim name="sta11_reload_not_empty"/>
+					<keys>		
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+						
+						<key at="trigger" trigger="wp_coal_tilt_up" callback="play_sound" class_name="base" param1="wp_coal_tilt_up"/>
+						
+						<key at="trigger" trigger="wp_foley_generic_back_in_hand_soft" callback="play_sound" class_name="base" param1="wp_foley_generic_back_in_hand_soft"/>
+						<key at="trigger" trigger="wp_coal_mag_release" callback="play_sound" class_name="base" param1="wp_coal_mag_release"/>
+						<key at="trigger" trigger="wp_coal_mag_out_back" callback="play_sound" class_name="base" param1="wp_coal_mag_out_back"/>		
+						
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>	
+						<key at="trigger" trigger="wp_coal_mag_out_front" callback="play_sound" class_name="base" param1="wp_coal_mag_out_front"/>
+						<key at="trigger" trigger="wp_clip_generic_ass_center" callback="play_sound" class_name="base" param1="wp_clip_generic_ass_center"/>		
+						
+						<key at="trigger" trigger="wp_coal_take_new_mag" callback="play_sound" class_name="base" param1="wp_coal_take_new_mag"/>
+						<key at="trigger" trigger="wp_coal_mag_in_front" callback="play_sound" class_name="base" param1="wp_coal_mag_in_front"/>
+						
+						<key at="trigger" trigger="wp_coal_mag_in_back" callback="play_sound" class_name="base" param1="wp_coal_mag_in_back"/>
+						<key at="trigger" trigger="wp_coal_secure_mag" callback="play_sound" class_name="base" param1="wp_coal_secure_mag"/>
+
+						<key at="trigger" trigger="wp_coal_tilt_down" callback="play_sound" class_name="base" param1="wp_coal_tilt_down"/>
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+		</target>
+		
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+		<target mode="attach">
+			<to name="reload_sta11" 						redirect="fps/reload/sta11"/>
+			<to name="reload_not_empty_sta11" 			redirect="fps/reload_not_empty/sta11"/>
+		</target>
+	</tweak>
+	
+</tweaks>
