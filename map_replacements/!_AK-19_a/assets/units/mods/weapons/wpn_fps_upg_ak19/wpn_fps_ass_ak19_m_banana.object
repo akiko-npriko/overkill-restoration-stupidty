@@ -1,0 +1,23 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_upg_ak19/wpn_fps_ass_ak19_m_banana" orientation_object="rp_mag" />
+	<animations>
+		<animation_group name="reload" enabled="false" >
+			<object name="anim_reload" enabled="true" />	
+			<object name="anim_reload_m2" enabled="true" />			
+		</animation_group>    
+		<animation_group name="reload_not_empty" enabled="false" >
+			<object name="anim_reload_ne" enabled="true" />
+			<object name="anim_reload_ne_m2" enabled="true" />
+		</animation_group> 
+        </animations>
+	<graphics>
+		<object name="g_mag_banana" enabled="true" />
+		<object name="g_mag_banana_spare" enabled="true" />
+
+
+		<object name="g_bullet_1" enabled="true" />
+		<object name="g_bullet_2" enabled="true" />
+		<object name="g_bullet_1_spare" enabled="true" />
+		<object name="g_bullet_2_spare" enabled="true" />
+	</graphics>
+</dynamic_object>

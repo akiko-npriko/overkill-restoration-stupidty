@@ -536,6 +536,7 @@ Yanked coding from... (intergrated into mod)
  - VSK-94 (https://modworkshop.net/mod/53540)
  - Helldivers 2 - AR-2 Coyote (https://modworkshop.net/mod/53689)
  - AK15 "2020" (https://modworkshop.net/mod/53522)
+ - AK-19 Assault Rifle (https://modworkshop.net/mod/53538)
 # Incompatible Shit
  - Spending Offshore Converter (https://modworkshop.net/mod/30447)
 	- Breaks Restore's Voiceline loading and causes voicelines to only load on paused menu
