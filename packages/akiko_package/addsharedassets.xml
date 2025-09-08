@@ -24,6 +24,20 @@
 	<material_config path="units/pd2_mod_akiko/characters/ene_acc_gign_doc_helmet/ene_acc_gign_doc_helmet" force="false"/>
 	<cooked_physics path="units/pd2_mod_akiko/characters/ene_acc_gign_doc_helmet/ene_acc_gign_doc_helmet" force="false"/>
 	
+	<!--National Guard Medic Helmet-->
+	<unit path="units/pd2_mod_akiko/characters/ene_acc_ng_medic_helmet_1/ene_acc_ng_medic_helmet_1" force="false" load="false"/>
+	<object path="units/pd2_mod_akiko/characters/ene_acc_ng_medic_helmet_1/ene_acc_ng_medic_helmet_1" force="false"/>
+	<model path="units/pd2_mod_akiko/characters/ene_acc_ng_medic_helmet_1/ene_acc_ng_medic_helmet_1" force="false"/>
+	<material_config path="units/pd2_mod_akiko/characters/ene_acc_ng_medic_helmet_1/ene_acc_ng_medic_helmet_1" force="false"/>
+	<cooked_physics path="units/pd2_mod_akiko/characters/ene_acc_ng_medic_helmet_1/ene_acc_ng_medic_helmet_1" force="false"/>
+	
+	<!--National Guard Shotgun Medic Helmet-->
+	<unit path="units/pd2_mod_akiko/characters/ene_acc_ng_medic_helmet_2/ene_acc_ng_medic_helmet_2" force="false" load="false"/>
+	<object path="units/pd2_mod_akiko/characters/ene_acc_ng_medic_helmet_2/ene_acc_ng_medic_helmet_2" force="false"/>
+	<model path="units/pd2_mod_akiko/characters/ene_acc_ng_medic_helmet_2/ene_acc_ng_medic_helmet_2" force="false"/>
+	<material_config path="units/pd2_mod_akiko/characters/ene_acc_ng_medic_helmet_2/ene_acc_ng_medic_helmet_2" force="false"/>
+	<cooked_physics path="units/pd2_mod_akiko/characters/ene_acc_ng_medic_helmet_2/ene_acc_ng_medic_helmet_2" force="false"/>
+	
 	<!--XOF Shield (not person)-->
 	<unit path="units/pd2_mod_akiko/characters/ene_acc_xof_shield/ene_acc_xof_shield" force="false" load="false"/>
 	<object path="units/pd2_mod_akiko/characters/ene_acc_xof_shield/ene_acc_xof_shield" force="false"/>
@@ -130,6 +144,11 @@
 	<texture path="units/pd2_mod_akiko/characters/ene_bulldozer_taser/ene_bulldozer_taser_df" force="false"/>
 	<texture path="units/pd2_mod_akiko/characters/shared_textures/irs_medictaser_body_df" force="false"/>
 	<texture path="units/pd2_mod_akiko/characters/shared_textures/irs_medictaser_helmets_df" force="false"/>
+	<df_nm path="units/pd2_mod_akiko/characters/shared_textures/ng_medic/material_body" force="false"/>
+	<df_nm path="units/pd2_mod_akiko/characters/shared_textures/ng_medic/material_head" force="false"/>
+	<texture path="units/pd2_mod_akiko/characters/shared_textures/ng_medic/material_head_il" force="false"/>
+	<texture path="units/pd2_mod_akiko/characters/shared_textures/ng_medic/shotgun/material_body_df" force="false"/>
+	<texture path="units/pd2_mod_akiko/characters/shared_textures/ng_medic/shotgun/material_head_df" force="false"/>
 	<!--Shared Textures for NG-->
 	<df_nm path="units/pd2_dlc_gitgud/characters/ene_acc_shield_new_swat_sc/shield" force="false"/>
 	<df_nm path="units/pd2_dlc_gitgud/characters/ene_zeal_tazer_sc/ene_zeal_tazer" force="false"/>
