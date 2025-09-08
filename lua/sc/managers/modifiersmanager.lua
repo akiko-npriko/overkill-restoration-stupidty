@@ -290,7 +290,7 @@ local akiko_replacement_table = {
 	--National Guard :3
 	["units/pd2_dlc_gitgud/characters/ene_zeal_medic/ene_zeal_medic"] = {
 		default = {"units/pd2_mod_akiko/characters/ene_ng_medic_1/ene_ng_medic_1", "units/pd2_mod_akiko/characters/ene_ng_medic_2/ene_ng_medic_2"},
-	}
+	},
 }
 
 -- This table is for robots, don't edit this one
@@ -333,6 +333,7 @@ akiko_replacement_table = nil
 -- Define this here so ModifierBravos can pull the same table
 Hooks:PostHook(ModifiersManager, "init", "res_init", function(self)
 	self._unit_table = unit_table or {}
+	self._akiko_unit_table = akiko_unit_table or {}
 end)
 
 local modify_value_original = ModifiersManager.modify_value
@@ -348,10 +349,10 @@ function ModifiersManager:modify_value(id, value, ...)
 			end
 			return bravo_data or result
 		end
-		--if STUPID_SHIT_HERE then (something no work here)
+		--if STUPID_SHIT_HERE then
 			local typ = type(value)
 			value = typ == "string" and Idstring(value) or typ == "userdata" and value or "motherfucker"
-			local akiko_data_uwu = self._unit_table[value:key()]
+			local akiko_data_uwu = self._akiko_unit_table[value:key()]
 			if type(akiko_data_uwu) == "table" then
 				local blahmreowp = akiko_data_uwu[tweak_data.levels:get_ai_group_type()] or akiko_data_uwu.default or result
 				return type(blahmreowp) == "table" and table.random(blahmreowp) or blahmreowp
