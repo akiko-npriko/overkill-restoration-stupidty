@@ -1094,6 +1094,18 @@ local dave = {
 	--	"railgun_npc"
 	}
 }
+local national_guard = {
+	medic_rifle = {
+		"m4",
+		"mp5"
+	},
+	medic_shotgun = {
+		"r870",
+		"benelli",
+		"saiga"
+	}
+}
+
 local weapon_mapping = {
 -- Beat cops
 	[("units/payday2/characters/ene_cop_1/ene_cop_1"):key()] = cop.pistol,
@@ -1183,6 +1195,9 @@ local weapon_mapping = {
 	[("units/pd2_dlc_bex/characters/ene_swat_heavy_policia_federale_fbi_r870/ene_swat_heavy_policia_federale_fbi_r870"):key()] = federales.shotgun,
 -- Dave's guns
 	[("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"):key{}] = dave.all_the_guns
+-- US National Guards
+	[("units/pd2_mod_akiko/characters/ene_ng_medic_1/ene_ng_medic_1"):key{}] = national_guard.medic_rifle
+	[("units/pd2_mod_akiko/characters/ene_ng_medic_2/ene_ng_medic_2"):key{}] = national_guard.medic_shotgun
 }
 
 Hooks:PreHook(CopBase, "post_init", "MIX_post_init", function(self)
