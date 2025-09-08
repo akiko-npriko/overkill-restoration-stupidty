@@ -316,6 +316,7 @@ for to_replace, replacement in pairs(akiko_replacement_table) do
 		akiko_unit_table[replace_key] = replacement
 		for faction, fac_replace in pairs(replacement) do
 			if type(fac_replace) == "table" then
+				replacement[faction] = {}
 				for to_replace_random, la_random_replacement in pairs(fac_replace) do
 					table.insert(replacement[faction], Idstring(la_random_replacement))
 				end
