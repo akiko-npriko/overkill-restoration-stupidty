@@ -37,16 +37,19 @@ function MutatorBravosOnly:modify_value(id, value)
 	--local bravo_replacement_increase = self:get_bravo_replacement("_increase")
 	
 	if id == "GroupAIStateBesiege:SpawningUnit" and bravo_replacement == "random" then
-        local unit_name = tostring(value)
-        local replacement = managers.modifiers._unit_table[unit_name] --dont make the same table twice!! just pull it from modifiersmanager
-
-        if replacement then
-            local replacement_chance = bravo_replacement_percentage
-
-            if math.random(0,100) < replacement_chance then
-                return replacement
-            end
-        end
+		local typ = type(value)
+		local unit_name = typ == "string" and Idstring(value) or typ == "userdata" and value or "motherfucker"
+		local replacement = managers.modifiers._unit_table[unit_name:key()]
+		if not replacement then
+			return value
+		end
+		local replacement_chance = bravo_replacement_percentage
+		if replacement_chance <= 0 then
+			return value
+		end
+		if math.random(100) <= replacement_chance then
+			return replacement
+		end
     end
 
     return value
