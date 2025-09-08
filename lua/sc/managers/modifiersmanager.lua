@@ -391,7 +391,8 @@ end
 local akiko_replacement_table = {
 	--National Guard :3
 	["units/pd2_dlc_gitgud/characters/ene_zeal_medic/ene_zeal_medic"] = {
-		default = {"units/pd2_mod_akiko/characters/ene_ng_medic_1/ene_ng_medic_1", "units/pd2_mod_akiko/characters/ene_ng_medic_2/ene_ng_medic_2"},
+		--default = {"units/pd2_mod_akiko/characters/ene_ng_medic_1/ene_ng_medic_1", "units/pd2_mod_akiko/characters/ene_ng_medic_2/ene_ng_medic_2"} --disabled for now something broken
+		default = "units/pd2_mod_akiko/characters/ene_ng_medic_2/ene_ng_medic_2"
 	}
 }
 
@@ -420,7 +421,7 @@ for to_replace, replacement in pairs(akiko_replacement_table) do
 		for faction, fac_replace in pairs(replacement) do
 			if type(fac_replace) == "table" then
 				for to_replace_random, la_random_replacement in pairs(fac_replace) do
-					table.insert(replacement[faction], Idstring(la_random_replacement))
+					table.insert(replacement[faction], Idstring(la_random_replacement)) --this dont work :c
 				end
 			else
 				replacement[faction] = Idstring(fac_replace)
