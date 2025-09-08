@@ -387,15 +387,6 @@ else
 		["units/pd2_dlc_usm1/characters/ene_male_marshal_marksman_2/ene_male_marshal_marksman_2"] = "units/pd2_mod_bravo/characters/ene_bravo_dmr/ene_bravo_dmr"
 	}	
 end
-
-local akiko_replacement_table = {
-	--National Guard :3
-	["units/pd2_dlc_gitgud/characters/ene_zeal_medic/ene_zeal_medic"] = {
-		--default = {"units/pd2_mod_akiko/characters/ene_ng_medic_1/ene_ng_medic_1", "units/pd2_mod_akiko/characters/ene_ng_medic_2/ene_ng_medic_2"} --disabled for now something broken
-		default = "units/pd2_mod_akiko/characters/ene_ng_medic_2/ene_ng_medic_2"
-	}
-}
-
 --this table is for robots. don't edit this one
 local unit_table = {}
 
@@ -412,28 +403,6 @@ function ModifiersManager:init()
 	self._unit_table = unit_table or {} --define this here so ModifierBravos can pull the same table. avoids having to remake the same table twice
 end
 
--- This table is also for robots, don't edit this one
-local akiko_unit_table = {}
-for to_replace, replacement in pairs(akiko_replacement_table) do
-	local replace_key = string.key(to_replace)
-	if type(replacement) == "table" then
-		akiko_unit_table[replace_key] = replacement
-		for faction, fac_replace in pairs(replacement) do
-			if type(fac_replace) == "table" then
-				for to_replace_random, la_random_replacement in pairs(fac_replace) do
-					table.insert(replacement[faction], Idstring(la_random_replacement)) --this dont work :c
-				end
-			else
-				replacement[faction] = Idstring(fac_replace)
-			end
-		end
-	else
-		akiko_unit_table[replace_key] = Idstring(replacement)
-	end
-end
-akiko_replacement_table = nil
-
-
 local orig_modify = ModifiersManager.modify_value
 function ModifiersManager:modify_value(id, value, ...)
 	local result = orig_modify(self,id,value,...)
@@ -447,15 +416,6 @@ function ModifiersManager:modify_value(id, value, ...)
 		return self._unit_table[value] or result 
 	elseif id == "GroupAIStateBesiege:SpawningUnit" and restoration and restoration.always_bravos then 
 		return self._unit_table[value] or result 
-	elseif id == "GroupAIStateBesiege:SpawningUnit" then
-		local typ = type(value)
-		value = typ == "string" and Idstring(value) or typ == "userdata" and value or "motherfucker"
-		local akiko_data_uwu = self._unit_table[value:key()]
-		if type(akiko_data_uwu) == "table" then
-			local blahmreowp = akiko_data_uwu[tweak_data.levels:get_ai_group_type()] or akiko_data_uwu.default or result
-			return type(blahmreowp) == "table" and table.random(blahmreowp) or blahmreowp
-		end
-		return akiko_data_uwu or result
 	end
 	return result
 end
