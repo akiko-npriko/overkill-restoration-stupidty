@@ -282,6 +282,8 @@ local replacement_table = {
 	["units/pd2_mod_sharks/characters/ene_grenadier_1/ene_grenadier_1"] = "units/pd2_mod_omnia/characters/ene_grenadier_1/ene_grenadier_1",
 	["units/pd2_mod_sharks/characters/ene_murky_spook/ene_murky_spook"] = "units/pd2_mod_omnia/characters/ene_omnia_spook/ene_omnia_spook",
 	["units/pd2_mod_sharks/characters/ene_murky_medic_m4/ene_murky_medic_m4"] = "units/pd2_mod_omnia/characters/ene_omnia_medic/ene_omnia_medic",
+	--Akiko Bravo Stuff :3
+	["units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"] = "units/pd2_mod_akiko/characters/ene_xof_piglet/ene_xof_piglet",
 }
 
 -- This table is for robots, don't edit this one
