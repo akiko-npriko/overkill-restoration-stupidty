@@ -286,6 +286,13 @@ local replacement_table = {
 	["units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"] = "units/pd2_mod_akiko/characters/ene_xof_piglet/ene_xof_piglet",
 }
 
+local akiko_replacement_table = {
+	--National Guard :3
+	["units/pd2_dlc_gitgud/characters/ene_zeal_medic/ene_zeal_medic"] = {
+		default = {"units/pd2_mod_akiko/characters/ene_ng_medic_1/ene_ng_medic_1", "units/pd2_mod_akiko/characters/ene_ng_medic_2/ene_ng_medic_2"},
+	}
+}
+
 -- This table is for robots, don't edit this one
 local unit_table = {}
 for to_replace, replacement in pairs(replacement_table) do
@@ -300,6 +307,27 @@ for to_replace, replacement in pairs(replacement_table) do
 	end
 end
 replacement_table = nil
+
+-- This table is also for robots, don't edit this one
+local akiko_unit_table = {}
+for to_replace, replacement in pairs(akiko_replacement_table) do
+	local replace_key = string.key(to_replace)
+	if type(replacement) == "table" then
+		akiko_unit_table[replace_key] = replacement
+		for faction, fac_replace in pairs(replacement) do
+			if type(fac_replace) == "table" then
+				for to_replace_random, la_random_replacement in pairs(fac_replace) do
+					table.insert(replacement[faction], Idstring(la_random_replacement))
+				end
+			else
+				replacement[faction] = Idstring(fac_replace)
+			end
+		end
+	else
+		akiko_unit_table[replace_key] = Idstring(replacement)
+	end
+end
+akiko_replacement_table = nil
 
 -- Define this here so ModifierBravos can pull the same table
 Hooks:PostHook(ModifiersManager, "init", "res_init", function(self)
@@ -319,6 +347,16 @@ function ModifiersManager:modify_value(id, value, ...)
 			end
 			return bravo_data or result
 		end
+		--if STUPID_SHIT_HERE then
+			local typ = type(value)
+			value = typ == "string" and Idstring(value) or typ == "userdata" and value or "motherfucker"
+			local akiko_data_uwu = self._unit_table[value:key()]
+			if type(akiko_data_uwu) == "table" then
+				local blahmreowp = akiko_data_uwu[tweak_data.levels:get_ai_group_type()] or akiko_data_uwu.default or result
+				return type(blahmreowp) == "table" and table.random(blahmreowp) or blahmreowp
+			end
+			return akiko_data_uwu or result
+		--end
 	end
 	return result
 end
