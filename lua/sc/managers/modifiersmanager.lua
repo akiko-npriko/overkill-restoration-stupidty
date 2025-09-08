@@ -348,7 +348,7 @@ function ModifiersManager:modify_value(id, value, ...)
 			end
 			return bravo_data or result
 		end
-		--if STUPID_SHIT_HERE then
+		--if STUPID_SHIT_HERE then (something no work here)
 			local typ = type(value)
 			value = typ == "string" and Idstring(value) or typ == "userdata" and value or "motherfucker"
 			local akiko_data_uwu = self._unit_table[value:key()]
