@@ -3933,7 +3933,6 @@ function CopDamage:kamikaze_bag_explode()
 	
 end
 
---[[
 function CopDamage:lpf_disable()	
 	if not alive(self._unit) then
 		return
@@ -3959,7 +3958,6 @@ function CopDamage:lpf_disable()
 	end	
 	
 end
-]]
 
 --Added stuff for CG22 mutator
 function CopDamage:_apply_damage_reduction(damage)

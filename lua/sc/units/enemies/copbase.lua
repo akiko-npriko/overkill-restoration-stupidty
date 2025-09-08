@@ -1194,9 +1194,9 @@ local weapon_mapping = {
 	[("units/pd2_dlc_bex/characters/ene_swat_heavy_policia_federale_r870/ene_swat_heavy_policia_federale_r870"):key()] = federales.shotgun,
 	[("units/pd2_dlc_bex/characters/ene_swat_heavy_policia_federale_fbi_r870/ene_swat_heavy_policia_federale_fbi_r870"):key()] = federales.shotgun,
 -- Dave's guns
-	[("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"):key{}] = dave.all_the_guns
+	[("units/pd2_mod_dave/characters/ene_big_dave/ene_big_dave"):key{}] = dave.all_the_guns,
 -- US National Guards
-	[("units/pd2_mod_akiko/characters/ene_ng_medic_1/ene_ng_medic_1"):key{}] = national_guard.medic_rifle
+	[("units/pd2_mod_akiko/characters/ene_ng_medic_1/ene_ng_medic_1"):key{}] = national_guard.medic_rifle,
 	[("units/pd2_mod_akiko/characters/ene_ng_medic_2/ene_ng_medic_2"):key{}] = national_guard.medic_shotgun
 }
 
