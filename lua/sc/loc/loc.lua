@@ -5802,7 +5802,7 @@ Hooks:Add("LocalizationManagerPostInit", "SC_Localization_Skills_Eng", function(
 
 				--Rifleman--
 				["menu_rifleman_sc"] = "Rifleman",
-				["menu_rifleman_desc_sc"] = "BASIC: #{owned}#$basic##\n#{skill_color}#Rifles## gain #{skill_color}#$skill_value_b1## more accuracy and range while aiming down sights.\n\n#{skill_color}#Rifles## gain an additional #{skill_color}#$skill_value_b2## stability.\n\nACE: #{owned}#$pro##\n#{skill_color}#Rifles## gain an additional #{skill_color}#$skill_value_p1## more accuracy and range while aiming down sights.\n\nYour aim down sights and sprint-to-fire speeds for #{skill_color}#rifles## are #{skill_color}#$skill_value_p2## faster.",
+				["menu_rifleman_desc_sc"] = "BASIC: #{owned}#$basic##\n#{skill_color}#Rifles## gain #{skill_color}#$skill_value_b1## more accuracy while aiming down sights.\n\n#{skill_color}#Rifles## gain an additional #{skill_color}#$skill_value_b2## stability.\n\nACE: #{owned}#$pro##\n#{skill_color}#Rifles## gain #{skill_color}#$skill_value_p1## more range while aiming down sights.\n\nYour aim down sights and sprint-to-fire speeds for #{skill_color}#rifles## are #{skill_color}#$skill_value_p2## faster.",
 
 				--Kilmer--
 				["menu_heavy_impact_beta_sc"] = "Kilmer",
