@@ -301,6 +301,8 @@ local akiko_replacement_table = {
 	["units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3_sc/ene_zeal_bulldozer_3_sc"] = {
 		default = "units/pd2_mod_akiko/characters/ene_ng_bulldozer_3/ene_ng_bulldozer_3",
 	},
+	--TEST DEBUG!!!
+	["units/pd2_mod_akiko/characters/ene_groundsniper_ng/ene_groundsniper_ng"] = "units/pd2_mod_akiko/characters/ene_titan_shield_bulldozer/ene_titan_shield_bulldozer",
 }
 
 -- This table is for robots, don't edit this one
@@ -363,7 +365,6 @@ function ModifiersManager:modify_value(id, value, ...)
 			else
 				thereplacedunit = akiko_data_uwu or result
 			end
-			log("ModifiersManagers: PLZ TELL ME WHAT WRONG!!! Replacing spawn" ==> " .. tostring(thereplacedunit))
 		end
 		if amiabravo then
 			local typ = type(value)
