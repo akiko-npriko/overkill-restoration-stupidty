@@ -340,7 +340,8 @@ local modify_value_original = ModifiersManager.modify_value
 function ModifiersManager:modify_value(id, value, ...)
 	local result = modify_value_original(self, id, value, ...)
 	if id == "GroupAIStateBesiege:SpawningUnit" then
-		if (managers.groupai:state()._ponr_is_on and Global.game_settings.one_down and not table.contains(restoration.alternate_ponr_behavior, job)) or (restoration and restoration.always_bravos) then
+		local amiabravo = ((managers.groupai:state()._ponr_is_on and Global.game_settings.one_down and not table.contains(restoration.alternate_ponr_behavior, job)) or (restoration and restoration.always_bravos)) and true or false
+		if amiabravo then
 			local typ = type(value)
 			value = typ == "string" and Idstring(value) or typ == "userdata" and value or "motherfucker"
 			local bravo_data = self._unit_table[value:key()]
