@@ -301,8 +301,6 @@ local akiko_replacement_table = {
 	["units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3_sc/ene_zeal_bulldozer_3_sc"] = {
 		default = "units/pd2_mod_akiko/characters/ene_ng_bulldozer_3/ene_ng_bulldozer_3",
 	},
-	--TEST DEBUG!!!
-	["units/pd2_mod_akiko/characters/ene_groundsniper_ng/ene_groundsniper_ng"] = "units/pd2_mod_akiko/characters/ene_titan_shield_bulldozer/ene_titan_shield_bulldozer",
 }
 
 -- This table is for robots, don't edit this one
@@ -346,6 +344,7 @@ akiko_replacement_table = nil
 Hooks:PostHook(ModifiersManager, "init", "res_init", function(self)
 	self._unit_table = unit_table or {}
 	self._akiko_unit_table = akiko_unit_table or {}
+	self._akiko_thereplacedunit = nil
 end)
 
 local modify_value_original = ModifiersManager.modify_value
@@ -354,28 +353,28 @@ function ModifiersManager:modify_value(id, value, ...)
 	if id == "GroupAIStateBesiege:SpawningUnit" then
 		local amiabravo = ((managers.groupai:state()._ponr_is_on and Global.game_settings.one_down and not table.contains(restoration.alternate_ponr_behavior, job)) or (restoration and restoration.always_bravos)) and true or false
 		local majarngsupport = true
-		local thereplacedunit = result
+		self._akiko_thereplacedunit = result
 		if majarngsupport then
 			local typ = type(value)
 			value = typ == "string" and Idstring(value) or typ == "userdata" and value or "motherfucker"
 			local akiko_data_uwu = self._akiko_unit_table[value:key()]
 			if type(akiko_data_uwu) == "table" then
 				local blahmreowp = akiko_data_uwu[tweak_data.levels:get_ai_group_type()] or akiko_data_uwu.default or result
-				thereplacedunit = type(blahmreowp) == "table" and table.random(blahmreowp) or blahmreowp
+				self._akiko_thereplacedunit = type(blahmreowp) == "table" and table.random(blahmreowp) or blahmreowp
 			else
-				thereplacedunit = akiko_data_uwu or result
+				self._akiko_thereplacedunit = akiko_data_uwu or result
 			end
 		end
 		if amiabravo then
 			local typ = type(value)
-			value = thereplacedunit ~= result and thereplacedunit or typ == "string" and Idstring(value) or typ == "userdata" and value or "motherfucker"
+			value = self._akiko_thereplacedunit ~= result and self._akiko_thereplacedunit or typ == "string" and Idstring(value) or typ == "userdata" and value or "motherfucker"
 			local bravo_data = self._unit_table[value:key()]
 			if type(bravo_data) == "table" then
 				return bravo_data[tweak_data.levels:get_ai_group_type()] or bravo_data.default or result
 			end
 			return bravo_data or result
 		else
-			return thereplacedunit
+			return self._akiko_thereplacedunit
 		end
 	end
 	return result
