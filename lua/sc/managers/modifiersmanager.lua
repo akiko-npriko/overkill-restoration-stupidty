@@ -342,24 +342,27 @@ function ModifiersManager:modify_value(id, value, ...)
 	if id == "GroupAIStateBesiege:SpawningUnit" then
 		local amiabravo = ((managers.groupai:state()._ponr_is_on and Global.game_settings.one_down and not table.contains(restoration.alternate_ponr_behavior, job)) or (restoration and restoration.always_bravos)) and true or false
 		local majarngsupport = true
-		if amiabravo then
-			local typ = type(value)
-			value = typ == "string" and Idstring(value) or typ == "userdata" and value or "motherfucker"
-			local bravo_data = self._unit_table[value:key()]
-			if type(bravo_data) == "table" then
-				return bravo_data[tweak_data.levels:get_ai_group_type()] or bravo_data.default or result
-			end
-			return bravo_data or result
-		end
+		local thereplacedunit = result
 		if majarngsupport then
 			local typ = type(value)
 			value = typ == "string" and Idstring(value) or typ == "userdata" and value or "motherfucker"
 			local akiko_data_uwu = self._akiko_unit_table[value:key()]
 			if type(akiko_data_uwu) == "table" then
 				local blahmreowp = akiko_data_uwu[tweak_data.levels:get_ai_group_type()] or akiko_data_uwu.default or result
-				return type(blahmreowp) == "table" and table.random(blahmreowp) or blahmreowp
+				thereplacedunit = type(blahmreowp) == "table" and table.random(blahmreowp) or blahmreowp
 			end
-			return akiko_data_uwu or result
+			thereplacedunit = akiko_data_uwu or result
+		end
+		if amiabravo then
+			local typ = type(value)
+			value = thereplacedunit ~= result and thereplacedunit or typ == "string" and Idstring(value) or typ == "userdata" and value or "motherfucker"
+			local bravo_data = self._unit_table[value:key()]
+			if type(bravo_data) == "table" then
+				return bravo_data[tweak_data.levels:get_ai_group_type()] or bravo_data.default or result
+			end
+			return bravo_data or result
+		else
+			return thereplacedunit
 		end
 	end
 	return result
