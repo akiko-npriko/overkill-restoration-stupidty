@@ -360,8 +360,10 @@ function ModifiersManager:modify_value(id, value, ...)
 			if type(akiko_data_uwu) == "table" then
 				local blahmreowp = akiko_data_uwu[tweak_data.levels:get_ai_group_type()] or akiko_data_uwu.default or result
 				thereplacedunit = type(blahmreowp) == "table" and table.random(blahmreowp) or blahmreowp
+			else
+				thereplacedunit = akiko_data_uwu or result
 			end
-			thereplacedunit = akiko_data_uwu or result
+			log("ModifiersManagers: PLZ TELL ME WHAT WRONG!!! Replacing spawn" ==> " .. tostring(thereplacedunit))
 		end
 		if amiabravo then
 			local typ = type(value)
