@@ -31,7 +31,7 @@ function DOTTweakData:_init_dot_entries_poison(entries)
 	}
 	poison_entries.weapon_tranq_light = {
 		dot_damage = 1.5,
-		dot_length = 1.1,
+		dot_length = 2.1,
 		dot_tick_period = 0.5,
 		use_weapon_damage_falloff = true,
 		duration_falloff_end_mult = 0.5
