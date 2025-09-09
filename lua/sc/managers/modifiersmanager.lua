@@ -341,6 +341,7 @@ function ModifiersManager:modify_value(id, value, ...)
 	local result = modify_value_original(self, id, value, ...)
 	if id == "GroupAIStateBesiege:SpawningUnit" then
 		local amiabravo = ((managers.groupai:state()._ponr_is_on and Global.game_settings.one_down and not table.contains(restoration.alternate_ponr_behavior, job)) or (restoration and restoration.always_bravos)) and true or false
+		local nationalguardsupport = true
 		if amiabravo then
 			local typ = type(value)
 			value = typ == "string" and Idstring(value) or typ == "userdata" and value or "motherfucker"
@@ -350,7 +351,7 @@ function ModifiersManager:modify_value(id, value, ...)
 			end
 			return bravo_data or result
 		end
-		--if STUPID_SHIT_HERE then
+		if nationalguardsupport then
 			local typ = type(value)
 			value = typ == "string" and Idstring(value) or typ == "userdata" and value or "motherfucker"
 			local akiko_data_uwu = self._akiko_unit_table[value:key()]
@@ -359,7 +360,7 @@ function ModifiersManager:modify_value(id, value, ...)
 				return type(blahmreowp) == "table" and table.random(blahmreowp) or blahmreowp
 			end
 			return akiko_data_uwu or result
-		--end
+		end
 	end
 	return result
 end
