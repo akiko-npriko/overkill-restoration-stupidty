@@ -284,12 +284,22 @@ local replacement_table = {
 	["units/pd2_mod_sharks/characters/ene_murky_medic_m4/ene_murky_medic_m4"] = "units/pd2_mod_omnia/characters/ene_omnia_medic/ene_omnia_medic",
 	--Akiko Bravo Stuff :3
 	["units/pd2_mod_akiko/characters/ene_xof_heavy/ene_xof_heavy"] = "units/pd2_mod_akiko/characters/ene_xof_piglet/ene_xof_piglet",
+	["units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_2_sc/ene_zeal_bulldozer_2_sc"] = "units/pd2_mod_bravo/characters/ene_bravo_bulldozer/ene_bravo_bulldozer",
 }
 
 local akiko_replacement_table = {
 	--National Guard :3
 	["units/pd2_dlc_gitgud/characters/ene_zeal_medic/ene_zeal_medic"] = {
 		default = {"units/pd2_mod_akiko/characters/ene_ng_medic_1/ene_ng_medic_1", "units/pd2_mod_akiko/characters/ene_ng_medic_2/ene_ng_medic_2"},
+	},
+	["units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_sc/ene_zeal_bulldozer_sc"] = {
+		default = "units/pd2_mod_akiko/characters/ene_ng_bulldozer/ene_ng_bulldozer",
+	},
+	["units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_2_sc/ene_zeal_bulldozer_2_sc"] = {
+		default = "units/pd2_mod_akiko/characters/ene_ng_bulldozer_2/ene_ng_bulldozer_2",
+	},
+	["units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3_sc/ene_zeal_bulldozer_3_sc"] = {
+		default = "units/pd2_mod_akiko/characters/ene_ng_bulldozer_3/ene_ng_bulldozer_3",
 	},
 }
 
