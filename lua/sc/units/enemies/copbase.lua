@@ -1105,14 +1105,14 @@ local national_guard = {
 		"saiga",
 		"spas12",
 		"ksg"
-	}
+	},
 	cloaker = {
 		--"r870",
 		--"benelli",
 		--"saiga",
 		"spas12",
 		"ksg"
-	}
+	},
 }
 
 local weapon_mapping = {
@@ -1207,7 +1207,7 @@ local weapon_mapping = {
 -- US National Guards
 	[("units/pd2_mod_akiko/characters/ene_ng_medic_1/ene_ng_medic_1"):key{}] = national_guard.medic_rifle,
 	[("units/pd2_mod_akiko/characters/ene_ng_medic_2/ene_ng_medic_2"):key{}] = national_guard.medic_shotgun,
-	[("units/pd2_mod_akiko/characters/ene_ng_cloaker/ene_ng_cloaker"):key{}] = national_guard.cloaker
+	[("units/pd2_mod_akiko/characters/ene_ng_cloaker/ene_ng_cloaker"):key{}] = national_guard.cloaker,
 }
 
 Hooks:PreHook(CopBase, "post_init", "MIX_post_init", function(self)
