@@ -18905,7 +18905,15 @@ Hooks:PostHook(CharacterTweakData, "_create_table_structure", "remod_create_tabl
 	--Ground Sniper M14
 	table.insert(self.weap_ids, "groundsniper_m14")
 	table.insert(self.weap_unit_names, Idstring("units/pd2_mod_akiko/weapons/wpn_npc_sniper_sc/wpn_npc_sniper_sc"))
+	
+	--SPAS 12
+	table.insert(self.weap_ids, "spas12")
+	table.insert(self.weap_unit_names, Idstring("units/pd2_mod_akiko/weapons/wpn_npc_spas12/wpn_npc_spas12"))
 
+	--KelTec KSG
+	table.insert(self.weap_ids, "ksg")
+	table.insert(self.weap_unit_names, Idstring("units/pd2_mod_akiko/weapons/wpn_npc_ksg/wpn_npc_ksg"))
+	
 end)
 
 function CharacterTweakData:_set_easy()

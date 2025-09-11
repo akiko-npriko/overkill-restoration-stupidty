@@ -1320,6 +1320,11 @@ local crew_wep_preset = {
 		self.r870_taser_npc.sounds.prefix = "keltec_npc"
 		self.r870_taser_npc.DAMAGE = 5
 		self.r870_taser_npc.CLIP_AMMO_MAX = 8
+		
+		self.ksg_npc = deep_clone(self.r870_npc)
+		self.ksg_npc.sounds.prefix = "keltec_npc"
+		self.ksg_npc.DAMAGE = 5
+		self.ksg_npc.CLIP_AMMO_MAX = 14
 
 		self.m500_npc = deep_clone(self.r870_npc)
 		self.m500_npc.sounds.prefix = "m590_npc"
@@ -1551,6 +1556,16 @@ local crew_wep_preset = {
 		self.benelli_npc.FIRE_MODE = "single"
 		self.benelli_npc.usage = "is_shotgun_semi"
 		self.benelli_npc.anim_usage = "is_shotgun_pump"
+		
+		self.spas12_npc = deep_clone(self.saiga_npc)
+		self.spas12_npc.sounds.prefix = "spas_npc"
+		self.spas12_npc.auto.fire_rate = 0.064
+		self.spas12_npc.DAMAGE = 4
+		self.spas12_npc.CLIP_AMMO_MAX = 8
+		self.spas12_npc.suppression = 2
+		self.spas12_npc.FIRE_MODE = "single"
+		self.spas12_npc.usage = "is_shotgun_semi"
+		self.spas12_npc.anim_usage = "is_shotgun_pump"
 
 		self.bayou_npc = deep_clone(self.benelli_npc)
 		self.bayou_npc.sounds.prefix = "spas_npc"
