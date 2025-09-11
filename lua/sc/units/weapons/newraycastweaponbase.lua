@@ -887,6 +887,10 @@ function NewRaycastWeaponBase:old_update_stats_values(disallow_replenish, ammo_d
 		if self._ammo_data.can_shoot_through_wall_unlim ~= nil then
 			self._can_shoot_through_wall_unlim = self._ammo_data.can_shoot_through_wall_unlim
 		end
+		
+		if self._ammo_data.alt_shield_range_pen ~= nil then
+			self._alt_shield_range_pen = self._ammo_data.alt_shield_range_pen
+		end
 
 		if self._ammo_data.bullet_class ~= nil then
 			self._bullet_class = CoreSerialize.string_to_classtable(self._ammo_data.bullet_class)
@@ -1053,6 +1057,7 @@ function NewRaycastWeaponBase:_update_stats_values(disallow_replenish, ammo_data
 		
 	self._can_shoot_through_enemy_unlim = self._can_shoot_through_enemy_unlim or self:weapon_tweak_data().can_shoot_through_enemy_unlim or false --No limit enemy piercing
 	self._can_shoot_through_wall_unlim = self._can_shoot_through_wall_unlim or self:weapon_tweak_data().can_shoot_through_wall_unlim or false --No limit wall piercing
+	self._alt_shield_range_pen = self._alt_shield_range_pen or self:weapon_tweak_data().alt_shield_range_pen or false --Alt Shield Pen Based off if there is No Falloff
 	self._can_shoot_through_titan_shield = self._can_shoot_through_titan_shield or self:weapon_tweak_data().can_shoot_through_titan_shield or false --implementing Heavy AP
 	self._shield_pierce_damage_mult = self:weapon_tweak_data().shield_pierce_damage_mult or 0.5
 	self._ammo_ratio = self:weapon_tweak_data().ammo_ratio or 1
@@ -1509,6 +1514,9 @@ function NewRaycastWeaponBase:_update_stats_values(disallow_replenish, ammo_data
 		end
 		if stats.can_shoot_through_wall_unlim ~= nil then
 			self._can_shoot_through_wall_unlim = stats.can_shoot_through_wall_unlim
+		end
+		if stats.alt_shield_range_pen ~= nil then
+			self._alt_shield_range_pen = stats.alt_shield_range_pen
 		end
 		if stats.armor_piercing_override then
 			self._armor_piercing_chance = stats.armor_piercing_override

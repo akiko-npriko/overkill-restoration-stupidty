@@ -99,12 +99,16 @@ end
 function RaycastWeaponBase:can_shoot_through_wall_unlim()
 	return self._can_shoot_through_wall_unlim
 end
+function RaycastWeaponBase:alt_shield_range_pen()
+	return self._alt_shield_range_pen
+end
 
 function RaycastWeaponBase:_collect_hits(from, to)
 	local setup_data = {
 		stop_on_impact = self:bullet_class().stop_on_impact,
 		can_shoot_through_wall = self:can_shoot_through_wall(),
 		can_shoot_through_wall_unlim = self:can_shoot_through_wall_unlim(),
+		alt_shield_range_pen = self:alt_shield_range_pen(),
 		can_shoot_through_shield = self:can_shoot_through_shield(),
 		can_shoot_through_titan_shield = self:can_shoot_through_titan_shield(),
 		can_shoot_through_enemy = self:can_shoot_through_enemy(),
@@ -167,6 +171,7 @@ function RaycastWeaponBase.collect_hits(from, to, setup_data, weapon_unit)
 	local can_shoot_through_wall_unlim = setup_data.can_shoot_through_wall_unlim
 	local can_shoot_through_shield = setup_data.can_shoot_through_shield
 	local can_shoot_through_titan_shield = setup_data.can_shoot_through_titan_shield
+	local alt_shield_range_pen = setup_data.alt_shield_range_pen
 	local can_shoot_through_enemy = setup_data.can_shoot_through_enemy
 	local can_shoot_through_enemy_unlim = setup_data.can_shoot_through_enemy_unlim
 	local armor_piercing_chance = setup_data.armor_piercing_chance or 0
@@ -175,7 +180,7 @@ function RaycastWeaponBase.collect_hits(from, to, setup_data, weapon_unit)
 	local ai_vision_ids = Idstring("ai_vision")
 	local bulletproof_ids = Idstring("bulletproof")
 	local weap_base = weapon_unit and weapon_unit.base and weapon_unit:base()
-	local is_semi_snp = can_shoot_through_shield and weap_base and weap_base.categories and not weap_base:is_category("amr") and weap_base:is_category("semi_snp", "dmr_l", "dmr_h", "shotgun_auto", "shotgun_light") 
+	local is_semi_snp = can_shoot_through_shield and weap_base and weap_base.categories and not weap_base:is_category("amr") and (weap_base:is_category("semi_snp", "dmr_l", "dmr_h") or alt_shield_range_pen)
 
 	--Just set this immediately.
 	local ray_hits = can_shoot_through_wall and not can_shoot_through_wall_unlim and World:raycast_wall("ray", from, to, "slot_mask", bullet_slotmask, "ignore_unit", ignore_unit, "thickness", 40, "thickness_mask", wall_mask)
