@@ -1102,7 +1102,9 @@ local national_guard = {
 	medic_shotgun = {
 		"r870",
 		"benelli",
-		"saiga"
+		"saiga",
+		"spas12",
+		"ksg"
 	}
 }
 
