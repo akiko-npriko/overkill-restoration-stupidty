@@ -509,6 +509,8 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/23969
  - IRS GenSec
 	- https://modworkshop.net/mod/28423
+ - Streamlined Heisting
+	- https://modworkshop.net/mod/29713
 	 
 # Gunsss
  - Do later there are too many i hate myself...
