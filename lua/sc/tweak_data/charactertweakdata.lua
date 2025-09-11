@@ -20317,6 +20317,7 @@ function CharacterTweakData:character_map()
 				"ene_ng_minigunner",
 				"ene_ng_medic_1",
 				"ene_ng_medic_2",
+				"ene_ng_cloaker",
 				"ene_ng_heavy_sniper",
 				"ene_ng_bulldozer_medic",
 				"ene_ng_bulldozer_minigun",
