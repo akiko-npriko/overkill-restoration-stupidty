@@ -301,6 +301,9 @@ local akiko_replacement_table = {
 	["units/pd2_dlc_gitgud/characters/ene_zeal_bulldozer_3_sc/ene_zeal_bulldozer_3_sc"] = {
 		default = "units/pd2_mod_akiko/characters/ene_ng_bulldozer_3/ene_ng_bulldozer_3",
 	},
+	["units/pd2_dlc_gitgud/characters/ene_zeal_cloaker_sc/ene_zeal_cloaker_sc"] = {
+		default = "units/pd2_mod_akiko/characters/ene_ng_cloaker/ene_ng_cloaker",
+	},
 }
 
 -- This table is for robots, don't edit this one
