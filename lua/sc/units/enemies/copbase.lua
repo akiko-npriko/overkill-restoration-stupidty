@@ -1097,7 +1097,8 @@ local dave = {
 local national_guard = {
 	medic_rifle = {
 		"m4",
-		"mp5"
+		"mp5",
+		"m416_npc"
 	},
 	medic_shotgun = {
 		"r870",
