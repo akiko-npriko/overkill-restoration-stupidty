@@ -75,6 +75,7 @@ function CharacterTweakData:init(tweak_data, presets)
 	self:_init_tank_taser(presets)
 	self:_init_shield_dozers(presets)
 	self:_init_zombie_test(presets)
+	self:_init_ng_medic(presets)
 	
 	--Rest of Res Stuff
 	self:_process_weapon_usage_table()
@@ -4561,6 +4562,17 @@ function CharacterTweakData:_init_zombie_test(presets)
 	self.zombie_test.can_shoot_while_dodging = true
 	self.zombie_test.move_speed = presets.move_speed.very_fast_plus
 	table.insert(self._enemy_list, "zombie_test")
+end
+
+function CharacterTweakData:_init_ng_medic(presets)
+	self.ng_medic = deep_clone(self.medic)
+	self.ng_medic.special_deaths = nil
+	self.ng_medic.speech_prefix_p1 = "define me pure hate"
+	self.ng_medic.speech_prefix_p2 = nil
+	self.ng_medic.speech_prefix_count = nil
+	self.ng_medic.custom_voicework = "zula"
+	self.ng_medic.yellow_blood = false
+	table.insert(self._enemy_list, "ng_medic")
 end
 
 function CharacterTweakData:_presets(tweak_data)
