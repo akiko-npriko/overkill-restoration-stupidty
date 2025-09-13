@@ -2063,6 +2063,61 @@ function SkillTreeTweakData:init(tweak_data)
 		desc_id = "menu_deckall_8_desc_sc"
 	}
 	
+	--Multichoice Basic Card Varient Modular Aegis
+	local deck2_ma = {
+		upgrades = {
+			"weapon_passive_headshot_damage_multiplier",
+			"weapon_passive_damage_multiplier_1",
+			"player_non_special_melee_multiplier_1", --This bonus doesn't actually do anything, but it is what's displayed in menus.
+			"player_melee_damage_multiplier_1"
+		},
+		cost = 300,
+		icon_xy = {1, 0},
+		name_id = "menu_deckall_2",
+		desc_id = "menu_deckall_2_desc_sc"
+	}
+	local deck4_ma = {
+		upgrades = {
+			"passive_player_xp_multiplier_1",
+			"player_passive_suspicion_bonus",
+			"player_passive_armor_movement_penalty_multiplier",
+			"weapon_passive_reload_speed_multiplier",
+			"weapon_passive_damage_multiplier_2",
+			"player_non_special_melee_multiplier_2",
+			"player_melee_damage_multiplier_2"			
+		},
+		cost = 600,
+		icon_xy = {3, 0},
+		name_id = "menu_deckall_4",
+		desc_id = "menu_deckall_4_desc_sc"
+	}
+	local deck6_ma = {
+		upgrades = {
+			"armor_kit",
+			"weapon_passive_pick_up_multiplier",
+			"weapon_passive_damage_multiplier_3",
+			"player_non_special_melee_multiplier_3",
+			"player_melee_damage_multiplier_3"			
+		},
+		cost = 1600,
+		icon_xy = {5, 0},
+		name_id = "menu_deckall_6",
+		desc_id = "menu_deckall_6_desc_sc"
+	}
+	local deck8_ma = {
+		upgrades = {
+			"weapon_passive_damage_multiplier_4",
+			"passive_doctor_bag_interaction_speed_multiplier",
+			"player_non_special_melee_multiplier_4",
+			"player_melee_damage_multiplier_4"
+		},
+		cost = 3200,
+		icon_xy = {7, 0},
+		name_id = "menu_deckall_8",
+		desc_id = "menu_deckall_8_desc_sc"
+	}
+	
+	
 	--Crew Chief--
 	local sc_crew_chief = {
 			name_id = "menu_st_spec_1",
@@ -4457,7 +4512,7 @@ function SkillTreeTweakData:init(tweak_data)
 				0
 			}
 		},
-		deck2,
+		deck2_ma,
 		{
 			cost = 400,
 			desc_id = "menu_deck_adaptive_3_desc",
@@ -4473,7 +4528,7 @@ function SkillTreeTweakData:init(tweak_data)
 				1
 			}
 		},
-		deck4,
+		deck4_ma,
 		{
 			cost = 1000,
 			desc_id = "menu_deck_adaptive_5_desc",
@@ -4491,7 +4546,7 @@ function SkillTreeTweakData:init(tweak_data)
 				1
 			}
 		},
-		deck6,
+		deck6_ma,
 		{
 			cost = 2400,
 			desc_id = "menu_deck_adaptive_7_desc",
@@ -4507,7 +4562,7 @@ function SkillTreeTweakData:init(tweak_data)
 				1
 			}
 		},
-		deck8,
+		deck8_ma,
 		{
 			cost = 4000,
 			desc_id = "menu_deck_adaptive_9_desc",
