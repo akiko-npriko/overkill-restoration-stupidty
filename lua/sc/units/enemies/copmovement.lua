@@ -78,40 +78,35 @@ action_variants.taser_titan = clone(security_variant)
 action_variants.taser_titan_reaper = clone(security_variant)
 action_variants.boom_titan = clone(security_variant)
 action_variants.city_swat_rpg = clone(security_variant)
+
+--Akiko Charactertweak Stuff
 action_variants.xof_pigglet = clone(security_variant)
 action_variants.us_warthog = clone(security_variant)
 action_variants.us_warthog.walk = TankCopActionWalk
-
 action_variants.norm_warthog = clone(security_variant)
 action_variants.norm_warthog.walk = TankCopActionWalk
-
 action_variants.tank_shield_titan = clone(security_variant)
 action_variants.tank_shield_titan.walk = TankCopActionWalk
-
 action_variants.tank_shield_titan_shielded = clone(security_variant)
 action_variants.tank_shield_titan_shielded.hurt = ShieldActionHurt
 action_variants.tank_shield_titan_shielded.turn = ShieldActionTurn
 action_variants.tank_shield_titan_shielded.walk = ShieldCopActionWalk
-
 action_variants.xof_shield = clone(security_variant)
 action_variants.xof_shield.hurt = ShieldActionHurt
 action_variants.xof_shield.turn = ShieldActionTurn
 action_variants.xof_shield.walk = ShieldCopActionWalk
-
 action_variants.xof_markman = clone(security_variant)
-
 action_variants.xof_heavy_swat = clone(security_variant)
 action_variants.xof_swat = clone(security_variant)
 action_variants.xof_volunteer = clone(security_variant)
-
 action_variants.gign_doc = security_variant
 action_variants.tank_taser = clone(security_variant)
 action_variants.tank_taser.walk = TankCopActionWalk
 action_variants.irs_mpu = security_variant
 action_variants.xof_spooc = security_variant
-
 action_variants.zombie_test = clone(security_variant)
 action_variants.zombie_test.shoot = ZombieActionShoot
+action_variants.ng_medic = security_variant
 
 function CopMovement:post_init()
 	local unit = self._unit

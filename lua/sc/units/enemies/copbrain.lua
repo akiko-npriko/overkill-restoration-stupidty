@@ -277,34 +277,28 @@ logic_variants.weekend_lmg.attack = MarshalLogicAttack
 logic_variants.taser_titan_reaper = clone(security_variant)
 logic_variants.taser_titan_reaper.attack = MarshalLogicAttack			
 
+--Akiko Charactertweak Stuff
 logic_variants.xof_pigglet = clone(security_variant)
 logic_variants.us_warthog = clone(security_variant)
 logic_variants.us_warthog.attack = TankCopLogicAttack
-
 logic_variants.norm_warthog = clone(security_variant)
 logic_variants.norm_warthog.attack = TankCopLogicAttack
-
 logic_variants.tank_shield_titan = clone(security_variant)
 logic_variants.tank_shield_titan.attack = TankCopLogicAttack
-
 logic_variants.tank_shield_titan_shielded = clone(security_variant)
 logic_variants.tank_shield_titan_shielded.attack = ShieldLogicAttack
 logic_variants.tank_shield_titan_shielded.intimidated = nil
 logic_variants.tank_shield_titan_shielded.flee = nil
-
 logic_variants.xof_shield = clone(security_variant)
 logic_variants.xof_shield.attack = ShieldLogicAttack
 logic_variants.xof_shield.intimidated = nil
 logic_variants.xof_shield.flee = nil
-
 logic_variants.xof_markman = clone(security_variant)
 logic_variants.xof_markman.attack = MarshalLogicAttack
-
 logic_variants.xof_heavy_swat = clone(security_variant)
 logic_variants.xof_swat = clone(security_variant)
 logic_variants.xof_volunteer = clone(security_variant)
 logic_variants.xof_volunteer.attack = TaserLogicAttack
-
 logic_variants.gign_doc = security_variant
 logic_variants.tank_taser = clone(security_variant)
 logic_variants.tank_taser.attack = TaserLogicAttack
@@ -313,9 +307,9 @@ logic_variants.irs_mpu.attack = TaserLogicAttack
 logic_variants.xof_spooc = clone(security_variant)
 logic_variants.xof_spooc.idle = SpoocLogicIdle
 logic_variants.xof_spooc.attack = SpoocLogicAttack
-
 logic_variants.zombie_test = clone(security_variant)
 logic_variants.zombie_test.attack = ZombieLogicAttack
+logic_variants.ng_medic = security_variant
 
 --Set up boss logics
 logic_variants.mobster_boss = logic_variants.triad_boss
