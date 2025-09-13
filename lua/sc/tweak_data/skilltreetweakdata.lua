@@ -4435,103 +4435,103 @@ function SkillTreeTweakData:init(tweak_data)
 	
 	local sc_armor_plate_deck = {
 		{
-				cost = 200,
-				desc_id = "menu_deck_adaptive_1_desc",
-				short_id = "menu_deck_adaptive_1_short",
-				name_id = "menu_deck_adaptive_1",
-				upgrades = {
-					--BLAH BLAH
-					"player_armor_plate_bag_amount_1",
-					"player_armor_plate_bag_amount_2",
-					"player_armor_plate_bag_amount_3",
-					"player_armor_plate_bag_amount_4",
-					"player_armor_plate_bag_amount_5",
-					"player_armor_plate_bag_amount_6",
-					--TEST REPLACE LATER
-					"adaptive_plate",
-					"adaptive_plate_base",
-					"temporary_adaptive_plate_stage_0"
-				},
-				icon_xy = {
-					6,
-					0
-				}
+			cost = 200,
+			desc_id = "menu_deck_adaptive_1_desc",
+			short_id = "menu_deck_adaptive_1_short",
+			name_id = "menu_deck_adaptive_1",
+			upgrades = {
+				--BLAH BLAH
+				"player_armor_plate_bag_amount_1",
+				"player_armor_plate_bag_amount_2",
+				"player_armor_plate_bag_amount_3",
+				"player_armor_plate_bag_amount_4",
+				"player_armor_plate_bag_amount_5",
+				"player_armor_plate_bag_amount_6",
+				--TEST REPLACE LATER
+				"adaptive_plate",
+				"adaptive_plate_base",
+				"temporary_adaptive_plate_stage_0"
 			},
-			deck2,
-			{
-				cost = 400,
-				desc_id = "menu_deck_adaptive_3_desc",
-				short_id = "menu_deck_adaptive_3_short",
-				name_id = "menu_deck_adaptive_3",
-				upgrades = {
-					--Change This
-					"player_tier_armor_multiplier_1",
-					"player_tier_armor_multiplier_2"
-				},
-				icon_xy = {
-					5,
-					1
-				}
-			},
-			deck4,
-			{
-				cost = 1000,
-				desc_id = "menu_deck_adaptive_5_desc",
-				short_id = "menu_deck_adaptive_5_short",
-				name_id = "menu_deck_adaptive_5",
-				upgrades = {
-					"player_adaptive_plate_multiplier_1",
-					"temporary_adaptive_plate_stage_1",
-					"temporary_adaptive_plate_stage_2",
-					"temporary_adaptive_plate_stage_3",
-					"temporary_adaptive_plate_stage_4"
-				},
-				icon_xy = {
-					7,
-					1
-				}
-			},
-			deck6,
-			{
-				cost = 2400,
-				desc_id = "menu_deck_adaptive_7_desc",
-				short_id = "menu_deck_adaptive_7_short",
-				name_id = "menu_deck_adaptive_7",
-				upgrades = {
-					--Change This tooo
-					"player_tier_armor_multiplier_3",
-					"player_tier_armor_multiplier_4"
-				},
-				icon_xy = {
-					6,
-					1
-				}
-			},
-			deck8,
-			{
-				cost = 4000,
-				desc_id = "menu_deck_adaptive_9_desc",
-				short_id = "menu_deck_adaptive_9_short",
-				name_id = "menu_deck_adaptive_9",
-				upgrades = {
-					"player_perk_armor_regen_timer_multiplier_1",
-					"player_perk_armor_regen_timer_multiplier_2",
-					"player_perk_armor_regen_timer_multiplier_3",
-					"player_perk_armor_regen_timer_multiplier_4",
-					"player_passive_loot_drop_multiplier_1"
-				},
-				icon_xy = {
-					0,
-					2
-				},
-				multi_choice = armor_plate_material_multi_choice
-			},
-			name_id = "menu_st_spec_adaptive",
-			desc_id = "menu_st_spec_adaptive_desc",
-			category = {
-				"defensive",
-				"activated"
+			icon_xy = {
+				6,
+				0
 			}
+		},
+		deck2,
+		{
+			cost = 400,
+			desc_id = "menu_deck_adaptive_3_desc",
+			short_id = "menu_deck_adaptive_3_short",
+			name_id = "menu_deck_adaptive_3",
+			upgrades = {
+				--Change This
+				"player_tier_armor_multiplier_1",
+				"player_tier_armor_multiplier_2"
+			},
+			icon_xy = {
+				5,
+				1
+			}
+		},
+		deck4,
+		{
+			cost = 1000,
+			desc_id = "menu_deck_adaptive_5_desc",
+			short_id = "menu_deck_adaptive_5_short",
+			name_id = "menu_deck_adaptive_5",
+			upgrades = {
+				"player_adaptive_plate_multiplier_1",
+				"temporary_adaptive_plate_stage_1",
+				"temporary_adaptive_plate_stage_2",
+				"temporary_adaptive_plate_stage_3",
+				"temporary_adaptive_plate_stage_4"
+			},
+			icon_xy = {
+				7,
+				1
+			}
+		},
+		deck6,
+		{
+			cost = 2400,
+			desc_id = "menu_deck_adaptive_7_desc",
+			short_id = "menu_deck_adaptive_7_short",
+			name_id = "menu_deck_adaptive_7",
+			upgrades = {
+				--Change This tooo
+				"player_tier_armor_multiplier_3",
+				"player_tier_armor_multiplier_4"
+			},
+			icon_xy = {
+				6,
+				1
+			}
+		},
+		deck8,
+		{
+			cost = 4000,
+			desc_id = "menu_deck_adaptive_9_desc",
+			short_id = "menu_deck_adaptive_9_short",
+			name_id = "menu_deck_adaptive_9",
+			upgrades = {
+				"player_perk_armor_regen_timer_multiplier_1",
+				"player_perk_armor_regen_timer_multiplier_2",
+				"player_perk_armor_regen_timer_multiplier_3",
+				"player_perk_armor_regen_timer_multiplier_4",
+				"player_passive_loot_drop_multiplier_1"
+			},
+			icon_xy = {
+				0,
+				2
+			},
+			multi_choice = armor_plate_material_multi_choice
+		},
+		name_id = "menu_st_spec_adaptive",
+		desc_id = "menu_st_spec_adaptive_desc",
+		category = {
+			"defensive",
+			"activated"
+		}
 	}
 	
 	--Offyerrocker Liberator Perk Deck (+ SpireWitch) -- Stats 2 Change :3
