@@ -1831,7 +1831,7 @@ function PlayerManager:_attempt_adaptive_plate()
 		end
 		
 		self.adaptive_plate_stage = math.clamp(self.adaptive_plate_stage - 1, 0, stages)
-		if self.adaptive_plate_stage == stages then
+		if self.adaptive_plate_stage == 0 then
 			damage_ext:set_armor(max_armor)
 		else
 			damage_ext:set_armor(math.clamp(cur_armor + armor_step, 0, max_armor))
