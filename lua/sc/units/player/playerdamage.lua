@@ -338,6 +338,7 @@ function PlayerDamage:_apply_damage(attack_data, damage_info, variant, t)
 	end
 	
 	--Akiko Armor Plate Perk Deck (og. Hacker_lyx) - Modifies Grace Periods and Damage Interval
+	local pm = managers.player -- moved up here to prevent crash
 	if pm:has_category_upgrade("player", "adaptive_plate_multiplier") and self:get_real_armor() > 0 then
 		--placeholder
 		self._last_received_dmg = math.huge
@@ -349,7 +350,6 @@ function PlayerDamage:_apply_damage(attack_data, damage_info, variant, t)
 
 	--Perform overall damage reduction calcs.
 	--NOTE: Stoic damage delay and Deflection are handled in _calc_health_damage()
-	local pm = managers.player
 	attack_data.damage = attack_data.damage * pm:damage_reduction_skill_multiplier(variant)
 	local damage_absorption = pm:damage_absorption()
 	if damage_absorption > 0 then
