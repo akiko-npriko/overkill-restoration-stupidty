@@ -339,7 +339,9 @@ function PlayerDamage:_apply_damage(attack_data, damage_info, variant, t)
 	
 	--Akiko Armor Plate Perk Deck (og. Hacker_lyx) - Modifies Grace Periods and Damage Interval
 	if pm:has_category_upgrade("player", "adaptive_plate_multiplier") and self:get_real_armor() > 0 then
-	
+		--placeholder
+		self._last_received_dmg = math.huge
+		self._next_allowed_dmg_t = Application:digest_value(t + self._dmg_interval, true)
 	else
 		self._last_received_dmg = math.huge --As opposed to raw damage (attack_data.damage), just an idea to see if the game feels better without grace piercing
 		self._next_allowed_dmg_t = Application:digest_value(t + self._dmg_interval, true)
@@ -1873,9 +1875,11 @@ function PlayerDamage:_calc_armor_damage(attack_data)
 			if s > 0 and c then
 				self:set_armor(stage[s])
 				
-				--Trama Damage Test Stuff
-				pm.akiko_tramadamage_ap[s] = pm.akiko_tramadamage_ap[s] + (attack_data.damage * (1/10))
-				
+				--Trama Damage Test Stuff (Rn it techinally every 10 damage 1% trama applies to armor plate.. it not actually that but it close enough)
+				pm.akiko_tramadamage_ap[s] = math.floor(pm.akiko_tramadamage_ap[s] + (attack_data.damage * (1/10)))
+				if managers.chat then
+					managers.chat:send_message(ChatManager.GAME, "Stupid Crap", "Trama Damage% " .. pm.akiko_tramadamage_ap[s])
+				end
 				attack_data.damage = 0
 				
 				--Deal with timers later ig idfk
