@@ -4459,6 +4459,7 @@ function SkillTreeTweakData:init(tweak_data)
 		},
 		cost = 300,
 		icon_xy = {1, 0},
+		multi_choice = akikofunperkdecktablecrap["armor_plate_1"],
 		name_id = "menu_deckall_2",
 		desc_id = "menu_deckall_2_desc_ma"
 	}
@@ -4474,6 +4475,7 @@ function SkillTreeTweakData:init(tweak_data)
 		},
 		cost = 600,
 		icon_xy = {3, 0},
+		multi_choice = akikofunperkdecktablecrap["armor_plate_2"],
 		name_id = "menu_deckall_4",
 		desc_id = "menu_deckall_4_desc_ma"
 	}
@@ -4487,6 +4489,7 @@ function SkillTreeTweakData:init(tweak_data)
 		},
 		cost = 1600,
 		icon_xy = {5, 0},
+		multi_choice = akikofunperkdecktablecrap["armor_plate_3"],
 		name_id = "menu_deckall_6",
 		desc_id = "menu_deckall_6_desc_ma"
 	}
@@ -4499,6 +4502,7 @@ function SkillTreeTweakData:init(tweak_data)
 		},
 		cost = 3200,
 		icon_xy = {7, 0},
+		multi_choice = akikofunperkdecktablecrap["armor_plate_4"],
 		name_id = "menu_deckall_8",
 		desc_id = "menu_deckall_8_desc_ma"
 	}
@@ -4594,7 +4598,7 @@ function SkillTreeTweakData:init(tweak_data)
 				0,
 				2
 			},
-			multi_choice = armor_plate_material_multi_choice
+			--multi_choice = armor_plate_material_multi_choice
 		},
 		name_id = "menu_st_spec_adaptive",
 		desc_id = "menu_st_spec_adaptive_desc",
