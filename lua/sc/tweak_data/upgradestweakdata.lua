@@ -5954,6 +5954,23 @@ function UpgradesTweakData:_player_definitions()
 			6
 		}
 	}
+	--Custom Armor Plate Types--
+	--GenSec's Ceramic Impact Plate
+	for i=1,4,1 do
+		self.values.player["akiko_ceramic_imp_plate_" .. i] = {
+			true
+		}
+		self.definitions["akiko_ceramic_imp_plate_" .. i] = {
+			name_id = "akiko_ceramic_imp_plate_" .. i, --name_id field doesn't matter
+			category = "feature",
+			upgrade = {
+				value = 1,
+				upgrade = "akiko_ceramic_imp_plate_" .. i,
+				category = "player"
+			}
+		}
+	end
+	
 	self.definitions.player_armor_plate_bag_amount_1 = {
 		name_id = "menu_armor_plate_bag_amount",
 		category = "feature",

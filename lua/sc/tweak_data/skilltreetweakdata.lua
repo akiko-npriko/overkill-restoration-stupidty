@@ -4437,14 +4437,12 @@ function SkillTreeTweakData:init(tweak_data)
 	for i=1,4,1 do
 		akikofunperkdecktablecrap["armor_plate_" .. i] = {
 			{
-				name_id = "menu_deck_apc_type_1",
-				desc_id = "menu_deck_apc_type_1_desc",
-				short_id = "menu_deck_apc_type_1_desc",
+				name_id = "menu_akiko_ceramic_imp_plate",
+				desc_id = "menu_akiko_ceramic_imp_plate_desc",
+				short_id = "menu_akiko_ceramic_imp_plate_desc",
 				icon_atlas = "icons_atlas",
 				upgrades = {
-					"player_invul_adaptive_plate_varient_1",
-					"invul_adaptive_plate_timer_1",
-					"player_perk_armor_regen_timer_multiplier_5"
+					"akiko_ceramic_imp_plate_" .. i,
 				},
 				texture_bundle_folder = "sc",
 				icon_xy = {0, 0}

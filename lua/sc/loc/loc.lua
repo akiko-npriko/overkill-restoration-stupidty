@@ -6391,7 +6391,8 @@ Hooks:Add("LocalizationManagerPostInit", "SC_Localization_Perk_Decks_Eng", funct
 				
 				["menu_deck_adaptive_alt4_9"] = "GenSec's Titan Resistant Plate",
 				
-				["menu_deck_apc_type_1"] = "Ceramic Plate",
+				["menu_akiko_ceramic_imp_plate"] = "GenSec's Ceramic Impact Plate",
+				["menu_akiko_ceramic_imp_plate_desc"] = "GenSec's Ceramic Impact Plate",
 	
 			--OFFYERROCKER'S MERCENARY PERK DECK
 				["menu_deck_kmerc_title"] = "Mercenary",
