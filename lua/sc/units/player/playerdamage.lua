@@ -1875,8 +1875,8 @@ function PlayerDamage:_calc_armor_damage(attack_data)
 			--Trama Damage Test Stuff (Rn it techinally every 10 damage 1% trama applies to armor plate.. it not actually that but it close enough)
 			local tramaapstat = s+1
 			if tramaapstat > 0 then
-				local debugshit = pm.akiko_tramadamage_ap[tramaapstat] + (attack_data.damage * (1/10))
-				pm.akiko_tramadamage_ap[tramaapstat] = math.floor(pm.akiko_tramadamage_ap[tramaapstat] + (attack_data.damage * (1/10)))
+				local debugshit = pm.akiko_tramadamage_ap[tramaapstat] + (apc_damage * (1/10))
+				pm.akiko_tramadamage_ap[tramaapstat] = math.floor(pm.akiko_tramadamage_ap[tramaapstat] + (apc_damage * (1/10)))
 				if managers.chat then
 					managers.chat:send_message(ChatManager.GAME, "Stupid Crap", "Actual Trama Damage% " .. debugshit)
 					managers.chat:send_message(ChatManager.GAME, "Stupid Crap", "Trama Damage% " .. pm.akiko_tramadamage_ap[tramaapstat])
