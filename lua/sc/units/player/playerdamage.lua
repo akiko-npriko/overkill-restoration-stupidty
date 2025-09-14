@@ -1873,9 +1873,12 @@ function PlayerDamage:_calc_armor_damage(attack_data)
 			local apc_damage = attack_data.damage
 			local stage, s, c = self:calc_adaptive_plate_stage(apc_damage)
 			--Trama Damage Test Stuff (Rn it techinally every 10 damage 1% trama applies to armor plate.. it not actually that but it close enough)
-			pm.akiko_tramadamage_ap[s+1] = math.floor(pm.akiko_tramadamage_ap[s+1] + (attack_data.damage * (1/10)))
-			if managers.chat then
-				managers.chat:send_message(ChatManager.GAME, "Stupid Crap", "Trama Damage% " .. pm.akiko_tramadamage_ap[s])
+			if s > 0 then
+				pm.akiko_tramadamage_ap[s] = math.floor(pm.akiko_tramadamage_ap[s] + (attack_data.damage * (1/10)))
+				if managers.chat then
+					managers.chat:send_message(ChatManager.GAME, "Stupid Crap", "Trama Damage% " .. pm.akiko_tramadamage_ap[s])
+					managers.chat:send_message(ChatManager.GAME, "Stupid Crap", "STAGEE " .. s)
+				end
 			end
 			if s > 0 and c then
 				self:set_armor(stage[s])
