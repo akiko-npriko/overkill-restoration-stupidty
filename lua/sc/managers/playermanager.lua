@@ -1,4 +1,5 @@
 PlayerManager.adaptive_plate_stage = PlayerManager.adaptive_plate_stage or 0
+PlayerManager.akiko_tramadamage_ap = PlayerManager.akiko_tramadamage_ap or {0,0,0,0}
 --Local functions requested elsewhere. These are vanilla code.
 local function make_double_hud_string(a, b)
 	return string.format("%01d|%01d", a, b)

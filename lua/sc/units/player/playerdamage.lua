@@ -337,8 +337,13 @@ function PlayerDamage:_apply_damage(attack_data, damage_info, variant, t)
 		self:_hit_direction(attack_data.attacker_unit:position(), attack_data.col_ray and attack_data.col_ray.ray or damage_info.attack_dir)
 	end
 	
-	self._last_received_dmg = math.huge --As opposed to raw damage (attack_data.damage), just an idea to see if the game feels better without grace piercing
-	self._next_allowed_dmg_t = Application:digest_value(t + self._dmg_interval, true)
+	--Akiko Armor Plate Perk Deck (og. Hacker_lyx) - Modifies Grace Periods and Damage Interval
+	if pm:has_category_upgrade("player", "adaptive_plate_multiplier") and self:get_real_armor() > 0 then
+	
+	else
+		self._last_received_dmg = math.huge --As opposed to raw damage (attack_data.damage), just an idea to see if the game feels better without grace piercing
+		self._next_allowed_dmg_t = Application:digest_value(t + self._dmg_interval, true)
+	end
 
 	--Perform overall damage reduction calcs.
 	--NOTE: Stoic damage delay and Deflection are handled in _calc_health_damage()
@@ -1867,6 +1872,10 @@ function PlayerDamage:_calc_armor_damage(attack_data)
 			local stage, s, c = self:calc_adaptive_plate_stage(apc_damage)
 			if s > 0 and c then
 				self:set_armor(stage[s])
+				
+				--Trama Damage Test Stuff
+				pm.akiko_tramadamage_ap[s] = pm.akiko_tramadamage_ap[s] + (attack_data.damage * (1/10))
+				
 				attack_data.damage = 0
 				
 				--Deal with timers later ig idfk
@@ -2354,9 +2363,11 @@ function PlayerDamage:calc_adaptive_plate_stage(damage)
 	local count = #stage
 	local change = false
 	local s = pm.adaptive_plate_stage
+	local aptrama = pm.akiko_tramadamage_ap
 	
 	if s < count then
 		if cur_armor-damage <= stage[s+1] then
+		--if cur_armor-damage <= stage[s+1] and (aptrama >= 100) then (This 100% doesnt work)
 			pm.adaptive_plate_stage = s+1
 			change = true
 		end
