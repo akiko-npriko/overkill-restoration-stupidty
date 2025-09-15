@@ -5953,7 +5953,7 @@ function UpgradesTweakData:_player_definitions()
 		6
 	}
 	--Double Click Mechanic
-	self.values.temporary.akiko_apbag_doubleclick = {2}
+	self.values.temporary.akiko_apbag_doubleclick = {{0, 1}} -- first value does nothing
 	self.definitions.temporary_akiko_apbag_doubleclick = {
 		name_id = "menu_akiko_apbag_doubleclick",
 		category = "temporary",
