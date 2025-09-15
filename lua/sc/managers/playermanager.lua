@@ -1905,9 +1905,10 @@ function PlayerManager:attempt_ability(ability, ...)
 			return false
 		elseif has_no_grenades then
 			self:akiko_tellmetramadamage()
+			return false
 		end
 
-		local attempt_func = self:_attempt_adaptive_plate()
+		local attempt_func = self["_attempt_" .. ability]
 
 		if attempt_func and not attempt_func(self) then
 			return false
