@@ -1802,6 +1802,9 @@ end
 
 --Akiko Armor Plate Perk Deck (og. Hacker_lyx) 
 --Functions:
+function akiko_tellmetramadamage()
+	managers.hud:show_hint( { text = "Trama Damage of Armor Plates is.. 1st:" .. self.akiko_tramadamage_ap[1] .. "% 2nd:" .. self.akiko_tramadamage_ap[2] .. "% 3rd:" .. self.akiko_tramadamage_ap[3] .. "% 4th:" .. self.akiko_tramadamage_ap[4] .. "%" } )
+end
 function PlayerManager:_attempt_adaptive_plate()
 	local managers = _G.managers
 	local player = self:local_player()
@@ -1812,6 +1815,7 @@ function PlayerManager:_attempt_adaptive_plate()
 		
 		if self:has_inactivate_temporary_upgrade("temporary", "akiko_apbag_doubleclick") then
 			self:activate_temporary_upgrade("temporary", "akiko_apbag_doubleclick")
+			--[[
 			if managers.chat then
 				--figure out different method maybe
 				managers.chat:send_message(ChatManager.GAME, "Trama Damage List", "Trama Damage of 1st Armor Plate is " .. self.akiko_tramadamage_ap[1] .. "%")
@@ -1819,6 +1823,8 @@ function PlayerManager:_attempt_adaptive_plate()
 				managers.chat:send_message(ChatManager.GAME, "Trama Damage List", "Trama Damage of 3rd Armor Plate is " .. self.akiko_tramadamage_ap[3] .. "%")
 				managers.chat:send_message(ChatManager.GAME, "Trama Damage List", "Trama Damage of 4th Armor Plate is " .. self.akiko_tramadamage_ap[4] .. "%")
 			end
+			]]
+			akiko_tellmetramadamage()
 			return false
 		else
 			self:deactivate_temporary_upgrade("temporary", "akiko_apbag_doubleclick")
@@ -1880,6 +1886,46 @@ function PlayerManager:_attempt_adaptive_plate()
 	end
 	
 	return false
+end
+
+local og_attempt_ability = PlayerManager.attempt_ability
+function PlayerManager:attempt_ability(ability, ...)
+	if ability == "adaptive_plate" then
+		if not self:player_unit() then
+			return false
+		end
+
+		local local_peer_id = managers.network:session():local_peer():id()
+		local has_no_grenades = self:get_grenade_amount(local_peer_id) == 0
+		local is_downed = game_state_machine:verify_game_state(GameStateFilters.downed)
+		local swan_song_active = managers.player:has_activate_temporary_upgrade("temporary", "berserker_damage_multiplier")
+		is_downed = is_downed and not self:has_category_upgrade("player", "activate_ability_downed")
+
+		if is_downed or swan_song_active then
+			return false
+		elseif has_no_grenades then
+			akiko_tellmetramadamage()
+		end
+
+		local attempt_func = self:_attempt_adaptive_plate()
+
+		if attempt_func and not attempt_func(self) then
+			return false
+		end
+
+		local tweak = tweak_data.blackmarket.projectiles[ability]
+
+		if tweak and tweak.sounds and tweak.sounds.activate then
+			self:player_unit():sound():play(tweak.sounds.activate)
+		end
+
+		self:add_grenade_amount(-1)
+		self._message_system:notify("ability_activated", nil, ability)
+
+		return true
+	else
+		og_attempt_ability(self, ability, ...)
+	end
 end
 
 --Offyerrocker Functions:
