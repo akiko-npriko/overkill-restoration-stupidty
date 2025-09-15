@@ -1808,9 +1808,27 @@ function PlayerManager:_attempt_adaptive_plate()
 	local damage_ext = player:character_damage()
 	
 	if self:has_category_upgrade("player","adaptive_plate_multiplier") then
+		--Requires Double Click to begin (Single Click tells Trama Damage)
+		
+		if self:has_inactivate_temporary_upgrade("temporary", "akiko_apbag_doubleclick") then
+			self:activate_temporary_upgrade("temporary", "akiko_apbag_doubleclick")
+			if managers.chat then
+				--figure out different method maybe
+				managers.chat:send_message(ChatManager.GAME, "Trama Damage List", "Trama Damage of 1st Armor Plate is " .. self.akiko_tramadamage_ap[1] .. "%")
+				managers.chat:send_message(ChatManager.GAME, "Trama Damage List", "Trama Damage of 2nd Armor Plate is " .. self.akiko_tramadamage_ap[2] .. "%")
+				managers.chat:send_message(ChatManager.GAME, "Trama Damage List", "Trama Damage of 3rd Armor Plate is " .. self.akiko_tramadamage_ap[3] .. "%")
+				managers.chat:send_message(ChatManager.GAME, "Trama Damage List", "Trama Damage of 4th Armor Plate is " .. self.akiko_tramadamage_ap[4] .. "%")
+			end
+			return false
+		else
+			self:deactivate_temporary_upgrade("temporary", "akiko_apbag_doubleclick")
+		end
+		
+		--[[
 		if self:has_activate_temporary_upgrade("temporary", "adaptive_plate_base") then
 			return false
 		end
+		]]
 		
 		--Replace a Broken Armor Plate with New One
 		local stages = damage_ext:get_adaptive_plate_stage_count()
