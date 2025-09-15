@@ -5945,21 +5945,29 @@ function UpgradesTweakData:_player_definitions()
 		}
 	}
 	self.values.player.armor_plate_bag_amount = {
-		{
-			1,
-			2,
-			3,
-			4,
-			5,
-			6
+		1,
+		2,
+		3,
+		4,
+		5,
+		6
+	}
+	--Double Click Mechanic
+	self.values.temporary.akiko_apbag_doubleclick = {2}
+	self.definitions.temporary_akiko_apbag_doubleclick = {
+		name_id = "menu_akiko_apbag_doubleclick",
+		category = "temporary",
+		upgrade = {
+			value = 1,
+			upgrade = "akiko_apbag_doubleclick",
+			category = "temporary"
 		}
 	}
+	
 	--Custom Armor Plate Types--
 	--GenSec's Ceramic Impact Plate
 	for i=1,4,1 do
-		self.values.player["akiko_ceramic_imp_plate_" .. i] = {
-			true
-		}
+		self.values.player["akiko_ceramic_imp_plate_" .. i] = {true}
 		self.definitions["akiko_ceramic_imp_plate_" .. i] = {
 			name_id = "akiko_ceramic_imp_plate_" .. i, --name_id field doesn't matter
 			category = "feature",

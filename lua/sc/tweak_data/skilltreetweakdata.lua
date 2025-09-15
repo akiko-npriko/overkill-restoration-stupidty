@@ -4524,7 +4524,8 @@ function SkillTreeTweakData:init(tweak_data)
 				--TEST REPLACE LATER
 				"adaptive_plate",
 				"adaptive_plate_base",
-				"temporary_adaptive_plate_stage_0"
+				"temporary_adaptive_plate_stage_0",
+				"temporary_akiko_apbag_doubleclick"
 			},
 			icon_xy = {
 				6,
