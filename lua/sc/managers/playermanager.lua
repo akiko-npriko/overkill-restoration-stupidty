@@ -1802,7 +1802,7 @@ end
 
 --Akiko Armor Plate Perk Deck (og. Hacker_lyx) 
 --Functions:
-function akiko_tellmetramadamage()
+function PlayerManager:akiko_tellmetramadamage()
 	managers.hud:show_hint( { text = "Trama Damage of Armor Plates is.. 1st:" .. self.akiko_tramadamage_ap[1] .. "% 2nd:" .. self.akiko_tramadamage_ap[2] .. "% 3rd:" .. self.akiko_tramadamage_ap[3] .. "% 4th:" .. self.akiko_tramadamage_ap[4] .. "%" } )
 end
 function PlayerManager:_attempt_adaptive_plate()
@@ -1824,7 +1824,7 @@ function PlayerManager:_attempt_adaptive_plate()
 				managers.chat:send_message(ChatManager.GAME, "Trama Damage List", "Trama Damage of 4th Armor Plate is " .. self.akiko_tramadamage_ap[4] .. "%")
 			end
 			]]
-			akiko_tellmetramadamage()
+			self:akiko_tellmetramadamage()
 			return false
 		else
 			self:deactivate_temporary_upgrade("temporary", "akiko_apbag_doubleclick")
@@ -1904,7 +1904,7 @@ function PlayerManager:attempt_ability(ability, ...)
 		if is_downed or swan_song_active then
 			return false
 		elseif has_no_grenades then
-			akiko_tellmetramadamage()
+			self:akiko_tellmetramadamage()
 		end
 
 		local attempt_func = self:_attempt_adaptive_plate()
