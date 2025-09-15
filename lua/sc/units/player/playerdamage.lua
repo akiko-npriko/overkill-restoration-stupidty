@@ -4,8 +4,8 @@ PlayerDamage._UPPERS_COOLDOWN = tweak_data.upgrades.values.first_aid_kit.uppers_
 
 --Akiko Armor Plate Values
 PlayerDamage.pre_regen_armor = PlayerDamage.pre_regen_armor or 0
-PlayerDamage.akiko_apmaxtramadamage = PlayerDamage.akiko_apmaxtramadamage or 100
-PlayerDamage.akiko_aptramadamagedenumerator = PlayerDamage.akiko_aptramadamagedenumerator or 1
+PlayerDamage.akiko_apmaxtramadamage = PlayerDamage.akiko_apmaxtramadamage or 100 -- at 100 or above plates fail to regen (below 100 prevents failure)
+PlayerDamage.akiko_aptramadamagedenumerator = PlayerDamage.akiko_aptramadamagedenumerator or 1 -- this is the base and it is 1% trama damager per 10 damage (10*1)
 
 function PlayerDamage:init(unit)
 	self._lives_init = tweak_data.player.damage.LIVES_INIT
