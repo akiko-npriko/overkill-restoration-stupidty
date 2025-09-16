@@ -4404,8 +4404,11 @@ function CharacterTweakData:_init_shield_dozers(presets)
 	self.tank_shield_titan_shielded.wall_fwd_offset = 100
 	self.tank_shield_titan_shielded.calls_in = nil
 	self.tank_shield_titan_shielded.ignore_medic_revive_animation = true
-	self.tank_shield_titan_shielded.damage.hurt_severity = presets.hurt_severities.only_explosion_hurts
+	self.tank_shield_titan_shielded.shooting_death = false
+	self.tank_shield_titan_shielded.damage.hurt_severity = presets.hurt_severities.no_hurts
 	self.tank_shield_titan_shielded.damage.shield_knocked = false
+	self.tank_shield_titan_shielded.damage.immune_to_knockback = true
+	self.tank_shield_titan_shielded.immune_to_knock_down = true
 	self.tank_shield_titan_shielded.HEALTH_INIT = 600
 	self.tank_shield_titan_shielded.headshot_dmg_mul = 1.0
 	
