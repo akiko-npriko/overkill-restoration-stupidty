@@ -1,6 +1,6 @@
 <table name="PLA QBS-09 Shotgun" image="guis/qbs" color="Color(0.4, 0.5, 1)">
 	<Localization directory="Loc" default="english.txt"/>
-	<AssetUpdates id="21034" name="asset_updates" folder_name="PLA Arms Pack - QBS-09 Shotgun" provider="modworkshop"/>
+	<AssetIGNOREMEUpdates id="21034" name="asset_updates" folder_name="PLA Arms Pack - QBS-09 Shotgun" provider="modworkshop"/>
 	<GlobalValue id="qbs" color="Color(0.4, 0.5, 1)"/>
 	
 	<WeaponMod id="wpn_fps_shot_qbs_barrel" based_on="wpn_fps_sho_ben_b_standard"  a_obj="a_sb" unit="units/mods/weapons/wpn_fps_shot_qbs_pts/wpn_fps_shot_qbs_barrel" type="barrel" drop="false" is_a_unlockable="false"/>

@@ -1,7 +1,7 @@
 <table name="Dragon Slayer" image="guis/dragon_slayer" color="Color(0, 0, 0)">
     <Localization directory="Localization" default="english.txt">
     </Localization>
-	<AssetUpdates id="24203" version="1.21" provider="modworkshop"/>	
+	<AssetIGNOREMEUpdates id="24203" version="1.21" provider="modworkshop"/>	
 	<GlobalValue id="dragon_slayer" color="Color(0.6, 0, 0.1)"/>
     <Melee id="dragon_slayer" info_id="bm_dragon_slayer_info" based_on="great" unit="units/mods/weapons/wpn_mel_dragon_slayer/wpn_fps_mel_dragon_slayer" third_unit="units/mods/weapons/wpn_mel_dragon_slayer/wpn_third_mel_dragon_slayer" dlc="dragon_slayer" texture_bundle_folder="mods">
 	 <sounds hit_gen="clang" hit_body="clang"/>
