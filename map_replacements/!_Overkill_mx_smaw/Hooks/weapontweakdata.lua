@@ -1,5 +1,0 @@
--- Hooks:PostHook( WeaponTweakData, "init", "predator_bowModInit", function(self)
- 	-- self.smaw.AMMO_PICKUP = self:_pickup_chance(0 , s1)
-    -- mx_print_table(self.smaw)
-    -- Using the log to ensure use_data contains the goldeneye_reload
--- end )
