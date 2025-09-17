@@ -1888,6 +1888,7 @@ function PlayerManager:_attempt_adaptive_plate()
 	return false
 end
 
+--[[
 local og_attempt_ability = PlayerManager.attempt_ability
 function PlayerManager:attempt_ability(ability, ...)
 	if ability == "adaptive_plate" then
@@ -1928,6 +1929,7 @@ function PlayerManager:attempt_ability(ability, ...)
 		og_attempt_ability(self, ability, ...)
 	end
 end
+]]
 
 --Offyerrocker Functions:
 
