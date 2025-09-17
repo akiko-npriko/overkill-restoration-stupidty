@@ -4406,7 +4406,10 @@ Hooks:PostHook(PlayerStandard, "_start_action_reload_enter", "ResStopFireAnimRel
 	if weap_base and weap_base:can_reload() then
 		weap_base:tweak_data_anim_stop("fire")
 		weap_base:tweak_data_anim_stop("fire_steelsight")
-		weap_base:tweak_data_anim_stop("magazine_empty")
+		local weapon_tweak = weap_base:weapon_tweak_data()
+		if not weapon_tweak.lock_slide_allow_mag_empty then
+			weap_base:tweak_data_anim_stop("magazine_empty")
+		end
 		if weap_base.AKIMBO then
 			weap_base._second_gun:base():tweak_data_anim_stop("magazine_empty")
 			weap_base._second_gun:base():tweak_data_anim_stop("reload")
@@ -4425,13 +4428,13 @@ function PlayerStandard:_start_action_reload(t)
 		local ignore_nonemptyreload = anims_tweak.ignore_nonemptyreload
 		local clip_empty = weapon:clip_empty()
 		if weapon.no_reload_anims then
-			self._ext_camera:play_redirect(self:get_animation("idle"))	
+			self._ext_camera:play_redirect(self:get_animation("idle"))
 		end
 		if ((ignore_fullreload and clip_empty) or (ignore_nonemptyreload and not clip_empty)) then
 			weapon:tweak_data_anim_stop("fire")
 			weapon:tweak_data_anim_stop("fire_steelsight")
 			weapon:tweak_data_anim_stop("magazine_empty")
-	
+
 			local speed_multiplier = weapon:reload_speed_multiplier()
 			local anim_multiplier = weapon._reload_anim_multiplier or 1
 			if anim_multiplier then
@@ -4440,29 +4443,31 @@ function PlayerStandard:_start_action_reload(t)
 			end
 			local reload_prefix = weapon:reload_prefix() or ""
 			local reload_name_id = anims_tweak.reload_name_id or weapon.name_id
-	
+
 			local expire_t = weapon_tweak.timers.reload_not_empty or weapon:reload_expire_t() or (ignore_fullreload and 2.2 or 2.8)
 			local reload_anim = ignore_fullreload and "reload_not_empty" or "reload"
-	
+
 			weapon:start_reload()
 
 			self._ext_camera:play_redirect(Idstring(reload_prefix .. reload_anim .. "_" .. reload_name_id), speed_multiplier * anim_multiplier)
 			self._state_data.reload_expire_t = t + expire_t / speed_multiplier
-	
+
 			if not weapon:tweak_data_anim_play(reload_anim, speed_multiplier * anim_multiplier) then
 				weapon:tweak_data_anim_play("reload", speed_multiplier * anim_multiplier)
 			end
-	
+
 			self._ext_network:send("reload_weapon", ignore_fullreload and 0 or 1, speed_multiplier)
-	
+
 			return
 		else
 			local is_reload_not_empty = weapon:clip_not_empty()
-		
+
 			weapon:tweak_data_anim_stop("fire")
 			weapon:tweak_data_anim_stop("fire_steelsight")
-			weapon:tweak_data_anim_stop("magazine_empty")
-	
+			if not weapon_tweak.lock_slide_allow_mag_empty then
+				weapon:tweak_data_anim_stop("magazine_empty")
+			end
+
 			local speed_multiplier = weapon:reload_speed_multiplier()
 			local anim_multiplier = weapon._reload_anim_multiplier or 1
 			if anim_multiplier then
@@ -4470,39 +4475,39 @@ function PlayerStandard:_start_action_reload(t)
 				anim_multiplier = anim_multiplier * ((not weapon:clip_empty() and weapon._reload_non_empty_anim_multiplier) or 1)
 			end
 			local empty_reload = weapon:clip_empty() and 1 or 0
-	
+
 			if weapon:use_shotgun_reload() then
 				empty_reload = weapon:get_ammo_max_per_clip() - weapon:get_ammo_remaining_in_clip()
 			end
-	
+
 			local weapon_tweak = weapon:weapon_tweak_data()
 			local wep_tweak = weapon and weapon.name_id and tweak_data.weapon[weapon.name_id]
 			local reload_anim = "reload"
 			local reload_prefix = weapon:reload_prefix() or ""
 			local reload_name_id = weapon_tweak.animations.reload_name_id or wep_tweak.use_underbarrel_anim or weapon.name_id
 			local reload_default_expire_t = 2.6
-			local reload_tweak = weapon_tweak.timers.reload_empty		
-			
+			local reload_tweak = weapon_tweak.timers.reload_empty
+
 			weapon:start_reload() --Executed earlier to get accurate reload timers, otherwise may mess up normal and tactical for shotguns.
-	
+
 			if is_reload_not_empty then
 				reload_anim = "reload_not_empty"
 				reload_default_expire_t = 2.2
 				reload_tweak = weapon_tweak.timers.reload_not_empty
 			end
-	
+
 			local reload_ids = Idstring(string.format("%s%s_%s", reload_prefix, reload_anim, reload_name_id))
 			local result = self._ext_camera:play_redirect(reload_ids, speed_multiplier * anim_multiplier)
-	
+
 			Application:trace("PlayerStandard:_start_action_reload( t ): ", reload_ids)
-	
+
 			self._state_data.reload_expire_t = t + (reload_tweak or weapon:reload_expire_t(is_reload_not_empty) or reload_default_expire_t) / speed_multiplier
-	
+
 			if not weapon:tweak_data_anim_play(reload_anim, speed_multiplier * anim_multiplier) then
 				weapon:tweak_data_anim_play("reload", speed_multiplier * anim_multiplier)
 				Application:trace("PlayerStandard:_start_action_reload( t ): ", reload_anim)
 			end
-	
+
 			self._ext_network:send("reload_weapon", empty_reload, speed_multiplier)
 		end
 	end

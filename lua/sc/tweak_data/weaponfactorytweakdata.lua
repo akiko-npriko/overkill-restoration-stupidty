@@ -38765,6 +38765,7 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 				}
 				self.parts.wpn_fps_ass_contraband_body_sayhello.custom_stats = {
 					alt_desc = "bm_m203_vmp_sc_desc",
+					tweak_categories = {"assault_rifle"},
 					falloff_start_mult = 1.052631578947,
 					falloff_end_mult = 1.24,
 					damage_min_mult = 0.75,
@@ -39490,6 +39491,7 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 				}
 				self.parts.wpn_fps_ass_contraband_body_mpx.custom_stats = {
 					alt_desc = "bm_mesa_vmp_sc_desc",
+					tweak_categories = {"smg"},
 					falloff_start_mult = 0.6842105,
 					falloff_end_mult = 0.96,
 					damage_min_mult = 0.46875,
