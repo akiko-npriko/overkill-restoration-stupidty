@@ -1,0 +1,22 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_smg_c96carbine_pts/wpn_fps_smg_c96carbine_barrel_12inch" orientation_object="rp_barrel" />
+        <animations>		
+		<animation_group name="reload" enabled="false" >
+			<object name="anim_bolt_reload" />
+		</animation_group>
+		<animation_group name="reload_not_empty" enabled="false" >
+			<object name="a_reload_not_empty" />
+		</animation_group>
+		<animation_group name="recoil" enabled="false" >
+			<object name="anim_bolt_recoil" />
+		</animation_group>
+		<animation_group name="last_recoil" enabled="false" >
+			<object name="anim_bolt_recoil_last" />
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_barrel_12inch" enabled="true" />
+		<object name="g_bolt" enabled="true" />
+		<object name="g_hammer" enabled="true" />
+	</graphics>
+</dynamic_object>

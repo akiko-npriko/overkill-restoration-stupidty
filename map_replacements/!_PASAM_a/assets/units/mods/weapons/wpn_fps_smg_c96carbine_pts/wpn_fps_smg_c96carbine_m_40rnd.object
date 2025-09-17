@@ -1,0 +1,16 @@
+<dynamic_object>
+	<diesel materials="units/mods/weapons/wpn_fps_smg_c96carbine_pts/wpn_fps_smg_c96carbine_m_40rnd" orientation_object="rp_mag" />
+        <animations>		
+		<animation_group name="reload" enabled="false" >
+			<object name="anim_mag_reload" />
+		</animation_group>
+		<animation_group name="reload_not_empty" enabled="false" >
+			<object name="anim_mag_tact_reload" />
+		</animation_group>
+	</animations>
+	<graphics>
+		<object name="g_mag40" enabled="true" />
+		<object name="g_bullet_1" enabled="true" />
+		<object name="g_bullet_2" enabled="true" />
+	</graphics>
+</dynamic_object>

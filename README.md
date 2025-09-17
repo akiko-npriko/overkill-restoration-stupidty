@@ -542,6 +542,7 @@ Yanked coding from... (intergrated into mod)
  - Helldivers 2 - BR-14 Adjudicator (https://modworkshop.net/mod/51113)
  - Helldivers 2 x Killzone 2 - StA-11 Submachine Gun (https://modworkshop.net/mod/50684)
  - Crime Boss: Rockay City - Baker's Repeater (https://modworkshop.net/mod/48128)
+ - PASAM Submachine Gun (https://modworkshop.net/mod/53794)
 # Incompatible Shit
  - Spending Offshore Converter (https://modworkshop.net/mod/30447)
 	- Breaks Restore's Voiceline loading and causes voicelines to only load on paused menu
