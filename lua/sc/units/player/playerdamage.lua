@@ -1547,6 +1547,12 @@ Hooks:PostHook(PlayerDamage, "damage_tase" , "ResTaserTaunts" , function(self, a
 	end	
 end)
 
+function PlayerDamage:on_copr_killshot()
+	local copr_regen_grace = tweak_data.upgrades.copr_regen_grace or 1
+	self._next_allowed_dmg_t = Application:digest_value(managers.player:player_timer():time() + copr_regen_grace, true)
+	self._last_received_dmg = self:_max_health()
+end
+
 function PlayerDamage:_max_armor()
 	local max_armor = self:_raw_max_armor()
 

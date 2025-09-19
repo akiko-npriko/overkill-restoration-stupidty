@@ -1420,6 +1420,9 @@ function NewRaycastWeaponBase:_update_stats_values(disallow_replenish, ammo_data
 			if stats.muzzleflash then
 				self._muzzle_effect_pls = stats.muzzleflash
 			end
+			if stats.shell_ejection then
+				self._shell_ejection_pls = stats.shell_ejection
+			end
 			if stats.trail_effect then
 				self._trail_effect_pls = stats.trail_effect
 			end
@@ -1565,6 +1568,10 @@ function NewRaycastWeaponBase:_update_stats_values(disallow_replenish, ammo_data
 		if underbarrel_part.unit:base():is_on() then
 			--self._muzzle_effect_table.effect = Idstring("effects/payday2/particles/weapons/9mm_auto_silence_fps")
 		end
+	end
+
+	if self._shell_ejection_pls and self._shell_ejection_effect_table then
+		self._shell_ejection_effect_table.effect = Idstring(self._shell_ejection_pls)
 	end
 
 	local ignore_tracer = nil

@@ -9724,11 +9724,13 @@ end)
 
 				for i, part_id in pairs(self.wpn_fps_lmg_m60.uses_parts) do
 					if self.parts[part_id] and ((self.parts[part_id].type and self.parts[part_id].type == "sight") or 
-						(self.parts[part_id].sub_type and self.parts[part_id].sub_type == "second_sight")) then
+						(self.parts[part_id].sub_type and self.parts[part_id].sub_type == "second_sight") and 
+						not (self.parts[part_id].a_obj and self.parts[part_id].a_obj == "a_magnifier")) then
 						self.wpn_fps_lmg_m60.override[part_id] = {
 							parent = "upper_reciever",
-							forbids = { "wpn_fps_lmg_m60_sight_standard" }
+							forbids = self.parts[part_id].forbids or {}
 						}
+						table.insert(self.wpn_fps_lmg_m60.override[part_id].forbids ,"wpn_fps_lmg_m60_sight_standard")
 						self.wpn_fps_lmg_m60.adds[part_id] = {"wpn_fps_ass_groza_o_adapter"}
 					end
 				end
@@ -39552,6 +39554,7 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 				}
 				self.parts.wpn_fps_ass_contraband_body_mpx.custom_stats = {
 					alt_desc = "bm_mesa_vmp_sc_desc",
+					shell_ejection = "effects/payday2/particles/weapons/shells/shell_9mm",
 					tweak_categories = {"smg"},
 					falloff_start_mult = 0.6842105,
 					falloff_end_mult = 0.96,

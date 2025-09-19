@@ -2602,7 +2602,7 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 		0.3,
 		0.4,
 		0.5
-	}	
+	}
 	self.values.player.armor_max_health_store_multiplier = {
 		1.25
 	}
@@ -2612,19 +2612,19 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 		3.6,
 		3.2,
 		2.8,
-		2.0,
+		2.0, -- -0.8
 		1.6,
-		0.8
+		1.2
 	}
 	self.kill_change_regenerate_speed_percentage = true
 	self.values.player.body_armor.skill_kill_change_regenerate_speed = { --increments of 0.02
 		1.16,
 		1.14,
 		1.12,
-		1.1,
+		1.10,
+		1.08,
 		1.06,
-		1.04,
-		1.02
+		1.04
 	}
 
 	--I AM A BAD MOTHERFUCKA--
@@ -2831,11 +2831,15 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 	self.values.player.copr_static_damage_ratio = {
 		0.1,
 		0.05
-	}	
+	}
+	self.values.player.copr_static_damage_ratio_mult = {
+		1,
+		2
+	}
 	self.values.player.copr_activate_bonus_health_ratio = {
 		0.05,
 		0.025 --Copycat
-	}	
+	}
 	self.values.player.copr_teammate_heal = {
 		0.01,
 		0.02
@@ -2843,10 +2847,11 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 	self.values.player.copr_kill_life_leech = {
 		3,
 		3
-	}	
+	}
 	self.values.player.copr_speed_up_on_kill = {
 		1
-	}	
+	}
+	self.copr_regen_grace = 1
 	self.copr_ability_cooldown = 45
 	self.copr_risen_cooldown_add = 45
 
@@ -3545,7 +3550,7 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 		perk_value_2 = tostring(self.values.temporary.copr_ability[1][2]), -- Duration of effect
 		perk_value_3 = tostring(self.values.player.copr_static_damage_ratio[1] * 100).."%", -- HP for 1 segment
 		perk_value_4 = tostring(self.values.player.copr_kill_life_leech[1]), -- Required kills for 1 restoring segment
-		perk_value_5 = "1", -- Invulnerability period. Not defined here (?)
+		perk_value_5 = tostring(self.copr_regen_grace), -- Invulnerability period
 		perk_value_6 = tostring(self.copr_ability_cooldown) -- CD of ampule
 	}
 	self.specialization_descs[22][3] = {
@@ -3557,7 +3562,9 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ResSkillsInit", function(
 		perk_value_3 = tostring(self.values.player.corpse_dispose_speed_multiplier[1] * 100).."%" -- Faster interaction with civs + bagging corpses
 	}
 	self.specialization_descs[22][7] = {
-		perk_value_1 = tostring(self.values.player.copr_static_damage_ratio[2] * 100).."%" -- HP for 1 segment buff
+		perk_value_1 = tostring(self.values.player.copr_static_damage_ratio[2] * 100).."%", -- HP for 1 segment buff
+		perk_value_2 = tostring(self.values.player.copr_kill_life_leech[1]), -- Required kills for restoring segments
+		perk_value_3 = tostring(self.values.player.copr_static_damage_ratio_mult[2]) -- Number of segments restored
 	}
 	self.specialization_descs[22][9] = {
 		perk_value_1 = tostring(self.copr_risen_cooldown_add), -- Additional CD if player revive himself
@@ -5143,6 +5150,7 @@ function UpgradesTweakData:_player_definitions()
 			category = "player"
 		}
 	}
+	--Kingpin
 	self.definitions.temporary_chico_injector_1 = {
 		name_id = "menu_temporary_chico_injector_1",
 		category = "temporary",
@@ -5192,6 +5200,7 @@ function UpgradesTweakData:_player_definitions()
 			category = "player"
 		}
 	}
+	--Stoic
 	self.definitions.player_damage_control_passive_1 = {
 		category = "feature",
 		upgrade = {
@@ -5200,8 +5209,7 @@ function UpgradesTweakData:_player_definitions()
 			category = "player"
 		}
 	}
-
-	self.definitions.player_damage_control_passive_2 = { --Copycat
+	self.definitions.player_damage_control_passive_2 = {
 		category = "feature",
 		upgrade = {
 			value = 2,
@@ -5209,7 +5217,7 @@ function UpgradesTweakData:_player_definitions()
 			category = "player"
 		}
 	}
-	self.definitions.player_damage_grace_mult = { --Copycat
+	self.definitions.player_damage_grace_mult = {
 		category = "feature",
 		upgrade = {
 			value = 1,
@@ -5217,7 +5225,26 @@ function UpgradesTweakData:_player_definitions()
 			category = "player"
 		}
 	}
-	self.definitions.player_copr_activate_bonus_health_ratio_2 = { --Copycat Stoic
+	--Leech
+	self.definitions.player_copr_static_damage_ratio_mult_1 = {
+		name_id = "menu_player_copr_static_damage_ratio_mult_1",
+		category = "feature",
+		upgrade = {
+			value = 1,
+			upgrade = "copr_static_damage_ratio_mult",
+			category = "player"
+		}
+	}
+	self.definitions.player_copr_static_damage_ratio_mult_2 = {
+		name_id = "menu_player_copr_static_damage_ratio_mult_2",
+		category = "feature",
+		upgrade = {
+			value = 2,
+			upgrade = "copr_static_damage_ratio_mult",
+			category = "player"
+		}
+	}
+	self.definitions.player_copr_activate_bonus_health_ratio_2 = { --Copycat Leech
 		name_id = "menu_player_copr_activate_bonus_health_ratio_1",
 		category = "feature",
 		upgrade = {
