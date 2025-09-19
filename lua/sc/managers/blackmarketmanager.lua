@@ -1,9 +1,4 @@
 function BlackMarketManager:equipped_armor(chk_armor_kit, chk_player_state)
-	--TEST (mreow)
-	if managers.player:has_category_upgrade("player", "adaptive_plate_multiplier") then
-		return self._defaults.armor
-	end
-	
 	if chk_player_state and managers.player:current_state() == "civilian" then
 		return self._defaults.armor
 	end
