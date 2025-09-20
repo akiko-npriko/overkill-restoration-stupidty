@@ -1886,7 +1886,7 @@ function PlayerDamage:_calc_armor_damage(attack_data)
 			if tramaapstat < 5 then
 				self.akiko_apmaxtramadamage = 100
 				if managers.player:has_category_upgrade("player","akiko_ceramic_imp_plate_" .. tramaapstat) then
-					self.akiko_aptramadamagedenumerator = 2.5 -- 1% per 25 damage (10*2.5)
+					self.akiko_aptramadamagedenumerator = managers.player:upgrade_value("player","akiko_ceramic_imp_plate_" .. tramaapstat)[2]
 				else
 					self.akiko_aptramadamagedenumerator = 1  -- this is the base and it is 1% trama damager per 10 damage (10*1)
 				end
