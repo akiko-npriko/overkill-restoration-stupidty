@@ -506,7 +506,7 @@ function NewSkillTreeGui:_update_description(item)
 		basic = basic_cost,
 		pro = pro_cost,
 		deflection = max_deflection * 100 .. "%" .. (yakuza_deflection and " " .. managers.localization:text("menu_yakuza_deflection_add") or ""),
-		anarc_disable = (managers.player:has_category_upgrade("player", "armor_grinding") and managers.localization:text("menu_anarc_disable")) or ""
+		anarc_disable = (managers.player:has_category_upgrade("player", "armor_grinding") and managers.localization:text("menu_anarc_disable")) or "",
 		akiko_ma_disable = (managers.player:has_category_upgrade("player", "adaptive_plate_multiplier") and managers.localization:text("menu_akiko_ma_disable")) or ""
 	}
 
