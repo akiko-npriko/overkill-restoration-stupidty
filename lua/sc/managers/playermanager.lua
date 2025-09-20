@@ -1808,7 +1808,7 @@ end
 
 function PlayerManager:akiko_calc_armor_ma(laamount) -- multi by 10 to get actual armor
 	if managers.player:has_category_upgrade("player","akiko_ceramic_imp_plate_" .. laamount) then
-		self.akiko_ma_stat_modify = self.akiko_ma_stat_modify + 25
+		self.akiko_ma_stat_modify = self.akiko_ma_stat_modify + self:upgrade_value("player","akiko_ceramic_imp_plate_" .. laamount)[1]
 	end
 end
 

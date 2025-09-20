@@ -2437,7 +2437,7 @@ function PlayerDamage:get_adaptive_plate_stage_count()
 	end
 	
 	--Isnt working fix later ig
-	throwables = managers.player:upgrade_value("player", "armor_plate_bag_amount", 6)
+	throwables = managers.player:upgrade_value("player", "armor_plate_bag_amount", 1)
 	
 	if tweak_data.blackmarket.projectiles.adaptive_plate.max_amount ~= throwables then
 		tweak_data.blackmarket.projectiles.adaptive_plate.max_amount = throwables
