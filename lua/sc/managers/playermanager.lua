@@ -1,4 +1,5 @@
 PlayerManager.adaptive_plate_stage = PlayerManager.adaptive_plate_stage or 0
+PlayerManager.akiko_ma_stat_modify = PlayerManager.akiko_ma_stat_modify or 0
 PlayerManager.akiko_tramadamage_ap = PlayerManager.akiko_tramadamage_ap or {0,0,0,0,0} -- fifth value is for if all plates break? ig
 --Local functions requested elsewhere. These are vanilla code.
 local function make_double_hud_string(a, b)
@@ -1805,12 +1806,21 @@ end
 --Akiko Armor Plate Perk Deck (og. Hacker_lyx) 
 --Functions:
 
+function PlayerManager:akiko_calc_armor_ma(laamount) -- multi by 10 to get actual armor
+	if managers.player:has_category_upgrade("player","akiko_ceramic_imp_plate_" .. laamount) then
+		self.akiko_ma_stat_modify = self.akiko_ma_stat_modify + 25
+	end
+end
 
 function PlayerManager:body_armor_value(category, override_value, default)
 	if self:has_category_upgrade("player","adaptive_plate_multiplier") then
+		self.akiko_ma_stat_modify = 0
 		--Stupid Shit here :3
 		if category == "armor" then
-			--return 5000
+			for i=1,4,1 do
+				self:akiko_calc_armor_ma(i)
+			end
+			return self.akiko_ma_stat_modify - tweak_data.player.damage.ARMOR_INIT
 		end
 	end
 	
