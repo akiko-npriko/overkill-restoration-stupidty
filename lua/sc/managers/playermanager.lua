@@ -1804,6 +1804,22 @@ end
 
 --Akiko Armor Plate Perk Deck (og. Hacker_lyx) 
 --Functions:
+
+
+function PlayerManager:body_armor_value(category, override_value, default)
+	if self:has_category_upgrade("player","adaptive_plate_multiplier") then
+		--Stupid Shit here :3
+		if category == "armor" then
+			--return 5000
+		end
+	end
+	
+	--Vanilla Code Below
+	local armor_data = tweak_data.blackmarket.armors[managers.blackmarket:equipped_armor(true, true)]
+
+	return self:upgrade_value_by_level("player", "body_armor", category, {})[override_value or armor_data.upgrade_level] or default or 0
+end
+
 function PlayerManager:akiko_tellmetramadamage()
 	managers.hud:show_hint( { text = "Trama Damage of Armor Plates is.. 1st:" .. self.akiko_tramadamage_ap[1] .. "% 2nd:" .. self.akiko_tramadamage_ap[2] .. "% 3rd:" .. self.akiko_tramadamage_ap[3] .. "% 4th:" .. self.akiko_tramadamage_ap[4] .. "%" } )
 end
