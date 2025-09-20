@@ -5997,7 +5997,7 @@ function UpgradesTweakData:_player_definitions()
 		self.values.player["akiko_ceramic_imp_plate_" .. i] = {
 			{
 				4, -- armor per plate - [40 armor (10*4)]
-				2.5 -- trama damage - [1% per 25 damage (10*2.5)]
+				2.5, -- trama damage - [1% per 25 damage (10*2.5)]
 			}
 		}
 		self.definitions["akiko_ceramic_imp_plate_" .. i] = {
