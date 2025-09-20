@@ -5992,11 +5992,11 @@ function UpgradesTweakData:_player_definitions()
 	}
 	
 	--Custom Armor Plate Types--
-	--GenSec's Ceramic Impact Plate
 	for i=1,4,1 do
+		--GenSec's Ceramic Impact Plate--
 		self.values.player["akiko_ceramic_imp_plate_" .. i] = {
 			{
-				4, -- armor per plate - [40 armor (10*4)]
+				6, -- armor per plate - [40 armor (10*4)]
 				2.5, -- trama damage - [1% per 25 damage (10*2.5)]
 			}
 		}
