@@ -1822,6 +1822,22 @@ function PlayerManager:body_armor_value(category, override_value, default)
 				self:akiko_calc_armor_ma(i)
 			end
 			return self.akiko_ma_stat_modify - tweak_data.player.damage.ARMOR_INIT
+		elseif category == "concealment" then
+		
+		elseif category == "movement" then
+		
+		elseif category == "dodge" then
+		
+		elseif category == "deflection" then
+		
+		elseif category == "regen_delay" then
+		
+		elseif category == "damage_shake" then
+		
+		elseif category == "stamina" then
+		
+		elseif category == "skill_ammo_mul" then
+		
 		end
 	end
 	
