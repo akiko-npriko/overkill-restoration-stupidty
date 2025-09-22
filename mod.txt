@@ -76,6 +76,18 @@
 			"hook_id" : "lib/managers/menu/contractbrokergui",
 			"script_path" : "lua/sc/scrollablecontractbrokers.lua"
 		},
+		{
+			"hook_id" : "lib/units/player_team/teamaibase",
+			"script_path" : "lua/sc/hoppip_usefulbot/teamaibase.lua"
+		},
+		{
+			"hook_id" : "lib/units/player_team/teamaibrain",
+			"script_path" : "lua/sc/hoppip_usefulbot/teamaibrain.lua"
+		},
+		{
+			"hook_id" : "lib/units/player_team/logics/teamailogicbase",
+			"script_path" : "lua/sc/hoppip_usefulbot/teamailogicbase.lua"
+		},
 		{ 
 			"hook_id" : "lib/tweak_data/weaponfactorytweakdata", 
 			"script_path" : "pickup_sc1.lua" 
