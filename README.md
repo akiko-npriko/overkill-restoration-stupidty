@@ -511,6 +511,8 @@ Yanked coding from... (intergrated into mod)
 	- https://modworkshop.net/mod/28423
  - Streamlined Heisting
 	- https://modworkshop.net/mod/29713
+ - Useful Bots
+	- https://modworkshop.net/mod/31221
 	 
 # Gunsss
  - Do later there are too many i hate myself...

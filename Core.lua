@@ -1450,6 +1450,127 @@ function restoration:sound_create_point(sound_source_pos)
 	end
 end
 
+--Useful Bots by Hoppip
+	restoration.usefulbot_settings = {
+		no_crouch = false,
+		dominate_enemies = 1, -- 1 = yes, 2 = assist only, 3 = no
+		secure_loot = false,
+		mark_specials = true,
+		announce_low_hp = true,
+		hold_position = true,
+		battle_cries = true,
+		block_slow_vehicles = true,
+		ammo_drops = true,
+		save_inspire = true,
+		stop_at_player = false,
+		defend_reviving = true,
+		revive_distance = 25,
+		drop_bag_percentage = 0.25,
+		targeting_priority = {
+			base_priority = 1, -- 1 = by weapon stats, 2 = by distance, 3 = vanilla
+			player_aim = 1.5,
+			critical = 2,
+			marked = 1.5,
+			domination = 2,
+			enemies = { -- multipliers for specific enemy types
+				marshal_marksman = 1,
+				marshal_shield = 1,
+				medic = 2,
+				phalanx_minion = 1,
+				phalanx_vip = 1,
+				shield = 1,
+				sniper = 1.5,
+				spooc = 2,
+				tank = 1,
+				tank_hw = 1,
+				tank_medic = 2,
+				tank_mini = 1,
+				taser = 1.7,
+				turret = 0.5
+			}
+		}
+	}
+	restoration.usefulbot_default_settings = deep_clone(restoration.usefulbot_settings)
+	restoration.usefulbot_peer_settings = setmetatable({
+		[1] = restoration.usefulbot_settings
+	}, {
+		__index = function(t, k)
+			t[k] = deep_clone(restoration.usefulbot_default_settings)
+			return t[k]
+		end
+	})
+
+	function restoration.usefulbot_get_assist_SO(unit)
+		return {
+			chance_inc = 0,
+			base_chance = 1,
+			usage_amount = 1,
+			AI_group = "friendlies",
+			search_pos = unit:position(),
+			objective = self:get_assist_objective(unit)
+		}
+	end
+
+	function restoration.usefulbot_get_assist_objective(unit, receiver)
+		local nav_seg = unit:movement():nav_tracker():nav_segment()
+		return {
+			type = "defend_area",
+			scan = true,
+			assist_unit = unit,
+			haste = "run",
+			pose = "stand",
+			nav_seg = nav_seg,
+			in_place = receiver and receiver:movement():nav_tracker():nav_segment() == nav_seg
+		}
+	end
+
+	function restoration.usefulbot_stop_assist_objective(unit)
+		for _, c_data in pairs(managers.groupai:state():all_AI_criminals()) do
+			local brain = c_data.unit:brain()
+			local objective = brain:objective()
+			if objective and objective.assist_unit == unit then
+				brain:set_objective(managers.groupai:state():_determine_objective_for_criminal_AI(c_data.unit))
+			end
+		end
+	end
+
+	function restoration.usefulbot_get_reviving_unit(unit)
+		for _, c_data in pairs(managers.groupai:state():all_AI_criminals()) do
+			local brain = c_data.unit:brain()
+			local objective = brain:objective()
+			if objective and objective.type == "revive" and objective.follow_unit == unit then
+				return c_data.unit
+			end
+		end
+	end
+
+	function restoration.usefulbot_force_attention(attention_unit)
+		for _, c_data in pairs(managers.groupai:state():all_AI_criminals()) do
+			local logic_data = c_data.unit:brain()._logic_data
+			TeamAILogicBase.force_attention(logic_data, logic_data.internal_data, attention_unit)
+		end
+	end
+
+	function restoration.usefulbot_player_settings(player_unit)
+		local peer = alive(player_unit) and player_unit:network() and player_unit:network():peer()
+		return self.peer_settings[peer and peer:id() or 1]
+	end
+
+	if Network:is_client() then
+		Hooks:Add("BaseNetworkSessionOnLoadComplete", "BaseNetworkSessionOnLoadCompleteResUsefulBots", function(local_peer)
+			LuaNetworking:SendToPeer(1, "useful_bots", json.encode({
+				stop_at_player = restoration.usefulbot_settings.stop_at_player
+			}))
+		end)
+	else
+		Hooks:Add("NetworkReceivedData", "NetworkReceivedDataResUsefulBots", function(sender, id, data)
+			if id == "useful_bots" then
+				table.replace(restoration.usefulbot_peer_settings[sender], json.decode(data) or {}, true)
+			end
+		end)
+	end
+--Done
+
 --[[
 if not ThinkFaster then
     _G.ThinkFaster = {}

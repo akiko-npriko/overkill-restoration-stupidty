@@ -1,3 +1,6 @@
+--Hoppip Useful Bot Variable :3
+CarryData.ub_loot = {}
+
 -- Tweak bag stealing conditions
 function CarryData:clbk_pickup_SO_verification(unit)
 	if not self._steal_SO_data or not self._steal_SO_data.SO_id then
@@ -31,6 +34,12 @@ end
 Hooks:PostHook(CarryData, "_chk_register_steal_SO", "sh__chk_register_steal_SO", function (self)
 	if self._steal_SO_data and self._steal_SO_data.pickup_objective and self._steal_SO_data.pickup_objective.followup_objective then
 		self._steal_SO_data.pickup_objective.followup_objective.pose = "stand"
+	end
+	
+	-- Hoppip Thingy (Should not be possible, yet somehow it was for some people)
+	if self._steal_SO_data and not self._steal_SO_data.secure_pos then
+		log("[UsefulBots] Bag steal SO without a secure pos!")
+		self:_unregister_steal_SO()
 	end
 end)
 
@@ -112,6 +121,35 @@ function CarryData:update_textures(carry_id, unit, is_visual_unit)
 		end
 	end
 end
-
+--Unique Loot Bag?
 Hooks:PostHook(CarryData, "init", "UniqueLoot_CarryData_init", function(self, unit) self:update_textures(self._carry_id, unit, false) end)
-Hooks:PostHook(CarryData, "set_carry_id", "UniqueLoot_CarryData_set_carry_id", function(self, carry_id) self:update_textures(self._carry_id, self._unit, false) end)
+
+--Hoppip Useful Bot Function:
+
+--Unique Lootbag + Hoppip Usefulbot
+Hooks:PostHook(CarryData, "set_carry_id", "set_carry_id_ub", function (self, carry_id, is_init)
+	self:update_textures(self._carry_id, self._unit, false)
+	if not is_init then
+		CarryData.ub_loot[self._unit:key()] = self._unit
+	end
+end)
+
+--Back to Reg Useful Bot Functions
+Hooks:PreHook(CarryData, "destroy", "destroy_ub", function (self)
+	CarryData.ub_loot[self._unit:key()] = nil
+end)
+
+Hooks:PostHook(CarryData, "link_to", "link_to_ub", function (self)
+	if self._linked_to then
+		CarryData.ub_loot[self._unit:key()] = nil
+		self._ub_throw_params = nil
+	end
+end)
+
+Hooks:PostHook(CarryData, "unlink", "unlink_ub", function (self)
+	CarryData.ub_loot[self._unit:key()] = self._unit
+end)
+
+Hooks:PostHook(CarryData, "set_zipline_unit", "set_zipline_unit_ub", function (self, zipline_unit)
+	CarryData.ub_loot[self._unit:key()] = not zipline_unit and self._unit or nil
+end)
