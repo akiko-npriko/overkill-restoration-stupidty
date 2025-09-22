@@ -1453,7 +1453,7 @@ end
 --Useful Bots by Hoppip
 	restoration.usefulbot_settings = {
 		no_crouch = false,
-		dominate_enemies = 1, -- 1 = yes, 2 = assist only, 3 = no
+		dominate_enemies = 2, -- 1 = yes, 2 = assist only, 3 = no
 		secure_loot = false,
 		mark_specials = true,
 		announce_low_hp = true,
@@ -1467,7 +1467,7 @@ end
 		revive_distance = 25,
 		drop_bag_percentage = 0.25,
 		targeting_priority = {
-			base_priority = 1, -- 1 = by weapon stats, 2 = by distance, 3 = vanilla
+			base_priority = 2, -- 1 = by weapon stats, 2 = by distance, 3 = vanilla
 			player_aim = 1.5,
 			critical = 2,
 			marked = 1.5,
