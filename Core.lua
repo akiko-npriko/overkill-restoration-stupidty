@@ -1507,7 +1507,7 @@ end
 			usage_amount = 1,
 			AI_group = "friendlies",
 			search_pos = unit:position(),
-			objective = self:get_assist_objective(unit)
+			objective = restoration.usefulbot_get_assist_objective(unit)
 		}
 	end
 
@@ -1553,7 +1553,7 @@ end
 
 	function restoration.usefulbot_player_settings(player_unit)
 		local peer = alive(player_unit) and player_unit:network() and player_unit:network():peer()
-		return self.peer_settings[peer and peer:id() or 1]
+		return restoration.usefulbot_peer_settings[peer and peer:id() or 1]
 	end
 
 	if Network:is_client() then
