@@ -1500,18 +1500,18 @@ end
 		end
 	})
 
-	function restoration.usefulbot_get_assist_SO(unit)
+	function restoration:usefulbot_get_assist_SO(unit)
 		return {
 			chance_inc = 0,
 			base_chance = 1,
 			usage_amount = 1,
 			AI_group = "friendlies",
 			search_pos = unit:position(),
-			objective = restoration.usefulbot_get_assist_objective(unit)
+			objective = restoration:usefulbot_get_assist_objective(unit)
 		}
 	end
 
-	function restoration.usefulbot_get_assist_objective(unit, receiver)
+	function restoration:usefulbot_get_assist_objective(unit, receiver)
 		local nav_seg = unit:movement():nav_tracker():nav_segment()
 		return {
 			type = "defend_area",
@@ -1524,7 +1524,7 @@ end
 		}
 	end
 
-	function restoration.usefulbot_stop_assist_objective(unit)
+	function restoration:usefulbot_stop_assist_objective(unit)
 		for _, c_data in pairs(managers.groupai:state():all_AI_criminals()) do
 			local brain = c_data.unit:brain()
 			local objective = brain:objective()
@@ -1534,7 +1534,7 @@ end
 		end
 	end
 
-	function restoration.usefulbot_get_reviving_unit(unit)
+	function restoration:usefulbot_get_reviving_unit(unit)
 		for _, c_data in pairs(managers.groupai:state():all_AI_criminals()) do
 			local brain = c_data.unit:brain()
 			local objective = brain:objective()
@@ -1544,14 +1544,14 @@ end
 		end
 	end
 
-	function restoration.usefulbot_force_attention(attention_unit)
+	function restoration:usefulbot_force_attention(attention_unit)
 		for _, c_data in pairs(managers.groupai:state():all_AI_criminals()) do
 			local logic_data = c_data.unit:brain()._logic_data
 			TeamAILogicBase.force_attention(logic_data, logic_data.internal_data, attention_unit)
 		end
 	end
 
-	function restoration.usefulbot_player_settings(player_unit)
+	function restoration:usefulbot_player_settings(player_unit)
 		local peer = alive(player_unit) and player_unit:network() and player_unit:network():peer()
 		return restoration.usefulbot_peer_settings[peer and peer:id() or 1]
 	end

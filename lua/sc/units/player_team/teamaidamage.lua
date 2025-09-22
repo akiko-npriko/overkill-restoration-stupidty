@@ -37,7 +37,7 @@ function TeamAIDamage:damage_tase(attack_data, ...)
 			end
 
 			self._assist_SO_id = "TeamAIDamage_assistance" .. tostring(self._unit:key())
-			managers.groupai:state():add_special_objective(self._assist_SO_id, restoration.usefulbot_get_assist_SO(self._unit))
+			managers.groupai:state():add_special_objective(self._assist_SO_id, restoration:usefulbot_get_assist_SO(self._unit))
 		end
 	end
 
@@ -47,7 +47,7 @@ end
 Hooks:PostHook(TeamAIDamage, "on_tase_ended", "on_tase_ended_ub", function (self)
 	if self._assist_SO_id then
 		managers.groupai:state():remove_special_objective(self._assist_SO_id)
-		restoration.usefulbot_stop_assist_objective(self._unit)
+		restoration:usefulbot_stop_assist_objective(self._unit)
 		self._assist_SO_id = nil
 	end
 end)

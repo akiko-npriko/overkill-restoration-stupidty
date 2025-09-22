@@ -497,7 +497,7 @@ Hooks:PreHook(ReviveInteractionExt, "_at_interact_interupt", "_at_interact_inter
 end)
 
 Hooks:PreHook(ReviveInteractionExt, "remove_interact", "remove_interact_ub", function (self)
-	restoration.usefulbot_stop_assist_objective(self._unit)
+	restoration:usefulbot_stop_assist_objective(self._unit)
 	self._reviving_unit = nil
 	self._block_revive_SO = nil
 end)
@@ -510,7 +510,7 @@ Hooks:PostHook(ReviveInteractionExt, "set_waypoint_paused", "set_waypoint_paused
 		return
 	end
 
-	local reviving_bot = restoration.usefulbot_get_reviving_unit(self._unit)
+	local reviving_bot = restoration:usefulbot_get_reviving_unit(self._unit)
 	if not reviving_bot or self._reviving_unit == reviving_bot then
 		return
 	end
@@ -522,7 +522,7 @@ Hooks:PostHook(ReviveInteractionExt, "set_waypoint_paused", "set_waypoint_paused
 	})
 
 	if restoration.usefulbot_settings.defend_reviving then
-		reviving_bot:brain():set_objective(restoration.usefulbot_get_assist_objective(self._unit, reviving_bot))
+		reviving_bot:brain():set_objective(restoration:usefulbot_get_assist_objective(self._unit, reviving_bot))
 	else
 		reviving_bot:brain():set_objective(managers.groupai:state():_determine_objective_for_criminal_AI(reviving_bot))
 	end

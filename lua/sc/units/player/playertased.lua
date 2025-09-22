@@ -226,10 +226,10 @@ function PlayerTased:_register_revive_SO()
 	end
 
 	self._SO_id = "PlayerTased_assistance"
-	managers.groupai:state():add_special_objective(self._SO_id, restoration.usefulbot_get_assist_SO(self._unit))
+	managers.groupai:state():add_special_objective(self._SO_id, restoration:usefulbot_get_assist_SO(self._unit))
 end
 
 Hooks:PostHook(PlayerTased, "exit", "exit_ub", function (self)
-	restoration.usefulbot_stop_assist_objective(self._unit)
+	restoration:usefulbot_stop_assist_objective(self._unit)
 	self._SO_id = nil
 end)
