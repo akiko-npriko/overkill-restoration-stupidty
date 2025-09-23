@@ -1,0 +1,50 @@
+<ugcitem>
+	<param key="name" value="rrrrrrrrr"/>
+	<node name="data">
+		<param key="name_id" value="bm_wskn_leet_rrrrrrrrr"/>
+		<param key="weapon_id" value="leet"/>
+		<node name="types">
+			<node name="gadget">
+				<param key="base_gradient_name" value="blue cherry.tga"/>
+			</node>
+			<node name="sight">
+			</node>
+		</node>
+		<param key="base_gradient_name" value="sangres bgrad 3.tga"/>
+		<param key="id" value="kn_leet_rrrrrrrrr"/>
+		<param key="reserve_quality" value="true"/>
+		<node name="parts">
+			<node name="wpn_fps_snp_leet_b_standard">
+				<node name="c86287031d5dcece">
+				</node>
+			</node>
+			<node name="wpn_fps_snp_leet_m_standard">
+				<node name="e07bef375f9743f3">
+					<param key="pattern_gradient_name" value="wolfpgrad1.tga"/>
+					<param key="base_gradient_name" value="just black.tga"/>
+					<param key="pattern_name" value="sydney plaid rip alt.tga"/>
+					<param key="pattern_tweak" value="Vector3(3.49631, 0, 1)"/>
+				</node>
+			</node>
+			<node name="wpn_fps_upg_leet_fg_ext">
+				<node name="c86287031d5dcece">
+					<param key="base_gradient_name" value="blue cherry.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_snp_leet_rec_lower">
+				<node name="c86287031d5dcece">
+					<param key="pattern_tweak" value="Vector3(2.78083, 1.80269, 1)"/>
+					<param key="pattern_name" value="wolfcamo.tga"/>
+					<param key="pattern_gradient_name" value="wolfpgrad1.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_snp_leet_o_standard">
+				<node name="c86287031d5dcece">
+					<param key="base_gradient_name" value="blue cherry.tga"/>
+				</node>
+			</node>
+		</node>
+	</node>
+	<param key="type" value="weapon_skin"/>
+	<param key="timestamp" value="2019163063154"/>
+</ugcitem>

@@ -1,0 +1,60 @@
+<ugcitem>
+	<param key="type" value="weapon_skin"/>
+	<param key="name" value="minimamo"/>
+	<node name="data">
+		<param key="name_id" value="bm_wskn_leet_minimamo"/>
+		<param key="weapon_id" value="leet"/>
+		<node name="types">
+			<node name="sight">
+				<param key="base_gradient_name" value="just black.tga"/>
+			</node>
+		</node>
+		<param key="base_gradient_name" value="minty fresh.tga"/>
+		<param key="id" value="kn_leet_minimamo"/>
+		<param key="reserve_quality" value="true"/>
+		<node name="parts">
+			<node name="wpn_fps_snp_leet_m_standard">
+				<node name="e07bef375f9743f3">
+					<param key="uv_scale" value="Vector3(1, 1, 0)"/>
+					<param key="sticker_name" value="stk_rfb_tam.tga"/>
+					<param key="pattern_gradient_name" value="gse_pgrad.tga"/>
+					<param key="base_gradient_name" value="minty fresh.tga"/>
+					<param key="uv_offset_rot" value="Vector3(0, 1.04603, 0)"/>
+					<param key="pattern_name" value="pat_grunge.tga"/>
+					<param key="pattern_tweak" value="Vector3(0.872886, 2.56692, 1)"/>
+				</node>
+			</node>
+			<node name="wpn_fps_snp_leet_o_standard">
+				<node name="c86287031d5dcece">
+					<param key="base_gradient_name" value="just black.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_upg_leet_fg_ext">
+				<node name="c86287031d5dcece">
+					<param key="sticker_name" value="pink heart.tga"/>
+					<param key="pattern_gradient_name" value="gse_pgrad.tga"/>
+					<param key="uv_scale" value="Vector3(5.82631, 5.82631, 0)"/>
+					<param key="base_gradient_name" value="just black.tga"/>
+					<param key="uv_offset_rot" value="Vector3(-0.165514, 1.26544, 5.74373)"/>
+					<param key="pattern_name" value="pat_grunge_nobg.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_snp_leet_rec_lower">
+				<node name="c86287031d5dcece">
+					<param key="uv_scale" value="Vector3(1, 1, 0)"/>
+					<param key="sticker_name" value="stk_rfb_tam.tga"/>
+					<param key="pattern_gradient_name" value="gse_pgrad.tga"/>
+					<param key="base_gradient_name" value="minty fresh.tga"/>
+					<param key="uv_offset_rot" value="Vector3(0, 1, 0)"/>
+					<param key="pattern_name" value="pat_grunge_nobg.tga"/>
+				</node>
+			</node>
+			<node name="wpn_fps_snp_leet_b_standard">
+				<node name="c86287031d5dcece">
+					<param key="base_gradient_name" value="just black.tga"/>
+				</node>
+			</node>
+		</node>
+	</node>
+	<param key="timestamp" value="2019163163648"/>
+</ugcitem>

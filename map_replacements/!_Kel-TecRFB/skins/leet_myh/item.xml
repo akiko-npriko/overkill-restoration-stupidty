@@ -1,0 +1,36 @@
+<ugcitem>
+	<param key="type" value="weapon_skin"/>
+	<param key="name" value="oiiil"/>
+	<node name="data">
+		<param key="id" value="kn_leet_oiiil"/>
+		<param key="weapon_id" value="leet"/>
+		<node name="types">
+			<node name="sight">
+				<param key="base_gradient_name" value="just black.tga"/>
+			</node>
+			<node name="gadget">
+				<param key="base_gradient_name" value="just black.tga"/>
+			</node>
+		</node>
+		<param key="base_gradient_name" value="sangres bgrad 2.tga"/>
+		<param key="name_id" value="bm_wskn_leet_oiiil"/>
+		<param key="reserve_quality" value="true"/>
+		<node name="parts">
+			<node name="wpn_fps_upg_leet_fg_ext">
+				<node name="c86287031d5dcece">
+					<param key="pattern_gradient_name" value="dukeoilpgrad.tga"/>
+					<param key="base_gradient_name" value="sangres bgrad 3.tga"/>
+					<param key="pattern_name" value="dukewood.tga"/>
+					<param key="pattern_tweak" value="Vector3(0.300503, 0, 1)"/>
+				</node>
+			</node>
+			<node name="wpn_fps_snp_leet_rec_lower">
+				<node name="c86287031d5dcece">
+					<param key="pattern_name" value="dukewood.tga"/>
+					<param key="pattern_gradient_name" value="dukeoilpgrad.tga"/>
+				</node>
+			</node>
+		</node>
+	</node>
+	<param key="timestamp" value="2019163063634"/>
+</ugcitem>

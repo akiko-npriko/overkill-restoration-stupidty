@@ -34695,6 +34695,60 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 			self.x_pm9.use_data.selection_index = 5
 
 	-- [[Akiko Edits]]
+	if self.leet then
+		self.leet.use_data.selection_index = 1
+		--self.leet.desc_id = "bm_menu_sc_leet_desc"
+		--self.leet.has_description = true
+		self.leet.categories = {
+			"assault_rifle",
+			"dmr_h",
+		}
+		self.leet.recategorize = {"dmr_ar"}
+		self.leet.damage_type = "sniper"
+		self.leet.AMMO_MAX = 60
+		self.leet.CLIP_AMMO_MAX = 10
+		self.leet.FIRE_MODE = "single"
+		self.leet.can_shoot_through_enemy = true
+		self.leet.can_shoot_through_wall = false
+		self.leet.armor_piercing_chance = 0.5
+		self.leet.fire_mode_data.fire_rate = 0.1
+		self.leet.panic_suppression_chance = 0.05
+		self.leet.kick = self.stat_info.kick_tables.moderate_kick
+		self.leet.kick_pattern = {
+			{0, self.stat_info.kick_tables.vertical_kick},
+			{4, self.stat_info.kick_tables.moderate_left_kick},
+			{7, self.stat_info.kick_tables.even_recoil},
+			{12, self.stat_info.kick_tables.moderate_right_kick},
+			{19, self.stat_info.kick_tables.moderate_kick}
+		}
+		self.leet.supported = true
+		self.leet.ads_speed = 0.280
+		self.leet.damage_falloff = {
+			start_dist = 1000,
+			end_dist = 5000,
+			min_mult = 0.25
+		}
+		self.leet.stats = {
+			damage = 60,
+			spread = 80,
+			recoil = 55,
+			spread_moving = 6,
+			zoom = 1,
+			concealment = 24,
+			suppression = 20,
+			alert_size = 1,
+			extra_ammo = 101,
+			total_ammo_mod = 400,
+			value = 1,
+			reload = 20
+		}
+		self.leet.stats_modifiers = nil
+		self.leet.timers.reload_empty = 2.66
+		self.leet.timers.reload_exit_empty = 0.87
+		self.leet.timers.reload_not_empty = 2.10
+		self.leet.timers.reload_exit_not_empty = 0.8
+		self.leet.reload_speed_multiplier = 0.82
+	end
 	if self.iuhM79Shotgun then
 		self.iuhM79Shotgun.upgrade_blocks = {
 			weapon = {
