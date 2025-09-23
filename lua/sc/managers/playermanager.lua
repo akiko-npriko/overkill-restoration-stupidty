@@ -1807,6 +1807,12 @@ end
 --Akiko Armor Plate Perk Deck (og. Hacker_lyx) 
 --Functions:
 
+function PlayerManager:akiko_id_ma_armorplate(laorder)
+	if managers.player:has_category_upgrade("player","akiko_ceramic_imp_plate_" .. laorder) then
+		return "akiko_ceramic_imp_plate_" .. laorder
+	end
+end
+--[[ --remove too
 function PlayerManager:akiko_calc_armor_ma(laamount) -- multi by 10 to get actual armor
 	if managers.player:has_category_upgrade("player","akiko_ceramic_imp_plate_" .. laamount) then
 		self.akiko_ma_stat_modify = self.akiko_ma_stat_modify + self:upgrade_value("player","akiko_ceramic_imp_plate_" .. laamount).armor
@@ -1818,11 +1824,38 @@ function PlayerManager:akiko_calc_flinch_ma(laamount) -- multi by 100 to get act
 		self.akiko_ma_stat_modify = self.akiko_ma_stat_modify + self:upgrade_value("player","akiko_ceramic_imp_plate_" .. laamount).flinch
 	end
 end
+]]
 
 function PlayerManager:body_armor_value(category, override_value, default)
 	if self:has_category_upgrade("player","adaptive_plate_multiplier") then
 		self.akiko_ma_stat_modify = 0
-		--Stupid Shit here :3
+		local akikomadefault = {
+			armor = 2, -- armor per plate - [20 armor (10*2)]
+			damage_shake = -0.05, -- flinch per plate - [-5 flinch (100*(-0.05))]
+			--trama_damage = 2.5, -- trama damage - [1% per 25 damage (10*2.5)] -- unused lol
+		}
+		
+		local akikoadditionalvalue = category == "armor" and -(tweak_data.player.damage.ARMOR_INIT) -- undoes player armor integer
+		or 0 --default value
+		
+		local akikoclampmin = category == "damage_shake" and 0
+		or -math.huge --default value
+		
+		local akikoclampmax = category == "damage_shake" and 1 
+		or math.huge --default value
+		
+		local akikomamaxplatesallowed = 4 --temp value :3
+		
+		for i=1,akikomamaxplatesallowed,1 do
+			local akikoplateid = self:akiko_id_ma_armorplate(i)
+			local akikodeterminemodifyvalue = self:upgrade_value("player", akikoplateid) and table.contains(self:upgrade_value("player", akikoplateid), category) and self:upgrade_value("player", akikoplateid)[category] or table.contains(akikomadefault, category) and akikomadefault[category] or 0
+			self.akiko_ma_stat_modify = self.akiko_ma_stat_modify + akikodeterminemodifyvalue
+		end
+		
+		return math.clamp(self.akiko_ma_stat_modify + akikoadditionalvalue, akikoclampmin, akikoclampmax)
+		
+		--Stupid Shit here :3 -- remove below
+		--[[
 		if category == "armor" then
 			for i=1,4,1 do
 				self:akiko_calc_armor_ma(i)
@@ -1849,6 +1882,7 @@ function PlayerManager:body_armor_value(category, override_value, default)
 		elseif category == "skill_ammo_mul" then
 		
 		end
+		]]
 	end
 	
 	--Vanilla Code Below
