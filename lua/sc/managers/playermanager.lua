@@ -1851,8 +1851,6 @@ function PlayerManager:body_armor_value(category, override_value, default)
 			local akikoplateid = self:akiko_id_ma_armorplate(i)
 			local akikodeterminemodifyvalue = akikoplateid ~= nil and self:upgrade_value("player", akikoplateid) and table.contains(self:upgrade_value("player", akikoplateid), category) and self:upgrade_value("player", akikoplateid)[category] or table.contains(akikomadefault, category) and akikomadefault[category] or 0
 			
-			log(akikoplateid ~= nil and self:upgrade_value("player", akikoplateid) and tostring(type(self:upgrade_value("player", akikoplateid))) or akikoplateid ~= nil and self:upgrade_value("player", akikoplateid) and "JUICES" or "KILL ME NOWWW")
-			
 			self.akiko_ma_stat_modify = self.akiko_ma_stat_modify + akikodeterminemodifyvalue
 		end
 		
