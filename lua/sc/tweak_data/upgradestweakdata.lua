@@ -5996,8 +5996,9 @@ function UpgradesTweakData:_player_definitions()
 		--GenSec's Ceramic Impact Plate--
 		self.values.player["akiko_ceramic_imp_plate_" .. i] = {
 			{
-				6, -- armor per plate - [40 armor (10*4)]
-				2.5, -- trama damage - [1% per 25 damage (10*2.5)]
+				armor = 6, -- armor per plate - [60 armor (10*6)]
+				flinch = -0.15, -- flinch per plate - [-15 flinch (100*(-0.15))]
+				trama_damage = 2.5, -- trama damage - [1% per 25 damage (10*2.5)]
 			}
 		}
 		self.definitions["akiko_ceramic_imp_plate_" .. i] = {

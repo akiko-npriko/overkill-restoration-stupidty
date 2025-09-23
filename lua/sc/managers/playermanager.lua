@@ -1809,7 +1809,13 @@ end
 
 function PlayerManager:akiko_calc_armor_ma(laamount) -- multi by 10 to get actual armor
 	if managers.player:has_category_upgrade("player","akiko_ceramic_imp_plate_" .. laamount) then
-		self.akiko_ma_stat_modify = self.akiko_ma_stat_modify + self:upgrade_value("player","akiko_ceramic_imp_plate_" .. laamount)[1]
+		self.akiko_ma_stat_modify = self.akiko_ma_stat_modify + self:upgrade_value("player","akiko_ceramic_imp_plate_" .. laamount).armor
+	end
+end
+
+function PlayerManager:akiko_calc_flinch_ma(laamount) -- multi by 100 to get actual flinch
+	if managers.player:has_category_upgrade("player","akiko_ceramic_imp_plate_" .. laamount) then
+		self.akiko_ma_stat_modify = self.akiko_ma_stat_modify + self:upgrade_value("player","akiko_ceramic_imp_plate_" .. laamount).flinch
 	end
 end
 
@@ -1833,7 +1839,11 @@ function PlayerManager:body_armor_value(category, override_value, default)
 		elseif category == "regen_delay" then
 		
 		elseif category == "damage_shake" then
-		
+		self.akiko_ma_stat_modify = 1 --temp value :3
+		for i=1,4,1 do
+			self:akiko_calc_flinch_ma(i)
+		end
+		return math.clamp(self.akiko_ma_stat_modify, 0, 1)
 		elseif category == "stamina" then
 		
 		elseif category == "skill_ammo_mul" then
