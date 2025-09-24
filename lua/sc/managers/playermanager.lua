@@ -1823,7 +1823,7 @@ function PlayerManager:akiko_id_ma_armorplate_value(laorder, value_required)
 	value_required = tostring(value_required) or "mydudefuckingforgot"
 	local akikomaarmorplatedefault = self:upgrade_value("player", "akiko_ma_default_plate") or {}
 	local akikoplateid = self:akiko_id_ma_armorplate(laorder)
-	return akikoplateid ~= "akiko_ma_default_plate" and self:upgrade_value("player", akikoplateid) and self:upgrade_value("player", akikoplateid)[value_required] or akikomaarmorplatedefault[value_required] or 1
+	return akikoplateid ~= "akiko_ma_default_plate" and self:upgrade_value("player", akikoplateid) and self:upgrade_value("player", akikoplateid)[value_required] or akikomaarmorplatedefault[value_required] or 0
 end
 
 function PlayerManager:body_armor_value(category, override_value, default)
