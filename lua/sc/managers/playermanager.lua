@@ -1809,15 +1809,20 @@ end
 --Akiko Armor Plate Perk Deck (og. Hacker_lyx) 
 --Functions:
 
-function PlayerManager:akiko_id_ma_armorplate(laorder) -- I just realized the way code is made it wont default.... so uhh redo code to have this handle everything and prob rename this function in that case (choose value type shit)
-	if not self:has_category_upgrade("player", "akiko_ma_default_plate") or not laorder then
-		return false
-	end
+function PlayerManager:akiko_id_ma_armorplate(laorder)
+	laorder = laorder or 1
 	if managers.player:has_category_upgrade("player","akiko_ceramic_imp_plate_" .. laorder) then
 		return "akiko_ceramic_imp_plate_" .. laorder
 	else
 		return "akiko_ma_default_plate"
 	end
+end
+
+function PlayerManager:akiko_id_ma_armorplate_value(laorder)
+	laorder = laorder or 1
+	local akikomaarmorplatedefault = self:upgrade_value("player", "akiko_ma_default_plate") or {}
+	local akikoplateid = self:akiko_id_ma_armorplate(laorder)
+	return akikoplateid ~= "akiko_ma_default_plate" and self:upgrade_value("player", akikoplateid) and self:upgrade_value("player", akikoplateid)[category] or akikomaarmorplatedefault[category] or 1
 end
 
 function PlayerManager:body_armor_value(category, override_value, default)
