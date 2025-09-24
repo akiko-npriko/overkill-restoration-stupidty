@@ -1843,7 +1843,7 @@ function PlayerManager:body_armor_value(category, override_value, default)
 			"movement",
 			"stamina",
 		}
-		local akikoiddynamicstat4ap = table.contains(akikoarmorplatedynamicstat, category)
+		local akikoiddynamicstat4ap = table.contains(akikoarmorplatedynamicstat, category) -- stat undo when armor plate breaks
 		
 		local akikoadditionalvalue = category == "armor" and -(tweak_data.player.damage.ARMOR_INIT) -- undoes player armor integer
 		or 0 --default value
