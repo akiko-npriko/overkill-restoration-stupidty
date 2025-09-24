@@ -1,6 +1,7 @@
+local akiko_tramadamage_ap_default = {0,0,0,0,0} -- fifth value is for if all plates break? ig
 PlayerManager.adaptive_plate_stage = PlayerManager.adaptive_plate_stage or 0
 PlayerManager.akiko_ma_stat_modify = PlayerManager.akiko_ma_stat_modify or 0
-PlayerManager.akiko_tramadamage_ap = PlayerManager.akiko_tramadamage_ap or {0,0,0,0,0} -- fifth value is for if all plates break? ig
+PlayerManager.akiko_tramadamage_ap = PlayerManager.akiko_tramadamage_ap or akiko_tramadamage_ap_default
 --Local functions requested elsewhere. These are vanilla code.
 local function make_double_hud_string(a, b)
 	return string.format("%01d|%01d", a, b)
@@ -50,6 +51,7 @@ Hooks:PostHook(PlayerManager, "init", "ResInit", function(self)
 		self._merciless_t = 0
 		self._merciless_stacks = 0
 	end
+	self.akiko_tramadamage_ap = akiko_tramadamage_ap_default
 end)
 
 Hooks:PostHook(PlayerManager, "update", "ResPlayerManagerUpdate", function(self, t, dt)
