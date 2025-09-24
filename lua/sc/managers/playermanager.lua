@@ -1818,11 +1818,12 @@ function PlayerManager:akiko_id_ma_armorplate(laorder)
 	end
 end
 
-function PlayerManager:akiko_id_ma_armorplate_value(laorder)
+function PlayerManager:akiko_id_ma_armorplate_value(laorder, value_required)
 	laorder = laorder or 1
+	value_required = tostring(value_required) or "mydudefuckingforgot"
 	local akikomaarmorplatedefault = self:upgrade_value("player", "akiko_ma_default_plate") or {}
 	local akikoplateid = self:akiko_id_ma_armorplate(laorder)
-	return akikoplateid ~= "akiko_ma_default_plate" and self:upgrade_value("player", akikoplateid) and self:upgrade_value("player", akikoplateid)[category] or akikomaarmorplatedefault[category] or 1
+	return akikoplateid ~= "akiko_ma_default_plate" and self:upgrade_value("player", akikoplateid) and self:upgrade_value("player", akikoplateid)[value_required] or akikomaarmorplatedefault[value_required] or 1
 end
 
 function PlayerManager:body_armor_value(category, override_value, default)
@@ -1850,7 +1851,7 @@ function PlayerManager:body_armor_value(category, override_value, default)
 		local akikomamaxplatesallowed = 4 --temp value :3
 		
 		for i=1,akikomamaxplatesallowed,1 do
-			local akikodeterminemodifyvalue = self:akiko_id_ma_armorplate_value(i)
+			local akikodeterminemodifyvalue = self:akiko_id_ma_armorplate_value(i, category)
 			self.akiko_ma_stat_modify = self.akiko_ma_stat_modify + akikodeterminemodifyvalue
 		end
 		
