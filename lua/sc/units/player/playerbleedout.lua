@@ -26,7 +26,7 @@ function PlayerBleedOut:enter(state_data, enter_data)
 	
 	--Akiko Armor Plate Perk Deck (og. Hacker_lyx)
 	local pm = managers.player
-	if pm:has_category_upgrade("player", "adaptive_plate_multiplier") then
+	if pm:has_category_upgrade("player", "akiko_ma_default_plate") then
 		pm.adaptive_plate_stage = 0
 	end
 	

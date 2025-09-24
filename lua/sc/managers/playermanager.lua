@@ -1118,7 +1118,7 @@ function PlayerManager:on_lethal_headshot_dealt(attacker_unit, attack_data)
 
 	local regen_armor_bonus_cd_reduction = managers.player:upgrade_value("player", "headshot_regen_armor_bonus_cd_reduction", 0)
 	local anarchist = managers.player:has_category_upgrade("player", "armor_grinding")
-	local akiko_ma_perk = managers.player:has_category_upgrade("player", "adaptive_plate_multiplier")
+	local akiko_ma_perk = managers.player:has_category_upgrade("player", "akiko_ma_default_plate")
 	if self._on_headshot_dealt_t and not (anarchist or akiko_ma_perk) then
 		self._on_headshot_dealt_t = self._on_headshot_dealt_t - regen_armor_bonus_cd_reduction
 	end
@@ -1817,14 +1817,10 @@ function PlayerManager:akiko_id_ma_armorplate(laorder)
 end
 
 function PlayerManager:body_armor_value(category, override_value, default)
-	if self:has_category_upgrade("player","adaptive_plate_multiplier") then
+	if self:has_category_upgrade("player", "akiko_ma_default_plate") then
 		--self.akiko_ma_stat_modify = 0
 		self.akiko_ma_stat_modify = category == "damage_shake" and 1 or 0 -- temp value :3
-		local akikomaarmorplatedefault = {
-			armor = 2, -- armor per plate - [20 armor (10*2)]
-			damage_shake = -0.05, -- flinch per plate - [-5 flinch (100*(-0.05))]
-			--trama_damage = 2.5, -- trama damage - [1% per 25 damage (10*2.5)] -- unused lol
-		}
+		local akikomaarmorplatedefault = self:upgrade_value("player", "akiko_ma_default_plate")
 		local akikoarmorplatedynamicstat = {
 			"damage_shake",
 			"concealment",
@@ -1869,7 +1865,7 @@ function PlayerManager:_attempt_adaptive_plate()
 	local player = self:local_player()
 	local damage_ext = player:character_damage()
 	
-	if self:has_category_upgrade("player","adaptive_plate_multiplier") then
+	if self:has_category_upgrade("player","akiko_ma_default_plate") then
 		--Requires Double Click to begin (Single Click tells Trama Damage)
 		
 		if self:has_inactivate_temporary_upgrade("temporary", "akiko_apbag_doubleclick") then

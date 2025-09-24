@@ -342,7 +342,7 @@ function PlayerDamage:_apply_damage(attack_data, damage_info, variant, t)
 	
 	--Akiko Armor Plate Perk Deck (og. Hacker_lyx) - Modifies Grace Periods and Damage Interval
 	local pm = managers.player -- moved up here to prevent crash
-	if pm:has_category_upgrade("player", "adaptive_plate_multiplier") and self:get_real_armor() > 0 then
+	if pm:has_category_upgrade("player", "akiko_ma_default_plate") and self:get_real_armor() > 0 then
 		--placeholder
 		self._last_received_dmg = math.huge
 		self._next_allowed_dmg_t = Application:digest_value(t + self._dmg_interval, true)
@@ -1878,12 +1878,13 @@ function PlayerDamage:_calc_armor_damage(attack_data)
 		local pm = managers.player
 		
 		--Akiko Armor Plate Perk Deck (og. Hacker_lyx) --Checks Damage and Mods it too
-		if pm:has_category_upgrade("player", "adaptive_plate_multiplier") then
+		if pm:has_category_upgrade("player", "akiko_ma_default_plate") then
 			local apc_damage = attack_data.damage
 			local stage, s, c = self:calc_adaptive_plate_stage(apc_damage)
+			
 			--Trama Damage Test Stuff (Rn it techinally every 10 damage 1% trama applies to armor plate.. it not actually that but it close enough)
-			local tramaapstat = math.clamp(s+1, 1, 5)
-			if tramaapstat < 5 then
+			local tramaapstat = math.clamp(s+1, 1, 5) -- rework this later
+			if tramaapstat < 5 then -- this if then too ig
 				self.akiko_apmaxtramadamage = 100
 				if managers.player:has_category_upgrade("player","akiko_ceramic_imp_plate_" .. tramaapstat) then
 					self.akiko_aptramadamagedenumerator = managers.player:upgrade_value("player","akiko_ceramic_imp_plate_" .. tramaapstat).trama_damage
@@ -1896,6 +1897,12 @@ function PlayerDamage:_calc_armor_damage(attack_data)
 					managers.chat:send_message(ChatManager.GAME, "Stupid Crap", "STAGEE " .. tramaapstat)
 				end
 			end
+		end
+		--Dead Ass rewrite everything below... and move to new if then statement above ig
+		if pm:has_category_upgrade("player", "adaptive_plate_multiplier") then
+			local apc_damage = attack_data.damage
+			local stage, s, c = self:calc_adaptive_plate_stage(apc_damage)
+			--required variable above ig
 			if s > 0 and c then
 				self:set_armor(stage[s])
 				attack_data.damage = 0
@@ -2197,7 +2204,7 @@ Hooks:PostHook(PlayerDamage, "_regenerate_armor", "adaptive_plate_post_regen_arm
 	local stage = self:get_adaptive_plate_stages()
 	local cur_armor = self.pre_regen_armor
 
-	if pm:has_category_upgrade("player", "adaptive_plate_multiplier") then
+	if pm:has_category_upgrade("player", "akiko_ma_default_plate") then
 		local s = pm.adaptive_plate_stage
 		
 		-- if stage 0, regen all armor

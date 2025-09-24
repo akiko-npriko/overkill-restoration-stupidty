@@ -4527,7 +4527,12 @@ function SkillTreeTweakData:init(tweak_data)
 				"adaptive_plate",
 				"adaptive_plate_base",
 				"temporary_adaptive_plate_stage_0",
-				"temporary_akiko_apbag_doubleclick"
+				"player_adaptive_plate_multiplier_1",
+				"temporary_adaptive_plate_stage_1",
+				"temporary_adaptive_plate_stage_2",
+				"temporary_adaptive_plate_stage_3",
+				"temporary_adaptive_plate_stage_4",
+				"akiko_ma_default_plate",
 			},
 			icon_xy = {
 				6,
@@ -4557,11 +4562,8 @@ function SkillTreeTweakData:init(tweak_data)
 			short_id = "menu_deck_adaptive_5_short",
 			name_id = "menu_deck_adaptive_5",
 			upgrades = {
-				"player_adaptive_plate_multiplier_1",
-				"temporary_adaptive_plate_stage_1",
-				"temporary_adaptive_plate_stage_2",
-				"temporary_adaptive_plate_stage_3",
-				"temporary_adaptive_plate_stage_4"
+				"player_perk_armor_regen_timer_multiplier_1",
+				"player_perk_armor_regen_timer_multiplier_2",
 			},
 			icon_xy = {
 				7,
@@ -4591,8 +4593,6 @@ function SkillTreeTweakData:init(tweak_data)
 			short_id = "menu_deck_adaptive_9_short",
 			name_id = "menu_deck_adaptive_9",
 			upgrades = {
-				"player_perk_armor_regen_timer_multiplier_1",
-				"player_perk_armor_regen_timer_multiplier_2",
 				"player_perk_armor_regen_timer_multiplier_3",
 				"player_perk_armor_regen_timer_multiplier_4",
 				"player_passive_loot_drop_multiplier_1"
