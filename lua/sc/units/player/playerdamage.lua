@@ -5,7 +5,6 @@ PlayerDamage._UPPERS_COOLDOWN = tweak_data.upgrades.values.first_aid_kit.uppers_
 --Akiko Armor Plate Values
 PlayerDamage.pre_regen_armor = PlayerDamage.pre_regen_armor or 0
 PlayerDamage.akiko_apmaxtramadamage = PlayerDamage.akiko_apmaxtramadamage or 100 -- at 100 or above plates fail to regen (below 100 prevents failure)
-PlayerDamage.akiko_aptramadamagedenumerator = PlayerDamage.akiko_aptramadamagedenumerator or 1 -- this is the base and it is 1% trama damager per 10 damage (10*1)
 
 function PlayerDamage:init(unit)
 	self._lives_init = tweak_data.player.damage.LIVES_INIT
@@ -1883,15 +1882,14 @@ function PlayerDamage:_calc_armor_damage(attack_data)
 			local stage, s, c = self:calc_adaptive_plate_stage(apc_damage)
 			
 			--Trama Damage Test Stuff (Rn it techinally every 10 damage 1% trama applies to armor plate.. it not actually that but it close enough)
-			local tramaapstat = math.clamp(s+1, 1, 5) -- rework this later
+			local tramaapstat = math.clamp(s+1, 1, 5) -- rework this later plus rename variable too
 			if tramaapstat < 5 then -- this if then too ig
 				self.akiko_apmaxtramadamage = 100
-				if managers.player:has_category_upgrade("player","akiko_ceramic_imp_plate_" .. tramaapstat) then
-					self.akiko_aptramadamagedenumerator = managers.player:upgrade_value("player","akiko_ceramic_imp_plate_" .. tramaapstat).trama_damage
-				else
-					self.akiko_aptramadamagedenumerator = 1  -- this is the base and it is 1% trama damager per 10 damage (10*1)
-				end
-				pm.akiko_tramadamage_ap[tramaapstat] = math.clamp(math.floor(pm.akiko_tramadamage_ap[tramaapstat] + (apc_damage/self.akiko_aptramadamagedenumerator)),0,self.akiko_apmaxtramadamage)
+				local akikoplateid = pm:akiko_id_ma_armorplate(tramaapstat)
+				local akikodeterminemodifyvalue = akikoplateid and self:upgrade_value("player", akikoplateid) and self:upgrade_value("player", akikoplateid).trama_damage or 1
+				
+				--maybe redo how below is formulated.. idk
+				pm.akiko_tramadamage_ap[tramaapstat] = math.clamp(math.floor(pm.akiko_tramadamage_ap[tramaapstat] + (apc_damage/akikodeterminemodifyvalue)),0,self.akiko_apmaxtramadamage)
 				if managers.chat then
 					managers.chat:send_message(ChatManager.GAME, "Stupid Crap", "Trama Damage% " .. pm.akiko_tramadamage_ap[tramaapstat])
 					managers.chat:send_message(ChatManager.GAME, "Stupid Crap", "STAGEE " .. tramaapstat)

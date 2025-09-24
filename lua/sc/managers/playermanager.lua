@@ -1810,17 +1810,20 @@ end
 --Functions:
 
 function PlayerManager:akiko_id_ma_armorplate(laorder)
+	if not self:has_category_upgrade("player", "akiko_ma_default_plate") or not laorder then
+		return false
+	end
 	if managers.player:has_category_upgrade("player","akiko_ceramic_imp_plate_" .. laorder) then
 		return "akiko_ceramic_imp_plate_" .. laorder
+	else
+		return "akiko_ma_default_plate"
 	end
-	return nil
 end
 
 function PlayerManager:body_armor_value(category, override_value, default)
 	if self:has_category_upgrade("player", "akiko_ma_default_plate") then
 		--self.akiko_ma_stat_modify = 0
 		self.akiko_ma_stat_modify = category == "damage_shake" and 1 or 0 -- temp value :3
-		local akikomaarmorplatedefault = self:upgrade_value("player", "akiko_ma_default_plate")
 		local akikoarmorplatedynamicstat = {
 			"damage_shake",
 			"concealment",
@@ -1843,7 +1846,7 @@ function PlayerManager:body_armor_value(category, override_value, default)
 		
 		for i=1,akikomamaxplatesallowed,1 do
 			local akikoplateid = self:akiko_id_ma_armorplate(i)
-			local akikodeterminemodifyvalue = akikoplateid ~= nil and self:upgrade_value("player", akikoplateid) and self:upgrade_value("player", akikoplateid)[category] or akikomaarmorplatedefault[category] or 0
+			local akikodeterminemodifyvalue = akikoplateid and self:upgrade_value("player", akikoplateid) and self:upgrade_value("player", akikoplateid)[category] or 0
 			
 			self.akiko_ma_stat_modify = self.akiko_ma_stat_modify + akikodeterminemodifyvalue
 		end
