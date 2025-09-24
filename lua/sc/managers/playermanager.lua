@@ -1836,6 +1836,14 @@ function PlayerManager:body_armor_value(category, override_value, default)
 			damage_shake = -0.05, -- flinch per plate - [-5 flinch (100*(-0.05))]
 			--trama_damage = 2.5, -- trama damage - [1% per 25 damage (10*2.5)] -- unused lol
 		}
+		local akikoarmorplatedynamicstat = {
+			"damage_shake",
+			"concealment",
+			"dodge",
+			"movement",
+			"stamina",
+		}
+		local akikoiddynamicstat4ap = table.contains(akikoarmorplatedynamicstat, category)
 		
 		local akikoadditionalvalue = category == "armor" and -(tweak_data.player.damage.ARMOR_INIT) -- undoes player armor integer
 		or 0 --default value
