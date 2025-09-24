@@ -1885,8 +1885,7 @@ function PlayerDamage:_calc_armor_damage(attack_data)
 			local tramaapstat = math.clamp(s+1, 1, 5) -- rework this later plus rename variable too
 			if tramaapstat < 5 then -- this if then too ig
 				self.akiko_apmaxtramadamage = 100
-				local akikoplateid = pm:akiko_id_ma_armorplate(tramaapstat)
-				local akikodeterminemodifyvalue = akikoplateid and pm:upgrade_value("player", akikoplateid) and pm:upgrade_value("player", akikoplateid).trama_damage or 1
+				local akikodeterminemodifyvalue = pm:akiko_id_ma_armorplate_value(tramaapstat)
 				
 				--maybe redo how below is formulated.. idk
 				pm.akiko_tramadamage_ap[tramaapstat] = math.clamp(math.floor(pm.akiko_tramadamage_ap[tramaapstat] + (apc_damage/akikodeterminemodifyvalue)),0,self.akiko_apmaxtramadamage)

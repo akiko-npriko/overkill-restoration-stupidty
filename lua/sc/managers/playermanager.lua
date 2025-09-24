@@ -1850,9 +1850,7 @@ function PlayerManager:body_armor_value(category, override_value, default)
 		local akikomamaxplatesallowed = 4 --temp value :3
 		
 		for i=1,akikomamaxplatesallowed,1 do
-			local akikoplateid = self:akiko_id_ma_armorplate(i)
-			local akikodeterminemodifyvalue = akikoplateid and self:upgrade_value("player", akikoplateid) and self:upgrade_value("player", akikoplateid)[category] or 0
-			
+			local akikodeterminemodifyvalue = self:akiko_id_ma_armorplate_value(i)
 			self.akiko_ma_stat_modify = self.akiko_ma_stat_modify + akikodeterminemodifyvalue
 		end
 		
