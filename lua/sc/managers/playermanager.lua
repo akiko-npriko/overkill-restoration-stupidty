@@ -1831,7 +1831,7 @@ function PlayerManager:body_armor_value(category, override_value, default)
 	if self:has_category_upgrade("player","adaptive_plate_multiplier") then
 		--self.akiko_ma_stat_modify = 0
 		self.akiko_ma_stat_modify = category == "damage_shake" and 1 or 0 -- temp value :3
-		local akikomadefault = {
+		local akikomaarmorplatedefault = {
 			armor = 2, -- armor per plate - [20 armor (10*2)]
 			damage_shake = -0.05, -- flinch per plate - [-5 flinch (100*(-0.05))]
 			--trama_damage = 2.5, -- trama damage - [1% per 25 damage (10*2.5)] -- unused lol
@@ -1850,7 +1850,7 @@ function PlayerManager:body_armor_value(category, override_value, default)
 		
 		for i=1,akikomamaxplatesallowed,1 do
 			local akikoplateid = self:akiko_id_ma_armorplate(i)
-			local akikodeterminemodifyvalue = akikoplateid ~= nil and self:upgrade_value("player", akikoplateid) and self:upgrade_value("player", akikoplateid)[category] or akikomadefault[category] or 0
+			local akikodeterminemodifyvalue = akikoplateid ~= nil and self:upgrade_value("player", akikoplateid) and self:upgrade_value("player", akikoplateid)[category] or akikomaarmorplatedefault[category] or 0
 			
 			self.akiko_ma_stat_modify = self.akiko_ma_stat_modify + akikodeterminemodifyvalue
 		end
