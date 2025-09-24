@@ -1809,7 +1809,7 @@ end
 --Akiko Armor Plate Perk Deck (og. Hacker_lyx) 
 --Functions:
 
-function PlayerManager:akiko_id_ma_armorplate(laorder)
+function PlayerManager:akiko_id_ma_armorplate(laorder) -- I just realized the way code is made it wont default.... so uhh redo code to have this handle everything and prob rename this function in that case (choose value type shit)
 	if not self:has_category_upgrade("player", "akiko_ma_default_plate") or not laorder then
 		return false
 	end
