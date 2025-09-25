@@ -5995,11 +5995,12 @@ function UpgradesTweakData:_player_definitions()
 	self.values.player.akiko_ma_default_plate = {{ -- ik it saids only default_plate but it both of them
 		{	-- Basic Armor Plate Carrier
 			armor = 2, -- armor per plate - [20 armor (10*2)]
+			deflection = 0.2, -- deflection - [20 deflection (100*0.2)]
 			damage_shake = -0.05, -- flinch per plate - [-5 flinch (100*(-0.05))]
-			trama_damage = 1, -- trama damage - [1% per 10 damage (10*1)]
 		},
 		{	-- Basic Armor Plates
 			armor = 2, -- armor per plate - [20 armor (10*2)]
+			deflection = 0, -- deflection - [0 deflection (100*0)]
 			damage_shake = -0.05, -- flinch per plate - [-5 flinch (100*(-0.05))]
 			trama_damage = 1, -- trama damage - [1% per 10 damage (10*1)]
 		}
