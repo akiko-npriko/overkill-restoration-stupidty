@@ -5998,6 +5998,7 @@ function UpgradesTweakData:_player_definitions()
 			deflection = 0.05, -- deflection - [5 deflection (100*0.05)]
 			damage_shake = 1, -- flinch - [-5 flinch (100*(-0.05))]
 			skill_ammo_mul = 0.85, -- ammo pickup rate - [85% ammo pickup rate (100*0.85)]
+			stamina = 0.75, -- stamina - idk how to define this
 			--Rests of stats default to 0.. or should that is
 		},
 		{	-- Basic Armor Plates
