@@ -1844,8 +1844,6 @@ end
 
 function PlayerManager:body_armor_value(category, override_value, default)
 	if self:has_category_upgrade("player", "akiko_ma_default_plate") then
-		--self.akiko_ma_stat_modify = 0
-		self.akiko_ma_stat_modify = category == "damage_shake" and 1 or 0 -- temp value :3
 		local akikoarmorplatedynamicstat = {
 			"damage_shake",
 			"concealment",
