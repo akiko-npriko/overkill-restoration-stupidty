@@ -1868,7 +1868,7 @@ function PlayerManager:body_armor_value(category, override_value, default)
 		
 		for i=1,akikomamaxplatesallowed,1 do
 			local akikodeterminemodifyvalue = self:akiko_id_ma_armorplate_value(i, category)
-			self.akiko_ma_stat_modify = self.akiko_ma_stat_modify + akikodeterminemodifyvalue
+			self.akiko_ma_stat_modify = akikodeterminemodifyvalue ~= 0 and self.akiko_ma_stat_modify + akikodeterminemodifyvalue or self.akiko_ma_stat_modify
 		end
 		
 		return math.clamp(self.akiko_ma_stat_modify + akikoadditionalvalue, akikoclampmin, akikoclampmax)
