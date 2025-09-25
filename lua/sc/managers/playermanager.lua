@@ -1871,7 +1871,7 @@ function PlayerManager:body_armor_value(category, override_value, default)
 			self.akiko_ma_stat_modify = akikodeterminemodifyvalue ~= 0 and self.akiko_ma_stat_modify + akikodeterminemodifyvalue or self.akiko_ma_stat_modify
 		end
 		local akikototalvalues = akikoadditionalvalue ~= 0 and self.akiko_ma_stat_modify + akikoadditionalvalue or self.akiko_ma_stat_modify
-		return akikoclampmin ~= -math.huge and akikoclampmax ~= math.huge and math.clamp(akikototalvalues, akikoclampmin, akikoclampmax) or akikototalvalues
+		return (akikoclampmin ~= -math.huge or akikoclampmax ~= math.huge) and math.clamp(akikototalvalues, akikoclampmin, akikoclampmax) or akikototalvalues
 	end
 	
 	--Vanilla Code Below
