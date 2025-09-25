@@ -5995,7 +5995,7 @@ function UpgradesTweakData:_player_definitions()
 	self.values.player.akiko_ma_default_plate = {{ -- ik it saids only default_plate but it both of them
 		{	-- Basic Armor Plate Carrier
 			armor = 0, -- armor - [0 armor (10*0)]
-			deflection = 0.2, -- deflection - [20 deflection (100*0.2)]
+			deflection = 0.05, -- deflection - [5 deflection (100*0.05)]
 			damage_shake = 1, -- flinch - [-5 flinch (100*(-0.05))]
 		},
 		{	-- Basic Armor Plates
