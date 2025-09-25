@@ -5997,6 +5997,7 @@ function UpgradesTweakData:_player_definitions()
 			armor = 0, -- armor - [0 armor (10*0)]
 			deflection = 0.05, -- deflection - [5 deflection (100*0.05)]
 			damage_shake = 1, -- flinch - [-5 flinch (100*(-0.05))]
+			skill_ammo_mul = 0.8, -- ammo pickup rate - [80% ammo pickup rate (100*0.8)]
 		},
 		{	-- Basic Armor Plates
 			armor = 2, -- armor per plate - [20 armor (10*2)]
