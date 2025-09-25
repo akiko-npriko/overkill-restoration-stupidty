@@ -1808,22 +1808,38 @@ end
 
 --Akiko Armor Plate Perk Deck (og. Hacker_lyx) 
 --Functions:
+--Armor Plate Carriers Functions
+function PlayerManager:akiko_id_ma_armorplatecarrier() -- Recommended to not use this unless u know what to do...
+	if managers.player:has_category_upgrade("player","PLACEHOLDERUWU") then
+		return "PLACEHOLDERUWU"
+	else
+		return "akiko_ma_default_plate_carrier"
+	end
+end
 
-function PlayerManager:akiko_id_ma_armorplate(laorder)
+function PlayerManager:akiko_id_ma_armorplatecarrier_value(value_required)
+	value_required = tostring(value_required) or "mydudefuckingforgot"
+	local akikomaarmorplatecarrierdefault = self:upgrade_value("player", "akiko_ma_default_plate")[1] or {}
+	local akikoplatecarrierid = self:akiko_id_ma_armorplatecarrier()
+	return akikoplatecarrierid ~= "akiko_ma_default_plate_carrier" and self:upgrade_value("player", akikoplatecarrierid) and self:upgrade_value("player", akikoplatecarrierid)[value_required] or akikomaarmorplatecarrierdefault[value_required] or 0
+end
+
+--Armor Plates Functions
+function PlayerManager:akiko_id_ma_armorplate(laorder) -- Recommended to not use this unless u know what to do...
 	laorder = laorder or 1
 	if managers.player:has_category_upgrade("player","akiko_ceramic_imp_plate_" .. laorder) then
 		return "akiko_ceramic_imp_plate_" .. laorder
 	else
-		return "akiko_ma_default_plate"
+		return "akiko_ma_default_armor_plates"
 	end
 end
 
 function PlayerManager:akiko_id_ma_armorplate_value(laorder, value_required)
 	laorder = laorder or 1
 	value_required = tostring(value_required) or "mydudefuckingforgot"
-	local akikomaarmorplatedefault = self:upgrade_value("player", "akiko_ma_default_plate") or {}
+	local akikomaarmorplatedefault = self:upgrade_value("player", "akiko_ma_default_plate")[2] or {}
 	local akikoplateid = self:akiko_id_ma_armorplate(laorder)
-	return akikoplateid ~= "akiko_ma_default_plate" and self:upgrade_value("player", akikoplateid) and self:upgrade_value("player", akikoplateid)[value_required] or akikomaarmorplatedefault[value_required] or 0
+	return akikoplateid ~= "akiko_ma_default_armor_plates" and self:upgrade_value("player", akikoplateid) and self:upgrade_value("player", akikoplateid)[value_required] or akikomaarmorplatedefault[value_required] or 0
 end
 
 function PlayerManager:body_armor_value(category, override_value, default)
@@ -1849,6 +1865,8 @@ function PlayerManager:body_armor_value(category, override_value, default)
 		or math.huge --default value
 		
 		local akikomamaxplatesallowed = 4 --temp value :3
+		
+		self.akiko_ma_stat_modify = self:akiko_id_ma_armorplatecarrier_value(category)
 		
 		for i=1,akikomamaxplatesallowed,1 do
 			local akikodeterminemodifyvalue = self:akiko_id_ma_armorplate_value(i, category)
