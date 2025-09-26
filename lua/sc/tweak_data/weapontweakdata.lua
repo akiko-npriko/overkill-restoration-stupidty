@@ -34725,16 +34725,16 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 		self.leet.ads_speed = 0.280
 		self.leet.damage_falloff = {
 			start_dist = 950,
-			end_dist = 5000,
-			min_mult = 0.2
+			end_dist = 3500,
+			min_mult = 0.25
 		}
 		self.leet.stats = {
 			damage = 60,
-			spread = 75,
-			recoil = 40,
+			spread = 70,
+			recoil = 30,
 			spread_moving = 6,
 			zoom = 1,
-			concealment = 28,
+			concealment = 30,
 			suppression = 20,
 			alert_size = 1,
 			extra_ammo = 101,
