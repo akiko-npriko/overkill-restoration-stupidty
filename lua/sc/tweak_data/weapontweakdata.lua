@@ -34697,6 +34697,7 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 	-- [[Akiko Edits]]
 	if self.leet then
 		self.leet.use_data.selection_index = 1
+		self.leet.is_bullpup = true
 		--self.leet.desc_id = "bm_menu_sc_leet_desc"
 		--self.leet.has_description = true
 		self.leet.categories = {
@@ -34708,11 +34709,10 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 		self.leet.AMMO_MAX = 60
 		self.leet.CLIP_AMMO_MAX = 10
 		self.leet.FIRE_MODE = "single"
+		self.leet.armor_piercing_chance = 0.75
 		self.leet.can_shoot_through_enemy = true
-		self.leet.can_shoot_through_wall = false
-		self.leet.armor_piercing_chance = 0.5
+		self.leet.can_shoot_through_enemy_unlim = true
 		self.leet.fire_mode_data.fire_rate = 0.1
-		self.leet.panic_suppression_chance = 0.05
 		self.leet.kick = self.stat_info.kick_tables.moderate_kick
 		self.leet.kick_pattern = {
 			{0, self.stat_info.kick_tables.vertical_kick},
