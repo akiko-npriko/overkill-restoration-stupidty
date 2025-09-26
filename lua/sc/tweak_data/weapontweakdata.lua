@@ -34706,7 +34706,7 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 		}
 		self.leet.recategorize = {"dmr_ar"}
 		self.leet.damage_type = "sniper"
-		self.leet.AMMO_MAX = 60
+		--self.leet.AMMO_MAX = 30
 		self.leet.CLIP_AMMO_MAX = 10
 		self.leet.FIRE_MODE = "single"
 		self.leet.armor_piercing_chance = 0.75
@@ -34724,17 +34724,17 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 		self.leet.supported = true
 		self.leet.ads_speed = 0.280
 		self.leet.damage_falloff = {
-			start_dist = 1000,
+			start_dist = 950,
 			end_dist = 5000,
-			min_mult = 0.25
+			min_mult = 0.2
 		}
 		self.leet.stats = {
 			damage = 60,
-			spread = 80,
-			recoil = 55,
+			spread = 75,
+			recoil = 40,
 			spread_moving = 6,
 			zoom = 1,
-			concealment = 24,
+			concealment = 28,
 			suppression = 20,
 			alert_size = 1,
 			extra_ammo = 101,
