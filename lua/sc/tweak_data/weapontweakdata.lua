@@ -34698,8 +34698,8 @@ Hooks:PostHook( WeaponTweakData, "init", "SC_weapons", function(self)
 	if self.leet then
 		self.leet.use_data.selection_index = 1
 		self.leet.is_bullpup = true
-		--self.leet.desc_id = "bm_menu_sc_leet_desc"
-		--self.leet.has_description = true
+		self.leet.desc_id = "bm_w_leet_desc"
+		self.leet.has_description = true
 		self.leet.categories = {
 			"assault_rifle",
 			"dmr_h",
