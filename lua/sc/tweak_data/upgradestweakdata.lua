@@ -6003,7 +6003,7 @@ function UpgradesTweakData:_player_definitions()
 		},
 		{	-- Basic Armor Plates
 			armor = 2, -- armor per plate - [20 armor (10*2)]
-			deflection = 0, -- deflection - [0 deflection (100*0)]
+			--deflection = 0, -- deflection - [0 deflection (100*0)]
 			damage_shake = -0.05, -- flinch per plate - [-5 flinch (100*(-0.05))]
 			trama_damage = 1, -- trama damage - [1% per 10 damage (10*1)]
 		}
