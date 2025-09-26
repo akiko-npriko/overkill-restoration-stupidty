@@ -1808,6 +1808,11 @@ end
 
 --Akiko Armor Plate Perk Deck (og. Hacker_lyx) 
 --Functions:
+
+function PlayerManager:akiko_grab_multiplier_trama_damage(lavalue)
+	return (1 - self.akiko_tramadamage_ap[lavalue])
+end
+
 --Armor Plate Carriers Functions
 function PlayerManager:akiko_id_ma_armorplatecarrier() -- Recommended to not use this unless u know what to do...
 	if managers.player:has_category_upgrade("player","PLACEHOLDERUWU") then
