@@ -1853,7 +1853,7 @@ function PlayerManager:akiko_id_ma_armorplate_value(laorder, value_required)
 	return akikoplateid ~= "akiko_ma_default_armor_plates" and self:upgrade_value("player", akikoplateid) and self:upgrade_value("player", akikoplateid)[value_required] or akikomaarmorplatedefault[value_required] or 0
 end
 
-function PlayerManager:body_armor_value(category, override_value, default)
+function PlayerManager:body_armor_value(category, override_value, default) -- find out why this breaks armor functionality
 	if self:has_category_upgrade("player", "akiko_ma_default_plate") then
 		local akikoarmorplatedynamicstat = {
 			"damage_shake",
