@@ -1809,8 +1809,8 @@ end
 --Akiko Armor Plate Perk Deck (og. Hacker_lyx) 
 --Functions:
 
-function PlayerManager:akiko_grab_multiplier_trama_damage(lavalue)
-	return (1 - self.akiko_tramadamage_ap[lavalue])
+function PlayerManager:akiko_addto_trama_damage(laorder, laaddition)
+	return math.clamp(math.floor(self.akiko_tramadamage_ap[laorder] + (laaddition)),0,100)
 end
 
 --Armor Plate Carriers Functions

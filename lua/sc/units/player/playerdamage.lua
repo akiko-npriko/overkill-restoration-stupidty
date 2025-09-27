@@ -4,7 +4,6 @@ PlayerDamage._UPPERS_COOLDOWN = tweak_data.upgrades.values.first_aid_kit.uppers_
 
 --Akiko Armor Plate Values
 PlayerDamage.pre_regen_armor = PlayerDamage.pre_regen_armor or 0
-PlayerDamage.akiko_apmaxtramadamage = PlayerDamage.akiko_apmaxtramadamage or 100 -- at 100 or above plates fail to regen (below 100 prevents failure)
 
 function PlayerDamage:init(unit)
 	self._lives_init = tweak_data.player.damage.LIVES_INIT
@@ -1884,11 +1883,11 @@ function PlayerDamage:_calc_armor_damage(attack_data)
 			--Trama Damage Test Stuff (Rn it techinally every 10 damage 1% trama applies to armor plate.. it not actually that but it close enough)
 			local tramaapstat = math.clamp(s+1, 1, 5) -- rework this later plus rename variable too
 			if tramaapstat < 5 then -- this if then too ig
-				self.akiko_apmaxtramadamage = 100
 				local akikodeterminemodifyvalue = pm:akiko_id_ma_armorplate_value(tramaapstat, "trama_damage")
 				
 				--maybe redo how below is formulated.. idk
-				pm.akiko_tramadamage_ap[tramaapstat] = math.clamp(math.floor(pm.akiko_tramadamage_ap[tramaapstat] + (apc_damage/akikodeterminemodifyvalue)),0,self.akiko_apmaxtramadamage)
+				local akiko_add = apc_damage/akikodeterminemodifyvalue
+				pm.akiko_tramadamage_ap[tramaapstat] = pm:akiko_addto_trama_damage(tramaapstat, akiko_add)
 				if managers.chat then
 					managers.chat:send_message(ChatManager.GAME, "Stupid Crap", "Trama Damage% " .. pm.akiko_tramadamage_ap[tramaapstat])
 					managers.chat:send_message(ChatManager.GAME, "Stupid Crap", "STAGEE " .. tramaapstat)
