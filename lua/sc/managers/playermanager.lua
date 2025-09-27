@@ -1809,6 +1809,12 @@ end
 --Akiko Armor Plate Perk Deck (og. Hacker_lyx) 
 --Functions:
 
+function PlayerManager:akiko_damage_to_trama_damage(laorder, ap_damage)
+	laorder = laorder or 1
+	ap_damage = ap_damage or 0
+	return (ap_damage/self:akiko_id_ma_armorplate_value(laorder, "trama_damage")) or 0
+end
+
 function PlayerManager:akiko_addto_trama_damage(laorder, laaddition)
 	return math.clamp(math.floor(self.akiko_tramadamage_ap[laorder] + (laaddition)),0,100)
 end
