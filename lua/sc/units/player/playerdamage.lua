@@ -1889,11 +1889,8 @@ function PlayerDamage:_calc_armor_damage(attack_data)
 					managers.chat:send_message(ChatManager.GAME, "Stupid Crap", "STAGEE " .. tramaapstat)
 				end
 			end
-		end
-		--Dead Ass rewrite everything below... and move to new if then statement above ig
-		if pm:has_category_upgrade("player", "adaptive_plate_multiplier") then
-			local apc_damage = attack_data.damage
-			local stage, s, c = self:calc_adaptive_plate_stage(apc_damage)
+			
+			--Below truely needs rewriting...
 			--required variable above ig
 			if s > 0 and c then
 				self:set_armor(stage[s])
