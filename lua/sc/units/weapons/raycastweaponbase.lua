@@ -1207,13 +1207,21 @@ function InstantBulletBase:on_collision(col_ray, weapon_unit, user_unit, damage,
 	end
 
 	weapon_unit = alive(weapon_unit) and weapon_unit or nil
+	local weap_base = weapon_unit and weapon_unit:base()
 	local endurance_alive_chk = false
 
 	if hit_unit:damage() then
 		local body_dmg_ext = col_ray.body:extension() and col_ray.body:extension().damage
 
 		if body_dmg_ext then
-			local object_damage_mult = weapon_unit and weapon_unit.base and weapon_unit:base().get_object_damage_mult and weapon_unit:base():get_object_damage_mult() or 1
+			local tweak_data = weap_base and ((weap_base.weapon_tweak_data and weap_base:weapon_tweak_data()) or (weap_base._tweak_projectile_entry and tweak_data.projectiles[weap_base._tweak_projectile_entry]))
+			local object_damage_mult = (weapon_unit and weapon_unit.base and weapon_unit:base().get_object_damage_mult and weapon_unit:base():get_object_damage_mult()) or (tweak_data and tweak_data.object_damage_mult) or 1
+
+			local unit_base = body_dmg_ext._unit and body_dmg_ext._unit.base and body_dmg_ext._unit:base()
+			if unit_base and unit_base.has_tag and (unit_base:has_tag("taser") or unit_base:has_tag("boom")) then 
+				object_damage_mult = object_damage_mult * 3 --cheese method to negate the extra endurance that taser/grenadier bags have
+			end
+
 			local sync_damage = not blank and hit_unit:id() ~= -1
 			local network_damage = math.ceil(damage * 163.84)
 			local body_damage = network_damage / 163.84
@@ -1247,37 +1255,59 @@ function InstantBulletBase:on_collision(col_ray, weapon_unit, user_unit, damage,
 		return
 	end
 
-	local do_shotgun_push, result, do_push, push_mul = nil
+	local do_shotgun_push, result, do_push, push_mul, headshot = nil
 	local hit_dmg_ext = hit_unit:character_damage()
 	local play_impact_flesh = not hit_dmg_ext or not hit_dmg_ext._no_blood
 
 	if not blank and weapon_unit then
-		local weap_base = weapon_unit:base()
-
 		if weap_base and weap_base.chk_shield_knock then
 			weap_base:chk_shield_knock(hit_unit, col_ray, weapon_unit, user_unit, damage)
 		end
 
 		if hit_dmg_ext and hit_dmg_ext.damage_bullet then
 			local was_alive = not hit_dmg_ext:dead()
-			local armor_piercing, knock_down, stagger, variant = nil
+			local armor_piercing, knock_down, stagger, variant, falloff_start = nil
 
 			if weap_base then
+				can_push = (weap_base.near_falloff_distance and col_ray.distance and col_ray.distance <= weap_base.near_falloff_distance) 
 				armor_piercing = weap_base.has_armor_piercing and weap_base:has_armor_piercing()
-				knock_down =(weap_base._natascha and col_ray.distance and col_ray.distance <= weap_base._natascha) or (weap_base.is_knock_down and weap_base:is_knock_down())
+				knock_down = (col_ray.distance and (weap_base._natascha and col_ray.distance <= weap_base._natascha) or 
+									(weap_base._rays and weap_base._rays > 1 and col_ray.distance <= 300)) or 
+								(weap_base.is_knock_down and weap_base:is_knock_down())
 				stagger = weap_base.is_stagger and weap_base:is_stagger()
 				variant = weap_base.variant and weap_base:variant()
 			end
 
 			result = self:give_impact_damage(col_ray, weapon_unit, user_unit, damage, armor_piercing, false, knock_down, stagger, variant)
 
+			--[[
+			if (weap_base._natascha and col_ray.distance and col_ray.distance <= weap_base._natascha) and 
+				result and result.attack_data and result.attack_data.damage and result.attack_data.damage > 0 then
+				hit_dmg_ext:stun_hit({
+					variant = "stun",
+					damage = 0,
+					attacker_unit = user_unit,
+					weapon_unit = weapon_unit,
+					col_ray = col_ray or {
+						position = hit_unit:position(),
+						ray = Vector3(0, 0, 1)
+					}
+				})
+			end
+			--]]
+
 			if result ~= "friendly_fire" then
 				local has_died = hit_dmg_ext:dead()
 				do_push = true
 				push_mul = self:_get_character_push_multiplier(weapon_unit, was_alive and has_died)
 
-				if weap_base and result and result.type == "death" and weap_base.should_shotgun_push and weap_base:should_shotgun_push() then
-					do_shotgun_push = true
+				local check_col_ray_head = col_ray and col_ray.unit and col_ray.unit:character_damage() and col_ray.unit:character_damage()._ids_head_body_name and col_ray.body and col_ray.body:name() and col_ray.body:name() == col_ray.unit:character_damage()._ids_head_body_name
+			
+				if weap_base and result and result.type == "death" then
+					--headshot = check_col_ray_head
+					if weap_base.should_shotgun_push and weap_base:should_shotgun_push() and (can_push or (col_ray.distance and col_ray.distance <= 600)) then
+						do_shotgun_push = true
+					end
 				end
 			else
 				play_impact_flesh = false
@@ -1293,11 +1323,29 @@ function InstantBulletBase:on_collision(col_ray, weapon_unit, user_unit, damage,
 		managers.game_play_central:physics_push(col_ray, push_mul)
 	end
 
+	if headshot then
+		local mov_ext = col_ray.unit and col_ray.unit.movement and col_ray.unit:movement()
+		local full_body_action = mov_ext and mov_ext:get_action(1)
+		DelayedCalls:Add("tbox_shot", 0.09, function ()
+			local hurt_ext = full_body_action and full_body_action.force_ragdoll and full_body_action:force_ragdoll(true)
+			managers.game_play_central:physics_push(col_ray, push_mul)
+		end)
+	end
+
 	if do_shotgun_push then
 		local dir = col_ray.ray
 		mvector3.multiply(dir, 0.75)
 		--managers.game_play_central:do_shotgun_push(col_ray.unit, col_ray.position, dir, col_ray.distance, user_unit)
 	end
+
+	--[[
+	if do_shotgun_push then
+		local mov_ext = col_ray.unit and col_ray.unit.movement and col_ray.unit:movement()
+		local full_body_action = mov_ext and mov_ext:get_action(1)
+		local hurt_ext = full_body_action and full_body_action.force_ragdoll and full_body_action:force_ragdoll(true)
+		managers.game_play_central:physics_push(col_ray, push_mul * 2)
+	end
+	--]]
 
 	--Unsure if the old version of playing impact effects will work with the new stuff, leaving the new stuff as-is for now
 	if play_impact_flesh then
@@ -1851,7 +1899,7 @@ function InstantExplosiveBulletBase:on_collision(col_ray, weapon_unit, user_unit
 		mvec3_sub(tmp_vec1, tmp_vec2)
 		local overkill = managers.player:temporary_upgrade_value("temporary", "overkill_damage_multiplier", 1)
 		local weap_base = weapon_unit:base()
-		local tweak_data = weap_base and weap_base.weapon_tweak_data and weap_base:weapon_tweak_data()
+		local tweak_data = weap_base and ((weap_base.weapon_tweak_data and weap_base:weapon_tweak_data()) or (weap_base._tweak_projectile_entry and tweak_data.projectiles[weap_base._tweak_projectile_entry]))
 		local di_percent = (tweak_data and tweak_data.direct_damage_percent) or 0.5
 		self.super:on_collision(col_ray, weapon_unit, user_unit, (damage * di_percent) * overkill, blank, no_sound)
 		self:on_collision_server(tmp_vec1, col_ray.normal, damage * 1, user_unit, weapon_unit, managers.network:session():local_peer():id())
@@ -1865,7 +1913,7 @@ function InstantExplosiveBulletBase:on_collision(col_ray, weapon_unit, user_unit
 	return nil
 end
 
-function InstantExplosiveBulletBase:on_collision_server(position, normal, damage, user_unit, weapon_unit, owner_peer_id, owner_selection_index)
+function InstantExplosiveBulletBase:on_collision_server(position, normal, damage, user_unit, weapon_unit, owner_peer_id, owner_selection_index, object_damage_mult)
 	local slot_mask = managers.slot:get_mask("explosion_targets")
 
 	managers.explosion:play_sound_and_effects(position, normal, self.RANGE, self.EFFECT_PARAMS)
@@ -1877,6 +1925,7 @@ function InstantExplosiveBulletBase:on_collision_server(position, normal, damage
 		collision_slotmask = slot_mask,
 		curve_pow = self.CURVE_POW,
 		damage = damage,
+		obj_damage_mult = object_damage_mult or 1,
 		player_damage = 0,
 		alert_radius = self.ALERT_RADIUS,
 		ignore_unit = weapon_unit,
@@ -2014,9 +2063,9 @@ function InstantSnowballBase:on_collision(col_ray, weapon_unit, user_unit, damag
 		local weap_base = weapon_unit:base()
 		local tweak_data = weap_base and ((weap_base.weapon_tweak_data and weap_base:weapon_tweak_data()) or (weap_base._tweak_projectile_entry and tweak_data.projectiles[weap_base._tweak_projectile_entry]))
 		local di_percent = (tweak_data and tweak_data.direct_damage_percent) or 0.5
-		log(tostring( weap_base._tweak_projectile_entry ))
+		local object_damage_mult = (tweak_data and tweak_data.explosion_object_damage_mult) or 1
 		self.super.super:on_collision(col_ray, weapon_unit, user_unit, (damage * di_percent) * overkill, blank, no_sound)
-		self:on_collision_server(tmp_vec1, col_ray.normal, damage * 1, user_unit, weapon_unit, managers.network:session():local_peer():id())
+		self:on_collision_server(tmp_vec1, col_ray.normal, damage * 1, user_unit, weapon_unit, managers.network:session():local_peer():id(), nil, object_damage_mult)
 
 		return {
 			variant = "explosion",

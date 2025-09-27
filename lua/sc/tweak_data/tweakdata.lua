@@ -615,7 +615,7 @@ tweak_data.projectiles.wpn_prj_ace.damage = 24
 tweak_data.projectiles.wpn_prj_ace.adjust_z = 0
 
 --Shuriken
-tweak_data.projectiles.wpn_prj_four.damage = 20
+tweak_data.projectiles.wpn_prj_four.damage = 12
 tweak_data.projectiles.wpn_prj_four.adjust_z = 0
 
 --Throwing Knife--
@@ -623,7 +623,7 @@ tweak_data.projectiles.wpn_prj_target.damage = 24
 tweak_data.projectiles.wpn_prj_target.adjust_z = 0
 
 --Javelin--
-tweak_data.projectiles.wpn_prj_jav.damage = 36
+tweak_data.projectiles.wpn_prj_jav.damage = 54
 tweak_data.projectiles.wpn_prj_jav.adjust_z = 0
 
 --Throwing axe--
@@ -639,7 +639,7 @@ if tweak_data.projectiles.xmas_snowball then
 	tweak_data.projectiles.xmas_snowball.curve_pow = 0.5
 	tweak_data.projectiles.xmas_snowball.range = 100
 	tweak_data.projectiles.xmas_snowball.adjust_z = 0
-	tweak_data.projectiles.xmas_snowball.direct_damage_percent = 0
+	tweak_data.projectiles.xmas_snowball.direct_damage_percent = 0.5
 	tweak_data.projectiles.xmas_snowball.object_damage_mult = 2
 	tweak_data.projectiles.xmas_snowball.explosion_object_damage_mult = 3
 end
