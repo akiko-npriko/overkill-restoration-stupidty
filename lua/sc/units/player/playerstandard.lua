@@ -1396,7 +1396,7 @@ function PlayerStandard:_check_action_primary_attack(t, input, params)
 							end
 							
 							DelayedCalls:Add("clip_empty", 0.1, function ()
-								if not self:_changing_weapon() and not self:_is_charging_weapon() and not self:_is_meleeing() and not self:_is_reloading() and weap_base:clip_empty() and not manual_reloads then
+								if not self.tased and not self:_changing_weapon() and not self:_is_charging_weapon() and not self:_is_meleeing() and not self:_is_reloading() and weap_base:clip_empty() and not manual_reloads then
 									self:_start_action_reload_enter(t + 0.1)
 								end
 							end)
@@ -4761,7 +4761,7 @@ end
 function PlayerStandard:_find_pickups(t)
 	local pickups = World:find_units_quick("sphere", self._unit:movement():m_pos(), self._pickup_area, self._slotmask_pickups)
 	local grenade_tweak = tweak_data.blackmarket.projectiles[managers.blackmarket:equipped_grenade()]
-	local may_find_grenade = not grenade_tweak.base_cooldown --and managers.player:has_category_upgrade("player", "regain_throwable_from_ammo")
+	local may_find_grenade = not grenade_tweak.base_cooldown or grenade_tweak.pickup_cooldown_t ~= nil --and managers.player:has_category_upgrade("player", "regain_throwable_from_ammo")
 
 	for _, pickup in ipairs(pickups) do
 		if pickup:pickup() and pickup:pickup():pickup(self._unit) then
