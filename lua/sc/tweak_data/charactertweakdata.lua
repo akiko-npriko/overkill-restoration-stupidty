@@ -17832,7 +17832,7 @@ function CharacterTweakData:_presets(tweak_data)
 			end
 		end
 	end
-	local hostage_follow_speed_multiplier = 1.5	-- Speed hostage will travel while cable tied
+	local hostage_follow_speed_multiplier = 1.25	-- Speed hostage will travel while cable tied
 	presets.move_speed = {
 		civ_fast = {
 			stand = {
