@@ -2349,15 +2349,15 @@ Hooks:Add("LocalizationManagerPostInit", "SC_Localization_Weapons_Eng", function
 		["bm_grenade_poison_gas_grenade_desc_short"] = "Damage: #{stats_positive}#300 over 10s## \nRadius: #{skill_color}#6m## \nDuration (Gas Cloud): #{skill_color}#12s## \nFuse: #{skill_color}#1s after remaining stationary##\nAmmo Box Pickup Chance: #{skill_color}#$pickup## \n- #{skill_color}#100%## chance to stun most enemies in range of the gas\n- #{important_1}#Shields, Bulldozers, Medics, Grenadiers and Captains are immune to its stunning effects##\n- #{important_1}#Enemies cannot be poisoned by the same gas cloud more than once##",
 
 		--Throwing Cards
-		["bm_wpn_prj_ace_desc"] = "Damage: #{skill_color}#$damage##\nAmmo Box Pickup Chance: #{skill_color}#$pickup## \n- #{skill_color}#Can be retrieved## \n\nThrowing cards with added weight and a razor edge. A real killer hand of cards.",
-		--Throwing Stars
-		["bm_wpn_prj_four_desc"] = "Damage (Impact): #{skill_color}#$damage## \nDamage (Poison): #{stats_positive}#120 over 4s##\nAmmo Box Pickup Chance: #{skill_color}#$pickup## \n- #{skill_color}#Can be retrieved##\n- #{skill_color}#50%## chance to stun most enemies every #{skill_color}#0.5s##\n- #{important_1}#Shields, Bulldozers, Grenadiers and Captains are immune to its stunning effects.## \n\nThe throwing star has a long history filled with blood and battle. These poison coated stainless steel stars will pose a lethal threat to anyone in your way.",
+		["bm_wpn_prj_ace_desc"] = "Damage: #{skill_color}#$damage##\nAmmo Box Pickup Chance: #{skill_color}#$pickup## \n- #{skill_color}#Can be retrieved##\n- #{skill_color}#Hits and kills trigger melee skills## \n\nThrowing cards with added weight and a razor edge. A real killer hand of cards.",
+		--Throwing Stars/Shuriken
+		["bm_wpn_prj_four_desc"] = "Damage (Impact): #{skill_color}#$damage## \nDamage (Poison): #{stats_positive}#120 over 4s##\nAmmo Box Pickup Chance: #{skill_color}#$pickup## \n- #{skill_color}#Can be retrieved##\n- #{risk}#Direct## #{skill_color}#hits and kills trigger melee skills##\n- #{skill_color}#50%## chance to stun most enemies every #{skill_color}#0.5s##\n- #{important_1}#Shields, Bulldozers, Grenadiers and Captains are immune to its stunning effects.## \n\nThe throwing star has a long history filled with blood and battle. These poison coated stainless steel stars will pose a lethal threat to anyone in your way.",
 		--Javelin
-		["bm_wpn_prj_jav_desc"] = "Damage: #{skill_color}#$damage##\nAmmo Box Pickup Chance: #{skill_color}#$pickup## \n- #{skill_color}#Can be retrieved## \n\nWith its origins lost in cloudy pre-history, the javelin is a simple weapon. After all, it's a thrown stick with a pointy end that ruins someone's day.",
+		["bm_wpn_prj_jav_desc"] = "Damage: #{skill_color}#$damage##\nAmmo Box Pickup Chance: #{skill_color}#$pickup## \n- #{skill_color}#Can be retrieved##\n- #{skill_color}#Hits and kills trigger melee skills## \n\nWith its origins lost in cloudy pre-history, the javelin is a simple weapon. After all, it's a thrown stick with a pointy end that ruins someone's day.",
 		--Throwing Axe
-		["bm_wpn_prj_hur_desc"] = "Damage: #{skill_color}#$damage##\nAmmo Box Pickup Chance: #{skill_color}#$pickup## \n- #{skill_color}#Can be retrieved## \n\nThey say a sharp axe is never wrong. A thrown sharp axe couldn't be any more right.",
+		["bm_wpn_prj_hur_desc"] = "Damage: #{skill_color}#$damage##\nAmmo Box Pickup Chance: #{skill_color}#$pickup## \n- #{skill_color}#Can be retrieved##\n- #{skill_color}#Hits and kills trigger melee skills## \n\nThey say a sharp axe is never wrong. A thrown sharp axe couldn't be any more right.",
 		--Throwing Knife
-		["bm_wpn_prj_target_desc"] = "Damage: #{skill_color}#$damage##\nAmmo Box Pickup Chance: #{skill_color}#$pickup## \n- #{skill_color}#Can be retrieved## \n\nA solid backup plan and a reliable tactic for a precise and silent kill.",
+		["bm_wpn_prj_target_desc"] = "Damage: #{skill_color}#$damage##\nAmmo Box Pickup Chance: #{skill_color}#$pickup## \n- #{skill_color}#Can be retrieved##\n- #{skill_color}#Hits and kills trigger melee skills## \n\nA solid backup plan and a reliable tactic for a precise and silent kill.",
 
 		--Perk Deck Throwables
 		["bm_grenade_copr_ability"] = "Ampule",
@@ -6225,7 +6225,7 @@ Hooks:Add("LocalizationManagerPostInit", "SC_Localization_Perk_Decks_Eng", funct
 
 		--CopyCat--
 		["menu_st_spec_23"] = "Copycat",
-		["menu_deck23_1_desc"] = "Killing #{skill_color}#$perk_value_1## enemies reloads your holstered weapon.\n\n#{risk}#NOTE: Kills are counted separately between weapons and the counter only resets once you trigger a reload for the holstered weapon.##\n\nYou swap between weapons #{skill_color}#$perk_value_2## faster.",
+		["menu_deck23_1_desc"] = "Killing #{skill_color}#$perk_value_1## enemies with your drawn weapon reloads your holstered weapon.\n\n#{risk}#NOTE: Kills are counted separately between weapons and the counter only resets once you trigger a reload for the holstered weapon.##\n\nYou swap between weapons #{skill_color}#$perk_value_2## faster.",
 		["menu_deck23_1_short"] = "Killing #{skill_color}#$perk_value_1## enemies reloads your holstered weapon.\n\nYou swap between weapons #{skill_color}#$perk_value_2## faster.",
 		["menu_deck23_1_1_desc"] = "You gain #{skill_color}#$perk_value_1## more health.",
 		["menu_deck23_1_1_short"] = "You gain #{skill_color}#$perk_value_1## more health.",

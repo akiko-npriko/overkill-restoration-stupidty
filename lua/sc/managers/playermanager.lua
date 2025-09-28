@@ -235,6 +235,283 @@ function PlayerManager:movement_speed_multiplier(speed_state, bonus_multiplier, 
 	return multiplier
 end
 
+function PlayerManager:on_killshot(killed_unit, variant, headshot, weapon_id)
+	local player_unit = self:player_unit()
+
+	if not player_unit then
+		return
+	end
+
+	if CopDamage.is_civilian(killed_unit:base()._tweak_table) then
+		return
+	end
+
+	local twb = tweak_data.blackmarket
+
+	local weapon_melee = weapon_id and twb.melee_weapons and twb.melee_weapons[weapon_id] and true
+
+	local weapon_proj = weapon_id and twb.projectiles and twb.projectiles[weapon_id]
+	if weapon_proj and weapon_proj.count_as_melee and variant == "bullet" then
+		variant = "melee"
+	end
+
+	if killed_unit:brain().surrendered and killed_unit:brain():surrendered() and (variant == "melee" or weapon_melee) then
+		managers.custom_safehouse:award("daily_honorable")
+	end
+
+	managers.modifiers:run_func("OnPlayerManagerKillshot", player_unit, killed_unit:base()._tweak_table, variant)
+
+	local equipped_unit = self:get_current_state()._equipped_unit
+	self._num_kills = self._num_kills + 1
+
+	if self._num_kills % self._SHOCK_AND_AWE_TARGET_KILLS == 0 and self:has_category_upgrade("player", "automatic_faster_reload") then
+		self:_on_enter_shock_and_awe_event()
+	end
+	
+	local selection_index = equipped_unit and equipped_unit:base() and equipped_unit:base():selection_index() or 0
+	local update_secondary_reload_primary = selection_index == 1 and self._has_secondary_reload_primary
+	local update_primary_reload_secondary = selection_index == 2 and self._has_primary_reload_secondary
+	local equipped_weapon_id = equipped_unit and equipped_unit:base() and equipped_unit:base():get_name_id()
+	update_secondary_reload_primary = update_secondary_reload_primary and weapon_id == equipped_weapon_id
+	update_primary_reload_secondary = update_primary_reload_secondary and weapon_id == equipped_weapon_id
+
+	if update_secondary_reload_primary then
+		local kills_to_reload = self:upgrade_value("player", "secondary_reload_primary", 10)
+		local secondary_kills = self:get_property("secondary_reload_primary_kills", 0) + 1
+
+		if kills_to_reload <= secondary_kills then
+			local primary_unit = player_unit:inventory():unit_by_selection(2)
+			local primary_base = alive(primary_unit) and primary_unit:base()
+			local can_reload = primary_base and primary_base.can_reload and primary_base:can_reload()
+
+			if can_reload then
+				primary_base:on_reload(nil, true)
+				managers.statistics:reloaded()
+				managers.hud:set_ammo_amount(primary_base:selection_index(), primary_base:ammo_info())
+				player_unit:sound():play("perkdeck_activate")
+			end
+
+			secondary_kills = 0
+		end
+
+		self:set_property("secondary_reload_primary_kills", secondary_kills)
+	elseif update_primary_reload_secondary then
+		local kills_to_reload = self:upgrade_value("player", "primary_reload_secondary", 10)
+		local primary_kills = self:get_property("primary_reload_secondary_kills", 0) + 1
+
+		if kills_to_reload <= primary_kills then
+			local secondary_unit = player_unit:inventory():unit_by_selection(1)
+			local secondary_base = alive(secondary_unit) and secondary_unit:base()
+			local can_reload = secondary_base and secondary_base.can_reload and secondary_base:can_reload()
+
+			if can_reload then
+				secondary_base:on_reload(nil, true)
+				managers.statistics:reloaded()
+				managers.hud:set_ammo_amount(secondary_base:selection_index(), secondary_base:ammo_info())
+				player_unit:sound():play("perkdeck_activate")
+			end
+
+			primary_kills = 0
+		end
+
+		self:set_property("primary_reload_secondary_kills", primary_kills)
+	end	
+
+	self._message_system:notify(Message.OnEnemyKilled, nil, equipped_unit, variant, killed_unit)
+
+	if self._saw_panic_when_kill and variant ~= "melee" then
+		local equipped_unit = self:get_current_state()._equipped_unit:base()
+		local check_id = equipped_unit and equipped_unit._name_id
+
+		--Allow all special weapons to spread panic with skill.
+		if weapon_id == check_id and 
+			(equipped_unit:is_category("saw") or equipped_unit:is_category("grenade_launcher") or equipped_unit:is_category("bow") or equipped_unit:is_category("crossbow")) then
+			local pos = player_unit:position()
+			local skill = self:upgrade_value("saw", "panic_when_kill")
+
+			if skill and type(skill) ~= "number" then
+				local area = skill.area
+				local chance = skill.chance
+				local amount = skill.amount
+				local enemies = World:find_units_quick("sphere", pos, area, 12, 21)
+
+				for i, unit in ipairs(enemies) do
+					if unit:character_damage() then
+						unit:character_damage():build_suppression(amount, chance)
+					end
+				end
+			end
+		end
+	end
+
+	local t = Application:time()
+	local damage_ext = player_unit:character_damage()
+
+	if self:has_category_upgrade("player", "kill_change_regenerate_speed") then
+		local amount = self:body_armor_value("skill_kill_change_regenerate_speed", nil, 1)
+		local multiplier = self:upgrade_value("player", "kill_change_regenerate_speed", 0)
+
+		damage_ext:change_regenerate_speed(amount * multiplier, tweak_data.upgrades.kill_change_regenerate_speed_percentage)
+	end
+
+	local gain_throwable_per_kill = managers.player:upgrade_value("team", "crew_throwable_regen", 0)
+
+	if gain_throwable_per_kill ~= 0 then
+		self._throw_regen_kills = (self._throw_regen_kills or 0) + 1
+
+		if gain_throwable_per_kill < self._throw_regen_kills then
+			managers.player:add_grenade_amount(1, true)
+
+			self._throw_regen_kills = 0
+		end
+	end
+	
+	--Leech stuff
+	if self:has_activate_temporary_upgrade("temporary", "copr_ability") then
+		local kill_life_leech = self:upgrade_value_nil("player", "copr_kill_life_leech")
+		local static_damage_ratio = self:upgrade_value_nil("player", "copr_static_damage_ratio")
+		local static_damage_ratio_mult = self:upgrade_value_nil("player", "copr_static_damage_ratio_mult") or 1
+		static_damage_ratio = static_damage_ratio * static_damage_ratio_mult
+		
+		if kill_life_leech and static_damage_ratio and damage_ext then
+			self._copr_kill_life_leech_num = (self._copr_kill_life_leech_num or 0) + 1
+
+			if kill_life_leech <= self._copr_kill_life_leech_num then
+				self._copr_kill_life_leech_num = 0
+				local current_health_ratio = damage_ext:health_ratio()
+				local wanted_health_ratio = math.floor((current_health_ratio + 0.01 + static_damage_ratio) / static_damage_ratio) * static_damage_ratio
+				local health_regen = wanted_health_ratio - current_health_ratio
+
+				if health_regen > 0 then
+					damage_ext:restore_health(health_regen)
+					damage_ext:on_copr_killshot()
+				end
+			end
+		end
+	end
+
+	--Yakuza dodge meter generation.
+	if damage_ext:health_ratio() < 1 then
+		if variant == "melee" then
+			damage_ext:fill_dodge_meter_yakuza(self:upgrade_value("player", "melee_kill_dodge_regen", 0) + self:upgrade_value("player", "kill_dodge_regen"))
+			damage_ext:give_yakuza_bonus_grace()
+		else
+			damage_ext:fill_dodge_meter_yakuza(self:upgrade_value("player", "kill_dodge_regen"))
+		end
+	end
+
+	if variant == "melee" then
+		--Biker Armor Regen
+		if self:has_category_upgrade("player", "biker_armor_regen") then
+			damage_ext:tick_biker_armor_regen(self:upgrade_value("player", "biker_armor_regen")[3])
+		end
+		if weapon_melee then
+			--Boxing Glove Stamina Restore
+			local melee_weapon = tweak_data.blackmarket.melee_weapons[managers.blackmarket:equipped_melee_weapon()]
+			if melee_weapon.special_weapon and melee_weapon.special_weapon == "stamina_restore" then
+				player_unit:movement():add_stamina(player_unit:movement():_max_stamina())
+			end
+			if melee_weapon.special_weapon and melee_weapon.special_weapon == "charger" then
+				local current_state = self:get_current_state()
+				if current_state and current_state._state_data and current_state._state_data._charger_melee_active then
+					player_unit:movement():add_stamina(player_unit:movement():_max_stamina() * 0.1)
+				end
+			end
+		end
+	end
+
+	local equipped_unit = self:get_current_state()._equipped_unit
+	local weap_base = alive(equipped_unit) and equipped_unit.base and equipped_unit:base()
+	if weap_base and variant == "bullet" then
+		--for _, category in ipairs(weap_base:categories()) do
+			if self:has_category_upgrade("smg", "automatic_kills_to_damage") and weap_base:fire_mode() == "auto" then
+				local max = self:upgrade_value("smg", "automatic_kills_to_damage")[1]
+				local time = self:upgrade_value("smg", "automatic_kills_to_damage")[3]
+				self._merciless_t = time
+				self._merciless_stacks = math.clamp((self._merciless_stacks or 0) + 1, 0, max)
+				managers.hud:start_buff("body_expertise", self._merciless_t)
+				managers.hud:set_stacks("body_expertise", self._merciless_stacks)
+			end
+		--end
+	end
+
+	--New Socio
+	local new_socio_panic = 0
+	if self:has_category_upgrade("player", "buildup_meter") and variant then
+		new_socio_panic = self:_check_resmod_sociopath(player_unit, killed_unit, variant, headshot, weapon_id) or 0
+	end
+
+	local killshot_cooldown_reduction = (variant and variant == "melee" and tweak_data.upgrades.on_killshot_cooldown_reduction_melee) or tweak_data.upgrades.on_killshot_cooldown_reduction or 0
+
+	local regen_armor_bonus = self:upgrade_value("player", "killshot_regen_armor_bonus", 0)
+	local dist_sq = mvector3.distance_sq(player_unit:movement():m_pos(), killed_unit:movement():m_pos())
+	local close_combat_sq = tweak_data.upgrades.close_combat_distance * tweak_data.upgrades.close_combat_distance
+	
+	if dist_sq <= close_combat_sq then
+		if self:has_category_upgrade("player", "killshot_close_regen_armor_bonus") then
+			local killshot_close_regen_armor_bonus = self:upgrade_value("player", "killshot_close_regen_armor_bonus", 0)[1] * ((variant and variant == "melee" and self:upgrade_value("player", "killshot_close_regen_armor_bonus", 0)[2]) or 1)
+			regen_armor_bonus = regen_armor_bonus + killshot_close_regen_armor_bonus
+		end
+		local socio_panic_available = self._on_killshot_t and t > (self._on_killshot_t - killshot_cooldown_reduction) and self:has_category_upgrade("player", "killshot_close_panic_chance")
+		local panic_chance = new_socio_panic
+			+ (socio_panic_available and (self:upgrade_value("player", "killshot_close_panic_chance", 0) * ((variant and variant == "melee" and 2) or 1)) or 0)
+			+ self:upgrade_value("player", "killshot_extra_spooky_panic_chance", 0) --Add Haunt skill to panic chance.
+			+ self:upgrade_value("player", "killshot_spooky_panic_chance", 0) * self:player_unit():character_damage():get_missing_revives()
+		panic_chance = managers.modifiers:modify_value("PlayerManager:GetKillshotPanicChance", panic_chance)
+
+		if panic_chance > 0 or panic_chance == -1 then
+			local slotmask = managers.slot:get_mask("enemies")
+			local units = World:find_units_quick("sphere", player_unit:movement():m_pos(), tweak_data.upgrades.killshot_close_panic_range, slotmask)
+
+			for e_key, unit in pairs(units) do
+				if alive(unit) and unit:character_damage() and not unit:character_damage():dead() then
+					unit:character_damage():build_suppression(200, panic_chance)
+				end
+			end
+		end
+	end
+
+	--Crook (Formerly Sociopath) killshot cooldown and effects (THINGS NOT EXCLUSIVELY RELATED TO CROOK'S COOLDOWNS SHOULD NOT BE BELOW THIS)
+	if self._on_killshot_t and t < self._on_killshot_t then
+		if self:has_category_upgrade("player", "killshot_regen_armor_bonus") then
+			self._on_killshot_t = self._on_killshot_t - killshot_cooldown_reduction
+			managers.hud:change_cooldown("crook", -killshot_cooldown_reduction)
+		end
+		if self._on_killshot_t > t then
+			return
+		end
+	end
+
+	if damage_ext and regen_armor_bonus > 0 then
+		damage_ext:restore_armor(regen_armor_bonus)
+	end
+
+	local regen_health_bonus = 0
+
+	if variant == "melee" then
+		regen_health_bonus = regen_health_bonus + self:upgrade_value("player", "melee_kill_life_leech", 0)
+		player_unit:movement():add_stamina(player_unit:movement():_max_stamina() * self:upgrade_value("player", "melee_kill_stamina", 0))
+	end
+
+	if damage_ext and regen_health_bonus > 0 then
+		damage_ext:restore_health(regen_health_bonus)
+	end
+
+	self._on_killshot_t = t + (tweak_data.upgrades.on_killshot_cooldown or 0)
+
+	if self:has_category_upgrade("player", "killshot_regen_armor_bonus") then
+		managers.hud:start_buff("crook", (tweak_data.upgrades.on_killshot_cooldown or 0))
+	end
+
+	if _G.IS_VR then
+		local steelsight_multiplier = equipped_unit:base():enter_steelsight_speed_multiplier()
+		local stamina_percentage = (steelsight_multiplier - 1) * tweak_data.vr.steelsight_stamina_regen
+		local stamina_regen = player_unit:movement():_max_stamina() * stamina_percentage
+
+		player_unit:movement():add_stamina(stamina_regen)
+	end
+end
+
 function PlayerManager:_check_resmod_sociopath(player_unit, killed_unit, variant, headshot, weapon_id)
 	if not player_unit then
 		return 0
@@ -353,269 +630,19 @@ function PlayerManager:_check_resmod_sociopath(player_unit, killed_unit, variant
 	return new_socio_panic
 end
 
-function PlayerManager:on_killshot(killed_unit, variant, headshot, weapon_id)
-	local player_unit = self:player_unit()
-
-	if not player_unit then
-		return
-	end
-
-	if CopDamage.is_civilian(killed_unit:base()._tweak_table) then
-		return
-	end
-
-	local weapon_melee = weapon_id and tweak_data.blackmarket and tweak_data.blackmarket.melee_weapons and tweak_data.blackmarket.melee_weapons[weapon_id] and true
-
-	if killed_unit:brain().surrendered and killed_unit:brain():surrendered() and (variant == "melee" or weapon_melee) then
-		managers.custom_safehouse:award("daily_honorable")
-	end
-
-	managers.modifiers:run_func("OnPlayerManagerKillshot", player_unit, killed_unit:base()._tweak_table, variant)
-
-	local equipped_unit = self:get_current_state()._equipped_unit
-	self._num_kills = self._num_kills + 1
-
-	if self._num_kills % self._SHOCK_AND_AWE_TARGET_KILLS == 0 and self:has_category_upgrade("player", "automatic_faster_reload") then
-		self:_on_enter_shock_and_awe_event()
-	end
-	
-	local selection_index = equipped_unit and equipped_unit:base() and equipped_unit:base():selection_index() or 0
-
-	if selection_index == 1 and self._has_secondary_reload_primary then
-		local kills_to_reload = self:upgrade_value("player", "secondary_reload_primary", 10)
-		local secondary_kills = self:get_property("secondary_reload_primary_kills", 0) + 1
-
-		if kills_to_reload <= secondary_kills then
-			local primary_unit = player_unit:inventory():unit_by_selection(2)
-			local primary_base = alive(primary_unit) and primary_unit:base()
-			local can_reload = primary_base and primary_base.can_reload and primary_base:can_reload()
-
-			if can_reload then
-				primary_base:on_reload(nil, true)
-				managers.statistics:reloaded()
-				managers.hud:set_ammo_amount(primary_base:selection_index(), primary_base:ammo_info())
-			end
-
-			secondary_kills = 0
-		end
-
-		self:set_property("secondary_reload_primary_kills", secondary_kills)
-	elseif selection_index == 2 and self._has_primary_reload_secondary then
-		local kills_to_reload = self:upgrade_value("player", "primary_reload_secondary", 10)
-		local primary_kills = self:get_property("primary_reload_secondary_kills", 0) + 1
-
-		if kills_to_reload <= primary_kills then
-			local secondary_unit = player_unit:inventory():unit_by_selection(1)
-			local secondary_base = alive(secondary_unit) and secondary_unit:base()
-			local can_reload = secondary_base and secondary_base.can_reload and secondary_base:can_reload()
-
-			if can_reload then
-				secondary_base:on_reload(nil, true)
-				managers.statistics:reloaded()
-				managers.hud:set_ammo_amount(secondary_base:selection_index(), secondary_base:ammo_info())
-			end
-
-			primary_kills = 0
-		end
-
-		self:set_property("primary_reload_secondary_kills", primary_kills)
-	end	
-
-	self._message_system:notify(Message.OnEnemyKilled, nil, equipped_unit, variant, killed_unit)
-
-	if self._saw_panic_when_kill and variant ~= "melee" then
-		local equipped_unit = self:get_current_state()._equipped_unit:base()
-		local check_id = equipped_unit and equipped_unit._name_id
-
-		--Allow all special weapons to spread panic with skill.
-		if weapon_id == check_id and 
-			(equipped_unit:is_category("saw") or equipped_unit:is_category("grenade_launcher") or equipped_unit:is_category("bow") or equipped_unit:is_category("crossbow")) then
-			local pos = player_unit:position()
-			local skill = self:upgrade_value("saw", "panic_when_kill")
-
-			if skill and type(skill) ~= "number" then
-				local area = skill.area
-				local chance = skill.chance
-				local amount = skill.amount
-				local enemies = World:find_units_quick("sphere", pos, area, 12, 21)
-
-				for i, unit in ipairs(enemies) do
-					if unit:character_damage() then
-						unit:character_damage():build_suppression(amount, chance)
-					end
-				end
-			end
-		end
-	end
-
-	local t = Application:time()
-	local damage_ext = player_unit:character_damage()
-
-	if self:has_category_upgrade("player", "kill_change_regenerate_speed") then
-		local amount = self:body_armor_value("skill_kill_change_regenerate_speed", nil, 1)
-		local multiplier = self:upgrade_value("player", "kill_change_regenerate_speed", 0)
-
-		damage_ext:change_regenerate_speed(amount * multiplier, tweak_data.upgrades.kill_change_regenerate_speed_percentage)
-	end
-
-	local gain_throwable_per_kill = managers.player:upgrade_value("team", "crew_throwable_regen", 0)
-
-	if gain_throwable_per_kill ~= 0 then
-		self._throw_regen_kills = (self._throw_regen_kills or 0) + 1
-
-		if gain_throwable_per_kill < self._throw_regen_kills then
-			managers.player:add_grenade_amount(1, true)
-
-			self._throw_regen_kills = 0
-		end
-	end
-	
-	--Leech stuff
-	if self:has_activate_temporary_upgrade("temporary", "copr_ability") then
-		local kill_life_leech = self:upgrade_value_nil("player", "copr_kill_life_leech")
-		local static_damage_ratio = self:upgrade_value_nil("player", "copr_static_damage_ratio")
-		local static_damage_ratio_mult = self:upgrade_value_nil("player", "copr_static_damage_ratio_mult") or 1
-		static_damage_ratio = static_damage_ratio * static_damage_ratio_mult
-		
-		if kill_life_leech and static_damage_ratio and damage_ext then
-			self._copr_kill_life_leech_num = (self._copr_kill_life_leech_num or 0) + 1
-
-			if kill_life_leech <= self._copr_kill_life_leech_num then
-				self._copr_kill_life_leech_num = 0
-				local current_health_ratio = damage_ext:health_ratio()
-				local wanted_health_ratio = math.floor((current_health_ratio + 0.01 + static_damage_ratio) / static_damage_ratio) * static_damage_ratio
-				local health_regen = wanted_health_ratio - current_health_ratio
-
-				if health_regen > 0 then
-					damage_ext:restore_health(health_regen)
-					damage_ext:on_copr_killshot()
-				end
-			end
-		end
-	end
-
-	--Yakuza dodge meter generation.
-	if damage_ext:health_ratio() < 1 then
-		if variant == "melee" then
-			damage_ext:fill_dodge_meter_yakuza(self:upgrade_value("player", "melee_kill_dodge_regen", 0) + self:upgrade_value("player", "kill_dodge_regen"))
-			damage_ext:give_yakuza_bonus_grace()
-		else
-			damage_ext:fill_dodge_meter_yakuza(self:upgrade_value("player", "kill_dodge_regen"))
-		end
-	end
-
-	if variant == "melee" then
-		--Biker Armor Regen
-		if self:has_category_upgrade("player", "biker_armor_regen") then
-			damage_ext:tick_biker_armor_regen(self:upgrade_value("player", "biker_armor_regen")[3])
-		end
-		--Boxing Glove Stamina Restore
-		local melee_weapon = tweak_data.blackmarket.melee_weapons[managers.blackmarket:equipped_melee_weapon()]
-		if melee_weapon.special_weapon and melee_weapon.special_weapon == "stamina_restore" then
-			player_unit:movement():add_stamina(player_unit:movement():_max_stamina())
-		end
-		if melee_weapon.special_weapon and melee_weapon.special_weapon == "charger" then
-			local current_state = self:get_current_state()
-			if current_state and current_state._state_data and current_state._state_data._charger_melee_active then
-				player_unit:movement():add_stamina(player_unit:movement():_max_stamina() * 0.1)
-			end
-		end
-	end
-	
-	local equipped_unit = self:get_current_state()._equipped_unit
-	local weap_base = alive(equipped_unit) and equipped_unit.base and equipped_unit:base()
-	if weap_base and variant == "bullet" then
-		--for _, category in ipairs(weap_base:categories()) do
-			if self:has_category_upgrade("smg", "automatic_kills_to_damage") and weap_base:fire_mode() == "auto" then
-				local max = self:upgrade_value("smg", "automatic_kills_to_damage")[1]
-				local time = self:upgrade_value("smg", "automatic_kills_to_damage")[3]
-				self._merciless_t = time
-				self._merciless_stacks = math.clamp((self._merciless_stacks or 0) + 1, 0, max)
-				managers.hud:start_buff("body_expertise", self._merciless_t)
-				managers.hud:set_stacks("body_expertise", self._merciless_stacks)
-			end
-		--end
-	end
-
-	--New Socio
-	local new_socio_panic = 0
-	if self:has_category_upgrade("player", "buildup_meter") and variant then
-		new_socio_panic = self:_check_resmod_sociopath(player_unit, killed_unit, variant, headshot, weapon_id) or 0
-	end
-
-	local killshot_cooldown_reduction = (variant and variant == "melee" and tweak_data.upgrades.on_killshot_cooldown_reduction_melee) or tweak_data.upgrades.on_killshot_cooldown_reduction or 0
-
-	local regen_armor_bonus = self:upgrade_value("player", "killshot_regen_armor_bonus", 0)
-	local dist_sq = mvector3.distance_sq(player_unit:movement():m_pos(), killed_unit:movement():m_pos())
-	local close_combat_sq = tweak_data.upgrades.close_combat_distance * tweak_data.upgrades.close_combat_distance
-	
-	if dist_sq <= close_combat_sq then
-		if self:has_category_upgrade("player", "killshot_close_regen_armor_bonus") then
-			local killshot_close_regen_armor_bonus = self:upgrade_value("player", "killshot_close_regen_armor_bonus", 0)[1] * ((variant and variant == "melee" and self:upgrade_value("player", "killshot_close_regen_armor_bonus", 0)[2]) or 1)
-			regen_armor_bonus = regen_armor_bonus + killshot_close_regen_armor_bonus
-		end
-		local socio_panic_available = self._on_killshot_t and t > (self._on_killshot_t - killshot_cooldown_reduction) and self:has_category_upgrade("player", "killshot_close_panic_chance")
-		local panic_chance = new_socio_panic
-			+ (socio_panic_available and (self:upgrade_value("player", "killshot_close_panic_chance", 0) * ((variant and variant == "melee" and 2) or 1)) or 0)
-			+ self:upgrade_value("player", "killshot_extra_spooky_panic_chance", 0) --Add Haunt skill to panic chance.
-			+ self:upgrade_value("player", "killshot_spooky_panic_chance", 0) * self:player_unit():character_damage():get_missing_revives()
-		panic_chance = managers.modifiers:modify_value("PlayerManager:GetKillshotPanicChance", panic_chance)
-		
-		if panic_chance > 0 or panic_chance == -1 then
-			local slotmask = managers.slot:get_mask("enemies")
-			local units = World:find_units_quick("sphere", player_unit:movement():m_pos(), tweak_data.upgrades.killshot_close_panic_range, slotmask)
-
-			for e_key, unit in pairs(units) do
-				if alive(unit) and unit:character_damage() and not unit:character_damage():dead() then
-					unit:character_damage():build_suppression(200, panic_chance)
-				end
-			end
-		end
-	end
-
-	--Crook (Formerly Sociopath) killshot cooldown and effects (THINGS NOT EXCLUSIVELY RELATED TO CROOK'S COOLDOWNS SHOULD NOT BE BELOW THIS)
-	if self._on_killshot_t and t < self._on_killshot_t then
-		if self:has_category_upgrade("player", "killshot_regen_armor_bonus") then
-			self._on_killshot_t = self._on_killshot_t - killshot_cooldown_reduction
-			managers.hud:change_cooldown("crook", -killshot_cooldown_reduction)
-		end
-		if self._on_killshot_t > t then
-			return
-		end
-	end
-
-	if damage_ext and regen_armor_bonus > 0 then
-		damage_ext:restore_armor(regen_armor_bonus)
-	end
-
-	local regen_health_bonus = 0
-
-	if variant == "melee" then
-		regen_health_bonus = regen_health_bonus + self:upgrade_value("player", "melee_kill_life_leech", 0)
-		player_unit:movement():add_stamina(player_unit:movement():_max_stamina() * self:upgrade_value("player", "melee_kill_stamina", 0))
-	end
-
-	if damage_ext and regen_health_bonus > 0 then
-		damage_ext:restore_health(regen_health_bonus)
-	end
-
-	self._on_killshot_t = t + (tweak_data.upgrades.on_killshot_cooldown or 0)
-
-	if self:has_category_upgrade("player", "killshot_regen_armor_bonus") then
-		managers.hud:start_buff("crook", (tweak_data.upgrades.on_killshot_cooldown or 0))
-	end
-
-	if _G.IS_VR then
-		local steelsight_multiplier = equipped_unit:base():enter_steelsight_speed_multiplier()
-		local stamina_percentage = (steelsight_multiplier - 1) * tweak_data.vr.steelsight_stamina_regen
-		local stamina_regen = player_unit:movement():_max_stamina() * stamina_percentage
-
-		player_unit:movement():add_stamina(stamina_regen)
-	end
-end	
 
 function PlayerManager:_check_damage_to_hot(t, unit, damage_info)
 	local player_unit = self:player_unit()
+
+	--Stuff to trigger Infiltrator HP regen for throwables that count as melee
+	--This stuff is here as "_check_damage_to_hot" is basically an "on damage dealt" check and I don't want to modify a currently vanilla function to have this stuff in it
+	local twb = tweak_data.blackmarket
+	local weapon_id = damage_info and damage_info.weapon_unit and damage_info.weapon_unit.base and damage_info.weapon_unit:base()._tweak_projectile_entry
+	local weapon_proj = weapon_id and twb and twb.projectiles and twb.projectiles[weapon_id]
+
+	if weapon_proj and weapon_proj.count_as_melee and damage_info.variant == "bullet" then
+		damage_info.variant = "melee"
+	end
 
 	--Allow healing over time to be applied to select non-grinder perks using dummy heal_over_time upgrade.
 	if not self:has_category_upgrade("player", "damage_to_hot") and not self:has_category_upgrade("player", "heal_over_time") then
