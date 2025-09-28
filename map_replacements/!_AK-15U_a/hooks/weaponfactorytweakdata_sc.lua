@@ -972,7 +972,7 @@ local grips = {
 
 Hooks:PostHook( WeaponFactoryTweakData, "init", "ak15u_sc_init", function(self)
 
-	if BeardLib.Utils:FindMod("RestorationMod") then
+	--if BeardLib.Utils:FindMod("RestorationMod") then
 
 		table.insert(self.wpn_fps_smg_ak15u.uses_parts, "wpn_lmg_rpk_m_ban")	
 
@@ -1021,6 +1021,6 @@ Hooks:PostHook( WeaponFactoryTweakData, "init", "ak15u_sc_init", function(self)
 			recoil = 2,
 		}
 
-	end
+	--end
 
 end)

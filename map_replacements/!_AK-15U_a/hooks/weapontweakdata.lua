@@ -2,7 +2,7 @@ Hooks:PostHook( WeaponTweakData, "init", "ak15u_npc_init", function(self)
 
 self.ak15u_crew.sounds.prefix = "groza_npc"
 
-	if BeardLib.Utils:FindMod("RestorationMod") then
+	--if BeardLib.Utils:FindMod("RestorationMod") then
 
 		self.ak15u.categories = {							
 			"assault_rifle",
@@ -57,11 +57,6 @@ self.ak15u_crew.sounds.prefix = "groza_npc"
 
 		self.ak15u_crew = deep_clone(self.akm_crew)
 
-	else
-
-		self.ak15u.damage_falloff = self.ak15u.damage_falloff
-		self.ak15u_crew = deep_clone(self.akmsu_crew)
-
-	end
+	--end
 
 end )
