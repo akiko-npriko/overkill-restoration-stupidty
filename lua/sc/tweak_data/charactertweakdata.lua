@@ -17832,6 +17832,7 @@ function CharacterTweakData:_presets(tweak_data)
 			end
 		end
 	end
+	local hostage_follow_speed_multiplier = 1.5	-- Speed hostage will travel while cable tied
 	presets.move_speed = {
 		civ_fast = {
 			stand = {
@@ -17873,9 +17874,9 @@ function CharacterTweakData:_presets(tweak_data)
 						bwd = 163
 					},
 					cbt = {
-						fwd = 174,
-						strafe = 160,
-						bwd = 163
+						fwd = 210 * hostage_follow_speed_multiplier,
+						strafe = 175 * hostage_follow_speed_multiplier,
+						bwd = 160 * hostage_follow_speed_multiplier
 					}
 				},
 				run = {
