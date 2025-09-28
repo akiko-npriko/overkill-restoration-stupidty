@@ -1,9 +1,0 @@
-<materials version="3" group="weapon_group">
-    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DEPTH_SCALING:DIFFUSE_TEXTURE:GLOSS_BLURS_CUBEMAP:GSMA_TEXTURE:NORMALMAP" name="mtr_ldag" version="2">
-        <diffuse_texture 		file="units/mods/weapons/wpn_fps_upg_vg_pts/ldag_df"/>
-        <bump_normal_texture 	file="units/mods/weapons/wpn_fps_upg_vg_pts/ldag_nm"/>
-        <material_texture 		file="units/mods/weapons/wpn_fps_upg_vg_pts/ldag_gsma"/>
-        <reflection_texture type="cube" global_texture="current_global_texture"/>
-    </material>
-	
-</materials>
