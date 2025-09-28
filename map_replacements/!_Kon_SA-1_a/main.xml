@@ -1,0 +1,334 @@
+<mod name="Konstantinov SA-1 Assault Rifle">
+
+	<Localization directory="loc" default="english.txt"/>
+
+	<GlobalValue id="fiery_hylie_mod" color="Color(0.8, 0.7, 0.2)"/>
+
+	<AddFiles directory="assets" auto_generate="true"/>
+
+	<Hooks directory="hooks">	
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>	
+	</Hooks>
+
+	<Sounds directory="assets/sounds">
+		<sound id="sa1_fire" path="sa1_fire.ogg" prefix="regular"/>
+		<sound id="sa1_fire" path="sa1_fire.ogg" prefix="regular_b"/>
+		<sound id="sa1_fire" path="sa1_fire.ogg" prefix="regular_c"/>
+		<sound id="sa1_fire" path="sa1_fire_sil.ogg" prefix="suppressed_a"/>
+		<sound id="sa1_fire" path="sa1_fire_sil.ogg" prefix="suppressed_b"/>
+		<sound id="sa1_fire" path="sa1_fire_sil.ogg" prefix="suppressed_c"/>
+
+		<sound id="sa1_fast_raise" path="sa1_fast_raise.ogg" prefix="first"/>
+		<sound id="sa1_fast_raise" path="sa1_fast_raise.ogg" prefix="third"/>
+		<sound id="sa1_lever_pull" path="sa1_lever_pull.ogg" prefix="first"/>
+		<sound id="sa1_lever_pull" path="sa1_lever_pull.ogg" prefix="third"/>
+		<sound id="sa1_lever_release" path="sa1_lever_release.ogg" prefix="first"/>
+		<sound id="sa1_lever_release" path="sa1_lever_release.ogg" prefix="third"/>
+		<sound id="sa1_mag_connect" path="sa1_mag_connect.ogg" prefix="first"/>
+		<sound id="sa1_mag_connect" path="sa1_mag_connect.ogg" prefix="third"/>
+		<sound id="sa1_mag_grab" path="sa1_mag_grab.ogg" prefix="first"/>
+		<sound id="sa1_mag_grab" path="sa1_mag_grab.ogg" prefix="third"/>
+		<sound id="sa1_mag_movement" path="sa1_mag_movement.ogg" prefix="first"/>
+		<sound id="sa1_mag_movement" path="sa1_mag_movement.ogg" prefix="third"/>
+		<sound id="sa1_mag_slide_in" path="sa1_mag_slide_in.ogg" prefix="first"/>
+		<sound id="sa1_mag_slide_in" path="sa1_mag_slide_in.ogg" prefix="third"/>
+		<sound id="sa1_maghit" path="sa1_maghit.ogg" prefix="first"/>
+		<sound id="sa1_maghit" path="sa1_maghit.ogg" prefix="third"/>
+		<sound id="sa1_rail_raise" path="sa1_rail_raise.ogg" prefix="first"/>
+		<sound id="sa1_rail_raise" path="sa1_rail_raise.ogg" prefix="third"/>
+		<sound id="sa1_raise" path="sa1_raise.ogg" prefix="first"/>
+		<sound id="sa1_raise" path="sa1_raise.ogg" prefix="third"/>
+		<sound id="sa1_reload_end_2" path="sa1_reload_end_2.ogg" prefix="first"/>
+		<sound id="sa1_reload_end_2" path="sa1_reload_end_2.ogg" prefix="third"/>
+		<sound id="sa1_reload_raise" path="sa1_reload_raise.ogg" prefix="first"/>
+		<sound id="sa1_reload_raise" path="sa1_reload_raise.ogg" prefix="third"/>
+	</Sounds> 
+
+ <!-- Konstantinov SA-1 - Default Blueprint Parts -->
+
+	<WeaponMod id="wpn_fps_ass_sa1_b_std" type="barrel" based_on="wpn_fps_ass_groza_b_standard" unit="units/mods/weapons/wpn_fps_ass_sa1_pts/wpn_fps_ass_sa1_b_std" hidden="true" ver="2">
+	      <stats damage="0" extra_ammo="0" recoil="0" spread="0" concealment="0"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_sa1_body_std" type="lower_reciever" based_on="wpn_fps_ass_groza_body_standard" unit="units/mods/weapons/wpn_fps_ass_sa1_pts/wpn_fps_ass_sa1_body_std" hidden="true" ver="2">
+	      <stats damage="0" extra_ammo="0" recoil="0" spread="0" concealment="0"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_sa1_bolt" type="drag_handle" based_on="wpn_fps_ass_groza_bolt_standard" unit="units/mods/weapons/wpn_fps_ass_sa1_pts/wpn_fps_ass_sa1_bolt" hidden="true" ver="2">
+	      <stats damage="0" extra_ammo="0" recoil="0" spread="0" concealment="0"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_sa1_m_std" type="magazine" based_on="wpn_fps_ass_groza_m_standard" unit="units/mods/weapons/wpn_fps_ass_sa1_pts/wpn_fps_ass_sa1_m_std" hidden="true" ver="2">
+	      <stats damage="0" extra_ammo="0" recoil="0" spread="0" concealment="0"/>
+		  <bullet_objects prefix="g_bullet_" amount="2"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_sa1_o_std" type="sight" based_on="wpn_fps_ass_flint_o_standard" unit="units/mods/weapons/wpn_fps_ass_sa1_pts/wpn_fps_ass_sa1_o_std" hidden="true" ver="2">
+	      <stats damage="0" extra_ammo="0" recoil="0" spread="0" concealment="0"/>
+		  <stance_mod>
+		    <wpn_fps_ass_sa1 translation="0 0 -1.7"/>
+		  </stance_mod>
+	</WeaponMod>
+
+ <!-- Konstantinov SA-1 - Unique Blueprint Parts -->
+
+	<WeaponMod id="wpn_fps_ass_sa1_b_short" type="barrel" based_on="wpn_fps_ass_groza_b_standard" unit="units/mods/weapons/wpn_fps_upg_sa1/wpn_fps_ass_sa1_b_short" hidden="false" global_value="fiery_hylie_mod" ver="2">
+	      <stats spread="-1" concealment="2"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_sa1_m_quick" type="magazine" based_on="wpn_fps_ass_groza_m_standard" unit="units/mods/weapons/wpn_fps_upg_sa1/wpn_fps_ass_sa1_m_quick" hidden="false" global_value="fiery_hylie_mod" ver="2">
+	      <stats reload="8" concealment="-1"/>
+		  <bullet_objects prefix="g_bullet_" amount="2"/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_ass_sa1_m_low" type="magazine" based_on="wpn_fps_ass_groza_m_standard" unit="units/mods/weapons/wpn_fps_upg_sa1/wpn_fps_ass_sa1_m_low" hidden="false" global_value="fiery_hylie_mod" ver="2">
+	      <stats extra_ammo="-5" recoil="1" concealment="1"/>
+		  <bullet_objects prefix="g_pd2_bullet_" amount="2"/>
+	</WeaponMod>
+
+ <!-- Konstantinov SA-1 - Tweak Data -->
+
+ 	<Weapon unlock_level="16">
+
+		<weapon id="sa1" based_on="groza" weapon_hold="sa1" CAN_TOGGLE_FIREMODE="false" has_description="true" desc_id="bm_w_sa1_desc" NR_CLIPS_MAX="3" CLIP_AMMO_MAX="45" global_value="fiery_hylie_mod">
+
+			<stats damage="92" spread="16" spread_moving="12" recoil="13" concealment="9"/>
+
+			<fire_mode_data fire_rate="0.0923"/>
+
+			<AMMO_PICKUP>
+					<value_node value="2.0"/>
+					<value_node value="4.5"/>
+			</AMMO_PICKUP>
+
+			<kick>
+				<standing>
+					<value_node value="1.0"/>
+					<value_node value="1.4"/>
+					<value_node value="-0.8"/>
+					<value_node value="0.3"/>
+				</standing>
+				<crouching>
+					<value_node value="0.9"/>
+					<value_node value="1.1"/>
+					<value_node value="-0.7"/>
+					<value_node value="0.3"/>
+				</crouching>
+				<steelsight>
+					<value_node value="0.70"/>
+					<value_node value="0.75"/>
+					<value_node value="-0.6"/>
+					<value_node value="0.3"/>
+				</steelsight>
+			</kick>
+
+			<sounds fire="sa1_fire" fire_single="sa1_fire" use_fix="true"/>
+
+			<animations reload="reload" reload_not_empty="reload_not_empty" recoil_steelsight="true" reload_name_id="sa1"/>
+
+        </weapon>
+
+
+		<factory id="wpn_fps_ass_sa1" unit="units/mods/weapons/wpn_fps_ass_sa1/wpn_fps_ass_sa1">
+
+			<animations fire="recoil" fire_steelsight="recoil" reload="reload" reload_not_empty="reload_not_empty"/>
+
+			<adds>
+				<wpn_fps_upg_o_specter>
+						<value_node value="wpn_fps_ass_groza_o_adapter"/>
+				</wpn_fps_upg_o_specter>	
+
+				<wpn_fps_upg_o_aimpoint>
+						<value_node value="wpn_fps_ass_groza_o_adapter"/>
+				</wpn_fps_upg_o_aimpoint>
+
+				<wpn_fps_upg_o_docter>
+						<value_node value="wpn_fps_ass_groza_o_adapter"/>
+				</wpn_fps_upg_o_docter>	
+
+				<wpn_fps_upg_o_eotech>
+						<value_node value="wpn_fps_ass_groza_o_adapter"/>
+				</wpn_fps_upg_o_eotech>	
+
+				<wpn_fps_upg_o_t1micro>
+						<value_node value="wpn_fps_ass_groza_o_adapter"/>
+				</wpn_fps_upg_o_t1micro>
+
+				<wpn_fps_upg_o_acog>
+						<value_node value="wpn_fps_ass_groza_o_adapter"/>
+				</wpn_fps_upg_o_acog>
+
+				<wpn_fps_upg_o_cmore>
+						<value_node value="wpn_fps_ass_groza_o_adapter"/>
+				</wpn_fps_upg_o_cmore>	
+
+				<wpn_fps_upg_o_aimpoint_2>
+						<value_node value="wpn_fps_ass_groza_o_adapter"/>
+				</wpn_fps_upg_o_aimpoint_2>
+
+				<wpn_fps_upg_o_eotech_xps>
+						<value_node value="wpn_fps_ass_groza_o_adapter"/>
+				</wpn_fps_upg_o_eotech_xps>	
+
+				<wpn_fps_upg_o_reflex>
+						<value_node value="wpn_fps_ass_groza_o_adapter"/>
+				</wpn_fps_upg_o_reflex>	
+
+				<wpn_fps_upg_o_rx01>
+						<value_node value="wpn_fps_ass_groza_o_adapter"/>
+				</wpn_fps_upg_o_rx01>
+
+				<wpn_fps_upg_o_rx30>
+						<value_node value="wpn_fps_ass_groza_o_adapter"/>
+				</wpn_fps_upg_o_rx30>
+
+				<wpn_fps_upg_o_cs>
+						<value_node value="wpn_fps_ass_groza_o_adapter"/>
+				</wpn_fps_upg_o_cs>	
+
+				<wpn_fps_upg_o_fc1>
+						<value_node value="wpn_fps_ass_groza_o_adapter"/>
+				</wpn_fps_upg_o_fc1>
+
+				<wpn_fps_upg_o_bmg>
+						<value_node value="wpn_fps_ass_groza_o_adapter"/>
+				</wpn_fps_upg_o_bmg>	
+
+				<wpn_fps_upg_o_uh>
+						<value_node value="wpn_fps_ass_groza_o_adapter"/>
+				</wpn_fps_upg_o_uh>	
+
+				<wpn_fps_upg_o_poe>
+						<value_node value="wpn_fps_ass_groza_o_adapter"/>
+				</wpn_fps_upg_o_poe>
+
+				<wpn_fps_upg_o_tf90>
+						<value_node value="wpn_fps_ass_groza_o_adapter"/>
+				</wpn_fps_upg_o_tf90>
+
+				<wpn_fps_upg_o_hamr>
+						<value_node value="wpn_fps_ass_groza_o_adapter"/>
+				</wpn_fps_upg_o_hamr>	
+
+				<wpn_fps_upg_o_atibal>
+						<value_node value="wpn_fps_ass_groza_o_adapter"/>
+				</wpn_fps_upg_o_atibal>	
+
+				<wpn_fps_upg_o_health>				
+						<value_node value="wpn_fps_ass_groza_o_adapter"/>						
+				</wpn_fps_upg_o_health>
+
+				<wpn_fps_upg_fl_ass_smg_sho_peqbox>
+						<value_node value="wpn_fps_ass_groza_fl_adapter"/>
+				</wpn_fps_upg_fl_ass_smg_sho_peqbox>
+
+				<wpn_fps_upg_fl_ass_smg_sho_surefire>
+						<value_node value="wpn_fps_ass_groza_fl_adapter"/>
+				</wpn_fps_upg_fl_ass_smg_sho_surefire>
+
+				<wpn_fps_upg_fl_ass_peq15>
+						<value_node value="wpn_fps_ass_groza_fl_adapter"/>
+				</wpn_fps_upg_fl_ass_peq15>	
+
+				<wpn_fps_upg_fl_ass_laser>
+						<value_node value="wpn_fps_ass_groza_fl_adapter"/>
+				</wpn_fps_upg_fl_ass_laser>	
+
+				<wpn_fps_upg_fl_ass_utg>				
+						<value_node value="wpn_fps_ass_groza_fl_adapter"/>						
+				</wpn_fps_upg_fl_ass_utg>
+
+				<wpn_fps_upg_fl_dbal_laser>				
+						<value_node value="wpn_fps_ass_groza_fl_adapter"/>						
+				</wpn_fps_upg_fl_dbal_laser>
+			</adds>
+
+			<default_blueprint>
+				<value_node value="wpn_fps_ass_sa1_b_std"/>
+				<value_node value="wpn_fps_ass_sa1_body_std"/>
+				<value_node value="wpn_fps_ass_sa1_bolt"/>
+				<value_node value="wpn_fps_ass_sa1_m_std"/>
+				<value_node value="wpn_fps_ass_sa1_o_std"/>
+			</default_blueprint>
+
+			<uses_parts>
+				<value_node value="wpn_fps_ass_sa1_b_std"/>
+				<value_node value="wpn_fps_ass_sa1_body_std"/>
+				<value_node value="wpn_fps_ass_sa1_bolt"/>
+				<value_node value="wpn_fps_ass_sa1_m_std"/>
+				<value_node value="wpn_fps_ass_sa1_o_std"/>
+
+				<value_node value="wpn_fps_ass_sa1_b_short"/>
+
+				<value_node value="wpn_fps_ass_sa1_m_quick"/>
+				<value_node value="wpn_fps_ass_sa1_m_low"/>
+
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_peqbox"/>
+				<value_node value="wpn_fps_upg_fl_ass_smg_sho_surefire"/>
+				<value_node value="wpn_fps_upg_fl_ass_peq15"/>
+				<value_node value="wpn_fps_upg_fl_ass_laser"/>
+				<value_node value="wpn_fps_upg_fl_ass_utg"/>
+				<value_node value="wpn_fps_upg_fl_dbal_laser"/>
+
+				<value_node value="wpn_fps_upg_ns_ass_smg_large"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_medium"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_small"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_firepig"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_stubby"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_tank"/>
+				<value_node value="wpn_fps_upg_ass_ns_jprifles"/>
+				<value_node value="wpn_fps_upg_ass_ns_linear"/>
+				<value_node value="wpn_fps_upg_ass_ns_surefire"/>
+				<value_node value="wpn_fps_upg_ass_ns_battle"/>
+				<value_node value="wpn_fps_upg_ns_ass_smg_v6"/>
+				<value_node value="wpn_fps_lmg_hk51b_ns_jcomp"/>
+				<value_node value="wpn_fps_lmg_kacchainsaw_ns_muzzle"/>
+				<value_node value="wpn_fps_lmg_kacchainsaw_ns_suppressor"/>
+
+				<value_node value="wpn_fps_upg_o_specter"/>
+				<value_node value="wpn_fps_upg_o_specter_piggyback"/>
+				<value_node value="wpn_fps_upg_o_aimpoint"/>
+				<value_node value="wpn_fps_upg_o_docter"/>
+				<value_node value="wpn_fps_upg_o_eotech"/>
+				<value_node value="wpn_fps_upg_o_t1micro"/>
+				<value_node value="wpn_fps_upg_o_acog"/>
+				<value_node value="wpn_fps_upg_o_cmore"/>
+				<value_node value="wpn_fps_upg_o_aimpoint_2"/>
+				<value_node value="wpn_fps_upg_o_eotech_xps"/>
+				<value_node value="wpn_fps_upg_o_reflex"/>
+				<value_node value="wpn_fps_upg_o_rx01"/>
+				<value_node value="wpn_fps_upg_o_rx30"/>
+				<value_node value="wpn_fps_upg_o_cs"/>
+				<value_node value="wpn_fps_upg_o_cs_piggyback"/>
+				<value_node value="wpn_fps_upg_o_spot"/>
+				<value_node value="wpn_fps_upg_o_bmg"/>
+				<value_node value="wpn_fps_upg_o_uh"/>
+				<value_node value="wpn_fps_upg_o_fc1"/>
+				<value_node value="wpn_fps_upg_o_tf90"/>
+				<value_node value="wpn_fps_upg_o_poe"/>
+				<value_node value="wpn_fps_upg_o_hamr"/>
+				<value_node value="wpn_fps_upg_o_hamr_reddot"/>
+				<value_node value="wpn_fps_upg_o_atibal"/>
+				<value_node value="wpn_fps_upg_o_atibal_reddot"/>
+				<value_node value="wpn_fps_upg_o_health"/>
+			</uses_parts>
+
+		</factory>
+
+		<stance>
+			<standard>
+				<shoulders rotation="-0 0 -0 -1" translation="4.825 17.97 -8.103"/>
+			</standard>
+
+			<crouched>
+				<shoulders rotation="-0 0 -0 -1" translation="3.825 14.03 -9.103"/>
+			</crouched>
+
+			<steelsight>
+				<shoulders rotation="-0 0 -0 -1" translation="-8.545 4.97 -5.997"/>
+			</steelsight>
+		</stance>
+
+	</Weapon>
+
+</mod>

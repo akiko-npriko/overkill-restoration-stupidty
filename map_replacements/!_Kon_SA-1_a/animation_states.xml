@@ -1,0 +1,461 @@
+<?xml version="1.0"?>
+
+
+
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps"/>
+		</search>
+		<target mode="attach">
+			<to name="reload_sa1" 						redirect="fps/reload/sa1"/>
+			<to name="reload_not_empty_sa1" 			redirect="fps/reload_not_empty/sa1"/>
+		</target>
+	</tweak>
+	
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/reload"/>
+		</search>
+		<target mode="append">
+			<state name="fps/reload/sa1" type="once" segment="base" speed="1.0">
+				<anim name="sa1_reload"/>
+					<keys>					
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+						
+						<key at="trigger" trigger="basset_hand_release" callback="play_sound" class_name="base" param1="sa1_raise"/>
+						<key at="trigger" trigger="contraband_lift_up" callback="play_sound" class_name="base" param1="sa1_fast_raise"/>
+						<key at="trigger" trigger="basset_grab_mag" callback="play_sound" class_name="base" param1="sa1_mag_grab"/>
+						<key at="trigger" trigger="basset_mag_out" callback="play_sound" class_name="base" param1="sa1_maghit"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_throw"/>
+						<key at="trigger" trigger="basset_grab_new_mag" callback="play_sound" class_name="base" param1="sa1_mag_movement"/>
+						<key at="trigger" trigger="wp_clip_generic_ass_center" callback="play_sound" class_name="base" param1="wp_clip_generic_ass_center"/>
+						<key at="trigger" trigger="basset_foley_mag_in" callback="play_sound" class_name="base" param1="sa1_mag_grab"/>
+						<key at="trigger" trigger="basset_mag_contact" callback="play_sound" class_name="base" param1="sa1_mag_connect"/>
+						<key at="trigger" trigger="basset_mag_in" callback="play_sound" class_name="base" param1="sa1_mag_slide_in"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt_back" callback="play_sound" class_name="base" param1="sa1_rail_raise"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+						<key at="trigger" trigger="basset_lever_back" callback="play_sound" class_name="base" param1="sa1_lever_pull"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+						<key at="trigger" trigger="basset_lever_release" callback="play_sound" class_name="base" param1="sa1_lever_release"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt" callback="play_sound" class_name="base" param1="sa1_reload_raise"/>
+						<key at="trigger" trigger="basset_foley_end" callback="play_sound" class_name="base" param1="basset_foley_end"/>
+						<key at="trigger" trigger="basset_grab_end" callback="play_sound" class_name="base" param1="sa1_reload_end_2"/>
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+			
+			
+			<state name="fps/reload_not_empty/sa1" type="once" segment="base" speed="1.0">
+				<anim name="sa1_reload_not_empty"/>
+					<keys>		
+						<key at="trigger" trigger="bullet_show" callback="anim_clbk_check_bullet_object" class_name="base" />
+						
+						<key at="trigger" trigger="basset_hand_release" callback="play_sound" class_name="base" param1="sa1_raise"/>
+						<key at="trigger" trigger="contraband_lift_up" callback="play_sound" class_name="base" param1="sa1_fast_raise"/>
+						<key at="trigger" trigger="basset_grab_mag" callback="play_sound" class_name="base" param1="sa1_mag_grab"/>
+						<key at="trigger" trigger="basset_mag_out" callback="play_sound" class_name="base" param1="sa1_maghit"/>
+						<key at="trigger" trigger="wp_foley_generic_clip_throw" callback="play_sound" class_name="base" param1="wp_foley_generic_clip_throw"/>
+						<key at="trigger" trigger="basset_grab_new_mag" callback="play_sound" class_name="base" param1="sa1_mag_movement"/>
+						<key at="trigger" trigger="wp_clip_generic_ass_center" callback="play_sound" class_name="base" param1="wp_clip_generic_ass_center"/>
+						<key at="trigger" trigger="basset_foley_mag_in" callback="play_sound" class_name="base" param1="sa1_mag_grab"/>
+						<key at="trigger" trigger="basset_mag_contact" callback="play_sound" class_name="base" param1="sa1_mag_connect"/>
+						<key at="trigger" trigger="basset_mag_in" callback="play_sound" class_name="base" param1="sa1_mag_slide_in"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt_back" callback="play_sound" class_name="base" param1="sa1_rail_raise"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_grab" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_grab"/>
+						<key at="trigger" trigger="basset_lever_back" callback="play_sound" class_name="base" param1="sa1_lever_pull"/>
+						<key at="trigger" trigger="wp_foley_generic_lever_release" callback="play_sound" class_name="base" param1="wp_foley_generic_lever_release"/>
+						<key at="trigger" trigger="basset_lever_release" callback="play_sound" class_name="base" param1="sa1_lever_release"/>
+						<key at="trigger" trigger="wp_foley_generic_tilt" callback="play_sound" class_name="base" param1="sa1_reload_raise"/>
+						<key at="trigger" trigger="basset_foley_end" callback="play_sound" class_name="base" param1="basset_foley_end"/>
+						<key at="trigger" trigger="basset_grab_end" callback="play_sound" class_name="base" param1="sa1_reload_end_2"/>
+					</keys>
+				<exit name="fps/idle"/>
+			</state>
+		</target>
+	</tweak>
+	
+	<!--
+	-->
+
+
+
+<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil"/>
+			<anim name="m4_recoil" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_recoil" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil_steelsight"/>
+			<anim name="m4_recoil" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_recoil_steelsight" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil_enter"/>
+			<anim name="m4_recoil_enter" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_recoil_enter" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil_loop"/>
+			<anim name="m4_recoil_loop" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_recoil_loop" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/recoil_exit"/>
+			<anim name="m4_recoil_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_recoil_exit" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/idle"/>
+			<anim name="m4_idle" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_idle" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/equip"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_equip" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/unequip"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_unequip" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/start_running"/>
+			<anim name="m4_sprint_enter" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_sprint_enter" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/running"/>
+			<anim name="m4_sprint" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_sprint" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/stop_running"/>
+			<anim name="m4_sprint_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_sprint_exit" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_unequip" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee_exit"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_equip" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee"/>
+			<anim name="m4_melee" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_melee" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/melee_miss"/>
+			<anim name="m4_melee_miss" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_melee_miss" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/use"/>
+			<anim name="m4_use" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_use" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/down"/>
+			<anim name="m4_com_down_var1" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_com_down_var1" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/stop"/>
+			<anim name="m4_com_stop" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_com_stop" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/come"/>
+			<anim name="m4_com_come" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_com_come" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/point"/>
+			<anim name="m4_com_point" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_com_point" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/get_up"/>
+			<anim name="m4_get_up" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_get_up" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/command/gogo"/>
+			<anim name="m4_gogo" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_gogo" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_projectile_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_unequip" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_projectile_exit"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_equip" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_grenade_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_unequip" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_molotov_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_unequip" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_concussion_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_unequip" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_dada_enter"/>
+			<anim name="m4_unequip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_unequip" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/throw_grenade_exit"/>
+			<anim name="m4_equip" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_equip" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/tased"/>
+			<anim name="m4_tased" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_tased" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/tased_boost"/>
+			<anim name="m4_tased_boost" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_tased_boost" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/tased_exit"/>
+			<anim name="m4_tased_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_tased_exit" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/enter_tazer_counter"/>
+			<anim name="m4_tased_exit" weight="m4"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_tased_exit" weight="sa1"/>
+		</target>
+	</tweak>
+
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_states">
+		<search>
+			<xml/>
+			<state name="fps/cash_inspect"/>
+			<anim name="glock_inspect" weight="glock"/>
+		</search>
+		<target mode="append">
+			<anim name="sa1_inspect" weight="sa1"/>
+		</target>
+	</tweak> 
+	
+	
+
+</tweaks>

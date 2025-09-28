@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps_spawn" extension="animation_subset">
+		<search>
+			<xml/>
+		</search>
+			
+		<target mode="attach">
+			<anim name="sa1_reload" 				            file="anims/fps/sa1/sa1_reload" blend_set="all"/>
+			<anim name="sa1_reload_not_empty" 		            file="anims/fps/sa1/sa1_reload_not_empty" blend_set="all"/>
+			<anim name="sa1_recoil" 							file="anims/fps/sa1/sa1_recoil" blend_set="all"/>
+			<anim name="sa1_idle" 								file="anims/fps/sa1/sa1_idle" blend_set="all"/>
+			<anim name="sa1_recoil_enter" 						file="anims/fps/sa1/sa1_recoil_enter" blend_set="all"/>
+			<anim name="sa1_recoil_loop" 						file="anims/fps/sa1/sa1_recoil_loop" blend_set="all"/>
+			<anim name="sa1_recoil_exit" 						file="anims/fps/sa1/sa1_recoil_exit" blend_set="all"/>
+			<anim name="sa1_recoil_steelsight" 				    file="anims/fps/sa1/sa1_recoil" blend_set="all"/>
+			<anim name="sa1_equip" 							    file="anims/fps/sa1/sa1_equip" blend_set="all"/>
+			<anim name="sa1_unequip" 							file="anims/fps/sa1/sa1_unequip" blend_set="all"/>
+			<anim name="sa1_melee" 							    file="anims/fps/sa1/sa1_melee" blend_set="all"/>
+			<anim name="sa1_melee_miss" 						file="anims/fps/sa1/sa1_melee" blend_set="all"/>
+			<anim name="sa1_use" 								file="anims/fps/sa1/sa1_use" blend_set="all"/>
+			<anim name="sa1_sprint_enter" 						file="anims/fps/sa1/sa1_sprint_enter" blend_set="all"/>
+			<anim name="sa1_sprint" 							file="anims/fps/sa1/sa1_sprint" blend_set="all"/>
+			<anim name="sa1_sprint_exit" 						file="anims/fps/sa1/sa1_sprint_exit" blend_set="all"/>
+			<anim name="sa1_com_down_var1" 					    file="anims/fps/sa1/sa1_com_var1" blend_set="all"/>
+			<anim name="sa1_com_stop" 							file="anims/fps/sa1/sa1_com_var5" blend_set="all"/>
+			<anim name="sa1_com_come" 							file="anims/fps/sa1/sa1_com_var6" blend_set="all"/>
+			<anim name="sa1_com_point" 						    file="anims/fps/sa1/sa1_com_var7" blend_set="all"/>
+			<anim name="sa1_get_up" 							file="anims/fps/sa1/sa1_get_up" blend_set="all"/>
+			<anim name="sa1_gogo" 								file="anims/fps/sa1/sa1_gogo" blend_set="all"/>
+			<anim name="sa1_tased" 							    file="anims/fps/sa1/sa1_tased" blend_set="all"/>
+			<anim name="sa1_tased_boost" 						file="anims/fps/sa1/sa1_tased_boost" blend_set="all"/>
+			<anim name="sa1_tased_exit" 						file="anims/fps/sa1/sa1_equip" blend_set="all"/>
+			<anim name="sa1_inspect" 							file="anims/fps/sa1/sa1_inspect" blend_set="all"/> 
+		</target>
+	</tweak>
+</tweaks>

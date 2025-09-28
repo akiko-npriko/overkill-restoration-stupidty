@@ -546,6 +546,7 @@ Yanked coding from... (intergrated into mod)
  - Crime Boss: Rockay City - Baker's Repeater (https://modworkshop.net/mod/48128)
  - PASAM Submachine Gun (https://modworkshop.net/mod/53794)
  - Kel-Tec RFB (https://modworkshop.net/mod/25201)
+ - Konstantinov SA-1 Assault Rifle (https://modworkshop.net/mod/53869)
 # Incompatible Shit
  - Spending Offshore Converter (https://modworkshop.net/mod/30447)
 	- Breaks Restore's Voiceline loading and causes voicelines to only load on paused menu
