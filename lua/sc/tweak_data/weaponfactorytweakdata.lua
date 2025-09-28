@@ -49895,6 +49895,19 @@ Hooks:PostHook( WeaponFactoryTweakData, "create_bonuses", "SC_mods", function(se
 		self.parts.wpn_fps_special_roach_irons.scope_overlay_hide_weapon = nil
 	end
 	
+	if self.parts.wpn_fps_upg_leet_b_smol then
+		self.parts.wpn_fps_upg_leet_b_smol.supported = true
+		self.parts.wpn_fps_upg_leet_b_smol.stats = deep_clone(barrels.short_b3_stats)
+		self.parts.wpn_fps_upg_leet_b_smol.custom_stats = deep_clone(barrels.short_b3_stats)
+				
+		self.parts.wpn_fps_upg_leet_fg_ext.supported = true
+		self.parts.wpn_fps_upg_leet_fg_ext.stats = {
+			value = 2,
+			recoil = 2,
+			concealment = -1
+		}
+	end
+	
 	if self.parts.wpn_fps_snp_sako_85_scope then
 		self.parts.wpn_fps_snp_sako_85_scope.ads_weapon_visible = false
 		self.parts.wpn_fps_snp_sako_85_scope.ads_overlay = "guis/scope_overlay/iuhPSO1ScopeOverlay"
