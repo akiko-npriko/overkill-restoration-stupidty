@@ -1,11 +1,6 @@
 Hooks:PostHook( WeaponTweakData, "init", "welrodInit", function(self)
 self.welrod_crew = deep_clone(self.ppk_crew)
-if not BeardLib.Utils:FindMod("RestorationMod") then
-	self.welrod_crew.DAMAGE = 6
-	self.welrod_crew.CLIP_AMMO_MAX = 8
-	self.welrod_crew.NR_CLIPS_MAX = 7
-	self.welrod_crew.alert_size = 1250
-end
+
 
 
 if BeardLib.Utils:FindMod("Custom Attachment Points") or BeardLib.Utils:FindMod("WeaponLib") then

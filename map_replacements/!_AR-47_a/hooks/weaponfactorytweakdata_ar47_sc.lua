@@ -936,7 +936,8 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "mallninja762init_sc", function(s
 
 	--ResMod integration
 
-	if BeardLib.Utils:FindMod("RestorationMod") then
+	local yesakikosaysthisthinghasressupportubas = true
+	if yesakikosaysthisthinghasressupportubas then
 
 		if self.parts.wpn_fps_vg_vmp_pod then
 
@@ -1419,7 +1420,7 @@ end)
 
 Hooks:PostHook(WeaponFactoryTweakData, "init", "ar47bdgrpts_sc", function(self)
 
-	if self.wpn_fps_ass_bdgr and BeardLib.Utils:FindMod("RestorationMod") then
+	if self.wpn_fps_ass_bdgr then
 
 		table.insert(self.wpn_fps_ass_bdgr.uses_parts, "wpn_fps_ass_bdgr_m_soviet")
 		table.insert(self.wpn_fps_ass_bdgr.uses_parts, "wpn_fps_ass_bdgr_m_blk")			

@@ -17,8 +17,6 @@ local function td_init_liberator_stance(self)
     ptd.stances.liberator.steelsight.vel_overshot.pitch_pos = 17
 end
 
-if BeardLib.Utils:ModLoaded("Restoration") or BeardLib.Utils:ModLoaded("RestorationMod") then
     if tweak_data.player and tweak_data.player.stances then
         td_init_liberator_stance()
     end
-end

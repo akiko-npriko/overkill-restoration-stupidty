@@ -56,8 +56,8 @@ local function wtd_init_liberator(self)
     self.liberator.crosshair.steelsight.kick_offset = 0.1
     
     self.liberator.stats = clone(self.new_m4.stats) or {}
-    
-    if BeardLib.Utils:ModLoaded("Restoration") or BeardLib.Utils:ModLoaded("RestorationMod") then
+    local yesakikosaysthisthinghasressupportubas = true
+	if yesakikosaysthisthinghasressupportubas then
         self.liberator.recategorize = clone(self.contraband.categories)
         self.liberator.damage_type = self.new_m4.damage_type
         self.liberator.nato = true

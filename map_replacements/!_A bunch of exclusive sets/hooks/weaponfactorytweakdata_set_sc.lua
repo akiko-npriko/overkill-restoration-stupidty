@@ -974,7 +974,7 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "byakurenhijiriyes_sc2", function
 
 	--Partial ResMod integration
 
-	if BeardLib.Utils:FindMod("RestorationMod") and self.parts.wpn_fps_shot_m590_set then
+	if self.parts.wpn_fps_shot_m590_set then
 
 	--M590 Set
 
@@ -1005,7 +1005,7 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "akmtacticool_sc2", function(self
 
 	--Tacticool AKM
 	
-	if BeardLib.Utils:FindMod("RestorationMod") and self.parts.wpn_fps_ass_akm_body_tacticool then
+	if self.parts.wpn_fps_ass_akm_body_tacticool then
 		
 		self.parts.wpn_fps_ass_akm_body_tacticool.supported = true
 		self.parts.wpn_fps_ass_akm_body_tacticool.stats = {}
@@ -1227,7 +1227,7 @@ end)
 
 Hooks:PostHook(WeaponFactoryTweakData, "init", "miscstuff_sc", function(self)
 
-	if BeardLib.Utils:FindMod("RestorationMod") then
+	--if BeardLib.Utils:FindMod("RestorationMod") then
 
 		--DMC forgot to add the unique mag the Chimera Set comes with
 		self.parts.wpn_fps_ass_m16_body_mcbravo.override.wpn_fps_m4_uupg_m_std_vanilla = {
@@ -1338,13 +1338,13 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "miscstuff_sc", function(self)
 			}
 		}
 		
-	end
+	--end
 	
 end)		
 
 Hooks:PostHook(WeaponFactoryTweakData, "init", "sterling57_sc2", function(self)
 
-	if BeardLib.Utils:FindMod("RestorationMod") and self.parts.wpn_fps_smg_sterling_body_pdw then
+	if self.parts.wpn_fps_smg_sterling_body_pdw then
 
 		--Stats for the 5.7mm Sterling
 		self.parts.wpn_fps_smg_sterling_body_pdw.supported = true
@@ -1386,7 +1386,7 @@ end)
 
 Hooks:PostHook(WeaponFactoryTweakData, "init", "s550set_sc2", function(self)
 
-	if BeardLib.Utils:FindMod("RestorationMod") and self.parts.wpn_fps_ass_s552_body_s550 then
+	if self.parts.wpn_fps_ass_s552_body_s550 then
 
 		--SG550-1 Kit
 		for i, part_id in ipairs(self.wpn_fps_ass_s552.uses_parts) do
@@ -1509,7 +1509,7 @@ end)
 
 Hooks:PostHook(WeaponFactoryTweakData, "init", "hk416olympic_sc", function(self)
 
-	if BeardLib.Utils:FindMod("RestorationMod") and self.parts.wpn_fps_smg_olympic_body_hk416c then
+	if self.parts.wpn_fps_smg_olympic_body_hk416c then
 
 		--HK416C Kit
 
@@ -1684,7 +1684,7 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "ac556set_sc", function(self)
 
 	--Ruger AC-556
 	
-	if BeardLib.Utils:FindMod("RestorationMod") and self.parts.wpn_fps_ass_m14_body_ac556 then
+	if self.parts.wpn_fps_ass_m14_body_ac556 then
 
 		self.parts.wpn_fps_ass_m14_body_ac556.supported = true
 		self.parts.wpn_fps_ass_m14_body_ac556.desc_id = "bm_wp_wpn_fps_ass_m14_body_ac556_sc_desc"
@@ -1774,7 +1774,7 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "10mmautoar_sc", function(self)
 
 	--Centimeter AR-10mm
 	
-	if BeardLib.Utils:FindMod("RestorationMod") and self.parts.wpn_fps_smg_shepheard_body_centi then
+	if self.parts.wpn_fps_smg_shepheard_body_centi then
 
 		--Combination of the Strike Magazine, MP5 Straight Mag, and Para-23 Medium Barrel
 
@@ -1917,7 +1917,7 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "hk416m203_sc", function(self)
 
 	--HK416 + M203
 	
-	if BeardLib.Utils:FindMod("RestorationMod") and self.parts.wpn_fps_ass_contraband_body_little then
+	if self.parts.wpn_fps_ass_contraband_body_little then
 
 		self.parts.wpn_fps_ass_contraband_body_little.supported = true
 		self.parts.wpn_fps_ass_contraband_body_little.keep_damage = true
@@ -2088,7 +2088,7 @@ end)
 
 Hooks:PostHook(WeaponFactoryTweakData, "init", "vectornine_sc", function(self)
 
-	if BeardLib.Utils:FindMod("RestorationMod") and self.parts.wpn_fps_smg_polymer_body_nine then
+	if self.parts.wpn_fps_smg_polymer_body_nine then
 	
 		self.parts.wpn_fps_smg_polymer_body_nine.supported = true
 		self.parts.wpn_fps_smg_polymer_body_nine.keep_damage = true

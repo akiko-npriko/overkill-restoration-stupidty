@@ -119,7 +119,8 @@ self:SetupAttachmentPoint( "soppo",{
 	})
 	end
 
-	if BeardLib.Utils:FindMod("RestorationMod") then -- If you're seeing this, hello there.
+	local yesakikosaysthisthinghasressupportubas = true
+	if yesakikosaysthisthinghasressupportubas then -- If you're seeing this, hello there.
 
 				self.soppo.recategorize = { "light_ar" }
 				self.soppo.damage_type = "assault_rifle"

@@ -15,13 +15,5 @@ Hooks:PostHook(WeaponTweakData, "init", "SPAS15ModInit", function(self)
 	self.spas15_crew.FIRE_MODE = "auto"
 	self.spas15_crew.is_shotgun = true
 	
-	if not BeardLib.Utils:FindMod("RestorationMod") then
-		self.spas15_crew.DAMAGE = 2.6
-		self.spas15_crew.CLIP_AMMO_MAX = 6
-		self.spas15_crew.NR_CLIPS_MAX = 14
-		self.spas15_crew.auto.fire_rate = 0.1714
-		self.spas15_crew.alert_size = 4500
-		self.spas15_crew.suppression = 1.8
-	end
 
 end)

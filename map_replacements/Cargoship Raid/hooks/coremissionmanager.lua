@@ -79,6 +79,7 @@ local _id = tostring(self._id)
 		checked_mods = {
 		["RestorationMod"] = true, ["Payday 2 Hyper Heisting Shin Shootout"] = true
 	}
+	--[[
 	overhaul_installed = false
 	local installed_mods = BLT.Mods.mods
 	for _,mod in pairs(installed_mods) do 
@@ -88,8 +89,10 @@ local _id = tostring(self._id)
 			overhaul_installed = true
 		end
 	end
+	]]
+	overhaul_installed = true
 	--Using two ways for checking if overhaul mod is installed, seems like BeardLib.Utils:ModExists dosn't work for strings that have spaces in them.
-	if BeardLib.Utils:ModExists("RestorationMod") or BeardLib.Utils:ModExists("Payday 2 Hyper Heisting Shin Shootout") or overhaul_installed then
+	if overhaul_installed then
 --[[ this actually crashes res hud xd
 					managers.hud:show_hint({
 					text=on and "Overhaul mod detected. Custom map ballance applied!" or "Overhaul mod detected. Custom map ballance applied!",

@@ -8,14 +8,7 @@ _G.xanax_ecm_update = false
 checked_mods = {
     ["RestorationMod"] = true, ["Payday 2 Hyper Heisting Shin Shootout"] = true
 }
-overhaul_installed = false
-local installed_mods = BLT.Mods.mods
-for _,mod in pairs(installed_mods) do 
-    local id = mod:GetId()
-    if checked_mods[id] then
-		overhaul_installed = true
-    end
-end
+overhaul_installed = true
 function counting(name, id)
 	if not table.contains(guard_list, name) then
 		return
@@ -43,7 +36,7 @@ function counting(name, id)
 	end
 	
 	local x = 0
-	if BeardLib.Utils:ModExists("RestorationMod") or BeardLib.Utils:ModExists("Payday 2 Hyper Heisting Shin Shootout") or overhaul_installed then
+	if overhaul_installed then
 		x = 6
 	else
 		x = 4

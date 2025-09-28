@@ -957,8 +957,8 @@ local grips = {
 Hooks:PostHook(WeaponFactoryTweakData, "init", "additionalpartsinit_sc", function(self)
 
 	--Partial ResMod integration
-
-	if BeardLib.Utils:FindMod("RestorationMod") then
+	local yesakikosaysthisthinghasressupportubas = true
+	if yesakikosaysthisthinghasressupportubas then
 
 -- AK mods
 

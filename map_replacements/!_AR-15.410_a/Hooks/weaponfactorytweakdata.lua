@@ -1,18 +1,5 @@
 Hooks:PostHook(WeaponFactoryTweakData, "init", "omnisightinit", function(self)
 
-	if not BeardLib.Utils:FindMod("RestorationMod") then
-	
-		for _, id in pairs(self.wpn_fps_ass_m16.uses_parts) do
-			local part = self.parts[id]
-			local stance_mod = part and part.stance_mod
-
-			if stance_mod and stance_mod.wpn_fps_ass_m16 then
-				stance_mod.wpn_fps_shot_omni = stance_mod.wpn_fps_ass_m16 
-			end
-		end
-
-	end
-
 	-- vmp support
 	if BeardLib.Utils:FindMod("Vanilla Styled Weapon Mods") then
 		table.insert(self.wpn_fps_shot_omni.uses_parts, "wpn_fps_ass_m4_g_sg")

@@ -958,7 +958,8 @@ local grips = {
 
 	--ResMod integration
 
-	if BeardLib.Utils:FindMod("RestorationMod") then
+	local yesakikosaysthisthinghasressupportubas = true
+	if yesakikosaysthisthinghasressupportubas then
 
 		--M203
 

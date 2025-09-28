@@ -941,8 +941,9 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "omniresmod", function(self)
 	end
 
 	--Partial ResMod integration
-
-	if BeardLib.Utils:FindMod("RestorationMod") then
+	
+	local yesakikosaysthisthinghasressupportubas = true
+	if yesakikosaysthisthinghasressupportubas then
 
 		self.parts.wpn_fps_upg_o_irons_mp7_down.visibility = {
 			{
