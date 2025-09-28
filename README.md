@@ -547,6 +547,7 @@ Yanked coding from... (intergrated into mod)
  - PASAM Submachine Gun (https://modworkshop.net/mod/53794)
  - Kel-Tec RFB (https://modworkshop.net/mod/25201)
  - Konstantinov SA-1 Assault Rifle (https://modworkshop.net/mod/53869)
+ - Browning M1919A6 (https://modworkshop.net/mod/22728)
 # Incompatible Shit
  - Spending Offshore Converter (https://modworkshop.net/mod/30447)
 	- Breaks Restore's Voiceline loading and causes voicelines to only load on paused menu
