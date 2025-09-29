@@ -180,8 +180,8 @@ end
 --This needs to be called to load additional buffers with audio.
 --Pass lines_loaded into the function to load more than one buffer at a time.
 local TARGET_FRAMERATE = 60
-local TARGET_BUFFERS_PER_FRAME = 4
-local MENU_TARGET_BUFFERS_PER_FRAME = 12
+local TARGET_BUFFERS_PER_FRAME = 3
+local MENU_TARGET_BUFFERS_PER_FRAME = 9
 function restorationVoiceline:update(dt, in_menu)
 	if #self._load_queue > 0 then
 		local loading_status = self._load_coroutine and coroutine.status(self._load_coroutine) or "dead"
