@@ -2354,7 +2354,7 @@ end
 
 --Function to Recalc Armor for Modular Aegis :3
 function PlayerDamage:akiko_recalc_ma_armor()
-	local placeholder = 1 --temp value to stop crashing do function later too lazuy
+	local placeholder = 1 --temp value to stop crashing do function later too lazuy (idk if i keep this function here ngl)
 	local pm = managers.player
 	pm.akiko_tramadamage_ap[placeholder] = placeholder -- dont do this lol just too lazyu
 end
