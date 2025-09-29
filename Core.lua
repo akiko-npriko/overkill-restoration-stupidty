@@ -1361,6 +1361,48 @@ function restoration:error(...)
 	log("[StreamlinedHeistingAI][Error] " .. table.concat({...}, " "))
 end
 
+--ThinkFaster :3
+restoration.thinkf_settings = {
+	task_throughput = 600,
+	tailored_throughput_enabled = true, -- Use different throughputs than the default on some heists
+	tailored_throughput_badlyoptimized = 300,
+	tailored_throughput_verybadlyoptimized = 180
+}
+
+	-- Tailored throughput definitions
+restoration.thinkf_heist_throughput_definitions = {
+	mallcrasher = "badlyoptimized", -- Mallcrasher
+	sah = "badlyoptimized", -- Shacklethorne Auction
+	bph = "badlyoptimized", -- Hells Island
+	des = "badlyoptimized", -- Henry's Rock
+	vit = "badlyoptimized", -- White House
+	mex = "badlyoptimized", -- Border Crossing
+	mex_cooking = "badlyoptimized", -- Border Crystals
+	red2 = "badlyoptimized", -- First World Bank
+	bex = "verybadlyoptimized", -- San Martin
+	pex = "verybadlyoptimized", -- Breakfast in Tijuana
+	dih = "verybadlyoptimized", -- Diamond Heist
+	peta = "verybadlyoptimized" -- Goat Simulator
+}
+
+restoration.thinkf_current_throughput = 60 -- if it fails just have this back up as vanilla
+
+-- Value has to be written to here rather than executing this logic every frame in EnemyManager
+function restoration:thinkf_refresh_current_throughput()
+	restoration.thinkf_current_throughput = restoration.thinkf_settings.task_throughput
+
+	if restoration.thinkf_settings.tailored_throughput_enabled then
+		-- Check if the current job needs a different throughput than the default
+		local job = Global.level_data and Global.level_data.level_id
+		if job and restoration.thinkf_heist_throughput_definitions[job] then
+			local name = restoration.thinkf_heist_throughput_definitions[job]
+			if restoration.thinkf_settings["tailored_throughput_" .. name] then
+				restoration.thinkf_current_throughput = restoration.thinkf_settings["tailored_throughput_" .. name]
+			end
+		end
+	end
+end
+
 --Fun Shit Ig (Dr Newbie Who There Functions)
 restoration.sound_move_data = {
 	ply = nil,
@@ -1570,83 +1612,3 @@ end
 		end)
 	end
 --Done
-
---[[
-if not ThinkFaster then
-    _G.ThinkFaster = {}
-    
-    --ThinkFaster.ModPath = ModPath
-    --ThinkFaster.SavePath = SavePath .. "thinkfaster.json"
-
-    ThinkFaster.settings = {
-        task_throughput = 500,
-        tailored_throughput_enabled = true, -- Use different throughputs than the default on some heists
-        tailored_throughput_badlyoptimized = 300,
-        tailored_throughput_verybadlyoptimized = 180
-    }
-
-    -- Tailored throughput definitions
-    ThinkFaster.heist_throughput_definitions = {
-        mallcrasher = "badlyoptimized", -- Mallcrasher
-        sah = "badlyoptimized", -- Shacklethorne Auction
-        bph = "badlyoptimized", -- Hells Island
-        des = "badlyoptimized", -- Henry's Rock
-        vit = "badlyoptimized", -- White House
-        mex = "badlyoptimized", -- Border Crossing
-        mex_cooking = "badlyoptimized", -- Border Crystals
-        red2 = "badlyoptimized", -- First World Bank
-        bex = "verybadlyoptimized", -- San Martin
-        pex = "verybadlyoptimized", -- Breakfast in Tijuana
-        dih = "verybadlyoptimized", -- Diamond Heist
-        peta = "verybadlyoptimized" -- Goat Simulator
-    }
-
-    ThinkFaster.current_throughput = 500
-
-    -- Allows changing the throughput mid-game
-    -- Value has to be written to here rather than executing this logic every frame in EnemyManager
-    function ThinkFaster:refresh_current_throughput()
-        ThinkFaster.current_throughput = ThinkFaster.settings.task_throughput
-
-        if ThinkFaster.settings.tailored_throughput_enabled then
-            -- Check if the current job needs a different throughput than the default
-            local job = Global.level_data and Global.level_data.level_id
-            if job and ThinkFaster.heist_throughput_definitions[job] then
-                local name = ThinkFaster.heist_throughput_definitions[job]
-                if ThinkFaster.settings["tailored_throughput_" .. name] then
-                    ThinkFaster.current_throughput = ThinkFaster.settings["tailored_throughput_" .. name]
-                end
-            end
-        end
-    end
-
-    -- Load menu settings
-	--[ [
-    function ThinkFaster:Load()
-        local file = io.open(self.SavePath, 'r')
-        if file then
-            for k, v in pairs(json.decode(file:read('*all')) or {}) do
-                self.settings[k] = v
-            end
-            file:close()
-        end
-    end
-
-    -- Save current menu settings
-    function ThinkFaster:Save()
-        local file = io.open(self.SavePath, 'w+')
-        if file then
-            file:write(json.encode(self.settings))
-            file:close()
-        end
-    end
-
-    -- Immediately load/save settings to write a file and to load the settings early
-    dofile(ModPath .. "loadconfig.lua")
-    ThinkFaster:Save()
-	
-    -- Initialize throughput with the freshly loaded settings
-    ThinkFaster:refresh_current_throughput()
-	] ]
-end
-]]

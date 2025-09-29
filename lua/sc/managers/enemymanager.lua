@@ -53,8 +53,7 @@ function EnemyManager:_update_queued_tasks(t, dt)
     local tasks_executed = 0
 
     -- Get the max task allowance for this frame
-    --local max_tasks_this_frame = math.ceil(ThinkFaster.current_throughput * dt)
-	local max_tasks_this_frame = math.ceil(500 * dt)
+    local max_tasks_this_frame = math.ceil(restoration.thinkf_current_throughput * dt)
 
     -- Instead of breaking the loop when the default tickrate is reached, go up to n tasks per second. Waiting tasks don't count.
     -- Also don't use ipairs for performance-critical stuff, rawdog it with a for-loop

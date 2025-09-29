@@ -89,7 +89,7 @@ function GameSetup:load_packages()
 		log("[isthisaskimerish] Warning: This is not available")
 		return false
     end
-
+	restoration:thinkf_refresh_current_throughput() -- thinkfaser setting :3
     local a = tweak_data.levels.ai_groups.america
     local r = tweak_data.levels.ai_groups.russia
     local m = tweak_data.levels.ai_groups.murkywater
