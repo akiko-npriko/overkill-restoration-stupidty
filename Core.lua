@@ -1363,10 +1363,10 @@ end
 
 --ThinkFaster :3
 restoration.thinkf_settings = {
-	task_throughput = 600,
+	task_throughput = 360,
 	tailored_throughput_enabled = true, -- Use different throughputs than the default on some heists
-	tailored_throughput_badlyoptimized = 300,
-	tailored_throughput_verybadlyoptimized = 180
+	tailored_throughput_badlyoptimized = 240,
+	tailored_throughput_verybadlyoptimized = 120
 }
 
 	-- Tailored throughput definitions
