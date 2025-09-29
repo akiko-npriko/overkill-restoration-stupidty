@@ -1856,6 +1856,12 @@ function PlayerManager:akiko_addto_trama_damage(laorder, laaddition)
 	self.akiko_tramadamage_ap[laorder] = laaddition ~= 0 and math.clamp(math.floor(self.akiko_tramadamage_ap[laorder] + (laaddition)),0,100) or self.akiko_tramadamage_ap[laorder]
 end
 
+function PlayerManager:akiko_force_trama_damage_to(laorder, forcesetval)
+	laorder = laorder or 1
+	forcesetval = forcesetval or self.akiko_tramadamage_ap[laorder] or 0
+	self.akiko_tramadamage_ap[laorder] = forcesetval ~= self.akiko_tramadamage_ap[laorder] and forcesetval or self.akiko_tramadamage_ap[laorder]
+end
+
 --Armor Plate Carriers Functions
 function PlayerManager:akiko_id_ma_armorplatecarrier() -- Recommended to not use this unless u know what to do...
 	if managers.player:has_category_upgrade("player","PLACEHOLDERUWU") then
