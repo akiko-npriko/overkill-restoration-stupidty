@@ -1850,14 +1850,10 @@ function PlayerManager:akiko_damage_to_trama_damage(laorder, ap_damage)
 	return (ap_damage/self:akiko_id_ma_armorplate_value(laorder, "trama_damage")) or 0
 end
 
-function PlayerManager:akiko_addto_trama_damage(laorder, laaddition, doireturn)
-	doireturn = doireturn or false
-	local thevalueuwu = math.clamp(math.floor(self.akiko_tramadamage_ap[laorder] + (laaddition)),0,100)
-	if doireturn then
-		return thevalueuwu or nil
-	else
-		self.akiko_tramadamage_ap[laorder] = thevalueuwu or self.akiko_tramadamage_ap[laorder]
-	end
+function PlayerManager:akiko_addto_trama_damage(laorder, laaddition)
+	laorder = laorder or 1
+	laaddition = laaddition or 0
+	self.akiko_tramadamage_ap[laorder] = laaddition ~= 0 and math.clamp(math.floor(self.akiko_tramadamage_ap[laorder] + (laaddition)),0,100) or self.akiko_tramadamage_ap[laorder]
 end
 
 --Armor Plate Carriers Functions
@@ -1892,11 +1888,6 @@ function PlayerManager:akiko_id_ma_armorplate_value(laorder, value_required)
 	local akikomaarmorplatedefault = self:upgrade_value("player", "akiko_ma_default_plate")[2] or {}
 	local akikoplateid = self:akiko_id_ma_armorplate(laorder)
 	return akikoplateid ~= "akiko_ma_default_armor_plates" and self:upgrade_value("player", akikoplateid) and self:upgrade_value("player", akikoplateid)[value_required] or akikomaarmorplatedefault[value_required] or 0
-end
-
-function PlayerManager:akiko_ingame_replace_armorplate(laorder)
-	laorder = laorder or 1
-	
 end
 
 function PlayerManager:body_armor_value(category, override_value, default) -- find out why this breaks armor functionality
