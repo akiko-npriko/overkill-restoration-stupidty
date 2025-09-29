@@ -2352,6 +2352,13 @@ end
 --Akiko Armor Plate Perk Deck (og. Hacker_lyx) 
 --Functions:
 
+--Function to Recalc Armor for Modular Aegis :3
+function PlayerDamage:akiko_recalc_ma_armor()
+	local placeholder = 1 --temp value to stop crashing do function later too lazuy
+	local pm = managers.player
+	pm.akiko_tramadamage_ap[placeholder] = placeholder
+end
+
 --Function for Hud and Checks Active?
 function PlayerDamage:update_adaptive_plate(unit, t, dt)
 	if managers.player:has_activate_temporary_upgrade("temporary", "adaptive_plate_base") then
