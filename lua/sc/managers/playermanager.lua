@@ -2155,6 +2155,10 @@ function PlayerManager:add_grenade_amount(amount, sync)
 end
 
 --Hoppip Useful Bot Function
+if not Network:is_server() then
+	return
+end
+
 Hooks:PostHook(PlayerManager, "sync_carry_data", "sync_carry_data_ub", function (self, unit, carry_id, carry_multiplier, dye_initiated, has_dye_pack, dye_value_multiplier, position, dir, throw_distance_multiplier_upgrade_level, zipline_unit, peer_id)
 	if Monkeepers or not restoration.usefulbot_settings.secure_loot or alive(zipline_unit) then
 		return

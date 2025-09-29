@@ -219,6 +219,10 @@ function PlayerTased:_check_action_shock(t, input, ...)
 end
 
 --Hoppip Useful Bot Function
+if not Network:is_server() then
+	return
+end
+
 -- Fix assistance SO so bots return to their hold position when done
 function PlayerTased:_register_revive_SO()
 	if self._SO_id or not managers.navigation:is_data_ready() then

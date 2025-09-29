@@ -64,6 +64,10 @@ end
 ]]
 
 --Hoppip Useful Bot Function
+if not Network:is_server() then
+	return
+end
+
 -- queued actions are not initialized for some reason
 Hooks:PostHook(TeamAIMovement, "init", "init_ub", function (self)
 	self._queued_actions = {}

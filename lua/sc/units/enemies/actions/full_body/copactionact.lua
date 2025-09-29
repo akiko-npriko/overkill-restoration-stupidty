@@ -49,6 +49,9 @@ Hooks:PostHook(CopActionAct, "on_exit", "res_on_exit", function(self)
 end)
 
 --Hoppip Useful Bot Function (might be in wrong place... bleh)
+if not Network:is_server() then
+	return
+end
 local sabotage_actions = {
 	untie = true,
 	sabotage_device_low = true,

@@ -53,6 +53,10 @@ Hooks:PreHook(ElementAreaTrigger, "client_on_executed", "res_client_on_executed"
 Hooks:PreHook(ElementAreaTrigger, "on_executed", "res_on_executed", set_was_enabled)
 
 --Hoppip Useful Bot Function
+if not Network:is_server() then
+	return
+end
+
 local needs_secure_match = {
 	cage_bag = true,
 	nail_muriatic_acid = true,

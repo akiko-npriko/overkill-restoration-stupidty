@@ -331,6 +331,10 @@ Hooks:PostHook(HuskPlayerMovement, "set_visual_carry", "UniqueLoot_HuskPlayerMov
 end)
 
 --Hoppip Useful Bot Function
+if not Network:is_server() then
+	return
+end
+
 -- Fix assistance SO so bots return to their hold position when done
 Hooks:OverrideFunction(HuskPlayerMovement, "set_need_assistance", function (self, need_assistance)
 	if self._need_assistance == need_assistance then

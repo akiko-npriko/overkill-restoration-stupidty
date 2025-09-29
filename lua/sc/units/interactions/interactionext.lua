@@ -485,6 +485,10 @@ function ReviveInteractionExt:interact(reviving_unit)
 end
 
 --Hoppip Useful Bot Function
+if not Network:is_server() then
+	return
+end
+
 -- Stop bots revive objective if someone else starts reviving
 Hooks:PreHook(ReviveInteractionExt, "_at_interact_start", "_at_interact_start_ub", function (self, player)
 	self._reviving_unit = player

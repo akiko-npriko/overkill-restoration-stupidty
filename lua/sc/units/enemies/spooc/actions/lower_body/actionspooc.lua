@@ -1977,6 +1977,10 @@ end
 
 --Hoppip Useful Bot Function
 -- make bots aware of cloaker attacks
+if not Network:is_server() then
+	return
+end
+
 Hooks:PostHook(ActionSpooc, "init", "init_ub", function (self)
 	self._is_sabotaging_action = true
 	restoration:usefulbot_force_attention(self._unit)

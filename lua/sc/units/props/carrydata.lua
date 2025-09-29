@@ -37,7 +37,7 @@ Hooks:PostHook(CarryData, "_chk_register_steal_SO", "sh__chk_register_steal_SO",
 	end
 	
 	-- Hoppip Thingy (Should not be possible, yet somehow it was for some people)
-	if self._steal_SO_data and not self._steal_SO_data.secure_pos then
+	if self._steal_SO_data and not self._steal_SO_data.secure_pos and Network:is_server() then
 		log("[UsefulBots] Bag steal SO without a secure pos!")
 		self:_unregister_steal_SO()
 	end
@@ -129,12 +129,15 @@ Hooks:PostHook(CarryData, "init", "UniqueLoot_CarryData_init", function(self, un
 --Unique Lootbag + Hoppip Usefulbot
 Hooks:PostHook(CarryData, "set_carry_id", "set_carry_id_ub", function (self, carry_id, is_init)
 	self:update_textures(self._carry_id, self._unit, false)
-	if not is_init then
+	if not is_init and Network:is_server() then
 		CarryData.ub_loot[self._unit:key()] = self._unit
 	end
 end)
 
 --Back to Reg Useful Bot Functions
+if not Network:is_server() then
+	return
+end
 Hooks:PreHook(CarryData, "destroy", "destroy_ub", function (self)
 	CarryData.ub_loot[self._unit:key()] = nil
 end)

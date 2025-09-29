@@ -544,6 +544,10 @@ function CopActionTase:_upd_ik_r_arm(target_vec, fwd_dot, t)
 end
 
 --Hoppip Useful Bot Function
+if not Network:is_server() then
+	return
+end
+
 -- Make bots aware of tasers starting a tase action
 Hooks:PostHook(CopActionTase, "init", "init_ub", function (self)
 	self._is_sabotaging_action = true
