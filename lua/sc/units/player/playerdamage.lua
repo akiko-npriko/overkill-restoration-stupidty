@@ -2356,7 +2356,7 @@ end
 function PlayerDamage:akiko_recalc_ma_armor()
 	local placeholder = 1 --temp value to stop crashing do function later too lazuy
 	local pm = managers.player
-	pm.akiko_tramadamage_ap[placeholder] = placeholder
+	pm.akiko_tramadamage_ap[placeholder] = placeholder -- dont do this lol just too lazyu
 end
 
 --Function for Hud and Checks Active?
