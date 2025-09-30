@@ -90,6 +90,9 @@ function GameSetup:load_packages()
 		return false
     end
 	restoration:thinkf_refresh_current_throughput() -- thinkfaser setting :3
+	--Starts first loads shared textures and assets (akiko edit)
+	load_difficulty_package("packages/addsharedassets")
+	
     local a = tweak_data.levels.ai_groups.america
     local r = tweak_data.levels.ai_groups.russia
     local m = tweak_data.levels.ai_groups.murkywater
@@ -102,57 +105,6 @@ function GameSetup:load_packages()
 
 	local difficulty = Global.game_settings and Global.game_settings.difficulty or "normal"
 	local difficulty_index = tweak_data:difficulty_to_index(difficulty)
-	local amiaskimiersh = isthisaskimerish()
-	--Akiko Edits
-	--Note to self:
-		--<Package id="packages/akiko_misc" file="packages/akiko_package/addmisc.xml"/>
-		--USE PACKAGE ID AND NOT FILE LOCATION OR ASSETS ARE NEVER LOADED!!!
-	-- Initialize throughput with the freshly loaded settings
-    --ThinkFaster:refresh_current_throughput()
-	--Starts first loads shared textures and assets
-	load_difficulty_package("packages/addsharedassets")
-	
-	load_difficulty_package("packages/addwarthog")
-	load_difficulty_package("packages/addgroundsniperfbi")
-	load_difficulty_package("packages/addgroundsniperswat")
-	load_difficulty_package("packages/addatfagent")
-	load_difficulty_package("packages/addciaagent")
-	load_difficulty_package("packages/addtazerdozer")
-	load_difficulty_package("packages/addzealtazerdozer")
-	if (difficulty_index == 6 or difficulty_index == 7 or difficulty_index == 8 or amiaskimiersh) then
-		load_difficulty_package("packages/addgigndoc")
-	end
-	if (difficulty_index == 7 or amiaskimiersh) then
-		load_difficulty_package("packages/addgroundsnipergensec")
-	end
-	if (difficulty_index == 7 or difficulty_index == 8 or amiaskimiersh) then
-		--load_difficulty_package("packages/addngminigun")
-		load_difficulty_package("packages/addzealunits")
-		load_difficulty_package("packages/addxofunit")
-		load_difficulty_package("packages/addtitanshielddozer")
-	end
-	if (difficulty_index == 8 or amiaskimiersh) and (ai_type == a or ai_type == feds or ai_type == la or ai_type == ny) then
-		load_difficulty_package("packages/addnationalguards")
-		load_difficulty_package("packages/addusngwarthog")
-		load_difficulty_package("packages/addgroundsniperng")
-		load_difficulty_package("packages/addirsunits")
-	end
-	
-	--[[
-	if difficulty_index == 4 then
-		load_difficulty_package("packages/akiko_package/REPLACEME")
-	elseif difficulty_index == 5 then
-		load_difficulty_package("packages/akiko_package/REPLACEME")
-	elseif difficulty_index == 6 then
-		load_difficulty_package("packages/akiko_package/REPLACEME")
-	elseif difficulty_index == 7 then
-		load_difficulty_package("packages/akiko_package/REPLACEME")
-	elseif difficulty_index == 8 then
-		load_difficulty_package("packages/akiko_package/REPLACEME")
-	end
-	]]
-	
-	--End of Akiko Edits
     
 	if job_tweak_package_data and job_tweak_package_data.load_all_difficulty_packages and not managers.skirmish:is_skirmish() then
 		for i, difficulty in ipairs(tweak_data.difficulties) do
@@ -206,6 +158,53 @@ function GameSetup:load_packages()
 
 		load_difficulty_package(diff_package)
     end
+	
+	--Akiko Edits
+	--Note to self:
+		--<Package id="packages/akiko_misc" file="packages/akiko_package/addmisc.xml"/>
+		--USE PACKAGE ID AND NOT FILE LOCATION OR ASSETS ARE NEVER LOADED!!!
+	local amiaskimiersh = isthisaskimerish()
+	load_difficulty_package("packages/addwarthog")
+	load_difficulty_package("packages/addgroundsniperfbi")
+	load_difficulty_package("packages/addgroundsniperswat")
+	load_difficulty_package("packages/addatfagent")
+	load_difficulty_package("packages/addciaagent")
+	load_difficulty_package("packages/addtazerdozer")
+	load_difficulty_package("packages/addzealtazerdozer")
+	if (difficulty_index == 6 or difficulty_index == 7 or difficulty_index == 8 or amiaskimiersh) then
+		load_difficulty_package("packages/addgigndoc")
+	end
+	if (difficulty_index == 7 or amiaskimiersh) then
+		load_difficulty_package("packages/addgroundsnipergensec")
+	end
+	if (difficulty_index == 7 or difficulty_index == 8 or amiaskimiersh) then
+		--load_difficulty_package("packages/addngminigun")
+		load_difficulty_package("packages/addzealunits")
+		load_difficulty_package("packages/addxofunit")
+		load_difficulty_package("packages/addtitanshielddozer")
+	end
+	if (difficulty_index == 8 or amiaskimiersh) and (ai_type == a or ai_type == feds or ai_type == la or ai_type == ny) then
+		load_difficulty_package("packages/addnationalguards")
+		load_difficulty_package("packages/addusngwarthog")
+		load_difficulty_package("packages/addgroundsniperng")
+		load_difficulty_package("packages/addirsunits")
+	end
+	
+	--[[
+	if difficulty_index == 4 then
+		load_difficulty_package("packages/akiko_package/REPLACEME")
+	elseif difficulty_index == 5 then
+		load_difficulty_package("packages/akiko_package/REPLACEME")
+	elseif difficulty_index == 6 then
+		load_difficulty_package("packages/akiko_package/REPLACEME")
+	elseif difficulty_index == 7 then
+		load_difficulty_package("packages/akiko_package/REPLACEME")
+	elseif difficulty_index == 8 then
+		load_difficulty_package("packages/akiko_package/REPLACEME")
+	end
+	]]
+	
+	--End of Akiko Edits
     
     self._loaded_faction_packages = {}
 
