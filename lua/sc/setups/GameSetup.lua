@@ -1,5 +1,8 @@
 --dofile(ModPath .. "core.lua")
 function GameSetup:load_packages()
+	--Akiko Randomize la Units
+	restoration:akiko_randomize_unique_units()
+	
 	Setup.load_packages(self)
 
 	if not PackageManager:loaded("packages/game_base_init") then
@@ -160,6 +163,21 @@ function GameSetup:load_packages()
     end
 	
 	--Akiko Edits
+	Hooks:Add("NetworkReceivedData", "akiko_sync_unique_units", function(sender, id, data)
+		if id == "akiko_unit_network_keys" then
+			local akiko_unit_data = data and (data ~= "") and LuaNetworking:StringToTable(data)
+			if akiko_unit_data then
+				if sender == 1 then
+					for key,setting in pairs(akiko_unit_data) do
+						if restoration.akiko_unique_units_keys[key] ~= nil then
+							restoration.akiko_unique_units_keys[key] = setting
+						end
+					end
+				end
+			end
+		end
+	end)
+	
 	--Note to self:
 		--<Package id="packages/akiko_misc" file="packages/akiko_package/addmisc.xml"/>
 		--USE PACKAGE ID AND NOT FILE LOCATION OR ASSETS ARE NEVER LOADED!!!
