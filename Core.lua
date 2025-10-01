@@ -25,7 +25,7 @@ restoration.akiko_unique_units_keys = restoration.akiko_unique_units_keys or aki
 function restoration:akiko_randomize_unique_units()
 	if Network:is_server() then
 		for key,setting in pairs(akiko_default_unique_units_keys) do
-			local blahmreowp = akiko_default_unique_units_keys[key][tweak_data.levels:get_ai_group_type()] or akiko_default_unique_units_keys[key].default
+			local blahmreowp = key[tweak_data.levels:get_ai_group_type()] or key.default
 			restoration.akiko_unique_units_keys[key] = type(blahmreowp) == "table" and table.random(blahmreowp) or blahmreowp
 		end
 	end
@@ -50,7 +50,7 @@ end
 
 function restoration:Init()
 	restoration.log_shit("SC: LOADING: " .. self.ModPath)
-	restoration:akiko_randomize_unique_units() -- randomize units early :3
+	--restoration:akiko_randomize_unique_units() -- randomize units early :3 (disabled game crashing)
 	restoration.captain_types = {
 		winter = {
 			spawn_group = "Cap_Winters",
