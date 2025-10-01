@@ -1362,7 +1362,9 @@ function restoration:error(...)
 end
 --Akiko Networking Shit
 local akiko_default_unique_units_keys = {
-	"zealorng" = "default",
+	"zealorng" = {
+		"default" = "default"
+	},
 }
 --local DO LATER!
 
@@ -1370,8 +1372,7 @@ restoration.akiko_unique_units_keys = restoration.akiko_unique_units_keys or aki
 function restoration:akiko_randomize_unique_units()
 	if Network:is_server() then
 		for key,setting in pairs(akiko_default_unique_units_keys) do
-			local akikoo_stupid_data = key .. key
-			local blahmreowp = akikoo_stupid_data[tweak_data.levels:get_ai_group_type()] or akikoo_stupid_data.default
+			local blahmreowp = key[tweak_data.levels:get_ai_group_type()] or key.default
 			restoration.akiko_unique_units_keys[key] = type(blahmreowp) == "table" and table.random(blahmreowp) or blahmreowp
 		end
 		
