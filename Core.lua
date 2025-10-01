@@ -1363,7 +1363,7 @@ end
 --Akiko Networking Shit
 local akiko_default_unique_units_keys = {
 	"zealorng" = {
-		"default" = "default"
+		"default" = {"zeal_camo", "zeal_noir"}
 	},
 }
 --local DO LATER!
