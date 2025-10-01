@@ -50,7 +50,7 @@ end
 
 function restoration:Init()
 	restoration.log_shit("SC: LOADING: " .. self.ModPath)
-	--restoration:akiko_randomize_unique_units() -- randomize units early :3 (disabled game crashing)
+	restoration:akiko_randomize_unique_units() -- randomize units early :3
 	restoration.captain_types = {
 		winter = {
 			spawn_group = "Cap_Winters",
