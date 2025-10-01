@@ -10,8 +10,8 @@ restoration._mod_path = restoration:GetPath()
 
 --Akiko Networking Shit
 local akiko_default_unique_units_keys = {
-	"zealorng" = {
-		"default" = {"zeal_camo", "zeal_noir"}
+	zealorng = {
+		default = {"zeal_camo", "zeal_noir"}
 	},
 }
 function restoration:akiko_load_difficulty_package(package_name)
