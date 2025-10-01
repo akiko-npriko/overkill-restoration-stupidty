@@ -1366,7 +1366,12 @@ local akiko_default_unique_units_keys = {
 		"default" = {"zeal_camo", "zeal_noir"}
 	},
 }
---local DO LATER!
+function restoration:akiko_load_difficulty_package(package_name)
+	if PackageManager:package_exists(package_name) and not PackageManager:loaded(package_name) then
+		table.insert(GameSetup._loaded_diff_packages, package_name)
+		PackageManager:load(package_name)
+	end
+end
 
 restoration.akiko_unique_units_keys = restoration.akiko_unique_units_keys or akiko_default_unique_units_keys
 function restoration:akiko_randomize_unique_units()
