@@ -209,7 +209,7 @@ function GameSetup:load_packages()
 		if restoration.akiko_unique_units_keys.zealorng then
 			if restoration.akiko_unique_units_keys.zealorng == "zeal_camo" then
 				load_difficulty_package("packages/addzealcamounits")
-			if restoration.akiko_unique_units_keys.zealorng == "zeal_noir" then
+			elseif restoration.akiko_unique_units_keys.zealorng == "zeal_noir" then
 				load_difficulty_package("packages/addzealnoirunits")
 			end
 		end
