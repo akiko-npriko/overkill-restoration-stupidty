@@ -1,8 +1,5 @@
 --dofile(ModPath .. "core.lua")
 function GameSetup:load_packages()
-	--Akiko Randomize la Units
-	restoration:akiko_randomize_unique_units()
-	
 	Setup.load_packages(self)
 
 	if not PackageManager:loaded("packages/game_base_init") then

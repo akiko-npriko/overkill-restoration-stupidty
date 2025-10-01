@@ -832,6 +832,7 @@ DisablePDTHChallengeStandalone = DisablePDTHChallengeStandalone or {}
 Hooks:Register("restoration_on_synced_peer")
 Hooks:Add("restoration_on_synced_peer","restoration_do_sync_peer_stuff",function(peer,peer_id)
 	restoration:send_sync_environment(peer,peer_id)
+	restoration:akiko_send_sync_unique_units(peer,peer_id)
 end)
 
 function restoration:get_env_setting(name)
@@ -1380,12 +1381,22 @@ function restoration:akiko_randomize_unique_units()
 			local blahmreowp = key[tweak_data.levels:get_ai_group_type()] or key.default
 			restoration.akiko_unique_units_keys[key] = type(blahmreowp) == "table" and table.random(blahmreowp) or blahmreowp
 		end
-		
-		--akiko_send_unique_units
+	end
+end
+
+function restoration:akiko_send_sync_unique_units(to)
+	if Network:is_server() then
 		local akiko_unit_data = restoration.akiko_unique_units_keys
 		local akiko_unit_string = akiko_unit_data and LuaNetworking:TableToString(akiko_unit_data)
 		if akiko_unit_string and akiko_unit_string ~= "" then
-			LuaNetworking:SendToPeers("akiko_unit_network_keys",akiko_unit_string)
+			if to and managers.network:session():peer(to) then
+				LuaNetworking:SendToPeer(to,"akiko_unit_network_keys",akiko_unit_string)
+			else
+				LuaNetworking:SendToPeers("akiko_unit_network_keys",akiko_unit_string)
+			end
+			log("**********************************************************Sent AkikoUniqueUnitSync with results: ")
+			Utils.PrintTable(akiko_unit_data)
+			log("**********************************************************End")
 		end
 	end
 end
