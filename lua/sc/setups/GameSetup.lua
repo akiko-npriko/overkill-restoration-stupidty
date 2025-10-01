@@ -197,7 +197,6 @@ function GameSetup:load_packages()
 	end
 	if (difficulty_index == 7 or difficulty_index == 8 or amiaskimiersh) then
 		--load_difficulty_package("packages/addngminigun")
-		load_difficulty_package("packages/addzealunits")
 		load_difficulty_package("packages/addxofunit")
 		load_difficulty_package("packages/addtitanshielddozer")
 	end
@@ -207,6 +206,18 @@ function GameSetup:load_packages()
 		load_difficulty_package("packages/addgroundsniperng")
 		load_difficulty_package("packages/addirsunits")
 	end
+	
+	--New Test System :3 - finetune later prob after modular aegis
+	if restoration.akiko_unique_units_keys then
+		if restoration.akiko_unique_units_keys.zealorng then
+			if restoration.akiko_unique_units_keys.zealorng == "zeal_camo" then
+				load_difficulty_package("packages/addzealcamounits")
+			if restoration.akiko_unique_units_keys.zealorng == "zeal_noir" then
+				load_difficulty_package("packages/addzealnoirunits")
+			end
+		end
+	end
+	
 	
 	--[[
 	if difficulty_index == 4 then
