@@ -160,25 +160,6 @@ function GameSetup:load_packages()
     end
 	
 	--Akiko Edits
-	Hooks:Add("NetworkReceivedData", "akiko_sync_unique_units", function(sender, id, data)
-		if id == "akiko_unit_network_keys" then
-			local akiko_unit_data = data and (data ~= "") and LuaNetworking:StringToTable(data)
-			if akiko_unit_data then
-				if sender == 1 then
-					log("**********************************************************Received AkikoUniqueUnitSync with results: ")
-					Utils.PrintTable(akiko_unit_data)
-					log("**********************************************************End. entry.lua")
-
-					for key,setting in pairs(akiko_unit_data) do
-						if restoration.akiko_unique_units_keys[key] ~= nil then
-							restoration.akiko_unique_units_keys[key] = setting
-						end
-					end
-				end
-			end
-		end
-	end)
-	
 	--Note to self:
 		--<Package id="packages/akiko_misc" file="packages/akiko_package/addmisc.xml"/>
 		--USE PACKAGE ID AND NOT FILE LOCATION OR ASSETS ARE NEVER LOADED!!!
@@ -208,19 +189,7 @@ function GameSetup:load_packages()
 		load_difficulty_package("packages/addirsunits")
 	end
 	
-	--New Test System :3 - finetune later prob after modular aegis
-	if restoration.akiko_unique_units_keys then
-		if restoration.akiko_unique_units_keys.zealorng then
-			if restoration.akiko_unique_units_keys.zealorng == "zeal_camo" then
-				load_difficulty_package("packages/addzealcamounits")
-			elseif restoration.akiko_unique_units_keys.zealorng == "zeal_noir" then
-				load_difficulty_package("packages/addzealnoirunits")
-			end
-		end
-	end
-	
-	--load_difficulty_package("packages/addzealcamounits") -- temp
-	--load_difficulty_package("packages/addzealnoirunits") -- temp
+	restoration:akiko_load_unique_dynamic_units(true)
 	
 	--[[
 	if difficulty_index == 4 then
@@ -465,4 +434,14 @@ function GameSetup:gather_packages_to_unload()
 
 		self._mutators_packages = {}
 	end
+	--Akiko Unload Dynamic Packages
+	if restoration.loaded_akiko_dynamic_packages then
+		for i, package in ipairs(restoration.loaded_akiko_dynamic_packages) do
+			if PackageManager:loaded(package) then
+				table.insert(self._packages_to_unload, package)
+			end
+		end
+
+		restoration.loaded_akiko_dynamic_packages = {}
+    end
 end

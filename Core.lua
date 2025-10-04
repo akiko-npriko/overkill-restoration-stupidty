@@ -14,9 +14,10 @@ local akiko_default_unique_units_keys = {
 		default = {"zeal_camo", "zeal_noir"}
 	},
 }
+restoration.loaded_akiko_dynamic_packages = restoration.loaded_akiko_dynamic_packages or {}
 function restoration:akiko_load_difficulty_package(package_name)
 	if PackageManager:package_exists(package_name) and not PackageManager:loaded(package_name) then
-		table.insert(GameSetup._loaded_diff_packages, package_name)
+		table.insert(restoration.loaded_akiko_dynamic_packages, package_name)
 		PackageManager:load(package_name)
 	end
 end
@@ -45,6 +46,30 @@ function restoration:akiko_send_sync_unique_units(to)
 			Utils.PrintTable(akiko_unit_data)
 			log("**********************************************************End")
 		end
+	end
+end
+
+function restoration:akiko_load_unique_dynamic_units(loadduringonlyserver)
+	--New Test System :3 - finetune later prob after modular aegis
+	loadduringonlyserver = loadduringonlyserver or false
+	local function theloadingsystem()
+		if restoration.akiko_unique_units_keys then
+			log("**********************************************************DEBUGGGGG RESTORATION VARIABLE FOR AKIKO with results: ")
+			Utils.PrintTable(restoration.akiko_unique_units_keys)
+			log("**********************************************************End. entry.lua")
+			if restoration.akiko_unique_units_keys.zealorng then
+				if restoration.akiko_unique_units_keys.zealorng == "zeal_camo" then
+					restoration:akiko_load_difficulty_package("packages/addzealcamounits")
+				elseif restoration.akiko_unique_units_keys.zealorng == "zeal_noir" then
+					restoration:akiko_load_difficulty_package("packages/addzealnoirunits")
+				end
+			end
+		end
+	end
+	if loadduringonlyserver and Network:is_server() then
+		theloadingsystem()
+	elseif not loadduringonlyserver and not Network:is_server() then
+		theloadingsystem()
 	end
 end
 
