@@ -61,27 +61,6 @@ Hooks:Add("NetworkReceivedData", "SyncEnv", function(sender, id, data)
 	end
 end)
 
---Akiko Sync Dynamic Units
-	Hooks:Add("NetworkReceivedData", "akiko_sync_unique_units", function(sender, id, data)
-		if id == "akiko_unit_network_keys" then
-			local akiko_unit_data = data and (data ~= "") and LuaNetworking:StringToTable(data)
-			if akiko_unit_data then
-				if sender == 1 then
-					log("**********************************************************Received AkikoUniqueUnitSync with results: ")
-					Utils.PrintTable(env_data)
-					log("**********************************************************End. entry.lua")
-
-					for key,setting in pairs(akiko_unit_data) do
-						if restoration.akiko_unique_units_keys[key] ~= nil then
-							restoration.akiko_unique_units_keys[key] = setting
-						end
-					end
-					restoration:akiko_load_unique_dynamic_units()
-				end
-			end
-		end
-	end)
-
 tweak_data.upgrades.values.player.body_armor.armor[9] = 25
 tweak_data.upgrades.values.player.body_armor.movement[9] = 0.4
 tweak_data.upgrades.values.player.body_armor.dodge[9] = -0.5

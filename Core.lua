@@ -14,23 +14,10 @@ local akiko_default_unique_units_keys = {
 		default = {"zeal_camo", "zeal_noir"}
 	},
 }
-
 function restoration:akiko_load_difficulty_package(package_name)
 	if PackageManager:package_exists(package_name) and not PackageManager:loaded(package_name) then
 		table.insert(GameSetup._loaded_diff_packages, package_name)
 		PackageManager:load(package_name)
-	end
-end
-
-function restoration:akiko_load_unique_dynamic_units()
-	if restoration.akiko_unique_units_keys then
-		if restoration.akiko_unique_units_keys.zealorng then
-			if restoration.akiko_unique_units_keys.zealorng == "zeal_camo" then
-				restoration:akiko_load_difficulty_package("packages/addzealcamounits")
-			elseif restoration.akiko_unique_units_keys.zealorng == "zeal_noir" then
-				restoration:akiko_load_difficulty_package("packages/addzealnoirunits")
-			end
-		end
 	end
 end
 
@@ -41,7 +28,6 @@ function restoration:akiko_randomize_unique_units()
 			local blahmreowp = akiko_default_unique_units_keys[key][data_ai_type] or akiko_default_unique_units_keys[key].default
 			restoration.akiko_unique_units_keys[key] = type(blahmreowp) == "table" and table.random(blahmreowp) or blahmreowp
 		end
-		restoration:akiko_load_unique_dynamic_units()
 	end
 end
 

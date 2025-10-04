@@ -160,6 +160,25 @@ function GameSetup:load_packages()
     end
 	
 	--Akiko Edits
+	Hooks:Add("NetworkReceivedData", "akiko_sync_unique_units", function(sender, id, data)
+		if id == "akiko_unit_network_keys" then
+			local akiko_unit_data = data and (data ~= "") and LuaNetworking:StringToTable(data)
+			if akiko_unit_data then
+				if sender == 1 then
+					log("**********************************************************Received AkikoUniqueUnitSync with results: ")
+					Utils.PrintTable(env_data)
+					log("**********************************************************End. entry.lua")
+
+					for key,setting in pairs(akiko_unit_data) do
+						if restoration.akiko_unique_units_keys[key] ~= nil then
+							restoration.akiko_unique_units_keys[key] = setting
+						end
+					end
+				end
+			end
+		end
+	end)
+	
 	--Note to self:
 		--<Package id="packages/akiko_misc" file="packages/akiko_package/addmisc.xml"/>
 		--USE PACKAGE ID AND NOT FILE LOCATION OR ASSETS ARE NEVER LOADED!!!
@@ -187,6 +206,17 @@ function GameSetup:load_packages()
 		load_difficulty_package("packages/addusngwarthog")
 		load_difficulty_package("packages/addgroundsniperng")
 		load_difficulty_package("packages/addirsunits")
+	end
+	
+	--New Test System :3 - finetune later prob after modular aegis
+	if restoration.akiko_unique_units_keys then
+		if restoration.akiko_unique_units_keys.zealorng then
+			if restoration.akiko_unique_units_keys.zealorng == "zeal_camo" then
+				load_difficulty_package("packages/addzealcamounits")
+			elseif restoration.akiko_unique_units_keys.zealorng == "zeal_noir" then
+				load_difficulty_package("packages/addzealnoirunits")
+			end
+		end
 	end
 	
 	
