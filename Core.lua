@@ -25,9 +25,8 @@ restoration.akiko_unique_units_keys = restoration.akiko_unique_units_keys or aki
 function restoration:akiko_randomize_unique_units()
 	if Network:is_server() then
 		for key,setting in pairs(akiko_default_unique_units_keys) do
-			local testvariabletypeshit = tweak_data.levels:get_ai_group_type() or false
-			log(tostring(testvariabletypeshit))
-			local blahmreowp = key[testvariabletypeshit] or key.default -- fix ai group type later
+			--local blahmreowp = key[data_ai_type] or key.default -- americaaa
+			local blahmreowp = key.default
 			restoration.akiko_unique_units_keys[key] = type(blahmreowp) == "table" and table.random(blahmreowp) or blahmreowp
 		end
 	end
