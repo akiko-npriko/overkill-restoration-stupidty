@@ -166,7 +166,7 @@ function GameSetup:load_packages()
 			if akiko_unit_data then
 				if sender == 1 then
 					log("**********************************************************Received AkikoUniqueUnitSync with results: ")
-					Utils.PrintTable(env_data)
+					Utils.PrintTable(akiko_unit_data)
 					log("**********************************************************End. entry.lua")
 
 					for key,setting in pairs(akiko_unit_data) do
