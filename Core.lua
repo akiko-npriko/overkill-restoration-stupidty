@@ -41,6 +41,7 @@ function restoration:akiko_randomize_unique_units()
 			local blahmreowp = akiko_default_unique_units_keys[key][data_ai_type] or akiko_default_unique_units_keys[key].default
 			restoration.akiko_unique_units_keys[key] = type(blahmreowp) == "table" and table.random(blahmreowp) or blahmreowp
 		end
+		restoration:akiko_load_unique_dynamic_units()
 	end
 end
 

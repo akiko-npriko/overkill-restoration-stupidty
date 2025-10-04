@@ -76,10 +76,10 @@ end)
 							restoration.akiko_unique_units_keys[key] = setting
 						end
 					end
+					restoration:akiko_load_unique_dynamic_units()
 				end
 			end
 		end
-		restoration:akiko_load_unique_dynamic_units()
 	end)
 
 tweak_data.upgrades.values.player.body_armor.armor[9] = 25
