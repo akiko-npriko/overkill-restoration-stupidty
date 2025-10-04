@@ -15303,12 +15303,10 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	local randomizerrrr = math.rand(1)
 	local randomizerrrra = math.rand(1)
 	local randomizrrrb = math.rand(1)
-	local randomizrzeal = math.rand(1)
 	log("TEST")
 	log(randomizerrrr)
 	log(randomizerrrra)
 	log(randomizrrrb)
-	log(randomizrzeal)
 	local unit_types_green_dozer = self.unit_categories.FBI_tank.unit_types
 	local unit_types_black_dozer = self.unit_categories.BLACK_tank.unit_types
 	local unit_types_skull_dozer = self.unit_categories.SKULL_tank.unit_types
@@ -15620,21 +15618,26 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 		access = access_type_all,
 		special_type = "taser"
 	}
-	if randomizrzeal <= 0.5 then
-		self.unit_categories.zeal_light.unit_types.america = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo/ene_zeal_camo")}
-		self.unit_categories.zeal_light.unit_types.nypd = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo/ene_zeal_camo")}
-		self.unit_categories.zeal_light.unit_types.lapd = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo/ene_zeal_camo")}
-		self.unit_categories.zeal_light.unit_types.fbi = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo/ene_zeal_camo")}
+	--Temp for now :3
+	if restoration.akiko_unique_units_keys then
+		if restoration.akiko_unique_units_keys.zealorng then
+			if restoration.akiko_unique_units_keys.zealorng == "zeal_camo" then
+				self.unit_categories.zeal_light.unit_types.america = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo/ene_zeal_camo")}
+				self.unit_categories.zeal_light.unit_types.nypd = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo/ene_zeal_camo")}
+				self.unit_categories.zeal_light.unit_types.lapd = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo/ene_zeal_camo")}
+				self.unit_categories.zeal_light.unit_types.fbi = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo/ene_zeal_camo")}
 	
-		self.unit_categories.zeal_heavy.unit_types.america = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo_heavy/ene_zeal_camo_heavy")}
-		self.unit_categories.zeal_heavy.unit_types.nypd = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo_heavy/ene_zeal_camo_heavy")}
-		self.unit_categories.zeal_heavy.unit_types.lapd = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo_heavy/ene_zeal_camo_heavy")}
-		self.unit_categories.zeal_heavy.unit_types.fbi = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo_heavy/ene_zeal_camo_heavy")}
+				self.unit_categories.zeal_heavy.unit_types.america = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo_heavy/ene_zeal_camo_heavy")}
+				self.unit_categories.zeal_heavy.unit_types.nypd = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo_heavy/ene_zeal_camo_heavy")}
+				self.unit_categories.zeal_heavy.unit_types.lapd = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo_heavy/ene_zeal_camo_heavy")}
+				self.unit_categories.zeal_heavy.unit_types.fbi = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo_heavy/ene_zeal_camo_heavy")}
 	
-		self.unit_categories.zeal_shield.unit_types.america = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo_shield/ene_zeal_camo_shield")}
-		self.unit_categories.zeal_shield.unit_types.nypd = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo_shield/ene_zeal_camo_shield")}
-		self.unit_categories.zeal_shield.unit_types.lapd = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo_shield/ene_zeal_camo_shield")}
-		self.unit_categories.zeal_shield.unit_types.fbi = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo_shield/ene_zeal_camo_shield")}
+				self.unit_categories.zeal_shield.unit_types.america = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo_shield/ene_zeal_camo_shield")}
+				self.unit_categories.zeal_shield.unit_types.nypd = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo_shield/ene_zeal_camo_shield")}
+				self.unit_categories.zeal_shield.unit_types.lapd = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo_shield/ene_zeal_camo_shield")}
+				self.unit_categories.zeal_shield.unit_types.fbi = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo_shield/ene_zeal_camo_shield")}
+			end
+		end
 	end
 	if difficulty_index == 5 then
 		akikomedicdozersdwbelow()
