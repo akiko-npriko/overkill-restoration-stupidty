@@ -70,9 +70,7 @@ Hooks:Add("NetworkReceivedData", "akiko_sync_unique_units", function(sender, id,
 				Utils.PrintTable(akiko_unit_data)
 				log("**********************************************************End. entry.lua")
 				for key,setting in pairs(akiko_unit_data) do
-					if restoration.akiko_unique_units_keys[key] ~= nil then
-						restoration.akiko_unique_units_keys[key] = setting
-					end
+					restoration.akiko_unique_units_keys[key] = setting
 				end
 				restoration:akiko_load_unique_dynamic_units(false)
 			end
