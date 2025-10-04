@@ -209,7 +209,6 @@ function GameSetup:load_packages()
 	end
 	
 	--New Test System :3 - finetune later prob after modular aegis
-	--[[
 	if restoration.akiko_unique_units_keys then
 		if restoration.akiko_unique_units_keys.zealorng then
 			if restoration.akiko_unique_units_keys.zealorng == "zeal_camo" then
@@ -219,9 +218,9 @@ function GameSetup:load_packages()
 			end
 		end
 	end
-	]]
-	load_difficulty_package("packages/addzealcamounits") -- temp
-	load_difficulty_package("packages/addzealnoirunits") -- temp
+	
+	--load_difficulty_package("packages/addzealcamounits") -- temp
+	--load_difficulty_package("packages/addzealnoirunits") -- temp
 	
 	--[[
 	if difficulty_index == 4 then
