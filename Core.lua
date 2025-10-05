@@ -11,7 +11,7 @@ restoration._mod_path = restoration:GetPath()
 --Akiko Networking Shit
 local akiko_default_unique_units_keys = {
 	zealorng = {
-		default = {"zeal_camo", "zeal_noir"}
+		default = {"addzealcamounits", "addzealnoirunits"}
 	},
 }
 restoration.loaded_akiko_dynamic_packages = restoration.loaded_akiko_dynamic_packages or {}
@@ -50,7 +50,6 @@ function restoration:akiko_send_sync_unique_units(to)
 end
 
 function restoration:akiko_load_unique_dynamic_units(loadduringonlyserver)
-	--New Test System :3 - finetune later prob after modular aegis
 	loadduringonlyserver = loadduringonlyserver or false
 	local function theloadingsystem()
 		if restoration.akiko_unique_units_keys then
@@ -58,11 +57,7 @@ function restoration:akiko_load_unique_dynamic_units(loadduringonlyserver)
 			Utils.PrintTable(restoration.akiko_unique_units_keys)
 			log("**********************************************************End. entry.lua")
 			if restoration.akiko_unique_units_keys.zealorng then
-				if restoration.akiko_unique_units_keys.zealorng == "zeal_camo" then
-					restoration:akiko_load_difficulty_package("packages/addzealcamounits")
-				elseif restoration.akiko_unique_units_keys.zealorng == "zeal_noir" then
-					restoration:akiko_load_difficulty_package("packages/addzealnoirunits")
-				end
+				restoration:akiko_load_difficulty_package("packages/" .. restoration.akiko_unique_units_keys.zealorng)
 			end
 		end
 	end

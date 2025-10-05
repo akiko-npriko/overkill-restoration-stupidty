@@ -15621,7 +15621,7 @@ function GroupAITweakData:_init_unit_categories(difficulty_index)
 	--Temp for now :3
 	if restoration.akiko_unique_units_keys then
 		if restoration.akiko_unique_units_keys.zealorng then
-			if restoration.akiko_unique_units_keys.zealorng == "zeal_camo" then
+			if restoration.akiko_unique_units_keys.zealorng == "addzealcamounits" then
 				self.unit_categories.zeal_light.unit_types.america = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo/ene_zeal_camo")}
 				self.unit_categories.zeal_light.unit_types.nypd = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo/ene_zeal_camo")}
 				self.unit_categories.zeal_light.unit_types.lapd = {Idstring("units/pd2_mod_akiko/characters/ene_zeal_camo/ene_zeal_camo")}
