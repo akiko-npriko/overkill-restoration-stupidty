@@ -552,3 +552,5 @@ Yanked coding from... (intergrated into mod)
  - Spending Offshore Converter (https://modworkshop.net/mod/30447)
 	- Breaks Restore's Voiceline loading and causes voicelines to only load on paused menu
 	- Modifies function GameStateMachine:update(t, dt) which restoration voicelines rely on to load
+ - Carry-Stacker-Reloaded
+	- Intergrated into mod from Res...
