@@ -23471,14 +23471,12 @@ function GroupAITweakData:_init_task_data(difficulty_index, difficulty)
 	end
 	--Akiko Spawnlimits and Assult Besiege?
 	--More Snipers in my bussy :3
-	if difficulty_index <= 3 then
+	if difficulty_index <= 5 then
 		self.special_unit_spawn_limits.sniper = 3
-	elseif difficulty_index <= 5 then
-		self.special_unit_spawn_limits.sniper = 6
 	elseif difficulty_index <= 7 then
-		self.special_unit_spawn_limits.sniper = 9
+		self.special_unit_spawn_limits.sniper = 6
 	else
-		self.special_unit_spawn_limits.sniper = 12
+		self.special_unit_spawn_limits.sniper = 9
 	end
 	self.special_unit_spawn_limits.xofboom = 3
 	--Assault groups
@@ -23915,9 +23913,9 @@ function GroupAITweakData:_init_task_data(difficulty_index, difficulty)
 	end
 	if difficulty_index == 8 then
 		self.besiege.assault.groups.tac_sniper = {
+			0.05,
 			0.16,
-			0.21,
-			0.25
+			0.22
 		}
 	elseif difficulty_index == 7 then
 		self.besiege.assault.groups.tac_sniper = {
