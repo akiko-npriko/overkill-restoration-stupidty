@@ -24396,6 +24396,11 @@ function GroupAITweakData:_init_task_data(difficulty_index, difficulty)
 			min_diff = captain_min_diff,
 			sustain_only = true
 		},
+		boss_heavygunner = {
+			cooldown = captain_cooldown,
+			min_diff = captain_min_diff,
+			sustain_only = true
+		},
 		Fake_Captain = {
 			cooldown = captain_cooldown,
 			min_diff = captain_min_diff,
