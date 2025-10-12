@@ -350,7 +350,7 @@ Additional Testers: Derma, ShortonComedyGamer, K4_Kydure, Finale
 AND YOU, for downloading this I guess.
 
 # Akiko's Credits: -- (to do: figure out every mod that in this thing and give credits also attempt to find licenses for all and if required ask perms)
- - carl ruins everything (https://modworkshop.net/user/carlruinseverything)
+ # carl ruins everything (https://modworkshop.net/user/carlruinseverything)
 	- Operator Attachment Pack GEN2 - The Externals (https://modworkshop.net/mod/31060)
 		- License
 			-
@@ -368,7 +368,7 @@ AND YOU, for downloading this I guess.
 		Model and textures for MWG made by Ubisoft (Red Storm????) for Tom Clancy's Rainbow Six: Siege.
 		Special thanks to Leon S. for feedback on OAP G1 implementation, kden and GermanTacos for helping me mix textures, moon for feedback and assistance during the rebalancing process, RJC9000 for being a good honorary kouhai, and last but not least every single one of you guys who downloaded the Operator Attachment Pack while it was still in GEN 1. I love all of you, and you're why I keep doing what it is I do.
 		
- - Rickerus (https://modworkshop.net/user/rickerus)
+ # Rickerus (https://modworkshop.net/user/rickerus)
 	 - National Guard ZEAL Units (https://modworkshop.net/mod/37321) -- thank you for giving me permission
 		- Note: Used the assets for national guard custom faction...
 		- License
