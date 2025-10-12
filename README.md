@@ -350,6 +350,8 @@ Additional Testers: Derma, ShortonComedyGamer, K4_Kydure, Finale
 AND YOU, for downloading this I guess.
 
 # Akiko's Credits: -- (to do: figure out every mod that in this thing and give credits also attempt to find licenses for all and if required ask perms)
+* - Uses assets from the mod
+** - The code is modified.
  - carl ruins everything (https://modworkshop.net/user/carlruinseverything)
 	- Operator Attachment Pack GEN2 - The Externals (https://modworkshop.net/mod/31060)
 		- License
@@ -368,7 +370,7 @@ AND YOU, for downloading this I guess.
 		Special thanks to Leon S. for feedback on OAP G1 implementation, kden and GermanTacos for helping me mix textures, moon for feedback and assistance during the rebalancing process, RJC9000 for being a good honorary kouhai, and last but not least every single one of you guys who downloaded the Operator Attachment Pack while it was still in GEN 1. I love all of you, and you're why I keep doing what it is I do.
 		
  - Rickerus (https://modworkshop.net/user/rickerus)
-	 - National Guard ZEAL Units (https://modworkshop.net/mod/37321) -- thank you for giving me permission
+	 - National Guard ZEAL Units (https://modworkshop.net/mod/37321)* -- thank you for giving me permission
 		- License
 		Do not redistribute or reupload without explicit permission from Rickerus. If you would like to use assets from this mod, please DM (Direct Message) or PM (Private Message) Rickerus for permissions per asset. Make sure to credit if you are given permission to use assets from the mod.
 		Special thanks to:
