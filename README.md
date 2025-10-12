@@ -353,7 +353,6 @@ AND YOU, for downloading this I guess.
  # carl ruins everything (https://modworkshop.net/user/carlruinseverything)
 	- Operator Attachment Pack GEN2 - The Externals (https://modworkshop.net/mod/31060)
 		- License
-			-
 		Model and textures for M4 SOPMOD II foregrip by boolyq on GameBanana. If it looks familiar, that's because it's actually the same model Gambyt used for his standalone DDM4. That was a complete coincidence.
 		Model and textures for DDM4V1 foregrip and 870MCS Breacher Foregrip by Danger Close Games for Medal of Honor: Warfighter.
 		Model/textures for SOCOM stock by Battlestate Games for Escape from Tarkov.
@@ -372,7 +371,6 @@ AND YOU, for downloading this I guess.
 	 - National Guard ZEAL Units (https://modworkshop.net/mod/37321) -- thank you for giving me permission
 		- Note: Used the assets for national guard custom faction...
 		- License
-			-
 		Do not redistribute or reupload without explicit permission from Rickerus. If you would like to use assets from this mod, please DM (Direct Message) or PM (Private Message) Rickerus for permissions per asset. Make sure to credit if you are given permission to use assets from the mod.
 		Special thanks to:
 		Matthelzor: Teaching and helping me with rigging the models.
