@@ -1,0 +1,582 @@
+<table name="Operator Pack - Externals" author="carl" color="Color(0.8, 0.2, 0.8)">
+	
+	<AssetUpdates id="31060" name="asset_updates" version="GEN2.0.1" provider="modworkshop"/>
+
+	<GlobalValue id="opr8raf" color="Color(0.9, 0.09, 0.08)"/> 
+
+	<Localization directory="loc" default="english.txt"/>
+
+	<WeaponMod id="wpn_fps_upg_ak_fg_b10" based_on="wpn_fps_upg_fg_midwest" type="foregrip" unit="units/pd2_mod_oga/weapons/wpn_fps_upg_ak_fg_b10/wpn_fps_upg_ak_fg_b10_nogas" global_value="opr8raf" drop="false" a_obj="a_fg_zenit" texture_bundle_folder="pd2_mod_oga" is_a_unlockable="true">
+	<!-- todo: set up proper overrides needed for gas block. -->
+		<pcs/>
+		<stats damage="0" concealment="-1" recoil="1" spread="2"/>
+		<override>
+			<wpn_fps_upg_ak_ur_b33 unit="units/pd2_mod_oga/weapons/wpn_fps_upg_ak_ur_b33/wpn_fps_upg_ak_ur_b33_full"/>
+		</override>
+		<weapons>
+			<value_node value="wpn_fps_ass_74"/>
+			<value_node value="wpn_fps_ass_akm"/>
+			<value_node value="wpn_fps_ass_akm_gold"/>
+		<!--	<value_node value="wpn_fps_smg_vityaz"/> -->
+		</weapons>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_ak_s_pt1" based_on="wpn_fps_upg_ak_s_solidstock" type="stock" unit="units/pd2_mod_oga/weapons/wpn_fps_upg_ak_s_pt1/wpn_fps_upg_ak_s_pt1" global_value="opr8raf" a_obj="a_s_zenit" drop="false" texture_bundle_folder="pd2_mod_oga" is_a_unlockable="true">
+		<pcs/>
+		<stats damage="0" concealment="-4" recoil="3" spread="4"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_74"/>
+			<value_node value="wpn_fps_ass_akm"/>
+			<value_node value="wpn_fps_ass_akm_gold"/>
+			<value_node value="wpn_fps_ass_flint"/>
+			<value_node value="wpn_fps_shot_saiga"/>
+			<value_node value="wpn_fps_smg_akmsu"/>
+			<value_node value="wpn_fps_smg_coal"/>
+			<value_node value="wpn_fps_smg_vityaz"/>
+		</weapons>
+		<adds/>
+		<forbids/>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_ak_ur_b33" based_on="wpn_fps_ass_74_body_upperreceiver" type="upper_reciever" unit="units/pd2_mod_oga/weapons/wpn_fps_upg_ak_ur_b33/wpn_fps_upg_ak_ur_b33" global_value="opr8raf" drop="false" a_obj="a_body_zenit" texture_bundle_folder="pd2_mod_oga" is_a_unlockable="true">
+		<pcs/>
+		<stats damage="1" concealment="-1" recoil="0" spread="1"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_74"/>
+			<value_node value="wpn_fps_ass_akm"/>
+			<value_node value="wpn_fps_ass_akm_gold"/>
+			<value_node value="wpn_fps_shot_saiga"/>				</weapons>
+	</WeaponMod>
+
+
+
+
+<!-- PLEASE KEEP ALL OLD STUFF BELOW THIS LINE. -->
+		<WeaponMod id="wpn_fps_upg_daniel_front_iron" based_on="wpn_fps_ass_m16_os_frontsight" unit="units/payday2/weapons/wpn_fps_ass_m16_pts/wpn_fps_ass_m16_os_frontsight" a_obj="a_poon" type="irwin_fletcher" drop="false" is_a_unlockable="false">    </WeaponMod> 
+
+
+	<WeaponMod id="wpn_fps_upg_s_devgru" based_on="wpn_fps_snp_tti_s_vltor" unit="units/pd2_mod_oga/weapons/wpn_fps_upg_s_devgru/wpn_fps_upg_s_devgru" type="stock" global_value="opr8raf" drop="false" texture_bundle_folder="pd2_mod_oga" is_a_unlockable="true">
+        <stats spread="-2" spread_moving="-2" recoil="-3" concealment="4"/>
+	    <pcs/>
+		<weapons>
+			<value_node value="wpn_fps_ass_m4"/>
+			<value_node value="wpn_fps_ass_m16"/>
+			<value_node value="wpn_fps_smg_olympic"/>
+			<value_node value="wpn_fps_ass_amcar"/>
+			<value_node value="wpn_fps_ass_74"/>
+			<value_node value="wpn_fps_ass_akm"/>
+			<value_node value="wpn_fps_ass_akm_gold"/>
+			<value_node value="wpn_fps_smg_akmsu"/>
+			<value_node value="wpn_fps_shot_saiga"/>
+			<value_node value="wpn_fps_shot_r870"/>
+			<value_node value="wpn_fps_shot_serbu"/>
+			<value_node value="wpn_fps_ass_s552"/>
+			<value_node value="wpn_fps_lmg_m249"/>
+			<value_node value="wpn_fps_lmg_rpk"/>
+			<value_node value="wpn_fps_smg_cobray"/>
+			<value_node value="wpn_fps_smg_polymer"/>
+			<value_node value="wpn_fps_smg_shepheard"/>
+			<value_node value="wpn_fps_ass_tecci"/>
+			<value_node value="wpn_fps_snp_tti"/>
+			<value_node value="wpn_fps_ass_flint"/>
+		</weapons>
+    </WeaponMod>
+
+		<WeaponMod id="wpn_fps_upg_fg_ropup" based_on="wpn_fps_snp_tti_fg_standard" unit="units/pd2_mod_oga/weapons/wpn_fps_upg_fg_ropup/wpn_fps_upg_fg_ropup" type="foregrip" global_value="opr8raf" drop="false" texture_bundle_folder="pd2_mod_oga" is_a_unlockable="true">
+        <stats damage="3" spread="-1" recoil="-2" concealment="2"/>
+		<forbids>
+			<value_node value="wpn_fps_addon_ris"/>
+			<value_node value="wpn_fps_ass_m16_os_frontsight"/>
+			<value_node value="wpn_fps_m4_uupg_fg_rail_ext"/>
+			<value_node value="wpn_fps_m4_uupg_b_sd"/>
+<!--			<value_node value="wpn_fps_uupg_m4_b_short"/> -->
+		</forbids>
+		<override>
+			<wpn_fps_m4_uupg_b_short unit="units/payday2/weapons/wpn_fps_ass_m4_pts/wpn_fps_m4_uupg_b_medium"/> <!-- well that didnt fucking work -->
+		</override>
+	    <pcs/>
+		<weapons>
+			<value_node value="wpn_fps_ass_m4"/>
+			<value_node value="wpn_fps_ass_m16"/>
+			<value_node value="wpn_fps_ass_amcar"/>
+		</weapons>
+    </WeaponMod>
+
+		<WeaponMod id="wpn_fps_upg_fg_split" based_on="wpn_fps_snp_tti_fg_standard" unit="units/pd2_mod_oga/weapons/wpn_fps_upg_fg_split/wpn_fps_upg_fg_split" type="foregrip" global_value="opr8raf" drop="false" texture_bundle_folder="pd2_mod_oga" is_a_unlockable="true">
+        <stats damage="3" spread="2" recoil="2" concealment="-2"/>
+		<forbids>
+			<value_node value="wpn_fps_addon_ris"/>
+			<value_node value="wpn_fps_ass_m16_os_frontsight"/>
+			<value_node value="wpn_fps_m4_uupg_fg_rail_ext"/>
+			<value_node value="wpn_fps_m4_uupg_b_sd"/>
+<!--			<value_node value="wpn_fps_uupg_m4_b_short"/> -->
+		</forbids>
+		<override>
+			<wpn_fps_m4_uupg_b_short unit="units/payday2/weapons/wpn_fps_ass_m4_pts/wpn_fps_m4_uupg_b_medium"/> <!-- well that didnt fucking work -->
+		</override>
+		<adds>
+			<value_node value="wpn_fps_upg_daniel_front_iron"/>
+		</adds>
+	    <pcs/>
+		<weapons>
+			<value_node value="wpn_fps_ass_m4"/>
+			<value_node value="wpn_fps_ass_m16"/>
+			<value_node value="wpn_fps_ass_amcar"/>
+		</weapons>
+    </WeaponMod> 
+
+	<WeaponMod id="wpn_fps_upg_fg_deadline" based_on="wpn_fps_shot_r870_fg_small" type="foregrip" unit="units/pd2_mod_oga/weapons/wpn_fps_upg_fg_deadline/wpn_fps_upg_fg_deadline" global_value="opr8raf" drop="false" texture_bundle_folder="pd2_mod_oga" is_a_unlockable="true">
+		<pcs/>
+		<stats recoil="-1" concealment="2" reload="-2"/>
+		<weapons>
+			<value_node value="wpn_fps_shot_serbu"/>
+		</weapons>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_fg_patrick" based_on="wpn_fps_snp_tti_fg_standard" type="foregrip" unit="units/pd2_mod_oga/weapons/wpn_fps_upg_fg_patrick/wpn_fps_upg_fg_patrick" global_value="opr8raf" drop="false" texture_bundle_folder="pd2_mod_oga" is_a_unlockable="true">
+		<pcs/>
+		<stats damage="2" concealment="1" recoil="-1" spread="-1"/>
+		<weapons>
+			<value_node value="wpn_fps_smg_olympic"/>
+<!--			<value_node value="wpn_fps_ass_amcar"/> -->
+
+		</weapons>
+	</WeaponMod>
+<!--
+	<WeaponMod id="wpn_fps_upg_scar_s_collapsed" based_on="wpn_fps_ass_scar_s_standard" type="stock" unit="units/pd2_mod_oga/weapons/wpn_fps_upg_scar_s_collapsed/wpn_fps_upg_scar_s_collapsed" global_value="opr8raf" drop="false" texture_bundle_folder="pd2_mod_oga" is_a_unlockable="true">
+		<pcs/>
+		<stats recoil="-3" spread="-2" concealment="6"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_scar"/>		</weapons>
+	</WeaponMod>
+-->
+	<WeaponMod id="wpn_fps_upg_mp9_s_no" based_on="wpn_fps_smg_mp9_s_fold" type="stock" unit="units/payday2/weapons/wpn_upg_dummy/wpn_upg_dummy" global_value="opr8raf" drop="false" texture_bundle_folder="pd2_mod_oga" is_a_unlockable="true">
+		<pcs/>
+		<stats recoil="-3" spread="-2" concealment="3"/>
+		<weapons>
+			<value_node value="wpn_fps_smg_mp9"/>
+		<!-- krebs rpk: coming never (tm) -->
+		</weapons>
+	</WeaponMod>
+
+<!-- arpil foolbs -->
+
+	<WeaponMod id="wpn_fps_upg_o_amine" based_on="wpn_fps_m4_uupg_o_flipup" type="sight" unit="units/pd2_mod_oga/weapons/wpn_fps_upg_o_amine/wpn_fps_upg_o_amine" global_value="opr8raf" drop="false" texture_bundle_folder="pd2_mod_oga" is_a_unlockable="true">
+		<pcs/>
+		<stats suppression="-69"/>
+		<weapons>
+			<value_node value="wpn_fps_ass_m4"/>
+		</weapons>
+	</WeaponMod>
+
+
+<!-- back to normal content -->
+
+	<WeaponMod id="wpn_fps_upg_ns_dragon" based_on="wpn_fps_upg_ns_ass_smg_stubby" type="barrel_ext" unit="units/pd2_mod_oga/weapons/wpn_fps_upg_ns_dragon/wpn_fps_upg_ns_dragon" global_value="opr8raf" drop="false" texture_bundle_folder="pd2_mod_oga" is_a_unlockable="true">
+		<stats damage="3" spread="2" recoil="1" concealment="-2" suppression="1"/>
+		<weapons>
+			<value_node value="wpn_fps_lmg_rpk"/>
+			<value_node value="wpn_fps_lmg_m249"/>
+			<value_node value="wpn_fps_lmg_hk21"/>
+			<value_node value="wpn_fps_lmg_par"/>
+			<value_node value="wpn_fps_lmg_mg42"/>
+			<value_node value="wpn_fps_ass_m4"/>
+			<value_node value="wpn_fps_ass_amcar"/>
+			<value_node value="wpn_fps_ass_m16"/>
+			<value_node value="wpn_fps_smg_olympic"/>
+			<value_node value="wpn_fps_ass_74"/>
+			<value_node value="wpn_fps_ass_akm"/>
+			<value_node value="wpn_fps_ass_akm_gold"/>
+			<value_node value="wpn_fps_smg_akmsu"/>
+			<value_node value="wpn_fps_ass_aug"/>
+			<value_node value="wpn_fps_ass_g36"/>
+			<value_node value="wpn_fps_smg_p90"/>
+			<value_node value="wpn_fps_ass_m14"/>
+			<value_node value="wpn_fps_smg_mp9"/>
+			<value_node value="wpn_fps_smg_mp5"/>
+			<value_node value="wpn_fps_smg_mac10"/>
+			<value_node value="wpn_fps_smg_m45"/>
+			<value_node value="wpn_fps_ass_s552"/>
+			<value_node value="wpn_fps_smg_mp7"/>
+			<value_node value="wpn_fps_ass_scar"/>
+			<value_node value="wpn_fps_lmg_hk21"/>
+			<value_node value="wpn_fps_lmg_rpk"/>
+			<value_node value="wpn_fps_ass_fal"/>
+			<value_node value="wpn_fps_ass_g3"/>
+			<value_node value="wpn_fps_ass_galil"/>
+			<value_node value="wpn_fps_ass_famas"/>
+			<value_node value="wpn_fps_smg_scorpion"/>
+			<value_node value="wpn_fps_smg_tec9"/>
+			<value_node value="wpn_fps_smg_uzi"/>
+			<value_node value="wpn_fps_lmg_mg42"/>
+			<value_node value="wpn_fps_smg_sterling"/>
+			<value_node value="wpn_fps_smg_thompson"/>
+			<value_node value="wpn_fps_ass_l85a2"/>
+			<value_node value="wpn_fps_ass_vhs"/>
+			<value_node value="wpn_fps_smg_cobray"/>
+			<value_node value="wpn_fps_ass_sub2000"/>
+			<value_node value="wpn_fps_smg_polymer"/>
+			<value_node value="wpn_fps_smg_baka"/>
+			<value_node value="wpn_fps_lmg_par"/>
+			<value_node value="wpn_fps_smg_sr2"/>
+			<value_node value="wpn_fps_smg_x_sr2"/>
+			<value_node value="wpn_fps_smg_x_mp5"/>
+			<value_node value="wpn_fps_smg_x_akmsu"/>
+			<value_node value="wpn_fps_ass_tecci"/>
+			<value_node value="wpn_fps_smg_hajk"/>
+			<value_node value="wpn_fps_smg_schakal"/>
+			<value_node value="wpn_fps_ass_contraband"/>
+			<value_node value="wpn_fps_ass_flint"/>
+			<value_node value="wpn_fps_smg_coal"/>
+			<value_node value="wpn_fps_smg_shepheard"/>
+			<value_node value="wpn_fps_smg_x_shepheard"/>
+			<value_node value="wpn_fps_ass_ching"/>
+			<value_node value="wpn_fps_smg_erma"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_x_coal"/>
+			<value_node value="wpn_fps_smg_x_baka"/>
+			<value_node value="wpn_fps_smg_x_cobray"/>
+			<value_node value="wpn_fps_smg_x_erma"/>
+			<value_node value="wpn_fps_smg_x_hajk"/>
+			<value_node value="wpn_fps_smg_x_m45"/>
+			<value_node value="wpn_fps_smg_x_m1928"/>
+			<value_node value="wpn_fps_smg_x_mac10"/>
+			<value_node value="wpn_fps_smg_x_mp7"/>
+			<value_node value="wpn_fps_smg_x_mp9"/>
+			<value_node value="wpn_fps_smg_x_olympic"/>
+			<value_node value="wpn_fps_smg_x_p90"/>
+			<value_node value="wpn_fps_smg_x_polymer"/>
+			<value_node value="wpn_fps_smg_x_schakal"/>
+			<value_node value="wpn_fps_smg_x_scorpion"/>
+			<value_node value="wpn_fps_smg_x_sterling"/>
+			<value_node value="wpn_fps_smg_x_tec9"/>
+			<value_node value="wpn_fps_smg_x_uzi"/>
+			<value_node value="wpn_fps_ass_komodo"/>
+			<value_node value="wpn_fps_ass_groza"/>
+		</weapons>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_ns_hock" based_on="wpn_fps_smg_sr2_ns_silencer" type="barrel_ext" unit="units/pd2_mod_oga/weapons/wpn_fps_upg_ns_hock/wpn_fps_upg_ns_hock" global_value="opr8raf" drop="false" texture_bundle_folder="pd2_mod_oga" is_a_unlockable="true">
+		<stats damage="-1" spread="1" recoil="-2" concealment="-2" />
+		<weapons>
+			<value_node value="wpn_fps_lmg_rpk"/>
+			<value_node value="wpn_fps_lmg_m249"/>
+			<value_node value="wpn_fps_lmg_hk21"/>
+			<value_node value="wpn_fps_lmg_par"/>
+			<value_node value="wpn_fps_lmg_mg42"/>
+			<value_node value="wpn_fps_ass_m4"/>
+			<value_node value="wpn_fps_ass_amcar"/>
+			<value_node value="wpn_fps_ass_m16"/>
+			<value_node value="wpn_fps_smg_olympic"/>
+			<value_node value="wpn_fps_ass_74"/>
+			<value_node value="wpn_fps_ass_akm"/>
+			<value_node value="wpn_fps_ass_akm_gold"/>
+			<value_node value="wpn_fps_smg_akmsu"/>
+			<value_node value="wpn_fps_ass_aug"/>
+			<value_node value="wpn_fps_ass_g36"/>
+			<value_node value="wpn_fps_smg_p90"/>
+			<value_node value="wpn_fps_ass_m14"/>
+			<value_node value="wpn_fps_smg_mp9"/>
+			<value_node value="wpn_fps_smg_mp5"/>
+			<value_node value="wpn_fps_smg_mac10"/>
+			<value_node value="wpn_fps_smg_m45"/>
+			<value_node value="wpn_fps_ass_s552"/>
+			<value_node value="wpn_fps_smg_mp7"/>
+			<value_node value="wpn_fps_ass_scar"/>
+			<value_node value="wpn_fps_lmg_hk21"/>
+			<value_node value="wpn_fps_lmg_rpk"/>
+			<value_node value="wpn_fps_ass_fal"/>
+			<value_node value="wpn_fps_ass_g3"/>
+			<value_node value="wpn_fps_ass_galil"/>
+			<value_node value="wpn_fps_ass_famas"/>
+			<value_node value="wpn_fps_smg_scorpion"/>
+			<value_node value="wpn_fps_smg_tec9"/>
+			<value_node value="wpn_fps_smg_uzi"/>
+			<value_node value="wpn_fps_lmg_mg42"/>
+			<value_node value="wpn_fps_smg_sterling"/>
+			<value_node value="wpn_fps_smg_thompson"/>
+			<value_node value="wpn_fps_ass_l85a2"/>
+			<value_node value="wpn_fps_ass_vhs"/>
+			<value_node value="wpn_fps_smg_cobray"/>
+			<value_node value="wpn_fps_ass_sub2000"/>
+			<value_node value="wpn_fps_smg_polymer"/>
+			<value_node value="wpn_fps_smg_baka"/>
+			<value_node value="wpn_fps_lmg_par"/>
+			<value_node value="wpn_fps_smg_sr2"/>
+			<value_node value="wpn_fps_smg_x_sr2"/>
+			<value_node value="wpn_fps_smg_x_mp5"/>
+			<value_node value="wpn_fps_smg_x_akmsu"/>
+			<value_node value="wpn_fps_ass_tecci"/>
+			<value_node value="wpn_fps_smg_hajk"/>
+			<value_node value="wpn_fps_smg_schakal"/>
+			<value_node value="wpn_fps_ass_contraband"/>
+			<value_node value="wpn_fps_ass_flint"/>
+			<value_node value="wpn_fps_smg_coal"/>
+			<value_node value="wpn_fps_smg_shepheard"/>
+			<value_node value="wpn_fps_smg_x_shepheard"/>
+			<value_node value="wpn_fps_ass_ching"/>
+			<value_node value="wpn_fps_smg_erma"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_x_coal"/>
+			<value_node value="wpn_fps_smg_x_baka"/>
+			<value_node value="wpn_fps_smg_x_cobray"/>
+			<value_node value="wpn_fps_smg_x_erma"/>
+			<value_node value="wpn_fps_smg_x_hajk"/>
+			<value_node value="wpn_fps_smg_x_m45"/>
+			<value_node value="wpn_fps_smg_x_m1928"/>
+			<value_node value="wpn_fps_smg_x_mac10"/>
+			<value_node value="wpn_fps_smg_x_mp7"/>
+			<value_node value="wpn_fps_smg_x_mp9"/>
+			<value_node value="wpn_fps_smg_x_olympic"/>
+			<value_node value="wpn_fps_smg_x_p90"/>
+			<value_node value="wpn_fps_smg_x_polymer"/>
+			<value_node value="wpn_fps_smg_x_schakal"/>
+			<value_node value="wpn_fps_smg_x_scorpion"/>
+			<value_node value="wpn_fps_smg_x_sterling"/>
+			<value_node value="wpn_fps_smg_x_tec9"/>
+			<value_node value="wpn_fps_smg_x_uzi"/>
+			<value_node value="wpn_fps_smg_pm9"/>
+			<value_node value="wpn_fps_smg_x_pm9"/>
+			<value_node value="wpn_fps_ass_komodo"/>
+		</weapons>
+	</WeaponMod>
+
+
+	<WeaponMod id="wpn_fps_upg_ns_osprey" based_on="wpn_fps_smg_sr2_ns_silencer" type="barrel_ext" unit="units/pd2_mod_oga/weapons/wpn_fps_upg_ns_osprey/wpn_fps_upg_ns_osprey" global_value="opr8raf" drop="false" texture_bundle_folder="pd2_mod_oga" is_a_unlockable="true">
+		<stats damage="0" spread="1" recoil="1" concealment="-3"/>
+		<weapons>
+			<value_node value="wpn_fps_lmg_rpk"/>
+			<value_node value="wpn_fps_lmg_m249"/>
+			<value_node value="wpn_fps_lmg_hk21"/>
+			<value_node value="wpn_fps_lmg_par"/>
+			<value_node value="wpn_fps_lmg_mg42"/>
+			<value_node value="wpn_fps_ass_m4"/>
+			<value_node value="wpn_fps_ass_amcar"/>
+			<value_node value="wpn_fps_ass_m16"/>
+			<value_node value="wpn_fps_smg_olympic"/>
+			<value_node value="wpn_fps_ass_74"/>
+			<value_node value="wpn_fps_ass_akm"/>
+			<value_node value="wpn_fps_ass_akm_gold"/>
+			<value_node value="wpn_fps_smg_akmsu"/>
+			<value_node value="wpn_fps_ass_aug"/>
+			<value_node value="wpn_fps_ass_g36"/>
+			<value_node value="wpn_fps_smg_p90"/>
+			<value_node value="wpn_fps_ass_m14"/>
+			<value_node value="wpn_fps_smg_mp9"/>
+			<value_node value="wpn_fps_smg_mp5"/>
+			<value_node value="wpn_fps_smg_mac10"/>
+			<value_node value="wpn_fps_smg_m45"/>
+			<value_node value="wpn_fps_ass_s552"/>
+			<value_node value="wpn_fps_smg_mp7"/>
+			<value_node value="wpn_fps_ass_scar"/>
+			<value_node value="wpn_fps_lmg_hk21"/>
+			<value_node value="wpn_fps_lmg_rpk"/>
+			<value_node value="wpn_fps_ass_fal"/>
+			<value_node value="wpn_fps_ass_g3"/>
+			<value_node value="wpn_fps_ass_galil"/>
+			<value_node value="wpn_fps_ass_famas"/>
+			<value_node value="wpn_fps_smg_scorpion"/>
+			<value_node value="wpn_fps_smg_tec9"/>
+			<value_node value="wpn_fps_smg_uzi"/>
+			<value_node value="wpn_fps_lmg_mg42"/>
+			<value_node value="wpn_fps_smg_sterling"/>
+			<value_node value="wpn_fps_smg_thompson"/>
+			<value_node value="wpn_fps_ass_l85a2"/>
+			<value_node value="wpn_fps_ass_vhs"/>
+			<value_node value="wpn_fps_smg_cobray"/>
+			<value_node value="wpn_fps_ass_sub2000"/>
+			<value_node value="wpn_fps_smg_polymer"/>
+			<value_node value="wpn_fps_smg_baka"/>
+			<value_node value="wpn_fps_lmg_par"/>
+			<value_node value="wpn_fps_smg_sr2"/>
+			<value_node value="wpn_fps_smg_x_sr2"/>
+			<value_node value="wpn_fps_smg_x_mp5"/>
+			<value_node value="wpn_fps_smg_x_akmsu"/>
+			<value_node value="wpn_fps_ass_tecci"/>
+			<value_node value="wpn_fps_smg_hajk"/>
+			<value_node value="wpn_fps_smg_schakal"/>
+			<value_node value="wpn_fps_ass_contraband"/>
+			<value_node value="wpn_fps_ass_flint"/>
+			<value_node value="wpn_fps_smg_coal"/>
+			<value_node value="wpn_fps_smg_shepheard"/>
+			<value_node value="wpn_fps_smg_x_shepheard"/>
+			<value_node value="wpn_fps_ass_ching"/>
+			<value_node value="wpn_fps_smg_erma"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_x_coal"/>
+			<value_node value="wpn_fps_smg_x_baka"/>
+			<value_node value="wpn_fps_smg_x_cobray"/>
+			<value_node value="wpn_fps_smg_x_erma"/>
+			<value_node value="wpn_fps_smg_x_hajk"/>
+			<value_node value="wpn_fps_smg_x_m45"/>
+			<value_node value="wpn_fps_smg_x_m1928"/>
+			<value_node value="wpn_fps_smg_x_mac10"/>
+			<value_node value="wpn_fps_smg_x_mp7"/>
+			<value_node value="wpn_fps_smg_x_mp9"/>
+			<value_node value="wpn_fps_smg_x_olympic"/>
+			<value_node value="wpn_fps_smg_x_p90"/>
+			<value_node value="wpn_fps_smg_x_polymer"/>
+			<value_node value="wpn_fps_smg_x_schakal"/>
+			<value_node value="wpn_fps_smg_x_scorpion"/>
+			<value_node value="wpn_fps_smg_x_sterling"/>
+			<value_node value="wpn_fps_smg_x_tec9"/>
+			<value_node value="wpn_fps_smg_x_uzi"/>
+			<value_node value="wpn_fps_ass_komodo"/>
+		</weapons>
+	</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_wellgrip" based_on="wpn_fps_snp_tti_body_receiverlower" type="vertical_grip" unit="units/pd2_mod_oga/weapons/wpn_fps_upg_wellgrip/wpn_fps_upg_wellgrip" a_obj="a_mwg" texture_bundle_folder="pd2_mod_oga" global_value="opr8raf" drop="false" is_a_unlockable="true"><pcs/>		<stats spread="2" recoil="2" concealment="-3"/>		<weapons>
+			<value_node value="wpn_fps_ass_m4"/>
+			<value_node value="wpn_fps_ass_amcar"/>
+			<value_node value="wpn_fps_ass_m16"/>
+			<value_node value="wpn_fps_smg_olympic"/>
+			<value_node value="wpn_fps_smg_shepheard"/>
+		</weapons>
+</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_vg_bcmthree" based_on="wpn_fps_smg_hajk_vg_moe" type="vertical_grip" unit="units/pd2_mod_oga/weapons/wpn_fps_upg_vg_bcmthree/wpn_fps_upg_vg_bcmthree" global_value="opr8raf" texture_bundle_folder="pd2_mod_oga" drop="false" is_a_unlockable="true"><pcs/>		<stats spread="-2" recoil="-2" concealment="2"/>		<weapons>
+			<value_node value="wpn_fps_smg_schakal"/>
+			<value_node value="wpn_fps_sho_rota"/>
+			<value_node value="wpn_fps_smg_x_schakal"/>
+			<value_node value="wpn_fps_sho_x_rota"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_hajk"/>
+			<value_node value="wpn_fps_smg_x_hajk"/>
+			<value_node value="wpn_fps_ass_aug"/>
+			<value_node value="wpn_fps_ass_tecci"/>
+		</weapons>
+</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_vg_cadex" based_on="wpn_fps_upg_vg_ass_smg_verticalgrip" type="vertical_grip" unit="units/pd2_mod_oga/weapons/wpn_fps_upg_vg_cadex/wpn_fps_upg_vg_cadex" global_value="opr8raf" texture_bundle_folder="pd2_mod_oga" drop="false" is_a_unlockable="true"><pcs/>		<stats spread="2" recoil="2" concealment="-2"/>		<weapons>
+			<value_node value="wpn_fps_smg_schakal"/>
+			<value_node value="wpn_fps_sho_rota"/>
+			<value_node value="wpn_fps_smg_x_schakal"/>
+			<value_node value="wpn_fps_sho_x_rota"/>
+			<value_node value="wpn_fps_ass_corgi"/>
+			<value_node value="wpn_fps_smg_hajk"/>
+			<value_node value="wpn_fps_smg_x_hajk"/>
+			<value_node value="wpn_fps_ass_aug"/>
+			<value_node value="wpn_fps_ass_tecci"/>
+		</weapons>
+</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_vg_jowi" based_on="wpn_fps_snp_tti_vg_standard" type="vertical_grip" global_value="opr8raf" texture_bundle_folder="pd2_mod_oga" drop="false" is_a_unlockable="true"><pcs/>		<stats spread="1" recoil="-1" concealment="1"/>		<weapons>
+			<value_node value="wpn_fps_ass_scar"/>
+		</weapons>
+</WeaponMod>
+
+	<WeaponMod id="wpn_fps_upg_vg_angle" based_on="wpn_fps_upg_vg_ass_smg_afg" type="vertical_grip" global_value="opr8raf" texture_bundle_folder="pd2_mod_oga" drop="false" is_a_unlockable="true"><pcs/>		<stats spread="1" recoil="1" concealment="-1"/>		<weapons>
+			<value_node value="wpn_fps_snp_tti"/>
+		</weapons>
+</WeaponMod>
+
+
+	<AddFiles directory="assets">
+		<texture path="guis/dlcs/pd2_mod_oga/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_wellgrip"/>
+		<texture path="guis/dlcs/pd2_mod_oga/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_s_devgru"/>
+		<texture path="guis/dlcs/pd2_mod_oga/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_fg_split"/>
+		<texture path="guis/dlcs/pd2_mod_oga/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_fg_ropup"/>
+		<texture path="guis/dlcs/pd2_mod_oga/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_fg_deadline"/>
+		<texture path="guis/dlcs/pd2_mod_oga/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_fg_patrick"/>
+		<texture path="guis/dlcs/pd2_mod_oga/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_scar_s_collapsed"/>
+		<texture path="guis/dlcs/pd2_mod_oga/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_mp9_s_no"/>
+		<texture path="guis/dlcs/pd2_mod_oga/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ns_hock"/>
+		<texture path="guis/dlcs/pd2_mod_oga/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ns_dragon"/>
+		<texture path="guis/dlcs/pd2_mod_oga/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ns_osprey"/>
+		<texture path="guis/dlcs/pd2_mod_oga/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_vg_bcmthree"/>
+		<texture path="guis/dlcs/pd2_mod_oga/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_o_amine"/>
+		<texture path="guis/dlcs/pd2_mod_oga/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_vg_cadex"/>
+		<texture path="guis/dlcs/pd2_mod_oga/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_vg_angle"/>
+		<texture path="guis/dlcs/pd2_mod_oga/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_vg_jowi"/>
+
+
+		<texture path="guis/dlcs/pd2_mod_oga/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ak_fg_b10"/>
+		<texture path="guis/dlcs/pd2_mod_oga/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ak_s_pt1"/>
+		<texture path="guis/dlcs/pd2_mod_oga/textures/pd2/blackmarket/icons/mods/wpn_fps_upg_ak_ur_b33"/>
+
+	
+		<df_nm_cc		 path="units/pd2_mod_oga/weapons/wpn_fps_upg_vg_bcmthree/bcm"/>
+
+		<df_nm_cc         path="units/pd2_mod_oga/weapons/wpn_fps_upg_s_devgru/socom"/>
+		<df_nm_cc         path="units/pd2_mod_oga/weapons/wpn_fps_upg_s_devgru/pad"/>
+
+		<df_nm_cc         path="units/pd2_mod_oga/weapons/wpn_fps_upg_fg_ropup/ropup"/>
+
+		<df_nm_cc         path="units/pd2_mod_oga/weapons/wpn_fps_upg_fg_split/split"/>
+
+		<df_nm_cc         path="units/pd2_mod_oga/weapons/wpn_fps_upg_fg_deadline/pump"/>
+
+		<df_nm_cc         path="units/pd2_mod_oga/weapons/wpn_fps_upg_fg_patrick/qc9"/>
+
+<!-- april fools xddx -->
+		<df_nm_cc         path="units/pd2_mod_oga/weapons/wpn_fps_upg_o_amine/flipup_black"/>
+		<texture         path="units/pd2_mod_oga/weapons/wpn_fps_upg_o_amine/sop2_heart_df"/>
+		<texture         path="units/pd2_mod_oga/weapons/wpn_fps_upg_o_amine/sop2_heart_op"/>
+
+<!-- back 2 normalcy -->
+		<df_nm_cc         path="units/pd2_mod_oga/weapons/wpn_fps_upg_vg_cadex/cadex"/>
+
+		<df_nm_cc         path="units/pd2_mod_oga/weapons/wpn_fps_upg_ns_hock/hock"/>
+
+		<df_nm_cc         path="units/pd2_mod_oga/weapons/wpn_fps_upg_ns_dragon/dragon"/>
+
+		<df_nm_cc         path="units/pd2_mod_oga/weapons/wpn_fps_upg_ns_osprey/osprey"/>
+
+		<df_nm_cc         path="units/pd2_mod_oga/weapons/wpn_fps_upg_wellgrip/magwell"/>
+
+
+
+		<df_nm_cc         path="units/pd2_mod_oga/weapons/wpn_fps_upg_ak_fg_b10/b10"/>
+		<df_nm_cc         path="units/pd2_mod_oga/weapons/wpn_fps_upg_ak_fg_b10/kolodka"/>
+		<df_nm_cc         path="units/pd2_mod_oga/weapons/wpn_fps_upg_ak_s_pt1/lock"/>
+		<df_nm_cc         path="units/pd2_mod_oga/weapons/wpn_fps_upg_ak_s_pt1/klassika"/>
+		<df_nm_cc         path="units/pd2_mod_oga/weapons/wpn_fps_upg_ak_ur_b33/b33"/>
+
+
+		
+		<unit_mat_cc            path="units/pd2_mod_oga/weapons/wpn_fps_upg_s_devgru/wpn_fps_upg_s_devgru"/>
+
+		<unit_mat_cc            path="units/pd2_mod_oga/weapons/wpn_fps_upg_fg_ropup/wpn_fps_upg_fg_ropup"/>
+
+		<unit_mat_cc            path="units/pd2_mod_oga/weapons/wpn_fps_upg_fg_split/wpn_fps_upg_fg_split"/>
+
+		<unit_mat_cc            path="units/pd2_mod_oga/weapons/wpn_fps_upg_fg_deadline/wpn_fps_upg_fg_deadline"/>
+
+		<unit_mat_cc            path="units/pd2_mod_oga/weapons/wpn_fps_upg_fg_patrick/wpn_fps_upg_fg_patrick"/>
+
+<!--		<unit_mat_cc            path="units/pd2_mod_oga/weapons/wpn_fps_upg_scar_s_collapsed/wpn_fps_upg_scar_s_collapsed"/> -->
+
+<!-- april fooooooooooooools -->
+		<unit_mat_cc            path="units/pd2_mod_oga/weapons/wpn_fps_upg_o_amine/wpn_fps_upg_o_amine"/>
+
+<!-- back to normalness -->
+
+		<unit_mat_cc            path="units/pd2_mod_oga/weapons/wpn_fps_upg_ns_hock/wpn_fps_upg_ns_hock"/>
+
+		<unit_mat_cc            path="units/pd2_mod_oga/weapons/wpn_fps_upg_ns_dragon/wpn_fps_upg_ns_dragon"/>
+
+		<unit_mat_cc            path="units/pd2_mod_oga/weapons/wpn_fps_upg_wellgrip/wpn_fps_upg_wellgrip"/>
+
+		<unit_mat_cc path="units/pd2_mod_oga/weapons/wpn_fps_upg_ns_osprey/wpn_fps_upg_ns_osprey"/>
+
+		<unit_mat_cc            path="units/pd2_mod_oga/weapons/wpn_fps_upg_vg_bcmthree/wpn_fps_upg_vg_bcmthree"/>
+
+		<unit_mat_cc            path="units/pd2_mod_oga/weapons/wpn_fps_upg_vg_cadex/wpn_fps_upg_vg_cadex"/>
+
+
+		<unit_mat_cc            path="units/pd2_mod_oga/weapons/wpn_fps_upg_ak_fg_b10/wpn_fps_upg_ak_fg_b10"/>
+		<unit_mat_cc            path="units/pd2_mod_oga/weapons/wpn_fps_upg_ak_fg_b10/wpn_fps_upg_ak_fg_b10_nogas"/>
+		<unit_mat_cc            path="units/pd2_mod_oga/weapons/wpn_fps_upg_ak_s_pt1/wpn_fps_upg_ak_s_pt1"/>
+		<unit_mat_cc            path="units/pd2_mod_oga/weapons/wpn_fps_upg_ak_ur_b33/wpn_fps_upg_ak_ur_b33"/>
+		<unit_mat_cc            path="units/pd2_mod_oga/weapons/wpn_fps_upg_ak_ur_b33/wpn_fps_upg_ak_ur_b33_full"/>
+
+
+
+			
+    </AddFiles>
+		<Hooks directory="hooks">
+		<hook file="weaponskinstweakdata.lua" source_file="lib/tweak_data/blackmarket/weaponskinstweakdata"/>
+		<hook file="weaponfactorytweakdata.lua" source_file="lib/tweak_data/weaponfactorytweakdata"/>
+		<hook file="weapontweakdata.lua" source_file="lib/tweak_data/weapontweakdata"/> 
+	</Hooks>
+</table>

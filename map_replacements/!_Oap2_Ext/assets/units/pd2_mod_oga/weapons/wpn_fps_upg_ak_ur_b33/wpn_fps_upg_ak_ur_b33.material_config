@@ -1,0 +1,10 @@
+<materials version="3" group="weapon_group">
+    <material name="ak74_dustcover" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/pd2_mod_oga/weapons/wpn_fps_upg_ak_ur_b33/b33_df"/>
+        <bump_normal_texture file="units/pd2_mod_oga/weapons/wpn_fps_upg_ak_ur_b33/b33_nm"/>
+    </material>
+	<material name="mtr_b33" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+        <diffuse_texture file="units/pd2_mod_oga/weapons/wpn_fps_upg_ak_ur_b33/b33_df"/>
+        <bump_normal_texture file="units/pd2_mod_oga/weapons/wpn_fps_upg_ak_ur_b33/b33_nm"/>
+    </material>
+</materials>

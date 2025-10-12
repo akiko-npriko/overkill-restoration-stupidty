@@ -1,0 +1,17 @@
+<dynamic_object>
+	<diesel materials="units/pd2_mod_oga/weapons/wpn_fps_upg_fg_deadline/wpn_fps_upg_fg_deadline" orientation_object="rp_wpn_fps_shot_r870_fg_legendary" />
+	  <animations>	
+	<animation_group name="recoil">
+		<object name="anim_bolt_recoil" enabled="true" />
+    </animation_group>
+    <animation_group name="recoil_zoom">
+		<object name="anim_bolt_recoil_zoom" enabled="true" />
+    </animation_group>
+    <animation_group name="reload_exit">
+    <object name="anim_bolt_reload_exit" enabled="true" />
+    </animation_group>
+  </animations>
+	<graphics>
+		<object name="g_fg" enabled="true" />
+	</graphics>
+</dynamic_object>

@@ -1,0 +1,14 @@
+<materials version="3" group="weapon_group">
+	<material name="mtr_solid" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/pd2_mod_oga/weapons/wpn_fps_upg_ak_s_pt1/klassika_df" mip="1" />
+		<bump_normal_texture file="units/pd2_mod_oga/weapons/wpn_fps_upg_ak_s_pt1/klassika_nm" mip="1" />
+	</material>
+	<material name="mtr_lock" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/pd2_mod_oga/weapons/wpn_fps_upg_ak_s_pt1/lock_df" mip="1" />
+		<bump_normal_texture file="units/pd2_mod_oga/weapons/wpn_fps_upg_ak_s_pt1/lock_nm" mip="1" />
+	</material>
+	<material name="mtr_klassika" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/pd2_mod_oga/weapons/wpn_fps_upg_ak_s_pt1/klassika_df" mip="1" />
+		<bump_normal_texture file="units/pd2_mod_oga/weapons/wpn_fps_upg_ak_s_pt1/klassika_nm" mip="1" />
+	</material>
+</materials>

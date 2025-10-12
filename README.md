@@ -349,7 +349,38 @@ Additional Testers: Derma, ShortonComedyGamer, K4_Kydure, Finale
 
 AND YOU, for downloading this I guess.
 
-# Akiko's Credits:
+# Akiko's Credits: -- (to do: figure out every mod that in this thing and give credits also attempt to find licenses for all and if required ask perms)
+ - carl ruins everything (https://modworkshop.net/user/carlruinseverything)
+	- Operator Attachment Pack GEN2 - The Externals (https://modworkshop.net/mod/31060)
+		- License
+		Model and textures for M4 SOPMOD II foregrip by boolyq on GameBanana. If it looks familiar, that's because it's actually the same model Gambyt used for his standalone DDM4. That was a complete coincidence.
+		Model and textures for DDM4V1 foregrip and 870MCS Breacher Foregrip by Danger Close Games for Medal of Honor: Warfighter.
+		Model/textures for SOCOM stock by Battlestate Games for Escape from Tarkov.
+		Model/textures for the QC9 foregrip made by "Patrick" from the H3VR team for, well, H3VR.
+		Model/textures for the Eagle Heavy collapsed stock are just slightly modified assets created by OVERKILL.
+		Model/textures for the Cavity 9mm civilian magazine are also just slightly modified assets created by OVERKILL.
+		Model for waifu sights consists of a vanilla OVERKILL model that was retextured by ROTFLOL before being hacked-apart and retrofitted for its end use by yours truly. Cute drawing of SOPMOD II taken from this gif, whose creator remains unknown.
+		Blackhawk Suppressor model/textures made by eNse7en.
+		Dragon compensator model (and BCMGUNFIGHTER/Cadex grip models) by Visceral for Battlefield Hardline.
+		Textures for Dragon compensator made by me. The only rip I could find of the thing didn't have any textures bundled with it for some reason.
+		Model and textures for SilencerCo Osprey suppressor made by Visceral for Battlefield Hardline.
+		Model and textures for MWG made by Ubisoft (Red Storm????) for Tom Clancy's Rainbow Six: Siege.
+		Special thanks to Leon S. for feedback on OAP G1 implementation, kden and GermanTacos for helping me mix textures, moon for feedback and assistance during the rebalancing process, RJC9000 for being a good honorary kouhai, and last but not least every single one of you guys who downloaded the Operator Attachment Pack while it was still in GEN 1. I love all of you, and you're why I keep doing what it is I do.
+		
+ - Rickerus (https://modworkshop.net/user/rickerus)
+	 - National Guard ZEAL Units (https://modworkshop.net/mod/37321) -- thank you for giving me permission
+		- License
+		Do not redistribute or reupload without explicit permission from Rickerus. If you would like to use assets from this mod, please DM (Direct Message) or PM (Private Message) Rickerus for permissions per asset. Make sure to credit if you are given permission to use assets from the mod.
+		Special thanks to:
+		Matthelzor: Teaching and helping me with rigging the models.
+		Nelson01023: Implementation of medics into the base version of the mod. Teaching how to create LODs.
+		Jarey_ and Rino: PD2 Cloaker M40 gas mask asset.
+		Infinity Ward: Call of Duty MW3 Juggernaut asset.
+		Hoppip: Helped with simplifying the Streamlined Heisting branch installation.
+
+
+
+# Akiko's Basic Credits:
 Yanked coding from... (intergrated into mod)
  - Medic Drop FAKs
  	 - https://modworkshop.net/mod/19691
